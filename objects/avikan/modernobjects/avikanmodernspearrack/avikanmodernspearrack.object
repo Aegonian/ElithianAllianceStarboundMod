@@ -1,0 +1,45 @@
+{
+  "objectName" : "avikanmodernspearrack",
+  "colonyTags" : ["avikan","combat"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 40,
+  "description" : "A rack of metal spears.",
+  "shortdescription" : "Avikan Spear Rack",
+  "race" : "avikan",
+
+  "apexDescription" : "Metal spears. Bulky, but strong and sharp.",
+  "avianDescription" : "Shiny metal spears. Would anyone mind if I take one of them?",
+  "floranDescription" : "Spearsss for sstabbing. Floran likesss sstabbing.",
+  "glitchDescription" : "Statement. Spears.",
+  "humanDescription" : "These spears look quite intimidating.",
+  "hylotlDescription" : "Spears fit for an alien army.",
+
+  "aegiDescription" : "The Avikan Vanguard uses spears as their primary close-range weapon.",
+  "avikanDescription" : "Naught but the best spears for the Vanguard.",
+  "erixianDescription" : "Spears of an excellent quality.",
+  "trinkDescription" : "These spears are sharper than they appear.",
+  "hymidDescription" : "A collection of metal spears.",
+  "notixDescription" : "Spears make for inefficient weapons in an age where firearms are widely available.",
+  "jorgasianDescription" : "A number of finely crafted metal spears.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Analysis complete. Vanguard approved weapons detected.",
+
+  "inventoryIcon" : "avikanmodernspearrackicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanmodernspearrack.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

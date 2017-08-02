@@ -1,0 +1,59 @@
+{
+  "objectName" : "avikankeypad",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Rare",
+  "category" : "wire",
+  "printable" : false,
+  "price" : 250,
+  "description" : "A programmable keypad for locking doors with a passcode.",
+  "shortdescription" : "Vanguard Keypad",
+  "race" : "avikan",
+
+  "apexDescription" : "A keypad. I don't recognize any of the symbols on it.",
+  "avianDescription" : "An alien keypad using alien symbols...",
+  "floranDescription" : "Floran presssess buttonss, Floran unlockss doorss!",
+  "glitchDescription" : "Puzzled. I know none of these symbols.",
+  "humanDescription" : "This keypad uses strange symbols instead of numbers. Or are they alien numbers?",
+  "hylotlDescription" : "A keypad using an alien interface.",
+  "novakidDescription" : "I've never been good at remembering passcodes.",
+
+  "aegiDescription" : "This keypad may use Avikan numbers, but its layout is universal.",
+  "avikanDescription" : "This keypad can be used to lock doors with a passcode.",
+  "erixianDescription" : "An Avikan keypad using Avikan numbers.",
+  "trinkDescription" : "The Avikan numerical system isn't the most logical system.",
+  "hymidDescription" : "A keypad, for locking doors.",
+  "notixDescription" : "This seems to be a keypad.",
+  "jorgasianDescription" : "A keypad, for locking doors with a passcode.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected Vanguard-approved security keypad.",
+
+  "inventoryIcon" : "avikankeypadicon.png",
+  "orientations" : [
+    {
+	  "image" : "avikankeypad.png:<color>.unlocked",
+      "imagePosition" : [-8, -8],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+  
+  "animation" : "/objects/avikan/wired/avikankeypad/avikankeypad.animation",
+  "animationParts" : {
+    "background" : "avikankeypad.png",
+	"foreground" : "avikankeypadlit.png"
+  },
+  "animationPosition" : [-8, -8],
+  
+  "interactAction" : "ScriptPane",
+  "interactData" : "/interface/scripted/avikankeypad/avikankeypadgui.config",
+  
+  "outputNodes" : [ [0, -1] ],
+  
+  "scripts" : [ "/objects/avikan/wired/avikankeypad/avikankeypad.lua" ],
+  "scriptDelta" : 5,
+  
+  "interval" : 3 //For how long the nodes should stay active if the correct passcode is entered
+}

@@ -1,0 +1,13 @@
+{
+  "itemName" : "avikanpurplecloth",
+  "price" : 150,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "avikanpurplecloth.png",
+  "description" : "Purple-coloured fabric, used to create Rhaiod-themed items.",
+  "shortdescription" : "Rhaiod Fabric",
+  "itemTags" : [ "reagent" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 1
+}

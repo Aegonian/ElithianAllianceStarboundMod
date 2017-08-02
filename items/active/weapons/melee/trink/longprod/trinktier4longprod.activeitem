@@ -1,0 +1,166 @@
+{
+  "itemName" : "trinktier4longprod",
+  "price" : 900,
+  "level" : 4,
+  "maxStack" : 1,
+  "rarity" : "uncommon",
+  "description" : "An electric prod built to keep assailants at bay.",
+  "shortdescription" : "Circuit Longprod Mk IV",
+  "tooltipKind" : "sword",
+  "category" : "Electric Prod",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","prod","trink"],
+
+  "inventoryIcon" : "trinktier4longprod.png",
+
+  "animation" : "/items/active/weapons/melee/animations/longprod.animation",
+  "animationParts" : {
+    "blade" : "trinktier4longprod.png",
+	"lights" : "trinktier4longprodlights.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_dagger_electric2.ogg" ],
+	  "holdLoop" : [ "/sfx/objects/teslaspike.ogg" ],
+      "shockwave" : [ "/sfx/gun/grenadeblast_electric2.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "electric",
+
+  "aimOffset" : -1.0,
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/melee/abilities/prod/thea-prodstab.lua"],
+	"class" : "TheaProdStab",
+	
+    "fireTime" : 1.0,
+    "baseDps" : 8.5,
+    "damageConfig" : {
+      "damageSourceKind" : "electricspear",
+      "statusEffects" : [ "electrified" ],
+      "knockbackMode" : "aim",
+      "knockback" : 35,
+      "timeoutGroup" : "primary"
+    },
+    "holdDamageMultiplier" : 0.2,
+    "holdDamageConfig" : {
+	  "damageSourceKind" : "electricspear",
+      "statusEffects" : [ "electrified" ],
+      "knockbackMode" : "aim",
+      "knockback" : 20,
+      "timeoutGroup" : "hold",
+      "timeout" : 0.5
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : -90,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+        "weaponOffset" : [0, 0.5],
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "windup" : {
+        "duration" : 0.1,
+        "armRotation" : -110,
+        "weaponRotation" : 20,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 0.5],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire" : {
+        "duration" : 0.3,
+        "armRotation" : -20,
+        "weaponRotation" : -70,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 2.5],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "hold" : {
+        "armRotation" : -30,
+        "weaponRotation" : -60,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 2.0],
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "altAbility" : {
+    "name" : "Ground Conductor",
+    "scripts" : ["/items/active/weapons/melee/abilities/spear/groundconduct/groundconduct.lua"],
+	"class" : "GroundConduct",
+	
+    "cooldownTime" : 1.5,
+
+    "energyUsage" : 15.0,
+	"energyPerWave" : 35.0,
+	
+    "burstTime" : 1.0,
+
+    "projectileType" : "trinkelectricwave",
+    "projectileParameters" : {
+      "power" : 1.0,
+      "knockback" : 1,
+      "knockbackMode" : "facing"
+    },
+	"shockWaveBounds" : [-0.4, -1.375, 0.4, 0.0],
+    "shockwaveHeight" : 1.375,
+    "maxDistance" : 12,
+    "bothDirections" : true,
+
+    "impactLine" : [ [1.25, -1.5], [1.25, -4.5] ],
+    "impactWeaponOffset" : 0.25,
+
+    "stances" : {
+      "windup" : {
+        "duration" : 0.5,
+        "armRotation" : 45,
+        "weaponRotation" : 135,
+        "weaponOffset" : [0, 0.0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire" : {
+        "duration" : 0.0,
+        "armRotation" : 0,
+        "weaponRotation" : -180,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "hold" : {
+        "armRotation" : 0,
+        "weaponRotation" : -180,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.35,
+        "armRotation" : 0,
+        "weaponRotation" : -180,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

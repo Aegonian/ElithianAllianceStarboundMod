@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "avikanmetal", "count" : 4 },
+	{ "item" : "avikanspices", "count" : 1 },
+	{ "item" : "dunebun", "count" : 1 },
+	{ "item" : "avikangem", "count" : 1 },
+	{ "item" : "bolbohnjam", "count" : 1 },
+	{ "item" : "monsterleather", "count" : 1 }
+  ],
+  "output" : { "item" : "avikanstoreshelf", "count" : 1 },
+  "groups" : [ "avikanmetalcrafting", "metalfurniture", "all" ]
+}

@@ -1,0 +1,46 @@
+{
+  "objectName" : "avikantapestrywatcher",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 60,
+  "description" : "A black tapestry displaying the Watchers' emblem.",
+  "shortdescription" : "Avikan Watchers' Tapestry",
+  "race" : "avikan",
+
+  "apexDescription" : "A dark leather tapestry. The eye it displays is intriguing.",
+  "avianDescription" : "A dark leather tapestry. The eye it displays is intriguing.",
+  "floranDescription" : "Floran feelsss watched by large eye...",
+  "glitchDescription" : "Observation. A dark leather tapestry. The eye it displays is intriguing.",
+  "humanDescription" : "A dark leather tapestry. The eye it displays is intriguing.",
+  "hylotlDescription" : "A dark leather tapestry. The eye it displays is intriguing.",
+  "novakidDescription" : "A dark leather tapestry. The eye it displays is intriguing.",
+
+  "aegiDescription" : "A dark leather tapestry. It displays the emblem of the Avikan Watchers.",
+  "avikanDescription" : "A dark leather tapestry. It displays the emblem of the Avikan Watchers.",
+  "erixianDescription" : "This black tapestry displays the emblem of our Watchers, the forces that protect us from the Thell.",
+  "trinkDescription" : "A dark leather tapestry. It displays the emblem of the Avikan Watchers.",
+  "hymidDescription" : "A dark leather tapestry. It displays the emblem of the Avikan Watchers.",
+  "notixDescription" : "A dark leather tapestry. It displays the emblem of the Avikan Watchers.",
+  "jorgasianDescription" : "A dark leather tapestry. It displays the emblem of the Avikan Watchers.",
+  "centensDescription" : "A dark leather tapestry. It displays the emblem of the Avikan Watchers.",
+  "dremetonDescription" : "A dark leather tapestry. It displays the emblem of the Avikan Watchers.",
+  "hyvonDescription" : "A dark leather tapestry. It displays the emblem of the Avikan Watchers.",
+  "drodenDescription" : "Detected Watchers' Eye emblem.",
+  
+  "inventoryIcon" : "avikantapestrywatchericon.png",
+  "orientations" : [
+    {
+      "image" : "avikantapestrywatcher.png:<color>",
+	  
+      "imagePosition" : [-8, -16],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

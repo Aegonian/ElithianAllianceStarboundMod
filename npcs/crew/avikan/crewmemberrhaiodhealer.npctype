@@ -1,0 +1,104 @@
+{
+  "type" : "crewmemberrhaiodhealer",
+  "baseType" : "crewmemberavikan",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : true
+    },
+
+	"crew" : {
+	  "role" : {
+        "type" : "rhaiodhealer",
+        "name" : "Healer",
+        "field" : "Medical",
+        "uniformColorIndex" : 9,
+		
+        "benefits" : [
+          {
+            "type" : "Regeneration",
+            "value" : 1
+          }
+        ]
+      },
+
+      "ranks" : [
+        "<field> Expert",
+        "<field> Shaman",
+        "Experienced <role>",
+        "Battle-tested <role>",
+        "<field> Enthusiast",
+        "Rhaiod <role>",
+        "Clan <role>",
+        "<field> Science Master",
+        "Nomada-certified <role>",
+        "<field> Assistant",
+        "<field> Priest",
+        "Master <role>",
+        "Elder <role>",
+        "Independent <role>",
+        "Poorly Instructed <role>",
+        "Self-taught <role>",
+        "Rhaiod Medicine Man",
+        "<field> Instructor",
+        "Rhaiod Caretaker"
+      ],
+	  
+	  "defaultUniform" : {
+		"chest" : "avikan-highpriestchest",
+		"legs" : "avikan-priestlegs"
+	  },
+	  
+	  "uniformSlots" : []
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "roleDescription" : {
+          "default" : {
+            "default" : [
+              "I'll keep you healthy while we're on the ship."
+            ]
+          }
+        },
+        "fieldBenefit" : {
+          "default" : {
+            "default" : [
+              "Are you hurt? I can help!",
+              "Let me tend to those wounds for you.",
+              "I'll bandage those wounds for you!",
+              "Your health is my only concern, Captain!"
+            ]
+          }
+        },
+        "combatBenefit" : {
+          "default" : {
+            "default" : [
+              "Are you hurt? I can help!",
+              "Let me tend to those wounds for you.",
+              "I'll bandage those wounds for you!",
+              "Your health is my only concern, Captain!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+			"chest" : [ { "name" : "avikan-highpriestchest", "data" : { "colorIndex" : 9 } } ],
+            "legs" : [ { "name" : "avikan-priestlegs", "data" : { "colorIndex" : 9 } } ],
+            "primary" : [ "avikanmedicalkit" ],
+            "sheathedprimary" : [
+			  "centens-jumpgun"
+			]
+          }
+        ] ]
+    ]
+  }
+}

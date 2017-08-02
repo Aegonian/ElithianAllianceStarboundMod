@@ -1,0 +1,22 @@
+{
+  "kind" : "trinklasermuzzle",
+  "definition" : {
+    "type" : "ember",
+    "size" : 1.5,
+    "color" : [121, 255, 75, 240],
+    "fade" : 0.9,
+    "position" : [0, 0],
+    "initialVelocity" : [2.0, 0.5],
+    "finalVelocity" : [0, 0],
+    "light" : [40, 80, 25],
+    "timeToLive" : 0.2,
+    "destructionAction": "shrink",
+    "destructionTime" : 0.5,
+    "layer" : "middle",
+	"fullbright" : true,
+    "variance" : {
+      "size" : 0.5,
+	  "initialVelocity" : [1.0, -1.0]
+    }
+  }
+}

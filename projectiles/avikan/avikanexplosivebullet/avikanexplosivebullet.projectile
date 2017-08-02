@@ -1,0 +1,24 @@
+{
+  "projectileName" : "avikanexplosivebullet",
+  "image" : "avikanexplosivebullet.png",
+  "physics" : "laser",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  "flippable" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/avikansmallexplosion/avikansmallexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "power" : 5.0,
+  "speed" : 100,
+  "supportsProcessing" : true,
+  "lightColor" : [20, 20, 5],
+  "knockback" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

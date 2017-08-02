@@ -1,0 +1,37 @@
+{
+  "id" : "aegicustomtailoring",
+  "prerequisites" : [],
+  "title" : "^green;Custom Tailoring",
+  "text" : "The Alliance sent me a classic ASA hat adorned with the Protectorate emblem, to symbolize our newfound friendship. It should be waiting for me in my locker.",
+  "completionText" : "This'll fit my Protectorate uniform nicely. Better not lose it - it's truly one of a kind.",
+  "moneyRange" : [0, 0],
+  "canBeAbandoned" : false,
+  "logOnly" : true,
+  
+  "rewards" : [
+    [ [ "aegi-protectoratehead", 1 ], [ "aegiambassadornotes-codex", 1 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/thea-customtailoring.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "default" : "player"
+    },
+    "requireTurnIn" : false,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "protectoratechest",
+        "count" : 1,
+        "consume" : false
+      },
+	  {
+        "type" : "gatherItem",
+        "itemName" : "protectoratepants",
+        "count" : 1,
+        "consume" : false
+      }
+    ]
+  }
+}

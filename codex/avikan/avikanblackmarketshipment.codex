@@ -1,0 +1,44 @@
+{
+  "id" : "avikanblackmarketshipment",
+  "species" : "avikan",
+  "title" : "Shipment Manifest B208-E",
+  "description" : "A manifest for a shipment of goods to the 'Drifter'.",
+  "icon" : "avikanfile1.png",
+  "contentPages" : [
+
+    "  - Delivery 1 -
+
+Elite Drahl Unit - 1 unit
+Common Drahl Unit - 31 units
+Drahlid Unit - 125 units
+Droden Utility Frame - 12 unit
+Droden War Frame - 13 unit
+Gemstone - 42 units
+Worked Leather - 304 units
+Kavanite Plate - 1035 units
+Keff - 2 units",
+
+    "  - Delivery 2 -
+
+Sandspitter's Sack - 9 units
+Sandcrawler's Tooth - 24 units
+Sandstalker's Gut - 3 units
+Forged Merit Token - 35120 units
+Thelean Tendril - 1 unit
+Thelean Eye - 1 unit
+Jumpgate Core - 1 unit
+Hyverium Plate - 4 units
+That Thing - 1 unit",
+    
+    "Attached Note:
+
+Good doing business with you again, Drifter. You always come up with the most unusual orders. Enjoy your new stock.
+
+- Black Hand"
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

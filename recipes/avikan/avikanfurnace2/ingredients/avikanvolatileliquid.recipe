@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "liquidoil", "count" : 2 },
+	{ "item" : "corefragmentore", "count" : 2 }
+  ],
+  "output" : {
+    "item" : "avikanvolatileliquid",
+    "count" : 1
+  },
+  "duration" : 0.15,
+  "groups" : [ "avikanfurnace2", "ingredients", "all" ]
+}

@@ -1,0 +1,56 @@
+{
+  "objectName" : "trinkfridge",
+  "colonyTags" : ["trink","cooking","storage"],
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "category" : "fridgeStorage",
+  "price" : 200,
+  "printable" : false,
+  "description" : "A cooled storage unit, for keeping food fresh.",
+  "shortdescription" : "Trinkian Cooled Storage",
+  "race" : "trink",
+  "health" : 1.5,
+
+  "apexDescription" : "A cooled storage unit, perfect for keeping bananas fresh.",
+  "avianDescription" : "A fridge, I think.",
+  "floranDescription" : "Floran isss curiousss. What'ss insside?",
+  "glitchDescription" : "Excited. Is there any food in the fridge?",
+  "humanDescription" : "My stomach is rumbling with excitement!",
+  "hylotlDescription" : "A cooled storage device. Food won't spoil quickly in here.",
+  "novakidDescription" : "This machine si cold to the touch. Is it some sorta fridge?",
+
+  "aegiDescription" : "The Trink don't usually keep food, unless they expect organic visitors.",
+  "avikanDescription" : "A machine-built cooling device. Far too cold for my liking.",
+  "erixianDescription" : "This fridge can be configured to reach extremely low temperatures.",
+  "trinkDescription" : "A highly efficient cooling device. Useful for storing organic matter.",
+  "hymidDescription" : "Cooled storage. For keeping food fresh, I would think.",
+  "notixDescription" : "Some use these cooling devices to store food, but they have many more applications besides.",
+  "jorgasianDescription" : "Trinkian fridges can reach extremely low temperatures.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Cooled storage device detected. Device will keep organic matter from decaying.",
+
+  "inventoryIcon" : "trinkfridgeicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "trinkfridge.png:<color>.<key>",
+
+      "imagePosition" : [0, 0],
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/fridge_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/fridge_close.ogg" ],
+  "slotCount" : 32,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 10,
+  "autoCloseCooldown" : 3600,
+
+  "itemAgeMultiplier" : 0.0,
+
+  "soundEffect" : "/sfx/objects/fridge_hum.ogg"
+}

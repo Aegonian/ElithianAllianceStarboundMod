@@ -1,0 +1,31 @@
+{
+  "objectName" : "avikanoutpostpole2",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 60,
+  "description" : "A thin metal pole.",
+  "shortdescription" : "Metal Pole",
+  "race" : "avikan",
+  
+  "floranDescription" : "Floran ussse metal poless as ssspears?",
+  "glitchDescription" : "Bored. A simple metal pole.",
+  "novakidDescription" : "A metal pole, thin as a branch.",
+  "drodenDescription" : "Metal pole detected.",
+  
+  "inventoryIcon" : "avikanoutpostpole2icon.png",
+  "orientations" : [
+    {
+      "image" : "avikanoutpostpole2.png:<color>",
+	  
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

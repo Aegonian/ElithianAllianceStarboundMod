@@ -1,0 +1,50 @@
+{
+  "id" : "kadavanlocations",
+  "species" : "avikan",
+  "title" : "Locations of Kadavan",
+  "description" : "An eductional piece on some of Kadavan's most sginificant places.",
+  "icon" : "avikanscroll1.png",
+  "contentPages" : [
+
+"Vas Vha'leih, dear reader. In this series of short scrolls, I, Izyati as-Kaladan, shall briefly describe some of the most important locations and geographical features of Kadavan, so that none shall ever forget the legacy of our people's one and only true home.",
+
+"Avikha: Kadavan's most fertile region, and the origin of the name 'Avikan'. It is located on the northern hemisphere of Kadavan.
+
+Avikha Oasis: An oasis located centrally inside the Avikha region, and the birthplace of the Avikan people.
+
+Dunes of Avikha: The mountain-sized dunes marking the outer edges of the Avikha region.
+
+Vhelin: The Terve of Vhelin, the capital of the pre-Exodus Avikan nation.",
+    
+"The Eastersand: A large desert located to the east of Avikha.
+
+The Westersand: A large desert located to the west of Avikha.
+
+The Flowing Dunes: A large desert located south of Avikha, frequently ravaged by sandstorms. Dunes form and erode in a matter of hours, sometimes even minutes here.",
+
+"The Sinking Sands: A wet region norht of Avikha. While rich in water, the region is home to large quicksand pits and the air is filled with toxic gasses, making the region inhospitable to most forms of life.
+
+Rhakori Highlands: A mountain range in the Eastersand, known for its flat tops.",
+
+"The Great Waste: A massive desert stretched across most of the southern hemisphere of Kadavan. The region is continuously ravaged by sandstorms, and combined with extreme temperatures, the region is completely inhospitable to the Avikan people. It is often referred to as the Deep Desert.
+
+Vhalakis: A fertile oasis enclosed by the Great Waste. Only the massive surrounding mountains allow it to exist within Kadavan's most inhospitable region.",
+
+"Kalachi Waste: A large desert located on the other side of Kadavan, relative to Avikha, on the northern hemisphere.
+
+Northern Whitelands: Kadavan's northern pole, one of only two areas with large amounts of frozen water.
+
+Southern Whitelands: Kadavan's southern pole.",
+
+"Vha'leihan Mountains: A mountain range on the western edge of the Avikha Oasis.
+
+Vas Vha'leih: An ancient Centensian city located in the Vha'leihan Mountains.
+
+Vhalas Vha'leih: A small Centensian city located on the highest peak of the Vha'leihan Mountains, and the palace of Vas Vha'leih."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

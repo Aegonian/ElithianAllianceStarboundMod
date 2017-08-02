@@ -1,0 +1,75 @@
+{
+  "type" : "avikangadhurherder",
+  "baseType" : "avikanvillagemerchant",
+
+  "scriptConfig" : {
+	  "merchant" : {
+		"categories" : {
+		  "avikan" : [ "avikangadhurherder" ]
+		},
+		"numItems" : 3
+    },
+
+    "dialog" : {
+      "merchant" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "Would you like to buy a Gad'hur?",
+              "Perhaps you'd be interested in purchasing a mount?",
+              "I've got plenty of good Gad'hur for sale here."
+            ]
+          }
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "Farewell, traveller.",
+              "Walk well, traveller.",
+              "Rhadeis guide you, traveller."
+            ]
+          }
+        },
+        "follow" : {
+          "default" : {
+            "default" : [
+              "Please, follow me to my ranch.",
+              "My ranch is this way, traveller."
+            ]
+          }
+        },
+        "welcome" : {
+          "default" : {
+            "default" : [
+              "Here we are. Let's do some trading, then.",
+              "This is my ranch. See a mount you like yet?"
+            ]
+          }
+        },
+        "tout" : {
+          "default" : {
+            "default" : [
+              "Would you be interested in a mount?",
+              "I've got plenty of good Gad'hur for sale."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "avikan-travellerchest", "parameters" : { "colorIndex" : 0 } } ],
+            "legs" : [ { "name" : "avikan-travellerlegs", "parameters" : { "colorIndex" : 0 } } ],
+            "head" : [ { "name" : "avikan-travellerhead", "parameters" : { "colorIndex" : 0 } } ],
+            "primary" : [
+				{ "name" : "avikancrook", "data" : { "colorIndex" : 1 } }
+			]
+          }
+        ] ]
+    ]
+  }
+}

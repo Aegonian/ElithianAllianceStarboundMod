@@ -1,0 +1,79 @@
+{
+  "itemName" : "avikanhuntingknife2",
+  "price" : 350,
+  "level" : 5,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A hunting knife designed by the Nomada. Used to cut the highest quality leather from monsters.",
+  "shortdescription" : "Nomada Hunting Knife",
+  "tooltipKind" : "sword",
+  "category" : "Hunting Knife",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","melee","dagger","avikan"],
+  
+  "radioMessagesOnPickup" : [ "pickupavikanhunting" ],
+
+  "inventoryIcon" : "avikanhuntingknife2.png",
+
+  "animation" : "/items/active/weapons/melee/animations/thea-huntingdagger.animation",
+  "animationParts" : {
+    "handle": "",
+    "blade" : "avikanhuntingknife2.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_dagger.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "avikanhunting",
+
+  "aimOffset" : 0.0,
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/melee/meleeslash.lua"],
+    "class" : "MeleeSlash",
+
+    "fireTime" : 0.45,
+    "baseDps" : 7.0,
+    "damageConfig" : {
+      "damageSourceKind" : "avikanhunting",
+      "statusEffects" : [ ],
+      "knockbackMode" : "aim",
+      "knockback" : 10,
+      "timeoutGroup" : "primary"
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : -90,
+        "weaponRotation" : -10,
+        "weaponOffset" : [0, 2.25],
+
+        "allowFlip" : true,
+        "allowRotate" : true
+      },
+      "windup" : {
+        "duration" : 0.05,
+        "armRotation" : -20,
+        "weaponRotation" : -20,
+        "weaponOffset" : [0, 2.25],
+
+        "allowFlip" : true,
+        "allowRotate" : false
+      },
+      "fire" : {
+        "duration" : 0.2,
+        "armRotation" : -135,
+        "weaponRotation" : 40,
+        "weaponOffset" : [0, 2.5],
+
+        "allowFlip" : true,
+        "allowRotate" : false
+      }
+    }
+  },
+  "fireSounds" : [ "/sfx/melee/swing_dagger.ogg" ],
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

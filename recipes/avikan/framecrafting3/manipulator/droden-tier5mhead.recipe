@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "avikanmetaltier5", "count" : 6 },
+	{ "item" : "avikancorepowerful", "count" : 1 },
+    { "item" : "avikancircuitry", "count" : 1 }
+  ],
+  "duration" : 5,
+  "output" : { "item" : "droden-tier5mhead", "count" : 1 },
+  "groups" : [ "drodenframecrafting3", "armours", "all" ]
+}

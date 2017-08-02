@@ -1,0 +1,13 @@
+{
+  "itemName" : "avikanpurpledyes",
+  "price" : 125,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "avikanpurpledyes.png",
+  "description" : "A purple dye often used by the Rhaiod.",
+  "shortdescription" : "Rhaiod Dyes",
+  "itemTags" : [ "reagent" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 1
+}

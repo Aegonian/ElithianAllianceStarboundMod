@@ -1,0 +1,10 @@
+{
+  "itemName" : "trinkwiring",
+  "price" : 5,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "trinkwiring.png",
+  "description" : "Copper wiring, for use in electronics.",
+  "shortdescription" : "Trinkian Wiring",
+  "itemTags" : [ "reagent" ]
+}

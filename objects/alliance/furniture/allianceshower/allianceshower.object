@@ -1,0 +1,42 @@
+{
+  "objectName" : "allianceshower",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 100,
+  "description" : "A shower cabin.",
+  "shortdescription" : "Alliance Shower Cabin",
+  "race" : "aegi",
+
+  "apexDescription" : "An place to wash yourself.",
+  "avianDescription" : "I should wash my feathers.",
+  "floranDescription" : "Floran takess a rain bath here.",
+  "glitchDescription" : "Ashamed. I hope no-one will hear me sing.",
+  "humanDescription" : "This shower cabin isn't exactly private...",
+  "hylotlDescription" : "A simplistic shower.",
+  "novakidDescription" : "Let's go take a shower!",
+
+  "aegiDescription" : "A standard shower cabin.",
+  "avikanDescription" : "This device can make it rain. A waste of water.",
+  "erixianDescription" : "I could probably use a shower.",
+  "trinkDescription" : "I prefer a chemical cleansing over a shower.",
+  "hymidDescription" : "I love taking showers.",
+  "notixDescription" : "A shower.",
+  "jorgasianDescription" : "This shower could use some privacy.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Alien water supply detected.",
+
+  "inventoryIcon" : "allianceshowericon.png",
+  "orientations" : [
+    {
+      "dualImage" : "allianceshower.png:<color>",
+      "imagePosition" : [-8, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

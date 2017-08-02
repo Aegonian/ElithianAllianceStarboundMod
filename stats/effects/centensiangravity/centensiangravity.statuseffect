@@ -1,0 +1,18 @@
+{
+  "name" : "centensiangravity",
+  "blockingStat" : "centensianenergyStatusImmunity",
+
+  "effectConfig" : {
+	"gravitySourceProjectile" : "centensiangravitysource"
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "centensiangravity.lua"
+  ],
+
+  "animationConfig" : "centensiangravity.animation",
+
+  "label" : "Distorted Gravity",
+  "icon" : "/interface/statuses/centensiangravity.png"
+}

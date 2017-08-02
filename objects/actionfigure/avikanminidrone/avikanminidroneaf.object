@@ -1,0 +1,32 @@
+{
+  "objectName" : "avikanminidroneaf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "legendary",
+  "category" : "actionFigure",
+  "collectablesOnPickup" : { "actionfigures" : "avikanminidroneaf" },
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"A small drone sent out by Avikan soldiers to scout the area ahead.\"",
+  "shortdescription" : "Vanguard Drahlid Figurine",
+
+  "inventoryIcon" : "avikanminidroneaf.png",
+  "orientations" : [
+    {
+      "image" : "avikanminidroneaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "avikanminidroneaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

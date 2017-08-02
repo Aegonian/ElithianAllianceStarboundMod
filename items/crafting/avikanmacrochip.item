@@ -1,0 +1,10 @@
+{
+  "itemName" : "avikanmacrochip",
+  "price" : 100,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "avikanmacrochip.png",
+  "description" : "A top-of-the-line computing chip, for when you need a lot power in a small package.",
+  "shortdescription" : "Avikan Macrochip",
+  "itemTags" : [ "reagent" ]
+}

@@ -1,0 +1,19 @@
+{
+  "particleEmitters" : {
+    "flames" : {
+      "enabled" : true,
+      "emissionRate" : 8.0,
+      "particles" : [
+        { "particle" : "shadowmarked" },
+		{ "particle" : "shadowmarked2" }
+      ]
+    }
+  },
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [40, 45, 50]
+    }
+  }
+}

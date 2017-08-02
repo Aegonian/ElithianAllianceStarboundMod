@@ -1,0 +1,55 @@
+{
+  "id" : "weaponrestorationdroden2",
+  "prerequisites" : [ "weaponrestorationdroden" ],
+  "title" : "^orange;The Legion's Blade II",
+  "text" : "Now that we have the Legion Switch Gear, all we need are some raw materials to repair the blade itself. If you can ^green;find me ^orange;10 Superb Kavanite Plates ^green;and a piece of ^orange;Avikan Circuitry^white;, I can finish the repairs.",
+  "completionText" : "Here you go, your fully restored Legion blade! Make good use of it, Droden.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "drodenlegion", 1 ], [ "drodenlegion-codex", 1 ], [ "avikancache", 1 ], [ "avikanmerittoken", 15 ] ]
+  ],
+  "canBeAbandoned" : false,
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+	"portraits" : {
+      "questStarted" : {
+        "portrait" : [ {"image" : "/objects/avikan/outpost/avikangunsmith/avikangunsmithportrait.png"} ],
+        "title" : "Ayurin"
+      },
+      "questComplete" : {
+        "portrait" : [ {"image" : "/objects/avikan/outpost/avikangunsmith/avikangunsmithportrait.png"} ],
+        "title" : "Ayurin"
+      }
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "avikanmetaltier6",
+        "count" : 10,
+        "consume" : true
+      },
+	  {
+        "type" : "gatherItem",
+        "itemName" : "avikancircuitry",
+        "count" : 1,
+        "consume" : true
+      },
+	  {
+        "type" : "gatherItem",
+        "itemName" : "legiontech",
+        "count" : 1,
+        "consume" : true
+      },
+	  {
+        "type" : "gatherItem",
+        "itemName" : "drodenlegionbroken",
+        "count" : 1,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Return to ^orange;Ayurin ^reset;in the ^orange;Starfarer's Refuge^reset;"
+  }
+}

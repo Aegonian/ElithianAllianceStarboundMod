@@ -1,0 +1,15 @@
+{
+  "input" : [
+	{ "item" : "avikanmetal", "count" : 10 },
+    { "item" : "avikandarkmetal", "count" : 6 },
+    { "item" : "avikanbattery", "count" : 2 },
+    { "item" : "avikancircuitry", "count" : 4 },
+    { "item" : "avikanmacrochip", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "avikanrailcrafting",
+    "count" : 1
+  },
+  "duration" : 5,
+  "groups" : [ "avikaninventor2", "craftingstations", "all" ]
+}

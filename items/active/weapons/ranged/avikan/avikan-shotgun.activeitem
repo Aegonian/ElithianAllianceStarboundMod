@@ -1,0 +1,148 @@
+{
+  "itemName" : "avikan-shotgun",
+  "price" : 180,
+  "inventoryIcon" : "avikan-shotgun.png",
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A powerful shotgun issued to Avikan military forces.",
+  "shortdescription" : "Vanguard Shotgun",
+  "level" : 5,
+  "tooltipKind" : "gun",
+  "category" : "Shotgun",
+  "itemTags" : ["weapon","ranged","shotgun","avikan"],
+  "twoHanded" : true,
+  
+  "cursor" : "/cursors/thea-widereticle.cursor",
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "avikan-shotgun.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+  },
+  "animationCustom" : {
+    "particleEmitters" : {
+      "muzzleFlash" : {
+        "transformationGroups" : ["muzzle"],
+		"offsetRegion" : [-1.5, 0.2, -1.5, 0.2],
+        "particles" : [
+          { "particle" : "thea-discardedbullet" },
+		  { "particle" : "thea-discardedbullet" }
+        ]
+      },
+	  "altMuzzleFlash" : {
+		"transformationGroups" : ["muzzle"],
+		"offsetRegion" : [-1.5, 0.2, -1.5, 0.2],
+        "particles" : [
+          { "particle" : "thea-discardedbullet" },
+		  { "particle" : "thea-discardedbullet" }
+        ]
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/shotgun2.ogg" ],
+	  "altFire" : [ "/sfx/gun/shotgun4.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.5, 0.1],
+  "muzzleOffset" : [1.55, 0.25],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.7,
+    "baseDps" : 10.5,
+    "energyUsage" : 35,
+    "inaccuracy" : 0.11,
+
+    "projectileCount" : 8,
+    "fireType" : "auto",
+
+    "projectileType" : "avikanbullet2",
+    "projectileParameters" : {
+      "knockback" : 10
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.25,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "altAbility" : {
+    "name" : "Power Shot",
+    "scripts" : ["/items/active/weapons/ranged/abilities/altfire.lua"],
+	"class" : "AltFireAttack",
+
+    "baseDps" : 4.0,
+	"fireTime" : 1.2,
+    "energyUsage" : 50.0,
+    "inaccuracy" : 0.045,
+
+	"projectileCount" : 4,
+    "fireType" : "auto",
+	
+	"projectileType" : "avikanbullet2",
+	"projectileParameters" : {
+	  "knockback" : 40
+	},
+	
+	"hidePrimaryMuzzleFlash" : false,
+	"useParticleEmitter" : true,
+	"usePrimaryFireSound" : false,
+
+    "stances" : {
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 7,
+        "weaponRotation" : 7,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.25,
+        "armRotation" : 7,
+        "weaponRotation" : 7,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

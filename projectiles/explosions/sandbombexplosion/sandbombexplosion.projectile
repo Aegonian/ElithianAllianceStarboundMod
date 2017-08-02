@@ -1,0 +1,17 @@
+{
+  "projectileName" : "sandbombexplosion",
+  "image" : "sandbombexplosion.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  "speed" : 0,
+  "statusEffects" : [
+    "sandslowdown-nodamage"
+  ],
+  "damagePoly" : [ [-28, 0], [-21, -21], [0, -28], [21, -21], [28, 0], [21, 21], [0, 28], [-21, 21] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "damageKind" : "default",
+  "knockback" : 10
+}

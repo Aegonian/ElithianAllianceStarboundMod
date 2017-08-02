@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "trinkmetal", "count" : 2 },
+	{ "item" : "liquidoil", "count" : 5 },
+	{ "item" : "trinkelectronics", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "trinkrepairmodule",
+    "count" : 2
+  },
+  "groups" : [ "trinkcrafting2", "consumables", "all" ],
+  "duration" : 0.3
+}

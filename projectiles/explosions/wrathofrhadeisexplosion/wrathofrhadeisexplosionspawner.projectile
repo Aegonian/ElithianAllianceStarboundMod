@@ -1,0 +1,56 @@
+{
+  "projectileName" : "wrathofrhadeisexplosionspawner",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "physics" : "thea-noclipprojectile",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/wrathofrhadeisexplosion/wrathofrhadeisexplosion.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "wrathofrhadeisseeker",
+      "fuzzAngle" : 20,
+      "inheritDamageFactor" : 0.05,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "wrathofrhadeisseeker",
+      "fuzzAngle" : 20,
+      "inheritDamageFactor" : 0.05,
+      "angleAdjust" : 60
+    },
+	{
+      "action" : "projectile",
+      "type" : "wrathofrhadeisseeker",
+      "fuzzAngle" : 20,
+      "inheritDamageFactor" : 0.05,
+      "angleAdjust" : 120
+    },
+	{
+      "action" : "projectile",
+      "type" : "wrathofrhadeisseeker",
+      "fuzzAngle" : 20,
+      "inheritDamageFactor" : 0.05,
+      "angleAdjust" : 180
+    },
+	{
+      "action" : "projectile",
+      "type" : "wrathofrhadeisseeker",
+      "fuzzAngle" : 20,
+      "inheritDamageFactor" : 0.05,
+      "angleAdjust" : 240
+    },
+	{
+      "action" : "projectile",
+      "type" : "wrathofrhadeisseeker",
+      "fuzzAngle" : 20,
+      "inheritDamageFactor" : 0.05,
+      "angleAdjust" : 300
+    }
+  ],
+  "damageKind" : "xanafian",
+  "damageType" : "NoDamage",
+  "timeToLive" : 0
+}

@@ -1,0 +1,23 @@
+{
+  "itemName" : "trink-goldenchest",
+  "price" : 2500,
+  "inventoryIcon" : "icons.png:chest",
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "category" : "chestwear",
+  "description" : "^green;Trink. ^orange;CHEST SLOT. ^white;An arm mod made of solid gold. Precious.",
+  "shortdescription" : "Golden Arm Mod",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : {
+    "body" : "chestm.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "femaleFrames" : {
+    "body" : "chestf.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  }
+}

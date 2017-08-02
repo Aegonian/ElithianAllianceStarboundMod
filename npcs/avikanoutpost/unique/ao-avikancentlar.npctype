@@ -1,0 +1,97 @@
+{
+  "type" : "ao-avikancentlar",
+  "baseType" : "ao-idle",
+
+  "npcname" : "Adako",
+
+  "scriptConfig" : {
+  
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "We Centlars seek the truth. What do you seek?",
+			"The Centlars seek only the truth.",
+			"The truth will always reveal itself to a Centlar."
+		  ]
+		},
+
+        "avikan" : {
+          "default" : [
+            "We Centlars seek the truth. What do you seek?",
+			"The Centlars seek only the truth.",
+			"The truth will always reveal itself to a Centlar."
+          ],
+		  "human" : [
+            "I doubt you even know what a Centlar is.",
+			"We Centlars are truth-seekers. What are you?",
+			"Have you ever met your God?"
+          ],
+          "apex" : [
+            "What do you call researchers of ancient civilizations in your society?",
+			"Your evolution is full of signs of Centensian involvement.",
+			"I am a Centlar, truth-seeker of the Avikan Nomada."
+          ],
+          "avian" : [
+            "Is your Kluex real, like our Rhadeis is?",
+			"God or no, your Kluex intrigues me.",
+			"Have you ever considered that your Kluex might be a Centens, like our Rhadeis is?"
+          ],
+          "floran" : [
+            "The Centens may have had a hand in your creation, too.",
+			"The truth shall always reveal itself.",
+			"In all my studies of the Centens, I have never before seen a species of plants achieve spaceflight."
+          ],
+          "glitch" : [
+            "We Centlars neither hate nor love machines. We see only the truth.",
+			"Machines are part of evolution. They are neither good nor evil.",
+			"The only difference between us and your kind is the manner in which we were created."
+          ],
+		  "hylotl" : [
+            "Greetings, wise one. We Centlars might be able to use someone like you.",
+			"Are you a truth-seeker as well, wise one?",
+			"You would make for a fine truth-seeker, wise one."
+          ],
+		  "novakid" : [
+            "Never in my studies have I come across a creature quite like you.",
+			"Of all species I have seen, you are the only that shows no sign of Centensian involvement.",
+			"Your kind intrigues me, child of the stars."
+          ],
+          "avikan" : [
+            "Greetings, Captain. Have you found any Centensian ruins on your journeys?",
+			"Protect the relics of the Centens, captain. They are our keys to the truth.",
+			"The Centlars could use the information you gather during your travels."
+          ],
+		  "trink" : [
+            "We Centlars neither hate nor love machines. We see only the truth.",
+			"Machines are part of evolution. They are neither good nor evil.",
+			"The only difference between us and your kind is the manner in which we were created."
+          ],
+		  "droden" : [
+            "We Centlars neither hate nor love machines. We see only the truth.",
+			"Machines are part of evolution. They are neither good nor evil.",
+			"The only difference between us and your kind is the manner in which we were created."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "avikan-centlarhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "avikan-centlarchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "avikan-centlarlegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "itemName" : "jumpgatecore",
+  "price" : 1250,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "jumpgatecore.png",
+  "description" : "A mysterious Centensian artefact, the core of a Jumpgate device.",
+  "shortdescription" : "Jumpgate Core",
+  "itemTags" : [ "reagent" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 8
+}

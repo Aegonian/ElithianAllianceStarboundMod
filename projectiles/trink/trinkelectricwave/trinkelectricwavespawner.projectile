@@ -1,0 +1,12 @@
+{
+  "projectileName" : "trinkelectricwavespawner",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "timeToLive" : 0.5,
+  "power" : 1,
+  "speed" : 0,
+  "orientationLocked" : true,
+  "piercing" : true,
+  "flippable" : true,
+  "damageKind" : "electricbarrier",
+  "damageType" : "NoDamage"
+}

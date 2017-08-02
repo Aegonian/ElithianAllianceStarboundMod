@@ -1,0 +1,14 @@
+{
+  "input" : [
+    { "item" : "aegisaltore", "count" : 1 },
+	{ "item" : "feroziumore", "count" : 1 },
+	{ "item" : "violiumore", "count" : 1 },
+	{ "item" : "sand", "count" : 2 }
+  ],
+  "output" : {
+    "item" : "avikanmetaltier5",
+    "count" : 1
+  },
+  "duration" : 0.15,
+  "groups" : [ "avikanfurnace2", "bars", "all" ]
+}

@@ -1,0 +1,7 @@
+[
+  //Removes the cosmetic head armour while seated in the mech, as it looks bad on custom races
+  {
+    "op" : "remove",
+    "path" : "/loungePositions/seat/armorCosmeticOverrides"
+  }
+]

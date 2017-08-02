@@ -1,0 +1,9 @@
+{
+  "name" : "theleantrooper",
+  "category" : "theleantrooper",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "theleantrooper.png"
+  }
+}

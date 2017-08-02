@@ -1,0 +1,24 @@
+{
+  "kind" : "centenstrail",
+  "location" : "mouth",
+  "definition" : {
+    "duration" : 0.0001,
+    "loops" : true,
+    "start" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [ [ ] ]
+    },
+    "particles" : [
+      [ "centenstrail" ]
+    ],
+    "sounds" : [ [ ] ],
+    "stop" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [ [ ] ]
+    }
+  }
+}

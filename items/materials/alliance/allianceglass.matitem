@@ -1,0 +1,13 @@
+{
+  "itemName" : "allianceglass",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "allianceglass.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  
+  "shortdescription" : "Alliance Glass",
+  "description" : "Triple-pane glass, perfectly insulated.",
+
+  "materialId" : 30077
+}

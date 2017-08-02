@@ -1,0 +1,25 @@
+{
+  "projectileName" : "avikanlargeviolateddroneengine",
+  "image" : "avikanlargeviolateddroneengine.png",
+  "physics" : "largeGrenade",
+  "animationCycle" : 2,
+  "frameNumber" : 1,
+  "renderLayer" : "Object+1",
+  "emitters" : [ "thea-smallblacksmoke" ],
+  "power" : 1,
+  "speed" : 10,
+  "onlyHitTerrain" : true,
+  "initialVelocity" : 10,
+  "timeToLive" : 100,
+  "bounces" : 0,
+  "flippable" : true,
+  "orientationLocked" : false,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/avikanairstrikeexplosion/avikanairstrikeexplosion.config"
+    }
+  ],
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

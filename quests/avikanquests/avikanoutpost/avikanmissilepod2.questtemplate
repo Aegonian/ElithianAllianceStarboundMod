@@ -1,0 +1,54 @@
+{
+  "id" : "avikanmissilepod2",
+  "prerequisites" : [ "avikanmissilepod" ],
+  "title" : "^green;Explosive Firepower II",
+  "text" : "In order to repair that missile pod of yours, I need some materials. I'll need at least ^orange;8 Superb Kavanite Plates ^white;and a ^orange;Dranite Plate ^white;to craft a new frame, an ^orange;Avikan Magazine ^white;to fix the loading mechanism, and some ^orange;Volatile Liquid ^white;for the ignition system. ^green;Bring me those materials^white;, and I can fix up that missile pod for you.",
+  "completionText" : "Here you go, Captain! Your very own Missile Pod! I'm also giving you the blueprints for the weapon, in case you ever need to craft another one.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "avikan-missilepod", 1 ], [ "avikan-missilepod-recipe", 1 ], [ "avikancache", 1 ], [ "avikanmerittoken", 15 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : {
+        "portrait" : [ {"image" : "/objects/avikan/outpost/avikangunsmith/avikangunsmithportrait.png"} ],
+        "title" : "Ayurin"
+      },
+      "questComplete" : {
+        "portrait" : [ {"image" : "/objects/avikan/outpost/avikangunsmith/avikangunsmithportrait.png"} ],
+        "title" : "Ayurin"
+      }
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "avikanmetaltier6",
+        "count" : 8,
+        "consume" : true
+      },
+	  {
+        "type" : "gatherItem",
+        "itemName" : "avikandarkmetal",
+        "count" : 1,
+        "consume" : true
+      },
+	  {
+        "type" : "gatherItem",
+        "itemName" : "avikanmagazine",
+        "count" : 1,
+        "consume" : true
+      },
+	  {
+        "type" : "gatherItem",
+        "itemName" : "avikanvolatileliquid",
+        "count" : 1,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Return to ^orange;Ayurin ^reset;in the ^orange;Starfarer's Refuge^reset;"
+  }
+}

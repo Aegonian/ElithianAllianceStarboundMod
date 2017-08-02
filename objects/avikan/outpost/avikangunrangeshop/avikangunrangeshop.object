@@ -1,0 +1,47 @@
+{
+  "objectName" : "avikangunrangeshop",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Legendary",
+  "printable" : false,
+  "description" : "Tokens of merit can be traded for a variety of goods here.",
+  "shortdescription" : "Vanguard Token Exchange",
+  "race" : "avikan",
+  
+  "floranDescription" : "If Floran givess robot man tokensss, robot man gives Floran itemsss.",
+  "glitchDescription" : "Enticed. Tokens of merit can be exchanged for various goods here.",
+  "novakidDescription" : "Gotta have some tokens of merit if I wish to trade here.",
+  
+  "avikanDescription" : "Tokens of merit can be traded for a variety of goods here.",
+  "drodenDescription" : "Merchant detected. Purchases are made using tokens of merit.",
+  
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/craftingmerchant.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "Vanguard Token Exchange",
+        "subtitle" : "  Being meritful has its merits.",
+        "icon" : {
+          "file" : "/objects/avikan/outpost/avikangunrangeshop/icon.png"
+        }
+      }
+    },
+    "filter" : [ "avikangunrangeshop" ]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "avikangunrangeshop.png:<frame>",
+      "direction" : "right",
+
+      "imagePosition" : [0, 0],
+      "frames" : 20,
+      "animationCycle" : 1.6,
+
+	  "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+
+}

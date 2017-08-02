@@ -1,0 +1,23 @@
+{
+  "itemName" : "trinkrepairmodule",
+  "rarity" : "Rare",
+  "price" : 250,
+  "category" : "medicine",
+  "inventoryIcon" : "trinkrepairmodule.png",
+  "description" : "A basic self-repair module. Restores 500 health over 30 seconds.",
+  "shortdescription" : "Trinkian Repair Module",
+  "effects" : [ [
+      {
+        "effect" : "trinkrepairmoduleheal"
+      }
+    ] ],
+  "emote" : "",
+  "emitters" : [ "bandageuse" ],
+  "blockingEffects" : [
+    "salveheal",
+    "bandageheal",
+    "medkitheal",
+    "nanowrapheal",
+	"trinkrepairmoduleheal"
+  ]
+}

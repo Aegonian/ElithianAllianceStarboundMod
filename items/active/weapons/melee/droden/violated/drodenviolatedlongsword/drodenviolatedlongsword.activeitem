@@ -1,0 +1,53 @@
+{
+  "itemName" : "drodenviolatedlongsword",
+  "price" : 900,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A hacked Droden longsword.",
+  "shortdescription" : "Violated Longsword",
+  "tooltipKind" : "sword",
+  "category" : "Longsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword","droden"],
+
+  "animation" : "/items/active/weapons/melee/broadsword/combobroadsword.animation",
+  "animationParts" : { },
+  "animationCustom" : { },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : [0.71, 0.9],
+    "baseDps" : [10, 11]
+  },
+
+  "builder" : "/items/buildscripts/buildweapon.lua",
+  "builderConfig" : [{
+    "nameGenerator" : "violatednames.config:nameGen",
+    "animationParts" : {
+      "blade" : {
+        "path" : "blade/<variant>.png",
+        "variants" : 1,
+        "paletteSwap" : true
+      },
+      "handle" : {
+        "path" : "handle/<variant>.png",
+        "variants" : 2,
+        "paletteSwap" : true
+      }
+    },
+    "altAbilities" : [
+      "bladecharge",
+      "downstab",
+      "parry",
+      "risingslash",
+      "spinslash",
+      "superspinslash"
+    ],
+    "palette" : "/items/active/weapons/colors/melee.weaponcolors",
+    "iconDrawables" : [ "blade", "handle" ]
+  }]
+}

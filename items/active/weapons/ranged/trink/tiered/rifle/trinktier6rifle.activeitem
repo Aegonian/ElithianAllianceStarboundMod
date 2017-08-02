@@ -1,0 +1,151 @@
+{
+  "itemName" : "trinktier6rifle",
+  "price" : 160,
+  "inventoryIcon" : "trinktier6rifle.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A high-grade, standard issue laser rifle built by the Trinks.",
+  "shortdescription" : "Circuit Rifle Mk VI",
+  "level" : 6,
+  "tooltipKind" : "gun",
+  "category" : "Laser Rifle",
+  "itemTags" : ["weapon","ranged","assaultrifle","energy","trink"],
+  "twoHanded" : true,
+
+  "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
+  "animationParts" : {
+    "middle" : "trinktier6rifle.png",
+    "middleFullbright" : "trinktier6riflelights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/trinklaserflash.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+		    "offset" : [0.5, 0.1]
+		  }
+		}
+      }
+    },
+	"particleEmitters" : {
+	  "altMuzzleFlash" : {
+		"transformationGroups" : ["muzzle"],
+		"offsetRegion" : [0, 0, 0, 0],
+        "particles" : [
+          { "particle" : "trinklasermuzzle" },
+		  { "particle" : "trinklasermuzzle" },
+		  { "particle" : "trinklasermuzzle" },
+		  { "particle" : "trinklasermuzzle" },
+		  { "particle" : "trinklasermuzzle" },
+		  { "particle" : "trinklasermuzzle" }
+        ]
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/plasma_shotgun3.ogg" ],
+	  "altFire" : [ "/sfx/gun/plasma_sniper2.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.5, 0.1],
+  "muzzleOffset" : [1.875, 0.1],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.6,
+    "baseDps" : 10.5,
+    "energyUsage" : 31.5,
+    "inaccuracy" : 0.008,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "trinklaserbullet",
+    "projectileParameters" : {
+      "knockback" : 10
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.25,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "altAbility" : {
+    "name" : "Ricochet Laser",
+    "scripts" : ["/items/active/weapons/ranged/abilities/altfire.lua"],
+	"class" : "AltFireAttack",
+
+	"fireTime" : 0.6,
+	"baseDps" : 8.5,
+    "energyUsage" : 45.0,
+    "inaccuracy" : 0.01,
+
+	"projectileCount" : 1,
+    "fireType" : "auto",
+	
+	"projectileType" : "trinklaserbulletbounce",
+	"projectileParameters" : {
+	  "knockback" : 8,
+	  "bounces" : 1
+	},
+	
+	"hidePrimaryMuzzleFlash" : false,
+	"useParticleEmitter" : true,
+	"usePrimaryFireSound" : false,
+
+    "stances" : {
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.25,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

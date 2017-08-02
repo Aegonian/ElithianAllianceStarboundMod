@@ -1,0 +1,75 @@
+{
+  "objectName" : "avikanblackmarket",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Legendary",
+  "description" : "This person looks a bit shady...",
+  "shortdescription" : "Drifter's Emporium",
+  "race" : "avikan",
+  
+  "floranDescription" : "Ssshady looking man can ssell Floran many goodsss.",
+  "glitchDescription" : "Hesitant. I am not sure if I should be dealing with such shady figures.",
+  "novakidDescription" : "A shady lookin' fella. Gotta be a black market of sorts.",
+  
+  "avikanDescription" : "I highly doubt this person's shop is legal...",
+  "drodenDescription" : "Detected unregistered merchant. Recommending caution.",
+  
+  "interactAction" : "OpenMerchantInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/merchant.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "Drifter's Emporium",
+        "subtitle" : "  You never saw this place..."
+      }
+    },
+    "buyFactor" : 1.0,
+    "sellFactor" : 0.2,
+    "items" : [
+	  //OTHER
+      { "item" : { "name" : "avikanmerittoken" }, "price" : 175 },
+	  { "item" : { "name" : "avikanarmring" }, "price" : 1000 },
+	  { "item" : { "name" : "avikandronemissilepod" }, "price" : 10000 },
+	  { "item" : { "name" : "avikangift" }, "price" : 1000 },
+	  { "item" : { "name" : "avikanshockcore" }, "price" : 1000 },
+	  { "item" : { "name" : "remotejumpgatecontroller" }, "prerequisiteQuest" : "keffrider3", "price" : 2500 },
+	  { "item" : { "name" : "avikanvehiclejumpgate" }, "prerequisiteQuest" : "keffrider2", "price" : 5000 },
+	  { "item" : { "name" : "grandmonsterbone" }, "price" : 5000 },
+	  { "item" : { "name" : "sandcrawlertooth" }, "price" : 1000 },
+	  { "item" : { "name" : "sandspittersack" }, "price" : 1500 },
+	  { "item" : { "name" : "stingwingqueen" }, "price" : 1500 },
+	  { "item" : { "name" : "valahrgland" }, "price" : 1500 },
+	  { "item" : { "name" : "theleanmetal" }, "price" : 3500 },
+	  { "item" : { "name" : "theleantissue" }, "price" : 2500 },
+	  { "item" : { "name" : "centensianwarpcore" }, "price" : 12500 },
+	  { "item" : { "name" : "jumpgatecore" }, "price" : 5000 },
+	  { "item" : { "name" : "centensiantech" }, "price" : 2500 },
+	  { "item" : { "name" : "centensianmetal" }, "price" : 1000 },
+	  { "item" : { "name" : "centensrelic" }, "price" : 15000 },
+	  { "item" : { "name" : "avikancraftingguide" }, "prerequisiteQuest" : "avikancrafting", "price" : 1250 },
+	  { "item" : { "name" : "trinkcraftingguide" }, "prerequisiteQuest" : "trinkcrafting2", "price" : 1250 }
+    ]
+  },
+  "printable" : false,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "avikanblackmarket.png:<frame>",
+      "direction" : "right",
+
+      "imagePosition" : [0, 0],
+      "frames" : 15,
+      "animationCycle" : 1.5,
+
+	  "spaceScan" : 0.1,
+      "interactiveSpaces" : [
+        [2, 3], [3, 3],
+        [2, 2], [3, 2],
+        [2, 1], [3, 1],
+        [2, 0], [3, 0]
+      ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+
+}

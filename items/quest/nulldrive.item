@@ -1,0 +1,11 @@
+{
+  "itemName" : "nulldrive",
+  "price" : 1000,
+  "rarity" : "Essential",
+  "category" : "Quest Item",
+  "tooltipKind" : "thea-unique",
+  "inventoryIcon" : "nulldrive.png",
+  "description" : "A unique line rifle drive, capable of near-instantenous charging.",
+  "shortdescription" : "^orange;Null-Drive^white;",
+  "itemTags" : [ "questitem" ]
+}

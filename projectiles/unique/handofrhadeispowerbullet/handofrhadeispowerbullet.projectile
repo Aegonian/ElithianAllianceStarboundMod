@@ -1,0 +1,26 @@
+{
+  "projectileName" : "handofrhadeispowerbullet",
+  "image" : "handofrhadeispowerbullet.png",
+  "physics" : "laser",
+  "bounces" : 0,
+  "piercing" : false,
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "emitters" : [ "vhelinstrail", "errasslayerstrail2", "handofrhadeisswoosh" ],
+  "damageKindImage" : "icon.png",
+  "lightColor" : [0, 65, 100],
+  "fullbright" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/vhelinspowerexplosion/vhelinspowerexplosion.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 90,
+  "timeToLive" : 1.5,
+  "damageKind" : "electric",
+  "statusEffects" : [
+    "strongelectrified"
+  ]
+}

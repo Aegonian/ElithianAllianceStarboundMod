@@ -1,0 +1,51 @@
+{
+  "objectName" : "avikanfoodplate",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 30,
+  "description" : "A plate full of food.",
+  "shortdescription" : "Avikan Plate",
+  "race" : "avikan",
+
+  "apexDescription" : "Dinner.",
+  "avianDescription" : "Delicious food.",
+  "floranDescription" : "Foodsss.",
+  "glitchDescription" : "Statement. Glitch are not interested in such organic food.",
+  "humanDescription" : "Food. Yummy food!",
+  "hylotlDescription" : "A well-balanced dinner.",
+
+  "aegiDescription" : "A balanced meal.",
+  "avikanDescription" : "A traditional meal.",
+  "erixianDescription" : "This food is too spicey for my liking.",
+  "trinkDescription" : "An Avikan meal.",
+  "hymidDescription" : "This food is nothing like what we have on Hyzolia.",
+  "notixDescription" : "Avikan food. It smells good.",
+  "jorgasianDescription" : "A balanced meal.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Analysis complete. Nutritional value: excellent.",
+
+  "inventoryIcon" : "avikanfoodplateicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanfoodplate.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+  
+  "scripts" : [ "/objects/scripts/breakoninteract.lua" ],
+  "scriptDelta" : 5,
+  
+  "smashDropPool" : "avikanfoodplatedrop",
+  "breakDropPool" : "avikanfoodplatedrop"
+}

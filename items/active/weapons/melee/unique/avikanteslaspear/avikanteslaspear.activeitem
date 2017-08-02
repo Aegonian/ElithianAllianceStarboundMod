@@ -1,0 +1,151 @@
+{
+  "itemName" : "avikanteslaspear",
+  "price" : 1500,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "essential",
+  "description" : "^orange;A bone spear built around an electric shock generator.",
+  "shortdescription" : "^orange;Bone Coil Spear^white;",
+  "tooltipKind" : "thea-sword-unique",
+  "category" : "Electric Spear",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spear","prod","avikan","theaUnique"],
+
+  "inventoryIcon" : "avikanteslaspear.png",
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "avikanteslaspear" },
+  
+  "meritTokenValue" : 100,
+
+  "animation" : "avikanteslaspear.animation",
+  "animationParts" : {
+    "blade" : "avikanteslaspear.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fireInactive" : [ "/sfx/melee/swing_spear.ogg" ],
+	  "fireActive" : [ "/sfx/melee/swing_dagger_electric2.ogg" ],
+	  "holdLoop" : [ "/sfx/objects/teslaspike.ogg" ],
+	  "idleLoop" : [ "/sfx/melee/avikanteslaspear_idle.ogg" ],
+	  "electrify" : [ "/sfx/melee/avikanteslaspear_on.ogg" ],
+	  "deactivate" : [ "/sfx/melee/avikanteslaspear_off.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/unique/avikanteslaspear/avikanteslaspear.lua"],
+
+  "elementalType" : "electric",
+
+  "aimOffset" : -1.0,
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/melee/abilities/spear/electricspear/electricspearstab.lua"],
+	"class" : "ElectricSpearStab",
+	
+    "fireTime" : 1.1,
+	
+    "baseDps" : 9.125,
+    "activeDps" : 10.0,
+	
+    "inactiveDamageConfig" : {
+      "damageSourceKind" : "spear",
+      "statusEffects" : [ ],
+      "knockbackMode" : "aim",
+      "knockback" : 30,
+      "timeoutGroup" : "primary"
+    },
+	"activeDamageConfig" : {
+      "damageSourceKind" : "electricspear",
+      "statusEffects" : [ "electrified" ],
+      "knockbackMode" : "aim",
+      "knockback" : 35,
+      "timeoutGroup" : "primary"
+    },
+	
+    "inactiveHoldDamageMultiplier" : 0.1,
+	"activeHoldDamageMultiplier" : 0.3,
+	
+    "inactiveHoldDamageConfig" : {
+	  "damageSourceKind" : "spear",
+      "statusEffects" : [ ],
+      "knockbackMode" : "aim",
+      "knockback" : 20,
+      "timeoutGroup" : "primary",
+      "timeout" : 0.5
+    },
+    "activeHoldDamageConfig" : {
+	  "damageSourceKind" : "electricspear",
+      "statusEffects" : [ "electrified" ],
+      "knockbackMode" : "aim",
+      "knockback" : 20,
+      "timeoutGroup" : "hold",
+      "timeout" : 0.5
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : -90,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+        "weaponOffset" : [0, 1.0],
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "windup" : {
+        "duration" : 0.15,
+        "armRotation" : -110,
+        "weaponRotation" : 20,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 1.0],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire" : {
+        "duration" : 0.35,
+        "armRotation" : -20,
+        "weaponRotation" : -70,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 2.5],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "hold" : {
+        "armRotation" : -30,
+        "weaponRotation" : -60,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 2.0],
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "altAbility" : {
+    "name" : "Electrify",
+    "scripts" : ["/items/active/weapons/melee/abilities/spear/electricspear/electrifyspear.lua"],
+	"class" : "ElectrifySpear",
+
+    "energyPerSecond" : 15,
+	"cooldownTime" : 1.0,
+
+    "stances" : {
+      "electrify" : {
+        "duration" : 0.5,		
+		"armRotation" : 50,
+        "weaponRotation" : -50,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 0.5],
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

@@ -1,0 +1,46 @@
+{
+  "objectName" : "avikanmarketstallleather",
+  "colonyTags" : ["avikan", "commerce", "avikanleather"],
+  "rarity" : "Common",
+  "description" : "A market stall full of leather and fabric.",
+  "shortdescription" : "Avikan Leather Stall",
+  "race" : "avikan",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 60,
+
+  "apexDescription" : "Leather rags and pieces of colourful fabric.",
+  "avianDescription" : "So much fabric!.",
+  "floranDescription" : "Leathersss for Floran?",
+  "glitchDescription" : "Statement. A lot of leather and fabric.",
+  "humanDescription" : "I wonder what I could craft with all of this?",
+  "hylotlDescription" : "There's much that can be crafted with this.",
+
+  "aegiDescription" : "I wonder how many animals had to be slain to find this much leather...",
+  "avikanDescription" : "Leather and fabric, for crafting clothes, tents and so much more.",
+  "erixianDescription" : "This leather wouldn't last very long on Heragon.",
+  "trinkDescription" : "This market stall offers various leather items.",
+  "hymidDescription" : "I've never liked the way Avikan clothing feels.",
+  "notixDescription" : "Avikan leather items. These are surprisingly durable.",
+  "jorgasianDescription" : "A market stall filled with leather items.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Leather items detected: Avikan clothing. Rugs. Tapestries. Sheets.",
+
+  "inventoryIcon" : "avikanmarketstallleathericon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanmarketstallleather.png:<color>",
+
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}

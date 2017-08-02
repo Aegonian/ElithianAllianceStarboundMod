@@ -1,0 +1,23 @@
+{
+  "config" : {
+    "shipUpgrades" : {
+      "capabilities" : ["teleport", "planetTravel", "systemTravel"],
+      "crewSize" : 2
+    }
+  },
+
+  "backgroundOverlays" : [
+    {
+      "image" : "trinkT3.png",
+      "position" : [8, 0],
+      "fullbright" : true
+    },
+    {
+      "image" : "trinkT3lit.png",
+      "position" : [8, 0]
+    }
+  ],
+
+  "blockKey" : "blockKey.config:blockKey",
+  "blockImage" : "trinkT3blocks.png"
+}

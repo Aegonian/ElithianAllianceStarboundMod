@@ -1,0 +1,85 @@
+{
+  "objectName" : "avikanlargeshipconsole",
+  "colonyTags" : ["avikan","wired"],
+  "rarity" : "Common",
+  "category" : "wire",
+  "printable" : false,
+  "price" : 70,
+  "description" : "A large computer console for wiring circuits together.",
+  "shortdescription" : "Avikan Ship Console",
+  "race" : "avikan",
+  "lightColor" : [50, 32, 0],
+
+  "apexDescription" : "A console for controlling parts of a ship.",
+  "avianDescription" : "This panel controls certain parts of the ship.",
+  "floranDescription" : "Ssshiny buttonsss, Floran presss?",
+  "glitchDescription" : "Interested. This control system is unfamiliar to me.",
+  "humanDescription" : "I probably shouldn't touch any of these buttons, but I really want to...",
+  "hylotlDescription" : "A control panel, the interface is new to me.",
+  "novakidDescription" : "A console sporting a fancy interface. I don't understand any of it.",
+
+  "aegiDescription" : "An Avikan-designed console. Its interface is too complicated for me.",
+  "avikanDescription" : "A console for interfacing with various systems.",
+  "erixianDescription" : "A console. How does the interface work?",
+  "trinkDescription" : "This console's interface was designed for Avikan hands.",
+  "hymidDescription" : "What might all these buttons do?",
+  "notixDescription" : "The interface on this console was designed for the Avikan.",
+  "jorgasianDescription" : "I wish I knew how this interface works.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Analysis. Console. Used for interfacing with various systems.",
+
+  "inventoryIcon" : "avikanlargeshipconsoleicon.png",
+  "orientations" : [
+    {
+	  "image" : "avikanlargeshipconsole.png:<color>.<frame>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 4,
+      "animationCycle" : 0.4,
+      "lightPosition" : [2, 2],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "flipImages" : true,
+      "direction" : "left"
+
+    },
+    {
+	  "image" : "avikanlargeshipconsole.png:<color>.<frame>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 4,
+      "animationCycle" : 0.4,
+      "lightPosition" : [2, 2],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "right"
+
+    }
+  ],
+
+  "scripts" : [
+    "/objects/wired/switch/switch.lua"
+  ],
+  "scriptDelta" : 5,
+  
+  "defaultSwitchState" : true,
+
+  "animation" : "avikanlargeshipconsole.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/console_generic_switchon.ogg" ],
+      "off" : [ "/sfx/objects/console_generic_switchoff.ogg" ]
+    }
+  },
+  "animationParts" : {
+    "bg" : "avikanlargeshipconsole.png",
+    "fg" : "avikanlargeshipconsolelit.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "outputNodes" : [ [4, 0] ]
+}

@@ -1,0 +1,10 @@
+{
+  "itemName" : "trinkmetaltier6",
+  "price" : 500,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "trinkmetaltier6.png",
+  "description" : "An augmented metal cube, easily stored and ready for crafting.",
+  "shortdescription" : "Sublime Trinkian Metal",
+  "itemTags" : [ "reagent" ]
+}

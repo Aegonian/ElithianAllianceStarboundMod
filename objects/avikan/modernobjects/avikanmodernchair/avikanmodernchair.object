@@ -1,0 +1,49 @@
+{
+  "objectName" : "avikanmodernchair",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "description" : "A modern, heavy chair.",
+  "shortdescription" : "Avikan Chair",
+  "race" : "avikan",
+  "category" : "furniture",
+  "printable" : false,
+  "price" : 50,
+
+  "apexDescription" : "A chair with a comfortable leather cushion.",
+  "avianDescription" : "A comfortable chair.",
+  "floranDescription" : "Chairsss for sssitting!",
+  "glitchDescription" : "Statement. A chair.",
+  "humanDescription" : "A chair. Incredibly comfortable.",
+  "hylotlDescription" : "A very comfortable chair.",
+
+  "aegiDescription" : "A heavy chair, but inctedibly comfortable.",
+  "avikanDescription" : "A modern Avikan chair. Even more comfortable than our leather cushions.",
+  "erixianDescription" : "A comfortable leather chair.",
+  "trinkDescription" : "A reportedly comfortable chair.",
+  "hymidDescription" : "A metal base adorned with a leather cushion. Most comfortable.",
+  "notixDescription" : "A comfortable modern chair.",
+  "jorgasianDescription" : "A chair.",
+  "centensDescription" : "This chair is incredibly comfortable.",
+  "dremetonDescription" : "A modern chair. There's no need for sitting in the waters of my home.",
+  "theleanDescription" : "Sitting is for the weak. The strong stand tall.",
+  "drodenDescription" : "Scans indicicate damaged leather. Repairs are recommended.",
+
+  "inventoryIcon" : "avikanmodernchairicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanmodernchair.png:<color>",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+  "sitPosition" : [0, 21]
+
+}

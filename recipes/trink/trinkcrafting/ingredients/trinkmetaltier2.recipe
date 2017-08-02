@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "tungstenore", "count" : 2 }
+  ],
+  "output" : {
+	"item" : "trinkmetaltier2",
+	"count" : 1
+  },
+  "groups" : [ "trinkcrafting", "ingredients", "all" ],
+  "duration" : 0.15
+}

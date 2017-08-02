@@ -1,0 +1,9 @@
+{
+  "name" : "sandwormcritter",
+  "category" : "sandwormcritter",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "body.png"
+  }
+}

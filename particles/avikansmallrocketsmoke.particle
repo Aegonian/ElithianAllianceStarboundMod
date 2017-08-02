@@ -1,0 +1,20 @@
+{
+  "kind" : "avikansmallrocketsmoke",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/dust1/dust1.animation",
+    "position" : [0, 0],
+    "finalVelocity" : [0, 0],
+    "approach" : [50, 50],
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.85,
+    "fade" : 1,
+    "size" : 1,
+    "layer" : "middle",
+    "timeToLive" : 0.45,
+    "variance" : {
+      "initialVelocity" : [2.0, 2.0],
+      "rotation" : 180
+    }
+  }
+}

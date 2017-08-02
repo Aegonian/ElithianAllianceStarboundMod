@@ -1,0 +1,57 @@
+{
+  "animationParts" : { },
+  "animationCustom" : {
+    "sounds" : {
+      "fireStart" : [ "/sfx/gun/flamethrower_start.ogg" ],
+      "fireLoop" : [ "/sfx/gun/flamethrower_loop.ogg" ],
+      "fireEnd" : [ "/sfx/gun/flamethrower_stop.ogg" ]
+    }
+  },
+  
+  "ability" : {
+    "name" : "Jumpflare Cannon",
+    "type" : "jumpflare",
+    "scripts" : ["/items/active/weapons/ranged/abilities/flamethrower/flamethrower.lua"],
+    "class" : "FlamethrowerAttack",
+
+    "baseDps" : 11.5,
+    "energyUsage" : 40,
+    "fireTime" : 0.05,
+    "inaccuracy" : 0.05,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "jumpflare",
+    "projectileParameters" : { },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.05,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  }
+}

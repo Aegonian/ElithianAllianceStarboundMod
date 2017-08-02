@@ -1,0 +1,45 @@
+{
+  "objectName" : "avikanmechobject",
+  "colonyTags" : ["avikan", "mech"],
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 650,
+  "description" : "A Vanguard vehicle built for combat purposes.",
+  "shortdescription" : "Vanguard Krahl",
+  "race" : "avikan",
+  
+  "apexDescription" : "This mech looks durable.",
+  "avianDescription" : "A mech! Can it fly?",
+  "floranDescription" : "Big metal man... Metal man ssmash!",
+  "glitchDescription" : "Intimidated. I would not like to be on the receiving end of this mech's weapons.",
+  "humanDescription" : "An alien mech! Let's hijack it!",
+  "hylotlDescription" : "A mech built for combat. A tool for violence, or defence?",
+
+  "aegiDescription" : "This mech might not have the best weaponry, but its armour is superb.",
+  "avikanDescription" : "The Vanguard only dispatches mechs like this one in truly dire situations.",
+  "erixianDescription" : "Few mechs are as weather-proof as this one, though it is a bit lacking in weaponry.",
+  "trinkDescription" : "A reliable combat mech, it has thick armour and decent weaponry.",
+  "hymidDescription" : "An Avikan combat mech! I wonder if it is waterproof?",
+  "notixDescription" : "A mech built for use in the harshest of environments.",
+  "jorgasianDescription" : "A heavy mech, it looks incredibly durable.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Vanguard Mech detected. Status: Inactive.",
+
+  "inventoryIcon" : "avikanmechicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanmech.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

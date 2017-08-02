@@ -1,0 +1,15 @@
+{
+  "itemName" : "avikandronemissilepod",
+  "price" : 500,
+  "rarity" : "Legendary",
+  "category" : "Quest Item",
+  "inventoryIcon" : "avikandronemissilepod.png",
+  "description" : "A missile pod, broken off from an Elite Drahl unit. It might still be repaired.",
+  "shortdescription" : "^#BA66FF;Broken Missile Pod^white;",
+  "itemTags" : [ "questitem" ],
+  
+  "pickupQuestTemplates" : [ "avikanmissilepod" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 5
+}

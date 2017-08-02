@@ -1,0 +1,9 @@
+{
+  "name" : "avikandronelights",
+  "category" : "avikandrone",
+  "type" : "lights",
+
+  "frames" : {
+    "lights" : "avikandronelights.png"
+  }
+}

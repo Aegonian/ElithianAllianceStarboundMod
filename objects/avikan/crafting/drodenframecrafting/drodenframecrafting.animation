@@ -1,0 +1,89 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "stage" : {
+        "default" : "drodenframecrafting",
+        "states" : {
+          "drodenframecrafting" : {},
+          "drodenframecrafting2" : {},
+          "drodenframecrafting3" : {
+            "frames" : 26,
+            "cycle" : 2.6,
+            "mode" : "loop"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "lights" : {
+        "properties" : {
+          "centered" : true,
+		  "fullbright" : true
+        },
+        "partStates" : {
+          "stage" : {
+            "drodenframecrafting" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+
+            "drodenframecrafting2" : {
+              "properties" : {
+                "image" : "drodenframecrafting2lights.png:<color>"
+              }
+            },
+
+            "drodenframecrafting3" : {
+              "properties" : {
+                "image" : "drodenframecrafting3lights.png:<color>.<frame>"
+              }
+            }
+          }
+        }
+      },
+	  
+	  "chassis" : {
+        "properties" : {
+          "centered" : true
+        },
+        "partStates" : {
+          "stage" : {
+            "drodenframecrafting" : {
+              "properties" : {
+                "image" : "drodenframecrafting.png:<color>"
+              }
+            },
+
+            "drodenframecrafting2" : {
+              "properties" : {
+                "image" : "drodenframecrafting2.png:<color>"
+              }
+            },
+
+            "drodenframecrafting3" : {
+              "properties" : {
+                "image" : "drodenframecrafting3.png:<color>.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "sounds" : {
+    "fanfare" : ["/sfx/cinematics/mission_unlock_event.ogg"],
+    "fanfare2" : ["/sfx/cinematics/license_acquired_event.ogg"]
+  },
+
+  "particleEmitters" : {
+    "dust" : {
+      "emissionRate" : 0.0,
+      "burstCount"  : 10,
+      "offsetRegion" : [-2, -2, 2, 2],
+      "particles" : [{ "particle" : "dust2"}]
+    }
+  }
+}

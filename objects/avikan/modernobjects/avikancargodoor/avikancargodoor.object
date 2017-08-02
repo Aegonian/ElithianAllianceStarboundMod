@@ -1,0 +1,190 @@
+{
+  "objectName" : "avikancargodoor",
+  "colonyTags" : ["avikan", "door"],
+  "rarity" : "Common",
+  "category" : "door",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A sturdy metal blast door.",
+  "shortdescription" : "Avikan Cargo Door",
+  "race" : "avikan",
+  
+  "health" : 12,
+
+  "apexDescription" : "A massive cargo door.",
+  "avianDescription" : "A large cargo door. What cargo could possibly need such a large door?",
+  "floranDescription" : "Floran wondersss why door iss so large...",
+  "glitchDescription" : "Impressed. That is a very large cargo door.",
+  "humanDescription" : "A massive cargo door. Even a small spaceship might fit through it.",
+  "hylotlDescription" : "A door large enough for a gentle giant.",
+  "novakidDescription" : "Now that's a massive door!",
+
+  "aegiDescription" : "A large cargo door. It was probably designed to let Skoffs in.",
+  "avikanDescription" : "This cargo door is large enough even for the bigger types of Skoff.",
+  "erixianDescription" : "A massive cargo door. The Avikan must move some giant cargo.",
+  "trinkDescription" : "This cargo door isn't very space-efficient.",
+  "hymidDescription" : "A cargo door big enough for some personal spaceships.",
+  "notixDescription" : "Most vehicles could fit right through this door.",
+  "jorgasianDescription" : "I wonder why the Avikan need such a large cargo door?",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Cargo door. Design officially approved for Skoff hangars.",
+
+  "inventoryIcon" : "avikancargodooricon.png",
+  "orientations" : [
+    {
+      "image" : "avikancargodoor.png:default",
+      "direction" : "left",
+      "flipImages" : true,
+      "imagePosition" : [-88, 0],
+      "renderLayer" : "Object+5",
+	  
+	  "spaces" : [
+        [-11,12], [-10,12], [-9,12], [-8,12], [-7,12], [-6,12], [-5,12], [-4,12], [-3,12], [-2,12], [-1,12], [0,12], [1,12],
+        [-11,11], [-10,11], [-9,11], [-8,11], [-7,11], [-6,11], [-5,11], [-4,11], [-3,11], [-2,11], [-1,11], [0,11], [1,11],
+        [-11,10], [-10,10], [-9,10], [-8,10], [-7,10], [-6,10], [-5,10], [-4,10], [-3,10], [-2,10], [-1,10], [0,10], [1,10],
+        [-11, 9], [-10, 9], [-9, 9], [-8, 9], [-7, 9], [-6, 9], [-5, 9], [-4, 9], [-3, 9], [-2, 9], [-1, 9], [0, 9], [1, 9],
+        [-11, 8], [-10, 8], [-9, 8], [-8, 8], [-7, 8], [-6, 8], [-5, 8], [-4, 8], [-3, 8], [-2, 8], [-1, 8], [0, 8], [1, 8],
+		          [-10, 7], [-9, 7], [-8, 7], [-7, 7], [-6, 7], [-5, 7], [-4, 7], [-3, 7], [-2, 7], [-1, 7], [0, 7], [1, 7],
+                  [-10, 6], [-9, 6], [-8, 6], [-7, 6], [-6, 6], [-5, 6], [-4, 6], [-3, 6], [-2, 6], [-1, 6], [0, 6], [1, 6],
+                            [-9, 5], [-8, 5], [-7, 5], [-6, 5], [-5, 5], [-4, 5], [-3, 5], [-2, 5], [-1, 5], [0, 5], [1, 5],
+                            [-9, 4], [-8, 4], [-7, 4], [-6, 4], [-5, 4], [-4, 4], [-3, 4], [-2, 4], [-1, 4], [0, 4], [1, 4],
+                                     [-8, 3], [-7, 3], [-6, 3], [-5, 3], [-4, 3], [-3, 3], [-2, 3], [-1, 3], [0, 3], [1, 3],
+                                              [-7, 2], [-6, 2], [-5, 2], [-4, 2], [-3, 2], [-2, 2], [-1, 2], [0, 2], [1, 2],
+                                                                [-5, 1], [-4, 1], [-3, 1], [-2, 1], [-1, 1], [0, 1], [1, 1],
+                                                                                  [-3, 0], [-2, 0], [-1, 0], [0, 0], [1, 0]
+      ],
+	  "interactiveSpaces" : [
+		[0,12], [1,12],
+		[0,11], [1,11],
+		[0,10], [1,10],
+		[0, 9], [1, 9],
+		[0, 8], [1, 8],
+		[0, 7], [1, 7],
+		[0, 6], [1, 6],
+		[0, 5], [1, 5],
+		[0, 4], [1, 4],
+		[0, 3], [1, 3],
+		[0, 2], [1, 2],
+		[0, 1], [1, 1],
+		[0, 0], [1, 0]
+	  ],
+	  
+	  "collisionSpacesClosed" : [
+		[0,12], [1,12],
+		[0,11], [1,11],
+		[0,10], [1,10],
+		[0, 9], [1, 9],
+		[0, 8], [1, 8],
+		[0, 7], [1, 7],
+		[0, 6], [1, 6],
+		[0, 5], [1, 5],
+		[0, 4], [1, 4],
+		[0, 3], [1, 3],
+		[0, 2], [1, 2],
+		[0, 1], [1, 1],
+		[0, 0], [1, 0]
+	  ],
+	  "collisionSpacesTransition" : [
+		[0,12], [1,12],
+		[0,11], [1,11]
+	  ],
+	  "collisionSpacesOpen" : [
+		[-11,12], [-10,12], [-9,12], [-8,12], [-7,12], [-6,12], [-5,12], [-4,12], [-3,12], [-2,12], [-1,12], [0,12], [1,12],
+        [-11,11], [-10,11], [-9,11], [-8,11], [-7,11], [-6,11], [-5,11], [-4,11], [-3,11], [-2,11], [-1,11], [0,11], [1,11]
+	  ],
+	  
+      "fgAnchors" : [
+		[0, 13], [1, 13],	//Top
+		[0, -1], [1, -1]	//Bottom
+	  ],
+      "animationPosition" : [-36, 52]
+    },
+    {
+      "image" : "avikancargodoor.png:default",
+      "direction" : "right",
+      "imagePosition" : [0, 0],
+      "renderLayer" : "Object+5",
+	  
+	  "spaces" : [
+        [0,12], [1,12], [2,12], [3,12], [4,12], [5,12], [6,12], [7,12], [8,12], [9,12], [10,12], [11,12], [12,12],
+        [0,11], [1,11], [2,11], [3,11], [4,11], [5,11], [6,11], [7,11], [8,11], [9,11], [10,11], [11,11], [12,11],
+        [0,10], [1,10], [2,10], [3,10], [4,10], [5,10], [6,10], [7,10], [8,10], [9,10], [10,10], [11,10], [12,10],
+        [0, 9], [1, 9], [2, 9], [3, 9], [4, 9], [5, 9], [6, 9], [7, 9], [8, 9], [9, 9], [10, 9], [11, 9], [12, 9],
+        [0, 8], [1, 8], [2, 8], [3, 8], [4, 8], [5, 8], [6, 8], [7, 8], [8, 8], [9, 8], [10, 8], [11, 8], [12, 8],
+        [0, 7], [1, 7], [2, 7], [3, 7], [4, 7], [5, 7], [6, 7], [7, 7], [8, 7], [9, 7], [10, 7], [11, 7],
+        [0, 6], [1, 6], [2, 6], [3, 6], [4, 6], [5, 6], [6, 6], [7, 6], [8, 6], [9, 6], [10, 6], [11, 6],
+        [0, 5], [1, 5], [2, 5], [3, 5], [4, 5], [5, 5], [6, 5], [7, 5], [8, 5], [9, 5], [10, 5],
+        [0, 4], [1, 4], [2, 4], [3, 4], [4, 4], [5, 4], [6, 4], [7, 4], [8, 4], [9, 4], [10, 4],
+        [0, 3], [1, 3], [2, 3], [3, 3], [4, 3], [5, 3], [6, 3], [7, 3], [8, 3], [9, 3],
+        [0, 2], [1, 2], [2, 2], [3, 2], [4, 2], [5, 2], [6, 2], [7, 2], [8, 2],
+        [0, 1], [1, 1], [2, 1], [3, 1], [4, 1], [5, 1], [6, 1],
+        [0, 0], [1, 0], [2, 0], [3, 0], [4, 0]
+      ],
+	  "interactiveSpaces" : [
+		[0,12], [1,12],
+		[0,11], [1,11],
+		[0,10], [1,10],
+		[0, 9], [1, 9],
+		[0, 8], [1, 8],
+		[0, 7], [1, 7],
+		[0, 6], [1, 6],
+		[0, 5], [1, 5],
+		[0, 4], [1, 4],
+		[0, 3], [1, 3],
+		[0, 2], [1, 2],
+		[0, 1], [1, 1],
+		[0, 0], [1, 0]
+	  ],
+	  
+	  "collisionSpacesClosed" : [
+		[0,12], [1,12],
+		[0,11], [1,11],
+		[0,10], [1,10],
+		[0, 9], [1, 9],
+		[0, 8], [1, 8],
+		[0, 7], [1, 7],
+		[0, 6], [1, 6],
+		[0, 5], [1, 5],
+		[0, 4], [1, 4],
+		[0, 3], [1, 3],
+		[0, 2], [1, 2],
+		[0, 1], [1, 1],
+		[0, 0], [1, 0]
+	  ],
+	  "collisionSpacesTransition" : [
+		[0,12], [1,12],
+		[0,11], [1,11]
+	  ],
+	  "collisionSpacesOpen" : [
+		[0,12], [1,12], [2,12], [3,12], [4,12], [5,12], [6,12], [7,12], [8,12], [9,12], [10,12], [11,12], [12,12],
+        [0,11], [1,11], [2,11], [3,11], [4,11], [5,11], [6,11], [7,11], [8,11], [9,11], [10,11], [11,11], [12,11]
+	  ],
+	  
+      "fgAnchors" : [
+		[0, 13], [1, 13],	//Top
+		[0, -1], [1, -1]	//Bottom
+	  ],
+      "animationPosition" : [52, 52]
+    }
+  ],
+
+  "scripts" : [ "/objects/scripts/thea-rotatingdoor.lua" ],
+  "scriptDelta" : 1,
+  
+  "closedRotation" : 0,
+  "openRotation" : 90,	//NOTE: Relative to closedRotation
+  "openTime" : 3.0,
+
+  "animation" : "avikancargodoor.animation",
+  "animationParts" : {
+    "background" : "background.png",
+    "door" : "door.png",
+    "foreground" : "foreground.png"
+  },
+  "animationPosition" : [52, 52],
+
+  "inputNodes" : [ [0, 0] ],
+  "flippedInputNodes"  : [ [0, 0] ]
+}

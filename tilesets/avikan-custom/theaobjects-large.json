@@ -1,0 +1,29 @@
+{ "margin":0,
+ "name":"theaobjects-large",
+ "properties":
+    {
+
+    },
+ "spacing":0,
+ "tilecount":1,
+ "tileheight":768,
+ "tileproperties":
+    {
+     "0":
+        {
+         "\/\/shortdescription":"Avikan Outpost Force Lift",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"avikanoutpostforcelift",
+         "tilesetDirection":"right"
+        }
+    },
+ "tiles":
+    {
+     "0":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/large\/avikanoutpostforcelift.png"
+        }
+    },
+ "tilewidth":40
+}

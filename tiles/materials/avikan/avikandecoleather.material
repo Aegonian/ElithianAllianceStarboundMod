@@ -1,0 +1,28 @@
+{
+  "materialId" : 30042,
+  "materialName" : "avikandecoleather",
+  "particleColor" : [185, 164, 141, 255],
+  "itemDrop" : "avikandecoleather", 
+  "shortdescription" : "Trimmed Avikan Leather",
+  
+  "description" : "A leather wallsheet decorated with various symbols.",
+  "glitchDescription" : "Observative. There are many different symbols painted onto this wall sheet.",
+  "floranDescription" : "Floran doesss not undersstand ssymbols.",
+  "novakidDescription" : "Those ar' some odd-looking symbols on the wall.",
+  
+  "drodenDescription" : "Analysis complete. These symbols describe events from Avikan history.",
+
+  "footstepSound" : "/sfx/blocks/footstep_sand.ogg",
+  "health" : 2,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/thea-avikanleathertemplate.config",
+  "renderParameters" : {
+    "texture" : "avikandecoleather.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 0
+  }
+}

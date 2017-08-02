@@ -1,0 +1,18 @@
+[
+	{ "op" : "add",
+	"path" : "/speciesShips/avikan",
+	"value" : [ "/ships/avikan/avikant0.structure", "/ships/avikan/avikant1.structure", "/ships/avikan/avikanT2.structure", "/ships/avikan/avikanT3.structure", "/ships/avikan/avikanT4.structure", "/ships/avikan/avikanT5.structure", "/ships/avikan/avikanT6.structure", "/ships/avikan/avikanT7.structure", "/ships/avikan/avikanT8.structure" ]
+	},
+	{ "op" : "add",
+	"path" : "/speciesShips/trink",
+	"value" : [ "/ships/trink/trinkt0.structure", "/ships/trink/trinkt1.structure", "/ships/trink/trinkT2.structure", "/ships/trink/trinkT3.structure", "/ships/trink/trinkT4.structure", "/ships/trink/trinkT5.structure", "/ships/trink/trinkT6.structure", "/ships/trink/trinkT7.structure", "/ships/trink/trinkT8.structure" ]
+	},
+	{ "op" : "add",
+	"path" : "/speciesShips/droden",
+	"value" : [ "/ships/droden/drodent0.structure", "/ships/droden/drodent1.structure", "/ships/droden/drodenT2.structure", "/ships/droden/drodenT3.structure", "/ships/droden/drodenT4.structure", "/ships/droden/drodenT5.structure", "/ships/droden/drodenT6.structure", "/ships/droden/drodenT7.structure", "/ships/droden/drodenT8.structure" ]
+	},
+	{ "op" : "add",
+	"path" : "/speciesShips/aegi",
+	"value" : [ "/ships/aegi/aegit0.structure", "/ships/aegi/aegit1.structure", "/ships/aegi/aegiT2.structure", "/ships/aegi/aegiT3.structure", "/ships/aegi/aegiT4.structure", "/ships/aegi/aegiT5.structure", "/ships/aegi/aegiT6.structure", "/ships/aegi/aegiT7.structure", "/ships/aegi/aegiT8.structure" ]
+	}
+]

@@ -1,0 +1,28 @@
+{
+  "materialId" : 30090,
+  "materialName" : "avikanglass",
+  "particleColor" : [243, 226, 208, 255],
+  "itemDrop" : "avikanglass", 
+  "shortdescription" : "Avikan Glass",
+  
+  "description" : "Thick, strong glass.",
+  "glitchDescription" : "Statement. Glass.",
+  "floranDescription" : "Floran look pretty in glasssss.",
+  "novakidDescription" : "Thick glass for sure, but I can still see right through to th'other side.",
+  
+  "drodenDescription" : "Analysis complete. Thick glass.",
+
+  "footstepSound" : "/sfx/blocks/footstep_glass.ogg",
+  "health" : 5,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "avikanglass.png",
+    "variants" : 5,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 0
+  }
+}

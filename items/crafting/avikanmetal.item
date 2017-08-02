@@ -1,0 +1,10 @@
+{
+  "itemName" : "avikanmetal",
+  "price" : 50,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "avikanmetal.png",
+  "description" : "Strong, sand-coloured metal plating.",
+  "shortdescription" : "Kavanite Plate",
+  "itemTags" : [ "reagent" ]
+}

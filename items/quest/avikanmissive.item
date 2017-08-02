@@ -1,0 +1,10 @@
+{
+  "itemName" : "avikanmissive",
+  "price" : 25,
+  "rarity" : "Legendary",
+  "category" : "Quest Item",
+  "inventoryIcon" : "avikanmissive.png",
+  "description" : "A sealed scroll given to me by an Avikan Starfarer.",
+  "shortdescription" : "^#BA66FF;Starfarer's Missive^white;",
+  "itemTags" : [ "questitem" ]
+}

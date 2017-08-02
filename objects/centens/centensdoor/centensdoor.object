@@ -1,0 +1,68 @@
+{
+  "objectName" : "centensdoor",
+  "colonyTags" : ["centens", "door"],
+  "rarity" : "Rare",
+  "category" : "door",
+  "printable" : false,
+  "price" : 450,
+  "description" : "An ancient metal door.",
+  "shortdescription" : "Centensian Door",
+  "race" : "centens",
+  
+  "health" : 8,
+
+  "apexDescription" : "An ancient door.",
+  "avianDescription" : "How has this ancient door remained in such a fine state?",
+  "floranDescription" : "Old metal doorsss. It ssshinesss...",
+  "glitchDescription" : "Observation. An ancient door.",
+  "humanDescription" : "I wonder what lies beyond this ancient door...",
+  "hylotlDescription" : "This ancient door has somehow survived for eons.",
+
+  "aegiDescription" : "This Centensian door is eons old, yet it is still intact.",
+  "avikanDescription" : "A strong door built by the Old Ones.",
+  "erixianDescription" : "A door of Centensian origin.",
+  "trinkDescription" : "A strong metal door built by the Centens. It is eons old.",
+  "hymidDescription" : "A Centensian door. Eons old.",
+  "notixDescription" : "This door was built by the Centens.",
+  "jorgasianDescription" : "A door of Centensian origin, no doubt.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Analysis. Door. Origin: Centensian.",
+
+  "inventoryIcon" : "centensdooricon.png",
+  "orientations" : [
+    {
+      "dualImage" : "centensdoor.png:default",
+      "imagePosition" : [0, 0],
+      "renderLayer" : "Object+5",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom", "top" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/door/door.lua" ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/door/door.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_open.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_close.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "centensdoor.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "inputNodes" : [ [0, 4] ],
+  "outputNodes" : [ [0, 0] ]
+}

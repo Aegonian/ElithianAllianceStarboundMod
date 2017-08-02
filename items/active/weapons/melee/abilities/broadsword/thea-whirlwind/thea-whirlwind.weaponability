@@ -1,0 +1,94 @@
+{
+  "animationParts" : { },
+  "animationCustom" : {
+    "animatedParts" : {
+      "stateTypes" : {
+        "spinSwoosh" : {
+          "default" : "idle",
+          "states" : {
+            "idle" : {
+            },
+            "fire" : {
+              "frames" : 3,
+              "cycle" : 0.075,
+              "mode" : "transition",
+              "transition" : "idle"
+            }
+          }
+        }
+      },
+      "parts" : {
+        "spinSwoosh" : {
+          "properties" : {
+            "zLevel" : -1,
+            "centered" : true,
+            "offset" : [0, 0.75],
+            "transformationGroups" : ["swoosh"],
+            "rotationCenter" : [0, 0]
+          },
+          "partStates" : {
+            "spinSwoosh" : {
+              "idle" : {
+                "properties" : {
+                  "image" : ""
+                }
+              },
+              "fire" : {
+                "properties" : {
+                  "image" : "/items/active/weapons/melee/abilities/broadsword/spinslash/spinswoosh.png:<frame><swooshDirectives>",
+                  "damageArea" : [ [-1.5, 0.875], [2.75, 0.875], [4.125, 0.5], [5.0, 0], [5.0, -0.5], [4.625, -0.875], [3.5, -1.375], [-1.5, -1.375] ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "sounds" : {
+      "flail" : [ "/sfx/melee/sword_spinslash.ogg" ]
+    }
+  },
+
+  "ability" : {
+    "name" : "Whirlwind Slash",
+    "type" : "thea-whirlwind",
+    "scripts" : ["/items/active/weapons/melee/abilities/broadsword/thea-whirlwind/thea-whirlwind.lua"],
+    "class" : "TheaWhirlWind",
+
+    "energyUsage" : 65.0,
+    "cooldownTime" : 0.5,
+
+    "damageConfig" : {
+      "damageSourceKind" : "broadsword",
+      "statusEffects" : [ "thea-bleeding" ],
+      "baseDamage" : 3,
+      "knockback" : 20,
+      "knockbackMode" : "facing",
+      "timeout" : 0.10,
+      "timeoutGroup" : "alt"
+    },
+
+    "armRotationOffsets" : [20, -20, 0, 0, -20, 20, 0, 0],
+
+    "stances" : {
+      "windup" : {
+        "duration" : 0.05,
+        "armRotation" : 0,
+        "weaponRotation" : -80,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "slash" : {
+        "duration" : 0.05,
+        "armRotation" : -45,
+        "weaponRotation" : -45,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  }
+}

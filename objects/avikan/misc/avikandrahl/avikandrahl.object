@@ -1,0 +1,46 @@
+{
+  "objectName" : "avikandrahl",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 250,
+  "description" : "An inactive combat and reconnaissance drone.",
+  "shortdescription" : "Inactive Drahl",
+  "race" : "avikan",
+
+  "apexDescription" : "A drone. It's equipped with some basic weaponry.",
+  "avianDescription" : "I wish I could fly like this drone can.",
+  "floranDescription" : "Can Floran ride on top of dronesss?",
+  "glitchDescription" : "Eager. I would love to have a drone like this accompany me on my journeys.",
+  "humanDescription" : "A drone capable of reconnaissance and combat both.",
+  "hylotlDescription" : "A versatile drone. It's quick, durable and efficient all.",
+  "novakidDescription" : "A drone. Not sure if it'll be flyin' any longer.",
+
+  "aegiDescription" : "The Avikan call these drone Drahls.",
+  "avikanDescription" : "A Drahl like this would be a useful companion, I'm sure.",
+  "erixianDescription" : "Is this a remote-control drone, or an autonomous one?",
+  "trinkDescription" : "This drone's energy usage is surprisingly efficient.",
+  "hymidDescription" : "A drone that can offer minor combat support.",
+  "notixDescription" : "A simple combat and reconnaissance drone.",
+  "jorgasianDescription" : "A reconnaissance drone, I think.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected Drahl unit. Status: inactive.",
+
+  "inventoryIcon" : "avikandrahlicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikandrahl.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

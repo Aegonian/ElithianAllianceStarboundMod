@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "avikanmetal", "count" : 5 },
+	{ "item" : "monsterclaws", "count" : 1 },
+	{ "item" : "avikantransmitter", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "avikantier3beacon",
+    "count" : 1
+  },
+  "duration" : 5,
+  "groups" : [ "avikaninventor", "avikantenant", "all" ]
+}

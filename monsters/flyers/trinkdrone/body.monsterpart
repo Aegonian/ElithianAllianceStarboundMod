@@ -1,0 +1,9 @@
+{
+  "name" : "trinkdrone",
+  "category" : "trinkdrone",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "trinkdrone.png"
+  }
+}

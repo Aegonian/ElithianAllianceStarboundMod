@@ -1,0 +1,23 @@
+{
+  "config" : {
+    "shipUpgrades" : {
+      "capabilities" : ["teleport", "planetTravel", "systemTravel"],
+      "crewSize" : 8
+    }
+  },
+
+  "backgroundOverlays" : [
+    {
+      "image" : "aegiT6.png",
+      "position" : [20, 20],
+      "fullbright" : true
+    },
+    {
+      "image" : "aegiT6lit.png",
+      "position" : [20, 20]
+    }
+  ],
+
+  "blockKey" : "blockKey.config:blockKey",
+  "blockImage" : "aegiT6blocks.png"
+}

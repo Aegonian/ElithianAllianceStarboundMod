@@ -1,0 +1,68 @@
+{
+  "objectName" : "trinkrepairpod",
+  "colonyTags" : ["trink"],
+  "printable" : false,
+  "rarity" : "Common",
+  "price" : 100,
+  "description" : "A repair pod for quickly repairing damaged Trink units.",
+  "shortdescription" : "Trinkian Repair Pod",
+  "race" : "trink",
+  "category" : "furniture",
+
+  "apexDescription" : "A repair pod of sorts.",
+  "avianDescription" : "I can't imagine this being comfortable for anything but machines.",
+  "floranDescription" : "Metal box for sssitting?",
+  "glitchDescription" : "Fascination. This repair pod can repair almost all damage.",
+  "humanDescription" : "A repair pod for robots. Oddly enough, it also works for humans.",
+  "hylotlDescription" : "A repair pod capable of repairing nearly any damage sustained in combat.",
+
+  "aegiDescription" : "A Trinkian repair pod. Efficient, as always.",
+  "avikanDescription" : "A repair pod for machines. I should probably disable it.",
+  "erixianDescription" : "A repair pod built by the Trinks.",
+  "trinkDescription" : "This repair pod will repair any damage my frame sustained.",
+  "hymidDescription" : "A Trinkian repair pod, with that signature Trinkian look.",
+  "notixDescription" : "A repair pod. Originally manufactured by us, but now the Trink can built these themselves.",
+  "jorgasianDescription" : "A repair pod for Trinks",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "Better not get this repair pod wet.",
+  "theleanDescription" : "TODO",
+  "drodenDescription" : "Repair pod detected. Provides automated repair of alien synthetics. Recommend disabling of device.",
+  
+  "inventoryIcon" : "trinkrepairpodicon.png",
+  "orientations" : [
+    {
+      "image" : "trinkrepairpod.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "lightPosition" : [1, 1],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "flipImages" : true,
+      "direction" : "left",
+      "sitPosition" : [-1, 19.5]
+    },
+    {
+      "image" : "trinkrepairpod.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "lightPosition" : [1, 1],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "right",
+      "sitPosition" : [-1, 19.5]
+    }
+  ],
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+  "sitOrientation" : "sit",
+  "sitCoverImage" : "/objects/trink/misc/trinkrepairpod/trinkrepairpodcover.png",
+  "sitEmote" : "sleep",
+  "sitStatusEffects" : [
+    "bed3"
+  ]
+}

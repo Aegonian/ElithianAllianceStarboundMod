@@ -1,0 +1,13 @@
+{
+  "itemName" : "alliancereinforcement",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "alliancereinforcement.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  
+  "shortdescription" : "Alliance Reinforcement",
+  "description" : "A strong metal block, used to reinforce larger structures.",
+
+  "materialId" : 30073
+}

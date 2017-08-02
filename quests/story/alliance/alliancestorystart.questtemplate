@@ -1,0 +1,68 @@
+{
+  "id" : "alliancestorystart",
+  "mainQuest" : true,
+  "prerequisites" : [ "alliancestoryhidden" ],
+  "title" : "Alliance Story - Starting Messages",
+  "text" : "This quest serves as an introduction to the Alliance storyline. You shouldn't be able to see this in your log.",
+  "completionText" : "This quest serves as an introduction to the Alliance storyline. You shouldn't be able to see this in your log.",
+  "moneyRange" : [0, 0],
+  "canBeAbandoned" : false,
+  "invisible" : true,
+  "logOnly" : true,
+  
+  "rewards" : [ ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/thea-hiddenradiomessage.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "default" : "player"
+    },
+    "requireTurnIn" : false,
+    "conditions" : [ ],
+    "radioMessages" : {
+	  "startMessage" : {
+		"messageId" : "allianceStoryStart",
+		"type" : "quest",
+		"unique" : false,
+		"senderName" : "Admiral Lyiin",
+		"text" : "Ambassador! Are you alright? I've been trying to contact you ever since I learned of what happened to Earth and the Protectorate...",
+		"portraitImage" : "/interface/chatbubbles/lyiin.png:<frame>"
+	  },
+	  "secondMessage" : {
+		"messageId" : "allianceStoryStart2",
+		"type" : "quest",
+		"unique" : false,
+		"senderName" : "Admiral Lyiin",
+		"text" : "It is good to see you have escaped the chaos alive and well. Now more than ever, we need good people like you.",
+		"portraitImage" : "/interface/chatbubbles/lyiin.png:<frame>"
+	  },
+	  "thirdMessage" : {
+		"messageId" : "allianceStoryStart3",
+		"type" : "quest",
+		"unique" : false,
+		"senderName" : "Admiral Lyiin",
+		"text" : "I will meet with the other Alliance leaders soon to discuss these recent events, and we will figure out what your next assignment should be.",
+		"portraitImage" : "/interface/chatbubbles/lyiin.png:<frame>"
+	  },
+	  "fourthMessage" : {
+		"messageId" : "allianceStoryStart4",
+		"type" : "quest",
+		"unique" : false,
+		"senderName" : "Admiral Lyiin",
+		"text" : "For now, I want you to do all you can to figure out who or what was behind the attack on the Protectorate. Our first priority is to prevent this tragedy from happening to any more planets.",
+		"portraitImage" : "/interface/chatbubbles/lyiin.png:<frame>"
+	  },
+	  "endMessage" : {
+		"messageId" : "allianceStoryStart5",
+		"type" : "quest",
+		"unique" : false,
+		"senderName" : "Admiral Lyiin",
+		"text" : "Good luck, ambassador. I will contact you again once I have a new assignment ready for you.",
+		"portraitImage" : "/interface/chatbubbles/lyiin.png:<frame>"
+	  }
+	},
+	"messageInterval" : 5,
+	"firstMessageDelay" : 1
+  }
+}

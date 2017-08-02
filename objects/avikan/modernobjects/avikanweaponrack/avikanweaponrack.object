@@ -1,0 +1,31 @@
+{
+  "objectName" : "avikanweaponrack",
+  "colonyTags" : ["avikan","combat"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 40,
+  "description" : "A wall-mounted weapons rack with a magnetic lock. There's place for more.",
+  "shortdescription" : "Avikan Weapon Rack",
+  "race" : "avikan",
+
+  "floranDescription" : "Floran doesss not want to hang weaponss here. Floran keepss their weaponsss.",
+  "glitchDescription" : "Statement. This is a type of wall-mounted weapon storage.",
+  
+  "avikanDescription" : "This wall-mounted weapons rack uses a magnetic lock to keep the weapons secure.",
+  "drodenDescription" : "Detected Nomada-approved weapons rack. Analysis indicates one weapon has been signed out.",
+
+  "inventoryIcon" : "avikanweaponrackicon.png",
+  "orientations" : [
+    {
+      "image" : "avikanweaponrack.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ]
+}

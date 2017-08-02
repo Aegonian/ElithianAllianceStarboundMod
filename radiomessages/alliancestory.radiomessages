@@ -1,0 +1,26 @@
+{
+  //ALLIANCE STORY INTRO  
+  "alliancestory-intro1" : {
+    "type" : "quest",
+    "senderName" : "Prime Admiral Lyiin",
+    "portraitImage" : "/interface/chatbubbles/lyiin.png:<frame>",
+    "text" : "It is good to see that you are well, ambassador. I learned about the destruction of Earth and the Protectorate through some of the other ambassadors who escaped, and I had feared you might have perished in the chaos.",
+    "persistTime" : 5.0
+  },
+  
+  "alliancestory-intro2" : {
+    "type" : "quest",
+    "senderName" : "Prime Admiral Lyiin",
+    "portraitImage" : "/interface/chatbubbles/lyiin.png:<frame>",
+    "text" : "I will meet with the other leaders of the Alliance soon, so we can discuss this tragedy in full. We will also discuss what your next assignment will be.",
+    "persistTime" : 5.0
+  },
+  
+  "alliancestory-intro3" : {
+    "type" : "quest",
+    "senderName" : "Prime Admiral Lyiin",
+    "portraitImage" : "/interface/chatbubbles/lyiin.png:<frame>",
+    "text" : "For now, you are free to roam the galaxy as you will. Once I have more details to share with you, I will contact you again. Good luck out there, ambassador, and be careful.",
+    "persistTime" : 5.0
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "stage" : {
+        "default" : "avikanbonecrafting",
+        "states" : {
+          "avikanbonecrafting" : {},
+          "avikanbonecrafting2" : {
+            "frames" : 24,
+            "cycle" : 2.4,
+            "mode" : "loop"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "lights" : {
+        "properties" : {
+		  "zLevel" : 1,
+          "centered" : true,
+		  "fullbright" : true
+        },
+        "partStates" : {
+          "stage" : {
+            "avikanbonecrafting" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+
+            "avikanbonecrafting2" : {
+              "properties" : {
+                "image" : "avikanbonecrafting2lights.png:<color>.<frame>"
+              }
+            }
+          }
+        }
+      },
+	  
+	  "chassis" : {
+        "properties" : {
+		  "zLevel" : 0,
+          "centered" : true
+        },
+        "partStates" : {
+          "stage" : {
+            "avikanbonecrafting" : {
+              "properties" : {
+                "image" : "avikanbonecrafting.png:<color>"
+              }
+            },
+
+            "avikanbonecrafting2" : {
+              "properties" : {
+                "image" : "avikanbonecrafting2.png:<color>.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "sounds" : {
+    "fanfare" : ["/sfx/cinematics/mission_unlock_event.ogg"],
+    "fanfare2" : ["/sfx/cinematics/license_acquired_event.ogg"]
+  },
+
+  "particleEmitters" : {
+    "dust" : {
+      "emissionRate" : 0.0,
+      "burstCount"  : 10,
+      "offsetRegion" : [-2, -2, 2, 2],
+      "particles" : [{ "particle" : "dust2"}]
+    }
+  }
+}

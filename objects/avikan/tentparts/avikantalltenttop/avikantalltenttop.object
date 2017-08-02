@@ -1,0 +1,57 @@
+{
+  "objectName" : "avikantalltenttop",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 60,
+  "description" : "A leather sheet used as a roof for Avikan tents.",
+  "shortdescription" : "Avikan Top Sheet",
+  "race" : "avikan",
+
+  "apexDescription" : "A leather sheet. Not very well crafted.",
+  "avianDescription" : "A bland leather sheet.",
+  "floranDescription" : "Leather makesss Floran want to huntsss.",
+  "glitchDescription" : "Observation. A primitive leather sheet.",
+  "humanDescription" : "A crude leather sheet. How primitive.",
+  "hylotlDescription" : "A primitive leather sheet.",
+
+  "aegiDescription" : "A simple leather top sheet. Keeps tents cool on the inside.",
+  "avikanDescription" : "A leather top sheet used as a tent roof. Basic, but functional.",
+  "erixianDescription" : "This'll keep a tent cool on the inside.",
+  "trinkDescription" : "A leather top sheet. An essential part of a good tent.",
+  "hymidDescription" : "A primitive leather sheet, used for making tents.",
+  "notixDescription" : "A simple leather sheet used in the construction of tents.",
+  "jorgasianDescription" : "A top sheet made of leather.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Top sheet. Used to keep the interior of a tent cool.",
+
+  "inventoryIcon" : "avikantalltenttopicon.png",
+  "orientations" : [
+    {
+      "image" : "avikantalltenttop.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "collision" : "solid",
+      "flipImages" : true,
+      "direction" : "left"
+    },
+    {
+      "image" : "avikantalltenttop.png:<color>",
+
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "collision" : "solid",
+      "direction" : "right"
+    }
+  ]
+}

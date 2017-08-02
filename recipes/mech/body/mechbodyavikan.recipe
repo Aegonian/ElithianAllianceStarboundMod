@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "avikanmetaltier5", "count" : 30 },
+    { "item" : "salvagebody", "count" : 20 },
+    { "item" : "salvagetier5", "count" : 10 }
+  ],
+  "duration" : 5,
+  "output" : { "item" : "mechbodyavikan", "count" : 1 },
+  "groups" : [ "craftingmech", "mechbody" ]
+}

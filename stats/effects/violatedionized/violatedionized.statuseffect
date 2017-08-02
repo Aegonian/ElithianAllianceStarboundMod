@@ -1,0 +1,24 @@
+{
+  "name" : "violatedionized",
+  "effectConfig" : {
+    "damageMultiplier" : 0.5,
+	"minDamage" : 1,
+	"maxDamage" : 25,
+    "damageProjectileType" : "violatedionizedexplosion",
+
+    "cooldown" : 1.5,
+    "minTriggerDamage" : -1,
+	"expireAfterHits" : 3,
+    "removeInWater" : false
+  },
+  "defaultDuration" : 10,
+
+  "scripts" : [
+    "violatedionized.lua"
+  ],
+  
+  "animationConfig" : "violatedionized.animation",
+
+  "label" : "Ionized",
+  "icon" : "/interface/statuses/nova.png"
+}

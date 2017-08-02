@@ -1,0 +1,4 @@
+{
+  "thea-shortbowdrawTimeMultiplier" : [ "linear", "clamp", [0, 0], [0.3, 0.35], [0.4, 1.0] ],
+  "thea-shortbowImageSelector" : [ "linear", "clamp", [0, 0], [0.4, 3] ]
+}

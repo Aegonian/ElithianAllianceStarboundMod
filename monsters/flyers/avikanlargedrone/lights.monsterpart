@@ -1,0 +1,9 @@
+{
+  "name" : "avikanlargedronelights",
+  "category" : "avikanlargedrone",
+  "type" : "lights",
+
+  "frames" : {
+    "lights" : "avikanlargedronelights.png"
+  }
+}

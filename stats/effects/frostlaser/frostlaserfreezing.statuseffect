@@ -1,0 +1,19 @@
+{
+  "name" : "frostlaserfreezing",
+  "blockingStat" : "iceStatusImmunity",
+
+  "effectConfig" : {
+	"timeToFreeze" : 1.5,
+	"freezeDuration" : 2.5
+  },
+  "defaultDuration" : 0.5,
+
+  "scripts" : [
+    "frostlaserfreezing.lua"
+  ],
+
+  "animationConfig" : "frostlaserfreezing.animation",
+
+  "label" : "Slow",
+  "icon" : "/interface/statuses/ice.png"
+}

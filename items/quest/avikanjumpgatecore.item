@@ -1,0 +1,10 @@
+{
+  "itemName" : "avikanjumpgatecore",
+  "price" : 1000,
+  "rarity" : "Legendary",
+  "category" : "Quest Item",
+  "inventoryIcon" : "avikanjumpgatecore.png",
+  "description" : "The core of an Avikan jumpgate. A modified piece of Centensian technology.",
+  "shortdescription" : "^#BA66FF;Avikan Jumpgate Core^white;",
+  "itemTags" : [ "questitem" ]
+}

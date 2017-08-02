@@ -1,0 +1,46 @@
+{
+  "objectName" : "avikanmarketstallfood",
+  "colonyTags" : ["avikan", "commerce", "avikanfood"],
+  "rarity" : "Common",
+  "description" : "A market stall full of alien food.",
+  "shortdescription" : "Avikan Food Stall",
+  "race" : "avikan",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 60,
+
+  "apexDescription" : "A selection of alien food.",
+  "avianDescription" : "Alien meat, spices and other foods. Looks delicious.",
+  "floranDescription" : "Good meatsss, but bad greensss.",
+  "glitchDescription" : "Wondering. What would this food taste like?",
+  "humanDescription" : "Alien food. It looks delicious, but I'm not sure if I should eat it.",
+  "hylotlDescription" : "A varied meal is a blessing to all.",
+
+  "aegiDescription" : "This market stall has a wide array of Avikan food available.",
+  "avikanDescription" : "Traditional Kadavan food. The best there is.",
+  "erixianDescription" : "Avikan food. I've never liked the taste.",
+  "trinkDescription" : "Avikan food. It has no value to non-organics.",
+  "hymidDescription" : "I wonder what this would tatse like...",
+  "notixDescription" : "Traditional Avikan food.",
+  "jorgasianDescription" : "Colourful food. But what does is taste like?",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Detected organic food.",
+
+  "inventoryIcon" : "avikanmarketstallfoodicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanmarketstallfood.png:<color>",
+
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}

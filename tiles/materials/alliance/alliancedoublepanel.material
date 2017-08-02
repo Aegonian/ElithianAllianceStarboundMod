@@ -1,0 +1,28 @@
+{
+  "materialId" : 30072,
+  "materialName" : "alliancedoublepanel",
+  "particleColor" : [157, 157, 157, 255],
+  "itemDrop" : "alliancedoublepanel", 
+  "shortdescription" : "Double Alliance Panel",
+  
+  "description" : "Multi-layered metal panels.",
+  "glitchDescription" : "Statement. These metal panels consist of several individual layers.",
+  "floranDescription" : "Metal wallsss are made of many planksss.",
+  "novakidDescription" : "A metal wall made of multiple sheets.",
+  
+  "drodenDescription" : "Analysis complete. Layered metal panels.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderParameters" : {
+    "texture" : "alliancedoublepanel.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 60
+  }
+}

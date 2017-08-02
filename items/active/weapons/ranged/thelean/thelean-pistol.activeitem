@@ -1,0 +1,90 @@
+{
+  "itemName" : "thelean-pistol",
+  "price" : 250,
+  "inventoryIcon" : "thelean-pistol.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A powerful flux rifle which shoots molten metal projectiles.",
+  "shortdescription" : "Tath", //Translates to: Tooth
+  "level" : 6,
+  "tooltipKind" : "gun",
+  "category" : "Flux Rifle",
+  "itemTags" : ["weapon","ranged","pistol","thelean"],
+  "twoHanded" : false,
+  
+  "cursor" : "/cursors/thea-theleanreticle.cursor",
+  
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "thelean-pistol.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/theleanmuzzle.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/gun/plasma_mp1.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.5, 0.125],
+  "muzzleOffset" : [0.625, 0.0],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "fire",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.18,
+    "baseDps" : 6.5,
+    "energyUsage" : 22.5,
+    "inaccuracy" : 0.035,
+
+    "projectileCount" : 1,
+    "burstTime" : 0.08,
+    "burstCount" : 4,
+    "fireType" : "burst",
+
+    "projectileType" : "theleanseekingbullet",
+    "projectileParameters" : {
+      "knockback" : 4,
+	  "speed" : 130,
+	  "searchRadius" : 8,
+	  "baseHomingControlForce" : 2.5
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.05,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

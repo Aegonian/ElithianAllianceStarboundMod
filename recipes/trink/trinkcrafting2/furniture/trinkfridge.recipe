@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "trinkmetal", "count" : 4 },
+	{ "item" : "trinkglassitem", "count" : 2 },
+	{ "item" : "trinkpowercore", "count" : 1 },
+	{ "item" : "cryonicextract", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "trinkfridge",
+    "count" : 1
+  },
+  "groups" : [ "trinkcrafting2", "furniture", "all" ]
+}

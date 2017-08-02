@@ -1,0 +1,21 @@
+{
+  "projectileName" : "avikandeepdesertspike",
+  "physics" : "grenade",
+  "bounces" : 2,
+  "damageKindImage" : "icon.png",
+  "image" : "avikandeepdesertspike.png",
+  "orientationLocked" : false,
+  "flippable" : true,
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "emitters" : [ "thea-smallwhitetrail" ],
+  "speed" : 25,
+  "power" : 20,
+  "timeToLive" : 2,
+  "damageKind" : "avikanhunting",
+  "piercing" : false,
+  "hydrophobic" : false,
+  "statusEffects" : [
+    "thea-bleeding"
+  ]
+}

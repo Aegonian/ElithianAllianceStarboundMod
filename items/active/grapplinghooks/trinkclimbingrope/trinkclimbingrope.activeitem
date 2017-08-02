@@ -1,0 +1,42 @@
+{
+  "itemName" : "trinkclimbingrope",
+  "price" : 10,
+  "inventoryIcon" : "trinkclimbingropeicon.png",
+  "rarity" : "Common",
+  "maxStack" : 1000,
+  "description" : "A length of metal cable. Useful for climbing and crafting both.",
+  "shortdescription" : "Trinkian Cable",
+  "category" : "Tool",
+  "twoHanded" : false,
+
+  "scripts" : ["/items/active/grapplinghooks/grapplinghook.lua"],
+  "animationScripts" : ["/items/active/effects/renderrope.lua"],
+
+  "animation" : "trinkclimbingrope.animation",
+
+  "fireOffset" : [0, 0],
+  "ropeOffset" : [-1.75, 0],
+  "ropeVisualOffset" : [-0.5, 0.0],
+
+  "consumeOnUse" : true,
+
+  "projectileType" : "trinkgrapplinghook",
+  "projectileParameters" : {
+    "speed" : 50,
+    "timeToLive" : 2.5
+  },
+
+  "ropeWidth" : 1.2,
+  "ropeColor" : [65, 65, 65, 255],
+
+  "reelInDistance" : 2.5,
+  "reelOutLength" : 50,
+  "breakLength" : 60,
+
+  "minSwingDistance" : 1.5,
+
+  "reelSpeed" : 8,
+  "controlForce" : 2000,
+
+  "groundLagTime" : 0.2
+}

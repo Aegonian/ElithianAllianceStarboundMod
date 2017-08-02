@@ -1,0 +1,50 @@
+{
+  "objectName" : "trinkrooftopentry",
+  "colonyTags" : ["trink"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 200,
+  "description" : "A small rooftop entrance piece of modular Trinkian buildings.",
+  "shortdescription" : "Trinkian Rooftop Entry",
+  "race" : "trink",
+
+  "health" : 8,
+
+  "apexDescription" : "A small modular rooftop entrance.",
+  "avianDescription" : "A small, rooftop entrance decorated with green lights.",
+  "floranDescription" : "Floran seesss upside down roof. Floran wonderss why upside down.",
+  "glitchDescription" : "Fascinated. This modular rooftop entrance piece is packed with sensors.",
+  "humanDescription" : "An inverted metal pyramid? Strangely cool!",
+  "hylotlDescription" : "A metal rooftop entrance. Surpisingly, it is packed with sensors and communication systems.",
+
+  "aegiDescription" : "The Trinks are big fans of modular buildings. This small rooftop entrance will fit on pretty much every Trinkian construction.",
+  "avikanDescription" : "A small metal rooftop entrance, built by machines.",
+  "erixianDescription" : "A small modular rooftop entrance.",
+  "trinkDescription" : "Trinkian rooftop entrances are modular, and fit ontop of almost any Trinkian structure.",
+  "hymidDescription" : "A small metal rooftop entrance, built by the Notician robots.",
+  "notixDescription" : "Our Trinks are excellent at building modular structures.",
+  "jorgasianDescription" : "A small modular rooftop entrance.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Readings indicate high amounts of sensors inside this structure.",
+
+
+  "inventoryIcon" : "trinkrooftopentryicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "trinkrooftopentry.png:default", "fullbright" : true }, { "image" : "trinkrooftopentrylit.png:default" } ],
+	  
+      "imagePosition" : [-24, 0],
+      "spaces"    : [                 [-1, 2],[ 0, 2],    [ 6, 2],[ 7, 2],
+                              [-2, 1],[-1, 1],[ 0, 1],    [ 6, 1],[ 7, 1],[ 8, 1],
+                      [-3, 0],[-2, 0],[-1, 0],[ 0, 0],    [ 6, 0],[ 7, 0],[ 8, 0],[ 9, 0] ],
+      "fgAnchors" : [ [-3,-1],[-2,-1],[-1,-1],[ 0,-1],    [ 6,-1],[ 7,-1],[ 8,-1],[ 9,-1] ],
+                                           
+      "renderLayer" : "Object-10",
+      "collision" : "solid",
+      "direction" : "right"
+    }
+  ]
+}

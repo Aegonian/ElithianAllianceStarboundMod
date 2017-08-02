@@ -1,0 +1,11 @@
+{
+  "itemName" : "trinkglass",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "trinkglass.png",
+  "shortdescription" : "Trinkian Glass",
+  "description" : "Thick glass.",
+
+  "materialId" : 30068
+}

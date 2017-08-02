@@ -1,0 +1,10 @@
+{
+  "itemName" : "avikandarkmetal",
+  "price" : 50,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "avikandarkmetal.png",
+  "description" : "Strong metal plates made to be exceptionally heat resistant.",
+  "shortdescription" : "Dranite Plate",
+  "itemTags" : [ "reagent" ]
+}

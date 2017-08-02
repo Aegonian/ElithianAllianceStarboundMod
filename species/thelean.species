@@ -1,0 +1,70 @@
+{
+  "kind" : "thelean",
+
+  "charCreationTooltip" : {
+      "title" : "Thelean",
+      "subTitle" : "Interstellar Conquerors",
+      "description" : "The Theleans are an old race, and a dominant force in their section of the galaxy. Most Theleans follow their brutal leader, Creaton, with unfaltering loyalty, but some have chosen a different path in life."
+  },
+  
+  "playerSpecies" : true,
+  "humanoidConfig" : "/species/types/thea-humanoid.config",
+  "nameGen" : [ "/species/theleannamegen.config:names", "/species/theleannamegen.config:names" ],
+  "ouchNoises" : [ "/sfx/humanoid/floranhurt_female3.ogg", "/sfx/humanoid/floranhurt_female3.ogg" ],
+  "charGenTextLabels" : [ "SKIN COLOR", "N/A", "SHIRT", "PANTS", "HEAD SHAPE", "FLAP COLOR", "SHIRT COLOR", "PANTS COLOR", "THELEAN", "PERSONALITY" ],
+  "skull" : "/humanoid/thelean/dead.png",
+  "effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=79ff4bFF?replace=31a6ffFF=00c901FF",
+  "defaultBlueprints" : {
+    "tier1" : [
+	
+    ]
+  },
+  "altOptionAsFacialMask" : true,
+  "headOptionAsHairColor" : true,
+  "bodyColorAsFacialMaskSubColor" : true,
+  "hairColorAsBodySubColor" : true,
+  "genders" : [
+    {
+      "name" : "male",
+      "image" : "/interface/title/male.png",
+      "characterImage" : "/interface/title/theleanmale.png",
+	  "hairGroup" : "flaps",
+      "hair" : [ "1" ],
+      "shirt" : [ "thea-hiddenchest" ],
+      "pants" : [ "thea-hiddenlegs" ],
+      "facialHairGroup" : "",
+      "facialHair" : [ ],
+      "facialMaskGroup" : "headshape",
+      "facialMask" : [ "0", "1", "2" ]
+    },
+    {
+      "name" : "female",
+      "image" : "/interface/title/female.png",
+      "characterImage" : "/interface/title/theleanfemale.png",
+	  "hairGroup" : "flaps",
+      "hair" : [ "1" ],
+      "shirt" : [ "thea-hiddenchest" ],
+      "pants" : [ "thea-hiddenlegs" ],
+      "facialHairGroup" : "",
+      "facialHair" : [ ],
+      "facialMaskGroup" : "headshape",
+      "facialMask" : [ "0", "1", "2" ]
+    }
+  ],
+  "bodyColor" : [
+ // { "42301C" : "DARKER", "785F40" : "DARK  ", "A2825C" : "NORMAL", "CCAA7F" : "LIGHT " }, // Template, Brown
+  
+    { "42301C" : "5D2320", "785F40" : "8C2D26", "A2825C" : "C03228", "CCAA7F" : "E63023" }, // Red
+	{ "42301C" : "572329", "785F40" : "822B33", "A2825C" : "B12F3C", "CCAA7F" : "D32D3E" }, // Red-Purple
+	{ "42301C" : "472A37", "785F40" : "67374C", "A2825C" : "884160", "CCAA7F" : "9F446B" }, // Purple
+	{ "42301C" : "5D2820", "785F40" : "8C3626", "A2825C" : "C03F28", "CCAA7F" : "E64023" }, // Red-Range
+	{ "42301C" : "5D2022", "785F40" : "8C2628", "A2825C" : "C0282B", "CCAA7F" : "E62326" }, // Saturated Red
+	{ "42301C" : "512628", "785F40" : "783031", "A2825C" : "A23739", "CCAA7F" : "BF3739" }  // Desaturated Red
+  ],
+  "undyColor" : [ "" ],
+  "hairColor" : [
+ // { "563527" : "DARKER", "A65935" : "DARK  ", "CC7651" : "NORMAL", "EFA386" : "LIGHT " }, // Template, Reddish Orange
+
+    { "563527" : "2C1F1F", "A65935" : "574949", "CC7651" : "8A7E7E", "EFA386" : "AD9F9F" } // Reddish Metal
+  ]
+}

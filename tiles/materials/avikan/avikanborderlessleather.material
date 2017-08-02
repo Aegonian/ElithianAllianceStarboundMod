@@ -1,0 +1,28 @@
+{
+  "materialId" : 30093,
+  "materialName" : "avikanborderlessleather",
+  "particleColor" : [185, 164, 141, 255],
+  "itemDrop" : "avikanborderlessleather", 
+  "shortdescription" : "Borderless Avikan Leather",
+  
+  "description" : "A leather wall sheet for decoration and insulation.",
+  "glitchDescription" : "Cautious. This leather wall sheet can easily catch fire.",
+  "floranDescription" : "Floran isss reminded of home by leather ssheets.",
+  "novakidDescription" : "A leather sheet great for makin' tents, but otherwise it's rather dull.",
+  
+  "drodenDescription" : "Analysis complete. Leather wall sheet.",
+
+  "footstepSound" : "/sfx/blocks/footstep_sand.ogg",
+  "health" : 2,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "avikanborderlessleather.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 51
+  }
+}

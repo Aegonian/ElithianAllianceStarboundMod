@@ -1,0 +1,10 @@
+{
+  "itemName" : "avikanmagazine",
+  "price" : 500,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "avikanmagazine.png",
+  "description" : "A vital part of any of the Vanguard's ballistic rifles.",
+  "shortdescription" : "Avikan Magazine",
+  "itemTags" : [ "reagent" ]
+}

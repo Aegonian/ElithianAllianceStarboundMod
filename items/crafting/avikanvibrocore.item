@@ -1,0 +1,10 @@
+{
+  "itemName" : "avikanvibrocore",
+  "price" : 250,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "avikanvibrocore.png",
+  "description" : "A vital part of Vanguard vibroblade weapons.",
+  "shortdescription" : "Avikan Vibro Core",
+  "itemTags" : [ "reagent" ]
+}

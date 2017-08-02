@@ -1,0 +1,21 @@
+{
+  "itemName" : "trinkfossil3",
+  "rarity" : "Uncommon",
+  "itemTags" : ["fossil"],
+
+  "description" : "A fossilised pair of Trink legs.",
+  "category" : "mediumFossil",
+
+  "shortdescription" : "Trink Legs",
+  "race" : "trink",
+  "price" : 0,
+
+  "inventoryIcon" : "trinkfossil3icon.png",
+
+  "displayImage" : "/objects/fossils/humanoidfossils/fossiltrink/trinklegsdisplay.png",
+  "displayoffset" :[0, 0],
+
+  "fossilSetName" : "trinkSkeleton",
+  "setIndex" : 3,
+  "setCount" : 3
+}

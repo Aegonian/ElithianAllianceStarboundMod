@@ -1,0 +1,41 @@
+{
+  "projectileName" : "trinksmalllaserbullet",
+  "physics" : "thea-laser",
+  "bounces" : 4,
+  "piercing" : true,
+  "damageKindImage" : "icon.png",
+  "image" : "trinksmalllaserbullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 200,
+  "supportsProcessing" : true,
+  //"emitters" : [ "trinklasertrail" ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/trink/trinksmalllaserbullet/trail.png",
+        "position" : [0, 0],
+        "layer" : "middle",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.5,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  "lightColor" : [0, 73, 0],
+  "fullbright" : true,
+  "damageKind" : "plasma"
+}

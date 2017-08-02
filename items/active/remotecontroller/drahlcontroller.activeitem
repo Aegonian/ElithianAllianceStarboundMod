@@ -1,0 +1,36 @@
+{
+  "itemName" : "drahlcontroller",
+  "itemTags" : ["vehiclecontroller"],
+  "level" : 1,
+  "maxStack" : 1,
+  "price" : 25000,
+  "rarity" : "Legendary",
+  "tooltipKind" : "vehicle",
+  "largeImage" : "/vehicles/avikan/controllerdrahl/controllerdrahlicon.png",
+  "category" : "Remote Vehicle Controller",
+  "description" : "Allows you to summon and control a Drahl unit.",
+  "shortdescription" : "Drahl Remote Controller",
+  "twoHanded" : true,
+  "inventoryIcon" : "drahlcontroller.png:active.1",
+  "emptyInventoryIcon" : "/items/active/remotecontroller/drahlcontroller.png:active.1",
+  "filledInventoryIcon" : "/items/active/remotecontroller/drahlcontroller.png:inactive.1",
+  
+  "animation" : "thea-remotecontroller.animation",
+  "animationParts" : {
+    "casing" : "drahlcontroller.png",
+	"lights" : "drahlcontrollerlights.png"
+  },  
+  
+  "scripts" : ["thea-remotecontroller.lua"],
+  "animationScripts" : ["/items/active/vehiclecontroller/vehiclecursor.lua"],
+
+  //Item specific configuration
+  "vehicleType" : "controllerdrahl",
+  "vehicleImage" : "/vehicles/avikan/controllerdrahl/controllerdrahlicon.png",
+  "vehicleBoundingBox" : [-1.5, -1.5, 1.5, 1.5],
+  
+  //Generic configuration
+  "cooldownTime" : 1.0,
+  "transmissionRange" : 50,
+  "filled" : true
+}

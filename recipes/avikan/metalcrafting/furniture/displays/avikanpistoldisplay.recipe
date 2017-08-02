@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "avikan-skiprifle", "count" : 1 },
+	{ "item" : "avikandarkmetal", "count" : 1 }
+  ],
+  "output" : { "item" : "avikanpistoldisplay", "count" : 1 },
+  "groups" : [ "avikanmetalcrafting", "metalfurniture", "all" ]
+}

@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "avikanbreathprotectionback", "count" : 1 },
+    { "item" : "avikanmetal", "count" : 6 },
+    { "item" : "monsterclaws", "count" : 6 },
+    { "item" : "avikancircuitry", "count" : 2 },
+    { "item" : "venomsample", "count" : 1 }
+  ],
+  "output" : { "item" : "avikanradiationprotectionback", "count" : 1 },
+  "groups" : [ "avikaninventor", "hazardgear", "all" ]
+}

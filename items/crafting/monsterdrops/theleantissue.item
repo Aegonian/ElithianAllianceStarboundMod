@@ -1,0 +1,13 @@
+{
+  "itemName" : "theleantissue",
+  "price" : 150,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "theleantissue.png",
+  "description" : "A sample of Thelean muscle tissue. It still moves.",
+  "shortdescription" : "Thelean Tendril",
+  "itemTags" : [ "reagent" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 3
+}

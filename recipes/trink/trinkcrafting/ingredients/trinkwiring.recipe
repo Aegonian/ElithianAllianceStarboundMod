@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "copperore", "count" : 2 }
+  ],
+  "output" : {
+	"item" : "trinkwiring",
+	"count" : 5
+  },
+  "groups" : [ "trinkcrafting", "ingredients", "all" ],
+  "duration" : 0.15
+}

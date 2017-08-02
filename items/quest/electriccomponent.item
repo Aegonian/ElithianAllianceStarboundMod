@@ -1,0 +1,10 @@
+{
+  "itemName" : "electriccomponent",
+  "price" : 50,
+  "rarity" : "Legendary",
+  "category" : "Quest Item",
+  "inventoryIcon" : "electriccomponent.png",
+  "description" : "An electric component.",
+  "shortdescription" : "^#BA66FF;Electric Component^white;",
+  "itemTags" : [ "questitem" ]
+}

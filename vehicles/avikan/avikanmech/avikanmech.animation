@@ -1,0 +1,856 @@
+{
+  "globalTagDefaults" : {
+    "colour" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "mech" : {
+        "default" : "idleOpen",
+        "states" : {
+		  //WARP IN SEQUENCE
+          "warpInPart1" : {
+            "frames" : 4,  
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "warpInPart2"
+		  },
+          "warpInPart2" : {
+            "frames" : 4,  
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "idleOpen"
+		  },
+		  //MOVEMENT
+          "idle" : {},
+          "idleOpen" : {},
+          "walking" : {
+            "frames" : 8,  
+            "cycle" : 0.8,
+            "mode" : "loop",
+			"frameProperties" : {
+			  "immediateSound" : [ "", "", "", "/sfx/tech/thea_mech_step.ogg", "", "", "", "/sfx/tech/thea_mech_step.ogg"]
+			}
+		  },
+		  "walkingBackwards" : {
+            "frames" : 8,  
+            "cycle" : 0.8,
+            "mode" : "loop",
+			"frameProperties" : {
+			  "immediateSound" : [ "/sfx/tech/thea_mech_step.ogg", "", "", "", "/sfx/tech/thea_mech_step.ogg", "", "", ""]
+			}
+		  },
+          "jumping" : {
+            "frames" : 1,  
+            "cycle" : 1.0
+		  },
+          "boostingup" : {
+            "frames" : 1,  
+            "cycle" : 1.0
+		  },
+          "boostingback" : {
+            "frames" : 1,  
+            "cycle" : 1.0
+		  },
+          "boostingforward" : {
+            "frames" : 1,  
+            "cycle" : 1.0
+		  },
+          "falling" : {
+            "frames" : 2,  
+            "cycle" : 0.4
+		  },
+          "landing" : {
+            "frames" : 1,  
+            "cycle" : 1.0
+		  },
+          "opening" : {
+            "frames" : 5,  
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "idleOpen"
+		  },
+          "closing" : {
+            "frames" : 5,  
+            "cycle" : 0.5,
+            "mode" : "transition",
+            "transition" : "idle"
+		  },
+		  //WARP OUT SEQUENCE
+          "warpOutPart1" : {
+            "frames" : 4,  
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "warpOutPart2"
+		  },
+          "warpOutPart2" : {
+            "frames" : 4,  
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "invisible"
+		  },
+		  "invisible" : {}
+        }
+      },
+	  "foregroundgun" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {},
+		  "invisible" : {}
+		}
+	  },
+	  "foregroundgunmuzzle" : {
+        "default" : "invisible",
+        "states" : {
+		  "firing" : {
+            "frames" : 2,  
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "invisible"
+		  },
+		  "invisible" : {}
+		}
+	  },
+	  "backgroundgun" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {},
+		  "invisible" : {}
+		}
+	  },
+	  "backgroundgunmuzzle" : {
+        "default" : "invisible",
+        "states" : {
+		  "firing" : {
+            "frames" : 2,  
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "invisible"
+		  },
+		  "invisible" : {}
+		}
+	  },
+	  "boosterflame" : {
+        "default" : "invisible",
+        "states" : {
+		  "boostingup" : {
+            "frames" : 3,  
+            "cycle" : 0.3,
+            "mode" : "loop"
+		  },
+		  "boostingback" : {
+            "frames" : 3,  
+            "cycle" : 0.3,
+            "mode" : "loop"
+		  },
+		  "boostingforward" : {
+            "frames" : 3,  
+            "cycle" : 0.3,
+            "mode" : "loop"
+		  },
+		  "invisible" : {}
+		}
+	  },
+	  //DAMAGE
+	  "damage" : {
+        "default" : "undamaged",
+        "states" : {
+          "undamaged" : {},
+		  "scratched" : {},
+		  "dented" : {},
+		  "wrecked" : {},
+		  "invisible" : {}
+		}
+	  }
+    },
+
+    "parts" : {
+	  //MECH BACKGROUND
+      "background" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : -1,
+          "transformationGroups" : ["flip"]
+        },
+        "partStates" : {
+          "mech" : {
+            //WARP IN SEQUENCE
+			"warpInPart1" : {
+              "properties" : {}
+            },
+            "warpInPart2" : {
+              "properties" : {
+                "image" : "avikanmechbackground.png:idleOpen"
+              }
+            },
+			//MECH ANIMATION
+            "idle" : {
+              "properties" : {
+                "image" : "avikanmechbackground.png:idle"
+              }
+            },
+            "idleOpen" : {
+              "properties" : {
+                "image" : "avikanmechbackground.png:idleOpen"
+              }
+            },
+            "walking" : {
+              "properties" : {
+                "image" : "avikanmechbackground.png:walk.<frame>"
+              }
+            },
+            "walkingBackwards" : {
+              "properties" : {
+                "image" : "avikanmechbackground.png:walkb.<frame>"
+              }
+            },
+            "jumping" : {
+              "properties" : {
+                "image" : "avikanmechbackground.png:jump.<frame>"
+              }
+            },
+            "boostingup" : {
+              "properties" : {
+                "image" : "avikanmechbackground.png:boostup.<frame>"
+              }
+            },
+            "boostingback" : {
+              "properties" : {
+                "image" : "avikanmechbackground.png:boostback.<frame>"
+              }
+            },
+            "boostingforward" : {
+              "properties" : {
+                "image" : "avikanmechbackground.png:boostforward.<frame>"
+              }
+            },
+            "falling" : {
+              "properties" : {
+                "image" : "avikanmechbackground.png:fall.<frame>"
+              }
+            },
+            "landing" : {
+              "properties" : {
+                "image" : "avikanmechbackground.png:land.<frame>"
+              }
+            },
+            "opening" : {
+              "properties" : {
+                "image" : "avikanmechbackground.png:open.<frame>"
+              }
+            },
+            "closing" : {
+              "properties" : {
+                "image" : "avikanmechbackground.png:close.<frame>"
+              }
+            },
+			//WARP OUT SEQUENCE
+            "warpOutPart1" : {
+              "properties" : {
+                "image" : "avikanmechbackground.png:idleOpen"
+              }
+            },
+            "warpOutPart2" : {
+              "properties" : {}
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+	  //MECH SEAT --> Use this layer to offset the player sprite from the main body (bobbing while walking etc)
+      "seat" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 1,
+          "transformationGroups" : ["flip"],
+          "drivingSeatPosition" : [0, 0.425],
+          "secondaryFirePosition" : [-1.5, 1.9]
+        },
+        "partStates" : {
+          "mech" : {
+            //WARP IN SEQUENCE
+			"warpInPart1" : {
+              "properties" : {},
+			  "frameProperties" : {
+                "offset" : [ [0, 0] ]
+              }
+            },
+            "warpInPart2" : {
+              "properties" : {
+                "image" : "avikanmechseat.png:idle"
+              },
+			  "frameProperties" : {
+                "offset" : [ [0, 0] ]
+              }
+            },
+			//MECH ANIMATION
+            "idle" : {
+              "properties" : {
+                "image" : "avikanmechseat.png:idle"
+              },
+			  "frameProperties" : {
+                "offset" : [ [0, 0.0] ]
+              }
+            },
+            "idleOpen" : {
+              "properties" : {
+                "image" : "avikanmechseat.png:idle"
+              },
+			  "frameProperties" : {
+                "offset" : [ [0, -0.375] ]
+              }
+            },
+            "walking" : {
+              "properties" : {
+                "image" : "avikanmechseat.png:idle"
+              },
+			  "frameProperties" : {
+                "offset" : [ [0, 0.0], [0, 0.25], [0, 0.5], [0, 0.25], [0, 0.0], [0, 0.25], [0, 0.5], [0, 0.25] ]
+              }
+            },
+            "walkingBackwards" : {
+              "properties" : {
+                "image" : "avikanmechseat.png:idle"
+              },
+			  "frameProperties" : {
+                "offset" : [ [0, 0.25], [0, 0.5], [0, 0.25], [0, 0.0], [0, 0.25], [0, 0.5], [0, 0.25], [0, 0.0] ]
+              }
+            },
+            "jumping" : {
+              "properties" : {
+                "image" : "avikanmechseat.png:idle"
+              },
+			  "frameProperties" : {
+                "offset" : [ [0, 0.125] ]
+              }
+            },
+            "boostingup" : {
+              "properties" : {
+                "image" : "avikanmechseat.png:idle"
+              },
+			  "frameProperties" : {
+                "offset" : [ [0, 0.0], [0, 0.0], [0, 0.0] ]
+              }
+            },
+            "boostingback" : {
+              "properties" : {
+                "image" : "avikanmechseat.png:idle"
+              },
+			  "frameProperties" : {
+                "offset" : [ [0, 0.0], [0, 0.0], [0, 0.0] ]
+              }
+            },
+            "boostingforward" : {
+              "properties" : {
+                "image" : "avikanmechseat.png:idle"
+              },
+			  "frameProperties" : {
+                "offset" : [ [0, 0.0], [0, 0.0], [0, 0.0] ]
+              }
+            },
+            "falling" : {
+              "properties" : {
+                "image" : "avikanmechseat.png:idle"
+              },
+			  "frameProperties" : {
+                "offset" : [ [0, 0.0], [0, 0.0] ]
+              }
+            },
+            "landing" : {
+              "properties" : {
+                "image" : "avikanmechseat.png:idle"
+              },
+			  "frameProperties" : {
+                "offset" : [ [0, -0.375] ]
+              }
+            },
+            "opening" : {
+              "properties" : {
+                "image" : "avikanmechseat.png:idle"
+              },
+			  "frameProperties" : {
+                "offset" : [ [0, -0.375], [0, -0.375], [0, -0.375], [0, -0.375], [0, -0.375] ]
+              }
+            },
+            "closing" : {
+              "properties" : {
+                "image" : "avikanmechseat.png:idle"
+              },
+			  "frameProperties" : {
+                "offset" : [ [0, -0.375], [0, -0.375], [0, -0.375], [0, -0.375], [0, -0.375] ]
+              }
+            },
+			//WARP OUT SEQUENCE
+            "warpOutPart1" : {
+              "properties" : {
+                "image" : "avikanmechseat.png:idle"
+              },
+			  "frameProperties" : {
+                "offset" : [ [0, 0] ]
+              }
+            },
+            "warpOutPart2" : {
+              "properties" : {},
+			  "frameProperties" : {
+                "offset" : [ [0, 0] ]
+              }
+            },
+            "invisible" : {
+              "properties" : {},
+			  "frameProperties" : {
+                "offset" : [ [0, 0] ]
+              }
+            }
+          }
+        }
+      },
+      "foreground" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 2,
+          "transformationGroups" : ["flip"]
+        },
+        "partStates" : {
+          "mech" : {
+            //WARP IN SEQUENCE
+			"warpInPart1" : {
+              "properties" : {}
+            },
+            "warpInPart2" : {
+              "properties" : {
+                "image" : "avikanmechforeground.png:idleOpen"
+              }
+            },
+			//MECH ANIMATION
+            "idle" : {
+              "properties" : {
+                "image" : "avikanmechforeground.png:idle"
+              }
+            },
+            "idleOpen" : {
+              "properties" : {
+                "image" : "avikanmechforeground.png:idleOpen"
+              }
+            },
+            "walking" : {
+              "properties" : {
+                "image" : "avikanmechforeground.png:walk.<frame>"
+              }
+            },
+            "walkingBackwards" : {
+              "properties" : {
+                "image" : "avikanmechforeground.png:walkb.<frame>"
+              }
+            },
+            "jumping" : {
+              "properties" : {
+                "image" : "avikanmechforeground.png:jump.<frame>"
+              }
+            },
+            "boostingup" : {
+              "properties" : {
+                "image" : "avikanmechforeground.png:boostup.<frame>"
+              }
+            },
+            "boostingback" : {
+              "properties" : {
+                "image" : "avikanmechforeground.png:boostback.<frame>"
+              }
+            },
+            "boostingforward" : {
+              "properties" : {
+                "image" : "avikanmechforeground.png:boostforward.<frame>"
+              }
+            },
+            "falling" : {
+              "properties" : {
+                "image" : "avikanmechforeground.png:fall.<frame>"
+              }
+            },
+            "landing" : {
+              "properties" : {
+                "image" : "avikanmechforeground.png:land.<frame>"
+              }
+            },
+            "opening" : {
+              "properties" : {
+                "image" : "avikanmechforeground.png:open.<frame>"
+              }
+            },
+            "closing" : {
+              "properties" : {
+                "image" : "avikanmechforeground.png:close.<frame>"
+              }
+            },
+			//WARP OUT SEQUENCE
+            "warpOutPart1" : {
+              "properties" : {
+                "image" : "avikanmechforeground.png:idleOpen"
+              }
+            },
+            "warpOutPart2" : {
+              "properties" : {}
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+	  //WARPING SPRITES
+      "warp" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 6,
+          "fullbright" : true,
+		  "offset" : [-0.25, -1.0],
+          "transformationGroups" : ["flip"]
+        },
+        "partStates" : {
+          "mech" : {
+            //WARP IN SEQUENCE
+			"warpInPart1" : {
+              "properties" : {
+                "image" : "avikanmechwarp.png:warpInPart1.<frame>"
+              }
+            },
+            "warpInPart2" : {
+              "properties" : {
+                "image" : "avikanmechwarp.png:warpInPart2.<frame>"
+              }
+            },
+			//MECH ANIMATION
+            "idle" : {
+              "properties" : {}
+            },
+            "idleOpen" : {
+              "properties" : {}
+            },
+            "walking" : {
+              "properties" : {}
+            },
+            "jumping" : {
+              "properties" : {}
+            },
+            "boostingup" : {
+              "properties" : {}
+            },
+            "boostingback" : {
+              "properties" : {}
+            },
+            "boostingforward" : {
+              "properties" : {}
+            },
+            "falling" : {
+              "properties" : {}
+            },
+            "landing" : {
+              "properties" : {}
+            },
+            "opening" : {
+              "properties" : {}
+            },
+            "closing" : {
+              "properties" : {}
+            },
+			//WARP OUT SEQUENCE
+            "warpOutPart1" : {
+              "properties" : {
+                "image" : "avikanmechwarp.png:warpOutPart1.<frame>"
+              }
+            },
+            "warpOutPart2" : {
+              "properties" : {
+                "image" : "avikanmechwarp.png:warpOutPart2.<frame>"
+              }
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+	  //FOREGROUND GUN
+      "foregroundgun" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 4,
+          "rotationGroup" : "guns",
+          "rotationCenter" : [-1.25, -0.25],
+          "firePoint" : [1.25, 0.0],
+          "anchorPart" : "seat"
+        },
+        "partStates" : {
+          "foregroundgun" : {
+            "idle" : {
+              "properties" : {
+                "image" : "avikanmechgun.png:idle",
+				"offset" : [-0.75, -0.25]
+              }
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+	  "foregroundgunmuzzle" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 5,
+          "rotationGroup" : "guns",
+          "rotationCenter" : [-1.25, -0.25],
+          "anchorPart" : "seat",
+		  "fullbright" : true
+        },
+        "partStates" : {
+          "foregroundgunmuzzle" : {
+			"firing" : {
+              "properties" : {
+                "image" : "avikanmechgunmuzzle.png:fire.<frame>",
+				"offset" : [-0.75, -0.25]
+              }
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+	  //BACKGROUND GUN
+      "backgroundgun" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : -3,
+          "rotationGroup" : "guns",
+          "rotationCenter" : [0.75, -0.25],
+          "firePoint" : [1.25, 0.0],
+          "anchorPart" : "seat"
+        },
+        "partStates" : {
+          "backgroundgun" : {
+            "idle" : {
+              "properties" : {
+                "image" : "avikanmechgun.png:idle",
+				"offset" : [1.25, -0.25]
+              }
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+	  "backgroundgunmuzzle" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : -2,
+          "rotationGroup" : "guns",
+          "rotationCenter" : [0.75, -0.25],
+          "anchorPart" : "seat",
+		  "fullbright" : true
+        },
+        "partStates" : {
+          "backgroundgunmuzzle" : {
+			"firing" : {
+              "properties" : {
+                "image" : "avikanmechgunmuzzle.png:fire.<frame>",
+				"offset" : [1.25, -0.25]
+              }
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+	  //BOOSTER FLAMES
+	  "boosterflamefront" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 4,
+		  "fullbright" : true,
+          "transformationGroups" : ["flip"]
+        },
+        "partStates" : {
+          "boosterflame" : {
+			"boostingup" : {
+              "properties" : {
+                "image" : "avikanmechboosterfront.png:boostup.<frame>"
+              }
+            },
+			"boostingback" : {
+              "properties" : {
+                "image" : "avikanmechboosterfront.png:boostback.<frame>"
+              }
+            },
+			"boostingforward" : {
+              "properties" : {
+                "image" : "avikanmechboosterfront.png:boostforward.<frame>"
+              }
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+	  "boosterflameback" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 0,
+		  "fullbright" : true,
+          "transformationGroups" : ["flip"]
+        },
+        "partStates" : {
+          "boosterflame" : {
+			"boostingup" : {
+              "properties" : {
+                "image" : "avikanmechboosterback.png:boostup.<frame>"
+              }
+            },
+			"boostingback" : {
+              "properties" : {
+                "image" : "avikanmechboosterback.png:boostback.<frame>"
+              }
+            },
+			"boostingforward" : {
+              "properties" : {
+                "image" : "avikanmechboosterback.png:boostforward.<frame>"
+              }
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+	  //DAMAGE PHASES
+	  "damage" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 3,
+          "anchorPart" : "seat"
+        },
+        "partStates" : {
+          "damage" : {
+            "undamaged" : {
+              "properties" : {
+                "image" : "avikanmechdamage.png:undamaged"
+              }
+            },
+            "scratched" : {
+              "properties" : {
+                "image" : "avikanmechdamage.png:scratched"
+              }
+            },
+            "dented" : {
+              "properties" : {
+                "image" : "avikanmechdamage.png:dented"
+              }
+            },
+            "wrecked" : {
+              "properties" : {
+                "image" : "avikanmechdamage.png:wrecked"
+              }
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "flip" : {}
+  },
+  "rotationGroups" : {
+    "guns" : {
+      "angularVelocity" : 10.0
+    }
+  },
+  
+  "particleEmitters" : { 
+    "landingDust" : {
+      "transformationGroups" : ["flip"],
+      "emissionRate" : 10.0,
+      "burstCount"  : 1,
+      "offsetRegion" : [0.0, -3.9, 0.0, -3.9],
+      "particles" : [
+		{ "particle" : "avikanmechlandingdust" }
+	  ]
+    },
+	"damageShards" : {
+      "transformationGroups" : ["flip"],
+      "emissionRate" : 10.0,
+      "burstCount"  : 25,
+      "offsetRegion" : [1.5, 0.5, -1.5, -1.5],
+      "particles" : [
+		{ "particle" : "avikankeffshard" },
+		{ "particle" : "fireshard" }
+	  ]
+    },
+	"sparks" : {
+      "transformationGroups" : ["flip"],
+      "emissionRate" : 2.0,
+	  "emissionVariance" : 1.5,
+      "offsetRegion" : [-1.75, 0.85, -1.75, 0.85],
+      "particles" : [
+		{ "particle" : "thea-electricspark" }
+	  ]
+    },
+	"fire" : {
+      "transformationGroups" : ["flip"],
+      "emissionRate" : 20.0,
+	  "emissionVariance" : 0.5,
+      "offsetRegion" : [-1.75, 0.85, -1.75, 0.85],
+      "particles" : [
+		{ "particle" : "fireshard" },
+		{ "particle" : "firesmoke" }
+	  ]
+    },
+	"explosion" : {
+      "transformationGroups" : ["flip"],
+      "offsetRegion" : [-2.5, -4.0, 2.5, 2.0],
+      "particles" : [
+		{ "particle" : "avikanlargedronedebris1" },
+		{ "particle" : "avikanlargedronedebris1" },
+		{ "particle" : "avikanlargedronedebris1" },
+		{ "particle" : "avikanlargedronedebris1" },
+		
+		{ "particle" : "avikanlargedronedebris2" },
+		{ "particle" : "avikanlargedronedebris2" },
+		{ "particle" : "avikanlargedronedebris2" },
+		{ "particle" : "avikanlargedronedebris2" },
+		{ "particle" : "avikanlargedronedebris2" },
+		{ "particle" : "avikanlargedronedebris2" },
+		
+		{ "particle" : "avikanlargedronedebris3" },
+		{ "particle" : "avikanlargedronedebris3" },
+		{ "particle" : "avikanlargedronedebris3" },
+		{ "particle" : "avikanlargedronedebris3" },
+		{ "particle" : "avikanlargedronedebris3" },
+		{ "particle" : "avikanlargedronedebris3" },
+		
+		{ "particle" : "avikanlargedronedebris4" },
+		{ "particle" : "avikanlargedronedebris4" }
+	  ]
+    }
+  },
+
+  "sounds" : {
+    "returnvehicle" : ["/sfx/tools/teleport_up.ogg"],
+	"fire" : ["/sfx/gun/mech_gun3.ogg"],
+	"secondaryFire" : ["/sfx/gun/grenade3.ogg"],
+	"powerup" : ["/sfx/tech/thea_mech_powerup.ogg"],
+	"powerdown" : ["/sfx/tech/thea_mech_powerdown.ogg"],
+	"jump" : ["/sfx/tech/thea_mech_jump2.ogg"],
+	"landing" : ["/sfx/tech/thea_mech_impact.ogg"],
+	"boost" : ["/sfx/tech/thea_mech_jetpack.ogg"],
+	"warning" : ["/sfx/objects/redalert2.ogg"]
+  }
+}

@@ -1,0 +1,387 @@
+{
+  "type" : "avikanlargedrone-captured",
+  "shortdescription" : "Elite Vanguard Drahl",
+  "description" : "A massive combat drone for supporting Avikan soldiers on the field.",
+
+  "categories" : [ "avikanlargedrone" ],
+  "parts" : [ "body", "lights" ],
+
+  "animation" : "avikanlargedrone.animation",
+
+  "dropPools" : [ { "default" : "avikanlargedroneTreasure", "bow" : "avikanlargedroneHunting" } ],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+
+    "behavior" : "monster",
+    "deathBehavior" : "monster-death",
+
+    "seeThroughLiquid" : false,
+    "behaviorConfig" : {
+      "damageOnTouch" : true,
+
+      "targetQueryRange" : 25,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : true,
+      "keepTargetInRange" : 50,
+      "targetOutOfSightTime" : 5.0,
+
+      "foundTargetActions" : [
+        {
+          "name" : "action-animate",
+          "parameters" : {
+            "stateType" : "body",
+            "state" : "wakeup",
+            "animationTimer" : 1.2
+          }
+        }
+      ],
+
+      "fleeActions" : [ ],
+
+      "hostileActions" : [
+	  //LINEDRIVE ATTACK
+       {
+          "name" : "action-fire",
+          "cooldown" : 6.0,
+          "parameters" : {
+            "requireLineOfSight" : true,
+            "maximumRange" : 18,
+            "minimumRange" : 12,
+            "windupState" : "linedrivewindup",
+            "windupTime" : 1.2,
+
+            "projectileType" : "avikandronebullet",
+            "projectileParameters": {
+			  "power" : 10
+			},
+            "fireOffset" : [-0.5, -1.0],
+            "aimAtTarget" : true,
+            "onGround" : false,
+            "fireState" : "linedriveloop",
+            "fireSound" : "linedrivefire",
+            "fireDelay" : 0.4,
+
+            "fireArc": false,
+            "projectileSpeed": 60,
+
+            "winddownState" : "linedrivewinddown",
+            "winddownTime" : 0.8
+          }
+        },
+	  //MISSILE ATTACK
+		{
+          "name" : "action-fire",
+          "cooldown" : 9.0,
+          "parameters" : {
+            "requireLineOfSight" : true,
+            "maximumRange" : 18,
+            "minimumRange" : 12,
+            "windupState" : "missilewindup",
+            "windupTime" : 0.8,
+
+            "projectileType" : "avikanclusterrocket2",
+			"projectileParameters": {
+			  "power" : 2.0
+			},
+            "fireOffset" : [-0.45, -0.85],
+            "aimAtTarget" : true,
+			"inaccuracy" : 0.2,
+            "projectileCount" : 8,
+            "projectileInterval" : 0.1,
+            "onGround" : false,
+            "fireState" : "missileloop",
+            "fireSound" : "missilefire",
+            "fireDelay" : 0.8,
+
+            "fireArc": false,
+            "projectileSpeed": 1,
+
+            "winddownState" : "missilewinddown",
+            "winddownTime" : 0.8
+          }
+        },
+	  //GRENADE AOE ATTACK
+		{
+          "name" : "action-fire",
+          "cooldown" : 16.0,
+          "parameters" : {
+            "requireLineOfSight" : true,
+            "maximumRange" : 16,
+            "minimumRange" : 8,
+            "windupState" : "grenadewindup",
+            "windupTime" : 0.8,
+
+            "projectileType" : "avikangrenade",
+            "projectileParameters": {
+			  "power" : 4.0
+			},
+            "fireOffset" : [0.65, -0.5],
+            "aimAtTarget" : false,
+			"aimDirection" : [0,-1],
+			"inaccuracy" : 0.5,
+            "projectileCount" : 6,
+            "projectileInterval" : 0.2,
+            "onGround" : false,
+            "fireState" : "grenadeloop",
+            "fireSound" : "grenadefire",
+            "fireDelay" : 1.2,
+
+            "fireArc": false,
+            "projectileSpeed": 1,
+
+            "winddownState" : "grenadewinddown",
+            "winddownTime" : 0.8
+          }
+        }
+      ],
+
+      "periodicActions" : [
+       ],
+
+      "approachActions" : [
+        {
+          "name" : "approach-fly",
+          "parameters" : {
+            "minRange" : 6,
+            "maxRange" : 16,
+            "groundDistance" : 12
+          }
+        }
+      ],
+
+      "followActions" : [
+        {
+          "name" : "approach-teleport",
+          "parameters" : {
+          }
+        },
+        {
+          "name" : "approach-fly",
+          "parameters" : {
+            "minRange" : 6,
+            "maxRange" : 16,
+            "groundDistance" : 12
+          }
+        }
+      ],
+
+      "wanderActions" : [
+        {
+          "name" : "land-fly",
+          "cooldown" : 0,
+          "parameters" : {
+			"landCheckDistance": 30,
+            "landDirection" : [0, -1],
+            "flySpeed" : 8,
+            "flyControlForce" : 5,
+            "idleTime" : [5,10]
+          }
+        }
+      ],
+
+      "deathActions" : [
+        {
+          "name" : "action-projectile",
+          "parameters" : {
+            "projectileCount" : 1,
+            "projectileType" : "avikanlargedroneexplosion",
+            "projectileParameters" : {
+              "damageTeam" : { "type" : "enemy", "team" : 0 },
+			  "power" : 10.0
+            },
+            "aimDirection" : [0, 0],
+            "inaccuracy" : 0,
+            "fireOffset" : [0, 0]
+          }
+        },
+		{
+          "name" : "action-projectile",
+          "parameters" : {
+            "projectileCount" : 1,
+            "projectileType" : "avikanlargedroneengine",
+            "projectileParameters" : {
+              "damageTeam" : { "type" : "enemy", "team" : 0 },
+			  "speed" : 15,
+			  "power" : 5.0
+            },
+            "aimDirection" : [1, 0.5],
+            "inaccuracy" : 0.4,
+            "fireOffset" : [1, 0]
+          }
+        },
+		{
+          "name" : "action-projectile",
+          "parameters" : {
+            "projectileCount" : 1,
+            "projectileType" : "avikanlargedroneengine",
+            "projectileParameters" : {
+              "damageTeam" : { "type" : "enemy", "team" : 0 },
+			  "speed" : 15,
+			  "power" : 5.0
+            },
+            "aimDirection" : [-1, 0.5],
+            "inaccuracy" : 0.4,
+            "fireOffset" : [-1, 0]
+          }
+        },
+		{
+          "name" : "action-projectile",
+          "parameters" : {
+            "projectileCount" : 1,
+            "projectileType" : "avikanlargedronebody",
+            "projectileParameters" : {
+              "damageTeam" : { "type" : "enemy", "team" : 0 },
+			  "speed" : 10,
+			  "power" : 0.0
+            },
+            "aimDirection" : [0.2, 0.5],
+            "inaccuracy" : 0.0,
+            "fireOffset" : [0, 0]
+          }
+        }
+      ],
+
+      "concurrentActions" : [ ],
+
+      "concurrentHostileActions" : [ ]
+    },
+
+    "touchDamage" : {
+      "poly" : [ [2.26, 1.625],  [2.625, 1.26], [2.625, -1.26], [2.26, -1.625], [-2.26, -1.625], [-2.625, -1.26], [-2.625, 1.26], [-2.26, 1.625] ],
+      "damage" : 9,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "lash",
+      "knockback" : 20,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-4, -4, 4, 4],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [2.26, 1.625],  [2.625, 1.26], [2.625, -0.86], [2.26, -1.225], [-2.26, -1.225], [-2.625, -0.86], [-2.625, 1.26], [-2.26, 1.625] ],
+
+      "mass" : 1.0,
+      "walkSpeed" : 4,
+      "runSpeed" : 12,
+      "gravityEnabled" : false,
+
+      "airFriction" : 4,
+      "airForce" : 25,
+      "flySpeed" : 6
+    },
+
+    "bodyMaterialKind" : "robotic",
+
+    "knockoutTime" : 0.4,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "robotic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.4
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 12
+        },
+        "maxHealth" : {
+          "baseValue" : 250
+        },
+        "protection" : {
+          "baseValue" : 0.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+        "physicalResistance" : {
+          "baseValue" : 0.0
+        },
+        "fireResistance" : {
+          "baseValue" : 0.0
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "iceResistance" : {
+          "baseValue" : 0.0
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "electricResistance" : {
+          "baseValue" : -0.5
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "poisonResistance" : {
+          "baseValue" : 0.5
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "linerifleResistance" : {
+          "baseValue" : -0.5
+        },
+        "linerifleStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "centensianenergyResistance" : {
+          "baseValue" : 0.0
+        },
+        "centensianenergyStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "xanafianStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "bleedingImmunity" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -8],
+    "capturable" : true,
+    "captureHealthFraction" : 0.5,
+    "nametagColor" : [64, 200, 255],
+    "captureCollectables" : { "monsters" : "avikanlargedrone-captured" }
+  }
+}

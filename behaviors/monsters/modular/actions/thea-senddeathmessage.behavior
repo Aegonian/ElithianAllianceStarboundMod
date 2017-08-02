@@ -1,0 +1,48 @@
+{
+	//Brief explanation of what this behaviour does, both for myself and anyone interested enough to actually read this. This behaviour, once called from a monster's behaviour config, will send a message ("deathMessage") to all players in the same world as the monster. This is useful for quests, as a quest can listen for a specific message and complete the quest (or a step within a quest) once the player receives said message
+
+  "name": "thea-senddeathmessage",
+  "description": "",
+  "scripts": [
+    "/scripts/behavior.lua",
+	"/scripts/actions/world.lua"
+  ],
+  "parameters": {
+    "deathMessage": "thisValueMustBeSetInMonsterConfig" //There is no sensible default value, as this behaviour is used under very specific circumstances. This value MUST be set in the monster config, else you're going to send a useless message with a random name which is no good to anyone
+  },
+  "root": {
+    "title": "sequence",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "playersInWorld",
+        "type": "action",
+        "name": "playersInWorld",
+        "parameters": {},
+        "output": {
+          "list": "players"
+        }
+      },
+	  {
+        "title": "each",
+        "type": "decorator",
+        "name": "each",
+        "parameters": {
+          "list": {"key": "players"},
+          "type": {"value": "entity"}
+        },
+        "child": {
+          "title": "sendEntityMessage",
+          "type": "action",
+          "name": "sendEntityMessage",
+          "parameters": {
+			"entity": {"key": "eachItem"},
+			"message": {"value": "<deathMessage>"}
+          }
+        }
+	  }
+    ]
+  }
+}

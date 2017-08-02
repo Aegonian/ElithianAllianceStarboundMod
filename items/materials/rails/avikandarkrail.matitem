@@ -1,0 +1,11 @@
+{
+  "itemName" : "avikandarkrail",
+  "price" : 0,
+  "category" : "rail",
+  "rarity" : "Common",
+  "inventoryIcon" : "avikandarkrail.png",
+  "shortdescription" : "Dark Avikan Rail",
+  "description" : "A strong reinforced rail.",
+
+  "materialId" : 30201
+}

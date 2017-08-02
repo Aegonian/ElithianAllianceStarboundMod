@@ -1,0 +1,70 @@
+{
+  "type" : "ao-avikanwelder",
+  "baseType" : "ao-idle",
+
+  "npcname" : "Arthan",
+
+  "scriptConfig" : {
+    	
+	"offeredQuests" : [ "lostavikanarmring" ],
+	"turnInQuests" : [ "lostavikanarmring" ],
+  
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "Valyan as-Nadata can repair your vehicles.",
+			"Can I help you?",
+			"I'm a tad busy right now."
+		  ]
+		},
+
+        "avikan" : {
+          "default" : [
+            "Valyan as-Nadata can repair your vehicles.",
+			"Can I help you?",
+			"I'm a tad busy right now."
+          ],
+          "glitch" : [
+            "Valyan as-Nadata can repair your vehicles.",
+			"What is it, machine?",
+			"Hmm?"
+          ],
+          "avikan" : [
+            "Valyan as-Nadata can repair your vehicles.",
+			"Do you need anything, Captain?",
+			"Please excuse me, Captain. I have to get to work."
+          ],
+          "trink" : [
+            "Valyan as-Nadata can repair your vehicles.",
+			"What is it, machine?",
+			"Hmm?"
+          ],
+          "droden" : [
+            "Valyan as-Nadata can repair your vehicles.",
+			"I'm busy here, no time to talk.",
+			"Are you a repair frame? Or were you built for war?"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "avikan-welderhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "avikan-engineerchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "avikan-vanguardlegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

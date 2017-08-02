@@ -1,0 +1,28 @@
+{
+  "materialId" : 30063,
+  "materialName" : "trinksmoothpanel",
+  "particleColor" : [85, 85, 85, 255],
+  "itemDrop" : "trinksmoothpanel", 
+  "shortdescription" : "Smooth Trinkian Panel",
+  
+  "description" : "A simple metal panel.",
+  "glitchDescription" : "Statement. A metal panel.",
+  "floranDescription" : "Dark metal panelsss.",
+  "novakidDescription" : "A metal panel, plain an' simple.",
+  
+  "drodenDescription" : "Analysis complete. Metal plating.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "trinksmoothpanel.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 50
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name" : "sandslowdown-nodamage",
+  "blockingStat" : "quicksandImmunity",
+  "effectConfig" : {},
+  "defaultDuration" : 3.0,
+
+  "scripts" : [
+    "sandslowdown-nodamage.lua"
+  ],
+
+  "animationConfig" : "sandslowdown-nodamage.animation",
+
+  "label" : "Slowed",
+  "icon" : "/interface/statuses/sandslowdown.png"
+}

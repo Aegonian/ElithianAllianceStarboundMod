@@ -1,0 +1,21 @@
+{
+  "projectileName" : "avikanthrowablegrenade",
+  "physics" : "grenade",
+  "bounces" : 3,
+  "timeToLive" : 2.5,
+  "image" : "avikanthrowablegrenade.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "flippable" : true,
+  "emitters" : [],
+  "speed" : 20,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/avikanairstrikeexplosion/avikanairstrikeexplosion.config"
+    }
+  ],
+  "power" : 50,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

@@ -1,0 +1,10 @@
+{
+  "itemName" : "trinkmetaltier3",
+  "price" : 150,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "trinkmetaltier3.png",
+  "description" : "A hardened metal cube, easily stored and ready for crafting.",
+  "shortdescription" : "Hard Trinkian Metal",
+  "itemTags" : [ "reagent" ]
+}

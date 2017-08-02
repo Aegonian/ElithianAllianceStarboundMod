@@ -1,0 +1,24 @@
+{
+  "objectName" : "theaanimationtest",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 60,
+  "description" : "An animation test. Where did you get this?",
+  "shortdescription" : "Animation Test",
+  "race" : "avikan",
+
+  "inventoryIcon" : "theaanimationtesticon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "theaanimationtest.png:<color>.<frame>",
+	  
+      "imagePosition" : [0, 0],
+      "frames" : 8,
+      "animationCycle" : 0.8,
+
+      "spaceScan" : 0.1
+    }
+  ]
+}

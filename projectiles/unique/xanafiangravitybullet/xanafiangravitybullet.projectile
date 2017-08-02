@@ -1,0 +1,25 @@
+{
+  "projectileName" : "xanafiangravitybullet",
+  "image" : "xanafiangravitybullet.png",
+  "physics" : "laser",
+  "bounces" : 0,
+  "piercing" : false,
+  "animationCycle" : 0.25,
+  "frameNumber" : 4,
+  "emitters" : [ "xanafiangravitybullettrail", "xanafianbullettrail" ],
+  "damageKindImage" : "icon.png",
+  "lightColor" : [33, 0, 127],
+  "fullbright" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/xanafiangravityexplosion/xanafiangravityexplosion.config"
+    }
+  ],
+  "power" : 0.0,
+  "speed" : 40,
+  "timeToLive" : 2.5,
+  "damageType" : "NoDamage",
+  "damageKind" : "centensianenergy",
+  "hydrophobic" : false
+}

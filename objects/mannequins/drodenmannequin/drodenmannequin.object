@@ -1,0 +1,40 @@
+{
+  "objectName" : "drodenmannequin",
+  "colonyTags" : [],
+  "printable" : false,
+  "rarity" : "Common",
+
+  "category" : "other",
+  "price" : 500,
+  "description" : "Display and easily equip your Droden-themed armour sets!",
+  "shortdescription" : "Droden Mannequin",
+  "race" : "generic",
+
+  "inventoryIcon" : "drodenmannequinicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "drodenmannequin.png",
+      "imagePosition" : [-21, 0],
+
+      "spaces" : [[-1, 0], [-1, 1], [-1, 2], [-1, 3], [0, 0], [0, 1], [0, 2], [0, 3]],
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "animation" : "drodenmannequin.animation",
+  "animationPosition" : [-21, 0],
+
+  "health" : 1.5,
+
+  "objectType" : "container",
+
+  "openSounds" : [ "/sfx/objects/mannequin_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/mannequin_close.ogg" ],
+  "slotCount" : 4,
+  "uiConfig" : "/interface/scripted/mannequin/mannequingui.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600,
+
+  "scripts" : [ "/objects/mannequins/scripts/thea-mannequin.lua" ],
+  "scriptDelta" : 5
+}

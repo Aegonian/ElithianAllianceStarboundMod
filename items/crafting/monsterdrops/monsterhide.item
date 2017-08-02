@@ -1,0 +1,15 @@
+{
+  "itemName" : "monsterhide",
+  "price" : 10,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "monsterhide.png",
+  "description" : "The hide of some alien monster, cut using an Avikan hunting weapon.",
+  "shortdescription" : "Monster Hide",
+  "itemTags" : [ "reagent" ],
+  
+  "radioMessagesOnPickup" : [ "pickupmonsterhide" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 1
+}

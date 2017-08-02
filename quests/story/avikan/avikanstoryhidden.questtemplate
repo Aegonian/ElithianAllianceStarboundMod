@@ -1,0 +1,25 @@
+{
+  "id" : "avikanstoryhidden",
+  "mainQuest" : true,
+  "prerequisites" : [],
+  "title" : "Avikan Story - Initial Setup",
+  "text" : "This quest acts as a prerequisite to the Avikan storyline. You shouldn't be able to see this in your log.",
+  "completionText" : "This quest acts as a prerequisite to the Avikan storyline. You shouldn't be able to see this in your log.",
+  "moneyRange" : [0, 0],
+  "canBeAbandoned" : false,
+  "invisible" : true,
+  "logOnly" : true,
+  
+  "rewards" : [ ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/thea-hiddenstorystart.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "default" : "player"
+    },
+    "followUp" : "avikanstorystart",
+    "requireTurnIn" : false,
+    "conditions" : [ ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "kind" : "avikanlargedronedebris4",
+  "definition" : {
+    "type" : "textured",
+    "image" : "/particles/avikanlargedronedebris/avikanlargedronedebris4.png",
+    "position" : [0, 0],
+    "size" : 1.0,
+    "color" : [255, 255, 255, 255],
+    "fade" : 0,
+    "initialVelocity" : [0.0, 0.0],
+    "finalVelocity" : [0, -20],
+    "approach" : [0, 20],
+    "rotation" : 0,
+    "flippable" : true,
+    "angularVelocity" : 0,
+    "timeToLive" : 0.75,
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.5,
+    "layer" : "middle",
+	"variance" : {
+	  "initialVelocity" : [20, 20],
+	  "position" : [1.25, 1.25],
+	  "timeToLive" : 0.5,
+	  "size" : 0.2,
+	  "rotation" : 180,
+	  "angularVelocity" : 180
+	}
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "objectName" : "avikantapestry1",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 55,
+  "description" : "A leather tapestry. Common decoration for Avikan homes.",
+  "shortdescription" : "Long Avikan Tapestry",
+  "race" : "avikan",
+
+  "apexDescription" : "A leather tapestry. What creature was this made from?",
+  "avianDescription" : "A leather tapestry. Not very colourful.",
+  "floranDescription" : "Tapessstry remindsss Floran of home.",
+  "glitchDescription" : "Error. The animal from which this was made is not listed in my database.",
+  "humanDescription" : "A simple leather tapestry. Not very well crafted.",
+  "hylotlDescription" : "A primitive way to decorate one's home.",
+
+  "aegiDescription" : "The Avikan kill animals to use their skin as home decoration. Many Aegi don't approve.",
+  "avikanDescription" : "This skin once belonged to a great sandstalker from Kadavan. Now, it serves as a sad reminder of days long past.",
+  "erixianDescription" : "Leather tapestry would not last long on Heragon.",
+  "trinkDescription" : "The Avikan claim that this skin belonged to a sandstalker. I am unfamiliar with sandstalkers.",
+  "hymidDescription" : "An unusual choice of material for home decoration.",
+  "notixDescription" : "A crude leather tapestry.",
+  "jorgasianDescription" : "The Avikan do like their leather decorations.",
+  "centensDescription" : "Remarkable. The Avikan still decorate their homes with primitive tapestries.",
+  "dremetonDescription" : "This skin once belonged to a majestic creature. What a waste.",
+  "hyvonDescription" : "Unimpressive.",
+  "drodenDescription" : "Scan completed. Material: leather.",
+  
+  "inventoryIcon" : "avikantapestry1icon.png",
+  "orientations" : [
+    {
+      "image" : "avikantapestry1.png:<color>",
+	  
+      "imagePosition" : [-8, -16],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    },
+	{
+      "image" : "avikantapestry1.png:<color>",
+	  
+      "imagePosition" : [-8, -16],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ]
+}

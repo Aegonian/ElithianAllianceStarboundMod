@@ -1,0 +1,61 @@
+{
+  "objectName" : "aegishiplight",
+  "colonyTags" : ["aegi", "light"],
+  "rarity" : "Common",
+  "category" : "light",
+  "lightColor" : [230, 230, 230],
+  "price" : 60,
+  "description" : "A simple light strip.",
+  "shortdescription" : "Alliance Ship Light",
+  "race" : "aegi",
+
+  "apexDescription" : "A simple light often found on ships.",
+  "avianDescription" : "A vibrant light.",
+  "floranDescription" : "Floran dissslikess ship light. Light feelss unnatural...",
+  "glitchDescription" : "Impressed. This lighting fixture generates more light than heat.",
+  "humanDescription" : "A pretty basic light.",
+  "hylotlDescription" : "A neutral light. Always useful.",
+  "novakidDescription" : "This light is a lot brighter than I am. Wait, that didn't sound quite right...",
+
+  "aegiDescription" : "A bright, neutrally coloured light.",
+  "avikanDescription" : "A simple light.",
+  "erixianDescription" : "A decently bright light.",
+  "trinkDescription" : "Light. It isn't as efficient as it could be.",
+  "hymidDescription" : "A light made for use on spaceships.",
+  "notixDescription" : "A bright light.",
+  "jorgasianDescription" : "Lights like these are very cost-effective.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Light source detected.",
+
+  "inventoryIcon" : "aegishiplighticon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "aegishiplight.png:<color>.<frame>", "fullbright" : true }, { "image" : "aegishiplightlit.png:<color>.<frame>" } ],
+      "imagePosition" : [-8, 0],
+      
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/fluorescent_light_quiet.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+  
+  "animation" : "/objects/wired/light/lighttoggle.animation",
+  "animationParts" : {
+    "light" : "aegishiplight.png"
+  },
+  "animationPosition" : [-8, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : false,
+
+  "inputNodes" : [ [0, 0] ]
+  
+}

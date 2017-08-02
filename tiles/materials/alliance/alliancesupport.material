@@ -1,0 +1,28 @@
+{
+  "materialId" : 30076,
+  "materialName" : "alliancesupport",
+  "particleColor" : [97, 97, 97, 255],
+  "itemDrop" : "alliancesupport", 
+  "shortdescription" : "Alliance Support Beam",
+  
+  "description" : "Heavy structural support beams.",
+  "glitchDescription" : "Observation. This is likely a structural support beam.",
+  "floranDescription" : "Pillarss for ssupporting heavy thingss.",
+  "novakidDescription" : "Some sorta heavy support structure.",
+  
+  "drodenDescription" : "Analysis complete. Structural support beam.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderParameters" : {
+    "texture" : "alliancesupport.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 60
+  }
+}

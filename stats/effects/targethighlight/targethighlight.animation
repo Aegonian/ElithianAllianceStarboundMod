@@ -1,0 +1,50 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "target" : {
+        "default" : "start",
+        "states" : {
+          "start" : {
+            "frames" : 3,
+            "cycle" : 0.3,
+            "mode" : "transition",
+			"transition" : "idle"
+          },
+		  "idle" : {
+            "frames" : 1
+          }
+        }
+      }
+    },
+    "parts" : {
+      "target" : {
+        "properties" : {
+          "zLevel" : 0
+        },
+        "partStates" : {
+          "target" : {
+            "start" : {
+              "properties" : {
+                "image" : "targethighlight.png:start.<frame>",
+				"fullbright" : true
+              }
+            },
+			"idle" : {
+              "properties" : {
+                "image" : "targethighlight.png:idle.<frame>",
+				"fullbright" : true
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [75, 0, 0]
+    }
+  }
+}

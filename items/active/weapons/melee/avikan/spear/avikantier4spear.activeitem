@@ -1,0 +1,42 @@
+{
+  "itemName" : "avikantier4spear",
+  "price" : 900,
+  "level" : 4,
+  "maxStack" : 1,
+  "rarity" : "uncommon",
+  "description" : "A sharp spear made of high-quality monster bone.",
+  "shortdescription" : "Predator's Spear",
+  "tooltipKind" : "sword",
+  "category" : "spear",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spear","avikan"],
+
+  "inventoryIcon" : "avikantier4spear.png",
+
+  "animation" : "/items/active/weapons/melee/spear/spear.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "avikantier4spear.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_spear.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "spearstab",
+  "primaryAbility" : {
+    "fireTime" : 0.95,
+    "baseDps" : 10.5
+  },
+
+  "altAbilityType" : "flurry",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

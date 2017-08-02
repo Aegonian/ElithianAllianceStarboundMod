@@ -1,0 +1,76 @@
+{
+  "objectName" : "alliancelaptop",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A portable personal computer.",
+  "shortdescription" : "Alliance Laptop",
+  "race" : "aegi",
+  
+  "lightColor" : [60, 110, 120],
+
+  "apexDescription" : "A personal computer. The Miniknog might be monitoring it.",
+  "avianDescription" : "A small computer, easy to transport.",
+  "floranDescription" : "Floran doesss not know how to use computer...",
+  "glitchDescription" : "Observation. A personal computer.",
+  "humanDescription" : "A laptop. Whoever used it forgot to erase their browsing history...",
+  "hylotlDescription" : "A small personal computer.",
+  "novakidDescription" : "Never could get the hang of those keyboards...",
+
+  "aegiDescription" : "A standard model laptop. Every Union citizen receives one of these.",
+  "avikanDescription" : "Some kind of computer, but unusually small.",
+  "erixianDescription" : "An Alliance laptop.",
+  "trinkDescription" : "The battery in this laptop is quite efficient.",
+  "hymidDescription" : "I could browse the Alliance Network on this computer.",
+  "notixDescription" : "A laptop. Any Aeginian household has at least one of these.",
+  "jorgasianDescription" : "A simple but functional laptop.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Alien interface detected. Translating...",
+
+  "inventoryIcon" : "alliancelaptopicon.png",
+  "orientations" : [
+    {
+      "image" : "alliancelaptop.png:<frame>",
+      "imagePosition" : [-8, 0],
+      "animationPosition" : [-8, 0],
+      "animationCycle" : 0.5,
+      "direction" : "right",
+
+      "animationParts" : {
+        "light" : "alliancelaptop.png"
+      },
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+	{
+      "image" : "alliancelaptop.png:<frame>",
+      "imagePosition" : [-8, 0],
+      "animationPosition" : [-8, 0],
+      "animationCycle" : 0.5,
+      "direction" : "left",
+	  "flipImages" : true,
+
+      "animationParts" : {
+        "light" : "alliancelaptop.png"
+      },
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "animation" : "/objects/wired/light/lighttoggle.animation",
+  "animationParts" : {
+    "light" : "alliancelaptop.png"
+  },
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+
+  "interactive" : true
+}

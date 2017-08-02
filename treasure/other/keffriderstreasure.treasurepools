@@ -1,0 +1,12 @@
+{
+	//SPECIFIC QUEST-RELATED POOL
+  "keffriderstreasure" : [
+    [0, {
+      "fill" : [
+        {"item" : [ "grandmonsterbone", 1 ]},
+		{"pool" : "avikanhunting"}
+      ]
+    } ]
+  ]
+}
+

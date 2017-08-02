@@ -1,0 +1,26 @@
+{
+  "id" : "aegiambassadornotes",
+  "species" : "aegi",
+  "title" : "Ambassador's Log",
+  "description" : "Your notes on your current assignment.",
+  "icon" : "aegifile1.png",
+  "contentPages" : [
+
+"JOURNAL ENTRY 24
+
+The Terrene Protectorate was only discovered a few years ago, but the leaders of the Elithian Alliance almost immediately decided to initiate friendly communication with the organization. Like the other Aegi, Admiral Lyiin was incredibly excited to learn that there were still Humans on Earth, and I shared their excitement!",
+
+"When the Elithian leadership started recruiting ambassadors to send to the Protectorate, I was amongst the first to sign up. A chance to see our ancestral homeplanet, and meet the ancient race that we ourselves descended from? It was the opportunity of a lifetime!",
+
+"My assignment was to enroll in the Protectorate training program, and so become one of the first Aeginian Protectors. I would also act as an ambassador for the Aeginian people, the Union, and of course, the Alliance as a whole.",
+
+"As I'm nearing the end of my training, I am certain that joining the Protectorate was the best decision I could have made. I have learned so much about the Humans, and the other races of the Protectorate as well. Trade routes between the Alliance and the Protectorate are being set up, and with all the other treaties being written and signed, it looks like we all have a bright future ahead of us!",
+
+"After my graduation as a Protector, I will return to Elithia for some time: the Elithian leaders will want a full report of my time here. I'll miss the Protectorate, but it'll be good to be home again."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "projectileName" : "theamininglaserimpact",
+  "image" : "theamininglaserimpact.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 1,
+  "timeToLive" : 0.001,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/theamininglaserimpact/theamininglaserimpact.config"
+    }
+  ],
+  "speed" : 0,
+  "statusEffects" : [ ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

@@ -1,0 +1,21 @@
+{
+  "projectileName" : "trinkelectricwave",
+  "image" : "trinkelectricwave.png",
+  "animationCycle" : 0.25,
+  "animationLoops" : true,
+  "timeToLive" : 0.25,
+  "frameNumber" : 5,
+  "power" : 50,
+  "speed" : 0,
+  "orientationLocked" : true,
+  "piercing" : true,
+  "flippable" : true,
+  "knockback" : 20,
+  "knockbackDirectional" : true,
+  "fullbright" : true,
+  "damagePoly" : [ [-4, 0], [4, 0], [4, -11], [-4, -11] ],
+  "damageKind" : "electricbarrier",
+  "statusEffects" : [
+    "electrified"
+  ]
+}

@@ -1,0 +1,89 @@
+[
+  //LINERIFLE
+  { "op" : "add",
+	"path" : "/linerifle",
+	"value" : {
+	  "resistanceStat" : "linerifleResistance",
+	  "damageNumberParticles" : {
+		"hit" : "linerifledamagenumber",
+		"stronghit" : "linerifledamagenumberstrong",
+		"weakhit" : "linerifledamagenumberweak",
+		"shieldhit" : "linerifledamagenumber",
+		"kill" : "linerifledamagenumber"
+	  }
+	}
+  },
+  { "op" : "add",
+	"path" : "/violatedlinerifle",
+	"value" : {
+	  "resistanceStat" : "linerifleResistance",
+	  "damageNumberParticles" : {
+		"hit" : "violatedlinerifledamagenumber",
+		"stronghit" : "violatedlinerifledamagenumberstrong",
+		"weakhit" : "violatedlinerifledamagenumberweak",
+		"shieldhit" : "violatedlinerifledamagenumber",
+		"kill" : "violatedlinerifledamagenumber"
+	  }
+	}
+  },
+  
+  //CENTENSIAN ENERGY
+  { "op" : "add",
+	"path" : "/centensianenergy",
+	"value" : {
+	  "resistanceStat" : "centensianenergyResistance",
+	  "damageNumberParticles" : {
+		"hit" : "centensiandamagenumber",
+		"stronghit" : "centensiandamagenumberstrong",
+		"weakhit" : "centensiandamagenumberweak",
+		"shieldhit" : "centensiandamagenumber",
+		"kill" : "centensiandamagenumber"
+	  }
+	}
+  },
+  
+  //XANAFIAN
+  { "op" : "add",
+	"path" : "/xanafian",
+	"value" : {
+	  "resistanceStat" : "xanafianResistance",
+	  "damageNumberParticles" : {
+		"hit" : "xanafiandamagenumber",
+		"stronghit" : "xanafiandamagenumberstrong",
+		"weakhit" : "xanafiandamagenumberweak",
+		"shieldhit" : "xanafiandamagenumber",
+		"kill" : "xanafiandamagenumber"
+	  }
+	}
+  },
+  
+  //JUMPWEAPON
+  { "op" : "add",
+	"path" : "/jumpweapon",
+	"value" : {
+	  "resistanceStat" : "fireResistance",
+	  "damageNumberParticles" : {
+		"hit" : "jumpweapondamagenumber",
+		"stronghit" : "jumpweapondamagenumberstrong",
+		"weakhit" : "jumpweapondamagenumberweak",
+		"shieldhit" : "jumpweapondamagenumber",
+		"kill" : "jumpweapondamagenumber"
+	  }
+	}
+  },
+  
+  //AVIKAN HUNTING
+  { "op" : "add",
+	"path" : "/avikanhunting",
+	"value" : {
+	  "resistanceStat" : "physicalResistance",
+	  "damageNumberParticles" : {
+		"hit" : "avikanhuntingdamagenumber",
+		"stronghit" : "avikanhuntingdamagenumberstrong",
+		"weakhit" : "avikanhuntingdamagenumberweak",
+		"shieldhit" : "avikanhuntingdamagenumber",
+		"kill" : "avikanhuntingdamagenumber"
+	  }
+	}
+  }
+]

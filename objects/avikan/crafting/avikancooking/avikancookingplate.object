@@ -1,0 +1,108 @@
+{
+  "objectName" : "avikancookingplate",
+  "colonyTags" : ["avikan", "cooking"],
+  "printable" : false,
+  "price" : 100,
+  "rarity" : "Uncommon",
+  "category" : "crafting",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/craftingfood.config",
+	"paneLayoutOverride" : {
+	  "windowtitle" : {
+		"title" : " Cooking Plate"
+	  }
+	},
+    "filter" : [ "craftingfood" ]
+  },
+  "description" : "Used to prepare various food items.",
+  "shortdescription" : "^orange;Avikan Cooking Plate^white;",
+  "race" : "avikan",
+
+  "apexDescription" : "A bone plate and some fire. I guess that'll do for cooking...",
+  "avianDescription" : "I could prepare a good meal here.",
+  "floranDescription" : "Floran prepare food with bare handsss. Fire only makesss food tasste better.",
+  "glitchDescription" : "Inspired. I can prepare great dishes using this cooking plate!",
+  "humanDescription" : "A pretty basic setup, but it's enough to prepare a good variety of dishes.",
+  "hylotlDescription" : "Not the most graceful solution, but this plate should still suffice for cooking.",
+  "novakidDescription" : "I could cook up a storm on this 'ere thing.",
+
+  "aegiDescription" : "Many would call such a cooking plate priminitive, but I can still prepare plenty of food here.",
+  "avikanDescription" : "Cooking in the style of my nomadic ancestors. They would be proud.",
+  "erixianDescription" : "I could go for a meal - let's prepare some food!",
+  "trinkDescription" : "A very basic cooking solution, but I cannot deny its effectiveness.",
+  "hymidDescription" : "I'm sure I can cook up a good meal here.",
+  "notixDescription" : "I imagine cooking food would be a lot easier if one had sight.",
+  "jorgasianDescription" : "A plate for cooking. Let's use it!",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected cooking plate. This unit can refuel using organic food.",
+  
+  "lightColor" : [179, 149, 107],
+
+  "flickerPeriod" : 0.3,
+  "flickerMinIntensity" : 0.95,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.075,
+  "flickerIntensityVariance" : 0.025,
+
+  "particleEmitter" : {
+    "emissionRate" : 1.0,
+    "emissionVariance" : 0.5,
+
+    "particle" : {
+      "type" : "ember",
+      "position" : [1.8, 0.3],
+      "size" : 1.0,
+      "color" : [255, 100, 0, 255],
+      "light" : [150, 50, 50],
+      "fade" : 0.9,
+      "initialVelocity" : [0.0, 5.0],
+      "finalVelocity" : [0.0, 3.0],
+      "approach" : [0, 20],
+      "timeToLive" : 2,
+      "layer" : "middle"
+    },
+
+    "particleVariance" : {
+      "initialVelocity" : [0.5, 2.0],
+      "position" : [0.4, 0]
+    }
+  },
+  
+  "inventoryIcon" : "avikancookingplateicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "avikancookingplate.png:<color>.<frame>", "fullbright" : true }, { "image" : "avikancookingplatelit.png:<color>.<frame>" } ],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "imagePosition" : [0, 0],
+      "frames" : 4,
+      "animationCycle" : 0.5,
+
+      "spaces" : [ 
+	    [0, 1], [1, 1], [2, 1], [3, 1],
+		[0, 0], [1, 0], [2, 0], [3, 0]
+	  ],
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "avikancookingplate.png:<color>.<frame>", "fullbright" : true }, { "image" : "avikancookingplatelit.png:<color>.<frame>" } ],
+      "direction" : "right",
+
+      "imagePosition" : [0, 0],
+      "frames" : 4,
+      "animationCycle" : 0.5,
+
+      "spaces" : [ 
+	    [0, 1], [1, 1], [2, 1], [3, 1],
+		[0, 0], [1, 0], [2, 0], [3, 0]
+	  ],
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "npcToy" : {}
+}

@@ -1,0 +1,120 @@
+{
+  "name" : "greatsandstorm",
+  "icon" : "/interface/cockpit/weather/greatsandstorm.png",
+
+  "particles" : [
+    {
+
+      "density" : 0.05,
+      "autoRotate" : true,
+
+      "particle" : {
+        "type" : "textured",
+        "image" : "/particles/sandcloud/1.png",
+        "velocity" : [0, -2],
+        "approach" : [15, 15],
+        "angularVelocity" : 0,
+        "timeToLive" : 20,
+        "collidesForeground" : true,
+        "collidesLiquid" : true,
+        "ignoreWind" : false
+      }
+    },
+	{
+
+      "density" : 0.05,
+      "autoRotate" : true,
+
+      "particle" : {
+        "type" : "textured",
+        "image" : "/particles/sandcloud/1.png",
+        "velocity" : [-1, -2],
+        "approach" : [15, 15],
+        "angularVelocity" : 0,
+        "timeToLive" : 20,
+        "collidesForeground" : true,
+        "collidesLiquid" : true,
+        "ignoreWind" : false
+      }
+    },
+    {
+      "density" : 0.5,
+      "particle" : {
+        "type" : "textured",
+        "image" : "/particles/sand/1.png",
+        "velocity" : [0, -2],
+        "angularVelocity" : 180,
+        "timeToLive" : 20,
+        "collidesForeground" : true,
+        "collidesLiquid" : true,
+        "ignoreWind" : false
+      }
+    },
+    {
+      "density" : 0.5,
+      "particle" : {
+        "type" : "textured",
+        "image" : "/particles/sand/2.png",
+        "velocity" : [0, -1],
+        "angularVelocity" : 180,
+        "timeToLive" : 20,
+        "collidesForeground" : true,
+        "collidesLiquid" : true,
+        "ignoreWind" : false
+      }
+    },
+    {
+      "density" : 0.5,
+      "particle" : {
+        "type" : "textured",
+        "image" : "/particles/sand/3.png",
+        "velocity" : [0, -2],
+        "angularVelocity" : 180,
+        "timeToLive" : 20,
+        "collidesForeground" : true,
+        "collidesLiquid" : true,
+        "ignoreWind" : false
+      }
+    }
+  ],
+  
+  "projectiles" : [
+    {
+      "projectile" : "sandstormstone1",
+      "parameters" : {
+        "power" : 1
+      },
+      "velocity" : [0, -50],
+      "ratePerX" : 0.1,
+      "spawnAboveRegion" : 30,
+      "spawnHorizontalPad" : 30,
+      "windAffectAmount" : 1.0
+    },
+	{
+      "projectile" : "sandstormstone2",
+      "parameters" : {
+        "power" : 1
+      },
+      "velocity" : [0, -50],
+      "ratePerX" : 0.1,
+      "spawnAboveRegion" : 30,
+      "spawnHorizontalPad" : 30,
+      "windAffectAmount" : 1.0
+    },
+	{
+      "projectile" : "sandstormstone3",
+      "parameters" : {
+        "power" : 1
+      },
+      "velocity" : [0, -50],
+      "ratePerX" : 0.1,
+      "spawnAboveRegion" : 30,
+      "spawnHorizontalPad" : 30,
+      "windAffectAmount" : 1.0
+    }
+  ],
+  
+  "duration" : [400, 800],
+  "maximumWind" : 80.0,
+  "weatherNoises" : [ "/sfx/weather/sandstorm.ogg" ]
+}

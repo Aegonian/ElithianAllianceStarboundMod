@@ -1,0 +1,12 @@
+{
+  "itemName" : "avikanborderlessfabric",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "avikanborderlessfabric.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "shortdescription" : "Borderless Avikan Fabric",
+  "description" : "Fabric tapestry for wall decoration and insulation.",
+
+  "materialId" : 30095
+}

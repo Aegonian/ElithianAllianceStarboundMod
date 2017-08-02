@@ -1,0 +1,28 @@
+{
+  "materialId" : 30060,
+  "materialName" : "centensreinforcement",
+  "particleColor" : [56, 56, 56, 255],
+  "itemDrop" : "centensreinforcement",
+  "shortdescription" : "Centensian Reinforcement",
+  
+  "description" : "A dark metal found inside Centensian structures.",
+  "glitchDescription" : "Observation. This metal is often found inside ancient metallic structures.",
+  "floranDescription" : "Dark metalsss insside old homesss.",
+  "novakidDescription" : "This 'ere metal if oft found sindie those metal structures of old.",
+  
+  "drodenDescription" : "Analysis complete. Centensian metal detected.",
+  
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 6,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "centensreinforcement.png",
+    "variants" : 5,
+    "lightTransparent" : true,
+    "multiColored" : false,
+    "occludesBelow" : false,
+    "zLevel" : 0
+  }
+}

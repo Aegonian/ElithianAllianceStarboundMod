@@ -1,0 +1,28 @@
+{
+  "materialId" : 30077,
+  "materialName" : "allianceglass",
+  "particleColor" : [237, 254, 255, 255],
+  "itemDrop" : "allianceglass", 
+  "shortdescription" : "Alliance Glass",
+  
+  "description" : "Triple-pane glass, perfectly insulated.",
+  "glitchDescription" : "Observation. This glass consists of three seperate panes.",
+  "floranDescription" : "Glasss.",
+  "novakidDescription" : "This glass is clean as a new revolver.",
+  
+  "drodenDescription" : "Analysis complete. Multi-pane glass.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 2,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "allianceglass.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 10
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "metadata" : {
+    "name" : "avikanencounter",
+    "species" : "avikan",
+    "rules" : [
+    ],
+	
+    "anchor" : [ "avk-cargodrop", "avk-cargodrop2", "avk-largecamp", "avk-largecamp2", "avk-smallcamp", "avk-smallcamp2", "avk-smallcamp3", "avk-gadhurherder", "avk-largedrone" ],
+
+    "maxRadius" : 1000000,
+    "maxParts" : 5,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "avk-cargodrop",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "avk-cargodrop.json" ]
+    },
+	{
+      "name" : "avk-cargodrop2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "avk-cargodrop2.json" ]
+    },
+	{
+      "name" : "avk-largecamp",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "avk-largecamp.json" ]
+    },
+	{
+      "name" : "avk-largecamp2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "avk-largecamp2.json" ]
+    },
+	{
+      "name" : "avk-smallcamp",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "avk-smallcamp.json" ]
+    },
+	{
+      "name" : "avk-smallcamp2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "avk-smallcamp2.json" ]
+    },
+	{
+      "name" : "avk-smallcamp3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "avk-smallcamp3.json" ]
+    },
+	{
+      "name" : "avk-gadhurherder",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "avk-gadhurherder.json" ]
+    },
+	{
+      "name" : "avk-largedrone",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "avk-largedrone.json" ]
+    }
+  ]
+}

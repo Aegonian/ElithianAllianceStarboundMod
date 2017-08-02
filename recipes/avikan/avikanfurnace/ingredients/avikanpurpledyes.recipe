@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "bolbohn", "count" : 1 },
+	{ "item" : "liquidoil", "count" : 2 }
+  ],
+  "output" : {
+    "item" : "avikanpurpledyes",
+    "count" : 1
+  },
+  "duration" : 0.15,
+  "groups" : [ "avikanfurnace", "ingredients", "all" ]
+}

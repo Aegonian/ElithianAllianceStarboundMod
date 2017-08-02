@@ -1,0 +1,23 @@
+{
+  "name" : "thea-forceshield3",
+  "effectConfig" : {
+    "shieldHealth" : 25,
+	"rechargeTime" : 6,
+	"cooldownTime" : 1.8,
+	"repelDuration" : 1.0,
+	"projectileParameters" : {
+	  "power" : 0,
+	  "knockback" : 60
+	}
+  },
+  "defaultDuration" : 0.5,
+
+  "scripts" : [
+    "thea-forceshield.lua"
+  ],
+
+  "animationConfig" : "thea-forceshield.animation",
+  
+  "label" : "Force Shield",
+  "icon" : "/interface/statuses/thea-forceshield.png"
+}

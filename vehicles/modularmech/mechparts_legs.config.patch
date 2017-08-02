@@ -1,0 +1,25 @@
+[
+  {
+    "op" : "add",
+    "path" : "/avikan",
+    "value" : {
+	  "stats" : {
+		"speed" : 6,
+		"jump" : 6
+	  },
+	  "partParameters" : {},
+	  "partImages" : {
+		"backLeg" : "leg/avikan.png",
+		"backLegFullbright" : "leg/avikan_fullbright.png",
+		"backLegJoint" : "legjoint/avikan_back.png",
+		"frontLeg" : "leg/avikan.png",
+		"frontLegFullbright" : "leg/avikan_fullbright.png",
+		"frontLegJoint" : "legjoint/avikan_front.png",
+		"hips" : "hips/avikan.png"
+	  },
+	  "defaultPrimaryColors" : ["E9D3AB", "D7B889", "A88A5F", "6B4E3E"],	//From LIGHT to DARK
+	  "defaultSecondaryColors" : ["7F7F7F", "616161", "474747", "333333"],	//From LIGHT to DARK
+	  "animationCustom" : {}
+	}
+  }
+]

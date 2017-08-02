@@ -1,0 +1,29 @@
+{
+  "materialId" : 39999,
+  "materialName" : "theagreenscreenplatform",
+  "collisionKind" : "platform",
+  "transparent" : true,
+  "itemDrop" : "theagreenscreenplatform",  
+  "shortdescription" : "Green Screen Platform",
+  "description" : "Where did you get this?",
+  
+  "glitchDescription" : "Informed. This content isn't generally available in this mod.",
+  "floranDescription" : "Floran knowsss you used Admin Mode to get thiss!",
+  "novakidDescription" : "Ey there! Where'd ya get this now?",
+  
+  "drodenDescription" : "Analysis complete. You're not supposed to have access to this content.",
+  
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "category" : "Supports",
+  
+  "renderTemplate" : "/tiles/platformtemplate.config",
+  "renderParameters" : {
+    "texture" : "theagreenscreenplatform.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 0,
+    "platform" : true
+  }
+}

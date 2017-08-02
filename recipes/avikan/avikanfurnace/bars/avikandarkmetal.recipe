@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "ironore", "count" : 2 },
+	{ "item" : "coalore", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "avikandarkmetal",
+    "count" : 1
+  },
+  "duration" : 0.15,
+  "groups" : [ "avikanfurnace", "bars", "all" ]
+}

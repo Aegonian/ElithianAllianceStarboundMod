@@ -1,0 +1,48 @@
+{
+  "objectName" : "sandcrawleregg",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 20,
+  "description" : "The leathery egg of a Kadavan Sandcrawler.",
+  "shortdescription" : "Sandcrawler Egg",
+  "race" : "avikan",
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 2,
+
+  "apexDescription" : "An alien egg. It feels leathery.",
+  "avianDescription" : "This is a rather odd egg...",
+  "floranDescription" : "Eggsss for eating?",
+  "glitchDescription" : "Wonder. What sort of creature might spawn from this egg?",
+  "humanDescription" : "An alien egg. It doesn't look very edible.",
+  "hylotlDescription" : "The spawn of new life.",
+
+  "aegiDescription" : "The egg of a worm-like creature from Kadavan.",
+  "avikanDescription" : "A sandcrawlers's egg. Perhaps I should hatch it and raise it as my own.",
+  "erixianDescription" : "An egg of sorts.",
+  "trinkDescription" : "A sandcrawler egg. Better not anger the parent.",
+  "hymidDescription" : "A dry, leathery egg.",
+  "notixDescription" : "An egg. It'll spawn a Kadavan Sandcrawler in a few weeks.",
+  "jorgasianDescription" : "A strange egg, belonging to some strange creature.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Sandcrawler egg. Please handle with care.",
+
+  "inventoryIcon" : "sandcrawlereggicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "sandcrawleregg.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

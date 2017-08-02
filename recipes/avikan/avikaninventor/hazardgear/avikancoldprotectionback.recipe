@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "avikanradiationprotectionback", "count" : 1 },
+    { "item" : "avikanmetal", "count" : 6 },
+    { "item" : "monsterplate", "count" : 6 },
+    { "item" : "avikanbattery", "count" : 4 },
+    { "item" : "avikanmacrochip", "count" : 1 },
+    { "item" : "scorchedcore", "count" : 1 }
+  ],
+  "output" : { "item" : "avikancoldprotectionback", "count" : 1 },
+  "groups" : [ "avikaninventor", "hazardgear", "all" ]
+}

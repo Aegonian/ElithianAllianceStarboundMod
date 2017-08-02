@@ -1,0 +1,11 @@
+{
+  "itemName" : "activesundrainercore",
+  "price" : 1000,
+  "rarity" : "Essential",
+  "category" : "Quest Item",
+  "tooltipKind" : "thea-unique",
+  "inventoryIcon" : "activesundrainercore.png",
+  "description" : "The core of an ancient weapon. Strong energies radiate from the mechanism.",
+  "shortdescription" : "^orange;Reactivated Weapon Core^white;",
+  "itemTags" : [ "questitem" ]
+}

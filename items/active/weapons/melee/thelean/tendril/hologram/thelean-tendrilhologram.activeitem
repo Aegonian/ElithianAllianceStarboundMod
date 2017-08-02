@@ -1,0 +1,65 @@
+{
+  "itemName" : "thelean-tendrilhologram",
+  "level" : 1,
+  "price" : 0,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A holographic representation of a Thelean tendril.",
+  "shortdescription" : "Thelean Tendril Hologram",
+  "tooltipKind" : "base",
+  "category" : "Hologram",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","melee","thelean","tendril"],
+
+  "inventoryIcon" : "thelean-tendrilhologramicon.png",
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "thelean-tendrilhologram.png",
+    "barrel" : "",
+    "muzzleFlash" : ""
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ]
+    }
+  },
+  "baseOffset" : [0.0, 0.0],
+  "muzzleOffset" : [0.0, 0.0],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+  
+  //Makes the weapon draw in front of the arm
+  "handGrip" : "wrap",
+
+  "primaryAbilityType" : "tentaclegun",
+  "primaryAbility" : {
+    "chain" : {
+      "taper" : 0.5,
+      "segmentImage" : "/items/active/weapons/melee/thelean/tendril/hologram/tendrilsegment.png",
+      "endSegmentImage" : "/items/active/weapons/melee/thelean/tendril/hologram/tendrilend.png",
+      "segmentSize" : 1.0
+    },
+
+    "guideProjectiles" : true,
+    "maxLength" : 15,
+
+    "baseDamage" : 0.0,
+    "fireTime" : 0.2,
+    "maxProjectiles" : 2,
+    "energyUsage" : 40,
+    "inaccuracy" : 0.01,
+
+    "projectileType" : "theleantendrilhologram",
+    "projectileParameters" : {
+      "knockback" : 0,
+      "speed" : 40,
+      "timeToLive" : 3
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

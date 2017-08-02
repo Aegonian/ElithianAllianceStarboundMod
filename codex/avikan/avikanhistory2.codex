@@ -1,0 +1,20 @@
+{
+  "id" : "avikanhistory2",
+  "species" : "avikan",
+  "title" : "Avikan History - Part 2",
+  "description" : "An account of Avikan history, by Izyati as-Kaladan.",
+  "icon" : "avikanhistory2.png",
+  "contentPages" : [
+
+    "The Khoden of Vas Vha'leih prospered in their ancient city, and took to studying the many artefacts left behind by the Old Ones. This is where the Rhaiod, the religion of Rhadeis, is believed to have originated, but there are entire volumes written on that subject. Most of our modern technologies are based on the Old Ones' artefacts found in places like Vas Vha'leih, and the quick development of our people is thanks to what they left behind.",
+
+    "For a long time, the Khoden of Vas Vha'leih lived in peace and prosperity, but this would not last. Around 2150 BF, the population reached a critical level. Supplies fell short and space ran out, and the people began to riot. The result was the Vha'leihen War, the first large civil war in Avikan history. It ravaged the Khoden population and destroyed much of the city. In the end, the Khoden were forced to abandon the city in a great exodus.",
+    
+    "This is where the Khoden split up. Many groups travelled to distant mountain ranges and built new homes there, while other groups returned to the desert to reassume a nomadic way of life. These last groups joined up with the small groups of nomads that never knew of Vas Vha'leih, and became known as the Nomen, the nomads."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

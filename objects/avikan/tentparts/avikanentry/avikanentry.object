@@ -1,0 +1,59 @@
+{
+  "objectName" : "avikanentry",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 50,
+  "description" : "An awning made of leather, used to protect the entrance of Avikan homes.",
+  "shortdescription" : "Avikan Awning",
+  "race" : "avikan",
+
+  "apexDescription" : "A leather awning. Not very well crafted.",
+  "avianDescription" : "A bland leather awning.",
+  "floranDescription" : "Leather makesss Floran want to huntsss.",
+  "glitchDescription" : "Observation. A primitive leather awning.",
+  "humanDescription" : "A leather awning? How primitive.",
+  "hylotlDescription" : "A primitive leather awning.",
+
+  "aegiDescription" : "A simple leather awning. Provides good protection against desert winds.",
+  "avikanDescription" : "A basic but functional leather awning, a vital part of any tent.",
+  "erixianDescription" : "A crude leather awning.",
+  "trinkDescription" : "A leather awning.",
+  "hymidDescription" : "A leather awning? A primitive way to protect one's home.",
+  "notixDescription" : "A simple leather awning.",
+  "jorgasianDescription" : "Leather is the Avikan material of choice.",
+  "centensDescription" : "Fascinating. The incredibly advanced Avikan still use such primitive structures.",
+  "dremetonDescription" : "A leather awning. What it lacks in decorational value, it makes up for in functionality.",
+  "hyvonDescription" : "An unimpressive leather awning.",
+  "drodenDescription" : "Leather awning. Provides protection against desert winds.",
+
+  "inventoryIcon" : "avikanentryicon.png",
+  "orientations" : [
+    {
+      "image" : "avikanentry.png:<color>",
+
+      "imagePosition" : [-40, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform",
+      "flipImages" : true,
+      "direction" : "right"
+    },
+    {
+      "image" : "avikanentry.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform",
+      "direction" : "left"
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "body" : {
+        "priority" : 0,
+        "default" : "idle",
+        "states" : {
+		  "idle" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "loop"
+          },
+          "firewindup" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "transition",
+            "transition" : "winduploop"
+          },
+          "winduploop" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "loop",
+            "properties" : {
+              "persistentSound" : "/sfx/melee/charge_full_hold1.ogg"
+            }
+          },
+          "fire" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+		  "invisible" : {}
+        }
+      },
+	  "damage" : {
+        "priority" : 0,
+        "default" : "undamaged",
+        "states" : {
+          "undamaged" : {},
+          "damaged" : {},
+          "wrecked" : {},
+          "invisible" : {}
+        }
+      },
+	  "warp" : {
+        "priority" : 0,
+        "default" : "invisible",
+        "states" : {
+          "invisible" : {},
+          "warpInPart1" : {
+            "frames" : 4,  
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "warpInPart2"
+		  },
+          "warpInPart2" : {
+            "frames" : 4,  
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "invisible"
+		  },
+          "warpOutPart1" : {
+            "frames" : 4,  
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "warpOutPart2"
+		  },
+          "warpOutPart2" : {
+            "frames" : 4,  
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "invisible"
+		  }
+        }
+      }
+    },
+
+    "parts" : {
+      "body" : {
+        "properties" : {
+		  "zLevel" : 0,
+          "transformationGroups" : [ "body" ],
+          "offset" : [0.0, -0.25]
+        },
+        "partStates" : {
+          "body" : {
+            "idle" : {
+              "properties" : {
+                "image" : "controllerdrahl.png:fly.<frame>"
+              }
+            },
+            "firewindup" : {
+              "properties" : {
+                "image" : "controllerdrahl.png:windup.<frame>"
+              }
+            },
+            "winduploop" : {
+              "properties" : {
+                "image" : "controllerdrahl.png:winduploop.<frame>"
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "controllerdrahl.png:fire.<frame>"
+              }
+            },
+            "invisisble" : {
+              "properties" : {
+                "image" : ""
+              }
+            }
+          }
+        }
+      },
+	  "lights" : {
+        "properties" : {
+		  "zLevel" : 1,
+          "transformationGroups" : [ "body" ],
+		  "fullbright" : true,
+          "offset" : [0.0, -0.25]
+        },
+        "partStates" : {
+          "body" : {
+            "idle" : {
+              "properties" : {
+                "image" : "controllerdrahllights.png:fly.<frame>"
+              }
+            },
+            "firewindup" : {
+              "properties" : {
+                "image" : "controllerdrahllights.png:windup.<frame>"
+              }
+            },
+            "winduploop" : {
+              "properties" : {
+                "image" : "controllerdrahllights.png:winduploop.<frame>"
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "controllerdrahllights.png:fire.<frame>"
+              }
+            },
+            "invisisble" : {
+              "properties" : {
+                "image" : ""
+              }
+            }
+          }
+        }
+      },
+	  "damage" : {
+        "properties" : {
+		  "zLevel" : 2,
+          "transformationGroups" : [ "body" ],
+          "offset" : [0.0, -0.25]
+        },
+        "partStates" : {
+          "damage" : {
+            "undamaged" : {
+              "properties" : {
+                "image" : "controllerdrahldamage.png:undamaged"
+              }
+            },
+            "damaged" : {
+              "properties" : {
+                "image" : "controllerdrahldamage.png:damaged"
+              }
+            },
+            "wrecked" : {
+              "properties" : {
+                "image" : "controllerdrahldamage.png:wrecked"
+              }
+            }
+          }
+        }
+      },
+	  "warp" : {
+        "properties" : {
+		  "zLevel" : 3,
+          "transformationGroups" : [ "body" ],
+		  "fullbright" : true,
+          "offset" : [0.0, -0.25]
+        },
+        "partStates" : {
+          "warp" : {
+            "invisible" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "warpInPart1" : {
+              "properties" : {
+                "image" : "controlldrahlwarp.png:warpInPart1.<frame>"
+              }
+            },
+            "warpInPart2" : {
+              "properties" : {
+                "image" : "controlldrahlwarp.png:warpInPart2.<frame>"
+              }
+            },
+            "warpOutPart1" : {
+              "properties" : {
+                "image" : "controlldrahlwarp.png:warpOutPart1.<frame>"
+              }
+            },
+            "warpOutPart2" : {
+              "properties" : {
+                "image" : "controlldrahlwarp.png:warpOutPart2.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "body" : { "interpolated" : true }
+  },
+  
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [0, 95, 150],
+      "pointLight" : true
+    }
+  },
+
+  "particleEmitters" : {
+    "explosion" : {
+      "transformationGroups" : ["body"],
+      "offsetRegion" : [-0.5, 0.5, -0.5, 0.5],
+      "particles" : [
+        { "particle" : "electricswoosh1" },
+        { "particle" : "electricswoosh2" },
+        { "particle" : "electricswoosh1" },
+        { "particle" : "electricswoosh2" }
+      ]
+    },
+	"sparks" : {
+      "transformationGroups" : ["body"],
+      "emissionRate" : 2.0,
+	  "emissionVariance" : 1.5,
+      "offsetRegion" : [-0.5, 0.5, -0.5, 0.5],
+      "particles" : [
+		{ "particle" : "thea-electricspark" }
+	  ]
+    }
+  },
+
+  "sounds" : {
+    "fire" : [ "/sfx/gun/plasma_sniper4.ogg" ],
+	"charge" : [ "/sfx/npc/monsters/avikandrone_windup.ogg" ],
+    "returnvehicle" : ["/sfx/tools/teleport_up.ogg"]
+  }
+}

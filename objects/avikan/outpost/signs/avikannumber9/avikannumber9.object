@@ -1,0 +1,37 @@
+{
+  "objectName" : "avikannumber9",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "description" : "Number nine, in the Avikan Script.",
+  "shortdescription" : "Nine",
+  "race" : "avikan",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 20,
+
+  "apexDescription" : "Number nine in an alien script.",
+  "avianDescription" : "An alien number. I believe it is nine.",
+  "floranDescription" : "Floran doess not know what alien ssymbol meansss.",
+  "glitchDescription" : "Informed. This alien symbol means nine.",
+  "humanDescription" : "Nine in some alien script.",
+  "hylotlDescription" : "An alien symbol for the number nine.",
+  "novakidDescription" : "Seems this number means nine.",
+  
+  "avikanDescription" : "Number nine.",
+  "drodenDescription" : "Number. Nine.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "avikannumber9.png:<color>",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "itemName" : "keffriderslicense",
+  "price" : 0,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "Security Pass",
+  "tooltipKind" : "tool",
+  "inventoryIcon" : "keffriderslicense.png",
+  "largeImage" : "keffriderslicenselarge.png",
+  "description" : "This license is official proof of your status as Keffrider.",
+  "shortdescription" : "^#BA66FF;Keffrider's License^white;"
+}

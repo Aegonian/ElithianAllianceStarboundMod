@@ -1,0 +1,56 @@
+{
+  "objectName" : "trinksatellitedish",
+  "colonyTags" : ["trink"],
+  "rarity" : "Common",
+  "description" : "A satellite dish for receiving signals.",
+  "shortdescription" : "Trinkian Satellite Dish",
+  "race" : "trink",
+  "category" : "decorative",
+  "printable" : false,
+
+  "apexDescription" : "A satellite dish. What purpose does the box below it fulfill?",
+  "avianDescription" : "A shiny satellite dish. Could it receive a message from home?",
+  "floranDescription" : "Metal dissshhh goesss round and round and round...",
+  "glitchDescription" : "Worried. This satellite dish generates and electromagnetic field which may disturb my sensors.",
+  "humanDescription" : "A simple satellite dish.",
+  "hylotlDescription" : "A satellite dish. I wonder what sort of cryptic messages it's receiving?",
+
+  "aegiDescription" : "A Trinkian satellite dish. A simple but effective tool for receiving signals from outer space.",
+  "avikanDescription" : "A metal satellite dish. Avikan antennas are far more powerful than this.",
+  "erixianDescription" : "A simple Trinkian satellite dish. Nothing too special.",
+  "trinkDescription" : "This satellite dish is used to receive messages from ships in orbit, amongst others.",
+  "hymidDescription" : "A satellite dish of Trinkian design.",
+  "notixDescription" : "A Trinkian satellite dish.",
+  "jorgasianDescription" : "A Trinkian satellite dish.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Analysis: satellite dish. Provides access to global communications systems.",
+
+  "inventoryIcon" : "trinksatellitedishicon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "trinksatellitedish.png:<color>.<frame>", "fullbright" : true }, { "image" : "trinksatellitedishlit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-16, 0],
+      "frames" : 12,
+      "animationCycle" : 1.5,
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "bottom" ]
+    },
+    {
+	  "imageLayers" : [ { "image" : "trinksatellitedish.png:<color>.<frame>", "fullbright" : true }, { "image" : "trinksatellitedishlit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-16, 0],
+      "frames" : 12,
+      "animationCycle" : 1.5,
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

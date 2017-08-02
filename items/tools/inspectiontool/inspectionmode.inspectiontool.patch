@@ -1,0 +1,20 @@
+[
+	{ "op" : "add",
+	  "path" : "/outOfRangeText/droden",
+	  "value" : [
+		"Unit optics are unable to detect.",
+		"Unit optics magnification is insufficient. Unit must reduce distance to target.",
+		"Optic magnificaton insufficient. Distance reduction required.",
+		"Error. Target is too far away."
+	  ]
+	},
+	{ "op" : "add",
+	  "path" : "/nothingThereText/droden",
+	  "value" : [
+		"Error. Invalid target.",
+		"Error. No item of interest.",
+		"Unable to read target.",
+		"Error. Empty."
+	  ]
+	}
+]

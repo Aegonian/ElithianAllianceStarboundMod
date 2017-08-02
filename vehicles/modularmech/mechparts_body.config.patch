@@ -1,0 +1,149 @@
+[	
+  //TIER 3 (starter)
+  {
+    "op" : "add",
+    "path" : "/avikanproto",
+    "value" : {
+	  "stats" : {
+		"energy" : 3,
+		"protection" : 3
+	  },
+	  "partParameters" : {},
+	  "partImages" : {
+		"bodyBack" : "body/avikanproto_back.png",
+		"bodyFront" : "body/avikanproto_front.png",
+		"bodyFullbright" : "body/avikanproto_fullbright.png"
+	  },
+	  "defaultPrimaryColors" : ["E9D3AB", "D7B889", "A88A5F", "6B4E3E"],	//From LIGHT to DARK
+	  "defaultSecondaryColors" : ["7F7F7F", "616161", "474747", "333333"],	//From LIGHT to DARK
+	  "animationCustom" : {
+		"animatedParts" : { "parts" : { "bodyFront" : { "properties" : {
+		  "sitPosition" : [0.25, 1.0]
+		}}}}
+	  }
+	}
+  },
+  {
+    "op" : "add",
+    "path" : "/trinkproto",
+    "value" : {
+	  "stats" : {
+		"energy" : 3,
+		"protection" : 3
+	  },
+	  "partParameters" : {},
+	  "partImages" : {
+		"bodyBack" : "body/trinkproto_back.png",
+		"bodyFront" : "body/trinkproto_front.png",
+		"bodyFullbright" : "body/trinkproto_fullbright.png"
+	  },
+	  "defaultPrimaryColors" : ["838383", "555555", "383838", "1E1E1E"],	//From LIGHT to DARK
+	  "defaultSecondaryColors" : ["838383", "555555", "383838", "1E1E1E"],	//From LIGHT to DARK
+	  "animationCustom" : {
+		"animatedParts" : { "parts" : { "bodyFront" : { "properties" : {
+		  "sitPosition" : [0.25, 1.0]
+		}}}}
+	  }
+	}
+  },
+  {
+    "op" : "add",
+    "path" : "/aegiproto",
+    "value" : {
+	  "stats" : {
+		"energy" : 3,
+		"protection" : 3
+	  },
+	  "partParameters" : {},
+	  "partImages" : {
+		"bodyBack" : "body/aegiproto_back.png",
+		"bodyFront" : "body/aegiproto_front.png",
+		"bodyFullbright" : "body/aegiproto_fullbright.png"
+	  },
+	  "defaultPrimaryColors" : ["DBDBDB", "B5B5B5", "848484", "4C4C4C"],	//From LIGHT to DARK
+	  "defaultSecondaryColors" : ["838383", "555555", "383838", "1E1E1E"],	//From LIGHT to DARK
+	  "animationCustom" : {
+		"animatedParts" : { "parts" : { "bodyFront" : { "properties" : {
+		  "sitPosition" : [0.25, 1.0]
+		}}}}
+	  }
+	}
+  },
+  
+  //TIER 5
+  {
+    "op" : "add",
+    "path" : "/avikan",
+    "value" : {
+	  "stats" : {
+		"energy" : 5,
+		"protection" : 5
+	  },
+	  "partParameters" : {
+		"hazardImmunities" : ["biomeradiation", "biomecold"]
+	  },
+	  "partImages" : {
+		"bodyBack" : "body/avikan_back.png",
+		"bodyFront" : "body/avikan_front.png",
+		"bodyFullbright" : "body/avikan_fullbright.png"
+	  },
+	  "defaultPrimaryColors" : ["E9D3AB", "D7B889", "A88A5F", "6B4E3E"],	//From LIGHT to DARK
+	  "defaultSecondaryColors" : ["7F7F7F", "616161", "474747", "333333"],	//From LIGHT to DARK
+	  "animationCustom" : {
+		"animatedParts" : { "parts" : { "bodyFront" : { "properties" : {
+		  "sitPosition" : [0.25, 1.0]
+		}}}}
+	  }
+	}
+  },
+  {
+    "op" : "add",
+    "path" : "/trink",
+    "value" : {
+	  "stats" : {
+		"energy" : 5,
+		"protection" : 5
+	  },
+	  "partParameters" : {
+		"hazardImmunities" : ["biomeradiation", "biomecold"]
+	  },
+	  "partImages" : {
+		"bodyBack" : "body/trink_back.png",
+		"bodyFront" : "body/trink_front.png",
+		"bodyFullbright" : "body/trink_fullbright.png"
+	  },
+	  "defaultPrimaryColors" : ["838383", "555555", "383838", "1E1E1E"],	//From LIGHT to DARK
+	  "defaultSecondaryColors" : ["838383", "555555", "383838", "1E1E1E"],	//From LIGHT to DARK
+	  "animationCustom" : {
+		"animatedParts" : { "parts" : { "bodyFront" : { "properties" : {
+		  "sitPosition" : [0.25, 1.0]
+		}}}}
+	  }
+	}
+  },
+  {
+    "op" : "add",
+    "path" : "/aegi",
+    "value" : {
+	  "stats" : {
+		"energy" : 5,
+		"protection" : 5
+	  },
+	  "partParameters" : {
+		"hazardImmunities" : ["biomeradiation", "biomecold"]
+	  },
+	  "partImages" : {
+		"bodyBack" : "body/aegi_back.png",
+		"bodyFront" : "body/aegi_front.png",
+		"bodyFullbright" : "body/aegi_fullbright.png"
+	  },
+	  "defaultPrimaryColors" : ["DBDBDB", "B5B5B5", "848484", "4C4C4C"],	//From LIGHT to DARK
+	  "defaultSecondaryColors" : ["838383", "555555", "383838", "1E1E1E"],	//From LIGHT to DARK
+	  "animationCustom" : {
+		"animatedParts" : { "parts" : { "bodyFront" : { "properties" : {
+		  "sitPosition" : [0.25, 1.0]
+		}}}}
+	  }
+	}
+  }
+]

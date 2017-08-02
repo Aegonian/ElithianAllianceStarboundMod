@@ -1,0 +1,43 @@
+{
+  "id" : "weaponrestorationavikan3",
+  "prerequisites" : [ "weaponrestorationavikan2" ],
+  "title" : "^orange;Restoring The Past III",
+  "text" : "Unfortunately, I don't have the materials needed for the repairs... We'll need at least ^orange;10 Superb Kavanite Plates ^white;to mend the blade, and a piece of ^orange;Centensian Tech ^white;to fix the connection between the weapon and the Shard. ^green;Can you go and find those, Captain?",
+  "completionText" : "Here you go, Captain. Your Vha'leihan Spear has been fully restored. It was an honour to work on such a mighty weapon.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "avikan-vhaleihanspear", 1 ], [ "vhaleihanspear-codex", 1 ], [ "avikancache", 1 ], [ "avikanmerittoken", 10 ] ]
+  ],
+  "canBeAbandoned" : false,
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+	"portraits" : {
+      "questStarted" : {
+        "portrait" : [ {"image" : "/objects/avikan/outpost/avikangunsmith/avikangunsmithportrait.png"} ],
+        "title" : "Ayurin"
+      },
+      "questComplete" : {
+        "portrait" : [ {"image" : "/objects/avikan/outpost/avikangunsmith/avikangunsmithportrait.png"} ],
+        "title" : "Ayurin"
+      }
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+	  {
+        "type" : "gatherItem",
+        "itemName" : "avikanmetaltier6",
+        "count" : 10,
+        "consume" : true
+      },
+	  {
+        "type" : "gatherItem",
+        "itemName" : "centensiantech",
+        "count" : 1,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Return to ^orange;Ayurin ^reset;in the ^orange;Starfarer's Refuge^reset;"
+  }
+}

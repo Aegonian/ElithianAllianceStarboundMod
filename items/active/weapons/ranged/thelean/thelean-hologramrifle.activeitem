@@ -1,0 +1,83 @@
+{
+  "itemName" : "thelean-hologramrifle",
+  "price" : 0,
+  "inventoryIcon" : "thelean-hologramrifle.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A holographic rifle.",
+  "shortdescription" : "Sol'thass Hologram", //Translates to: Life-taker
+  "level" : 1,
+  "tooltipKind" : "gun",
+  "category" : "Hologram",
+  "itemTags" : ["weapon","ranged","assaultrifle","thelean"],
+  "twoHanded" : true,
+  
+  "cursor" : "/cursors/thea-theleanreticle.cursor",
+  
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "thelean-hologramrifle.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/theleanmuzzle-hologram.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/laser_weapon_swing1.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.625, 0.125],
+  "muzzleOffset" : [0.20, 0.30],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.28,
+    "baseDps" : 0.0,
+    "energyUsage" : 31.5,
+    "inaccuracy" : 0.015,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "theleanseekingbullet-hologram",
+    "projectileParameters" : {
+      "knockback" : 0
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.15,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

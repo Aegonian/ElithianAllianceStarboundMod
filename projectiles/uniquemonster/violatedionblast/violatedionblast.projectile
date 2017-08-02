@@ -1,0 +1,23 @@
+{
+  "projectileName" : "violatedionblast",
+  "image" : "violatedionblast.png",
+  "physics" : "laser",
+  "bounces" : 0,
+  "piercing" : false,
+  "animationCycle" : 1.0,
+  "frameNumber" : 1,
+  "emitters" : [ "violatediontrail", "violatedlinerifletrail", "violatedlinerifletrail2", "violatedlinerifleswoosh" ],
+  "damageKindImage" : "icon.png",
+  "lightColor" : [200, 0, 0],
+  "fullbright" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+	  "file" : "/projectiles/explosions/violatedionexplosion/violatedionexplosion.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 80,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

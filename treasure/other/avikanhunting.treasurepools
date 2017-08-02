@@ -1,0 +1,116 @@
+{
+  "avikanhunting" : [
+	//TIER 1, STARTING PLANETS
+    [0, {
+      "pool" : [
+        {"weight" : 0.5, "item" : "monsterbone"},
+		{"weight" : 0.001, "item" : "greatmonsterbone"},
+		{"weight" : 0.3, "item" : "monsterhide"},
+		{"weight" : 0.2, "item" : "alienmeat"},
+		{"weight" : 0.001, "pool" : "avikantrophyskulls"}
+      ],
+      "poolRounds" : [
+        [0.70, 1],
+        [0.30, 2]
+      ],
+      "allowDuplication" : false
+    } ],
+	//TIER 2, EASY PLANETS
+	[1, {
+      "pool" : [
+        {"weight" : 0.25, "item" : "monsterbone"},
+		{"weight" : 0.35, "item" : "monsterscales"},
+		{"weight" : 0.005, "item" : "greatmonsterbone"},
+		{"weight" : 0.25, "item" : "monsterhide"},
+		{"weight" : 0.15, "item" : "alienmeat"},
+		{"weight" : 0.005, "pool" : "avikantrophyskulls"}
+      ],
+      "poolRounds" : [
+        [0.70, 1],
+        [0.30, 2]
+      ],
+      "allowDuplication" : false
+    } ],
+	//TIER 3, MEDIUM PLANETS
+	[2, {
+      "pool" : [
+        {"weight" : 0.25, "item" : "monsterbone"},
+		{"weight" : 0.35, "item" : "monsterclaws"},
+		{"weight" : 0.01, "item" : "greatmonsterbone"},
+		{"weight" : 0.25, "item" : "monsterhide"},
+		{"weight" : 0.15, "item" : "alienmeat"},
+		{"weight" : 0.005, "pool" : "avikantrophyskulls"}
+      ],
+      "poolRounds" : [
+        [0.70, 1],
+        [0.30, 2]
+      ],
+      "allowDuplication" : false
+    } ],
+	//TIER 4, HARD PLANETS - FINAL STAGE OF AVIKAN BONE PROGRESSION
+	[3, {
+      "pool" : [
+        {"weight" : 0.25, "item" : "monsterbone"},
+		{"weight" : 0.35, "item" : "monsterplate"},
+		{"weight" : 0.015, "item" : "greatmonsterbone"},
+		{"weight" : 0.25, "item" : "monsterhide"},
+		{"weight" : 0.15, "item" : "alienmeat"},
+		{"weight" : 0.005, "pool" : "avikantrophyskulls"}
+      ],
+      "poolRounds" : [
+        [0.70, 1],
+        [0.30, 2]
+      ],
+      "allowDuplication" : false
+    } ],
+	//TIER 5, VERY HARD PLANETS - BEYOND PROGRESSION
+	[4, {
+      "pool" : [
+        {"weight" : 0.2, "item" : "monsterbone"},
+		{"weight" : 0.25, "item" : "monsterplate"},
+		{"weight" : 0.25, "item" : "monsterspine"},
+		{"weight" : 0.02, "item" : "greatmonsterbone"},
+		{"weight" : 0.25, "item" : "monsterhide"},
+		{"weight" : 0.15, "item" : "alienmeat"},
+		{"weight" : 0.005, "pool" : "avikantrophyskulls"}
+      ],
+      "poolRounds" : [
+        [0.70, 1],
+        [0.30, 2]
+      ],
+      "allowDuplication" : false
+    } ],
+	//TIER 6, EXTREMELY HARD PLANETS - BEYOND PROGRESSION
+	[5, {
+      "pool" : [
+        {"weight" : 0.2, "item" : "monsterbone"},
+		{"weight" : 0.25, "item" : "monsterplate"},
+		{"weight" : 0.25, "item" : "monsterspine"},
+		{"weight" : 0.05, "item" : "greatmonsterbone"},
+		{"weight" : 0.25, "item" : "monsterhide"},
+		{"weight" : 0.15, "item" : "alienmeat"},
+		{"weight" : 0.005, "pool" : "avikantrophyskulls"}
+      ],
+      "poolRounds" : [
+        [0.70, 1],
+        [0.30, 2]
+      ],
+      "allowDuplication" : false
+    } ]
+  ],
+  
+  "avikantrophyskulls" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1.0, "item" : "avikan-simpleskull"},
+        {"weight" : 1.0, "item" : "avikan-longskull"},
+		{"weight" : 1.0, "item" : "avikan-hornedskull"},
+		{"weight" : 1.0, "item" : "avikan-hornedskull2"},
+		{"weight" : 1.0, "item" : "avikan-fangedskull"},
+		{"weight" : 1.0, "item" : "avikan-fullskull"},
+		{"weight" : 1.0, "item" : "avikan-skullmask"}
+      ]
+    } ]
+  ]
+}
+

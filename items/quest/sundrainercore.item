@@ -1,0 +1,16 @@
+{
+  "itemName" : "sundrainercore",
+  "price" : 1000,
+  "rarity" : "Essential",
+  "category" : "Quest Item",
+  "tooltipKind" : "thea-unique",
+  "inventoryIcon" : "sundrainercore.png",
+  "description" : "A mysterious weapon core. An unusual energy pulsates deep within the mechanism.",
+  "shortdescription" : "^orange;Mysterious Weapon Core^white;",
+  "itemTags" : [ "questitem" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 5
+  
+  //"pickupQuestTemplates" : [ "consumingthestars.gearup" ]
+}

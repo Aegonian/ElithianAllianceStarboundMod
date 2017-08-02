@@ -1,0 +1,544 @@
+{ "margin":0,
+ "name":"theamaterials",
+ "properties":
+    {
+
+    },
+ "spacing":0,
+ "tilecount":49,
+ "tileheight":8,
+ "tileproperties":
+    {
+     "0":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"avikandarkgroundpanel",
+         "\/\/shortdescription":"Dark Avikan Ground Panel",
+         "material":"avikandarkgroundpanel"
+        },
+     "1":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"avikandarkpanel",
+         "\/\/shortdescription":"Dark Avikan Panel",
+         "material":"avikandarkpanel"
+        },
+     "10":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"avikanheavypipe",
+         "\/\/shortdescription":"Heavy Avikan Pipe",
+         "material":"avikanheavypipe"
+        },
+     "11":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"avikanleather",
+         "\/\/shortdescription":"Avikan Leather",
+         "material":"avikanleather"
+        },
+     "12":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"avikanpanel",
+         "\/\/shortdescription":"Avikan Panel",
+         "material":"avikanpanel"
+        },
+     "13":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"avikanplatform",
+         "\/\/shortdescription":"Avikan Platform",
+         "material":"avikanplatform"
+        },
+     "14":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"avikanplating",
+         "\/\/shortdescription":"Avikan Plating",
+         "material":"avikanplating"
+        },
+     "15":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"avikanpowerpanel",
+         "\/\/shortdescription":"Avikan Power Panel",
+         "material":"avikanpowerpanel"
+        },
+     "16":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"avikanshipfloor",
+         "\/\/shortdescription":"Avikan Ship Floor",
+         "material":"avikanshipfloor"
+        },
+     "17":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"avikansmoothpanel",
+         "\/\/shortdescription":"Smooth Avikan Panel",
+         "material":"avikansmoothpanel"
+        },
+     "18":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"avikansupportpanel",
+         "\/\/shortdescription":"Avikan Support Panel",
+         "material":"avikansupportpanel"
+        },
+     "19":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"avikantentpole",
+         "\/\/shortdescription":"Avikan Tent Pole",
+         "material":"avikantentpole"
+        },
+     "2":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"avikandarkplatform",
+         "\/\/shortdescription":"Dark Avikan Platform",
+         "material":"avikandarkplatform"
+        },
+     "20":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"avikanthickpipebottom",
+         "\/\/shortdescription":"Thick Avikan Pipe Bottom",
+         "material":"avikanthickpipebottom"
+        },
+     "21":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"avikanthickpipetop",
+         "\/\/shortdescription":"Thick Avikan Pipe Top",
+         "material":"avikanthickpipetop"
+        },
+     "22":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"avikanthickplatform",
+         "\/\/shortdescription":"Thick Avikan Platform",
+         "material":"avikanthickplatform"
+        },
+     "23":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"centensblockpanel",
+         "\/\/shortdescription":"Centens Block Panel",
+         "material":"centensblockpanel"
+        },
+     "24":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"centensglowpanel",
+         "\/\/shortdescription":"Centens Glow Panel",
+         "material":"centensglowpanel"
+        },
+     "25":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"centensgroundpanel",
+         "\/\/shortdescription":"centensgroundpanel",
+         "material":"centensgroundpanel"
+        },
+     "26":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"centenshoripanel",
+         "\/\/shortdescription":"Horizontal Centens Panel",
+         "material":"centenshoripanel"
+        },
+     "27":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"centensplatform",
+         "\/\/shortdescription":"Centens Platform",
+         "material":"centensplatform"
+        },
+     "28":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"centensreinforcement",
+         "\/\/shortdescription":"Centens Reinforcement",
+         "material":"centensreinforcement"
+        },
+     "29":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"centensvertpanel",
+         "\/\/shortdescription":"Vertical Centens Panel",
+         "material":"centensvertpanel"
+        },
+     "3":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"avikandecoleather",
+         "\/\/shortdescription":"Decorated Avikan Leather",
+         "material":"avikandecoleather"
+        },
+     "30":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"trinkgroundpanel",
+         "\/\/shortdescription":"Trink Ground Panel",
+         "material":"trinkgroundpanel"
+        },
+     "31":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"trinkhull",
+         "\/\/shortdescription":"Trink Hull",
+         "material":"trinkhull"
+        },
+     "32":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"trinkpipe",
+         "\/\/shortdescription":"Trink Pipe",
+         "material":"trinkpipe"
+        },
+     "33":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"trinkplatform",
+         "\/\/shortdescription":"Trink Platform",
+         "material":"trinkplatform"
+        },
+     "34":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"trinkplating",
+         "\/\/shortdescription":"Trink Plating",
+         "material":"trinkplating"
+        },
+     "35":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"trinksmoothpanel",
+         "\/\/shortdescription":"Smooth Trink Panel",
+         "material":"trinksmoothpanel"
+        },
+     "36":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"trinksupportpanel",
+         "\/\/shortdescription":"Trink Support Panel",
+         "material":"trinksupportpanel"
+        },
+     "37":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"centenssmoothpanel",
+         "\/\/shortdescription":"Smooth Centens Panel",
+         "material":"centenssmoothpanel"
+        },
+     "38":
+        {
+         "\/\/description":"Avikan glass without the borders",
+         "\/\/name":"avikanborderlessglass",
+         "\/\/shortdescription":"Borderless Avikan Glass",
+         "material":"avikanborderlessglass"
+        },
+     "39":
+        {
+         "\/\/description":"Avikan Stairs",
+         "\/\/name":"avikanstairsplatform",
+         "\/\/shortdescription":"Avikan Stairs",
+         "material":"avikanstairsplatform"
+        },
+     "4":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"avikanfabric",
+         "\/\/shortdescription":"Avikan Fabric",
+         "material":"avikanfabric"
+        },
+     "40":
+        {
+         "\/\/description":"Thick Avikan Stairs",
+         "\/\/name":"avikanthickstairsplatform",
+         "\/\/shortdescription":"Thick Avikan Stairs",
+         "material":"avikanthickstairsplatform"
+        },
+     "41":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"avikanpurplefabric",
+         "\/\/shortdescription":"Rhaiod Fabric",
+         "material":"avikanpurplefabric"
+        },
+     "42":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"avikanpurplefabrictentpole",
+         "\/\/shortdescription":"Rhaiod Tent Pole",
+         "material":"avikanpurplefabrictentpole"
+        },
+     "43":
+        {
+         "\/\/shortdescription":"Avikan Hull Panel",
+         "material":"avikanslopedpanel"
+        },
+     "44":
+        {
+         "\/\/shortdescription":"Broken Avikan Panel",
+         "material":"avikanbrokenpanel"
+        },
+     "45":
+        {
+         "\/\/shortdescription":"Borderless Avikan Fabric",
+         "material":"avikanborderlessfabric"
+        },
+     "46":
+        {
+         "\/\/shortdescription":"Borderless Avikan Leather",
+         "material":"avikanborderlessleather"
+        },
+     "47":
+        {
+         "\/\/shortdescription":"Borderless Rhaiod Fabric",
+         "material":"avikanborderlesspurplefabric"
+        },
+     "48":
+        {
+         "\/\/shortdescription":"Sloped Avikan Glass",
+         "material":"avikanslopedglass"
+        },
+     "5":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"avikanfabrictentpole",
+         "\/\/shortdescription":"Avikan Fabric Tent Pole",
+         "material":"avikanfabrictentpole"
+        },
+     "6":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"avikanfarmpanel",
+         "\/\/shortdescription":"Avikan Farm Panel",
+         "material":"avikanfarmpanel"
+        },
+     "7":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"avikanfence",
+         "\/\/shortdescription":"Avikan Fence",
+         "material":"avikanfence"
+        },
+     "8":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"avikanglass",
+         "\/\/shortdescription":"Avikan Glass",
+         "material":"avikanglass"
+        },
+     "9":
+        {
+         "\/\/description":"A THEA material",
+         "\/\/name":"avikangroundpanel",
+         "\/\/shortdescription":"Avikan Ground Panel",
+         "material":"avikangroundpanel"
+        }
+    },
+ "tiles":
+    {
+     "0":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/avikandarkgroundpanel.png"
+        },
+     "1":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/avikandarkpanel.png"
+        },
+     "10":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/avikanheavypipe.png"
+        },
+     "11":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/avikanleather.png"
+        },
+     "12":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/avikanpanel.png"
+        },
+     "13":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/avikanplatform.png"
+        },
+     "14":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/avikanplating.png"
+        },
+     "15":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/avikanpowerpanel.png"
+        },
+     "16":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/avikanshipfloor.png"
+        },
+     "17":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/avikansmoothpanel.png"
+        },
+     "18":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/avikansupportpanel.png"
+        },
+     "19":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/avikantentpole.png"
+        },
+     "2":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/avikandarkplatform.png"
+        },
+     "20":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/avikanthickpipebottom.png"
+        },
+     "21":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/avikanthickpipetop.png"
+        },
+     "22":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/avikanthickplatform.png"
+        },
+     "23":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/centensblockpanel.png"
+        },
+     "24":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/centensglowpanel.png"
+        },
+     "25":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/centensgroundpanel.png"
+        },
+     "26":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/centenshoripanel.png"
+        },
+     "27":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/centensplatform.png"
+        },
+     "28":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/centensreinforcement.png"
+        },
+     "29":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/centensvertpanel.png"
+        },
+     "3":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/avikandecoleather.png"
+        },
+     "30":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/trinkgroundpanel.png"
+        },
+     "31":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/trinkhull.png"
+        },
+     "32":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/trinkpipe.png"
+        },
+     "33":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/trinkplatform.png"
+        },
+     "34":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/trinkplating.png"
+        },
+     "35":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/trinksmoothpanel.png"
+        },
+     "36":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/trinksupportpanel.png"
+        },
+     "37":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/centenssmoothpanel.png"
+        },
+     "38":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/avikanborderlessglass.png"
+        },
+     "39":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/avikanstairsplatform.png"
+        },
+     "4":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/avikanfabric.png"
+        },
+     "40":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/avikanthickstairsplatform.png"
+        },
+     "41":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/avikanpurplefabric.png"
+        },
+     "42":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/avikanpurplefabrictentpole.png"
+        },
+     "43":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/avikanslopedpanel.png"
+        },
+     "44":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/avikanbrokenpanel.png"
+        },
+     "45":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/avikanborderlessfabric.png"
+        },
+     "46":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/avikanborderlessleather.png"
+        },
+     "47":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/avikanborderlesspurplefabric.png"
+        },
+     "48":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/avikanslopedglass.png"
+        },
+     "5":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/avikanfabrictentpole.png"
+        },
+     "6":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/avikanfarmpanel.png"
+        },
+     "7":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/avikanfence.png"
+        },
+     "8":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/avikanglass.png"
+        },
+     "9":
+        {
+         "image":"..\/..\/..\/..\/..\/Starbound - Unstable\/tiled\/avikan-custom\/materials\/avikangroundpanel.png"
+        }
+    },
+ "tilewidth":8
+}

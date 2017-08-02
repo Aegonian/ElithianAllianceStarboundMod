@@ -1,0 +1,32 @@
+{
+  "frameGrid" : {
+    "size" : [64, 84],
+    "dimensions" : [9, 3],
+
+    "names" : [
+      [ null, "walk.1", "walk.2", "walk.3", "walk.4", "walk.5", "walk.6", "walk.7", "walk.8" ],
+      [ null, "idle", "open.1", "open.2", "open.3", "open.4", "open.5", null, null ],
+      [ null, "jump.1", "boostup.1", "boostback.1", "boostforward.1", "fall.1", "fall.2", "land.1", null ]
+    ]
+  },
+
+  "aliases" : {
+	//Closing
+	"close.1" : "open.5",
+	"close.2" : "open.4",
+	"close.3" : "open.3",
+	"close.4" : "open.2",
+	"close.5" : "open.1",
+	//Idle Open
+	"idleOpen" : "open.5",
+	//Walking Backwards
+	"walkb.1" : "walk.8",
+	"walkb.2" : "walk.7",
+	"walkb.3" : "walk.6",
+	"walkb.4" : "walk.5",
+	"walkb.5" : "walk.4",
+	"walkb.6" : "walk.3",
+	"walkb.7" : "walk.2",
+	"walkb.8" : "walk.1"
+  }
+}

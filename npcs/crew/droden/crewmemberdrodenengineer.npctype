@@ -1,0 +1,79 @@
+{
+  "type" : "crewmemberdrodenengineer",
+  "baseType" : "crewmemberdroden",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : true
+    },
+
+	"crew" : {
+	  "role" : {
+        "type" : "drodenengineer",
+        "name" : "Engineering Unit",
+        "field" : "Legion",
+        "uniformColorIndex" : 5,
+		
+        "benefits" : [
+          {
+            "type" : "ShipUpgradeBenefit",
+            "property" : "shipSpeed",
+            "value" : 3.75
+          }
+        ]
+      },
+
+      "ranks" : [
+        "<field> Engineering Unit"
+      ],
+	  
+	  "defaultUniform" : {
+		"head" : "droden-legionhead",
+		"chest" : "droden-legionchest",
+		"legs" : "droden-legionlegs",
+		"back" : "drodenantennapack"
+	  },
+	  
+	  "uniformSlots" : []
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "offer" : {
+          "droden" : {
+            "default" : [
+              "Engineering unit <selfname> reporting for duty. Requesting permission to board ship.",
+              "Unit <selfname> reporting in. Engineering unit requesting permission to board ship.",
+              "Droden Legion Engineering Unit available. Requesting permission to board ship."
+            ]
+          }
+        },
+		"roleDescription" : {
+          "default" : {
+            "default" : [
+              "Engineering unit will maintain ship engines. Thruster velocity optimized by 25%."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+            "head" : [ { "name" : "droden-legionhead", "data" : { "colorIndex" : 5 } } ],
+			"chest" : [ { "name" : "droden-legionchest", "data" : { "colorIndex" : 5 } } ],
+            "legs" : [ { "name" : "droden-legionlegs", "data" : { "colorIndex" : 5 } } ],
+            "back" : [ { "name" : "drodenantennapack", "data" : { "colorIndex" : 5 } } ],
+            "primary" : [ 
+			  "avikanprod"
+			]
+          }
+        ] ]
+    ]
+  }
+}

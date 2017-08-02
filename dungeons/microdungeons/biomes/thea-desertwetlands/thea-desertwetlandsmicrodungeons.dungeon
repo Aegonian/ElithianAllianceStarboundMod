@@ -1,0 +1,136 @@
+{
+  "metadata" : {
+    "name" : "thea-desertwetlandsmicrodungeons",
+    "species" : "generic",
+    "rules" : [
+    ],
+	
+    "anchor" : [ "quicksandpit", "quicksandpit2", "quicksandpit3", "quicksandpit4", "quicksandbridge", "quicksandbridge2", "wetlandcabin", "wetlandcabin2", "sandcrawlerspawn", "sandcrawlerspawn2", "sandcrawlerspawn3", "sunkencabin", "sandspittercave", "valahrspawn", "valahrspawn2", "swarmhole", "sunkenstatue" ],
+
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "quicksandpit",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "quicksandpit.json" ]
+    },
+	{
+      "name" : "quicksandpit2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "quicksandpit2.json" ]
+    },
+	{
+      "name" : "quicksandpit3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "quicksandpit3.json" ]
+    },
+	{
+      "name" : "quicksandpit4",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "quicksandpit4.json" ]
+    },
+	{
+      "name" : "quicksandbridge",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "quicksandbridge.json" ]
+    },
+	{
+      "name" : "quicksandbridge2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "quicksandbridge2.json" ]
+    },
+	{
+      "name" : "wetlandcabin",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "wetlandcabin.json" ]
+    },
+	{
+      "name" : "wetlandcabin2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "wetlandcabin2.json" ]
+    },
+	{
+      "name" : "sandcrawlerspawn",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "sandcrawlerspawn.json" ]
+    },
+	{
+      "name" : "sandcrawlerspawn2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "sandcrawlerspawn2.json" ]
+    },
+	{
+      "name" : "sandcrawlerspawn3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "sandcrawlerspawn3.json" ]
+    },
+	{
+      "name" : "sunkencabin",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "sunkencabin.json" ]
+    },
+	{
+      "name" : "sandspittercave",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "sandspittercave.json" ]
+    },
+	{
+      "name" : "valahrspawn",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "valahrspawn.json" ]
+    },
+	{
+      "name" : "valahrspawn2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "valahrspawn2.json" ]
+    },
+	{
+      "name" : "swarmhole",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "swarmhole.json" ]
+    },
+	{
+      "name" : "sunkenstatue",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "sunkenstatue.json" ]
+    }
+  ]
+}

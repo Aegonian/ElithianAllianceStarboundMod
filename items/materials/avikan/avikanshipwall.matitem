@@ -1,0 +1,13 @@
+{
+  "itemName" : "avikanshipwall",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "avikanshipwall.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "shortdescription" : "Avikan Ship Wall",
+  
+  "description" : "Strong metal plating, for the best protection.",
+
+  "materialId" : 30094
+}

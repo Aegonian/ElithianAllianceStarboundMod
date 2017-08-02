@@ -1,0 +1,16 @@
+{
+  "projectileName" : "vhelinsexplosion",
+  "image" : "vhelinsexplosion.png",
+  "animationCycle" : 0.2,
+  "lightColor" : [0, 65, 100],
+  "frameNumber" : 6,
+  "speed" : 0,
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "universalDamage" : false,
+  "damageKind" : "default",
+  "knockback" : 5
+}

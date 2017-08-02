@@ -1,0 +1,97 @@
+{
+  "itemName" : "centens-jumpgun",
+  "price" : 1000,
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "Uses miniature jump gates to transport solar matter to the magazine.",
+  "shortdescription" : "Centensian Jumpgun",
+  "tooltipKind" : "gun",
+  "category" : "Jumpgun",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","ranged","centens","jumprifle"],
+  "level" : 6,
+  
+  "cursor" : "/cursors/thea-jumpriflereticle.cursor",
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : { },
+  "animationCustom" : { },
+  "baseOffset" : [-0.6, 0.2],
+  "muzzleOffset" : [0.0, 0.0],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "jumpweapon",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : [0.3, 1.0],
+    "baseDps" : [5.5, 8.5],
+    "energyUsage" : [22.0, 28.0],
+    "inaccuracy" : 0.025,
+
+	"projectileType" : "smalljumpriflebullet",
+    "projectileParameters" : {
+      "knockbackRange" : [4,8]
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 10,
+        "weaponRotation" : 10,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.15,
+        "armRotation" : 10,
+        "weaponRotation" : 10,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+  "fireSounds" : [ "/sfx/gun/centens_jumprifle1.ogg" ],
+
+  "builder" : "/items/buildscripts/buildweapon.lua",
+  "builderConfig" : [{
+    "nameGenerator" : "jumpgunnames.config:nameGen",
+    "animationParts" : {
+      "butt" : {
+        "path" : "/items/active/weapons/ranged/centens/generated/jumpgun/butt/<variant>.png",
+        "variants" : 3,
+        "paletteSwap" : false
+      },
+      "middle" : {
+        "path" : "/items/active/weapons/ranged/centens/generated/jumpgun/middle/<variant>.png",
+        "variants" : 1,
+        "paletteSwap" : false
+      },
+      "barrel" : {
+        "path" : "/items/active/weapons/ranged/centens/generated/jumpgun/barrel/<variant>.png",
+        "variants" : 3,
+        "paletteSwap" : false
+      },
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/jumpriflemuzzle.png"
+    },
+    "gunParts" : ["butt", "middle", "barrel"],
+    "altAbilities" : [ ],
+    "palette" : "/items/active/weapons/colors/ranged.weaponcolors",
+    "iconDrawables" : ["butt", "middle", "barrel"]
+  }]
+}

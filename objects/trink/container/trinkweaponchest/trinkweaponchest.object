@@ -1,0 +1,65 @@
+{
+  "objectName" : "trinkweaponchest",
+  "colonyTags" : ["storage","combat","trink"],
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "category" : "storage",
+  "printable" : false,
+  "price" : 100,
+  "description" : "A high-grade military supply crate.",
+  "shortdescription" : "Circuit Supply Crate",
+  "race" : "trink",
+  
+  "health" : 6,
+
+  "apexDescription" : "I think there might be weapons inside!",
+  "avianDescription" : "This supply crate uses materials of the best quality.",
+  "floranDescription" : "Floran isss eager to open chesst. Maybe ssstabby weapon insside!",
+  "glitchDescription" : "Excited. A supply crate like this is likely to hold valuables.",
+  "humanDescription" : "This looks like a military weapons cache. Let's open it!",
+  "hylotlDescription" : "A supply crate built for transporting weaponry.",
+  "novakidDescription" : "Let's look inside o' it already!",
+
+  "aegiDescription" : "This seems to be a Circuit supply crate.",
+  "avikanDescription" : "A machine-built supply crate. It might offer me an advantage.",
+  "erixianDescription" : "A supply crate built to withstand anything.",
+  "trinkDescription" : "This Circuit supply crate might hold weapons.",
+  "hymidDescription" : "A military equipment case, built by the Trinks.",
+  "notixDescription" : "A supply crate used by the Circuit's military unit.",
+  "jorgasianDescription" : "A sturdy metal supply crate.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected machine-built supply crate. Recommend salvaging for parts.",
+
+  "inventoryIcon" : "trinkweaponchesticon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "trinkweaponchest.png:<color>.<key>", "fullbright" : true }, { "image" : "trinkweaponchestlit.png:<color>.<key>" } ],
+	  "imagePosition" : [-16, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform",
+      "flipImages" : true,
+      "direction" : "left"
+    },
+    {
+	  "imageLayers" : [ { "image" : "trinkweaponchest.png:<color>.<key>", "fullbright" : true }, { "image" : "trinkweaponchestlit.png:<color>.<key>" } ],
+      "imagePosition" : [-16, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform",
+      "direction" : "right"
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/miningchest_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/miningchest_close.ogg" ],
+  "slotCount" : 24,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 32,
+  "autoCloseCooldown" : 3600
+}

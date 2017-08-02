@@ -1,0 +1,45 @@
+{
+  "objectName" : "avikanspearrack",
+  "colonyTags" : ["avikan","combat"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 40,
+  "description" : "A rack of bone spears.",
+  "shortdescription" : "Avikan Spear Rack",
+  "race" : "avikan",
+
+  "apexDescription" : "Spears of bone. How primitive.",
+  "avianDescription" : "Spears made of bone. Surprisingly pointy.",
+  "floranDescription" : "Bone spearsss. Floran likesss.",
+  "glitchDescription" : "Statement. Spears.",
+  "humanDescription" : "Bone spears, but the rack is made of metal. Odd.",
+  "hylotlDescription" : "These spears are made of bone. But from what sort of creature?",
+
+  "aegiDescription" : "These bone spears are unusually sharp and strong.",
+  "avikanDescription" : "Traditional bone spears from home. Stronger than many metal spears.",
+  "erixianDescription" : "Strong bone spears. Fascinating craftsmanship.",
+  "trinkDescription" : "A collection of bone spears.",
+  "hymidDescription" : "Hymidian craftsmanship is more advanced, but these bone spears still manage to impress.",
+  "notixDescription" : "A number of bone spears.",
+  "jorgasianDescription" : "Bone spears. They look painful.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Analysis complete. Detected Sandstalker bone.",
+
+  "inventoryIcon" : "avikanspearrackicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanspearrack.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

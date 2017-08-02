@@ -1,0 +1,19 @@
+{
+  "kind" : "thea-sandcloud",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/thea-sandcloud/thea-sandcloud.animation",
+    "position" : [0, 0],
+    "finalVelocity" : [0, 0],
+    "approach" : [50, 50],
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.85,
+    "fade" : 1,
+    "size" : 1,
+	"color" : [255, 255, 255, 255],
+    "layer" : "back",
+    "variance" : {
+      "rotation" : 180
+    }
+  }
+}

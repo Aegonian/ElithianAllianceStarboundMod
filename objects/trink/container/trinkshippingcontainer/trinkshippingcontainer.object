@@ -1,0 +1,65 @@
+{
+  "objectName" : "trinkshippingcontainer",
+  "colonyTags" : ["trink", "storage"],
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "category" : "storage",
+  "printable" : false,
+  "price" : 625,
+  "description" : "A very large shipping container used by the Trink Circuit.",
+  "shortdescription" : "Circuit Shipping Container",
+  "race" : "trink",
+
+  "health" : 8,
+
+  "apexDescription" : "It's a huge crate for shipping large cargo.",
+  "avianDescription" : "I would guess it's meant for shipping very large objects.",
+  "floranDescription" : "Maybe theress food in it.",
+  "glitchDescription" : "Curious. What's stored in here?",
+  "humanDescription" : "It's a really big shipping container.",
+  "hylotlDescription" : "A rather large container for shipping large quantities of cargo.",
+  "novakidDescription" : "A large container for haulin' goods.",
+
+  "aegiDescription" : "A massive Trinkian shipping container.",
+  "avikanDescription" : "A machine-built container. The Vanguard would want me to plunder it.",
+  "erixianDescription" : "A basic shipping container.",
+  "trinkDescription" : "An standard shipping container.",
+  "hymidDescription" : "A large metal shipping container.",
+  "notixDescription" : "This shipping container is extremely sturdy.",
+  "jorgasianDescription" : "A basic shipping container.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Analyzing content.",
+
+  "inventoryIcon" : "trinkshippingcontainericon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "trinkshippingcontainer.png:<color>.<key>", "fullbright" : true }, { "image" : "trinkshippingcontainerlit.png:<color>.<key>" } ],
+	  "imagePosition" : [-56, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform",
+      "flipImages" : true,
+      "direction" : "left"
+    },
+    {
+	  "imageLayers" : [ { "image" : "trinkshippingcontainer.png:<color>.<key>", "fullbright" : true }, { "image" : "trinkshippingcontainerlit.png:<color>.<key>" } ],
+      "imagePosition" : [-56, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform",
+      "direction" : "right"
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/shippingcontainer_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/shippingcontainer_close.ogg" ],
+  "slotCount" : 64,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600
+}

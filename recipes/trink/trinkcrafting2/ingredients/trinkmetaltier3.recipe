@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "titaniumore", "count" : 2 }
+  ],
+  "output" : {
+	"item" : "trinkmetaltier3",
+	"count" : 1
+  },
+  "groups" : [ "trinkcrafting2", "ingredients", "all" ],
+  "duration" : 0.15
+}

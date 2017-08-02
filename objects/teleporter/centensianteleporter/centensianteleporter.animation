@@ -1,0 +1,103 @@
+{
+  "globalTagDefaults" : {
+    "destination" : "outpost"
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "platform" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 10,
+            "cycle" : 1.0,
+            "mode" : "loop"
+          }
+        }
+      },
+      "portal" : {
+        "default" : "closed",
+        "states" : {
+          "closed" : {},
+          "open" : {
+            "frames" : 6,
+            "cycle" : 0.6,
+            "mode" : "transition",
+            "transition" : "openloop"
+          },
+          "openloop" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "loop"
+          },
+          "close" : {
+            "frames" : 6,
+            "cycle" : 0.6,
+            "mode" : "transition",
+            "transition" : "closed"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "background" : {
+        "properties" : {
+          "centered" : true,
+          "fullbright" : true,
+          "zLevel" : 0
+        },
+        "partStates" : {
+          "platform" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "foreground" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 1
+        },
+        "partStates" : {
+          "platform" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "portal" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : -1,
+          "fullbright" : true
+        },
+        "partStates" : {
+          "portal" : {
+            "open" : {
+              "properties" : {
+                "image" : "<partImage>:open.<frame>"
+              }
+            },
+            "openloop" : {
+              "properties" : {
+                "image" : "<partImage>:openloop.<frame>"
+              }
+            },
+            "close" : {
+              "properties" : {
+                "image" : "<partImage>:close.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

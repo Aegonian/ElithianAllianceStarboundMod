@@ -1,0 +1,12 @@
+{
+  "type" : "avikanvillagemerchant",
+  "baseType" : "merchant",
+
+  "dropPools" : [ "avikanDeathTreasure" ],
+
+  "scriptConfig" : {
+    "questGenerator" : { "pools" : [], "enableParticipation" : false }
+  },
+  
+  "matchColorIndices" : true
+}

@@ -1,0 +1,16 @@
+{
+  "projectileName" : "theleanexplosion",
+  "image" : "theleanexplosion.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 6,
+  "speed" : 0,
+  "lightColor" : [255, 220, 90],
+  "pointLight" : true,
+  "damagePoly" : [ [-37, 0], [-28, -28], [0, -37], [28, -28], [37, 0], [28, 28], [0, 37], [-28, 28] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "damageKind" : "fire",
+  "knockback" : 30
+}

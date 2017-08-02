@@ -1,0 +1,47 @@
+{
+  "objectName" : "avikanmarketstallmodern",
+  "colonyTags" : ["avikan", "commerce", "avikanmodern"],
+  "rarity" : "Common",
+  "description" : "A market stall full of Avikan tech.",
+  "shortdescription" : "Avikan Tech Stall",
+  "race" : "avikan",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 60,
+
+  "apexDescription" : "Alien technology for sale? This might be useful...",
+  "avianDescription" : "A market stall! What are they selling?",
+  "floranDescription" : "Metal birdsss for sssale.",
+  "glitchDescription" : "Intrigued. What sort of drones are these?",
+  "humanDescription" : "Drones! The perfect toys for spying on your neighbors!",
+  "hylotlDescription" : "A collection of alien technology.",
+  "novakidDescription" : "A market stall full of alien tech.",
+
+  "aegiDescription" : "An assortment of Avikan technology.",
+  "avikanDescription" : "Whoever owns this stall selss Drahls, Droden and other tech.",
+  "erixianDescription" : "Avikan technology. I see drones, droids, lights...",
+  "trinkDescription" : "Despite their anti-AI culture, the Avikan use drones and other robots extensively.",
+  "hymidDescription" : "A collection of Avikan drones, lights and other tech.",
+  "notixDescription" : "These drones are advanced, but don't even come close to the Trinks.",
+  "jorgasianDescription" : "A variety of Avikan items, all advanced technology.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Detected market stall. Scanning for nearby merchants...",
+
+  "inventoryIcon" : "avikanmarketstallmodernicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanmarketstallmodern.png:<color>",
+
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}

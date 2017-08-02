@@ -1,0 +1,38 @@
+{
+  "id" : "avikangunrangeunlock",
+  "prerequisites" : [],
+  "title" : "^orange;Stopping the Corruption",
+  "text" : "The Vanguard is having issues with violated Drahl units on Kharmani. I need you to warp down to the planet's surface and ^green;put an end to the ^orange;Violated Elite Drahl ^green;roaming the grounds^white;. In return, ^green;you will earn yourself access to the Vanguard's shooting range ^white;here in the Starfarer's Refuge.",
+  "completionText" : "Well done, I hear that the violated Elite Drahl has been eliminated. Please, take this security card; it will allow you to open the door to the shooting range.",
+  "moneyRange" : [1000, 1000],
+  "rewards" : [ 
+	[ [ "avikangunrangepass", 1 ], [ "avikanmerittoken", 250 ], [ "avikancache", 1 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/instance.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "default" : "questGiver"
+    },
+
+    "descriptions" : {
+      "enterInstance" : "Talk to ^orange;Rokhan^reset; to warp down to the ^orange;planet below^reset;",
+      "findGoal" : "Destroy the ^orange;Violated Elite Drahl^reset;",
+      "turnIn" : "Return to ^orange;Rokhan^reset; in the ^orange;Starfarer's Refuge^reset;"
+    },
+
+    "warpEntityUid" : "ao-vanguardrecruiter",
+    "warpAction" : "instanceworld:vanguarddronebattle",
+    "warpDialog" : "/interface/confirmation/teleportconfirmation.config:vanguarddronebattle",
+
+    "goalTrigger" : "message",
+    "triggerMessage" : "violateddroneMinibossDeath",
+	
+    "goalEntityUid" : "violateddroneMiniboss",
+    "indicateGoal" : true,
+    "trackGoalEntity" : true,
+
+    "turnInEntityUid" : "ao-vanguardrecruiter"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "itemName" : "trinkslopedpanel",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "trinkslopedpanel.png",
+  "shortdescription" : "Trinkian Hull Panel",
+  "description" : "Durable metal plating, often used in the construction of spacestations and spaceships.",
+
+  "materialId" : 30067
+}

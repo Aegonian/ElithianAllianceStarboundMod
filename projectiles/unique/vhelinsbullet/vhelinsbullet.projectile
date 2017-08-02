@@ -1,0 +1,28 @@
+{
+  "projectileName" : "vhelinsbullet",
+  "image" : "vhelinsbullet.png",
+  "physics" : "vhelinsbullet",
+  "bounces" : 2,
+  "piercing" : false,
+  "animationCycle" : 0.8,
+  "frameNumber" : 4,
+  "emitters" : [ "vhelinstrail" ],
+  "damageKindImage" : "icon.png",
+  "lightColor" : [0, 65, 100],
+  "fullbright" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/vhelinsexplosion/vhelinsexplosion.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 50,
+  "timeToLive" : 4.0,
+  "damageKind" : "default",
+  "hydrophobic" : false,
+  
+  "scripts" : [ "/projectiles/scripts/thea-homingbullet.lua" ],
+  "searchRadius" : 15,
+  "baseHomingControlForce" : 1.5
+}

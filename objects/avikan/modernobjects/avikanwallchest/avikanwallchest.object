@@ -1,0 +1,59 @@
+{
+  "objectName" : "avikanwallchest",
+  "colonyTags" : ["avikan", "storage"],
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "category" : "storage",
+  "printable" : false,
+  "price" : 60,
+  "description" : "A sturdy metal wall-mounted container. For storing items.",
+  "shortdescription" : "Avikan Wall Container",
+  "race" : "avikan",
+  
+  "health" : 6,
+
+  "apexDescription" : "A well crafted metal chest.",
+  "avianDescription" : "A shiny metal container. What's inside?",
+  "floranDescription" : "Chestsss full of goodiesss!",
+  "glitchDescription" : "Observation. A sophisticated metal chest.",
+  "humanDescription" : "A metal container. Might be full of goodies!",
+  "hylotlDescription" : "A metal container, for storing your belongings.",
+
+  "aegiDescription" : "An oddly shaped metal chest.",
+  "avikanDescription" : "A sturdy metal chest. Perfect for saving our rarest possessions.",
+  "erixianDescription" : "A high quality metal chest.",
+  "trinkDescription" : "This metal chest is inefficient in its usage of space.",
+  "hymidDescription" : "A metal chest.",
+  "notixDescription" : "A well-crafted metal chest.",
+  "jorgasianDescription" : "A metal chest.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Analyzing content.",
+
+  "inventoryIcon" : "avikanwallchesticon.png",
+  "orientations" : [
+    {
+      "image" : "avikanwallchestleft.png:<color>.<key>",
+      "imagePosition" : [-8, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "left" ]
+    },
+	{
+      "image" : "avikanwallchestright.png:<color>.<key>",
+      "imagePosition" : [-8, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "right" ]
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/chest_small_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/chest_small_close.ogg" ],
+  "slotCount" : 16,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 15,
+  "autoCloseCooldown" : 3600
+}

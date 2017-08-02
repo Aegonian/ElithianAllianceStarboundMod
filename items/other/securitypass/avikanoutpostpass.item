@@ -1,0 +1,12 @@
+{
+  "itemName" : "avikanoutpostpass",
+  "price" : 0,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "Security Pass",
+  "tooltipKind" : "tool",
+  "inventoryIcon" : "avikanoutpostpass.png",
+  "largeImage" : "avikanoutpostpasslarge.png",
+  "description" : "This pass unlocks access to security consoles in the Starfarer's Refuge.",
+  "shortdescription" : "^#BA66FF;Starfarer's Refuge Pass^white;"
+}

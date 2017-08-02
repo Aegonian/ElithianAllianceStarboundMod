@@ -1,0 +1,193 @@
+{
+  "name" : "thea-desertwetlands",
+  "friendlyName" : "Wetlands",
+
+  "spawnProfile" : {
+    "groups" : [
+      {
+        "select" : 4,
+        "pool" : [ 
+          [ 0.30, "largesandcrawler" ],
+		  [ 0.025, "crustoise" ],
+		  [ 0.025, "peblit" ],
+		  [ 0.15, "kadavanvalahr" ],
+		  [ 0.20, "kadavanswarm" ],
+		  [ 0.30, "giantsandspitter" ]
+        ]
+      },
+      {
+        "select" : 2,
+        "pool" : [
+          [ 0.4, "sandwormcritter" ],
+          [ 0.3, "ravencritter" ],
+          [ 0.3, "vulturecritter" ]
+        ]
+      }
+    ],
+    "monsterParameters" : {
+      "colors" : "desert"
+    }
+  },
+
+  "hueShiftOptions" : [0],
+  
+  "mainBlock" : "sand2",
+  "subBlocks" : [ "sand", "sandstone01", "rock17" ],
+  "ores" : "surface",
+
+  "surfacePlaceables" : {
+    "grassMod" : [ "savannahgrass" ],
+    "grassModDensity" : 0.4,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:scatteredLarge",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 180,
+        "treeStemHueShiftMax" : 15,
+        "treeStemList" : [ "desertpalm", "alienpalm", "bark", "beach", "blank", "cactus", "cross", "palm", "plain", "twirl" ],
+        "treeFoliageList" : [ "palmleaves", "palmy", "roseleaves", "lushleaves", "palmlush", "elegant" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rare",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 35,
+        "treeStemHueShiftMax" : 15,
+        "treeStemList" : [ "cactus" ],
+        "treeFoliageList" : [ "cactusflowers", "bigflowers", "nothing" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "tallgrass1" ], [0.35, "tallgrass2" ], [0.35, "tallgrass3" ], [0.35, "tallgrass4" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "thea-desertwetlandsmicrodungeons" ]
+      },
+	  {
+        "mode" : "floor",
+        "priority" : 1,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:rare",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "avikanencounter" ]
+      },
+
+      // CROPS
+
+      {
+        "mode" : "floor",
+        "priority" : 0.5,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildavikancactusseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.5,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildavikanspiceplantseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables" : {
+    "grassMod" : [ "sand" ],
+    "grassModDensity" : 0.8,
+
+    "items" : [
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:undergroundCapsules",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [0.35, "capsulesmall" ], [0.35, "capsulemed" ], [0.35, "capsulebig" ] ],
+            "parameters" : { }
+          }
+        ]
+      },
+      {
+        "mode" : "ceiling",
+        "priority" : 2.0,
+        "variants" : 3,
+        "distribution" : "/biomes/distributions.config:denseMedium",
+
+        "type" : "tree",
+        "treeFoliageHueShiftMax" : 0,
+        "treeStemHueShiftMax" : 0,
+        "treeStemList" : [ "desertvine" ],
+        "treeFoliageList" : [ "" ]
+      },
+      {
+        "mode" : "floor",
+        "priority" : 0.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:minibiomeChests",
+
+        "type" : "treasureBox",
+        "treasureBoxSets" : [ "basicChest" ]
+      }
+    ]
+  }
+}

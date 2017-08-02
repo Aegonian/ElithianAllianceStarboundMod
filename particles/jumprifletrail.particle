@@ -1,0 +1,21 @@
+{
+  "kind" : "jumprifletrail",
+  "definition" : {
+    "type" : "ember",
+    "size" : 1.0,
+    "color" : [255, 167, 25, 255],
+    "fade" : 0.9,
+    "destructionAction" : "shrink",
+    "destructionTime" : 1.0,
+    "initialVelocity" : [1, 0],
+    "finalVelocity" : [1, 0],
+    "approach" : [0, 20],
+    "timeToLive" : 0.9,
+    "light" : [100, 65, 0],
+    "layer" : "back",
+    "variance" : {
+      "initialVelocity" : [0, 0],
+      "size" : 2.5
+    }
+  }
+}

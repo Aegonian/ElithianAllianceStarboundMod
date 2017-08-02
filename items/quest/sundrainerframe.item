@@ -1,0 +1,11 @@
+{
+  "itemName" : "sundrainerframe",
+  "price" : 1000,
+  "rarity" : "Essential",
+  "category" : "Quest Item",
+  "tooltipKind" : "thea-unique",
+  "inventoryIcon" : "sundrainerframe.png",
+  "description" : "Part of the frame of an ancient and powerful weapon.",
+  "shortdescription" : "^orange;Ancient Weapon Frame^white;",
+  "itemTags" : [ "questitem" ]
+}

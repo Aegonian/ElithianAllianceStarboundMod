@@ -1,0 +1,61 @@
+{
+  "objectName" : "avikantanningrack",
+  "colonyTags" : ["avikan", "cooking"],
+  "printable" : false,
+  "price" : 350,
+  "rarity" : "Rare",
+  "category" : "crafting",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/avikanleathercrafting.config",
+	"paneLayoutOverride" : {
+	  "windowtitle" : {
+		"title" : " Tanning Rack",
+		"subtitle" : " ^#b9b5b2;Leather furniture and items",
+		"icon" : {
+		  "file" : "/interface/crafting/craftingavikanleather.png"
+		}
+	  }
+	},
+	"filter" : [ "avikanleathercrafting" ]
+  },
+  "description" : "The tanning rack is used for constructing items made of monster leather.",
+  "shortdescription" : "^orange;Nomada Tanning Rack^white;",
+  "race" : "avikan",
+
+  "apexDescription" : "A simple tanning rack. I can craft items made of leather here.",
+  "avianDescription" : "Tanning racks are primitive tools, but they're still very usable.",
+  "floranDescription" : "Floran use tanning rack to craft leather from monsster sskin...",
+  "glitchDescription" : "Displeased. Tanning leather is a very time consuming practise.",
+  "humanDescription" : "A primitive tool, but this tanning rack should allow me to craft some nice leather items.",
+  "hylotlDescription" : "A tanning rack. It saddens me to think that this skin once belonged to a living, breathing creature.",
+  "novakidDescription" : "A tannin' rack? Let's go make me some new boots!",
+
+  "aegiDescription" : "All the equipment you need for crafting leather items.",
+  "avikanDescription" : "A traditional tanning rack. I can craft many leather items here.",
+  "erixianDescription" : "A tool from ancient times. Who still uses such things these days?",
+  "trinkDescription" : "A tanning rack. It does its job, but not very efficiently.",
+  "hymidDescription" : "Leather isn't the prettiest material, but items crafted from it are certainly tough.",
+  "notixDescription" : "I could craft some leather items here.",
+  "jorgasianDescription" : "Tanning racks are still widely used amongst the Avikan.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Analysis complete. Tanning rack. Used to construct equipment and other items made of leather.",
+  
+  "inventoryIcon" : "avikantanningrackicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikantanningrack.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "npcToy" : {}
+}

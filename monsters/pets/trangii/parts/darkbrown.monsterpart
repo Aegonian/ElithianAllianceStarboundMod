@@ -1,0 +1,9 @@
+{
+  "name" : "darkbrown",
+  "category" : "trangii",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "darkbrown.png"
+  }
+}

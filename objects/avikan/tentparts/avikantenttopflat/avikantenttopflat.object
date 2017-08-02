@@ -1,0 +1,44 @@
+{
+  "objectName" : "avikantenttopflat",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 65,
+  "description" : "A tent roof decorated in the style of the Rhaiod.",
+  "shortdescription" : "Rhaiod Top Sheet",
+  "race" : "avikan",
+
+  "apexDescription" : "A purple tent roof.",
+  "avianDescription" : "A tent roof made of purple fabric.",
+  "floranDescription" : "Purple tent roofsss.",
+  "glitchDescription" : "Observation. A purple-coloured tent roof.",
+  "humanDescription" : "A sheet of purple fabric, it functions as a tent roof.",
+  "hylotlDescription" : "This tent roof is coloured an odd purple.",
+
+  "aegiDescription" : "A top sheet decorated with the colours of the Rhaiod.",
+  "avikanDescription" : "The top sheet of a Rhaiod tent. It always stands out in our camps.",
+  "erixianDescription" : "An oddly-coloured top sheet.",
+  "trinkDescription" : "This top sheetis decorated with the colours of the Rhaiod.",
+  "hymidDescription" : "The colour of this tent roof reminds me of the Gods.",
+  "notixDescription" : "A purple top sheet.",
+  "jorgasianDescription" : "A tent roof made of a purple fabric.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Top sheet. Colour suggests this tent belongs to the Rhaiod.",
+
+  "inventoryIcon" : "avikantenttopflaticon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikantenttopflat.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "collision" : "solid"
+    }
+  ]
+}

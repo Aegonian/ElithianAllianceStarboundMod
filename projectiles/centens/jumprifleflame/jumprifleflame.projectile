@@ -1,0 +1,31 @@
+{
+  "projectileName" : "jumprifleflame",
+  "physics" : "stickybomb",
+  "bounces" : -1,
+  "timeToLive" : 5,
+  "speed" : 20,
+  "image" : "jumprifleflame.png",
+  "orientationLocked" : true,
+  "flippable" : true,
+  "animationCycle" : 0.8,
+  "lightColor" : [235, 126, 2],
+  "fullbright" : true,
+  "frameNumber" : 8,
+  "emitters" : [ "jumprifleflames" ],
+  "piercing" : true,
+  "damagePoly" : [ [-6, 0], [-4, -4], [0, -6], [4, -4], [6, 0], [4, 4], [0, 6], [-4, 4] ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/jumpriflesmoke/jumpriflesmoke.config"
+    }
+  ],
+  "damageKind" : "jumpweapon",
+  "universalDamage" : true,
+  "statusEffects" : [
+    "jumprifleburn"
+  ],
+  "hydrophobic" : true,
+  "scripts" : [ "/projectiles/scripts/thea-uprightprojectile.lua" ],
+  "rotateInAir" : false
+}

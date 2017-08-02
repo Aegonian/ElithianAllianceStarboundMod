@@ -1,0 +1,29 @@
+{
+  "projectileName" : "zaheedsword",
+  "physics" : "thea-zaheedsword",
+  "bounces" : 0,
+  "image" : "zaheedsword.png",
+  "animationCycle" : 0.6,
+  "frameNumber" : 8,
+  "flippable" : true,
+  "emitters" : [ "avikanenergytrail", "avikanenergytrail2" ],
+  "fullbright" : true,
+  "power" : 20,
+  "damagePoly" : [ [-18, 0], [-12, -12], [0, -18], [12, -12], [18, 0], [12, 12], [0, 18], [-12, 12] ],
+  "knockback" : 10,
+  "piercing" : true,
+  "knockbackDirectional" : true,
+  "timeToLive" : 30,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/unique/zaheedsword/zaheedswordexplosion.config"
+    }
+  ],
+  "damageKind" : "default",
+  "hydrophobic" : false,
+
+  "scripts" : ["/projectiles/scripts/thea-throwingspear.lua"],
+  "lifetimeAfterCollision" : 0.025
+}

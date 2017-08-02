@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "monsterleather", "count" : 4 },
+	{ "item" : "avikanstring", "count" : 1 },
+	{ "item" : "liquidwater", "count" : 25 }
+  ],
+  "output" : { "item" : "avikanwateringsack", "count" : 1 },
+  "groups" : [ "avikanbonecrafting", "tools", "all" ]
+}

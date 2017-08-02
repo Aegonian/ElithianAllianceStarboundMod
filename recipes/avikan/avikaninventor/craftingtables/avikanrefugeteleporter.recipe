@@ -1,0 +1,15 @@
+{
+  "input" : [
+    { "item" : "avikanmetal", "count" : 12 },
+    { "item" : "avikandarkmetal", "count" : 8 },
+    { "item" : "avikancircuitry", "count" : 4 },
+    { "item" : "monsterclaws", "count" : 3 },
+	{ "item" : "teleportercore", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "avikanrefugeteleporter",
+    "count" : 1
+  },
+  "duration" : 5,
+  "groups" : [ "avikaninventor", "craftingstations", "all" ]
+}

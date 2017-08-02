@@ -1,0 +1,135 @@
+{
+  "itemName" : "centens-deathseeker",
+  "price" : 1500,
+  "inventoryIcon" : "centens-deathseekericon.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;A mysterious weapon that fires enemy-seeking orbs.",
+  "shortdescription" : "^orange;Deathseeker^white;",
+  "level" : 6,
+  "tooltipKind" : "thea-chargedgun-unique",
+  "category" : "Volley Launcher",
+  "itemTags" : ["weapon","ranged","centens","theaUnique"],
+  "twoHanded" : true,
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "centens-deathseeker" },
+  
+  "meritTokenValue" : 100,
+  
+  "cursor" : "/cursors/thea-dottedreticle.cursor",
+  
+  "animation" : "centens-deathseeker.animation",
+  "animationParts" : {
+    "gun" : "centens-deathseeker.png",
+    "lights" : "centens-deathseekerlights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/deathseekermuzzle.png",
+    "charge" : "centens-deathseekercharge.png"
+  },
+  "animationCustom" : {
+	"animatedParts" : {
+      "parts" : {
+        "gun" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [0.4, 0.3]
+		  }
+		},
+		"lights" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [0.4, 0.3]
+		  }
+		},
+		"charge" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [0.4, 0.3]
+		  }
+		}
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/centens_jumprifle1.ogg" ],
+	  "chargeLoop" : [ "/sfx/melee/charge_up2.ogg" ],
+	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.4, 0.3],
+  "muzzleOffset" : [1.1, 0.0],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-chargedshot.lua"],
+    "class" : "TheaChargedShot",
+
+    "chargeTime" : 1.0,
+    "baseDamage" : 5,
+    "baseEnergyUsage" : 40,
+    "inaccuracy" : 2.0,
+	
+	"walkWhileFiring" : true,
+	
+	"cooldownTime" : 0.8,
+
+    "projectileType" : "deathseekerbullet",
+	"projectileCount" : 8,
+	"projectileParameters" : {
+      "knockback" : 20
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "charge" : {
+        "armRotation" : -2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 7,
+        "weaponRotation" : 7,
+		"weaponOffset" : [-0.2, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.5,
+        "armRotation" : 7,
+        "weaponRotation" : 7,
+		"weaponOffset" : [-0.2, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "discharge" : {
+        "duration" : 0.1,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+	}
+  },
+
+  "builder" : "/items/buildscripts/thea-buildchargedgun.lua"
+}

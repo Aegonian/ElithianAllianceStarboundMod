@@ -1,0 +1,6 @@
+[
+  { "op" : "add",
+	"path" : "/scriptConfig/followUp",
+	"value" : "alliancestorystart"
+  }
+]

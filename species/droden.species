@@ -1,0 +1,500 @@
+{
+  "kind" : "droden",
+
+  "charCreationTooltip" : {
+      "title" : "Droden",
+      "subTitle" : "Servants of the Avikan",
+      "description" : "The Droden were created by the Avikan as expendable soldiers to use in their war against the Theleans. After their failed uprising during the Droden War, a ban was placed on the creation of new AIs, and nowadays only few true AI remain."
+  },
+  
+  "playerSpecies" : true,
+  "humanoidConfig" : "/species/types/thea-robotoid.config",
+  "nameGen" : [ "/species/drodennamegen.config:names", "/species/drodennamegen.config:names" ],
+  "ouchNoises" : [ "/sfx/humanoid/droden_hurt_1.ogg", "/sfx/humanoid/droden_hurt_1.ogg" ],
+  "charGenTextLabels" : [ "Paint colour", "Pattern", "N/A", "N/A", "Antenna", "Accent colour", "N/A", "N/A", "DRODEN", "Personality" ],
+  "skull" : "/humanoid/droden/dead.png",
+  "effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=ffbe00FF?replace=31a6ffFF=ff6a00FF",
+  "defaultBlueprints" : {
+    "tier1" : [
+
+//NEW in v2.2.3
+	  { "item" : "avikancargodoor" },
+	  { "item" : "avikanthickhatch" },
+	  { "item" : "avikanthickhatchplatform" },
+
+//NEW in v2.2.2
+	  { "item" : "drodenmannequin" },
+	  { "item" : "avikanwallswitch" },
+	  { "item" : "avikanflare" },
+	  { "item" : "avikanglowstick" },
+	  { "item" : "avikanrefugeteleporter" },
+	  { "item" : "avikanrailhook" },
+	  { "item" : "avikanrailtram" },
+	  { "item" : "avikanrailplatform" },
+	  { "item" : "avikanslopedglass" },
+	  { "item" : "avikandarkrail" },
+	  { "item" : "avikanrail" },
+	  { "item" : "avikanrailcrafting" },
+	  { "item" : "avikanshippingcontainer" },
+	  { "item" : "avikansprinkler" },
+
+//NEW in v2.2.1
+	  { "item" : "avikanslopedpanel" },
+	  { "item" : "avikanvanguardtapestry" },
+	  { "item" : "avikanvanguardtapestry1" },
+	  { "item" : "avikanweaponrack" },
+	  { "item" : "avikanstoragelocker" },
+
+//NEW in v2.1.6
+	  { "item" : "avikanshippanel" },
+	  { "item" : "avikancookingstove" },
+
+//NEW in v2.1.5
+	  { "item" : "avikanshiprailing" },
+	  { "item" : "avikanspotlight" },
+	  { "item" : "avikanlargepressureplate" },
+	  { "item" : "avikanmedicalsyringe" },
+	  { "item" : "avikanmedicalkit" },
+	  { "item" : "avikanbandage" },
+	  { "item" : "droden-pistol" },
+	  { "item" : "droden-assaultrifle" },
+	  { "item" : "droden-sniperrifle" },
+	  { "item" : "avikanturret" },
+	  { "item" : "avikanmissileturret" },
+	  { "item" : "avikanshieldgenerator" },
+	  { "item" : "avikanalarm" },
+	  { "item" : "avikanmedcabinet" },
+	  { "item" : "avikankeypad" },
+	  { "item" : "avikanweaponchest" },
+	  { "item" : "avikanpettether" },
+	  { "item" : "avikanpethealingstation" },
+	  { "item" : "avikan-nomadashortbow" },
+	
+//NEW in v2.1.4
+	  { "item" : "avikanhatch" },
+	  { "item" : "avikanhatchplatform" },
+	  { "item" : "avikanshipdoor" },
+	  { "item" : "avikanshiplight" },
+	  { "item" : "avikanstatuegod" },
+	  { "item" : "avikanstoreshelf" },
+	  { "item" : "avikanstairsplatform" },
+	  { "item" : "avikanthickstairsplatform" },
+	  { "item" : "avikanhoe" },
+	  { "item" : "avikanwateringsack" },
+	  { "item" : "avikanmarketstallmodern" },
+	  { "item" : "avikanbutton" },
+	  { "item" : "avikansmallbutton" },
+	  { "item" : "avikanpressureplate" },
+	
+// Empty Hands
+      { "item" : "avikanclimbingrope" },
+      { "item" : "avikaninventor" },
+      { "item" : "flagavikan" },
+	  
+// Avikan Furnace 1
+      { "item" : "avikandarkmetal" },
+	  { "item" : "avikanmetal" },
+	  { "item" : "avikancircuitry" },
+	  { "item" : "avikandyes" },
+	  { "item" : "avikanglassitem" },
+	  { "item" : "avikanpurpledyes" },
+	  { "item" : "connectorstrip" },
+	  
+// Avikan Furnace 2
+	  { "item" : "avikanmetaltier5" },
+	  { "item" : "avikanmetaltier6" },
+	  { "item" : "avikanbattery" },
+	  { "item" : "avikanmacrochip" },
+	  { "item" : "avikanvolatileliquid" },
+	  
+// Avikan Inventor 1
+	  { "item" : "avikanbonecrafting" },
+	  { "item" : "avikancookingplate" },
+	  { "item" : "avikanfurnace" },
+	  { "item" : "avikanleathercrafting" },
+	  { "item" : "drodenframecrafting" },
+	  { "item" : "avikanbreathprotectionback" },
+	  { "item" : "avikancoldprotectionback" },
+	  { "item" : "avikanradiationprotectionback" },
+	  { "item" : "avikantier2beacon" },
+	  { "item" : "avikantier3beacon" },
+	  { "item" : "avikantier4beacon" },
+	  
+// Avikan Inventor 2
+	  { "item" : "avikancookingstation" },
+	  { "item" : "avikanmetalcrafting" },
+	  { "item" : "avikanheatprotectionback" },
+	  { "item" : "avikantier5beacon" },
+	  { "item" : "avikantier6beacon" },
+	  { "item" : "avikantiervanguardbeacon" },
+	  
+// Bonecrafting 1
+	//Armour
+	  //EMPTY
+	  
+	//Consumables
+	  { "item" : "avikanjavelin" },
+	  { "item" : "avikanspiketrap" },
+	  { "item" : "avikansandbomb" },
+	  
+	//Furniture
+	  { "item" : "avikanbonetable" },
+	  { "item" : "avikanbonetable2" },
+	  { "item" : "avikandrink" },
+	  { "item" : "avikanfoodplate" },
+	  { "item" : "avikanmannequin" },
+	  { "item" : "avikanspearrack" },
+	  { "item" : "avikantrough" },
+	  
+	//Weapons
+	  //Hunting
+	  { "item" : "avikanhuntingknife" },
+	  { "item" : "avikan-tier1bow" },
+	  { "item" : "avikantier2huntingspear" },
+	  //Tier 1
+	  { "item" : "avikanboneshield" },
+	  { "item" : "avikantier1axe" },
+	  { "item" : "avikantier1broadsword" },
+	  { "item" : "avikantier1dagger" },
+	  { "item" : "avikantier1hammer" },
+	  { "item" : "avikantier1shortsword" },
+	  { "item" : "avikantier1spear" },
+	  //Tier 2
+	  { "item" : "avikantier2axe" },
+	  { "item" : "avikantier2broadsword" },
+	  { "item" : "avikantier2dagger" },
+	  { "item" : "avikantier2hammer" },
+	  { "item" : "avikantier2shortsword" },
+	  { "item" : "avikantier2spear" },
+	  
+// Bonecrafting 2
+	//Armour
+	  //EMPTY
+	  
+	//Consumables
+	  { "item" : "avikanjavelin2" },
+	  { "item" : "avikanpoisonspiketrap" },
+	  { "item" : "avikantarspiketrap" },
+	  
+	//Furniture
+	  //EMPTY
+	  
+	//Weapons
+	  //Hunting
+	  { "item" : "avikan-tier3bow" },
+	  { "item" : "avikantier4huntingspear" },
+	  //Tier 3
+	  { "item" : "avikantier3axe" },
+	  { "item" : "avikantier3broadsword" },
+	  { "item" : "avikantier3dagger" },
+	  { "item" : "avikantier3hammer" },
+	  { "item" : "avikantier3shortsword" },
+	  { "item" : "avikantier3spear" },
+	  //Tier 4
+	  { "item" : "avikantier4axe" },
+	  { "item" : "avikantier4broadsword" },
+	  { "item" : "avikantier4dagger" },
+	  { "item" : "avikantier4hammer" },
+	  { "item" : "avikantier4shortsword" },
+	  { "item" : "avikantier4spear" },
+	  
+// Leathercrafting 1
+	//Furniture
+	  //Tent Obects
+	  { "item" : "avikanbed" },
+	  { "item" : "avikachair" },
+	  { "item" : "avikanchest" },
+	  { "item" : "avikancurtain" },
+	  { "item" : "avikanflagtapestry" },
+	  { "item" : "avikanlargechair" },
+	  { "item" : "avikanlongcurtain" },
+	  { "item" : "avikantapestry" },
+	  { "item" : "avikantapestry1" },
+	  { "item" : "avikantapestryroll" },
+	  { "item" : "avikantapestryrolls" },
+	  { "item" : "avikantent" },
+	  { "item" : "avikantentdoor" },
+	  { "item" : "avikanwatersack" },
+	  { "item" : "avikanwidetapestry" },
+	  //Tent Parts
+	  { "item" : "avikancanopy" },
+	  { "item" : "avikanentry" },
+	  { "item" : "avikanopencanopy" },
+	  { "item" : "avikansheet" },
+	  { "item" : "avikantalltenttop" },
+	  { "item" : "avikantentside" },
+	  { "item" : "avikantenttop" },
+	  { "item" : "avikantenttopmid" },
+	  
+	//Ingredients
+	  { "item" : "avikanstring" },
+	  { "item" : "monsterleather" },
+	  
+	//Materials
+	  { "item" : "avikandecoleather" },
+	  { "item" : "avikanleather" },
+	  { "item" : "avikantentpole" },
+	  
+// Leathercrafting 2
+	//Furniture
+	  //Tent Obects
+	  { "item" : "avikanclothtapestry" },
+	  { "item" : "avikanpurpletapestry" },
+	  { "item" : "avikanpurpletapestry1" },
+	  { "item" : "avikantentdoor2" },
+	  { "item" : "avikantentdoor3" },
+	  //Tent Parts
+	  { "item" : "avikanentry2" },
+	  { "item" : "avikanentry3" },
+	  { "item" : "avikansidecanopy" },
+	  { "item" : "avikansmallsheet" },
+	  { "item" : "avikantallcanopy" },
+	  { "item" : "avikantalltenttop2" },
+	  { "item" : "avikantalltenttop3" },
+	  { "item" : "avikantentside2" },
+	  { "item" : "avikantenttop2" },
+	  { "item" : "avikantenttop3" },
+	  { "item" : "avikantenttopflat" },
+	  
+	//Ingredients
+	  { "item" : "avikancloth" },
+	  { "item" : "avikanpurplecloth" },
+	  
+	//Materials
+	  { "item" : "avikanfabric" },
+	  { "item" : "avikanfabrictentpole" },
+	  { "item" : "avikanpurplefabric" },
+	  { "item" : "avikanpurplefabrictentpole" },
+	  
+// Metalcrafting
+	//Armour
+	  //Uncategorized
+	  { "item" : "avikanmodernquiver" },
+	  
+	//Consumables
+	  { "item" : "avikanexplosive" },
+	  { "item" : "avikanthrowablegrenade" },
+	  
+	//Furniture
+	  //Displays
+	  { "item" : "avikanharpoondisplay" },
+	  { "item" : "avikanlinerifledisplay" },
+	  { "item" : "avikanpistoldisplay" },
+	  { "item" : "avikanrifledisplay" },
+	  { "item" : "avikanrocketdisplay" },
+	  //Misc
+	  { "item" : "avikandecorativeplant" },
+	  { "item" : "avikandecorativeplant2" },
+	  { "item" : "avikanexplosivebarrel" },
+	  { "item" : "avikanfoodbox" },
+	  { "item" : "avikangem" },
+	  { "item" : "avikanmarketstallempty" },
+	  { "item" : "avikanmarketstallfood" },
+	  { "item" : "avikanmarketstallleather" },
+	  { "item" : "avikanmarketstallsmall" },
+	  { "item" : "avikanmarketstallwater" },
+	  { "item" : "avikanmarketstallweapons" },
+	  { "item" : "avikanstand" },
+	  { "item" : "avikantallgem" },
+	  //Modern Objects
+	  { "item" : "avikanantenna" },
+	  { "item" : "avikanantenna2" },
+	  { "item" : "avikanblastdoor" },
+	  { "item" : "avikancomputer" },
+	  { "item" : "avikancrane" },
+	  { "item" : "avikancrate" },
+	  { "item" : "avikancratecovered" },
+	  { "item" : "avikangenerator" },
+	  { "item" : "avikangroundlight" },
+	  { "item" : "avikanhoverbikecovered" },
+	  { "item" : "avikanlargecontainer" },
+	  { "item" : "avikanlargecrate" },
+	  { "item" : "avikanlargeshipconsole" },
+	  { "item" : "avikanlightorb" },
+	  { "item" : "avikanlightstrip" },
+	  { "item" : "avikanlightstrip2" },
+	  { "item" : "avikanmodernbed" },
+	  { "item" : "avikanmodernchair" },
+	  { "item" : "avikanmodernchest" },
+	  { "item" : "avikanmodernspearrack" },
+	  { "item" : "avikanmoderntable" },
+	  { "item" : "avikanmoderntable2" },
+	  { "item" : "avikanmonitor" },
+	  { "item" : "avikanpillar" },
+	  { "item" : "avikanshelf" },
+	  { "item" : "avikanshipchair" },
+	  { "item" : "avikanshipconsole" },
+	  { "item" : "avikanslimtable" },
+	  { "item" : "avikansmallcontainer" },
+	  { "item" : "avikansmalllightorb" },
+	  { "item" : "avikansmallwatercontainer" },
+	  { "item" : "avikanswitch" },
+	  { "item" : "avikanvaultdoor" },
+	  { "item" : "avikanvehiclejumpgate" },
+	  { "item" : "avikanwallchest" },
+	  { "item" : "avikanwatercontainer" },
+	  { "item" : "avikanfridge" },
+	  
+	//Ingredients
+	  { "item" : "avikancapacitor" },
+	  { "item" : "avikancoreenergetic" },
+	  { "item" : "avikancorepowerful" },
+	  { "item" : "avikancorevigorous" },
+	  { "item" : "avikanmagazine" },
+	  { "item" : "avikantransmitter" },
+	  { "item" : "avikanvibrocore" },
+	  { "item" : "remotejumpgatecontroller" },
+	  
+	//Materials
+	  { "item" : "avikandarkgroundpanel" },
+	  { "item" : "avikandarkpanel" },
+	  { "item" : "avikanfarmpanel" },
+	  { "item" : "avikanfence" },
+	  { "item" : "avikanglass" },
+	  { "item" : "avikangroundpanel" },
+	  { "item" : "avikanheavypipe" },
+	  { "item" : "avikanpanel" },
+	  { "item" : "avikanplating" },
+	  { "item" : "avikanpowerpanel" },
+	  { "item" : "avikanshipfloor" },
+	  { "item" : "avikansmoothpanel" },
+	  { "item" : "avikansupportpanel" },
+	  { "item" : "avikanthickpipebottom" },
+	  { "item" : "avikanthickpipetop" },
+	  //Platforms
+	  { "item" : "avikandarkplatform" },
+	  { "item" : "avikanplatform" },
+	  { "item" : "avikanthickplatform" },
+	  
+	//Weapons
+	  //Hunting
+	  { "item" : "avikan-harpoongun" },
+	  { "item" : "avikanhuntingknife2" },
+	  { "item" : "avikan-nomadabow" },
+	  { "item" : "avikantier6huntingspear" },
+	  //Melee Tier 5
+	  { "item" : "avikanmetalshield" },
+	  { "item" : "avikantier5axe" },
+	  { "item" : "avikantier5broadsword" },
+	  { "item" : "avikantier5dagger" },
+	  { "item" : "avikantier5hammer" },
+	  { "item" : "avikantier5shortsword" },
+	  { "item" : "avikantier5spear" },
+	  //Melee Tier 6
+	  { "item" : "avikantier6axe" },
+	  { "item" : "avikantier6broadsword" },
+	  { "item" : "avikantier6dagger" },
+	  { "item" : "avikantier6hammer" },
+	  { "item" : "avikantier6shortsword" },
+	  { "item" : "avikantier6spear" },
+	  { "item" : "drodenlongsword" },
+	  { "item" : "drodenshortsword" },
+	  //Ranged Tier 5
+	  { "item" : "avikan-assaultrifle" },
+	  { "item" : "avikan-shotgun" },
+	  { "item" : "avikan-skiprifle" },
+	  //Ranged Tier 5
+	  { "item" : "avikan-assaultrifle2" },
+	  { "item" : "avikan-rocketlauncher" },
+	  { "item" : "avikan-sniperirlfe" },
+	  { "item" : "avikan-tier6linerifle" },
+	  //Uncategorized
+	  { "item" : "avikangrapplinghook" },
+	  
+// Frame Crafting 1
+	  { "item" : "droden-tier1chest" },
+	  { "item" : "droden-tier1head" },
+	  { "item" : "droden-tier1legs" },
+	  { "item" : "droden-tier2chest" },
+	  { "item" : "droden-tier2head" },
+	  { "item" : "droden-tier2legs" },
+	  
+// Frame Crafting 2
+	  { "item" : "droden-tier3chest" },
+	  { "item" : "droden-tier3head" },
+	  { "item" : "droden-tier3legs" },
+	  { "item" : "droden-tier4chest" },
+	  { "item" : "droden-tier4head" },
+	  { "item" : "droden-tier4legs" },
+	  
+// Frame Crafting 1
+	//Accelerator
+	  { "item" : "droden-tier5achest" },
+	  { "item" : "droden-tier5ahead" },
+	  { "item" : "droden-tier5alegs" },
+	  { "item" : "droden-tier6achest" },
+	  { "item" : "droden-tier6ahead" },
+	  { "item" : "droden-tier6alegs" },
+	//Manipulator
+	  { "item" : "droden-tier5mchest" },
+	  { "item" : "droden-tier5mhead" },
+	  { "item" : "droden-tier5mlegs" },
+	  { "item" : "droden-tier6mchest" },
+	  { "item" : "droden-tier6mhead" },
+	  { "item" : "droden-tier6mlegs" },
+	//Seperator
+	  { "item" : "droden-tier5schest" },
+	  { "item" : "droden-tier5shead" },
+	  { "item" : "droden-tier5slegs" },
+	  { "item" : "droden-tier6schest" },
+	  { "item" : "droden-tier6shead" },
+	  { "item" : "droden-tier6slegs" }
+	
+    ]
+  },
+  "altOptionAsFacialMask" : true,
+  "headOptionAsHairColor" : true,
+  "bodyColorAsFacialMaskSubColor" : true,
+  "hairColorAsBodySubColor" : true,
+  "genders" : [
+    {
+      "name" : "male",
+      "image" : "/interface/title/drodenwarframe.png",
+      "characterImage" : "/interface/title/drodenmale.png",
+	  "hairGroup" : "pattern",
+      "hair" : [ "1", "male2", "male3", "male4", "male5" ],
+      "shirt" : [ "thea-hiddenchest" ],
+      "pants" : [ "thea-hiddenlegs" ],
+      "facialHairGroup" : "",
+      "facialHair" : [ ],
+      "facialMaskGroup" : "antenna",
+      "facialMask" : [ "1", "2" ]
+    },
+    {
+      "name" : "female",
+      "image" : "/interface/title/drodenrepairframe.png",
+      "characterImage" : "/interface/title/drodenfemale.png",
+	  "hairGroup" : "pattern",
+      "hair" : [ "1", "fem2", "fem3", "fem4", "fem5" ],
+      "shirt" : [ "thea-hiddenchest" ],
+      "pants" : [ "thea-hiddenlegs" ],
+      "facialHairGroup" : "",
+      "facialHair" : [ ],
+      "facialMaskGroup" : "antenna",
+      "facialMask" : [ "1", "2" ]
+    }
+  ],
+  "bodyColor" : [
+ // { "42301C" : "DARKER", "785F40" : "DARK  ", "A2825C" : "NORMAL", "CCAA7F" : "LIGHT " }, // Template, Brown
+  
+    { "42301C" : "412F1D", "785F40" : "775E42", "A2825C" : "A0805E", "CCAA7F" : "CAA881" }, // Brown
+	{ "42301C" : "5E4536", "785F40" : "A5885E", "A2825C" : "C9AC80", "CCAA7F" : "E9D3AB" }, // Sand
+	{ "42301C" : "322314", "785F40" : "5C462E", "A2825C" : "7B5F42", "CCAA7F" : "9B7D5C" }, // Dark Brown
+	{ "42301C" : "323232", "785F40" : "626262", "A2825C" : "858585", "CCAA7F" : "ADADAD" }  // Stripped Metal
+  ],
+  "undyColor" : [ "" ],
+  "hairColor" : [
+ // { "553428" : "DARKER", "A35638" : "DARK  ", "C97354" : "NORMAL", "EFA386" : "LIGHT " }, // Template, Reddish Orange
+ 
+    // Body Colour as Hair Colour 
+    { "553428" : "412F1D", "A35638" : "775E42", "C97354" : "A0805E", "EFA386" : "CAA881" }, // Brown
+	{ "553428" : "5E4536", "A35638" : "A5885E", "C97354" : "C9AC80", "EFA386" : "E9D3AB" }, // Sand
+	{ "553428" : "322314", "A35638" : "5C462E", "C97354" : "7B5F42", "EFA386" : "9B7D5C" }, // Dark Brown
+	{ "553428" : "323232", "A35638" : "626262", "C97354" : "858585", "EFA386" : "ADADAD" }, // Stripped Metal
+    // Unique Hair Colour
+	{ "553428" : "54250D", "A35638" : "8E421C", "C97354" : "E07C3E", "EFA386" : "F2A071" }, // Orange
+	{ "553428" : "540D0D", "A35638" : "8E1C1C", "C97354" : "E0463E", "EFA386" : "F2716A" }, // Red
+	{ "553428" : "543D0D", "A35638" : "8E681C", "C97354" : "E0B23E", "EFA386" : "F4D489" }, // Yellow
+	{ "553428" : "191919", "A35638" : "373737", "C97354" : "595959", "EFA386" : "858585" }  // Black
+  ]
+}

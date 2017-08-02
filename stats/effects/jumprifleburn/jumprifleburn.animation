@@ -1,0 +1,24 @@
+{
+  "particleEmitters" : {
+    "flames" : {
+      "enabled" : true,
+      "emissionRate" : 7.0,
+      "particles" : [
+        {
+          "particle" : "jumprifleburn"
+        }
+      ]
+    }
+  },
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [200, 130, 0]
+    }
+  },
+  "sounds" : {
+    "burn" : [ "/sfx/projectiles/flame_burning.ogg" ],
+	"burst" : [ "/sfx/projectiles/fireball_spit.ogg" ]
+  }
+}

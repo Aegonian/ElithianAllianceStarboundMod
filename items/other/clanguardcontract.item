@@ -1,0 +1,13 @@
+{
+  "itemName" : "clanguardcontract",
+  "price" : 0,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "Contract",
+  "tooltipKind" : "tool",
+  "inventoryIcon" : "clanguardcontract.png",
+  "largeImage" : "clanguardcontractlarge.png",
+  "description" : "A contract for hiring the services of the Clanguard.",
+  "shortdescription" : "^#BA66FF;Clanguard Contract^white;",
+  "itemTags" : [ "clanguardcontract" ]
+}

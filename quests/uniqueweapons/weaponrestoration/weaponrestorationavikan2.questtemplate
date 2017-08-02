@@ -1,0 +1,41 @@
+{
+  "id" : "weaponrestorationavikan2",
+  "prerequisites" : [ "weaponrestorationavikan" ],
+  "title" : "^orange;Restoring The Past II",
+  "text" : "Now that we have a shard of the Xanafir, we can start repairing the weapon. The weaponsmith, Ayurin, can help us with that. ^green;Take your ^orange;Broken Spear ^green;and the ^orange;Xanafian Shard ^green;to Ayurin^white;, and he'll tell you what he needs to make the repairs.",
+  "completionText" : "Is that truly a Vha'leihan Spear? Incredible! I would be honoured to repair it for you, Captain!",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "avikanmerittoken", 5 ] ]
+  ],
+  "canBeAbandoned" : false,
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+	"portraits" : {
+      "questStarted" : "questGiver",
+      "questComplete" : {
+        "portrait" : [ {"image" : "/objects/avikan/outpost/avikangunsmith/avikangunsmithportrait.png"} ],
+        "title" : "Ayurin"
+      }
+    },
+	"followUp" : "weaponrestorationavikan3",
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "xanafianshard",
+        "count" : 1,
+        "consume" : true
+      },
+	  {
+        "type" : "gatherItem",
+        "itemName" : "avikan-brokenvhaleihanspear",
+        "count" : 1,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Visit ^orange;Ayurin ^reset;in the ^orange;Starfarer's Refuge^reset;"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "objectName" : "avikanobservatorywindow",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 40,
+  "description" : "A large reinforced window.",
+  "shortdescription" : "Avikan Observatory Window",
+  "race" : "avikan",
+
+  "apexDescription" : "This window provides an excellent view.",
+  "avianDescription" : "This window provides an excellent view.",
+  "floranDescription" : "Floran fassscinated by viewsss...",
+  "glitchDescription" : "Opinion. This window provides an excellent view.",
+  "humanDescription" : "This window provides an excellent view.",
+  "hylotlDescription" : "This window provides an excellent view.",
+  "novakidDescription" : "This window provides an excellent view.",
+
+  "aegiDescription" : "This window provides an excellent view.",
+  "avikanDescription" : "This window provides an excellent view.",
+  "erixianDescription" : "This window provides an excellent view.",
+  "trinkDescription" : "This window provides an excellent view.",
+  "hymidDescription" : "This window provides an excellent view.",
+  "notixDescription" : "This window provides an excellent view.",
+  "jorgasianDescription" : "This window provides an excellent view.",
+  "centensDescription" : "This window provides an excellent view.",
+  "dremetonDescription" : "This window provides an excellent view.",
+  "theleanDescription" : "This window provides an excellent view.",
+  "drodenDescription" : "Analysis. Glass.",
+
+  "inventoryIcon" : "avikanobservatorywindowicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanobservatorywindow.png:<color>",
+      "imagePosition" : [-16, 0],
+
+      "spaces" : [
+        [0, 0], [0, 1], [-1, 1], [-1, 2], [-2, 2], [-2, 3], [-2, 4], [-2, 5], [-2, 6], [-2, 7], [-2, 8], [-1, 8], [-1, 9], [0, 9], [0, 10]
+      ],
+      "anchors" : [],
+      "collision" : "solid",
+      "collisionSpaces" : [
+        [0, 0], [0, 1], [-1, 1], [-1, 2], [-2, 2], [-2, 3], [-2, 4], [-2, 5], [-2, 6], [-2, 7], [-2, 8], [-1, 8], [-1, 9], [0, 9], [0, 10]
+      ]
+    }
+  ]
+}

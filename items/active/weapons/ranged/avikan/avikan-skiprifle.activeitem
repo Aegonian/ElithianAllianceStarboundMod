@@ -1,0 +1,94 @@
+{
+  "itemName" : "avikan-skiprifle",
+  "price" : 250,
+  "inventoryIcon" : "avikan-skiprifle.png",
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A compact skiprifle issued to Avikan military forces.",
+  "shortdescription" : "Vanguard Skiprifle",
+  "level" : 5,
+  "tooltipKind" : "gun",
+  "category" : "Skip Rifle",
+  "itemTags" : ["weapon","ranged","machinepistol","avikan"],
+  "twoHanded" : false,
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "avikan-skiprifle.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+  },
+  "animationCustom" : {
+    "particleEmitters" : {
+      "muzzleFlash" : {
+        "particles" : [
+          { "particle" : "thea-discardedbullet", "offset" : [-1.0, 0.25] }
+        ]
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/ar5.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.5, 0.2],
+  "muzzleOffset" : [1.1, 0.1],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.3,
+    "baseDps" : 7.0,
+    "energyUsage" : 22,
+    "inaccuracy" : 0.035,
+
+    "projectileCount" : 1,
+    "burstTime" : 0.1,
+    "burstCount" : 3,
+    "fireType" : "burst",
+
+    "projectileType" : "avikanbouncebullet",
+    "projectileParameters" : {
+      "knockback" : 6
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.15,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  //"altAbilitySource" : "/items/active/weapons/ranged/altabilities/focus/focus.altability",
+  
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

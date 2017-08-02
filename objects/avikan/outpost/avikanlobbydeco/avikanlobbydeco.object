@@ -1,0 +1,45 @@
+{
+  "objectName" : "avikanlobbydeco",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 150,
+  "description" : "A palm tree to decorate your interiors.",
+  "shortdescription" : "Avikan Lobby Tree",
+  "race" : "avikan",
+  
+  "apexDescription" : "A palm tree.",
+  "avianDescription" : "The leaves of these trees remind me of wings.",
+  "floranDescription" : "Desert treesss.",
+  "glitchDescription" : "Observation. This palm tree has been planted in alien soil.",
+  "humanDescription" : "Cool, a palm tree for inside!",
+  "hylotlDescription" : "Life prospers even in the harshest of environments.",
+
+  "aegiDescription" : "This palm tree is a sign of wealth amongst the Avikan.",
+  "avikanDescription" : "A tree. This was a true sign of wealth on Kadavan, where trees were rare.",
+  "erixianDescription" : "A gorgeous palm tree! We don't have those on Heragon...",
+  "trinkDescription" : "A palm tree. The home planet of my Masters is far too cold for such a tree to survive there.",
+  "hymidDescription" : "A palm tree. This reminds me of the grand beaches on Hyzolia...",
+  "notixDescription" : "A palm tree. It requires a warm climate to survive.",
+  "jorgasianDescription" : "A palm tree. It smells fresh.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected native Kadavan flora. Please handle with care.",
+
+  "inventoryIcon" : "avikanlobbydecoicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanlobbydeco.png:<color>",
+
+      "imagePosition" : [-48, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "objectName" : "largesandcrawleraf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "legendary",
+  "category" : "actionFigure",
+  "collectablesOnPickup" : { "actionfigures" : "largesandcrawleraf" },
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"The Sandcrawler digs in and strikes with little warning.\"",
+  "shortdescription" : "Sandcrawler Figurine",
+
+  "inventoryIcon" : "largesandcrawleraf.png",
+  "orientations" : [
+    {
+      "image" : "largesandcrawleraf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "largesandcrawleraf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

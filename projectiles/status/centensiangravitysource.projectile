@@ -1,0 +1,29 @@
+{
+  "projectileName" : "centensiangravitysource",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "physics" : "illusion",
+  "pointLight" : false,
+  "speed" : 0,
+  "power" : 0.0,
+
+  "bounces" : -1,
+
+  "orientationLocked" : true,
+  
+  "timeToLive" : 0.25,
+
+  "physicsForces" : {
+    "vacuum" : {
+      "type" : "RadialForceRegion",
+      "outerRadius" : 45,
+      "innerRadius" : 2,
+      "targetRadialVelocity" : -25,
+      "controlForce" : 1500,
+      "categoryWhitelist" : ["projectile", "itemdrop"]
+    }
+  },
+
+  "clientEntityMode" : "ClientSlaveOnly",  
+  
+  "scripts" : [ "/projectiles/killable.lua" ]
+}

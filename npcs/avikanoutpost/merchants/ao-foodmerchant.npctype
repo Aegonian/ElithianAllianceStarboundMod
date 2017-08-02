@@ -1,0 +1,47 @@
+{
+  "type" : "ao-foodmerchant",
+  "baseType" : "ao-wandermerchant",
+
+  "scriptConfig" : {    
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "poolsFile" : "/npcs/merchantpools.config",
+      
+	  "categories" : {
+        "override" : [ "avikanfood" ]
+      },
+      "buyFactorRange" : [ 0.9, 1.2 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 7,
+	  
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "Produce Merchant",
+          "subtitle" : "  Fresh crops and meats."
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "avikan-merchanthead", "parameters" : { "colorIndex" : 7 } }
+            ],
+            "chest" : [
+              { "name" : "avikan-merchantchest", "parameters" : { "colorIndex" : 7 } }
+            ],
+            "legs" : [
+              { "name" : "avikan-merchantlegs", "parameters" : { "colorIndex" : 7 } }
+            ],
+            "back" : [
+              { "name" : "avikanmerchantpack", "parameters" : { "colorIndex" : 7 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

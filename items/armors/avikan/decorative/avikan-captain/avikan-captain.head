@@ -1,0 +1,49 @@
+{
+  "itemName" : "avikan-captainhead",
+  "price" : 2500,
+  "inventoryIcon" : "icons.png:head",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "headwear",
+  "description" : "^green;Avikan. ^white;A helmet worn by Honoured Captains of the Nomada.",
+  "shortdescription" : "Honoured Captain's Helmet",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "headm.png",
+  "femaleFrames" : "headf.png",
+  "mask" : "mask.png",
+
+  "colorOptions" : [
+  
+	//Colours go from LIGHT to DARK - LIGHT/MEDIUM/DARK
+	
+	//DEFAULT - NO DYE
+	/* 0- BROWN LEATHER */
+    { "e0975c" : "A3907A", "a85636" : "756553", "6f2919" : "453826" },
+	
+	//DYE COLOURS
+    /* 1- BLACK */
+    { "e0975c" : "6D6862", "a85636" : "494643", "6f2919" : "262523" },
+    /* 2- GREY - FADED BLUE */
+    { "e0975c" : "756A87", "a85636" : "5B5466", "6f2919" : "36303C" },
+    /* 3- WHITE */
+    { "e0975c" : "D1C7BC", "a85636" : "D1C7BC", "6f2919" : "6B6660" },
+    /* 4- RED */
+    { "e0975c" : "C94D2E", "a85636" : "993A23", "6f2919" : "632616" },
+    /* 5- ORANGE */
+    { "e0975c" : "FF7220", "a85636" : "BA3B1F", "6f2919" : "89370B" },
+    /* 6- YELLOW */
+    { "e0975c" : "FFA02B", "a85636" : "B76B0E", "6f2919" : "724309" },
+    /* 7- GREEN */
+    { "e0975c" : "4AB542", "a85636" : "2E7029", "6f2919" : "153513" },
+    /* 8- BLUE */
+    { "e0975c" : "3E4DAA", "a85636" : "293470", "6f2919" : "131835" },
+    /* 9- PURPLE */
+    { "e0975c" : "7D42B5", "a85636" : "4D2970", "6f2919" : "251335" },
+    /* 10- PINK */
+    { "e0975c" : "D13BB7", "a85636" : "812570", "6f2919" : "3E1235" },
+    /* 11- BROWN */
+    { "e0975c" : "C1A57C", "a85636" : "7C6A4F", "6f2919" : "44392C" }
+
+  ]
+}

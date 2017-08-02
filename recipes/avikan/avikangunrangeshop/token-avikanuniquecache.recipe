@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "avikanmerittoken", "count" : 500 }
+  ],
+  "output" : { "item" : "avikanuniquecache", "count" : 1 },
+  "groups" : [ "avikangunrangeshop" ]
+}

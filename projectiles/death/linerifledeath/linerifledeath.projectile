@@ -1,0 +1,13 @@
+{
+  "projectileName" : "linerifledeath",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/death/linerifledeath/linerifledeath.config"
+    }
+  ],
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "timeToLive" : 0
+}

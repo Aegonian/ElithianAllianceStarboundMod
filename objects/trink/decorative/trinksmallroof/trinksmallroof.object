@@ -1,0 +1,59 @@
+{
+  "objectName" : "trinksmallroof",
+  "colonyTags" : ["trink"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 200,
+  "description" : "A small, pyramid-shaped roof. For efficient modular buidings.",
+  "shortdescription" : "Small Trinkian Roof",
+  "race" : "trink",
+  
+  "health" : 8,
+
+  "apexDescription" : "A small modular roof.",
+  "avianDescription" : "A small, modular roof decorated with green lights.",
+  "floranDescription" : "Floran wonderss why roof isss pointy...",
+  "glitchDescription" : "Fascinated. This modular roof piece is packed with sensors.",
+  "humanDescription" : "A small metal pyramid for a roof? Cool!",
+  "hylotlDescription" : "A grand metal roof. Surpisingly, it is packed with sensors and communication systems.",
+
+  "aegiDescription" : "The Trinks are big fans of modular buildings. This roof will fit on pretty much every Trinkian home.",
+  "avikanDescription" : "A small metal roof, built by machines.",
+  "erixianDescription" : "A small modular roof.",
+  "trinkDescription" : "Trinkian roofs are modular, and fit on top of almost any Trinkian structure.",
+  "hymidDescription" : "A small metal roof, built by the Notician robots.",
+  "notixDescription" : "Our Trinks are excellent at building modular structures.",
+  "jorgasianDescription" : "A small modular roof.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Readings indicate high amounts of sensors inside this structure.",
+
+
+  "inventoryIcon" : "trinksmallrooficon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "trinksmallroof.png:<color>", "fullbright" : true }, { "image" : "trinksmallrooflit.png:<color>" } ],
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "solid"
+    },
+	{
+      "imageLayers" : [ { "image" : "trinksmallroofinvert.png:<color>", "fullbright" : true }, { "image" : "trinksmallroofinvertlit.png:<color>" } ],
+
+      "imagePosition" : [0, -48],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ],
+      "collision" : "solid"
+    }
+  ]
+}

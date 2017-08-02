@@ -1,0 +1,15 @@
+{
+  "itemName" : "avikanshipfloor",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "avikanshipfloor.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "shortdescription" : "Avikan Ship Floor",
+  
+  "description" : "A metal panel, coloured like sand.",
+  "glitchDescription" : "Statement. A strong metal panel.",
+  "floranDescription" : "Metal panelsss",
+
+  "materialId" : 30012
+}

@@ -1,0 +1,60 @@
+{
+  "type" : "drodenviolated",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "drodenViolatedDeathTreasure" ],
+  
+  "innateStatusEffects" : [ 
+	"theleanviolation"
+  ],
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "friendlyNpcTypes" : ["crewmemberdrodenlegion"]
+    },
+	
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Attack!"
+          ]
+        },
+        "droden" : {
+          "default" : [
+            "Error. Error. Error.",
+            "System override detected. Reboot failed. Error.",
+            "Unit malfunction detected. Attempting power down. Error.",
+            "Error. System override.",
+            "Weapon systems live. Disabling. Error.",
+            "Unit security breach. Attempting safe reboot. Error.",
+            "Frame breach detected. System integrity violated."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+			  { "name" : "droden-hackedhead" }
+			],
+            "chest" : [
+			  { "name" : "droden-hackedchest" }
+			],
+            "legs" : [
+			  { "name" : "droden-hackedlegs" }
+			],
+            "primary" : [
+              "drodenviolatedshortsword",
+			  "drodenviolatedlongsword",
+			  "droden-violatedrifle"
+            ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "itemName" : "hyveriumore",
+  "price" : 200,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "hyveriumore.png",
+  "description" : "The crystalized deposit of an otherworldy material.",
+  "shortdescription" : "Hyverium Ore",
+  "itemTags" : [ "reagent" ]
+}

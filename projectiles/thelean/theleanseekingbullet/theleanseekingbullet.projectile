@@ -1,0 +1,28 @@
+{
+  "projectileName" : "theleanseekingbullet",
+  "image" : "theleanseekingbullet.png",
+  "physics" : "laser",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "emitters" : [ "fireplasma" ],
+  "pointLight" : false,
+  "flippable" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/theleanbulletexplosion/theleanbulletexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "power" : 5.0,
+  "speed" : 150,
+  "supportsProcessing" : true,
+  "lightColor" : [150, 60, 5],
+  "fullbright" : true,
+  "knockback" : 0,
+  "damageKind" : "fireplasma",
+  
+  "scripts" : [ "/projectiles/scripts/thea-homingbullet.lua" ],
+  "searchRadius" : 15,
+  "baseHomingControlForce" : 1.25
+}

@@ -1,0 +1,14 @@
+{
+  "input" : [
+    { "item" : "avikanmetal", "count" : 2 },
+	{ "item" : "avikandarkmetal", "count" : 1 },
+	{ "item" : "avikancircuitry", "count" : 1 },
+	{ "item" : "avikanbattery", "count" : 2 }
+  ],
+  "output" : {
+    "item" : "avikantransmitter",
+    "count" : 1
+  },
+  "duration" : 0.15,
+  "groups" : [ "avikanmetalcrafting", "ingredients", "all" ]
+}

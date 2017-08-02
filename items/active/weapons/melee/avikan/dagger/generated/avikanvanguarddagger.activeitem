@@ -1,0 +1,85 @@
+{
+  "itemName" : "avikanvanguarddagger",
+  "price" : 450,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A small, but extremely sharp dagger issued to Avikan military forces.",
+  "shortdescription" : "Vanguard Dagger",
+  "tooltipKind" : "sword",
+  "category" : "dagger",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","melee","dagger","avikan"],
+
+  "animation" : "/items/active/weapons/melee/dagger/dagger.animation",
+  "animationParts" : { },
+  "animationCustom" : { },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "aimOffset" : 0.0,
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/melee/meleeslash.lua"],
+    "class" : "MeleeSlash",
+
+    "fireTime" : [0.27, 0.42],
+    "baseDps" : [7.5, 8.5],
+    "damageConfig" : {
+      "damageSourceKind" : "dagger",
+      "statusEffects" : [ ],
+      "knockbackMode" : "aim",
+      "knockbackRange" : [10, 15],
+      "timeoutGroup" : "primary"
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : -90,
+        "weaponRotation" : -10,
+        "weaponOffset" : [0, 2.25],
+
+        "allowFlip" : true,
+        "allowRotate" : true
+      },
+      "windup" : {
+        "duration" : 0.05,
+        "armRotation" : -20,
+        "weaponRotation" : -20,
+        "weaponOffset" : [0, 2.25],
+
+        "allowFlip" : true,
+        "allowRotate" : false
+      },
+      "fire" : {
+        "duration" : 0.2,
+        "armRotation" : -135,
+        "weaponRotation" : 40,
+        "weaponOffset" : [0, 2.5],
+
+        "allowFlip" : true,
+        "allowRotate" : false
+      }
+    }
+  },
+  "fireSounds" : [ "/sfx/melee/swing_dagger.ogg" ],
+
+  "builder" : "/items/buildscripts/buildweapon.lua",
+  "builderConfig" : [{
+    "nameGenerator" : "vanguardnames.config:nameGen",
+    "animationParts" : {
+      "blade" : {
+        "path" : "blade/<variant>.png",
+        "variants" : 1,
+        "paletteSwap" : true
+      },
+      "handle" : {
+        "path" : "handle/<variant>.png",
+        "variants" : 1,
+        "paletteSwap" : true
+      }
+    },
+    "altAbilities" : [ ],
+    "palette" : "/items/active/weapons/colors/melee.weaponcolors",
+    "iconDrawables" : [ "blade", "handle" ]
+  }]
+}

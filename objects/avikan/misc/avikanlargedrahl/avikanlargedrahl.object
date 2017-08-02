@@ -1,0 +1,42 @@
+{
+  "objectName" : "avikanlargedrahl",
+  "colonyTags" : ["droden"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 500,
+  "description" : "A very large inactive drone.",
+  "shortdescription" : "Inactive Elite Drahl",
+  "race" : "avikan",
+
+  "apexDescription" : "The Apex rebellion could use drones like those.",
+  "avianDescription" : "That's an unsettlingly large war drone...",
+  "floranDescription" : "Floran not ssscared of drone. Drone ssleepsss, Floran awake.",
+  "glitchDescription" : "Frightened. A drone like this could deal serious damage to a village.",
+  "humanDescription" : "That is one massive drone. Better not anger its owner...",
+  "hylotlDescription" : "A large war drone, a flying one-drone army.",
+  "novakidDescription" : "That's a massive drone if ever I saw one.",
+
+  "aegiDescription" : "A large combat drone. I would dread fighting one of these...",
+  "avikanDescription" : "An Elite Drahl. These are usually controlled by remote operators.",
+  "erixianDescription" : "A combat drone, and a large one at that.",
+  "trinkDescription" : "I would not like to fight one of these monstrosities.",
+  "hymidDescription" : "A drone like this would be a valuable ally on any battlefield.",
+  "notixDescription" : "The Avikan might not like AIs, but they are certainly fans of remotely controlled drones.",
+  "jorgasianDescription" : "A combat drone equipped with some high-powered weaponry.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected Elite Drahl unit. Status: inactive.",
+
+  "inventoryIcon" : "avikanlargedrahlicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanlargedrahl.png:<color>",
+      "imagePosition" : [-24, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

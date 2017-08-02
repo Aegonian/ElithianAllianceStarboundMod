@@ -1,0 +1,97 @@
+{
+  "projectileName" : "largejumpriflebullet",
+  "physics" : "jumpriflebullet",
+  "bounces" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "largejumpriflebullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "emitters" : [ "largejumprifletrail" ],
+  "power" : 8,
+  "speed" : 75,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+	  "file" : "/projectiles/explosions/sundrainerexplosion/sundrainerexplosion.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "jumprifleflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.015,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "jumprifleflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.015,
+      "angleAdjust" : 36
+    },
+	{
+      "action" : "projectile",
+      "type" : "jumprifleflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.015,
+      "angleAdjust" : 72
+    },
+    {
+      "action" : "projectile",
+      "type" : "jumprifleflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.015,
+      "angleAdjust" : 108
+    },
+    {
+      "action" : "projectile",
+      "type" : "jumprifleflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.015,
+      "angleAdjust" : 144
+    },
+	{
+      "action" : "projectile",
+      "type" : "jumprifleflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.015,
+      "angleAdjust" : 180
+    },
+	{
+      "action" : "projectile",
+      "type" : "jumprifleflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.015,
+      "angleAdjust" : 216
+    },
+	{
+      "action" : "projectile",
+      "type" : "jumprifleflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.015,
+      "angleAdjust" : 252
+    },
+    {
+      "action" : "projectile",
+      "type" : "jumprifleflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.015,
+      "angleAdjust" : 288
+    },
+    {
+      "action" : "projectile",
+      "type" : "jumprifleflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.015,
+      "angleAdjust" : 324
+    }
+  ],
+  "lightColor" : [225, 145, 0],
+  "fullbright" : true,
+  "damageType" : "NoDamage",
+  "damageKind" : "jumpweapon",
+  "statusEffects" : [
+    "jumprifleburn"
+  ],
+  "hydrophobic" : true
+}

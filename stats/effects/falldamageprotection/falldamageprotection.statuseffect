@@ -1,0 +1,8 @@
+{
+  "name" : "falldamageprotection",
+  "effectConfig" : {},
+
+  "scripts" : [
+    "falldamageprotection.lua"
+  ]
+}

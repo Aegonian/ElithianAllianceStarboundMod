@@ -1,0 +1,46 @@
+{
+  "projectileName" : "errasslayersbullet",
+  "image" : "errasslayersbullet.png",
+  "physics" : "lineriflebullet",
+  "bounces" : 0,
+  "piercing" : false,
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  //"emitters" : [ "errasslayerstrail", "errasslayerstrail2" ],
+  "damageKindImage" : "icon.png",
+  "lightColor" : [0, 65, 100],
+  "fullbright" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/errasslayersimpact/errasslayersimpact.config"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/unique/errasslayersbullet/trail.png",
+        "position" : [-1.0, 0],
+        "layer" : "middle",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.9,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 135,
+  "timeToLive" : 1.5,
+  "damageKind" : "default",
+  "statusEffects" : [
+    "errasslayersbomb"
+  ],
+  
+  "scripts" : [ "/projectiles/scripts/thea-linerifle.lua" ]
+}

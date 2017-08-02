@@ -1,0 +1,126 @@
+[
+	{
+	  "op": "add",
+	  "path": "/collectables/largesandcrawler",
+	  "value": 	  
+	  {
+	    "order" : 58,
+	    "monsterType" : "largesandcrawler",
+	    "icon" : "/monsters/walkers/largesandcrawler/largesandcrawlericon.png"
+	  }
+	},
+	{
+	  "op": "add",
+	  "path": "/collectables/giantsandspitter",
+	  "value": 	  
+	  {
+	    "order" : 59,
+	    "monsterType" : "giantsandspitter",
+	    "icon" : "/monsters/walkers/giantsandspitter/giantsandspittericon.png"
+	  }
+	},
+	{
+	  "op": "add",
+	  "path": "/collectables/kadavanswarm",
+	  "value": 	  
+	  {
+	    "order" : 60,
+	    "monsterType" : "kadavanswarm",
+	    "icon" : "/monsters/flyers/kadavanswarm/kadavanswarmicon.png"
+	  }
+	},
+	{
+	  "op": "add",
+	  "path": "/collectables/kadavanvalahr",
+	  "value": 	  
+	  {
+	    "order" : 61,
+	    "monsterType" : "kadavanvalahr",
+	    "icon" : "/monsters/flyers/kadavanvalahr/kadavanvalahricon.png"
+	  }
+	},
+	{
+	  "op": "add",
+	  "path": "/collectables/avikandrone",
+	  "value": 	  
+	  {
+	    "order" : 62,
+	    "monsterType" : "avikandrone",
+	    "icon" : "/monsters/flyers/avikandrone/avikandroneicon.png"
+	  }
+	},
+	{
+	  "op": "add",
+	  "path": "/collectables/avikanviolateddrone",
+	  "value": 	  
+	  {
+	    "order" : 63,
+	    "monsterType" : "avikanviolateddrone",
+	    "icon" : "/monsters/flyers/avikanviolateddrone/avikanviolateddroneicon.png"
+	  }
+	},
+	{
+	  "op": "add",
+	  "path": "/collectables/avikanlargedrone-captured",
+	  "value": 	  
+	  {
+	    "order" : 64,
+	    "monsterType" : "avikanlargedrone-captured",
+	    "icon" : "/monsters/flyers/avikanlargedrone/avikanlargedroneicon.png"
+	  }
+	},
+	{
+	  "op": "add",
+	  "path": "/collectables/avikanminidrone",
+	  "value": 	  
+	  {
+	    "order" : 65,
+	    "monsterType" : "avikanminidrone",
+	    "icon" : "/monsters/flyers/avikanminidrone/avikanminidroneicon.png"
+	  }
+	},
+	{
+	  "op": "add",
+	  "path": "/collectables/trinkdrone",
+	  "value": 	  
+	  {
+	    "order" : 66,
+	    "monsterType" : "trinkdrone",
+	    "icon" : "/monsters/flyers/trinkdrone/trinkdroneicon.png"
+	  }
+	},
+	{
+	  "op": "add",
+	  "path": "/collectables/trinkminidrone",
+	  "value": 	  
+	  {
+	    "order" : 67,
+	    "monsterType" : "trinkminidrone",
+	    "icon" : "/monsters/flyers/trinkminidrone/trinkminidroneicon.png"
+	  }
+	},
+	
+	//NEW MONSTERS - v2.1.7
+	{
+	  "op": "add",
+	  "path": "/collectables/ghavorkan",
+	  "value": 	  
+	  {
+	    "order" : 68,
+	    "monsterType" : "ghavorkan",
+	    "icon" : "/monsters/walkers/ghavorkan/ghavorkanicon.png"
+	  }
+	},
+	
+	//NEW MONSTERS - v2.2.2
+	{
+	  "op": "add",
+	  "path": "/collectables/avikanviolatedminidrone",
+	  "value": 	  
+	  {
+	    "order" : 69,
+	    "monsterType" : "avikanviolatedminidrone",
+	    "icon" : "/monsters/flyers/avikanviolatedminidrone/avikanviolatedminidroneicon.png"
+	  }
+	}
+]

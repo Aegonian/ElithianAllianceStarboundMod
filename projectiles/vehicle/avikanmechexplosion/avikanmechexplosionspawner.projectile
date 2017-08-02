@@ -1,0 +1,12 @@
+{
+  "projectileName" : "avikanmechexplosionspawner",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/vehicle/avikanmechexplosion/avikanmechexplosion.config"
+    }
+  ],
+  "damageKind" : "default",
+  "timeToLive" : 0
+}

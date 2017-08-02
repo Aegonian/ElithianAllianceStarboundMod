@@ -1,0 +1,13 @@
+{
+  "itemName" : "monsterclaws",
+  "price" : 75,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "monsterclaws.png",
+  "description" : "The claws of an alien monster.",
+  "shortdescription" : "Monster Claws",
+  "itemTags" : [ "reagent" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 3
+}

@@ -1,0 +1,21 @@
+{
+  "kind" : "linerifletrail2",
+  "definition" : {
+    "type" : "ember",
+    "size" : 1,
+    "color" : [255, 106, 0, 255],
+    "fade" : 0.9,
+    "destructionAction" : "shrink",
+    "destructionTime" : 7,
+    "initialVelocity" : [1.2, 0],
+    "finalVelocity" : [1.2, 0],
+    "approach" : [0, 20],
+    "timeToLive" : 0.7,
+	"light" : [80, 55, 0],
+    "layer" : "middle",
+    "variance" : {
+      "size" : 1.5
+    },
+	"collidesLiquid" : false
+  }
+}

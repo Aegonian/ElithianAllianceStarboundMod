@@ -1,0 +1,24 @@
+{
+  "projectileName" : "handofrhadeisbullet",
+  "image" : "handofrhadeisbullet.png",
+  "physics" : "laser",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  "flippable" : true,
+  "emitters" : [ "errasslayerstrail2" ],
+  "lightColor" : [0, 65, 100],
+  "fullbright" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/vhelinspowerexplosion/vhelinspowerexplosion.config"
+    }
+  ],
+  "statusEffects" : [ "electrified" ],
+  "power" : 5.0,
+  "speed" : 100,
+  "knockback" : 0,
+  "damageKind" : "electric"
+}

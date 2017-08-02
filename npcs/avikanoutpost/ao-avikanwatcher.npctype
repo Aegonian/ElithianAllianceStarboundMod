@@ -1,0 +1,55 @@
+{
+  "type" : "ao-avikanwatcher",
+  "baseType" : "ao-civilian",
+
+  "scriptConfig" : {
+  
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "You aren't supposed to be in here."
+		  ]
+		},
+
+        "avikan" : {
+          "default" : [
+            "You aren't supposed to be in here.",
+			"Who let you into the offices?",
+			"How did you get in here?",
+			"You should leave.",
+			"This section of the Refuge is off-limits.",
+			"You'd better get out of these offices."
+          ],
+          "avikan" : [
+            "The Watchers greet you, Captain.",
+			"Welcome back, Captain.",
+			"Come to report back to the Commander?",
+			"How goes your current assignment?",
+			"Are you here to see the Commander?",
+			"May Rhadeis watch over you, Captain."
+          ],
+		  "droden" : [
+            "Welcome back.",
+			"Come to deliver a new report?",
+			"Have you come to see the Commander?",
+			"Do you have a new report for the Commander?",
+			"May Rhadeis watch over you, Droden."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ "avikan-watcherchest" ],
+            "legs" : [ "avikan-watcherlegs" ],
+            "head" : [ "avikan-watcherhead" ]
+          }
+        ] ]
+    ]
+  }
+}

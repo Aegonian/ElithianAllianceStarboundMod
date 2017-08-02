@@ -1,0 +1,46 @@
+{
+  "objectName" : "centensstatue",
+  "colonyTags" : ["centens"],
+  "rarity" : "Rare",
+  "description" : "A statue depicting a Centensian.",
+  "shortdescription" : "Ce'tennan Statue",
+  "race" : "centens",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 500,
+
+  "apexDescription" : "A statue of an alien. I can't say that I know this species.",
+  "avianDescription" : "What sort of creature does this depict?",
+  "floranDescription" : "Ssshiny sstatue...",
+  "glitchDescription" : "Curious. What sort of metal is this statue made of?",
+  "humanDescription" : "A nicely crafted statue - I could use something like this as home decoration!",
+  "hylotlDescription" : "Such craftsmanship! This statue must have taken years to carve!",
+  "novakidDescription" : "What sort of creature might this be, then?",
+
+  "aegiDescription" : "The Centens were master craftsmen - this statue alone is proof of it.",
+  "avikanDescription" : "An Old One, immortalized in a Hyverium statue. It will never decay.",
+  "erixianDescription" : "An ancient Centensian statue. A bit nondescript, but beautiful nonetheless.",
+  "trinkDescription" : "Statues of the Centens will never decay - Hyverium makes certain of that.",
+  "hymidDescription" : "The Gods left behind many statues, all of them beautiful.",
+  "notixDescription" : "One can never guess the age of a statue like this - Hyverium will never decay.",
+  "jorgasianDescription" : "Such fine craftsmanhip for a relatively simplistic statue.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "theleanDescription" : "TODO",
+  "drodenDescription" : "Analyzing statue. Detected Centensian craftsmanship.",
+
+  "inventoryIcon" : "centensstatueicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "centensstatue.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "type" : "avikanspecialist",
+  "baseType" : "avikanvillageguard",
+
+  "dropPools" : [ "avikanSoldierDeathTreasure" ],
+
+    "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ "avikan-tacticalchest2" ],
+            "legs" : [ "avikan-tacticallegs" ],
+            "head" : [ "avikan-tacticalhead" ],
+            "primary" : [
+			  "avikan-nomadabow"
+			],
+			"sheathedprimary" : [
+			  "drodenshortsword"
+			],
+			"alt" : [
+			  "avikanmetalshield"
+			]
+          }
+        ] ]
+    ]
+  }
+}

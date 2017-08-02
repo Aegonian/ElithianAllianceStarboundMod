@@ -1,0 +1,61 @@
+{
+  "objectName" : "trinkshiplight",
+  "colonyTags" : ["trink", "light"],
+  "rarity" : "Common",
+  "category" : "light",
+  "lightColor" : [135, 175, 85],
+  "price" : 60,
+  "description" : "A green light, of Trink design.",
+  "shortdescription" : "Trinkian Ship Light",
+  "race" : "trink",
+
+  "apexDescription" : "A green light strip.",
+  "avianDescription" : "A green light.",
+  "floranDescription" : "Light. Ssshiny.",
+  "glitchDescription" : "Observation. A green light.",
+  "humanDescription" : "A green light. How odd.",
+  "hylotlDescription" : "A green light. It feels unnatural.",
+  "novakidDescription" : "A green light? Sure looks odd to me.",
+
+  "aegiDescription" : "A green light strip.",
+  "avikanDescription" : "Green light. How odd.",
+  "erixianDescription" : "I've always wondered why the Trink use green light...",
+  "trinkDescription" : "Light.",
+  "hymidDescription" : "A simple, green light.",
+  "notixDescription" : "A Trinkian light strip.",
+  "jorgasianDescription" : "An efficient green light.",
+  "centensDescription" : "A simple light.",
+  "dremetonDescription" : "A green light.",
+  "theleanDescription" : "Basic lighting.",
+  "drodenDescription" : "Light source detected.",
+
+  "inventoryIcon" : "trinkshiplighticon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "trinkshiplight.png:<color>.<frame>", "fullbright" : true }, { "image" : "trinkshiplightlit.png:<color>.<frame>" } ],
+      "imagePosition" : [-8, 0],
+      
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/fluorescent_light_quiet.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+  
+  "animation" : "/objects/wired/light/lighttoggle.animation",
+  "animationParts" : {
+    "light" : "trinkshiplight.png"
+  },
+  "animationPosition" : [-8, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : false,
+
+  "inputNodes" : [ [0, 0] ]
+  
+}

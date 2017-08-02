@@ -1,0 +1,21 @@
+{
+  "name" : "strongelectrified",
+  "blockingStat" : "electricStatusImmunity",
+
+  "effectConfig" : {
+    "boltInterval" : 1.2,
+    "jumpDistance" : 8,
+    "healthDamageFactor" : 0.075,
+    "damageClampRange" : [2, 22]
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "/stats/effects/electrified/electrified.lua"
+  ],
+
+  "animationConfig" : "strongelectrified.animation",
+
+  "label" : "Electrified",
+  "icon" : "/interface/statuses/electric.png"
+}

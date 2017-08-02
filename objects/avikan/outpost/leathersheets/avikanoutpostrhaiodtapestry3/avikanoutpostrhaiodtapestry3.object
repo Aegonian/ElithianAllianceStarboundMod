@@ -1,0 +1,33 @@
+{
+  "objectName" : "avikanoutpostrhaiodtapestry3",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 60,
+  "description" : "A large tapestry made of a purple fabric. The markings look religious.",
+  "shortdescription" : "Rhaiod Tapestry",
+  "race" : "avikan",
+  
+  "floranDescription" : "Purple ssheets make Floran sssick.",
+  "glitchDescription" : "Observation. The markings on these tapestries look religious.",
+  "novakidDescription" : "A large sheet of purple fabric. Not sure what those markings mean.",
+  
+  "avikanDescription" : "A large Rhaiod tapestry. The Rhaiod's monolith is easily recognizable.",
+  "drodenDescription" : "Detected Rhaiod-marked tapestry.",
+  
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "avikanoutpostrhaiodtapestry3.png:<color>",
+	  
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

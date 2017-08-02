@@ -1,0 +1,95 @@
+{
+  "itemName" : "thea-aaerifle7",
+  "price" : 325,
+  "inventoryIcon" : "thea-aaerifle7.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A high rate of fire assault rifle.",
+  "manufacturer" : "^gray;AAE^reset;",
+  "shortdescription" : "Brekker I-20",
+  "level" : 6,
+  "tooltipKind" : "thea-gun-mf",
+  "category" : "Assault Rifle",
+  "itemTags" : ["weapon","ranged","assaultrifle","alliance","aae"],
+  "twoHanded" : true,
+  
+  "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
+  "animationParts" : {
+    "middle" : "thea-aaerifle7.png",
+    "middleFullbright" : "thea-aaerifle7lights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/allianceenergyflash.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+		    "offset" : [0.875, 0.125]
+		  }
+		}
+      }
+    },
+    "particleEmitters" : {
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/thea_plasmagun1.ogg" ],
+	  "altFire" : [ "/sfx/gun/ar4.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.875, 0.125],
+  "muzzleOffset" : [2.4, 0.5],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.24,
+    "baseDps" : 10.5,
+    "energyUsage" : 31.5,
+    "inaccuracy" : 0.020,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "allianceenergybullet",
+    "projectileParameters" : {
+      "knockback" : 8
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.125,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+}

@@ -1,0 +1,46 @@
+{
+  "objectName" : "avikanmarketstallwater",
+  "colonyTags" : ["avikan", "commerce", "avikanwater"],
+  "rarity" : "Common",
+  "description" : "A market stall filled with water containers.",
+  "shortdescription" : "Avikan Water Stall",
+  "race" : "avikan",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 60,
+
+  "apexDescription" : "Fresh water. Odd place to sell it.",
+  "avianDescription" : "Fresh and clean water - how much is it?",
+  "floranDescription" : "Floran sees Floran in watersss.",
+  "glitchDescription" : "Caution. This water might be harmful to robotics.",
+  "humanDescription" : "Fresh water? I could use a drink! Or two!",
+  "hylotlDescription" : "Few people but desert dwellers would sell water at a marketplace.",
+
+  "aegiDescription" : "Crystal clear water for sale here.",
+  "avikanDescription" : "Water - a rare resource on Kadavan, but one that is absolutely essential to our survival.",
+  "erixianDescription" : "Water is scarce on Kadavan, but Heragon has even less of it.",
+  "trinkDescription" : "Crystal clear water. The Avikan value it more than most.",
+  "hymidDescription" : "I can't imagine what it must be like to live in a place where water is scarce...",
+  "notixDescription" : "The Avikan value water over gold.",
+  "jorgasianDescription" : "I could use a drink.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Detected water supply. Readings indicate a low level of contamination.",
+
+  "inventoryIcon" : "avikanmarketstallwatericon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanmarketstallwater.png:<color>",
+
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}

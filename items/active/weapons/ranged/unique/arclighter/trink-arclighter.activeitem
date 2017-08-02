@@ -1,0 +1,127 @@
+{
+  "itemName" : "trink-arclighter",
+  "price" : 1500,
+  "inventoryIcon" : "trink-arclighter.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;A close-range electric weapon capable of dealing massive sustained damage.",
+  "shortdescription" : "^orange;SDL-05 Arclighter^white;",
+  "level" : 6,
+  "tooltipKind" : "thea-gun-unique",
+  "category" : "Prototype Weapon",
+  "itemTags" : ["weapon","ranged","trink","theaUnique"],
+  "twoHanded" : true,
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "trink-arclighter" },
+  
+  "meritTokenValue" : 100,
+  
+  "cursor" : "/cursors/thea-shockreticle.cursor",
+
+  "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
+  "animationParts" : {
+    "middle" : "trink-arclighter.png",
+    "middleFullbright" : "trink-arclighterlights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/shockboltmuzzle.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [0.375, 0.25]
+		  }
+		}
+      }
+    },
+    "lights" : {
+      "muzzleFlash" : {
+		"color" : [20, 50, 90]
+	  }
+    },
+    "sounds" : {
+      "fireStart" : [ "/sfx/gun/aegisaltpistol_start.ogg" ],
+      "fireLoop" : [ "/sfx/gun/trink_arclighter.ogg" ],
+      "fireLoopIdle" : [ "/sfx/gun/trink_arclighter_light.ogg" ],
+      "fireEnd" : []
+    }
+  },
+  "animationScripts" : ["/items/active/effects/thea-doublelightning.lua"],
+
+  "baseOffset" : [0.375, 0.25],
+  "muzzleOffset" : [1.625, 0.45],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "electric",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-activelightningfire.lua"],
+    "class" : "TheaActiveLightningFire",
+
+    "fireTime" : 0.2,
+    "baseDps" : 14.5,
+    "energyUsage" : 56.0,
+
+    "damageConfig" : {
+      "statusEffects" : [ "electrified" ],
+      "damageSourceKind" : "electric",
+      "knockback" : 1
+    },
+
+    "lightningDistanceGround" : 6.5,
+	"lightningDistanceEnemies" : 9.5,
+	
+	//Lightning config
+	"lightningAmount" : 3,
+	"lightningWidth" : 1.0,
+	"lightningForks" : 0,
+	"lightningBranchingAmount" : 0.10,
+	"lightningDisplacementMin" : 0.8,
+	"lightningDisplacementMax" : 2.8,
+	"lightningColour" : [171, 205, 252, 200],
+	
+	//Secondary lightning config
+	"lightningAmount2" : 1,
+	"lightningWidth2" : 1.0,
+	"lightningForks2" : 0,
+	"lightningBranchingAmount2" : 0.10,
+	"lightningDisplacement2" : 0.25,
+	"lightningColour2" : [171, 205, 252, 200],
+	"lightningStartOffset" : [-1.125, 0.0],
+	"lightningEndOffset" : [-0.5, 0.0],
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.1,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

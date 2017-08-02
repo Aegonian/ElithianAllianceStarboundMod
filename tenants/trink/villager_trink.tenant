@@ -1,0 +1,24 @@
+{
+  "name": "villager_trink",
+  "priority": 2,
+
+  "colonyTagCriteria": {
+    "light": 1,
+    "door": 1,
+    "trink": 6
+  },
+
+  "tenants": [
+    {
+      "spawn": "npc",
+      "species": "trink",
+      "type": "tenanttrinkvillager",
+      "overrides": {}
+     }
+   ],
+
+  "rent": {
+    "periodRange": [900.0, 1800.0],
+    "pool": "trinkGift"
+  }
+}

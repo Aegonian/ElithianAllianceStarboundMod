@@ -1,0 +1,99 @@
+{
+  "objectName" : "alliancewalllight",
+  "colonyTags" : ["alliance", "light"],
+  "rarity" : "Common",
+  "category" : "light",
+  "printable" : false,
+  "price" : 25,
+  "description" : "A small wall-mounted light.",
+  "shortdescription" : "Alliance Wall Light",
+  "race" : "aegi",
+  
+  "lightColor" : [200, 200, 200],
+
+  "floranDescription" : "Ssmall lightsss.",
+  "glitchDescription" : "Observation. A small light.",
+  "drodenDescription" : "Light source detected.",
+
+  "inventoryIcon" : "alliancewalllighticon.png",
+  "orientations" : [
+	//Priority from top to bottom
+	//Ceiling
+	{
+      "image" : "alliancewalllightceiling.png:<frame>",
+      "imagePosition" : [0, 0],
+      "animationCycle" : 0.5,
+
+      "animationParts" : {
+        "light" : "alliancewalllightceiling.png"
+      },
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    },
+	//Left Wall
+	{
+      "image" : "alliancewalllightleft.png:<frame>",
+      "imagePosition" : [0, 0],
+      "animationCycle" : 0.5,
+
+      "animationParts" : {
+        "light" : "alliancewalllightleft.png"
+      },
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "left" ]
+    },
+	//Right Wall
+	{
+      "image" : "alliancewalllightright.png:<frame>",
+      "imagePosition" : [0, 0],
+      "animationCycle" : 0.5,
+
+      "animationParts" : {
+        "light" : "alliancewalllightright.png"
+      },
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "right" ]
+    },
+	//Wall Background
+	{
+      "image" : "alliancewalllight.png:<frame>",
+      "imagePosition" : [0, 0],
+      "animationCycle" : 0.5,
+
+      "animationParts" : {
+        "light" : "alliancewalllight.png"
+      },
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    },
+	//Floor
+	{
+      "image" : "alliancewalllightfloor.png:<frame>",
+      "imagePosition" : [0, 0],
+      "animationCycle" : 0.5,
+
+      "animationParts" : {
+        "light" : "alliancewalllightfloor.png"
+      },
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "animation" : "/objects/wired/light/lighttoggle.animation",
+  "animationParts" : {
+    "light" : "alliancewalllight.png"
+  },
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+
+  "interactive" : false,
+
+  "inputNodes" : [ [0, 0] ]
+}

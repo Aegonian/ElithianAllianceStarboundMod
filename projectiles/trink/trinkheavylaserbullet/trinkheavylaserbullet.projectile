@@ -1,0 +1,21 @@
+{
+  "projectileName" : "trinkheavylaserbullet",
+  "physics" : "thea-laser",
+  "bounces" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "trinkheavylaserbullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 80,
+  "speed" : 175,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+    }
+  ],
+  "lightColor" : [0, 73, 0],
+  "fullbright" : true,
+  "damageKind" : "plasma"
+}

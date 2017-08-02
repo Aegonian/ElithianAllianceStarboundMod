@@ -1,0 +1,20 @@
+{
+  "id" : "avikanrhadeis4",
+  "species" : "avikan",
+  "title" : "Rhadeis - Part 4",
+  "description" : "Notes on Rhadeis, by Izyati as-Kaladan.",
+  "icon" : "avikanrhadeis4.png",
+  "contentPages" : [
+
+    "Nowadays, over 2500 years after the discovery of Vas Vha'leih and the encounter with Rhadeis, we know much more about Rhadeis and the Old Ones, through study of both Vas Vha'leih and Vhalas Vha'leih. Perhaps the greatest find was the discovery that Rhadeis was actually an outcast of the Ce'Tennan, who defied his orders to better help our people.",
+
+    "Rhadeis was an Overseer, a Ce'Tennan assigned to the task of monitoring a planet and guiding its development when needed. We learned that there were many more Overseers throughout the galaxy, and beyond, but their exact goals are still unknown. They guided the development of many planets and species, but why, we do not know.",
+    
+    "What we do know is that Overseers were forbidden from interacting directly with their assigned species, and that Rhadeis defied these orders. He intervened during some great catastrophe in ancient times, one that would have eradicated our species, and then decided he would help us survive by gifting our ancestors with artefacts of his own people."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

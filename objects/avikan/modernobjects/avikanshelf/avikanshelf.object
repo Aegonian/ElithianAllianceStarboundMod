@@ -1,0 +1,47 @@
+{
+  "objectName" : "avikanshelf",
+  "colonyTags" : ["avikan", "commerce"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 25,
+  "description" : "A sturdy metal shelf.",
+  "shortdescription" : "Avikan Shelf",
+  "race" : "avikan",
+  
+  "apexDescription" : "A simple shelf.",
+  "avianDescription" : "A wall-mounted metal shelf.",
+  "floranDescription" : "Floran putsss trophiess on sshelves.",
+  "glitchDescription" : "Content. This shelf is firmly attached to the wall.",
+  "humanDescription" : "This shelf is firmly attached to the wall.",
+  "hylotlDescription" : "A simplistic, but functional, wall shelf.",
+  "novakidDescription" : "T'is a shelf.",
+
+  "aegiDescription" : "A metal shelf mounted to the wall.",
+  "avikanDescription" : "This shelf is firmly mounted to the wall.",
+  "erixianDescription" : "A metal shelf, firmly attached to the wall.",
+  "trinkDescription" : "This shelf is firmly attached to the wall.",
+  "hymidDescription" : "A simple metal shelf, mounted to the wall.",
+  "notixDescription" : "A metal shelf.",
+  "jorgasianDescription" : "A simple wall-mounted shelf.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected wall-mounted shelf. Firmly attached to the wall.",
+
+  "inventoryIcon" : "avikanshelficon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanshelf.png:<color>",
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ],
+      "collision" : "platform"
+
+    }
+  ]
+}

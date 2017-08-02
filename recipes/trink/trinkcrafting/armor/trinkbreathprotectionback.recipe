@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "trinkmetaltier2", "count" : 6 },
+    { "item" : "trinkglassitem", "count" : 6 },
+    { "item" : "trinkwiring", "count" : 2 },
+    { "item" : "livingroot", "count" : 1 }
+  ],
+  "output" : { "item" : "trinkbreathprotectionback", "count" : 1 },
+  "groups" : [ "trinkcrafting", "armours", "hazardgear", "all" ]
+}

@@ -1,0 +1,28 @@
+{
+  "objectName" : "avikanhiddenvehicle",
+  "colonyTags" : ["droden"],
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 650,
+  "description" : "I wonder what sort of vehicle is hidden underneath this sheet of leather?",
+  "shortdescription" : "Covered Vehicle",
+  "race" : "avikan",
+
+  "floranDescription" : "Floran wondersss what thiss sheet iss hiding?",
+  "glitchDescription" : "Curious. What sort of vehicle might this be?",
+  "novakidDescription" : "Some sorta vehicle hidden from view by a large sheet o' leather.",
+  
+  "drodenDescription" : "Detected Nomada vehicle. Type unknown.",
+
+  "inventoryIcon" : "avikanhiddenvehicleicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanhiddenvehicle.png:<color>",
+      "imagePosition" : [-8, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

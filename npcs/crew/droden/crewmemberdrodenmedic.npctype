@@ -1,0 +1,99 @@
+{
+  "type" : "crewmemberdrodenmedic",
+  "baseType" : "crewmemberdroden",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : true
+    },
+
+	"crew" : {
+	  "role" : {
+        "type" : "drodenmedic",
+        "name" : "Medical Unit",
+        "field" : "Legion",
+        "uniformColorIndex" : 9,
+		
+        "benefits" : [
+          {
+            "type" : "Regeneration",
+            "value" : 1
+          }
+        ]
+      },
+
+      "ranks" : [
+        "<field> Medical Unit"
+      ],
+	  
+	  "defaultUniform" : {
+		"head" : "droden-legionhead",
+		"chest" : "droden-legionchest",
+		"legs" : "droden-legionlegs",
+		"back" : "drodenantennapack"
+	  },
+	  
+	  "uniformSlots" : []
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "offer" : {
+          "droden" : {
+            "default" : [
+              "Medical unit <selfname> reporting for duty. Requesting permission to board ship.",
+              "Unit <selfname> reporting in. Medical unit requesting permission to board ship.",
+              "Droden Legion Medical Unit available. Requesting permission to board ship."
+            ]
+          }
+        },
+		"roleDescription" : {
+          "default" : {
+            "default" : [
+              "This unit will offer medical examinations and treatment."
+            ]
+          }
+        },
+        "fieldBenefit" : {
+          "default" : {
+            "default" : [
+              "Unit offering medical treatment.",
+              "Detected potential medical issues. Providing medication.",
+              "Potential health risk detected. Offering medical treatment.",
+              "Analysis result: potential medical issues. Unit will provide medication."
+            ]
+          }
+        },
+        "combatBenefit" : {
+          "default" : {
+            "default" : [
+              "Unit offering medical treatment.",
+              "Detected potential medical issues. Providing medication.",
+              "Potential health risk detected. Offering medical treatment.",
+              "Analysis result: potential medical issues. Unit will provide medication."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+            "head" : [ { "name" : "droden-legionhead", "data" : { "colorIndex" : 9 } } ],
+			"chest" : [ { "name" : "droden-legionchest", "data" : { "colorIndex" : 9 } } ],
+            "legs" : [ { "name" : "droden-legionlegs", "data" : { "colorIndex" : 9 } } ],
+            "back" : [ { "name" : "drodenantennapack", "data" : { "colorIndex" : 9 } } ],
+            "primary" : [ "avikanmedicalkit" ],
+            "sheathedprimary" : [
+			  "droden-pistol"
+			]
+          }
+        ] ]
+    ]
+  }
+}

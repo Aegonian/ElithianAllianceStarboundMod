@@ -1,0 +1,65 @@
+{
+  "objectName" : "avikanshootingrangehologram",
+  "colonyTags" : ["droden"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 40,
+  "description" : "A holographic Avikan interface.",
+  "shortdescription" : "Virtual Guide Azana",
+  "race" : "avikan",
+  "lightColor" : [50, 32, 0],
+
+  "apexDescription" : "A holographic interface. Perhaps she might tell me about this place?",
+  "avianDescription" : "Perhaps this holographic interface can show me the way.",
+  "floranDescription" : "Floran talkss to light persson. Light perssson iss nice.",
+  "glitchDescription" : "Eager. Perhaps this holographic interface can show me the way.",
+  "humanDescription" : "A holographic interface. She looks lovely.",
+  "hylotlDescription" : "A holographic interface. She might be able to guide me.",
+  "novakidDescription" : "This hologram shines like the mornin' sun. Perhaps I should talk to her.",
+
+  "aegiDescription" : "A holographic guide. She might be able to tell me more about this place.",
+  "avikanDescription" : "A virtual guide, programmed to teach newcomers about this place. I might learn something from her myself.",
+  "erixianDescription" : "A holographic guide. She might be able to tell me more about this place.",
+  "trinkDescription" : "A holographic guide. She might be able to tell me more about this place.",
+  "hymidDescription" : "A holographic guide. She might be able to tell me more about this place.",
+  "notixDescription" : "A holographic guide. She might be able to tell me more about this place.",
+  "jorgasianDescription" : "A holographic guide. She might be able to tell me more about this place.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Virtual guide detected. Recommend interaction to learn valuable intel.",
+
+  "inventoryIcon" : "avikanoutposthologramicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "avikanoutposthologram.png:<color>.<frame>", "fullbright" : true }, { "image" : "avikanoutposthologramlit.png:<color>.<frame>" } ],
+      "imagePosition" : [0, 0],
+      "frames" : 20,
+      "animationCycle" : 2.0,
+      "lightPosition" : [2, 2],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/scripts/thea-talkingobject.lua" ],
+  "scriptDelta" : 20,
+
+  "chatLines" : [
+    "Welcome to the Vanguard Shooting Range, new arrival! I am Azana, your virtual guide.",
+	"The Vanguard Shooting Range offers Starfarers the opportunity to test out their weapons in a safe environment.",
+	"The blocking field will prevent any visitors from wandering onto the shooting range.",
+    "Projectiles fired from your weapons, however, will be able to pass through the field unhindered.",
+	"Keep your gun safety on when not inside the designated firing area.",
+	"Please stand within the designated area while firing your weapon.",
+	"Bringing harm to visitors of the range is strictly prohibited.",
+    "Please exercise caution during your time here.",
+	"Thank you for using this Anakhar Systems Virtual Guide, and enjoy your stay. Vas Vha'leih."
+  ],
+
+  //Mouth position is relative to the top-left corner of the object
+  "mouthPosition" : [0, 0],
+  "questIndicatorPosition" : [0.5, -0.5]
+}

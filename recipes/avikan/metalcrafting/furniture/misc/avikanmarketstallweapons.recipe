@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "avikanmetal", "count" : 3 },
+	{ "item" : "monsterleather", "count" : 2 },
+	{ "item" : "monsterbone", "count" : 5 }
+  ],
+  "output" : { "item" : "avikanmarketstallweapons", "count" : 1 },
+  "groups" : [ "avikanmetalcrafting", "metalfurniture", "all" ]
+}

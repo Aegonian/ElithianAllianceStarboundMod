@@ -1,0 +1,51 @@
+{
+  "objectName" : "centenschest",
+  "colonyTags" : ["centens", "storage"],
+  "rarity" : "Rare",
+  "objectType" : "container",
+  "category" : "storage",
+  "printable" : false,
+  "price" : 1000,
+  "description" : "An ancient metal container.",
+  "shortdescription" : "Centensian Container",
+  "race" : "centens",
+  
+  "health" : 6,
+
+  "apexDescription" : "A heavy metal container. Looks very old.",
+  "avianDescription" : "A magnificent metal chest.",
+  "floranDescription" : "Old chestsss give the bessst loot!",
+  "glitchDescription" : "Observation. The automated locking mechanism on this ancient container still functions,",
+  "humanDescription" : "An ancient chest? Might be full of goodies!",
+  "hylotlDescription" : "An ancient container. What might it store?",
+
+  "aegiDescription" : "A Centensian container. It might hold some artefacts.",
+  "avikanDescription" : "A container from the Old Ones. These often hold artefacts from the Old Civilization.",
+  "erixianDescription" : "This Centensian container has an odd way of opening.",
+  "trinkDescription" : "A Centensian container. Eons old, but its opening mechanism still works.",
+  "hymidDescription" : "An ancient Centensian container.",
+  "notixDescription" : "An ancient container, built by the Centens.",
+  "jorgasianDescription" : "A container. Beuilt eons ago by the Centens.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected Centensian container. Contents unknown.",
+
+  "inventoryIcon" : "centenschesticon.png",
+  "orientations" : [
+    {
+      "dualImage" : "centenschest.png:<color>.<key>",
+      "imagePosition" : [-8, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/gunchest_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/gunchest_close.ogg" ],
+  "slotCount" : 32,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 20,
+  "autoCloseCooldown" : 3600
+}

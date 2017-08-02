@@ -1,0 +1,15 @@
+{
+  "name" : "drodenbeamin",
+  "effectConfig" : {
+    "speciesTags" : {
+      "droden" : "droden"
+    }
+  },
+  "defaultDuration" : 1.0,
+
+  "scripts" : [
+    "drodenbeamin.lua"
+  ],
+
+  "animationConfig" : "drodenbeamin.animation"
+}

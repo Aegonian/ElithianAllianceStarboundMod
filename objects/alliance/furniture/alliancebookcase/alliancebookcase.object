@@ -1,0 +1,54 @@
+{
+  "objectName" : "alliancebookcase",
+  "colonyTags" : ["alliance","storage"],
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "category" : "storage",
+  "description" : "A tall bookcase.",
+  "shortdescription" : "Alliance Bookcase",
+  "race" : "aegi",
+  "price" : 160,
+  "health" : 1.5,
+
+  "apexDescription" : "A basic metal bookcase.",
+  "avianDescription" : "Just a bookcase.",
+  "floranDescription" : "Sssimple bookcase.",
+  "glitchDescription" : "Uninterested. Just a bookcase.",
+  "humanDescription" : "A regular bookcase.",
+  "hylotlDescription" : "The best place to store books.",
+  "novakidDescription" : "A bookcase.",
+
+  "aegiDescription" : "A basic bookcase.",
+  "avikanDescription" : "Some sort of storage for scrolls and such.",
+  "erixianDescription" : "A bookcase. Be careful with fire around it.",
+  "trinkDescription" : "A bookcase.",
+  "hymidDescription" : "A simple bookcase.",
+  "notixDescription" : "Books.",
+  "jorgasianDescription" : "A bookcase.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien scrolls.",
+
+  "inventoryIcon" : "alliancebookcaseicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "alliancebookcase.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/bookcase_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/bookcase_close.ogg" ],
+  "slotCount" : 32,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600
+}

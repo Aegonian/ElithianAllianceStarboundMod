@@ -1,0 +1,28 @@
+{
+  "materialId" : 30000,
+  "materialName" : "avikanpanel",
+  "particleColor" : [215, 184, 137, 255],
+  "itemDrop" : "avikanpanel", 
+  "shortdescription" : "Avikan Panel",
+  
+  "description" : "A hollow metal panel, perfect for wall insulation.",
+  "glitchDescription" : "Informed. This metal panel is hollow, making it perfect for insulation.",
+  "floranDescription" : "Floran knowsss thiss panel is hollow by knocking on it. Floran iss sssmart.",
+  "novakidDescription" : "A hollow metal panel, sure is good for insulation.",
+  
+  "drodenDescription" : "Analysis complete. Hollow metal panel.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "avikanpanel.png",
+    "variants" : 10,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 150
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "name" : "controllerdrahl",
+  "script" : "controllerdrahl.lua",
+  "boundBox" : [-1, -1, 1, 1],
+  "slaveControlTimeout" : 2.0,
+  "slaveControlHeartbeat" : 1.0,
+  "canBeHit" : true,
+  "animation" : "controllerdrahl.animation",
+
+  //GENERAL SETTINGS
+
+  //HEALTH AND DAMAGE STATS
+  "materialKind" : "robotic",
+  "protection" : 50,
+  "maxHealth" : 100,
+  "damagedThreshold" : 70,
+  "wreckedThreshold" : 30,
+  "explosionProjectile" : "avikandroneexplosion",
+  "explosionProjectileConfig" : {
+    "power" : 10
+  },
+
+  //COMBAT SETTINGS
+  "fireProjectile" : "avikandronebulletseeking",
+  "fireProjectileConfig" : {
+    "power" : 40
+  },
+  "chargeTime" : 0.5,
+  "cooldownTime" : 0.35,
+  "firingOffset" : [0.5, -0.75],
+  
+  //MOVEMENT SETTINGS
+  "flyingSpeed" : 15,
+  "flyControlForce" : 50,
+  "minimumTargetDistance" : 0.2, //Only move the vehicle if it is at least this far from the target position
+
+  //MOVEMENT CONTROLLER SETTINGS
+  "movementSettings" : {
+    "collisionPoly" : [ [1.26, 0.625],  [1.625, 0.26], [1.625, -0.26], [1.26, -0.625], [-1.26, -0.625], [-1.625, -0.26], [-1.625, 0.26], [-1.26, 0.625] ],
+    "mass" : 1.0,
+    "airFriction" : 4.0,
+    "liquidFriction" : 10.0,
+    "groundFriction" : 10.0,
+    "ignorePlatformCollision" : true,
+    "gravityEnabled" : false,
+    "collisionEnabled" : true
+  }
+}

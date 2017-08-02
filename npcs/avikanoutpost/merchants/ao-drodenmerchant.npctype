@@ -1,0 +1,47 @@
+{
+  "type" : "ao-drodenmerchant",
+  "baseType" : "ao-wandermerchant",
+
+  "scriptConfig" : {    
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "poolsFile" : "/npcs/merchantpools.config",
+      
+	  "categories" : {
+        "override" : [ "drodenmerchant" ]
+      },
+      "buyFactorRange" : [ 0.9, 1.2 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 20,
+	  
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "Droden Equipment Merchant",
+          "subtitle" : "  Droden equipment and items."
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "droden-bannerchest", "parameters" : { "colorIndex" : 4 } }
+            ],
+            "legs" : [
+              { "name" : "thea-hiddenlegs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "back" : [
+              { "name" : "avikanmodernpack", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

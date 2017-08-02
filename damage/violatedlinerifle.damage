@@ -1,0 +1,410 @@
+{
+  "kind" : "violatedlinerifle",
+  "elementalType" : "violatedlinerifle",
+  "effects" : {
+    "organic" : {
+      "hit" : {
+        "sounds" : [ "/sfx/projectiles/linerifle_impact.ogg" ],
+        "particles" : [
+          [
+            {
+              "type" : "animated",
+              "animation" : "/animations/violatedlineriflehitspark/violatedlineriflehitspark.animation",
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 7,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 1.25,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      },
+	  "stronghit" : {
+        "sounds" : [ "/sfx/projectiles/linerifle_impact.ogg" ],
+        "particles" : [
+          [
+            //CRITICAL PARTICLES
+            {
+              "type" : "animated",
+              "animation" : "/animations/violatedlinerifleburn/violatedlinerifleburn.animation",
+              "size" : 1,
+              "angularVelocity" : 0,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 5],
+              "approach" : [15, 15],
+              "timeToLive" : 0.7,
+              "layer" : "front",
+              "destructionTime" : 0.5,
+              "destructionAction" : "fade",
+              "variance" : {
+                "initialVelocity" : [10, 5]
+              }
+            },
+			{
+              "type" : "animated",
+              "animation" : "/animations/violatedlinerifleburn/violatedlinerifleburn.animation",
+              "size" : 1,
+              "angularVelocity" : 0,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 5],
+              "approach" : [15, 15],
+              "timeToLive" : 0.7,
+              "layer" : "front",
+              "destructionTime" : 0.5,
+              "destructionAction" : "fade",
+              "variance" : {
+                "initialVelocity" : [10, 5]
+              }
+            },
+			//REGULAR PARTICLES
+			{
+              "type" : "animated",
+              "animation" : "/animations/violatedlineriflehitspark/violatedlineriflehitspark.animation",
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 7,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 1.25,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      },
+      "kill" : {
+        "sounds" : [ "/sfx/projectiles/linerifle_kill.ogg" ],
+        "particles" : [
+          [
+            {
+              "type" : "animated",
+              "animation" : "/animations/violatedlineriflehitspark/violatedlineriflehitspark.animation",
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 7,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 1.25,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      }
+    },
+    "robotic" : {
+      "hit" : {
+        "sounds" : [ "/sfx/projectiles/linerifle_impact.ogg" ],
+        "particles" : [
+          [
+            {
+              "type" : "animated",
+              "animation" : "/animations/violatedlineriflehitspark/violatedlineriflehitspark.animation",
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 7,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 1.25,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      },
+	  "stronghit" : {
+        "sounds" : [ "/sfx/projectiles/linerifle_impact.ogg" ],
+        "particles" : [
+          [
+            //CRITICAL PARTICLES
+            {
+              "type" : "animated",
+              "animation" : "/animations/violatedlinerifleburn/violatedlinerifleburn.animation",
+              "size" : 1,
+              "angularVelocity" : 0,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 5],
+              "approach" : [15, 15],
+              "timeToLive" : 0.7,
+              "layer" : "front",
+              "destructionTime" : 0.5,
+              "destructionAction" : "fade",
+              "variance" : {
+                "initialVelocity" : [10, 5]
+              }
+            },
+			{
+              "type" : "animated",
+              "animation" : "/animations/violatedlinerifleburn/violatedlinerifleburn.animation",
+              "size" : 1,
+              "angularVelocity" : 0,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 5],
+              "approach" : [15, 15],
+              "timeToLive" : 0.7,
+              "layer" : "front",
+              "destructionTime" : 0.5,
+              "destructionAction" : "fade",
+              "variance" : {
+                "initialVelocity" : [10, 5]
+              }
+            },
+			//REGULAR PARTICLES
+			{
+              "type" : "animated",
+              "animation" : "/animations/violatedlineriflehitspark/violatedlineriflehitspark.animation",
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 7,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 1.25,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      },
+      "kill" : {
+        "sounds" : [ "/sfx/melee/kill_robotic1.ogg", "/sfx/melee/kill_robotic2.ogg" ],
+        "particles" : [
+          [
+            {
+              "type" : "animated",
+              "animation" : "/animations/violatedlineriflehitspark/violatedlineriflehitspark.animation",
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 7,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 1.25,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      }
+    },
+    "wooden" : {
+      "hit" : {
+        "sounds" : [ "/sfx/projectiles/linerifle_impact.ogg" ],
+        "particles" : [
+          [
+            {
+              "type" : "animated",
+              "animation" : "/animations/violatedlineriflehitspark/violatedlineriflehitspark.animation",
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 7,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 1.25,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      },
+	  "stronghit" : {
+        "sounds" : [ "/sfx/projectiles/linerifle_impact.ogg" ],
+        "particles" : [
+          [
+            //CRITICAL PARTICLES
+            {
+              "type" : "animated",
+              "animation" : "/animations/violatedlinerifleburn/violatedlinerifleburn.animation",
+              "size" : 1,
+              "angularVelocity" : 0,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 5],
+              "approach" : [15, 15],
+              "timeToLive" : 0.7,
+              "layer" : "front",
+              "destructionTime" : 0.5,
+              "destructionAction" : "fade",
+              "variance" : {
+                "initialVelocity" : [10, 5]
+              }
+            },
+			{
+              "type" : "animated",
+              "animation" : "/animations/violatedlinerifleburn/violatedlinerifleburn.animation",
+              "size" : 1,
+              "angularVelocity" : 0,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 5],
+              "approach" : [15, 15],
+              "timeToLive" : 0.7,
+              "layer" : "front",
+              "destructionTime" : 0.5,
+              "destructionAction" : "fade",
+              "variance" : {
+                "initialVelocity" : [10, 5]
+              }
+            },
+			//REGULAR PARTICLES
+			{
+              "type" : "animated",
+              "animation" : "/animations/violatedlineriflehitspark/violatedlineriflehitspark.animation",
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 7,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 1.25,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      },
+      "kill" : {
+        "sounds" : [ "/sfx/melee/kill_wood1.ogg", "/sfx/melee/kill_wood2.ogg" ],
+        "particles" : [
+          [
+            {
+              "type" : "animated",
+              "animation" : "/animations/violatedlineriflehitspark/violatedlineriflehitspark.animation",
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 7,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 1.25,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      }
+    },
+    "stone" : {
+      "hit" : {
+        "sounds" : [ "/sfx/projectiles/linerifle_impact.ogg" ],
+        "particles" : [
+          [
+            {
+              "type" : "animated",
+              "animation" : "/animations/violatedlineriflehitspark/violatedlineriflehitspark.animation",
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 7,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 1.25,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      },
+	  "stronghit" : {
+        "sounds" : [ "/sfx/projectiles/linerifle_impact.ogg" ],
+        "particles" : [
+          [
+            //CRITICAL PARTICLES
+            {
+              "type" : "animated",
+              "animation" : "/animations/violatedlinerifleburn/violatedlinerifleburn.animation",
+              "size" : 1,
+              "angularVelocity" : 0,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 5],
+              "approach" : [15, 15],
+              "timeToLive" : 0.7,
+              "layer" : "front",
+              "destructionTime" : 0.5,
+              "destructionAction" : "fade",
+              "variance" : {
+                "initialVelocity" : [10, 5]
+              }
+            },
+			{
+              "type" : "animated",
+              "animation" : "/animations/violatedlinerifleburn/violatedlinerifleburn.animation",
+              "size" : 1,
+              "angularVelocity" : 0,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 5],
+              "approach" : [15, 15],
+              "timeToLive" : 0.7,
+              "layer" : "front",
+              "destructionTime" : 0.5,
+              "destructionAction" : "fade",
+              "variance" : {
+                "initialVelocity" : [10, 5]
+              }
+            },
+			//REGULAR PARTICLES
+			{
+              "type" : "animated",
+              "animation" : "/animations/violatedlineriflehitspark/violatedlineriflehitspark.animation",
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 7,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 1.25,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      },
+      "kill" : {
+        "sounds" : [ "/sfx/melee/kill_stone1.ogg", "/sfx/melee/kill_stone2.ogg", "/sfx/melee/kill_stone3.ogg", "/sfx/melee/kill_stone4.ogg", "/sfx/melee/kill_stone5.ogg" ],
+        "particles" : [
+          [
+            {
+              "type" : "animated",
+              "animation" : "/animations/violatedlineriflehitspark/violatedlineriflehitspark.animation",
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 7,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 1.25,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

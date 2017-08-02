@@ -1,0 +1,29 @@
+{
+  "objectName" : "theleancorpse1",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 40,
+  "description" : "A dead Thelean.",
+  "shortdescription" : "Thelean Corpse",
+  "race" : "thelean",
+
+  "floranDescription" : "Floran pokesss dead bodiess with ssstickss...",
+  "glitchDescription" : "Analysis. This Thelean has been dead for decades, but its body is still in good shape.",
+  
+  "avikanDescription" : "A Thelean as he should be: dead.",
+  "theleanDescription" : "A dead brother. He was weak.",
+  "drodenDescription" : "Detected Thelean. Analysis: dead.",
+
+  "inventoryIcon" : "theleancorpse1icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "theleancorpse1.png:<color>",
+      "imagePosition" : [-16, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

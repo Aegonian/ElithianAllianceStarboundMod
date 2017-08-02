@@ -1,0 +1,29 @@
+{
+  "type" : "tenantavikanfoodmerchant",
+  "baseType" : "merchant",
+  
+  "dropPools" : [],
+
+  "scriptConfig" : {
+    "questGenerator" : { "pools" : [], "enableParticipation" : false },
+	
+	"merchant" : {
+	  "categories" : {
+		"override" : [ "avikanfood" ]
+	  }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "avikan-merchanthead", "parameters" : { "colorIndex" : 7 } } ],
+			"chest" : [ { "name" : "avikan-merchantchest", "parameters" : { "colorIndex" : 7 } } ],
+            "legs" : [ { "name" : "avikan-merchantlegs", "parameters" : { "colorIndex" : 7 } } ],
+            "back" : [ { "name" : "avikanmerchantpack", "parameters" : { "colorIndex" : 7 } } ]
+          }
+        ] ]
+    ]
+  }
+}

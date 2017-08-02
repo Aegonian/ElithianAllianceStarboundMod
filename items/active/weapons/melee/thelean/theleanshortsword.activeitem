@@ -1,0 +1,34 @@
+{
+  "itemName" : "theleanshortsword",
+  "price" : 600,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "A light Thelean blade. The grip is very uncomfortable to non-Theleans.",
+  "shortdescription" : "Thelean Shortblade",
+  "tooltipKind" : "sword",
+  "category" : "shortsword",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","melee","shortsword","thelean"],
+
+  "inventoryIcon" : "theleanshortsword.png",
+
+  "animation" : "/items/active/weapons/melee/shortsword/comboshortsword.animation",
+  "animationParts" : {
+    "handle": "",
+    "blade" : "theleanshortsword.png"
+  },
+  "animationCustom" : { },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "shortswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.625,
+    "baseDps" : 6.5
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

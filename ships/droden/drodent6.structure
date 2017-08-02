@@ -1,0 +1,23 @@
+{
+  "config" : {
+    "shipUpgrades" : {
+      "capabilities" : ["teleport", "planetTravel", "systemTravel"],
+      "crewSize" : 8
+    }
+  },
+
+  "backgroundOverlays" : [
+    {
+      "image" : "drodenT6.png",
+      "position" : [20, 20],
+      "fullbright" : true
+    },
+    {
+      "image" : "drodenT6lit.png",
+      "position" : [20, 20]
+    }
+  ],
+
+  "blockKey" : "blockKey.config:blockKey",
+  "blockImage" : "drodenT6blocks.png"
+}

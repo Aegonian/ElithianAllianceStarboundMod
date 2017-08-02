@@ -1,0 +1,46 @@
+{
+  "itemName" : "avikantier3axe",
+  "price" : 600,
+  "level" : 3,
+  "maxStack" : 1,
+  "rarity" : "Uncommon",
+  "description" : "A sharp bone axe made of strong monster bone.",
+  "shortdescription" : "Stalker's Axe",
+  "tooltipKind" : "sword",
+  "category" : "axe",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","melee","axe","avikan"],
+
+  "inventoryIcon" : "avikantier3axe.png",
+
+  "animation" : "/items/active/weapons/melee/axe/axe.animation",
+  "animationParts" : {
+    "blade" : "avikantier3axe.png",
+    "handle" : ""
+  },
+  "animationCustom" : {
+    "animatedParts" : { "parts" : { "swoosh" : { "properties" : {
+      "offset" : [-1.5, 1.75]
+    }}}},
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_axe.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "axecleave",
+  "primaryAbility" : {
+    "fireTime" : 0.9,
+    "baseDps" : 9.5,
+    "damageConfig" : {
+      "knockback" : 25
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

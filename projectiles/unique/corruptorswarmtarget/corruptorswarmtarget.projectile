@@ -1,0 +1,48 @@
+{
+  "projectileName" : "corruptorswarmtarget",
+  "image" : "corruptorswarmtarget.png",
+  "physics" : "lineriflebullet",
+  "bounces" : 0,
+  "piercing" : false,
+  "flippable" : true,
+  "animationCycle" : 0.4,
+  "frameNumber" : 5,
+  "lightColor" : [150, 25, 0],
+  "fullbright" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+	  "file" : "/projectiles/explosions/violatedlinerifleimpact/violatedlinerifleimpact.config"
+    }
+  ],
+  "periodicActions" : [
+	{
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+		"type" : "animated",
+		"animation" : "/projectiles/unique/corruptorswarmtarget/trail.animation",
+        "position" : [-0.5, 0],
+        "layer" : "back",
+		"collidesForeground" : false,
+        "timeToLive" : 0.5,
+        "destructionTime" : 0.1,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  "statusEffects" : [
+    "violatedlinerifleburn"
+  ],
+  "power" : 5.0,
+  "speed" : 50,
+  "timeToLive" : 3.5,
+  "damageKind" : "violatedlinerifle",
+  
+  "scripts" : [ "/projectiles/scripts/thea-linerifleswarmtarget.lua" ],
+  "searchRadius" : 25,
+  "baseHomingControlForce" : 1.5
+}

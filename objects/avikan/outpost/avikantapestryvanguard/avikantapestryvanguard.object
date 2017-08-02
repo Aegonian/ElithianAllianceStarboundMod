@@ -1,0 +1,46 @@
+{
+  "objectName" : "avikantapestryvanguard",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 60,
+  "description" : "A bright tapestry displaying the Vanguard's emblem.",
+  "shortdescription" : "Avikan Vanguard Tapestry",
+  "race" : "avikan",
+
+  "apexDescription" : "A colourful tapestry displaying a bold-looking emblem.",
+  "avianDescription" : "A colourful tapestry displaying a bold-looking emblem.",
+  "floranDescription" : "Bold alien mark all over thisss tapessstry...",
+  "glitchDescription" : "Observation. A colourful tapestry displaying a bold-looking emblem.",
+  "humanDescription" : "A colourful tapestry displaying a bold-looking emblem.",
+  "hylotlDescription" : "A colourful tapestry displaying a bold-looking emblem.",
+  "novakidDescription" : "A colourful tapestry displaying a bold-looking emblem.",
+
+  "aegiDescription" : "This tapestry shows the emblem of the Vanguard, the Avikian military fleet.",
+  "avikanDescription" : "This tapestry shows the emblem of our grand military fleet, the Vanguard.",
+  "erixianDescription" : "This tapestry shows the emblem of the Vanguard, the Avikian military fleet.",
+  "trinkDescription" : "This tapestry shows the emblem of the Vanguard, the Avikian military fleet.",
+  "hymidDescription" : "This tapestry shows the emblem of the Vanguard, the Avikian military fleet.",
+  "notixDescription" : "This tapestry shows the emblem of the Vanguard, the Avikian military fleet.",
+  "jorgasianDescription" : "This tapestry shows the emblem of the Vanguard, the Avikian military fleet.",
+  "centensDescription" : "This tapestry shows the emblem of the Vanguard, the Avikian military fleet.",
+  "dremetonDescription" : "This tapestry shows the emblem of the Vanguard, the Avikian military fleet.",
+  "hyvonDescription" : "This tapestry shows the emblem of the Vanguard, the Avikian military fleet.",
+  "drodenDescription" : "Detected Vanguard emblem.",
+  
+  "inventoryIcon" : "avikantapestryvanguardicon.png",
+  "orientations" : [
+    {
+      "image" : "avikantapestryvanguard.png:<color>",
+	  
+      "imagePosition" : [-8, -16],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "objectName" : "allianceshipcore",
+  "colonyTags" : ["aegi"],
+  "rarity" : "Legendary",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 10000,
+  "description" : "A massive drive core for an FTL system.",
+  "shortdescription" : "Alliance Hyperdrive Core",
+  "race" : "aegi",
+  
+  "health" : 15,
+
+  "apexDescription" : "This drive core powers the FTL system.",
+  "avianDescription" : "A strange sphere somehow involved in the ship's FTL systems.",
+  "floranDescription" : "Big ballsss make the sship go fasst!",
+  "glitchDescription" : "Frightened. This device is powerful enough to destroy an entire city.",
+  "humanDescription" : "Some type of massive spaceship core, likely what powers the FTL drive.",
+  "hylotlDescription" : "This machine hums a strangely beautiful tone.",
+  "novakidDescription" : "I can feel the power inside this device...",
+
+  "aegiDescription" : "The core of the ship's hyperdrive system. A piece of pure Hyverium sits in its center.",
+  "avikanDescription" : "This is nothing like the Nomada's ship cores. It is fascinating!",
+  "erixianDescription" : "An Aeginian-built hyperdrive core. It powers the FTL systems.",
+  "trinkDescription" : "The Aegi build incredibly efficient FTL drive cores.",
+  "hymidDescription" : "This is the ship's hyperdrive core. It hums with power.",
+  "notixDescription" : "The humming from this drive core is so strong it nearly causes me a headache.",
+  "jorgasianDescription" : "The massively powerful core of the ship's hyperdrive system.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detecting massive energy signature. Warning: unit electronics picking up interference. Recommend departing the area.",
+
+  "inventoryIcon" : "allianceshipcoreicon.png",
+  "orientations" : [
+    {
+	  "image" : "allianceshipcore.png:idle.1",
+
+      "imagePosition" : [0, 0],
+	  "lightPosition" : [8, 1],
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+  "lightColor" : [0, 74, 127],
+  "pointLight" : false,
+  "flickerDistance" : 0.2,
+  "flickerStrength" : 0.05,
+  "flickerTiming" : 4,
+  
+  "soundEffect" : "/sfx/objects/allianceshipcore_long.ogg",
+  "soundEffectRadius" : 50,
+
+  "animation" : "allianceshipcore.animation",
+  "animationParts" : {
+    "coreBg" : "allianceshipcore.png",
+    "coreFg" : "allianceshipcorelit.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : ["/objects/ship/boosters/boosterflame.lua"],
+  "scriptDelta" : 10,
+
+  "flyingBoosterStates" : {
+    "none" : "idle",
+    "disembarking" : "activate",
+    "warp" : "activate",
+    "arriving" : "idle"
+  }
+}

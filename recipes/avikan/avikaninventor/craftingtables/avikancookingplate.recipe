@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "monsterbone", "count" : 4 },
+    { "item" : "campfire", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "avikancookingplate",
+    "count" : 1
+  },
+  "duration" : 5,
+  "groups" : [ "avikaninventor", "craftingstations", "all" ]
+}

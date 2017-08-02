@@ -1,0 +1,13 @@
+{
+  "itemName" : "centensianliquid",
+  "price" : 25,
+  "rarity" : "Rare",
+  "category" : "liquid",
+  "inventoryIcon" : "centensianliquidicon.png",
+  "shortdescription" : "Centensian Liquid",
+  "description" : "A strange, thick liquid that feels like it doesn't belong in this universe.",
+
+  "liquid" : "centensianliquid",
+  
+  "fuelAmount" : 5
+}

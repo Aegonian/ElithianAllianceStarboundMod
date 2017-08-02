@@ -1,0 +1,9 @@
+{
+  "name" : "arm",
+  "category" : "theleantrooper",
+  "type" : "arm",
+
+  "frames" : {
+    "arm" : "arm.png"
+  }
+}

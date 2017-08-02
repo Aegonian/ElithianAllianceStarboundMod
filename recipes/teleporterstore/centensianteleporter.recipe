@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "money", "count" : 5000 },
+    { "item" : "centensianmetal", "count" : 10 },
+    { "item" : "centensiantech", "count" : 4 },
+    { "item" : "centensianwarpcore", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "centensianteleporter",
+    "count" : 1
+  },
+  "groups" : [ "teleshop" ]
+}

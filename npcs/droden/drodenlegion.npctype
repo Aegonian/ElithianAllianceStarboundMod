@@ -1,0 +1,112 @@
+{
+  "type" : "drodenlegion",
+  "baseType" : "friendlyguard",
+
+  "levelVariance" : [0, 0],
+  
+  "damageTeamType" : "assistant",
+  "damageTeam" : 1,
+  
+  /*"innateStatusEffects" : [ 
+	"beamin",
+	"automaticdespawn"
+  ],*/
+  
+  "persistent" : false,
+
+  "scriptConfig" : {
+    "behavior" : "follower",
+	
+    "questGenerator" : { "pools" : [], "enableParticipation" : false },
+    
+    "behaviorConfig" : {
+      "greetingChance" : 0
+    },
+
+    "personalities" : [
+        [1.0, { "personality" : "normal", "reactions" : {} }]
+    ],
+
+    "reactions" : {
+      "spontaneous" : [
+      ]
+    },
+
+    "dialog" : {
+      "converse" : "/dialog/converse.config:converse",
+
+      "follower" : {
+        "attack" : {
+          "default" : {
+            "default" : [
+              "Detected hostile. Engaging.",
+              "Engaging target."
+            ]
+          }
+        },
+        "join" : {
+          "default" : {
+            "default" : [
+              "Legion unit <selfname> reporting.",
+              "This Legion unit is at your disposal."
+            ]
+          }
+        },
+        "returnFromCombat" : {
+          "default" : {
+            "default" : [
+              "Target defeated.",
+              "Hostile eliminated."
+            ]
+          }
+        },
+        "wait" : {
+          "default" : {
+            "default" : [
+              "Legion unit will wait."
+            ]
+          }
+        },
+        "returnFromWait" : {
+          "default" : {
+            "default" : [
+              "Legion unit ready for assignment."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+            "head" : [ { "name" : "thea-hiddenhead" } ],
+			"chest" : [ { "name" : "thea-hiddenchest" } ],
+            "legs" : [ { "name" : "thea-hiddenlegs" } ],
+            "primary" : [
+              "drodenlongsword"
+            ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 50.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 0.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "healthRegen" : {
+        "baseValue" : 0.0
+      }
+    }
+  }
+}

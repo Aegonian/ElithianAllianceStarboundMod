@@ -1,0 +1,32 @@
+{
+  "objectName" : "giantsandspitteraf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "legendary",
+  "category" : "actionFigure",
+  "collectablesOnPickup" : { "actionfigures" : "giantsandspitteraf" },
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"The Sandspitter spits sand to slow down its foes.\"",
+  "shortdescription" : "Sandspitter Figurine",
+
+  "inventoryIcon" : "giantsandspitteraf.png",
+  "orientations" : [
+    {
+      "image" : "giantsandspitteraf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "giantsandspitteraf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

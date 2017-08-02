@@ -1,0 +1,52 @@
+[
+  //AVIKAN
+  { "op" : "add",
+	"path" : "/scriptConfig/chatSounds/avikan",
+	"value" : {
+	  "male" : [
+		"/sfx/humanoid/avikan_chatter_male1.ogg",
+		"/sfx/humanoid/avikan_chatter_male2.ogg",
+		"/sfx/humanoid/avikan_chatter_male3.ogg"
+	  ],
+	  "female" : [
+		"/sfx/humanoid/avikan_chatter_male1.ogg",
+		"/sfx/humanoid/avikan_chatter_male2.ogg",
+		"/sfx/humanoid/avikan_chatter_male3.ogg"
+	  ]
+	}
+  },
+  
+  //TRINK
+  { "op" : "add",
+	"path" : "/scriptConfig/chatSounds/trink",
+	"value" : {
+	  "male" : [
+		"/sfx/humanoid/glitch_chatter_male1.ogg",
+		"/sfx/humanoid/glitch_chatter_male2.ogg",
+		"/sfx/humanoid/glitch_chatter_male3.ogg"
+	  ],
+	  "female" : [
+		"/sfx/humanoid/glitch_chatter_male1.ogg",
+		"/sfx/humanoid/glitch_chatter_male2.ogg",
+		"/sfx/humanoid/glitch_chatter_male3.ogg"
+	  ]
+	}
+  },
+  
+  //DRODEN
+  { "op" : "add",
+	"path" : "/scriptConfig/chatSounds/droden",
+	"value" : {
+	  "male" : [
+		"/sfx/humanoid/droden_chatter_1.ogg",
+		"/sfx/humanoid/droden_chatter_2.ogg",
+		"/sfx/humanoid/droden_chatter_3.ogg"
+	  ],
+	  "female" : [
+		"/sfx/humanoid/droden_chatter_1.ogg",
+		"/sfx/humanoid/droden_chatter_2.ogg",
+		"/sfx/humanoid/droden_chatter_3.ogg"
+	  ]
+	}
+  }
+]

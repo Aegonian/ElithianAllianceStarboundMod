@@ -1,0 +1,46 @@
+{
+  "objectName" : "avikanstatuegod",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Legendary",
+  "description" : "A statue depicting Rhadeis, the deity of Avikan religion.",
+  "shortdescription" : "Statue of Rhadeis",
+  "race" : "avikan",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 1500,
+
+  "apexDescription" : "The Miniknog won't approve of a statue such as this.",
+  "avianDescription" : "A statue depicting a god. It's quite detailed.",
+  "floranDescription" : "Big sstatue of alien godsss.",
+  "glitchDescription" : "Wonder. This statue looks an awful lot like an actual creature, not some metaphysical being.",
+  "humanDescription" : "A big statue dedicated to some god.",
+  "hylotlDescription" : "This statue seems to be dedicated to an alien god of sorts.",
+  "novakidDescription" : "Now that's a mighty fine piece of art right there.",
+
+  "aegiDescription" : "A beautifully crafted statue. I believe it depicts Rhadeis greeting the Avikan people.",
+  "avikanDescription" : "Rhadeis, our Uplifter. This grand statue honours him.",
+  "erixianDescription" : "This statue depicts Rhadeis, the god of the Avikan.",
+  "trinkDescription" : "Rhadeis, god of the Avikan. The statue's quality shows how much the Avikan honour him.",
+  "hymidDescription" : "A statue of one of the Gods! We Hymid aren't alone in worshipping the Ce'Tennan, it seems.",
+  "notixDescription" : "The Centens have been elevated to divine creatures in many cultures.",
+  "jorgasianDescription" : "This statue is beautiful. I believe it depiicts Rhadeis, the Avikan god.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "theleanDescription" : "TODO",
+  "drodenDescription" : "Detected statue of Rhadeis. This unit is reverent.",
+
+  "inventoryIcon" : "avikanstatuegodicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanstatuegod.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

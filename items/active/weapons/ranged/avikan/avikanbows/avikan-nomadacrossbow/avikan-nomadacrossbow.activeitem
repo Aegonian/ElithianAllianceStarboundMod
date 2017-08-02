@@ -1,0 +1,96 @@
+{
+  "itemName" : "avikan-nomadacrossbow",
+  "price" : 500,
+  "level" : 6,
+  "inventoryIcon" : "avikan-nomadacrossbow.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "tooltipKind" : "gun",
+  "category" : "Crossbow",
+  "description" : "A Nomada-built crossbow. It harvests monsters bones and hides.",
+  "shortdescription" : "Nomada Crossbow",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","bow","avikan"],
+
+  "radioMessagesOnPickup" : [ "pickupavikanhunting" ],
+
+  "animation" : "avikan-nomadacrossbow.animation",
+  "animationParts" : {
+    "bow" : "avikan-nomadacrossbowfull.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : { "parts" : { "bow" : { "properties" : {
+      "offset" : [1.0, 0]
+    }}}},
+    "sounds" : {
+      "fire" : [ "/sfx/gun/crossbow1.ogg" ],
+      "reload" : [ "/sfx/gun/bow_draw1.ogg" ]
+    }
+  },
+  
+  "baseOffset" : [0.0, 0.0],
+  "muzzleOffset" : [2.1, 0.25],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  
+  "elementalType" : "avikanhunting",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-crossbow/thea-crossbow.lua"],
+    "class" : "TheaCrossBow",
+
+    "baseDamage" : 8,
+    "baseEnergyUsage" : 25,
+    "inaccuracy" : 0.0,
+	
+	"cooldownTime" : 0.3,
+	
+	"useQuiverDamageBonus" : true,
+
+    "projectileType" : "avikanmetalarrow",
+	"projectileCount" : 1,
+	"projectileParameters" : {
+	  "speed" : 80
+	},
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "charge" : {
+        "armRotation" : -2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0.33,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.8,
+        "armRotation" : -30,
+        "weaponRotation" : 75,
+        "weaponOffset" : [-0.6, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+	}
+  },
+
+  "builder" : "/items/buildscripts/thea-buildreloadweapon.lua"
+}

@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "droden-tier5ahead", "count" : 1 },
+	{ "item" : "avikanmetaltier6", "count" : 6 },
+    { "item" : "avikancircuitry", "count" : 1 }
+  ],
+  "duration" : 5,
+  "output" : { "item" : "droden-tier6ahead", "count" : 1 },
+  "groups" : [ "drodenframecrafting3", "armours", "all" ]
+}

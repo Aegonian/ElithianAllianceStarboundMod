@@ -1,0 +1,44 @@
+{
+  "objectName" : "avikanrifledisplay",
+  "colonyTags" : ["avikan","combat"],
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 500,
+  "description" : "An Avikan assault rifle on display.",
+  "shortdescription" : "Vanguard Rifle Display",
+  "race" : "avikan",
+
+  "apexDescription" : "An alien weapon on display. It looks intimidating.",
+  "avianDescription" : "An assault rifle designed by an alien race.",
+  "floranDescription" : "Floran not understand how ssshoot ssticks works...",
+  "glitchDescription" : "Analysing. This weapon is built from an unusual metal alloy.",
+  "humanDescription" : "An alien assault rifle. I wouldn't like being on the receiving end of this gun.",
+  "hylotlDescription" : "An alien weapon. Its design is rather unusual.",
+
+  "aegiDescription" : "An Avikan assault rifle, no longer in service.",
+  "avikanDescription" : "A Vanguard assault rifle. A tool of freedom.",
+  "erixianDescription" : "An assault rifle of Avikan design.",
+  "trinkDescription" : "This Avikan weapon uses a surprisingly efficient feeding mechanism.",
+  "hymidDescription" : "The Avikan are very capable gunsmiths, and this rifle is a great example of their skill.",
+  "notixDescription" : "An Avikan weapon built for use in any environment.",
+  "jorgasianDescription" : "An Avikan assault rifle.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Vanguard Assault Rifle detected. Owner: unknown.",
+  
+  "inventoryIcon" : "avikanrifledisplay.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanrifledisplay.png:<color>",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "type" : "ao-aegiofficial",
+  "baseType" : "ao-civilian",
+
+  "npcname" : "Denna",
+  "identity" : {
+    "imagePath" : "aegi",
+    "gender" : "female",
+    "hairGroup" : "hair",
+    "hairType" : "fem4",
+	"facialMaskGroup" : "ears",
+	"facialMask" : "1"
+  },
+
+  "scriptConfig" : {
+	
+	//"offeredQuests" : [ "stuckastronaut" ],
+	//"turnInQuests" : [ "stuckastronaut" ],
+  
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "It's good to see another friendly face here. The Avikan aren't always friendly to aliens."
+		  ]
+		},
+
+        "aegi" : {
+          "default" : [
+            "It's good to see another friendly face here. The Avikan aren't always friendly to aliens."
+          ],
+          "aegi" : [
+            "A friendly face! Are you here on Alliance business, friend?"
+          ],
+          "avikan" : [
+            "I was sent here to represent the Aeginian Federal Union. Good meeting you, Captain."
+          ],
+		  "droden" : [
+            "I hope the Avikan aren't treating you too badly. It seems they aren't fond of AI."
+          ],
+		  "trink" : [
+            "I hope the Avikan aren't treating you too badly. It seems they aren't fond of AI."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "aegi-asauniformhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "aegi-asauniformchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "aegi-asauniformlegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "objectName" : "trinkundersideentry",
+  "colonyTags" : ["trink"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 200,
+  "description" : "An underside entrance piece of modular Trinkian buildings.",
+  "shortdescription" : "Trinkian Underside Entry",
+  "race" : "trink",
+
+  "health" : 8,
+
+  "apexDescription" : "A modular underside entrance.",
+  "avianDescription" : "An underside entrance decorated with green lights.",
+  "floranDescription" : "Floran seesss upside down roof. Floran wonderss why upside down.",
+  "glitchDescription" : "Fascinated. This modular underside entrance piece is packed with sensors.",
+  "humanDescription" : "An inverted metal pyramid? Strangely cool!",
+  "hylotlDescription" : "A metal underside entrance. Surpisingly, it is packed with sensors and communication systems.",
+
+  "aegiDescription" : "The Trinks are big fans of modular buildings. This underside entrance will fit on pretty much every suitable Trinkian construction.",
+  "avikanDescription" : "A metal underside entrance, built by machines.",
+  "erixianDescription" : "A modular underside entrance.",
+  "trinkDescription" : "Trinkian underside entrances are modular, and fit beneath of almost any suitable Trinkian structure.",
+  "hymidDescription" : "A metal underside entrance, built by the Notician robots.",
+  "notixDescription" : "Our Trinks are excellent at building modular structures.",
+  "jorgasianDescription" : "A modular underside entrance.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Readings indicate high amounts of sensors inside this structure.",
+
+
+  "inventoryIcon" : "trinkundersideentryicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "trinkundersideentry.png:default", "fullbright" : true }, { "image" : "trinkundersideentrylit.png:default" } ],
+
+      "imagePosition" : [-24, -48],
+
+      "fgAnchors" : [ [-3, 1],[-2, 1],[-1, 1],[ 0, 1],    [ 6, 1],[ 7, 1],[ 8, 1],[ 9, 1] ],
+      "spaces"    : [         [-2, 0],[-1, 0],[ 0, 0],    [ 6, 0],[ 7, 0],[ 8, 0],
+                                      [-1,-1],[ 0,-1],    [ 6,-1],[ 7,-1],
+                                              [ 0,-2],    [ 6,-2] ],
+                                           
+      "renderLayer" : "Object-10",
+      "collision" : "solid",
+      "direction" : "right"
+    }
+  ]
+}

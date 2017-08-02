@@ -1,0 +1,31 @@
+{
+  "itemName" : "celebratorycache2",
+  "level" : 6,
+  "price" : 500,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "tooltipKind" : "thea-unique",
+  "description" : "A sealed cache containing something of value. Hold to open!",
+  "shortdescription" : "^orange;Celebratory Cache II^white;",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "celebratorycacheicon.png",
+  "animation" : "celebratorycache.animation",
+  "animationParts" : {
+    "treasurebox" : "celebratorycache.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "open" : [ "/sfx/objects/colonydeed_partyhorn.ogg" ],
+	  "openLoop" : [ "/sfx/other/thea_sealedcache_opening2.ogg" ]
+    }
+  },
+  
+  "scripts" : ["/items/active/other/thea-sealedcache/thea-sealedcache.lua"],
+
+  "fireOffset" : [1.0, 0.0],
+
+  "treasure" : {
+    "pool" : "celebratorycache2"
+  }
+}

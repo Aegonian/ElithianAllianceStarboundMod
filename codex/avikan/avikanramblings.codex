@@ -1,0 +1,30 @@
+{
+  "id" : "avikanramblings",
+  "species" : "avikan",
+  "title" : "Torn Journal",
+  "description" : "A battered and torn page from an old journal.",
+  "icon" : "avikanscroll7.png",
+  "contentPages" : [
+
+"Day 14
+
+No-one believes me. Of course they don't. I'm not even sure why I'm writing this down any longer... But I know what I saw, what I heard and what I felt. Perhaps one day someone will read this again, and perhaps my account might still be of use to someone. It happened near one of those minor ruins of the Old Ones, in a small valley in the northern reaches of the Rhakori highlands.",
+
+"I happened upon the ruins by pure chance. I was hunting a Sandstalker, a big one, when it led me right into these ruins. Didn't seem like anything special at first: just a few of those massive metal cubes, battered by time and wheather, but still impregnable. But then, I saw something moving, and a door opened up in the central cube. I hesitated at first, but once I conquered my fear, I went in. There was some sort of circular platform on the ground, with a ring of light around it. I'd never seen anything like it before.",
+    
+"Then suddenly, more lights turned on inside the cube, and I see the air in front of me trembling, as if I was out in the middle of the hot desert sun, but it still felt cool inside the cube. And then it happened. One of the Old Ones - I don't know if it was Rhadeis, or another one - appeared out of nowhere. It started talking to me, hastily, and although I didn't know the words it said, I knew what it meant. It was as if my ears heard an alien language, while my mind heard not words, but meaning. I don't know how better to describe it.",
+
+"Either way, it spoke to me, and I understood what it said. It warned me that a Thelean invader was fast approaching, and that it meant to take a small cube that was lying hidden under the sand just outside the ruins. The Old One didn't tell me what the cube was, but it was clear the the thing was important, somehow. It told me to take the cube somewhere safe, out of reach of the invader, and then the Old One vanished just as quickly as it had appeared.",
+
+"I didn't hesitate, then. I immediately took off, and somehow, I knew exactly where I had to dig to find the cube. The Old One must have projected its location into my mind. I found it within minutes, and then I ran back to my Gad'hur, and hurried back to the village. I showed the cube to the Elder, and she took it, assuring me it would be stored somewhere safe. I guess she'll be shipping it off to one of the Vaults soon. She asked me where I found it, and I told her what I've written here.",
+
+"She didn't believe me, of course. She thought I had been hallucinating, that the heat must have been too much, and that I simply stumbled onto the cube. But I know what I saw. I didn't want to argue with the Elder, so I left then, and I returned home. Not an hour later, I heard the horn calling - a Thelean ship was spotted nearby, flying over the mountains. I ran outside, and I saw it heading towards where I found the cube. An hour later, the ship flew back the way it came.",
+
+"I'm certain that it was the invader the Old One spoke of. I tried to convince the others that my story was true after all, but they wouldn't believe me. I even took a few of them to the ruins, to see the open door in the large cube, but when we got there, the door was closed. My tracks had been erased by the winds, and there was no sign that any of what I had said was true. I almost started doubting myself, then..."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "itemName" : "avikantentpole",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "avikantentpole.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "description" : "A sturdy metal tent pole.",
+  "shortdescription" : "Avikan Tent Pole",
+  "glitchdescription" : "Observation. A metal tent pole.",
+  "florandescription" : "Floran makesss ssspear from metal polesss...",
+
+  "materialId" : 30040
+}

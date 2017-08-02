@@ -1,0 +1,109 @@
+{
+  "metadata" : {
+    "name" : "avikancolony",
+    "species" : "avikan",
+    "rules" : [
+    ],
+    "anchor" : [ "avikancolony-layout1" ],
+    "gravity" : 80,
+    "maxRadius" : 100000,
+    "maxParts" : 50,
+    "protected" : true
+  },
+
+  "parts" : [
+    {
+      "name" : "avikancolony-layout1",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "avikancolony-layout1.json" ],
+      "chance" : 0.1
+    },
+	{
+      "name" : "avikancolony-central1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ],
+		[ "doNotCombineWith", [ "avikancolony-central2" ] ]
+      ],
+      "def" : [ "tmx", "avikancolony-central1.json" ],
+      "chance" : 0.1
+    },
+	{
+      "name" : "avikancolony-central2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ],
+		[ "doNotCombineWith", [ "avikancolony-central1" ] ]
+      ],
+      "def" : [ "tmx", "avikancolony-central2.json" ],
+      "chance" : 0.1
+    },
+	{
+      "name" : "avikancolony-roomright1",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "avikancolony-roomright1.json" ],
+      "chance" : 0.1
+    },
+	{
+      "name" : "avikancolony-roomright2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "avikancolony-roomright2.json" ],
+      "chance" : 0.1
+    },
+	{
+      "name" : "avikancolony-roomleft1",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "avikancolony-roomleft1.json" ],
+      "chance" : 0.1
+    },
+	{
+      "name" : "avikancolony-roomleft2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "avikancolony-roomleft2.json" ],
+      "chance" : 0.1
+    },
+	{
+      "name" : "avikancolony-roomleft3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "avikancolony-roomleft3.json" ],
+      "chance" : 0.1
+    },
+	{
+      "name" : "avikancolony-basement1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ],
+		[ "doNotCombineWith", [ "avikancolony-basement2" ] ]
+      ],
+      "def" : [ "tmx", "avikancolony-basement1.json" ],
+      "chance" : 0.1
+    },
+	{
+      "name" : "avikancolony-basement2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ],
+		[ "doNotCombineWith", [ "avikancolony-basement1" ] ]
+      ],
+      "def" : [ "tmx", "avikancolony-basement2.json" ],
+      "chance" : 0.1
+    }
+  ]
+}

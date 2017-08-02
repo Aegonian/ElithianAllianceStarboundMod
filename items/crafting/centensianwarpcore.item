@@ -1,0 +1,13 @@
+{
+  "itemName" : "centensianwarpcore",
+  "price" : 2500,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "centensianwarpcore.png",
+  "description" : "A Centensian artefact, part of a teleportation device.",
+  "shortdescription" : "Warp Core",
+  "itemTags" : [ "reagent" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 12
+}

@@ -1,0 +1,77 @@
+{
+  "type" : "theleansoldier-hologram",
+  "baseType" : "hostile",
+
+  "dropPools" : [ ],
+  
+  "disableWornArmor" : false, //Enable worn armour to get the hologram status effect
+
+  "scriptConfig" : {
+	"behaviorConfig" : {
+      //Melee Behaviour
+	  "leapWindup" : 0.75,
+	  
+	  //Ranged Behaviour
+	  "rangedAimTime": 0.75,
+	  "rangedWindupTime": 0.05,
+	  "rangedMinFireTime": 2,
+	  "rangedMaxFireTime": 3,
+	  "bowDrawTime": 1,
+	  "arrowSpeed": 62.5
+    },
+	
+	"combat" : {
+      "meleeWeaponWindups" : {
+        "default" : 0.05
+      },
+      "meleeWeaponCooldowns" : {
+        "default" : 0.5
+      }
+    },
+	
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Initiating holographic attack module."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "thelean-hologramhead" } ],
+            "chest" : [ { "name" : "thelean-hologramchest" } ],
+            "legs" : [ { "name" : "thelean-hologramlegs" } ],
+            "primary" : [
+              "thelean-hologramrifle"
+            ],
+            "sheathedprimary" : [
+              "thelean-tendrilhologram"
+            ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 80.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 0.75
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "healthRegen" : {
+        "baseValue" : 0.0
+      }
+    }
+  }
+}

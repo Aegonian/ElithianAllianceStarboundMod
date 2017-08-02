@@ -1,0 +1,46 @@
+{
+  "objectName" : "avikanmoderntable2",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 70,
+  "description" : "A metal table.",
+  "shortdescription" : "Avikan Table",
+  "race" : "avikan",
+
+  "apexDescription" : "A heavy metal table.",
+  "avianDescription" : "A shiny metal table.",
+  "floranDescription" : "Metal tablesss. Shinysss.",
+  "glitchDescription" : "Statement. A table.",
+  "humanDescription" : "A metal table. Someone should clean it.",
+  "hylotlDescription" : "A well crafted metal table.",
+
+  "aegiDescription" : "A metal table. It doesn't rust.",
+  "avikanDescription" : "A metal table from home.",
+  "erixianDescription" : "A metal table. Solid.",
+  "trinkDescription" : "A metal table.",
+  "hymidDescription" : "This table is rather heavy.",
+  "notixDescription" : "A heavy metal table.",
+  "jorgasianDescription" : "A metal table.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected stains. Recommended action: clean.",
+
+  "inventoryIcon" : "avikanmoderntable2icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanmoderntable2.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}

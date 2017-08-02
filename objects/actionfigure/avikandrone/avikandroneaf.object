@@ -1,0 +1,32 @@
+{
+  "objectName" : "avikandroneaf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "legendary",
+  "category" : "actionFigure",
+  "collectablesOnPickup" : { "actionfigures" : "avikandroneaf" },
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"An Avikan reconnaissance drone capable of minor combat support.\"",
+  "shortdescription" : "Vanguard Drahl Figurine",
+
+  "inventoryIcon" : "avikandroneaf.png",
+  "orientations" : [
+    {
+      "image" : "avikandroneaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "avikandroneaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

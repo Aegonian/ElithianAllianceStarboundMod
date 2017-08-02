@@ -1,0 +1,50 @@
+{
+  "objectName" : "avikangroundlight",
+  "colonyTags" : ["avikan", "light"],
+  "rarity" : "Common",
+  "category" : "light",
+  "printable" : false,
+  "price" : 30,
+  "description" : "A small, bright light pointing upward.",
+  "shortdescription" : "Avikan Ground Light",
+  "race" : "avikan",
+  
+  "lightColor" : [255, 255, 255],
+  "pointLight" : true,
+  "pointBeam" : 10,
+  "beamAmbience" : 0.2,
+
+  "apexDescription" : "A light on the ground, to illuminate something above it.",
+  "avianDescription" : "This light shines directly upward.",
+  "floranDescription" : "Floran sstand on top of lightsss, Floran getss warm feet.",
+  "glitchDescription" : "Observation. This light shines directly upward.",
+  "humanDescription" : "A small light on the ground to illuminate something above it.",
+  "hylotlDescription" : "This light shines directly upward.",
+  "novakidDescription" : "A light shinin' upward, like an upside-down sun.",
+
+  "aegiDescription" : "A simple light shining upward.",
+  "avikanDescription" : "A light shining upward, often found in shipyards.",
+  "erixianDescription" : "This light shines upward.",
+  "trinkDescription" : "A light that shines upward. Inefficient during the day.",
+  "hymidDescription" : "This light illuminates something above.",
+  "notixDescription" : "A small light pointing at the sky.",
+  "jorgasianDescription" : "A small light pointing upward.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Light. Illuminates objects above.",
+
+  "inventoryIcon" : "avikangroundlighticon.png",
+  "orientations" : [
+    {
+      "image" : "avikangroundlight.png:<frame>",
+      "imagePosition" : [0, 0],
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "beamAngle" : 90
+
+    }
+  ]
+}

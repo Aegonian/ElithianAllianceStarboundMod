@@ -1,0 +1,85 @@
+{
+  "objectName" : "avikanvaultdoor",
+  "colonyTags" : ["avikan", "door"],
+  "rarity" : "Common",
+  "category" : "door",
+  "printable" : false,
+  "price" : 80,
+  "description" : "A sturdy metal blast door.",
+  "shortdescription" : "Avikan Vault Door",
+  "race" : "avikan",
+  
+  "health" : 8,
+
+  "apexDescription" : "A sturdy metal blast door.",
+  "avianDescription" : "A shiny blast door.",
+  "floranDescription" : "Floran wondersss what is behind metal doorsss.",
+  "glitchDescription" : "Observation. A blast door.",
+  "humanDescription" : "A heavy metal blast door. Cool.",
+  "hylotlDescription" : "A metal blast door.",
+
+  "aegiDescription" : "A vault door. Useful for protecting valuable things.",
+  "avikanDescription" : "This vault door will keep any potential intruders outside of our Terves.",
+  "erixianDescription" : "A blast door. It looks rather strong.",
+  "trinkDescription" : "An Avikan vault door. What might it be protecting?",
+  "hymidDescription" : "A large vault door, for when you really don't want intruders.",
+  "notixDescription" : "A vault door, built to withstand the elements.",
+  "jorgasianDescription" : "A strong vault door.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Analysis. Switch. Used to power on and off various objects.",
+
+  "inventoryIcon" : "avikanvaultdooricon.png",
+  "orientations" : [
+    {
+      "image" : "avikanvaultdoor.png:default",
+      "direction" : "left",
+      "flipImages" : true,
+      "imagePosition" : [-16, 0],
+      "renderLayer" : "Object+5",
+	  
+      "spaceScan" : 0.1,
+      "fgAnchors" : [ [-2, -1], [-1, -1], [4, 6], [5, 6] ],
+      "animationPosition" : [-16, 0]
+    },
+    {
+      "image" : "avikanvaultdoor.png:default",
+      "direction" : "right",
+      "imagePosition" : [-40, 0],
+      "renderLayer" : "Object+5",
+	  
+      "spaceScan" : 0.1,
+      "fgAnchors" : [ [-5, 6], [-4, 6], [1, -1], [2, -1] ],
+      "animationPosition" : [-40, 0]
+    }
+  ],
+
+  "scripts" : [ "/objects/scripts/thea-flippabledoor.lua" ], //Custom LUA script provided by Storm_UK for flipping input nodes based on facing direction, modified by Aegonian for greater versatility
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/door/door.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_open.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_close.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "avikanvaultdoor.png"
+  },
+  "animationPosition" : [0, 0],
+  
+  "inputNodes"  : [ [-5, 5] ],
+  "outputNodes" : [ [0, 0] ],
+  
+  //Config for flipped nodes
+  "flippedInputNodes"  : [ [5, 5] ],
+  "flippedOutputNodes" : [ [0, 0] ]
+}

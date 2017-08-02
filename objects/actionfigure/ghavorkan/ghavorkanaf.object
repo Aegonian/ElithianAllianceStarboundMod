@@ -1,0 +1,32 @@
+{
+  "objectName" : "ghavorkanaf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "legendary",
+  "category" : "actionFigure",
+  "collectablesOnPickup" : { "actionfigures" : "ghavorkanaf" },
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"A twisted creature created by the Theleans.\"",
+  "shortdescription" : "Ghavorkan Figurine",
+
+  "inventoryIcon" : "ghavorkanaf.png",
+  "orientations" : [
+    {
+      "image" : "ghavorkanaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "ghavorkanaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

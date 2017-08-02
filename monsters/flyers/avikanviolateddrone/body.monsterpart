@@ -1,0 +1,9 @@
+{
+  "name" : "avikanviolateddrone",
+  "category" : "avikanviolateddrone",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "avikanviolateddrone.png"
+  }
+}

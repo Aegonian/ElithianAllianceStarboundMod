@@ -1,0 +1,29 @@
+{
+  "type" : "tenantavikanwatermerchant",
+  "baseType" : "merchant",
+  
+  "dropPools" : [],
+
+  "scriptConfig" : {
+    "questGenerator" : { "pools" : [], "enableParticipation" : false },
+	
+	"merchant" : {
+	  "categories" : {
+		"override" : [ "avikanwater" ]
+	  }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "avikan-merchanthead", "parameters" : { "colorIndex" : 8 } } ],
+			"chest" : [ { "name" : "avikan-merchantchest", "parameters" : { "colorIndex" : 8 } } ],
+            "legs" : [ { "name" : "avikan-merchantlegs", "parameters" : { "colorIndex" : 8 } } ],
+            "back" : [ { "name" : "avikanmerchantpack", "parameters" : { "colorIndex" : 8 } } ]
+          }
+        ] ]
+    ]
+  }
+}

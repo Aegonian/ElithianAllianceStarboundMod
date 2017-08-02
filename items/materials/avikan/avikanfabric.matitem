@@ -1,0 +1,14 @@
+{
+  "itemName" : "avikanfabric",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "avikanfabric.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "description" : "Fabric tapestry for wall decoration and insulation.",
+  "shortdescription" : "Avikan Fabric",
+  "glitchdescription" : "Observation. Simple fabric wall tapestry.",
+  "florandescription" : "Fabric wallsss.",
+
+  "materialId" : 30043
+}

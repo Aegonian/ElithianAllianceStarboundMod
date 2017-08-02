@@ -1,0 +1,28 @@
+{
+  "id" : "trinkcrafting",
+  "prerequisites" : [],
+  "title" : "^green;Trinkian Crafting Techniques",
+  "text" : "This Central Circuit Terminal has a copy of a ^orange;Trinkian Crafting Guide ^white;in its database, but I can't access it yet. The terminal needs a few upgrades before I can download the file. ^green;I should gather ^orange;10 Sticks of RAM ^green;and return to any Central Circuit Terminal ^white;to start the upgrade.",
+  "completionText" : "With the upgrade completed, all I need to do now is download the file.",
+  "moneyRange" : [50, 50],
+  "rewards" : [],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+	"portraits" : {
+      "default" : "player"
+    },
+	"followUp" : "trinkcrafting2",
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "stickofram",
+        "count" : 10,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Return to a ^orange;Central Circuit Terminal ^reset;in a ^orange;Trinkian Settlement^reset;"
+  }
+}

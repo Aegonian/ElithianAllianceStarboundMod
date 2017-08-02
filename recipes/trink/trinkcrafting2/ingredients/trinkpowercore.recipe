@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "trinkmetal", "count" : 2 },
+	{ "item" : "coalore", "count" : 2 },
+    { "item" : "liquidpoison", "count" : 1 }
+  ],
+  "output" : {
+	"item" : "trinkpowercore",
+	"count" : 1
+  },
+  "groups" : [ "trinkcrafting2", "ingredients", "all" ],
+  "duration" : 0.15
+}

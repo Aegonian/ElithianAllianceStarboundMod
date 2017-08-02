@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "avikandarkmetal", "count" : 12 }
+  ],
+  "output" : { "item" : "drodenmannequin", "count" : 1 },
+  "duration" : 5,
+  "groups" : [ "avikanmetalcrafting", "metalfurniture", "all" ]
+}

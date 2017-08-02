@@ -1,0 +1,58 @@
+{
+  "type" : "ao-avikanscribe",
+  "baseType" : "ao-civilian",
+
+  "npcname" : "Vesuli",
+
+  "scriptConfig" : {
+    	
+	//"offeredQuests" : [ "avikancrafting.gearup" ],
+	//"turnInQuests" : [ "avikancrafting.gearup", "avikancrafting2.gearup" ],
+  
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "An undocumented alien, how exciting!"
+		  ]
+		},
+
+        "avikan" : {
+          "default" : [
+            "If you ever happen across any ancient texts, please, do bring them here!"
+          ],
+          "glitch" : [
+            "If you ever happen across any ancient texts, please, do bring them here!"
+          ],
+          "avikan" : [
+            "Ah, Captain! Do you have any ancient texts for me to look at?"
+          ],
+          "trink" : [
+            "If you ever happen across any ancient texts, please, do bring them here!"
+          ],
+          "droden" : [
+            "Do you happen to have any ancient texts memorized in that frame core of yours?"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "avikan-scribehead", "parameters" : { "colorIndex" : 8 } }
+            ],
+            "chest" : [
+              { "name" : "avikan-scribechest", "parameters" : { "colorIndex" : 8 } }
+            ],
+            "legs" : [
+              { "name" : "avikan-scribelegs", "parameters" : { "colorIndex" : 8 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

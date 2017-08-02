@@ -1,0 +1,59 @@
+{
+  "objectName" : "avikanentry3",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 60,
+  "description" : "A tent awning decorated in the style of the Rhaiod.",
+  "shortdescription" : "Rhaiod Awning",
+  "race" : "avikan",
+
+  "apexDescription" : "Purple is an odd colour for such a tent.",
+  "avianDescription" : "A decorated tent awning.",
+  "floranDescription" : "Purple colourss make Floran feel odd.",
+  "glitchDescription" : "Observation. A tent entrance.",
+  "humanDescription" : "The fabric of this tent awning was woven with great care.",
+  "hylotlDescription" : "An oddly coloured tent awning.",
+
+  "aegiDescription" : "An awning for Rhaiod tents.",
+  "avikanDescription" : "The quality and colour of this awning clearly marks this tent as a Rhaiod temple.",
+  "erixianDescription" : "A purple tent awning.",
+  "trinkDescription" : "The quality of this fabric is unusually high for Avikan tents.",
+  "hymidDescription" : "A Rhaiod tent awning. The Gods are worshipped here.",
+  "notixDescription" : "A tent awning made of purple fabric.",
+  "jorgasianDescription" : "A purple-coloured tent awning.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Fabric tent awning. Colour suggests this tent belongs to the Rhaiod.",
+
+  "inventoryIcon" : "avikanentry3icon.png",
+  "orientations" : [
+    {
+      "image" : "avikanentry3.png:<color>",
+
+      "imagePosition" : [-40, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform",
+      "flipImages" : true,
+      "direction" : "right"
+    },
+    {
+      "image" : "avikanentry3.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform",
+      "direction" : "left"
+    }
+  ]
+}

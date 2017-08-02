@@ -1,0 +1,41 @@
+{
+  "objectName" : "avikanarmringdirt",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 10,
+  "description" : "A pile of dirty muck. Perhaps there's something in it?",
+  "shortdescription" : "Lost Arm Ring",
+  "race" : "avikan",
+
+  "floranDescription" : "If Floran digss through muck, Floran might find something?",
+  "glitchDescription" : "Disgusted. I'd rather not touch that muck.",
+  "novakidDescription" : "Is it just me, or do I see somethin' shiny in that pile o' muck?",
+  "drodenDescription" : "Detected sewage waste. Scanning for additional items...",
+
+  "inventoryIcon" : "avikanarmringdirticon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanarmringdirt.png:<color>",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+  "scripts" : [
+    "/objects/scripts/thea-interactpickup.lua"
+  ],
+  "scriptDelta" : 5,
+  
+  "spawnableItem" : "avikanarmring",
+
+  "animation" : "avikanarmringdirt.animation",
+  "animationParts" : {
+    "interactiveObject" : "avikanarmringdirt.png"
+  },
+  "animationPosition" : [0, 0]
+  
+}

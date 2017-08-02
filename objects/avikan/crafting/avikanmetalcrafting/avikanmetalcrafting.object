@@ -1,0 +1,76 @@
+{
+  "objectName" : "avikanmetalcrafting",
+  "colonyTags" : ["crafting"],
+  "category" : "crafting",
+  "rarity" : "Rare",
+  "description" : "The metalworking station is used for constructing items and equipment made of metal.",
+  "shortdescription" : "^orange;Avikan Metalworking Station^white;",
+  "race" : "avikan",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/avikanmetalcrafting.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : " Metalworking Station",
+        "subtitle" : " ^#b9b5b2;Metal items and equipment",
+        "icon" : {
+          "file" : "/interface/crafting/craftingavikanmetal.png"
+        }
+      }
+    },
+    "filter" : [ "avikanmetalcrafting" ]
+  },
+  "printable" : false,
+  "price" : 750,
+
+  "apexDescription" : "A high-tech metalworking station. I could craft some proper equipment here.",
+  "avianDescription" : "This machine will automatically cut and weld metal to make crafting a bit easier.",
+  "floranDescription" : "Floran issn't ssure what to think of big metal arm. It firess lasersss.",
+  "glitchDescription" : "Cautious. The laser this machine produces could easily cut off one of my arms.",
+  "humanDescription" : "A modern metalworking solution. It almost matches the Protectorate's Replicators.",
+  "hylotlDescription" : "This laser makes for a beautiful lightshow, and is useful for crafting on top of that.",
+  "novakidDescription" : "A metal arm that's shootin' lasers. Better be careful 'round that thing.",
+  
+  "aegiDescription" : "The technology behind this metalworking station is rather impressive.",
+  "avikanDescription" : "These machines produce the bulk of the Vanguard's armoury.",
+  "erixianDescription" : "That laser can cut through flesh as easily as it cuts through metal. Better be careful.",
+  "trinkDescription" : "Not the most efficient metalworking solution. That laser requires too much energy for the work it does.",
+  "hymidDescription" : "That laser is extremely potent. It'll cut right through any common metal.",
+  "notixDescription" : "An advanced metalworking solution. I wonder what supplies the power to this station?",
+  "jorgasianDescription" : "A metalworking station. It can craft items of a very high quality.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Analysis complete. Metalworking station. Used to construct equipment and other items made of metal.",
+
+  "inventoryIcon" : "avikanmetalcraftingicon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "avikanmetalcrafting.png:<color>.<frame>", "fullbright" : true }, { "image" : "avikanmetalcraftinglit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-16, 0],
+      "frames" : 26,
+      "animationCycle" : 2.6,
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "bottom" ]
+
+    },
+    {
+	  "imageLayers" : [ { "image" : "avikanmetalcrafting.png:<color>.<frame>", "fullbright" : true }, { "image" : "avikanmetalcraftinglit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-16, 0],
+      "frames" : 26,
+      "animationCycle" : 2.6,
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "npcToy" : {}
+}

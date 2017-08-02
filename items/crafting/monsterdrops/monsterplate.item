@@ -1,0 +1,13 @@
+{
+  "itemName" : "monsterplate",
+  "price" : 150,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "monsterplate.png",
+  "description" : "A strong bone plate from an alien monster.",
+  "shortdescription" : "Monster Plate",
+  "itemTags" : [ "reagent" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 4
+}

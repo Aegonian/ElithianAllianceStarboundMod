@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "avikanmetal", "count" : 4 },
+    { "item" : "avikan-assaultrifle2", "count" : 2 },
+    { "item" : "avikan-sniperrifle", "count" : 1 }
+  ],
+  "output" : { "item" : "avikanweaponrack", "count" : 1 },
+  "groups" : [ "avikanmetalcrafting", "metalfurniture", "all" ]
+}

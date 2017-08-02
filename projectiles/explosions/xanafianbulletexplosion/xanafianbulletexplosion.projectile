@@ -1,0 +1,16 @@
+{
+  "projectileName" : "xanafianbulletexplosion",
+  "image" : "xanafianbulletexplosion.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 6,
+  "speed" : 0,
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "universalDamage" : false,  
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "knockback" : 0
+}

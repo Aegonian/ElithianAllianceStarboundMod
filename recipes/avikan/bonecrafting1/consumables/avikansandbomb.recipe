@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "sandspittersack", "count" : 1 },
+	{ "item" : "avikanstring", "count" : 2 }
+  ],
+  "output" : { "item" : "avikansandbomb", "count" : 3 },
+  "groups" : [ "avikanbonecrafting", "consumables", "all" ]
+}

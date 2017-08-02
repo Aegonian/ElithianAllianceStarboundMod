@@ -1,0 +1,21 @@
+{
+  "projectileName" : "excaliburburst",
+  "image" : "excaliburburst.png",
+  "physics" : "laser",
+  "animationCycle" : 0.4,
+  "animationLoops" : false,
+  "frameNumber" : 6,
+  "emitters" : [],
+  "power" : 50,
+  "damagePoly" : [ [-10, -10], [-10, 10], [30, 10], [30, -10] ],
+  "knockback" : 55,
+  "speed" : 3,
+  "timeToLive" : 0.4,
+  "bounces" : -1,
+  "layer" : "front",
+  "piercing" : true,
+  "fullbright" : true,
+  "damageKind" : "default",
+  "actionOnReap" : [],
+  "hydrophobic" : false
+}

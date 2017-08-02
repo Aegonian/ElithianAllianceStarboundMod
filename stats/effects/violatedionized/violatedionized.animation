@@ -1,0 +1,23 @@
+{
+  "particleEmitters" : {
+    "flames" : {
+      "enabled" : true,
+      "emissionRate" : 7.0,
+      "particles" : [
+        {
+          "particle" : "violatediontrail2"
+        }
+      ]
+    }
+  },
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [128, 0, 0]
+    }
+  },
+  "sounds" : {
+    "burst" : [ "/sfx/gun/violatedioncannon_explosion.ogg" ]
+  }
+}

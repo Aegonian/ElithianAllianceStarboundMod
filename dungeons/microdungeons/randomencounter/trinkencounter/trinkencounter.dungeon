@@ -1,0 +1,46 @@
+{
+  "metadata" : {
+    "name" : "trinkencounter",
+    "species" : "trink",
+    "rules" : [
+    ],
+	
+    "anchor" : [ "trk-pyramid", "trk-pyramid2", "trk-pyramid3", "trk-buriedbunker1" ],
+
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "trk-pyramid",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "trk-pyramid.json" ]
+    },
+	{
+      "name" : "trk-pyramid2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "trk-pyramid2.json" ]
+    },
+	{
+      "name" : "trk-pyramid3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "trk-pyramid3.json" ]
+    },
+	{
+      "name" : "trk-buriedbunker1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "trk-buriedbunker1.json" ]
+    }
+  ]
+}

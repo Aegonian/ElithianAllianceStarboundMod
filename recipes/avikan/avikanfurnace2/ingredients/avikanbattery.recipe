@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "avikanmetal", "count" : 1 },
+	{ "item" : "coalore", "count" : 2 },
+    { "item" : "liquidpoison", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "avikanbattery",
+    "count" : 2
+  },
+  "duration" : 0.15,
+  "groups" : [ "avikanfurnace2", "ingredients", "all" ]
+}

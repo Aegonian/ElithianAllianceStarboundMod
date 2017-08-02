@@ -1,0 +1,188 @@
+{
+  "globalTagDefaults" : {
+    "paletteSwaps" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "firing" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "fire" : {
+            "frames" : 2,
+            "cycle" : 0.07,
+            "mode" : "transition",
+            "transition" : "off"
+          }
+        }
+      },
+	  "charge" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+		  "charging" : {
+            "frames" : 10,
+            "cycle" : 1.0,
+            "mode" : "loop"
+          }
+        }
+      },
+	  "chargehold" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+		  "on" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "loop"
+          }
+        }
+      },
+	  "overlay" : {
+        "default" : "visible",
+        "states" : {
+          "visible" : {},
+		  "invisible" : {}
+        }
+      }
+    },
+
+    "parts" : {
+      "gun" : {
+        "properties" : {
+          "centered" : true,
+          "image" : "<partImage><paletteSwaps>",
+          "offset" : [0.0, 0.0],
+          "transformationGroups" : ["weapon"]
+        }
+      },
+	  "lights" : {
+        "properties" : {
+          "centered" : true,
+          "image" : "<partImage><paletteSwaps>",
+          "offset" : [0.0, 0.0],
+          "fullbright" : true,
+          "transformationGroups" : ["weapon"]
+        }
+      },
+      "muzzleFlash" : {
+        "properties" : {
+          "zLevel" : -1,
+          "centered" : true,
+          "offset" : [0.75, 0],
+          "fullbright" : true,
+          "transformationGroups" : ["muzzle"]
+        },
+
+        "partStates" : {
+          "firing" : {
+            "off" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:<variant>.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "charge" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "offset" : [0, 0],
+          "fullbright" : true,
+          "transformationGroups" : ["weapon"]
+        },
+
+        "partStates" : {
+          "charge" : {
+            "off" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "charging" : {
+              "properties" : {
+                "image" : "<partImage>:<frame>"
+              }
+            }
+          }
+        }
+      },
+	  "chargehold" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "offset" : [0, 0],
+          "fullbright" : true,
+          "transformationGroups" : ["weapon"]
+        },
+
+        "partStates" : {
+          "chargehold" : {
+            "off" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "on" : {
+              "properties" : {
+                "image" : "<partImage>:<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "rotationGroups" : {
+    "weapon" : {
+      "angularVelocity" : 0
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "muzzle" : {}
+  },
+
+  "particleEmitters" : {
+    "muzzleFlash" : {
+      "emissionRate" : 10.0,
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [0, 0, 0, 0],
+      "particles" : [ ]
+    },
+	"idleparticles" : {
+	  "active" : true,
+      "emissionRate" : 4.0,
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [0, -0.3, 0, 0.3],
+      "particles" : [
+        { "particle" : "thellhunteridle"},
+        { "particle" : "thellhunteridle2"}
+      ]
+    }
+  },
+
+  "lights" : {
+    "muzzleFlash" : {
+      "active" : false,
+      "position" : [0, 0],
+      "color" : [90, 45, 0]
+    }
+  },
+
+  "sounds" : {
+    "fire" : [ ],
+	"chargeLoop" : [ ],
+	"holdLoop" : [ ],
+	"discharge" : [ ]
+  }
+}

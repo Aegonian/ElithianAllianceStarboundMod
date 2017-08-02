@@ -1,0 +1,28 @@
+{
+  "materialId" : 30070,
+  "materialName" : "alliancesmoothpanel",
+  "particleColor" : [157, 157, 157, 255],
+  "itemDrop" : "alliancesmoothpanel", 
+  "shortdescription" : "Alliance Panel",
+  
+  "description" : "Polished metal panels.",
+  "glitchDescription" : "Pleased. This metal panel has been properly polished.",
+  "floranDescription" : "Floran wantsss to sscratch perfect metal panelss.",
+  "novakidDescription" : "A metal panel polished real hard.",
+  
+  "drodenDescription" : "Analysis complete. Metal panel.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "alliancesmoothpanel.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 50
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "projectileName" : "smalljumpriflebullet",
+  "physics" : "jumpriflebullet",
+  "bounces" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "smalljumpriflebullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "emitters" : [ "smalljumprifletrail" ],
+  "power" : 5,
+  "speed" : 65,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/smalljumprifleexplosion/smalljumprifleexplosion.config"
+    }
+  ],
+  "lightColor" : [100, 65, 0],
+  "fullbright" : true,
+  "damageType" : "NoDamage",
+  "damageKind" : "jumpweapon",
+  "hydrophobic" : true
+}

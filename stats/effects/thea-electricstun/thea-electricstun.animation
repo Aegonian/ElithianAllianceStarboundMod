@@ -1,0 +1,23 @@
+{
+  "particleEmitters" : {
+    "sparks" : {
+      "enabled" : true,
+      "emissionRate" : 20.0,
+      "particles" : [
+        { "particle" : "thea-electricstunarc" }
+      ]
+    }
+  },
+  
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [78, 98, 128]
+    }
+  },
+  
+  "sounds" : {
+    "stunLoop" : [ "/sfx/melee/debilitator_idle.ogg" ]
+  }
+}

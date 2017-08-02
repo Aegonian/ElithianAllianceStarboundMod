@@ -1,0 +1,58 @@
+{
+  "objectName" : "alliancecookingstove",
+  "colonyTags" : ["alliance", "cooking"],
+  "printable" : false,
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "crafting",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/craftingcampfire.config",
+	"paneLayoutOverride" : {
+	  "windowtitle" : {
+		"title" : " Alliance Stove",
+		"subtitle" : " ^#b9b5b2;Basic cooking"
+	  }
+	},
+    "filter" : [ "campfire" ]
+  },
+  "description" : "A standard model stove, for cooking food.",
+  "shortdescription" : "^orange;Alliance Stove^white;",
+  "race" : "aegi",
+
+  "apexDescription" : "A multifunctional stove, for cooking and baking.",
+  "avianDescription" : "I could bake some bread in here.",
+  "floranDescription" : "Floran once climbed insside stove. Wasss not pleassant...",
+  "glitchDescription" : "Apreciative. This multifunctional stove allows me to prepare a variety of foods.",
+  "humanDescription" : "A stove, just like the ones we had back home.",
+  "hylotlDescription" : "A multifunctional stove.",
+  "novakidDescription" : "Let's do some bakin'!",
+
+  "aegiDescription" : "A standard model stove, found in almost any Aeginian kitchen.",
+  "avikanDescription" : "An alien stove, but I'm certain I can get it to work.",
+  "erixianDescription" : "A basic stove of Aeginian design.",
+  "trinkDescription" : "Like many Aeginian machines, this stove is unusually efficient.",
+  "hymidDescription" : "Let's do some cooking!",
+  "notixDescription" : "I could prepare various meals here.",
+  "jorgasianDescription" : "A basic stove.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien stove. Organic food can be used as unit fuel.",
+  
+  "inventoryIcon" : "alliancecookingstoveicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "alliancecookingstove.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ],
+
+  "npcToy" : {}
+}

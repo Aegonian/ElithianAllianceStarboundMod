@@ -1,0 +1,28 @@
+{
+  "materialId" : 30074,
+  "materialName" : "alliancegroundpanel",
+  "particleColor" : [97, 97, 97, 255],
+  "itemDrop" : "alliancegroundpanel", 
+  "shortdescription" : "Alliance Ground Panel",
+  
+  "description" : "A metal panel often used to cover the floor.",
+  "glitchDescription" : "Informed. Such panels often serves as floorboards.",
+  "floranDescription" : "Floran thinksss thiss panel iss for walking on.",
+  "novakidDescription" : "A metal floorboard... I prefer the sound of boots on wood.",
+  
+  "drodenDescription" : "Analysis complete. Metal floorboard.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "alliancegroundpanel.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 45
+  }
+}

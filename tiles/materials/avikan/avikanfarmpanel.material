@@ -1,0 +1,30 @@
+{
+  "materialId" : 30028,
+  "materialName" : "avikanfarmpanel",
+  "particleColor" : [215, 184, 137, 255],
+  "itemDrop" : "avikanfarmpanel", 
+  "shortdescription" : "Avikan Farming Block",
+  
+  "description" : "A metal container filled with fertile dirt, ready for farming.",
+  "glitchDescription" : "Statement. Dirt captured in a metal container, for indoor farming.",
+  "floranDescription" : "Dirt isss for farming.",
+  "novakidDescription" : "Some dirty lookin' metal panel.",
+  
+  "drodenDescription" : "Analysis complete. Fertile dirt captured in a metal container.",
+
+  "footstepSound" : "/sfx/blocks/footstep_dirt.ogg",
+  "tillableMod" : 32,
+  "soil" : true,
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "avikanfarmpanel.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 80
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "itemName" : "avikanjavelin",
+  "price" : 2,
+  "rarity" : "Common",
+  "category" : "throwableItem",
+  "inventoryIcon" : "avikanjavelinicon.png",
+  "image" : "avikanjavelin.png",
+  "shortdescription" : "Bone Javelin",
+  "description" : "A sharp javelin made of monster bone. It harvests special hunting materials.",
+
+  "ammoUsage" : 1,
+
+  "edgeTrigger" : true,
+  "windupTime" : 0.0,
+  "cooldown" : 0.8,
+
+  "projectileType" : "avikanjavelin",
+  "projectileConfig" : {
+    "speed" : 65,
+    "power" : 20,
+    "knockback" : 20,
+    "periodicActions" : [
+      {
+        "time" : 0,
+        "repeat" : false,
+        "action" : "sound",
+        "options" : [ "/sfx/projectiles/throw_item.ogg" ]
+      }
+    ]
+  }
+}
+

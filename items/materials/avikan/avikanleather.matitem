@@ -1,0 +1,14 @@
+{
+  "itemName" : "avikanleather",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "avikanleather.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "description" : "Leather tapestry for wall decoration and insulation.",
+  "shortdescription" : "Avikan Leather",
+  "glitchdescription" : "Observation. Simple leather wall tapestry.",
+  "florandescription" : "Leather wallsss.",
+
+  "materialId" : 30041
+}

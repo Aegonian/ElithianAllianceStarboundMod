@@ -1,0 +1,15 @@
+{
+  "itemName" : "centensreinforcement",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "centensreinforcement.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "shortdescription" : "Centensian Reinforcement",
+  
+  "description" : "A dark metal found inside Centensian structures.",
+  "glitchDescription" : "Observation. This metal is often found inside ancient metallic structures.",
+  "floranDescription" : "Dark metalsss insside old homesss.",
+
+  "materialId" : 30060
+}

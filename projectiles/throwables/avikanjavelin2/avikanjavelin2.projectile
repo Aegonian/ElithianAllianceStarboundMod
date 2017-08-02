@@ -1,0 +1,27 @@
+{
+  "projectileName" : "avikanjavelin2",
+  "physics" : "grenadenobounce",
+  "image" : "avikanjavelin2.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "power" : 25,
+  "knockback" : 10,
+  "knockbackDirectional" : true,
+  "damageKindImage" : "icon.png",
+  "timeToLive" : 30,
+  "pointLight" : false,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanjavelin2sticking",
+      "inheritDamageFactor" : 0.0,
+      "inheritSpeedFactor" : 0.4,
+      "angleAdjust" : 0
+    }
+  ],
+  "damageKind" : "avikanhunting"
+}

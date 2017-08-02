@@ -1,0 +1,13 @@
+{
+  "itemName" : "centensianmetal",
+  "price" : 100,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "centensianmetal.png",
+  "description" : "A metal cube of an otherwordly material.",
+  "shortdescription" : "Centensian Metal",
+  "itemTags" : [ "reagent" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 3
+}

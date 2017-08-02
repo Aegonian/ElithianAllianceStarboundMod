@@ -1,0 +1,81 @@
+{
+  "type" : "zaheed",
+  "baseType" : "guard",
+  
+  "keepAlive" : true,
+
+  "npcname" : "Zaheed",
+  "identity" : {
+    "imagePath" : "zaheed",
+    "gender" : "male",
+    "hairGroup" : "pattern",
+    "hairType" : "male1",
+    "facialMaskGroup" : "flaps",
+    "facialMask" : "male1"
+  },
+  "humanoidConfig" : "/npcs/story/zaheedoid.config",
+  
+  "damageTeamType" : "assistant",
+  "damageTeam" : 1,
+
+  "persistent" : true,
+
+  "dropPools" : [],
+
+  "scriptConfig" : {
+
+    "chatPortrait" : "/interface/chatbubbles/zaheed.png:<frame>",
+	
+	"chatSounds" : {
+	  "default" : {
+		"male" : [
+		  "/sfx/humanoid/zaheed_chatter.ogg"
+		],
+		"female" : [
+		  "/sfx/humanoid/zaheed_chatter.ogg"
+		]
+	  }
+	},
+
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "There's no time for idle chatting."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "thea-hiddenchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "thea-hiddenlegs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "back" : [
+              { "name" : "thea-hiddenback", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "primary" : [ "zaheedsword" ],
+            "sheathedprimary" : [ "droden-assaultrifle" ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "protection" : {
+        "baseValue" : 100.0
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "itemName" : "drodenlongsword",
+  "price" : 900,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A thin and minimalistic longsword, designed for use by Droden soldiers.",
+  "shortdescription" : "Droden Longsword",
+  "tooltipKind" : "sword",
+  "category" : "Longsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword","droden"],
+
+  "inventoryIcon" : "drodenlongsword.png",
+
+  "animation" : "/items/active/weapons/melee/broadsword/combobroadsword.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "drodenlongsword.png"
+  },
+  "animationCustom" : { },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.85,
+    "baseDps" : 11.5
+  },
+
+  "altAbilityType" : "superspinslash",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

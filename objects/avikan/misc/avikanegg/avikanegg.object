@@ -1,0 +1,45 @@
+{
+  "objectName" : "avikanegg",
+  "colonyTags" : ["avikan","avikanegg"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 0,
+  "description" : "An Avikan egg. The spawn of new life.",
+  "shortdescription" : "Avikan Egg",
+  "race" : "avikan",
+
+  "apexDescription" : "An alien egg. It feels a bit leathery.",
+  "avianDescription" : "Is this an egg? It looks... odd...",
+  "floranDescription" : "Eggsss for eating?",
+  "glitchDescription" : "Fascination. This egg will spawn new life.",
+  "humanDescription" : "An alien egg. I don't think it's edible.",
+  "hylotlDescription" : "There is beauty in creating new life.",
+
+  "aegiDescription" : "This egg might hatch in a few months.",
+  "avikanDescription" : "A lonely Avikan egg. I wonder who laid it?",
+  "erixianDescription" : "An Avikan egg. It feels odd.",
+  "trinkDescription" : "An egg with a leathery skin. Most likely Avikan.",
+  "hymidDescription" : "This egg feels completely dry.",
+  "notixDescription" : "An unusual egg.",
+  "jorgasianDescription" : "An Avikan egg. It's rather lonely.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Avikan egg. Estimated date of hatching: unknown.",
+
+  "inventoryIcon" : "avikaneggicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanegg.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

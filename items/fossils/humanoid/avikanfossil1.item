@@ -1,0 +1,30 @@
+{
+  "itemName" : "avikanfossil1",
+  "rarity" : "Uncommon",
+  "itemTags" : ["fossil"],
+
+  "description" : "A fossilised Avikan skull.",
+  "category" : "mediumFossil",
+
+  "shortdescription" : "Avikan Skull",
+  "race" : "avikan",
+  "price" : 50,
+
+  "inventoryIcon" : "avikanfossil1icon.png",
+
+  "completeSetDescriptions" : {
+    "price" : 1500,
+    "shortdescription" : "Avikan Fossil",
+    "description" : "The fossilised remains of an Avikan who died long ago."
+  },
+
+  "displayImage" : "/objects/fossils/humanoidfossils/fossilavikan/avikanskulldisplay.png",
+  "displayoffset" :[0, 0],
+
+  "fossilSetName" : "avikanSkeleton",
+  "setIndex" : 1,
+  "setCount" : 3,
+  "setCollectables" : { "fossils" : "avikanSkeleton" },
+
+  "completeFossilIcon" : "/objects/fossils/humanoidfossils/humanoidskeletonicon.png"
+}

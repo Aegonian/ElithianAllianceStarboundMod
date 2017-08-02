@@ -1,0 +1,12 @@
+{
+  "itemName" : "centensblockpanel",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Rare",
+  "inventoryIcon" : "centensblockpanel.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "description" : "A lightweight panel.",
+  "shortdescription" : "Centensian Panel",
+
+  "materialId" : 30050
+}

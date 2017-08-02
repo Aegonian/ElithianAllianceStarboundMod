@@ -1,0 +1,9 @@
+{
+  "name" : "ghavorkan",
+  "category" : "ghavorkan",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "ghavorkan.png"
+  }
+}

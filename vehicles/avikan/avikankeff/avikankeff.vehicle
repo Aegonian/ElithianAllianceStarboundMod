@@ -1,0 +1,156 @@
+{
+  "name" : "avikankeff",
+  "script" : "avikankeff.lua",
+  "boundBox" : [-5, -5, 5, 5],
+  "slaveControlTimeout" : 2.0,
+  "slaveControlHeartbeat" : 1.0,
+  "canBeHit" : true,
+  "animation" : "avikankeff.animation",
+
+  "animationCustom" : {
+    "particleEmitters" : {
+      "damageShards" : {
+        "transformationGroups" : ["flip", "rotation"],
+        "emissionRate" : 0.0,
+        "burstCount"  : 25,
+        "offsetRegion" : [-2, -1.5, 3, 1],
+        "particles" : [
+			{ "particle" : "avikankeffshard"},
+			{ "particle" : "fireshard"}]
+      },
+      "wreckage" : {
+        "transformationGroups" : ["flip", "rotation"],
+        "active" : false,
+        "emissionRate" : 0.0,
+        "particles" : [
+			{ "particle" : "avikankeffwreck1"},
+			{ "particle" : "avikankeffwreck2"},
+			{ "particle" : "avikankeffwreck3"},
+			{ "particle" : "avikankeffwreck4"}]
+      }
+    }
+  },
+
+  "loungePositions" : {
+    "drivingSeat" : {
+      "part" : "foreground",
+      "partAnchor" : "drivingSeatPosition",
+      "orientation" : "sit",
+      "statusEffects" : ["highprotection"],
+      "emote" : "happy",
+      "dance" : "theadriving"
+    }
+  },
+
+  "warpInDelay" : 1.0,
+  
+  "levelApproachFactor" : 0.01,
+  "angleApproachFactor" : 0.025,
+  "maxGroundSearchDistance" : 10,
+  "maxAngle" : 45,
+  "hoverTargetDistance" : 2.2,
+  "hoverVelocityFactor" : 12,
+  "hoverControlForce" : 700,
+  "targetHorizontalVelocity" : 70,
+  "horizontalControlForce" : 180,
+
+  "nearGroundDistance" : 3.2,
+  "jumpVelocity" : 45,
+  "jumpTimeout" : 0.25,
+  
+  "liquidCheckPosition" : [0, -2.5],
+  "liquidCheckPositionForRotation" : [0, -2.8],
+  "hoverOverLiquidDistance" : 2.1,
+  
+  //Theft mechanic
+  "licenseItem" : "keffriderslicense", //If the player has this item in their inventory, taking the vehicle won't be seen as theft
+
+  //Health and damage
+  "protection" : 50,
+  "maxHealth" : 1000,
+
+  "damageStateNames" : ["undamaged","scratched","dented","wrecked"],
+
+  "lightsInDamageState" : 
+  [
+	["headlightBeam","dashboardGlow"],
+	["headlightBeam","dashboardGlow"],
+	["headlightBeam","dashboardGlow"],
+	["headlightBeam"]
+  ],
+
+  "damageStateDriverEmotes" : ["happy","happy","sad","annoyed"],
+
+  "damageTakenEmote" : "oooh",
+  "damageEmoteTime" : 1.0,
+
+  "minNotificationCollisionAccel" : 30,
+  "minDamageCollisionAccel" : 55,
+  "terrainCollisionDamage" : 10,
+
+
+  //Damage visual effects
+  "smokeParticleHealthThreshold" : 0.5,
+  "smokeRateAtZeroHealth" : 40,
+
+  "fireParticleHealthThreshold" : 0.25,
+  "fireRateAtZeroHealth" : 10,
+
+  "onFireHealthThreshold" : 0.125,
+  "damagePerSecondWhenOnFire" : 1.0,
+  "explosionConfig" : "/projectiles/explosions/regularexplosion2/regularexplosionknockback.config",
+  "explosionDamage" : 10,
+
+
+
+  //Sound effects
+  "engineDamageSoundThreshold" : 0.40,
+
+  "intermittentDamageSoundThreshold" : 0.33,
+  "maxDamageSoundInterval" : 10,
+  "minDamageSoundInterval" : 1,
+
+  "engineIdlePitch" : 0.75,
+  "engineRevPitch" : 1.5,
+  "engineIdleVolume" : 1.0,
+  "engineRevVolume" : 1.5,
+
+  "materialKind" : "robotic",
+  "terrainCollisionDamageSourceKind" : "falling",
+  "accelerationTrackingCount" : 2,
+
+  "backSpringPositions" : [
+      [-3.0, 0.0],
+      [-4.0, 0.0],
+	  [-5.0, 0.0],
+	  [-6.0, 0.0]
+  ],
+  "frontSpringPositions" : [
+      [3.0, 0.0],
+      [4.0, 0.0],
+	  [5.0, 0,0],
+	  [6.0, 0,0]
+  ],
+  "bodySpringPositions" : [
+      [-3.0, -1.0],
+	  [-1.5, -1.0],
+      [0.0, -1.0],
+      [1.5, -1.0],
+	  [3.0, -1.0]
+  ],
+
+  "movementSettings" : {
+    "collisionPoly" : [[-3.8, 0.0], [-2.5, -1.0], [2.5, -1.0], [3.8, 0.0], [2.5, 1.0], [-2.5, 1.0]],
+    "mass" : 4,
+    "airFriction" : 4,
+    "ignorePlatformCollision" : true,
+    "gravityEnabled" : true,
+    "collisionEnabled" : true
+  },
+  "occupiedMovementSettings" : {
+    "collisionPoly" : [[-3.8, 0.0], [-2.5, -1.0], [2.5, -1.0], [3.8, 0.0], [2.5, 1.0], [-2.5, 1.0]],
+    "mass" : 4,
+    "gravityEnabled" : true,
+    "collisionEnabled" : true
+  }
+}

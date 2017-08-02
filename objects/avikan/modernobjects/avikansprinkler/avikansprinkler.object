@@ -1,0 +1,76 @@
+{
+  "objectName" : "avikansprinkler",
+  "colonyTags" : ["avikan", "farming"],
+  "category" : "wire",
+  "price" : 200,
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "An automated soil watering solution.",
+  "shortdescription" : "Avikan Irrigation System",
+
+  "apexDescription" : "A sort of sprinkler, but for more precise than regular ones.",
+  "avianDescription" : "It's a machine that waters crops automatically.",
+  "floranDescription" : "Waters cropss..",
+  "glitchDescription" : "Unimpressed. It is an automated soil watering solution. I enjoy watering my plants by hand.",
+  "humanDescription" : "It's like a sprinkler, but more precise. This is no fun to run through!",
+  "hylotlDescription" : "It is used to water crops. Simple, but rather clever.",
+  "novakidDescription" : "Waterin' crops made simple.",
+
+  "aegiDescription" : "The Avikan are quite careful with their water supply. Even the sprinklers use only little water.",
+  "avikanDescription" : "Some consider such irrigation systems a waste of water, but the value of automated irrigation is worth the cost of the water.",
+  "erixianDescription" : "A simple irrigation system. It doesn't cover a very wide area.",
+  "trinkDescription" : "A surprisingly efficient irrigation system. The Avikan are careful whenever water is involved.",
+  "hymidDescription" : "I could use some water myself.",
+  "notixDescription" : "A very efficient irrigation system. The Avikan place great value in water.",
+  "jorgasianDescription" : "An efficient irrigation system.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected irrigation system. Water usage efficiency levels at 98%.",
+
+  "inventoryIcon" : "avikansprinklericon.png",
+  "orientations" : [
+    {
+      "image" : "avikansprinkler.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+
+      "animationPosition" : [0, 0],
+      "animationParts" : {
+        "bg" : "avikansprinkler.png",
+        "fg" : "avikansprinklerlit.png"
+      },
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/projectiletrap/projectiletrap.lua" ],
+  "scriptDelta" : 2,
+
+  "animation" : "/objects/wired/projectiletrap/projectiletrap.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "shoot" : [ ],
+      "on" : [ ],
+      "off" : [ ]
+    }
+  },
+
+  "inputNodes" : [ [0, 0] ],
+
+  "inactiveLightColor" : [0, 0, 0],
+  "activeLightColor" : [0, 0, 0],
+
+  "fireTime" : 1.0,
+  "fireTimeVariance" : 0.0,
+  "inaccuracy" : 0.125,
+  "projectileDirection" : [0, -1],
+  "projectilePosition" : [1, 0.0],
+  "projectile" : "watersprinkledroplet",
+  "projectileConfig" : {
+    "damageTeam" : { "type" : "indiscriminate" },
+    "power" : 0,
+    "speed" : 25
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "itemName" : "valahrgland",
+  "price" : 50,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "valahrgland.png",
+  "description" : "An organ used by the Valahr to create potent poisons.",
+  "shortdescription" : "Valahr Poison Gland",
+  "itemTags" : [ "reagent" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 3
+}

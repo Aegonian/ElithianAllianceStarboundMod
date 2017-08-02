@@ -1,0 +1,215 @@
+{
+  "itemName" : "trinkcraftingguide",
+  "price" : 2500,
+  "rarity" : "Legendary",
+  "inventoryIcon" : "trinkcraftingguide.png",
+  "description" : "A guide to Trinkian crafting. Unlocks most Trinkian crafting recipes, regardless of race.",
+  "shortdescription" : "^#BA66FF;Trinkian Crafting Guide^white;",
+  "category" : "Crafting Guide",
+  "learnBlueprintsOnPickup" : [
+	
+//New in v2.2.2
+	  "trinkpowercore",
+	  "trinktransmitter",
+	  "trinkglass",
+	  "trinkslopedglass",
+	  "trinkrail",
+	  "trinkrailhook",
+	  "trinkrailplatform",
+	  "trinkrailtram",
+	  "trinkshippingcontainer",
+	
+//New in v2.2.1
+	  "trinkslopedpanel",
+	  "trinkstoragelocker",
+	
+//New in v2.1.6
+	  "trinkweaponchest",
+	
+//New in v2.1.5
+	  "flagtrink",
+	  "trinkcrafting",
+	  "trinkelectronics",
+      "trinkglassitem",
+      "trinklaserdiode",
+      "trinkmetal",
+      "trinkmetaltier2",
+      "trinkwiring",
+	  "trinkgrapplinghook",
+	  "trinkclimbingrope",
+	  "trinkfrostgrenade",
+	  "trinkrepairmodule",
+	  "trinkturret",
+	  "trinkshieldgenerator",
+	  "trinkroofflat",
+	  "trinkroofantenna",
+	  "trinkroofdish",
+	  "trinkrooftopentry",
+	  "trinkundersideentry",
+	  "trinkwallswitch",
+	  "trinkslopeddoor",
+	
+//New in v2.1.4
+      "trinkhatch",
+      "trinkhatchplatform",
+      "trinkshipdoor",
+      "trinkshiplight",
+      "trinkshipwindow",
+      "trinkbutton",
+      "trinkpressureplate",
+      "trinksmallbutton",
+      "trinkswitch",
+      
+//Weapons
+      "trinktier0prod",
+      "trinktier0rifle",
+	  
+	  "trinktier1prod",
+      "trinktier1longprod",
+      "trinktier1pistol",
+      "trinktier1rifle",
+      "trinktier1shotgun",
+	  
+	  "trinktier2prod",
+      "trinktier2longprod",
+      "trinktier2pistol",
+      "trinktier2rifle",
+      "trinktier2shotgun",
+	  
+	  "trinktier3prod",
+      "trinktier3longprod",
+      "trinktier3pistol",
+      "trinktier3rifle",
+      "trinktier3shotgun",
+	  
+	  "trinktier4prod",
+      "trinktier4longprod",
+      "trinktier4pistol",
+      "trinktier4rifle",
+      "trinktier4shotgun",
+      "trinktier4sniper",
+	  
+	  "trinktier5prod",
+      "trinktier5longprod",
+      "trinktier5pistol",
+      "trinktier5rifle",
+      "trinktier5shotgun",
+      "trinktier5sniper",
+	  
+	  "trinktier6prod",
+      "trinktier6longprod",
+      "trinktier6pistol",
+      "trinktier6rifle",
+      "trinktier6shotgun",
+      "trinktier6sniper",
+	  
+	  "trink-soniccannon",
+      "trink-mininggun",
+      "trink-weldingtorch",
+	  
+//Armour
+	  "trink-tier1head",
+      "trink-tier1chest",
+      "trink-tier1legs",
+	  
+	  "trink-tier2head",
+      "trink-tier2chest",
+      "trink-tier2legs",
+	  
+	  "trink-tier3head",
+      "trink-tier3chest",
+      "trink-tier3legs",
+	  
+	  "trink-tier4head",
+      "trink-tier4chest",
+      "trink-tier4legs",
+	  
+	  "trink-tier5ahead",
+      "trink-tier5achest",
+      "trink-tier5alegs",
+	  "trink-tier5mhead",
+      "trink-tier5mchest",
+      "trink-tier5mlegs",
+	  "trink-tier5shead",
+      "trink-tier5schest",
+      "trink-tier5slegs",
+	  
+	  "trink-tier6ahead",
+      "trink-tier6achest",
+      "trink-tier6alegs",
+	  "trink-tier6mhead",
+      "trink-tier6mchest",
+      "trink-tier6mlegs",
+	  "trink-tier6shead",
+      "trink-tier6schest",
+      "trink-tier6slegs",
+	  
+//EPPs
+	  "trinkbreathprotectionback",
+	  "trinkradiationprotectionback",
+	  "trinkcoldprotectionback",
+	  "trinkheatprotectionback",
+	  
+//Vanity Armour
+	  "trink-paintedchest",
+      "trink-paintedlegs",
+      "trink-stripedchest",
+      "trink-stripedlegs",
+	  "trink-combatchest",
+      "trink-combatlegs",
+      "trink-engineerlegs",
+      "trink-welderlegs",
+      "trink-paintedhalflegs",
+      "trink-goldenchest",
+      "trink-goldenlegs",
+	  
+//Shields
+      "trinkshield",
+	  
+//Items
+      "trinkmetal",
+	  "trinkmetaltier2",
+	  "trinkmetaltier3",
+	  "trinkmetaltier4",
+	  "trinkmetaltier5",
+	  "trinkmetaltier6",
+	  "trinklaserdiode",
+	  
+//Objects
+      "trinkantenna",
+	  "trinkconsole",
+	  "trinkcontainer",
+	  "trinkcrate",
+	  "trinkgenerator",
+	  "trinklight",
+	  "trinklightpillar",
+	  "trinkmonitor",
+	  "trinkradardish",
+	  "trinkrepairpod",
+	  "trinkroof",
+	  "trinkroofside",
+	  "trinkroofsideback",
+	  "trinksatellitedish",
+	  "trinkserver",
+	  "trinksmallroof",
+	  "trinkshipwindow",
+	  "trinkfridge",
+	  
+//Beacons
+	  "trinktier2beacon",
+	  "trinktier3beacon",
+	  "trinktier4beacon",
+	  "trinktier5beacon",
+	  "trinktier6beacon",
+	  
+//Materials
+      "trinkgroundpanel",
+	  "trinkhull",
+	  "trinkpipe",
+	  "trinkplating",
+	  "trinksmoothpanel",
+	  "trinksupportpanel",
+	  "trinkplatform" 
+  ],
+  "itemTags" : [ "craftingguide" ]
+}

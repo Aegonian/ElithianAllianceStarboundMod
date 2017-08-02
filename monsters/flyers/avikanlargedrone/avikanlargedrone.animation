@@ -1,0 +1,392 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "body" : {
+        "priority" : 0,
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 1
+          },
+          "fly" : {
+            "frames" : 16,
+            "cycle" : 1.6,
+            "mode" : "loop"
+          },
+          "linedrivewindup" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "linedriveloop",
+            "properties" : {
+              "immediateSound" : "/sfx/npc/monsters/avikandrone_lowergun.ogg"
+            },
+            "frameProperties" : {
+              "immediateSound" : [ "", "", "", "", "", "/sfx/npc/monsters/avikandrone_windup.ogg", "", "" ]
+            }
+          },
+          "linedriveloop" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "loop",
+            "properties" : {
+              "persistentSound" : "/sfx/melee/charge_full_hold1.ogg"
+            }
+          },
+          "linedrivewinddown" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "fly",
+            "properties" : {
+              "immediateSound" : "/sfx/npc/monsters/avikandrone_raisegun.ogg"
+            }
+          },
+          "missilewindup" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "missileloop",
+            "properties" : {
+              "immediateSound" : "/sfx/npc/monsters/avikandrone_lowergun.ogg"
+            }
+          },
+          "missileloop" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "loop",
+            "properties" : {
+              "persistentSound" : "/sfx/projectiles/guidedrocket_loop2.ogg"
+            }
+          },
+          "missilewinddown" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "fly",
+            "properties" : {
+              "immediateSound" : "/sfx/npc/monsters/avikandrone_raisegun.ogg"
+            }
+          },
+          "grenadewindup" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "grenadeloop",
+            "properties" : {
+              "immediateSound" : "/sfx/npc/monsters/avikandrone_lowergun.ogg"
+            }
+          },
+          "grenadeloop" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "loop",
+            "properties" : {
+              "persistentSound" : "/sfx/projectiles/guidedrocket_loop2.ogg"
+            }
+          },
+          "grenadewinddown" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "fly",
+            "properties" : {
+              "immediateSound" : "/sfx/npc/monsters/avikandrone_raisegun.ogg"
+            }
+          },
+          "wakeup" : {
+            "frames" : 6,
+            "cycle" : 0.9,
+            "mode" : "transition",
+            "transition" : "fly",
+            "properties" : {
+              "immediateSound" : "/sfx/npc/monsters/avikandrone_wakeup.ogg"
+            }
+          }
+        }
+      },
+      "damage" : {
+        "priority" : 3,
+        "default" : "none",
+        "states" : {
+          "none" : {
+            "frames" : 1
+          },
+          "stunned" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "loop"
+          }
+        }
+      },
+      "releaseParticles" : {
+        "default" : "off",
+        "states" : {
+          "off" : {
+            "frames" : 1,
+            "properties" : {
+              "particleEmittersOff" : [ "releaseParticles" ]
+            }
+          },
+          "on" : {
+            "frames" : 1,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "off",
+            "properties" : {
+              "particleEmittersOn" : [ "releaseParticles" ]
+            }
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "body" : {
+        "properties" : {
+          "transformationGroups" : [ "body" ],
+          "offset" : [0.0, -0.25]
+        },
+        "partStates" : {
+          "body" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:inactive.<frame>"
+              }
+            },
+            "fly" : {
+              "properties" : {
+                "image" : "<partImage>:fly.<frame>"
+              }
+            },
+            "linedrivewindup" : {
+              "properties" : {
+                "image" : "<partImage>:linedrivewindup.<frame>"
+              }
+            },
+            "linedriveloop" : {
+              "properties" : {
+                "image" : "<partImage>:linedriveloop.<frame>"
+              }
+            },
+            "linedrivewinddown" : {
+              "properties" : {
+                "image" : "<partImage>:linedrivewinddown.<frame>"
+              }
+            },
+            "missilewindup" : {
+              "properties" : {
+                "image" : "<partImage>:missilewindup.<frame>"
+              }
+            },
+            "missileloop" : {
+              "properties" : {
+                "image" : "<partImage>:missileloop.<frame>"
+              }
+            },
+            "missilewinddown" : {
+              "properties" : {
+                "image" : "<partImage>:missilewinddown.<frame>"
+              }
+            },
+            "grenadewindup" : {
+              "properties" : {
+                "image" : "<partImage>:grenadewindup.<frame>"
+              }
+            },
+            "grenadeloop" : {
+              "properties" : {
+                "image" : "<partImage>:grenadeloop.<frame>"
+              }
+            },
+            "grenadewinddown" : {
+              "properties" : {
+                "image" : "<partImage>:grenadewinddown.<frame>"
+              }
+            },
+            "wakeup" : {
+              "properties" : {
+                "image" : "<partImage>:wakeup.<frame>"
+              }
+            }
+          },
+          "damage" : {
+            "stunned" : {
+              "properties" : {
+                "image" : "<partImage>:hurt.<frame>"
+              }
+            }
+          }
+        }
+      },
+	  "lights" : {
+        "properties" : {
+		  "zLevel" : 1,
+          "transformationGroups" : [ "body" ],
+		  "fullbright" : true,
+          "offset" : [0.0, -0.25]
+        },
+        "partStates" : {
+          "body" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:inactive.<frame>"
+              }
+            },
+            "fly" : {
+              "properties" : {
+                "image" : "<partImage>:fly.<frame>"
+              }
+            },
+            "linedrivewindup" : {
+              "properties" : {
+                "image" : "<partImage>:linedrivewindup.<frame>"
+              }
+            },
+            "linedriveloop" : {
+              "properties" : {
+                "image" : "<partImage>:linedriveloop.<frame>"
+              }
+            },
+            "linedrivewinddown" : {
+              "properties" : {
+                "image" : "<partImage>:linedrivewinddown.<frame>"
+              }
+            },
+            "missilewindup" : {
+              "properties" : {
+                "image" : "<partImage>:missilewindup.<frame>"
+              }
+            },
+            "missileloop" : {
+              "properties" : {
+                "image" : "<partImage>:missileloop.<frame>"
+              }
+            },
+            "missilewinddown" : {
+              "properties" : {
+                "image" : "<partImage>:missilewinddown.<frame>"
+              }
+            },
+            "grenadewindup" : {
+              "properties" : {
+                "image" : "<partImage>:grenadewindup.<frame>"
+              }
+            },
+            "grenadeloop" : {
+              "properties" : {
+                "image" : "<partImage>:grenadeloop.<frame>"
+              }
+            },
+            "grenadewinddown" : {
+              "properties" : {
+                "image" : "<partImage>:grenadewinddown.<frame>"
+              }
+            },
+            "wakeup" : {
+              "properties" : {
+                "image" : "<partImage>:wakeup.<frame>"
+              }
+            }
+          },
+          "damage" : {
+            "stunned" : {
+              "properties" : {
+                "image" : "<partImage>:hurt.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "body" : { "interpolated" : true }
+  },
+  
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [0, 65, 100],
+      "pointLight" : true
+    }
+  },
+
+  "effects" : {
+    "blink" : {
+      "type" : "flash",
+      "time" : 0,
+      "directives" : "fade=ffffff;0.5"
+    }
+  },
+
+  "particleEmitters" : {
+    "deathPoof" : {
+      "particles" : [
+        { "particle" : "electricswoosh1" },
+        { "particle" : "electricswoosh2" },
+        { "particle" : "electricswoosh1" },
+        { "particle" : "electricswoosh2" },
+
+        { "particle" : "deathfizz1left" },
+        { "particle" : "deathfizz1right" },
+        { "particle" : "deathfizz2left" },
+        { "particle" : "deathfizz2right" },
+        { "particle" : "deathfizz3left" },
+        { "particle" : "deathfizz3right" },
+        { "particle" : "deathfizz4left" },
+        { "particle" : "deathfizz4right" },
+		
+        { "particle" : "avikanlargedronedebris1" },
+		{ "particle" : "avikanlargedronedebris1" },
+		
+		{ "particle" : "avikanlargedronedebris2" },
+		{ "particle" : "avikanlargedronedebris2" },
+		{ "particle" : "avikanlargedronedebris2" },
+		{ "particle" : "avikanlargedronedebris2" },
+		
+		{ "particle" : "avikanlargedronedebris3" },
+		{ "particle" : "avikanlargedronedebris3" },
+		{ "particle" : "avikanlargedronedebris3" },
+		{ "particle" : "avikanlargedronedebris3" },
+		
+		{ "particle" : "avikanlargedronedebris4" }
+      ]
+    },
+    "captureParticles" : {
+      "particles" : [
+        { "particle" : "monstercapture" }
+      ]
+    },
+    "releaseParticles" : {
+      "particles" : [
+        { "particle" : "monsterrelease" }
+      ]
+    },
+    "teleportOut" : {
+      "particles" : [
+        { "particle" : "monstercapture" }
+      ]
+    },
+    "teleportIn" : {
+      "particles" : [
+        { "particle" : "monsterrelease" }
+      ]
+    },
+    "levelUp" : {
+      "particles" : [
+        { "particle" : "monsterlevelup" }
+      ]
+    }
+  },
+
+  "sounds" : {
+    "aggroHop" : [ "/sfx/npc/monsters/monster_surprise.ogg" ],
+    "deathPuff" : [ "/sfx/npc/enemydeathpuff.ogg" ],
+    "linedrivefire" : [ "/sfx/gun/plasma_sniper4.ogg" ],
+    "missilefire" : [ "/sfx/gun/rocket3.ogg" ],
+    "grenadefire" : [ "/sfx/gun/grenade3.ogg" ]
+  }
+}

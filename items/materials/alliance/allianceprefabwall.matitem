@@ -1,0 +1,13 @@
+{
+  "itemName" : "allianceprefabwall",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "allianceprefabwall.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  
+  "shortdescription" : "Alliance Prefab Wall",
+  "description" : "Part of a pre-fabricated wall.",
+
+  "materialId" : 30075
+}

@@ -1,0 +1,46 @@
+{
+  "objectName" : "avikanvehiclejumpgate",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 2750,
+  "description" : "A jumpgate built to transport vehicles off and onto ships in orbit.",
+  "shortdescription" : "Avikan Vehicle Jumpgate",
+  "race" : "avikan",
+
+  "apexDescription" : "This device looks like some sort of teleporter.",
+  "avianDescription" : "Is this a teleporter? Better not get too close...",
+  "floranDescription" : "Floran wonderss what thisss isss...",
+  "glitchDescription" : "Fascinated. This device can teleport vehicles using a teleportation method unknown to me.",
+  "humanDescription" : "A teleporter for teleporting vehicles? Neat!",
+  "hylotlDescription" : "This teleportation device is powered by technologies far beyond me.",
+
+  "aegiDescription" : "This jumpgate seems to have been built solely to transport vehicles.",
+  "avikanDescription" : "A jumpgate for transporting vehicles. It's ready to move that Keff anywhere it needs to go.",
+  "erixianDescription" : "A jumpgate for vehicles. Activate it remotely and you could summon a vehicle anywhere, anytime!",
+  "trinkDescription" : "This jumpgate allows its owner to transport vehicles from a ship in orbit to a planet's surface, and vice-versa.",
+  "hymidDescription" : "A jumpgate built specifically to transport vehicles.",
+  "notixDescription" : "A jumpgate for vehicle transportation. Don't try to use it on yourself.",
+  "jorgasianDescription" : "A very capable jumpgate system.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Detected jumpgate technology.",
+
+
+  "inventoryIcon" : "avikanvehiclejumpgateicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanvehiclejumpgate.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

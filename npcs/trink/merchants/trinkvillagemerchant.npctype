@@ -1,0 +1,12 @@
+{
+  "type" : "trinkvillagemerchant",
+  "baseType" : "merchant",
+
+  "dropPools" : [ "trinkDeathTreasure" ],
+
+  "scriptConfig" : {
+    "questGenerator" : { "pools" : [], "enableParticipation" : false }
+  },
+  
+  "matchColorIndices" : true
+}

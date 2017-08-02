@@ -1,0 +1,204 @@
+{
+  "type" : "wildtrangii",
+  "shortdescription" : "Trangii",
+  "description" : "A playful and loyal creature often kept as a pet by the Aegi.",
+
+  "categories" : [ "wildtrangii" ],
+  "parts" : [ "body" ],
+
+  "animation" : "wildtrangii.animation",
+
+  "dropPools" : [ { "default" : "petricubTreasure", "bow" : "petricubHunting" } ],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+
+    "behavior" : "monster",
+	
+	"aggressive" : true,
+
+    "damageTeamType" : "friendly",
+
+    "behaviorConfig" : {
+      "damageOnTouch" : true,
+
+      "targetQueryRange" : 20,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : true,
+      "keepTargetInRange" : 50,
+      "targetOutOfSightTime" : 2.5,
+
+      "foundTargetActions" : [ { "name" : "action-aggrohop" } ],
+
+      "fleeActions" : [],
+
+      "hostileActions" : [
+        {
+          "name" : "action-leap",
+          "cooldown" : 1,
+          "parameters" : {
+            "minimumRange" : 5,
+            "maximumRange" : 20,
+            "windupState" : "idle",
+            "windupTime" : 0.75,
+
+            "leapVelocity" : 35,
+            "collisionCheck" : true,
+            "highArc" : false,
+            "leapState" : "leapjump",
+            "fallState" : "leapfall",
+
+			"winddownState" : "idle",
+            "winddownTime" : 0.5
+          }
+        }
+      ],
+
+      "periodicActions" : [],
+
+      "approachActions" : [
+		{
+          "name" : "approach-walk",
+          "parameters" : {
+            "canJump" : true,
+            "maxJumps" : 8,
+            "jumpXVelocity" : 12,
+            "jumpYVelocity" : 40,
+            "jumpXControlForce" : 50
+          }
+        }
+	  ],
+
+      "followActions" : [
+        {
+          "name" : "approach-teleport",
+          "parameters" : {
+          }
+        },
+        {
+          "name" : "approach-walk",
+          "parameters" : {
+            "canJump" : true,
+            "maxJumps" : 8,
+            "jumpXVelocity" : 12,
+            "jumpYVelocity" : 40,
+            "jumpXControlForce" : 50
+          }
+        }
+      ],
+
+      "wanderActions" : [
+        {
+          "name" : "wander-walk",
+          "cooldown" : 3.0,
+          "parameters" : {
+            "wanderTime" : [0.5, 2.5]
+          }
+        },
+		{
+          "name" : "action-animate",
+          "cooldown" : 5,
+          "parameters" : {
+            "stateType" : "body",
+            "state" : "sit",
+            "animationTime" : 2.0
+          }
+        }
+      ]
+    },
+
+    "touchDamage" : {
+      "poly" : [ [0.5, 0.75], [1, -0.25], [0.5, -1.0], [-0.5, -1.0], [-1, -0.25], [-0.5, 0.75] ],
+      "damage" : 12,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "slash",
+      "knockback" : 10,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-4, -4, 4, 4],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [0.5, 0.75], [1, -0.25], [0.5, -1.0], [-0.5, -1.0], [-1, -0.25], [-0.5, 0.75] ],
+
+      "mass" : 1.0,
+      "walkSpeed" : 14,
+      "runSpeed" : 18,
+
+      "airFriction" : 0,
+
+      "airJumpProfile" : {
+        "jumpSpeed" : 45.0,
+        "jumpInitialPercentage" : 1.0,
+        "jumpHoldTime" : 0.0
+      }
+    },
+
+    "bodyMaterialKind" : "organic",
+
+    "knockoutTime" : 0.3,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "organic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.25
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 9
+        },
+        "maxHealth" : {
+          "baseValue" : 65
+        },
+        "protection" : {
+          "baseValue" : 0.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -8],
+    "capturable" : true,
+    "captureHealthFraction" : 1.0,
+    "nametagColor" : [64, 200, 255]
+  }
+}

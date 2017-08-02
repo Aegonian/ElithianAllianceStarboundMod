@@ -1,0 +1,56 @@
+{
+  "objectName" : "trinkradardish",
+  "colonyTags" : ["trink"],
+  "rarity" : "Common",
+  "description" : "A radar dish of Trinkian design.",
+  "shortdescription" : "Trinkian Radar Dish",
+  "race" : "trink",
+  "category" : "decorative",
+  "price" : 150,
+
+  "apexDescription" : "A large radar dish. Looks powerful.",
+  "avianDescription" : "Nothing gets past this radar.",
+  "floranDescription" : "Isss thiss a big metal flower?",
+  "glitchDescription" : "Fascinated. This radar dish can detect spaceships in deep space.",
+  "humanDescription" : "A big bad radar dish.",
+  "hylotlDescription" : "A large radar dish. Whoever controls it must have seen my spaceship coming long before I arrived.",
+
+  "aegiDescription" : "A Trinkian radar dish, one of the best in the Alliance.",
+  "avikanDescription" : "A large radar dish.",
+  "erixianDescription" : "A radar dish of Trinkian design. Highly efficient design.",
+  "trinkDescription" : "A powerful radar dish of Trinkian design. Carefully calibrated.",
+  "hymidDescription" : "A radar dish of Trinkian design.",
+  "notixDescription" : "This radar dish was designed and built by our Trinks.",
+  "jorgasianDescription" : "A Trinkian radar dish.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Analysis: radar dish.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "trinkradardish.png:<color>", "fullbright" : true }, { "image" : "trinkradardishlit.png:<color>" } ],
+      "flipImages" : true,
+      "direction" : "left",
+
+      "imagePosition" : [-32, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "trinkradardish.png:<color>", "fullbright" : true }, { "image" : "trinkradardishlit.png:<color>" } ],
+      "direction" : "right",
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

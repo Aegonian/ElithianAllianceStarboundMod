@@ -1,0 +1,28 @@
+{
+  "materialId" : 30066,
+  "materialName" : "trinkplating",
+  "particleColor" : [85, 85, 85, 255],
+  "itemDrop" : "trinkplating", 
+  "shortdescription" : "Trinkian Plating",
+  
+  "description" : "A smooth, dark metal plate.",
+  "glitchDescription" : "Statement. A smooth and thick metal plate.",
+  "floranDescription" : "Floran doess not know how thick plate iss...",
+  "novakidDescription" : "Smooth as silk, this 'ere plate is.",
+  
+  "drodenDescription" : "Analysis complete. Thick metal plating.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "trinkplating.png",
+    "variants" : 4,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 250
+  }
+}

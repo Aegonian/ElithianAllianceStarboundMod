@@ -1,0 +1,149 @@
+{
+  "itemName" : "avikan-clanbow",
+  "price" : 500,
+  "level" : 6,
+  "inventoryIcon" : "avikan-clanbowicon.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "tooltipKind" : "bow",
+  "category" : "bow",
+  "description" : "The pride of the clan.",
+  "shortdescription" : "Clan's Greatbow",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","bow","avikan"],
+
+  "radioMessagesOnPickup" : [ "pickupavikanhunting" ],
+
+  "animation" : "/items/active/weapons/bow/bow.animation",
+  "animationParts" : {
+    "bow" : "avikan-clanbowfull.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : { "parts" : { "bow" : { "properties" : {
+      "offset" : [0.15, 0]
+    }}}},
+    "sounds" : {
+      "draw" : [ "/sfx/gun/bow_draw1.ogg", "/sfx/gun/bow_draw2.ogg", "/sfx/gun/bow_draw3.ogg" ],
+      "release" : [ "/sfx/gun/bow_loose.ogg" ],
+      "perfectRelease" : [ "/sfx/gun/bow_loose_perfect.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/bow/bow.lua"],
+  
+  "elementalType" : "avikanhunting",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/bow/thea-bowshot.lua"],
+    "class" : "TheaBowShot",
+	
+	"fireOffset" : [1.75, 0],
+
+    "energyPerShot" : 30,
+    "cooldownTime" : 0.4,
+    "inaccuracy" : 0.01,
+	
+	"walkWhileFiring" : true,
+	"useQuiverDamageBonus" : true,
+
+    "drawFrameSelector" : "bowImageSelector",
+    "drawPowerMultiplier" : "drawTimeMultiplier",
+    "drawSpeedMultiplier" : "drawTimeMultiplier",
+
+    "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
+
+    "projectileType" : "avikanarrow",
+    "powerProjectileType" : "avikanpowerarrow",
+    "powerProjectileTime" : [0.9, 1.1],
+    "projectileParameters" : {
+      "speed" : 80,
+      "power" : 6.5
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : -30,
+        "weaponRotation" : 0,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "draw" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "fire" : {
+        "duration" : 0.2,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true,
+
+        "frontArmFrame" : "idle.3"
+      }
+    }
+  },
+
+  "altAbility" : {
+    "name" : "Arrow Barrage",
+    "scripts" : ["/items/active/weapons/ranged/abilities/bow/thea-arrowbarrage.lua"],
+	"class" : "TheaArrowBarrage",
+
+    "fireOffset" : [1.75, 0],
+
+    "energyPerShot" : 60,
+    "cooldownTime" : 0.25,
+	
+	"walkWhileFiring" : true,
+	"useQuiverDamageBonus" : true,
+
+    "drawFrameSelector" : "bowImageSelectorNoPower",
+    "drawPowerMultiplier" : "normalizedDrawTimeMultiplier",
+    "drawSpeedMultiplier" : "normalizedDrawTimeMultiplier",
+
+    "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
+
+    "projectileType" : "avikanarrow",
+    "projectileParameters" : {
+      "speed" : 45,
+      "power" : 5.0
+    },
+
+    "splitDelay" : 1.0,
+    "splitAngle" : 15,
+
+    "stances" : {
+      "windup" : {
+        "duration" : 0.75,
+        "armRotation" : -60,
+        "weaponRotation" : 0,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "draw" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "fire" : {
+        "duration" : 0.2,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true,
+
+        "frontArmFrame" : "idle.3"
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildbow.lua"
+}

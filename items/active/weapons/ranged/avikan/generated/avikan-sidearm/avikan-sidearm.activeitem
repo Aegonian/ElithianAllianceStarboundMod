@@ -1,0 +1,113 @@
+{
+  "itemName" : "avikan-sidearm",
+  "price" : 640,
+  "maxStack" : 1,
+  "rarity" : "rare",
+  "description" : "A standard-model Nomada Sidearm.",
+  "shortdescription" : "Nomada Sidearm",
+  "tooltipKind" : "gun",
+  "category" : "Sidearm",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","ranged","pistol","avikan"],
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : { },
+  "animationCustom" : {
+    "particleEmitters" : {
+      "muzzleFlash" : {
+        "transformationGroups" : ["muzzle"],
+		"offsetRegion" : [-1.5, 0.2, -1.5, 0.2],
+        "particles" : [
+          { "particle" : "thea-discardedbullet" }
+        ]
+      },
+	  "altMuzzleFlash" : {
+		"transformationGroups" : ["muzzle"],
+		"offsetRegion" : [-1.5, 0.2, -1.5, 0.2],
+        "particles" : [
+          { "particle" : "thea-discardedbullet" }
+        ]
+      }
+    }
+  },
+  "baseOffset" : [-0.5, 0.0],
+  "muzzleOffset" : [0.0, 0.25],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : [0.2, 0.4],
+    "baseDps" : [5.5, 6.5],
+    "energyUsage" : [16, 22],
+    "inaccuracy" : 0.02,
+
+    "fireType" : ["auto"],
+
+    "projectileType" : "avikanbullet",
+    "projectileParameters" : {
+      "knockbackRange" : [3,6]
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.125,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+  "fireSounds" : [ "/sfx/gun/pistol2.ogg" ],
+
+  "builder" : "/items/buildscripts/buildweapon.lua",
+  "builderConfig" : [{
+    "nameGenerator" : "sidearmnames.config:nameGen",
+    "animationParts" : {
+      "butt" : {
+        "path" : "/items/active/weapons/ranged/avikan/generated/avikan-sidearm/butt/<variant>.png",
+        "variants" : 1,
+        "paletteSwap" : false
+      },
+      "middle" : {
+        "path" : "/items/active/weapons/ranged/avikan/generated/avikan-sidearm/middle/<variant>.png",
+        "variants" : 1,
+        "paletteSwap" : false
+      },
+      "barrel" : {
+        "path" : "/items/active/weapons/ranged/avikan/generated/avikan-sidearm/barrel/<variant>.png",
+        "variants" : 4,
+        "paletteSwap" : false
+      },
+      "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+    },
+    "gunParts" : ["butt", "middle", "barrel"],
+    "altAbilities" : [ ],
+    "palette" : "/items/active/weapons/colors/ranged.weaponcolors",
+    "iconDrawables" : ["butt", "middle", "barrel"]
+  }]
+}

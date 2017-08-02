@@ -1,0 +1,34 @@
+[
+	{ 	"op": "add", 
+		"path": "/collectables/avikanSkeleton",
+		"value": 		
+		{
+		  "order" : 24,
+		  "title" : "Avikan Fossil",
+		  "description" : "The fossilised remains of an Avikan who died long ago.",
+		  "icon" : "/items/fossils/humanoid/avikanfossilhead.png"
+		}
+	},
+	
+	{ 	"op": "add", 
+		"path": "/collectables/drodenSkeleton",
+		"value": 		
+		{
+		  "order" : 25,
+		  "title" : "Droden Fossil",
+		  "description" : "A fossiled Droden frame. Very little of the wiring remains.",
+		  "icon" : "/items/fossils/humanoid/drodenfossilhead.png"
+		}
+	},
+	
+	{ 	"op": "add", 
+		"path": "/collectables/trinkSkeleton",
+		"value": 		
+		{
+		  "order" : 26,
+		  "title" : "Trink Fossil",
+		  "description" : "A fossilized Trink unit. The wiring is largely intact, somehow.",
+		  "icon" : "/items/fossils/humanoid/trinkfossilhead.png"
+		}
+	}
+]

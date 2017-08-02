@@ -1,0 +1,87 @@
+{
+  "objectName" : "trinkterminal",
+  "colonyTags" : ["trink"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 1000,
+  "description" : "A large communications terminal directly connected to the Circuit.",
+  "shortdescription" : "Central Circuit Terminal",
+  "race" : "trink",
+  
+  "health" : 12,
+  
+  "offeredQuests" : [
+    "weaponrestorationtrink",
+    "trinkcrafting",
+    "trinkcrafting2"
+  ],
+  "turnInQuests" : [
+	"weaponrestorationtrink",
+    "trinkcrafting",
+    "trinkcrafting2"
+  ],
+
+  "apexDescription" : "A large communications terminal, I think.",
+  "avianDescription" : "A communications interface, but I have no idea what it connects to.",
+  "floranDescription" : "Floran doesss not know what thiss isss.",
+  "glitchDescription" : "Overwhelmed. The data flowing through this communications terminal is too much for me.",
+  "humanDescription" : "A terminal, for communicating with... something.",
+  "hylotlDescription" : "This terminal looks like it is important to the people here.",
+  "novakidDescription" : "Some sorta terminal for sure, but I don't know what it does.",
+
+  "aegiDescription" : "A terminal connected to the Circuit. It allows for near-instantaneous communication, regardless of distance.",
+  "avikanDescription" : "A communications terminal, built and used by machines. The Vanguard would want me to destroy it.",
+  "erixianDescription" : "A massive communications terminal, optimized for use by Trinks.",
+  "trinkDescription" : "This terminal allows me to communicate with any other such terminals throughout the galaxy.",
+  "hymidDescription" : "A communications terminal used by the Trinks.",
+  "notixDescription" : "This terminal uses jumpgates to instantly transmit messages across the galaxy.",
+  "jorgasianDescription" : "A large, Trinkian-built communications terminal. It is central to any Trinkian settlement.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Detected machine-built communications terminal. Recommended action: dismantle.",
+
+  "inventoryIcon" : "trinkterminalicon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "trinkterminal.png:<color>.<frame>", "fullbright" : true }, { "image" : "trinkterminallit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "right",
+      "anchors" : [ "bottom" ],
+      "collision" : "platform",
+	  
+      "interactiveSpaces" : [
+        [1, 2], [2, 2], [3, 2], [4, 2], [5, 2], [6, 2], [7, 2], [8, 2],
+		[1, 1], [2, 1], [3, 1], [4, 1], [5, 1], [6, 1], [7, 1], [8, 1],
+        [1, 0], [2, 0], [3, 0], [4, 0], [5, 0], [6, 0], [7, 0], [8, 0]
+      ]
+    }
+  ],
+  
+  "soundEffect" : "/sfx/objects/bunkerdisplay4.ogg",
+  "soundEffectRangeMultiplier" : 1.0,
+
+  "smashable" : false,
+  "smashOnBreak" : true,
+  "smashSounds" : [ "/sfx/gun/grenadeblast1.ogg", "/sfx/gun/grenadeblast2.ogg", "/sfx/gun/grenadeblast3.ogg" ],
+  "smashDropPool" : "empty",
+  
+  "scripts" : [
+    "/objects/scripts/thea-explodeonbreak.lua",
+	"/objects/scripts/thea-talkingobject.lua"
+  ],
+  "explosionProjectile" : "avikanexplosivebarrel",
+  "explosionOffset" : [5, 1],
+  
+  "chatLines" : [
+    "Accessing Central Circuit Database..."
+  ],
+
+  "mouthPosition" : [1, -2.5],
+  "questIndicatorPosition" : [1, -2.5]
+}

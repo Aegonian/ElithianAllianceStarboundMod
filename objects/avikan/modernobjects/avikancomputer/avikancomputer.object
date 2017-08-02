@@ -1,0 +1,71 @@
+{
+  "objectName" : "avikancomputer",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A modern computer.",
+  "shortdescription" : "Avikan Computer",
+  "race" : "avikan",
+  "lightColor" : [40, 26, 0],
+
+  "apexDescription" : "A computer.",
+  "avianDescription" : "A computer. I have no idea how this interface works...",
+  "floranDescription" : "Floran doesss not underssstand big black boxsss.",
+  "glitchDescription" : "Statement. A computer.",
+  "humanDescription" : "Where's the touchscreen? The keyboard, the mouse? I can't work with this!",
+  "hylotlDescription" : "A computer with an unusual interface.",
+
+  "aegiDescription" : "Avikan computers have an unusual interface.",
+  "avikanDescription" : "A simple computer, used to send messages to the Fleet.",
+  "erixianDescription" : "I have no ide how this interface works.",
+  "trinkDescription" : "An Avikan computer. How much RAM does it have?",
+  "hymidDescription" : "A computer of sorts. I don't like its interface.",
+  "notixDescription" : "This computer uses an unusual interface.",
+  "jorgasianDescription" : "I'm not sure how this interface works.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Receiving radio signal. Analyzing.",
+
+  "inventoryIcon" : "avikancomputericon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "avikancomputer.png:<color>.<frame>", "fullbright" : true }, { "image" : "avikancomputerlit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [0, 0],
+      "frames" : 3,
+      "animationCycle" : 0.4,
+      "lightPosition" : [0, 3],
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "bottom" ]
+    },
+    {
+	  "imageLayers" : [ { "image" : "avikancomputer.png:<color>.<frame>", "fullbright" : true }, { "image" : "avikancomputerlit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [0, 0],
+      "frames" : 3,
+      "animationCycle" : 0.4,
+      "lightPosition" : [1, 3],
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ]
+    }
+  ],  
+
+  "scripts" : [ "/scripts/npcToyObject.lua" ],
+  "npcToy" : {
+    "influence" : [
+      "console"
+    ],
+    "defaultReactions" : {},
+    "preciseStandPositionLeft" : [-0.5, 0.0],
+    "preciseStandPositionRight" : [1.0, 0.0],
+    "maxNpcs" : 1
+  }
+}

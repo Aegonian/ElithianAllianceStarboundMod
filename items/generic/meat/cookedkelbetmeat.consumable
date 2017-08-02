@@ -1,0 +1,18 @@
+{
+  "itemName" : "cookedkelbetmeat",
+  "rarity" : "Uncommon",
+  "price" : 160,
+  "category" : "food",
+  "inventoryIcon" : "cookedkelbetmeat.png",
+  "description" : "This delicious venison is illegal in most Union territories.",
+  "shortdescription" : "Cooked Kelbet Venison",
+  "foodValue" : 50,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 0.5,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

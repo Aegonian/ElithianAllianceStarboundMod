@@ -1,0 +1,14 @@
+{
+  "name" : "centensiangravityrepel",
+
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "centensiangravityrepel.lua"
+  ],
+
+  "animationConfig" : "centensiangravityrepel.animation",
+
+  "label" : "Gravity Field Distortion",
+  "icon" : "/interface/statuses/centensiangravityrepel.png"
+}

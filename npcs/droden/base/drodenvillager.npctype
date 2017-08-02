@@ -1,0 +1,12 @@
+{
+  "type" : "drodenvillager",
+  "baseType" : "thea-villager",
+
+  "dropPools" : [ "drodenDeathTreasure" ],
+
+  "scriptConfig" : {
+    "questGenerator" : { "pools" : [], "enableParticipation" : false }
+  },
+  
+  "matchColorIndices" : true
+}

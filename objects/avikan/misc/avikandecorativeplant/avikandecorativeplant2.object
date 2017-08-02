@@ -1,0 +1,46 @@
+{
+  "objectName" : "avikandecorativeplant2",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A collection of exotic plants and grasses.",
+  "shortdescription" : "Avikan Decorative Plant",
+  "race" : "avikan",
+
+  "apexDescription" : "Fresh green plants. A symbol of freedom.",
+  "avianDescription" : "Simple plants.",
+  "floranDescription" : "Plantsss without flowerss.",
+  "glitchDescription" : "Pleased. These plants smell incredibly fresh.",
+  "humanDescription" : "Indoor plants always lighten my mood.",
+  "hylotlDescription" : "These plants are being cared for with great effort.",
+  "novakidDescription" : "Green plants. That's normal, right?",
+
+  "aegiDescription" : "The Avikan take great care of what few plants they have.",
+  "avikanDescription" : "Healthy plants are a sign of wealth.",
+  "erixianDescription" : "These plants are well taken care of.",
+  "trinkDescription" : "These plants use their water very efficiently.",
+  "hymidDescription" : "Simple but beautiful green plants.",
+  "notixDescription" : "Freshly watered plants.",
+  "jorgasianDescription" : "Green plants. Nothing too special.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected plants. State: healthy.",
+
+  "inventoryIcon" : "avikandecorativeplant2icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikandecorativeplant2.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

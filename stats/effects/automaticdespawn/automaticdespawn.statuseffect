@@ -1,0 +1,8 @@
+{
+  "name" : "automaticdespawn",
+  "defaultDuration" : 15.0,
+
+  "scripts" : [
+    "automaticdespawn.lua"
+  ]
+}

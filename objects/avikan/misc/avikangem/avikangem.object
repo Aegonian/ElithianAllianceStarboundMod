@@ -1,0 +1,46 @@
+{
+  "objectName" : "avikangem",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 75,
+  "description" : "A pretty gemstone.",
+  "shortdescription" : "Small Avikan Gemstone",
+  "race" : "avikan",
+
+  "apexDescription" : "A fine gemstone.",
+  "avianDescription" : "A fabulous gemstone. So shiny!",
+  "floranDescription" : "Shinysss worth moneysss.",
+  "glitchDescription" : "Observation. A gemstone from deep within the bedrock.",
+  "humanDescription" : "A shiny gemstone. Pretty.",
+  "hylotlDescription" : "A gemstone of splendid quality.",
+  "novakidDescription" : "A shinin' gemstone.",
+
+  "aegiDescription" : "A gemstone. The Avikan seem to really like these.",
+  "avikanDescription" : "A gemstone mined from Kadavan's bedrock.",
+  "erixianDescription" : "A gemstone of incredible quality.",
+  "trinkDescription" : "A gemstone. The Avikan appears to value it very highly.",
+  "hymidDescription" : "This would look great in my home.",
+  "notixDescription" : "A clear, crystal gemstone.",
+  "jorgasianDescription" : "A rather pretty gemstone. Would anyone mind if I take it?",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected mineral substance. Origin: Kadavan.",
+
+  "inventoryIcon" : "avikangemicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikangem.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

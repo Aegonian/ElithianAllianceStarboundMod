@@ -1,0 +1,20 @@
+{
+  "id" : "avikanhistory5",
+  "species" : "avikan",
+  "title" : "Avikan History - Part 5",
+  "description" : "An account of Avikan history, by Izyati as-Kaladan.",
+  "icon" : "avikanhistory5.png",
+  "contentPages" : [
+
+    "After the first Thelean Invasion, the development of artificial intelligence was accelerated tenfold. The Elders judged that having an artificial army, much like that of the Theleans, would be our best defence against invaders. After the second invasion, the Droden were finally ready for deployment, but all did not go well.",
+
+    "After a number of incidents better described in their own scrolls, the machines rioted against its creators, marking the start of the Droden War in 205 BF. It was this war that sealed the permanent ban on full AIs in the Avikan nation. The hard-fought victory in 196 BF came just years before the Third Thelean Invasion of 190 BF.",
+    
+    "In the years to follow, another five Thelean Invasions were fought off, in 170 BF, 120 BF, 97 BF, 81 BF and 15 BF. The ninth and final Thelean Invasion came in 1 BF: the Great Invasion, followed by the Exodus from Kadavan in 0 AF (After Flight)."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

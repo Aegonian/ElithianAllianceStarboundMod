@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "monsterhide", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "monsterleather",
+    "count" : 1
+  },
+  "duration" : 0.15,
+  "groups" : [ "avikanleathercrafting", "ingredients", "all" ]
+}

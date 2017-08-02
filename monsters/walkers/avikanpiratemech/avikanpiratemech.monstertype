@@ -1,0 +1,216 @@
+{
+  "type" : "avikanpiratemech",
+  "shortdescription" : "Pirated Krahl",
+  "description" : "A pirated Krahl.",
+
+  "categories" : [ "avikanpiratemech" ],
+  "parts" : [ "body", "gun" ],
+
+  "animation" : "avikanpiratemech.animation",
+
+  "dropPools" : [],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+
+    "behavior" : "monster",
+
+    "behaviorConfig" : {
+      "damageOnTouch" : false,
+
+      "queryTargets" : true,
+      "targetQueryRange" : 100,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : true,
+      "keepTargetInRange" : 200,
+      "targetOutOfSightTime" : 10.0,
+
+      "foundTargetActions" : [],
+
+      "fleeActions" : [],
+
+      "hostileActions" : [
+		{
+          "name" : "action-fire",
+          "cooldown" : 2.0,
+          "parameters" : {
+            //General Config
+			"requireLineOfSight" : true,
+            "faceTarget" : true,
+            "maximumRange" : 70,
+            "minimumRange" : 2,
+			
+			//Windup
+            "windupTime" : 1.0,
+			"windupStateType" : "gun",
+            "windupState" : "idle",
+
+			//Projectile
+            "projectileType" : "omnicannonbullet",
+            "projectileCount" : 4,
+			"projectileInterval": 0.25,
+            "projectileParameters" : {
+              "speed" : 30,
+              "power" : 20
+            },
+            "fireDelay" : 0.0,
+			
+			//Aiming
+            "rotateAim" : true,
+			"holdAim": true,	//Will keep the aimDirection of the first shot when firing multiple shots
+            "fireSound" : "fire",
+			"fireStateType": "gun",
+            "fireState" : "fire",
+			"fireParticleBurst": "",
+			"fireOffset" : [1.5, 0.0],
+            "rotationCenter" : [-1.25, -0.25],
+			"fireArc": false,
+			"highArc": false,
+
+			//Winddown
+            "winddownState" : "idle",
+			"winddownStateType" : "gun",
+            "winddownTime" : 1.0,
+			"winddownStopForce": 0.5
+          }
+        }
+	  ],
+
+      "periodicActions" : [],
+
+      "approachActions" : [],
+
+      "followActions" : [
+        {
+          "name" : "approach-teleport",
+          "parameters" : {
+          }
+        },
+        {
+          "name" : "approach-walk",
+          "parameters" : {
+            "canJump" : true,
+            "maxJumps" : 6,
+            "jumpXVelocity" : 12,
+            "jumpYVelocity" : 30,
+            "jumpXControlForce" : 50,
+            "minXRange" : 10
+          }
+        }
+      ],
+
+      "wanderActions" : []
+    },
+    
+    "damageParts" : {
+      "body" : {
+        "damage" : 0,
+
+        "teamType" : "enemy",
+        "damageSourceKind" : "slash",
+        "knockback" : 20,
+        "statusEffects" : [ ]
+      }
+    },
+
+    "touchDamage" : {
+      "poly" : [[-2.0, -3.0], [-2.0, 1.0], [-1.0, 2.0], [1.0, 2.0], [2.0, 1.0], [2.0, -3.0], [0.5, -5.25], [-0.5, -5.25]],
+      "damage" : 13,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "slash",
+      "knockback" : 20,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-4, -4, 4, 4],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [[-2.0, -3.0], [-2.0, 1.0], [-1.0, 2.0], [1.0, 2.0], [2.0, 1.0], [2.0, -3.0], [0.5, -5.25], [-0.5, -5.25]],
+
+      "mass" : 4,
+      "walkSpeed" : 8,
+      "runSpeed" : 8,
+
+	  "airFriction" : 0.5,
+	  "liquidFriction" : 20.0,
+	  "groundFriction" : 50.0,
+
+      "airJumpProfile" : {
+        "jumpSpeed" : 35.0,
+        "jumpInitialPercentage" : 1.0,
+        "jumpHoldTime" : 0.0
+      }
+    },
+
+    "bodyMaterialKind" : "robotic",
+
+    "knockoutTime" : 0.3,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "robotic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.25
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 9
+        },
+        "maxHealth" : {
+          "baseValue" : 180
+        },
+        "protection" : {
+          "baseValue" : 0.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+        "quicksandImmunity" : {
+          "baseValue" : 1.0
+        },
+        "bleedingImmunity" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -8],
+    "capturable" : false
+  }
+}

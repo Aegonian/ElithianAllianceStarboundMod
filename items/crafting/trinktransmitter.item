@@ -1,0 +1,10 @@
+{
+  "itemName" : "trinktransmitter",
+  "price" : 250,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "trinktransmitter.png",
+  "description" : "A transmitter capable of communicating with the Central Trink Circuit.",
+  "shortdescription" : "Trinkian Transmitter",
+  "itemTags" : [ "reagent" ]
+}

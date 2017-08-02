@@ -1,0 +1,54 @@
+{
+  "type" : "tenanttrinkguardtier1",
+  "baseType" : "thea-friendlyguard",
+  
+  "dropPools" : [],
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "tenant", "guard"],
+      "enableParticipation" : true,
+
+      // Every 30 seconds, decide whether to generate a quest and if so, spend
+      // the rest of the 30s window trying to generate it.
+      "timeLimit" : 30,
+
+      // Don't generate new quests if there are already more than <nearbyQuestLimit>
+      // questmanager stagehands nearby, within a <nearbyQuestRange> tile range.
+      "nearbyQuestLimit" : 2,
+      "nearbyQuestRange" : 50,
+      "questCountRange" : [1, 4],
+      
+      "graduation" : {
+        "nextNpcType" : [
+          [1, "crewmembertrink"]
+        ]
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "trink-tier1head", "data" : { "colorIndex" : 8 } } ],
+            "chest" : [ { "name" : "trink-tier1chest", "data" : { "colorIndex" : 8 } } ],
+            "legs" : [ { "name" : "trink-tier1legs", "data" : { "colorIndex" : 8 } } ],
+            "primary" : [
+				"trinktier1longprod",
+				"trinktier1prod"
+			],
+			"sheathedprimary" : [
+				"trinktier1pistol",
+				"trinktier1rifle",
+				"trinktier1shotgun"
+			],
+			"alt" : [
+				"trinkshield"
+			]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "itemName" : "thea-lightrunner",
+  "price" : 1500,
+  "level" : 6,
+  "inventoryIcon" : "thea-lightrunner.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;A prototype weapon born from a classified research project.",
+  "manufacturer" : "^gray;AEG-Corps^reset;",
+  "shortdescription" : "^orange;C42 Lightrunner^white;",
+  "tooltipKind" : "thea-gun-unique-mf",
+  "category" : "Particle Accelerator",
+  "itemTags" : ["weapon","ranged","mininglaser","avikan"],
+  "twoHanded" : true,
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "avikan-linebreaker" },
+  
+  "meritTokenValue" : 100,
+  
+  "cursor" : "/cursors/thea-trianglereticle.cursor",
+  
+  "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
+  "animationParts" : {
+    "middle" : "thea-lightrunner.png",
+    "middleFullbright" : "thea-lightrunnerlights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/allianceenergyflash.png"
+  },
+  "animationCustom" : {
+	"animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [0.75, 0.125]
+		  }
+		}
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/thea_plasmagun1.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.75, 0.125],
+  "muzzleOffset" : [2.0, 0.45],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/multibarrelshot/multibarrelshot.lua"],
+    "class" : "MultiBarrelShot",
+
+    "fireTime" : 0.07,
+    "baseDps" : 11.5,
+    "energyUsage" : 40,
+    "inaccuracy" : 0.0,
+	
+	"primaryFiringOffset" : [2.0, 0.45],
+	"secondaryFiringOffset" : [2.0, 0.15],
+
+    "projectileCount" : 1,
+    "burstTime" : 0.025,
+    "burstCount" : 2,
+    "fireType" : "burst",
+
+    "projectileType" : "allianceenergybullet",
+    "projectileParameters" : {
+	  "knockback" : 5
+	},
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : -3,
+        "weaponRotation" : 5,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.05,
+        "armRotation" : -3,
+        "weaponRotation" : 5,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+}

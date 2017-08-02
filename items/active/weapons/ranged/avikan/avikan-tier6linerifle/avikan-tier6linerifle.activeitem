@@ -1,0 +1,158 @@
+{
+  "itemName" : "avikan-tier6linerifle",
+  "price" : 400,
+  "inventoryIcon" : "avikan-tier6linerifleicon.png",
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "^gray;A high-powered line rifle for long range encounters.",
+  "shortdescription" : "Nomada Line Rifle",
+  "level" : 6,
+  "tooltipKind" : "thea-chargedgun",
+  "category" : "Line Rifle",
+  "itemTags" : ["weapon","ranged","linerifle","avikan"],
+  "twoHanded" : true,
+  
+  "cursor" : "/cursors/thea-lineriflereticle.cursor",
+  
+  "animation" : "avikan-tier6linerifle.animation",
+  "animationParts" : {
+    "gun" : "avikan-tier6linerifle.png",
+    "lights" : "avikan-tier6lineriflelights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/lineriflemuzzle.png",
+    "charge" : "avikan-tier6lineriflecharge.png"
+  },
+  "animationCustom" : {
+	"animatedParts" : {
+      "parts" : {
+        "gun" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.4, 0.2]
+		  }
+		},
+		"lights" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.4, 0.2]
+		  }
+		},
+		"charge" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.4, 0.2]
+		  }
+		}
+      }
+    },
+    "particleEmitters" : {
+      "muzzleFlash" : {
+        "particles" : [
+          { "particle" : "lineriflepuff", "offset" : [-3.5, 0.3] },
+          { "particle" : "lineriflepuff", "offset" : [-3.5, 0.3] },
+          { "particle" : "lineriflepuff", "offset" : [-3.5, 0.3] }
+        ]
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/plasma_sniper4.ogg" ],
+	  "chargeLoop" : [ "/sfx/melee/charge_up7.ogg" ],
+	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
+    }
+  },
+  "animationScripts" : ["/items/active/effects/lightning.lua"],
+
+  "baseOffset" : [1.4, 0.2],
+  "muzzleOffset" : [2.1, 0.3],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "linerifle",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-linerifle.lua"],
+    "class" : "TheaLineRifle",
+
+    "chargeTime" : 1.1,
+    "baseDamage" : 14,
+    "baseEnergyUsage" : 35,
+    "inaccuracy" : 0.0,
+	
+	"cooldownTime" : 0.8,
+	
+	//Config for the lightning/charging animation
+	
+	//Amount of steps for the lightning charge. Weapon automatically cycles through these over the weapon's chargeTime
+	"chargeLevels" : 5,
+	// [amount, width, forks, displacement, color, startOffset, endOffset]
+	"lightningChargeLevels" : [
+      [1, 1.15, 0, 0.30, [255, 106, 0, 50], [-3.10, -0.3], [-0.125, 0.0]],
+      [1, 1.15, 0, 0.40, [255, 109, 0, 100], [-3.10, -0.3], [-0.125, 0.0]],
+      [1, 1.15, 0, 0.50, [255, 112, 0, 125], [-3.10, -0.3], [-0.125, 0.0]],
+      [1, 1.15, 0, 0.55, [255, 122, 0, 200], [-3.10, -0.3], [-0.125, 0.0]],
+      [1, 1.15, 0, 0.60, [255, 190, 0, 255], [-3.10, -0.3], [-0.125, 0.0]]
+    ],
+	//Amount: amount of lightning bolts to draw
+	//Width: Width of the bolts
+	//Forks: How many times the bolts should fork away from the main bolt
+	//Displacement: How far the bolts should deviate from being a straight line
+	//Color: Colour of the lightning bolts
+	//Start Offset: Offset for the lightning origin position, relative to muzzleOffset
+	//End Offset: Offset for the lightning target position, relative to muzzleOffset
+
+    "projectileType" : "lineriflepowerbullet",
+	"projectileCount" : 1,
+	"projectileParameters" : {
+      "knockback" : 10
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "charge" : {
+        "armRotation" : -2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+		"weaponOffset" : [-0.15, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.3,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+		"weaponOffset" : [-0.15, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "discharge" : {
+        "duration" : 0.1,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+	}
+  },
+
+  "builder" : "/items/buildscripts/thea-buildchargedgun.lua"
+}

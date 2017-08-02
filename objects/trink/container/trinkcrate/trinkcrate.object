@@ -1,0 +1,66 @@
+{
+  "objectName" : "trinkcrate",
+  "colonyTags" : ["trink", "storage"],
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "category" : "storage",
+  "printable" : false,
+  "price" : 40,
+  "description" : "A compact cargo crate.",
+  "shortdescription" : "Trinkian Crate",
+  "race" : "trink",
+  
+  "health" : 6,
+
+  "apexDescription" : "A compact cargo crate. Built to be stackable.",
+  "avianDescription" : "A shiny metal crate. What is it carrying?",
+  "floranDescription" : "Cratesss full of goodiesss!",
+  "glitchDescription" : "Wondering. What goods might be within?",
+  "humanDescription" : "A cargo crate. What might be inside?",
+  "hylotlDescription" : "A compact metal crate. Ideal for transportation and storage.",
+
+  "aegiDescription" : "Trinkian crates are built with efficiency in mind.",
+  "avikanDescription" : "A cargo crate built by machines.",
+  "erixianDescription" : "This cargo crate is surprisingly sturdy.",
+  "trinkDescription" : "This standard issue cargo crate is built to fit inside any Trinkian cargo hold.",
+  "hymidDescription" : "A metal crate of Trinkian design.",
+  "notixDescription" : "Our Trinks are excellent at maintaining efficiency, and this compact cargo crate is proof of that.",
+  "jorgasianDescription" : "A metal cargo crate. I can't but wonder what's inside...",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "theleanDescription" : "TODO",
+  "drodenDescription" : "Storage unit detected. Content scan unavailable.",
+
+  "inventoryIcon" : "trinkcrateicon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "trinkcrate.png:<color>.<key>", "fullbright" : true }, { "image" : "trinkcratelit.png:<color>.<key>" } ],
+	  "imagePosition" : [-8, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform",
+      "flipImages" : true,
+      "direction" : "left"
+
+    },
+    {
+	  "imageLayers" : [ { "image" : "trinkcrate.png:<color>.<key>", "fullbright" : true }, { "image" : "trinkcratelit.png:<color>.<key>" } ],
+      "imagePosition" : [-8, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform",
+      "direction" : "right"
+
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/chest_small_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/chest_small_close.ogg" ],
+  "slotCount" : 16,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 10,
+  "autoCloseCooldown" : 3600
+}

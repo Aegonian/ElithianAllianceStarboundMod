@@ -1,0 +1,35 @@
+{
+  "ability" : {
+    "name" : "Arc Lightning",
+    "type" : "lightningarc",
+    "scripts" : ["/items/active/weapons/melee/abilities/spear/lightningarc/lightningarc.lua"],
+	"class" : "LightningArc",
+
+    "energyUsage" : 40.0,
+    "cooldownTime" : 0.5,
+
+	"projectileType" : "lightningarcsource",
+	"projectileParameters" : {
+      "speed" : 0,
+      "timeout" : 0.15,
+      "timeoutGroup" : "alt"
+    },
+	
+	"projectileSpawnPosition" : [0, 0],
+	
+    "baseDps" : 6.0,
+    "fireTime" : 0.3,
+
+    "stances" : {
+      "fire" : {
+        "armRotation" : 50,
+        "weaponRotation" : -50,
+        "twoHanded" : true,
+        "weaponOffset" : [0.3, 1.8],
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  }
+}

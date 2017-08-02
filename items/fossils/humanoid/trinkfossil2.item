@@ -1,0 +1,21 @@
+{
+  "itemName" : "trinkfossil2",
+  "rarity" : "Uncommon",
+  "itemTags" : ["fossil"],
+
+  "description" : "A fossilised Trink body.",
+  "category" : "mediumFossil",
+
+  "shortdescription" : "Trink Body",
+  "race" : "trink",
+  "price" : 0,
+
+  "inventoryIcon" : "trinkfossil2icon.png",
+
+  "displayImage" : "/objects/fossils/humanoidfossils/fossiltrink/trinktorsodisplay.png",
+  "displayoffset" :[0, 0],
+
+  "fossilSetName" : "trinkSkeleton",
+  "setIndex" : 2,
+  "setCount" : 3
+}

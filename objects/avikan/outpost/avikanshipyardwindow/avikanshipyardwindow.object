@@ -1,0 +1,43 @@
+{
+  "objectName" : "avikanshipyardwindow",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 40,
+  "description" : "A large reinforced window.",
+  "shortdescription" : "Avikan Shipyard Window",
+  "race" : "avikan",
+
+  "apexDescription" : "This window provides an excellent view of the shipyard.",
+  "avianDescription" : "This window provides an excellent view of the shipyard.",
+  "floranDescription" : "Floran fassscinated by viewsss...",
+  "glitchDescription" : "Opinion. This window provides an excellent view of the shipyard.",
+  "humanDescription" : "This window provides an excellent view of the shipyard.",
+  "hylotlDescription" : "This window provides an excellent view of the shipyard.",
+  "novakidDescription" : "This window provides an excellent view of the shipyard.",
+
+  "aegiDescription" : "This window provides an excellent view of the shipyard.",
+  "avikanDescription" : "This window provides an excellent view of the shipyard.",
+  "erixianDescription" : "This window provides an excellent view of the shipyard.",
+  "trinkDescription" : "This window provides an excellent view of the shipyard.",
+  "hymidDescription" : "This window provides an excellent view of the shipyard.",
+  "notixDescription" : "This window provides an excellent view of the shipyard.",
+  "jorgasianDescription" : "This window provides an excellent view of the shipyard.",
+  "centensDescription" : "This window provides an excellent view of the shipyard.",
+  "dremetonDescription" : "This window provides an excellent view of the shipyard.",
+  "theleanDescription" : "This window provides an excellent view of the shipyard.",
+  "drodenDescription" : "Analysis. Glass.",
+
+  "inventoryIcon" : "avikanshipyardwindowicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanshipyardwindow.png:<color>",
+      "imagePosition" : [-16, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [],
+      "collision" : "solid"
+    }
+  ]
+}

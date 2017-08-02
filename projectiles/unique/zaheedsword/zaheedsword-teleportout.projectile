@@ -1,0 +1,12 @@
+{
+  "projectileName" : "zaheedsword-teleportout",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/unique/zaheedsword/zaheedsword-teleportout.config"
+    }
+  ],
+  "damageKind" : "default",
+  "timeToLive" : 0
+}

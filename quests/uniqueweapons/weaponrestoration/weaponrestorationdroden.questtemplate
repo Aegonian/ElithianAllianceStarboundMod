@@ -1,0 +1,39 @@
+{
+  "id" : "weaponrestorationdroden",
+  "prerequisites" : [ "drodencustomtailoring", "glitch_mission2" ],
+  "requiredItems" : [ "drodenlegionbroken" ],
+  "title" : "^orange;The Legion's Blade",
+  "text" : "Is that an old Legion blade you carry? I could repair it for you, but we'll need to build our own switch gear. The components we need are also used in the construction of Droden frames, so if you can ^green;find me ^orange;20 Inactive Droden Frames^white;, I should be able to salvage what we need.",
+  "completionText" : "I managed to salvage enough components to build you a new Legion Switch Gear, so here you go. We'll need some more raw materials to repair the blade itself, however.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "legiontech", 1 ], [ "avikanmerittoken", 5 ] ]
+  ],
+  "canBeAbandoned" : false,
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+	"portraits" : {
+      "questStarted" : {
+        "portrait" : [ {"image" : "/objects/avikan/outpost/avikangunsmith/avikangunsmithportrait.png"} ],
+        "title" : "Ayurin"
+      },
+      "questComplete" : {
+        "portrait" : [ {"image" : "/objects/avikan/outpost/avikangunsmith/avikangunsmithportrait.png"} ],
+        "title" : "Ayurin"
+      }
+    },
+	"followUp" : "weaponrestorationdroden2",
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "avikandroden",
+        "count" : 20,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Return to ^orange;Ayurin ^reset;in the ^orange;Starfarer's Refuge^reset;"
+  }
+}

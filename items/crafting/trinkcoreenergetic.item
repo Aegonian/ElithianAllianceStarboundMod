@@ -1,0 +1,10 @@
+{
+  "itemName" : "trinkcoreenergetic",
+  "price" : 250,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "trinkcoreenergetic.png",
+  "description" : "A power core for Circuit armour. Increases the user's energy reserves.",
+  "shortdescription" : "Circuit Core-A",
+  "itemTags" : [ "reagent" ]
+}

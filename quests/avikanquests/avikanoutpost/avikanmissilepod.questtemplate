@@ -1,0 +1,34 @@
+{
+  "id" : "avikanmissilepod",
+  "prerequisites" : [],
+  "title" : "^green;Explosive Firepower",
+  "text" : "I found the broken missile pod of an Elite Drahl. Perhaps it can still be repaired... ^green;I should try to look for a weaponsmith in the Starfarer's Refuge ^white;- they'll know if the missile pod can still be repaired.",
+  "completionText" : "This is quite the find, Captain. I think I can still repair this missile pod, but we'll need some materials.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "avikanmerittoken", 5 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+	"portraits" : {
+      "questStarted" : "player",
+      "questComplete" : {
+        "portrait" : [ {"image" : "/objects/avikan/outpost/avikangunsmith/avikangunsmithportrait.png"} ],
+        "title" : "Ayurin"
+      }
+    },
+	"followUp" : "avikanmissilepod2",
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "avikandronemissilepod",
+        "count" : 1,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Find ^orange;Ayurin ^reset;in the ^orange;Starfarer's Refuge^reset;"
+  }
+}

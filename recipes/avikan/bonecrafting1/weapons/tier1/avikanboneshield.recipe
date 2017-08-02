@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "monsterbone", "count" : 5 },
+    { "item" : "avikanstring", "count" : 2 }
+  ],
+  "output" : { "item" : "avikanboneshield", "count" : 1 },
+  "groups" : [ "avikanbonecrafting", "weapons", "all" ]
+}

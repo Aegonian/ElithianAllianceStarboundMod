@@ -1,0 +1,54 @@
+{
+  "itemName" : "thea-excalibur",
+  "price" : 1500,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;A grand Aevis crafted in honor of the Taemera family.",
+  "shortdescription" : "^orange;Excalibur^white;",
+  "tooltipKind" : "thea-sword-unique",
+  "category" : "Shieldblade",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","shieldblade","aegi"],
+
+  "inventoryIcon" : "thea-excaliburicon.png",
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "thea-excalibur" },
+  
+  "meritTokenValue" : 100,
+
+  "animation" : "thea-excalibur.animation",
+  "animationParts" : {
+    "blade" : "thea-excalibur.png",
+	"bladeFullbright" : "thea-excaliburlights.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/vhaleihan_swing.ogg" ],
+      "fire2" : [ "/sfx/melee/vhaleihan_swing2.ogg" ],
+      "fire3" : [ "/sfx/melee/vhaleihan_swing3.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "xanafian",
+  
+  //Makes the weapon draw in front of the arm
+  "handGrip" : "outside",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "thea-shieldbladecomboenergy",
+  "primaryAbility" : {
+	"damageConfig" : {
+      "statusEffects" : [ "shadowmarked" ]
+    }
+  },
+  
+  "altAbilityType" : "thea-shieldbladedefendenergy",
+  "altAbility" : {},
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

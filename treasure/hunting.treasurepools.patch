@@ -1,0 +1,181 @@
+[  
+  //Unique Monster Drops
+  {"op" : "add",
+   "path" : "/sandcrawlerHunting",
+   "value" : [
+	[1, {
+      "pool" : [
+		{"weight" : 0.599, "item" : "sandcrawlermeat"},
+		{"weight" : 0.399, "item" : "sandcrawlertooth"},
+        {"weight" : 0.002, "item" : "largesandcrawleraf"}
+      ]
+    }]
+   ]		
+  },
+  
+  {"op" : "add",
+   "path" : "/sandspitterHunting",
+   "value" : [
+	[1, {
+      "pool" : [
+		{"weight" : 0.499, "item" : "rawribmeat"},
+		{"weight" : 0.499, "item" : "sandspittersack"},
+        {"weight" : 0.002, "item" : "giantsandspitteraf"}
+      ]
+    }]
+   ]		
+  },
+  
+  {"op" : "add",
+   "path" : "/kadavangadhurHunting",
+   "value" : [
+	[1, {
+      "pool" : [
+		{"weight" : 0.6, "item" : "alienmeat"},
+		{"weight" : 0.4, "item" : "monsterhide"}
+      ]
+    }]
+   ]		
+  },
+  
+  {"op" : "add",
+   "path" : "/kadavanvalahrHunting",
+   "value" : [
+	[1, {
+      "pool" : [
+		{"weight" : 0.599, "item" : "alienmeat"},
+		{"weight" : 0.399, "item" : "valahrgland"},
+        {"weight" : 0.002, "item" : "kadavanvalahraf"}
+      ]
+    }]
+   ]		
+  },
+  
+  {"op" : "add",
+   "path" : "/kadavanswarmHunting",
+   "value" : [
+	[1, {
+      "pool" : [
+        {"weight" : 0.799, "pool" : "money"},
+		{"weight" : 0.199, "item" : "stingwingqueen"},
+        {"weight" : 0.002, "item" : "kadavanswarmaf"}
+      ]
+    }]
+   ]	
+  },
+  
+  {"op" : "add",
+   "path" : "/avikandroneHunting",
+   "value" : [
+	[1, {
+      "pool" : [
+        {"weight" : 0.499, "item" : "staticcell"},
+        {"weight" : 0.499, "item" : "stickofram"},
+        {"weight" : 0.002, "item" : "avikandroneaf"}
+      ]
+    }]
+   ]
+  },
+  
+  {"op" : "add",
+   "path" : "/avikanviolateddroneHunting",
+   "value" : [
+	[1, {
+      "pool" : [
+        {"weight" : 0.499, "item" : "staticcell"},
+        {"weight" : 0.499, "item" : "stickofram"},
+        {"weight" : 0.002, "item" : "avikanviolateddroneaf"}
+      ]
+    }]
+   ]
+  },
+  
+  {"op" : "add",
+   "path" : "/avikanlargedroneHuntingGuaranteed",
+   "value" : [
+	[1, {
+      "fill" : [
+        {"item" : "avikandronemissilepod"},
+		{"pool" : "avikanlargedroneHunting"}
+      ]
+    }]
+   ]	
+  },
+  
+  {"op" : "add",
+   "path" : "/avikanlargedroneHunting",
+   "value" : [
+	[1, {
+      "pool" : [
+        {"weight" : 0.498, "item" : "staticcell"},
+        {"weight" : 0.497, "item" : "stickofram"},
+        {"weight" : 0.005, "item" : "avikanlargedroneaf"}
+      ]
+    }]
+   ]	
+  },
+  
+  {"op" : "add",
+   "path" : "/avikanlargeviolateddroneHuntingGuaranteed",
+   "value" : [
+	[1, {
+      "fill" : [
+        {"item" : "violatedioncore"},
+		{"pool" : "avikanlargeviolateddroneHunting"}
+      ]
+    }]
+   ]	
+  },
+  
+  {"op" : "add",
+   "path" : "/avikanlargeviolateddroneHunting",
+   "value" : [
+	[1, {
+      "pool" : [
+        {"weight" : 0.498, "item" : "staticcell"},
+        {"weight" : 0.497, "item" : "stickofram"},
+        {"weight" : 0.005, "item" : "avikanlargeviolateddroneaf"}
+      ]
+    }]
+   ]	
+  },
+  
+  {"op" : "add",
+   "path" : "/trinkdroneHunting",
+   "value" : [
+	[1, {
+      "pool" : [
+        {"weight" : 0.499, "item" : "staticcell"},
+        {"weight" : 0.499, "item" : "stickofram"},
+        {"weight" : 0.002, "item" : "trinkdroneaf"}
+      ]
+    }]
+   ]
+  },
+  
+  {"op" : "add",
+   "path" : "/ghavorkanHunting",
+   "value" : [
+	[1, {
+      "pool" : [
+        {"weight" : 0.499, "item" : "theleantissue"},
+        {"weight" : 0.399, "item" : "theleanmetal"},
+        {"weight" : 0.199, "item" : "ghavorkanpowercell"},
+        {"weight" : 0.002, "item" : "ghavorkanaf"}
+      ]
+    }]
+   ]
+  },
+  
+  {"op" : "add",
+   "path" : "/kelbetHunting",
+   "value" : [
+	[1, {
+      "pool" : [
+        {"weight" : 0.5, "item" : "kelbethide"},
+        {"weight" : 0.5, "item" : "kelbetmeat"}
+      ]
+    }]
+   ]
+  }
+]

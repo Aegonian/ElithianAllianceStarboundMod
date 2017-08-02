@@ -1,0 +1,85 @@
+[	
+  //DESERT WETLANDS BIOME
+  {"op" : "add",
+   "path" : "/-",
+   "value" :
+			
+    {
+      "name" : "largesandcrawler",
+
+      "spawnParameters" : {
+        "area" : "surface",
+        "region" : "all",
+        "time" : "all"
+      },
+      "groupSize" : [1, 2],
+      "spawnChance" : 0.1,
+      "monsterType" : "largesandcrawler",
+      "monsterParameters" : {
+        "aggressive" : true
+      }
+    }		
+  },
+  
+  {"op" : "add",
+   "path" : "/-",
+   "value" :
+			
+    {
+      "name" : "kadavanvalahr",
+
+      "spawnParameters" : {
+        "area" : "ceiling",
+        "region" : "all",
+        "time" : "all"
+      },
+	  "groupSize" : [2, 3],
+      "spawnChance" : 0.1,
+      "monsterType" : "kadavanvalahr",
+      "monsterParameters" : {
+        "aggressive" : true
+      }
+    }		
+  },
+  
+  {"op" : "add",
+   "path" : "/-",
+   "value" :
+			
+    {
+      "name" : "kadavanswarm",
+
+      "spawnParameters" : {
+        "area" : "surface",
+        "region" : "exposed",
+        "time" : "day"
+      },
+      "groupSize" : [1, 2],
+      "spawnChance" : 0.1,
+      "monsterType" : "kadavanswarm",
+      "monsterParameters" : {
+        "aggressive" : true
+      }
+    }		
+  },
+  
+  {"op" : "add",
+   "path" : "/-",
+   "value" :
+			
+    {
+      "name" : "giantsandspitter",
+
+      "spawnParameters" : {
+        "area" : "surface",
+        "region" : "all",
+        "time" : "all"
+      },
+      "spawnChance" : 0.07,
+      "monsterType" : "giantsandspitter",
+      "monsterParameters" : {
+        "aggressive" : true
+      }
+    }		
+  }
+]

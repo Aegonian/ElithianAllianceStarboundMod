@@ -1,0 +1,58 @@
+{
+  "type" : "ao-retiredsoldier",
+  "baseType" : "ao-lounger",
+
+  "npcname" : "Armahk",
+
+  "scriptConfig" : {
+  
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "I've served the Vanguard for many, many years. Now it is time for me to rest."
+		  ]
+		},
+
+        "avikan" : {
+          "default" : [
+            "I've served the Vanguard for many, many years. Now it is time for me to rest."
+          ],
+          "glitch" : [
+            "I've destroyed plenty of machines in my days of service to the Vanguard, but those days are over now."
+          ],
+          "avikan" : [
+            "I've served the Vanguard for many, many years. Now it is time for me to rest."
+          ],
+          "trink" : [
+            "I've destroyed plenty of machines in my days of service to the Vanguard, but those days are over now."
+          ],
+          "droden" : [
+            "I've worked with many Droden during my years of service to the Vanguard. Your kind is quite alright."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "avikan-vanguardchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "avikan-vanguardlegs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "back" : [
+              { "name" : "avikanbackpack", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

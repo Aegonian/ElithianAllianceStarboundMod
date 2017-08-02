@@ -1,0 +1,31 @@
+{
+  "projectileName" : "xanafianbullet",
+  "image" : "xanafianbullet.png",
+  "physics" : "laser",
+  "bounces" : 0,
+  "piercing" : false,
+  "animationCycle" : 0.25,
+  "frameNumber" : 4,
+  "emitters" : [ "xanafianbullettrail" ],
+  "damageKindImage" : "icon.png",
+  "lightColor" : [33, 0, 127],
+  "fullbright" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/xanafianbulletexplosion/xanafianbulletexplosion.config"
+    }
+  ],
+  "statusEffects" : [
+    "centensiangravity"
+  ],
+  "power" : 5.0,
+  "speed" : 75,
+  "timeToLive" : 1.5,
+  "damageKind" : "centensianenergy",
+  "hydrophobic" : false,
+  
+  "scripts" : [ "/projectiles/scripts/thea-homingbullet.lua" ],
+  "searchRadius" : 15,
+  "baseHomingControlForce" : 0.9
+}

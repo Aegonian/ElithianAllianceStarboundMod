@@ -1,0 +1,70 @@
+{
+  "kind" : "centens",
+
+  "charCreationTooltip" : {
+      "title" : "Centens",
+      "subTitle" : "Is this field even used?",
+      "description" : "An ancient race originating from a place beyond our universe, the Centens possessed an unrivaled level of technological advancement. Their civilization collapsed under mysterious circumstances aeons ago, but some Centens still survive, locked away in stasis pods."
+  },
+  
+  "playerSpecies" : true,
+  "humanoidConfig" : "/species/types/thea-humanoid.config",
+  "nameGen" : [ "/species/centensnamegen.config:names", "/species/centensnamegen.config:names" ],
+  "ouchNoises" : [ "/sfx/humanoid/floranhurt_female3.ogg", "/sfx/humanoid/floranhurt_female3.ogg" ],
+  "charGenTextLabels" : [ "SKIN COLOR", "N/A", "SHIRT", "PANTS", "HEAD SHAPE", "FLAP COLOR", "SHIRT COLOR", "PANTS COLOR", "CENTENS", "PERSONALITY" ],
+  "skull" : "/humanoid/centens/dead.png",
+  "effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=ffbe00FF?replace=31a6ffFF=ff6a00FF",
+  "defaultBlueprints" : {
+    "tier1" : [
+	
+    ]
+  },
+  "altOptionAsFacialMask" : true,
+  "headOptionAsHairColor" : true,
+  "bodyColorAsFacialMaskSubColor" : true,
+  "hairColorAsBodySubColor" : true,
+  "genders" : [
+    {
+      "name" : "male",
+      "image" : "/interface/title/male.png",
+      "characterImage" : "/interface/title/centensmale.png",
+	  "hairGroup" : "hair",
+      "hair" : [ "0" ],
+      "shirt" : [ "thea-hiddenchest" ],
+      "pants" : [ "thea-hiddenlegs" ],
+      "facialHairGroup" : "",
+      "facialHair" : [ ],
+      "facialMaskGroup" : "mask",
+      "facialMask" : [ "0" ]
+    },
+    {
+      "name" : "female",
+      "image" : "/interface/title/female.png",
+      "characterImage" : "/interface/title/centensfemale.png",
+	  "hairGroup" : "hair",
+      "hair" : [ "0" ],
+      "shirt" : [ "thea-hiddenchest" ],
+      "pants" : [ "thea-hiddenlegs" ],
+      "facialHairGroup" : "",
+      "facialHair" : [ ],
+      "facialMaskGroup" : "mask",
+      "facialMask" : [ "0" ]
+    }
+  ],
+  "bodyColor" : [
+ // { "42301C" : "DARKER", "785F40" : "DARK  ", "A2825C" : "NORMAL", "CCAA7F" : "LIGHT " }, // Template, Brown
+  
+    { "42301C" : "6B4945", "785F40" : "B27C82", "A2825C" : "D4AA9C", "CCAA7F" : "FAC0A8" }, // Pink - Saturated
+	{ "42301C" : "5F4D4B", "785F40" : "A18487", "A2825C" : "C6AFA8", "CCAA7F" : "E5C6B9" }, // Pink - Desaturated
+	{ "42301C" : "654B48", "785F40" : "AA8085", "A2825C" : "CDADA2", "CCAA7F" : "EFC3B0" }, // Pink - Regular
+	{ "42301C" : "583F3C", "785F40" : "997074", "A2825C" : "B99A8F", "CCAA7F" : "DAAF9C" }, // Pink - Dark
+	{ "42301C" : "684440", "785F40" : "AE747B", "A2825C" : "CDA191", "CCAA7F" : "F2B59B" }, // Pink - Dark Saturated
+	{ "42301C" : "5B4E4D", "785F40" : "9B8689", "A2825C" : "C1B1AB", "CCAA7F" : "DEC8BF" }  // Pink - Highly Desaturated
+  ],
+  "undyColor" : [ "" ],
+  "hairColor" : [
+ // { "563527" : "DARKER", "A65935" : "DARK  ", "CC7651" : "NORMAL", "EFA386" : "LIGHT " }, // Template, Reddish Orange
+
+    { "563527" : "654B48", "A65935" : "AA8085", "CC7651" : "CDADA2", "EFA386" : "EFC3B0" } // Reddish Metal
+  ]
+}

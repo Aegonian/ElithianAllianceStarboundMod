@@ -1,0 +1,76 @@
+{
+  "objectName" : "avikanrailcrafting",
+  "colonyTags" : ["crafting"],
+  "category" : "crafting",
+  "rarity" : "Rare",
+  "description" : "The rail forging station can forge rails out of raw materials.",
+  "shortdescription" : "^orange;Rail Forging Station^white;",
+  "race" : "avikan",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/crafting.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : " Rail Forging Station",
+        "subtitle" : " ^#b9b5b2;For all your transportation on rails.",
+        "icon" : {
+          "file" : "/interface/crafting/craftingavikanmetal.png"
+        }
+      }
+    },
+    "filter" : [ "avikanrailcrafting" ]
+  },
+  "printable" : false,
+  "price" : 750,
+
+  "apexDescription" : "I can use this station to construct rails for easy transport.",
+  "avianDescription" : "This table will allow me to build rails which I can travel on.",
+  "floranDescription" : "Thiss table makes shiny rails for quick travel.",
+  "glitchDescription" : "Delighted. The rails crafted here will make movement much more efficient.",
+  "humanDescription" : "I can craft rails here! Perfect for getting around. And around, and around.",
+  "hylotlDescription" : "The rails I can construct here may be primitive, but their efficiency can't be questioned.",
+  "novakidDescription" : "Ridin' the rails - still works as good as it ever did for gettin' around.",
+  
+  "aegiDescription" : "This device can craft various types of transportation rails.",
+  "avikanDescription" : "The Nomada uses these devices to construct rails.",
+  "erixianDescription" : "A rail manufacturing station.",
+  "trinkDescription" : "An inefficient rail forging station.",
+  "hymidDescription" : "I could craft various types of rails here.",
+  "notixDescription" : "The high frequency sounds created by this device are beautiful.",
+  "jorgasianDescription" : "A crafting station for crafting rails and rail trams.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Analysis complete. Rail forging station. Used to construct rails and rail vehicles.",
+
+  "inventoryIcon" : "avikanrailcraftingicon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "avikanrailcrafting.png:<color>.<frame>" }, { "image" : "avikanrailcraftinglights.png:<color>.<frame>", "fullbright" : true } ],
+
+      "imagePosition" : [-16, 0],
+      "frames" : 20,
+      "animationCycle" : 2.0,
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "bottom" ]
+
+    },
+    {
+	  "imageLayers" : [ { "image" : "avikanrailcrafting.png:<color>.<frame>" }, { "image" : "avikanrailcraftinglights.png:<color>.<frame>", "fullbright" : true } ],
+
+      "imagePosition" : [-16, 0],
+      "frames" : 20,
+      "animationCycle" : 2.0,
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "npcToy" : {}
+}

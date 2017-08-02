@@ -1,0 +1,19 @@
+{
+  "kind" : "xanafianshadowdeath",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/xanafianshadowdeath/xanafianshadowdeath.animation",
+    "position" : [0, 0],
+    "approach" : [50, 50],
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.75,
+    "fade" : 1,
+    "size" : 1,
+    "layer" : "front",
+	"fullbright" : true,
+    "timeToLive" : 0.5,
+    "variance" : {
+      "rotation" : 180
+    }
+  }
+}

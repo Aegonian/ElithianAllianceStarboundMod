@@ -1,0 +1,196 @@
+{
+  "type" : "kadavangadhurtest",
+  "shortdescription" : "Gad'hur",
+  "description" : "A docile creature, the Gad'hur is often employed as a mount.",  
+
+  "categories" : [ "kadavangadhur" ],
+  "parts" : [ "body" ],
+
+  "animation" : "kadavangadhur.animation",
+
+  "dropPools" : [ { "default" : "kadavangadhurTreasure", "bow" : "kadavangadhurHunting", "avikanhunting" : "avikanhunting", "keffridersspear" : "avikanhunting" } ],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+
+    "behavior" : "monster",
+
+    "behaviorConfig" : {
+      "damageOnTouch" : false,
+
+      "queryTargets" : true,
+      "targetQueryRange" : 9,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : false,
+      "keepTargetInRange" : 20,
+      "targetOutOfSightTime" : 4.5,
+
+      "foundTargetActions" : [],
+
+      "fleeActions" : [],
+
+      "hostileActions" : [],
+
+      "periodicActions" : [
+	    {
+          "name" : "action-blink",
+          "cooldown" : 4,
+          "parameters" : {
+            "state" : "blink",
+            "type" : "body"
+          }
+        },
+		{
+          "name" : "action-animate",
+          "cooldown" : 6,
+          "parameters" : {
+            "stateType" : "body",
+            "state" : "idle",
+            "animationTime" : 4.0
+          }
+        }
+	  ],
+
+      "approachActions" : [
+		{
+          "name" : "thea-fleetarget",
+          "parameters" : {
+            "canJump" : false,
+            "maxJumps" : 8,
+            "moveState" : "walk",
+            "minXRange" : 10,
+            "run" : false
+          }
+        }
+      ],
+
+      "wanderActions" : [
+	    {
+          "name" : "wander-walk",
+          "cooldown" : 8.0,
+          "parameters" : {
+            "moveState" : "walk",
+            "wanderTime" : [5, 10]
+          }
+        },
+		{
+          "name" : "wander-walk",
+          "cooldown" : 8.0,
+          "parameters" : {
+            "moveState" : "run",
+            "wanderTime" : [3, 6],
+			"run" : true
+          }
+        }
+      ]
+    },
+    
+    "damageParts" : {
+      "body" : {
+        "damage" : 13,
+
+        "teamType" : "enemy",
+        "damageSourceKind" : "slash",
+        "knockback" : 20,
+        "statusEffects" : [ ]
+      }
+    },
+
+    "touchDamage" : {
+      "poly" : [],
+      "damage" : 13,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "slash",
+      "knockback" : 20,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-4, -4, 4, 4],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [1.1, 5.4], [1.5, 5.0], [1.5, 0.4], [1.1, 0.0], [-1.1, 0.0], [-1.5, 0.4], [-1.5, 5.0], [-1.1, 5.4] ],
+
+      "mass" : 1.0,
+      "walkSpeed" : 6,
+      "runSpeed" : 12,
+
+      "airFriction" : 0,
+
+      "airJumpProfile" : {
+        "jumpSpeed" : 45.0,
+        "jumpInitialPercentage" : 1.0,
+        "jumpHoldTime" : 0.0
+      }
+    },
+
+    "bodyMaterialKind" : "organic",
+
+    "knockoutTime" : 0.3,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "organic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.25
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 9
+        },
+        "maxHealth" : {
+          "baseValue" : 150
+        },
+        "protection" : {
+          "baseValue" : 0.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+        "quicksandImmunity" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -8],
+    "capturable" : false,
+    "relocatable" : true,
+    "nametagColor" : [64, 200, 255]
+  }
+}

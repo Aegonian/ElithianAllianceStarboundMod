@@ -1,0 +1,165 @@
+{
+  "itemName" : "trink-debilitator",
+  "price" : 1500,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "essential",
+  "description" : "^orange;A massive shock baton built to incapacitate enemies.",
+  "shortdescription" : "^orange;SB-4 Debilitator^white;",
+  "tooltipKind" : "thea-sword-unique",
+  "category" : "Shock Baton",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spear","prod","avikan","theaUnique"],
+
+  "inventoryIcon" : "trink-debilitatoricon.png",
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "trink-debilitator" },
+
+  "animation" : "trink-debilitator.animation",
+  "animationParts" : {
+    "blade" : "trink-debilitator.png",
+    "bladeFullbright" : "trink-debilitatorlights.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      //Primary
+	  "fireInactive" : [ "/sfx/melee/swing_hammer.ogg" ],
+	  "fireActive" : [ "/sfx/melee/swing_hammer_electric1.ogg", "/sfx/melee/swing_hammer_electric2.ogg", "/sfx/melee/swing_hammer_electric3.ogg" ],
+	  "idleLoop" : [ "/sfx/melee/debilitator_idle.ogg" ],
+	  //Secondary
+	  "charge" : ["/sfx/melee/charge_up13.ogg"],
+	  "chargefull" : ["/sfx/melee/charge_full_hold2.ogg"],
+	  "chargefire" : ["/sfx/melee/charge_full_swing3.ogg"]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "electric",
+
+  "aimOffset" : -1.0,
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/melee/abilities/baton/thea-batonwhack.lua"],
+	"class" : "BatonWhack",
+	
+    "fireTime" : 0.85,
+	
+    "baseDps" : 10.0,
+    "activeDps" : 11.5,
+	
+    "inactiveDamageConfig" : {
+      "damageSourceKind" : "hammer",
+      "statusEffects" : [ ],
+      "knockbackMode" : "aim",
+      "knockback" : 35,
+      "timeoutGroup" : "primary"
+    },
+	"activeDamageConfig" : {
+      "damageSourceKind" : "electrichammer",
+      "statusEffects" : [ "electrified" ],
+      "knockbackMode" : "aim",
+      "knockback" : 45,
+      "timeoutGroup" : "primary"
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : -90,
+        "weaponRotation" : 0,
+        "weaponOffset" : [0.0, 2.0],
+        "twoHanded" : false,
+
+        "allowFlip" : true,
+        "allowRotate" : true
+      },
+      "windup" : {
+        "duration" : 0.8,
+        "armRotation" : 90,
+        "weaponRotation" : 0,
+        "weaponOffset" : [0.0, 2.5],
+        "twoHanded" : true,
+
+        "allowFlip" : true,
+        "allowRotate" : true,
+
+        "bounceTime" : 0.12,
+        "bounceWeaponAngle" : [
+          [0.75, "linear", 20, 60],
+          [0.875, "sin", 60, 55],
+          [1.0, "cos", 60, 55]
+        ],
+        "weaponAngle" : [
+          [1.0, "linear", -20, 20]
+        ],
+        "armAngle" : [
+          [1.0, "sin", -90, 50]
+        ]
+      },
+      "fire" : {
+        "duration" : 0.4,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "weaponOffset" : [0.0, 2.75],
+        "twoHanded" : true,
+
+        "allowFlip" : true,
+        "allowRotate" : false
+      }
+    }
+  },
+  
+  "altAbility" : {
+    "name" : "Stun Discharge",
+    "scripts" : ["/items/active/weapons/melee/abilities/baton/thea-batonshockarea/thea-batonshockarea.lua"],
+	"class" : "TheaBatonShockArea",
+
+    "energyUsage" : 100.0,
+    "rechargeTime" : 4.5,
+
+    "chargeTime" : 1.25,
+    "minChargeTime" : 1.0,
+	
+	"dischargeEnergyCost" : 500,
+	
+	"useDynamicOffset" : false,
+	
+	"impactLine" : [ [1.25, -1.5], [1.25, -5.5] ],
+    "impactWeaponOffset" : 0.0,
+	
+	"projectileOffset" : [0, 2.0],
+
+    "projectileType" : "electricstunexplosionspawner",
+    "projectileParameters" : {
+      "power" : 0.0,
+      "knockbackMode" : "facing"
+    },
+
+    "stances" : {
+      "windup" : {
+        "armRotation" : 0,
+        "endArmRotation" : 110,
+        "weaponRotation" : 180,
+        "endWeaponRotation" : 130,
+        "weaponOffset" : [0.0, 2.0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0.5,
+        "armRotation" : 0,
+        "weaponRotation" : -180,
+		"weaponOffset" : [0.0, 2.0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

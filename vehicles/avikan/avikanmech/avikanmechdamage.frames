@@ -1,0 +1,13 @@
+{
+  "frameGrid" : {
+    "size" : [64, 84],
+    "dimensions" : [2, 4],
+
+    "names" : [
+      [ null, "undamaged" ],
+	  [ null, "scratched" ],
+	  [ null, "dented" ],
+	  [ null, "wrecked" ]
+    ]
+  }
+}

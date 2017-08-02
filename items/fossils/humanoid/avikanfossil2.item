@@ -1,0 +1,21 @@
+{
+  "itemName" : "avikanfossil2",
+  "rarity" : "Uncommon",
+  "itemTags" : ["fossil"],
+
+  "description" : "A fossilised Avikan torso.",
+  "category" : "mediumFossil",
+
+  "shortdescription" : "Avikan Torso",
+  "race" : "avikan",
+  "price" : 0,
+
+  "inventoryIcon" : "avikanfossil2icon.png",
+
+  "displayImage" : "/objects/fossils/humanoidfossils/fossilavikan/avikantorsodisplay.png",
+  "displayoffset" :[0, 0],
+
+  "fossilSetName" : "avikanSkeleton",
+  "setIndex" : 2,
+  "setCount" : 3
+}

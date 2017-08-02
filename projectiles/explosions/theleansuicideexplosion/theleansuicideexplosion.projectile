@@ -1,0 +1,17 @@
+{
+  "projectileName" : "theleansuicideexplosion",
+  "image" : "theleansuicideexplosion.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 6,
+  "speed" : 0,
+  "lightColor" : [255, 220, 90],
+  "pointLight" : true,
+  "damagePoly" : [ [-55, 0], [-42, -42], [0, -55], [42, -42], [55, 0], [42, 42], [0, 55], [-42, 42] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "damageKind" : "fire",
+  "damageTeam" : { "type" : "indiscriminate" },
+  "knockback" : 30
+}

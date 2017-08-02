@@ -1,0 +1,10 @@
+{
+  "frameGrid" : {
+    "size" : [77, 35],
+    "dimensions" : [5, 1],
+
+     "names" : [
+    			  [ "burn.1", "burn.2", "burn.3", "burn.4", "burn.5"]
+    ]
+  }
+}

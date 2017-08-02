@@ -1,0 +1,28 @@
+{
+  "materialId" : 30004,
+  "materialName" : "avikanplating",
+  "particleColor" : [215, 184, 137, 255],
+  "itemDrop" : "avikanplating", 
+  "shortdescription" : "Avikan Plating",
+  
+  "description" : "Strong metal plating, for when you need to protect something very badly.",
+  "glitchDescription" : "Observation. Thick and heavy plating. Very reliable protection.",
+  "floranDescription" : "Big platesss for making placess sssafe...",
+  "novakidDescription" : "Metal plating fit for makin' a big safe.",
+  
+  "drodenDescription" : "Analysis complete. Heat-resistant metal plating.",
+
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "health" : 10,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "avikanplating.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 250
+  }
+}

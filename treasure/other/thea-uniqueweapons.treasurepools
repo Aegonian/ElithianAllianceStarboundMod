@@ -1,0 +1,64 @@
+{
+	//AVIKAN WEAPONS
+  "uniqueweaponsAvikan" : [
+    [1, {
+      "poolRounds" : 1,
+      "pool" : [
+        {"weight" : 1.0, "item" : "avikan-errasslayerslance"},
+		{"weight" : 1.0, "item" : "avikan-primeinitiative"},
+		{"weight" : 1.0, "item" : "avikan-sandcannon"},
+		{"weight" : 1.0, "item" : "avikan-sandstalkersbane"},
+		{"weight" : 1.0, "item" : "avikan-airstrike"},
+		{"weight" : 1.0, "item" : "avikan-terveleadersbow"},
+		{"weight" : 1.0, "item" : "avikan-architect"},
+		{"weight" : 1.0, "item" : "avikan-guardbreakersbow"},
+		{"weight" : 1.0, "item" : "avikan-rhakorilongbow"},
+		{"weight" : 1.0, "item" : "avikan-vhalakinbow"},
+		{"weight" : 1.0, "item" : "avikan-linebreaker"},
+		{"weight" : 1.0, "item" : "avikan-oathbreaker"},
+		{"weight" : 1.0, "item" : "avikan-vhalakinlongbow"},
+		{"weight" : 1.0, "item" : "avikanteslaspear"}
+      ]
+    }]
+  ],
+  
+	//CENTENSIAN WEAPONS
+  "uniqueweaponsCentens" : [
+    [1, {
+      "poolRounds" : 1,
+      "pool" : [
+        {"weight" : 1.0, "item" : "avikan-handofrhadeis"},
+		{"weight" : 1.0, "item" : "centens-deathseeker"},
+		{"weight" : 1.0, "item" : "centens-voideater"},
+		{"weight" : 1.0, "item" : "centens-voiceofrhadeis"},
+		{"weight" : 1.0, "item" : "centens-eventhorizon"},
+		{"weight" : 1.0, "item" : "centens-wrathofrhadeis"}
+      ]
+    }]
+  ],
+  
+	//TRINKIAN WEAPONS
+  "uniqueweaponsTrink" : [
+    [1, {
+      "poolRounds" : 1,
+      "pool" : [
+        {"weight" : 1.0, "item" : "trink-shockbolter"},
+		{"weight" : 1.0, "item" : "trink-frostlaser"},
+		{"weight" : 1.0, "item" : "trink-energizer"},
+		{"weight" : 1.0, "item" : "trink-arclighter"}
+      ]
+    }]
+  ],
+  
+	//ALLIANCE WEAPONS
+  "uniqueweaponsAlliance" : [
+    [1, {
+      "poolRounds" : 1,
+      "pool" : [
+        {"weight" : 1.0, "item" : "thea-sidewinder"},
+		{"weight" : 1.0, "item" : "thea-skylighter"}
+      ]
+    }]
+  ]
+}
+

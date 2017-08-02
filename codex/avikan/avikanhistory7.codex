@@ -1,0 +1,20 @@
+{
+  "id" : "avikanhistory7",
+  "species" : "avikan",
+  "title" : "Avikan History - Part 7",
+  "description" : "An account of Avikan history, by Izyati as-Kaladan.",
+  "icon" : "avikanhistory7.png",
+  "contentPages" : [
+
+    "After the Exodus from Kadavan, we tried to find a new world to settle on. But every time we found a suitable planet, the Theleans would arrive and attack the fleet. We are always hunted by the Errasmeyr, the Thelean hunters, and so destined to live as nomads amongst the stars.",
+
+    "We are not certain of the fate of those we left behind. From time to time, we receive faint signals from Kadavan, leading us to believe that the resistance is still alive, but we cannot be certain. Now, in the year 82 AF, we have arrived in a completely new sector of the galaxy, and are meeting new alien races at an alarming rate.",
+    
+    "We leave behind small colonies on the planets where we resupply, before we move along again to stay ahead of the Errasmeyr. If we will ever find a new home, or return to Kadavan as so many hope we will, is something I can't know for certain. But I do know that we will continue to fight for our survival, and that the relics of our Uplifters will forever stay with us."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

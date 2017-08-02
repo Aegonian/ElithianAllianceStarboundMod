@@ -1,0 +1,44 @@
+{
+  "objectName" : "avikanstoreshelf",
+  "colonyTags" : ["avikan", "commerce"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 125,
+  "description" : "A shelf full of Avikan goods.",
+  "shortdescription" : "Avikan Store Shelf",
+  "race" : "avikan",
+
+  "apexDescription" : "A varied assortments of goods.",
+  "avianDescription" : "There's food here, but also trinkets and materials.",
+  "floranDescription" : "Ssshelf full of goodiess.",
+  "glitchDescription" : "Statement. This shelf is filled with various goods.",
+  "humanDescription" : "This shelf has an odd combination of goods on it.",
+  "hylotlDescription" : "I wonder what that food will taste like.",
+  "novakidDescription" : "A bunch of random goods, it seems to me.",
+
+  "aegiDescription" : "A shelf full of comon Avikan goods.",
+  "avikanDescription" : "This shelf has all I need to prepare a good meal.",
+  "erixianDescription" : "A shelf full of goods, both edible and decorative.",
+  "trinkDescription" : "This shelf is decently organized, but I could do better.",
+  "hymidDescription" : "All sorts of goods.",
+  "notixDescription" : "A seeminly random collection of goods. Is this all for sale?",
+  "jorgasianDescription" : "An odd collection of goods and supplies.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected store shelf. Scanning for nearby merchants.",
+
+  "inventoryIcon" : "avikanstoreshelficon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanstoreshelf.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.4,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

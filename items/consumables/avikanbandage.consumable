@@ -1,0 +1,22 @@
+{
+  "itemName" : "avikanbandage",
+  "rarity" : "Common",
+  "price" : 25,
+  "category" : "medicine",
+  "inventoryIcon" : "avikanbandage.png",
+  "description" : "A leather bandage for healing minor wounds. Restores 50 health over 1 second.",
+  "shortdescription" : "Leather Bandage",
+  "effects" : [ [
+      {
+        "effect" : "bandageheal"
+      }
+    ] ],
+  "emote" : "",
+  "emitters" : [ "bandageuse" ],
+  "blockingEffects" : [
+    "salveheal",
+    "bandageheal",
+    "medkitheal",
+    "nanowrapheal"
+  ]
+}

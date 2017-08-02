@@ -1,0 +1,64 @@
+{
+  "type" : "ao-drodenworker",
+  "baseType" : "ao-civilian",
+
+  "scriptConfig" : {
+  
+    "behaviorConfig" : {
+      "alwaysRun" : false,
+      "wanderWaitTime" : [2.0, 6.0],
+      "wanderTime" : [0.5, 1.5],
+      "wanderDistance" : 10
+    },
+	
+	"dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "I am a bug! Please report me."
+		  ]
+		},
+
+        "droden" : {
+          "default" : [
+            "Unknown species detected. Ending conversation.",
+			"Detected unknown species. Aborting conversation.",
+			"Error. Species unknow. Aborting conversation."
+          ],
+          "avikan" : [
+            "Welcome to the Starfarer's Refuge, Captain. I am at your service.",
+			"This unit is at your service, Captain.",
+			"For inquiries about job offers, please contact the Council of Elders Representative.",
+			"Beginning conversation. Welcome, Captain.",
+			"Error. Conversation protocol not found. Resuming work."
+          ],
+          "droden" : [
+            "This unit does not comprehend freedom. Resuming duties.",
+			"Detected Droden unit. Detected civilian status. Error.",
+			"Detected Droden unit. Welcome.",
+			"Please do not interrupt. This unit is busy.",
+			"Error. Conversation protocol not found. Resuming work."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "thea-hiddenchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "thea-hiddenlegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "itemName" : "centens-xanafianshard",
+  "price" : 1440,
+  "maxStack" : 1,
+  "level" : 6,
+  "rarity" : "Essential",
+  "description" : "^orange;A small artefact containing a shard of the Xanafir.^white;",
+  "shortdescription" : "^orange;Xanafian Shard^white;",
+  "tooltipKind" : "thea-tool-unique",
+  "category" : "Artefact",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","staff"],
+
+  "inventoryIcon" : "centens-xanafianshard.png",
+  "largeImage" : "centens-xanafianshardlarge.png",
+
+  "elementalType" : "xanafian",
+
+  "animation" : "centens-xanafianshard.animation",
+  "animationParts" : {
+    "staff" : "centens-xanafianshard.png",
+    "stone" : "centens-xanafianshardlights.png",
+    "chargeEffect" : "glow.png"
+  },
+  "animationCustom" : { },
+
+  "scripts" : ["/items/active/weapons/staff/staff.lua"],
+
+  "stances" : {
+    "idle" : {
+      "armRotation" : -90,
+      "weaponRotation" : 0,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "charge" : {
+      "duration" : 1.1,
+      "armRotation" : 20,
+      "weaponRotation" : -20,
+      "twoHanded" : true,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "charged" : {
+      "armRotation" : 60,
+      "weaponRotation" : 0,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "discharge" : {
+      "duration" : 0.5,
+      "armRotation" : 85,
+      "weaponRotation" : 0,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "cooldown" : {
+      "duration" : 0.5,
+      "armRotation" : -45,
+      "weaponRotation" : 0,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : true
+    }
+  },
+
+  "primaryAbility" : {
+	"scripts" : ["/items/active/weapons/staff/abilities/controlprojectile/controlprojectile.lua"],
+    "class" : "ControlProjectile",
+
+    "energyCost" : 50,
+
+    "maxCastRange" : 35,
+
+    "projectileCount" : 5,
+    "projectileDistance" : 2.0,
+    "projectileType" : "xanafianswarmer",
+    "projectileParameters" : {
+      "baseDamage" : 12
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

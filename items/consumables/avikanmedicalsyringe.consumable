@@ -1,0 +1,22 @@
+{
+  "itemName" : "avikanmedicalsyringe",
+  "rarity" : "Uncommon",
+  "price" : 150,
+  "category" : "medicine",
+  "inventoryIcon" : "avikanmedicalsyringe.png",
+  "description" : "A strong painkiller and healing catalyst. Restores 100 health over 1 second.",
+  "shortdescription" : "Bolbohn Extract",
+  "effects" : [ [
+      {
+        "effect" : "nanowrapheal"
+      }
+    ] ],
+  "emote" : "",
+  "emitters" : [ "stimuse" ],
+  "blockingEffects" : [
+    "salveheal",
+    "bandageheal",
+    "medkitheal",
+    "nanowrapheal"
+  ]
+}

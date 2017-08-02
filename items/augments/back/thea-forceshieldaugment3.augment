@@ -1,0 +1,22 @@
+{
+  "itemName" : "thea-forceshieldaugment3",
+  "price" : 15000,
+  "rarity" : "Legendary",
+  "tooltipKind" : "eppaugment",
+  "category" : "eppAugment",
+  "inventoryIcon" : "thea-forceshieldaugment.png",
+  "description" : "Provides a quickly recharging shield that pushes away enemies and projectiles when broken.",
+  "shortdescription" : "Force Shield Augment III",
+
+  "augment" : {
+    "type" : "back",
+    "name" : "thea-forceshieldaugment3",
+    "displayName" : "Force Shield III",
+    "displayIcon" : "/items/augments/back/thea-forceshieldaugment.png",
+    "effects" : [ "thea-forceshield3" ]
+  },
+
+  "radioMessagesOnPickup" : [ "pickupaugment" ],
+
+  "scripts" : [ "/scripts/augments/augment.lua" ]
+}

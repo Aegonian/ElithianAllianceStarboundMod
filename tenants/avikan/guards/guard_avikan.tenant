@@ -1,0 +1,26 @@
+{
+  "name": "guard_avikan",
+  "priority": 6,
+
+  "colonyTagCriteria": {
+    "light": 1,
+    "door": 1,
+    "avikan": 8,
+    "combat": 8
+  },
+
+  "tenants": [
+    {
+      "spawn": "npc",
+      "species": "avikan",
+      "level": 1,
+      "type": "tenantavikanguardtier1",
+      "overrides": {}
+     }
+   ],
+
+  "rent": {
+    "periodRange": [900.0, 1800.0],
+    "pool": "avikanGuardGift"
+  }
+}

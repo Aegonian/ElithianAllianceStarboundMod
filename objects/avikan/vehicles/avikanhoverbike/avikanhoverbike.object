@@ -1,0 +1,45 @@
+{
+  "objectName" : "avikanhoverbikeobject",
+  "colonyTags" : ["avikan", "keff"],
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 250,
+  "description" : "A vehicle built for crossing the desert at high speed.",
+  "shortdescription" : "Avikan Keff",
+  "race" : "avikan",
+  
+  "apexDescription" : "A reliable hoverbike. I believe its makers call it a keff.",
+  "avianDescription" : "Driving such hoverbikes makes me feel like I am flying.",
+  "floranDescription" : "Big metal fly thingss. Fassst.",
+  "glitchDescription" : "Amazement. This hoverbike features incredibly advanced technologies.",
+  "humanDescription" : "A hoverbike. This is so cool!",
+  "hylotlDescription" : "A hoverbike built for use in the desert. Not for underwater use.",
+
+  "aegiDescription" : "The Avikan build some of the most reliable vehicles there are.",
+  "avikanDescription" : "A reliable keff. Like us, it can withstand extreme conditions.",
+  "erixianDescription" : "This hoverbike is incredibly reliable. It can function even inside a sandstorm.",
+  "trinkDescription" : "A hoverbike of Avikan design, it is incredibly reliable.",
+  "hymidDescription" : "A hoverbike, built by the Avikan. It looks uncomfortable.",
+  "notixDescription" : "This hoverbike can withstand even the harshest of environments.",
+  "jorgasianDescription" : "A hoverbike. It looks fast.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Keff detected. Owner: unknown.",
+
+  "inventoryIcon" : "avikanhoverbikeicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanhoverbike.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "materialId" : 30029,
+  "materialName" : "avikangroundpanel",
+  "particleColor" : [215, 184, 137, 255],
+  "itemDrop" : "avikangroundpanel", 
+  "shortdescription" : "Avikan Floor",
+  
+  "description" : "A metal floor panel. Won't stain easily.",
+  "glitchDescription" : "Pleased. This metal floor panel is easy to clean.",
+  "floranDescription" : "If Floran polisssh metal floors, Floran can see sself in floor!",
+  "novakidDescription" : "Polish this floor just a lil' bit more, and you can see yourself in it.",
+  
+  "drodenDescription" : "Analysis complete. Floor panel.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "avikangroundpanel.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 160
+  }
+}

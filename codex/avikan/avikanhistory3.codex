@@ -1,0 +1,20 @@
+{
+  "id" : "avikanhistory3",
+  "species" : "avikan",
+  "title" : "Avikan History - Part 3",
+  "description" : "An account of Avikan history, by Izyati as-Kaladan.",
+  "icon" : "avikanhistory3.png",
+  "contentPages" : [
+
+    "In the years following the exodus, the Khoden settled in many mountain ranges and built great cities, known as Terves, in the stone. Each group of Khoden formed a nation of its own, and at times the Khoden would war amongst each other. The people were divided, and there was little cooperation between nations. That was until 1372 BF, when the great Ilyalat ande Vhelin rose to power in the Terve of Vhelin.",
+
+    "Ilyalat ande Vhelin, as head of the largest and most powerful Terve, managed to unite all of the Khoden under a single banner. Later, he even brought peace between the Khoden and the Nomen, bringing the entirety of the Avikan people back together.",
+    
+    "While the Nomen never joined the Khoden, cooperation between the groups became a given. The Khoden would provide the Nomen with technologies to help them thrive in the open desert, while the Nomen brought back rare resources from the deep desert in exchange. An era of peace and prosperity had arrived for the Avikan people."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

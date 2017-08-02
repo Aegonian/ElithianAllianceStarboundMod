@@ -1,0 +1,12 @@
+{
+  "projectileName" : "theleansuicideexplosionspawner",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/theleansuicideexplosion/theleansuicideexplosion.config"
+    }
+  ],
+  "damageKind" : "default",
+  "timeToLive" : 0
+}

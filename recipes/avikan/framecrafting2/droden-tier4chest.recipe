@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "durasteelore", "count" : 10 },
+    { "item" : "avikancircuitry", "count" : 1 }
+  ],
+  "duration" : 5,
+  "output" : { "item" : "droden-tier4chest", "count" : 1 },
+  "groups" : [ "drodenframecrafting2", "armours", "all" ]
+}

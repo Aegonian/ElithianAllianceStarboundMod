@@ -1,0 +1,50 @@
+{
+  "objectName" : "avikantacticaltable",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 100,
+  "description" : "A tactical holographic display.",
+  "shortdescription" : "Avikan Tactical Table",
+  "race" : "avikan",
+  "lightColor" : [50, 32, 0],
+
+  "floranDescription" : "Floran cannot ssstab light cubess. Floran iss frussstrated.",
+  "glitchDescription" : "Curious. What does this holographic table display?",
+  "novakidDescription" : "Some sorta tiny city made of light.",
+
+  "avikanDescription" : "A holographic table used to plan mission strategies.",
+  "drodenDescription" : "Holographic display table detected.",
+
+  "inventoryIcon" : "avikantacticaltableicon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "avikantacticaltable.png:<color>.<frame>", "fullbright" : true }, { "image" : "avikantacticaltablelit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [0, 0],
+      "frames" : 10,
+      "animationCycle" : 1.0,
+      "lightPosition" : [4, 2],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "flipImages" : true,
+      "direction" : "left"
+
+    },
+    {
+	  "imageLayers" : [ { "image" : "avikantacticaltable.png:<color>.<frame>", "fullbright" : true }, { "image" : "avikantacticaltablelit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [0, 0],
+      "frames" : 10,
+      "animationCycle" : 1.0,
+      "lightPosition" : [4, 2],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "right"
+
+    }
+  ]
+}

@@ -1,0 +1,266 @@
+[
+  //Additions to default drop pools
+  //Ground Monsters
+  {"op" : "add",
+	"path" : "/basicMonsterTreasure/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.20, "item" : "monsterbone"}
+  },
+  {"op" : "add",
+	"path" : "/basicMonsterTreasure/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.05, "item" : "monsterhide"}
+  },
+  {"op" : "add",
+	"path" : "/basicMonsterTreasure/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.001, "item" : "greatmonsterbone"}
+  },
+  //Flying Monsters
+  {"op" : "add",
+	"path" : "/flyingMonsterTreasure/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.20, "item" : "monsterbone"}
+  },
+  {"op" : "add",
+	"path" : "/flyingMonsterTreasure/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.05, "item" : "monsterhide"}
+  },
+  {"op" : "add",
+	"path" : "/flyingMonsterTreasure/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.001, "item" : "greatmonsterbone"}
+  },
+  
+  //Unique Monster Drops
+  {"op" : "add",
+   "path" : "/sandcrawlerTreasure",
+   "value" : [
+	[1, {
+      "pool" : [
+	    {"weight" : 0.799, "pool" : "basicMonsterTreasure"},
+		{"weight" : 0.2, "item" : "sandcrawlertooth"},
+        {"weight" : 0.001, "item" : "largesandcrawleraf"}
+      ]
+    }]
+   ]		
+  },
+  
+  {"op" : "add",
+   "path" : "/sandspitterTreasure",
+   "value" : [
+	[1, {
+      "pool" : [
+	    {"weight" : 0.599, "pool" : "basicMonsterTreasure"},
+		{"weight" : 0.4, "item" : "sandspittersack"},
+        {"weight" : 0.001, "item" : "giantsandspitteraf"}
+      ]
+    }]
+   ]		
+  },
+  
+  {"op" : "add",
+   "path" : "/kadavangadhurTreasure",
+   "value" : [
+	[1, {
+      "pool" : [
+	    {"weight" : 0.6, "pool" : "basicMonsterTreasure"},
+		{"weight" : 0.4, "item" : "monsterhide"}
+      ]
+    }]
+   ]		
+  },
+  
+  {"op" : "add",
+   "path" : "/kadavanvalahrTreasure",
+   "value" : [
+	[1, {
+      "pool" : [
+	    {"weight" : 0.799, "pool" : "basicMonsterTreasure"},
+		{"weight" : 0.2, "item" : "valahrgland"},
+        {"weight" : 0.001, "item" : "kadavanvalahraf"}
+      ]
+    }]
+   ]		
+  },
+  
+  {"op" : "add",
+   "path" : "/kadavanswarmTreasure",
+   "value" : [
+	[1, {
+      "pool" : [
+        {"weight" : 0.849, "pool" : "money"},
+		{"weight" : 0.150, "item" : "stingwingqueen"},
+        {"weight" : 0.001, "item" : "kadavanswarmaf"}
+      ]
+    }]
+   ]	
+  },
+  
+  {"op" : "add",
+   "path" : "/avikandroneTreasure",
+   "value" : [
+	[1, {
+      "pool" : [
+        {"weight" : 0.699, "pool" : "money"},
+		{"weight" : 0.075, "item" : "avikanbattery"},
+		{"weight" : 0.075, "item" : "avikancircuitry"},
+		{"weight" : 0.1, "item" : "avikanmetal"},
+		{"weight" : 0.05, "item" : "avikancapacitor"},
+        {"weight" : 0.001, "item" : "avikandroneaf"}
+      ]
+    }]
+   ]
+  },
+  
+  {"op" : "add",
+   "path" : "/avikanviolateddroneTreasure",
+   "value" : [
+	[1, {
+      "pool" : [
+        {"weight" : 0.699, "pool" : "money"},
+		{"weight" : 0.075, "item" : "theleanmetal"},
+		{"weight" : 0.075, "item" : "theleantissue"},
+		{"weight" : 0.025, "item" : "avikanbattery"},
+		{"weight" : 0.025, "item" : "avikancircuitry"},
+		{"weight" : 0.05, "item" : "avikanmetal"},
+		{"weight" : 0.05, "item" : "avikancapacitor"},
+        {"weight" : 0.001, "item" : "avikanviolateddroneaf"}
+      ]
+    }]
+   ]
+  },
+  
+  {"op" : "add",
+   "path" : "/avikanlargedroneTreasureGuaranteed",
+   "value" : [
+	[1, {
+      "fill" : [
+        {"item" : "avikandronemissilepod"},
+		{"pool" : "avikanlargedroneTreasure"}
+      ]
+    }]
+   ]
+  },
+  
+  {"op" : "add",
+   "path" : "/avikanlargedroneTreasure",
+   "value" : [
+	[1, {
+      "pool" : [
+        {"weight" : 0.697, "pool" : "money"},
+		{"weight" : 0.075, "item" : "avikanbattery"},
+		{"weight" : 0.075, "item" : "avikancircuitry"},
+		{"weight" : 0.1, "item" : "avikanmetal"},
+		{"weight" : 0.05, "item" : "avikancapacitor"},
+        {"weight" : 0.003, "item" : "avikanlargedroneaf"}
+      ]
+    }]
+   ]
+  },
+  
+  {"op" : "add",
+   "path" : "/avikanlargeviolateddroneTreasureGuaranteed",
+   "value" : [
+	[1, {
+      "fill" : [
+        {"item" : "violatedioncore"},
+		{"pool" : "avikanlargeviolateddroneTreasure"}
+      ]
+    }]
+   ]	
+  },
+  
+  {"op" : "add",
+   "path" : "/avikanlargeviolateddroneTreasure",
+   "value" : [
+	[1, {
+      "pool" : [
+        {"weight" : 0.699, "pool" : "money"},
+		{"weight" : 0.075, "item" : "theleanmetal"},
+		{"weight" : 0.075, "item" : "theleantissue"},
+		{"weight" : 0.025, "item" : "avikanbattery"},
+		{"weight" : 0.025, "item" : "avikancircuitry"},
+		{"weight" : 0.05, "item" : "avikanmetal"},
+		{"weight" : 0.05, "item" : "avikancapacitor"},
+        {"weight" : 0.001, "item" : "avikanlargeviolateddroneaf"}
+      ]
+    }]
+   ]	
+  },
+  
+  {"op" : "add",
+   "path" : "/avikanminidroneTreasure",
+   "value" : [
+	[1, {
+      "pool" : [
+        {"weight" : 1, "item" : "avikanminidroneaf"}
+      ],
+      "poolRounds" : [
+        [0.999, 0],
+        [0.001, 1]
+      ],
+      "allowDuplication" : false
+    }]
+   ]	
+  },
+  
+  {"op" : "add",
+   "path" : "/trinkdroneTreasure",
+   "value" : [
+	[1, {
+      "pool" : [
+        {"weight" : 0.699, "pool" : "money"},
+		{"weight" : 0.15, "item" : "trinkmetal"},
+		{"weight" : 0.15, "item" : "trinklaserdiode"},
+        {"weight" : 0.001, "item" : "trinkdroneaf"}
+      ]
+    }]
+   ]	
+  },
+  
+  {"op" : "add",
+   "path" : "/trinkminidroneTreasure",
+   "value" : [
+	[1, {
+      "pool" : [
+        {"weight" : 1, "item" : "trinkminidroneaf"}
+      ],
+      "poolRounds" : [
+        [0.999, 0],
+        [0.001, 1]
+      ],
+      "allowDuplication" : false
+    }]
+   ]	
+  },
+  
+  {"op" : "add",
+   "path" : "/ghavorkanTreasure",
+   "value" : [
+	[1, {
+      "pool" : [
+        {"weight" : 0.679, "pool" : "money"},
+		{"weight" : 0.20, "item" : "theleantissue"},
+		{"weight" : 0.10, "item" : "theleanmetal"},
+		{"weight" : 0.02, "item" : "ghavorkanpowercell"},
+        {"weight" : 0.001, "item" : "ghavorkanaf"}
+      ]
+    }]
+   ]
+  },
+  
+  {"op" : "add",
+   "path" : "/kelbetTreasure",
+   "value" : [
+	[1, {
+      "pool" : [
+        {"weight" : 0.7, "pool" : "money"},
+		{"weight" : 0.10, "item" : "monsterbone"},
+		{"weight" : 0.20, "item" : "kelbethide"}
+      ]
+    }]
+   ]
+  }
+]

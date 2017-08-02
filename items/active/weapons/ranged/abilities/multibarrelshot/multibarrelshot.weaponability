@@ -1,0 +1,54 @@
+{
+  "ability" : {
+    "type" : "multibarrelshot",
+    "class" : "MultiBarrelShot",
+    "name" : "Multibarrel Fire",
+    "scripts" : ["/items/active/weapons/ranged/abilities/multibarrelshot/multibarrelshot.lua"],
+
+	
+	//All these things can be modified within the weapon's unique .activeitem config
+    "fireTime" : 0.5,
+    "baseDps" : 8,
+    "energyUsage" : 25,
+    "inaccuracy" : 0.005,
+	
+	"primaryFiringOffset" : [0.0, 0.1],
+	"secondaryFiringOffset" : [0.0, -0.1],
+
+    "burstTime" : 0.1,
+    "burstCount" : 2,
+    "fireType" : burst",
+
+    "projectileType" : "avikanbullet",
+    "projectileParameters" : {},
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.11,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "objectName" : "avikancookingstove",
+  "colonyTags" : ["avikan", "cooking"],
+  "printable" : false,
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "crafting",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/craftingcampfire.config",
+	"paneLayoutOverride" : {
+	  "windowtitle" : {
+		"title" : " Avikan Stove",
+		"subtitle" : " ^#b9b5b2;Basic cooking"
+	  }
+	},
+    "filter" : [ "campfire" ]
+  },
+  "description" : "A stove for preparing food.",
+  "shortdescription" : "^orange;Avikan Stove^white;",
+  "race" : "avikan",
+
+  "apexDescription" : "A multifunctional stove, for cooking and baking.",
+  "avianDescription" : "I could bake some bread in here.",
+  "floranDescription" : "Floran once climbed insside stove. Wasss not pleassant...",
+  "glitchDescription" : "Apreciative. This multifunctional stove allows me to prepare a variety of foods.",
+  "humanDescription" : "It looks like a stove, but I don't understand the controls at all...",
+  "hylotlDescription" : "A multifunctional stove.",
+  "novakidDescription" : "Let's do some bakin'!",
+
+  "aegiDescription" : "An Avikan multifunctional stove, used to prepare various types of food.",
+  "avikanDescription" : "I can prepare many types of food here.",
+  "erixianDescription" : "This multifunctional stove allows me to prepare various foods.",
+  "trinkDescription" : "A somewhat inefficient stove.",
+  "hymidDescription" : "Let's prepare some food!",
+  "notixDescription" : "I could prepare various meals here.",
+  "jorgasianDescription" : "A multifunctional stove.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected stove. Organic food can be used as unit fuel.",
+  
+  "inventoryIcon" : "avikancookingstoveicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikancookingstove.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "npcToy" : {}
+}

@@ -1,0 +1,126 @@
+{
+  "objectName" : "avikanlowteleporter",
+  "colonyTags" : ["avikan"],
+  "objectType" : "teleporter",
+  "rarity" : "Legendary",
+  "description" : "A personal teleporter, connects to bookmarked locations. \n^red;Destroyed when broken.",
+  "shortdescription" : "Small Avikan Teleporter",
+  "price" : 3000,
+  "printable" : false,
+
+  "apexDescription" : "A teleporter built in an alien style.",
+  "avianDescription" : "A teleporter built in an alien style.",
+  "floranDescription" : "Alien teleporter makesss Floran sssick...",
+  "glitchDescription" : "Observation: This teleporter was built in an alien style.",
+  "humanDescription" : "A teleporter built in an alien style.",
+  "hylotlDescription" : "A teleporter built in an alien style.",
+  "novakidDescription" : "A teleporter built in an alien style.",
+  
+  "aegiDescription" : "An Avikan teleporter. It emits particles reminiscent of those found in Centensian devices.",
+  "avikanDescription" : "A teleporter. These were rarily used back on Kadavan, but those times are long past...",
+  "erixianDescription" : "An Avikan teleporter. Something about it feels odd...",
+  "trinkDescription" : "This teleporter uses technologies invented by the Centens.",
+  "hymidDescription" : "An Avikan teleporter. I believe it uses repurposed Centensian technology.",
+  "notixDescription" : "An Avikan teleporter. Might this link to their famous Nomada?",
+  "jorgasianDescription" : "An Avikan teleporter.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Detected Avikan teleportation device. Chance of successful teleportation: 99 percent.",
+
+  "category" : "teleporter",
+  "lightColor" : [99, 132, 153],
+  "lightPosition" : [0, 5],
+
+  "particleEmitters" : [
+  {
+    "emissionRate" : 5.0,
+    "emissionVariance" : 0.5,
+    "particle" : {
+      "type" : "animated",
+      "animation" : "/animations/theateleporter/theateleporter.animation",
+      "position" : [-0.5, 0.5],
+      "size" : 1.0,
+      "color" : [255, 255, 255, 255],
+      "fade" : 0.5,
+      "initialVelocity" : [0.0, 4.0],
+      "finalVelocity" : [0.0, 2.0],
+      "approach" : [0, 20],
+      "timeToLive" : 2.0,
+      "layer" : "middle"
+    },
+
+    "particleVariance" : {
+      "initialVelocity" : [0.0, 2.0]
+    }       
+  },
+  {
+    "emissionRate" : 8.0,
+    "emissionVariance" : 0.5,
+    "particle" : {
+      "type" : "animated",
+      "animation" : "/animations/theateleporter2/theateleporter2.animation",
+      "position" : [-0.5, 0.5],
+      "size" : 1.0,
+      "color" : [255, 255, 255, 255],
+      "fade" : 0.5,
+      "initialVelocity" : [0.0, 0.0],
+      "finalVelocity" : [0.0, 8.0],
+      "approach" : [0, 20],
+      "timeToLive" : 2.5,
+	  "destructionAction" : "shrink",
+      "layer" : "middle"
+    },
+
+    "particleVariance" : {
+      "initialVelocity" : [0.0, 2.0],
+      "position" : [1.5, 0]
+    }       
+  }
+  ],
+
+  "interactAction" : "OpenTeleportDialog",
+  "interactData" : "/interface/warping/remoteteleporter.config",
+
+  "inventoryIcon" : "avikanlowteleportericon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "avikanlowteleporter.png:<color>", "fullbright" : true }, { "image" : "avikanlowteleporterlit.png:<color>" } ],
+
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "solid",
+      "collisionSpaces" : [ [-2, 0], [-1, 0], [0, 0], [1, 0] ]
+    }
+  ],
+
+  "health" : 20,
+
+  "breakDropPool" : "remoteteleporter",
+  
+  "teleporterFootPosition" : [0, 1],
+
+  "scripts" : [ "/scripts/npcToyObject.lua"],
+  "npcToy" : {
+    "influence" : [
+      "teleporter",
+      "teleporterComplete"
+    ],
+    "defaultReactions" : {
+      "teleporter" : [
+        [1.0, "beamaway"]
+      ],
+      "teleporterComplete" : [
+        [1.0, "vomit"],
+        [1.0, "smile"]
+      ]
+    },
+    "preciseStandPositionLeft" : [0, 0.0],
+    "preciseStandPositionRight" : [0, 0.0],
+    "maxNpcs" : 1
+  }
+}

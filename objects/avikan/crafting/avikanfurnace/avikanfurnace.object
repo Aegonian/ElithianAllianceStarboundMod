@@ -1,0 +1,205 @@
+{
+  "objectName" : "avikanfurnace",
+  "colonyTags" : ["crafting"],
+  "rarity" : "Uncommon",
+  "race" : "avikan",
+  "category" : "crafting",
+
+  //this is handled by the lua
+  "breakDropOptions" : [],
+
+  "price" : 50,
+  "printable" : false,
+
+  "scripts" : [ "/scripts/npcToyObject.lua",
+                "/objects/crafting/upgradeablecraftingobjects/upgradeablecraftingobject.lua"
+              ],
+
+  "animation" : "avikanfurnace.animation",
+  "animationPosition" : [4, 12],
+
+  "inventoryIcon" : "avikanfurnaceicon.png",
+  "placementImage" : "avikanfurnace.png:default.default",
+  "placementImagePosition" : [-8, 0],    
+
+  "description" : "The furnace's high temperature allows you to craft metal bars and other items.",
+  "shortdescription" : "^orange;Avikan Stone Furnace^white;",
+
+  "apexDescription" : "A primitive furnace. I can smelt things here.",
+  "avianDescription" : "A basic furnace perfect for smelting ore.",
+  "floranDescription" : "Furnace flamess hissss, burn. Floran brave it.",
+  "glitchDescription" : "Impressed. This furnace is the perfect temperature for smelting basic ores",
+  "humanDescription" : "A smelting furnace. Looks hot.",
+  "hylotlDescription" : "A hot, imposing furnace.",
+  "novakidDescription" : "Basic lookin' furnace, for smeltin' ore.",
+  
+  "aegiDescription" : "This furnace is not very safe.",
+  "avikanDescription" : "A simple furnace. One of the few stone structures my people use.",
+  "erixianDescription" : "A furnace radiating a comfortable heat.",
+  "trinkDescription" : "An inefficient and unsafe way to smelt ores into metal bars.",
+  "hymidDescription" : "The heat radiating from this furnace is too much for me.",
+  "notixDescription" : "A hot and bright furnace. The open design is hardly safe to use.",
+  "jorgasianDescription" : "It's better than nothing, but this furnace is hardly safe to use.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Analysis complete. Stone furnace. Basic ore smelting functionality.",
+
+  "learnBlueprintsOnPickup" : [],
+
+  "startingUpgradeStage" : 1,
+  "maxUpgradeStage" : 2,
+
+  "upgradeStages" : [
+    {
+      "animationState" : "avikanfurnace",
+
+      "itemSpawnParameters" : {
+        "inventoryIcon" : "avikanfurnaceicon.png",
+        "placementImage" : "avikanfurnace.png:default.default",
+        "placementImagePosition" : [-8, 0],    
+
+        "description" : "The furnace's high temperature allows you to craft metal bars and other items.",
+        "shortdescription" : "^orange;Avikan Stone Furnace^white;",
+
+		"apexDescription" : "A primitive furnace. I can smelt things here.",
+		"avianDescription" : "A basic furnace perfect for smelting ore.",
+		"floranDescription" : "Furnace flamess hissss, burn. Floran brave it.",
+		"glitchDescription" : "Impressed. This furnace is the perfect temperature for smelting basic ores",
+		"humanDescription" : "A smelting furnace. Looks hot.",
+		"hylotlDescription" : "A hot, imposing furnace.",
+		"novakidDescription" : "Basic lookin' furnace, for smeltin' ore.",
+  
+		"aegiDescription" : "This furnace is not very safe.",
+		"avikanDescription" : "A simple furnace. One of the few stone structures my people use.",
+		"erixianDescription" : "A furnace radiating a comfortable heat.",
+		"trinkDescription" : "An inefficient and unsafe way to smelt ores into metal bars.",
+		"hymidDescription" : "The heat radiating from this furnace is too much for me.",
+		"notixDescription" : "A hot and bright furnace. The open design is hardly safe to use.",
+		"jorgasianDescription" : "It's better than nothing, but this furnace is hardly safe to use.",
+		"centensDescription" : "TODO.",
+		"dremetonDescription" : "TODO.",
+		"theleanDescription" : "TODO.",
+		"drodenDescription" : "Analysis complete. Stone furnace. Basic ore smelting functionality."
+      },
+
+      "interactData" : {
+        "config" : "/interface/windowconfig/avikanfurnacecrafting.config",
+        "paneLayoutOverride" : {
+          "windowtitle" : {
+            "title" : " Stone Furnace",
+            "subtitle" : " ^#b9b5b2;Metals and crafting materials",
+            "icon" : {
+              "file" : "/interface/crafting/craftingavikanfurnace.png"
+            }
+          }
+        },
+
+        "filter" : [ "avikanfurnace" ],
+        "initialRecipeUnlocks" : [],
+        "upgradeMaterials" : [
+          { "item" : "monsterclaws", "count" : 6 },
+          { "item" : "avikanmetal", "count" : 10 },
+          { "item" : "avikandarkmetal", "count" : 5 },
+          { "item" : "avikancircuitry", "count" : 1 }
+        ]
+      },
+
+      "learnBlueprintsOnPickup" : [],
+
+      "upgradeSoundEffect" : "fanfare",
+      "upgradeParticleEffect" : "dust"
+    },
+
+    {
+      "animationState" : "avikanfurnace2",
+
+      "itemSpawnParameters" : {
+        "price" : 400,
+        "inventoryIcon" : "avikanfurnace2icon.png",
+        "placementImage" : "avikanfurnace2.png:default.default",
+        "placementImagePosition" : [-8, 0],    
+
+        "description" : "The furnace's high temperature allows you to craft metal bars and other items.",
+        "shortdescription" : "^orange;Nomada Furnace^white;",
+
+        "apexDescription" : "A furnace for smelting metal, and some other materials too.",
+		"avianDescription" : "A furnace for creating various alloys.",
+		"floranDescription" : "Floran isss careful. Fire will burn Floran...",
+		"glitchDescription" : "Pleased. This furnace's fires are kept safely behind a metal grille.",
+		"humanDescription" : "A furnace burning at an unusual temperature. It can only smelt some very specific metals.",
+		"hylotlDescription" : "This furnace burns at a temperature perfect for smelting some alien alloys.",
+		"novakidDescription" : "These flames are barely brighter than I am.",
+  
+		"aegiDescription" : "This furnace's temperature is perfect for smelting Avikan alloys, but not much else.",
+		"avikanDescription" : "While it can't smelt every metal, this furnace's temperature is just perfect for creating Avikan alloys.",
+		"erixianDescription" : "This furnace is cooler than most I've used, but that makes it perfect for smelting some very specific alloys.",
+		"trinkDescription" : "This open grille design is hardly efficient, but the furnace's fuel consumption is top-notch.",
+		"hymidDescription" : "This furnace radiates a pleasent heat.",
+		"notixDescription" : "A furnace burning at a lower temperature. It is perfect for creating some very specific alloys.",
+		"jorgasianDescription" : "This furnace is cooler than most other furnaces, but it's still hot enough to smelt some metals.",
+		"centensDescription" : "TODO.",
+		"dremetonDescription" : "TODO.",
+		"theleanDescription" : "TODO.",
+		"drodenDescription" : "Analysis complete. Nomada furnace. Temperature levels are perfect for smelting Avikan alloys."
+      },
+
+      "interactData" : {
+        "config" : "/interface/windowconfig/avikanfurnacecrafting.config",
+        "paneLayoutOverride" : {
+          "windowtitle" : {
+            "title" : " Nomada Furnace",
+            "subtitle" : " ^#b9b5b2;Metals and crafting materials",
+            "icon" : {
+              "file" : "/interface/crafting/craftingavikanfurnace2.png"
+            }
+          }
+        },
+        "filter" : [ "avikanfurnace", "avikanfurnace2" ],
+        "initialRecipeUnlocks" : []
+      },
+
+      "learnBlueprintsOnPickup" : []
+    }
+  ],
+
+  "orientations" : [
+    {
+      "image" : "avikanfurnace.png:default.<frame>",
+      "imagePosition" : [-8, 0],    
+      "direction" : "left",
+      "flipImages" : true,
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "avikanfurnace.png:default.<frame>",
+      "imagePosition" : [-8, 0],    
+      "direction" : "right",
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "npcToy" : {
+    "influence" : [
+      "furnace",
+      "furnace",
+      "furnaceComplete"
+    ],
+    "defaultReactions" : {
+      "furnace" : [
+        [1.0, "warmhands"],
+        [1.0, "crouchwarm"]
+      ],
+      "furnaceComplete" : [
+        [1.0, "warmhands"],
+        [1.0, "crouchwarm"],
+        [1.0, "pokefire"]
+      ]
+    },
+    "preciseStandPositionLeft" : [-1.5, 0.0],
+    "preciseStandPositionRight" : [2.5, 0.0],
+    "maxNpcs" : 1
+  }
+}

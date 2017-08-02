@@ -1,0 +1,28 @@
+{
+  "materialId" : 30033,
+  "materialName" : "avikanslopedglass",
+  "particleColor" : [243, 226, 208, 255],
+  "itemDrop" : "avikanslopedglass",
+  "shortdescription" : "Avikan Sloped Glass",
+
+  "description" : "Thick and strong glass often used on board spaceships.",
+  "glitchDescription" : "Impressed. This glass is strong enough for use on spaceships.",
+  "floranDescription" : "Floran look pretty in glasssss.",
+  "novakidDescription" : "Thick glass for sure, but I can still see right through to th'other side.",
+  
+  "drodenDescription" : "Analysis complete. Thick glass used on spaceships.",
+  
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "avikanslopedglass.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 0
+  }
+}

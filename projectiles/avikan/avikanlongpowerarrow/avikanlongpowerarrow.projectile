@@ -1,0 +1,31 @@
+{
+  "projectileName" : "avikanlongpowerarrow",
+  "physics" : "avikanlongarrow",
+  "bounces" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "avikanlongpowerarrow.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "emitters" : [ "daggerblue" ],
+  "power" : 20,
+  "knockback" : 25,
+  "knockbackDirectional" : true,
+  "timeToLive" : 30,
+  "supportsProcessing" : true,
+  "piercing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanlongarrowsticking",
+      "inheritDamageFactor" : 0.0,
+      "inheritSpeedFactor" : 0.9,
+      "angleAdjust" : 0
+    }
+  ],
+  "damageKind" : "avikanhunting",
+  "hydrophobic" : false
+}

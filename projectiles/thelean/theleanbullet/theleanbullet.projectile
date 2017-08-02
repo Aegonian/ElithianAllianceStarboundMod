@@ -1,0 +1,24 @@
+{
+  "projectileName" : "theleanbullet",
+  "image" : "theleanbullet.png",
+  "physics" : "laser",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "emitters" : [ "fireplasma" ],
+  "pointLight" : false,
+  "flippable" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/theleanbulletexplosion/theleanbulletexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "power" : 5.0,
+  "speed" : 180,
+  "supportsProcessing" : true,
+  "lightColor" : [150, 60, 5],
+  "fullbright" : true,
+  "knockback" : 0,
+  "damageKind" : "fireplasma"
+}

@@ -1,0 +1,12 @@
+{
+  "itemName" : "centenshoripanel",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Rare",
+  "inventoryIcon" : "centenshoripanel.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "description" : "A lightweight panel.",
+  "shortdescription" : "Horizontal Centensian Panel",
+
+  "materialId" : 30051
+}

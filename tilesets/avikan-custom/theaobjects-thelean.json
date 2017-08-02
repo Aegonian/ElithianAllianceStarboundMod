@@ -1,0 +1,29 @@
+{ "margin":0,
+ "name":"theaobjects-thelean",
+ "properties":
+    {
+
+    },
+ "spacing":0,
+ "tilecount":1,
+ "tileheight":168,
+ "tileproperties":
+    {
+     "0":
+        {
+         "\/\/shortdescription":"Thelean Scouting Ship",
+         "imagePositionX":"-40",
+         "imagePositionY":"-120",
+         "object":"theleanscoutship",
+         "tilesetDirection":"right"
+        }
+    },
+ "tiles":
+    {
+     "0":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/thelean\/theleanscoutship.png"
+        }
+    },
+ "tilewidth":88
+}

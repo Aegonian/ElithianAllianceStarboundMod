@@ -1,0 +1,52 @@
+{
+  "objectName" : "avikanlightorb",
+  "colonyTags" : ["avikan", "light"],
+  "rarity" : "Common",
+  "category" : "light",
+  "price" : 50,
+  "description" : "A levitating light. Provides both light and warmth.",
+  "shortdescription" : "Avikan Light Orb",
+  "race" : "avikan",
+  "printable" : false,
+  "hydrophobic" : true,
+
+  "apexDescription" : "A hovering light. Fancy.",
+  "avianDescription" : "A pretty, hovering light.",
+  "floranDescription" : "Floran not understand how light floatsss.",
+  "glitchDescription" : "Impressed. This hovering light uses an organic battery for levitation and light both.",
+  "humanDescription" : "A hovering light. Don't bump your head!",
+  "hylotlDescription" : "A hovering light. A feat of technology, but unnecessary underwater.",
+
+  "aegiDescription" : "A hovering light. It seems to be based on Centensian technology.",
+  "avikanDescription" : "This light is efficient, lightweight and very versatile.",
+  "erixianDescription" : "A hovering light. Impressive.",
+  "trinkDescription" : "A hovering light. I wonder how this effect was achieved.",
+  "hymidDescription" : "A hovering light. I have no idea how it works.",
+  "notixDescription" : "An advanced light that hovers in the air.",
+  "jorgasianDescription" : "An advanced, hovering light.",
+  "centensDescription" : "Impressive. This light hovers using some of our own technologies.",
+  "dremetonDescription" : "An efficient light that hovers gently in the air.",
+  "theleanDescription" : "A hovering light. Built using Centensian technology, no doubt.",
+  "drodenDescription" : "Detected light orb.",
+  
+  "statusEffects" : [ ],
+  
+  "lightColor" : [245, 234, 220],
+  "flickerDistance" : 0.5,
+  "flickerStrength" : 0.05,
+
+  "inventoryIcon" : "avikanlightorbicon.png",
+  "orientations" : [
+    {
+      "image" : "avikanlightorb.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "frames" : 6,
+      "animationCycle" : 0.7,
+
+      "spaceScan" : 0.1
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/electriclight.ogg"
+
+}

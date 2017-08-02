@@ -1,0 +1,53 @@
+{
+  "type" : "crewmembertrinkengineer",
+  "baseType" : "crewmembertrink",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : true
+    },
+
+    "crew" : {
+      "role" : {
+        "type" : "trinkengineer",
+        "name" : "Engineer",
+        "field" : "Engineering",
+        "uniformColorIndex" : 5,
+
+        "benefits" : [
+          {
+            "type" : "ShipUpgradeBenefit",
+            "property" : "shipSpeed",
+            "value" : 3.75
+          }
+        ]
+      }
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "roleDescription" : {
+          "default" : {
+            "default" : [
+              "The ship's engines weren't very efficient before, but I managed to increase thruster velocity by 25%!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "trink-protectoratechest", "data" : { "colorIndex" : 5 } } ],
+            "legs" : [ { "name" : "trink-protectoratelegs", "data" : { "colorIndex" : 5 } } ],
+            "sheathedprimary" : [
+			  "trinktier3prod"
+			]
+          }
+        ] ]
+    ]
+  }
+}

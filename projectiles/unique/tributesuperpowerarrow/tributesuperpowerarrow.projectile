@@ -1,0 +1,26 @@
+{
+  "projectileName" : "tributesuperpowerarrow",
+  "physics" : "laser",
+  "bounces" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "tributesuperpowerarrow.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "emitters" : [ "daggerblue" ],
+  "power" : 20,
+  "knockback" : 20,
+  "knockbackDirectional" : true,
+  "timeToLive" : 30,
+  "supportsProcessing" : true,
+  "lightColor" : [0, 75, 128],
+  "fullbright" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/allianceenergyexplosionmedium/allianceenergyexplosionmedium.config"
+    }
+  ],
+  "damageKind" : "bow",
+  "damageType" : "NoDamage",
+  "hydrophobic" : false
+}

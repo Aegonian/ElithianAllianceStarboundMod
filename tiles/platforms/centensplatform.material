@@ -1,0 +1,29 @@
+{
+  "materialId" : 30102,
+  "materialName" : "centensplatform",
+  "collisionKind" : "platform",
+  "transparent" : true,
+  "itemDrop" : "centensplatform",  
+  "shortdescription" : "Centensian Platform",
+  "description" : "A platform built by the mysterious Centens.",
+  
+  "glitchDescription" : "Curious. What ancient being created this?",
+  "floranDescription" : "Platform isss old. Very old...",
+  "novakidDescription" : "An ancient platform of sorts.",
+  
+  "drodenDescription" : "Analysis complete. Centensian platform.",
+  
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "category" : "Supports",
+  
+  "renderTemplate" : "/tiles/platformtemplate.config",
+  "renderParameters" : {
+    "texture" : "centensplatform.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 0,
+    "platform" : true
+  }
+}

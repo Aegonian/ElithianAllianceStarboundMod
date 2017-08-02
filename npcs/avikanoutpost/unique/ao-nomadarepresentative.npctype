@@ -1,0 +1,76 @@
+{
+  "type" : "ao-nomadarepresentative",
+  "baseType" : "ao-idle",
+
+  "npcname" : "Ladyan",
+
+  "scriptConfig" : {
+	
+	//"offeredQuests" : [ "avikancrafting.gearup" ],
+	//"turnInQuests" : [ "avikancrafting.gearup", "avikancrafting2.gearup" ],
+  
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "The Council of Elders welcomes you to the Starfarer's Refuge."
+		  ]
+		},
+
+        "avikan" : {
+          "default" : [
+            "The Council of Elders welcomes you to the Starfarer's Refuge."
+          ],
+		  "human" : [
+            "The Council of Elders welcomes you to the Starfarer's Refuge."
+          ],
+          "apex" : [
+            "The Council of Elders welcomes you to the Starfarer's Refuge."
+          ],
+          "avian" : [
+            "The Council of Elders welcomes you to the Starfarer's Refuge."
+          ],
+          "floran" : [
+            "The Council of Elders welcomes you to the Starfarer's Refuge."
+          ],
+          "glitch" : [
+            "The Council of Elders has token note of your presence here."
+          ],
+		  "hylotl" : [
+            "The Council of Elders welcomes you to the Starfarer's Refuge."
+          ],
+		  "novakid" : [
+            "The Council of Elders welcomes you to the Starfarer's Refuge."
+          ],
+          "avikan" : [
+            "Welcome Captain. I can contact the Council of Elders on your behalf."
+          ],
+		  "trink" : [
+            "The Council of Elders has token note of your presence here."
+          ],
+		  "droden" : [
+            "The Council of Elders welcomes you to the Starfarer's Refuge, Droden."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "avikan-councilhead", "parameters" : { "colorIndex" : 4 } }
+            ],
+            "chest" : [
+              { "name" : "avikan-councilchest", "parameters" : { "colorIndex" : 4 } }
+            ],
+            "legs" : [
+              { "name" : "avikan-councillegs", "parameters" : { "colorIndex" : 4 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

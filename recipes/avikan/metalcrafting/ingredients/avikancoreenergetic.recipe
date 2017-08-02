@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "avikanmetal", "count" : 1 },
+	{ "item" : "aegisaltore", "count" : 10 }
+  ],
+  "output" : {
+    "item" : "avikancoreenergetic",
+    "count" : 1
+  },
+  "duration" : 0.15,
+  "groups" : [ "avikanmetalcrafting", "ingredients", "all" ]
+}

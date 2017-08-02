@@ -1,0 +1,15 @@
+{
+  "itemName" : "trinkgroundpanel",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "trinkgroundpanel.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "shortdescription" : "Trinkian Floor",
+  
+  "description" : "A dark metal panel.",
+  "glitchDescription" : "Statement. A strong metal panel.",
+  "floranDescription" : "Dark metal panelsss",
+
+  "materialId" : 30061
+}

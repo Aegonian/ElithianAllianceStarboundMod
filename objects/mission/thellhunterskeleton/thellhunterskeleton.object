@@ -1,0 +1,43 @@
+{
+  "objectName" : "thellhunterskeleton",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 10,
+  "description" : "The legendary Thellhunter himself...",
+  "shortdescription" : "Thellhunter's Skeleton",
+  "race" : "avikan",
+
+  "floranDescription" : "Old boness, boness of the Thellhunter...",
+  "glitchDescription" : "Analysis. This skeleton belonged to the legendary Thellhunter himself.",
+  
+  "avikanDescription" : "The skeleton of the great Thellhunter himself...",
+  "theleanDescription" : "The Thellhunter... He was stronger than my brethren, but fell nevertheless.",
+  "drodenDescription" : "Detected Avikan bones. Analysis: DNA traces match Thellhunter's profile.",
+
+  "inventoryIcon" : "thellhunterskeletonicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "thellhunterskeleton.png:<color>",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+  "scripts" : [
+    "/objects/scripts/thea-interactpickup.lua"
+  ],
+  "scriptDelta" : 5,
+  
+  "spawnableItem" : "avikan-thellhunterhead",
+
+  "animation" : "thellhunterskeleton.animation",
+  "animationParts" : {
+    "interactiveObject" : "thellhunterskeleton.png"
+  },
+  "animationPosition" : [0, 0]
+  
+}

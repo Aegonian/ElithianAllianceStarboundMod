@@ -1,0 +1,13 @@
+{
+  "itemName" : "centensiantech",
+  "price" : 450,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "centensiantech.png",
+  "description" : "Technology used in the creation of Centensian artefacts.",
+  "shortdescription" : "Centensian Tech",
+  "itemTags" : [ "reagent" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 5
+}

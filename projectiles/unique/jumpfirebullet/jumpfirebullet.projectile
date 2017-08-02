@@ -1,0 +1,34 @@
+{
+  "projectileName" : "jumpfirebullet",
+  "physics" : "jumpriflebullet",
+  "bounces" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "jumpfirebullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "emitters" : [ "jumprifletrail" ],
+  "power" : 4,
+  "speed" : 65,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/smalljumprifleexplosion/smalljumprifleexplosion.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "jumprifleflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.01,
+      "angleAdjust" : 0
+    }
+  ],
+  "lightColor" : [100, 65, 0],
+  "fullbright" : true,
+  "damageType" : "NoDamage",
+  "damageKind" : "jumpweapon",
+  "statusEffects" : [
+    "jumprifleburn"
+  ],
+  "hydrophobic" : true
+}

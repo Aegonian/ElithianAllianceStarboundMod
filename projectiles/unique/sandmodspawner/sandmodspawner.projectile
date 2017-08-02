@@ -1,0 +1,26 @@
+{
+  "projectileName" : "sandmodspawner",
+  "image" : "sandmodspawner.png",
+  "physics" : "thea-materialmodspawner",
+  "animationCycle" : 1,
+  "animationLoops" : false,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 0,
+  "timeToLive" : 0.15,
+  "bounces" : 0,
+  "onlyHitTerrain" : true,
+  "piercing" : true,
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "actionOnReap" : [
+    {
+      "action" : "applySurfaceMod",
+      "previousMod" : "metamod:none",
+      "newMod" : "sand",
+      "radius" : 1
+    }
+  ],
+  "hydrophobic" : false
+}

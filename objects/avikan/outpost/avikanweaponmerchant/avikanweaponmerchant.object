@@ -1,0 +1,64 @@
+{
+  "objectName" : "avikanweaponmerchant",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Legendary",
+  "description" : "A Vanguard weapons distributor, Odyin as-Rhadeis offers only the best goods.",
+  "shortdescription" : "Odyin's Weapons Cache",
+  "race" : "avikan",
+  
+  "floranDescription" : "Weaponsss for ssale.",
+  "glitchDescription" : "Observation. This merchant offers a variety of weapons.",
+  "drodenDescription" : "Detected Vanguard-approved weapons distributor. Name: Odyin as-Rhadeis.",
+  
+  "interactAction" : "OpenMerchantInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/merchant.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "  Odyin's Weapons Cache",
+        "subtitle" : "  The Nomada's best."
+      }
+    },
+    "buyFactor" : 2.0,
+    "sellFactor" : 0.2,
+    "items" : [
+	  //Weapons
+      { "item" : "avikan-assaultrifle-recipe" },
+	  { "item" : "avikan-assaultrifle2-recipe" },
+      { "item" : "avikan-skiprifle-recipe" },
+	  { "item" : "avikan-shotgun-recipe" },
+	  { "item" : "avikan-sniperrifle-recipe" },
+      { "item" : "avikan-harpoongun-recipe" },
+      { "item" : "avikan-tier6linerifle-recipe" },
+	  { "item" : "avikan-rocketlauncher-recipe" },
+      { "item" : "avikan-minigun-recipe" },
+      { "item" : "avikan-mininggun-recipe" },
+      { "item" : "avikantier7spear-recipe" },
+      { "item" : "avikanprod-recipe" },
+      { "item" : "avikanshieldback-recipe" },
+      { "item" : "avikanmetalshield-recipe" }
+    ]
+  },
+  "printable" : false,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "avikanweaponmerchant.png:<frame>",
+      "direction" : "right",
+
+      "imagePosition" : [0, 0],
+      "frames" : 20,
+      "animationCycle" : 2.0,
+
+	  "spaces" : [
+        [1, 3], [2, 3], [3, 3],
+        [1, 2], [2, 2], [3, 2],
+        [1, 1], [2, 1], [3, 1],
+        [1, 0], [2, 0], [3, 0]
+      ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+
+}

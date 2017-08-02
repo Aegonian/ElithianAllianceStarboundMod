@@ -1,0 +1,21 @@
+{
+  "itemName" : "avikanfossil3",
+  "rarity" : "Uncommon",
+  "itemTags" : ["fossil"],
+
+  "description" : "A fossilised pair of Avikan legs.",
+  "category" : "mediumFossil",
+
+  "shortdescription" : "Avikan Legs",
+  "race" : "avikan",
+  "price" : 0,
+
+  "inventoryIcon" : "avikanfossil3icon.png",
+
+  "displayImage" : "/objects/fossils/humanoidfossils/fossilavikan/avikanlegsdisplay.png",
+  "displayoffset" :[0, 0],
+
+  "fossilSetName" : "avikanSkeleton",
+  "setIndex" : 3,
+  "setCount" : 3
+}

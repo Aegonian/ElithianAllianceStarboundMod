@@ -1,0 +1,106 @@
+{
+  "name" : "avikanmech",
+  "script" : "avikanmech.lua",
+  "boundBox" : [-5, -5, 5, 5],
+  "slaveControlTimeout" : 2.0,
+  "slaveControlHeartbeat" : 1.0,
+  "canBeHit" : true,
+  "animation" : "avikanmech.animation",
+
+  //PLAYER POSITIONS
+  "loungePositions" : {
+    "drivingSeat" : {
+      "part" : "seat",
+      "partAnchor" : "drivingSeatPosition",
+      "orientation" : "sit",
+      "statusEffects" : ["highprotection", "breathprotectionvehicle", "falldamageprotection"],
+      "emote" : "happy"
+    }
+  },
+
+  //GENERAL SETTINGS
+  "warpInDelay" : 1.0,
+
+  //HEALTH AND DAMAGE STATS
+  "materialKind" : "robotic",
+  "protection" : 50,
+  "maxHealth" : 2500,
+  "damageTakenEmote" : "oooh",
+  "warningHealthFactor" : 0.125,
+  "explosionProjectile" : "avikanmechexplosionspawner",
+  "explosionProjectileConfig" : {
+    "power" : 95
+  },
+
+  //COMBAT SETTINGS
+  "mechAimLimit" : 55,
+  //PRIMARY FIRE
+  "fireTime" : 0.35,
+  "fireProjectile" : "avikanexplosivebullet",
+  "fireProjectileConfig" : {
+    "power" : 40
+  },
+  //SECONDARY FIRE
+  "secondaryFireTime" : 3.0,
+  "secondaryFireBurstTime" : 0.25,
+  "secondaryFireProjectile" : "avikangrenade",
+  "secondaryFireProjectileCount" : 6,
+  "secondaryFireInaccuracy" : 0.15,
+  "secondaryFireProjectileConfig" : {
+    "power" : 30,
+	"speed" : 30,
+	"bounces" : 0
+  },
+  
+  //MOVEMENT SETTINGS
+  "mechWalkingSpeed" : 13,
+  "mechJumpVelocity" : [15, 35],
+  "mechBoostVelocityUp" : 6,
+  "mechBoostVelocitySideways" : 10,
+  "mechBoostControlForce" : 750,
+  "maxBoostTime" : 5,
+  "fallControlSpeed" : 9, //Horizontal speed when steering a falling mech
+  "jumpCooldownTime" : 0.8,
+  "minAirTime" : 0.4, //Minimum time off the ground before the boost can kick in
+  "minFallTime" : 0.5, //Minimum time spent falling before a landing is considered a heavy landing
+  "landRecoveryTime" : 0.35, //Time to recover from a heavy landing
+  "offGroundFrames" : 12, //The amount of ticks the mech must have been off the ground before falling animations are played
+
+  //MOVEMENT CONTROLLER SETTINGS
+  "movementSettings" : {
+    "collisionPoly" : [[-2.0, -3.0], [-2.0, 1.0], [-1.0, 2.0], [1.0, 2.0], [2.0, 1.0], [2.0, -3.0], [0.5, -5.25], [-0.5, -5.25]],
+    "mass" : 4,
+    "airFriction" : 0.5,
+    "liquidFriction" : 20.0,
+    "groundFriction" : 50.0,
+    "ignorePlatformCollision" : false,
+	"enableSurfaceSlopeCorrection" : true,
+    "slopeSlidingFactor" : 0,
+    "gravityEnabled" : true,
+    "collisionEnabled" : true
+  },
+  "occupiedMovementSettings" : {
+    "collisionPoly" : [[-2.0, -3.0], [-2.0, 1.0], [-1.0, 2.0], [1.0, 2.0], [2.0, 1.0], [2.0, -3.0], [0.5, -5.25], [-0.5, -5.25]],
+    "mass" : 4,
+    "airFriction" : 0.5,
+    "liquidFriction" : 20.0,
+    "groundFriction" : 50.0,
+    "ignorePlatformCollision" : false,
+	"enableSurfaceSlopeCorrection" : true,
+    "slopeSlidingFactor" : 0,
+    "gravityEnabled" : true,
+    "collisionEnabled" : true
+  },
+  "noPlatformMovementSettings" : {
+    "collisionPoly" : [[-2.0, -3.0], [-2.0, 1.0], [-1.0, 2.0], [1.0, 2.0], [2.0, 1.0], [2.0, -3.0], [0.5, -5.25], [-0.5, -5.25]],
+    "mass" : 4,
+    "airFriction" : 0.5,
+    "liquidFriction" : 20.0,
+    "groundFriction" : 50.0,
+    "ignorePlatformCollision" : true,
+	"enableSurfaceSlopeCorrection" : true,
+    "slopeSlidingFactor" : 0,
+    "gravityEnabled" : true,
+    "collisionEnabled" : true
+  }
+}

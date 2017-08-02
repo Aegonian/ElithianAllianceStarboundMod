@@ -1,0 +1,260 @@
+[	
+  //============================= AVIKAN ===============================================================
+  {"op" : "add",
+  "path" : "/avikanGift",
+  "value" : [
+    [1, {
+      "pool" : [
+		//GENERIC POOLS
+        {"weight" : 0.25, "pool" : "tenantMoney"},
+        {"weight" : 0.1, "pool" : "healingItem"},
+        {"weight" : 0.005, "pool" : "instrument"},
+		//AVIKAN POOLS
+        {"weight" : 0.1, "pool" : "avikanFoodGift"},
+        {"weight" : 0.1, "pool" : "avikanWeaponGift"},
+        {"weight" : 0.1, "pool" : "avikanMaterialsGift"},
+        {"weight" : 0.1, "pool" : "avikanTokenGift"},
+		//ITEMS
+        {"weight" : 0.25, "item" : "avikangift"},
+        {"weight" : 0.05, "item" : "avikancache"}
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    } ] ]
+  },
+  
+  {"op" : "add",
+  "path" : "/avikanGuardGift",
+  "value" : [
+    [1, {
+      "pool" : [
+		//GENERIC POOLS
+        {"weight" : 0.25, "pool" : "tenantMoney"},
+        {"weight" : 0.1, "pool" : "healingItem"},
+        {"weight" : 0.005, "pool" : "instrument"},
+		//AVIKAN POOLS
+        {"weight" : 0.1, "pool" : "avikanFoodGift"},
+        {"weight" : 0.1, "pool" : "avikanWeaponGift"},
+        {"weight" : 0.1, "pool" : "avikanMaterialsGift"},
+        {"weight" : 0.1, "pool" : "avikanTokenGift"},
+		//ITEMS
+        {"weight" : 0.25, "item" : "avikangift"},
+        {"weight" : 0.05, "item" : "avikancache"}
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    } ] ]
+  },
+  
+  {"op" : "add",
+  "path" : "/avikanMerchantGift",
+  "value" : [
+    [1, {
+      "pool" : [
+		//GENERIC POOLS
+        {"weight" : 0.25, "pool" : "tenantMoney"},
+        {"weight" : 0.1, "pool" : "healingItem"},
+        {"weight" : 0.005, "pool" : "instrument"},
+		//AVIKAN POOLS
+        {"weight" : 0.1, "pool" : "avikanFoodGift"},
+        {"weight" : 0.1, "pool" : "avikanWeaponGift"},
+        {"weight" : 0.1, "pool" : "avikanMaterialsGift"},
+        {"weight" : 0.1, "pool" : "avikanTokenGift"},
+		//ITEMS
+        {"weight" : 0.25, "item" : "avikangift"},
+        {"weight" : 0.05, "item" : "avikancache"}
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    } ] ]
+  },
+  
+  {"op" : "add",
+  "path" : "/avikanKeffriderGift",
+  "value" : [
+    [1, {
+      "pool" : [
+		//GENERIC POOLS
+        {"weight" : 0.25, "pool" : "tenantMoney"},
+        {"weight" : 0.1, "pool" : "healingItem"},
+        {"weight" : 0.005, "pool" : "instrument"},
+		//AVIKAN POOLS
+        {"weight" : 0.1, "pool" : "avikanFoodGift"},
+        {"weight" : 0.1, "pool" : "avikanWeaponGift"},
+        {"weight" : 0.1, "pool" : "avikanMaterialsGift"},
+        {"weight" : 0.1, "pool" : "avikanTokenGift"},
+		//ITEMS
+        {"weight" : 0.25, "item" : "avikangift"},
+        {"weight" : 0.05, "item" : "avikancache"}
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    } ] ]
+  },
+  
+  {"op" : "add",
+  "path" : "/avikanWeaponGift",
+  "value" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.25, "item" : ["avikanjavelin", 3]},
+        {"weight" : 0.20, "item" : ["avikanjavelin2", 3]},
+        {"weight" : 0.25, "item" : ["avikanspiketrap", 3]},
+        {"weight" : 0.15, "item" : ["avikanpoisonspiketrap", 3]},
+        {"weight" : 0.15, "item" : ["avikantarspiketrap", 3]}
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    } ] ]
+  },
+  
+  {"op" : "add",
+  "path" : "/avikanMaterialsGift",
+  "value" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.25, "item" : ["avikanmetal", 4] },
+		{"weight" : 0.20, "item" : ["avikandarkmetal", 4] },
+		{"weight" : 0.20, "item" : ["monsterleather", 2] },
+		{"weight" : 0.20, "item" : ["monsterbone", 3] },
+		{"weight" : 0.05, "item" : ["avikancloth", 2] },
+		{"weight" : 0.05, "item" : ["avikandyes", 2] },
+		{"weight" : 0.05, "item" : ["avikanstring", 4] }
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    } ] ]
+  },
+  
+  {"op" : "add",
+  "path" : "/avikanFoodGift",
+  "value" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.25, "item" : "avikanmeatchunk" },
+		{"weight" : 0.05, "item" : "avikanmeal" },
+		{"weight" : 0.25, "item" : "dunebun" },
+		{"weight" : 0.05, "item" : "stuffeddunebun" },
+		{"weight" : 0.25, "item" : "kadavancactusjuice" },
+		{"weight" : 0.05, "item" : "kadavanmeatjuice" },
+		{"weight" : 0.05, "item" : "spicebol" },
+		{"weight" : 0.05, "item" : "bolbohnjam" }
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    } ] ]
+  },
+  
+  {"op" : "add",
+  "path" : "/avikanTokenGift",
+  "value" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.45, "item" : ["avikanmerittoken", 1] },
+        {"weight" : 0.35, "item" : ["avikanmerittoken", 2] },
+        {"weight" : 0.2, "item" : ["avikanmerittoken", 3] }
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    } ],
+	[2, {
+      "pool" : [
+        {"weight" : 0.45, "item" : ["avikanmerittoken", 2] },
+        {"weight" : 0.35, "item" : ["avikanmerittoken", 3] },
+        {"weight" : 0.2, "item" : ["avikanmerittoken", 4] }
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    } ],
+	[3, {
+      "pool" : [
+        {"weight" : 0.45, "item" : ["avikanmerittoken", 3] },
+        {"weight" : 0.35, "item" : ["avikanmerittoken", 4] },
+        {"weight" : 0.2, "item" : ["avikanmerittoken", 5] }
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    } ],
+	[4, {
+      "pool" : [
+        {"weight" : 0.45, "item" : ["avikanmerittoken", 4] },
+        {"weight" : 0.35, "item" : ["avikanmerittoken", 5] },
+        {"weight" : 0.2, "item" : ["avikanmerittoken", 6] }
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    } ],
+	[5, {
+      "pool" : [
+        {"weight" : 0.45, "item" : ["avikanmerittoken", 5] },
+        {"weight" : 0.35, "item" : ["avikanmerittoken", 6] },
+        {"weight" : 0.2, "item" : ["avikanmerittoken", 7] }
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    } ],
+	[6, {
+      "pool" : [
+        {"weight" : 0.45, "item" : ["avikanmerittoken", 6] },
+        {"weight" : 0.35, "item" : ["avikanmerittoken", 7] },
+        {"weight" : 0.2, "item" : ["avikanmerittoken", 8] }
+      ],
+      "poolRounds" : 1,
+      "allowDuplication" : false
+    } ] ]
+  },
+  
+  //============================= TRINK ===============================================================
+  {"op" : "add",
+  "path" : "/trinkGift",
+  "value" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.4, "pool" : "tenantMoney"},
+        {"weight" : 0.15, "pool" : "healingItem"},
+        {"weight" : 0.005, "pool" : "instrument"},
+        {"weight" : 0.005, "pool" : "costume"},
+        {"weight" : 0.001, "pool" : "valuableTreasure"},
+        {"weight" : 0.3, "pool" : "trinkMaterialsGift"},
+        {"weight" : 0.05, "item" : "trinkcache"}
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    } ] ]
+  },
+  
+  {"op" : "add",
+  "path" : "/trinkMaterialsGift",
+  "value" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.5, "item" : [ "trinkmetal", 5 ]},
+        {"weight" : 0.01, "item" : [ "trinkmetaltier5", 3 ]},
+        {"weight" : 0.01, "item" : [ "trinkmetaltier6", 1 ]},
+        {"weight" : 0.4, "item" : "trinklaserdiode"},
+        {"weight" : 0.01, "item" : "centensiantech"},
+        {"weight" : 0.005, "item" : "jumpgatecore"}
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    } ] ]
+  }
+]

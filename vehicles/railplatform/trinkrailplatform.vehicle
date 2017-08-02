@@ -1,0 +1,44 @@
+{
+  "name" : "trinkrailplatform",
+  "boundBox" : [-2.5, -0.25, 2.5, 0.75],
+  "slaveControlTimeout" : 2.0,
+  "slaveControlHeartbeat" : 1.0,
+  "canBeHit" : false,
+
+  "persistent" : true,
+
+  "script" : "/vehicles/railplatform/railplatform.lua",
+  "animation" : "/vehicles/railplatform/trinkrailplatform.animation",
+
+  "animationPartTags" : {
+    "platform" : {
+      "partImage" : "/vehicles/railplatform/trinkrailplatform.png"
+    },
+    "platformfullbright" : {
+      "partImage" : "/vehicles/railplatform/trinkrailplatformlights.png"
+    }
+  },
+
+  "movementSettings" : {
+    "collisionPoly" : [ [-2.5, 0.75], [2.5, 0.75], [0.0, -0.25] ],
+    "mass" : 2.0,
+    "ignorePlatformCollision" : true,
+    "physicsEffectCategories" : []
+  },
+
+  "loungePositions" : {},
+
+  "physicsCollisions" : {
+    "platform" : {
+      "collision" : [ [-2.5, 0.75], [2.5, 0.75] ],
+      "collisionKind" : "platform",
+      "attachToPart" : "platform"
+    }
+  },
+
+  "railConfig" : {
+    "speed" : 10
+  },
+
+  "popItem" : "trinkrailplatform"
+}

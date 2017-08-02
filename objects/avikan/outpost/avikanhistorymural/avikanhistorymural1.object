@@ -1,0 +1,33 @@
+{
+  "objectName" : "avikanhistorymural1",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 60,
+  "description" : "Part of a massive mural showing the history of the Avikan people.",
+  "shortdescription" : "Avikan History Mural",
+  "race" : "avikan",
+  
+  "floranDescription" : "Mural sshowsss hisstory of alienss.",
+  "glitchDescription" : "Fascinated. It would appear that this mural describes historic events.",
+  "novakidDescription" : "I reckon this mural shows historic events, but I don't recognize any of it.",
+
+  "avikanDescription" : "The mural begins with a depiction of our nomadic ancestors, who roamed Kadavan freely.",
+  "drodenDescription" : "Mural detected. Analysis: depiction of Avikan nomadic ancestry.",
+  
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "avikanhistorymural1.png:<color>",
+	  
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

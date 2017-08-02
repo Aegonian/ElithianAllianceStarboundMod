@@ -1,0 +1,30 @@
+{
+  "itemName" : "trinkfossil1",
+  "rarity" : "Uncommon",
+  "itemTags" : ["fossil"],
+
+  "description" : "A fossilised pair of Trink eyes.",
+  "category" : "mediumFossil",
+
+  "shortdescription" : "Trink Eyes",
+  "race" : "trink",
+  "price" : 50,
+
+  "inventoryIcon" : "trinkfossil1icon.png",
+
+  "completeSetDescriptions" : {
+    "price" : 1500,
+    "shortdescription" : "Trink Fossil",
+    "description" : "A fossilized Trink unit. The wiring is largely intact, somehow."
+  },
+
+  "displayImage" : "/objects/fossils/humanoidfossils/fossiltrink/trinkskulldisplay.png",
+  "displayoffset" :[0, 0],
+
+  "fossilSetName" : "trinkSkeleton",
+  "setIndex" : 1,
+  "setCount" : 3,
+  "setCollectables" : { "fossils" : "trinkSkeleton" },
+
+  "completeFossilIcon" : "/objects/fossils/humanoidfossils/humanoidskeletonicon.png"
+}

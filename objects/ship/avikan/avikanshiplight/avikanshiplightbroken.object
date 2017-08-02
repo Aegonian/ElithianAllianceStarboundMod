@@ -1,0 +1,59 @@
+{
+  "objectName" : "avikanshiplightbroken",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "light",
+  "lightColor" : [170, 170, 170],
+
+  "flickerPeriod" : 0.01,
+  "flickerMinIntensity" : 0.25,
+  "flickerMaxIntensity" : 0.75,
+  "flickerPeriodVariance" : 0.8,
+  "flickerIntensityVariance" : 0.25,
+
+  "price" : 50,
+  "description" : "A malfunctioning light.",
+  "shortdescription" : "Broken Avikan Ship Light",
+  "race" : "avikan",
+
+  "apexDescription" : "This light isn't getting enough power.",
+  "avianDescription" : "A flickering light.",
+  "floranDescription" : "Broken light makesss Floran dizzy.",
+  "glitchDescription" : "Concerned. This light is malfunctioning.",
+  "humanDescription" : "This light's on the blink.",
+  "hylotlDescription" : "An underpowered light.",
+  "novakidDescription" : "This light ain't gettin' enough power.",
+  
+  "avikanDescription" : "This light isn't working properly. The ship engineer should take a look at it.",
+  "drodenDescription" : "Light detected. Status: broken.",
+
+  "inventoryIcon" : "avikanshiplightbrokenicon.png",
+  "orientations" : [
+    {
+      "image" : "avikanshiplight.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+      "animationCycle" : 0.5,
+      
+      "lightPosition" : [-1, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/fluorescent_light_quiet.ogg",
+  
+  "animation" : "/objects/wired/light/lighttoggle.animation",
+  "animationParts" : {
+    "light" : "avikanshiplight.png"
+  },
+  "animationPosition" : [-8, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : false,
+
+  "inputNodes" : [ [0, 0] ]
+}

@@ -1,0 +1,45 @@
+{
+  "objectName" : "theleanscoutship",
+  "colonyTags" : ["thelean"],
+  "rarity" : "Legendary",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 5000,
+  "description" : "A small Thelean scouting ship.",
+  "shortdescription" : "Thelean Va'rahk",
+  "race" : "thelean",
+  
+  "health" : 6,
+
+  "apexDescription" : "This ship looks unsettling. I hope it isn't some new Miniknog design.",
+  "avianDescription" : "I wouldn't want to meet whatever piloted this ship...",
+  "floranDescription" : "Floran dissslike sstrange shipss.",
+  "glitchDescription" : "Frightened. This ship looks ominous.",
+  "humanDescription" : "I'm getting a bad feeling from this ship...",
+  "hylotlDescription" : "This ship feels like a bad omen. Nothing good will come of its presence here.",
+  "novakidDescription" : "I generally like spaceships, but this one creeps me out.",
+
+  "aegiDescription" : "A Thelean Va'rahk. Officially a scouting ship, but it can easily tear through a Destroyer...",
+  "avikanDescription" : "It's a Thell ship. This does not bode well...",
+  "erixianDescription" : "Even Thelean scouting vessels are built for combat...",
+  "trinkDescription" : "If only we understood how these Thelean ships function, we might be able to devise an efficient countermeasure.",
+  "hymidDescription" : "It's a Thelean ship. This won't end well...",
+  "notixDescription" : "Even the sound these Thelean ships make is unsettling...",
+  "jorgasianDescription" : "A Thelean ship. I had best be careful around here.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Warning: Detected Thelean ship. Recommending extreme caution.",
+
+  "inventoryIcon" : "theleanscoutshipicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "theleanscoutship.png:<color>.<frame>",
+      "imagePosition" : [-40, -120],
+      "frames" : 6,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1
+    }
+  ]
+}

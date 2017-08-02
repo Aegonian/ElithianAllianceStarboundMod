@@ -1,0 +1,21 @@
+{
+  "itemName" : "drodenfossil2",
+  "rarity" : "Uncommon",
+  "itemTags" : ["fossil"],
+
+  "description" : "A fossilised Droden chassis.",
+  "category" : "mediumFossil",
+
+  "shortdescription" : "Droden Chassis",
+  "race" : "droden",
+  "price" : 0,
+
+  "inventoryIcon" : "drodenfossil2icon.png",
+
+  "displayImage" : "/objects/fossils/humanoidfossils/fossildroden/drodentorsodisplay.png",
+  "displayoffset" :[0, 0],
+
+  "fossilSetName" : "drodenSkeleton",
+  "setIndex" : 2,
+  "setCount" : 3
+}

@@ -1,0 +1,11 @@
+{
+  "itemName" : "quicksand",
+  "price" : 1,
+  "rarity" : "Common",
+  "category" : "liquid",
+  "inventoryIcon" : "quicksandicon.png",
+  "shortdescription" : "Quicksand",
+  "description" : "Quicksand. Don't get stuck in it!",
+
+  "liquid" : "quicksand"
+}

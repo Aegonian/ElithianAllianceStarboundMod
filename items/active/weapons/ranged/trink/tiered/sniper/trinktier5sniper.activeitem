@@ -1,0 +1,153 @@
+{
+  "itemName" : "trinktier5sniper",
+  "price" : 190,
+  "inventoryIcon" : "trinktier5sniper.png",
+  "maxStack" : 1,
+  "rarity" : "rare",
+  "description" : "A high-grade, standard issue laser sniper rifle built by the Trinks.",
+  "shortdescription" : "Circuit Sniper Mk II",
+  "level" : 5,
+  "tooltipKind" : "gun",
+  "category" : "Laser Sniper",
+  "itemTags" : ["weapon","ranged","sniperrifle","energy","trink"],
+  "twoHanded" : true,
+  
+  "cursor" : "/cursors/thea-precisereticle.cursor",
+
+  "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
+  "animationParts" : {
+    "middle" : "trinktier5sniper.png",
+    "middleFullbright" : "trinktier5sniperlights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/trinklaserflash.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+		    "offset" : [1.05, 0.1]
+		  }
+		}
+      }
+    },
+	"particleEmitters" : {
+	  "altMuzzleFlash" : {
+		"transformationGroups" : ["muzzle"],
+		"offsetRegion" : [0, 0, 0, 0],
+        "particles" : [
+          { "particle" : "trinklasermuzzle" },
+		  { "particle" : "trinklasermuzzle" },
+		  { "particle" : "trinklasermuzzle" },
+		  { "particle" : "trinklasermuzzle" },
+		  { "particle" : "trinklasermuzzle" },
+		  { "particle" : "trinklasermuzzle" }
+        ]
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/plasma_shotgun3.ogg" ],
+	  "altFire" : [ "/sfx/gun/plasma_sniper2.ogg" ]
+    }
+  },
+
+  "baseOffset" : [1.05, 0.1],
+  "muzzleOffset" : [2.5, 0.1],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.9,
+    "baseDps" : 8.5,
+    "energyUsage" : 22,
+    "inaccuracy" : 0.005,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "trinklaserbullet",
+    "projectileParameters" : {
+      "knockback" : 10
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.25,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "altAbility" : {
+    "name" : "Piercing Laser",
+    "scripts" : ["/items/active/weapons/ranged/abilities/altfire.lua"],
+	"class" : "AltFireAttack",
+
+	"fireTime" : 0.9,
+	"baseDps" : 7.5,
+    "energyUsage" : 40.0,
+    "inaccuracy" : 0.005,
+
+	"projectileCount" : 1,
+    "fireType" : "auto",
+	
+	"projectileType" : "trinklaserbullet",
+	"projectileParameters" : {
+	  "knockback" : 8,
+	  "piercing" : true
+	},
+	
+	"hidePrimaryMuzzleFlash" : false,
+	"useParticleEmitter" : true,
+	"usePrimaryFireSound" : false,
+
+    "stances" : {
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.25,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

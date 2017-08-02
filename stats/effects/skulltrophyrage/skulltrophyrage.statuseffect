@@ -1,0 +1,14 @@
+{
+  "name" : "skulltrophyrage",
+  "effectConfig" : {
+    "powerModifier" : 1.15
+  },
+  "defaultDuration" : 0.5,
+
+  "scripts" : [
+    "/stats/effects/skulltrophyrage/skulltrophyrage.lua"
+  ],
+
+  "label" : "Feral",
+  "icon" : "/interface/statuses/rage.png"
+}

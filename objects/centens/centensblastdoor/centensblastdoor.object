@@ -1,0 +1,68 @@
+{
+  "objectName" : "centensblastdoor",
+  "colonyTags" : ["centens", "door"],
+  "rarity" : "Rare",
+  "category" : "door",
+  "printable" : false,
+  "price" : 500,
+  "description" : "An ancient metal blast door.",
+  "shortdescription" : "Centensian Blast Door",
+  "race" : "centens",
+  
+  "health" : 8,
+
+  "apexDescription" : "An old blast door. Still intact, surprisingly.",
+  "avianDescription" : "How has this ancient door remained in such a fine state?",
+  "floranDescription" : "Old metal doorsss. It ssshinesss...",
+  "glitchDescription" : "Observation. An ancient door.",
+  "humanDescription" : "An ancient blast door. What lies behind it?",
+  "hylotlDescription" : "An ancient blast door, still in pristine shape.",
+
+  "aegiDescription" : "A Centensian blast door. Barely damaged, yet it is eons old.",
+  "avikanDescription" : "A blast door built by the Old Ones.",
+  "erixianDescription" : "An ancient Centensian blast door.",
+  "trinkDescription" : "A Centensian blast door, it likely protects something valuable.",
+  "hymidDescription" : "A grand door built by the Centens.",
+  "notixDescription" : "The Centens built this door.",
+  "jorgasianDescription" : "A Centensian blast door.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Analysis. Blast door. Origin: Centensian.",
+
+  "inventoryIcon" : "centensblastdooricon.png",
+  "orientations" : [
+    {
+      "dualImage" : "centensblastdoor.png:default",
+      "imagePosition" : [0, 0],
+      "renderLayer" : "Object+5",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom", "top" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/door/door.lua" ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/door/door.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_open.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_close.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "centensblastdoor.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "inputNodes" : [ [-1, 4] ],
+  "outputNodes" : [ [1, 0] ]
+}

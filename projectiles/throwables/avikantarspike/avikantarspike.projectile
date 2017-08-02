@@ -1,0 +1,22 @@
+{
+  "projectileName" : "avikantarspike",
+  "physics" : "avikanspike",
+  "bounces" : -1,
+  "damageKindImage" : "icon.png",
+  "image" : "avikantarspike.png",
+  "orientationLocked" : true,
+  "flippable" : true,
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "emitters" : [ ],
+  "power" : 30,
+  "timeToLive" : 15,
+  "damageKind" : "avikanhunting",
+  "piercing" : true,
+  "statusEffects" : [
+    "tarslow"
+  ],
+  "hydrophobic" : false,
+  "scripts" : [ "/projectiles/scripts/thea-uprightprojectile.lua" ],
+  "rotateInAir" : true
+}

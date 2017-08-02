@@ -1,0 +1,10 @@
+{
+  "type" : "tenanttrinkmerchant",
+  "baseType" : "merchant",
+  
+  "dropPools" : [],
+
+  "scriptConfig" : {
+    "questGenerator" : { "pools" : [], "enableParticipation" : false }
+  }
+}

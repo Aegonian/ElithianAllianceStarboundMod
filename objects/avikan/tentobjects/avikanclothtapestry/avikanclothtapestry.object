@@ -1,0 +1,52 @@
+{
+  "objectName" : "avikanclothtapestry",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A tapestry made of colourful cloth.",
+  "shortdescription" : "Avikan Cloth Tapestry",
+  "race" : "avikan",
+
+  "apexDescription" : "A cloth tapestry. What a simple pattern.",
+  "avianDescription" : "The colours of this tapestry are so vivid!",
+  "floranDescription" : "Floran likesss Coloursss.",
+  "glitchDescription" : "Observation. Such vivid colours are a sign of wealth amongst the Avikan people.",
+  "humanDescription" : "A simple cloth tapestry. Quite colourful, though.",
+  "hylotlDescription" : "A simple pattern, but no less beautiful.",
+
+  "aegiDescription" : "A bright and colourful tapestry. It's made of cloth, not skin.",
+  "avikanDescription" : "Made of cloth, a rare resource on Kadavan.",
+  "erixianDescription" : "A birhgtly coloured tapestry. Excellent home decoration, unless you live on Heragon.",
+  "trinkDescription" : "A colourful tapestry. It is finely woven.",
+  "hymidDescription" : "A bright and colourful tapestry. Good for home decoration.",
+  "notixDescription" : "A colourful cloth tapestry.",
+  "jorgasianDescription" : "Avikan homes are almost always decorated with such tapestries.",
+  "centensDescription" : "Remarkable. The Avikan still decorate their homes with primitive tapestries.",
+  "dremetonDescription" : "This skin once belonged to a majestic creature. What a waste.",
+  "hyvonDescription" : "Unimpressive.",
+  "drodenDescription" : "Scan completed. Material: cloth.",
+  
+  "inventoryIcon" : "avikanclothtapestryicon.png",
+  "orientations" : [
+    {
+      "image" : "avikanclothtapestry.png:<color>",
+      "imagePosition" : [-8, -16],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    },
+	{
+      "image" : "avikanclothtapestry.png:<color>",
+      "imagePosition" : [-8, -16],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ]
+}

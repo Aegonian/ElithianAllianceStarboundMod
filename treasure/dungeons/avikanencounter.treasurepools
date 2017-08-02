@@ -1,0 +1,379 @@
+{
+	//AVIKAN SETTLEMENTS
+  "avikanvillagebag" : [
+    [1, {
+      "poolRounds" : [
+        [0.80, 1],
+        [0.10, 2],
+        [0.05, 3],
+        [0.05, 4]
+      ],
+	  "pool" : [
+        {"weight" : 0.30, "pool" : "avikanfarming" },
+		{"weight" : 0.05, "pool" : "avikanfood" },
+		{"weight" : 0.10, "pool" : "avikancodex" },
+		{"weight" : 0.25, "item" : "monsterbone" },
+		{"weight" : 0.25, "item" : "monsterhide" },
+		{"weight" : 0.05, "pool" : "avikanclothing" }
+      ]
+    } ]
+  ],
+
+  "avikanvillagechest" : [
+    [1, {
+      "poolRounds" : [
+        [0.60, 1],
+        [0.20, 2],
+        [0.10, 3],
+        [0.10, 4]
+      ],
+      "pool" : [
+        {"weight" : 0.10, "pool" : "avikanfarming" },
+		{"weight" : 0.10, "pool" : "avikanfood" },
+		{"weight" : 0.60, "pool" : "avikancraftingmaterials" },
+		{"weight" : 0.10, "pool" : "avikancodex" },
+		{"weight" : 0.10, "pool" : "avikanclothing" }
+      ]
+    } ]
+  ],
+  
+  "avikanfridge" : [
+    [1, {
+      "poolRounds" : [
+		[0.2, 1],
+        [0.4, 2],
+        [0.1, 3],
+        [0.1, 4]
+      ],
+      "pool" : [
+        {"weight" : 1.0, "pool" : "avikanfood" }
+      ]
+    } ]
+  ],
+  
+  "avikanmedicine" : [
+    [1, {
+      "poolRounds" : 1,
+      "pool" : [
+        {"weight" : 0.1, "item" : ["avikanbandage", 5] },
+		{"weight" : 0.6, "item" : ["avikanmedicalsyringe", 2] },
+		{"weight" : 0.3, "item" : "avikanmedicalkit" }
+      ]
+    } ]
+  ],
+
+  "avikancrate" : [
+    [1, {
+      "poolRounds" : [
+        [0.2, 0],
+		[0.2, 1],
+        [0.4, 2],
+        [0.1, 3],
+        [0.1, 4]
+      ],
+      "pool" : [
+        {"weight" : 0.10, "pool" : "avikanfarming" },
+		{"weight" : 0.30, "pool" : "avikancraftingmaterials" },
+		{"weight" : 0.20, "item" : ["avikanmetal", 2] },
+		{"weight" : 0.15, "item" : ["avikandarkmetal", 2] },
+		{"weight" : 0.10, "pool" : "avikancodex" },
+		{"weight" : 0.10, "pool" : "avikanclothing" },
+		{"weight" : 0.05, "item" : "avikancache" }
+      ]
+    } ]
+  ],
+  
+  "avikanlargecrate" : [
+    [1, {
+      "poolRounds" : [
+        [0.2, 2],
+        [0.4, 3],
+        [0.2, 4],
+        [0.1, 5],
+        [0.1, 6]
+      ],
+      "pool" : [
+        {"weight" : 0.05, "pool" : "avikanfarming" },
+		{"weight" : 0.20, "pool" : "avikancraftingmaterials" },
+		{"weight" : 0.20, "item" : ["avikanmetal", 3] },
+		{"weight" : 0.20, "item" : ["avikandarkmetal", 3] },
+		{"weight" : 0.10, "pool" : "avikancodex" },
+		{"weight" : 0.15, "pool" : "avikanclothing" },
+		{"weight" : 0.10, "item" : "avikancache" }
+      ]
+    } ]
+  ],
+  
+  "avikanweaponchest" : [
+    [1, {
+      "fill" : [
+        {"pool" : "avikangeneratedweapons" },
+		{"pool" : "avikangrenades" }
+      ]
+    } ]
+  ],
+  
+  "avikangeneratedweapons" : [
+    [1, {
+      "poolRounds" : 1,
+      "pool" : [
+		//GUNS
+        {"weight" : 0.35, "item" : "avikan-combatrifle" },
+		{"weight" : 0.35, "item" : "avikan-sidearm" },
+		{"weight" : 0.01, "item" : "avikan-harbinger" },
+		//MELEE
+		{"weight" : 0.05, "item" : "avikanvanguardaxe" },
+		{"weight" : 0.05, "item" : "avikanvanguardbroadsword" },
+		{"weight" : 0.05, "item" : "avikanvanguarddagger" },
+		{"weight" : 0.05, "item" : "avikanvanguardhammer" },
+		{"weight" : 0.05, "item" : "avikanvanguardshortsword" },
+		{"weight" : 0.05, "item" : "avikanvanguardspear" }
+      ]
+    } ]
+  ],
+  
+  "avikangrenades" : [
+    [1, {
+      "poolRounds" : 1,
+      "pool" : [
+        {"weight" : 0.33, "item" : [ "avikanthrowablegrenade", 8 ] },
+		{"weight" : 0.33, "item" : [ "avikanthrowablegrenade", 12 ] },
+		{"weight" : 0.33, "item" : [ "avikanexplosive", 6 ] }
+      ]
+    } ]
+  ],
+  
+  "avikanboneweapondrops" : [
+    [0, {
+	  "pool" : [
+		{"weight" : 0.15, "item" : "avikantier1axe" },
+		{"weight" : 0.15, "item" : "avikantier1broadsword" },
+		{"weight" : 0.15, "item" : "avikantier1dagger" },
+		{"weight" : 0.15, "item" : "avikantier1hammer" },
+		{"weight" : 0.15, "item" : "avikantier1shortsword" },
+		{"weight" : 0.15, "item" : "avikantier1spear" }
+      ]
+    } ],
+	[1, {
+	  "pool" : [
+        {"weight" : 0.15, "item" : "avikantier2axe" },
+		{"weight" : 0.15, "item" : "avikantier2broadsword" },
+		{"weight" : 0.15, "item" : "avikantier2dagger" },
+		{"weight" : 0.15, "item" : "avikantier2hammer" },
+		{"weight" : 0.15, "item" : "avikantier2shortsword" },
+		{"weight" : 0.15, "item" : "avikantier2spear" }
+      ]
+    } ],
+	[2, {
+	  "pool" : [
+        {"weight" : 0.15, "item" : "avikantier3axe" },
+		{"weight" : 0.15, "item" : "avikantier3broadsword" },
+		{"weight" : 0.15, "item" : "avikantier3dagger" },
+		{"weight" : 0.15, "item" : "avikantier3hammer" },
+		{"weight" : 0.15, "item" : "avikantier3shortsword" },
+		{"weight" : 0.15, "item" : "avikantier3spear" }
+      ]
+    } ],
+	[3, {
+	  "pool" : [
+        {"weight" : 0.15, "item" : "avikantier4axe" },
+		{"weight" : 0.15, "item" : "avikantier4broadsword" },
+		{"weight" : 0.15, "item" : "avikantier4dagger" },
+		{"weight" : 0.15, "item" : "avikantier4hammer" },
+		{"weight" : 0.15, "item" : "avikantier4shortsword" },
+		{"weight" : 0.15, "item" : "avikantier4spear" }
+      ]
+    } ]
+  ],
+  
+	//AVIKAN SPECIFIC LOOT
+  "avikanoutpostpipechest" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "avikanarmring", 1 ]}
+      ]
+    } ]
+  ],
+  
+  "avikanoutpostblackmarketchest" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "avikanblackmarketshipment-codex", 1 ]}
+      ]
+    } ]
+  ],
+
+  "avikancolonyshockcore" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "avikanshockcore", 1 ]}
+      ]
+    } ]
+  ],
+  
+  "avikanfoodplatedrop" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "avikanmeal", 1 ]}
+      ]
+    } ]
+  ],
+  
+  "avikandrinkdrop" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "kadavancactusjuice", 1 ]}
+      ]
+    } ]
+  ],
+
+	//GENERIC AVIKAN POOLS
+  "avikanfarming" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.15, "item" : "avikancactusseed" },
+		{"weight" : 0.15, "item" : "kadavancactus" },
+		{"weight" : 0.15, "item" : "avikanspiceplantseed" },
+		{"weight" : 0.15, "item" : "avikanspices" },
+		{"weight" : 0.1, "item" : "bolbohnseed" },
+		{"weight" : 0.1, "item" : "bolbohn" },
+		{"weight" : 0.1, "item" : "dunestalkseed" },
+		{"weight" : 0.1, "item" : "dunestalk" }
+      ]
+    } ]
+  ],
+  
+  "avikanfood" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.25, "item" : "avikanmeatchunk" },
+		{"weight" : 0.05, "item" : "avikanmeal" },
+		{"weight" : 0.25, "item" : "dunebun" },
+		{"weight" : 0.05, "item" : "stuffeddunebun" },
+		{"weight" : 0.25, "item" : "kadavancactusjuice" },
+		{"weight" : 0.05, "item" : "kadavanmeatjuice" },
+		{"weight" : 0.05, "item" : "spicebol" },
+		{"weight" : 0.05, "item" : "bolbohnjam" }
+      ]
+    } ]
+  ],
+  
+  "avikancraftingmaterials" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.25, "item" : "avikanmetal" },
+		{"weight" : 0.20, "item" : "avikandarkmetal" },
+		{"weight" : 0.20, "item" : "monsterleather" },
+		{"weight" : 0.20, "item" : "monsterbone" },
+		{"weight" : 0.05, "item" : "avikancloth" },
+		{"weight" : 0.05, "item" : "avikandyes" },
+		{"weight" : 0.05, "item" : "avikanstring" }
+      ]
+    } ]
+  ],
+  
+  "avikancraftingmaterialsstockpile" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.20, "item" : ["avikanmetal", 25] },
+		{"weight" : 0.20, "item" : ["avikandarkmetal", 25] },
+		{"weight" : 0.20, "item" : ["monsterleather", 25] },
+		{"weight" : 0.20, "item" : ["monsterbone", 25] },
+		{"weight" : 0.20, "item" : ["avikancloth", 25] }
+      ]
+    } ]
+  ],
+  
+  "avikanclothing" : [
+    [1, {
+      "pool" : [
+        //ENGINEER SET
+		{"weight" : 0.20, "item" : "avikan-engineerhead" },
+		{"weight" : 0.20, "item" : "avikan-engineerchest" },
+		{"weight" : 0.20, "item" : "avikan-engineerlegs" },
+		//PRIEST SETS
+		{"weight" : 0.20, "item" : "avikan-highpriestchest" },
+		{"weight" : 0.20, "item" : "avikan-priestchest" },
+		{"weight" : 0.20, "item" : "avikan-priestlegs" },
+		//TACTICAL SETS
+		{"weight" : 0.20, "item" : "avikan-tacticalhead" },
+		{"weight" : 0.20, "item" : "avikan-tacticalchest" },
+		{"weight" : 0.20, "item" : "avikan-tacticalchest2" },
+		{"weight" : 0.20, "item" : "avikan-tacticallegs" },
+		//VANGUARD SET
+		{"weight" : 0.20, "item" : "avikan-vanguardhead" },
+		{"weight" : 0.20, "item" : "avikan-vanguardchest" },
+		{"weight" : 0.20, "item" : "avikan-vanguardlegs" },
+		//WARRIOR SET
+		{"weight" : 0.20, "item" : "avikan-warriorchest" },
+		{"weight" : 0.20, "item" : "avikan-warriorlegs" },
+		//HELMETS AND VISORS
+		{"weight" : 0.20, "item" : "avikan-openhelmet" },
+		{"weight" : 0.20, "item" : "avikan-sunglass" },
+		//BACK ITEMS
+		{"weight" : 0.20, "item" : "avikanmodernpack" },
+		{"weight" : 0.20, "item" : "avikanspearback" }
+      ]
+    } ]
+  ],
+  
+	//AVIKAN CODICES
+  "avikancodex" : [
+    [1, {
+	  "pool" : [
+        {"weight" : 0.5, "pool" : "avikanothercodex" },
+		{"weight" : 1.0, "pool" : "avikanhistorycodex" },
+		{"weight" : 1.0, "pool" : "avikanrhadeiscodex" }
+      ]
+    } ]
+  ],
+  
+  "avikanothercodex" : [
+    [1, {
+	  "pool" : [
+        {"weight" : 1.0, "item" : "avikangods1-codex" },
+		{"weight" : 1.0, "item" : "avikanlineriflewarning-codex" },
+		{"weight" : 1.0, "item" : "avikanramblings-codex" },
+		{"weight" : 1.0, "item" : "kadavanlocations-codex" }
+      ]
+    } ]
+  ],
+  
+  "avikanhistorycodex" : [
+    [1, {
+      "poolRounds" : [
+        [0.9, 1],
+        [0.1, 2]
+      ],
+	  "pool" : [
+        {"weight" : 1.0, "item" : "avikanhistory1-codex" },
+		{"weight" : 1.0, "item" : "avikanhistory2-codex" },
+		{"weight" : 1.0, "item" : "avikanhistory3-codex" },
+		{"weight" : 1.0, "item" : "avikanhistory4-codex" },
+		{"weight" : 1.0, "item" : "avikanhistory5-codex" },
+		{"weight" : 1.0, "item" : "avikanhistory6-codex" },
+		{"weight" : 1.0, "item" : "avikanhistory7-codex" }
+      ]
+    } ]
+  ],
+  
+  "avikanrhadeiscodex" : [
+    [1, {
+      "poolRounds" : [
+        [0.9, 1],
+        [0.1, 2]
+      ],
+	  "pool" : [
+        {"weight" : 1.0, "item" : "avikanrhadeis1-codex" },
+		{"weight" : 1.0, "item" : "avikanrhadeis2-codex" },
+		{"weight" : 1.0, "item" : "avikanrhadeis3-codex" },
+		{"weight" : 1.0, "item" : "avikanrhadeis4-codex" },
+		{"weight" : 1.0, "item" : "avikanrhadeis5-codex" },
+		{"weight" : 1.0, "item" : "avikanrhadeis6-codex" },
+		{"weight" : 1.0, "item" : "avikanrhadeis7-codex" }
+      ]
+    } ]
+  ]
+  
+}
+

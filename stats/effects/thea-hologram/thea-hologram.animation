@@ -1,0 +1,40 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "projector" : {
+        "default" : "on",
+        "states" : {
+          "on" : {
+            "frames" : 6,
+            "cycle" : 0.7,
+            "mode" : "loop"
+          }
+        }
+      }
+    },
+    "parts" : {
+      "projector" : {
+        "properties" : {
+          "zLevel" : 0,
+		  "fullbright" : false
+        },
+        "partStates" : {
+          "projector" : {
+            "on" : {
+              "properties" : {
+                "image" : "thea-hologramprojector.png:on.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [150, 96, 0]
+    }
+  }
+}

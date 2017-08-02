@@ -1,0 +1,190 @@
+{
+  "objectName" : "avikanleathercrafting",
+  "colonyTags" : ["avikan","crafting"],
+  "rarity" : "Uncommon",
+  "race" : "avikan",
+  "category" : "crafting",
+
+  //this is handled by the lua
+  "breakDropOptions" : [],
+
+  "price" : 350,
+  "printable" : false,
+
+  "scripts" : [ "/objects/crafting/upgradeablecraftingobjects/upgradeablecraftingobject.lua" ],
+
+  "animation" : "avikanleathercrafting.animation",
+  "animationPosition" : [20, 16],
+
+  "inventoryIcon" : "avikanleathercraftingicon.png",
+  "placementImage" : "avikanleathercrafting.png:default",
+  "placementImagePosition" : [0, 0],
+
+  "description" : "The tanning rack is used for constructing items made of monster leather.",
+  "shortdescription" : "^orange;Avikan Tanning Rack^white;",
+
+  "apexDescription" : "A simple tanning rack. I can craft items made of leather here.",
+  "avianDescription" : "Tanning racks are primitive tools, but they're still very usable.",
+  "floranDescription" : "Floran use tanning rack to craft leather from monsster sskin...",
+  "glitchDescription" : "Displeased. Tanning leather is a very time consuming practise.",
+  "humanDescription" : "A primitive tool, but this tanning rack should allow me to craft some nice leather items.",
+  "hylotlDescription" : "A tanning rack. It saddens me to think that this skin once belonged to a living, breathing creature.",
+  "novakidDescription" : "A tannin' rack? Let's go make me some new boots!",
+
+  "aegiDescription" : "All the equipment you need for crafting leather items.",
+  "avikanDescription" : "A traditional tanning rack. I can craft many leather items here.",
+  "erixianDescription" : "A tool from ancient times. Who still uses such things these days?",
+  "trinkDescription" : "A tanning rack. It does its job, but not very efficiently.",
+  "hymidDescription" : "Leather isn't the prettiest material, but items crafted from it are certainly tough.",
+  "notixDescription" : "I could craft some leather items here.",
+  "jorgasianDescription" : "Tanning racks are still widely used amongst the Avikan.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Analysis complete. Tanning rack. Used to construct equipment and other items made of leather.",
+
+  "learnBlueprintsOnPickup" : [],
+
+
+  "startingUpgradeStage" : 1,
+  "maxUpgradeStage" : 2,
+  "upgradeStages" : [
+    {
+      "animationState" : "avikanleathercrafting",
+
+      "itemSpawnParameters" : {
+        "price" : 350,
+        "inventoryIcon" : "avikanleathercraftingicon.png",
+        "placementImage" : "avikanleathercrafting.png:default",
+        "placementImagePosition" : [0, 0],
+
+        "description" : "The tanning rack is used for constructing items made of monster leather.",
+		"shortdescription" : "^orange;Avikan Tanning Rack^white;",
+
+		"apexDescription" : "A simple tanning rack. I can craft items made of leather here.",
+		"avianDescription" : "Tanning racks are primitive tools, but they're still very usable.",
+		"floranDescription" : "Floran use tanning rack to craft leather from monsster sskin...",
+		"glitchDescription" : "Displeased. Tanning leather is a very time consuming practise.",
+		"humanDescription" : "A primitive tool, but this tanning rack should allow me to craft some nice leather items.",
+		"hylotlDescription" : "A tanning rack. It saddens me to think that this skin once belonged to a living, breathing creature.",
+		"novakidDescription" : "A tannin' rack? Let's go make me some new boots!",
+
+		"aegiDescription" : "All the equipment you need for crafting leather items.",
+		"avikanDescription" : "A traditional tanning rack. I can craft many leather items here.",
+		"erixianDescription" : "A tool from ancient times. Who still uses such things these days?",
+		"trinkDescription" : "A tanning rack. It does its job, but not very efficiently.",
+		"hymidDescription" : "Leather isn't the prettiest material, but items crafted from it are certainly tough.",
+		"notixDescription" : "I could craft some leather items here.",
+		"jorgasianDescription" : "Tanning racks are still widely used amongst the Avikan.",
+		"centensDescription" : "TODO.",
+		"dremetonDescription" : "TODO.",
+		"theleanDescription" : "TODO.",
+		"drodenDescription" : "Analysis complete. Tanning rack. Used to construct equipment and other items made of leather."
+      },
+
+      "interactData" : {
+        "config" : "/interface/windowconfig/avikanleathercrafting.config",
+        "paneLayoutOverride" : {
+          "windowtitle" : {
+            "title" : " Tanning Rack",
+            "subtitle" : " ^#b9b5b2;Leather furniture and items",
+            "icon" : {
+              "file" : "/interface/crafting/craftingavikanleather.png"
+            }
+          }
+        },
+        "filter" : [ "avikanleathercrafting" ],
+        "upgradeMaterials" : [
+          { "item" : "monsterleather", "count" : 10 },
+          { "item" : "avikanmetal", "count" : 10 },
+          { "item" : "avikandarkmetal", "count" : 5 },
+          { "item" : "avikancircuitry", "count" : 1 }
+        ]
+      },
+
+      "learnBlueprintsOnPickup" : [],
+
+      "upgradeSoundEffect" : "fanfare",
+      "upgradeParticleEffect" : "dust"
+    },
+
+    {
+      "animationState" : "avikanleathercrafting2",
+
+      "itemSpawnParameters" : {
+        "price" : 750,
+        "inventoryIcon" : "avikanleathercrafting2icon.png",
+        "placementImage" : "avikanleathercrafting2.png:default.default",
+        "placementImagePosition" : [0, 0],
+
+        "description" : "The leatherworking station is used for constructing items made of monster leather.",
+		"shortdescription" : "^orange;Avikan Leatherworking Station^white;",
+
+		"apexDescription" : "This automated leatherworking station can create a large variety of leather items.",
+		"avianDescription" : "Leatherworking has never been so easy! Automated crafting really is the future.",
+		"floranDescription" : "Floran tellsss machine to make leather... Machine obeys Floran!",
+		"glitchDescription" : "Excited. This station will craft almost any leather item I request.",
+		"humanDescription" : "Automated tanning and leatherworking. Convenient!",
+		"hylotlDescription" : "This machine processes leather far more efficiently than any person ever could.",
+		"novakidDescription" : "So, this 'ere machine will craft me leather items? Can it make me a new hat, too?",
+
+		"aegiDescription" : "High-quality leather items can be crafted here.",
+		"avikanDescription" : "This machine allows me to craft leather items of an even higher quality.",
+		"erixianDescription" : "A big upgrade from a simple tanning rack.",
+		"trinkDescription" : "Machines are far more efficient at leatherworking than any organic ever could be.",
+		"hymidDescription" : "An automated leatherworking station. It can craft leather items of an oustanding quality.",
+		"notixDescription" : "An automated leatherworking station, for crafting high quality leather items.",
+		"jorgasianDescription" : "A high-tech machine for crafting leather items of a higher quality.",
+		"centensDescription" : "TODO.",
+		"dremetonDescription" : "TODO.",
+		"theleanDescription" : "TODO.",
+		"drodenDescription" : "Analysis complete. Leatherworking station. Used to construct equipment and other items made of leather."
+      },
+
+      "interactData" : {
+        "config" : "/interface/windowconfig/avikanleathercrafting.config",
+        "paneLayoutOverride" : {
+          "windowtitle" : {
+            "title" : " Leatherworking Station",
+            "subtitle" : " ^#b9b5b2;Leather furniture and items",
+            "icon" : {
+              "file" : "/interface/crafting/craftingavikanleather2.png"
+            }
+          }
+        },
+        "filter" : [ "avikanleathercrafting", "avikanleathercrafting2" ],
+		"craftingSound" : "/sfx/interface/crafting_sewing.ogg"
+      },
+
+      "learnBlueprintsOnPickup" : []
+    }
+  ],
+
+  "orientations" : [
+    {
+      "image" : "avikanleathercrafting.png:<color>",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true,
+      "spaces" : [
+        [0, 3], [1, 3], [2, 3], [3, 3], [4, 3],
+        [0, 2], [1, 2], [2, 2], [3, 2], [4, 2],
+        [0, 1], [1, 1], [2, 1], [3, 1], [4, 1],
+        [0, 0], [1, 0], [2, 0], [3, 0], [4, 0]
+      ],
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "avikanleathercrafting.png:<color>",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+      "spaces" : [
+        [0, 3], [1, 3], [2, 3], [3, 3], [4, 3],
+        [0, 2], [1, 2], [2, 2], [3, 2], [4, 2],
+        [0, 1], [1, 1], [2, 1], [3, 1], [4, 1],
+        [0, 0], [1, 0], [2, 0], [3, 0], [4, 0]
+      ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

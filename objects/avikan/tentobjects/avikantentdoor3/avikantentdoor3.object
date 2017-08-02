@@ -1,0 +1,66 @@
+{
+  "objectName" : "avikantentdoor3",
+  "colonyTags" : ["avikan", "door"],
+  "rarity" : "Common",
+  "category" : "door",
+  "printable" : false,
+  "price" : 60,
+  "description" : "A tent door decorated in the style of the Rhaiod.",
+  "shortdescription" : "Rhaiod Tent Door",
+  "race" : "avikan",
+
+  "apexDescription" : "A pruple tent door.",
+  "avianDescription" : "A tent door made of a purple fabric.",
+  "floranDescription" : "Fabric doorsss can't ssstop Floran.",
+  "glitchDescription" : "Observation. A tent door made of an unusual fabric.",
+  "humanDescription" : "A fabric tent door coloured in an odd shade of purple.",
+  "hylotlDescription" : "A simplistically decorated tent door.",
+
+  "aegiDescription" : "A tent door decorated in the style of the Rhaiod.",
+  "avikanDescription" : "The door to a Rhaiod tent.",
+  "erixianDescription" : "A tent door made of purple fabric.",
+  "trinkDescription" : "The door to a tent.",
+  "hymidDescription" : "A purple-coloured tent door.",
+  "notixDescription" : "A purple tent door.",
+  "jorgasianDescription" : "A tent door made of purple fabric.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected tent door. Colour suggests this tent belongs to the Rhaiod.",
+
+  "inventoryIcon" : "avikantentdoor3icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikantentdoor3.png:default",
+      "imagePosition" : [0, 0],
+      "renderLayer" : "Object+5",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom", "background" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/door/door.lua" ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/door/door.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/bed_leave.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/objects/bed_enter.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "avikantentdoor3.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "inputNodes" : [ [-1, 4] ],
+  "outputNodes" : [ [1, 0] ]
+}

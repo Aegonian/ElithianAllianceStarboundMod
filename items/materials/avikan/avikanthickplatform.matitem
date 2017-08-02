@@ -1,0 +1,14 @@
+{
+  "itemName" : "avikanthickplatform",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "avikanthickplatform.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "description" : "A metal platform, coloured like sand.",
+  "shortdescription" : "Thick Avikan Platform",
+  "glitchDescription" : "Statement. A strong metal platform.",
+  "floranDescription" : "Metal platformsss",
+
+  "materialId" : 30103
+}

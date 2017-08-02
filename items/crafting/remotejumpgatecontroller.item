@@ -1,0 +1,10 @@
+{
+  "itemName" : "remotejumpgatecontroller",
+  "price" : 1000,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "remotejumpgatecontroller.png",
+  "description" : "This device can remotely control a jumpgate installed onto your ship.",
+  "shortdescription" : "Jumpgate Controller",
+  "itemTags" : [ "reagent" ]
+}

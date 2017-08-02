@@ -1,0 +1,56 @@
+{
+  "objectName" : "avikanoutpostbar",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Legendary",
+  "description" : "The perfect place to get a drink.",
+  "shortdescription" : "Starsight Inn Bar",
+  "race" : "avikan",  
+  
+  "floranDescription" : "Let'sss get a drink.",
+  "glitchDescription" : "Curious. Perhaps this bar offers more than just drinks.",
+  "drodenDescription" : "Analysis. Starsight Inn Bar. Popularity: high.",
+  
+  "interactAction" : "OpenMerchantInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/merchant.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "Starsight Inn Bar",
+        "subtitle" : "  Food, drinks and laughter."
+      }
+    },
+    "buyFactor" : 2.0,
+    "sellFactor" : 0.2,
+    "items" : [
+      { "item" : "kadavancactusjuice" },
+      { "item" : "kadavanmeatjuice" },
+      { "item" : "dunebun" },
+      { "item" : "stuffeddunebun" },
+      { "item" : "spicebol" },
+      { "item" : "bolbohnjam" },
+      { "item" : "avikanmeal" }
+	]
+  },
+  "printable" : false,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "avikanoutpostbar.png",
+      "direction" : "right",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+	  "spaces" : [
+        [6, 3], [7, 3], [8, 3],
+        [6, 2], [7, 2], [8, 2],
+        [6, 1], [7, 1], [8, 1],
+        [6, 0], [7, 0], [8, 0]
+      ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+
+}

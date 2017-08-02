@@ -1,0 +1,13 @@
+{
+  "itemName" : "avikanmerittoken",
+  "price" : 0,
+  "maxStack" : 9999,
+  "rarity" : "Rare",
+  "category" : "currency",
+  "tooltipKind" : "tool",
+  "inventoryIcon" : "avikanmerittoken.png",
+  "largeImage" : "avikanmerittokenlarge.png",
+  "description" : "A token of merit, to show your worth amongst the Avikan.",
+  "shortdescription" : "^#0094FF;Token of Merit^white;",
+  "itemTags" : [ "avikanmerittoken" ]
+}

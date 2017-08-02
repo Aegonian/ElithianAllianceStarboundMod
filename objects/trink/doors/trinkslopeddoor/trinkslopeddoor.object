@@ -1,0 +1,87 @@
+{
+  "objectName" : "trinkslopeddoor",
+  "colonyTags" : ["trink", "door"],
+  "rarity" : "Common",
+
+  "category" : "door",
+  "price" : 65,
+  "description" : "A sturdy sloped metal door of Trinkian design.",
+  "shortdescription" : "Trinkian Sloped Door",
+  "race" : "trink",
+  
+  "health" : 4,
+
+  "apexDescription" : "A sturdy sloped metal door.",
+  "avianDescription" : "A shiny sloped door.",
+  "floranDescription" : "Floran wondersss what is behind metal doorsss.",
+  "glitchDescription" : "Statement. A sloped metal door.",
+  "humanDescription" : "Cool sloped door.",
+  "hylotlDescription" : "A heavy sloped metal door. Effective at keeping things out.",
+  "novakidDescription" : "A fine sloped door made of strong metal. Ain't nothing coming through here.",
+  
+  "aegiDescription" : "A sloped door of Trinkian design.",  
+  "avikanDescription" : "A sloped metal door built by machines.",
+  "erixianDescription" : "A sloped metal door. Not quite a blast door, but still very strong.",
+  "trinkDescription" : "An efficient way to seal off an entire compartment.",
+  "hymidDescription" : "A Trinkian sloped door.",
+  "notixDescription" : "A sloped metal door.",
+  "jorgasianDescription" : "A sloped door.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected door. Analysis: Sloped model.",
+
+  "inventoryIcon" : "trinkslopeddooricon.png",
+  "orientations" : [
+    {
+      "image" : "trinkslopeddoor.png:default",
+      "direction" : "right",
+      "imagePosition" : [-40, 0],
+      "renderLayer" : "Object+5",
+      "spaceScan" : 0.1,
+      "fgAnchors" : [ [-5, 5],[-5, 5],
+                         
+                              [-1,-1],[ 0,-1],[ 1,-1] ],
+      "animationPosition" : [-40, 0]
+    },
+    {
+      "image" : "trinkslopeddoor.png:default",
+      "direction" : "left",
+      "flipImages" : true,
+      "imagePosition" : [-8, 0],
+      "renderLayer" : "Object+5",
+      "spaceScan" : 0.1,
+      "fgAnchors" : [         [ 4, 5],[ 5, 5],
+                         
+                      [-1,-1],[ 0,-1],[ 1,-1] ],
+      "animationPosition" : [-8, 0]
+    }
+  ],
+
+  "scripts" : [ "/objects/scripts/thea-flippabledoor.lua" ], //Custom LUA script provided by Storm_UK for flipping input nodes based on facing direction, modified by Aegonian for greater versatility
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/door/door.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_open.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_close.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "trinkslopeddoor.png"
+  },
+
+  "inputNodes"  : [ [-4, 4] ],
+  "outputNodes" : [ [0, 0] ],
+  
+  //Config for flipped nodes
+  "flippedInputNodes"  : [ [4, 4] ],
+  "flippedOutputNodes" : [ [0, 0] ]
+}

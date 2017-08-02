@@ -1,0 +1,12 @@
+{
+  "itemName" : "avikantransmitter",
+  "price" : 250,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "avikantransmitter.png",
+  "description" : "A transmitter capable of communicating with the Central Avikan Network.",
+  "shortdescription" : "Avikan Transmitter",
+  "itemTags" : [ "reagent" ],
+  
+  "learnBlueprintsOnPickup" : [ "remotejumpgatecontroller" ]
+}

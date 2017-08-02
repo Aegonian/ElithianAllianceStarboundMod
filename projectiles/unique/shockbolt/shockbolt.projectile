@@ -1,0 +1,20 @@
+{
+  "projectileName" : "shockbolt",
+  "image" : "shockbolt.png",
+  "animationCycle" : 0.35,
+  "damageKindImage" : "icon.png",
+  "frameNumber" : 4,
+  "power" : 50,
+  "speed" : 75,
+  "lightColor" : [40, 60, 100],
+  "fullbright" : true,
+  "timeToLive" : 0.35,
+  "bounces" : 1,
+  "piercing" : true,
+  "emitters" : [ "handofrhadeisswoosh" ],
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "damageKind" : "electric",
+  "statusEffects" : [
+    "electrified"
+  ]
+}

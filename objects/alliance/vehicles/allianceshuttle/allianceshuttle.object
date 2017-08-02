@@ -1,0 +1,53 @@
+{
+  "objectName" : "allianceshuttle",
+  "colonyTags" : ["alliance","vehicle"],
+  "rarity" : "Legendary",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 2500,
+  "description" : "A ground-to-space transport vessel.",
+  "shortdescription" : "Alliance Shuttlecraft",
+  "race" : "aegi",
+  
+  "health" : 6,
+
+  "apexDescription" : "This shuttle can transport people and cargo from the surface to spaceships in orbit.",
+  "avianDescription" : "A flying transport vehicle. It would be better with wings.",
+  "floranDescription" : "Flying in sssmall sship makess Floran sssick.",
+  "glitchDescription" : "Fascinated. This vehicle can easily transport people and cargo from the ground into orbit.",
+  "humanDescription" : "A shuttle, for ground-to-space transportation.",
+  "hylotlDescription" : "A sleek transportation vessel.",
+  "novakidDescription" : "I'm sure this'll fly like a charm.",
+
+  "aegiDescription" : "The ASA-26 Ranger, perhaps the most popular vehicle built by ASA.",
+  "avikanDescription" : "An alien shuttle. It reminds me a bit of our own dropships.",
+  "erixianDescription" : "A standard Alliance shuttle, the ASA-26 Ranger.",
+  "trinkDescription" : "The ASA-26 Ranger is a highly efficient shuttle, and deserves to be so popular.",
+  "hymidDescription" : "An ASA-26 Ranger, the standard shuttle used throughout the Alliance.",
+  "notixDescription" : "No other shuttle is as widely used as the always-reliable ASA-26 Ranger.",
+  "jorgasianDescription" : "Even in the Triple Alliance, the ASA-26 Ranger is a common sight.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien spacecraft.",
+
+  "inventoryIcon" : "allianceshuttleicon.png",
+  "orientations" : [
+    {
+      "image" : "allianceshuttle.png:<color>",
+      "imagePosition" : [-72, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+	{
+      "image" : "allianceshuttleleft.png:<color>",
+      "imagePosition" : [-72, 0],
+      "direction" : "left",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

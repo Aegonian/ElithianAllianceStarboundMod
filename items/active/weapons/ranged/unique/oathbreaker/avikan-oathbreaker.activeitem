@@ -1,0 +1,109 @@
+{
+  "itemName" : "avikan-oathbreaker",
+  "price" : 1500,
+  "inventoryIcon" : "avikan-oathbreaker.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;A shotgun firing a single devastating slug.",
+  "shortdescription" : "^orange;Oathbreaker's Sorrow^white;",
+  "level" : 6,
+  "tooltipKind" : "thea-gun-unique",
+  "category" : "Shotgun",
+  "itemTags" : ["weapon","ranged","shotgun","avikan","theaUnique"],
+  "twoHanded" : true,
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "avikan-oathbreaker" },
+  
+  "meritTokenValue" : 100,
+  
+  "cursor" : "/cursors/thea-widereticle.cursor",
+  
+  "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
+  "animationParts" : {
+    "middle" : "avikan-oathbreaker.png",
+    "middleFullbright" : "avikan-oathbreakerlights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+		    "offset" : [0.875, 0.125]
+		  }
+		}
+      }
+    },
+    "particleEmitters" : {
+      "muzzleFlash" : {
+        "transformationGroups" : ["muzzle"],
+		"offsetRegion" : [-2.0, 0.2, -2.0, 0.2],
+        "particles" : [
+          { "particle" : "thea-discardedbullet" }
+        ]
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/oathbreaker_fire2.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.875, 0.125],
+  "muzzleOffset" : [1.375, 0.25],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.9,
+    "baseDps" : 12.5,
+    "energyUsage" : 40.0,
+    "inaccuracy" : 0.06,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "oathbreakerslug",
+    "projectileParameters" : {
+      "knockback" : 35
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 8,
+        "weaponRotation" : 14,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.5,
+        "armRotation" : 8,
+        "weaponRotation" : 14,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

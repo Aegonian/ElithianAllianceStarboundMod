@@ -1,0 +1,44 @@
+{
+  "objectName" : "avikanharpoondisplay",
+  "colonyTags" : ["avikan","combat"],
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 500,
+  "description" : "An Avikan harpoon gun on display.",
+  "shortdescription" : "Vanguard Harpoon Display",
+  "race" : "avikan",
+
+  "apexDescription" : "A very capable harpoon gun. I imagine it can impale enemies with ease.",
+  "avianDescription" : "The size of this harpoon makes me wonder what its creators hunt...",
+  "floranDescription" : "Thisss sstick fires metal sspearsss? Floran likesss...",
+  "glitchDescription" : "Intimidated. I wouldn't want to meet whatever creature this harpoongun is meant to hunt.",
+  "humanDescription" : "Now THAT is a harpoon gun!",
+  "hylotlDescription" : "A harpoon gun. What is it meant to hunt?",
+
+  "aegiDescription" : "The creatures the Avikan hunt with this weapon must be enormous.",
+  "avikanDescription" : "Few weapons can pierce a Sandstalker's skin. This weapon does it with ease.",
+  "erixianDescription" : "An intimidating harpoon gun.",
+  "trinkDescription" : "This harpoon gun was built to hunt massive creatures.",
+  "hymidDescription" : "Would this harpoon gun work underwater?",
+  "notixDescription" : "The Avikan must have hunted massive creatures on their homeplanet.",
+  "jorgasianDescription" : "An Avikan-designed harpoon gun. Rather impressive.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Warning. Harpoon guns can cause lethal damage.",
+  
+  "inventoryIcon" : "avikanharpoondisplay.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanharpoondisplay.png:<color>",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

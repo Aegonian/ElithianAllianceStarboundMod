@@ -1,0 +1,10 @@
+{
+  "itemName" : "avikanbattery",
+  "price" : 50,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "avikanbattery.png",
+  "description" : "A compact battery packing a lot of power.",
+  "shortdescription" : "Avikan Battery",
+  "itemTags" : [ "reagent" ]
+}

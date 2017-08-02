@@ -1,0 +1,95 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "stage" : {
+        "default" : "trinkcrafting",
+        "states" : {
+          "trinkcrafting" : {},
+          "trinkcrafting2" : {
+            "frames" : 15,
+            "cycle" : 1.5,
+            "mode" : "loop"
+          },
+          "trinkcrafting3" : {
+            "frames" : 30,
+            "cycle" : 3.0,
+            "mode" : "loop"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "lights" : {
+        "properties" : {
+		  "zLevel" : 1,
+          "centered" : true,
+		  "fullbright" : true
+        },
+        "partStates" : {
+          "stage" : {
+            "trinkcrafting" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+
+            "trinkcrafting2" : {
+              "properties" : {
+                "image" : "trinkcrafting2lights.png:<color>.<frame>"
+              }
+            },
+
+            "trinkcrafting3" : {
+              "properties" : {
+                "image" : "trinkcrafting3lights.png:<color>.<frame>"
+              }
+            }
+          }
+        }
+      },
+	  
+	  "chassis" : {
+        "properties" : {
+		  "zLevel" : 0,
+          "centered" : true
+        },
+        "partStates" : {
+          "stage" : {
+            "trinkcrafting" : {
+              "properties" : {
+                "image" : "trinkcrafting.png:<color>"
+              }
+            },
+
+            "trinkcrafting2" : {
+              "properties" : {
+                "image" : "trinkcrafting2.png:<color>.<frame>"
+              }
+            },
+
+            "trinkcrafting3" : {
+              "properties" : {
+                "image" : "trinkcrafting3.png:<color>.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "sounds" : {
+    "fanfare" : ["/sfx/cinematics/mission_unlock_event.ogg"],
+    "fanfare2" : ["/sfx/cinematics/license_acquired_event.ogg"]
+  },
+
+  "particleEmitters" : {
+    "dust" : {
+      "emissionRate" : 0.0,
+      "burstCount"  : 10,
+      "offsetRegion" : [-2, -2, 2, 2],
+      "particles" : [{ "particle" : "dust2"}]
+    }
+  }
+}

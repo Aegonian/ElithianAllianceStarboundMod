@@ -1,0 +1,28 @@
+{
+  "materialId" : 30061,
+  "materialName" : "trinkgroundpanel",
+  "particleColor" : [85, 85, 85, 255],
+  "itemDrop" : "trinkgroundpanel", 
+  "shortdescription" : "Trinkian Floor",
+  
+  "description" : "A metal floor full of wires and circuitboards.",
+  "glitchDescription" : "Fascinated. Why are there so many wires and circuitboards inside this panel?",
+  "floranDescription" : "Floran wondersss what thiss panel iss made of?",
+  "novakidDescription" : "A floor panel o' sorts.",
+  
+  "drodenDescription" : "Analysis complete. Panel is filled with wiring and circuitboards.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "trinkgroundpanel.png",
+    "variants" : 3,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 100
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "objectName" : "thellhunterweapon",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 10,
+  "description" : "The Thellhunter's weapon - the scribe will be pleased with this.",
+  "shortdescription" : "Thellhunter's Weapon",
+  "race" : "avikan",
+
+  "floranDescription" : "Ssscribe will be happy to ssee thisss weapon...",
+  "glitchDescription" : "Satisfied. The scribe will be pleased to see this weapon.",
+  
+  "avikanDescription" : "The Thellhunter's own weapon - the scribe will be pleased with this.",
+  "theleanDescription" : "The Thellhunter's weapon - the scribe will be pleased with this.",
+  "drodenDescription" : "Detected Avikan weapon. Thellhunter's Bow.",
+
+  "inventoryIcon" : "thellhunterweaponicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "thellhunterweapon.png:<color>",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+  "scripts" : [
+    "/objects/scripts/thea-interactpickup.lua"
+  ],
+  "scriptDelta" : 5,
+  
+  "spawnableItem" : "avikan-thellhuntersbow",
+
+  "animation" : "thellhunterweapon.animation",
+  "animationParts" : {
+    "interactiveObject" : "thellhunterweapon.png"
+  },
+  "animationPosition" : [0, 0]
+  
+}

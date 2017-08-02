@@ -1,0 +1,22 @@
+{
+  "itemName" : "thea-bubbleshieldaugment2",
+  "price" : 10000,
+  "rarity" : "Rare",
+  "tooltipKind" : "eppaugment",
+  "category" : "eppAugment",
+  "inventoryIcon" : "thea-bubbleshieldaugment.png",
+  "description" : "Provides a shield that absorbs a moderate amount of damage before breaking.",
+  "shortdescription" : "Bubble Shield Augment II",
+
+  "augment" : {
+    "type" : "back",
+    "name" : "thea-bubbleshieldaugment2",
+    "displayName" : "Bubble Shield II",
+    "displayIcon" : "/items/augments/back/thea-bubbleshieldaugment.png",
+    "effects" : [ "thea-bubbleshield2" ]
+  },
+
+  "radioMessagesOnPickup" : [ "pickupaugment" ],
+
+  "scripts" : [ "/scripts/augments/augment.lua" ]
+}

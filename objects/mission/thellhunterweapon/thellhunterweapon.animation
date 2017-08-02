@@ -1,0 +1,41 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "interactiveObject" : {
+        "default" : "filled",
+        "states" : {
+          "filled" : {
+            "frames" : 1
+          },
+          "empty" : {
+            "frames" : 1
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "interactiveObject" : {
+        "properties" : {
+          "centered" : false
+        },
+
+        "partStates" : {
+          "interactiveObject" : {
+            "filled" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.filled"
+              }
+            },
+
+            "empty" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.empty"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

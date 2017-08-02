@@ -1,0 +1,87 @@
+{
+  "type" : "crewmembernomadahunter",
+  "baseType" : "crewmemberavikan",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+
+	"crew" : {
+	  "role" : {
+        "type" : "nomadahunter",
+        "name" : "Hunter",
+        "field" : "Hunting",
+        "uniformColorIndex" : 4
+      },
+
+      "ranks" : [
+        "<field> Expert",
+        "Rookie <role>",
+        "Clan's <role>",
+        "Elder <role>",
+        "<field> Enthusiast",
+        "Reliable <role>",
+        "<role> of Sandspitters",
+        "Sandcrawler <field> Expert",
+        "<role>'s Apprentice",
+        "<field> Assistant",
+        "<field> Master",
+        "Master <role>",
+        "Primal <role>",
+        "Independent <role>",
+        "Feral <role>",
+        "<role> of the Desert",
+        "<role> and Provider",
+        "<field> Instructor",
+        "<field> Scavenger"
+      ],
+	  
+	  "defaultUniform" : {
+		"head" : "avikan-tacticalhead",
+		"chest" : "avikan-tacticalchest",
+		"legs" : "avikan-tacticallegs",
+		"back" : "avikanmodernquiver"
+	  },
+	  
+	  "uniformSlots" : []
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+			"head" : [ { "name" : "avikan-tacticalhead", "data" : { "colorIndex" : 4 } } ],
+			"chest" : [ { "name" : "avikan-tacticalchest", "data" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "avikan-tacticallegs", "data" : { "colorIndex" : 4 } } ],
+            "back" : [ { "name" : "avikanmodernquiver", "data" : { "colorIndex" : 4 } } ],
+            "primary" : [ 
+			  "avikan-nomadabow",
+			  "avikan-nomadacrossbow"
+			],
+            "sheathedprimary" : [
+			  "avikantier6huntingspear",
+			  "avikanhuntingknife2"
+			]
+          },
+          {
+			"head" : [ { "name" : "avikan-tacticalhead", "data" : { "colorIndex" : 4 } } ],
+			"chest" : [ { "name" : "avikan-tacticalchest", "data" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "avikan-tacticallegs", "data" : { "colorIndex" : 4 } } ],
+            "back" : [ { "name" : "avikanmodernquiver", "data" : { "colorIndex" : 4 } } ],
+            "primary" : [ 
+			  "avikantier6huntingspear",
+			  "avikanhuntingknife2"
+			],
+            "sheathedprimary" : [
+			  "avikan-nomadabow",
+			  "avikan-nomadacrossbow"
+			]
+          }
+        ] ]
+    ]
+  }
+}

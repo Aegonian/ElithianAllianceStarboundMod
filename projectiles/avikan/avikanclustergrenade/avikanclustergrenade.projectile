@@ -1,0 +1,62 @@
+{
+  "projectileName" : "avikanclustergrenade",
+  "physics" : "grenade",
+  "bounces" : 0,
+  "timeToLive" : 3,
+  "image" : "avikanclustergrenade.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "emitters" : [ "rocketsmoke" ],
+  "speed" : 20,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/avikanairstrikeexplosion/avikanairstrikeexplosion.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanminigrenade",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.15,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanminigrenade",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.15,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanminigrenade",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.15,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanminigrenade",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.15,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanminigrenade",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.15,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanminigrenade",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.15,
+      "angleAdjust" : 0
+    }
+  ],
+  "power" : 50,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

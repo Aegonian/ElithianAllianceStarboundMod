@@ -1,0 +1,51 @@
+{
+  "objectName" : "avikandrink",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 20,
+  "description" : "A glass of Kadavan Cactus Juice.",
+  "shortdescription" : "Avikan Drink",
+  "race" : "avikan",
+
+  "apexDescription" : "Prickly cactus juice. Are there spines floating in it?",
+  "avianDescription" : "Cactus juice, I think. There's some sort of thorns floating in it...",
+  "floranDescription" : "Drinksss.",
+  "glitchDescription" : "Concerned. There are still spines in this cactus juice.",
+  "humanDescription" : "I'm not sure I want to drink that...",
+  "hylotlDescription" : "A glass of cactus juice. The spines floating in it worry me.",
+
+  "aegiDescription" : "Cactus juice. It tastes alright, the those spines floating in it are painful.",
+  "avikanDescription" : "A glass of delicious cactus juice.",
+  "erixianDescription" : "I do not understand why someone would put cactus spines in cactus juice...",
+  "trinkDescription" : "Cactus juice. I am not sure why the Avikan like these better when there's spines in the juice.",
+  "hymidDescription" : "Cactus juice with actual cactus spines in it...",
+  "notixDescription" : "I drank Avikan-made cactus juice once. The spines in it hurt. Badly.",
+  "jorgasianDescription" : "A glass of cactus juice, full of actual cactus spines...",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Analysis complete. Kadavan cactus juice. Cactus spines included.",
+
+  "inventoryIcon" : "avikandrinkicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikandrink.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+  
+  "scripts" : [ "/objects/scripts/breakoninteract.lua" ],
+  "scriptDelta" : 5,
+  
+  "smashDropPool" : "avikandrinkdrop",
+  "breakDropPool" : "avikandrinkdrop"
+}

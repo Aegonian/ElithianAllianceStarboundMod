@@ -1,0 +1,46 @@
+{
+  "objectName" : "avikanslimtable",
+  "colonyTags" : ["avikan", "commerce"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A metal table.",
+  "shortdescription" : "Slim Avikan Table",
+  "race" : "avikan",
+
+  "apexDescription" : "A metal table.",
+  "avianDescription" : "A shiny metal table.",
+  "floranDescription" : "Metal tablesss. Shinysss.",
+  "glitchDescription" : "Statement. A table.",
+  "humanDescription" : "A metal table. Someone should clean it.",
+  "hylotlDescription" : "A well crafted metal table.",
+
+  "aegiDescription" : "A metal table. Not as bulky as most other Avikan-designed tables.",
+  "avikanDescription" : "A metal table from home.",
+  "erixianDescription" : "A sturdy metal table.",
+  "trinkDescription" : "A slim metal table, built by the Avikan.",
+  "hymidDescription" : "A metal table. It has a small drawer.",
+  "notixDescription" : "A pretty basic metal table.",
+  "jorgasianDescription" : "A simple stone pillar for a simple desert village.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected stains. Recommended action: clean.",
+
+  "inventoryIcon" : "avikanslimtableicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanslimtable.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}

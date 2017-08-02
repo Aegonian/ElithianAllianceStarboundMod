@@ -1,0 +1,57 @@
+{
+  "objectName" : "avikansidecanopy",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 60,
+  "description" : "A canopy made of decorated fabric.",
+  "shortdescription" : "Avikan Side Canopy",
+  "race" : "avikan",
+
+  "apexDescription" : "A colourful canopy, it provides a cool shadow during the day.",
+  "avianDescription" : "A colourful canopy.",
+  "floranDescription" : "Bright coloursss.",
+  "glitchDescription" : "Statement. A canopy.",
+  "humanDescription" : "A colourful canopy.",
+  "hylotlDescription" : "The pattern is simple, but the fabric is very well crafted.",
+
+  "aegiDescription" : "A canopy that can be attached to the side of a building for additional shade.",
+  "avikanDescription" : "A finely decorated canopy, for keeping the sun out.",
+  "erixianDescription" : "I prefer the heat over the cool shade such a canopy can cast.",
+  "trinkDescription" : "A canopy made of colourful fabric. Well-woven.",
+  "hymidDescription" : "A birght and colourful canopy, it can cast a valuable shade in the desert.",
+  "notixDescription" : "A canopy, for casting a shade in the warm desert.",
+  "jorgasianDescription" : "Useful for blocking out the sun when it gets too hot.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Canopy. Provides a shade in the desert.",
+
+  "inventoryIcon" : "avikansidecanopyicon.png",
+  "orientations" : [
+    {
+      "image" : "avikansidecanopy.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "left" ],
+      "flipImages" : true,
+      "direction" : "right"
+    },
+    {
+      "image" : "avikansidecanopy.png:<color>",
+
+      "imagePosition" : [-32, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "right" ],
+      "direction" : "left"
+    }
+  ]
+}

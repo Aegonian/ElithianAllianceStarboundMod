@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "avikanmerittoken", "count" : 15 }
+  ],
+  "output" : { "item" : "monsterspine", "count" : 1 },
+  "groups" : [ "avikanmeritshop" ]
+}

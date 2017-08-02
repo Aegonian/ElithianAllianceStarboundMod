@@ -1,0 +1,84 @@
+{
+  "type" : "ao-stationarymerchant",
+  "baseType" : "merchant",
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "scriptConfig" : {
+  
+    "reactions" : {
+      "spontaneous" : [
+      ]
+    },
+    "personalities" : [
+        [1.0, { "personality" : "normal", "reactions" : {} }]
+    ],
+    "behaviorConfig" : {
+      "noticePlayersRadius" : 15,
+	  "play" : false,
+      "chat" : false
+    },
+
+    "questGenerator" : { "pools" : [], "enableParticipation" : false },
+    
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "poolsFile" : "/npcs/merchantpools.config",
+      
+	  "categories" : {
+        "override" : [ "avikanwater", "avikanleather", "avikanweapons", "avikanfood" ]
+      },
+      "buyFactorRange" : [ 0.9, 1.2 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 20,
+	  
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "  Nomada Merchant",
+          "subtitle" : "  Wares from Kadavan."
+        }
+      }
+    },
+
+    "dialog" : {
+      "merchant" : {
+        "start" : "/dialog/merchant.config:merchantStart",
+        "end" : "/dialog/merchant.config:merchantEnd",
+        "follow" : "/dialog/merchant.config:follow",
+        "welcome" : "/dialog/merchant.config:welcome",
+        "tout" : "/dialog/merchant.config:tout"
+      },
+
+      "flee" : {
+        "helpme" : "/dialog/merchant.config:helpme",
+        "helpthem" : "/dialog/merchant.config:helpthem",
+        "encourage" : "/dialog/merchant.config:encourage",
+        "safe" : "/dialog/merchant.config:safe"
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "avikan-merchanthead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "avikan-merchantchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "avikan-merchantlegs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "back" : [
+              { "name" : "avikanmerchantpack", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

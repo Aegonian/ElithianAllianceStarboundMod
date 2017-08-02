@@ -1,0 +1,25 @@
+{
+  "projectileName" : "allianceenergybullet2",
+  "physics" : "laser",
+  "bounces" : 0,
+  "image" : "allianceenergybullet2.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 180,
+  "supportsProcessing" : true,
+  //"emitters" : [ "trinklasertrail" ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+    }
+  ],
+  "lightColor" : [35, 60, 75],
+  "fullbright" : true,
+  "damageKind" : "plasma",
+  
+  "scripts" : [ "/projectiles/scripts/thea-randomspeedprojectile.lua" ],
+  "minSpeed" : 170,
+  "maxSpeed" : 190
+}

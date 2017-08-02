@@ -1,0 +1,15 @@
+{
+  "itemName" : "mecharmlinerifle",
+  "price" : 5600,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "category" : "mechPart",
+  "tooltipKind" : "mecharm",
+  "builder" : "/items/buildscripts/buildmechpart.lua",
+  "inventoryIcon" : "mecharmlinerifle.png",
+  "description" : "A mech arm with a built-in linecharge system.",
+  "shortdescription" : "Linerifle Mech Arm",
+  "itemTags" : [ ],
+
+  "mechPart" : ["arm", "linerifle"]
+}

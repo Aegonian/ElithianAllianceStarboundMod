@@ -1,0 +1,34 @@
+{
+  "itemName" : "avikankeffcontroller",
+  "level" : 1,
+  "price" : 15000,
+  "rarity" : "Rare",
+  "category" : "vehicleController",
+  "description" : "Summons a Keff from your ship's cargo hold.",
+  "shortdescription" : "Keff Controller",
+  "twoHanded" : true,
+  "maxStack" : 1,
+  "itemTags" : ["vehiclecontroller"],
+
+  "animation" : "thea-vehiclecontroller.animation",
+  "scripts" : ["vehiclecontroller.lua"],
+  "animationScripts" : ["vehiclecursor.lua"],
+  "filled" : true,
+  "tooltipKind" : "vehicle",
+  "largeImage" : "/vehicles/avikan/avikankeff/avikankeff.png",
+
+  "respawnTime" : 1.0,
+
+  "vehicleType" : "avikankeff",
+  "vehicleBoundingBox" : [-4.25, -2.25, 4.75, 2.25],
+  "vehicleImage" : "/vehicles/avikan/avikankeff/avikankeff.png",
+
+  "animationParts" : {
+    "casing" : "avikankeffcontroller.png"
+  },
+
+  "inventoryIcon" : "avikankeffcontroller.png:full",
+  "emptyInventoryIcon" : "/items/active/vehiclecontroller/avikankeffcontroller.png:empty",
+  "filledInventoryIcon" : "/items/active/vehiclecontroller/avikankeffcontroller.png:full"
+
+}

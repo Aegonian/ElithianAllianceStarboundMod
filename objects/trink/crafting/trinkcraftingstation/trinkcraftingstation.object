@@ -1,0 +1,78 @@
+{
+  "objectName" : "trinkcraftingstation",
+  "colonyTags" : ["avikan", "crafting"],
+  "rarity" : "Rare",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/theacraftingstation.config",
+    "filter" : [ "theacraftingstation" ]
+  },
+  "printable" : false,
+  "description" : "The Trinkian version of the Unified Alliance Crafting Station.",
+  "shortdescription" : "Trinkian UACS",
+  "race" : "avikan",
+  "category" : "crafting",
+  "price" : 60,
+
+  "apexDescription" : "A high-tech crafting station. Impressive.",
+  "avianDescription" : "A crafting station. Very advanced!",
+  "floranDescription" : "Floran dissslike metal crafting ssstation.",
+  "glitchDescription" : "Fascinated. This crafting station uses highly advanced technology.",
+  "humanDescription" : "An advanced crafting station. Time to craft!",
+  "hylotlDescription" : "A crafting station of incredible quality.",
+
+  "aegiDescription" : "The Trinkian version of the Unified Alliance Crafting Station.",
+  "avikanDescription" : "This crafting station looks impressive, despite the fact it's meant for machines.",
+  "erixianDescription" : "This Unified Alliance Crafting Station has all the tech needed to craft Alliance items.",
+  "trinkDescription" : "The Unified Alliance Crafting Station is an impressive piece of technology indeed.",
+  "hymidDescription" : "The Unified Alliance Crafting Station - a product of our grand alliance, and one I'm proud of.",
+  "notixDescription" : "The Unified Alliance Crafting Station is one of the most obvious examples of shared Alliance technology.",
+  "jorgasianDescription" : "The Unified Alliance Crafting Station, for crafting Alliance-issued items.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "The Unified Alliance Crafting Station. A wonderful piece of technology.",
+  "theleanDescription" : "TODO",
+  "drodenDescription" : "Crafting Station. Use blueprints to craft items.",
+
+  "inventoryIcon" : "trinkcraftingstationicon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "trinkcraftingstationleft.png:<color>.<frame>", "fullbright" : true }, { "image" : "trinkcraftingstationleftlit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-16, 0],
+      "frames" : 32,
+      "animationCycle" : 3.2,
+
+      "spaceScan" : 0.1,
+	  "anchors" : [ "bottom" ],
+      "direction" : "left"
+
+    },
+    {
+	  "imageLayers" : [ { "image" : "trinkcraftingstationright.png:<color>.<frame>", "fullbright" : true }, { "image" : "trinkcraftingstationrightlit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-16, 0],
+      "frames" : 32,
+      "animationCycle" : 3.2,
+
+      "spaceScan" : 0.1,
+	  "anchors" : [ "bottom" ],
+      "direction" : "right"
+
+    }
+  ],
+
+  "scripts" : [ "/scripts/npcToyObject.lua"],
+  "npcToy" : {
+    "influence" : [
+      "crafting"
+    ],
+    "defaultReactions" : {
+      "crafting" : [
+        [1.0, "typing"]
+      ]
+    },
+    "preciseStandPositionLeft" : [-1.0, 0.0],
+    "preciseStandPositionRight" : [1.0, 0.0],
+    "maxNpcs" : 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "objectName" : "avikanlightstrip2",
+  "colonyTags" : ["avikan", "light"],
+  "rarity" : "Common",
+  "category" : "light",
+  "printable" : false,
+  "lightColor" : [230, 230, 230],
+  "flickerDistance" : 0.2,
+  "flickerStrength" : 0.05,
+  "flickerTiming" : 1,
+  "unlit" : true,
+  "price" : 30,
+  "description" : "A simple light strip.",
+  "shortdescription" : "Long Avikan Light",
+  "race" : "avikan",
+
+  "apexDescription" : "A simple light strip.",
+  "avianDescription" : "A light.",
+  "floranDescription" : "Light. Ssshiny.",
+  "glitchDescription" : "Observation. A simple light.",
+  "humanDescription" : "A standard light.",
+  "hylotlDescription" : "A simple light.",
+
+  "aegiDescription" : "A slim, bright light, useful for when there isn't much space.",
+  "avikanDescription" : "An efficient light.",
+  "erixianDescription" : "A standard light.",
+  "trinkDescription" : "Light.",
+  "hymidDescription" : "A simple light.",
+  "notixDescription" : "A strip of light.",
+  "jorgasianDescription" : "An efficient light.",
+  "centensDescription" : "A simple light.",
+  "dremetonDescription" : "A cold light.",
+  "theleanDescription" : "Basic lighting.",
+  "drodenDescription" : "Light.",
+
+  "inventoryIcon" : "avikanlightstrip2icon.png",
+  "orientations" : [
+    {
+      "image" : "avikanlightstrip2.png:<color>.off",
+      "imagePosition" : [-8, 0],
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/fluorescent_light_quiet.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+  
+  "animation" : "/objects/wired/light/lighttoggle.animation",
+  "animationParts" : {
+    "light" : "avikanlightstrip2.png"
+  },
+  "animationPosition" : [-8, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : false,
+
+  "inputNodes" : [ [0, 0] ]
+}

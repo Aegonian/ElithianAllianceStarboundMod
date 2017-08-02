@@ -1,0 +1,37 @@
+{
+  "objectName" : "avikannumber6",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "description" : "Number six, in the Avikan Script.",
+  "shortdescription" : "Six",
+  "race" : "avikan",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 20,
+
+  "apexDescription" : "Number six in an alien script.",
+  "avianDescription" : "An alien number. I believe it is six.",
+  "floranDescription" : "Floran doess not know what alien ssymbol meansss.",
+  "glitchDescription" : "Informed. This alien symbol means six.",
+  "humanDescription" : "Six in some alien script.",
+  "hylotlDescription" : "An alien symbol for the number six.",
+  "novakidDescription" : "Seems this number means six.",
+  
+  "avikanDescription" : "Number six.",
+  "drodenDescription" : "Number. Six.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "avikannumber6.png:<color>",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

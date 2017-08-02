@@ -1,0 +1,62 @@
+{
+  "objectName" : "avikanantenna2",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 60,
+  "description" : "An antenna, for sending and receiving radio messages.",
+  "shortdescription" : "Avikan Antenna",
+  "race" : "avikan",
+  "lightColor" : [40, 26, 0],
+
+  "apexDescription" : "A high antenna, it must have a very long range.",
+  "avianDescription" : "An antenna adorned with a leather sheet. Odd.",
+  "floranDescription" : "Metal antenna makesss for good spearsss...",
+  "glitchDescription" : "Alarmed. This device is causing my communication systems to malfunction.",
+  "humanDescription" : "A long antenna. What's that leather sheet for?",
+  "hylotlDescription" : "An antenna like this wouldn't function underwater.",
+
+  "aegiDescription" : "A large antenna. I wonder what the leather sheet is for?",
+  "avikanDescription" : "Antennas like these allow our colonies to contact the fleet.",
+  "erixianDescription" : "A tall radio antenna. It looks especially cool at night.",
+  "trinkDescription" : "This antenna is jamming my own radio transmitters.",
+  "hymidDescription" : "An antenna. I wonder what sort of messages it is receiving.",
+  "notixDescription" : "This antenna has a very large range.",
+  "jorgasianDescription" : "An antenna of sorts.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Receiving radio signal. Analyzing.",
+
+  "inventoryIcon" : "avikanantenna2icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "avikanantenna2.png:<color>.<frame>", "fullbright" : true }, { "image" : "avikanantenna2lit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-48, 0],
+      "frames" : 6,
+      "animationCycle" : 0.8,
+      "lightPosition" : [0, 8],
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "bottom" ]
+
+    },
+    {
+	  "imageLayers" : [ { "image" : "avikanantenna2.png:<color>.<frame>", "fullbright" : true }, { "image" : "avikanantenna2lit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-24, 0],
+      "frames" : 6,
+      "animationCycle" : 0.8,
+      "lightPosition" : [0, 8],
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

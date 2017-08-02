@@ -1,0 +1,32 @@
+{
+  "projectileName" : "theleanfluxgrenade",
+  "image" : "theleanfluxgrenade.png",
+  "physics" : "grenade",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "lightColor" : [150, 55, 6],
+  "fullbright" : true,
+  "pointLight" : false,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/theleanmediumplasmaexplosion/theleanmediumplasmaexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "emitters" : [ "fireplasma" ],
+  "flippable" : true,
+  "power" : 10.0,
+  "speed" : 55.0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  
+  "scripts" : [ "/projectiles/scripts/thea-homingbullet.lua" ],
+  "searchRadius" : 25,
+  "baseHomingControlForce" : 1.0,
+  
+  "randomStartingSpeed" : true,
+  "minSpeed" : 35,
+  "maxSpeed" : 60
+}

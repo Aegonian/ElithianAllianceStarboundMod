@@ -1,0 +1,15 @@
+{
+  "itemName" : "trinkplating",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "trinkplating.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "shortdescription" : "Trinkian Plating",
+  
+  "description" : "A smooth, dark metal plate.",
+  "glitchDescription" : "Statement. A strong metal plate.",
+  "floranDescription" : "Dark metal platesss...",
+
+  "materialId" : 30066
+}

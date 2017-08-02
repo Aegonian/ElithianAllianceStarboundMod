@@ -1,0 +1,90 @@
+{
+  "type" : "crewmemberclanhunter",
+  "baseType" : "crewmemberavikan",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+
+	"crew" : {
+	  "role" : {
+        "type" : "clanhunter",
+        "name" : "Hunter",
+        "field" : "Hunting",
+        "uniformColorIndex" : 4
+      },
+
+      "ranks" : [
+        "<field> Expert",
+        "Rookie <role>",
+        "Clan's <role>",
+        "Elder <role>",
+        "<field> Enthusiast",
+        "Reliable <role>",
+        "<role> of Sandspitters",
+        "Sandcrawler <field> Expert",
+        "<role>'s Apprentice",
+        "<field> Assistant",
+        "<field> Master",
+        "Master <role>",
+        "Primal <role>",
+        "Independent <role>",
+        "Feral <role>",
+        "<role> of the Desert",
+        "<role> and Provider",
+        "<field> Instructor",
+        "<field> Scavenger"
+      ],
+	  
+	  "defaultUniform" : {
+		"chest" : "avikan-warriorchest",
+		"legs" : "avikan-tier1legs",
+		"back" : "avikanquiver"
+	  },
+	  
+	  "uniformSlots" : []
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+			"chest" : [ { "name" : "avikan-warriorchest", "data" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "avikan-tier1legs", "data" : { "colorIndex" : 4 } } ],
+            "back" : [ { "name" : "avikanquiver", "data" : { "colorIndex" : 4 } } ],
+            "primary" : [ 
+			  "avikan-tier1bow",
+			  "avikan-tier3bow",
+			  "avikan-clanbow",
+			  "avikan-bonecrossbow"
+			],
+            "sheathedprimary" : [
+			  "avikantier2huntingspear",
+			  "avikantier4huntingspear",
+			  "avikanhuntingknife"
+			]
+          },
+          {
+			"chest" : [ { "name" : "avikan-warriorchest", "data" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "avikan-tier1legs", "data" : { "colorIndex" : 4 } } ],
+            "back" : [ { "name" : "avikanquiver", "data" : { "colorIndex" : 4 } } ],
+            "primary" : [ 
+			  "avikantier2huntingspear",
+			  "avikantier4huntingspear",
+			  "avikanhuntingknife"
+			],
+            "sheathedprimary" : [
+			  "avikan-tier1bow",
+			  "avikan-tier3bow",
+			  "avikan-clanbow",
+			  "avikan-bonecrossbow"
+			]
+          }
+        ] ]
+    ]
+  }
+}

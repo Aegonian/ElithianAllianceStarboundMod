@@ -1,0 +1,97 @@
+{
+  "itemName" : "thea-theledosshotgun",
+  "price" : 325,
+  "inventoryIcon" : "thea-theledosshotgun.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A Theledos rifle firing explosive plasma rounds.",
+  "manufacturer" : "^gray;Theledos^reset;",
+  "shortdescription" : "Lanuas Shotgun",
+  "level" : 6,
+  "tooltipKind" : "thea-gun-mf",
+  "category" : "Shotgun",
+  "itemTags" : ["weapon","ranged","shotgun","alliance","theledos"],
+  "twoHanded" : true,
+  
+  "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
+  "animationParts" : {
+    "middle" : "thea-theledosshotgun.png",
+    "middleFullbright" : "thea-theledosshotgunlights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/hymidplasmaflash.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+		    "offset" : [0.375, 0.125]
+		  }
+		}
+      }
+    },
+    "particleEmitters" : {
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/thea_plasmagun1.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.375, 0.125],
+  "muzzleOffset" : [1.625, 0.125],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.95,
+    "baseDps" : 10.0,
+    "energyUsage" : 35,
+    "inaccuracy" : 0.12,
+
+    "projectileCount" : 6,
+    "fireType" : "auto",
+
+    "projectileType" : "hymidexplosiveplasma2",
+    "projectileParameters" : {
+      "knockback" : 8
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+		"weaponOffset" : [0, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 6,
+        "weaponRotation" : 6,
+		"weaponOffset" : [-0.1, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.35,
+        "armRotation" : 6,
+        "weaponRotation" : 6,
+		"weaponOffset" : [-0.1, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+}

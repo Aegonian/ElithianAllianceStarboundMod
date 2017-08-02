@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "avikanmetal", "count" : 5 },
+    { "item" : "avikandarkmetal", "count" : 2 },
+    { "item" : "avikancircuitry", "count" : 1 },
+    { "item" : "avikanbattery", "count" : 2 }
+  ],
+  "output" : { "item" : "avikanrailplatform", "count" : 1 },
+  "groups" : [ "avikanrailcrafting", "all" ]
+}

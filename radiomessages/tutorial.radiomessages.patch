@@ -1,0 +1,53 @@
+[
+	// On picking up various Avikan crafting tables
+	{ 	"op": "add", 
+		"path": "/pickupavikaninventor",
+		"value": 		
+		{
+			"type" : "tutorial",
+			"text" : "I see you have obtained a Workman's Table. Using it will allow you to craft several more specialized crafting tables."
+		}
+	},
+	
+	// On picking up various Avikan crafting materials
+	{ 	"op": "add", 
+		"path": "/pickupmonsterbone",
+		"value": 		
+		{
+			"type" : "tutorial",
+			"text" : "You discovered a monster bone. They can be worked into a variety of items, such as weapons, armour and furniture."
+		}
+	},
+	{ 	"op": "add", 
+		"path": "/pickupmonsterscales",
+		"value": 		
+		{
+			"type" : "tutorial",
+			"text" : "You discovered some monster scales. The more dangerous the planet you are on, the higher the quality of the bones dropped by monsters you kill."
+		}
+	},
+	{ 	"op": "add", 
+		"path": "/pickupgreatmonsterbone",
+		"value": 		
+		{
+			"type" : "tutorial",
+			"text" : "You discovered a great monster bone. Hold on to it - my database says it might be useful for crafting some high quality items later down the line."
+		}
+	},
+	{ 	"op": "add", 
+		"path": "/pickupmonsterhide",
+		"value": 		
+		{
+			"type" : "tutorial",
+			"text" : "You discovered some monster hide. You can use a tanning rack to convert this into leather, a very versatile crafting component."
+		}
+	},
+	{ 	"op": "add", 
+		"path": "/pickupavikanhunting",
+		"value": 		
+		{
+			"type" : "tutorial",
+			"text" : "You obtained an Avikan hunting weapon. Killing alien monsters with such a weapon drastically increases your odds of receiving a monster bone or monster hide."
+		}
+	}
+]

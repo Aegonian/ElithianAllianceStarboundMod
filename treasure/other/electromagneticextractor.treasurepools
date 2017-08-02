@@ -1,0 +1,11 @@
+{
+	//SPECIFIC QUEST-RELATED POOL
+  "electromagneticextractorTreasure" : [
+    [0, {
+      "fill" : [
+        {"item" : [ "electriccomponent", 1 ]}
+      ]
+    } ]
+  ]
+}
+

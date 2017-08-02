@@ -1,0 +1,15 @@
+{
+  "itemName" : "avikanthickpipebottom",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "avikanthickpipebottom.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "shortdescription" : "Big Avikan Pipe Bottom",
+  
+  "description" : "A very thick metal pipe.",
+  "glitchDescription" : "Observation. A lot could fit inside such a pipe.",
+  "floranDescription" : "Big pipess...",
+
+  "materialId" : 30003
+}

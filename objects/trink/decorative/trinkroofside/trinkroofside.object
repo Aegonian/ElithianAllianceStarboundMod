@@ -1,0 +1,85 @@
+{
+  "objectName" : "trinkroofside",
+  "colonyTags" : ["trink"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 125,
+  "description" : "The side of a Trinkian roof. For building modular structures.",
+  "shortdescription" : "Trinkian Side Roof",
+  "race" : "trink",
+  
+  "health" : 8,
+
+  "apexDescription" : "A large modular roof.",
+  "avianDescription" : "A large, modular roof decorated with green lights.",
+  "floranDescription" : "Floran seesss big roof. Floran wonderss why roof iss so big.",
+  "glitchDescription" : "Fascinated. This modular roof piece is packed with sensors.",
+  "humanDescription" : "A large metal pyramid for a roof? Cool!",
+  "hylotlDescription" : "A grand metal roof. Surpisingly, it is packed with sensors and communication systems.",
+
+  "aegiDescription" : "The Trinks are big fans of modular buildings. This roof will fit on pretty much every Trinkian home.",
+  "avikanDescription" : "A large metal roof, built by machines.",
+  "erixianDescription" : "A large modular roof.",
+  "trinkDescription" : "Trinkian roofs are modular, and fit on top of almost any Trinkian structure.",
+  "hymidDescription" : "A large metal roof, built by the Notician robots.",
+  "notixDescription" : "Our Trinks are excellent at building modular structures.",
+  "jorgasianDescription" : "A large modular roof.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Readings indicate high amounts of sensors inside this structure.",
+
+
+  "inventoryIcon" : "trinkroofsideicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "trinkroofsiderightinvert.png:<color>", "fullbright" : true }, { "image" : "trinkroofsiderightinvertlit.png:<color>" } ],
+
+      "imagePosition" : [0, -40],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ],
+      "collision" : "solid",
+      "direction" : "right"
+    },
+	{
+      "imageLayers" : [ { "image" : "trinkroofsideleftinvert.png:<color>", "fullbright" : true }, { "image" : "trinkroofsideleftinvertlit.png:<color>" } ],
+
+      "imagePosition" : [0, -40],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ],
+      "collision" : "solid",
+      "direction" : "left"
+    },
+	{
+      "imageLayers" : [ { "image" : "trinkroofsideright.png:<color>", "fullbright" : true }, { "image" : "trinkroofsiderightlit.png:<color>" } ],
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "solid",
+      "direction" : "right"
+    },
+	{
+      "imageLayers" : [ { "image" : "trinkroofsideleft.png:<color>", "fullbright" : true }, { "image" : "trinkroofsideleftlit.png:<color>" } ],
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "solid",
+      "direction" : "left"
+    }
+  ]
+}

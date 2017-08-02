@@ -1,0 +1,58 @@
+{
+  "objectName" : "avikanpressureplate",
+  "colonyTags" : ["wired","avikan"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "A pressure plate that activates when stood on.",
+  "shortdescription" : "Avikan Pressure Plate",
+  "race" : "avikan",
+
+  "floranDescription" : "Floran sstand on platess, thingsss happen!",
+  "glitchDescription" : "Cautious. Something might happen if I stand on this pressure plate.",
+  "drodenDescription" : "Analysis. Pressure plate. Activated when stood upon.",
+
+  "category" : "wire",
+  "price" : 15,
+
+  "inventoryIcon" : "avikanpressureplateicon.png",
+  "orientations" : [
+    {
+      "image" : "avikanpressureplate.png:<color>.off",
+      "imagePosition" : [-8, 0],
+      
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "scripts" : [
+    "/objects/wired/proximitysensor/proximitysensor.lua",
+    "/scripts/npcToyObject.lua"
+  ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/proximitysensor/pressureplate3.animation",
+  "animationParts" : {
+    "switch" : "avikanpressureplate.png"
+  },
+  "animationPosition" : [-8, 0],
+
+  "outputNodes" : [ [0, 0] ],
+  
+  "interactive" : false,
+
+  "detectDuration" : 0.1,
+  "detectEntityTypes" : [ "creature", "vehicle" ],
+  "detectArea" : [ [-0.5, 0], [0.5, 0.5] ],
+
+  "npcToy": {
+    "ownerOnly" : true,
+    "influence" : [
+      "floorbutton"
+    ],
+    "defaultReactions" : {},
+    "maxNpcs" : 1
+  }
+}

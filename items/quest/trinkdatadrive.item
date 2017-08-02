@@ -1,0 +1,10 @@
+{
+  "itemName" : "trinkdatadrive",
+  "price" : 1000,
+  "rarity" : "Legendary",
+  "category" : "Quest Item",
+  "inventoryIcon" : "trinkdatadrive.png",
+  "description" : "A Trinkian data storage device. It is currently empty.",
+  "shortdescription" : "^#BA66FF;Circuit Data Drive^white;",
+  "itemTags" : [ "questitem" ]
+}

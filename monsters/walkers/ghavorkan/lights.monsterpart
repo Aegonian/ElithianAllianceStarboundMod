@@ -1,0 +1,9 @@
+{
+  "name" : "ghavorkanlights",
+  "category" : "ghavorkan",
+  "type" : "lights",
+
+  "frames" : {
+    "lights" : "ghavorkanlights.png"
+  }
+}

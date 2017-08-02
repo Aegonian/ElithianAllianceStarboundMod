@@ -1,0 +1,46 @@
+{
+  "objectName" : "avikanpillar",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 65,
+  "description" : "A strong supporting pillar.",
+  "shortdescription" : "Avikan Pillar",
+  "race" : "avikan",
+
+  "apexDescription" : "A sturdy metal pillar.",
+  "avianDescription" : "A shiny metal pillar.",
+  "floranDescription" : "Metal pillarsss look like large sspearsss...",
+  "glitchDescription" : "Statement. A pillar.",
+  "humanDescription" : "A supporting pillar. It can carry a lot of weight.",
+  "hylotlDescription" : "A metal pillar. Effective, but not too pretty.",
+
+  "aegiDescription" : "A sturdy pillar.",
+  "avikanDescription" : "A metal pillar from home.",
+  "erixianDescription" : "A sturdy metal pillar.",
+  "trinkDescription" : "A metal pillar.",
+  "hymidDescription" : "A metal pillar. I wonder if it would rust?",
+  "notixDescription" : "A metal pillar, capable of supporting a heavy roof.",
+  "jorgasianDescription" : "A supporting pillar made of metal.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Supporting pillar. Failed to estimate maximum supported weight.",
+
+  "inventoryIcon" : "avikanpillaricon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanpillar.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}

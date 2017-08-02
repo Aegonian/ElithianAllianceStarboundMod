@@ -1,0 +1,113 @@
+[
+	//AVIKAN DIALOGUE
+	{
+		"op": "add",
+		"path": "/hail/avikan",
+		"value": {
+			"default": [
+				"Don't cause trouble.",
+				"The clan has its eye on you.",						
+				"Rhadeis watches you. Behave yourself.",
+				"Move along, stranger.",
+				"Watch yourself here, stranger.",
+				"I've got my eye on you."
+			],
+			"avikan": [
+				"Hail, Captain.",
+				"Rhadeis watches us all, Captain.",
+				"Behave yourself here, Captain.",
+				"Is the perimeter secure?",
+				"Captain.",
+				"The Clanguard will keep the peace here.",
+				"Walk well, Captain."
+			]
+		}
+	},
+	
+	
+	
+	//TRINK DIALOGUE
+	{
+		"op": "add",
+		"path": "/hail/trink",
+		"value": {
+			"default": [
+				"Greetings, stranger.",
+				"I am watching you.",						
+				"You are welcome here, so long as you cause no trouble.",
+				"The Circuit greets you.",
+				"Behave yourself here.",
+				"Don't cause any trouble."
+			],
+			"avikan": [
+				"Don't get any crazy ideas while you're here.",
+				"I am watching you.",						
+				"We tolerate your kind, so long as you remain calm.",
+				"The Circuit watches you.",
+				"Behave yourself here.",
+				"Don't cause any trouble."
+			],
+			"trink": [	
+				"Please make certain you do not break any Circuit laws.",
+				"The Circuit watches.",
+				"The Masters will know if you cause trouble.",
+				"Welcome, fellow Trink.",
+				"Greetings, fellow Trink.",
+				"You are subject to the same laws as all of us, despite your status."
+			]
+		}
+	},
+	
+	
+	
+	//DRODEN DIALOGUE
+	{
+		"op": "add",
+		"path": "/hail/droden",
+		"value": {
+			"default": [
+				"Do not cause trouble. This unit is combat ready.",
+				"Detected suspicious individual.",						
+				"This unit will monitor your behaviour.",
+				"Detected unknown individual. Monitoring behaviour.",
+				"This unit is watching you.",
+				"Potential hazard detected. Monitoring behaviour."
+			],
+			"avikan": [
+				"Captain detected. Monitoring.",
+				"This unit will guard the people.",
+				"Detected civilian. Detected Captain status. Greeting.",
+				"Detected Nomada Captain. Welcome.",
+				"This unit is at your service.",
+				"Vas Vha'leih.",
+				"Unit is on duty. Please do not disturb."
+			],
+			"droden": [
+				"Detected Droden unit. Monitoring behaviour.",
+				"Detected Droden unit.",
+				"This unit stands vigil.",
+				"Do not cause trouble. This unit is combat ready.",
+				"Droden unit detected. Monitoring.",
+				"Warning. Criminal behaviour will result in immediate termination."
+			]
+		}
+	},
+	
+	
+	
+	//AEGI DIALOGUE
+	{
+		"op": "add",
+		"path": "/hail/aegi",
+		"value": {
+			"default": [
+				"Keep to the rules, alright?",
+				"I'm here to keep the peace.",						
+				"Standing guard gets rather boring sometimes...",
+				"Move along.",
+				"Disrespect the law, and you disrespect me.",
+				"Behave yourself while you're here, okay?"
+			]
+		}
+	}
+]

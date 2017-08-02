@@ -1,0 +1,13 @@
+{
+  "itemName" : "avikangift",
+  "price" : 100,
+  "rarity" : "Legendary",
+  "category" : "Quest Item",
+  "inventoryIcon" : "avikangift.png",
+  "description" : "A small metal trinket, a token of gratitude amongst the Avikan.",
+  "shortdescription" : "Avikan Gift",
+  "itemTags" : [ "questitem" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 5
+}

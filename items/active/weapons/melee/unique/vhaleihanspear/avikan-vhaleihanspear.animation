@@ -1,0 +1,377 @@
+{
+  "globalTagDefaults" : {
+    "paletteSwaps" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "swoosh" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {},
+          "fire" : {
+            "frames" : 3,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
+      },
+      "blade" : {
+        "default" : "inactive",
+        "states" : {
+          "inactive" : {
+            "properties" : {
+              "lightsOff" : ["glow"],
+              "particleEmittersOff" : ["blade"]
+            }
+          },
+          "extend" : {
+            "frames" : 5,
+            "cycle" : 0.15,
+            "mode" : "transition",
+            "transition" : "active",
+            "properties" : {
+              "lightsOn" : ["glow"],
+              "particleEmittersOn" : ["blade"],
+              "immediateSound" : "/sfx/melee/vhaleihan_start.ogg"
+            }
+          },
+          "active" : {
+            "frames" : 9,
+            "cycle" : 0.5,
+            "mode" : "loop",
+            "properties" : {
+              "lightsOn" : ["glow"],
+              "particleEmittersOn" : ["blade"],
+              "persistentSound" : "/sfx/melee/vhaleihan_idle.ogg"
+            }
+          },
+          "retract" : {
+            "frames" : 5,
+            "cycle" : 0.15,
+            "mode" : "transition",
+            "transition" : "inactive",
+            "properties" : {
+              "lightsOn" : ["glow"],
+              "particleEmittersOn" : ["blade"],
+              "immediateSound" : "/sfx/melee/vhaleihan_stop.ogg"
+            }
+          }
+        }
+      },
+	  //ANIMATION FOR SECONDARY ABILITY
+	  "charge" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {},
+          "charging" : {
+            "frames" : 4,
+            "cycle" : 0.3,
+            "mode" : "loop"
+          },
+          "transitionLow" : {
+            "frames" : 2,
+            "cycle" : 0.15,
+            "mode" : "transition",
+            "transition" : "readyLow"
+          },
+          "readyLow" : {
+            "frames" : 4,
+            "cycle" : 0.3,
+            "mode" : "loop"
+          },
+          "transitionMedium" : {
+            "frames" : 2,
+            "cycle" : 0.15,
+            "mode" : "transition",
+            "transition" : "readyMedium"
+          },
+          "readyMedium" : {
+            "frames" : 4,
+            "cycle" : 0.3,
+            "mode" : "loop"
+          },
+          "transitionHigh" : {
+            "frames" : 2,
+            "cycle" : 0.15,
+            "mode" : "transition",
+            "transition" : "readyHigh"
+          },
+          "readyHigh" : {
+            "frames" : 4,
+            "cycle" : 0.3,
+            "mode" : "loop"
+          }
+        }
+      },
+	  "dashSwoosh" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {},
+          "active" : {
+            "frames" : 3,
+            "cycle" : 0.4,
+            "mode" : "loop"
+          },
+          "stop" : {
+            "frames" : 3,
+            "cycle" : 0.4,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "bladeFullbright" : {
+        "properties" : {
+          "zLevel" : 2,
+          "centered" : true,
+          "fullbright" : true,
+          "offset" : [0, 0],
+          "transformationGroups" : ["weapon"],
+          "rotationCenter" : [0, 0]
+        },
+
+        "partStates" : {
+          "blade" : {
+            "inactive" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "extend" : {
+              "properties" : {
+                "image" : "<partImage>:extend.<frame>?<directives>?<bladeDirectives>"
+              }
+            },
+            "active" : {
+              "properties" : {
+                "image" : "<partImage>:active.<frame>?<directives>?<bladeDirectives>"
+              }
+            },
+            "retract" : {
+              "properties" : {
+                "image" : "<partImage>:retract.<frame>?<directives>?<bladeDirectives>"
+              }
+            }
+          }
+        }
+      },
+	  "blade" : {
+        "properties" : {
+          "zLevel" : 2,
+          "centered" : true,
+          "fullbright" : false,
+          "offset" : [0, 0],
+          "transformationGroups" : ["weapon"],
+          "rotationCenter" : [0, 0],
+          "damageArea" : [[0, -0.5], [-0.75, 1.0], [-0.75, 2.75], [0, 4.25], [0.75, 2.75], [0.75, 1.0]]
+        },
+
+        "partStates" : {
+          "blade" : {
+            "inactive" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "extend" : {
+              "properties" : {
+                "image" : "<partImage>:extend.<frame>?<directives>?<bladeDirectives>"
+              }
+            },
+            "active" : {
+              "properties" : {
+                "image" : "<partImage>:active.<frame>?<directives>?<bladeDirectives>"
+              }
+            },
+            "retract" : {
+              "properties" : {
+                "image" : "<partImage>:retract.<frame>?<directives>?<bladeDirectives>"
+              }
+            }
+          }
+        }
+      },
+      "handle" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "image" : "<partImage><paletteSwaps>?<directives>",
+          "offset" : [0, 0],
+          "transformationGroups" : ["weapon"],
+          "rotationCenter" : [0, 0]
+        }
+      },
+      "handleFullbright" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "fullbright" : true,
+          "image" : "<partImage><paletteSwaps>?<directives>",
+          "offset" : [0, 0],
+          "transformationGroups" : ["weapon"],
+          "rotationCenter" : [0, 0]
+        }
+      },
+      "swoosh" : {
+        "properties" : {
+          "zLevel" : -1,
+          "centered" : true,
+          "fullbright" : true,
+          "offset" : [3.0, 0.0],
+          "transformationGroups" : ["swoosh"]
+        },
+
+        "partStates" : {
+          "swoosh" : {
+            "idle" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/unique/vhaleihanspear/swoosh/vhaleihanspearswoosh.png:<frame>",
+                "damageArea" : [[-3.5, 0], [-1, 1], [1, 1], [4, 0], [1, -1], [-1, -1]]
+              }
+            }
+          }
+        }
+      },
+	  //ANIMATION PARTS FOR SECONDARY ABILITY
+      "charge" : {
+        "properties" : {
+          "zLevel" : 3,
+          "centered" : true,
+          "fullbright" : true,
+          "offset" : [0.0, 1.25],
+          "transformationGroups" : ["weapon"]
+        },
+
+        "partStates" : {
+          "charge" : {
+            "idle" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "charging" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/unique/vhaleihanspear/charge/charging.png:<frame>"
+              }
+            },
+            "transitionLow" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/unique/vhaleihanspear/charge/transitions/transitionlow.png:<frame>"
+              }
+            },
+            "readyLow" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/unique/vhaleihanspear/charge/readylow.png:<frame>"
+              }
+            },
+            "transitionMedium" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/unique/vhaleihanspear/charge/transitions/transitionmedium.png:<frame>"
+              }
+            },
+            "readyMedium" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/unique/vhaleihanspear/charge/readymedium.png:<frame>"
+              }
+            },
+            "transitionHigh" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/unique/vhaleihanspear/charge/transitions/transitionhigh.png:<frame>"
+              }
+            },
+            "readyHigh" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/unique/vhaleihanspear/charge/readyhigh.png:<frame>"
+              }
+            }
+          }
+        }
+      },
+      "dashSwoosh" : {
+        "properties" : {
+          "zLevel" : 3,
+          "centered" : true,
+          "fullbright" : true,
+          "offset" : [0.0, 0.0],
+          "transformationGroups" : ["weapon"]
+        },
+
+        "partStates" : {
+          "dashSwoosh" : {
+            "idle" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "active" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/unique/vhaleihanspear/swoosh/dash.png:<frame>",
+                "damageArea" : [ [-1.25, -3.0], [-1.25, 3.5], [0.0, 4.5], [1.25, 3.5], [1.25, -3.0], [0.0, -3.5] ]
+              }
+            },
+            "stop" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/unique/vhaleihanspear/swoosh/dashstop.png:<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "swoosh" : {}
+  },
+
+  "particleEmitters" : {
+    "xanafianswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+	  "offsetRegion" : [3.5, -1.0, 7.5, 1.0],
+      "burstCount" : 4,
+      "particles" : [
+        { "particle" : "vhaleihanspear"},
+        { "particle" : "vhaleihanspear2"}
+      ]
+    },
+    "blade" : {
+      "active" : false,
+      "transformationGroups" : ["weapon"],
+      "offsetRegion" : [-0.5, 1.5, 0.5, 3.0],
+      "emissionRate" : 5,
+      "particles" : [
+        { "particle" : "vhaleihanspear"},
+        { "particle" : "vhaleihanspear2"}
+      ]
+    }
+  },
+
+  "lights" : {
+    "glow" : {
+      "position" : [0, 2.0],
+      "color" : [75, 100, 125],
+      "transformationGroups" : ["weapon"]
+    }
+  },
+
+  "sounds" : {
+    "fire" : [],
+	"dash" : [],
+	"chargeStart" : [],
+	"chargedLow" : [],
+	"chargedMedium" : [],
+	"chargedHigh" : []
+  }
+}

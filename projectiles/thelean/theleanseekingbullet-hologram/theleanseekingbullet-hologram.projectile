@@ -1,0 +1,23 @@
+{
+  "projectileName" : "theleanseekingbullet-hologram",
+  "image" : "theleanseekingbullet-hologram.png",
+  "physics" : "laser",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "emitters" : [ ],
+  "pointLight" : false,
+  "flippable" : true,
+  "actionOnReap" : [ ],
+  "statusEffects" : [ ],
+  "power" : 0.0,
+  "speed" : 150,
+  "supportsProcessing" : true,
+  "lightColor" : [150, 96, 0],
+  "fullbright" : true,
+  "knockback" : 0,
+  "damageKind" : "default",
+  
+  "scripts" : [ "/projectiles/scripts/thea-homingbullet.lua" ],
+  "searchRadius" : 15,
+  "baseHomingControlForce" : 1.25
+}

@@ -1,0 +1,10 @@
+{
+  "itemName" : "avikanarmring",
+  "price" : 25,
+  "rarity" : "Legendary",
+  "category" : "Quest Item",
+  "inventoryIcon" : "avikanarmring.png",
+  "description" : "A small metal arm ring, its owner is probably looking for it.",
+  "shortdescription" : "^#BA66FF;Avikan Arm Ring^white;",
+  "itemTags" : [ "questitem" ]
+}

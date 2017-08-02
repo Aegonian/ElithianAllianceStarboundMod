@@ -1,0 +1,85 @@
+{
+  "type" : "crewmemberclanwarrior",
+  "baseType" : "crewmemberavikan",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+
+	"crew" : {
+	  "role" : {
+        "type" : "clanwarrior",
+        "name" : "Warrior",
+        "field" : "Guardian",
+        "uniformColorIndex" : 4
+      },
+
+      "ranks" : [
+        "Clan <role>",
+		"Bone-blade <role>",
+		"Clan's Primary <role>",
+		"<field> of the Clan",
+		"Elder <role>",
+		"Elder <field>",
+		"Clan's Secondary <role>",
+		"Nomadic <role>",
+		"Youngling <role>",
+		"Experienced <role>",
+		"Legendary <role>",
+		"<field> of Bone"
+      ],
+	  
+	  "defaultUniform" : {
+		"head" : "avikan-tier3head",
+		"chest" : "avikan-tier3chest",
+		"legs" : "avikan-tier3legs"
+	  },
+	  
+	  "uniformSlots" : []
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+            "head" : [ { "name" : "avikan-tier3head", "data" : { "colorIndex" : 4 } } ],
+			"chest" : [ { "name" : "avikan-tier3chest", "data" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "avikan-tier3legs", "data" : { "colorIndex" : 4 } } ],
+            "primary" : [
+			  "avikan-tier1bow"
+			],
+            "sheathedprimary" : [
+			  "avikantier3spear",
+			  "avikantier3broadsword",
+			  "avikantier3hammer",
+			  "avikantier3shortsword"
+			],
+            "alt" : [
+			  "avikanboneshield"
+			]
+          },
+          {
+            "head" : [ { "name" : "avikan-tier3head", "data" : { "colorIndex" : 4 } } ],
+			"chest" : [ { "name" : "avikan-tier3chest", "data" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "avikan-tier3legs", "data" : { "colorIndex" : 4 } } ],
+            "primary" : [ 
+			  "avikantier3spear",
+			  "avikantier3broadsword",
+			  "avikantier3hammer",
+			  "avikantier3shortsword"
+			],
+            "sheathedprimary" : [
+			  "avikan-tier1bow"
+			],
+            "alt" : [
+			  "avikanboneshield"
+			]
+          }
+        ] ]
+    ]
+  }
+}

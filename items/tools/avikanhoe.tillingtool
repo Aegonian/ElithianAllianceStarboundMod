@@ -1,0 +1,21 @@
+{
+  "itemName" : "avikanhoe",
+  "price" : 125,
+  "category" : "Tool",
+  "inventoryIcon" : "avikanhoe.png",
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "This hoe lets you till soil. The tilled soil can then be used to grow all sorts of crops!",
+  "shortdescription" : "Bone Hoe",
+  "tooltipKind" : "tool",
+  "image" : "avikanhoe.png",
+  "largeImage" : "avikanhoe.png",
+  "handPosition" : [-7, -15],
+  "fireTime" : 0.25,
+  "blockRadius" : 7,
+  "altBlockRadius" : 1,
+  "twoHanded" : true,
+  "strikeSounds" : [ "/sfx/tools/pickaxe_hit.ogg" ],
+
+  "pickupQuestTemplates" : [ "firstcrops" ]
+}

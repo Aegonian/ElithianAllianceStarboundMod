@@ -1,0 +1,24 @@
+{
+  "kind" : "violatedlinerifletrail2",
+  "location" : "mouth",
+  "definition" : {
+    "duration" : 0.00015,
+    "loops" : true,
+    "start" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [ [ ] ]
+    },
+    "particles" : [
+      [ "violatedlinerifletrail2" ]
+    ],
+    "sounds" : [ [ ] ],
+    "stop" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [ [ ] ]
+    }
+  }
+}

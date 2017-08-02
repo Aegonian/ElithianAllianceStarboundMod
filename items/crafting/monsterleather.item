@@ -1,0 +1,13 @@
+{
+  "itemName" : "monsterleather",
+  "price" : 20,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "monsterleather.png",
+  "description" : "Tough leather made by tanning monster skin.",
+  "shortdescription" : "Monster Leather",
+  "itemTags" : [ "reagent" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 1
+}

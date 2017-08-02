@@ -1,0 +1,24 @@
+{
+  "id" : "trinkambassadornotes",
+  "species" : "trink",
+  "title" : "Ambassador's Log",
+  "description" : "Your notes on your current assignment.",
+  "icon" : "trinkfile1.png",
+  "contentPages" : [
+
+"DATALOG - ENTRY 42
+
+When the leaders of the Elithian Alliance discovered the existence of the Terrene Protectorate a few years ago, the decision was made to initiate friendly communication with the organization. It was decided that every nation in the Alliance was to send a handful of ambassadors to Earth, and I was one of the lucky few to be chosen for the task.",
+
+"My task was to enroll in the Protectorate training program, and thus become a Protector. In the meanwhile, I would act as an ambassador for the Trink Circuit and the Alliance as a whole, to foster mutual understanding and cooperation.",
+
+"I'm now nearing the conclusion of my training, and I would say the entire operation has been a great success. We have learned much about the Protectorate, and they of us in turn. There are trade routes being set up between the nations of the Alliance and those of the Protectorate, and other treaties are being written as well. It looks like we all have a bright future ahead of us.",
+
+"Once my training here is over, I'll return to the Alliance for some time, to further discuss my experiences here. I'll miss the Protectorate, but it'll be good to be home again."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

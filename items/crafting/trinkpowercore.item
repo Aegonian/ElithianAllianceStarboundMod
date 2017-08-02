@@ -1,0 +1,10 @@
+{
+  "itemName" : "trinkpowercore",
+  "price" : 200,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "trinkpowercore.png",
+  "description" : "A miniature Trinkian power generator.",
+  "shortdescription" : "Trinkian Power Core",
+  "itemTags" : [ "reagent" ]
+}

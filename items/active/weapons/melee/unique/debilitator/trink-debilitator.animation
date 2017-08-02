@@ -1,0 +1,174 @@
+{
+  "globalTagDefaults" : {
+    "paletteSwaps" : ""
+  },
+  
+  "animatedParts" : {
+    "stateTypes" : {
+      "blade" : {
+        "default" : "active",
+        "states" : {
+          "active" : {},
+          "recharge" : {
+            "frames" : 2,
+            "cycle" : 0.5,
+            "mode" : "loop"
+          }
+        }
+      },
+	  "swoosh" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+          },
+          "fireInactive" : {
+            "frames" : 3,
+            "cycle" : 0.08,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "active" : {
+            "frames" : 8,
+            "cycle" : 0.7,
+            "mode" : "loop"
+          },
+          "fireActive" : {
+            "frames" : 3,
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "active"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "blade" : {
+        "properties" : {
+          "zLevel" : -1,
+          "centered" : true,
+          "offset" : [0.0, 0.0],
+          "rotationCenter" : [0, 0],
+          "transformationGroups" : ["weapon"],
+          "damageArea" : [[-1, 0.25], [-1, 1.5], [1.5, 1.75], [1.5, 0.0]]
+        },
+        "partStates" : {
+          "blade" : {
+		    "active" : {
+              "properties" : {
+                "image" : "<partImage>:active"
+              }
+            },
+			"recharge" : {
+              "properties" : {
+                "image" : "<partImage>:recharge.<frame>"
+              }
+            }
+          }
+        }
+      },
+	  "bladeFullbright" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+		  "fullbright" : true,
+          "offset" : [0.0, 0.0],
+          "rotationCenter" : [0, 0],
+          "transformationGroups" : ["weapon"],
+          "damageArea" : [[-1, 0.25], [-1, 1.5], [1.5, 1.75], [1.5, 0.0]]
+        },
+        "partStates" : {
+          "blade" : {
+		    "active" : {
+              "properties" : {
+                "image" : "<partImage>:active"
+              }
+            },
+			"recharge" : {
+              "properties" : {
+                "image" : "<partImage>:recharge.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "swoosh" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "offset" : [0.0, 0.0],
+          "rotationCenter" : [0, 0],
+          "transformationGroups" : ["swoosh"]
+        },
+        "partStates" : {
+          "swoosh" : {
+		    "idle" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "fireInactive" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/unique/debilitator/swoosh/inactiveswoosh.png:<frame>",
+                "damageArea" : [[-4.0, 4], [-3.0, 5], [0.5, 5], [2.5, 3.75], [3.5, 1.75], [3.5, -0.25], [2.5, -1.25], [-0.5, -0.5]]
+              }
+            },
+            "active" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/unique/debilitator/swoosh/idle.png:<frame>",
+				"fullbright" : true
+              }
+            },
+            "fireActive" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/unique/debilitator/swoosh/activeswoosh.png:<frame>",
+				"fullbright" : true,
+                "damageArea" : [[-4.0, 4], [-3.0, 5], [0.5, 5], [2.5, 3.75], [3.5, 1.75], [3.5, -0.25], [2.5, -1.25], [-0.5, -0.5]]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "swoosh" : {}
+  },
+
+  "particleEmitters" : {
+    "activeSwoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 60,
+      "offsetRegion" : [3.0, -1.0, 4.0, 1.0],
+      "particles" : []
+    },
+	"inactiveSwoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 60,
+      "offsetRegion" : [3.0, -1.0, 4.0, 1.0],
+      "particles" : []
+    },
+	"activeParticles" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 2,
+      "offsetRegion" : [0.0, -0.5, 3.0, 0.5],
+      "particles" : []
+    }
+  },
+
+  "sounds" : {
+    //Primary
+	"fireInactive" : [ ],
+	"fireActive" : [ ],
+	"idleLoop" : [ ],
+	//Secondary
+	"charge" : [ ],
+	"chargefull" : [ ],
+	"chargefire" : [ ]
+  }
+}

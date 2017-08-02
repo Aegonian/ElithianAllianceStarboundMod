@@ -1,0 +1,28 @@
+{
+  "materialId" : 30012,
+  "materialName" : "avikanshipfloor",
+  "particleColor" : [215, 184, 137, 255],
+  "itemDrop" : "avikanshipfloor", 
+  "shortdescription" : "Avikan Ship Floor",
+  
+  "description" : "Designed for use in spaceships, this floor panel is highly impact-resistant.",
+  "glitchDescription" : "Informed. Such panels are often used as floors onboard spaceships.",
+  "floranDescription" : "Metal floor panel makess Floran feel sssafe...",
+  "novakidDescription" : "This panel has multiple layers of metal stuff in it.",
+  
+  "drodenDescription" : "Analysis complete. Multi-layer floor panel.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "avikanshipfloor.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 140
+  }
+}

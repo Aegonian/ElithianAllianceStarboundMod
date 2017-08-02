@@ -1,0 +1,24 @@
+[
+  {
+    "op" : "add",
+    "path" : "/avikan",
+    "value" : {
+	  "stats" : {
+		"speed" : 6,
+		"control" : 6
+	  },
+	  "partParameters" : {},
+	  "partImages" : {
+		"backBoosterBack" : "booster/avikan_back_back.png",
+		"backBoosterFullbright" : "boosterflame/avikan.png",
+		"backBoosterFront" : "booster/avikan_back_front.png",
+		"frontBoosterBack" : "booster/avikan_front_back.png",
+		"frontBoosterFullbright" : "boosterflame/avikan.png",
+		"frontBoosterFront" : "booster/avikan_front_front.png"
+	  },
+	  "defaultPrimaryColors" : ["E9D3AB", "D7B889", "A88A5F", "6B4E3E"],	//From LIGHT to DARK
+	  "defaultSecondaryColors" : ["7F7F7F", "616161", "474747", "333333"],	//From LIGHT to DARK
+	  "animationCustom" : {}
+	}
+  }
+]

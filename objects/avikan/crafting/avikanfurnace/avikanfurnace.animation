@@ -1,0 +1,132 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "stage" : {
+        "default" : "avikanfurnace",
+        "states" : {
+          "avikanfurnace" : {
+            "frames" : 4,
+            "cycle" : 0.5,
+            "mode" : "loop",
+            "properties" : {
+              "lightsOn" : [ "fireglow" ],
+			  "particleEmittersOn" : [ "smoke" ],
+              "persistentSound" : "/sfx/objects/campfire.ogg",
+              "persistentSoundRangeMultiplier" : 0.5
+            }
+          },
+          "avikanfurnace2" : {
+            "frames" : 4,
+            "cycle" : 0.5,
+            "mode" : "loop",
+            "properties" : {
+              "lightsOn" : [ "fireglow" ],
+			  "particleEmittersOff" : [ "smoke" ],
+              "persistentSound" : "/sfx/objects/campfire.ogg",
+              "persistentSoundRangeMultiplier" : 0.5
+            }
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "chassis" : {
+        "properties" : {
+          "centered" : true
+        },
+        "partStates" : {
+          "stage" : {
+            "avikanfurnace" : {
+              "properties" : {
+                "image" : "avikanfurnacelit.png:<color>.<frame>"
+              }
+            },
+
+            "avikanfurnace2" : {
+              "properties" : {
+                "image" : "avikanfurnace2lit.png:<color>.<frame>"
+              }
+            }
+          }
+        }
+      },
+
+      "fire" : {
+        "properties" : {
+          "centered" : true,
+          "fullbright" : true
+        },
+        "partStates" : {
+          "stage" : {
+            "avikanfurnace" : {
+              "properties" : {
+                "image" : "avikanfurnace.png:<color>.<frame>"
+              }
+            },
+
+            "avikanfurnace2" : {
+              "properties" : {
+                "image" : "avikanfurnace2.png:<color>.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "sounds" : {
+    "fanfare" : ["/sfx/cinematics/mission_unlock_event.ogg"],
+    "fanfare2" : ["/sfx/cinematics/license_acquired_event.ogg"]
+  },
+
+  "lights" : {
+    "fireglow" : {
+      "active" : false,
+      "position" : [0, 1],
+      "color" : [153, 128, 92],
+      "flickerPeriod" : 0.3,
+      "flickerMinIntensity" : 0.95,
+      "flickerMaxIntensity" : 1,
+      "flickerPeriodVariance" : 0.075,
+      "flickerIntensityVariance" : 0.025
+    }
+  },
+  
+  "particleEmitters" : {
+    "dust" : {
+      "emissionRate" : 0.0,
+      "burstCount"  : 10,
+      "offsetRegion" : [-2, -2, 2, 2],
+      "particles" : [{ "particle" : "dust2"}]
+    },
+	"smoke" : {
+      "emissionRate" : 6.5,
+      "emissionRateVariance" : 0.2,
+      "active" : true,
+
+      "particles" : [
+        {
+          "particle" : {
+          "type" : "animated",
+          "image" : "/animations/thea-smoke/thea-smoke.animation",
+          "size" : 0.9,
+          "color" : [255, 255, 255, 200],
+          "destructionAction" : "shrink",
+          "destructionTime" : 1,
+          "initialVelocity" : [0.1, 3],
+          "timeToLive" : 1,
+          "layer" : "back",
+          "position" : [0, 1.15],
+          "variance" : {
+			  "size" : 0.1,
+              "initialVelocity" : [0.1, 0.5],
+			  "rotation" : 180
+            }
+          }
+        }
+      ]
+    }
+  }
+}

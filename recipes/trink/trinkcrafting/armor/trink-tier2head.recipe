@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "trinkmetaltier2", "count" : 6 }
+  ],
+  "duration" : 5,
+  "output" : { "item" : "trink-tier2head", "count" : 1 },
+  "groups" : [ "trinkcrafting", "armours", "all" ]
+}

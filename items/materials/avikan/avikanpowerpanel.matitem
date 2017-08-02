@@ -1,0 +1,15 @@
+{
+  "itemName" : "avikanpowerpanel",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "avikanpowerpanel.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "shortdescription" : "Avikan Power Panel",
+  
+  "description" : "A metal panel with power cables embedded in its plating.",
+  "glitchDescription" : "Observation. Power runs through the cables hidden inside these panels.",
+  "floranDescription" : "Metal panelsss radiate power...",
+
+  "materialId" : 30034
+}

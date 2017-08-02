@@ -1,0 +1,53 @@
+{ "margin":0,
+ "name":"theaobjects-mission",
+ "properties":
+    {
+
+    },
+ "spacing":0,
+ "tilecount":3,
+ "tileheight":64,
+ "tileproperties":
+    {
+     "0":
+        {
+         "\/\/shortdescription":"Crashed Avikan Ship",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"crashedavikanship",
+         "tilesetDirection":"right"
+        },
+     "1":
+        {
+         "\/\/shortdescription":"Wrecked Avikan Mech",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"wreckedavikanmech",
+         "tilesetDirection":"right"
+        },
+     "2":
+        {
+         "\/\/shortdescription":"Refuge Return Teleporter",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"returnavikanoutpostteleporter",
+         "tilesetDirection":"right"
+        }
+    },
+ "tiles":
+    {
+     "0":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/mission\/crashedavikanship.png"
+        },
+     "1":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/mission\/wreckedavikanmech.png"
+        },
+     "2":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/mission\/returnavikanoutpostteleporter.png"
+        }
+    },
+ "tilewidth":216
+}

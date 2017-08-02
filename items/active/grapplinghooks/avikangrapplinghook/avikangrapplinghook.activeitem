@@ -1,0 +1,44 @@
+{
+  "itemName" : "avikangrapplinghook",
+  "price" : 3000,
+  "inventoryIcon" : "avikangrapplinghookicon.png",
+  "rarity" : "Legendary",
+  "maxStack" : 1,
+  "description" : "A grappling hook, for climbing mountains and swinging across ravines.",
+  "shortdescription" : "Nomada Grappling Hook",
+  "largeImage" : "avikangrapplinghookbig.png",
+  "category" : "Tool",
+  "fireTime" : 0,
+  "twoHanded" : false,
+
+  "scripts" : ["/items/active/grapplinghooks/grapplinghook.lua"],
+  "animationScripts" : ["/items/active/effects/renderrope.lua"],
+
+  "animation" : "avikangrapplinghook.animation",
+
+  "fireOffset" : [0, 0.3],
+  "ropeOffset" : [-1.75, 0.3],
+  "ropeVisualOffset" : [0.75, 0.3],
+
+  "consumeOnUse" : false,
+
+  "projectileType" : "avikangrapplinghook",
+  "projectileParameters" : {
+    "speed" : 65,
+    "timeToLive" : 2.0
+  },
+
+  "ropeWidth" : 1.0,
+  "ropeColor" : [25, 25, 25, 255],
+
+  "reelInDistance" : 3.5,
+  "reelOutLength" : 50,
+  "breakLength" : 60,
+
+  "minSwingDistance" : 1.5,
+
+  "reelSpeed" : 15,
+  "controlForce" : 1000,
+
+  "groundLagTime" : 0.2
+}

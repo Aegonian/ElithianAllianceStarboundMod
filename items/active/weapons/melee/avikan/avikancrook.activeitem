@@ -1,0 +1,85 @@
+{
+  "itemName" : "avikancrook",
+  "price" : 250,
+  "level" : 1,
+  "maxStack" : 1,
+  "rarity" : "common",
+  "description" : "A bone crook used by Gad'hur herders.",
+  "shortdescription" : "Bone Crook",
+  "tooltipKind" : "sword",
+  "category" : "Crook",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","avikan"],
+
+  "inventoryIcon" : "avikancrook.png",
+
+  "animation" : "/items/active/weapons/melee/broadsword/broadsword.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "avikancrook.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_spear.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/melee/meleeslash.lua"],
+	"class" : "MeleeSlash",
+	
+    "fireTime" : 0.8,
+    "baseDps" : 6.5,
+    "damageConfig" : {
+      "damageSourceKind" : "hammer",
+      "statusEffects" : [ ],
+      "knockbackMode" : "facing",
+      "knockback" : 30
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : -90,
+        "weaponRotation" : -10,
+        "weaponOffset" : [0, -1.5],
+		
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "windup" : {
+        "duration" : 0.2,
+        "armRotation" : 90,
+        "weaponRotation" : -10,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "preslash" : {
+        "duration" : 0.025,
+        "armRotation" : 55,
+        "weaponRotation" : -45,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire" : {
+        "duration" : 0.3,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

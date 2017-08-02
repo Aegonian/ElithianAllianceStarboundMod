@@ -1,0 +1,35 @@
+{
+  "id" : "avikanmechparts2",
+  "prerequisites" : [ "avikanmechparts", "mechupgrade2" ],
+  "title" : "^green;Linerifles in Space",
+  "text" : "Ayurin and I have been working on a new, highly powerful linecharge system for a mech, but we need some of that ^orange;Centensian Liquid ^white;in order to optimize its performance. If you could ^green;bring ^orange;50 units of that liquid ^green;to ^orange;Ayurin^white;, he'll give you a copy of our blueprint.",
+  "completionText" : "This will do just fine, thank you. As Rehkon promised, here are the blueprints for our linerifle mech weapon.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "avikanmerittoken", 20 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "questGiver",
+      "questComplete" : {
+        "portrait" : [ {"image" : "/objects/avikan/outpost/avikangunsmith/avikangunsmithportrait.png"} ],
+        "title" : "Ayurin"
+      }
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "centensianliquid",
+        "count" : 50,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Return to ^orange;Ayurin ^reset;in the ^orange;Starfarer's Refuge^reset;",
+
+    "giveBlueprints" : [ "mecharmlinerifle" ]
+  }
+}

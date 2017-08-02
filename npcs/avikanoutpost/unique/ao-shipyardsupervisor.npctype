@@ -1,0 +1,22 @@
+{
+  "type" : "ao-shipyardsupervisor",
+  "baseType" : "ao-lounger",
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "avikan-engineerhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "avikan-elderchest", "parameters" : { "colorIndex" : 2 } }
+            ],
+            "legs" : [
+              { "name" : "avikan-modernlegs", "parameters" : { "colorIndex" : 2 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

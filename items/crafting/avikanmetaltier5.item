@@ -1,0 +1,10 @@
+{
+  "itemName" : "avikanmetaltier5",
+  "price" : 350,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "avikanmetaltier5.png",
+  "description" : "Hardened metal plating for use in high-quality equipment.",
+  "shortdescription" : "Hard Kavanite Plate",
+  "itemTags" : [ "reagent" ]
+}

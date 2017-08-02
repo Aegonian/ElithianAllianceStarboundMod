@@ -1,0 +1,30 @@
+{
+  "id" : "keffrider",
+  "prerequisites" : [],
+  "title" : "^green;Keffrider",
+  "text" : "How would you like to become a Keffrider, Captain? If you prove yourself worthy of the title I'll get the Council to grant you your ^orange;Keffrider's license^white;! ^green;Earn the respect of Avikan tenants ^white;and show me ^orange;five Avikan Gifts^white;, and we'll get this started!",
+  "completionText" : "A Keffrider is a servant of the people first and foremost, always remember that! You've earned the respect of your tenants, and mine with it. Now, you must prove your strength, for a Keffrider must be able to protect his kin.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "avikan-keffridersspear", 1 ], [ "avikanmerittoken", 5 ]  ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "default" : "questGiver"
+    },
+    "followUp" : "keffrider2",
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "avikangift",
+        "count" : 5,
+        "consume" : false
+      }
+    ],
+	"turnInDescription" : "Return to ^orange;Vethuri ^reset;in the ^orange;Starfarer's Refuge^reset;"
+  }
+}

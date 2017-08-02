@@ -1,0 +1,53 @@
+{
+  "objectName" : "wreckedavikanmech",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Legendary",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 0,
+  "description" : "An Avikan mech, damaged beyond repair.",
+  "shortdescription" : "Wrecked Avikan Mech",
+  "race" : "avikan",
+
+  "floranDescription" : "Metal sssuit hass been destroyed.",
+  "glitchDescription" : "Alarmed. This mech was attacked and swiftly destroyed.",
+  "novakidDescription" : "Hope the pilot made it our alright...",
+  "avikanDescription" : "A wrecked Krahl. It looks like it was attacked using Thelean weapons...",
+  "drodenDescription" : "Detected Krahl. Status: irreparable damage.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "wreckedavikanmech.png:<color>",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+  "particleEmitters" : [
+  {
+    "emissionRate" : 5.0,
+    "emissionVariance" : 0.5,
+    "particle" : {
+      "type" : "animated",
+      "animation" : "/animations/thea-smoke/thea-smoke.animation",
+      "size" : 0.9,
+      "color" : [255, 255, 255, 200],
+      "destructionAction" : "shrink",
+      "destructionTime" : 1,
+      "initialVelocity" : [1.0, 3],
+      "timeToLive" : 1,
+      "layer" : "back",
+      "position" : [2.5, 2]
+    },
+
+    "particleVariance" : {
+      "size" : 0.1,
+	  "initialVelocity" : [0.1, 0.5],
+	  "rotation" : 180
+    }       
+  }
+  ]
+}

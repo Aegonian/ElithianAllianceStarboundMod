@@ -1,0 +1,13 @@
+{
+  "itemName" : "avikancloth",
+  "price" : 150,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "avikancloth.png",
+  "description" : "Colourful fabric, used to craft various objects.",
+  "shortdescription" : "Avikan Fabric",
+  "itemTags" : [ "reagent" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 1
+}

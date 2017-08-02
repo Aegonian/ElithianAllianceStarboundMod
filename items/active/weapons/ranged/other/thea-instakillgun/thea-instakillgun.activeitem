@@ -1,0 +1,91 @@
+{
+  "itemName" : "thea-instakillgun",
+  "price" : 10000,
+  "inventoryIcon" : "thea-instakillgun.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;A golden gun for ultimate power. You cheater!",
+  "shortdescription" : "^orange;Golden Gun^white;",
+  "level" : 10,
+  "tooltipKind" : "thea-gun-unique",
+  "category" : "Pistol",
+  "itemTags" : [],
+  "twoHanded" : false,
+
+  "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
+  "animationParts" : {
+    "middle" : "thea-instakillgun.png",
+    "middleFullbright" : "thea-instakillgunlights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/allianceenergyflash.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+		    "offset" : [0.25, 0.0]
+		  }
+		}
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/thea_plasmagun1.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.25, 0.0],
+  "muzzleOffset" : [0.875, 0.5],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 1.0,
+    "baseDps" : 5000.0,
+    "energyUsage" : 100,
+    "inaccuracy" : 0.0,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "thea-instakillbullet",
+    "projectileParameters" : {
+      "knockback" : 60
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 6,
+        "weaponRotation" : 13,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.2,
+        "armRotation" : 6,
+        "weaponRotation" : 13,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

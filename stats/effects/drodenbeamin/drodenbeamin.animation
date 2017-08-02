@@ -1,0 +1,63 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "teleport" : {
+        "default" : "none",
+        "states" : {
+          "none" : { },
+          "beamIn" : {
+            "frames" : 16,
+            "cycle" : 1.0,
+            "mode" : "transition",
+            "transition" : "none",
+            "properties" : {
+              "immediateSound" : "/sfx/tools/teleport_down.ogg"
+            },
+            "frameProperties" : {
+              "multiply" : [ "ffffff00", "ffffff00", "ffffff00", "ffffff00", "ffffff00", "ffffff00", "ffffff00", "ffffff00", "ffffff00", "ffffff00", "ffffff00", "ffffff00", "ffffff00", "ffffff00", "ffffffff", "ffffffff" ]
+            }
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "base" : {
+        "properties" : {
+          "fullbright" : true,
+          "centered" : true
+        },
+        "partStates" : {
+          "teleport" : {
+            "none" : { },
+            "beamIn" : {
+              "properties" : {
+                "image" : "/animations/teleport/<species>playerwarpin.png:<frame><effectDirectives>"
+              }
+            }
+          }
+        }
+      },
+      "beam" : {
+        "properties" : {
+          "fullbright" : true,
+          "centered" : true,
+          "offset" : [0, 30]
+        },
+        "partStates" : {
+          "teleport" : {
+            "beamIn" : {
+              "properties" : {
+                "image" : "/animations/teleport/playerwarpinbeam.png:<frame>?scalenearest=1;60;<effectDirectives>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "globalTagDefaults" : {
+    "species" : "",
+    "effectDirectives" : ""
+  }
+}

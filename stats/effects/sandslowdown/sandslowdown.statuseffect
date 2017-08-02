@@ -1,0 +1,15 @@
+{
+  "name" : "sandslowdown",
+  "blockingStat" : "quicksandImmunity",
+  "effectConfig" : {},
+  "defaultDuration" : 0.1,
+
+  "scripts" : [
+    "sandslowdown.lua"
+  ],
+
+  "animationConfig" : "sandslowdown.animation",
+
+  "label" : "Quicksand",
+  "icon" : "/interface/statuses/sandslowdown.png"
+}

@@ -1,0 +1,42 @@
+{
+  "objectName" : "avikansheet",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 40,
+  "description" : "A sheet of leather, often hung between walls to provide a bit of shadow.",
+  "shortdescription" : "Avikan Sheet",
+  "race" : "avikan",
+
+  "apexDescription" : "A sheet of leather, it casts a cool shadow during the day.",
+  "avianDescription" : "Looks simple, but the shadow it casts is priceless.",
+  "floranDescription" : "Sheetsss block out sssun...",
+  "glitchDescription" : "Observation. This sheet is used to block out the sun during warm days.",
+  "humanDescription" : "A simple sheet, but the shadow it casts is welcome during the day.",
+  "hylotlDescription" : "A practical way to block out the sun during warm days.",
+
+  "aegiDescription" : "A sheet of leather, used in the desert to block out the sun and provide a cool shadow.",
+  "avikanDescription" : "Sheets like these are essential in keeping our city streets from getting too hot.",
+  "erixianDescription" : "A sheet of leather to block out the sun. I prefer the heat.",
+  "trinkDescription" : "This leather sheet can provide a cooling shadow by blocking out the desert's sun.",
+  "hymidDescription" : "A leather sheet meant to provide a bit of shade in the desert.",
+  "notixDescription" : "This sheet can provide some shade in the desert.",
+  "jorgasianDescription" : "A simple but effective way to provide some shade in the hot desert.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Analysis. This sheet can provide shade in the desert.",
+  
+  "inventoryIcon" : "avikansheeticon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikansheet.png:<color>",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "left", "right" ]
+
+    }
+  ]
+}

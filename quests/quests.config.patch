@@ -1,0 +1,18 @@
+[
+	{ "op" : "add",
+		"path" : "/initialquests/avikan",
+		"value" : [ "protectorate", "avikancustomtailoring", "avikanstoryhidden" ]
+	},
+	{ "op" : "add",
+		"path" : "/initialquests/trink",
+		"value" : [ "protectorate", "trinkcustomtailoring", "alliancestoryhidden" ]
+	},
+	{ "op" : "add",
+		"path" : "/initialquests/droden",
+		"value" : [ "protectorate", "drodencustomtailoring", "avikanstoryhidden" ]
+	},
+	{ "op" : "add",
+		"path" : "/initialquests/aegi",
+		"value" : [ "protectorate", "aegicustomtailoring", "alliancestoryhidden" ]
+	}
+]

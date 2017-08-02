@@ -1,0 +1,51 @@
+{
+  "objectName" : "avikancargodoorbroken",
+  "colonyTags" : ["avikan"],
+  "printable" : false,
+  "rarity" : "Common",
+  "category" : "decorative",
+  "description" : "A sturdy metal door, used to protect a ship's cargo hold.",
+  "shortdescription" : "Avikan Cargo Door",
+  "race" : "avikan",
+
+  "apexDescription" : "A cargo door. If it would open now, I'd probably be dead.",
+  "avianDescription" : "A strong cargo door. Good thing it is locked.",
+  "floranDescription" : "Floran afraid of endlesss sspace behind doorsss...",
+  "glitchDescription" : "Relief. This cargo door won't open without prior decompression of the cargo hold.",
+  "humanDescription" : "I'm not opening this before this room gets decompressed.",
+  "hylotlDescription" : "A heavy metal door, and all that stands between me and the endlessness of space.",
+  "novakidDescription" : "Sure am glad this door ain't opening anytime soon. I'd be rather annoyed if I got sucked into outer space.",
+
+  "aegiDescription" : "A cargo door. It is all that stands between me and outer space...",  
+  "avikanDescription" : "This door is all that stands between me and outer space. Good thing it won't open.",
+  "erixianDescription" : "A breach of this cargo door would be disastrous.",
+  "trinkDescription" : "Decompression of this room is needed before that door will ever open.",
+  "hymidDescription" : "This door won't open before the cargo hold gets decompressed.",
+  "notixDescription" : "Good thing this door won't budge before the room gets decompressed.",
+  "jorgasianDescription" : "It's a scary thing to think that this door is all that stand between me and outer space.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Analysis complete. Door is locked until the cargo hold is decompressed.",
+
+  "inventoryIcon" : "avikancargodoorbrokenicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikancargodoorbroken.png:default",
+      "imagePosition" : [-20, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom", "top" ],
+      "collision" : "solid",
+      "collisionSpaces" : [ [-1, 0], [0, 0], [-1, 1], [0, 1], [-1, 2], [0, 2], [-1, 3], [0, 3], [-1, 4], [0, 4], [-1, 5], [0, 5], [-1, 6], [0, 6], [-1, 7], [0, 7], [-1, 8], [0, 8], [-1, 9], [0, 9], [-1, 10], [0, 10], [-1, 11], [0, 11], [-1, 12], [0, 12] ]
+    }
+  ],
+  
+  "animation" : "/objects/noisy/noisy.animation",
+
+  "scripts" : [
+    "/objects/noisy/noisy.lua"
+  ],
+  
+  "sounds" : [ "/sfx/interface/ship_error1.ogg" ]
+}

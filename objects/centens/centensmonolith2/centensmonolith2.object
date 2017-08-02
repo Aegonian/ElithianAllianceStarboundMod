@@ -1,0 +1,46 @@
+{
+  "objectName" : "centensmonolith2",
+  "colonyTags" : ["centens"],
+  "rarity" : "Rare",
+  "description" : "A monolith of pure Centensian metal.",
+  "shortdescription" : "Centensian Monolith",
+  "race" : "centens",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 1000,
+
+  "apexDescription" : "A monolith of some odd metal. Who would have built such a thing?",
+  "avianDescription" : "A shiny monolith. I get an odd sensation just standing near it...",
+  "floranDescription" : "Monolith makess Floran feel funny insside...",
+  "glitchDescription" : "Cautious. This monolith is somehow interfering with my sensors.",
+  "humanDescription" : "A monolith of sorts. Why does it make me feel so odd?",
+  "hylotlDescription" : "A monolith made of an unknown metal - how mysterious!",
+  "novakidDescription" : "That's a fine monolith right there.",
+
+  "aegiDescription" : "A Centensian monolith. We never managed to figure out the purpose of these slabs.",
+  "avikanDescription" : "This monolith of the Old Ones is an object of great importance in the Rhaiod religion.",
+  "erixianDescription" : "An ancient monolith, built by the Centens for an unknown reason. How mysterious.",
+  "trinkDescription" : "A Centensian-built monolith. What could its purpose be?",
+  "hymidDescription" : "A relic from the Gods. It is a great honour to observe such a thing!",
+  "notixDescription" : "The Hyverium used to build this monolith is unrealistically strong. I don't think anyone has ever managed to break through it.",
+  "jorgasianDescription" : "A monolith. The Centens left behind many strange relics such as these.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "theleanDescription" : "TODO",
+  "drodenDescription" : "Detected Centensian Monolith. Age calculation failed.",
+
+  "inventoryIcon" : "centensmonolith2icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "centensmonolith2.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

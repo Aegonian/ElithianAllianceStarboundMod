@@ -1,0 +1,22 @@
+{
+  "projectileName" : "lightningarcsource",
+  "image" : "lightningarcsource.png",
+  "animationCycle" : 0.5,
+  "damageKindImage" : "icon.png",
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 0,
+  "lightColor" : [40, 60, 100],
+  "timeToLive" : 0.1,
+  "bounces" : -1,
+  "onlyHitTerrain" : true,
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "damageType" : "NoDamage",
+  "damageKind" : "electric",
+  
+  //SCRIPT CONFIG
+  "scripts" : [ "/projectiles/scripts/thea-electricarc.lua" ],
+  "tickTime" : 0.07,
+  "boltSpeed" : 100,
+  "jumpDistance" : 20
+}

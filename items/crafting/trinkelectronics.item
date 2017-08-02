@@ -1,0 +1,10 @@
+{
+  "itemName" : "trinkelectronics",
+  "price" : 75,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "trinkelectronics.png",
+  "description" : "Trinkian-built electronic parts.",
+  "shortdescription" : "Trinkian Electronics",
+  "itemTags" : [ "reagent" ]
+}

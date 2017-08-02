@@ -1,0 +1,30 @@
+{
+  "projectileName" : "avikanmetalarrow",
+  "physics" : "avikanarrow",
+  "bounces" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "avikanmetalarrow.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "emitters" : [ ],
+  "power" : 20,
+  "knockback" : 10,
+  "knockbackDirectional" : true,
+  "timeToLive" : 30,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanmetalarrowsticking",
+      "inheritDamageFactor" : 0.0,
+      "inheritSpeedFactor" : 0.6,
+      "angleAdjust" : 0
+    }
+  ],
+  "damageKind" : "avikanhunting",
+  "hydrophobic" : false
+}

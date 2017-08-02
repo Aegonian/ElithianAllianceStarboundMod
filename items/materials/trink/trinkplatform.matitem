@@ -1,0 +1,14 @@
+{
+  "itemName" : "trinkplatform",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "trinkplatform.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "shortdescription" : "Trinkian Platform",
+  "description" : "A dark metal platform.",
+  "glitchDescription" : "Statement. A strong metal platform.",
+  "floranDescription" : "Metal platformsss",
+
+  "materialId" : 30104
+}

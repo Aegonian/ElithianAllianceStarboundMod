@@ -1,0 +1,10 @@
+{
+  "itemName" : "trinklaserdiode",
+  "price" : 50,
+  "rarity" : "uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "trinklaserdiode.png",
+  "description" : "A Trinkian laser diode, the core of all Trinkian laser weapons.",
+  "shortdescription" : "Trinkian Laser Diode",
+  "itemTags" : [ "reagent" ]
+}

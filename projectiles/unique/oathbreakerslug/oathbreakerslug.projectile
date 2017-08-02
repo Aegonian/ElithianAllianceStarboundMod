@@ -1,0 +1,40 @@
+{
+  "projectileName" : "oathbreakerslug",
+  "image" : "oathbreakerslug.png",
+  "physics" : "lineriflebullet",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "pointLight" : false,
+  "flippable" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/unique/oathbreakerslug/trail.png",
+        "position" : [-1.5, 0],
+        "layer" : "middle",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.5,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  "statusEffects" : [ ],
+  "power" : 5.0,
+  "speed" : 200,
+  "knockback" : 0,
+  "damageKind" : "default",
+  
+  "scripts" : [ "/projectiles/scripts/thea-linerifle.lua" ]
+}

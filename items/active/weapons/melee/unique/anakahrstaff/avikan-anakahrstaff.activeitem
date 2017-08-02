@@ -1,0 +1,62 @@
+{
+  "itemName" : "avikan-anakahrstaff",
+  "price" : 1500,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "essential",
+  "description" : "^orange;An power line staff built by Anakahr Systems.",
+  "shortdescription" : "^orange;Anakahr Staff^white;",
+  "tooltipKind" : "thea-sword-unique",
+  "category" : "Line Staff",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","bowstaff","avikan","theaUnique"],
+
+  "inventoryIcon" : "avikan-anakahrstaff.png",
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  //"collectablesOnPickup" : { "thea_weapons" : "avikan-anakahrstaff" },
+  
+  "meritTokenValue" : 100,
+
+  "animation" : "avikan-anakahrstaff.animation",
+  "animationParts" : {
+    "handle" : "handle.png",
+    "handleFullbright" : "handlefullbright.png",
+    "blade" : "blade.png",
+    "bladeFullbright" : "bladefullbright.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/vhaleihan_swing.ogg" ],
+	  "dash" : [ "/sfx/melee/vhaleihan_dash.ogg" ],
+	  "chargeStart" : [ "/sfx/melee/vhaleihan_charge_loop.ogg" ],
+	  "chargedLow" : [ "/sfx/melee/vhaleihan_ready_low.ogg" ],
+	  "chargedMedium" : [ "/sfx/melee/vhaleihan_ready_medium.ogg" ],
+	  "chargedHigh" : [ "/sfx/melee/vhaleihan_ready_high.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/energymeleeweapon.lua"],
+  
+  "activeTime" : 3.0,
+
+  "elementalType" : "linerifle",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "thea-bowstaffcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.8,
+    "baseDps" : 11.5,
+	
+    "damageConfig" : {
+      "damageSourceKind" : "linerifle",
+      "statusEffects" : [ "linerifleburn" ],
+      "knockbackMode" : "aim",
+      "knockback" : 30,
+      "timeoutGroup" : "primary"
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

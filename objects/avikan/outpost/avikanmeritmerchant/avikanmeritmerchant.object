@@ -1,0 +1,51 @@
+{
+  "objectName" : "avikanmeritmerchant",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Legendary",
+  "printable" : false,
+  "description" : "Tokens of merit can be traded for a variety of goods here.",
+  "shortdescription" : "Nomada Token Exchange",
+  "race" : "avikan",
+  
+  "floranDescription" : "If Floran givess robot man tokensss, robot man gives Floran itemsss.",
+  "glitchDescription" : "Enticed. Tokens of merit can be exchanged for various goods here.",
+  "novakidDescription" : "Gotta have some tokens of merit if I wish to trade here.",
+  
+  "avikanDescription" : "Tokens of merit can be traded for a variety of goods here.",
+  "drodenDescription" : "Merchant detected. Purchases are made using tokens of merit.",
+  
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/craftingmerchant.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "Nomada Token Exchange",
+        "subtitle" : "  Being meritful has its merits.",
+        "icon" : {
+          "file" : "/objects/avikan/outpost/avikanmeritmerchant/icon.png"
+        }
+      }
+    },
+    "filter" : [ "avikanmeritshop" ]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "avikanmeritmerchant.png:<frame>",
+      "direction" : "right",
+
+      "imagePosition" : [0, 0],
+      "frames" : 20,
+      "animationCycle" : 1.6,
+
+	  "spaces" : [
+        [1, 3], [2, 3],
+        [1, 2], [2, 2],
+        [1, 1], [2, 1],
+        [1, 0], [2, 0]
+      ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

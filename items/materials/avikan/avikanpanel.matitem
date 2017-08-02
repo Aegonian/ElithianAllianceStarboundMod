@@ -1,0 +1,14 @@
+{
+  "itemName" : "avikanpanel",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "avikanpanel.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "description" : "A metal panel, coloured like sand.",
+  "shortdescription" : "Avikan Panel",
+  "glitchDescription" : "Statement. A strong metal panel.",
+  "floranDescription" : "Metal panelsss",
+
+  "materialId" : 30000
+}

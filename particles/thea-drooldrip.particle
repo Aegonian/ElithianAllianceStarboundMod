@@ -1,0 +1,17 @@
+{
+  "kind" : "thea-drooldrip",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/theadrooldrip/theadrooldrip.animation",
+    "position" : [0, 0],
+    "initialVelocity" : [0, -1],
+    "finalVelocity" : [0, -50],
+    "approach" : [0, 10],
+    "destructionAction" : "shrink",
+    "destructionTime" : 1.5,
+    "fade" : 1,
+    "size" : 1,
+    "layer" : "middle",
+    "timeToLive" : 10.0
+  }
+}

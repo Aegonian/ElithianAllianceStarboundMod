@@ -1,0 +1,86 @@
+{
+  "type" : "crewmembernomadamechanic",
+  "baseType" : "crewmemberavikan",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : true
+    },
+
+	"crew" : {
+	  "role" : {
+        "type" : "nomadamechanic",
+        "name" : "Mechanic",
+        "field" : "Mechanical",
+        "uniformColorIndex" : 8,
+		
+        "benefits" : [
+          {
+            "type" : "ShipUpgradeBenefit",
+            "property" : "fuelEfficiency",
+            "value" : 0.1
+          }
+        ]
+      },
+
+      "ranks" : [
+        "<field> Expert",
+        "<field> Weapons Calibrator",
+        "Primary Ship <role>",
+        "Secondary Ship <role>",
+        "<field> Enthusiast",
+        "Capable <role>",
+        "Experienced <role>",
+        "<field> Science Master",
+        "Nomada-certified <role>",
+        "<field> Assistant",
+        "<field> Mastermind",
+        "Master <role>",
+        "<field> <role>",
+        "Independent <role>",
+        "Poorly Instructed <role>",
+        "Self-taught <role>",
+        "<field> Officer",
+        "<field> Instructor",
+        "Recently Graduated <role>"
+      ],
+	  
+	  "defaultUniform" : {
+		"head" : "avikan-tacticalhead",
+		"chest" : "avikan-engineerchest",
+		"legs" : "avikan-engineerlegs"
+	  },
+	  
+	  "uniformSlots" : []
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "roleDescription" : {
+          "default" : {
+            "default" : [
+              "The ship's fuel capacity is hardly optimized. I'll fix that for you, Captain."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+			"head" : [ { "name" : "avikan-tacticalhead", "data" : { "colorIndex" : 8 } } ],
+			"chest" : [ { "name" : "avikan-engineerchest", "data" : { "colorIndex" : 8 } } ],
+            "legs" : [ { "name" : "avikan-roguelegs2", "data" : { "colorIndex" : 8 } } ],
+            "sheathedprimary" : [
+			  "avikan-wrench"
+			]
+          }
+        ] ]
+    ]
+  }
+}

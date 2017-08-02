@@ -1,0 +1,11 @@
+{
+  "itemName" : "primecore",
+  "price" : 1000,
+  "rarity" : "Essential",
+  "category" : "Quest Item",
+  "tooltipKind" : "thea-unique",
+  "inventoryIcon" : "primecore.png",
+  "description" : "An experimental mobile generator using state-of-the-art Trinkian technology.",
+  "shortdescription" : "^orange;Prime Core^white;",
+  "itemTags" : [ "questitem" ]
+}

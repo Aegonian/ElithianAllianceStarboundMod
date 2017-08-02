@@ -1,0 +1,29 @@
+{
+  "materialId" : 30100,
+  "materialName" : "avikanplatform",
+  "collisionKind" : "platform",
+  "transparent" : true,
+  "itemDrop" : "avikanplatform",  
+  "shortdescription" : "Avikan Platform",
+  "description" : "A metal platform. The colour is reminiscent of sand.",
+  
+  "glitchDescription" : "Informed. The colour of this platform makes it easy to hide in the desert.",
+  "floranDescription" : "Platform coloured like sssand.",
+  "novakidDescription" : "This 'ere platform has a sand-like texture to it.",
+  
+  "drodenDescription" : "Analysis complete. A metal platform.",
+  
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "category" : "Supports",
+  
+  "renderTemplate" : "/tiles/platformtemplate.config",
+  "renderParameters" : {
+    "texture" : "avikanplatform.png",
+    "variants" : 3,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 0,
+    "platform" : true
+  }
+}

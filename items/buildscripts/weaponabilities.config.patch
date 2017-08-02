@@ -1,0 +1,54 @@
+[
+  //RANGED ABILITIES
+  {
+	"op": "add",
+	"path": "/jumpflare",
+	"value": "/items/active/weapons/ranged/abilities/jumpflare/jumpflare.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-grenadelauncher",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-grenadelauncher/thea-grenadelauncher.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-stickylauncher",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-stickylauncher/thea-stickylauncher.weaponability"
+  },
+  //MELEE ABILITIES
+  {
+	"op": "add",
+	"path": "/thea-whirlwind",
+	"value": "/items/active/weapons/melee/abilities/broadsword/thea-whirlwind/thea-whirlwind.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-shieldbladecombo",
+	"value": "/items/active/weapons/melee/abilities/shieldblade/thea-shieldbladecombo.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-shieldbladecomboenergy",
+	"value": "/items/active/weapons/melee/abilities/shieldblade/thea-shieldbladecomboenergy.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-shieldbladedefend",
+	"value": "/items/active/weapons/melee/abilities/shieldblade/thea-shieldbladedefend.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-shieldbladedefendenergy",
+	"value": "/items/active/weapons/melee/abilities/shieldblade/thea-shieldbladedefendenergy.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-bowstaffcombo",
+	"value": "/items/active/weapons/melee/abilities/bowstaff/thea-bowstaffcombo.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-explosivehammersmash",
+	"value": "/items/active/weapons/melee/abilities/hammer/thea-explosivehammersmash/thea-explosivehammersmash.weaponability"
+  }
+]

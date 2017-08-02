@@ -1,0 +1,10 @@
+{
+  "itemName" : "trinkmetaltier2",
+  "price" : 100,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "trinkmetaltier2.png",
+  "description" : "A srong metal cube, easily stored and ready for crafting.",
+  "shortdescription" : "Strong Trinkian Metal",
+  "itemTags" : [ "reagent" ]
+}

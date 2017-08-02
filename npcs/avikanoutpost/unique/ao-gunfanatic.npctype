@@ -1,0 +1,61 @@
+{
+  "type" : "ao-gunfanatic",
+  "baseType" : "ao-idle",
+
+  "npcname" : "Alak'Vha",
+
+  "scriptConfig" : {
+  
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "A day without a gun fired is a dull day indeed."
+		  ]
+		},
+
+        "avikan" : {
+          "default" : [
+            "A day without a gun fired is a dull day indeed."
+          ],
+          "glitch" : [
+            "Careful you don't get on my bad side. I can't wait to shoot something."
+          ],
+          "avikan" : [
+            "A day without a gun fired is a dull day indeed."
+          ],
+          "trink" : [
+            "Careful you don't get on my bad side. I can't wait to shoot something."
+          ],
+          "droden" : [
+            "Not all Droden are bad, but I won't hesitate to shoot you if you cause any trouble."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "avikan-tacticalhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "avikan-tacticalchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "avikan-tier5alegs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "back" : [
+              { "name" : "drodenswordback", "parameters" : { "colorIndex" : 0 } }
+            ],
+			"primary" : [
+				[ "avikan-terveleadersbow" ]
+			]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id" : "trinkcrafting2",
+  "prerequisites" : [ "trinkcrafting" ],
+  "title" : "^green;Trinkian Crafting Techniques II",
+  "text" : "The file size for this ^orange;Trinkian Crafting Guide ^white;is substantially larger than I thought... I'll need a ^orange;Circuit Data Drive ^white;to download it all. Trinkian merchants often sell these items: ^green;I should check around the settlement for someone selling such a drive^white;.",
+  "completionText" : "The download is finished! I can now craft a variety of Trinkian items, and it looks like there's a blueprint for a new, ^orange;unique weapon ^white;in here, too!",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "trinkcraftingguide", 1 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+	"portraits" : {
+      "default" : "player"
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "trinkdatadrive",
+        "count" : 1,
+        "consume" : true
+      }
+    ],
+	"giveBlueprints" : [
+      "trink-debilitator"
+    ],
+	"turnInDescription" : "Return to a ^orange;Central Circuit Terminal ^reset;in a ^orange;Trinkian Settlement^reset;"
+  }
+}

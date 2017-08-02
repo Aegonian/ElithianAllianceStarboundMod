@@ -1,0 +1,25 @@
+{
+  "projectileName" : "thea-moneyspawner",
+  "physics" : "statuspod",
+  "bounces" : -1,
+  "timeToLive" : 0.02,
+  "speed" : 0,
+  "image" : "thea-moneyspawner.png",
+  "animationCycle" : 1.0,
+  "frameNumber" : 1,
+  "periodicActions" : [
+    {
+      "time" : 0.02,
+      "loop" : true,
+      "action" : "projectile",
+      "type" : "money",
+      "fuzzAngle" : -250
+   }
+  ],
+  "power" : 0,
+  "piercing" : true,
+  "damageKind" : "hidden",
+  "damageType" : "ignoresdef",
+  "flippable" : true,
+  "damageTeam" : { "type" : "indiscriminate" }
+}

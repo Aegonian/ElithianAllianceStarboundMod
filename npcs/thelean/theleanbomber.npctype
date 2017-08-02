@@ -1,0 +1,64 @@
+{
+  "type" : "theleanbomber",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "theleanDeathTreasure" ],
+
+  "scriptConfig" : {
+	"behaviorConfig" : {
+      "leapWindup" : 0.75,
+      "rangedAimTime" : 0.5,
+      "rangedWindupTime" : 0.01
+    },
+	
+	"combat" : {
+      "meleeWeaponWindups" : {
+        "default" : 0.75
+      },
+      "meleeWeaponCooldowns" : {
+        "default" : 0.5
+      }
+    },
+	
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Keth!"				//Death!
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "thelean-verylighthead" } ],
+            "chest" : [ { "name" : "thelean-verylightchest" } ],
+            "primary" : [
+              "theleansuicidebomb"
+            ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 50.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.0
+      },
+      "protection" : {
+        "baseValue" : 0.5
+      },
+      "healthRegen" : {
+        "baseValue" : 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "projectileName" : "tributesuperarrowsticking",
+  "physics" : "stickybomb",
+  "bounces" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "tributesuperarrow.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "piercing" : true,
+  "power" : 1,
+  "timeToLive" : 15,
+  "supportsProcessing" : true,
+  "lightColor" : [0, 56, 96],
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "hydrophobic" : false
+}

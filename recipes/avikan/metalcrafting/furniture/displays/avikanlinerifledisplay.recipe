@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "avikan-tier6linerifle", "count" : 1 },
+	{ "item" : "avikandarkmetal", "count" : 2 }
+  ],
+  "output" : { "item" : "avikanlinerifledisplay", "count" : 1 },
+  "groups" : [ "avikanmetalcrafting", "metalfurniture", "all" ]
+}

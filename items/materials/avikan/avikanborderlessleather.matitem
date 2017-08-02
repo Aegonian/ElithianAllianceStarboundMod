@@ -1,0 +1,12 @@
+{
+  "itemName" : "avikanborderlessleather",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "avikanborderlessleather.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "shortdescription" : "Borderless Avikan Leather",
+  "description" : "Leather tapestry for wall decoration and insulation.",
+
+  "materialId" : 30093
+}

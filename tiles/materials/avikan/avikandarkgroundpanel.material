@@ -1,0 +1,28 @@
+{
+  "materialId" : 30011,
+  "materialName" : "avikandarkgroundpanel",
+  "particleColor" : [97, 97, 97, 255],
+  "itemDrop" : "avikandarkgroundpanel", 
+  "shortdescription" : "Dark Avikan Floor",
+  
+  "description" : "A floor panel made of dark metal.",
+  "glitchDescription" : "Statement. A floor panel made of dark metal.",
+  "floranDescription" : "Panelsss for floor.",
+  "novakidDescription" : "A floor panel thick as a safe.",
+  
+  "drodenDescription" : "Analysis complete. Floor panel.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "avikandarkgroundpanel.png",
+    "variants" : 3,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 100
+  }
+}

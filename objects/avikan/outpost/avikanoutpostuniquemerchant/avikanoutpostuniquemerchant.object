@@ -1,0 +1,87 @@
+{
+  "objectName" : "avikanoutpostuniquemerchant",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Legendary",
+  "description" : "This merchant has a sense of mystery and wonder about him...",
+  "shortdescription" : "Mysterious Merchant",
+  "race" : "avikan",  
+  
+  "floranDescription" : "Floran doesss knot know thiss persson...",
+  "glitchDescription" : "Cautious. This merchant has a sense of wrongness about him.",
+  "drodenDescription" : "Error. Identification failed. Scanner malfunction. Field disruption detected. Error. Error. Error.",
+  
+  "printable" : false,
+
+  "inventoryIcon" : "avikanoutpostuniquemerchanticon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanoutpostuniquemerchant.png:<frame>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 30,
+      "animationCycle" : 3.0,
+
+	  "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+  "scripts" : [ "avikanoutpostuniquemerchant.lua" ],
+  "scriptDelta" : 0,
+
+  "interactData" : {
+    "config" : "/interface/windowconfig/craftingmerchant.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "Mysterious Merchant",
+        "subtitle" : "New unique items and equipment every day",
+        "icon" : {
+          "file" : "/interface/crafting/avikanoutpostuniquemerchant.png"
+        }
+      }
+    },
+    "filter" : []
+  },
+
+  //How long the random selection will be available in seconds
+  "rotationTime" : 86400,
+  
+  //Currency and price configuration
+  "currency" : "avikanmerittoken",
+  "regularPrice" : 200,
+  "augmentPrice" : 500,
+  "randomWeaponPrice" : 1000,
+  
+  //The merchant's inventory configuration
+  "storeInventory" : {
+	//Guaranteed items, these will always be available for purchase
+    "guaranteed" : [
+	  "centensgravitystim"
+	],
+	//Augments, these will always be available for purchase
+    "augments" : [
+	  "thea-bubbleshieldaugment3",
+	  "thea-forceshieldaugment3"
+	],
+	//Randomly selected stock, resets every day. Items can be grouped together using brackets
+    "randomWeapon" : [
+		//Avikan Weapons
+	  [ "avikan-errasslayerslance", "avikan-primeinitiative" ],
+	  [ "avikan-sandcannon", "avikan-sandstalkersbane" ],
+	  [ "avikan-airstrike", "avikan-terveleadersbow" ],
+	  [ "avikan-architect", "avikan-guardbreakersbow" ],
+	  [ "avikan-rhakorilongbow", "avikan-vhalakinbow" ],
+	  [ "avikan-linebreaker", "avikan-oathbreaker" ],
+	  [ "avikan-vhalakinlongbow", "avikanteslaspear" ],
+		//Centens Weapons
+	  [ "avikan-handofrhadeis", "centens-deathseeker" ],
+	  [ "centens-voideater", "centens-voiceofrhadeis" ],
+	  [ "centens-eventhorizon", "centens-wrathofrhadeis" ],
+		//Trink Weapons
+	  [ "trink-shockbolter", "trink-frostlaser" ],
+	  [ "trink-energizer", "trink-arclighter" ],
+		//Alliance Weapons
+	  [ "thea-sidewinder", "thea-skylighter" ]
+    ]
+  }
+}

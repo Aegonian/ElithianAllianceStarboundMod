@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "avikanmetal", "count" : 4 },
+    { "item" : "avikandarkmetal", "count" : 2 },
+	{ "item" : "avikanjumpgatecore", "count" : 1 },
+	{ "item" : "avikanhoverbikeobject", "count" : 1 }
+  ],
+  "output" : { "item" : "avikanvehiclejumpgate", "count" : 1 },
+  "groups" : [ "avikanmetalcrafting", "metalfurniture", "all" ]
+}

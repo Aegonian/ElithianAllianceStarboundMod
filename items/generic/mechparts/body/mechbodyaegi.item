@@ -1,0 +1,15 @@
+{
+  "itemName" : "mechbodyaegi",
+  "price" : 9600,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "category" : "mechPart",
+  "tooltipKind" : "mechbody",
+  "builder" : "/items/buildscripts/buildmechpart.lua",
+  "inventoryIcon" : "mechbodyaegi.png",
+  "description" : "This heavily armoured mech body was manufactured by Enerth Engineering.",
+  "shortdescription" : "Guardian Mech Body",
+  "itemTags" : [ ],
+
+  "mechPart" : ["body", "aegi"]
+}

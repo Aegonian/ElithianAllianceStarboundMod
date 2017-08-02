@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "avikandarkmetal", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "avikansupportpanel",
+    "count" : 20
+  },
+  "duration" : 0.5,
+  "groups"  : [ "avikanmetalcrafting", "metalmaterials", "all" ]
+}

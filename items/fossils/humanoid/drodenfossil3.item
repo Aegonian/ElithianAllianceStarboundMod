@@ -1,0 +1,21 @@
+{
+  "itemName" : "drodenfossil3",
+  "rarity" : "Uncommon",
+  "itemTags" : ["fossil"],
+
+  "description" : "A fossilised pair of Droden legs.",
+  "category" : "mediumFossil",
+
+  "shortdescription" : "Droden Legs",
+  "race" : "droden",
+  "price" : 0,
+
+  "inventoryIcon" : "drodenfossil3icon.png",
+
+  "displayImage" : "/objects/fossils/humanoidfossils/fossildroden/drodenlegsdisplay.png",
+  "displayoffset" :[0, 0],
+
+  "fossilSetName" : "drodenSkeleton",
+  "setIndex" : 3,
+  "setCount" : 3
+}

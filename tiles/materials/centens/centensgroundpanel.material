@@ -1,0 +1,28 @@
+{
+  "materialId" : 30054,
+  "materialName" : "centensgroundpanel",
+  "particleColor" : [203, 196, 193, 255],
+  "itemDrop" : "centensgroundpanel", 
+  "shortdescription" : "Centensian Floor",
+  
+  "description" : "A lightweight but incredibly strong metal panel.",
+  "glitchDescription" : "Fascinated. This metal panel is stronger and lighter than anything I've encountered before.",
+  "floranDescription" : "Floran is confused. Metal isss light and so sstrong Floran can't scratch it...",
+  "novakidDescription" : "I'm baffled by how light and strong this 'ere metal here.",
+  
+  "drodenDescription" : "Analysis complete. Centensian metal panel detected.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "centensgroundpanel.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 90
+  }
+}

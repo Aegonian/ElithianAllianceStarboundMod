@@ -1,0 +1,59 @@
+{
+  "objectName" : "avikanentry2",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 60,
+  "description" : "A decorated tent awning, made of fabric.",
+  "shortdescription" : "Avikan Fabric Awning",
+  "race" : "avikan",
+
+  "apexDescription" : "A colourful tent awning.",
+  "avianDescription" : "A tent awning, decorated with a simple pattern.",
+  "floranDescription" : "Floran likesss bright coloursss.",
+  "glitchDescription" : "Observation. A tent entrance.",
+  "humanDescription" : "A colourful tent awning. The fabric is quite well crafted.",
+  "hylotlDescription" : "Such vivid colours.",
+
+  "aegiDescription" : "A tent awning, made of colourful fabric.",
+  "avikanDescription" : "Made of fabric, this sort of awning is often used in the tents of our Elders.",
+  "erixianDescription" : "A fabric tent awning. Colourful, but not too sturdy.",
+  "trinkDescription" : "A tent awning made of fabric. It features vivid colours.",
+  "hymidDescription" : "Functional and nice to look at both, this awning will come in handy in the open desert.",
+  "notixDescription" : "A fabric tent awning.",
+  "jorgasianDescription" : "A fabric tent awning, woven with great care.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Fabric awning. Provides protection against desert winds.",
+
+  "inventoryIcon" : "avikanentry2icon.png",
+  "orientations" : [
+    {
+      "image" : "avikanentry2.png:<color>",
+
+      "imagePosition" : [-40, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform",
+      "flipImages" : true,
+      "direction" : "right"
+    },
+    {
+      "image" : "avikanentry2.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform",
+      "direction" : "left"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "config" : {
+    "shipUpgrades" : {
+      "capabilities" : ["teleport", "planetTravel", "systemTravel"],
+      "crewSize" : 12
+    }
+  },
+
+  "backgroundOverlays" : [
+    {
+      "image" : "avikanT8.png",
+      "position" : [20, 20],
+      "fullbright" : true
+    },
+    {
+      "image" : "avikanT8lit.png",
+      "position" : [20, 20]
+    }
+  ],
+
+  "blockKey" : "blockKey.config:blockKey",
+  "blockImage" : "avikanT8blocks.png"
+}

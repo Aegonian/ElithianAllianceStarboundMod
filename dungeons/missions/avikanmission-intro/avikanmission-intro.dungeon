@@ -1,0 +1,23 @@
+{
+  "metadata" : {
+    "name" : "avikanmission-intro",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "avikanmission-intro" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : true
+  },
+
+  "parts" : [
+    {
+      "name" : "avikanmission-intro",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "avikanmission-intro.json" ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "objectName" : "avikanaircraftobject",
+  "colonyTags" : ["avikan", "drehk"],
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 350,
+  "description" : "A personal flying vehicle of Avikan origin.",
+  "shortdescription" : "Avikan Drehk",
+  "race" : "avikan",
+  
+  "apexDescription" : "A bulky vehicle, but it flies surprisingly nimbly.",
+  "avianDescription" : "A flying vehicle? I wish it had wings...",
+  "floranDescription" : "Big metal fly thingss. Fliesss.",
+  "glitchDescription" : "Wonder. I do not know how this vehicle achieves flight.",
+  "humanDescription" : "A personal flying vehicle? No way!",
+  "hylotlDescription" : "This vehicle can fly in unusual ways.",
+
+  "aegiDescription" : "For a species that often lives underground, the Avikan have an unusual love for flight.",
+  "avikanDescription" : "A well balanaced drehk, built for scouting.",
+  "erixianDescription" : "An Avikan flying vehicle.",
+  "trinkDescription" : "A personal flying vehicle. An inefficient means of transporting people.",
+  "hymidDescription" : "I've always wanted to fly one of these.",
+  "notixDescription" : "An Avikan Drehk. It is surprisingly nimble once in the air.",
+  "jorgasianDescription" : "I've always enjoyed flying.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Drehk detected. Status: out of fuel.",
+
+  "inventoryIcon" : "avikanaircrafticon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanaircraft.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "type" : "ao-avikancaptain",
+  "baseType" : "ao-civilian",
+
+  "npcname" : "Captain Azuri",
+
+  "scriptConfig" : {
+    	
+	//"offeredQuests" : [ "avikancrafting.gearup" ],
+	//"turnInQuests" : [ "avikancrafting.gearup", "avikancrafting2.gearup" ],
+  
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "Greetings, stranger. I hope your ship is in good condition?"
+		  ]
+		},
+
+        "avikan" : {
+          "default" : [
+            "Greetings, stranger. I hope your ship is in good condition?"
+          ],
+          "glitch" : [
+            "Is your ship in good condition? You never know when you might have to make a rapid escape..."
+          ],
+          "avikan" : [
+            "Greetings, fellow Captain. I hope your ship is in good condition?"
+          ],
+          "trink" : [
+            "Is your ship in good condition? You never know when you might have to make a rapid escape..."
+          ],
+          "droden" : [
+            "Is your ship in good condition? You never know when you might have to make a rapid escape..."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "avikan-captainhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "avikan-captainchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "avikan-roguelegs2", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

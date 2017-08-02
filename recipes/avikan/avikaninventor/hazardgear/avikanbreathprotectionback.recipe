@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "avikanmetal", "count" : 6 },
+	{ "item" : "avikandarkmetal", "count" : 2 },
+	{ "item" : "monsterscales", "count" : 6 },
+    { "item" : "avikanglassitem", "count" : 10 },
+    { "item" : "livingroot", "count" : 1 }
+  ],
+  "output" : { "item" : "avikanbreathprotectionback", "count" : 1 },
+  "groups" : [ "avikaninventor", "hazardgear", "all" ]
+}

@@ -1,0 +1,56 @@
+{
+  "objectName" : "avikanautomateddoor",
+  "colonyTags" : ["avikan", "door"],
+  "rarity" : "Common",
+  "category" : "door",
+  "printable" : false,
+  "price" : 50,
+  "description" : "An automated blast door.",
+  "shortdescription" : "Automated Nomada Door",
+  "race" : "avikan",
+  
+  "health" : 8,
+  
+  "floranDescription" : "Floran wondersss how door openss on itsss own?",
+  "glitchDescription" : "Observation. This door opens and closes automatically.",
+  "novakidDescription" : "This door opens when I get near, and closes behind my back. It's magic!",
+  "drodenDescription" : "Detected automated blast door.",
+
+  "inventoryIcon" : "avikanautomateddooricon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanautomateddoor.png:default",
+      "imagePosition" : [0, 0],
+      "renderLayer" : "Object+5",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom", "top" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/scripts/thea-automateddoor.lua" ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/door/door.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_open.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_close.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "avikanautomateddoor.png"
+  },
+  "animationPosition" : [0, 0],
+  
+  "outputNodes" : [ [1, 0] ],
+  
+  "detectDuration" : 0.5,
+  "detectArea" : [ [-2, 0], [4, 5] ]
+}

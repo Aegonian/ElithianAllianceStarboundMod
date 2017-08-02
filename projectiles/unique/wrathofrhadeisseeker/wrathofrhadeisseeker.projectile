@@ -1,0 +1,37 @@
+{
+  "projectileName" : "wrathofrhadeisseeker",
+  "image" : "wrathofrhadeisseeker.png",
+  "physics" : "centensgravityseeker",
+  "bounces" : -1,
+  "piercing" : true,
+  "animationCycle" : 0.3,
+  "frameNumber" : 4,
+  "lightColor" : [70, 90, 100],
+  "fullbright" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/status/xanafianshadowdeath.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 10,
+  "timeToLive" : 4.0,
+  "damageKind" : "xanafian",
+  
+  //SCRIPT CONFIG
+  "scripts" : [ "/projectiles/scripts/thea-homingbullet.lua" ],
+  "searchRadius" : 40,
+  "baseHomingControlForce" : 2,
+  
+  "randomTimeToLive" : true,
+  "timeToLiveMilliseconds" : true,
+  "minLifeTime" : 350,
+  "maxLifeTime" : 450,
+  
+  "homingStartDelay" : 0.25,
+  
+  "randomStartingSpeed" : true,
+  "minSpeed" : 9,
+  "maxSpeed" : 11
+}

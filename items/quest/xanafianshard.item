@@ -1,0 +1,11 @@
+{
+  "itemName" : "xanafianshard",
+  "price" : 1000,
+  "rarity" : "Essential",
+  "category" : "Quest Item",
+  "tooltipKind" : "thea-unique",
+  "inventoryIcon" : "xanafianshard.png",
+  "description" : "A shard of the Xanafir, containing a sliver of its nearly infinite power.",
+  "shortdescription" : "^orange;Xanafian Shard^white;",
+  "itemTags" : [ "questitem" ]
+}

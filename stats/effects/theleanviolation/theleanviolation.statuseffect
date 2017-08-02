@@ -1,0 +1,16 @@
+{
+  "name" : "theleanviolation",
+  "effectConfig" : {
+    "powerModifier" : 1.15
+  },
+  "defaultDuration" : 0.5,
+
+  "scripts" : [
+    "/stats/effects/rage/rage.lua"
+  ],
+
+  "animationConfig" : "theleanviolation.animation",
+
+  "label" : "Violated",
+  "icon" : "/interface/statuses/theleanviolation.png"
+}

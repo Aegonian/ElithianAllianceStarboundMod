@@ -1,0 +1,30 @@
+{
+  "projectileName" : "sandbombdust",
+  "image" : "sandbombdust.png",
+  "physics" : "thea-dustcloud",
+  "animationCycle" : 0.8,
+  "animationLoops" : false,
+  "frameNumber" : 10,
+  "emitters" : [ "thea-sandparticles" ],
+  "power" : 50,
+  "speed" : 8.5,
+  "timeToLive" : 0.8,
+  "bounces" : -1,
+  "layer" : "middle",
+  "piercing" : true,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "actionOnReap" : [
+    {
+      "action" : "applySurfaceMod",
+      "previousMod" : "metamod:none",
+      "newMod" : "sand",
+      "radius" : 1
+    }
+  ],
+  "hydrophobic" : false,
+  
+  //SCRIPT CONFIG
+  "scripts" : [ "/projectiles/scripts/thea-sandmodspawner.lua" ],
+  "tickTime" : 0.2
+}

@@ -1,0 +1,9 @@
+{
+  "name" : "avikantarget",
+  "category" : "avikantarget",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "avikantarget.png"
+  }
+}

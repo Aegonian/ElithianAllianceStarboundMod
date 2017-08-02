@@ -1,0 +1,17 @@
+{
+  "projectileName" : "hymidplasmaexplosionlarge",
+  "image" : "hymidplasmaexplosionlarge.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 6,
+  "speed" : 0,
+  "lightColor" : [0, 192, 255],
+  "pointLight" : true,
+  "damagePoly" : [ [-37, 0], [-28, -28], [0, -37], [28, -28], [37, 0], [28, 28], [0, 37], [-28, 28] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "universalDamage" : false,
+  "damageKind" : "default",
+  "knockback" : 20
+}

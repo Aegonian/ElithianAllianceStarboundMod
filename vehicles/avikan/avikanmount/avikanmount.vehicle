@@ -1,0 +1,96 @@
+{
+  "name" : "avikanmount",
+  "script" : "avikanmount.lua",
+  "boundBox" : [-5, -5, 5, 5],
+  "slaveControlTimeout" : 2.0,
+  "slaveControlHeartbeat" : 1.0,
+  "canBeHit" : true,
+  "animation" : "avikanmount.animation",
+
+  "animationCustom" : {},
+
+
+  "loungePositions" : {
+    "drivingSeat" : {
+      "part" : "foreground",
+      "partAnchor" : "drivingSeatPosition",
+      "orientation" : "sit",
+      "statusEffects" : ["highprotection"],
+      "emote" : "happy",
+      "dance" : "theadriving"
+    }
+  },
+
+  "warpInDelay" : 1.0,
+  
+  "runSpeed" : 12,
+  "swimSpeed" : 7,
+  "horizontalControlForce" : 50,
+  
+  "maxFallDistance" : 25,
+  "fallDamageMultiplier" : 0.5,
+  "fallingDamageSourceKind" : "falling",
+
+  "jumpVelocity" : 35,
+  "jumpTimeout" : 0.25,
+  
+  "swimmingUpVelocity" : 35,
+  "swimmingUpControlForce" : 500,
+
+  //Health and damage
+  "protection" : 50,
+  "maxHealth" : 1000,
+
+  "driverEmote" : "happy",
+  "driverEmoteDamaged" : "oh",
+  "driverEmoteNearDeath" : "annoyed",
+
+  "damageTakenEmote" : "oooh",
+  "damageEmoteTime" : 2.0,
+  
+  "damageSoundTimeOut" : 1.0,
+  "bloodDripHealthThreshold" : 0.5,
+  "bloodDripMaxRate" : 50.0,
+
+  "materialKind" : "organic",
+
+  "movementSettings" : {
+    "collisionPoly" : [ [0.8, 0.9], [1.2, 0.5], [1.2, -4.1], [0.8, -4.5], [-0.8, -4.5], [-1.2, -4.1], [-1.2, 0.5], [-0.8, 0.9] ],
+    "mass" : 4,
+    "airFriction" : 4,
+    "liquidFriction" : 8.0,
+    "groundFriction" : 60.0,
+    "ignorePlatformCollision" : false,
+	"enableSurfaceSlopeCorrection" : true,
+    "slopeSlidingFactor" : 0,
+    "gravityEnabled" : true,
+    "collisionEnabled" : true
+  },
+
+  "occupiedMovementSettings" : {
+    "collisionPoly" : [ [0.8, 0.9], [1.2, 0.5], [1.2, -4.1], [0.8, -4.5], [-0.8, -4.5], [-1.2, -4.1], [-1.2, 0.5], [-0.8, 0.9] ],
+    "mass" : 4,
+    "airFriction" : 4,
+    "liquidFriction" : 8.0,
+    "groundFriction" : 60.0,
+    "ignorePlatformCollision" : false,
+	"enableSurfaceSlopeCorrection" : true,
+    "slopeSlidingFactor" : 0,
+    "gravityEnabled" : true,
+    "collisionEnabled" : true
+  },
+
+  "noPlatformMovementSettings" : {
+    "collisionPoly" : [ [0.8, 0.9], [1.2, 0.5], [1.2, -4.1], [0.8, -4.5], [-0.8, -4.5], [-1.2, -4.1], [-1.2, 0.5], [-0.8, 0.9] ],
+    "mass" : 4,
+    "airFriction" : 4,
+    "liquidFriction" : 8.0,
+    "groundFriction" : 60.0,
+    "ignorePlatformCollision" : true,
+	"enableSurfaceSlopeCorrection" : true,
+    "slopeSlidingFactor" : 0,
+    "gravityEnabled" : true,
+    "collisionEnabled" : true
+  }
+
+}

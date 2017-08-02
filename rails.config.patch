@@ -1,0 +1,26 @@
+[
+  {
+    "op": "add",
+    "path": "/avikanrail",
+    "value": {
+      "friction": 1.0,
+      "speedLimit": 60
+    }
+  },
+  {
+    "op": "add",
+    "path": "/avikandarkrail",
+    "value": {
+      "friction": 1.0,
+      "speedLimit": 60
+    }
+  },
+  {
+    "op": "add",
+    "path": "/trinkrail",
+    "value": {
+      "friction": 1.0,
+      "speedLimit": 60
+    }
+  }
+]

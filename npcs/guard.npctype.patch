@@ -1,0 +1,363 @@
+[
+	//AVIKAN
+	{ "op" : "add", "path" : "/items/avikan",
+	  "value" : [
+			[0, [
+				{
+					"chest" : [
+						{ "name" : "avikan-tier1chest", "data" : { "colorIndex" : 8 } }
+					],
+					"legs" : [
+						{ "name" : "avikan-tier1legs", "data" : { "colorIndex" : 8 } }
+					],
+					"head" : [
+						{ "name" : "avikan-tier1head", "data" : { "colorIndex" : 8 } }
+					],
+					"primary" : [
+						"avikantier1shortsword",
+						"avikantier1broadsword",
+						"avikantier1axe",
+						"avikantier1hammer",
+						"avikantier1spear"
+					],
+					"sheathedprimary" : [
+						"avikan-tier1bow"
+					],
+					"alt" : [
+						"avikanboneshield"
+					]
+					}
+				]
+			],
+			[1, [
+				{
+					"chest" : [
+						{ "name" : "avikan-tier2chest", "data" : { "colorIndex" : 8 } }
+					],
+					"legs" : [
+						{ "name" : "avikan-tier2legs", "data" : { "colorIndex" : 8 } }
+					],
+					"head" : [
+						{ "name" : "avikan-tier2head", "data" : { "colorIndex" : 8 } }
+					],
+					"primary" : [
+						"avikantier2shortsword",
+						"avikantier2broadsword",
+						"avikantier2axe",
+						"avikantier2hammer",
+						"avikantier2spear"
+					],
+					"sheathedprimary" : [
+						"avikan-tier1bow"
+					],
+					"alt" : [
+						"avikanboneshield"
+					]
+					}
+				]
+			],
+			[2, [
+				{
+					"chest" : [
+						{ "name" : "avikan-tier3chest", "data" : { "colorIndex" : 8 } }
+					],
+					"legs" : [
+						{ "name" : "avikan-tier3legs", "data" : { "colorIndex" : 8 } }
+					],
+					"head" : [
+						{ "name" : "avikan-tier3head", "data" : { "colorIndex" : 8 } }
+					],
+					"primary" : [
+						"avikantier3shortsword",
+						"avikantier3broadsword",
+						"avikantier3axe",
+						"avikantier3hammer",
+						"avikantier3spear"
+					],
+					"sheathedprimary" : [
+						"avikan-tier3bow"
+					],
+					"alt" : [
+						"avikanboneshield"
+					]
+					}
+				]
+			],
+			[3, [
+				{
+					"chest" : [
+						{ "name" : "avikan-tier4chest", "data" : { "colorIndex" : 8 } }
+					],
+					"legs" : [
+						{ "name" : "avikan-tier4legs", "data" : { "colorIndex" : 8 } }
+					],
+					"head" : [
+						{ "name" : "avikan-tier4head", "data" : { "colorIndex" : 8 } }
+					],
+					"primary" : [
+						"avikantier4shortsword",
+						"avikantier4broadsword",
+						"avikantier4axe",
+						"avikantier4hammer",
+						"avikantier4spear"
+					],
+					"sheathedprimary" : [
+						"avikan-tier3bow",
+						"avikan-bonecrossbow"
+					],
+					"alt" : [
+						"avikanboneshield"
+					]
+					}
+				]
+			],
+			[4, [
+				{
+					"chest" : [
+						{ "name" : "avikan-tier5achest", "data" : { "colorIndex" : 8 } }
+					],
+					"legs" : [
+						{ "name" : "avikan-tier5alegs", "data" : { "colorIndex" : 8 } }
+					],
+					"head" : [
+						{ "name" : "avikan-tier5ahead", "data" : { "colorIndex" : 8 } }
+					],
+					"primary" : [
+						"avikantier5shortsword",
+						"avikantier5broadsword",
+						"avikantier5axe",
+						"avikantier5hammer",
+						"avikantier5spear"
+					],
+					"sheathedprimary" : [
+						"avikan-assaultrifle",
+						"avikan-assaultrifle2",
+						"avikan-shotgun",
+						"avikan-sniperrifle"
+					],
+					"alt" : [
+						"avikanmetalshield"
+					]
+					}
+				]
+			],
+			[5, [
+				{
+					"chest" : [
+						{ "name" : "avikan-tier6achest", "data" : { "colorIndex" : 8 } }
+					],
+					"legs" : [
+						{ "name" : "avikan-tier6alegs", "data" : { "colorIndex" : 8 } }
+					],
+					"head" : [
+						{ "name" : "avikan-tier6ahead", "data" : { "colorIndex" : 8 } }
+					],
+					"primary" : [
+						"avikantier6shortsword",
+						"avikantier6broadsword",
+						"avikantier6axe",
+						"avikantier6hammer",
+						"avikantier6spear"
+					],
+					"sheathedprimary" : [
+						"avikan-assaultrifle",
+						"avikan-assaultrifle2",
+						"avikan-shotgun",
+						"avikan-sniperrifle"
+					],
+					"alt" : [
+						"avikanmetalshield"
+					]
+					}
+				]
+			]
+	  ]
+	},
+	
+	
+	
+	//DRODEN
+	{ "op" : "add", "path" : "/items/droden",
+	  "value" : [
+			[0, [
+				{
+					"chest" : [
+						{ "name" : "droden-combatchest", "data" : { "colorIndex" : 0 } }
+					],
+					"legs" : [
+						{ "name" : "droden-combatlegs", "data" : { "colorIndex" : 0 } }
+					],
+					"head" : [
+						{ "name" : "droden-combathead", "data" : { "colorIndex" : 0 } }
+					],
+					"primary" : [
+						"drodenlongsword",
+						"drodenshortsword"
+					],
+					"sheathedprimary" : [
+						"droden-assaultrifle"
+					]
+					}
+				]
+			]
+		]
+	},
+	
+	
+	
+	//TRINK
+	{ "op" : "add", "path" : "/items/trink",
+	  "value" : [
+			[0, [
+				{
+					"chest" : [
+						{ "name" : "trink-tier1chest", "data" : { "colorIndex" : 0 } }
+					],
+					"legs" : [
+						{ "name" : "trink-tier1legs", "data" : { "colorIndex" : 0 } }
+					],
+					"head" : [
+						{ "name" : "thea-hiddenhead", "data" : { "colorIndex" : 0 } }
+					],
+					"primary" : [
+						{ "name" : "trinktier1prod", "data" : { "colorIndex" : 1 } },
+					    { "name" : "trinktier1longprod", "data" : { "colorIndex" : 1 } }
+					],
+					"sheathedprimary" : [
+						{ "name" : "trinktier1rifle", "data" : { "colorIndex" : 1 } },
+						{ "name" : "trinktier1pistol", "data" : { "colorIndex" : 1 } }
+					],
+					"alt" : [
+						{ "name" : "trinkshield" }
+					]
+					}
+				]
+			],
+			[1, [
+				{
+					"chest" : [
+						{ "name" : "trink-tier2chest", "data" : { "colorIndex" : 0 } }
+					],
+					"legs" : [
+						{ "name" : "trink-tier2legs", "data" : { "colorIndex" : 0 } }
+					],
+					"head" : [
+						{ "name" : "thea-hiddenhead", "data" : { "colorIndex" : 0 } }
+					],
+					"primary" : [
+						{ "name" : "trinktier2prod", "data" : { "colorIndex" : 1 } },
+					    { "name" : "trinktier2longprod", "data" : { "colorIndex" : 1 } }
+					],
+					"sheathedprimary" : [
+						{ "name" : "trinktier2rifle", "data" : { "colorIndex" : 1 } },
+						{ "name" : "trinktier2pistol", "data" : { "colorIndex" : 1 } }
+					],
+					"alt" : [
+						{ "name" : "trinkshield" }
+					]
+					}
+				]
+			],
+			[2, [
+				{
+					"chest" : [
+						{ "name" : "trink-tier3chest", "data" : { "colorIndex" : 0 } }
+					],
+					"legs" : [
+						{ "name" : "trink-tier3legs", "data" : { "colorIndex" : 0 } }
+					],
+					"head" : [
+						{ "name" : "thea-hiddenhead", "data" : { "colorIndex" : 0 } }
+					],
+					"primary" : [
+						{ "name" : "trinktier3prod", "data" : { "colorIndex" : 1 } },
+					    { "name" : "trinktier3longprod", "data" : { "colorIndex" : 1 } }
+					],
+					"sheathedprimary" : [
+						{ "name" : "trinktier3rifle", "data" : { "colorIndex" : 1 } },
+						{ "name" : "trinktier3pistol", "data" : { "colorIndex" : 1 } }
+					],
+					"alt" : [
+						{ "name" : "trinkshield" }
+					]
+					}
+				]
+			],
+			[3, [
+				{
+					"chest" : [
+						{ "name" : "trink-tier4chest", "data" : { "colorIndex" : 0 } }
+					],
+					"legs" : [
+						{ "name" : "trink-tier4legs", "data" : { "colorIndex" : 0 } }
+					],
+					"head" : [
+						{ "name" : "thea-hiddenhead", "data" : { "colorIndex" : 0 } }
+					],
+					"primary" : [
+						{ "name" : "trinktier4prod", "data" : { "colorIndex" : 1 } },
+					    { "name" : "trinktier4longprod", "data" : { "colorIndex" : 1 } }
+					],
+					"sheathedprimary" : [
+						{ "name" : "trinktier4rifle", "data" : { "colorIndex" : 1 } },
+						{ "name" : "trinktier4pistol", "data" : { "colorIndex" : 1 } }
+					],
+					"alt" : [
+						{ "name" : "trinkshield" }
+					]
+					}
+				]
+			],
+			[4, [
+				{
+					"chest" : [
+						{ "name" : "trink-tier5achest", "data" : { "colorIndex" : 0 } }
+					],
+					"legs" : [
+						{ "name" : "trink-tier5alegs", "data" : { "colorIndex" : 0 } }
+					],
+					"head" : [
+						{ "name" : "thea-hiddenhead", "data" : { "colorIndex" : 0 } }
+					],
+					"primary" : [
+						{ "name" : "trinktier5prod", "data" : { "colorIndex" : 1 } },
+					    { "name" : "trinktier5longprod", "data" : { "colorIndex" : 1 } }
+					],
+					"sheathedprimary" : [
+						{ "name" : "trinktier5rifle", "data" : { "colorIndex" : 1 } },
+						{ "name" : "trinktier5pistol", "data" : { "colorIndex" : 1 } }
+					],
+					"alt" : [
+						{ "name" : "trinkshield" }
+					]
+					}
+				]
+			],
+			[5, [
+				{
+					"chest" : [
+						{ "name" : "trink-tier6achest", "data" : { "colorIndex" : 0 } }
+					],
+					"legs" : [
+						{ "name" : "trink-tier6alegs", "data" : { "colorIndex" : 0 } }
+					],
+					"head" : [
+						{ "name" : "thea-hiddenhead", "data" : { "colorIndex" : 0 } }
+					],
+					"primary" : [
+						{ "name" : "trinktier6prod", "data" : { "colorIndex" : 1 } },
+					    { "name" : "trinktier6longprod", "data" : { "colorIndex" : 1 } }
+					],
+					"sheathedprimary" : [
+						{ "name" : "trinktier6rifle", "data" : { "colorIndex" : 1 } },
+						{ "name" : "trinktier6pistol", "data" : { "colorIndex" : 1 } }
+					],
+					"alt" : [
+						{ "name" : "trinkshield" }
+					]
+					}
+				]
+			]
+		]
+	}
+]

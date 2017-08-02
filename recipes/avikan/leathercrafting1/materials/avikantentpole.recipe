@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "monsterleather", "count" : 1 },
+	{ "item" : "avikandarkmetal", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "avikantentpole",
+    "count" : 20
+  },
+  "duration" : 0.5,
+  "groups"  : [ "avikanleathercrafting", "leathermaterials", "all" ]
+}

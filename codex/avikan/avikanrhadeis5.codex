@@ -1,0 +1,20 @@
+{
+  "id" : "avikanrhadeis5",
+  "species" : "avikan",
+  "title" : "Rhadeis - Part 5",
+  "description" : "Notes on Rhadeis, by Izyati as-Kaladan.",
+  "icon" : "avikanrhadeis5.png",
+  "contentPages" : [
+
+    "When the Ce'Tennan found out about Rhadeis's actions, they made him an outcast, but what happened then is unclear. The records found in Vhalas Vha'leih ended there, and what happened to Rhadeis and the other Ce'Tennan on Kadavan is still a mystery. We know that, at some point, they vanished from the planet, but how and why is unknown.",
+
+    "The first contact with Rhadeis is believed by most scientists today to have been a recorded message, but how the vision of Rhadeis himself worked is unknown. Perhaps it was a holographic display far beyond our technology, or perhaps Rhadeis did appear in the flesh – we might never know.",
+    
+    "Another unknown factor is the timeframe within which all this happened. Rhadeis's intervention in the unknown catastrophe, and his gifts to our people, may have happened a few thousand years before the discovery of Vas Vha'leih, or it may have happened hundreds of thousands of years before. The records of Vhalas Vha'leih, unfortunately, could not tell us this."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

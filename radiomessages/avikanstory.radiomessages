@@ -1,0 +1,51 @@
+{
+  //AVIKAN MISSION - THE BROKEN VAULT  
+  "avikanmission1-arrival1" : {
+    "type" : "mission",
+    "senderName" : "Commander Zaheed",
+    "portraitImage" : "/interface/chatbubbles/zaheed.png:<frame>",
+    "text" : "I see you've arrived at Dhakorin. The colony we lost contact with is just over the rise to the east.",
+    "persistTime" : 4.0
+  },
+  "avikanmission1-arrival2" : {
+    "type" : "mission",
+    "senderName" : "Commander Zaheed",
+    "portraitImage" : "/interface/chatbubbles/zaheed.png:<frame>",
+    "text" : "We must know what happened to the colony. Please, hurry.",
+    "persistTime" : 4.0
+  },
+  "avikanmission1-crashedship" : {
+    "type" : "mission",
+    "text" : "Scans indicate that this ship was recently shot down. The burn marks are consistent with Thelean weaponry.",
+    "persistTime" : 4.0
+  },
+  "avikanmission1-theleanship1" : {
+    "type" : "mission",
+    "senderName" : "Commander Zaheed",
+    "portraitImage" : "/interface/chatbubbles/zaheed.png:<frame>",
+    "text" : "Thelean ships... It seems my fears have been confirmed: the colony was attacked by the Thell.",
+    "persistTime" : 4.0
+  },
+  "avikanmission1-theleanship2" : {
+    "type" : "mission",
+    "senderName" : "Commander Zaheed",
+    "portraitImage" : "/interface/chatbubbles/zaheed.png:<frame>",
+    "text" : "You must hurry inside, Captain. If the ships are still outside, there must still be Thell within the colony.",
+    "persistTime" : 4.0
+  },
+  "avikanmission1-theleanscout" : {
+    "type" : "mission",
+    "text" : "I am detecting Thelean lifesigns beyond that locked door. I advice you climb into the airducts above and prepare a surprise attack.",
+    "persistTime" : 4.0
+  },
+  "avikanmission1-breakfloor1" : {
+    "type" : "mission",
+    "text" : "It seems the way ahead is blocked, but I am detecting a structural weakness in the floor. Perhaps you can break through.",
+    "persistTime" : 6.0
+  },
+  "avikanmission1-ghavorkan1" : {
+    "type" : "mission",
+    "text" : "I am detecting an unknown lifesign in the next room. Be on your guard.",
+    "persistTime" : 4.0
+  }
+}

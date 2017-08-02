@@ -1,0 +1,94 @@
+{
+  "type" : "avikanelder",
+  "baseType" : "avikanvillageguard",
+
+  "dropPools" : [ "avikanDeathTreasure" ],
+
+  "scriptConfig" : {
+	"behaviorConfig" : {
+      "greetingChance" : 0.0
+    },
+
+    "questGenerator" : { "pools" : [], "enableParticipation" : false },
+	
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "Hello, stranger.",
+			"Welcome, stranger."
+		  ]
+		},
+
+        "avikan" : {
+          "default" : [
+            "What brings you to our camp?",
+			"Greetings, traveller.",
+			"As the Elder of this camp, I welcome you."
+          ],
+		  "human" : [
+            "Greetings, soft-skin. What brings you to our camp?",
+			"Welcome to our camp, soft-skin.",
+			"What brings you here, soft-skin?"
+          ],
+          "apex" : [
+            "Hello there, hairy thing. What brings you here?",
+			"Greetings, hairy one.",
+			"Welcome to our camp, hairy one."
+          ],
+          "avian" : [
+            "Greetings, feathered one. What brings you to our camp?",
+			"Welcome to our small camp, feathered one.",
+			"What brings you here, bird?"
+          ],
+          "floran" : [
+            "What brings you here, plant?",
+			"A walking plant? We do not get many of your kind in our camp.",
+			"Welcome to our camp, plant."
+          ],
+          "glitch" : [
+            "Why are you here, machine?",
+			"We are not fond of your kind here, machine.",
+			"Machines such as you are not welcome in our camp."
+          ],
+		  "hylotl" : [
+            "What brings a wet one like you here, might I ask?",
+			"Welcome to our small camp, wet one.",
+			"Greetings, wet one. What brings you here?"
+          ],
+          "avikan" : [
+            "Greetings, Captain.",
+			"Our camp is humbled to have a Captain visit us.",
+			"Welcome to our camp, Captain.",
+			"Vas Vha'leih, Captain."
+          ],
+          "trink" : [
+            "Why are you here, machine?",
+			"We are not fond of your kind here, machine.",
+			"Machines such as you are not welcome in our camp."
+          ],
+          "droden" : [
+            "A Droden, here? I suppose you're welcome, so long as you cause no trouble.",
+			"Few Droden visit the Avikan camps. Your kind usually stick to the bunkers.",
+			"If you truly are a free Droden, then you are welcome here."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "avikan-elderchest", "parameters" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "avikan-elderlegs", "parameters" : { "colorIndex" : 4 } } ],
+            "head" : [ { "name" : "avikan-elderhead", "parameters" : { "colorIndex" : 4 } } ],
+            "sheathedprimary" : [
+				{ "name" : "avikantier2spear", "data" : { "colorIndex" : 1 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,606 @@
+[
+	//STARFARER'S REFUGE
+	{ "op" : "add", "path" : "/avikanlostandfound",
+		"value" : [
+			[ 0, [
+			  //Misc Armour
+			  { "item": { "name": "avikan-keffridersspear" }, "prerequisiteQuest" : "keffrider" },
+			  { "item": { "name": "avikan-keffriderhead" }, "prerequisiteQuest" : "keffrider4" },
+			  { "item": { "name": "avikan-keffriderchest" }, "prerequisiteQuest" : "keffrider4" },
+			  { "item": { "name": "avikan-keffriderlegs" }, "prerequisiteQuest" : "keffrider4" },
+			  { "item": { "name": "avikan-welderhead" }, "prerequisiteQuest" : "lostavikanarmring" },
+			  { "item": { "name": "avikan-astronauthead" }, "prerequisiteQuest" : "stuckastronaut" },
+			  { "item": { "name": "avikan-starfarerhead" }, "prerequisiteQuest" : "avikanstarfarer" },
+			  //Custom Tailoring
+			  { "item": { "name": "avikan-protectoratechest" }, "prerequisiteQuest" : "avikancustomtailoring" },
+			  { "item": { "name": "avikan-protectoratelegs" }, "prerequisiteQuest" : "avikancustomtailoring" },
+			  { "item": { "name": "droden-protectoratehead" }, "prerequisiteQuest" : "drodencustomtailoring" },
+			  { "item": { "name": "droden-protectoratechest" }, "prerequisiteQuest" : "drodencustomtailoring" },
+			  { "item": { "name": "droden-protectoratelegs" }, "prerequisiteQuest" : "drodencustomtailoring" },
+			  //Story Armour
+			  { "item": { "name": "avikan-watcherhead" }, "prerequisiteQuest" : "avikanstorystart" },
+			  { "item": { "name": "avikan-watcherchest" }, "prerequisiteQuest" : "avikanstorystart" },
+			  { "item": { "name": "avikan-watcherlegs" }, "prerequisiteQuest" : "avikanstorystart" },
+			  //Quest Reward Items
+			  { "item": { "name": "avikanwatcherpass" }, "prerequisiteQuest" : "avikanstoryhidden", "price" : 5000 },
+			  { "item": { "name": "keffriderslicense" }, "prerequisiteQuest" : "keffrider4", "price" : 5000 },
+			  { "item": { "name": "avikangunrangepass" }, "prerequisiteQuest" : "avikangunrangeunlock", "price" : 5000 }
+			] ]
+		]
+	},
+	{ "op" : "add", "path" : "/drodenmerchant",
+		"value" : [
+			[ 0, [
+			  { "item": { "name": "droden-bannerchest" }, "rarity": 0.5 },
+			  { "item": { "name": "droden-combathead" }, "rarity": 0.5 },
+			  { "item": { "name": "droden-combatchest" }, "rarity": 0.5 },
+			  { "item": { "name": "droden-combatlegs" }, "rarity": 0.5 },
+			  { "item": { "name": "droden-legionhead" }, "rarity": 0.5 },
+			  { "item": { "name": "droden-legionchest" }, "rarity": 0.5 },
+			  { "item": { "name": "droden-legionlegs" }, "rarity": 0.5 },
+			  { "item": { "name": "droden-heavyhead" }, "rarity": 0.5 },
+			  { "item": { "name": "droden-heavychest" }, "rarity": 0.5 },
+			  { "item": { "name": "droden-heavylegs" }, "rarity": 0.5 },
+			  { "item": { "name": "drodenantennapack" }, "rarity": 0.5 },
+			  { "item": { "name": "drodenswordback" }, "rarity": 0.5 }
+			] ]
+		]
+	},
+	
+	//AVIKAN	
+	{ "op" : "add", "path" : "/avikanweapons",
+		"value" : [
+			[ 0, [
+			  { "item": { "name": "avikantier1hammer" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier1shortsword" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier1broadsword" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier1spear" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier1dagger" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier1axe" }, "rarity": 0.5 },
+			  { "item": { "name": "avikan-tier1bow" }, "rarity": 0.3 },
+			  { "item": { "name": "avikanboneshield"}, "rarity" : 0.3 },
+			  { "item": { "name": "avikanhuntingknife" }, "rarity": 0.5 },
+			  { "item": { "name": "monsterbone" }, "rarity": 0.5 }
+			] ],
+			[ 1, [
+			  { "item": { "name": "avikantier2hammer" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier2shortsword" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier2broadsword" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier2spear" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier2dagger" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier2axe" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier2huntingspear" }, "rarity": 0.5 },
+			  { "item": { "name": "avikan-tier1bow" }, "rarity": 0.3 },
+			  { "item": { "name": "avikanboneshield"}, "rarity" : 0.3 },
+			  { "item": { "name": "avikanhuntingknife" }, "rarity": 0.5 },
+			  { "item": { "name": "monsterbone" }, "rarity": 0.5 },
+			  { "item": { "name": "avikanspiketrap" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantarspiketrap" }, "rarity": 0.5 },
+			  { "item": { "name": "avikanpoisonspiketrap" }, "rarity": 0.5 }
+			] ],
+			[ 2, [
+			  { "item": { "name": "avikantier3hammer" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier3shortsword" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier3broadsword" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier3spear" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier3dagger" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier3axe" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier2huntingspear" }, "rarity": 0.5 },
+			  { "item": { "name": "avikan-tier3bow" }, "rarity": 0.3 },
+			  { "item": { "name": "avikanboneshield"}, "rarity" : 0.3 },
+			  { "item": { "name": "avikanhuntingknife" }, "rarity": 0.5 },
+			  { "item": { "name": "monsterbone" }, "rarity": 0.5 },
+			  { "item": { "name": "avikanspiketrap" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantarspiketrap" }, "rarity": 0.5 },
+			  { "item": { "name": "avikanpoisonspiketrap" }, "rarity": 0.5 }
+			] ],
+			[ 3, [
+			  { "item": { "name": "avikantier4hammer" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier4shortsword" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier4broadsword" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier4spear" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier4dagger" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier4axe" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier4huntingspear" }, "rarity": 0.5 },
+			  { "item": { "name": "avikan-tier3bow" }, "rarity": 0.3 },
+			  { "item": { "name": "avikan-bonecrossbow" }, "rarity": 0.3 },
+			  { "item": { "name": "avikanboneshield"}, "rarity" : 0.3 },
+			  { "item": { "name": "avikanhuntingknife" }, "rarity": 0.5 },
+			  { "item": { "name": "monsterbone" }, "rarity": 0.5 },
+			  { "item": { "name": "avikanspiketrap" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantarspiketrap" }, "rarity": 0.5 },
+			  { "item": { "name": "avikanpoisonspiketrap" }, "rarity": 0.5 }
+			] ],
+			[ 4, [
+			  { "item": { "name": "avikantier5hammer" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier5shortsword" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier5broadsword" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier5spear" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier5dagger" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier5axe" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier4huntingspear" }, "rarity": 0.5 },
+			  { "item": { "name": "avikan-nomadabow" }, "rarity": 0.3 },
+			  { "item": { "name": "avikanboneshield"}, "rarity" : 0.3 },
+			  { "item": { "name": "avikanhuntingknife" }, "rarity": 0.5 },
+			  { "item": { "name": "monsterbone" }, "rarity": 0.5 },
+			  { "item": { "name": "avikanspiketrap" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantarspiketrap" }, "rarity": 0.5 },
+			  { "item": { "name": "avikanpoisonspiketrap" }, "rarity": 0.5 }
+			] ],
+			[ 5, [
+			  { "item": { "name": "avikantier6hammer" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier6shortsword" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier6broadsword" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier6spear" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier6dagger" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier6axe" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantier6huntingspear" }, "rarity": 0.5 },
+			  { "item": { "name": "avikan-nomadabow" }, "rarity": 0.3 },
+			  { "item": { "name": "avikan-nomadacrossbow" }, "rarity": 0.3 },
+			  { "item": { "name": "avikanboneshield"}, "rarity" : 0.3 },
+			  { "item": { "name": "avikanhuntingknife" }, "rarity": 0.5 },
+			  { "item": { "name": "monsterbone" }, "rarity": 0.5 },
+			  { "item": { "name": "greatmonsterbone" }, "rarity": 0.5 },
+			  { "item": { "name": "avikanspiketrap" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantarspiketrap" }, "rarity": 0.5 },
+			  { "item": { "name": "avikanpoisonspiketrap" }, "rarity": 0.5 },
+			  { "item": { "name": "avikan-clanbow" }, "rarity": 0.5 }
+			] ]		
+		]
+	},
+	
+	{ "op" : "add", "path" : "/avikanfood",
+		"value" : [
+			[ 0, [
+			  { "item": { "name": "avikancactusseed" }, "rarity": 0.5 },
+			  { "item": { "name": "avikanspiceplantseed" }, "rarity": 0.5 },
+			  { "item": { "name": "bolbohnseed" }, "rarity": 0.5 },
+			  { "item": { "name": "dunestalkseed" }, "rarity": 0.5 },
+			  { "item": { "name": "avikanmeatchunk" }, "rarity": 0.5 },
+			  { "item": { "name": "avikanspices" }, "rarity": 0.5 },
+			  { "item": { "name": "kadavancactus" }, "rarity": 0.5 },
+			  { "item": { "name": "dunestalk" }, "rarity": 0.5 },
+			  { "item": { "name": "bolbohn" }, "rarity": 0.5 }
+			] ]					
+		]
+	},
+	
+	{ "op" : "add", "path" : "/avikanleather",
+		"value" : [
+			[ 0, [
+			  { "item" : { "name" : "monsterleather" }, "rarity" : 0.5 },
+			  { "item" : { "name" : "avikancloth" }, "rarity" : 0.5 },
+			  { "item" : { "name" : "avikanpurplecloth" }, "rarity" : 0.5 },
+			  
+			  { "item" : { "name" : "avikan-elderchest", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-elderchest", "parameters" : { "colorIndex" : 1 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-elderchest", "parameters" : { "colorIndex" : 2 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-elderchest", "parameters" : { "colorIndex" : 3 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-elderchest", "parameters" : { "colorIndex" : 4 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-elderchest", "parameters" : { "colorIndex" : 5 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-elderchest", "parameters" : { "colorIndex" : 6 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-elderchest", "parameters" : { "colorIndex" : 7 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-elderchest", "parameters" : { "colorIndex" : 8 } }, "rarity" : 0.2 },
+			  
+			  { "item" : { "name" : "avikan-elderlegs", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-elderlegs", "parameters" : { "colorIndex" : 1 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-elderlegs", "parameters" : { "colorIndex" : 2 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-elderlegs", "parameters" : { "colorIndex" : 3 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-elderlegs", "parameters" : { "colorIndex" : 4 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-elderlegs", "parameters" : { "colorIndex" : 5 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-elderlegs", "parameters" : { "colorIndex" : 6 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-elderlegs", "parameters" : { "colorIndex" : 7 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-elderlegs", "parameters" : { "colorIndex" : 8 } }, "rarity" : 0.2 },
+			  
+			  { "item" : { "name" : "avikan-elderhead", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-elderhead", "parameters" : { "colorIndex" : 1 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-elderhead", "parameters" : { "colorIndex" : 2 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-elderhead", "parameters" : { "colorIndex" : 3 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-elderhead", "parameters" : { "colorIndex" : 4 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-elderhead", "parameters" : { "colorIndex" : 5 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-elderhead", "parameters" : { "colorIndex" : 6 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-elderhead", "parameters" : { "colorIndex" : 7 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-elderhead", "parameters" : { "colorIndex" : 8 } }, "rarity" : 0.2 },
+			  
+			  { "item" : { "name" : "avikan-nomadicchest", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-nomadicchest", "parameters" : { "colorIndex" : 1 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-nomadicchest", "parameters" : { "colorIndex" : 2 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-nomadicchest", "parameters" : { "colorIndex" : 3 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-nomadicchest", "parameters" : { "colorIndex" : 4 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-nomadicchest", "parameters" : { "colorIndex" : 5 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-nomadicchest", "parameters" : { "colorIndex" : 6 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-nomadicchest", "parameters" : { "colorIndex" : 7 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-nomadicchest", "parameters" : { "colorIndex" : 8 } }, "rarity" : 0.2 },
+			  
+			  { "item" : { "name" : "avikan-nomadiclegs", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-nomadiclegs", "parameters" : { "colorIndex" : 1 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-nomadiclegs", "parameters" : { "colorIndex" : 2 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-nomadiclegs", "parameters" : { "colorIndex" : 3 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-nomadiclegs", "parameters" : { "colorIndex" : 4 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-nomadiclegs", "parameters" : { "colorIndex" : 5 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-nomadiclegs", "parameters" : { "colorIndex" : 6 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-nomadiclegs", "parameters" : { "colorIndex" : 7 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-nomadiclegs", "parameters" : { "colorIndex" : 8 } }, "rarity" : 0.2 },
+			  
+			  { "item" : { "name" : "avikan-nomadichead", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-nomadichead", "parameters" : { "colorIndex" : 1 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-nomadichead", "parameters" : { "colorIndex" : 2 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-nomadichead", "parameters" : { "colorIndex" : 3 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-nomadichead", "parameters" : { "colorIndex" : 4 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-nomadichead", "parameters" : { "colorIndex" : 5 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-nomadichead", "parameters" : { "colorIndex" : 6 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-nomadichead", "parameters" : { "colorIndex" : 7 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-nomadichead", "parameters" : { "colorIndex" : 8 } }, "rarity" : 0.2 },
+			  
+			  { "item" : { "name" : "avikan-travellerchest", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-travellerchest", "parameters" : { "colorIndex" : 1 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-travellerchest", "parameters" : { "colorIndex" : 2 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-travellerchest", "parameters" : { "colorIndex" : 3 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-travellerchest", "parameters" : { "colorIndex" : 4 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-travellerchest", "parameters" : { "colorIndex" : 5 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-travellerchest", "parameters" : { "colorIndex" : 6 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-travellerchest", "parameters" : { "colorIndex" : 7 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-travellerchest", "parameters" : { "colorIndex" : 8 } }, "rarity" : 0.2 },
+			  
+			  { "item" : { "name" : "avikan-travellerlegs", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-travellerlegs", "parameters" : { "colorIndex" : 1 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-travellerlegs", "parameters" : { "colorIndex" : 2 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-travellerlegs", "parameters" : { "colorIndex" : 3 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-travellerlegs", "parameters" : { "colorIndex" : 4 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-travellerlegs", "parameters" : { "colorIndex" : 5 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-travellerlegs", "parameters" : { "colorIndex" : 6 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-travellerlegs", "parameters" : { "colorIndex" : 7 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-travellerlegs", "parameters" : { "colorIndex" : 8 } }, "rarity" : 0.2 },
+			  
+			  { "item" : { "name" : "avikan-travellerhead", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.5 },
+			  
+			  { "item" : { "name" : "avikan-merchantchest", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-merchantchest", "parameters" : { "colorIndex" : 1 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-merchantchest", "parameters" : { "colorIndex" : 2 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-merchantchest", "parameters" : { "colorIndex" : 3 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-merchantchest", "parameters" : { "colorIndex" : 4 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-merchantchest", "parameters" : { "colorIndex" : 5 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-merchantchest", "parameters" : { "colorIndex" : 6 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-merchantchest", "parameters" : { "colorIndex" : 7 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-merchantchest", "parameters" : { "colorIndex" : 8 } }, "rarity" : 0.2 },
+			  
+			  { "item" : { "name" : "avikan-merchantlegs", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-merchantlegs", "parameters" : { "colorIndex" : 1 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-merchantlegs", "parameters" : { "colorIndex" : 2 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-merchantlegs", "parameters" : { "colorIndex" : 3 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-merchantlegs", "parameters" : { "colorIndex" : 4 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-merchantlegs", "parameters" : { "colorIndex" : 5 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-merchantlegs", "parameters" : { "colorIndex" : 6 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-merchantlegs", "parameters" : { "colorIndex" : 7 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-merchantlegs", "parameters" : { "colorIndex" : 8 } }, "rarity" : 0.2 },
+			  
+			  { "item" : { "name" : "avikan-merchanthead", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-merchanthead", "parameters" : { "colorIndex" : 1 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-merchanthead", "parameters" : { "colorIndex" : 2 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-merchanthead", "parameters" : { "colorIndex" : 3 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-merchanthead", "parameters" : { "colorIndex" : 4 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-merchanthead", "parameters" : { "colorIndex" : 5 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-merchanthead", "parameters" : { "colorIndex" : 6 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-merchanthead", "parameters" : { "colorIndex" : 7 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-merchanthead", "parameters" : { "colorIndex" : 8 } }, "rarity" : 0.2 },
+			  
+			  { "item" : { "name" : "avikan-modernhead", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-modernhead", "parameters" : { "colorIndex" : 1 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-modernhead", "parameters" : { "colorIndex" : 2 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-modernhead", "parameters" : { "colorIndex" : 3 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-modernhead", "parameters" : { "colorIndex" : 4 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-modernhead", "parameters" : { "colorIndex" : 5 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-modernhead", "parameters" : { "colorIndex" : 6 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-modernhead", "parameters" : { "colorIndex" : 7 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-modernhead", "parameters" : { "colorIndex" : 8 } }, "rarity" : 0.2 },
+			  
+			  { "item" : { "name" : "avikan-modernchest", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-modernchest", "parameters" : { "colorIndex" : 1 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-modernchest", "parameters" : { "colorIndex" : 2 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-modernchest", "parameters" : { "colorIndex" : 3 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-modernchest", "parameters" : { "colorIndex" : 4 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-modernchest", "parameters" : { "colorIndex" : 5 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-modernchest", "parameters" : { "colorIndex" : 6 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-modernchest", "parameters" : { "colorIndex" : 7 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-modernchest", "parameters" : { "colorIndex" : 8 } }, "rarity" : 0.2 },
+			  
+			  { "item" : { "name" : "avikan-modernlegs", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-modernlegs", "parameters" : { "colorIndex" : 1 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-modernlegs", "parameters" : { "colorIndex" : 2 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-modernlegs", "parameters" : { "colorIndex" : 3 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-modernlegs", "parameters" : { "colorIndex" : 4 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-modernlegs", "parameters" : { "colorIndex" : 5 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-modernlegs", "parameters" : { "colorIndex" : 6 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-modernlegs", "parameters" : { "colorIndex" : 7 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikan-modernlegs", "parameters" : { "colorIndex" : 8 } }, "rarity" : 0.2 },
+			  
+			  { "item" : { "name" : "avikanbackpack", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikanbackpack", "parameters" : { "colorIndex" : 1 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikanbackpack", "parameters" : { "colorIndex" : 2 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikanbackpack", "parameters" : { "colorIndex" : 3 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikanbackpack", "parameters" : { "colorIndex" : 4 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikanbackpack", "parameters" : { "colorIndex" : 5 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikanbackpack", "parameters" : { "colorIndex" : 6 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikanbackpack", "parameters" : { "colorIndex" : 7 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikanbackpack", "parameters" : { "colorIndex" : 8 } }, "rarity" : 0.2 },
+			  
+			  { "item" : { "name" : "avikancape", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikancape", "parameters" : { "colorIndex" : 1 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikancape", "parameters" : { "colorIndex" : 2 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikancape", "parameters" : { "colorIndex" : 3 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikancape", "parameters" : { "colorIndex" : 4 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikancape", "parameters" : { "colorIndex" : 5 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikancape", "parameters" : { "colorIndex" : 6 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikancape", "parameters" : { "colorIndex" : 7 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikancape", "parameters" : { "colorIndex" : 8 } }, "rarity" : 0.2 },
+			  
+			  { "item" : { "name" : "avikanmerchantpack", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikanmerchantpack", "parameters" : { "colorIndex" : 1 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikanmerchantpack", "parameters" : { "colorIndex" : 2 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikanmerchantpack", "parameters" : { "colorIndex" : 3 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikanmerchantpack", "parameters" : { "colorIndex" : 4 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikanmerchantpack", "parameters" : { "colorIndex" : 5 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikanmerchantpack", "parameters" : { "colorIndex" : 6 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikanmerchantpack", "parameters" : { "colorIndex" : 7 } }, "rarity" : 0.2 },
+			  { "item" : { "name" : "avikanmerchantpack", "parameters" : { "colorIndex" : 8 } }, "rarity" : 0.2 }
+			] ]				
+		]
+	},
+	
+	{ "op" : "add", "path" : "/avikanwater",
+		"value" : [
+			[ 0, [
+			  { "item": { "name": "avikanwatercontainer" }, "rarity": 0.5 },
+			  { "item": { "name": "avikansmallwatercontainer" }, "rarity": 0.5 },
+			  { "item": { "name": "avikanwatersack" }, "rarity": 0.5 },
+			  { "item": { "name": "liquidwater" }, "rarity": 0.5, "price" : 1 }
+			] ]					
+		]
+	},
+	
+	{ "op" : "add", "path" : "/avikanmodern",
+		"value" : [
+			[ 0, [
+			  { "item": { "name": "avikanmetal" }, "rarity": 0.5 },
+			  { "item": { "name": "avikandarkmetal" }, "rarity": 0.5 },
+			  { "item": { "name": "avikanlightorb" }, "rarity": 0.5 },
+			  { "item": { "name": "avikansmalllightorb" }, "rarity": 0.5 },
+			  { "item": { "name": "avikanjumpgatecore" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantransmitter" }, "rarity": 0.5 },
+			  { "item": { "name": "avikandrahl" }, "rarity": 0.5 },
+			  { "item": { "name": "avikanminidrahl" }, "rarity": 0.5 },
+			  { "item": { "name": "avikandroden" }, "rarity": 0.5 }
+			] ]
+		]
+	},
+	
+	{ "op" : "add", "path" : "/avikancolony",
+		"value" : [
+			[ 0, [
+			  //FOODS
+			  { "item": { "name": "avikanmeal" }, "rarity": 0.5 },
+			  { "item": { "name": "bolbohnjam" }, "rarity": 0.5 },
+			  { "item": { "name": "dunebun" }, "rarity": 0.5 },
+			  { "item": { "name": "avikanmeatchunk" }, "rarity": 0.5 },
+			  { "item": { "name": "avikanspices" }, "rarity": 0.5 },
+			  //MATERIALS
+			  { "item": { "name": "monsterleather" }, "rarity": 0.5 },
+			  { "item": { "name": "avikancloth" }, "rarity": 0.5 },
+			  { "item": { "name": "avikanbattery" }, "rarity": 0.5 },
+			  { "item": { "name": "avikanmetal" }, "rarity": 0.5 },
+			  //OBJECTS
+			  { "item": { "name": "avikantapestryroll" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantapestryrolls" }, "rarity": 0.5 },
+			  { "item": { "name": "avikangem" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantallgem" }, "rarity": 0.5 },
+			  { "item": { "name": "avikandrahl" }, "rarity": 0.5 },
+			  { "item": { "name": "avikanminidrahl" }, "rarity": 0.5 },
+			  { "item": { "name": "avikandroden" }, "rarity": 0.5 },
+			  //MISC
+			  { "item": { "name": "liquidwater" }, "rarity": 0.5, "price" : 1 }
+			] ]					
+		]
+	},
+	
+	{ "op" : "add", "path" : "/avikancolonyweapons",
+		"value" : [
+			[ 0, [
+			  { "item": { "name": "avikanvanguardaxe" }, "rarity" : 0.5, "useSeed" : true },
+			  { "item": { "name": "avikanvanguardbroadsword" }, "rarity" : 0.5, "useSeed" : true },
+			  { "item": { "name": "avikanvanguarddagger" }, "rarity" : 0.5, "useSeed" : true },
+			  { "item": { "name": "avikanvanguardhammer" }, "rarity" : 0.5, "useSeed" : true },
+			  { "item": { "name": "avikanvanguardshortsword" }, "rarity" : 0.5, "useSeed" : true },
+			  { "item": { "name": "avikanvanguardspear" }, "rarity" : 0.5, "useSeed" : true },
+			  { "item": { "name": "avikan-nomadaspear" }, "rarity" : 0.5, "useSeed" : true },
+			  { "item": { "name": "avikan-combatrifle" }, "rarity" : 0.5, "useSeed" : true },
+			  { "item": { "name": "avikan-sidearm" }, "rarity" : 0.5, "useSeed" : true },
+			  { "item": { "name": "avikan-harbinger" }, "rarity" : 0.1, "useSeed" : true }
+			] ]
+		]
+	},
+	
+	{ "op" : "add", "path" : "/avikangadhurherder",
+		"value" : [
+			[ 0, [
+			  { "item": { "name": "avikanmountcontroller" }, "rarity": 0.5 },
+			  { "item": { "name": "avikancrook" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantrough" }, "rarity": 0.5 }
+			] ]
+		]
+	},
+	
+	
+	//DRODEN
+	//Nothing yet!
+	
+	
+	//TRINK
+	{ "op" : "add", "path" : "/trinkweapons",
+		"value" : [
+			[ 0, [
+			  { "item": { "name": "trinktier1prod" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktier1longprod" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktier1pistol" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktier1rifle" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktier1shotgun" }, "rarity": 0.5 },
+			  //MISC ITEMS
+			  { "item": { "name": "trinkmetal" }, "rarity": 0.5 },
+			  { "item": { "name": "trinklaserdiode" }, "rarity": 0.5 },
+			  { "item": { "name": "trinkpowercore" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktransmitter" }, "rarity": 0.5 },
+			  { "item": { "name": "trinkdatadrive" }, "rarity": 0.5 }
+			] ],
+			[ 1, [
+			  { "item": { "name": "trinktier2prod" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktier2longprod" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktier2pistol" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktier2rifle" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktier2shotgun" }, "rarity": 0.5 },
+			  //MISC ITEMS
+			  { "item": { "name": "trinkmetal" }, "rarity": 0.5 },
+			  { "item": { "name": "trinklaserdiode" }, "rarity": 0.5 },
+			  { "item": { "name": "trinkpowercore" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktransmitter" }, "rarity": 0.5 },
+			  { "item": { "name": "trinkdatadrive" }, "rarity": 0.5 }
+			] ],
+			[ 2, [
+			  { "item": { "name": "trinktier3prod" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktier3longprod" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktier3pistol" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktier3rifle" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktier3shotgun" }, "rarity": 0.5 },
+			  //MISC ITEMS
+			  { "item": { "name": "trinkmetal" }, "rarity": 0.5 },
+			  { "item": { "name": "trinklaserdiode" }, "rarity": 0.5 },
+			  { "item": { "name": "trinkpowercore" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktransmitter" }, "rarity": 0.5 },
+			  { "item": { "name": "trinkdatadrive" }, "rarity": 0.5 }
+			] ],
+			[ 3, [
+			  { "item": { "name": "trinktier4prod" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktier4longprod" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktier4pistol" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktier4rifle" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktier4shotgun" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktier4sniper" }, "rarity": 0.5 },
+			  //MISC ITEMS
+			  { "item": { "name": "trinkmetal" }, "rarity": 0.5 },
+			  { "item": { "name": "trinklaserdiode" }, "rarity": 0.5 },
+			  { "item": { "name": "trinkpowercore" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktransmitter" }, "rarity": 0.5 },
+			  { "item": { "name": "trinkdatadrive" }, "rarity": 0.5 }
+			] ],
+			[ 4, [
+			  { "item": { "name": "trinktier5prod" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktier5longprod" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktier5pistol" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktier5rifle" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktier5shotgun" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktier5sniper" }, "rarity": 0.5 },
+			  //MISC ITEMS
+			  { "item": { "name": "trinkmetal" }, "rarity": 0.5 },
+			  { "item": { "name": "trinklaserdiode" }, "rarity": 0.5 },
+			  { "item": { "name": "trinkpowercore" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktransmitter" }, "rarity": 0.5 },
+			  { "item": { "name": "trinkdatadrive" }, "rarity": 0.5 },
+			  //BLUEPRINTS
+			  { "item": { "name": "trink-dualcannon-recipe" }, "rarity": 0.5 },
+			  { "item": { "name": "trink-mininglaser-recipe" }, "rarity": 0.5 },
+			  { "item": { "name": "trink-soniccannon-recipe" }, "rarity": 0.5 }
+			] ],
+			[ 5, [
+			  { "item": { "name": "trinktier6prod" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktier6longprod" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktier6pistol" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktier6rifle" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktier6shotgun" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktier6sniper" }, "rarity": 0.5 },
+			  //MISC ITEMS
+			  { "item": { "name": "trinkmetal" }, "rarity": 0.5 },
+			  { "item": { "name": "trinklaserdiode" }, "rarity": 0.5 },
+			  { "item": { "name": "trinkpowercore" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktransmitter" }, "rarity": 0.5 },
+			  { "item": { "name": "trinkdatadrive" }, "rarity": 0.5 },
+			  //BLUEPRINTS
+			  { "item": { "name": "trink-dualcannon-recipe" }, "rarity": 0.5 },
+			  { "item": { "name": "trink-mininglaser-recipe" }, "rarity": 0.5 },
+			  { "item": { "name": "trink-soniccannon-recipe" }, "rarity": 0.5 }
+			] ]		
+		]
+	},
+	
+	{ "op" : "add", "path" : "/trinkarmour",
+		"value" : [
+			[ 0, [
+			  { "item" : { "name" : "trink-engineerlegs", "parameters" : { "colorIndex" : 1 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-engineerlegs", "parameters" : { "colorIndex" : 2 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-engineerlegs", "parameters" : { "colorIndex" : 3 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-engineerlegs", "parameters" : { "colorIndex" : 4 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-engineerlegs", "parameters" : { "colorIndex" : 5 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-engineerlegs", "parameters" : { "colorIndex" : 6 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-engineerlegs", "parameters" : { "colorIndex" : 7 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-engineerlegs", "parameters" : { "colorIndex" : 8 } }, "rarity" : 0.5 },
+			  
+			  { "item" : { "name" : "trink-welderlegs", "parameters" : { "colorIndex" : 1 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-welderlegs", "parameters" : { "colorIndex" : 2 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-welderlegs", "parameters" : { "colorIndex" : 3 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-welderlegs", "parameters" : { "colorIndex" : 4 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-welderlegs", "parameters" : { "colorIndex" : 5 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-welderlegs", "parameters" : { "colorIndex" : 6 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-welderlegs", "parameters" : { "colorIndex" : 7 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-welderlegs", "parameters" : { "colorIndex" : 8 } }, "rarity" : 0.5 },
+			  
+			  { "item" : { "name" : "trink-paintedchest", "parameters" : { "colorIndex" : 1 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-paintedchest", "parameters" : { "colorIndex" : 2 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-paintedchest", "parameters" : { "colorIndex" : 3 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-paintedchest", "parameters" : { "colorIndex" : 4 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-paintedchest", "parameters" : { "colorIndex" : 5 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-paintedchest", "parameters" : { "colorIndex" : 6 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-paintedchest", "parameters" : { "colorIndex" : 7 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-paintedchest", "parameters" : { "colorIndex" : 8 } }, "rarity" : 0.5 },
+			  
+			  { "item" : { "name" : "trink-paintedlegs", "parameters" : { "colorIndex" : 1 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-paintedlegs", "parameters" : { "colorIndex" : 2 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-paintedlegs", "parameters" : { "colorIndex" : 3 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-paintedlegs", "parameters" : { "colorIndex" : 4 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-paintedlegs", "parameters" : { "colorIndex" : 5 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-paintedlegs", "parameters" : { "colorIndex" : 6 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-paintedlegs", "parameters" : { "colorIndex" : 7 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-paintedlegs", "parameters" : { "colorIndex" : 8 } }, "rarity" : 0.5 },
+			  
+			  { "item" : { "name" : "trink-paintedhalflegs", "parameters" : { "colorIndex" : 1 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-paintedhalflegs", "parameters" : { "colorIndex" : 2 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-paintedhalflegs", "parameters" : { "colorIndex" : 3 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-paintedhalflegs", "parameters" : { "colorIndex" : 4 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-paintedhalflegs", "parameters" : { "colorIndex" : 5 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-paintedhalflegs", "parameters" : { "colorIndex" : 6 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-paintedhalflegs", "parameters" : { "colorIndex" : 7 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-paintedhalflegs", "parameters" : { "colorIndex" : 8 } }, "rarity" : 0.5 },
+			  
+			  { "item" : { "name" : "trink-stripedchest", "parameters" : { "colorIndex" : 1 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-stripedchest", "parameters" : { "colorIndex" : 2 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-stripedchest", "parameters" : { "colorIndex" : 3 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-stripedchest", "parameters" : { "colorIndex" : 4 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-stripedchest", "parameters" : { "colorIndex" : 5 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-stripedchest", "parameters" : { "colorIndex" : 6 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-stripedchest", "parameters" : { "colorIndex" : 7 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-stripedchest", "parameters" : { "colorIndex" : 8 } }, "rarity" : 0.5 },
+			  
+			  { "item" : { "name" : "trink-stripedlegs", "parameters" : { "colorIndex" : 1 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-stripedlegs", "parameters" : { "colorIndex" : 2 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-stripedlegs", "parameters" : { "colorIndex" : 3 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-stripedlegs", "parameters" : { "colorIndex" : 4 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-stripedlegs", "parameters" : { "colorIndex" : 5 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-stripedlegs", "parameters" : { "colorIndex" : 6 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-stripedlegs", "parameters" : { "colorIndex" : 7 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-stripedlegs", "parameters" : { "colorIndex" : 8 } }, "rarity" : 0.5 },
+			  
+			  { "item" : { "name" : "trink-goldenchest", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-goldenlegs", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.5 },
+			  
+			  { "item" : { "name" : "trink-combatchest", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.5 },
+			  { "item" : { "name" : "trink-combatlegs", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.5 }
+			] ]
+		]
+	}
+]

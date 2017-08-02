@@ -1,0 +1,24 @@
+{
+  "projectileName" : "avikanclusterrocket2",
+  "image" : "avikanclusterrocket.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 4,
+  "damageKindImage" : "icon.png",
+  "lightColor" : [128, 128, 64],
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/avikansmallexplosion/avikansmallexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "emitters" : [ "avikansmallrocketsmoke" ],
+  "flippable" : true,
+  "layer" : "front",
+  "speed" : 1.0,
+  "acceleration" : 120,
+  "physics" : "rocket",
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

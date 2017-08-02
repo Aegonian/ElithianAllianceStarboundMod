@@ -1,0 +1,64 @@
+{
+  "objectName" : "avikandrodenshop",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 100,
+  "description" : "A terminal for purchasing Droden Legion units.",
+  "shortdescription" : "Droden Legion Terminal",
+  "race" : "avikan",
+
+  "apexDescription" : "Seems I can purchase droids here.",
+  "avianDescription" : "A place to purchase robotic crew members.",
+  "floranDescription" : "Floran buysss friendss here.",
+  "glitchDescription" : "Uneasy. Robotic crewmembers can be purchased here...",
+  "humanDescription" : "I've always wanted more robots on my crew!",
+  "hylotlDescription" : "A place to purchase robotic crew supplements.",
+  "novakidDescription" : "Why not buy some new metal friends here?",
+
+  "aegiDescription" : "A terminal for purchasing Droden Legion units.",
+  "avikanDescription" : "Not all Captains want to have Droden on their crews, but these Legion units would certainly be useful.",
+  "erixianDescription" : "Seems I can buy some crew supplements here.",
+  "trinkDescription" : "Any Droden units I buy here will follow my orders without questions.",
+  "hymidDescription" : "I could buy some Droden Legion units here to bolster my crew.",
+  "notixDescription" : "I could certainly bolster my crew with some Droden units.",
+  "jorgasianDescription" : "A few more Droden on my crew won't hurt.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected Droden Legion Terminal. Legion units are available for purchase here.",
+
+  "inventoryIcon" : "avikandrodenshopicon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "avikandrodenshop.png", "fullbright" : true }, { "image" : "avikandrodenshoplit.png" } ],
+
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    },
+    {
+	  "imageLayers" : [ { "image" : "avikandrodenshop.png", "fullbright" : true }, { "image" : "avikandrodenshoplit.png" } ],
+
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ],
+  
+  "interactAction" : "ScriptPane",
+  "interactData" : "/interface/scripted/avikandrodenshop/avikandrodenshopgui.config",
+  
+  "scripts" : [ "/objects/avikan/outpost/avikandrodenshop/avikandrodenshop.lua" ],
+  "scriptDelta" : 5
+}

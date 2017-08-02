@@ -1,0 +1,65 @@
+{
+  "animationParts" : { },
+  "animationCustom" : {
+    "sounds" : {
+      "raiseShield" : [ "/sfx/melee/sword_guard.ogg" ],
+	  "shieldHit" : [ "/sfx/melee/shield_block_metal.ogg" ],
+	  "shieldBurst" : [ "/sfx/melee/excalibur_burst2.ogg" ]
+    },
+	"particleEmitters" : {
+	  "burst" : {
+		"active" : false,
+		"transformationGroups" : ["weapon"],
+		"offsetRegion" : [0.0, -0.25, 0.0, 0.25],
+		"burstCount" : 30,
+		"particles" : [
+		  { "particle" : "xanafianburst"},
+		  { "particle" : "xanafianburst2"}
+		]
+	  }
+	}
+  },
+
+  "ability" : {
+    "name" : "Discharge Shield",
+    "type" : "thea-shieldbladedefendenergy",
+    "scripts" : ["/items/active/weapons/melee/abilities/shieldblade/thea-shieldbladedefendenergy.lua"],
+    "class" : "TheaShieldBladeDefendEnergy",
+
+    "cooldownTime" : 1.0,
+	"energyUsage" : 50,
+	"knockback" : 12,
+	
+	//Projectile config
+	"baseDamage" : 3,
+    "blastCooldownTime" : 0.75,
+	"projectileType" : "excaliburburst",
+	"projectileParameters" : {
+      "speed" : 3
+    },
+
+    "stances" : {
+      "defendwindup" : {
+		"duration" : 0.1,
+        "armRotation" : -30,
+        "weaponRotation" : -25,
+        "twoHanded" : true,
+		
+		"backArmFrame" : "swim.3",
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "defend" : {
+        "armRotation" : -15,
+        "weaponRotation" : 10,
+        "twoHanded" : true,
+		
+		"backArmFrame" : "swim.3",
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  }
+}

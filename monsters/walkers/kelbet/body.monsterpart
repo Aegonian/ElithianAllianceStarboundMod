@@ -1,0 +1,9 @@
+{
+  "name" : "kelbet",
+  "category" : "kelbet",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "kelbet.png"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "itemName" : "avikanplating",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "avikanplating.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "shortdescription" : "Avikan Plating",
+  
+  "description" : "Strong metal plating, for the best protection.",
+  "glitchDescription" : "Observation. Thick and heavy plating. Very reliable protection.",
+  "floranDescription" : "Big platesss for making placess sssafe...",
+
+  "materialId" : 30004
+}

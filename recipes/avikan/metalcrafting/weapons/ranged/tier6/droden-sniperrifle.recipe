@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "avikanmetaltier6", "count" : 7 },
+    { "item" : "avikandarkmetal", "count" : 2 },
+    { "item" : "avikancapacitor", "count" : 1 }
+  ],
+  "output" : { "item" : "droden-sniperrifle", "count" : 1 },
+  "groups" : [ "avikanmetalcrafting", "weapons", "all" ]
+}

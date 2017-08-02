@@ -1,0 +1,56 @@
+{
+  "objectName" : "avikanvehiclerepair",
+  "colonyTags" : [],
+  "rarity" : "legendary",
+  "category" : "other",
+  "printable" : false,
+  "subtitle" : "Vehicle repairs",
+  "tooltipKind" : "container",
+  "description" : "The local vehicle engineer. He can easily fix my damaged vehicles.",
+  "shortdescription" : "Valyan's Vehicle Workshop",
+  "race" : "avikan",
+  
+  "statusEffects" : [ ],
+  "price" : 50,
+  
+  "floranDescription" : "Floran takesss broken vehicle to lizard man. Lizard man fixess vehicle.",
+  "glitchDescription" : "Delighted. This engineer can fix up any broken vehicle I present him with.",
+  "novakidDescription" : "This fella looks like he could fix up my vehicles.",
+  
+  "drodenDescription" : "Detected Nomada engineer. Offers repair services for broken and lost vehicles.",
+
+  "inventoryIcon" : "avikanvehiclerepairicon.png",
+  "orientations" : [
+    {
+      "image" : "avikanvehiclerepair.png:<color>.<frame>",
+	  "direction" : "right",
+	  
+      "imagePosition" : [-8, 0],
+      "frames" : 16,
+      "animationCycle" : 1.6,
+
+	  "spaces" : [
+        [0, 2], [1, 2], [2, 2], [3, 2],
+        [0, 1], [1, 1], [2, 1], [3, 1],
+        [0, 0], [1, 0], [2, 0], [3, 0]
+      ],
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "interactAction" : "ScriptPane",
+  "interactData" : "/interface/scripted/vehiclerepair/avikan-vehiclerepairgui.config",
+
+  "scripts" : [ "/objects/outpost/repairo/repairo.lua" ],
+  "scriptDelta" : 20,
+
+  "chipRepairFactor" : 0.2,
+
+  "chatRadius" : 10,
+  "chatCooldown" : 15,
+  "chatOptions" : [
+    "Need a vehicle fixed? A few Auto Chips and you'll be ready to go!",
+    "Forgot to beam up your vehicle? I can have it rebuild for just a few Auto Chips!",
+    "Just a few Auto Chips and your banged-up Keff will be ready to ride again!"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "metadata" : {
+    "name" : "avikanencounter2",
+    "species" : "avikan",
+    "rules" : [
+    ],
+	
+    "anchor" : [ "avk-platform", "avk-platform2", "avk-platform3", "avk-teleporter", "avk-teleporter2", "avk-modernhome" ],
+
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "avk-platform",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "avk-platform.json" ]
+    },
+	{
+      "name" : "avk-platform2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "avk-platform2.json" ]
+    },
+	{
+      "name" : "avk-platform3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "avk-platform3.json" ]
+    },
+	{
+      "name" : "avk-teleporter",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "avk-teleporter.json" ]
+    },
+	{
+      "name" : "avk-teleporter2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "avk-teleporter2.json" ]
+    },
+	{
+      "name" : "avk-modernhome",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "avk-modernhome.json" ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name" : "linerifleburn",
+  "blockingStat" : "linerifleStatusImmunity",
+
+  "effectConfig" : {
+	"directive" : "fade=FF9300=0.25",
+	"deathDirective" : "fade=FF9300=1.0?border=2;FF930080;00000000",
+	"damageKind" : "linerifle",
+	"projectileType" : "linerifleshock",
+	"deathProjectileType" : "linerifledeath",
+    "minMaxHealth" : 5,
+    "healthDamageFactor" : 1.0,
+    "jumpDistance" : 5
+  },
+  "defaultDuration" : 3,
+
+  "scripts" : [
+    "linerifleburn.lua"
+  ],
+
+  "animationConfig" : "linerifleburn.animation",
+
+  "label" : "Linecharge Burn",
+  "icon" : "/interface/statuses/linerifleburn2.png"
+}

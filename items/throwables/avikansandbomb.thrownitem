@@ -1,0 +1,31 @@
+{
+  "itemName" : "avikansandbomb",
+  "price" : 15,
+  "rarity" : "Common",
+  "category" : "throwableItem",
+  "inventoryIcon" : "avikansandbombicon.png",
+  "image" : "avikansandbomb.png",
+  "shortdescription" : "Sand Bomb",
+  "description" : "A makeshift sand bomb, constructed from a Sandspitter's Sack.",
+
+  "ammoUsage" : 1,
+
+  "edgeTrigger" : true,
+  "windupTime" : 0.0,
+  "cooldown" : 0.4,
+
+  "projectileType" : "avikansandbomb",
+  "projectileConfig" : {
+    "speed" : 40,
+    "power" : 40,
+    "periodicActions" : [
+      {
+        "time" : 0,
+        "repeat" : false,
+        "action" : "sound",
+        "options" : [ "/sfx/projectiles/throw_item.ogg" ]
+      }
+    ]
+  }
+}
+

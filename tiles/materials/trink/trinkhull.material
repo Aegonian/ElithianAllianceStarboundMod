@@ -1,0 +1,28 @@
+{
+  "materialId" : 30064,
+  "materialName" : "trinkhull",
+  "particleColor" : [85, 85, 85, 255],
+  "itemDrop" : "trinkhull", 
+  "shortdescription" : "Trinkian Hull",
+  
+  "description" : "A strong metal hull for ships and buildings alike.",
+  "glitchDescription" : "Observation. Thick and heavy hull plating. Very reliable protection.",
+  "floranDescription" : "Thick hull for making placess sssafe...",
+  "novakidDescription" : "A thcik plate o' metal, like some sorta big safe.",
+  
+  "drodenDescription" : "Analysis complete. Metal plating is multiple units thick.",
+
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "trinkhull.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 250
+  }
+}

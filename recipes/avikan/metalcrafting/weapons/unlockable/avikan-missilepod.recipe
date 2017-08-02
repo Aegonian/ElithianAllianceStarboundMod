@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "avikandronemissilepod", "count" : 1 },
+	{ "item" : "avikanmetaltier6", "count" : 8 },
+    { "item" : "avikandarkmetal", "count" : 1 },
+    { "item" : "avikanmagazine", "count" : 1 },
+    { "item" : "avikanvolatileliquid", "count" : 1 }
+  ],
+  "output" : { "item" : "avikan-missilepod", "count" : 1 },
+  "groups" : [ "avikanmetalcrafting", "weapons", "all" ]
+}

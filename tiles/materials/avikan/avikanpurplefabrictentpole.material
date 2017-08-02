@@ -1,0 +1,28 @@
+{
+  "materialId" : 30057,
+  "materialName" : "avikanpurplefabrictentpole",
+  "particleColor" : [125, 66, 181, 255],
+  "itemDrop" : "avikanpurplefabrictentpole", 
+  "shortdescription" : "Rhaiod Tent Pole",
+  
+  "description" : "A metal tent pole.",
+  "glitchDescription" : "Observation. A metal tent pole.",
+  "floranDescription" : "Floran make ssspear from metal tent polesss?",
+  "novakidDescription" : "A tent pole, this'll surely hold up a tent.",
+  
+  "drodenDescription" : "Analysis complete. Structurally vital tent pole.",
+
+  "footstepSound" : "/sfx/blocks/footstep_sand.ogg",
+  "health" : 4,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/thea-avikanleathertemplate.config",
+  "renderParameters" : {
+    "texture" : "avikanpurplefabrictentpole.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 50
+  }
+}

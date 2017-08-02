@@ -1,0 +1,31 @@
+[
+  //AVIKAN
+  { "op" : "add",
+	"path" : "/avikanDescription",
+	"value" : "The Matter Manipulator! I feel bad for taking it this way, but it was always my mission to obtain this."
+  },
+  { "op" : "add",
+	"path" : "/pickedUpParameters/avikanDescription",
+	"value" : "I've got to get moving. My ship is waiting!"
+  },
+  
+  //DRODEN
+  { "op" : "add",
+	"path" : "/drodenDescription",
+	"value" : "Detected Matter Manipulator. Mission Objective confirmed."
+  },
+  { "op" : "add",
+	"path" : "/pickedUpParameters/drodenDescription",
+	"value" : "Retrieved Mission Objective. Unit must return to the Watchers."
+  },
+  
+  //TRINK
+  { "op" : "add",
+	"path" : "/trinkDescription",
+	"value" : "There's no time to lose. I should pick up this Matter Manipulator and get out of here."
+  },
+  { "op" : "add",
+	"path" : "/pickedUpParameters/trinkDescription",
+	"value" : "To linger here would be terribly inefficient."
+  }
+]

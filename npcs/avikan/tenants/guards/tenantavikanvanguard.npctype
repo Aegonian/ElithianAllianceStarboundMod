@@ -1,0 +1,64 @@
+{
+  "type" : "tenantavikanvanguard",
+  "baseType" : "thea-friendlyguard",
+  
+  "dropPools" : [],
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "tenant", "guard"],
+      "enableParticipation" : true,
+
+      // Every 30 seconds, decide whether to generate a quest and if so, spend
+      // the rest of the 30s window trying to generate it.
+      "timeLimit" : 30,
+
+      // Don't generate new quests if there are already more than <nearbyQuestLimit>
+      // questmanager stagehands nearby, within a <nearbyQuestRange> tile range.
+      "nearbyQuestLimit" : 2,
+      "nearbyQuestRange" : 50,
+      "questCountRange" : [1, 4],
+      
+      "graduation" : {
+        "nextNpcType" : [
+          [1, "crewmembervanguard"],
+		  [1, "crewmembernomadahunter"]
+        ]
+      }
+    }
+  },
+  
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "avikan-vanguardhead", "parameters" : { "colorIndex" : 8 } }
+            ],
+            "chest" : [
+              { "name" : "avikan-vanguardchest", "parameters" : { "colorIndex" : 8 } }
+            ],
+            "legs" : [
+              { "name" : "avikan-vanguardlegs", "parameters" : { "colorIndex" : 8 } }
+            ],
+            "primary" : [
+              "avikanvanguardshortsword",
+			  "avikanvanguardbroadsword",
+			  "avikanvanguardaxe",
+			  "avikanvanguardhammer",
+			  "avikanvanguardspear"
+            ],
+            "sheathedprimary" : [ 
+              "avikan-assaultrifle",
+			  "avikan-assaultrifle2",
+			  "avikan-shotgun",
+			  "avikan-sniperrifle"
+            ],
+			"alt" : [
+			  "avikanmetalshield"
+			]
+          }
+        ] ]
+    ]
+  }
+}

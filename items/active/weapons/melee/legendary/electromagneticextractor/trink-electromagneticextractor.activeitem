@@ -1,0 +1,99 @@
+{
+  "itemName" : "trink-electromagneticextractor",
+  "price" : 500,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "^#BA66FF;Extracts electric components from mechanical enemies.",
+  "shortdescription" : "^#BA66FF;Electromagnetic Extractor",
+  "tooltipKind" : "thea-sword-descriptive",
+  "category" : "Tool",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","prod","trink"],
+
+  "inventoryIcon" : "trink-electromagneticextractor.png",
+
+  "animation" : "trink-electromagneticextractor.animation",
+  "animationParts" : {
+    "blade" : "trink-electromagneticextractor.png",
+	"lights" : "trink-electromagneticextractorlights.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_dagger_electric2.ogg" ],
+	  "holdLoop" : [ "/sfx/objects/teslaspike.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "electric",
+
+  "aimOffset" : -1.0,
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/melee/abilities/prod/thea-prodstab.lua"],
+	"class" : "TheaProdStab",
+	
+    "fireTime" : 0.75,
+    "baseDps" : 7.0,
+    "damageConfig" : {
+      "damageSourceKind" : "electromagneticextractor",
+      "statusEffects" : [ "electrified" ],
+      "knockbackMode" : "aim",
+      "knockback" : 15,
+      "timeoutGroup" : "primary"
+    },
+    "holdDamageMultiplier" : 0.5,
+    "holdDamageConfig" : {
+	  "damageSourceKind" : "electromagneticextractor",
+      "statusEffects" : [ "electrified" ],
+      "knockbackMode" : "aim",
+      "knockback" : 5,
+      "timeoutGroup" : "hold",
+      "timeout" : 0.5
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : -90,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+        "weaponOffset" : [0, 0.5],
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "windup" : {
+        "duration" : 0.1,
+        "armRotation" : -110,
+        "weaponRotation" : 20,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 0.5],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire" : {
+        "duration" : 0.3,
+        "armRotation" : -20,
+        "weaponRotation" : -70,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 2.5],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "hold" : {
+        "armRotation" : -30,
+        "weaponRotation" : -60,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 2.0],
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

@@ -1,0 +1,27 @@
+{
+  "materialId" : 30099,
+  "materialName" : "avikanbrokenpanel",
+  "particleColor" : [215, 184, 137, 255],
+  "itemDrop" : "avikanbrokenpanel", 
+  "shortdescription" : "Broken Avikan Panel",
+  
+  "description" : "This panel looks broken. Perhaps I can break through.",
+  "glitchDescription" : "Destructive. I could break through these metal panels.",
+  "floranDescription" : "Floran breaksss through panelss with crackss. Floran is ssstrong.",
+  
+  "drodenDescription" : "Analysis complete. Damaged metal panel. Unit might be able to break through.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "avikanbrokenpanel.png",
+    "variants" : 10,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 149
+  }
+}

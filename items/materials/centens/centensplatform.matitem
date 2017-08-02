@@ -1,0 +1,14 @@
+{
+  "itemName" : "centensplatform",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Rare",
+  "inventoryIcon" : "centensplatform.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "description" : "An ancient metal platform.",
+  "shortdescription" : "Centensian Platform",
+  "glitchDescription" : "Statement. An ancient metal platform.",
+  "floranDescription" : "Old metal platformsss",
+
+  "materialId" : 30102
+}

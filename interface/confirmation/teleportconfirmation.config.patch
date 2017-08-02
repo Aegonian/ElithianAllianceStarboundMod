@@ -1,0 +1,20 @@
+[
+  { "op" : "add",
+	"path" : "/vanguarddronebattle",
+	"value" : {
+	  "paneLayout" : "/interface/windowconfig/portraitconfirmation.config:paneLayout",
+	  "icon" : "/interface/warping/icon.png",
+	  "title" : "Teleport Confirmation",
+	  "subtitle" : "Kharmani Surface",
+	  "message" : "\n\nAre you ready to be sent to the ^orange;surface of Kharmani^white;? \n^red;You'll need some powerful equipment in order to survive down there.",
+	  "okCaption" : "Ready",
+	  "cancelCaption" : "Not now",
+	  "images" : {
+		"portrait" : [ {"image" : "/quests/avikanquests/avikanoutpost/vanguardrecruiterportrait.png"} ]
+	  },
+	  "labels" : {
+		"name" : "Recruiter Rokhan"
+	  }
+	}
+  }
+]

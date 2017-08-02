@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "avikandarkmetal", "count" : 4 }
+  ],
+  "output" : {
+    "item" : "drodenframecrafting",
+    "count" : 1
+  },
+  "duration" : 5,
+  "groups" : [ "avikaninventor", "craftingstations", "all" ]
+}

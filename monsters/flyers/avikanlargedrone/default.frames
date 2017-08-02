@@ -1,0 +1,32 @@
+{
+  "frameGrid" : {
+    "size" : [56, 40],
+    "dimensions" : [9, 14],
+
+    "names" : [
+	//FLYING
+      [ null, "fly.1", "fly.2", "fly.3", "fly.4", "fly.5", "fly.6", "fly.7", "fly.8" ],
+	  [ null, "fly.9", "fly.10", "fly.11", "fly.12", "fly.13", "fly.14", "fly.15", "fly.16" ],
+	//HURT
+      [ null, "hurt.1", "hurt.2", "hurt.3", "hurt.4", "hurt.5", "hurt.6", "hurt.7", "hurt.8" ],
+	//LINEDRIVE
+      [ null, "linedrivewindup.1", "linedrivewindup.2", "linedrivewindup.3", "linedrivewindup.4", "linedrivewindup.5", "linedrivewindup.6", "linedrivewindup.7", "linedrivewindup.8" ],
+      [ null, "linedriveloop.1", "linedriveloop.2", "linedriveloop.3", "linedriveloop.4", null, null, null, null ],
+      [ null, "linedrivewinddown.1", "linedrivewinddown.2", "linedrivewinddown.3", "linedrivewinddown.4", "linedrivewinddown.5", "linedrivewinddown.6", "linedrivewinddown.7", "linedrivewinddown.8" ],
+	//MISSILES
+	  [ null, "missilewindup.1", "missilewindup.2", "missilewindup.3", "missilewindup.4", "missilewindup.5", "missilewindup.6", "missilewindup.7", "missilewindup.8" ],
+      [ null, "missileloop.1", "missileloop.2", "missileloop.3", "missileloop.4", null, null, null, null ],
+      [ null, "missilewinddown.1", "missilewinddown.2", "missilewinddown.3", "missilewinddown.4", "missilewinddown.5", "missilewinddown.6", "missilewinddown.7", "missilewinddown.8" ],
+	//GRENADES
+	  [ null, "grenadewindup.1", "grenadewindup.2", "grenadewindup.3", "grenadewindup.4", "grenadewindup.5", "grenadewindup.6", "grenadewindup.7", "grenadewindup.8" ],
+      [ null, "grenadeloop.1", "grenadeloop.2", "grenadeloop.3", "grenadeloop.4", null, null, null, null ],
+      [ null, "grenadewinddown.1", "grenadewinddown.2", "grenadewinddown.3", "grenadewinddown.4", "grenadewinddown.5", "grenadewinddown.6", "grenadewinddown.7", "grenadewinddown.8" ],
+	//INACTIVE
+      [ null, "inactive.1", null, null, null, null, null, null, null],
+	//WAKEUP
+	  [ null, "wakeup.1", "wakeup.2", "wakeup.3", "wakeup.4", "wakeup.5", "wakeup.6", null, null ]
+    ]
+  },
+  "aliases" : {
+  }
+}

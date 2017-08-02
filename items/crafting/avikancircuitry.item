@@ -1,0 +1,10 @@
+{
+  "itemName" : "avikancircuitry",
+  "price" : 75,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "avikancircuitry.png",
+  "description" : "The core of any modern electronic device.",
+  "shortdescription" : "Avikan Circuitry",
+  "itemTags" : [ "reagent" ]
+}

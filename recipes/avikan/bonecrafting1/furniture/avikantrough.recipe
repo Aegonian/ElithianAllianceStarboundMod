@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "monsterbone", "count" : 2 },
+	{ "item" : "bolbohn", "count" : 2 },
+	{ "item" : "dunestalk", "count" : 2 },
+	{ "item" : "kadavancactus", "count" : 2 }
+  ],
+  "output" : { "item" : "avikantrough", "count" : 1 },
+  "groups" : [ "avikanbonecrafting", "bonefurniture", "all" ]
+}

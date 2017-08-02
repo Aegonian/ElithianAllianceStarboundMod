@@ -1,0 +1,25 @@
+{
+  "type" : "avikanmodernmerchant",
+  "baseType" : "avikanvillagemerchant",
+
+  "scriptConfig" : {
+	"merchant" : {
+	  "categories" : {
+		"avikan" : [ "avikanmodern" ]
+	  }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ "avikan-merchantchest" ],
+            "legs" : [ "avikan-merchantlegs" ],
+            "head" : [ "avikan-engineerhead" ],
+            "back" : [ "avikanmodernpack" ]
+          }
+        ] ]
+    ]
+  }
+}

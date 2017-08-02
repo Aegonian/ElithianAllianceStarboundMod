@@ -1,0 +1,14 @@
+{
+  "itemName" : "avikanfarmpanel",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "avikanfarmpanel.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "description" : "A metal container filled with fertile dirt, ready for farming.",
+  "shortdescription" : "Avikan Farming Block",
+  "glitchDescription" : "Statement. Dirt captured in a metal container.",
+  "floranDescription" : "Soft dirt for farmingsss.",
+
+  "materialId" : 30028
+}

@@ -1,0 +1,31 @@
+{
+  "projectileName" : "avikanharpoon",
+  "physics" : "avikanharpoon",
+  "bounces" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "avikanharpoon.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "emitters" : [ "daggerblue" ],
+  "power" : 50,
+  "knockback" : 20,
+  "knockbackDirectional" : true,
+  "speed" : 110,
+  "timeToLive" : 30,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanharpoonsticking",
+      "inheritDamageFactor" : 0.0,
+      "inheritSpeedFactor" : 0.6,
+      "angleAdjust" : 0
+    }
+  ],
+  "damageKind" : "avikanhunting",
+  "hydrophobic" : false
+}

@@ -1,0 +1,20 @@
+{
+  "kind" : "thea-smallblacksmoke",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/thea-smoke/thea-smoke.animation",
+    "position" : [0, 0],
+    "finalVelocity" : [0, 0],
+    "approach" : [50, 50],
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.85,
+    "fade" : 1,
+    "size" : 1,
+	"color" : [255, 255, 255, 200],
+    "layer" : "back",
+    "variance" : {
+      "initialVelocity" : [2.0, 2.0],
+      "rotation" : 180
+    }
+  }
+}

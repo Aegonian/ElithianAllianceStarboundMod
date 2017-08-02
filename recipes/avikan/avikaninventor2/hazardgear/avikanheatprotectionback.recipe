@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "avikancoldprotectionback", "count" : 1 },
+    { "item" : "avikanmetaltier5", "count" : 6 },
+    { "item" : "monsterspine", "count" : 6 },
+    { "item" : "avikanmacrochip", "count" : 1 },
+    { "item" : "cryonicextract", "count" : 1 }
+  ],
+  "output" : { "item" : "avikanheatprotectionback", "count" : 1 },
+  "groups" : [ "avikaninventor2", "hazardgear", "all" ]
+}

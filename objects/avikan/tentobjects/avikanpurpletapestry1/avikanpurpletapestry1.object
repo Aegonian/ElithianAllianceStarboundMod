@@ -1,0 +1,52 @@
+{
+  "objectName" : "avikanpurpletapestry1",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 40,
+  "description" : "Wall tapestry decorated in the style of the Rhaiod.",
+  "shortdescription" : "Long Rhaiod Tapestry",
+  "race" : "avikan",
+
+  "apexDescription" : "A wall tapestry made of some purple fabric.",
+  "avianDescription" : "Are those runes at the bottom of this tapestry?",
+  "floranDescription" : "Tapessstry remindsss Floran of home.",
+  "glitchDescription" : "Confused. What might those symbols mean?",
+  "humanDescription" : "A wall tapestry. It has an unusual feel to it.",
+  "hylotlDescription" : "Wall decoration with a seemingly religious theme.",
+
+  "aegiDescription" : "Wall decoration used by the Rhaiod.",
+  "avikanDescription" : "A wall tapestry with Rhaiod decorations.",
+  "erixianDescription" : "A purple tapestry. It could use some gold trimmings.",
+  "trinkDescription" : "Wall decoration created by the Rhaiod.",
+  "hymidDescription" : "The runes on this tapestry looks a bit like the runes of the Gods.",
+  "notixDescription" : "A tapestry made of an unusually coloured fabric.",
+  "jorgasianDescription" : "A purple tapestry for wall decoration.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Scan completed. Rhaiod wall decoration.",
+  
+  "inventoryIcon" : "avikanpurpletapestry1icon.png",
+  "orientations" : [
+    {
+      "image" : "avikanpurpletapestry1.png:<color>",
+      "imagePosition" : [-16, -16],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    },
+	{
+      "image" : "avikanpurpletapestry1.png:<color>",
+      "imagePosition" : [-16, -16],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ]
+}

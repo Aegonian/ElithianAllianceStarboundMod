@@ -1,0 +1,22 @@
+{
+  "itemName" : "trinkrailplatform",
+  "level" : 1,
+  "price" : 475,
+  "rarity" : "rare",
+  "category" : "railPlatform",
+  "description" : "Place a self-propelled platform that follows rails.",
+  "shortdescription" : "Trinkian Rail Platform",
+  "twoHanded" : true,
+  "maxStack" : 10,
+
+  "inventoryIcon" : "trinkrailplatformicon.png",
+
+  "scripts" : ["railplatform.lua"],
+  "animationScripts" : ["placementpreview.lua"],
+
+  "placementRange" : 15,
+  "placementBounds" : [-2.5, -0.25, 2.5, 0.75],
+  "placementPreviewImage" : "/items/active/unsorted/railplatform/trinkrailplatformpreview.png",
+
+  "platformType" : "trinkrailplatform"
+}

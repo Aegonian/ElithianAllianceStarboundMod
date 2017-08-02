@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "avikanmetal", "count" : 2 },
+	{ "item" : "liquidoil", "count" : 2 }
+  ],
+  "output" : {
+    "item" : "avikanmagazine",
+    "count" : 1
+  },
+  "duration" : 0.15,
+  "groups" : [ "avikanmetalcrafting", "ingredients", "all" ]
+}

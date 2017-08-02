@@ -1,0 +1,29 @@
+{
+  "objectName" : "theleanstucksword",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 40,
+  "description" : "The sword of a dead Thelean. It's stuck far too tigthly to get it out.",
+  "shortdescription" : "Thelean Sword",
+  "race" : "thelean",
+
+  "floranDescription" : "Floran wantsss to take ssword, but Floran not ssstrong enough...",
+  "glitchDescription" : "Weak. I do not have the strength to pull this sword out of the rocks.",
+  
+  "avikanDescription" : "This sword must have killed many of my kind.",
+  "theleanDescription" : "The sword of a fallen brother. It is broken now.",
+  "drodenDescription" : "Detected Thelean weaponry. Analysis: stuck.",
+
+  "inventoryIcon" : "theleanstuckswordicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "theleanstucksword.png:<color>",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

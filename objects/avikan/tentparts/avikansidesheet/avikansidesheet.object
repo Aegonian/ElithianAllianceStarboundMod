@@ -1,0 +1,58 @@
+{
+  "objectName" : "avikansidesheet",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A leather sheet attached to the side of buildings.",
+  "shortdescription" : "Avikan Sheet",
+  "race" : "avikan",
+
+  "apexDescription" : "A simple leather sheet.",
+  "avianDescription" : "A leather sheet. Rather dull.",
+  "floranDescription" : "Leather makesss Floran want to huntsss.",
+  "glitchDescription" : "Observation. A simple leather sheet.",
+  "humanDescription" : "A leather sheet, plain and simple.",
+  "hylotlDescription" : "A simplistic leather sheet.",
+  "novakidDescription" : "A leather sheet, plain 'n simple.",
+
+  "aegiDescription" : "A simple sheet of leather, to be attached to the side of a building.",
+  "avikanDescription" : "A leather sheet. It is mostly decorative.",
+  "erixianDescription" : "A decorative leather sheet.",
+  "trinkDescription" : "A leather sheet.",
+  "hymidDescription" : "A simple leather sheet.",
+  "notixDescription" : "A leather sheet. It provides a bit of protection from the sun.",
+  "jorgasianDescription" : "That's a leather sheet.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected leather sheet.",
+
+  "inventoryIcon" : "avikansidesheeticon.png",
+  "orientations" : [
+    {
+      "image" : "avikansidesheet.png:<color>",
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "flipImages" : true,
+      "direction" : "right"
+    },
+    {
+      "image" : "avikansidesheet.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "left"
+    }
+  ]
+}

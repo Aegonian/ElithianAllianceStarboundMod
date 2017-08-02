@@ -1,0 +1,15 @@
+{
+  "itemName" : "mechlegsavikan",
+  "price" : 4480,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "category" : "mechPart",
+  "tooltipKind" : "mechlegs",
+  "builder" : "/items/buildscripts/buildmechpart.lua",
+  "inventoryIcon" : "mechlegsavikan.png",
+  "description" : "Durable mech legs built by the Vanguard.",
+  "shortdescription" : "Vanguard Mech Legs",
+  "itemTags" : [ ],
+
+  "mechPart" : ["legs", "avikan"]
+}

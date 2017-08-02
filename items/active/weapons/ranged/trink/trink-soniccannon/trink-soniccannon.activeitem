@@ -1,0 +1,97 @@
+{
+  "itemName" : "trink-soniccannon",
+  "price" : 1500,
+  "inventoryIcon" : "trink-soniccannonicon.png",
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "Fires a powerful blast of air which knocks enemies back.",
+  "shortdescription" : "Trinkian Sonic Cannon",
+  "level" : 6,
+  "fixedLevel" : false,
+  "tooltipKind" : "gun",
+  "category" : "Sonic Cannon",
+  "itemTags" : ["weapon","ranged","trink","sonicrifle"],
+  "twoHanded" : true,
+  
+  "cursor" : "/cursors/thea-windowreticle.cursor",
+  
+  "animation" : "trink-soniccannon.animation",
+  "animationParts" : {
+    "middle" : "trink-soniccannon.png",
+	"middleFullbright" : "trink-soniccannonlights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/trinkairflash.png"
+  },
+  "animationCustom" : {
+	"animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+		    "offset" : [0.6, 0.1]
+		  }
+		}
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/projectiles/blast_small1.ogg", "/sfx/projectiles/blast_small2.ogg", "/sfx/projectiles/blast_small3.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.6, 0.1],
+  "muzzleOffset" : [2.1, 0.0],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-reloadfire/thea-reloadfire.lua"],
+    "class" : "TheaReloadFire",
+
+    "fireTime" : 1.5,
+    "baseDps" : 3.5,
+    "energyUsage" : 35,
+    "inaccuracy" : 0.0,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "trinkairblast",
+    "projectileParameters" : {
+	  "speed" : 100,
+      "knockback" : 40
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+		"weaponOffset" : [-0.2, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.75,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+		"weaponOffset" : [-0.2, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

@@ -1,0 +1,12 @@
+{
+  "projectileName" : "xanafianshadowspawn",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/status/xanafianshadowspawn.config"
+    }
+  ],
+  "damageKind" : "default",
+  "timeToLive" : 0
+}

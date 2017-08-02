@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "monsterbone", "count" : 4 },
+    { "item" : "monsterhide", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "avikanleathercrafting",
+    "count" : 1
+  },
+  "duration" : 5,
+  "groups" : [ "avikaninventor", "craftingstations", "all" ]
+}

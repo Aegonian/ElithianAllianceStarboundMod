@@ -1,0 +1,132 @@
+{
+  "type" : "crewmembertrink",
+  "baseType" : "crewmember",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+
+	"crew" : {
+      "ranks" : [
+        "Circuit <role>",
+		"Alliance <role>",
+		"Primary <field> Unit",
+		"Efficient <field> Unit",
+		"Heavy <field> Unit",
+		"<field> Unit",
+		"<role> of the Circuit",
+		"Pre-programmed <role>",
+		"Adaptive <role>",
+		"Capable <role>",
+		"Master <field> Unit",
+		"<field> Command Unit"
+      ],
+	  
+	  "defaultUniform" : {
+		"chest" : "trink-protectoratechest",
+		"legs" : "trink-protectoratelegs"
+	  },
+	  
+	  "uniformSlots" : []
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "offer" : {
+          "trink" : {
+            "default" : [
+              "Greetings, adventurer. Might I join your crew?",
+              "I'm certain that my skills will benefit your crew.",
+              "Are you hiring? I would like to join your crew.",
+              "I think we can help each other. Might I join your crew?"
+            ]
+          }
+        },
+		"roleDescription" : {
+          "trink" : {
+            "default" : [
+              "I'm ready for combat!",
+              "Let me know if you require combat support.",
+              "I will charge into battle with you.",
+              "If you need combat support, you know where to find me."
+            ]
+          }
+        },
+		"respawned" : {
+          "trink" : {
+            "default" : [
+              "Being uploaded into a new body is bad for my memory...",
+              "I should be more careful with my hull next time...",
+              "Some of my memories didn't transfer to my new body properly...",
+              "I'm glad my database wasn't corrupted when I was reuploaded."
+            ]
+          }
+        },
+		"unfollow" : {
+          "trink" : {
+            "default" : [
+              "I'll wait here.",
+              "Call me when we're heading out again.",
+              "I'll stay here, then.",
+              "I'll wait for you here."
+            ]
+          }
+        },
+		"follow" : {
+          "trink" : {
+            "default" : [
+              "Ready to go.",
+              "I'm all ready.",
+              "Let's go, then.",
+              "I'm good to go."
+            ]
+          }
+        },
+		"cantreach" : {
+          "trink" : {
+            "default" : [
+              "I can't reach you!",
+              "I can't get over there!",
+              "I can't find my way there!",
+              "Wait up!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "trink-protectoratechest", "data" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "trink-protectoratelegs", "data" : { "colorIndex" : 4 } } ],
+            "primary" : [ 
+			  "trinktier3rifle",
+			  "trinktier4sniper",
+			  "trinktier3shotgun"
+			],
+            "sheathedprimary" : [
+			  "trinktier3longprod"
+			]
+          },
+          {
+            "chest" : [ { "name" : "trink-protectoratechest", "data" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "trink-protectoratelegs", "data" : { "colorIndex" : 4 } } ],
+            "primary" : [ 
+			  "trinktier3longprod"
+			],
+            "sheathedprimary" : [
+			  "trinktier3rifle",
+			  "trinktier4sniper",
+			  "trinktier3shotgun"
+			]
+          }
+        ] ]
+    ]
+  }
+}

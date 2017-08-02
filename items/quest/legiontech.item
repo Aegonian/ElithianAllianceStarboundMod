@@ -1,0 +1,11 @@
+{
+  "itemName" : "legiontech",
+  "price" : 1000,
+  "rarity" : "Essential",
+  "category" : "Quest Item",
+  "tooltipKind" : "thea-unique",
+  "inventoryIcon" : "legiontech.png",
+  "description" : "A unique switch gear used in rare Droden weaponry.",
+  "shortdescription" : "^orange;Legion Switch Gear^white;",
+  "itemTags" : [ "questitem" ]
+}

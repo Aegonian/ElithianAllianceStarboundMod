@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "trinkmetal", "count" : 6 }
+  ],
+  "output" : {
+    "item" : "trinkstoragelocker",
+    "count" : 1
+  },
+  "groups" : [ "trinkcrafting2", "furniture", "all" ]
+}

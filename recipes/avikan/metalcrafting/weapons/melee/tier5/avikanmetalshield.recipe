@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "avikanmetaltier5", "count" : 5 },
+    { "item" : "avikandarkmetal", "count" : 1 }
+  ],
+  "output" : { "item" : "avikanmetalshield", "count" : 1 },
+  "groups" : [ "avikanmetalcrafting", "weapons", "all" ]
+}

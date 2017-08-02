@@ -1,0 +1,18 @@
+{
+  "kind" : "kadavanswarmdead",
+  "definition" : {
+    "type" : "ember",
+    "size" : 1,
+    "color" : [16, 25, 30],
+    "position" : [0, 0],
+    "destructionAction" : "shrink",
+    "destructionTime" : 3.0,
+    "fade" : 1,
+    "layer" : "middle",
+    "timeToLive" : 1.0,
+    "variance" : {
+      "initialVelocity" : [2.0, 2.0],
+      "position" : [1.0, 1.0]
+    }
+  }
+}

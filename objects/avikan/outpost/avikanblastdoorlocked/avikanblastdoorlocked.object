@@ -1,0 +1,52 @@
+{
+  "objectName" : "avikanblastdoorlocked",
+  "colonyTags" : ["avikan"],
+  "printable" : false,
+  "rarity" : "Common",
+  
+  "category" : "decorative",
+  "description" : "A sturdy metal door, locked with an intricate lock system.",
+  "shortdescription" : "Avikan Blast Door",
+  "race" : "avikan",
+
+  "health" : 8,
+
+  "apexDescription" : "A sturdy metal blast door. It's locked...",
+  "avianDescription" : "A locked door. I wonder what lies beyond it.",
+  "floranDescription" : "Floran wondersss what is behind metal doorsss.",
+  "glitchDescription" : "Observation. A locked blast door.",
+  "humanDescription" : "A locked blast door. I wish I could blow it open somehow...",
+  "hylotlDescription" : "A locked blast door. It must be protecting something valuable.",
+
+  "aegiDescription" : "A locked blast door. There doesn't seem to be any way past it.",
+  "avikanDescription" : "A thick blast door, locked with a complex lock system. Nothing gets past this.",
+  "erixianDescription" : "A metal blast door. It's locked...",
+  "trinkDescription" : "This door is locked.",
+  "hymidDescription" : "There's no way I can get past this door.",
+  "notixDescription" : "A locked blast door. No use trying to get it to open.",
+  "jorgasianDescription" : "A locked blast door. No way past it, it seems.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Analysis. Locked. Unit is unable to force open.",
+
+  "inventoryIcon" : "avikanblastdoorlocked.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanblastdoorlocked.png:default",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom", "top" ],
+      "collision" : "solid"
+	}
+  ],
+  
+  "animation" : "/objects/noisy/noisy.animation",
+
+  "scripts" : [
+    "/objects/noisy/noisy.lua"
+  ],
+  
+  "sounds" : [ "/sfx/interface/ship_error1.ogg" ]
+}

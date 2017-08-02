@@ -1,0 +1,20 @@
+{
+  "id" : "avikanhistory6",
+  "species" : "avikan",
+  "title" : "Avikan History - Part 6",
+  "description" : "An account of Avikan history, by Izyati as-Kaladan.",
+  "icon" : "avikanhistory6.png",
+  "contentPages" : [
+
+    "In 1 BF, the Theleans came at us with a force so large we could hardly believe it was real. The skies of Kadavan went black as Thelean ships blocked out the sun. We then learned that the previous eight invasions had been nothing more than small raids to the Theleans - they hardly even cared about their meagre losses thus far.",
+
+    "We knew that this was a war we could never win, and thus the Elders decided to flee Kadavan altogether. All of our spaceships were called back and an enormous fleet of ships was assembled - the Nomada. We fit as many Avikan on board as we could, and fled the system using the jumpgates we learned to build from the Old Ones.",
+    
+    "The ones we left behind were largely volunteers who wanted to ensure that the Theleans would not get what they wanted. We loaded as many of the Old Ones' relics and artefacts on board our ships before we fled, and sealed the vaults of the Old Ones so the Theleans could never get to them."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

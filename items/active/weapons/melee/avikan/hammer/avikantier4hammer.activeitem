@@ -1,0 +1,42 @@
+{
+  "itemName" : "avikantier4hammer",
+  "price" : 900,
+  "level" : 4,
+  "maxStack" : 1,
+  "rarity" : "uncommon",
+  "description" : "A giant hammer made of high-quality monster bone.",
+  "shortdescription" : "Predator's Hammer",
+  "tooltipKind" : "sword",
+  "category" : "hammer",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","hammer"],
+
+  "inventoryIcon" : "avikantier4hammer.png",
+
+  "animation" : "/items/active/weapons/melee/hammer/hammer.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "avikantier4hammer.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_hammer.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "hammersmash",
+  "primaryAbility" : {
+    "fireTime" : 1.2,
+    "baseDps" : 11.5
+  },
+
+  "palette" : "/items/active/weapons/colors/tier1melee.weaponcolors",
+
+  "altAbilityType" : "physicalshockwave",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

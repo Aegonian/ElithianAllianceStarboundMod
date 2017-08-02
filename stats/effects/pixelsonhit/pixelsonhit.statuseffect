@@ -1,0 +1,8 @@
+{
+  "name" : "pixelsonhit",
+  "defaultDuration" : 1,
+
+  "scripts" : [
+    "pixelsonhit.lua"
+  ]
+}

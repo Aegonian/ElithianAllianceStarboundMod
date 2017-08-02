@@ -1,0 +1,28 @@
+{
+  "materialId" : 30092,
+  "materialName" : "allianceslopedpanel",
+  "particleColor" : [157, 157, 157, 255],
+  "itemDrop" : "allianceslopedpanel",
+  "shortdescription" : "Alliance Sloped Panel",
+
+  "description" : "A sloped metal panel, perfect for buildings walls with.",
+  "glitchDescription" : "Observation. A metal wall panel.",
+  "floranDescription" : "Metal panel ssshines.",
+  "novakidDescription" : "Those are metal wall panels alright.",
+  
+  "drodenDescription" : "Analysis complete. Durable metal wall panels.",
+  
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "allianceslopedpanel.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 5000
+  }
+}

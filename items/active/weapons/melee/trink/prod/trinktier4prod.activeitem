@@ -1,0 +1,95 @@
+{
+  "itemName" : "trinktier4prod",
+  "price" : 600,
+  "level" : 4,
+  "maxStack" : 1,
+  "rarity" : "uncommon",
+  "description" : "An electric prod built to keep assailants at bay.",
+  "shortdescription" : "Circuit Prod Mk IV",
+  "tooltipKind" : "sword",
+  "category" : "Electric Prod",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","melee","prod","trink"],
+
+  "inventoryIcon" : "trinktier4prod.png",
+
+  "animation" : "/items/active/weapons/melee/animations/prod.animation",
+  "animationParts" : {
+    "blade" : "trinktier4prod.png",
+	"lights" : "trinktier4prodlights.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_dagger_electric2.ogg" ],
+	  "holdLoop" : [ "/sfx/objects/teslaspike.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "electric",
+
+  "aimOffset" : -1.0,
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/melee/abilities/prod/thea-prodstab.lua"],
+	"class" : "TheaProdStab",
+	
+    "fireTime" : 0.8,
+    "baseDps" : 5.5,
+    "damageConfig" : {
+      "damageSourceKind" : "electricspear",
+      "statusEffects" : [ "electrified" ],
+      "knockbackMode" : "aim",
+      "knockback" : 30,
+      "timeoutGroup" : "primary"
+    },
+    "holdDamageMultiplier" : 0.2,
+    "holdDamageConfig" : {
+	  "damageSourceKind" : "electricspear",
+      "statusEffects" : [ "electrified" ],
+      "knockbackMode" : "aim",
+      "knockback" : 15,
+      "timeoutGroup" : "hold",
+      "timeout" : 0.5
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : -90,
+        "weaponRotation" : 0,
+        "weaponOffset" : [0, 2.0],
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "windup" : {
+        "duration" : 0.1,
+        "armRotation" : -110,
+        "weaponRotation" : 20,
+        "weaponOffset" : [0, 2.0],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire" : {
+        "duration" : 0.3,
+        "armRotation" : -20,
+        "weaponRotation" : -70,
+        "weaponOffset" : [0, 2.5],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "hold" : {
+        "armRotation" : -30,
+        "weaponRotation" : -60,
+        "weaponOffset" : [0, 2.2],
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

@@ -1,0 +1,125 @@
+{
+	//TRINK SETTLEMENTS
+  "trinkcolonycrate" : [
+    [1, {
+      "poolRounds" : [
+        [0.6, 1],
+        [0.2, 2],
+        [0.1, 3],
+        [0.1, 4]
+      ],
+	  "pool" : [
+        {"weight" : 0.55, "item" : "trinkmetal" },
+		{"weight" : 0.01, "item" : "trink-wrench" },
+		{"weight" : 0.005, "item" : "trink-soniccannon" },
+		{"weight" : 0.005, "item" : "trink-weldingtorch" },
+		{"weight" : 0.005, "item" : "trink-mininglaser" },
+		{"weight" : 0.375, "pool" : "basicTreasure"},
+		{"weight" : 0.05, "item" : "trinkcache" }
+      ]
+    } ]
+  ],
+
+  "trinkcolonycratelarge" : [
+    [1, {
+      "poolRounds" : [
+        [0.3, 1],
+        [0.4, 2],
+        [0.2, 3],
+        [0.1, 4]
+      ],
+      "pool" : [
+        {"weight" : 0.5, "item" : ["trinkmetal", 2] },
+		{"weight" : 0.01, "item" : "trink-wrench" },
+		{"weight" : 0.005, "item" : "trink-soniccannon" },
+		{"weight" : 0.005, "item" : "trink-weldingtorch" },
+		{"weight" : 0.005, "item" : "trink-mininglaser" },
+		{"weight" : 0.375, "pool" : "basicTreasure"},
+		{"weight" : 0.10, "item" : "trinkcache" }
+      ]
+    } ]
+  ],
+
+	//GENERIC POOLS
+  "trinkweapons" : [
+    [0, {
+	  "pool" : [
+        {"weight" : 0.2, "item" : "trinktier1pistol" },
+		{"weight" : 0.2, "item" : "trinktier1rifle" },
+		{"weight" : 0.2, "item" : "trinktier1shotgun" },
+		{"weight" : 0.2, "item" : "trinktier1prod" },
+		{"weight" : 0.2, "item" : "trinktier1longprod" }
+      ]
+    } ],
+	[1, {
+	  "pool" : [
+        {"weight" : 0.2, "item" : "trinktier2pistol" },
+		{"weight" : 0.2, "item" : "trinktier2rifle" },
+		{"weight" : 0.2, "item" : "trinktier2shotgun" },
+		{"weight" : 0.2, "item" : "trinktier2prod" },
+		{"weight" : 0.2, "item" : "trinktier2longprod" }
+      ]
+    } ],
+	[2, {
+	  "pool" : [
+        {"weight" : 0.2, "item" : "trinktier3pistol" },
+		{"weight" : 0.2, "item" : "trinktier3rifle" },
+		{"weight" : 0.2, "item" : "trinktier3shotgun" },
+		{"weight" : 0.2, "item" : "trinktier3prod" },
+		{"weight" : 0.2, "item" : "trinktier3longprod" }
+      ]
+    } ],
+	[3, {
+	  "pool" : [
+        {"weight" : 0.2, "item" : "trinktier4pistol" },
+		{"weight" : 0.2, "item" : "trinktier4rifle" },
+		{"weight" : 0.2, "item" : "trinktier4shotgun" },
+		{"weight" : 0.2, "item" : "trinktier4prod" },
+		{"weight" : 0.2, "item" : "trinktier4longprod" }
+      ]
+    } ],
+	[4, {
+	  "pool" : [
+        {"weight" : 0.2, "item" : "trinktier5pistol" },
+		{"weight" : 0.2, "item" : "trinktier5rifle" },
+		{"weight" : 0.2, "item" : "trinktier5shotgun" },
+		{"weight" : 0.2, "item" : "trinktier5prod" },
+		{"weight" : 0.2, "item" : "trinktier5longprod" }
+      ]
+    } ],
+	[5, {
+	  "pool" : [
+        {"weight" : 0.2, "item" : "trinktier6pistol" },
+		{"weight" : 0.2, "item" : "trinktier6rifle" },
+		{"weight" : 0.2, "item" : "trinktier6shotgun" },
+		{"weight" : 0.2, "item" : "trinktier6prod" },
+		{"weight" : 0.2, "item" : "trinktier6longprod" }
+      ]
+    } ]
+  ],
+  
+  "trinkgeneratedweapons" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.30, "item" : "trink-wrench" },
+        {"weight" : 0.30, "item" : "trink-soniccannon" },
+        {"weight" : 0.30, "item" : "trink-weldingtorch" },
+        {"weight" : 0.10, "item" : "trink-mininglaser" }
+      ]
+    } ]
+  ],
+  
+  "trinkcraftingmaterialsstockpile" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.20, "item" : ["trinkmetal", 25] },
+		{"weight" : 0.20, "item" : ["trinkglassitem", 15] },
+		{"weight" : 0.20, "item" : ["trinkwiring", 25] },
+		{"weight" : 0.20, "item" : ["trinklaserdiode", 10] },
+		{"weight" : 0.20, "item" : ["trinkelectronics", 10] }
+      ]
+    } ]
+  ]
+  
+}
+

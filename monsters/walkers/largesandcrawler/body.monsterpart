@@ -1,0 +1,9 @@
+{
+  "name" : "largesandcrawler",
+  "category" : "largesandcrawler",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "largesandcrawler.png"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "kind" : "thea-bloodhit",
+  "definition" : {
+	"type" : "ember",
+	"size" : 1.3,
+	"color" : [210, 0, 0, 255],
+	"fade" : 0.9,
+	"initialVelocity" : [9, 8.0],
+	"finalVelocity" : [0, -10.0],
+	"approach" : [20, 30],
+	"timeToLive" : 0.9,
+	"layer" : "middle",
+	"variance" : {
+	  "initialVelocity" : [-9, 3],
+	  "timeToLive" : 1,
+	  "size" : 1.3
+	}
+  }
+}

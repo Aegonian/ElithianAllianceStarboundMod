@@ -1,0 +1,153 @@
+{
+  "itemName" : "avikan-missilepod",
+  "price" : 425,
+  "inventoryIcon" : "avikan-missilepod.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A shoulder-mounted missile pod for sustained heavy fire.",
+  "shortdescription" : "Vanguard Missile Pod",
+  "level" : 6,
+  "tooltipKind" : "gun",
+  "category" : "Missile Pod",
+  "itemTags" : ["weapon","ranged","rocketlauncher","avikan"],
+  "twoHanded" : true,
+  
+  "cursor" : "/cursors/thea-squarereticle.cursor",
+  
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "avikan-missilepod.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/thea-invisiblemuzzle.png"
+  },
+  "animationCustom" : {
+    "particleEmitters" : {
+      "muzzleFlash" : {
+        "particles" : [
+          { "particle" : "rocketbarrelpuff", "offset" : [0.0, 0.0] },
+		  { "particle" : "missilepodsmoke", "offset" : [0.1, -0.5] }
+        ]
+      }
+    },
+	"sounds" : {
+      "fire" : [ "/sfx/gun/rocket3.ogg" ]
+    }
+  },
+
+  "baseOffset" : [-0.25, 0.6],
+  "muzzleOffset" : [1.6, 0.5],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/multibarrelshot/multibarrelshot.lua"],
+    "class" : "MultiBarrelShot",
+
+    "fireTime" : 0.32,
+    "baseDps" : 11.5,
+    "energyUsage" : 40,
+    "inaccuracy" : 0.01,
+	
+	"primaryFiringOffset" : [1.6, 0.8],
+	"secondaryFiringOffset" : [1.6, 0.3],
+
+    "projectileCount" : 1,
+    "burstTime" : 0.14,
+    "burstCount" : 2,
+    "fireType" : "burst",
+
+    "projectileType" : "avikanclusterrocket2",
+    "projectileParameters" : {
+	  "speed" : 20
+	},
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.15,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+  
+  "altAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/multibarrelshot/multibarrelshot.lua"],
+    "class" : "MultiBarrelShot",
+	"name" : "Rocket Barrage",
+
+    "fireTime" : 0.7,
+    "baseDps" : 3.5,
+    "energyUsage" : 20,
+    "inaccuracy" : 0.04,
+	
+	"primaryFiringOffset" : [1.6, 0.8],
+	"secondaryFiringOffset" : [1.6, 0.3],
+
+    "projectileCount" : 1,
+    "burstTime" : 0.1,
+    "burstCount" : 10,
+    "fireType" : "burst",
+
+    "projectileType" : "avikanclusterrocket2",
+    "projectileParameters" : {
+	  "speed" : 20
+	},
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.15,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

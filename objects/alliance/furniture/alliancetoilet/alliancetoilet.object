@@ -1,0 +1,61 @@
+{
+  "objectName" : "alliancetoilet",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "printable" : false,
+  "description" : "A simple toilet.",
+  "shortdescription" : "Alliance Toilet",
+  "race" : "aegi",
+  "category" : "furniture",
+  "price" : 75,
+
+  "apexDescription" : "This toilet uses special cleaning tech for perfect hygiene.",
+  "avianDescription" : "A place for droppings.",
+  "floranDescription" : "Shiny place for sssmelly business.",
+  "glitchDescription" : "Surprised. Oddly enough, this open toilet does not smell at all.",
+  "humanDescription" : "This toilet is amazing! So much better than the ones at home...",
+  "hylotlDescription" : "A luxurious toilet.",
+  "novakidDescription" : "An odd mix between simplicity and luxury.",
+
+  "aegiDescription" : "This toilet neutralizes the air inside for a pleasantly unremarkable scent.",
+  "avikanDescription" : "What is this thing?",
+  "erixianDescription" : "The Aegi make oddly comfortable toilets.",
+  "trinkDescription" : "I don't need toilets.",
+  "hymidDescription" : "This toilet doesn't smell bad, despite the fact that it is always open.",
+  "notixDescription" : "A toilet. It smells quite nice, oddly enough.",
+  "jorgasianDescription" : "A toilet. It looks oddly clean.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Alien chair detected. Analyzing piping functionality...",
+
+  "inventoryIcon" : "alliancetoileticon.png",
+  "orientations" : [
+    {
+      "image" : "alliancetoilet.png:<color>",
+      "imagePosition" : [-8, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "sitPosition" : [3, 24],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "alliancetoilet.png:<color>",
+      "imagePosition" : [-8, 0],
+      "direction" : "right",
+
+      "sitPosition" : [7, 24],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "sounds" : [ "/sfx/objects/toilet_flush.ogg" ],
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false
+
+}

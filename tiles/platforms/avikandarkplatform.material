@@ -1,0 +1,29 @@
+{
+  "materialId" : 30101,
+  "materialName" : "avikandarkplatform",
+  "collisionKind" : "platform",
+  "transparent" : true,
+  "itemDrop" : "avikandarkplatform",  
+  "shortdescription" : "Dark Avikan Platform",  
+  "description" : "A dark metal platform.",
+  
+  "glitchDescription" : "Statement. A dark-coloured metal platform.",
+  "floranDescription" : "Metal platform iss dark.",
+  "novakidDescription" : "A dark-lookin' platform.",
+  
+  "drodenDescription" : "Analysis complete. A dark metal platform.",
+  
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "category" : "Supports",
+  
+  "renderTemplate" : "/tiles/platformtemplate.config",
+  "renderParameters" : {
+    "texture" : "avikandarkplatform.png",
+    "variants" : 3,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 0,
+    "platform" : true
+  }
+}

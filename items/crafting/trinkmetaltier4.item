@@ -1,0 +1,10 @@
+{
+  "itemName" : "trinkmetaltier4",
+  "price" : 200,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "trinkmetaltier4.png",
+  "description" : "A solid metal cube, easily stored and ready for crafting.",
+  "shortdescription" : "Solid Trinkian Metal",
+  "itemTags" : [ "reagent" ]
+}

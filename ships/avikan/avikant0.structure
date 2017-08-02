@@ -1,0 +1,23 @@
+{
+  "config" : {
+    "shipUpgrades" : {
+      "capabilities" : [],
+      "crewSize" : 2
+    }
+  },
+
+  "backgroundOverlays" : [
+    {
+      "image" : "avikanT1.png",
+      "position" : [20, 20],
+      "fullbright" : true
+    },
+    {
+      "image" : "avikanT1lit.png",
+      "position" : [20, 20]
+    }
+  ],
+
+  "blockKey" : "blockKey.config:blockKey",
+  "blockImage" : "avikanT0blocks.png"
+}

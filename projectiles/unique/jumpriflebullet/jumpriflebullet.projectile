@@ -1,0 +1,62 @@
+{
+  "projectileName" : "jumpriflebullet",
+  "physics" : "jumpriflebullet",
+  "bounces" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "jumpriflebullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "emitters" : [ "jumprifletrail" ],
+  "power" : 4,
+  "speed" : 75,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+	  "file" : "/projectiles/explosions/sundrainerexplosion/smallsundrainerexplosion.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "jumprifleflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.03,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "jumprifleflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.03,
+      "angleAdjust" : 72
+    },
+	{
+      "action" : "projectile",
+      "type" : "jumprifleflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.03,
+      "angleAdjust" : 148
+    },
+	{
+      "action" : "projectile",
+      "type" : "jumprifleflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.03,
+      "angleAdjust" : 216
+    },
+	{
+      "action" : "projectile",
+      "type" : "jumprifleflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.03,
+      "angleAdjust" : 288
+    }
+  ],
+  "lightColor" : [100, 65, 0],
+  "fullbright" : true,
+  "damageType" : "NoDamage",
+  "damageKind" : "jumpweapon",
+  "statusEffects" : [
+    "jumprifleburn"
+  ],
+  "hydrophobic" : true
+}

@@ -1,0 +1,9 @@
+{
+  "name" : "sandcoloured",
+  "category" : "sandcrawler",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "sandcoloured.png"
+  }
+}

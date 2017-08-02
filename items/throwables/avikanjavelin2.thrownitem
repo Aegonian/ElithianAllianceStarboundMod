@@ -1,0 +1,32 @@
+{
+  "itemName" : "avikanjavelin2",
+  "price" : 5,
+  "rarity" : "Common",
+  "category" : "throwableItem",
+  "inventoryIcon" : "avikanjavelin2icon.png",
+  "image" : "avikanjavelin2.png",
+  "shortdescription" : "Hunter's Javelin",
+  "description" : "A very sharp javelin made of monster claws. It harvests special hunting materials.",
+
+  "ammoUsage" : 1,
+
+  "edgeTrigger" : true,
+  "windupTime" : 0.0,
+  "cooldown" : 0.8,
+
+  "projectileType" : "avikanjavelin2",
+  "projectileConfig" : {
+    "speed" : 65,
+    "power" : 35,
+    "knockback" : 20,
+    "periodicActions" : [
+      {
+        "time" : 0,
+        "repeat" : false,
+        "action" : "sound",
+        "options" : [ "/sfx/projectiles/throw_item.ogg" ]
+      }
+    ]
+  }
+}
+

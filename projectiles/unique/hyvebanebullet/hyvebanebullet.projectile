@@ -1,0 +1,46 @@
+{
+  "projectileName" : "hyvebanebullet",
+  "image" : "hyvebanebullet.png",
+  "physics" : "lineriflebullet",
+  "bounces" : 0,
+  "piercing" : true,
+  "animationCycle" : 0.8,
+  "frameNumber" : 8,
+  "emitters" : [ "linerifleswoosh" ],
+  "damageKindImage" : "icon.png",
+  "lightColor" : [200, 120, 0],
+  "fullbright" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+	  "file" : "/projectiles/explosions/primeinitiativeexplosion/primeinitiativeexplosion.config"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "animated",
+        "animation" : "/projectiles/unique/hyvebanebullet/trail.animation",
+        "position" : [-1.75, 0],
+        "layer" : "back",
+		"collidesForeground" : false,
+        "timeToLive" : 1.0,
+        "destructionTime" : 0.1,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  "statusEffects" : [
+    "linerifleburn"
+  ],
+  "power" : 5.0,
+  "speed" : 180,
+  "damageKind" : "linerifle",
+  
+  "scripts" : [ "/projectiles/scripts/thea-linerifle.lua" ]
+}

@@ -1,0 +1,33 @@
+{
+  "itemName" : "alliancecache",
+  "level" : 1,
+  "price" : 250,
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "A sealed cache containing something of value. Hold to open!",
+  "shortdescription" : "Sealed Alliance Cache",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "alliancecacheicon.png",
+  "animation" : "alliancecache.animation",
+  "animationParts" : {
+    "treasurebox" : "alliancecache.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "open" : [ "/sfx/objects/colonydeed_partyhorn.ogg" ],
+	  "openLoop" : [ "/sfx/other/thea_sealedcache_opening2.ogg" ]
+    }
+  },
+  
+  "scripts" : ["/items/active/other/thea-sealedcache/thea-sealedcache.lua"],
+
+  "fireOffset" : [1.0, 0.0],
+
+  "treasure" : {
+    "pool" : "celebratorycache"
+  },
+  
+  //Makes the treasure's level depend on the threatLevel of the world the item is first used on
+  "useWorldLevel" : true
+}

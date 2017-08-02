@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "sand2", "count" : 5 },
+	{ "item" : "coalore", "count" : 2 },
+	{ "item" : "trinkwiring", "count" : 1 }
+  ],
+  "output" : {
+	"item" : "trinkelectronics",
+	"count" : 1
+  },
+  "groups" : [ "trinkcrafting", "ingredients", "all" ],
+  "duration" : 0.15
+}

@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "avikanmetaltier6", "count" : 30 },
+    { "item" : "salvagebooster", "count" : 40 },
+    { "item" : "salvagetier6", "count" : 20 }
+  ],
+  "duration" : 5,
+  "output" : { "item" : "mechboosteravikan", "count" : 1 },
+  "groups" : [ "craftingmech", "mechbooster" ]
+}

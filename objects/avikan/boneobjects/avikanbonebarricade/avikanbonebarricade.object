@@ -1,0 +1,46 @@
+{
+  "objectName" : "avikanbonebarricade",
+  "colonyTags" : ["avikan","combat"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 40,
+  "description" : "A barricade made of sharpened bones.",
+  "shortdescription" : "Avikan Barricade",
+  "race" : "avikan",
+
+  "apexDescription" : "A primitive but effective barricade.",
+  "avianDescription" : "A barricade made of sharpened bones.",
+  "floranDescription" : "Floran isss careful around sstabby bonesss.",
+  "glitchDescription" : "Observation. A simple barricade made of sharpened bones.",
+  "humanDescription" : "This barricade may be primitive, but it is still quite effective.",
+  "hylotlDescription" : "A deadly barricade built from the bones of the dead.",
+  "novakidDescription" : "T'is a simple barricade.",
+
+  "aegiDescription" : "A simple barricade made of sharpened bones.",
+  "avikanDescription" : "This should keep out intruders.",
+  "erixianDescription" : "A simple but effective bone barricade.",
+  "trinkDescription" : "Sharpened bones made into a simple barricade.",
+  "hymidDescription" : "These bones are unusually sharp. Better be careful.",
+  "notixDescription" : "Someone could easily get hurt trying to get past this barricade.",
+  "jorgasianDescription" : "Sharp-looking bones arranged into a simple barricade.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected barricade. Recommended action: go around.",
+
+  "inventoryIcon" : "avikanbonebarricadeicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanbonebarricade.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

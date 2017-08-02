@@ -1,0 +1,15 @@
+{
+  "itemName" : "avikanfence",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "avikanfence.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "shortdescription" : "Avikan Fence",
+  
+  "description" : "A sturdy metal fence.",
+  "glitchDescription" : "Statement. A sturdy fence.",
+  "floranDescription" : "Sssturdy fence.",
+
+  "materialId" : 30055
+}

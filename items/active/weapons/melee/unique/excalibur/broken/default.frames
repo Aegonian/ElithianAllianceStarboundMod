@@ -1,0 +1,10 @@
+{
+  "frameGrid" : {
+    "size" : [17, 38],
+    "dimensions" : [4, 1],
+
+    "names" : [
+      [ "frontidle", "backidle", "frontdefend", "backdefend" ]
+    ]
+  }
+}

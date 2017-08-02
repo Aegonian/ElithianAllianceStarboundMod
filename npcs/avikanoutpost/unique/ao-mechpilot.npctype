@@ -1,0 +1,52 @@
+{
+  "type" : "ao-mechpilot",
+  "baseType" : "ao-civilian",
+
+  "npcname" : "Rehkon",
+
+  "scriptConfig" : {
+    	
+	"offeredQuests" : [ "avikanmechparts", "avikanmechparts2" ],
+	"turnInQuests" : [ "avikanmechparts" ],
+  
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "Nothing's more exiciting than piloting a custom-built mech."
+		  ]
+		},
+
+        "avikan" : {
+          "default" : [
+            "Nothing's more exiciting than piloting a custom-built mech."
+          ],
+          "avikan" : [
+            "Have you built your own mech yet, Captain?"
+          ],
+          "droden" : [
+            "A Droden piloting a mech... It must be like a larger body to you."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "avikan-mechpilothead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "avikan-tier6achest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "avikan-roguelegs2", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

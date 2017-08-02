@@ -1,0 +1,17 @@
+{
+  "projectileName" : "jumprifleburnburst",
+  "image" : "jumprifleburnburst.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 6,
+  "speed" : 0,
+  "lightColor" : [188, 188, 64],
+  "pointLight" : true,
+  "damagePoly" : [ [-28, 0], [-18, -18], [0, -28], [18, -18], [28, 0], [18, 18], [0, 28], [-18, 18] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "universalDamage" : false,
+  "damageKind" : "jumpweapon",
+  "knockback" : 5
+}

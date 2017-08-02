@@ -1,0 +1,20 @@
+{
+  "id" : "avikanrhadeis6",
+  "species" : "avikan",
+  "title" : "Rhadeis - Part 6",
+  "description" : "Notes on Rhadeis, by Izyati as-Kaladan.",
+  "icon" : "avikanrhadeis6.png",
+  "contentPages" : [
+
+    "Although all the discoveries about Rhadeis made him look less like a god to many, for he is, or perhaps was, a mortal Ce'Tennan, his actions have made him more than a god to many more. He did not create us, but he did guide us, and without him, we would not be alive today.",
+
+    "Whether or not he still guides us today is much debated. Some believe that Rhadeis might be dead, or that he simply vanished to some unknown place along with the rest of his people, but others believe that he still influences our lives today.",
+    
+    "Every day, there are new reports of miracular events, and of visions of Rhadeis offering support in people's dreams. The technology of the Old Ones makes communication over any distance possible, and their artefacts sometimes have strange effects on people's minds, so perhaps Rhadeis is, in fact, communicating with us through space, or perhaps, through time."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

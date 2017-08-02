@@ -1,0 +1,234 @@
+{
+  "globalTagDefaults" : {
+    "paletteSwaps" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "firing" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "fire" : {
+            "frames" : 4,
+            "cycle" : 0.15,
+            "mode" : "transition",
+            "transition" : "off"
+          }
+        }
+      },
+	  "charge" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+		  "charging" : {
+            "frames" : 7,
+            "cycle" : 0.7
+          }
+        }
+      },
+	  "chargehold" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+		  "on" : {
+            "frames" : 3,
+            "cycle" : 0.3,
+            "mode" : "loop"
+          }
+        }
+      },
+	  "overlay" : {
+        "default" : "visible",
+        "states" : {
+          "visible" : {},
+		  "invisible" : {}
+        }
+      }
+    },
+
+    "parts" : {
+      "gun" : {
+        "properties" : {
+          "centered" : true,
+          "image" : "<partImage><paletteSwaps>",
+          "offset" : [0.0, 0.0],
+          "transformationGroups" : ["weapon"]
+        }
+      },
+      "muzzleFlash" : {
+        "properties" : {
+          "zLevel" : -1,
+          "centered" : true,
+          "offset" : [0.125, 0],
+          "fullbright" : true,
+          "transformationGroups" : ["muzzle"]
+        },
+        "partStates" : {
+          "firing" : {
+            "off" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:<variant>.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "charge" : {
+        "properties" : {
+          "zLevel" : 2,
+          "centered" : true,
+          "offset" : [0, 0],
+          "fullbright" : false,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "charge" : {
+            "off" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "charging" : {
+              "properties" : {
+                "image" : "<partImage>:<frame>"
+              }
+            }
+          }
+        }
+      },
+      "chargeLights" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "offset" : [0, 0],
+          "fullbright" : true,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "charge" : {
+            "off" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "charging" : {
+              "properties" : {
+                "image" : "<partImage>:<frame>"
+              }
+            }
+          }
+        }
+      },
+	  "chargehold" : {
+        "properties" : {
+          "zLevel" : 2,
+          "centered" : true,
+          "offset" : [0, 0],
+          "fullbright" : false,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "chargehold" : {
+            "off" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "on" : {
+              "properties" : {
+                "image" : "<partImage>:<frame>"
+              }
+            }
+          }
+        }
+      },
+	  "chargeholdLights" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "offset" : [0, 0],
+          "fullbright" : true,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "chargehold" : {
+            "off" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "on" : {
+              "properties" : {
+                "image" : "<partImage>:<frame>"
+              }
+            }
+          }
+        }
+      },
+	  "overlay" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "offset" : [0, 0],
+          "fullbright" : false,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "overlay" : {
+            "visible" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            },
+            "invisible" : {
+              "properties" : {
+                "image" : ""
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "rotationGroups" : {
+    "weapon" : {
+      "angularVelocity" : 0
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "muzzle" : {}
+  },
+
+  "particleEmitters" : {
+    "muzzleFlash" : {
+      "emissionRate" : 10.0,
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [0, 0, 0, 0],
+      "particles" : [ ]
+    }
+  },
+
+  "lights" : {
+    "muzzleFlash" : {
+      "active" : false,
+      "position" : [0, 0],
+      "color" : [25, 0, 100]
+    }
+  },
+
+  "sounds" : {
+    "fire" : [ ],
+	"chargeLoop" : [ ],
+	"holdLoop" : [ ],
+	"discharge" : [ ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "projectileName" : "avikanairstrikerocket",
+  "image" : "avikanairstrikerocket.png",
+  "animationCycle" : 4.0,
+  "frameNumber" : 20,
+  "timeToLive" : 3.99,
+  "damageKindImage" : "icon.png",
+  "lightColor" : [255, 255, 128],
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/avikanairstrikeexplosion/avikanairstrikeexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  //"emitters" : [ "rocketsmoke" ],
+  "flippable" : true,
+  "power" : 10.0,
+  "speed" : 15.0,
+  "physics" : "thea-airstrikerocket",
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

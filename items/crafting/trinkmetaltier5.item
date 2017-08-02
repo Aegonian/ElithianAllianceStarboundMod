@@ -1,0 +1,10 @@
+{
+  "itemName" : "trinkmetaltier5",
+  "price" : 350,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "trinkmetaltier5.png",
+  "description" : "A reinforced metal cube, easily stored and ready for crafting.",
+  "shortdescription" : "Superb Trinkian Metal",
+  "itemTags" : [ "reagent" ]
+}

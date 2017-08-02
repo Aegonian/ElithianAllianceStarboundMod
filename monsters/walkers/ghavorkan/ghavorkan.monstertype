@@ -1,0 +1,227 @@
+{
+  "type" : "ghavorkan",
+  "shortdescription" : "Ghavorkan",
+  "description" : "A twisted creature created by the Theleans.",
+
+  "categories" : [ "ghavorkan" ],
+  "reversed" : true,
+  "parts" : [ "body", "lights" ],
+
+  "animation" : "ghavorkan.animation",
+
+  "dropPools" : [ { "default" : "ghavorkanTreasure", "bow" : "ghavorkanHunting", "avikanhunting" : "ghavorkanHunting", "keffridersspear" : "ghavorkanHunting" } ],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+
+    "behavior" : "monster",
+
+    "behaviorConfig" : {
+      "damageOnTouch" : true,
+
+      "queryTargets" : true,
+      "targetQueryRange" : 25,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : true,
+      "keepTargetInRange" : 45,
+      "targetOutOfSightTime" : 2.5,
+
+      "foundTargetActions" : [
+		{
+          "name" : "action-animate",
+          "parameters" : {
+            "stateType" : "body",
+            "state" : "roar",
+            "animationTime" : 0.5
+          }
+        }
+	  ],
+
+      "fleeActions" : [],
+
+      "hostileActions" : [
+	    {
+          "name" : "action-leap",
+          "cooldown" : 1.5,
+          "parameters" : {
+            "minimumRange" : 1,
+            "maximumRange" : 25,
+            "windupTime" : 0.25,
+            "windupState" : "windup",
+
+            "leapVelocity" : 55,
+            "collisionCheck" : true,
+            "highArc" : false,
+            "leapState" : "leap",
+            "fallState" : "fall",
+
+            "winddownTime" : 0.25,
+            "winddownState" : "idle"
+          }
+        },
+		{
+          "name" : "action-animate",
+          "cooldown" : 8,
+          "parameters" : {
+            "stateType" : "body",
+            "state" : "roar",
+            "animationTime" : 0.55
+          }
+        }
+	  ],
+
+      "periodicActions" : [],
+
+      "approachActions" : [
+	    {
+          "name" : "approach-walk",
+          "parameters" : {
+            "canJump" : true,
+            "maxJumps" : 8,
+            "jumpXVelocity" : 20,
+            "jumpYVelocity" : 30,
+            "jumpXControlForce" : 50,
+            "minXRange" : 10,
+            "run" : false
+          }
+        }
+      ],
+
+      "followActions" : [
+        {
+          "name" : "approach-teleport",
+          "parameters" : {
+          }
+        },
+        {
+          "name" : "approach-walk",
+          "parameters" : {
+            "canJump" : true,
+            "maxJumps" : 8,
+            "jumpXVelocity" : 20,
+            "jumpYVelocity" : 30,
+            "jumpXControlForce" : 50,
+            "minXRange" : 10
+          }
+        }
+      ],
+
+      "wanderActions" : [
+	    {
+          "name" : "wander-walk",
+          "cooldown" : 1.0,
+          "parameters" : {
+            "moveState" : "walk",
+            "wanderTime" : [1, 2]
+          }
+        }
+      ]
+    },
+    
+    "damageParts" : {
+      "body" : {
+        "damage" : 8,
+
+        "teamType" : "enemy",
+        "damageSourceKind" : "slash",
+        "knockback" : 35,
+        "statusEffects" : [ ]
+      }
+    },
+
+    "touchDamage" : {
+      "poly" : [ [1.75, 1.0], [2.5, 0.5], [2.5, -0.5], [1.75, -1.25], [-1.75, -1.25], [-2.5, -0.5], [-2.5, 0.5], [-1.75, 1.0] ],
+      "damage" : 8,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "slash",
+      "knockback" : 35,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-4, -4, 4, 4],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [1.75, 1.0], [2.5, 0.5], [2.5, -0.5], [1.75, -1.25], [-1.75, -1.25], [-2.5, -0.5], [-2.5, 0.5], [-1.75, 1.0] ],
+
+      "mass" : 1.5,
+      "walkSpeed" : 13,
+      "runSpeed" : 13,
+
+      "airFriction" : 0,
+
+      "airJumpProfile" : {
+        "jumpSpeed" : 35.0,
+        "jumpInitialPercentage" : 1.0,
+        "jumpHoldTime" : 0.0
+      }
+    },
+
+    "bodyMaterialKind" : "organic",
+
+    "knockoutTime" : 0.3,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "organic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.25
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 9
+        },
+        "maxHealth" : {
+          "baseValue" : 50
+        },
+        "protection" : {
+          "baseValue" : 0.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -8],
+    "capturable" : true,
+    "captureHealthFraction" : 0.5,
+    "nametagColor" : [64, 200, 255],
+    "captureCollectables" : { "monsters" : "ghavorkan" }
+  }
+}

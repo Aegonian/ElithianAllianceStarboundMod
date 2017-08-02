@@ -1,0 +1,66 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "alarmState" : {
+        "default" : "off",
+        "states" : {
+          "off" : {
+            "frames" : 1
+          },
+          "on" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "loop"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "background" : {
+        "properties" : {
+          "centered" : false,
+		  "fullbright" : true
+        },
+        "partStates" : {
+          "alarmState" : {
+            "off" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.off"
+              }
+            },
+            "on" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.<frame>"
+              }
+            }
+          }
+        }
+      },
+	  "foreground" : {
+        "properties" : {
+          "centered" : false,
+		  "zLevel" : 1
+        },
+        "partStates" : {
+          "alarmState" : {
+            "off" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.off"
+              }
+            },
+            "on" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "sounds" : {
+    "alarm" : ["/sfx/objects/avikanalarm2.ogg"]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "itemName" : "theleanmetal",
+  "price" : 200,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "theleanmetal.png",
+  "description" : "A strange, self-regenerating metal fragment.",
+  "shortdescription" : "Thelean Metal Fragment",
+  "itemTags" : [ "reagent" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 5
+}

@@ -1,0 +1,14 @@
+{
+  "projectileName" : "xanafianexplosionmediumspawner",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "physics" : "thea-noclipprojectile",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/xanafianexplosionmedium/xanafianexplosionmedium.config"
+    }
+  ],
+  "damageKind" : "xanafian",
+  "damageType" : "NoDamage",
+  "timeToLive" : 0
+}

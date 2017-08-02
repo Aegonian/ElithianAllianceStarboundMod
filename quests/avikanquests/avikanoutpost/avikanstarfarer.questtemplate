@@ -1,0 +1,36 @@
+{
+  "id" : "avikanstarfarer",
+  "prerequisites" : [],
+  "title" : "^green;A Starfarer's Request",
+  "text" : "Would you help out a fellow Starfarer, friend? I'm in need of a ^orange;Sandspitter's Sack ^white;and a ^orange;Sandcrawler's Tooth ^white;for a little experiment of mine, but I am stuck here while my ship is being repaired... If you could ^green;hunt down a Sandspitter and a Sandcrawler on a desert planet^white;, I would be most grateful!",
+  "completionText" : "Thank you, my fellow Starfarer! This is exactly what I was looking for. Take this helmet and these tokens - you have earned them!",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "avikan-starfarerhead", 1 ], [ "avikancache", 1 ], [ "avikanmerittoken", 20 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "questGiver",
+      "questComplete" : "questReceiver"
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "sandspittersack",
+        "count" : 1,
+        "consume" : true
+      },
+	  {
+        "type" : "gatherItem",
+        "itemName" : "sandcrawlertooth",
+        "count" : 1,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Return to ^orange;Nenehki ^reset;in the ^orange;Starfarer's Refuge^reset;"
+  }
+}

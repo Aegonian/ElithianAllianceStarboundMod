@@ -1,0 +1,16 @@
+{
+  "id" : "drodenlegion",
+  "species" : "avikan",
+  "title" : "Blades of the Legion",
+  "description" : "Notes on the legendary Legion switchblades.",
+  "icon" : "avikanuniqueweapon.png",
+  "contentPages" : [
+
+"Before and during the Droden War, the Legion was a great military force consisting solely of Droden warframes. The Legion's signature weapon was the Legion Blade: a switchblade that could be transformed into an energy rifle even in the heat of combat. The idea behind the switchblades was simple: to reduce resource costs for the construction of the Droden army. While a switchblade is more time-consuming to build than either a sword or a conventional rifle, they required fewer resources than a seperate sword and rifle would."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

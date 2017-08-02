@@ -1,0 +1,56 @@
+{
+  "objectName" : "avikanfridge",
+  "colonyTags" : ["avikan","cooking","storage"],
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "category" : "fridgeStorage",
+  "price" : 200,
+  "printable" : false,
+  "description" : "A food preservation unit, for keeping food fresh.",
+  "shortdescription" : "Avikan Refrigerator",
+  "race" : "avikan",
+  "health" : 1.5,
+
+  "apexDescription" : "An alien fridge. I doubt there's any bananas inside...",
+  "avianDescription" : "A fridge of alien design.",
+  "floranDescription" : "Floran isss curiousss. What'ss insside?",
+  "glitchDescription" : "Appreciative. Even alien fridges run at the right temperature.",
+  "humanDescription" : "A food preservation unit... That means it's a fridge, right?",
+  "hylotlDescription" : "This appears to be an alien fridge of some sort.",
+  "novakidDescription" : "Some odd lookin' fridge.",
+
+  "aegiDescription" : "Avikan fridges can keep food cool, even in the midst of the desert.",
+  "avikanDescription" : "This food preservation unit will keep my food fresh, but the food will be too cold to eat immediately.",
+  "erixianDescription" : "A cold fridge. I prefer my food hot, but the cold does act as a good preserver.",
+  "trinkDescription" : "This fridge's energy consumption is surprisingly efficient.",
+  "hymidDescription" : "A cool fridge, for keeping food fresh.",
+  "notixDescription" : "There's no need for fridges on the homeplanet of the Notix.",
+  "jorgasianDescription" : "An Avikan-designed fridge. Not a very common sight.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Food preservation unit detected. Food stored here will remain fresh for extended periods of time.",
+
+  "inventoryIcon" : "avikanfridgeicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanfridge.png:<color>.<key>",
+
+      "imagePosition" : [0, 0],
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/fridge_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/fridge_close.ogg" ],
+  "slotCount" : 32,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 10,
+  "autoCloseCooldown" : 3600,
+
+  "itemAgeMultiplier" : 0.0,
+
+  "soundEffect" : "/sfx/objects/fridge_hum.ogg"
+}

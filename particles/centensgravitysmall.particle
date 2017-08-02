@@ -1,0 +1,18 @@
+{
+  "kind" : "centensgravitysmall",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/centensgravitysmall/centensgravitysmall.animation",
+    "position" : [0, 0],
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.85,
+    "fade" : 1,
+    "size" : 1,
+    "layer" : "middle",
+    "timeToLive" : 0.8,
+    "variance" : {
+      "initialVelocity" : [2.0, 2.0],
+      "rotation" : 180
+    }
+  }
+}

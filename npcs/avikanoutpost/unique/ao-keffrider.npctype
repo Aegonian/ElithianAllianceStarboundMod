@@ -1,0 +1,58 @@
+{
+  "type" : "ao-keffrider",
+  "baseType" : "ao-civilian",
+
+  "npcname" : "Vethuri",
+
+  "scriptConfig" : {
+    	
+	"offeredQuests" : [ "keffrider", "keffrider2", "keffrider3", "keffrider4" ],
+	"turnInQuests" : [ "keffrider", "keffrider2", "keffrider3", "keffrider4" ],
+  
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "The Keffriders salute you."
+		  ]
+		},
+
+        "avikan" : {
+          "default" : [
+            "The Keffriders salute you."
+          ],
+		  "glitch" : [
+            "Few machines understand the thrill of Keffriding."
+          ],
+		  "trink" : [
+            "Few machines understand the thrill of Keffriding."
+          ],
+          "avikan" : [
+            "The Keffriders salute you, Captain."
+          ],
+          "droden" : [
+            "Few machines understand the thrill of Keffriding."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "avikan-keffriderhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "avikan-keffriderchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "avikan-keffriderlegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

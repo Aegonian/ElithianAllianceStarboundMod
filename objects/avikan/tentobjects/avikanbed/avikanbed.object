@@ -1,0 +1,56 @@
+{
+  "objectName" : "avikanbed",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "description" : "A surprisingly comfortable leather bed.",
+  "shortdescription" : "Avikan Leather Bed",
+  "race" : "avikan",
+  "category" : "furniture",
+  "printable" : false,
+  "price" : 40,
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : true,
+  "sitPosition" : [-6, 9],
+  "sitOrientation" : "lay",
+  "sitAngle" : 90,
+  "sitEmote" : "sleep",
+  "sitStatusEffects" : [
+    "bed1"
+  ],
+  "sitEffectEmitters" : [ "sleepbubbles" ],
+
+  "apexDescription" : "A leather bed. Quite comfortable, somehow.",
+  "avianDescription" : "A leather bed. Surpisingly comfortable.",
+  "floranDescription" : "Bedsss for sssleeping!",
+  "glitchDescription" : "Surprised. This primitive leather bed is quite comfortable.",
+  "humanDescription" : "A primitive but comfortable leather bed. Time for a nap!",
+  "hylotlDescription" : "This leather bed is surprisingly comfortable.",
+
+  "aegiDescription" : "A comfortable leather bed.",
+  "avikanDescription" : "A leather sheet covering piles of raw leather. It makes me think of home.",
+  "erixianDescription" : "A leather bed. Quite comfortable.",
+  "trinkDescription" : "A simple leather bed.",
+  "hymidDescription" : "A leather bed. It's better than it looks.",
+  "notixDescription" : "A simple leather bed.",
+  "jorgasianDescription" : "A leather bed.",
+  "centensDescription" : "Interesting. Leather is used for almost all items made by Avikan nomads.",
+  "dremetonDescription" : "A simple leather bed. It's better than it looks.",
+  "theleanDescription" : "Sleep is for the weak.",
+  "drodenDescription" : "Analysis complete. This bed consists of leather pillows covered by a leather sheet.",
+
+  "inventoryIcon" : "avikanbedicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanbed.png:<color>",
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

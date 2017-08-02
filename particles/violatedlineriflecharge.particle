@@ -1,0 +1,21 @@
+{
+  "kind" : "violatedlineriflecharge",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/violatedlineriflecharge/violatedlineriflecharge.animation",
+    "position" : [0, 0],
+    "approach" : [50, 50],
+    "light" : [100, 0, 0],
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.5,
+    "fade" : 1,
+    "size" : 0.5,
+    "layer" : "middle",
+    "timeToLive" : 0.2,
+	"fullbright" : true,
+    "variance" : {
+      "rotation" : 180,
+	  "size" : 0.5
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "objectName" : "trinkcaptainschair",
+  "colonyTags" : ["trink"],
+  "itemTags" : ["captainschair"],
+  "printable" : false,
+  "rarity" : "Common",
+  "objectType" : "loungeable",
+
+  "description" : "The Captain sits here to fly the ship.",
+  "shortdescription" : "Trink Commander's Pod",
+  "race" : "trink",
+  "category" : "furniture",
+  "lightColor" : [0, 40, 0],
+
+  "apexDescription" : "A control pod, used by the robot controlling this ship.",
+  "avianDescription" : "A bulky control pod, for the ship's commander.",
+  "floranDescription" : "Metal box for sssitting?",
+  "glitchDescription" : "Anticipation. Where to next?",
+  "humanDescription" : "Is this what the captain uses to control the ship? How odd.",
+  "hylotlDescription" : "A control pod with an interface for controlling the ship.",
+  "novakidDescription" : "Is this supposed to be some sorta seat? Sure ain't looking comfortable.",
+  
+  "aegiDescription" : "The Trink use control pods like these to control their ships.",  
+  "avikanDescription" : "The control pod of the machine operating this ship.",
+  "erixianDescription" : "A Trinkian control pod, built for their starships' captains.",
+  "trinkDescription" : "This control pod allows access to the ship's navigation interface.",
+  "hymidDescription" : "A control pod. Useful for the Trinks, but incredibly uncomfortable for others.",
+  "notixDescription" : "A Trinkian control pod. It allows access to the ship's navigation interface.",
+  "jorgasianDescription" : "A control pod for the ship's captain.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected alien technology. Analysis: ship control pod.",
+
+  "inventoryIcon" : "captainschairicon.png",
+  "orientations" : [
+    {
+      "image" : "trinkcaptainschair.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "lightPosition" : [1, 1],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "flipImages" : true,
+      "direction" : "left",
+      "sitPosition" : [-1, 19.5]
+    },
+    {
+      "image" : "trinkcaptainschair.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "lightPosition" : [1, 1],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "right",
+      "sitPosition" : [-1, 19.5]
+    }
+  ],
+  
+  "interactAction" : "ScriptPane",
+  "interactData" : "/interface/cockpit/cockpit.config",
+
+  "sitFlipDirection" : false,
+  "sitCoverImage" : "/objects/ship/trink/trinkcaptainschair/trinkcaptainschaircover.png"
+}

@@ -1,0 +1,13 @@
+{
+  "itemName" : "avikandyes",
+  "price" : 125,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "avikandyes.png",
+  "description" : "Colourful yellow and orange dyes, used to create Avikan cloth.",
+  "shortdescription" : "Avikan Dyes",
+  "itemTags" : [ "reagent" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 1
+}

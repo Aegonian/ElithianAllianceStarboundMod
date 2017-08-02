@@ -1,0 +1,296 @@
+{
+  "kind" : "trink",
+
+  "charCreationTooltip" : {
+      "title" : "Trink",
+      "subTitle" : "Sentient Robots",
+      "description" : "Created by the Notix, the Trinks are a race of sentient robots who live in harmony with their creators. They value efficiency above all, and are responsible for many of the technological advancements of the Elithian Alliance."
+  },
+
+  "statusEffects" : [ "trinkeyelight" ],
+  
+  "playerSpecies" : true,
+  "humanoidConfig" : "/species/types/thea-trinkoid.config",
+  "nameGen" : [ "/species/trinknamegen.config:names", "/species/trinknamegen.config:names" ],
+  "ouchNoises" : [ "/sfx/humanoid/robothurt_male1.ogg", "/sfx/humanoid/robothurt_male1.ogg" ],
+  "charGenTextLabels" : [ "Paint colour", "Antenna", "Arm mod", "Body Mod", "Mouth colour", "Antenna colour", "Arm mod colour", "Body mod colour", "TRINK", "Personality" ],
+  "skull" : "/humanoid/trink/dead.png",
+  "effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=79ff4bFF?replace=31a6ffFF=00c901FF",
+  "defaultBlueprints" : {
+    "tier1" : [
+
+//NEW in v2.2.1
+	  { "item" : "trinkslopedpanel" },
+	  { "item" : "trinkstoragelocker" },
+	  { "item" : "trinkglass" },
+	  { "item" : "trinkslopedglass" },
+	  { "item" : "trinkrail" },
+	  { "item" : "trinkrailhook" },
+	  { "item" : "trinkrailplatform" },
+	  { "item" : "trinkrailtram" },
+	  { "item" : "trinkshippingcontainer" },
+
+//NEW in v2.1.6
+	  { "item" : "trinkweaponchest" },
+	
+//NEW in v2.1.5
+	  { "item" : "trinkfrostgrenade" },
+	  { "item" : "trinkrepairmodule" },
+	  { "item" : "trinkturret" },
+	  { "item" : "trinkshieldgenerator" },
+	  { "item" : "trinkroofflat" },
+	  { "item" : "trinkroofantenna" },
+	  { "item" : "trinkroofdish" },
+	  { "item" : "trinkrooftopentry" },
+	  { "item" : "trinkundersideentry" },
+	  { "item" : "trinkwallswitch" },
+	  { "item" : "trinkslopeddoor" },
+	  
+//NEW in v2.1.4
+	  { "item" : "trinkhatch" },
+	  { "item" : "trinkhatchplatform" },
+	  { "item" : "trinkshipdoor" },
+	  { "item" : "trinkshiplight" },
+	  { "item" : "trinkshipwindow" },
+	  { "item" : "trinkbutton" },
+	  { "item" : "trinkpressureplate" },
+	  { "item" : "trinksmallbutton" },
+	  { "item" : "trinkswitch" },
+	
+// Empty Hands
+      { "item" : "flagtrink" },
+      { "item" : "trinkcrafting" },
+	  
+// Trink Crafting 1
+	//Armour
+      { "item" : "trink-tier1chest" },
+      { "item" : "trink-tier1head" },
+      { "item" : "trink-tier1legs" },
+      { "item" : "trink-tier2chest" },
+      { "item" : "trink-tier2head" },
+      { "item" : "trink-tier2legs" },
+	//EPP
+      { "item" : "trinkbreathprotectionback" },
+	  
+	//Consumables
+      { "item" : "trinkclimbingrope" },
+	  
+	//Furniture
+      { "item" : "trinkantenna" },
+      { "item" : "trinkconsole" },
+      { "item" : "trinkcontainer" },
+      { "item" : "trinkcrate" },
+      { "item" : "trinkgenerator" },
+      { "item" : "trinklight" },
+      { "item" : "trinklightpillar" },
+      { "item" : "trinkmannequin" },
+      { "item" : "trinkmonitor" },
+      { "item" : "trinkprodrack" },
+      { "item" : "trinkradardish" },
+      { "item" : "trinkrepairpod" },
+      { "item" : "trinkroof" },
+      { "item" : "trinkroofside" },
+      { "item" : "trinkroofsideback" },
+      { "item" : "trinksatellitedish" },
+      { "item" : "trinkserver" },
+      { "item" : "trinksmallroof" },
+      { "item" : "trinktier2beacon" },
+	  
+	//Ingredients
+      { "item" : "trinkelectronics" },
+      { "item" : "trinkglassitem" },
+      { "item" : "trinklaserdiode" },
+      { "item" : "trinkmetal" },
+      { "item" : "trinkmetaltier2" },
+      { "item" : "trinkwiring" },
+	  
+	//Materials
+      { "item" : "trinkgroundpanel" },
+      { "item" : "trinkhull" },
+      { "item" : "trinkpipe" },
+      { "item" : "trinkplating" },
+      { "item" : "trinksmoothpanel" },
+      { "item" : "trinksupportpanel" },
+	  //Platforms
+      { "item" : "trinkplatform" },
+	  
+	//Weapons
+	  //Melee
+      { "item" : "trinkshield" },
+      { "item" : "trinktier1longprod" },
+      { "item" : "trinktier1prod" },
+      { "item" : "trinktier2longprod" },
+      { "item" : "trinktier2prod" },
+	  //Ranged
+      { "item" : "trinktier1pistol" },
+      { "item" : "trinktier1rifle" },
+      { "item" : "trinktier1shotgun" },
+      { "item" : "trinktier2pistol" },
+      { "item" : "trinktier2rifle" },
+      { "item" : "trinktier2shotgun" },
+	  
+// Trink Crafting 2
+	//Armour
+      { "item" : "trink-tier3chest" },
+      { "item" : "trink-tier3head" },
+      { "item" : "trink-tier3legs" },
+      { "item" : "trink-tier4chest" },
+      { "item" : "trink-tier4head" },
+      { "item" : "trink-tier4legs" },
+	//EPP
+      { "item" : "trinkradiationprotectionback" },
+      { "item" : "trinkcoldprotectionback" },
+	  
+	//Consumables
+      //EMPTY
+	  
+	//Furniture
+      { "item" : "trinktier3beacon" },
+      { "item" : "trinktier4beacon" },
+	  { "item" : "trinkfridge" },
+	  
+	//Ingredients
+      { "item" : "trinkmetaltier3" },
+      { "item" : "trinkmetaltier4" },
+      { "item" : "trinkpowercore" },
+      { "item" : "trinktransmitter" },
+	  
+	//Materials
+      //EMPTY
+	  
+	//Weapons
+	  //Melee
+      { "item" : "trinktier3longprod" },
+      { "item" : "trinktier3prod" },
+      { "item" : "trinktier4longprod" },
+      { "item" : "trinktier4prod" },
+	  //Ranged
+      { "item" : "trinktier3pistol" },
+      { "item" : "trinktier3rifle" },
+      { "item" : "trinktier3shotgun" },
+      { "item" : "trinktier4pistol" },
+      { "item" : "trinktier4rifle" },
+      { "item" : "trinktier4shotgun" },
+      { "item" : "trinktier4sniper" },
+	  
+// Trink Crafting 3
+	//Armour
+	  //Accelerator
+      { "item" : "trink-tier5achest" },
+      { "item" : "trink-tier5ahead" },
+      { "item" : "trink-tier5alegs" },
+      { "item" : "trink-tier6achest" },
+      { "item" : "trink-tier6ahead" },
+      { "item" : "trink-tier6alegs" },
+	  //Manipulator
+      { "item" : "trink-tier5mchest" },
+      { "item" : "trink-tier5mhead" },
+      { "item" : "trink-tier5mlegs" },
+      { "item" : "trink-tier6mchest" },
+      { "item" : "trink-tier6mhead" },
+      { "item" : "trink-tier6mlegs" },
+	  //Seperator
+      { "item" : "trink-tier5schest" },
+      { "item" : "trink-tier5shead" },
+      { "item" : "trink-tier5slegs" },
+      { "item" : "trink-tier6schest" },
+      { "item" : "trink-tier6shead" },
+      { "item" : "trink-tier6slegs" },
+	//EPP
+      { "item" : "trinkheatprotectionback" },
+	  
+	//Consumables
+      //EMPTY
+	  
+	//Furniture
+      { "item" : "trinktier5beacon" },
+      { "item" : "trinktier6beacon" },
+	  
+	//Ingredients
+      { "item" : "trinkcoreenergetic" },
+      { "item" : "trinkcorepowerful" },
+      { "item" : "trinkcorevigorous" },
+      { "item" : "trinkmetaltier5" },
+      { "item" : "trinkmetaltier6" },
+	  
+	//Materials
+      //EMPTY
+	  
+	//Weapons
+	  //Melee
+      { "item" : "trinktier5longprod" },
+      { "item" : "trinktier5prod" },
+      { "item" : "trinktier6longprod" },
+      { "item" : "trinktier6prod" },
+	  //Ranged
+      { "item" : "trinktier5pistol" },
+      { "item" : "trinktier5rifle" },
+      { "item" : "trinktier5shotgun" },
+      { "item" : "trinktier5sniper" },
+      { "item" : "trinktier6pistol" },
+      { "item" : "trinktier6rifle" },
+      { "item" : "trinktier6shotgun" },
+      { "item" : "trinktier6sniper" },
+	  //Uncategorized
+      { "item" : "trinkgrapplinghook" }
+	
+    ]
+  },
+  "altOptionAsUndyColor" : true,
+  "headOptionAsHairColor" : true,
+  "genders" : [
+    {
+      "name" : "male",
+      "image" : "/interface/title/monogender.png",
+      "characterImage" : "/interface/title/trinkmale.png",
+      "hair" : [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" ],
+      "shirt" : [ "thea-hiddenchest", "trink-stripedchest", "trink-paintedchest" ],
+      "pants" : [ "thea-hiddenlegs", "trink-stripedlegs", "trink-paintedlegs" ],
+      "facialHairGroup" : "",
+      "facialHair" : [ ],
+      "facialMaskGroup" : "",
+      "facialMask" : [ ]
+    },
+    {
+      "name" : "female",
+      "image" : "/interface/title/monogender.png",
+      "characterImage" : "/interface/title/trinkfemale.png",
+      "hair" : [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" ],
+      "shirt" : [ "thea-hiddenchest", "trink-stripedchest", "trink-paintedchest" ],
+      "pants" : [ "thea-hiddenlegs", "trink-stripedlegs", "trink-paintedlegs" ],
+      "facialHairGroup" : "",
+      "facialHair" : [ ],
+      "facialMaskGroup" : "",
+      "facialMask" : [ ]
+    }
+  ],
+  "bodyColor" : [
+ // { "42301C" : "xxxxxx", "785F40" : "xxxxxx", "A2825C" : "xxxxxx", "CCAA7F" : "xxxxxx" }, // Template
+ // Darkest - Dark - Medium - Light
+ // Body/Paint Colour 
+    { "38332E" : "191A19", "6A645C" : "383838", "90897F" : "555555", "B9B0A6" : "838383" }, //Dark metal
+	{ "38332E" : "383838", "6A645C" : "555555", "90897F" : "838383", "B9B0A6" : "ADADAD" }, //Medium metal
+	{ "38332E" : "242424", "6A645C" : "414141", "90897F" : "6F6F6F", "B9B0A6" : "999999" }, //Medium dark metal
+	{ "38332E" : "221A14", "6A645C" : "443A32", "90897F" : "61564D", "B9B0A6" : "8E847B" }, //Dark rusted
+	{ "38332E" : "443A32", "6A645C" : "61564D", "90897F" : "8E847B", "B9B0A6" : "B5AEA7" }, //Medium rusted
+	{ "38332E" : "2E2620", "6A645C" : "4D433B", "90897F" : "7B7168", "B9B0A6" : "A29A93" }  //Medium dark rusted
+  ],
+  "undyColor" : [
+ // Teeth Colour
+    { "785F40" : "A48434", "A2825C" : "C6A23E", "CCAA7F" : "E0B848" }, //Gold
+	{ "785F40" : "848484", "A2825C" : "A3A3A3", "CCAA7F" : "BDBDBD" }, //Silver
+	{ "785F40" : "8C8470", "A2825C" : "A89F86", "CCAA7F" : "BFB599" }, //Dusty grey
+	{ "785F40" : "8F7351", "A2825C" : "AD8D61", "CCAA7F" : "C4A06F" }, //Beige
+	{ "785F40" : "5C5C5C", "A2825C" : "767676", "CCAA7F" : "8B8B8B" }, //Dark silver
+	{ "785F40" : "77705F", "A2825C" : "8F8772", "CCAA7F" : "A29A82" }  //Dark dusty grey
+  ],
+  "hairColor" : [
+ // Antenna Colour
+    { "38332E" : "191A19", "6A645C" : "383838", "90897F" : "555555", "B9B0A6" : "838383" }, //Dark metal
+	{ "38332E" : "383838", "6A645C" : "555555", "90897F" : "838383", "B9B0A6" : "ADADAD" }, //Medium metal
+	{ "38332E" : "242424", "6A645C" : "414141", "90897F" : "6F6F6F", "B9B0A6" : "999999" }, //Medium dark metal
+	{ "38332E" : "221A14", "6A645C" : "443A32", "90897F" : "61564D", "B9B0A6" : "8E847B" }, //Dark rusted
+	{ "38332E" : "443A32", "6A645C" : "61564D", "90897F" : "8E847B", "B9B0A6" : "B5AEA7" }, //Medium rusted
+	{ "38332E" : "2E2620", "6A645C" : "4D433B", "90897F" : "7B7168", "B9B0A6" : "A29A93" }  //Medium dark rusted
+  ]
+}

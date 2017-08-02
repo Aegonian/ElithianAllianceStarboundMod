@@ -1,0 +1,79 @@
+{
+  "type" : "avikanpriest",
+  "baseType" : "avikanvillager",
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common"],
+      "enableParticipation" : true,
+
+      // Every 30 seconds, decide whether to generate a quest and if so, spend
+      // the rest of the 30s window trying to generate it.
+      "timeLimit" : 30,
+
+      // Don't generate new quests if there are already more than <nearbyQuestLimit>
+      // questmanager stagehands nearby, within a <nearbyQuestRange> tile range.
+      "nearbyQuestLimit" : 2,
+      "nearbyQuestRange" : 50,
+      "questCountRange" : [1, 4],
+      
+      "graduation" : {
+        "nextNpcType" : [
+          [1, "crewmemberrhaiodhealer"]
+        ]
+      }
+    },
+  
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "Rhadeis watches over us all.",
+			"Rhadeis will guide us.",
+			"The Rhaiod greets you, stranger.",
+			"The Rhaiod seeks for the truth. We do not tell myths.",
+			"The Rhaiod is more than a religion. It is an institute of knowledge.",
+			"The day of reckoning will come for the Thell."
+		  ]
+		},
+
+        "avikan" : {
+          "default" : [
+            "Rhadeis watches over us all.",
+			"Rhadeis will guide us.",
+			"The Rhaiod greets you, stranger.",
+			"The Rhaiod seeks for the truth. We do not tell myths.",
+			"The Rhaiod is more than a religion. It is an institute of knowledge.",
+			"The day of reckoning will come for the Thell."
+          ],
+          "avikan" : [
+            "Rhadeis watches over us all.",
+			"Rhadeis will guide us.",
+			"Rhadeis guide you, Captain.",
+			"The Rhaiod seeks for the truth. We do not tell myths.",
+			"The Rhaiod is more than a religion. It is an institute of knowledge.",
+			"The day of reckoning will come for the Thell."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "avikan-priestchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "avikan-priestlegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

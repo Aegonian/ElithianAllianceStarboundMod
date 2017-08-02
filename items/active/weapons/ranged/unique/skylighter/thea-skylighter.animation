@@ -1,0 +1,141 @@
+{
+  "globalTagDefaults" : {
+    "paletteSwaps" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "gun" : {
+        "default" : "readyState1",
+        "states" : {
+          "readyState1" : {
+			"frames" : 1
+		  },
+          "startCycle1" : {
+            "frames" : 1,
+            "cycle" : 0.15,
+            "mode" : "transition",
+            "transition" : "readyState2"
+          },
+		  "readyState2" : {
+			"frames" : 1
+		  },
+          "startCycle2" : {
+            "frames" : 1,
+            "cycle" : 0.15,
+            "mode" : "transition",
+            "transition" : "readyState1"
+          },
+          "reload" : {
+            "frames" : 8,
+            "cycle" : 0.7,
+            "mode" : "transition",
+            "transition" : "readyState1"
+          }
+        }
+      },
+	  "firing" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "fire" : {
+            "frames" : 2,
+            "cycle" : 0.07,
+            "mode" : "transition",
+            "transition" : "off"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "middle" : {
+        "properties" : {
+          "centered" : true,
+          "image" : "<partImage><paletteSwaps>",
+          "offset" : [0, 0], // x offset is set dynamically
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "gun" : {
+            "readyState1" : {
+              "properties" : {
+                "image" : "<partImage>:ready1"
+              }
+            },
+			"startCycle1" : {
+              "properties" : {
+                "image" : "<partImage>:cycle1.<frame>"
+              }
+            },
+			"readyState2" : {
+              "properties" : {
+                "image" : "<partImage>:ready2"
+              }
+            },
+			"startCycle2" : {
+              "properties" : {
+                "image" : "<partImage>:cycle2.<frame>"
+              }
+            },
+			"reload" : {
+              "properties" : {
+                "image" : "<partImage>:reload.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "muzzleFlash" : {
+        "properties" : {
+          "zLevel" : -1,
+          "centered" : true,
+          "offset" : [0.75, 0],
+          "fullbright" : true,
+          "transformationGroups" : ["muzzle"]
+        },
+        "partStates" : {
+          "firing" : {
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:<variant>.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "rotationGroups" : {
+    "weapon" : {
+      "angularVelocity" : 0
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "muzzle" : {}
+  },
+
+  "particleEmitters" : {
+    "muzzleFlash" : {
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [0, 0, 0, 0],
+      "particles" : [ ]
+    }
+  },
+
+  "lights" : {
+    "muzzleFlash" : {
+      "active" : false,
+      "position" : [0, 0],
+      "color" : [90, 90, 0]
+    }
+  },
+
+  "sounds" : {
+    "fire" : [ ],
+	"reload" : [ ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "objectName" : "avikanmedcabinet",
+  "colonyTags" : ["avikan", "storage"],
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "category" : "storage",
+  "printable" : false,
+  "price" : 40,
+  "description" : "A wall-mounted cabinet full of medical supplies.",
+  "shortdescription" : "Avikan Med-store",
+  "race" : "avikan",
+  
+  "health" : 6,
+
+  "apexDescription" : "A metal cabinet, probably for medical supplies.",
+  "avianDescription" : "This looks like a first-aid cabinet.",
+  "floranDescription" : "Floran wondersss what iss insside?",
+  "glitchDescription" : "Relieved. Medical supplies are always welcome.",
+  "humanDescription" : "I suppose this must be a medical cabinet of sorts.",
+  "hylotlDescription" : "This cabinet contains painkillers and other anodynes.",
+  "novakidDescription" : "A cabinet for stayin' healthy.",
+
+  "aegiDescription" : "A cabinet containing some Avikan medicine.",
+  "avikanDescription" : "These Med-stores carry medical supplies for emergency use.",
+  "erixianDescription" : "This cabinet appears to contain medical supplies.",
+  "trinkDescription" : "An emergency medical kit can be probably be found inside.",
+  "hymidDescription" : "This locked contains some medical supplies, for use in emergencies.",
+  "notixDescription" : "It's always useful to have some medicine around.",
+  "jorgasianDescription" : "Medical supplies are always a welcome sight.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected Nomada-approved Med-store. Contains emergency medical supplies.",
+
+  "inventoryIcon" : "avikanmedcabineticon.png",
+  "orientations" : [
+    {
+      "image" : "avikanmedcabinet.png:<color>.<key>",
+      "imagePosition" : [-16, -8],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/chest_small_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/chest_small_close.ogg" ],
+  "slotCount" : 9,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 10,
+  "autoCloseCooldown" : 3600
+}

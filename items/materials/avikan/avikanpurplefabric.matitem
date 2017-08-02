@@ -1,0 +1,12 @@
+{
+  "itemName" : "avikanpurplefabric",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "avikanpurplefabric.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "description" : "A fabric wall sheet decorated in the style of the Rhaiod.",
+  "shortdescription" : "Rhaiod Fabric",
+
+  "materialId" : 30056
+}

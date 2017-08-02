@@ -1,0 +1,47 @@
+[	
+  {"op" : "add",
+	"path" : "/humanoidfossil/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.40, "item" : "avikanfossil1"}
+  },
+  {"op" : "add",
+	"path" : "/humanoidfossil/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.30, "item" : "avikanfossil2"}
+  },
+  {"op" : "add",
+	"path" : "/humanoidfossil/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.30, "item" : "avikanfossil3"}
+  },
+  {"op" : "add",
+	"path" : "/humanoidfossil/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.30, "item" : "drodenfossil1"}
+  },
+  {"op" : "add",
+	"path" : "/humanoidfossil/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.30, "item" : "drodenfossil2"}
+  },
+  {"op" : "add",
+	"path" : "/humanoidfossil/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.30, "item" : "drodenfossil3"}
+  },
+  {"op" : "add",
+	"path" : "/humanoidfossil/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.30, "item" : "trinkfossil1"}
+  },
+  {"op" : "add",
+	"path" : "/humanoidfossil/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.30, "item" : "trinkfossil2"}
+  },
+  {"op" : "add",
+	"path" : "/humanoidfossil/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.30, "item" : "trinkfossil3"}
+  }
+]

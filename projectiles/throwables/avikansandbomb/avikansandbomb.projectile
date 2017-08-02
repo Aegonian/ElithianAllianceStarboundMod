@@ -1,0 +1,88 @@
+{
+  "projectileName" : "avikansandbomb",
+  "physics" : "grenade",
+  "bounces" : 0,
+  "timeToLive" : 10,
+  "image" : "avikansandbomb.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/sandbombexplosion/sandbombexplosion.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "sandbombdust",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "sandbombdust",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 36
+    },
+	{
+      "action" : "projectile",
+      "type" : "sandbombdust",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 72
+    },
+	{
+      "action" : "projectile",
+      "type" : "sandbombdust",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 108
+    },
+	{
+      "action" : "projectile",
+      "type" : "sandbombdust",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 144
+    },
+	{
+      "action" : "projectile",
+      "type" : "sandbombdust",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 180
+    },
+	{
+      "action" : "projectile",
+      "type" : "sandbombdust",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 216
+    },
+	{
+      "action" : "projectile",
+      "type" : "sandbombdust",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 252
+    },
+	{
+      "action" : "projectile",
+      "type" : "sandbombdust",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 288
+    },
+	{
+      "action" : "projectile",
+      "type" : "sandbombdust",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 324
+    }
+  ],
+  "power" : 50,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

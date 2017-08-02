@@ -1,0 +1,158 @@
+{
+  "itemName" : "centens-eventhorizon",
+  "price" : 1500,
+  "inventoryIcon" : "centens-eventhorizonicon.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;A weapon that draws power from the edge of a black hole.",
+  "shortdescription" : "^orange;Event Horizon^white;",
+  "level" : 6,
+  "tooltipKind" : "thea-speedupminigun-unique",
+  "category" : "Minigun",
+  "itemTags" : ["weapon","ranged","centens","minign","theaUnique"],
+  "twoHanded" : true,
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "centens-eventhorizon" },
+  
+  "meritTokenValue" : 100,
+  
+  "cursor" : "/cursors/thea-complexcirclereticle.cursor",
+
+  "animation" : "centens-eventhorizon.animation",
+  "animationParts" : {
+    "gun" : "centens-eventhorizon.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/eventhorizonmuzzle.png",
+    "charge" : "centens-eventhorizoncharge.png",
+    "chargeLights" : "centens-eventhorizonchargelights.png",
+	"chargehold" : "centens-eventhorizonloop.png",
+	"chargeholdLights" : "centens-eventhorizonlooplights.png",
+	"overlay" : "centens-eventhorizonoverlay.png"
+  },
+  "animationCustom" : {
+	"animatedParts" : {
+      "parts" : {
+        "gun" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.25, -0.75]
+		  }
+		},
+		"charge" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.25, -0.75]
+		  }
+		},
+		"chargeLights" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.25, -0.75]
+		  }
+		},
+		"chargehold" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.25, -0.75]
+		  }
+		},
+		"chargeholdLights" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.25, -0.75]
+		  }
+		},
+		"overlay" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.25, -0.75]
+		  }
+		}
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/xanafian_fire1.ogg" ],
+	  "chargeLoop" : [ "/sfx/melee/charge_up2.ogg" ],
+	  "holdLoop" : [ "/sfx/melee/charge_full_hold1.ogg" ],
+	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
+    }
+  },
+
+  "baseOffset" : [1.25, -0.75],
+  "muzzleOffset" : [0.875, 0.15],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "centensianenergy",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-speedupminigun.lua"],
+    "class" : "TheaSpeedUpMinigun",
+
+    "minFiringSpeed" : 0.35, //Starting fire time
+	"maxFiringSpeed" : 0.08, //End fire time
+	"maxFiringTime" : 3.5, //How long it takes to reach maximum firing speed
+	
+    "baseDps" : 3.5, //Starting DPS. Final DPS is this multiplied by (minFiringSpeed / maxFiringSpeed)
+    "energyUsage" : 15.0,
+    "inaccuracy" : 0.035,
+	
+	"chargeTime" : 0.7,
+	"resetTime" : 0.6,
+	
+	"walkWhileFiring" : true,
+
+    "projectileType" : "eventhorizonbullet",
+	"projectileCount" : 1,
+	"projectileParameters" : { 
+      "knockback" : 6
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "charge" : {
+        "armRotation" : -2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.075,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "discharge" : {
+        "duration" : 0.1,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+	}
+  },
+
+  "builder" : "/items/buildscripts/thea-buildspeedupminigun.lua"
+}

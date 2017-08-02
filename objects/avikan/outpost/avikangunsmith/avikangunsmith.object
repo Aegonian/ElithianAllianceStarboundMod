@@ -1,0 +1,102 @@
+{
+  "objectName" : "avikangunsmith",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Legendary",
+  "description" : "It seems that Ayurin is the local gunsmith. Maybe he could craft me some new weapons.",
+  "shortdescription" : "Ayurin's Weapon Workshop",
+  "race" : "avikan",
+  
+  "floranDescription" : "Gunssmith craftss new weaponsss for Floran?",
+  "glitchDescription" : "Anticipation. This gunsmith might be able to provide me with new weapons.",
+  "novakidDescription" : "A gunsmith? Might be gettin' some new rifles here.",
+  
+  "drodenDescription" : "Detected Vanguard-certified gunsmith. Unit can acquire new schematics for weapons here.",
+  
+  "offeredQuests" : [
+	//Weapon Restoration
+    "weaponrestorationavikan3",
+	"weaponrestorationdroden",
+	"weaponrestorationdroden2",
+	
+	//Legendary + Unique Weapons
+	"avikanmissilepod2",
+	"avikancrossbow2",
+	"violatedioncannon2",
+	"violatedioncannon3",
+	"avikancrafting"
+  ],
+  "turnInQuests" : [
+	//Weapon Restoration
+    "weaponrestorationavikan2",
+	"weaponrestorationavikan3",
+	"weaponrestorationdroden",
+	"weaponrestorationdroden2",
+	
+	//Legendary + Unique Weapons
+	"avikanmissilepod",
+	"avikanmissilepod2",
+	"avikancrossbow2",
+	"violatedioncannon",
+	"violatedioncannon2",
+	"violatedioncannon3",
+	"avikancrafting",
+	
+	//Other
+	"avikanmechparts2"
+  ],
+  
+  "interactAction" : "OpenMerchantInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/merchant.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "  Ayurin's Weapon Workshop",
+        "subtitle" : "  Weapon and gear schematics."
+      }
+    },
+    "buyFactor" : 2.0,
+    "sellFactor" : 0.2,
+    "items" : [
+	  //Weapons
+      { "item" : "avikan-assaultrifle-recipe" },
+	  { "item" : "avikan-assaultrifle2-recipe" },
+      { "item" : "avikan-skiprifle-recipe" },
+	  { "item" : "avikan-shotgun-recipe" },
+	  { "item" : "avikan-sniperrifle-recipe" },
+      { "item" : "avikan-harpoongun-recipe" },
+      { "item" : "avikan-tier6linerifle-recipe" },
+	  { "item" : "avikan-rocketlauncher-recipe" },
+      { "item" : "avikan-minigun-recipe" },
+      { "item" : "avikan-mininglaser-recipe" },
+      { "item" : "avikantier7spear-recipe" },
+      { "item" : "avikanprod-recipe" },
+      { "item" : "avikanmetalshield-recipe" }
+    ]
+  },
+  "printable" : false,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "avikangunsmith.png:<frame>",
+      "direction" : "right",
+
+      "imagePosition" : [0, 0],
+      "frames" : 20,
+      "animationCycle" : 2.0,
+
+	  "spaceScan" : 0.1,
+      "interactiveSpaces" : [
+        [3, 3], [4, 3],
+        [3, 2], [4, 2],
+        [3, 1], [4, 1],
+        [3, 0], [4, 0]
+      ],
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "mouthPosition" : [0.5, -0.5],
+  "questIndicatorPosition" : [0.5, -0.5]
+
+}

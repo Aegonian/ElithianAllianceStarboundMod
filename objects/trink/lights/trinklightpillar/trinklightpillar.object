@@ -1,0 +1,73 @@
+{
+  "objectName" : "trinklightpillar",
+  "colonyTags" : ["trink", "light"],
+  "rarity" : "Common",
+  "category" : "light",
+  "lightColor" : [180, 230, 115],
+  "price" : 50,
+  "description" : "A pillar embedded with green lights.",
+  "shortdescription" : "Trinkian Light Pillar",
+  "race" : "trink",
+
+  "apexDescription" : "A pillar with green lights. Odd.",
+  "avianDescription" : "This pillar emits a green light when turned on.",
+  "floranDescription" : "Green light. Ssshiny.",
+  "glitchDescription" : "Questioning. Why do these Trink use green lights?",
+  "humanDescription" : "A pillar embedded with green lights. Cool.",
+  "hylotlDescription" : "Green light makes even the mundane look mysterious.",
+
+  "aegiDescription" : "A Trinkian light pillar.",
+  "avikanDescription" : "A pillar emitting a green light. It makes me feel odd...",
+  "erixianDescription" : "This Trinkian pillar emits an odd green light.",
+  "trinkDescription" : "Pillars like these are primarily used to light areas outside of our buildings.",
+  "hymidDescription" : "A pillar embedded with green lights.",
+  "notixDescription" : "These pillars aren't very useful for the Trinks, but they allow us organics to see in the dark.",
+  "jorgasianDescription" : "A green light. Clearly of Trinkian origin.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Light source detected.",
+
+  "inventoryIcon" : "trinklightpillaricon.png",
+  "orientations" : [
+    {
+      "image" : "trinklightpillar.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "lightPosition" : [1, 2],
+
+	  "flipImages" : true,
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "left"
+    },
+    {
+      "image" : "trinklightpillar.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "lightPosition" : [1, 2],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "right"
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/fluorescent_light_quiet.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+  
+  "animation" : "/objects/wired/light/lighttoggle.animation",
+  "animationParts" : {
+    "light" : "trinklightpillar.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : false,
+
+  "inputNodes" : [ [0, 0] ]
+}

@@ -1,0 +1,47 @@
+{
+  "type" : "ao-watermerchant",
+  "baseType" : "ao-wandermerchant",
+
+  "scriptConfig" : {    
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "poolsFile" : "/npcs/merchantpools.config",
+      
+	  "categories" : {
+        "override" : [ "avikanwater" ]
+      },
+      "buyFactorRange" : [ 0.9, 1.2 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 4,
+	  
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "Water Merchant",
+          "subtitle" : "  Fresh and clear water."
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "avikan-merchanthead", "parameters" : { "colorIndex" : 8 } }
+            ],
+            "chest" : [
+              { "name" : "avikan-merchantchest", "parameters" : { "colorIndex" : 8 } }
+            ],
+            "legs" : [
+              { "name" : "avikan-merchantlegs", "parameters" : { "colorIndex" : 8 } }
+            ],
+            "back" : [
+              { "name" : "avikanmerchantpack", "parameters" : { "colorIndex" : 8 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

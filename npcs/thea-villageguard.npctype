@@ -1,0 +1,136 @@
+{
+  //Use this as a base for all guards of custom races. Quests are disabled by default
+  
+  "type" : "thea-villageguard",
+  "baseType" : "base",
+
+  "levelVariance" : [3, 3],
+  "persistent" : true,
+
+  "damageTeamType" : "friendly",
+
+  "dropPools" : [ "guardtreasure" ],
+
+  "scriptConfig" : {
+    "behavior" : "villageguard",
+
+    "behaviorConfig" : {
+      "greetingChance" : 0.67,
+
+      "hostileDamageTeam" : { "type" : "enemy", "team" : 1 }
+    },
+
+    "personalities" : [
+        [1.0, { "personality" : "normal", "reactions" : {} }]
+    ],
+
+    "dialog" : {
+      "greeting" : "/dialog/converse.config:greeting",
+      "converse" : "/dialog/converse.config:converse",
+
+      "attack" : "/dialog/combat.config:attack",
+      "reattack" : "/dialog/combat.config:reattack",
+      "killedTarget" : "/dialog/combat.config:killedTarget",
+      "lostTarget" : "/dialog/combat.config:lostTarget",
+      "outOfSight" : "/dialog/combat.config:outOfSight",
+      "cheerOn" : "/dialog/combat.config:cheerOn",
+      "cantReach" : "/dialog/combat.config:cantReach",
+
+      "hail" : "/dialog/guard.config:hail",
+
+      "accuse" : "/dialog/thief.config:accuse"
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+	//AVIKAN EQUIPMENT
+    "avikan" : [
+      [0, [
+		  {
+            "head" : [
+			  { "name" : "avikan-travellerhead", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "avikan-fangedskull", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "avikan-longskull", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "avikan-simpleskull", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "avikan-skullmask", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "avikan-hornedskull", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "avikan-hornedskull2", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "avikan-warriorchest", "parameters" : { "colorIndex" : [0, 1, 11] } },
+			  { "name" : "avikan-tier1chest", "parameters" : { "colorIndex" : [0, 1, 11] } },
+			  { "name" : "avikan-tier2chest", "parameters" : { "colorIndex" : [0, 1, 11] } },
+			  { "name" : "avikan-tier3chest", "parameters" : { "colorIndex" : [0, 1, 11] } },
+			  { "name" : "avikan-tier4chest", "parameters" : { "colorIndex" : [0, 1, 11] } }
+            ],
+            "legs" : [
+              { "name" : "avikan-warriorlegs", "parameters" : { "colorIndex" : [0, 1, 11] } },
+			  { "name" : "avikan-tier1legs", "parameters" : { "colorIndex" : [0, 1, 11] } },
+			  { "name" : "avikan-tier2legs", "parameters" : { "colorIndex" : [0, 1, 11] } },
+			  { "name" : "avikan-tier3legs", "parameters" : { "colorIndex" : [0, 1, 11] } },
+			  { "name" : "avikan-tier4legs", "parameters" : { "colorIndex" : [0, 1, 11] } }
+            ],
+			"primary" : [
+			  "avikantier2shortsword",
+			  "avikantier2broadsword",
+			  "avikantier2axe",
+			  "avikantier2hammer",
+			  "avikantier2spear"
+			],
+			"sheathedprimary" : [
+			  "avikan-tier1bow",
+			  "avikan-bonecrossbow"
+			],
+			"alt" : [
+			  "avikanboneshield"
+			]
+          }
+        ] ]
+    ],
+	//TRINKIAN EQUIPMENT
+    "trink" : [
+      [0, [
+		  {
+            "head" : [
+			  { "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "trink-combatchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "trink-combatlegs", "parameters" : { "colorIndex" : 0 } }
+            ],
+			"primary" : [
+			  "trinktier2prod",
+			  "trinktier2longprod"
+			],
+			"sheathedprimary" : [
+			  "trinktier2rifle",
+			  "trinktier2pistol"
+			],
+			"alt" : [
+			  "trinkshield"
+			]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 100.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 0.5
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "healthRegen" : {
+        "baseValue" : 0.0
+      }
+    }
+  }
+}

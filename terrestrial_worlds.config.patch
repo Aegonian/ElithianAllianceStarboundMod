@@ -1,0 +1,42 @@
+[
+//Changes to existing planet types / dungeon generation
+
+//This section adds new sub-biomes to existing main biomes/planet types
+
+	//DESERT WETLANDS
+	{ "op":"add","path": "/planetTypes/desert/layers/surface/secondaryRegions/-", "value": "thea-desertwetlands" },
+	
+	//DESERT WETLANDS BIOME PARAMETERS
+	{ "op":"add",
+	  "path": "/regionTypes/thea-desertwetlands",
+	  "value": 
+		{
+		  "blockSelector" : [ "remixedPoolsSurface" ],
+		  "fgCaveSelector" : [ "empty" ],
+		  "caveLiquid" : [ "quicksand" ],
+		  "caveLiquidSeedDensityRange" : [5, 10],
+		  "encloseLiquids" : true,
+		  "bgCaveSelector" : [ "empty" ],
+		  "biome" : [
+			[0, [ "thea-desertwetlands" ]]
+		  ]
+		}
+	},
+
+//This section adds the actual dungeons to the game, mixed in with existing dungeons
+	
+	//AVIKAN CAMP
+	{ "op":"add", "path": "/planetTypes/desert/layers/surface/dungeons/-", "value": [ 5.0, "avikancamp" ] },
+	{ "op":"add", "path": "/planetTypes/savannah/layers/surface/dungeons/-", "value": [ 5.0, "avikancamp" ] },
+	
+	//AVIKAN COLONY
+	{ "op":"add", "path": "/planetTypes/desert/layers/surface/dungeons/-", "value": [ 5.0, "avikancolony" ] },
+	{ "op":"add", "path": "/planetTypes/savannah/layers/surface/dungeons/-", "value": [ 5.0, "avikancolony" ] },
+	{ "op":"add", "path": "/planetTypes/scorchedcity/layers/surface/dungeons/-", "value": [ 4.0, "avikancolony" ] },
+	
+	//TRINKIAN COLONY
+	{ "op":"add", "path": "/planetTypes/forest/layers/surface/dungeons/-", "value": [ 4.0, "trinkcolony" ] },
+	{ "op":"add", "path": "/planetTypes/snow/layers/surface/dungeons/-", "value": [ 5.0, "trinkcolony" ] },
+	{ "op":"add", "path": "/planetTypes/tundra/layers/surface/dungeons/-", "value": [ 5.0, "trinkcolony" ] }
+	
+]

@@ -1,0 +1,31 @@
+{
+  "projectileName" : "avikankeffridersspear",
+  "physics" : "thea-throwingspear",
+  "bounces" : 0,
+  "image" : "avikankeffridersspear.png",
+  "animationCycle" : 1.0,
+  "frameNumber" : 1,
+  "emitters" : [ "daggerblue" ],
+  "power" : 20,
+  "damagePoly" : [[-20, 5], [20, 5], [20, -5], [-20, -5]],
+  "knockback" : 10,
+  "piercing" : true,
+  "knockbackDirectional" : true,
+  "timeToLive" : 5,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+	{
+      "action" : "projectile",
+      "type" : "avikankeffridersspear-returning",
+      "inheritDamageFactor" : 0.0,
+      "inheritSpeedFactor" : 1.0,
+      "angleAdjust" : 0
+    }
+  ],
+  "damageKind" : "keffridersspear",
+  "hydrophobic" : false,
+
+  //"scripts" : ["/projectiles/killable.lua"],
+  "scripts" : ["/projectiles/scripts/thea-throwingspear.lua"],
+  "lifetimeAfterCollision" : 1.0
+}

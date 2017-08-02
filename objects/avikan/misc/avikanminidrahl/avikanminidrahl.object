@@ -1,0 +1,46 @@
+{
+  "objectName" : "avikanminidrahl",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 125,
+  "description" : "A small, inactive drone.",
+  "shortdescription" : "Inactive Drahlid",
+  "race" : "avikan",
+
+  "apexDescription" : "A small drone, probably used for reconnaissance purposes.",
+  "avianDescription" : "A tiny drone. I'm not sure how it's supposed to be able to fly...",
+  "floranDescription" : "Tiny drone doesss not sscare Floran. Floran crussshess puny droness.",
+  "glitchDescription" : "Observation. This drone is likely meant for reconnaissance purposes.",
+  "humanDescription" : "A tiny drone. Is it autonomous, or remotely controlled?",
+  "hylotlDescription" : "A small reconnaissance drone.",
+  "novakidDescription" : "Some sorta tiny drone.",
+
+  "aegiDescription" : "A small reconnaissance drone. It doesn't have any weapons built into it.",
+  "avikanDescription" : "A Drahlid. We use these to scout areas before sending in our troops.",
+  "erixianDescription" : "I doubt a drone like this could do much damage in combat.",
+  "trinkDescription" : "A small reconnaissance drone, not unlike our own.",
+  "hymidDescription" : "A small drone like this could easily infiltrate enemy lines.",
+  "notixDescription" : "An expendable reconnaissance drone.",
+  "jorgasianDescription" : "A reconnaissance drone. I doubt it has any weaponry built into it.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected Drahlid unit. Status: inactive.",
+
+  "inventoryIcon" : "avikanminidrahlicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanminidrahl.png:<color>",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

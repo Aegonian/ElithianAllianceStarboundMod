@@ -1,0 +1,45 @@
+{
+  "objectName" : "avikantapestryrolls",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A couple of rolled up leather tapestries.",
+  "shortdescription" : "Avikan Tapestry Rolls",
+  "race" : "avikan",
+
+  "apexDescription" : "Rolls of leather tapestry.",
+  "avianDescription" : "Dull tapestries.",
+  "floranDescription" : "Leather wasss once skinsss.",
+  "glitchDescription" : "Observation. A number of neatly rolled up leather tapestries.",
+  "humanDescription" : "These tapestries would look better with a bit of colour.",
+  "hylotlDescription" : "Leather tapestries. Useful as decoration.",
+
+  "aegiDescription" : "A number of leather tapestries, rolled up so they are easier to store.",
+  "avikanDescription" : "Where shall I put these tapestries?",
+  "erixianDescription" : "Leather tapestries. Plain and simple.",
+  "trinkDescription" : "A number of rolled up leather tapestries.",
+  "hymidDescription" : "Leather tapestries rolled up for storage. Or transport, perhaps.",
+  "notixDescription" : "Rolled up leather tapestries.",
+  "jorgasianDescription" : "A number of simple leather tapestries, rolled up to make them easier to store.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Scan completed. Material: leather.",
+
+  "inventoryIcon" : "avikantapestryrollsicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikantapestryrolls.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

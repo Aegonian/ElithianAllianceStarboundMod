@@ -1,0 +1,9 @@
+{
+  "name" : "kadavanswarm",
+  "category" : "kadavanswarm",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "kadavanswarm.png"
+  }
+}

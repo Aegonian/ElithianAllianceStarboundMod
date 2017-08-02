@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "avikanmetal", "count" : 3 },
+	{ "item" : "avikancloth", "count" : 2 },
+	{ "item" : "avikanspices", "count" : 1 }
+  ],
+  "output" : { "item" : "avikanmarketstallfood", "count" : 1 },
+  "groups" : [ "avikanmetalcrafting", "metalfurniture", "all" ]
+}

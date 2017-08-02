@@ -1,0 +1,44 @@
+{
+  "objectName" : "avikanrocketdisplay",
+  "colonyTags" : ["avikan","combat"],
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 500,
+  "description" : "An Avikan rocket launcher on display.",
+  "shortdescription" : "Vanguard RPG Display",
+  "race" : "avikan",
+
+  "apexDescription" : "This rocket launcher looks intimidating.",
+  "avianDescription" : "A weapon of great power.",
+  "floranDescription" : "Floran not scared by boom-ssstick.",
+  "glitchDescription" : "Intimidated. A single rocket from this weapon could destroy my frame.",
+  "humanDescription" : "A bad-ass rocket launcher if I ever saw one!",
+  "hylotlDescription" : "A weapon of great destructive power.",
+
+  "aegiDescription" : "An impressive weapon of Avikan design.",
+  "avikanDescription" : "This Vanguard rocket launcher instills fear into any enemy.",
+  "erixianDescription" : "A rocket launcher built by the Avikan. They sure know how to build intimidating weapons.",
+  "trinkDescription" : "A rather inefficient killing machine, but effective nonetheless.",
+  "hymidDescription" : "I wouldn't recommend using a weapon like this underwater.",
+  "notixDescription" : "This weapon was built to intimidate, and it's doing its job rather well.",
+  "jorgasianDescription" : "A rocket launcher of Avikan design.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Explosive weapon detected. Please exercise caution.",
+  
+  "inventoryIcon" : "avikanrocketdisplay.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanrocketdisplay.png:<color>",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

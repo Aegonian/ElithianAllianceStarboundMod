@@ -1,0 +1,11 @@
+{
+  "itemName" : "alliancehullpanel",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "alliancehullpanel.png",
+  "shortdescription" : "Alliance Hull Panel",
+  "description" : "Durable metal plating, often used in the construction of spacestations and spaceships.",
+
+  "materialId" : 30079
+}

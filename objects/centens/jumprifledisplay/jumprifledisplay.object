@@ -1,0 +1,44 @@
+{
+  "objectName" : "jumprifledisplay",
+  "colonyTags" : ["centens","combat"],
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 500,
+  "description" : "A Centensian jumprifle on display.",
+  "shortdescription" : "Jumprifle Display",
+  "race" : "centens",
+
+  "apexDescription" : "An ancient weapon, seems it no longer fires.",
+  "avianDescription" : "An ancient rifle of some sort. No longer fires.",
+  "floranDescription" : "Old gunsss shootsss no more...",
+  "glitchDescription" : "Observation. This weapon is ancient, and no longer functional.",
+  "humanDescription" : "An ancient weapon! Doesn't seem to fire any longer...",
+  "hylotlDescription" : "An ancient rifle. Its firing mechanism is broken.",
+
+  "aegiDescription" : "This ancient jumprifle no longer fires.",
+  "avikanDescription" : "A jumprifle, built by the Old Ones. Seems it no longer fires.",
+  "erixianDescription" : "A Centensian jumprifle. Out of order, unfortunately.",
+  "trinkDescription" : "An ancient jumprifle. In mint condition, but it no longer fires.",
+  "hymidDescription" : "A Centensian jumprifle! It no longer fires, unfortunately...",
+  "notixDescription" : "This Centensian weapon no longer fires.",
+  "jorgasianDescription" : "The Centens built grand weapons, but many stopped after eons of disuse.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected Centensian jumpgate technology. Status: inactive.",
+  
+  "inventoryIcon" : "jumprifledisplay.png",
+  "orientations" : [
+    {
+      "image" : "jumprifledisplay.png:<color>",
+      "imagePosition" : [-8, -16],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

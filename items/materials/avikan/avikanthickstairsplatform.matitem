@@ -1,0 +1,12 @@
+{
+  "itemName" : "avikanthickstairsplatform",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "avikanthickstairsplatform.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "description" : "Sturdy metal stairs.",
+  "shortdescription" : "Thick Avikan Stairs",
+
+  "materialId" : 30106
+}

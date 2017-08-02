@@ -1,0 +1,43 @@
+{
+  "objectName" : "theleandropship",
+  "colonyTags" : ["thelean"],
+  "rarity" : "Legendary",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 5000,
+  "description" : "A Thelean-built dropship. Small, to Thelean standards.",
+  "shortdescription" : "Thelean Dropship",
+  "race" : "thelean",
+  
+  "health" : 6,
+
+  "apexDescription" : "That dropship is massive!",
+  "avianDescription" : "An alien dropship - it's massive!",
+  "floranDescription" : "Floran not ssscared by giant ssshipss...",
+  "glitchDescription" : "Intimidated. If the dropships are this big, how big must the regular ships be?",
+  "humanDescription" : "A massive dropship - how big must the regular ships be?",
+  "hylotlDescription" : "An enormous dropship. I fear for what the regular ships must be like...",
+  "novakidDescription" : "T'is a dropship, alright, and a big one at that!",
+
+  "aegiDescription" : "Thelean dropships are massive. But compared to regular Thelean ships, this one is tiny.",
+  "avikanDescription" : "A Thell dropship - its owners can't be far.",
+  "erixianDescription" : "The Theleans certainly know how to build large ships.",
+  "trinkDescription" : "A massive Thelean dropship. No use trying to hijack it - Thelean technology only works for Theleans.",
+  "hymidDescription" : "Thelean dropships have always scared me...",
+  "notixDescription" : "A dropship of Thelean origin. It means that Thelean troops can't be far.",
+  "jorgasianDescription" : "A massive dropship for certain - the Theleans build to intimidate.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "One of our dropships. My kin must be near...",
+  "drodenDescription" : "Detected Thelean dropship. Warning: exercise extreme caution.",
+
+  "inventoryIcon" : "theleandropshipicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "theleandropship.png:<color>",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1
+    }
+  ]
+}

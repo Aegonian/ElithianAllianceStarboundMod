@@ -1,0 +1,46 @@
+{
+  "objectName" : "avikanbonetable",
+  "colonyTags" : ["avikan", "commerce"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 40,
+  "description" : "A table made of bone, covered in leather.",
+  "shortdescription" : "Avikan Bone Table",
+  "race" : "avikan",
+
+  "apexDescription" : "A table made of bone.",
+  "avianDescription" : "A primitive table.",
+  "floranDescription" : "Tablesss made of bonesss.",
+  "glitchDescription" : "Statement. A table made of bone.",
+  "humanDescription" : "A table made of bone. How lovely.",
+  "hylotlDescription" : "A table made of a monster's bones. Primitive, but surprisingly sturdy.",
+
+  "aegiDescription" : "A simple bone table.",
+  "avikanDescription" : "A traditional bone table.",
+  "erixianDescription" : "A bone table.",
+  "trinkDescription" : "A primitive bone table.",
+  "hymidDescription" : "A table made of bone.",
+  "notixDescription" : "A primitive bone table.",
+  "jorgasianDescription" : "A simple bone table.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Table. Bone.",
+
+  "inventoryIcon" : "avikanbonetableicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanbonetable.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}

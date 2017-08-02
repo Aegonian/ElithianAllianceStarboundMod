@@ -1,0 +1,10 @@
+{
+  "itemName" : "trinkmetal",
+  "price" : 50,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "trinkmetal.png",
+  "description" : "A metal cube, easily stored and ready for crafting.",
+  "shortdescription" : "Trinkian Metal",
+  "itemTags" : [ "reagent" ]
+}

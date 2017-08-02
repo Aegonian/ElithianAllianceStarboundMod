@@ -1,0 +1,93 @@
+{
+  "itemName" : "droden-violatedrifle",
+  "price" : 325,
+  "inventoryIcon" : "droden-violatedrifle.png",
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A hacked Droden Assault Rifle.",
+  "shortdescription" : "Violated Droden Rifle",
+  "level" : 1,
+  "fixedLevel" : false,
+  "tooltipKind" : "gun",
+  "category" : "Assault Rifle",
+  "itemTags" : ["weapon","ranged","assaultrifle","energy","avikan"],
+  "twoHanded" : true,
+  
+  "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
+  "animationParts" : {
+    "middle" : "droden-violatedrifle.png",
+    "middleFullbright" : "droden-violatedriflelights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/violatedmuzzle.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [0.6, 0.2]
+		  }
+		}
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/plasma_ar1.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.6, 0.2],
+  "muzzleOffset" : [1.6, 0.24],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.11,
+    "baseDps" : 10.5,
+    "energyUsage" : 31.5,
+    "inaccuracy" : 0.025,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "violatedbullet",
+    "projectileParameters" : {
+      "knockback" : 6
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.075,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

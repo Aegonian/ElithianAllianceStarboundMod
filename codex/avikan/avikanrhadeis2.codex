@@ -1,0 +1,20 @@
+{
+  "id" : "avikanrhadeis2",
+  "species" : "avikan",
+  "title" : "Rhadeis - Part 2",
+  "description" : "Notes on Rhadeis, by Izyati as-Kaladan.",
+  "icon" : "avikanrhadeis2.png",
+  "contentPages" : [
+
+    "The artefacts of the Old Ones were scattered all across Kadavan, and were found by the Avikan of ancient times long before they developed a modern society. These artefacts guided our technological development, and without them, we would not have been who we are today.",
+
+    "While most artefacts were simply found, the first few artefacts our ancient ancestors acquired are said to have been given to them directly by one of the Old Ones. Our ancestors took this as a sign that a divine creature, Rhadeis, then known simply as Dhas, or God, looked over us and that he created not only the artefacts, but the world and ourselves as well.",
+    
+    "Sometime around 2500 BF, our nomadic ancestors found a city, a construct they had never seen before, which was decorated in the same style as the artefacts. Our ancestors believed it to be the Seat of Dhas, and eventually settled there."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

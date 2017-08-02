@@ -1,0 +1,45 @@
+{
+  "objectName" : "trinkprodrack",
+  "colonyTags" : ["trink","combat"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 40,
+  "description" : "A collection of Trinkian long prods.",
+  "shortdescription" : "Trinkian Prod Rack",
+  "race" : "trink",
+
+  "apexDescription" : "Long prods. For cattle, or for enemies?",
+  "avianDescription" : "Electrifying prods. Far stronger than those used to herd cattle.",
+  "floranDescription" : "Floran think sspearsss look ssstrange...",
+  "glitchDescription" : "Observation. Alien prods.",
+  "humanDescription" : "I wouldn't want to get zapped by one of these prods.",
+  "hylotlDescription" : "Long electric prods. For defensive combat.",
+
+  "aegiDescription" : "A Avikan Vanguard uses spears as their primary close-range weapon.",
+  "avikanDescription" : "Alien weaponry. The Nomada might have a use for this.",
+  "erixianDescription" : "Electric prods. Rather lengthy.",
+  "trinkDescription" : "Trinkian longprods are excellent weapons for defensive combat.",
+  "hymidDescription" : "A bunch of electric prods. Better not use these underwater.",
+  "notixDescription" : "The Trink prefer to keep assailants outside of melee range using prods like these.",
+  "jorgasianDescription" : "A couple of electric prods built by the Trink.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Analysis complete. Detected alien weaponry. Eletric generators detected.",
+
+  "inventoryIcon" : "trinkprodrackicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "trinkprodrack.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

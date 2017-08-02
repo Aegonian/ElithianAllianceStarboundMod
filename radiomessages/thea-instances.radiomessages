@@ -1,0 +1,8 @@
+{
+  //AVIKAN QUEST - STOPPING THE CORRUPTION  
+  "vanguarddronebattle1" : {
+    "type" : "mission",
+    "text" : "Your target is the Violated Elite Drahl located in this area. Take it out, then find the return teleporter in a small storage room to the east.",
+    "persistTime" : 8.0
+  }
+}

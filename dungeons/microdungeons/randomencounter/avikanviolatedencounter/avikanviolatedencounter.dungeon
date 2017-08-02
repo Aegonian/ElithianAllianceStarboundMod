@@ -1,0 +1,45 @@
+{
+  "metadata" : {
+    "name" : "avikanviolatedencounter",
+    "species" : "avikan",
+    "rules" : [
+    ],
+	
+    "anchor" : [ "avk-violateddrahlswarm", "avk-violateddroden1", "avk-violateddroden2", "avk-violateddroden3" ],
+
+    "maxRadius" : 1000000,
+    "maxParts" : 3,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "avk-violateddrahlswarm",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "avk-violateddrahlswarm.json" ]
+    },
+	{
+      "name" : "avk-violateddroden1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "avk-violateddroden1.json" ]
+    },
+	{
+      "name" : "avk-violateddroden2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "avk-violateddroden2.json" ]
+    },
+	{
+      "name" : "avk-violateddroden3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "avk-violateddroden3.json" ]
+    }
+  ]
+}

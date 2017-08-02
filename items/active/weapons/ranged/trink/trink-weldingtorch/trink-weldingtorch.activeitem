@@ -1,0 +1,100 @@
+{
+  "itemName" : "trink-weldingtorch",
+  "price" : 1250,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A welding torch of Trinkian design. It burns incredibly hot.",
+  "shortdescription" : "Trinkian Welding Torch",
+  "tooltipKind" : "gun",
+  "category" : "Welding Torch",
+  "itemTags" : ["weapon","ranged","trink","flamethrower"],
+  "twoHanded" : true,
+  "level" : 1,
+  
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : { },
+  "animationCustom" : {
+    "sounds" : {
+      "fireLoop" : [ "/sfx/projectiles/dragonprojectile_loop.ogg" ]
+    }
+  },
+
+  "baseOffset" : [-0.6, 0.1],
+  "muzzleOffset" : [0.0, 0.75],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "fire",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-flamethrower/thea-flamethrower.lua"],
+    "class" : "TheaFlamethrowerAttack",
+	
+    "baseDps" : 10,
+    "energyUsage" : 30,
+    "fireTime" : 0.065,
+    "inaccuracy" : 0.05,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+	
+	"projectileType" : "trinkweldingflame",
+    "projectileParameters" : {},
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.05,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+  "fireSounds" : [ "" ],
+
+  "builder" : "/items/buildscripts/buildweapon.lua",
+  "builderConfig" : [{
+    "nameGenerator" : "trink-weldingtorchnames.config:nameGen",
+    "animationParts" : {
+      "butt" : {
+        "path" : "butt/<variant>.png",
+        "variants" : 2,
+        "paletteSwap" : true
+      },
+      "middle" : {
+        "path" : "middle/<variant>.png",
+        "variants" : 3,
+        "paletteSwap" : true
+      },
+      "barrel" : {
+        "path" : "barrel/<variant>.png",
+        "variants" : 1,
+        "paletteSwap" : true
+      },
+      "muzzleFlash" : ""
+    },
+    "gunParts" : ["butt", "middle", "barrel"],
+    "palette" : "/items/active/weapons/colors/ranged.weaponcolors",
+    "iconDrawables" : ["butt", "middle", "barrel"]
+  }]
+}

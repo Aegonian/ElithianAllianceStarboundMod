@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "monsterleather", "count" : 6 },
+    { "item" : "avikanstring", "count" : 1 },
+    { "item" : "avikandarkmetal", "count" : 2 }
+  ],
+  "output" : { "item" : "avikanopencanopy", "count" : 1 },
+  "groups" : [ "avikanleathercrafting", "leatherfurniture", "all" ]
+}

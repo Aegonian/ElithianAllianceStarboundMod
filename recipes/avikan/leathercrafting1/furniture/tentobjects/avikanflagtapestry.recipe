@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "monsterleather", "count" : 5 },
+    { "item" : "avikanstring", "count" : 1 }
+  ],
+  "output" : { "item" : "avikanflagtapestry", "count" : 1 },
+  "groups" : [ "avikanleathercrafting", "leatherfurniture", "all" ]
+}

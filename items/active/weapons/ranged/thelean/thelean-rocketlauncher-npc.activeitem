@@ -1,0 +1,83 @@
+{
+  "itemName" : "thelean-rocketlauncher-npc",
+  "price" : 650,
+  "inventoryIcon" : "thelean-rocketlauncher.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A powerful flux rifle which fires explosive, target-seeking projectiles.",
+  "shortdescription" : "Keth (NPC)", //Translates to: Death
+  "level" : 6,
+  "tooltipKind" : "gun",
+  "category" : "Flux Launcher",
+  "itemTags" : ["weapon","ranged","rocketlauncher","thelean"],
+  "twoHanded" : true,
+  
+  "cursor" : "/cursors/thea-widetheleanreticle.cursor",
+  
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "thelean-rocketlauncher.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/theleanmuzzle.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/gun/plasma_mp1.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.5, 0.5],
+  "muzzleOffset" : [-0.125, 0.0],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "fire",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 2.0,
+    "baseDps" : 7.5,
+    "energyUsage" : 55.0,
+    "inaccuracy" : 0.15,
+
+    "projectileCount" : 6,
+    "fireType" : "auto",
+
+    "projectileType" : "theleanfluxgrenade-nogravity",
+    "projectileParameters" : {},
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.35,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

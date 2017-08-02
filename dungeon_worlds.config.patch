@@ -1,0 +1,81 @@
+[	
+  {
+    "op" : "add",
+    "path" : "/avikanoutpost",
+    "value" : {
+      "primaryDungeon" : "avikanoutpost",
+      "threatLevel" : 1,
+      "gravity" : 80,
+      "worldSize" : [2000, 1000],
+      "dungeonBaseHeight" : 350,
+      "ambientLightLevel" : [150, 150, 160],
+      "biome" : "avikanoutpost",
+      "ambientNoises" : "/sfx/environmental/space_loop2.ogg",
+      "musicTrack" : "/music/planetarium.ogg"
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/thea-missiontemplate",
+    "value" : {
+      "primaryDungeon" : "thea-missiontemplate",
+      "threatLevel" : 6,
+      "gravity" : 80,
+      "worldSize" : [2000, 1000],
+      "dungeonBaseHeight" : 350,
+      "ambientLightLevel" : [32, 32, 32],
+      "biome" : "desert",
+      "ambientNoises" : "/sfx/environmental/space_loop1.ogg",
+      "musicTrack" : "/music/event-horizon.ogg",
+	  "environmentStatusEffects" : ["dontstarve"]
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/vanguarddronebattle",
+    "value" : {
+      "primaryDungeon" : "vanguarddronebattle",
+      "threatLevel" : 6,
+      "gravity" : 80,
+      "worldSize" : [2000, 1000],
+      "dungeonBaseHeight" : 450,
+      "ambientLightLevel" : [32, 32, 32],
+      "biome" : "desert",
+      "ambientNoises" : "/sfx/environmental/desert_day.ogg",
+      "musicTrack" : "/music/ocean-battle1-loop.ogg",
+	  "environmentStatusEffects" : ["dontstarve"]
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/avikanmission-intro",
+    "value" : {
+      "primaryDungeon" : "avikanmission-intro",
+      "threatLevel" : 6,
+      "gravity" : 80,
+      "worldSize" : [2000, 1000],
+      "dungeonBaseHeight" : 450,
+      "ambientLightLevel" : [32, 32, 32],
+      "biome" : "desert",
+      "ambientNoises" : "/sfx/environmental/desert_day.ogg",
+      "musicTrack" : "/music/event-horizon.ogg",
+	  "environmentStatusEffects" : ["dontstarve"]
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/avikanmission-combat1",
+    "value" : {
+      "primaryDungeon" : "avikanmission-combat1",
+      "threatLevel" : 6,
+      "gravity" : 80,
+      "worldSize" : [2000, 1000],
+      "dungeonBaseHeight" : 450,
+      "ambientLightLevel" : [32, 32, 32],
+      "biome" : "desert",
+      "ambientNoises" : "/sfx/environmental/desert_day.ogg",
+      "musicTrack" : "/music/event-horizon.ogg",
+	  "environmentStatusEffects" : ["dontstarve"]
+    }
+  }
+]

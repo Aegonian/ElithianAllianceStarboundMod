@@ -1,0 +1,77 @@
+{
+  "type" : "theleanscout",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "theleanDeathTreasure" ],
+
+  "scriptConfig" : {
+	"behaviorConfig" : {
+      //Melee Behaviour
+	  "leapWindup" : 0.75,
+	  
+	  //Ranged Behaviour
+	  "rangedAimTime": 0.5,
+	  "rangedWindupTime": 0.05,
+	  "rangedMinFireTime": 1,
+	  "rangedMaxFireTime": 2,
+	  "bowDrawTime": 1,
+	  "arrowSpeed": 62.5
+    },
+	
+	"combat" : {
+      "meleeWeaponWindups" : {
+        "default" : 0.05
+      },
+      "meleeWeaponCooldowns" : {
+        "default" : 0.5
+      }
+    },
+	
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Vatha'rak athas!",				//Intruder there!
+            "Erras se vahl!",				//Hunt the enemy!
+            "Creaton thasse dhas!",			//Creaton take you!
+            "Thelea nah'mark!"				//Thelea above!
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "thelean-mediumhead" }, { "name" : "thelean-verylighthead" } ],
+            "chest" : [ { "name" : "thelean-lightchest" } ],
+            "primary" : [
+              "thelean-pistol"
+            ],
+            "sheathedprimary" : [
+              "thelean-tendril"
+            ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 50.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 0.75
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "healthRegen" : {
+        "baseValue" : 0.0
+      }
+    }
+  }
+}

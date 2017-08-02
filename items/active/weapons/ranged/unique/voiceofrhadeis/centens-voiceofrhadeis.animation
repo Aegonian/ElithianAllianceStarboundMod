@@ -1,0 +1,209 @@
+{
+  "globalTagDefaults" : {
+    "paletteSwaps" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "firing" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "fire" : {
+            "frames" : 2,
+            "cycle" : 0.07,
+            "mode" : "transition",
+            "transition" : "off"
+          }
+        }
+      },
+	  "ammoType" : {
+        "default" : "1",
+        "states" : {
+          "1" : {
+			"frames" : 1,
+			"properties" : {
+			  "particleEmittersOn" : [ "xanafianAmmo" ],
+			  "particleEmittersOff" : [ "fireAmmo", "iceAmmo", "electricAmmo", "poisonAmmo" ]
+			}
+		  },
+          "2" : {
+			"frames" : 1,
+			"properties" : {
+			  "particleEmittersOn" : [ "fireAmmo" ],
+			  "particleEmittersOff" : [ "xanafianAmmo", "iceAmmo", "electricAmmo", "poisonAmmo" ]
+			}
+		  },
+          "3" : {
+			"frames" : 1,
+			"properties" : {
+			  "particleEmittersOn" : [ "iceAmmo" ],
+			  "particleEmittersOff" : [ "fireAmmo", "xanafianAmmo", "electricAmmo", "poisonAmmo" ]
+			}
+		  },
+          "4" : {
+			"frames" : 1,
+			"properties" : {
+			  "particleEmittersOn" : [ "electricAmmo" ],
+			  "particleEmittersOff" : [ "fireAmmo", "iceAmmo", "xanafianAmmo", "poisonAmmo" ]
+			}
+		  },
+          "5" : {
+			"frames" : 1,
+			"properties" : {
+			  "particleEmittersOn" : [ "poisonAmmo" ],
+			  "particleEmittersOff" : [ "fireAmmo", "iceAmmo", "electricAmmo", "xanafianAmmo" ]
+			}
+		  }
+        }
+      }
+    },
+
+    "parts" : {
+      "gun" : {
+        "properties" : {
+          "centered" : true,
+          "image" : "<partImage><paletteSwaps>",
+          "offset" : [0, 0], // x offset is set dynamically
+          "transformationGroups" : ["weapon"]
+        }
+      },
+	  "ammoType" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "image" : "<partImage><paletteSwaps>",
+          "offset" : [0, 0], // x offset is set dynamically
+          "transformationGroups" : ["weapon"],
+          "fullbright" : true		  
+        },
+        "partStates" : {
+          "ammoType" : {
+            "1" : {
+              "properties" : {
+                "image" : "<partImage>:xanafian.<frame><paletteSwaps>"
+              }
+            },
+            "2" : {
+              "properties" : {
+                "image" : "<partImage>:fire.<frame><paletteSwaps>"
+              }
+            },
+            "3" : {
+              "properties" : {
+                "image" : "<partImage>:ice.<frame><paletteSwaps>"
+              }
+            },
+            "4" : {
+              "properties" : {
+                "image" : "<partImage>:electric.<frame><paletteSwaps>"
+              }
+            },
+            "5" : {
+              "properties" : {
+                "image" : "<partImage>:poison.<frame><paletteSwaps>"
+              }
+            }
+          }
+        }
+      },
+      "muzzleFlash" : {
+        "properties" : {
+          "zLevel" : -1,
+          "centered" : true,
+          "offset" : [0.75, 0],
+          "fullbright" : true,
+          "transformationGroups" : ["muzzle"]
+        },
+        "partStates" : {
+          "firing" : {
+            "off" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:<ammoIndex>.<variant>.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "rotationGroups" : {
+    "weapon" : {
+      "angularVelocity" : 0
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "muzzle" : {}
+  },
+
+  "particleEmitters" : {
+    "muzzleFlash" : {
+      "emissionRate" : 10.0,
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [0, 0, 0, 0],
+      "particles" : [ ]
+    },
+	"xanafianAmmo" : {
+      "emissionRate" : 3.0,
+      "transformationGroups" : ["weapon"],
+      "offsetRegion" : [0.5, 0.25, 1.0, 0.75],
+      "particles" : [
+        { "particle" : "xanafiantrail"}
+      ]
+    },
+	"fireAmmo" : {
+      "emissionRate" : 6.0,
+      "transformationGroups" : ["weapon"],
+      "offsetRegion" : [0.5, 0.25, 1.0, 0.75],
+      "particles" : [
+        { "particle" : "thea-rhadeisfire"},
+		{ "particle" : "thea-rhadeisfire"}
+      ]
+    },
+	"iceAmmo" : {
+      "emissionRate" : 2.0,
+      "transformationGroups" : ["weapon"],
+      "offsetRegion" : [0.5, 0.25, 1.0, 0.75],
+      "particles" : [
+        { "particle" : "thea-rhadeisice"}
+      ]
+    },
+	"electricAmmo" : {
+      "emissionRate" : 2.0,
+      "transformationGroups" : ["weapon"],
+      "offsetRegion" : [0.5, 0.25, 1.0, 0.75],
+      "particles" : [
+        { "particle" : "thea-rhadeiselectric" }
+      ]
+    },
+	"poisonAmmo" : {
+      "emissionRate" : 5.0,
+      "transformationGroups" : ["weapon"],
+      "offsetRegion" : [0.5, 0.25, 1.0, 0.75],
+      "particles" : [
+        { "particle" : "thea-rhadeispoison"}
+      ]
+    }
+  },
+
+  "lights" : {
+    "muzzleFlash" : {
+      "active" : false,
+      "position" : [0, 0],
+      "color" : [127, 127, 127]
+    }
+  },
+
+  "sounds" : {
+    "fire" : [ ],
+	"switchAmmo" : [ ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "objectName" : "avikancrane",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A mechanical crane, useful for moving cargo.",
+  "shortdescription" : "Avikan Crane",
+  "race" : "avikan",
+
+  "apexDescription" : "A crane, probably used to load cargo onto ships and the like.",
+  "avianDescription" : "A large crane. How would one control this?",
+  "floranDescription" : "Floran doesss not like big metal armsss.",
+  "glitchDescription" : "Wondering. How does this crane's input interface work?",
+  "humanDescription" : "A crane for moving cargo. Where are the controls?",
+  "hylotlDescription" : "A large crane for moving cargo.",
+
+  "aegiDescription" : "A mechanical crane, for moving cargo.",
+  "avikanDescription" : "A mechanical crane. It can carry a lot of weight.",
+  "erixianDescription" : "This crane can carry a lot of weight.",
+  "trinkDescription" : "This crane is inefficient. It requires more hinges.",
+  "hymidDescription" : "A mechanical crane. How do the controls work?",
+  "notixDescription" : "A mechanical crane of Avikan design.",
+  "jorgasianDescription" : "A crane.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Utility: moving cargo.",
+
+
+  "inventoryIcon" : "avikancraneicon.png",
+  "orientations" : [
+    {
+      "image" : "avikancrane.png:<color>",
+
+      "imagePosition" : [-48, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "bottom" ]
+
+    },
+    {
+      "image" : "avikancrane.png:<color>",
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "trinkmetaltier4", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "trinkrail",
+    "count" : 20
+  },
+  "duration" : 0.5,
+  "groups"  : [ "trinkcrafting2", "materials", "all" ]
+}

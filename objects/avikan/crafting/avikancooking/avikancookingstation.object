@@ -1,0 +1,57 @@
+{
+  "objectName" : "avikancookingstation",
+  "colonyTags" : ["avikan", "cooking"],
+  "printable" : false,
+  "price" : 700,
+  "rarity" : "Rare",
+  "category" : "crafting",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/craftingfood.config",
+	"paneLayoutOverride" : {
+	  "windowtitle" : {
+		"title" : " Cooking Station"
+	  }
+	},
+    "filter" : [ "craftingfood" ]
+  },
+  "description" : "A machine which prepares food. Convenient.",
+  "shortdescription" : "^orange;Avikan Cooking Station^white;",
+  "race" : "avikan",
+
+  "apexDescription" : "An automated cooking station. There's nothing it can't prepare.",
+  "avianDescription" : "This station will prepare whatever food I want.",
+  "floranDescription" : "Floran disslikesss having machine prepare food.",
+  "glitchDescription" : "Intrigued. This station will automatically prepare any requested food.",
+  "humanDescription" : "An automated cooking station - that means no dish washing for me!",
+  "hylotlDescription" : "This machine will prepare my food with skill and grace.",
+  "novakidDescription" : "This 'ere station will prepare my food for me!",
+
+  "aegiDescription" : "A cooking station. I can program it to prepare any meal imaginable.",
+  "avikanDescription" : "This cooking station can prepare almost any meal.",
+  "erixianDescription" : "This station will automatically prepare whatever food I request - how convenient!",
+  "trinkDescription" : "An automated cooking station. It is wonderfully efficient.",
+  "hymidDescription" : "Somehow, this machine manages to automatically prepare food with the skill of a true cooking master.",
+  "notixDescription" : "This cooking station can prepare a great variety of meals.",
+  "jorgasianDescription" : "A cooking station, for all my automated cooking needs!",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Cooking station detected. This unit can refuel using organic food.",
+  
+  "inventoryIcon" : "avikancookingstationicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikancookingstation.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "npcToy" : {}
+}

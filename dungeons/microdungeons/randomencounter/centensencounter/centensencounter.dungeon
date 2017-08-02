@@ -1,0 +1,95 @@
+{
+  "metadata" : {
+    "name" : "centensencounter",
+    "species" : "centens",
+    "rules" : [
+    ],
+	
+    "anchor" : [ "cnt-ruin", "cnt-ruin2", "cnt-ruin3", "cnt-ruin4", "cnt-ruin5", "cnt-ruin6", "cnt-ruin7", "cnt-ruin8", "cnt-ruin9", "cnt-ruin10", "cnt-ruin11" ],
+
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 2,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "cnt-ruin",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "cnt-ruin.json" ]
+    },
+	{
+      "name" : "cnt-ruin2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "cnt-ruin2.json" ]
+    },
+	{
+      "name" : "cnt-ruin3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "cnt-ruin3.json" ]
+    },
+	{
+      "name" : "cnt-ruin4",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "cnt-ruin4.json" ]
+    },
+	{
+      "name" : "cnt-ruin5",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "cnt-ruin5.json" ]
+    },
+	{
+      "name" : "cnt-ruin6",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "cnt-ruin6.json" ]
+    },
+	{
+      "name" : "cnt-ruin7",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "cnt-ruin7.json" ]
+    },
+	{
+      "name" : "cnt-ruin8",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "cnt-ruin8.json" ]
+    },
+	{
+      "name" : "cnt-ruin9",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "cnt-ruin9.json" ]
+    },
+	{
+      "name" : "cnt-ruin10",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "cnt-ruin10.json" ]
+    },
+	{
+      "name" : "cnt-ruin11",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "cnt-ruin11.json" ]
+    }
+  ]
+}

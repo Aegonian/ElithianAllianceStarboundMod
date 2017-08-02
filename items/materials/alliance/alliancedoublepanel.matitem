@@ -1,0 +1,13 @@
+{
+  "itemName" : "alliancedoublepanel",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "alliancedoublepanel.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  
+  "shortdescription" : "Double Alliance Panel",
+  "description" : "Multi-layered metal panels.",
+
+  "materialId" : 30072
+}

@@ -1,0 +1,232 @@
+[
+  //======================= Replacing the header, body and footer to extend the codex menu =======================
+  { "op" : "replace",
+	"path" : "/paneLayout/background/fileHeader",
+	"value" : "/interface/codex/thea_codexheader.png"
+  },
+  { "op" : "replace",
+	"path" : "/paneLayout/background/fileBody",
+	"value" : "/interface/codex/thea_codexbody.png"
+  },
+  { "op" : "replace",
+	"path" : "/paneLayout/background/fileFooter",
+	"value" : "/interface/codex/thea_codexfooter.png"
+  },
+  
+  //======================= Replacing the vanilla race tab positions =============================================
+  //Row 3
+  
+  //Apex
+  { "op": "replace",
+	"path": "/paneLayout/speciesTabs/buttons/0/position",
+	"value": [58, 183]
+  },
+  //Avian
+  { "op": "replace",
+	"path": "/paneLayout/speciesTabs/buttons/1/position",
+	"value": [58, 158]
+  },
+  //Floran
+  { "op": "replace",
+	"path": "/paneLayout/speciesTabs/buttons/2/position",
+	"value": [58, 133]
+  },
+  //Glitch
+  { "op": "replace",
+	"path": "/paneLayout/speciesTabs/buttons/3/position",
+	"value": [58, 108]
+  },
+  //Human
+  { "op": "replace",
+	"path": "/paneLayout/speciesTabs/buttons/4/position",
+	"value": [58, 83]
+  },
+  //Hylotl
+  { "op": "replace",
+	"path": "/paneLayout/speciesTabs/buttons/5/position",
+	"value": [58, 58]
+  },
+  //Other
+  { "op": "replace",
+	"path": "/paneLayout/speciesTabs/buttons/6/position",
+	"value": [58, 33]
+  },
+  
+  //======================= Adding the Elithian race tabs ========================================================
+  //Row 2
+  
+  { "op": "add",
+	"path": "/paneLayout/speciesTabs/buttons/-",
+	"value": {
+	  "position" : [31, 183],
+	  "baseImage" : "/interface/codex/tab_hymid.png",
+	  "baseImageChecked" : "/interface/codex/tab_hymid_select.png",
+	  "pressedOffset" : [0, 0],
+	  "data" : {
+		"species" : "???"
+	  }
+	}
+  },
+  { "op": "add",
+	"path": "/paneLayout/speciesTabs/buttons/-",
+	"value": {
+	  "position" : [31, 158],
+	  "baseImage" : "/interface/codex/tab_jorgasian.png",
+	  "baseImageChecked" : "/interface/codex/tab_jorgasian_select.png",
+	  "pressedOffset" : [0, 0],
+	  "data" : {
+		"species" : "???"
+	  }
+	}
+  },
+  { "op": "add",
+	"path": "/paneLayout/speciesTabs/buttons/-",
+	"value": {
+	  "position" : [31, 133],
+	  "baseImage" : "/interface/codex/tab_notix.png",
+	  "baseImageChecked" : "/interface/codex/tab_notix_select.png",
+	  "pressedOffset" : [0, 0],
+	  "data" : {
+		"species" : "???"
+	  }
+	}
+  },
+  { "op": "add",
+	"path": "/paneLayout/speciesTabs/buttons/-",
+	"value": {
+	  "position" : [31, 108],
+	  "baseImage" : "/interface/codex/tab_thelean.png",
+	  "baseImageChecked" : "/interface/codex/tab_thelean_select.png",
+	  "pressedOffset" : [0, 0],
+	  "data" : {
+		"species" : "???"
+	  }
+	}
+  },
+  { "op": "add",
+	"path": "/paneLayout/speciesTabs/buttons/-",
+	"value": {
+	  "position" : [31, 83],
+	  "baseImage" : "/interface/codex/tab_trink.png",
+	  "baseImageChecked" : "/interface/codex/tab_trink_select.png",
+	  "pressedOffset" : [0, 0],
+	  "data" : {
+		"species" : "trink"
+	  }
+	}
+  },
+  
+  //======================= Adding the Elithian race tabs ========================================================
+  //Row 1
+  
+  { "op": "add",
+	"path": "/paneLayout/speciesTabs/buttons/-",
+	"value": {
+	  "position" : [4, 183],
+	  "baseImage" : "/interface/codex/tab_aegi.png",
+	  "baseImageChecked" : "/interface/codex/tab_aegi_select.png",
+	  "pressedOffset" : [0, 0],
+	  "data" : {
+		"species" : "???"
+	  }
+	}
+  },
+  { "op": "add",
+	"path": "/paneLayout/speciesTabs/buttons/-",
+	"value": {
+	  "position" : [4, 158],
+	  "baseImage" : "/interface/codex/tab_avikan.png",
+	  "baseImageChecked" : "/interface/codex/tab_avikan_select.png",
+	  "pressedOffset" : [0, 0],
+	  "data" : {
+		"species" : "avikan"
+	  }
+	}
+  },
+  { "op": "add",
+	"path": "/paneLayout/speciesTabs/buttons/-",
+	"value": {
+	  "position" : [4, 133],
+	  "baseImage" : "/interface/codex/tab_centens.png",
+	  "baseImageChecked" : "/interface/codex/tab_centens_select.png",
+	  "pressedOffset" : [0, 0],
+	  "data" : {
+		"species" : "???"
+	  }
+	}
+  },
+  { "op": "add",
+	"path": "/paneLayout/speciesTabs/buttons/-",
+	"value": {
+	  "position" : [4, 108],
+	  "baseImage" : "/interface/codex/tab_dremeton.png",
+	  "baseImageChecked" : "/interface/codex/tab_dremeton_select.png",
+	  "pressedOffset" : [0, 0],
+	  "data" : {
+		"species" : "???"
+	  }
+	}
+  },
+  { "op": "add",
+	"path": "/paneLayout/speciesTabs/buttons/-",
+	"value": {
+	  "position" : [4, 83],
+	  "baseImage" : "/interface/codex/tab_erixian.png",
+	  "baseImageChecked" : "/interface/codex/tab_erixian_select.png",
+	  "pressedOffset" : [0, 0],
+	  "data" : {
+		"species" : "???"
+	  }
+	}
+  },
+  
+  //======================= Replacing positions for other UI elements ============================================
+  { "op": "replace",
+	"path": "/paneLayout/selectLabel/position",
+	"value": [172, 208]
+  },
+  { "op": "replace",
+	"path": "/paneLayout/close/position",
+	"value": [424, 227]
+  },
+  { "op": "replace",
+	"path": "/paneLayout/bgShine/position",
+	"value": [55, 10]
+  },
+  { "op": "replace",
+	"path": "/paneLayout/scrollBG/position",
+	"value": [83, 25]
+  },
+  { "op": "replace",
+	"path": "/paneLayout/scrollArea/rect",
+	"value": [87, 35, 259, 205]
+  },
+  { "op": "replace",
+	"path": "/paneLayout/browseBG/position",
+	"value": [261, 9]
+  },
+  { "op": "replace",
+	"path": "/paneLayout/titleLabel/position",
+	"value": [350, 208]
+  },
+  { "op": "replace",
+	"path": "/paneLayout/pageText/position",
+	"value": [268, 202]
+  },
+  { "op": "replace",
+	"path": "/paneLayout/pageNum/position",
+	"value": [347, 26]
+  },
+  { "op": "replace",
+	"path": "/paneLayout/pageLabel/position",
+	"value": [347, 35]
+  },
+  { "op": "replace",
+	"path": "/paneLayout/prevButton/position",
+	"value": [264, 28]
+  },
+  { "op": "replace",
+	"path": "/paneLayout/nextButton/position",
+	"value": [376, 28]
+  }
+]

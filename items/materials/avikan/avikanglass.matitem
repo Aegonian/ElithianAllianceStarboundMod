@@ -1,0 +1,14 @@
+{
+  "itemName" : "avikanglass",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "avikanglass.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "description" : "Thick glass from Kadavan.",
+  "shortdescription" : "Avikan Glass",
+  "glitchdescription" : "Statement. Glass",
+  "florandescription" : "Glasss.",
+
+  "materialId" : 30090
+}

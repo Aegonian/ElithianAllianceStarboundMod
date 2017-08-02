@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "avikanmetal", "count" : 3 },
+	{ "item" : "avikanglassitem", "count" : 1 },
+	{ "item" : "bolbohn", "count" : 2 },
+	{ "item" : "kadavancactus", "count" : 1 }
+  ],
+  "output" : { "item" : "avikanmedicalkit", "count" : 3 },
+  "groups" : [ "avikanmetalcrafting", "consumables", "all" ]
+}

@@ -1,0 +1,43 @@
+{
+  "objectName" : "theagreenscreen",
+  "colonyTags" : ["misc"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 10,
+  "description" : "No description.",
+  "shortdescription" : "Green Screen",
+  "race" : "avikan",
+
+  "apexDescription" : "No description.",
+  "avianDescription" : "No description.",
+  "floranDescription" : "No description.",
+  "glitchDescription" : "No description.",
+  "humanDescription" : "No description.",
+  "hylotlDescription" : "No description.",
+
+  "aegiDescription" : "No description.",
+  "avikanDescription" : "No description.",
+  "erixianDescription" : "No description.",
+  "trinkDescription" : "No description.",
+  "hymidDescription" : "No description.",
+  "notixDescription" : "No description.",
+  "jorgasianDescription" : "No description.",
+  "centensDescription" : "No description.",
+  "dremetonDescription" : "No description.",
+  "hyvonDescription" : "No description.",
+  "drodenDescription" : "No description.",
+
+  "inventoryIcon" : "theagreenscreen.png",
+  "orientations" : [
+    {
+      "image" : "theagreenscreen.png:<color>",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1
+
+    }
+  ]
+}

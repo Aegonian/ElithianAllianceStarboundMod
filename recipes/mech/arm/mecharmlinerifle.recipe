@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "avikancapacitor", "count" : 5 },
+    { "item" : "avikanmetaltier6", "count" : 25 },
+    { "item" : "salvagearm", "count" : 40 },
+    { "item" : "salvagetier6", "count" : 20 }
+  ],
+  "duration" : 5,
+  "output" : { "item" : "mecharmlinerifle", "count" : 1 },
+  "groups" : [ "craftingmech", "mecharm" ]
+}

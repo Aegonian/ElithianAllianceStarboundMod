@@ -1,0 +1,47 @@
+{
+  "type" : "ao-leathermerchant",
+  "baseType" : "ao-wandermerchant",
+
+  "scriptConfig" : {    
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "poolsFile" : "/npcs/merchantpools.config",
+      
+	  "categories" : {
+        "override" : [ "avikanleather" ]
+      },
+      "buyFactorRange" : [ 0.9, 1.2 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 16,
+	  
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "Clothing Merchant",
+          "subtitle" : "  Traditional Avikan clothing."
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "avikan-merchanthead", "parameters" : { "colorIndex" : 5 } }
+            ],
+            "chest" : [
+              { "name" : "avikan-merchantchest", "parameters" : { "colorIndex" : 5 } }
+            ],
+            "legs" : [
+              { "name" : "avikan-merchantlegs", "parameters" : { "colorIndex" : 5 } }
+            ],
+            "back" : [
+              { "name" : "avikanmerchantpack", "parameters" : { "colorIndex" : 5 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

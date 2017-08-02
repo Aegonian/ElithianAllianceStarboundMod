@@ -1,0 +1,475 @@
+{
+  "globalTagDefaults" : {
+    "colour" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+
+      "movement" : {
+        "default" : "idle",
+        "states" : {
+
+          "warpInPart1" : {
+            "frames" : 4,  
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "warpInPart2"
+            },
+
+          "warpInPart2" : {
+            "frames" : 4,  
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "idle"
+            },
+
+          "idle" : {},
+
+          "warpOutPart1" : {
+            "frames" : 4,  
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "warpOutPart2"
+            },
+
+          "warpOutPart2" : {
+            "frames" : 4,  
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "invisible"
+            },
+
+          "invisible" : {}
+
+        }
+      },
+
+      "onfire" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "on" : {
+            "frames" : 5,
+            "cycle" : 0.5,
+            "mode" : "loop"
+          }
+        }
+      },
+
+      "leftThruster" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "on" : {
+            "frames" : 1,
+            "cycle" : 0.125,
+            "mode" : "loop"
+          }
+        }
+      },
+
+      "rightThruster" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "on" : {
+            "frames" : 1,
+            "cycle" : 0.125,
+            "mode" : "loop"
+          }
+        }
+      },
+
+     "headlights" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "on" : {}
+        }
+      },
+	  
+	  "engines" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "on" : {}
+        }
+      }
+
+    },
+
+    "parts" : {
+
+      "background" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : -1,
+          "transformationGroups" : ["flip", "rotation"]
+        },
+
+        "partStates" : {
+          "movement" : {
+
+            "warpInPart1" : {
+              "properties" : {}
+            },
+
+            "warpInPart2" : {
+              "properties" : {
+                "image" : "trinkhoverpodbackground.png:move.<damageState>"
+              }
+            },
+
+            "idle" : {
+              "properties" : {
+                "image" : "trinkhoverpodbackground.png:move.<damageState>"
+              }
+            },
+
+            "warpOutPart1" : {
+              "properties" : {
+                "image" : "trinkhoverpodbackground.png:move.<damageState>"
+              }
+            },
+
+            "warpOutPart2" : {
+              "properties" : {}
+            },
+
+            "invisible" : {
+              "properties" : {}
+            }
+
+          }
+        }
+      },
+
+      "foreground" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 1,
+          "transformationGroups" : ["flip", "rotation"],
+          "drivingSeatPosition" : [0, 1.3]
+        },
+
+        "partStates" : {
+
+          "movement" : {
+
+            "warpInPart1" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "warpInPart2" : {
+              "properties" : {
+                "image" : "trinkhoverpodforeground.png:move.<damageState>"
+              }
+            },
+            "idle" : {
+              "properties" : {
+                "image" : "trinkhoverpodforeground.png:move.<damageState>"
+              }
+            },
+
+            "warpOutPart1" : {
+              "properties" : {
+                "image" : "trinkhoverpodforeground.png:move.<damageState>"
+              }
+            },
+
+            "warpOutPart2" : {
+              "properties" : {}
+            },
+
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+
+      "warp" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 3,
+          "fullbright" : true,
+          "transformationGroups" : ["flip", "rotation"]
+        },
+
+        "partStates" : {
+
+          "movement" : {
+
+            "warpInPart1" : {
+              "properties" : {
+                "image" : "trinkhoverpodwarp.png:warpInPart1.<frame>"
+              }
+            },
+            "warpInPart2" : {
+              "properties" : {
+                "image" : "trinkhoverpodwarp.png:warpInPart2.<frame>"
+              }
+            },
+
+
+            "idle" : {
+              "properties" : {}
+            },
+
+
+            "warpOutPart1" : {
+              "properties" : {
+                "image" : "trinkhoverpodwarp.png:warpOutPart1.<frame>"
+              }
+            },
+            "warpOutPart2" : {
+              "properties" : {
+                "image" : "trinkhoverpodwarp.png:warpOutPart2.<frame>"
+              }
+            },
+
+
+            "invisible" : {
+              "properties" : {}
+            }
+
+          }
+        }
+      },
+
+
+      "lights" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 2,
+          "fullbright" : true,
+          "transformationGroups" : ["flip", "rotation"]
+        },
+
+        "partStates" : {
+
+          "headlights" : {
+
+            "off" : {
+              "properties" : {
+              }
+            },
+
+            "on" : {
+              "properties" : {
+                "image" : "trinkhoverpodlights.png:headlights.<damageState>",
+                "offset" : [0.0, 0.0]
+              }
+            }
+          }
+        }
+      },
+	  
+	  "engines" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 2,
+          "fullbright" : false,
+          "transformationGroups" : ["flip", "rotation"]
+        },
+
+        "partStates" : {
+
+          "engines" : {
+
+            "off" : {
+              "properties" : {
+              }
+            },
+
+            "on" : {
+              "properties" : {
+                "image" : "trinkhoverpodengines.png:engines.<frame>",
+                "offset" : [0.0, 0.0]
+              }
+            }
+          }
+        }
+      },
+
+      "fire" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 2,
+          "fullbright" : true,
+          "transformationGroups" : ["flip", "rotation"]
+        },
+
+        "partStates" : {
+          "onfire" : {
+            "on" : {
+              "properties" : {
+                "image" : "trinkhoverpodfire.png:burn.<frame>"
+              }
+            }
+          }
+        }
+      },
+
+
+      "leftThrust" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : -1,
+          "fullbright" : true,
+          "light" : [73, 150, 45],
+          "transformationGroups" : ["flip", "rotation"]
+        },
+
+        "partStates" : {
+          "leftThruster" : {
+            "on" : {
+              "properties" : {
+                "image" : "/animations/trinkhoverpodthruster/trinkhoverpodthruster.png:thrust.<thrusterFrame>",
+
+                "offset" : [-2.5, -0.5]
+              }
+            }
+          }
+        }
+      },
+
+
+      "rightThrust" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : -1,
+          "fullbright" : true,
+          "light" : [73, 150, 45],
+          "transformationGroups" : ["flip", "rotation"]
+        },
+
+        "partStates" : {
+          "rightThruster" : {
+            "on" : {
+              "properties" : {
+                "image" : "/animations/trinkhoverpodthruster/trinkhoverpodthruster.png:thrust.<thrusterFrame>",
+                "offset" : [2.0, -1.75]
+              }
+            }
+          }
+        }
+      }
+
+
+    }
+  },
+
+  "transformationGroups" : {
+    "rotation" : {
+      "interpolated" : true
+    },
+    "flip" : {}
+  },
+
+  "particleEmitters" : {
+
+    "leftThrusterIdle" : {
+      "transformationGroups" : ["flip", "rotation"],
+      "emissionRate" : 5.0,
+      "offsetRegion" : [ -2.0, -0.75, -2.0, -0.25],
+      "particles" : [{ "particle" : "thea-hoverbikethrust"}]
+    },
+    "rightThrusterIdle" : {
+      "transformationGroups" : ["flip", "rotation"],
+      "emissionRate" : 5.0,
+      "offsetRegion" : [ 2.0, -0.75, 2.0, -0.25],
+      "particles" : [{ "particle" : "thea-hoverbikethrust"}]
+    },
+
+    "leftThrusterJump" : {
+      "transformationGroups" : ["flip", "rotation"],
+      "emissionRate" : 5.0,
+      "offsetRegion" : [ -2.0, -0.75, -2.0, -0.25],
+      "particles" : [{ "particle" : "thea-hoverbikethrust"}]
+    },
+    "rightThrusterJump" : {
+      "transformationGroups" : ["flip", "rotation"],
+      "emissionRate" : 5.0,
+      "offsetRegion" : [ 2.0, -0.75, 2.0, -0.25],
+      "particles" : [{ "particle" : "thea-hoverbikethrust"}]
+    },
+
+
+    "smoke" : {
+      "transformationGroups" : ["flip", "rotation"],
+      "emissionRate" : 0.0,
+      "offsetRegion" : [0.6, 0.3, 1.0, 0.75],
+      "particles" : [{ "particle" : "burningvehiclesmokefront"}]
+    },
+    
+    "fire" : {
+      "transformationGroups" : ["flip", "rotation"],
+      "emissionRate" : 0.0,
+      "offsetRegion" : [2, 0, 3, 0.75],
+      "particles" : [ { "particle" : "burningdust"},
+                      { "particle" : "campfireflames"},
+                      { "particle" : "fireshard"},
+                      { "particle" : "burningvehiclesmokeback"}]
+
+    },
+
+    "damageIntermittent" : {
+      "transformationGroups" : ["flip", "rotation"],
+      "emissionRate" : 0.0,
+      "burstCount"  : 4,
+      "offsetRegion" : [2, 0, 3, 0.75],
+      "particles" : [{ "particle" : "burningvehiclesmokefront"},
+                     { "particle" : "fireshard"}]
+    }
+  },
+
+ "lights" : {
+   "headlightGlow" : {
+      "active" : false,
+      "transformationGroups" : ["flip", "rotation"],
+      "position" : [4.0, -0.5],
+      "color" : [121, 255, 75]
+    }
+  },
+
+  "sounds" : {
+    "collisionNotification" : [ "/sfx/tech/hoverbike_bump1.ogg",
+                                "/sfx/tech/hoverbike_bump2.ogg",
+                                "/sfx/tech/hoverbike_bump3.ogg"  ],
+
+    "collisionDamage" : ["/sfx/tech/hoverbike_crash1.ogg"],
+
+
+   "changeDamageState" : [  "/sfx/gun/grenadeblast_small_fire1.ogg",
+                            "/sfx/gun/grenadeblast_small_fire2.ogg",
+                            "/sfx/gun/grenadeblast_small_fire3.ogg" ],
+
+   "explode" : [  "/sfx/gun/grenadeblast_small_fire1.ogg",
+                  "/sfx/gun/grenadeblast_small_fire2.ogg",
+                  "/sfx/gun/grenadeblast_small_fire3.ogg" ],
+
+
+    "engineStart" : ["/sfx/tech/keff_powerup_short.ogg"],
+
+    "engineLoop" : ["/sfx/tech/hoverbike_drive_loop.ogg"],
+
+    "engineStartDamaged" : ["/sfx/tech/keff_powerup_short.ogg"],
+
+    "engineLoopDamaged" : ["/sfx/tech/hoverbike_idle_loop.ogg"],
+
+    "damageIntermittent" : [ "/sfx/gun/grenadeblast_small_fire1.ogg",
+                             "/sfx/gun/grenadeblast_small_fire2.ogg",
+                             "/sfx/gun/grenadeblast_small_fire3.ogg" ],
+
+    "hornLoop" : ["/sfx/tech/honk.ogg"],
+    "headlightSwitchOn" : ["/sfx/objects/floodlights_on.ogg"],
+    "headlightSwitchOff" : ["/sfx/objects/floodlights_off.ogg"],
+
+    "returnvehicle" : ["/sfx/tools/teleport_up.ogg"]
+
+
+  }
+}

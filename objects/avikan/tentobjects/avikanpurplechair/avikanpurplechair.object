@@ -1,0 +1,51 @@
+{
+  "objectName" : "avikanpurplechair",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "description" : "A simple leather cushion.",
+  "shortdescription" : "Rhaiod Cushion",
+  "race" : "avikan",
+  "category" : "furniture",
+  "printable" : false,
+  "price" : 50,
+
+  "apexDescription" : "A comfortable leather cushion.",
+  "avianDescription" : "A leather cushion. Simple, but quite comfortable.",
+  "floranDescription" : "Cussshionsss for sssitting!",
+  "glitchDescription" : "Surprised. This primitive leather cushion is quite comfortable.",
+  "humanDescription" : "A simple, comfortable cushion.",
+  "hylotlDescription" : "A surprisingly comfortable leather cushion.",
+  "novakidDescription" : "A leather cushion, eh?",
+
+  "aegiDescription" : "A comfortable leather cushion.",
+  "avikanDescription" : "A simple collection of leather sheets piled onto each other.",
+  "erixianDescription" : "A comfortable leather cushion.",
+  "trinkDescription" : "A simple leather cushion.",
+  "hymidDescription" : "A leather cushion. More comfortable than it looks.",
+  "notixDescription" : "A leather cushion.",
+  "jorgasianDescription" : "A simple leather cushion.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Analysis complete. Common leather cushion.",
+
+  "inventoryIcon" : "avikanpurplechairicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanpurplechair.png:<color>",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+  "sitPosition" : [2, 20]
+
+}

@@ -1,0 +1,17 @@
+{
+  "itemName" : "centensgravitystim",
+  "rarity" : "Legendary",
+  "price" : 250,
+  "category" : "Consumable",
+  "inventoryIcon" : "centensgravitystim.png",
+  "description" : "Creates a temporary gravity field distortion that pushes away projectiles.",
+  "shortdescription" : "Gravity Field Distorter",
+  "effects" : [ [
+      {
+        "effect" : "centensiangravityrepel",
+        "duration" : 30
+      }
+    ] ],
+  "emote" : "",
+  "emitters" : [ "stimuse" ]
+}

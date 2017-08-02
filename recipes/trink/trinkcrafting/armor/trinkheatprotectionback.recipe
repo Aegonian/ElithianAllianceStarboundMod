@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "trinkcoldprotectionback", "count" : 1 },
+    { "item" : "trinkmetaltier5", "count" : 6 },
+    { "item" : "trinkglassitem", "count" : 6 },
+    { "item" : "trinkelectronics", "count" : 2 },
+    { "item" : "trinkpowercore", "count" : 1 },
+    { "item" : "cryonicextract", "count" : 1 }
+  ],
+  "output" : { "item" : "trinkheatprotectionback", "count" : 1 },
+  "groups" : [ "trinkcrafting3", "armours", "hazardgear", "all" ]
+}

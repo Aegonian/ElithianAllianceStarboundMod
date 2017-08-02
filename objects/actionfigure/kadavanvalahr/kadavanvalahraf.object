@@ -1,0 +1,32 @@
+{
+  "objectName" : "kadavanvalahraf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "legendary",
+  "category" : "actionFigure",
+  "collectablesOnPickup" : { "actionfigures" : "kadavanvalahraf" },
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"A highly aggressive cave dweller, the Val'ahr has evolved wings to help it navigate Kadavan's cave systems.\"",
+  "shortdescription" : "Val'ahr Figurine",
+
+  "inventoryIcon" : "kadavanvalahraf.png",
+  "orientations" : [
+    {
+      "image" : "kadavanvalahraf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "kadavanvalahraf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type" : "avikancolonymerchant",
+  "baseType" : "avikanvillagemerchant",
+
+  "scriptConfig" : {
+	  "merchant" : {
+		"categories" : {
+		  "avikan" : [ "avikancolony" ]
+		},
+		"numItems" : 12
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ "avikan-merchantchest" ],
+            "legs" : [ "avikan-merchantlegs" ],
+            "head" : [ "avikan-engineerhead" ],
+            "back" : [ "avikanmodernpack" ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "kind" : "aegi",
+
+  "charCreationTooltip" : {
+      "title" : "Aegi",
+      "subTitle" : "Descendants of Mankind",
+      "description" : "The descendants of Humans who fled Earth in the face of a natural disaster. Diplomatic, peaceful and technologically advanced, the Aegi have established themselves as the founders of an interstellar, inter-species alliance called the Elithian Alliance."
+  },
+  
+  "playerSpecies" : true,
+  "nameGen" : [ "/species/aegimalenamegen.config:names", "/species/aegifemalenamegen.config:names" ],
+  "ouchNoises" : [ "/sfx/humanoid/humanhurt_male1.ogg", "/sfx/humanoid/humanhurt_female1.ogg" ],
+  "charGenTextLabels" : [ "Skin colour", "Hair style", "Shirt", "Legwear", "Ear style", "Hair colour", "Shirt colour", "Legwear colour", "AEGI", "Personality" ],
+  "skull" : "/humanoid/aegi/dead.png",
+  "effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=7FC9FFFF?replace=31a6ffFF=0094FFFF",
+  "defaultBlueprints" : {
+    "tier1" : [
+
+// Empty Hands
+      { "item" : "flaghuman" }
+
+    ]
+  },
+  "altOptionAsFacialMask" : true,
+  "headOptionAsHairColor" : true,
+  "bodyColorAsFacialMaskSubColor" : true,
+  "altOptionAsHairColor" : true,
+  "genders" : [
+    {
+      "name" : "male",
+      "image" : "/interface/title/male.png",
+      "characterImage" : "/interface/title/aegimale.png",
+      "hair" : [ "bald", "male1", "male2", "male3", "male4", "male5", "male6", "male7", "male8", "male9", "male10", "male11", "male12", "male13", "male14", "male15", "male16", "male17", "male18", "male19", "male20" ],
+      "shirt" : [ "aegi-asauniformchest", "aegi-asacoatchest",  "aegi-shirt", "aegi-tanktop", "aegi-formalchest" ],
+      "pants" : [ "aegi-asauniformlegs", "aegi-asacoatlegs", "aegi-shorts", "aegi-formallegs" ],
+      "facialHairGroup" : "",
+      "facialHair" : [ ],
+      "facialMaskGroup" : "ears",
+      "facialMask" : [ "1", "2", "3", "4", "5" ]
+    },
+    {
+      "name" : "female",
+      "image" : "/interface/title/female.png",
+      "characterImage" : "/interface/title/aegifemale.png",
+      "hair" : [ "bald", "fem1", "fem2", "fem3", "fem4", "fem5", "fem6", "fem7", "fem8", "fem9", "fem10", "fem11", "fem12", "fem13", "fem14", "fem15", "fem16", "fem17", "fem18", "fem19", "fem20" ],
+      "shirt" : [ "aegi-asauniformchest", "aegi-asacoatchest",  "aegi-shirt", "aegi-tanktop", "aegi-formalchest" ],
+      "pants" : [ "aegi-asauniformlegs", "aegi-asacoatlegs", "aegi-shorts", "aegi-formallegs" ],
+      "facialHairGroup" : "",
+      "facialHair" : [ ],
+      "facialMaskGroup" : "ears",
+      "facialMask" : [ "1", "2", "3", "4", "5" ]
+    }
+  ],
+  "bodyColor" : [
+	//Colours go from LIGHT to DARK
+    { "ffe2c5" : "FCE0C3", "ffc181" : "FCBF80", "d39c6c" : "D19A6B", "c7815b" : "B77450" },
+    { "ffe2c5" : "E1B98D", "ffc181" : "C88959", "d39c6c" : "9E6A4D", "c7815b" : "784930" },
+    { "ffe2c5" : "FFEEDC", "ffc181" : "FAC997", "d39c6c" : "D1A680", "c7815b" : "B58064" },
+    { "ffe2c5" : "F0DDC6", "ffc181" : "F0BB79", "d39c6c" : "C69766", "c7815b" : "AE734C" },
+    { "ffe2c5" : "FFF1D4", "ffc181" : "FFD090", "d39c6c" : "E2AB7B", "c7815b" : "C88460" },
+    { "ffe2c5" : "E6CBB1", "ffc181" : "E6AE74", "d39c6c" : "BE8C61", "c7815b" : "A76949" }
+  ],
+  "undyColor" : [ "" ],
+  "hairColor" : [
+	//Colours go from LIGHT to DARK
+    //REDDISH BROWN
+    { "d9c189" : "AE6A29", "a38d59" : "844E1B", "735e3a" : "603812" },
+    //LIGHT BROWN
+    { "d9c189" : "AF7D42", "a38d59" : "875C2D", "735e3a" : "60411D" },
+    //BROWN
+    { "d9c189" : "7F5A2F", "a38d59" : "60421F", "735e3a" : "472F14" },
+    //DARK BROWN
+    { "d9c189" : "684414", "a38d59" : "4F320C", "735e3a" : "382206" },
+    //DARK RED
+    { "d9c189" : "7F2B04", "a38d59" : "591D01", "735e3a" : "381100" },
+    //ORANGE
+    { "d9c189" : "E14202", "a38d59" : "B23200", "735e3a" : "7F2400" },
+    //LIGHT ORANGE
+    { "d9c189" : "DD6506", "a38d59" : "B54F01", "735e3a" : "843900" },
+    //BRIGHT RED
+    { "d9c189" : "DD1800", "a38d59" : "AD1100", "735e3a" : "750B00" },
+    //BRIGHT BLONDE
+    { "d9c189" : "FFC038", "a38d59" : "C18E1F", "735e3a" : "93690E" },
+    //BLONDE
+    { "d9c189" : "FFCE61", "a38d59" : "D1A445", "735e3a" : "9E792A" },
+    //LIGHT BLONDE
+    { "d9c189" : "FFEAA8", "a38d59" : "C6B373", "735e3a" : "938144" },
+    //DARK BLONDE
+    { "d9c189" : "CCB467", "a38d59" : "9E884B", "735e3a" : "6D5D2E" },
+    //WHITE
+    { "d9c189" : "EFEFEF", "a38d59" : "C1C1C1", "735e3a" : "8E8E8E" },
+    //GREY
+    { "d9c189" : "999999", "a38d59" : "6B6B6B", "735e3a" : "474747" },
+    //DARK GREY
+    { "d9c189" : "6B6B6B", "a38d59" : "4C4C4C", "735e3a" : "2D2D2D" },
+    //BLACK
+    { "d9c189" : "3D3D3D", "a38d59" : "232323", "735e3a" : "000000" },
+    //DIRTY GREEN
+    { "d9c189" : "938A24", "a38d59" : "706919", "735e3a" : "514C11" },
+    //BRIGHT BLUE
+    { "d9c189" : "42AED6", "a38d59" : "2F87A8", "735e3a" : "1A5D75" },
+    //ICY BLUE
+    { "d9c189" : "C9EFDD", "a38d59" : "98B7A8", "735e3a" : "6B8478" },
+    //PINK
+    { "d9c189" : "EC4A97", "a38d59" : "C13A7B", "735e3a" : "93295C" }
+  ]
+}

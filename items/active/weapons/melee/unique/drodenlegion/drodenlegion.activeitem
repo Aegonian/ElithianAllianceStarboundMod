@@ -1,0 +1,216 @@
+{
+  "itemName" : "drodenlegion",
+  "price" : 1500,
+  "level" : 7,
+  "maxStack" : 1,
+  "rarity" : "essential",
+  "description" : "^orange;A pre-Exodus switchgear blade, made for the Droden Legion.",
+  "shortdescription" : "^orange;Legion^white;",
+  "tooltipKind" : "thea-sword-unique",
+  "category" : "Switchblade",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword","droden","theaUnique"],
+
+  "inventoryIcon" : "drodenlegion.png",
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "drodenlegion" },
+  
+  "meritTokenValue" : 100,
+
+  "animation" : "drodenlegion.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "drodenlegion.png",
+    "lights" : "drodenlegionlights.png",
+    "muzzleflash" : "drodenlegionmuzzle.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_broadsword.ogg" ],
+      "fire2" : [ "/sfx/melee/swing_shortsword.ogg" ],
+      "fire3" : [ "/sfx/melee/swing_spear.ogg" ],
+      "fire4" : [ "/sfx/melee/swing_shortsword.ogg" ],
+      "fire5" : [ "/sfx/melee/swing_spear.ogg" ],
+      "transform" : [ "/sfx/objects/cropshipper_door_open.ogg" ],
+      "gunfire" : [ "/sfx/gun/plasma_ar1.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "aimOffset" : 0.75,
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.8,
+    "baseDps" : 11.5,
+	
+	"damageConfig" : {
+      "damageSourceKind" : "broadsword",
+      "statusEffects" : [ ],
+      "knockbackMode" : "facing",
+      "timeout" : 0.5
+    },
+    "stepDamageConfig" : [
+      {
+        "baseDamageFactor" : 1.0,
+        "knockback" : 15
+      },
+      {
+        "baseDamageFactor" : 0.35,
+        "knockback" : 10
+      },
+      {
+        "baseDamageFactor" : 0.35,
+        "knockback" : 10
+      },
+      {
+        "baseDamageFactor" : 0.35,
+        "knockback" : 10
+      },
+      {
+        "baseDamageFactor" : 1.0,
+        "knockback" : 35
+      }
+    ],
+	
+	"comboSteps" : 5,
+	
+	"swooshOffsetRegions" : [
+      [0.75, 0.0, 4.25, 5.0],
+      [3.0, -0.5, 6.5, 2.0],
+      [1.5, -1.0, 5.5, 1.0],
+      [3.0, -0.5, 6.5, 2.0],
+      [1.5, -1.0, 5.5, 1.0]
+    ],
+
+    "stances" : {
+      "fire1" : {
+        "duration" : 0.05
+      },
+      "wait1" : {
+        "duration" : 0.1
+      },
+      "fire2" : {
+        "duration" : 0.1
+      },
+      "wait2" : {
+        "duration" : 0.1
+      },
+      "fire3" : {
+        "duration" : 0.1
+      },
+      "wait3" : {
+        "duration" : 0.2,
+        "armRotation" : 0,
+        "weaponRotation" : -90,
+        "weaponOffset" : [0, 0],
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "windup4" : {
+        "duration" : 0.15,
+        "armRotation" : -15,
+        "weaponRotation" : -60,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : true,
+        "allowFlip" : true,
+        "allowRotate" : false
+      },
+      "fire4" : {
+        "duration" : 0.2,
+        "armRotation" : -150,
+        "weaponRotation" : 55,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : true,
+        "allowFlip" : true,
+        "allowRotate" : false
+      },
+      "wait4" : {
+        "duration" : 0.1,
+        "armRotation" : -150,
+        "weaponRotation" : 55,
+        "weaponOffset" : [0, 0],
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "windup5" : {
+        "duration" : 0.15,
+        "armRotation" : -150,
+        "weaponRotation" : 55,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "fire5" : {
+        "duration" : 0.3,
+        "armRotation" : 0,
+        "weaponRotation" : -90,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "altAbility" : {
+    "name" : "Switch Form",
+    "scripts" : ["/items/active/weapons/melee/abilities/broadsword/thea-legiongun/thea-legiongun.lua"],
+	"class" : "TheaLegionGun",
+
+    "cooldownTime" : 0.75,
+	
+	"fireTime" : 0.25,
+	"baseDps" : 9.0,
+	"energyUsage" : 30.0,
+    "inaccuracy" : 0.015,
+	
+	"fireOffset" : [1.75, 0.75],
+	
+	"projectileType" : "drodenbullet",
+	"projectileParameters" : {
+      "knockback" : 5
+    },
+
+    "stances" : {
+      "transforming" : {
+        "duration" : 0.5,
+		"armRotation" : -25,
+        "weaponRotation" : -105,
+        "twoHanded" : true,
+        "weaponOffset" : [-0.25, -0.75],
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+	  "aiming" : {
+		"armRotation" : 0,
+        "weaponRotation" : -90,
+        "twoHanded" : true,
+        "weaponOffset" : [-0.5, -0.75],
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+	  "gunfire" : {
+        "duration" : 0.1,
+		"armRotation" : 2,
+        "weaponRotation" : -88,
+        "twoHanded" : true,
+        "weaponOffset" : [-0.5, -0.75],
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

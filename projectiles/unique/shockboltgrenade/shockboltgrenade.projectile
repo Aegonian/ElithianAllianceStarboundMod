@@ -1,0 +1,27 @@
+{
+  "projectileName" : "shockboltgrenade",
+  "image" : "shockboltgrenade.png",
+  "physics" : "stickybomb",
+  "animationCycle" : 0.4,
+  "frameNumber" : 4,
+  "power" : 50,
+  "initialVelocity" : 30,
+  "timeToLive" : 5,
+  "bounces" : -1,
+  "onlyHitTerrain" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/shockboltexplosion/shockboltexplosion.config"
+    }
+  ],
+  "lightColor" : [32, 73, 130],
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  
+  //SCRIPT CONFIG
+  "scripts" : [ "/projectiles/scripts/thea-electricarc.lua" ],
+  "tickTime" : 0.33,
+  "boltSpeed" : 75,
+  "jumpDistance" : 9
+}

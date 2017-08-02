@@ -1,0 +1,17 @@
+{
+  "animatedParts" : {
+    "parts" : {
+      "rope" : {
+        "properties" : {
+          "centered" : true,
+          "image" : "trinkclimbingrope.png",
+          "offset" : [0, 0]
+        }
+      }
+    }
+  },
+
+  "sounds" : {
+    "fire" : ["/sfx/projectiles/throw_item.ogg"]
+  }
+}

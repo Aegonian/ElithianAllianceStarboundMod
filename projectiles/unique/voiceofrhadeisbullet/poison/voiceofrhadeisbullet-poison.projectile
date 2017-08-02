@@ -1,0 +1,45 @@
+{
+  "projectileName" : "voiceofrhadeisbullet-poison",
+  "physics" : "lineriflebullet",
+  "bounces" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "voiceofrhadeisbullet-poison.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 105,
+  "supportsProcessing" : true,
+  "emitters" : [ "poisonplasma" ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/unique/voiceofrhadeisbullet/poison/trail.png",
+        "position" : [-1.0, 0],
+        "layer" : "middle",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.4,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  "statusEffects" : [
+    "weakpoison"
+  ],
+  "lightColor" : [30, 60, 75],
+  "fullbright" : true,
+  "damageKind" : "poison",
+  
+  "scripts" : [ "/projectiles/scripts/thea-linerifle.lua" ]
+}

@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "solariumore", "count" : 2 }
+  ],
+  "output" : {
+    "item" : "trinkmetaltier6",
+    "count" : 1
+  },
+  "duration" : 0.15,
+  "groups" : [ "trinkcrafting3", "ingredients", "all" ]
+}

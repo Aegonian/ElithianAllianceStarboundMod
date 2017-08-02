@@ -1,0 +1,9 @@
+{
+  "name" : "thea-forceshieldrepel",
+
+  "defaultDuration" : 1,
+
+  "scripts" : [
+    "thea-forceshieldrepel.lua"
+  ]
+}

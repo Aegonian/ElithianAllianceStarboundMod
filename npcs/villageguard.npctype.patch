@@ -1,0 +1,77 @@
+[
+	//AVIKAN
+	{ "op" : "add",
+	  "path" : "/items/avikan",
+	  "value" : [
+			[0, [
+				{
+				"chest" : [
+					{ "name" : "avikan-warriorchest", "data" : { "colorIndex" : 0 } },					
+					{ "name" : "thea-hiddenchest", "data" : { "colorIndex" : 0 } }
+				],
+				"legs" : [
+					{ "name" : "avikan-warriorlegs", "data" : { "colorIndex" : 0 } }
+				],
+				"head" : [
+					{ "name" : "avikan-travellerhead", "data" : { "colorIndex" : 0 } },
+					{ "name" : "avikan-fangedskull", "data" : { "colorIndex" : 0 } },							
+					{ "name" : "avikan-longskull", "data" : { "colorIndex" : 0 } },
+					{ "name" : "avikan-simpleskull", "data" : { "colorIndex" : 0 } },
+					{ "name" : "avikan-skullmask", "data" : { "colorIndex" : 0 } },
+					{ "name" : "avikan-hornedskull", "data" : { "colorIndex" : 0 } },
+					{ "name" : "avikan-hornedskull2", "data" : { "colorIndex" : 0 } }
+				],
+				"primary" : [
+					{ "name" : "avikantier2shortsword", "data" : { "colorIndex" : 1 } },
+					{ "name" : "avikantier2broadsword", "data" : { "colorIndex" : 1 } },
+					{ "name" : "avikantier2axe", "data" : { "colorIndex" : 1 } },
+					{ "name" : "avikantier2hammer", "data" : { "colorIndex" : 1 } },
+					{ "name" : "avikantier2spear", "data" : { "colorIndex" : 1 } },
+					{ "name" : "avikan-tier1bow", "data" : { "colorIndex" : 1 } },
+					{ "name" : "avikan-bonecrossbow", "data" : { "colorIndex" : 1 } }
+				],
+				"sheathedprimary" : [
+					{ "name" : "avikan-assaultrifle", "data" : { "colorIndex" : 1 } },
+					{ "name" : "avikan-skiprifle", "data" : { "colorIndex" : 1 } }
+				],
+				"alt" : [
+					{ "name" : "avikanboneshield" }
+				]
+				}
+			]   ]
+		]
+	},
+	
+	
+	
+	//TRINK
+	{ "op" : "add",
+	  "path" : "/items/trink",
+	  "value" : [
+			[0, [
+				{
+				"chest" : [
+					{ "name" : "trink-combatchest", "data" : { "colorIndex" : 0 } }
+				],
+				"legs" : [
+					{ "name" : "trink-combatlegs", "data" : { "colorIndex" : 0 } }
+				],
+				"head" : [
+					{ "name" : "thea-hiddenhead", "data" : { "colorIndex" : 0 } }
+				],
+				"primary" : [
+					{ "name" : "trinktier2prod", "data" : { "colorIndex" : 1 } },
+					{ "name" : "trinktier2longprod", "data" : { "colorIndex" : 1 } }
+				],
+				"sheathedprimary" : [
+					{ "name" : "trinktier2rifle", "data" : { "colorIndex" : 1 } },
+					{ "name" : "trinktier2pistol", "data" : { "colorIndex" : 1 } }
+				],
+				"alt" : [
+					{ "name" : "trinkshield" }
+				]
+				}
+			]   ]
+		]
+	}
+]

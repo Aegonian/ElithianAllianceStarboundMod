@@ -1,0 +1,20 @@
+{
+  "kind" : "thea-frostlaserbeam",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/smallcloud/smallicecloud.animation",
+    "position" : [0, 0],
+    "finalVelocity" : [0, 0],
+    "destructionAction" : "fade",
+    "destructionTime" : 0.1,
+    "fade" : 1,
+    "size" : 1,
+    "layer" : "middle",
+    "timeToLive" : 0.25,
+    "variance" : {
+      "rotation" : 180,
+      "position" : [0.25, 0.25],
+      "finalVelocity" : [1.0, 1.0]
+    }
+  }
+}

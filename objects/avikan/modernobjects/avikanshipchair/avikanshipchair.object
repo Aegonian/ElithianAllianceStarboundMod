@@ -1,0 +1,61 @@
+{
+  "objectName" : "avikanshipchair",
+  "colonyTags" : ["avikan"],
+  "printable" : false,
+  "rarity" : "Common",
+  "objectType" : "loungeable",
+  "price" : 70,
+  "description" : "A chair found in Avikan cockpits.",
+  "shortdescription" : "Avikan Ship Chair",
+  "race" : "avikan",
+  "category" : "furniture",
+
+  "apexDescription" : "A chair. Looks like it was used recently.",
+  "avianDescription" : "A comfortable chair.",
+  "floranDescription" : "Sssmells of alien butt.",
+  "glitchDescription" : "Surprised. This chair is rather comfortable.",
+  "humanDescription" : "A metal chair. How cool.",
+  "hylotlDescription" : "An elegant chair.",
+
+  "aegiDescription" : "A comfortable chair.",
+  "avikanDescription" : "A modern chair. It supports my back very well, but getting my tail through the hole is a hassle.",
+  "erixianDescription" : "A chair of Avikan design. My tail fits, luckily.",
+  "trinkDescription" : "A chair. It was not built with my body shape in mind.",
+  "hymidDescription" : "This chair is rather comfortable, but getting my tail through the hole is a hassle.",
+  "notixDescription" : "A chair built by the Avikan.",
+  "jorgasianDescription" : "A comfortable chair.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Analysis: chair.",
+  
+  "inventoryIcon" : "avikanshipchairicon.png",
+  "orientations" : [
+    {
+      "image" : "avikanshipchair.png:<color>",
+      "imagePosition" : [-12, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "flipImages" : true,
+      "direction" : "left",
+      "sitPosition" : [1, 21]
+    },
+    {
+      "image" : "avikanshipchair.png:<color>",
+      "imagePosition" : [-12, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "right",
+      "sitPosition" : [1, 21]
+    }
+  ],
+
+  "sitFlipDirection" : false
+
+}

@@ -1,0 +1,80 @@
+{
+  "type" : "avikanrogue",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "avikanRogueDeathTreasure" ],
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "friendlyNpcTypes" : ["crewmemberavikanrogue"]
+    },
+	
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Attack!"
+          ]
+        },
+        "avikan" : {
+          "default" : [
+            "You've come to the wrong place!",
+            "You made a mistake coming here!",
+            "You've crossed paths with the wrong Avikan!",
+            "You shouldn't have come here!",
+            "I can't let you report me!",
+            "This is the wrong place for you to be!",
+            "You've seen too much!"
+          ],
+		  "avikan" : [
+            "I can't let you report me!",
+            "I'm never going back to the Nomada!",
+            "You won't take me back to the Nomada!",
+            "I'm done with the Nomada!",
+            "A Captain! Get them!",
+            "Come to drag me back to the Nomada?",
+            "You've come to the wrong place!",
+            "You made a mistake coming here!"
+          ],
+		  "droden" : [
+            "I can't let you report me!",
+            "I'm never going back to the Nomada!",
+            "You won't take me back to the Nomada!",
+            "I'm done with the Nomada!",
+            "A Captain! Get them!",
+            "Come to drag me back to the Nomada?",
+            "You've come to the wrong place!",
+            "You made a mistake coming here!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+			  { "name" : "avikan-roguehead" },
+			  { "name" : "avikan-roguehead2" }
+			],
+            "chest" : [
+			  { "name" : "avikan-roguechest" },
+			  { "name" : "avikan-roguechest2" }
+			],
+            "legs" : [
+			  { "name" : "avikan-roguelegs" },
+			  { "name" : "avikan-roguelegs2" }
+			],
+            "primary" : [
+              "avikan-combatrifle",
+			  "avikan-sidearm",
+			  "avikan-nomadaspear",
+			  "drodenshortsword"
+            ]
+          }
+        ] ]
+    ]
+  }
+}

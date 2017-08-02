@@ -1,0 +1,45 @@
+{
+  "metadata" : {
+    "name" : "avikanhostileencounter",
+    "species" : "avikan",
+    "rules" : [
+    ],
+	
+    "anchor" : [ "avk-roguecamp", "avk-roguecamp2", "avk-roguecamp3", "avk-roguecampsmall" ],
+
+    "maxRadius" : 1000000,
+    "maxParts" : 3,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "avk-roguecamp",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "avk-roguecamp.json" ]
+    },
+	{
+      "name" : "avk-roguecamp2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "avk-roguecamp2.json" ]
+    },
+	{
+      "name" : "avk-roguecamp3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "avk-roguecamp3.json" ]
+    },
+	{
+      "name" : "avk-roguecampsmall",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "avk-roguecampsmall.json" ]
+    }
+  ]
+}

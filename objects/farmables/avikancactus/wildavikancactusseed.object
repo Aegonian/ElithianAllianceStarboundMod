@@ -1,0 +1,69 @@
+{
+  "objectName" : "wildavikancactusseed",
+  "colonyTags" : ["nature"],
+  "rarity" : "Common",
+  "category" : "seed",
+  "description" : "Cacti originating from the desert planet of Kadavan.",
+  "shortdescription" : "Kadavan Cactus Seed",
+  "objectType" : "farmable",
+  "printable" : false,
+  "price" : 20,
+  "hasObjectItem" : false,
+
+  "apexDescription" : "A juicy cactus. It looks better than it tastes.",
+  "avianDescription" : "Colourful cacti. Not very tasty.",
+  "floranDescription" : "Juicccy green plantsss.",
+  "glitchDescription" : "Statement. Cactus spines make for excellent projectiles.",
+  "humanDescription" : "Alien cacti. I prefer those from Earth.",
+  "hylotlDescription" : "A plant filled with water. A relief to any who live in the desert.",
+  
+  "aegiDescription" : "A cactus originally found on the Avikan homeplanet Kadavan.",
+  "avikanDescription" : "A cactus from home. Vital for life in the desert.",
+  "erixianDescription" : "A plant full of water. It wouldn't last long back on Heragon.",
+  "trinkDescription" : "This plant stores a great deal of water, and is vital to organic life in the desert.",
+  "hymidDescription" : "Juicy plants full of water. Similar plants grow on our home planet.",
+  "notixDescription" : "A big, juicy plant. I imagine desert dwellers have many uses for a plant like this.",
+  "jorgasianDescription" : "A cactus. Those spines might hurt.",
+  "centensDescription" : "Cacti are found on many desert planets. A result of the Seeding.",
+  "dremetonDescription" : "Like the cacti on Elithia, this plant is vital to life in the desert.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected native Kadavan flora. Cactus confirmed.",
+
+  "inventoryIcon" : "avikancactusseedicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikancactusseed.png:<color>.<stage>.<alt>",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaces" : [ [1, 0], [0, 0], [1, 1], [0, 1], [1, 2], [0, 2], [1, 3], [0, 3], [1, 4], [0, 4] ],
+      "requireTilledAnchors" : false,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "stages" : [
+    {
+      "duration" : [350, 400]
+    },
+    {
+      "duration" : [350, 400]
+    },
+    {
+      "alts" : 5,
+      "duration" : [1200, 1325]
+    },
+    {
+      "alts" : 5,
+      "harvestPool" : "avikancactusHarvest"
+    }
+  ],
+
+  "breakDropOptions" : [
+    [ [ "avikancactusseed", 1, { } ] ]
+  ],
+
+  "maxImmersion" : 0.17
+}

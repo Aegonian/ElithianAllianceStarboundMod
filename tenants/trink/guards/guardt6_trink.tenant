@@ -1,0 +1,27 @@
+{
+  "name": "guardT6_trink",
+  "priority": 16,
+
+  "colonyTagCriteria": {
+    "light": 1,
+    "door": 1,
+    "trink": 8,
+    "combat": 8,
+    "trinktier6": 2
+  },
+
+  "tenants": [
+    {
+      "spawn": "npc",
+      "species": "trink",
+      "level": 6,
+      "type": "tenanttrinkguardtier6",
+      "overrides": {}
+     }
+   ],
+
+  "rent": {
+    "periodRange": [900.0, 1800.0],
+    "pool": "trinkGift"
+  }
+}

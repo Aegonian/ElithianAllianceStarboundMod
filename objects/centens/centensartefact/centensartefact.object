@@ -1,0 +1,75 @@
+{
+  "objectName" : "centensartefact",
+  "colonyTags" : ["centens"],
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 500,
+  "description" : "An ancient artefact, created by the Centens.",
+  "shortdescription" : "Centensian Artefact",
+  "race" : "centens",
+  
+  "health" : 5,
+
+  "apexDescription" : "A perfect cube levitating above a pedestal. What might this be?",
+  "avianDescription" : "An artefact of ancient times, no doubt.",
+  "floranDescription" : "Floran wondersss what cube isss...",
+  "glitchDescription" : "Intrigued. This appears to be a truly ancient artefact.",
+  "humanDescription" : "A spinning, levitating cube above some sort of pedestal. Is it valuable?",
+  "hylotlDescription" : "A mysterious cube. It feels like it's been here for eons.",
+  "novakidDescription" : "A weird cube floatin' 'bove some sorta pedestal.",
+
+  "aegiDescription" : "A Centensian artefact of sorts. I have no idea what its purpose is.",
+  "avikanDescription" : "An artefact left behind by the Old Ones. I should make sure it doesn't fall into the hands of the Thell.",
+  "erixianDescription" : "An artefact of the Centens, no doubt.",
+  "trinkDescription" : "A Centensian artefact. Its purpose is unknown.",
+  "hymidDescription" : "An artefact of the Gods. What it is exactly is a mystery to me.",
+  "notixDescription" : "A Centensian artefact. I feel an odd sensation when I get close to it.",
+  "jorgasianDescription" : "An artefact, most likely created by the Centens.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected Centensian artefact. Recommend immediate extraction by Nomada salvage crew.",
+
+  "inventoryIcon" : "centensartefacticon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "centensartefact.png:<color>.<frame>" } ],
+
+      "imagePosition" : [0, 0],
+      "frames" : 16,
+      "animationCycle" : 1.2,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "flipImages" : true,
+      "direction" : "left"
+
+    },
+    {
+	  "imageLayers" : [ { "image" : "centensartefact.png:<color>.<frame>" } ],
+
+      "imagePosition" : [0, 0],
+      "frames" : 16,
+      "animationCycle" : 1.2,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "right"
+
+    }
+  ],
+  
+  "scripts" : [
+    "/objects/scripts/thea-interactpickup.lua"
+  ],
+  "scriptDelta" : 5,
+  
+  "spawnableItem" : "centensrelic",
+
+  "animation" : "centensartefact.animation",
+  "animationParts" : {
+    "interactiveObject" : "centensartefact.png"
+  },
+  "animationPosition" : [0, 0]
+}

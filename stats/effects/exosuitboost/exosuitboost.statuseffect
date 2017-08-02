@@ -1,0 +1,14 @@
+{
+  "name" : "exosuitboost",
+  "effectConfig" : {},
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "exosuitboost.lua"
+  ],
+  
+  "animationConfig" : "exosuitboost.animation",
+
+  "label" : "Exo-suit",
+  "icon" : "/interface/statuses/exosuitboost.png"
+}

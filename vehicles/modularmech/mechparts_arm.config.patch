@@ -1,0 +1,92 @@
+[
+  {
+    "op" : "add",
+    "path" : "/linerifle",
+    "value" : {
+	  "stats" : {
+		"power" : 6,
+		"energy" : 6
+	  },
+	  "partParameters" : {
+		"script" : "/vehicles/modularmech/armscripts/thea-chargedarm.lua",
+		"armClass" : "TheaChargedArm",
+
+		"rotationLimits" : [-1.75, 1.75],
+		"fireOffset" : [5.0, -0.1],
+
+		"windupTime" : 0.5,
+		"cooldownTime" : 0.5,
+		
+		"repeatFire" : false,	//Makes the weapon continuously fire once charged
+		"fireTime" : 0.125,		//Unused if repeatFire is false
+
+		"projectileType" : "mechlineriflebullet",
+		"projectileTrackSource" : false,
+		"projectileParameters" : {
+		  "power" : 350,
+		  "searchRadius" : 25,
+		  "baseHomingControlForce" : 1.5
+		}
+	  },
+	  "partImages" : {
+		"<armName>" : "arm/linerifle.png",
+		"<armName>Fullbright" : "arm/linerifle_fullbright.png"
+	  },
+	  "defaultPrimaryColors" : ["E9D3AB", "D7B889", "A88A5F", "6B4E3E"],	//From LIGHT to DARK
+	  "defaultSecondaryColors" : ["7F7F7F", "616161", "474747", "333333"],	//From LIGHT to DARK
+	  "animationCustom" : {
+		"animatedParts" : { "stateTypes" : { "<armName>" : {
+		  "states" : {
+			"windup" : {
+			  "cycle" : 0.5
+			},
+			"active" : {
+			  "cycle" : 0.3
+			},
+			"winddown" : {
+			  "cycle" : 0.05
+			}
+		  }
+		}}},
+		"particleEmitters" : {
+		  "<armName>Fire" : {
+			"active" : false,
+			"burstCount" : 3,
+			"anchorPart" : "<armName>",
+			"offsetRegion" : [5.375, 2.75, 5.375, 2.75],
+			"particles" : [
+			  { "particle" : "lineriflepuff"}
+			]
+		  },
+		  "<armName>Charge" : {
+			"active" : false,
+			"emissionRate" : 8,
+			"anchorPart" : "<armName>",
+			"offsetRegion" : [1.75, 2.25, 2.25, 2.75],
+			"particles" : [
+			  { "particle" : "lineriflearc"}
+			]
+		  },
+		  "<armName>ChargeMuzzle" : {
+			"active" : false,
+			"emissionRate" : 9,
+			"anchorPart" : "<armName>",
+			"offsetRegion" : [5.375, 2.75, 5.375, 2.75],
+			"particles" : [
+			  { "particle" : "lineriflecharge"},
+			  { "particle" : "lineriflecharge"},
+			  { "particle" : "lineriflecharge"},
+			  { "particle" : "lineriflecharge"},
+			  { "particle" : "lineriflecharge"}
+			]
+		  }
+		},
+		"sounds" : {
+		  "<armName>Fire" : [ "/sfx/gun/plasma_sniper4.ogg" ],
+		  "<armName>Charge" : [ "/sfx/melee/charge_up7.ogg" ],
+		  "<armName>Discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
+		}
+	  }
+	}
+  }
+]

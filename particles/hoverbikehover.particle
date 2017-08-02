@@ -1,0 +1,22 @@
+{
+  "kind" : "hoverbikehover",
+  "definition" : {
+    "type" : "ember",
+    "size" : 2.0,
+    "color" : [96, 184, 234, 255],
+    "fade" : 0.9,
+    "destructionAction" : "shrink",
+    "destructionTime" : 4,
+    "initialVelocity" : [0, -0.1],
+    "finalVelocity" : [0, 0],
+    "approach" : [0, -2],
+    "timeToLive" : 0.3,
+    "light" : [0, 60, 100],
+    "layer" : "front",
+    "variance" : {
+      "initialVelocity" : [-3, 0],
+      "size" : 1.5
+    },
+	"collidesLiquid" : false
+  }
+}

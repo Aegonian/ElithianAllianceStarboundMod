@@ -1,0 +1,37 @@
+{
+  "objectName" : "avikannumber8",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "description" : "Number eight, in the Avikan Script.",
+  "shortdescription" : "Eight",
+  "race" : "avikan",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 20,
+
+  "apexDescription" : "Number eight in an alien script.",
+  "avianDescription" : "An alien number. I believe it is eight.",
+  "floranDescription" : "Floran doess not know what alien ssymbol meansss.",
+  "glitchDescription" : "Informed. This alien symbol means eight.",
+  "humanDescription" : "Eight in some alien script.",
+  "hylotlDescription" : "An alien symbol for the number eight.",
+  "novakidDescription" : "Seems this number means eight.",
+  
+  "avikanDescription" : "Number eight.",
+  "drodenDescription" : "Number. Eight.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "avikannumber8.png:<color>",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

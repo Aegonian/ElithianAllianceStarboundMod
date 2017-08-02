@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "avikanmetal", "count" : 4 },
+	{ "item" : "avikanglassitem", "count" : 2 },
+	{ "item" : "avikanbattery", "count" : 2 },
+	{ "item" : "cryonicextract", "count" : 1 }
+  ],
+  "output" : { "item" : "avikanfridge", "count" : 1 },
+  "groups" : [ "avikanmetalcrafting", "metalfurniture", "all" ]
+}

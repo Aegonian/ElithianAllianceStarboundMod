@@ -1,0 +1,60 @@
+{
+  "itemName" : "theleansuicidebomb",
+  "price" : 100,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "NPC-only weapon!",
+  "shortdescription" : "Thelean Bomb",
+  "tooltipKind" : "base",
+  "category" : "Bomb",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","thelean"],
+
+  "inventoryIcon" : "theleansuicidebomb.png",
+
+  "animation" : "/items/active/weapons/melee/animations/suicidebomb.animation",
+  "animationParts" : {
+    "bomb" : "theleansuicidebomb.png",
+    "lights" : "theleansuicidebomblights.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "loop" : [ "/sfx/interface/rocket_lockon.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/melee/abilities/other/thea-suicidebomb.lua"],
+	"class" : "TheaSuicideBomb",
+	
+    "baseDamage" : 25.0,
+	"projectileType" : "theleansuicideexplosionspawner",
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : -90,
+        "weaponRotation" : 0,
+        "weaponOffset" : [0, 0],
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "activate" : {
+        "duration" : 0.5,
+        "armRotation" : 75,
+        "weaponRotation" : 0,
+        "weaponOffset" : [0, 0],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

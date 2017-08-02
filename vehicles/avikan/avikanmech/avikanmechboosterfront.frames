@@ -1,0 +1,12 @@
+{
+  "frameGrid" : {
+    "size" : [64, 104],
+    "dimensions" : [4, 3],
+
+    "names" : [
+      [ null, "boostup.1", "boostup.2", "boostup.3" ],
+	  [ null, "boostback.1", "boostback.2", "boostback.3" ],
+	  [ null, "boostforward.1", "boostforward.2", "boostforward.3" ]
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "projectileName" : "deathseekerbullet",
+  "image" : "deathseekerbullet.png",
+  "physics" : "thea-deathseekerbullet",
+  "bounces" : -1,
+  "piercing" : false,
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "emitters" : [ "deathseekertrail" ],
+  "damageKindImage" : "icon.png",
+  "lightColor" : [100, 10, 150],
+  "fullbright" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+	  "file" : "/projectiles/explosions/deathseekerexplosion/deathseekerexplosion.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 13,
+  "timeToLive" : 5.0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  
+  //SCRIPT CONFIG
+  "scripts" : [ "/projectiles/scripts/thea-deathseekerbullet.lua" ],
+  "searchRadius" : 40,
+  "baseHomingControlForce" : 3,
+  
+  "randomTimeToLive" : true,
+  //Lifetime is in milliseconds!
+  "minLifeTime" : 350,
+  "maxLifeTime" : 500
+}

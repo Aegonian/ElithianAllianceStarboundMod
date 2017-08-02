@@ -1,0 +1,423 @@
+[	
+  {"op" : "add",
+	"path" : "/thea-laser",
+	"value" : {
+	  "gravityMultiplier" : 0.0,
+	  "bounceFactor" : 1.0,
+	  "stopOnFirstBounce" : true,
+	  "maxMovementPerStep" : 0.4,
+	  
+	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+	  "ignorePlatformCollision" : true,
+	  
+	  "groundFriction" : 0,
+	  "airFriction" : 0.0,
+	  "liquidFriction" : 0.0,
+	  "speedLimit" : null,
+	  "maximumCorrection" : 0.75
+	}	  
+  },
+  {"op" : "add",
+	"path" : "/lineriflebullet",
+	"value" : {
+	  "gravityMultiplier" : 0.0,
+	  "bounceFactor" : 0.0,
+	  "stopOnFirstBounce" : true,
+	  "maxMovementPerStep" : 0.4,
+	  
+	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+	  "ignorePlatformCollision" : true,
+	  
+	  //Linerifle bullets are sticky so the trail won't get dislocated on collision. The projectile script will kill the projectile upon collision to prevent the projectile from actually sticking to walls
+	  "enableSurfaceSlopeCorrection" : true,
+	  "slopeSlidingFactor" : 0.0,
+	  "stickyCollision" : true,
+	  "stickyForce" : 200.0,
+	  
+	  "groundFriction" : 0,
+	  "airFriction" : 0.0,
+	  "liquidFriction" : 0.0,
+	  "speedLimit" : null,
+	  "maximumCorrection" : 0.75
+	}	  
+  },
+  {"op" : "add",
+	"path" : "/linebowarrow",
+	"value" : {
+	  "gravityMultiplier" : 0.3,
+	  "bounceFactor" : 0.0,
+	  "stopOnFirstBounce" : true,
+	  "maxMovementPerStep" : 0.4,
+	  
+	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+	  "ignorePlatformCollision" : true,
+	  
+	  //Linebow arrows are sticky so the trail won't get dislocated on collision. The projectile script will kill the projectile upon collision to prevent the projectile from actually sticking to walls
+	  "enableSurfaceSlopeCorrection" : true,
+	  "slopeSlidingFactor" : 0.0,
+	  "stickyCollision" : true,
+	  "stickyForce" : 200.0,
+	  
+	  "groundFriction" : 0,
+	  "airFriction" : 0.0,
+	  "liquidFriction" : 0.0,
+	  "speedLimit" : null,
+	  "maximumCorrection" : 0.75
+	}	  
+  },
+  {"op" : "add",
+	"path" : "/jumpriflebullet",
+	"value" : {
+	  "mass" : 1.0,
+	  "gravityMultiplier" : 0.6,
+	  "bounceFactor" : 0.0,
+	  "stopOnFirstBounce" : true,
+	  "maxMovementPerStep" : 0.4,
+	
+	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+	  "ignorePlatformCollision" : true,
+	
+	  "airFriction" : 0.0,
+	  "liquidFriction" : 0.5,
+	  "groundFriction" : 15.0
+	}	  
+  },
+  {"op" : "add",
+	"path" : "/vhelinsbullet",
+	"value" : {
+	  "mass" : 1.0,
+	  "gravityMultiplier" : 0.7,
+	  "bounceFactor" : 0.6,
+	  "stopOnFirstBounce" : true,
+	  "maxMovementPerStep" : 0.4,
+	
+	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+	  "ignorePlatformCollision" : true,
+	
+	  "airFriction" : 0.0,
+	  "liquidFriction" : 0.5,
+	  "groundFriction" : 15.0
+	}	  
+  },
+  {"op" : "add",
+	"path" : "/centensbounce",
+	"value" : {
+	  "mass" : 1.0,
+	  "gravityMultiplier" : 0.3,
+	  "bounceFactor" : 0.9,
+	  "stopOnFirstBounce" : true,
+	  "maxMovementPerStep" : 0.4,
+	
+	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+	  "ignorePlatformCollision" : true,
+	
+	  "airFriction" : 0.0,
+	  "liquidFriction" : 0.0,
+	  "groundFriction" : 0.0
+	}	  
+  },
+  {"op" : "add",
+	"path" : "/centenspuff",
+	"value" : {
+	  "mass" : 1.0,
+	  "gravityMultiplier" : 0.1,
+	  "bounceFactor" : 0.0,
+	  "stopOnFirstBounce" : true,
+	  "maxMovementPerStep" : 0.4,
+	
+	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+	  "ignorePlatformCollision" : true,
+	
+	  "airFriction" : 15.0,
+	  "liquidFriction" : 20.0,
+	  "groundFriction" : 20.0
+	}	  
+  },
+  {"op" : "add",
+	"path" : "/avikanarrow",
+	"value" : {
+	  "mass" : 1.0,
+	  "gravityMultiplier" : 0.4,
+	  "bounceFactor" : 0.0,
+	  "stopOnFirstBounce" : true,
+	  "maxMovementPerStep" : 0.4,
+	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+	  "ignorePlatformCollision" : true,
+
+	  "airFriction" : 0.0,
+	  "liquidFriction" : 2.0,
+	  "groundFriction" : 15.0
+	}	  
+  },
+  {"op" : "add",
+	"path" : "/avikanlongarrow",
+	"value" : {
+	  "mass" : 1.0,
+	  "gravityMultiplier" : 0.05,
+	  "bounceFactor" : 0.0,
+	  "stopOnFirstBounce" : true,
+	  "maxMovementPerStep" : 0.4,
+	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+	  "ignorePlatformCollision" : true,
+
+	  "airFriction" : 0.0,
+	  "liquidFriction" : 1.5,
+	  "groundFriction" : 15.0
+	}	  
+  },
+  {"op" : "add",
+	"path" : "/avikanharpoon",
+	"value" : {
+	  "mass" : 1.0,
+	  "gravityMultiplier" : 0.2,
+	  "bounceFactor" : 0.0,
+	  "stopOnFirstBounce" : true,
+	  "maxMovementPerStep" : 0.4,
+	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+	  "ignorePlatformCollision" : true,
+
+	  "airFriction" : 0.0,
+	  "liquidFriction" : 0.0,
+	  "groundFriction" : 15.0
+	}	  
+  },
+  {"op" : "add",
+	"path" : "/avikanspike",
+	"value" : {
+	  "mass" : 1.0,
+	  "gravityMultiplier" : 1.0,
+	  "bounceFactor" : 0.2,
+	  "stopOnFirstBounce" : true,
+	  "maxMovementPerStep" : 0.4,
+	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+	  "ignorePlatformCollision" : false,
+	  
+	  "enableSurfaceSlopeCorrection" : true,
+	  "slopeSlidingFactor" : 2.5,
+
+	  "airFriction" : 0.0,
+	  "liquidFriction" : 8.0,
+	  "groundFriction" : 50.0
+	}	  
+  },
+  {"op" : "add",
+	"path" : "/avikanbouncyspike",
+	"value" : {
+	  "mass" : 1.0,
+	  "gravityMultiplier" : 1.0,
+	  "bounceFactor" : 0.6,
+	  "stopOnFirstBounce" : true,
+	  "maxMovementPerStep" : 0.4,
+	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+	  "ignorePlatformCollision" : false,
+	  
+	  "enableSurfaceSlopeCorrection" : true,
+	  "slopeSlidingFactor" : 0.0,
+
+	  "airFriction" : 0.0,
+	  "liquidFriction" : 8.0,
+	  "groundFriction" : 5.0
+	}	  
+  },
+  {"op" : "add",
+	"path" : "/avikanbouncebullet",
+	"value" : {
+	  "mass" : 1.0,
+	  "gravityMultiplier" : 0.0,
+	  "bounceFactor" : 0.9,
+	  "stopOnFirstBounce" : true,
+	  "maxMovementPerStep" : 0.4,
+	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+	  "ignorePlatformCollision" : true,
+
+	  "airFriction" : 0.0,
+	  "liquidFriction" : 0.0,
+	  "groundFriction" : 0.0
+	}	  
+  },
+  {"op" : "add",
+	"path" : "/avikanstickybomb",
+	"value" : {
+	  "mass" : 1.0,
+	  "gravityMultiplier" : 0.6,
+	  "stickyCollision" : true,
+	  "stickyForce" : 200.0,
+	  "maxMovementPerStep" : 0.4,
+
+	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+	  "ignorePlatformCollision" : true,
+
+	  "airFriction" : 0.0,
+	  "liquidFriction" : 8.0,
+	  "groundFriction" : 15.0
+	}	  
+  },
+  {"op" : "add",
+	"path" : "/thea-gravitybullet",
+	"value" : {
+	  "mass" : 1.0,
+	  "gravityMultiplier" : 0.8,
+	  "bounceFactor" : 0.0,
+	  "stopOnFirstBounce" : true,
+	  "maxMovementPerStep" : 0.4,
+	
+	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+	  "ignorePlatformCollision" : true,
+	
+	  "airFriction" : 0.0,
+	  "liquidFriction" : 0.5,
+	  "groundFriction" : 15.0
+	}	  
+  },
+  {"op" : "add",
+	"path" : "/thea-dustcloud",
+	"value" : {
+	  "mass" : 1.0,
+	  "gravityMultiplier" : 0.1,
+	  "maxMovementPerStep" : 0.4,
+
+	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+	  "ignorePlatformCollision" : true,
+
+	  "airFriction" : 1.0,
+	  "liquidFriction" : 3.0,
+	  "groundFriction" : 1.0
+	}	  
+  },
+  {"op" : "add",
+	"path" : "/thea-materialmodspawner",
+	"value" : {
+	  "mass" : 1.0,
+	  "gravityMultiplier" : 1.0,
+	  "maxMovementPerStep" : 0.4,
+
+	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+	  "ignorePlatformCollision" : true,
+
+	  "airFriction" : 1.0,
+	  "liquidFriction" : 1.0,
+	  "groundFriction" : 1.0
+	}	  
+  },
+  {"op" : "add",
+	"path" : "/thea-noclipprojectile",
+	"value" : {
+	  "mass" : 0.0,
+	  "gravityMultiplier" : 0.0,
+	  "maxMovementPerStep" : 0.4,
+
+	  "collisionPoly" : [ ],
+	  "ignorePlatformCollision" : true,
+
+	  "airFriction" : 0.0,
+	  "liquidFriction" : 0.0,
+	  "groundFriction" : 0.0
+	}	  
+  },
+  {"op" : "add",
+	"path" : "/thea-airstrikerocket",
+	"value" : {
+	  "mass" : 1.0,
+	  "gravityMultiplier" : 2.0,
+	  "bounceFactor" : 0.3,
+	  "stopOnFirstBounce" : true,
+	  "maxMovementPerStep" : 0.4,
+
+	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+	  "ignorePlatformCollision" : true,
+
+	  "airFriction" : 1.0,
+	  "liquidFriction" : 8.0,
+	  "groundFriction" : 15.0
+	}
+  },
+  {"op" : "add",
+	"path" : "/thea-throwingspear",
+	"value" : {
+	  "mass" : 1.0,
+	  "gravityMultiplier" : 1.0,
+	  "stickyCollision" : true,
+	  "stickyForce" : 20.0,
+	  "bounceFactor" : 0.0,
+	  "stopOnFirstBounce" : true,
+	  "maxMovementPerStep" : 0.4,
+	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+	  "ignorePlatformCollision" : true,
+
+	  "airFriction" : 0.0,
+	  "liquidFriction" : 1.0,
+	  "groundFriction" : 15.0
+	}	  
+  },
+  {"op" : "add",
+	"path" : "/thea-zaheedsword",
+	"value" : {
+	  "mass" : 1.0,
+	  "gravityMultiplier" : 1.1,
+	  "stickyCollision" : true,
+	  "stickyForce" : 20.0,
+	  "bounceFactor" : 0.0,
+	  "stopOnFirstBounce" : true,
+	  "maxMovementPerStep" : 0.4,
+	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+	  "ignorePlatformCollision" : true,
+
+	  "airFriction" : 0.0,
+	  "liquidFriction" : 1.0,
+	  "groundFriction" : 15.0
+	}	  
+  },
+  {"op" : "add",
+	"path" : "/thea-largedebris",
+	"value" : {
+	  "mass" : 1.0,
+	  "gravityMultiplier" : 0.6,
+	  "bounceFactor" : 0.4,
+	  "stopOnFirstBounce" : true,
+	  "maxMovementPerStep" : 0.4,
+
+	  "collisionPoly" : [ [-0.65, -1.15], [0.65, -1.15], [1.15, -0.65], [1.15, 0.65], [0.65, 1.15], [-0.65, 1.15], [-1.15, 0.65], [-1.15, -0.65] ],
+	  "ignorePlatformCollision" : true,
+	  "slopeSlidingFactor" : 2.5,
+
+	  "airFriction" : 0.0,
+	  "liquidFriction" : 8.0,
+	  "groundFriction" : 50.0,
+	  "maximumCorrection" : 0.75
+	}	  
+  },
+  {"op" : "add",
+	"path" : "/thea-deathseekerbullet",
+	"value" : {
+	  "gravityMultiplier" : 0.0,
+	  "bounceFactor" : 2.0,
+	  "stopOnFirstBounce" : true,
+	  "maxMovementPerStep" : 0.4,
+	  "collisionPoly" : [ [-0.5, -0.5], [0.5, -0.5], [0.5, 0.5], [-0.5, 0.5] ],
+	  "ignorePlatformCollision" : true,
+	  "groundFriction" : 0,
+	  "airFriction" : 0.2,
+	  "liquidFriction" : 0.0,
+	  "speedLimit" : 20,
+	  "maximumCorrection" : 0.75
+	}	  
+  },
+  {"op" : "add",
+	"path" : "/centensgravityseeker",
+	"value" : {
+	  "gravityMultiplier" : 0.05,
+	  "bounceFactor" : 1.0,
+	  "stopOnFirstBounce" : true,
+	  "maxMovementPerStep" : 0.4,
+	  
+	  "collisionPoly" : [ [-0.5, -0.5], [0.5, -0.5], [0.5, 0.5], [-0.5, 0.5] ],
+	  "ignorePlatformCollision" : true,
+	  
+	  "groundFriction" : 0,
+	  "airFriction" : 0.0,
+	  "liquidFriction" : 0.0,
+	  "speedLimit" : null,
+	  "maximumCorrection" : 0.75
+	}	  
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "projectileName" : "avikanenergyexplosionspawner",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/avikanenergyexplosion/avikanenergyexplosion.config"
+    }
+  ],
+  "damageKind" : "default",
+  "damageType" : "NoDamage",
+  "timeToLive" : 0
+}

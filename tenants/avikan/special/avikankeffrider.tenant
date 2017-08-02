@@ -1,0 +1,27 @@
+{
+  "name": "avikankeffrider",
+  "priority": 20,
+
+  "colonyTagCriteria": {
+    "light": 1,
+    "door": 1,
+    "avikan": 15,
+	"keff": 6,
+	"combat": 8
+  },
+
+  "tenants": [
+    {
+      "spawn": "npc",
+      "species": "avikan",
+	  "level": 4,
+      "type": "tenantavikankeffrider",
+      "overrides": {}
+     }
+   ],
+
+  "rent": {
+    "periodRange": [900.0, 1800.0],
+    "pool": "avikanKeffriderGift"
+  }
+}

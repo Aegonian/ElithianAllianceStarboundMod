@@ -1,0 +1,72 @@
+{
+  "objectName" : "wildavikanspiceplantseed",
+  "colonyTags" : ["nature"],
+  "rarity" : "Common",
+  "category" : "seed",
+  "description" : "Spices can be made by drying this plant's fruits.",
+  "shortdescription" : "Kadavan Spices Seed",
+  "objectType" : "farmable",
+  "printable" : false,
+  "price" : 30,
+  "hasObjectItem" : false,
+
+  "apexDescription" : "The dried fruits of this plant make for excellent spices.",
+  "avianDescription" : "The fruits of this plant are not very tasty on their own, but dry them and they make great spices.",
+  "floranDescription" : "Ssspicy plants. Floran driess the fruit to make food more deliciouss.",
+  "glitchDescription" : "Statement. The dried fruits of this plant add much flavour to organic fruit.",
+  "humanDescription" : "These fruits are horrible on their own, but make for great spices when dried!",
+  "hylotlDescription" : "Spices made from this plant are very strong.",
+  
+  "aegiDescription" : "Spices made from this plant are very popular amongst the Avikan.",
+  "avikanDescription" : "The dried fruits of this plant make for excellent spices.",
+  "erixianDescription" : "Spices made by drying these fruits add a strong flavour to food.",
+  "trinkDescription" : "Trinks have no use for spices, although I hear organics can't get enough of them.",
+  "hymidDescription" : "The dried fruits of this plant make for some of the best spices I know.",
+  "notixDescription" : "Spices like those made from drying these fruits are a large export sector for the Avikan.",
+  "jorgasianDescription" : "These fruits are no good on their own, but dry them, and they make for excellent spices.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected native Kadavan flora. Spice plant confirmed.",
+
+  "inventoryIcon" : "avikanspiceplantseedicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanspiceplantseed.png:<color>.<stage>.<alt>",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaces" : [ [1, 0], [0, 0], [1, 1], [0, 1], [1, 2], [0, 2], [1, 3], [0, 3], [1, 4], [0, 4] ],
+      "requireTilledAnchors" : false,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "radioMessagesOnPickup" : [ "pickupseed" ],
+
+  "stages" : [
+    {
+      "duration" : [250, 300]
+    },
+    {
+      "duration" : [250, 300]
+    },
+    {
+      "alts" : 5,
+      "duration" : [1100, 1200]
+    },
+    {
+      "alts" : 5,
+      "harvestPool" : "avikanspiceplantHarvest",
+      "resetToStage" : 2
+    }
+  ],
+
+  "breakDropOptions" : [
+    [ [ "avikanspiceplantseed", 1, { } ] ]
+  ],
+
+  "maxImmersion" : 0.125
+}

@@ -1,0 +1,191 @@
+{
+  "objectName" : "avikanbonecrafting",
+  "colonyTags" : ["avikan","crafting"],
+  "rarity" : "Uncommon",
+  "race" : "avikan",
+  "category" : "crafting",
+
+  //this is handled by the lua
+  "breakDropOptions" : [],
+
+  "price" : 250,
+  "printable" : false,
+
+  "scripts" : [ "/objects/crafting/upgradeablecraftingobjects/upgradeablecraftingobject.lua" ],
+
+  "animation" : "avikanbonecrafting.animation",
+  "animationPosition" : [20, 16],
+
+  "inventoryIcon" : "avikanbonecraftingicon.png",
+  "placementImage" : "avikanbonecrafting.png:default",
+  "placementImagePosition" : [0, 0],
+
+  "description" : "The Bonecarver's table is used for constructing items made of monster bone.",
+  "shortdescription" : "^orange;Avikan Bonecarver's Table^white;",
+
+  "apexDescription" : "A table full of bone carving equipment.",
+  "avianDescription" : "A bone crafting table. Looks a bit primitive.",
+  "floranDescription" : "Floran makesss weapon from boness here!",
+  "glitchDescription" : "Amazed. How can such simple tools can be used to craft bone items of excellent quality?",
+  "humanDescription" : "Tools for carving bone. I'm a bit surprised by how effective bone equipment can be!",
+  "hylotlDescription" : "The Avikan Bonecarvers are truly masters of their trade.",
+  "novakidDescription" : "Tools for crafting bone. We're gonna go primitive, eh?",
+
+  "aegiDescription" : "The Avikan call those who work bone \"Bonecarvers\". This table has a full set of their tools.",
+  "avikanDescription" : "A Bonecarver's table. I can make traditional weapons and equipment here.",
+  "erixianDescription" : "A bunch of bone carving tools. A skilled crafter could craft some potent bone equipment here.",
+  "trinkDescription" : "A table full of bone carving tools. A primitive, inefficient way to work bone.",
+  "hymidDescription" : "Avikan Bonecarvers can make surpisingly potent equipment here.",
+  "notixDescription" : "This table holds all the tools needed for working bone.",
+  "jorgasianDescription" : "An Avikan-made Bonecarver's table, useful for, well, bonecarvers.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Analysis complete. Bonecarver's table. Used to construct equipment and other items made of bone.",
+
+  "learnBlueprintsOnPickup" : [],
+
+
+  "startingUpgradeStage" : 1,
+  "maxUpgradeStage" : 2,
+  "upgradeStages" : [
+    {
+      "animationState" : "avikanbonecrafting",
+
+      "itemSpawnParameters" : {
+        "price" : 250,
+        "inventoryIcon" : "avikanbonecraftingicon.png",
+        "placementImage" : "avikanbonecrafting.png:default",
+        "placementImagePosition" : [0, 0],
+
+        "description" : "The Bonecarver's table is used for constructing items made of monster bone.",
+		"shortdescription" : "^orange;Avikan Bonecarver's Table^white;",
+
+		"apexDescription" : "A table full of bone carving equipment.",
+		"avianDescription" : "A bone crafting table. Looks a bit primitive.",
+		"floranDescription" : "Floran makesss weapon from boness here!",
+		"glitchDescription" : "Amazed. How can such simple tools be used to craft bone items of excellent quality?",
+		"humanDescription" : "Tools for carving bone. I'm a bit surprised by how effective bone equipment can be!",
+		"hylotlDescription" : "The Avikan Bonecarvers are truly masters of their trade.",
+		"novakidDescription" : "Tools for crafting bone. We're gonna go primitive, eh?",
+
+		"aegiDescription" : "The Avikan call those who work bone \"Bonecarvers\". This table has a full set of their tools.",
+		"avikanDescription" : "A Bonecarver's table. I can make traditional weapons and equipment here.",
+		"erixianDescription" : "A bunch of bone carving tools. A skilled crafter could craft some potent bone equipment here.",
+		"trinkDescription" : "A table full of bone carving tools. A primitive, inefficient way to work bone.",
+		"hymidDescription" : "Avikan Bonecarvers can make surpisingly potent equipment here.",
+		"notixDescription" : "This table holds all the tools needed for working bone.",
+		"jorgasianDescription" : "An Avikan-made Bonecarver's table, useful for, well, carving bone.",
+		"centensDescription" : "TODO.",
+		"dremetonDescription" : "TODO.",
+		"theleanDescription" : "TODO.",
+		"drodenDescription" : "Analysis complete. Bonecarver's table. Used to construct equipment and other items made of bone."
+      },
+
+      "interactData" : {
+        "config" : "/interface/windowconfig/avikanbonecrafting.config",
+        "paneLayoutOverride" : {
+          "windowtitle" : {
+            "title" : " Bonecarver's Table",
+            "subtitle" : " ^#b9b5b2;Bone items and equipment",
+            "icon" : {
+              "file" : "/interface/crafting/craftingavikanbone.png"
+            }
+          }
+        },
+        "filter" : [ "avikanbonecrafting" ],
+        "upgradeMaterials" : [
+          { "item" : "monsterclaws", "count" : 6 },
+          { "item" : "avikanmetal", "count" : 10 },
+          { "item" : "avikandarkmetal", "count" : 5 },
+          { "item" : "avikanglassitem", "count" : 5 },
+          { "item" : "avikancircuitry", "count" : 1 }
+        ]
+      },
+
+      "learnBlueprintsOnPickup" : [],
+
+      "upgradeSoundEffect" : "fanfare",
+      "upgradeParticleEffect" : "dust"
+    },
+
+    {
+      "animationState" : "avikanbonecrafting2",
+
+      "itemSpawnParameters" : {
+        "price" : 500,
+        "inventoryIcon" : "avikanbonecrafting2icon.png",
+        "placementImage" : "avikanbonecrafting2.png:default.default",
+        "placementImagePosition" : [0, 0],
+
+        "description" : "The boneworking station is used for constructing items made of monster bone.",
+		"shortdescription" : "^orange;Avikan Boneworking Station^white;",
+
+		"apexDescription" : "An automated boneworking station. I can program it to produce a variety of things.",
+		"avianDescription" : "This station is used for crafting items made of bone.",
+		"floranDescription" : "Machine makess bone weaponss for Floran. Floran isss satissfied.",
+		"glitchDescription" : "Intrigued. This station will automatically craft whatever bone item I request.",
+		"humanDescription" : "An automated boneworking station. The tech is way more adanced than what the thing produces.",
+		"hylotlDescription" : "The art of bonecarving is a graceful one. It is unfortunate that machines now perform this work...",
+		"novakidDescription" : "A station for crafting bone? Why use such fancy tech to make simple items?",
+
+		"aegiDescription" : "A boneworking station. It can produce bone items of a higher quality.",
+		"avikanDescription" : "While Bonecarvers are skilled, machines like these are simply more convenient.",
+		"erixianDescription" : "A step up from simple bonecarving tools. This machine can produce excellent bone equipment.",
+		"trinkDescription" : "An automated crafting solution for creating various items from bones.",
+		"hymidDescription" : "This station can produce bone items of an extraordinary quality.",
+		"notixDescription" : "Boneworking stations like these work much faster than any organic being ever could.",
+		"jorgasianDescription" : "Automated boneworking. An odd mixture of tradition and technological advancement.",
+		"centensDescription" : "TODO.",
+		"dremetonDescription" : "TODO.",
+		"theleanDescription" : "TODO.",
+		"drodenDescription" : "Analysis complete. Boneworking station. Used to construct equipment and other items made of bone."
+      },
+
+      "interactData" : {
+        "config" : "/interface/windowconfig/avikanbonecrafting.config",
+        "paneLayoutOverride" : {
+          "windowtitle" : {
+            "title" : " Boneworking Station",
+            "subtitle" : " ^#b9b5b2;Bone items and equipment",
+            "icon" : {
+              "file" : "/interface/crafting/craftingavikanbone2.png"
+            }
+          }
+        },
+        "filter" : [ "avikanbonecrafting", "avikanbonecrafting2" ],
+		"craftingSound" : "/sfx/interface/crafting_tech2.ogg"
+      },
+
+      "learnBlueprintsOnPickup" : []
+    }
+  ],
+
+  "orientations" : [
+    {
+      "image" : "avikanbonecrafting.png:<color>",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true,
+      "spaces" : [
+	    [0, 3], [1, 3], [2, 3], [3, 3], [4, 3],
+        [0, 2], [1, 2], [2, 2], [3, 2], [4, 2],
+        [0, 1], [1, 1], [2, 1], [3, 1], [4, 1],
+        [0, 0], [1, 0], [2, 0], [3, 0], [4, 0]
+      ],
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "avikanbonecrafting.png:<color>",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+      "spaces" : [
+        [0, 3], [1, 3], [2, 3], [3, 3], [4, 3],
+        [0, 2], [1, 2], [2, 2], [3, 2], [4, 2],
+        [0, 1], [1, 1], [2, 1], [3, 1], [4, 1],
+        [0, 0], [1, 0], [2, 0], [3, 0], [4, 0]
+      ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

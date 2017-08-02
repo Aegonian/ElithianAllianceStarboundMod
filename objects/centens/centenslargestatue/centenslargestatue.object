@@ -1,0 +1,46 @@
+{
+  "objectName" : "centenslargestatue",
+  "colonyTags" : ["centens"],
+  "rarity" : "Rare",
+  "description" : "A large statue depicting a Centensian warrior.",
+  "shortdescription" : "Large Ce'tennan Statue",
+  "race" : "centens",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 1000,
+
+  "apexDescription" : "This statue depicts an alien warrior of sorts.",
+  "avianDescription" : "A shining statue of an alien warrior.",
+  "floranDescription" : "Large ssstatue is sshiny!",
+  "glitchDescription" : "Fascination. This statue is ancient, yet still in pristine condition.",
+  "humanDescription" : "This statue is beautiful! I wish I had a sword like that...",
+  "hylotlDescription" : "This statue is fascinating. The craftsmanship is unparalelled.",
+  "novakidDescription" : "This 'ere statue looks right old!",
+
+  "aegiDescription" : "A fascinating statue indeed! These Centensian relics always have an air of mystery to me!",
+  "avikanDescription" : "A statue left behind by the Old Ones. It is beautiful, like all of their relics.",
+  "erixianDescription" : "This statue depicts an ancient Centensian warrior. It's superbly crafted.",
+  "trinkDescription" : "This statue depicts a Ce'tennan, or Centens - both names apply.",
+  "hymidDescription" : "A statue of one of the Gods, no doubt, and created by them as well.",
+  "notixDescription" : "The Centens were fond of swords, despite their unparalleled advancements in firearm technologies.",
+  "jorgasianDescription" : "A wonderfully crafted statue of a Centens.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "theleanDescription" : "TODO",
+  "drodenDescription" : "Analyzing statue. Detected Centensian craftsmanship.",
+
+  "inventoryIcon" : "centenslargestatueicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "centenslargestatue.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

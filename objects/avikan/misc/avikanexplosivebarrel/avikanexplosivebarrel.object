@@ -1,0 +1,46 @@
+{
+  "objectName" : "avikanexplosivebarrel",
+  "colonyTags" : ["avikan","combat"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 55,
+  "description" : "A metal barrel filled with explosive fuel.",
+  "shortdescription" : "Avikan Explosive Barrel",
+  "race" : "avikan",
+
+  "apexDescription" : "A barrel filled with explosive fuel. I'd better be careful.",
+  "avianDescription" : "This container is filled with explosive fuel.",
+  "floranDescription" : "Floran afraid of fire barrelsss...",
+  "glitchDescription" : "Observation. This container is filled with a highly explosive compound, most likely some alien spaceship fuel.",
+  "humanDescription" : "If my videogame experiences have taught me anything, it's that this will likely blow up if I shoot it.",
+  "hylotlDescription" : "This barrel is shut for a good reason. Its content might be explosive.",
+  "novakidDescription" : "Looks like alien dynamite, this'll make a big bad boom.",
+  
+  "drodenDescription" : "Explosive substance detected.",
+
+  "inventoryIcon" : "avikanexplosivebarrelicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanexplosivebarrel.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ],
+
+  "smashable" : true,
+  "smashOnBreak" : false,
+  "smashSounds" : [ "/sfx/gun/grenadeblast1.ogg", "/sfx/gun/grenadeblast2.ogg", "/sfx/gun/grenadeblast3.ogg" ],
+  "smashDropPool" : "empty",
+  
+  "scripts" : [
+    "/objects/scripts/explodingsmashable.lua"
+  ],
+  "explosionProjectile" : "avikanexplosivebarrel",
+  "explosionOffset" : [1, 2]
+}

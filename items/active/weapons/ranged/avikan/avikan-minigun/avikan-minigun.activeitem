@@ -1,0 +1,118 @@
+{
+  "itemName" : "avikan-minigun",
+  "price" : 500,
+  "inventoryIcon" : "avikan-minigun.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A high damage, high recoil weapon of Avikan design.",
+  "shortdescription" : "Vanguard Minigun",
+  "level" : 6,
+  "tooltipKind" : "thea-minigun",
+  "category" : "Minigun",
+  "itemTags" : ["weapon","ranged","minigun","avikan"],
+  "twoHanded" : true,
+  
+  "cursor" : "/cursors/thea-largereticle.cursor",
+
+  "animation" : "avikan-minigun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "avikan-minigun.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/minigunmuzzle.png",
+    "charge" : "avikan-miniguncharge.png",
+	"chargehold" : "avikan-minigunchargehold.png"
+  },
+  "animationCustom" : {
+    "particleEmitters" : {
+      "muzzleFlash" : {
+        "particles" : [
+          { "particle" : "thea-discardedbullet2", "offset" : [-2.75, 0.25] }
+        ]
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/thea_minigun2.ogg" ],
+	  "chargeLoop" : [ "/sfx/melee/charge_up8.ogg" ],
+	  "holdLoop" : [ "/sfx/objects/camera_pan_loop.ogg" ],
+	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.9, -1.0],
+  "muzzleOffset" : [2.5, 0.15],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-minigun.lua"],
+    "class" : "TheaMinigun",
+
+    "fireTime" : 0.06,
+    "baseDps" : 17.0,
+    "energyUsage" : 75.0,
+    "inaccuracy" : 0.060,
+	
+	"chargeTime" : 1.4,
+	"resetTime" : 1.4,
+	
+	"walkWhileFiring" : true,
+
+    "projectileType" : "avikanbullet",
+	"projectileCount" : 1,
+	"projectileParameters" : { 
+      "knockback" : 2
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "charge" : {
+        "armRotation" : -2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "armRotation" : 6,
+        "weaponRotation" : 6,
+	    "weaponOffset" : [-0.15, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.05,
+        "armRotation" : 6,
+        "weaponRotation" : 6,
+	    "weaponOffset" : [-0.15, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "discharge" : {
+        "duration" : 0.1,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+	}
+  },
+
+  "builder" : "/items/buildscripts/thea-buildminigun.lua"
+}

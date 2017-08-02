@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "ironore", "count" : 10 }
+  ],
+  "duration" : 5,
+  "output" : { "item" : "droden-tier1chest", "count" : 1 },
+  "groups" : [ "drodenframecrafting", "armours", "all" ]
+}

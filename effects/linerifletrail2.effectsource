@@ -1,0 +1,24 @@
+{
+  "kind" : "linerifletrail2",
+  "location" : "mouth",
+  "definition" : {
+    "duration" : 0.00015,
+    "loops" : true,
+    "start" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [ [ ] ]
+    },
+    "particles" : [
+      [ "linerifletrail2" ]
+    ],
+    "sounds" : [ [ ] ],
+    "stop" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [ [ ] ]
+    }
+  }
+}

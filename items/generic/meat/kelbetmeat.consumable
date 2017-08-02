@@ -1,0 +1,24 @@
+{
+  "itemName" : "kelbetmeat",
+  "rarity" : "Uncommon",
+  "price" : 80,
+  "category" : "food",
+  "eventCategory" : "cookingIngredient",
+  "inventoryIcon" : "kelbetmeat.png",
+  "description" : "Raw venison banned from sale in most Union territories.",
+  "shortdescription" : "Raw Kelbet Venison",
+  "foodValue" : 20,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "effects" : [ [
+      {
+        "effect" : "foodpoison"
+      }
+    ] ],
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 0.5,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

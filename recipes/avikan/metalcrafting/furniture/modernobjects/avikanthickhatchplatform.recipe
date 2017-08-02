@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "avikanmetal", "count" : 4 },
+	{ "item" : "avikandarkmetal", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "avikanthickhatchplatform",
+    "count" : 1
+  },
+  "groups" : [ "avikanmetalcrafting", "metalfurniture", "all" ]
+}

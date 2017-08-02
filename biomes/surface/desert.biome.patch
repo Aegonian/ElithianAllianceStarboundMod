@@ -1,0 +1,155 @@
+[	
+	//MICRODUNGEONS AND RANDOM ENCOUNTERS
+	{ "op" : "add",
+	  "path" : "/surfacePlaceables/items/-",
+	  "value" : {
+		"mode" : "floor",
+		"priority" : 3.0,
+		"variants" : 1,
+		"distribution" : "/biomes/distributions.config:common",
+
+		"type" : "microdungeon",
+		"microdungeons" : [ "avikanencounter" ]
+	  }
+	},
+	{ "op" : "add",
+	  "path" : "/surfacePlaceables/items/-",
+	  "value" : {
+		"mode" : "floor",
+		"priority" : 3.0,
+		"variants" : 1,
+        "distribution" : "/biomes/distributions.config:common",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "avikanencounter2" ]
+      }
+	},
+	{ "op" : "add",
+	  "path" : "/surfacePlaceables/items/-",
+	  "value" : {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:common",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "avikanhostileencounter" ]
+      }
+	},
+	{ "op" : "add",
+	  "path" : "/surfacePlaceables/items/-",
+	  "value" : {
+        "mode" : "floor",
+        "priority" : 3.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:common",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "avikanviolatedencounter" ]
+      }
+	},
+	{ "op" : "add",
+	  "path" : "/surfacePlaceables/items/-",
+	  "value" :
+      {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/thea-distributions.config:thea-microdungeonuncommon",
+
+        "type" : "microdungeon",
+        "microdungeons" : [ "centensencounter" ]
+      }
+	},
+	
+	
+	//WILD CROPS
+	{ "op" : "add",
+	  "path" : "/surfacePlaceables/items/-",
+	  "value" : {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildavikancactusseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      }	
+	},
+	{ "op" : "add",
+		"path" : "/surfacePlaceables/items/-",
+		"value" : {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildavikanspiceplantseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      }	
+	},
+	{ "op" : "add",
+	  "path" : "/surfacePlaceables/items/-",
+	  "value" : {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildbolbohnseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      }	
+	},
+	{ "op" : "add",
+	  "path" : "/surfacePlaceables/items/-",
+	  "value" : {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wilddunestalkseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      }	
+	},
+	
+	
+	//MONSTERS AND CRITTERS
+	{ "op" : "add",
+	  "path" : "/spawnProfile/groups/-",
+	  "value" : {
+        "select" : 1,
+        "pool" : [
+          [ 1, "sandwormcritter" ]
+        ]
+      }
+	}
+]

@@ -1,0 +1,11 @@
+{
+  "itemName" : "trinkdatadrive-primecircuit",
+  "price" : 1000,
+  "rarity" : "Essential",
+  "category" : "Quest Item",
+  "tooltipKind" : "thea-unique",
+  "inventoryIcon" : "trinkdatadrive-primecircuit.png",
+  "description" : "A storage device containing the blueprints for the Prime Circuit.",
+  "shortdescription" : "^orange;Prime Circuit Blueprints^white;",
+  "itemTags" : [ "questitem" ]
+}

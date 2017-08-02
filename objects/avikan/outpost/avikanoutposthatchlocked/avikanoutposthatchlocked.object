@@ -1,0 +1,38 @@
+{
+  "objectName" : "avikanoutposthatchlocked",
+  "colonyTags" : ["avikan"],
+  "printable" : false,
+  "rarity" : "Common",
+  
+  "category" : "decorative",
+  "description" : "This access hatch is locked tight.",
+  "shortdescription" : "Locked Nomada Hatch",
+  "race" : "avikan",
+
+  "health" : 8,
+  
+  "floranDescription" : "Floran can't open hatch. Floran frussstrated.",
+  "glitchDescription" : "Displeased. I cannot open this hatch.",
+  "novakidDescription" : "A hatch, locked like a vault. Ain't gettin' in there.",
+  "drodenDescription" : "Pipeline access hatch. Analysis: locked.",
+
+  "inventoryIcon" : "avikanoutposthatchlockedicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanoutposthatchlocked.png:default",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "left", "right" ],
+      "collision" : "solid"
+	}
+  ],
+  
+  "animation" : "/objects/noisy/noisy.animation",
+
+  "scripts" : [
+    "/objects/noisy/noisy.lua"
+  ],
+  
+  "sounds" : [ "/sfx/interface/ship_error1.ogg" ]
+}

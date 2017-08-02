@@ -1,0 +1,10 @@
+{
+  "itemName" : "avikancorepowerful",
+  "price" : 250,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "avikancorepowerful.png",
+  "description" : "The power core of an Avikan armour piece. Increases the user's strength.",
+  "shortdescription" : "Powerful Power Core",
+  "itemTags" : [ "reagent" ]
+}

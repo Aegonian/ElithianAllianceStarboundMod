@@ -1,0 +1,46 @@
+{
+  "objectName" : "avikanmarketstallsmall",
+  "colonyTags" : ["avikan", "commerce"],
+  "rarity" : "Common",
+  "description" : "A small market stall.",
+  "shortdescription" : "Small Avikan Stall",
+  "race" : "avikan",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 35,
+
+  "apexDescription" : "An empty market stall. How boring.",
+  "avianDescription" : "An empty stall. Was it recently used?",
+  "floranDescription" : "Empty stallsss, nothing to buysss.",
+  "glitchDescription" : "Statement. An empty market stall.",
+  "humanDescription" : "An empty market stall? Nothing to buy here...",
+  "hylotlDescription" : "An empty stall. Its owner either sold everything, or not enough.",
+
+  "aegiDescription" : "A market stall. A common sight in Avikan villages.",
+  "avikanDescription" : "A simple market stall, like those on Kadavan.",
+  "erixianDescription" : "Whatever was sold here either sold very well, or very poorly.",
+  "trinkDescription" : "An empty market stall. An inefficient use of space.",
+  "hymidDescription" : "A market stall. Nicely decorated.",
+  "notixDescription" : "An empty market stall. I wonder what was sold here.",
+  "jorgasianDescription" : "An empty market stall.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Analysis complete. Market stall. Empty.",
+
+  "inventoryIcon" : "avikanmarketstallsmallicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanmarketstallsmall.png:<color>",
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}

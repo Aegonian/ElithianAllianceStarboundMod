@@ -1,0 +1,24 @@
+{
+  "kind" : "smalljumprifletrail",
+  "location" : "mouth",
+  "definition" : {
+    "duration" : 0.0001,
+    "loops" : true,
+    "start" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [ [ ] ]
+    },
+    "particles" : [
+      [ "smalljumprifletrail", "jumprifleburn2" ]
+    ],
+    "sounds" : [ [ ] ],
+    "stop" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [ [ ] ]
+    }
+  }
+}

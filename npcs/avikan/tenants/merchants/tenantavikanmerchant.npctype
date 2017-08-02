@@ -1,0 +1,10 @@
+{
+  "type" : "tenantavikanmerchant",
+  "baseType" : "merchant",
+  
+  "dropPools" : [],
+
+  "scriptConfig" : {
+    "questGenerator" : { "pools" : [], "enableParticipation" : false }
+  }
+}

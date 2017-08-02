@@ -1,0 +1,12 @@
+[ 
+	{
+		"op": "add",
+		"path" : "/dropPools/0/avikanhunting",
+		"value": "avikanhunting"
+	},
+	{
+		"op": "add",
+		"path" : "/dropPools/0/keffridersspear",
+		"value": "keffriderstreasure"
+	} 
+]

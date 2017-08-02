@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "trinkmetaltier3", "count" : 40 }
+  ],
+  "duration" : 3,
+  "output" : { "item" : "mechbodytrinkproto", "count" : 1 },
+  "groups" : [ "craftingmech", "mechbody" ]
+}

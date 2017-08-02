@@ -1,0 +1,110 @@
+{
+  "background" : {
+    "type" : "background",
+    "fileHeader" : "/interface/tooltips/header.png",
+    "fileBody" : "/interface/tooltips/bodyobjectthea.png",
+    "fileFooter" : "/interface/tooltips/footer.png"
+  },
+  "moneyIcon" : {
+    "type" : "image",
+    "position" : [98, 23],
+    "file" : "/interface/money.png"
+  },
+  "priceLabel" : {
+    "type" : "label",
+    "position" : [110, 23],
+    "hAnchor" : "left",
+    "value" : "tree"
+  },
+  "damagePerShotTitleLabel" : {
+    "type" : "label",
+    "position" : [9, 78],
+    "hAnchor" : "left",
+    "value" : "Damage Per Shot:"
+  },
+  "damagePerShotLabel" : {
+    "type" : "label",
+    "position" : [130, 78],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "speedTitleLabel" : {
+    "type" : "label",
+    "position" : [9, 69],
+    "hAnchor" : "left",
+    "value" : "Rate of Fire:"
+  },
+  "speedLabel" : {
+    "type" : "label",
+    "position" : [130, 69],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "chargeTimeTitleLabel" : {
+    "type" : "label",
+    "position" : [9, 60],
+    "hAnchor" : "left",
+    "value" : "Windup Time:"
+  },
+  "chargeTimeLabel" : {
+    "type" : "label",
+    "position" : [130, 60],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "energyPerShotTitleLabel" : {
+    "type" : "label",
+    "position" : [9, 51],
+    "hAnchor" : "left",
+    "value" : "Energy Per Shot:"
+  },
+  "energyPerShotLabel" : {
+    "type" : "label",
+    "position" : [130, 51],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "altAbilityTitleLabel" : {
+    "type" : "label",
+    "position" : [9, 42],
+    "hAnchor" : "left",
+    "value" : ""
+  },
+  "altAbilityLabel" : {
+    "type" : "label",
+    "position" : [130, 42],
+    "hAnchor" : "right",
+    "centered" : true,
+    "wrapWidth" : 126
+  },
+  "handednessLabel" : {
+    "type" : "label",
+    "position" : [90, 144],
+    "hAnchor" : "right",
+    "centered" : true,
+    "wrapWidth" : 126
+  },
+  "rarityLabel" : {
+    "type" : "label",
+    "position" : [7, 23],
+    "hAnchor" : "left",
+    "centered" : true,
+    "wrapWidth" : 126
+  },
+  "damageKindImage" : {
+    "type" : "image",
+    "position" : [120, 100],
+    "file" : "",
+    "centered" : true,
+    "maxSize" : [16, 16],
+    "minSize" : [16, 16]
+  },
+  "objectImage" : {
+    "type" : "image",
+    "position" : [70, 115],
+    "file" : "",
+    "centered" : true,
+    "maxSize" : [40, 40],
+    "minSize" : [40, 40]
+  }
+}

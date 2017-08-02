@@ -1,0 +1,14 @@
+{
+  "name" : "highlightenemies",
+  "effectConfig" : {
+	"searchRadius" : 50
+  },
+  "defaultDuration" : 1.5,
+
+  "scripts" : [
+    "highlightenemies.lua"
+  ],
+
+  "label" : "Marking",
+  "icon" : "/interface/statuses/highlightenemies.png"
+}

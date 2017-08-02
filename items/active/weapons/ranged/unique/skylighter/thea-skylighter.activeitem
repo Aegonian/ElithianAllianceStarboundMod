@@ -1,0 +1,101 @@
+{
+  "itemName" : "thea-skylighter",
+  "price" : 1500,
+  "inventoryIcon" : "thea-skylightericon.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;A classic revolver-style sidearm using a conventional magazine.",
+  "manufacturer" : "^gray;AAE^reset;",
+  "shortdescription" : "^orange;Skylighter^white;",
+  "level" : 6,
+  "tooltipKind" : "thea-ammogun-mf-unique",
+  "category" : "Hand Cannon",
+  "itemTags" : ["weapon","ranged","pistol","alliance","theaUnique"],
+  "twoHanded" : true,
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "thea-skylighter" },
+  
+  "meritTokenValue" : 100,
+
+  "animation" : "thea-skylighter.animation",
+  "animationParts" : {
+    "middle" : "thea-skylighter.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/allianceenergyflash.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/gun/sidewinder_fire.ogg" ],
+	  "reload" : [ "/sfx/gun/reload/sidewinder_reload2.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.66, 0.0],
+  "muzzleOffset" : [1.25, 0.5],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-ammofire.lua"],
+    "class" : "TheaAmmoFire",
+
+    "fireTime" : 0.28,
+    "baseDps" : 13.0,
+    "inaccuracy" : 0.015,
+	
+	"reloadTime" : 0.9,
+	
+	"maxAmmo" : 12,
+	"cycleAfterShot" : true,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "allianceenergybullet",
+    "projectileParameters" : {
+      "knockback" : 6
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 4,
+        "weaponRotation" : 12,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.30,
+        "armRotation" : 4,
+        "weaponRotation" : 12,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "reload" : {
+        "duration" : 0.6,
+        "armRotation" : -25,
+        "weaponRotation" : 55,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/thea-buildammoweapon-mf.lua"
+}

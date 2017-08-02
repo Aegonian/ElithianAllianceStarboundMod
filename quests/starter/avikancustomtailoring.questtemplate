@@ -1,0 +1,37 @@
+{
+  "id" : "avikancustomtailoring",
+  "prerequisites" : [],
+  "title" : "^green;Custom Tailoring",
+  "text" : "My request for a custom Protectorate uniform has been answered, and my new uniform should be waiting for me in my locker.",
+  "completionText" : "This'll fit far better than the standard uniform. Better not lose it - it's truly one of a kind.",
+  "moneyRange" : [0, 0],
+  "canBeAbandoned" : false,
+  "logOnly" : true,
+  
+  "rewards" : [
+    [ [ "avikan-protectoratechest", 1 ], [ "avikan-protectoratelegs", 1 ], [ "avikanorders1-codex", 1 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/thea-customtailoring.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "default" : "player"
+    },
+    "requireTurnIn" : false,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "protectoratechest",
+        "count" : 1,
+        "consume" : false
+      },
+	  {
+        "type" : "gatherItem",
+        "itemName" : "protectoratepants",
+        "count" : 1,
+        "consume" : false
+      }
+    ]
+  }
+}

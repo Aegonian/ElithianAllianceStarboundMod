@@ -1,0 +1,24 @@
+{
+  "itemName" : "sandcrawlermeat",
+  "rarity" : "Common",
+  "price" : 40,
+  "category" : "food",
+  "eventCategory" : "cookingIngredient",
+  "inventoryIcon" : "sandcrawlermeat.png",
+  "description" : "Slices of Sandcrawler meat. It's better to clean it first...",
+  "shortdescription" : "Sandcrawler Meat",
+  "foodValue" : 15,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "effects" : [ [
+      {
+        "effect" : "foodpoison"
+      }
+    ] ],
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 0.5,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

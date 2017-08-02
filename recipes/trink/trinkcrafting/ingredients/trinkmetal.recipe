@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "ironore", "count" : 2 }
+  ],
+  "output" : {
+	"item" : "trinkmetal",
+	"count" : 1
+  },
+  "groups" : [ "trinkcrafting", "ingredients", "plain", "all" ],
+  "duration" : 0.15
+}

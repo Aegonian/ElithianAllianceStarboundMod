@@ -1,0 +1,12 @@
+{
+  "itemName" : "avikangunrangepass",
+  "price" : 0,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "Security Pass",
+  "tooltipKind" : "tool",
+  "inventoryIcon" : "avikangunrangepass.png",
+  "largeImage" : "avikangunrangepasslarge.png",
+  "description" : "This pass unlocks access to the Vanguard Gunrange in the Starfarer's Refuge.",
+  "shortdescription" : "^#BA66FF;Vanguard Gunrange Pass^white;"
+}

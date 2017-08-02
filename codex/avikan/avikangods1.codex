@@ -1,0 +1,20 @@
+{
+  "id" : "avikangods1",
+  "species" : "avikan",
+  "title" : "On the Old Ones",
+  "description" : "An Avikan scribe's notes on the Old Ones.",
+  "icon" : "avikanscroll2.png",
+  "contentPages" : [
+
+    "The Old Ones are an an ancient race of sentient aliens, who visited many worlds before they mysteriously vanished. They go by many names: the Old Ones, the Uplifters, the Centens, or the Ce'Tennan are just a few well-known examples. The first two of these names are products of Avikan culture, while the term \"Centens\" is the most universally accepted name. Ce'Tennan, however, is likely the name that most resembles what the creatures called themselves.",
+
+    "The Old Ones play a significant role in Avikan culture, for it are their relics which form the basis of much of our technological prowess. The study and reverse-engineering of these relics taught our people the secrets behind efficient interstellar travel, anti-gravity fields, jumpgate technology and even holographic displays. There are also legends of direct interaction with one of the creatures - Rhadeis - which form the basis of the Rhaiod religion.",
+    
+    "The Rhaiod teaches that Rhadeis descended upon our people after they found Vas Vha'leih, and that he showed our ancestors how to use the relics His people had left behind. While scientists are uncertain whether or not Rhadeis truly appeared to our ancestors in the flesh, they do agree that there was at least some form of Centensian-Avikan interaction in Vas Vha'leih."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

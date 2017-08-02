@@ -1,0 +1,67 @@
+{
+  "type" : "theleansniper",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "theleanDeathTreasure" ],
+
+  "scriptConfig" : {
+	"behaviorConfig" : {
+      "leapWindup" : 0.75,
+      "rangedAimTime" : 0.75,
+      "rangedWindupTime" : 0.01
+    },
+	
+	"combat" : {
+      "meleeWeaponWindups" : {
+        "default" : 0.05
+      },
+      "meleeWeaponCooldowns" : {
+        "default" : 0.5
+      }
+    },
+	
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Vatha'rak athas!",				//Intruder there!
+            "Erras se vahl!",				//Hunt the enemy!
+            "Creaton thasse dhas!",			//Creaton take you!
+            "Thelea nah'mark!"				//Thelea above!
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "thelean-lighthead" } ],
+            "chest" : [ { "name" : "thelean-lightchest" }, { "name" : "thelean-mediumchest" } ],
+            "primary" : [
+              "thelean-sniperrifle"
+            ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 90.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "healthRegen" : {
+        "baseValue" : 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "projectileName" : "violatedionizedexplosion",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/violatedionexplosion/violatedionexplosion-noeffect.config"
+    }
+  ],
+  "damageKind" : "default",
+  "timeToLive" : 0
+}

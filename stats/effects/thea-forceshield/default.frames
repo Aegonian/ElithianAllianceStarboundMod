@@ -1,0 +1,10 @@
+{
+  "frameGrid" : {
+    "size" : [61, 67],
+    "dimensions" : [8, 2],
+    "names" : [
+      [ "recharge.1", "recharge.2", "recharge.3", "recharge.4", "recharge.5", "recharge.6", "recharge.7", "recharge.8" ],
+      [ "on.1", "on.2", "on.3", "on.4", "on.5", "on.6", "on.7", "on.8" ]
+    ]
+  }
+}

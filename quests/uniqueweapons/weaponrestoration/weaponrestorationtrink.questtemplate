@@ -1,0 +1,37 @@
+{
+  "id" : "weaponrestorationtrink",
+  "prerequisites" : [ "trinkcustomtailoring", "glitch_mission2" ],
+  "requiredItems" : [ "trinkprimecircuitbroken" ],
+  "title" : "^orange;Prime Circuit",
+  "text" : "According to the Central Circuit Database, my Broken Prod is actually a prototype weapon designed by NivRAM himself! The blueprints for the weapon are still available, but I need a ^orange;Circuit Data Drive ^white;to download it all. Once I have the drive, I should ^green;return to this terminal to start the download^white;.",
+  "completionText" : "The download is complete! Now I can start rebuilding the weapon.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "trinkdatadrive-primecircuit", 1 ] ]
+  ],
+  "canBeAbandoned" : false,
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+	"portraits" : {
+      "default" : "player"
+    },
+	"followUp" : "weaponrestorationtrink2",
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "trinkdatadrive",
+        "count" : 1,
+        "consume" : true
+      }
+    ],
+	"giveBlueprints" : [
+      "trinkprimecircuit",
+	  "trink-electromagneticextractor",
+	  "primecore"
+    ],
+	"turnInDescription" : "Return to a ^orange;Central Circuit Terminal ^reset;in a ^orange;Trinkian Settlement^reset;"
+  }
+}

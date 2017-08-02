@@ -1,0 +1,28 @@
+{
+  "materialId" : 30010,
+  "materialName" : "avikansupportpanel",
+  "particleColor" : [97, 97, 97, 255],
+  "itemDrop" : "avikansupportpanel", 
+  "shortdescription" : "Avikan Support Beam",
+  
+  "description" : "Part of a support beam.",
+  "glitchDescription" : "Statement. Panels like these are often used in support beams.",
+  "floranDescription" : "If Floran remove sssupport beamss, will the houssse fall apart?",
+  "novakidDescription" : "A support beam, for supportin' stuff.",
+  
+  "drodenDescription" : "Analysis complete. Support beam, a vital structural piece.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "avikansupportpanel.png",
+    "variants" : 3,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 100
+  }
+}

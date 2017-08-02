@@ -1,0 +1,10 @@
+{
+  "itemName" : "trinkcorepowerful",
+  "price" : 250,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "trinkcorepowerful.png",
+  "description" : "A power core for Circuit armour. Increases the user's strength.",
+  "shortdescription" : "Circuit Core-M",
+  "itemTags" : [ "reagent" ]
+}

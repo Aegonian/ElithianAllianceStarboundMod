@@ -1,0 +1,13 @@
+{
+  "itemName" : "centensrelic",
+  "price" : 1000,
+  "rarity" : "Legendary",
+  "category" : "Quest Item",
+  "inventoryIcon" : "centensrelic.png",
+  "description" : "A Centensian relic. It appears to be a container, but it won't open.",
+  "shortdescription" : "^#BA66FF;Centensian Relic^white;",
+  "itemTags" : [ "questitem" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 10
+}

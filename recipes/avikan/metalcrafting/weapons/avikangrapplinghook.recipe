@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "avikanmetal", "count" : 15 },
+	{ "item" : "avikandarkmetal", "count" : 15 },
+    { "item" : "diamond", "count" : 1 },
+    { "item" : "avikancircuitry", "count" : 2 },
+    { "item" : "avikanbattery", "count" : 4 }
+  ],
+  "output" : { "item" : "avikangrapplinghook", "count" : 1 },
+  "groups" : [ "avikanmetalcrafting", "weapons", "all" ]
+}

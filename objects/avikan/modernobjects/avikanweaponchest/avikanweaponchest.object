@@ -1,0 +1,53 @@
+{
+  "objectName" : "avikanweaponchest",
+  "colonyTags" : ["storage","combat","avikan"],
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "category" : "storage",
+  "printable" : false,
+  "price" : 100,
+  "description" : "A military-grade chest for storing weapons and other military supplies.",
+  "shortdescription" : "Vanguard Supply Crate",
+  "race" : "avikan",
+  
+  "health" : 6,
+
+  "apexDescription" : "This looks like a military supply crate. There could be weapons inside!",
+  "avianDescription" : "A military-grade supply crate, built to keep its content completely safe.",
+  "floranDescription" : "Floran isss eager to open chesst. Maybe ssstabby weapon insside!",
+  "glitchDescription" : "Eager. A military supply crate like this is sure to hold something of value.",
+  "humanDescription" : "An alien weapon chest. Let's have a look inside!",
+  "hylotlDescription" : "Presents are most exciting when they're still wrapped.",
+  "novakidDescription" : "Might be some sorta weapon inside o' this chest!",
+
+  "aegiDescription" : "A Vanguard supply crate. It likely contains some for of Avikan-built weaponry.",
+  "avikanDescription" : "A Vanguard supply crate! Let's see what's inside!",
+  "erixianDescription" : "A military-grade supply crate, certain to hold some armaments.",
+  "trinkDescription" : "This chest is likely to contain some military equipment.",
+  "hymidDescription" : "A weather and war-proof supply crate. It might hold some military equipment.",
+  "notixDescription" : "This looks like one of the Vanguard's military supply crates.",
+  "jorgasianDescription" : "A metal container, likely used by the military. There might be a weapon inside.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected Vanguard supply crate.",
+
+  "inventoryIcon" : "avikanweaponchesticon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanweaponchest.png:<color>.<key>",
+      "imagePosition" : [-16, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/miningchest_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/miningchest_close.ogg" ],
+  "slotCount" : 24,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 32,
+  "autoCloseCooldown" : 3600
+}

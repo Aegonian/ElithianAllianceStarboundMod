@@ -1,0 +1,9 @@
+{
+  "type" : "thea-storystartmessage",
+
+  "scripts" : ["/stagehands/thea-storystartmessage.lua"],
+  "scriptDelta" : 10,
+  
+  "broadcastArea" : [-5, -5, 5, 5],
+  "radioMessage" : "test"
+}

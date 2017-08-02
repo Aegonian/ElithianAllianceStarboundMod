@@ -1,0 +1,15 @@
+{
+  "itemName" : "mechbodyavikan",
+  "price" : 9600,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "category" : "mechPart",
+  "tooltipKind" : "mechbody",
+  "builder" : "/items/buildscripts/buildmechpart.lua",
+  "inventoryIcon" : "mechbodyavikan.png",
+  "description" : "A highly durable mech body, designed by the Vanguard.",
+  "shortdescription" : "Vanguard Mech Body",
+  "itemTags" : [ ],
+
+  "mechPart" : ["body", "avikan"]
+}

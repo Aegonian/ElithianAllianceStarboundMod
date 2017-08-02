@@ -1,0 +1,12 @@
+{
+  "itemName" : "avikanbrokenpanel",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "avikanbrokenpanel.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "shortdescription" : "Broken Avikan Panel",
+  "description" : "A cracked metal panel.",
+
+  "materialId" : 30099
+}

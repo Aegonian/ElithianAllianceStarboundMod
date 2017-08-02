@@ -1,0 +1,13 @@
+{
+  "projectileName" : "violatedlinerifledeath",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/death/violatedlinerifledeath/violatedlinerifledeath.config"
+    }
+  ],
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "timeToLive" : 0
+}

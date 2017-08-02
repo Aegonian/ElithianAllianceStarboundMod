@@ -1,0 +1,62 @@
+{
+  "objectName" : "centensconsole",
+  "colonyTags" : ["centens"],
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 500,
+  "description" : "A computer console.",
+  "shortdescription" : "Centensian Console",
+  "race" : "centens",
+
+  "apexDescription" : "An old but highly advanced console.",
+  "avianDescription" : "An ancient computer terminal, still functional.",
+  "floranDescription" : "Ssshiny ssscreen.",
+  "glitchDescription" : "Fascinated. This console still functions after eons of disuse.",
+  "humanDescription" : "No holographic screen? I'm disappointed.",
+  "hylotlDescription" : "These ancient computers are always a mystery. How exciting.",
+
+  "aegiDescription" : "A Centensian console.",
+  "avikanDescription" : "A console created by the Old Ones.",
+  "erixianDescription" : "A console created by the Centens. No one knows what it was used for, exactly.",
+  "trinkDescription" : "This console was created by the Centens.",
+  "hymidDescription" : "A Centensian computer console, I believe.",
+  "notixDescription" : "A console. Centensian in nature, based on its appearance.",
+  "jorgasianDescription" : "The screen on this console still works after eons of disuse.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Analysis. Detected Centensian interface.",
+  
+  "lightColor" : [39, 31, 63],
+
+  "inventoryIcon" : "centensconsoleicon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "centensconsoleleft.png:<color>.<frame>", "fullbright" : true }, { "image" : "centensconsoleleftlit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "lightPosition" : [2, 1],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "left"
+
+    },
+    {
+	  "imageLayers" : [ { "image" : "centensconsoleright.png:<color>.<frame>", "fullbright" : true }, { "image" : "centensconsolerightlit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "lightPosition" : [1, 1],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "right"
+
+    }
+  ]
+}

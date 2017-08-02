@@ -1,0 +1,63 @@
+[
+  //Always add the Unique Weapons button
+  [
+	{ "op" : "add",
+	  "path" : "/gui/collectionTabs/buttons/-",
+	  "value" : 
+		{
+		  "selected" : false,
+		  "position" : [4, 25],
+		  "baseImage" : "/interface/scripted/collections/tab_weapons_deselect.png",
+		  "baseImageChecked" : "/interface/scripted/collections/tab_weapons_select.png",
+		  "pressedOffset" : [0, 0],
+		  "data" : "thea_weapons"
+		}
+	}
+  ],
+  
+  //Perform a test to see if the user has Custom Collections (or FU) installed. If true, edit other parts of the menu to prevent the overlapping buttons issue
+  //The test is performed by checking if there are eight buttons instead of seven (with just Elithian Races installed), so theoretically, it should work with any mod that adds another button
+  [
+	{ "op" : "test", "path" : "/gui/collectionTabs/buttons/7" },
+	{
+	  "op" : "replace",
+	  "path" : "/gui/collectionTabs/buttons/0/position/1",
+	  "value" : 193
+	},
+	{
+	  "op" : "replace",
+	  "path" : "/gui/collectionTabs/buttons/1/position/1",
+	  "value" : 169
+	},
+	{
+	  "op" : "replace",
+	  "path" : "/gui/collectionTabs/buttons/2/position/1",
+	  "value" : 145
+	},
+	{
+	  "op" : "replace",
+	  "path" : "/gui/collectionTabs/buttons/3/position/1",
+	  "value" : 121
+	},
+	{
+	  "op" : "replace",
+	  "path" : "/gui/collectionTabs/buttons/4/position/1",
+	  "value" : 97
+	},
+	{
+	  "op" : "replace",
+	  "path" : "/gui/collectionTabs/buttons/5/position/1",
+	  "value" : 73
+	},
+	{
+	  "op" : "replace",
+	  "path" : "/gui/collectionTabs/buttons/6/position/1",
+	  "value" : 49
+	}/*,
+	{
+	  "op" : "replace",
+	  "path" : "/gui/collectionTabs/buttons/7/position/1",
+	  "value" : 25
+	}*/
+  ]
+]

@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "avikanmetaltier6", "count" : 8 },
+    { "item" : "avikandarkmetal", "count" : 4 },
+    { "item" : "centensianmetal", "count" : 15 },
+    { "item" : "centensiantech", "count" : 8 },
+    { "item" : "jumpgatecore", "count" : 1 }
+  ],
+  "output" : { "item" : "avikan-jumpfireprotocol", "count" : 1 },
+  "groups" : [ "avikanmetalcrafting", "weapons", "all" ]
+}

@@ -1,0 +1,25 @@
+{
+  "projectileName" : "avikandroneengine",
+  "image" : "avikandroneengine.png",
+  "physics" : "grenade",
+  "animationCycle" : 2,
+  "frameNumber" : 1,
+  "renderLayer" : "Object+1",
+  "emitters" : [ "thea-smallblacksmoke" ],
+  "power" : 1,
+  "speed" : 20,
+  "onlyHitTerrain" : true,
+  "initialVelocity" : 20,
+  "timeToLive" : 100,
+  "bounces" : 0,
+  "flippable" : true,
+  "orientationLocked" : false,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/avikansmallexplosion/avikansmallexplosion.config"
+    }
+  ],
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

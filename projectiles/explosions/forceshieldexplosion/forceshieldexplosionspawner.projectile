@@ -1,0 +1,15 @@
+{
+  "projectileName" : "forceshieldexplosionspawner",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "physics" : "illusion",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/forceshieldexplosion/forceshieldexplosion.config"
+    }
+  ],
+  "damageKind" : "default",
+  "timeToLive" : 0,
+  
+  "scripts" : [ "/projectiles/scripts/thea-stationaryprojectile.lua" ]
+}

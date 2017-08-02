@@ -1,0 +1,125 @@
+[
+	//AVIKAN DIALOGUE
+	{
+		"op": "add",
+		"path": "/helpme/avikan",
+		"value": {
+			"default" : [
+				"I need help!",
+				"I've been attacked!",
+				"Alert the clan, there's hostiles!",
+				"Rhadeis, help me!",
+				"We're being invaded!",
+				"You'll not get me!"
+			]
+		}
+	},
+	{
+		"op": "add",
+		"path": "/safe/avikan",
+		"value": {
+			"default" : [
+				"It's safe again...",
+				"I should remember to carry weapons on me next time...",
+				"I survived, thank Rhadeis!",
+				"Rhadeis saved me...",
+				"That was quite the ordeal.",
+				"I'm glad that's over with."
+			]
+		}
+	},
+	
+	
+	
+	//TRINK DIALOGUE
+	{
+		"op": "add",
+		"path": "/helpme/trink",
+		"value": {
+			"default" : [
+				"I need help!",
+				"I've been attacked!",
+				"I was not built for combat!",
+				"Please, stop this!",
+				"I am unable to defend myself!",
+				"Help!"
+			]
+		}
+	},
+	{
+		"op": "add",
+		"path": "/safe/trink",
+		"value": {
+			"default" : [
+				"I am glad that is over.",
+				"I require minor repairs.",
+				"It appears to be safe again.",
+				"Are the hostiles gone?",
+				"I was never meant for combat...",
+				"Is the situation under control again?"
+			]
+		}
+	},
+	
+	
+	
+	//DRODEN DIALOGUE
+	{
+		"op": "add",
+		"path": "/helpme/droden",
+		"value": {
+			"default" : [
+				"Unit under attack. Requesting help.",
+				"Battle detected. Requesting backup.",
+				"Hostile detected. Activating flight module.",
+				"Unable to load battle modules. Fleeing.",
+				"Battle modules corrupted. Disengaging."
+			]
+		}
+	},
+	{
+		"op": "add",
+		"path": "/safe/droden",
+		"value": {
+			"default" : [
+				"Disengaging. Battle terminated.",
+				"Threat levels normal.",
+				"Unit confirms escape.",
+				"Escape confirmed.",
+				"Flight protocols terminating."
+			]
+		}
+	},
+	
+	
+	
+	//AEGI DIALOGUE
+	{
+		"op": "add",
+		"path": "/helpme/aegi",
+		"value": {
+			"default" : [
+				"I need help!",
+				"Help me!",
+				"I'm under attack!",
+				"Guards, please help me!",
+				"Call the guards!",
+				"Stop this madness!"
+			]
+		}
+	},
+	{
+		"op": "add",
+		"path": "/safe/aegi",
+		"value": {
+			"default" : [
+				"I think it's safe now.",
+				"I hate fights...",
+				"I'm no good in a fight...",
+				"I hope that's the end of it.",
+				"Glad that's over with.",
+				"I got out safely..."
+			]
+		}
+	}
+]

@@ -1,0 +1,30 @@
+{
+  "itemName" : "avikanglowstick",
+  "rarity" : "Common",
+  "price" : 1,
+  "category" : "throwableItem",
+  "inventoryIcon" : "avikanglowstickicon.png",
+  "image" : "avikanglowstick.png",
+  "shortdescription" : "Nomada Glowstick",
+  "description" : "A long-lasting glow stick, cheap to produce but not as bright as a flare.",
+
+  "ammoUsage" : 1,
+
+  "edgeTrigger" : true,
+  "windupTime" : 0.0,
+  "cooldown" : 0.4,
+
+  "projectileType" : "avikanglowstick",
+  "projectileConfig" : {
+    "speed" : 30,
+    "level" : 10,
+    "periodicActions" : [
+      {
+        "time" : 0,
+        "repeat" : false,
+        "action" : "sound",
+        "options" : [ "/sfx/projectiles/throw_item_small.ogg" ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "projectileName" : "avikanairstrikeprimer",
+  "image" : "avikanairstrikeprimer.png",
+  "physics" : "thea-noclipprojectile",
+  "animationCycle" : 0.1,
+  "frameNumber" : 1,
+  "timeToLive" : 0.4,
+  "bounces" : -1,
+  "statusEffects" : [ ],
+  "animationLoops" : false,
+  "onlyHitTerrain" : true,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "avikanairstrikerocket",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanairstrikerocket",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 0,
+      "delaySteps" : 8
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanairstrikerocket2",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 0,
+      "delaySteps" : 16
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanairstrikerocket",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 0,
+      "delaySteps" : 24
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanairstrikerocket",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 0,
+      "delaySteps" : 32
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanairstrikerocket",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 0,
+      "delaySteps" : 40
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanairstrikerocket",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 0,
+      "delaySteps" : 48
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanairstrikerocket2",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 0,
+      "delaySteps" : 56
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanairstrikerocket",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 0,
+      "delaySteps" : 64
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanairstrikerocket2",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 0,
+      "delaySteps" : 72
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanairstrikerocket",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 0,
+      "delaySteps" : 80
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanairstrikerocket",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 0,
+      "delaySteps" : 88
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanairstrikerocket",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 0,
+      "delaySteps" : 96
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanairstrikerocket2",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 0,
+      "delaySteps" : 104
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanairstrikerocket",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 0,
+      "delaySteps" : 112
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanairstrikerocket",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 0,
+      "delaySteps" : 120
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanairstrikerocket",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 0,
+      "delaySteps" : 128
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanairstrikerocket",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 0,
+      "delaySteps" : 136
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanairstrikerocket2",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 0,
+      "delaySteps" : 144
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanairstrikerocket",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 0,
+      "delaySteps" : 152
+    }
+  ],
+  "flippable" : true,
+  "speed" : 0,
+  "knockback" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  
+  "scripts" : [ "/projectiles/scripts/thea-airstrikeprimer.lua" ],
+  "primerYSpeed" : 125
+}

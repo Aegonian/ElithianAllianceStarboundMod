@@ -1,0 +1,46 @@
+{
+  "objectName" : "avikantier2beacon",
+  "colonyTags" : ["avikan","combat","avikantier2"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 100,
+  "description" : "This beacon could attract an armed Avikan tenant in combination with a colony deed.",
+  "shortdescription" : "Avikan Trapper Beacon",
+  "race" : "avikan",
+
+  "apexDescription" : "A beacon of some sort. It only seems to attract tenants.",
+  "avianDescription" : "This beacon attracts armed tenants. How convenient!",
+  "floranDescription" : "Beacon callss armed tenantss.",
+  "glitchDescription" : "Observation. The signal coming from this beacon will attract armed tenants.",
+  "humanDescription" : "This beacon will attract armed tenants. I could build my own army!",
+  "hylotlDescription" : "This beacon will attract an alien warrior. Perhaps I might learn some new skills from them.",
+  "novakidDescription" : "A beacon for callin' armed tenants.",
+
+  "aegiDescription" : "This beacon will attract armed Avikan tenants.",
+  "avikanDescription" : "Such beacons are used by the Nomada to summon guards and mercenaries for new colonies.",
+  "erixianDescription" : "A beacon. It could attract an armed tenant.",
+  "trinkDescription" : "This beacon summons Avikan guards. I am not sure if it's a good idea to use it.",
+  "hymidDescription" : "A beacon for summoning Avikan guard tenants. I'd love to meet some more desert folk!",
+  "notixDescription" : "A beacon that calls for armed reinforcements.",
+  "jorgasianDescription" : "A beacon for summoning armed Avikan tenants.",
+  "centensDescription" : "This beacon will sumon an armed tenant. I wonder what sort of primitive weaponry they will use?",
+  "dremetonDescription" : "A beacon that can summon an Avikan guard if used in the right place.",
+  "hyvonDescription" : "A beacon that summons an armed lesser one. Hmph.",
+  "drodenDescription" : "Detected beacon. Use in combination with a colony deed to summon armed Avikan tenants.",
+
+  "inventoryIcon" : "avikantier2beaconicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "avikantier2beacon.png:<color>", "fullbright" : true }, { "image" : "avikantier2beaconlit.png:<color>" } ],
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "itemName" : "avikandarkplatform",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "avikandarkplatform.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "description" : "A dark metal platform.",
+  "shortdescription" : "Dark Avikan Platform",
+  "glitchDescription" : "Statement. A strong metal platform.",
+  "floranDescription" : "Metal platformsss",
+
+  "materialId" : 30101
+}

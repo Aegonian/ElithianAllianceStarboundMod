@@ -1,0 +1,122 @@
+[
+  //CENTENSIAN RUINS
+  { "op" : "add",
+	"path" : "/centensencounter",
+	"value" : {
+	  "cnt-ruin" : {
+		"name" : "Centensian ruins",
+		"tags" : [ "generic", "friendly" ]
+	  },
+	  "cnt-ruin2" : {
+		"name" : "Centensian ruins",
+		"tags" : [ "generic", "friendly" ]
+	  },
+	  "cnt-ruin3" : {
+		"name" : "Centensian ruins",
+		"tags" : [ "generic", "friendly" ]
+	  },
+	  "cnt-ruin4" : {
+		"name" : "Centensian ruins",
+		"tags" : [ "generic", "friendly" ]
+	  },
+	  "cnt-ruin5" : {
+		"name" : "Centensian ruins",
+		"tags" : [ "generic", "friendly" ]
+	  },
+	  "cnt-ruin6" : {
+		"name" : "Centensian ruins",
+		"tags" : [ "generic", "friendly" ]
+	  },
+	  "cnt-ruin7" : {
+		"name" : "Centensian ruins",
+		"tags" : [ "generic", "friendly" ]
+	  },
+	  "cnt-ruin8" : {
+		"name" : "Centensian ruins",
+		"tags" : [ "generic", "friendly" ]
+	  },
+	  "cnt-ruin9" : {
+		"name" : "Centensian ruins",
+		"tags" : [ "generic", "friendly" ]
+	  },
+	  "cnt-ruin10" : {
+		"name" : "Centensian ruins",
+		"tags" : [ "generic", "friendly" ]
+	  },
+	  "cnt-ruin11" : {
+		"name" : "Centensian ruins",
+		"tags" : [ "generic", "friendly" ]
+	  }
+	}
+  },
+  
+  //TRINKIAN ENCOUNTERS
+  { "op" : "add",
+	"path" : "/trinkencounter",
+	"value" : {
+	  "trk-buriedbunker1" : {
+		"name" : "buried Trinkian structure",
+		"tags" : [ "trink", "friendly" ]
+	  }
+	}
+  },
+  
+  //DESERT WETLANDS BIOME
+  { "op" : "add",
+	"path" : "/thea-desertwetlands",
+	"value" : {
+	  "quicksandpit" : {
+		"name" : "quicksand pit",
+		"tags" : [ "thea-desertwetlands" ]
+	  },
+	  "quicksandpit2" : {
+		"name" : "quicksand pit",
+		"tags" : [ "thea-desertwetlands" ]
+	  },
+	  "quicksandpit3" : {
+		"name" : "quicksand pit",
+		"tags" : [ "thea-desertwetlands" ]
+	  },
+	  "quicksandpit4" : {
+		"name" : "quicksand pit",
+		"tags" : [ "thea-desertwetlands" ]
+	  },
+	  "quicksandbridge" : {
+		"name" : "quicksand pit",
+		"tags" : [ "thea-desertwetlands" ]
+	  },
+	  "quicksandbridge2" : {
+		"name" : "quicksand pit",
+		"tags" : [ "thea-desertwetlands" ]
+	  },
+	  "wetlandcabin" : {
+		"name" : "small abandoned cabin",
+		"tags" : [ "thea-desertwetlands" ]
+	  },
+	  "wetlandcabin2" : {
+		"name" : "small abandoned cabin",
+		"tags" : [ "thea-desertwetlands" ]
+	  },
+	  "sandcrawlerspawn" : {
+		"name" : "Sandcrawler nest",
+		"tags" : [ "thea-desertwetlands" ]
+	  },
+	  "sandcrawlerspawn2" : {
+		"name" : "Sandcrawler nest",
+		"tags" : [ "thea-desertwetlands" ]
+	  },
+	  "sandcrawlerspawn3" : {
+		"name" : "Sandcrawler nest",
+		"tags" : [ "thea-desertwetlands" ]
+	  },
+	  "sunkencabin" : {
+		"name" : "small ruined cabin",
+		"tags" : [ "thea-desertwetlands" ]
+	  },
+	  "sandspittercave" : {
+		"name" : "Sandspitter nest",
+		"tags" : [ "thea-desertwetlands" ]
+	  }
+	}
+  }
+]

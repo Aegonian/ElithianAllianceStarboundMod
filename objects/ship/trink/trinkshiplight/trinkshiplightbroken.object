@@ -1,0 +1,59 @@
+{
+  "objectName" : "trinkshiplightbroken",
+  "colonyTags" : ["trink"],
+  "rarity" : "Common",
+  "category" : "light",
+  "lightColor" : [100, 125, 60],
+
+  "flickerPeriod" : 0.01,
+  "flickerMinIntensity" : 0.25,
+  "flickerMaxIntensity" : 0.75,
+  "flickerPeriodVariance" : 0.8,
+  "flickerIntensityVariance" : 0.25,
+
+  "price" : 50,
+  "description" : "A malfunctioning light.",
+  "shortdescription" : "Broken Trink Ship Light",
+  "race" : "trink",
+
+  "apexDescription" : "This light isn't getting enough power.",
+  "avianDescription" : "A flickering light.",
+  "floranDescription" : "Light make dizzy!",
+  "glitchDescription" : "Analysis. This light is malfunctioning.",
+  "humanDescription" : "This light's on the blink.",
+  "hylotlDescription" : "An underpowered light.",
+  
+  "avikanDescription" : "A broken light.",
+  "trinkDescription" : "This light isn't performing optimally.",
+  "drodenDescription" : "Light detected. Status: broken.",
+
+  "inventoryIcon" : "trinkshiplightbrokenicon.png",
+  "orientations" : [
+    {
+      "image" : "trinkshiplight.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+      "animationCycle" : 0.5,
+      
+      "lightPosition" : [-1, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/fluorescent_light_quiet.ogg",
+  
+  "animation" : "/objects/wired/light/lighttoggle.animation",
+  "animationParts" : {
+    "light" : "trinkshiplight.png"
+  },
+  "animationPosition" : [-8, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : false,
+
+  "inputNodes" : [ [0, 0] ]
+}

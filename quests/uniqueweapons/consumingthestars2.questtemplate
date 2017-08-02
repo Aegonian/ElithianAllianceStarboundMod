@@ -1,0 +1,27 @@
+{
+  "id" : "consumingthestars2.gearup",
+  "title" : "^orange;Consuming the Stars II",
+  "text" : "I found a ^orange;Mysterious Weapon Core ^white;in an ancient ruin. I should take it to someone who knows more about such ancient relics.",
+  "completionText" : "What an incredible find! This ^orange;Mysterious Weapon Core ^white;you found is part of an ancient and legendary Centensian weapon: the Sun Drainer. The core is inactive, but I'm certain it can be activated again.",
+  "speaker" : "questGiver",
+  "moneyRange" : [100, 100],
+  "rewards" : [
+      [ [ "avikanmerittoken", 10 ]  ]
+  ],
+  "canBeAbandoned" : false,
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+    "requireTurnIn" : true,
+    "followUp" : "consumingthestars2.gearup",
+    "gatherRequirements" : {
+      "items" : {
+        "sundrainercore" : {
+          "count" : 1,
+          "consume" : false
+        }
+      }
+    }
+  }
+}

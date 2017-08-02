@@ -1,0 +1,215 @@
+{
+  "itemName" : "zaheedsword",
+  "price" : 1500,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "essential",
+  "description" : "^orange;A modified Droden longsword used by commander Zaheed.",
+  "shortdescription" : "^orange;Zaheed's Sword^white;",
+  "tooltipKind" : "thea-sword-unique",
+  "category" : "Longsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword","avikan","theaUnique"],
+
+  "inventoryIcon" : "zaheedswordicon.png",
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "zaheedsword" },
+  
+  "meritTokenValue" : 100,
+
+  "animation" : "zaheedsword.animation",
+  "animationParts" : {
+    "handle" : "handle.png",
+    "handleFullbright" : "handlefullbright.png",
+    "blade" : "blade.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
+      "fire2" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
+      "fire3" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
+      "fire4" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
+      "fire5" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
+	  "throw" : [ "/sfx/melee/swing_spear.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/energymeleeweapon.lua"],
+  
+  "activeTime" : 3.0,
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.8,
+    "baseDps" : 11.5,
+	
+	"stepDamageConfig" : [
+      {
+        "baseDamageFactor" : 1.0,
+        "knockback" : 15
+      },
+      {
+        "baseDamageFactor" : 0.35,
+        "knockback" : 10
+      },
+      {
+        "baseDamageFactor" : 0.35,
+        "knockback" : 10
+      },
+      {
+        "baseDamageFactor" : 0.35,
+        "knockback" : 10
+      },
+      {
+        "baseDamageFactor" : 1.0,
+        "knockback" : 35
+      }
+    ],
+	
+	"comboSteps" : 5,
+	
+	"swooshOffsetRegions" : [
+      [0.75, 0.0, 4.25, 5.0],
+      [3.0, -0.5, 6.5, 2.0],
+      [1.5, -1.0, 5.5, 1.0],
+      [3.0, -0.5, 6.5, 2.0],
+      [1.5, -1.0, 5.5, 1.0]
+    ],
+
+    "stances" : {
+      "fire1" : {
+        "duration" : 0.05
+      },
+      "wait1" : {
+        "duration" : 0.1
+      },
+      "fire2" : {
+        "duration" : 0.1
+      },
+      "wait2" : {
+        "duration" : 0.1
+      },
+      "fire3" : {
+        "duration" : 0.1
+      },
+      "wait3" : {
+        "duration" : 0.2,
+        "armRotation" : 0,
+        "weaponRotation" : -90,
+        "weaponOffset" : [0, 0],
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "windup4" : {
+        "duration" : 0.15,
+        "armRotation" : -15,
+        "weaponRotation" : -60,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : true,
+        "allowFlip" : true,
+        "allowRotate" : false
+      },
+      "fire4" : {
+        "duration" : 0.2,
+        "armRotation" : -150,
+        "weaponRotation" : 55,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : true,
+        "allowFlip" : true,
+        "allowRotate" : false
+      },
+      "wait4" : {
+        "duration" : 0.1,
+        "armRotation" : -150,
+        "weaponRotation" : 55,
+        "weaponOffset" : [0, 0],
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "windup5" : {
+        "duration" : 0.15,
+        "armRotation" : -150,
+        "weaponRotation" : 55,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "fire5" : {
+        "duration" : 0.3,
+        "armRotation" : 0,
+        "weaponRotation" : -90,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "altAbility" : {
+    "name" : "Warp Strike",
+    "scripts" : ["/items/active/weapons/melee/abilities/broadsword/thea-zaheedthrow/thea-zaheedthrow.lua"],
+	"class" : "TheaZaheedThrow",
+
+    "walkWhileFiring" : true,
+
+    "fireOffset" : [0.0, 0.0],
+	
+	"teleportOffset" : [0.0, 0.5],
+	"teleportTolerance" : 3.0,
+	"maxTeleportDistance" : 100.0,
+
+    "energyPerShot" : 200,
+
+    "windupTime" : 0.6,
+	"cooldownTime" : 1.2,
+	"maxWaitTime" : 0.65,
+
+    "projectileType" : "zaheedsword",
+    "projectileParameters" : {
+      "speed" : 75,
+      "power" : 8
+    },
+
+    "stances" : {
+	  "windup" : {
+        "armRotation" : 50,
+        "weaponRotation" : -230,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "aiming" : {
+        "armRotation" : 110,
+        "weaponRotation" : -10,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : false
+      },
+      "fire" : {
+        "duration" : 0.3,
+        "armRotation" : 30,
+        "weaponRotation" : -320,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : false
+      },
+	  "cooldown" : {
+		"duration" : 0.25,
+        "armRotation" : -90,
+        "weaponRotation" : 0,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

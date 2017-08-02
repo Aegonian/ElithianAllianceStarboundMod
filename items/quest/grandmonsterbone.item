@@ -1,0 +1,13 @@
+{
+  "itemName" : "grandmonsterbone",
+  "price" : 500,
+  "rarity" : "Legendary",
+  "category" : "Quest Item",
+  "inventoryIcon" : "grandmonsterbone.png",
+  "description" : "An incredibly rare bone harvested using specialized tools.",
+  "shortdescription" : "^#BA66FF;Grand Monster Bone^white;",
+  "itemTags" : [ "questitem" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 5
+}

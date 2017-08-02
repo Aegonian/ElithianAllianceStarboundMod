@@ -1,0 +1,205 @@
+{
+  "objectName" : "avikanmissileturret",
+  "colonyTags" : ["wired","combat","avikan"],
+  "printable" : false,
+  "rarity" : "Legendary",
+  "objectType" : "container",
+  "price" : 250,
+
+  "slotCount" : 0,
+  "uiConfig" : "/interface/turret/standingturret.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600,
+
+  "description" : "A turret that will automatically defend areas. Can only be placed once.",
+  "shortdescription" : "Nomada Missile Turret",
+  "subtitle" : "Automatic Base Defense",
+  "race" : "avikan",
+  "category" : "wire",
+
+  "breakDropOptions" : [
+    [ 
+	  [ "avikanmacrochip", 1, {} ],
+	  [ "avikandronemissilepod", 1, {} ]
+	]
+  ],
+  
+  "health" : 8,
+
+  "apexDescription" : "An automated defense turret. The rebels could use this.",
+  "avianDescription" : "This turret will defend any location from attacks by monsters and bandits.",
+  "floranDescription" : "Turret fightsss for Floran. Floran likesss turret.",
+  "glitchDescription" : "Cautious. I hope this turret won't target me.",
+  "humanDescription" : "An automated security system.",
+  "hylotlDescription" : "No unconscious machine should ever be given the power to kill.",
+  "novakidDescription" : "A fine turret for defending your base!",
+
+  "aegiDescription" : "An automated Nomada Defense Turret. Highly efective.",
+  "avikanDescription" : "Such turrets are often used to protect Avikan colonies from attacks.",
+  "erixianDescription" : "This automated turret will shred enemies to pieces.",
+  "trinkDescription" : "An Avikan-built turret. I hope its targeting system won't see me as a threat.",
+  "hymidDescription" : "This turret is ever vigilant.",
+  "notixDescription" : "A Nomada-built turret, very useful when there is a shortage of guards.",
+  "jorgasianDescription" : "An automated defense turret.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Detected Nomada-approved Automated Defense Turret.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanmissileturretstand.png:bottom",
+
+      "imagePosition" : [-16, 0],
+      "imageLayers" : [ { "image" : "avikanmissileturretstand.png:bottom" }, { "image" : "avikanmissileturretgun.png:dead", "position": [4, 12] } ],
+      "spaces" : [
+        [-2, 0], [-1, 0], [0, 0], [1, 0],
+        [-2, 1], [-1, 1], [0, 1], [1, 1]
+      ],
+      "anchors" : [ "bottom" ],
+
+      "animationParts" : {
+        "gun" : "avikanmissileturretgun.png",
+        "gunlights" : "avikanmissileturretgunlights.png",
+        "stand" : "avikanmissileturretstand.png:bottom",
+        "standlights" : "avikanmissileturretstandlights.png:bottom",
+        "energy" : "energy.png"
+      },
+      "animationPosition" : [0, 16],
+      "animationCenterLine" : 0,
+
+      "baseOffset" : [0, 2],
+      "energyBarOffset" : [0.375, -1.5],
+      "verticalScaling" : false
+    },
+    {
+      "dualImage" : "avikanmissileturretstand.png:top",
+
+      "imagePosition" : [-16, -24],
+      "imageLayers" : [ { "image" : "avikanmissileturretstand.png:top" }, { "image" : "avikanmissileturretgun.png:dead", "position": [4, 12] } ],
+      "spaces" : [
+        [-2, -1], [-1, -1], [0, -1], [1, -1],
+        [-2, 0], [-1, 0], [0, 0], [1, 0]
+      ],
+      "anchors" : [ "top" ],
+
+      "animationParts" : {
+        "gun" : "avikanmissileturretgun.png",
+        "gunlights" : "avikanmissileturretgunlights.png",
+        "stand" : "avikanmissileturretstand.png:top",
+        "standlights" : "avikanmissileturretstandlights.png:top",
+        "energy" : "energy.png"
+      },
+      "animationPosition" : [0, -8],
+      "animationCenterLine" : 0,
+
+      "baseOffset" : [0, -1],
+      "energyBarOffset" : [0.375, 1.375],
+      "verticalScaling" : false
+    },
+    {
+      "image" : "avikanmissileturretstand.png:left",
+
+      "imagePosition" : [0, 0],
+      "imageLayers" : [ { "image" : "avikanmissileturretstand.png:left" }, { "image" : "avikanmissileturretgun.png:dead", "position": [4, 12] } ],
+      "spaces" : [
+        [0, 0], [1, 0],
+        [0, 1], [1, 1],
+        [0, 2], [1, 2]
+      ],
+      "anchors" : [ "left" ],
+      "direction" : "right",
+
+      "animationParts" : {
+        "gun" : "avikanmissileturretgun.png",
+        "gunlights" : "avikanmissileturretgunlights.png",
+        "stand" : "avikanmissileturretstand.png:left",
+        "standlights" : "avikanmissileturretstandlights.png:left",
+        "energy" : "energy.png"
+      },
+      "animationPosition" : [16, 16],
+
+      "baseOffset" : [2, 2],
+      "energyBarOffset" : [-1.5, -0.625],
+      "verticalScaling" : true
+    },
+    {
+      "image" : "avikanmissileturretstand.png:left",
+
+      "imagePosition" : [-24, 0],
+      "spaces" : [
+        [-1, 0], [0, 0],
+        [-1, 1], [0, 1],
+        [-1, 2], [0, 2]
+      ],
+      "anchors" : [ "right" ],
+      "direction" : "left",
+
+      "imageLayers" : [ { "image" : "avikanmissileturretstand.png:left" }, { "image" : "avikanmissileturretgun.png:dead", "position": [4, 12] } ],
+      "flipImages" : true,
+
+      "animationParts" : {
+        "gun" : "avikanmissileturretgun.png",
+        "gunlights" : "avikanmissileturretgunlights.png",
+        "stand" : "avikanmissileturretstand.png:left",
+        "standlights" : "avikanmissileturretstandlights.png:left",
+        "energy" : "energy.png"
+      },
+      "animationPosition" : [-10, 16],
+
+      "baseOffset" : [-1, 2],
+      "energyBarOffset" : [-1.5, -0.625],
+      "verticalScaling" : true
+    }
+  ],
+
+  "objectWidth" : 4,
+
+  "animation" : "avikanmissileturret.animation",
+
+  "scripts" : [
+    "/objects/scripts/thea-turret.lua",
+    "/scripts/stateMachine.lua",
+    "/scripts/util.lua",
+    "/scripts/vec2.lua"
+  ],
+
+  "damageTeam" : {
+    "type" : "assistant"
+  },
+
+  "scriptDelta" : 5,
+
+  "outputNodes" : [ [0, 0] ],
+  "inputNodes" : [ [0, 1] ],
+
+  //Aiming settings
+  "rotationSpeed" : 25,
+
+  "tipOffset" : [2.5, 0],
+  "offAngle" : -30,
+
+  //Targeting settings
+  "scanInterval" : 6,
+  "scanAngle" : 30,
+  "scanRange" : 35,
+
+  "targetQueryRange" : 35,
+  "targetMinRange" : 2.5,
+  "targetMaxRange" : 50,
+  "targetAngleRange" : 75,
+
+  "maxFireAngle" : 5,
+  
+  //Firing settings
+  "projectileType" : "avikanswarmmissile",
+  
+  "energyUsage" : 20,
+  "power" : 7,
+  "fireTime" : 0.5,
+
+  "maxEnergy" : 100,
+  "energyRegen" : 25,
+  "energyRegenBlock" : 1.0
+}

@@ -1,0 +1,109 @@
+{
+  "metadata" : {
+    "name" : "trinkcolony",
+    "species" : "trink",
+    "rules" : [
+    ],
+    "anchor" : [ "trinkcolony-central" ],
+    "gravity" : 80,
+    "maxRadius" : 100000,
+    "maxParts" : 12,
+    "extendSurfaceFreeSpace" : 50,
+    "protected" : true
+  },
+
+  "parts" : [
+    {
+      "name" : "trinkcolony-central",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "trinkcolony-central" ] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "trinkcolony-central.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "trinkcolony-serverfarm",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "trinkcolony-serverfarm", "trinkcolony-antennatower", "trinkcolony-central", "trinkcolony-sideleft", "trinkcolony-sideright" ] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "trinkcolony-serverfarm.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "trinkcolony-largehome",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "trinkcolony-largehome" ] ]
+      ],
+      "def" : [ "tmx", "trinkcolony-largehome.json" ],
+      "chance" : 0.1
+    },
+    {
+      "name" : "trinkcolony-mediumhome",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "trinkcolony-mediumhome" ] ]
+      ],
+      "def" : [ "tmx", "trinkcolony-mediumhome.json" ],
+      "chance" : 0.1
+    },
+    {
+      "name" : "trinkcolony-smallhome",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "trinkcolony-smallhome" ] ]
+      ],
+      "def" : [ "tmx", "trinkcolony-smallhome.json" ],
+      "chance" : 0.1
+    },
+    {
+      "name" : "trinkcolony-smallhome2",
+      "rules" : [
+        [ "maxSpawnCount", [3] ],
+        [ "doNotConnectToPart", [ "trinkcolony-smallhome2" ] ]
+      ],
+      "def" : [ "tmx", "trinkcolony-smallhome2.json" ],
+      "chance" : 0.1
+    },
+    {
+      "name" : "trinkcolony-smallhome3",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "trinkcolony-smallhome3" ] ]
+      ],
+      "def" : [ "tmx", "trinkcolony-smallhome3.json" ],
+      "chance" : 0.1
+    },
+    {
+      "name" : "trinkcolony-antennatower",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "trinkcolony-antennatower", "trinkcolony-central", "trinkcolony-sideleft", "trinkcolony-sideright" ] ]
+      ],
+      "def" : [ "tmx", "trinkcolony-antennatower.json" ],
+      "chance" : 0.5
+    },
+    {
+      "name" : "trinkcolony-sideleft",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotConnectToPart", [ "trinkcolony-sideleft", "trinkcolony-sideright", "trinkcolony-central" ] ]
+      ],
+      "def" : [ "tmx", "trinkcolony-sideleft.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "trinkcolony-sideright",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotConnectToPart", [ "trinkcolony-sideright", "trinkcolony-sideleft", "trinkcolony-central" ] ]
+      ],
+      "def" : [ "tmx", "trinkcolony-sideright.json" ],
+      "chance" : 1
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "avikanmetaltier5", "count" : 3 },
+    { "item" : "avikandarkmetal", "count" : 2 },
+    { "item" : "avikanstring", "count" : 1 }
+  ],
+  "output" : { "item" : "avikan-nomadashortbow", "count" : 1 },
+  "groups" : [ "avikanmetalcrafting", "weapons", "all" ]
+}

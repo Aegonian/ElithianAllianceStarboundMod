@@ -1,0 +1,24 @@
+{
+  "itemName" : "trinkrailhook",
+  "price" : 250,
+  "level" : 1,
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "category" : "tool",
+  "description" : "A rail hook, for sliding along rails.",
+  "shortdescription" : "Trinkian Rail Hook",
+  "twoHanded" : false,
+
+  "inventoryIcon" : "trinkrailhookicon.png",
+  "animation" : "trinkrailhook.animation",
+  "scripts" : ["railhook.lua"],
+
+  "connectionOffset" : [1.0, 0],
+  "activeArmAngle" : 1.5,
+  "inactiveArmAngle" : -1.0,
+
+  "railConfig" : {
+    "useGravity" : true,
+    "gravityMultiplier" : 0.8
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "objectName" : "avikanwatersack",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A waterproof leather sack, filled with water.",
+  "shortdescription" : "Avikan Water Sack",
+  "race" : "avikan",
+
+  "apexDescription" : "A leather sack full of pure water.",
+  "avianDescription" : "Refreshing water, stored in a simple, but waterproof leather sack.",
+  "floranDescription" : "Water in sssack is coldsss.",
+  "glitchDescription" : "Analysis. A sack filled with water, of vital importance to desert dwellers.",
+  "humanDescription" : "Clean, refreshing water! Good thing the leather is waterproof.",
+  "hylotlDescription" : "Water, pure and refreshing. A blessing to desert dwellers.",
+
+  "aegiDescription" : "A sack filled with refreshing water. A life saver in the desert.",
+  "avikanDescription" : "These sacks full of water are what makes it possible for us to build permanent camps.",
+  "erixianDescription" : "A leather sack filled with water.",
+  "trinkDescription" : "A leather sack filled with fresh water.",
+  "hymidDescription" : "An unusual way to store water.",
+  "notixDescription" : "Fresh water, stored in a simple leather sack. It's waterproof, of course.",
+  "jorgasianDescription" : "Fresh water, stored in a leather sack.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected water supply. Detected fragile container. Recommend storing in Nomada-approved water container.",
+
+  "inventoryIcon" : "avikanwatersackicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanwatersack.png:empty",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/chest_small_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/chest_small_close.ogg" ],
+  "slotCount" : 1,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 10,
+  "autoCloseCooldown" : 3600,
+  
+  "scripts" : [ "/objects/scripts/thea-liquidcontainer.lua" ],
+  "scriptDelta" : 20,
+  
+  "animation" : "/objects/animations/thea-liquidcontainer.animation",
+  "animationParts" : {
+    "container" : "avikanwatersack.png"
+  },
+  "animationPosition" : [0, 0]
+}

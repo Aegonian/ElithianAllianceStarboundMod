@@ -1,0 +1,28 @@
+{
+  "materialId" : 30075,
+  "materialName" : "allianceprefabwall",
+  "particleColor" : [157, 157, 157, 255],
+  "itemDrop" : "allianceprefabwall", 
+  "shortdescription" : "Alliance Prefab Wall",
+  
+  "description" : "Part of a pre-fabricated wall.",
+  "glitchDescription" : "Statement. This is part of a pre-fabricated wall.",
+  "floranDescription" : "Wallss were made in factoriess.",
+  "novakidDescription" : "Some sturdy metal plating.",
+  
+  "drodenDescription" : "Analysis complete. Pre-fabricated wall piece.",
+
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "health" : 10,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/thea-pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "allianceprefabwall.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 250
+  }
+}

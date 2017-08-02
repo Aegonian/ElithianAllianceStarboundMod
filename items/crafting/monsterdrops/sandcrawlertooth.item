@@ -1,0 +1,13 @@
+{
+  "itemName" : "sandcrawlertooth",
+  "price" : 50,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "sandcrawlertooth.png",
+  "description" : "The tooth of a Kadavan Sandcrawler.",
+  "shortdescription" : "Sandcrawler's Tooth",
+  "itemTags" : [ "reagent" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 3
+}

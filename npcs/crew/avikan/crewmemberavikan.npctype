@@ -1,0 +1,145 @@
+{
+  "type" : "crewmemberavikan",
+  "baseType" : "crewmember",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+
+	"crew" : {
+	  "defaultUniform" : {
+		"chest" : "avikan-protectoratechest",
+		"legs" : "avikan-protectoratelegs"
+	  },
+	  
+	  "uniformSlots" : []
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "offer" : {
+          "avikan" : {
+            "default" : [
+              "Vas Vha'leih, adventurer. Might I join your crew?",
+              "I'm <selfname>, and I'm looking to join a ship crew. Are you hiring?",
+              "You seem like a fine captain. Do you need anyone for your crew?",
+              "I'd like to join your crew! Are you interested?"
+            ],
+			"avikan" : [
+              "Vas Vha'leih, Captain. Might I join your crew?",
+              "I'm <selfname>, and I'd be honoured to join your crew!",
+              "I've always wanted to join a ship crew. Are you hiring, Captain?",
+              "It would be an honour to join your crew, Captain! Will you have me?"
+            ],
+			"glitch" : [
+              "You give machines a better name. Might I join your crew, perhaps?",
+              "I can hardly believe I'm asking this, but might I join your crew?",
+              "You seem honourable, despite being a machine. Are you hiring crewmembers, perhaps?",
+              "I'd like to join your crew, and show the world that machines can be meritful. Will you have me?"
+            ],
+			"trink" : [
+              "You give machines a better name. Might I join your crew, perhaps?",
+              "I can hardly believe I'm asking this, but might I join your crew?",
+              "You seem honourable, despite being a machine. Are you hiring crewmembers, perhaps?",
+              "I'd like to join your crew, and show the world that machines can be meritful. Will you have me?"
+            ],
+			"droden" : [
+              "You give machines a better name. Might I join your crew, perhaps?",
+              "I can hardly believe I'm asking this, but might I join your crew?",
+              "You seem honourable, despite being a machine. Are you hiring crewmembers, perhaps?",
+              "I'd like to join your crew, and show the world that machines can be meritful. Will you have me?"
+            ]
+          }
+        },
+		"roleDescription" : {
+          "avikan" : {
+            "default" : [
+              "I'll be here if you need a fighter, Captain!",
+              "Let us test our blades in battle, Captain!",
+              "I'm ready for combat, Captain!",
+              "I'll follow you into battle any day, Captain!"
+            ]
+          }
+        },
+		"respawned" : {
+          "avikan" : {
+            "default" : [
+              "That was the strangest thing I've ever felt...",
+              "I thought I was done for!",
+              "The emergency teleport saved me again!",
+              "Rhadeis brought me back!"
+            ]
+          }
+        },
+		"unfollow" : {
+          "avikan" : {
+            "default" : [
+              "I'll wait here, Captain.",
+              "I'll be here if you need me, Captain.",
+              "I'll wait for you, Captain.",
+              "Do you need me to stay here, Captain?"
+            ]
+          }
+        },
+		"follow" : {
+          "avikan" : {
+            "default" : [
+              "I'm ready to go, Captain!",
+              "Yes, Captain!",
+              "Let's go, Captain!",
+              "I'm ready, Captain!"
+            ]
+          }
+        },
+		"cantreach" : {
+          "avikan" : {
+            "default" : [
+              "I can't reach you!",
+              "I can't get over there!",
+              "Wait for me, Captain!",
+              "I'll find a way there, Captain!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "avikan-protectoratechest", "data" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "avikan-protectoratelegs", "data" : { "colorIndex" : 4 } } ],
+            "primary" : [ 
+			  "avikan-assaultrifle",
+			  "avikan-assaultrifle2",
+			  "avikan-shotgun",
+			  "avikan-sniperrifle"
+			],
+            "sheathedprimary" : [
+			  "avikanvanguardbroadsword",
+			  "avikanvanguardspear"
+			]
+          },
+          {
+            "chest" : [ { "name" : "avikan-protectoratechest", "data" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "avikan-protectoratelegs", "data" : { "colorIndex" : 4 } } ],
+            "primary" : [ 
+			  "avikanvanguardbroadsword",
+			  "avikanvanguardspear"
+			],
+            "sheathedprimary" : [
+			  "avikan-assaultrifle",
+			  "avikan-assaultrifle2",
+			  "avikan-shotgun",
+			  "avikan-sniperrifle"
+			]
+          }
+        ] ]
+    ]
+  }
+}

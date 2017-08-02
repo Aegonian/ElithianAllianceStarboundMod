@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "trinkmetal", "count" : 3 },
+	{ "item" : "trinkelectronics", "count" : 1 },
+	{ "item" : "trinkglassitem", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "trinklightpillar",
+    "count" : 1
+  },
+  "groups" : [ "trinkcrafting", "furniture", "all" ]
+}

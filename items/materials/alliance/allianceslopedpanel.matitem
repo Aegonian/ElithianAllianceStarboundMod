@@ -1,0 +1,11 @@
+{
+  "itemName" : "allianceslopedpanel",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "allianceslopedpanel.png",
+  "shortdescription" : "Alliance Sloped Panel",
+  "description" : "A sloped metal panel, perfect for buildings walls with.",
+
+  "materialId" : 30092
+}

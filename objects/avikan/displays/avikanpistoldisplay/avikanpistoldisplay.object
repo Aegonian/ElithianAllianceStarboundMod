@@ -1,0 +1,44 @@
+{
+  "objectName" : "avikanpistoldisplay",
+  "colonyTags" : ["avikan","combat"],
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 500,
+  "description" : "An Avikan skiprifle on display.",
+  "shortdescription" : "Vanguard Skiprifle Display",
+  "race" : "avikan",
+
+  "apexDescription" : "Some sort of alien pistol.",
+  "avianDescription" : "This pistol was designed by aliens.",
+  "floranDescription" : "Floran use thisss to sstab?",
+  "glitchDescription" : "Analysing. This weapon is called a skiprifle by its creators, because its rounds skip off hard surfaces.",
+  "humanDescription" : "An alien pistol. Imagine dual-wielding this beast!",
+  "hylotlDescription" : "It is unfortunate that violence, and with it, weapons, are a necessity in this universe.",
+
+  "aegiDescription" : "This Avikan skiprifle fires a burst of bullets designed to skip off surfaces.",
+  "avikanDescription" : "Small but deadly, a skiprifle is an essential tool for Avikan explorers.",
+  "erixianDescription" : "This burst-fire pistol was designed by the Avikan.",
+  "trinkDescription" : "A small and lightweight pistol, but exceptionally efficient at killing.",
+  "hymidDescription" : "A pistol built by the Avikan.",
+  "notixDescription" : "Unlike many ballistic weapons, this pistol will never jam.",
+  "jorgasianDescription" : "An Avikan pistol of sorts.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Vanguard Skiprifle detected. Ammunition depleted.",
+  
+  "inventoryIcon" : "avikanpistoldisplay.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanpistoldisplay.png:<color>",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "avikanglassitem", "count" : 1 },
+	{ "item" : "glowfibre", "count" : 1 }
+  ],
+  "output" : { "item" : "avikanglowstick", "count" : 1 },
+  "groups" : [ "avikanmetalcrafting", "consumables", "all" ]
+}

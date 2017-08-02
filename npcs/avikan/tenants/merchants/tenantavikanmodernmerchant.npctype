@@ -1,0 +1,29 @@
+{
+  "type" : "tenantavikanmodernmerchant",
+  "baseType" : "merchant",
+  
+  "dropPools" : [],
+
+  "scriptConfig" : {
+    "questGenerator" : { "pools" : [], "enableParticipation" : false },
+	
+	"merchant" : {
+	  "categories" : {
+		"override" : [ "avikanmodern" ]
+	  }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ "avikan-engineerhead" ],
+			"chest" : [ "avikan-merchantchest" ],
+            "legs" : [ "avikan-merchantlegs" ],
+            "back" : [ "avikanmodernpack" ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "itemName" : "avikanrail",
+  "price" : 0,
+  "category" : "rail",
+  "rarity" : "Common",
+  "inventoryIcon" : "avikanrail.png",
+  "shortdescription" : "Avikan Rail",
+  "description" : "A strong reinforced rail.",
+
+  "materialId" : 30200
+}

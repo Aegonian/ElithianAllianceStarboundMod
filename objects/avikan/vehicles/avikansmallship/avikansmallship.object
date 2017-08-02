@@ -1,0 +1,44 @@
+{
+  "objectName" : "avikansmallship",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 800,
+  "description" : "A small Avikan spaceship built for scouting purposes.",
+  "shortdescription" : "Avikan Skoff",
+  "race" : "avikan",
+  
+  "health" : 6,
+
+  "apexDescription" : "An alien spaceship. It could fit a small crew.",
+  "avianDescription" : "An alien spaceship. It can achieve flight without wings!",
+  "floranDescription" : "Floran not like sssmall sshipsss for sspace...",
+  "glitchDescription" : "Excited. This small ship must be a joy to ride.",
+  "humanDescription" : "A small alien spaceship. Let's hijack it!",
+  "hylotlDescription" : "A small alien spaceship, but it looks fast and strong as well.",
+  "novakidDescription" : "I'm sure she'll fly like a charm.",
+
+  "aegiDescription" : "An Avikan Skoff, these ships use some reverse-engineered Centensian technology.",
+  "avikanDescription" : "A Skoff. Small, fast and powerful too, these ships are an excellent example of Avikan engineering.",
+  "erixianDescription" : "An Avikan Skoff. It looks a bit cramped on the inside.",
+  "trinkDescription" : "A surprisingly efficient spaceship, built by the Avikan. I believe it is called a Skoff.",
+  "hymidDescription" : "An Avikan Skoff. I doubt it would function underwater.",
+  "notixDescription" : "An Avikan Skoff. It can carry a small crew.",
+  "jorgasianDescription" : "A Skoff, built by the Avikan.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected Skoff. Occupants: zero.",
+
+  "inventoryIcon" : "avikansmallshipicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikansmallship.png:<color>",
+      "imagePosition" : [-88, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

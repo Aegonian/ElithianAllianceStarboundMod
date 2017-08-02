@@ -1,0 +1,28 @@
+{
+  "materialId" : 30056,
+  "materialName" : "avikanpurplefabric",
+  "particleColor" : [125, 66, 181, 255],
+  "itemDrop" : "avikanpurplefabric", 
+  "shortdescription" : "Rhaiod Fabric",
+  
+  "description" : "A fabric wall sheet decorated in the style of the Rhaiod.",
+  "glitchDescription" : "Neutral. I am uncertain what to think of this colour.",
+  "floranDescription" : "Floran wondersss how quickly thisss will burn...",
+  "novakidDescription" : "A purple sheet of fabric. Makes a good tent wall.",
+  
+  "drodenDescription" : "Analysis complete. Rhaiod-decorated tent wall.",
+
+  "footstepSound" : "/sfx/blocks/footstep_sand.ogg",
+  "health" : 2,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/thea-avikanleathertemplate.config",
+  "renderParameters" : {
+    "texture" : "avikanpurplefabric.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 0
+  }
+}

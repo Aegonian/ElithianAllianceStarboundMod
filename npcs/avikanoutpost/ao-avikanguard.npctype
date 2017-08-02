@@ -1,0 +1,78 @@
+{
+  "type" : "ao-avikanguard",
+  "baseType" : "ao-civilian",
+  
+  "scriptConfig" : {
+  
+	"behaviorConfig" : {
+      "alwaysRun" : false,
+      "wanderWaitTime" : [2.0, 4.0],
+      "wanderTime" : [0.5, 2.0],
+      "wanderDistance" : 20
+    },
+  
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "Don't cause any trouble here.",
+			"I have my eye on you.",
+			"This is a safe haven for all Starfarers."
+		  ]
+		},
+
+        "avikan" : {
+          "default" : [
+            "Don't cause any trouble here.",
+			"I have my eye on you.",
+			"This is a safe haven for all Starfarers."
+          ],
+          "glitch" : [
+            "Don't cause any trouble here.",
+			"I have my eye on you.",
+			"This is a safe haven for all Starfarers."
+          ],
+          "avikan" : [
+            "I'll keep this safe haven secure, Captain.",
+			"The Starfarer's Refuge is a safe haven for all, Captain.",
+			"Nothing to report, Captain."
+          ],
+          "trink" : [
+            "Don't cause any trouble here.",
+			"I have my eye on you.",
+			"This is a safe haven for all Starfarers."
+          ],
+          "droden" : [
+            "Get back to work, you.",
+			"Why aren't you at work, Droden?",
+			"A free Droden? Don't go causing trouble here, alright?"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ "avikan-vanguardchest" ],
+            "legs" : [ "avikan-vanguardlegs" ],
+            "head" : [ "avikan-vanguardhead" ],
+            "primary" : [
+				[ "avikanvanguardshortsword" ],
+				[ "avikan-assaultrifle" ],
+				[ "avikan-assaultrifle2" ],
+				[ "avikan-sniperrifle" ],
+				[ "avikan-shotgun" ],
+				[ "avikan-skiprifle" ],
+				[ "avikanvanguardspear" ]
+			],
+			"alt" : [
+				[ "avikanmetalshield" ]
+			]
+          }
+        ] ]
+    ]
+  }
+}

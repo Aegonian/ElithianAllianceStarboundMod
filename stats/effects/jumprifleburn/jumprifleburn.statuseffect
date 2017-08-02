@@ -1,0 +1,16 @@
+{
+  "name" : "jumprifleburn",
+  "blockingStat" : "fireStatusImmunity",
+
+  "effectConfig" : {},
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "jumprifleburn.lua"
+  ],
+
+  "animationConfig" : "jumprifleburn.animation",
+
+  "label" : "Solar Burn",
+  "icon" : "/interface/statuses/jumprifleburn.png"
+}

@@ -1,0 +1,28 @@
+{
+  "materialId" : 30031,
+  "materialName" : "avikandarkpanel",
+  "particleColor" : [97, 97, 97, 255],
+  "itemDrop" : "avikandarkpanel", 
+  "shortdescription" : "Dark Avikan Panel",
+  
+  "description" : "A dark metal panel, perfect for room decoration.",
+  "glitchDescription" : "Statement. This panel could look good as room decoration.",
+  "floranDescription" : "Panelsss would look good in Floran sship.",
+  "novakidDescription" : "A dark metal platform, sure as the stars.",
+  
+  "drodenDescription" : "Analysis complete. Dark metal panel.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "avikandarkpanel.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 50
+  }
+}

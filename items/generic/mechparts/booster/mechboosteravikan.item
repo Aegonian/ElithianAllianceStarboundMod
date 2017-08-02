@@ -1,0 +1,15 @@
+{
+  "itemName" : "mechboosteravikan",
+  "price" : 6720,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "category" : "mechPart",
+  "tooltipKind" : "mechbooster",
+  "builder" : "/items/buildscripts/buildmechpart.lua",
+  "inventoryIcon" : "mechboosteravikan.png",
+  "description" : "Well-balanced boosters built by the Vanguard military.",
+  "shortdescription" : "Vanguard Mech Boosters",
+  "itemTags" : [ ],
+
+  "mechPart" : ["booster", "avikan"]
+}

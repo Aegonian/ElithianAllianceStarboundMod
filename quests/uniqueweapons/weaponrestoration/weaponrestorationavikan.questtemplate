@@ -1,0 +1,32 @@
+{
+  "id" : "weaponrestorationavikan",
+  "prerequisites" : [ "avikancustomtailoring", "glitch_mission2" ],
+  "requiredItems" : [ "avikan-brokenvhaleihanspear" ],
+  "title" : "^orange;Restoring The Past",
+  "text" : "That spear you carry, let me see it! Ah, yes... It is what I though it was: an ancient Vha'leihan Spear! I know how to repair it, but we'll need some exceedingly rare items for it. ^green;Scour the galaxy for Centensian ruins and find a ^orange;Centensian Relic^white; - a sort of hovering metal cube - then we can continue.",
+  "completionText" : "Few know how to open these types of containers, but I do. Ah, and as I expected, there was a Xanafian Shard contained within - exactly what we needed. It's a small and weak one, but it'll do.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "xanafianshard", 1 ], [ "avikanmerittoken", 5 ] ]
+  ],
+  "canBeAbandoned" : false,
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+	"portraits" : {
+      "default" : "questGiver"
+    },
+	"followUp" : "weaponrestorationavikan2",
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "centensrelic",
+        "count" : 1,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Return to ^orange;Vanhas ^reset;in the ^orange;Starfarer's Refuge^reset;"
+  }
+}

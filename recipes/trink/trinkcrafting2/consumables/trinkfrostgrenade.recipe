@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "trinkmetal", "count" : 2 },
+	{ "item" : "cryonicextract", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "trinkfrostgrenade",
+    "count" : 2
+  },
+  "groups" : [ "trinkcrafting2", "consumables", "all" ],
+  "duration" : 0.3
+}

@@ -1,0 +1,44 @@
+{
+  "objectName" : "avikanlinerifledisplay",
+  "colonyTags" : ["avikan","combat"],
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 500,
+  "description" : "An Avikan linerifle on display.",
+  "shortdescription" : "Vanguard Linerifle Display",
+  "race" : "avikan",
+
+  "apexDescription" : "An unusual alien weapon. I'm not sure how it even works...",
+  "avianDescription" : "This weapon is powered by a mysterious weapon core.",
+  "floranDescription" : "Floran doesss not undersstand how thiss weapon worksss...",
+  "glitchDescription" : "Error. I have no information on how this weapon's firing mechanism works.",
+  "humanDescription" : "This weapon glows, and it radiates some odd energy fields...",
+  "hylotlDescription" : "This weapon is a mystery to me.",
+
+  "aegiDescription" : "The Avikan use Centensian technology for their weapons. Impressive.",
+  "avikanDescription" : "Linerifles are the signature weapons of our grand Nomada.",
+  "erixianDescription" : "This weapon uses Centensian technology, I believe.",
+  "trinkDescription" : "The core of this weapon works in ways not even I can understand.",
+  "hymidDescription" : "A truly fascinating weapon. It seems to summon its ammunition out of nowhere.",
+  "notixDescription" : "An impressive weapon, it uses technologies far beyond my understanding.",
+  "jorgasianDescription" : "This Avikan rifle uses highly advanced technology.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Analysis. Line rifle.",
+  
+  "inventoryIcon" : "avikanlinerifledisplay.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanlinerifledisplay.png:<color>",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

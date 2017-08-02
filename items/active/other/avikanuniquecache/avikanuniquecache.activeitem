@@ -1,0 +1,31 @@
+{
+  "itemName" : "avikanuniquecache",
+  "level" : 6,
+  "price" : 1000,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "tooltipKind" : "thea-unique",
+  "description" : "A sealed cache containing a random Unique-quality item. Hold to open!",
+  "shortdescription" : "^orange;Unique Avikan Cache^white;",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "avikanuniquecacheicon.png",
+  "animation" : "avikanuniquecache.animation",
+  "animationParts" : {
+    "treasurebox" : "avikanuniquecache.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "open" : [ "/sfx/objects/colonydeed_partyhorn.ogg" ],
+	  "openLoop" : [ "/sfx/other/thea_sealedcache_opening2.ogg" ]
+    }
+  },
+  
+  "scripts" : ["/items/active/other/thea-sealedcache/thea-sealedcache.lua"],
+
+  "fireOffset" : [1.0, 0.0],
+
+  "treasure" : {
+    "pool" : "uniqueweaponsAvikan"
+  }
+}

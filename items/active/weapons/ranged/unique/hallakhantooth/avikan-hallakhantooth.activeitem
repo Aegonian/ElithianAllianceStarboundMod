@@ -1,0 +1,158 @@
+{
+  "itemName" : "avikan-hallakhantooth",
+  "price" : 1500,
+  "level" : 6,
+  "inventoryIcon" : "avikan-hallakhantoothicon.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "tooltipKind" : "thea-bow-unique",
+  "category" : "Longbow",
+  "description" : "^orange;A bow ground down from a tooth of Halla'Khan.",
+  "shortdescription" : "^orange;Tooth of Halla'Khan^white;",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","bow","avikan","theaUnique"],
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "avikan-hallakhantooth" },
+  
+  "meritTokenValue" : 100,
+
+  "radioMessagesOnPickup" : [ "pickupavikanhunting" ],
+
+  "animation" : "/items/active/weapons/ranged/animations/thea-alternativearrowbow.animation",
+  "animationParts" : {
+    "bow" : "avikan-hallakhantooth.png",
+	"arrows" : "avikan-hallakhantootharrows.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : { "parts" : { "bow" : { "properties" : {
+      "offset" : [0.25, 0]
+    }}}},
+    "sounds" : {
+      "draw" : [ "/sfx/gun/thea_longbow_draw.ogg" ],
+      "release" : [ "/sfx/gun/bow_loose.ogg" ],
+      "perfectRelease" : [ "/sfx/gun/bow_loose_perfect.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/bow/bow.lua"],
+  
+  "elementalType" : "avikanhunting",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/bow/thea-longbowshot.lua"],
+    "class" : "TheaLongBowShot",
+	
+	"fireOffset" : [1.75, 0],
+
+    "energyPerShot" : 40,
+	"holdEnergyUsage" : 10,
+    "cooldownTime" : 0.4,
+    "inaccuracy" : 0.01,
+	
+	"walkWhileFiring" : true,
+	"useQuiverDamageBonus" : true,
+
+    "drawFrameSelector" : "thea-bowImageSelector",
+    "drawPowerMultiplier" : "thea-drawTimeMultiplier",
+    "drawSpeedMultiplier" : "thea-drawTimeMultiplier",
+
+    "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
+
+    "projectileType" : "avikanlongarrow",
+    "powerProjectileType" : "avikanlongpowerarrow",
+    "powerProjectileTime" : [1.2, 1.5],
+    "projectileParameters" : {
+      "speed" : 95,
+      "power" : 9.0
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : -30,
+        "weaponRotation" : 0,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "draw" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "fire" : {
+        "duration" : 0.2,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true,
+
+        "frontArmFrame" : "idle.3"
+      }
+    }
+  },
+
+  "altAbility" : {
+	"name" : "Triple Draw",
+    "scripts" : ["/items/active/weapons/ranged/abilities/bow/thea-longbowspecialarrows.lua"],
+    "class" : "TheaLongbowSpecialArrows",
+	
+	"fireOffset" : [1.75, 0],
+
+    "energyPerShot" : 70,
+	"holdEnergyUsage" : 15,
+    "cooldownTime" : 0.4,
+    "inaccuracy" : 0.075,
+	
+	"walkWhileFiring" : true,
+	"useQuiverDamageBonus" : true,
+
+    "drawFrameSelector" : "thea-bowImageSelector",
+    "drawPowerMultiplier" : "thea-drawTimeMultiplier",
+    "drawSpeedMultiplier" : "thea-drawTimeMultiplier",
+
+    "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
+
+    "projectileType" : "avikanlongarrow",
+    "powerProjectileType" : "avikanlongpowerarrow",
+    "powerProjectileTime" : [1.2, 1.5],
+	"projectileCount" : 3,
+    "projectileParameters" : {
+      "speed" : 95,
+      "power" : 4.0,
+	  "piercing" : false
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : -30,
+        "weaponRotation" : 0,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "draw" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "fire" : {
+        "duration" : 0.2,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true,
+
+        "frontArmFrame" : "idle.3"
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildbow.lua"
+}

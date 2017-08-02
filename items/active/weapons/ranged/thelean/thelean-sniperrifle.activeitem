@@ -1,0 +1,85 @@
+{
+  "itemName" : "thelean-sniperrifle",
+  "price" : 500,
+  "inventoryIcon" : "thelean-sniperrifle.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A powerful flux rifle which shoots molten metal projectiles.",
+  "shortdescription" : "Vatha'rak", //Translated to: Intruder
+  "level" : 6,
+  "tooltipKind" : "gun",
+  "category" : "Flux Rifle",
+  "itemTags" : ["weapon","ranged","sniperrifle","thelean"],
+  "twoHanded" : true,
+  
+  "cursor" : "/cursors/thea-precisetheleanreticle.cursor",
+  
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "thelean-sniperrifle.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/theleanmuzzle.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/gun/plasma_mp1.ogg" ]
+    }
+  },
+
+  "baseOffset" : [1.25, 0.125],
+  "muzzleOffset" : [-0.125, 0.30],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "fire",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 1.1,
+    "baseDps" : 8.5,
+    "energyUsage" : 22.5,
+    "inaccuracy" : 0.0,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "theleanbullet",
+    "projectileParameters" : {
+      "knockback" : 12
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.15,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

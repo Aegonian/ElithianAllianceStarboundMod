@@ -1,0 +1,54 @@
+{
+  "type" : "ao-lounger",
+  "baseType" : "base",
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "lounger",
+
+    "dialog" : {
+      "converse" : "/dialog/avikanoutpost.config:converse"
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "avikan" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "avikan-elderchest", "parameters" : { "colorIndex" : [0, 1, 2, 3, 5, 11] } },
+              { "name" : "avikan-nomadicchest", "parameters" : { "colorIndex" : [0, 1, 2, 3, 5, 11] } },
+			  { "name" : "avikan-travellerchest", "parameters" : { "colorIndex" : [0, 1, 2, 3, 5, 11] } },
+			  { "name" : "avikan-modernchest", "parameters" : { "colorIndex" : [0, 1, 2, 3, 5, 11] } }
+            ],
+
+            "legs" : [
+              { "name" : "avikan-elderlegs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 5, 11] } },
+              { "name" : "avikan-nomadiclegs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 5, 11] } },
+			  { "name" : "avikan-travellerlegs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 5, 11] } },
+			  { "name" : "avikan-merchantlegs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 5, 11] } },
+			  { "name" : "avikan-modernlegs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 5, 11] } }
+            ],
+			
+			"head" : [
+              { "name" : "avikan-sunglass", "parameters" : { "colorIndex" : [0, 1, 2, 3, 5, 11] } },
+              { "name" : "avikan-travellerhead", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

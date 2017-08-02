@@ -1,0 +1,65 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "lockState" : {
+        "default" : "unlocked",
+        "states" : {
+          "locked" : {
+            "frames" : 1
+          },
+          "unlocked" : {
+            "frames" : 1
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "background" : {
+        "properties" : {
+          "centered" : false,
+		  "fullbright" : true
+        },
+        "partStates" : {
+          "lockState" : {
+            "locked" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.locked"
+              }
+            },
+            "unlocked" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.unlocked"
+              }
+            }
+          }
+        }
+      },
+	  "foreground" : {
+        "properties" : {
+          "centered" : false,
+		  "zLevel" : 1
+        },
+        "partStates" : {
+          "lockState" : {
+            "locked" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.locked"
+              }
+            },
+            "unlocked" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.unlocked"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "sounds" : {
+    "confirm" : ["/sfx/objects/outpostbutton.ogg"],
+	"error" : ["/sfx/interface/clickon_error.ogg"]
+  }
+}

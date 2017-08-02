@@ -1,0 +1,14 @@
+{
+  "itemName" : "avikandarkpanel",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "avikandarkpanel.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "description" : "A dark metal panel.",
+  "shortdescription" : "Dark Avikan Panel",
+  "glitchDescription" : "Statement. A strong metal panel.",
+  "floranDescription" : "Dark metal panelsss",
+
+  "materialId" : 30031
+}

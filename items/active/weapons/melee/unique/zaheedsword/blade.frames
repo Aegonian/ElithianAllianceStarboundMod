@@ -1,0 +1,19 @@
+{
+  "frameGrid" : {
+    "size" : [24, 64],
+    "dimensions" : [9, 3],
+    "names" : [
+      ["extend.1", "extend.2", "extend.3", "extend.4", "extend.5", null, null, null, null],
+      ["active.1", "active.2", "active.3", "active.4", "active.5", "active.6", "active.7", "active.8", "active.9"],
+      ["returning.1", "returning.2", "returning.3", "returning.4", "returning.5", null, null, null, null]
+    ]
+  },
+
+  "aliases" : {
+    "retract.1" : "extend.5",
+    "retract.2" : "extend.4",
+    "retract.3" : "extend.3",
+    "retract.4" : "extend.2",
+    "retract.5" : "extend.1"
+  }
+}

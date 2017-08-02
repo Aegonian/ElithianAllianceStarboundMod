@@ -1,0 +1,57 @@
+{
+  "objectName" : "avikantenttop2",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 65,
+  "description" : "A sheet of fabric used as a tent roof.",
+  "shortdescription" : "Avikan Fabric Top Sheet",
+  "race" : "avikan",
+
+  "apexDescription" : "A sheet of colourful fabric.",
+  "avianDescription" : "Colourful fabric, used a a tent roof.",
+  "floranDescription" : "Fabric Roofsss. Weaksss.",
+  "glitchDescription" : "Observation. This top sheet is made of fabric.",
+  "humanDescription" : "A colourful sheet of fabric.",
+  "hylotlDescription" : "A brightly coloured sheet of fabric.",
+
+  "aegiDescription" : "A colourful fabric top sheet. Keeps tents cool on the inside.",
+  "avikanDescription" : "A top sheet made of fabric. Few nomads can afford tents of such materials.",
+  "erixianDescription" : "This'll keep a tent cool on the inside.",
+  "trinkDescription" : "A top sheet made of bright fabric. An essential part of a good tent.",
+  "hymidDescription" : "A nice fabric sheet, used for making tents.",
+  "notixDescription" : "A sheet of fabric used in the construction of tents.",
+  "jorgasianDescription" : "A top sheet made of fabric.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Top sheet. Used to keep the interior of a tent cool.",
+
+  "inventoryIcon" : "avikantenttop2icon.png",
+  "orientations" : [
+    {
+      "image" : "avikantenttop2.png:<color>",
+
+      "imagePosition" : [-40, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "collision" : "solid",
+      "flipImages" : true,
+      "direction" : "right"
+    },
+    {
+      "image" : "avikantenttop2.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "collision" : "solid",
+      "direction" : "left"
+    }
+  ]
+}

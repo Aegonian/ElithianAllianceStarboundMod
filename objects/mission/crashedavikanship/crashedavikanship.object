@@ -1,0 +1,97 @@
+{
+  "objectName" : "crashedavikanship",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Legendary",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 0,
+  "description" : "This Avikan ship has suffered extreme damage. It looks like it was attacked.",
+  "shortdescription" : "Crashed Avikan Skoff",
+  "race" : "avikan",
+
+  "floranDescription" : "Floran not like thiss... Sship wass attacked.",
+  "glitchDescription" : "Alarmed. Someone shot this ship down.",
+  "novakidDescription" : "This one ain't flying no more.",
+  "avikanDescription" : "This Skoff was shot down... The burn marks are consistent with Thelean weaponry.",
+  "drodenDescription" : "Detected Skoff. Status: crashed. Analysis: burn marks consistent with Thelean weaponry.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "crashedavikanship.png:<color>",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+  "particleEmitters" : [
+  {
+    "emissionRate" : 5.0,
+    "emissionVariance" : 0.5,
+    "particle" : {
+      "type" : "animated",
+      "animation" : "/animations/thea-smoke/thea-smoke.animation",
+      "size" : 0.9,
+      "color" : [255, 255, 255, 200],
+      "destructionAction" : "shrink",
+      "destructionTime" : 1,
+      "initialVelocity" : [1.0, 3],
+      "timeToLive" : 1,
+      "layer" : "back",
+      "position" : [15, 3.5]
+    },
+
+    "particleVariance" : {
+      "size" : 0.1,
+	  "initialVelocity" : [0.1, 0.5],
+	  "rotation" : 180
+    }       
+  },
+  {
+    "emissionRate" : 5.0,
+    "emissionVariance" : 0.5,
+    "particle" : {
+      "type" : "animated",
+      "animation" : "/animations/thea-smoke/thea-smoke.animation",
+      "size" : 0.9,
+      "color" : [255, 255, 255, 200],
+      "destructionAction" : "shrink",
+      "destructionTime" : 1,
+      "initialVelocity" : [1.0, 3],
+      "timeToLive" : 1,
+      "layer" : "back",
+      "position" : [18.5, 2.5]
+    },
+
+    "particleVariance" : {
+      "size" : 0.1,
+	  "initialVelocity" : [0.1, 0.5],
+	  "rotation" : 180
+    }       
+  },
+  {
+    "emissionRate" : 5.0,
+    "emissionVariance" : 0.5,
+    "particle" : {
+      "type" : "animated",
+      "animation" : "/animations/thea-smoke/thea-smoke.animation",
+      "size" : 0.9,
+      "color" : [255, 255, 255, 200],
+      "destructionAction" : "shrink",
+      "destructionTime" : 1,
+      "initialVelocity" : [1.0, 3],
+      "timeToLive" : 1,
+      "layer" : "back",
+      "position" : [23, 5]
+    },
+
+    "particleVariance" : {
+      "size" : 0.1,
+	  "initialVelocity" : [0.1, 0.5],
+	  "rotation" : 180
+    }       
+  }
+  ]
+}

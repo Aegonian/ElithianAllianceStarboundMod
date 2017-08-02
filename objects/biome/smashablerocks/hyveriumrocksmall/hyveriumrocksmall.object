@@ -1,0 +1,58 @@
+{
+  "objectName" : "hyveriumrocksmall",
+  "colonyTags" : [],
+  "rarity" : "Legendary",
+  "category" : "pot",
+  "printable" : false,
+
+  "description" : "A fragile rock full of Hyverium ore. Maybe I could break it.",
+  "shortdescription" : "Small Hyverium Rock",
+  "race" : "centens",
+
+  "floranDescription" : "Ssshiny rock. Sssmash it!",
+  "glitchDescription" : "Observant. This rock contains Hyverium, and is covered in cracks. It should be easy to break.",
+
+
+  "particleEmitter" : {
+    "emissionRate" : 0.4,
+    "emissionVariance" : 0.2,
+    "pixelOrigin" : [8, 8],
+
+    "particle" : {
+      "type" : "animated",
+      "animation" : "/animations/sparkles/hyveriumsparkle.animation",
+      "size" : 1.0,
+      "fade" : 0,
+      "destructionAction" : "shrink",
+      "destructionTime" : 3,
+      "initialVelocity" : [0, 0],
+      "finalVelocity" : [0, 0],
+      "timeToLive" : 1,
+      "layer" : "front"
+    },
+
+    "particleVariance" : {
+      "position" : [0.5, 0.5]
+    }
+  },
+
+  "inventoryIcon" : "hyveriumrocksmallicon.png",
+  "orientations" : [
+    {
+      "image" : "hyveriumrocksmall.png:<color>",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+  
+  "smashable" : true,
+  "smashSounds" : [ "/sfx/objects/rock_break1.ogg", "/sfx/objects/rock_break2.ogg", "/sfx/objects/rock_break3.ogg", "/sfx/objects/rock_break4.ogg", "/sfx/objects/rock_break5.ogg", "/sfx/objects/rock_crumble1.ogg", "/sfx/objects/rock_crumble2.ogg", "/sfx/objects/rock_crumble3.ogg", "/sfx/objects/rock_crumble4.ogg", "/sfx/objects/rock_crumble5.ogg" ],
+  "smashParticles" : [ { "count" : 4, "particle" : "rockshard" } ],
+  "smashDropPool" : "hyveriumRockSmall",
+  "breakDropPool" : "hyveriumRockSmall"
+}

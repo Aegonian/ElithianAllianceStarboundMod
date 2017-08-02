@@ -1,0 +1,12 @@
+{
+  "itemName" : "avikanwatcherpass",
+  "price" : 0,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "Security Pass",
+  "tooltipKind" : "tool",
+  "inventoryIcon" : "avikanwatcherpass.png",
+  "largeImage" : "avikanwatcherpasslarge.png",
+  "description" : "This pass unlocks access to the Watcher's offices in the Starfarer's Refuge.",
+  "shortdescription" : "^#BA66FF;Watcher's Offices Pass^white;"
+}

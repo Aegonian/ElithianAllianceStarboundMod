@@ -1,0 +1,13 @@
+{
+  "itemName" : "alliancesmoothpanel",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "alliancesmoothpanel.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  
+  "shortdescription" : "Alliance Panel",
+  "description" : "Polished metal panels.",
+
+  "materialId" : 30070
+}

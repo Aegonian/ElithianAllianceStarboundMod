@@ -1,0 +1,123 @@
+{
+  "itemName" : "avikan-vhaleihanspear",
+  "price" : 1500,
+  "level" : 7,
+  "maxStack" : 1,
+  "rarity" : "essential",
+  "description" : "^orange;An ancient spear powered by a shard of the Xanafir.",
+  "shortdescription" : "^orange;Vha'leihan Spear^white;",
+  "tooltipKind" : "thea-sword-unique",
+  "category" : "spear",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spear","avikan","theaUnique"],
+
+  "inventoryIcon" : "avikan-vhaleihanspear.png",
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "avikan-vhaleihanspear" },
+  
+  "meritTokenValue" : 100,
+
+  "animation" : "avikan-vhaleihanspear.animation",
+  "animationParts" : {
+    "handle" : "handle.png",
+    "handleFullbright" : "handlefullbright.png",
+    "blade" : "blade.png",
+    "bladeFullbright" : "bladefullbright.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/vhaleihan_swing.ogg" ],
+	  "dash" : [ "/sfx/melee/vhaleihan_dash.ogg" ],
+	  "chargeStart" : [ "/sfx/melee/vhaleihan_charge_loop.ogg" ],
+	  "chargedLow" : [ "/sfx/melee/vhaleihan_ready_low.ogg" ],
+	  "chargedMedium" : [ "/sfx/melee/vhaleihan_ready_medium.ogg" ],
+	  "chargedHigh" : [ "/sfx/melee/vhaleihan_ready_high.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/energymeleeweapon.lua"],
+  
+  "activeTime" : 3.0,
+
+  "elementalType" : "xanafian",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "spearstab",
+  "primaryAbility" : {
+    "fireTime" : 0.85,
+    "baseDps" : 11.25,
+	
+    "damageConfig" : {
+      "damageSourceKind" : "xanafian",
+      "statusEffects" : [ "shadowmarked" ],
+      "knockbackMode" : "aim",
+      "knockback" : 30,
+      "timeoutGroup" : "primary"
+    },
+	
+	"stances" : {
+      "windup" : {
+        "duration" : 0.065
+      },
+      "fire" : {
+        "duration" : 0.25
+      }
+    }
+  },
+
+  "altAbility" : {
+    "name" : "Charge of Rhadeis",
+    "scripts" : ["/items/active/weapons/melee/abilities/spear/pathofrhadeis/pathofrhadeis.lua"],
+	"class" : "PathOfRhadeis",
+
+	//CHARGE PARAMETERS
+    "chargeTimePerLevel" : 0.6,
+    "maxChargeLevel" : 3,
+
+	//DASH PARAMETERS
+    "dashMaxSpeed" : 100,
+    "dashControlForce" : 2000,
+	"minDashTime" : 0.11,
+    "dashTimePerLevel" : 0.04, //Additional dash time per charge level. NOTE: level 1 is also additional!
+	"retainVelocityFactor" : 0.4,
+	
+    "maxEnergyUsage" : 50,
+
+    "damageConfig" : {
+	  "baseDamage" : 1,
+	  "damageSourceKind" : "xanafian",
+      "statusEffects" : [ "shadowmarked" ],
+	  "knockbackMode" : "aim",
+      "knockback" : 40,
+	  "timeout" : 0.25,
+	  "timeoutGroup" : "alt"
+    },
+    "baseDamage" : 4, //This overwrites the damage in the damageConfig table
+	"damagePerLevel" : 2, //Additional damage per charge level. NOTE: level 1 is also additional!
+
+    "stances" : {
+      "charge" : {
+        "armRotation" : -135,
+        "weaponRotation" : 45,
+        "twoHanded" : false,
+        "weaponOffset" : [0.0, 1.0],
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "dash" : {
+        "armRotation" : -15,
+        "weaponRotation" : -75,
+        "twoHanded" : true,
+        "weaponOffset" : [0.0, 2.5],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

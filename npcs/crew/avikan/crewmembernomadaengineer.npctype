@@ -1,0 +1,86 @@
+{
+  "type" : "crewmembernomadaengineer",
+  "baseType" : "crewmemberavikan",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : true
+    },
+
+	"crew" : {
+	  "role" : {
+        "type" : "nomadaengineer",
+        "name" : "Engineer",
+        "field" : "Technical",
+        "uniformColorIndex" : 5,
+		
+        "benefits" : [
+          {
+            "type" : "ShipUpgradeBenefit",
+            "property" : "shipSpeed",
+            "value" : 3.75
+          }
+        ]
+      },
+
+      "ranks" : [
+        "<field> Expert",
+        "<field> Weapons Calibrator",
+        "Primary Ship <role>",
+        "Secondary Ship <role>",
+        "<field> Enthusiast",
+        "Capable <role>",
+        "Experienced <role>",
+        "<field> Science Master",
+        "Nomada-certified <role>",
+        "<field> Assistant",
+        "<field> Mastermind",
+        "Master <role>",
+        "<field> <role>",
+        "Independent <role>",
+        "Poorly Instructed <role>",
+        "Self-taught <role>",
+        "<field> Officer",
+        "<field> Instructor",
+        "Recently Graduated <role>"
+      ],
+	  
+	  "defaultUniform" : {
+		"head" : "avikan-engineerhead",
+		"chest" : "avikan-engineerchest",
+		"legs" : "avikan-engineerlegs"
+	  },
+	  
+	  "uniformSlots" : []
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "roleDescription" : {
+          "default" : {
+            "default" : [
+              "I'll keep your ship's engines in top condition, Captain. Expect to fly a little faster with me around!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+			"head" : [ { "name" : "avikan-engineerhead", "data" : { "colorIndex" : 5 } } ],
+			"chest" : [ { "name" : "avikan-engineerchest", "data" : { "colorIndex" : 5 } } ],
+            "legs" : [ { "name" : "avikan-roguelegs2", "data" : { "colorIndex" : 5 } } ],
+            "sheathedprimary" : [
+			  "avikanprod"
+			]
+          }
+        ] ]
+    ]
+  }
+}

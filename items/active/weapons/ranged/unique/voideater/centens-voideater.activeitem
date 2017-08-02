@@ -1,0 +1,139 @@
+{
+  "itemName" : "centens-voideater",
+  "price" : 1500,
+  "inventoryIcon" : "centens-voideater.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;An ancient weapon built to bend space-time.",
+  "shortdescription" : "^orange;Void Eater^white;",
+  "level" : 6,
+  "tooltipKind" : "thea-gun-unique",
+  "category" : "Gravity Distortion Rifle",
+  "itemTags" : ["weapon","ranged","centens","theaUnique"],
+  "twoHanded" : true,
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "centens-voideater" },
+  
+  "meritTokenValue" : 100,
+  
+  "animation" : "centens-voideater.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "centens-voideater.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/xanafianmuzzle.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/gun/xanafian_fire3.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.8, 0.1],
+  "muzzleOffset" : [2.0, 0.0],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "centensianenergy",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+	
+    "fireTime" : 0.24,
+    "baseDps" : 7.5,
+    "energyUsage" : 75.0,
+    "inaccuracy" : 0.025,
+
+    "projectileCount" : 1,
+    "burstTime" : 0.085,
+    "burstCount" : 3,
+    "fireType" : "burst",
+
+    "projectileType" : "xanafianbullet",
+    "projectileParameters" : { 
+      "knockback" : 6
+    },
+	
+	"stances" : {
+	  "idle" : {
+		"armRotation" : 0,
+		"weaponRotation" : 0,
+		"weaponOffset" : [0, 0],
+		"twoHanded" : true,
+
+		"allowRotate" : true,
+		"allowFlip" : true
+	  },
+	  "fire" : {
+		"duration" : 0,
+		"armRotation" : 3,
+		"weaponRotation" : 3,
+		"weaponOffset" : [-0.05, 0],
+		"twoHanded" : true,
+
+		"allowRotate" : false,
+		"allowFlip" : false
+	  },
+	  "cooldown" : {
+		"duration" : 0.2,
+		"armRotation" : 3,
+		"weaponRotation" : 3,
+		"weaponOffset" : [-0.05, 0],
+		"twoHanded" : true,
+
+		"allowRotate" : false,
+		"allowFlip" : false
+	  }
+	}
+  },
+
+  "altAbility" : {
+    "name" : "Gravity Well",
+    "scripts" : ["/items/active/weapons/ranged/abilities/altfire.lua"],
+	"class" : "AltFireAttack",
+
+    "baseDamage" : 5.0,
+	"fireTime" : 2.5,
+    "energyUsage" : 30.0,
+    "inaccuracy" : 0.0,
+
+	"projectileCount" : 1,
+    "fireType" : "auto",
+	
+	"projectileType" : "xanafiangravitybullet",
+	"projectileParameters" : {
+	  "knockback" : 0
+	},
+	
+	"hidePrimaryMuzzleFlash" : false,
+	"useParticleEmitter" : false,
+	"usePrimaryFireSound" : true,
+
+    "stances" : {
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+		"weaponOffset" : [-0.05, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.3,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+		"weaponOffset" : [-0.05, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

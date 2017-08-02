@@ -1,0 +1,33 @@
+{
+  "projectileName" : "sandspitterstream",
+  "image" : "sandspitterstream.png",
+  "physics" : "thea-dustcloud",
+  "animationCycle" : 0.8,
+  "animationLoops" : false,
+  "frameNumber" : 10,  
+  "emitters" : [ "thea-sandparticles" ],
+  "power" : 50,
+  "speed" : 25,
+  "timeToLive" : 0.8,
+  "bounces" : 4,
+  "layer" : "front",
+  "piercing" : true,
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "damageKind" : "default",
+  "actionOnReap" : [
+    {
+      "action" : "applySurfaceMod",
+      "previousMod" : "metamod:none",
+      "newMod" : "sand",
+      "radius" : 1
+    }
+  ],
+  "hydrophobic" : false,
+  "statusEffects" : [
+    "sandslowdown-monster"
+  ],
+  
+  //SCRIPT CONFIG
+  "scripts" : [ "/projectiles/scripts/thea-sandmodspawner.lua" ],
+  "tickTime" : 0.2
+}

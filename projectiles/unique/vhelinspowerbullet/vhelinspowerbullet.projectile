@@ -1,0 +1,28 @@
+{
+  "projectileName" : "vhelinspowerbullet",
+  "image" : "vhelinspowerbullet.png",
+  "physics" : "laser",
+  "bounces" : 0,
+  "piercing" : true,
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "emitters" : [ "vhelinstrail", "vhelinspowertrail" ],
+  "damageKindImage" : "icon.png",
+  "lightColor" : [0, 65, 100],
+  "fullbright" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/vhelinspowerexplosion/vhelinspowerexplosion.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 110,
+  "timeToLive" : 3.0,
+  "damageKind" : "default",
+  "hydrophobic" : false,
+  
+  "scripts" : [ "/projectiles/scripts/thea-homingbullet.lua" ],
+  "searchRadius" : 15,
+  "baseHomingControlForce" : 1.0
+}

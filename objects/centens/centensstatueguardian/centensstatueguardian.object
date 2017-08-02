@@ -1,0 +1,46 @@
+{
+  "objectName" : "centensstatueguardian",
+  "colonyTags" : ["centens"],
+  "rarity" : "Rare",
+  "description" : "A statue depicting a Centensian guardian.",
+  "shortdescription" : "Ce'tennan Guardian",
+  "race" : "centens",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 500,
+
+  "apexDescription" : "A statue depicting an alien guardian.",
+  "avianDescription" : "This statue looks as if it could start moving at any time.",
+  "floranDescription" : "Metal ssstatue hass a ssharp ssspear!",
+  "glitchDescription" : "Curious. I wonder what this guardian is supposed to be guarding.",
+  "humanDescription" : "This statue leaves me feeling uneasy. It looks as if it could start moving at any time.",
+  "hylotlDescription" : "A work of art, this statue. The surface is so smooth!",
+  "novakidDescription" : "T'is a statue alright, but what creature does it depict?",
+
+  "aegiDescription" : "A truly life-like statue, and with a spear that could easily pierce armour.",
+  "avikanDescription" : "The Old Ones left this statue behind. What was this guardian guarding?",
+  "erixianDescription" : "A superbly crafted statue, for sure.",
+  "trinkDescription" : "This statue must be many millenia old, yet it still looks untouched.",
+  "hymidDescription" : "The Gods had guardians protecting many things of value. I wonder what this one was guarding...",
+  "notixDescription" : "The spear on this statue is sharper than most actual spears used in combat.",
+  "jorgasianDescription" : "A Centensian statue. That spear looks sharp.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "theleanDescription" : "TODO",
+  "drodenDescription" : "Analyzing statue. Detected Centensian craftsmanship.",
+
+  "inventoryIcon" : "centensstatueguardianicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "centensstatueguardian.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

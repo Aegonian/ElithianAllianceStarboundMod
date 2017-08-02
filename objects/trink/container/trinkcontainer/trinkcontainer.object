@@ -1,0 +1,64 @@
+{
+  "objectName" : "trinkcontainer",
+  "colonyTags" : ["trink", "storage"],
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "category" : "storage",
+  "printable" : false,
+  "price" : 80,
+  "description" : "A sturdy cargo container.",
+  "shortdescription" : "Trinkian Container",
+  "race" : "trink",
+  
+  "health" : 6,
+
+  "apexDescription" : "A sturdy cargo container. It's an odd size.",
+  "avianDescription" : "What might this container contain?",
+  "floranDescription" : "Containersss large enough to hold peopless.",
+  "glitchDescription" : "Questioning. Why doesn't this crate adhere to the universal standard container size?",
+  "humanDescription" : "A reasonably large cargo container. It's an odd size.",
+  "hylotlDescription" : "A cargo container for transporting goods of all kinds.",
+
+  "aegiDescription" : "The Trinkian cargo container is built to fit into Trinkian cargo holds perfectly.",
+  "avikanDescription" : "This machine-built container can hold many items.",
+  "erixianDescription" : "An incredibly heavy cargo container.",
+  "trinkDescription" : "The Trinkian standard-issue cargo container is exactly four times the size of a crate.",
+  "hymidDescription" : "This Trinkian-designed cargo container can hold many items.",
+  "notixDescription" : "A large Trinkian cargo container. Built with efficiency is mind.",
+  "jorgasianDescription" : "What might be inside this container?",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "theleanDescription" : "TODO",
+  "drodenDescription" : "Storage unit detected. Content scan unavailable.",
+
+  "inventoryIcon" : "trinkcontainericon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "trinkcontainer.png:<color>.<key>", "fullbright" : true }, { "image" : "trinkcontainerlit.png:<color>.<key>" } ],
+	  "imagePosition" : [-8, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform",
+      "flipImages" : true,
+      "direction" : "left"
+    },
+    {
+	  "imageLayers" : [ { "image" : "trinkcontainer.png:<color>.<key>", "fullbright" : true }, { "image" : "trinkcontainerlit.png:<color>.<key>" } ],
+      "imagePosition" : [-8, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform",
+      "direction" : "right"
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/chest_small_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/chest_small_close.ogg" ],
+  "slotCount" : 64,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 10,
+  "autoCloseCooldown" : 3600
+}

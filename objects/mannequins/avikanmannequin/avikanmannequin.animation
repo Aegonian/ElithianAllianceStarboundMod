@@ -1,0 +1,227 @@
+{
+  "partTagDefaults" : {
+    "back" : {
+      "frameSet" : "",
+      "directives" : ""
+    },
+    "backSleeve" : {
+      "frameSet" : "",
+      "directives" : ""
+    },
+    "legs" : {
+      "frameSet" : "",
+      "directives" : ""
+    },
+    "body" : {
+      "frameSet" : "",
+      "directives" : ""
+    },
+    "head" : {
+      "frameSet" : "",
+      "directives" : ""
+    },
+    "frontSleeve" : {
+      "frameSet" : "",
+      "directives" : ""
+    }
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "head" : {
+        "default" : "hide",
+        "states" : {
+          "show" : {},
+          "hide" : {}
+        }
+      },
+      "chest" : {
+        "default" : "hide",
+        "states" : {
+          "show" : {},
+          "hide" : {}
+        }
+      },
+      "legs" : {
+        "default" : "hide",
+        "states" : {
+          "show" : {},
+          "hide" : {}
+        }
+      },
+      "back" : {
+        "default" : "hide",
+        "states" : {
+          "show" : {},
+          "hide" : {}
+        }
+      },
+      "gender" : {
+        "default" : "male",
+        "states" : {
+          "male" : {},
+          "female" : {}
+        }
+      }
+    },
+
+    "parts" : {
+      "standBase" : {
+        "properties" : {
+          "centered" : false,
+          "offset" : [0, 0],
+          "zLevel" : 0,
+          "image" : "standBase.png"
+        }
+      },
+      "dummyBackArm" : {
+        "properties" : {
+          "centered" : false,
+          "offset" : [0, 0.125],
+          "zLevel" : 1,
+          "image" : "/objects/mannequins/avikanmannequin/parts/backarm.png"
+        }
+      },
+      "back" : {
+        "properties" : {
+          "centered" : false,
+          "offset" : [0, 0.125],
+          "zLevel" : 2
+        },
+
+        "partStates" : {
+          "back" : {
+            "show" : {
+              "properties" : {
+                "image" : "<frameSet>:idle.1<directives>"
+              }
+            }
+          }
+        }
+      },
+      "backSleeve" : {
+        "properties" : {
+          "centered" : false,
+          "offset" : [0, 0.125],
+          "zLevel" : 3
+        },
+
+        "partStates" : {
+          "chest" : {
+            "show" : {
+              "properties" : {
+                "image" : "<frameSet>:idle.1<directives>"
+              }
+            }
+          }
+        }
+      },
+      "dummyHead" : {
+        "properties" : {
+          "centered" : false,
+          "offset" : [0, 0.125],
+          "zLevel" : 4
+        },
+
+        "partStates" : {
+          "gender" : {
+            "male" : {
+              "properties" : {
+                "image" : "/objects/mannequins/avikanmannequin/parts/headm.png"
+              }
+            },
+			"female" : {
+              "properties" : {
+                "image" : "/objects/mannequins/avikanmannequin/parts/headf.png"
+              }
+            }
+          }
+        }
+      },
+      "dummyBody" : {
+        "properties" : {
+          "centered" : false,
+          "offset" : [0, 0.125],
+          "zLevel" : 5,
+          "image" : "/objects/mannequins/avikanmannequin/parts/body.png"
+        }
+      },
+      "legs" : {
+        "properties" : {
+          "centered" : false,
+          "offset" : [0, 0.125],
+          "zLevel" : 6
+        },
+
+        "partStates" : {
+          "legs" : {
+            "show" : {
+              "properties" : {
+                "image" : "<frameSet>:idle.1<directives>"
+              }
+            }
+          }
+        }
+      },
+      "body" : {
+        "properties" : {
+          "centered" : false,
+          "offset" : [0, 0.125],
+          "zLevel" : 7
+        },
+
+        "partStates" : {
+          "chest" : {
+            "show" : {
+              "properties" : {
+                "image" : "<frameSet>:idle.1<directives>"
+              }
+            }
+          }
+        }
+      },
+      "head" : {
+        "properties" : {
+          "centered" : false,
+          "offset" : [0, 0.125],
+          "zLevel" : 8
+        },
+
+        "partStates" : {
+          "head" : {
+            "show" : {
+              "properties" : {
+                "image" : "<frameSet>:normal<directives>"
+              }
+            }
+          }
+        }
+      },
+      "dummyFrontArm" : {
+        "properties" : {
+          "centered" : false,
+          "offset" : [0, 0.125],
+          "zLevel" : 9,
+          "image" : "/objects/mannequins/avikanmannequin/parts/frontarm.png"
+        }
+      },
+      "frontSleeve" : {
+        "properties" : {
+          "centered" : false,
+          "offset" : [0, 0.125],
+          "zLevel" : 10
+        },
+
+        "partStates" : {
+          "chest" : {
+            "show" : {
+              "properties" : {
+                "image" : "<frameSet>:idle.1<directives>"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

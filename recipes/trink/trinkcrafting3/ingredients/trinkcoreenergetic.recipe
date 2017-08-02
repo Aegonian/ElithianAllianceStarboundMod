@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "trinkmetal", "count" : 1 },
+	{ "item" : "aegisaltore", "count" : 10 }
+  ],
+  "output" : {
+    "item" : "trinkcoreenergetic",
+    "count" : 1
+  },
+  "duration" : 0.15,
+  "groups" : [ "trinkcrafting3", "ingredients", "all" ]
+}

@@ -1,0 +1,14 @@
+{
+  "projectileName" : "linerifleimpact",
+  "image" : "linerifleimpact.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "speed" : 0,
+  "statusEffects" : [ ],
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "flippable" : true,
+  "universalDamage" : false,
+  "damageKind" : "linerifle"
+}

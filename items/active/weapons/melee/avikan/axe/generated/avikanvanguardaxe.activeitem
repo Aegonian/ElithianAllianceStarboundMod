@@ -1,0 +1,56 @@
+{
+  "itemName" : "avikanvanguardaxe",
+  "price" : 600,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A superbly crafted metal axe issued to Avikan military forces.",
+  "shortdescription" : "Vanguard Axe",
+  "tooltipKind" : "sword",
+  "category" : "axe",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","melee","axe","avikan"],
+
+  "animation" : "/items/active/weapons/melee/axe/axe.animation",
+  "animationParts" : { },
+  "animationCustom" : {
+    "animatedParts" : { "parts" : { "swoosh" : { "properties" : {
+      "offset" : [-1.5, 1.75]
+    }}}}
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "axecleave",
+  "primaryAbility" : {
+    "fireTime" : [0.9, 1.2],
+    "baseDps" : [9.5, 10],
+    "damageConfig" : {
+      "knockbackRange" : [25, 30]
+    }
+  },
+  "fireSounds" : [ "/sfx/melee/swing_axe.ogg" ],
+
+  "builder" : "/items/buildscripts/buildweapon.lua",
+  "builderConfig" : [{
+    "nameGenerator" : "vanguardnames.config:nameGen",
+    "animationParts" : {
+      "blade" : {
+        "path" : "blade/<variant>.png",
+        "variants" : 1,
+        "paletteSwap" : false
+      },
+      "handle" : {
+        "path" : "handle/<variant>.png",
+        "variants" : 1,
+        "paletteSwap" : false
+      }
+    },
+    "altAbilities" : [ ],
+    "palette" : "/items/active/weapons/colors/melee.weaponcolors",
+    "iconDrawables" : [ "handle", "blade" ]
+  }]
+}

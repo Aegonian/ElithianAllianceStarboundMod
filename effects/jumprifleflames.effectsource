@@ -1,0 +1,29 @@
+{
+  "kind" : "jumprifleflames",
+  "definition" : {
+    "duration" : 0.2,
+    "loops" : true,
+    "start" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [
+        [ ]
+      ]
+    },
+    "particles" : [
+      [ "jumprifleburn", "campfireflames", "campfireflames", "dust2" ]
+    ],
+    "sounds" : [
+      [ ]
+    ],
+    "stop" : {
+      "particles" : [
+        [ "jumprifleburnstop", "jumprifleburnstop", "jumprifleburnstop", "jumprifleburnstop" ]
+      ],
+      "sounds" : [
+        [ ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "trinkmetal", "count" : 1 },
+	{ "item" : "violiumore", "count" : 10 }
+  ],
+  "output" : {
+    "item" : "trinkcorevigorous",
+    "count" : 1
+  },
+  "duration" : 0.15,
+  "groups" : [ "trinkcrafting3", "ingredients", "all" ]
+}

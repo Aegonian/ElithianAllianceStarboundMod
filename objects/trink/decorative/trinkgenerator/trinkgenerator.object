@@ -1,0 +1,57 @@
+{
+  "objectName" : "trinkgenerator",
+  "colonyTags" : ["trink"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 100,
+  "description" : "A generator of Trinkian design.",
+  "shortdescription" : "Trinkian Generator",
+  "race" : "trink",
+
+  "apexDescription" : "A generator of sorts.",
+  "avianDescription" : "A large generator. This could power an entire village.",
+  "floranDescription" : "Big box makesss energy...",
+  "glitchDescription" : "Greedy. I could make good use of all this energy.",
+  "humanDescription" : "This generator looks like it could power an entire city block!",
+  "hylotlDescription" : "A generator of alien design. It looks rather powerful.",
+
+  "aegiDescription" : "Trinkian generators are amongst the most efficient generators in the Alliance.",
+  "avikanDescription" : "A generator. It could provide energy for a significant portion of a Terve.",
+  "erixianDescription" : "This generator is powerful for its size.",
+  "trinkDescription" : "The efficiency of this generator can only be optimized slightly further.",
+  "hymidDescription" : "A Trinkian generator. It provides an incredible amount of energy.",
+  "notixDescription" : "Trinkian generators are incredibly efficient. We built the Trinks well.",
+  "jorgasianDescription" : "A generator of Trinkian design. It is rather powerful.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Warning. Readings indicate strong electrical fields.",
+
+  "inventoryIcon" : "trinkgeneratoricon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "trinkgenerator.png:<color>.<frame>", "fullbright" : true }, { "image" : "trinkgeneratorlit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    },
+    {
+	  "imageLayers" : [ { "image" : "trinkgenerator.png:<color>.<frame>", "fullbright" : true }, { "image" : "trinkgeneratorlit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}

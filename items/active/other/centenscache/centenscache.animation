@@ -1,0 +1,83 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+	  "treasurebox" : {
+        "default" : "closed",
+        "states" : {
+          "closed" : {
+		    "frames" : 1
+		  },
+		  "opening" : {
+            "frames" : 3,
+            "cycle" : 1.0,
+            "mode" : "transition",
+            "transition" : "opentransition"
+          },
+		  "opentransition" : {
+            "frames" : 1,
+            "cycle" : 0.15,
+            "mode" : "transition",
+            "transition" : "open"
+          },
+		  "open" : {
+            "frames" : 1
+          }
+        }
+      }
+    },
+
+    "parts" : {
+	  "treasurebox" : {
+        "properties" : {
+          "centered" : true,
+          "fullbright" : false,
+          "offset" : [0.0, 0.0]
+        },
+        "partStates" : {
+          "treasurebox" : {
+            "closed" : {
+              "properties" : {
+                "image" : "<partImage>:closed.<frame>"
+              }
+            },
+            "opening" : {
+              "properties" : {
+                "image" : "<partImage>:opening.<frame>"
+              }
+            },
+            "opentransition" : {
+              "properties" : {
+                "image" : "<partImage>:open.<frame>"
+              }
+            },
+            "open" : {
+              "properties" : {
+                "image" : "<partImage>:open.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "particleEmitters" : {
+    "openPoof" : {
+      "emissionRate" : 10.0,
+      "burstCount"  : 7,
+      "offsetRegion" : [-0.7, -0.1, 0.7, 0.1],
+      "particles" : [
+	    { "particle" : "thea-sealedcachepuff"},
+	    { "particle" : "thea-sealedcache1"},
+		{ "particle" : "thea-sealedcache2"},
+		{ "particle" : "thea-sealedcache3"},
+		{ "particle" : "xanafianbullettrail"}
+	  ]
+    }
+  },
+  
+  "sounds" : {
+    "open" : [ ],
+	"openLoop" : [ ]
+  }
+}

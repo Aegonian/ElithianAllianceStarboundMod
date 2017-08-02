@@ -1,0 +1,192 @@
+{
+  "objectName" : "avikaninventor",
+  "colonyTags" : ["avikan","crafting"],
+  "rarity" : "Uncommon",
+  "race" : "avikan",
+  "category" : "crafting",
+
+  "radioMessagesOnPickup" : [ "pickupavikaninventor" ],
+  //this is handled by the lua
+  "breakDropOptions" : [],
+
+  "price" : 250,
+  "printable" : false,
+
+  "scripts" : [ "/objects/crafting/upgradeablecraftingobjects/upgradeablecraftingobject.lua" ],
+
+  "animation" : "avikaninventor.animation",
+  "animationPosition" : [20, 20],
+
+  "inventoryIcon" : "avikaninventoricon.png",
+  "placementImage" : "avikaninventor.png:default",
+  "placementImagePosition" : [0, 0],
+
+  "description" : "The Workman's table is used to construct various specialized crafting tables.",
+  "shortdescription" : "^orange;Avikan Workman's Table^white;",
+
+  "apexDescription" : "A table with a bunch of bone craftman's tools.",
+  "avianDescription" : "These crafting tools may be primitive, but they do their job perfectly.",
+  "floranDescription" : "Floran ussse table to make more tablesss.",
+  "glitchDescription" : "Inspired. This table might allow me to craft all new crafting tables.",
+  "humanDescription" : "A crafting table for crafting specialized crafting tables. Crafty!",
+  "hylotlDescription" : "One can display their crafting prowess here.",
+  "novakidDescription" : "A craftin' table for craftin' more craftin' tables. Right.",
+
+  "aegiDescription" : "A worktable used by the Avikan. One could craft more specialized equipment here.",
+  "avikanDescription" : "A workman's table. I can craft more specialized crafting tools here.",
+  "erixianDescription" : "This worktable is perfect for crafting specialized crafting tools.",
+  "trinkDescription" : "A crafting table used to craft other crafting tables. An inefficient solution.",
+  "hymidDescription" : "The Avikan use tables like these to craft specilized crafting tools.",
+  "notixDescription" : "All the tools one needs to craft specialized Avikan crafting tools.",
+  "jorgasianDescription" : "Crafting tools made of bone, used to craft more items made of bone.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Analysis complete. Workman's table. Used to construct various specialized crafting tables.",
+
+  "learnBlueprintsOnPickup" : [],
+
+
+  "startingUpgradeStage" : 1,
+  "maxUpgradeStage" : 2,
+  "upgradeStages" : [
+    {
+      "animationState" : "avikaninventor",
+
+      "itemSpawnParameters" : {
+        "price" : 250,
+        "inventoryIcon" : "avikaninventoricon.png",
+        "placementImage" : "avikaninventor.png:default",
+        "placementImagePosition" : [0, 0],
+
+        "description" : "The Workman's table is used to construct various specialized crafting tables.",
+		"shortdescription" : "^orange;Avikan Workman's Table^white;",
+
+		"apexDescription" : "A table with a bunch of bone craftman's tools.",
+		"avianDescription" : "These crafting tools may be primitive, but they do their job perfectly.",
+		"floranDescription" : "Floran ussse table to make more tablesss.",
+		"glitchDescription" : "Inspired. This table might allow me to craft all new crafting tables.",
+		"humanDescription" : "A crafting table for crafting specialized crafting tables. Crafty!",
+		"hylotlDescription" : "One can display their crafting prowess here.",
+		"novakidDescription" : "A craftin' table for craftin' more craftin' tables. Right.",
+
+		"aegiDescription" : "A worktable used by the Avikan. One could craft more specialized equipment here.",
+		"avikanDescription" : "A workman's table. I can craft more specialized crafting tools here.",
+		"erixianDescription" : "This worktable is perfect for crafting specialized crafting tools.",
+		"trinkDescription" : "A crafting table used to craft other crafting tables. An inefficient solution.",
+		"hymidDescription" : "The Avikan use tables like these to craft specilized crafting tools.",
+		"notixDescription" : "All the tools one needs to craft specialized Avikan crafting tools.",
+		"jorgasianDescription" : "Crafting tools made of bone, used to craft more items made of bone.",
+		"centensDescription" : "TODO.",
+		"dremetonDescription" : "TODO.",
+		"theleanDescription" : "TODO.",
+		"drodenDescription" : "Analysis complete. Workman's table. Used to construct various specialized crafting tables."
+      },
+
+      "interactData" : {
+        "config" : "/interface/windowconfig/avikaninventorcrafting.config",
+        "paneLayoutOverride" : {
+          "windowtitle" : {
+            "title" : " Workman's Table",
+            "subtitle" : " ^#b9b5b2;Specialized crafting tools",
+            "icon" : {
+              "file" : "/interface/crafting/craftingavikaninventor.png"
+            }
+          }
+        },
+        "filter" : [ "avikaninventor" ],
+        "upgradeMaterials" : [
+          { "item" : "monsterplate", "count" : 6 },
+		  { "item" : "greatmonsterbone", "count" : 1 },
+          { "item" : "avikanmetal", "count" : 10 },
+          { "item" : "avikandarkmetal", "count" : 5 },
+          { "item" : "avikanmacrochip", "count" : 1 }
+        ]
+      },
+
+      "learnBlueprintsOnPickup" : [],
+
+      "upgradeSoundEffect" : "fanfare",
+      "upgradeParticleEffect" : "dust"
+    },
+
+    {
+      "animationState" : "avikaninventor2",
+
+      "itemSpawnParameters" : {
+        "price" : 500,
+        "inventoryIcon" : "avikaninventor2icon.png",
+        "placementImage" : "avikaninventor2.png:default.default",
+        "placementImagePosition" : [0, 0],
+
+        "description" : "The Artisan's station is used to construct various specialized crafting tables.",
+		"shortdescription" : "^orange;Avikan Artisan's Station^white;",
+
+		"apexDescription" : "A modern artisan's workstation. The screen displays some complex blueprint.",
+		"avianDescription" : "A workstation where one could craft specialized crafting equipment.",
+		"floranDescription" : "Floran ussse worksstation to make crafting toolss.",
+		"glitchDescription" : "Inspired. A true artisan could craft magnificent items here.",
+		"humanDescription" : "A high-tech artisan's table, for the modern craftsman.",
+		"hylotlDescription" : "While the machine helps, only a true artisan can craft here.",
+		"novakidDescription" : "A fancy screen to replace fragile blueprints. Very useful indeed.",
+
+		"aegiDescription" : "A workstation for Avikan artisans.",
+		"avikanDescription" : "I can craft specialized crafting tools here.",
+		"erixianDescription" : "A modern workstation for creating specialized crafting tables.",
+		"trinkDescription" : "This machine makes the process of creating and archiving blueprints much more efficient.",
+		"hymidDescription" : "A modern workstation of Avikan design. Bulky but very durable, as always.",
+		"notixDescription" : "This workstation is used for the construction of more specialized crafting tools.",
+		"jorgasianDescription" : "A modern workstation, featuring all the tools needed to construct more specialized tools.",
+		"centensDescription" : "TODO.",
+		"dremetonDescription" : "TODO.",
+		"theleanDescription" : "TODO.",
+		"drodenDescription" : "Analysis complete. Artisan's station. Used to construct various specialized crafting tables."
+      },
+
+      "interactData" : {
+        "config" : "/interface/windowconfig/avikaninventorcrafting.config",
+        "paneLayoutOverride" : {
+          "windowtitle" : {
+            "title" : " Artisan's Station",
+            "subtitle" : " ^#b9b5b2;Specialized crafting tools",
+            "icon" : {
+              "file" : "/interface/crafting/craftingavikaninventor2.png"
+            }
+          }
+        },
+        "filter" : [ "avikaninventor", "avikaninventor2" ],
+		"craftingSound" : "/sfx/interface/crafting_tech2.ogg"
+      },
+
+      "learnBlueprintsOnPickup" : []
+    }
+  ],
+
+  "orientations" : [
+    {
+      "image" : "avikaninventor.png:<color>",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true,
+      "spaces" : [
+	    [0, 3], [1, 3], [2, 3], [3, 3], [4, 3],
+        [0, 2], [1, 2], [2, 2], [3, 2], [4, 2],
+        [0, 1], [1, 1], [2, 1], [3, 1], [4, 1],
+        [0, 0], [1, 0], [2, 0], [3, 0], [4, 0]
+      ],
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "avikaninventor.png:<color>",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+      "spaces" : [
+        [0, 3], [1, 3], [2, 3], [3, 3], [4, 3],
+        [0, 2], [1, 2], [2, 2], [3, 2], [4, 2],
+        [0, 1], [1, 1], [2, 1], [3, 1], [4, 1],
+        [0, 0], [1, 0], [2, 0], [3, 0], [4, 0]
+      ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

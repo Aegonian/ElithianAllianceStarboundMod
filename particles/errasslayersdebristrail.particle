@@ -1,0 +1,22 @@
+{
+  "kind" : "errasslayersdebristrail",
+  "definition" : {
+    "type" : "ember",
+    "size" : 2.0,
+    "color" : [25, 205, 255, 255],
+    "fade" : 0.9,
+    "destructionAction" : "shrink",
+    "destructionTime" : 2,
+    "initialVelocity" : [1, 0],
+    "finalVelocity" : [1, 0],
+    "approach" : [0, 20],
+    "timeToLive" : 0.3,
+    "light" : [0, 65, 100],
+    "layer" : "back",
+    "variance" : {
+      "initialVelocity" : [0, 0],
+      "size" : 1.5
+    },
+	"collidesLiquid" : false
+  }
+}

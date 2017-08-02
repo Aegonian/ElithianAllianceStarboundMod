@@ -1,0 +1,15 @@
+{
+  "itemName" : "trinksmoothpanel",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "trinksmoothpanel.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "shortdescription" : "Smooth Trinkian Panel",
+  
+  "description" : "A smooth, dark metal panel.",
+  "glitchDescription" : "Statement. A strong metal panel.",
+  "floranDescription" : "Dark metal panelsss",
+
+  "materialId" : 30063
+}

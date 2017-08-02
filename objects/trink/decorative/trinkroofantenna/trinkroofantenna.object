@@ -1,0 +1,43 @@
+{
+  "objectName" : "trinkroofantenna",
+  "colonyTags" : ["trink"],
+  "rarity" : "Common",
+  "description" : "An antenna of Trinkian design, built to fit on top of a Trinkian roof.",
+  "shortdescription" : "Trinkian Roof Antenna",
+  "race" : "trink",
+  "category" : "decorative",
+  "price" : 150,
+
+  "apexDescription" : "An antenna, for boosting radio signals.",
+  "avianDescription" : "A signal-boosting antenna.",
+  "floranDescription" : "Floran can use thiss as metal spearsss...",
+  "glitchDescription" : "Careful. This antenna is jamming some of my sensors.",
+  "humanDescription" : "An antenna. I wouldn't want to be poked with something this sharp.",
+  "hylotlDescription" : "An antenna of sorts. I am not sure what the box below it does.",
+
+  "aegiDescription" : "A Trinkian antenna. It can boost communication signals.",
+  "avikanDescription" : "An antenna. It seems unnecessarily large.",
+  "erixianDescription" : "A large antenna of Trinkian design. Those robots make for great engineers.",
+  "trinkDescription" : "A modern antenna, built for efficiency.",
+  "hymidDescription" : "A Trinkian antenna. Why is it so sharp?",
+  "notixDescription" : "An antenna built by the Trinks.",
+  "jorgasianDescription" : "This antenna was designed and built by Trinks.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Radio signal detected. Failed to decode message.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "trinkroofantenna.png",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

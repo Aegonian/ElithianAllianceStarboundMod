@@ -1,0 +1,22 @@
+{
+  "name" : "thea-bubbleshield1",
+  "effectConfig" : {
+    "shieldHealth" : 10,			//Maximum damage absorbed by shield
+    "startHealthPercentage" : 0.50,	//How much health the shield starts out with, in percentages of maxHealth
+	"regenPercentage" : 0.10,		//How much health the shield regens per second, in percentages of maxHealth
+	"rechargeTimeAfterHit" : 7.2,	//Cooldown before regen begins after being hit
+	"cooldownTimeAfterBreak" : 6,	//If shield is broken, it will stay down for this long before starting regen
+	"maxAnimationRate" : 3.0		//How quickly the shield animates when at breaking point
+  },
+  "defaultDuration" : 0.5,
+
+  "scripts" : [
+    "thea-bubbleshield.lua"
+  ],
+  "scriptDelta" : 5,
+
+  "animationConfig" : "thea-bubbleshield.animation",
+  
+  "label" : "Bubble Shield",
+  "icon" : "/interface/statuses/thea-bubbleshield.png"
+}

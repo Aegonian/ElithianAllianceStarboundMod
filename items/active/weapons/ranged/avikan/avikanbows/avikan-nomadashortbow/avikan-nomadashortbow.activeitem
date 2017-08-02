@@ -1,0 +1,89 @@
+{
+  "itemName" : "avikan-nomadashortbow",
+  "price" : 600,
+  "level" : 5,
+  "inventoryIcon" : "avikan-nomadashortbowicon.png",
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "tooltipKind" : "bow",
+  "category" : "Shortbow",
+  "description" : "Used to harvest monster bones and hides.",
+  "shortdescription" : "Nomada Shortbow",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","bow","avikan"],
+
+  "radioMessagesOnPickup" : [ "pickupavikanhunting" ],
+
+  "animation" : "/items/active/weapons/bow/bow.animation",
+  "animationParts" : {
+    "bow" : "avikan-nomadashortbowfull.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : { "parts" : { "bow" : { "properties" : {
+      "offset" : [0.25, 0]
+    }}}},
+    "sounds" : {
+      "draw" : [ "/sfx/gun/thea_shortbow_draw.ogg" ],
+      "release" : [ "/sfx/gun/bow_loose.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/bow/bow.lua"],
+  
+  "elementalType" : "avikanhunting",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/bow/thea-shortbowshot.lua"],
+    "class" : "TheaShortBowShot",
+	
+	"fireOffset" : [1.75, 0],
+
+    "energyPerShot" : 15,
+    "cooldownTime" : 0.2,
+    "inaccuracy" : 0.02,
+	
+	"walkWhileFiring" : false,
+	"useQuiverDamageBonus" : true,
+
+    "drawFrameSelector" : "thea-shortbowImageSelector",
+    "drawPowerMultiplier" : "thea-shortbowdrawTimeMultiplier",
+    "drawSpeedMultiplier" : "thea-shortbowdrawTimeMultiplier",
+
+    "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swimIdle.1"],
+
+    "projectileType" : "avikanmetalarrow",
+    "projectileParameters" : {
+      "speed" : 70,
+      "power" : 5.0
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : -30,
+        "weaponRotation" : 0,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "draw" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "fire" : {
+        "duration" : 0.2,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true,
+
+        "frontArmFrame" : "idle.3"
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/thea-buildshortbow.lua"
+}

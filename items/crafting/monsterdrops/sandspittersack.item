@@ -1,0 +1,13 @@
+{
+  "itemName" : "sandspittersack",
+  "price" : 50,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "sandspittersack.png",
+  "description" : "A sack-like organ full of sand, ready for spitting.",
+  "shortdescription" : "Sandspitter's Sack",
+  "itemTags" : [ "reagent" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 3
+}

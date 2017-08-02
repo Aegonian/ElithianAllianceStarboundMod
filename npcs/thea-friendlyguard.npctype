@@ -1,0 +1,159 @@
+{
+  //Use this as a base for all friendly guards of custom races. Quests are disabled by default
+  
+  "type" : "thea-friendlyguard",
+  "baseType" : "base",
+
+  "levelVariance" : [3, 3],
+  "persistent" : true,
+
+  "damageTeamType" : "friendly",
+
+  "scriptConfig" : {
+    "behavior" : "guard",
+
+    "behaviorConfig" : {
+      "greetingChance" : 0,
+
+      "hostileDamageTeam" : { "type" : "friendly", "team" : 1 }
+    },
+
+    "personalities" : [
+        [1.0, { "personality" : "normal", "reactions" : {} }]
+    ],
+
+    "reactions" : {
+      "spontaneous" : [
+        [5.0, "sleep", { "timeRange" : [0.7, 0.9] }],
+        [1.0, "patrol"]
+      ]
+    },
+
+    "dialog" : {
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/grumble.config:tagCriteria",
+          "enclosedArea" : "/dialog/grumble.config:enclosedArea",
+          "otherDeed" : "/dialog/grumble.config:otherDeed",
+          "severe" : "/dialog/grumble.config:severe",
+          "final" : "/dialog/grumble.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/arrivedhome.config:beacon",
+          "rent" : "/dialog/arrivedhome.config:rent"
+        }
+      },
+
+      "greeting" : "/dialog/converse.config:greeting",
+      "converse" : "/dialog/converse.config:converse",
+      
+      "accuse" : "/dialog/thief.config:accuse",
+
+      "attack" : "/dialog/combat.config:attack",
+      "reattack" : "/dialog/combat.config:reattack",
+      "killedTarget" : "/dialog/combat.config:killedTarget",
+      "lostTarget" : "/dialog/combat.config:lostTarget",
+      "outOfSight" : "/dialog/combat.config:outOfSight",
+      "cheerOn" : "/dialog/combat.config:cheerOn",
+      "cantReach" : "/dialog/combat.config:cantReach"
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+	//AVIKAN EQUIPMENT
+    "avikan" : [
+      [0, [
+		  {
+            "head" : [
+			  { "name" : "avikan-travellerhead", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "avikan-fangedskull", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "avikan-longskull", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "avikan-simpleskull", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "avikan-skullmask", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "avikan-hornedskull", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "avikan-hornedskull2", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "avikan-warriorchest", "parameters" : { "colorIndex" : [0, 1, 11] } },
+			  { "name" : "avikan-tier1chest", "parameters" : { "colorIndex" : [0, 1, 11] } },
+			  { "name" : "avikan-tier2chest", "parameters" : { "colorIndex" : [0, 1, 11] } },
+			  { "name" : "avikan-tier3chest", "parameters" : { "colorIndex" : [0, 1, 11] } },
+			  { "name" : "avikan-tier4chest", "parameters" : { "colorIndex" : [0, 1, 11] } }
+            ],
+            "legs" : [
+              { "name" : "avikan-warriorlegs", "parameters" : { "colorIndex" : [0, 1, 11] } },
+			  { "name" : "avikan-tier1legs", "parameters" : { "colorIndex" : [0, 1, 11] } },
+			  { "name" : "avikan-tier2legs", "parameters" : { "colorIndex" : [0, 1, 11] } },
+			  { "name" : "avikan-tier3legs", "parameters" : { "colorIndex" : [0, 1, 11] } },
+			  { "name" : "avikan-tier4legs", "parameters" : { "colorIndex" : [0, 1, 11] } }
+            ],
+			"primary" : [
+			  "avikantier2shortsword",
+			  "avikantier2broadsword",
+			  "avikantier2axe",
+			  "avikantier2hammer",
+			  "avikantier2spear"
+			],
+			"sheathedprimary" : [
+			  "avikan-tier1bow",
+			  "avikan-bonecrossbow"
+			],
+			"alt" : [
+			  "avikanboneshield"
+			]
+          }
+        ] ]
+    ],
+	//TRINKIAN EQUIPMENT
+    "trink" : [
+      [0, [
+		  {
+            "head" : [
+			  { "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "trink-combatchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "trink-combatlegs", "parameters" : { "colorIndex" : 0 } }
+            ],
+			"primary" : [
+			  "trinktier2prod",
+			  "trinktier2longprod"
+			],
+			"sheathedprimary" : [
+			  "trinktier2rifle",
+			  "trinktier2pistol"
+			],
+			"alt" : [
+			  "trinkshield"
+			]
+          }
+        ] ]
+    ],
+	//DRODEN EQUIPMENT
+    "droden" : [
+      [0, [
+		  {
+            "head" : [
+			  { "name" : "droden-combathead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "droden-combatchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "droden-combatlegs", "parameters" : { "colorIndex" : 0 } }
+            ],
+			"primary" : [
+			  "drodenlongsword",
+			  "drodenshortsword"
+			],
+			"sheathedprimary" : [
+			  "droden-assaultrifle"
+			]
+          }
+        ] ]
+    ]
+  }
+}

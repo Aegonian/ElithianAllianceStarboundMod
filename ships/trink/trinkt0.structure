@@ -1,0 +1,23 @@
+{
+  "config" : {
+    "shipUpgrades" : {
+      "capabilities" : [],
+      "crewSize" : 2
+    }
+  },
+
+  "backgroundOverlays" : [
+    {
+      "image" : "trinkT1.png",
+      "position" : [8, 0],
+      "fullbright" : true
+    },
+    {
+      "image" : "trinkT1lit.png",
+      "position" : [8, 0]
+    }
+  ],
+
+  "blockKey" : "blockKey.config:blockKey",
+  "blockImage" : "trinkT0blocks.png"
+}

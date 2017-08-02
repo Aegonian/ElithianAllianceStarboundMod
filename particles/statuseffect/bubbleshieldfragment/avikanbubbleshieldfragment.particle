@@ -1,0 +1,25 @@
+{
+  "kind" : "avikanbubbleshieldfragment",
+  "definition" : {
+    "type" : "textured",
+    "image" : "/particles/statuseffect/avikanbubbleshieldfragment/avikanbubbleshieldfragment.png",
+    "light" : [97, 54, 0],
+	"initialVelocity" : [0, 0],
+    "finalVelocity" : [0, -8.0],
+	"approach" : [2, 2],
+    "layer" : "back",
+	"fade" : 1,
+	"size" : 0.35,
+	"timeToLive" : 1.25,
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.5,
+    "collidesForeground" : true,
+    "fullbright" : true,
+    "variance" : {
+      "initialVelocity" : [16.0, 6.0],
+      "size" : 0.125,
+	  "rotation" : 180,
+	  "angularVelocity" : 15
+    }
+  }
+}

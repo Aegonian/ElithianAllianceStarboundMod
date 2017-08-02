@@ -1,0 +1,46 @@
+{
+  "objectName" : "avikanfoodbox",
+  "colonyTags" : ["avikan", "commerce"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 35,
+  "description" : "Boxes full of Avikan food.",
+  "shortdescription" : "Avikan Ingredients",
+  "race" : "avikan",
+
+  "apexDescription" : "Three boxes filled with various types of food.",
+  "avianDescription" : "Boxes full of alien food. I wonder how it tastes?",
+  "floranDescription" : "Floran doesss not like alien foodsss.",
+  "glitchDescription" : "Curious. What sort of food is this?",
+  "humanDescription" : "Alien food. I doubt it'll taste good...",
+  "hylotlDescription" : "Food of an alien nature.",
+  "novakidDescription" : "Alien foodstuffs. Can't remember if I tasted this before.",
+
+  "aegiDescription" : "All the ingredients need to prepare a traditional Avikan meal.",
+  "avikanDescription" : "All the ingredients needed for preparing a traditional meal.",
+  "erixianDescription" : "Ingredients for preparing an Avikan meal.",
+  "trinkDescription" : "Various traditional Avikan ingredients.",
+  "hymidDescription" : "Ingredients for preparing a traditional Avikan meal.",
+  "notixDescription" : "Boxes full of ingredients.",
+  "jorgasianDescription" : "I could prepare a good meal with these ingredients",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected ingredients. Combined nutritional value: sufficient.",
+
+  "inventoryIcon" : "avikanfoodboxicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanfoodbox.png:<color>",
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

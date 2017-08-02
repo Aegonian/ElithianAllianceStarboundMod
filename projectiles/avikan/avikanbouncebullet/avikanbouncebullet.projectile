@@ -1,0 +1,24 @@
+{
+  "projectileName" : "avikanbouncebullet",
+  "image" : "avikanbouncebullet.png",
+  "physics" : "avikanbouncebullet",
+  "animationCycle" : 0.25,
+  "bounces" : 1,
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "power" : 5.0,
+  "speed" : 150,
+  "supportsProcessing" : true,
+  "lightColor" : [20, 20, 5],
+  "knockback" : 0,
+  "damageKind" : "default"
+}
+

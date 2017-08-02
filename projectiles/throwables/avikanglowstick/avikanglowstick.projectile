@@ -1,0 +1,17 @@
+{
+  "projectileName" : "avikanglowstick",
+  "physics" : "grenadenobounce",
+  "bounces" : -1,
+  "timeToLive" : 60,
+  "image" : "avikanglowstick.png",
+  "animationCycle" : 0.25,
+  "lightColor" : [191, 76, 0],
+  "frameNumber" : 2,
+  "flippable" : true,
+  "fullbright" : true,
+  "actionOnReap" : [],
+  "power" : 0,
+  "onlyHitTerrain" : true,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

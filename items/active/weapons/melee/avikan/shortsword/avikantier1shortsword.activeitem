@@ -1,0 +1,34 @@
+{
+  "itemName" : "avikantier1shortsword",
+  "price" : 550,
+  "level" : 1,
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "A simple sword made of monster bone.",
+  "shortdescription" : "Bone Sword",
+  "tooltipKind" : "sword",
+  "category" : "shortsword",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","melee","shortsword","avikan"],
+
+  "inventoryIcon" : "avikantier1shortsword.png",
+
+  "animation" : "/items/active/weapons/melee/shortsword/comboshortsword.animation",
+  "animationParts" : {
+    "handle": "",
+    "blade" : "avikantier1shortsword.png"
+  },
+  "animationCustom" : { },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "shortswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.625,
+    "baseDps" : 7.5
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

@@ -1,0 +1,20 @@
+{
+  "id" : "avikanrhadeis3",
+  "species" : "avikan",
+  "title" : "Rhadeis - Part 3",
+  "description" : "Notes on Rhadeis, by Izyati as-Kaladan.",
+  "icon" : "avikanrhadeis3.png",
+  "contentPages" : [
+
+    "Sometime during their stay at the Seat of Dhas, it is said that Rhadeis appeared before our ancestors, and that he spoke to us in an alien language that we somehow understood. He told our ancestors that this city, called Vas Vha'leih, was once his home, and that from it, he had guided our race's development since before we were even Avikan.",
+
+    "He told us that his name was Rhadeis, and that he was not alone, although he was the leader of the Ce'Tennan, who we know as the Old Ones, stationed on Kadavan. He invited our ancestors into the inner city, unlocking the vault doors that we could never have opened ourselves, and then he vanished.",
+    
+    "Over the next few centuries, our ancestors would study Vas Vha'leih and its artefacts, and they developed many of the technologies we use today based on their research. After the Vha'leihan War and the subsequent Exodus from Vas Vha'leih, this research became slow and difficult, as the war damaged much of the ancient city, and few dared return there."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

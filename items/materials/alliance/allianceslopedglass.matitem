@@ -1,0 +1,11 @@
+{
+  "itemName" : "allianceslopedglass",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "allianceslopedglass.png",
+  "shortdescription" : "Alliance Sloped Glass",
+  "description" : "Thick and strong glass often used on board spaceships.",
+
+  "materialId" : 30078
+}

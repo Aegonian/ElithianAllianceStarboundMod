@@ -1,0 +1,26 @@
+[	
+  //AVIKAN
+  {
+    "op" : "add",
+    "path" : "/scriptConfig/giveSpeciesBlueprints/avikan",
+    "value" : ["mechbodyavikan"]
+  },
+  //TRINK
+  {
+    "op" : "add",
+    "path" : "/scriptConfig/giveSpeciesBlueprints/trink",
+    "value" : ["mechbodytrink"]
+  },
+  //DRODEN
+  {
+    "op" : "add",
+    "path" : "/scriptConfig/giveSpeciesBlueprints/droden",
+    "value" : ["mechbodyavikan"]
+  },
+  //AEGI
+  {
+    "op" : "add",
+    "path" : "/scriptConfig/giveSpeciesBlueprints/aegi",
+    "value" : ["mechbodyaegi"]
+  }
+]

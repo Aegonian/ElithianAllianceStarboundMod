@@ -1,0 +1,9 @@
+{
+  "name" : "giantsandspitter",
+  "category" : "giantsandspitter",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "giantsandspitter.png"
+  }
+}

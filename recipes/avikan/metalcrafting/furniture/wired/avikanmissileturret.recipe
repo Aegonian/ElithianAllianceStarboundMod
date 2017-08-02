@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "avikanmetal", "count" : 5 },
+	{ "item" : "avikandarkmetal", "count" : 2 },
+	{ "item" : "avikancircuitry", "count" : 4 },
+	{ "item" : "avikanmacrochip", "count" : 1 },
+	{ "item" : "avikanbattery", "count" : 2 },
+	{ "item" : "avikandronemissilepod", "count" : 1 }
+  ],
+  "output" : { "item" : "avikanmissileturret", "count" : 1 },
+  "groups" : [ "avikanmetalcrafting", "metalfurniture", "all" ]
+}

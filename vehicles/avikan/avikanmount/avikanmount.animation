@@ -1,0 +1,474 @@
+{
+  "globalTagDefaults" : {
+    "colour" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+
+      "body" : {
+        "default" : "idle",
+        "states" : {
+
+          "idle" : {
+		    "frames" : 1
+		  },		  
+		  "inactive" : {
+		    "frames" : 1
+		  },		  
+		  "run" : {
+		    "frames" : 8,  
+            "cycle" : 0.8,
+            "mode" : "loop",
+			"frameProperties" : {
+			  "immediateSound" : [ "", "", "/sfx/npc/monsters/kadavangadhur_step.ogg", "", "", "", "/sfx/npc/monsters/kadavangadhur_step.ogg", ""]
+			}
+		  },		  
+		  "jump" : {
+		    "frames" : 2,  
+            "cycle" : 0.3
+		  },		  
+		  "fall" : {
+		    "frames" : 2,  
+            "cycle" : 0.3
+		  },		  
+		  "swim" : {
+		    "frames" : 6,  
+            "cycle" : 0.8,
+            "mode" : "loop"
+		  },	  
+		  "warpInPart1" : {
+            "frames" : 4,  
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "warpInPart2"
+          },
+          "warpInPart2" : {
+            "frames" : 4,  
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "warpOutPart1" : {
+            "frames" : 4,  
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "warpOutPart2"
+          },
+          "warpOutPart2" : {
+            "frames" : 4,  
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "invisible"
+          },
+          "invisible" : {}
+
+        }
+      }
+
+    },
+
+    "parts" : {
+
+	//BACK LEG, RENDERED BEHIND EVERYTHING
+      "backleg" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : -2,
+          "transformationGroups" : ["flip"]
+        },
+
+        "partStates" : {
+          "body" : {
+
+            "idle" : {
+              "properties" : {
+                "image" : "avikanmountbackleg.png:idle.<frame>"
+              }
+            },			
+			"inactive" : {
+              "properties" : {
+                "image" : "avikanmountbackleg.png:inactive.<frame>"
+              }
+            },			
+			"run" : {
+              "properties" : {
+                "image" : "avikanmountbackleg.png:run.<frame>"
+              }
+            },			
+			"jump" : {
+              "properties" : {
+                "image" : "avikanmountbackleg.png:jump.<frame>"
+              }
+            },			
+			"fall" : {
+              "properties" : {
+                "image" : "avikanmountbackleg.png:fall.<frame>"
+              }
+            },			
+			"swim" : {
+              "properties" : {
+                "image" : "avikanmountbackleg.png:swim.<frame>"
+              }
+            },		
+			"warpInPart1" : {
+              "properties" : {}
+            },
+            "warpInPart2" : {
+              "properties" : {
+                "image" : "avikanmountbackleg.png:idle"
+              }
+            },
+            "warpOutPart1" : {
+              "properties" : {
+                "image" : "avikanmountbackleg.png:idle"
+              }
+            },
+            "warpOutPart2" : {
+              "properties" : {}
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+	  
+	//BACKGROUND, RENDERED BEHIND PLAYER
+	  "background" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : -1,
+          "transformationGroups" : ["flip"]
+        },
+
+        "partStates" : {
+          "body" : {
+            "idle" : {
+              "properties" : {
+                "image" : "avikanmountbackground.png:idle.<frame>"
+              },
+			  "frameProperties" : {
+                "offset" : [ [0, 0.0] ]
+              }
+            },			
+			"inactive" : {
+              "properties" : {
+                "image" : "avikanmountbackground.png:inactive.<frame>"
+              },
+			  "frameProperties" : {
+                "offset" : [ [0, 0.0] ]
+              }
+            },			
+			"run" : {
+              "properties" : {
+                "image" : "avikanmountbackground.png:run.<frame>"
+              },
+			  "frameProperties" : {
+                "offset" : [ [0, 0.125], [0, 0.25], [0, 0.125], [0, 0.0], [0, 0.125], [0, 0.25], [0, 0.125], [0, 0.0] ]
+              }
+            },			
+			"jump" : {
+              "properties" : {
+                "image" : "avikanmountbackground.png:jump.<frame>"
+              },
+			  "frameProperties" : {
+                "offset" : [ [0, 0.25], [0, 0.25] ]
+              }
+            },			
+			"fall" : {
+              "properties" : {
+                "image" : "avikanmountbackground.png:fall.<frame>"
+              },
+			  "frameProperties" : {
+                "offset" : [ [0, 0.0], [0, 0.0] ]
+              }
+            },		
+			"swim" : {
+              "properties" : {
+                "image" : "avikanmountbackground.png:swim.<frame>"
+              },
+			  "frameProperties" : {
+                "offset" : [ [0, 0.0], [0, 0.0], [0, 0.0], [0, 0.0], [0, 0.0], [0, 0.0] ]
+              }
+            },		
+			"warpInPart1" : {
+              "properties" : {}
+            },
+            "warpInPart2" : {
+              "properties" : {
+                "image" : "avikanmountbackground.png:idle"
+              }
+            },
+            "warpOutPart1" : {
+              "properties" : {
+                "image" : "avikanmountbackground.png:idle"
+              }
+            },
+            "warpOutPart2" : {
+              "properties" : {}
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+	  
+	//FRONT LEG, RENDERED ABOVE PLAYER
+	  "frontleg" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 1,
+          "transformationGroups" : ["flip"]
+        },
+
+        "partStates" : {
+          "body" : {
+            "idle" : {
+              "properties" : {
+                "image" : "avikanmountfrontleg.png:idle.<frame>"
+              }
+            },			
+			"inactive" : {
+              "properties" : {
+                "image" : "avikanmountfrontleg.png:inactive.<frame>"
+              }
+            },			
+			"run" : {
+              "properties" : {
+                "image" : "avikanmountfrontleg.png:run.<frame>"
+              }
+            },			
+			"jump" : {
+              "properties" : {
+                "image" : "avikanmountfrontleg.png:jump.<frame>"
+              }
+            },			
+			"fall" : {
+              "properties" : {
+                "image" : "avikanmountfrontleg.png:fall.<frame>"
+              }
+            },			
+			"swim" : {
+              "properties" : {
+                "image" : "avikanmountfrontleg.png:swim.<frame>"
+              }
+            },		
+			"warpInPart1" : {
+              "properties" : {}
+            },
+            "warpInPart2" : {
+              "properties" : {
+                "image" : "avikanmountfrontleg.png:idle"
+              }
+            },
+            "warpOutPart1" : {
+              "properties" : {
+                "image" : "avikanmountfrontleg.png:idle"
+              }
+            },
+            "warpOutPart2" : {
+              "properties" : {}
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+
+	//FOREGROUND, RENDERED ABOVE PLAYER
+      "foreground" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 2,
+          "transformationGroups" : ["flip"],
+          "drivingSeatPosition" : [0, 1.5]
+        },
+
+        "partStates" : {
+          "body" : {
+            "idle" : {
+              "properties" : {
+                "image" : "avikanmountforeground.png:idle.<frame>"
+              },
+			  "frameProperties" : {
+                "offset" : [ [0, 0.0] ]
+              }
+            },			
+			"inactive" : {
+              "properties" : {
+                "image" : "avikanmountforeground.png:inactive.<frame>"
+              },
+			  "frameProperties" : {
+                "offset" : [ [0, 0.0] ]
+              }
+            },			
+			"run" : {
+              "properties" : {
+                "image" : "avikanmountforeground.png:run.<frame>"
+              },
+			  "frameProperties" : {
+                "offset" : [ [0, 0.125], [0, 0.25], [0, 0.125], [0, 0.0], [0, 0.125], [0, 0.25], [0, 0.125], [0, 0.0] ]
+              }
+            },			
+			"jump" : {
+              "properties" : {
+                "image" : "avikanmountforeground.png:jump.<frame>"
+              },
+			  "frameProperties" : {
+                "offset" : [ [0, 0.25], [0, 0.25] ]
+              }
+            },			
+			"fall" : {
+              "properties" : {
+                "image" : "avikanmountforeground.png:fall.<frame>"
+              },
+			  "frameProperties" : {
+                "offset" : [ [0, 0.0], [0, 0.0] ]
+              }
+            },		
+			"swim" : {
+              "properties" : {
+                "image" : "avikanmountforeground.png:swim.<frame>"
+              },
+			  "frameProperties" : {
+                "offset" : [ [0, 0.0], [0, 0.0], [0, 0.0], [0, 0.0], [0, 0.0], [0, 0.0] ]
+              }
+            },		
+			"warpInPart1" : {
+              "properties" : {}
+            },
+            "warpInPart2" : {
+              "properties" : {
+                "image" : "avikanmountforeground.png:idle"
+              }
+            },
+            "warpOutPart1" : {
+              "properties" : {
+                "image" : "avikanmountforeground.png:idle"
+              }
+            },
+            "warpOutPart2" : {
+              "properties" : {}
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+
+	//WARP OVERLAY, RENDERED ABOVE EVERYTHING
+      "warp" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 3,
+          "fullbright" : true,
+          "transformationGroups" : ["flip"]
+        },
+
+        "partStates" : {
+          "body" : {
+            "warpInPart1" : {
+              "properties" : {
+                "image" : "avikanmountwarp.png:warpInPart1.<frame>"
+              }
+            },
+            "warpInPart2" : {
+              "properties" : {
+                "image" : "avikanmountwarp.png:warpInPart2.<frame>"
+              }
+            },
+            "warpOutPart1" : {
+              "properties" : {
+                "image" : "avikanmountwarp.png:warpOutPart1.<frame>"
+              }
+            },
+            "warpOutPart2" : {
+              "properties" : {
+                "image" : "avikanmountwarp.png:warpOutPart2.<frame>"
+              }
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+
+          }
+        }
+      }
+
+    }
+  },
+
+  "transformationGroups" : {
+    "flip" : {}
+  },
+
+  "particleEmitters" : {
+  
+    "jumpSmoke" : {
+      "transformationGroups" : ["flip"],
+      "emissionRate" : 10.0,
+      "burstCount"  : 1,
+      "offsetRegion" : [0.2, -4.3, 0.21, -4.25],
+      "particles" : [{ "particle" : "avikanmountjumpsmoke"}]
+    },
+	
+	"bloodDripping" : {
+      "transformationGroups" : ["flip"],
+      "emissionRate" : 25.0,
+      "offsetRegion" : [2.2, -1.5, 0.7, -0.5],
+      "particles" : [{ "particle" : "thea-blooddrip"}]
+    },
+	
+	"bloodBurst" : {
+      "transformationGroups" : ["flip"],
+      "emissionRate" : 10.0,
+      "burstCount"  : 4,
+      "offsetRegion" : [-0.2, -1.0, 0.2, 0.0],
+      "particles" : [{ "particle" : "thea-bloodhit"}]
+    },
+	
+	"deathPoof" : {
+      "transformationGroups" : ["flip"],
+      "emissionRate" : 10.0,
+      "burstCount"  : 5,
+      "offsetRegion" : [-2.0, -5.0, 2.0, 1.0],
+      "particles" : [
+        { "particle" : "monstersplosion" },
+        { "particle" : "deathember" },
+        { "particle" : "deathember" },
+        { "particle" : "deathember" },
+        { "particle" : "deathember" },
+        { "particle" : "deathember" },
+        { "particle" : "deathember" },
+        { "particle" : "deathember" },
+        { "particle" : "deathember" },
+        { "particle" : "deathfizz1left" },
+        { "particle" : "deathfizz1right" },
+        { "particle" : "deathfizz2left" },
+        { "particle" : "deathfizz2right" },
+        { "particle" : "deathfizz3left" },
+        { "particle" : "deathfizz3right" },
+        { "particle" : "deathfizz4left" },
+        { "particle" : "deathfizz4right" }
+      ]
+    }
+	
+  },
+
+  "lights" : {},
+
+  "sounds" : {
+
+	"death" : ["/sfx/npc/monsters/kadavangadhur_death.ogg"],
+	"hurt" : ["/sfx/npc/monsters/kadavangadhur_hurt.ogg"],
+	"land" : ["/sfx/npc/monsters/kadavangadhur_land.ogg"],
+	"mountStart" : ["/sfx/npc/monsters/kadavangadhur_noise.ogg"],
+
+    "returnvehicle" : ["/sfx/tools/teleport_up.ogg"]
+	
+  }
+}

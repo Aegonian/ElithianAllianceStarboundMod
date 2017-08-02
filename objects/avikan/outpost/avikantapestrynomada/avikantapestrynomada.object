@@ -1,0 +1,46 @@
+{
+  "objectName" : "avikantapestrynomada",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 60,
+  "description" : "A leather tapestry displaying the Nomada's emblem.",
+  "shortdescription" : "Avikan Nomada Tapestry",
+  "race" : "avikan",
+
+  "apexDescription" : "A leather tapestry. It has an alien emblem embedded into it.",
+  "avianDescription" : "A leather tapestry. It has an alien emblem embedded into it.",
+  "floranDescription" : "Tapessstry hasss alien mark all over it...",
+  "glitchDescription" : "Observation. A leather tapestry. It has an alien emblem embedded into it.",
+  "humanDescription" : "A leather tapestry. It has an alien emblem embedded into it.",
+  "hylotlDescription" : "A leather tapestry. It has an alien emblem embedded into it.",
+  "novakidDescription" : "A leather tapestry. It has an alien emblem embedded into it.",
+
+  "aegiDescription" : "A large leather tapestry showing the Avikan Nomada's emblem.",
+  "avikanDescription" : "A large leather tapestry showing our grand Nomada's emblem.",
+  "erixianDescription" : "A large leather tapestry showing the Avikan Nomada's emblem.",
+  "trinkDescription" : "A large leather tapestry showing the Avikan Nomada's emblem.",
+  "hymidDescription" : "A large leather tapestry showing the Avikan Nomada's emblem.",
+  "notixDescription" : "A large leather tapestry showing the Avikan Nomada's emblem.",
+  "jorgasianDescription" : "A large leather tapestry showing the Avikan Nomada's emblem.",
+  "centensDescription" : "A large leather tapestry showing the Avikan Nomada's emblem.",
+  "dremetonDescription" : "A large leather tapestry showing the Avikan Nomada's emblem.",
+  "hyvonDescription" : "A large leather tapestry showing the Avikan Nomada's emblem.",
+  "drodenDescription" : "Detected Avikan Nomada emblem.",
+  
+  "inventoryIcon" : "avikantapestrynomadaicon.png",
+  "orientations" : [
+    {
+      "image" : "avikantapestrynomada.png:<color>",
+	  
+      "imagePosition" : [-8, -16],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

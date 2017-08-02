@@ -1,0 +1,29 @@
+{
+  "type" : "tenantavikanleathermerchant",
+  "baseType" : "merchant",
+  
+  "dropPools" : [],
+
+  "scriptConfig" : {
+    "questGenerator" : { "pools" : [], "enableParticipation" : false },
+	
+	"merchant" : {
+	  "categories" : {
+		"override" : [ "avikanleather" ]
+	  }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "avikan-merchanthead", "parameters" : { "colorIndex" : 5 } } ],
+			"chest" : [ { "name" : "avikan-merchantchest", "parameters" : { "colorIndex" : 5 } } ],
+            "legs" : [ { "name" : "avikan-merchantlegs", "parameters" : { "colorIndex" : 5 } } ],
+            "back" : [ { "name" : "avikanmerchantpack", "parameters" : { "colorIndex" : 5 } } ]
+          }
+        ] ]
+    ]
+  }
+}

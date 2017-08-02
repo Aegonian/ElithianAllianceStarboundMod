@@ -1,0 +1,9 @@
+{
+  "name" : "avikanpiratemechgun",
+  "category" : "avikanpiratemech",
+  "type" : "gun",
+
+  "frames" : {
+    "gun" : "avikanpiratemechgun.png"
+  }
+}

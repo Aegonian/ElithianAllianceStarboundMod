@@ -1,0 +1,52 @@
+{
+  "objectName" : "avikanchest",
+  "colonyTags" : ["avikan", "storage"],
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "category" : "storage",
+  "printable" : false,
+  "price" : 40,
+  "description" : "A leather bag, perfect for storing your goodies!",
+  "shortdescription" : "Avikan Bag",
+  "race" : "avikan",
+  
+  "health" : 6,
+
+  "apexDescription" : "A poorly crafted leather bag.",
+  "avianDescription" : "A simple leather bag. What's inside?",
+  "floranDescription" : "Bagsss full of goodiesss!",
+  "glitchDescription" : "Observation. A primitive leather bag.",
+  "humanDescription" : "A leather bag. Might be full of goodies!",
+  "hylotlDescription" : "A primitive leather bag, for storing your belongings.",
+
+  "aegiDescription" : "A simple leather bag, for storage.",
+  "avikanDescription" : "A leather bag. Not as well protected as a chest, but much cheaper.",
+  "erixianDescription" : "A crudely crafted leather bag. It wouldn't last long on Heragon.",
+  "trinkDescription" : "A simple leather bag.",
+  "hymidDescription" : "A primitive storage bag.",
+  "notixDescription" : "A simple leather bag.",
+  "jorgasianDescription" : "A leather bag.",
+  "centensDescription" : "Interesting. The Avikan nomads use leather bags, as stronger materials are rare in the desert.",
+  "dremetonDescription" : "A simple leather bag.",
+  "theleanDescription" : "An unimpressive leather bag.",
+  "drodenDescription" : "Scanning content.",
+
+  "inventoryIcon" : "avikanchesticon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanchest.png:<color>.<key>",
+      "imagePosition" : [-8, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/bed_leave.ogg" ],
+  "closeSounds" : [ "/sfx/objects/bed_enter.ogg" ],
+  "slotCount" : 16,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 30,
+  "autoCloseCooldown" : 3600
+}

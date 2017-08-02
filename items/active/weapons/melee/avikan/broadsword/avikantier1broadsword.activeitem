@@ -1,0 +1,36 @@
+{
+  "itemName" : "avikantier1broadsword",
+  "price" : 900,
+  "level" : 1,
+  "maxStack" : 1,
+  "rarity" : "common",
+  "description" : "A broadsword made of a giant monster's tooth.",
+  "shortdescription" : "Bone Blade",
+  "tooltipKind" : "sword",
+  "category" : "broadsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword"],
+
+  "inventoryIcon" : "avikantier1broadsword.png",
+
+  "animation" : "/items/active/weapons/melee/broadsword/combobroadsword.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "avikantier1broadsword.png"
+  },
+  "animationCustom" : { },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.85,
+    "baseDps" : 11.5
+  },
+
+  "altAbilityType" : "spinslash",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

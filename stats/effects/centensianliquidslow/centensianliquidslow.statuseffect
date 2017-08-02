@@ -1,0 +1,19 @@
+{
+  "name" : "centensianliquidslow",
+  //"blockingStat" : "tarImmunity",
+  "effectConfig" : {
+    "minMaxHealth" : 5,
+    "healthDamageFactor" : 1.0,
+    "bombConfig" : "/projectiles/explosions/centensianexplosion/centensianexplosion.config"
+  },
+  "defaultDuration" : 2.0,
+
+  "scripts" : [
+    "centensianliquidslow.lua"
+  ],
+
+  "animationConfig" : "centensianliquidslow.animation",
+
+  "label" : "Slow",
+  "icon" : "/interface/statuses/centensianliquid.png"
+}

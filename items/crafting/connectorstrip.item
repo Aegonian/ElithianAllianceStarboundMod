@@ -1,0 +1,10 @@
+{
+  "itemName" : "connectorstrip",
+  "price" : 5,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "connectorstrip.png",
+  "description" : "A bunch of gold-plated connectors, for use in electronics.",
+  "shortdescription" : "Connector Strip",
+  "itemTags" : [ "reagent" ]
+}

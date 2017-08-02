@@ -1,0 +1,9 @@
+{
+  "name" : "avikanminidronelights",
+  "category" : "avikanminidrone",
+  "type" : "lights",
+
+  "frames" : {
+    "lights" : "avikanminidronelights.png"
+  }
+}

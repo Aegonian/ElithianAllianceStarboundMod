@@ -1,0 +1,62 @@
+{
+  "objectName" : "centensfloatingcube",
+  "colonyTags" : ["centens"],
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 750,
+  "description" : "A massive floating cube.",
+  "shortdescription" : "Centensian Floating Cube",
+  "race" : "centens",
+  
+  "health" : 5,
+
+  "apexDescription" : "A massive cube, floating just above the ground. What keeps it in place?",
+  "avianDescription" : "A massive cube, held aloft by invisible wings. It is... beautiful!",
+  "floranDescription" : "Floran doesss not undersstand how masssive cube can fly.",
+  "glitchDescription" : "Baffled. This cube must weigh more than a house, yet it stays aloft somehow.",
+  "humanDescription" : "A massive metal cube, untouched by time. What keeps it aloft?",
+  "hylotlDescription" : "Mystery surrounds this cube. It is magnificent.",
+  "novakidDescription" : "It goes 'round and 'round and 'round... Makes my head spin, it does.",
+
+  "aegiDescription" : "How the Centens managed to build artefacts like these is beyond me.",
+  "avikanDescription" : "The Old Ones left behind many mysterious cubes like these. The Rhaiod has yet to show us what their purpose is.",
+  "erixianDescription" : "Some sort of massive Centensian cube. It hovers above the ground, somehow.",
+  "trinkDescription" : "Whatever mechanism keeps this cube aloft must be extremely efficient.",
+  "hymidDescription" : "This cube was built by the Gods, for a purpose beyond my ken.",
+  "notixDescription" : "This cube resonates with a strange power. It is comforting, somehow.",
+  "jorgasianDescription" : "A Centensian artefact. Mysterious, as always.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected Centensian artefact. Marking location for Rhaiod investigation.",
+
+  "inventoryIcon" : "centensfloatingcubeicon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "centensfloatingcube.png:<color>.<frame>" } ],
+
+      "imagePosition" : [0, 0],
+      "frames" : 16,
+      "animationCycle" : 1.6,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "flipImages" : true,
+      "direction" : "left"
+
+    },
+    {
+	  "imageLayers" : [ { "image" : "centensfloatingcube.png:<color>.<frame>" } ],
+
+      "imagePosition" : [0, 0],
+      "frames" : 16,
+      "animationCycle" : 1.6,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "right"
+
+    }
+  ]
+}

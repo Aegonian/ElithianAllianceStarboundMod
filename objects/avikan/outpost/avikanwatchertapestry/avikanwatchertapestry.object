@@ -1,0 +1,45 @@
+{
+  "objectName" : "avikanwatchertapestry",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 40,
+  "description" : "Wall tapestry decorated in the style of the Watchers.",
+  "shortdescription" : "Watcher Tapestry",
+  "race" : "avikan",
+
+  "apexDescription" : "A black tapestry adorned with an eye. It creeps me out.",
+  "avianDescription" : "I'm a bit creeped out by this tapestry.",
+  "floranDescription" : "Floran isss not afraid of large eyesss.",
+  "glitchDescription" : "Uneasy. I feel like I'm being watched.",
+  "humanDescription" : "Is this supposed to be an all-seing eye?",
+  "hylotlDescription" : "This tapestry makes me feel uncomfortable.",
+  "novakidDescription" : "A large white eye on a black canvas. Creepy.",
+
+  "aegiDescription" : "This tapestry belongs to the Avikan secret service, the Watchers.",
+  "avikanDescription" : "A tapestry adorned with the Watcher's Eye.",
+  "erixianDescription" : "The all-seeing eye of the Avikan Watchers.",
+  "trinkDescription" : "A tapestry decorated in the style of the Avikan Watchers.",
+  "hymidDescription" : "An all-seeing eye. A fitting symbol for a secret service.",
+  "notixDescription" : "Some sort of tapestry.",
+  "jorgasianDescription" : "A black tapestry adorned with a great white eye.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Scan completed. Watchers' wall decoration.",
+  
+  "inventoryIcon" : "avikanwatchertapestryicon.png",
+  "orientations" : [
+    {
+      "image" : "avikanwatchertapestry.png:<color>",
+      "imagePosition" : [-16, -16],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

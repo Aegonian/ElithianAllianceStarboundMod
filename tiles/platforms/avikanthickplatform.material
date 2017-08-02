@@ -1,0 +1,29 @@
+{
+  "materialId" : 30103,
+  "materialName" : "avikanthickplatform",
+  "collisionKind" : "platform",
+  "transparent" : true,
+  "itemDrop" : "avikanthickplatform",  
+  "shortdescription" : "Thick Avikan Platform",
+  "description" : "A thick metal platform. Very sturdy.",
+  
+  "glitchDescription" : "Measuring. This platform is thicker than most.",
+  "floranDescription" : "Thick platform, for basshing skulsss into.",
+  "novakidDescription" : "Seems like a mighty thick platform.",
+  
+  "drodenDescription" : "Analysis complete. Thick metal platform.",
+  
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "category" : "Supports",
+  
+  "renderTemplate" : "/tiles/platformtemplate.config",
+  "renderParameters" : {
+    "texture" : "avikanthickplatform.png",
+    "variants" : 3,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 0,
+    "platform" : true
+  }
+}

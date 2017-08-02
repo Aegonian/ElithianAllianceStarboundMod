@@ -1,0 +1,15 @@
+{
+  "itemName" : "trinkpipe",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "trinkpipe.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "shortdescription" : "Trinkian Pipe",
+  
+  "description" : "A heavy, thick pipe. This isn't going to leak.",
+  "glitchDescription" : "Statement. A pipe.",
+  "floranDescription" : "Thiss pipe is big.",
+
+  "materialId" : 30065
+}

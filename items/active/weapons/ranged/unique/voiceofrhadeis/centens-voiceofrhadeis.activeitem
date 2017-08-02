@@ -1,0 +1,169 @@
+{
+  "itemName" : "centens-voiceofrhadeis",
+  "price" : 1500,
+  "inventoryIcon" : "centens-voiceofrhadeisicon.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;A Centensian weapon which can adapt to any situation.",
+  "shortdescription" : "^orange;Voice of Rhadeis^white;",
+  "level" : 6,
+  "tooltipKind" : "thea-gun-unique",
+  "category" : "Elemental Rifle",
+  "itemTags" : ["weapon","ranged","centens","theaUnique"],
+  "twoHanded" : true,
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "centens-voiceofrhadeis" },
+  
+  "meritTokenValue" : 100,
+  
+  "animation" : "centens-voiceofrhadeis.animation",
+  "animationParts" : {
+    "gun" : "centens-voiceofrhadeis.png",
+	"ammoType" : "centens-voiceofrhadeisammo.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/voiceofrhadeismuzzle.png"
+  },
+  "animationCustom" : {
+	"animatedParts" : {
+      "parts" : {
+        "gun" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [0.65, 0.25]
+		  }
+		},
+		"ammoType" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [0.65, 0.25]
+		  }
+		}
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/xanafian_fire4.ogg" ],
+	  "switchAmmo" : [ "/sfx/gun/xanafian_fire2.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.65, 0.25],
+  "muzzleOffset" : [1.875, 0.25],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+	
+    "fireTime" : 0.22,
+    "baseDps" : 10.5,
+    "energyUsage" : 35.0,
+    "inaccuracy" : 0.015,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "voiceofrhadeisbullet-xanafian",
+    "projectileParameters" : { 
+      "knockback" : 6
+    },
+	
+	"stances" : {
+	  "idle" : {
+		"armRotation" : 0,
+		"weaponRotation" : 0,
+		"twoHanded" : true,
+
+		"allowRotate" : true,
+		"allowFlip" : true
+	  },
+	  "fire" : {
+		"duration" : 0,
+		"armRotation" : 3,
+		"weaponRotation" : 3,
+		"twoHanded" : true,
+
+		"allowRotate" : false,
+		"allowFlip" : false
+	  },
+	  "cooldown" : {
+		"duration" : 0.075,
+		"armRotation" : 3,
+		"weaponRotation" : 3,
+		"twoHanded" : true,
+
+		"allowRotate" : false,
+		"allowFlip" : false
+	  }
+	}
+  },
+  
+  "altAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-adaptableammo/thea-adaptableammo.lua"],
+    "class" : "TheaAdaptableAmmo",
+    "name" : "Recalibrate",
+
+    "adaptedAbilityIndex" : 1, //Which ability to adapt (1 = primary, 2 = secondary)
+
+	//The adapted ability will be overwritten using these values, based on the current ammo index
+    "ammoTypes" : [
+      {
+        "projectileType" : "voiceofrhadeisbullet-xanafian",
+		"fireTime" : 0.45,
+        "energyUsage" : 36,
+		"inaccuracy" : 0.005
+      },
+      {
+        "projectileType" : "voiceofrhadeisbullet-fire",
+		"fireTime" : 0.32,
+        "energyUsage" : 42,
+		"inaccuracy" : 0.015
+      },
+      {
+        "projectileType" : "voiceofrhadeisbullet-ice",
+		"fireTime" : 0.38,
+        "energyUsage" : 28.0,
+		"inaccuracy" : 0.010
+      },
+      {
+        "projectileType" : "voiceofrhadeisbullet-electric",
+		"fireTime" : 0.12,
+        "energyUsage" : 42,
+		"inaccuracy" : 0.035
+      },
+      {
+        "projectileType" : "voiceofrhadeisbullet-poison",
+		"fireTime" : 0.20,
+        "energyUsage" : 36,
+		"inaccuracy" : 0.025
+      }
+    ],
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+  
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "switch" : {
+        "aimAngle" : 0,
+        "armRotation" : -40,
+        "weaponRotation" : 60,
+        "weaponAngularVelocity" : -150,
+        "armAngularVelocity" : 100,
+        "twoHanded" : true,
+        "duration" : 0.4,
+  
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

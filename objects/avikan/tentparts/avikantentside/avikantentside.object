@@ -1,0 +1,46 @@
+{
+  "objectName" : "avikantentside",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 60,
+  "description" : "A leather sheet used as a wall for Avikan tents.",
+  "shortdescription" : "Avikan Wall Sheet",
+  "race" : "avikan",
+
+  "apexDescription" : "A leather sheet, used as a tent wall.",
+  "avianDescription" : "A tent wall, mad eof a simple leather sheet.",
+  "floranDescription" : "Leather makesss Floran want to huntsss.",
+  "glitchDescription" : "Observation. A tent wall made of leather.",
+  "humanDescription" : "A rather primitive tent wall, made of a sheet of leather.",
+  "hylotlDescription" : "A primitive leather sheet used as a tent wall.",
+
+  "aegiDescription" : "This leather sheet is used as a tent wall.",
+  "avikanDescription" : "A tent wall made of a simple leather sheet. Simple, but functional.",
+  "erixianDescription" : "A tent wall made using a large sheet of leather.",
+  "trinkDescription" : "A leather sheet used as a tent wall.",
+  "hymidDescription" : "A simple leather sheet used as a tent wall.",
+  "notixDescription" : "A tent wall. It's made of a large leather sheet.",
+  "jorgasianDescription" : "A leather tent wall.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Analysis. Leather sheet.",
+
+  "inventoryIcon" : "avikantentsideicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikantentside.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "solid"
+
+    }
+  ]
+}

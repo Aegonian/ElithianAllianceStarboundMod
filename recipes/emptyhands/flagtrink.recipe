@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "trinkmetal", "count" : 1 },
+    { "item" : "trinklaserdiode", "count" : 5 }
+  ],
+  "output" : {
+    "item" : "flagtrink",
+    "count" : 1
+  },
+  "groups" : [ "plain", "all" ],
+  "duration" : 0.5
+}

@@ -1,0 +1,46 @@
+{
+  "type" : "ao-bonewarrior",
+  "baseType" : "ao-lounger",
+
+  "npcname" : "Makhan",
+
+  "scriptConfig" : {
+    	
+	"offeredQuests" : [ "avikancrossbow" ],
+	"turnInQuests" : [ "avikancrossbow" ],
+  
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "I'm no fan of all this metal. Bone is the real deal."
+		  ]
+		},
+
+        "avikan" : {
+          "default" : [
+            "I'm no fan of all this metal. Bone is the real deal."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "avikan-longskull", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "avikan-warriorchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "avikan-warriorlegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

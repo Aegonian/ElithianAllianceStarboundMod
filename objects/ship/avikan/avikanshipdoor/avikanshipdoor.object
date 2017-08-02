@@ -1,0 +1,69 @@
+{
+  "objectName" : "avikanshipdoor",
+  "colonyTags" : ["avikan", "door"],
+  "rarity" : "Common",
+
+  "category" : "door",
+  "price" : 65,
+  "description" : "A sturdy metal door, oft found on Avikan ships.",
+  "shortdescription" : "Avikan Ship Door",
+  "race" : "avikan",
+  
+  "health" : 4,
+
+  "apexDescription" : "A sturdy metal door.",
+  "avianDescription" : "A shiny door.",
+  "floranDescription" : "Floran wondersss what is behind metal doorsss.",
+  "glitchDescription" : "Statement. A metal door.",
+  "humanDescription" : "Cool door.",
+  "hylotlDescription" : "A heavy metal door. Effective at keeping things out.",
+  "novakidDescription" : "A fine door made of strong metal. Ain't nothing coming through here.",
+  
+  "aegiDescription" : "An Avikan ship door.",  
+  "avikanDescription" : "A strong door from home, built for use on ships.",
+  "erixianDescription" : "A metal door. Not quite a blast door, but still very strong.",
+  "trinkDescription" : "A mechanical door.",
+  "hymidDescription" : "An Avikan door, used primarily on spaceships.",
+  "notixDescription" : "A door built for use on spaceships.",
+  "jorgasianDescription" : "A door. The locking mechanism is new to me.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected door. Analysis: Ship model.",
+
+  "inventoryIcon" : "avikanshipdooricon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanshipdoor.png:default",
+      "imagePosition" : [-20, 0],
+	  "renderLayer" : "Object+5",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom", "top" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/door/door.lua" ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/door/door.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_open.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_close.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "avikanshipdoor.png"
+  },
+  "animationPosition" : [-20, 0],
+
+  "inputNodes" : [ [-1, 4] ],
+  "outputNodes" : [ [0, 0] ]
+}

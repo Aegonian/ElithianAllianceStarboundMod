@@ -1,0 +1,66 @@
+{
+  "objectName" : "avikantentdoor2",
+  "colonyTags" : ["avikan", "door"],
+  "rarity" : "Common",
+  "category" : "door",
+  "printable" : false,
+  "price" : 60,
+  "description" : "A colourful tent door.",
+  "shortdescription" : "Avikan Fabric Tent Door",
+  "race" : "avikan",
+
+  "apexDescription" : "A colourful tent door.",
+  "avianDescription" : "A fancy tent door.",
+  "floranDescription" : "Fabric doorsss can't ssstop Floran.",
+  "glitchDescription" : "Observation. A tent door made of an unusual fabric.",
+  "humanDescription" : "A fabric tent door. Colourful.",
+  "hylotlDescription" : "A finely decorated tent door.",
+
+  "aegiDescription" : "A fabric tent door. Bright and colourful.",
+  "avikanDescription" : "A tent door made of fabric. For nomads with resources to spare.",
+  "erixianDescription" : "This tent door is made of fabric.",
+  "trinkDescription" : "A colourful tent door.",
+  "hymidDescription" : "A colourful tent door. Pretty.",
+  "notixDescription" : "A basic tent door.",
+  "jorgasianDescription" : "A fabric tent door. Nicely woven.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected door. Material: fabric.",
+
+  "inventoryIcon" : "avikantentdoor2icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikantentdoor2.png:default",
+      "imagePosition" : [0, 0],
+      "renderLayer" : "Object+5",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom", "background" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/door/door.lua" ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/door/door.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/bed_leave.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/objects/bed_enter.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "avikantentdoor2.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "inputNodes" : [ [-1, 4] ],
+  "outputNodes" : [ [1, 0] ]
+}

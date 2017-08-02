@@ -1,0 +1,36 @@
+{
+  "objectName" : "avikandronerepair",
+  "colonyTags" : [],
+  "rarity" : "legendary",
+  "category" : "other",
+  "printable" : false,
+  "subtitle" : "Drahl repairs",
+  "tooltipKind" : "container",
+  "description" : "This station can repair drones damaged in combat.",
+  "shortdescription" : "Drahl Repair Station",
+  "race" : "avikan",
+  
+  "statusEffects" : [ ],
+  "price" : 50,
+  
+  "floranDescription" : "Floran placess broken drone on table, table repairss drone!",
+  "glitchDescription" : "Relieved. If I ever have a damaged drone, I can repair it here.",
+  "novakidDescription" : "Might be able to repair drones here.",
+  
+  "drodenDescription" : "Detected Drahl repair station. Capable of repairing Drahl units damaged in combat.",
+
+  "inventoryIcon" : "avikandronerepairicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "avikandronerepair.png:<color>.<frame>", "fullbright" : true }, { "image" : "avikandronerepairlit.png:<color>.<frame>" } ],
+	  "direction" : "right",
+	  
+      "imagePosition" : [-8, 0],
+      "frames" : 25,
+      "animationCycle" : 2.5,
+
+	  "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

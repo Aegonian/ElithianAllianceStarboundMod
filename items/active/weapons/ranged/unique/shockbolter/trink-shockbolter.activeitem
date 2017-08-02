@@ -1,0 +1,171 @@
+{
+  "itemName" : "trink-shockbolter",
+  "price" : 1500,
+  "inventoryIcon" : "trink-shockboltericon.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;A reverse-engineered Thelean design built to shock foes.",
+  "shortdescription" : "^orange;SDL-02 Shockbolter^white;",
+  "level" : 6,
+  "tooltipKind" : "thea-gun-unique",
+  "category" : "Prototype Weapon",
+  "itemTags" : ["weapon","ranged","trink","theaUnique"],
+  "twoHanded" : true,
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "trink-shockbolter" },
+  
+  "meritTokenValue" : 100,
+  
+  "cursor" : "/cursors/thea-shockreticle.cursor",
+
+  "animation" : "/items/active/weapons/ranged/animations/thea-gun-animated.animation",
+  "animationParts" : {
+    "middle" : "trink-shockbolter.png",
+    "middleFullbright" : "trink-shockbolterlights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/shockboltmuzzle.png"
+  },
+  "animationCustom" : {
+	"stateTypes" : {
+	  "weapon" : {
+		"states" : {
+		  "active" : {
+			"cycle" : 0.3
+		  }
+		}
+	  }
+	},
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [0.95, 0.1]
+		  }
+		}
+      }
+    },
+    "lights" : {
+      "muzzleFlash" : {
+		"color" : [20, 50, 90]
+	  }
+    },
+    "sounds" : {
+      "fireStart" : [ "/sfx/gun/aegisaltpistol_start.ogg" ],
+      "fireLoop" : [ "/sfx/objects/teslaspike.ogg" ],
+      "fireEnd" : [],
+	  "altFire" : [ "/sfx/gun/grenade3.ogg" ]
+    }
+  },
+  "animationScripts" : ["/items/active/effects/lightning.lua"],
+
+  "baseOffset" : [0.95, 0.1],
+  "muzzleOffset" : [0.375, 0.5],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "electric",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-lightningfire.lua"],
+    "class" : "TheaLightningFire",
+
+    "fireTime" : 0.2,
+    "baseDps" : 10.5,
+    "energyUsage" : 35.0,
+
+    "damageConfig" : {
+      "statusEffects" : [ "electrified" ],
+      "damageSourceKind" : "electric",
+      "knockback" : 1
+    },
+
+    "lightningDistanceGround" : 7.5,
+	"lightningDistanceEnemies" : 20.0,
+	
+	//Relative to muzzleOffset. If the beam doesn't collide with anything, lightning should target this position instead
+	"lightningTargetOffset" : [2, -0.5],
+	
+	//Lightning config
+	"lightningAmount" : 1,
+	"lightningWidth" : 1.15,
+	"lightningForks" : 0,
+	"lightningBranchingAmount" : 0.10,
+	"lightningColour" : [171, 205, 252, 200],
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.1,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "altAbility" : {
+    "name" : "Shock Grenade",
+    "scripts" : ["/items/active/weapons/ranged/abilities/altfire.lua"],
+	"class" : "AltFireAttack",
+
+	//BaseDamage instead of baseDps to better control damage dealt by our projectile's sub-projectiles
+	//Damage is dealt not by grenade, but by its sub-projectiles
+    "baseDamage" : 1.0,
+	"fireTime" : 1.5,
+    "energyUsage" : 40.0,
+    "inaccuracy" : 0.1,
+
+	"projectileCount" : 1,
+    "fireType" : "auto",
+	
+	"projectileType" : "shockboltgrenade",
+	"projectileParameters" : {},
+	
+	"hidePrimaryMuzzleFlash" : false,
+	"useParticleEmitter" : false,
+	"usePrimaryFireSound" : false,
+
+    "stances" : {
+      "fire" : {
+        "duration" : 0.2,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.2,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

@@ -1,0 +1,42 @@
+{
+  "itemName" : "avikanclimbingrope",
+  "price" : 10,
+  "inventoryIcon" : "avikanclimbingropeicon.png",
+  "rarity" : "Common",
+  "maxStack" : 1000,
+  "description" : "A length of leather rope. Useful for climbing and tying things together!",
+  "shortdescription" : "Avikan Rope",
+  "category" : "Tool",
+  "twoHanded" : false,
+
+  "scripts" : ["/items/active/grapplinghooks/grapplinghook.lua"],
+  "animationScripts" : ["/items/active/effects/renderrope.lua"],
+
+  "animation" : "avikanclimbingrope.animation",
+
+  "fireOffset" : [0, 0],
+  "ropeOffset" : [-1.75, 0],
+  "ropeVisualOffset" : [-0.5, 0.0],
+
+  "consumeOnUse" : true,
+
+  "projectileType" : "avikanclimbingropehook",
+  "projectileParameters" : {
+    "speed" : 50,
+    "timeToLive" : 2.5
+  },
+
+  "ropeWidth" : 1.6,
+  "ropeColor" : [102, 87, 67, 255],
+
+  "reelInDistance" : 2.5,
+  "reelOutLength" : 50,
+  "breakLength" : 60,
+
+  "minSwingDistance" : 1.5,
+
+  "reelSpeed" : 8,
+  "controlForce" : 2000,
+
+  "groundLagTime" : 0.2
+}

@@ -1,0 +1,137 @@
+{ "margin":0,
+ "name":"numbers-avikan",
+ "properties":
+    {
+
+    },
+ "spacing":0,
+ "tilecount":10,
+ "tileheight":24,
+ "tileproperties":
+    {
+     "0":
+        {
+         "\/\/shortdescription":"Avikan Number 0",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"avikannumber0",
+         "tilesetDirection":"right"
+        },
+     "1":
+        {
+         "\/\/shortdescription":"Avikan Number 1",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"avikannumber1",
+         "tilesetDirection":"right"
+        },
+     "2":
+        {
+         "\/\/shortdescription":"Avikan Number 2",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"avikannumber2",
+         "tilesetDirection":"right"
+        },
+     "3":
+        {
+         "\/\/shortdescription":"Avikan Number 3",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"avikannumber3",
+         "tilesetDirection":"right"
+        },
+     "4":
+        {
+         "\/\/shortdescription":"Avikan Number 4",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"avikannumber4",
+         "tilesetDirection":"right"
+        },
+     "5":
+        {
+         "\/\/shortdescription":"Avikan Number 5",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"avikannumber5",
+         "tilesetDirection":"right"
+        },
+     "6":
+        {
+         "\/\/shortdescription":"Avikan Number 6",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"avikannumber6",
+         "tilesetDirection":"right"
+        },
+     "7":
+        {
+         "\/\/shortdescription":"Avikan Number 7",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"avikannumber7",
+         "tilesetDirection":"right"
+        },
+     "8":
+        {
+         "\/\/shortdescription":"Avikan Number 8",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"avikannumber8",
+         "tilesetDirection":"right"
+        },
+     "9":
+        {
+         "\/\/shortdescription":"Avikan Number 9",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"avikannumber9",
+         "tilesetDirection":"right"
+        }
+    },
+ "tiles":
+    {
+     "0":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/avikan-numbers\/avikannumber0.png"
+        },
+     "1":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/avikan-numbers\/avikannumber1.png"
+        },
+     "2":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/avikan-numbers\/avikannumber2.png"
+        },
+     "3":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/avikan-numbers\/avikannumber3.png"
+        },
+     "4":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/avikan-numbers\/avikannumber4.png"
+        },
+     "5":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/avikan-numbers\/avikannumber5.png"
+        },
+     "6":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/avikan-numbers\/avikannumber6.png"
+        },
+     "7":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/avikan-numbers\/avikannumber7.png"
+        },
+     "8":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/avikan-numbers\/avikannumber8.png"
+        },
+     "9":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/avikan-numbers\/avikannumber9.png"
+        }
+    },
+ "tilewidth":16
+}

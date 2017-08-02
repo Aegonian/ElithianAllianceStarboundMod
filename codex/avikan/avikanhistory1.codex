@@ -1,0 +1,20 @@
+{
+  "id" : "avikanhistory1",
+  "species" : "avikan",
+  "title" : "Avikan History - Part 1",
+  "description" : "An account of Avikan history, by Izyati as-Kaladan.",
+  "icon" : "avikanhistory1.png",
+  "contentPages" : [
+
+    "Vas Vha'leih, dear reader. In this series of short scrolls, I, Izyati as-Kaladan, shall briefly describe the history of the great Avikan people, their struggles as a nation and their eventual fate, that none will ever forget our origins and our reason to fight.",
+
+    "The Avikan originate from the desert planet of Kadavan, an arid world with few oases and many dangers. The first records of our ancestors were found in the northern region of Avikha, which is the most plentiful in water supplies. Our ancestors lived as nomads, always travelling the lands in search of water and food.",
+    
+    "Sometime around 2500 BF (Before Flight), a group of nomads found the legendary city of Vas Vha'leih in the Avikha Mountains. This city, left behind by the Old Ones, provided the nomads with such bountiful supplies that they decided to settle, for the first time in Avikan history. The nomads grew in numbers and as time passed they became known as the Khoden, the settlers."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

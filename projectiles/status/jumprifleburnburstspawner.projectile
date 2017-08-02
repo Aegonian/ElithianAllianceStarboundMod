@@ -1,0 +1,13 @@
+{
+  "projectileName" : "jumprifleburnburstspawner",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/jumprifleburnburst/jumprifleburnburst.config"
+    }
+  ],
+  "damageKind" : "jumpweapon",
+  "damageType" : "NoDamage",
+  "timeToLive" : 0
+}

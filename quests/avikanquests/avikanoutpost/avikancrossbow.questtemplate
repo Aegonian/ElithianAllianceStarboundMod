@@ -1,0 +1,30 @@
+{
+  "id" : "avikancrossbow",
+  "prerequisites" : [],
+  "requiredItems" : [ "avikan-tier3bow" ],
+  "title" : "^green;Bone Ballistics",
+  "text" : "I see you carry a bone bow, Captain. Far too few people in this refuge use traditional weapons nowadays... I have a ^orange;Bone Crossbow schematic ^white;you can have, if you prove yourself a capable hunter. ^green;Return to me with a ^orange;Great Monster Bone^green;, and the schematic is yours.",
+  "completionText" : "As promised, here is the schematic for that Bone Crossbow. Fight well, Captain.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "avikan-bonecrossbow-recipe", 1 ], [ "avikanmerittoken", 10 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "default" : "questGiver"
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "greatmonsterbone",
+        "count" : 1,
+        "consume" : false
+      }
+    ],
+	"turnInDescription" : "Return to ^orange;Makhan ^reset;in the ^orange;Starfarer's Refuge^reset;"
+  }
+}

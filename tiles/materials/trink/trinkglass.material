@@ -1,0 +1,28 @@
+{
+  "materialId" : 30068,
+  "materialName" : "trinkglass",
+  "particleColor" : [121, 255, 75, 255],
+  "itemDrop" : "trinkglass", 
+  "shortdescription" : "Trinkian Glass",
+  
+  "description" : "Thick, strong glass.",
+  "glitchDescription" : "Statement. Glass.",
+  "floranDescription" : "Floran look pretty in glasssss.",
+  "novakidDescription" : "Thick glass for sure, but I can still see right through to th'other side.",
+  
+  "drodenDescription" : "Analysis complete. Thick glass.",
+
+  "footstepSound" : "/sfx/blocks/footstep_glass.ogg",
+  "health" : 5,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "trinkglass.png",
+    "variants" : 5,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 0
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name" : "avikanlargedrone",
+  "category" : "avikanlargedrone",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "avikanlargedrone.png"
+  }
+}

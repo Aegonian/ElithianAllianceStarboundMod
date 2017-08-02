@@ -1,0 +1,13 @@
+{
+  "itemName" : "alliancegroundpanel",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "alliancegroundpanel.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  
+  "shortdescription" : "Alliance Ground Panel",
+  "description" : "A metal panel often used to cover the floor.",
+
+  "materialId" : 30074
+}

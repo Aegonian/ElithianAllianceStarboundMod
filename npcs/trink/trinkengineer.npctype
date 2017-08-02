@@ -1,0 +1,43 @@
+{
+  "type" : "trinkengineer",
+  "baseType" : "trinkvillager",
+
+  "dropPools" : [ "trinkEngineerDeathTreasure" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "Can I help you?",
+			"...",
+			"I'm busy, can't talk right now."
+		  ]
+		},
+
+        "trink" : {
+          "default" : [
+            "Can I help you?",
+			"...",
+			"I'm busy, can't talk right now."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "trink-paintedchest", "data" : { "colorIndex" : 1 } } ],
+            "legs" : [ { "name" : "trink-engineerlegs", "data" : { "colorIndex" : 1 } } ],
+            "head" : [ "thea-hiddenhead" ],
+            "primary" : [
+				{ "name" : "trink-wrench", "data" : { "colorIndex" : 1 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

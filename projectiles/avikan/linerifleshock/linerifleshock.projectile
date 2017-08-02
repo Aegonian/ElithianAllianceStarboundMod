@@ -1,0 +1,13 @@
+{
+  "projectileName" : "linerifleshock",
+  "image" : "linerifleshock.png",
+  "animationCycle" : 0.15,
+  "timeToLive" : 0.2,
+  "frameNumber" : 6,
+  "speed" : 50,
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "animationLoops" : false,
+  "piercing" : false,
+  "flippable" : true,
+  "damageKind" : "linerifle"
+}

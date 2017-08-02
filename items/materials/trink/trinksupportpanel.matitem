@@ -1,0 +1,15 @@
+{
+  "itemName" : "trinksupportpanel",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "trinksupportpanel.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "shortdescription" : "Trinkian Support Panel",
+  
+  "description" : "A dark metal panel.",
+  "glitchDescription" : "Statement. A strong metal panel.",
+  "floranDescription" : "Dark metal panelsss",
+
+  "materialId" : 30062
+}

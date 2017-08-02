@@ -1,0 +1,21 @@
+{
+  "kind" : "violatedtrail",
+  "definition" : {
+    "type" : "ember",
+    "size" : 0.8,
+    "color" : [255, 40, 0],
+    "light" : [120, 16, 0],
+    "position" : [0, 0],
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.5,
+    "fade" : 1,
+    "layer" : "middle",
+    "fullbright" : true,
+    "timeToLive" : 0.5,
+    "variance" : {
+      "initialVelocity" : [1.0, 1.0],
+      "size" : 0.5,
+      "position" : [0, 0]
+    }
+  }
+}

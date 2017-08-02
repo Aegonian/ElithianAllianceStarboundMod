@@ -1,0 +1,30 @@
+{
+  "itemName" : "drodenfossil1",
+  "rarity" : "Uncommon",
+  "itemTags" : ["fossil"],
+
+  "description" : "A fossilised Droden head.",
+  "category" : "mediumFossil",
+
+  "shortdescription" : "Droden Head",
+  "race" : "droden",
+  "price" : 50,
+
+  "inventoryIcon" : "drodenfossil1icon.png",
+
+  "completeSetDescriptions" : {
+    "price" : 1500,
+    "shortdescription" : "Droden Fossil",
+    "description" : "A fossiled Droden frame. Very little of the wiring remains."
+  },
+
+  "displayImage" : "/objects/fossils/humanoidfossils/fossildroden/drodenskulldisplay.png",
+  "displayoffset" :[0, 0],
+
+  "fossilSetName" : "drodenSkeleton",
+  "setIndex" : 1,
+  "setCount" : 3,
+  "setCollectables" : { "fossils" : "drodenSkeleton" },
+
+  "completeFossilIcon" : "/objects/fossils/humanoidfossils/humanoidskeletonicon.png"
+}

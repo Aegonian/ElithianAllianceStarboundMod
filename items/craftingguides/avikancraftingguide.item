@@ -1,0 +1,468 @@
+{
+  "itemName" : "avikancraftingguide",
+  "price" : 2500,
+  "rarity" : "Legendary",
+  "inventoryIcon" : "avikancraftingguide.png",
+  "description" : "A guide to Avikan crafting. Unlocks most Avikan crafting recipes, regardless of race.",
+  "shortdescription" : "^#BA66FF;Avikan Crafting Guide^white;",
+  "category" : "Crafting Guide",
+  "learnBlueprintsOnPickup" : [
+	
+//New in v2.2.3
+	  "avikancargodoor",
+	  "avikanthickhatch",
+	  "avikanthickhatchplatform",
+	
+//New in v2.2.2
+	  "drodenmannequin",
+	  "avikanwallswitch",
+	  "avikanflare",
+	  "avikanglowstick",
+	  "avikanrefugeteleporter",
+	  "avikanrailhook",
+	  "avikanrailtram",
+	  "avikanrailplatform",
+	  "avikanslopedglass",
+	  "avikandarkrail",
+	  "avikanrail",
+	  "avikanrailcrafting",
+	  "avikanshippingcontainer",
+	  "avikansprinkler",
+	
+//New in v2.2.1
+	  "avikanslopedpanel",
+	  "avikanvanguardtapestry",
+	  "avikanvanguardtapestry1",
+	  "avikanweaponrack",
+	  "avikanstoragelocker",
+	
+//New in v2.1.6
+	  "avikanshippanel",
+	  "avikancookingstove",
+	
+//New in v2.1.5
+	  "avikanshiprailing",
+	  "avikan-tier6slegs",
+	  "avikanspotlight",
+	  "avikanlargepressureplate",
+	  "avikanmedicalsyringe",
+	  "avikanmedicalkit",
+	  "avikanbandage",
+	  "droden-pistol",
+	  "droden-assaultrifle",
+	  "droden-sniperrifle",
+	  "avikanturret",
+	  "avikanmissileturret",
+	  "avikanshieldgenerator",
+	  "avikanalarm",
+	  "avikanmedcabinet",
+	  "avikankeypad",
+	  "avikanweaponchest",
+	  "avikanpettether",
+	  "avikanpethealingstation",
+	  "avikan-nomadashortbow",
+	
+//New in v2.1.4
+	  "avikanhatch",
+	  "avikanhatchplatform",
+	  "avikanshipdoor",
+	  "avikanshiplight",
+	  "avikanstatuegod",
+	  "avikanstoreshelf",
+	  "avikanstairsplatform",
+	  "avikanthickstairsplatform",
+	  "avikanhoe",
+	  "avikanwateringsack",
+	  "avikanmarketstallmodern",
+	  "avikanbutton",
+	  "avikansmallbutton",
+	  "avikanpressureplate",
+	
+// Empty Hands
+       "avikanclimbingrope",
+       "avikaninventor",
+       "flagavikan",
+	  
+// Avikan Furnace 1
+       "avikandarkmetal",
+	  "avikanmetal",
+	  "avikancircuitry",
+	  "avikandyes",
+	  "avikanglassitem",
+	  "avikanpurpledyes",
+	  "connectorstrip",
+	  
+// Avikan Furnace 2
+	  "avikanmetaltier5",
+	  "avikanmetaltier6",
+	  "avikanbattery",
+	  "avikanmacrochip",
+	  "avikanvolatileliquid",
+	  
+// Avikan Inventor 1
+	  "avikanbonecrafting",
+	  "avikancookingplate",
+	  "avikanfurnace",
+	  "avikanleathercrafting",
+	  "drodenframecrafting",
+	  "avikanbreathprotectionback",
+	  "avikancoldprotectionback",
+	  "avikanradiationprotectionback",
+	  "avikantier2beacon",
+	  "avikantier3beacon",
+	  "avikantier4beacon",
+	  
+// Avikan Inventor 2
+	  "avikancookingstation",
+	  "avikanmetalcrafting",
+	  "avikanheatprotectionback",
+	  "avikantier5beacon",
+	  "avikantier6beacon",
+	  "avikantiervanguardbeacon",
+	  
+// Bonecrafting 1
+	//Armour
+	  "avikan-tier1chest",
+	  "avikan-tier1head",
+	  "avikan-tier1legs",
+	  "avikan-tier2chest",
+	  "avikan-tier2head",
+	  "avikan-tier2legs",
+	  
+	//Consumables
+	  "avikanjavelin",
+	  "avikanspiketrap",
+	  "avikansandbomb",
+	  
+	//Furniture
+	  "avikanbonetable",
+	  "avikanbonetable2",
+	  "avikandrink",
+	  "avikanfoodplate",
+	  "avikanmannequin",
+	  "avikanspearrack",
+	  "avikantrough",
+	  
+	//Weapons
+	  //Hunting
+	  "avikanhuntingknife",
+	  "avikan-tier1bow",
+	  "avikantier2huntingspear",
+	  //Tier 1
+	  "avikanboneshield",
+	  "avikantier1axe",
+	  "avikantier1broadsword",
+	  "avikantier1dagger",
+	  "avikantier1hammer",
+	  "avikantier1shortsword",
+	  "avikantier1spear",
+	  //Tier 2
+	  "avikantier2axe",
+	  "avikantier2broadsword",
+	  "avikantier2dagger",
+	  "avikantier2hammer",
+	  "avikantier2shortsword",
+	  "avikantier2spear",
+	  
+// Bonecrafting 2
+	//Armour
+	  "avikanquiver",
+	  "avikan-tier3chest",
+	  "avikan-tier3head",
+	  "avikan-tier3legs",
+	  "avikan-tier4chest",
+	  "avikan-tier4head",
+	  "avikan-tier4legs",
+	  
+	//Consumables
+	  "avikanjavelin2",
+	  "avikanpoisonspiketrap",
+	  "avikantarspiketrap",
+	  
+	//Furniture
+	  //EMPTY
+	  
+	//Weapons
+	  //Hunting
+	  "avikan-tier3bow",
+	  "avikantier4huntingspear",
+	  //Tier 3
+	  "avikantier3axe",
+	  "avikantier3broadsword",
+	  "avikantier3dagger",
+	  "avikantier3hammer",
+	  "avikantier3shortsword",
+	  "avikantier3spear",
+	  //Tier 4
+	  "avikantier4axe",
+	  "avikantier4broadsword",
+	  "avikantier4dagger",
+	  "avikantier4hammer",
+	  "avikantier4shortsword",
+	  "avikantier4spear",
+	  
+// Leathercrafting 1
+	//Furniture
+	  //Tent Obects
+	  "avikanbed",
+	  "avikachair",
+	  "avikanchest",
+	  "avikancurtain",
+	  "avikanflagtapestry",
+	  "avikanlargechair",
+	  "avikanlongcurtain",
+	  "avikantapestry",
+	  "avikantapestry1",
+	  "avikantapestryroll",
+	  "avikantapestryrolls",
+	  "avikantent",
+	  "avikantentdoor",
+	  "avikanwatersack",
+	  "avikanwidetapestry",
+	  //Tent Parts
+	  "avikancanopy",
+	  "avikanentry",
+	  "avikanopencanopy",
+	  "avikansheet",
+	  "avikantalltenttop",
+	  "avikantentside",
+	  "avikantenttop",
+	  "avikantenttopmid",
+	  
+	//Ingredients
+	  "avikanstring",
+	  "monsterleather",
+	  
+	//Materials
+	  "avikandecoleather",
+	  "avikanleather",
+	  "avikantentpole",
+	  
+// Leathercrafting 2
+	//Furniture
+	  //Tent Obects
+	  "avikanclothtapestry",
+	  "avikanpurpletapestry",
+	  "avikanpurpletapestry1",
+	  "avikantentdoor2",
+	  "avikantentdoor3",
+	  //Tent Parts
+	  "avikanentry2",
+	  "avikanentry3",
+	  "avikansidecanopy",
+	  "avikansmallsheet",
+	  "avikantallcanopy",
+	  "avikantalltenttop2",
+	  "avikantalltenttop3",
+	  "avikantentside2",
+	  "avikantenttop2",
+	  "avikantenttop3",
+	  "avikantenttopflat",
+	  
+	//Ingredients
+	  "avikancloth",
+	  "avikanpurplecloth",
+	  
+	//Materials
+	  "avikanfabric",
+	  "avikanfabrictentpole",
+	  "avikanpurplefabric",
+	  "avikanpurplefabrictentpole",
+	  
+// Metalcrafting
+	//Armour
+	  //Accelerator
+	  "avikan-tier5achest",
+	  "avikan-tier5ahead",
+	  "avikan-tier5alegs",
+	  "avikan-tier6achest",
+	  "avikan-tier6ahead",
+	  "avikan-tier6alegs",
+	  //Manipulator
+	  "avikan-tier5mchest",
+	  "avikan-tier5mhead",
+	  "avikan-tier5mlegs",
+	  "avikan-tier6mchest",
+	  "avikan-tier6mhead",
+	  "avikan-tier6mlegs",
+	  //Seperator
+	  "avikan-tier5schest",
+	  "avikan-tier5shead",
+	  "avikan-tier5slegs",
+	  "avikan-tier6schest",
+	  "avikan-tier6shead",
+	  //Uncategorized
+	  "avikanmodernquiver",
+	  
+	//Consumables
+	  "avikanexplosive",
+	  "avikanthrowablegrenade",
+	  
+	//Furniture
+	  //Displays
+	  "avikanharpoondisplay",
+	  "avikanlinerifledisplay",
+	  "avikanpistoldisplay",
+	  "avikanrifledisplay",
+	  "avikanrocketdisplay",
+	  //Misc
+	  "avikandecorativeplant",
+	  "avikandecorativeplant2",
+	  "avikanexplosivebarrel",
+	  "avikanfoodbox",
+	  "avikangem",
+	  "avikanmarketstallempty",
+	  "avikanmarketstallfood",
+	  "avikanmarketstallleather",
+	  "avikanmarketstallsmall",
+	  "avikanmarketstallwater",
+	  "avikanmarketstallweapons",
+	  "avikanstand",
+	  "avikantallgem",
+	  //Modern Objects
+	  "avikanantenna",
+	  "avikanantenna2",
+	  "avikanblastdoor",
+	  "avikancomputer",
+	  "avikancrane",
+	  "avikancrate",
+	  "avikancratecovered",
+	  "avikangenerator",
+	  "avikangroundlight",
+	  "avikanhoverbikecovered",
+	  "avikanlargecontainer",
+	  "avikanlargecrate",
+	  "avikanlargeshipconsole",
+	  "avikanlightorb",
+	  "avikanlightstrip",
+	  "avikanlightstrip2",
+	  "avikanmodernbed",
+	  "avikanmodernchair",
+	  "avikanmodernchest",
+	  "avikanmodernspearrack",
+	  "avikanmoderntable",
+	  "avikanmoderntable2",
+	  "avikanmonitor",
+	  "avikanpillar",
+	  "avikanshelf",
+	  "avikanshipchair",
+	  "avikanshipconsole",
+	  "avikanslimtable",
+	  "avikansmallcontainer",
+	  "avikansmalllightorb",
+	  "avikansmallwatercontainer",
+	  "avikanswitch",
+	  "avikanvaultdoor",
+	  "avikanvehiclejumpgate",
+	  "avikanwallchest",
+	  "avikanwatercontainer",
+	  "avikanfridge",
+	  
+	//Ingredients
+	  "avikancapacitor",
+	  "avikancoreenergetic",
+	  "avikancorepowerful",
+	  "avikancorevigorous",
+	  "avikanmagazine",
+	  "avikantransmitter",
+	  "avikanvibrocore",
+	  "remotejumpgatecontroller",
+	  
+	//Materials
+	  "avikandarkgroundpanel",
+	  "avikandarkpanel",
+	  "avikanfarmpanel",
+	  "avikanfence",
+	  "avikanglass",
+	  "avikangroundpanel",
+	  "avikanheavypipe",
+	  "avikanpanel",
+	  "avikanplating",
+	  "avikanpowerpanel",
+	  "avikanshipfloor",
+	  "avikansmoothpanel",
+	  "avikansupportpanel",
+	  "avikanthickpipebottom",
+	  "avikanthickpipetop",
+	  //Platforms
+	  "avikandarkplatform",
+	  "avikanplatform",
+	  "avikanthickplatform",
+	  
+	//Weapons
+	  //Hunting
+	  "avikan-harpoongun",
+	  "avikanhuntingknife2",
+	  "avikan-nomadabow",
+	  "avikantier6huntingspear",
+	  //Melee Tier 5
+	  "avikanmetalshield",
+	  "avikantier5axe",
+	  "avikantier5broadsword",
+	  "avikantier5dagger",
+	  "avikantier5hammer",
+	  "avikantier5shortsword",
+	  "avikantier5spear",
+	  //Melee Tier 6
+	  "avikantier6axe",
+	  "avikantier6broadsword",
+	  "avikantier6dagger",
+	  "avikantier6hammer",
+	  "avikantier6shortsword",
+	  "avikantier6spear",
+	  "drodenlongsword",
+	  "drodenshortsword",
+	  //Ranged Tier 5
+	  "avikan-assaultrifle",
+	  "avikan-shotgun",
+	  "avikan-skiprifle",
+	  //Ranged Tier 5
+	  "avikan-assaultrifle2",
+	  "avikan-rocketlauncher",
+	  "avikan-sniperirlfe",
+	  "avikan-tier6linerifle",
+	  //Uncategorized
+	  "avikangrapplinghook",
+	  
+// Frame Crafting 1
+	  "droden-tier1chest",
+	  "droden-tier1head",
+	  "droden-tier1legs",
+	  "droden-tier2chest",
+	  "droden-tier2head",
+	  "droden-tier2legs",
+	  
+// Frame Crafting 2
+	  "droden-tier3chest",
+	  "droden-tier3head",
+	  "droden-tier3legs",
+	  "droden-tier4chest",
+	  "droden-tier4head",
+	  "droden-tier4legs",
+	  
+// Frame Crafting 3
+	//Accelerator
+	  "droden-tier5achest",
+	  "droden-tier5ahead",
+	  "droden-tier5alegs",
+	  "droden-tier6achest",
+	  "droden-tier6ahead",
+	  "droden-tier6alegs",
+	//Manipulator
+	  "droden-tier5mchest",
+	  "droden-tier5mhead",
+	  "droden-tier5mlegs",
+	  "droden-tier6mchest",
+	  "droden-tier6mhead",
+	  "droden-tier6mlegs",
+	//Seperator
+	  "droden-tier5schest",
+	  "droden-tier5shead",
+	  "droden-tier5slegs",
+	  "droden-tier6schest",
+	  "droden-tier6shead",
+	  "droden-tier6slegs"
+	
+    ],
+  "itemTags" : [ "craftingguide" ]
+}

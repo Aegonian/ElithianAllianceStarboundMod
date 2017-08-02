@@ -1,0 +1,51 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "shield" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "recharge" : {
+            "frames" : 8,
+            "cycle" : 0.6,
+            "mode" : "loop"
+          },
+          "on" : {
+            "frames" : 8,
+            "cycle" : 0.6,
+            "mode" : "loop"
+          }
+        }
+      }
+    },
+    "parts" : {
+      "shield" : {
+        "properties" : {
+          "zLevel" : 0,
+		  "fullbright" : true
+        },
+        "partStates" : {
+          "shield" : {
+            "recharge" : {
+              "properties" : {
+                "image" : "thea-forceshield.png:recharge.<frame>"
+              }
+            },
+            "on" : {
+              "properties" : {
+                "image" : "thea-forceshield.png:on.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [72, 108, 128]
+    }
+  }
+}

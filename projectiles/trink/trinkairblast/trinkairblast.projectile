@@ -1,0 +1,18 @@
+{
+  "projectileName" : "trinkairblast",
+  "physics" : "laser",
+  "bounces" : 3,
+  "timeToLive" : 6,
+  "damageKindImage" : "icon.png",
+  "image" : "trinkairblast.png",
+  "animationCycle" : 0.3,
+  "frameNumber" : 3,
+  "power" : 50,
+  "speed" : 70,
+  //"supportsProcessing" : true,
+  //"lightColor" : [10, 10, 10],
+  "emitters" : [ "trinkairblasttrail" ],
+  "piercing" : true,
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "damageKind" : "default"
+}

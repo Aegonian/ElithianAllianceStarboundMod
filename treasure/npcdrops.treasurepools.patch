@@ -1,0 +1,258 @@
+[	
+  //AVIKAN DROP POOLS
+  {"op" : "add",
+   "path" : "/avikanDeathTreasure",
+   "value" : [
+   
+	[0, {
+      "pool" : [
+        {"weight" : 0.5, "pool" : "money"},
+        {"weight" : 0.1, "item" : "avikanmeatchunk"},
+        {"weight" : 0.1, "item" : "dunebun"},
+        {"weight" : 0.1, "item" : "bolbohnjam"},
+        {"weight" : 0.1, "item" : "kadavancactusjuice"},
+        {"weight" : 0.1, "item" : "avikanspices"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+	
+   ]
+  },
+  {"op" : "add",
+   "path" : "/avikanGuardDeathTreasure",
+   "value" : [
+   
+	[0, {
+      "pool" : [
+        {"weight" : 0.5, "pool" : "money"},
+        {"weight" : 0.2, "item" : "monsterhide"},
+        {"weight" : 0.2, "item" : "monsterbone"},
+        {"weight" : 0.1, "pool" : "avikanboneweapondrops"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+	
+   ]
+  },
+  {"op" : "add",
+   "path" : "/avikanSoldierDeathTreasure",
+   "value" : [
+   
+	[0, {
+      "pool" : [
+        {"weight" : 0.5, "pool" : "money"},
+        {"weight" : 0.2, "item" : "avikanmetal"},
+        {"weight" : 0.2, "item" : "avikantransmitter"},
+        {"weight" : 0.1, "pool" : "avikangeneratedweapons"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+	
+   ]
+  },
+  {"op" : "add",
+   "path" : "/avikanRogueDeathTreasure",
+   "value" : [
+   
+	[0, {
+      "pool" : [
+        {"weight" : 0.4, "pool" : "money"},
+        {"weight" : 0.3, "item" : [ "avikanmerittoken", 3 ]},
+        {"weight" : 0.05, "item" : "avikan-roguehead"},
+        {"weight" : 0.05, "item" : "avikan-roguechest"},
+        {"weight" : 0.05, "item" : "avikan-roguelegs"},
+        {"weight" : 0.05, "item" : "avikan-roguehead2"},
+        {"weight" : 0.05, "item" : "avikan-roguechest2"},
+        {"weight" : 0.05, "item" : "avikan-roguelegs2"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+	
+   ]
+  },
+  {"op" : "add",
+   "path" : "/avikanRogueCaptainDeathTreasure",
+   "value" : [
+   
+	[0, {
+      "pool" : [
+        {"weight" : 0.4, "pool" : "money"},
+        {"weight" : 0.4, "item" : [ "avikanmerittoken", 5 ]},
+        {"weight" : 0.1, "item" : "avikan-roguecaptainhead"},
+        {"weight" : 0.1, "item" : "avikan-roguecaptainchest"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+	
+   ]
+  },
+  
+  //DRODEN DROP POOLS
+  {"op" : "add",
+   "path" : "/drodenDeathTreasure",
+   "value" : [
+   
+	[0, {
+      "pool" : [
+        {"weight" : 0.5, "pool" : "money"},
+        {"weight" : 0.3, "item" : "avikanmetal"},
+        {"weight" : 0.2, "item" : "avikancircuitry"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+	
+   ]
+  },
+  {"op" : "add",
+   "path" : "/drodenViolatedDeathTreasure",
+   "value" : [
+   
+	[0, {
+      "pool" : [
+        {"weight" : 0.55, "pool" : "money"},
+		{"weight" : 0.2, "item" : "theleantissue"},
+		{"weight" : 0.1, "item" : "theleanmetal"},
+		{"weight" : 0.05, "item" : "drodenviolatedlongsword"},
+		{"weight" : 0.05, "item" : "drodenviolatedshortsword"},
+		{"weight" : 0.05, "item" : "droden-violatedrifle"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+	
+   ]
+  },
+  
+  //TRINKIAN DROP POOLS
+  {"op" : "add",
+   "path" : "/trinkDeathTreasure",
+   "value" : [
+   
+	[0, {
+      "pool" : [
+        {"weight" : 0.5, "pool" : "money"},
+        {"weight" : 0.3, "item" : "trinkmetal"},
+        {"weight" : 0.1, "item" : "trinkelectronics"},
+		{"weight" : 0.1, "item" : "trinkbraincore"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+	
+   ]
+  },
+  {"op" : "add",
+   "path" : "/trinkGuardDeathTreasure",
+   "value" : [
+   
+	[0, {
+      "pool" : [
+        {"weight" : 0.5, "pool" : "money"},
+        {"weight" : 0.2, "item" : "trinkmetal"},
+        {"weight" : 0.1, "item" : "trinkelectronics"},
+		{"weight" : 0.1, "item" : "trinkbraincore"},
+		{"weight" : 0.1, "pool" : "trinkweapons"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+	
+   ]
+  },
+  {"op" : "add",
+   "path" : "/trinkEngineerDeathTreasure",
+   "value" : [
+   
+	[0, {
+      "pool" : [
+        {"weight" : 0.5, "pool" : "money"},
+        {"weight" : 0.1, "item" : "trinkmetal"},
+        {"weight" : 0.1, "item" : "trinkelectronics"},
+		{"weight" : 0.1, "item" : "trinkbraincore"},
+		{"weight" : 0.2, "item" : "trink-wrench"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+	
+   ]
+  },
+  {"op" : "add",
+   "path" : "/trinkWelderDeathTreasure",
+   "value" : [
+   
+	[0, {
+      "pool" : [
+        {"weight" : 0.5, "pool" : "money"},
+        {"weight" : 0.1, "item" : "trinkmetal"},
+        {"weight" : 0.1, "item" : "trinkelectronics"},
+		{"weight" : 0.1, "item" : "trinkbraincore"},
+		{"weight" : 0.2, "item" : "trink-weldingtorch"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+	
+   ]
+  },
+  
+  //THELEAN DROP POOLS
+  {"op" : "add",
+   "path" : "/theleanDeathTreasure",
+   "value" : [
+   
+	[0, {
+      "pool" : [
+        {"weight" : 0.7, "pool" : "money"},
+		{"weight" : 0.2, "item" : "theleantissue"},
+		{"weight" : 0.1, "item" : "theleanmetal"}
+      ],
+      "poolRounds" : [
+        [0.80, 0],
+        [0.20, 1]
+      ],
+      "allowDuplication" : false
+    }]
+	
+   ]
+  }
+]

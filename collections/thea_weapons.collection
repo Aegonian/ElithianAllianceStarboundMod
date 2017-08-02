@@ -1,0 +1,274 @@
+{
+  "name" : "thea_weapons",
+  "title" : "Unique Weapons",
+  "type" : "generic",
+
+  "collectables" : {
+	//AVIKAN WEAPONS
+    "avikan-thellhuntersbow" : {
+      "order" : 1,
+      "title" : "Thellhunter's Bow",
+      "description" : "A weapon once held by the Thellhunter of legend.",
+      "icon" : "/items/active/weapons/ranged/unique/thellhuntersbow/avikan-thellhuntersbowicon.png"
+    },
+    "avikan-terveleadersbow" : {
+      "order" : 2,
+      "title" : "Terveleader's Bow",
+      "description" : "A versatile linerifle worthy of a true Terve leader.",
+      "icon" : "/items/active/weapons/ranged/unique/terveleadersbow/avikan-terveleadersbowicon.png"
+    },
+    "avikan-nulldrivevector" : {
+      "order" : 3,
+      "title" : "Null-Drive Vector",
+      "description" : "A linerifle using a unique drive for near-instant charging.",
+      "icon" : "/items/active/weapons/ranged/unique/nulldrivevector/avikan-nulldrivevectoricon.png"
+    },
+    "avikan-errasslayerslance" : {
+      "order" : 4,
+      "title" : "Errasslayer's Lance",
+      "description" : "A unique line rifle built to decimate the Errasmeyr.",
+      "icon" : "/items/active/weapons/ranged/unique/errasslayerslance/avikan-errasslayerslanceicon.png"
+    },
+    "avikan-primeinitiative" : {
+      "order" : 5,
+      "title" : "Prime Initiative",
+      "description" : "A massively powerful linerifle built to rip through enemy lines.",
+      "icon" : "/items/active/weapons/ranged/unique/primeinitiative/avikan-primeinitiativeicon.png"
+    },
+    "avikan-jumpfireprotocol" : {
+      "order" : 6,
+      "title" : "Jumpfire Protocol",
+      "description" : "A unique weapon built using Centensian and Avikan tech.",
+      "icon" : "/items/active/weapons/ranged/unique/jumpfireprotocol/avikan-jumpfireprotocolicon.png"
+    },
+    "avikan-sandcannon" : {
+      "order" : 7,
+      "title" : "Desert's Embrace",
+      "description" : "A merciless stream of sand to keep your enemies at bay.",
+      "icon" : "/items/active/weapons/ranged/unique/sandcannon/avikan-sandcannonicon.png"
+    },
+    "avikan-sandstalkersbane" : {
+      "order" : 8,
+      "title" : "Sandstalker's Bane",
+      "description" : "This grand bow fires arrows which shatter on impact.",
+      "icon" : "/items/active/weapons/ranged/unique/sandstalkersbane/avikan-sandstalkersbaneicon.png"
+    },
+    "avikan-airstrike" : {
+      "order" : 9,
+      "title" : "Vanguard OTS.M-12",
+      "description" : "A laser linked to the ship's Orbital Targeting System.",
+      "icon" : "/items/active/weapons/ranged/unique/airstrike/avikan-airstrike.png"
+    },
+    "avikan-vhaleihanspear" : {
+      "order" : 10,
+      "title" : "Vha'leihan Spear",
+      "description" : "An ancient spear powered by a shard of the Xanafir.",
+      "icon" : "/items/active/weapons/melee/unique/vhaleihanspear/avikan-vhaleihanspear.png"
+    },
+    "avikanteslaspear" : {
+      "order" : 11,
+      "title" : "Bone Coil Spear",
+      "description" : "A bone spear built around an electric shock generator.",
+      "icon" : "/items/active/weapons/melee/unique/avikanteslaspear/avikanteslaspear.png"
+    },
+    "zaheedsword" : {
+      "order" : 12,
+      "title" : "Zaheed's Sword",
+      "description" : "A modified Droden longsword used by commander Zaheed.",
+      "icon" : "/items/active/weapons/melee/unique/zaheedsword/zaheedswordicon.png"
+    },
+	//DRODEN WEAPONS
+    "drodenlegion" : {
+      "order" : 13,
+      "title" : "Legion",
+      "description" : "A pre-Exodus switchgear blade, made for the Droden Legion.",
+      "icon" : "/items/active/weapons/melee/unique/drodenlegion/drodenlegion.png"
+    },
+	//CENTENSIAN WEAPONS
+    "centens-deathseeker" : {
+      "order" : 14,
+      "title" : "Deathseeker",
+      "description" : "A mysterious weapon that fires enemy-seeking orbs.",
+      "icon" : "/items/active/weapons/ranged/unique/deathseeker/centens-deathseekericon.png"
+    },
+	"avikan-handofrhadeis" : {
+      "order" : 15,
+      "title" : "Hand of Rhadeis",
+      "description" : "A weapon said to have been held by Rhadeis himself.",
+      "icon" : "/items/active/weapons/ranged/unique/handofrhadeis/avikan-handofrhadeisicon.png"
+    },
+	"centens-sundrainer" : {
+      "order" : 16,
+      "title" : "Sun Drainer",
+      "description" : "An ancient weapon that drains stars for power.",
+      "icon" : "/items/active/weapons/ranged/unique/sundrainer/centens-sundrainericon.png"
+    },
+	"centens-voideater" : {
+      "order" : 17,
+      "title" : "Void Eater",
+      "description" : "An ancient weapon built to bend space-time.",
+      "icon" : "/items/active/weapons/ranged/unique/voideater/centens-voideater.png"
+    },
+	//TRINKIAN WEAAPONS
+	"trink-shockbolter" : {
+      "order" : 18,
+      "title" : "SDL-02 Shockbolter",
+      "description" : "A reverse-engineered Thelean design built to shock foes.",
+      "icon" : "/items/active/weapons/ranged/unique/shockbolter/trink-shockboltericon.png"
+    },
+	"trinkprimecircuit" : {
+      "order" : 19,
+      "title" : "Prime Circuit",
+      "description" : "An eletric prod powered by an overcharged generator.",
+      "icon" : "/items/active/weapons/melee/unique/primecircuit/trinkprimecircuit.png"
+    },
+	"trink-frostlaser" : {
+      "order" : 20,
+      "title" : "DS-03 FROST",
+      "description" : "An ice-cold laser that freezes its targets solid.",
+      "icon" : "/items/active/weapons/ranged/unique/frostlaser/trink-frostlaser.png"
+    },
+	"trink-energizer" : {
+      "order" : 21,
+      "title" : "HL-5 Energizer",
+      "description" : "An energy rifle built for tactical incursions.",
+      "icon" : "/items/active/weapons/ranged/unique/energizer/trink-energizericon.png"
+    },
+	//NEW WEAPONS - v2.1.5
+	"avikan-ayurinswrath" : {
+      "order" : 22,
+      "title" : "Ayurin's Wrath",
+      "description" : "A Vanguard Missile Pod modified by Ayurin.",
+      "icon" : "/items/active/weapons/ranged/unique/ayurinswrath/avikan-ayurinswrath.png"
+    },
+	"avikan-violator" : {
+      "order" : 23,
+      "title" : "Violation Protocol",
+      "description" : "An Ion Cannon enhanced with Thelean technology.",
+      "icon" : "/items/active/weapons/ranged/unique/violator/avikan-violator.png"
+    },
+	"avikan-hallakhantooth" : {
+      "order" : 24,
+      "title" : "Tooth of Halla'Khan",
+      "description" : "A bow ground down from a tooth of Halla'Khan.",
+      "icon" : "/items/active/weapons/ranged/unique/hallakhantooth/avikan-hallakhantoothicon.png"
+    },
+	"avikan-vhelinsrifle" : {
+      "order" : 25,
+      "title" : "Vhelin's Command",
+      "description" : "A reproduction of Ilyalat Ande Vhelin's legendary weapon.",
+      "icon" : "/items/active/weapons/ranged/unique/vhelinsrifle/avikan-vhelinsrifleicon.png"
+    },
+	"thea-tributesword" : {
+      "order" : 26,
+      "title" : "Blade of the Elithian",
+      "description" : "An ultra-sharp blade forged in tribute to Elithia.",
+      "icon" : "/items/active/weapons/melee/unique/tributesword/thea-tributesword.png"
+    },
+	//NEW WEAPONS - v2.1.6
+	"avikan-guardbreakersbow" : {
+      "order" : 27,
+      "title" : "Guardbreaker's Bow",
+      "description" : "A linerifle built for elite Vanguard troops.",
+      "icon" : "/items/active/weapons/ranged/unique/guardbreakersbow/avikan-guardbreakersbow.png"
+    },
+	"centens-voiceofrhadeis" : {
+      "order" : 28,
+      "title" : "Voice of Rhadeis",
+      "description" : "A Centensian weapon which can adapt to any situation.",
+      "icon" : "/items/active/weapons/ranged/unique/voiceofrhadeis/centens-voiceofrhadeis.png"
+    },
+	"avikan-corruptorsbow" : {
+      "order" : 29,
+      "title" : "Corruptor's Bow",
+      "description" : "A linerifle corrupted by Thelean vesomeyr.",
+      "icon" : "/items/active/weapons/ranged/unique/corruptorsbow/avikan-corruptorsbow.png"
+    },
+	"avikan-architect" : {
+      "order" : 30,
+      "title" : "The Architect",
+      "description" : "A linerifle built using Centensian compononents.",
+      "icon" : "/items/active/weapons/ranged/unique/architect/avikan-architect.png"
+    },
+	"avikan-rhakorilongbow" : {
+      "order" : 31,
+      "title" : "Rhakori Longbow",
+      "description" : "A longbow built by the clans of the Rhakori Highlands.",
+      "icon" : "/items/active/weapons/ranged/unique/rhakorilongbow/avikan-rhakorilongbowicon.png"
+    },
+	"avikan-vhalakinbow" : {
+      "order" : 32,
+      "title" : "Vhalakin Bow",
+      "description" : "A linebow built by the secluded clans of Vhalakis.",
+      "icon" : "/items/active/weapons/ranged/unique/vhalakinbow/avikan-vhalakinbowicon.png"
+    },
+	"trink-arclighter" : {
+      "order" : 33,
+      "title" : "SDL-05 Arclighter",
+      "description" : "A close-range electric weapon capable of dealing massive sustained damage.",
+      "icon" : "/items/active/weapons/ranged/unique/arclighter/trink-arclighter.png"
+    },
+	//NEW WEAPONS - v2.2.0
+	"thea-sidewinder" : {
+      "order" : 34,
+      "title" : "Sidewinder",
+      "description" : "A classic revolver-style sidearm using a conventional magazine.",
+      "icon" : "/items/active/weapons/ranged/unique/sidewinder/thea-sidewindericon.png"
+    },
+	"thea-skylighter" : {
+      "order" : 35,
+      "title" : "Skylighter",
+      "description" : "A classic revolver-style sidearm using a conventional magazine.",
+      "icon" : "/items/active/weapons/ranged/unique/skylighter/thea-skylightericon.png"
+    },
+	"thea-excalibur" : {
+      "order" : 36,
+      "title" : "Excalibur",
+      "description" : "A grand Aevis crafted in honor of the Taemera family.",
+      "icon" : "/items/active/weapons/melee/unique/excalibur/thea-excaliburicon.png"
+    },
+	"centens-eventhorizon" : {
+      "order" : 37,
+      "title" : "Event Horizon",
+      "description" : "The point of no return embodied in a powerful weapon.",
+      "icon" : "/items/active/weapons/ranged/unique/eventhorizon/centens-eventhorizonicon.png"
+    },
+	"thea-tributebow" : {
+      "order" : 38,
+      "title" : "Bow of the Elithian",
+      "description" : "A powerful bow crafted in tribute to Elithia.",
+      "icon" : "/items/active/weapons/ranged/unique/tributebow/thea-tributebowicon.png"
+    },
+	"avikan-linebreaker" : {
+      "order" : 39,
+      "title" : "Linebreaker",
+      "description" : "A heavy weapon housing multiple linecharge systems.",
+      "icon" : "/items/active/weapons/ranged/unique/linebreaker/avikan-linebreaker.png"
+    },
+	"avikan-oathbreaker" : {
+      "order" : 40,
+      "title" : "Oathbreaker's Sorrow",
+      "description" : "A shotgun firing a single devastating slug.",
+      "icon" : "/items/active/weapons/ranged/unique/oathbreaker/avikan-oathbreaker.png"
+    },
+	//NEW WEAPONS - v2.2.2
+	"avikan-vhalakinlongbow" : {
+      "order" : 41,
+      "title" : "Vhalakin Longbow",
+      "description" : "A heavy linebow built by the secluded clans of Vhalakis.",
+      "icon" : "/items/active/weapons/ranged/unique/vhalakinlongbow/avikan-vhalakinlongbowicon.png"
+    },
+	"trink-debilitator" : {
+      "order" : 42,
+      "title" : "SB-4 Debilitator",
+      "description" : "A massive shock baton built to incapacitate enemies.",
+      "icon" : "/items/active/weapons/melee/unique/debilitator/trink-debilitatoricon.png"
+    },
+	"centens-wrathofrhadeis" : {
+      "order" : 43,
+      "title" : "Wrath of Rhadeis",
+      "description" : "A hammer wielding the strength of a Centensian god.",
+      "icon" : "/items/active/weapons/melee/unique/wrathofrhadeis/centens-wrathofrhadeisicon.png"
+    }
+  }
+}

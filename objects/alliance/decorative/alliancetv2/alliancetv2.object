@@ -1,0 +1,64 @@
+{
+  "objectName" : "alliancetv2",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "description" : "A TV showing an Alliance Network news channel.",
+  "shortdescription" : "Alliance TV",
+  "race" : "aegi",
+  "printable" : false,
+  "category" : "decorative",
+  "price" : 200,
+  
+  "lightColor" : [148, 148, 148],
+  "flickerDistance" : 0.2,
+  "flickerStrength" : 0.05,
+  "flickerTiming" : 4,
+
+  "apexDescription" : "A TV playing a news channel.",
+  "avianDescription" : "A TV tuned to a news network.",
+  "floranDescription" : "Sscreen showss pretty sscenes.",
+  "glitchDescription" : "Excited. The locations shown on this channel are beautiful!",
+  "humanDescription" : "I would like to visit the places shown on this channel.",
+  "hylotlDescription" : "A news channel, with pictures of beautiful locations.",
+  "novakidDescription" : "A news channel, boring...",
+
+  "aegiDescription" : "This TV is tuned to an Alliance Network news channel.",
+  "avikanDescription" : "An alien monitor showing pictures of various locations. Wait, is that an Avikan colony?",
+  "erixianDescription" : "An Alliance Network television.",
+  "trinkDescription" : "This TV is stuck on a single channel.",
+  "hymidDescription" : "Let's just watch some television!",
+  "notixDescription" : "A TV showing a news channel, I think.",
+  "jorgasianDescription" : "This TV is stuck on a news channel...",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien monitor. Forwarding information to the Vanguard.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "alliancetv2.png:<color>.on",
+      "imagePosition" : [-16, -8],
+      "direction" : "right",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+      "fgAnchors" : [ [-1, -2], [0, -2] ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/outpostmonitor_static.ogg",
+
+  "animation" : "alliancetv2.animation",
+  "animationParts" : {
+    "bg" : "alliancetv2.png",
+    "fg" : "alliancetv2lit.png"
+  },
+  "animationPosition" : [-16, -8],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+
+  "inputNodes" : [ [0, 0] ]
+
+}

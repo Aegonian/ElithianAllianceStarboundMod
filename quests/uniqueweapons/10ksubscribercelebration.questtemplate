@@ -1,0 +1,22 @@
+{
+  "id" : "10ksubscribercelebration",
+  "prerequisites" : [ "destroyruin" ],
+  "title" : "^orange;A Special Gift",
+  "text" : "It seems you've made friends somewhere! I've got a special delivery for you, courtesy of an Aegi who wouldn't share their name, but who greatly appreciates your continued support. Enjoy your present!",
+  "completionText" : "I received a special gift from an Aeginian friend. Let's open it!",
+  "moneyRange" : [2500, 2500],
+  "rewards" : [
+    [ [ "celebratorycache", 1 ] ]
+  ],
+  "canBeAbandoned" : false,
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/thea-autocomplete.lua",
+  "scriptConfig" : {
+	"portraits" : {
+      "questStarted" : "questGiver",
+	  "questComplete" : "player"
+    },
+    "requireTurnIn" : false
+  }
+}

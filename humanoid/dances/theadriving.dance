@@ -1,0 +1,12 @@
+{
+  "name" : "theadriving",
+  "states" : ["idle","sit"],
+  "cycle" : 1.0,
+  "cyclic" : true,
+  "duration" : 4.0,
+  "steps" : [
+    // body, frontArm, backArm, headOffset, frontArmOffset, backArmOffset
+    [ null, "rotation", "rotation", [0, 0], [0, -1], [0, -2] ],
+    [ null, "rotation", "rotation", [0, 0], [0, -2], [0, -1] ]
+  ]
+}

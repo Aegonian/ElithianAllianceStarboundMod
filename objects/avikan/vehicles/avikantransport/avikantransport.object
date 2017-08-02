@@ -1,0 +1,45 @@
+{
+  "objectName" : "avikantransportobject",
+  "colonyTags" : ["avikan", "commerce"],
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 2500,
+  "description" : "An Avikan-built vehicle for transporting cargo.",
+  "shortdescription" : "Avikan Transport",
+  "race" : "avikan",
+  
+  "apexDescription" : "A big and bulky hovering transport vehicle.",
+  "avianDescription" : "A hovering transport vehicle... Where are the wings?",
+  "floranDescription" : "Floran puts goodsss into flying box, then Floran fliess away!",
+  "glitchDescription" : "Impressed. This hovering vehicle has a far greater carrying capacity than a mechanical horse.",
+  "humanDescription" : "A hovering transport vehicle... What's it carrying?",
+  "hylotlDescription" : "A hovering cargo transport. It flies with grace.",
+
+  "aegiDescription" : "Like most Avikan vehicles, this cargo transport hovers using Centensian technology.",
+  "avikanDescription" : "The vehicle of choice for transporting cargo between Terves in the desert.",
+  "erixianDescription" : "A heavy vehicle, but its Centensian-inspired hover drive negates this disadvantage.",
+  "trinkDescription" : "Hovering transport vehicles are an efficient tool for moving cargo.",
+  "hymidDescription" : "This vehicle uses hover technology first used by the Gods.",
+  "notixDescription" : "Few environemnts are too harsh for this vehicle. A true feat of engineering.",
+  "jorgasianDescription" : "A hovering cargo transport vehicle. It probably uses Centensian hover technology.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Nomada Cargo Transport. Analysis: cargo crates empty.",
+
+  "inventoryIcon" : "avikantransporticon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikantransport.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

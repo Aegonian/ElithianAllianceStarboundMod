@@ -1,0 +1,65 @@
+{
+  "itemName" : "thelean-tendril",
+  "level" : 4,
+  "price" : 1500,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "Theleans can extend their electric tendrils to attack enemies.",
+  "shortdescription" : "Thelean Tendril",
+  "tooltipKind" : "base",
+  "category" : "Tendril",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","melee","thelean","tendril"],
+
+  "inventoryIcon" : "thelean-tendrilicon.png",
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "thelean-tendril.png",
+    "barrel" : "",
+    "muzzleFlash" : ""
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/gun/wormgun1.ogg", "/sfx/gun/wormgun2.ogg", "/sfx/gun/wormgun3.ogg" ]
+    }
+  },
+  "baseOffset" : [0.0, 0.0],
+  "muzzleOffset" : [0.0, 0.0],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "physical",
+  
+  //Makes the weapon draw in front of the arm
+  "handGrip" : "wrap",
+
+  "primaryAbilityType" : "tentaclegun",
+  "primaryAbility" : {
+    "chain" : {
+      "taper" : 0.5,
+      "segmentImage" : "/items/active/weapons/melee/thelean/tendril/tendrilsegment.png",
+      "endSegmentImage" : "/items/active/weapons/melee/thelean/tendril/tendrilend.png",
+      "segmentSize" : 1.0
+    },
+
+    "guideProjectiles" : true,
+    "maxLength" : 15,
+
+    "baseDamage" : 6.0,
+    "fireTime" : 0.2,
+    "maxProjectiles" : 2,
+    "energyUsage" : 40,
+    "inaccuracy" : 0.01,
+
+    "projectileType" : "invisibletentaclefist",
+    "projectileParameters" : {
+      "knockback" : 5,
+      "speed" : 40,
+      "timeToLive" : 3
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

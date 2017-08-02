@@ -1,0 +1,46 @@
+{
+  "objectName" : "centenscubes",
+  "colonyTags" : ["centens"],
+  "rarity" : "Rare",
+  "description" : "Simplistic metal cubes, but with an enthralling aura.",
+  "shortdescription" : "Centensian Cubes",
+  "race" : "centens",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 450,
+
+  "apexDescription" : "Simple metal cubes, but there's something enthralling about them.",
+  "avianDescription" : "There is something oddly enthralling about these cubes.",
+  "floranDescription" : "Floran sstaress at cubes. Floran doess not know why...",
+  "glitchDescription" : "Enthralled. These cubes have something mysterious to them.",
+  "humanDescription" : "I don't know why, but I'm finding it hard to get my eyes off these cubes.",
+  "hylotlDescription" : "Somehow, these cubes make me feel serene. They're enthralling.",
+  "novakidDescription" : "I'm oddly entrhalled by these simple cubes... What is this magic?",
+
+  "aegiDescription" : "Metal cubes, built by the Centens. They are oddly enthralling...",
+  "avikanDescription" : "These artefacts of the Old Ones are enthralling. I just keep staring at them.",
+  "erixianDescription" : "I can't say why, but these cubes are incredibly enthralling...",
+  "trinkDescription" : "My systems are picking up an odd interference around these cubes.",
+  "hymidDescription" : "These relics of the Gods are enthralling. I just want to stare at them.",
+  "notixDescription" : "I feel something odd when near these cubes. It is enthralling, somehow.",
+  "jorgasianDescription" : "I don't know why, but all I want to do is stare at these cubes...",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "theleanDescription" : "TODO",
+  "drodenDescription" : "Detected Centensian artefacts. Error. Error. Error.",
+
+  "inventoryIcon" : "centenscubesicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "centenscubes.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

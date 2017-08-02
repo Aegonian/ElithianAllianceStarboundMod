@@ -1,0 +1,56 @@
+{
+  "objectName" : "avikanmodernbed",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "description" : "A modern, heavy bed.",
+  "shortdescription" : "Avikan Bed",
+  "race" : "avikan",
+  "category" : "furniture",
+  "printable" : false,
+  "price" : 60,
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : true,
+  "sitPosition" : [-6, 9],
+  "sitOrientation" : "lay",
+  "sitAngle" : 90,
+  "sitEmote" : "sleep",
+  "sitStatusEffects" : [
+    "bed3"
+  ],
+  "sitEffectEmitters" : [ "sleepbubbles" ],
+
+  "apexDescription" : "A leather bed. Quite comfortable, somehow.",
+  "avianDescription" : "A leather bed. Surpisingly comfortable.",
+  "floranDescription" : "Bedsss for sssleeping!",
+  "glitchDescription" : "Surprised. This primitive leather bed is quite comfortable.",
+  "humanDescription" : "A primitive but comfortable leather bed. Time for a nap!",
+  "hylotlDescription" : "This leather bed is surprisingly comfortable.",
+
+  "aegiDescription" : "A comfortable leather bed.",
+  "avikanDescription" : "A leather sheet covering piles of raw leather. It makes me think of home.",
+  "erixianDescription" : "A leather bed. Quite comfortable.",
+  "trinkDescription" : "A simple leather bed.",
+  "hymidDescription" : "A leather bed. It's better than it looks.",
+  "notixDescription" : "A simple leather bed.",
+  "jorgasianDescription" : "A leather bed.",
+  "centensDescription" : "Interesting. Leather is used for almost all items made by Avikan nomads.",
+  "dremetonDescription" : "A simple leather bed. It's better than it looks.",
+  "theleanDescription" : "Sleep is for the weak.",
+  "drodenDescription" : "This unit does not require rest.",
+
+  "inventoryIcon" : "avikanmodernbedicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanmodernbed.png:<color>",
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

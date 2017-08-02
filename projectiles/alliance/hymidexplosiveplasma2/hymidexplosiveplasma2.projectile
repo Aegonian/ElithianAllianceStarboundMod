@@ -1,0 +1,27 @@
+{
+  "projectileName" : "hymidexplosiveplasma2",
+  "physics" : "laser",
+  "bounces" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "hymidexplosiveplasma2.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 5,
+  "speed" : 130,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/hymidplasmaexplosion/hymidplasmaexplosion.config"
+    }
+  ],
+  "lightColor" : [0, 75, 100],
+  "fullbright" : true,
+  //"damageType" : "NoDamage",
+  "damageKind" : "default",
+  "hydrophobic" : false,
+  
+  "scripts" : [ "/projectiles/scripts/thea-randomspeedprojectile.lua" ],
+  "minSpeed" : 120,
+  "maxSpeed" : 140
+}

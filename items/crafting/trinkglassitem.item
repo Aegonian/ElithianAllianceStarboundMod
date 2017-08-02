@@ -1,0 +1,10 @@
+{
+  "itemName" : "trinkglassitem",
+  "price" : 3,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "trinkglassitem.png",
+  "description" : "A strong pane of glass used for crafting.",
+  "shortdescription" : "Trinkian Glass",
+  "itemTags" : [ "reagent" ]
+}

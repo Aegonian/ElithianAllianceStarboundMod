@@ -1,0 +1,46 @@
+{
+  "animatedParts" : {
+    "parts" : {
+      "background" : {
+        "properties" : {
+          "zLevel" : 0,
+          "offset" : [0, 0],
+          "centered" : true,
+          "image" : "<partImage>"
+        }
+      },
+
+      "door" : {
+        "properties" : {
+          "zLevel" : 1,
+          "offset" : [-5.5, 0],
+          "centered" : true,
+          "image" : "<partImage>",
+          "transformationGroups" : ["door"],
+		  "hingePoint" : [0, 5.5],
+		  "hingePointFlipped" : [11.0, 5.5]
+        }
+      },
+	  
+	  "foreground" : {
+        "properties" : {
+          "zLevel" : 2,
+          "offset" : [0, 0],
+          "centered" : true,
+          "image" : "<partImage>"
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "door" : {
+      "interpolated" : true
+    }
+  },
+
+  "sounds" : {
+	"close" : [ "/sfx/objects/avikancargodoor_close2.ogg" ],
+	"openingLoop" : [ "/sfx/objects/avikancargodoor_loop.ogg" ]
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "itemName" : "thelean-minigun",
+  "price" : 800,
+  "inventoryIcon" : "thelean-minigun.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A powerful Thelean minigun.",
+  "shortdescription" : "Cre'vath", //Translates to: Overlord
+  "level" : 6,
+  "tooltipKind" : "thea-minigun",
+  "category" : "Flux Rifle",
+  "itemTags" : ["weapon","ranged","minigun","thelean"],
+  "twoHanded" : true,
+  
+  "cursor" : "/cursors/thea-largereticle.cursor",
+
+  "animation" : "thelean-minigun.animation",
+  "animationParts" : {
+    "middle" : "thelean-minigun.png",
+    "middleFullbright" : "thelean-minigunlights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/theleanmuzzle.png",
+    "charge" : "thelean-miniguncharge.png",
+    "chargeLights" : "thelean-minigunchargelights.png",
+	"chargehold" : "thelean-miniguncharge.png",
+	"chargeholdLights" : "thelean-minigunchargelights.png"
+  },
+  "animationCustom" : {
+	"animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.0, -0.625]
+		  }
+		},
+		"charge" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.0, -0.625]
+		  }
+		},
+		"chargeLights" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.0, -0.625]
+		  }
+		},
+		"chargehold" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.0, -0.625]
+		  }
+		},
+		"chargeholdLights" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.0, -0.625]
+		  }
+		}
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/plasma_mp1.ogg" ],
+	  "chargeLoop" : [ "/sfx/melee/charge_up8.ogg" ],
+	  "holdLoop" : [ "/sfx/objects/camera_pan_loop.ogg" ],
+	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
+    }
+  },
+
+  "baseOffset" : [1.0, -0.625],
+  "muzzleOffset" : [0.5, 0.2],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-minigun.lua"],
+    "class" : "TheaMinigun",
+
+    "fireTime" : 0.07,
+    "baseDps" : 14.0,
+    "energyUsage" : 80.0,
+    "inaccuracy" : 0.085,
+	
+	"chargeTime" : 1.6,
+	"resetTime" : 0.8,
+	
+	"walkWhileFiring" : true,
+
+    "projectileType" : "theleanseekingbulletsmall",
+	"projectileCount" : 1,
+	"projectileParameters" : { 
+      "knockback" : 2
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "charge" : {
+        "armRotation" : -2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "armRotation" : 6,
+        "weaponRotation" : 6,
+	    "weaponOffset" : [-0.15, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.05,
+        "armRotation" : 6,
+        "weaponRotation" : 6,
+	    "weaponOffset" : [-0.15, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "discharge" : {
+        "duration" : 0.1,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+	}
+  },
+
+  "builder" : "/items/buildscripts/thea-buildminigun.lua"
+}

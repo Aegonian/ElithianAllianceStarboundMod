@@ -1,0 +1,28 @@
+{
+  "materialId" : 30062,
+  "materialName" : "trinksupportpanel",
+  "particleColor" : [85, 85, 85, 255],
+  "itemDrop" : "trinksupportpanel", 
+  "shortdescription" : "Trinkian Support Beam",
+  
+  "description" : "A metal support beam.",
+  "glitchDescription" : "Impressed. This metal beam can hold a lot of weight.",
+  "floranDescription" : "Floran can't bend metal beamsss. Floran not happy.",
+  "novakidDescription" : "A big bad support beam. Isn't gonna come down anytime soon.",
+  
+  "drodenDescription" : "Analysis complete. Structural support beam.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "trinksupportpanel.png",
+    "variants" : 3,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 100
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "avikanhoverbikeobject", "count" : 1 },
+	{ "item" : "monsterleather", "count" : 1 }
+  ],
+  "output" : { "item" : "avikanhoverbikecovered", "count" : 1 },
+  "groups" : [ "avikanmetalcrafting", "metalfurniture", "all" ]
+}

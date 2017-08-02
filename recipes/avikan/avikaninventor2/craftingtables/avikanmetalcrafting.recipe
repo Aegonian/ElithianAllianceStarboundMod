@@ -1,0 +1,14 @@
+{
+  "input" : [
+    { "item" : "monsterplate", "count" : 6 },
+	{ "item" : "avikanmetal", "count" : 10 },
+    { "item" : "avikandarkmetal", "count" : 5 },
+    { "item" : "avikanmacrochip", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "avikanmetalcrafting",
+    "count" : 1
+  },
+  "duration" : 5,
+  "groups" : [ "avikaninventor2", "craftingstations", "all" ]
+}

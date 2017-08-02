@@ -1,0 +1,18 @@
+{
+  "id" : "avikanrhadeis7",
+  "species" : "avikan",
+  "title" : "Rhadeis - Part 7",
+  "description" : "Notes on Rhadeis, by Izyati as-Kaladan.",
+  "icon" : "avikanrhadeis7.png",
+  "contentPages" : [
+
+	"There is much we still do not know or understand about Rhadeis, and the Old Ones in general, but I hope that this short scroll at least helped you understand who Rhadeis is, and how much he means to our people.
+
+Rhadeis guide your path, dear reader."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "itemName" : "avikantarspiketrap",
+  "price" : 7,
+  "rarity" : "Common",
+  "category" : "throwableItem",
+  "inventoryIcon" : "avikantarspiketrapicon.png",
+  "image" : "avikantarspiketrap.png",
+  "shortdescription" : "Tarred Spike Trap",
+  "description" : "Sharp spikes that damage and slow down enemies passing over them.",
+
+  "ammoUsage" : 1,
+
+  "edgeTrigger" : true,
+  "windupTime" : 0.0,
+  "cooldown" : 0.4,
+
+  "projectileType" : "avikantarspikes",
+  "projectileConfig" : {
+	"speed" : 25,
+    "power" : 5,
+    "periodicActions" : [
+      {
+        "time" : 0,
+        "repeat" : false,
+        "action" : "sound",
+        "options" : [ "/sfx/projectiles/throw_item.ogg" ]
+      }
+    ]
+  }
+}
+

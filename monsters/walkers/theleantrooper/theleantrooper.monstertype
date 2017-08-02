@@ -1,0 +1,227 @@
+{
+  "type" : "theleantrooper",
+  "shortdescription" : "Thelean Trooper",
+  "description" : "A common Thelean footsoldier.",
+
+  "categories" : [ "theleantrooper" ],
+  "parts" : [ "body", "arm" ],
+
+  "animation" : "theleantrooper.animation",
+
+  "dropPools" : [],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+
+    "behavior" : "monster",
+
+    "behaviorConfig" : {
+      "damageOnTouch" : false,
+
+      "queryTargets" : true,
+      "targetQueryRange" : 100,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : true,
+      "keepTargetInRange" : 200,
+      "targetOutOfSightTime" : 10.0,
+
+      "foundTargetActions" : [],
+
+      "fleeActions" : [],
+
+      "hostileActions" : [
+		{
+          "name" : "action-fire",
+          "cooldown" : 4.0,
+          "parameters" : {
+            //General Config
+			"requireLineOfSight" : true,
+            "faceTarget" : true,
+            "maximumRange" : 70,
+            "minimumRange" : 2,
+			
+			//Windup
+            "windupTime" : 1.0,
+			"windupStateType" : "arm",
+            "windupState" : "windup",
+
+			//Projectile
+            "projectileType" : "theleanseekingbullet",
+            "projectileCount" : 4,
+			"projectileInterval": 0.2,
+            "projectileParameters" : {
+              "power" : 20
+            },
+            "fireDelay" : 0.0,
+			
+			//Aiming
+            "rotateAim" : true,
+			"holdAim": false,	//If true, will keep the aimDirection of the first shot when firing multiple shots
+            "fireSound" : "fire",
+			"fireStateType": "arm",
+            "fireState" : "fire",
+			"fireParticleBurst": "",
+			"fireOffset" : [3.5, -0.25],
+            "rotationCenter" : [-0.625, -1.375],
+			"fireArc": false,
+			"highArc": false,
+
+			//Winddown
+            "winddownState" : "winddown",
+			"winddownStateType" : "arm",
+            "winddownTime" : 1.0,
+			"winddownStopForce": 0.5
+          }
+        }
+	  ],
+
+      "periodicActions" : [],
+
+      "approachActions" : [
+		{
+          "name" : "approach-walk",
+          "parameters" : {
+            "canJump" : false,
+            "maxJumps" : 6,
+            "jumpXVelocity" : 12,
+            "jumpYVelocity" : 30,
+            "jumpXControlForce" : 50,
+            "minXRange" : 10
+          }
+        }
+	  ],
+
+      "followActions" : [
+        {
+          "name" : "approach-teleport",
+          "parameters" : {
+          }
+        },
+        {
+          "name" : "approach-walk",
+          "parameters" : {
+            "canJump" : true,
+            "maxJumps" : 6,
+            "jumpXVelocity" : 12,
+            "jumpYVelocity" : 30,
+            "jumpXControlForce" : 50,
+            "minXRange" : 10
+          }
+        }
+      ],
+
+      "wanderActions" : []
+    },
+    
+    "damageParts" : {
+      "body" : {
+        "damage" : 0,
+
+        "teamType" : "enemy",
+        "damageSourceKind" : "slash",
+        "knockback" : 20,
+        "statusEffects" : [ ]
+      }
+    },
+
+    "touchDamage" : {
+      "poly" : [[-2.0, -3.0], [-2.0, 1.0], [-1.0, 2.0], [1.0, 2.0], [2.0, 1.0], [2.0, -3.0], [0.5, -5.25], [-0.5, -5.25]],
+      "damage" : 13,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "slash",
+      "knockback" : 20,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-4, -4, 4, 4],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [[-2.0, -3.0], [-2.0, 1.0], [-1.0, 2.0], [1.0, 2.0], [2.0, 1.0], [2.0, -3.0], [0.5, -5.25], [-0.5, -5.25]],
+
+      "mass" : 4,
+      "walkSpeed" : 7,
+      "runSpeed" : 7,
+
+	  "airFriction" : 0.5,
+	  "liquidFriction" : 20.0,
+	  "groundFriction" : 50.0,
+
+      "airJumpProfile" : {
+        "jumpSpeed" : 35.0,
+        "jumpInitialPercentage" : 1.0,
+        "jumpHoldTime" : 0.0
+      }
+    },
+
+    "bodyMaterialKind" : "organic",
+
+    "knockoutTime" : 0.3,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "organic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.25
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 9
+        },
+        "maxHealth" : {
+          "baseValue" : 180
+        },
+        "protection" : {
+          "baseValue" : 0.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+        "quicksandImmunity" : {
+          "baseValue" : 1.0
+        },
+        "bleedingImmunity" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -8],
+    "capturable" : false
+  }
+}

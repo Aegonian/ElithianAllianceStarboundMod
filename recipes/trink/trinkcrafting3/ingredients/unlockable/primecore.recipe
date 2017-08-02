@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "electriccomponent", "count" : 25 },
+	{ "item" : "trinkmetaltier6", "count" : 5 },
+	{ "item" : "trinkpowercore", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "primecore",
+    "count" : 1
+  },
+  "duration" : 0.15,
+  "groups" : [ "trinkcrafting3", "ingredients", "all" ]
+}

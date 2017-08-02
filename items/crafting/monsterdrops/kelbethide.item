@@ -1,0 +1,10 @@
+{
+  "itemName" : "kelbethide",
+  "price" : 150,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "kelbethide.png",
+  "description" : "A Kelbet's fur, an illegal luxury in most Union territories.",
+  "shortdescription" : "Kelbet Hide",
+  "itemTags" : [ "reagent" ]
+}

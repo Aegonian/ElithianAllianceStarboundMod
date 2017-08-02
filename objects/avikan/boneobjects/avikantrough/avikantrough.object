@@ -1,0 +1,45 @@
+{
+  "objectName" : "avikantrough",
+  "colonyTags" : ["avikan","avikanherder"],
+  "rarity" : "Common",
+  "description" : "A bone trough, for feeding livestock and mounts.",
+  "shortdescription" : "Avikan Bone Trough",
+  "race" : "avikan",
+  "category" : "decorative",
+  "price" : 100,
+
+  "apexDescription" : "A bone trough full of food and water.",
+  "avianDescription" : "This trough is full of raw food. Great for livestock, but bad for people.",
+  "floranDescription" : "Floran ssmell food. Floran eatsss food?",
+  "glitchDescription" : "Confused. Why is this trough made of bone?",
+  "humanDescription" : "Livestock and mounts come to eat and drink here.",
+  "hylotlDescription" : "This trough is used to feed livestock and mounts.",
+  "novakidDescription" : "A perfect place to feed a mighty steed. Or just livestock.",
+
+  "aegiDescription" : "A traditional Avikan-made trough. They use it to feed their Gad'hur.",
+  "avikanDescription" : "The Gad'hur kept by our clans are fed using these troughs.",
+  "erixianDescription" : "A simple bone trough, full of raw food.",
+  "trinkDescription" : "A primitive bone trough.",
+  "hymidDescription" : "This bone trough is used to feed mounts. Livestock too, probably.",
+  "notixDescription" : "A trough for feeding mounts and livestock.",
+  "jorgasianDescription" : "A trough full of raw food.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected trough. Contains food for mounts.",
+
+  "inventoryIcon" : "avikantroughicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikantrough.png:<color>",
+
+      "imagePosition" : [-16, -0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name" : "light",
+  "category" : "trangii",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "light.png"
+  }
+}

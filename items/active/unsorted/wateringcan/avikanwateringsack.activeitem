@@ -1,0 +1,36 @@
+{
+  "itemName" : "avikanwateringsack",
+  "price" : 50,
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "category" : "tool",
+  "description" : "A primitive but effective way to water your crops.",
+  "shortdescription" : "Avikan Watering Sack",
+  "tooltipKind" : "base",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "avikanwateringsack.png",
+
+  "animation" : "avikanwateringsack.animation",
+  "animationParts" : {
+    "wateringcan" : "avikanwateringsack.png"
+  },
+  "animationCustom" : { },
+
+  "scripts" : ["wateringcan.lua"],
+
+  "waterTime" : 0.4,
+  "waterAngle" : 10,
+
+  "cooldownTime" : 1.0,
+
+  "projectileRate" : 0.05,
+  "projectileInaccuracy" : 0.4,
+  "projectileType" : "watersprinkledroplet",
+  "projectileParameters" : {
+    "speed" : 12,
+    "power" : 0,
+    "timeToLive" : 5,
+    "color" : [10, 255, 10]
+  }
+}

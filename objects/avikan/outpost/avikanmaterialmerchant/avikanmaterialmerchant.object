@@ -1,0 +1,50 @@
+{
+  "objectName" : "avikanmaterialmerchant",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Legendary",
+  "printable" : false,
+  "description" : "It seems I can exchange my materials for tokens of merit here.",
+  "shortdescription" : "Nomada Token Exchange",
+  "race" : "avikan",
+  
+  "floranDescription" : "Floran give materialss, Floran getsss tokenss here!",
+  "glitchDescription" : "Informed. This merchant will exchange my materials for tokens of merit.",
+  "novakidDescription" : "I reckon this fella will give me tokens of merit for my materials.",
+  
+  "avikanDescription" : "This Droden will exchange my materials for tokens of merit.",
+  "drodenDescription" : "Merchant detected. Offers tokens of merit for exchanged materials.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "avikanmaterialmerchant.png:<frame>",
+      "direction" : "right",
+
+      "imagePosition" : [0, 0],
+      "frames" : 20,
+      "animationCycle" : 1.6,
+
+	  "spaces" : [
+        [2, 3], [3, 3],
+        [2, 2], [3, 2],
+        [2, 1], [3, 1],
+        [2, 0], [3, 0]
+      ],
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+  "objectType" : "container",
+
+  "openSounds" : [ "/sfx/humanoid/droden_chatter_2.ogg" ],
+  "closeSounds" : [ "/sfx/humanoid/droden_chatter_1.ogg" ],
+  "frameCount" : 1,
+  "slotCount" : 16,
+  "uiConfig" : "/interface/scripted/avikanmaterialmerchant/avikanmaterialmerchantgui.config",
+  "frameCooldown" : 5,
+  "openFrameIndex" : 1,
+  "autoCloseCooldown" : 3600,
+
+  "scripts" : [ "/objects/avikan/outpost/avikanmaterialmerchant/avikanmaterialmerchant.lua" ],
+  "scriptDelta" : 5
+}

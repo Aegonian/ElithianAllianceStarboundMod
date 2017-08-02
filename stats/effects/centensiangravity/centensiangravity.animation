@@ -1,0 +1,23 @@
+{
+  "particleEmitters" : {
+    "particles" : {
+      "enabled" : true,
+      "emissionRate" : 8.0,
+      "particles" : [
+        {
+          "particle" : "centensgravity"
+        }
+      ]
+    }
+  },
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [33, 0, 127]
+    }
+  },
+  "sounds" : {
+    "shock" : [ "/sfx/projectiles/linerifle_shock.ogg" ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "itemName" : "trinkhoverpodcontroller",
+  "level" : 1,
+  "price" : 15000,
+  "rarity" : "Rare",
+  "category" : "vehicleController",
+  "description" : "Summons a Hoverpod from your ship's cargo hold.",
+  "shortdescription" : "Hoverpod Controller",
+  "twoHanded" : true,
+  "maxStack" : 1,
+  "itemTags" : ["vehiclecontroller"],
+
+  "animation" : "thea-vehiclecontroller.animation",
+  "scripts" : ["vehiclecontroller.lua"],
+  "animationScripts" : ["vehiclecursor.lua"],
+  "filled" : true,
+  "tooltipKind" : "vehicle",
+  "largeImage" : "/vehicles/trink/trinkhoverpod/trinkhoverpod.png",
+
+  "respawnTime" : 1.0,
+
+  "vehicleType" : "trinkhoverpod",
+  "vehicleBoundingBox" : [-4.25, -2.25, 4.75, 2.25],
+  "vehicleImage" : "/vehicles/trink/trinkhoverpod/trinkhoverpod.png",
+
+  "animationParts" : {
+    "casing" : "trinkhoverpodcontroller.png"
+  },
+
+  "inventoryIcon" : "trinkhoverpodcontroller.png:full",
+  "emptyInventoryIcon" : "/items/active/vehiclecontroller/trinkhoverpodcontroller.png:empty",
+  "filledInventoryIcon" : "/items/active/vehiclecontroller/trinkhoverpodcontroller.png:full"
+
+}

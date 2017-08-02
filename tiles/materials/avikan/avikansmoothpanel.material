@@ -1,0 +1,28 @@
+{
+  "materialId" : 30030,
+  "materialName" : "avikansmoothpanel",
+  "particleColor" : [215, 184, 137, 255],
+  "itemDrop" : "avikansmoothpanel", 
+  "shortdescription" : "Smooth Avikan Panel",
+  
+  "description" : "Smoothly polished metal plating.",
+  "glitchDescription" : "Curious. Why does this panel have such a sand-like appearance?",
+  "floranDescription" : "Floran findsss it hard to see difference with sssand...",
+  "novakidDescription" : "Someone tried real hard to make this metal look like sand.",
+  
+  "drodenDescription" : "Analysis complete. Metal panel.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "avikansmoothpanel.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 50
+  }
+}

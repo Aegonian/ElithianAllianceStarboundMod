@@ -1,0 +1,206 @@
+{
+  "itemName" : "avikan-vhalakinbow",
+  "price" : 1500,
+  "level" : 6,
+  "inventoryIcon" : "avikan-vhalakinbowicon.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "tooltipKind" : "thea-bow-unique",
+  "category" : "Linebow",
+  "description" : "^orange;A linebow built by the secluded clans of Vhalakis.",
+  "shortdescription" : "^orange;Vhalakin Bow^white;",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","avikan","theaUnique"],
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "avikan-vhalakinbow" },
+  
+  "meritTokenValue" : 100,
+  
+  "cursor" : "/cursors/thea-linebowreticle.cursor",
+
+  "animation" : "avikan-vhalakinbow.animation",
+  "animationParts" : {
+    "bow" : "avikan-vhalakinbow.png",
+	"lights" : "avikan-vhalakinbowlights.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+	  "parts" : {
+		"bow" : {
+		  "properties" : {
+			"offset" : [0.15, 0]
+		  }
+		},
+		"lights" : {
+		  "properties" : {
+			"offset" : [0.15, 0]
+		  }
+		}
+	  }
+	},
+    "sounds" : {
+      "draw" : [ "/sfx/gun/thea_linebow_draw2.ogg" ],
+      "fullyDrawnLoop" : [ "/sfx/gun/thea_linebow_loop.ogg" ],
+      "release" : [ "/sfx/gun/thea_linebow_fire.ogg" ],
+	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
+    }
+  },
+  "animationScripts" : ["/items/active/effects/thea-doublelightning.lua"],
+  
+  "muzzleOffset" : [1.125, 0.125],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-linebowshot.lua"],
+    "class" : "TheaLineBowShot",
+
+	"drawTime" : 1.1,
+	"baseDamage" : 8,
+    "energyPerShot" : 30,
+    "cooldownTime" : 0.4,
+    "inaccuracy" : 0.01,
+	
+	"walkWhileFiring" : false,
+
+    "drawArmFrames" : ["rotation", "swim.2", "swimIdle.1"],
+	"animationTime" : 0.15, //How quickly we should alternate between the final two frames when fully drawn
+	
+	//Config for the lightning/charging animation
+	
+	//Amount of steps for the lightning charge. Weapon automatically cycles through these over the weapon's chargeTime
+	"drawLevels" : 3,
+	"minimumDrawFrame" : 2,
+	// [amount, width, forks, displacement, color, startOffset, endOffset]
+	"lightningChargeLevels" : [
+      [1, 0.9, 0, 0.15, [255, 106, 0, 150], [-1.25, 1.125], [-1.25, 0.125]],
+      [1, 0.9, 0, 0.20, [255, 136, 0, 200], [-1.25, 1.125], [-1.50, 0.125]],
+      [1, 0.9, 0, 0.30, [255, 190, 0, 255], [-1.25, 1.125], [-1.75, 0.125]]
+    ],
+	"lightningChargeLevels2" : [
+      [1, 0.9, 0, 0.15, [255, 106, 0, 150], [-1.25, -1.125], [-1.25, -0.125]],
+      [1, 0.9, 0, 0.20, [255, 136, 0, 200], [-1.25, -1.125], [-1.50, -0.125]],
+      [1, 0.9, 0, 0.30, [255, 190, 0, 255], [-1.25, -1.125], [-1.75, -0.125]]
+    ],
+	//Amount: amount of lightning bolts to draw
+	//Width: Width of the bolts
+	//Forks: How many times the bolts should fork away from the main bolt
+	//Displacement: How far the bolts should deviate from being a straight line
+	//Color: Colour of the lightning bolts
+	//Start Offset: Offset for the lightning origin position, relative to muzzleOffset
+	//End Offset: Offset for the lightning target position, relative to muzzleOffset
+
+    "projectileType" : "linebowarrow",
+	"powerProjectileType" : "linebowarrow",
+	"usePowerProjectile" : false,
+    "projectileParameters" : {
+	  "knockback" : 8
+	},
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : -30,
+        "weaponRotation" : 0,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "draw" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "fire" : {
+        "duration" : 0.2,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true,
+
+        "frontArmFrame" : "idle.3"
+      }
+    }
+  },
+  
+  "altAbility" : {
+	"name" : "Triple Shot",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-linebowshot.lua"],
+    "class" : "TheaLineBowShot",
+
+	"drawTime" : 1.1,
+	"baseDamage" : 3,	//Per arrow!
+    "energyPerShot" : 45,
+    "cooldownTime" : 0.4,
+    "inaccuracy" : 0.075,
+	
+	"walkWhileFiring" : false,
+
+    "drawArmFrames" : ["rotation", "swim.2", "swimIdle.1"],
+	"animationTime" : 0.15, //How quickly we should alternate between the final two frames when fully drawn
+	
+	//Config for the lightning/charging animation
+	
+	//Amount of steps for the lightning charge. Weapon automatically cycles through these over the weapon's chargeTime
+	"drawLevels" : 3,
+	"minimumDrawFrame" : 2,
+	// [amount, width, forks, displacement, color, startOffset, endOffset]
+	"lightningChargeLevels" : [
+      [1, 0.9, 0, 0.15, [255, 106, 0, 150], [-1.25, 1.125], [-1.25, 0.125]],
+      [1, 0.9, 0, 0.20, [255, 136, 0, 200], [-1.25, 1.125], [-1.50, 0.125]],
+      [1, 0.9, 0, 0.30, [255, 190, 0, 255], [-1.25, 1.125], [-1.75, 0.125]]
+    ],
+	"lightningChargeLevels2" : [
+      [1, 0.9, 0, 0.15, [255, 106, 0, 150], [-1.25, -1.125], [-1.25, -0.125]],
+      [1, 0.9, 0, 0.20, [255, 136, 0, 200], [-1.25, -1.125], [-1.50, -0.125]],
+      [1, 0.9, 0, 0.30, [255, 190, 0, 255], [-1.25, -1.125], [-1.75, -0.125]]
+    ],
+	//Amount: amount of lightning bolts to draw
+	//Width: Width of the bolts
+	//Forks: How many times the bolts should fork away from the main bolt
+	//Displacement: How far the bolts should deviate from being a straight line
+	//Color: Colour of the lightning bolts
+	//Start Offset: Offset for the lightning origin position, relative to muzzleOffset
+	//End Offset: Offset for the lightning target position, relative to muzzleOffset
+
+    "projectileType" : "linebowarrow",
+	"powerProjectileType" : "linebowarrow",
+	"usePowerProjectile" : false,
+	"projectileCount" : 3,
+    "projectileParameters" : {
+	  "knockback" : 8
+	},
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : -30,
+        "weaponRotation" : 0,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "draw" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "fire" : {
+        "duration" : 0.2,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true,
+
+        "frontArmFrame" : "idle.3"
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/thea-buildlinebow.lua"
+}

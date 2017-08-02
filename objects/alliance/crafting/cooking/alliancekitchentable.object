@@ -1,0 +1,57 @@
+{
+  "objectName" : "alliancekitchentable",
+  "colonyTags" : ["alliance", "cooking"],
+  "printable" : false,
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "category" : "crafting",
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/craftingfood.config",
+	"paneLayoutOverride" : {
+	  "windowtitle" : {
+		"title" : " Kitchen Counter"
+	  }
+	},
+    "filter" : [ "craftingfood" ]
+  },
+  "description" : "A basic kitchen counter, complete with pans, dishes and more.",
+  "shortdescription" : "^orange;Alliance Kitchen Counter^white;",
+  "race" : "aegi",
+
+  "apexDescription" : "A kitchen counter.",
+  "avianDescription" : "Pans, dishes, a sink, what more do I need?",
+  "floranDescription" : "Floran makess food here.",
+  "glitchDescription" : "Annoyed. I don't want to do the dishes.",
+  "humanDescription" : "A kitchen counter, pans, dishes - it looks like home!",
+  "hylotlDescription" : "A kitchen counter.",
+  "novakidDescription" : "Let's do some cookin' already!",
+
+  "aegiDescription" : "A kitchen counter with everything I need to prepare a meal.",
+  "avikanDescription" : "I might be able to prepare some food here, even with these alien tools.",
+  "erixianDescription" : "A basic kitchen counter.",
+  "trinkDescription" : "A kitchen counter of Aeginian design.",
+  "hymidDescription" : "I could prepare some food here.",
+  "notixDescription" : "I should probably stop for a minute and make myself some food.",
+  "jorgasianDescription" : "A kitchen counter",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected traces of organic food. Analysis: kitchen equipment.",
+  
+  "inventoryIcon" : "alliancekitchentableicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "alliancekitchentable.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "npcToy" : {}
+}

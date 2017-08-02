@@ -1,0 +1,15 @@
+{
+  "itemName" : "greatmonsterbone",
+  "price" : 500,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "greatmonsterbone.png",
+  "description" : "High quality bones from an alien monster.",
+  "shortdescription" : "Great Monster Bone",
+  "itemTags" : [ "reagent" ],
+  
+  "radioMessagesOnPickup" : [ "pickupgreatmonsterbone" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 8
+}

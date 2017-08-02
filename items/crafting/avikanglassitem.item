@@ -1,0 +1,10 @@
+{
+  "itemName" : "avikanglassitem",
+  "price" : 3,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "avikanglassitem.png",
+  "description" : "A strong pane of glass used for crafting.",
+  "shortdescription" : "Avikan Glass",
+  "itemTags" : [ "reagent" ]
+}

@@ -1,0 +1,13 @@
+{
+  "itemName" : "ghavorkanpowercell",
+  "price" : 350,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "ghavorkanpowercell.png",
+  "description" : "A power cell torn from a Ghavorkan's body.",
+  "shortdescription" : "Ghavorkan Power Cell",
+  "itemTags" : [ "reagent" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 10
+}

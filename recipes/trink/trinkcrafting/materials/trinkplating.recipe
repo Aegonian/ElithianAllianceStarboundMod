@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "trinkmetal", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "trinkplating",
+    "count" : 15
+  },
+  "duration" : 0.5,
+  "groups"  : [ "trinkcrafting", "materials", "all" ]
+}

@@ -1,0 +1,46 @@
+{
+  "objectName" : "avikantentside2",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 70,
+  "description" : "A sheet of fabric used as a wall in Avikan tents.",
+  "shortdescription" : "Avikan Fabric Wall Sheet",
+  "race" : "avikan",
+
+  "apexDescription" : "A brightly coloured tent side.",
+  "avianDescription" : "A bright tent sheet. Lovely.",
+  "floranDescription" : "Bright coloursss make Floran angry.",
+  "glitchDescription" : "Observation. A fabric tent piece.",
+  "humanDescription" : "A fabric tent side. Colourful.",
+  "hylotlDescription" : "A carefully decorated tent piece.",
+
+  "aegiDescription" : "A tent wall made using colourful sheets of fabric.",
+  "avikanDescription" : "A sheet of fabric used as a tent side. Far more expensive than simple leather.",
+  "erixianDescription" : "Sheets of fabric layered on top of each other to make a simple tent wall.",
+  "trinkDescription" : "A simple tent wall, made of sheets of bright fabric.",
+  "hymidDescription" : "A bunch of fabric sheets made into a tent wall.",
+  "notixDescription" : "Fabric sheets layered on top of each other. A simple but functional tent wall.",
+  "jorgasianDescription" : "Sheet of fabric made into a tent wall.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Analysis. Multiple layers of fabric sheets.",
+
+  "inventoryIcon" : "avikantentside2icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikantentside2.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "solid"
+
+    }
+  ]
+}

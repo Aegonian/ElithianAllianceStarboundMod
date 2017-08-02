@@ -1,0 +1,127 @@
+{
+  "projectileName" : "avikanlargedronebody",
+  "image" : "avikanlargedronebody.png",
+  "physics" : "thea-largedebris",
+  "animationCycle" : 2,
+  "frameNumber" : 1,
+  "renderLayer" : "Object+1",
+  "power" : 0,
+  "speed" : 15,
+  "piercing" : true,
+  "initialVelocity" : 15,
+  "timeToLive" : 20,
+  "bounces" : -1,
+  "flippable" : true,
+  "orientationLocked" : false,
+
+  "actionOnCollide" : [
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/blocks/footstep_stone3.ogg" ]
+    }
+  ],
+
+  "actionOnReap" : [
+      {
+      "action" : "loop",
+      "count" : 4,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : {
+              "type" : "textured",
+              "image" : "/particles/avikanlargedronedebris/avikanlargedronedebris1.png",
+              "size" : 1,
+              "color" : [255, 255, 255, 255],
+              "fade" : 0,
+              "initialVelocity" : [0.0, 0.0],
+              "finalVelocity" : [0.0, -20],
+              "approach" : [0, 20],
+              "rotation" : 0,
+              "angularVelocity" : 0,
+              "timeToLive" : 0.2,
+              "destructionAction" : "shrink",
+              "destructionTime" : 0.5,
+              "layer" : "middle",
+              "variance" : {
+                "initialVelocity" : [8, 8],
+				"position" : [1.25, 1.25],
+				"timeToLive" : 0.2,
+                "size" : 0.2,
+                "rotation" : 180,
+                "angularVelocity" : 180
+              }
+          }
+        }
+      ]
+    },
+	{
+      "action" : "loop",
+      "count" : 6,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : {
+              "type" : "textured",
+              "image" : "/particles/avikanlargedronedebris/avikanlargedronedebris2.png",
+              "size" : 1,
+              "color" : [255, 255, 255, 255],
+              "fade" : 0,
+              "initialVelocity" : [0.0, 0.0],
+              "finalVelocity" : [0.0, -20],
+              "approach" : [0, 20],
+              "rotation" : 0,
+              "angularVelocity" : 0,
+              "timeToLive" : 0.4,
+              "destructionAction" : "shrink",
+              "destructionTime" : 0.5,
+              "layer" : "middle",
+              "variance" : {
+                "initialVelocity" : [6, 6],
+				"position" : [1.25, 1.25],
+				"timeToLive" : 0.4,
+                "size" : 0.2,
+                "rotation" : 180,
+                "angularVelocity" : 180
+              }
+          }
+        }
+      ]
+    },
+	{
+      "action" : "loop",
+      "count" : 8,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : {
+              "type" : "textured",
+              "image" : "/particles/avikanlargedronedebris/avikanlargedronedebris3.png",
+              "size" : 1,
+              "color" : [255, 255, 255, 255],
+              "fade" : 0,
+              "initialVelocity" : [0.0, 0.0],
+              "finalVelocity" : [0.0, -20],
+              "approach" : [0, 20],
+              "rotation" : 0,
+              "angularVelocity" : 0,
+              "timeToLive" : 0.5,
+              "destructionAction" : "shrink",
+              "destructionTime" : 0.5,
+              "layer" : "middle",
+              "variance" : {
+                "initialVelocity" : [12, 12],
+				"position" : [1.25, 1.25],
+				"timeToLive" : 0.4,
+                "size" : 0.2,
+                "rotation" : 180,
+                "angularVelocity" : 180
+              }
+          }
+        }
+      ]
+    }
+  ],
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

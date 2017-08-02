@@ -1,0 +1,23 @@
+{
+  "kind" : "xanafianburst2",
+  "definition" : {
+    "type" : "ember",
+    "size" : 1,
+    "color" : [0, 140, 217],
+    "light" : [0, 80, 120],
+    "position" : [0, 0],
+	"initialVelocity" : [5.0, 2.5],
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.5,
+    "fade" : 1,
+    "layer" : "middle",
+    "fullbright" : true,
+    "timeToLive" : 0.75,
+    "variance" : {
+      "initialVelocity" : [5.0, 2.5],
+      "size" : 0.5,
+	  "timeToLive" : 0.5,
+      "position" : [0, 0.5]
+    }
+  }
+}

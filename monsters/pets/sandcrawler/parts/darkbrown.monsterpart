@@ -1,0 +1,9 @@
+{
+  "name" : "darkbrown",
+  "category" : "sandcrawler",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "darkbrown.png"
+  }
+}

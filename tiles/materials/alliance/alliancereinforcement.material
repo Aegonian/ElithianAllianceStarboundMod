@@ -1,0 +1,28 @@
+{
+  "materialId" : 30073,
+  "materialName" : "alliancereinforcement",
+  "particleColor" : [97, 97, 97, 255],
+  "itemDrop" : "alliancereinforcement", 
+  "shortdescription" : "Alliance Reinforcement",
+  
+  "description" : "A strong metal block, used to reinforce larger structures.",
+  "glitchDescription" : "Observation. This block likely serves to support a large weight.",
+  "floranDescription" : "Ssstrong metal blockss.",
+  "novakidDescription" : "Looks like support to me.",
+  
+  "drodenDescription" : "Analysis complete. Structural reinforcement.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "alliancereinforcement.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 350
+  }
+}

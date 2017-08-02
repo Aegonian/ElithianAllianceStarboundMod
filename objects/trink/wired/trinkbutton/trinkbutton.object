@@ -1,0 +1,59 @@
+{
+  "objectName" : "trinkbutton",
+  "colonyTags" : ["wired","trink"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "A large button.",
+  "shortdescription" : "Trinkian Wall Button",
+  "race" : "trink",
+
+  "floranDescription" : "Presss it!",
+  "glitchDescription" : "Curious. What will happen if I press this button?",
+  "drodenDescription" : "Analysis. Button. Used to temporarily activate circuits.",
+
+  "category" : "wire",
+  "price" : 20,
+
+  "inventoryIcon" : "trinkbuttonicon.png",
+  "orientations" : [
+    {
+      "image" : "trinkbutton.png:<color>.off",
+      "imagePosition" : [-8, -8],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+
+  "scripts" : [
+    "/objects/wired/momentaryswitch/momentaryswitch.lua",
+    "/scripts/npcToyObject.lua"
+  ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/switch/switchtoggle.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/tinywallbutton.ogg" ]
+    }
+  },
+  "animationParts" : {
+    "switch" : "trinkbutton.png"
+  },
+  "animationPosition" : [-8, -8],
+
+  "outputNodes" : [ [0, -1] ],
+
+  "interval" : 15,
+
+  "npcToy": {
+    "ownerOnly": true,
+    "influence" : [
+      "wallbutton"
+    ],
+    "defaultReactions" : {},
+    "preciseStandPositionLeft" : [-1.0, 0.0],
+    "preciseStandPositionRight" : [1.0, 0.0],
+    "maxNpcs" : 1
+  }
+}

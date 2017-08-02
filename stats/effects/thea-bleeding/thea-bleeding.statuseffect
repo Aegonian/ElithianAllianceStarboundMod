@@ -1,0 +1,15 @@
+{
+  "name" : "thea-bleeding",
+  "blockingStat" : "bleedingImmunity",
+  "effectConfig" : {},
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "thea-bleeding.lua"
+  ],
+
+  "animationConfig" : "thea-bleeding.animation",
+
+  "label" : "Bleeding",
+  "icon" : "/interface/statuses/thea-bleeding.png"
+}

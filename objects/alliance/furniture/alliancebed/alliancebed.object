@@ -1,0 +1,58 @@
+{
+  "objectName" : "alliancebed",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "furniture",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A comfortable bed.",
+  "shortdescription" : "Alliance Bed",
+  "race" : "aegi",
+
+  "apexDescription" : "A comfortable bed with clean sheets.",
+  "avianDescription" : "This bed is quite comfortable.",
+  "floranDescription" : "Floran rarely ssleep in ssuch nice bed.",
+  "glitchDescription" : "Tired. I should lie down for a while.",
+  "humanDescription" : "A simple but comfortable bed.",
+  "hylotlDescription" : "A good place to close one's eyes.",
+  "novakidDescription" : "A decent place to get some shut-eye.",
+
+  "aegiDescription" : "A nice and comfortable bed.",
+  "avikanDescription" : "This bed looks quite comfortable.",
+  "erixianDescription" : "A simple bed.",
+  "trinkDescription" : "A bed. I prefer a repair pod.",
+  "hymidDescription" : "The Aegi make comfortable beds.",
+  "notixDescription" : "I should get some sleep.",
+  "jorgasianDescription" : "Basic bedding.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Alien bedding detected.",
+
+  "inventoryIcon" : "alliancebedicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "alliancebed.png:<color>",
+
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : true,
+  "sitPosition" : [-10, 14],
+  "sitOrientation" : "lay",
+  "sitAngle" : 90,
+  "sitCoverImage" : "/objects/alliance/furniture/alliancebed/alliancebedcover.png",
+  "sitEmote" : "sleep",
+  "sitStatusEffects" : [
+    "bed1"
+  ],
+  "sitEffectEmitters" : [ "sleepbubbles" ]
+}

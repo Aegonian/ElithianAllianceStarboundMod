@@ -1,0 +1,45 @@
+{
+  "objectName" : "trinktier4beacon",
+  "colonyTags" : ["trink","combat","trinktier4"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 350,
+  "description" : "This beacon could attract an armed Trink tenant in combination with a colony deed.",
+  "shortdescription" : "Circuit Beacon Mark IV",
+  "race" : "trink",
+
+  "apexDescription" : "A beacon of some sort. It only seems to attract tenants.",
+  "avianDescription" : "This beacon attracts armed tenants. How convenient!",
+  "floranDescription" : "Beacon callss armed tenantss.",
+  "glitchDescription" : "Observation. The signal coming from this beacon will attract armed tenants.",
+  "humanDescription" : "This beacon will attract armed tenants. I could build my own army!",
+  "hylotlDescription" : "This beacon will attract an alien warrior. Perhaps I might learn some new skills from them.",
+
+  "aegiDescription" : "This beacon will attract an armed Trinkian tenant.",
+  "avikanDescription" : "A beacon for summoning a robotic tenant. I'd better remove it.",
+  "erixianDescription" : "A beacon. It could attract an armed tenant.",
+  "trinkDescription" : "This beacon will attract armed tenants.",
+  "hymidDescription" : "A beacon for summoning Trinkian guard tenants.",
+  "notixDescription" : "A beacon that calls for armed reinforcements.",
+  "jorgasianDescription" : "A beacon for summoning armed Trinkian tenants.",
+  "centensDescription" : "This beacon will sumon an armed tenant. I wonder what sort of primitive weaponry they will use?",
+  "dremetonDescription" : "A beacon that can summon a Trinkian guard if used in the right place.",
+  "hyvonDescription" : "A beacon that summons an armed lesser one. Hmph.",
+  "drodenDescription" : "Detected beacon. Detected alien AI signature. Recommend immediate removal.",
+
+  "inventoryIcon" : "trinktier4beaconicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "trinktier4beacon.png:<color>", "fullbright" : true }, { "image" : "trinktier4beaconlit.png:<color>" } ],
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+
+    }
+  ]
+}

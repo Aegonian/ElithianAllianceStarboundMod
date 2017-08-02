@@ -1,0 +1,43 @@
+{
+  "objectName" : "avikanspeakerplatform",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 40,
+  "description" : "A platform.",
+  "shortdescription" : "Avikan Speaker's Platform",
+  "race" : "avikan",
+
+  "apexDescription" : "A platform from which to address the public.",
+  "avianDescription" : "A platform from which to address the public.",
+  "floranDescription" : "He who sspeaksss sstandsss here...",
+  "glitchDescription" : "Observation. A platform from which to address the public.",
+  "humanDescription" : "A platform from which to address the public.",
+  "hylotlDescription" : "A platform from which to address the public.",
+  "novakidDescription" : "A platform from which to address the public.",
+
+  "aegiDescription" : "A platform from which to address the public.",
+  "avikanDescription" : "A platform from which to address the public.",
+  "erixianDescription" : "A platform from which to address the public.",
+  "trinkDescription" : "A platform from which to address the public.",
+  "hymidDescription" : "A platform from which to address the public.",
+  "notixDescription" : "A platform from which to address the public.",
+  "jorgasianDescription" : "A platform from which to address the public.",
+  "centensDescription" : "A platform from which to address the public.",
+  "dremetonDescription" : "A platform from which to address the public.",
+  "theleanDescription" : "A platform from which to address the public.",
+  "drodenDescription" : "Platform. Used by Speakers to adress the public.",
+
+  "inventoryIcon" : "avikanspeakerplatformicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanspeakerplatform.png:<color>",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ]
+}

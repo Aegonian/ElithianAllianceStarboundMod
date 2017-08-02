@@ -1,0 +1,16 @@
+{
+	//HYVERIUM ROCKS
+  "hyveriumRockSmall" : [
+    [1, {
+      "pool" : [
+        {"weight" : 1.0, "item" : "hyveriumore"}
+      ],
+      "poolRounds" : [
+        [0.25, 2],
+        [0.50, 3],
+        [0.25, 4]
+      ]
+    }]
+  ]  
+}
+

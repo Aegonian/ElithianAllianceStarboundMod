@@ -1,0 +1,28 @@
+{
+  "materialId" : 30071,
+  "materialName" : "alliancestripedpanel",
+  "particleColor" : [157, 157, 157, 255],
+  "itemDrop" : "alliancestripedpanel", 
+  "shortdescription" : "Striped Alliance Panel",
+  
+  "description" : "A polished metal panel, decorated by two colourful stripes.",
+  "glitchDescription" : "Pleased. This panel is highly polished.",
+  "floranDescription" : "Floran enjoysss the colourss.",
+  "novakidDescription" : "A decorated metal panel.",
+  
+  "drodenDescription" : "Analysis complete. Decorated metal panel.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "alliancestripedpanel.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 45
+  }
+}

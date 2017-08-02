@@ -1,0 +1,41 @@
+{
+  "type" : "trinkcrafter",
+  "baseType" : "trinkvillager",
+
+  "dropPools" : [ "trinkDeathTreasure" ],
+
+  "scriptConfig" : {
+  
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "Found any interesting blueprints, traveller?",
+			"You seem like a capable craftsman.",
+			"What do you think of my works, traveller?"
+		  ]
+		},
+
+        "trink" : {
+          "default" : [
+            "Found any interesting blueprints, scout?",
+			"You would make for a fine engineering unit.",
+			"Come to inspect my work, scout?"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "trink-paintedchest", "data" : { "colorIndex" : 2 } } ],
+            "legs" : [ { "name" : "trink-engineerlegs", "data" : { "colorIndex" : 2 } } ],
+            "head" : [ "thea-hiddenhead" ]
+          }
+        ] ]
+    ]
+  }
+}

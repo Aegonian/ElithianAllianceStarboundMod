@@ -1,0 +1,45 @@
+{
+  "objectName" : "avikanmonitor",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A monitor displaying a lot of information.",
+  "shortdescription" : "Avikan Monitor",
+  "race" : "avikan",
+  "lightColor" : [50, 32, 0],
+
+  "apexDescription" : "There's a lot of information on this screen, but I don't understand any of it.",
+  "avianDescription" : "What might all those lines mean?",
+  "floranDescription" : "Floran doesn't underssstand ssshiny ssscreen...",
+  "glitchDescription" : "Incapability. I am unable to read this information.",
+  "humanDescription" : "That's a lot of information! I wish I understood even a little of it...",
+  "hylotlDescription" : "This monitor displays some information, but what it means is a mystery to me.",
+
+  "aegiDescription" : "How the Avikan manage to make sense of this mess is a mystery to me.",
+  "avikanDescription" : "A display showing a wide selection of data.",
+  "erixianDescription" : "A monitor. What does it monitor?",
+  "trinkDescription" : "I am unable to process the information displayed here.",
+  "hymidDescription" : "A screen. Or is it called a monitor?",
+  "notixDescription" : "A monitor of Avikan design. The interface is a mess.",
+  "jorgasianDescription" : "I can't read whatever information this monitor is displaying...",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Scan completed. Found four dead pixels.",
+  
+  "inventoryIcon" : "avikanmonitoricon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "avikanmonitor.png:<color>.<frame>", "fullbright" : true }, { "image" : "avikanmonitorlit.png:<color>.<frame>" } ],
+      "imagePosition" : [0, 0],
+      "frames" : 4,
+      "animationCycle" : 0.4,
+      "lightPosition" : [0, 1],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ]
+}

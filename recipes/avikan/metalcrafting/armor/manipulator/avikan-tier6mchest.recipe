@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "avikan-tier5mchest", "count" : 1 },
+	{ "item" : "avikanmetaltier6", "count" : 10 },
+    { "item" : "avikandarkmetal", "count" : 2 }
+  ],
+  "duration" : 5,
+  "output" : { "item" : "avikan-tier6mchest", "count" : 1 },
+  "groups" : [ "avikanmetalcrafting", "armours", "all" ]
+}

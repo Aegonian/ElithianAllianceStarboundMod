@@ -1,0 +1,15 @@
+{
+  "itemName" : "trinkhull",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "trinkhull.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "shortdescription" : "Trinkian Hull",
+  
+  "description" : "A strong metal hull for ships and buildings alike..",
+  "glitchDescription" : "Observation. Thick and heavy hull plating. Very reliable protection.",
+  "floranDescription" : "Thick hull for making placess sssafe...",
+
+  "materialId" : 30064
+}

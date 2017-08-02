@@ -1,0 +1,10 @@
+{
+  "itemName" : "avikanshockcore",
+  "price" : 250,
+  "rarity" : "Legendary",
+  "category" : "Quest Item",
+  "inventoryIcon" : "avikanshockcore.png",
+  "description" : "A small electrical generator often found in Avikan machinery.",
+  "shortdescription" : "^#BA66FF;Avikan Shock Core^white;",
+  "itemTags" : [ "questitem" ]
+}

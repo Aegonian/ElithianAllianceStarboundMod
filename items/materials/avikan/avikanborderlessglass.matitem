@@ -1,0 +1,12 @@
+{
+  "itemName" : "avikanborderlessglass",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "avikanborderlessglass.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "shortdescription" : "Borderless Avikan Glass",
+  "description" : "Thick glass from Kadavan.",
+
+  "materialId" : 30091
+}

@@ -1,0 +1,13 @@
+{
+  "itemName" : "alliancestairsplatform",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "alliancestairsplatform.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  
+  "shortdescription" : "Avikan Stairs",
+  "description" : "Sturdy metal stairs.",
+
+  "materialId" : 30107
+}

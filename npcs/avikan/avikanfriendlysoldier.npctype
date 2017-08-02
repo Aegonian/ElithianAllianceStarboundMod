@@ -1,0 +1,57 @@
+{
+  "type" : "avikanfriendlysoldier",
+  "baseType" : "friendlyguard",
+
+  "dropPools" : [ "avikanSoldierDeathTreasure" ],
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "guard"],
+      "enableParticipation" : true,
+
+      // Every 30 seconds, decide whether to generate a quest and if so, spend
+      // the rest of the 30s window trying to generate it.
+      "timeLimit" : 30,
+
+      // Don't generate new quests if there are already more than <nearbyQuestLimit>
+      // questmanager stagehands nearby, within a <nearbyQuestRange> tile range.
+      "nearbyQuestLimit" : 2,
+      "nearbyQuestRange" : 50,
+      "questCountRange" : [1, 4],
+      
+      "graduation" : {
+        "nextNpcType" : [
+          [1, "crewmembervanguard"],
+		  [1, "crewmembernomadahunter"]
+        ]
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ "avikan-vanguardchest" ],
+            "legs" : [ "avikan-vanguardlegs" ],
+            "head" : [ "avikan-vanguardhead" ],
+            "primary" : [
+				"avikanvanguardshortsword",
+				"avikanvanguardbroadsword",
+				"avikanvanguardaxe",
+				"avikanvanguardhammer",
+				"avikanvanguardspear"
+			],
+			"sheathedprimary" : [
+				"avikan-assaultrifle",
+				"avikan-skiprifle"
+			],
+			"alt" : [
+				{ "name" : "avikanmetalshield" }
+			]
+          }
+        ] ]
+    ]
+  }
+}

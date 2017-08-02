@@ -1,0 +1,17 @@
+{
+  "projectileName" : "shockboltsmall",
+  "image" : "shockboltsmall.png",
+  "animationCycle" : 0.15,
+  "timeToLive" : 0.2,
+  "frameNumber" : 6,
+  "speed" : 75,
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "animationLoops" : false,
+  "piercing" : false,
+  "flippable" : true,
+  "damageKind" : "electric",
+  "lightColor" : [80, 40, 140],
+  "fullbright" : true,
+
+  "persistentAudio" : "/sfx/projectiles/electric_barrier_shock1.ogg"
+}

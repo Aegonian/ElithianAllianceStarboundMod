@@ -1,0 +1,72 @@
+{
+  "objectName" : "avikantent",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "description" : "A tent used by Avikan nomads.",
+  "shortdescription" : "Avikan Tent",
+  "race" : "generic",
+  "category" : "furniture",
+  "price" : 100,
+
+  "apexDescription" : "A large leather tent.",
+  "avianDescription" : "A temporary house.",
+  "floranDescription" : "Big brown house...",
+  "glitchDescription" : "Content. This tent has plenty of room.",
+  "humanDescription" : "Ooh, a tent! Is anyone inside?",
+  "hylotlDescription" : "I am not too proud to sleep in a tent.",
+  
+  "aegiDescription" : "An Avikan tent, made of leather. Very durable, even in harsh environments.",
+  "avikanDescription" : "A traditional nomad's tent. Easy to set up and break down again.",
+  "erixianDescription" : "Leather tapestries. Plain and simple.",
+  "trinkDescription" : "A number of rolled up leather tapestries.",
+  "hymidDescription" : "Leather tapestries rolled up for storage. Or transport, perhaps.",
+  "notixDescription" : "Rolled up leather tapestries.",
+  "jorgasianDescription" : "A number of simple leather tapestries, rolled up to make them easier to store.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Analysis complete. Tent. Mobile home. Material: leather.",
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : true,
+  "sitOrientation" : "lay",
+  "sitAngle" : 90,
+  "sitCoverImage" : "/objects/avikan/tentobjects/avikantent/avikantentclosed.png",
+  "sitEmote" : "sleep",
+  "sitStatusEffects" : [
+    "regeneration1",
+    "nude",
+    "intents"
+  ],
+
+  "inventoryIcon" : "avikantenticon.png",
+  "orientations" : [
+    {
+      "image" : "avikantent.png:<color>",
+
+      "imagePosition" : [-40, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+	  
+      "sitPosition" : [-22, 7],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "right"
+    },
+	{
+      "image" : "avikantent.png:<color>",
+
+      "imagePosition" : [-40, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+	  
+      "sitPosition" : [-12, 7],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+	  "flipImages" : true,
+      "direction" : "left"
+    }
+  ]
+}

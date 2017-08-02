@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "monsterbone", "count" : 5 },
+    { "item" : "monsterleather", "count" : 2 },
+    { "item" : "avikanstring", "count" : 1 }
+  ],
+  "duration" : 5,
+  "output" : { "item" : "avikan-tier1chest", "count" : 1 },
+  "groups" : [ "avikanbonecrafting", "armours", "all" ]
+}

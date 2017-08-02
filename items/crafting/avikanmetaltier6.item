@@ -1,0 +1,10 @@
+{
+  "itemName" : "avikanmetaltier6",
+  "price" : 500,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "avikanmetaltier6.png",
+  "description" : "Specialized metal plating for use in superb-quality equipment.",
+  "shortdescription" : "Superb Kavanite Plate",
+  "itemTags" : [ "reagent" ]
+}

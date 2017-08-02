@@ -1,0 +1,23 @@
+{
+  "projectileName" : "thea-instakillbullet",
+  "physics" : "laser",
+  "bounces" : 0,
+  "image" : "thea-instakillbullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 1000000,
+  "speed" : 180,
+  "piercing" : true,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+    }
+  ],
+  "lightColor" : [232, 182, 46],
+  "fullbright" : true,
+  "damageKind" : "plasma",
+  "damageType" : "ignoresDef",
+  "damageTeam" : { "type" : "indiscriminate" }
+}

@@ -1,0 +1,158 @@
+[
+  //MONSTER DROPS
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" :
+		"greatmonsterbone"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" :
+		"grandmonsterbone"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" :
+		"monsterbone"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" :
+		"monsterclaws"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" :
+		"monsterhide"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" :
+		"monsterplate"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" :
+		"monsterscales"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" :
+		"monsterspine"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" :
+		"sandcrawlertooth"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" :
+		"sandspittersack"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" :
+		"theleantissue"
+  },
+  
+  //CRAFTED ITEMS
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" :
+		"avikancloth"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" :
+		"monsterleather"
+  },
+  
+  //PREPARED FOODS
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" :
+		"avikanmeal"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" :
+		"bolbohnjam"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" :
+		"dunebun"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" :
+		"kadavancactusjuice"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" :
+		"kadavanmeatjuice"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" :
+		"spicebol"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" :
+		"stuffeddunebun"
+  },
+  
+  //PRODUCE
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" :
+		"avikanspices"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" :
+		"bolbohn"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" :
+		"dunestalk"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" :
+		"kadavancactus"
+  },
+  
+  //MEAT
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" :
+		"avikanmeatchunk"
+  },
+  
+  //SEEDS
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" :
+		"avikancactusseed"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" :
+		"avikanspiceplantseed"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" :
+		"bolbohnseed"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" :
+		"dunestalkseed"
+  }
+]

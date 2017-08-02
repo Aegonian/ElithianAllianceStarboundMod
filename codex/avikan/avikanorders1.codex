@@ -1,0 +1,38 @@
+{
+  "id" : "avikanorders1",
+  "species" : "avikan",
+  "title" : "Watcher Agent Orders",
+  "description" : "Your orders, straight from Commander Zaheed of the Watchers.",
+  "icon" : "avikanfile6.png",
+  "contentPages" : [
+
+"^red;-- CLASSIFIED --^white;
+
+Vas Vha'leih, Watcher Agent.
+
+The mission you are being sent on is highly unusual, but it is also of great importance to our Nomada. Our intelligence reports describe a self-proclaimed peacekeeping organization, the Terrene Protectorate, to have a large presence in this sector of the galaxy.",
+
+"^red;-- CLASSIFIED --^white;
+
+The reports say that this organization was founded several centuries ago by the humans of Earth. The supposed goal of this Protectorate is to \"protect the universe and help those in need\", but we suspect there to be more to its existence.
+
+The most reliable source for more information is to have an agent on the inside - this is where you come in.",
+
+"^red;-- CLASSIFIED --^white;
+
+Your goal is to infiltrate the Terrene Protectorate by signing up for their ranks. Follow their training programs and learn all you can about its hierarchy, motives and whatever else you judge relevant.
+
+The mission will also require you to obtain one of the Protectorate's matter manipulators, along with any other technology you can safely obtain.",
+
+"^red;-- CLASSIFIED --^white;
+
+Remember: your identity, and the Nomada's involvement in this mission, must be kept a secret at all costs. After you finish your Protectorate training, you are to fake your own death and return to the Watcher Headquarters. Send reports to HQ as often as you can, but do not risk revealing yourself to anyone.
+
+May Rhadeis guide you along your path, and may he watch over us all."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

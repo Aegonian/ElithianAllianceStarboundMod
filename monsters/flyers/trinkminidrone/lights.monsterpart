@@ -1,0 +1,9 @@
+{
+  "name" : "trinkminidronelights",
+  "category" : "trinkminidrone",
+  "type" : "lights",
+
+  "frames" : {
+    "lights" : "trinkminidronelights.png"
+  }
+}

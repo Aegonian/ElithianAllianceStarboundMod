@@ -1,0 +1,62 @@
+{
+  "particleEmitters" : {
+    "particles" : {
+      "enabled" : true,
+      "emissionRate" : 8.0,
+      "particles" : [
+        {
+          "particle" : "centensgravitysmall"
+        }
+      ]
+    }
+  },
+  "animatedParts" : {
+    "stateTypes" : {
+      "shield" : {
+        "default" : "windup",
+        "states" : {
+          "off" : {},
+          "windup" : {
+            "frames" : 8,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "on"
+          },
+          "on" : {
+            "frames" : 8,
+            "cycle" : 0.6,
+            "mode" : "loop"
+          }
+        }
+      }
+    },
+    "parts" : {
+      "shield" : {
+        "properties" : {
+          "zLevel" : 0
+        },
+        "partStates" : {
+          "shield" : {
+            "windup" : {
+              "properties" : {
+                "image" : "centensiangravityrepel.png:windup.<frame>"
+              }
+            },
+            "on" : {
+              "properties" : {
+                "image" : "centensiangravityrepel.png:on.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [33, 0, 127]
+    }
+  }
+}

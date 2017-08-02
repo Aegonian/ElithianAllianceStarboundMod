@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "trinkbreathprotectionback", "count" : 1 },
+    { "item" : "trinkmetaltier3", "count" : 6 },
+    { "item" : "trinkglassitem", "count" : 6 },
+    { "item" : "trinkelectronics", "count" : 2 },
+    { "item" : "venomsample", "count" : 1 }
+  ],
+  "output" : { "item" : "trinkradiationprotectionback", "count" : 1 },
+  "groups" : [ "trinkcrafting2", "armours", "hazardgear", "all" ]
+}

@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "avikanmetaltier5", "count" : 5 },
+	{ "item" : "avikandarkmetal", "count" : 3 }
+  ],
+  "duration" : 5,
+  "output" : { "item" : "avikanmodernquiver", "count" : 1 },
+  "groups" : [ "avikanmetalcrafting", "armours", "all" ]
+}

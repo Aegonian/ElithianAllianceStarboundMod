@@ -1,0 +1,20 @@
+{
+  "projectileName" : "explosiondebrisfire",
+  "physics" : "grenade",
+  "bounces" : 1,
+  "damageKindImage" : "icon.png",
+  "image" : "explosiondebrisfire.png",
+  "animationCycle" : 1.2,
+  "frameNumber" : 4,
+  "onlyHitTerrain" : true,
+  "emitters" : [ "firetrail" ],
+  "power" : 0,
+  "speed" : 30,
+  "timeToLive" : 0.7,
+  "supportsProcessing" : true,
+  "lightColor" : [100, 65, 0],
+  "fullbright" : true,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "hydrophobic" : true
+}

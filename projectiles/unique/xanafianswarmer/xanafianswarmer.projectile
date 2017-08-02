@@ -1,0 +1,39 @@
+{
+  "projectileName" : "xanafianswarmer",
+  "physics" : "laser",
+  "timeToLive" : 5,
+  "image" : "xanafianswarmer.png",
+  "animationCycle" : 0.3,
+  "lightColor" : [70, 90, 100],
+  "frameNumber" : 4,
+  "periodicActions" : [ ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/status/xanafianshadowdeath.config"
+    }
+  ],
+  "speed" : 12,
+  "power" : 30,
+  "piercing" : true,
+  "damageKind" : "xanafian",
+  "damagePoly" : [ [-6, 0], [-4, -4], [0, -6], [4, -4], [6, 0], [4, 4], [0, 6], [-4, 4] ],
+  "statusEffects" : [ "shadowmarked" ],
+
+  "fullbright" : true,
+  "emitters" : [ ],
+
+  "bounces" : 4,
+
+  "scripts" : [ "/projectiles/scripts/thea-staffprojectile.lua" ],
+  
+  "randomTimeToLive" : true,
+  //Lifetime is in milliseconds!
+  "minLifeTime" : 500,
+  "maxLifeTime" : 650,
+
+  "controlMovement" : {
+    "maxSpeed" : 40,
+    "controlForce" : 55
+  }
+}

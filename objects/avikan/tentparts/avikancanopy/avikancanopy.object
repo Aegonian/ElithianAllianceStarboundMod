@@ -1,0 +1,57 @@
+{
+  "objectName" : "avikancanopy",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A leather canopy, to provide some shadow at someone's door.",
+  "shortdescription" : "Avikan Canopy",
+  "race" : "avikan",
+
+  "apexDescription" : "A leather canopy. Effective, but not very pretty.",
+  "avianDescription" : "A bland leather canopy.",
+  "floranDescription" : "Leather makesss Floran want to huntsss.",
+  "glitchDescription" : "Observation. A simple leather canopy.",
+  "humanDescription" : "A leather canopy, simple but effective.",
+  "hylotlDescription" : "A leather canopy. Simple but effective.",
+
+  "aegiDescription" : "A simple leather awning. Provides good protection against desert winds.",
+  "avikanDescription" : "A basic but functional leather canopy.",
+  "erixianDescription" : "A crude leather awning.",
+  "trinkDescription" : "A leather awning.",
+  "hymidDescription" : "A leather awning? A primitive way to protect one's home.",
+  "notixDescription" : "A simple leather awning.",
+  "jorgasianDescription" : "Leather is the Avikan material of choice.",
+  "centensDescription" : "Fascinating. The incredibly advanced Avikan still use such primitive structures.",
+  "dremetonDescription" : "A leather awning. What it lacks in decorational value, it makes up for in functionality.",
+  "hyvonDescription" : "An unimpressive leather awning.",
+  "drodenDescription" : "Leather awning. Provides protection against desert winds.",
+
+  "inventoryIcon" : "avikancanopyicon.png",
+  "orientations" : [
+    {
+      "image" : "avikancanopy.png:<color>",
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "flipImages" : true,
+      "direction" : "right"
+    },
+    {
+      "image" : "avikancanopy.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "left"
+    }
+  ]
+}

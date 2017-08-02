@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "trinkmetaltier3", "count" : 6 },
+    { "item" : "trinkelectronics", "count" : 1 }
+  ],
+  "output" : { "item" : "trinktier3longprod", "count" : 1 },
+  "groups" : [ "trinkcrafting2", "weapons", "all" ]
+}

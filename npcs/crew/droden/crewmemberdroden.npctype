@@ -1,0 +1,114 @@
+{
+  "type" : "crewmemberdroden",
+  "baseType" : "crewmember",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+
+	"crew" : {
+	  "defaultUniform" : {
+		"head" : "droden-protectoratehead",
+		"chest" : "droden-protectoratechest",
+		"legs" : "droden-protectoratelegs"
+	  },
+	  
+	  "uniformSlots" : []
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "offer" : {
+          "droden" : {
+            "default" : [
+              "Requesting permission to join ship crew.",
+              "Unit <selfname> requests permission to join ship crew.",
+              "This unit is at your service. Requesting permission to join ship crew."
+            ]
+          }
+        },
+		"roleDescription" : {
+          "droden" : {
+            "default" : [
+              "This unit will assist you in combat, Captain.",
+              "Unit is ready for combat.",
+              "This unit can offer combat support."
+            ]
+          }
+        },
+		"respawned" : {
+          "droden" : {
+            "default" : [
+              "Unit replacement reporting for duty.",
+              "Replacement unit has arrived.",
+              "Replacement for unit <selfname> has arrived.",
+              "Unit replacement delivery completed."
+            ]
+          }
+        },
+		"unfollow" : {
+          "droden" : {
+            "default" : [
+              "Unit will wait.",
+              "This unit will remain here.",
+              "Unit will guard this location.",
+              "Entering rest mode."
+            ]
+          }
+        },
+		"follow" : {
+          "droden" : {
+            "default" : [
+              "Unit is ready to venture on.",
+              "This unit is at your service.",
+              "Unit reporting for duty.",
+              "Resuming combat mode."
+            ]
+          }
+        },
+		"cantreach" : {
+          "droden" : {
+            "default" : [
+              "Unit is unable to reach that location.",
+              "Error. Unable to reach location.",
+              "Unit is falling behind.",
+              "Unable to reach target location."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+            "head" : [ { "name" : "droden-protectoratehead" } ],
+			"chest" : [ { "name" : "droden-protectoratechest" } ],
+            "legs" : [ { "name" : "droden-protectoratelegs" } ],
+            "primary" : [ 
+			  "droden-assaultrifle"
+			],
+            "sheathedprimary" : [
+			  "drodenlongsword"
+			]
+          },
+          {
+            "head" : [ { "name" : "droden-protectoratehead" } ],
+            "chest" : [ { "name" : "droden-protectoratechest" } ],
+            "legs" : [ { "name" : "droden-protectoratelegs" } ],
+            "primary" : [ 
+			  "drodenlongsword"
+			],
+            "sheathedprimary" : [
+			  "droden-assaultrifle"
+			]
+          }
+        ] ]
+    ]
+  }
+}

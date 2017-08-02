@@ -1,0 +1,11 @@
+{
+  "itemName" : "trinkrail",
+  "price" : 0,
+  "category" : "rail",
+  "rarity" : "Common",
+  "inventoryIcon" : "trinkrail.png",
+  "shortdescription" : "Trinkian Rail",
+  "description" : "A strong reinforced rail.",
+
+  "materialId" : 30202
+}

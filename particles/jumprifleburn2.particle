@@ -1,0 +1,23 @@
+{
+  "kind" : "jumprifleburn2",
+  "definition" : {
+    "type" : "animated",
+    "looping" : true,
+    "animation" : "/animations/jumprifleburn/jumprifleburn.animation",
+    "position" : [0, 0],
+    "initialVelocity" : [0.8, 0.5],
+    "finalVelocity" : [0.8, 0.5],
+    "light" : [100, 65, 0],
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.4,
+    "fade" : 1,
+    "size" : 0.5,
+    "layer" : "middle",
+    "timeToLive" : 0.6,
+    "collidesLiquid" : true,
+    "variance" : {
+      "initialVelocity" : [0.5, 0.5],
+      "size" : 0.5
+    }
+  }
+}

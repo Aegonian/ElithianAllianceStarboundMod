@@ -1,0 +1,24 @@
+{
+  "kind" : "violatediontrail",
+  "location" : "mouth",
+  "definition" : {
+    "duration" : 0.005,
+    "loops" : true,
+    "start" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [ [ ] ]
+    },
+    "particles" : [
+      [ "violatediontrail" ]
+    ],
+    "sounds" : [ [ ] ],
+    "stop" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [ [ ] ]
+    }
+  }
+}

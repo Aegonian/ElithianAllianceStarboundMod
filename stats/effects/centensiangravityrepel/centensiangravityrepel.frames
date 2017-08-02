@@ -1,0 +1,10 @@
+{
+  "frameGrid" : {
+    "size" : [41, 47],
+    "dimensions" : [8, 2],
+    "names" : [
+      [ "windup.1", "windup.2", "windup.3", "windup.4", "windup.5", "windup.6", "windup.7", "windup.8" ],
+      [ "on.1", "on.2", "on.3", "on.4", "on.5", "on.6", "on.7", "on.8" ]
+    ]
+  }
+}

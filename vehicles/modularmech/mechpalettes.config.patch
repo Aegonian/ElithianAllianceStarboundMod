@@ -1,0 +1,20 @@
+[
+  //AVIKAN METAL / KAVANITE
+  {
+    "op" : "add",
+    "path" : "/swapSets/-",
+    "value" : [ "E9D3AB", "D7B889", "A88A5F", "6B4E3E" ]
+  },
+  //AVIKAN DARK METAL / DRANITE
+  {
+    "op" : "add",
+    "path" : "/swapSets/-",
+    "value" : [ "7F7F7F", "616161", "474747", "333333" ]
+  },
+  //ALLIANCE METAL
+  {
+    "op" : "add",
+    "path" : "/swapSets/-",
+    "value" : ["DBDBDB", "B5B5B5", "848484", "4C4C4C"]
+  }
+]

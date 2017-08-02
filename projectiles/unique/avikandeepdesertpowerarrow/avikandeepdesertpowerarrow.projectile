@@ -1,0 +1,78 @@
+{
+  "projectileName" : "avikandeepdesertpowerarrow",
+  "physics" : "avikanharpoon",
+  "bounces" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "avikandeepdesertpowerarrow.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "emitters" : [ "daggerblue", "deepdesertspiketrail" ],
+  "power" : 50,
+  "speed" : 120,
+  "timeToLive" : 30,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    },
+	{
+	  "action" : "sound",
+      "options" : [ "/sfx/projectiles/sandstalkersbane_shatter.ogg" ]
+	},
+	{
+      "action" : "projectile",
+      "type" : "avikandeepdesertarrowsticking",
+      "inheritDamageFactor" : 0.0,
+      "inheritSpeedFactor" : 0.9,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikandeepdesertspike",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikandeepdesertspike",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikandeepdesertspike",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikandeepdesertspike",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikandeepdesertspike",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikandeepdesertspike",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    }
+  ],
+  "damageKind" : "avikanhunting",
+  "hydrophobic" : false,
+  "statusEffects" : [
+    "thea-bleeding"
+  ]
+}

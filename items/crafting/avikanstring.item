@@ -1,0 +1,10 @@
+{
+  "itemName" : "avikanstring",
+  "price" : 5,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "avikanstring.png",
+  "description" : "Hard and tough, this string is perfect for sewing together pieces of leather.",
+  "shortdescription" : "Tough String",
+  "itemTags" : [ "reagent" ]
+}

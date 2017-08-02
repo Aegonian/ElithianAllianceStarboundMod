@@ -1,0 +1,20 @@
+{
+  "id" : "avikanrhadeis1",
+  "species" : "avikan",
+  "title" : "Rhadeis - Part 1",
+  "description" : "Notes on Rhadeis, by Izyati as-Kaladan.",
+  "icon" : "avikanrhadeis1.png",
+  "contentPages" : [
+
+    "Vas Vha'leih, dear reader. In this series of short scrolls, I, Izyati as-Kaladan, will try to briefly explain who and what Rhadeis is, what he was believed to be, and what he means to Avikan society.",
+
+    "Rhadeis was once considered to be a god. A mythical being that saw all, knew all, and influenced the world in many ways. He was believed to be the harbinger of life and death, and the guardian of our people. But this was before the discovery of Vas Vha'leih - the first city of the Old Ones. Nowadays we know that Rhadeis was no god, no mythical being - he was in fact an Old One.",
+    
+    "The Old Ones are a topic for another series of scrolls entirely, but in short, they are a race of ancient sentient aliens who visited Kadavan long before the Avikan lived there. They left behind many artefacts, both large and small, as well as two great cities, Vas Vha'leih and Vhalas Vha'leih."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

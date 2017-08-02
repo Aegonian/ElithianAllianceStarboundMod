@@ -1,0 +1,57 @@
+{
+  "objectName" : "alliancefridge",
+  "colonyTags" : ["alliance","cooking","storage"],
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "category" : "fridgeStorage",
+  "price" : 200,
+  "printable" : false,
+  "description" : "A refrigerator, for keeping food fresh.",
+  "shortdescription" : "Alliance Fridge",
+  "race" : "aegi",
+  "health" : 1.5,
+
+  "apexDescription" : "The perfect place to store some bananas.",
+  "avianDescription" : "A fridge. I hope there's some breadcrumbs in there.",
+  "floranDescription" : "Floran isss curiousss. What'ss insside?",
+  "glitchDescription" : "Satisfied. This fridge will prevent my food from going foul.",
+  "humanDescription" : "Just a fridge, nothing special.",
+  "hylotlDescription" : "A basic but functional fridge.",
+  "novakidDescription" : "A clean lookin' fridge.",
+
+  "aegiDescription" : "A standard model fridge.",
+  "avikanDescription" : "An alien refrigerator.",
+  "erixianDescription" : "I prefer my meals hot.",
+  "trinkDescription" : "An efficient fridge.",
+  "hymidDescription" : "This fridge will keep my food fresh.",
+  "notixDescription" : "Fridges like these aren't needed back home.",
+  "jorgasianDescription" : "A fridge, part of any decent Aeginian kitchen.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Refrigerated storage detected.",
+
+  "inventoryIcon" : "alliancefridgeicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "alliancefridge.png:<color>.<key>",
+
+      "imagePosition" : [0, 0],
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/fridge_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/fridge_close.ogg" ],
+  "slotCount" : 32,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600,
+
+  "itemAgeMultiplier" : 0.0,
+
+  "soundEffect" : "/sfx/objects/fridge_hum.ogg"
+}

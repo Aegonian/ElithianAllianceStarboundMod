@@ -1,0 +1,24 @@
+{
+  "projectileName" : "avikanexplosivebarrel",
+  "physics" : "default",
+  "bounces" : -1,
+  "timeToLive" : 0.01,
+  "speed" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "avikanexplosivebarrel.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/theabarrelexplosion/theabarrelexplosion.config"
+    }
+  ],
+  "power" : 80,
+  "piercing" : true,
+  "damageKind" : "hidden",
+  "damagePoly" : [ [-5, -5], [-5, 5], [5, 5], [5, -5]  ],
+  "flippable" : true,
+  "damageTeam" : { "type" : "indiscriminate" },
+  "knockback" : 30
+}

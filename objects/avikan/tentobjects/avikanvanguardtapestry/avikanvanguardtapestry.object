@@ -1,0 +1,53 @@
+{
+  "objectName" : "avikanvanguardtapestry",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 40,
+  "description" : "Wall tapestry decorated in the style of the Vanguard.",
+  "shortdescription" : "Vanguard Tapestry",
+  "race" : "avikan",
+
+  "apexDescription" : "Wall decoration. I don't recognize the symbol.",
+  "avianDescription" : "I wonder what this symbol represents",
+  "floranDescription" : "Floran likesss blood-red clothsss.",
+  "glitchDescription" : "Cautious. Red colours are often associated with war.",
+  "humanDescription" : "Wall tapestry dyed a deep red colour.",
+  "hylotlDescription" : "This wall decoration has a militaristic feel to it.",
+  "novakidDescription" : "Gotta wonder what that icon means.",
+
+  "aegiDescription" : "Wall decoration decorated in the style of the Avikan Vanguard.",
+  "avikanDescription" : "This tapestry was decorated in the style of the Vanguard.",
+  "erixianDescription" : "I've always thought red looks better with some gold trimmings.",
+  "trinkDescription" : "This tapestry was decorated for the Vanguard. They are not particularly fond of the Trink.",
+  "hymidDescription" : "I wonder what plant the Avikan extract this red dye from.",
+  "notixDescription" : "Some type of wall decoration.",
+  "jorgasianDescription" : "Bright-red wall decoration. This would look good in a Jorgasian home.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Scan completed. Vanguard wall decoration.",
+  
+  "inventoryIcon" : "avikanvanguardtapestryicon.png",
+  "orientations" : [
+    {
+      "image" : "avikanvanguardtapestry.png:<color>",
+      "imagePosition" : [-8, -16],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    },
+	{
+      "image" : "avikanvanguardtapestry.png:<color>",
+      "imagePosition" : [-8, -16],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ]
+}

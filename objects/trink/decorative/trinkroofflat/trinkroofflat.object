@@ -1,0 +1,59 @@
+{
+  "objectName" : "trinkroofflat",
+  "colonyTags" : ["trink"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 250,
+  "description" : "A large, pyramid-shaped roof. The flat top allows objects to be attached to the top.",
+  "shortdescription" : "Flat Trinkian Roof",
+  "race" : "trink",
+  
+  "health" : 8,
+
+  "apexDescription" : "A large modular roof.",
+  "avianDescription" : "A large, modular roof decorated with green lights.",
+  "floranDescription" : "Floran seesss big roof. Floran wonderss why roof iss so big.",
+  "glitchDescription" : "Fascinated. This modular roof piece is packed with sensors.",
+  "humanDescription" : "A large metal pyramid for a roof? Cool!",
+  "hylotlDescription" : "A grand metal roof. Surpisingly, it is packed with sensors and communication systems.",
+
+  "aegiDescription" : "The Trinks are big fans of modular buildings. This roof will fit on pretty much every Trinkian home.",
+  "avikanDescription" : "A large metal roof, built by machines.",
+  "erixianDescription" : "A large modular roof.",
+  "trinkDescription" : "Trinkian roofs are modular, and fit on top of almost any Trinkian structure.",
+  "hymidDescription" : "A large metal roof, built by the Notician robots.",
+  "notixDescription" : "Our Trinks are excellent at building modular structures.",
+  "jorgasianDescription" : "A large modular roof.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Readings indicate high amounts of sensors inside this structure.",
+
+
+  "inventoryIcon" : "trinkroofflaticon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "trinkroofflat.png:<color>", "fullbright" : true }, { "image" : "trinkroofflatlit.png:<color>" } ],
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "solid"
+    },
+	{
+      "imageLayers" : [ { "image" : "trinkroofflatinvert.png:<color>", "fullbright" : true }, { "image" : "trinkroofflatinvertlit.png:<color>" } ],
+
+      "imagePosition" : [0, -96],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ],
+      "collision" : "solid"
+    }
+  ]
+}

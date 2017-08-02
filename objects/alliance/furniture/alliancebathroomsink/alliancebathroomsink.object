@@ -1,0 +1,64 @@
+{
+  "objectName" : "alliancebathroomsink",
+  "colonyTags" : ["outpost"],
+  "rarity" : "Common",
+  "description" : "A basic bathroom sink.",
+  "shortdescription" : "Alliance Bathroom Sink",
+  "race" : "aegi",
+  "printable" : false,
+  "category" : "decorative",
+  "price" : 50,
+
+  "apexDescription" : "A basic sink.",
+  "avianDescription" : "A sink.",
+  "floranDescription" : "Splashy sssink.",
+  "glitchDescription" : "Neutral. A sink.",
+  "humanDescription" : "A sink. Maybe I should wash my hands...",
+  "hylotlDescription" : "Too small to swim in.",
+  "novakidDescription" : "A plain ol' sink.",
+
+  "aegiDescription" : "A simple bathroom sink. I should probably wash my hands.",
+  "avikanDescription" : "Some sort of water basin, for washing yourself in?",
+  "erixianDescription" : "A simplistic bathroom sink.",
+  "trinkDescription" : "A waste of good water.",
+  "hymidDescription" : "Refreshing water!",
+  "notixDescription" : "A bathroom sink. The Aegi use these to wash their hands.",
+  "jorgasianDescription" : "I can wash my hands here.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien water source.",
+
+  "inventoryIcon" : "alliancebathroomsinkicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "alliancebathroomsink.png:<color>",
+
+      "imagePosition" : [-8, -8],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background", "bottom" ]
+    }
+  ],
+
+  "scripts" : [ "/scripts/npcToyObject.lua" ],
+  "npcToy" : {
+    "influence" : [
+      "sink",
+      "sinkComplete"
+    ],
+    "defaultReactions" : {
+      "sink" : [
+        [1.0, "warmhands"]
+      ],
+      "sinkComplete" : [
+        [1.0, "smile"]
+      ]
+    },
+    "preciseStandPositionLeft" : [-1.0, 0.0],
+    "preciseStandPositionRight" : [1.0, 0.0],
+    "maxNpcs" : 1
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "avikanmetal", "count" : 1 },
+	{ "item" : "avikanvolatileliquid", "count" : 1 },
+	{ "item" : "avikanbattery", "count" : 1 }
+  ],
+  "output" : { "item" : "avikanexplosive", "count" : 3 },
+  "groups" : [ "avikanmetalcrafting", "consumables", "all" ]
+}

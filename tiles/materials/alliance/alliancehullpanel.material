@@ -1,0 +1,28 @@
+{
+  "materialId" : 30079,
+  "materialName" : "alliancehullpanel",
+  "particleColor" : [157, 157, 157, 255],
+  "itemDrop" : "alliancehullpanel",
+  "shortdescription" : "Alliance Hull Panel",
+
+  "description" : "Durable metal plating, often used in the construction of spacestations and spaceships.",
+  "glitchDescription" : "Observant. This material is durable enough for use in the construction of spacefaring vessels.",
+  "floranDescription" : "Shiny sssmooth space metal.",
+  "novakidDescription" : "Some thick metal plating, looks mighty solid.",
+  
+  "drodenDescription" : "Analysis complete. Hull plating. Generally used in the construction of spaceborn structures.",
+  
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "health" : 24,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "alliancehullpanel.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 5000
+  }
+}

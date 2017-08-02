@@ -1,0 +1,105 @@
+{
+  "itemName" : "avikantier6spear",
+  "price" : 900,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "An energy weapon used by high-ranking members of the Clanguard.",
+  "shortdescription" : "Clanguard Spear",
+  "tooltipKind" : "sword",
+  "category" : "spear",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spear","avikan"],
+
+  "inventoryIcon" : "avikantier6spearicon.png",
+
+  "animation" : "/items/active/weapons/melee/animations/thea-energyspear.animation",
+  "animationParts" : {
+    "handle" : "handle.png",
+    "handleFullbright" : "handlefullbright.png",
+    "blade" : "blade.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
+	  "charge" : ["/sfx/melee/charge_up13.ogg"],
+	  "chargefull" : ["/sfx/melee/charge_full_hold2.ogg"],
+	  "chargefire" : ["/sfx/melee/charge_full_swing3.ogg"]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/energymeleeweapon.lua"],
+  
+  "activeTime" : 3.0,
+
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "spearstab",
+  "primaryAbility" : {
+    "fireTime" : 0.95,
+    "baseDps" : 10.5
+  },
+
+  "altAbility" : {
+    "name" : "Energy Discharge",
+    "scripts" : ["/items/active/weapons/melee/abilities/hammer/energyexplosion/energyexplosion.lua"],
+	"class" : "EnergyExplosion",
+
+    "energyUsage" : 100.0,
+    "cooldownTime" : 3.5,
+
+    "chargeTime" : 2.0,
+    "minChargeTime" : 1.65,
+	
+	"dischargeEnergyCost" : 500,
+	
+	"useDynamicOffset" : true,
+	
+	"impactLine" : [ [1.25, -1.5], [1.25, -4.5] ],
+    "impactWeaponOffset" : 0.75,
+	
+	"projectileOffset" : [0, 1.5],
+
+    "projectileType" : "avikanenergyexplosionspawner",
+    "projectileParameters" : {
+      "power" : 18.0,
+      "knockbackMode" : "facing"
+    },
+
+    "stances" : {
+      "windup" : {
+        "armRotation" : 0,
+        "endArmRotation" : 110,
+        "weaponRotation" : 180,
+        "endWeaponRotation" : 130,
+        "weaponOffset" : [0, 0.5],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0.5,
+        "armRotation" : 0,
+        "weaponRotation" : -180,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+	  "cooldown" : {
+        "duration" : 1.5,
+        "armRotation" : -110,
+        "weaponRotation" : -20,
+        "weaponOffset" : [-0.125, 0.5],
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

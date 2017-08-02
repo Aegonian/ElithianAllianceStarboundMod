@@ -1,0 +1,55 @@
+{
+  "type" : "ao-deepdesertdweller",
+  "baseType" : "ao-civilian",
+
+  "npcname" : "Er'Alas",
+
+  "scriptConfig" : {
+  
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "If you haven't dwelled in the deepest deserts as I have, you have seen nothing yet."
+		  ]
+		},
+
+        "avikan" : {
+          "default" : [
+            "If you haven't dwelled in the deepest deserts as I have, you have seen nothing yet."
+          ],
+          "glitch" : [
+            "Even your robotic kind won't understand fear until you have dwelled in the deepest deserts as I have."
+          ],
+          "avikan" : [
+            "If you haven't dwelled in the deepest deserts as I have, you have seen nothing yet, Captain."
+          ],
+          "trink" : [
+            "Even your robotic kind won't understand fear until you have dwelled in the deepest deserts as I have."
+          ],
+          "droden" : [
+            "Even your robotic kind won't understand fear until you have dwelled in the deepest deserts as I have."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "avikan-cloakedhead", "parameters" : { "colorIndex" : 2 } }
+            ],
+            "chest" : [
+              { "name" : "avikan-cloakedchest", "parameters" : { "colorIndex" : 2 } }
+            ],
+            "legs" : [
+              { "name" : "avikan-cloakedlegs", "parameters" : { "colorIndex" : 2 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

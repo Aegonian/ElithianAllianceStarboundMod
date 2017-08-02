@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "trinkprimecircuitbroken", "count" : 1 },
+    { "item" : "primecore", "count" : 1 },
+    { "item" : "trinkdatadrive-primecircuit", "count" : 1 }
+  ],
+  "output" : { "item" : "trinkprimecircuit", "count" : 1 },
+  "groups" : [ "trinkcrafting3", "weapons", "all" ]
+}

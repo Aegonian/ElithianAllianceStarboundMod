@@ -1,0 +1,113 @@
+[
+	{
+	  "op": "add", 
+	  "path": "/collectables/largesandcrawleraf",
+	  "value": 		
+	  {
+	"order" : 68,
+	"item" : "largesandcrawleraf"
+	  }
+	},
+	{
+	  "op": "add", 
+	  "path": "/collectables/giantsandspitteraf",
+	  "value": 		
+	  {
+		"order" : 69,
+		"item" : "giantsandspitteraf"
+	  }
+	},
+	{
+	  "op": "add", 
+	  "path": "/collectables/kadavanswarmaf",
+	  "value": 		
+	  {
+		"order" : 70,
+		"item" : "kadavanswarmaf"
+	  }
+	},
+	{
+	"op": "add", 
+	  "path": "/collectables/kadavanvalahraf",
+	  "value": 		
+	  {
+		"order" : 71,
+		"item" : "kadavanvalahraf"
+	  }
+	},
+	{
+	  "op": "add", 
+	  "path": "/collectables/avikandroneaf",
+	  "value": 		
+	  {
+		"order" : 72,
+		"item" : "avikandroneaf"
+	  }
+	},
+	{
+	  "op": "add", 
+	  "path": "/collectables/avikanviolateddroneaf",
+	  "value": 		
+	  {
+		"order" : 73,
+		"item" : "avikanviolateddroneaf"
+	  }
+	},
+	{
+	  "op": "add", 
+	  "path": "/collectables/avikanlargedroneaf",
+	  "value": 		
+	  {
+		"order" : 74,
+		"item" : "avikanlargedroneaf"
+	  }
+	},
+	
+	{
+	  "op": "add", 
+	  "path": "/collectables/avikanlargeviolateddroneaf",
+	  "value": 		
+	  {
+		"order" : 75,
+		"item" : "avikanlargeviolateddroneaf"
+	  }
+	},
+	{
+	  "op": "add", 
+	  "path": "/collectables/avikanminidroneaf",
+	  "value": 		
+	  {
+		"order" : 76,
+		"item" : "avikanminidroneaf"
+	  }
+	},	
+	{
+	  "op": "add", 
+	  "path": "/collectables/trinkdroneaf",
+	  "value": 		
+	  {
+		"order" : 77,
+		"item" : "trinkdroneaf"
+	  }
+	},
+	//NEW MONSTERS - v2.1.7
+	{
+	  "op": "add", 
+	  "path": "/collectables/ghavorkanaf",
+	  "value": 		
+	  {
+		"order" : 78,
+		"item" : "ghavorkanaf"
+	  }
+	},
+	//NEW MONSTERS - v2.2.2
+	{
+	  "op": "add", 
+	  "path": "/collectables/ghavorkanaf",
+	  "value": 		
+	  {
+		"order" : 79,
+		"item" : "trinkminidroneaf"
+	  }
+	}
+]

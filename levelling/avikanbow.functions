@@ -1,0 +1,4 @@
+{
+  "avikanbowTimeMultiplier" : [ "linear", "clamp", [0, 0.2], [0.89, 1.0], [0.9, 1.25], [1.1, 1.25], [1.11, 1.0], [1.2, 1.0] ],
+  "avikanbowImageSelector" : [ "linear", "clamp", [0, 0], [0.9, 4], [1.1, 5] ]
+}

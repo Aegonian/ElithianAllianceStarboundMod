@@ -1,0 +1,53 @@
+{
+  "objectName" : "alliancetruck",
+  "colonyTags" : ["alliance","vehicle"],
+  "rarity" : "Legendary",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 2500,
+  "description" : "A heavy transport truck.",
+  "shortdescription" : "Alliance Truck",
+  "race" : "aegi",
+  
+  "health" : 6,
+
+  "apexDescription" : "A truck, for transporting heavy goods.",
+  "avianDescription" : "This vehicle is good for transporting heavy cargo.",
+  "floranDescription" : "Floran mussst not get in the way of ground crussher...",
+  "glitchDescription" : "Statement. This truck can easily move heavy cargo.",
+  "humanDescription" : "This truck reminds me of home.",
+  "hylotlDescription" : "Not the most elegant vehicle, but it will transport heavy cargo with ease.",
+  "novakidDescription" : "A truck, for truckin' around in.",
+
+  "aegiDescription" : "This truck can easily transport heavy cargo.",
+  "avikanDescription" : "An alien ground vehicle. It looks like a transport vessel.",
+  "erixianDescription" : "A standard Alliance truck model, designed by Aeginian engineers.",
+  "trinkDescription" : "The most common model of Alliance transport trucks.",
+  "hymidDescription" : "A truck designed by ASA engineers.",
+  "notixDescription" : "This truck has a magnetic bed, so cargo doesn't have to be tied to the vehicle.",
+  "jorgasianDescription" : "Aeginian ground transport, for moving heavy cargo.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected unidentified vehicle.",
+
+  "inventoryIcon" : "alliancetruckicon.png",
+  "orientations" : [
+    {
+      "image" : "alliancetruck.png:<color>",
+      "imagePosition" : [-80, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+	{
+      "image" : "alliancetruckleft.png:<color>",
+      "imagePosition" : [-80, 0],
+      "direction" : "left",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

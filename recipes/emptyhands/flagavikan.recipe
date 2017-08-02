@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "avikandarkmetal", "count" : 1 },
+    { "item" : "monsterleather", "count" : 10 }
+  ],
+  "output" : {
+    "item" : "flagavikan",
+    "count" : 1
+  },
+  "groups" : [ "plain", "all" ],
+  "duration" : 0.5
+}

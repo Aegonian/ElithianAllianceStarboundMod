@@ -1,0 +1,15 @@
+{
+  "itemName" : "violatedioncore",
+  "price" : 500,
+  "rarity" : "Legendary",
+  "category" : "Quest Item",
+  "inventoryIcon" : "violatedioncore.png",
+  "description" : "The core of a Violated Elite Drahl's Ion Cannon.",
+  "shortdescription" : "^#BA66FF;Violated Ion Core^white;",
+  "itemTags" : [ "questitem" ],
+  
+  "pickupQuestTemplates" : [ "violatedioncannon" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 5
+}

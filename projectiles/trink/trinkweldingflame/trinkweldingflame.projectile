@@ -1,0 +1,22 @@
+{
+  "projectileName" : "trinkweldingflame",
+  "physics" : "flame",
+  "bounces" : 4,
+  "image" : "trinkweldingflame.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 6,
+  "power" : 50,
+  "speed" : 20,
+  "supportsProcessing" : true,
+  "lightColor" : [20, 160, 235],
+  "fullbright" : true,
+  "timeToLive" : 0.15,
+  "piercing" : true,
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "damageKind" : "fire",
+  "damageKindImage" : "/interface/statuses/fire.png",
+  "statusEffects" : [
+    "burning"
+  ],
+  "hydrophobic" : true
+}

@@ -1,0 +1,87 @@
+{
+  "type" : "ao-lostandfoundmerchant",
+  "baseType" : "ao-wandermerchant",
+
+  "scriptConfig" : {    
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "poolsFile" : "/npcs/merchantpools.config",
+      
+	  "categories" : {
+        "override" : [ "avikanlostandfound" ]
+      },
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 99,
+	  
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "Lost and Found",
+          "subtitle" : "  Recover lost unique equipment"
+        }
+      }
+    },
+	
+	"dialog" : {
+      "merchant" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "Take a good look around. I'm sure you'll find what you're looking for."
+            ]
+          }
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "Return to me if you've ever lost something special."
+            ]
+          }
+        },
+        "follow" : {
+          "default" : {
+            "default" : [
+              "Please, follow me to my supplies."
+            ]
+          }
+        },
+        "welcome" : {
+          "default" : {
+            "default" : [
+              "Here we are. Let's see if I have anything for you..."
+            ]
+          }
+        },
+        "tout" : {
+          "default" : {
+            "default" : [
+              "Have you ever lost anything special? I might be able to find it for you, for a small price."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "avikan-merchanthead", "parameters" : { "colorIndex" : 9 } }
+            ],
+            "chest" : [
+              { "name" : "avikan-tacticalchest", "parameters" : { "colorIndex" : 9 } }
+            ],
+            "legs" : [
+              { "name" : "avikan-travellerlegs", "parameters" : { "colorIndex" : 9 } }
+            ],
+            "back" : [
+              { "name" : "avikanmodernpack", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

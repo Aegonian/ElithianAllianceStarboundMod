@@ -1,0 +1,12 @@
+{
+  "name" : "zaheedteleport",
+  "effectConfig" : {
+  },
+  "defaultDuration" : 0.5,
+
+  "scripts" : [
+    "zaheedteleport.lua"
+  ],
+
+  "animationConfig" : "zaheedteleport.animation"
+}

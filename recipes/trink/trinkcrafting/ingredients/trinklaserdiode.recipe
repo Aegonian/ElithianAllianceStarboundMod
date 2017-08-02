@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "trinkglassitem", "count" : 1 },
+	{ "item" : "trinkwiring", "count" : 2 }
+  ],
+  "output" : {
+	"item" : "trinklaserdiode",
+	"count" : 1
+  },
+  "groups" : [ "trinkcrafting", "ingredients", "all" ],
+  "duration" : 0.15
+}

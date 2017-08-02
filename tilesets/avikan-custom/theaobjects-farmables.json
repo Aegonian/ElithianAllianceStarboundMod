@@ -1,0 +1,65 @@
+{ "margin":0,
+ "name":"theaobjects-farmables",
+ "properties":
+    {
+
+    },
+ "spacing":0,
+ "tilecount":4,
+ "tileheight":32,
+ "tileproperties":
+    {
+     "0":
+        {
+         "\/\/shortdescription":"Wild Kadavan Cactus",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"wildavikancactusseed",
+         "tilesetDirection":"right"
+        },
+     "1":
+        {
+         "\/\/shortdescription":"Wild Kadavan Spiceplant",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"wildavikanspiceplantseed",
+         "tilesetDirection":"right"
+        },
+     "2":
+        {
+         "\/\/shortdescription":"Wild Bolbohn",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"wildbolbohnseed",
+         "tilesetDirection":"right"
+        },
+     "3":
+        {
+         "\/\/shortdescription":"Wild Dunestalk",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"wilddunestalkseed",
+         "tilesetDirection":"right"
+        }
+    },
+ "tiles":
+    {
+     "0":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/farmables\/wildavikancactusseed.png"
+        },
+     "1":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/farmables\/wildavikanspiceplantseed.png"
+        },
+     "2":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/farmables\/wildbolbohnseed.png"
+        },
+     "3":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/farmables\/wilddunestalkseed.png"
+        }
+    },
+ "tilewidth":16
+}

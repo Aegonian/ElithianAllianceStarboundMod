@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "monsterclaws", "count" : 3 },
+	{ "item" : "monsterplate", "count" : 1 },
+	{ "item" : "avikanstring", "count" : 2 }
+  ],
+  "output" : { "item" : "avikanjavelin2", "count" : 3 },
+  "groups" : [ "avikanbonecrafting2", "consumables", "all" ]
+}

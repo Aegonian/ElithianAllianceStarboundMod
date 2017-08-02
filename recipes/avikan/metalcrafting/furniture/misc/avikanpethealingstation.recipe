@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "avikanmetal", "count" : 5 },
+	{ "item" : "avikandarkmetal", "count" : 2 },
+	{ "item" : "avikanmacrochip", "count" : 1 },
+	{ "item" : "bolbohn", "count" : 2 },
+	{ "item" : "kadavancactus", "count" : 2 },
+	{ "item" : "avikanmeatchunk", "count" : 2 }
+  ],
+  "output" : { "item" : "avikanpethealingstation", "count" : 1 },
+  "groups" : [ "avikanmetalcrafting", "metalfurniture", "all" ]
+}

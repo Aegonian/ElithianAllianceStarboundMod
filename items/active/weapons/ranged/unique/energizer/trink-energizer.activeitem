@@ -1,0 +1,162 @@
+{
+  "itemName" : "trink-energizer",
+  "price" : 1500,
+  "inventoryIcon" : "trink-energizericon.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;An energy rifle built for tactical incursions.",
+  "shortdescription" : "^orange;HL-5 Energizer^white;",
+  "level" : 6,
+  "tooltipKind" : "thea-gun-unique",
+  "category" : "Directed Energy Rifle",
+  "itemTags" : ["weapon","ranged","laserrifle","trink","energy","theaUnique"],
+  "twoHanded" : true,
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "trink-energizer" },
+  
+  "meritTokenValue" : 100,
+
+  "animation" : "trink-energizer.animation",
+  "animationParts" : {
+    "middle" : "trink-energizer.png",
+    "middleFullbright" : "trink-energizerlights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/trinklaserflash.png",
+	"laserLight" : "trink-energizerlaserlight.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+		    "offset" : [0.6, 0.2]
+		  }
+		},
+		"laserLight" : {
+		  "properties" : {
+			"offset" : [0.6, 0.2]
+		  }
+		}
+      }
+    },
+	"particleEmitters" : {
+	  "muzzleFlash" : {
+        "particles" : [
+          { "particle" : "trinklasermuzzle" },
+		  { "particle" : "trinklasermuzzle" },
+		  { "particle" : "trinklasermuzzle" }
+        ]
+      }
+    },
+	"lights" : {
+      "flashlightSpread" : {
+        "active" : false,
+        "position" : [2.125, 0.45],
+        "transformationGroups" : ["weapon"],
+        "color" : [10, 80, 6]
+      },
+      "flashlight" : {
+        "active" : false,
+        "position" : [2.125, 0.45],
+        "transformationGroups" : ["weapon"],
+        "color" : [25, 200, 15],
+        "pointLight" : true,
+        "pointAngle" : 0.00,
+        "pointBeam" : 7.5
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/trink_energizer.ogg" ],
+	  "toggleLight" : [ "/sfx/tools/flashlight_toggle.ogg" ],
+	  "targetingLoop" : [ "/sfx/gun/thea_lasermarker_loop.ogg" ]
+    }
+  },
+  "animationScripts" : [
+    "/items/active/effects/thea-variablelaser.lua"
+  ],
+  "scriptedAnimationParameters" : {
+    "beams" : [
+      {
+        "offset" : [2.125, 0.45],
+        "length" : 60,
+        "segments" : 12,
+        "angle" : 0,
+		"width" : 1.5,
+		"renderLayer" : "Player-1"
+      }
+    ]
+  },
+
+  "baseOffset" : [0.6, 0.2],
+  "muzzleOffset" : [1.875, 0.2],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.12,
+    "baseDps" : 10.5,
+    "energyUsage" : 45.0,
+    "inaccuracy" : 0.022,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "trinklaserbulletbounce",
+    "projectileParameters" : {
+      "knockback" : 4,
+	  "bounces" : 4,
+	  "piercing" : true
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.025,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "altAbility" : {
+    "name" : "Target Marking",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-lasermarker/thea-lasermarker.lua"],
+	"class" : "TheaLaserMarker",
+	
+	"energyUsage" : 10,
+
+    "laserColourActive" : [34, 255, 19, 128],
+	"laserColourInactive" : [0, 0, 0, 0],
+	
+	//For use in entityLineQuery. Should be the same as values in beam animation config
+	"laserOffset" : [2.125, 0.45],
+	"maxSearchDistance" : 52
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

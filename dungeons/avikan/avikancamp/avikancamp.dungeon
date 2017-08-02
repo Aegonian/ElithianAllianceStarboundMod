@@ -1,0 +1,171 @@
+{
+  "metadata" : {
+    "name" : "avikancamp",
+    "species" : "avikan",
+    "rules" : [
+    ],
+    "anchor" : [ "avikancamp-eldertent", "avikancamp-eldertent2" ],
+    "gravity" : 80,
+    "maxRadius" : 100000,
+    "maxParts" : 12,
+    "extendSurfaceFreeSpace" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "avikancamp-sideright",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotConnectToPart", [ "avikancamp-eldertent", "avikancamp-eldertent2", "avikancamp-temple", "avikancamp-sideright", "avikancamp-sideleft" ] ]
+      ],
+      "def" : [ "tmx", "avikancamp-sideright.json" ],
+      "chance" : 0.1
+    },
+	{
+      "name" : "avikancamp-sideleft",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotConnectToPart", [ "avikancamp-eldertent", "avikancamp-eldertent2", "avikancamp-temple", "avikancamp-sideright", "avikancamp-sideleft" ] ]
+      ],
+      "def" : [ "tmx", "avikancamp-sideleft.json" ],
+      "chance" : 0.1
+    },
+	{
+      "name" : "avikancamp-well",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "avikancamp-well.json" ],
+      "chance" : 1
+    },
+	{
+      "name" : "avikancamp-tent1",
+      "rules" : [
+        [ "maxSpawnCount", [3] ],
+        [ "doNotConnectToPart", [ "avikancamp-tent1" ] ]
+      ],
+      "def" : [ "tmx", "avikancamp-tent1.json" ],
+      "chance" : 0.1
+    },
+	{
+      "name" : "avikancamp-tent2",
+      "rules" : [
+        [ "maxSpawnCount", [3] ],
+        [ "doNotConnectToPart", [ "avikancamp-tent2" ] ]
+      ],
+      "def" : [ "tmx", "avikancamp-tent2.json" ],
+      "chance" : 0.1
+    },
+	{
+      "name" : "avikancamp-tent3",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "avikancamp-tent3" ] ]
+      ],
+      "def" : [ "tmx", "avikancamp-tent3.json" ],
+      "chance" : 0.1
+    },
+	{
+      "name" : "avikancamp-tent4",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "avikancamp-tent4.json" ],
+      "chance" : 0.1
+    },
+	{
+      "name" : "avikancamp-tent5",
+      "rules" : [
+        [ "maxSpawnCount", [2] ]
+      ],
+      "def" : [ "tmx", "avikancamp-tent5.json" ],
+      "chance" : 0.1
+    },
+	{
+      "name" : "avikancamp-tent6",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "avikancamp-tent6.json" ],
+      "chance" : 0.1
+    },
+	{
+      "name" : "avikancamp-keff",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "avikancamp-keff" ] ]
+      ],
+      "def" : [ "tmx", "avikancamp-keff.json" ],
+      "chance" : 0.1
+    },
+	{
+      "name" : "avikancamp-eldertent",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ],
+		[ "doNotCombineWith", [ "avikancamp-eldertent2" ] ],
+        [ "doNotConnectToPart", [ "avikancamp-temple" ] ]
+      ],
+      "def" : [ "tmx", "avikancamp-eldertent.json" ],
+      "chance" : 1
+    },
+	{
+      "name" : "avikancamp-eldertent2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ],
+		[ "doNotCombineWith", [ "avikancamp-eldertent" ] ],
+        [ "doNotConnectToPart", [ "avikancamp-temple" ] ]
+      ],
+      "def" : [ "tmx", "avikancamp-eldertent2.json" ],
+      "chance" : 1
+    },
+	{
+      "name" : "avikancamp-temple",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "avikancamp-temple.json" ],
+      "chance" : 0.5
+    },
+	{
+      "name" : "avikancamp-market",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "avikancamp-market.json" ],
+      "chance" : 1
+    },
+	{
+      "name" : "avikancamp-gadhurranch",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "avikancamp-gadhurranch.json" ],
+      "chance" : 0.5
+    },
+	{
+      "name" : "avikancamp-farm",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "avikancamp-farm.json" ],
+      "chance" : 0.5
+    },
+	{
+      "name" : "avikancamp-teleporter",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "avikancamp-teleporter.json" ],
+      "chance" : 0.5
+    }
+  ]
+}

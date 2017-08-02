@@ -1,0 +1,104 @@
+{
+  "itemName" : "avikantier4huntingspear",
+  "price" : 900,
+  "level" : 4,
+  "maxStack" : 1,
+  "rarity" : "uncommon",
+  "description" : "Harvest special materials from monsters.",
+  "shortdescription" : "Elder's Spear",
+  "tooltipKind" : "sword",
+  "category" : "Hunting Spear",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spear"],
+  
+  "radioMessagesOnPickup" : [ "pickupavikanhunting" ],
+
+  "inventoryIcon" : "avikantier4huntingspear.png:idle",
+
+  "animation" : "/items/active/weapons/melee/animations/thea-throwablehuntingspear.animation",
+  "animationParts" : {
+    "blade" : "avikantier4huntingspear.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_spear.ogg" ],
+	  "throw" : [ "/sfx/melee/swing_spear.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "avikanhunting",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "spearstab",
+  "primaryAbility" : {
+    "fireTime" : 1.2,
+    "baseDps" : 9.0,
+	
+	"damageConfig" : {
+      "damageSourceKind" : "avikanhunting",
+      "statusEffects" : [ ],
+      "knockbackMode" : "aim",
+      "knockback" : 30,
+      "timeoutGroup" : "primary"
+    }
+  },
+
+  "altAbility" : {
+    "name" : "Spear Throw",
+    "scripts" : ["/items/active/weapons/melee/abilities/spear/spearthrow/spearthrow.lua"],
+	"class" : "SpearThrow",
+
+    "walkWhileFiring" : true,
+
+    "fireOffset" : [0.0, 0.0],
+
+    "energyPerShot" : 60,
+
+    "windupTime" : 0.9,
+	"cooldownTime" : 1.0,
+
+    "projectileType" : "avikantier4huntingspear",
+    "projectileParameters" : {
+      "speed" : 65,
+      "power" : 6
+    },
+
+    "stances" : {
+	  "windup" : {
+        "armRotation" : 50,
+        "weaponRotation" : -170,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "aiming" : {
+        "armRotation" : 130,
+        "weaponRotation" : -230,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : false
+      },
+      "fire" : {
+        "duration" : 0.3,
+        "armRotation" : 30,
+        "weaponRotation" : -320,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : false
+      },
+	  "cooldown" : {
+		"duration" : 0.25,
+        "armRotation" : -90,
+        "weaponRotation" : 0,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

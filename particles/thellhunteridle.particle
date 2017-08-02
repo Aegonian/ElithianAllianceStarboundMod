@@ -1,0 +1,22 @@
+{
+  "kind" : "thellhunteridle",
+  "definition" : {
+    "type" : "ember",
+    "size" : 2,
+    "color" : [255, 167, 25, 255],
+    "fade" : 0.9,
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.5,
+    "initialVelocity" : [0, 1],
+    "finalVelocity" : [0, 1],
+    "approach" : [0, 20],
+    "timeToLive" : 0.2,
+    "light" : [100, 65, 0],
+    "layer" : "middle",
+    "variance" : {
+      "initialVelocity" : [0, 2],
+      "size" : 0.5
+    },
+	"collidesLiquid" : false
+  }
+}

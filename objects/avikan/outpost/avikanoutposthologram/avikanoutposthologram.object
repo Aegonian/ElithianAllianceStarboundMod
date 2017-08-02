@@ -1,0 +1,84 @@
+{
+  "objectName" : "avikanoutposthologram",
+  "colonyTags" : ["droden"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 40,
+  "description" : "A holographic Avikan interface.",
+  "shortdescription" : "Virtual Guide Azana",
+  "race" : "avikan",
+  "lightColor" : [50, 32, 0],
+  
+  "offeredQuests" : [
+	"avikanoutpostscanning"
+  ],
+  "turnInQuests" : [
+    "avikanoutpostscanning"
+  ],
+
+  "apexDescription" : "A holographic interface. Perhaps she might tell me about this place?",
+  "avianDescription" : "Perhaps this holographic interface can show me the way.",
+  "floranDescription" : "Floran talkss to light persson. Light perssson iss nice.",
+  "glitchDescription" : "Eager. Perhaps this holographic interface can show me the way.",
+  "humanDescription" : "A holographic interface. She looks lovely.",
+  "hylotlDescription" : "A holographic interface. She might be able to guide me.",
+  "novakidDescription" : "This hologram shines like the mornin' sun. Perhaps I should talk to her.",
+
+  "aegiDescription" : "A holographic guide. She might be able to tell me more about this place.",
+  "avikanDescription" : "A virtual guide, programmed to teach newcomers about this place. I might learn something from her myself.",
+  "erixianDescription" : "A holographic guide. She might be able to tell me more about this place.",
+  "trinkDescription" : "A holographic guide. She might be able to tell me more about this place.",
+  "hymidDescription" : "A holographic guide. She might be able to tell me more about this place.",
+  "notixDescription" : "A holographic guide. She might be able to tell me more about this place.",
+  "jorgasianDescription" : "A holographic guide. She might be able to tell me more about this place.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Virtual guide detected. Recommend interaction to learn valuable intel.",
+
+  "inventoryIcon" : "avikanoutposthologramicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "avikanoutposthologram.png:<color>.<frame>", "fullbright" : true }, { "image" : "avikanoutposthologramlit.png:<color>.<frame>" } ],
+      "imagePosition" : [0, 0],
+      "frames" : 20,
+      "animationCycle" : 2.0,
+      "lightPosition" : [2, 2],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/scripts/thea-talkingobject.lua" ],
+  "scriptDelta" : 20,
+
+  "chatLines" : [
+    "Welcome to the Starfarer's Refuge, new arrival! I am Azana, your virtual guide.",
+	"The Starfarer's Refuge is a safe haven for all Starfarers, and offers various services to aid your journeys.",
+	"The Watchers' Offices can be found on the top floor of the station.",
+    "For job inquiries, please report to the Council of Elders representative on the floor above us.",
+    "Contact the Vanguard representative for inquiries about military ventures.",
+	"The Translocator Store offers various personal teleportation devices.",
+	"Tokens of Merit can be exchanged for materials at the Token Exchange.",
+	"Weapon blueprints can be acquired from Ayurin's Weapon Workshop.",
+	"Droden Legionnaire Units can be recruited using the Droden Legion Terminal.",
+	"New vehicles can be purchased at Jahkar's Licensed Vehicles in the shipyard below.",
+	"Vehicles can be repaired at Valyan's Vehicle Workshop.",
+	"Refreshments can be purchased at the Starsight Inn Bar.",
+	"The local Rhaiod temple can be found on the ground floor.",
+	"Please do not disturb the Droden workers from their duties.",
+	"Do not disturb the guards unnecessarily.",
+	"Keep out of the piping systems for your own safety.",
+	"Handle your weapons with care during your stay at the Starfarer's Refuge.",
+	"Please be careful not to step on any of the sandworms that call this station their home.",
+	"Respect your fellow Starfarers, and they shall respect you in turn.",
+	"Beware the asteroid field when you depart from the Starfarer's Refuge.",
+	"Thank you for using this Anakhar Systems Virtual Guide, and enjoy your stay. Vas Vha'leih."
+  ],
+
+  //Mouth position is relative to the top-left corner of the object
+  "mouthPosition" : [0, 0],
+  "questIndicatorPosition" : [0.5, -0.5]
+}

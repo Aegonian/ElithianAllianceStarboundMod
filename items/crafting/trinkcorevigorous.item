@@ -1,0 +1,10 @@
+{
+  "itemName" : "trinkcorevigorous",
+  "price" : 250,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "trinkcorevigorous.png",
+  "description" : "A power core for Circuit armour. Increases the user's health reserves.",
+  "shortdescription" : "Circuit Core-S",
+  "itemTags" : [ "reagent" ]
+}

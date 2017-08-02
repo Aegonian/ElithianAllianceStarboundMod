@@ -1,0 +1,19 @@
+{
+  "projectileName" : "xanafianexplosionmedium",
+  "image" : "xanafianexplosionmedium.png",
+  "physics" : "thea-noclipprojectile",
+  "animationCycle" : 0.4,
+  "frameNumber" : 5,
+  "speed" : 0,
+  "lightColor" : [127, 201, 255],
+  "pointLight" : true,
+  "fullbright" : true,
+  "statusEffects" : [ "shadowmarked" ],
+  "damagePoly" : [ [-31, 0], [-23, -23], [0, -31], [23, -23], [31, 0], [23, 23], [0, 31], [-23, 23] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "damageKind" : "xanafian",
+  "knockback" : 40
+}

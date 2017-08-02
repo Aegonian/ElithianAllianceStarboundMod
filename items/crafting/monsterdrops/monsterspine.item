@@ -1,0 +1,13 @@
+{
+  "itemName" : "monsterspine",
+  "price" : 300,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "monsterspine.png",
+  "description" : "An alien monster's spine.",
+  "shortdescription" : "Monster Spine",
+  "itemTags" : [ "reagent" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 5
+}

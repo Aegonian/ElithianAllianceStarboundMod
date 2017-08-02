@@ -1,0 +1,49 @@
+{
+  "type" : "ao-avikanseeker",
+  "baseType" : "ao-lounger",
+
+  "npcname" : "Vanhas",
+
+  "scriptConfig" : {
+    	
+	"offeredQuests" : [ "weaponrestorationavikan", "weaponrestorationavikan2" ],
+	"turnInQuests" : [ "weaponrestorationavikan" ],
+  
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "If you find any ancient ruins on your journeys, please do inform me."
+		  ]
+		},
+
+        "avikan" : {
+          "default" : [
+            "If you find any ancient ruins on your journeys, please do inform me."
+          ],
+          "avikan" : [
+			"Ruins of the Old Ones are scattered throughout the galaxy. Find them, Captain."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "avikan-seekerhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "avikan-seekerchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "avikan-seekerlegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

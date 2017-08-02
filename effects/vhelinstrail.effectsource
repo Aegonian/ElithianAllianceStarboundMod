@@ -1,0 +1,24 @@
+{
+  "kind" : "vhelinstrail",
+  "location" : "mouth",
+  "definition" : {
+    "duration" : 0.005,
+    "loops" : true,
+    "start" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [ [ ] ]
+    },
+    "particles" : [
+      [ "vhelinsswoosh" ]
+    ],
+    "sounds" : [ [ ] ],
+    "stop" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [ [ ] ]
+    }
+  }
+}

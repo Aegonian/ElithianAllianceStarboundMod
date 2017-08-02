@@ -1,0 +1,52 @@
+{
+  "projectileName" : "avikanpoisonspikes",
+  "image" : "avikanpoisonspike.png",
+  "animationCycle" : 0.25,
+  "physics" : "grenade",
+  "frameNumber" : 1,
+  "pointLight" : false,
+  "onlyHitTerrain" : true,
+  "speed" : 30,
+  "power" : 5.0,
+  "damageKind" : "default",
+  "timeToLive" : 0.01,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "avikanpoisonspike",
+      "inheritDamageFactor" : 1,
+      "inheritSpeedFactor" : 1,
+      "angleAdjust" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "avikanpoisonspike",
+      "inheritDamageFactor" : 1,
+      "inheritSpeedFactor" : 1,
+      "angleAdjust" : 15
+    },
+    {
+      "action" : "projectile",
+      "type" : "avikanpoisonspike",
+      "inheritDamageFactor" : 1,
+      "inheritSpeedFactor" : 1,
+      "angleAdjust" : -15
+    },
+    {
+      "action" : "projectile",
+      "type" : "avikanpoisonspike",
+      "inheritDamageFactor" : 1,
+      "inheritSpeedFactor" : 1,
+      "angleAdjust" : 30
+    },
+    {
+      "action" : "projectile",
+      "type" : "avikanpoisonspike",
+      "inheritDamageFactor" : 1,
+      "inheritSpeedFactor" : 1,
+      "angleAdjust" : -30
+    }
+  ]
+}
+
+

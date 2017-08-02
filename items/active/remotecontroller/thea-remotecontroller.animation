@@ -1,0 +1,85 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "controller" : {
+        "default" : "inactive",
+        "states" : {
+          "inactive" : {
+            "frames" : 1
+          },
+          "active" : {
+            "frames" : 4,
+            "cycle" : 0.8,
+            "mode" : "loop"
+          },
+          "searching" : {
+            "frames" : 2,
+            "cycle" : 0.4,
+            "mode" : "loop"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "casing" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "offset" : [0.0, 0.0]
+        },
+        "partStates" : {
+          "controller" : {
+            "inactive" : {
+              "properties" : {
+                "image" : "<partImage>:inactive.<frame>"
+              }
+            },
+            "active" : {
+              "properties" : {
+                "image" : "<partImage>:active.<frame>"
+              }
+            },
+            "searching" : {
+              "properties" : {
+                "image" : "<partImage>:searching.<frame>"
+              }
+            }
+          }
+        }
+      },
+	  "lights" : {
+        "properties" : {
+          "zLevel" : 1,
+		  "centered" : true,
+		  "fullbright" : true,
+          "offset" : [0.0, 0.0]
+        },
+        "partStates" : {
+          "controller" : {
+            "inactive" : {
+              "properties" : {
+                "image" : "<partImage>:inactive.<frame>"
+              }
+            },
+            "active" : {
+              "properties" : {
+                "image" : "<partImage>:active.<frame>"
+              }
+            },
+            "searching" : {
+              "properties" : {
+                "image" : "<partImage>:searching.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "sounds" : {
+    "placeOk" : ["/sfx/tech/vehicle_appear1.ogg"],
+    "placeBad" : ["/sfx/interface/clickon_error.ogg"]
+  }
+}

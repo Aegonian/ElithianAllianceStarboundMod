@@ -1,0 +1,19 @@
+{
+  "projectileName" : "errasslayersdebris",
+  "physics" : "grenade",
+  "bounces" : 1,
+  "damageKindImage" : "icon.png",
+  "image" : "errasslayersdebris.png",
+  "animationCycle" : 1.2,
+  "frameNumber" : 4,
+  "onlyHitTerrain" : true,
+  "emitters" : [ "errasslayersdebristrail" ],
+  "power" : 0,
+  "speed" : 45,
+  "timeToLive" : 1.2,
+  "supportsProcessing" : true,
+  "lightColor" : [100, 65, 0],
+  "fullbright" : true,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

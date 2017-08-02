@@ -1,0 +1,25 @@
+{
+  "kind" : "violatediontrail2",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/violatediontrail/violatediontrail.animation",
+    "position" : [0, 0],
+    "initialVelocity" : [1, 1],
+    "finalVelocity" : [0, 0],
+	"fullbright" : true,
+    "light" : [120, 0, 0],
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.85,
+    "fade" : 1,
+    "size" : 0.8,
+    "layer" : "middle",
+    "timeToLive" : 0.8,
+    "variance" : {
+      "initialVelocity" : [-1, -1],
+	  "size" : 0.6,
+	  "timeToLive" : 0.3,
+      "rotation" : 180
+    },
+	"collidesLiquid" : false
+  }
+}

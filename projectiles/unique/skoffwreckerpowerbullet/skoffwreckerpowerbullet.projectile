@@ -1,0 +1,23 @@
+{
+  "projectileName" : "skoffwreckerpowerbullet",
+  "image" : "skoffwreckerpowerbullet.png",
+  "physics" : "laser",
+  "bounces" : 0,
+  "piercing" : false,
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "emitters" : [ "linerifletrail", "linerifletrail2", "linerifleswoosh", "skoffwreckertrail" ],
+  "damageKindImage" : "icon.png",
+  "lightColor" : [150, 100, 0],
+  "fullbright" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+	  "file" : "/projectiles/explosions/linerifleimpact/linerifleimpact.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 160,
+  "timeToLive" : 1.5,
+  "damageKind" : "linerifle"
+}

@@ -1,0 +1,288 @@
+{
+  "type" : "trinkdrone",
+  "shortdescription" : "Trinkian Drone",
+  "description" : "A utility drone with minor combat capabilities.",
+
+  "categories" : [ "trinkdrone" ],
+  "parts" : [ "body", "lights" ],
+
+  "animation" : "trinkdrone.animation",
+
+  "dropPools" : [ { "default" : "trinkdroneTreasure", "bow" : "trinkdroneHunting", "electromagneticextractor" : "electromagneticextractorTreasure" } ],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+
+    "behavior" : "monster",
+    "deathBehavior" : "monster-death",
+
+    "seeThroughLiquid" : false,
+    "behaviorConfig" : {
+      "damageOnTouch" : true,
+
+      "targetQueryRange" : 25,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : true,
+      "keepTargetInRange" : 55,
+      "targetOutOfSightTime" : 5.0,
+
+      "foundTargetActions" : [ ],
+
+      "fleeActions" : [ ],
+
+      "hostileActions" : [ 
+       {
+          "name" : "action-fire",
+          "cooldown" : 2.5,
+          "parameters" : {
+            "requireLineOfSight" : true,
+            "maximumRange" : 25,
+            "minimumRange" : 10,
+            "windupState" : "firewindup",
+            "windupTime" : 1.0,
+
+            "projectileType" : "trinkdronebullet",
+            "projectileParameters": {
+			  "power" : 10.0
+			},
+            "fireOffset" : [0.5, 0.0],
+            "aimAtTarget" : true,
+            "onGround" : false,
+            "fireState" : "winduploop",
+            "fireSound" : "fire",
+            "fireDelay" : 0.25,
+
+            "fireArc": false,
+            "projectileSpeed": 60,
+
+            "winddownState" : "fire",
+            "winddownTime" : 0.4
+          }
+        },
+		{
+          "name" : "action-swoop",
+          "cooldown" : 7.0,
+          "parameters" : {
+            "minimumRange" : 3,
+            "maximumRange" : 20,
+            "onGround" : false,
+            "windupTime" : 0.0,
+			"windupState": "fly",
+
+            "gravityMultiplier" : -0.5,
+            "collisionCheck" : true,
+            "highArc" : false,
+            "swoopTime" : 0.75,
+			"swoopVelocity" : 22,
+			"swoopState" : "winduploop",
+
+            "winddownTime" : 1.0,
+            "winddownState" : "fly",
+            "winddownStopForce" : 5
+          }
+        }
+      ],
+
+      "periodicActions" : [
+       ],
+
+      "approachActions" : [
+        {
+          "name" : "approach-fly",
+          "parameters" : {
+            "minRange" : 5,
+            "maxRange" : 10,
+            "groundDistance" : 5
+          }
+        }
+      ],
+
+      "followActions" : [
+        {
+          "name" : "approach-teleport",
+          "parameters" : {
+          }
+        },
+        {
+          "name" : "approach-fly",
+          "parameters" : {
+            "minRange" : 5,
+            "maxRange" : 20,
+            "groundDistance" : 5
+          }
+        }
+      ],
+
+      "wanderActions" : [
+        {
+          "name" : "wander-fly",
+          "parameters" : {
+            "wanderTime" : [1,4],
+            "groundDistance" : 5,
+            "ceilingDistance" : 5,
+            "xVelocity" : 5,
+            "yVelocity" : 10
+          }
+        }
+      ],
+
+      "deathActions" : [
+        {
+          "name" : "action-projectile",
+          "parameters" : {
+            "projectileCount" : 1,
+            "projectileType" : "avikandroneexplosion",
+            "projectileParameters" : {
+              "damageTeam" : { "type" : "enemy", "team" : 0 },
+			  "power" : 10.0
+            },
+            "aimDirection" : [0, 0],
+            "inaccuracy" : 0,
+            "fireOffset" : [0, 0]
+          }
+        }
+      ],
+
+      "concurrentActions" : [ ],
+
+      "concurrentHostileActions" : [ ]
+    },
+
+    "touchDamage" : {
+      "poly" : [ [0.4, 0.95],  [0.95, 0.4], [0.95, -0.4], [0.4, -0.95], [-0.4, -0.95], [-0.95, -0.4], [-0.95, 0.4], [-0.4, 0.95] ],
+      "damage" : 9,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "lash",
+      "knockback" : 20,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-4, -4, 4, 4],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [0.4, 0.95],  [0.95, 0.4], [0.95, -0.4], [0.4, -0.95], [-0.4, -0.95], [-0.95, -0.4], [-0.95, 0.4], [-0.4, 0.95] ],
+
+      "mass" : 1.0,
+      "walkSpeed" : 4,
+      "runSpeed" : 12,
+      "gravityEnabled" : false,
+
+      "airFriction" : 2.0,
+      "airForce" : 20,
+      "flySpeed" : 12
+    },
+
+    "bodyMaterialKind" : "robotic",
+
+    "knockoutTime" : 0.3,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "robotic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.5
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 9
+        },
+        "maxHealth" : {
+          "baseValue" : 52
+        },
+        "protection" : {
+          "baseValue" : 0.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+        "physicalResistance" : {
+          "baseValue" : 0.0
+        },
+        "fireResistance" : {
+          "baseValue" : 0.0
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "iceResistance" : {
+          "baseValue" : 0.0
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "electricResistance" : {
+          "baseValue" : -0.5
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "poisonResistance" : {
+          "baseValue" : 0.5
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "linerifleResistance" : {
+          "baseValue" : -0.5
+        },
+        "linerifleStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "centensianenergyResistance" : {
+          "baseValue" : 0.0
+        },
+        "centensianenergyStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "xanafianStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "bleedingImmunity" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -8],
+    "capturable" : true,
+    "captureHealthFraction" : 0.5,
+    "nametagColor" : [64, 200, 255],
+    "captureCollectables" : { "monsters" : "trinkdrone" }
+  }
+}

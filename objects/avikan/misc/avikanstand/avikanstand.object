@@ -1,0 +1,46 @@
+{
+  "objectName" : "avikanstand",
+  "colonyTags" : ["avikan", "commerce"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A metal stand, built to hold something important.",
+  "shortdescription" : "Avikan Stand",
+  "race" : "avikan",
+
+  "apexDescription" : "Ametal stand, build to hold something important.",
+  "avianDescription" : "This looks like it is made to hold something important.",
+  "floranDescription" : "Sstand for important itemsss.",
+  "glitchDescription" : "Statement. This looks like it was made to hold something of great value.",
+  "humanDescription" : "A stand, to hold something of great value.",
+  "hylotlDescription" : "This stand was built to prominently display a valuable item.",
+
+  "aegiDescription" : "A metal stand, built to hold some valuable item.",
+  "avikanDescription" : "These stands are generally used to display Centensian artefacts, or other valuable items.",
+  "erixianDescription" : "A stand for displaying some important item.",
+  "trinkDescription" : "An Avikan-built stand. It is generally used to display some important item.",
+  "hymidDescription" : "These stands are often used to display the artefacts of the Gods.",
+  "notixDescription" : "A simple but effective stand, for displaying something far more valuable.",
+  "jorgasianDescription" : "This stand was built to hold something of great vaue to its creators.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected stand. Purpose: to display a Centensian artefact.",
+
+  "inventoryIcon" : "avikanstandicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanstand.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}

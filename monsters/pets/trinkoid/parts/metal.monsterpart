@@ -1,0 +1,9 @@
+{
+  "name" : "metal",
+  "category" : "trinkoid",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "metal.png"
+  }
+}

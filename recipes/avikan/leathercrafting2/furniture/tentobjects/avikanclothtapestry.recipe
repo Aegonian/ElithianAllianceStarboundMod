@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "avikancloth", "count" : 3 },
+    { "item" : "avikanstring", "count" : 1 }
+  ],
+  "output" : { "item" : "avikanclothtapestry", "count" : 1 },
+  "groups" : [ "avikanleathercrafting2", "leatherfurniture", "all" ]
+}

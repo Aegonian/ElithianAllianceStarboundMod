@@ -1,0 +1,94 @@
+{
+  "type" : "avikancrafter",
+  "baseType" : "avikanvillager",
+
+  "scriptConfig" : {
+    "questGenerator" : { "pools" : [], "enableParticipation" : false },
+	
+	"offeredQuests" : [ "avikancrafting.gearup" ],
+	"turnInQuests" : [ "avikancrafting.gearup", "avikancrafting2.gearup" ],
+  
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "Hello, stranger.",
+			"Welcome, stranger."
+		  ]
+		},
+
+        "avikan" : {
+          "default" : [
+            "Come to see a true craftsman, have you?",
+			"Hello there, odd thing.",
+			"What brings you here, traveller?"
+          ],
+		  "human" : [
+            "Greetings, soft-skin.",
+			"Come to see a true craftsman, have you?",
+			"Hello there, soft-skin.",
+			"Come to craft something, soft-skin?"
+          ],
+          "apex" : [
+            "Are you any good at crafting weapons, hairy one?",
+			"Greetings, hairy one.",
+			"Come to craft something, hairy one?",
+			"All that hair must be pretty warm if you're wearing armor."
+          ],
+          "avian" : [
+            "I heard your kind likes shiny things.",
+			"Come to see me craft, have you?",
+			"Observe and learn, feathered one.",
+			"Are you here to craft something?"
+          ],
+          "floran" : [
+            "Are you here to craft something, plant?",
+			"Need me to craft you something, plant?",
+			"Come to see a true craftsman, have you?",
+			"Greetings, walking plant."
+          ],
+          "glitch" : [
+            "Hello there, metal one.",
+			"Who built you, exactly?",
+			"If you're here for part replacements, you've come to the wrong address."
+          ],
+		  "hylotl" : [
+            "Doesn't your gear get rusty when you go swimming?",
+			"Greetings, wet one.",
+			"Come to see a true artisan, have you?",
+			"My kind could learn a thing or two from your artisans."
+          ],
+          "avikan" : [
+            "Come to craft something, Captain?",
+			"Are you in need of new gear, Captain?",
+			"Greetings, Captain! Do you have any crafting blueprints to share?",
+			"Vas Vha'leih, Captain."
+          ],
+          "trink" : [
+            "Hello there, metal one.",
+			"Who built you, exactly?",
+			"If you're here for part replacements, you've come to the wrong address."
+          ],
+          "droden" : [
+            "Are you a repair frame, or a war frame? I can never tell the difference.",
+			"Are you any good at crafting, Droden?",
+			"I'd love to see the blueprints for you Droden some day.",
+			"Vas Vha'leih, Droden."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ "avikan-nomadicchest" ],
+            "legs" : [ "avikan-vanguardlegs" ],
+            "head" : [ "thea-hiddenhead" ]
+          }
+        ] ]
+    ]
+  }
+}

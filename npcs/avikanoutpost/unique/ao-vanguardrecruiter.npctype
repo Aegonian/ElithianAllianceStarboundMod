@@ -1,0 +1,71 @@
+{
+  "type" : "ao-vanguardrecruiter",
+  "baseType" : "ao-idle",
+
+  "npcname" : "Rokhan",
+
+  "scriptConfig" : {
+    "uniqueId" : "ao-vanguardrecruiter",
+	
+	"offeredQuests" : [ "avikangunrangeunlock" ],
+	"turnInQuests" : [ "avikangunrangeunlock" ],
+  
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "You think you have what it takes to join the Vanguard?"
+		  ]
+		},
+
+        "avikan" : {
+          "default" : [
+            "You think you have what it takes to join the Vanguard?"
+          ],
+		  "human" : [
+            "You think you have what it takes to join the Vanguard?"
+          ],
+          "apex" : [
+            "You think you have what it takes to join the Vanguard?"
+          ],
+          "avian" : [
+            "You think you have what it takes to join the Vanguard?"
+          ],
+          "floran" : [
+            "You think you have what it takes to join the Vanguard?"
+          ],
+          "glitch" : [
+            "I doubt the Vanguard has a place for you, but we'll see."
+          ],
+		  "hylotl" : [
+            "You think you have what it takes to join the Vanguard?"
+          ],
+		  "novakid" : [
+            "You think you have what it takes to join the Vanguard?"
+          ],
+          "avikan" : [
+            "The Vanguard could use a Captain such as yourself."
+          ],
+		  "trink" : [
+            "I doubt the Vanguard has a place for you, but we'll see."
+          ],
+		  "droden" : [
+            "The Vanguard uses many Droden, but none have enlisted out of their free will. Will you be the first?"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ "avikan-vanguardchest" ],
+            "legs" : [{ "name" : "avikan-vanguardlegs", "parameters" : { "colorIndex" : 4 } }],
+            "head" : [ "avikan-sunglass" ]
+          }
+        ] ]
+    ]
+  }
+}

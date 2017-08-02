@@ -1,0 +1,24 @@
+{
+  "kind" : "trinklasertrail",
+  "location" : "mouth",
+  "definition" : {
+    "duration" : 0.0001,
+    "loops" : true,
+    "start" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [ [ ] ]
+    },
+    "particles" : [
+      [ "trinklasertrail" ]
+    ],
+    "sounds" : [ [ ] ],
+    "stop" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [ [ ] ]
+    }
+  }
+}

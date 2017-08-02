@@ -1,0 +1,64 @@
+{
+  "objectName" : "avikanvehicleshop",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Legendary",
+  "description" : "It seems that vehicles can be purchased here.",
+  "shortdescription" : "Jahkar's Licensed Vehicles",
+  "race" : "avikan",
+  
+  "floranDescription" : "Floran can buy vehicless here.",
+  "glitchDescription" : "Observation. This merchant appears to be selling vehicles.",
+  "novakidDescription" : "Seems like the right place to buy me a new metal steed.",
+  
+  "avikanDescription" : "A Nomada-certified vehicle distributor. I'll need a license for most purchases, though.",
+  "drodenDescription" : "Merchant detected. Offers Nomada-certified vehicles.",
+  
+  "interactAction" : "OpenMerchantInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/merchant.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "Jahkar's Licensed Vehicles",
+        "subtitle" : "  Nomada-certified vehicles",
+        "icon" : {
+          "file" : "/interface/crafting/avikanvehicleshop.png"
+        }
+      }
+    },
+    "buyFactor" : 1.0,
+    "sellFactor" : 0.2,
+    "items" : [
+      { "item" : "avikantransmitter" },
+	  { "item" : "avikanjumpgatecore" },
+	  { "item" : "autochip" },
+      { "item" : "avikankeffcontroller", "prerequisiteQuest" : "keffrider4" },
+      { "item" : "avikanlightkeffcontroller", "prerequisiteQuest" : "keffrider4" },
+	  { "item" : "avikanhoverbikeobject" },
+	  { "item" : "avikanmechobject" },
+	  { "item" : "avikansmallship" },
+	  { "item" : "avikanaircraftobject" }
+    ]
+  },
+  "printable" : false,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "avikanvehicleshop.png:<frame>",
+      "direction" : "right",
+
+      "imagePosition" : [0, 0],
+      "frames" : 20,
+      "animationCycle" : 2.0,
+
+	  "spaces" : [
+        [2, 3], [3, 3],
+        [2, 2], [3, 2],
+        [2, 1], [3, 1],
+        [2, 0], [3, 0]
+      ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+
+}

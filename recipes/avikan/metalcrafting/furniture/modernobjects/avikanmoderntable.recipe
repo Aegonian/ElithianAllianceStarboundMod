@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "avikanmetal", "count" : 3 }
+  ],
+  "output" : { "item" : "avikanmoderntable", "count" : 1 },
+  "groups" : [ "avikanmetalcrafting", "metalfurniture", "all" ]
+}

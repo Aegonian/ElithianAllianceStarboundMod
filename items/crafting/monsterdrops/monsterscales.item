@@ -1,0 +1,15 @@
+{
+  "itemName" : "monsterscales",
+  "price" : 25,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "monsterscales.png",
+  "description" : "Bone scales from an alien monster.",
+  "shortdescription" : "Monster Scales",
+  "itemTags" : [ "reagent" ],
+  
+  "radioMessagesOnPickup" : [ "pickupmonsterscales" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 2
+}

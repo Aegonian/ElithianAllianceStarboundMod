@@ -1,0 +1,69 @@
+{
+  "objectName" : "avikangenerator",
+  "colonyTags" : ["avikan", "light"],
+  "rarity" : "Common",
+  "category" : "light",
+  "price" : 60,
+  "description" : "A generator, for generating energy.",
+  "shortdescription" : "Avikan Generator",
+  "race" : "avikan",
+  "printable" : false,
+  "hydrophobic" : false,
+  
+  "health" : 4,
+
+  "apexDescription" : "A powerful generator. Don't break the glass.",
+  "avianDescription" : "This generator generates enough power for an entire Avian town.",
+  "floranDescription" : "Floran wondersss what glowy ssstuff isss...",
+  "glitchDescription" : "Cautious. This generator looks unstable.",
+  "humanDescription" : "A powerful generator. Can it charge my phone?",
+  "hylotlDescription" : "This power generator looks unstable.",
+  "novakidDescription" : "I'm oddly attracted to this beam...",
+
+  "aegiDescription" : "A generator. It has to be monitored constantly to prevent explosions.",
+  "avikanDescription" : "This generator provides all the energy a Terve needs.",
+  "erixianDescription" : "An impressive generator.",
+  "trinkDescription" : "A powerful generator, but not very efficient.",
+  "hymidDescription" : "This generator looks like it could power an entire city.",
+  "notixDescription" : "An advanced generator. Powerful.",
+  "jorgasianDescription" : "A powerful generator.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Warning. Readings indicate dangerously high temperatures inside.",
+
+  "lightColor" : [221, 167, 133],
+  "flickerDistance" : 1.0,
+  "flickerStrength" : 0.1,
+
+  "inventoryIcon" : "avikangeneratoricon.png",
+  "orientations" : [
+    {
+      "image" : "avikangenerator.png:<color>.<frame>",
+      "imagePosition" : [-16, 0],
+      "frames" : 4,
+      "animationCycle" : 0.4,
+
+      "spaceScan" : 0.1,
+	  "anchors" : [ "top", "bottom" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/avikangenerator.ogg",
+  
+  "animation" : "avikangenerator.animation",
+  "animationParts" : {
+    "bg" : "avikangenerator.png",
+    "fg" : "avikangeneratorlit.png"
+  },
+  "animationPosition" : [-16, 0],
+
+  "scripts" : [ "avikangenerator.lua" ],
+  "scriptDelta" : 60,
+  
+  "defaultLightState" : true,
+  "interactive" : false,
+
+  "inputNodes" : [ [-2, 0] ]
+
+}

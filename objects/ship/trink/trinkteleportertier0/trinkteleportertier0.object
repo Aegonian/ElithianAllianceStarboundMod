@@ -1,0 +1,56 @@
+{
+  "objectName" : "trinkteleportertier0",
+  "colonyTags" : ["trink"],
+  "printable" : false,
+  "rarity" : "Common",
+  
+  "category" : "decorative",
+  "description" : "A broken teleporter. It's of little use in this state.",
+  "shortdescription" : "Teleporter",
+  "race" : "trink",
+
+  "apexDescription" : "This teleporter is broken.",
+  "avianDescription" : "I should get this teleporter fixed up.",
+  "floranDescription" : "Teleporter broken. Needss repairsss...",
+  "glitchDescription" : "Observation. This teleporter is broken.",
+  "humanDescription" : "A broken teleporter? This is won't do at all...",
+  "hylotlDescription" : "The ship needs repairs before this teleporter will function again.",
+  "novakidDescription" : "A broken teleporter? Now that won't do at all!",
+
+  "aegiDescription" : "The teleporter is broken.",  
+  "avikanDescription" : "The teleporter isn't working. I have to get it fixed.",
+  "erixianDescription" : "This teleporter isn't taking me anywhere until it gets some repairs.",
+  "trinkDescription" : "The teleporter is broken. I need to get it repaired.",
+  "hymidDescription" : "This teleporter isn't teleporting anything in this state.",
+  "notixDescription" : "There will be no teleporting until the ship gets fixed.",
+  "jorgasianDescription" : "A broken teleporter. It isn't taking me anywhere in this state.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Teleportation technology detected. Status: broken.",
+
+  "inventoryIcon" : "teleportericonTier0.png",
+  "orientations" : [
+    {
+      "image" : "trinkteleportertier0.png:<color>",
+      "imagePosition" : [-32, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "solid",
+      "collisionSpaces" : [ [-2, 0], [-1, 0], [0, 0], [1, 0], [-2, 9], [-1, 9], [0, 9], [1, 9] ],
+
+      "sitPosition" : [-8, 8]
+    }
+  ],
+
+  "animation" : "/objects/noisy/noisy.animation",
+
+  "scripts" : [
+    "/objects/noisy/noisy.lua"
+  ],
+  
+  "sounds" : [ "/sfx/interface/clickon_error.ogg" ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "villager_droden",
+  "priority": 3,
+
+  "colonyTagCriteria": {
+    "light": 1,
+    "door": 1,
+    "droden": 6
+  },
+
+  "tenants": [
+    {
+      "spawn": "npc",
+      "species": "droden",
+      "type": "tenantdrodenvillager",
+      "overrides": {}
+     }
+   ],
+
+  "rent": {
+    "periodRange": [900.0, 1800.0],
+    "pool": "avikanGift"
+  }
+}

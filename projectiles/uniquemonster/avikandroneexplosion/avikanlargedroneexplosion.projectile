@@ -1,0 +1,12 @@
+{
+  "projectileName" : "avikanlargedroneexplosion",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/avikanrocketexplosion/avikanrocketexplosion.config"
+    }
+  ],
+  "damageKind" : "default",
+  "timeToLive" : 0
+}

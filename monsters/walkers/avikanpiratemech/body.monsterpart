@@ -1,0 +1,9 @@
+{
+  "name" : "avikanpiratemech",
+  "category" : "avikanpiratemech",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "avikanpiratemech.png"
+  }
+}

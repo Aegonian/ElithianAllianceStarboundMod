@@ -1,0 +1,15 @@
+{
+  "itemName" : "monsterbone",
+  "price" : 10,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "monsterbone.png",
+  "description" : "A bone from an alien monster.",
+  "shortdescription" : "Monster Bone",
+  "itemTags" : [ "reagent" ],
+  
+  "radioMessagesOnPickup" : [ "pickupmonsterbone" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 1
+}

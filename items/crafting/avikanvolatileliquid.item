@@ -1,0 +1,10 @@
+{
+  "itemName" : "avikanvolatileliquid",
+  "price" : 10,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "avikanvolatileliquid.png",
+  "description" : "A highly volatile liquid, for crafting high explosives.",
+  "shortdescription" : "Volatile Liquid",
+  "itemTags" : [ "reagent" ]
+}

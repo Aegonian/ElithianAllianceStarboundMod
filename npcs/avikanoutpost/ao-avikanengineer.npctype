@@ -1,0 +1,51 @@
+{
+  "type" : "ao-avikanengineer",
+  "baseType" : "ao-civilian",
+
+  "scriptConfig" : {
+  
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "If you need someone to repair your vehicles, speak with Valyan as-Nadata.",
+			"Don't forget to schedule regular maintenance of your ship.",
+			"Your ship is a valuable asset. Make sure you treat it right."
+		  ]
+		},
+
+        "avikan" : {
+          "default" : [
+            "If you need someone to repair your vehicles, speak with Valyan as-Nadata.",
+			"Don't forget to schedule regular maintenance of your ship.",
+			"Your ship is a valuable asset. Make sure you treat it right."
+          ],
+          "avikan" : [
+            "If you need someone to repair your vehicles, speak with Valyan as-Nadata.",
+			"Don't forget to schedule regular maintenance of your ship.",
+			"Your ship is a valuable asset. Make sure you treat it right."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "avikan-engineerhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "avikan-modernchest", "parameters" : { "colorIndex" : 2 } },
+			  { "name" : "avikan-engineerchest", "parameters" : { "colorIndex" : 2 } }
+            ],
+            "legs" : [
+              { "name" : "avikan-engineerlegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

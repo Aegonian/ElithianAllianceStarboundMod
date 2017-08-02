@@ -1,0 +1,15 @@
+{
+  "itemName" : "mechbodyavikanproto",
+  "price" : 6400,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "category" : "mechPart",
+  "tooltipKind" : "mechbody",
+  "builder" : "/items/buildscripts/buildmechpart.lua",
+  "inventoryIcon" : "mechbodyavikanproto.png",
+  "description" : "A prototype open-top mech body, designed by the Vanguard.",
+  "shortdescription" : "Vanguard-00 Mech Body",
+  "itemTags" : [ ],
+
+  "mechPart" : ["body", "avikanproto"]
+}

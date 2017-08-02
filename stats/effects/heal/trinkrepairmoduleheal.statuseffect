@@ -1,0 +1,17 @@
+{
+  "name" : "trinkrepairmoduleheal",
+  "effectConfig" : {
+    "healAmount" : 500,
+    "emissionRate" : 3
+  },
+  "defaultDuration" : 30,
+
+  "scripts" : [
+    "heal.lua"
+  ],
+
+  "animationConfig" : "heal.animation",
+
+  "label" : "Healing",
+  "icon" : "/interface/statuses/heal.png"
+}

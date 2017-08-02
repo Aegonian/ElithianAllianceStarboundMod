@@ -1,0 +1,52 @@
+{
+  "type" : "ao-starfarer",
+  "baseType" : "ao-civilian",
+
+  "npcname" : "Nenehki",
+
+  "scriptConfig" : {
+    	
+	"offeredQuests" : [ "avikanstarfarer", "10ksubscribercelebration", "25ksubscribercelebration" ],
+	"turnInQuests" : [ "avikanstarfarer" ],
+  
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "To be a Starfarer is to be free."
+		  ]
+		},
+
+        "avikan" : {
+          "default" : [
+            "To be a Starfarer is to be free."
+          ],
+          "avikan" : [
+            "Greetings, my fellow Starfarer."
+          ],
+          "droden" : [
+            "A free Droden, and a Starfarer at that. Welcome."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "avikan-starfarerhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "avikan-keffriderchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "avikan-engineerlegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

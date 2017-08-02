@@ -1,0 +1,10 @@
+{
+  "type" : "tenantdrodenvillager",
+  "baseType" : "thea-villager",
+  
+  "dropPools" : [],
+
+  "scriptConfig" : {
+    "questGenerator" : { "pools" : [], "enableParticipation" : false }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name" : "thea-electricstun",
+  "blockingStat" : "electricStatusImmunity",
+
+  "effectConfig" : {
+	"minimumDuration" : 1,
+	"minTriggerDamage" : 1
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "thea-electricstun.lua"
+  ],
+
+  "animationConfig" : "thea-electricstun.animation",
+
+  "label" : "Stunned",
+  "icon" : "/interface/statuses/electric.png"
+}

@@ -1,0 +1,55 @@
+{
+  "itemName" : "avikan-nomadaspear",
+  "price" : 1080,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A metal spear built by craftsmen of the Nomada.",
+  "shortdescription" : "Nomada Spear",
+  "tooltipKind" : "sword",
+  "category" : "spear",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spear"],
+
+  "animation" : "/items/active/weapons/melee/spear/spear.animation",
+  "animationParts" : { },
+  "animationCustom" : { },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+  
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "spearstab",
+  "primaryAbility" : {
+    "fireTime" : [0.83, 1.11],
+    "baseDps" : [9.5, 10.5],
+    "damageConfig" : {
+      "knockbackRange" : [25, 35]
+    }
+  },
+  "fireSounds" : [ "/sfx/melee/swing_spear.ogg" ],
+
+  "builder" : "/items/buildscripts/buildweapon.lua",
+  "builderConfig" : [{
+    "nameGenerator" : "nomadaspearnames.config:nameGen",
+    "animationParts" : {
+      "blade" : {
+        "path" : "blade/<variant>.png",
+        "variants" : 5,
+        "paletteSwap" : false
+      },
+      "handle" : {
+        "path" : "handle/<variant>.png",
+        "variants" : 5,
+        "paletteSwap" : false
+      }
+    },
+    "altAbilities" : [
+      "flurry",
+      "spearspin"
+    ],
+    "palette" : "/items/active/weapons/colors/melee.weaponcolors",
+    "iconDrawables" : [ "handle", "blade" ]
+  }]
+}

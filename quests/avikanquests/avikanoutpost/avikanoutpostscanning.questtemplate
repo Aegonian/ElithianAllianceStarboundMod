@@ -1,0 +1,168 @@
+{
+  "id" : "avikanoutpostscanning",
+  "prerequisites" : [ ],
+  "title" : "The Starfarer's Refuge",
+  "text" : "Welcome to the Starfarer's Refuge, new arrival! I am ^orange;Azana^white;, your virtual guide. Please take the time to familiarize yourself with the many services offered in the ^orange;Starfarer's Refuge^white;. ^green;Scan areas of interest, and I will relay you information about the services provided there.",
+  "completionText" : "Thank you for using this Anakhar Systems Virtual Guide. I hope to have provided you with useful information today. Vas Vha'leih.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ ["avikanmerittoken", 5] ]
+  ],
+  "canBeAbandoned" : false,
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/clues.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "questStarted" : {
+        "portrait" : [ {"image" : "/objects/avikan/outpost/avikanoutposthologram/avikanoutposthologramportrait.png"} ],
+        "title" : "Azana"
+      },
+      "questComplete" : {
+        "portrait" : [ {"image" : "/objects/avikan/outpost/avikanoutposthologram/avikanoutposthologramportrait.png"} ],
+        "title" : "Azana"
+      }
+    },
+    "descriptions" : {
+      "findClues" : "^green;Scan objects^reset; to learn more about the ^orange;Starfarer's Refuge^reset;",
+      "turnIn" : "Return to ^orange;Azana^reset; in the ^orange;Starfarer's Refuge^reset;"
+    },
+    "turnInEntityUid" : "avikanoutposthologram",
+
+    "targetValue" : 100,
+    "objectValues" : {
+      "avikanoutposthologram" : 10,
+      "avikanmaterialmerchant" : 10,
+      "avikanmeritmerchant" : 10,
+      "avikanteleportshop" : 10,
+      "avikangunsmith" : 10,
+      "avikandrodenshop" : 10,
+      "avikanvehicleshop" : 10,
+      "avikanvehiclerepair" : 10,
+      "avikanoutpostbar" : 10,
+      "avikanwatchersecurityconsole" : 10
+    },
+    "radioMessages" : {
+      "uniqueProgress" : {
+        "avikanoutposthologram" : {
+          "messageId" : "avikanoutposthologram_clue",
+          "type" : "quest",
+          "unique" : false,
+          "senderName" : "Azana",
+          "text" : "I am Azana, a Virtual Guide created by Anakhar Systems. I provide newcomers and veterans alike with information about the Starfarer's Refuge.",
+          "portraitImage" : "/interface/chatbubbles/azana.png:<frame>"
+        },
+		"avikanmaterialmerchant" : {
+          "messageId" : "avikanmaterialmerchant_clue",
+          "type" : "quest",
+          "unique" : false,
+          "senderName" : "Azana",
+          "text" : "This vendor of the Nomada Token Exchange allows you to trade leftover materials in exchange for Tokens of Merit.",
+          "portraitImage" : "/interface/chatbubbles/azana.png:<frame>"
+        },
+		"avikanmeritmerchant" : {
+          "messageId" : "avikanmeritmerchant_clue",
+          "type" : "quest",
+          "unique" : false,
+          "senderName" : "Azana",
+          "text" : "This vendor of the Nomada Token Exchange allows you to purchase a variety of materials using Tokens of Merit.",
+          "portraitImage" : "/interface/chatbubbles/azana.png:<frame>"
+        },
+		"avikanteleportshop" : {
+          "messageId" : "avikanteleportshop_clue",
+          "type" : "quest",
+          "unique" : false,
+          "senderName" : "Azana",
+          "text" : "The Nomada Translocator Store offers personalized teleportation devices. It also features a teleporter for public use.",
+          "portraitImage" : "/interface/chatbubbles/azana.png:<frame>"
+        },
+		"avikangunsmith" : {
+          "messageId" : "avikangunsmith_clue",
+          "type" : "quest",
+          "unique" : false,
+          "senderName" : "Azana",
+          "text" : "Ayurin is the local weaponsmith. He sells weapon blueprints and assists Starfarers in crafting weapons.",
+          "portraitImage" : "/interface/chatbubbles/azana.png:<frame>"
+        },
+		"avikandrodenshop" : {
+          "messageId" : "avikandrodenshop_clue",
+          "type" : "quest",
+          "unique" : false,
+          "senderName" : "Azana",
+          "text" : "In exchange for Tokens of Merit, the Droden Legion Terminal allows you to recruit Droden crewmembers.",
+          "portraitImage" : "/interface/chatbubbles/azana.png:<frame>"
+        },
+		"avikanvehicleshop" : {
+          "messageId" : "avikanvehicleshop_clue",
+          "type" : "quest",
+          "unique" : false,
+          "senderName" : "Azana",
+          "text" : "Jahkar sells Nomada-certified vehicles and vehicle components.",
+          "portraitImage" : "/interface/chatbubbles/azana.png:<frame>"
+        },
+		"avikanvehiclerepair" : {
+          "messageId" : "avikanvehiclerepair_clue",
+          "type" : "quest",
+          "unique" : false,
+          "senderName" : "Azana",
+          "text" : "Valyan offers vehicle reparation and restoration services.",
+          "portraitImage" : "/interface/chatbubbles/azana.png:<frame>"
+        },
+		"avikanoutpostbar" : {
+          "messageId" : "avikanoutpostbar_clue",
+          "type" : "quest",
+          "unique" : false,
+          "senderName" : "Azana",
+          "text" : "Drinks and food can be purchased from the bar at the Starsight Inn.",
+          "portraitImage" : "/interface/chatbubbles/azana.png:<frame>"
+        },
+		"avikanwatchersecurityconsole" : {
+          "messageId" : "avikanwatchersecurityconsole_clue",
+          "type" : "quest",
+          "unique" : false,
+          "senderName" : "Azana",
+          "text" : "The offices of the Watchers are found behind these security consoles. The offices are only accessible to members of the organization.",
+          "portraitImage" : "/interface/chatbubbles/azana.png:<frame>"
+        }
+      },
+      "genericProgress" : [
+        {
+          "messageId" : "avikanoutpostscanning_gp",
+          "type" : "quest",
+          "unique" : false,
+          "senderName" : "Azana",
+          "text" : "Scanning is a great tool for discovery.",
+          "portraitImage" : "/interface/chatbubbles/azana.png:<frame>"
+        }
+      ],
+      "startWithProgress" : {
+        "messageId" : "avikanoutpostscanning_swp",
+        "type" : "quest",
+        "unique" : false,
+        "senderName" : "Azana",
+        "text" : "The Starfarer's Refuge offers many services. There is still more to be found.",
+        "portraitImage" : "/interface/chatbubbles/azana.png:<frame>"
+      },
+      "startAlreadyComplete" : {
+        "messageId" : "avikanoutpostscanning_ac",
+        "type" : "quest",
+        "unique" : false,
+        "senderName" : "Azana",
+        "text" : "It appears that you have taken the initiative to explore the Starfarer's Refuge yourself.",
+        "portraitImage" : "/interface/chatbubbles/azana.png:<frame>"
+      },
+      "complete" : {
+        "messageId" : "avikanoutpostscanning_c",
+        "type" : "quest",
+        "unique" : false,
+        "senderName" : "Azana",
+        "text" : "That concludes the tour of the Starfarer's Refuge. Please, ^green;return to me^white; when you're ready for a small reward.",
+        "portraitImage" : "/interface/chatbubbles/azana.png:<frame>"
+      }
+    },
+
+    "dialogClueValue" : 4,
+    "dialogClueSpecies" : "human",
+    "clueDialog" : "/dialog/clues.config:human"
+  }
+}

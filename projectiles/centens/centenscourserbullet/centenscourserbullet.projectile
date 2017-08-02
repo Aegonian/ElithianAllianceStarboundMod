@@ -1,0 +1,28 @@
+{
+  "projectileName" : "centenscourserbullet",
+  "image" : "centenscourserbullet.png",
+  "physics" : "laser",
+  "bounces" : 0,
+  "piercing" : false,
+  "animationCycle" : 0.8,
+  "frameNumber" : 4,
+  "emitters" : [ "vhelinstrail" ],
+  "damageKindImage" : "icon.png",
+  "lightColor" : [0, 65, 100],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/vhelinsexplosion/vhelinsexplosion.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 110,
+  "timeToLive" : 3.0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "hydrophobic" : false,
+  
+  "scripts" : [ "/projectiles/scripts/thea-homingbullet.lua" ],
+  "searchRadius" : 15,
+  "baseHomingControlForce" : 2.0
+}

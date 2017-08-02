@@ -1,0 +1,42 @@
+{
+  "objectName" : "allianceantenna",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A powerful antenna.",
+  "shortdescription" : "Alliance Antenna",
+  "race" : "aegi",
+
+  "apexDescription" : "An antenna of an unusual design.",
+  "avianDescription" : "A basic antenna.",
+  "floranDescription" : "Metal ssticks receive ssignals from far away.",
+  "glitchDescription" : "Observation. An antenna.",
+  "humanDescription" : "An antenna, obviously.",
+  "hylotlDescription" : "A sturdy antenna.",
+  "novakidDescription" : "Some sorta antenna.",
+
+  "aegiDescription" : "A powerful antenna.",
+  "avikanDescription" : "An alien antenna.",
+  "erixianDescription" : "A basic antenna.",
+  "trinkDescription" : "This antenna is reasonably efficient.",
+  "hymidDescription" : "An Aeginian-built antenna.",
+  "notixDescription" : "The Aegi designed this antenna.",
+  "jorgasianDescription" : "A standard Alliance antenna.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien antenna. Unable to decode signal.",
+
+  "inventoryIcon" : "allianceantennaicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "allianceantenna.png:<color>",
+      "imagePosition" : [-8, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

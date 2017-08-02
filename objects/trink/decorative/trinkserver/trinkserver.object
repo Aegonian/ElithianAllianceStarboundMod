@@ -1,0 +1,67 @@
+{
+  "objectName" : "trinkserver",
+  "colonyTags" : ["trink"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 100,
+  "description" : "A rack filled with Trinkian data servers.",
+  "shortdescription" : "Trinkian Server Rack",
+  "race" : "trink",
+  "lightColor" : [10, 40, 10],
+
+  "apexDescription" : "A server rack. I wonder what sort of data it contains?",
+  "avianDescription" : "A shiny server rack. What might it be processing?",
+  "floranDescription" : "Floran doess not underssstand beepy boxess...",
+  "glitchDescription" : "Interested. This server rack must process incredible amounts of data.",
+  "humanDescription" : "A server rack with internal cooling. Awesome!",
+  "hylotlDescription" : "A server rack. What sort of fascinating things might it be processing?",
+
+  "aegiDescription" : "A Trinkian server rack. These are absolutely vital to the Trink.",
+  "avikanDescription" : "A bunch of computers strapped together in a single construction.",
+  "erixianDescription" : "A Trinkian server rack. If only I could access the data.",
+  "trinkDescription" : "This server rack provides the processing power required for our extensive communications networks.",
+  "hymidDescription" : "This server rack must have an incredible processing power.",
+  "notixDescription" : "A Trinkian server rack. Its computers are even more capable than our own.",
+  "jorgasianDescription" : "A Trinkian server rack.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Detected alien data server rack. Hacking attempt failed.",
+
+  "inventoryIcon" : "trinkservericon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "trinkserver.png:<color>.<frame>", "fullbright" : true }, { "image" : "trinkserverlit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [0, 0],
+      "frames" : 6,
+      "animationCycle" : 0.6,
+      "lightPosition" : [0, 3],
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    },
+    {
+	  "imageLayers" : [ { "image" : "trinkserver.png:<color>.<frame>", "fullbright" : true }, { "image" : "trinkserverlit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [0, 0],
+      "frames" : 6,
+      "animationCycle" : 0.6,
+      "lightPosition" : [1, 3],
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ],
+  
+  "soundEffect" : "/sfx/objects/bunkerpanel3.ogg",
+  "soundEffectRangeMultiplier" : 1.0
+}

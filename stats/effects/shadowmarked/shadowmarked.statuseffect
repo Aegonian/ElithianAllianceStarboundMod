@@ -1,0 +1,17 @@
+{
+  "name" : "shadowmarked",
+  "blockingStat" : "xanafianStatusImmunity",
+  "effectConfig" : {
+    "minMaxHealth" : 5
+  },
+  "defaultDuration" : 10.0,
+
+  "scripts" : [
+    "shadowmarked.lua"
+  ],
+
+  "animationConfig" : "shadowmarked.animation",
+
+  "label" : "Shadow Marked",
+  "icon" : "/interface/statuses/shadowmarked.png"
+}

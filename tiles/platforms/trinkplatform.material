@@ -1,0 +1,29 @@
+{
+  "materialId" : 30104,
+  "materialName" : "trinkplatform",
+  "collisionKind" : "platform",
+  "transparent" : true,
+  "itemDrop" : "trinkplatform",  
+  "shortdescription" : "Trinkian Platform",
+  "description" : "A platform filled with wiring.",
+  
+  "glitchDescription" : "Interested. There are many cables running through this platform.",
+  "floranDescription" : "Platform filled with wiress.",
+  "novakidDescription" : "A platform full o' wires.",
+  
+  "drodenDescription" : "Analysis complete. Cables run through the length of this platform.",
+  
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "category" : "Supports",
+  
+  "renderTemplate" : "/tiles/platformtemplate.config",
+  "renderParameters" : {
+    "texture" : "trinkplatform.png",
+    "variants" : 3,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 0,
+    "platform" : true
+  }
+}

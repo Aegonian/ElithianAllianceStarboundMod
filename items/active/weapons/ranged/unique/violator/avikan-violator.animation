@@ -1,0 +1,208 @@
+{
+  "globalTagDefaults" : {
+    "paletteSwaps" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "firing" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "fire" : {
+            "frames" : 2,
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "off"
+          }
+        }
+      },
+	  "charge" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+		  "charging" : {
+            "frames" : 15,
+            "cycle" : 1.5,
+            "mode" : "transition",
+            "transition" : "off"
+          }
+        }
+      },
+	  "chargeAlt" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+		  "charging" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "firing"
+          },
+		  "firing" : {
+            "frames" : 1
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "gun" : {
+        "properties" : {
+          "centered" : true,
+          "image" : "<partImage><paletteSwaps>",
+          "offset" : [0.0, 0.0],
+          "transformationGroups" : ["weapon"]
+        }
+      },
+	  "lights" : {
+        "properties" : {
+          "centered" : true,
+          "image" : "<partImage><paletteSwaps>",
+          "offset" : [0.0, 0.0],
+          "fullbright" : true,
+          "transformationGroups" : ["weapon"]
+        }
+      },
+      "muzzleFlash" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "offset" : [0.75, 0],
+          "fullbright" : true,
+          "transformationGroups" : ["muzzle"]
+        },
+        "partStates" : {
+          "firing" : {
+            "off" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:<variant>.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "charge" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "offset" : [0, 0],
+          "fullbright" : true,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "charge" : {
+            "off" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "charging" : {
+              "properties" : {
+                "image" : "<partImage>:<frame>"
+              }
+            }
+          }
+        }
+      },
+      "chargeAlt" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "offset" : [0, 0],
+          "fullbright" : true,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "chargeAlt" : {
+            "off" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "charging" : {
+              "properties" : {
+                "image" : "<partImage>:<frame>"
+              }
+            },
+            "firing" : {
+              "properties" : {
+                "image" : "<partImage>:8"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "rotationGroups" : {
+    "weapon" : {
+      "angularVelocity" : 0
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "muzzle" : {},
+    "beam" : {},
+    "beamEnd" : {}
+  },
+
+  "particleEmitters" : {
+    "muzzleFlash" : {
+      "emissionRate" : 10.0,
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [0, -0.2, 0, -0.2],
+      "particles" : [
+		{ "particle" : "violatediontrail" },
+		{ "particle" : "violatediontrail" },
+		{ "particle" : "violatediontrail" }
+	  ]
+    },
+	"chargeparticlesAlt" : {
+	  "active" : false,
+      "emissionRate" : 9.0,
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [0.1, 0, 0.1, 0],
+      "particles" : []
+    },
+    "beamCollision" : {
+      "active" : false,
+      "transformationGroups" : ["muzzle", "beamEnd"],
+      "emissionRate" : 20,
+      "particles" : [
+        {"particle" : "violatediontrail"}
+      ]
+    },
+    "beamParticles" : {
+      "active" : false,
+      "transformationGroups" : ["beam"],
+      "emissionRate" : 10,
+      "particles" : []
+    }
+  },
+
+  "lights" : {
+    "muzzleFlash" : {
+      "active" : false,
+      "position" : [0, 0],
+      "color" : [128, 0, 0]
+    }
+  },
+
+  "sounds" : {
+    "fire" : [ ],
+	"chargeLoop" : [ ],
+	"discharge" : [ ],
+    "altBeamStart" : [],
+    "altBeamLoop" : [],
+    "altBeamEnd" : [],
+    "altBeamImpact" : []
+  }
+}

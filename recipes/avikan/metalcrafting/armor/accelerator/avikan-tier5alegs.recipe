@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "avikanmetaltier5", "count" : 4 },
+	{ "item" : "avikancoreenergetic", "count" : 1 },
+    { "item" : "monsterleather", "count" : 2 }
+  ],
+  "duration" : 5,
+  "output" : { "item" : "avikan-tier5alegs", "count" : 1 },
+  "groups" : [ "avikanmetalcrafting", "armours", "all" ]
+}

@@ -1,0 +1,251 @@
+{
+  "objectName" : "drodenframecrafting",
+  "colonyTags" : ["avikan","crafting"],
+  "rarity" : "Uncommon",
+  "race" : "droden",
+  "category" : "crafting",
+
+  //this is handled by the lua
+  "breakDropOptions" : [],
+
+  "price" : 250,
+  "printable" : false,
+
+  "scripts" : [ "/objects/crafting/upgradeablecraftingobjects/upgradeablecraftingobject.lua" ],
+
+  "animation" : "drodenframecrafting.animation",
+  "animationPosition" : [20, 20],
+
+  "inventoryIcon" : "drodenframecraftingicon.png",
+  "placementImage" : "drodenframecrafting.png:default",
+  "placementImagePosition" : [0, 0],
+
+  "description" : "Frame replacements for Droden units can be crafted here.",
+  "shortdescription" : "^orange;Droden Frame Workshop^white;",
+
+  "apexDescription" : "A workshop for new robot parts.",
+  "avianDescription" : "This workshop is rather basic, but it has all the necessary tools.",
+  "floranDescription" : "Metalman makesss more metalmen here. Floran prefersss Floran reproduction...",
+  "glitchDescription" : "Intrigued. This type of robot is new to me.",
+  "humanDescription" : "A simple workshop for building robot parts.",
+  "hylotlDescription" : "A workshop, built for the creation of new robot parts.",
+  "novakidDescription" : "A workshop for creatin' robot parts.",
+
+  "aegiDescription" : "A basic workshop where new Droden frames are made.",
+  "avikanDescription" : "This workshop has some specilized tools used to create new Droden frames.",
+  "erixianDescription" : "A basic workshop, for manually crafting new Droden frames.",
+  "trinkDescription" : "This workshop is very basic, but it has all the tools it requires.",
+  "hymidDescription" : "A place for creating new Droden frames.",
+  "notixDescription" : "A Droden frame workshop.",
+  "jorgasianDescription" : "A workshop for creating new Droden frames.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Analysis complete. Frame workshop. Used to create and install new frames onto Droden units.",
+
+  "learnBlueprintsOnPickup" : [],
+
+
+  "startingUpgradeStage" : 1,
+  "maxUpgradeStage" : 3,
+  "upgradeStages" : [
+    {
+      "animationState" : "drodenframecrafting",
+
+      "itemSpawnParameters" : {
+        "price" : 250,
+        "inventoryIcon" : "drodenframecraftingicon.png",
+        "placementImage" : "drodenframecrafting.png:default",
+        "placementImagePosition" : [0, 0],
+
+        "description" : "Frame replacements for Droden units can be crafted here.",
+		"shortdescription" : "^orange;Droden Frame Workbench^white;",
+
+		"apexDescription" : "A workshop for new robot parts.",
+		"avianDescription" : "This workshop is rather basic, but it has all the necessary tools.",
+		"floranDescription" : "Metalman makesss more metalmen here. Floran prefersss Floran reproduction...",
+		"glitchDescription" : "Intrigued. This type of robot is new to me.",
+		"humanDescription" : "A simple workshop for building robot parts.",
+		"hylotlDescription" : "A workshop, built for the creation of new robot parts.",
+		"novakidDescription" : "A basic workshop for creatin' robot parts.",
+
+		"aegiDescription" : "A basic workshop where new Droden frames are made.",
+		"avikanDescription" : "This workshop has some specilized tools used to create new Droden frames.",
+		"erixianDescription" : "A basic workshop, for manually crafting new Droden frames.",
+		"trinkDescription" : "This workshop is very basic, but it has all the essentials.",
+		"hymidDescription" : "A place where new Droden frame are made.",
+		"notixDescription" : "A Droden frame workshop.",
+		"jorgasianDescription" : "A workshop for creating new Droden frames.",
+		"centensDescription" : "TODO.",
+		"dremetonDescription" : "TODO.",
+		"theleanDescription" : "TODO.",
+		"drodenDescription" : "Analysis complete. Frame workbench. Used to create and install new frames onto Droden units."
+      },
+
+      "interactData" : {
+        "config" : "/interface/windowconfig/drodenframecrafting.config",
+        "paneLayoutOverride" : {
+          "windowtitle" : {
+            "title" : " Droden Frame Workbench",
+            "subtitle" : " ^#b9b5b2;Droden armour and equipment",
+            "icon" : {
+              "file" : "/interface/crafting/craftingdrodenframe.png"
+            }
+          }
+        },
+        "filter" : [ "drodenframecrafting" ],
+        "upgradeMaterials" : [
+          { "item" : "titaniumore", "count" : 12 },
+          { "item" : "avikanmetal", "count" : 10 },
+          { "item" : "avikandarkmetal", "count" : 5 },
+          { "item" : "avikancircuitry", "count" : 1 }
+        ]
+      },
+
+      "learnBlueprintsOnPickup" : [],
+
+      "upgradeSoundEffect" : "fanfare",
+      "upgradeParticleEffect" : "dust"
+    },
+
+    {
+      "animationState" : "drodenframecrafting2",
+
+      "itemSpawnParameters" : {
+        "price" : 500,
+        "inventoryIcon" : "drodenframecrafting2icon.png",
+        "placementImage" : "drodenframecrafting2.png:default.default",
+        "placementImagePosition" : [0, 0],
+
+        "description" : "Frame replacements for Droden units can be crafted here.",
+		"shortdescription" : "^orange;Droden Frame Workshop^white;",
+
+		"apexDescription" : "A larger workshop, with more space and better tools for creating high-quality robot parts.",
+		"avianDescription" : "A fully utilized robot part workshop.",
+		"floranDescription" : "Metalman makesss more metalmen here. Floran prefersss Floran reproduction...",
+		"glitchDescription" : "Motivated. This workshop has all the tools needed to create new robot parts.",
+		"humanDescription" : "A true workshop, it has all the tools one needs when crafting robot parts.",
+		"hylotlDescription" : "New robot parts can be created using this workshop.",
+		"novakidDescription" : "I reckon someone with the right skills could craft some fancy robot parts here.",
+
+		"aegiDescription" : "A small furnace and plenty of tools, this workshop has it all.",
+		"avikanDescription" : "A fully laid out Droden frame workshop.",
+		"erixianDescription" : "This workshop is full of tools used when crafting Droden frames.",
+		"trinkDescription" : "A poorly optimized workshop. The tool placement is hardly efficient.",
+		"hymidDescription" : "This workshop has all the tools one needs to craft new Droden frames.",
+		"notixDescription" : "A proper workshop, full of tools and with its own furnace, ideal for crafting Droden frames.",
+		"jorgasianDescription" : "Plenty of tools and a small furnace make this workshop perfect for creating Droden frames.",
+		"centensDescription" : "TODO.",
+		"dremetonDescription" : "TODO.",
+		"theleanDescription" : "TODO.",
+		"drodenDescription" : "Analysis complete. Frame workshop. Used to create and install new frames onto Droden units."
+      },
+
+      "interactData" : {
+        "config" : "/interface/windowconfig/drodenframecrafting.config",
+        "paneLayoutOverride" : {
+          "windowtitle" : {
+            "title" : " Droden Frame Foundry",
+            "subtitle" : " ^#b9b5b2;Droden armour and equipment",
+            "icon" : {
+              "file" : "/interface/crafting/craftingdrodenframe.png"
+            }
+          }
+        },
+        "filter" : [ "drodenframecrafting", "drodenframecrafting2" ],
+        "upgradeMaterials" : [
+          { "item" : "durasteelore", "count" : 24 },
+          { "item" : "avikanmetal", "count" : 10 },
+          { "item" : "avikandarkmetal", "count" : 5 },
+          { "item" : "avikanbattery", "count" : 4 },
+          { "item" : "avikanmacrochip", "count" : 1 }
+        ]
+      },
+
+      "learnBlueprintsOnPickup" : [],
+
+      "upgradeSoundEffect" : "fanfare",
+      "upgradeParticleEffect" : "dust"
+    },
+	
+	{
+      "animationState" : "drodenframecrafting3",
+
+      "itemSpawnParameters" : {
+        "price" : 750,
+        "inventoryIcon" : "drodenframecrafting3icon.png",
+        "placementImage" : "drodenframecrafting3.png:default.default",
+        "placementImagePosition" : [0, 0],
+
+        "description" : "Frame replacements for Droden units can be crafted here.",
+		"shortdescription" : "^orange;Droden Frame Factory^white;",
+
+		"apexDescription" : "A miniature automated robot factory. Better not let the Miniknog get their hands on one of these.",
+		"avianDescription" : "A small robot factory. It only creates one type of robot.",
+		"floranDescription" : "Thiss factory makess metalmen? Floran isss not ssure what to think of it.",
+		"glitchDescription" : "Philosophical. Was I created in a similar type of factory?",
+		"humanDescription" : "A small, largely automated factory. It produces robots of outstanding quality.",
+		"hylotlDescription" : "A small factory like this can do the work of a dozen individuals at once.",
+		"novakidDescription" : "Some sorta factory for creatin' robots.",
+
+		"aegiDescription" : "A Droden frame factory, for creating high-quality frames.",
+		"avikanDescription" : "A largely automated Droden frame factory. These were commonplace before the Droden war.",
+		"erixianDescription" : "This factory works much faster than any organic ever could.",
+		"trinkDescription" : "An efficient Droden factory unit.",
+		"hymidDescription" : "Droden frames can be mass-produced at these types of factories.",
+		"notixDescription" : "A small factory capable of creating Droden frames.",
+		"jorgasianDescription" : "One could easily build an army of Droden using enough of these factories.",
+		"centensDescription" : "TODO.",
+		"dremetonDescription" : "TODO.",
+		"theleanDescription" : "TODO.",
+		"drodenDescription" : "Analysis complete. Frame factory. Used to create and install new frames onto Droden units."
+      },
+
+      "interactData" : {
+        "config" : "/interface/windowconfig/drodenframecrafting.config",
+        "paneLayoutOverride" : {
+          "windowtitle" : {
+            "title" : " Droden Frame Factory",
+            "subtitle" : " ^#b9b5b2;Droden armour and equipment",
+            "icon" : {
+              "file" : "/interface/crafting/craftingdrodenframe.png"
+            }
+          }
+        },
+        "filter" : [ "drodenframecrafting", "drodenframecrafting2", "drodenframecrafting3" ]
+      },
+
+      "learnBlueprintsOnPickup" : []
+    }
+  ],
+
+  "orientations" : [
+    {
+      "image" : "drodenframecrafting.png:<color>",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true,
+      "spaces" : [
+	    [0, 4], [1, 4], [2, 4], [3, 4], [4, 4],
+		[0, 3], [1, 3], [2, 3], [3, 3], [4, 3],
+        [0, 2], [1, 2], [2, 2], [3, 2], [4, 2],
+        [0, 1], [1, 1], [2, 1], [3, 1], [4, 1],
+        [0, 0], [1, 0], [2, 0], [3, 0], [4, 0]
+      ],
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "drodenframecrafting.png:<color>",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+      "spaces" : [
+	    [0, 4], [1, 4], [2, 4], [3, 4], [4, 4],
+        [0, 3], [1, 3], [2, 3], [3, 3], [4, 3],
+        [0, 2], [1, 2], [2, 2], [3, 2], [4, 2],
+        [0, 1], [1, 1], [2, 1], [3, 1], [4, 1],
+        [0, 0], [1, 0], [2, 0], [3, 0], [4, 0]
+      ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

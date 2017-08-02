@@ -1,0 +1,45 @@
+{
+  "objectName" : "avikanhoverbikecovered",
+  "colonyTags" : ["avikan", "keff"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 2500,
+  "description" : "An Avikan vehicle, covered in a large leather sheet.",
+  "shortdescription" : "Covered Avikan Keff",
+  "race" : "avikan",
+  
+  "apexDescription" : "Some sort of vehicle is hidden beneath those sheets.",
+  "avianDescription" : "What wonders might lie hidden here?.",
+  "floranDescription" : "Leather ssheetsss hide big metal thingsss...",
+  "glitchDescription" : "Wonder. What might this be?.",
+  "humanDescription" : "Is this what I think it is?",
+  "hylotlDescription" : "This leather sheet protects whatever lies below it.",
+
+  "aegiDescription" : "Some sort of vehicle, covered by a large leather sheet.",
+  "avikanDescription" : "A keff that hasn't seen use in a while.",
+  "erixianDescription" : "I can only wonder what is below that sheet.",
+  "trinkDescription" : "A vehicle covered by a large leather sheet.",
+  "hymidDescription" : "A vehicle protected by a large leather sheet.",
+  "notixDescription" : "A vehicle covered by a large sheet of leather.",
+  "jorgasianDescription" : "This leather hseet hides some sort of vehicle.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Scanning. Detected keff.",
+
+  "inventoryIcon" : "avikanhoverbikecoveredicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanhoverbikecovered.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

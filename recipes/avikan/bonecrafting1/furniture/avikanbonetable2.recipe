@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "monsterbone", "count" : 4 }
+  ],
+  "output" : { "item" : "avikanbonetable2", "count" : 1 },
+  "groups" : [ "avikanbonecrafting", "bonefurniture", "all" ]
+}

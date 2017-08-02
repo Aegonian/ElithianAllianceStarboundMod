@@ -1,0 +1,29 @@
+{
+  "objectName" : "theleancorpsepile",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 40,
+  "description" : "Dead Theleans. A lot of them.",
+  "shortdescription" : "Thelean Corpses",
+  "race" : "thelean",
+
+  "floranDescription" : "Floran pokesss dead bodiess with ssstickss...",
+  "glitchDescription" : "Intimidated. The one who killed these Theleans must have been incredibly powerful.",
+  
+  "avikanDescription" : "Dead Theleans. The best kind.",
+  "theleanDescription" : "Dead Theleans were weak Theleans.",
+  "drodenDescription" : "Detected Theleans. Analysis: dead.",
+
+  "inventoryIcon" : "theleancorpsepileicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "theleancorpsepile.png:<color>",
+      "imagePosition" : [-32, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

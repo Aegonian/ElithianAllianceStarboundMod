@@ -1,0 +1,46 @@
+{
+  "objectName" : "avikanmarketstallweapons",
+  "colonyTags" : ["avikan", "commerce", "avikanweapons"],
+  "rarity" : "Common",
+  "description" : "A market stall full of bone weapons.",
+  "shortdescription" : "Avikan Weapons Stall",
+  "race" : "avikan",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 60,
+
+  "apexDescription" : "A selection of bone weapons.",
+  "avianDescription" : "Weapons made of bone. Surprisingly sharp.",
+  "floranDescription" : "Bonesss make good swordsss.",
+  "glitchDescription" : "Amazed. These bone weapons are sharper than many metal alternatives.",
+  "humanDescription" : "Weapons of bone. How did they get them so sharp?",
+  "hylotlDescription" : "Weapons made of bones. Primitive and cruel, but also effective.",
+
+  "aegiDescription" : "Primitive bone weapons in appearance, but they make for excellent hunting tools.",
+  "avikanDescription" : "Bone weapons are still the favourites of our people, even though we can craft them of metal now.",
+  "erixianDescription" : "Bone weaponry. The blades look rather sharp.",
+  "trinkDescription" : "This bone weaponry outmatches many more modern weapons.",
+  "hymidDescription" : "These bone weapons look sharp. My people could learn a thing or two from the Avikan.",
+  "notixDescription" : "Few species are able to craft such potent bone weaponry.",
+  "jorgasianDescription" : "Bone weapons. Primitive, but effective all the same.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "This equipment predates this unit's technology.",
+
+  "inventoryIcon" : "avikanmarketstallweaponsicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanmarketstallweapons.png:<color>",
+
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+
+    }
+  ]
+}

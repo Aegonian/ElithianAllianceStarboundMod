@@ -1,0 +1,76 @@
+{
+  "animationCustom" : {
+    "animatedParts" : { "parts" : {
+      "grenadelauncher" : {
+        "properties" : {
+          "zLevel" : -2,
+          "centered" : true,
+          "offset" : [-1.375, -0.625],
+          "transformationGroups" : ["muzzle"],
+          "firePosition" : [0.5, 0.0],
+          "image" : "/items/active/weapons/ranged/abilities/attachments/thea-stickylauncher/thea-stickylauncher.png"
+        }
+      }
+    }},
+    "sounds" : {
+      "altFire" : [ "/sfx/gun/grenade1.ogg" ]
+    },
+    "particleEmitters" : {
+      "altMuzzleFlash" : {
+        "active" : false,
+        "emissionRate" : 8,
+        "transformationGroups" : ["muzzle"],
+        "offsetRegion" : [-0.875, -0.625, -0.875, -0.625],
+        "particles" : [
+          { "particle" : "rocketbarrelpuff", "offset" : [0.0, 0.0] },
+          { "particle" : "rocketbarrelpuff", "offset" : [0.0, 0.0] },
+          { "particle" : "rocketbarrelpuff", "offset" : [0.0, 0.0] }
+        ]
+      }
+    }
+  },
+
+  "ability" : {
+    "name" : "Sticky Grenade Launcher",
+    "type" : "thea-stickylauncher",
+    "scripts" : ["/items/active/weapons/ranged/abilities/altfire.lua"],
+    "class" : "AltFireAttack",
+
+    "baseDamage" : 9,
+    "fireTime" : 2.0,
+    "energyUsage" : 25,
+    "inaccuracy" : 0,
+	
+    "projectileCount" : 1,
+    "fireType" : "auto",
+	
+	"projectileType" : "alliancestickygrenade",
+    "projectileParameters" : {
+	  "speed" : 50
+	},
+
+    "firePositionPart" : "grenadelauncher",
+    "hidePrimaryMuzzleFlash" : true,
+
+    "stances" : {
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.11,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  }
+}

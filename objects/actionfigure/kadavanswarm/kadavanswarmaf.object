@@ -1,0 +1,32 @@
+{
+  "objectName" : "kadavanswarmaf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "legendary",
+  "category" : "actionFigure",
+  "collectablesOnPickup" : { "actionfigures" : "kadavanswarmaf" },
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"Stingwing swarms operate as a single creature, using specialized feromones to communicate and coordinate.\"",
+  "shortdescription" : "Stingwing Swarm Figurine",
+
+  "inventoryIcon" : "kadavanswarmaf.png",
+  "orientations" : [
+    {
+      "image" : "kadavanswarmaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "kadavanswarmaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

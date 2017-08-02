@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "goldore", "count" : 2 }
+  ],
+  "output" : {
+    "item" : "connectorstrip",
+    "count" : 6
+  },
+  "duration" : 0.15,
+  "groups" : [ "avikanfurnace", "ingredients", "all" ]
+}

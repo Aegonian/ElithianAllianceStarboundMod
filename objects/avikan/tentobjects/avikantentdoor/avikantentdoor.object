@@ -1,0 +1,66 @@
+{
+  "objectName" : "avikantentdoor",
+  "colonyTags" : ["avikan", "door"],
+  "rarity" : "Common",
+  "category" : "door",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A simple leather tent door.",
+  "shortdescription" : "Avikan Tent Door",
+  "race" : "avikan",
+
+  "apexDescription" : "A basic leather tent door.",
+  "avianDescription" : "A bland leather tent door.",
+  "floranDescription" : "Leather makesss Floran want to huntsss.",
+  "glitchDescription" : "Observation. A primitive leather tent door.",
+  "humanDescription" : "A simple leather tent door. Not very interesting.",
+  "hylotlDescription" : "A simple leather tent door.",
+
+  "aegiDescription" : "A leather tent door. Simple, but very useful.",
+  "avikanDescription" : "A leather tent door. It provides us with ample protection against the desert winds.",
+  "erixianDescription" : "A leather tent door. Very crude.",
+  "trinkDescription" : "A leather tent door.",
+  "hymidDescription" : "A primitive leather tent door.",
+  "notixDescription" : "A simple leather tent door.",
+  "jorgasianDescription" : "A leather tent door. Very basic.",
+  "centensDescription" : "Interesting. The Avikan still use primitive materials despite their technological advancements.",
+  "dremetonDescription" : "A simple, but functional, leather tent door.",
+  "hyvonDescription" : "An unimpressive leather tent door.",
+  "drodenDescription" : "Detected door. Material: leather.",
+
+  "inventoryIcon" : "avikantentdooricon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikantentdoor.png:default",
+      "imagePosition" : [0, 0],
+      "renderLayer" : "Object+5",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom", "background" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/door/door.lua" ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/door/door.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/bed_leave.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/objects/bed_enter.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "avikantentdoor.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "inputNodes" : [ [-1, 4] ],
+  "outputNodes" : [ [1, 0] ]
+}

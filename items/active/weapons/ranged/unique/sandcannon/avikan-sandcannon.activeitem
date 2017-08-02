@@ -1,0 +1,149 @@
+{
+  "itemName" : "avikan-sandcannon",
+  "price" : 1500,
+  "inventoryIcon" : "avikan-sandcannonicon.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;A merciless stream of sand to keep your enemies at bay.",
+  "shortdescription" : "^orange;Desert's Embrace^white;",
+  "level" : 6,
+  "tooltipKind" : "thea-gun-unique",
+  "category" : "Sand Launcher",
+  "itemTags" : ["weapon","ranged","avikan","theaUnique"],
+  "twoHanded" : true,
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "avikan-sandcannon" },
+  
+  "meritTokenValue" : 100,
+  
+  "cursor" : "/cursors/thea-launcherreticle.cursor",
+  
+  "animation" : "/items/active/weapons/ranged/animations/thea-gun-animated.animation",
+  "animationParts" : {
+    "middle" : "avikan-sandcannon.png",
+    "middleFullbright" : "avikan-sandcannonlights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/thea-invisiblemuzzle.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [0.6, 0.2]
+		  }
+		}
+      }
+    },
+    "lights" : {
+      "muzzleFlash" : {
+		"color" : [0, 0, 0]
+	  }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/sandcannon_fire.ogg" ],
+	  "altFire" : [ "/sfx/projectiles/blast_small_fire1.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.6, 0.2],
+  "muzzleOffset" : [1.875, 0.35],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-gunfire.lua"],
+    "class" : "TheaGunFire",
+
+    "fireTime" : 0.035,
+    "baseDps" : 9.5,
+    "energyUsage" : 35,
+    "inaccuracy" : 0.1,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "sandcannonstream",
+    "projectileParameters" : {
+	  "speed" : 25
+	},
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.05,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "altAbility" : {
+    "name" : "Sand Bomb",
+    "scripts" : ["/items/active/weapons/ranged/abilities/altfire.lua"],
+	"class" : "AltFireAttack",
+
+    "baseDamage" : 7.5,
+	"fireTime" : 1.3,
+    "energyUsage" : 40.0,
+    "inaccuracy" : 0.1,
+
+	"projectileCount" : 1,
+    "fireType" : "auto",
+	
+	"projectileType" : "sandcannonbomb",
+	"projectileParameters" : {
+	  "speed" : 30
+	},
+	
+	"hidePrimaryMuzzleFlash" : false,
+	"useParticleEmitter" : false,
+	"usePrimaryFireSound" : false,
+
+    "stances" : {
+      "fire" : {
+        "duration" : 0.2,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.2,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

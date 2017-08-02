@@ -1,0 +1,76 @@
+{
+  "type" : "avikanroguecaptain",
+  "baseType" : "hostile",
+
+  "levelVariance" : [1, 1.5],
+
+  "dropPools" : [ "avikanRogueCaptainDeathTreasure" ],
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "friendlyNpcTypes" : ["crewmemberavikanroguecaptain"]
+    },
+
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Attack!"
+          ]
+        },
+        "avikan" : {
+          "default" : [
+            "I won't let you take my freedom!",
+            "You've come to the wrong place!",
+            "You've seen enough!",
+            "You'd better turn back!",
+            "Your days are done!"
+          ],
+		  "avikan" : [
+            "I'm done with the Nomada!",
+            "I won't deal with the Nomada any longer!",
+            "I've left the Nomada behind!",
+            "So, the Nomada finally sent someone after me!",
+            "Rhadeis guides my path!"
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+			  { "name" : "avikan-roguecaptainhead" }
+			],
+            "chest" : [
+			  { "name" : "avikan-roguecaptainchest" }
+			],
+            "legs" : [
+			  { "name" : "avikan-roguelegs" },
+			  { "name" : "avikan-roguelegs2" }
+			],
+            "primary" : [ "drodenlongsword", "capturepod-avikandrone" ],
+            "sheathedprimary" : [ "avikan-rocketlauncher", "avikan-harbinger", "avikan-missilepod" ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {    
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 250.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

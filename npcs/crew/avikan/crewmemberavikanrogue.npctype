@@ -1,0 +1,141 @@
+{
+  "type" : "crewmemberavikanrogue",
+  "baseType" : "crewmemberavikan",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+
+	"crew" : {
+	  "role" : {
+        "type" : "avikanrogue",
+        "name" : "Rogue",
+        "field" : "Criminal",
+        "uniformColorIndex" : 4
+      },
+
+      "ranks" : [
+        "Petty <field>",
+		"Wanted <field>",
+		"Master <field>",
+		"Elusive <role>",
+		"<role> Soldier"
+      ],
+	  
+	  "defaultUniform" : {
+		"head" : "avikan-roguehead2",
+		"chest" : "avikan-roguechest",
+		"legs" : "avikan-roguelegs2"
+	  },
+	  
+	  "uniformSlots" : []
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "offer" : {
+          "avikan" : {
+            "default" : [
+              "I need a place to hide! I'll work for you if you cover for me.",
+              "I was falsely accused! I just need a place to lay low - could I hide on your ship? I'll work for you!",
+              "I don't want to fight you. Any chance you'll let me join your crew instead?",
+              "Please don't turn me in! I'll join your crew if you agree to hide me!"
+            ]
+          }
+        },
+		"roleDescription" : {
+          "avikan" : {
+            "default" : [
+              "I've learned some trick over the years. If you need a fighter, I'm here.",
+              "If you need an experienced fighter, you know where to find me.",
+              "I'm eager to test my blade.",
+              "I'm here if you need a fighter."
+            ]
+          }
+        },
+		"respawned" : {
+          "avikan" : {
+            "default" : [
+              "That was the strangest thing I've ever felt...",
+              "I thought I was done for!",
+              "The emergency teleport saved me again!",
+              "Rhadeis brought me back!"
+            ]
+          }
+        },
+		"unfollow" : {
+          "avikan" : {
+            "default" : [
+              "I'll wait here, then.",
+              "Don't be long, alright?",
+              "Go on without me. I'll wait.",
+              "Don't take too long."
+            ]
+          }
+        },
+		"follow" : {
+          "avikan" : {
+            "default" : [
+              "Are we heading out?",
+              "Finally, some action!",
+              "Let's go, then.",
+              "What's next?"
+            ]
+          }
+        },
+		"cantreach" : {
+          "avikan" : {
+            "default" : [
+              "You're out of my reach!",
+              "I can't get over there!",
+              "Don't leave me behind!",
+              "How am I supposed to get there?"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+            "head" : [ { "name" : "avikan-roguehead2", "data" : { "colorIndex" : 4 } } ],
+			"chest" : [ { "name" : "avikan-roguechest", "data" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "avikan-roguelegs2", "data" : { "colorIndex" : 4 } } ],
+            "primary" : [
+			  "avikan-combatrifle",
+			  "avikan-sidearm"
+			],
+            "sheathedprimary" : [
+			  "avikan-nomadaspear",
+			  "drodenshortsword"
+			],
+            "alt" : [
+			  "avikanmetalshield"
+			]
+          },
+          {
+            "head" : [ { "name" : "avikan-roguehead2", "data" : { "colorIndex" : 4 } } ],
+			"chest" : [ { "name" : "avikan-roguechest", "data" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "avikan-roguelegs2", "data" : { "colorIndex" : 4 } } ],
+            "primary" : [
+			  "avikan-nomadaspear",
+			  "drodenshortsword"
+			],
+            "sheathedprimary" : [
+			  "avikan-combatrifle",
+			  "avikan-sidearm"
+			],
+            "alt" : [
+			  "avikanmetalshield"
+			]
+          }
+        ] ]
+    ]
+  }
+}

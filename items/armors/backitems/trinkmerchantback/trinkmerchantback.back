@@ -1,0 +1,14 @@
+{
+  "itemName" : "trinkmerchantback",
+  "price" : 750,
+  "inventoryIcon" : "icons.png:back",
+  "rarity" : "Uncommon",
+  "category" : "backwear",
+  "description" : "^green;Trink. ^white;A large crate, worn on the back by Trinkian merchants and travellers.",
+  "shortdescription" : "Trinkian Merchant Crate",
+  "tooltipKind" : "back",
+
+  "maleFrames" : "back.png",
+  "femaleFrames" : "back.png",
+  "maxStack" : 1
+}

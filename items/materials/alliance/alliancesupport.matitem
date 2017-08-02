@@ -1,0 +1,13 @@
+{
+  "itemName" : "alliancesupport",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "alliancesupport.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  
+  "shortdescription" : "Alliance Support Beam",
+  "description" : "Heavy structural support beams.",
+
+  "materialId" : 30076
+}

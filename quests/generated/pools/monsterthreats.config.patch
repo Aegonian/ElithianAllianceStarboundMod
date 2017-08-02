@@ -1,0 +1,57 @@
+[
+	{"op" : "add",
+		"path" : "/0/1/-",
+		"value" : 
+		  [
+			[ "generic" ],
+			{
+			  "name" : "Sandcrawlers",
+			  "typeName" : "largesandcrawler"
+			}
+		  ]
+	},
+	{"op" : "add",
+		"path" : "/0/1/-",
+		"value" : 
+		  [
+			[ "generic" ],
+			{
+			  "name" : "Valahr",
+			  "typeName" : "kadavanvalahr"
+			}
+		  ]
+	},
+	{"op" : "add",
+		"path" : "/0/1/-",
+		"value" : 
+		  [
+			[ "generic" ],
+			{
+			  "name" : "Hacked Drahls",
+			  "typeName" : "avikandrone"
+			}
+		  ]
+	},
+	{"op" : "add",
+		"path" : "/0/1/-",
+		"value" : 
+		  [
+			[ "generic" ],
+			{
+			  "name" : "Violated Drahls",
+			  "typeName" : "avikanviolateddrone"
+			}
+		  ]
+	},
+	{"op" : "add",
+		"path" : "/0/1/-",
+		"value" : 
+		  [
+			[ "generic" ],
+			{
+			  "name" : "Hacked Trinkian Drones",
+			  "typeName" : "trinkdrone"
+			}
+		  ]
+	}
+]

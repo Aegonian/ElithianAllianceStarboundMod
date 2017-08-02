@@ -1,0 +1,41 @@
+{
+  "layers" : [
+    {
+      "kind" : "asteroid",
+      "nohueshift" : true,
+      "repeatY" : true,
+      "parallax" : 5
+    },
+    {
+      "kind" : "asteroidback",
+      "baseCount" : 4,
+      "nohueshift" : true,
+      "repeatY" : true,
+      "parallax" : 8
+    },
+    {
+      "kind" : "asteroidback",
+      "baseCount" : 4,
+      "nohueshift" : true,
+      "repeatY" : true,
+      "parallax" : 10,
+      "directives" : "fade=000000=0.3"
+    },
+	{
+      "kind" : "avikanships",
+      "offset" : [0, 250],
+      "nohueshift" : true,
+      "parallax" : 6.999,
+      "minSpeed" : 5000000,
+      "maxSpeed" : 5000000
+    },
+	{
+      "kind" : "avikanships",
+      "offset" : [0, 500],
+      "nohueshift" : true,
+      "parallax" : 7.5,
+      "minSpeed" : 3000000,
+      "maxSpeed" : 3000000
+    }
+  ]
+}

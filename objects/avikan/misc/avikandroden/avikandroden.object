@@ -1,0 +1,42 @@
+{
+  "objectName" : "avikandroden",
+  "colonyTags" : ["droden"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 40,
+  "description" : "An inactive robot.",
+  "shortdescription" : "Inactive Droden Frame",
+  "race" : "avikan",
+
+  "apexDescription" : "An inactive robot of sorts.",
+  "avianDescription" : "An inactive robot of sorts.",
+  "floranDescription" : "Floran wondersss if robot iss sssleeping...",
+  "glitchDescription" : "Observation. An inactive robot of sorts.",
+  "humanDescription" : "An inactive robot of sorts.",
+  "hylotlDescription" : "An inactive robot of sorts.",
+  "novakidDescription" : "An inactive robot of sorts.",
+
+  "aegiDescription" : "An inactive Droden. I'm not sure if this one is an AI, or just a droid.",
+  "avikanDescription" : "An inactive Droden. I'm not sure if this one is an AI, or just a droid.",
+  "erixianDescription" : "An inactive Droden. I'm not sure if this one is an AI, or just a droid.",
+  "trinkDescription" : "An inactive Droden. I'm not sure if this one is an AI, or just a droid.",
+  "hymidDescription" : "An inactive Droden. I'm not sure if this one is an AI, or just a droid.",
+  "notixDescription" : "An inactive Droden. I'm not sure if this one is an AI, or just a droid.",
+  "jorgasianDescription" : "An inactive Droden. I'm not sure if this one is an AI, or just a droid.",
+  "centensDescription" : "An inactive Droden. I'm not sure if this one is an AI, or just a droid.",
+  "dremetonDescription" : "An inactive Droden. I'm not sure if this one is an AI, or just a droid.",
+  "theleanDescription" : "An inactive Droden. I'm not sure if this one is an AI, or just a droid.",
+  "drodenDescription" : "Droden unit detected. Analysis: Deactivated.",
+
+  "inventoryIcon" : "avikandrodenicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikandroden.png:<color>",
+      "imagePosition" : [-8, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

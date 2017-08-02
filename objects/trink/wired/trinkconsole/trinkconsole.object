@@ -1,0 +1,84 @@
+{
+  "objectName" : "trinkconsole",
+  "colonyTags" : ["trink"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A computer console for controlling Trink systems.",
+  "shortdescription" : "Trinkian Console",
+  "race" : "trink",
+  "lightColor" : [10, 50, 10],
+
+  "apexDescription" : "A console with an odd interface.",
+  "avianDescription" : "This console controls something. But what?",
+  "floranDescription" : "Ssshiny buttonsss, Floran presss?",
+  "glitchDescription" : "Interested. This control system is unfamiliar to me.",
+  "humanDescription" : "I probably shouldn't touch any of these buttons, but I really want to...",
+  "hylotlDescription" : "A control panel, the interface is new to me.",
+
+  "aegiDescription" : "A Trinkian console. I wonder what is is linked to?",
+  "avikanDescription" : "A control panel built by machines. Could I sabotage it?",
+  "erixianDescription" : "A Trinkian control panel.",
+  "trinkDescription" : "This console allows me to interact with various systems.",
+  "hymidDescription" : "A Trinkian console, I believe. How does the interface work?",
+  "notixDescription" : "This console can be linked to a multitude of systems.",
+  "jorgasianDescription" : "This must be some sort of Trinkian control panel.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Alien interface detected. Recommend sabotage.",
+
+  "inventoryIcon" : "trinkconsoleicon.png",
+  "orientations" : [
+    {
+	  "image" : "trinkconsole.png:<color>.<frame>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 3,
+      "animationCycle" : 0.5,
+      "lightPosition" : [1, 1],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "flipImages" : true,
+      "direction" : "left"
+
+    },
+    {
+	  "image" : "trinkconsole.png:<color>.<frame>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "lightPosition" : [1, 1],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "right"
+
+    }
+  ],
+
+  "scripts" : [
+    "/objects/wired/switch/switch.lua"
+  ],
+  "scriptDelta" : 5,
+  
+  "defaultSwitchState" : true,
+
+  "animation" : "trinkconsole.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/console_generic_switchon.ogg" ],
+      "off" : [ "/sfx/objects/console_generic_switchoff.ogg" ]
+    }
+  },
+  "animationParts" : {
+    "bg" : "trinkconsole.png",
+    "fg" : "trinkconsolelit.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "outputNodes" : [ [2, 0] ]
+}

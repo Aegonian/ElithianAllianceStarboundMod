@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "trinkmetaltier6", "count" : 12 },
+    { "item" : "trinkpowercore", "count" : 2 },
+    { "item" : "trinkelectronics", "count" : 6 },
+    { "item" : "trinkwiring", "count" : 20 }
+  ],
+  "output" : { "item" : "trink-debilitator", "count" : 1 },
+  "groups" : [ "trinkcrafting3", "weapons", "all" ]
+}

@@ -1,0 +1,32 @@
+{
+  "objectName" : "trinkminidroneaf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "legendary",
+  "category" : "actionFigure",
+  "collectablesOnPickup" : { "actionfigures" : "trinkminidroneaf" },
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"A small drone used for patrolling and scouting ahead.\"",
+  "shortdescription" : "Trinkian Minidroid Figurine",
+
+  "inventoryIcon" : "trinkminidroneaf.png",
+  "orientations" : [
+    {
+      "image" : "trinkminidroneaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "trinkminidroneaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

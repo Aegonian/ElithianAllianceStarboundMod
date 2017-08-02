@@ -1,0 +1,79 @@
+{
+  "type" : "crewmemberdrodenlegion",
+  "baseType" : "crewmemberdroden",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+
+	"crew" : {
+	  "role" : {
+        "type" : "drodenlegion",
+        "name" : "Legionnaire",
+        "field" : "Legion",
+        "uniformColorIndex" : 4
+      },
+
+      "ranks" : [
+        "<field> Combat Unit"
+      ],
+	  
+	  "defaultUniform" : {
+		"head" : "droden-legionhead",
+		"chest" : "droden-legionchest",
+		"legs" : "droden-legionlegs",
+		"back" : "drodenantennapack"
+	  },
+	  
+	  "uniformSlots" : []
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "offer" : {
+          "droden" : {
+            "default" : [
+              "Legionnaire unit <selfname> reporting for duty. Requesting permission to board ship.",
+              "Unit <selfname> reporting in. Legionnaire unit requesting permission to board ship.",
+              "Droden Legion Combat Unit available. Requesting permission to board ship."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+            "head" : [ { "name" : "droden-legionhead" } ],
+			"chest" : [ { "name" : "droden-legionchest" } ],
+            "legs" : [ { "name" : "droden-legionlegs" } ],
+            "back" : [ { "name" : "drodenantennapack" } ],
+            "primary" : [ 
+			  "droden-assaultrifle"
+			],
+            "sheathedprimary" : [
+			  "drodenlongsword"
+			]
+          },
+          {
+            "head" : [ { "name" : "droden-legionhead" } ],
+            "chest" : [ { "name" : "droden-legionchest" } ],
+            "legs" : [ { "name" : "droden-legionlegs" } ],
+            "back" : [ { "name" : "drodenantennapack" } ],
+            "primary" : [ 
+			  "drodenlongsword"
+			],
+            "sheathedprimary" : [
+			  "droden-assaultrifle"
+			]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "itemName" : "mechbodytrink",
+  "price" : 9600,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "category" : "mechPart",
+  "tooltipKind" : "mechbody",
+  "builder" : "/items/buildscripts/buildmechpart.lua",
+  "inventoryIcon" : "mechbodytrink.png",
+  "description" : "The MEGA-TRINK armour is designed for use by Trinkian operators.",
+  "shortdescription" : "MEGA-TRINK Mech Body",
+  "itemTags" : [ ],
+
+  "mechPart" : ["body", "trink"]
+}

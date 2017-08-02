@@ -1,0 +1,28 @@
+{
+  "id" : "weaponrestorationtrink3",
+  "prerequisites" : [ "weaponrestorationtrink2" ],
+  "title" : "^orange;Prime Circuit III",
+  "text" : "^green;Using the Electromagnetic Extractor, I can extract Electric Components from mechanical enemies. ^white;I'll need at least ^orange;25 Electric Components ^white;if I am to rebuild the Prime Circuit. I'll also need ^orange;5 Sublime Trinkian Metal^white;, and a ^orange;Trinkian Power Core ^white;to supply the weapon with enough energy. Once I have all the components, I should ^green;craft a new ^orange;Prime Core ^green;at a Circuit Fabricator^white;.",
+  "completionText" : "Now that I've assembled the new Prime Core, all that remains is for me to put all the pieces together.",
+  "moneyRange" : [50, 50],
+  "rewards" : [],
+  "canBeAbandoned" : false,
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+	"portraits" : {
+      "default" : "player"
+    },
+	"followUp" : "weaponrestorationtrink4",
+    "requireTurnIn" : false,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "primecore",
+        "count" : 1,
+        "consume" : false
+      }
+    ]
+  }
+}

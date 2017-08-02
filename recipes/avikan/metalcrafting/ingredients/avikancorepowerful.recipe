@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "avikanmetal", "count" : 1 },
+	{ "item" : "feroziumore", "count" : 10 }
+  ],
+  "output" : {
+    "item" : "avikancorepowerful",
+    "count" : 1
+  },
+  "duration" : 0.15,
+  "groups" : [ "avikanmetalcrafting", "ingredients", "all" ]
+}

@@ -1,0 +1,13 @@
+{
+  "input" : [
+	{ "item" : "avikanmetal", "count" : 10 },
+    { "item" : "avikandarkmetal", "count" : 4 },
+    { "item" : "avikancircuitry", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "avikancookingstation",
+    "count" : 1
+  },
+  "duration" : 5,
+  "groups" : [ "avikaninventor2", "craftingstations", "all" ]
+}

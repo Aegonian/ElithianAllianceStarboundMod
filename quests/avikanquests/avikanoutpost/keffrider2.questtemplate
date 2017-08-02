@@ -1,0 +1,30 @@
+{
+  "id" : "keffrider2",
+  "prerequisites" : [ "keffrider" ],
+  "title" : "^green;Keffrider II",
+  "text" : "Keffriders are vital to the defence of our clans. Use the ^orange;Keffrider's Spear ^white;I gave you to ^green;hunt down an Adult Poptop and bring me its ^orange;Grand Monster Bone^white;. Do this, and you'll prove you have the strength of a Keffrider.",
+  "completionText" : "Well done, Captain! You have proven your merit and your strength, but there is one more task for you to complete.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "avikanhoverbikeobject", 1 ], [ "avikanmerittoken", 5 ]  ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "default" : "questGiver"
+    },
+    "followUp" : "keffrider3",
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "grandmonsterbone",
+        "count" : 1,
+        "consume" : false
+      }
+    ],
+	"turnInDescription" : "Return to ^orange;Vethuri ^reset;in the ^orange;Starfarer's Refuge^reset;"
+  }
+}

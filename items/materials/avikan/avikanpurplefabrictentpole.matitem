@@ -1,0 +1,12 @@
+{
+  "itemName" : "avikanpurplefabrictentpole",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "avikanpurplefabrictentpole.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "description" : "A sturdy metal tent pole.",
+  "shortdescription" : "Rhaiod Tent Pole",
+
+  "materialId" : 30057
+}
