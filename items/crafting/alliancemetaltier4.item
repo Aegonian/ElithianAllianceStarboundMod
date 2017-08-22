@@ -1,0 +1,10 @@
+{
+  "itemName" : "alliancemetaltier4",
+  "price" : 200,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "alliancemetaltier4.png",
+  "description" : "A strong and hard allosteel alloy.",
+  "shortdescription" : "Hardened Allosteel",
+  "itemTags" : [ "reagent" ]
+}

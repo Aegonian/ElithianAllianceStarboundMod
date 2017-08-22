@@ -1,0 +1,139 @@
+{
+  "itemName" : "thea-tier1shotgun",
+  "price" : 300,
+  "inventoryIcon" : "thea-tier1shotgun.png",
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "A ballistic shotgun.",
+  "manufacturer" : "^gray;AAE^reset;",
+  "shortdescription" : "BS-3 Bremmen",
+  "level" : 1,
+  "tooltipKind" : "thea-gun-mf",
+  "category" : "Shotgun",
+  "itemTags" : ["weapon","ranged","shotgun","alliance","aae","allianceUpgradeable"],
+  "twoHanded" : true,
+  
+  "cursor" : "/cursors/thea-widereticle.cursor",
+
+  "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
+  "animationParts" : {
+    "middle" : "thea-tier1shotgun.png",
+    "middleFullbright" : "thea-tier1shotgunlights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/alliancephysicalflash.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+		    "offset" : [0.5, 0.1]
+		  }
+		}
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/thea_plasmagun1.ogg" ],
+	  "altFire" : [ "/sfx/gun/shotgun4.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.625, 0.1],
+  "muzzleOffset" : [2.125, 0.5],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.48,
+    "baseDps" : 10.5,
+    "energyUsage" : 35,
+    "inaccuracy" : 0.10,
+
+    "projectileCount" : 6,
+    "fireType" : "auto",
+
+    "projectileType" : "alliancepellet",
+    "projectileParameters" : {
+      "knockback" : 10
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.25,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "altAbility" : {
+    "name" : "Power Shot",
+    "scripts" : ["/items/active/weapons/ranged/abilities/altfire.lua"],
+	"class" : "AltFireAttack",
+
+    "baseDps" : 4.0,
+	"fireTime" : 1.2,
+    "energyUsage" : 50.0,
+    "inaccuracy" : 0.045,
+
+	"projectileCount" : 4,
+    "fireType" : "auto",
+	
+	"projectileType" : "avikanbullet",
+	"projectileParameters" : {
+	  "knockback" : 40
+	},
+	
+	"hidePrimaryMuzzleFlash" : false,
+	"useParticleEmitter" : false,
+	"usePrimaryFireSound" : false,
+
+    "stances" : {
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 7,
+        "weaponRotation" : 7,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.25,
+        "armRotation" : 7,
+        "weaponRotation" : 7,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+}

@@ -140,7 +140,7 @@ end
 
 function TheaBeamFire:drawBeam(endPos, didCollide)
   local newChain = copy(self.chain)
-  newChain.startOffset = self.weapon.muzzleOffset
+  newChain.startOffset = vec2.add(self.weapon.muzzleOffset, self.chain.startOffset or 0)
   newChain.endPosition = endPos
 
   if didCollide then

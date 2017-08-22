@@ -1,0 +1,35 @@
+{
+  "itemName" : "thea-tier1shortsword",
+  "price" : 250,
+  "level" : 1,
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "A basic shortsword.",
+  "manufacturer" : "^gray;Bredon Arms^reset;",
+  "shortdescription" : "Bredon Sword",
+  "tooltipKind" : "thea-sword-mf",
+  "category" : "shortsword",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","melee","shortsword","alliance","bredonarms","allianceUpgradeable"],
+
+  "inventoryIcon" : "thea-tier1shortsword.png",
+
+  "animation" : "/items/active/weapons/melee/shortsword/comboshortsword.animation",
+  "animationParts" : {
+    "handle": "",
+    "blade" : "thea-tier1shortsword.png"
+  },
+  "animationCustom" : { },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "shortswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.625,
+    "baseDps" : 7.5
+  },
+
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+}

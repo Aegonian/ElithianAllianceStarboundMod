@@ -137,6 +137,13 @@
     "backingImage" : "/interface/inventory/portrait.png",
     "showRarity" : false,
     "showBackingImageWhenFull" : true
+  },
+  //Custom field, Manufacturer Label
+  "manufacturerLabel" : {
+    "type" : "label",
+    "position" : [130, 95],
+    "hAnchor" : "right",
+    "centered" : true,
+    "wrapWidth" : 126
   }
-
 }

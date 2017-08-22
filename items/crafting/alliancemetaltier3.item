@@ -1,0 +1,10 @@
+{
+  "itemName" : "alliancemetaltier3",
+  "price" : 150,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "alliancemetaltier3.png",
+  "description" : "Thick allosteel plating, for greater durability.",
+  "shortdescription" : "Thick Allosteel",
+  "itemTags" : [ "reagent" ]
+}

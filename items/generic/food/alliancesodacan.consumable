@@ -1,0 +1,17 @@
+{
+  "itemName" : "alliancesodacan",
+  "rarity" : "Common",
+  "price" : 40,
+  "category" : "drink",
+  "inventoryIcon" : "alliancesodacan.png",
+  "description" : "A can of refreshing Froza.",
+  "shortdescription" : "Froza Can",
+  "maxStack" : 1,
+  "effects" : [ [
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 30
+    }
+  ] ],
+  "emitters" : [ "drinking" ]
+}

@@ -1,0 +1,92 @@
+{
+  "itemName" : "thea-tier6smg",
+  "price" : 250,
+  "inventoryIcon" : "thea-tier6smg.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A standard-issue Alliance SMG.",
+  "manufacturer" : "^gray;Alliance Collective^reset;",
+  "shortdescription" : "AC.P-9 Broker",
+  "level" : 6,
+  "tooltipKind" : "thea-gun-mf",
+  "category" : "Submachinegun",
+  "itemTags" : ["weapon","ranged","smg","alliance","alliancecollective","allianceUpgradeable"],
+  "twoHanded" : false,
+
+  "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
+  "animationParts" : {
+    "middle" : "thea-tier6smg.png",
+    "middleFullbright" : "thea-tier6smglights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/allianceenergyflash.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+		    "offset" : [0.5, 0.0]
+		  }
+		}
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/thea_plasmagun1.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.5, 0.0],
+  "muzzleOffset" : [1.2, 0.2],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.16,
+    "baseDps" : 7.5,
+    "energyUsage" : 22,
+    "inaccuracy" : 0.025,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "alliancetrailbullet",
+    "projectileParameters" : {
+      "knockback" : 6
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.075,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+}

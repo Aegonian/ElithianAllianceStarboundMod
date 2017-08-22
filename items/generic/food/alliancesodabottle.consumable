@@ -1,0 +1,17 @@
+{
+  "itemName" : "alliancesodabottle",
+  "rarity" : "Common",
+  "price" : 60,
+  "category" : "drink",
+  "inventoryIcon" : "alliancesodabottle.png",
+  "description" : "An ice-cold bottle of Froza, the Union's most popular soda.",
+  "shortdescription" : "Froza Bottle",
+  "maxStack" : 1,
+  "effects" : [ [
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 60
+    }
+  ] ],
+  "emitters" : [ "drinking" ]
+}

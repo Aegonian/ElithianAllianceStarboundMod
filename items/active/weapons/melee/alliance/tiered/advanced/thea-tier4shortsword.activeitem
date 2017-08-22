@@ -1,0 +1,35 @@
+{
+  "itemName" : "thea-tier4shortsword",
+  "price" : 250,
+  "level" : 4,
+  "maxStack" : 1,
+  "rarity" : "Uncommon",
+  "description" : "A modern shortsword.",
+  "manufacturer" : "^gray;Stryker Smithing^reset;",
+  "shortdescription" : "Stryker X-02 Sword",
+  "tooltipKind" : "thea-sword-mf",
+  "category" : "shortsword",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","melee","shortsword","alliance","strykersmithing","allianceUpgradeable"],
+
+  "inventoryIcon" : "thea-tier4shortsword.png",
+
+  "animation" : "/items/active/weapons/melee/animations/thea-shortsword.animation",
+  "animationParts" : {
+    "bladeFullbright": "thea-tier4shortswordlights.png",
+    "blade" : "thea-tier4shortsword.png"
+  },
+  "animationCustom" : { },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "shortswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.625,
+    "baseDps" : 7.5
+  },
+
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+}

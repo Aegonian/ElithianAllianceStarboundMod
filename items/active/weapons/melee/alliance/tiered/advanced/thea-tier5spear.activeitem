@@ -1,0 +1,43 @@
+{
+  "itemName" : "thea-tier5spear",
+  "price" : 300,
+  "level" : 5,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A modern spear.",
+  "manufacturer" : "^gray;Stryker Smithing^reset;",
+  "shortdescription" : "Stryker X-04 Spear",
+  "tooltipKind" : "thea-sword-mf",
+  "category" : "spear",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spear","alliance","strykersmithing","allianceUpgradeable"],
+
+  "inventoryIcon" : "thea-tier5spear.png",
+
+  "animation" : "/items/active/weapons/melee/animations/thea-spear.animation",
+  "animationParts" : {
+    "bladeFullbright" : "thea-tier5spearlights.png",
+    "blade" : "thea-tier5spear.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_spear.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "spearstab",
+  "primaryAbility" : {
+    "fireTime" : 0.95,
+    "baseDps" : 10.5
+  },
+
+  "altAbilityType" : "thea-spearspin",
+
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+}

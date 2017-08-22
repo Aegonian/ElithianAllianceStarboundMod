@@ -8,13 +8,19 @@
   {
 	"op": "add",
 	"path": "/thea-grenadelauncher",
-	"value": "/items/active/weapons/ranged/abilities/attachments/thea-grenadelauncher/thea-grenadelauncher.weaponability"
+	"value": "/items/active/weapons/ranged/abilities/thea-grenadelauncher/thea-grenadelauncher.weaponability"
   },
   {
 	"op": "add",
 	"path": "/thea-stickylauncher",
-	"value": "/items/active/weapons/ranged/abilities/attachments/thea-stickylauncher/thea-stickylauncher.weaponability"
+	"value": "/items/active/weapons/ranged/abilities/thea-stickylauncher/thea-stickylauncher.weaponability"
   },
+  {
+	"op": "add",
+	"path": "/thea-alliancelaser",
+	"value": "/items/active/weapons/ranged/abilities/thea-alliancelaser/thea-alliancelaser.weaponability"
+  },
+  
   //MELEE ABILITIES
   {
 	"op": "add",
@@ -50,5 +56,10 @@
 	"op": "add",
 	"path": "/thea-explosivehammersmash",
 	"value": "/items/active/weapons/melee/abilities/hammer/thea-explosivehammersmash/thea-explosivehammersmash.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-spearspin",
+	"value": "/items/active/weapons/melee/abilities/spear/thea-spearspin/thea-spearspin.weaponability"
   }
 ]

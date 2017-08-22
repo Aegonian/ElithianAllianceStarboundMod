@@ -1,0 +1,10 @@
+{
+  "itemName" : "alliancemetal",
+  "price" : 50,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "alliancemetal.png",
+  "description" : "An iron alloy with trace amounts of ferroverium.",
+  "shortdescription" : "Allosteel",
+  "itemTags" : [ "reagent" ]
+}

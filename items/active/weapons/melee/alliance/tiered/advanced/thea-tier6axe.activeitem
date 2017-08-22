@@ -1,0 +1,47 @@
+{
+  "itemName" : "thea-tier6axe",
+  "price" : 250,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A modern shortsword.",
+  "manufacturer" : "^gray;Stryker Smithing^reset;",
+  "shortdescription" : "Stryker X-05 Axe",
+  "tooltipKind" : "thea-sword-mf",
+  "category" : "axe",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","melee","axe","alliance","strykersmithing","allianceUpgradeable"],
+
+  "inventoryIcon" : "thea-tier6axe.png",
+
+  "animation" : "/items/active/weapons/melee/animations/thea-axe.animation",
+  "animationParts" : {
+    "bladeFullbright" : "thea-tier6axelights.png",
+    "blade" : "thea-tier6axe.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : { "parts" : { "swoosh" : { "properties" : {
+      "offset" : [-1.5, 1.75]
+    }}}},
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_axe.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "axecleave",
+  "primaryAbility" : {
+    "fireTime" : 0.9,
+    "baseDps" : 9.5,
+    "damageConfig" : {
+      "knockback" : 25
+    }
+  },
+
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+}

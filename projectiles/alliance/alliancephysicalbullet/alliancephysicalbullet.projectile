@@ -1,0 +1,18 @@
+{
+  "projectileName" : "alliancephysicalbullet",
+  "physics" : "laser",
+  "bounces" : 0,
+  "image" : "alliancephysicalbullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 160,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "damageKind" : "default"
+}

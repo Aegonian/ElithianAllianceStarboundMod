@@ -1,0 +1,133 @@
+{
+  "itemName" : "thea-tier6minigun",
+  "price" : 500,
+  "inventoryIcon" : "thea-tier6minigun.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "An extremely powerful Alliance minigun.",
+  "manufacturer" : "^gray;AAE^reset;",
+  "shortdescription" : "Valkyrie G-2",
+  "level" : 6,
+  "tooltipKind" : "thea-speedupminigun-mf",
+  "category" : "Minigun",
+  "itemTags" : ["weapon","ranged","minigun","alliance","aae","allianceUpgradeable"],
+  "twoHanded" : true,
+  
+  "cursor" : "/cursors/thea-largereticle.cursor",
+
+  "animation" : "thea-tier6minigun.animation",
+  "animationParts" : {
+    "middle" : "thea-tier6minigun.png",
+    "middleFullbright" : "thea-tier6minigunlights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/allianceenergyflash.png",
+    "charge" : "thea-tier6miniguncharge.png",
+	"chargehold" : "thea-tier6minigunchargehold.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+		    "offset" : [1.0, -0.875]
+		  }
+		},
+		"charge" : {
+		  "properties" : {
+		    "offset" : [1.0, -0.875]
+		  }
+		},
+		"chargehold" : {
+		  "properties" : {
+		    "offset" : [1.0, -0.875]
+		  }
+		}
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/thea_plasmagun1.ogg" ],
+	  "chargeLoop" : [ "/sfx/melee/charge_up8.ogg" ],
+	  "holdLoop" : [ "/sfx/objects/camera_pan_loop.ogg" ],
+	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
+    }
+  },
+
+  "baseOffset" : [1.0, -0.875],
+  "muzzleOffset" : [2.5, 0.15],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-speedupminigun.lua"],
+    "class" : "TheaSpeedUpMinigun",
+
+    "minFiringSpeed" : 0.15, //Starting fire time
+	"maxFiringSpeed" : 0.05, //End fire time
+	"maxFiringTime" : 2.5, //How long it takes to reach maximum firing speed
+	
+    "baseDps" : 6.0,
+    "energyUsage" : 25.0,
+    "inaccuracy" : 0.045,
+	
+	"chargeTime" : 1.25,
+	"resetTime" : 1.25,
+	
+	"walkWhileFiring" : true,
+
+    "projectileType" : "allianceenergybullet",
+	"projectileCount" : 1,
+	"projectileParameters" : { 
+      "knockback" : 2
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "charge" : {
+        "armRotation" : -2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+	    "weaponOffset" : [-0.15, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.05,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+	    "weaponOffset" : [-0.15, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "discharge" : {
+        "duration" : 0.1,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+	}
+  },
+
+  "builder" : "/items/buildscripts/thea-buildspeedupminigun.lua"
+}

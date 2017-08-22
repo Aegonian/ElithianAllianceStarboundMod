@@ -1,0 +1,10 @@
+{
+  "itemName" : "alliancecloth",
+  "price" : 10,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "alliancecloth.png",
+  "description" : "A small piece of woven cloth.",
+  "shortdescription" : "Woven Cloth",
+  "itemTags" : [ "reagent" ]
+}

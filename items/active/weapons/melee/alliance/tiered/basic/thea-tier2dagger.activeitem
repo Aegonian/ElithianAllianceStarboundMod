@@ -1,0 +1,78 @@
+{
+  "itemName" : "thea-tier2dagger",
+  "price" : 200,
+  "level" : 2,
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "A basic dagger.",
+  "manufacturer" : "^gray;Bredon Arms^reset;",
+  "shortdescription" : "Bredon Dagger",
+  "tooltipKind" : "thea-sword-mf",
+  "category" : "dagger",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","melee","dagger","alliance","bredonarms","allianceUpgradeable"],
+
+  "inventoryIcon" : "thea-tier2dagger.png",
+
+  "animation" : "/items/active/weapons/melee/dagger/dagger.animation",
+  "animationParts" : {
+    "handle": "",
+    "blade" : "thea-tier2dagger.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_dagger.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "aimOffset" : 0.0,
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/melee/meleeslash.lua"],
+    "class" : "MeleeSlash",
+
+    "fireTime" : 0.32,
+    "baseDps" : 8.0,
+    "damageConfig" : {
+      "damageSourceKind" : "dagger",
+      "statusEffects" : [ ],
+      "knockbackMode" : "aim",
+      "knockback" : 10,
+      "timeoutGroup" : "primary"
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : -90,
+        "weaponRotation" : -10,
+        "weaponOffset" : [0, 2.25],
+
+        "allowFlip" : true,
+        "allowRotate" : true
+      },
+      "windup" : {
+        "duration" : 0.05,
+        "armRotation" : -20,
+        "weaponRotation" : -20,
+        "weaponOffset" : [0, 2.25],
+
+        "allowFlip" : true,
+        "allowRotate" : false
+      },
+      "fire" : {
+        "duration" : 0.2,
+        "armRotation" : -135,
+        "weaponRotation" : 40,
+        "weaponOffset" : [0, 2.5],
+
+        "allowFlip" : true,
+        "allowRotate" : false
+      }
+    }
+  },
+  "fireSounds" : [ "/sfx/melee/swing_dagger.ogg" ],
+
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+}

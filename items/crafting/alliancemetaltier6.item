@@ -1,0 +1,10 @@
+{
+  "itemName" : "alliancemetaltier6",
+  "price" : 500,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "alliancemetaltier6.png",
+  "description" : "Durable allosteel with integrated circuitry and wiring.",
+  "shortdescription" : "Integrated Allosteel",
+  "itemTags" : [ "reagent" ]
+}

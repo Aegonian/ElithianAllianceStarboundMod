@@ -599,7 +599,9 @@
 			  { "item" : { "name" : "trink-goldenlegs", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.5 },
 			  
 			  { "item" : { "name" : "trink-combatchest", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.5 },
-			  { "item" : { "name" : "trink-combatlegs", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.5 }
+			  { "item" : { "name" : "trink-combatlegs", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.5 },
+			  
+			  { "item" : { "name" : "trinkmerchantback", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.5 }
 			] ]
 		]
 	}

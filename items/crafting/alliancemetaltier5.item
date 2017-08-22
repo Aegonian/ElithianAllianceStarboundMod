@@ -1,0 +1,10 @@
+{
+  "itemName" : "alliancemetaltier5",
+  "price" : 350,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "alliancemetaltier5.png",
+  "description" : "Allosteel with a high concentration of ferroverium.",
+  "shortdescription" : "Reinforced Allosteel",
+  "itemTags" : [ "reagent" ]
+}

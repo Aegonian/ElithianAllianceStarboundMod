@@ -1,0 +1,10 @@
+{
+  "itemName" : "alliancemetaltier2",
+  "price" : 100,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "alliancemetaltier2.png",
+  "description" : "A bolted plate of allosteel, for additional strength.",
+  "shortdescription" : "Bolted Allosteel",
+  "itemTags" : [ "reagent" ]
+}

@@ -1,0 +1,97 @@
+{
+  "itemName" : "thea-tier5shotgun",
+  "price" : 300,
+  "inventoryIcon" : "thea-tier5shotgun.png",
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A standard-issue Alliance shotgun.",
+  "manufacturer" : "^gray;Alliance Collective^reset;",
+  "shortdescription" : "AC.S-24 Ravager",
+  "level" : 5,
+  "tooltipKind" : "thea-gun-mf",
+  "category" : "Shotgun",
+  "itemTags" : ["weapon","ranged","shotgun","alliance","alliancecollective","allianceUpgradeable"],
+  "twoHanded" : true,
+  
+  "cursor" : "/cursors/thea-widereticle.cursor",
+
+  "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
+  "animationParts" : {
+    "middle" : "thea-tier5shotgun.png",
+    "middleFullbright" : "thea-tier5shotgunlights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/allianceenergyflash.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+		    "offset" : [0.5, 0.1]
+		  }
+		}
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/thea_plasmagun1.ogg" ],
+	  "altFire" : [ "/sfx/gun/shotgun4.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.5, 0.1],
+  "muzzleOffset" : [1.8, 0.4],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.9,
+    "baseDps" : 10.5,
+    "energyUsage" : 35,
+    "inaccuracy" : 0.07,
+
+    "projectileCount" : 8,
+    "fireType" : "auto",
+
+    "projectileType" : "alliancetrailbullet",
+    "projectileParameters" : {
+      "knockback" : 10
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 7,
+        "weaponRotation" : 7,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.50,
+        "armRotation" : 7,
+        "weaponRotation" : 7,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "altAbilityType" : "thea-alliancelaser",
+
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+}

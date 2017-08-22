@@ -269,6 +269,13 @@
       "title" : "Wrath of Rhadeis",
       "description" : "A hammer wielding the strength of a Centensian god.",
       "icon" : "/items/active/weapons/melee/unique/wrathofrhadeis/centens-wrathofrhadeisicon.png"
+    },
+	//NEW WEAPONS - v2.3.0
+	"avikan-conscriptor" : {
+      "order" : 44,
+      "title" : "Conscriptor",
+      "description" : "An intimidating revolver once held by the elder of Vathra.",
+      "icon" : "/items/active/weapons/ranged/unique/conscriptor/avikan-conscriptoricon.png"
     }
   }
 }
