@@ -1,0 +1,10 @@
+{
+  "itemName" : "alliancequantumchip",
+  "price" : 250,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "alliancequantumchip.png",
+  "description" : "A powerful quantum processor built according to Alliance standards.",
+  "shortdescription" : "Quantum Processor",
+  "itemTags" : [ "reagent" ]
+}

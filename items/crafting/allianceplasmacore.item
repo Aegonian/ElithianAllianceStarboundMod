@@ -1,0 +1,10 @@
+{
+  "itemName" : "allianceplasmacore",
+  "price" : 150,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "allianceplasmacore.png",
+  "description" : "The core of any plasma-infused Alliance rifle.",
+  "shortdescription" : "Plasma Injector",
+  "itemTags" : [ "reagent" ]
+}

@@ -1,0 +1,10 @@
+{
+  "itemName" : "alliancemagazine",
+  "price" : 100,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "alliancemagazine.png",
+  "description" : "A vital part of any Alliance ballistic rifle.",
+  "shortdescription" : "Alliance Magazine",
+  "itemTags" : [ "reagent" ]
+}

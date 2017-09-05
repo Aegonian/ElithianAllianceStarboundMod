@@ -5,7 +5,7 @@
 		"value": 		
 		{
 			"type" : "tutorial",
-			"text" : "I see you have obtained a Workman's Table. Using it will allow you to craft several more specialized crafting tables."
+			"text" : "I see you have obtained a Workman's Table. It will allow you to craft several more specialized crafting tables."
 		}
 	},
 	
@@ -48,6 +48,16 @@
 		{
 			"type" : "tutorial",
 			"text" : "You obtained an Avikan hunting weapon. Killing alien monsters with such a weapon drastically increases your odds of receiving a monster bone or monster hide."
+		}
+	},
+	
+	// On picking up various Alliance crafting tables
+	{ 	"op": "add", 
+		"path": "/pickupallianceinventor",
+		"value": 		
+		{
+			"type" : "tutorial",
+			"text" : "I see you have obtained a Planning Table. It will allow you to craft several more specialized crafting tables."
 		}
 	}
 ]

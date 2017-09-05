@@ -1,0 +1,11 @@
+{
+  "name" : "thea-showerwet",
+  
+  "effectConfig" : {},
+  "defaultDuration" : 0.5,
+
+  "scripts" : [
+    "thea-showerwet.lua"
+  ],
+  "scriptDelta" : 10
+}

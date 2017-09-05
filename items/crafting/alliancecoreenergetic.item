@@ -1,0 +1,10 @@
+{
+  "itemName" : "alliancecoreenergetic",
+  "price" : 250,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "alliancecoreenergetic.png",
+  "description" : "An Alliance armour power core. Increases the user's energy reserves.",
+  "shortdescription" : "Nucleus v2.A",
+  "itemTags" : [ "reagent" ]
+}

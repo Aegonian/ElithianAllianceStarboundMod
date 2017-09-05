@@ -1,0 +1,10 @@
+{
+  "itemName" : "alliancecorepowerful",
+  "price" : 250,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "alliancecorepowerful.png",
+  "description" : "An Alliance armour power core. Increases the user's strength.",
+  "shortdescription" : "Nucleus v2.M",
+  "itemTags" : [ "reagent" ]
+}

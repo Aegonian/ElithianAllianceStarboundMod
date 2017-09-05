@@ -1,0 +1,265 @@
+{
+  "objectName" : "alliancefurnace",
+  "colonyTags" : ["alliance", "crafting"],
+  "rarity" : "Uncommon",
+  "race" : "aegi",
+  "category" : "crafting",
+
+  //this is handled by the lua
+  "breakDropOptions" : [],
+
+  "price" : 50,
+  "printable" : false,
+
+  "scripts" : [ "/scripts/npcToyObject.lua",
+                "/objects/crafting/upgradeablecraftingobjects/upgradeablecraftingobject.lua"
+              ],
+
+  "animation" : "alliancefurnace.animation",
+  "animationPosition" : [4, 12],
+
+  "inventoryIcon" : "alliancefurnaceicon.png",
+  "placementImage" : "alliancefurnace.png:default.default",
+  "placementImagePosition" : [-8, 0],    
+
+  "description" : "A stone smelter capable of smelting basic metal bars.",
+  "shortdescription" : "^orange;Stone Smelter^white;",
+
+  "apexDescription" : "A primitive furnace. I can smelt things here.",
+  "avianDescription" : "A basic furnace perfect for smelting ore.",
+  "floranDescription" : "Furnace flamess hissss, burn. Floran brave it.",
+  "glitchDescription" : "Impressed. This furnace is the perfect temperature for smelting basic ores",
+  "humanDescription" : "A smelting furnace. Looks hot.",
+  "hylotlDescription" : "A hot, imposing furnace.",
+  "novakidDescription" : "Basic lookin' furnace, for smeltin' ore.",
+  
+  "aegiDescription" : "A compact stone smelter, for smelting low-temperature alloys.",
+  "avikanDescription" : "A simple stone furnace, for smelting ores.",
+  "erixianDescription" : "A smelter radiating a comfortable heat.",
+  "trinkDescription" : "A primitive construct for smelting ores.",
+  "hymidDescription" : "I've never been a fan of working the forge.",
+  "notixDescription" : "A hot fire blazes inside this furnace. It's making me uncomfortable.",
+  "jorgasianDescription" : "A simple but effective smelter, but it doesn't meet safety standards.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Analysis complete. Stone smelter. Basic ore smelting functionality.",
+
+  "learnBlueprintsOnPickup" : [],
+
+  "startingUpgradeStage" : 1,
+  "maxUpgradeStage" : 3,
+
+  "upgradeStages" : [
+    {
+      "animationState" : "alliancefurnace",
+
+      "itemSpawnParameters" : {
+        "inventoryIcon" : "alliancefurnaceicon.png",
+        "placementImage" : "alliancefurnace.png:default.default",
+        "placementImagePosition" : [-8, 0],    
+
+        "description" : "A stone smelter capable of smelting basic metal bars.",
+        "shortdescription" : "^orange;Stone Smelter^white;",
+
+		"apexDescription" : "A primitive furnace. I can smelt things here.",
+		"avianDescription" : "A basic furnace perfect for smelting ore.",
+		"floranDescription" : "Furnace flamess hissss, burn. Floran brave it.",
+		"glitchDescription" : "Impressed. This furnace is the perfect temperature for smelting basic ores",
+		"humanDescription" : "A smelting furnace. Looks hot.",
+		"hylotlDescription" : "A hot, imposing furnace.",
+		"novakidDescription" : "Basic lookin' furnace, for smeltin' ore.",
+  
+		"aegiDescription" : "A compact stone smelter, for smelting low-temperature alloys.",
+		"avikanDescription" : "A simple stone furnace, for smelting ores.",
+		"erixianDescription" : "A smelter radiating a comfortable heat.",
+		"trinkDescription" : "A primitive construct for smelting ores.",
+		"hymidDescription" : "I've never been a fan of working the forge.",
+		"notixDescription" : "A hot fire blazes inside this furnace. It's making me uncomfortable.",
+		"jorgasianDescription" : "A simple but effective smelter, but it doesn't meet safety standards.",
+		"centensDescription" : "TODO.",
+		"dremetonDescription" : "TODO.",
+		"theleanDescription" : "TODO.",
+		"drodenDescription" : "Analysis complete. Stone smelter. Basic ore smelting functionality."
+      },
+
+      "interactData" : {
+        "config" : "/interface/windowconfig/alliancefurnacecrafting.config",
+        "paneLayoutOverride" : {
+          "windowtitle" : {
+            "title" : " Stone Smelter",
+            "subtitle" : " ^#b9b5b2;Metals and crafting materials",
+            "icon" : {
+              "file" : "/interface/crafting/craftingalliancefurnace.png"
+            }
+          }
+        },
+
+        "filter" : [ "alliancefurnace" ],
+        "initialRecipeUnlocks" : [],
+        "upgradeMaterials" : [
+          { "item" : "monsterclaws", "count" : 6 },
+          { "item" : "avikanmetal", "count" : 10 },
+          { "item" : "avikandarkmetal", "count" : 5 },
+          { "item" : "avikancircuitry", "count" : 1 }
+        ]
+      },
+
+      "learnBlueprintsOnPickup" : [],
+
+      "upgradeSoundEffect" : "fanfare",
+      "upgradeParticleEffect" : "dust"
+    },
+
+    {
+      "animationState" : "alliancefurnace2",
+
+      "itemSpawnParameters" : {
+        "price" : 400,
+        "inventoryIcon" : "alliancefurnace2icon.png",
+        "placementImage" : "alliancefurnace2.png:default.default",
+        "placementImagePosition" : [-8, 0],    
+
+        "description" : "A high-tech smelter capable of reaching high temperatures.",
+        "shortdescription" : "^orange;Alliance Smelter^white;",
+
+        "apexDescription" : "A high-tech smelter of alien design. I should take notes.",
+		"avianDescription" : "A smelter burning bright as the sun.",
+		"floranDescription" : "Floran isss careful. Fire will burn Floran...",
+		"glitchDescription" : "Impressed. This smelter burns incredibly hot.",
+		"humanDescription" : "This furnace is unusually hot. Better handle it carefully.",
+		"hylotlDescription" : "The heat of this furnace is uncomfortable to me.",
+		"novakidDescription" : "This smelter's burnin' bright.",
+  
+		"aegiDescription" : "This smelter was made specifically for smelting specific types of low-grade allosteel.",
+		"avikanDescription" : "An alien smelter. It's incredibly hot.",
+		"erixianDescription" : "A comfortable heat radiates from this melter.",
+		"trinkDescription" : "A highly efficient smelter. The Circuit helped design it.",
+		"hymidDescription" : "This smelter is uncomfortably hot.",
+		"notixDescription" : "I should be careful around this smelter. The heat isn't good for me.",
+		"jorgasianDescription" : "An Alliance-approved smelter. It's incredibly hot inside.",
+		"centensDescription" : "TODO.",
+		"dremetonDescription" : "TODO.",
+		"theleanDescription" : "TODO.",
+		"drodenDescription" : "Analysis complete. Alien smelter. Temperature levels rising above safety regulations."
+      },
+
+      "interactData" : {
+        "config" : "/interface/windowconfig/alliancefurnacecrafting.config",
+        "paneLayoutOverride" : {
+          "windowtitle" : {
+            "title" : " Alliance Smelter",
+            "subtitle" : " ^#b9b5b2;Metals and crafting materials",
+            "icon" : {
+              "file" : "/interface/crafting/craftingalliancefurnace2.png"
+            }
+          }
+        },
+        "filter" : [ "alliancefurnace", "alliancefurnace2" ],
+        "initialRecipeUnlocks" : [],
+        "upgradeMaterials" : [
+          { "item" : "monsterclaws", "count" : 6 },
+          { "item" : "avikanmetal", "count" : 10 },
+          { "item" : "avikandarkmetal", "count" : 5 },
+          { "item" : "avikancircuitry", "count" : 1 }
+        ]
+      },
+
+      "learnBlueprintsOnPickup" : [],
+
+      "upgradeSoundEffect" : "fanfare",
+      "upgradeParticleEffect" : "dust"
+    },
+
+    {
+      "animationState" : "alliancefurnace3",
+
+      "itemSpawnParameters" : {
+        "price" : 750,
+        "inventoryIcon" : "alliancefurnace3icon.png",
+        "placementImage" : "alliancefurnace3.png:default.default",
+        "placementImagePosition" : [-8, 0],    
+
+        "description" : "A compact fusion chamber capable of smelting hyverianites.",
+        "shortdescription" : "^orange;Fusion Chamber^white;",
+
+        "apexDescription" : "Some type of compact fusion chamber. Nothing will survive that heat.",
+		"avianDescription" : "This device burns brighter than the sun! How is that possible?",
+		"floranDescription" : "Floran isss careful. Ssmall sssun will burn everything.",
+		"glitchDescription" : "Alarmed. This device could easily melt my own body.",
+		"humanDescription" : "A compact fusion chamber! How does it contain all that heat?",
+		"hylotlDescription" : "I feel myself drying up just standing near this device...",
+		"novakidDescription" : "A small star burns inside this device. 'Tis glorious!",
+  
+		"aegiDescription" : "A compact fusion chamber. Nothing less will do when smelting hyverianites.",
+		"avikanDescription" : "Even the metals of the Old Ones won't survive the temperatures inside this device.",
+		"erixianDescription" : "A fusion chamber. It's like a miniature sun.",
+		"trinkDescription" : "The Aegi truly outdid themselves designing this fusion chamber.",
+		"hymidDescription" : "Despite the extreme heat inside these fusion chambers, accidents are extremely rare.",
+		"notixDescription" : "I can almost hear the heat inside this fusion chamber.",
+		"jorgasianDescription" : "A compact fusion chamber. It will melt anything.",
+		"centensDescription" : "TODO.",
+		"dremetonDescription" : "TODO.",
+		"theleanDescription" : "TODO.",
+		"drodenDescription" : "Analysis failed. Heat signature exceding maximum values. Error."
+      },
+
+      "interactData" : {
+        "config" : "/interface/windowconfig/alliancefurnacecrafting.config",
+        "paneLayoutOverride" : {
+          "windowtitle" : {
+            "title" : " Fusion Chamber",
+            "subtitle" : " ^#b9b5b2;Metals and crafting materials",
+            "icon" : {
+              "file" : "/interface/crafting/craftingalliancefurnace3.png"
+            }
+          }
+        },
+        "filter" : [ "alliancefurnace", "alliancefurnace2", "alliancefurnace3" ],
+        "initialRecipeUnlocks" : []
+      },
+
+      "learnBlueprintsOnPickup" : []
+    }
+  ],
+
+  "orientations" : [
+    {
+      "image" : "alliancefurnace.png:default.<frame>",
+      "imagePosition" : [-8, 0],    
+      "direction" : "left",
+      "flipImages" : true,
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "alliancefurnace.png:default.<frame>",
+      "imagePosition" : [-8, 0],    
+      "direction" : "right",
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "npcToy" : {
+    "influence" : [
+      "furnace",
+      "furnace",
+      "furnaceComplete"
+    ],
+    "defaultReactions" : {
+      "furnace" : [
+        [1.0, "warmhands"],
+        [1.0, "crouchwarm"]
+      ],
+      "furnaceComplete" : [
+        [1.0, "warmhands"],
+        [1.0, "crouchwarm"],
+        [1.0, "pokefire"]
+      ]
+    },
+    "preciseStandPositionLeft" : [-1.5, 0.0],
+    "preciseStandPositionRight" : [2.5, 0.0],
+    "maxNpcs" : 1
+  }
+}

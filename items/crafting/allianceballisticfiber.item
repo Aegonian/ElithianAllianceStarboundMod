@@ -1,0 +1,10 @@
+{
+  "itemName" : "allianceballisticfiber",
+  "price" : 50,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "allianceballisticfiber.png",
+  "description" : "A small piece of ballistic fiber.",
+  "shortdescription" : "Ballistic Fiber",
+  "itemTags" : [ "reagent" ]
+}

@@ -1,0 +1,125 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "stage" : {
+        "default" : "alliancefurnace",
+        "states" : {
+          "alliancefurnace" : {
+            "frames" : 12,
+            "cycle" : 1.2,
+            "mode" : "loop",
+            "properties" : {
+              "lightsOn" : [ "fireglow" ],
+              "persistentSound" : "/sfx/objects/campfire.ogg",
+              "persistentSoundRangeMultiplier" : 0.5
+            }
+          },
+          "alliancefurnace2" : {
+            "frames" : 12,
+            "cycle" : 1.2,
+            "mode" : "loop",
+            "properties" : {
+              "lightsOn" : [ "fireglow" ],
+              "persistentSound" : "/sfx/objects/campfire.ogg",
+              "persistentSoundRangeMultiplier" : 0.5
+            }
+          },
+          "alliancefurnace3" : {
+            "frames" : 12,
+            "cycle" : 1.2,
+            "mode" : "loop",
+            "properties" : {
+              "lightsOn" : [ "fireglow" ],
+              "persistentSound" : "/sfx/objects/campfire.ogg",
+              "persistentSoundRangeMultiplier" : 0.5
+            }
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "chassis" : {
+        "properties" : {
+          "centered" : true
+        },
+        "partStates" : {
+          "stage" : {
+            "alliancefurnace" : {
+              "properties" : {
+                "image" : "alliancefurnacelit.png:<color>.<frame>"
+              }
+            },
+
+            "alliancefurnace2" : {
+              "properties" : {
+                "image" : "alliancefurnace2lit.png:<color>.<frame>"
+              }
+            },
+
+            "alliancefurnace3" : {
+              "properties" : {
+                "image" : "alliancefurnace3lit.png:<color>.<frame>"
+              }
+            }
+          }
+        }
+      },
+
+      "fire" : {
+        "properties" : {
+          "centered" : true,
+          "fullbright" : true
+        },
+        "partStates" : {
+          "stage" : {
+            "alliancefurnace" : {
+              "properties" : {
+                "image" : "alliancefurnace.png:<color>.<frame>"
+              }
+            },
+
+            "alliancefurnace2" : {
+              "properties" : {
+                "image" : "alliancefurnace2.png:<color>.<frame>"
+              }
+            },
+
+            "alliancefurnace3" : {
+              "properties" : {
+                "image" : "alliancefurnace3.png:<color>.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "sounds" : {
+    "fanfare" : ["/sfx/cinematics/mission_unlock_event.ogg"],
+    "fanfare2" : ["/sfx/cinematics/license_acquired_event.ogg"]
+  },
+
+  "lights" : {
+    "fireglow" : {
+      "active" : false,
+      "position" : [0, 1],
+      "color" : [153, 128, 92],
+      "flickerPeriod" : 0.3,
+      "flickerMinIntensity" : 0.95,
+      "flickerMaxIntensity" : 1,
+      "flickerPeriodVariance" : 0.075,
+      "flickerIntensityVariance" : 0.025
+    }
+  },
+  
+  "particleEmitters" : {
+    "dust" : {
+      "emissionRate" : 0.0,
+      "burstCount"  : 10,
+      "offsetRegion" : [-2, -2, 2, 2],
+      "particles" : [{ "particle" : "dust2"}]
+    }
+  }
+}

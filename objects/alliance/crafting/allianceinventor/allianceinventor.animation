@@ -1,0 +1,105 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "stage" : {
+        "default" : "allianceinventor",
+        "states" : {
+          "allianceinventor" : {},
+          "allianceinventor2" : {},
+          "allianceinventor3" : {
+            "frames" : 8,
+            "cycle" : 1.0,
+            "mode" : "loop",
+            "properties" : {
+              "lightsOn" : [ "scifiglow" ]
+            }
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "chassis" : {
+        "properties" : {
+          "centered" : true
+        },
+        "partStates" : {
+          "stage" : {
+            "allianceinventor" : {
+              "properties" : {
+                "image" : "allianceinventor.png:<color>"
+              }
+            },
+			
+			"allianceinventor2" : {
+              "properties" : {
+                "image" : "allianceinventor2lit.png:<color>"
+              }
+            },
+
+            "allianceinventor3" : {
+              "properties" : {
+                "image" : "allianceinventor3lit.png:<color>.<frame>"
+              }
+            }
+          }
+        }
+      },
+	  
+	  "light" : {
+        "properties" : {
+          "centered" : true,
+		  "fullbright" : true
+        },
+        "partStates" : {
+          "stage" : {
+            "allianceinventor" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+			
+			"allianceinventor2" : {
+              "properties" : {
+                "image" : "allianceinventor2.png:<color>"
+              }
+            },
+
+            "allianceinventor3" : {
+              "properties" : {
+                "image" : "allianceinventor3.png:<color>.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "sounds" : {
+    "fanfare" : ["/sfx/cinematics/mission_unlock_event.ogg"],
+    "fanfare2" : ["/sfx/cinematics/license_acquired_event.ogg"]
+  },
+  
+  "lights" : {
+    "scifiglow" : {
+      "active" : false,
+      "position" : [0, 2],
+      "color" : [76, 125, 153],
+      "flickerPeriod" : 0.8,
+      "flickerMinIntensity" : 0.95,
+      "flickerMaxIntensity" : 1.0,
+      "flickerPeriodVariance" : 0.0,
+      "flickerIntensityVariance" : 0.0
+    }
+  },
+
+  "particleEmitters" : {
+    "dust" : {
+      "emissionRate" : 0.0,
+      "burstCount"  : 10,
+      "offsetRegion" : [-2, -2, 2, 2],
+      "particles" : [{ "particle" : "dust2"}]
+    }
+  }
+}

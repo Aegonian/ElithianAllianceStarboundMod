@@ -2,7 +2,7 @@
   "background" : {
     "type" : "background",
     "fileHeader" : "/interface/tooltips/header.png",
-    "fileBody" : "/interface/tooltips/armorbody.png",
+    "fileBody" : "/interface/tooltips/bodyarmor.png",
     "fileFooter" : "/interface/tooltips/footer.png"
   },
   //THIS REPLACES THE RARITY LABEL, CREATING A FAKE CUSTOM RARITY

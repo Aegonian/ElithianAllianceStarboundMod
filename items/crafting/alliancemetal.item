@@ -4,7 +4,7 @@
   "rarity" : "Common",
   "category" : "craftingMaterial",
   "inventoryIcon" : "alliancemetal.png",
-  "description" : "An iron alloy with trace amounts of ferroverium.",
+  "description" : "A strong, lightweight iron alloy.",
   "shortdescription" : "Allosteel",
   "itemTags" : [ "reagent" ]
 }

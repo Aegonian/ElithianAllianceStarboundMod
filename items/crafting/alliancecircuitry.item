@@ -1,0 +1,10 @@
+{
+  "itemName" : "alliancecircuitry",
+  "price" : 75,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "alliancecircuitry.png",
+  "description" : "Basic, all-purpose circuitry for use in Alliance electronics.",
+  "shortdescription" : "Alliance Circuitry",
+  "itemTags" : [ "reagent" ]
+}

@@ -2,7 +2,7 @@
   "objectName" : "allianceshower",
   "colonyTags" : ["alliance"],
   "rarity" : "Common",
-  "category" : "decorative",
+  "category" : "furniture",
   "printable" : false,
   "price" : 100,
   "description" : "A shower cabin.",
@@ -32,11 +32,46 @@
   "inventoryIcon" : "allianceshowericon.png",
   "orientations" : [
     {
-      "dualImage" : "allianceshower.png:<color>",
+      "image" : "allianceshower.png:<color>",
       "imagePosition" : [-8, 0],
+      "direction" : "right",
+      "flipImages" : false,
+	  
+	  "sitPosition" : [-7, 22],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+	{
+      "image" : "allianceshower.png:<color>",
+      "imagePosition" : [-8, 0],
+      "direction" : "left",
+      "flipImages" : true,
+	  
+	  "sitPosition" : [1, 22],
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]
     }
-  ]
+  ],
+  
+  "objectType" : "loungeable",
+  "sitFlipDirection" : true,
+  "sitOrientation" : "lay",
+  "sitAngle" : 0,
+  "sitCoverImage" : "/objects/alliance/furniture/allianceshower/allianceshowercover.png",
+  "sitEmote" : "sleep",
+  "sitStatusEffects" : [
+    "nude",
+	"thea-showerwet"
+  ],
+  
+  "scripts" : [ "/objects/scripts/thea-animatedloungeable.lua" ],
+  "scriptDelta" : 1,
+  
+  "animation" : "allianceshower.animation",
+  "animationParts" : {
+    "loungeObject" : "allianceshower.png"
+  },
+  "animationPosition" : [-8, 0]
 }

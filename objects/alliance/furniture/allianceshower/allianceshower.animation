@@ -1,0 +1,55 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "loungeState" : {
+        "default" : "empty",
+        "states" : {
+          "occupied" : {
+			"properties" : {
+              "particleEmittersOn" : [ "drips" ],
+			  "persistentSound" : "/sfx/objects/allianceshower.ogg",
+			  "immediateSound" : "/sfx/objects/oillantern_on.ogg"
+            }
+		  },
+          "empty" : {
+			"properties" : {
+              "particleEmittersOff" : [ "drips" ],
+			  "immediateSound" : "/sfx/objects/oillantern_off.ogg"
+            }
+		  }
+        }
+      }
+    },
+	
+    "parts" : {
+	  "loungeObject" : {
+        "properties" : {
+          "centered" : false
+        },
+        "partStates" : {
+          "loungeState" : {
+            "occupied" : {
+              "properties" : {
+                "image" : "<partImage>:occupied"
+              }
+            },
+            "empty" : {
+              "properties" : {
+                "image" : "<partImage>:empty"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  
+  "particleEmitters" : {
+    "drips" : {
+      "enabled" : true,
+      "emissionRate" : 30,
+      "offsetRegion" : [ 1.25, 3.875, 1.25, 3.875],
+      "particles" : [ { "particle" : "thea-showerdrip" } ]
+    }
+  }
+}

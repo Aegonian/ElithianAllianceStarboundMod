@@ -1,0 +1,10 @@
+{
+  "itemName" : "allianceballisticplate",
+  "price" : 100,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "allianceballisticplate.png",
+  "description" : "A ballistic plate capable of absorbing powerful blows.",
+  "shortdescription" : "Ballistic Plate",
+  "itemTags" : [ "reagent" ]
+}
