@@ -1,0 +1,12 @@
+{
+  "name" : "rhadeihan-head",
+  "effectConfig" : {},
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "rhadeihan-head.lua"
+  ],
+
+  "label" : "Energy Cells",
+  "icon" : "/interface/statuses/rhadeihan-head.png"
+}

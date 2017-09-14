@@ -1,0 +1,18 @@
+{
+  "name" : "rhadeihan-chest",
+  "effectConfig" : {
+    "cooldownAfterHit" : 5,
+	"healAmount" : 2,
+    "emissionRate" : 2
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "rhadeihan-chest.lua"
+  ],
+
+  "animationConfig" : "rhadeihan-chest.animation",
+
+  "label" : "Regenerative Matrix",
+  "icon" : "/interface/statuses/rhadeihan-chest.png"
+}

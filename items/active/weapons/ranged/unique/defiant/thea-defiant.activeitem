@@ -1,0 +1,114 @@
+{
+  "itemName" : "thea-defiant",
+  "price" : 1500,
+  "level" : 6,
+  "inventoryIcon" : "thea-defiant.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;An ice-cold laser that freezes its targets solid.",
+  "shortdescription" : "^orange;DS-03 FROST^white;",
+  "tooltipKind" : "thea-gun-unique",
+  "category" : "Frost Cannon",
+  "itemTags" : ["weapon","ranged","trink","theaUnique"],
+  "twoHanded" : true,
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "trink-frostlaser" },
+  
+  "meritTokenValue" : 100,
+  
+  "cursor" : "/cursors/thea-laserreticle.cursor",
+  
+  "animation" : "thea-defiant.animation",
+  "animationParts" : {
+    "middle" : "thea-defiant.png",
+    "middleFullbright" : "thea-defiantlights.png",
+    "muzzleFlash" : ""
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fireStart" : [],
+      "fireLoop" : [ "/sfx/gun/trink_frostlaserloop.ogg" ],
+      "fireEnd" : [],
+      "beamImpact" : []
+    }
+  },
+  "animationScripts" : ["/items/active/effects/chain.lua"],
+
+  "baseOffset" : [0.6, -0.6],
+  "muzzleOffset" : [1.7, -0.2],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "ice",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-beamfire.lua"],
+    "class" : "TheaBeamFire",
+
+    "fireTime" : 0.1,
+    "baseDps" : 7.0,
+    "energyUsage" : 40.0,
+    "inaccuracy" : 0.0,
+	
+	"impactDamageTimeout" : 0.2,
+	"spawnImpactProjectile" : true,
+	"impactProjectile" : "snowmodspawner",
+	
+	"laserPiercing" : false,
+
+    "damageConfig" : {
+      "statusEffects" : [ "frostlaserfreezing" ],
+      "damageSourceKind" : "frostlaser",
+      "knockback" : 1
+    },
+
+    "beamLength" : 50,
+
+    "chain" : {
+      "startOffset" : [0, 0],
+      "segmentImage" : "/items/active/weapons/ranged/unique/frostlaser/beam.png",
+      "endSegmentImage" : "/items/active/weapons/ranged/unique/frostlaser/beamend.png",
+      "segmentSize" : 0.48,
+      "overdrawLength" : 0.2,
+      "taper" : 0.5,
+      "waveform" : {
+        "frequency" : 2.0,
+        "amplitude" : 0.125,
+        "movement" : 40.0
+      },
+      "fullbright" : false
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.1,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

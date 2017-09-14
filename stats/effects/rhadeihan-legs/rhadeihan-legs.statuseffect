@@ -1,0 +1,12 @@
+{
+  "name" : "rhadeihan-legs",
+  "effectConfig" : {},
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "rhadeihan-legs.lua"
+  ],
+
+  "label" : "Shock Absorber",
+  "icon" : "/interface/statuses/rhadeihan-legs.png"
+}

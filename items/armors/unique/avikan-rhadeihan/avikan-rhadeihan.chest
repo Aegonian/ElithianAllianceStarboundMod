@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "chestwear",
-  "description" : "^green;Avikan. ^white;An exotic chestpiece worn by the Rhadeihan, elite warriors of the Rhaiod.",
+  "description" : "^green;Avikan. ^white;An exosuit chestpiece with an integrated regenerative matrix. It will start healing its wearer shortly after taking damage.",
   "shortdescription" : "^orange;Rhadeihan Chestpiece^white;",
   "tooltipKind" : "thea-armor-unique",
 
@@ -21,6 +21,34 @@
     "frontSleeve" : "fsleeve.png"
   },
 
+  "level" : 7,
+  "leveledStatusEffects" : [
+    {
+      "levelFunction" : "manipulatorArmorLevelPowerMultiplierMultiplier",
+      "stat" : "powerMultiplier",
+      "baseMultiplier" : 1.25
+    },
+    {
+      "levelFunction" : "manipulatorArmorLevelProtectionMultiplier",
+      "stat" : "protection",
+      "amount" : 0.5
+    },
+    /*{
+      "levelFunction" : "manipulatorArmorLevelMaxEnergyMultiplier",
+      "stat" : "maxEnergy",
+      "amount" : 5
+    },*/
+    {
+      "levelFunction" : "manipulatorArmorLevelMaxHealthMultiplier",
+      "stat" : "maxHealth",
+      "amount" : 5
+    }
+  ],
+  
+  "statusEffects" : [
+	"rhadeihan-chest"
+  ],
+  
   "colorOptions" : [
   
 	//Colours go from LIGHT to DARK - LIGHT/MEDIUM/DARK

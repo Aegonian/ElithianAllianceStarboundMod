@@ -13,6 +13,34 @@
   "femaleFrames" : "head.png",
   "mask" : "mask.png",
 
+  "level" : 7,
+  "leveledStatusEffects" : [
+    {
+      "levelFunction" : "manipulatorArmorLevelPowerMultiplierMultiplier",
+      "stat" : "powerMultiplier",
+      "baseMultiplier" : 1.15
+    },
+    {
+      "levelFunction" : "manipulatorArmorLevelProtectionMultiplier",
+      "stat" : "protection",
+      "amount" : 0.3
+    },
+    /*{
+      "levelFunction" : "manipulatorArmorLevelMaxEnergyMultiplier",
+      "stat" : "maxEnergy",
+      "amount" : 3
+    },*/
+    {
+      "levelFunction" : "manipulatorArmorLevelMaxHealthMultiplier",
+      "stat" : "maxHealth",
+      "amount" : 3
+    }
+  ],
+  
+  "statusEffects" : [
+	"rhadeihan-head"
+  ],
+
   "colorOptions" : [
   
 	//Colours go from LIGHT to DARK - LIGHT/MEDIUM/DARK
