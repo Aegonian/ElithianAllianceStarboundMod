@@ -1,0 +1,52 @@
+{
+  "projectileName" : "driftriflebullet",
+  "physics" : "lineriflebullet",
+  "bounces" : 0,
+  "image" : "driftriflebullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 130,
+  "supportsProcessing" : true,
+  "damagePoly" : [ [-4.5, 0], [-3, -3], [0, -4.5], [3, -3], [4.5, 0], [3, 3], [0, 4.5], [-3, 3] ],
+  "emitters" : [ "akkimaritrail" ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "animated",
+        "animation" : "/projectiles/akkimari/driftriflebullet/trail.animation",
+        "position" : [-1.0, 0],
+        "layer" : "back",
+		"collidesForeground" : false,
+        "timeToLive" : 1.0,
+        "destructionTime" : 0.1,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  "lightColor" : [0, 75, 10],
+  "fullbright" : true,
+  "damageKind" : "plasma",
+
+  "scripts" : ["/projectiles/scripts/thea-lineriflehoming-wave.lua"],
+  "scriptDelta" : 1,
+
+  //Wave
+  "wavePeriod" : 0.1,
+  "waveAmplitude" : 0.25,
+  
+  //Homing
+  "searchRadius" : 25,
+  "baseHomingControlForce" : 1.5
+}

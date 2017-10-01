@@ -1,0 +1,43 @@
+{
+  "projectileName" : "allianceexplosiveplasmalarge",
+  "physics" : "laser",
+  "bounces" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "allianceexplosiveplasmalarge.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 5,
+  "speed" : 200,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/allianceplasmaexplosionlarge/allianceplasmaexplosionlarge.config"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/alliance/allianceexplosiveplasmalarge/trail.png",
+        "position" : [-1.5, 0],
+        "layer" : "middle",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.3,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  "lightColor" : [45, 80, 100],
+  "fullbright" : true,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "hydrophobic" : false,
+  
+  "scripts" : [ "/projectiles/scripts/thea-linerifle.lua" ]
+}

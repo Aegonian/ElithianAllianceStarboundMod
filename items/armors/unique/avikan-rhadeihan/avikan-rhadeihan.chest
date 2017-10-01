@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "chestwear",
-  "description" : "^green;Avikan. ^white;An exosuit chestpiece with an integrated regenerative matrix. It will start healing its wearer shortly after taking damage.",
+  "description" : "^green;Avikan. ^white;A chestpiece with an integrated regenerative matrix which starts healing its wearer shortly after taking damage.",
   "shortdescription" : "^orange;Rhadeihan Chestpiece^white;",
   "tooltipKind" : "thea-armor-unique",
 

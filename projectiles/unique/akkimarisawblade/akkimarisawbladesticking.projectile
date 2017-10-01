@@ -1,0 +1,18 @@
+{
+  "projectileName" : "akkimarisawbladesticking",
+  "physics" : "stickybomb",
+  "bounces" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "akkimarisawbladesticking.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "piercing" : true,
+  "damagePoly" : [ [-4.5, 0], [-3, -3], [0, -4.5], [3, -3], [4.5, 0], [3, 3], [0, 4.5], [-3, 3] ],
+  "power" : 1,
+  "timeToLive" : 10,
+  "damageKind" : "default",
+  "hydrophobic" : false,
+  "statusEffects" : [
+    "thea-bleeding"
+  ]
+}

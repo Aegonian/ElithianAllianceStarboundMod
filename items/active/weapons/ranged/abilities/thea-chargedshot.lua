@@ -41,6 +41,7 @@ function TheaChargedShot:update(dt, fireMode, shiftHeld)
   elseif self.chargeHasStarted == true and (self.fireMode ~= (self.activatingFireMode or self.abilitySlot) or world.lineTileCollision(mcontroller.position(), self:firePosition())) then
     animator.stopAllSounds("chargeLoop")
 	animator.setAnimationState("charge", "off")
+	animator.setParticleEmitterActive("chargeparticles", false)
 	self.chargeTimer = self.chargeTime
   end
 
@@ -53,6 +54,7 @@ function TheaChargedShot:charge()
 
   animator.playSound("chargeLoop", -1)
   animator.setAnimationState("charge", "charging")
+  animator.setParticleEmitterActive("chargeparticles", true)
   
   --While charging, but not yet ready, count down the charge timer
   while self.chargeTimer > 0 and self.fireMode == (self.activatingFireMode or self.abilitySlot) and not world.lineTileCollision(mcontroller.position(), self:firePosition()) do
@@ -85,6 +87,7 @@ function TheaChargedShot:fire()
   
   animator.stopAllSounds("chargeLoop")
   animator.setAnimationState("charge", "off")
+  animator.setParticleEmitterActive("chargeparticles", false)
   
   self.chargeHasStarted = false
   
@@ -201,6 +204,7 @@ end
 
 function TheaChargedShot:reset()
   animator.setAnimationState("charge", "off")
+  animator.setParticleEmitterActive("chargeparticles", false)
   self.chargeHasStarted = false
   self.weapon:setStance(self.stances.idle)
 end

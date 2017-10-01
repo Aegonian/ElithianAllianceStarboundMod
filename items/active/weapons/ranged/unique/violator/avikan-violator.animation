@@ -185,6 +185,13 @@
       "transformationGroups" : ["beam"],
       "emissionRate" : 10,
       "particles" : []
+    },
+	"chargeparticles" : {
+	  "active" : false,
+      "emissionRate" : 9.0,
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [0.1, -0.1, 0.1, -0.1],
+      "particles" : []
     }
   },
 

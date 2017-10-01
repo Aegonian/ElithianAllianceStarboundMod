@@ -1,12 +1,17 @@
 {
   "name" : "rhadeihan-legs",
-  "effectConfig" : {},
+  "effectConfig" : {
+	"maxFallSpeed" : -16,
+	"minFallTime" : 0.25
+  },
   "defaultDuration" : 5,
 
   "scripts" : [
     "rhadeihan-legs.lua"
   ],
 
-  "label" : "Shock Absorber",
+  "animationConfig" : "rhadeihan-legs.animation",
+  
+  "label" : "Fall Thrusters",
   "icon" : "/interface/statuses/rhadeihan-legs.png"
 }

@@ -1,6 +1,11 @@
 {
   "name" : "rhadeihan-head",
-  "effectConfig" : {},
+  "effectConfig" : {
+    "lightPositionStanding" : [0.0, 0.5],
+	"lightPositionCrouching" : [0.0, -0.5],
+	"regenBonusAmount" : 1.25,
+	"regenBlockTime" : 0.35
+  },
   "defaultDuration" : 5,
 
   "scripts" : [
@@ -8,5 +13,7 @@
   ],
 
   "label" : "Energy Cells",
-  "icon" : "/interface/statuses/rhadeihan-head.png"
+  "icon" : "/interface/statuses/rhadeihan-head.png",
+
+  "animationConfig" : "rhadeihan-head.animation"
 }

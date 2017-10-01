@@ -1,0 +1,35 @@
+{
+  "projectileName" : "akkimarisawblade",
+  "physics" : "grenade",
+  "bounces" : 3,
+  "damageKindImage" : "icon.png",
+  "image" : "akkimarisawblade.png",
+  "animationCycle" : 0.075,
+  "frameNumber" : 3,
+  "emitters" : [],
+  "power" : 50,
+  "speed" : 50,
+  "timeToLive" : 30,
+  "piercing" : true,
+  "damagePoly" : [ [-4.5, 0], [-3, -3], [0, -4.5], [3, -3], [4.5, 0], [3, 3], [0, 4.5], [-3, 3] ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimarisawbladesticking",
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 0.6,
+      "angleAdjust" : 0
+    }
+  ],
+  "damageKind" : "default",
+  "hydrophobic" : false,
+  "statusEffects" : [
+    "thea-bleeding"
+  ],
+  "scripts" : [ "/projectiles/scripts/thea-uprightprojectile.lua" ],
+  "persistentAudio" : "/sfx/projectiles/sawblade_loop.ogg"
+}

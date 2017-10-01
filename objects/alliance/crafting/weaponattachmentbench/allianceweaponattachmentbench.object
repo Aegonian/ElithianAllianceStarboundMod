@@ -1,20 +1,13 @@
 {
   "objectName" : "allianceweaponattachmentbench",
-  "colonyTags" : ["ancient"],
+  "colonyTags" : ["alliance", "crafting"],
   "printable" : false,
-  "rarity" : "Legendary",
+  "rarity" : "Rare",
   "description" : "This advanced ancient technology can raise the effectiveness of some weapons.",
   "shortdescription" : "Weapon Attachment Bench",
-  "race" : "ancient",
-  "category" : "other",
+  "race" : "aegi",
+  "category" : "crafting",
   "price" : 0,
-  "lightColor" : [109, 77, 128],
-
-  "flickerPeriod" : 0.5,
-  "flickerMinIntensity" : 0.95,
-  "flickerMaxIntensity" : 1,
-  "flickerPeriodVariance" : 0.0,
-  "flickerIntensityVariance" : 0.0,
 
   "apexDescription" : "The anvil works, I wonder what beings made this.",
   "avianDescription" : "This anvil is of ancient origin",
@@ -27,34 +20,16 @@
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "imageLayers" : [ { "image" : "allianceweaponattachmentbench.png:<frame>", "fullbright" : true }, { "image" : "allianceweaponattachmentbenchlit.png:<frame>" } ],
-      "flipImages" : true,
-      "direction" : "left",
-      "lightPosition" : [0, 1],
+      "dualImage" : "allianceweaponattachmentbench.png:<color>",
 
       "imagePosition" : [-16, 0],
-      "frames" : 4,
-      "animationCycle" : 0.5,
-
-      "spaceScan" : 0.1,
-      "anchors" : [ "bottom" ]
-    },
-    {
-      "imageLayers" : [ { "image" : "allianceweaponattachmentbench.png:<frame>", "fullbright" : true }, { "image" : "allianceweaponattachmentbenchlit.png:<frame>" } ],
-      "direction" : "right",
-      "lightPosition" : [0, 1],
-
-      "imagePosition" : [-16, 0],
-      "frames" : 4,
-      "animationCycle" : 0.5,
+      "frames" : 1,
+      "animationCycle" : 1.0,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]
     }
   ],
-
-  "soundEffect" : "/sfx/objects/scififurnace.ogg",
-  "soundEffectRangeMultiplier" : 1.0,
 
   "interactAction" : "ScriptPane",
   "interactData" : "/interface/scripted/allianceweaponattachment/allianceweaponattachmentgui.config"

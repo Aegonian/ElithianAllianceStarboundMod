@@ -129,6 +129,13 @@
 		{ "particle" : "thellhunteridle"},
         { "particle" : "thellhunteridle2"}
       ]
+    },
+	"chargeparticles" : {
+	  "active" : false,
+      "emissionRate" : 9.0,
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [0.1, -0.1, 0.1, -0.1],
+      "particles" : []
     }
   },
 

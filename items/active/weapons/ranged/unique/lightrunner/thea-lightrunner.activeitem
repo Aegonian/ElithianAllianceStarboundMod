@@ -10,7 +10,7 @@
   "shortdescription" : "^orange;C42 Lightrunner^white;",
   "tooltipKind" : "thea-gun-unique-mf",
   "category" : "Particle Accelerator",
-  "itemTags" : ["weapon","ranged","mininglaser","avikan"],
+  "itemTags" : ["weapon","ranged","alliance","aeg-corps","theaUnique"],
   "twoHanded" : true,
   
   //CONFIGURATION FOR WEAPONS COLLECTION

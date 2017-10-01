@@ -268,8 +268,8 @@ function updateDriveEffects(healthFactor, driverThisFrame)
     if (self.revEngine == true)  then
       -- instantly set them to full power.
       self.engineRevTimer = 0.5
-      animator.setSoundPitch(self.loopPlaying, self.engineRevPitch,self.engineRevTimer)
-      animator.setSoundVolume(self.loopPlaying, self.engineRevVolume,self.engineRevTimer)
+      animator.setSoundPitch(self.loopPlaying, self.engineRevPitch, self.engineRevTimer)
+      animator.setSoundVolume(self.loopPlaying, self.engineRevVolume, self.engineRevTimer)
 
       animator.setParticleEmitterActive("ventralThrusterIdle", false)
       animator.setParticleEmitterActive("ventralThrusterJump", true)

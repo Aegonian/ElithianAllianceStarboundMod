@@ -276,6 +276,18 @@
       "title" : "Conscriptor",
       "description" : "An intimidating revolver once held by the elder of Vathra.",
       "icon" : "/items/active/weapons/ranged/unique/conscriptor/avikan-conscriptoricon.png"
+    },
+	"akkimari-sawbladelauncher" : {
+      "order" : 45,
+      "title" : "Akkimari Bladelauncher",
+      "description" : "A makeshift Akkimari weapon firing razor-sharp sawblades.",
+      "icon" : "/items/active/weapons/ranged/unique/sawbladelauncher/akkimari-sawbladelaunchericon.png"
+    },
+	"thea-defiant" : {
+      "order" : 46,
+      "title" : "C56 Defiant",
+      "description" : "A high precision laser rifle which ramps up in power over time.",
+      "icon" : "/items/active/weapons/ranged/unique/defiant/thea-defiant.png"
     }
   }
 }

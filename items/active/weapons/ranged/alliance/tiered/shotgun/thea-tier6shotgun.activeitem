@@ -92,21 +92,21 @@
   },
 
   "altAbility" : {
-    "name" : "Power Shot",
+    "name" : "Explosive Plasma",
     "scripts" : ["/items/active/weapons/ranged/abilities/altfire.lua"],
 	"class" : "AltFireAttack",
 
-    "baseDps" : 4.0,
-	"fireTime" : 1.2,
-    "energyUsage" : 50.0,
-    "inaccuracy" : 0.045,
+    "baseDps" : 8.0,
+	"fireTime" : 1.1,
+    "energyUsage" : 45.0,
+    "inaccuracy" : 0.01,
 
-	"projectileCount" : 4,
+	"projectileCount" : 1,
     "fireType" : "auto",
 	
-	"projectileType" : "avikanbullet",
+	"projectileType" : "allianceexplosiveplasmalarge",
 	"projectileParameters" : {
-	  "knockback" : 40
+	  "knockback" : 6
 	},
 	
 	"hidePrimaryMuzzleFlash" : false,
@@ -116,17 +116,17 @@
     "stances" : {
       "fire" : {
         "duration" : 0,
-        "armRotation" : 7,
-        "weaponRotation" : 7,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
         "twoHanded" : true,
 
         "allowRotate" : false,
         "allowFlip" : false
       },
       "cooldown" : {
-        "duration" : 0.25,
-        "armRotation" : 7,
-        "weaponRotation" : 7,
+        "duration" : 0.1,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
         "twoHanded" : true,
 
         "allowRotate" : false,

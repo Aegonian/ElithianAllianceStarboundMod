@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "category" : "legwear",
-  "description" : "^green;Avikan. ^white;Exosuit leggings that absorb impacts from falls, and generates a forcefield to slow its wearer when falling.",
+  "description" : "^green;Avikan. ^white;Exosuit leggings that absorb impacts from falls, and activate fall breaker thrusters when falling.",
   "shortdescription" : "^orange;Rhadeihan Leggings^white;",
   "tooltipKind" : "thea-armor-unique",
 

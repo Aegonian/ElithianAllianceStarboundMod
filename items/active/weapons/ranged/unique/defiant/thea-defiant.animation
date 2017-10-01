@@ -84,19 +84,16 @@
       "transformationGroups" : ["muzzle", "beamEnd"],
       "emissionRate" : 20,
       "particles" : [
-        {"particle" : "thea-frostlaserimpact"},
-        {"particle" : "thea-frostlaserimpact2"},
-        {"particle" : "iceswoosh3"}
+        {"particle" : "alliancelaser1"},
+		{"particle" : "alliancelaser2"},
+		{"particle" : "alliancelaserimpact"}
       ]
     },
     "beamParticles" : {
       "active" : false,
       "transformationGroups" : ["beam"],
       "emissionRate" : 10,
-      "particles" : [
-        {"particle" : "thea-frostlaserbeam"},
-        {"particle" : "thea-frostlaserbeam"}
-      ]
+      "particles" : [ ]
     }
   },
 

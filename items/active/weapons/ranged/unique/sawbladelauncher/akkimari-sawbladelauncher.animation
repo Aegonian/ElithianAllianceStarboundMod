@@ -1,0 +1,97 @@
+{
+  "animatedParts" : {
+  "stateTypes" : {
+      "bow" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 1
+          },
+          "fire" : {
+            "frames" : 1
+          },
+          "reload" : {
+            "frames" : 9,
+            "cycle" : 0.45,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
+      }
+    },
+	
+    "parts" : {
+      "middle" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "transformationGroups" : ["weapon"]
+        },
+
+        "partStates" : {
+          "bow" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle"
+              }
+            },
+			"fire" : {
+              "properties" : {
+                "image" : "<partImage>:fire"
+              }
+            },
+			"reload" : {
+              "properties" : {
+                "image" : "<partImage>:reload.<frame>"
+              }
+            }
+          }
+        }
+      },
+	  "middleFullbright" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+		  "fullbright" : true,
+          "transformationGroups" : ["weapon"]
+        },
+
+        "partStates" : {
+          "bow" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle"
+              }
+            },
+			"fire" : {
+              "properties" : {
+                "image" : "<partImage>:idle"
+              }
+            },
+			"reload" : {
+              "properties" : {
+                "image" : "<partImage>:reload.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  
+  "rotationGroups" : {
+    "weapon" : {
+      "angularVelocity" : 0
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "muzzle" : {}
+  },
+
+  "sounds" : {
+    "fire" : [ ],
+    "reload" : [ ]
+  }
+}

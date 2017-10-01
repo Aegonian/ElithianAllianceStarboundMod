@@ -1,0 +1,39 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "jets" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "active" : {
+            "frames" : 4,
+            "cycle" : 0.3,
+            "mode" : "loop"
+          }
+        }
+      }
+    },
+    "parts" : {
+      "jets" : {
+        "properties" : {
+          "zLevel" : -1,
+		  "fullbright" : false
+        },
+        "partStates" : {
+          "jets" : {
+            "off" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "active" : {
+              "properties" : {
+                "image" : "jets.png:active.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
