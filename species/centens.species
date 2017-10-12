@@ -8,7 +8,7 @@
   },
   
   "playerSpecies" : true,
-  "humanoidConfig" : "/species/types/thea-humanoid.config",
+  "humanoidConfig" : "/species/types/thea-centensoid.config",
   "nameGen" : [ "/species/centensnamegen.config:names", "/species/centensnamegen.config:names" ],
   "ouchNoises" : [ "/sfx/humanoid/floranhurt_female3.ogg", "/sfx/humanoid/floranhurt_female3.ogg" ],
   "charGenTextLabels" : [ "SKIN COLOR", "N/A", "SHIRT", "PANTS", "HEAD SHAPE", "FLAP COLOR", "SHIRT COLOR", "PANTS COLOR", "CENTENS", "PERSONALITY" ],

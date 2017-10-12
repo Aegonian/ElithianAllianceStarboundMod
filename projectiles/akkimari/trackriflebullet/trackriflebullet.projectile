@@ -1,0 +1,52 @@
+{
+  "projectileName" : "trackriflebullet",
+  "physics" : "laser",
+  "bounces" : 0,
+  "image" : "trackriflebullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 50,
+  "supportsProcessing" : true,
+  //"emitters" : [ "driftrifleburn" ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "animated",
+        "animation" : "/projectiles/akkimari/trackriflebullet/trail.animation",
+        "position" : [-1.0, 0],
+        "layer" : "back",
+		"collidesForeground" : false,
+        "timeToLive" : 1.0,
+        "destructionTime" : 0.1,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  "lightColor" : [0, 75, 10],
+  "fullbright" : true,
+  "damageKind" : "plasma",
+
+  "scripts" : ["/projectiles/scripts/thea-lineriflehoming-wave.lua"],
+  "scriptDelta" : 1,
+
+  //Wave
+  "wavePeriod" : 0.2,
+  "waveAmplitude" : 0.375,
+  "randomWavePeriod" : true,
+  
+  //Homing
+  "searchRadius" : 15,
+  "baseHomingControlForce" : 1.5
+}

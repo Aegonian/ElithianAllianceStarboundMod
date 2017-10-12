@@ -21,7 +21,14 @@
   },
   "animationCustom" : {
     "sounds" : {
-      "fire" : [ "/sfx/gun/ar5.ogg" ]
+      "fire" : [ "/sfx/gun/needler1.ogg" ]
+    },
+	"lights": {
+	  "muzzleFlash" : {
+		"active" : false,
+		"position" : [0, 0],
+		"color" : [0, 0, 0]
+	  }
     }
   },
 
@@ -36,7 +43,7 @@
     "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
     "class" : "GunFire",
 
-    "fireTime" : 0.08,
+    "fireTime" : 0.12,
     "baseDps" : 7.0,
     "energyUsage" : 25,
     "inaccuracy" : 0.035,

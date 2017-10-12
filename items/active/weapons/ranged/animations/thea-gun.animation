@@ -22,6 +22,7 @@
     "parts" : {
       "middle" : {
         "properties" : {
+          "zLevel" : 0,
           "centered" : true,
           "image" : "<partImage><paletteSwaps>",
           "offset" : [0, 0], // x offset is set dynamically

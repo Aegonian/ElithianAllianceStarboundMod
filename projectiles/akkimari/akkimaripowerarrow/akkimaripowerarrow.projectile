@@ -1,0 +1,29 @@
+{
+  "projectileName" : "akkimaripowerarrow",
+  "physics" : "avikanarrow",
+  "bounces" : 0,
+  "image" : "akkimaripowerarrow.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "emitters" : [ "daggerblue" ],
+  "power" : 20,
+  "knockback" : 20,
+  "knockbackDirectional" : true,
+  "timeToLive" : 30,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariarrowsticking",
+      "inheritDamageFactor" : 0.0,
+      "inheritSpeedFactor" : 0.9,
+      "angleAdjust" : 0
+    }
+  ],
+  "damageKind" : "bow",
+  "hydrophobic" : false
+}

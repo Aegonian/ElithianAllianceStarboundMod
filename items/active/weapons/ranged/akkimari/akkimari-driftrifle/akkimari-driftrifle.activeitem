@@ -18,7 +18,7 @@
   "animationParts" : {
     "gun" : "akkimari-driftrifle.png",
     "lights" : "akkimari-driftriflelights.png",
-    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/lineriflemuzzle.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/akkimarimuzzleflash.png",
     "charge" : "akkimari-driftriflecharge.png"
   },
   "animationCustom" : {
@@ -45,8 +45,8 @@
       }
     },
     "sounds" : {
-      "fire" : [ "/sfx/gun/plasma_sniper4.ogg" ],
-	  "chargeLoop" : [ "/sfx/melee/charge_up7.ogg" ],
+      "fire" : [ "/sfx/gun/akkimari_energyfire1.ogg" ],
+	  "chargeLoop" : [ "/sfx/gun/akkimari_charge3.ogg" ],
 	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
     }
   },
@@ -64,7 +64,7 @@
     "class" : "TheaChargedShot",
 
     "chargeTime" : 0.6,
-    "baseDamage" : 12,
+    "baseDamage" : 9.0,
     "baseEnergyUsage" : 30,
     "inaccuracy" : 0.0,
 	
@@ -104,7 +104,7 @@
         "allowFlip" : false
       },
       "cooldown" : {
-        "duration" : 0.3,
+        "duration" : 0.35,
         "armRotation" : 4,
         "weaponRotation" : 4,
 		"weaponOffset" : [-0.15, 0],
