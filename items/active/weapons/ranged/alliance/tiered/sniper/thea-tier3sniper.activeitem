@@ -34,7 +34,7 @@
     "particleEmitters" : {
     },
     "sounds" : {
-      "fire" : [ "/sfx/gun/thea_plasmagun1.ogg" ],
+      "fire" : [ "/sfx/gun/plasma_sniper4.ogg" ],
 	  "altFire" : [ "/sfx/gun/ar4.ogg" ]
     }
   },

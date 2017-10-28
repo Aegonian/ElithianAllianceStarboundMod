@@ -45,7 +45,7 @@
   "scripts" : [ "/objects/wired/door/door.lua" ],
   "scriptDelta" : 5,
 
-  "animation" : "/objects/wired/door/door.animation",
+  "animation" : "/objects/animations/thea-fullbrightdoor.animation",
   "animationCustom" : {
     "sounds" : {
       "open" : {
@@ -59,7 +59,8 @@
     }
   },
   "animationParts" : {
-    "door" : "trinkshipdoor.png"
+    "bg" : "trinkshipdoor.png",
+	"fg" : "trinkshipdoorlit.png"
   },
   "animationPosition" : [0, 0],
 

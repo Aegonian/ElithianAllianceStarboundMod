@@ -41,15 +41,26 @@
   
   "inventoryIcon" : "avikancookingstationicon.png",
   "orientations" : [
-    {
-      "dualImage" : "avikancookingstation.png:<color>",
+	{
+	  "imageLayers" : [ { "image" : "avikancookingstation.png:<color>", "fullbright" : true }, { "image" : "avikancookingstationlit.png:<color>" } ],
       "imagePosition" : [-16, 0],
       "frames" : 1,
       "animationCycle" : 0.5,
 
       "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
       "anchors" : [ "bottom" ]
+    },
+    {
+	  "imageLayers" : [ { "image" : "avikancookingstation.png:<color>", "fullbright" : true }, { "image" : "avikancookingstationlit.png:<color>" } ],
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
 
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ]
     }
   ],
 

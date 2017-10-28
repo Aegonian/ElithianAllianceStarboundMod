@@ -2,11 +2,11 @@
   "projectileName" : "alliancestickygrenade",
   "physics" : "stickygrenade",
   "bounces" : -1,
-  "timeToLive" : 3,
+  "timeToLive" : 5,
   "image" : "alliancestickygrenade.png",
   "animationCycle" : 0.5,
   "frameNumber" : 1,
-  "emitters" : [ "rocketsmoke" ],
+  //"emitters" : [ "rocketsmoke" ],
   "speed" : 20,
   "actionOnReap" : [
     {

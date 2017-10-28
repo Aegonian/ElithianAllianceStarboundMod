@@ -60,4 +60,11 @@ function update(dt)
 	  self.homingEnabled = true
 	end
   end
+  
+  --Code for ensuring a constant speed
+  if config.getParameter("constantSpeed") == true then
+	local currentVelocity = mcontroller.velocity()
+	local newVelocity = vec2.mul(vec2.norm(currentVelocity), self.targetSpeed)
+	mcontroller.setVelocity(newVelocity)
+  end
 end

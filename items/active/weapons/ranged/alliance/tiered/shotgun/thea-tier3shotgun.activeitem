@@ -26,13 +26,13 @@
       "parts" : {
         "middleFullbright" : {
 		  "properties" : {
-		    "offset" : [0.5, 0.1]
+		    "offset" : [0.625, 0.1]
 		  }
 		}
       }
     },
     "sounds" : {
-      "fire" : [ "/sfx/gun/thea_plasmagun1.ogg" ],
+      "fire" : [ "/sfx/gun/plasma_shotgun4.ogg" ],
 	  "altFire" : [ "/sfx/gun/shotgun4.ogg" ]
     }
   },

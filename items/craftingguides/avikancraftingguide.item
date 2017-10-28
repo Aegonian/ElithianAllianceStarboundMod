@@ -8,6 +8,9 @@
   "category" : "Crafting Guide",
   "learnBlueprintsOnPickup" : [
 	
+//New in v2.3.0
+	  "avikansmallwatercontainer2",
+	
 //New in v2.2.3
 	  "avikancargodoor",
 	  "avikanthickhatch",

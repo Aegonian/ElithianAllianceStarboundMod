@@ -1,7 +1,7 @@
 {
   "itemName" : "thea-tier1shotgun",
   "price" : 300,
-  "inventoryIcon" : "thea-tier1shotgun.png",
+  "inventoryIcon" : "thea-tier1shotgun.png:idle",
   "maxStack" : 1,
   "rarity" : "Common",
   "description" : "A ballistic shotgun.",
@@ -15,7 +15,7 @@
   
   "cursor" : "/cursors/thea-widereticle.cursor",
 
-  "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
+  "animation" : "/items/active/weapons/ranged/animations/thea-reloadshotgun.animation",
   "animationParts" : {
     "middle" : "thea-tier1shotgun.png",
     "middleFullbright" : "thea-tier1shotgunlights.png",
@@ -32,23 +32,24 @@
       }
     },
     "sounds" : {
-      "fire" : [ "/sfx/gun/thea_plasmagun1.ogg" ],
-	  "altFire" : [ "/sfx/gun/shotgun4.ogg" ]
+      "fire" : [ "/sfx/gun/shotgun1.ogg" ],
+	  "altFire" : [ "/sfx/gun/shotgun4.ogg" ],
+      "reload" : [ "/sfx/gun/reload/shotgun_reload_clip3.ogg" ]
     }
   },
 
   "baseOffset" : [0.625, 0.1],
-  "muzzleOffset" : [2.125, 0.5],
+  "muzzleOffset" : [2.25, 0.5],
 
   "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
 
   "elementalType" : "physical",
   
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
-    "class" : "GunFire",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-reloadfire/thea-reloadfire.lua"],
+    "class" : "TheaReloadFire",
 
-    "fireTime" : 0.48,
+    "fireTime" : 0.56,
     "baseDps" : 10.5,
     "energyUsage" : 35,
     "inaccuracy" : 0.10,
@@ -71,7 +72,7 @@
         "allowFlip" : true
       },
       "fire" : {
-        "duration" : 0,
+        "duration" : 0.2,
         "armRotation" : 8,
         "weaponRotation" : 8,
         "twoHanded" : true,

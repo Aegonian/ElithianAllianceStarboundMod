@@ -44,7 +44,7 @@
       }
     },
     "sounds" : {
-      "fire" : [ "/sfx/gun/thea_plasmagun1.ogg" ],
+      "fire" : [ "/sfx/gun/thea_plasmagun3.ogg" ],
 	  "chargeLoop" : [ "/sfx/melee/charge_up8.ogg" ],
 	  "holdLoop" : [ "/sfx/objects/camera_pan_loop.ogg" ],
 	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]

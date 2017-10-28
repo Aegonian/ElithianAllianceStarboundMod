@@ -1,7 +1,7 @@
 {
-  "itemName" : "thea-collectivesniper4",
+  "itemName" : "thea-tier6sniper",
   "price" : 375,
-  "inventoryIcon" : "thea-collectivesniper4.png",
+  "inventoryIcon" : "thea-tier6sniper.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
   "description" : "A high-impact sniper rifle.",
@@ -17,8 +17,8 @@
   
   "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
   "animationParts" : {
-    "middle" : "thea-collectivesniper4.png",
-    "middleFullbright" : "thea-collectivesniper4lights.png",
+    "middle" : "thea-tier6sniper.png",
+    "middleFullbright" : "thea-tier6sniperlights.png",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/allianceenergyflash.png"
   },
   "animationCustom" : {
@@ -34,7 +34,7 @@
     "particleEmitters" : {
     },
     "sounds" : {
-      "fire" : [ "/sfx/gun/thea_plasmagun1.ogg" ],
+      "fire" : [ "/sfx/gun/thea_plasmagun6.ogg" ],
 	  "altFire" : [ "/sfx/gun/ar4.ogg" ]
     }
   },

@@ -32,7 +32,7 @@
       }
     },
     "sounds" : {
-      "fire" : [ "/sfx/gun/thea_plasmagun1.ogg" ],
+      "fire" : [ "/sfx/gun/thea_plasmagun8.ogg" ],
 	  "altFire" : [ "/sfx/gun/shotgun4.ogg" ]
     }
   },

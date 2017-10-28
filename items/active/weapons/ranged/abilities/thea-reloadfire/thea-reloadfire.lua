@@ -73,7 +73,9 @@ function TheaReloadFire:cooldown()
   self.weapon:setStance(self.stances.cooldown)
   self.weapon:updateAim()
   
+  --Set the weapon into its reload state and play reload sound
   animator.setAnimationState("weapon", "reload")
+  animator.playSound("reload")
 
   local progress = 0
   util.wait(self.stances.cooldown.duration, function()

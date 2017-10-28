@@ -34,11 +34,23 @@
 
   "inventoryIcon" : "trinkfridgeicon.png",
   "orientations" : [
-    {
-      "dualImage" : "trinkfridge.png:<color>.<key>",
+	{
+	  "imageLayers" : [ { "image" : "trinkfridge.png:<color>.<key>", "fullbright" : true }, { "image" : "trinkfridgelit.png:<color>.<key>" } ],
 
       "imagePosition" : [0, 0],
+
       "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "bottom" ]
+    },
+    {
+	  "imageLayers" : [ { "image" : "trinkfridge.png:<color>.<key>", "fullbright" : true }, { "image" : "trinkfridgelit.png:<color>.<key>" } ],
+
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
       "anchors" : [ "bottom" ]
     }
   ],

@@ -1,7 +1,7 @@
 {
   "itemName" : "thea-briggsshotgun",
   "price" : 180,
-  "inventoryIcon" : "thea-briggsshotgun.png",
+  "inventoryIcon" : "thea-briggsshotgun.png:idle",
   "maxStack" : 1,
   "rarity" : "Legendary",
   "description" : "The only weapon ever developed by Briggs Shipbuilding.",
@@ -15,17 +15,17 @@
   
   "cursor" : "/cursors/thea-widereticle.cursor",
 
-  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animation" : "/items/active/weapons/ranged/animations/thea-reloadshotgun.animation",
   "animationParts" : {
-    "butt" : "",
     "middle" : "thea-briggsshotgun.png",
-    "barrel" : "",
+    "middleFullbright" : "",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/alliancephysicalflash.png"
   },
   "animationCustom" : {
     "sounds" : {
       "fire" : [ "/sfx/gun/shotgun2.ogg" ],
-	  "altFire" : [ "/sfx/gun/shotgun4.ogg" ]
+	  "altFire" : [ "/sfx/gun/shotgun4.ogg" ],
+      "reload" : [ "/sfx/gun/reload/shotgun_reload_clip3.ogg" ]
     }
   },
 
@@ -37,15 +37,15 @@
   "elementalType" : "physical",
   
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
-    "class" : "GunFire",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-reloadfire/thea-reloadfire.lua"],
+    "class" : "TheaReloadFire",
 
-    "fireTime" : 1.2,
+    "fireTime" : 0.95,
     "baseDps" : 10.5,
     "energyUsage" : 35,
     "inaccuracy" : 0.14,
 
-    "projectileCount" : 8,
+    "projectileCount" : 12,
     "fireType" : "auto",
 
     "projectileType" : "alliancepellet",
@@ -64,7 +64,7 @@
         "allowFlip" : true
       },
       "fire" : {
-        "duration" : 0,
+        "duration" : 0.3,
         "armRotation" : 6,
         "weaponRotation" : 6,
 		"weaponOffset" : [-0.1, 0],
@@ -74,7 +74,7 @@
         "allowFlip" : false
       },
       "cooldown" : {
-        "duration" : 0.45,
+        "duration" : 0.3,
         "armRotation" : 6,
         "weaponRotation" : 6,
 		"weaponOffset" : [-0.1, 0],

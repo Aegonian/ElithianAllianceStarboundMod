@@ -32,8 +32,8 @@
       }
     },
     "sounds" : {
-      "fire" : [ "/sfx/gun/thea_plasmagun1.ogg" ],
-	  "altFire" : [ "/sfx/gun/shotgun4.ogg" ]
+      "fire" : [ "/sfx/gun/thea_plasmagun6.ogg" ],
+	  "altFire" : [ "/sfx/gun/plasma_shotgun4.ogg" ]
     }
   },
 

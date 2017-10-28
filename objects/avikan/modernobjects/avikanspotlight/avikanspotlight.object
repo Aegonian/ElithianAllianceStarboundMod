@@ -137,7 +137,7 @@
     }
   ],
 
-  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+  "animation" : "/objects/animations/thea-spotlight.animation",
   "animationParts" : {
     "bg" : "avikanspotlightright.png",
     "fg" : "avikanspotlightrightlit.png"

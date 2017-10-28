@@ -61,7 +61,7 @@
   "scripts" : [ "/objects/scripts/thea-flippabledoor.lua" ], //Custom LUA script provided by Storm_UK for flipping input nodes based on facing direction, modified by Aegonian for greater versatility
   "scriptDelta" : 5,
 
-  "animation" : "/objects/wired/door/door.animation",
+  "animation" : "/objects/animations/thea-fullbrightdoor.animation",
   "animationCustom" : {
     "sounds" : {
       "open" : {
@@ -75,7 +75,8 @@
     }
   },
   "animationParts" : {
-    "door" : "trinkslopeddoor.png"
+    "bg" : "trinkslopeddoor.png",
+	"fg" : "trinkslopeddoorlit.png"
   },
 
   "inputNodes"  : [ [-4, 4] ],

@@ -17,6 +17,9 @@
   "defaultBlueprints" : {
     "tier1" : [
 
+//NEW in v2.3.0
+	  { "item" : "avikansmallwatercontainer2" },
+
 //NEW in v2.2.3
 	  { "item" : "avikancargodoor" },
 	  { "item" : "avikanthickhatch" },
