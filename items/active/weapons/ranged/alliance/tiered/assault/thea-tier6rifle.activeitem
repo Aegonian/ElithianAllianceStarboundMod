@@ -33,7 +33,7 @@
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/thea_plasmagun7.ogg" ],
-	  "altFire" : [ "/sfx/gun/ar4.ogg" ]
+	  "altFire" : [ "/sfx/gun/thea_plasmagun6.ogg" ]
     }
   },
 
@@ -92,22 +92,21 @@
   },
 
   "altAbility" : {
-    "name" : "Focused Fire",
+    "name" : "Smart Bullet",
     "scripts" : ["/items/active/weapons/ranged/abilities/altfire.lua"],
 	"class" : "AltFireAttack",
 
-    "baseDps" : 8.0,
-	"fireTime" : 0.45,
+    "fireTime" : 0.22,
+    "baseDps" : 7.5,
     "energyUsage" : 35.0,
     "inaccuracy" : 0.01,
 
 	"projectileCount" : 1,
     "fireType" : "auto",
 	
-	"projectileType" : "avikanbullet",
+	"projectileType" : "alliancesmarttrailbullet",
 	"projectileParameters" : {
-	  "knockback" : 6,
-	  "piercing" : true
+	  "knockback" : 6
 	},
 	
 	"hidePrimaryMuzzleFlash" : false,

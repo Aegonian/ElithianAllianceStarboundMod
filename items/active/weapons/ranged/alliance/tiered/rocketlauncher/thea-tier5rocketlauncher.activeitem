@@ -38,6 +38,14 @@
           { "particle" : "rocketbarrelpuff", "offset" : [0.0, 0.0] },
           { "particle" : "rocketbarrelpuff", "offset" : [0.0, 0.0] }
         ]
+      },
+	  "altMuzzleFlash" : {
+		"transformationGroups" : ["muzzle"],
+        "particles" : [
+          { "particle" : "rocketbarrelpuff", "offset" : [0.0, 0.0] },
+          { "particle" : "rocketbarrelpuff", "offset" : [0.0, 0.0] },
+          { "particle" : "rocketbarrelpuff", "offset" : [0.0, 0.0] }
+        ]
       }
     },
 	"sounds" : {
@@ -46,7 +54,7 @@
   },
 
   "baseOffset" : [0.15, 0.2],
-  "muzzleOffset" : [2.5, 0.24],
+  "muzzleOffset" : [2.5, 0.375],
 
   "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
 
@@ -113,6 +121,11 @@
 
     "projectileType" : "alliancesmartrocket",
     "projectileParameters" : { },
+	
+	"hidePrimaryMuzzleFlash" : false,
+	"useParticleEmitter" : true,
+	"usePrimaryFireSound" : true,
+	
     "stances" : {
       "idle" : {
         "armRotation" : 0,

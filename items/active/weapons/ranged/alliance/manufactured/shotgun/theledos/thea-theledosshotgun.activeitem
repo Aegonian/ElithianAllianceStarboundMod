@@ -32,12 +32,12 @@
     "particleEmitters" : {
     },
     "sounds" : {
-      "fire" : [ "/sfx/gun/thea_plasmagun1.ogg" ]
+      "fire" : [ "/sfx/gun/plasma_shotgun3.ogg" ]
     }
   },
 
   "baseOffset" : [0.375, 0.125],
-  "muzzleOffset" : [1.625, 0.125],
+  "muzzleOffset" : [1.375, 0.125],
 
   "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
 

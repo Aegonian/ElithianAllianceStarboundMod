@@ -20,6 +20,21 @@
 	"path": "/thea-alliancelaser",
 	"value": "/items/active/weapons/ranged/abilities/thea-alliancelaser/thea-alliancelaser.weaponability"
   },
+  {
+	"op": "add",
+	"path": "/thea-rocketburst",
+	"value": "/items/active/weapons/ranged/abilities/thea-rocketburst/thea-rocketburst.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-chargedshot",
+	"value": "/items/active/weapons/ranged/abilities/thea-chargedshot/thea-chargedshot.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-chargedseekerorbs",
+	"value": "/items/active/weapons/ranged/abilities/thea-chargedseekerorbs/thea-chargedseekerorbs.weaponability"
+  },
   
   //MELEE ABILITIES
   {

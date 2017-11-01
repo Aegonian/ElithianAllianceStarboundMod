@@ -39,7 +39,7 @@
   },
 
   "baseOffset" : [0.625, 0.1],
-  "muzzleOffset" : [2.125, 0.5],
+  "muzzleOffset" : [2.125, 0.375],
 
   "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
 

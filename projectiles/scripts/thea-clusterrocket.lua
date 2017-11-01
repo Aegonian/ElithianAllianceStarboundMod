@@ -5,7 +5,6 @@ function init()
 
   self.maxSpeed = config.getParameter("maxSpeed")
   self.controlForce = config.getParameter("controlForce")
-
 end
 
 function update(dt)

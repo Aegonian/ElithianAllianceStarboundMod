@@ -1,24 +1,22 @@
 {
-  "itemName" : "thea-collectivesniper3",
+  "itemName" : "thea-collectiverifle1",
   "price" : 325,
-  "inventoryIcon" : "thea-collectivesniper3.png",
+  "inventoryIcon" : "thea-collectiverifle1.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A high-impact sniper rifle.",
+  "description" : "A compact, high-impact assault rifle.",
   "manufacturer" : "^gray;Alliance Collective^reset;",
-  "shortdescription" : "AC-16 Stargazer",
+  "shortdescription" : "AC.A-4 Aurora",
   "level" : 6,
   "tooltipKind" : "thea-gun-mf",
-  "category" : "Sniper Rifle",
-  "itemTags" : ["weapon","ranged","sniperrifle","alliance","alliancecollective"],
+  "category" : "Assault Rifle",
+  "itemTags" : ["weapon","ranged","assaultrifle","alliance","alliancecollective"],
   "twoHanded" : true,
-  
-  "cursor" : "/cursors/thea-precisereticle.cursor",
   
   "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
   "animationParts" : {
-    "middle" : "thea-collectivesniper3.png",
-    "middleFullbright" : "thea-collectivesniper3lights.png",
+    "middle" : "thea-collectiverifle1.png",
+    "middleFullbright" : "thea-collectiverifle1lights.png",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/allianceenergyflash.png"
   },
   "animationCustom" : {
@@ -26,7 +24,7 @@
       "parts" : {
         "middleFullbright" : {
 		  "properties" : {
-		    "offset" : [1.0, 0.1]
+		    "offset" : [0.7, 0.1]
 		  }
 		}
       }
@@ -34,13 +32,13 @@
     "particleEmitters" : {
     },
     "sounds" : {
-      "fire" : [ "/sfx/gun/thea_plasmagun1.ogg" ],
-	  "altFire" : [ "/sfx/gun/ar4.ogg" ]
+      "fire" : [ "/sfx/gun/thea_plasmagun7.ogg" ],
+	  "altFire" : [ "/sfx/gun/thea_plasmagun6.ogg" ]
     }
   },
 
-  "baseOffset" : [1.0, 0.1],
-  "muzzleOffset" : [3.0, 0.625],
+  "baseOffset" : [0.7, 0.1],
+  "muzzleOffset" : [1.875, 0.25],
 
   "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
 
@@ -50,25 +48,25 @@
     "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
     "class" : "GunFire",
 
-    "fireTime" : 1.3,
-    "baseDps" : 8.5,
-    "energyUsage" : 22,
-    "inaccuracy" : 0.0,
+    "fireTime" : 0.28,
+    "baseDps" : 10.5,
+    "energyUsage" : 31.5,
+    "inaccuracy" : 0.005,
 
     "projectileCount" : 1,
-    "fireType" : "auto",
+    "burstTime" : 0.1,
+    "burstCount" : 3,
+    "fireType" : "burst",
 
     "projectileType" : "alliancetrailbullet",
     "projectileParameters" : {
-      "knockback" : 18,
-	  "speed" : 200
+      "knockback" : 6
     },
 	
     "stances" : {
       "idle" : {
         "armRotation" : 0,
         "weaponRotation" : 0,
-		"weaponOffset" : [0, 0],
         "twoHanded" : true,
 
         "allowRotate" : true,
@@ -76,19 +74,17 @@
       },
       "fire" : {
         "duration" : 0,
-        "armRotation" : 5,
-        "weaponRotation" : 5,
-		"weaponOffset" : [-0.1, 0],
+        "armRotation" : 3,
+        "weaponRotation" : 3,
         "twoHanded" : true,
 
         "allowRotate" : false,
         "allowFlip" : false
       },
       "cooldown" : {
-        "duration" : 0.45,
-        "armRotation" : 5,
-        "weaponRotation" : 5,
-		"weaponOffset" : [-0.1, 0],
+        "duration" : 0.125,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
         "twoHanded" : true,
 
         "allowRotate" : false,
@@ -98,22 +94,23 @@
   },
 
   "altAbility" : {
-    "name" : "Focused Fire",
+    "name" : "Smart Bullet",
     "scripts" : ["/items/active/weapons/ranged/abilities/altfire.lua"],
 	"class" : "AltFireAttack",
 
-    "baseDps" : 8.0,
-	"fireTime" : 0.45,
+    "fireTime" : 0.34,
+    "baseDps" : 7.5,
     "energyUsage" : 35.0,
     "inaccuracy" : 0.01,
 
 	"projectileCount" : 1,
-    "fireType" : "auto",
+    "burstTime" : 0.1,
+    "burstCount" : 3,
+    "fireType" : "burst",
 	
-	"projectileType" : "avikanbullet",
+	"projectileType" : "alliancesmarttrailbullet",
 	"projectileParameters" : {
-	  "knockback" : 6,
-	  "piercing" : true
+	  "knockback" : 6
 	},
 	
 	"hidePrimaryMuzzleFlash" : false,

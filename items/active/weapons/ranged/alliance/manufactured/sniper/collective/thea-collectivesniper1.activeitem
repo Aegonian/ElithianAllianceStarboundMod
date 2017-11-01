@@ -1,22 +1,24 @@
 {
-  "itemName" : "thea-collectivepistol2",
-  "price" : 250,
-  "inventoryIcon" : "thea-collectivepistol2.png",
+  "itemName" : "thea-collectivesniper1",
+  "price" : 325,
+  "inventoryIcon" : "thea-collectivesniper1.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A standard-issue Alliance handgun.",
+  "description" : "A high-impact sniper rifle.",
   "manufacturer" : "^gray;Alliance Collective^reset;",
-  "shortdescription" : "AC-3 Fulcrum",
+  "shortdescription" : "AC.R-15 Longsight",
   "level" : 6,
   "tooltipKind" : "thea-gun-mf",
-  "category" : "Pistol",
-  "itemTags" : ["weapon","ranged","pistol","alliance","alliancecollective"],
-  "twoHanded" : false,
-
+  "category" : "Sniper Rifle",
+  "itemTags" : ["weapon","ranged","sniperrifle","alliance","alliancecollective"],
+  "twoHanded" : true,
+  
+  "cursor" : "/cursors/thea-precisereticle.cursor",
+  
   "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
   "animationParts" : {
-    "middle" : "thea-collectivepistol2.png",
-    "middleFullbright" : "thea-collectivepistol2lights.png",
+    "middle" : "thea-collectivesniper1.png",
+    "middleFullbright" : "thea-collectivesniper1lights.png",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/allianceenergyflash.png"
   },
   "animationCustom" : {
@@ -24,69 +26,74 @@
       "parts" : {
         "middleFullbright" : {
 		  "properties" : {
-		    "offset" : [0.5, 0.0]
+		    "offset" : [1.0, 0.1]
 		  }
 		}
       }
     },
+    "particleEmitters" : {
+    },
     "sounds" : {
-      "fire" : [ "/sfx/gun/thea_plasmagun1.ogg" ]
+      "fire" : [ "/sfx/gun/thea_plasmagun7.ogg" ]
     }
   },
 
-  "baseOffset" : [0.5, 0.0],
-  "muzzleOffset" : [1.375, 0.5],
+  "baseOffset" : [1.0, 0.1],
+  "muzzleOffset" : [2.875, 0.5],
 
   "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
 
   "elementalType" : "physical",
-  
+
   "primaryAbility" : {
     "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
     "class" : "GunFire",
 
-    "fireTime" : 0.45,
-    "baseDps" : 7.0,
+    "fireTime" : 0.9,
+    "baseDps" : 8.5,
     "energyUsage" : 22,
-    "inaccuracy" : 0.025,
+    "inaccuracy" : 0.005,
 
     "projectileCount" : 1,
     "fireType" : "auto",
 
     "projectileType" : "alliancetrailbullet",
     "projectileParameters" : {
-      "knockback" : 6
+      "knockback" : 15,
+	  "speed" : 200
     },
 	
     "stances" : {
       "idle" : {
         "armRotation" : 0,
         "weaponRotation" : 0,
-        "twoHanded" : false,
+        "twoHanded" : true,
 
         "allowRotate" : true,
         "allowFlip" : true
       },
       "fire" : {
         "duration" : 0,
-        "armRotation" : 3,
-        "weaponRotation" : 3,
-        "twoHanded" : false,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+        "twoHanded" : true,
 
         "allowRotate" : false,
-        "allowFlip" : true
+        "allowFlip" : false
       },
       "cooldown" : {
-        "duration" : 0.15,
-        "armRotation" : 3,
-        "weaponRotation" : 3,
-        "twoHanded" : false,
+        "duration" : 0.35,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+        "twoHanded" : true,
 
         "allowRotate" : false,
-        "allowFlip" : true
+        "allowFlip" : false
       }
     }
   },
-  
+
+  "altAbilityType" : "thea-chargedshot",
+
   "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

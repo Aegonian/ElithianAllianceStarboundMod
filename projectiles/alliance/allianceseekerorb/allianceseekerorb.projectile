@@ -1,0 +1,43 @@
+{
+  "projectileName" : "allianceseekerorb",
+  "image" : "allianceseekerorb.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 4,
+  "damageKindImage" : "icon.png",
+  "lightColor" : [64, 100, 128],
+  "pointLight" : true,
+  "fullbright" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/allianceplasmaexplosion/allianceplasmaexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "emitters" : [ "allianceplasmaorbtrail" ],
+  "flippable" : true,
+  "layer" : "front",
+  "power" : 10.0,
+  "speed" : 30.0,
+  "physics" : "rocket",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+
+  "scripts" : [ "/projectiles/scripts/thea-seekingclusterrocket.lua" ],
+  
+  //Config for straightening out any inaccuracy after being fired
+  "controlForce" : 75,
+  
+  //Config for seeking targets
+  "homingStartDelay" : 0.35,
+  "searchRadius" : 25,
+  "baseHomingControlForce" : 0.75,
+  
+  //General config
+  "maxSpeed" : 25,
+  "constantSpeed" : false,
+  "randomTimeToLive" : true,
+  "timeToLiveMilliseconds" : true,
+  "minLifeTime" : 200,
+  "maxLifeTime" : 300
+}

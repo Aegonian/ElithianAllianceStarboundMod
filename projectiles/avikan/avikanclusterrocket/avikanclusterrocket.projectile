@@ -21,7 +21,7 @@
   "damageType" : "NoDamage",
   "damageKind" : "default",
 
-  "scripts" : [ "avikanclusterrocket.lua" ],
+  "scripts" : [ "/projectiles/scripts/thea-clusterrocket.lua" ],
   "maxSpeed" : 75,
   "controlForce" : 100
 }

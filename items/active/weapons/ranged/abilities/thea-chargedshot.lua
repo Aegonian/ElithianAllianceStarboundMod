@@ -132,7 +132,13 @@ function TheaChargedShot:fireProjectile(projectileType, projectileParams, inaccu
         false,
         params
       )
+	
+	--If the ability config has this set to true, then the projectile fired will align with the player's aimVector shortly after being fired (as in the Rocket Burst ability) 
+	if self.alignProjectiles then
+	  world.callScriptedEntity(projectileId, "setApproach", self:aimVector(0, 1))
+	end
   end
+  
   return projectileId
 end
 

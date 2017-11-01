@@ -1,22 +1,22 @@
 {
-  "itemName" : "thea-collectiverifle3",
+  "itemName" : "thea-aaerifle2",
   "price" : 325,
-  "inventoryIcon" : "thea-collectiverifle3.png",
+  "inventoryIcon" : "thea-aaerifle2.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A compact, high-impact assault rifle.",
-  "manufacturer" : "^gray;Alliance Collective^reset;",
-  "shortdescription" : "AC-4 Aurora",
+  "description" : "A high rate of fire assault rifle.",
+  "manufacturer" : "^gray;AAE^reset;",
+  "shortdescription" : "Messus I-18",
   "level" : 6,
   "tooltipKind" : "thea-gun-mf",
   "category" : "Assault Rifle",
-  "itemTags" : ["weapon","ranged","assaultrifle","alliance","alliancecollective"],
+  "itemTags" : ["weapon","ranged","assaultrifle","alliance","aae"],
   "twoHanded" : true,
   
   "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
   "animationParts" : {
-    "middle" : "thea-collectiverifle3.png",
-    "middleFullbright" : "thea-collectiverifle3lights.png",
+    "middle" : "thea-aaerifle2.png",
+    "middleFullbright" : "thea-aaerifle2lights.png",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/allianceenergyflash.png"
   },
   "animationCustom" : {
@@ -24,7 +24,7 @@
       "parts" : {
         "middleFullbright" : {
 		  "properties" : {
-		    "offset" : [0.7, 0.1]
+		    "offset" : [0.375, 0.125]
 		  }
 		}
       }
@@ -33,12 +33,12 @@
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/thea_plasmagun1.ogg" ],
-	  "altFire" : [ "/sfx/gun/ar4.ogg" ]
+	  "altFire" : [ "/sfx/gun/thea_plasmagun1.ogg" ]
     }
   },
 
-  "baseOffset" : [0.7, 0.1],
-  "muzzleOffset" : [1.875, 0.25],
+  "baseOffset" : [0.375, 0.125],
+  "muzzleOffset" : [2.0, 0.375],
 
   "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
 
@@ -48,15 +48,17 @@
     "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
     "class" : "GunFire",
 
-    "fireTime" : 0.24,
+    "fireTime" : 0.12,
     "baseDps" : 10.5,
     "energyUsage" : 31.5,
-    "inaccuracy" : 0.005,
+    "inaccuracy" : 0.025,
 
     "projectileCount" : 1,
-    "fireType" : "auto",
+    "burstTime" : 0.075,
+    "burstCount" : 3,
+    "fireType" : "burst",
 
-    "projectileType" : "alliancetrailbullet",
+    "projectileType" : "allianceenergybullet",
     "projectileParameters" : {
       "knockback" : 6
     },
@@ -73,16 +75,16 @@
       "fire" : {
         "duration" : 0,
         "armRotation" : 3,
-        "weaponRotation" : 3,
+        "weaponRotation" : 4,
         "twoHanded" : true,
 
         "allowRotate" : false,
         "allowFlip" : false
       },
       "cooldown" : {
-        "duration" : 0.125,
+        "duration" : 0.075,
         "armRotation" : 3,
-        "weaponRotation" : 3,
+        "weaponRotation" : 4,
         "twoHanded" : true,
 
         "allowRotate" : false,
@@ -92,19 +94,21 @@
   },
 
   "altAbility" : {
-    "name" : "Focused Fire",
+    "name" : "Extended Burst",
     "scripts" : ["/items/active/weapons/ranged/abilities/altfire.lua"],
 	"class" : "AltFireAttack",
 
-    "baseDps" : 8.0,
-	"fireTime" : 0.45,
+	"fireTime" : 0.24,
+	"baseDps" : 5.0,
     "energyUsage" : 35.0,
-    "inaccuracy" : 0.01,
+    "inaccuracy" : 0.030,
 
 	"projectileCount" : 1,
-    "fireType" : "auto",
+    "burstTime" : 0.075,
+    "burstCount" : 6,
+    "fireType" : "burst",
 	
-	"projectileType" : "avikanbullet",
+	"projectileType" : "allianceenergybullet",
 	"projectileParameters" : {
 	  "knockback" : 6,
 	  "piercing" : true
@@ -117,8 +121,8 @@
     "stances" : {
       "fire" : {
         "duration" : 0,
-        "armRotation" : 2,
-        "weaponRotation" : 2,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
         "twoHanded" : true,
 
         "allowRotate" : false,
@@ -126,8 +130,8 @@
       },
       "cooldown" : {
         "duration" : 0.1,
-        "armRotation" : 2,
-        "weaponRotation" : 2,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
         "twoHanded" : true,
 
         "allowRotate" : false,

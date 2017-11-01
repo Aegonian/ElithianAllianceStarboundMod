@@ -38,6 +38,11 @@
           { "particle" : "rocketbarrelpuff", "offset" : [0.0, 0.0] },
           { "particle" : "rocketbarrelpuff", "offset" : [0.0, 0.0] }
         ]
+      },
+	  "altMuzzleFlash" : {
+        "particles" : [
+          { "particle" : "rocketbarrelpuff", "offset" : [0.0, 0.0] }
+        ]
       }
     },
 	"sounds" : {
@@ -46,7 +51,7 @@
   },
 
   "baseOffset" : [0.25, 0.25],
-  "muzzleOffset" : [2.5, 0.24],
+  "muzzleOffset" : [2.5, 0.375],
 
   "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
 
@@ -64,7 +69,7 @@
     "projectileCount" : 1,
     "fireType" : "auto",
 
-    "projectileType" : "alliancerocket",
+    "projectileType" : "alliancerocket2",
     "projectileParameters" : { },
     "stances" : {
       "idle" : {
@@ -98,9 +103,9 @@
     }
   },
 
-  "altAbilityType" : "rocketburst",
+  "altAbilityType" : "thea-rocketburst",
   "altAbility" : {
-	"projectileType" : "avikanclusterrocket"
+	"projectileType" : "allianceclusterrocket2"
   },
 
   "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
