@@ -1,6 +1,8 @@
 require "/scripts/util.lua"
 require "/scripts/interp.lua"
 
+--This ability uses both the primary and secondary ability slots - if combined with a seperate alternate ability, the weapon WILL malfunction. Additionaly, weapons with this ability are required to be two-handed, as both mouse buttons are required for the reloading mechanic. Primary fire fires the weapon like any regular gun, but consumes one unit of ammo, whilst secondary fire reloads the weapon. Running out of ammo will automatically start the reload sequence. Optionally, weapons with this ability can be configured to 'cycle' after each shot, playing a special animation after firing.
+
 -- Base gun fire ability
 TheaAmmoFire = WeaponAbility:new()
 

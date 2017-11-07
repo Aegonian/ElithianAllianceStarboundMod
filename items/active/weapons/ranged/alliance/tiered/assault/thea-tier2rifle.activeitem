@@ -8,9 +8,9 @@
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Aphalos I-12",
   "level" : 2,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-mf-attachment",
   "category" : "Assault Rifle",
-  "itemTags" : ["weapon","ranged","assaultrifle","alliance","aae","allianceUpgradeable","allianceAttachmentCompatible"],
+  "itemTags" : ["weapon","ranged","assaultrifle","alliance","aae","allianceUpgradeable"],
   "twoHanded" : true,
   
   "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
@@ -42,6 +42,9 @@
   "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
 
   "elementalType" : "physical",
+  
+  //Custom field for recognizing compatible attachment types
+  "theaAttachmentType" : "aae_assault1",
 
   "primaryAbility" : {
     "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
@@ -90,5 +93,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf-attachment.lua"
 }

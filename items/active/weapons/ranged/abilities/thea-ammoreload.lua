@@ -1,6 +1,8 @@
 require "/scripts/util.lua"
 require "/scripts/interp.lua"
 
+--Currently unused ability
+
 -- Base gun fire ability
 TheaAmmoFire = WeaponAbility:new()
 

@@ -1,6 +1,8 @@
 require "/scripts/util.lua"
 require "/scripts/interp.lua"
 
+--This ability is primarily used for crossbows, but can be used for other reloading weapons as well. Weapons using this ability do not have a muzzle effect, and only support automatic firing, not burst-fire. Weapons also have built-in functionality for a damage boost from quivers, but whether or not to apply it is optional and configurable per weapon.
+
 -- Base gun fire ability
 TheaCrossBow = WeaponAbility:new()
 

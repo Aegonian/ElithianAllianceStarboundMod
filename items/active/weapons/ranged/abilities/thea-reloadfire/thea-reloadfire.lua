@@ -1,6 +1,8 @@
 require "/scripts/util.lua"
 require "/scripts/interp.lua"
 
+--This ability is a variation on the regular gunfire ability, supporting both auto and burst fire. Weapons use a muzzleflash animation and light, and can play a reloading animation and sound during the cooldown phase.
+
 -- Base gun fire ability
 TheaReloadFire = WeaponAbility:new()
 

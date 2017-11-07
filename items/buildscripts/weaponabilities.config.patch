@@ -35,6 +35,16 @@
 	"path": "/thea-chargedseekerorbs",
 	"value": "/items/active/weapons/ranged/abilities/thea-chargedseekerorbs/thea-chargedseekerorbs.weaponability"
   },
+  {
+	"op": "add",
+	"path": "/thea-loadspecialammo",
+	"value": "/items/active/weapons/ranged/abilities/thea-loadspecialammo/thea-loadspecialammo.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-loadpiercingshotgun",
+	"value": "/items/active/weapons/ranged/abilities/thea-loadspecialammo/abilities/thea-loadpiercingshotgun.weaponability"
+  },
   
   //MELEE ABILITIES
   {

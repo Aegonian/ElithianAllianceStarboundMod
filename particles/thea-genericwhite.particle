@@ -1,0 +1,21 @@
+{
+  "kind" : "thea-genericwhite",
+  "definition" : {
+    "type" : "ember",
+    "size" : 1.0,
+    "color" : [255, 255, 255, 200],
+    "fade" : 0.9,
+    "initialVelocity" : [0, 0],
+    "finalVelocity" : [0, 0],
+    "approach" : [20, 20],
+    "light" : [24, 24, 24],
+    "destructionTime" : 0.4,
+    "layer" : "middle",
+    "collidesLiquid" : false,
+	"fullbright" : false,
+    "variance" : {
+      "finalVelocity" : [1.5, 1.5],
+      "size" : 0.5
+    }
+  }
+}

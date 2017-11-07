@@ -7,7 +7,7 @@
   "shortdescription" : "Weapon Attachment Bench",
   "race" : "aegi",
   "category" : "crafting",
-  "price" : 0,
+  "price" : 500,
 
   "apexDescription" : "The anvil works, I wonder what beings made this.",
   "avianDescription" : "This anvil is of ancient origin",
@@ -31,6 +31,15 @@
     }
   ],
 
-  "interactAction" : "ScriptPane",
-  "interactData" : "/interface/scripted/allianceweaponattachment/allianceweaponattachmentgui.config"
+  "objectType" : "container",
+
+  "openSounds" : [ "/sfx/objects/mannequin_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/mannequin_close.ogg" ],
+  "slotCount" : 3,
+  "uiConfig" : "/interface/scripted/allianceweaponattachment/allianceweaponattachmentgui.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600,
+
+  "scripts" : [ "/objects/alliance/crafting/weaponattachmentbench/allianceweaponattachmentbench.lua" ],
+  "scriptDelta" : 5
 }
