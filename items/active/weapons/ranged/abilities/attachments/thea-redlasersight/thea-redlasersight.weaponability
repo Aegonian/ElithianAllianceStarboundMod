@@ -1,0 +1,86 @@
+{
+  "animationCustom" : {
+    "animatedParts" : {
+      "stateTypes" : {
+		"laser" : {
+		  "default" : "off",
+		  "states" : {
+			"off" : {},
+			"on" : {}
+		  }
+		}
+      },
+	  "parts" : {
+		"flashlight" : {
+		  "properties" : {
+			"zLevel" : -2,
+			"centered" : true,
+			"offset" : [-1.375, -0.625],
+			"transformationGroups" : ["muzzle"]
+		  },
+		  "partStates" : {
+			"laser" : {
+			  "off" : {
+				"properties" : {
+				  "image" : "/items/active/weapons/ranged/abilities/attachments/thea-redlasersight/thea-redlasersight.png:off"
+				}
+			  },
+			  "on" : {
+				"properties" : {
+				  "image" : "/items/active/weapons/ranged/abilities/attachments/thea-redlasersight/thea-redlasersight.png:on"
+				}
+			  }
+			}
+		  }
+		}
+	  }
+	},
+    "lights" : {
+      "flashlightSpread" : {
+        "active" : false,
+        "position" : [-1.375, -0.625],
+        "transformationGroups" : ["muzzle"],
+        "color" : [80, 0, 0]
+      },
+      "flashlight" : {
+        "active" : false,
+        "position" : [-1.375, -0.625],
+        "transformationGroups" : ["muzzle"],
+        "color" : [125, 0, 0],
+        "pointLight" : true,
+        "pointAngle" : 0.00,
+        "pointBeam" : 7.5
+      }
+    },
+    "sounds" : {
+      "toggleLight" : [ "/sfx/tools/flashlight_toggle.ogg" ]
+    }
+  },
+  //Laser animation script set-up
+  "animationScripts" : [
+    "/items/active/effects/thea-variablelaser.lua"
+  ],
+  "scriptedAnimationParameters" : {
+    "beams" : [
+      {
+        "offset" : [0.0, 0.0],
+        "length" : 100,
+        "segments" : 10,
+        "angle" : 0
+      }
+    ]
+  },
+
+  "ability" : {
+    "name" : "Red Laser Sight",
+    "type" : "thea-redlasersight",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-lasersight/thea-lasersight.lua"],
+    "class" : "TheaLaserSight",
+	
+	"positionRelativeToMuzzle" : true, //Makes the laser origin relative to muzzleOffset instead of baseOffset
+	"laserOffset" : [-1.05, -0.45],
+
+    "laserColourActive" : [255, 0, 0, 128],
+	"laserColourInactive" : [0, 0, 0, 0]
+  }
+}

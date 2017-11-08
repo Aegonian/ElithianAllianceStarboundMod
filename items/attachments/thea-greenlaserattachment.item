@@ -1,0 +1,20 @@
+{
+  "itemName" : "thea-greenlaserattachment",
+  "price" : 500,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "tooltipKind" : "thea-attachment",
+  "category" : "Weapon Attachment",
+  "inventoryIcon" : "thea-greenlaserattachment.png",
+  "largeImage" : "thea-greenlaserattachmentlarge.png",
+  "builder" : "/items/buildscripts/thea-buildattachment.lua",
+  
+  "manufacturer" : "^gray;AAE^reset;",
+  "description" : "An underbarrel laser sight with a green colour.",
+  "shortdescription" : "Green Laser Sight",
+  
+  "itemTags" : [ "thea_attachment" ],
+  
+  "theaAttachmentType" : "aae_assault1",
+  "theaAttachmentAbility" : "thea-greenlasersight"
+}

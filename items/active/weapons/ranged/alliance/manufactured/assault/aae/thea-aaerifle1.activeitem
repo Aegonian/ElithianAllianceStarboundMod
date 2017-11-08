@@ -8,10 +8,13 @@
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Hyperion I-19",
   "level" : 6,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-mf-attachment",
   "category" : "Assault Rifle",
-  "itemTags" : ["weapon","ranged","assaultrifle","alliance","aae"],
+  "itemTags" : ["weapon","ranged","assaultrifle","alliance","aae","allianceUpgradeable"],
   "twoHanded" : true,
+  
+  //Custom field for recognizing compatible attachment types
+  "theaAttachmentType" : "aae_assault1",
   
   "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
   "animationParts" : {
@@ -93,52 +96,5 @@
     }
   },
 
-  "altAbility" : {
-    "name" : "Extended Burst",
-    "scripts" : ["/items/active/weapons/ranged/abilities/altfire.lua"],
-	"class" : "AltFireAttack",
-
-	"fireTime" : 0.48,
-    "baseDps" : 5.0,
-    "energyUsage" : 35.0,
-    "inaccuracy" : 0.025,
-
-	"projectileCount" : 1,
-    "burstTime" : 0.125,
-    "burstCount" : 4,
-    "fireType" : "burst",
-	
-	"projectileType" : "allianceenergybullet",
-	"projectileParameters" : {
-	  "knockback" : 6,
-	  "piercing" : true
-	},
-	
-	"hidePrimaryMuzzleFlash" : false,
-	"useParticleEmitter" : false,
-	"usePrimaryFireSound" : false,
-
-    "stances" : {
-      "fire" : {
-        "duration" : 0,
-        "armRotation" : 4,
-        "weaponRotation" : 4,
-        "twoHanded" : true,
-
-        "allowRotate" : false,
-        "allowFlip" : false
-      },
-      "cooldown" : {
-        "duration" : 0.1,
-        "armRotation" : 4,
-        "weaponRotation" : 4,
-        "twoHanded" : true,
-
-        "allowRotate" : false,
-        "allowFlip" : false
-      }
-    }
-  },
-
-  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf-attachment.lua"
 }

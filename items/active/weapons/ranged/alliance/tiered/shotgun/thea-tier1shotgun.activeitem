@@ -33,7 +33,6 @@
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/shotgun1.ogg" ],
-	  "altFire" : [ "/sfx/gun/shotgun4.ogg" ],
       "reload" : [ "/sfx/gun/reload/shotgun_reload_clip3.ogg" ]
     }
   },
@@ -92,49 +91,7 @@
     }
   },
 
-  "altAbility" : {
-    "name" : "Power Shot",
-    "scripts" : ["/items/active/weapons/ranged/abilities/altfire.lua"],
-	"class" : "AltFireAttack",
-
-    "baseDps" : 4.0,
-	"fireTime" : 1.2,
-    "energyUsage" : 50.0,
-    "inaccuracy" : 0.045,
-
-	"projectileCount" : 4,
-    "fireType" : "auto",
-	
-	"projectileType" : "avikanbullet",
-	"projectileParameters" : {
-	  "knockback" : 40
-	},
-	
-	"hidePrimaryMuzzleFlash" : false,
-	"useParticleEmitter" : false,
-	"usePrimaryFireSound" : false,
-
-    "stances" : {
-      "fire" : {
-        "duration" : 0,
-        "armRotation" : 7,
-        "weaponRotation" : 7,
-        "twoHanded" : true,
-
-        "allowRotate" : false,
-        "allowFlip" : false
-      },
-      "cooldown" : {
-        "duration" : 0.25,
-        "armRotation" : 7,
-        "weaponRotation" : 7,
-        "twoHanded" : true,
-
-        "allowRotate" : false,
-        "allowFlip" : false
-      }
-    }
-  },
+  "altAbilityType" : "thea-loadscatterammo",
 
   "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

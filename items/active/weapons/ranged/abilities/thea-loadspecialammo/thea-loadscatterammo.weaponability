@@ -1,5 +1,3 @@
-//This file is a template! Don't use this for actual weapon - create a copy instead!
-
 {
   "animationCustom" : {
     "sounds" : {
@@ -21,8 +19,8 @@
   },
   
   "ability" : {
-    "name" : "Load Special Ammo",
-    "type" : "thea-loadspecialammo",
+    "name" : "Load Scatter Ammo",
+    "type" : "thea-loadscatterammo",
     "scripts" : ["/items/active/weapons/ranged/abilities/thea-loadspecialammo/thea-loadspecialammo.lua"],
     "class" : "TheaLoadSpecialAmmo",
 
@@ -30,24 +28,24 @@
 	
 	//Which stats to adapt when loading the special ammo
 	"adaptedStats" : {
-	  "projectileType" : true,
+	  "projectileType" : false,
 	  "projectileCount" : true,
-	  "fireType" : true,
-	  "fireTime" : true,
+	  "fireType" : false,
+	  "fireTime" : false,
 	  "energyUsage" : true,
 	  "inaccuracy" : true
 	},
 	
 	//The new stats which will overwrite the primary ability
 	"specialAbility" : {
-	  "projectileType" : "allianceclusterrocket",
+	  "projectileType" : "alliancepellet",
 	  
-	  "projectileCount" : 1,
+	  "projectileCount" : 12,
 	  "fireType" : "auto",
 	
-      "fireTime" : 0.25,
+      "fireTime" : 1.0,
       "energyUsage" : 50,
-      "inaccuracy" : 0.0
+      "inaccuracy" : 0.15
 	},
 
     "stances" : {

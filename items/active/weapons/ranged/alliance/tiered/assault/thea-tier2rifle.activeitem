@@ -13,6 +13,9 @@
   "itemTags" : ["weapon","ranged","assaultrifle","alliance","aae","allianceUpgradeable"],
   "twoHanded" : true,
   
+  //Custom field for recognizing compatible attachment types
+  "theaAttachmentType" : "aae_assault1",
+  
   "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
   "animationParts" : {
     "middle" : "thea-tier2rifle.png",
@@ -42,9 +45,6 @@
   "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
 
   "elementalType" : "physical",
-  
-  //Custom field for recognizing compatible attachment types
-  "theaAttachmentType" : "aae_assault1",
 
   "primaryAbility" : {
     "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],

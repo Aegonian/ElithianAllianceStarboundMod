@@ -8,10 +8,13 @@
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Boromus S6",
   "level" : 4,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-mf-attachment",
   "category" : "Shotgun",
   "itemTags" : ["weapon","ranged","shotgun","alliance","aae","allianceUpgradeable","allianceAttachmentCompatible"],
   "twoHanded" : true,
+  
+  //Custom field for recognizing compatible attachment types
+  "theaAttachmentType" : "aae_shotgun1",
   
   "cursor" : "/cursors/thea-widereticle.cursor",
 
@@ -90,7 +93,5 @@
     }
   },
 
-  "altAbilityType" : "thea-loadpiercingshotgun",
-
-  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf-attachment.lua"
 }

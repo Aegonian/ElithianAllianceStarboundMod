@@ -8,10 +8,13 @@
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Crow R-2",
   "level" : 2,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-mf-attachment",
   "category" : "Sniper Rifle",
-  "itemTags" : ["weapon","ranged","sniperrifle","alliance","aae","allianceUpgradeable","allianceAttachmentCompatible"],
+  "itemTags" : ["weapon","ranged","sniperrifle","alliance","aae","allianceUpgradeable"],
   "twoHanded" : true,
+  
+  //Custom field for recognizing compatible attachment types
+  "theaAttachmentType" : "aae_sniper1",
   
   "cursor" : "/cursors/thea-precisereticle.cursor",
   
@@ -93,5 +96,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf-attachment.lua"
 }

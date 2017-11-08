@@ -1,0 +1,20 @@
+{
+  "itemName" : "thea-ricochetammomod",
+  "price" : 500,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "tooltipKind" : "thea-attachment",
+  "category" : "Ammo Mod",
+  "inventoryIcon" : "thea-ricochetammomod.png",
+  "largeImage" : "thea-ricochetammomodlarge.png",
+  "builder" : "/items/buildscripts/thea-buildattachment.lua",
+  
+  "manufacturer" : "^gray;AAE^reset;",
+  "description" : "Shotgun ammunition that pierces targets and ricochets off walls.",
+  "shortdescription" : "Ricochet Ammo",
+  
+  "itemTags" : [ "thea_attachment" ],
+  
+  "theaAttachmentType" : "aae_shotgun1",
+  "theaAttachmentAbility" : "thea-loadpiercingshotgun"
+}

@@ -8,10 +8,13 @@
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Rophalus S-2",
   "level" : 2,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-mf-attachment",
   "category" : "Shotgun",
-  "itemTags" : ["weapon","ranged","shotgun","alliance","aae","allianceUpgradeable","allianceAttachmentCompatible"],
+  "itemTags" : ["weapon","ranged","shotgun","alliance","aae","allianceUpgradeable"],
   "twoHanded" : true,
+  
+  //Custom field for recognizing compatible attachment types
+  "theaAttachmentType" : "aae_shotgun1",
   
   "cursor" : "/cursors/thea-widereticle.cursor",
 
@@ -91,5 +94,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf-attachment.lua"
 }

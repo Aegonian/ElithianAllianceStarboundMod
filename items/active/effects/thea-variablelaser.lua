@@ -12,7 +12,11 @@ function update()
     local maxLength = beam.length or 30
     local segmentCount = beam.segments or 1
     local angle = beam.angle or 0
-
+	
+	if animationConfig.animationParameter("positionRelativeToMuzzle") then
+	  offset = animationConfig.animationParameter("offset")
+	end
+	
     local beamPosition = vec2.add(activeItemAnimation.ownerPosition(), activeItemAnimation.handPosition(offset))
     local aimAngle = activeItemAnimation.ownerArmAngle() + angle
     local aimVector = {activeItemAnimation.ownerFacingDirection() * math.cos(aimAngle), math.sin(aimAngle)}

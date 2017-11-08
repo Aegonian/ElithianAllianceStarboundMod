@@ -1,19 +1,11 @@
 [
-  //RANGED ABILITIES
+  //======================================================================================================================
+  //	RANGED ABILITIES
+  //======================================================================================================================
   {
 	"op": "add",
 	"path": "/jumpflare",
 	"value": "/items/active/weapons/ranged/abilities/jumpflare/jumpflare.weaponability"
-  },
-  {
-	"op": "add",
-	"path": "/thea-grenadelauncher",
-	"value": "/items/active/weapons/ranged/abilities/thea-grenadelauncher/thea-grenadelauncher.weaponability"
-  },
-  {
-	"op": "add",
-	"path": "/thea-stickylauncher",
-	"value": "/items/active/weapons/ranged/abilities/thea-stickylauncher/thea-stickylauncher.weaponability"
   },
   {
 	"op": "add",
@@ -37,16 +29,18 @@
   },
   {
 	"op": "add",
-	"path": "/thea-loadspecialammo",
-	"value": "/items/active/weapons/ranged/abilities/thea-loadspecialammo/thea-loadspecialammo.weaponability"
+	"path": "/thea-loadscatterammo",
+	"value": "/items/active/weapons/ranged/abilities/thea-loadspecialammo/thea-loadscatterammo.weaponability"
   },
   {
 	"op": "add",
-	"path": "/thea-loadpiercingshotgun",
-	"value": "/items/active/weapons/ranged/abilities/thea-loadspecialammo/abilities/thea-loadpiercingshotgun.weaponability"
+	"path": "/thea-loadspecialammo",
+	"value": "/items/active/weapons/ranged/abilities/thea-loadspecialammo/thea-loadspecialammo.weaponability"
   },
   
-  //MELEE ABILITIES
+  //======================================================================================================================
+  //	MELEE ABILITIES
+  //======================================================================================================================
   {
 	"op": "add",
 	"path": "/thea-whirlwind",
@@ -86,5 +80,52 @@
 	"op": "add",
 	"path": "/thea-spearspin",
 	"value": "/items/active/weapons/melee/abilities/spear/thea-spearspin/thea-spearspin.weaponability"
+  },
+  
+  //======================================================================================================================
+  //	Weapon Attachments and Mods
+  //======================================================================================================================
+  //Assault Rifle
+  {
+	"op": "add",
+	"path": "/thea-grenadelauncher",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-grenadelauncher/thea-grenadelauncher.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-stickylauncher",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-stickylauncher/thea-stickylauncher.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-flarelauncher",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-flarelauncher/thea-flarelauncher.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-flashlight",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-flashlight/thea-flashlight.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-redlasersight",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-redlasersight/thea-redlasersight.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-greenlasersight",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-greenlasersight/thea-greenlasersight.weaponability"
+  },
+  //Shotgun
+  {
+	"op": "add",
+	"path": "/thea-loadpiercingshotgun",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-specialammo/thea-loadpiercingshotgun.weaponability"
+  },
+  //Sniper
+  {
+	"op": "add",
+	"path": "/thea-loadexplosivesniper",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-specialammo/thea-loadexplosivesniper.weaponability"
   }
 ]

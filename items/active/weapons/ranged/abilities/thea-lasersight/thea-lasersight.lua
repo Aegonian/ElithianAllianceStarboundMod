@@ -1,3 +1,5 @@
+require "/scripts/vec2.lua"
+
 TheaLaserSight = WeaponAbility:new()
 
 function TheaLaserSight:init()
@@ -37,6 +39,13 @@ function TheaLaserSight:reset()
   --Hide the laser sprite overlay
   animator.setAnimationState("laser", "off")
   self.active = false
+  
+  --Optionally reposition the laser. Useful when the laser is configured through a modular alt ability
+  if self.positionRelativeToMuzzle then
+	activeItem.setScriptedAnimationParameter("positionRelativeToMuzzle", true)
+	activeItem.setScriptedAnimationParameter("offset", vec2.add(self.laserOffset, self.weapon.muzzleOffset))
+	--activeItem.setScriptedAnimationParameter("offset", {5, 1})
+  end
 end
 
 function TheaLaserSight:uninit()

@@ -1,5 +1,3 @@
-//This file is a template! Don't use this for actual weapon - create a copy instead!
-
 {
   "animationCustom" : {
     "sounds" : {
@@ -21,8 +19,8 @@
   },
   
   "ability" : {
-    "name" : "Load Special Ammo",
-    "type" : "thea-loadspecialammo",
+    "name" : "Load Ricochet Ammo",
+    "type" : "thea-loadpiercingshotgun",
     "scripts" : ["/items/active/weapons/ranged/abilities/thea-loadspecialammo/thea-loadspecialammo.lua"],
     "class" : "TheaLoadSpecialAmmo",
 
@@ -31,21 +29,21 @@
 	//Which stats to adapt when loading the special ammo
 	"adaptedStats" : {
 	  "projectileType" : true,
-	  "projectileCount" : true,
-	  "fireType" : true,
-	  "fireTime" : true,
+	  "projectileCount" : false,
+	  "fireType" : false,
+	  "fireTime" : false,
 	  "energyUsage" : true,
-	  "inaccuracy" : true
+	  "inaccuracy" : false
 	},
 	
 	//The new stats which will overwrite the primary ability
 	"specialAbility" : {
-	  "projectileType" : "allianceclusterrocket",
+	  "projectileType" : "allianceenergybullet2-piercing",
 	  
 	  "projectileCount" : 1,
 	  "fireType" : "auto",
 	
-      "fireTime" : 0.25,
+      "fireTime" : 1.0,
       "energyUsage" : 50,
       "inaccuracy" : 0.0
 	},

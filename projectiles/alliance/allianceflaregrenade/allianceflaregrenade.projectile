@@ -1,0 +1,22 @@
+{
+  "projectileName" : "allianceflaregrenade",
+  "physics" : "grenadelowbounce",
+  "bounces" : -1,
+  "timeToLive" : 15,
+  "image" : "allianceflaregrenade.png",
+  "animationCycle" : 0.5,
+  "lightColor" : [255, 106, 0],
+  "frameNumber" : 1,
+  "emitters" : [ "avikanflaresmoke" ],
+  "speed" : 20,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/smoke/smoke.config"
+    }
+  ],
+  "power" : 0,
+  "onlyHitTerrain" : true,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}
