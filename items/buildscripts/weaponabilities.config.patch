@@ -122,10 +122,52 @@
 	"path": "/thea-loadpiercingshotgun",
 	"value": "/items/active/weapons/ranged/abilities/attachments/thea-specialammo/thea-loadpiercingshotgun.weaponability"
   },
+  {
+	"op": "add",
+	"path": "/thea-loadgrenadeshotgun",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-specialammo/thea-loadgrenadeshotgun.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-loadblazeshotgun",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-specialammo/thea-loadblazeshotgun.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-loadslugshotgun",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-specialammo/thea-loadslugshotgun.weaponability"
+  },
   //Sniper
   {
 	"op": "add",
 	"path": "/thea-loadexplosivesniper",
 	"value": "/items/active/weapons/ranged/abilities/attachments/thea-specialammo/thea-loadexplosivesniper.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-loadimpactsniper",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-specialammo/thea-loadimpactsniper.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-bayonet",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-bayonet/thea-bayonet.weaponability"
+  },
+  //Grenade Launcher
+  {
+	"op": "add",
+	"path": "/thea-loadstickygrenade",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-specialammo/thea-loadstickygrenade.weaponability"
+  },
+  //Rocket Launcher
+  {
+	"op": "add",
+	"path": "/thea-loadsmartmissile",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-specialammo/thea-loadsmartmissile.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-loadnapalmrocket",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-specialammo/thea-loadnapalmrocket.weaponability"
   }
 ]

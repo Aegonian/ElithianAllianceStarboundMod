@@ -1,0 +1,81 @@
+{
+  "animationCustom" : {
+    "sounds" : {
+      "loadAmmo" : [ "/sfx/gun/reload/ar_reload_clip2.ogg" ]
+    },
+    "particleEmitters" : {
+      "ammoIndicator" : {
+        "active" : false,
+        "emissionRate" : 8,
+        "transformationGroups" : ["muzzle"],
+        "offsetRegion" : [0, 0, 0, 0],
+        "particles" : [
+          { "particle" : "thea-genericwhite"},
+          { "particle" : "thea-genericwhite"},
+          { "particle" : "thea-genericwhite"}
+        ]
+      }
+    }
+  },
+  
+  "ability" : {
+    "name" : "Load Impact Ammo",
+    "type" : "thea-loadimpactsniper",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-loadspecialammo/thea-loadspecialammo.lua"],
+    "class" : "TheaLoadSpecialAmmo",
+
+	"adaptedAbilityIndex" : 1, //Which ability to adapt (1 = primary, 2 = secondary)
+	
+	//Which stats to adapt when loading the special ammo
+	"adaptedStats" : {
+	  "projectileType" : true,
+	  "projectileCount" : false,
+	  "baseDps" : true,
+	  "fireType" : false,
+	  "burstTime" : false,
+	  "burstCount" : false,
+	  "fireTime" : false,
+	  "energyUsage" : true,
+	  "inaccuracy" : false
+	},
+	
+	//The new stats which will overwrite the primary ability
+	"specialAbility" : {
+	  "projectileType" : "allianceimpactbullet",
+	  
+	  "projectileCount" : 1,
+	  
+	  "fireType" : "auto",
+	  "burstTime" : 0.1,
+	  "burstCount" : 3,
+	
+      "baseDps" : 1.0,
+      "fireTime" : 1.0,
+      "energyUsage" : 50,
+      "inaccuracy" : 0.0
+	},
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+  
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "load" : {
+        "aimAngle" : 0,
+        "armRotation" : -40,
+        "weaponRotation" : 60,
+        "weaponAngularVelocity" : -150,
+        "armAngularVelocity" : 100,
+        "twoHanded" : true,
+        "duration" : 0.4,
+  
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  }
+}

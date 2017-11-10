@@ -1,0 +1,20 @@
+{
+  "itemName" : "thea-stickyammomod-grenade",
+  "price" : 500,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "tooltipKind" : "thea-attachment",
+  "category" : "Ammo Mod",
+  "inventoryIcon" : "thea-stickyammomod-grenade.png",
+  "largeImage" : "thea-stickyammomod-grenadelarge.png",
+  "builder" : "/items/buildscripts/thea-buildattachment.lua",
+  
+  "manufacturer" : "^gray;AAE^reset;",
+  "description" : "Grenade launcher ammunition that sticks to surfaces, exploding on proximity.",
+  "shortdescription" : "Sticky Ammo",
+  
+  "itemTags" : [ "thea_attachment" ],
+  
+  "theaAttachmentType" : "aae_grenade1",
+  "theaAttachmentAbility" : "thea-loadstickygrenade"
+}

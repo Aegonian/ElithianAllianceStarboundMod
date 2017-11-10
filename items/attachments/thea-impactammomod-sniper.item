@@ -1,0 +1,20 @@
+{
+  "itemName" : "thea-impactammomod-sniper",
+  "price" : 500,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "tooltipKind" : "thea-attachment",
+  "category" : "Ammo Mod",
+  "inventoryIcon" : "thea-impactammomod-sniper.png",
+  "largeImage" : "thea-impactammomod-sniperlarge.png",
+  "builder" : "/items/buildscripts/thea-buildattachment.lua",
+  
+  "manufacturer" : "^gray;AAE^reset;",
+  "description" : "Sniper ammunition that causes significant knockback to targets.",
+  "shortdescription" : "Impact Ammo",
+  
+  "itemTags" : [ "thea_attachment" ],
+  
+  "theaAttachmentType" : "aae_sniper1",
+  "theaAttachmentAbility" : "thea-loadimpactsniper"
+}

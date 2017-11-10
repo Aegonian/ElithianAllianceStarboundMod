@@ -9,20 +9,34 @@ function init()
   else
 	self.searchEnabled = true
   end
+  
+  if not config.getParameter("waitUntilSticky") then
+	self.proximityEnabled = true
+  else
+	self.proximityEnabled = false
+  end
 end
 
 function update(dt)
+  if not self.proximityEnabled then
+	if projectile.collision() or mcontroller.isCollisionStuck() or mcontroller.isColliding() then
+	  self.proximityEnabled = true
+	end
+  end
+  
   if self.searchEnabled == true then
-	local targets = world.entityQuery(mcontroller.position(), self.searchDistance, {
-      withoutEntityId = projectile.sourceEntity(),
-      includedTypes = {"creature"},
-      order = "nearest"
-    })
+	if self.proximityEnabled == true then
+	  local targets = world.entityQuery(mcontroller.position(), self.searchDistance, {
+		withoutEntityId = projectile.sourceEntity(),
+		includedTypes = {"creature"},
+		order = "nearest"
+	  })
 
-	for _, target in ipairs(targets) do
-	  if entity.entityInSight(target) and world.entityCanDamage(projectile.sourceEntity(), target) then
-		projectile.die()
-		return
+	  for _, target in ipairs(targets) do
+		if entity.entityInSight(target) and world.entityCanDamage(projectile.sourceEntity(), target) then
+		  projectile.die()
+		  return
+		end
 	  end
 	end
   else

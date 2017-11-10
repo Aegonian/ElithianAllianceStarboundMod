@@ -32,7 +32,10 @@
 	"adaptedStats" : {
 	  "projectileType" : true,
 	  "projectileCount" : true,
+	  "baseDps" : true,
 	  "fireType" : true,
+	  "burstTime" : true,
+	  "burstCount" : true,
 	  "fireTime" : true,
 	  "energyUsage" : true,
 	  "inaccuracy" : true
@@ -43,8 +46,12 @@
 	  "projectileType" : "allianceclusterrocket",
 	  
 	  "projectileCount" : 1,
+	  
 	  "fireType" : "auto",
+	  "burstTime" : 0.1,
+	  "burstCount" : 3,
 	
+      "baseDps" : 10.0,	
       "fireTime" : 0.25,
       "energyUsage" : 50,
       "inaccuracy" : 0.0

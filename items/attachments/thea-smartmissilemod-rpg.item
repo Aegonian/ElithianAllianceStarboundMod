@@ -1,0 +1,20 @@
+{
+  "itemName" : "thea-smartmissilemod-rpg",
+  "price" : 500,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "tooltipKind" : "thea-attachment",
+  "category" : "Ammo Mod",
+  "inventoryIcon" : "thea-smartmissilemod-rpg.png",
+  "largeImage" : "thea-smartmissilemod-rpglarge.png",
+  "builder" : "/items/buildscripts/thea-buildattachment.lua",
+  
+  "manufacturer" : "^gray;AAE^reset;",
+  "description" : "Rocket launcher ammunition that tracks targets autonomously.",
+  "shortdescription" : "Smart Missile",
+  
+  "itemTags" : [ "thea_attachment" ],
+  
+  "theaAttachmentType" : "aae_rpg1",
+  "theaAttachmentAbility" : "thea-loadsmartmissile"
+}

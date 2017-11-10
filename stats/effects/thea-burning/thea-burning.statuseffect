@@ -1,0 +1,16 @@
+{
+  "name" : "thea-burning",
+  "blockingStat" : "fireStatusImmunity",
+
+  "effectConfig" : {},
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "thea-burning.lua"
+  ],
+
+  "animationConfig" : "thea-burning.animation",
+
+  "label" : "Burning",
+  "icon" : "/interface/statuses/fire.png"
+}

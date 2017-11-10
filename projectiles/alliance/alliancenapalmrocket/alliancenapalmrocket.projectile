@@ -1,0 +1,93 @@
+{
+  "projectileName" : "alliancenapalmrocket",
+  "image" : "alliancenapalmrocket.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 4,
+  "lightColor" : [255, 255, 128],
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/avikanfireexplosion/avikanfireexplosion.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.015,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.015,
+      "angleAdjust" : 36
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.015,
+      "angleAdjust" : 72
+    },
+    {
+      "action" : "projectile",
+      "type" : "avikanflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.015,
+      "angleAdjust" : 108
+    },
+    {
+      "action" : "projectile",
+      "type" : "avikanflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.015,
+      "angleAdjust" : 144
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.015,
+      "angleAdjust" : 180
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.015,
+      "angleAdjust" : 216
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.015,
+      "angleAdjust" : 252
+    },
+    {
+      "action" : "projectile",
+      "type" : "avikanflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.015,
+      "angleAdjust" : 288
+    },
+    {
+      "action" : "projectile",
+      "type" : "avikanflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.015,
+      "angleAdjust" : 324
+    }
+  ],
+  "statusEffects" : [ ],
+  "emitters" : [ "rocketsmoke" ],
+  "flippable" : true,
+  "power" : 10.0,
+  "speed" : 1.0,
+  "acceleration" : 150,
+  "physics" : "rocket",
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

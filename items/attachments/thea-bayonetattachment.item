@@ -1,0 +1,20 @@
+{
+  "itemName" : "thea-bayonetattachment",
+  "price" : 500,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "tooltipKind" : "thea-attachment",
+  "category" : "Weapon Attachment",
+  "inventoryIcon" : "thea-bayonetattachment.png",
+  "largeImage" : "thea-bayonetattachmentlarge.png",
+  "builder" : "/items/buildscripts/thea-buildattachment.lua",
+  
+  "manufacturer" : "^gray;AAE^reset;",
+  "description" : "A bayonet that can be mounted underneath some rifles.",
+  "shortdescription" : "Bayonet",
+  
+  "itemTags" : [ "thea_attachment" ],
+  
+  "theaAttachmentType" : "aae_sniper1",
+  "theaAttachmentAbility" : "thea-bayonet"
+}

@@ -1,0 +1,32 @@
+{
+  "projectileName" : "allianceblazeprojectile",
+  "physics" : "flame",
+  "bounces" : -1,
+  "piercing" : true,
+  "timeToLive" : 0.75,
+  "image" : "allianceblazeprojectile.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 40,
+  "supportsProcessing" : true,
+  "actionOnReap" : [],
+  "periodicActions" : [
+	{
+      "time" : 0.075,
+	  "action" : "projectile",
+	  "inheritDamageFactor" : 1.5,
+	  "type" : "allianceflamethrower"
+    }
+  ],
+  //"damageType" : "NoDamage",
+  "damageKind" : "flamethrower",
+  "statusEffects" : [
+    "thea-burning"
+  ],
+  "hydrophobic" : true,
+  
+  "scripts" : [ "/projectiles/scripts/thea-randomspeedprojectile.lua" ],
+  "minSpeed" : 25,
+  "maxSpeed" : 40
+}

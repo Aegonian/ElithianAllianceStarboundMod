@@ -8,10 +8,13 @@
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Bahamur L-2",
   "level" : 6,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-mf-attachment",
   "category" : "Rocket Launcher",
-  "itemTags" : ["weapon","ranged","rocketlauncher","alliance","aae"],
+  "itemTags" : ["weapon","ranged","rocketlauncher","alliance","aae","allianceUpgradeable"],
   "twoHanded" : true,
+  
+  //Custom field for recognizing compatible attachment types
+  "theaAttachmentType" : "aae_rpg1",
   
   "cursor" : "/cursors/thea-squarereticle.cursor",
   
@@ -103,10 +106,5 @@
     }
   },
 
-  "altAbilityType" : "thea-rocketburst",
-  "altAbility" : {
-	"projectileType" : "allianceclusterrocket2"
-  },
-
-  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf-attachment.lua"
 }

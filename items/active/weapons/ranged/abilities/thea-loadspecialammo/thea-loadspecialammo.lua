@@ -54,7 +54,10 @@ function TheaLoadSpecialAmmo:backupAbility()
   backup.projectileType = ability.projectileType
   --backup.projectileParameters = ability.projectileParameters //Disabled because parameters would transfer into the primary ability, even after resetting. Use custom projectiles instead!
   backup.projectileCount = ability.projectileCount
+  backup.baseDps = ability.baseDps
   backup.fireType = ability.fireType
+  backup.burstTime = ability.burstTime
+  backup.burstCount = ability.burstCount
   backup.fireTime = ability.fireTime
   backup.energyUsage = ability.energyUsage
   backup.inaccuracy = ability.inaccuracy
@@ -76,11 +79,22 @@ function TheaLoadSpecialAmmo:adaptAbility()
   if self.adaptedStats.projectileCount then
 	newAbility.projectileCount = self.specialAbility.projectileCount
   end
+  if self.adaptedStats.baseDps then
+	newAbility.baseDps = self.specialAbility.baseDps
+  end
   if self.adaptedStats.fireType then
 	newAbility.fireType = self.specialAbility.fireType
   end
+  if self.adaptedStats.burstTime then
+	newAbility.burstTime = self.specialAbility.burstTime
+  end
+  if self.adaptedStats.burstCount then
+	newAbility.burstCount = self.specialAbility.burstCount
+  end
   if self.adaptedStats.fireTime then
 	newAbility.fireTime = self.specialAbility.fireTime
+  elseif self.adaptedStats.fireTimeMin then --Instead of setting a hard fire time, this offers the option to set a minimum fire time. Useful for 'spammy' ammo types which create lots of explosions or particles
+	newAbility.fireTime = math.max(self.specialAbility.fireTimeMin, ability.fireTime)
   end
   if self.adaptedStats.energyUsage then
 	newAbility.energyUsage = self.specialAbility.energyUsage

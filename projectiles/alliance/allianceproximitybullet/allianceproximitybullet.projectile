@@ -21,5 +21,5 @@
   "damageKind" : "default",
   
   "scripts" : [ "/projectiles/scripts/thea-proximityexplode.lua" ],
-  "searchRadius" : 3
+  "searchRadius" : 2.5
 }

@@ -1,0 +1,29 @@
+{
+  "projectileName" : "alliancesmartrocket2",
+  "image" : "alliancesmartrocket2.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 4,
+  "lightColor" : [255, 255, 128],
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/avikanrocketexplosion/avikanrocketexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "emitters" : [ "rocketsmoke" ],
+  "flippable" : true,
+  "power" : 10.0,
+  "speed" : 40.0,
+  "physics" : "rocket",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "timeToLive" : 3.0,
+  
+  "scripts" : [ "/projectiles/scripts/thea-homingbullet.lua" ],
+  "searchRadius" : 40,
+  "baseHomingControlForce" : 2.0,
+  "homingStartDelay" : 0.125,
+  "constantSpeed" : true
+}

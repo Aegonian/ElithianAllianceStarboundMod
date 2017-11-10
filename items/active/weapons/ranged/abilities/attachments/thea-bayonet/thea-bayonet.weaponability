@@ -1,0 +1,107 @@
+{
+  "animationCustom" : {
+    "animatedParts" : {
+	  "stateTypes" : {
+		"altSwoosh" : {
+		  "default" : "idle",
+		  "states" : {
+			"idle" : {
+			},
+			"fire" : {
+			  "frames" : 3,
+			  "cycle" : 0.08,
+			  "mode" : "transition",
+			  "transition" : "idle"
+			}
+		  }
+		}
+	  },
+	  "parts" : {
+		"bayonet" : {
+		  "properties" : {
+			"zLevel" : -2,
+			"centered" : true,
+			"offset" : [-0.125, -0.5],
+			"transformationGroups" : ["muzzle"],
+			"image" : "/items/active/weapons/ranged/abilities/attachments/thea-bayonet/thea-bayonet.png"
+		  }
+		},
+		"altSwoosh" : {
+		  "properties" : {
+			"zLevel" : -3,
+			"centered" : true,
+			"offset" : [0.25, -0.5],
+			"transformationGroups" : ["muzzle"]
+		  },
+		  "partStates" : {
+			"altSwoosh" : {
+			  "idle" : {
+				"properties" : {
+				  "image" : ""
+				}
+			  },
+			  "fire" : {
+				"properties" : {
+				  "image" : "/items/active/weapons/ranged/abilities/attachments/thea-bayonet/thea-bayonetswoosh.png:<frame>",
+				  "damageArea" : [[-3.5, 0], [-1, 1], [1, 1], [4, 0], [1, -1], [-1, -1]]
+				}
+			  }
+			}
+		  }
+		}
+	  }
+	},
+    "sounds" : {
+      "altFire" : [ "/sfx/melee/swing_spear.ogg" ]
+    },
+    "particleEmitters" : {
+      "altSwoosh" : {
+        "active" : false,
+        "emissionRate" : 5,
+        "transformationGroups" : ["muzzle"],
+        "offsetRegion" : [0.0, 0.0, 0.0, 0.0],
+        "particles" : []
+      }
+    }
+  },
+
+  "ability" : {
+    "name" : "Bayonet",
+    "type" : "thea-bayonet",
+    "scripts" : ["/items/active/weapons/melee/abilities/thea-altmeleeslash.lua"],
+    "class" : "TheaAltMeleeSlash",
+
+    "fireTime" : 1.0,
+    "baseDps" : 9.5,
+    "damageConfig" : {
+      "damageSourceKind" : "spear",
+      "statusEffects" : [ ],
+      "knockbackMode" : "aim",
+      "knockback" : 30,
+      "timeoutGroup" : "primary"
+    },
+
+    "stances" : {
+      "windup" : {
+        "duration" : 0.3,
+        "armRotation" : -130,
+        "weaponRotation" : 120,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 0],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire" : {
+        "duration" : 0.4,
+        "armRotation" : -10,
+        "weaponRotation" : 20,
+        "twoHanded" : true,
+        "weaponOffset" : [0.25, 0],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  }
+}

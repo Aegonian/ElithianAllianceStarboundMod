@@ -1,12 +1,12 @@
 {
-  "itemName" : "thea-ricochetammomod",
+  "itemName" : "thea-ricochetammomod-shotgun",
   "price" : 500,
   "maxStack" : 1,
   "rarity" : "Legendary",
   "tooltipKind" : "thea-attachment",
   "category" : "Ammo Mod",
-  "inventoryIcon" : "thea-ricochetammomod.png",
-  "largeImage" : "thea-ricochetammomodlarge.png",
+  "inventoryIcon" : "thea-ricochetammomod-shotgun.png",
+  "largeImage" : "thea-ricochetammomod-shotgunlarge.png",
   "builder" : "/items/buildscripts/thea-buildattachment.lua",
   
   "manufacturer" : "^gray;AAE^reset;",

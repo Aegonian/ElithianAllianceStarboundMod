@@ -2,7 +2,7 @@
   "projectileName" : "alliancestickygrenade",
   "physics" : "stickygrenade",
   "bounces" : -1,
-  "timeToLive" : 5,
+  "timeToLive" : 10,
   "image" : "alliancestickygrenade.png",
   "animationCycle" : 0.5,
   "frameNumber" : 1,
@@ -16,5 +16,9 @@
   ],
   "power" : 50,
   "damageType" : "NoDamage",
-  "damageKind" : "default"
+  "damageKind" : "default",
+  
+  "scripts" : [ "/projectiles/scripts/thea-proximityexplode.lua" ],
+  "searchRadius" : 2.5,
+  "waitUntilSticky" : true
 }

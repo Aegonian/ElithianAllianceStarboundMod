@@ -1,0 +1,42 @@
+{
+  "projectileName" : "allianceclusterrocket-smart",
+  "image" : "allianceclusterrocket.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 4,
+  "damageKindImage" : "icon.png",
+  "lightColor" : [64, 100, 128],
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/avikansmallexplosion/avikansmallexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "emitters" : [ "tinyrocketsmoke" ],
+  "flippable" : true,
+  "layer" : "front",
+  "power" : 10.0,
+  "speed" : 10.0,
+  "physics" : "rocket",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+
+  "scripts" : [ "/projectiles/scripts/thea-seekingclusterrocket.lua" ],
+  
+  //Config for straightening out any inaccuracy after being fired
+  "controlForce" : 100,
+  
+  //Config for seeking targets
+  "homingStartDelay" : 0.35,
+  "searchRadius" : 35,
+  "baseHomingControlForce" : 1.0,
+  
+  //General config
+  "maxSpeed" : 50,
+  "constantSpeed" : false,
+  "randomTimeToLive" : true,
+  "timeToLiveMilliseconds" : true,
+  "minLifeTime" : 300,
+  "maxLifeTime" : 400
+}
