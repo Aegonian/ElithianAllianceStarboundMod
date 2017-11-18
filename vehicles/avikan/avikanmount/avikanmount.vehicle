@@ -9,7 +9,6 @@
 
   "animationCustom" : {},
 
-
   "loungePositions" : {
     "drivingSeat" : {
       "part" : "foreground",
@@ -92,5 +91,4 @@
     "gravityEnabled" : true,
     "collisionEnabled" : true
   }
-
 }

@@ -1,0 +1,16 @@
+{
+  "kind" : "allianceflashbang",
+  "definition" : {
+    "type" : "textured",
+    "image" : "/animations/allianceflash/allianceflash.png",
+    "fade" : 1.0,
+    "destructionAction" : "fade",
+    "destructionTime" : 0.5,
+    "initialVelocity" : [0, 0],
+    "finalVelocity" : [0, 0],
+    "approach" : [0, 0],
+    "timeToLive" : 0.15,
+    "size" : 50.0,
+    "layer" : "front"
+  }
+}

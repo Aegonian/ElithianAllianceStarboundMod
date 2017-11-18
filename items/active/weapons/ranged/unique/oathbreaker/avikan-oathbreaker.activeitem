@@ -27,10 +27,48 @@
   },
   "animationCustom" : {
     "animatedParts" : {
-      "parts" : {
+      "stateTypes" : {
+		"altSwoosh" : {
+		  "default" : "idle",
+		  "states" : {
+			"idle" : {
+			},
+			"fire" : {
+			  "frames" : 3,
+			  "cycle" : 0.08,
+			  "mode" : "transition",
+			  "transition" : "idle"
+			}
+		  }
+		}
+	  },
+	  "parts" : {
         "middleFullbright" : {
 		  "properties" : {
 		    "offset" : [0.875, 0.125]
+		  }
+		},
+		"altSwoosh" : {
+		  "properties" : {
+			"zLevel" : -3,
+			"centered" : true,
+			"offset" : [0.25, -0.5],
+			"transformationGroups" : ["muzzle"]
+		  },
+		  "partStates" : {
+			"altSwoosh" : {
+			  "idle" : {
+				"properties" : {
+				  "image" : ""
+				}
+			  },
+			  "fire" : {
+				"properties" : {
+				  "image" : "/items/active/weapons/ranged/abilities/attachments/thea-bayonet/thea-bayonetswoosh.png:<frame>",
+				  "damageArea" : [[-3.5, 0], [-1, 1], [1, 1], [4, 0], [1, -1], [-1, -1]]
+				}
+			  }
+			}
 		  }
 		}
       }
@@ -42,10 +80,18 @@
         "particles" : [
           { "particle" : "thea-discardedbullet" }
         ]
+      },
+	  "altSwoosh" : {
+        "active" : false,
+        "emissionRate" : 5,
+        "transformationGroups" : ["muzzle"],
+        "offsetRegion" : [0.0, 0.0, 0.0, 0.0],
+        "particles" : []
       }
     },
     "sounds" : {
-      "fire" : [ "/sfx/gun/oathbreaker_fire2.ogg" ]
+      "fire" : [ "/sfx/gun/oathbreaker_fire2.ogg" ],
+	  "altFire" : [ "/sfx/melee/swing_spear.ogg" ]
     }
   },
 
@@ -63,7 +109,7 @@
     "fireTime" : 0.9,
     "baseDps" : 12.5,
     "energyUsage" : 40.0,
-    "inaccuracy" : 0.06,
+    "inaccuracy" : 0.04,
 
     "projectileCount" : 1,
     "fireType" : "auto",
@@ -98,6 +144,45 @@
         "weaponRotation" : 14,
         "weaponOffset" : [-0.1, 0],
         "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+  
+  "altAbility" : {
+    "name" : "Gun Bash",
+    "scripts" : ["/items/active/weapons/melee/abilities/thea-altmeleeslash.lua"],
+    "class" : "TheaAltMeleeSlash",
+
+    "fireTime" : 1.0,
+    "baseDps" : 9.5,
+    "damageConfig" : {
+      "damageSourceKind" : "spear",
+      "statusEffects" : [ ],
+      "knockbackMode" : "aim",
+      "knockback" : 30,
+      "timeoutGroup" : "primary"
+    },
+
+    "stances" : {
+      "windup" : {
+        "duration" : 0.15,
+        "armRotation" : -130,
+        "weaponRotation" : 80,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 0],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire" : {
+        "duration" : 0.4,
+        "armRotation" : -10,
+        "weaponRotation" : 20,
+        "twoHanded" : true,
+        "weaponOffset" : [0.25, 0],
 
         "allowRotate" : false,
         "allowFlip" : false

@@ -1,0 +1,102 @@
+{
+  "projectileName" : "allianceclustergrenade",
+  "physics" : "grenade",
+  "bounces" : 0,
+  "timeToLive" : 0.65,
+  "image" : "allianceclustergrenade.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "emitters" : [ "rocketsmoke" ],
+  "speed" : 20,
+  "piercing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/avikanairstrikeexplosion/avikanairstrikeexplosionweak.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "allianceminiclustergrenade",
+      "fuzzAngle" : 75,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 0.75,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "allianceminiclustergrenade",
+      "fuzzAngle" : 75,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 0.75,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "allianceminiclustergrenade",
+      "fuzzAngle" : 75,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 0.75,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "allianceminiclustergrenade",
+      "fuzzAngle" : 75,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 0.75,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "allianceminiclustergrenade",
+      "fuzzAngle" : 75,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 0.75,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "allianceminiclustergrenade",
+      "fuzzAngle" : 95,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 0.5,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "allianceminiclustergrenade",
+      "fuzzAngle" : 95,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 0.5,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "allianceminiclustergrenade",
+      "fuzzAngle" : 95,
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 0.5,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "allianceminiclustergrenade",
+      "fuzzAngle" : 120,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "allianceminiclustergrenade",
+      "fuzzAngle" : 120,
+      "inheritDamageFactor" : 0.1,
+      "angleAdjust" : 0
+    }
+  ],
+  "power" : 50,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  
+  "scripts" : [ "/projectiles/scripts/thea-proximityexplode.lua" ],
+  "searchRadius" : 1.0
+}

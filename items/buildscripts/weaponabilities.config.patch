@@ -159,6 +159,16 @@
 	"path": "/thea-loadstickygrenade",
 	"value": "/items/active/weapons/ranged/abilities/attachments/thea-specialammo/thea-loadstickygrenade.weaponability"
   },
+  {
+	"op": "add",
+	"path": "/thea-loadclustergrenade",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-specialammo/thea-loadclustergrenade.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-loadstungrenade",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-specialammo/thea-loadstungrenade.weaponability"
+  },
   //Rocket Launcher
   {
 	"op": "add",

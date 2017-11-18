@@ -1,0 +1,11 @@
+{
+  "particleEmitters" : {
+    "stars" : {
+      "enabled" : true,
+      "emissionRate" : 5.0,
+      "particles" : [
+        { "particle" : "thea-stunned" }
+      ]
+    }
+  }
+}

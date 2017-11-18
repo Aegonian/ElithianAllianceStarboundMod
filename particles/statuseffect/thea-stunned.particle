@@ -1,0 +1,19 @@
+{
+  "kind" : "thea-stunned",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/thea-stunned/thea-stunned.animation",
+    "position" : [0, 0],
+    "initialVelocity" : [0, 0],
+    "finalVelocity" : [0, 0],
+    "approach" : [0, 50],
+    "fade" : 0.5,
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.1,
+    "size" : 1.0,
+    "timeToLive" : 0.85,
+    "variance" : {
+      "initialVelocity" : [2, 0]
+    }
+  }
+}

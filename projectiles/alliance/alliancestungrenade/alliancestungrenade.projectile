@@ -1,0 +1,20 @@
+{
+  "projectileName" : "alliancestungrenade",
+  "physics" : "grenade",
+  "bounces" : 0,
+  "timeToLive" : 5,
+  "image" : "alliancestungrenade.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "emitters" : [ "rocketsmoke" ],
+  "speed" : 20,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/allianceflashbangexplosion/allianceflashbangexplosion.config"
+    }
+  ],
+  "power" : 50,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}
