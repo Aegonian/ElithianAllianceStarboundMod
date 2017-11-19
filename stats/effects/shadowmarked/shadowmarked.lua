@@ -9,9 +9,20 @@ function init()
   animator.setParticleEmitterActive("flames", true)
   --effect.setParentDirectives("fade=60B8EA=0.25")
   effect.setParentDirectives("border=3;B2D6EA80;00000000")
+  
+  self.shadowHasSpawned = false
 end
 
 function update(dt)
+  --Check if there are already Xanafian Shadows at our position. If so, prevent another one from spawning. (This it to prevent double spawns from the shadowmarked-healing effect)
+  local monsters = world.monsterQuery(mcontroller.position(), 0.25)
+  for _, monster in ipairs(monsters) do
+	--sb.logInfo(world.entityTypeName(monster))
+	if world.entityTypeName(monster) == "xanafianshadow-friendly" then
+	  self.shadowHasSpawned = true
+	end
+  end
+  
   if not status.resourcePositive("health") and status.resourceMax("health") >= config.getParameter("minMaxHealth", 0) then
     spawnShadow()
   end

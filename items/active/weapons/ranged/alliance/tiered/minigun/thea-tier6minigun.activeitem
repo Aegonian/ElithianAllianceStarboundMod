@@ -13,6 +13,9 @@
   "itemTags" : ["weapon","ranged","minigun","alliance","aae","allianceUpgradeable"],
   "twoHanded" : true,
   
+  //Custom field for recognizing compatible attachment types
+  "theaAttachmentType" : "aae_minigun1",
+  
   "cursor" : "/cursors/thea-largereticle.cursor",
 
   "animation" : "thea-tier6minigun.animation",

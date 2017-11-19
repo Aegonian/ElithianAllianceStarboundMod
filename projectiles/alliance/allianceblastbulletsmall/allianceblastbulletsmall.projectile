@@ -1,0 +1,22 @@
+{
+  "projectileName" : "allianceblastbulletsmall",
+  "physics" : "laser",
+  "bounces" : 0,
+  "image" : "allianceblastbulletsmall.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 180,
+  "supportsProcessing" : true,
+  //"emitters" : [ "trinklasertrail" ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/avikansmallexplosion/avikansmallexplosion.config"
+    }
+  ],
+  "lightColor" : [35, 35, 35],
+  "fullbright" : false,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

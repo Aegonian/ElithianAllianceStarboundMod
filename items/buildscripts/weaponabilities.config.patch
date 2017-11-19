@@ -116,6 +116,11 @@
 	"path": "/thea-greenlasersight",
 	"value": "/items/active/weapons/ranged/abilities/attachments/thea-greenlasersight/thea-greenlasersight.weaponability"
   },
+  {
+	"op": "add",
+	"path": "/thea-silencer-assault",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-silencer/thea-silencer-assault.weaponability"
+  },
   //Shotgun
   {
 	"op": "add",
@@ -179,5 +184,11 @@
 	"op": "add",
 	"path": "/thea-loadnapalmrocket",
 	"value": "/items/active/weapons/ranged/abilities/attachments/thea-specialammo/thea-loadnapalmrocket.weaponability"
+  },
+  //Rocket Launcher
+  {
+	"op": "add",
+	"path": "/thea-loadexplosiveminigun",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-specialammo/thea-loadexplosiveminigun.weaponability"
   }
 ]

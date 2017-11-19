@@ -1,7 +1,7 @@
 {
   "name" : "thea-instantheal-minor",
   "effectConfig" : {
-    "healAmount" : 1,
+    "healAmount" : 2,
     "emissionRate" : 10
   },
   "defaultDuration" : 0.1,

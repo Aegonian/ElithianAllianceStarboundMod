@@ -1,0 +1,20 @@
+{
+  "itemName" : "thea-silencerattachment-assault",
+  "price" : 500,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "tooltipKind" : "thea-attachment",
+  "category" : "Weapon Attachment",
+  "inventoryIcon" : "thea-silencerattachment-assault.png",
+  "largeImage" : "thea-silencerattachment-assaultlarge.png",
+  "builder" : "/items/buildscripts/thea-buildattachment.lua",
+  
+  "manufacturer" : "^gray;AAE^reset;",
+  "description" : "Silences shots and allows projectiles to pierce targets.",
+  "shortdescription" : "Silencer",
+  
+  "itemTags" : [ "thea_attachment" ],
+  
+  "theaAttachmentType" : "aae_assault1",
+  "theaAttachmentAbility" : "thea-silencer-assault"
+}

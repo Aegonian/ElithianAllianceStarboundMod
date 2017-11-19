@@ -11,12 +11,16 @@ function init()
   effect.setParentDirectives("border=3;B2D6EA80;00000000")
   
   self.projectileSpawned = false
+  self.shadowHasSpawned = false
+  self.isExpiring = false
 end
 
 function update(dt)
-  if not status.resourcePositive("health") and status.resourceMax("health") >= config.getParameter("minMaxHealth", 0) then
+  if not status.resourcePositive("health") and status.resourceMax("health") >= config.getParameter("minMaxHealth", 0) and not self.isExpiring then
     spawnShadow()
   end
+  
+  status.removeEphemeralEffect("shadowmarked")
   
   --If true, spawn a projectile which will seek out the status effect inflicter and heal them
   if not self.projectileSpawned then
@@ -49,7 +53,7 @@ function uninit()
 end
 
 function spawnShadow()
-  if not self.shadowHasSpawned then
+  if not self.shadowHasSpawned and not self.isExpiring then
 	--Determine target level for spawned monster
 	local spawnLevel = math.min(world.threatLevel(), 4)
 	--Spawn the monster
@@ -64,6 +68,7 @@ function spawnShadow()
 end
 
 function onExpire()
+  self.isExpiring = true
   if not self.shadowHasSpawned then
 	status.addEphemeralEffect("shadowmarked", config.getParameter(5), effect.sourceEntity())
   end

@@ -1,0 +1,34 @@
+{
+  "animationCustom" : {
+    "animatedParts" : {
+	  "parts" : {
+		"silencer" : {
+		  "properties" : {
+			"zLevel" : -1,
+			"image" : "/items/active/weapons/ranged/abilities/attachments/thea-silencer/thea-silencer-assault.png",
+			"centered" : true,
+			"offset" : [0.375, -0.05],
+			"transformationGroups" : ["muzzle"]
+		  }
+		}
+	  }
+	}
+  },
+
+  "ability" : {
+    "name" : "Silencer",
+    "type" : "thea-silencer-assault",
+    "scripts" : ["/items/active/weapons/ranged/abilities/attachments/thea-silencer/thea-silencer.lua"],
+    "class" : "TheaSilencer",
+
+	"adaptedAbilityIndex" : 1, //Which ability to adapt (1 = primary, 2 = secondary)
+	
+	"fireSound" : [ "/sfx/gun/thea_plasmagun_silenced.ogg" ],
+	
+	"specialAbility" : {
+	  "projectileParameters" : {
+		"piercing" : true
+	  }
+	}
+  }
+}
