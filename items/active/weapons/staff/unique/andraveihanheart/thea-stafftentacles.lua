@@ -9,6 +9,9 @@ function TheaStaffTentacles:init()
   self.baseDamageFactor = config.getParameter("baseDamageFactor", 1.0)
   self.stances = config.getParameter("stances")
 
+  self.targetOffset = self.targetOffset or {0, 0}
+  self.targetOffsetRotationRate = self.targetOffsetRotationRate or 0
+  
   activeItem.setCursor("/cursors/reticle0.cursor")
   self.weapon:setStance(self.stances.idle)
 
@@ -91,10 +94,6 @@ function TheaStaffTentacles:discharge()
     return
   end
 
-  --util.wait(self.stances.discharge.duration, function(dt)
-    --status.setResourcePercentage("energyRegenBlock", 1.0)
-  --end)
-
   while #self.chains > 0 do
     if self.fireMode == (self.activatingFireMode or self.abilitySlot) and self.lastFireMode ~= self.fireMode then
       self:killProjectiles()
@@ -104,6 +103,10 @@ function TheaStaffTentacles:discharge()
 	self:updateTentacles()
 
     status.setResourcePercentage("energyRegenBlock", 1.0)
+	
+	if self.walkWhileFiring then
+	  mcontroller.controlModifiers({runningSuppressed=true})
+	end
     coroutine.yield()
   end
 
@@ -139,7 +142,7 @@ function TheaStaffTentacles:createProjectiles()
         self.projectileType,
         self:focusPosition(),
         activeItem.ownerEntityId(),
-        self:aimVector(self.inaccuracy),
+        self:aimVector(),
         self.projectileTracksUser or false,
         projectileParameters
       )
@@ -163,9 +166,17 @@ function TheaStaffTentacles:focusPosition()
   return vec2.add(mcontroller.position(), activeItem.handPosition(animator.partPoint("stone", "focalPoint")))
 end
 
-function TheaStaffTentacles:aimVector(inaccuracy)
-  local aimVector = vec2.rotate({1, 0}, (self.fireAngle or self.weapon.aimAngle) + sb.nrand(inaccuracy, 0))
-  aimVector[1] = aimVector[1] * mcontroller.facingDirection()
+function TheaStaffTentacles:aimVector()
+  local aimVector = {}
+  
+  if self.allowIndependantAim then
+	local aimAngle, aimDirection = activeItem.aimAngleAndDirection(self.weapon.aimOffset, activeItem.ownerAimPosition())
+	aimVector = vec2.rotate({1, 0}, aimAngle + sb.nrand(self.inaccuracy or 0, 0))
+  else
+	aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle + sb.nrand(self.inaccuracy or 0, 0))
+  end
+  
+  aimVector[1] = aimVector[1] * self.weapon.aimDirection
   return aimVector
 end
 
@@ -179,10 +190,31 @@ function TheaStaffTentacles:addProjectile(projectileId)
 
   newChain.startOffset = vec2.add(newChain.startOffset or {0,0}, self.weapon.muzzleOffset)
 
-  local min = newChain.arcRadiusRatio[1]
-  local max = newChain.arcRadiusRatio[2]
-  newChain.arcRadiusRatio = (math.random() * (max - min) + min) * (math.random(2) * 2 - 3)
-
+  --Optional randomimzed arcRadius
+  if newChain.arcRadiusRatio then
+	local min = newChain.arcRadiusRatio[1]
+	local max = newChain.arcRadiusRatio[2]
+	newChain.arcRadiusRatio = (math.random() * (max - min) + min) * (math.random(2) * 2 - 3)
+  end
+  
+  --Optional randomized waveforms
+  if newChain.waveformRanges then
+	newChain.waveform = {}
+	
+	--Multiplying values for increased variance
+	local movementMin = newChain.waveformRanges.movement[1] * 100
+	local movementMax = newChain.waveformRanges.movement[2] * 100
+	local frequencyMin = newChain.waveformRanges.frequency[1] * 100
+	local frequencyMax = newChain.waveformRanges.frequency[2] * 100
+	local amplitudeMin = newChain.waveformRanges.amplitude[1] * 100
+	local amplitudeMax = newChain.waveformRanges.amplitude[2] * 100
+	
+	--Setting the values
+	newChain.waveform.movement = math.random(movementMin, movementMax) / 100
+	newChain.waveform.frequency = math.random(frequencyMin, frequencyMax) / 100
+	newChain.waveform.amplitude = math.random(amplitudeMin, amplitudeMax) / 100
+  end
+  
   table.insert(self.chains, newChain)
 end
 
@@ -191,10 +223,18 @@ function TheaStaffTentacles:updateTentacles()
       return chain.targetEntityId and world.entityExists(chain.targetEntityId)
     end)
 
+  local chainIndex = 0
+  
+  self.targetOffset = vec2.rotate(self.targetOffset, self.targetOffsetRotationRate * self.dt)
+  
   for _,chain in pairs(self.chains) do
     local endPosition = world.entityPosition(chain.targetEntityId)
     local length = world.magnitude(endPosition, mcontroller.position())
-    chain.arcRadius = chain.arcRadiusRatio * length
+	
+	--Setting optionally randomized values
+	if chain.arcRadiusRatio then
+	  chain.arcRadius = chain.arcRadiusRatio * length
+	end
 
     if self.guideProjectiles then
       local target = activeItem.ownerAimPosition()
@@ -202,6 +242,21 @@ function TheaStaffTentacles:updateTentacles()
       if self.maxLength and vec2.mag(distance) > self.maxLength then
         target = vec2.add(vec2.mul(vec2.norm(distance), self.maxLength), mcontroller.position())
       end
+	  
+	  chainIndex = chainIndex + 1
+	  
+	  --Rotate the target offset
+	  local rotationalOffset = 360 / (#self.chains + 1) * chainIndex
+	  local localOffset = self.targetOffset
+	  localOffset = vec2.rotate(localOffset, rotationalOffset)
+	  
+	  --world.debugText(rotationalOffset, vec2.add(mcontroller.position(), {0, chainIndex*3}), "yellow")
+	  --world.debugText(localOffset[1], vec2.add(mcontroller.position(), {3, chainIndex*3}), "blue")
+	  --world.debugText(localOffset[2], vec2.add(mcontroller.position(), {3, chainIndex*3+1}), "green")
+	  
+	  target = vec2.add(target, localOffset)
+	  world.debugPoint(target, "red")
+	  
       world.callScriptedEntity(chain.targetEntityId, "setTargetPosition", target)
     end
   end

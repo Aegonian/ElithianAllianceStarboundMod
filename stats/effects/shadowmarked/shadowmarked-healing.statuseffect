@@ -1,0 +1,19 @@
+{
+  "name" : "shadowmarked-healing",
+  "blockingStat" : "xanafianStatusImmunity",
+  "effectConfig" : {
+    "minMaxHealth" : 5,
+    "projectileType" : "thea-shadowhealer",
+    "projectileCount" : 3
+  },
+  "defaultDuration" : 0.1,
+
+  "scripts" : [
+    "shadowmarked-healing.lua"
+  ],
+
+  "animationConfig" : "shadowmarked.animation",
+
+  "label" : "Shadow Marked",
+  "icon" : "/interface/statuses/shadowmarked.png"
+}

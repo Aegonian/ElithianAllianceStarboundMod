@@ -1,0 +1,14 @@
+{
+  "name" : "thea-instantheal-minor",
+  "effectConfig" : {
+    "healAmount" : 1,
+    "emissionRate" : 10
+  },
+  "defaultDuration" : 0.1,
+
+  "scripts" : [
+    "thea-instantheal.lua"
+  ],
+
+  "animationConfig" : "thea-instantheal.animation"
+}

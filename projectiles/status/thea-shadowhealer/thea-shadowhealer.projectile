@@ -1,0 +1,40 @@
+{
+  "projectileName" : "thea-shadowhealer",
+  "physics" : "illusion",
+  "bounces" : 0,
+  "image" : "thea-shadowhealer.png",
+  "fullbright" : true,
+  "lightColor" : [30, 60, 75],
+  "animationCycle" : 0.4,
+  "frameNumber" : 4,
+  "emitters" : [ "xanafiantrail" ],
+  "power" : 0,
+  "speed" : 15,
+  "actionOnReap" : [
+	{
+      "action" : "projectile",
+      "type" : "thea-shadowhealerexplosion"
+    }
+  ],
+  "onlyHitTerrain" : true,
+
+  "orientationLocked" : true,
+  "renderLayer" : "ForegroundEntity",
+
+  "timeToLive" : 10,
+
+  "scripts" : ["thea-shadowhealer.lua"],
+  "scriptDelta" : 1,
+
+  "homingStartDelay" : 0.125,
+  "homingSpeed" : 50,
+  "homingForce" : 75,
+  
+  "pickupRange" : 0.75,
+  "snapRange" : 2,
+  "snapSpeed" : 150,
+  "snapForce" : 250,
+
+  "restoreBase" : 40,
+  "restorePercentage" : 0
+}

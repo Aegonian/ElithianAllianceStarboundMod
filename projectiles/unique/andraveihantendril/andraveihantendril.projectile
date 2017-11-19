@@ -1,0 +1,62 @@
+{
+  "projectileName" : "andraveihantendril",
+  "image" : "andraveihantendril.png",
+  "animationCycle" : 0.1,
+  "animationLoops" : false,
+  "frameNumber" : 1,
+  "flippable" : true,
+  "renderLayer" : "Player+1",
+  "damageKindImage" : "icon.png",
+  "emitters" : [ ],
+  "lightColor" : [30, 60, 75],
+
+  "physics" : "thea-tentaclefist",
+  "bounces" : -1,
+  "piercing" : true,
+  "timeToLive" : 3,
+  "speed" : 40,
+  "power" : 0,
+  "knockback" : 20,
+  "ignoreTerrain" : false,
+  
+  "damageKind" : "xanafian",
+  "damagePoly" : [ [-1.0, -1.0], [-1.0, 1.0], [1.0, 1.0], [1.0, -1.0] ],
+  "statusEffects" : [
+    "shadowmarked-healing"
+  ],
+
+  "persistentAudio" : "/sfx/projectiles/andraveihan_tendril_loud.ogg",
+
+  "scripts" : [
+    "/scripts/projectiles/boomerangprojectile.lua",
+    "/projectiles/scripts/thea-tentaclefist.lua"
+  ],
+
+  //Boomerang Parameters
+  "controlForce" : 10,
+  "pickupDistance" : 0.25,
+  "snapDistance" : 0.75,
+  "minVelocity" : 1,
+  
+  //Tentacle Parameters
+  "targetTrackingForce" : 60,
+  "targetHoming" : false,
+  
+  //Random Speed Parameters
+  "minSpeed" : 15,
+  "maxSpeed" : 30
+  
+  /*//Boomerang Parameters
+  "controlForce" : 50,
+  "pickupDistance" : 0.25,
+  "snapDistance" : 0.75,
+  "minVelocity" : 1,
+  
+  //Tentacle Parameters
+  "targetTrackingForce" : 100,
+  "targetHoming" : false,
+  
+  //Random Speed Parameters
+  "minSpeed" : 35,
+  "maxSpeed" : 45*/
+}

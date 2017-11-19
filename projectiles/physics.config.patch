@@ -419,5 +419,23 @@
 	  "speedLimit" : null,
 	  "maximumCorrection" : 0.75
 	}	  
+  },
+  {"op" : "add",
+	"path" : "/thea-tentaclefist",
+	"value" : {
+	  "gravityMultiplier" : 0.0,
+	  "bounceFactor" : 0.1,
+	  "stopOnFirstBounce" : false,
+	  "maxMovementPerStep" : 0.4,
+	  
+	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+	  "ignorePlatformCollision" : true,
+	  
+	  "groundFriction" : 0,
+	  "airFriction" : 0.0,
+	  "liquidFriction" : 0.0,
+	  "speedLimit" : null,
+	  "maximumCorrection" : 0.75
+	}	  
   }
 ]

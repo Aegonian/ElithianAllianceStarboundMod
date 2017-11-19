@@ -117,10 +117,10 @@
   },
 
   "sounds" : {
-    "charge" : ["/sfx/melee/staff_charge1.ogg"],
-    "fullcharge" : ["/sfx/melee/elemental_aura_activate.ogg"],
-    "chargedloop" : ["/sfx/melee/charge_full_hold1.ogg"],
-    "discharge" : ["/sfx/melee/elemental_aura_deactivate1.ogg"],
-    "activate" : ["/sfx/projectiles/plasma3.ogg"]
+    "charge" : ["/sfx/gun/andraveihan_charge.ogg"],
+    "fullcharge" : ["/sfx/gun/andraveihan_ready.ogg"],
+    "chargedloop" : ["/sfx/projectiles/zone_power_loop.ogg"],
+    "discharge" : ["/sfx/gun/andraveihan_stop2.ogg"],
+    "activate" : ["/sfx/gun/andraveihan_release.ogg"]
   }
 }
