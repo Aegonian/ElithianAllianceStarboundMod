@@ -15,7 +15,7 @@ end
 
 function update(dt)
   --Check if there are already Xanafian Shadows at our position. If so, prevent another one from spawning. (This it to prevent double spawns from the shadowmarked-healing effect)
-  local monsters = world.monsterQuery(mcontroller.position(), 0.25)
+  local monsters = world.monsterQuery(mcontroller.position(), 0.5)
   for _, monster in ipairs(monsters) do
 	--sb.logInfo(world.entityTypeName(monster))
 	if world.entityTypeName(monster) == "xanafianshadow-friendly" then
