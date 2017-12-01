@@ -1,0 +1,28 @@
+{
+  "materialId" : 30081,
+  "materialName" : "trinkpanel",
+  "particleColor" : [85, 85, 85, 255],
+  "itemDrop" : "trinkpanel", 
+  "shortdescription" : "Trinkian Panel",
+  
+  "description" : "A simple metal panel.",
+  "glitchDescription" : "Statement. A metal panel.",
+  "floranDescription" : "Dark metal panelsss.",
+  "novakidDescription" : "A metal panel, plain an' simple.",
+  
+  "drodenDescription" : "Analysis complete. Metal plating.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "trinkpanel.png",
+    "variants" : 4,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 110
+  }
+}

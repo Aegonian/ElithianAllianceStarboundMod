@@ -1,11 +1,11 @@
 {
-  "name" : "avikanmount",
-  "script" : "avikanmount.lua",
+  "name" : "avikanmountarmoured",
+  "script" : "/vehicles/avikan/avikanmount/avikanmount.lua",
   "boundBox" : [-5, -5, 5, 5],
   "slaveControlTimeout" : 2.0,
   "slaveControlHeartbeat" : 1.0,
   "canBeHit" : true,
-  "animation" : "avikanmount.animation",
+  "animation" : "avikanmountarmoured.animation",
 
   "animationCustom" : {},
 
@@ -44,7 +44,7 @@
   //HEALTH SETTINGS
   "protection" : 50,
   "sprintProtection" : 75, //Allows for greater damage resistance while sprinting
-  "maxHealth" : 750,
+  "maxHealth" : 2000,
   
   "damageSoundTimeOut" : 1.0,
   "bloodDripHealthThreshold" : 0.5,
@@ -104,8 +104,8 @@
       "enabled" : false,
 
       "poly" : [ [2.8, 0.9], [3.2, 0.5], [3.2, -4.1], [2.8, -4.5], [-2.8, -4.5], [-3.2, -4.1], [-3.2, 0.5], [-2.8, 0.9] ],
-      "damage" : 0,
-      "damageType" : "Knockback",
+      "damage" : 5,
+      "damageType" : "default",
       "damageRepeatTimeout" : 0.75,
       "knockback" : 40
     }

@@ -2,19 +2,21 @@ require("/scripts/vec2.lua")
 require("/vehicles/thea-vehicletheft.lua")
 
 function init()
-
+  --Settings from config file
   self.runSpeed = config.getParameter("runSpeed")
+  self.sprintSpeed = config.getParameter("sprintSpeed")
   self.swimSpeed = config.getParameter("swimSpeed")
-  self.horizontalControlForce = config.getParameter("horizontalControlForce")
   self.jumpVelocity = config.getParameter("jumpVelocity")
   self.jumpTimeout = config.getParameter("jumpTimeout")
   self.movementSettings = config.getParameter("movementSettings")
   self.occupiedMovementSettings = config.getParameter("occupiedMovementSettings")
   self.noPlatformMovementSettings = config.getParameter("noPlatformMovementSettings")
   self.protection = config.getParameter("protection")
+  self.sprintProtection = config.getParameter("sprintProtection")
   self.maxHealth = config.getParameter("maxHealth")
   self.materialKind = config.getParameter("materialKind")
-  
+  self.swimmingUpVelocity = config.getParameter("swimmingUpVelocity")
+  self.swimmingUpControlForce = config.getParameter("swimmingUpControlForce")
   self.maxFallDistance = config.getParameter("maxFallDistance")
   self.fallDamageMultiplier = config.getParameter("fallDamageMultiplier")
   self.currentFallDistance = 0
@@ -25,6 +27,8 @@ function init()
   self.bloodDripMaxRate = config.getParameter("bloodDripMaxRate")
   self.bloodDripHealthThreshold = config.getParameter("bloodDripHealthThreshold")
   
+  --Starting stats
+  self.groundFrames = 1
   self.startedFalling = false
   self.wasPreviouslyOnGround = false
   self.isSwimming = false
@@ -33,27 +37,25 @@ function init()
   self.selfDamageNotifications = {}
   self.damageSoundTimeOut = config.getParameter("damageSoundTimeOut")
   self.damageSoundTimer = 0
-  
-  self.swimmingUpVelocity = config.getParameter("swimmingUpVelocity")
-  self.swimmingUpControlForce = config.getParameter("swimmingUpControlForce")
+  self.hasBeenCollected = false
+  self.lastPosition = mcontroller.position()
+  self.collisionDamageTrackingVelocities = {}
+  self.justLanded = false
+  self.landTimer = config.getParameter("landRecoveryTime")
+  self.isSprinting = false
 
   self.driver = nil;
   self.facingDirection = 1
   self.jumpTimer = 0
   
+  --Emote settings
   self.damageTakenEmote = config.getParameter("damageTakenEmote")
   self.driverEmote = config.getParameter("driverEmote")
   self.driverEmoteDamaged = config.getParameter("driverEmoteDamaged")
   self.driverEmoteNearDeath = config.getParameter("driverEmoteNearDeath")
-
   self.damageEmoteTimer=0.0
-  
-  self.hasBeenCollected = false
 
-  self.lastPosition = mcontroller.position()
-  self.collisionDamageTrackingVelocities = {}
-
-  --this comes in from the controller.
+  --Owner Key, given to us by the vehicle controller
   self.ownerKey = config.getParameter("ownerKey")
   vehicle.setPersistent(self.ownerKey)
   
@@ -66,7 +68,7 @@ function init()
 	vehicle.setPersistent(true)
   end
 
-  --assume maxhealth
+  --Assume maxhealth
   if (storage.health) then
     animator.setAnimationState("body", "idle")
   else
@@ -80,7 +82,7 @@ function init()
     animator.setAnimationState("body", "warpInPart1")  
   end
 
-  --setup the store functionality  
+  --Setup the store functionality  
   message.setHandler("store",
 	function(_, _, ownerKey)
 	  if (self.ownerKey and self.ownerKey == ownerKey and self.driver == nil and animator.animationState("body")=="inactive") then
@@ -110,11 +112,13 @@ function update()
   if (animator.animationState("body")=="invisible") then
     vehicle.destroy()
 	world.debugText("I was destroyed! You shouldn't be seeing this...", mcontroller.position(), "yellow")
+  --Freeze the vehicle when it is being collected
   elseif (animator.animationState("body")=="warpInPart1" or animator.animationState("body")=="warpOutPart2") then
     --lock it solid whilst spawning/despawning
     mcontroller.setPosition(self.lastPosition)
     mcontroller.setVelocity({0,0})
 	world.debugText("I am being collected", mcontroller.position(), "yellow")
+  --When not warping
   else
     local driverThisFrame = vehicle.entityLoungingIn("drivingSeat")
 	
@@ -144,6 +148,15 @@ function update()
 
     self.driver = driverThisFrame
 	
+	--Code for pushing enemies away while sprinting
+	if animator.animationState("body") == "sprint" then
+	  self.isSprinting = true
+	  vehicle.setDamageSourceEnabled("bumper", true)
+	else
+	  self.isSprinting = false
+	  vehicle.setDamageSourceEnabled("bumper", false)
+	end
+	
 	if healthFactor < self.bloodDripHealthThreshold then
 	  local bloodDripRate = 1.0 - (healthFactor / self.bloodDripHealthThreshold)
 	  animator.setParticleEmitterActive("bloodDripping", true)
@@ -153,6 +166,14 @@ function update()
 	  world.debugText(bloodDripRate * self.bloodDripMaxRate, debugPosition5, "red")
 	else
 	  animator.setParticleEmitterActive("bloodDripping", false)
+	end
+	
+	--Code for disabling control shortly after landing
+	if self.justLanded == true then
+	  self.landTimer = math.max(0, self.landTimer - script.updateDt())
+	end
+	if self.landTimer <= 0 then
+	  self.justLanded = false
 	end
 	
 	--Set a cooldown timer for the damage sound
@@ -217,7 +238,11 @@ end
 function applyDamage(damageRequest)
   local damage = 0
   if damageRequest.damageType == "Damage" then
-    damage = damage + root.evalFunction2("protection", damageRequest.damage, self.protection)
+    if self.isSprinting then
+	  damage = damage + root.evalFunction2("protection", damageRequest.damage, self.sprintProtection) --Optional change to damage resistance while sprinting
+	else
+	  damage = damage + root.evalFunction2("protection", damageRequest.damage, self.protection)
+	end
   elseif damageRequest.damageType == "IgnoresDef" then
     damage = damage + damageRequest.damage
   else
@@ -279,6 +304,7 @@ function move(driverThisFrame)
   if waterLevel > 0.75 then
     self.isSwimming = true
 	self.wasPreviouslyOnGround = false
+	self.startedFalling = false
 	mcontroller.approachYVelocity(self.swimmingUpVelocity, self.swimmingUpControlForce)
   elseif waterLevel < 0.55 or mcontroller.onGround() and waterLevel < 0.7 then
     self.isSwimming = false
@@ -299,11 +325,20 @@ function move(driverThisFrame)
     self.airTime = 0
   end  
   
+  --Code for smoothing out the walking animation on uneven terrain
+  local offGroundFrames = config.getParameter("offGroundFrames")
+  if mcontroller.onGround() then
+	self.groundFrames = offGroundFrames
+  else
+	self.groundFrames = self.groundFrames - 1
+  end
+  
   --Enable jumping while on the ground or very shortly after starting a fall, or while swimming
-  if self.airTime < 0.15 or self.isSwimming == true then
+  if self.airTime < 0.15 and not self.justLanded or self.isSwimming == true then
     if self.jumpTimer <= 0 and vehicle.controlHeld("drivingSeat", "jump") and not vehicle.controlHeld("drivingSeat", "down") then
       mcontroller.setYVelocity(self.jumpVelocity)
       self.jumpTimer = self.jumpTimeout
+	  self.groundFrames = 0
     else
       self.jumpTimer = self.jumpTimer - script.updateDt()
     end
@@ -322,36 +357,52 @@ function move(driverThisFrame)
   --Set fall animation if moving down and not on the ground or in a liquid
   elseif mcontroller.yVelocity() < -0.1 and not mcontroller.onGround() and self.isSwimming == false and self.hasBeenCollected == false then
     self.fallTime = self.fallTime + script.updateDt()
-	if self.fallTime > 0.2 then
+	if self.groundFrames <= 0 then
 	  animator.setAnimationState("body", "fall")
 	  self.startedFalling = true
 	end
   end
   
   --Move Left and animate if not in the air
-  if vehicle.controlHeld("drivingSeat", "left") then
+  if vehicle.controlHeld("drivingSeat", "left") and not self.justLanded then
     if self.isSwimming == false then
-	  mcontroller.setXVelocity(-self.runSpeed)
+	  if vehicle.controlHeld("drivingSeat", "primaryFire") then
+		mcontroller.setXVelocity(-self.sprintSpeed)
+	  else
+		mcontroller.setXVelocity(-self.runSpeed)
+	  end
 	elseif self.isSwimming == true then
 	  mcontroller.setXVelocity(-self.swimSpeed)
 	end
 	--Set run animation if on ground and not swimming
 	if mcontroller.onGround() and self.hasBeenCollected == false and self.isSwimming == false then
-	  animator.setAnimationState("body", "run")
+	  if vehicle.controlHeld("drivingSeat", "primaryFire") then
+		animator.setAnimationState("body", "sprint")
+	  else
+		animator.setAnimationState("body", "run")
+	  end
 	end
     self.facingDirection = -1
   end
 
   --Move right and animate if not in the air
-  if vehicle.controlHeld("drivingSeat", "right") then
+  if vehicle.controlHeld("drivingSeat", "right") and not self.justLanded then
     if self.isSwimming == false then
-	  mcontroller.setXVelocity(self.runSpeed)
+	  if vehicle.controlHeld("drivingSeat", "primaryFire") then
+		mcontroller.setXVelocity(self.sprintSpeed)
+	  else
+		mcontroller.setXVelocity(self.runSpeed)
+	  end
 	elseif self.isSwimming == true then
 	  mcontroller.setXVelocity(self.swimSpeed)
 	end
 	--Set run animation if on ground and not swimming
 	if mcontroller.onGround() and self.hasBeenCollected == false and self.isSwimming == false then
-	  animator.setAnimationState("body", "run")
+	  if vehicle.controlHeld("drivingSeat", "primaryFire") then
+		animator.setAnimationState("body", "sprint")
+	  else
+		animator.setAnimationState("body", "run")
+	  end
 	end
     self.facingDirection = 1
   end
@@ -359,7 +410,7 @@ function move(driverThisFrame)
   --Stop movement if not pressing any buttons and not in the air
   if not vehicle.controlHeld("drivingSeat", "left") and not vehicle.controlHeld("drivingSeat", "right") and mcontroller.onGround() then
     mcontroller.setXVelocity(0)
-	if mcontroller.onGround() and self.hasBeenCollected == false and self.isSwimming == false then
+	if mcontroller.onGround() and self.hasBeenCollected == false and self.isSwimming == false and not self.justLanded then
 	  animator.setAnimationState("body", "idle")
 	end  
   --Stop movement if not pressing any buttons and not in the air
@@ -397,9 +448,12 @@ function move(driverThisFrame)
   if self.startedFalling == true and mcontroller.onGround() then
     --Create dust effect
 	animator.burstParticleEmitter("jumpSmoke")
+	animator.setAnimationState("body", "land")
 	animator.playSound("land")
 	self.startedFalling = false
 	self.fallTime = 0
+	self.justLanded = true
+	self.landTimer = config.getParameter("landRecoveryTime")
 	
 	--Do damage if the fall distance is high enough
 	if yPositionChange < -self.maxFallDistance then
@@ -442,21 +496,17 @@ function move(driverThisFrame)
   elseif mcontroller.yVelocity() > 0 then
     self.lastYPosition = mcontroller.yPosition()
   end
-    
 end
 
-
+--FLipping the vehicle sprites based on our facing direction
 function animate()
-
   animator.resetTransformationGroup("flip")
   if self.facingDirection < 0 then
     animator.scaleTransformationGroup("flip", {-1, 1})
   end
-
 end
 
 function updateDamage()
-
   if storage.health <= 0 then
     animator.playSound("death")
 	animator.burstParticleEmitter("deathPoof")
@@ -466,5 +516,4 @@ function updateDamage()
   local newPosition = mcontroller.position()
   local newVelocity = vec2.div(vec2.sub(newPosition, self.lastPosition), script.updateDt())
   self.lastPosition = newPosition
-
 end

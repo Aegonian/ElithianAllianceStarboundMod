@@ -353,7 +353,8 @@
 			  { "item": { "name": "avikanwatercontainer" }, "rarity": 0.5 },
 			  { "item": { "name": "avikansmallwatercontainer" }, "rarity": 0.5 },
 			  { "item": { "name": "avikanwatersack" }, "rarity": 0.5 },
-			  { "item": { "name": "liquidwater" }, "rarity": 0.5, "price" : 1 }
+			  { "item": { "name": "liquidwater" }, "rarity": 0.5, "price" : 1 },
+			  { "item": { "name": "avikansprinkler" }, "rarity": 0.5 }
 			] ]					
 		]
 	},

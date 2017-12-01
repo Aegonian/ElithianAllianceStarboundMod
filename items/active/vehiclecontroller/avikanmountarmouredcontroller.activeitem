@@ -1,0 +1,34 @@
+{
+  "itemName" : "avikanmountarmouredcontroller",
+  "level" : 1,
+  "price" : 10000,
+  "rarity" : "Rare",
+  "category" : "vehicleController",
+  "description" : "Summons an armoured Gad'hur from your ship's cargo hold.",
+  "shortdescription" : "War Gad'hur Controller",
+  "twoHanded" : true,
+  "maxStack" : 1,
+  "itemTags" : ["vehiclecontroller"],
+
+  "animation" : "thea-vehiclecontroller.animation",
+  "scripts" : ["vehiclecontroller.lua"],
+  "animationScripts" : ["vehiclecursor.lua"],
+  "filled" : true,
+  "tooltipKind" : "vehicle",
+  "largeImage" : "/vehicles/avikan/avikanmountarmoured/avikanmountarmouredcentered.png",
+
+  "respawnTime" : 1.0,
+
+  "vehicleType" : "avikanmountarmoured",
+  "vehicleBoundingBox" : [-3.75, -4.75, 5.5, 1.75],
+  "vehicleImage" : "/vehicles/avikan/avikanmountarmoured/avikanmountarmoured.png",
+
+  "animationParts" : {
+    "casing" : "avikanmountarmouredcontroller.png"
+  },
+
+  "inventoryIcon" : "avikanmountarmouredcontroller.png:full",
+  "emptyInventoryIcon" : "/items/active/vehiclecontroller/avikanmountarmouredcontroller.png:empty",
+  "filledInventoryIcon" : "/items/active/vehiclecontroller/avikanmountarmouredcontroller.png:full"
+
+}
