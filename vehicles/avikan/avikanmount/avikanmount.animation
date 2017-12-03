@@ -130,12 +130,12 @@
             },
             "warpInPart2" : {
               "properties" : {
-                "image" : "avikanmountbackleg.png:idle"
+                "image" : "avikanmountbackleg.png:inactive"
               }
             },
             "warpOutPart1" : {
               "properties" : {
-                "image" : "avikanmountbackleg.png:idle"
+                "image" : "avikanmountbackleg.png:inactive"
               }
             },
             "warpOutPart2" : {
@@ -226,12 +226,12 @@
             },
             "warpInPart2" : {
               "properties" : {
-                "image" : "avikanmountbackground.png:idle"
+                "image" : "avikanmountbackground.png:inactive"
               }
             },
             "warpOutPart1" : {
               "properties" : {
-                "image" : "avikanmountbackground.png:idle"
+                "image" : "avikanmountbackground.png:inactive"
               }
             },
             "warpOutPart2" : {
@@ -298,12 +298,12 @@
             },
             "warpInPart2" : {
               "properties" : {
-                "image" : "avikanmountfrontleg.png:idle"
+                "image" : "avikanmountfrontleg.png:inactive"
               }
             },
             "warpOutPart1" : {
               "properties" : {
-                "image" : "avikanmountfrontleg.png:idle"
+                "image" : "avikanmountfrontleg.png:inactive"
               }
             },
             "warpOutPart2" : {
@@ -394,12 +394,12 @@
             },
             "warpInPart2" : {
               "properties" : {
-                "image" : "avikanmountforeground.png:idle"
+                "image" : "avikanmountforeground.png:inactive"
               }
             },
             "warpOutPart1" : {
               "properties" : {
-                "image" : "avikanmountforeground.png:idle"
+                "image" : "avikanmountforeground.png:inactive"
               }
             },
             "warpOutPart2" : {

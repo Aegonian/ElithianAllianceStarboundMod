@@ -16,7 +16,7 @@
           },
           "walk" : {
             "frames" : 8,
-            "cycle" : 0.8,
+            "cycle" : 1.2,
             "mode" : "loop",
 			"frameProperties" : {
 			  "immediateSound" : [ "", "", "", "/sfx/npc/monsters/kadavangadhur_step_light.ogg", "", "", "", "/sfx/npc/monsters/kadavangadhur_step.ogg"]

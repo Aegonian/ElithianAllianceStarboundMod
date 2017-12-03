@@ -2,7 +2,7 @@
   "id" : "25ksubscribercelebration",
   "prerequisites" : [ "10ksubscribercelebration" ],
   "title" : "^orange;A Special Gift II",
-  "text" : "Your Aeginian friend has sent you another special delivery. They still won't share thier name, but whoever it is, they must really appreciate your support. Enjoy your gift!",
+  "text" : "Your Aeginian friend has sent you another special delivery. They still won't share their name, but whoever it is, they must really appreciate your support. Enjoy your gift!",
   "completionText" : "I received another gift from an Aeginian friend. Let's open it!",
   "moneyRange" : [2500, 2500],
   "rewards" : [

@@ -83,7 +83,7 @@
         },
 		{
           "name" : "wander-walk",
-          "cooldown" : 8.0,
+          "cooldown" : 16.0,
           "parameters" : {
             "moveState" : "run",
             "wanderTime" : [3, 6],
@@ -121,7 +121,7 @@
       "collisionPoly" : [ [1.1, 5.4], [1.5, 5.0], [1.5, 0.4], [1.1, 0.0], [-1.1, 0.0], [-1.5, 0.4], [-1.5, 5.0], [-1.1, 5.4] ],
 
       "mass" : 1.0,
-      "walkSpeed" : 12,
+      "walkSpeed" : 8,
       "runSpeed" : 16,
 
       "airFriction" : 0,
