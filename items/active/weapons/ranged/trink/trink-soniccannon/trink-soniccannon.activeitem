@@ -32,7 +32,8 @@
       }
     },
     "sounds" : {
-      "fire" : [ "/sfx/projectiles/blast_small1.ogg", "/sfx/projectiles/blast_small2.ogg", "/sfx/projectiles/blast_small3.ogg" ]
+      "fire" : [ "/sfx/projectiles/blast_small1.ogg", "/sfx/projectiles/blast_small2.ogg", "/sfx/projectiles/blast_small3.ogg" ],
+      "reload" : []
     }
   },
 

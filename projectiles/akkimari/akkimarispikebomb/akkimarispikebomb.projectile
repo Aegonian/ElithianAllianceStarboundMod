@@ -1,0 +1,113 @@
+{
+  "projectileName" : "akkimarispikebomb",
+  "physics" : "stickygrenade",
+  "bounces" : -1,
+  "timeToLive" : 10,
+  "image" : "akkimarispikebomb.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  //"emitters" : [ "rocketsmoke" ],
+  "speed" : 50,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/akkimarispikeexplosion/akkimarispikeexplosion.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimarismallspike",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimarismallspike",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimarismallspike",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimarismallspike",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimarismallspike",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimarismallspike",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimarismallspike",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimarismallspike",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimarismallspike",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimarismallspike",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    }
+  ],
+  "actionOnCollide" : [
+    {
+      "action" : "sound",
+      "options" : [
+        "/sfx/projectiles/ropehook_impact1.ogg",
+        "/sfx/projectiles/ropehook_impact2.ogg",
+        "/sfx/projectiles/ropehook_impact3.ogg",
+        "/sfx/projectiles/ropehook_impact4.ogg",
+        "/sfx/projectiles/ropehook_impact5.ogg",
+        "/sfx/projectiles/ropehook_impact6.ogg",
+        "/sfx/projectiles/ropehook_impact7.ogg",
+        "/sfx/projectiles/ropehook_impact8.ogg",
+        "/sfx/projectiles/ropehook_impact9.ogg",
+        "/sfx/projectiles/ropehook_impact10.ogg",
+        "/sfx/projectiles/ropehook_impact11.ogg",
+        "/sfx/projectiles/ropehook_impact12.ogg"
+      ]
+    }
+  ],
+  "power" : 50,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  
+  "scripts" : [ "/projectiles/scripts/thea-proximityexplode.lua" ],
+  "searchRadius" : 2.5,
+  "waitUntilSticky" : true
+}

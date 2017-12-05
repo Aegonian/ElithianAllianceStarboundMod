@@ -437,5 +437,37 @@
 	  "speedLimit" : null,
 	  "maximumCorrection" : 0.75
 	}	  
+  },
+  {"op" : "add",
+	"path" : "/thea-shrapnel",
+	"value" : {
+	  "mass" : 1.0,
+	  "gravityMultiplier" : 0.4,
+	  "bounceFactor" : 0.25,
+	  "stopOnFirstBounce" : true,
+	  "maxMovementPerStep" : 0.4,
+	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+	  "ignorePlatformCollision" : true,
+
+	  "airFriction" : 0.0,
+	  "liquidFriction" : 2.0,
+	  "groundFriction" : 15.0
+	}	  
+  },
+  {"op" : "add",
+	"path" : "/thea-shrapnel-highbounce",
+	"value" : {
+	  "mass" : 1.0,
+	  "gravityMultiplier" : 0.4,
+	  "bounceFactor" : 0.35,
+	  "stopOnFirstBounce" : true,
+	  "maxMovementPerStep" : 0.4,
+	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+	  "ignorePlatformCollision" : true,
+
+	  "airFriction" : 0.0,
+	  "liquidFriction" : 2.0,
+	  "groundFriction" : 15.0
+	}	  
   }
 ]

@@ -1,15 +1,14 @@
 {
-  "projectileName" : "avikandeepdesertspike",
+  "projectileName" : "akkimarismallspike",
   "physics" : "grenade",
-  "bounces" : 2,
-  "damageKindImage" : "icon.png",
-  "image" : "avikandeepdesertspike.png",
+  "bounces" : 3,
+  "image" : "akkimarismallspike.png",
   "orientationLocked" : false,
   "flippable" : true,
   "animationCycle" : 0.5,
   "frameNumber" : 1,
   "emitters" : [ "thea-smallwhitetrail" ],
-  "speed" : 25,
+  "speed" : 45,
   "actionOnCollide" : [
     {
       "action" : "sound",
@@ -23,12 +22,9 @@
       ]
     }
   ],
-  "power" : 20,
-  "timeToLive" : 2,
-  "damageKind" : "avikanhunting",
+  "power" : 30,
+  "timeToLive" : 4,
+  "damageKind" : "default",
   "piercing" : false,
-  "hydrophobic" : false,
-  "statusEffects" : [
-    "thea-bleeding"
-  ]
+  "hydrophobic" : false
 }

@@ -4,5 +4,5 @@
 	{ "item" : "avikandarkmetal", "count" : 2 }
   ],
   "output" : { "item" : "avikanlinerifledisplay", "count" : 1 },
-  "groups" : [ "avikanmetalcrafting", "metalfurniture", "all" ]
+  "groups" : [ "avikanmetalcrafting", "metalfurniture", "all", "nouncrafting" ]
 }

@@ -1,0 +1,162 @@
+{
+  "itemName" : "akkimari-scrapyard",
+  "price" : 1500,
+  "inventoryIcon" : "akkimari-scrapyard.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;A powerful shrapnel cannon popular amongst scavengers.",
+  "shortdescription" : "^orange;Scrapyard^white;",
+  "level" : 6,
+  "tooltipKind" : "thea-gun-unique",
+  "category" : "Shrapnel Cannon",
+  "itemTags" : ["weapon","ranged","akkimari","theaUnique"],
+  "twoHanded" : true,
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  //"collectablesOnPickup" : { "thea_weapons" : "trink-energizer" },
+  
+  "meritTokenValue" : 100,
+  
+  "cursor" : "/cursors/thea-triplereticle-large.cursor",
+  
+  "animation" : "akkimari-scrapyard.animation",
+  "animationParts" : {
+    "middle" : "akkimari-scrapyard.png",
+    "middleFullbright" : "akkimari-scrapyardlights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/akkimarismokemuzzle.png"
+  },
+  "animationCustom" : {
+	"animatedParts" : {
+	  "parts" : {
+		"middleFullbright" : {
+		  "properties" : {
+			"offset" : [1.0, -0.125]
+		  }
+		}
+	  }
+	},
+    "particleEmitters" : {
+      "muzzleFlash" : {
+        "particles" : [
+          { "particle" : "lineriflepuff", "offset" : [0.0, -0.25] },
+		  { "particle" : "lineriflepuff", "offset" : [0.0, -0.25] }
+        ]
+      },
+      "altMuzzleFlash" : {
+        "particles" : [
+          { "particle" : "lineriflepuff", "offset" : [0.0, -0.25] },
+		  { "particle" : "lineriflepuff", "offset" : [0.0, -0.25] }
+        ]
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/akkimari_shrapnelfire.ogg" ],
+	  "altFire" : [ "/sfx/gun/burstshot1.ogg" ]
+    },
+	"lights": {
+	  "muzzleFlash" : {
+		"active" : false,
+		"position" : [0, 0],
+		"color" : [0, 0, 0]
+	  }
+    }
+  },
+
+  "baseOffset" : [1.0, -0.125],
+  "muzzleOffset" : [2.0, 0.25],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "fire",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-randomprojectilegunfire.lua"],
+    "class" : "TheaRandomProjectileGunFire",
+
+    "fireTime" : 1.4,
+    "baseDps" : 11.0,
+    "energyUsage" : 40,
+    "inaccuracy" : 0.045,
+
+    "projectileCount" : 24,
+    "fireType" : "auto",
+
+    "projectileType" : [ "akkimarishrapnel", "akkimarishrapnel2", "akkimarishrapnel3", "akkimarishrapnel4" ],
+    "projectileParameters" : {
+      "knockback" : 6
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 7,
+        "weaponRotation" : 7,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.45,
+        "armRotation" : 7,
+        "weaponRotation" : 7,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "altAbility" : {
+    "name" : "Spike Bomb",
+    "scripts" : ["/items/active/weapons/ranged/abilities/altfire.lua"],
+	"class" : "AltFireAttack",
+
+    "baseDps" : 8.5,
+	"fireTime" : 2.0,
+    "energyUsage" : 50.0,
+    "inaccuracy" : 0.01,
+
+	"projectileCount" : 1,
+    "fireType" : "auto",
+	
+	"projectileType" : "akkimarispikebomb",
+	"projectileParameters" : {},
+	
+	"hidePrimaryMuzzleFlash" : false,
+	"useParticleEmitter" : true,
+	"usePrimaryFireSound" : false,
+
+    "stances" : {
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 9,
+        "weaponRotation" : 9,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.6,
+        "armRotation" : 9,
+        "weaponRotation" : 9,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

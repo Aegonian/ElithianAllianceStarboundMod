@@ -1,0 +1,31 @@
+{
+  "projectileName" : "akkimarishrapnel4",
+  "image" : "akkimarishrapnel4.png",
+  "physics" : "thea-shrapnel-highbounce",
+  "bounces" : -1,
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "lightColor" : [75, 10, 5],
+  "fullbright" : true,
+  "flippable" : true,
+  "emitters" : [ "thea-moltenshrapneltrail" ],
+  "actionOnReap" : [],
+  "statusEffects" : [
+    "thea-burning"
+  ],
+  "power" : 5.0,
+  "speed" : 60,
+  "knockback" : 0,
+  "timeToLive" : 5,
+  "damageKind" : "fireplasmabullet",
+  
+  "scripts" : [ "/projectiles/scripts/thea-randomspeedprojectile.lua" ],
+  "minSpeed" : 40,
+  "maxSpeed" : 70,
+  
+  "randomTimeToLive" : true,
+  "timeToLiveMilliseconds" : true,
+  "minLifeTime" : 400,
+  "maxLifeTime" : 600
+}

@@ -4,5 +4,5 @@
 	{ "item" : "avikandarkmetal", "count" : 1 }
   ],
   "output" : { "item" : "avikanpistoldisplay", "count" : 1 },
-  "groups" : [ "avikanmetalcrafting", "metalfurniture", "all" ]
+  "groups" : [ "avikanmetalcrafting", "metalfurniture", "all", "nouncrafting" ]
 }

@@ -1,0 +1,22 @@
+{
+  "kind" : "thea-smallfire",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/smallflame/smallflame.animation",
+    "fade" : 1.0,
+    "destructionAction" : "shrink",
+    "destructionTime" : 1,
+    "initialVelocity" : [0, -0.5],
+    "finalVelocity" : [0, -0.5],
+    "approach" : [0, 20],
+    "timeToLive" : 0.6,
+    "size" : 1.0,
+    "layer" : "back",
+    "variance" : {
+      "initialVelocity" : [0, 0.5],
+      "finalVelocity" : [0, -0.5],
+	  "size" : 0.2,
+      "rotation" : 180
+    }
+  }
+}

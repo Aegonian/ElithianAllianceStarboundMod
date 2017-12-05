@@ -424,6 +424,7 @@
 		"value" : [
 			[ 0, [
 			  { "item": { "name": "avikanmountcontroller" }, "rarity": 0.5 },
+			  { "item": { "name": "avikanmountarmouredcontroller" }, "rarity": 0.5 },
 			  { "item": { "name": "avikancrook" }, "rarity": 0.5 },
 			  { "item": { "name": "avikantrough" }, "rarity": 0.5 }
 			] ]
