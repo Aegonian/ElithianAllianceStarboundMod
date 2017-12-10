@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "alliancebreathprotectionback", "count" : 1 },
+    { "item" : "alliancemetaltier3", "count" : 6 },
+    { "item" : "alliancecircuitry", "count" : 2 },
+    { "item" : "venomsample", "count" : 1 }
+  ],
+  "output" : { "item" : "allianceradiationprotectionback", "count" : 1 },
+  "groups" : [ "allianceinventor2", "hazardgear", "all" ]
+}

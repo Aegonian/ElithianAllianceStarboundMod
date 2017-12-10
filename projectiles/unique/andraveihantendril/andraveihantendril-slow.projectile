@@ -41,7 +41,7 @@
   //Tentacle Parameters
   "targetTrackingForce" : 60,
   "targetHoming" : true,
-  "searchRadius" : 5,
+  "searchRadius" : 10,
   "homingStartDelay" : 1.0,
   
   //Random Speed Parameters

@@ -1,0 +1,15 @@
+{
+  "input" : [
+    { "item" : "alliancemetal", "count" : 1 },
+    { "item" : "allianceglassitem", "count" : 1 },
+	{ "item" : "alliancecircuitry", "count" : 2 },
+    { "item" : "connectorstrip", "count" : 2 },
+    { "item" : "diamond", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "alliancequantumchip",
+    "count" : 1
+  },
+  "duration" : 0.15,
+  "groups" : [ "alliancefurnace2", "ingredients", "all" ]
+}

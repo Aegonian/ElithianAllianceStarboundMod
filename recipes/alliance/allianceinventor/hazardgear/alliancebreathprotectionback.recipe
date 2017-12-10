@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "alliancemetal", "count" : 6 },
+	{ "item" : "allianceballisticfiber", "count" : 4 },
+    { "item" : "livingroot", "count" : 1 }
+  ],
+  "output" : { "item" : "alliancebreathprotectionback", "count" : 1 },
+  "groups" : [ "allianceinventor", "hazardgear", "all" ]
+}

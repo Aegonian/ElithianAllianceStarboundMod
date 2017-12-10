@@ -35,10 +35,14 @@
   "aimOffset" : -1.0,
 
   "primaryAbilityType" : "thea-shieldbladecombo",
-  "primaryAbility" : {},
+  "primaryAbility" : {
+	"baseDps" : 7.0
+  },
   
   "altAbilityType" : "thea-shieldbladedefend",
-  "altAbility" : {},
+  "altAbility" : {
+	"energyUsage" : 60
+  },
 
   "builder" : "/items/buildscripts/buildunrandweapon.lua"
 }

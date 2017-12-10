@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "alliancemetal", "count" : 8 },
+    { "item" : "darkwoodmaterial", "count" : 20 },
+    { "item" : "logblock", "count" : 1 }   
+  ],
+  "output" : {
+    "item" : "alliancecrafting",
+    "count" : 1
+  },
+  "duration" : 5,
+  "groups" : [ "allianceinventor", "craftingstations", "all" ]
+}

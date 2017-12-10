@@ -1,0 +1,24 @@
+{
+  "modId" : 30000,
+  "modName" : "ferroverium",
+  "itemDrop" : "ferroveriumore",
+  "health" : 5,
+  "harvestLevel" : 5,
+  "breaksWithTile" : true,
+  
+  "description" : "Some Ferroverium ore. Quite a find!",
+  "glitchDescription" : "Excited. This looks like Ferroverium ore.",
+  "floranDescription" : "Floran isss fasscinated by sshiny oress.",
+  "novakidDescription" : "Ferroverium, if I ain't mistaken.",
+
+  "miningSounds" : [ "/sfx/tools/pickaxe_ore.ogg", "/sfx/tools/pickaxe_ore2.ogg" ],
+  "miningParticle" : "orespark",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "ferroverium.png",
+    "variants" : 8,
+    "multiColored" : false,
+    "zLevel" : 0
+  }
+}

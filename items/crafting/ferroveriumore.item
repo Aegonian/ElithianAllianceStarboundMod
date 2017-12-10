@@ -1,0 +1,10 @@
+{
+  "itemName" : "ferroveriumore",
+  "price" : 250,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "ferroveriumore.png",
+  "description" : "An iron deposit fused with an otherwordly material.",
+  "shortdescription" : "Ferroverium Ore",
+  "itemTags" : [ "reagent" ]
+}

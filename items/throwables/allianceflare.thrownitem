@@ -1,0 +1,30 @@
+{
+  "itemName" : "allianceflare",
+  "rarity" : "Common",
+  "price" : 5,
+  "category" : "throwableItem",
+  "inventoryIcon" : "allianceflareicon.png",
+  "image" : "allianceflare.png",
+  "shortdescription" : "Alliance Flare",
+  "description" : "A flare often used by the Alliance to signal important locations, or to light an area.",
+
+  "ammoUsage" : 1,
+
+  "edgeTrigger" : true,
+  "windupTime" : 0.0,
+  "cooldown" : 0.4,
+
+  "projectileType" : "allianceflare",
+  "projectileConfig" : {
+    "speed" : 30,
+    "level" : 10,
+    "periodicActions" : [
+      {
+        "time" : 0,
+        "repeat" : false,
+        "action" : "sound",
+        "options" : [ "/sfx/projectiles/throw_item_small.ogg" ]
+      }
+    ]
+  }
+}

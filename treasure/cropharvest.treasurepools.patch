@@ -1,4 +1,5 @@
 [	
+	//AVIKAN CACTUS
 	{"op" : "add",
 		"path" : "/avikancactusHarvest",
 		"value" : [
@@ -18,6 +19,7 @@
 			} ]
 	]},
 
+	//AVIKAN SPICE PLANT
 	{"op" : "add",
 		"path" : "/avikanspiceplantHarvest",
 		"value" : [
@@ -34,6 +36,7 @@
 			} ]
 	]},
 
+	//BOLBOHN
 	{"op" : "add",
 		"path" : "/bolbohnHarvest",
 		"value" : [
@@ -53,6 +56,7 @@
 			} ]
 	]},
 
+	//DUNESTALK
 	{"op" : "add",
 		"path" : "/dunestalkHarvest",
 		"value" : [
@@ -63,6 +67,23 @@
 			  "pool" : [
 				{"weight" : 0.89, "item" : "dunestalk"},
 				{"weight" : 0.01, "item" : "dunestalkseed"},
+				{"weight" : 0.1, "item" : "plantfibre"}
+			  ],
+			  "poolRounds" : [
+				[0.6, 1],
+				[0.4, 2]
+			  ]
+			} ]
+	]},
+
+	//AMBRUM
+	{"op" : "add",
+		"path" : "/ambrumHarvest",
+		"value" : [
+			[0, {
+			  "pool" : [
+				{"weight" : 0.89, "item" : "ambrumfiber"},
+				{"weight" : 0.01, "item" : "ambrumfiberseed"},
 				{"weight" : 0.1, "item" : "plantfibre"}
 			  ],
 			  "poolRounds" : [

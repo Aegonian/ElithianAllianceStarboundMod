@@ -1,0 +1,22 @@
+[	
+	//WILD CROPS
+	{ "op" : "add",
+	  "path" : "/surfacePlaceables/items/-",
+	  "value" : {
+        "mode" : "floor",
+        "priority" : 1.0,
+        "variants" : 1,
+        "distribution" : "/biomes/distributions.config:surfaceCrops",
+
+        "type" : "object",
+        "objectSets" : [
+          {
+            "pool" : [ [1, "wildambrumseed" ] ],
+            "parameters" : {
+              "startingStage" : 3
+            }
+          }
+        ]
+      }	
+	}
+]

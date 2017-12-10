@@ -3,7 +3,7 @@
   "price" : 10,
   "rarity" : "Common",
   "category" : "craftingMaterial",
-  "inventoryIcon" : "allianceglass.png",
+  "inventoryIcon" : "allianceglassitem.png",
   "description" : "A piece of highly durable glass-like plastic.",
   "shortdescription" : "Resoglass",
   "itemTags" : [ "reagent" ]

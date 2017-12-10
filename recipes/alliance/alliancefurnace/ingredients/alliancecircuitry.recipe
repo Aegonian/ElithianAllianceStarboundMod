@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "sand2", "count" : 5 },
+    { "item" : "copperore", "count" : 1 },
+    { "item" : "connectorstrip", "count" : 2 }
+  ],
+  "output" : {
+    "item" : "alliancecircuitry",
+    "count" : 1
+  },
+  "duration" : 0.15,
+  "groups" : [ "alliancefurnace", "ingredients", "all" ]
+}

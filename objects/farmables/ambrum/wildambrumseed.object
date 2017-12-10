@@ -1,0 +1,74 @@
+{
+  "objectName" : "wildambrumseed",
+  "colonyTags" : ["nature"],
+  "rarity" : "Common",
+  "category" : "seed",
+  "description" : "The soft fluffy fibers of this plant can be woven into cloth.",
+  "shortdescription" : "Ambrum Seed",
+  "objectType" : "farmable",
+  "printable" : false,
+  "price" : 10,
+  "hasObjectItem" : false,
+
+  "biomePlaced" : true,
+
+  "apexDescription" : "The fibers harvested from this plant can be woven into cloth.",
+  "avianDescription" : "I could weave these fibers into cloth, I think.",
+  "floranDescription" : "Floran can make thingsss from ssoft fluffss.",
+  "glitchDescription" : "Creative. I could use these fibers to weave cloth.",
+  "humanDescription" : "This looks a bit like cotton. Maybe it has similar uses too?",
+  "hylotlDescription" : "If this is anything like cotton, I could weave a new kimono from these fibers.",
+  "novakidDescription" : "Looks like cotton, yet it doesn't feel quite like cotton.",
+  
+  "aegiDescription" : "An ambrum plant. The fibers protecting its seeds can be woven into cloth.",
+  "avikanDescription" : "Soft fluffy fibers. Used to weave cloth, perhaps?",
+  "erixianDescription" : "A strange plant growing soft fluffy fibers.",
+  "trinkDescription" : "The Aegi commonly use ambrum to weave cloth.",
+  "hymidDescription" : "The Aegi can weave the most comfortable types of cloth from ambrum fibers.",
+  "notixDescription" : "Ambrum fibers are soft, and easily woven into cloth.",
+  "jorgasianDescription" : "An Elithian plant often harvested for its soft fluffy fibers.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "These fibers can be woven into cloth.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected alien plantlife. Analysis: soft protective fibers are compatible for cloth-weaving.",
+
+  "inventoryIcon" : "ambrumseedicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "ambrumseed.png:<color>.<stage>.<alt>",
+      "imagePosition" : [0, 0],
+
+      "spaces" : [ [1, 0], [0, 0], [1, 1], [0, 1], [1, 2], [0, 2], [1, 3], [0, 3] ],
+      "requireTilledAnchors" : false,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "radioMessagesOnPickup" : [ "pickupseed" ],
+
+  "stages" : [
+    {
+      "duration" : [220, 280]
+    },
+    {
+      "duration" : [220, 280]
+    },
+    {
+      "alts" : 5,
+      "duration" : [760, 840]
+    },
+    {
+      "alts" : 5,
+      "harvestPool" : "ambrumHarvest",
+      "resetToStage" : 2
+    }
+  ],
+
+  "breakDropOptions" : [
+    [ [ "ambrumseed", 1, { } ] ]
+  ],
+
+  "maxImmersion" : 0.125,
+  "consumeSoilMoisture" : false
+}

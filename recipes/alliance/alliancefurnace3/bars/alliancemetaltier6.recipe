@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "ferroveriumore", "count" : 1 },
+    { "item" : "solariumore", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "alliancemetaltier6",
+    "count" : 1
+  },
+  "duration" : 0.15,
+  "groups" : [ "alliancefurnace3", "bars", "all" ]
+}

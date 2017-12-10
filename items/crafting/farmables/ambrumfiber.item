@@ -1,0 +1,10 @@
+{
+  "itemName" : "ambrumfiber",
+  "price" : 10,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "ambrumfiber.png",
+  "description" : "Soft fluffy fibers harvested from the ambrum plant.",
+  "shortdescription" : "Ambrum Fiber",
+  "itemTags" : [ "reagent" ]
+}

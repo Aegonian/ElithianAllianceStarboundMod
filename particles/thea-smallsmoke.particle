@@ -3,6 +3,7 @@
   "definition" : {
     "type" : "animated",
     "animation" : "/animations/dust2/dust2.animation",
+    "color" : [255, 255, 255, 63],
     "position" : [0, 0],
     "finalVelocity" : [0, 0],
     "approach" : [50, 50],

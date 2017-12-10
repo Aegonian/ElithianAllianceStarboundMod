@@ -13,7 +13,7 @@
   "twoHanded" : true,
   
   //CONFIGURATION FOR WEAPONS COLLECTION
-  //"collectablesOnPickup" : { "thea_weapons" : "trink-energizer" },
+  "collectablesOnPickup" : { "thea_weapons" : "akkimari-scrapyard" },
   
   "meritTokenValue" : 100,
   

@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "alliancecoldprotectionback", "count" : 1 },
+    { "item" : "alliancemetaltier5", "count" : 6 },
+    { "item" : "alliancequantumchip", "count" : 1 },
+    { "item" : "cryonicextract", "count" : 1 }
+  ],
+  "output" : { "item" : "allianceheatprotectionback", "count" : 1 },
+  "groups" : [ "allianceinventor3", "hazardgear", "all" ]
+}

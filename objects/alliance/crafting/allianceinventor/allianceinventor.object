@@ -96,11 +96,8 @@
         },
         "filter" : [ "allianceinventor" ],
         "upgradeMaterials" : [
-          { "item" : "monsterplate", "count" : 6 },
-		  { "item" : "greatmonsterbone", "count" : 1 },
-          { "item" : "avikanmetal", "count" : 10 },
-          { "item" : "avikandarkmetal", "count" : 5 },
-          { "item" : "avikanmacrochip", "count" : 1 }
+          { "item" : "alliancemetaltier2", "count" : 6 },
+		  { "item" : "alliancecircuitry", "count" : 4 }
         ]
       },
 
@@ -157,11 +154,10 @@
         "filter" : [ "allianceinventor", "allianceinventor2" ],
 		"craftingSound" : "/sfx/interface/crafting_tech2.ogg",
         "upgradeMaterials" : [
-          { "item" : "monsterplate", "count" : 6 },
-		  { "item" : "greatmonsterbone", "count" : 1 },
-          { "item" : "avikanmetal", "count" : 10 },
-          { "item" : "avikandarkmetal", "count" : 5 },
-          { "item" : "avikanmacrochip", "count" : 1 }
+          { "item" : "alliancemetaltier4", "count" : 6 },
+          { "item" : "allianceglassitem", "count" : 10 },
+          { "item" : "alliancecircuitry", "count" : 4 },
+          { "item" : "alliancequantumchip", "count" : 1 }
         ]
       },
 

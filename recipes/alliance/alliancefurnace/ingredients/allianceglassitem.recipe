@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "liquidoil", "count" : 2 },
+    { "item" : "coalore", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "allianceglassitem",
+    "count" : 1
+  },
+  "groups" : [ "alliancefurnace", "ingredients", "all" ]
+}

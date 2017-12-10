@@ -288,6 +288,12 @@
       "title" : "C56 Defiant",
       "description" : "A high precision laser rifle which ramps up in power over time.",
       "icon" : "/items/active/weapons/ranged/unique/defiant/thea-defiant.png"
+    },
+	"akkimari-scrapyard" : {
+      "order" : 47,
+      "title" : "Scrapyard",
+      "description" : "A powerful shrapnel cannon popular amongst scavengers.",
+      "icon" : "/items/active/weapons/ranged/unique/scrapyard/akkimari-scrapyard.png"
     }
   }
 }

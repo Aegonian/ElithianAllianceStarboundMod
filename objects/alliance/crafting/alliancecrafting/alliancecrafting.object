@@ -95,11 +95,9 @@
         },
         "filter" : [ "alliancecrafting" ],
         "upgradeMaterials" : [
-          { "item" : "monsterclaws", "count" : 6 },
-          { "item" : "avikanmetal", "count" : 10 },
-          { "item" : "avikandarkmetal", "count" : 5 },
-          { "item" : "avikanglassitem", "count" : 5 },
-          { "item" : "avikancircuitry", "count" : 1 }
+          { "item" : "alliancemetaltier3", "count" : 6 },
+          { "item" : "alliancecircuitry", "count" : 4 },
+          { "item" : "allianceglassitem", "count" : 10 }
         ]
       },
 
@@ -155,11 +153,10 @@
         },
         "filter" : [ "alliancecrafting", "alliancecrafting2" ],
         "upgradeMaterials" : [
-          { "item" : "monsterclaws", "count" : 6 },
-          { "item" : "avikanmetal", "count" : 10 },
-          { "item" : "avikandarkmetal", "count" : 5 },
-          { "item" : "avikanglassitem", "count" : 5 },
-          { "item" : "avikancircuitry", "count" : 1 }
+          { "item" : "alliancemetaltier5", "count" : 6 },
+          { "item" : "alliancecircuitry", "count" : 4 },
+          { "item" : "allianceglassitem", "count" : 10 },
+          { "item" : "alliancequantumchip", "count" : 1 }
         ],
 		"craftingSound" : "/sfx/interface/crafting_tech2.ogg"
       },

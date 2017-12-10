@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "durasteelore", "count" : 2 }
+  ],
+  "output" : {
+    "item" : "alliancemetaltier4",
+    "count" : 1
+  },
+  "duration" : 0.15,
+  "groups" : [ "alliancefurnace2", "bars", "all" ]
+}

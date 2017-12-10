@@ -98,10 +98,8 @@
         "filter" : [ "alliancefurnace" ],
         "initialRecipeUnlocks" : [],
         "upgradeMaterials" : [
-          { "item" : "monsterclaws", "count" : 6 },
-          { "item" : "avikanmetal", "count" : 10 },
-          { "item" : "avikandarkmetal", "count" : 5 },
-          { "item" : "avikancircuitry", "count" : 1 }
+          { "item" : "alliancemetaltier2", "count" : 6 },
+		  { "item" : "alliancecircuitry", "count" : 4 }
         ]
       },
 
@@ -158,10 +156,10 @@
         "filter" : [ "alliancefurnace", "alliancefurnace2" ],
         "initialRecipeUnlocks" : [],
         "upgradeMaterials" : [
-          { "item" : "monsterclaws", "count" : 6 },
-          { "item" : "avikanmetal", "count" : 10 },
-          { "item" : "avikandarkmetal", "count" : 5 },
-          { "item" : "avikancircuitry", "count" : 1 }
+          { "item" : "alliancemetaltier4", "count" : 6 },
+          { "item" : "allianceglassitem", "count" : 10 },
+          { "item" : "alliancecircuitry", "count" : 4 },
+          { "item" : "alliancequantumchip", "count" : 1 }
         ]
       },
 
