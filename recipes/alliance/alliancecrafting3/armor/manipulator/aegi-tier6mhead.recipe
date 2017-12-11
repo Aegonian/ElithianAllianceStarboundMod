@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "aegi-tier5mhead", "count" : 1 },
+	{ "item" : "alliancemetaltier6", "count" : 6 },
+    { "item" : "alliancecircuitry", "count" : 1 }
+  ],
+  "duration" : 5,
+  "output" : { "item" : "aegi-tier6mhead", "count" : 1 },
+  "groups" : [ "alliancecrafting3", "armours", "all" ]
+}

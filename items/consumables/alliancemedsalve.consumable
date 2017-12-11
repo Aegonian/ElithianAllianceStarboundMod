@@ -1,0 +1,22 @@
+{
+  "itemName" : "alliancemedsalve",
+  "rarity" : "Uncommon",
+  "price" : 150,
+  "category" : "medicine",
+  "inventoryIcon" : "alliancemedsalve.png",
+  "description" : "A salve that accelerates wound healing. Restores 100 health over 1 second.",
+  "shortdescription" : "Medsalve",
+  "effects" : [ [
+      {
+        "effect" : "nanowrapheal"
+      }
+    ] ],
+  "emote" : "",
+  "emitters" : [ "stimuse" ],
+  "blockingEffects" : [
+    "salveheal",
+    "bandageheal",
+    "medkitheal",
+    "nanowrapheal"
+  ]
+}

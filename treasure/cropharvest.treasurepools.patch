@@ -91,5 +91,25 @@
 				[0.4, 2]
 			  ]
 			} ]
+	]},
+
+	//SELVAS
+	{"op" : "add",
+		"path" : "/selvasHarvest",
+		"value" : [
+			[0, {
+			  "fill" : [
+				{"item" : "selvasseed"}
+			  ],
+			  "pool" : [
+				{"weight" : 0.89, "item" : "selvasextract"},
+				{"weight" : 0.01, "item" : "selvasseed"},
+				{"weight" : 0.1, "item" : "plantfibre"}
+			  ],
+			  "poolRounds" : [
+				[0.6, 1],
+				[0.4, 2]
+			  ]
+			} ]
 	]}
 ]

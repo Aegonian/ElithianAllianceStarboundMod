@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "alliancemetal", "count" : 1 },
+	{ "item" : "corefragmentore", "count" : 2 }
+  ],
+  "output" : { "item" : "allianceflare", "count" : 2 },
+  "groups" : [ "alliancecrafting2", "consumables", "all" ]
+}

@@ -1,0 +1,38 @@
+{
+  "itemName" : "alliancemedicalkit",
+  "rarity" : "Rare",
+  "price" : 250,
+  "category" : "medicine",
+  "inventoryIcon" : "alliancemedicalkit.png",
+  "description" : "Restores 100 health over 10 seconds and cures most status effects.",
+  "shortdescription" : "Alliance Medical Kit",
+  "effects" : [ [
+      {
+        "effect" : "medkitheal"
+      },
+      {
+        "effect" : "fireblock",
+        "duration" : 2
+      },
+      {
+        "effect" : "iceblock",
+        "duration" : 2
+      },
+      {
+        "effect" : "electricblock",
+        "duration" : 2
+      },
+      {
+        "effect" : "poisonblock",
+        "duration" : 2
+      }
+    ] ],
+  "emote" : "",
+  "emitters" : [ "bandageuse" ],
+  "blockingEffects" : [
+    "salveheal",
+    "bandageheal",
+    "medkitheal",
+    "nanowrapheal"
+  ]
+}

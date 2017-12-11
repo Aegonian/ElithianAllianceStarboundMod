@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "alliancemetal", "count" : 3 },
+	{ "item" : "selvasextract", "count" : 2 },
+	{ "item" : "alliancecloth", "count" : 1 }
+  ],
+  "output" : { "item" : "alliancemedicalkit", "count" : 3 },
+  "groups" : [ "alliancecrafting3", "consumables", "all" ]
+}

@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "alliancemetal", "count" : 3 },
+	{ "item" : "selvasextract", "count" : 2 }
+  ],
+  "output" : { "item" : "alliancemedsalve", "count" : 5 },
+  "groups" : [ "alliancecrafting2", "consumables", "all" ]
+}

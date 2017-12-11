@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "alliancemetal", "count" : 1 },
+	{ "item" : "violiumore", "count" : 10 }
+  ],
+  "output" : {
+    "item" : "alliancecorevigorous",
+    "count" : 1
+  },
+  "duration" : 0.15,
+  "groups" : [ "alliancecrafting3", "ingredients", "all" ]
+}

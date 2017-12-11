@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "alliancecloth", "count" : 2 }
+  ],
+  "output" : { "item" : "alliancebandage", "count" : 1 },
+  "groups" : [ "alliancecrafting", "consumables", "all" ]
+}

@@ -1,0 +1,22 @@
+{
+  "itemName" : "alliancebandage",
+  "rarity" : "Common",
+  "price" : 25,
+  "category" : "medicine",
+  "inventoryIcon" : "alliancebandage.png",
+  "description" : "A cloth bandage for healing minor wounds. Restores 50 health over 1 second.",
+  "shortdescription" : "Cloth Bandage",
+  "effects" : [ [
+      {
+        "effect" : "bandageheal"
+      }
+    ] ],
+  "emote" : "",
+  "emitters" : [ "bandageuse" ],
+  "blockingEffects" : [
+    "salveheal",
+    "bandageheal",
+    "medkitheal",
+    "nanowrapheal"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "alliancemetaltier5", "count" : 10 },
+	{ "item" : "alliancecorepowerful", "count" : 1 },
+    { "item" : "allianceballisticplate", "count" : 2 }
+  ],
+  "duration" : 5,
+  "output" : { "item" : "aegi-tier5mchest", "count" : 1 },
+  "groups" : [ "alliancecrafting3", "armours", "all" ]
+}

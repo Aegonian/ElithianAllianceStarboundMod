@@ -1,0 +1,68 @@
+{
+  "objectName" : "selvasseed",
+  "colonyTags" : ["nature"],
+  "rarity" : "Common",
+  "category" : "seed",
+  "description" : "A small herb with medicinal values.",
+  "shortdescription" : "Selvas Seed",
+  "objectType" : "farmable",
+  "printable" : false,
+  "price" : 20,
+
+  "apexDescription" : "These herbs should prove useful in my adventures.",
+  "avianDescription" : "The smell of these herbs is incredible!",
+  "floranDescription" : "Floran likesss the ssmell of thiss plant.",
+  "glitchDescription" : "Knowledgable. This herb has many medicinal uses.",
+  "humanDescription" : "This herb smells great, and it has many medicinal uses too.",
+  "hylotlDescription" : "A small but beautiful plant. It smells great.",
+  "novakidDescription" : "A small medicinal herb.",
+  
+  "aegiDescription" : "A small selvas herb. it has many medicinal uses, and smells great too.",
+  "avikanDescription" : "An alien plant with an odd smell.",
+  "erixianDescription" : "A basic medicinal herb.",
+  "trinkDescription" : "A medicinal herb with many uses. How efficient.",
+  "hymidDescription" : "One of the best smelling Elithian plants.",
+  "notixDescription" : "This herb has many medicinal uses.",
+  "jorgasianDescription" : "I could create medicine from an extract of this herb.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected alien flora. Potential medicinal uses.",
+
+  "inventoryIcon" : "selvasseedicon.png",
+
+  "tooltipKind" : "seed",
+  "largeImage" : "selvasseed.png:default.2.0",
+
+
+  "orientations" : [
+    {
+      "dualImage" : "selvasseed.png:<color>.<stage>.<alt>",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "requireTilledAnchors" : true,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "radioMessagesOnPickup" : [ "pickupseed" ],
+
+  "stages" : [
+    {
+      "duration" : [580, 660]
+    },
+    {
+      "duration" : [580, 660]
+    },
+    {
+      "alts" : 5,
+      "harvestPool" : "selvasHarvest"
+    }
+  ],
+
+  "maxImmersion" : 0.25
+}

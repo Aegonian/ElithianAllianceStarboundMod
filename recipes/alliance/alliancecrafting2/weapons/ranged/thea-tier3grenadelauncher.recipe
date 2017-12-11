@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "alliancemetaltier3", "count" : 8 },
+    { "item" : "alliancemagazine", "count" : 2 }
+  ],
+  "output" : { "item" : "thea-tier3grenadelauncher", "count" : 1 },
+  "groups" : [ "alliancecrafting2", "weapons", "all" ]
+}

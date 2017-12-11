@@ -1,0 +1,12 @@
+{
+  "itemName" : "selvasextract",
+  "rarity" : "Common",
+  "price" : 50,
+  "category" : "cookingIngredient",
+  "eventCategory" : "eventCrop",
+  "inventoryIcon" : "selvasextract.png",
+  "description" : "The concentrated extract from a selvas herb.",
+  "shortdescription" : "Selvas Extract",
+  "maxStack" : 1000,
+  "learnBlueprintsOnPickup" : [ ]
+}

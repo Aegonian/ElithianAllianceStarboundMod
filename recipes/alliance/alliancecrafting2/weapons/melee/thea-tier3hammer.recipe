@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "alliancemetaltier3", "count" : 6 }
+  ],
+  "output" : { "item" : "thea-tier3hammer", "count" : 1 },
+  "groups" : [ "alliancecrafting2", "weapons", "all" ]
+}

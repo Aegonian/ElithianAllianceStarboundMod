@@ -1,0 +1,10 @@
+{
+  "input" : [
+	{ "item" : "alliancemetaltier4", "count" : 6 },
+    { "item" : "allianceballisticplate", "count" : 1 },
+    { "item" : "allianceglassitem", "count" : 2 }
+  ],
+  "duration" : 5,
+  "output" : { "item" : "aegi-tier4head", "count" : 1 },
+  "groups" : [ "alliancecrafting2", "armours", "all" ]
+}

@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "alliancemetaltier5", "count" : 2 },
+    { "item" : "alliancecircuitry", "count" : 1 }
+  ],
+  "output" : { "item" : "thea-tier5dagger", "count" : 1 },
+  "groups" : [ "alliancecrafting3", "weapons", "all" ]
+}

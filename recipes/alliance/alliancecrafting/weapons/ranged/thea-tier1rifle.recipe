@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "alliancemetal", "count" : 6 },
+    { "item" : "alliancemagazine", "count" : 1 }
+  ],
+  "output" : { "item" : "thea-tier1rifle", "count" : 1 },
+  "groups" : [ "alliancecrafting", "weapons", "all" ]
+}

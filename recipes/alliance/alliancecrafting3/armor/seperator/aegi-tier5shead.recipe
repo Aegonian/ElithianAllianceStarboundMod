@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "alliancemetaltier5", "count" : 6 },
+	{ "item" : "alliancecorevigorous", "count" : 1 },
+    { "item" : "allianceglassitem", "count" : 5 }
+  ],
+  "duration" : 5,
+  "output" : { "item" : "aegi-tier5shead", "count" : 1 },
+  "groups" : [ "alliancecrafting3", "armours", "all" ]
+}

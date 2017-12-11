@@ -1,0 +1,9 @@
+{
+  "input" : [
+	{ "item" : "alliancemetaltier2", "count" : 4 },
+    { "item" : "alliancecloth", "count" : 2 }
+  ],
+  "duration" : 5,
+  "output" : { "item" : "aegi-tier2legs", "count" : 1 },
+  "groups" : [ "alliancecrafting", "armours", "all" ]
+}
