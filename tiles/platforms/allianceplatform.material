@@ -1,0 +1,29 @@
+{
+  "materialId" : 30108,
+  "materialName" : "allianceplatform",
+  "collisionKind" : "platform",
+  "transparent" : true,
+  "itemDrop" : "allianceplatform",
+  "shortdescription" : "Alliance Platform",
+  "description" : "A metal platform.",
+  
+  "glitchDescription" : "Observation. Part of a metal platform.",
+  "floranDescription" : "Metal platformsss.",
+  "novakidDescription" : "A basic metal platform.",
+  
+  "drodenDescription" : "Analysis complete. A metal platform.",
+  
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "category" : "Supports",
+  
+  "renderTemplate" : "/tiles/platformtemplate.config",
+  "renderParameters" : {
+    "texture" : "allianceplatform.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 0,
+    "platform" : true
+  }
+}

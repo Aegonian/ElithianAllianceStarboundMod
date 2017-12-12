@@ -1,0 +1,29 @@
+{
+  "materialId" : 30109,
+  "materialName" : "alliancethickplatform",
+  "collisionKind" : "platform",
+  "transparent" : true,
+  "itemDrop" : "alliancethickplatform",  
+  "shortdescription" : "Thick Alliance Platform",
+  "description" : "A thick metal platform. Very sturdy.",
+  
+  "glitchDescription" : "Measuring. This platform is thicker than most.",
+  "floranDescription" : "Thick platform, for basshing skulsss into.",
+  "novakidDescription" : "Seems like a mighty thick platform.",
+  
+  "drodenDescription" : "Analysis complete. Thick metal platform.",
+  
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "category" : "Supports",
+  
+  "renderTemplate" : "/tiles/platformtemplate.config",
+  "renderParameters" : {
+    "texture" : "alliancethickplatform.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 0,
+    "platform" : true
+  }
+}

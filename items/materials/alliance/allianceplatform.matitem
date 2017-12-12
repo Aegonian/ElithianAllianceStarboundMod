@@ -1,0 +1,12 @@
+{
+  "itemName" : "allianceplatform",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "allianceplatform.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "shortdescription" : "Alliance Platform",
+  "description" : "A metal platform.",
+
+  "materialId" : 30108
+}

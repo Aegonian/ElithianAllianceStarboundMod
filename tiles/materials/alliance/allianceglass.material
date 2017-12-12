@@ -5,12 +5,12 @@
   "itemDrop" : "allianceglass", 
   "shortdescription" : "Alliance Glass",
   
-  "description" : "Triple-pane glass, perfectly insulated.",
-  "glitchDescription" : "Observation. This glass consists of three seperate panes.",
+  "description" : "Triple-pane glass-like plastic, perfectly insulated.",
+  "glitchDescription" : "Observation. This glass is actually a plastic.",
   "floranDescription" : "Glasss.",
   "novakidDescription" : "This glass is clean as a new revolver.",
   
-  "drodenDescription" : "Analysis complete. Multi-pane glass.",
+  "drodenDescription" : "Analysis complete. Multi-pane plastic.",
 
   "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
   "health" : 2,
