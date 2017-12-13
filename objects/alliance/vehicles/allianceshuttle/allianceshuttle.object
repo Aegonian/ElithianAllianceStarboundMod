@@ -1,5 +1,5 @@
 {
-  "objectName" : "allianceshuttle",
+  "objectName" : "allianceshuttleobject",
   "colonyTags" : ["alliance","vehicle"],
   "rarity" : "Legendary",
   "category" : "decorative",
@@ -25,7 +25,7 @@
   "trinkDescription" : "The ASA-26 Ranger is a highly efficient shuttle, and deserves to be so popular.",
   "hymidDescription" : "An ASA-26 Ranger, the standard shuttle used throughout the Alliance.",
   "notixDescription" : "No other shuttle is as widely used as the always-reliable ASA-26 Ranger.",
-  "jorgasianDescription" : "Even in the Triple Alliance, the ASA-26 Ranger is a common sight.",
+  "jorgasianDescription" : "Even in the Triple Monarchy, the ASA-26 Ranger is a common sight.",
   "centensDescription" : "TODO.",
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",

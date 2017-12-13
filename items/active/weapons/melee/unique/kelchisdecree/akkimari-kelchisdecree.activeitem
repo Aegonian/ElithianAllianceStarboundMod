@@ -1,0 +1,40 @@
+{
+  "itemName" : "akkimari-kelchisdecree",
+  "price" : 1500,
+  "level" : 7,
+  "maxStack" : 1,
+  "rarity" : "essential",
+  "description" : "^orange;An agile scathe used by the chosen warriors of Kel'chis.",
+  "shortdescription" : "^orange;Kelchis's Decree^white;",
+  "tooltipKind" : "thea-sword-unique",
+  "category" : "Scathe",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","scathe","akkimari","theaUnique"],
+
+  "inventoryIcon" : "akkimari-kelchisdecree.png",
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  //"collectablesOnPickup" : { "thea_weapons" : "avikan-anakahrstaff" },
+  
+  "meritTokenValue" : 100,
+
+  "animation" : "akkimari-kelchisdecree.animation",
+  "animationParts" : {
+    "blade" : "akkimari-kelchisdecree.png",
+    "bladeFullbright" : "akkimari-kelchisdecreelights.png"
+  },
+  "animationCustom" : {},
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "thea-bowstaffcombo",
+  "primaryAbility" : {
+    "baseDps" : 11.5
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

@@ -1,0 +1,29 @@
+{
+  "materialId" : 30110,
+  "materialName" : "alliancethickstairsplatform",
+  "collisionKind" : "platform",
+  "transparent" : true,
+  "itemDrop" : "alliancethickstairsplatform",  
+  "shortdescription" : "Thick Alliance Stairs",
+  "description" : "Sturdy metal stairs.",
+  
+  "glitchDescription" : "Observation. These stairs appear to be very sturdy.",
+  "floranDescription" : "Ssstairss are for climbing. Floran knowsss thiss.",
+  "novakidDescription" : "A set of sturdy metal stairs.",
+  
+  "drodenDescription" : "Analysis complete. Metal stairs.",
+  
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "category" : "Supports",
+  
+  "renderTemplate" : "/tiles/platformtemplate.config",
+  "renderParameters" : {
+    "texture" : "alliancethickstairsplatform.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 0,
+    "platform" : true
+  }
+}

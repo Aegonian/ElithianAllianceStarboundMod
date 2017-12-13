@@ -25,16 +25,7 @@
     "blade" : "blade.png",
     "bladeFullbright" : "bladefullbright.png"
   },
-  "animationCustom" : {
-    "sounds" : {
-      "fire" : [ "/sfx/melee/vhaleihan_swing.ogg" ],
-	  "dash" : [ "/sfx/melee/vhaleihan_dash.ogg" ],
-	  "chargeStart" : [ "/sfx/melee/vhaleihan_charge_loop.ogg" ],
-	  "chargedLow" : [ "/sfx/melee/vhaleihan_ready_low.ogg" ],
-	  "chargedMedium" : [ "/sfx/melee/vhaleihan_ready_medium.ogg" ],
-	  "chargedHigh" : [ "/sfx/melee/vhaleihan_ready_high.ogg" ]
-    }
-  },
+  "animationCustom" : {},
 
   "scripts" : ["/items/active/weapons/melee/energymeleeweapon.lua"],
   
@@ -46,7 +37,6 @@
 
   "primaryAbilityType" : "thea-bowstaffcombo",
   "primaryAbility" : {
-    "fireTime" : 0.8,
     "baseDps" : 11.5,
 	
     "damageConfig" : {

@@ -1,0 +1,44 @@
+{
+  "objectName" : "alliancehoverbikeobject",
+  "colonyTags" : ["alliance","vehicle"],
+  "rarity" : "Legendary",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 1500,
+  "description" : "A personal transportation hover vehicle.",
+  "shortdescription" : "Alliance Hoverbike",
+  "race" : "aegi",
+  
+  "health" : 6,
+
+  "apexDescription" : "A compact hoverbike.",
+  "avianDescription" : "This hoverbike is quite compact.",
+  "floranDescription" : "Floran goess sssick when flying ssmall bikess.",
+  "glitchDescription" : "Observation. A compact personal transportation vehicle.",
+  "humanDescription" : "I've always loved hoverbikes!",
+  "hylotlDescription" : "A hoverbike, compact in form but powerful in performance.",
+  "novakidDescription" : "A ride on one o' these is sure to get wild!",
+
+  "aegiDescription" : "A hoverbike built by Veronas, Aventor's largest competitor.",
+  "avikanDescription" : "I think it is an alien hoverbike, but the design is very different from our own.",
+  "erixianDescription" : "A Veronas-manufactured hoverbike. It's fast.",
+  "trinkDescription" : "The efficiently compact design of this vehicle is quite pleasing.",
+  "hymidDescription" : "A hoverbike. Built by Veronas, of course.",
+  "notixDescription" : "I've never been as big of a fan of Veronas hoverbikes as the Aegi.",
+  "jorgasianDescription" : "Aeginian hoverbikes are fast, and quite compact.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien hovercraft.",
+
+  "inventoryIcon" : "alliancehoverbikeicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "alliancehoverbike.png:<color>",
+      "imagePosition" : [-28, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

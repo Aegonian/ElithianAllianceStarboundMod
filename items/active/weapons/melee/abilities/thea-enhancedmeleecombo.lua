@@ -1,7 +1,7 @@
 -- Melee primary ability
-TheaShieldBladeCombo = WeaponAbility:new()
+TheaEnhancedMeleeCombo = WeaponAbility:new()
 
-function TheaShieldBladeCombo:init()
+function TheaEnhancedMeleeCombo:init()
   self.comboStep = 1
 
   self.energyUsage = self.energyUsage or 0
@@ -15,18 +15,15 @@ function TheaShieldBladeCombo:init()
   self.cooldownTimer = self.cooldowns[1]
 
   self.animKeyPrefix = self.animKeyPrefix or ""
-  
+
   self.weapon.onLeaveAbility = function()
     self.weapon:setStance(self.stances.idle)
   end
 end
 
 -- Ticks on every update regardless if this is the active ability
-function TheaShieldBladeCombo:update(dt, fireMode, shiftHeld)
+function TheaEnhancedMeleeCombo:update(dt, fireMode, shiftHeld)
   WeaponAbility.update(self, dt, fireMode, shiftHeld)
-  
-  --Swap frames for when the weapon is in the front or back hand
-  animator.setGlobalTag("hand", self.weapon:isFrontHand() and "front" or "back")
 
   if self.cooldownTimer > 0 then
     self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
@@ -54,7 +51,8 @@ function TheaShieldBladeCombo:update(dt, fireMode, shiftHeld)
 end
 
 -- State: windup
-function TheaShieldBladeCombo:windup()
+-- Windup animation before swinging
+function TheaEnhancedMeleeCombo:windup()
   local stance = self.stances["windup"..self.comboStep]
 
   self.weapon:setStance(stance)
@@ -81,8 +79,8 @@ function TheaShieldBladeCombo:windup()
 end
 
 -- State: wait
--- waiting for next combo input
-function TheaShieldBladeCombo:wait()
+-- Waiting for next combo input
+function TheaEnhancedMeleeCombo:wait()
   local stance = self.stances["wait"..(self.comboStep - 1)]
 
   self.weapon:setStance(stance)
@@ -99,8 +97,8 @@ function TheaShieldBladeCombo:wait()
 end
 
 -- State: preslash
--- brief frame in between windup and fire
-function TheaShieldBladeCombo:preslash()
+-- Brief frame in between windup and fire, allows for large movements to look more natural
+function TheaEnhancedMeleeCombo:preslash()
   local stance = self.stances["preslash"..self.comboStep]
 
   self.weapon:setStance(stance)
@@ -112,7 +110,7 @@ function TheaShieldBladeCombo:preslash()
 end
 
 -- State: fire
-function TheaShieldBladeCombo:fire()
+function TheaEnhancedMeleeCombo:fire()
   local stance = self.stances["fire"..self.comboStep]
 
   self.weapon:setStance(stance)
@@ -122,25 +120,51 @@ function TheaShieldBladeCombo:fire()
   animator.setAnimationState("swoosh", animStateKey)
   animator.playSound(animStateKey)
 
-  local swooshKey = self.animKeyPrefix .. "swoosh"
+  local swooshKey = self.animKeyPrefix .. (self.elementalType or self.weapon.elementalType) .. "swoosh"
   animator.setParticleEmitterOffsetRegion(swooshKey, self.swooshOffsetRegions[self.comboStep])
   animator.burstParticleEmitter(swooshKey)
-
-  util.wait(stance.duration, function()
-    local damageArea = partDamageArea("swoosh")
-    self.weapon:setDamage(self.stepDamageConfig[self.comboStep], damageArea)
-  end)
-
+  
+  --If this step is configured as a "spin" move, spin the weapon
+  if stance.spinRate then
+	util.wait(stance.duration, function()
+	  local damageArea = partDamageArea("swoosh")
+	  self.weapon:setDamage(self.stepDamageConfig[self.comboStep], damageArea)
+	
+	  --Remove the weapon from the player's hand, allowing it to rotate freely
+	  activeItem.setOutsideOfHand(true)
+	
+	  --Spin the weapon
+	  self.weapon.relativeWeaponRotation = self.weapon.relativeWeaponRotation + util.toRadians(stance.spinRate * self.dt)
+	
+	  --Optionally force the player to walk while in this stance
+	  if stance.forceWalking then
+		mcontroller.controlModifiers({runningSuppressed=true})
+	  end
+	end)
+  --If this step is a regular attack, simply set the damage area for the duration of the step
+  else
+	util.wait(stance.duration, function()
+	  local damageArea = partDamageArea("swoosh")
+	  self.weapon:setDamage(self.stepDamageConfig[self.comboStep], damageArea)
+	end)
+  end
+  
+  --If this wasn't the last combo step, go to next step
+  --Else, go to cooldown
   if self.comboStep < self.comboSteps then
     self.comboStep = self.comboStep + 1
     self:setState(self.wait)
   else
-    self.cooldownTimer = self.cooldowns[self.comboStep]
+    if self.fullComboCooldown then
+	  self.cooldownTimer = self.fullComboCooldown
+	else
+	  self.cooldownTimer = self.cooldowns[self.comboStep]
+	end
     self.comboStep = 1
   end
 end
 
-function TheaShieldBladeCombo:shouldActivate()
+function TheaEnhancedMeleeCombo:shouldActivate()
   if self.cooldownTimer == 0 and (self.energyUsage == 0 or not status.resourceLocked("energy")) then
     if self.comboStep > 1 then
       return self.edgeTriggerTimer > 0
@@ -150,12 +174,12 @@ function TheaShieldBladeCombo:shouldActivate()
   end
 end
 
-function TheaShieldBladeCombo:readyFlash()
+function TheaEnhancedMeleeCombo:readyFlash()
   animator.setGlobalTag("bladeDirectives", self.flashDirectives)
   self.flashTimer = self.flashTime
 end
 
-function TheaShieldBladeCombo:computeDamageAndCooldowns()
+function TheaEnhancedMeleeCombo:computeDamageAndCooldowns()
   local attackTimes = {}
   for i = 1, self.comboSteps do
     local attackTime = self.stances["windup"..i].duration + self.stances["fire"..i].duration
@@ -184,6 +208,6 @@ function TheaShieldBladeCombo:computeDamageAndCooldowns()
   end
 end
 
-function TheaShieldBladeCombo:uninit()
+function TheaEnhancedMeleeCombo:uninit()
   self.weapon:setDamage()
 end
