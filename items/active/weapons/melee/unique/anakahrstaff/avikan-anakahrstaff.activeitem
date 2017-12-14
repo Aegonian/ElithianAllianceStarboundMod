@@ -4,7 +4,7 @@
   "level" : 6,
   "maxStack" : 1,
   "rarity" : "essential",
-  "description" : "^orange;An power line staff built by Anakahr Systems.",
+  "description" : "^orange;A staff armed with dual static linecharge drives.",
   "shortdescription" : "^orange;Anakahr Staff^white;",
   "tooltipKind" : "thea-sword-unique",
   "category" : "Line Staff",
@@ -25,7 +25,13 @@
     "blade" : "blade.png",
     "bladeFullbright" : "bladefullbright.png"
   },
-  "animationCustom" : {},
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/anakahrstaff_swing1.ogg", "/sfx/melee/anakahrstaff_swing2.ogg", "/sfx/melee/anakahrstaff_swing3.ogg" ],
+      "fire2" : [ "/sfx/melee/anakahrstaff_swing1.ogg", "/sfx/melee/anakahrstaff_swing2.ogg", "/sfx/melee/anakahrstaff_swing3.ogg" ],
+      "fire3" : [ "/sfx/melee/anakahrstaff_swing1.ogg", "/sfx/melee/anakahrstaff_swing2.ogg", "/sfx/melee/anakahrstaff_swing3.ogg" ]
+    }
+  },
 
   "scripts" : ["/items/active/weapons/melee/energymeleeweapon.lua"],
   

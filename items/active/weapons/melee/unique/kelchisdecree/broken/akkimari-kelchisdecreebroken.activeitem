@@ -1,0 +1,69 @@
+{
+  "itemName" : "akkimari-kelchisdecreebroken",
+  "price" : 700,
+  "level" : 1,
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "A broken scathe, a shadow of its former self.",
+  "shortdescription" : "Broken Scathe",
+  "tooltipKind" : "sword",
+  "category" : "Scathe",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","scathe","akkimari"],
+
+  "inventoryIcon" : "akkimari-kelchisdecreebroken.png",
+
+  "animation" : "/items/active/weapons/melee/unique/kelchisdecree/akkimari-kelchisdecree.animation",
+  "animationParts" : {
+    "blade" : "akkimari-kelchisdecreebroken.png",
+    "bladeFullbright" : ""
+  },
+  "animationCustom" : {
+	"animatedParts" : {
+	  "parts" : {
+		"spinSwoosh" : {
+		  "partStates" : {
+			"spinSwoosh" : {
+			  "properties" :{
+				"damageArea" : [ [-4.75, 2.25], [-2.25, 4.75], [2.25, 4.75], [4.75, 2.25], [4.75, -2.25], [2.25, -4.75], [-2.25, -4.75], [-4.75, -2.25] ]
+			  },
+			  "spin" : {
+                "properties" : {
+                  "image" : "/items/active/weapons/melee/unique/kelchisdecree/swoosh/kelchisdecreeswoosh-spin.png:<frame>"
+                }
+              }
+			}
+		  }
+		}
+	  }
+	}
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "thea-bowstaffcombo",
+  "primaryAbility" : {
+    "baseDps" : 7.0
+  },
+  
+  "altAbilityType" : "thea-spearspin",
+  "altAbility" : {
+	"stances" : {
+      "spin" : {
+        "armRotation" : 80,
+        "weaponRotation" : -40,
+        "twoHanded" : false,
+        "weaponOffset" : [0, 0],
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

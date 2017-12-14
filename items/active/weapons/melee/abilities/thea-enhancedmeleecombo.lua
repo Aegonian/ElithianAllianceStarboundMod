@@ -1,3 +1,5 @@
+--An advanced melee combo ability. Allows any of the combo steps to include a weapon spin animation, and allows for completed combos to reset cooldown times
+
 -- Melee primary ability
 TheaEnhancedMeleeCombo = WeaponAbility:new()
 
@@ -9,6 +11,7 @@ function TheaEnhancedMeleeCombo:init()
   self:computeDamageAndCooldowns()
 
   self.weapon:setStance(self.stances.idle)
+  animator.setAnimationState("swoosh", "idle")
 
   self.edgeTriggerTimer = 0
   self.flashTimer = 0
@@ -18,6 +21,7 @@ function TheaEnhancedMeleeCombo:init()
 
   self.weapon.onLeaveAbility = function()
     self.weapon:setStance(self.stances.idle)
+	animator.setAnimationState("swoosh", "idle")
   end
 end
 
@@ -141,6 +145,7 @@ function TheaEnhancedMeleeCombo:fire()
 		mcontroller.controlModifiers({runningSuppressed=true})
 	  end
 	end)
+	animator.setAnimationState("swoosh", "idle")
   --If this step is a regular attack, simply set the damage area for the duration of the step
   else
 	util.wait(stance.duration, function()

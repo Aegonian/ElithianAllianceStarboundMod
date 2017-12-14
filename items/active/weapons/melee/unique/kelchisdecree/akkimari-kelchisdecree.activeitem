@@ -14,7 +14,7 @@
   "inventoryIcon" : "akkimari-kelchisdecree.png",
   
   //CONFIGURATION FOR WEAPONS COLLECTION
-  //"collectablesOnPickup" : { "thea_weapons" : "avikan-anakahrstaff" },
+  //"collectablesOnPickup" : { "thea_weapons" : "akkimari-kelchisdecree" },
   
   "meritTokenValue" : 100,
 
@@ -33,7 +33,188 @@
 
   "primaryAbilityType" : "thea-bowstaffcombo",
   "primaryAbility" : {
-    "baseDps" : 11.5
+    "baseDps" : 11.5,
+	
+	"comboSteps" : 4,
+	
+	"swooshOffsetRegions" : [
+      [0.75, 0.0, 4.25, 5.0],
+      [0.75, 0.0, 4.25, 5.0],
+      [1.5, -1.0, 5.5, 1.0],
+      [4.25, 4.25, -4.25, -4.25]
+    ],
+	
+	"damageConfig" : {
+      "damageSourceKind" : "spear",
+      "statusEffects" : [ ],
+      "knockbackMode" : "facing",
+      "timeout" : 0.25
+    },
+    "stepDamageConfig" : [
+      {
+        "baseDamageFactor" : 1.0,
+        "knockback" : 15
+      },
+      {
+        "baseDamageFactor" : 0.75,
+        "knockback" : 15
+      },
+      {
+        "baseDamageFactor" : 1.25,
+        "knockback" : 20
+      },
+      {
+        "baseDamageFactor" : 0.75,
+        "knockback" : 25
+      }
+    ],
+	
+	"stances" : {
+      //IDLE - DEFAULT
+	  "idle" : {
+        "armRotation" : -90,
+        "weaponRotation" : -15,
+        "weaponOffset" : [0, 0],
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+	  //COMBO STEP 1
+      "windup1" : {
+        "duration" : 0.1,
+        "armRotation" : 90,
+        "weaponRotation" : -10,
+        "weaponOffset" : [0, 0.5],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash1" : {
+        "duration" : 0.025,
+        "armRotation" : 55,
+        "weaponRotation" : -45,
+        "weaponOffset" : [0, 1],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire1" : {
+        "duration" : 0.15,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "weaponOffset" : [0, 1],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait1" : {
+        "duration" : 0.15,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "weaponOffset" : [0, 1],
+        "twoHanded" : true,
+		
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+	  //COMBO STEP 2
+      "windup2" : {
+        "duration" : 0.2,
+        "armRotation" : -110,
+        "weaponRotation" : 40,
+        "weaponOffset" : [0, -0.5],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash2" : {
+        "duration" : 0.025,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "weaponOffset" : [0, -0.5],
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire2" : {
+        "duration" : 0.2,
+        "armRotation" : 80,
+        "weaponRotation" : 20,
+        "weaponOffset" : [0, -1],
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait2" : {
+        "duration" : 0.15,
+        "armRotation" : 60,
+        "weaponRotation" : 30,
+        "weaponOffset" : [0, -0.5],
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+	  //COMBO STEP 3
+      "windup3" : {
+        "duration" : 0.2,
+        "armRotation" : -150,
+        "weaponRotation" : 30,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire3" : {
+        "duration" : 0.2,
+        "armRotation" : 0,
+        "weaponRotation" : -90,
+        "weaponOffset" : [0, 1.5],
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "wait3" : {
+        "duration" : 0.15,
+        "armRotation" : -5,
+        "weaponRotation" : -95,
+        "weaponOffset" : [0, 1.0],
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+	  //COMBO STEP 4
+      "windup4" : {
+        "duration" : 0.15,
+        "armRotation" : -130,
+        "weaponRotation" : -30,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire4" : {
+        "duration" : 0.35,
+        "armRotation" : 10,
+        "weaponRotation" : -40,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : false,
+		
+		"spinRate" : -1500,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
   },
 
   "builder" : "/items/buildscripts/buildunrandweapon.lua"

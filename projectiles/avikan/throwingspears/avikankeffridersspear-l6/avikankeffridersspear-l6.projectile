@@ -22,6 +22,14 @@
       "angleAdjust" : 0
     }
   ],
+  "actionOnCollide" : [
+    {
+      "action" : "sound",
+      "options" : [
+        "/sfx/melee/sword_hit_stone2.ogg"
+      ]
+    }
+  ],
   "damageKind" : "keffridersspear",
   "hydrophobic" : false,
 

@@ -21,7 +21,7 @@
       "parts" : {
         "spinSwoosh" : {
           "properties" : {
-            "zLevel" : 1,
+            "zLevel" : -2,
             "centered" : true,
             "transformationGroups" : ["swoosh"],
             "offset" : [0, 0],
