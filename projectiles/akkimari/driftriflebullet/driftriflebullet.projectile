@@ -35,9 +35,12 @@
       }
     }
   ],
+  "statusEffects" : [
+    "akkimariacidburn"
+  ],
   "lightColor" : [0, 75, 10],
   "fullbright" : true,
-  "damageKind" : "plasma",
+  "damageKind" : "akkimariacid",
 
   "scripts" : ["/projectiles/scripts/thea-lineriflehoming-wave.lua"],
   "scriptDelta" : 1,

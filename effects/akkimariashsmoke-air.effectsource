@@ -1,0 +1,29 @@
+{
+  "kind" : "akkimariashsmoke-air",
+  "definition" : {
+    "duration" : 0.05,
+    "loops" : true,
+    "start" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [
+        [ ]
+      ]
+    },
+    "particles" : [
+      [ "akkimariashsmoke-air" ]
+    ],
+    "sounds" : [
+      [ ]
+    ],
+    "stop" : {
+      "particles" : [
+        [  ]
+      ],
+      "sounds" : [
+        [ ]
+      ]
+    }
+  }
+}

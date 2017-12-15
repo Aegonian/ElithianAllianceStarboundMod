@@ -1,0 +1,24 @@
+{
+  "projectileName" : "akkimariash-ground",
+  "image" : "akkimariash-ground.png",
+  "physics" : "thea-ashpile",
+  "animationCycle" : 2,
+  "frameNumber" : 1,
+  "renderLayer" : "Object+1",
+  "power" : 0,
+  "speed" : 0,
+  "piercing" : true,
+  "initialVelocity" : 0,
+  "timeToLive" : 30,
+  "bounces" : -1,
+  "flippable" : true,
+  "orientationLocked" : true,
+  "emitters" : [ "akkimariashsmoke" ],
+  
+  "actionOnReap" : [],
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  
+  "scripts" : [ "/projectiles/scripts/thea-uprightprojectile.lua" ],
+  "alwaysUpright" : true
+}

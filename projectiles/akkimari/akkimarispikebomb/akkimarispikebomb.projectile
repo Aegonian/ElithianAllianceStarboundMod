@@ -2,7 +2,7 @@
   "projectileName" : "akkimarispikebomb",
   "physics" : "stickygrenade",
   "bounces" : -1,
-  "timeToLive" : 10,
+  "timeToLive" : 5,
   "image" : "akkimarispikebomb.png",
   "animationCycle" : 0.5,
   "frameNumber" : 1,

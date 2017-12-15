@@ -469,5 +469,21 @@
 	  "liquidFriction" : 2.0,
 	  "groundFriction" : 15.0
 	}	  
+  },
+  {"op" : "add",
+	"path" : "/thea-ashpile",
+	"value" : {
+	  "mass" : 1.0,
+	  "gravityMultiplier" : 0.3,
+	  "bounceFactor" : 0.0,
+	  "stopOnFirstBounce" : true,
+	  "maxMovementPerStep" : 0.4,
+	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+	  "ignorePlatformCollision" : true,
+
+	  "airFriction" : 0.0,
+	  "liquidFriction" : 2.0,
+	  "groundFriction" : 15.0
+	}	  
   }
 ]

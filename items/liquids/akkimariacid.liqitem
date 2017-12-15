@@ -1,0 +1,11 @@
+{
+  "itemName" : "akkimariacid",
+  "price" : 1,
+  "rarity" : "Common",
+  "category" : "liquid",
+  "inventoryIcon" : "akkimariacidicon.png",
+  "shortdescription" : "Vaash",
+  "description" : "A highly corrosive biological substance.",
+
+  "liquid" : "akkimariacid"
+}

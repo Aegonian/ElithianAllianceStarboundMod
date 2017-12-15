@@ -1,0 +1,24 @@
+{
+  "particleEmitters" : {
+    "flames" : {
+      "enabled" : true,
+      "emissionRate" : 8.0,
+      "particles" : [
+        { "particle" : "akkimaritrail" },
+		{ "particle" : "akkimariaciddrip" },
+		{ "particle" : "akkimariaciddrip" },
+		{ "particle" : "akkimariashsmoke" }
+      ]
+    }
+  },
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [0, 75, 5]
+    }
+  },
+  "sounds" : {
+    "shock" : [ "/sfx/projectiles/linerifle_shock.ogg" ]
+  }
+}

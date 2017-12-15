@@ -1,0 +1,20 @@
+{
+  "projectileName" : "akkimariaciddeath",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/death/akkimariaciddeath/akkimariaciddeath.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariash",
+      "inheritDamageFactor" : 0.0,
+	  "fuzzAngle" : 0,
+      "angleAdjust" : 0
+    }
+  ],
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "timeToLive" : 0
+}

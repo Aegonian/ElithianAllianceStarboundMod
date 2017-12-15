@@ -1,8 +1,4 @@
 [
-  { "op" : "replace",
-	"path" : "/description",
-	"value" : "Fresh and clear water."
-  },
   { "op" : "add",
 	"path" : "/interactions/-",
 	"value" : {

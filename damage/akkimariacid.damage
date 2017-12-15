@@ -1,0 +1,573 @@
+{
+  "kind" : "akkimariacid",
+  "elementalType" : "akkimariacid",
+  "effects" : {
+    "organic" : {
+      "hit" : {
+        "sounds" : [ "/sfx/projectiles/flame_burn.ogg" ],
+        "particles" : [
+          [
+
+            {
+              "type" : "animated",
+              "animation" : "/animations/akkimariacidhitspark/akkimariacidhitspark.animation",
+			  "fullbright" : true,
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 1,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 0.3,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      },
+      "stronghit" : {
+        "sounds" : [ "/sfx/projectiles/flame_burn.ogg" ],
+        "particles" : [
+          [
+            // CRITICAL FIRE PUFF
+            {
+              "type" : "animated",
+              "animation" : "/animations/akkimaritrail/akkimaritrail.animation",
+              "position" : [0, 0],
+              "initialVelocity" : [1, 1],
+              "finalVelocity" : [0, 0],
+              "fullbright" : true,
+              "light" : [0, 60, 0],
+              "destructionAction" : "shrink",
+              "destructionTime" : 0.85,
+              "fade" : 1,
+              "size" : 0.5,
+              "layer" : "middle",
+              "timeToLive" : 1.2,
+              "variance" : {
+				"position" : [0.25, 0.25],
+				"initialVelocity" : [-2, -2],
+				"size" : 0.2,
+				"timeToLive" : 0.5,
+				"rotation" : 180
+              },
+              "collidesLiquid" : false
+            },
+            {
+              "type" : "animated",
+              "animation" : "/animations/akkimaritrail/akkimaritrail.animation",
+              "position" : [0, 0],
+              "initialVelocity" : [1, 1],
+              "finalVelocity" : [0, 0],
+              "fullbright" : true,
+              "light" : [0, 60, 0],
+              "destructionAction" : "shrink",
+              "destructionTime" : 0.85,
+              "fade" : 1,
+              "size" : 0.5,
+              "layer" : "middle",
+              "timeToLive" : 1.2,
+              "variance" : {
+				"position" : [0.25, 0.25],
+				"initialVelocity" : [-2, -2],
+				"size" : 0.2,
+				"timeToLive" : 0.5,
+				"rotation" : 180
+              },
+              "collidesLiquid" : false
+            },
+            {
+              "type" : "animated",
+              "animation" : "/animations/akkimaritrail/akkimaritrail.animation",
+              "position" : [0, 0],
+              "initialVelocity" : [1, 1],
+              "finalVelocity" : [0, 0],
+              "fullbright" : true,
+              "light" : [0, 60, 0],
+              "destructionAction" : "shrink",
+              "destructionTime" : 0.85,
+              "fade" : 1,
+              "size" : 0.5,
+              "layer" : "middle",
+              "timeToLive" : 1.2,
+              "variance" : {
+				"position" : [0.25, 0.25],
+				"initialVelocity" : [-2, -2],
+				"size" : 0.2,
+				"timeToLive" : 0.5,
+				"rotation" : 180
+              },
+              "collidesLiquid" : false
+            },
+
+            // NORMAL PARTICLES
+            {
+              "type" : "animated",
+              "animation" : "/animations/akkimariacidhitspark/akkimariacidhitspark.animation",
+			  "fullbright" : true,
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 1,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 0.3,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      },
+      "kill" : {
+        "sounds" : [ "/sfx/projectiles/fireball_spit.ogg" ],
+        "particles" : [
+          [
+
+            {
+              "type" : "animated",
+              "animation" : "/animations/akkimariacidhitspark/akkimariacidhitspark.animation",
+			  "fullbright" : true,
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 1,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 0.3,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      }
+    },
+    "robotic" : {
+      "hit" : {
+        "sounds" : [ "/sfx/projectiles/flame_burn.ogg" ],
+        "particles" : [
+          [
+            {
+              "type" : "animated",
+              "animation" : "/animations/akkimariacidhitspark/akkimariacidhitspark.animation",
+			  "fullbright" : true,
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 1,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 0.3,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      },
+      "stronghit" : {
+        "sounds" : [ "/sfx/projectiles/flame_burn.ogg" ],
+        "particles" : [
+          [
+            // CRITICAL FIRE PUFF
+            {
+              "type" : "animated",
+              "animation" : "/animations/akkimaritrail/akkimaritrail.animation",
+              "position" : [0, 0],
+              "initialVelocity" : [1, 1],
+              "finalVelocity" : [0, 0],
+              "fullbright" : true,
+              "light" : [0, 60, 0],
+              "destructionAction" : "shrink",
+              "destructionTime" : 0.85,
+              "fade" : 1,
+              "size" : 0.5,
+              "layer" : "middle",
+              "timeToLive" : 1.2,
+              "variance" : {
+				"position" : [0.25, 0.25],
+				"initialVelocity" : [-2, -2],
+				"size" : 0.2,
+				"timeToLive" : 0.5,
+				"rotation" : 180
+              },
+              "collidesLiquid" : false
+            },
+            {
+              "type" : "animated",
+              "animation" : "/animations/akkimaritrail/akkimaritrail.animation",
+              "position" : [0, 0],
+              "initialVelocity" : [1, 1],
+              "finalVelocity" : [0, 0],
+              "fullbright" : true,
+              "light" : [0, 60, 0],
+              "destructionAction" : "shrink",
+              "destructionTime" : 0.85,
+              "fade" : 1,
+              "size" : 0.5,
+              "layer" : "middle",
+              "timeToLive" : 1.2,
+              "variance" : {
+				"position" : [0.25, 0.25],
+				"initialVelocity" : [-2, -2],
+				"size" : 0.2,
+				"timeToLive" : 0.5,
+				"rotation" : 180
+              },
+              "collidesLiquid" : false
+            },
+            {
+              "type" : "animated",
+              "animation" : "/animations/akkimaritrail/akkimaritrail.animation",
+              "position" : [0, 0],
+              "initialVelocity" : [1, 1],
+              "finalVelocity" : [0, 0],
+              "fullbright" : true,
+              "light" : [0, 60, 0],
+              "destructionAction" : "shrink",
+              "destructionTime" : 0.85,
+              "fade" : 1,
+              "size" : 0.5,
+              "layer" : "middle",
+              "timeToLive" : 1.2,
+              "variance" : {
+				"position" : [0.25, 0.25],
+				"initialVelocity" : [-2, -2],
+				"size" : 0.2,
+				"timeToLive" : 0.5,
+				"rotation" : 180
+              },
+              "collidesLiquid" : false
+            },
+
+            // NORMAL PARTICLES
+            {
+              "type" : "animated",
+              "animation" : "/animations/akkimariacidhitspark/akkimariacidhitspark.animation",
+			  "fullbright" : true,
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 1,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 0.3,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      },
+      "kill" : {
+        "sounds" : [ "/sfx/melee/kill_robotic1.ogg", "/sfx/melee/kill_robotic2.ogg" ],
+        "particles" : [
+          [
+
+            {
+              "type" : "animated",
+              "animation" : "/animations/akkimariacidhitspark/akkimariacidhitspark.animation",
+			  "fullbright" : true,
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 1,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 0.3,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      }
+    },
+    "wooden" : {
+      "hit" : {
+        "sounds" : [ "/sfx/projectiles/flame_burn.ogg" ],
+        "particles" : [
+          [
+
+            {
+              "type" : "animated",
+              "animation" : "/animations/akkimariacidhitspark/akkimariacidhitspark.animation",
+			  "fullbright" : true,
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 1,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 0.3,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      },
+      "stronghit" : {
+        "sounds" : [ "/sfx/projectiles/flame_burn.ogg" ],
+        "particles" : [
+          [
+            // CRITICAL FIRE PUFF
+            {
+              "type" : "animated",
+              "animation" : "/animations/akkimaritrail/akkimaritrail.animation",
+              "position" : [0, 0],
+              "initialVelocity" : [1, 1],
+              "finalVelocity" : [0, 0],
+              "fullbright" : true,
+              "light" : [0, 60, 0],
+              "destructionAction" : "shrink",
+              "destructionTime" : 0.85,
+              "fade" : 1,
+              "size" : 0.5,
+              "layer" : "middle",
+              "timeToLive" : 1.2,
+              "variance" : {
+				"position" : [0.25, 0.25],
+				"initialVelocity" : [-2, -2],
+				"size" : 0.2,
+				"timeToLive" : 0.5,
+				"rotation" : 180
+              },
+              "collidesLiquid" : false
+            },
+            {
+              "type" : "animated",
+              "animation" : "/animations/akkimaritrail/akkimaritrail.animation",
+              "position" : [0, 0],
+              "initialVelocity" : [1, 1],
+              "finalVelocity" : [0, 0],
+              "fullbright" : true,
+              "light" : [0, 60, 0],
+              "destructionAction" : "shrink",
+              "destructionTime" : 0.85,
+              "fade" : 1,
+              "size" : 0.5,
+              "layer" : "middle",
+              "timeToLive" : 1.2,
+              "variance" : {
+				"position" : [0.25, 0.25],
+				"initialVelocity" : [-2, -2],
+				"size" : 0.2,
+				"timeToLive" : 0.5,
+				"rotation" : 180
+              },
+              "collidesLiquid" : false
+            },
+            {
+              "type" : "animated",
+              "animation" : "/animations/akkimaritrail/akkimaritrail.animation",
+              "position" : [0, 0],
+              "initialVelocity" : [1, 1],
+              "finalVelocity" : [0, 0],
+              "fullbright" : true,
+              "light" : [0, 60, 0],
+              "destructionAction" : "shrink",
+              "destructionTime" : 0.85,
+              "fade" : 1,
+              "size" : 0.5,
+              "layer" : "middle",
+              "timeToLive" : 1.2,
+              "variance" : {
+				"position" : [0.25, 0.25],
+				"initialVelocity" : [-2, -2],
+				"size" : 0.2,
+				"timeToLive" : 0.5,
+				"rotation" : 180
+              },
+              "collidesLiquid" : false
+            },
+
+            // NORMAL PARTICLES
+            {
+              "type" : "animated",
+              "animation" : "/animations/akkimariacidhitspark/akkimariacidhitspark.animation",
+			  "fullbright" : true,
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 1,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 0.3,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      },
+      "kill" : {
+        "sounds" : [ "/sfx/melee/kill_wood1.ogg", "/sfx/melee/kill_wood2.ogg" ],
+        "particles" : [
+          [
+
+            {
+              "type" : "animated",
+              "animation" : "/animations/akkimariacidhitspark/akkimariacidhitspark.animation",
+			  "fullbright" : true,
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 1,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 0.3,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      }
+    },
+    "stone" : {
+      "hit" : {
+        "sounds" : [ "/sfx/projectiles/flame_burn.ogg" ],
+        "particles" : [
+          [
+
+            {
+              "type" : "animated",
+              "animation" : "/animations/akkimariacidhitspark/akkimariacidhitspark.animation",
+			  "fullbright" : true,
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 1,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 0.3,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      },
+      "stronghit" : {
+        "sounds" : [ "/sfx/projectiles/flame_burn.ogg" ],
+        "particles" : [
+          [
+            // CRITICAL FIRE PUFF
+            {
+              "type" : "animated",
+              "animation" : "/animations/akkimaritrail/akkimaritrail.animation",
+              "position" : [0, 0],
+              "initialVelocity" : [1, 1],
+              "finalVelocity" : [0, 0],
+              "fullbright" : true,
+              "light" : [0, 60, 0],
+              "destructionAction" : "shrink",
+              "destructionTime" : 0.85,
+              "fade" : 1,
+              "size" : 0.5,
+              "layer" : "middle",
+              "timeToLive" : 1.2,
+              "variance" : {
+				"position" : [0.25, 0.25],
+				"initialVelocity" : [-2, -2],
+				"size" : 0.2,
+				"timeToLive" : 0.5,
+				"rotation" : 180
+              },
+              "collidesLiquid" : false
+            },
+            {
+              "type" : "animated",
+              "animation" : "/animations/akkimaritrail/akkimaritrail.animation",
+              "position" : [0, 0],
+              "initialVelocity" : [1, 1],
+              "finalVelocity" : [0, 0],
+              "fullbright" : true,
+              "light" : [0, 60, 0],
+              "destructionAction" : "shrink",
+              "destructionTime" : 0.85,
+              "fade" : 1,
+              "size" : 0.5,
+              "layer" : "middle",
+              "timeToLive" : 1.2,
+              "variance" : {
+				"position" : [0.25, 0.25],
+				"initialVelocity" : [-2, -2],
+				"size" : 0.2,
+				"timeToLive" : 0.5,
+				"rotation" : 180
+              },
+              "collidesLiquid" : false
+            },
+            {
+              "type" : "animated",
+              "animation" : "/animations/akkimaritrail/akkimaritrail.animation",
+              "position" : [0, 0],
+              "initialVelocity" : [1, 1],
+              "finalVelocity" : [0, 0],
+              "fullbright" : true,
+              "light" : [0, 60, 0],
+              "destructionAction" : "shrink",
+              "destructionTime" : 0.85,
+              "fade" : 1,
+              "size" : 0.5,
+              "layer" : "middle",
+              "timeToLive" : 1.2,
+              "variance" : {
+				"position" : [0.25, 0.25],
+				"initialVelocity" : [-2, -2],
+				"size" : 0.2,
+				"timeToLive" : 0.5,
+				"rotation" : 180
+              },
+              "collidesLiquid" : false
+            },
+
+            // NORMAL PARTICLES
+            {
+              "type" : "animated",
+              "animation" : "/animations/akkimariacidhitspark/akkimariacidhitspark.animation",
+			  "fullbright" : true,
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 1,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 0.3,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      },
+      "kill" : {
+        "sounds" : [ "/sfx/melee/kill_stone1.ogg", "/sfx/melee/kill_stone2.ogg", "/sfx/melee/kill_stone3.ogg", "/sfx/melee/kill_stone4.ogg", "/sfx/melee/kill_stone5.ogg" ],
+        "particles" : [
+          [
+
+            {
+              "type" : "animated",
+              "animation" : "/animations/akkimariacidhitspark/akkimariacidhitspark.animation",
+			  "fullbright" : true,
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 1,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 0.3,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

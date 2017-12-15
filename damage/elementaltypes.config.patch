@@ -85,5 +85,20 @@
 		"kill" : "avikanhuntingdamagenumber"
 	  }
 	}
+  },
+  
+  //AKKIMARI ACID / VAASH
+  { "op" : "add",
+	"path" : "/akkimariacid",
+	"value" : {
+	  "resistanceStat" : "akkimariacidResistance",
+	  "damageNumberParticles" : {
+		"hit" : "akkimariaciddamagenumber",
+		"stronghit" : "akkimariaciddamagenumberstrong",
+		"weakhit" : "akkimariaciddamagenumberweak",
+		"shieldhit" : "akkimariaciddamagenumber",
+		"kill" : "akkimariaciddamagenumber"
+	  }
+	}
   }
 ]

@@ -1,0 +1,25 @@
+{
+  "name" : "akkimariacidburn",
+  "blockingStat" : "akkimariacidStatusImmunity",
+
+  "effectConfig" : {
+	"directive" : "fade=00FF21=0.25",
+	"deathDirective" : "fade=00FF21=1.0?border=2;00FF2180;00000000",
+	"damageKind" : "akkimariacid",
+	"projectileType" : "linerifleshock",
+	"deathProjectileType" : "akkimariaciddeath",
+    "minMaxHealth" : 5,
+    "healthDamageFactor" : 1.0,
+    "jumpDistance" : 5
+  },
+  "defaultDuration" : 3,
+
+  "scripts" : [
+    "akkimariacidburn.lua"
+  ],
+
+  "animationConfig" : "akkimariacidburn.animation",
+
+  "label" : "Vaash Burn",
+  "icon" : "/interface/statuses/akkimariacidburn.png"
+}

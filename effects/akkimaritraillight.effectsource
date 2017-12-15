@@ -1,8 +1,8 @@
 {
-  "kind" : "akkimaritrail",
+  "kind" : "akkimaritraillight",
   "location" : "mouth",
   "definition" : {
-    "duration" : 0.005,
+    "duration" : 0.1,
     "loops" : true,
     "start" : {
       "particles" : [
@@ -11,7 +11,7 @@
       "sounds" : [ [ ] ]
     },
     "particles" : [
-      [ "akkimaritrail", "akkimariaciddrip", "akkimariaciddrip", "akkimariaciddrip" ]
+      [ "akkimaritrail" ]
     ],
     "sounds" : [ [ ] ],
     "stop" : {

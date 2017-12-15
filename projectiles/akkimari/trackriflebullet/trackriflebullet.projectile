@@ -8,7 +8,7 @@
   "power" : 50,
   "speed" : 50,
   "supportsProcessing" : true,
-  //"emitters" : [ "driftrifleburn" ],
+  "emitters" : [ "akkimaritraillight" ],
   "actionOnReap" : [
     {
       "action" : "config",
@@ -34,9 +34,12 @@
       }
     }
   ],
+  "statusEffects" : [
+    "akkimariacidburn"
+  ],
   "lightColor" : [0, 75, 10],
   "fullbright" : true,
-  "damageKind" : "plasma",
+  "damageKind" : "akkimariacid",
 
   "scripts" : ["/projectiles/scripts/thea-lineriflehoming-wave.lua"],
   "scriptDelta" : 1,
