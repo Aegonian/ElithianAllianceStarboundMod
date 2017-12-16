@@ -6,15 +6,89 @@
       "action" : "config",
       "file" : "/projectiles/death/akkimariaciddeath/akkimariaciddeath.config"
     },
+	//ASHES
 	{
       "action" : "projectile",
       "type" : "akkimariash",
       "inheritDamageFactor" : 0.0,
 	  "fuzzAngle" : 0,
       "angleAdjust" : 0
+    },
+	//ACID SPREAD
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
     }
   ],
+  "orientationLocked" : true,
   "damageType" : "NoDamage",
   "damageKind" : "default",
+  "damageTeam" : { "type" : "friendly" },
   "timeToLive" : 0
 }

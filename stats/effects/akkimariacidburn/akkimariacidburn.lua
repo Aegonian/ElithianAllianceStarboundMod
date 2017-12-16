@@ -47,7 +47,7 @@ end
 
 function explode()
   if not self.exploded then
-    world.spawnProjectile(config.getParameter("deathProjectileType"), mcontroller.position(), 0, {0, 0}, false)
+    world.spawnProjectile(config.getParameter("deathProjectileType"), mcontroller.position(), effect.sourceEntity() or entity.id(), {0, 0}, false)
     self.exploded = true
   end
 end

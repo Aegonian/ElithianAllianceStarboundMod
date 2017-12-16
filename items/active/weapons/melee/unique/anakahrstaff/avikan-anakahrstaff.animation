@@ -235,7 +235,7 @@
     "blade" : {
       "active" : false,
       "transformationGroups" : ["weapon"],
-      "offsetRegion" : [-0.5, 2.0, 0.5, 3.0],
+      "offsetRegion" : [-0.75, 2.0, 0.75, 3.0],
       "emissionRate" : 5,
       "particles" : [
         { "particle" : "avikanenergyblade"},

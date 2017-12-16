@@ -5,6 +5,7 @@ TheaEnhancedMeleeCombo = WeaponAbility:new()
 
 function TheaEnhancedMeleeCombo:init()
   self.comboStep = 1
+  self.airTime = 0
 
   self.energyUsage = self.energyUsage or 0
 
@@ -43,6 +44,13 @@ function TheaEnhancedMeleeCombo:update(dt, fireMode, shiftHeld)
     end
   end
 
+  --Calculate our time spent in the air for potential aerial moves
+  if mcontroller.onGround() then
+	self.airTime = 0
+  else
+	self.airTime = math.min(1.0, self.airTime + self.dt)
+  end
+  
   self.edgeTriggerTimer = math.max(0, self.edgeTriggerTimer - dt)
   if self.lastFireMode ~= (self.activatingFireMode or self.abilitySlot) and fireMode == (self.activatingFireMode or self.abilitySlot) then
     self.edgeTriggerTimer = self.edgeTriggerGrace
@@ -127,6 +135,30 @@ function TheaEnhancedMeleeCombo:fire()
   local swooshKey = self.animKeyPrefix .. (self.elementalType or self.weapon.elementalType) .. "swoosh"
   animator.setParticleEmitterOffsetRegion(swooshKey, self.swooshOffsetRegions[self.comboStep])
   animator.burstParticleEmitter(swooshKey)
+  
+  --If this move has a velocity modifier, add it to our movement controller
+  if stance.xVelocity then
+	if stance.onlyInAir and self.airTime > 0.15 or not stance.onlyInAir and self.airTime < 0.1 then
+	  if not stance.maxAimAngle or self.weapon.aimAngle <= stance.maxAimAngle then
+		if stance.addVelocity then
+		  mcontroller.setXVelocity(vec2.add(stance.xVelocity, mcontroller.xVelocity()))
+		else
+		  mcontroller.setXVelocity(stance.xVelocity)
+		end
+	  end
+	end
+  end
+  if stance.yVelocity then
+	if stance.onlyInAir and self.airTime > 0.15 or not stance.onlyInAir and self.airTime < 0.1 then
+	  if not stance.maxAimAngle or self.weapon.aimAngle <= stance.maxAimAngle then
+		if stance.addVelocity then
+		  mcontroller.setYVelocity(vec2.add(stance.yVelocity, mcontroller.yVelocity()))
+		else
+		  mcontroller.setYVelocity(stance.yVelocity)
+		end
+	  end
+	end
+  end
   
   --If this step is configured as a "spin" move, spin the weapon
   if stance.spinRate then

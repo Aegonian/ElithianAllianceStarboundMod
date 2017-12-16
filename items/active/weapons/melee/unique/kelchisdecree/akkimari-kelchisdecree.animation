@@ -35,6 +35,21 @@
 			}
 		  }
         }
+      },
+	  "thruster" : {
+        "default" : "inactive",
+        "states" : {
+          "inactive" : {},
+		  "active" : {
+			"frames" : 4,
+			"cycle" : 0.4,
+            "mode" : "transition",
+            "transition" : "inactive",
+			"properties" : {
+			  "immediateSound" : "/sfx/projectiles/blast_small3.ogg"
+			}
+		  }
+        }
       }
     },
 
@@ -46,7 +61,8 @@
           "image" : "<partImage><paletteSwaps>",
           "offset" : [0.0, 0.0],
           "transformationGroups" : ["weapon"],
-          "damageArea" : [[0, -0.5], [-0.75, 1.0], [-0.75, 2.75], [0, 4.25], [0.75, 2.75], [0.75, 1.0]]
+          "damageArea" : [[0, -0.5], [-0.75, 1.0], [-0.75, 2.75], [0, 4.25], [0.75, 2.75], [0.75, 1.0]],
+          "groundImpactPoly" : [ [0.75, -1.5],  [-0.75, -1.5],  [-0.75, -4],  [0.75, -4] ]
         }
       },
 	  "bladeFullbright" : {
@@ -106,6 +122,30 @@
             }
           }
         }
+      },
+      "thruster" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "fullbright" : true,
+          "offset" : [0.0, 0.0],
+          "transformationGroups" : ["weapon"]
+        },
+
+        "partStates" : {
+          "thruster" : {
+            "inactive" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+			"active" : {
+              "properties" : {
+                "image" : "akkimari-kelchisdecreethruster.png:<frame>"
+              }
+            }
+          }
+        }
       }
     }
   },
@@ -122,6 +162,38 @@
 	  "offsetRegion" : [3.5, -1.0, 7.5, 1.0],
       "burstCount" : 4,
       "particles" : []
+    },
+	"dash" : {
+      "active" : false,
+      "transformationGroups" : ["weapon"],
+      "offsetRegion" : [-0.5, -2.0, 0.5, -3.0],
+      "emissionRate" : 100,
+      "particles" : [
+        { "particle" : "akkimariashsmoke"},
+        { "particle" : "akkimariashsmoke"}
+      ]
+    },
+	"dashBurst" : {
+      "active" : false,
+      "transformationGroups" : ["weapon"],
+      "offsetRegion" : [-0.5, -2.0, 0.5, -3.0],
+      "burstCount" : 10,
+      "particles" : [
+        { "particle" : "akkimariashsmoke"},
+        { "particle" : "akkimariashsmoke"},
+        { "particle" : "akkimariashsmoke"}
+      ]
+    },
+	"vaultBurst" : {
+      "active" : false,
+      "transformationGroups" : ["weapon"],
+      "offsetRegion" : [-0.5, 0.0, 0.5, -1.0],
+      "burstCount" : 10,
+      "particles" : [
+        { "particle" : "akkimariashsmoke"},
+        { "particle" : "akkimariashsmoke"},
+        { "particle" : "akkimariashsmoke"}
+      ]
     }
   },
 
@@ -129,6 +201,7 @@
     "fire" : [],
 	"fire2" : [],
 	"fire3" : [],
-	"fire4" : []
+	"fire4" : [],
+	"windupLoop" : []
   }
 }

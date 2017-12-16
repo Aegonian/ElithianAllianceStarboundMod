@@ -23,7 +23,11 @@
     "blade" : "akkimari-kelchisdecree.png",
     "bladeFullbright" : "akkimari-kelchisdecreelights.png"
   },
-  "animationCustom" : {},
+  "animationCustom" : {
+    "sounds" : {
+	  "windupLoop" : [ "/sfx/melee/spear_twirl_loop.ogg" ]
+    }
+  },
 
   "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
 
@@ -33,7 +37,7 @@
 
   "primaryAbilityType" : "thea-bowstaffcombo",
   "primaryAbility" : {
-    "baseDps" : 11.5,
+    "baseDps" : 10.5,
 	
 	"comboSteps" : 4,
 	
@@ -60,7 +64,7 @@
         "knockback" : 15
       },
       {
-        "baseDamageFactor" : 1.25,
+        "baseDamageFactor" : 1.15,
         "knockback" : 20
       },
       {
@@ -107,7 +111,11 @@
         "twoHanded" : true,
 
         "allowRotate" : false,
-        "allowFlip" : false
+        "allowFlip" : false,
+		
+		"yVelocity" : 30,
+		"onlyInAir" : true,
+		"maxAimAngle" : 0.0
       },
       "wait1" : {
         "duration" : 0.15,
@@ -213,6 +221,67 @@
 
         "allowRotate" : true,
         "allowFlip" : true
+      }
+    }
+  },
+
+  "altAbility" : {
+    "name" : "Sky Vault",
+    "scripts" : ["/items/active/weapons/melee/abilities/bowstaff/thea-staffvault.lua"],
+	"class" : "TheaStaffVault",
+	
+	"cooldownTime" : 1.0,
+	"dashCooldownTime" : 0.55,
+	
+	"vaultEnergy" : 50,
+	"dashEnergy" : 25,
+	
+	"vaultingVelocity" : 45,
+	
+	"maxDashes" : 2,
+	"dashVelocity" : 40,
+	"retainVelocityFactor" : 0.6,
+
+    "stances" : {
+	  "windup" : {
+        "duration" : 0.25,
+        "armRotation" : 70,
+        "weaponRotation" : 180,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : true,
+		
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "prevault" : {
+        "duration" : 0.05,
+        "armRotation" : -40,
+        "weaponRotation" : 45,
+        "weaponOffset" : [0, 0.5],
+        "twoHanded" : true,
+		
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "vault" : {
+        "duration" : 0.3,
+        "armRotation" : -55,
+        "weaponRotation" : 35,
+        "weaponOffset" : [0, -1.0],
+        "twoHanded" : true,
+		
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "dash" : {
+        "duration" : 0.3,
+        "armRotation" : -15,
+        "weaponRotation" : -75,
+        "twoHanded" : true,
+        "weaponOffset" : [0.0, -1.0],
+
+        "allowRotate" : false,
+        "allowFlip" : false
       }
     }
   },
