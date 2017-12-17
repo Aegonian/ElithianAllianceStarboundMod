@@ -1,0 +1,72 @@
+{
+  "objectName" : "allianceweaponimprovementbench",
+  "colonyTags" : ["alliance", "crafting"],
+  "printable" : false,
+  "rarity" : "Rare",
+  "description" : "A workshop that allows weapons to be upgraded into more powerful versions.",
+  "shortdescription" : "Weapon Improvement Bench",
+  "race" : "aegi",
+  "category" : "crafting",
+  "price" : 500,
+
+  "apexDescription" : "The rebels could make good use of weapon attachments.",
+  "avianDescription" : "I can attach mods to my weapons here. If only I could attach wings to myself...",
+  "floranDescription" : "Floran addsss thingss to weaponss here.",
+  "glitchDescription" : "Creative. I can attach all sorts of mods to my weapons here.",
+  "humanDescription" : "I can attach mods to my weapons here. Let the fun begin!",
+  "hylotlDescription" : "One can express their creativity here.",
+  "novakidDescription" : "I reckon I could add some explosive firepower to my guns here.",
+
+  "aegiDescription" : "I can attach mods to compatible weapons here.",
+  "avikanDescription" : "Tools for attaching mods to weapons.",
+  "erixianDescription" : "These tools should allow me to attach mods to my weapons.",
+  "trinkDescription" : "Compatible weapons can be equipped with mods here. Quite an efficient system.",
+  "hymidDescription" : "Weapons can be modified with various attachments here.",
+  "notixDescription" : "This workshop allows me to modify some of my weapons.",
+  "jorgasianDescription" : "I can modify my weapons with several kinds of attachments here",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Analysis complete. Workshop. Allows for the modification of compatible weapons using various mods.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "allianceweaponimprovementbench.png:<color>", "fullbright" : true }, { "image" : "allianceweaponimprovementbenchlit.png:<color>" } ],
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "bottom" ]
+
+    },
+    {
+	  "imageLayers" : [ { "image" : "allianceweaponimprovementbench.png:<color>", "fullbright" : true }, { "image" : "allianceweaponimprovementbenchlit.png:<color>" } ],
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "objectType" : "container",
+
+  "openSounds" : [ "/sfx/objects/mannequin_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/mannequin_close.ogg" ],
+  "slotCount" : 3,
+  "uiConfig" : "/interface/scripted/allianceweaponimprovement/allianceweaponimprovementgui.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600,
+
+  "scripts" : [ "/objects/alliance/crafting/weaponimprovementbench/allianceweaponimprovementbench.lua" ],
+  "scriptDelta" : 5
+}

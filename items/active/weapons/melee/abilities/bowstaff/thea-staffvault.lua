@@ -13,6 +13,8 @@ function TheaStaffVault:init()
   self.dashesLeft = config.getParameter("dashCount", self.maxDashes)
   self.airTime = 0
   
+  self.queryDamageSince = 0
+  
   self:reset()
 end
 
@@ -41,6 +43,19 @@ function TheaStaffVault:update(dt, fireMode, shiftHeld)
   --If grounded, go to vault windup
   if self.weapon.currentAbility == nil and self.fireMode == "alt" and mcontroller.onGround() and not status.resourceLocked("energy") and self.cooldownTimer == 0 then
     self:setState(self.windup)
+  end
+  
+  --If so configured, restore dashes upon landing a hit on an enemy
+  if self.restoreDashesOnHit then
+	local damageNotifications, nextStep = status.inflictedDamageSince(self.queryDamageSince)
+    self.queryDamageSince = nextStep
+    for _, notification in ipairs(damageNotifications) do
+      if notification.healthLost > 0 and notification.sourceEntityId ~= notification.targetEntityId then
+		self.dashesLeft = self.maxDashes
+		activeItem.setInstanceValue("dashCount", self.dashesLeft)
+        break
+      end
+    end
   end
   
   --If in the air, perform a dash

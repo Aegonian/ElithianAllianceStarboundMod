@@ -1,0 +1,12 @@
+{
+  "itemName" : "allianceupgradekit5",
+  "price" : 700,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "allianceupgradekit5.png",
+  "description" : "A high-grade weapon upgrade kit. Upgrades weapons to level 5.",
+  "shortdescription" : "Upgrade Kit Li.5",
+  "itemTags" : [ "theaUpgradeKit" ],
+  
+  "upgradeToLevel" : 5
+}

@@ -241,14 +241,15 @@
 	"maxDashes" : 2,
 	"dashVelocity" : 40,
 	"retainVelocityFactor" : 0.6,
+	"restoreDashesOnHit" : true,
 
     "stances" : {
 	  "windup" : {
         "duration" : 0.25,
-        "armRotation" : 70,
+        "armRotation" : 90,
         "weaponRotation" : 180,
         "weaponOffset" : [0, 0],
-        "twoHanded" : true,
+        "twoHanded" : false,
 		
         "allowRotate" : false,
         "allowFlip" : false

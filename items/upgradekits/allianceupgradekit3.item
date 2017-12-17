@@ -1,0 +1,12 @@
+{
+  "itemName" : "allianceupgradekit3",
+  "price" : 300,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "allianceupgradekit3.png",
+  "description" : "An improved weapon upgrade kit. Upgrades weapons to level 3.",
+  "shortdescription" : "Upgrade Kit Li.3",
+  "itemTags" : [ "theaUpgradeKit" ],
+  
+  "upgradeToLevel" : 3
+}
