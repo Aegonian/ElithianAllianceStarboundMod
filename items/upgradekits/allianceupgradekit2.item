@@ -1,11 +1,12 @@
 {
   "itemName" : "allianceupgradekit2",
   "price" : 200,
+  "maxStack" : 1,
   "rarity" : "Common",
   "category" : "craftingMaterial",
   "inventoryIcon" : "allianceupgradekit2.png",
   "description" : "A basic weapon upgrade kit. Upgrades weapons to level 2.",
-  "shortdescription" : "Upgrade Kit Li.2",
+  "shortdescription" : "Upgrade Kit L.2",
   "itemTags" : [ "theaUpgradeKit" ],
   
   "upgradeToLevel" : 2

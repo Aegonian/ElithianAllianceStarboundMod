@@ -6,11 +6,21 @@ function init()
 
   self.upgradeableWeaponItems = {}
   self.selectedItem = nil
+  self.upgradeToLevel = nil
+  self.lastUpgradeLevel = nil
   populateItemList()
 end
 
 function update(dt)
   populateItemList()
+  checkUpgradeItemSlot()
+  
+  --If the upgradeKit item changed, force the interface to recheck the currently selected item
+  if not compare(self.lastUpgradeLevel, self.upgradeToLevel) then
+	itemSelected()
+	populateItemList(true)
+  end
+  self.lastUpgradeLevel = self.upgradeToLevel
 end
 
 function populateItemList(forceRepop)
@@ -32,7 +42,7 @@ function populateItemList(forceRepop)
 	  showEmptyLabel = false
 
 	  local listItem = string.format("%s.%s", self.itemList, widget.addListItem(self.itemList))
-	  local name = config.config.shortdescription
+	  local name = config.parameters.shortdescription or config.config.shortdescription
 
 	  widget.setText(string.format("%s.itemName", listItem), name)
 	  widget.setItemSlotItem(string.format("%s.itemIcon", listItem), item)
@@ -41,12 +51,39 @@ function populateItemList(forceRepop)
 		{
 		  index = i
 		})
+	  
+	  local hideWeapon = true
+	  if (config.parameters.level or config.config.level) < (self.upgradeToLevel or 0) then
+		hideWeapon = false
+	  end
+	  widget.setVisible(string.format("%s.unavailableoverlay", listItem), hideWeapon)
     end
 
-    self.selectedItem = nil
-    showWeapon(nil)
+	self.selectedItem = nil
+	showWeapon(nil)
+	checkUpgradeItemSlot()
 
     widget.setVisible("emptyLabel", showEmptyLabel)
+  end
+end
+
+function checkUpgradeItemSlot()
+  local upgradeKit = world.containerItemAt(pane.containerEntityId(), 0)
+  local upgradeKitConfig = root.itemConfig(upgradeKit)
+  local upgradeKitCheck = false
+  
+  if upgradeKit then
+	if root.itemHasTag(upgradeKitConfig.config.itemName, "theaUpgradeKit") then
+	  upgradeKitCheck = true
+	  self.upgradeToLevel = upgradeKitConfig.config.upgradeToLevel or 1
+	  widget.setText("newLevelLabel", self.upgradeToLevel)
+	else
+	  widget.setText("newLevelLabel", "-")
+	  self.upgradeToLevel = nil
+	end
+  else
+	widget.setText("newLevelLabel", "-")
+	self.upgradeToLevel = nil
   end
 end
 
@@ -54,10 +91,15 @@ function showWeapon(item, price)
   local enableButton = false
 
   if item then
-    enableButton = true
     local config = root.itemConfig(item)
 	local level = config.parameters.level or config.config.level or 1
     widget.setText("currentLevelLabel", level)
+	
+	if self.upgradeToLevel then
+	  enableButton = level < self.upgradeToLevel
+	else
+	  enableButton = false
+	end
   else
     widget.setText("currentLevelLabel", "-")
   end
@@ -83,17 +125,16 @@ function doUpgrade()
 
     if upgradeItem then
       local consumedItem = player.consumeItem(upgradeItem, false, true)
-      if consumedItem then
-        local consumedCurrency = player.consumeCurrency("essence", selectedData.price)
+	  local itemConfig = root.itemConfig(consumedItem)
+      
+	  --If we successfully consumed both the weapon and the upgradeKit, generate the upgraded weapon
+	  if consumedItem then
         local upgradedItem = copy(consumedItem)
-        if consumedCurrency then
-          upgradedItem.parameters.level = self.upgradeLevel
-          local itemConfig = root.itemConfig(upgradedItem)
-          if itemConfig.config.upgradeParameters then
-            upgradedItem.parameters = util.mergeTable(upgradedItem.parameters, itemConfig.config.upgradeParameters)
-          end
-        end
-        player.giveItem(upgradedItem)
+		upgradedItem.parameters.level = self.upgradeToLevel
+		upgradedItem.parameters.shortdescription = itemConfig.config.shortdescription .. " [L." .. self.upgradeToLevel .."]"
+        
+		world.containerTakeAt(pane.containerEntityId(), 0)
+		player.giveItem(upgradedItem)
       end
     end
     populateItemList(true)

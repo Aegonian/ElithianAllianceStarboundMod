@@ -70,6 +70,10 @@ function createModdedWeapon(weaponConfig, modConfig)
 	newWeapon.parameters.altAbilityType = modConfig.config.theaAttachmentAbility
 	newWeapon.parameters.theaCurrentAttachment = modConfig.config.itemName
 	
+	if weaponConfig.parameters.shortdescription then
+	  newWeapon.parameters.shortdescription = weaponConfig.parameters.shortdescription
+	end
+	
 	--player.giveItem(newWeapon)
 	if world.containerAddItems(pane.containerEntityId(), newWeapon) then
 	  --sb.logInfo("WEAPONATTACHMENT - Assembled weapon given!")
@@ -105,19 +109,17 @@ end
 
 function dismantleModdedWeapon(weaponConfig, attachmentType)
   if weaponConfig and attachmentType and not world.containerItemAt(pane.containerEntityId(), 0) and not world.containerItemAt(pane.containerEntityId(), 1) then
-	if world.containerAddItems(pane.containerEntityId(), weaponConfig.config.itemName) and world.containerAddItems(pane.containerEntityId(), attachmentType) then
+	--Generate an unmodded version of the dismantled weapon
+	local newWeapon = root.createItem(weaponConfig.config.itemName)
+	
+	newWeapon.parameters.level = weaponConfig.parameters.level or weaponConfig.config.level or 1
+	if weaponConfig.parameters.shortdescription then
+	  newWeapon.parameters.shortdescription = weaponConfig.parameters.shortdescription
+	end
+	
+	if world.containerAddItems(pane.containerEntityId(), newWeapon) and world.containerAddItems(pane.containerEntityId(), attachmentType) then
 	  --sb.logInfo("WEAPONATTACHMENT - Weapon Dismantled!")
 	  world.containerTakeAt(pane.containerEntityId(), 2)
 	end
   end
-end
-
-function testSpawn()
-  local newGun = {
-	name = "thea-tier3rifle",
-	count = 1,
-	parameters = {}
-  }
-  --world.containerPutItemsAt(pane.containerEntityId(), newGun, 0)
-  world.containerAddItems(pane.containerEntityId(), newGun)
 end
