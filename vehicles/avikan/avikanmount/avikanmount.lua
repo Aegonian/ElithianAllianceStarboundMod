@@ -45,7 +45,7 @@ function init()
   self.isSprinting = false
 
   self.driver = nil;
-  self.facingDirection = 1
+  self.facingDirection = config.getParameter("facingDirection") or 1 --Allow the spawner to set the starting facing direction
   self.jumpTimer = 0
   
   --Emote settings

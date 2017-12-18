@@ -50,6 +50,6 @@
   },
   "animationPosition" : [0, 0],
 
-  "inputNodes" : [ [4, 1] ],
+  "inputNodes" : [ [3, 0] ],
   "outputNodes" : [ [0, 0] ]
 }

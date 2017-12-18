@@ -23,7 +23,7 @@
   "trinkDescription" : "Compatible weapons can be equipped with mods here. Quite an efficient system.",
   "hymidDescription" : "Weapons can be modified with various attachments here.",
   "notixDescription" : "This workshop allows me to modify some of my weapons.",
-  "jorgasianDescription" : "I can modify my weapons with several kinds of attachments here",
+  "jorgasianDescription" : "I can modify my weapons with several kinds of attachments here.",
   "centensDescription" : "TODO.",
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
@@ -45,8 +45,8 @@
 
   "objectType" : "container",
 
-  "openSounds" : [ "/sfx/objects/mannequin_open.ogg" ],
-  "closeSounds" : [ "/sfx/objects/mannequin_close.ogg" ],
+  "openSounds" : [ "/sfx/objects/chest_medium_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/chest_medium_close.ogg" ],
   "slotCount" : 3,
   "uiConfig" : "/interface/scripted/allianceweaponattachment/allianceweaponattachmentgui.config",
   "frameCooldown" : 5,

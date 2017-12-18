@@ -1,0 +1,26 @@
+{
+  "projectileName" : "thea-waterdroplet",
+  "image" : "thea-waterdroplet.png",
+  "physics" : "grenade",
+  "animationCycle" : 0.1,
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  "emitters" : [ "defaultblue" ],
+  "timeToLive" : 5,
+  "actionOnReap" : [
+    {
+      "action" : "applySurfaceMod",
+      "previousMod" : "tilleddry",
+      "newMod" : "tilled",
+      "radius" : 1
+    }
+  ],
+  "power" : 5.0,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  
+  "scripts" : [ "/projectiles/scripts/thea-randomspeedprojectile.lua" ],
+  "minSpeed" : 12,
+  "maxSpeed" : 17
+}

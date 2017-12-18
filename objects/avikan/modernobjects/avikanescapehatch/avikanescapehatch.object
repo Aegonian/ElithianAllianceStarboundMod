@@ -1,0 +1,65 @@
+{
+  "objectName" : "avikanescapehatch",
+  "colonyTags" : ["avikan", "door"],
+  "rarity" : "Common",
+  "category" : "door",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A reinforced metal hatch often seen in escape tunnels.",
+  "shortdescription" : "Avikan Escape Hatch",
+  "race" : "avikan",
+  
+  "health" : 8,
+
+  "floranDescription" : "Floran can esscape through the hatch.",
+  "glitchDescription" : "Relieved. This hatch might lead to an escape tunnel!",
+  "novakidDescription" : "A metal hatch, like a modern trapdoor.",
+  
+  "drodenDescription" : "Detected Nomada-built hatch.",
+
+  "inventoryIcon" : "avikanescapehatchicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanescapehatch.png:default",
+      "imagePosition" : [0, 0],
+      "renderLayer" : "Object+5",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "left", "right" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/door/door.lua" ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/door/door.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_open.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_close.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "avikanescapehatch.png"
+  },
+  "animationPosition" : [0, 0],
+  
+  //Config for platform when opened
+  "platformDoors" : true,
+  "openMaterials" : [ ],
+  "openMaterialSpaces" : [
+	  [[0,0],"metamaterial:objectplatform"],
+	  [[1,0],"metamaterial:objectplatform"],
+	  [[2,0],"metamaterial:objectplatform"],
+	  [[3,0],"metamaterial:objectplatform"]
+  ],
+
+  "inputNodes" : [ [3, 0] ],
+  "outputNodes" : [ [0, 0] ]
+}

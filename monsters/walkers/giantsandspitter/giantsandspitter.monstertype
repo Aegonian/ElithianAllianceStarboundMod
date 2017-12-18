@@ -46,7 +46,7 @@
             "power" : 1.3,
             "aimAtTarget" : true,
 			"inaccuracy" : 0.1,
-            "fireOffset" : [4.5, 4],
+            "fireOffset" : [4.25, 4.25],
             "projectileCount" : 12,
             "projectileInterval" : 0.035,
             "fireState" : "attack",

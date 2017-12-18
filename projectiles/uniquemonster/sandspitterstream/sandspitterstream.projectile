@@ -10,7 +10,7 @@
   "speed" : 25,
   "timeToLive" : 0.8,
   "bounces" : 4,
-  "layer" : "front",
+  "renderLayer" : "Monster+1",
   "piercing" : true,
   "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
   "damageKind" : "default",

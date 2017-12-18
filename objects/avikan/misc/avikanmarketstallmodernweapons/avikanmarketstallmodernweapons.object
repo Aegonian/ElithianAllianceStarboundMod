@@ -1,0 +1,46 @@
+{
+  "objectName" : "avikanmarketstallmodernweapons",
+  "colonyTags" : ["avikan", "commerce", "avikanmodernweapons"],
+  "rarity" : "Common",
+  "description" : "A market stall selling Avikan firearms.",
+  "shortdescription" : "Avikan Firearms Stall",
+  "race" : "avikan",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 60,
+
+  "apexDescription" : "The rebels could use these weapons.",
+  "avianDescription" : "I always have use for more weapons.",
+  "floranDescription" : "Floran buyss gunsss here.",
+  "glitchDescription" : "Frightened. I hope these weapons won't be used against me or my kind.",
+  "humanDescription" : "Alien weapons. Not as exotic as I would have expected.",
+  "hylotlDescription" : "Alien weaponry. War is found everywhere, it seems.",
+  "novakidDescription" : "I could use a new rifle.",
+
+  "aegiDescription" : "Various Avikan weapons can be purchased here.",
+  "avikanDescription" : "Rifles, sidearms and other weapons are sold here.",
+  "erixianDescription" : "Avikan weapons are sold here.",
+  "trinkDescription" : "The Avikan build decent ballistic rifles.",
+  "hymidDescription" : "This place selss several types of Avikan weapons.",
+  "notixDescription" : "An assortment of Avikan weapons are for sale here.",
+  "jorgasianDescription" : "Avikan weapons can be purchased here.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Detected market stall. Scanning for nearby merchants...",
+
+  "inventoryIcon" : "avikanmarketstallmodernweaponsicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanmarketstallmodernweapons.png:<color>",
+
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ]
+}

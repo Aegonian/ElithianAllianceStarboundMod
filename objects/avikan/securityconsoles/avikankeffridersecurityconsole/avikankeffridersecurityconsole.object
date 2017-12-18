@@ -1,0 +1,55 @@
+{
+  "objectName" : "avikankeffridersecurityconsole",
+  "colonyTags" : ["wired"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "This console can only be activated using the correct security pass.",
+  "shortdescription" : "Keffrider Security Console",
+  "race" : "avikan",
+  "category" : "wire",
+  "price" : 20,
+  
+  "lightColor" : [50, 32, 0],
+  
+  "floranDescription" : "Floran needsss ssecurity passs.",
+  "glitchDescription" : "Frustrated. This console requires a valid security pass.",
+  "novakidDescription" : "Some sorta security terminal. Gotta have the right pass to access it.",
+  
+  "avikanDescription" : "I'll need a security pass to access this console.",
+  "drodenDescription" : "Detected Nomada security terminal. Requires security pass to access.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+	{
+      "dualImage" : "avikankeffridersecurityconsole.png:<color>.off",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "scripts" : [
+    "/objects/scripts/thea-passswitch.lua"
+  ],
+  "scriptDelta" : 5,
+
+  "requiredItem" : "keffriderslicense",
+  "activeTime" : 3.0,
+
+  "animation" : "/objects/wired/switch/switchtoggle2lit.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/interface/ship_confirm1.ogg" ],
+      "off" : [ "/sfx/interface/ship_error1.ogg" ]
+    }
+  },
+
+  "animationParts" : {
+    "bg" : "avikankeffridersecurityconsole.png",
+    "fg" : "avikankeffridersecurityconsolelit.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "outputNodes" : [ [1, 1] ]
+}

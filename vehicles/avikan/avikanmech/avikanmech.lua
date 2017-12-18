@@ -36,7 +36,14 @@ function init()
 
   --Starting stats
   self.driver = nil;
-  self.mechFlipped = false
+  self.facingDirection = config.getParameter("facingDirection") or 1 --Allow the spawner to set the starting facing direction
+  if self.facingDirection > 0 then
+	self.mechFlipped = false
+  elseif self.facingDirection < 0 then
+	self.mechFlipped = true
+  else
+	self.mechFlipped = false
+  end
   self.jumpTimer = 0
   self.lastPosition = mcontroller.position()
   self.fireTimer = self.fireTime

@@ -8,11 +8,11 @@
   "description" : "An automated soil watering solution.",
   "shortdescription" : "Avikan Irrigation System",
 
-  "apexDescription" : "A sort of sprinkler, but for more precise than regular ones.",
+  "apexDescription" : "A sort of sprinkler, but for more efficient than regular ones.",
   "avianDescription" : "It's a machine that waters crops automatically.",
   "floranDescription" : "Waters cropss..",
   "glitchDescription" : "Unimpressed. It is an automated soil watering solution. I enjoy watering my plants by hand.",
-  "humanDescription" : "It's like a sprinkler, but more precise. This is no fun to run through!",
+  "humanDescription" : "It's like a sprinkler, but more efficient. This is no fun to run through!",
   "hylotlDescription" : "It is used to water crops. Simple, but rather clever.",
   "novakidDescription" : "Waterin' crops made simple.",
 
@@ -45,13 +45,13 @@
     }
   ],
 
-  "scripts" : [ "/objects/wired/projectiletrap/projectiletrap.lua" ],
+  "scripts" : [ "/objects/scripts/thea-projectiletrap.lua" ],
   "scriptDelta" : 2,
 
   "animation" : "/objects/wired/projectiletrap/projectiletrap.animation",
   "animationCustom" : {
     "sounds" : {
-      "shoot" : [ ],
+      "shoot" : [ "/sfx/gun/pumpgun_draw1.ogg" ],
       "on" : [ ],
       "off" : [ ]
     }
@@ -62,15 +62,15 @@
   "inactiveLightColor" : [0, 0, 0],
   "activeLightColor" : [0, 0, 0],
 
-  "fireTime" : 1.0,
-  "fireTimeVariance" : 0.0,
-  "inaccuracy" : 0.125,
+  "fireTime" : 2.5,
+  "fireTimeVariance" : 0.5,
+  "inaccuracy" : 0.9,
   "projectileDirection" : [0, -1],
   "projectilePosition" : [1, 0.0],
-  "projectile" : "watersprinkledroplet",
+  "projectile" : "thea-waterdroplet",
+  "projectileCount" : "10",
   "projectileConfig" : {
     "damageTeam" : { "type" : "indiscriminate" },
-    "power" : 0,
-    "speed" : 25
+    "power" : 0
   }
 }

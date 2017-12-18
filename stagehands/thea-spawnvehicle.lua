@@ -6,13 +6,18 @@ function init()
     storage.vehicleHasSpawned = false
   end
   self.vehicle = config.getParameter("vehicle")
+  self.facingDirection = config.getParameter("facingDirection")
 end
 
 function update(dt)
   local area = spawnArea()
   if storage.vehicleHasSpawned == false then
 	if world.regionActive(area) then
-	  local spawnedVehicle = world.spawnVehicle(self.vehicle, entity.position())
+	  local spawnParameters = {}
+	  if self.facingDirection then
+		spawnParameters.facingDirection = self.facingDirection
+	  end
+	  local spawnedVehicle = world.spawnVehicle(self.vehicle, entity.position(), spawnParameters)
 	  if spawnedVehicle then
 		world.sendEntityMessage(spawnedVehicle, "setPersistent")
 		storage.vehicleHasSpawned = true

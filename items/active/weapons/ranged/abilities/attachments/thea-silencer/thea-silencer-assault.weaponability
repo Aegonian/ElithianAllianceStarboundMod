@@ -23,7 +23,7 @@
 
 	"adaptedAbilityIndex" : 1, //Which ability to adapt (1 = primary, 2 = secondary)
 	
-	"fireSound" : [ "/sfx/gun/thea_plasmagun_silenced3.ogg" ],
+	"fireSound" : [ "/sfx/gun/thea_plasmagun_silenced4.ogg" ],
 	
 	"specialAbility" : {
 	  "projectileParameters" : {

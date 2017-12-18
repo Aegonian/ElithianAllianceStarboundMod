@@ -4,7 +4,7 @@
     "species" : "avikan",
     "rules" : [
     ],
-    "anchor" : [ "avikancolony-layout1" ],
+    "anchor" : [ "avikancolony-layout1", "avikancolony-layout2" ],
     "gravity" : 80,
     "maxRadius" : 100000,
     "maxParts" : 50,
@@ -15,10 +15,22 @@
     {
       "name" : "avikancolony-layout1",
       "rules" : [
-        [ "ignorePartMaximumRule" ]
+        [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ],
+		[ "doNotCombineWith", [ "avikancolony-layout2" ] ]
       ],
       "def" : [ "tmx", "avikancolony-layout1.json" ],
-      "chance" : 0.1
+      "chance" : 1
+    },
+    {
+      "name" : "avikancolony-layout2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "ignorePartMaximumRule" ],
+		[ "doNotCombineWith", [ "avikancolony-layout1" ] ]
+      ],
+      "def" : [ "tmx", "avikancolony-layout2.json" ],
+      "chance" : 1
     },
 	{
       "name" : "avikancolony-central1",
@@ -41,34 +53,32 @@
       "chance" : 0.1
     },
 	{
-      "name" : "avikancolony-roomright1",
+      "name" : "avikancolony-roomright1", //SLEEPING QUARTERS RIGHT
       "rules" : [
-        [ "maxSpawnCount", [2] ],
 		[ "ignorePartMaximumRule" ]
       ],
       "def" : [ "tmx", "avikancolony-roomright1.json" ],
-      "chance" : 0.1
+      "chance" : 0
     },
 	{
-      "name" : "avikancolony-roomright2",
+      "name" : "avikancolony-roomright2", //SHOP RIGHT
       "rules" : [
-        [ "maxSpawnCount", [1] ],
+        [ "maxSpawnCount", [2] ],
 		[ "ignorePartMaximumRule" ]
       ],
       "def" : [ "tmx", "avikancolony-roomright2.json" ],
       "chance" : 0.1
     },
 	{
-      "name" : "avikancolony-roomleft1",
+      "name" : "avikancolony-roomleft1", //SLEEPING QUARTERS LEFT
       "rules" : [
-        [ "maxSpawnCount", [2] ],
 		[ "ignorePartMaximumRule" ]
       ],
       "def" : [ "tmx", "avikancolony-roomleft1.json" ],
       "chance" : 0.1
     },
 	{
-      "name" : "avikancolony-roomleft2",
+      "name" : "avikancolony-roomleft2", //DINING AREA LEFT
       "rules" : [
         [ "maxSpawnCount", [1] ],
 		[ "ignorePartMaximumRule" ]
@@ -77,7 +87,7 @@
       "chance" : 0.1
     },
 	{
-      "name" : "avikancolony-roomleft3",
+      "name" : "avikancolony-roomleft3", //STORAGE ROOM LEFT
       "rules" : [
         [ "maxSpawnCount", [1] ],
 		[ "ignorePartMaximumRule" ]

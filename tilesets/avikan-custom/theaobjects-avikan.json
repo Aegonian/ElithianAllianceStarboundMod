@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":221,
+ "tilecount":224,
  "tileheight":256,
  "tileproperties":
     {
@@ -1105,6 +1105,30 @@
          "object":"avikancargodoor",
          "tilesetDirection":"right"
         },
+     "221":
+        {
+         "\/\/shortdescription":"Keffrider Security Console",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"avikankeffridersecurityconsole",
+         "tilesetDirection":"right"
+        },
+     "222":
+        {
+         "\/\/shortdescription":"Avikan Hatch",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"avikanhatch",
+         "tilesetDirection":"right"
+        },
+     "223":
+        {
+         "\/\/shortdescription":"Avikan Escape Hatch",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"avikanescapehatch",
+         "tilesetDirection":"right"
+        },
      "23":
         {
          "\/\/shortdescription":"Covered Avikan Vehicle",
@@ -1766,7 +1790,7 @@
          "\/\/shortdescription":"Avikan Vault Door",
          "imagePositionX":"-16",
          "imagePositionY":"0",
-         "object":"avikanvaultdoor",
+         "object":"avikanvaultdoor-flipped",
          "tilesetDirection":"left"
         },
      "99":
@@ -2327,6 +2351,18 @@
      "220":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/avikan\/avikancargodoor-right.png"
+        },
+     "221":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/avikan\/avikankeffridersecurityconsole.png"
+        },
+     "222":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/avikan\/avikanhatch.png"
+        },
+     "223":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/avikan\/avikanescapehatch.png"
         },
      "23":
         {

@@ -70,7 +70,7 @@ function init()
 
 
   self.driver = nil;
-  self.facingDirection = 1
+  self.facingDirection = config.getParameter("facingDirection") or 1 --Allow the spawner to set the starting facing direction
   self.angle = 0
   self.jumpTimer = 0
   self.engineRevTimer = 0.0

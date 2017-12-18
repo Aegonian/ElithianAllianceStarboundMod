@@ -1,0 +1,29 @@
+{
+  "type" : "tenantavikanmodernweaponsmerchant",
+  "baseType" : "merchant",
+  
+  "dropPools" : [],
+
+  "scriptConfig" : {
+    "questGenerator" : { "pools" : [], "enableParticipation" : false },
+	
+	"merchant" : {
+	  "categories" : {
+		"override" : [ "avikancolonyweapons" ]
+	  }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ "avikan-merchanthead" ],
+			"chest" : [ "avikan-merchantchest" ],
+            "legs" : [ "avikan-merchantlegs" ],
+            "back" : [ "avikanmodernpack" ]
+          }
+        ] ]
+    ]
+  }
+}
