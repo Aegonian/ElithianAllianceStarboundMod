@@ -1,12 +1,14 @@
 require "/scripts/util.lua"
 require "/scripts/rect.lua"
 require "/scripts/vec2.lua"
+require "/scripts/interp.lua"
 require "/items/active/weapons/weapon.lua"
 
 EnergyExplosion = WeaponAbility:new()
 
 function EnergyExplosion:init()
   self.groundWasHit = false
+  self:reset()
 end
 
 function EnergyExplosion:update(dt, fireMode, shiftHeld)
@@ -14,6 +16,11 @@ function EnergyExplosion:update(dt, fireMode, shiftHeld)
 
   if self.weapon.currentAbility == nil and self.fireMode == "alt" and mcontroller.onGround() and not status.resourceLocked("energy") then
     self:setState(self.windup)
+  end
+  
+  if self.startLine and self.endLine then
+	world.debugLine(self.startLine, self.endLine, "red")
+	world.debugPoint(self.endLine, "red")
   end
 end
 
@@ -29,7 +36,7 @@ function EnergyExplosion:windup()
 
   local wasFull = false
   local chargeTimer = 0
-  while self.fireMode == "alt" and (chargeTimer == self.chargeTime or status.overConsumeResource("energy", (self.energyUsage / self.chargeTime) * self.dt)) do
+  while self.fireMode == "alt" and (chargeTimer == self.chargeTime and not self.releaseOnReady or status.overConsumeResource("energy", (self.energyUsage / self.chargeTime) * self.dt)) and not (chargeTimer == self.chargeTime and self.releaseOnReady) do
     chargeTimer = math.min(self.chargeTime, chargeTimer + self.dt)
 
     if chargeTimer == self.chargeTime and not wasFull then
@@ -41,6 +48,12 @@ function EnergyExplosion:windup()
     local chargeRatio = math.sin(chargeTimer / self.chargeTime * 1.57)
     self.weapon.relativeArmRotation = util.toRadians(util.lerp(chargeRatio, {self.stances.windup.armRotation, self.stances.windup.endArmRotation}))
     self.weapon.relativeWeaponRotation = util.toRadians(util.lerp(chargeRatio, {self.stances.windup.weaponRotation, self.stances.windup.endWeaponRotation}))
+	
+	if self.stances.windup.endWeaponOffset then
+	  local from = self.stances.windup.weaponOffset or {0,0}
+	  local to = self.stances.windup.endWeaponOffset or {0,0}
+	  self.weapon.weaponOffset = {interp.linear(chargeRatio, from[1], to[1]), interp.linear(chargeRatio, from[2], to[2])}
+	end
 
     mcontroller.controlModifiers({
       jumpingSuppressed = true,
@@ -88,6 +101,9 @@ end
 function EnergyExplosion:reset()
   animator.stopAllSounds("chargefire")
   animator.stopAllSounds("chargefull")
+  
+  self.startLine = nil
+  self.endLine = nil
 end
 
 function EnergyExplosion:uninit()
@@ -121,11 +137,11 @@ end
 
 function EnergyExplosion:impactPosition()
   local dir = mcontroller.facingDirection()
-  local startLine = vec2.add(mcontroller.position(), vec2.mul(self.impactLine[1], {dir, 1}))
-  local endLine = vec2.add(mcontroller.position(), vec2.mul(self.impactLine[2], {dir, 1}))
+  self.startLine = vec2.add(mcontroller.position(), vec2.mul(self.impactLine[1], {dir, 1}))
+  self.endLine = vec2.add(mcontroller.position(), vec2.mul(self.impactLine[2], {dir, 1}))
   
-  local blocks = world.collisionBlocksAlongLine(startLine, endLine, {"Null", "Block"})
+  local blocks = world.collisionBlocksAlongLine(self.startLine, self.endLine, {"Null", "Block"})
   if #blocks > 0 then
-    return vec2.add(blocks[1], {0.5, 0.5}), endLine[2] - blocks[1][2] + 1
+    return vec2.add(blocks[1], {0.5, 0.5}), self.endLine[2] - blocks[1][2] + 1
   end
 end

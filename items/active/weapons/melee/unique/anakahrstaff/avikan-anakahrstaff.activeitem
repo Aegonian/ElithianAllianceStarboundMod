@@ -27,15 +27,20 @@
   },
   "animationCustom" : {
     "sounds" : {
+	  //PRIMARY
       "fire" : [ "/sfx/melee/anakahrstaff_swing1.ogg", "/sfx/melee/anakahrstaff_swing2.ogg", "/sfx/melee/anakahrstaff_swing3.ogg" ],
       "fire2" : [ "/sfx/melee/anakahrstaff_swing1.ogg", "/sfx/melee/anakahrstaff_swing2.ogg", "/sfx/melee/anakahrstaff_swing3.ogg" ],
-      "fire3" : [ "/sfx/melee/anakahrstaff_swing1.ogg", "/sfx/melee/anakahrstaff_swing2.ogg", "/sfx/melee/anakahrstaff_swing3.ogg" ]
+      "fire3" : [ "/sfx/melee/anakahrstaff_swing1.ogg", "/sfx/melee/anakahrstaff_swing2.ogg", "/sfx/melee/anakahrstaff_swing3.ogg" ],
+	  //ALT
+	  "charge" : ["/sfx/melee/charge_up13.ogg"],
+	  "chargefull" : ["/sfx/melee/charge_full_hold2.ogg"],
+	  "chargefire" : ["/sfx/melee/charge_full_swing3.ogg"]
     }
   },
 
   "scripts" : ["/items/active/weapons/melee/energymeleeweapon.lua"],
   
-  "activeTime" : 3.0,
+  "activeTime" : 5.0,
 
   "elementalType" : "linerifle",
 
@@ -51,6 +56,68 @@
       "knockbackMode" : "aim",
       "knockback" : 30,
       "timeoutGroup" : "primary"
+    }
+  },
+
+  "altAbility" : {
+    "name" : "Discharge",
+    "scripts" : ["/items/active/weapons/melee/abilities/hammer/energyexplosion/energyexplosion.lua"],
+	"class" : "EnergyExplosion",
+
+    "energyUsage" : 100.0,
+    "cooldownTime" : 3.5,
+
+    "chargeTime" : 1.0,
+    "minChargeTime" : 0.95,
+	
+	"dischargeEnergyCost" : 500,
+	"releaseOnReady" : true,
+	
+	"useDynamicOffset" : true,
+	
+	"impactLine" : [ [1.25, -1.5], [1.25, -6.0] ],
+    "impactWeaponOffset" : 1.375,
+	
+	"projectileOffset" : [0, 1.5],
+
+    "projectileType" : "anakahrstaffexplosionspawner",
+    "projectileParameters" : {
+      "power" : 7.0,
+      "knockbackMode" : "facing",
+	  "knockback" : 0
+    },
+
+    "stances" : {
+      "windup" : {
+        "armRotation" : -30,
+        "endArmRotation" : 110,
+        "weaponRotation" : 80,
+        "endWeaponRotation" : 510,
+        "weaponOffset" : [0, 0.0],
+        "endWeaponOffset" : [0, -1.0],
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0.5,
+        "armRotation" : 0,
+        "weaponRotation" : -180,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+	  "cooldown" : {
+        "duration" : 1.5,
+        "armRotation" : -110,
+        "weaponRotation" : -55,
+        "weaponOffset" : [0, -0.75],
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
     }
   },
 

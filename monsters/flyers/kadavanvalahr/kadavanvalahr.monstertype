@@ -8,7 +8,7 @@
 
   "animation" : "kadavanvalahr.animation",
 
-  "dropPools" : [ { "default" : "kadavanvalahrTreasure", "bow" : "kadavanvalahrHunting", "avikanhunting" : "avikanhunting", "keffridersspear" : "avikanhunting" } ],
+  "dropPools" : [ { "default" : "kadavanvalahrTreasure", "bow" : "kadavanvalahrHunting", "avikanhunting" : "kadavanvalahrAvikanHunting", "keffridersspear" : "kadavanvalahrAvikanHunting" } ],
 
   "baseParameters" : {
     "scripts" : [

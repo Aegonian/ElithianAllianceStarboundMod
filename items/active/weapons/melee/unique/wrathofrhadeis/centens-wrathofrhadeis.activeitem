@@ -26,7 +26,9 @@
   },
   "animationCustom" : {
     "sounds" : {
-      "fire" : ["/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg"],
+      //PRIMARY
+	  "fire" : ["/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg"],
+	  //ALT
 	  "charge" : ["/sfx/melee/charge_up13.ogg"],
 	  "chargefull" : ["/sfx/melee/charge_full_hold2.ogg"],
 	  "chargefire" : ["/sfx/melee/charge_full_swing3.ogg"]

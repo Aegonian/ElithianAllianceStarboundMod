@@ -1,4 +1,12 @@
 {
+  // ==============================================================================================
+  //                           AVIKAN HUNTING TREASURE POOLS
+  // ==============================================================================================
+
+  // ================================
+  //        Generic Tiered Pools
+  // ================================
+  
   "avikanhunting" : [
 	//TIER 1, STARTING PLANETS
     [0, {
@@ -98,7 +106,11 @@
       "allowDuplication" : false
     } ]
   ],
-  
+
+  // ================================
+  //        Special Pools
+  // ================================
+
   "avikantrophyskulls" : [
     [1, {
       "pool" : [
@@ -109,6 +121,85 @@
 		{"weight" : 1.0, "item" : "avikan-fangedskull"},
 		{"weight" : 1.0, "item" : "avikan-fullskull"},
 		{"weight" : 1.0, "item" : "avikan-skullmask"}
+      ]
+    } ]
+  ],
+
+  // ================================
+  //        Unique Monster Pools
+  // ================================
+
+  //SANDSPITTER
+  "sandspitterAvikanHunting" : [
+    [1, {
+      "fill" : [
+        {"pool" : "avikanhunting" },
+		{"pool" : "sandspitterAvikanHuntingPool" }
+      ]
+    } ]
+  ],
+  "sandspitterAvikanHuntingPool" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.499, "item" : "rawribmeat"},
+		{"weight" : 0.499, "item" : "sandspittersack"},
+        {"weight" : 0.002, "item" : "giantsandspitteraf"}
+      ]
+    } ]
+  ],
+  
+  //SANDCRAWLER
+  "sandcrawlerAvikanHunting" : [
+    [1, {
+      "fill" : [
+        {"pool" : "avikanhunting" },
+		{"pool" : "sandcrawlerAvikanHuntingPool" }
+      ]
+    } ]
+  ],
+  "sandcrawlerAvikanHuntingPool" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "sandcrawlermeat"},
+		{"weight" : 0.399, "item" : "sandcrawlertooth"},
+        {"weight" : 0.002, "item" : "largesandcrawleraf"}
+      ]
+    } ]
+  ],
+  
+  //GAD'HUR
+  "kadavangadhurAvikanHunting" : [
+    [1, {
+      "fill" : [
+        {"pool" : "avikanhunting" },
+		{"pool" : "kadavangadhurAvikanHuntingPool" }
+      ]
+    } ]
+  ],
+  "kadavangadhurAvikanHuntingPool" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.6, "item" : "alienmeat"},
+		{"weight" : 0.4, "item" : "monsterhide"}
+      ]
+    } ]
+  ],
+  
+  //VALAHR
+  "kadavanvalahrAvikanHunting" : [
+    [1, {
+      "fill" : [
+        {"pool" : "avikanhunting" },
+		{"pool" : "kadavanvalahrAvikanHuntingPool" }
+      ]
+    } ]
+  ],
+  "kadavanvalahrAvikanHuntingPool" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "alienmeat"},
+		{"weight" : 0.399, "item" : "valahrgland"},
+        {"weight" : 0.002, "item" : "kadavanvalahraf"}
       ]
     } ]
   ]

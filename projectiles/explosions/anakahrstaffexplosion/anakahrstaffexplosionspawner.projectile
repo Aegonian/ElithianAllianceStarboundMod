@@ -1,0 +1,56 @@
+{
+  "projectileName" : "anakahrstaffexplosionspawner",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "physics" : "thea-noclipprojectile",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/primeinitiativeexplosion/primeinitiativeexplosion.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "linebowarrow-slow",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.2,
+      "angleAdjust" : 45
+    },
+	{
+      "action" : "projectile",
+      "type" : "linebowarrow-slow",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.2,
+      "angleAdjust" : 65
+    },
+	{
+      "action" : "projectile",
+      "type" : "linebowarrow-slow",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.2,
+      "angleAdjust" : 80
+    },
+	{
+      "action" : "projectile",
+      "type" : "linebowarrow-slow",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.2,
+      "angleAdjust" : 100
+    },
+	{
+      "action" : "projectile",
+      "type" : "linebowarrow-slow",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.2,
+      "angleAdjust" : 115
+    },
+	{
+      "action" : "projectile",
+      "type" : "linebowarrow-slow",
+      "fuzzAngle" : 10,
+      "inheritDamageFactor" : 0.2,
+      "angleAdjust" : 135
+    }
+  ],
+  "damageKind" : "linerifle",
+  "damageType" : "NoDamage",
+  "timeToLive" : 0
+}

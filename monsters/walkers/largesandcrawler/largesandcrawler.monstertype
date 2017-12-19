@@ -8,7 +8,7 @@
 
   "animation" : "largesandcrawler.animation",
 
-  "dropPools" : [ { "default" : "sandcrawlerTreasure", "bow" : "sandcrawlerHunting", "avikanhunting" : "avikanhunting", "keffridersspear" : "avikanhunting" } ],
+  "dropPools" : [ { "default" : "sandcrawlerTreasure", "bow" : "sandcrawlerHunting", "avikanhunting" : "sandcrawlerAvikanHunting", "keffridersspear" : "sandcrawlerAvikanHunting" } ],
 
   "baseParameters" : {
     "scripts" : [

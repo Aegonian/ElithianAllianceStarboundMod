@@ -1,0 +1,48 @@
+{
+  "projectileName" : "linebowarrow-slow",
+  "image" : "linebowarrow.png",
+  "physics" : "grenade",
+  "bounces" : 0,
+  "piercing" : false,
+  "animationCycle" : 0.6,
+  "frameNumber" : 8,
+  //"emitters" : [ "linerifletrail", "linerifletrail2" ],
+  "damageKindImage" : "icon.png",
+  "lightColor" : [150, 100, 0],
+  "fullbright" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+	  "file" : "/projectiles/explosions/smalllinerifleimpact/smalllinerifleimpact.config"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.05,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "animated",
+        "animation" : "/projectiles/unique/linebowarrow/trail.animation",
+        "position" : [-0.5, 0],
+        "layer" : "back",
+		"collidesForeground" : false,
+        "timeToLive" : 1.0,
+        "destructionTime" : 0.1,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  "statusEffects" : [
+    "linerifleburn"
+  ],
+  "power" : 5.0,
+  "speed" : 20,
+  "damageKind" : "linerifle",
+  
+  "scripts" : [ "/projectiles/scripts/thea-lineriflehoming.lua" ],
+  "searchRadius" : 5,
+  "baseHomingControlForce" : 4.5
+}

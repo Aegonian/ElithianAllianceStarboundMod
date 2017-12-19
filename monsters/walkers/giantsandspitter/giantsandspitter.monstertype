@@ -8,7 +8,7 @@
 
   "animation" : "giantsandspitter.animation",
 
-  "dropPools" : [ { "default" : "sandspitterTreasure", "bow" : "sandspitterHunting", "avikanhunting" : "avikanhunting", "keffridersspear" : "avikanhunting" } ],
+  "dropPools" : [ { "default" : "sandspitterTreasure", "bow" : "sandspitterHunting", "avikanhunting" : "sandspitterAvikanHunting", "keffridersspear" : "sandspitterAvikanHunting" } ],
 
   "baseParameters" : {
     "scripts" : [

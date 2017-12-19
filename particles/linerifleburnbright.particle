@@ -1,0 +1,24 @@
+{
+  "kind" : "linerifleburnbright",
+  "definition" : {
+    "type" : "animated",
+    "looping" : true,
+    "animation" : "/animations/linerifleburn/linerifleburn.animation",
+    "position" : [0, 0],
+    "finalVelocity" : [0, 0],
+    "approach" : [50, 50],
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.7,
+    "fade" : 1,
+    "size" : 0.6,
+    "layer" : "middle",
+	"fullbright" : true,
+    "timeToLive" : 0.7,
+    "variance" : {
+      "finalVelocity" : [1.5, 1.5],
+	  "size" : 0.2,
+      "rotation" : 180,
+      "angularVelocity" : 180
+    }
+  }
+}

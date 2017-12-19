@@ -8,7 +8,7 @@
 
   "animation" : "kadavangadhur.animation",
 
-  "dropPools" : [ { "default" : "kadavangadhurTreasure", "bow" : "kadavangadhurHunting", "avikanhunting" : "avikanhunting", "keffridersspear" : "avikanhunting" } ],
+  "dropPools" : [ { "default" : "kadavangadhurTreasure", "bow" : "kadavangadhurHunting", "avikanhunting" : "kadavangadhurAvikanHunting", "keffridersspear" : "kadavangadhurAvikanHunting" } ],
 
   "baseParameters" : {
     "scripts" : [

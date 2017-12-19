@@ -1,0 +1,23 @@
+{
+  "kind" : "lineriflestatictrail",
+  "definition" : {
+    "type" : "textured",
+    "image" : "/animations/lineriflestatictrail/lineriflestatictrail-basic.png",
+    //"type" : "animated",
+    //"animation" : "/animations/lineriflestatictrail/lineriflestatictrail.animation",
+    "position" : [0, 0],
+    "initialVelocity" : [0, 0],
+    "finalVelocity" : [0, 0],
+	"fullbright" : true,
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.3,
+    "fade" : 1,
+    "size" : 0.75,
+    "layer" : "back",
+    "timeToLive" : 0.0,
+    "variance" : {
+      "rotation" : 180
+    },
+	"collidesLiquid" : false
+  }
+}
