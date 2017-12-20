@@ -1,0 +1,64 @@
+{
+  "objectName" : "allianceshippingcontainer",
+  "colonyTags" : ["alliance", "storage"],
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "category" : "storage",
+  "printable" : false,
+  "price" : 625,
+  "description" : "A large shipping container decorated with the logo of the AAE.",
+  "shortdescription" : "AAE Shipping Container",
+  "race" : "aegi",
+
+  "health" : 8,
+
+  "apexDescription" : "It's a huge crate for shipping large cargo.",
+  "avianDescription" : "I would guess it's meant for shipping very large objects.",
+  "floranDescription" : "Maybe theress food in it.",
+  "glitchDescription" : "Curious. What's stored in here?",
+  "humanDescription" : "It's a really big shipping container.",
+  "hylotlDescription" : "A rather large container for shipping large quantities of cargo.",
+  "novakidDescription" : "A large container for haulin' goods.",
+
+  "aegiDescription" : "A large shipping container used by the AAE.",
+  "avikanDescription" : "A large alien-built shipping container.",
+  "erixianDescription" : "A basic shipping container.",
+  "trinkDescription" : "A shipping container used by the AAE.",
+  "hymidDescription" : "A large metal shipping container.",
+  "notixDescription" : "This shipping container is extremely sturdy.",
+  "jorgasianDescription" : "A basic shipping container.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Analyzing content.",
+
+  "inventoryIcon" : "allianceshippingcontainericon.png",
+  "orientations" : [
+    {
+      "image" : "allianceshippingcontainer.png:<color>.<key>",
+      "imagePosition" : [-56, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    },
+	{
+      "image" : "allianceshippingcontainerleft.png:<color>.<key>",
+      "imagePosition" : [-56, 0],
+      "direction" : "left",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/shippingcontainer_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/shippingcontainer_close.ogg" ],
+  "slotCount" : 64,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600
+}

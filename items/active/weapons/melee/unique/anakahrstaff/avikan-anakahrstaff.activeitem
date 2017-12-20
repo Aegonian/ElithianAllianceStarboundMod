@@ -14,7 +14,7 @@
   "inventoryIcon" : "avikan-anakahrstaff.png",
   
   //CONFIGURATION FOR WEAPONS COLLECTION
-  //"collectablesOnPickup" : { "thea_weapons" : "avikan-anakahrstaff" },
+  "collectablesOnPickup" : { "thea_weapons" : "avikan-anakahrstaff" },
   
   "meritTokenValue" : 100,
 
@@ -82,7 +82,7 @@
 
     "projectileType" : "anakahrstaffexplosionspawner",
     "projectileParameters" : {
-      "power" : 7.0,
+      "power" : 6.5,
       "knockbackMode" : "facing",
 	  "knockback" : 0
     },
@@ -104,6 +104,7 @@
         "duration" : 0.5,
         "armRotation" : 0,
         "weaponRotation" : -180,
+        "weaponOffset" : [0, 1.25],
         "twoHanded" : false,
 
         "allowRotate" : false,

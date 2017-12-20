@@ -1,0 +1,53 @@
+{
+  "objectName" : "alliancekitchencabinet",
+  "colonyTags" : ["alliance","storage"],
+  "printable" : false,
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "rarity" : "Common",
+  "description" : "A wall-mounted kitchen cabinet.",
+  "shortdescription" : "Alliance Kitchen Cabinet",
+  "race" : "aegi",
+  "category" : "furniture",
+  "price" : 45,
+  "health" : 1.5,
+
+  "apexDescription" : "A simple cabinet.",
+  "avianDescription" : "Just a cabinet.",
+  "floranDescription" : "Floran knowsss thiss iss a cabinet.",
+  "glitchDescription" : "Bored. Simply a cabinet.",
+  "humanDescription" : "A pretty regular cabinet.",
+  "hylotlDescription" : "A good place to store kitchen equipment.",
+  "novakidDescription" : "A simple cabinet.",
+
+  "aegiDescription" : "A cabinet, for storage.",
+  "avikanDescription" : "Storage. Not sure for what, though.",
+  "erixianDescription" : "There isn't much to this cabinet.",
+  "trinkDescription" : "A cabinet.",
+  "hymidDescription" : "Just a cabinet.",
+  "notixDescription" : "Some kind of cabinet.",
+  "jorgasianDescription" : "A cabinet. Little else to it.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien storage.",
+
+  "inventoryIcon" : "alliancekitchencabineticon.png",
+  "orientations" : [
+    {
+      "dualImage" : "alliancekitchencabinet.png:<color>.<key>",
+      "imagePosition" : [-16, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ],
+      "collision" : "platform"
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/chest_small_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/chest_small_close.ogg" ],
+  "slotCount" : 16,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600
+}

@@ -1,6 +1,7 @@
 {
   "objectName" : "alliancebookcase",
   "colonyTags" : ["alliance","storage"],
+  "printable" : false,
   "rarity" : "Common",
   "objectType" : "container",
   "tooltipKind" : "container",
@@ -8,7 +9,7 @@
   "description" : "A tall bookcase.",
   "shortdescription" : "Alliance Bookcase",
   "race" : "aegi",
-  "price" : 160,
+  "price" : 100,
   "health" : 1.5,
 
   "apexDescription" : "A basic metal bookcase.",

@@ -1,0 +1,45 @@
+{
+  "objectName" : "alliancekitchensink",
+  "colonyTags" : ["alliance"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "A kitchen counter with a built-in sink.",
+  "shortdescription" : "Alliance Kitchen Sink",
+  "race" : "aegi",
+  "category" : "furniture",
+  "price" : 50,
+
+  "apexDescription" : "A kitchen sink.",
+  "avianDescription" : "I could get drink a bit of water here.",
+  "floranDescription" : "Sinksss givess Floran water.",
+  "glitchDescription" : "Observation. A kitchen sink.",
+  "humanDescription" : "A sink, a vital part of any good kitchen.",
+  "hylotlDescription" : "I always have time to get some water.",
+  "novakidDescription" : "A sink.",
+
+  "aegiDescription" : "This kitchen sink should prove useful.",
+  "avikanDescription" : "Aliens use water quite carelessly.",
+  "erixianDescription" : "A simplistic kitchen sink.",
+  "trinkDescription" : "A kitchen sink.",
+  "hymidDescription" : "I could use a bit of water.",
+  "notixDescription" : "A simple kitchen sink.",
+  "jorgasianDescription" : "A kitchen sink for easy access to water.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien water source.",
+
+  "inventoryIcon" : "alliancekitchensinkicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "alliancekitchensink.png:<color>",
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

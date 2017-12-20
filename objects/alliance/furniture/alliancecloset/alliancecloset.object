@@ -1,0 +1,53 @@
+{
+  "objectName" : "alliancecloset",
+  "colonyTags" : ["alliance","storage"],
+  "printable" : false,
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "category" : "storage",
+  "description" : "A large closet with a built-in wardrobe.",
+  "shortdescription" : "Alliance Closet",
+  "race" : "aegi",
+  "price" : 160,
+  "health" : 1.5,
+
+  "apexDescription" : "A closet full of clothes and other personal belongings.",
+  "avianDescription" : "This closet is full of personal items.",
+  "floranDescription" : "Floran sshould not be touching other people's sstuff.",
+  "glitchDescription" : "Intrigued. What might these items tell about their owner?",
+  "humanDescription" : "Someone filled this closet with all sorts of personal items.",
+  "hylotlDescription" : "A large and handy closet.",
+  "novakidDescription" : "A closet full of items.",
+
+  "aegiDescription" : "This spacious closet has roomfor almost anything.",
+  "avikanDescription" : "Aliens collect all sorts of strange items, it seems.",
+  "erixianDescription" : "A large closet.",
+  "trinkDescription" : "A wardrobe, with plenty of space for other items too.",
+  "hymidDescription" : "A closet.",
+  "notixDescription" : "This closetcontains many personal items.",
+  "jorgasianDescription" : "A closet. It has plenty of storage space.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien storage. Scanning items.",
+
+  "inventoryIcon" : "alliancecloseticon.png",
+  "orientations" : [
+    {
+      "dualImage" : "alliancecloset.png:<color>.<key>",
+      "imagePosition" : [-16, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/chest_small_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/chest_small_close.ogg" ],
+  "slotCount" : 32,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600
+}

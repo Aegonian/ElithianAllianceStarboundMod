@@ -1,0 +1,158 @@
+{
+  "objectName" : "alliancespotlight",
+  "colonyTags" : ["alliance","light"],
+  "rarity" : "Common",
+  "category" : "light",
+  "printable" : false,
+  "price" : 75,
+  "description" : "A directional light, for highlighting areas of interest.",
+  "shortdescription" : "Alliance Spotlight",
+  "race" : "aegi",
+  
+  "lightColor" : [255, 255, 255],
+  "pointLight" : true,
+  "pointBeam" : 10,
+  "beamAmbience" : 0.2,
+
+  "apexDescription" : "It's a light, it's sole purpose is to point at that thing.",
+  "avianDescription" : "I should check out what the light is pointing at, it might be more interesting.",
+  "floranDescription" : "Bright light shinesss on pretty objects.",
+  "glitchDescription" : "Humbled. This light is diligently performing it's one purpose.",
+  "humanDescription" : "I should probably be more interested in what this light is aimed at.",
+  "hylotlDescription" : "This light is here to illuminate a subject more worthy of my interest than itself.",
+  "novakidDescription" : "I wonder what this light could be pointin' at?",
+
+  "aegiDescription" : "Perhaps I should be looking at whatever this light is pointing at.",
+  "avikanDescription" : "A bright light made to highlight something. Perhaps I should look at that something instead.",
+  "erixianDescription" : "A light made for highlighting.",
+  "trinkDescription" : "An inefficient way of drawing attention to some object or area.",
+  "hymidDescription" : "This light illuminates something that's probably more interesting to look at.",
+  "notixDescription" : "I suppose this is a light, but I can't be certain.",
+  "jorgasianDescription" : "A light pointed at something more interesting.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Directional light. Recommend observing the highlighted area.",
+
+  "inventoryIcon" : "alliancespotlighticon.png",
+  "orientations" : [
+    //GROUND POSITIONS
+	{
+      "image" : "alliancespotlightleft.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+      "direction" : "left",
+
+      "animationParts" : {
+        "bg" : "alliancespotlightright.png",
+        "fg" : "alliancespotlightrightlit.png"
+      },
+      "animationPosition" : [-8, 0],
+	  
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "lightPosition" : [-1, 1],
+      "beamAngle" : 135
+    },
+    {
+      "image" : "alliancespotlightright.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+
+      "animationParts" : {
+        "bg" : "alliancespotlightright.png",
+        "fg" : "alliancespotlightrightlit.png"
+      },
+      "animationPosition" : [0, 0],
+	  
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "lightPosition" : [1, 1],
+      "beamAngle" : 45
+    },
+	//CEILING POSITIONS
+    {
+      "image" : "alliancespotlightceilingleft.png:<color>.<frame>",
+      "imagePosition" : [-8,-8],
+      "direction" : "left",
+
+      "animationParts" : {
+        "bg" : "alliancespotlightceilingright.png",
+        "fg" : "alliancespotlightceilingrightlit.png"
+      },
+      "animationPosition" : [-8,-8],
+	  
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ],
+      "lightPosition" : [-1, -1],
+      "beamAngle" : 225
+    },
+    {
+      "image" : "alliancespotlightceilingright.png:<color>.<frame>",
+      "imagePosition" : [0,-8],
+      "direction" : "right",
+
+      "animationParts" : {
+        "bg" : "alliancespotlightceilingright.png",
+        "fg" : "alliancespotlightceilingrightlit.png"
+      },
+      "animationPosition" : [0,-8],
+	  
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ],
+      "lightPosition" : [1, -1],
+      "beamAngle" : 315
+    },
+	//WALL POSITIONS
+    {
+      "image" : "alliancespotlightwallleft.png:<color>.<frame>",
+      "imagePosition" : [-8, -8],
+      "direction" : "left",
+
+      "animationParts" : {
+        "bg" : "alliancespotlightwallright.png",
+        "fg" : "alliancespotlightwallrightlit.png"
+      },
+      "animationPosition" : [-8, -8],
+	  
+      "spaceScan" : 0.1,
+      "anchors" : [ "right" ],
+      "lightPosition" : [-1, -1],
+      "beamAngle" : 225
+    },
+    {
+      "image" : "alliancespotlightwallright.png:<color>.<frame>",
+      "imagePosition" : [0, -8],
+      "direction" : "right",
+
+      "animationParts" : {
+        "bg" : "alliancespotlightwallright.png",
+        "fg" : "alliancespotlightwallrightlit.png"
+      },
+      "animationPosition" : [0, -8],
+	  
+      "spaceScan" : 0.1,
+      "anchors" : [ "left" ],
+      "lightPosition" : [1, -1],
+      "beamAngle" : 315
+    }
+  ],
+
+  "animation" : "/objects/animations/thea-spotlight.animation",
+  "animationParts" : {
+    "bg" : "alliancespotlightright.png",
+    "fg" : "alliancespotlightrightlit.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/floodlights_on.ogg" ],
+      "off" : [ "/sfx/objects/floodlights_off.ogg" ]
+    }
+  },
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+
+  "interactive" : false,
+
+  "inputNodes" : [ [0, 0] ]
+}

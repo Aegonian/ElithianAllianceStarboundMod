@@ -1,0 +1,53 @@
+{
+  "objectName" : "allianceweaponchest",
+  "colonyTags" : ["storage","combat","alliance"],
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "category" : "storage",
+  "printable" : false,
+  "price" : 100,
+  "description" : "A military-grade chest for storing weapons and other military supplies.",
+  "shortdescription" : "Alliance Supply Crate",
+  "race" : "aegi",
+  
+  "health" : 6,
+
+  "apexDescription" : "This looks like a military supply crate. There could be weapons inside!",
+  "avianDescription" : "A military-grade supply crate, built to keep its content completely safe.",
+  "floranDescription" : "Floran isss eager to open chesst. Maybe ssstabby weapon insside!",
+  "glitchDescription" : "Eager. A military supply crate like this is sure to hold something of value.",
+  "humanDescription" : "An alien weapon chest. Let's have a look inside!",
+  "hylotlDescription" : "Presents are most exciting when they're still wrapped.",
+  "novakidDescription" : "Might be some sorta weapon inside o' this chest!",
+
+  "aegiDescription" : "This crate might contain some military supplies.",
+  "avikanDescription" : "A container. From the look of it, I think it might hold military supplies",
+  "erixianDescription" : "A military-grade supply crate, certain to hold some armaments.",
+  "trinkDescription" : "This chest is likely to contain some military equipment.",
+  "hymidDescription" : "A weather and war-proof supply crate. It might hold some military equipment.",
+  "notixDescription" : "A military supply crate.",
+  "jorgasianDescription" : "A metal container often used by the military. There might be a weapon inside.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien supply crate.",
+
+  "inventoryIcon" : "allianceweaponchesticon.png",
+  "orientations" : [
+    {
+      "dualImage" : "allianceweaponchest.png:<color>.<key>",
+      "imagePosition" : [-16, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/miningchest_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/miningchest_close.ogg" ],
+  "slotCount" : 24,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 32,
+  "autoCloseCooldown" : 3600
+}

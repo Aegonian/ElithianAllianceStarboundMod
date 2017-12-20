@@ -294,6 +294,18 @@
       "title" : "Scrapyard",
       "description" : "A powerful shrapnel cannon popular amongst scavengers.",
       "icon" : "/items/active/weapons/ranged/unique/scrapyard/akkimari-scrapyard.png"
+    },
+	"akkimari-kelchisdecree" : {
+      "order" : 48,
+      "title" : "Kelchis's Decree",
+      "description" : "An agile scathe used by the chosen warriors of Kel'chis.",
+      "icon" : "/items/active/weapons/melee/unique/kelchisdecree/akkimari-kelchisdecree.png"
+    },
+	"avikan-anakahrstaff" : {
+      "order" : 48,
+      "title" : "Anakahr Staff",
+      "description" : "A staff armed with dual static linecharge drives.",
+      "icon" : "/items/active/weapons/melee/unique/anakahrstaff/avikan-anakahrstaff.png"
     }
   }
 }

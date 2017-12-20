@@ -1,0 +1,68 @@
+{
+  "objectName" : "alliancebench2",
+  "colonyTags" : ["alliance"],
+  "printable" : false,
+  "rarity" : "Common",
+  "category" : "furniture",
+  "price" : 100,
+  "description" : "A comfortable two-seater.",
+  "shortdescription" : "Alliance Soft Bench",
+  "race" : "aegi",
+
+  "apexDescription" : "The padding on this bench looks new.",
+  "avianDescription" : "Simplistic, but still comfortable.",
+  "floranDescription" : "Floran preferss wooden bench.",
+  "glitchDescription" : "Appreciative. I could use some rest.",
+  "humanDescription" : "A good old bench. Let's rest for a bit.",
+  "hylotlDescription" : "A minimalistic, but very comfortable, bench.",
+  "novakidDescription" : "I should rest a while.",
+
+  "aegiDescription" : "A simple, comfortable bench.",
+  "avikanDescription" : "I don't like alien chairs much.",
+  "erixianDescription" : "Simplicity does not exclude comfort, it seems.",
+  "trinkDescription" : "This bench is in good condition.",
+  "hymidDescription" : "Not the most comfortable bench for a Hymid.",
+  "notixDescription" : "A simplistic bench.",
+  "jorgasianDescription" : "Comfortable benches are always a welcome sight.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien chair.",
+
+  "inventoryIcon" : "alliancebench2icon.png",
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+
+  "orientations" : [
+    {
+      "image" : "alliancebench2.png:<color>",
+      "imagePosition" : [-16, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "sitPositions" : [
+        // Positions from front to back.
+        [-13, 22], // Right
+        [5, 22] // Left
+      ],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "alliancebench2.png:<color>",
+      "imagePosition" : [-16, 0],
+      "direction" : "right",
+
+      "sitPositions" : [
+        // Positions from front to back.
+        [-5, 22], // Left
+        [13, 22] // Right
+      ],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

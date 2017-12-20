@@ -1,0 +1,61 @@
+{
+  "objectName" : "alliancelightstrip",
+  "colonyTags" : ["alliance", "light"],
+  "rarity" : "Common",
+  "printable" : false,
+  "price" : 30,
+  "description" : "A simple light strip.",
+  "shortdescription" : "Alliance Light Strip",
+  "race" : "aegi",
+
+  "apexDescription" : "A simple light strip.",
+  "avianDescription" : "A light.",
+  "floranDescription" : "Light. Ssshiny.",
+  "glitchDescription" : "Observation. A simple light.",
+  "humanDescription" : "A standard light.",
+  "hylotlDescription" : "A simple light.",
+
+  "aegiDescription" : "A slim, bright light, useful for when there isn't much space.",
+  "avikanDescription" : "An efficient light.",
+  "erixianDescription" : "A standard light.",
+  "trinkDescription" : "Light.",
+  "hymidDescription" : "A simple light.",
+  "notixDescription" : "A strip of light.",
+  "jorgasianDescription" : "An efficient light.",
+  "centensDescription" : "A simple light.",
+  "dremetonDescription" : "A cold light.",
+  "theleanDescription" : "Basic lighting.",
+  "drodenDescription" : "Light.",
+
+  "category" : "light",
+  "lightColor" : [230, 230, 230],
+
+  "inventoryIcon" : "alliancelightstripicon.png",
+  "orientations" : [
+    {
+      "image" : "alliancelightstrip.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/fluorescent_light_quiet.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+  
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+  "animationParts" : {
+    "bg" : "alliancelightstrip.png",
+    "fg" : "alliancelightstriplit.png"
+  },
+  "animationPosition" : [-8, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : false,
+
+  "inputNodes" : [ [0, 0] ]
+}

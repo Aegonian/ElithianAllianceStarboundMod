@@ -10,43 +10,71 @@
 	{
       "action" : "projectile",
       "type" : "linebowarrow-slow",
-      "fuzzAngle" : 10,
-      "inheritDamageFactor" : 0.2,
+      "fuzzAngle" : 5,
+      "inheritDamageFactor" : 0.15,
       "angleAdjust" : 45
     },
 	{
       "action" : "projectile",
       "type" : "linebowarrow-slow",
-      "fuzzAngle" : 10,
-      "inheritDamageFactor" : 0.2,
+      "fuzzAngle" : 5,
+      "inheritDamageFactor" : 0.15,
+      "angleAdjust" : 55
+    },
+	{
+      "action" : "projectile",
+      "type" : "linebowarrow-slow",
+      "fuzzAngle" : 5,
+      "inheritDamageFactor" : 0.15,
       "angleAdjust" : 65
     },
 	{
       "action" : "projectile",
       "type" : "linebowarrow-slow",
-      "fuzzAngle" : 10,
-      "inheritDamageFactor" : 0.2,
-      "angleAdjust" : 80
+      "fuzzAngle" : 5,
+      "inheritDamageFactor" : 0.15,
+      "angleAdjust" : 75
     },
 	{
       "action" : "projectile",
       "type" : "linebowarrow-slow",
-      "fuzzAngle" : 10,
-      "inheritDamageFactor" : 0.2,
-      "angleAdjust" : 100
+      "fuzzAngle" : 5,
+      "inheritDamageFactor" : 0.15,
+      "angleAdjust" : 85
     },
 	{
       "action" : "projectile",
       "type" : "linebowarrow-slow",
-      "fuzzAngle" : 10,
-      "inheritDamageFactor" : 0.2,
+      "fuzzAngle" : 5,
+      "inheritDamageFactor" : 0.15,
+      "angleAdjust" : 95
+    },
+	{
+      "action" : "projectile",
+      "type" : "linebowarrow-slow",
+      "fuzzAngle" : 5,
+      "inheritDamageFactor" : 0.15,
+      "angleAdjust" : 105
+    },
+	{
+      "action" : "projectile",
+      "type" : "linebowarrow-slow",
+      "fuzzAngle" : 5,
+      "inheritDamageFactor" : 0.15,
       "angleAdjust" : 115
     },
 	{
       "action" : "projectile",
       "type" : "linebowarrow-slow",
-      "fuzzAngle" : 10,
-      "inheritDamageFactor" : 0.2,
+      "fuzzAngle" : 5,
+      "inheritDamageFactor" : 0.15,
+      "angleAdjust" : 125
+    },
+	{
+      "action" : "projectile",
+      "type" : "linebowarrow-slow",
+      "fuzzAngle" : 5,
+      "inheritDamageFactor" : 0.15,
       "angleAdjust" : 135
     }
   ],

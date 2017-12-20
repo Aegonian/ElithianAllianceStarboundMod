@@ -1,0 +1,84 @@
+{
+  "objectName" : "alliancestreetlight",
+  "colonyTags" : ["alliance", "light"],
+  "rarity" : "Common",
+  "printable" : false,
+  "price" : 100,
+  "description" : "A bright but efficient street light.",
+  "shortdescription" : "Alliance Street Light",
+  "race" : "aegi",
+
+  "apexDescription" : "A bright street light.",
+  "avianDescription" : "A bright light on top of a long pole.",
+  "floranDescription" : "Floran can't reach the lightsss.",
+  "glitchDescription" : "Glad. This light will make venturing out at night much safer.",
+  "humanDescription" : "A street light.",
+  "hylotlDescription" : "An elegant street light.",
+  "novakidDescription" : "That's a street light.",
+
+  "aegiDescription" : "This light will make the streets much safer at night.",
+  "avikanDescription" : "A bright light on top of a long pole.",
+  "erixianDescription" : "A basic street light.",
+  "trinkDescription" : "A surprisingly efficient street light.",
+  "hymidDescription" : "A street light commonly found in Union cities.",
+  "notixDescription" : "Just a regular street light.",
+  "jorgasianDescription" : "A standard street light.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Light source detected.",
+
+  "category" : "light",
+  "lightColor" : [255, 255, 255],
+  "pointLight" : true,
+  "pointBeam" : 2.5,
+  "beamAmbience" : 0.2,
+
+  "inventoryIcon" : "alliancestreetlighticon.png",
+  "orientations" : [
+    {
+      "image" : "alliancestreetlight.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "direction" : "left",
+      "flipImages" : true,
+	  
+      "lightPosition" : [1, 10],
+	  "beamAngle" : 270,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+	{
+      "image" : "alliancestreetlight.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "direction" : "right",
+	  
+      "lightPosition" : [0.5, 10],
+	  "beamAngle" : 270,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/fluorescent_light_quiet.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+  
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+  "animationParts" : {
+    "bg" : "alliancestreetlight.png",
+    "fg" : "alliancestreetlightlit.png"
+  },
+  "animationPosition" : [-8, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : false,
+
+  "inputNodes" : [ [0, 0] ]
+}

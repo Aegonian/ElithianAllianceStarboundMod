@@ -24,7 +24,7 @@
       "parts" : {
         "middleFullbright" : {
 		  "properties" : {
-		    "offset" : [1.375, 0.125]
+		    "offset" : [1.375, 0.25]
 		  }
 		}
       }
@@ -36,7 +36,7 @@
     }
   },
 
-  "baseOffset" : [1.375, 0.125],
+  "baseOffset" : [1.375, 0.25],
   "muzzleOffset" : [2.875, 0.25],
 
   "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
@@ -47,12 +47,12 @@
     "scripts" : ["/items/active/weapons/ranged/abilities/thea-accuracygunfire.lua"],
     "class" : "TheaAccuracyGunFire",
 
-    "fireTime" : 0.18,
+    "fireTime" : 0.14,
     "baseDps" : 8.5,
-    "energyUsage" : 15.0,
+    "energyUsage" : 10.0,
     "startInaccuracy" : 0.125,
 	"finalInaccuracy" : 0.010,
-	"maxAccuracyTime" : 1.5,		//Time spent firing before reaching max accuracy
+	"maxAccuracyTime" : 2.0,		//Time spent firing before reaching max accuracy
 	"maxIdleTime" : 0.25,			//Time spent not firing before accuracy starts degrading
 	
 	//Config for animated cursor

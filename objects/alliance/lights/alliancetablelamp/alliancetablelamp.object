@@ -1,0 +1,61 @@
+{
+  "objectName" : "alliancetablelamp",
+  "colonyTags" : ["alliance", "light"],
+  "rarity" : "Common",
+  "printable" : false,
+  "price" : 30,
+  "description" : "A decorative table lamp.",
+  "shortdescription" : "Alliance Table Lamp",
+  "race" : "aegi",
+
+  "apexDescription" : "A simple table lamp.",
+  "avianDescription" : "A light.",
+  "floranDescription" : "Light. Ssshiny.",
+  "glitchDescription" : "Observation. A simple light.",
+  "humanDescription" : "A standard light.",
+  "hylotlDescription" : "A simple light.",
+
+  "aegiDescription" : "I like this table lamp.",
+  "avikanDescription" : "A small light, easy to move around.",
+  "erixianDescription" : "A small light.",
+  "trinkDescription" : "A table lamp.",
+  "hymidDescription" : "A simple but beautiful table lamp.",
+  "notixDescription" : "A table lamp.",
+  "jorgasianDescription" : "Just a table lamp.",
+  "centensDescription" : "A light source.",
+  "dremetonDescription" : "A small light.",
+  "theleanDescription" : "Light.",
+  "drodenDescription" : "Light.",
+
+  "category" : "light",
+  "lightColor" : [127, 127, 127],
+
+  "inventoryIcon" : "alliancetablelampicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "alliancetablelamp.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/fluorescent_light_quiet.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+  
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+  "animationParts" : {
+    "bg" : "alliancetablelamp.png",
+    "fg" : "alliancetablelamplit.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : true,
+
+  "inputNodes" : [ [0, 0] ]
+}

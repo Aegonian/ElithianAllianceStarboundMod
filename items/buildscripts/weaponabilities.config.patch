@@ -81,6 +81,11 @@
 	"path": "/thea-spearspin",
 	"value": "/items/active/weapons/melee/abilities/spear/thea-spearspin/thea-spearspin.weaponability"
   },
+  {
+	"op": "add",
+	"path": "/thea-bowstaffspin",
+	"value": "/items/active/weapons/melee/abilities/bowstaff/thea-bowstaffspin.weaponability"
+  },
   
   //======================================================================================================================
   //	Weapon Attachments and Mods

@@ -1,0 +1,54 @@
+{
+  "objectName" : "alliancelargecrate",
+  "colonyTags" : ["alliance", "storage"],
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "category" : "storage",
+  "printable" : false,
+  "price" : 80,
+  "description" : "A large standardized metal container.",
+  "shortdescription" : "Large Alliance Crate",
+  "race" : "aegi",
+  
+  "health" : 6,
+
+  "apexDescription" : "A metal crate. Not much else to it.",
+  "avianDescription" : "I wonder what this crate might hold?",
+  "floranDescription" : "Cratesss full of goodiesss!",
+  "glitchDescription" : "Bored. A simple metal crate.",
+  "humanDescription" : "Is there loot inside?",
+  "hylotlDescription" : "A standardized metal crate. Sturdy, but relatively lightweight too.",
+  "novakidDescription" : "A crate. Quite basic.",
+
+  "aegiDescription" : "A standardized cargo crate. It's used throughout the Alliance.",
+  "avikanDescription" : "A metal crate of alien design.",
+  "erixianDescription" : "A standard Alliance crate.",
+  "trinkDescription" : "The Alliance uses efficiently-designed crates.",
+  "hymidDescription" : "A standard metal crate.",
+  "notixDescription" : "A standardized Alliance crate.",
+  "jorgasianDescription" : "I wonder what I'll find inside?",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Analyzing content.",
+
+  "inventoryIcon" : "alliancelargecrateicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "alliancelargecrate.png:<color>.<key>",
+      "imagePosition" : [-8, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/chest_small_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/chest_small_close.ogg" ],
+  "slotCount" : 24,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 10,
+  "autoCloseCooldown" : 3600
+}

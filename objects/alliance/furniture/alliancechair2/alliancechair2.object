@@ -1,0 +1,48 @@
+{
+  "objectName" : "alliancechair2",
+  "colonyTags" : ["alliance"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "A basic but comfortable chair.",
+  "shortdescription" : "Alliance Soft Chair",
+  "race" : "aegi",
+  "category" : "furniture",
+  "price" : 25,
+
+  "apexDescription" : "A padded metal chair.",
+  "avianDescription" : "Comfortable, if a bit simple.",
+  "floranDescription" : "Floran likess thiss chair.",
+  "glitchDescription" : "Surprised. This chair is more comfortable than it looks.",
+  "humanDescription" : "I could sit on this all day.",
+  "hylotlDescription" : "Simplistic but still comfortable.",
+  "novakidDescription" : "I prefer my wooden chairs.",
+
+  "aegiDescription" : "A simple chair with comfortable padding.",
+  "avikanDescription" : "An alien chair. My tail makes it quite uncomfortable.",
+  "erixianDescription" : "A basic chair.",
+  "trinkDescription" : "A chair adhering to Alliance standards.",
+  "hymidDescription" : "An Aeginian-built chair.",
+  "notixDescription" : "A chair.",
+  "jorgasianDescription" : "A comfortable chair.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien chair.",
+
+  "inventoryIcon" : "alliancechair2icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "alliancechair2.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+  "sitPosition" : [2, 22]
+}

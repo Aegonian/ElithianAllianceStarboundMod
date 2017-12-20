@@ -14,7 +14,7 @@
   "inventoryIcon" : "akkimari-kelchisdecree.png",
   
   //CONFIGURATION FOR WEAPONS COLLECTION
-  //"collectablesOnPickup" : { "thea_weapons" : "akkimari-kelchisdecree" },
+  "collectablesOnPickup" : { "thea_weapons" : "akkimari-kelchisdecree" },
   
   "meritTokenValue" : 100,
 
@@ -231,7 +231,7 @@
 	"class" : "TheaStaffVault",
 	
 	"cooldownTime" : 1.0,
-	"dashCooldownTime" : 0.55,
+	"dashCooldownTime" : 0.4,
 	
 	"vaultEnergy" : 50,
 	"dashEnergy" : 25,

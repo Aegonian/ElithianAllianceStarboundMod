@@ -1,0 +1,53 @@
+{
+  "objectName" : "alliancetvstand",
+  "colonyTags" : ["alliance","storage"],
+  "printable" : false,
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "rarity" : "Common",
+  "description" : "A cabinet often used as a TV stand.",
+  "shortdescription" : "Alliance TV Stand",
+  "race" : "aegi",
+  "category" : "furniture",
+  "price" : 100,
+  "health" : 1.5,
+
+  "apexDescription" : "A desk.",
+  "avianDescription" : "A basic desk.",
+  "floranDescription" : "Floran doesss not want to ssit at dessk.",
+  "glitchDescription" : "Pleased. A simple but functional desk.",
+  "humanDescription" : "Time to go to work, I guess?",
+  "hylotlDescription" : "One could get much work done at such a desk.",
+  "novakidDescription" : "Bah, it's just a desk.",
+
+  "aegiDescription" : "A simple desk, with some drawers for storing small items.",
+  "avikanDescription" : "A desk of some kind.",
+  "erixianDescription" : "A rather simplistic desk.",
+  "trinkDescription" : "This desk offers minimal storage space.",
+  "hymidDescription" : "This desk is simple, but entirely functional.",
+  "notixDescription" : "That is a desk.",
+  "jorgasianDescription" : "A simple desk.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected desk.",
+
+  "inventoryIcon" : "alliancetvstandicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "alliancetvstand.png:<color>.<key>",
+      "imagePosition" : [-16, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/chest_small_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/chest_small_close.ogg" ],
+  "slotCount" : 9,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600
+}

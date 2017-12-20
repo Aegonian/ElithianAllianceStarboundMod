@@ -1,0 +1,62 @@
+{
+  "objectName" : "alliancedesklight",
+  "colonyTags" : ["alliance", "light"],
+  "rarity" : "Common",
+  "printable" : false,
+  "price" : 30,
+  "description" : "A small light.",
+  "shortdescription" : "Alliance Desk Light",
+  "race" : "aegi",
+
+  "apexDescription" : "A simple desk light.",
+  "avianDescription" : "A light.",
+  "floranDescription" : "Light. Ssshiny.",
+  "glitchDescription" : "Observation. A desk light.",
+  "humanDescription" : "A basic desk light.",
+  "hylotlDescription" : "An elegant desk light.",
+  "novakidDescription" : "Just a light.",
+
+  "aegiDescription" : "This light provides just enough light to work comfortably.",
+  "avikanDescription" : "A light.",
+  "erixianDescription" : "Light.",
+  "trinkDescription" : "A desk light.",
+  "hymidDescription" : "A simple light.",
+  "notixDescription" : "A simple light.",
+  "jorgasianDescription" : "A light well-suited for offices.",
+  "centensDescription" : "Light.",
+  "dremetonDescription" : "A cold light.",
+  "theleanDescription" : "Light.",
+  "drodenDescription" : "Light.",
+
+  "category" : "light",
+  "lightColor" : [127, 127, 127],
+
+  "inventoryIcon" : "alliancedesklighticon.png",
+  "orientations" : [
+    {
+      "dualImage" : "alliancedesklight.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/fluorescent_light_quiet.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+  
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+  "animationParts" : {
+    "bg" : "alliancedesklight.png",
+    "fg" : "alliancedesklightlit.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : true,
+
+  "inputNodes" : [ [0, 0] ]
+}
