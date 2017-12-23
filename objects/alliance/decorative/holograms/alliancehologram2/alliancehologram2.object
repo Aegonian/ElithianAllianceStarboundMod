@@ -1,0 +1,48 @@
+{
+  "objectName" : "alliancehologram2",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A hologram displaying an active interface.",
+  "shortdescription" : "Alliance Hologram",
+  "race" : "aegi",
+
+  "apexDescription" : "A hologram displaying useful information.",
+  "avianDescription" : "I'm not sure what this hologram is displaying.",
+  "floranDescription" : "Ssky-writing confusess Floran.",
+  "glitchDescription" : "Observation. A hologram.",
+  "humanDescription" : "I always like holograms.",
+  "hylotlDescription" : "Holograms are an elegant replacement for physcial screens.",
+  "novakidDescription" : "Someone wrote some stuff in the sky.",
+
+  "aegiDescription" : "This hologram is being projected by a tiny projector not far away.",
+  "avikanDescription" : "An alien hologram. The Nomada might glean useful information from it.",
+  "erixianDescription" : "A hologram displaying some information.",
+  "trinkDescription" : "Holograms can be quite efficient.",
+  "hymidDescription" : "This hologram is displaying useful information.",
+  "notixDescription" : "It's a hologram. I can hear it buzzing.",
+  "jorgasianDescription" : "A hologram. It displays quite a lot of information.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien hologram. Attempting translation.",
+
+  "lightColor" : [0, 48, 64],
+  
+  "inventoryIcon" : "alliancehologram2icon.png",
+  "orientations" : [
+    {
+      "image" : "alliancehologram2.png:<color>.<frame>",
+      "imagePosition" : [-16, 0],
+	  
+      "frames" : 16,
+      "animationCycle" : 1.6,
+      "lightPosition" : [0, 1],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ ]
+    }
+  ]
+}

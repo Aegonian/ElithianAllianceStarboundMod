@@ -1,0 +1,42 @@
+{
+  "objectName" : "alliancebooks1",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 10,
+  "description" : "A collection of books on various topics.",
+  "shortdescription" : "Alliance Books",
+  "race" : "aegi",
+
+  "apexDescription" : "Books. They might hold information valuable to the rebels.",
+  "avianDescription" : "What might these books be written about?",
+  "floranDescription" : "Floran doesss not like reading...",
+  "glitchDescription" : "Curious. What might be written in these books?",
+  "humanDescription" : "Plain old books. Dull topics only.",
+  "hylotlDescription" : "Books are a grand source of knowledge.",
+  "novakidDescription" : "I ain't got time for readin'.",
+
+  "aegiDescription" : "Books written on various topics, all equally interesting.",
+  "avikanDescription" : "Alien scrolls, I think. I can't read any of it.",
+  "erixianDescription" : "Books on various topics.",
+  "trinkDescription" : "Books are an inefficient method of transferring and storing knowledge.",
+  "hymidDescription" : "Books. I'm not sure what topics they write about.",
+  "notixDescription" : "Books. They are of no use to me.",
+  "jorgasianDescription" : "Books approved by the Alliance.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien writings. Indexing.",
+
+  "inventoryIcon" : "alliancebooks1icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "alliancebooks1.png:<color>",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "objectName" : "allianceradio",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 80,
+  "description" : "A hologram displaying a great deal of information.",
+  "shortdescription" : "Alliance Radio",
+  "race" : "aegi",
+
+  "apexDescription" : "A sleek radio.",
+  "avianDescription" : "A radio playing some music.",
+  "floranDescription" : "Floran likesss thiss music.",
+  "glitchDescription" : "Energetic. I feel like dancing.",
+  "humanDescription" : "I love this song!",
+  "hylotlDescription" : "An elegantly designed radio.",
+  "novakidDescription" : "Just a music box.",
+
+  "aegiDescription" : "A small radio built by Enerth Engineering.",
+  "avikanDescription" : "Alien music is quite odd.",
+  "erixianDescription" : "A radio. It's stuck on a single channel.",
+  "trinkDescription" : "A small radio.",
+  "hymidDescription" : "This type of radio is quite popular in the Alliance.",
+  "notixDescription" : "I always enjoy good music.",
+  "jorgasianDescription" : "A radio playing some music.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien radio. Analyzing frequencies.",
+
+  "lightColor" : [0, 48, 64],
+
+  "inventoryIcon" : "allianceradioicon.png",
+  "orientations" : [
+    {
+      "image" : "allianceradio.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+
+      "direction" : "left",
+      "flipImages" : true,
+      "lightPosition" : [-1, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+    {
+      "image" : "allianceradio.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+
+      "direction" : "right",
+      "lightPosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "animation" : "allianceradio.animation",
+  "animationParts" : {
+    "bg" : "allianceradio.png",
+    "fg" : "allianceradiolit.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/speaker_toggle.ogg" ],
+      "off" : [ "/sfx/objects/speaker_toggle.ogg" ]
+    }
+  },
+  "animationPosition" : [-8, 0],
+
+  "scripts" : [
+    "/objects/wired/light/light.lua",
+    "/scripts/npcToyObject.lua"
+  ],
+  "scriptDelta" : 60,
+
+  "inputNodes" : [ [0, 0] ],
+
+  "soundEffect" : "/sfx/objects/clubdecks1.ogg",
+
+  "npcToy" : {
+    "influence" : [
+      "hylotlmusic",
+      "hylotlmusic",
+      "hylotlmusic",
+      "hylotlmusicFinished"
+    ],
+    "defaultReactions" : {
+      "hylotlmusic" : [
+        [1.0, "hylotldance"]
+      ],
+      "hylotlmusicFinished" : [
+        [1.0, "hylotldance"],
+        [1.0, "smile"],
+        [1.0, "laugh"]
+      ]
+    },
+    "randomStandXRange" : [-4, 4],
+    "maxNpcs" : 4
+  }
+}

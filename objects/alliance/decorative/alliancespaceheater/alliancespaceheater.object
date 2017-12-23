@@ -1,0 +1,52 @@
+{
+  "objectName" : "alliancespaceheater",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 60,
+  "description" : "A small space heater.",
+  "shortdescription" : "Alliance Space Heater",
+  "race" : "aegi",
+
+  "apexDescription" : "A basic space heater.",
+  "avianDescription" : "This should keep a home warm and cozy.",
+  "floranDescription" : "Metal box makesss roomss warm.",
+  "glitchDescription" : "Observation. A space heater.",
+  "humanDescription" : "Just a space heater.",
+  "hylotlDescription" : "This will keep a home at a comfortable temperature.",
+  "novakidDescription" : "I don't need no space heater.",
+
+  "aegiDescription" : "A standard space heater, built by Enerth Engineering.",
+  "avikanDescription" : "This device emits heat.",
+  "erixianDescription" : "A space heater. No need for these on Heragon.",
+  "trinkDescription" : "A surprisingly efficient space heater.",
+  "hymidDescription" : "A space heater.",
+  "notixDescription" : "I'd rather turn this heater off.",
+  "jorgasianDescription" : "A space heater of Aeginian design.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected heating device.",
+
+  "inventoryIcon" : "alliancespaceheatericon.png",
+  "orientations" : [
+	{
+	  "imageLayers" : [ { "image" : "alliancespaceheater.png:<color>", "fullbright" : true }, { "image" : "alliancespaceheaterlit.png:<color>" } ],
+      "imagePosition" : [-8, 0],
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "bottom" ]
+    },
+    {
+	  "imageLayers" : [ { "image" : "alliancespaceheater.png:<color>", "fullbright" : true }, { "image" : "alliancespaceheaterlit.png:<color>" } ],
+      "imagePosition" : [-8, 0],
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

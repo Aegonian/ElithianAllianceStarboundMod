@@ -1,0 +1,29 @@
+{
+  "objectName" : "allianceposterart",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 20,
+  "description" : "A poster promoting the new art exposition by Mehros Avan.",
+  "shortdescription" : "Mehros Avan Poster",
+  "race" : "aegi",
+
+  "floranDescription" : "Floran only seesss paperss.",
+  "glitchDescription" : "Curious. Who is this Mehros Avan mentioned in the poster?",
+  "aegiDescription" : "Mehros Avan is a famous artist creating large kinetic art pieces.",
+  "drodenDescription" : "Scan completed. Promotional material.",
+  
+  "inventoryIcon" : "allianceposterarticon.png",
+  "orientations" : [
+    {
+      "image" : "allianceposterart.png:<color>",
+      "imagePosition" : [-8, -16],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "objectName" : "allianceposterfroza",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 20,
+  "description" : "A poster promoting Froza soda.",
+  "shortdescription" : "AAE Poster",
+  "race" : "aegi",
+
+  "floranDescription" : "Floran wantsss to know what Froza iss.",
+  "glitchDescription" : "Thirsty. I've heard Froza makes great soda.",
+  "aegiDescription" : "Froza is probably the most popular soda in the Union.",
+  "drodenDescription" : "Scan completed. Promotional material.",
+  
+  "inventoryIcon" : "allianceposterfrozaicon.png",
+  "orientations" : [
+    {
+      "image" : "allianceposterfroza.png:<color>",
+      "imagePosition" : [-8, -16],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ]
+}

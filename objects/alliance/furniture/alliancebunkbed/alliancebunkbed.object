@@ -1,0 +1,79 @@
+{
+  "objectName" : "alliancebunkbed",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "furniture",
+  "printable" : false,
+  "price" : 80,
+  "description" : "A bunk bed often found on board Alliance ships.",
+  "shortdescription" : "Alliance Bunk Bed",
+  "race" : "aegi",
+
+  "apexDescription" : "A comfortable bed with clean sheets.",
+  "avianDescription" : "This bed is quite comfortable.",
+  "floranDescription" : "Floran rarely ssleep in ssuch nice bed.",
+  "glitchDescription" : "Tired. I should lie down for a while.",
+  "humanDescription" : "A simple but comfortable bed.",
+  "hylotlDescription" : "A good place to close one's eyes.",
+  "novakidDescription" : "A decent place to get some shut-eye.",
+
+  "aegiDescription" : "A nice and comfortable bed.",
+  "avikanDescription" : "This bed looks quite comfortable.",
+  "erixianDescription" : "A simple bed.",
+  "trinkDescription" : "A bed. I prefer a repair pod.",
+  "hymidDescription" : "The Aegi make comfortable beds.",
+  "notixDescription" : "I should get some sleep.",
+  "jorgasianDescription" : "Basic bedding.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Alien bedding detected.",
+
+  "lightColor" : [32, 32, 32],
+  
+  "inventoryIcon" : "alliancebunkbedicon.png",
+  "orientations" : [
+	{
+	  "imageLayers" : [ { "image" : "alliancebunkbed.png:<color>", "fullbright" : true }, { "image" : "alliancebunkbedlit.png:<color>" } ],
+
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+	  
+      "lightPosition" : [-2, 4],
+	  "sitPosition" : [-10, 14],
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    },
+    {
+	  "imageLayers" : [ { "image" : "alliancebunkbed.png:<color>", "fullbright" : true }, { "image" : "alliancebunkbedlit.png:<color>" } ],
+
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+	  
+      "lightPosition" : [2, 4],
+	  "sitPosition" : [-18, 14],
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ],
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : true,
+  "sitOrientation" : "lay",
+  "sitAngle" : 90,
+  "sitCoverImage" : "/objects/alliance/furniture/alliancebunkbed/alliancebunkbedcover.png",
+  "sitEmote" : "sleep",
+  "sitStatusEffects" : [
+    "bed1"
+  ],
+  "sitEffectEmitters" : [ "sleepbubbles" ]
+}

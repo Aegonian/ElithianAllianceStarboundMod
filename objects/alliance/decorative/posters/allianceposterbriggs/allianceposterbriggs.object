@@ -1,0 +1,29 @@
+{
+  "objectName" : "allianceposterbriggs",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 20,
+  "description" : "A poster promoting Briggs Shipbuilding.",
+  "shortdescription" : "Briggs Shipbuilding Poster",
+  "race" : "aegi",
+
+  "floranDescription" : "Floran thinksss thiss posster iss boring.",
+  "glitchDescription" : "Informed. Briggs Shipbuilding is a manufacturer of mining and construction vessels.",
+  "aegiDescription" : "Briggs Shipbuilding manufactures most of the Union's construction and mining vessels.",
+  "drodenDescription" : "Scan completed. Promotional material.",
+  
+  "inventoryIcon" : "allianceposterbriggsicon.png",
+  "orientations" : [
+    {
+      "image" : "allianceposterbriggs.png:<color>",
+      "imagePosition" : [-16, -8],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ]
+}

@@ -43,7 +43,6 @@
       "flipImages" : true,
       "direction" : "left",
       "anchors" : [ "bottom" ]
-
     },
     {
 	  "imageLayers" : [ { "image" : "avikanantenna.png:<color>", "fullbright" : true }, { "image" : "avikanantennalit.png:<color>" } ],
@@ -56,7 +55,6 @@
       "spaceScan" : 0.1,
       "direction" : "right",
       "anchors" : [ "bottom" ]
-
     }
   ]
 }

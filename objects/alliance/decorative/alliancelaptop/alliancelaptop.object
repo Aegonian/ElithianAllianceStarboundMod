@@ -41,14 +41,15 @@
       "direction" : "right",
 
       "animationParts" : {
-        "light" : "alliancelaptop.png"
+        "bg" : "alliancelaptop.png",
+        "fg" : "alliancelaptoplit.png"
       },
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]
     },
 	{
-      "image" : "alliancelaptop.png:<frame>",
+      "image" : "alliancelaptopleft.png:<frame>",
       "imagePosition" : [-8, 0],
       "animationPosition" : [-8, 0],
       "animationCycle" : 0.5,
@@ -56,7 +57,8 @@
 	  "flipImages" : true,
 
       "animationParts" : {
-        "light" : "alliancelaptop.png"
+        "bg" : "alliancelaptopleft.png",
+        "fg" : "alliancelaptopleftlit.png"
       },
 
       "spaceScan" : 0.1,
@@ -64,10 +66,7 @@
     }
   ],
 
-  "animation" : "/objects/wired/light/lighttoggle.animation",
-  "animationParts" : {
-    "light" : "alliancelaptop.png"
-  },
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
 
   "scripts" : [ "/objects/wired/light/light.lua" ],
   "scriptDelta" : 60,

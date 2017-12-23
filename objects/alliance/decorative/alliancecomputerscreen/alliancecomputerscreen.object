@@ -1,0 +1,75 @@
+{
+  "objectName" : "alliancecomputerscreen",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 100,
+  "description" : "A standard computer-and-screen in one.",
+  "shortdescription" : "Alliance Computer Screen",
+  "race" : "aegi",
+  
+  "lightColor" : [60, 110, 120],
+
+  "apexDescription" : "This screen is also a computer.",
+  "avianDescription" : "A computer and a screen in one.",
+  "floranDescription" : "Floran doesss not know how to use computer...",
+  "glitchDescription" : "Observation. A personal computer and screen in one.",
+  "humanDescription" : "This screen is also a computer. Clever.",
+  "hylotlDescription" : "A screen and computer in one.",
+  "novakidDescription" : "Computers aren't my thing.",
+
+  "aegiDescription" : "A basic computer and screen in one.",
+  "avikanDescription" : "A type of alien computer and screen combo.",
+  "erixianDescription" : "An Enerth Engineering-built computer.",
+  "trinkDescription" : "Combining a computer and screen in one is quite efficient.",
+  "hymidDescription" : "I could browse the Alliance Network on this computer.",
+  "notixDescription" : "A computer and screen in one.",
+  "jorgasianDescription" : "A simple computer and screen combo.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Alien interface detected. Translating...",
+
+  "inventoryIcon" : "alliancecomputerscreenicon.png",
+  "orientations" : [
+    {
+      "image" : "alliancecomputerscreen.png:<frame>",
+      "imagePosition" : [-8, 0],
+      "animationPosition" : [-8, 0],
+      "animationCycle" : 0.5,
+      "direction" : "right",
+
+      "animationParts" : {
+        "bg" : "alliancecomputerscreen.png",
+        "fg" : "alliancecomputerscreenlit.png"
+      },
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+	{
+      "image" : "alliancecomputerscreenleft.png:<frame>",
+      "imagePosition" : [-8, 0],
+      "animationPosition" : [-8, 0],
+      "animationCycle" : 0.5,
+      "direction" : "left",
+	  "flipImages" : true,
+
+      "animationParts" : {
+        "bg" : "alliancecomputerscreenleft.png",
+        "fg" : "alliancecomputerscreenleftlit.png"
+      },
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+
+  "interactive" : true
+}

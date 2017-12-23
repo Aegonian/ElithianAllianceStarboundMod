@@ -1,0 +1,26 @@
+{
+  "objectName" : "alliancepottedplant",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A plant native to Elithia.",
+  "shortdescription" : "Potted Elithian Plant",
+  "race" : "aegi",
+
+  "floranDescription" : "Floran doess not like putting plantss in potsss.",
+  "glitchDescription" : "Observation. A plant.",
+  "drodenDescription" : "Detected alien plantlife. Analyzing biochemistry.",
+
+  "inventoryIcon" : "alliancepottedplanticon.png",
+  "orientations" : [
+    {
+      "dualImage" : "alliancepottedplant.png:<color>",
+      "imagePosition" : [-8, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

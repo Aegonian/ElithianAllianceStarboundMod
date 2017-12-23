@@ -1,0 +1,29 @@
+{
+  "objectName" : "allianceposter",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 20,
+  "description" : "A poster promoting the Elithian Alliance.",
+  "shortdescription" : "Elithian Alliance Poster",
+  "race" : "aegi",
+
+  "floranDescription" : "Floran hass seen thisss ssymbol before.",
+  "glitchDescription" : "Curious. What is this Elithian Alliance?",
+  "aegiDescription" : "The Elithian Alliance is an alliance between many different spacefaring nations.",
+  "drodenDescription" : "Scan completed. Alien symbolism.",
+  
+  "inventoryIcon" : "alliancepostericon.png",
+  "orientations" : [
+    {
+      "image" : "allianceposter.png:<color>",
+      "imagePosition" : [-8, -16],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ]
+}

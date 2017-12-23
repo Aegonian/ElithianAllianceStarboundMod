@@ -1,0 +1,61 @@
+{
+  "objectName" : "alliancebathroomstall",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "furniture",
+  "printable" : false,
+  "price" : 80,
+  "description" : "A standard bathroom stall.",
+  "shortdescription" : "Alliance Bathroom Stall",
+  "race" : "aegi",
+
+  "apexDescription" : "This toilet uses special cleaning tech for perfect hygiene.",
+  "avianDescription" : "A place for droppings.",
+  "floranDescription" : "Shiny place for sssmelly business.",
+  "glitchDescription" : "Surprised. Oddly enough, this open toilet does not smell at all.",
+  "humanDescription" : "This toilet is amazing! So much better than the ones at home...",
+  "hylotlDescription" : "A luxurious toilet.",
+  "novakidDescription" : "An odd mix between simplicity and luxury.",
+
+  "aegiDescription" : "This toilet neutralizes the air inside for a pleasantly unremarkable scent.",
+  "avikanDescription" : "What is this thing?",
+  "erixianDescription" : "The Aegi make oddly comfortable toilets.",
+  "trinkDescription" : "I don't need toilets.",
+  "hymidDescription" : "This toilet doesn't smell bad, despite the fact that it is always open.",
+  "notixDescription" : "A toilet. It smells quite nice, oddly enough.",
+  "jorgasianDescription" : "A toilet. It looks oddly clean.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Alien chair detected. Analyzing piping functionality...",
+
+  "inventoryIcon" : "alliancebathroomstallicon.png",
+  "orientations" : [
+    {
+      "image" : "alliancebathroomstall.png:<color>",
+      "imagePosition" : [-8, 0],
+      "direction" : "left",
+      "flipImages" : true,
+	  
+      "sitPosition" : [-7, 23],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+    {
+      "image" : "alliancebathroomstall.png:<color>",
+      "imagePosition" : [-8, 0],
+      "direction" : "right",
+
+      "sitPosition" : [8, 23],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "objectType" : "loungeable",
+  "sitCoverImage" : "/objects/alliance/furniture/alliancebathroomstall/alliancebathroomstallcover.png",
+  "sitFlipDirection" : false
+}

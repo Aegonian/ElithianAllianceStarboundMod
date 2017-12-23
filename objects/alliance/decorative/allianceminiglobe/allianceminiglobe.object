@@ -1,0 +1,72 @@
+{
+  "objectName" : "allianceminiglobe",
+  "colonyTags" : ["alliance", "light"],
+  "rarity" : "Common",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A small floating globe of Elithia.",
+  "shortdescription" : "Globe of Elithia",
+  "race" : "aegi",
+
+  "apexDescription" : "A globe of some planet.",
+  "avianDescription" : "A globe. What planet is it?",
+  "floranDescription" : "Tiny world makess Floran feel ssstrong!",
+  "glitchDescription" : "Curious. What world is this?",
+  "humanDescription" : "Looks a bit like Earth.",
+  "hylotlDescription" : "A globe of a seemingly bountiful planet.",
+  "novakidDescription" : "Some kinda globe.",
+
+  "aegiDescription" : "A globe of Elithia, our home planet.",
+  "avikanDescription" : "An alien world. I've heard someone call it Elithia.",
+  "erixianDescription" : "Elithia, home of the Aeginian people.",
+  "trinkDescription" : "A small floating globe representing Elithia.",
+  "hymidDescription" : "Elithia, home of our closest allies, and home to many of my kind as well.",
+  "notixDescription" : "Elithia, birthplace of the Elithian Alliance.",
+  "jorgasianDescription" : "This globe represents Elithia, home of the Aegi.",
+  "centensDescription" : "A globe of a planet bountiful in life.",
+  "dremetonDescription" : "Elithia, our home.",
+  "theleanDescription" : "Elithia. The home world of the Elithia Alliance.",
+  "drodenDescription" : "Detected miniature globe. Planet unknown.",
+
+  "category" : "light",
+  "lightColor" : [0, 36, 64],
+
+  "inventoryIcon" : "allianceminiglobeicon.png",
+  "orientations" : [
+    {
+      "image" : "allianceminiglobe.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "allianceminiglobe.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "animation" : "allianceminiglobe.animation",
+  "animationParts" : {
+    "bg" : "allianceminiglobe.png",
+    "fg" : "allianceminiglobelit.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/screen3.ogg" ],
+      "off" : [ "/sfx/objects/screen2.ogg" ]
+    }
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+
+  "inputNodes" : [ [0, 0] ]
+}

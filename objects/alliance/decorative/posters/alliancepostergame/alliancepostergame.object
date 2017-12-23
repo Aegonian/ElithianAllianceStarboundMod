@@ -1,0 +1,29 @@
+{
+  "objectName" : "alliancepostergame",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 20,
+  "description" : "A poster promoting the game New Space Inquisition.",
+  "shortdescription" : "NSI Poster",
+  "race" : "aegi",
+
+  "floranDescription" : "Floran doess not know what it meansss.",
+  "glitchDescription" : "Intrigued. This poster is simplistic, but catchy.",
+  "aegiDescription" : "This was one of the best games of last year.",
+  "drodenDescription" : "Scan completed. Promotional material.",
+  
+  "inventoryIcon" : "alliancepostergameicon.png",
+  "orientations" : [
+    {
+      "image" : "alliancepostergame.png:<color>",
+      "imagePosition" : [-8, -16],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ]
+}

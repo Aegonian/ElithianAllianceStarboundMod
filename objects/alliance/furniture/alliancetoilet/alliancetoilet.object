@@ -37,7 +37,7 @@
       "direction" : "left",
       "flipImages" : true,
 
-      "sitPosition" : [3, 24],
+      "sitPosition" : [1, 23],
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]
@@ -47,7 +47,7 @@
       "imagePosition" : [-8, 0],
       "direction" : "right",
 
-      "sitPosition" : [7, 24],
+      "sitPosition" : [4, 23],
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]
@@ -57,5 +57,4 @@
   "sounds" : [ "/sfx/objects/toilet_flush.ogg" ],
   "objectType" : "loungeable",
   "sitFlipDirection" : false
-
 }

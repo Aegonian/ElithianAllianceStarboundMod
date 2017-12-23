@@ -4885,7 +4885,7 @@
                  "y":1464
                 }, 
                 {
-                 "height":480,
+                 "height":536,
                  "id":378,
                  "name":"",
                  "properties":
@@ -4895,8 +4895,8 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":2640,
-                 "x":1688,
+                 "width":3080,
+                 "x":1248,
                  "y":1640
                 }, 
                 {
@@ -4989,8 +4989,8 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":880,
-                 "x":1688,
+                 "width":1744,
+                 "x":824,
                  "y":1160
                 }, 
                 {
@@ -5009,7 +5009,7 @@
                  "y":832
                 }, 
                 {
-                 "height":528,
+                 "height":464,
                  "id":602,
                  "name":"",
                  "properties":
@@ -5019,9 +5019,9 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":944,
+                 "width":456,
                  "x":3384,
-                 "y":1112
+                 "y":1176
                 }, 
                 {
                  "height":80,
@@ -5097,6 +5097,51 @@
                  "width":424,
                  "x":1920,
                  "y":576
+                }, 
+                {
+                 "height":256,
+                 "id":622,
+                 "name":"",
+                 "properties":
+                    {
+                     "dungeonid":"none"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":520,
+                 "x":3840,
+                 "y":1384
+                }, 
+                {
+                 "height":200,
+                 "id":625,
+                 "name":"",
+                 "properties":
+                    {
+                     "dungeonid":"none"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":520,
+                 "x":4016,
+                 "y":1168
+                }, 
+                {
+                 "height":16,
+                 "id":626,
+                 "name":"",
+                 "properties":
+                    {
+                     "dungeonid":"none"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":208,
+                 "x":4160,
+                 "y":1368
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -5105,7 +5150,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":622,
+ "nextobjectid":627,
  "orientation":"orthogonal",
  "properties":
     {

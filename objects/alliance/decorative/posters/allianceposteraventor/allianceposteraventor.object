@@ -1,0 +1,29 @@
+{
+  "objectName" : "allianceposteraventor",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 20,
+  "description" : "A poster promoting Aventor.",
+  "shortdescription" : "Aventor Poster",
+  "race" : "aegi",
+
+  "floranDescription" : "Ssshiny.",
+  "glitchDescription" : "Curious. What does this icon represent?",
+  "aegiDescription" : "Aventor develops the fastest spaceships in the Alliance.",
+  "drodenDescription" : "Scan completed. Promotional material.",
+  
+  "inventoryIcon" : "allianceposteraventor.png",
+  "orientations" : [
+    {
+      "image" : "allianceposteraventor.png:<color>",
+      "imagePosition" : [-8, -16],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ]
+}

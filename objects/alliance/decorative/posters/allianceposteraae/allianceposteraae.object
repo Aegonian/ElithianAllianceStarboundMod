@@ -1,0 +1,29 @@
+{
+  "objectName" : "allianceposteraae",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 20,
+  "description" : "A poster promoting the AAE.",
+  "shortdescription" : "AAE Poster",
+  "race" : "aegi",
+
+  "floranDescription" : "Floran impresssed by the whiteness of it.",
+  "glitchDescription" : "Informed. AAE stands for Advanced Aeginian Engineering.",
+  "aegiDescription" : "The AAE manufactures many things, from military equipment to household items and city power grids.",
+  "drodenDescription" : "Scan completed. Promotional material.",
+  
+  "inventoryIcon" : "allianceposteraaeicon.png",
+  "orientations" : [
+    {
+      "image" : "allianceposteraae.png:<color>",
+      "imagePosition" : [-16, -8],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ]
+}

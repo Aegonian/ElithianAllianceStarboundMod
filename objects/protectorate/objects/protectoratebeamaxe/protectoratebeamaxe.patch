@@ -27,5 +27,15 @@
   { "op" : "add",
 	"path" : "/pickedUpParameters/trinkDescription",
 	"value" : "To linger here would be terribly inefficient."
+  },
+  
+  //AEGI
+  { "op" : "add",
+	"path" : "/aegiDescription",
+	"value" : "I should take the Matter Manipulator and get to safety. Perhaps the Union can send help to these people."
+  },
+  { "op" : "add",
+	"path" : "/pickedUpParameters/aegiDescription",
+	"value" : "I'll return with help."
   }
 ]
