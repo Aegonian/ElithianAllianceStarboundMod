@@ -15,14 +15,46 @@
   
   "cursor" : "/cursors/thea-widereticle.cursor",
 
-  "animation" : "/items/active/weapons/ranged/animations/thea-reloadshotgun.animation",
+  "animation" : "/items/active/weapons/ranged/animations/thea-reloadshotgun-flashlight.animation",
   "animationParts" : {
     "middle" : "thea-briggsshotgun.png",
     "middleFullbright" : "",
+    "flashLight" : "thea-briggsshotgunflashlight.png",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/alliancephysicalflash.png"
   },
   "animationCustom" : {
-    "sounds" : {
+	"animatedParts" : {
+	  "parts" : {
+		"middleFullbright" : {
+		  "properties" : {
+			"offset" : [0.75, 0.25] //Same as BaseOffset
+		  }
+		},
+		"flashLight" : {
+		  "properties" : {
+			"offset" : [0.75, 0.25] //Same as BaseOffset
+		  }
+		}
+	  }
+	},
+    "lights" : {
+      "flashlightSpread" : {
+        "active" : false,
+        "position" : [2.0, 0.0],
+        "transformationGroups" : ["weapon"],
+        "color" : [80, 80, 80]
+      },
+      "flashlight" : {
+        "active" : false,
+        "position" : [2.0, 0.0],
+        "transformationGroups" : ["weapon"],
+        "color" : [200, 200, 200],
+        "pointLight" : true,
+        "pointAngle" : 0.00,
+        "pointBeam" : 2.5
+      }
+    },
+	"sounds" : {
       "fire" : [ "/sfx/gun/shotgun2.ogg" ],
 	  "altFire" : [ "/sfx/gun/shotgun4.ogg" ],
       "reload" : [ "/sfx/gun/reload/shotgun_reload_clip3.ogg" ]
@@ -85,50 +117,8 @@
       }
     }
   },
-
-  "altAbility" : {
-    "name" : "Power Shot",
-    "scripts" : ["/items/active/weapons/ranged/abilities/altfire.lua"],
-	"class" : "AltFireAttack",
-
-    "baseDps" : 4.0,
-	"fireTime" : 1.2,
-    "energyUsage" : 50.0,
-    "inaccuracy" : 0.045,
-
-	"projectileCount" : 4,
-    "fireType" : "auto",
-	
-	"projectileType" : "avikanbullet",
-	"projectileParameters" : {
-	  "knockback" : 40
-	},
-	
-	"hidePrimaryMuzzleFlash" : false,
-	"useParticleEmitter" : false,
-	"usePrimaryFireSound" : false,
-
-    "stances" : {
-      "fire" : {
-        "duration" : 0,
-        "armRotation" : 7,
-        "weaponRotation" : 7,
-        "twoHanded" : true,
-
-        "allowRotate" : false,
-        "allowFlip" : false
-      },
-      "cooldown" : {
-        "duration" : 0.25,
-        "armRotation" : 7,
-        "weaponRotation" : 7,
-        "twoHanded" : true,
-
-        "allowRotate" : false,
-        "allowFlip" : false
-      }
-    }
-  },
+  
+  "altAbilityType" : "thea-flashlight-builtin",
 
   "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

@@ -6,7 +6,7 @@
   "maxStack" : 1,
   "rarity" : "Common",
   "category" : "legwear",
-  "description" : "A skirt often worn by high-ranking ASA officials.",
+  "description" : "^green;Aegi. ^white;A skirt often worn by high-ranking ASA officials.",
   "shortdescription" : "ASA Skirt",
   "tooltipKind" : "armor",
 

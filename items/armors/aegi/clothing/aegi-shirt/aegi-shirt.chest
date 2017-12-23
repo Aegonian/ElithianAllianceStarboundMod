@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Common",
   "category" : "chestwear",
-  "description" : "A simple but comfortable shirt.",
+  "description" : "^green;Aegi. ^white;A simple but comfortable shirt.",
   "shortdescription" : "Belted T-Shirt",
   "tooltipKind" : "armor",
   "maleFrames" : {

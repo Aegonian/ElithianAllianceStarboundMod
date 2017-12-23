@@ -37,6 +37,11 @@
 	"path": "/thea-loadspecialammo",
 	"value": "/items/active/weapons/ranged/abilities/thea-loadspecialammo/thea-loadspecialammo.weaponability"
   },
+  {
+	"op": "add",
+	"path": "/thea-flashlight-builtin",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-flashlight/thea-flashlight-builtin.weaponability"
+  },
   
   //======================================================================================================================
   //	MELEE ABILITIES

@@ -1,0 +1,43 @@
+{
+  "animationCustom" : {
+    "animatedParts" : {
+      "stateTypes" : {
+		"light" : {
+		  "default" : "off",
+		  "states" : {
+			"off" : {},
+			"on" : {}
+		  }
+		}
+      },
+	  "parts" : {}
+	},
+    "lights" : {
+      "flashlightSpread" : { //Preferably overwrite this in the applicable weapon config
+        "active" : false,
+        "position" : [0.0, 0.0],
+        "transformationGroups" : ["weapon"],
+        "color" : [80, 80, 80]
+      },
+      "flashlight" : { //Preferably overwrite this in the applicable weapon config
+        "active" : false,
+        "position" : [0.0, 0.0],
+        "transformationGroups" : ["weapon"],
+        "color" : [200, 200, 200],
+        "pointLight" : true,
+        "pointAngle" : 0.00,
+        "pointBeam" : 2.5
+      }
+    },
+    "sounds" : {
+      "flashlight" : [ "/sfx/tools/flashlight_toggle.ogg" ]
+    }
+  },
+
+  "ability" : {
+    "name" : "Flashlight",
+    "type" : "thea-flashlight-builtin",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-flashlight.lua"],
+    "class" : "TheaFlashlight"
+  }
+}
