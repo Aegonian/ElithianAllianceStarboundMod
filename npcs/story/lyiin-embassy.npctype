@@ -1,0 +1,74 @@
+{
+  "type" : "lyiin-embassy",
+  "baseType" : "ao-idle",
+
+  "damageTeamType" : "ghostly",
+  
+  "keepAlive" : true,
+
+  "npcname" : "Lyiin Taemera",
+  "identity" : {
+    "imagePath" : "aegi",
+    "gender" : "male",
+    "hairGroup" : "hair",
+    "hairType" : "lyiinhair",
+    "facialMaskGroup" : "ears",
+    "facialMaskType" : "1",
+    "personalityIdle" : "idle.4",
+    "personalityArmIdle" : "idle.4"
+  },
+
+  "persistent" : true,
+
+  "dropPools" : [],
+
+  "scriptConfig" : {
+  
+	"offeredQuests" : [ ],
+	"turnInQuests" : [ ],
+
+    "chatPortrait" : "/interface/chatbubbles/lyiin.png:<frame>",
+
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "You aren't supposed to be in my office."
+          ],
+		  "avikan" : [
+            "Anything to report, Captain?"
+          ],
+		  "droden" : [
+            "Anything to report, Droden?"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "aegi-presidenthead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "aegi-presidentchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "aegi-presidentlegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "protection" : {
+        "baseValue" : 100.0
+      }
+    }
+  }
+}

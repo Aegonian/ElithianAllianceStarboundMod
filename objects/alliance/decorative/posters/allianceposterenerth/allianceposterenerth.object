@@ -1,0 +1,29 @@
+{
+  "objectName" : "allianceposterenerth",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 20,
+  "description" : "A poster promoting Enerth Engineering.",
+  "shortdescription" : "Enerth Engineering Poster",
+  "race" : "aegi",
+
+  "floranDescription" : "Blue makesss Floran think of the ssky.",
+  "glitchDescription" : "Confused. What does Enerth Engineering manufacture?",
+  "aegiDescription" : "Enerth Engineering produces many of the Union's vehicles, but also its modular homes, and some household equipment.",
+  "drodenDescription" : "Scan completed. Promotional material.",
+  
+  "inventoryIcon" : "allianceposterenerthicon.png",
+  "orientations" : [
+    {
+      "image" : "allianceposterenerth.png:<color>",
+      "imagePosition" : [-16, -8],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ]
+}

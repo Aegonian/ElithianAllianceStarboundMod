@@ -11,7 +11,7 @@
     "hairGroup" : "pattern",
     "hairType" : "male1",
     "facialMaskGroup" : "flaps",
-    "facialMask" : "male1"
+    "facialMaskType" : "male1"
   },
   "humanoidConfig" : "/npcs/story/zaheedoid.config",
   
