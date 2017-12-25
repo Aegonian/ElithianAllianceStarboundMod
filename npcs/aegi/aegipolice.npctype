@@ -1,0 +1,61 @@
+{
+  "type" : "aegipolice",
+  "baseType" : "thea-villageguard",
+
+  "dropPools" : [ "aegiPoliceDeathTreasure" ],
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "guard"],
+      "enableParticipation" : true,
+
+      // Every 30 seconds, decide whether to generate a quest and if so, spend
+      // the rest of the 30s window trying to generate it.
+      "timeLimit" : 30,
+
+      // Don't generate new quests if there are already more than <nearbyQuestLimit>
+      // questmanager stagehands nearby, within a <nearbyQuestRange> tile range.
+      "nearbyQuestLimit" : 2,
+      "nearbyQuestRange" : 50,
+      "questCountRange" : [1, 4],
+      
+      "graduation" : {
+        "nextNpcType" : [
+          [1, "crewmemberaegipolice"]
+        ]
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          //BATON EQUIPPED
+		  {
+            "head" : [ "aegi-policehead" ],
+            "chest" : [ "aegi-policechest" ],
+            "legs" : [ "aegi-policelegs" ],
+            "primary" : [
+			  "thea-policeprod"
+			],
+			"sheathedprimary" : [
+			  "thea-policepistol"
+			]
+          },
+		  //PISTOL EQUIPPED
+		  {
+            "head" : [ "aegi-policehead" ],
+            "chest" : [ "aegi-policechest" ],
+            "legs" : [ "aegi-policelegs" ],
+            "primary" : [
+			  "thea-policepistol"
+			],
+			"sheathedprimary" : [
+			  "thea-policeprod"
+			]
+          }
+        ] ]
+    ]
+  }
+}

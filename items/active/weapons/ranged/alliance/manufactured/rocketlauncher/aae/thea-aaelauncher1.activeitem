@@ -8,6 +8,7 @@
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Bahamur L-2",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "thea-gun-mf-attachment",
   "category" : "Rocket Launcher",
   "itemTags" : ["weapon","ranged","rocketlauncher","alliance","aae","allianceUpgradeable"],

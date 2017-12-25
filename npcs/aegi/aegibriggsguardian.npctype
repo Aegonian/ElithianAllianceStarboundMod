@@ -1,0 +1,49 @@
+{
+  "type" : "aegibriggsguardian",
+  "baseType" : "thea-villageguard",
+
+  "dropPools" : [ "aegiBriggsDeathTreasure" ],
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "guard"],
+      "enableParticipation" : true,
+
+      // Every 30 seconds, decide whether to generate a quest and if so, spend
+      // the rest of the 30s window trying to generate it.
+      "timeLimit" : 30,
+
+      // Don't generate new quests if there are already more than <nearbyQuestLimit>
+      // questmanager stagehands nearby, within a <nearbyQuestRange> tile range.
+      "nearbyQuestLimit" : 2,
+      "nearbyQuestRange" : 50,
+      "questCountRange" : [1, 4],
+      
+      "graduation" : {
+        "nextNpcType" : [
+          [1, "crewmemberaegibriggsguardian"]
+        ]
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+		  {
+            "head" : [ "aegi-briggsguardianhead" ],
+            "chest" : [ "aegi-briggsguardianchest" ],
+            "legs" : [ "aegi-briggslegs" ],
+            "back" : [ "aegi-soldierback", "thea-hiddenback" ],
+            "primary" : [
+			  "thea-briggsshotgun"
+			],
+			"alt" : [
+			  "briggsshield"
+			]
+          }
+        ] ]
+    ]
+  }
+}

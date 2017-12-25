@@ -8,6 +8,7 @@
   "manufacturer" : "^gray;Theledos^reset;",
   "shortdescription" : "Tuvalihn Carbine",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "thea-gun-mf",
   "category" : "Assault Rifle",
   "itemTags" : ["weapon","ranged","assaultrifle","alliance","theledos"],

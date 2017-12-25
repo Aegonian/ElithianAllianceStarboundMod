@@ -48,7 +48,7 @@
 				{ "name" : "avikan-skiprifle", "data" : { "colorIndex" : 1 } }
 			],
 			"alt" : [
-				{ "name" : "avikanmetalshield" }
+			  "avikanmetalshield"
 			]
           }
         ] ]

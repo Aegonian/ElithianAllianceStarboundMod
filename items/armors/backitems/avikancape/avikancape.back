@@ -4,7 +4,7 @@
   "inventoryIcon" : "avikancapeicon.png",
   "rarity" : "Uncommon",
   "category" : "backwear",
-  "description" : "An Avikan cape, made of two long sheets of leather.",
+  "description" : "^green;Avikan. ^white;An Avikan cape, made of two long sheets of leather.",
   "shortdescription" : "Avikan Cape",
   "tooltipKind" : "back",
 

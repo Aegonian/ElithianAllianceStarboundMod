@@ -1,0 +1,75 @@
+{
+  "type" : "crewmemberaegiengineer",
+  "baseType" : "crewmemberaegi",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : true
+    },
+
+	"crew" : {
+	  "role" : {
+        "type" : "unionmechanic",
+        "name" : "Engineer",
+        "field" : "Enerth",
+        "uniformColorIndex" : 5,
+
+        "benefits" : [
+          {
+            "type" : "ShipUpgradeBenefit",
+            "property" : "shipSpeed",
+            "value" : 3.75
+          }
+        ]
+      },
+
+      "ranks" : [
+        "<field> <role>",
+        "<field> Calibrator",
+        "<field> Master <role>",
+        "<field> Assistant",
+        "<field> Novice",
+        "<field> Technician",
+        "<field> Instructor",
+        "<field> Enthusiast",
+        "<field> Administrative Worker",
+        "<field> Specialist"
+      ],
+	  
+	  "defaultUniform" : {
+		"chest" : "aegi-enerthchest",
+		"legs" : "aegi-enerthlegs"
+	  },
+	  
+      "uniformSlots" : ["chest", "chestCosmetic", "legs", "legsCosmetic", "back", "backCosmetic"]
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "roleDescription" : {
+          "default" : {
+            "default" : [
+              "I'll make sure your engines run smoothly. Thrust velocity is up by 25%!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+			"chest" : [ { "name" : "aegi-enerthchest", "data" : { "colorIndex" : 5 } } ],
+            "legs" : [ { "name" : "aegi-enerthlegs", "data" : { "colorIndex" : 5 } } ],
+            "sheathedprimary" : [
+			  "thea-prod"
+			]
+          }
+        ] ]
+    ]
+  }
+}

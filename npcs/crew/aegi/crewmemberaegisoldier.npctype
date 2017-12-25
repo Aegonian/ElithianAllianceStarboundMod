@@ -1,0 +1,66 @@
+{
+  "type" : "crewmemberaegisoldier",
+  "baseType" : "crewmemberaegi",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+
+	"crew" : {
+	  "role" : {
+        "type" : "unionsoldier",
+        "name" : "Soldier",
+        "field" : "M-ASA",
+        "uniformColorIndex" : 4
+      },
+
+      "ranks" : [
+        "<field> Officer",
+        "<field> Commander",
+        "<field> Recruit",
+        "<field> Soldier",
+        "<field> Operator",
+        "<field> Lieutenant",
+        "<field> Captain",
+        "<field> Corporal",
+        "<field> Sergeant",
+        "<field> Colonel"
+      ],
+	  
+	  "defaultUniform" : {
+		"head" : "aegi-soldierhead",
+		"chest" : "aegi-soldierchest",
+		"legs" : "aegi-soldierlegs"
+	  },
+	  
+      "uniformSlots" : ["chest", "chestCosmetic", "legs", "legsCosmetic", "back", "backCosmetic"]
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+            "head" : [ { "name" : "aegi-soldierhead", "data" : { "colorIndex" : 4 } } ],
+			"chest" : [ { "name" : "aegi-soldierchest", "data" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "aegi-soldierlegs", "data" : { "colorIndex" : 4 } } ],
+            "primary" : [
+			  "thea-tier3rifle",
+			  "thea-tier4rifle"
+			],
+			"sheathedprimary" : [
+			  "thea-tier4shortsword",
+			  "thea-tier5dagger",
+			  "thea-tier6axe"
+			],
+			"alt" : [
+			  "allianceshield"
+			]
+          }
+        ] ]
+    ]
+  }
+}

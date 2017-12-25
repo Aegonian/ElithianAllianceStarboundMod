@@ -1,0 +1,127 @@
+{
+  "type" : "crewmemberaegi",
+  "baseType" : "crewmember",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+
+	"crew" : {
+	  "defaultUniform" : {
+		"chest" : "protectoratechest",
+		"legs" : "protectoratepants"
+	  },
+	  
+      "uniformSlots" : ["chest", "chestCosmetic", "legs", "legsCosmetic", "back", "backCosmetic"]
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "offer" : {
+          "aegi" : {
+            "default" : [
+              "Hey there, adventurer. Might I join your crew?",
+              "I'm <selfname>, looking to join a spaceship crew. Are you hiring?",
+              "Do you need anyone for your crew? I'd love to join you!",
+              "I'd love to join your crew, if you'll have me."
+            ]
+          }
+        },
+		"roleDescription" : {
+          "aegi" : {
+            "default" : [
+              "I'll keep you safe in battle, sir!",
+              "Let me fight for you!",
+              "Always ready, captain!",
+              "I'm here if you need me!"
+            ]
+          }
+        },
+		"respawned" : {
+          "aegi" : {
+            "default" : [
+              "I've never felt anything as strange as that...",
+              "I thought that was the end for me!",
+              "I'm back!",
+              "I'm alive!"
+            ]
+          }
+        },
+		"unfollow" : {
+          "aegi" : {
+            "default" : [
+              "I'll wait for you here.",
+              "Let me know when you want to head out again.",
+              "I'll stand guard here.",
+              "I'll be here when you get back."
+            ]
+          }
+        },
+		"follow" : {
+          "aegi" : {
+            "default" : [
+              "Ready to go, sir!",
+              "Let's be off, then!",
+              "I'll follow you, captain!",
+              "Are we heading out then?"
+            ]
+          }
+        },
+		"cantreach" : {
+          "aegi" : {
+            "default" : [
+              "I can't reach you!",
+              "I can't get over there!",
+              "Wait for me!",
+              "I'll find a way around!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "protectoratechest", "data" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "protectoratepants", "data" : { "colorIndex" : 4 } } ],
+            "primary" : [
+			  "thea-tier2rifle",
+			  "thea-tier2shotgun",
+			  "thea-tier2sniper"
+			],
+            "sheathedprimary" : [
+			  "thea-tier1broadsword",
+			  "thea-tier1shortsword",
+			  "thea-tier2dagger",
+			  "thea-tier2spear",
+			  "thea-tier3axe",
+			  "thea-tier3hammer"
+			]
+          },
+          {
+            "chest" : [ { "name" : "protectoratechest", "data" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "protectoratepants", "data" : { "colorIndex" : 4 } } ],
+            "primary" : [
+			  "thea-tier1broadsword",
+			  "thea-tier1shortsword",
+			  "thea-tier2dagger",
+			  "thea-tier2spear",
+			  "thea-tier3axe",
+			  "thea-tier3hammer"
+			],
+            "sheathedprimary" : [
+			  "thea-tier2rifle",
+			  "thea-tier2shotgun",
+			  "thea-tier2sniper"
+			]
+          }
+        ] ]
+    ]
+  }
+}

@@ -8,6 +8,7 @@
   "manufacturer" : "^gray;Alliance Collective^reset;",
   "shortdescription" : "AC.R-15 Longsight",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "thea-gun-mf",
   "category" : "Sniper Rifle",
   "itemTags" : ["weapon","ranged","sniperrifle","alliance","alliancecollective"],

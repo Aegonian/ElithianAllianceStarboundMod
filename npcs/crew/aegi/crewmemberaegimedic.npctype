@@ -1,0 +1,97 @@
+{
+  "type" : "crewmemberaegimedic",
+  "baseType" : "crewmemberaegi",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : true
+    },
+
+	"crew" : {
+	  "role" : {
+        "type" : "unionmedic",
+        "name" : "Medic",
+        "field" : "Meditek",
+        "uniformColorIndex" : 3,
+
+        "benefits" : [
+          {
+            "type" : "Regeneration",
+            "value" : 1
+          }
+        ]
+      },
+
+      "ranks" : [
+        "<field> Doctor",
+        "<field> Nurse",
+        "<field> Medic",
+        "<field> Healer",
+        "<field> Physician",
+        "<field> Assistant",
+        "<field> Therapist",
+        "<field> Practitioner",
+        "<field> Clerk",
+        "<field> Specialist"
+      ],
+	  
+	  "defaultUniform" : {
+		"chest" : "aegi-medicchest",
+		"legs" : "aegi-mediclegs"
+	  },
+	  
+      "uniformSlots" : ["chest", "chestCosmetic", "legs", "legsCosmetic", "back", "backCosmetic"]
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "roleDescription" : {
+          "default" : {
+            "default" : [
+              "As your medical officer, I'll keep an eye on your health in between adventures."
+            ]
+          }
+        },
+        "fieldBenefit" : {
+          "default" : {
+            "default" : [
+              "You look hurt! Let me help!",
+              "I'll tend to those wounds of yours.",
+              "Hold still, I'll treat those wounds for you.",
+              "You might need medical assistance. Let me help!"
+            ]
+          }
+        },
+        "combatBenefit" : {
+          "default" : {
+            "default" : [
+              "You look hurt! Let me help!",
+              "I'll tend to those wounds of yours.",
+              "Hold still, I'll treat those wounds for you.",
+              "You might need medical assistance. Let me help!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+			"chest" : [ { "name" : "aegi-medicchest", "data" : { "colorIndex" : 3 } } ],
+            "legs" : [ { "name" : "aegi-mediclegs", "data" : { "colorIndex" : 3 } } ],
+            "primary" : [
+			  "alliancebandage"
+			],
+            "sheathedprimary" : [
+			  "thea-tier5pistol"
+			]
+          }
+        ] ]
+    ]
+  }
+}

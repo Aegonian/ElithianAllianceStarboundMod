@@ -6,8 +6,8 @@
   "maxStack" : 1,
   "rarity" : "Common",
   "category" : "legwear",
-  "description" : "^green;Aegi. ^white;Shorts and shoes popular amongst Alliance citizens.",
-  "shortdescription" : "Alliance Shorts",
+  "description" : "^green;Aegi. ^white;Shorts and shoes popular amongst Union citizens.",
+  "shortdescription" : "Shorts and Shoes",
   "tooltipKind" : "armor",
 
   "maleFrames" : "pants.png",

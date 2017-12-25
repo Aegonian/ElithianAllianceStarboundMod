@@ -1,0 +1,13 @@
+{
+  "itemName" : "alliancefarmpanel",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "alliancefarmpanel.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  
+  "shortdescription" : "Alliance Farming Block",
+  "description" : "A metal container filled with fertile dirt, ready for farming.",
+
+  "materialId" : 30082
+}

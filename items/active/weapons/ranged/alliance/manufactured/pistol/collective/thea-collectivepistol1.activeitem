@@ -8,6 +8,7 @@
   "manufacturer" : "^gray;Alliance Collective^reset;",
   "shortdescription" : "AC.P-3 Fulcrum",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "thea-gun-mf",
   "category" : "Pistol",
   "itemTags" : ["weapon","ranged","pistol","alliance","alliancecollective"],

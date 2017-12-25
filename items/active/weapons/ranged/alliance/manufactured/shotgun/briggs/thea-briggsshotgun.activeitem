@@ -8,6 +8,7 @@
   "manufacturer" : "^gray;Briggs Shipbuilding^reset;",
   "shortdescription" : "Briggs Guardian",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "thea-gun-mf",
   "category" : "Shotgun",
   "itemTags" : ["weapon","ranged","shotgun","alliance","briggs"],

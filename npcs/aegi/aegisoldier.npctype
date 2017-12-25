@@ -1,0 +1,53 @@
+{
+  "type" : "aegisoldier",
+  "baseType" : "thea-villageguard",
+
+  "dropPools" : [ "aegiSoldierDeathTreasure" ],
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "guard"],
+      "enableParticipation" : true,
+
+      // Every 30 seconds, decide whether to generate a quest and if so, spend
+      // the rest of the 30s window trying to generate it.
+      "timeLimit" : 30,
+
+      // Don't generate new quests if there are already more than <nearbyQuestLimit>
+      // questmanager stagehands nearby, within a <nearbyQuestRange> tile range.
+      "nearbyQuestLimit" : 2,
+      "nearbyQuestRange" : 50,
+      "questCountRange" : [1, 4],
+      
+      "graduation" : {
+        "nextNpcType" : [
+          [1, "crewmemberaegisoldier"]
+        ]
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+		  {
+            "head" : [ "aegi-soldierhead" ],
+            "chest" : [ "aegi-soldierchest" ],
+            "legs" : [ "aegi-soldierlegs" ],
+            "back" : [ "aegi-soldierback", "thea-hiddenback" ],
+            "primary" : [
+			  "thea-tier3rifle",
+			  "thea-tier4rifle"
+			],
+			"sheathedprimary" : [
+			  "thea-tier5dagger"
+			],
+			"alt" : [
+			  "allianceshield"
+			]
+          }
+        ] ]
+    ]
+  }
+}

@@ -8,6 +8,7 @@
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Hyperion I-19",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "thea-gun-mf-attachment",
   "category" : "Assault Rifle",
   "itemTags" : ["weapon","ranged","assaultrifle","alliance","aae","allianceUpgradeable"],

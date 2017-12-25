@@ -1,0 +1,75 @@
+{
+  "type" : "crewmemberaegimechanic",
+  "baseType" : "crewmemberaegi",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : true
+    },
+
+	"crew" : {
+	  "role" : {
+        "type" : "unionmechanic",
+        "name" : "Mechanic",
+        "field" : "Enerth",
+        "uniformColorIndex" : 8,
+
+        "benefits" : [
+          {
+            "type" : "ShipUpgradeBenefit",
+            "property" : "fuelEfficiency",
+            "value" : 0.1
+          }
+        ]
+      },
+
+      "ranks" : [
+        "<field> <role>",
+        "<field> Calibrator",
+        "<field> Master <role>",
+        "<field> Assistant",
+        "<field> Novice",
+        "<field> Technician",
+        "<field> Instructor",
+        "<field> Enthusiast",
+        "<field> Administrative Worker",
+        "<field> Specialist"
+      ],
+	  
+	  "defaultUniform" : {
+		"chest" : "aegi-enerthchest",
+		"legs" : "aegi-enerthlegs"
+	  },
+	  
+      "uniformSlots" : ["chest", "chestCosmetic", "legs", "legsCosmetic", "back", "backCosmetic"]
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "roleDescription" : {
+          "default" : {
+            "default" : [
+              "I'll keep working on the ship's fuelling systems. Fuel efficiency is up 10%!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+			"chest" : [ { "name" : "aegi-enerthchest", "data" : { "colorIndex" : 8 } } ],
+            "legs" : [ { "name" : "aegi-enerthlegs", "data" : { "colorIndex" : 8 } } ],
+            "sheathedprimary" : [
+			  "thea-wrench"
+			]
+          }
+        ] ]
+    ]
+  }
+}

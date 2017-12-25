@@ -1,0 +1,176 @@
+{
+	//ALLIANCE SETTLEMENTS
+  "alliancecrate" : [
+    [1, {
+      "poolRounds" : [
+        [0.6, 1],
+        [0.2, 2],
+        [0.1, 3],
+        [0.1, 4]
+      ],
+	  "pool" : [
+        {"weight" : 0.10, "pool" : "alliancefarming" },
+		{"weight" : 0.30, "pool" : "alliancecraftingmaterials" },
+		{"weight" : 0.20, "item" : ["alliancemetal", 2] },
+		{"weight" : 0.10, "pool" : "alliancecodex" },
+		{"weight" : 0.10, "pool" : "allianceclothing" },
+		{"weight" : 0.05, "item" : "alliancecache" }
+      ]
+    } ]
+  ],
+
+  "alliancecratelarge" : [
+    [1, {
+      "poolRounds" : [
+        [0.3, 1],
+        [0.4, 2],
+        [0.2, 3],
+        [0.1, 4]
+      ],
+      "pool" : [
+        {"weight" : 0.10, "pool" : "alliancefarming" },
+		{"weight" : 0.25, "pool" : "alliancecraftingmaterials" },
+		{"weight" : 0.20, "item" : ["alliancemetal", 3] },
+		{"weight" : 0.10, "pool" : "alliancecodex" },
+		{"weight" : 0.10, "pool" : "allianceclothing" },
+		{"weight" : 0.10, "item" : "alliancecache" }
+      ]
+    } ]
+  ],
+  
+  "allianceweaponchest" : [
+    [1, {
+      "fill" : [
+        {"pool" : "allianceweapons" },
+		{"pool" : "alliancegrenades" }
+      ]
+    } ]
+  ],
+  
+  "alliancefridge" : [
+    [1, {
+      "poolRounds" : [
+		[0.2, 1],
+        [0.4, 2],
+        [0.1, 3],
+        [0.1, 4]
+      ],
+      "pool" : [
+        {"weight" : 1.0, "pool" : "alliancefood" }
+      ]
+    } ]
+  ],
+
+	//GENERIC POOLS
+  "allianceweapons" : [
+    [0, {
+	  "pool" : [
+        {"weight" : 0.25, "item" : "thea-tier1rifle" },
+		{"weight" : 0.25, "item" : "thea-tier1shotgun" },
+		{"weight" : 0.25, "item" : "thea-tier1sniper" },
+		{"weight" : 0.25, "item" : "thea-tier1pistol" }
+      ]
+    } ],
+	[1, {
+	  "pool" : [
+        {"weight" : 0.25, "item" : "thea-tier2rifle" },
+		{"weight" : 0.25, "item" : "thea-tier2shotgun" },
+		{"weight" : 0.25, "item" : "thea-tier2sniper" },
+		{"weight" : 0.25, "item" : "thea-tier2smg" }
+      ]
+    } ],
+	[2, {
+	  "pool" : [
+        {"weight" : 0.25, "item" : "thea-tier3rifle" },
+		{"weight" : 0.25, "item" : "thea-tier3shotgun" },
+		{"weight" : 0.25, "item" : "thea-tier3sniper" },
+		{"weight" : 0.25, "item" : "thea-tier3pistol" }
+      ]
+    } ],
+	[3, {
+	  "pool" : [
+        {"weight" : 0.25, "item" : "thea-tier4rifle" },
+		{"weight" : 0.25, "item" : "thea-tier4shotgun" },
+		{"weight" : 0.25, "item" : "thea-tier4sniper" },
+		{"weight" : 0.25, "item" : "thea-tier4smg" }
+      ]
+    } ],
+	[4, {
+	  "pool" : [
+        {"weight" : 0.25, "item" : "thea-tier5rifle" },
+		{"weight" : 0.25, "item" : "thea-tier5shotgun" },
+		{"weight" : 0.25, "item" : "thea-tier5sniper" },
+		{"weight" : 0.25, "item" : "thea-tier5pistol" }
+      ]
+    } ],
+	[5, {
+	  "pool" : [
+        {"weight" : 0.25, "item" : "thea-tier5rifle" },
+		{"weight" : 0.25, "item" : "thea-tier5shotgun" },
+		{"weight" : 0.25, "item" : "thea-tier5sniper" },
+		{"weight" : 0.25, "item" : "thea-tier5smg" }
+      ]
+    } ]
+  ],
+  
+  "alliancegrenades" : [
+    [1, {
+      "poolRounds" : 1,
+      "pool" : [
+        {"weight" : 0.33, "item" : [ "alliancethrowablegrenade", 8 ] },
+		{"weight" : 0.33, "item" : [ "alliancethrowablegrenade", 12 ] },
+		{"weight" : 0.33, "item" : [ "allianceflare", 10 ] }
+      ]
+    } ]
+  ],
+  
+  "alliancecraftingmaterials" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.15, "item" : "alliancemetal" },
+		{"weight" : 0.15, "item" : "allianceglassitem" },
+		{"weight" : 0.15, "item" : "allianceballisticfiber" },
+		{"weight" : 0.15, "item" : "alliancecloth" },
+		{"weight" : 0.15, "item" : "alliancecircuitry" },
+		{"weight" : 0.15, "item" : "allianceplasmacore" },
+		{"weight" : 0.10, "item" : "allianceballisticplate" }
+      ]
+    } ]
+  ],
+  
+  "alliancecraftingmaterialsstockpile" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.20, "item" : ["alliancemetal", 25] },
+		{"weight" : 0.20, "item" : ["allianceglassitem", 15] },
+		{"weight" : 0.20, "item" : ["allianceballisticfiber", 25] },
+		{"weight" : 0.20, "item" : ["alliancecloth", 10] },
+		{"weight" : 0.20, "item" : ["alliancecircuitry", 10] }
+      ]
+    } ]
+  ],
+  
+  "alliancefarming" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.25, "item" : "ambrumseed" },
+		{"weight" : 0.25, "item" : "ambrumfiber" },
+		{"weight" : 0.25, "item" : "selvasseed" },
+		{"weight" : 0.25, "item" : "selvasextract" }
+      ]
+    } ]
+  ],
+  
+	//ALLIANCE CODICES
+  "alliancecodex" : [
+    [1, {
+	  "pool" : [
+        {"weight" : 0.5, "pool" : "avikanothercodex" },
+		{"weight" : 1.0, "pool" : "avikanhistorycodex" },
+		{"weight" : 1.0, "pool" : "avikanrhadeiscodex" }
+      ]
+    } ]
+  ]
+  
+}
+

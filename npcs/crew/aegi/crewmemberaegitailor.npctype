@@ -1,0 +1,83 @@
+{
+  "type" : "crewmemberaegitailor",
+  "baseType" : "crewmemberaegi",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : true
+    },
+
+	"crew" : {
+	  "role" : {
+        "type" : "uniontailor",
+        "name" : "Tailor",
+        "field" : "Fashion",
+        "uniformColorIndex" : 9
+      },
+
+      // This interactActions only happens when in a crew, and only when
+      // interacted with by the captain.
+      "interactAction" : "Message",
+      "interactData" : {
+        "messageType" : "recruits.offerUniformUpdate",
+        "messageArgs" : [ ]
+      },
+
+      "ranks" : [
+        "Professional <role>",
+        "Amateur <role>",
+        "<field> Enthusiast",
+        "<field> Expert",
+        "<field> Designer",
+        "Assistant <role>",
+        "<field> Master"
+      ],
+	  
+	  "defaultUniform" : {
+		"chest" : "aegi-formalchest",
+		"legs" : "aegi-formallegs"
+	  },
+	  
+      "uniformSlots" : ["chest", "chestCosmetic", "legs", "legsCosmetic", "back", "backCosmetic"]
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "roleDescription" : {
+          "default" : {
+            "default" : [
+              "Come to me if you want to update your crew's uniform!",
+              "My tailoring skills let me update your crew's uniform. Just speak to me when you need my services!"
+            ]
+          }
+        }
+      },
+      "converse" : {
+        "default" : {
+          "default" : [
+            "That look is definitely in this season!",
+            "Looking good!",
+            "This outfit will make your crew really stand out. Great choice, captain!",
+            "Incredible fashion sense, captain!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+			"chest" : [ { "name" : "aegi-formalchest", "data" : { "colorIndex" : 9 } } ],
+            "legs" : [ { "name" : "aegi-formallegs", "data" : { "colorIndex" : 9 } } ],
+            "sheathedprimary" : [
+			  "thea-tier1pistol"
+			]
+          }
+        ] ]
+    ]
+  }
+}

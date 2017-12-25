@@ -114,6 +114,32 @@
 			]
           }
         ] ]
+    ],
+	//AEGINIAN EQUIPMENT
+    "aegi" : [
+      [0, [
+		  {
+            "head" : [
+			  { "name" : "aegi-policehead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "aegi-policechest", "parameters" : { "colorIndex" : 0 } },
+              { "name" : "aegi-tanktop", "parameters" : { "colorIndex" : 3 } }
+            ],
+            "legs" : [
+              { "name" : "aegi-policelegs", "parameters" : { "colorIndex" : 0 } }
+            ],
+			"primary" : [
+			  "thea-policeprod"
+			],
+			"sheathedprimary" : [
+			  "thea-policepistol"
+			],
+			"alt" : [
+			  "allianceshield"
+			]
+          }
+        ] ]
     ]
   },
 

@@ -8,6 +8,7 @@
   "manufacturer" : "^gray;Theledos^reset;",
   "shortdescription" : "Vethir Sniper",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "thea-gun-mf",
   "category" : "Sniper Rifle",
   "itemTags" : ["weapon","ranged","sniperrifle","alliance","theledos"],

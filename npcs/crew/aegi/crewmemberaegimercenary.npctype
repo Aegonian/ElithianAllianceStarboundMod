@@ -1,0 +1,80 @@
+{
+  "type" : "crewmemberaegimercenary",
+  "baseType" : "crewmemberaegi",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+
+	"crew" : {
+	  "role" : {
+        "type" : "unionmercenary",
+        "name" : "Mercenary",
+        "field" : "Fighter",
+        "uniformColorIndex" : 4
+      },
+
+      "ranks" : [
+        "Professional <field>",
+        "Amateur <field>",
+        "Enthusiast <field>",
+        "Part-time <field>",
+        "Trained <field>",
+        "Trained <role>",
+        "<role> <field>",
+        "<role> Tactician",
+        "<role> Sellsword",
+        "<role> Combatant"
+      ],
+	  
+	  "defaultUniform" : {
+		"chest" : "aegi-tier1chest",
+		"legs" : "aegi-tier1legs"
+	  },
+	  
+      "uniformSlots" : ["chest", "chestCosmetic", "legs", "legsCosmetic", "back", "backCosmetic"]
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+			"chest" : [ { "name" : "aegi-tier1chest", "data" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "aegi-tier1legs", "data" : { "colorIndex" : 4 } } ],
+            "primary" : [
+			  "thea-tier2rifle",
+			  "thea-tier2shotgun"
+			],
+			"sheathedprimary" : [
+			  "thea-tier1broadsword",
+			  "thea-tier1shortsword",
+			  "thea-tier2dagger",
+			  "thea-tier2spear",
+			  "thea-tier3axe",
+			  "thea-tier3hammer"
+			]
+          },
+          {
+			"chest" : [ { "name" : "aegi-tier1chest", "data" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "aegi-tier1legs", "data" : { "colorIndex" : 4 } } ],
+            "primary" : [
+			  "thea-tier1broadsword",
+			  "thea-tier1shortsword",
+			  "thea-tier2dagger",
+			  "thea-tier2spear",
+			  "thea-tier3axe",
+			  "thea-tier3hammer"
+			],
+			"sheathedprimary" : [
+			  "thea-tier2rifle",
+			  "thea-tier2shotgun"
+			]
+          }
+        ] ]
+    ]
+  }
+}

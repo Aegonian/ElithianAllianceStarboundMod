@@ -1,9 +1,10 @@
-[	
-  //AVIKAN DROP POOLS
+[
+  //=========================================================================================
+  //=================================== AVIKAN DROP POOLS ===================================
+  //=========================================================================================
   {"op" : "add",
    "path" : "/avikanDeathTreasure",
    "value" : [
-   
 	[0, {
       "pool" : [
         {"weight" : 0.5, "pool" : "money"},
@@ -19,13 +20,11 @@
       ],
       "allowDuplication" : false
     }]
-	
    ]
   },
   {"op" : "add",
    "path" : "/avikanGuardDeathTreasure",
    "value" : [
-   
 	[0, {
       "pool" : [
         {"weight" : 0.5, "pool" : "money"},
@@ -39,13 +38,11 @@
       ],
       "allowDuplication" : false
     }]
-	
    ]
   },
   {"op" : "add",
    "path" : "/avikanSoldierDeathTreasure",
    "value" : [
-   
 	[0, {
       "pool" : [
         {"weight" : 0.5, "pool" : "money"},
@@ -59,13 +56,11 @@
       ],
       "allowDuplication" : false
     }]
-	
    ]
   },
   {"op" : "add",
    "path" : "/avikanRogueDeathTreasure",
    "value" : [
-   
 	[0, {
       "pool" : [
         {"weight" : 0.4, "pool" : "money"},
@@ -83,13 +78,11 @@
       ],
       "allowDuplication" : false
     }]
-	
    ]
   },
   {"op" : "add",
    "path" : "/avikanRogueCaptainDeathTreasure",
    "value" : [
-   
 	[0, {
       "pool" : [
         {"weight" : 0.4, "pool" : "money"},
@@ -103,15 +96,15 @@
       ],
       "allowDuplication" : false
     }]
-	
    ]
   },
   
-  //DRODEN DROP POOLS
+  //=========================================================================================
+  //=================================== DRODEN DROP POOLS ===================================
+  //=========================================================================================
   {"op" : "add",
    "path" : "/drodenDeathTreasure",
    "value" : [
-   
 	[0, {
       "pool" : [
         {"weight" : 0.5, "pool" : "money"},
@@ -124,13 +117,11 @@
       ],
       "allowDuplication" : false
     }]
-	
    ]
   },
   {"op" : "add",
    "path" : "/drodenViolatedDeathTreasure",
    "value" : [
-   
 	[0, {
       "pool" : [
         {"weight" : 0.55, "pool" : "money"},
@@ -146,15 +137,15 @@
       ],
       "allowDuplication" : false
     }]
-	
    ]
   },
   
-  //TRINKIAN DROP POOLS
+  //=========================================================================================
+  //================================== TRINKIAN DROP POOLS ==================================
+  //=========================================================================================
   {"op" : "add",
    "path" : "/trinkDeathTreasure",
    "value" : [
-   
 	[0, {
       "pool" : [
         {"weight" : 0.5, "pool" : "money"},
@@ -168,13 +159,11 @@
       ],
       "allowDuplication" : false
     }]
-	
    ]
   },
   {"op" : "add",
    "path" : "/trinkGuardDeathTreasure",
    "value" : [
-   
 	[0, {
       "pool" : [
         {"weight" : 0.5, "pool" : "money"},
@@ -189,13 +178,11 @@
       ],
       "allowDuplication" : false
     }]
-	
    ]
   },
   {"op" : "add",
    "path" : "/trinkEngineerDeathTreasure",
    "value" : [
-   
 	[0, {
       "pool" : [
         {"weight" : 0.5, "pool" : "money"},
@@ -210,13 +197,11 @@
       ],
       "allowDuplication" : false
     }]
-	
    ]
   },
   {"op" : "add",
    "path" : "/trinkWelderDeathTreasure",
    "value" : [
-   
 	[0, {
       "pool" : [
         {"weight" : 0.5, "pool" : "money"},
@@ -231,15 +216,16 @@
       ],
       "allowDuplication" : false
     }]
-	
    ]
   },
   
-  //THELEAN DROP POOLS
+  //=========================================================================================
+  //=================================== THELEAN DROP POOLS ==================================
+  //=========================================================================================
   {"op" : "add",
    "path" : "/theleanDeathTreasure",
    "value" : [
-   
+
 	[0, {
       "pool" : [
         {"weight" : 0.7, "pool" : "money"},
@@ -252,7 +238,98 @@
       ],
       "allowDuplication" : false
     }]
-	
+   ]
+  },
+  
+  //=========================================================================================
+  //================================== AEGINIAN DROP POOLS ==================================
+  //=========================================================================================
+  {"op" : "add",
+   "path" : "/aegiDeathTreasure",
+   "value" : [
+
+	[0, {
+      "pool" : [
+        {"weight" : 0.7, "pool" : "money"},
+		{"weight" : 0.1, "item" : "alliancesodacan"},
+		{"weight" : 0.1, "item" : "alliancesodabottle"},
+		{"weight" : 0.1, "item" : "alliancecloth"}
+      ],
+      "poolRounds" : [
+        [0.80, 0],
+        [0.20, 1]
+      ],
+      "allowDuplication" : false
+    }]
+   ]
+  },
+  {"op" : "add",
+   "path" : "/aegiGuardDeathTreasure",
+   "value" : [
+	[0, {
+      "pool" : [
+        {"weight" : 0.6, "pool" : "money"},
+        {"weight" : 0.2, "item" : "allianceballisticfiber"},
+        {"weight" : 0.2, "item" : "alliancemetal"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+   ]
+  },
+  {"op" : "add",
+   "path" : "/aegiBriggsDeathTreasure",
+   "value" : [
+	[0, {
+      "pool" : [
+        {"weight" : 0.6, "pool" : "money"},
+        {"weight" : 0.1, "item" : "thea-briggsshotgun"},
+        {"weight" : 0.3, "item" : "alliancemetal"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+   ]
+  },
+  {"op" : "add",
+   "path" : "/aegiSoldierDeathTreasure",
+   "value" : [
+	[0, {
+      "pool" : [
+        {"weight" : 0.6, "pool" : "money"},
+        {"weight" : 0.1, "pool" : "allianceweapons"},
+        {"weight" : 0.3, "item" : "alliancemetal"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+   ]
+  },
+  {"op" : "add",
+   "path" : "/aegiPoliceDeathTreasure",
+   "value" : [
+	[0, {
+      "pool" : [
+        {"weight" : 0.6, "pool" : "money"},
+        {"weight" : 0.1, "item" : "thea-policepistol"},
+        {"weight" : 0.1, "item" : "thea-policeprod"},
+        {"weight" : 0.2, "item" : "alliancemetal"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
    ]
   }
 ]

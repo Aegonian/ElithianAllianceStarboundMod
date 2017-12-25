@@ -129,6 +129,30 @@
             ]
           }
         ] ]
+    ],
+	//AEGINIAN CLOTHING
+    "aegi" : [
+      [0, [
+          //COMBINATION 1 -- GENERIC
+		  {
+            "head" : [
+			  { "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "aegi-shirt", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+              { "name" : "aegi-tanktop", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+              { "name" : "aegi-formalchest", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } }
+            ],
+            "legs" : [
+              { "name" : "aegi-asauniformlegs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+              { "name" : "aegi-asacoatlegs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+              { "name" : "aegi-shorts", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+              { "name" : "aegi-formallegs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+              { "name" : "aegi-casuallegs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+              { "name" : "aegi-baggylegs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } }
+            ]
+          }
+        ] ]
     ]
   },
 
