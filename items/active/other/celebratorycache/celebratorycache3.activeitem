@@ -1,12 +1,12 @@
 {
-  "itemName" : "celebratorycache",
+  "itemName" : "celebratorycache3",
   "level" : 6,
   "price" : 500,
   "maxStack" : 1,
   "rarity" : "Essential",
   "tooltipKind" : "thea-unique",
   "description" : "A sealed cache containing something of value. Hold ^green;[LMB] ^white;to open!",
-  "shortdescription" : "^orange;Celebratory Cache I^white;",
+  "shortdescription" : "^orange;Celebratory Cache III^white;",
   "twoHanded" : true,
 
   "inventoryIcon" : "celebratorycacheicon.png",
@@ -26,6 +26,6 @@
   "fireOffset" : [1.0, 0.0],
 
   "treasure" : {
-    "pool" : "celebratorycache"
+    "pool" : "celebratorycache3"
   }
 }

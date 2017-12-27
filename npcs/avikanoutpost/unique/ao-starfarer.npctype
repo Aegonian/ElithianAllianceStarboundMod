@@ -6,7 +6,7 @@
 
   "scriptConfig" : {
     	
-	"offeredQuests" : [ "avikanstarfarer", "10ksubscribercelebration", "25ksubscribercelebration" ],
+	"offeredQuests" : [ "avikanstarfarer", "10ksubscribercelebration", "25ksubscribercelebration", "50ksubscribercelebration" ],
 	"turnInQuests" : [ "avikanstarfarer" ],
   
     "dialog" : {

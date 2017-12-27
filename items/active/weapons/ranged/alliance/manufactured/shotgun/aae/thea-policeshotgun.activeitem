@@ -1,16 +1,17 @@
 {
-  "itemName" : "thea-tier4shotgun",
-  "price" : 300,
-  "inventoryIcon" : "thea-tier4shotgun.png",
+  "itemName" : "thea-policeshotgun",
+  "price" : 350,
+  "inventoryIcon" : "thea-policeshotgun.png:idle",
   "maxStack" : 1,
-  "rarity" : "Uncommon",
-  "description" : "A standard-issue Alliance shotgun.",
+  "rarity" : "Legendary",
+  "description" : "A shotgun sometimes employed by P-ASA officers.",
   "manufacturer" : "^gray;AAE^reset;",
-  "shortdescription" : "Boromus S-6",
-  "level" : 4,
+  "shortdescription" : "P-ASA Disperser S-3",
+  "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "thea-gun-mf-attachment",
   "category" : "Shotgun",
-  "itemTags" : ["weapon","ranged","shotgun","alliance","aae","allianceUpgradeable","allianceAttachmentCompatible"],
+  "itemTags" : ["weapon","ranged","shotgun","alliance","aae","allianceUpgradeable"],
   "twoHanded" : true,
   
   //Custom field for recognizing compatible attachment types
@@ -18,10 +19,10 @@
   
   "cursor" : "/cursors/thea-widereticle.cursor",
 
-  "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
+  "animation" : "/items/active/weapons/ranged/animations/thea-reloadshotgun.animation",
   "animationParts" : {
-    "middle" : "thea-tier4shotgun.png",
-    "middleFullbright" : "thea-tier4shotgunlights.png",
+    "middle" : "thea-policeshotgun.png",
+    "middleFullbright" : "thea-policeshotgunlights.png",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/allianceenergyflash.png"
   },
   "animationCustom" : {
@@ -35,7 +36,8 @@
       }
     },
     "sounds" : {
-      "fire" : [ "/sfx/gun/thea_plasmagun8.ogg" ]
+      "fire" : [ "/sfx/gun/plasma_shotgun1.ogg" ],
+      "reload" : [ "/sfx/gun/reload/shotgun_reload_clip3.ogg" ]
     }
   },
 
@@ -47,15 +49,15 @@
   "elementalType" : "physical",
   
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
-    "class" : "GunFire",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-reloadfire/thea-reloadfire.lua"],
+    "class" : "TheaReloadFire",
 
-    "fireTime" : 0.42,
+    "fireTime" : 0.80,
     "baseDps" : 10.5,
     "energyUsage" : 35,
     "inaccuracy" : 0.10,
 
-    "projectileCount" : 6,
+    "projectileCount" : 8,
     "fireType" : "auto",
 
     "projectileType" : "allianceenergybullet2",
@@ -73,7 +75,7 @@
         "allowFlip" : true
       },
       "fire" : {
-        "duration" : 0,
+        "duration" : 0.25,
         "armRotation" : 8,
         "weaponRotation" : 8,
         "twoHanded" : true,
@@ -82,7 +84,7 @@
         "allowFlip" : false
       },
       "cooldown" : {
-        "duration" : 0.25,
+        "duration" : 0.3,
         "armRotation" : 8,
         "weaponRotation" : 8,
         "twoHanded" : true,

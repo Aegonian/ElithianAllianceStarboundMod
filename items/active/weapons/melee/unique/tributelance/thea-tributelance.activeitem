@@ -1,0 +1,60 @@
+{
+  "itemName" : "thea-tributelance",
+  "price" : 1500,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;A long and powerful lance forged in tribute to Elithia.",
+  "shortdescription" : "^orange;Lance of the Elithian^white;",
+  "tooltipKind" : "thea-sword-unique",
+  "category" : "Lance",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","lance","theaUnique"],
+
+  "inventoryIcon" : "thea-tributelance.png",
+
+  "animation" : "/items/active/weapons/melee/animations/thea-lance.animation",
+  "animationParts" : {
+    "bladeFullbright" : "thea-tributelancelights.png",
+    "blade" : "thea-tributelance.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_spear.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "thea-lancethrust",
+  "primaryAbility" : {
+    "baseDps" : 10.5,
+	
+	"damageConfig" : {
+      "damageSourceKind" : "spear",
+      "statusEffects" : [ "thea-bleeding" ],
+      "knockbackMode" : "aim",
+      "knockback" : 40,
+      "timeoutGroup" : "primary"
+    }
+  },
+
+  "altAbilityType" : "thea-lancecharge",
+  "altAbility" : {
+	"damageConfig" : {
+      "damageSourceKind" : "spear",
+      "statusEffects" : [ "thea-bleeding" ],
+	  "baseDamage" : 6,
+	  "knockbackMode" : "facing",
+	  "knockback" : 30,
+	  "timeout" : 0.5,
+	  "timeoutGroup" : "alt"
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

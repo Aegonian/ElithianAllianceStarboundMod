@@ -1,26 +1,27 @@
 {
-  "itemName" : "thea-theledossniper",
-  "price" : 325,
-  "inventoryIcon" : "thea-theledossniper.png",
+  "itemName" : "thea-policerifle",
+  "price" : 350,
+  "inventoryIcon" : "thea-policerifle.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A Theledos rifle firing explosive plasma rounds.",
-  "manufacturer" : "^gray;Theledos^reset;",
-  "shortdescription" : "Vethir Sniper",
+  "description" : "An assault rifle sometimes issued to P-ASA law enforcement.",
+  "manufacturer" : "^gray;AAE^reset;",
+  "shortdescription" : "P-ASA Suppressor I-17",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-gun-mf",
-  "category" : "Sniper Rifle",
-  "itemTags" : ["weapon","ranged","sniperrifle","alliance","theledos","allianceUpgradeable"],
+  "tooltipKind" : "thea-gun-mf-attachment",
+  "category" : "Assault Rifle",
+  "itemTags" : ["weapon","ranged","assaultrifle","alliance","aae","allianceUpgradeable"],
   "twoHanded" : true,
   
-  "cursor" : "/cursors/thea-precisereticle.cursor",
+  //Custom field for recognizing compatible attachment types
+  "theaAttachmentType" : "aae_assault1",
   
   "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
   "animationParts" : {
-    "middle" : "thea-theledossniper.png",
-    "middleFullbright" : "thea-theledossniperlights.png",
-    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/hymidplasmaflash.png"
+    "middle" : "thea-policerifle.png",
+    "middleFullbright" : "thea-policeriflelights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/allianceenergyflash.png"
   },
   "animationCustom" : {
     "animatedParts" : {
@@ -35,12 +36,12 @@
     "particleEmitters" : {
     },
     "sounds" : {
-      "fire" : [ "/sfx/gun/plasma_sniper1.ogg" ]
+      "fire" : [ "/sfx/gun/thea_plasmagun1.ogg" ]
     }
   },
 
   "baseOffset" : [0.875, 0.125],
-  "muzzleOffset" : [2.25, 0.125],
+  "muzzleOffset" : [2.25, 0.375],
 
   "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
 
@@ -50,24 +51,23 @@
     "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
     "class" : "GunFire",
 
-    "fireTime" : 1.3,
-    "baseDps" : 7.5,
-    "energyUsage" : 24.5,
-    "inaccuracy" : 0.005,
+    "fireTime" : 0.11,
+    "baseDps" : 10.5,
+    "energyUsage" : 31.5,
+    "inaccuracy" : 0.02,
 
     "projectileCount" : 1,
     "fireType" : "auto",
 
-    "projectileType" : "hymidexplosiveplasmalarge",
+    "projectileType" : "allianceenergybullet",
     "projectileParameters" : {
-      "knockback" : 6
+      "knockback" : 4
     },
 	
     "stances" : {
       "idle" : {
         "armRotation" : 0,
         "weaponRotation" : 0,
-		"weaponOffset" : [0, 0],
         "twoHanded" : true,
 
         "allowRotate" : true,
@@ -75,19 +75,17 @@
       },
       "fire" : {
         "duration" : 0,
-        "armRotation" : 4,
-        "weaponRotation" : 4,
-		"weaponOffset" : [-0.1, 0],
+        "armRotation" : 3,
+        "weaponRotation" : 3,
         "twoHanded" : true,
 
         "allowRotate" : false,
         "allowFlip" : false
       },
       "cooldown" : {
-        "duration" : 0.25,
-        "armRotation" : 4,
-        "weaponRotation" : 4,
-		"weaponOffset" : [-0.1, 0],
+        "duration" : 0.075,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
         "twoHanded" : true,
 
         "allowRotate" : false,
@@ -96,5 +94,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf-attachment.lua"
 }

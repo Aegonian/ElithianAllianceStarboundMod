@@ -1,11 +1,11 @@
 {
-  "itemName" : "avikanexplosive",
+  "itemName" : "allianceexplosivecharge",
   "price" : 10,
   "rarity" : "Common",
   "category" : "throwableItem",
-  "inventoryIcon" : "avikanexplosiveicon.png",
-  "image" : "avikanexplosive.png",
-  "shortdescription" : "Vanguard Explosive Charge",
+  "inventoryIcon" : "allianceexplosivechargeicon.png",
+  "image" : "allianceexplosivecharge.png",
+  "shortdescription" : "Alliance Explosive Charge",
   "description" : "An explosive for breaching walls. ^red;CAUTION: High damage to objects and tiles!^white;",
 
   "ammoUsage" : 1,
@@ -14,7 +14,7 @@
   "windupTime" : 0.0,
   "cooldown" : 0.4,
 
-  "projectileType" : "avikanexplosive",
+  "projectileType" : "allianceexplosivecharge",
   "projectileConfig" : {
     "speed" : 25,
     "power" : 45,

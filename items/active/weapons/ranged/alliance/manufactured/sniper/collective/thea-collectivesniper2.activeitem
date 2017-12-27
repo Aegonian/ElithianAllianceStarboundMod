@@ -11,7 +11,7 @@
   "fixedLevel" : false,
   "tooltipKind" : "thea-gun-mf",
   "category" : "Sniper Rifle",
-  "itemTags" : ["weapon","ranged","sniperrifle","alliance","alliancecollective"],
+  "itemTags" : ["weapon","ranged","sniperrifle","alliance","alliancecollective","allianceUpgradeable"],
   "twoHanded" : true,
   
   "cursor" : "/cursors/thea-precisereticle.cursor",

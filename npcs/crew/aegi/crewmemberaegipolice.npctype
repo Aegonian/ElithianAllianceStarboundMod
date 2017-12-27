@@ -47,7 +47,9 @@
 			"chest" : [ { "name" : "aegi-policechest", "data" : { "colorIndex" : 4 } } ],
             "legs" : [ { "name" : "aegi-policelegs", "data" : { "colorIndex" : 4 } } ],
             "primary" : [
-			  "thea-policepistol"
+			  "thea-policepistol",
+			  "thea-policerifle",
+			  "thea-policeshotgun"
 			],
 			"sheathedprimary" : [
 			  "thea-policeprod"
@@ -61,7 +63,9 @@
 			  "thea-policeprod"
 			],
 			"sheathedprimary" : [
-			  "thea-policepistol"
+			  "thea-policepistol",
+			  "thea-policerifle",
+			  "thea-policeshotgun"
 			]
           }
         ] ]

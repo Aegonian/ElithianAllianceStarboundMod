@@ -113,12 +113,29 @@
     } ]
   ],
   
+  "alliancegeneratedweapons" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.1, "item" : "thea-aaerifle1" },
+		{"weight" : 0.1, "item" : "thea-aaerifle2" },
+		{"weight" : 0.1, "item" : "thea-aaerifle3" },
+		{"weight" : 0.1, "item" : "thea-aaerifle4" },
+		{"weight" : 0.1, "item" : "thea-collectiverifle1" },
+		{"weight" : 0.1, "item" : "thea-collectivepistol1" },
+		{"weight" : 0.1, "item" : "thea-aaelauncher1" },
+		{"weight" : 0.1, "item" : "thea-collectivesniper1" },
+		{"weight" : 0.1, "item" : "thea-collectivesniper2" }
+      ]
+    } ]
+  ],
+  
   "alliancegrenades" : [
     [1, {
       "poolRounds" : 1,
       "pool" : [
         {"weight" : 0.33, "item" : [ "alliancethrowablegrenade", 8 ] },
 		{"weight" : 0.33, "item" : [ "alliancethrowablegrenade", 12 ] },
+		{"weight" : 0.33, "item" : [ "allianceexplosivecharge", 6 ] },
 		{"weight" : 0.33, "item" : [ "allianceflare", 10 ] }
       ]
     } ]
@@ -150,13 +167,75 @@
     } ]
   ],
   
+  "alliancemedicine" : [
+    [1, {
+      "poolRounds" : 1,
+      "pool" : [
+        {"weight" : 0.1, "item" : ["alliancebandage", 5] },
+		{"weight" : 0.6, "item" : ["alliancemedsalve", 2] },
+		{"weight" : 0.3, "item" : "alliancemedicalkit" }
+      ]
+    } ]
+  ],
+  
   "alliancefarming" : [
     [1, {
       "pool" : [
         {"weight" : 0.25, "item" : "ambrumseed" },
 		{"weight" : 0.25, "item" : "ambrumfiber" },
 		{"weight" : 0.25, "item" : "selvasseed" },
-		{"weight" : 0.25, "item" : "selvasextract" }
+		{"weight" : 0.25, "item" : "selvasextract" },
+		{"weight" : 0.25, "item" : "wheatseed" },
+		{"weight" : 0.25, "item" : "wheat" },
+		{"weight" : 0.25, "item" : "sugarcaneseed" },
+		{"weight" : 0.25, "item" : "sugar" }
+      ]
+    } ]
+  ],
+  
+  "alliancefood" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.25, "item" : "avikanmeatchunk" },
+		{"weight" : 0.05, "item" : "avikanmeal" },
+		{"weight" : 0.25, "item" : "dunebun" },
+		{"weight" : 0.05, "item" : "stuffeddunebun" },
+		{"weight" : 0.25, "item" : "kadavancactusjuice" },
+		{"weight" : 0.05, "item" : "kadavanmeatjuice" },
+		{"weight" : 0.05, "item" : "spicebol" },
+		{"weight" : 0.05, "item" : "bolbohnjam" }
+      ]
+    } ]
+  ],
+  
+  "aegiclothing" : [
+    [1, {
+      "pool" : [
+        //BRIGGS SET
+		{"weight" : 0.20, "item" : "aegi-briggshead" },
+		{"weight" : 0.20, "item" : "aegi-briggschest" },
+		{"weight" : 0.20, "item" : "aegi-briggslegs" },
+		//BRIGGS GUARDIAN SETS
+		{"weight" : 0.20, "item" : "aegi-briggsguardianhead" },
+		{"weight" : 0.20, "item" : "aegi-briggsguardianchest" },
+		//ENERTH SETS
+		{"weight" : 0.20, "item" : "aegi-enerthhead" },
+		{"weight" : 0.20, "item" : "aegi-enerthchest" },
+		{"weight" : 0.20, "item" : "aegi-enerthlegs" },
+		//MEDIC SET
+		{"weight" : 0.20, "item" : "aegi-medichead" },
+		{"weight" : 0.20, "item" : "aegi-medicchest" },
+		{"weight" : 0.20, "item" : "aegi-mediclegs" },
+		//POLICE SET
+		{"weight" : 0.20, "item" : "aegi-policehead" },
+		{"weight" : 0.20, "item" : "aegi-policechest" },
+		{"weight" : 0.20, "item" : "aegi-policelegs" },
+		//SOLDIER SET
+		{"weight" : 0.20, "item" : "aegi-soldierhead" },
+		{"weight" : 0.20, "item" : "aegi-soldierchest" },
+		{"weight" : 0.20, "item" : "aegi-soldierlegs" },
+		//BACK ITEMS
+		{"weight" : 0.20, "item" : "aegi-soldierback" }
       ]
     } ]
   ],

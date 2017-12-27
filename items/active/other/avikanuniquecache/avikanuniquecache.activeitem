@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "tooltipKind" : "thea-unique",
-  "description" : "A sealed cache containing a random Unique-quality item. Hold to open!",
+  "description" : "A sealed cache containing a random Unique-quality item. Hold ^green;[LMB] ^white;to open!",
   "shortdescription" : "^orange;Unique Avikan Cache^white;",
   "twoHanded" : true,
 

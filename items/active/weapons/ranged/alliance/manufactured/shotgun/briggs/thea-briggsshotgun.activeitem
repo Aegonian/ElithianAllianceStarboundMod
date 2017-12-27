@@ -11,7 +11,7 @@
   "fixedLevel" : false,
   "tooltipKind" : "thea-gun-mf",
   "category" : "Shotgun",
-  "itemTags" : ["weapon","ranged","shotgun","alliance","briggs"],
+  "itemTags" : ["weapon","ranged","shotgun","alliance","briggs","allianceUpgradeable"],
   "twoHanded" : true,
   
   "cursor" : "/cursors/thea-widereticle.cursor",

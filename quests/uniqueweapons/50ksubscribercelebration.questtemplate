@@ -1,0 +1,22 @@
+{
+  "id" : "50ksubscribercelebration",
+  "prerequisites" : [ "25ksubscribercelebration" ],
+  "title" : "^orange;A Special Gift III",
+  "text" : "Yet another delivery from your mysterious Aeginian friend. They must really appreciate your continued patience and support! Enjoy your gift!",
+  "completionText" : "I received another gift from an Aeginian friend. Let's open it!",
+  "moneyRange" : [2500, 2500],
+  "rewards" : [
+    [ [ "celebratorycache3", 1 ] ]
+  ],
+  "canBeAbandoned" : false,
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/thea-autocomplete.lua",
+  "scriptConfig" : {
+	"portraits" : {
+      "questStarted" : "questGiver",
+	  "questComplete" : "player"
+    },
+    "requireTurnIn" : false
+  }
+}

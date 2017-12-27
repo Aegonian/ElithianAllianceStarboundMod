@@ -56,7 +56,19 @@
       "poolRounds" : 1,
       "pool" : [
         {"weight" : 1.0, "item" : "thea-sidewinder"},
-		{"weight" : 1.0, "item" : "thea-skylighter"}
+		{"weight" : 1.0, "item" : "thea-skylighter"},
+		{"weight" : 1.0, "item" : "thea-defiant"}
+      ]
+    }]
+  ],
+  
+	//AKKIMARI WEAPONS
+  "uniqueweaponsAkkimari" : [
+    [1, {
+      "poolRounds" : 1,
+      "pool" : [
+        {"weight" : 1.0, "item" : "akkimari-sawbladelauncher"},
+		{"weight" : 1.0, "item" : "akkimari-scrapyard"}
       ]
     }]
   ]

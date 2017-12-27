@@ -11,7 +11,7 @@
   "fixedLevel" : false,
   "tooltipKind" : "thea-gun-mf",
   "category" : "Assault Rifle",
-  "itemTags" : ["weapon","ranged","assaultrifle","alliance","theledos"],
+  "itemTags" : ["weapon","ranged","assaultrifle","alliance","theledos","allianceUpgradeable"],
   "twoHanded" : true,
   
   "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",

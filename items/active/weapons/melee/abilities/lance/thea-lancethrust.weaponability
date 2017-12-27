@@ -1,0 +1,52 @@
+{
+  "animationParts" : { },
+  "animationCustom" : { },
+
+  "ability" : {
+    "name" : "Thrust",
+    "type" : "thea-lancethrust",
+    "scripts" : ["/items/active/weapons/melee/meleeslash.lua"],
+    "class" : "MeleeSlash",
+
+    "fireTime" : 1.15,
+    "baseDps" : 9.5,
+    "damageConfig" : {
+      "damageSourceKind" : "spear",
+      "statusEffects" : [ ],
+      "knockbackMode" : "aim",
+      "knockback" : 40,
+      "timeoutGroup" : "primary"
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : -90,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+        "weaponOffset" : [0, 3.0],
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "windup" : {
+        "duration" : 0.25,
+        "armRotation" : -145,
+        "weaponRotation" : 55,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 2.85],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire" : {
+        "duration" : 0.45,
+        "armRotation" : -5,
+        "weaponRotation" : -85,
+        "twoHanded" : false,
+        "weaponOffset" : [0, 3.15],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  }
+}

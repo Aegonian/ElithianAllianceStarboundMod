@@ -4,7 +4,7 @@
   "price" : 250,
   "maxStack" : 1,
   "rarity" : "legendary",
-  "description" : "A sealed cache containing something of value. Hold to open!",
+  "description" : "A sealed cache containing something of value. Hold ^green;[LMB] ^white;to open!",
   "shortdescription" : "Sealed Avikan Cache",
   "twoHanded" : true,
 

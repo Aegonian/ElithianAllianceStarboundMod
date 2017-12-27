@@ -81,7 +81,9 @@
 	  [ "trink-shockbolter", "trink-frostlaser" ],
 	  [ "trink-energizer", "trink-arclighter" ],
 		//Alliance Weapons
-	  [ "thea-sidewinder", "thea-skylighter" ]
+	  [ "thea-sidewinder", "thea-skylighter" ],
+		//Akkimari Weapons
+	  [ "akkimari-sawbladelauncher", "akkimari-scrapyard" ]
     ]
   }
 }

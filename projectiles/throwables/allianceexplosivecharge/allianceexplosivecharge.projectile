@@ -1,0 +1,30 @@
+{
+  "projectileName" : "allianceexplosivecharge",
+  "physics" : "avikanstickybomb",
+  "bounces" : -1,
+  "damageKindImage" : "icon.png",
+  "image" : "allianceexplosivecharge.png",
+  "orientationLocked" : true,
+  "flippable" : true,
+  "animationCycle" : 4.0,
+  "pointLight" : true,
+  "lightColor" : [100, 25, 0],
+  "frameNumber" : 24,
+  "emitters" : [ ],
+  "power" : 25,
+  "timeToLive" : 4,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/avikanchargeexplosion/avikanchargeexplosion.config"
+    }
+  ],
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "damageTeam" : { "type" : "indiscriminate" },
+  "piercing" : true,
+  "onlyHitTerrain" : true,
+  "hydrophobic" : false,
+  "scripts" : [ "/projectiles/scripts/thea-uprightsticky.lua" ],
+  "rotateInAir" : true
+}

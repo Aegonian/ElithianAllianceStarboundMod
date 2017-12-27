@@ -1,0 +1,74 @@
+{
+  "animationParts" : { },
+  "animationCustom" : {
+    "sounds" : {
+      "chargeStart" : [ "/sfx/tech/tech_dash.ogg" ],
+      "chargeLoop" : [ "/sfx/tech/tech_sprint_loop2.ogg" ]
+    },
+	"particleEmitters" : {
+	  "chargeParticles" : {
+		"emissionRate" : 40.0,
+		"particles" : [
+		  {
+			"particle" : "sprint",
+			"flip" : true,
+			"offset" : [0, 0.25]
+		  },
+		  {
+			"particle" : "sprint",
+			"flip" : true,
+			"offset" : [0, -0.25]
+		  }
+		]
+	  }
+	}
+  },
+
+  "ability" : {
+    "name" : "Charge",
+    "type" : "thea-lancecharge",
+    "scripts" : ["/items/active/weapons/melee/abilities/lance/thea-lancecharge/thea-lancecharge.lua"],
+    "class" : "TheaLanceCharge",
+
+    "energyUsage" : 25,
+    "cooldownTime" : 1.0,
+    "cooldownTimeShort" : 0.2,
+
+	"initialDashSpeed" : 55,
+    "chargeSpeedModifier" : 2.0,
+	"maxChargeSpeed" : 25,
+    "maxAirTime" : 1.0,
+
+    "damageConfig" : {
+      "damageSourceKind" : "spear",
+      "statusEffects" : [ ],
+	  "baseDamage" : 6,
+	  "knockbackMode" : "facing",
+	  "knockback" : 30,
+	  "timeout" : 0.5,
+	  "timeoutGroup" : "alt"
+    },
+
+    "stances" : {
+      "windup" : {
+        "duration" : 0.35,
+        "armRotation" : -145,
+        "weaponRotation" : 55,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 2.85],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "charge" : {
+        "armRotation" : -20,
+        "weaponRotation" : -70,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 2.75],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  }
+}

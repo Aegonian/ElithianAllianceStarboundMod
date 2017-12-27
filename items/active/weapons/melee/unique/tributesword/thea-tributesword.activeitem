@@ -3,7 +3,7 @@
   "price" : 1500,
   "level" : 6,
   "maxStack" : 1,
-  "rarity" : "essential",
+  "rarity" : "Essential",
   "description" : "^orange;An ultra-sharp blade forged in tribute to Elithia.",
   "shortdescription" : "^orange;Blade of the Elithian^white;",
   "tooltipKind" : "thea-sword-unique",
