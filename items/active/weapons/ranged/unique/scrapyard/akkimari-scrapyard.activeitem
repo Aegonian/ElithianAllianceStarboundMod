@@ -96,18 +96,18 @@
         "allowFlip" : true
       },
       "fire" : {
-        "duration" : 0,
-        "armRotation" : 7,
-        "weaponRotation" : 7,
-        "twoHanded" : false,
+        "duration" : 0.25,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
 
         "allowRotate" : false,
         "allowFlip" : false
       },
       "cooldown" : {
-        "duration" : 0.45,
-        "armRotation" : 7,
-        "weaponRotation" : 7,
+        "duration" : 0.55,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
         "twoHanded" : true,
 
         "allowRotate" : false,
@@ -138,7 +138,7 @@
 
     "stances" : {
       "fire" : {
-        "duration" : 0,
+        "duration" : 0.25,
         "armRotation" : 9,
         "weaponRotation" : 9,
         "twoHanded" : true,

@@ -1,0 +1,43 @@
+{
+  "projectileName" : "allianceclusterbullet",
+  "physics" : "lineriflebullet",
+  "bounces" : 0,
+  "image" : "allianceclusterbullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 75,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/alliance/allianceclusterbullet/trail.png",
+        "position" : [-1.5, 0],
+        "layer" : "middle",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.3,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  "lightColor" : [35, 60, 75],
+  "fullbright" : true,
+  "damageKind" : "plasma",
+  
+  "scripts" : [ "/projectiles/scripts/thea-lineriflecluster.lua" ],
+  
+  //Config for straightening out any inaccuracy after being fired
+  "controlForce" : 350
+}

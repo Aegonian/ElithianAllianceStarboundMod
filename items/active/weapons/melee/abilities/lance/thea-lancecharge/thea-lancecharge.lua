@@ -41,6 +41,8 @@ function TheaLanceCharge:windup()
   --local info = sb.printJson(params, 1)
   --sb.logInfo(info)
   
+  animator.playSound("windup")
+  
   if self.stances.windup.hold then
     while self.fireMode == (self.activatingFireMode or self.abilitySlot) do
       coroutine.yield()

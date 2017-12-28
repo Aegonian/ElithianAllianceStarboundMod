@@ -44,5 +44,19 @@
 		"value": {
           "baseValue" : 1.0
         }
+	},
+	{
+		"op": "add",
+		"path" : "/baseParameters/statusSettings/stats/akkimariacidResistance",
+		"value": {
+          "baseValue" : 0.5
+        }
+	},
+	{
+		"op": "add",
+		"path" : "/baseParameters/statusSettings/stats/akkimariacidStatusImmunity",
+		"value": {
+          "baseValue" : 1.0
+        }
 	}
 ]

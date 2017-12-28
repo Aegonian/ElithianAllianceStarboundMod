@@ -199,6 +199,12 @@
         "centensianenergyStatusImmunity" : {
           "baseValue" : 1.0
         },
+        "akkimariacidResistance" : {
+          "baseValue" : 0.5
+        },
+        "akkimariacidStatusImmunity" : {
+          "baseValue" : 1.0
+        },
         "xanafianStatusImmunity" : {
           "baseValue" : 1.0
         },

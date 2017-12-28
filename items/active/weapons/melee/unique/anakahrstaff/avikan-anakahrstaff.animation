@@ -258,9 +258,9 @@
       "offsetRegion" : [-0.75, -3.0, 0.75, -4.0],
       "emissionRate" : 5,
       "particles" : [
-        { "particle" : "avikanenergyblade"},
-        { "particle" : "avikanenergyblade2"},
-        { "particle" : "linerifleburnbright"}
+        { "particle" : "avikanenergyblade" },
+        { "particle" : "avikanenergyblade2" },
+        { "particle" : "linerifleburnbright" }
       ]
     },
     "bladeBackConstant" : {
@@ -269,7 +269,7 @@
       "offsetRegion" : [0.0, -3.5, 0.0, -3.5],
       "emissionRate" : 75,
       "particles" : [
-        { "particle" : "lineriflestatictrail"}
+        { "particle" : "lineriflestatictrail" }
       ]
     }
   },

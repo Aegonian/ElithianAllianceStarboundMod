@@ -1,5 +1,8 @@
+require "/scripts/vec2.lua"
+
 function init()  
   setDirection(storage.doorDirection or object.direction())
+  self.forceClose = storage.state or false
 
   if storage.locked == nil then
     storage.locked = config.getParameter("locked", false)
@@ -9,7 +12,7 @@ function init()
     if config.getParameter("defaultState") == "open" then
       openDoor()
     else
-      closeDoor()
+      closeDoor(self.forceClose)
     end
   else
     animator.setAnimationState("doorState", storage.state and "open" or "closed")
@@ -21,6 +24,59 @@ function init()
 
   message.setHandler("openDoor", function() openDoor() end)
   message.setHandler("lockDoor", function() lockDoor() end)
+end
+
+function update()
+  --local test = "Trying to close door? " .. sb.printJson(self.forceClose, 1)
+  --world.debugText(test, entity.position(), "blue")
+  --local test2 = "Door is currently open? " .. sb.printJson(storage.state, 1)
+  --world.debugText(test2, vec2.add({0, 1}, entity.position()), "blue")
+  --local test3 = "Door should be open? " .. sb.printJson(object.getInputNodeLevel(0) or storage.state, 1)
+  --world.debugText(test3, vec2.add({0, 2}, entity.position()), "blue")
+  
+  --If the door was closed by a node input change, but the door was blocked, continue trying to close the door
+  if self.forceClose then
+	closeDoor(self.forceClose)
+  end
+  
+  --If the door should be open, but it isn't, force it to open
+  if object.isInputNodeConnected(0) then
+	if object.getInputNodeLevel(0) and not storage.state then
+	  openDoor()
+	end
+  end
+end
+
+function checkDoorBlocked()
+  local lineStart = nil
+  local lineEnd = nil
+  local doorBlocked = false
+  local scanIncludedTypes = config.getParameter("includedTypes") or { "monster", "npc", "player" }
+  
+  local scanLineCount = config.getParameter("scanLineCount") or 1
+  for i = 1, scanLineCount do
+	if object.direction() > 0 then
+	  lineStart = vec2.add(entity.position(), config.getParameter("entityCheckLineStart")[i])
+	  lineEnd = vec2.add(entity.position(), config.getParameter("entityCheckLineEnd")[i])
+	else
+	  lineStart = vec2.add(entity.position(), config.getParameter("flippedEntityCheckLineStart")[i])
+	  lineEnd = vec2.add(entity.position(), config.getParameter("flippedEntityCheckLineEnd")[i])
+	end
+	
+	world.debugLine(lineStart, lineEnd, "blue")
+	local entities = world.entityLineQuery(lineStart, lineEnd, { includedTypes = scanIncludedTypes })
+	if #entities > 0 then
+	  doorBlocked = true
+	end
+  end
+  
+  if doorBlocked then
+	--world.debugText("BLOCKED", entity.position(), "red")
+	return true
+  else
+	--world.debugText("CLEAR", entity.position(), "green")
+	return false
+  end
 end
 
 function onNodeConnectionChange(args)
@@ -35,7 +91,8 @@ function onInputNodeChange(args)
   if args.level then
     openDoor(storage.doorDirection)
   else
-    closeDoor()
+	--closeDoor(not args.level)
+	closeDoor(true)
   end
 end
 
@@ -46,7 +103,7 @@ function onInteraction(args)
     if not storage.state then
       openDoor(args.source[1])
     else
-      closeDoor()
+      closeDoor(false)
     end
   end
 end
@@ -145,14 +202,28 @@ function unlockDoor()
   end
 end
 
-function closeDoor()
+function closeDoor(forceClose)
+  self.forceClose = forceClose
+  
+  local allowClose = false  
   if storage.state ~= false then
-    storage.state = false
-    updateInteractive()
-    animator.playSound("close")
-    animator.setAnimationState("doorState", "closing")
-    updateCollisionAndWires()
-    updateLight()
+    if config.getParameter("performEntityCheck") then
+	  if not checkDoorBlocked() then
+		allowClose = true
+	  end
+	else
+	  allowClose = true
+	end
+  end
+  
+  if allowClose then
+	storage.state = false
+	updateInteractive()
+	animator.playSound("close")
+	animator.setAnimationState("doorState", "closing")
+	updateCollisionAndWires()
+	updateLight()
+	self.forceClose = false
   end
 end
 

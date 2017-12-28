@@ -41,6 +41,9 @@ end
 
 function TheaReloadFire:auto()
   self.weapon:setStance(self.stances.fire)
+  if self.stances.fire.animated then
+	animator.setAnimationState("weapon", "fire")
+  end
 
   self:fireProjectile()
   self:muzzleFlash()
@@ -55,6 +58,9 @@ end
 
 function TheaReloadFire:burst()
   self.weapon:setStance(self.stances.fire)
+  if self.stances.fire.animated then
+	animator.setAnimationState("weapon", "fire")
+  end
 
   local shots = self.burstCount
   while shots > 0 and status.overConsumeResource("energy", self:energyPerShot()) do

@@ -2,6 +2,7 @@
   "animationParts" : { },
   "animationCustom" : {
     "sounds" : {
+      "windup" : [ "/sfx/npc/monsters/orbide_windup2.ogg" ],
       "chargeStart" : [ "/sfx/tech/tech_dash.ogg" ],
       "chargeLoop" : [ "/sfx/tech/tech_sprint_loop2.ogg" ]
     },

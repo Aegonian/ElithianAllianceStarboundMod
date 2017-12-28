@@ -117,18 +117,22 @@ function TheaChargedShot:fireProjectile(projectileType, projectileParams, inaccu
   if type(projectileType) == "table" then
     projectileType = projectileType[math.random(#projectileType)]
   end
+  
+  local shotNumber = 0
 
   local projectileId = 0
   for i = 1, (projectileCount or self.projectileCount) do
     if params.timeToLive then
       params.timeToLive = util.randomInRange(params.timeToLive)
     end
+	
+	shotNumber = i
 
     projectileId = world.spawnProjectile(
         projectileType,
         firePosition or self:firePosition(),
         activeItem.ownerEntityId(),
-        self:aimVector(inaccuracy or self.inaccuracy),
+        self:aimVector(self.inaccuracy, shotNumber),
         false,
         params
       )
@@ -190,8 +194,9 @@ function TheaChargedShot:firePosition()
   return vec2.add(mcontroller.position(), activeItem.handPosition(self.weapon.muzzleOffset))
 end
 
-function TheaChargedShot:aimVector(inaccuracy)
-  local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle + sb.nrand(inaccuracy, 0))
+function TheaChargedShot:aimVector(inaccuracy, shotNumber)
+  local angleAdjustmentList = self.angleAdjustmentsPerShot or {}
+  local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle + sb.nrand(inaccuracy, 0) + (angleAdjustmentList[shotNumber] or 0))
   aimVector[1] = aimVector[1] * mcontroller.facingDirection()
   return aimVector
 end

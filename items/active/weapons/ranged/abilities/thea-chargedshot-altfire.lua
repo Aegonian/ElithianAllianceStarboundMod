@@ -195,7 +195,8 @@ function TheaChargedShotAltFire:firePosition()
 end
 
 function TheaChargedShotAltFire:aimVector(inaccuracy, shotNumber)
-  local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle + sb.nrand(inaccuracy, 0) + self.angleAdjustmentsPerShot[shotNumber])
+  local angleAdjustmentList = self.angleAdjustmentsPerShot or {}
+  local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle + sb.nrand(inaccuracy, 0) + (angleAdjustmentList[shotNumber] or 0))
   aimVector[1] = aimVector[1] * mcontroller.facingDirection()
   return aimVector
 end

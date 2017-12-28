@@ -82,6 +82,34 @@
   "inputNodes"  : [ [5, 5] ],
   "outputNodes" : [ [0, 0] ],
   
+  //Config for the entity check before closing
+  "performEntityCheck" : true,
+  "scanLineCount" : 3, //Number of lines to check for entity collision
+  "includedTypes" : [ "player" ],
+  
+  "entityCheckLineStart" : [
+	[-0.5, 1],
+	[1, 1],
+	[2.5, 1]
+  ],
+  "entityCheckLineEnd" : [
+	[-4.5, 5],
+	[-3, 5],
+	[-1.5, 5]
+  ],
+  
+  "flippedEntityCheckLineStart" : [
+	[-1.5, 1],
+	[0, 1],
+	[1.5, 1]
+  ],
+  "flippedEntityCheckLineEnd" : [
+	[2.5, 5],
+	[4, 5],
+	[5.5, 5]
+  ],
+  
+  //Drop the regular version when broken
   "breakDropOptions" : [
     [ [ "avikanvaultdoor", 1, { } ] ]
   ]

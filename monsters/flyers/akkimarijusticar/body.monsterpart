@@ -1,0 +1,9 @@
+{
+  "name" : "akkimarijusticar",
+  "category" : "akkimarijusticar",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "akkimarijusticar.png"
+  }
+}

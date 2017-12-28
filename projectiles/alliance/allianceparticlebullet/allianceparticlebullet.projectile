@@ -1,0 +1,40 @@
+{
+  "projectileName" : "allianceparticlebullet",
+  "physics" : "lineriflebullet",
+  "bounces" : 0,
+  "image" : "allianceparticlebullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 300,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/alliance/allianceparticlebullet/trail.png",
+        "position" : [-2.5, 0],
+        "layer" : "middle",
+        "timeToLive" : 0.0,
+        "destructionTime" : 1.0,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  "lightColor" : [35, 60, 75],
+  "fullbright" : true,
+  "damageKind" : "plasma",
+  
+  "scripts" : [ "/projectiles/scripts/thea-linerifle.lua" ]
+}

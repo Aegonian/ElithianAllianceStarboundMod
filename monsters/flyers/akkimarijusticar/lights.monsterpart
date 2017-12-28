@@ -1,0 +1,9 @@
+{
+  "name" : "akkimarijusticarlights",
+  "category" : "akkimarijusticar",
+  "type" : "lights",
+
+  "frames" : {
+    "lights" : "akkimarijusticarlights.png"
+  }
+}
