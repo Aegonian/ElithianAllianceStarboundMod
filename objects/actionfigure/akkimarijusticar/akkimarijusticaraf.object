@@ -1,0 +1,32 @@
+{
+  "objectName" : "akkimarijusticaraf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "legendary",
+  "category" : "actionFigure",
+  "collectablesOnPickup" : { "actionfigures" : "akkimarijusticaraf" },
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"A large Akkimari Justicar, the leader of a pack of Akkimari.\"",
+  "shortdescription" : "Justicar Figurine",
+
+  "inventoryIcon" : "akkimarijusticaraf.png",
+  "orientations" : [
+    {
+      "image" : "akkimarijusticaraf.png:<color>",
+      "imagePosition" : [-8, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [-1, 0], [-1, 1], [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "akkimarijusticaraf.png:<color>",
+      "imagePosition" : [-8, 0],
+      "direction" : "right",
+
+      "spaces" : [ [-1, 0], [-1, 1], [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

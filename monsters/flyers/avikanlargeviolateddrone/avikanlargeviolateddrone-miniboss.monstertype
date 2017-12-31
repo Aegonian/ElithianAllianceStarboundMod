@@ -100,7 +100,9 @@
             "projectileSpeed": 10,
 
             "winddownState" : "missilewinddown",
-            "winddownTime" : 0.8
+            "winddownTime" : 0.8,
+			
+			"damageRepeatGroup" : "" //Removes the damage cooldown time, allowing every projectile that connects to damage the target
           }
         },
 	  //GRENADE AOE ATTACK
@@ -133,7 +135,9 @@
             "projectileSpeed": 1,
 
             "winddownState" : "grenadewinddown",
-            "winddownTime" : 0.8
+            "winddownTime" : 0.8,
+			
+			"damageRepeatGroup" : "" //Removes the damage cooldown time, allowing every projectile that connects to damage the target
           }
         },
 	  //ION CANNON ATTACK

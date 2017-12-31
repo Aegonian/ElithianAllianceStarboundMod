@@ -1,0 +1,85 @@
+{
+  "objectName" : "allianceconsole",
+  "colonyTags" : ["alliance","wired"],
+  "rarity" : "Common",
+  "category" : "wire",
+  "printable" : false,
+  "price" : 150,
+  "description" : "A computer console for wiring circuits together.",
+  "shortdescription" : "Alliance Console",
+  "race" : "aegi",
+  "lightColor" : [0, 32, 50],
+
+  "apexDescription" : "A console for controlling connected objects.",
+  "avianDescription" : "This panel likely controls mechanisms nearby.",
+  "floranDescription" : "Ssshiny buttonsss, Floran presss?",
+  "glitchDescription" : "Curious. What will happen if I touch these buttons?",
+  "humanDescription" : "I probably shouldn't touch any of these buttons, but I really want to...",
+  "hylotlDescription" : "A control panel of some sort.",
+  "novakidDescription" : "A shiny console with an even shinier interface.",
+
+  "aegiDescription" : "This console's interface was built to accomodate for several Alliance species.",
+  "avikanDescription" : "An alien interface. I can't make much sense of it.",
+  "erixianDescription" : "This console may control nearby mechanisms.",
+  "trinkDescription" : "This standard Alliance interface allows several Alliance species to operate this console.",
+  "hymidDescription" : "A console designed by the Aegi, but perfectly usable to us Hymid too.",
+  "notixDescription" : "A standard Alliance interface. Its haptic feedback allows even me to use it.",
+  "jorgasianDescription" : "A standard Alliance console.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Analysis. Console. Interface decryption failed.",
+
+  "inventoryIcon" : "allianceconsoleicon.png",
+  "orientations" : [
+    {
+	  "image" : "allianceconsole.png:<color>.<frame>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 8,
+      "animationCycle" : 0.8,
+      "lightPosition" : [1, 1],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "flipImages" : true,
+      "direction" : "left"
+
+    },
+    {
+	  "image" : "allianceconsole.png:<color>.<frame>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 8,
+      "animationCycle" : 0.8,
+      "lightPosition" : [1, 1],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "right"
+
+    }
+  ],
+
+  "scripts" : [
+    "/objects/wired/switch/switch.lua"
+  ],
+  "scriptDelta" : 5,
+  
+  "defaultSwitchState" : true,
+
+  "animation" : "allianceconsole.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/console_generic_switchon.ogg" ],
+      "off" : [ "/sfx/objects/console_generic_switchoff.ogg" ]
+    }
+  },
+  "animationParts" : {
+    "bg" : "allianceconsole.png",
+    "fg" : "allianceconsolelit.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "outputNodes" : [ [0, 1] ]
+}

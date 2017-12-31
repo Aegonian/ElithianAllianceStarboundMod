@@ -1,0 +1,48 @@
+{
+  "objectName" : "allianceinterface2",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 50,
+  "description" : "An interface displaying varied information.",
+  "shortdescription" : "Alliance Interface",
+  "race" : "aegi",
+
+  "apexDescription" : "An interface displaying some information.",
+  "avianDescription" : "Some sort of interface.",
+  "floranDescription" : "Floran got yelled at when Floran wrote on a ssscreen...",
+  "glitchDescription" : "Observation. An interface.",
+  "humanDescription" : "A fancy interface.",
+  "hylotlDescription" : "An elegantly designed interface.",
+  "novakidDescription" : "I reckon this interface is showing some important stuff, but I can't read any of it.",
+
+  "aegiDescription" : "An interface displaying useful information.",
+  "avikanDescription" : "An alien interface. It's gibberish to me.",
+  "erixianDescription" : "Simply an interface.",
+  "trinkDescription" : "This interface is quite efficient.",
+  "hymidDescription" : "Useful information is being displayed here.",
+  "notixDescription" : "An interface featuring haptic feedback.",
+  "jorgasianDescription" : "Simply an interface.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien interface. Attempting translation.",
+  
+  "inventoryIcon" : "allianceinterface2icon.png",
+  "orientations" : [
+    {
+      "image" : "allianceinterface2.png:<color>.<frame>",
+      "imagePosition" : [-16, 0],
+	  
+	  "fullbright" : true,
+	  
+      "frames" : 8,
+      "animationCycle" : 0.8,
+      "lightPosition" : [0, 1],
+
+      "spaceScan" : 0.01,
+      "anchors" : [ "background" ]
+    }
+  ]
+}

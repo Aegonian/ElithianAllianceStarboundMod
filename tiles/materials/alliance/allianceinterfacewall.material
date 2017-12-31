@@ -1,0 +1,28 @@
+{
+  "materialId" : 30083,
+  "materialName" : "allianceinterfacewall",
+  "particleColor" : [157, 157, 157, 255],
+  "itemDrop" : "allianceinterfacewall", 
+  "shortdescription" : "Alliance Interface Wall",
+  
+  "description" : "An interface screen integrated into a wall panel.",
+  "glitchDescription" : "Observation. An integrated screen.",
+  "floranDescription" : "Floran wondersss why sscreen iss inssside wallss.",
+  "novakidDescription" : "Some kinda screen inside a wall. Neat.",
+  
+  "drodenDescription" : "Analysis complete. Integrated interface panel.",
+
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "health" : 4,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "allianceinterfacewall.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 50
+  }
+}

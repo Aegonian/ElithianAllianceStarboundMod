@@ -1,0 +1,32 @@
+{
+  "objectName" : "akkimariarbiteraf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "legendary",
+  "category" : "actionFigure",
+  "collectablesOnPickup" : { "actionfigures" : "akkimariarbiteraf" },
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"A drone which acts to resolve disputes between Akkimari scavengers.\"",
+  "shortdescription" : "Arbiter Figurine",
+
+  "inventoryIcon" : "akkimariarbiteraf.png",
+  "orientations" : [
+    {
+      "image" : "akkimariarbiteraf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "akkimariarbiteraf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

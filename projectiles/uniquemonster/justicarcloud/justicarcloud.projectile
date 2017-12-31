@@ -1,0 +1,85 @@
+{
+  "projectileName" : "justicarcloud",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/uniquemonster/justicarcloud/justicarcloud.config"
+    },
+	//ACID SPREAD
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    }
+  ],
+  "orientationLocked" : true,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "timeToLive" : 0
+}

@@ -1,14 +1,32 @@
 {
   "frameGrid" : {
     "size" : [64, 30],
-    "dimensions" : [9, 3],
+    "dimensions" : [9, 16],
 
     "names" : [
 	//FLYING
       [ null, "fly.1", "fly.2", "fly.3", "fly.4", "fly.5", "fly.6", "fly.7", "fly.8" ],
 	  [ null, "fly.9", "fly.10", "fly.11", "fly.12", "fly.13", "fly.14", "fly.15", "fly.16" ],
 	//HURT
-      [ null, "hurt.1", "hurt.2", "hurt.3", "hurt.4", "hurt.5", "hurt.6", "hurt.7", "hurt.8" ]
+      [ null, "hurt.1", "hurt.2", "hurt.3", "hurt.4", "hurt.5", "hurt.6", "hurt.7", "hurt.8" ],
+	//ALERT
+      [ null, "alert.1", "alert.2", "alert.3", "alert.4", null, null, null, null ],
+	//ACID BOMB
+      [ null, "bombwindup.1", "bombwindup.2", "bombwindup.3", "bombwindup.4", "bombwindup.5", "bombwindup.6", "bombwindup.7", "bombwindup.8" ],
+      [ null, "bombloop.1", "bombloop.2", "bombloop.3", "bombloop.4", null, null, null, null ],
+      [ null, "bombwinddown.1", "bombwinddown.2", "bombwinddown.3", "bombwinddown.4", "bombwinddown.5", "bombwinddown.6", "bombwinddown.7", "bombwinddown.8" ],
+	//CANNONS
+      [ null, "cannonswindup.1", "cannonswindup.2", "cannonswindup.3", "cannonswindup.4", "cannonswindup.5", "cannonswindup.6", "cannonswindup.7", "cannonswindup.8" ],
+      [ null, "cannonsloop.1", "cannonsloop.2", "cannonsloop.3", "cannonsloop.4", null, null, null, null ],
+      [ null, "cannonswinddown.1", "cannonswinddown.2", "cannonswinddown.3", "cannonswinddown.4", "cannonswinddown.5", "cannonswinddown.6", "cannonswinddown.7", "cannonswinddown.8" ],
+	//MINE
+      [ null, "minewindup.1", "minewindup.2", "minewindup.3", "minewindup.4", "minewindup.5", "minewindup.6", "minewindup.7", "minewindup.8" ],
+      [ null, "mineloop.1", "mineloop.2", "mineloop.3", "mineloop.4", null, null, null, null ],
+      [ null, "minewinddown.1", "minewinddown.2", "minewinddown.3", "minewinddown.4", "minewinddown.5", "minewinddown.6", "minewinddown.7", "minewinddown.8" ],
+	//RAIN
+      [ null, "rainwindup.1", "rainwindup.2", "rainwindup.3", "rainwindup.4", "rainwindup.5", "rainwindup.6", "rainwindup.7", "rainwindup.8" ],
+      [ null, "rainloop.1", "rainloop.2", "rainloop.3", "rainloop.4", null, null, null, null ],
+      [ null, "rainwinddown.1", "rainwinddown.2", "rainwinddown.3", "rainwinddown.4", "rainwinddown.5", "rainwinddown.6", "rainwinddown.7", "rainwinddown.8" ]
     ]
   },
   "aliases" : {

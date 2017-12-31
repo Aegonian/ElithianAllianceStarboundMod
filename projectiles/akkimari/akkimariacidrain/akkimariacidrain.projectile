@@ -1,0 +1,31 @@
+{
+  "projectileName" : "akkimariacidrain",
+  "physics" : "grenade",
+  "bounces" : 0,
+  "image" : "akkimariacidrain.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 0,
+  "speed" : 30,
+  "supportsProcessing" : true,
+  "damagePoly" : [ [-18, 0], [-12, -12], [0, -18], [12, -12], [18, 0], [12, 12], [0, 18], [-12, 12] ],
+  "emitters" : [ "akkimariacidrain" ],
+  "actionOnReap" : [
+    { 
+      "action" : "liquid",
+      "liquid" : "akkimariacid", "quantity" : 1
+    }
+  ],
+  "statusEffects" : [
+    "akkimariacidburn"
+  ],
+  "lightColor" : [0, 75, 10],
+  "fullbright" : true,
+  "damageKind" : "akkimariacid",
+
+  "scripts" : ["/projectiles/scripts/thea-randomspeedprojectile.lua"],
+  "scriptDelta" : 1,
+  
+  "minSpeed" : 25,
+  "maxSpeed" : 35
+}

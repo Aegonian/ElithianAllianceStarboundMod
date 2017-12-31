@@ -1,0 +1,10 @@
+{
+  "itemName" : "akkimarimetaltier5",
+  "price" : 350,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "akkimarimetaltier5.png",
+  "description" : "Polished plates of scrap metal scavenged from high quality sources.",
+  "shortdescription" : "Polished Scrap Metal",
+  "itemTags" : [ "reagent" ]
+}

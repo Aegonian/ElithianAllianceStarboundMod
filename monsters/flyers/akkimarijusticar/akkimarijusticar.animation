@@ -11,7 +11,101 @@
           "fly" : {
             "frames" : 16,
             "cycle" : 1.6,
+            "mode" : "loop",
+			"properties" : {
+              "particleEmittersOff" : [ "acidBomb" ]
+            }
+          },
+          "alert" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "transition",
+            "transition" : "fly"
+          },
+		//ACID BOMB ATTACK
+          "bombwindup" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "bombloop",
+            "frameProperties" : {
+              "immediateSound" : [ "", "", "", "", "", "/sfx/gun/akkimari_charge3.ogg", "", "" ]
+            }
+          },
+          "bombloop" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "loop",
+			"properties" : {
+              "particleEmittersOn" : [ "acidBomb" ],
+              "persistentSound" : "/sfx/melee/charge_full_hold1.ogg"
+            }
+          },
+          "bombwinddown" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "fly",
+			"properties" : {
+              "particleEmittersOff" : [ "acidBomb" ]
+            }
+          },
+		//CANNONS ATTACK
+          "cannonswindup" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "cannonsloop"
+          },
+          "cannonsloop" : {
+            "frames" : 4,
+            "cycle" : 0.4,
             "mode" : "loop"
+          },
+          "cannonswinddown" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "fly"
+          },
+		//MINE ATTACK
+          "minewindup" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "mineloop"
+          },
+          "mineloop" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "loop"
+          },
+          "minewinddown" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "fly"
+          },
+		//ACID RAIN ATTACK
+          "rainwindup" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "rainloop"
+          },
+          "rainloop" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "loop",
+            "properties" : {
+              "persistentSound" : "/sfx/npc/monsters/akkimarijusticar_rain.ogg"
+            }
+          },
+          "rainwinddown" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "fly"
           }
         }
       },
@@ -23,9 +117,10 @@
             "frames" : 1
           },
           "stunned" : {
-            "frames" : 8,
-            "cycle" : 0.8,
-            "mode" : "loop"
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "transition",
+			"transition" : "none"
           }
         }
       },
@@ -68,6 +163,75 @@
               "properties" : {
                 "image" : "<partImage>:fly.<frame>"
               }
+            },
+            "alert" : {
+              "properties" : {
+                "image" : "<partImage>:alert.<frame>"
+              }
+            },
+		  //ACID BOMB ATTACK
+            "bombwindup" : {
+              "properties" : {
+                "image" : "<partImage>:bombwindup.<frame>"
+              }
+            },
+            "bombloop" : {
+              "properties" : {
+                "image" : "<partImage>:bombloop.<frame>"
+              }
+            },
+            "bombwinddown" : {
+              "properties" : {
+                "image" : "<partImage>:bombwinddown.<frame>"
+              }
+            },
+		  //ACID BOMB ATTACK
+            "cannonswindup" : {
+              "properties" : {
+                "image" : "<partImage>:cannonswindup.<frame>"
+              }
+            },
+            "cannonsloop" : {
+              "properties" : {
+                "image" : "<partImage>:cannonsloop.<frame>"
+              }
+            },
+            "cannonswinddown" : {
+              "properties" : {
+                "image" : "<partImage>:cannonswinddown.<frame>"
+              }
+            },
+		  //MINE ATTACK
+            "minewindup" : {
+              "properties" : {
+                "image" : "<partImage>:minewindup.<frame>"
+              }
+            },
+            "mineloop" : {
+              "properties" : {
+                "image" : "<partImage>:mineloop.<frame>"
+              }
+            },
+            "minewinddown" : {
+              "properties" : {
+                "image" : "<partImage>:minewinddown.<frame>"
+              }
+            },
+		  //ACID RAIN ATTACK
+            "rainwindup" : {
+              "properties" : {
+                "image" : "<partImage>:rainwindup.<frame>"
+              }
+            },
+            "rainloop" : {
+              "properties" : {
+                "image" : "<partImage>:rainloop.<frame>"
+              }
+            },
+            "rainwinddown" : {
+              "properties" : {
+                "image" : "<partImage>:rainwinddown.<frame>"
+              }
             }
           },
           "damage" : {
@@ -97,6 +261,75 @@
               "properties" : {
                 "image" : "<partImage>:fly.<frame>"
               }
+            },
+            "alert" : {
+              "properties" : {
+                "image" : "<partImage>:alert.<frame>"
+              }
+            },
+		  //ACID BOMB ATTACK
+            "bombwindup" : {
+              "properties" : {
+                "image" : "<partImage>:bombwindup.<frame>"
+              }
+            },
+            "bombloop" : {
+              "properties" : {
+                "image" : "<partImage>:bombloop.<frame>"
+              }
+            },
+            "bombwinddown" : {
+              "properties" : {
+                "image" : "<partImage>:bombwinddown.<frame>"
+              }
+            },
+		  //ACID BOMB ATTACK
+            "cannonswindup" : {
+              "properties" : {
+                "image" : "<partImage>:cannonswindup.<frame>"
+              }
+            },
+            "cannonsloop" : {
+              "properties" : {
+                "image" : "<partImage>:cannonsloop.<frame>"
+              }
+            },
+            "cannonswinddown" : {
+              "properties" : {
+                "image" : "<partImage>:cannonswinddown.<frame>"
+              }
+            },
+		  //MINE ATTACK
+            "minewindup" : {
+              "properties" : {
+                "image" : "<partImage>:minewindup.<frame>"
+              }
+            },
+            "mineloop" : {
+              "properties" : {
+                "image" : "<partImage>:mineloop.<frame>"
+              }
+            },
+            "minewinddown" : {
+              "properties" : {
+                "image" : "<partImage>:minewinddown.<frame>"
+              }
+            },
+		  //ACID RAIN ATTACK
+            "rainwindup" : {
+              "properties" : {
+                "image" : "<partImage>:rainwindup.<frame>"
+              }
+            },
+            "rainloop" : {
+              "properties" : {
+                "image" : "<partImage>:rainloop.<frame>"
+              }
+            },
+            "rainwinddown" : {
+              "properties" : {
+                "image" : "<partImage>:rainwinddown.<frame>"
+              }
             }
           },
           "damage" : {
@@ -119,7 +352,7 @@
     "glow" : {
       "active" : true,
       "position" : [0, 0],
-      "color" : [0, 65, 100],
+      "color" : [0, 100, 10],
       "pointLight" : true
     }
   },
@@ -149,20 +382,21 @@
         { "particle" : "deathfizz4left" },
         { "particle" : "deathfizz4right" },
 		
-        { "particle" : "avikanlargedronedebris1" },
-		{ "particle" : "avikanlargedronedebris1" },
+        { "particle" : "akkimarijusticardebris1" },
+		{ "particle" : "akkimarijusticardebris1" },
 		
-		{ "particle" : "avikanlargedronedebris2" },
-		{ "particle" : "avikanlargedronedebris2" },
-		{ "particle" : "avikanlargedronedebris2" },
-		{ "particle" : "avikanlargedronedebris2" },
+		{ "particle" : "akkimarijusticardebris2" },
+		{ "particle" : "akkimarijusticardebris2" },
+		{ "particle" : "akkimarijusticardebris2" },
+		{ "particle" : "akkimarijusticardebris2" },
 		
-		{ "particle" : "avikanlargedronedebris3" },
-		{ "particle" : "avikanlargedronedebris3" },
-		{ "particle" : "avikanlargedronedebris3" },
-		{ "particle" : "avikanlargedronedebris3" },
+		{ "particle" : "akkimarijusticardebris3" },
+		{ "particle" : "akkimarijusticardebris3" },
+		{ "particle" : "akkimarijusticardebris3" },
+		{ "particle" : "akkimarijusticardebris3" },
 		
-		{ "particle" : "avikanlargedronedebris4" }
+		{ "particle" : "akkimarijusticardebris4" },
+		{ "particle" : "akkimarijusticardebris4" }
       ]
     },
     "captureParticles" : {
@@ -189,11 +423,34 @@
       "particles" : [
         { "particle" : "monsterlevelup" }
       ]
+    },
+    "acidBomb" : {
+      "emissionRate" : 10.0,
+      "transformationGroups" : ["body"],
+      "offsetRegion" : [0.45, -0.5, 0.55, 0.5],
+      "particles" : [
+		{ "particle" : "akkimaritrail" }
+	  ]
+    },
+    "mineBurst" : {
+      "burstCount" : 6.0,
+      "transformationGroups" : ["body"],
+      "offsetRegion" : [0.125, -1.0, -0.125, -1.0],
+      "particles" : [
+		{ "particle" : "akkimariashsmoke" }
+	  ]
     }
   },
 
   "sounds" : {
     "aggroHop" : [ "/sfx/npc/monsters/monster_surprise.ogg" ],
-    "deathPuff" : [ "/sfx/npc/enemydeathpuff.ogg" ]
+    "deathPuff" : [ "/sfx/npc/enemydeathpuff.ogg" ],
+	
+	//ATTACKS
+    "bombfire" : [ "/sfx/gun/akkimari_energyfire_heavy.ogg" ],
+    "cannonfire" : [ "/sfx/gun/akkimari_energyfire2.ogg" ],
+    "minefire" : [ "/sfx/gun/burstshot1.ogg" ],
+    "cloudfire" : [ "/sfx/gun/pumpgun_draw1.ogg" ],
+    "rainfire" : [ "/sfx/gun/pumpgun_draw1.ogg" ]
   }
 }

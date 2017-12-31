@@ -1,0 +1,10 @@
+{
+  "itemName" : "akkimarimetaltier6",
+  "price" : 500,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "akkimarimetaltier6.png",
+  "description" : "High quality scrap metal integrated with Akkimari tech.",
+  "shortdescription" : "Integrated Scrap Metal",
+  "itemTags" : [ "reagent" ]
+}

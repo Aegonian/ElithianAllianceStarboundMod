@@ -1,0 +1,14 @@
+{
+  "frameGrid" : {
+    "size" : [24, 24],
+    "dimensions" : [9, 3],
+
+    "names" : [
+      [ null, "fly.1", "fly.2", "fly.3", "fly.4", "fly.5", "fly.6", "fly.7", "fly.8" ],
+	  [ null, "hurt.1", "hurt.2", "hurt.3", "hurt.4", null, null, null, null ],
+	  [ null, "firewindup.1", "firewindup.2", "firewindup.3", "fire", "firewinddown.1", "firewinddown.2", "firewinddown.3", "firewinddown.4" ]
+    ]
+  },
+  "aliases" : {
+  }
+}

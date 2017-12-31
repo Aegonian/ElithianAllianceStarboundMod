@@ -1,0 +1,259 @@
+{
+  "type" : "akkimariflic",
+  "shortdescription" : "Flic",
+  "description" : "A small drone used for Akkimari law enforcement.",
+
+  "categories" : [ "akkimariflic" ],
+  "parts" : [ "body", "lights" ],
+
+  "animation" : "akkimariflic.animation",
+
+  "dropPools" : [ { "default" : "akkimariflicTreasure", "electromagneticextractor" : "electromagneticextractorTreasure" } ],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+
+    "behavior" : "monster",
+
+    "seeThroughLiquid" : false,
+    "behaviorConfig" : {
+      "damageOnTouch" : true,
+
+      "targetQueryRange" : 40,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : true,
+      "keepTargetInRange" : 50,
+      "targetOutOfSightTime" : 5.0,
+
+      "foundTargetActions" : [ ],
+
+      "fleeActions" : [ ],
+
+      "hostileActions" : [
+	  //ACID SPRAY ATTACK
+		{
+          "name" : "action-fire",
+          "cooldown" : 6.0,
+          "parameters" : {
+            "requireLineOfSight" : true,
+            "maximumRange" : 4,
+            "minimumRange" : 0,
+            "windupState" : "firewindup",
+            "windupTime" : 0.3,
+
+            "projectileType" : "akkimariacidcloud",
+            "projectileParameters": {
+			  "power" : 0
+			},
+            "fireOffset" : [0.5, 0.0],
+            "aimAtTarget" : true,
+            "onGround" : false,
+            "fireState" : "fire",
+            "fireSound" : "fire",
+            "fireDelay" : 0.1,
+
+            "fireArc": false,
+
+            "winddownState" : "firewinddown",
+            "winddownTime" : 0.4
+          }
+        }
+      ],
+
+      "periodicActions" : [ ],
+
+      "approachActions" : [
+        {
+          "name" : "approach-swarm",
+          "parameters" : {
+            "maxRange" : 8,
+            "minMoveDistance" : 4.5,
+			"idleTime": 0.15
+          }
+        }
+      ],
+
+      "followActions" : [
+        {
+          "name" : "approach-teleport"
+        },
+        {
+          "name" : "approach-swarm",
+          "parameters" : {
+            "maxRange" : 8,
+            "minMoveDistance" : 4.5,
+			"idleTime": 0.15
+          }
+        }
+      ],
+
+      "wanderActions" : [
+        {
+          "name" : "approach-swarm",
+          "parameters" : {
+            "maxRange" : 6,
+            "minMoveDistance" : 3.0,
+			"idleTime": 0.1
+          }
+        },
+        {
+          "name" : "wander-fly",
+          "parameters" : {
+            "wanderTime" : [2,4],
+            "groundDistance" : 8,
+            "ceilingDistance ": 8,
+            "xVelocity" : 8,
+            "yVelocity" : 12
+          }
+        }
+      ],
+
+      "concurrentActions" : [ ],
+
+      "concurrentHostileActions" : [ ]
+    },
+
+    "touchDamage" : {
+      "poly" : [ [0.26, 0.625],  [0.625, 0.26], [0.625, -0.26], [0.26, -0.625], [-0.26, -0.625], [-0.625, -0.26], [-0.625, 0.26], [-0.26, 0.625] ],
+      "damage" : 3,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "lash",
+      "knockback" : 20,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-4, -4, 4, 4],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [0.26, 0.625],  [0.625, 0.26], [0.625, -0.26], [0.26, -0.625], [-0.26, -0.625], [-0.625, -0.26], [-0.625, 0.26], [-0.26, 0.625] ],
+
+      "mass" : 0.5,
+      "walkSpeed" : 3,
+      "runSpeed" : 8,
+      "gravityEnabled" : false,
+
+      "airFriction" : 3,
+      "airForce" : 30,
+      "flySpeed" : 15
+    },
+
+    "bodyMaterialKind" : "robotic",
+
+    "knockoutTime" : 0.3,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "robotic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.5
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 9
+        },
+        "maxHealth" : {
+          "baseValue" : 8
+        },
+        "protection" : {
+          "baseValue" : 0.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+        "physicalResistance" : {
+          "baseValue" : 0.0
+        },
+        "fireResistance" : {
+          "baseValue" : 0.0
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "iceResistance" : {
+          "baseValue" : 0.0
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "electricResistance" : {
+          "baseValue" : -0.5
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "poisonResistance" : {
+          "baseValue" : 0.5
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "linerifleResistance" : {
+          "baseValue" : -0.5
+        },
+        "linerifleStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "centensianenergyResistance" : {
+          "baseValue" : 0.0
+        },
+        "centensianenergyStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "xanafianStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "akkimariacidResistance" : {
+          "baseValue" : 0.0
+        },
+        "akkimariacidStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "bleedingImmunity" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -8],
+    "capturable" : true,
+    "captureHealthFraction" : 1.0,
+    "nametagColor" : [64, 200, 255],
+    "captureCollectables" : { "monsters" : "akkimariflic" }
+  }
+}

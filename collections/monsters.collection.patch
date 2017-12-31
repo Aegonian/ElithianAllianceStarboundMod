@@ -122,5 +122,37 @@
 	    "monsterType" : "avikanviolatedminidrone",
 	    "icon" : "/monsters/flyers/avikanviolatedminidrone/avikanviolatedminidroneicon.png"
 	  }
+	},
+	
+	//NEW MONSTERS - v2.3.0
+	{
+	  "op": "add",
+	  "path": "/collectables/akkimarijusticar-captured",
+	  "value": 	  
+	  {
+	    "order" : 70,
+	    "monsterType" : "akkimarijusticar-captured",
+	    "icon" : "/monsters/flyers/akkimarijusticar/akkimarijusticaricon.png"
+	  }
+	},
+	{
+	  "op": "add",
+	  "path": "/collectables/akkimariarbiter",
+	  "value": 	  
+	  {
+	    "order" : 71,
+	    "monsterType" : "akkimariarbiter",
+	    "icon" : "/monsters/flyers/akkimariarbiter/akkimariarbitericon.png"
+	  }
+	},
+	{
+	  "op": "add",
+	  "path": "/collectables/akkimariflic",
+	  "value": 	  
+	  {
+	    "order" : 72,
+	    "monsterType" : "akkimariflic",
+	    "icon" : "/monsters/flyers/akkimariflic/akkimariflicicon.png"
+	  }
 	}
 ]

@@ -1,0 +1,10 @@
+{
+  "itemName" : "akkimarimetaltier3",
+  "price" : 150,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "akkimarimetaltier3.png",
+  "description" : "Dented plates of scrap metal scavenged from low quality sources.",
+  "shortdescription" : "Dented Scrap Metal",
+  "itemTags" : [ "reagent" ]
+}

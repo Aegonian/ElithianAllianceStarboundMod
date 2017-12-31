@@ -103,11 +103,39 @@
 	//NEW MONSTERS - v2.2.2
 	{
 	  "op": "add", 
-	  "path": "/collectables/ghavorkanaf",
+	  "path": "/collectables/trinkminidroneaf",
 	  "value": 		
 	  {
 		"order" : 79,
 		"item" : "trinkminidroneaf"
+	  }
+	},
+	//NEW MONSTERS - v2.3.0
+	{
+	  "op": "add", 
+	  "path": "/collectables/akkimarijusticaraf",
+	  "value": 		
+	  {
+		"order" : 80,
+		"item" : "akkimarijusticaraf"
+	  }
+	},
+	{
+	  "op": "add", 
+	  "path": "/collectables/akkimariarbiteraf",
+	  "value": 		
+	  {
+		"order" : 81,
+		"item" : "akkimariarbiteraf"
+	  }
+	},
+	{
+	  "op": "add", 
+	  "path": "/collectables/akkimariflicaf",
+	  "value": 		
+	  {
+		"order" : 82,
+		"item" : "akkimariflicaf"
 	  }
 	}
 ]

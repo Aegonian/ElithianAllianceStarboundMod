@@ -1,0 +1,10 @@
+{
+  "itemName" : "akkimarimetal",
+  "price" : 50,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "akkimarimetal.png",
+  "description" : "Low-grade scrap metal scavenged from various sources.",
+  "shortdescription" : "Broken Scrap Metal",
+  "itemTags" : [ "reagent" ]
+}

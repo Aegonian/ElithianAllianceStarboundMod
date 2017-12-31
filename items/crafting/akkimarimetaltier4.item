@@ -1,0 +1,10 @@
+{
+  "itemName" : "akkimarimetaltier4",
+  "price" : 200,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "akkimarimetaltier4.png",
+  "description" : "Hardened plates of scrap metal scavenged from medium quality sources.",
+  "shortdescription" : "Hardened Scrap Metal",
+  "itemTags" : [ "reagent" ]
+}

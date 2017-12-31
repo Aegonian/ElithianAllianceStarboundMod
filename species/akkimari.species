@@ -11,7 +11,7 @@
   "humanoidConfig" : "/species/types/thea-akkimaroid.config",
   "nameGen" : [ "/species/drodennamegen.config:names", "/species/drodennamegen.config:names" ],
   "ouchNoises" : [ "/sfx/humanoid/droden_hurt_1.ogg", "/sfx/humanoid/droden_hurt_1.ogg" ],
-  "charGenTextLabels" : [ "Skin Colour", "Ear style", "Shirt", "Legwear", "Antenna", "Fur colour", "Shirt colour", "Legwear colour", "AKKIMARI", "Personality" ],
+  "charGenTextLabels" : [ "Skin Colour", "Ear style", "Chestwear", "Legwear", "N/A", "Fur colour", "Chestwear colour", "Legwear colour", "AKKIMARI", "Personality" ],
   "skull" : "/humanoid/akkimari/dead.png",
   "effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=ffbe00FF?replace=31a6ffFF=ff6a00FF",
   "defaultBlueprints" : {
@@ -65,52 +65,52 @@
   "genders" : [
     {
       "name" : "male",
-      "image" : "/interface/title/drodenwarframe.png",
+      "image" : "/interface/title/male.png",
       "characterImage" : "/interface/title/drodenmale.png",
-	  "hairGroup" : "pattern",
-      "hair" : [ "1", "male2", "male3", "male4", "male5" ],
+	  "hairGroup" : "hair",
+      "hair" : [ "0" ],
       "shirt" : [ "thea-hiddenchest" ],
       "pants" : [ "thea-hiddenlegs" ],
       "facialHairGroup" : "",
       "facialHair" : [ ],
-      "facialMaskGroup" : "antenna",
-      "facialMask" : [ "1", "2" ]
+      "facialMaskGroup" : "ears",
+      "facialMask" : [ "0", "1", "2" ]
     },
     {
       "name" : "female",
-      "image" : "/interface/title/drodenrepairframe.png",
+      "image" : "/interface/title/female.png",
       "characterImage" : "/interface/title/drodenfemale.png",
-	  "hairGroup" : "pattern",
-      "hair" : [ "1", "fem2", "fem3", "fem4", "fem5" ],
+	  "hairGroup" : "hair",
+      "hair" : [ "0" ],
       "shirt" : [ "thea-hiddenchest" ],
       "pants" : [ "thea-hiddenlegs" ],
       "facialHairGroup" : "",
       "facialHair" : [ ],
-      "facialMaskGroup" : "antenna",
-      "facialMask" : [ "1", "2" ]
+      "facialMaskGroup" : "ears",
+      "facialMask" : [ "0", "1", "2" ]
     }
   ],
   "bodyColor" : [
  // { "42301C" : "DARKER", "785F40" : "DARK  ", "A2825C" : "NORMAL", "CCAA7F" : "LIGHT " }, // Template, Brown
   
-    { "42301C" : "412F1D", "785F40" : "775E42", "A2825C" : "A0805E", "CCAA7F" : "CAA881" }, // Brown
-	{ "42301C" : "5E4536", "785F40" : "A5885E", "A2825C" : "C9AC80", "CCAA7F" : "E9D3AB" }, // Sand
-	{ "42301C" : "322314", "785F40" : "5C462E", "A2825C" : "7B5F42", "CCAA7F" : "9B7D5C" }, // Dark Brown
-	{ "42301C" : "323232", "785F40" : "626262", "A2825C" : "858585", "CCAA7F" : "ADADAD" }  // Stripped Metal
+    { "42301C" : "3D3022", "785F40" : "725F4A", "A2825C" : "998168", "CCAA7F" : "C3A98C" }, // Brown
+	{ "42301C" : "352F27", "785F40" : "665B51", "A2825C" : "897C6F", "CCAA7F" : "B0A293" }, // Faded Brown
+	{ "42301C" : "35322F", "785F40" : "66625D", "A2825C" : "8B8680", "CCAA7F" : "B3AEA8" }, // Grey Brown
+	{ "42301C" : "2D3136", "785F40" : "5A6068", "A2825C" : "7C848D", "CCAA7F" : "A3ABB6" }, // Faded Blue
+	{ "42301C" : "333333", "785F40" : "626262", "A2825C" : "878787", "CCAA7F" : "AFAFAF" }, // Grey
+	{ "42301C" : "283235", "785F40" : "525F65", "A2825C" : "718189", "CCAA7F" : "95A8B0" }, // Light Blue
+	{ "42301C" : "282D35", "785F40" : "525765", "A2825C" : "717789", "CCAA7F" : "959DB0" }, // Dark Blue
+	{ "42301C" : "3F2F22", "785F40" : "6C5A4B", "A2825C" : "8C7D6D", "CCAA7F" : "ACA095" }, // Light Brown
+	{ "42301C" : "433428", "785F40" : "736355", "A2825C" : "96887A", "CCAA7F" : "BAAFA5" }, // Lighter Brown
+	{ "42301C" : "352A28", "785F40" : "655352", "A2825C" : "887270", "CCAA7F" : "AF9795" }  // Faded Red
   ],
   "undyColor" : [ "" ],
   "hairColor" : [
  // { "553428" : "DARKER", "A35638" : "DARK  ", "C97354" : "NORMAL", "EFA386" : "LIGHT " }, // Template, Reddish Orange
  
-    // Body Colour as Hair Colour 
-    { "553428" : "412F1D", "A35638" : "775E42", "C97354" : "A0805E", "EFA386" : "CAA881" }, // Brown
-	{ "553428" : "5E4536", "A35638" : "A5885E", "C97354" : "C9AC80", "EFA386" : "E9D3AB" }, // Sand
-	{ "553428" : "322314", "A35638" : "5C462E", "C97354" : "7B5F42", "EFA386" : "9B7D5C" }, // Dark Brown
-	{ "553428" : "323232", "A35638" : "626262", "C97354" : "858585", "EFA386" : "ADADAD" }, // Stripped Metal
-    // Unique Hair Colour
-	{ "553428" : "54250D", "A35638" : "8E421C", "C97354" : "E07C3E", "EFA386" : "F2A071" }, // Orange
-	{ "553428" : "540D0D", "A35638" : "8E1C1C", "C97354" : "E0463E", "EFA386" : "F2716A" }, // Red
-	{ "553428" : "543D0D", "A35638" : "8E681C", "C97354" : "E0B23E", "EFA386" : "F4D489" }, // Yellow
-	{ "553428" : "191919", "A35638" : "373737", "C97354" : "595959", "EFA386" : "858585" }  // Black
+	{ "553428" : "706E6B", "A35638" : "958F89", "C97354" : "ADA7A1", "EFA386" : "CEC9C3" }, // Dirty White
+	{ "553428" : "847D72", "A35638" : "AD9882", "C97354" : "C3AD98", "EFA386" : "E0CEB9" }, // Beige
+	{ "553428" : "6D6A67", "A35638" : "8A837B", "C97354" : "9C958E", "EFA386" : "B7B1A9" }, // Dirty Grey
+	{ "553428" : "878787", "A35638" : "A5A5A5", "C97354" : "BBBBBB", "EFA386" : "DADADA" }  // White
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "itemName" : "allianceinterfacewall",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "allianceinterfacewall.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  
+  "shortdescription" : "Alliance Interface Wall",
+  "description" : "An interface screen integrated into a wall panel.",
+
+  "materialId" : 30083
+}

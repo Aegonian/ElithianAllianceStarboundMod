@@ -1,0 +1,10 @@
+{
+  "itemName" : "akkimarimetaltier2",
+  "price" : 100,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "akkimarimetaltier2.png",
+  "description" : "Rusted bits of scrap metal scavenged from various sources.",
+  "shortdescription" : "Rusty Scrap Metal",
+  "itemTags" : [ "reagent" ]
+}

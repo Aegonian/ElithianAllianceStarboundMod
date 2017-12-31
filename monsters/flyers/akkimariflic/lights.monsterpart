@@ -1,0 +1,9 @@
+{
+  "name" : "akkimarifliclights",
+  "category" : "akkimariflic",
+  "type" : "lights",
+
+  "frames" : {
+    "lights" : "akkimarifliclights.png"
+  }
+}

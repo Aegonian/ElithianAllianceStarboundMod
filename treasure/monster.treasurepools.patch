@@ -262,5 +262,47 @@
       ]
     }]
    ]
+  },
+  
+  {"op" : "add",
+   "path" : "/akkimarijusticarTreasure",
+   "value" : [
+	[1, {
+      "pool" : [
+        {"weight" : 0.697, "pool" : "money"},
+		{"weight" : 0.3, "pool" : "akkimariScrapMetal"},
+        {"weight" : 0.003, "item" : "akkimarijusticaraf"}
+      ]
+    }]
+   ]
+  },
+  
+  {"op" : "add",
+   "path" : "/akkimariarbiterTreasure",
+   "value" : [
+	[1, {
+      "pool" : [
+        {"weight" : 0.697, "pool" : "money"},
+		{"weight" : 0.3, "pool" : "akkimariScrapMetal"},
+        {"weight" : 0.003, "item" : "akkimariarbiteraf"}
+      ]
+    }]
+   ]
+  },
+  
+  {"op" : "add",
+   "path" : "/akkimariflicTreasure",
+   "value" : [
+	[1, {
+      "pool" : [
+        {"weight" : 1, "item" : "akkimariflicaf"}
+      ],
+      "poolRounds" : [
+        [0.999, 0],
+        [0.001, 1]
+      ],
+      "allowDuplication" : false
+    }]
+   ]	
   }
 ]

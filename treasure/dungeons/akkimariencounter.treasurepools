@@ -1,0 +1,72 @@
+{
+	//GENERIC POOLS
+  "akkimariScrapMetal" : [
+	//TIER 1, STARTING PLANETS
+    [0, {
+      "pool" : [
+        {"weight" : 0.5, "item" : "akkimarimetal"}
+      ],
+      "poolRounds" : [
+        [0.9, 1],
+        [0.1, 2]
+      ],
+      "allowDuplication" : true
+    } ],
+	//TIER 2, EASY PLANETS
+	[1, {
+      "pool" : [
+        {"weight" : 0.5, "item" : "akkimarimetaltier2"}
+      ],
+      "poolRounds" : [
+        [0.9, 1],
+        [0.1, 2]
+      ],
+      "allowDuplication" : true
+    } ],
+	//TIER 3, MEDIUM PLANETS
+	[2, {
+      "pool" : [
+        {"weight" : 0.5, "item" : "akkimarimetaltier3"}
+      ],
+      "poolRounds" : [
+        [0.9, 1],
+        [0.1, 2]
+      ],
+      "allowDuplication" : true
+    } ],
+	//TIER 4, HARD PLANETS - FINAL STAGE OF AVIKAN BONE PROGRESSION
+	[3, {
+      "pool" : [
+        {"weight" : 0.5, "item" : "akkimarimetaltier4"}
+      ],
+      "poolRounds" : [
+        [0.9, 1],
+        [0.1, 2]
+      ],
+      "allowDuplication" : true
+    } ],
+	//TIER 5, VERY HARD PLANETS - BEYOND PROGRESSION
+	[4, {
+      "pool" : [
+        {"weight" : 0.5, "item" : "akkimarimetaltier5"}
+      ],
+      "poolRounds" : [
+        [0.9, 1],
+        [0.1, 2]
+      ],
+      "allowDuplication" : true
+    } ],
+	//TIER 6, EXTREMELY HARD PLANETS - BEYOND PROGRESSION
+	[5, {
+      "pool" : [
+        {"weight" : 0.5, "item" : "akkimarimetaltier6"}
+      ],
+      "poolRounds" : [
+        [0.9, 1],
+        [0.1, 2]
+      ],
+      "allowDuplication" : true
+    } ]
+  ]
+}
+

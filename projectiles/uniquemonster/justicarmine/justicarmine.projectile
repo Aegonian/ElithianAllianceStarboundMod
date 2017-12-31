@@ -1,0 +1,49 @@
+{
+  "projectileName" : "justicarmine",
+  "physics" : "stickygrenade",
+  "bounces" : -1,
+  "timeToLive" : 45,
+  "image" : "justicarmine.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 3,
+  //"emitters" : [ "akkimariashsmoke-air" ],
+  "speed" : 25,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/akkimariexplosion/akkimariexplosion.config"
+    }
+  ],
+  "actionOnCollide" : [
+    {
+      "action" : "sound",
+      "options" : [
+        "/sfx/projectiles/ropehook_impact1.ogg",
+        "/sfx/projectiles/ropehook_impact2.ogg",
+        "/sfx/projectiles/ropehook_impact3.ogg",
+        "/sfx/projectiles/ropehook_impact4.ogg",
+        "/sfx/projectiles/ropehook_impact5.ogg",
+        "/sfx/projectiles/ropehook_impact6.ogg",
+        "/sfx/projectiles/ropehook_impact7.ogg",
+        "/sfx/projectiles/ropehook_impact8.ogg",
+        "/sfx/projectiles/ropehook_impact9.ogg",
+        "/sfx/projectiles/ropehook_impact10.ogg",
+        "/sfx/projectiles/ropehook_impact11.ogg",
+        "/sfx/projectiles/ropehook_impact12.ogg"
+      ]
+    }
+  ],
+  "lightColor" : [125, 0, 0],
+  "power" : 50,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  
+  "scripts" : [ "/projectiles/scripts/thea-proximityexplode.lua" ],
+  "searchRadius" : 3.0,
+  "waitUntilSticky" : true,
+  
+  "searchStartDelay" : 0.5,
+  "searchDelayAfterSticky" : true,
+  
+  "killOnParentDeath" : true
+}

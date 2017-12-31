@@ -1,0 +1,22 @@
+{
+  "projectileName" : "justicarbullet",
+  "physics" : "grenade",
+  "bounces" : 0,
+  "image" : "justicarbullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "renderLayer" : "Monster+1",
+  "power" : 50,
+  "speed" : 80,
+  "supportsProcessing" : true,
+  "emitters" : [ "akkimaritraillightmedium" ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/akkimariacidimpact/akkimariacidimpact.config"
+    }
+  ],
+  "lightColor" : [0, 75, 10],
+  "fullbright" : true,
+  "damageKind" : "akkimariacid"
+}

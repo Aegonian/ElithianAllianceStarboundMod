@@ -177,5 +177,31 @@
       ]
     }]
    ]
+  },
+  
+  {"op" : "add",
+   "path" : "/akkimarijusticarHunting",
+   "value" : [
+	[1, {
+      "pool" : [
+        {"weight" : 0.499, "item" : "staticcell"},
+        {"weight" : 0.499, "item" : "stickofram"},
+        {"weight" : 0.002, "item" : "akkimarijusticaraf"}
+      ]
+    }]
+   ]
+  },
+  
+  {"op" : "add",
+   "path" : "/akkimariarbiterHunting",
+   "value" : [
+	[1, {
+      "pool" : [
+        {"weight" : 0.499, "item" : "staticcell"},
+        {"weight" : 0.499, "item" : "stickofram"},
+        {"weight" : 0.002, "item" : "akkimariarbiteraf"}
+      ]
+    }]
+   ]
   }
 ]

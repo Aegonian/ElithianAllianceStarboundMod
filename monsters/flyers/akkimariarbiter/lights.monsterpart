@@ -1,0 +1,9 @@
+{
+  "name" : "akkimariarbiterlights",
+  "category" : "akkimariarbiter",
+  "type" : "lights",
+
+  "frames" : {
+    "lights" : "akkimariarbiterlights.png"
+  }
+}
