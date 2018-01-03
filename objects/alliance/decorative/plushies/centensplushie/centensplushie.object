@@ -1,0 +1,42 @@
+{
+  "objectName" : "centensplushie",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A toy Centens made of soft fabrics.",
+  "shortdescription" : "Centens Plushie",
+  "race" : "aegi",
+
+  "apexDescription" : "A stuffed toy.",
+  "avianDescription" : "This stuffed toy looks a bit weird.",
+  "floranDescription" : "Floran findsss thiss one cute.",
+  "glitchDescription" : "Amused. This plushie is rather odd.",
+  "humanDescription" : "A plushie of some strange alien. How cute!",
+  "hylotlDescription" : "A stuffed toy.",
+  "novakidDescription" : "Some kinda plushie.",
+
+  "aegiDescription" : "A plushie Centens. I've always admired ancient civilizations.",
+  "avikanDescription" : "Is that an... Old One?",
+  "erixianDescription" : "A simple toy Centens.",
+  "trinkDescription" : "A stuffed Centens, a toy for children.",
+  "hymidDescription" : "Even the Gods make for adorable toys.",
+  "notixDescription" : "I think it is a toy Centens.",
+  "jorgasianDescription" : "A toy Centens. It's strange, but cute too.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien toy. Representation of Old One detected.",
+
+  "inventoryIcon" : "centensplushieicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "centensplushie.png:<color>",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

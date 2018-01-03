@@ -1,0 +1,62 @@
+{
+  "itemName" : "akkimari-tier1broadsword",
+  "price" : 300,
+  "level" : 1,
+  "maxStack" : 1,
+  "rarity" : "common",
+  "description" : "A weapon built from scavenged parts.",
+  "shortdescription" : "Akris Longsword",
+  "tooltipKind" : "sword",
+  "category" : "Longsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword","akkimari"],
+
+  "inventoryIcon" : "akkimari-tier1broadsword.png",
+
+  "animation" : "/items/active/weapons/melee/broadsword/combobroadsword.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "akkimari-tier1broadsword.png"
+  },
+  "animationCustom" : {
+	"animatedParts" : {
+	  "parts" : {
+		"swoosh" : {
+		  "partStates" : {
+			"swoosh" : {
+			  "fire" : {
+                "properties" : {
+				  "offset" : [0.5, 2.25]
+                }
+              },
+			  "fire2" : {
+                "properties" : {
+				  "offset" : [4.5, 0.5]
+                }
+              },
+			  "fire3" : {
+                "properties" : {
+				  "offset" : [3.5, -0.25]
+                }
+              }
+			}
+		  }
+		}
+	  }
+	}
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.85,
+    "baseDps" : 11.5
+  },
+
+  "altAbilityType" : "spinslash",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

@@ -1,0 +1,81 @@
+{
+  "type" : "akkimariscavenger",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "akkimariScavengerDeathTreasure" ],
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "friendlyNpcTypes" : ["crewmemberakkimariscavenger"]
+    },
+	
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Kill, kill, kill!",
+            "Dead! You finished!",
+            "<selfname> going to eat you!",
+            "You belong to <selfname> now!",
+            "<selfname> gonna eat!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0,
+	    [
+          {
+            "head" : [
+			  { "name" : "akkimari-scavengerhead" },
+			  { "name" : "akkimari-scavengerhead2" },
+			  { "name" : "akkimari-scavengerhead3" },
+			  { "name" : "akkimari-scavengerhead4" }
+			],
+            "chest" : [
+			  { "name" : "akkimari-scavengerchest" }
+			],
+            "legs" : [
+			  { "name" : "akkimari-scavengerlegs" }
+			],
+            "primary" : [
+			  "akkimari-tier1broadsword",
+			  "akkimari-tier2spear",
+			  "akkimari-tier3hammer"
+            ],
+            "sheathedprimary" : [
+			  "akkimari-nailgun",
+			  "akkimari-strafegun"
+            ]
+          },
+		  {
+            "head" : [
+			  { "name" : "akkimari-scavengerhead" },
+			  { "name" : "akkimari-scavengerhead2" },
+			  { "name" : "akkimari-scavengerhead3" },
+			  { "name" : "akkimari-scavengerhead4" }
+			],
+            "chest" : [
+			  { "name" : "akkimari-scavengerchest" }
+			],
+            "legs" : [
+			  { "name" : "akkimari-scavengerlegs" }
+			],
+            "primary" : [
+			  "akkimari-trackrifle",
+			  "akkimari-spikecannon"
+            ],
+            "sheathedprimary" : [
+			  "akkimari-tier1shortsword",
+			  "akkimari-tier2dagger",
+			  "akkimari-tier3axe"
+            ]
+          }
+        ]
+	  ]
+    ]
+  }
+}

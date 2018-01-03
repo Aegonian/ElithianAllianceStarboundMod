@@ -7,9 +7,10 @@
   "description" : "An Akkimari weapon firing target-seeking plasma bolts.",
   "shortdescription" : "Akris Tracker",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "gun",
   "category" : "Tracker",
-  "itemTags" : ["weapon","ranged","trackrifle","akkimari"],
+  "itemTags" : ["weapon","ranged","assaultrifle","akkimari"],
   "twoHanded" : true,
   
   "cursor" : "/cursors/thea-triplereticle-large.cursor",

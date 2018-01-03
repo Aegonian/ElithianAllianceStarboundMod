@@ -7,9 +7,10 @@
   "description" : "An Akkimari weapon firing target-seeking plasma bolts.",
   "shortdescription" : "Akris Strafer",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "gun",
   "category" : "Strafer",
-  "itemTags" : ["weapon","ranged","strafegun","akkimari"],
+  "itemTags" : ["weapon","ranged","pistol","akkimari"],
   "twoHanded" : false,
   
   "cursor" : "/cursors/thea-triplereticle-large.cursor",

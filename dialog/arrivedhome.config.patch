@@ -115,5 +115,35 @@
 				"Keep up the great service, and I'll keep paying my rent."
 			]
 		}
+	},
+	
+	
+	
+	//AKKIMARI DIALOGUE
+	{
+		"op": "add",
+		"path": "/beacon/akkimari",
+		"value": {
+			"default" : [
+				"Did'a you call'a me?",
+				"Can'a help'a?",
+				"Did'a you need'a me?",
+				"Yeeesss?",
+				"Talk'a you want'a?"
+			]
+		}
+	},
+	{
+		"op": "add",
+		"path": "/rent/akkimari",
+		"value": {
+			"default" : [
+				"You're an excellent landlord. Here, take this.",
+				"I think you'll like this!",
+				"The house is great! Please, take this.",
+				"I have something for you!",
+				"Keep up the great service, and I'll keep paying my rent."
+			]
+		}
 	}
 ]

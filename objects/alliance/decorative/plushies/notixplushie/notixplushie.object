@@ -1,0 +1,42 @@
+{
+  "objectName" : "notixplushie",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A toy Notix made of soft fabrics.",
+  "shortdescription" : "Notix Plushie",
+  "race" : "aegi",
+
+  "apexDescription" : "A stuffed toy. It's actually quite cute.",
+  "avianDescription" : "A toy for young ones. Not sure what it's supposed to be.",
+  "floranDescription" : "Floran findsss thiss one cute.",
+  "glitchDescription" : "Adoring. This plushie is cute.",
+  "humanDescription" : "A plushie of some kind of cute alien. I love it!",
+  "hylotlDescription" : "This toy is rather cute.",
+  "novakidDescription" : "Some kinda plushie.",
+
+  "aegiDescription" : "These Notix plushies are quite popular.",
+  "avikanDescription" : "An alien toy. It's very soft.",
+  "erixianDescription" : "I wonder what the Notix would think of these toys.",
+  "trinkDescription" : "A stuffed representation of the Notix. I am uncertain what to think of it.",
+  "hymidDescription" : "A plushie Notix. It is adorable.",
+  "notixDescription" : "Apparantly the Aegi think we Notix are cute.",
+  "jorgasianDescription" : "A toy Notix. How... amusing.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien toy.",
+
+  "inventoryIcon" : "notixplushieicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "notixplushie.png:<color>",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "type" : "crewmemberakkimariscavenger",
+  "baseType" : "crewmemberakkimari",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+
+	"crew" : {
+	  "role" : {
+        "type" : "akkimariscavenger",
+        "name" : "Scavenger",
+        "field" : "Collector",
+        "uniformColorIndex" : 4
+      },
+
+      "ranks" : [
+        "Petty <role>",
+        "Accomplished <role>",
+        "Master <role>",
+        "Akris <role>",
+        "Self-sustained <role>",
+        "Vicious <role>",
+        "Aggressive <role>",
+        "Scrap <field>",
+        "Junk <field>",
+        "Debris <field>",
+        "Wreckage Salvager"
+      ],
+	  
+	  "defaultUniform" : {
+		"head" : "akkimari-scavengerhead",
+		"chest" : "akkimari-scavengerchest",
+		"legs" : "akkimari-scavengerlegs"
+	  },
+	  
+	  "uniformSlots" : []
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "offer" : {
+          "akkimari" : {
+            "default" : [
+              "<selfname> no fight! <selfname> join you!",
+              "You strong! <selfname> follow you!",
+              "<selfname> stops fighting. Join you?",
+              "<selfname> not fight with you, <selfname> fight for you now!"
+            ]
+          }
+        },
+		"roleDescription" : {
+          "akkimari" : {
+            "default" : [
+              "<selfname> scavenges for long time. Strong now.",
+              "Fight for you now, <selfname> will.",
+              "<selfname> makes blades sharp for you. When fight?",
+              "Want to fight for you."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+            "head" : [
+			  { "name" : "akkimari-scavengerhead" }
+			],
+            "chest" : [
+			  { "name" : "akkimari-scavengerchest" }
+			],
+            "legs" : [
+			  { "name" : "akkimari-scavengerlegs" }
+			],
+            "primary" : [
+              "akkimari-nailgun",
+			  "akkimari-strafegun",
+			  "akkimari-trackrifle",
+			  "akkimari-spikecannon"
+            ]
+          }
+        ] ]
+    ]
+  }
+}

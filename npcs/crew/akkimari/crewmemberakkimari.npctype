@@ -1,0 +1,121 @@
+{
+  "type" : "crewmemberakkimari",
+  "baseType" : "crewmember",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+
+	"crew" : {
+	  "defaultUniform" : {
+		"chest" : "avikan-protectoratechest",
+		"legs" : "avikan-protectoratelegs"
+	  },
+	  
+	  "uniformSlots" : []
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "offer" : {
+          "akkimari" : {
+            "default" : [
+              "<selfname> follow you. Alright?",
+              "<selfname> want to join you.",
+              "Strong fighter! <selfname> want to follow you!",
+              "You strong! <selfname> follow you!"
+            ]
+          }
+        },
+		"roleDescription" : {
+          "akkimari" : {
+            "default" : [
+              "<selfname> scavenges for long time. Strong now.",
+              "Fight for you now, <selfname> will.",
+              "<selfname> makes blades sharp for you. When fight?",
+              "Want to fight for you."
+            ]
+          }
+        },
+		"respawned" : {
+          "akkimari" : {
+            "default" : [
+              "<selfname> feel strange now...",
+              "<selfname> lives again!",
+              "<selfname> can not die! Ha!",
+              "Death does not scare <selfname>!"
+            ]
+          }
+        },
+		"unfollow" : {
+          "akkimari" : {
+            "default" : [
+              "Why must <selfname> wait?",
+              "Not leave <selfname> long.",
+              "<selfname> will wait. Not too long.",
+              "<selfname> want to fight. Not wait."
+            ]
+          }
+        },
+		"follow" : {
+          "akkimari" : {
+            "default" : [
+              "<selfname> gonna fight!",
+              "Gonna kill!",
+              "<selfname> ready for fight!",
+              "Go! <selfname> follow."
+            ]
+          }
+        },
+		"cantreach" : {
+          "akkimari" : {
+            "default" : [
+              "<selfname> not go there. Too far.",
+              "No leave <selfname>!",
+              "<selfname> mad! No go there!",
+              "Why leave <selfname> behind?"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "avikan-protectoratechest", "data" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "avikan-protectoratelegs", "data" : { "colorIndex" : 4 } } ],
+            "primary" : [ 
+			  "avikan-assaultrifle",
+			  "avikan-assaultrifle2",
+			  "avikan-shotgun",
+			  "avikan-sniperrifle"
+			],
+            "sheathedprimary" : [
+			  "avikanvanguardbroadsword",
+			  "avikanvanguardspear"
+			]
+          },
+          {
+            "chest" : [ { "name" : "avikan-protectoratechest", "data" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "avikan-protectoratelegs", "data" : { "colorIndex" : 4 } } ],
+            "primary" : [ 
+			  "avikanvanguardbroadsword",
+			  "avikanvanguardspear"
+			],
+            "sheathedprimary" : [
+			  "avikan-assaultrifle",
+			  "avikan-assaultrifle2",
+			  "avikan-shotgun",
+			  "avikan-sniperrifle"
+			]
+          }
+        ] ]
+    ]
+  }
+}

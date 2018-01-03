@@ -7,6 +7,7 @@
   "description" : "A compact nailgun cobbled together by the Akkimari.",
   "shortdescription" : "Akris Nailgun",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "gun",
   "category" : "Nailgun",
   "itemTags" : ["weapon","ranged","machinepistol","akkimari"],

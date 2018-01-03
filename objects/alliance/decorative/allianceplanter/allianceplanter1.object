@@ -1,0 +1,26 @@
+{
+  "objectName" : "allianceplanter1",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 100,
+  "description" : "A long planter filled with native Elithian flora.",
+  "shortdescription" : "Alliance Planter",
+  "race" : "aegi",
+
+  "floranDescription" : "Floran is opposed to putting plantsss in boxess.",
+  "glitchDescription" : "Observation. A long planter full of plantlife.",
+  "drodenDescription" : "Detected alien plantlife. Analyzing biochemistry.",
+
+  "inventoryIcon" : "allianceplanter1icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "allianceplanter1.png:<color>",
+      "imagePosition" : [-8, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

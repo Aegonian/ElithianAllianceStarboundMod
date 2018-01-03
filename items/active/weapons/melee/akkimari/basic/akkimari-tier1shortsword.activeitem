@@ -1,0 +1,111 @@
+{
+  "itemName" : "akkimari-tier1shortsword",
+  "price" : 250,
+  "level" : 1,
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "A weapon built from scavenged parts.",
+  "shortdescription" : "Akris Sword",
+  "tooltipKind" : "sword",
+  "category" : "shortsword",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","melee","shortsword","akkimari"],
+
+  "inventoryIcon" : "akkimari-tier1shortsword.png",
+
+  "animation" : "/items/active/weapons/melee/shortsword/comboshortsword.animation",
+  "animationParts" : {
+    "handle": "",
+    "blade" : "akkimari-tier1shortsword.png"
+  },
+  "animationCustom" : {
+	"animatedParts" : {
+	  "parts" : {
+		"swoosh" : {
+		  "partStates" : {
+			"swoosh" : {
+			  "fire" : {
+                "properties" : {
+				  "offset" : [1.75, 0.5]
+                }
+              },
+			  "fire2" : {
+                "properties" : {
+				  "offset" : [0.25, -0.5]
+                }
+              }
+			}
+		  }
+		}
+	  }
+	}
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "shortswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.625,
+    "baseDps" : 7.5,
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : -90,
+        "weaponRotation" : 0,
+        "weaponOffset" : [0, 2.25],
+
+        "allowFlip" : true,
+        "allowRotate" : true
+      },
+      "windup1" : {
+        "duration" : 0.05,
+        "armRotation" : -15,
+        "weaponRotation" : -50,
+        "weaponOffset" : [0, 2.25],
+
+        "allowFlip" : true,
+        "allowRotate" : true
+      },
+      "fire1" : {
+        "duration" : 0.2,
+        "armRotation" : -135,
+        "weaponRotation" : 50,
+        "weaponOffset" : [0, 2.25],
+
+        "allowFlip" : true,
+        "allowRotate" : true
+      },
+      "wait1" : {
+        "duration" : 0.3,
+        "armRotation" : -135,
+        "weaponRotation" : 50,
+        "weaponOffset" : [0, 2.25],
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : false
+      },
+      "windup2" : {
+        "duration" : 0.1,
+        "armRotation" : -135,
+        "weaponRotation" : 50,
+        "weaponOffset" : [0, 2.25],
+        "twoHanded" : false,
+        "allowFlip" : true,
+        "allowRotate" : true
+      },
+      "fire2" : {
+        "duration" : 0.3,
+        "armRotation" : 0,
+        "weaponRotation" : -80,
+        "weaponOffset" : [0, 2.25],
+        "twoHanded" : false,
+        "allowFlip" : true,
+        "allowRotate" : true
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

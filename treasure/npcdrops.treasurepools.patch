@@ -331,5 +331,27 @@
       "allowDuplication" : false
     }]
    ]
+  },
+  
+  //=========================================================================================
+  //================================== AKKIMARI DROP POOLS ==================================
+  //=========================================================================================
+  {"op" : "add",
+   "path" : "/akkimariScavengerDeathTreasure",
+   "value" : [
+
+	[0, {
+      "pool" : [
+        {"weight" : 0.8, "pool" : "money"},
+		{"weight" : 0.1, "item" : "akkimariWeapons"},
+		{"weight" : 0.1, "pool" : "akkimariScrapMetal"}
+      ],
+      "poolRounds" : [
+        [0.80, 0],
+        [0.20, 1]
+      ],
+      "allowDuplication" : false
+    }]
+   ]
   }
 ]

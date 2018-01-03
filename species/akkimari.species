@@ -9,8 +9,8 @@
   
   "playerSpecies" : true,
   "humanoidConfig" : "/species/types/thea-akkimaroid.config",
-  "nameGen" : [ "/species/drodennamegen.config:names", "/species/drodennamegen.config:names" ],
-  "ouchNoises" : [ "/sfx/humanoid/droden_hurt_1.ogg", "/sfx/humanoid/droden_hurt_1.ogg" ],
+  "nameGen" : [ "/species/akkimarinamegen.config:names", "/species/akkimarinamegen.config:names" ],
+  "ouchNoises" : [ "/sfx/humanoid/akkimari_hurt_male1.ogg", "/sfx/humanoid/akkimari_hurt_male1.ogg" ],
   "charGenTextLabels" : [ "Skin Colour", "Ear style", "Chestwear", "Legwear", "N/A", "Fur colour", "Chestwear colour", "Legwear colour", "AKKIMARI", "Personality" ],
   "skull" : "/humanoid/akkimari/dead.png",
   "effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=ffbe00FF?replace=31a6ffFF=ff6a00FF",

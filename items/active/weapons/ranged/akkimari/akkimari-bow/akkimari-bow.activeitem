@@ -2,6 +2,7 @@
   "itemName" : "akkimari-bow",
   "price" : 500,
   "level" : 6,
+  "fixedLevel" : false,
   "inventoryIcon" : "akkimari-bowicon.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
@@ -10,7 +11,7 @@
   "description" : "An Akkimari bow.",
   "shortdescription" : "Makeshift Bow",
   "twoHanded" : true,
-  "itemTags" : ["weapon","ranged","bow","avikan"],
+  "itemTags" : ["weapon","ranged","bow","akkimari"],
 
   "animation" : "/items/active/weapons/bow/bow.animation",
   "animationParts" : {

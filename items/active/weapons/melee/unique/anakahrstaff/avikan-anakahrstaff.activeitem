@@ -48,7 +48,7 @@
 
   "primaryAbilityType" : "thea-bowstaffcombo",
   "primaryAbility" : {
-    "baseDps" : 10.5,
+    "baseDps" : 9.5,
 	
     "damageConfig" : {
       "damageSourceKind" : "linerifle",
