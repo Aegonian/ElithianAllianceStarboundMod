@@ -35,7 +35,7 @@ function TheaStaffVault:update(dt, fireMode, shiftHeld)
   end
   
   --Reset dash count when hitting the ground
-  if mcontroller.onGround() then
+  if mcontroller.onGround() or (self.restoreDashesOnSwim and mcontroller.liquidMovement()) then
 	self.dashesLeft = self.maxDashes
 	activeItem.setInstanceValue("dashCount", self.dashesLeft)
   end

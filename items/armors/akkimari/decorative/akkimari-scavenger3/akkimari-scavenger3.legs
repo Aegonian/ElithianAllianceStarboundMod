@@ -1,12 +1,12 @@
 {
-  "itemName" : "akkimari-scavengerlegs",
+  "itemName" : "akkimari-scavengerlegs3",
   "price" : 1000,
   "inventoryIcon" : "icons.png:pants",
   "maxStack" : 1,
   "rarity" : "Rare",
   "category" : "legwear",
-  "description" : "^green;Akkimari. ^white;Scrap metal hip plates worn by Akkimari scavengers.",
-  "shortdescription" : "Scavenger's Plates",
+  "description" : "^green;Akkimari. ^white;Scrap metal greaves and hip plates worn by Akkimari scavengers.",
+  "shortdescription" : "Scavenger's Legwear",
   "tooltipKind" : "armor",
 
   "maleFrames" : "pants.png",

@@ -1,0 +1,72 @@
+{
+  "objectName" : "alliancescanner",
+  "colonyTags" : ["wired"],
+  "printable" : false,
+  "rarity" : "Common",
+
+  "category" : "wire",
+  "price" : 15,
+  "description" : "A proximity scanner which will activate when it senses entities nearby.",
+  "shortdescription" : "Alliance Proximity Scanner",
+  "race" : "aegi",
+
+  "apexDescription" : "It's a proximity device. It'll sense when I get close to it.",
+  "avianDescription" : "A proximity device. It could trigger something if I'm near.",
+  "floranDescription" : "Sssscanning eye on the wall. It's looking at me!",
+  "glitchDescription" : "Suspicious. This proximity scanner might be aware of me.",
+  "humanDescription" : "A proximity sensor. It can tell when I'm near.",
+  "hylotlDescription" : "This scanning device can tell when I'm present.",
+  "novakidDescription" : "A proximity scanner. Is it watching me right now?",
+
+  "aegiDescription" : "A proximity sensor. It will activate when I come close.",
+  "avikanDescription" : "This proximity sensor will activate when I come close.",
+  "erixianDescription" : "A proximity sensor. What will happen when I get close?",
+  "trinkDescription" : "This proximity scanner scans for both organic and synthetic creatures.",
+  "hymidDescription" : "A proximity sensor. Should I come closer?",
+  "notixDescription" : "A proximity scanner.",
+  "jorgasianDescription" : "A proximity scanner.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected proximity scanner. Activation will occur when this unit is nearby.",
+
+  "inventoryIcon" : "alliancescannericon.png",
+  "orientations" : [
+    {
+      "image" : "alliancescanner.png:<frame>.off",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+
+  "scripts" : [
+    "/objects/wired/proximitysensor/proximitysensor.lua",
+    "/scripts/npcToyObject.lua"
+  ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/alliance/wired/alliancescanner/alliancescanner.animation",
+  "animationParts" : {
+    "switch" : "alliancescanner.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "outputNodes" : [ [0, 0] ],
+  
+  "interactive" : false,
+
+  "detectDuration" : 3,
+  "detectEntityTypes" : [ "creature" ],
+  "detectArea" : [ [0.5, 0.5], 3 ],
+
+  "npcToy": {
+    "ownerOnly" : true,
+    "influence" : [
+      "proximitysensor"
+    ],
+    "defaultReactions" : {},
+    "maxNpcs" : 1
+  }
+}

@@ -342,13 +342,13 @@
 
 	[0, {
       "pool" : [
-        {"weight" : 0.8, "pool" : "money"},
-		{"weight" : 0.1, "item" : "akkimariWeapons"},
-		{"weight" : 0.1, "pool" : "akkimariScrapMetal"}
+        {"weight" : 0.9, "pool" : "money"},
+		{"weight" : 0.05, "pool" : "akkimariWeapons"},
+		{"weight" : 0.05, "pool" : "akkimariScrapMetal"}
       ],
       "poolRounds" : [
-        [0.80, 0],
-        [0.20, 1]
+        [0.20, 0],
+        [0.80, 1]
       ],
       "allowDuplication" : false
     }]

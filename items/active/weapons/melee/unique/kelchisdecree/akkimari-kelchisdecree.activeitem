@@ -115,7 +115,8 @@
 		
 		"yVelocity" : 30,
 		"onlyInAir" : true,
-		"maxAimAngle" : 0.0
+		"notInLiquid" : true,
+		"maxAimAngle" : 0.0 //Aiming downwards is less than 0, aiming up is more than 0
       },
       "wait1" : {
         "duration" : 0.15,
@@ -242,6 +243,7 @@
 	"dashVelocity" : 40,
 	"retainVelocityFactor" : 0.6,
 	"restoreDashesOnHit" : true,
+	"restoreDashesOnSwim" : true,
 
     "stances" : {
 	  "windup" : {

@@ -1,16 +1,25 @@
 {
-  "itemName" : "akkimari-scavengerlegs",
+  "itemName" : "akkimari-scavengerchest2",
   "price" : 1000,
-  "inventoryIcon" : "icons.png:pants",
+  "inventoryIcon" : "icons.png:chest",
   "maxStack" : 1,
   "rarity" : "Rare",
-  "category" : "legwear",
-  "description" : "^green;Akkimari. ^white;Scrap metal hip plates worn by Akkimari scavengers.",
-  "shortdescription" : "Scavenger's Plates",
+  "category" : "chestwear",
+  "description" : "^green;Akkimari. ^white;A scrap metal chest plate worn by Akkimari scavengers.",
+  "shortdescription" : "Scavenger's Chestplate",
   "tooltipKind" : "armor",
 
-  "maleFrames" : "pants.png",
-  "femaleFrames" : "pants.png",
+  "maleFrames" : {
+    "body" : "chestm.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "femaleFrames" : {
+    "body" : "chestf.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
 
   "colorOptions" : [
   

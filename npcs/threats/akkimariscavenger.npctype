@@ -36,10 +36,13 @@
 			  { "name" : "akkimari-scavengerhead4" }
 			],
             "chest" : [
-			  { "name" : "akkimari-scavengerchest" }
+			  { "name" : "akkimari-scavengerchest" },
+			  { "name" : "akkimari-scavengerchest2" }
 			],
             "legs" : [
-			  { "name" : "akkimari-scavengerlegs" }
+			  { "name" : "akkimari-scavengerlegs" },
+			  { "name" : "akkimari-scavengerlegs2" },
+			  { "name" : "akkimari-scavengerlegs3" }
 			],
             "primary" : [
 			  "akkimari-tier1broadsword",
@@ -59,10 +62,13 @@
 			  { "name" : "akkimari-scavengerhead4" }
 			],
             "chest" : [
-			  { "name" : "akkimari-scavengerchest" }
+			  { "name" : "akkimari-scavengerchest" },
+			  { "name" : "akkimari-scavengerchest2" }
 			],
             "legs" : [
-			  { "name" : "akkimari-scavengerlegs" }
+			  { "name" : "akkimari-scavengerlegs" },
+			  { "name" : "akkimari-scavengerlegs2" },
+			  { "name" : "akkimari-scavengerlegs3" }
 			],
             "primary" : [
 			  "akkimari-trackrifle",

@@ -6,9 +6,9 @@
 
   "category" : "wire",
   "price" : 15,
-  "description" : "Perfect for all your automated door needs!",
+  "description" : "A proximity scanner which will activate when it senses entities nearby.",
   "shortdescription" : "Avikan Proximity Scanner",
-  "race" : "generic",
+  "race" : "avikan",
 
   "apexDescription" : "It's a proximity device. It'll sense when I get close to it.",
   "avianDescription" : "A proximity device. It could trigger something if I'm near.",
@@ -47,7 +47,7 @@
   ],
   "scriptDelta" : 5,
 
-  "animation" : "/objects/avikan/outpost/avikanscanner/avikanscanner.animation",
+  "animation" : "/objects/avikan/wired/avikanscanner/avikanscanner.animation",
   "animationParts" : {
     "switch" : "avikanscanner.png"
   },

@@ -65,5 +65,22 @@
 		"/sfx/humanoid/akkimari_chatter_male3.ogg"
 	  ]
 	}
+  },
+  
+  //THELEAN
+  { "op" : "add",
+	"path" : "/scriptConfig/chatSounds/thelean",
+	"value" : {
+	  "male" : [
+		"/sfx/humanoid/akkimari_chatter_male1.ogg",
+		"/sfx/humanoid/akkimari_chatter_male2.ogg",
+		"/sfx/humanoid/akkimari_chatter_male3.ogg"
+	  ],
+	  "female" : [
+		"/sfx/humanoid/akkimari_chatter_male1.ogg",
+		"/sfx/humanoid/akkimari_chatter_male2.ogg",
+		"/sfx/humanoid/akkimari_chatter_male3.ogg"
+	  ]
+	}
   }
 ]

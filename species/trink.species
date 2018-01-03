@@ -21,6 +21,7 @@
 
 //NEW in v2.3.0
 	  { "item" : "trinkpanel" },
+	  { "item" : "trinkscanner" },
 
 //NEW in v2.2.1
 	  { "item" : "trinkslopedpanel" },

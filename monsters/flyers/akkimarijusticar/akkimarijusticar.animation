@@ -20,7 +20,10 @@
             "frames" : 4,
             "cycle" : 0.4,
             "mode" : "transition",
-            "transition" : "fly"
+            "transition" : "fly",
+            "properties" : {
+              "immediateSound" : "/sfx/npc/monsters/akkimarijusticar_alert2.ogg"
+            }
           },
 		//ACID BOMB ATTACK
           "bombwindup" : {
