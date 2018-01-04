@@ -1,0 +1,46 @@
+{
+  "frameGrid" : {
+    "size" : [96, 8],
+    "dimensions" : [1, 16],
+    "names" : [
+      [ "idle1" ],
+      [ "idle2" ],
+      [ "idle3" ],
+      [ "idle4" ],
+      [ "idle5" ],
+      [ "idle6" ],
+      [ "idle7" ],
+      [ "idle8" ],
+      [ "detected1" ],
+      [ "detected2" ],
+      [ "detected3" ],
+      [ "detected4" ],
+      [ "detected5" ],
+      [ "detected6" ],
+      [ "detected7" ],
+      [ "detected8" ]
+    ]
+  },
+
+  "aliases" : {
+    "default.off" : "idle1",
+    "default.on" : "detected1",
+    "off.1" : "idle1",
+    "off.2" : "idle2",
+    "off.3" : "idle3",
+    "off.4" : "idle4",
+    "off.5" : "idle5",
+    "off.6" : "idle6",
+    "off.7" : "idle7",
+    "off.8" : "idle8",
+    "on.1" : "detected1",
+    "on.2" : "detected2",
+    "on.3" : "detected3",
+    "on.4" : "detected4",
+    "on.5" : "detected5",
+    "on.6" : "detected6",
+    "on.7" : "detected7",
+    "on.8" : "detected8"
+  }
+}
+  

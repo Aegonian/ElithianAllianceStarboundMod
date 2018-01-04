@@ -1,0 +1,77 @@
+{
+  "objectName" : "alliancemedscanner",
+  "colonyTags" : ["alliance","medical"],
+  "rarity" : "Common",
+  "category" : "furniture",
+  "printable" : false,
+  "price" : 200,
+  "description" : "A bed used to analyze a patient's medical condition.",
+  "shortdescription" : "Alliance Medical Scanner",
+  "race" : "aegi",
+
+  "apexDescription" : "This medical bed looks like a place I could rest a minute.",
+  "avianDescription" : "Laying on this bed surrounded by these scanners would make me quite uncomfortable.",
+  "floranDescription" : "Fancy lightsss all around this metal bed.",
+  "glitchDescription" : "Curious. I wonder if this medical bed can account for Glitch anatomy.",
+  "humanDescription" : "Looks like some sort of medical scanner bed, but I guess it's still a place to lay down.",
+  "hylotlDescription" : "This medical bed was likely designed to assist doctors or researchers.",
+  "novakidDescription" : "Some fancy lookin' bed surrounded by bright lights.",
+
+  "aegiDescription" : "This medical scanner can detect all sorts of medical issues in a patient.",
+  "avikanDescription" : "Some type of scanner surrounding a bed. It's likely for medical examinations.",
+  "erixianDescription" : "A medical scanner.",
+  "trinkDescription" : "A medical scanner. It is of little use to robotic lifeforms.",
+  "hymidDescription" : "This medical scanner can detect bone fractures, internal bleeding and much more.",
+  "notixDescription" : "I can hear this medical scanner humming. It's almost painful.",
+  "jorgasianDescription" : "A highly advanced medical scanner.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien scanner. Electric field interference detected.",
+  
+  "lightColor" : [64, 100, 128],
+
+  "inventoryIcon" : "alliancemedscannericon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "alliancemedscanner.png:<color>", "fullbright" : true }, { "image" : "alliancemedscannerlit.png:<color>" } ],
+      "flipImages" : true,
+      "imagePosition" : [-24, 0],
+      
+      "lightPosition" : [0, 0],
+      
+      "sitPosition" : [-4, 11],
+        
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "left",
+      "collision" : "platform",
+      "collisionSpaces" : [ [-2,3], [-1,3], [0,3], [1,3], [2,3] ]
+    },
+    {
+      "imageLayers" : [ { "image" : "alliancemedscanner.png:<color>", "fullbright" : true }, { "image" : "alliancemedscannerlit.png:<color>"} ],
+      "imagePosition" : [-24, 0],
+      
+      "lightPosition" : [0, 0],
+      
+      "sitPosition" : [-12, 11],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "right",
+      "collision" : "platform",
+      "collisionSpaces" : [ [-2,3], [-1,3], [0,3], [1,3], [2,3] ]
+    }
+  ],
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : true,
+  "sitOrientation" : "lay",
+  "sitAngle" : 90,
+  "sitCoverImage" : "/objects/alliance/furniture/alliancemedscanner/alliancemedscannercover.png",
+  "sitEmote" : "sleep",
+  "sitStatusEffects" : [
+    "bed1"
+  ],
+  "sitEffectEmitters" : [ "sleepbubbles" ]
+}

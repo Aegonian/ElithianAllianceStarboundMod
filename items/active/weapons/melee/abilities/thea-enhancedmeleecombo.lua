@@ -178,6 +178,11 @@ function TheaEnhancedMeleeCombo:fire()
 	  if stance.forceWalking then
 		mcontroller.controlModifiers({runningSuppressed=true})
 	  end
+	  
+	  --Optionally freeze the player in place if so configured
+	  if stance.freezePlayer then
+		mcontroller.setVelocity({0,0})
+	  end
 	end)
 	animator.setAnimationState("swoosh", "idle")
   --If this step is a regular attack, simply set the damage area for the duration of the step
@@ -185,6 +190,11 @@ function TheaEnhancedMeleeCombo:fire()
 	util.wait(stance.duration, function()
 	  local damageArea = partDamageArea("swoosh")
 	  self.weapon:setDamage(self.stepDamageConfig[self.comboStep], damageArea)
+	  
+	  --Optionally freeze the player in place if so configured
+	  if stance.freezePlayer then
+		mcontroller.setVelocity({0,0})
+	  end
 	end)
   end
   

@@ -36,6 +36,7 @@
       "image" : "alliancewalllightleft.png:<frame>",
       "imagePosition" : [0, 0],
       "animationCycle" : 0.5,
+      "direction" : "right",
 
       "animationParts" : {
         "light" : "alliancewalllightleft.png"
@@ -49,6 +50,7 @@
       "image" : "alliancewalllightright.png:<frame>",
       "imagePosition" : [0, 0],
       "animationCycle" : 0.5,
+      "direction" : "right",
 
       "animationParts" : {
         "light" : "alliancewalllightright.png"

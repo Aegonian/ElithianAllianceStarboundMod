@@ -1,0 +1,124 @@
+{
+  "objectName" : "thea-diagonaldockingfield",
+  "objectType" : "physics",
+  "colonyTags" : ["station"],
+  "printable" : false,
+  "rarity" : "Common",
+
+  "category" : "wire",
+  "price" : 0,
+  "description" : "This energy field can contain both atmosphere and artificial gravity.",
+  "shortdescription" : "Docking Field",
+  "race" : "generic",
+
+  "apexDescription" : "A space docking field, this energy contains the atmosphere inside.",
+  "avianDescription" : "The energy in this docking field contains air and gravity inside.",
+  "floranDescription" : "This crackling energy containsss air inside.",
+  "glitchDescription" : "Informed. This field is a special energy type meant to contain atmosphere and artificial gravity.",
+  "humanDescription" : "This type of energy field can contain atmosphere and gravity inside space structures.",
+  "hylotlDescription" : "Docking fields like this are common in space, they make quite effective airlocks.",
+  "novakidDescription" : "This here energy field keeps air and gravity inside and space outside.",
+
+  "aegiDescription" : "A docking field. It acts as a barrier between the void of space, and the inside of a ship.",
+  "avikanDescription" : "This energy field will keep the air inside, while still allowing ships to pass through.",
+  "erixianDescription" : "An energy field that seperates space from a ship's atmosphere.",
+  "trinkDescription" : "A highly efficient airlock solution. It keeps air inside, whole solid objects can still pass through.",
+  "hymidDescription" : "An energy field for seperating a ship's atmosphere from the void of space.",
+  "notixDescription" : "This energy field hums pleasently.",
+  "jorgasianDescription" : "A docking field. It will keep the air inside the ship, but still allow me to pass through.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Docking field detected. Creates a barrier between space and a ship's atmosphere.",
+
+  "lightColor" : [31, 186, 0],
+  "lightPosition" : [0, 6],
+
+  "inventoryIcon" : "thea-diagonaldockingfieldicon.png",
+  "orientations" : [
+    {
+      "image" : "thea-diagonaldockingfield.png:<color>.off",
+      "imagePosition" : [-92, 0],
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "animationParts" : {
+        "bg" : "thea-diagonaldockingfield.png",
+        "fg" : "thea-diagonaldockingfieldlit.png"
+      },
+      "animationPosition" : [-92, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top", "bottom" ],
+
+      "enableCollision" : "barrierLeft",
+	  
+	  "entityCheckLineStart" : [0, 0.5],
+	  "entityCheckLineEnd" : [-11, 11.5]
+    },
+    {
+      "image" : "thea-diagonaldockingfield.png:<color>.off",
+      "imagePosition" : [-4, 0],
+
+      "direction" : "right",
+
+      "animationParts" : {
+        "bg" : "thea-diagonaldockingfield.png",
+        "fg" : "thea-diagonaldockingfieldlit.png"
+      },
+      "animationPosition" : [-4, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top", "bottom" ],
+
+      "enableCollision" : "barrierRight",
+	  
+	  "entityCheckLineStart" : [0, 0.5],
+	  "entityCheckLineEnd" : [11, 11.5]
+    }
+  ],
+
+  "physicsCollisions" : {
+    "barrierRight" : {
+      "collision" : [
+        [-0.5, 0.5],
+        [-0.5, 0],
+        [0, 0],
+        [11.5, 11.5],
+        [11.5, 12],
+        [11, 12]
+      ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["monster", "npc"],
+      "enabled" : false
+    },
+    "barrierLeft" : {
+      "collision" : [
+        [0.5, 0.5],
+        [0.5, 0],
+        [0, 0],
+        [-11.5, 11.5],
+        [-11.5, 12],
+        [-11, 12]
+      ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["monster", "npc"],
+      "enabled" : false
+    }
+  },
+
+  "scripts" : [
+    "thea-diagonaldockingfield.lua"
+  ],
+  "scriptDelta" : 5,
+
+  "animation" : "dockingfield.animation",
+
+  "outputNodes" : [ [0, 0] ],
+
+  "interactive" : false,
+
+  "detectDuration" : 0.1,
+  "detectEntityTypes" : [ "creature", "vehicle" ]
+}

@@ -85,8 +85,8 @@
       "collision" : [
         [0.75, 0],
         [0.25, 0],
-        [0.75, 8],
-        [0.25, 8]
+        [0.25, 8],
+        [0.75, 8]
       ],
       "collisionKind" : "slippery",
       "categoryWhitelist" : ["player", "monster", "npc", "vehicle", "itemdrop"],
