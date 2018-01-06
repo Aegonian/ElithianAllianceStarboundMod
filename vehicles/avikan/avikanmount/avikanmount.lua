@@ -310,6 +310,10 @@ function move(driverThisFrame)
     self.isSwimming = false
   end
   
+  if mcontroller.zeroG() then
+	self.isSwimming = true
+  end
+  
   if self.isSwimming == true and self.hasBeenCollected == false then
     animator.setAnimationState("body", "swim")
 	local debugPosition8 = vec2.add(mcontroller.position(), {0,-5.25})

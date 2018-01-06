@@ -1,0 +1,11 @@
+{
+  "itemName" : "avikanslopedpanel2",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "avikanslopedpanel2.png",
+  "shortdescription" : "Avikan Hull Panel Variant",
+  "description" : "Durable metal plating, often used in the construction of spacestations and spaceships.",
+
+  "materialId" : 30084
+}

@@ -12,6 +12,7 @@ function TheaStaffVault:init()
   
   self.dashesLeft = config.getParameter("dashCount", self.maxDashes)
   self.airTime = 0
+  self.spaceTime = 0
   
   self.queryDamageSince = 0
   
@@ -31,13 +32,31 @@ function TheaStaffVault:update(dt, fireMode, shiftHeld)
   if mcontroller.onGround() then
 	self.airTime = 0
   else
-	self.airTime = math.min(1.0, self.airTime + self.dt)
+	self.airTime = math.min(5.0, self.airTime + self.dt)
   end
   
-  --Reset dash count when hitting the ground
+  --Reset dash count when hitting the ground or a liquid
   if mcontroller.onGround() or (self.restoreDashesOnSwim and mcontroller.liquidMovement()) then
 	self.dashesLeft = self.maxDashes
 	activeItem.setInstanceValue("dashCount", self.dashesLeft)
+  end
+  
+  --Reset dash count if we spent enough time in zeroG
+  if mcontroller.zeroG() then
+	self.spaceTime = math.min(5.0, self.spaceTime + self.dt)
+  else
+	self.spaceTime = 0
+  end
+  if self.spaceTime > self.minSpaceTime and self.restoreDashesInSpace then
+	self.dashesLeft = self.maxDashes
+	activeItem.setInstanceValue("dashCount", self.dashesLeft)
+  end
+  
+  --Set animation state of the dash counter
+  if self.dashesLeft == 0 then
+	animator.setAnimationState("dashCounter", "inactive")
+  else
+	animator.setAnimationState("dashCounter", "active")
   end
   
   --If grounded, go to vault windup

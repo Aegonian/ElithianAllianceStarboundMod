@@ -17,7 +17,7 @@
 	//Colours go from LIGHT to DARK - LIGHT/MEDIUM/DARK
 	
 	//DEFAULT - NO DYE
-	/* 0- BROWN LEATHER */
+	/* 0- METAL GREY */
     { "e0975c" : "616161", "a85636" : "4C4C4C", "6f2919" : "333333" },
 	
 	//DYE COLOURS

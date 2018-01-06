@@ -11,7 +11,7 @@
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","scathe","akkimari","theaUnique"],
 
-  "inventoryIcon" : "akkimari-kelchisdecree.png",
+  "inventoryIcon" : "akkimari-kelchisdecreeicon.png",
   
   //CONFIGURATION FOR WEAPONS COLLECTION
   "collectablesOnPickup" : { "thea_weapons" : "akkimari-kelchisdecree" },
@@ -116,6 +116,7 @@
 		"yVelocity" : 30,
 		"onlyInAir" : true,
 		"notInLiquid" : true,
+		"notInSpace" : true,
 		"maxAimAngle" : 0.0 //Aiming downwards is less than 0, aiming up is more than 0
       },
       "wait1" : {
@@ -244,6 +245,8 @@
 	"retainVelocityFactor" : 0.6,
 	"restoreDashesOnHit" : true,
 	"restoreDashesOnSwim" : true,
+	"restoreDashesInSpace" : true,
+	"minSpaceTime" : 1.0, //Time spent in zeroG before dashes are restored
 
     "stances" : {
 	  "windup" : {

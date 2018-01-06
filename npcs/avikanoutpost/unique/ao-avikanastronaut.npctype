@@ -46,13 +46,13 @@
               { "name" : "avikan-astronauthead", "parameters" : { "colorIndex" : 0 } }
             ],
             "chest" : [
-              { "name" : "avikan-vanguardchest", "parameters" : { "colorIndex" : 0 } }
+              { "name" : "avikan-astronautchest", "parameters" : { "colorIndex" : 0 } }
             ],
             "legs" : [
-              { "name" : "avikan-seekerlegs", "parameters" : { "colorIndex" : 0 } }
+              { "name" : "avikan-astronautlegs", "parameters" : { "colorIndex" : 0 } }
             ],
             "back" : [
-              { "name" : "avikanmodernpack", "parameters" : { "colorIndex" : 0 } }
+              { "name" : "avikan-astronautback", "parameters" : { "colorIndex" : 0 } }
             ]
           }
         ] ]

@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":224,
+ "tilecount":227,
  "tileheight":256,
  "tileproperties":
     {
@@ -1127,6 +1127,30 @@
          "imagePositionX":"0",
          "imagePositionY":"0",
          "object":"avikanescapehatch",
+         "tilesetDirection":"right"
+        },
+     "224":
+        {
+         "\/\/shortdescription":"Nomada Shipping Container",
+         "imagePositionX":"-56",
+         "imagePositionY":"0",
+         "object":"avikanshippingcontainer",
+         "tilesetDirection":"right"
+        },
+     "225":
+        {
+         "\/\/shortdescription":"Avikan Ship Turret",
+         "imagePositionX":"-32",
+         "imagePositionY":"0",
+         "object":"avikanshipturret",
+         "tilesetDirection":"right"
+        },
+     "226":
+        {
+         "\/\/shortdescription":"Avikan Ship Turret",
+         "imagePositionX":"-32",
+         "imagePositionY":"-8",
+         "object":"avikanshipturret",
          "tilesetDirection":"right"
         },
      "23":
@@ -2363,6 +2387,18 @@
      "223":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/avikan\/avikanescapehatch.png"
+        },
+     "224":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/avikan\/avikanshippingcontainer.png"
+        },
+     "225":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/avikan\/avikanshipturret.png"
+        },
+     "226":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/avikan\/avikanshipturretflipped.png"
         },
      "23":
         {

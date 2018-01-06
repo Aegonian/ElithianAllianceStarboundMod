@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":49,
+ "tilecount":51,
  "tileheight":8,
  "tileproperties":
     {
@@ -305,12 +305,22 @@
          "\/\/shortdescription":"Sloped Avikan Glass",
          "material":"avikanslopedglass"
         },
+     "49":
+        {
+         "\/\/shortdescription":"Avikan Sloped Panel Variant",
+         "material":"avikanslopedpanel2"
+        },
      "5":
         {
          "\/\/description":"A THEA material",
          "\/\/name":"avikanfabrictentpole",
          "\/\/shortdescription":"Avikan Fabric Tent Pole",
          "material":"avikanfabrictentpole"
+        },
+     "50":
+        {
+         "\/\/shortdescription":"Avikan Ship Panel",
+         "material":"avikanshippanel"
         },
      "6":
         {
@@ -519,9 +529,17 @@
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/avikanslopedglass.png"
         },
+     "49":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/avikanslopedpanel2.png"
+        },
      "5":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/avikanfabrictentpole.png"
+        },
+     "50":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/avikanshippanel.png"
         },
      "6":
         {

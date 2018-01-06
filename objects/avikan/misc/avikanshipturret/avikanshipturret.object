@@ -1,0 +1,51 @@
+{
+  "objectName" : "avikanshipturret",
+  "colonyTags" : ["avikan","combat"],
+  "rarity" : "Uncommon",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 2000,
+  "description" : "A turret usually found on Avikan ships.",
+  "shortdescription" : "Avikan Ship Turret",
+  "race" : "avikan",
+
+  "apexDescription" : "A turret. It looks powerful.",
+  "avianDescription" : "A small turret, likely used on spaceships.",
+  "floranDescription" : "Floran iss not scared of turretsss.",
+  "glitchDescription" : "Observation. A turret.",
+  "humanDescription" : "A turret. Better not stand in front of it...",
+  "hylotlDescription" : "A turret. It is sad that all life appears to be moved towards war.",
+  "novakidDescription" : "Some kinda turret.",
+
+  "aegiDescription" : "An Avikan ship's turret. It packs quite a punch.",
+  "avikanDescription" : "This turret should keep the ship safe.",
+  "erixianDescription" : "A powerful Avikan ship turret.",
+  "trinkDescription" : "Not very efficient, but this Avikan turret is quite effective.",
+  "hymidDescription" : "The turret of an Avikan ship.",
+  "notixDescription" : "It's a turret of Avikan design.",
+  "jorgasianDescription" : "A powerful ship turret, used by Avikan forces.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected Vanguard-issue ship turret.",
+  
+  "leebrenDescription" : "> A typical ship defense. High Command has been informed. <",
+
+  "inventoryIcon" : "avikanshipturreticon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanshipturret.png:<color>",
+      "imagePosition" : [-32, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "dualImage" : "avikanshipturretflipped.png:<color>",
+      "imagePosition" : [-32, -8],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ]
+}

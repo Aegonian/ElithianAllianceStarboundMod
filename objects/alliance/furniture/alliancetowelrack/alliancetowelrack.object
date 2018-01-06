@@ -9,25 +9,25 @@
   "category" : "furniture",
   "price" : 30,
 
-  "apexDescription" : "A basic table.",
-  "avianDescription" : "A simple metal table.",
-  "floranDescription" : "Tablesss.",
-  "glitchDescription" : "Unimpressed. A basic table.",
-  "humanDescription" : "A clean metal table.",
-  "hylotlDescription" : "This table was recently cleaned.",
-  "novakidDescription" : "Just a table.",
+  "apexDescription" : "A rack with a clean towel.",
+  "avianDescription" : "CLean cloth to dry yourself with.",
+  "floranDescription" : "Floran usesss cloth to dry.",
+  "glitchDescription" : "Observation. This towel is quite clean.",
+  "humanDescription" : "A clean white towel. Useful.",
+  "hylotlDescription" : "This towel was recently washed.",
+  "novakidDescription" : "Gotta be careful not to burn this towel.",
 
-  "aegiDescription" : "A clean table.",
-  "avikanDescription" : "A lightweight table.",
-  "erixianDescription" : "A simplistic table.",
-  "trinkDescription" : "A minimalist table.",
-  "hymidDescription" : "A table.",
-  "notixDescription" : "Simply a table.",
-  "jorgasianDescription" : "A table.",
+  "aegiDescription" : "A clean towel to dry yourself with after taking a shower.",
+  "avikanDescription" : "Some sort of cleaning cloth.",
+  "erixianDescription" : "A dry, clean towel.",
+  "trinkDescription" : "A towel rack.",
+  "hymidDescription" : "I prefer staying wet. It's better for my skin.",
+  "notixDescription" : "A towel rack. One can hang their towels here.",
+  "jorgasianDescription" : "A towel rack. Nothing special about it.",
   "centensDescription" : "TODO.",
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
-  "drodenDescription" : "Detected table.",
+  "drodenDescription" : "Detected cloth hanging rack.",
 
   "inventoryIcon" : "alliancetowelrackicon.png",
   "orientations" : [
@@ -41,5 +41,11 @@
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]
     }
-  ]
+  ],
+  "animation" : "alliancetowelrack.animation",
+
+  "scripts" : [
+    "/objects/alliance/furniture/alliancetowelrack/alliancetowelrack.lua"
+  ],
+  "scriptDelta" : 5
 }

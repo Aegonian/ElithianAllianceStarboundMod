@@ -138,8 +138,8 @@ function TheaEnhancedMeleeCombo:fire()
   
   --If this move has a velocity modifier, add it to our movement controller
   if stance.xVelocity then
-	if stance.onlyInAir and self.airTime > 0.15 and not (stance.notInLiquid and mcontroller.liquidMovement()) or
-	not stance.onlyInAir and self.airTime < 0.1 and not (stance.notInLiquid and mcontroller.liquidMovement()) then
+	if stance.onlyInAir and self.airTime > 0.15 and not (stance.notInLiquid and mcontroller.liquidMovement()) and not (stance.notInSpace and mcontroller.zeroG()) or
+	not stance.onlyInAir and self.airTime < 0.1 and not (stance.notInLiquid and mcontroller.liquidMovement()) and not (stance.notInSpace and mcontroller.zeroG()) then
 	  if not stance.maxAimAngle or self.weapon.aimAngle <= stance.maxAimAngle then
 		if stance.addVelocity then
 		  mcontroller.setXVelocity(vec2.add(stance.xVelocity, mcontroller.xVelocity()))
@@ -150,8 +150,8 @@ function TheaEnhancedMeleeCombo:fire()
 	end
   end
   if stance.yVelocity then
-	if stance.onlyInAir and self.airTime > 0.15 and not (stance.notInLiquid and mcontroller.liquidMovement()) or
-	not stance.onlyInAir and self.airTime < 0.1 and not (stance.notInLiquid and mcontroller.liquidMovement()) then
+	if stance.onlyInAir and self.airTime > 0.15 and not (stance.notInLiquid and mcontroller.liquidMovement()) and not (stance.notInSpace and mcontroller.zeroG()) or
+	not stance.onlyInAir and self.airTime < 0.1 and not (stance.notInLiquid and mcontroller.liquidMovement()) and not (stance.notInSpace and mcontroller.zeroG()) then
 	  if not stance.maxAimAngle or self.weapon.aimAngle <= stance.maxAimAngle then
 		if stance.addVelocity then
 		  mcontroller.setYVelocity(vec2.add(stance.yVelocity, mcontroller.yVelocity()))

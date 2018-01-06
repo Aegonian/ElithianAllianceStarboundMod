@@ -1,5 +1,19 @@
 {
 	//AVIKAN SETTLEMENTS
+  "avikanwatercontainer" : [
+    [1, {
+      "poolRounds" : [
+        [0.4, 1],
+        [0.3, 2],
+        [0.2, 3],
+        [0.1, 4]
+      ],
+	  "pool" : [
+        {"weight" : 1.0, "item" : ["liquidwater", 10] }
+      ]
+    } ]
+  ],
+  
   "avikanvillagebag" : [
     [1, {
       "poolRounds" : [
@@ -100,6 +114,23 @@
 		{"weight" : 0.10, "pool" : "avikancodex" },
 		{"weight" : 0.15, "pool" : "avikanclothing" },
 		{"weight" : 0.10, "item" : "avikancache" }
+      ]
+    } ]
+  ],
+  
+  "avikanshippingcontainer" : [
+    [1, {
+      "poolRounds" : [
+        [0.3, 6],
+        [0.4, 8],
+        [0.2, 10],
+        [0.1, 12]
+      ],
+      "pool" : [
+		{"weight" : 0.9, "pool" : "avikancraftingmaterials" },
+		{"weight" : 0.03, "pool" : "avikancodex" },
+		{"weight" : 0.03, "pool" : "avikanclothing" },
+		{"weight" : 0.03, "item" : "avikancache" }
       ]
     } ]
   ],

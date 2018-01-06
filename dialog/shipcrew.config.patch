@@ -1,0 +1,87 @@
+[
+  //AVIKAN DIALOGUE
+  {
+	"op": "add",
+	"path": "/converse/avikan",
+	"value": {
+	  "default" : [
+		"What are you doing on our ship? I hope you come in peace.",
+		"What brings you to our ship, stranger?",
+		"Us Avikan have lived on board spaceships for years now. It's not too different from nomadic life in the desert.",
+		"Keep off the ship's systems, all right? We don't want any complications.",
+		"Did you just fly a mech into our ship? Where can I get one?",
+		"How the... What are you doing on our ship?",
+		"You can stay for a while, but keep your hands to yourself.",
+		"A visitor on our ship? I suppose you can stay for a while."
+	  ],
+	  "avikan" : [
+		"It's an honour to have you visit our ship, Captain.",
+		"Welcome to our ship, Captain. Have you come for an inspection?",
+		"I hope the Thell haven't given you too much trouble.",
+		"Welcome, Captain. What do you think of our humble ship?",
+		"Captain.",
+		"We saw your ship approaching in the distance. She's a beaty.",
+		"Can I help you, Captain?",
+		"Stay a while, Captain! It's been some time since we had our last visitor!"
+	  ],
+	  "glitch" : [
+		"What are you doing on our ship, machine?",
+		"Where did this machine come from? Can someone throw it out the airlock?",
+		"Don't touch anything, machine.",
+		"Cause trouble on our ship, and I'll dismantle you myself.",
+		"Don't get any strange ideas here, machine.",
+		"Don't stay long.",
+		"Do what you came here to do, then be on your way. We don't want machines here.",
+		"The rest of the crew may not like your presence here. I'd recommend you don't stay too long."
+	  ],
+	  "trink" : [
+		"What are you doing on our ship, machine?",
+		"Where did this machine come from? Can someone throw it out the airlock?",
+		"Don't touch anything, machine.",
+		"Cause trouble on our ship, and I'll dismantle you myself.",
+		"Don't get any strange ideas here, machine.",
+		"Don't stay long.",
+		"Do what you came here to do, then be on your way. We don't want machines here.",
+		"The rest of the crew may not like your presence here. I'd recommend you don't stay too long."
+	  ],
+	  "droden" : [
+		"You're a free Droden? That's remarkable.",
+		"If the Council of Elders saw fit to grant you a civilian status, you're welcome here.",
+		"You aren't welcome here, Droden.",
+		"Get back to scrubbing the floor, Droden.",
+		"A civilian Droden? Now that's a rare sight.",
+		"I can hardly believe you're a captain.",
+		"Don't mind the others. You're welcome here.",
+		"I hope a Thell comes for you one day."
+	  ]
+	}
+  },
+  
+  //DRODEN DIALOGUE
+  {
+	"op": "add",
+	"path": "/converse/droden",
+	"value": {
+	  "default" : [
+		"Do not disturb unit. Unit is working.",
+		"Error. Goodbye.",
+		"Disengaging conversation protocols.",
+		"This unit is busy.",
+		"Unit unavailable. Goodbye.",
+		"Disengaging.",
+		"Resuming duties.",
+		"Unfamiliar entity detected. Reporting to ship Captain."
+	  ],
+	  "avikan" : [
+		"This unit is ready to serve.",
+		"Detected Nomada Captain. Greeting.",
+		"Error. Error. Error.",
+		"Detected Captain status. Welcome.",
+		"This unit awaits your command.",
+		"Unit unavailable. Resuming duties.",
+		"Do you require this unit's services?",
+		"Unit requires reboot."
+	  ]
+	}
+  }
+]

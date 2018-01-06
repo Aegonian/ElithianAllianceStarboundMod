@@ -1,0 +1,8 @@
+{
+  "name" : "thea-dry",
+  "defaultDuration" : 0.1,
+
+  "scripts" : [
+    "thea-dry.lua"
+  ]
+}

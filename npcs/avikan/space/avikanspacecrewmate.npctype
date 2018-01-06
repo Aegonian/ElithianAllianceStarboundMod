@@ -1,0 +1,60 @@
+{
+  "type" : "avikanspacecrewmate",
+  "baseType" : "thea-villager",
+
+  "dropPools" : [ "avikanDeathTreasure" ],
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "greetingChance" : 0
+    },
+    "questGenerator" : {
+      "enableParticipation" : false
+    },
+
+    "dialog" : {
+      "converse" : "/dialog/shipcrew.config:converse"
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "avikan-starfarerchest", "parameters" : { "colorIndex" : [0, 1, 2] } },
+              { "name" : "avikan-engineerchest", "parameters" : { "colorIndex" : [0, 1, 2] } },
+              { "name" : "avikan-tacticalchest", "parameters" : { "colorIndex" : [0, 1, 2] } },
+              { "name" : "avikan-tacticalchest2", "parameters" : { "colorIndex" : [0, 1, 2] } }
+            ],
+            "legs" : [
+              { "name" : "avikan-starfarerlegs", "parameters" : { "colorIndex" : [0, 1, 2] } }
+            ],
+            "primary" : [
+              ""
+            ],
+            "sheathedprimary" : [
+              "avikan-sidearm"
+            ]
+          },
+          {
+            "chest" : [
+              { "name" : "avikan-starfarerchest", "parameters" : { "colorIndex" : [0, 1, 2, 8] } }
+            ],
+            "legs" : [
+              { "name" : "avikan-engineerlegs", "parameters" : { "colorIndex" : [0, 1, 2, 8] } },
+              { "name" : "avikan-tacticallegs", "parameters" : { "colorIndex" : [0, 1, 2, 8] } }
+            ],
+            "primary" : [
+              ""
+            ],
+            "sheathedprimary" : [
+              "avikan-combatrifle",
+              "avikan-sidearm"
+            ]
+          }
+        ] ]
+    ]
+  }
+}

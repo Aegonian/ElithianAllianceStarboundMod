@@ -1,0 +1,33 @@
+[
+  //==========================================================================================================
+  //============================================ MOVING SHIPS ================================================
+  //==========================================================================================================
+  
+  {
+    "op": "add",
+    "path": "/avikanmerchantship",
+    "value": {
+	  "warpAction" : "InstanceWorld:avikanmerchantship",
+	  "threatLevel" : 1,
+	  "skyParameters" : {
+		"seed" : 0,
+		"horizonClouds" : false,
+		"horizonImages" : [ { "left": "/celestial/system/ships/shiphorizonleft.png", "right": "/celestial/system/ships/avikanshiphorizonright.png" } ]
+	  },
+
+	  "moving" : true,
+	  "speed" : 15.0,
+	  "orbitRange" : [1, 1],
+	  "lifeTime" : [1500, 2100],
+	  "parameters" : {
+		"icon" : "/celestial/system/ships/avikannpcship.png",
+		"displayName" : "Friendly Avikan Ship",
+		"description" : "This ship acknowledges our communications and her captain cordially invites us to pay a visit."
+	  }
+	}
+  }
+  
+  //==========================================================================================================
+  //============================================ STATIC LOCATIONS ============================================
+  //==========================================================================================================
+]

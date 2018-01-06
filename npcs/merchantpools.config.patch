@@ -51,7 +51,29 @@
 		]
 	},
 	
-	//AVIKAN	
+	//AVIKAN
+	
+	{ "op" : "add", "path" : "/avikanspace",
+		"value" : [
+			[ 0, [
+			  { "item": { "name": "avikan-astronautchest" }, "rarity": 0.5 },
+			  { "item": { "name": "avikan-astronautlegs" }, "rarity": 0.5 },
+			  { "item": { "name": "avikan-astronautback" }, "rarity": 0.5 },
+			  { "item": { "name": "avikan-starfarerchest" }, "rarity": 0.5 },
+			  { "item": { "name": "avikan-starfarerlegs" }, "rarity": 0.5 },
+			  { "item": { "name": "avikanshipturret" }, "rarity": 0.5 },
+			  { "item": { "name": "avikantransmitter" }, "rarity": 0.5 },
+			  { "item": { "name": "avikanjumpgatecore" }, "rarity": 0.5 },
+			  { "item": { "name": "avikanhoverbikeobject" }, "rarity": 0.5 },
+			  { "item": { "name": "avikanmechobject" }, "rarity": 0.5 },
+			  { "item": { "name": "avikansmallship" }, "rarity": 0.5 },
+			  { "item": { "name": "avikanaircraftobject" }, "rarity": 0.5 },
+			  { "item": { "name": "avikan-combatrifle" }, "rarity": 0.5 },
+			  { "item": { "name": "avikan-sidearm" }, "rarity": 0.5 }
+			] ]					
+		]
+	},
+	
 	{ "op" : "add", "path" : "/avikanweapons",
 		"value" : [
 			[ 0, [

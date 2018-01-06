@@ -1,0 +1,44 @@
+{
+  "type" : "avikanspacemerchant",
+  "baseType" : "merchant",
+
+  "scriptConfig" : {
+    "questGenerator" : { "pools" : [], "enableParticipation" : false },
+
+    "merchant" : {
+      "waitTime" : 10,
+      "storeRadius" : -1,
+      "categories" : {
+        "override" : [ "avikanspace" ]
+      },
+      "buyFactorRange" : [ 0.7, 1.5 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 5,
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "  Spacefaring Merchant",
+          "subtitle" : "  Sells items for Spacefarers!"
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "back" : [
+              { "name" : "avikanmodernpack", "parameters" : { "colorIndex" : [4] } }
+            ],
+            "chest" : [
+              { "name" : "avikan-starfarerchest", "parameters" : { "colorIndex" : [4] } }
+            ],
+            "legs" : [
+              { "name" : "avikan-starfarerlegs", "parameters" : { "colorIndex" : [4] } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

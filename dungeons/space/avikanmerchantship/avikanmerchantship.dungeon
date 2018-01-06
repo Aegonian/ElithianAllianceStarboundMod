@@ -1,0 +1,39 @@
+{
+  "metadata" : {
+    "name" : "avikanmerchantship",
+	"species" : "avikan",
+    "rules" : [
+    ],
+    "anchor" : [ "back1" ],
+    "gravity" : 80,
+    "breathable" : true,
+    "maxRadius" : 1000000,
+    "maxParts" : 4,
+    "protected" : true
+},
+
+  "parts" : [
+
+    // SAFE ZONE -- Essential starting zone for safe space encounters. Custom variant for starting space encounters left of the player
+    {
+      "name" : "thea-safespace-left",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "/dungeons/space/hazards/thea-safespace-left.json" ],
+      "chance" : 0,
+      "markDungeonId" : false
+    },
+
+    // SHIP PARTS
+
+    {
+      "name" : "back1",
+      "rules" : [
+        [ "doNotCombineWith", [ "back1" ] ]
+      ],
+      "def" : [ "tmx", "back1.json" ],
+      "chance" : 0.3
+    }
+  ]
+}

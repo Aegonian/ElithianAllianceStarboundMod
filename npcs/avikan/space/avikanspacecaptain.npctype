@@ -1,0 +1,44 @@
+{
+  "type" : "avikanspacecaptain",
+  "baseType" : "thea-villager",
+
+  "dropPools" : [ "avikanDeathTreasure" ],
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "greetingChance" : 0
+    },
+    "questGenerator" : {
+      "enableParticipation" : false
+    },
+
+    "dialog" : {
+      "converse" : "/dialog/shipcrew.config:converse"
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "avikan-captainhead", "parameters" : { "colorIndex" : [0] } }
+            ],
+            "chest" : [
+              { "name" : "avikan-captainchest", "parameters" : { "colorIndex" : [0] } }
+            ],
+            "legs" : [
+              { "name" : "avikan-tier6alegs", "parameters" : { "colorIndex" : [0] } }
+            ],
+            "primary" : [
+              ""
+            ],
+            "sheathedprimary" : [
+              "avikan-harbinger"
+            ]
+          }
+        ] ]
+    ]
+  }
+}
