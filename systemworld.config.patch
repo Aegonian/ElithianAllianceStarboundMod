@@ -10,5 +10,10 @@
     "op": "add",
     "path": "/objectSpawnPool/-",
     "value": [0.08, "avikanmerchantship"]
+  },
+  {
+    "op": "add",
+    "path": "/objectSpawnPool/-",
+    "value": [0.08, "trinkmerchantship"]
   }
 ]

@@ -31,23 +31,17 @@
             "legs" : [
               { "name" : "avikan-starfarerlegs", "parameters" : { "colorIndex" : [0, 1, 2] } }
             ],
-            "primary" : [
-              ""
-            ],
             "sheathedprimary" : [
               "avikan-sidearm"
             ]
           },
           {
             "chest" : [
-              { "name" : "avikan-starfarerchest", "parameters" : { "colorIndex" : [0, 1, 2, 8] } }
+              { "name" : "avikan-starfarerchest", "parameters" : { "colorIndex" : [0, 1, 2] } }
             ],
             "legs" : [
-              { "name" : "avikan-engineerlegs", "parameters" : { "colorIndex" : [0, 1, 2, 8] } },
-              { "name" : "avikan-tacticallegs", "parameters" : { "colorIndex" : [0, 1, 2, 8] } }
-            ],
-            "primary" : [
-              ""
+              { "name" : "avikan-engineerlegs", "parameters" : { "colorIndex" : [0, 1, 2] } },
+              { "name" : "avikan-tacticallegs", "parameters" : { "colorIndex" : [0, 1, 2] } }
             ],
             "sheathedprimary" : [
               "avikan-combatrifle",

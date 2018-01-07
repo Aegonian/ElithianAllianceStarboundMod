@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":51,
+ "tilecount":55,
  "tileheight":8,
  "tileproperties":
     {
@@ -322,6 +322,26 @@
          "\/\/shortdescription":"Avikan Ship Panel",
          "material":"avikanshippanel"
         },
+     "51":
+        {
+         "\/\/shortdescription":"Trinkian Glass",
+         "material":"trinkglass"
+        },
+     "52":
+        {
+         "\/\/shortdescription":"Trinkian Panel",
+         "material":"trinkpanel"
+        },
+     "53":
+        {
+         "\/\/shortdescription":"Trinkian Sloped Glass",
+         "material":"trinkslopedglass"
+        },
+     "54":
+        {
+         "\/\/shortdescription":"Trinkian Sloped Panel",
+         "material":"trinkslopedpanel"
+        },
      "6":
         {
          "\/\/description":"A THEA material",
@@ -540,6 +560,22 @@
      "50":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/avikanshippanel.png"
+        },
+     "51":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/trinkglass.png"
+        },
+     "52":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/trinkpanel.png"
+        },
+     "53":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/trinkslopedglass.png"
+        },
+     "54":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/trinkslopedpanel.png"
         },
      "6":
         {

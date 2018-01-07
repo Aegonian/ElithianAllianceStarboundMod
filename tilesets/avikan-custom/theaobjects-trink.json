@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":26,
+ "tilecount":43,
  "tileheight":104,
  "tileproperties":
     {
@@ -161,6 +161,38 @@
          "object":"trinkwallswitch",
          "tilesetDirection":"right"
         },
+     "26":
+        {
+         "\/\/shortdescription":"Trinkian Cooled Storage",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"trinkfridge",
+         "tilesetDirection":"right"
+        },
+     "27":
+        {
+         "\/\/shortdescription":"Trinkian Hatch",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"trinkhatch",
+         "tilesetDirection":"right"
+        },
+     "28":
+        {
+         "\/\/shortdescription":"Trinkian Hatch Platform",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"trinkhatchplatform",
+         "tilesetDirection":"right"
+        },
+     "29":
+        {
+         "\/\/shortdescription":"Trinkian Prod Rack",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"trinkprodrack",
+         "tilesetDirection":"right"
+        },
      "3":
         {
          "\/\/shortdescription":"Trinkian UACS",
@@ -169,12 +201,116 @@
          "object":"trinkcraftingstation",
          "tilesetDirection":"right"
         },
+     "30":
+        {
+         "\/\/shortdescription":"Trinkian Roof Antenna",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"trinkroofantenna",
+         "tilesetDirection":"right"
+        },
+     "31":
+        {
+         "\/\/shortdescription":"Trinkian Roof Dish",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"trinkroofdish",
+         "tilesetDirection":"right"
+        },
+     "32":
+        {
+         "\/\/shortdescription":"Flat Trinkian Roof",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"trinkroofflat",
+         "tilesetDirection":"right"
+        },
+     "33":
+        {
+         "\/\/shortdescription":"Flat Trinkian Roof",
+         "imagePositionX":"0",
+         "imagePositionY":"-96",
+         "object":"trinkroofflat",
+         "tilesetDirection":"right"
+        },
+     "34":
+        {
+         "\/\/shortdescription":"Trinkian Roof",
+         "imagePositionX":"0",
+         "imagePositionY":"-96",
+         "object":"trinkroof",
+         "tilesetDirection":"right"
+        },
+     "35":
+        {
+         "\/\/shortdescription":"Trinkian Entrance",
+         "imagePositionX":"0",
+         "imagePositionY":"-40",
+         "object":"trinkroofsideback",
+         "tilesetDirection":"right"
+        },
+     "36":
+        {
+         "\/\/shortdescription":"Trinkian Side Roof",
+         "imagePositionX":"0",
+         "imagePositionY":"-40",
+         "object":"trinkroofside",
+         "tilesetDirection":"right"
+        },
+     "37":
+        {
+         "\/\/shortdescription":"Trinkian Rooftop Entry",
+         "imagePositionX":"-24",
+         "imagePositionY":"0",
+         "object":"trinkrooftopentry",
+         "tilesetDirection":"right"
+        },
+     "38":
+        {
+         "\/\/shortdescription":"Circuit Shipping Container",
+         "imagePositionX":"-56",
+         "imagePositionY":"0",
+         "object":"trinkshippingcontainer",
+         "tilesetDirection":"right"
+        },
+     "39":
+        {
+         "\/\/shortdescription":"Small Trinkian Roof",
+         "imagePositionX":"0",
+         "imagePositionY":"-48",
+         "object":"trinksmallroof",
+         "tilesetDirection":"right"
+        },
      "4":
         {
          "\/\/shortdescription":"Trinkian Crate",
          "imagePositionX":"-8",
          "imagePositionY":"0",
          "object":"trinkcrate",
+         "tilesetDirection":"right"
+        },
+     "40":
+        {
+         "\/\/shortdescription":"Trinkian Storage Locker",
+         "imagePositionX":"-16",
+         "imagePositionY":"-8",
+         "object":"trinkstoragelocker",
+         "tilesetDirection":"right"
+        },
+     "41":
+        {
+         "\/\/shortdescription":"Trinkian Underside Entry",
+         "imagePositionX":"-24",
+         "imagePositionY":"-48",
+         "object":"trinkundersideentry",
+         "tilesetDirection":"right"
+        },
+     "42":
+        {
+         "\/\/shortdescription":"Circuit Supply Crate",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"trinkweaponchest",
          "tilesetDirection":"right"
         },
      "5":
@@ -296,13 +432,81 @@
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/trink\/trinkwallswitch.png"
         },
+     "26":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/trink\/trinkfridge.png"
+        },
+     "27":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/trink\/trinkhatch.png"
+        },
+     "28":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/trink\/trinkhatchplatform.png"
+        },
+     "29":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/trink\/trinkprodrack.png"
+        },
      "3":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/trink\/trinkcraftingstation.png"
         },
+     "30":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/trink\/trinkroofantenna.png"
+        },
+     "31":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/trink\/trinkroofdish.png"
+        },
+     "32":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/trink\/trinkroofflat.png"
+        },
+     "33":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/trink\/trinkroofflatflipped.png"
+        },
+     "34":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/trink\/trinkroofflipped.png"
+        },
+     "35":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/trink\/trinkroofsidebackflipped.png"
+        },
+     "36":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/trink\/trinkroofsideflipped.png"
+        },
+     "37":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/trink\/trinkrooftopentry.png"
+        },
+     "38":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/trink\/trinkshippingcontainer.png"
+        },
+     "39":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/trink\/trinksmallroofflipped.png"
+        },
      "4":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/trink\/trinkcrate.png"
+        },
+     "40":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/trink\/trinkstoragelocker.png"
+        },
+     "41":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/trink\/trinkundersideentry.png"
+        },
+     "42":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/trink\/trinkweaponchest.png"
         },
      "5":
         {

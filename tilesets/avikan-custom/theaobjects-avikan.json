@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":227,
+ "tilecount":229,
  "tileheight":256,
  "tileproperties":
     {
@@ -1151,6 +1151,22 @@
          "imagePositionX":"-32",
          "imagePositionY":"-8",
          "object":"avikanshipturret",
+         "tilesetDirection":"right"
+        },
+     "227":
+        {
+         "\/\/shortdescription":"Avikan Storage Locker",
+         "imagePositionX":"-16",
+         "imagePositionY":"-8",
+         "object":"avikanstoragelocker",
+         "tilesetDirection":"right"
+        },
+     "228":
+        {
+         "\/\/shortdescription":"Avikan Ship Light",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"avikanshiplight",
          "tilesetDirection":"right"
         },
      "23":
@@ -2399,6 +2415,14 @@
      "226":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/avikan\/avikanshipturretflipped.png"
+        },
+     "227":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/avikan\/avikanstoragelocker.png"
+        },
+     "228":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/avikan\/avikanshiplight.png"
         },
      "23":
         {

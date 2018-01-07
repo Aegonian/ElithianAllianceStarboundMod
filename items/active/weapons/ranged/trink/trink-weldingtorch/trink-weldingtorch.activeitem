@@ -9,7 +9,6 @@
   "category" : "Welding Torch",
   "itemTags" : ["weapon","ranged","trink","flamethrower"],
   "twoHanded" : true,
-  "level" : 1,
   
   "animation" : "/items/active/weapons/ranged/gun.animation",
   "animationParts" : { },

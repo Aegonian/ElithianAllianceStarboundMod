@@ -83,5 +83,33 @@
 		"Unit requires reboot."
 	  ]
 	}
+  },
+  
+  //TRINK DIALOGUE
+  {
+	"op": "add",
+	"path": "/converse/trink",
+	"value": {
+	  "default" : [
+		"Welcome to our ship.",
+		"What brings you all the way to our ship, traveller?",
+		"Our ship sees few visitors. Please, stay a while.",
+		"Spaceships are quite inefficient, don't you think?",
+		"My designation is <selfname>. It's nice meeting you here in the void of space.",
+		"Welcome, spacefarer. We detected your ship's approach, and we were wondering if you would visit.",
+		"What brings you to this place in space?",
+		"Are you here to hitchhike?"
+	  ],
+	  "avikan" : [
+		"I hope you're not here to cause trouble.",
+		"An Avikan on our ship? Forgive me, but I'm a bit worried.",
+		"You are welcome here so long as you behave.",
+		"A fellow spacefarer. Welcome.",
+		"I hear the rank of Captain is quite esteemed in your culture.",
+		"Keep your weapons to yourself while you're here.",
+		"You're not looking to sabotage our ship, are you?",
+		"Welcome, starfarer."
+	  ]
+	}
   }
 ]

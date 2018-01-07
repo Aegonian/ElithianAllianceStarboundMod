@@ -463,6 +463,21 @@
 	
 	
 	//TRINK
+	{ "op" : "add", "path" : "/trinkspace",
+		"value" : [
+			[ 0, [
+			  { "item": { "name": "trink-wrench" }, "rarity": 0.5 },
+			  { "item": { "name": "trink-mininglaser" }, "rarity": 0.5 },
+			  { "item": { "name": "trink-soniccannon" }, "rarity": 0.5 },
+			  { "item": { "name": "trink-weldingtorch" }, "rarity": 0.5 },
+			  { "item": { "name": "trinktransmitter" }, "rarity": 0.5 },
+			  { "item": { "name": "trinkelectronics" }, "rarity": 0.5 },
+			  { "item": { "name": "trinkglassitem" }, "rarity": 0.5 },
+			  { "item": { "name": "trinkdatadrive" }, "rarity": 0.5 }
+			] ]
+		]
+	},
+	
 	{ "op" : "add", "path" : "/trinkweapons",
 		"value" : [
 			[ 0, [

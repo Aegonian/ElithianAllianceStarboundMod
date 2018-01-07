@@ -1,0 +1,54 @@
+{
+  "type" : "trinkspacecrewmate",
+  "baseType" : "thea-villager",
+
+  "dropPools" : [ "trinkDeathTreasure" ],
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "greetingChance" : 0
+    },
+    "questGenerator" : {
+      "enableParticipation" : false
+    },
+
+    "dialog" : {
+      "converse" : "/dialog/shipcrew.config:converse"
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          //COMBINATION 1 -- UNPAINTED
+		  {
+            "head" : [
+			  { "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "thea-hiddenchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "thea-hiddenlegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          },
+		  //COMBINATION 2 -- PAINTED
+		  {
+            "head" : [
+			  { "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "trink-paintedchest", "parameters" : { "colorIndex" : [0, 1, 2, 3, 8] } },
+			  { "name" : "trink-stripedchest", "parameters" : { "colorIndex" : [0, 1, 2, 3, 8] } }
+            ],
+            "legs" : [
+              { "name" : "trink-paintedlegs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 8] } },
+			  { "name" : "trink-paintedhalflegs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 8] } },
+			  { "name" : "trink-stripedlegs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 8] } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

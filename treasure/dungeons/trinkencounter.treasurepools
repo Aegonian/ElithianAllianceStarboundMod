@@ -40,6 +40,22 @@
     } ]
   ],
 
+  "trinkshippingcontainer" : [
+    [1, {
+      "poolRounds" : [
+        [0.3, 6],
+        [0.4, 8],
+        [0.2, 10],
+        [0.1, 12]
+      ],
+      "pool" : [
+        {"weight" : 0.75, "pool" : "trinkcraftingmaterials" },
+		{"weight" : 0.2, "pool" : "basicTreasure"},
+		{"weight" : 0.05, "item" : "trinkcache" }
+      ]
+    } ]
+  ],
+
 	//GENERIC POOLS
   "trinkweapons" : [
     [0, {
@@ -105,6 +121,18 @@
         {"weight" : 0.30, "item" : "trink-soniccannon" },
         {"weight" : 0.30, "item" : "trink-weldingtorch" },
         {"weight" : 0.10, "item" : "trink-mininglaser" }
+      ]
+    } ]
+  ],
+  
+  "trinkcraftingmaterials" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.20, "item" : "trinkmetal" },
+		{"weight" : 0.20, "item" : "trinkglassitem" },
+		{"weight" : 0.20, "item" : "trinkwiring" },
+		{"weight" : 0.20, "item" : "trinklaserdiode" },
+		{"weight" : 0.20, "item" : "trinkelectronics" }
       ]
     } ]
   ],

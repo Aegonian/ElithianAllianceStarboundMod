@@ -25,6 +25,30 @@
 		"description" : "This ship acknowledges our communications and her captain cordially invites us to pay a visit."
 	  }
 	}
+  },
+  
+  {
+    "op": "add",
+    "path": "/trinkmerchantship",
+    "value": {
+	  "warpAction" : "InstanceWorld:trinkmerchantship",
+	  "threatLevel" : 1,
+	  "skyParameters" : {
+		"seed" : 0,
+		"horizonClouds" : false,
+		"horizonImages" : [ { "left": "/celestial/system/ships/shiphorizonleft.png", "right": "/celestial/system/ships/trinkshiphorizonright.png" } ]
+	  },
+
+	  "moving" : true,
+	  "speed" : 15.0,
+	  "orbitRange" : [1, 1],
+	  "lifeTime" : [1500, 2100],
+	  "parameters" : {
+		"icon" : "/celestial/system/ships/trinknpcship.png",
+		"displayName" : "Friendly Trinkian Ship",
+		"description" : "This ship acknowledges our communications and her captain cordially invites us to pay a visit."
+	  }
+	}
   }
   
   //==========================================================================================================
