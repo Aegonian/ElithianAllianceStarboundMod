@@ -1,0 +1,26 @@
+{
+  "animatedParts" : {
+    "parts" : {
+      "gun" : {
+        "properties" : {
+          "centered" : false,
+          "image" : "alliancegrapplinghook.png",
+          "offset" : [-0.4, -0.5]
+        }
+      },
+      "lights" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : false,
+          "fullbright" : true,
+          "image" : "alliancegrapplinghooklights.png",
+          "offset" : [-0.4, -0.5]
+        }
+      }
+    }
+  },
+
+  "sounds" : {
+    "fire" : ["/sfx/gun/grapplegun.ogg"]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "objectName" : "alliancestoragelocker",
+  "colonyTags" : ["alliance","storage"],
+  "rarity" : "Common",
+  "category" : "storage",
+  "price" : 180,
+  "printable" : false,
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "description" : "A nice, spacious, wall-mounted storage solution.",
+  "shortdescription" : "Alliance Storage Locker",
+  "race" : "aegi",
+  "health" : 1.5,
+
+  "apexDescription" : "A locker made from metal.",
+  "avianDescription" : "A place to keep your things.",
+  "floranDescription" : "Floran can ssstuff things into locker.",
+  "glitchDescription" : "Neutral. A metallic storage locker.",
+  "humanDescription" : "It's an industrial looking storage locker.",
+  "hylotlDescription" : "Somewhere to store personal belongings.",
+  "novakidDescription" : "A locker in the wall.",
+
+  "aegiDescription" : "A metal storage locker.",
+  "avikanDescription" : "A storage locker built into the wall.",
+  "erixianDescription" : "A basic storage locker.",
+  "trinkDescription" : "This storage locker is an efficient use of space.",
+  "hymidDescription" : "A simple storage locker.",
+  "notixDescription" : "An efficient storage locker. The Trink would enjoy this.",
+  "jorgasianDescription" : "A basic but very practical storage locker.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "theleanDescription" : "TODO",
+  "drodenDescription" : "Detected storage locker.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "alliancestoragelocker.png:<color>.<key>",
+      "imagePosition" : [-16, -8],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/gunchest_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/gunchest_close.ogg" ],
+  "slotCount" : 48,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 5,
+  "openFrameIndex" : 4,
+  "autoCloseCooldown" : 3600
+}

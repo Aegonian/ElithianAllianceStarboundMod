@@ -1,25 +1,24 @@
 {
-  "projectileName" : "akkimarispike",
-  "image" : "akkimarispike.png",
-  "physics" : "avikanarrow",
-  "animationCycle" : 0.25,
+  "projectileName" : "alliancegrapplinghook",
+  "image" : "alliancegrapplinghook.png",
+  "animationCycle" : 1.0,
   "frameNumber" : 1,
-  "damageKindImage" : "icon.png",
   "pointLight" : false,
-  "flippable" : true,
-  "actionOnReap" : [
-    {
-      "action" : "config",
-      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
-    },
-	{
-      "action" : "projectile",
-      "type" : "akkimarispikesticking",
-      "inheritDamageFactor" : 0.0,
-      "inheritSpeedFactor" : 0.6,
-      "angleAdjust" : 0
-    }
-  ],
+  "flippable" : false,
+  "actionOnReap" : [ ],
+  "statusEffects" : [ ],
+  "power" : 0.0,
+  "speed" : 100,
+  "damageKind" : "default",
+  "physics" : "ballisticgrapplehook",
+  "bounces" : -1,
+  "piercing" : true,
+  "timeToLive" : 5,
+
+  "onlyHitTerrain" : true,
+
+  "scripts" : [ "/projectiles/activeitems/grapplehook/grapplehook.lua" ],
+  
   "actionOnCollide" : [
     {
       "action" : "sound",
@@ -38,10 +37,5 @@
         "/sfx/projectiles/ropehook_impact12.ogg"
       ]
     }
-  ],
-  "statusEffects" : [ ],
-  "power" : 5.0,
-  "speed" : 90,
-  "knockback" : 0,
-  "damageKind" : "default"
+  ]
 }

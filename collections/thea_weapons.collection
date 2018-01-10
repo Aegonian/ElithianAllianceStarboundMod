@@ -279,7 +279,7 @@
     },
 	"akkimari-sawbladelauncher" : {
       "order" : 45,
-      "title" : "Akkimari Bladelauncher",
+      "title" : "Razorrail",
       "description" : "A makeshift Akkimari weapon firing razor-sharp sawblades.",
       "icon" : "/items/active/weapons/ranged/unique/sawbladelauncher/akkimari-sawbladelaunchericon.png"
     },
@@ -302,10 +302,16 @@
       "icon" : "/items/active/weapons/melee/unique/kelchisdecree/akkimari-kelchisdecreeicon.png"
     },
 	"avikan-anakahrstaff" : {
-      "order" : 48,
+      "order" : 49,
       "title" : "Anakahr Staff",
       "description" : "A staff armed with dual static linecharge drives.",
       "icon" : "/items/active/weapons/melee/unique/anakahrstaff/avikan-anakahrstaff.png"
+    },
+	"akkimari-blastsling" : {
+      "order" : 50,
+      "title" : "Blastsling",
+      "description" : "A makeshift slingshot loaded with various bombs.",
+      "icon" : "/items/active/weapons/ranged/unique/blastsling/akkimari-blastslingicon.png"
     }
   }
 }

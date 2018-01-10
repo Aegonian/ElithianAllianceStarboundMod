@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "^orange;A makeshift Akkimari weapon firing razor-sharp sawblades.",
-  "shortdescription" : "^orange;Akkimari Bladelauncher^white;",
+  "shortdescription" : "^orange;Razorrail^white;",
   "level" : 6,
   "tooltipKind" : "thea-gun-unique",
   "category" : "Makeshift Weapon",

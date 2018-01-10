@@ -1,0 +1,174 @@
+{
+  "itemName" : "akkimari-blastsling",
+  "price" : 1500,
+  "level" : 6,
+  "inventoryIcon" : "akkimari-blastslingicon.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "tooltipKind" : "thea-bow-unique",
+  "category" : "Slingshot",
+  "description" : "^orange;A makeshift slingshot loaded with various bombs.",
+  "shortdescription" : "^orange;Blastsling^white;",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","bow","akkimari","theaUnique"],
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "akkimari-blastsling" },
+  
+  "meritTokenValue" : 100,
+  
+  "cursor" : "/cursors/thea-heavybowreticle.cursor",
+
+  "animation" : "akkimari-blastsling.animation",
+  "animationParts" : {
+    "bow" : "akkimari-blastsling.png",
+    "ammo" : "akkimari-blastslingammo.png",
+    "ammoLights" : "akkimari-blastslingammolights.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+	  "parts" : {
+		"bow" : {
+		  "properties" : {
+			"offset" : [0.15, 0]
+		  }
+		},
+		"ammo" : {
+		  "properties" : {
+			"offset" : [0.15, 0]
+		  }
+		},
+		"ammoLights" : {
+		  "properties" : {
+			"offset" : [0.15, 0]
+		  }
+		}
+	  }
+	},
+    "sounds" : {
+      "draw" : [ "/sfx/gun/bow_draw1.ogg", "/sfx/gun/bow_draw2.ogg", "/sfx/gun/bow_draw3.ogg" ],
+      "release" : [ "/sfx/gun/bow_loose.ogg" ],
+      "perfectRelease" : [ "/sfx/gun/bow_loose.ogg" ],
+	  "switchAmmo" : [ "/sfx/gun/reload/rocket_reload_clip1.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/ranged/thea-bow.lua"],
+  
+  "aimOffset" : -1.0,
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/bow/thea-bowshot.lua"],
+    "class" : "TheaBowShot",
+	
+	"fireOffset" : [0.5, 0.5],
+
+    "energyPerShot" : 25,
+    "cooldownTime" : 0.6,
+    "inaccuracy" : 0.01,
+	
+	"walkWhileFiring" : false,
+	"useQuiverDamageBonus" : false,
+
+    "drawFrameSelector" : "bowImageSelector",
+    "drawPowerMultiplier" : "constant",
+    "drawSpeedMultiplier" : "thea-slingShotDrawTimeMultiplier",
+
+    "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
+
+    "projectileType" : "blastslingbomb-regular",
+    "powerProjectileType" : "blastslingbomb-regular",
+    "powerProjectileTime" : [0.9, 1.1],
+    "projectileParameters" : {
+      "speed" : 50,
+      "power" : 5.5
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : -30,
+        "weaponRotation" : 0,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "draw" : {
+        "armRotation" : -20,
+        "weaponRotation" : 15,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "fire" : {
+        "duration" : 0.2,
+        "armRotation" : -20,
+        "weaponRotation" : 15,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true,
+
+        "frontArmFrame" : "swimIdle.2"
+      }
+    }
+  },
+  
+  "altAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-adaptableammo/thea-adaptableammo.lua"],
+    "class" : "TheaAdaptableAmmo",
+    "name" : "Switch Bombs",
+
+    "adaptedAbilityIndex" : 1, //Which ability to adapt (1 = primary, 2 = secondary)
+
+	//The adapted ability will be overwritten using these values, based on the current ammo index
+    "ammoTypes" : [
+      {
+        "projectileType" : "blastslingbomb-regular",
+		"powerProjectileType" : "blastslingbomb-regular",
+		"projectileParameters" : {
+		  "speed" : 50,
+		  "power" : 5.5
+		}
+      },
+      {
+        "projectileType" : "blastslingbomb-sticky",
+		"powerProjectileType" : "blastslingbomb-sticky",
+		"projectileParameters" : {
+		  "speed" : 50,
+		  "power" : 4.0
+		}
+      },
+      {
+        "projectileType" : "blastslingbomb-vaash",
+		"powerProjectileType" : "blastslingbomb-vaash",
+		"projectileParameters" : {
+		  "speed" : 50,
+		  "power" : 4.5
+		}
+      }
+    ],
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+  
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "switch" : {
+        "duration" : 0.25,
+        "armRotation" : -30,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+  
+        "allowRotate" : false,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.4"
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildbow.lua"
+}

@@ -80,7 +80,7 @@
 			"default" : [
 				"Reporting criminal behaviour. Guards will arrive shortly.",
 				"Unit is reporting criminal behaviour. Gurads arriving shortly.",
-				"Criminal behaviour reported. Stand by from arrest.",
+				"Criminal behaviour reported. Stand by for arrest.",
 				"Nomada laws violated. Alerting local guards.",
 				"Requesting immediate assistance. Criminal must be apprehended."
 			]
@@ -96,7 +96,7 @@
 		"value": {
 			"default" : [
 				"Hey, that's not yours!",
-				"You've got to be kidding me, are you really stealing out stuff?",
+				"You've got to be kidding me, are you really stealing our stuff?",
 				"Hands off, that isn't yours to take!",
 				"Stop stealing before I call the guards!",
 				"You can get banished for theft, you know."

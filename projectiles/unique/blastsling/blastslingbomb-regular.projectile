@@ -1,0 +1,21 @@
+{
+  "projectileName" : "blastslingbomb-regular",
+  "physics" : "grenade",
+  "bounces" : 0,
+  "timeToLive" : 5,
+  "image" : "blastslingbomb-regular.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "emitters" : [ "rocketsmoke" ],
+  "flippable" : true,
+  "speed" : 20,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/avikanairstrikeexplosion/avikanairstrikeexplosion.config"
+    }
+  ],
+  "power" : 50,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

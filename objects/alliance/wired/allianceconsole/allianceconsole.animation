@@ -26,7 +26,8 @@
           "switchState" : {
             "off" : {
               "properties" : {
-                "image" : "<partImage>:<color>.off"
+                "image" : "<partImage>:<color>.off",
+                "fullbright" : true
               }
             },
 

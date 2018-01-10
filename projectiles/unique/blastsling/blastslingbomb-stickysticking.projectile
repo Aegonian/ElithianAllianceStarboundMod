@@ -1,0 +1,26 @@
+{
+  "projectileName" : "blastslingbomb-stickysticking",
+  "physics" : "stickygrenade",
+  "bounces" : -1,
+  "timeToLive" : 10,
+  "image" : "blastslingbomb-sticky.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "emitters" : [ ],
+  "flippable" : true,
+  "lightColor" : [65, 0, 0],
+  "speed" : 0,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/avikanairstrikeexplosion/avikanairstrikeexplosion.config"
+    }
+  ],
+  "power" : 50,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  
+  "scripts" : [ "/projectiles/scripts/thea-proximityexplode.lua" ],
+  "searchRadius" : 2.5,
+  "waitUntilSticky" : false
+}

@@ -1,0 +1,20 @@
+{
+  "projectileName" : "akkimariacidexplosion-effect",
+  "image" : "akkimariacidexplosion.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 6,
+  "speed" : 0,
+  "lightColor" : [0, 255, 25],
+  "pointLight" : true,
+  "statusEffects" : [
+    "akkimariacidburn"
+  ],
+  "damagePoly" : [ [-37, 0], [-28, -28], [0, -37], [28, -28], [37, 0], [28, 28], [0, 37], [-28, 28] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "fullbright" : true,
+  "damageKind" : "akkimariacid",
+  "knockback" : 10
+}

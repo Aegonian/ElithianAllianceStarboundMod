@@ -1,0 +1,118 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+	  "ammoType" : {
+        "default" : "1",
+        "states" : {
+          "1" : {
+			"properties" : {
+			  "lightsOn" : [],
+			  "lightsOff" : [ "sticky", "vaash" ]
+			}
+		  },
+          "2" : {
+			"properties" : {
+			  "lightsOn" : [ "sticky" ],
+			  "lightsOff" : [ "vaash" ]
+			}
+		  },
+          "3" : {
+			"properties" : {
+			  "lightsOn" : [ "vaash" ],
+			  "lightsOff" : [ "sticky" ]
+			}
+		  }
+        }
+      }
+    },
+	
+    "parts" : {
+      "bow" : {
+        "properties" : {
+          "centered" : true,
+          "image" : "<partImage>:<drawFrame>",
+          "transformationGroups" : ["weapon"]
+        }
+      },
+      "ammo" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "image" : "<partImage>:<drawFrame>",
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "ammoType" : {
+            "1" : {
+              "properties" : {
+                "image" : "<partImage>:regular.<drawFrame>"
+              }
+            },
+            "2" : {
+              "properties" : {
+                "image" : "<partImage>:sticky.<drawFrame>"
+              }
+            },
+            "3" : {
+              "properties" : {
+                "image" : "<partImage>:vaash.<drawFrame>"
+              }
+            }
+          }
+        }
+      },
+      "ammoLights" : {
+        "properties" : {
+          "zLevel" : 2,
+          "centered" : true,
+          "fullbright" : true,
+          "image" : "<partImage>:<drawFrame>",
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "ammoType" : {
+            "1" : {
+              "properties" : {
+                "image" : "<partImage>:regular.<drawFrame>"
+              }
+            },
+            "2" : {
+              "properties" : {
+                "image" : "<partImage>:sticky.<drawFrame>"
+              }
+            },
+            "3" : {
+              "properties" : {
+                "image" : "<partImage>:vaash.<drawFrame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {}
+  },
+
+  "lights" : {
+    "sticky" : {
+      "active" : false,
+      "position" : [0, 0],
+      "color" : [100, 0, 0]
+    },
+    "vaash" : {
+      "active" : false,
+      "position" : [0, 0],
+      "color" : [0, 100, 13]
+    }
+  },
+
+  "sounds" : {
+    "draw" : [ ],
+    "release" : [ ],
+    "perfectRelease" : [ ],
+	"switchAmmo" : [ ]
+  }
+}

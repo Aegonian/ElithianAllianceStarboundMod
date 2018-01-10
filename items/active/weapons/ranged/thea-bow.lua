@@ -28,6 +28,9 @@ end
 
 function update(dt, fireMode, shiftHeld)
   self.weapon:update(dt, fireMode, shiftHeld)
+  
+  local primaryAbility = getPrimaryAbility()
+  world.debugPoint(vec2.add(mcontroller.position(), activeItem.handPosition(primaryAbility.fireOffset)), "red")
 end
 
 function uninit()

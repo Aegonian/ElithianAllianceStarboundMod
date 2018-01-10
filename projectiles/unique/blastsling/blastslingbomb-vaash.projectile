@@ -1,0 +1,23 @@
+{
+  "projectileName" : "blastslingbomb-vaash",
+  "physics" : "grenade",
+  "bounces" : 0,
+  "timeToLive" : 5,
+  "image" : "blastslingbomb-vaash.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "emitters" : [ "rocketsmoke" ],
+  "lightColor" : [0, 75, 10],
+  "fullbright" : true,
+  "flippable" : true,
+  "speed" : 20,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/akkimariacidexplosion/akkimariacidexplosion-effect.config"
+    }
+  ],
+  "power" : 50,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

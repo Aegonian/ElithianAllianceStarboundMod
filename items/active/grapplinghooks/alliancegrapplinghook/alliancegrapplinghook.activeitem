@@ -1,0 +1,43 @@
+{
+  "itemName" : "alliancegrapplinghook",
+  "price" : 3000,
+  "inventoryIcon" : "alliancegrapplinghookicon.png",
+  "rarity" : "Legendary",
+  "maxStack" : 1,
+  "description" : "A grappling hook, for climbing mountains and swinging across ravines.",
+  "shortdescription" : "Alliance Grappling Hook",
+  "category" : "Tool",
+  "fireTime" : 0,
+  "twoHanded" : false,
+
+  "scripts" : ["/items/active/grapplinghooks/grapplinghook.lua"],
+  "animationScripts" : ["/items/active/effects/renderrope.lua"],
+
+  "animation" : "alliancegrapplinghook.animation",
+
+  "fireOffset" : [0, 0.35],
+  "ropeOffset" : [-1.75, 0.35],
+  "ropeVisualOffset" : [1.5, 0.35],
+
+  "consumeOnUse" : false,
+
+  "projectileType" : "alliancegrapplinghook",
+  "projectileParameters" : {
+    "speed" : 65,
+    "timeToLive" : 2.0
+  },
+
+  "ropeWidth" : 1.0,
+  "ropeColor" : [25, 25, 25, 255],
+
+  "reelInDistance" : 3.5,
+  "reelOutLength" : 50,
+  "breakLength" : 60,
+
+  "minSwingDistance" : 1.5,
+
+  "reelSpeed" : 15,
+  "controlForce" : 1000,
+
+  "groundLagTime" : 0.2
+}

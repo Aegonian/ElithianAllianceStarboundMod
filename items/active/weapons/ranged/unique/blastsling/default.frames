@@ -1,0 +1,12 @@
+{
+  "frameGrid" : {
+    "size" : [27, 30],
+    "dimensions" : [5, 5],
+
+    "names" : [
+      [ "regular.0", "regular.1", "regular.2", "regular.3", "regular.4" ],
+      [ "sticky.0", "sticky.1", "sticky.2", "sticky.3", "sticky.4" ],
+      [ "vaash.0", "vaash.1", "vaash.2", "vaash.3", "vaash.4" ]
+    ]
+  }
+}

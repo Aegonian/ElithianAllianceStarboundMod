@@ -1,25 +1,15 @@
 {
-  "projectileName" : "akkimarispike",
-  "image" : "akkimarispike.png",
-  "physics" : "avikanarrow",
-  "animationCycle" : 0.25,
-  "frameNumber" : 1,
-  "damageKindImage" : "icon.png",
-  "pointLight" : false,
+  "projectileName" : "blastslingbomb-sticky",
+  "physics" : "grenade",
+  "bounces" : 0,
+  "timeToLive" : 5,
+  "image" : "blastslingbomb-sticky.png",
+  "animationCycle" : 0.35,
+  "frameNumber" : 4,
+  "emitters" : [ "rocketsmoke" ],
   "flippable" : true,
-  "actionOnReap" : [
-    {
-      "action" : "config",
-      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
-    },
-	{
-      "action" : "projectile",
-      "type" : "akkimarispikesticking",
-      "inheritDamageFactor" : 0.0,
-      "inheritSpeedFactor" : 0.6,
-      "angleAdjust" : 0
-    }
-  ],
+  "lightColor" : [65, 0, 0],
+  "speed" : 20,
   "actionOnCollide" : [
     {
       "action" : "sound",
@@ -39,9 +29,14 @@
       ]
     }
   ],
-  "statusEffects" : [ ],
-  "power" : 5.0,
-  "speed" : 90,
-  "knockback" : 0,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "blastslingbomb-stickysticking",
+      "inheritDamageFactor" : 1.0
+    }
+  ],
+  "power" : 50,
+  "damageType" : "NoDamage",
   "damageKind" : "default"
 }
