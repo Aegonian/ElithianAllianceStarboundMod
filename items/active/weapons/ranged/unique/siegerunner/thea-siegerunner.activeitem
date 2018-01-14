@@ -1,0 +1,132 @@
+{
+  "itemName" : "thea-siegerunner",
+  "price" : 1500,
+  "inventoryIcon" : "thea-siegerunnericon.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;A hybrid assault rifle utilizing a conventional magazine.",
+  "manufacturer" : "^gray;AAE^reset;",
+  "shortdescription" : "^orange;Siegerunner^white;",
+  "level" : 6,
+  "tooltipKind" : "thea-ammogun-mf-unique",
+  "category" : "Assault Rifle",
+  "itemTags" : ["weapon","ranged","assaultrifle","alliance","theaUnique"],
+  "twoHanded" : true,
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "thea-siegerunner" },
+  
+  "meritTokenValue" : 100,
+
+  "animation" : "thea-siegerunner.animation",
+  "animationParts" : {
+    "middle" : "thea-siegerunner.png",
+    "middleFullbright" : "thea-siegerunnerlights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/allianceenergyflash.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+		    "offset" : [0.875, 0.125]
+		  }
+		}
+      }
+    },
+    "particleEmitters" : {
+      "muzzleFlash" : {
+        "transformationGroups" : ["weapon"],
+		"offsetRegion" : [0.875, 0.5, 0.875, 0.5],
+        "particles" : [
+          { "particle" : "thea-discardedbulletlight" }
+        ]
+      },
+      "reload" : {
+        "transformationGroups" : ["weapon"],
+		"offsetRegion" : [1.375, -0.25, 1.375, -0.25],
+        "particles" : [
+          { "particle" : "magazinedrop-siegerunner" }
+        ]
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/sidewinder_fire.ogg" ],
+	  "reload" : [ "/sfx/gun/reload/siegerunner_reload.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.875, 0.125],
+  "muzzleOffset" : [2.25, 0.375],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-ammofire.lua"],
+    "class" : "TheaAmmoFire",
+
+    "fireTime" : 0.14,
+    "baseDps" : 12.0,
+    "inaccuracy" : 0.015,
+	
+	"reloadTime" : 2.2,
+	
+	"maxAmmo" : 24,
+	"cycleAfterShot" : false,
+	"fireAnimation" : true,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "allianceenergybullet",
+    "projectileParameters" : {
+      "knockback" : 4
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 5,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.1,
+        "armRotation" : 3,
+        "weaponRotation" : 5,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "reload" : {
+        "duration" : 2.2,
+        "armRotation" : -25,
+        "weaponRotation" : 30,
+        "weaponOffset" : [-0.5, -0.125],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "run.1",
+        "backArmFrame" : "rotation"
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/thea-buildammoweapon-mf.lua"
+}

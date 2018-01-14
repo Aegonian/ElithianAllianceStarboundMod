@@ -1,0 +1,21 @@
+{
+  "name" : "thea-meltdown",
+  "blockingStat" : "fireStatusImmunity",
+
+  "effectConfig" : {
+	"timeToExplode" : 2.0,
+	"burnDuration" : 5.0,
+    "bombConfig" : "/projectiles/explosions/avikanfireexplosion/avikanfireexplosion.config",
+	"explosionDamage" : 75
+  },
+  "defaultDuration" : 0.5,
+
+  "scripts" : [
+    "thea-meltdown.lua"
+  ],
+
+  "animationConfig" : "thea-meltdown.animation",
+
+  "label" : "Meltdown",
+  "icon" : "/interface/statuses/fire.png"
+}

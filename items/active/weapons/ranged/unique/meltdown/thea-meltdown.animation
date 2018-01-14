@@ -1,0 +1,118 @@
+{
+  "globalTagDefaults" : {
+    "paletteSwaps" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "firing" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "fire" : {
+            "frames" : 2,
+            "cycle" : 0.07,
+            "mode" : "transition",
+            "transition" : "off"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "middle" : {
+        "properties" : {
+          "centered" : true,
+          "image" : "<partImage><paletteSwaps>",
+          "offset" : [0.5, 0.125], // x offset is set dynamically
+          "transformationGroups" : ["weapon"]
+        }
+      },
+      "middleFullbright" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "fullbright" : true,
+          "image" : "<partImage><paletteSwaps>",
+          "offset" : [0.6, -0.6], // x offset is set dynamically
+          "transformationGroups" : ["weapon"]
+        }
+      },
+      "muzzleFlash" : {
+        "properties" : {
+          "zLevel" : -1,
+          "centered" : true,
+          "offset" : [0.75, 0],
+          "fullbright" : true,
+          "transformationGroups" : ["muzzle"]
+        },
+
+        "partStates" : {
+          "firing" : {
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:<variant>.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "rotationGroups" : {
+    "weapon" : {
+      "angularVelocity" : 0
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "muzzle" : {},
+    "beam" : {},
+    "beamEnd" : {}
+  },
+
+  "particleEmitters" : {
+    "muzzleFlash" : {
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [0.125, 0.5, 0.125, 0.625],
+      "emissionRate" : 5,
+      "particles" : [
+        {"particle" : "lineriflepuff"}
+      ]
+    },
+    "beamCollision" : {
+      "active" : false,
+      "transformationGroups" : ["muzzle", "beamEnd"],
+      "emissionRate" : 20,
+      "particles" : [
+        {"particle" : "alliancefirelaser1"},
+		{"particle" : "alliancefirelaser2"},
+		{"particle" : "alliancefirelaserimpact"},
+		{"particle" : "akkimariashsmoke-air"}
+      ]
+    },
+    "beamParticles" : {
+      "active" : false,
+      "transformationGroups" : ["beam"],
+      "emissionRate" : 10,
+      "particles" : [
+        //{"particle" : "akkimariashsmoke-air"}
+      ]
+    }
+  },
+
+  "lights" : {
+    "muzzleFlash" : {
+      "color" : [0, 0, 0]
+    }
+  },
+
+  "sounds" : {
+    "fireStart" : [],
+    "fireLoop" : [],
+    "fireEnd" : [],
+    "beamImpact" : []
+  }
+}

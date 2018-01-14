@@ -10,7 +10,7 @@
   "description" : "^orange;A makeshift slingshot loaded with various bombs.",
   "shortdescription" : "^orange;Blastsling^white;",
   "twoHanded" : true,
-  "itemTags" : ["weapon","ranged","bow","akkimari","theaUnique"],
+  "itemTags" : ["weapon","ranged","akkimari","theaUnique"],
   
   //CONFIGURATION FOR WEAPONS COLLECTION
   "collectablesOnPickup" : { "thea_weapons" : "akkimari-blastsling" },

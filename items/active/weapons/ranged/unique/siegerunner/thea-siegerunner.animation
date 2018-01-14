@@ -8,27 +8,16 @@
       "gun" : {
         "default" : "readyState1",
         "states" : {
-          "readyState1" : {
-			"frames" : 1
-		  },
-          "startCycle1" : {
-            "frames" : 1,
-            "cycle" : 0.15,
-            "mode" : "transition",
-            "transition" : "readyState2"
-          },
-		  "readyState2" : {
-			"frames" : 1
-		  },
-          "startCycle2" : {
-            "frames" : 1,
-            "cycle" : 0.15,
+          "readyState1" : {},
+          "fire" : {
+            "frames" : 3,
+            "cycle" : 0.1,
             "mode" : "transition",
             "transition" : "readyState1"
           },
           "reload" : {
-            "frames" : 8,
-            "cycle" : 0.7,
+            "frames" : 1,
+            "cycle" : 2.2,
             "mode" : "transition",
             "transition" : "readyState1"
           }
@@ -60,27 +49,46 @@
           "gun" : {
             "readyState1" : {
               "properties" : {
-                "image" : "<partImage>:ready1"
+                "image" : "<partImage>:idle"
               }
             },
-			"startCycle1" : {
+            "fire" : {
               "properties" : {
-                "image" : "<partImage>:cycle1.<frame>"
-              }
-            },
-			"readyState2" : {
-              "properties" : {
-                "image" : "<partImage>:ready2"
-              }
-            },
-			"startCycle2" : {
-              "properties" : {
-                "image" : "<partImage>:cycle2.<frame>"
+                "image" : "<partImage>:fire.<frame>"
               }
             },
 			"reload" : {
               "properties" : {
-                "image" : "<partImage>:reload.<frame>"
+                "image" : "<partImage>:reload"
+              }
+            }
+          }
+        }
+      },
+      "middleFullbright" : {
+        "properties" : {
+          "zLevel" : 1,
+          "fullbright" : true,
+          "centered" : true,
+          "image" : "<partImage><paletteSwaps>",
+          "offset" : [0, 0], // x offset is set dynamically
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "gun" : {
+            "readyState1" : {
+              "properties" : {
+                "image" : "<partImage>:idle"
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:fire.<frame>"
+              }
+            },
+			"reload" : {
+              "properties" : {
+                "image" : "<partImage>:reload"
               }
             }
           }

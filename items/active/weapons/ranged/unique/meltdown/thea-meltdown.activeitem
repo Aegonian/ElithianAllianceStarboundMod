@@ -1,29 +1,29 @@
 {
-  "itemName" : "thea-defiant",
+  "itemName" : "thea-meltdown",
   "price" : 1500,
   "level" : 6,
-  "inventoryIcon" : "thea-defiant.png",
+  "inventoryIcon" : "thea-meltdown.png",
   "maxStack" : 1,
   "rarity" : "Essential",
-  "description" : "^orange;A high precision laser rifle which ramps up in power over time.",
+  "description" : "^orange;A powerful beam rifle that causes its targets to overheat.",
   "manufacturer" : "^gray;AEG-Corps^reset;",
-  "shortdescription" : "^orange;C56 Defiant^white;",
+  "shortdescription" : "^orange;C66 Meltdown^white;",
   "tooltipKind" : "thea-gun-unique-mf",
   "category" : "Beam Rifle",
   "itemTags" : ["weapon","ranged","alliance","aeg-corps","theaUnique"],
   "twoHanded" : true,
   
   //CONFIGURATION FOR WEAPONS COLLECTION
-  "collectablesOnPickup" : { "thea_weapons" : "thea-defiant" },
+  "collectablesOnPickup" : { "thea_weapons" : "thea-meltdown" },
   
   "meritTokenValue" : 100,
   
   "cursor" : "/cursors/thea-laserreticle.cursor",
   
-  "animation" : "thea-defiant.animation",
+  "animation" : "thea-meltdown.animation",
   "animationParts" : {
-    "middle" : "thea-defiant.png",
-    "middleFullbright" : "thea-defiantlights.png",
+    "middle" : "thea-meltdown.png",
+    "middleFullbright" : "thea-meltdownlights.png",
     "muzzleFlash" : ""
   },
   "animationCustom" : {
@@ -51,20 +51,15 @@
 
   "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
 
-  "elementalType" : "physical",
+  "elementalType" : "fire",
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/abilities/thea-speedupbeamfire.lua"],
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-beamfire.lua"],
     "class" : "TheaBeamFire",
 
-    "minFiringSpeed" : 0.25, //Starting fire time
-	"maxFiringSpeed" : 0.05, //End fire time
-	"maxFiringTime" : 2.5, //How long it takes to reach maximum firing speed
-	
-	"soundPitchMultiplier" : 0.5, //How much of the Rate of Fire increase is transferred into the pitch change. 1.0 = full multiplier
-
-    "baseDps" : 3.0,
-    "energyUsage" : 25.0,
+    "fireTime" : 0.1,
+    "baseDps" : 9.5,
+    "energyUsage" : 40.0,
     "inaccuracy" : 0.0,
 	
 	"impactDamageTimeout" : 0.2,
@@ -74,8 +69,8 @@
 	"laserPiercing" : false,
 
     "damageConfig" : {
-      "statusEffects" : [ ],
-      "damageSourceKind" : "plasma",
+      "statusEffects" : [ "thea-meltdown" ],
+      "damageSourceKind" : "fire",
       "knockback" : 1
     },
 
@@ -83,14 +78,14 @@
 
     "chain" : {
       "startOffset" : [0, 0],
-      "segmentImage" : "/items/active/weapons/ranged/unique/defiant/beam.png",
-      "endSegmentImage" : "/items/active/weapons/ranged/unique/defiant/beamend.png",
+      "segmentImage" : "/items/active/weapons/ranged/unique/meltdown/beam.png",
+      "endSegmentImage" : "/items/active/weapons/ranged/unique/meltdown/beamend.png",
       "segmentSize" : 0.48,
       "overdrawLength" : 0.2,
       "taper" : 0,
       "waveform" : {
-        "frequency" : 1.0,
-        "amplitude" : 0.075,
+        "frequency" : 2.0,
+        "amplitude" : 0.125,
         "movement" : 40.0
       },
       "fullbright" : true,

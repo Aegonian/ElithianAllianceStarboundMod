@@ -1,0 +1,19 @@
+{
+  "name" : "karchaafrenzy",
+  "effectConfig" : {
+	"directive" : "fade=FF0000=0.25",
+    "powerModifier" : 1.25,
+    "speedModifier" : 1.5,
+	"airJumpModifier" : 1.25
+  },
+  "defaultDuration" : 5.0,
+
+  "scripts" : [
+    "/stats/effects/karchaafrenzy/karchaafrenzy.lua"
+  ],
+
+  "animationConfig" : "karchaafrenzy.animation",
+
+  "label" : "Blood Frenzy",
+  "icon" : "/interface/statuses/rage.png"
+}

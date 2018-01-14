@@ -1,0 +1,81 @@
+{
+  "background" : {
+    "type" : "background",
+    "fileHeader" : "/interface/tooltips/header.png",
+    "fileBody" : "/interface/tooltips/bodyobjectextended.png",
+    "fileFooter" : "/interface/tooltips/footerobjectextended.png"
+  },
+  "objectImage" : {
+    "type" : "image",
+    "position" : [67, 109],
+    "file" : "",
+    "centered" : true,
+    "maxSize" : [38, 38],
+    "minSize" : [38, 38]
+  },
+  "damagePerShotLabel" : {
+    "type" : "label",
+    "position" : [127, 72],
+    "hAnchor" : "right",
+    "value" : ""
+  },
+  "damagePerShotTitleLabel" : {
+    "type" : "label",
+    "position" : [12, 72],
+    "hAnchor" : "left",
+    "value" : "Damage Per Swing:"
+  },
+  "speedLabel" : {
+    "type" : "label",
+    "position" : [127, 63],
+    "hAnchor" : "right",
+    "value" : ""
+  },
+  "speedTitleLabel" : {
+    "type" : "label",
+    "position" : [12, 63],
+    "hAnchor" : "left",
+    "value" : "Rate of Fire:"
+  },
+  "comboFinisherLabel" : {
+    "type" : "label",
+    "position" : [127, 54],
+    "hAnchor" : "right",
+    "value" : ""
+  },
+  "comboFinisherTitleLabel" : {
+    "type" : "label",
+    "position" : [12, 54],
+    "hAnchor" : "left",
+    "value" : ""
+  },
+  "descriptionLabel" : {
+    "type" : "label",
+    "position" : [12, 53],
+    "hAnchor" : "left",
+    "vAnchor" : "top",
+    "wrapWidth" : 124,
+    "lineSpacing" : 1.0,
+    "value" : ""
+  },
+  "priceLabel" : {
+    "type" : "label",
+    "position" : [120, 23],
+    "hAnchor" : "left",
+    "value" : "tree"
+  },
+  "moneyIcon" : {
+    "type" : "image",
+    "position" : [107, 23],
+    "file" : "/interface/money.png"
+  },
+  //THIS REPLACES THE RARITY LABEL, CREATING A FAKE CUSTOM RARITY
+  "customRarityLabel" : {
+    "type" : "label",
+    "position" : [7, 23],
+    "hAnchor" : "left",
+    "centered" : true,
+    "wrapWidth" : 126,
+    "value" : "Unique"
+  }
+}

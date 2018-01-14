@@ -312,6 +312,24 @@
       "title" : "Blastsling",
       "description" : "A makeshift slingshot loaded with various bombs.",
       "icon" : "/items/active/weapons/ranged/unique/blastsling/akkimari-blastslingicon.png"
+    },
+	"akkimari-karchaablade" : {
+      "order" : 51,
+      "title" : "Karchaa Blade",
+      "description" : "A blade used by the savage Karchaa tribe.",
+      "icon" : "/items/active/weapons/melee/unique/karchaablade/akkimari-karchaablade.png:front"
+    },
+	"thea-siegerunner" : {
+      "order" : 52,
+      "title" : "Siegerunner",
+      "description" : "A hybrid assault rifle utilizing a conventional magazine.",
+      "icon" : "/items/active/weapons/ranged/unique/siegerunner/thea-siegerunnericon.png"
+    },
+	"thea-meltdown" : {
+      "order" : 53,
+      "title" : "C66 Meltdown",
+      "description" : "A powerful beam rifle that causes its targets to overheat.",
+      "icon" : "/items/active/weapons/ranged/unique/meltdown/thea-meltdown.png"
     }
   }
 }

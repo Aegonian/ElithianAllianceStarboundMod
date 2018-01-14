@@ -17,6 +17,7 @@ function TheaBeamFire:init()
     self.weapon:setDamage()
     activeItem.setScriptedAnimationParameter("chains", {})
     animator.setParticleEmitterActive("beamCollision", false)
+	animator.setParticleEmitterActive("muzzleFlash", false)
     animator.stopAllSounds("fireLoop")
     self.weapon:setStance(self.stances.idle)
   end
@@ -44,6 +45,8 @@ function TheaBeamFire:fire()
 
   animator.playSound("fireStart")
   animator.playSound("fireLoop", -1)
+  
+  animator.setParticleEmitterActive("muzzleFlash", true)
 
   local wasColliding = false
   while self.fireMode == (self.activatingFireMode or self.abilitySlot) and status.overConsumeResource("energy", (self.energyUsage or 0) * self.dt) and not world.lineTileCollision(mcontroller.position(), self:firePosition()) do
@@ -178,6 +181,7 @@ function TheaBeamFire:reset()
   activeItem.setScriptedAnimationParameter("chains", {})
   animator.setParticleEmitterActive("beamCollision", false)
   animator.setParticleEmitterActive("beamParticles", false)
+  animator.setParticleEmitterActive("muzzleFlash", false)
   animator.stopAllSounds("fireStart")
   animator.stopAllSounds("fireLoop")
 end
