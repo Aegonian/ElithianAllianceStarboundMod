@@ -1,0 +1,76 @@
+{
+  "objectName" : "alliancesprinkler",
+  "colonyTags" : ["alliance", "farming"],
+  "category" : "wire",
+  "price" : 200,
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "An automated soil watering solution.",
+  "shortdescription" : "Alliance Sprinkler",
+
+  "apexDescription" : "A sprinkler. Quite a clever way to water crops.",
+  "avianDescription" : "It's a machine that waters crops automatically.",
+  "floranDescription" : "Waters cropss..",
+  "glitchDescription" : "Unimpressed. It is an automated soil watering solution. I enjoy watering my plants by hand.",
+  "humanDescription" : "It's a sprinkler for watering crops! Running through sprinklers makes me feel nostalgic.",
+  "hylotlDescription" : "It is used to water crops. Simple, but rather clever.",
+  "novakidDescription" : "Waterin' crops made simple.",
+
+  "aegiDescription" : "A standard ceiling sprinkler.",
+  "avikanDescription" : "What a waste of water...",
+  "erixianDescription" : "This irrigation system will keep plants well-watered.",
+  "trinkDescription" : "Not the most efficient sprinkler.",
+  "hymidDescription" : "A prinkler, what a relief!",
+  "notixDescription" : "Simply a sprinkler.",
+  "jorgasianDescription" : "A sprinkler, for watering crops.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected alien irrigation system.",
+
+  "inventoryIcon" : "alliancesprinklericon.png",
+  "orientations" : [
+    {
+      "image" : "alliancesprinkler.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+
+      "animationPosition" : [0, 0],
+      "animationParts" : {
+        "bg" : "alliancesprinkler.png",
+        "fg" : "alliancesprinklerlit.png"
+      },
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/scripts/thea-projectiletrap.lua" ],
+  "scriptDelta" : 2,
+
+  "animation" : "/objects/wired/projectiletrap/projectiletrap.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "shoot" : [ ],
+      "on" : [ ],
+      "off" : [ ]
+    }
+  },
+
+  "inputNodes" : [ [0, 0] ],
+
+  "inactiveLightColor" : [0, 0, 0],
+  "activeLightColor" : [0, 0, 0],
+
+  "fireTime" : 0.2,
+  "fireTimeVariance" : 0.05,
+  "inaccuracy" : 0.9,
+  "projectileDirection" : [0, -1],
+  "projectilePosition" : [1, 0.0],
+  "projectile" : "thea-waterdroplet",
+  "projectileCount" : "2",
+  "projectileConfig" : {
+    "damageTeam" : { "type" : "indiscriminate" },
+    "power" : 0
+  }
+}

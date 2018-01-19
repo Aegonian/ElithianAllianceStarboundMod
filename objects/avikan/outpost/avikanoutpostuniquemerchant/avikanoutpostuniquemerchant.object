@@ -73,6 +73,7 @@
 	  [ "avikan-rhakorilongbow", "avikan-vhalakinbow" ],
 	  [ "avikan-linebreaker", "avikan-oathbreaker" ],
 	  [ "avikan-vhalakinlongbow", "avikanteslaspear" ],
+	  [ "avikan-conscriptor", "avikan-anakahrstaff" ],
 		//Centens Weapons
 	  [ "avikan-handofrhadeis", "centens-deathseeker" ],
 	  [ "centens-voideater", "centens-voiceofrhadeis" ],
@@ -82,8 +83,11 @@
 	  [ "trink-energizer", "trink-arclighter" ],
 		//Alliance Weapons
 	  [ "thea-sidewinder", "thea-skylighter" ],
+	  [ "thea-defiant", "thea-meltdown" ],
+	  [ "thea-siegerunner" ],
 		//Akkimari Weapons
-	  [ "akkimari-sawbladelauncher", "akkimari-scrapyard" ]
+	  [ "akkimari-sawbladelauncher", "akkimari-scrapyard" ],
+	  [ "akkimari-blastsling", "akkimari-karchaablade" ]
     ]
   }
 }

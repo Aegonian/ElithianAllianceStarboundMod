@@ -1,0 +1,61 @@
+{
+  "objectName" : "alliancereceptiondesk",
+  "colonyTags" : ["alliance"],
+  "printable" : false,
+  "rarity" : "Common",
+  "category" : "furniture",
+  "price" : 200,
+  "description" : "desk often seen in corporate lobbies.",
+  "shortdescription" : "Alliance Reception Desk",
+  "race" : "aegi",
+
+  "apexDescription" : "A reception desk. Perhaps I can learn something here.",
+  "avianDescription" : "A receptionist's desk.",
+  "floranDescription" : "Dessk for greeting people.",
+  "glitchDescription" : "Observation. A reception desk.",
+  "humanDescription" : "A reception desk. Am I supposed to check in here?",
+  "hylotlDescription" : "A simple reception desk. From the look of it, it was recently cleaned.",
+  "novakidDescription" : "Might be I can get some info here.",
+
+  "aegiDescription" : "A reception desk. It's often the first place new visitors go to.",
+  "avikanDescription" : "An alien desk. Is this just for greeting people?",
+  "erixianDescription" : "A standard reception desk.",
+  "trinkDescription" : "A reception desk. I may learn something here.",
+  "hymidDescription" : "This reception desk looks incredibly well-cleaned.",
+  "notixDescription" : "A reception desk, I think.",
+  "jorgasianDescription" : "Just a reception desk.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien desk.",
+
+  "inventoryIcon" : "alliancereceptiondeskicon.png",
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+
+  "orientations" : [
+    {
+      "image" : "alliancereceptiondeskleft.png:<color>",
+      "imagePosition" : [-32, 0],
+      "direction" : "left",
+
+      "sitPosition" : [2, 22],
+	  "sitCoverImage" : "/objects/alliance/furniture/alliancereceptiondesk/alliancereceptiondeskleftcover.png",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "alliancereceptiondesk.png:<color>",
+      "imagePosition" : [-32, 0],
+      "direction" : "right",
+
+      "sitPosition" : [2, 22],
+	  "sitCoverImage" : "/objects/alliance/furniture/alliancereceptiondesk/alliancereceptiondeskcover.png",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

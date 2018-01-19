@@ -10,13 +10,16 @@ end
 function onInteraction(args)
   local interactData = config.getParameter("interactData")
 
+  --Create an empty list of recipes
   interactData.recipes = {}
+  --Build the function used to populate the list
   local addRecipes = function(items, category, price)
     for i, item in ipairs(items) do
       interactData.recipes[#interactData.recipes + 1] = generateRecipe(item, category, price)
     end
   end
 
+  --Load in our statis stock
   local storeInventory = config.getParameter("storeInventory")
   addRecipes(storeInventory.guaranteed, "guaranteed", self.regularPrice)
   addRecipes(storeInventory.augments, "augments", self.augmentPrice)

@@ -1,0 +1,28 @@
+{
+  "materialId" : 30085,
+  "materialName" : "alliancefence",
+  "particleColor" : [157, 157, 157, 255],
+  "itemDrop" : "alliancefence",
+  "shortdescription" : "Alliance Fence",
+  
+  "description" : "A sturdy metal fence.",
+  "glitchDescription" : "Pleased. A sturdy fence like this will keep out any unwanted creatures.",
+  "floranDescription" : "Sssturdy fence.",
+  "novakidDescription" : "A strong lookin' metal fence. Might be useful for buildin' a ranch.",
+  
+  "drodenDescription" : "Analysis complete. Metal fencing.",
+  
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 6,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "alliancefence.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "multiColored" : true,
+    "occludesBelow" : false,
+    "zLevel" : 0
+  }
+}

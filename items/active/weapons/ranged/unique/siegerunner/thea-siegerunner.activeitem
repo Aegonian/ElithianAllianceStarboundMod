@@ -68,8 +68,8 @@
     "class" : "TheaAmmoFire",
 
     "fireTime" : 0.14,
-    "baseDps" : 12.0,
-    "inaccuracy" : 0.015,
+    "baseDps" : 10.5,
+    "inaccuracy" : 0.02,
 	
 	"reloadTime" : 2.2,
 	

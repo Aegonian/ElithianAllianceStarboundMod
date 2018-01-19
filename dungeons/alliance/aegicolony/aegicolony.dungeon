@@ -1,0 +1,112 @@
+{
+  "metadata" : {
+    "name" : "aegicolony",
+    "species" : "aegi",
+    "rules" : [
+    ],
+    "anchor" : [ "aegicolony-prefabhomemedium1" ],
+    "gravity" : 80,
+    "maxRadius" : 100000,
+    "maxParts" : 14,
+    "extendSurfaceFreeSpace" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+    //============================================= PREFAB HOMES =============================================
+	{
+      "name" : "aegicolony-prefabhomemedium1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "aegicolony-prefabhomemedium1", "aegicolony-prefabhomemedium2", "aegicolony-prefabhomelarge1", "aegicolony-prefabhomelarge2" ] ]
+      ],
+      "def" : [ "tmx", "aegicolony-prefabhomemedium1.json" ],
+      "chance" : 0.1
+    },
+    {
+      "name" : "aegicolony-prefabhomemedium2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "aegicolony-prefabhomemedium1", "aegicolony-prefabhomemedium2", "aegicolony-prefabhomelarge1", "aegicolony-prefabhomelarge2" ] ]
+      ],
+      "def" : [ "tmx", "aegicolony-prefabhomemedium1.json" ],
+      "chance" : 0.1
+    },
+    {
+      "name" : "aegicolony-prefabhomelarge1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "aegicolony-prefabhomemedium1", "aegicolony-prefabhomemedium2", "aegicolony-prefabhomelarge1", "aegicolony-prefabhomelarge2" ] ]
+      ],
+      "def" : [ "tmx", "aegicolony-prefabhomelarge1.json" ],
+      "chance" : 0.1
+    },
+    {
+      "name" : "aegicolony-prefabhomelarge2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "aegicolony-prefabhomemedium1", "aegicolony-prefabhomemedium2", "aegicolony-prefabhomelarge1", "aegicolony-prefabhomelarge2" ] ]
+      ],
+      "def" : [ "tmx", "aegicolony-prefabhomelarge2.json" ],
+      "chance" : 0.1
+    },
+    {
+      "name" : "aegicolony-prefabhomesmall1",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "aegicolony-prefabhomesmall1" ] ]
+      ],
+      "def" : [ "tmx", "aegicolony-prefabhomesmall1.json" ],
+      "chance" : 0.1
+    },
+    {
+      "name" : "aegicolony-prefabhomesmall2",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "aegicolony-prefabhomesmall2" ] ]
+      ],
+      "def" : [ "tmx", "aegicolony-prefabhomesmall2.json" ],
+      "chance" : 0.1
+    },
+	
+    //============================================= LARGE BUILDINGS =============================================
+    {
+      "name" : "aegicolony-largebase1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "aegicolony-largebase1.json" ],
+      "chance" : 1
+    },
+	
+    //============================================= DECORATION =============================================
+    {
+      "name" : "aegicolony-garden1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "aegicolony-garden1", "aegicolony-smallgarden1", "aegicolony-smallgarden2" ] ]
+      ],
+      "def" : [ "tmx", "aegicolony-garden1.json" ],
+      "chance" : 0.1
+    },
+    {
+      "name" : "aegicolony-smallgarden1",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "aegicolony-garden1", "aegicolony-smallgarden1", "aegicolony-smallgarden2" ] ]
+      ],
+      "def" : [ "tmx", "aegicolony-smallgarden1.json" ],
+      "chance" : 0.1
+    },
+    {
+      "name" : "aegicolony-smallgarden2",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "aegicolony-garden1", "aegicolony-smallgarden1", "aegicolony-smallgarden2" ] ]
+      ],
+      "def" : [ "tmx", "aegicolony-smallgarden2.json" ],
+      "chance" : 0.1
+    }
+  ]
+}

@@ -22,5 +22,13 @@
       "friction": 1.0,
       "speedLimit": 60
     }
+  },
+  {
+    "op": "add",
+    "path": "/alliancerail",
+    "value": {
+      "friction": 1.0,
+      "speedLimit": 60
+    }
   }
 ]

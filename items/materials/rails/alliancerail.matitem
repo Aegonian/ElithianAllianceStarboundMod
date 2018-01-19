@@ -1,0 +1,11 @@
+{
+  "itemName" : "alliancerail",
+  "price" : 0,
+  "category" : "rail",
+  "rarity" : "Common",
+  "inventoryIcon" : "alliancerail.png",
+  "shortdescription" : "Alliance Rail",
+  "description" : "A strong reinforced rail.",
+
+  "materialId" : 30203
+}

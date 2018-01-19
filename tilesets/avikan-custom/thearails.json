@@ -1,0 +1,53 @@
+{ "margin":0,
+ "name":"thearails",
+ "properties":
+    {
+
+    },
+ "spacing":0,
+ "tilecount":4,
+ "tileheight":8,
+ "tileproperties":
+    {
+     "0":
+        {
+         "\/\/shortdescription":"Alliance Rail",
+         "material":"alliancerail"
+        },
+     "1":
+        {
+         "\/\/shortdescription":"Dark Avikan Rail",
+         "material":"avikandarkrail"
+        },
+     "2":
+        {
+         "\/\/shortdescription":"Avikan Rail",
+         "material":"avikanrail"
+        },
+     "3":
+        {
+         "\/\/shortdescription":"Trinkian Rail",
+         "material":"trinkrail"
+        }
+    },
+ "tiles":
+    {
+     "0":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/rails\/alliancerail.png"
+        },
+     "1":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/rails\/avikandarkrail.png"
+        },
+     "2":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/rails\/avikanrail.png"
+        },
+     "3":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/rails\/trinkrail.png"
+        }
+    },
+ "tilewidth":8
+}

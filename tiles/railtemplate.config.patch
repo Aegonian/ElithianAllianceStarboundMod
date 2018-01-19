@@ -24,6 +24,14 @@
       "id": 30202
     }
   },
+  {
+    "op": "add",
+    "path": "/rules/IsRail/entries/-",
+    "value": {
+      "type": "EqualsId",
+      "id": 30203
+    }
+  },
   //NotRail rules
   {
     "op": "add",
@@ -49,6 +57,15 @@
     "value": {
       "type": "EqualsId",
       "id": 30202,
+      "inverse": true
+    }
+  },
+  {
+    "op": "add",
+    "path": "/rules/NotRail/entries/-",
+    "value": {
+      "type": "EqualsId",
+      "id": 30203,
       "inverse": true
     }
   }

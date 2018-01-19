@@ -13,7 +13,7 @@
 		{"weight" : 0.30, "pool" : "alliancecraftingmaterials" },
 		{"weight" : 0.20, "item" : ["alliancemetal", 2] },
 		{"weight" : 0.10, "pool" : "alliancecodex" },
-		{"weight" : 0.10, "pool" : "allianceclothing" },
+		{"weight" : 0.10, "pool" : "aegiclothing" },
 		{"weight" : 0.05, "item" : "alliancecache" }
       ]
     } ]
@@ -32,8 +32,25 @@
 		{"weight" : 0.25, "pool" : "alliancecraftingmaterials" },
 		{"weight" : 0.20, "item" : ["alliancemetal", 3] },
 		{"weight" : 0.10, "pool" : "alliancecodex" },
-		{"weight" : 0.10, "pool" : "allianceclothing" },
+		{"weight" : 0.10, "pool" : "aegiclothing" },
 		{"weight" : 0.10, "item" : "alliancecache" }
+      ]
+    } ]
+  ],
+  
+  "allianceshippingcontainer" : [
+    [1, {
+      "poolRounds" : [
+        [0.3, 6],
+        [0.4, 8],
+        [0.2, 10],
+        [0.1, 12]
+      ],
+      "pool" : [
+		{"weight" : 0.9, "pool" : "alliancecraftingmaterials" },
+		{"weight" : 0.03, "pool" : "alliancecodex" },
+		{"weight" : 0.03, "pool" : "aegiclothing" },
+		{"weight" : 0.03, "item" : "alliancecache" }
       ]
     } ]
   ],
@@ -56,7 +73,21 @@
         [0.1, 4]
       ],
       "pool" : [
-        {"weight" : 1.0, "pool" : "alliancefood" }
+        {"weight" : 1.0, "pool" : "alliancefood" },
+        {"weight" : 1.0, "pool" : "alliancedrinks" }
+      ]
+    } ]
+  ],
+  
+  "alliancecloset" : [
+    [1, {
+      "poolRounds" : [
+        [0.7, 0],
+        [0.3, 1]
+      ],
+	  "pool" : [
+		{"weight" : 0.5, "pool" : "alliancecodex" },
+		{"weight" : 0.5, "pool" : "aegiclothing" }
       ]
     } ]
   ],
@@ -193,10 +224,19 @@
     } ]
   ],
   
+  "alliancedrinks" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.25, "item" : "alliancesodabottle" },
+		{"weight" : 0.05, "item" : "alliancesodacan" }
+      ]
+    } ]
+  ],
+  
   "alliancefood" : [
     [1, {
       "pool" : [
-        {"weight" : 0.25, "item" : "avikanmeatchunk" },
+        {"weight" : 0.25, "item" : "bread" },
 		{"weight" : 0.05, "item" : "avikanmeal" },
 		{"weight" : 0.25, "item" : "dunebun" },
 		{"weight" : 0.05, "item" : "stuffeddunebun" },

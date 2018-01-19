@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":55,
+ "tilecount":73,
  "tileheight":8,
  "tileproperties":
     {
@@ -342,6 +342,31 @@
          "\/\/shortdescription":"Trinkian Sloped Panel",
          "material":"trinkslopedpanel"
         },
+     "55":
+        {
+         "\/\/shortdescription":"Double Alliance Panel",
+         "material":"alliancedoublepanel"
+        },
+     "56":
+        {
+         "\/\/shortdescription":"Alliance Farming Block",
+         "material":"alliancefarmpanel"
+        },
+     "57":
+        {
+         "\/\/shortdescription":"Alliance Glass",
+         "material":"allianceglass"
+        },
+     "58":
+        {
+         "\/\/shortdescription":"Alliance Ground Panel",
+         "material":"alliancegroundpanel"
+        },
+     "59":
+        {
+         "\/\/shortdescription":"Alliance Hull Panel",
+         "material":"alliancehullpanel"
+        },
      "6":
         {
          "\/\/description":"A THEA material",
@@ -349,12 +374,77 @@
          "\/\/shortdescription":"Avikan Farm Panel",
          "material":"avikanfarmpanel"
         },
+     "60":
+        {
+         "\/\/shortdescription":"Alliance Interface Wall",
+         "material":"allianceinterfacewall"
+        },
+     "61":
+        {
+         "\/\/shortdescription":"Alliance Platform",
+         "material":"allianceplatform"
+        },
+     "62":
+        {
+         "\/\/shortdescription":"Alliance Prefab Wall",
+         "material":"allianceprefabwall"
+        },
+     "63":
+        {
+         "\/\/shortdescription":"Alliance Reinforcement",
+         "material":"alliancereinforcement"
+        },
+     "64":
+        {
+         "\/\/shortdescription":"Alliance Sloped Glass",
+         "material":"allianceslopedglass"
+        },
+     "65":
+        {
+         "\/\/shortdescription":"Alliance Sloped Panel",
+         "material":"allianceslopedpanel"
+        },
+     "66":
+        {
+         "\/\/shortdescription":"Alliance Panel",
+         "material":"alliancesmoothpanel"
+        },
+     "67":
+        {
+         "\/\/shortdescription":"Alliance Stairs",
+         "material":"alliancestairsplatform"
+        },
+     "68":
+        {
+         "\/\/shortdescription":"Striped Alliance Panel",
+         "material":"alliancestripedpanel"
+        },
+     "69":
+        {
+         "\/\/shortdescription":"Alliance Support Beam",
+         "material":"alliancesupport"
+        },
      "7":
         {
          "\/\/description":"A THEA material",
          "\/\/name":"avikanfence",
          "\/\/shortdescription":"Avikan Fence",
          "material":"avikanfence"
+        },
+     "70":
+        {
+         "\/\/shortdescription":"Thick Alliance Platform",
+         "material":"alliancethickplatform"
+        },
+     "71":
+        {
+         "\/\/shortdescription":"Thick Alliance Stairs",
+         "material":"alliancethickstairsplatform"
+        },
+     "72":
+        {
+         "\/\/shortdescription":"Alliance Fence",
+         "material":"alliancefence"
         },
      "8":
         {
@@ -577,13 +667,85 @@
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/trinkslopedpanel.png"
         },
+     "55":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/alliancedoublepanel.png"
+        },
+     "56":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/alliancefarmpanel.png"
+        },
+     "57":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/allianceglass.png"
+        },
+     "58":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/alliancegroundpanel.png"
+        },
+     "59":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/alliancehullpanel.png"
+        },
      "6":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/avikanfarmpanel.png"
         },
+     "60":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/allianceinterfacewall.png"
+        },
+     "61":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/allianceplatform.png"
+        },
+     "62":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/allianceprefabwall.png"
+        },
+     "63":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/alliancereinforcement.png"
+        },
+     "64":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/allianceslopedglass.png"
+        },
+     "65":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/allianceslopedpanel.png"
+        },
+     "66":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/alliancesmoothpanel.png"
+        },
+     "67":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/alliancestairsplatform.png"
+        },
+     "68":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/alliancestripedpanel.png"
+        },
+     "69":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/alliancesupport.png"
+        },
      "7":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/avikanfence.png"
+        },
+     "70":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/alliancethickplatform.png"
+        },
+     "71":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/alliancethickstairsplatform.png"
+        },
+     "72":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/alliancefence.png"
         },
      "8":
         {

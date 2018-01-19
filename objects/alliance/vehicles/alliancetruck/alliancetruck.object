@@ -35,7 +35,7 @@
   "orientations" : [
     {
       "image" : "alliancetruck.png:<color>",
-      "imagePosition" : [-80, 0],
+      "imagePosition" : [-88, 0],
       "direction" : "right",
 
       "spaceScan" : 0.1,

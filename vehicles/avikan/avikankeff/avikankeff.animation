@@ -341,10 +341,8 @@
       "active" : false,
       "transformationGroups" : ["flip", "rotation"],
       "position" : [0.5, 1.0],
-      "color" : [120, 80, 0],
-      "pointLight" : true,
-      "pointAngle" : 140,
-      "pointBeam" : 5
+      "color" : [60, 40, 0],
+      "pointLight" : false
     },
     "headlightBeam" : {
       "active" : false,

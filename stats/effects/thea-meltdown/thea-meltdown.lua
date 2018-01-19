@@ -14,6 +14,10 @@ function init()
 end
 
 function update(dt)
+  --Remove other burning effect to prevent double damage
+  status.removeEphemeralEffect("burning")
+  status.removeEphemeralEffect("thea-burning")
+  
   --Burning code
   if effect.duration() and world.liquidAt({mcontroller.xPosition(), mcontroller.yPosition() - 1}) then
     effect.expire()
@@ -38,12 +42,20 @@ function update(dt)
   
   --Dynamic overlay and border effect
   local factor = (self.activeTimer / config.getParameter("timeToExplode", 5)) * 0.5
-  local borderWidth = math.ceil((self.activeTimer / config.getParameter("timeToExplode", 5)) * 10)
-  local borderIntensity = math.ceil((self.activeTimer / config.getParameter("timeToExplode", 5)) * 80) + 10
+  local borderWidth = math.ceil(self.activeTimer / config.getParameter("timeToExplode", 5) * 10)
+  local borderIntensity = math.ceil(self.activeTimer / config.getParameter("timeToExplode", 5) * 80) + 10
   local directive = "fade=BF3300=" .. factor .. "?border=" .. borderWidth .. ";BF3300" .. borderIntensity .. ";00000000"
   effect.setParentDirectives(directive)
   
+  local R = math.ceil(self.activeTimer / config.getParameter("timeToExplode", 5) * 127) + 127
+  local G = math.ceil(self.activeTimer / config.getParameter("timeToExplode", 5) * 63) + 63
+  local B = math.ceil(self.activeTimer / config.getParameter("timeToExplode", 5) * 5) + 5
+  local lightColour = {R, G, B}
+  
+  animator.setLightColor("glow", lightColour)
+  
   --world.debugText(borderIntensity, mcontroller.position(), "blue")
+  --world.debugText(sb.printJson(lightColour), mcontroller.position(), "blue")
   
   if self.activeTimer >= config.getParameter("timeToExplode", 5) then
 	explode()

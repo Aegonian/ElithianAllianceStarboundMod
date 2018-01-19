@@ -8,7 +8,7 @@
     "bombConfig" : "/projectiles/explosions/avikanfireexplosion/avikanfireexplosion.config",
 	"explosionDamage" : 75
   },
-  "defaultDuration" : 0.5,
+  "defaultDuration" : 0.25,
 
   "scripts" : [
     "thea-meltdown.lua"
