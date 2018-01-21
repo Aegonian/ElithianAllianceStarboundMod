@@ -52,5 +52,21 @@
           }
         ]
       }	
+	},
+	
+	
+	//MONSTERS AND CRITTERS
+	{ "op" : "add",
+	  "path" : "/spawnProfile/groups/0/pool/-",
+	  "value" : [ 0.111, "faryth" ]
+	},
+	{ "op" : "add",
+	  "path" : "/spawnProfile/groups/-",
+	  "value" : {
+		"select" : 1,
+        "pool" : [
+          [ 1.0, "kelbet" ]
+        ]
+	  }
 	}
 ]

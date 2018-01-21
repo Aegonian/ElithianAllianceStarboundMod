@@ -6,7 +6,7 @@
   "shortdescription" : "Alliance Shield Generator",
   "race" : "aegi",
   "price" : 500,
-  "lightColor" : [128, 58, 8],
+  "lightColor" : [0, 96, 128],
   "category" : "wire",
   "printable" : false,
 
@@ -80,7 +80,7 @@
   "health" : 750,
   "interactive" : false,
 
-  "smashParticles" : [ { "count" : 50, "particle" : "avikanmetalshard" }, { "count" : 50, "particle" : "avikanmetalshard2" }, { "count" : 10, "particle" : "generatorglassshard" } ],
+  "smashParticles" : [ { "count" : 50, "particle" : "alliancemetalshard" }, { "count" : 50, "particle" : "alliancemetalshard" }, { "count" : 10, "particle" : "generatorglassshard" } ],
   "smashDropPool" : "empty",
   "breakDropPool" : "empty",
 

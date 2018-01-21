@@ -1,0 +1,61 @@
+{
+  "objectName" : "alliancelandingbeacon",
+  "colonyTags" : ["alliance", "light"],
+  "rarity" : "Common",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A light used to guide in incoming ships.",
+  "shortdescription" : "Alliance Landing Beacon",
+  "race" : "aegi",
+
+  "apexDescription" : "A standing lamp.",
+  "avianDescription" : "A light.",
+  "floranDescription" : "Light. Ssshiny.",
+  "glitchDescription" : "Observation. A simple light.",
+  "humanDescription" : "A lamp.",
+  "hylotlDescription" : "An elegant standing lamp.",
+
+  "aegiDescription" : "A simple standing lamp.",
+  "avikanDescription" : "A practical light.",
+  "erixianDescription" : "Simply a standing lamp.",
+  "trinkDescription" : "A standing lamp.",
+  "hymidDescription" : "It's a standing lamp.",
+  "notixDescription" : "A standing lamp.",
+  "jorgasianDescription" : "A simple standing lamp.",
+  "centensDescription" : "A light source.",
+  "dremetonDescription" : "A lovely light.",
+  "theleanDescription" : "Light.",
+  "drodenDescription" : "Light.",
+
+  "category" : "light",
+  "lightColor" : [127, 127, 127],
+
+  "inventoryIcon" : "alliancelandingbeaconicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "alliancelandingbeacon.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "animationCycle" : 0.5,
+	  
+      "lightPosition" : [0, 2],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+  "animationParts" : {
+    "bg" : "alliancelandingbeacon.png",
+    "fg" : "alliancelandingbeaconlit.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : [ "/objects/scripts/thea-pulsatinglight.lua" ],
+  "scriptDelta" : 5,
+  
+  "onTime" : 0.75,
+  "offTime" : 0.75,
+  "smoothTransition" : false,
+  "transitionTime" : 0.2
+}

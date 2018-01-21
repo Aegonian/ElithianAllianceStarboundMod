@@ -203,5 +203,18 @@
       ]
     }]
    ]
+  },
+  
+  {"op" : "add",
+   "path" : "/farythHunting",
+   "value" : [
+	[1, {
+      "pool" : [
+		{"weight" : 0.599, "item" : "alienmeat"},
+		{"weight" : 0.399, "item" : "farythscale"},
+        {"weight" : 0.002, "item" : "farythaf"}
+      ]
+    }]
+   ]
   }
 ]

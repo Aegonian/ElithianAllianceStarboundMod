@@ -251,8 +251,7 @@
 	[0, {
       "pool" : [
         {"weight" : 0.7, "pool" : "money"},
-		{"weight" : 0.1, "item" : "alliancesodacan"},
-		{"weight" : 0.1, "item" : "alliancesodabottle"},
+		{"weight" : 0.2, "pool" : "alliancedrinks"},
 		{"weight" : 0.1, "item" : "alliancecloth"}
       ],
       "poolRounds" : [

@@ -1,0 +1,32 @@
+{
+  "objectName" : "farythaf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "legendary",
+  "category" : "actionFigure",
+  "collectablesOnPickup" : { "actionfigures" : "farythaf" },
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"A flying creature from Elithia, the Faryth is a fast and nimble predator.\"",
+  "shortdescription" : "Faryth Figurine",
+
+  "inventoryIcon" : "farythaf.png",
+  "orientations" : [
+    {
+      "image" : "farythaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "farythaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

@@ -15,8 +15,8 @@
 	  "dualImage" : "theaanimationtest.png:<color>.<frame>",
 	  
       "imagePosition" : [0, 0],
-      "frames" : 16,
-      "animationCycle" : 1.6,
+      "frames" : 8,
+      "animationCycle" : 0.8,
 
       "spaceScan" : 0.1
     }

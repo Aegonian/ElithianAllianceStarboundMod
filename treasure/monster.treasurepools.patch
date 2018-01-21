@@ -303,6 +303,20 @@
       ],
       "allowDuplication" : false
     }]
-   ]	
+   ]
+  },
+  
+  {"op" : "add",
+   "path" : "/farythTreasure",
+   "value" : [
+	[1, {
+      "pool" : [
+        {"weight" : 0.699, "pool" : "money"},
+		{"weight" : 0.10, "item" : "monsterbone"},
+		{"weight" : 0.20, "item" : "farythscale"},
+        {"weight" : 0.001, "item" : "farythaf"}
+      ]
+    }]
+   ]
   }
 ]

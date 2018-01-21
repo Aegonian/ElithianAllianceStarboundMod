@@ -137,5 +137,14 @@
 		"order" : 82,
 		"item" : "akkimariflicaf"
 	  }
+	},
+	{
+	  "op": "add", 
+	  "path": "/collectables/farythaf",
+	  "value": 		
+	  {
+		"order" : 83,
+		"item" : "farythaf"
+	  }
 	}
 ]

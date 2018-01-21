@@ -1,0 +1,206 @@
+{
+  "type" : "faryth",
+  "shortdescription" : "Faryth",
+  "description" : "A flying creature from Elithia, the Faryth is a fast and nimble predator.",
+
+  "categories" : [ "faryth" ],
+  "parts" : [ "body" ],
+
+  "animation" : "faryth.animation",
+
+  "dropPools" : [ { "default" : "farythTreasure", "bow" : "farythHunting", "avikanhunting" : "avikanhunting", "keffridersspear" : "avikanhunting" } ],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+
+    "behavior" : "monster",
+
+	"seeThroughLiquid" : false,
+    "behaviorConfig" : {
+      "damageOnTouch" : true,
+
+      "queryTargets" : true,
+      "targetQueryRange" : 35,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : true,
+      "keepTargetInRange" : 60,
+      "targetOutOfSightTime" : 3.5,
+
+      "foundTargetActions" : [ ],
+
+      "fleeActions" : [ ],
+
+      "hostileActions" : [
+        {
+          "name" : "action-swoop",
+          "cooldown" : 1.0,
+          "parameters" : {
+            "minimumRange" : 5,
+            "maximumRange" : 35,
+            "onGround" : false,
+			"windupState": "swoopwindup",
+            "windupTime" : 0.6,
+
+			"swoopState": "swoop",
+            "gravityMultiplier" : -0.85,
+            "swoopVelocity" : 50,
+            "collisionCheck" : true,
+            "highArc" : false,
+			"minSwoopTime": 0.1,
+            "swoopTime" : 0.75,
+
+            "winddownTime" : 0.4,
+            "winddownState" : "fly",
+            "winddownStopForce" : 35
+          }
+        }
+	  ],
+
+      "periodicActions" : [ ],
+
+      "approachActions" : [
+        {
+          "name" : "approach-fly",
+          "parameters" : {
+			"minRange": 8,
+			"maxRange": 16
+          }
+        }
+      ],
+
+      "followActions" : [
+        {
+          "name" : "approach-teleport",
+          "parameters" : {}
+        },
+        {
+          "name" : "approach-fly",
+          "parameters" : {
+			"minRange": 3,
+			"maxRange": 10
+          }
+        }
+      ],
+
+      "wanderActions" : [
+        {
+          "name" : "land-fly",
+          "cooldown" : 6,
+          "parameters" : {
+            "landDirection" : [0, -1],
+            "flySpeed" : 12,
+            "flyControlForce" : 20,
+            "idleTime" : [2,4],
+            "landState" : "idle"
+          }
+        },
+        {
+          "name" : "wander-fly",
+          "parameters" : {
+            "wanderTime" : [2,4],
+            "groundDistance" : 8,
+            "ceilingDistance" : 8,
+            "xVelocity" : 12,
+            "yVelocity" : 18
+          }
+        }
+      ],
+
+      "concurrentActions" : [ ],
+
+      "concurrentHostileActions" : [ ]
+    },
+
+    "touchDamage" : {
+      "poly" : [ [0.5, 0.75],  [0.75, 0.5], [0.75, -0.5], [0.5, -0.75], [-0.5, -0.75], [-0.75, -0.5], [-0.75, 0.5], [-0.5, 0.75] ],
+      "damage" : 10,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "lash",
+      "knockback" : 20,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-4, -4, 4, 4],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [0.5, 0.75],  [0.75, 0.5], [0.75, -0.5], [0.5, -0.75], [-0.5, -0.75], [-0.75, -0.5], [-0.75, 0.5], [-0.5, 0.75] ],
+
+      "mass" : 0.5,
+      "walkSpeed" : 4,
+      "runSpeed" : 12,
+      "gravityEnabled" : false,
+
+      "airFriction" : 3.5,
+      "airForce" : 60,
+      "flySpeed" : 25
+    },
+
+    "bodyMaterialKind" : "organic",
+
+    "knockoutTime" : 0.3,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "organic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.25
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 9
+        },
+        "maxHealth" : {
+          "baseValue" : 80
+        },
+        "protection" : {
+          "baseValue" : 0.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -8],
+    "capturable" : true,
+    "captureHealthFraction" : 0.5,
+    "nametagColor" : [64, 200, 255],
+    "captureCollectables" : { "monsters" : "faryth" }
+  }
+}

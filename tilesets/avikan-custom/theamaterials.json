@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":73,
+ "tilecount":74,
  "tileheight":8,
  "tileproperties":
     {
@@ -446,6 +446,11 @@
          "\/\/shortdescription":"Alliance Fence",
          "material":"alliancefence"
         },
+     "73":
+        {
+         "\/\/shortdescription":"Alliance Pipe",
+         "material":"alliancepipe"
+        },
      "8":
         {
          "\/\/description":"A THEA material",
@@ -746,6 +751,10 @@
      "72":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/alliancefence.png"
+        },
+     "73":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/alliancepipe.png"
         },
      "8":
         {

@@ -1,0 +1,17 @@
+{
+  "itemName" : "alliancesodacan2",
+  "rarity" : "Common",
+  "price" : 40,
+  "category" : "drink",
+  "inventoryIcon" : "alliancesodacan2.png",
+  "description" : "A can of sparkling Le'mar.",
+  "shortdescription" : "Le'mar Can",
+  "maxStack" : 1,
+  "effects" : [ [
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 30
+    }
+  ] ],
+  "emitters" : [ "drinking" ]
+}

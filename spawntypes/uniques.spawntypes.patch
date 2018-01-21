@@ -1,16 +1,14 @@
-[	
-  //DESERT WETLANDS BIOME
-  {"op" : "add",
-   "path" : "/-",
-   "value" :
-			
-    {
-      "name" : "largesandcrawler",
-
-      "spawnParameters" : {
-        "area" : "surface",
-        "region" : "all",
-        "time" : "all"
+[
+  //===================================== KADAVAN WILDLIFE =====================================
+  {
+	"op" : "add",
+	"path" : "/-",
+	"value" : {
+	  "name" : "largesandcrawler",
+	  "spawnParameters" : {
+		"area" : "surface",
+		"region" : "all",
+		"time" : "all"
       },
       "groupSize" : [1, 2],
       "spawnChance" : 0.1,
@@ -18,60 +16,51 @@
       "monsterParameters" : {
         "aggressive" : true
       }
-    }		
+    }
   },
-  
-  {"op" : "add",
-   "path" : "/-",
-   "value" :
-			
-    {
-      "name" : "kadavanvalahr",
-
+  {
+	"op" : "add",
+	"path" : "/-",
+	"value" : {
+	  "name" : "kadavanvalahr",
       "spawnParameters" : {
         "area" : "ceiling",
         "region" : "all",
         "time" : "all"
       },
 	  "groupSize" : [2, 3],
-      "spawnChance" : 0.1,
+	  "spawnChance" : 0.1,
       "monsterType" : "kadavanvalahr",
       "monsterParameters" : {
         "aggressive" : true
       }
-    }		
+    }
   },
-  
-  {"op" : "add",
-   "path" : "/-",
-   "value" :
-			
-    {
-      "name" : "kadavanswarm",
-
-      "spawnParameters" : {
-        "area" : "surface",
-        "region" : "exposed",
-        "time" : "day"
-      },
-      "groupSize" : [1, 2],
-      "spawnChance" : 0.1,
-      "monsterType" : "kadavanswarm",
-      "monsterParameters" : {
-        "aggressive" : true
-      }
-    }		
+  {
+	"op" : "add",
+	"path" : "/-",
+	"value" : {
+	  "name" : "kadavanswarm",
+	  "spawnParameters" : {
+		"area" : "surface",
+		"region" : "exposed",
+		"time" : "day"
+	  },
+	  "groupSize" : [1, 2],
+	  "spawnChance" : 0.1,
+	  "monsterType" : "kadavanswarm",
+	  "monsterParameters" : {
+		"aggressive" : true
+	  }
+    }
   },
-  
-  {"op" : "add",
-   "path" : "/-",
-   "value" :
-			
-    {
-      "name" : "giantsandspitter",
-
-      "spawnParameters" : {
-        "area" : "surface",
+  {
+	"op" : "add",
+	"path" : "/-",
+	"value" : {
+	  "name" : "giantsandspitter",
+	  "spawnParameters" : {
+		"area" : "surface",
         "region" : "all",
         "time" : "all"
       },
@@ -80,6 +69,60 @@
       "monsterParameters" : {
         "aggressive" : true
       }
-    }		
+    }
+  },
+  
+  //===================================== ELITHIAN WILDLIFE =====================================
+  {
+	"op" : "add",
+	"path" : "/-",
+	"value" : {
+	  "name" : "kelbet",
+	  "spawnParameters" : {
+		"area" : "surface",
+        "region" : "exposed",
+        "time" : "all"
+      },
+      "groupSize" : [2, 3],
+      "spawnChance" : 0.05,
+      "monsterType" : "kelbet",
+      "monsterParameters" : {
+        "aggressive" : true
+      }
+    }
+  },
+  {
+	"op" : "add",
+	"path" : "/-",
+	"value" : {
+	  "name" : "wildtrangii",
+	  "spawnParameters" : {
+		"area" : "surface",
+        "region" : "exposed",
+        "time" : "all"
+      },
+      "spawnChance" : 0.025,
+      "monsterType" : "wildtrangii",
+      "monsterParameters" : {
+        "aggressive" : true
+      }
+    }
+  },
+  {
+	"op" : "add",
+	"path" : "/-",
+	"value" : {
+	  "name" : "faryth",
+	  "spawnParameters" : {
+		"area" : "surface",
+        "region" : "exposed",
+        "time" : "all"
+      },
+      "spawnChance" : 0.075,
+      "monsterType" : "faryth",
+      "monsterParameters" : {
+        "aggressive" : true
+      }
+    }
   }
 ]

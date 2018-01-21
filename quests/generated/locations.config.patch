@@ -116,6 +116,22 @@
 	  "sandspittercave" : {
 		"name" : "Sandspitter nest",
 		"tags" : [ "thea-desertwetlands" ]
+	  },
+	  "valahrspawn" : {
+		"name" : "Valahr nesting",
+		"tags" : [ "thea-desertwetlands" ]
+	  },
+	  "valahrspawn2" : {
+		"name" : "Valahr nesting",
+		"tags" : [ "thea-desertwetlands" ]
+	  },
+	  "swarmhole" : {
+		"name" : "Stingwing pit",
+		"tags" : [ "thea-desertwetlands" ]
+	  },
+	  "sunkenstatue" : {
+		"name" : "sunken statue",
+		"tags" : [ "thea-desertwetlands" ]
 	  }
 	}
   }

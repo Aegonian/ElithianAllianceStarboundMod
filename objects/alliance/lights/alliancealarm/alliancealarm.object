@@ -1,0 +1,57 @@
+{
+  "objectName" : "alliancealarm",
+  "colonyTags" : ["alliance","wired","light"],
+  "printable" : false,
+  "rarity" : "Common",
+  "category" : "light",
+  "price" : 25,
+  "description" : "A flashing red alarm light with accompanying siren.",
+  "shortdescription" : "Alliance Alarm",
+  "race" : "aegi",
+
+  "apexDescription" : "These are used as a deterrent, but also as security.",
+  "avianDescription" : "This flashing light will alert everyone to misdeeds.",
+  "floranDescription" : "Thisss will alert all the guardsss.",
+  "glitchDescription" : "Alarmed. This will alert many, I should be careful.",
+  "humanDescription" : "If this was a movie I bet this would go off just as I left.",
+  "hylotlDescription" : "An alarm. Used to alert guards to ruffians.",
+  "novakidDescription" : "This here alarm sure will make getting away with loot hard.",
+
+  "aegiDescription" : "An alarm light. It will also activate a siren when triggered.",
+  "avikanDescription" : "This alarm will alert the guards to any criminal activity.",
+  "erixianDescription" : "An alarm light. It emits red light, as is usually the case.",
+  "trinkDescription" : "An alarm installed. It will alert anyone nearby to danger.",
+  "hymidDescription" : "I'd better not be here if this alarm goes off.",
+  "notixDescription" : "An alarm accompanied by a loud alarm. It's glorious.",
+  "jorgasianDescription" : "An alarm. Better not trigger it...",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien alarm system. Recommend caution.",
+
+  "inventoryIcon" : "alliancealarmicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "alliancealarm.png:<color>.off",
+      "imagePosition" : [-8, -8],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/avikan/wired/avikanalarm/avikanalarm.lua" ],
+  "scriptDelta" : 3,
+
+  "animation" : "/objects/alliance/lights/alliancealarm/alliancealarm.animation",
+
+  "animationParts" : {
+    "background" : "alliancealarm.png",
+	"foreground" : "alliancealarmlit.png"
+  },
+  "animationPosition" : [-8, -8],
+
+  "inputNodes" : [ [-1, 0] ],
+
+  "alarmSoundDuration" : 1.6
+}

@@ -4,12 +4,12 @@
     "species" : "aegi",
     "rules" : [
     ],
-    "anchor" : [ "aegicolony-prefabhomemedium1" ],
+    "anchor" : [ "aegicolony-landingtower1" ],
     "gravity" : 80,
     "maxRadius" : 100000,
     "maxParts" : 14,
-    "extendSurfaceFreeSpace" : 100,
-    "protected" : false
+    "extendSurfaceFreeSpace" : 50,
+    "protected" : true
   },
 
   "parts" : [
@@ -71,10 +71,21 @@
 	
     //============================================= LARGE BUILDINGS =============================================
     {
+      "name" : "aegicolony-landingtower1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ],
+        [ "doNotConnectToPart", [ "aegicolony-largebase1", "aegicolony-prefabhomelarge1", "aegicolony-prefabhomelarge2" ] ]
+      ],
+      "def" : [ "tmx", "aegicolony-landingtower1.json" ],
+      "chance" : 1
+    },
+    {
       "name" : "aegicolony-largebase1",
       "rules" : [
         [ "maxSpawnCount", [1] ],
-		[ "ignorePartMaximumRule" ]
+		[ "ignorePartMaximumRule" ],
+        [ "doNotConnectToPart", [ "aegicolony-landingtower1", "aegicolony-prefabhomelarge1", "aegicolony-prefabhomelarge2" ] ]
       ],
       "def" : [ "tmx", "aegicolony-largebase1.json" ],
       "chance" : 1
@@ -107,6 +118,28 @@
       ],
       "def" : [ "tmx", "aegicolony-smallgarden2.json" ],
       "chance" : 0.1
+    },
+	
+    //============================================= SIDES =============================================
+    {
+      "name" : "aegicolony-sideleft",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ],
+        [ "doNotConnectToPart", [ "aegicolony-landingtower1", "aegicolony-largebase1", "aegicolony-prefabhomelarge1", "aegicolony-prefabhomelarge2", "aegicolony-sideright" ] ]
+      ],
+      "def" : [ "tmx", "aegicolony-sideleft.json" ],
+      "chance" : 1
+    },
+    {
+      "name" : "aegicolony-sideright",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ],
+        [ "doNotConnectToPart", [ "aegicolony-landingtower1", "aegicolony-largebase1", "aegicolony-prefabhomelarge1", "aegicolony-prefabhomelarge2", "aegicolony-sideleft" ] ]
+      ],
+      "def" : [ "tmx", "aegicolony-sideright.json" ],
+      "chance" : 1
     }
   ]
 }

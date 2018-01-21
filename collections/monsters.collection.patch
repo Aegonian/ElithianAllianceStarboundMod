@@ -154,5 +154,15 @@
 	    "monsterType" : "akkimariflic",
 	    "icon" : "/monsters/flyers/akkimariflic/akkimariflicicon.png"
 	  }
+	},
+	{
+	  "op": "add",
+	  "path": "/collectables/faryth",
+	  "value": 	  
+	  {
+	    "order" : 73,
+	    "monsterType" : "faryth",
+	    "icon" : "/monsters/flyers/faryth/farythicon.png"
+	  }
 	}
 ]

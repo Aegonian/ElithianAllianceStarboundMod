@@ -144,12 +144,11 @@
 	
 	//MONSTERS AND CRITTERS
 	{ "op" : "add",
-	  "path" : "/spawnProfile/groups/-",
-	  "value" : {
-        "select" : 1,
-        "pool" : [
-          [ 1, "sandwormcritter" ]
-        ]
-      }
+	  "path" : "/spawnProfile/groups/6/pool/-",
+	  "value" : [ 1, "sandwormcritter" ]
+	},
+	{ "op" : "add",
+	  "path" : "/spawnProfile/groups/0/pool/-",
+	  "value" : [ 0.111, "largesandcrawler" ]
 	}
 ]

@@ -1,0 +1,10 @@
+{
+  "itemName" : "farythscale",
+  "price" : 150,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "farythscale.png",
+  "description" : "The hard but flexible scales of a Faryth.",
+  "shortdescription" : "Faryth Scales",
+  "itemTags" : [ "reagent" ]
+}

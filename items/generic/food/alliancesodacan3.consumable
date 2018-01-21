@@ -1,0 +1,17 @@
+{
+  "itemName" : "alliancesodacan3",
+  "rarity" : "Common",
+  "price" : 40,
+  "category" : "drink",
+  "inventoryIcon" : "alliancesodacan3.png",
+  "description" : "A can of tasty Corus.",
+  "shortdescription" : "Corus Can",
+  "maxStack" : 1,
+  "effects" : [ [
+    {
+        "effect" : "maxhealthscalingboostfood",
+        "duration" : 30
+    }
+  ] ],
+  "emitters" : [ "drinking" ]
+}

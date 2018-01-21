@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":104,
+ "tilecount":106,
  "tileheight":128,
  "tileproperties":
     {
@@ -63,6 +63,22 @@
          "imagePositionX":"-80",
          "imagePositionY":"0",
          "object":"allianceshieldgenerator",
+         "tilesetDirection":"right"
+        },
+     "104":
+        {
+         "\/\/shortdescription":"Alliance Landing Beacon",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"alliancelandingbeacon",
+         "tilesetDirection":"right"
+        },
+     "105":
+        {
+         "\/\/shortdescription":"Alliance Alarm",
+         "imagePositionX":"-8",
+         "imagePositionY":"-8",
+         "object":"alliancealarm",
          "tilesetDirection":"right"
         },
      "11":
@@ -871,6 +887,14 @@
      "103":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/allianceshieldgenerator.png"
+        },
+     "104":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancelandingbeacon.png"
+        },
+     "105":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancealarm.png"
         },
      "11":
         {
