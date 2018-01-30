@@ -1,0 +1,12 @@
+{
+  "itemName" : "unioncitizenpass",
+  "price" : 0,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "Security Pass",
+  "tooltipKind" : "tool",
+  "inventoryIcon" : "unioncitizenpass.png",
+  "largeImage" : "unioncitizenpasslarge.png",
+  "description" : "An official Union Citizen Identification Card.",
+  "shortdescription" : "^#BA66FF;Union Citizen Pass^white;"
+}

@@ -1,0 +1,24 @@
+{
+  "metadata" : {
+    "name" : "allianceencounter",
+    "species" : "aegi",
+    "rules" : [
+    ],
+	
+    "anchor" : [ "aegi-smallhome1" ],
+
+    "maxRadius" : 1000000,
+    "maxParts" : 1,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "aegi-smallhome1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "aegi-smallhome1.json" ]
+    }
+  ]
+}

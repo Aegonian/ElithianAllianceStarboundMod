@@ -16,6 +16,29 @@
             "transition" : "off"
           }
         }
+      },
+      "gun" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {},
+          "activate" : {
+            "frames" : 3,
+            "cycle" : 1.2,
+            "mode" : "transition",
+            "transition" : "active"
+          },
+          "active" : {
+            "frames" : 1,
+            "cycle" : 0.1,
+            "mode" : "loop"
+          },
+          "deactivate" : {
+            "frames" : 3,
+            "cycle" : 0.9,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
       }
     },
 
@@ -23,9 +46,32 @@
       "middle" : {
         "properties" : {
           "centered" : true,
-          "image" : "<partImage><paletteSwaps>",
           "offset" : [0.5, 0.125], // x offset is set dynamically
           "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "gun" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle"
+              }
+            },
+            "activate" : {
+              "properties" : {
+                "image" : "<partImage>:activate.<frame>"
+              }
+            },
+            "active" : {
+              "properties" : {
+                "image" : "<partImage>:active.<frame>"
+              }
+            },
+            "deactivate" : {
+              "properties" : {
+                "image" : "<partImage>:deactivate.<frame>"
+              }
+            }
+          }
         }
       },
       "middleFullbright" : {
@@ -33,9 +79,32 @@
           "zLevel" : 1,
           "centered" : true,
           "fullbright" : true,
-          "image" : "<partImage><paletteSwaps>",
           "offset" : [0.6, -0.6], // x offset is set dynamically
           "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "gun" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle"
+              }
+            },
+            "activate" : {
+              "properties" : {
+                "image" : "<partImage>:activate.<frame>"
+              }
+            },
+            "active" : {
+              "properties" : {
+                "image" : "<partImage>:active.<frame>"
+              }
+            },
+            "deactivate" : {
+              "properties" : {
+                "image" : "<partImage>:deactivate.<frame>"
+              }
+            }
+          }
         }
       },
       "muzzleFlash" : {
@@ -46,7 +115,6 @@
           "fullbright" : true,
           "transformationGroups" : ["muzzle"]
         },
-
         "partStates" : {
           "firing" : {
             "fire" : {

@@ -2,7 +2,7 @@
   "itemName" : "thea-meltdown",
   "price" : 1500,
   "level" : 6,
-  "inventoryIcon" : "thea-meltdown.png",
+  "inventoryIcon" : "thea-meltdownicon.png",
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "^orange;A powerful beam rifle that causes its targets to overheat.",
@@ -57,6 +57,8 @@
     "scripts" : ["/items/active/weapons/ranged/abilities/thea-beamfire.lua"],
     "class" : "TheaBeamFire",
 
+	"activeAnimation" : true, //Allows a special animation to be played while firing
+	
     "fireTime" : 0.1,
     "baseDps" : 9.5,
     "energyUsage" : 40.0,

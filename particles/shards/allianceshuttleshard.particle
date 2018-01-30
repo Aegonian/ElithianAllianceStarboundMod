@@ -1,0 +1,19 @@
+{
+  "kind" : "allianceshuttleshard",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/shards/alliancemetalshard.animation",
+    "initialVelocity" : [0.0, 15.0],
+    "finalVelocity" : [0.0, -60.0],
+    "approach" : [0.3, 60],
+    "timeToLive" : 1.0,
+    "layer" : "middle",
+    "collidesForeground" : true,
+    "variance" : {
+      "initialVelocity" : [16, 5],
+      "finalVelocity" : [0, 20],
+      "rotation" : 180,
+      "angularVelocity" : 180
+    }
+  }
+}

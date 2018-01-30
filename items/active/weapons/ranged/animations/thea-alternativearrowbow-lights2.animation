@@ -1,3 +1,5 @@
+//Animation for bow-type weapon which can swap ammo/arrow types. Has an additional layer for adding fullbright parts to the ammo sprites
+
 {
   "animatedParts" : {
     "stateTypes" : {

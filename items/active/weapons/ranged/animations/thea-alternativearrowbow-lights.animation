@@ -1,3 +1,5 @@
+//Animation for bow-type weapon which can swap ammo/arrow types
+
 {
   "animatedParts" : {
     "stateTypes" : {

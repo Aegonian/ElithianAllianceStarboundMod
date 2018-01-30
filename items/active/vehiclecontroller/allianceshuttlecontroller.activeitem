@@ -1,0 +1,34 @@
+{
+  "itemName" : "allianceshuttlecontroller",
+  "level" : 1,
+  "price" : 25000,
+  "rarity" : "Legendary",
+  "category" : "vehicleController",
+  "description" : "Summons an ASA-26 Ranger Shuttlecraft from your ship's cargo hold.",
+  "shortdescription" : "ASA-26 Ranger Controller",
+  "twoHanded" : true,
+  "maxStack" : 1,
+  "itemTags" : ["vehiclecontroller"],
+
+  "animation" : "thea-vehiclecontroller.animation",
+  "scripts" : ["vehiclecontroller.lua"],
+  "animationScripts" : ["vehiclecursor.lua"],
+  "filled" : true,
+  "tooltipKind" : "vehicle",
+  "largeImage" : "/vehicles/alliance/allianceshuttle/allianceshuttle.png",
+
+  "respawnTime" : 1.0,
+
+  "vehicleType" : "allianceshuttle",
+  "vehicleBoundingBox" : [-9.25, -2.75, 9.25, 2.75],
+  "vehicleImage" : "/vehicles/alliance/allianceshuttle/allianceshuttle.png",
+
+  "animationParts" : {
+    "casing" : "allianceshuttlecontroller.png"
+  },
+
+  "inventoryIcon" : "allianceshuttlecontroller.png:full",
+  "emptyInventoryIcon" : "/items/active/vehiclecontroller/allianceshuttlecontroller.png:empty",
+  "filledInventoryIcon" : "/items/active/vehiclecontroller/allianceshuttlecontroller.png:full"
+
+}

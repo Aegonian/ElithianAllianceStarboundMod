@@ -1,55 +1,56 @@
 [	
-	{"op" : "add",
-		"path" : "/avikanStarterTreasure",
-		"value" : [
-			[0, {
-			"fill" : [
-				{"pool" : "starterTreasure"},
-				{"item" : [ "avikan-brokenvhaleihanspear", 1]},
-				{"item" : [ "avikanhuntingknife", 1]},
-				{"item" : [ "avikanwatcherpass", 1]},
-				{"item" : [ "avikanhuntingguide-codex", 1]}
-			]
-			}]
-		]	
-	},
+  { "op" : "add",
+	"path" : "/avikanStarterTreasure",
+	"value" : [
+	  [0, {
+		"fill" : [
+		  {"pool" : "starterTreasure"},
+		  {"item" : [ "avikan-brokenvhaleihanspear", 1]},
+		  {"item" : [ "avikanhuntingknife", 1]},
+		  {"item" : [ "avikanwatcherpass", 1]},
+		  {"item" : [ "avikanhuntingguide-codex", 1]}
+		]
+	  }]
+	]	
+  },
 	
-	{"op" : "add",
-		"path" : "/drodenStarterTreasure",
-		"value" : [
-			[0, {
-			"fill" : [
-				{"pool" : "starterTreasure"},
-				{"item" : [ "drodenlegionbroken", 1]},
-				{"item" : [ "avikanhuntingknife", 1]},
-				{"item" : [ "avikanwatcherpass", 1]},
-				{"item" : [ "avikanhuntingguide-codex", 1]}
-			]
-			}]
-		]	
-	},
+  { "op" : "add",
+	"path" : "/drodenStarterTreasure",
+	"value" : [
+	  [0, {
+		"fill" : [
+		  {"pool" : "starterTreasure"},
+		  {"item" : [ "drodenlegionbroken", 1]},
+		  {"item" : [ "avikanhuntingknife", 1]},
+		  {"item" : [ "avikanwatcherpass", 1]},
+		  {"item" : [ "avikanhuntingguide-codex", 1]}
+		]
+	  }]
+	]	
+  },
 	
-	{"op" : "add",
-		"path" : "/trinkStarterTreasure",
-		"value" : [
-			[0, {
-			"fill" : [
-				{"pool" : "starterTreasure"},
-				{"item" : [ "trinkprimecircuitbroken", 1]}
-			]
-			}]
-		]	
-	},
+  { "op" : "add",
+	"path" : "/trinkStarterTreasure",
+	"value" : [
+	  [0, {
+		"fill" : [
+		  {"pool" : "starterTreasure"},
+		  {"item" : [ "trinkprimecircuitbroken", 1]}
+		]
+	  }]
+	]	
+  },
 	
-	{"op" : "add",
-		"path" : "/aegiStarterTreasure",
-		"value" : [
-			[0, {
-			"fill" : [
-				{"pool" : "starterTreasure"},
-				{"item" : [ "thea-excaliburbroken", 1]}
-			]
-			}]
-		]	
-	}
+  { "op" : "add",
+	"path" : "/aegiStarterTreasure",
+	"value" : [
+	  [0, {
+		"fill" : [
+		  {"pool" : "starterTreasure"},
+		  {"item" : [ "unioncitizenpass", 1]},
+		  {"item" : [ "thea-excaliburbroken", 1]}
+		]
+	  }]
+	]	
+  }
 ]

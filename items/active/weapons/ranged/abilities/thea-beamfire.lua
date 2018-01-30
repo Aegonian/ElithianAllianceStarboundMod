@@ -12,6 +12,12 @@ function TheaBeamFire:init()
   self.cooldownTimer = self.fireTime
   self.impactSoundTimer = 0
   self.impactDamageTimer = self.impactDamageTimeout
+  
+  --Optional animation set-up
+  self.active = false
+  if self.activeAnimation then
+	animator.setAnimationState("gun", "idle")
+  end
 
   self.weapon.onLeaveAbility = function()
     self.weapon:setDamage()
@@ -38,6 +44,13 @@ function TheaBeamFire:update(dt, fireMode, shiftHeld)
 
     self:setState(self.fire)
   end
+  
+  --Optional animation while firing
+  if self.activeAnimation then
+	if self.active == false and animator.animationState("gun") == "active" then
+	  animator.setAnimationState("gun", "deactivate")
+	end
+  end
 end
 
 function TheaBeamFire:fire()
@@ -47,6 +60,12 @@ function TheaBeamFire:fire()
   animator.playSound("fireLoop", -1)
   
   animator.setParticleEmitterActive("muzzleFlash", true)
+  
+  --Optional animation while firing
+  if self.activeAnimation then
+	self.active = true
+	animator.setAnimationState("gun", "activate")
+  end
 
   local wasColliding = false
   while self.fireMode == (self.activatingFireMode or self.abilitySlot) and status.overConsumeResource("energy", (self.energyUsage or 0) * self.dt) and not world.lineTileCollision(mcontroller.position(), self:firePosition()) do
@@ -134,6 +153,11 @@ function TheaBeamFire:fire()
     coroutine.yield()
   end
 
+  --Optional animation while firing
+  if self.activeAnimation then
+	self.active = false
+  end
+  
   self:reset()
   animator.playSound("fireEnd")
 

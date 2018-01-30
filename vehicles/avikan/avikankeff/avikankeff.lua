@@ -474,8 +474,8 @@ function move()
   local nearGround = groundDistance < self.nearGroundDistance
 
   --assume idle pitch
-  self.enginePitch = self.engineIdlePitch;
-  self.engineVolume = self.engineIdleVolume;
+  self.enginePitch = self.engineIdlePitch
+  self.engineVolume = self.engineIdleVolume
 
   mcontroller.resetParameters(self.movementSettings)
   if self.driver then
