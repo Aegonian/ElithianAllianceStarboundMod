@@ -1,0 +1,139 @@
+{
+  "name" : "avikanskoff",
+  "script" : "/vehicles/alliance/allianceshuttle/allianceshuttle.lua",
+  "boundBox" : [-8, -8, 8, 8],
+  "slaveControlTimeout" : 2.0,
+  "slaveControlHeartbeat" : 1.0,
+  "canBeHit" : true,
+  "animation" : "avikanskoff.animation",
+
+  "animationCustom" : {},
+
+  //LOUNGE POSITIONS
+  "loungePositions" : {
+    "drivingSeat" : {
+      "part" : "background",
+      "partAnchor" : "drivingSeatPosition",
+      "cameraFocus" : true,
+      "orientation" : "sit",
+      "statusEffects" : [
+        "invulnerable",
+		"statusimmunity",
+		{ "stat" : "breathProtection", "amount" : 1.0 },
+		{ "stat" : "biomecoldImmunity", "amount" : 1.0 },
+		{ "stat" : "biomeheatImmunity", "amount" : 1.0 },
+		{ "stat" : "biomeradiationImmunity", "amount" : 1.0 }
+      ],
+      "emote" : "happy",
+      "dance" : "theadriving"
+    },
+    "passengerSeat" : {
+      "part" : "background",
+      "partAnchor" : "passengerSeatPosition",
+      "cameraFocus" : true,
+      "orientation" : "sit",
+      "statusEffects" : [
+        "invulnerable",
+		"statusimmunity",
+		{ "stat" : "breathProtection", "amount" : 1.0 },
+		{ "stat" : "biomecoldImmunity", "amount" : 1.0 },
+		{ "stat" : "biomeheatImmunity", "amount" : 1.0 },
+		{ "stat" : "biomeradiationImmunity", "amount" : 1.0 }
+      ],
+      "emote" : "happy"
+    }
+  },
+
+  //THEFT SETTINGS
+  "licenseItem" : "keffriderslicense", //If the player has this item in their inventory, taking the vehicle won't be seen as theft
+  
+  //GENERAL SETTINGS
+  "warpInDelay" : 1.0,
+  
+  "levelApproachFactor" : 0.01,
+  "angleApproachFactor" : 0.05,
+  "maxGroundSearchDistance" : 5,
+  "maxAngle" : 45,
+  "frontSpringPositions" : [
+	  [6.5, 0.0],
+	  [9.0, 0.0],
+	  [12.0, 0.0]
+  ],
+  "backSpringPositions" : [
+	  [-6.5, 0.0],
+	  [-9.0, 0.0],
+	  [-12.0, 0.0]
+  ],
+  
+  //MOVEMENT SETTINGS
+  "flySpeedX" : 175,
+  "flySpeedY" : 25,
+  "flyControlForceX" : 200,
+  "flyControlForceY" : 150,
+  "stopControlForce" : 100,
+  "verticalMovementAngle" : 0.35, //from 0 to 1. Determines maximum angle when vehicle moves on the vertical axis, or when actively switching directions
+  "brakingAngle" : 0.175, //from 0 to 1. Determines maximum angle when the vehicle is passively braking
+  "maxLiquidImmersion" : 0.95, //maximum liquid immersion before the vehicle sinks
+  "liquidBuoyancy" : 2.0, //Buoyancy while floating in a liquid
+
+  //HEALTH SETTINGS
+  "protection" : 50,
+  "maxHealth" : 3000,
+  "damageStateNames" : [ "undamaged", "scratched", "dented", "wrecked" ],
+  "lightsInDamageState" : [
+	[ "headlightBeam" ],
+	[ "headlightBeam" ],
+	[ "headlightBeam" ],
+	[ "headlightBeam" ]
+  ],
+  "smokeHealthFactor" : 0.25,
+  "fireHealthFactor" : 0.125,
+  "warningHealthFactor" : 0.125,
+  
+  "explosionConfig" : "/projectiles/explosions/regularexplosion2/regularexplosionknockback.config",
+  "explosionDamage" : 50,
+
+  "materialKind" : "robotic",
+  
+  //COLLISION SETTINGS
+  "minNotificationCollisionAccel" : 8,
+  "minDamageCollisionAccel" : 40,
+  "terrainCollisionDamage" : 10,
+  "terrainCollisionDamageSourceKind" : "falling",
+  "accelerationTrackingCount" : 2,
+  
+  //EMOTE SETTINGS
+  "driverEmote" : "happy",
+  "driverEmoteDamaged" : "oh",
+  "driverEmoteNearDeath" : "annoyed",
+
+  "damageTakenEmote" : "oooh",
+  "damageEmoteTime" : 2.0,
+  
+  //SOUND SETTINGS
+  "engineIdlePitch" : 0.75,
+  "engineRevPitch" : 1.5,
+  "engineIdleVolume" : 1.0,
+  "engineRevVolume" : 1.5,
+  "idleEngineTime" : 2.5, //How long the engine will remain active after leaving the vehicle
+
+  //MOVEMENT CONTROLLER SETTINGS
+  "movementSettings" : {
+    "collisionPoly" : [ [7.5, 2.5], [11.5, -1.5], [11.5, -2.0], [8.0, -3.5], [-8.0, -3.5], [-11.5, -2.0], [-11.5, -1.5], [-7.5, 2.5] ],
+    "mass" : 4,
+    "airFriction" : 4.0,
+    "liquidFriction" : 25.0,
+    "ignorePlatformCollision" : true,
+    "gravityEnabled" : true,
+    "collisionEnabled" : true
+  },
+  "occupiedMovementSettings" : {
+    "collisionPoly" : [ [7.5, 2.5], [11.5, -1.5], [11.5, -2.0], [8.0, -3.5], [-8.0, -3.5], [-11.5, -2.0], [-11.5, -1.5], [-7.5, 2.5] ],
+    "mass" : 4,
+    "airFriction" : 4.0,
+    "liquidFriction" : 6.5,
+    "ignorePlatformCollision" : true,
+    "gravityEnabled" : false,
+    "collisionEnabled" : true
+  }
+}

@@ -108,11 +108,13 @@ function SpearThrow:cooldown()
   
   while world.entityExists(self.spearProjectile) do
     world.debugText("Active projectiles detected!", mcontroller.position(), "yellow")
+	activeItem.setHoldingItem(false)
     coroutine.yield()
   end
   
   --Return the weapon to the player's hand
   animator.setAnimationState("weapon", "returning")
+  activeItem.setHoldingItem(true)
 end
 
 function SpearThrow:idealAimVector()

@@ -1121,22 +1121,6 @@
                  "y":512
                 }, 
                 {
-                 "gid":196,
-                 "height":40,
-                 "id":851,
-                 "name":"",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":152,
-                 "x":264,
-                 "y":512
-                }, 
-                {
                  "gid":206,
                  "height":16,
                  "id":852,
@@ -2872,6 +2856,34 @@
          "y":0
         }, 
         {
+         "color":"#00ff00",
+         "draworder":"topdown",
+         "height":150,
+         "name":"stagehands",
+         "objects":[
+                {
+                 "height":8,
+                 "id":1019,
+                 "name":"",
+                 "properties":
+                    {
+                     "stagehand":"thea-spawnallianceshuttle"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":336,
+                 "y":480
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "width":200,
+         "x":0,
+         "y":0
+        }, 
+        {
          "color":"#ffff00",
          "draworder":"topdown",
          "height":100,
@@ -3975,7 +3987,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":1018,
+ "nextobjectid":1020,
  "orientation":"orthogonal",
  "properties":
     {

@@ -5,7 +5,7 @@
   "category" : "cookingIngredient",
   "eventCategory" : "eventCrop",
   "inventoryIcon" : "selvasextract.png",
-  "description" : "The concentrated extract from a selvas herb.",
+  "description" : "A concentrated extract harvested from a selvas herb.",
   "shortdescription" : "Selvas Extract",
   "maxStack" : 1000,
   "learnBlueprintsOnPickup" : [ ]

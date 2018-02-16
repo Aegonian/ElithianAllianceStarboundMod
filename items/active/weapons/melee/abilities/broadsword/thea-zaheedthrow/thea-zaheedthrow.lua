@@ -123,6 +123,8 @@ function TheaZaheedThrow:cooldown()
 		--self.targetPosition = nil
 	  end
 	end
+	
+	activeItem.setHoldingItem(false)
     coroutine.yield()
   end
   
@@ -136,6 +138,7 @@ function TheaZaheedThrow:cooldown()
   
   --Return the weapon to the player's hand
   animator.setAnimationState("blade", "returning")
+  activeItem.setHoldingItem(true)
 end
 
 function TheaZaheedThrow:attemptTeleport()

@@ -1,0 +1,14 @@
+{
+  "frameGrid" : {
+    "size" : [196, 64],
+    "dimensions" : [4, 1],
+
+    "names" : [
+      [ "down", "raise.1", "raise.2", "up" ]
+    ]
+  },
+  "aliases" : {
+    "lower.1" : "raise.2",
+    "lower.2" : "raise.1"
+  }
+}

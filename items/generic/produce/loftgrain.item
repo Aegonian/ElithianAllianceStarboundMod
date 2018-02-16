@@ -1,0 +1,12 @@
+{
+  "itemName" : "loftgrain",
+  "rarity" : "Common",
+  "price" : 25,
+  "category" : "cookingIngredient",
+  "eventCategory" : "eventCrop",
+  "inventoryIcon" : "loftgrain.png",
+  "description" : "A fast-growing grain harvested by the Union.",
+  "shortdescription" : "Loftgrain",
+  "maxStack" : 1000,
+  "learnBlueprintsOnPickup" : [ "loftbread" ]
+}

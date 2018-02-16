@@ -75,7 +75,7 @@
       "rules" : [
         [ "maxSpawnCount", [1] ],
 		[ "ignorePartMaximumRule" ],
-        [ "doNotConnectToPart", [ "aegicolony-largebase1", "aegicolony-prefabhomelarge1", "aegicolony-prefabhomelarge2" ] ]
+        [ "doNotConnectToPart", [ "aegicolony-largebase1", "aegicolony-prefabhomelarge1", "aegicolony-prefabhomelarge2", "aegicolony-farm1" ] ]
       ],
       "def" : [ "tmx", "aegicolony-landingtower1.json" ],
       "chance" : 1
@@ -85,7 +85,7 @@
       "rules" : [
         [ "maxSpawnCount", [1] ],
 		[ "ignorePartMaximumRule" ],
-        [ "doNotConnectToPart", [ "aegicolony-landingtower1", "aegicolony-prefabhomelarge1", "aegicolony-prefabhomelarge2" ] ]
+        [ "doNotConnectToPart", [ "aegicolony-landingtower1", "aegicolony-prefabhomelarge1", "aegicolony-prefabhomelarge2", "aegicolony-farm1" ] ]
       ],
       "def" : [ "tmx", "aegicolony-largebase1.json" ],
       "chance" : 1
@@ -96,7 +96,7 @@
       "name" : "aegicolony-garden1",
       "rules" : [
         [ "maxSpawnCount", [1] ],
-        [ "doNotConnectToPart", [ "aegicolony-garden1", "aegicolony-smallgarden1", "aegicolony-smallgarden2" ] ]
+        [ "doNotConnectToPart", [ "aegicolony-garden1", "aegicolony-smallgarden1", "aegicolony-smallgarden2", "aegicolony-farm1" ] ]
       ],
       "def" : [ "tmx", "aegicolony-garden1.json" ],
       "chance" : 0.1
@@ -105,7 +105,7 @@
       "name" : "aegicolony-smallgarden1",
       "rules" : [
         [ "maxSpawnCount", [2] ],
-        [ "doNotConnectToPart", [ "aegicolony-garden1", "aegicolony-smallgarden1", "aegicolony-smallgarden2" ] ]
+        [ "doNotConnectToPart", [ "aegicolony-garden1", "aegicolony-smallgarden1", "aegicolony-smallgarden2", "aegicolony-farm1" ] ]
       ],
       "def" : [ "tmx", "aegicolony-smallgarden1.json" ],
       "chance" : 0.1
@@ -114,10 +114,19 @@
       "name" : "aegicolony-smallgarden2",
       "rules" : [
         [ "maxSpawnCount", [2] ],
-        [ "doNotConnectToPart", [ "aegicolony-garden1", "aegicolony-smallgarden1", "aegicolony-smallgarden2" ] ]
+        [ "doNotConnectToPart", [ "aegicolony-garden1", "aegicolony-smallgarden1", "aegicolony-smallgarden2", "aegicolony-farm1" ] ]
       ],
       "def" : [ "tmx", "aegicolony-smallgarden2.json" ],
       "chance" : 0.1
+    },
+    {
+      "name" : "aegicolony-farm1",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+        [ "doNotConnectToPart", [ "aegicolony-garden1", "aegicolony-smallgarden1", "aegicolony-smallgarden2", "aegicolony-farm1" ] ]
+      ],
+      "def" : [ "tmx", "aegicolony-farm1.json" ],
+      "chance" : 1
     },
 	
     //============================================= SIDES =============================================

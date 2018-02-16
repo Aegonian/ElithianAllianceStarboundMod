@@ -98,6 +98,46 @@
           "off" : {},
           "on" : {}
         }
+      },
+	  "landingGear" : {
+        "default" : "down",
+        "states" : {
+          "down" : {},
+          "raise" : {
+            "frames" : 2,
+            "cycle" : 0.2,
+            "mode" : "transition",
+			"transition" : "up"
+		  },
+          "up" : {},
+          "lower" : {
+            "frames" : 2,
+            "cycle" : 0.2,
+            "mode" : "transition",
+			"transition" : "down"
+		  },
+          "invisible" : {}
+        }
+      },
+	  "passengerDoor" : {
+        "default" : "closed",
+        "states" : {
+          "closed" : {},
+          "opening" : {
+            "frames" : 2,
+            "cycle" : 0.1,
+            "mode" : "transition",
+			"transition" : "open"
+		  },
+          "open" : {},
+          "closing" : {
+            "frames" : 2,
+            "cycle" : 0.2,
+            "mode" : "transition",
+			"transition" : "closed"
+		  },
+          "invisible" : {}
+        }
       }
     },
 
@@ -120,10 +160,14 @@
               "properties" : {}
             },
             "warpInPart2" : {
-              "properties" : {}
+              "properties" : {
+                "image" : "allianceshuttle-foreground.png:<damageState>.<direction>"
+              }
             },
             "warpOutPart1" : {
-              "properties" : {}
+              "properties" : {
+                "image" : "allianceshuttle-foreground.png:<damageState>.<direction>"
+              }
             },
             "warpOutPart2" : {
               "properties" : {}
@@ -155,10 +199,14 @@
               "properties" : {}
             },
             "warpInPart2" : {
-              "properties" : {}
+              "properties" : {
+                "image" : "allianceshuttle-background.png:<damageState>.<direction>"
+              }
             },
             "warpOutPart1" : {
-              "properties" : {}
+              "properties" : {
+                "image" : "allianceshuttle-background.png:<damageState>.<direction>"
+              }
             },
             "warpOutPart2" : {
               "properties" : {}
@@ -427,6 +475,7 @@
 	  "/sfx/gun/grenadeblast_small_fire2.ogg",
 	  "/sfx/gun/grenadeblast_small_fire3.ogg"
 	],
+	"warning" : [ "/sfx/objects/redalert2.ogg" ],
 	
 	//COLLISION
     "collisionNotification" : [

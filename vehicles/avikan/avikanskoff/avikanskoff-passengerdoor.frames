@@ -1,0 +1,23 @@
+{
+  "frameGrid" : {
+    "size" : [196, 64],
+    "dimensions" : [4, 4],
+
+    "names" : [
+      [ "undamaged.closed", "undamaged.opening.1", "undamaged.opening.2", "undamaged.open" ],
+      [ "scratched.closed", "scratched.opening.1", "scratched.opening.2", "scratched.open" ],
+      [ "dented.closed", "dented.opening.1", "dented.opening.2", "dented.open" ],
+      [ "wrecked.closed", "wrecked.opening.1", "wrecked.opening.2", "wrecked.open" ]
+    ]
+  },
+  "aliases" : {
+    "undamaged.closing.1" : "undamaged.opening.2",
+    "undamaged.closing.2" : "undamaged.opening.1",
+    "scratched.closing.1" : "scratched.opening.2",
+    "scratched.closing.2" : "scratched.opening.1",
+    "dented.closing.1" : "dented.opening.2",
+    "dented.closing.2" : "dented.opening.1",
+    "wrecked.closing.1" : "wrecked.opening.2",
+    "wrecked.closing.2" : "wrecked.opening.1"
+  }
+}

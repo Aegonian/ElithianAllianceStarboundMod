@@ -1,0 +1,67 @@
+{
+  "objectName" : "wildloftgrainseed",
+  "colonyTags" : ["nature"],
+  "rarity" : "Common",
+  "category" : "seed",
+  "description" : "A fast-growing grain harvested by the Union.",
+  "shortdescription" : "Loftgrain Seed",
+  "objectType" : "farmable",
+  "printable" : false,
+  "price" : 10,
+  "hasObjectItem" : false,
+
+  "apexDescription" : "A wheat-like plant.",
+  "avianDescription" : "The seeds of this plant are delicious.",
+  "floranDescription" : "Floran makesss bread with thiss too?",
+  "glitchDescription" : "Pleased. I could probably make bread with this.",
+  "humanDescription" : "This plant is quite similar to wheat. Could it be related?",
+  "hylotlDescription" : "This plant grows faster than most of its cousins.",
+  "novakidDescription" : "Some kinda fast-growing grain. Good for bread.",
+  
+  "aegiDescription" : "Loftgrain was created by our ancestors on their journey from Earth to Elithia.",
+  "avikanDescription" : "It looks somewhat like dunestalk.",
+  "erixianDescription" : "A crop often harvested by the Aegi. They make good bread from it.",
+  "trinkDescription" : "A genetically engineered crop.",
+  "hymidDescription" : "This crop was engineered by the Aegi.",
+  "notixDescription" : "A plant from which bread can be made. It rustles lightly.",
+  "jorgasianDescription" : "Loftgrain. Once harvested, it makes a good ingredient for bread.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected alien plantlife. Similarities to dunestalk noted.",
+
+  "inventoryIcon" : "loftgrainseedicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "loftgrainseed.png:<color>.<stage>.<alt>",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaces" : [ [0, 0], [0, 1], [0, 2], [0, 3] ],
+      "requireTilledAnchors" : false,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "radioMessagesOnPickup" : [ "pickupseed" ],
+
+  "stages" : [
+    {
+      "duration" : [480, 640]
+    },
+    {
+      "duration" : [480, 640]
+    },
+    {
+      "alts" : 5,
+      "harvestPool" : "loftgrainHarvest"
+    }
+  ],
+
+  "breakDropOptions" : [
+    [ [ "loftgrainseed", 1, { } ] ]
+  ],
+
+  "maxImmersion" : 0.125
+}

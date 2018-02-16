@@ -3,7 +3,7 @@
   "colonyTags" : ["nature"],
   "rarity" : "Common",
   "category" : "seed",
-  "description" : "An oddly shaped plant with a similarly odd taste.",
+  "description" : "A small herb with medicinal values.",
   "shortdescription" : "Selvas Seed",
   "objectType" : "farmable",
   "printable" : false,
@@ -38,7 +38,7 @@
       "frames" : 1,
       "animationCycle" : 0.5,
 
-      "spaces" : [ [0, 0], [0, 1] ],
+      "spaces" : [ [1, 0], [0, 0], [1, 1], [0, 1] ],
       "requireTilledAnchors" : false,
       "anchors" : [ "bottom" ]
 

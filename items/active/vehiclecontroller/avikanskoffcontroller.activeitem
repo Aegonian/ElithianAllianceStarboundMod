@@ -1,0 +1,34 @@
+{
+  "itemName" : "avikanskoffcontroller",
+  "level" : 1,
+  "price" : 25000,
+  "rarity" : "Legendary",
+  "category" : "vehicleController",
+  "description" : "Summons a Skoff from your ship's cargo hold.",
+  "shortdescription" : "Skoff Controller",
+  "twoHanded" : true,
+  "maxStack" : 1,
+  "itemTags" : ["vehiclecontroller"],
+
+  "animation" : "thea-vehiclecontroller.animation",
+  "scripts" : ["vehiclecontroller.lua"],
+  "animationScripts" : ["vehiclecursor.lua"],
+  "filled" : true,
+  "tooltipKind" : "vehicle",
+  "largeImage" : "/vehicles/avikan/avikanskoff/avikanskoff.png",
+
+  "respawnTime" : 1.0,
+
+  "vehicleType" : "avikanskoff",
+  "vehicleBoundingBox" : [-12.25, -3.875, 12.25, 3.875],
+  "vehicleImage" : "/vehicles/avikan/avikanskoff/avikanskoff.png",
+
+  "animationParts" : {
+    "casing" : "avikanskoffcontroller.png"
+  },
+
+  "inventoryIcon" : "avikanskoffcontroller.png:full",
+  "emptyInventoryIcon" : "/items/active/vehiclecontroller/avikanskoffcontroller.png:empty",
+  "filledInventoryIcon" : "/items/active/vehiclecontroller/avikanskoffcontroller.png:full"
+
+}

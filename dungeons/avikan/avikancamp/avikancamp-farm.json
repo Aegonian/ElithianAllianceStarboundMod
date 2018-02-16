@@ -3,7 +3,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJzt0cEJgwAQRUHxlo7Sf2U5hNyEhIA+defDFLBv12VZVgAAAA5j36d9N+27ad9N+27ad9O+m\/bdtO+mfTftu2nfTftu2nfTvpv23bTvpn037btp3037btp3076b9t2076Z9N+27ad9N+27ad9O+m\/bdtO+mfTftu2nfTftu2nfTvpv23bTvpn037btp3037btp3076b9t2077ZX+8cGe+\/T48j2\/3jexNZtZ29\/1R\/8ctNV2t+R9tpPpL32E2mv\/UTaaz+R9tpPpL32E2mv\/UTaaz\/RXu39oOntF+fpPfUPdd+Jf6hbTvxB3e6sv9r7z3WHq9K8pzUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHf3AqiTk28=",
+         "data":"eJzt0cEJgwAQRUHxlpbSf2E5hNyEhIA+defDFLBv12VZVgAAAA5j36d9N+27ad9N+27ad9O+m\/bdtO+mfTftu2nfTftu2nfTvpv23bTvpn037btp3037btp3076b9t2076Z9N+27ad9N+27ad9O+m\/bdtO+mfTftu2nfTftu2nfTvpv23bTvpn037btp3037btp3076b9t2077ZX+8cGe+\/T48j2\/3jexNZtZ29\/1R\/8ctNV2t+R9tpPpL32E2mv\/UTaaz+R9tpPpL32E2mv\/UTaaz\/RXu39oOntF+fpPfUPdd+Jf6hbTvxB3e6sv9r7z3WHq9K8pzUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHf3AsKZlCs=",
          "encoding":"base64",
          "height":150,
          "name":"back",
@@ -33,13 +33,13 @@
          "name":"objects",
          "objects":[
                 {
-                 "gid":270,
+                 "gid":357,
                  "height":32,
                  "id":216,
                  "name":"",
                  "properties":
                     {
-
+                     "parameters":"{ \"startingStage\" : 3 }"
                     },
                  "rotation":0,
                  "type":"",
@@ -49,13 +49,13 @@
                  "y":488
                 }, 
                 {
-                 "gid":2147483918,
+                 "gid":2147484005,
                  "height":32,
                  "id":217,
                  "name":"",
                  "properties":
                     {
-
+                     "parameters":"{ \"startingStage\" : 3 }"
                     },
                  "rotation":0,
                  "type":"",
@@ -65,13 +65,13 @@
                  "y":488
                 }, 
                 {
-                 "gid":270,
+                 "gid":357,
                  "height":32,
                  "id":218,
                  "name":"",
                  "properties":
                     {
-
+                     "parameters":"{ \"startingStage\" : 3 }"
                     },
                  "rotation":0,
                  "type":"",
@@ -81,13 +81,13 @@
                  "y":488
                 }, 
                 {
-                 "gid":270,
+                 "gid":357,
                  "height":32,
                  "id":219,
                  "name":"",
                  "properties":
                     {
-
+                     "parameters":"{ \"startingStage\" : 3 }"
                     },
                  "rotation":0,
                  "type":"",
@@ -97,13 +97,13 @@
                  "y":488
                 }, 
                 {
-                 "gid":2147483918,
+                 "gid":2147484005,
                  "height":32,
                  "id":220,
                  "name":"",
                  "properties":
                     {
-
+                     "parameters":"{ \"startingStage\" : 3 }"
                     },
                  "rotation":0,
                  "type":"",
@@ -113,13 +113,13 @@
                  "y":488
                 }, 
                 {
-                 "gid":270,
+                 "gid":357,
                  "height":32,
                  "id":221,
                  "name":"",
                  "properties":
                     {
-
+                     "parameters":"{ \"startingStage\" : 3 }"
                     },
                  "rotation":0,
                  "type":"",
@@ -129,13 +129,13 @@
                  "y":488
                 }, 
                 {
-                 "gid":268,
+                 "gid":355,
                  "height":32,
                  "id":222,
                  "name":"",
                  "properties":
                     {
-
+                     "parameters":"{ \"startingStage\" : 4 }"
                     },
                  "rotation":0,
                  "type":"",
@@ -145,13 +145,13 @@
                  "y":488
                 }, 
                 {
-                 "gid":2147483916,
+                 "gid":2147484003,
                  "height":32,
                  "id":223,
                  "name":"",
                  "properties":
                     {
-
+                     "parameters":"{ \"startingStage\" : 4 }"
                     },
                  "rotation":0,
                  "type":"",
@@ -161,13 +161,13 @@
                  "y":488
                 }, 
                 {
-                 "gid":2147483916,
+                 "gid":2147484003,
                  "height":32,
                  "id":224,
                  "name":"",
                  "properties":
                     {
-
+                     "parameters":"{ \"startingStage\" : 4 }"
                     },
                  "rotation":0,
                  "type":"",
@@ -177,13 +177,13 @@
                  "y":488
                 }, 
                 {
-                 "gid":268,
+                 "gid":355,
                  "height":32,
                  "id":225,
                  "name":"",
                  "properties":
                     {
-
+                     "parameters":"{ \"startingStage\" : 4 }"
                     },
                  "rotation":0,
                  "type":"",
@@ -193,13 +193,13 @@
                  "y":488
                 }, 
                 {
-                 "gid":268,
+                 "gid":355,
                  "height":32,
                  "id":226,
                  "name":"",
                  "properties":
                     {
-
+                     "parameters":"{ \"startingStage\" : 4 }"
                     },
                  "rotation":0,
                  "type":"",
@@ -209,13 +209,13 @@
                  "y":488
                 }, 
                 {
-                 "gid":267,
+                 "gid":354,
                  "height":24,
                  "id":227,
                  "name":"",
                  "properties":
                     {
-
+                     "parameters":"{ \"startingStage\" : 4 }"
                     },
                  "rotation":0,
                  "type":"",
@@ -225,13 +225,13 @@
                  "y":488
                 }, 
                 {
-                 "gid":267,
+                 "gid":354,
                  "height":24,
                  "id":228,
                  "name":"",
                  "properties":
                     {
-
+                     "parameters":"{ \"startingStage\" : 4 }"
                     },
                  "rotation":0,
                  "type":"",
@@ -241,13 +241,13 @@
                  "y":488
                 }, 
                 {
-                 "gid":267,
+                 "gid":354,
                  "height":24,
                  "id":229,
                  "name":"",
                  "properties":
                     {
-
+                     "parameters":"{ \"startingStage\" : 4 }"
                     },
                  "rotation":0,
                  "type":"",
@@ -257,13 +257,13 @@
                  "y":488
                 }, 
                 {
-                 "gid":2147483915,
+                 "gid":2147484002,
                  "height":24,
                  "id":230,
                  "name":"",
                  "properties":
                     {
-
+                     "parameters":"{ \"startingStage\" : 4 }"
                     },
                  "rotation":0,
                  "type":"",
@@ -273,13 +273,13 @@
                  "y":488
                 }, 
                 {
-                 "gid":267,
+                 "gid":354,
                  "height":24,
                  "id":231,
                  "name":"",
                  "properties":
                     {
-
+                     "parameters":"{ \"startingStage\" : 4 }"
                     },
                  "rotation":0,
                  "type":"",
@@ -289,13 +289,13 @@
                  "y":488
                 }, 
                 {
-                 "gid":269,
+                 "gid":356,
                  "height":16,
                  "id":232,
                  "name":"",
                  "properties":
                     {
-
+                     "parameters":"{ \"startingStage\" : 3 }"
                     },
                  "rotation":0,
                  "type":"",
@@ -305,13 +305,13 @@
                  "y":488
                 }, 
                 {
-                 "gid":2147483917,
+                 "gid":2147484004,
                  "height":16,
                  "id":233,
                  "name":"",
                  "properties":
                     {
-
+                     "parameters":"{ \"startingStage\" : 3 }"
                     },
                  "rotation":0,
                  "type":"",
@@ -321,13 +321,13 @@
                  "y":488
                 }, 
                 {
-                 "gid":2147483917,
+                 "gid":2147484004,
                  "height":16,
                  "id":234,
                  "name":"",
                  "properties":
                     {
-
+                     "parameters":"{ \"startingStage\" : 3 }"
                     },
                  "rotation":0,
                  "type":"",
@@ -337,13 +337,13 @@
                  "y":488
                 }, 
                 {
-                 "gid":269,
+                 "gid":356,
                  "height":16,
                  "id":235,
                  "name":"",
                  "properties":
                     {
-
+                     "parameters":"{ \"startingStage\" : 3 }"
                     },
                  "rotation":0,
                  "type":"",
@@ -353,13 +353,13 @@
                  "y":488
                 }, 
                 {
-                 "gid":2147483917,
+                 "gid":2147484004,
                  "height":16,
                  "id":236,
                  "name":"",
                  "properties":
                     {
-
+                     "parameters":"{ \"startingStage\" : 3 }"
                     },
                  "rotation":0,
                  "type":"",
@@ -369,13 +369,13 @@
                  "y":488
                 }, 
                 {
-                 "gid":269,
+                 "gid":356,
                  "height":16,
                  "id":237,
                  "name":"",
                  "properties":
                     {
-
+                     "parameters":"{ \"startingStage\" : 3 }"
                     },
                  "rotation":0,
                  "type":"",
@@ -385,7 +385,7 @@
                  "y":488
                 }, 
                 {
-                 "gid":261,
+                 "gid":294,
                  "height":16,
                  "id":238,
                  "name":"",
@@ -401,7 +401,7 @@
                  "y":472
                 }, 
                 {
-                 "gid":2147483911,
+                 "gid":2147483944,
                  "height":80,
                  "id":239,
                  "name":"",
@@ -417,7 +417,7 @@
                  "y":472
                 }, 
                 {
-                 "gid":169,
+                 "gid":202,
                  "height":88,
                  "id":240,
                  "name":"",
@@ -433,7 +433,7 @@
                  "y":480
                 }, 
                 {
-                 "gid":146,
+                 "gid":179,
                  "height":16,
                  "id":244,
                  "name":"",
@@ -713,19 +713,19 @@
          "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/miscellaneous.json"
         }, 
         {
-         "firstgid":21,
+         "firstgid":23,
          "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/liquids.json"
         }, 
         {
-         "firstgid":49,
+         "firstgid":51,
          "source":"..\/..\/..\/tilesets\/avikan-custom\/theamaterials.json"
         }, 
         {
-         "firstgid":92,
+         "firstgid":125,
          "source":"..\/..\/..\/tilesets\/avikan-custom\/theaobjects-avikan.json"
         }, 
         {
-         "firstgid":267,
+         "firstgid":354,
          "source":"..\/..\/..\/tilesets\/avikan-custom\/theaobjects-farmables.json"
         }],
  "tilewidth":8,

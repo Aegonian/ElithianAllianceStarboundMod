@@ -1,0 +1,68 @@
+{
+  "objectName" : "wildboratoseed",
+  "colonyTags" : ["nature"],
+  "rarity" : "Common",
+  "category" : "seed",
+  "description" : "A plump plant rich in calories and taste both.",
+  "shortdescription" : "Borato Seed",
+  "objectType" : "farmable",
+  "printable" : false,
+  "price" : 20,
+  "hasObjectItem" : false,
+
+  "apexDescription" : "It looks a bit like an oversized potato.",
+  "avianDescription" : "This plant looks quite delicious to me.",
+  "floranDescription" : "Hard and tasssty root, fressh from the dirt.",
+  "glitchDescription" : "Knowledgeable. The borato can be prepared in dozens of different ways.",
+  "humanDescription" : "Does this thing have as many applications as a potato? It sure looks the part.",
+  "hylotlDescription" : "A simple but useful vegetable.",
+  "novakidDescription" : "Just some kinda hard root.",
+  
+  "aegiDescription" : "According to the history books, the borato was engineered from native Elithian flora, and a bit of ancient potato DNA.",
+  "avikanDescription" : "Is this like a bolbohn? It doesn't smell as good.",
+  "erixianDescription" : "The borato, one of the most common vegetables in the Union.",
+  "trinkDescription" : "The Aegi did some extensive bio-engineering when they first came to Elithia. This plant is a result of those days.",
+  "hymidDescription" : "An incredibly tasty vegetable.",
+  "notixDescription" : "I quite like the taste of this root.",
+  "jorgasianDescription" : "A borato root. The Aegi export these in massive numbers.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected alien flora. Similarities to bolbohn noted.",
+
+  "inventoryIcon" : "boratoseedicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "boratoseed.png:<color>.<stage>.<alt>",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "requireTilledAnchors" : false,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "radioMessagesOnPickup" : [ "pickupseed" ],
+
+  "stages" : [
+    {
+      "duration" : [1080, 1160]
+    },
+    {
+      "duration" : [1080, 1160]
+    },
+    {
+      "alts" : 5,
+      "harvestPool" : "boratoHarvest"
+    }
+  ],
+
+  "breakDropOptions" : [
+    [ [ "bolbohnseed", 1, { } ] ]
+  ],
+
+  "maxImmersion" : 0.25
+}

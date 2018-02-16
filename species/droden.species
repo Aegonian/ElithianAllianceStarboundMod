@@ -22,6 +22,8 @@
 	  { "item" : "avikanmarketstallmodernweapons" },
 	  { "item" : "avikanescapehatch" },
 	  { "item" : "avikanscanner" },
+	  { "item" : "avikanthickpiperight" },
+	  { "item" : "avikanthickpipeleft" },
 
 //NEW in v2.2.3
 	  { "item" : "avikancargodoor" },

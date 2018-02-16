@@ -1,0 +1,28 @@
+{
+  "materialId" : 30087,
+  "materialName" : "avikanthickpiperight",
+  "particleColor" : [97, 97, 97, 255],
+  "itemDrop" : "avikanthickpiperight", 
+  "shortdescription" : "Big Avikan Pipe Right",
+  
+  "description" : "The right half of a very thick pipe.",
+  "glitchDescription" : "Observation. A lot could fit inside such a pipe.",
+  "floranDescription" : "Big pipess...",
+  "novakidDescription" : "A bigg'r pipe than any I've seen before.",
+  
+  "drodenDescription" : "Analysis complete. Large pipe.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "avikanthickpiperight.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 200
+  }
+}

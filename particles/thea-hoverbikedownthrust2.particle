@@ -1,0 +1,23 @@
+{
+  "kind" : "thea-hoverbikedownthrust2",
+  "definition" : {
+    "type" : "ember",
+    "size" : 0.8,
+    "fullbright" : true,
+    "color" : [163, 228, 236, 255],
+    "light" : [68, 80, 176],
+    "fade" : 1,
+    "initialVelocity" : [0.0, -1.0 ],
+    "finalVelocity" : [0.0, 0.0],
+    "approach" : [0, -2],
+    "timeToLive" : 0.5,
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.425,
+    "layer" : "middle",
+    "variance" : {
+      "initialVelocity" : [-3, 0],
+      "size" : 0.4
+    },
+	"collidesLiquid" : false
+  }
+}

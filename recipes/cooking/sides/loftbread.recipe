@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "loftgrain", "count" : 2 }
+  ],
+  "output" : { "item" : "loftbread", "count" : 1 },
+  "groups" : [ "craftingfood", "sides" ],
+  "collectables" : { "cooking" : "loftbread" }
+}

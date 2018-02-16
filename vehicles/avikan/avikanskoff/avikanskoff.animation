@@ -1,0 +1,584 @@
+{
+  "globalTagDefaults" : {
+    "colour" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "body" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {},
+		  "warpInPart1" : {
+            "frames" : 4,
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "warpInPart2"
+          },
+          "warpInPart2" : {
+            "frames" : 4,
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "warpOutPart1" : {
+            "frames" : 4,
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "warpOutPart2"
+          },
+          "warpOutPart2" : {
+            "frames" : 4,
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "invisible"
+          },
+          "invisible" : {}
+        }
+      },
+	  "rearThruster" : {
+        "default" : "off",
+        "states" : {
+          "off" : {
+            "properties" : {
+              "particleEmittersOff" : [ "rearThrusterActive", "rearThrusterIdle", "rearThrusterActive2", "rearThrusterIdle2" ]
+            }
+		  },
+          "active" : {
+            "frames" : 1,
+            "cycle" : 0.125,
+            "mode" : "loop",
+            "properties" : {
+              "particleEmittersOn" : [ "rearThrusterActive", "rearThrusterActive2" ],
+              "particleEmittersOff" : [ "rearThrusterIdle", "rearThrusterIdle2" ]
+            }
+          },
+          "idle" : {
+            "frames" : 1,
+            "cycle" : 0.125,
+            "mode" : "loop",
+            "properties" : {
+              "particleEmittersOn" : [ "rearThrusterIdle", "rearThrusterIdle2" ],
+              "particleEmittersOff" : [ "rearThrusterActive", "rearThrusterActive2" ]
+            }
+          }
+        }
+      },
+	  "bottomThruster" : {
+        "default" : "off",
+        "states" : {
+          "off" : {
+            "properties" : {
+              "particleEmittersOff" : [ "bottomThrusterActive", "bottomThrusterIdle", "bottomThrusterActive2", "bottomThrusterIdle2" ]
+            }
+		  },
+          "active" : {
+            "frames" : 1,
+            "cycle" : 0.125,
+            "mode" : "loop",
+            "properties" : {
+              "particleEmittersOn" : [ "bottomThrusterActive", "bottomThrusterActive2" ],
+              "particleEmittersOff" : [ "bottomThrusterIdle", "bottomThrusterIdle2" ]
+            }
+          },
+          "idle" : {
+            "frames" : 1,
+            "cycle" : 0.125,
+            "mode" : "loop",
+            "properties" : {
+              "particleEmittersOn" : [ "bottomThrusterIdle", "bottomThrusterIdle2" ],
+              "particleEmittersOff" : [ "bottomThrusterActive", "bottomThrusterActive2" ]
+            }
+          }
+        }
+      },
+	  "headlights" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "on" : {}
+        }
+      },
+	  "landingGear" : {
+        "default" : "down",
+        "states" : {
+          "down" : {},
+          "raise" : {
+            "frames" : 2,
+            "cycle" : 0.2,
+            "mode" : "transition",
+			"transition" : "up"
+		  },
+          "up" : {},
+          "lower" : {
+            "frames" : 2,
+            "cycle" : 0.2,
+            "mode" : "transition",
+			"transition" : "down"
+		  },
+          "invisible" : {}
+        }
+      },
+	  "passengerDoor" : {
+        "default" : "closed",
+        "states" : {
+          "closed" : {},
+          "opening" : {
+            "frames" : 2,
+            "cycle" : 0.1,
+            "mode" : "transition",
+			"transition" : "open"
+		  },
+          "open" : {},
+          "closing" : {
+            "frames" : 2,
+            "cycle" : 0.2,
+            "mode" : "transition",
+			"transition" : "closed"
+		  },
+          "invisible" : {}
+        }
+      }
+    },
+
+    "parts" : {
+	//FOREGROUND -- Rendered in front of the player
+      "foreground" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 1,
+          "transformationGroups" : ["flip", "rotation"]
+        },
+        "partStates" : {
+          "body" : {
+            "idle" : {
+              "properties" : {
+                "image" : "avikanskoff-foreground.png:<damageState>.<direction>"
+              }
+            },
+			"warpInPart1" : {
+              "properties" : {}
+            },
+            "warpInPart2" : {
+              "properties" : {
+                "image" : "avikanskoff-foreground.png:<damageState>.<direction>"
+              }
+            },
+            "warpOutPart1" : {
+              "properties" : {
+                "image" : "avikanskoff-foreground.png:<damageState>.<direction>"
+              }
+            },
+            "warpOutPart2" : {
+              "properties" : {}
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+	  
+	//BACKGROUND -- Rendered behind the player, and holds the player anchors
+      "background" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : -1,
+          "transformationGroups" : ["flip", "rotation"],
+          "drivingSeatPosition" : [6.875, 0.0],
+          "passengerSeatPosition" : [-2.0, 0.0]
+        },
+        "partStates" : {
+          "body" : {
+            "idle" : {
+              "properties" : {
+                "image" : "avikanskoff-background.png:<damageState>.<direction>"
+              }
+            },
+			"warpInPart1" : {
+              "properties" : {}
+            },
+            "warpInPart2" : {
+              "properties" : {
+                "image" : "avikanskoff-background.png:<damageState>.<direction>"
+              }
+            },
+            "warpOutPart1" : {
+              "properties" : {
+                "image" : "avikanskoff-background.png:<damageState>.<direction>"
+              }
+            },
+            "warpOutPart2" : {
+              "properties" : {}
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+	  
+	//LIGHTS -- Rendered in front of the rest of the vehicle
+	  "lights" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 2,
+          "fullbright" : true,
+          "transformationGroups" : ["flip", "rotation"]
+        },
+        "partStates" : {
+          "headlights" : {
+            "off" : {
+              "properties" : {
+              }
+            },
+            "on" : {
+              "properties" : {
+                "image" : "avikanskoff-headlights.png:<damageState>.<direction>"
+              }
+            }
+          }
+        }
+      },
+	  
+	//LANDING GEAR -- Rendered in front of the rest of the vehicle
+	  "landingGear" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 2,
+          "transformationGroups" : ["flip", "rotation"]
+        },
+        "partStates" : {
+          "landingGear" : {
+            "down" : {
+              "properties" : {
+                "image" : "avikanskoff-landinggear.png:down"
+              }
+            },
+            "raise" : {
+              "properties" : {
+                "image" : "avikanskoff-landinggear.png:raise.<frame>"
+              }
+            },
+            "up" : {
+              "properties" : {
+                "image" : "avikanskoff-landinggear.png:up"
+              }
+            },
+            "lower" : {
+              "properties" : {
+                "image" : "avikanskoff-landinggear.png:lower.<frame>"
+              }
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+	  
+	//PASSENGER DOOR -- Rendered in front of the rest of the vehicle
+	  "passengerDoor" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 2,
+          "transformationGroups" : ["flip", "rotation"]
+        },
+        "partStates" : {
+          "passengerDoor" : {
+            "closed" : {
+              "properties" : {
+                "image" : "avikanskoff-passengerdoor.png:<damageState>.closed"
+              }
+            },
+            "opening" : {
+              "properties" : {
+                "image" : "avikanskoff-passengerdoor.png:<damageState>.opening.<frame>"
+              }
+            },
+            "open" : {
+              "properties" : {
+                "image" : "avikanskoff-passengerdoor.png:<damageState>.open"
+              }
+            },
+            "closing" : {
+              "properties" : {
+                "image" : "avikanskoff-passengerdoor.png:<damageState>.closing.<frame>"
+              }
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+	  
+	//THRUSTERS -- Rendered in front of the rest of the vehicle
+      "rearThruster" : {
+        "properties" : {
+          "centered" : true,
+          "fullbright" : true,
+          "zLevel" : 2,
+          "transformationGroups" : ["flip", "rotation"]
+        },
+        "partStates" : {
+          "rearThruster" : {
+            "off" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "active" : {
+              "properties" : {
+                "image" : "avikanskoff-thrusters.png:rear.active.<rearThrusterFrame>"
+              }
+            },
+            "idle" : {
+              "properties" : {
+                "image" : "avikanskoff-thrusters.png:rear.idle.<rearThrusterFrame>"
+              }
+            }
+          }
+        }
+      },
+      "bottomThruster" : {
+        "properties" : {
+          "centered" : true,
+          "fullbright" : true,
+          "zLevel" : 2,
+          "transformationGroups" : ["flip", "rotation"]
+        },
+        "partStates" : {
+          "bottomThruster" : {
+            "off" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "active" : {
+              "properties" : {
+                "image" : "avikanskoff-thrusters.png:bottom.active.<bottomThrusterFrame>"
+              }
+            },
+            "idle" : {
+              "properties" : {
+                "image" : "avikanskoff-thrusters.png:bottom.idle.<bottomThrusterFrame>"
+              }
+            }
+          }
+        }
+      },
+
+	//WARP OVERLAY, RENDERED ABOVE EVERYTHING
+      "warp" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 3,
+          "fullbright" : true,
+          "transformationGroups" : ["flip", "rotation"]
+        },
+        "partStates" : {
+          "body" : {
+            "warpInPart1" : {
+              "properties" : {
+                "image" : "avikanskoffwarp.png:warpInPart1.<frame>"
+              }
+            },
+            "warpInPart2" : {
+              "properties" : {
+                "image" : "avikanskoffwarp.png:warpInPart2.<frame>"
+              }
+            },
+            "warpOutPart1" : {
+              "properties" : {
+                "image" : "avikanskoffwarp.png:warpOutPart1.<frame>"
+              }
+            },
+            "warpOutPart2" : {
+              "properties" : {
+                "image" : "avikanskoffwarp.png:warpOutPart2.<frame>"
+              }
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "rotation" : {
+      "interpolated" : true
+    },
+    "flip" : {}
+  },
+
+  "particleEmitters" : {
+	//THRUSTERS
+    "rearThrusterIdle" : {
+      "transformationGroups" : ["flip", "rotation"],
+      "emissionRate" : 15.0,
+      "offsetRegion" : [ -7.75, -3.25, -7.75, -2.25],
+      "particles" : [
+		{ "particle" : "thea-hoverbikethrust2" }
+	  ]
+    },
+    "rearThrusterActive" : {
+      "transformationGroups" : ["flip", "rotation"],
+      "emissionRate" : 50.0,
+      "offsetRegion" : [ -7.75, -3.25, -7.75, -2.0],
+      "particles" : [
+		{ "particle" : "thea-hoverbikethrustlarge2" }
+	  ]
+    },
+    "rearThrusterIdle2" : {
+      "transformationGroups" : ["flip", "rotation"],
+      "emissionRate" : 15.0,
+      "offsetRegion" : [ -10.75, -0.25, -10.75, 1.25],
+      "particles" : [
+		{ "particle" : "thea-hoverbikethrust2" }
+	  ]
+    },
+    "rearThrusterActive2" : {
+      "transformationGroups" : ["flip", "rotation"],
+      "emissionRate" : 50.0,
+      "offsetRegion" : [ -10.75, -0.25, -10.75, 1.5],
+      "particles" : [
+		{ "particle" : "thea-hoverbikethrustlarge2" }
+	  ]
+    },
+    "bottomThrusterIdle" : {
+      "transformationGroups" : ["flip", "rotation"],
+      "emissionRate" : 15.0,
+      "offsetRegion" : [6.75, -3.0, 8.75, -3.0],
+      "particles" : [
+		{ "particle" : "thea-hoverbikedownthrust2" }
+	  ]
+    },
+    "bottomThrusterActive" : {
+      "transformationGroups" : ["flip", "rotation"],
+      "emissionRate" : 50.0,
+      "burstCount"  : 2,
+      "offsetRegion" : [6.75, -3.0, 8.75, -3.0],
+      "particles" : [
+		{ "particle" : "thea-hoverbikedownthrustlarge2" }
+	  ]
+    },
+    "bottomThrusterIdle2" : {
+      "transformationGroups" : ["flip", "rotation"],
+      "emissionRate" : 15.0,
+      "offsetRegion" : [-2.25, -3.0, 1.75, -3.0],
+      "particles" : [
+		{ "particle" : "thea-hoverbikedownthrust2" }
+	  ]
+    },
+    "bottomThrusterActive2" : {
+      "transformationGroups" : ["flip", "rotation"],
+      "emissionRate" : 50.0,
+      "burstCount"  : 2,
+      "offsetRegion" : [-2.25, -3.0, 1.75, -3.0],
+      "particles" : [
+		{ "particle" : "thea-hoverbikedownthrustlarge2" }
+	  ]
+    },
+	
+	//DAMAGE
+	"damageShards" : {
+	  "transformationGroups" : ["flip", "rotation"],
+      "emissionRate" : 0.0,
+	  "burstCount"  : 40,
+	  "offsetRegion" : [-8.0, -2.0, 8.0, 2.0],
+	  "particles" : [
+		{ "particle" : "avikankeffshard" },
+		{ "particle" : "fireshard" }
+	  ]
+	},
+    "smoke" : {
+      "transformationGroups" : ["flip", "rotation"],
+      "emissionRate" : 16.0,
+      "offsetRegion" : [ 4.75, -2.25, 6.25, -2.75],
+      "particles" : [
+		{ "particle" : "burningvehiclesmokefront" }
+	  ]
+    },
+    "fire" : {
+      "transformationGroups" : ["flip", "rotation"],
+      "emissionRate" : 12.0,
+      "offsetRegion" : [ -9.0, 0.25, -8.5, 1.25],
+      "particles" : [
+		{ "particle" : "burningdust" },
+		{ "particle" : "campfireflames" },
+		{ "particle" : "fireshard" },
+		{ "particle" : "burningvehiclesmokefront" }
+	  ]
+    },
+	"wreckShards" : {
+	  "transformationGroups" : ["flip", "rotation"],
+      "emissionRate" : 0.0,
+	  "burstCount"  : 20,
+	  "offsetRegion" : [-8.5, -2.5, 8.5, 2.5],
+	  "particles" : [
+		{ "particle" : "avikanskoffwreck4" }
+	  ]
+	},
+	"wreck" : {
+	  "transformationGroups" : ["flip", "rotation"],
+      "emissionRate" : 0.0,
+	  "particles" : [
+		{ "particle" : "avikanskoffwreck1" },
+		{ "particle" : "avikanskoffwreck2" },
+		{ "particle" : "avikanskoffwreck3" }
+	  ]
+	}
+  },
+
+  "lights" : {
+    "headlightBeam" : {
+      "active" : false,
+      "transformationGroups" : ["flip", "rotation"],
+      "position" : [9.5, -2.5],
+      "color" : [250, 250, 250],
+      "pointLight" : true,
+      "pointAngle" : -25,
+      "pointBeam" : 5
+    }
+  },
+
+  "sounds" : {
+	//ENGINE SOUNDS
+	"engineStart" : [ "/sfx/tech/mech_activate3.ogg" ],
+    "engineLoop" : ["/sfx/tech/thea_shuttle_engineloop.ogg"],
+    "engineLoopIdle" : ["/sfx/tech/hoverbike_idle_loop.ogg"],
+	
+	//DAMAGE
+	"changeDamageState" : [
+	  "/sfx/gun/grenadeblast_small_fire1.ogg",
+	  "/sfx/gun/grenadeblast_small_fire2.ogg",
+	  "/sfx/gun/grenadeblast_small_fire3.ogg"
+	],
+	"explode" : [
+	  "/sfx/gun/grenadeblast_small_fire1.ogg",
+	  "/sfx/gun/grenadeblast_small_fire2.ogg",
+	  "/sfx/gun/grenadeblast_small_fire3.ogg"
+	],
+	"warning" : [ "/sfx/objects/redalert2.ogg" ],
+	
+	//COLLISION
+    "collisionNotification" : [
+	  "/sfx/tech/hoverbike_bump1.ogg",
+	  "/sfx/tech/hoverbike_bump2.ogg",
+	  "/sfx/tech/hoverbike_bump3.ogg"
+	],
+    "collisionDamage" : [ "/sfx/tech/hoverbike_crash1.ogg" ],
+    "collisionLoop" : [ "/sfx/rails/rail_grind_loop.ogg" ],
+	
+	//INPUT CONTROLS
+    "headlightSwitchOn" : [ "/sfx/objects/floodlights_on.ogg" ],
+    "headlightSwitchOff" : [ "/sfx/objects/floodlights_off.ogg" ],
+
+	//VEHICLE DESPAWN
+    "returnvehicle" : [ "/sfx/tools/teleport_up.ogg" ]
+  }
+}

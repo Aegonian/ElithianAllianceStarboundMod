@@ -1,0 +1,26 @@
+{
+  "kind" : "avikanskoffwreck4",
+  "definition" : {
+    "type" : "textured",
+    "image" : "/particles/avikanskoffwreck/avikanskoffwreck4.png",
+    "position" : [0.0, 0.0],
+    "size" : 0.75,
+    "color" : [255, 255, 255, 255],
+    "fade" : 0,
+    "initialVelocity" : [-2.5, 15.0],
+    "finalVelocity" : [0, -10],
+    "approach" : [5, 50],
+    "rotation" : 0,
+    "flippable" : true,
+    "angularVelocity" : -30,
+    "timeToLive" : 0.75,
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.25,
+    "layer" : "front",
+    "variance" : {
+      "timeToLive" : 0.5,
+      "size" : 0.25,
+      "rotation" : 360
+    }
+  }
+}

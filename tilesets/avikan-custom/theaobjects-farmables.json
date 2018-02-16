@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":4,
+ "tilecount":8,
  "tileheight":32,
  "tileproperties":
     {
@@ -40,6 +40,38 @@
          "imagePositionY":"0",
          "object":"wilddunestalkseed",
          "tilesetDirection":"right"
+        },
+     "4":
+        {
+         "\/\/shortdescription":"Ambrum",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"wildambrumseed",
+         "tilesetDirection":"right"
+        },
+     "5":
+        {
+         "\/\/shortdescription":"Borato",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"wildboratoseed",
+         "tilesetDirection":"right"
+        },
+     "6":
+        {
+         "\/\/shortdescription":"Loftgrain",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"wildloftgrainseed",
+         "tilesetDirection":"right"
+        },
+     "7":
+        {
+         "\/\/shortdescription":"Selvas",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"wildselvasseed",
+         "tilesetDirection":"right"
         }
     },
  "tiles":
@@ -59,6 +91,22 @@
      "3":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/farmables\/wilddunestalkseed.png"
+        },
+     "4":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/farmables\/ambrumseed.png"
+        },
+     "5":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/farmables\/boratoseed.png"
+        },
+     "6":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/farmables\/loftgrainseed.png"
+        },
+     "7":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/farmables\/selvasseed.png"
         }
     },
  "tilewidth":16

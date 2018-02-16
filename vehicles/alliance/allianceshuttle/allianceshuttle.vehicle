@@ -68,9 +68,13 @@
   //MOVEMENT SETTINGS
   "flySpeedX" : 100,
   "flySpeedY" : 75,
-  "flyControlForce" : 175,
+  "flyControlForceX" : 175,
+  "flyControlForceY" : 175,
+  "stopControlForce" : 150,
   "verticalMovementAngle" : 0.5, //from 0 to 1. Determines maximum angle when vehicle moves on the vertical axis, or when actively switching directions
-  "brakingAngle" : 0.25, //from 0 to 1. Determines maxium angle when the vehicle is passively braking
+  "brakingAngle" : 0.25, //from 0 to 1. Determines maximum angle when the vehicle is passively braking
+  "maxLiquidImmersion" : 0.95, //maximum liquid immersion before the vehicle sinks
+  "liquidBuoyancy" : 2.0, //Buoyancy while floating in a liquid
 
   //HEALTH SETTINGS
   "protection" : 50,
@@ -84,6 +88,7 @@
   ],
   "smokeHealthFactor" : 0.25,
   "fireHealthFactor" : 0.125,
+  "warningHealthFactor" : 0.125,
   
   "explosionConfig" : "/projectiles/explosions/regularexplosion2/regularexplosionknockback.config",
   "explosionDamage" : 50,
@@ -117,7 +122,7 @@
     "collisionPoly" : [ [5.0, 2.5], [8.0, 1.0], [8.0, -1.0], [5.0, -2.5], [-5.0, -2.5], [-8.0, -1.0], [-8.0, 1.0], [-5.0, 2.5] ],
     "mass" : 4,
     "airFriction" : 4.0,
-    "liquidFriction" : 6.5,
+    "liquidFriction" : 25.0,
     "ignorePlatformCollision" : true,
     "gravityEnabled" : true,
     "collisionEnabled" : true
@@ -130,5 +135,14 @@
     "ignorePlatformCollision" : true,
     "gravityEnabled" : false,
     "collisionEnabled" : true
+  },
+
+  //PHYSICS COLLISION SETTINGS
+  "physicsCollisions" : {
+    "roof" : {
+      "collision" : [ [-8.0, 1.5], [3.0, 1.5], [3.0, 2.5], [-8.0, 2.5] ],
+      "collisionKind" : "platform",
+      "attachToPart" : "background"
+    }
   }
 }

@@ -9,11 +9,16 @@ function init()
   --Flight settings
   self.flySpeedX = config.getParameter("flySpeedX")
   self.flySpeedY = config.getParameter("flySpeedY")
-  self.flyControlForce = config.getParameter("flyControlForce")
+  self.flyControlForceX = config.getParameter("flyControlForceX")
+  self.flyControlForceY = config.getParameter("flyControlForceY")
+  self.stopControlForce = config.getParameter("stopControlForce")
   self.verticalMovementAngle = config.getParameter("verticalMovementAngle")
   self.brakingAngle = config.getParameter("brakingAngle")
   self.movementSettings = config.getParameter("movementSettings")
   self.occupiedMovementSettings = config.getParameter("occupiedMovementSettings")
+  --Liquid settings
+  self.maxLiquidImmersion = config.getParameter("maxLiquidImmersion")
+  self.liquidBuoyancy = config.getParameter("liquidBuoyancy")
   --Health settings
   self.protection = config.getParameter("protection")
   self.maxHealth = config.getParameter("maxHealth")
@@ -21,6 +26,7 @@ function init()
   self.damageStateNames = config.getParameter("damageStateNames")
   self.smokeHealthFactor = config.getParameter("smokeHealthFactor")
   self.fireHealthFactor = config.getParameter("fireHealthFactor")
+  self.warningHealthFactor = config.getParameter("warningHealthFactor")
   --Collision settings
   self.minDamageCollisionAccel = config.getParameter("minDamageCollisionAccel")
   self.minNotificationCollisionAccel = config.getParameter("minNotificationCollisionAccel")
@@ -61,10 +67,11 @@ function init()
   self.enginePitch = self.engineRevPitch
   self.engineVolume = self.engineIdleVolume
   self.idleEngineTimer = 0
+  self.warningSoundIsPlaying = false
+  animator.stopAllSounds("warning")
 
   self.driver = nil;
   self.facingDirection = config.getParameter("facingDirection") or 1 --Allow the spawner to set the starting facing direction
-  self.jumpTimer = 0
   
   --Starting animations
   animator.setGlobalTag("rearThrusterFrame", 1)
@@ -133,13 +140,17 @@ function update()
 	world.debugText("I was destroyed! You shouldn't be seeing this...", mcontroller.position(), "yellow")
   --Freeze the vehicle when it is being collected
   elseif (animator.animationState("body")=="warpInPart1" or animator.animationState("body")=="warpOutPart2") then
-    --lock it solid whilst spawning/despawning
+    --Lock the vehicle in place spawning/despawning
     mcontroller.setPosition(self.lastPosition)
     mcontroller.setVelocity({0,0})
 	world.debugText("I am being collected", mcontroller.position(), "yellow")
-  --When not warping
+	--Hide landing gear and passenger door while warping
+	animator.setAnimationState("landingGear", "invisible")
+	animator.setAnimationState("passengerDoor", "invisible")
+  --When not warping (i.e. idle or in use)
   else
     local driverThisFrame = vehicle.entityLoungingIn("drivingSeat")
+	local passengerThisFrame = vehicle.entityLoungingIn("passengerSeat")
 	
 	--Code for detecting vehicle theft
 	if not self.ownerKey and driverThisFrame and not self.driver then
@@ -157,19 +168,34 @@ function update()
 	  end
     end
 	
+	--Count down the idle engine sound timer
 	if self.headlightsOn or driverThisFrame then
 	  self.idleEngineTimer = self.idleEngineTime
 	end
 	self.idleEngineTimer = math.max(0, self.idleEngineTimer - script.updateDt())
 
+	--Calculate health factor
     local healthFactor = storage.health / self.maxHealth
 
+	--Run through all basic functions every update tick
 	control(driverThisFrame)
 	animate(driverThisFrame)
 	updateDamage(0, self.headlightsOn)
 	updateDriveEffects(healthFactor, driverThisFrame)
-
 	updatePassengers(healthFactor)
+	
+	--Passenger door control
+	if passengerThisFrame then
+	  if animator.animationState("passengerDoor") == "open" then
+		animator.setAnimationState("passengerDoor", "closing")
+	  end
+	else
+	  if animator.animationState("passengerDoor") == "closed" then
+		animator.setAnimationState("passengerDoor", "opening")
+	  elseif animator.animationState("passengerDoor") == "invisible" then
+		animator.setAnimationState("passengerDoor", "open")
+	  end
+	end
 	
     self.driver = driverThisFrame
   end
@@ -182,7 +208,7 @@ end
 --============================================== PLAYER CONTROL ==============================================
 --============================================================================================================
 
---Handling player control input
+--Handling player control input, as well as automated controls when driverless
 function control(driverThisFrame)
   mcontroller.resetParameters(self.movementSettings)
   if self.driver then
@@ -210,7 +236,7 @@ function control(driverThisFrame)
   
   --MOVING LEFT
   if vehicle.controlHeld("drivingSeat", "left") and not vehicle.controlHeld("drivingSeat", "jump") then
-	mcontroller.approachXVelocity(-self.flySpeedX, self.flyControlForce)
+	mcontroller.approachXVelocity(-self.flySpeedX, self.flyControlForceX)
 	self.facingDirection = -1
 	if mcontroller.xVelocity() < self.lastXVelocity and mcontroller.xVelocity() > 0 then
 	  self.angle = self.angle + (self.verticalMovementAngle - self.angle) * self.angleApproachFactor
@@ -222,7 +248,7 @@ function control(driverThisFrame)
   
   --MOVING RIGHT
   if vehicle.controlHeld("drivingSeat", "right") and not vehicle.controlHeld("drivingSeat", "jump") then
-	mcontroller.approachXVelocity(self.flySpeedX, self.flyControlForce)
+	mcontroller.approachXVelocity(self.flySpeedX, self.flyControlForceX)
 	self.facingDirection = 1
 	if mcontroller.xVelocity() > self.lastXVelocity and mcontroller.xVelocity() < 0 then
 	  self.angle = self.angle + (-self.verticalMovementAngle - self.angle) * self.angleApproachFactor
@@ -234,7 +260,7 @@ function control(driverThisFrame)
   
   --MOVING DOWN
   if vehicle.controlHeld("drivingSeat", "down") and not vehicle.controlHeld("drivingSeat", "jump") then
-	mcontroller.approachYVelocity(-self.flySpeedY, self.flyControlForce)
+	mcontroller.approachYVelocity(-self.flySpeedY, self.flyControlForceY)
 	--Code for rotating the vehicle
 	if vehicle.controlHeld("drivingSeat", "right") then
 	  self.angle = self.angle + (-self.verticalMovementAngle - self.angle) * self.angleApproachFactor
@@ -247,7 +273,7 @@ function control(driverThisFrame)
   
   --MOVING UP
   if vehicle.controlHeld("drivingSeat", "up") and not vehicle.controlHeld("drivingSeat", "jump") then
-	mcontroller.approachYVelocity(self.flySpeedY, self.flyControlForce)
+	mcontroller.approachYVelocity(self.flySpeedY, self.flyControlForceY)
 	--Code for rotating the vehicle
 	if vehicle.controlHeld("drivingSeat", "right") then
 	  self.angle = self.angle + (self.verticalMovementAngle - self.angle) * self.angleApproachFactor
@@ -290,7 +316,16 @@ function control(driverThisFrame)
   
   --STOP MOVEMENT
   if vehicle.controlHeld("drivingSeat", "jump") then
-	mcontroller.approachVelocity({0,0}, self.flyControlForce)
+	mcontroller.approachVelocity({0,0}, self.stopControlForce)
+  end
+  
+  --CONTROLS WHILE DRIVERLESS
+  if not driverThisFrame then
+	local waterLevel = mcontroller.liquidPercentage()
+	
+	if waterLevel > 0 and waterLevel < self.maxLiquidImmersion then
+	  mcontroller.applyParameters({liquidBuoyancy = self.liquidBuoyancy})
+	end
   end
   
   self.lastXVelocity = mcontroller.xVelocity()
@@ -326,6 +361,11 @@ function animate(driverThisFrame)
 	else
 	  animator.setAnimationState("bottomThruster", "idle")
 	end
+	
+	--Landing gear control
+	if animator.animationState("landingGear") == "down" then
+	  animator.setAnimationState("landingGear", "raise")
+	end
   else
 	--Calculate target angle according the the terrain
     local frontSpringDistance = minimumSpringDistance(self.frontSpringPositions)
@@ -342,6 +382,13 @@ function animate(driverThisFrame)
 
 	--Bottom thruster animation control
 	animator.setAnimationState("bottomThruster", "off")
+	
+	--Landing gear control
+	if animator.animationState("landingGear") == "up" then
+	  animator.setAnimationState("landingGear", "lower")
+	elseif animator.animationState("landingGear") == "invisible" then
+	  animator.setAnimationState("landingGear", "down")
+	end
   end
   
   --Random frame selection for thrusters
@@ -440,6 +487,15 @@ function updateDriveEffects(healthFactor, driverThisFrame)
 	  animator.stopAllSounds("engineLoopIdle")
 	  self.idleLoopSoundPlaying = false
 	end
+  end
+  
+  --If we are at critical health, loop a warning sound
+  if healthFactor <= self.warningHealthFactor and self.warningSoundIsPlaying == false then
+	animator.playSound("warning", -1)
+	self.warningSoundIsPlaying = true
+  elseif healthFactor > self.warningHealthFactor and self.warningSoundIsPlaying == true then
+	animator.stopAllSounds("warning")
+	self.warningSoundIsPlaying = false
   end
 end
 
