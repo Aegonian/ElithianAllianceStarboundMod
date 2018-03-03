@@ -1,0 +1,25 @@
+{
+  "kind" : "thea-thrusterback",
+  "definition" : {
+    "type" : "ember",
+    "size" : 1.0,
+    "fullbright" : true,
+    "color" : [195, 247, 253, 255],
+    "fade" : 1,
+    "light" : [68, 80, 176],
+    "initialVelocity" : [-1.0, -1.0],
+    "finalVelocity" : [0, 0],
+    "approach" : [1.0, 0],
+    "timeToLive" : 0.5,
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.425,
+    "layer" : "back",
+    "variance" : {
+	  "initialVelocity" : [-1.25, -1.25],
+	  "size" : 0.5,
+	  "timeToLive" : 0.25,
+      "rotation" : 180
+    },
+	"collidesLiquid" : false
+  }
+}

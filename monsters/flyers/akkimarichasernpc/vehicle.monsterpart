@@ -1,0 +1,9 @@
+{
+  "name" : "akkimarichasernpc-vehicle",
+  "category" : "akkimarichasernpc",
+  "type" : "vehicle",
+
+  "frames" : {
+    "vehicle" : "akkimarichasernpc-vehicle.png"
+  }
+}

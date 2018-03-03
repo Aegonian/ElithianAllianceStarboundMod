@@ -1,0 +1,11 @@
+{
+  "itemName" : "akkimarigroundpanel",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "akkimarigroundpanel.png",
+  "shortdescription" : "Akris Floor Panel",
+  "description" : "Scrap metal panels acting as a floorboard.",
+
+  "materialId" : 30152
+}

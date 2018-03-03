@@ -38,7 +38,7 @@
   "fireTime" : 0.35,
   "fireProjectile" : "avikanexplosivebullet",
   "fireProjectileConfig" : {
-    "power" : 40
+    "power" : 48
   },
   //SECONDARY FIRE
   "secondaryFireTime" : 3.0,
@@ -47,7 +47,7 @@
   "secondaryFireProjectileCount" : 6,
   "secondaryFireInaccuracy" : 0.15,
   "secondaryFireProjectileConfig" : {
-    "power" : 30,
+    "power" : 36,
 	"speed" : 30,
 	"bounces" : 0
   },

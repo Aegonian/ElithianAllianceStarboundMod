@@ -71,10 +71,10 @@
   "flyControlForceX" : 175,
   "flyControlForceY" : 175,
   "stopControlForce" : 150,
-  "verticalMovementAngle" : 0.5, //from 0 to 1. Determines maximum angle when vehicle moves on the vertical axis, or when actively switching directions
-  "brakingAngle" : 0.25, //from 0 to 1. Determines maximum angle when the vehicle is passively braking
-  "maxLiquidImmersion" : 0.95, //maximum liquid immersion before the vehicle sinks
-  "liquidBuoyancy" : 2.0, //Buoyancy while floating in a liquid
+  "verticalMovementAngle" : 0.5,	//from 0 to 1. Determines maximum angle when vehicle moves on the vertical axis, or when actively switching directions
+  "brakingAngle" : 0.25,			//from 0 to 1. Determines maximum angle when the vehicle is passively braking
+  "maxLiquidImmersion" : 0.95,		//maximum liquid immersion before the vehicle sinks
+  "liquidBuoyancy" : 2.0,			//Buoyancy while floating in a liquid
 
   //HEALTH SETTINGS
   "protection" : 50,

@@ -1,0 +1,29 @@
+{
+  "materialId" : 30098,
+  "materialName" : "akkimariscrapplating",
+  "particleColor" : [181, 128, 91, 255],
+  "itemDrop" : "akkimariscrapplating", 
+  "shortdescription" : "Akris Scrap Plating",
+
+  "description" : "Surprisingly durable plating made from assorted scrap metal.",
+  "glitchDescription" : "Surprised. This plating was crafted from scrap metal.",
+  "floranDescription" : "Ssscrap metal plating.",
+  "novakidDescription" : "Some thick metal plating, looks mighty solid.",
+  
+  "drodenDescription" : "Analysis complete. Scrap metal hull plating. Exact composition unknown.",
+  "akkimariDescription" : "Scrap plating. Cheap and strong, not very pretty.",
+
+  "footstepSound" : "/sfx/blocks/footstep_sand.ogg",
+  "health" : 6,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/thea-tiletemplate.config",
+  "renderParameters" : {
+    "texture" : "akkimariscrapplating.png",
+    "variants" : 6,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 25
+  }
+}

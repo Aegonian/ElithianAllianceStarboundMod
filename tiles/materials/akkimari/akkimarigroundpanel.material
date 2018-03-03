@@ -1,0 +1,29 @@
+{
+  "materialId" : 30152,
+  "materialName" : "akkimarigroundpanel",
+  "particleColor" : [181, 128, 91, 255],
+  "itemDrop" : "akkimarigroundpanel", 
+  "shortdescription" : "Akris Floor Panel",
+  
+  "description" : "Scrap metal panels acting as a floorboard.",
+  "glitchDescription" : "Uneasy. This does not look very sturdy.",
+  "floranDescription" : "Floran thinksss thiss panel iss for walking on.",
+  "novakidDescription" : "A metal floorboard... I prefer the sound of boots on wood.",
+  
+  "drodenDescription" : "Analysis complete. Metal floorboard.",
+  "akkimariDescription" : "Metal panels for floor.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "akkimarigroundpanel.png",
+    "variants" : 4,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 70
+  }
+}

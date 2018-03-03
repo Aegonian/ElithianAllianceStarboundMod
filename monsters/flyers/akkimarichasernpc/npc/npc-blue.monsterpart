@@ -1,0 +1,9 @@
+{
+  "name" : "npc-blue",
+  "category" : "akkimarichasernpc",
+  "type" : "npc",
+
+  "frames" : {
+    "npc" : "npc-blue.png"
+  }
+}

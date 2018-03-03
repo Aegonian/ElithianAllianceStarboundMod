@@ -1,0 +1,119 @@
+{
+  "name" : "akkimarichaser",
+  "script" : "akkimarichaser.lua",
+  "boundBox" : [-2, -2, 2, 2],
+  "slaveControlTimeout" : 2.0,
+  "slaveControlHeartbeat" : 1.0,
+  "canBeHit" : true,
+  "animation" : "akkimarichaser.animation",
+
+  //PLAYER POSITIONS
+  "loungePositions" : {
+    "drivingSeat" : {
+      "part" : "background",
+      "partAnchor" : "drivingSeatPosition",
+      "orientation" : "stand",
+      "statusEffects" : ["thea-lowprotection", "falldamageprotection"],
+      "emote" : "happy",
+      "dance" : "theadrivingbike",
+      "cameraFocus" : true
+    }
+  },
+
+  //THEFT SETTINGS
+  //"licenseItem" : "unioncitizenpass", //If the player has this item in their inventory, taking the vehicle won't be seen as theft
+
+  //GENERAL SETTINGS
+  "warpInDelay" : 1.0,
+  "levelApproachFactor" : 0.01,
+  "angleApproachFactor" : 0.05,
+  "maxAngle" : 25,
+
+  //HEALTH AND DAMAGE SETTINGS
+  "materialKind" : "robotic",
+  "protection" : 50,
+  "maxHealth" : 500,
+  
+  "sparksHealthFactor" : 0.5,
+  "fireHealthFactor" : 0.25,
+  "warningHealthFactor" : 0.125,
+  "explosionConfig" : "/projectiles/explosions/regularexplosion2/regularexplosionknockback.config",
+  "explosionDamage" : 50,
+  
+  //COLLISION SETTINGS
+  "minNotificationCollisionAccel" : 10,
+  "minDamageCollisionAccel" : 30,
+  "terrainCollisionDamage" : 10,
+  "terrainCollisionDamageSourceKind" : "falling",
+  "accelerationTrackingCount" : 2,
+  
+  //EMOTE SETTINGS
+  "driverEmote" : "happy",
+  "driverEmoteDamaged" : "oh",
+  "driverEmoteNearDeath" : "annoyed",
+
+  "damageTakenEmote" : "oooh",
+  "damageEmoteTime" : 2.0,
+
+  //COMBAT SETTINGS
+  "aimLimit" : 75,
+  "aimOffset" : -1.25, //Vertical aim position offset
+  "idleAimAngle" : 135,
+  "warpAimAngle" : 180,
+  //PRIMARY FIRE
+  "fireTime" : 0.175,
+  "fireInaccuracy" : 0.025,
+  "fireProjectile" : "straferbullet-short",
+  "fireProjectileConfig" : {
+    "power" : 18
+  },
+  
+  //SOUND SETTINGS
+  "engineIdlePitch" : 0.75,
+  "engineRevPitch" : 1.5,
+  "engineBoostPitch" : 2.25,
+  "engineIdleVolume" : 1.0,
+  "engineRevVolume" : 1.375,
+  "engineBoostVolume" : 1.625,
+  
+  //MOVEMENT SETTINGS
+  "flySpeedX" : 20,
+  "flySpeedY" : 15,
+  "flyControlForceX" : 225,
+  "flyControlForceY" : 225,
+  "boostSpeedMultiplier" : 1.5,
+  "highMovementAngle" : 0.625,		//from 0 to 1. Determines maximum angle when moving down
+  "mediumMovementAngle" : 0.375,	//from 0 to 1. Determines maximum angle when moving sideways
+  "lowMovementAngle" : 0.125,		//from 0 to 1. Determines maximum angle when moving up
+  "maxLiquidImmersion" : 0.95,		//maximum liquid immersion before the vehicle sinks
+  "liquidBuoyancy" : 2.0,			//buoyancy while floating in a liquid
+
+  //MOVEMENT CONTROLLER SETTINGS
+  "movementSettings" : {
+    "collisionPoly" : [[-1.0, -0.75], [-1.0, 0.75], [-0.5, 1.5], [0.5, 1.5], [1.0, 0.75], [1.0, -0.75], [0.5, -1.5], [-0.5, -1.5]],
+    "mass" : 2,
+    "airFriction" : 3.0,
+    "liquidFriction" : 25.0,
+    "ignorePlatformCollision" : false,
+    "gravityEnabled" : true,
+    "collisionEnabled" : true
+  },
+  "occupiedMovementSettings" : {
+    "collisionPoly" : [[-1.0, -0.75], [-1.0, 0.75], [-0.5, 1.5], [0.5, 1.5], [1.0, 0.75], [1.0, -0.75], [0.5, -1.5], [-0.5, -1.5]],
+    "mass" : 2,
+    "airFriction" : 3.0,
+    "liquidFriction" : 9.5,
+    "ignorePlatformCollision" : true,
+    "gravityEnabled" : false,
+    "collisionEnabled" : true
+  },
+
+  //PHYSICS COLLISION SETTINGS
+  "physicsCollisions" : {
+    "platform" : {
+      "collision" : [ [-1.0, -1.25], [-1.0, -0.75], [0.5, -0.75], [0.5, -1.25] ],
+      "collisionKind" : "platform",
+      "attachToPart" : "background"
+    }
+  }
+}

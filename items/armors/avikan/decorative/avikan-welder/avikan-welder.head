@@ -4,7 +4,7 @@
   "inventoryIcon" : "icons.png:head",
   "maxStack" : 1,
   "rarity" : "Rare",
-  "category" : "chestwear",
+  "category" : "headwear",
   "description" : "^green;Avikan. ^white;A helmet designed to protect the face from embers, as well as the bright light of a welding flame.",
   "shortdescription" : "Welder's Helmet",
   "tooltipKind" : "armor",

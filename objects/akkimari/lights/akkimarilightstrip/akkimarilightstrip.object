@@ -1,0 +1,69 @@
+{
+  "objectName" : "akkimarilightstrip",
+  "colonyTags" : ["akkimari", "light"],
+  "rarity" : "Common",
+  "printable" : false,
+  "price" : 30,
+  "description" : "A gently flickering light strip.",
+  "shortdescription" : "Akris Light Strip",
+  "race" : "akkimari",
+
+  "apexDescription" : "A light strip. It flickers gently.",
+  "avianDescription" : "A pulsating light. It's strangely calming.",
+  "floranDescription" : "Light pulsssatess.",
+  "glitchDescription" : "Observation. This light pulsates slowly.",
+  "humanDescription" : "A pulsing light source. It feels quite natural.",
+  "hylotlDescription" : "A pulsating light, it feels alive.",
+  "novakidDescription" : "This light pulsates slowly, like a breathing star.",
+
+  "aegiDescription" : "This light pulsates slowly, almost like it is alive.",
+  "avikanDescription" : "A strange, pulsating alien light.",
+  "erixianDescription" : "A pulsating light. It has a strange hue.",
+  "trinkDescription" : "This light isn't very efficient.",
+  "hymidDescription" : "A strange, pulsating light source.",
+  "notixDescription" : "I can hear this light source humming.",
+  "jorgasianDescription" : "A strange light source. It makes me feel odd.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected pulsating light source.",
+  "akkimariDescription" : "Pulsating light makes Akkimari feel calm.",
+
+  "category" : "light",
+  "lightColor" : [230, 185, 230],
+
+  "flickerPeriod" : 2.0,
+  "flickerMinIntensity" : 0.9,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.2,
+  "flickerIntensityVariance" : 0.05,
+
+  "inventoryIcon" : "akkimarilightstripicon.png",
+  "orientations" : [
+    {
+      "image" : "akkimarilightstrip.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/fluorescent_light_quiet.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+  
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+  "animationParts" : {
+    "bg" : "akkimarilightstrip.png",
+    "fg" : "akkimarilightstriplit.png"
+  },
+  "animationPosition" : [-8, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : false,
+
+  "inputNodes" : [ [0, 0] ]
+}

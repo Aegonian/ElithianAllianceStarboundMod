@@ -1,14 +1,27 @@
-[	
-	{ "op" : "add",
-	  "path" : "/surfacePlaceables/items/-",
-	  "value" : {
-        "mode" : "floor",
-        "priority" : 1.0,
-        "variants" : 1,
-        "distribution" : "/biomes/thea-distributions.config:thea-microdungeonuncommon",
+[
+  //MICRODUNGEONS AND RANDOM ENCOUNTERS
+  { "op" : "add",
+	"path" : "/surfacePlaceables/items/-",
+	"value" : {
+	  "mode" : "floor",
+	  "priority" : 1.0,
+	  "variants" : 1,
+	  "distribution" : "/biomes/thea-distributions.config:thea-microdungeonuncommon",
 
-        "type" : "microdungeon",
-        "microdungeons" : [ "centensencounter" ]
-      }
+	  "type" : "microdungeon",
+	  "microdungeons" : [ "centensencounter" ]
 	}
+  },
+  { "op" : "add",
+	"path" : "/surfacePlaceables/items/-",
+	"value" : {
+	  "mode" : "floor",
+	  "priority" : 1.0,
+	  "variants" : 1,
+	  "distribution" : "/biomes/thea-distributions.config:thea-microdungeonuncommon",
+
+	  "type" : "microdungeon",
+	  "microdungeons" : [ "akkimariencounter" ]
+	}
+  }
 ]

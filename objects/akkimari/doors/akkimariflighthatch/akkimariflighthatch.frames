@@ -1,0 +1,34 @@
+{
+  "frameGrid" : {
+    "size" : [48, 32],
+    "dimensions" : [10, 1],
+    "names" : [
+      [ "closed", "quarterLeft", "halfLeft", "threeQuarterLeft", "left", "", "quarterRight", "halfRight", "threeQuarterRight", "right" ]
+    ]
+  },
+
+  "aliases" : {
+    //DEFAULT
+	"default" : "closed",
+	//CLOSING LEFT
+    "closeLeft.1" : "threeQuarterLeft",
+    "closeLeft.2" : "halfLeft",
+    "closeLeft.3" : "quarterLeft",
+    "closeLeft.4" : "closed",
+	//CLOSING RIGHT
+    "closeRight.1" : "threeQuarterRight",
+    "closeRight.2" : "halfRight",
+    "closeRight.3" : "quarterRight",
+    "closeRight.4" : "closed",
+	//OPENING LEFT
+    "openLeft.1" : "quarterLeft",
+    "openLeft.2" : "halfLeft",
+    "openLeft.3" : "threeQuarterLeft",
+    "openLeft.4" : "left",
+	//OPENING RIGHT
+    "openRight.1" : "quarterRight",
+    "openRight.2" : "halfRight",
+    "openRight.3" : "threeQuarterRight",
+    "openRight.4" : "right"
+  }
+}

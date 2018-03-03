@@ -52,11 +52,8 @@ function init()
   self.selfDamageNotifications = {}
   self.collisionDamageTrackingVelocities = {}
   self.collisionNotificationTrackingVelocities = {}
-  self.damageSoundTimeOut = config.getParameter("damageSoundTimeOut")
-  self.damageSoundTimer = 0
   self.hasBeenCollected = false
   self.lastPosition = mcontroller.position()
-  self.collisionDamageTrackingVelocities = {}
   self.angle = 0
   self.lastXVelocity = mcontroller.xVelocity()
   self.headlightCanToggle = true
@@ -70,7 +67,7 @@ function init()
   self.warningSoundIsPlaying = false
   animator.stopAllSounds("warning")
 
-  self.driver = nil;
+  self.driver = nil
   self.facingDirection = config.getParameter("facingDirection") or 1 --Allow the spawner to set the starting facing direction
   
   --Starting animations
@@ -113,10 +110,10 @@ function init()
     else
        storage.health = math.min(startHealthFactor * self.maxHealth, self.maxHealth)
     end    
-    animator.setAnimationState("body", "warpInPart1")  
+    animator.setAnimationState("body", "warpInPart1")
   end
 
-  --Setup the store functionality  
+  --Setup the store functionality
   message.setHandler("store",
 	function(_, _, ownerKey)
 	  if (self.ownerKey and self.ownerKey == ownerKey and self.driver == nil and animator.animationState("body")=="idle") then
@@ -163,8 +160,7 @@ function update()
       vehicle.setDamageTeam(world.entityDamageTeam(driverThisFrame))
     else
       vehicle.setDamageTeam({type = "passive"})
-	  if self.hasBeenCollected == false and self.isSwimming == false then
-	    animator.setAnimationState("body", "inactive")
+	  if self.hasBeenCollected == false then
 	  end
     end
 	
@@ -468,25 +464,10 @@ function updateDriveEffects(healthFactor, driverThisFrame)
 	  animator.stopAllSounds("collisionLoop")
 	  self.collisionLoopSoundPlaying = false
 	end
-	
-	--Disable idle engine sounds as we have a driver now
-	if self.idleLoopSoundPlaying then
-	  animator.stopAllSounds("engineLoopIdle")
-	  self.idleLoopSoundPlaying = false
-	end
   else
 	--Disable active engine sounds as there is no driver
 	animator.stopAllSounds("engineLoop")
 	self.loopSoundPlaying = false
-	
-	--Play the idle engine sound if the lights are still on
-	if self.idleEngineTimer > 0 and not self.idleLoopSoundPlaying then
-	  animator.playSound("engineLoopIdle", -1)
-	  self.idleLoopSoundPlaying = true
-	elseif self.idleEngineTimer == 0 then
-	  animator.stopAllSounds("engineLoopIdle")
-	  self.idleLoopSoundPlaying = false
-	end
   end
   
   --If we are at critical health, loop a warning sound
@@ -609,7 +590,7 @@ function selfDamageNotifications()
   return sdn
 end
 
---Update damage effects
+--Update damage effects, handle death and collision damage
 function updateDamage(damage, headlights)
   local maxDamageState = #self.damageStateNames
   local prevHealthFactor = storage.health / self.maxHealth

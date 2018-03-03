@@ -318,5 +318,19 @@
       ]
     }]
    ]
+  },
+  
+  {"op" : "add",
+   "path" : "/akkimarichaserTreasure",
+   "value" : [
+	[1, {
+      "pool" : [
+        {"weight" : 0.899, "pool" : "money"},
+		{"weight" : 0.05, "pool" : "akkimariWeapons"},
+		{"weight" : 0.05, "pool" : "akkimariScrapMetal"},
+        {"weight" : 0.001, "item" : "akkimarichasercontroller"}
+      ]
+    }]
+   ]
   }
 ]

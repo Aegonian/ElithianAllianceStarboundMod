@@ -1,0 +1,29 @@
+{
+  "materialId" : 30151,
+  "materialName" : "akkimarifoundation",
+  "particleColor" : [84, 82, 85, 255],
+  "itemDrop" : "akkimarifoundation", 
+  "shortdescription" : "Akris Inner Wall",
+  
+  "description" : "Metal plating, likely used as an inner wall.",
+  "glitchDescription" : "Statement. This metal plating likely serves as an inner wall.",
+  "floranDescription" : "Metal wallsss.",
+  "novakidDescription" : "Some kinda metal wall.",
+  
+  "drodenDescription" : "Analysis complete. Metal inner wall.",
+  "akkimariDescription" : "Inner wall plates. Akkimari houses need them.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "akkimarifoundation.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 10
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "objectName" : "akkimariantenna",
+  "colonyTags" : ["akkimari"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 60,
+  "description" : "An antenna array.",
+  "shortdescription" : "Akris Antenna",
+  "race" : "akkimari",
+  "lightColor" : [0, 40, 0],
+
+  "apexDescription" : "A strange antenna built by some alien.",
+  "avianDescription" : "An alien antenna. It makes me feel somewhat uncomfortable...",
+  "floranDescription" : "Big antenna. Floran make big ssspear from it?",
+  "glitchDescription" : "Uneasy. This antenna emits a strange energy field.",
+  "humanDescription" : "Something about this antenna makes me feel uneasy.",
+  "hylotlDescription" : "A sturdy antenna, though it looks like it was made from scrap metal.",
+  "novakidDescription" : "Some kinda weird-lookin' antenna.",
+
+  "aegiDescription" : "The Akkimari build powerful antennae from scrap metal. They are quite ingenious.",
+  "avikanDescription" : "This antenna looks a bit like our own.",
+  "erixianDescription" : "I wonder what signal this thing is receiving and sending.",
+  "trinkDescription" : "My systems are encountering interference from this antenna. I shouldn't stay here for too long.",
+  "hymidDescription" : "This strange antenna may be receiving equally strange transmissions.",
+  "notixDescription" : "This antenna makes my head hurt...",
+  "jorgasianDescription" : "An antenna. For some reason, it's making me feel sick.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Receiving alien radio signal. Analyzing failed.",
+  "akkimariDescription" : "Antenna sends messages to Akris, to home. Akkimari will claim the Kel'chis bounty.",
+
+  "inventoryIcon" : "akkimariantennaicon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "akkimariantenna.png:<color>", "fullbright" : true }, { "image" : "akkimariantennalit.png:<color>" } ],
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "lightPosition" : [0, 10],
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "bottom" ]
+    },
+    {
+	  "imageLayers" : [ { "image" : "akkimariantenna.png:<color>", "fullbright" : true }, { "image" : "akkimariantennalit.png:<color>" } ],
+
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "lightPosition" : [0, 10],
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

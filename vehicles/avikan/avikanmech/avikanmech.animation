@@ -843,14 +843,14 @@
   },
 
   "sounds" : {
-    "returnvehicle" : ["/sfx/tools/teleport_up.ogg"],
-	"fire" : ["/sfx/gun/mech_gun3.ogg"],
-	"secondaryFire" : ["/sfx/gun/grenade3.ogg"],
-	"powerup" : ["/sfx/tech/thea_mech_powerup.ogg"],
-	"powerdown" : ["/sfx/tech/thea_mech_powerdown.ogg"],
-	"jump" : ["/sfx/tech/thea_mech_jump2.ogg"],
-	"landing" : ["/sfx/tech/thea_mech_impact.ogg"],
-	"boost" : ["/sfx/tech/thea_mech_jetpack.ogg"],
-	"warning" : ["/sfx/objects/redalert2.ogg"]
+    "returnvehicle" : [ "/sfx/tools/teleport_up.ogg" ],
+	"fire" : [ "/sfx/gun/mech_gun3.ogg" ],
+	"secondaryFire" : [ "/sfx/gun/grenade3.ogg" ],
+	"powerup" : [ "/sfx/tech/thea_mech_powerup.ogg" ],
+	"powerdown" : [ "/sfx/tech/thea_mech_powerdown.ogg" ],
+	"jump" : [ "/sfx/tech/thea_mech_jump2.ogg" ],
+	"landing" : [ "/sfx/tech/thea_mech_impact.ogg" ],
+	"boost" : [ "/sfx/tech/thea_mech_jetpack.ogg" ],
+	"warning" : [ "/sfx/objects/redalert2.ogg" ]
   }
 }

@@ -1,0 +1,9 @@
+{
+  "name" : "akkimarichasernpc-gun",
+  "category" : "akkimarichasernpc",
+  "type" : "gun",
+
+  "frames" : {
+    "gun" : "akkimarichasernpc-gun.png"
+  }
+}

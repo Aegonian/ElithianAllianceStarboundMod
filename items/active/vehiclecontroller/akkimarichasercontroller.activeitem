@@ -1,0 +1,34 @@
+{
+  "itemName" : "akkimarichasercontroller",
+  "level" : 1,
+  "price" : 25000,
+  "rarity" : "Legendary",
+  "category" : "vehicleController",
+  "description" : "Summons an Akris Chaseflight from your ship's cargo hold.",
+  "shortdescription" : "Akris Chaseflight Controller",
+  "twoHanded" : true,
+  "maxStack" : 1,
+  "itemTags" : ["vehiclecontroller"],
+
+  "animation" : "thea-vehiclecontroller.animation",
+  "scripts" : ["vehiclecontroller.lua"],
+  "animationScripts" : ["vehiclecursor.lua"],
+  "filled" : true,
+  "tooltipKind" : "vehicle",
+  "largeImage" : "/vehicles/akkimari/akkimarichaser/akkimarichaser.png",
+
+  "respawnTime" : 1.0,
+
+  "vehicleType" : "akkimarichaser",
+  "vehicleBoundingBox" : [-2.25, -2.25, 2.25, 2.25],
+  "vehicleImage" : "/vehicles/akkimari/akkimarichaser/akkimarichaser.png",
+
+  "animationParts" : {
+    "casing" : "akkimarichasercontroller.png"
+  },
+
+  "inventoryIcon" : "akkimarichasercontroller.png:full",
+  "emptyInventoryIcon" : "/items/active/vehiclecontroller/akkimarichasercontroller.png:empty",
+  "filledInventoryIcon" : "/items/active/vehiclecontroller/akkimarichasercontroller.png:full"
+
+}

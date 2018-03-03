@@ -1,0 +1,78 @@
+{
+  "objectName" : "akkimariflighthatch",
+  "colonyTags" : ["akkimari", "door"],
+  "rarity" : "Common",
+  "category" : "door",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A large metal hatch used in Akkimari flight bays. It only opens for vehicles.",
+  "shortdescription" : "Akris Flight Hatch",
+  "race" : "akkimari",
+  
+  "health" : 8,
+
+  "apexDescription" : "A hatch that opens to vehicles.",
+  "avianDescription" : "A sturdy metal hatch. It'll open for vehicles only.",
+  "floranDescription" : "Floran musst use vehicle to open thisss door.",
+  "glitchDescription" : "Informed. These doors only open to vehicles.",
+  "humanDescription" : "Looks like a hatch for a flight bay.",
+  "hylotlDescription" : "A rather crude metal hatch. I should be careful not to cut myself.",
+  "novakidDescription" : "This here door only opens to vehicles.",
+
+  "aegiDescription" : "An Akkimari flight bay hatch. It'll open only for vehicles.",
+  "avikanDescription" : "An alien-built hatch. I'll need a vehicle to open it.",
+  "erixianDescription" : "A surprisingly sturdy hatch.",
+  "trinkDescription" : "Not very efficient, but this scrap metal hatch is quite effective.",
+  "hymidDescription" : "Only vehicles can cause this door to open.",
+  "notixDescription" : "This hatch was very crudely made.",
+  "jorgasianDescription" : "Shoddy-looking, but quite sturdy in reality.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected flight bay hatch.",
+  "akkimariDescription" : "Akkimari can fly Chaseflight through here.",
+
+  "inventoryIcon" : "akkimariflighthatchicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "akkimariflighthatch.png:default",
+      "imagePosition" : [0, 0],
+      "renderLayer" : "Object+5",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "left", "right" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/door/door.lua" ],
+  "scriptDelta" : 5,
+
+  "sensorConfig" : {
+	"detectEntityTypes" : [ "vehicle" ],
+	"detectBoundMode" : "CollisionArea",
+	"detectDuration" : 1.0,
+	"detectArea" : [ [3, 0.5], 5 ]
+  },
+
+  //"animation" : "/objects/wired/door/door.animation",
+  "animation" : "akkimariflighthatch.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_open.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_close.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "akkimariflighthatch.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "inputNodes" : [ [5, 0] ],
+  "outputNodes" : [ [0, 0] ]
+}

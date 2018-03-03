@@ -13,7 +13,7 @@
     "destructionTime" : 0.3,
     "fade" : 1,
     "size" : 0.75,
-    "layer" : "back",
+    "layer" : "middle",
     "timeToLive" : 0.0,
     "variance" : {
       "rotation" : 180

@@ -1,0 +1,12 @@
+{
+  "name" : "thea-lowprotection",
+  "effectConfig" : {				//Protection goes from 0 (full damage taken) to 100 (no damage taken)
+  	"protectionAmount" : 0,			//Adds the specified value to the total protection amount
+  	"protectionModifier" : 1.125	//Multiplies the player's protection amount by the specified value
+  },
+  "defaultDuration" : 1,
+
+  "scripts" : [
+    "thea-protection.lua"
+  ]
+}

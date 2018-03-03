@@ -1,0 +1,29 @@
+{
+  "materialId" : 30150,
+  "materialName" : "akkimaribeam",
+  "particleColor" : [84, 82, 85, 255],
+  "itemDrop" : "akkimaribeam", 
+  "shortdescription" : "Akris Beam",
+  
+  "description" : "A strong metal beam.",
+  "glitchDescription" : "Observation. This metal beam looks very sturdy.",
+  "floranDescription" : "Long beamsss made of metal.",
+  "novakidDescription" : "Just a big metal beam.",
+  
+  "drodenDescription" : "Analysis complete. Metal beam. Likely a support structure.",
+  "akkimariDescription" : "Strong beams keep Akkimari houses standing.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderParameters" : {
+    "texture" : "akkimaribeam.png",
+    "variants" : 4,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 75
+  }
+}

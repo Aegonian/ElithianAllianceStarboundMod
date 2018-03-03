@@ -1,0 +1,555 @@
+{
+  "globalTagDefaults" : {
+    "colour" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "body" : {
+        "default" : "idle",
+        "states" : {
+		  //GENERAL
+          "idle" : {},
+		  "invisible" : {},
+		  //WARP IN SEQUENCE
+          "warpInPart1" : {
+            "frames" : 4,  
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "warpInPart2"
+		  },
+          "warpInPart2" : {
+            "frames" : 4,  
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "idle"
+		  },
+		  //WARP OUT SEQUENCE
+          "warpOutPart1" : {
+            "frames" : 4,  
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "warpOutPart2"
+		  },
+          "warpOutPart2" : {
+            "frames" : 4,  
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "invisible"
+		  }
+        }
+      },
+	  "gun" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {},
+		  "invisible" : {}
+		}
+	  },
+	  "gunmuzzle" : {
+        "default" : "invisible",
+        "states" : {
+		  "firing" : {
+            "frames" : 2,  
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "invisible"
+		  },
+		  "invisible" : {}
+		}
+	  },
+	  "balancer" : {
+        "default" : "invisible",
+        "states" : {
+          "active" : {},
+		  "invisible" : {}
+		}
+	  },
+	  "thrusters" : {
+        "default" : "invisible",
+        "states" : {
+		  //FLYING
+		  "transitionToForward" : {
+            "frames" : 1,  
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "transitionToForward2"
+		  },
+		  "transitionToForward2" : {
+            "frames" : 1,  
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "forward"
+		  },
+		  "forward" : {},
+		  "transitionToBackward" : {
+            "frames" : 1,  
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "transitionToBackward2"
+		  },
+		  "transitionToBackward2" : {
+            "frames" : 1,  
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "backward"
+		  },
+		  "backward" : {},
+		  //LANDING
+		  "landing" : {
+            "frames" : 2,  
+            "cycle" : 0.2,
+            "mode" : "transition",
+            "transition" : "landed"
+		  },
+		  "retracting" : {
+            "frames" : 2,  
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "backward"
+		  },
+		  "landed" : {},
+		  //GENERAL
+		  "invisible" : {}
+		}
+	  }
+    },
+
+    "parts" : {
+	  //BODY
+      "background" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : -1,
+          "transformationGroups" : [ "flip", "rotation" ],
+          "drivingSeatPosition" : [-0.875, 1.375]
+        },
+        "partStates" : {
+          "body" : {
+			//GENERAL ANIMATION
+            "idle" : {
+              "properties" : {
+                "image" : "avikandrehk-background.png:idle"
+              }
+            },
+            "invisible" : {
+              "properties" : {}
+            },
+            //WARP IN SEQUENCE
+			"warpInPart1" : {
+              "properties" : {}
+            },
+            "warpInPart2" : {
+              "properties" : {
+                "image" : "avikandrehk-background.png:idle"
+              }
+            },
+			//WARP OUT SEQUENCE
+            "warpOutPart1" : {
+              "properties" : {
+                "image" : "avikandrehk-background.png:idle"
+              }
+            },
+            "warpOutPart2" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+      "foreground" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 2,
+          "transformationGroups" : [ "flip", "rotation" ]
+        },
+        "partStates" : {
+          "body" : {
+			//GENERAL ANIMATION
+            "idle" : {
+              "properties" : {
+                "image" : "avikandrehk-foreground.png:idle"
+              }
+            },
+            "invisible" : {
+              "properties" : {}
+            },
+            //WARP IN SEQUENCE
+			"warpInPart1" : {
+              "properties" : {}
+            },
+            "warpInPart2" : {
+              "properties" : {
+                "image" : "avikandrehk-foreground.png:idle"
+              }
+            },
+			//WARP OUT SEQUENCE
+            "warpOutPart1" : {
+              "properties" : {
+                "image" : "avikandrehk-foreground.png:idle"
+              }
+            },
+            "warpOutPart2" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+	  //WARPING SPRITES
+      "warp" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 6,
+          "fullbright" : true,
+          "transformationGroups" : [ "flip", "rotation" ]
+        },
+        "partStates" : {
+          "body" : {
+            //WARP IN SEQUENCE
+			"warpInPart1" : {
+              "properties" : {
+                "image" : "avikandrehk-warp.png:warpInPart1.<frame>"
+              }
+            },
+            "warpInPart2" : {
+              "properties" : {
+                "image" : "avikandrehk-warp.png:warpInPart2.<frame>"
+              }
+            },
+			//WARP OUT SEQUENCE
+            "warpOutPart1" : {
+              "properties" : {
+                "image" : "avikandrehk-warp.png:warpOutPart1.<frame>"
+              }
+            },
+            "warpOutPart2" : {
+              "properties" : {
+                "image" : "avikandrehk-warp.png:warpOutPart2.<frame>"
+              }
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+	  //GUN
+      "gun" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 0,
+          "rotationGroup" : "guns",
+          "rotationCenter" : [1.0, 0.5],
+          "offset" : [1.25, 0.5],
+          "anchorPart" : "background",
+          "firePoint" : [0.5, 0.0]
+        },
+        "partStates" : {
+          "gun" : {
+            "idle" : {
+              "properties" : {
+                "image" : "avikandrehk-gun.png:idle"
+              }
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+	  "gunmuzzle" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 1,
+          "rotationGroup" : "guns",
+          "rotationCenter" : [1.0, 0.5],
+          "offset" : [1.25, 0.5],
+          "anchorPart" : "background",
+		  "fullbright" : true
+        },
+        "partStates" : {
+          "gunmuzzle" : {
+			"firing" : {
+              "properties" : {
+                "image" : "avikandrehk-muzzle.png:fire.<frame>"
+              }
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+	  //ENGINES
+	  "engines" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 4,
+          "transformationGroups" : [ "flip", "rotation" ]
+        },
+        "partStates" : {
+          "thrusters" : {
+			//FLYING
+			"transitionToForward" : {
+              "properties" : {
+                "image" : "avikandrehk-engines.png:transitionToForward"
+              }
+            },
+			"transitionToForward2" : {
+              "properties" : {
+                "image" : "avikandrehk-engines.png:transitionToForward2"
+              }
+            },
+			"forward" : {
+              "properties" : {
+                "image" : "avikandrehk-engines.png:forward"
+              }
+            },
+			"transitionToBackward" : {
+              "properties" : {
+                "image" : "avikandrehk-engines.png:transitionToBackward"
+              }
+            },
+			"transitionToBackward2" : {
+              "properties" : {
+                "image" : "avikandrehk-engines.png:transitionToBackward2"
+              }
+            },
+			"backward" : {
+              "properties" : {
+                "image" : "avikandrehk-engines.png:backward"
+              }
+            },
+			//LANDING
+			"landing" : {
+              "properties" : {
+                "image" : "avikandrehk-engines.png:landing.<frame>"
+              }
+            },
+			"retracting" : {
+              "properties" : {
+                "image" : "avikandrehk-engines.png:retracting.<frame>"
+              }
+            },
+			"landed" : {
+              "properties" : {
+                "image" : "avikandrehk-engines.png:landed"
+              }
+            },
+			//GENERAL
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+	  //BALANCE THRUSTER
+      "balancer" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 3,
+		  "fullbright" : true,
+          "transformationGroups" : [ "flip", "rotation" ]
+        },
+        "partStates" : {
+          "balancer" : {
+			//GENERAL ANIMATION
+            "active" : {
+              "properties" : {
+                "image" : "avikandrehk-balancer.png:active.<balanceThrusterFrame>"
+              }
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+	  //THRUSTERS
+	  "thrusters" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 5,
+		  "fullbright" : true,
+          "transformationGroups" : [ "flip", "rotation" ]
+        },
+        "partStates" : {
+          "thrusters" : {
+			"transitionToForward" : {
+              "properties" : {
+                "image" : "avikandrehk-thrusters.png:transitionToForward.<thrusterFrame>"
+              }
+            },
+			"transitionToForward2" : {
+              "properties" : {
+                "image" : "avikandrehk-thrusters.png:transitionToForward2.<thrusterFrame>"
+              }
+            },
+			"forward" : {
+              "properties" : {
+                "image" : "avikandrehk-thrusters.png:forward.<thrusterFrame>"
+              }
+            },
+			"transitionToBackward" : {
+              "properties" : {
+                "image" : "avikandrehk-thrusters.png:transitionToBackward.<thrusterFrame>"
+              }
+            },
+			"transitionToBackward2" : {
+              "properties" : {
+                "image" : "avikandrehk-thrusters.png:transitionToBackward2.<thrusterFrame>"
+              }
+            },
+			"backward" : {
+              "properties" : {
+                "image" : "avikandrehk-thrusters.png:backward.<thrusterFrame>"
+              }
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "rotation" : {
+      "interpolated" : true
+    },
+    "flip" : {}
+  },
+  "rotationGroups" : {
+    "guns" : {
+      "angularVelocity" : 10.0
+    }
+  },
+  
+  "particleEmitters" : {
+	//FORWARD THRUST
+	"thrusters-forward" : {
+	  "transformationGroups" : [ "flip", "rotation" ],
+      "emissionRate" : 15.0,
+	  "emissionVariance" : 2.5,
+      "offsetRegion" : [-1.25, -1.625, -1.25, -1.625],
+      "particles" : [
+		{ "particle" : "thea-thruster" }
+	  ]
+    },
+	"thrusters-forward2" : {
+	  "transformationGroups" : [ "flip", "rotation" ],
+      "emissionRate" : 15.0,
+	  "emissionVariance" : 2.5,
+      "offsetRegion" : [-0.125, -1.625, -0.125, -1.625],
+      "particles" : [
+		{ "particle" : "thea-thrusterback" }
+	  ]
+    },
+	//HALF FORWARD THRUST
+	"thrusters-halfForward" : {
+	  "transformationGroups" : [ "flip", "rotation" ],
+      "emissionRate" : 15.0,
+	  "emissionVariance" : 2.5,
+      "offsetRegion" : [-0.75, -2.0, -0.75, -2.0],
+      "particles" : [
+		{ "particle" : "thea-thruster" }
+	  ]
+    },
+	"thrusters-halfForward2" : {
+	  "transformationGroups" : [ "flip", "rotation" ],
+      "emissionRate" : 15.0,
+	  "emissionVariance" : 2.5,
+      "offsetRegion" : [0.375, -2.0, 0.375, -2.0],
+      "particles" : [
+		{ "particle" : "thea-thrusterback" }
+	  ]
+    },
+	//HALF BACKWARD THRUST
+	"thrusters-halfBackward" : {
+	  "transformationGroups" : [ "flip", "rotation" ],
+      "emissionRate" : 15.0,
+	  "emissionVariance" : 2.5,
+      "offsetRegion" : [-0.125, -1.625, -0.125, -1.625],
+      "particles" : [
+		{ "particle" : "thea-thrusterreverse" }
+	  ]
+    },
+	"thrusters-halfBackward2" : {
+	  "transformationGroups" : [ "flip", "rotation" ],
+      "emissionRate" : 15.0,
+	  "emissionVariance" : 2.5,
+      "offsetRegion" : [-1.0, -1.625, -1.0, -1.625],
+      "particles" : [
+		{ "particle" : "thea-thrusterbackreverse" }
+	  ]
+    },
+	//BACKWARD THRUST
+	"thrusters-backward" : {
+	  "transformationGroups" : [ "flip", "rotation" ],
+      "emissionRate" : 15.0,
+	  "emissionVariance" : 2.5,
+      "offsetRegion" : [0.25, -1.625, 0.25, -1.625],
+      "particles" : [
+		{ "particle" : "thea-thrusterreverse" }
+	  ]
+    },
+	"thrusters-backward2" : {
+	  "transformationGroups" : [ "flip", "rotation" ],
+      "emissionRate" : 15.0,
+	  "emissionVariance" : 2.5,
+      "offsetRegion" : [1.375, -1.625, 1.375, -1.625],
+      "particles" : [
+		{ "particle" : "thea-thrusterbackreverse" }
+	  ]
+    },
+	//DAMAGE
+	"sparks" : {
+      "transformationGroups" : [ "flip", "rotation" ],
+      "emissionRate" : 2.0,
+	  "emissionVariance" : 1.5,
+      "offsetRegion" : [0.5, 1.25, 0.5, 1.25],
+      "particles" : [
+		{ "particle" : "thea-electricspark" }
+	  ]
+    },
+	"fire" : {
+      "transformationGroups" : [ "flip", "rotation" ],
+      "emissionRate" : 20.0,
+	  "emissionVariance" : 0.5,
+      "offsetRegion" : [0.5, 1.25, 0.5, 1.25],
+      "particles" : [
+		{ "particle" : "fireshard" },
+		{ "particle" : "firesmoke" }
+	  ]
+    }
+  },
+
+  "sounds" : {
+	//ENGINE SOUNDS
+	"engineStart" : [ "/sfx/tech/thea_mech_powerup.ogg" ],
+    "engineLoop" : [ "/sfx/tech/akkimarichaser_engineloop2.ogg" ],
+	
+	//DAMAGE
+	"explode" : [
+	  "/sfx/gun/grenadeblast_small_fire1.ogg",
+	  "/sfx/gun/grenadeblast_small_fire2.ogg",
+	  "/sfx/gun/grenadeblast_small_fire3.ogg"
+	],
+	"warning" : [ "/sfx/objects/redalert2.ogg" ],
+	
+	//COLLISION
+    "collisionNotification" : [
+	  "/sfx/tech/hoverbike_bump1.ogg",
+	  "/sfx/tech/hoverbike_bump2.ogg",
+	  "/sfx/tech/hoverbike_bump3.ogg"
+	],
+    "collisionDamage" : [ "/sfx/tech/hoverbike_crash1.ogg" ],
+    "collisionLoop" : [ "/sfx/rails/rail_grind_loop.ogg" ],
+	
+	//WEAPONRY
+	"fire" : [ "/sfx/gun/mech_gun3.ogg" ],
+	
+	//SPAWNING
+    "returnvehicle" : [ "/sfx/tools/teleport_up.ogg" ]
+  }
+}

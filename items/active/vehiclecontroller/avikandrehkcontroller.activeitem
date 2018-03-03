@@ -1,0 +1,34 @@
+{
+  "itemName" : "avikandrehkcontroller",
+  "level" : 1,
+  "price" : 25000,
+  "rarity" : "Legendary",
+  "category" : "vehicleController",
+  "description" : "Summons a Drehk from your ship's cargo hold.",
+  "shortdescription" : "Drehk Controller",
+  "twoHanded" : true,
+  "maxStack" : 1,
+  "itemTags" : ["vehiclecontroller"],
+
+  "animation" : "thea-vehiclecontroller.animation",
+  "scripts" : ["vehiclecontroller.lua"],
+  "animationScripts" : ["vehiclecursor.lua"],
+  "filled" : true,
+  "tooltipKind" : "vehicle",
+  "largeImage" : "/vehicles/avikan/avikandrehk/avikandrehk.png",
+
+  "respawnTime" : 1.0,
+
+  "vehicleType" : "avikandrehk",
+  "vehicleBoundingBox" : [-1.375, -2.0, 1.375, 2.0],
+  "vehicleImage" : "/vehicles/avikan/avikandrehk/avikandrehk.png",
+
+  "animationParts" : {
+    "casing" : "avikandrehkcontroller.png"
+  },
+
+  "inventoryIcon" : "avikandrehkcontroller.png:full",
+  "emptyInventoryIcon" : "/items/active/vehiclecontroller/avikandrehkcontroller.png:empty",
+  "filledInventoryIcon" : "/items/active/vehiclecontroller/avikandrehkcontroller.png:full"
+
+}

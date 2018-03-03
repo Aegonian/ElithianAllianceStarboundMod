@@ -1,0 +1,101 @@
+{ "margin":0,
+ "name":"theaobjects-akkimari",
+ "properties":
+    {
+
+    },
+ "spacing":0,
+ "tilecount":7,
+ "tileheight":88,
+ "tileproperties":
+    {
+     "0":
+        {
+         "\/\/shortdescription":"Akris Antenna",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"akkimariantenna",
+         "tilesetDirection":"right"
+        },
+     "1":
+        {
+         "\/\/shortdescription":"Akris Chest",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"akkimarichest",
+         "tilesetDirection":"right"
+        },
+     "2":
+        {
+         "\/\/shortdescription":"Akris Antenna",
+         "imagePositionX":"-24",
+         "imagePositionY":"0",
+         "object":"akkimariantenna",
+         "tilesetDirection":"left"
+        },
+     "3":
+        {
+         "\/\/shortdescription":"Akris Blast Door",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"akkimariblastdoor",
+         "tilesetDirection":"right"
+        },
+     "4":
+        {
+         "\/\/shortdescription":"Akris Flight Hatch",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"akkimariflighthatch",
+         "tilesetDirection":"right"
+        },
+     "5":
+        {
+         "\/\/shortdescription":"Akris Side Plate",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"akkimarisideplating",
+         "tilesetDirection":"right"
+        },
+     "6":
+        {
+         "\/\/shortdescription":"Akris Light Strip",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"akkimarilightstrip",
+         "tilesetDirection":"right"
+        }
+    },
+ "tiles":
+    {
+     "0":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimariantenna.png"
+        },
+     "1":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarichest.png"
+        },
+     "2":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimariantenna-flipped.png"
+        },
+     "3":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimariblastdoor.png"
+        },
+     "4":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimariflighthatch.png"
+        },
+     "5":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarisideplating.png"
+        },
+     "6":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarilightstrip.png"
+        }
+    },
+ "tilewidth":48
+}

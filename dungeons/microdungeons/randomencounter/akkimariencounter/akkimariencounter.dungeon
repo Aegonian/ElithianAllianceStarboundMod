@@ -1,0 +1,38 @@
+{
+  "metadata" : {
+    "name" : "akkimariencounter",
+    "species" : "akkimari",
+    "rules" : [
+    ],
+	
+    "anchor" : [ "akki-cargodrop", "akki-cargodrop2", "akki-tower" ],
+
+    "maxRadius" : 1000000,
+    "maxParts" : 2,
+    "protected" : false
+  },
+
+  "parts" : [
+    {
+      "name" : "akki-cargodrop",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "akki-cargodrop.json" ]
+    },
+    {
+      "name" : "akki-cargodrop2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "akki-cargodrop2.json" ]
+    },
+    {
+      "name" : "akki-tower",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "akki-tower.json" ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "frameGrid" : {
+    "size" : [32, 40],
+    "dimensions" : [2, 4],
+
+    "names" : [
+      [ "forward", "landing.1" ],
+      [ "halfForward", "landing.2" ],
+      [ "halfBackward", "landed" ],
+      [ "backward", null ]
+    ]
+  },
+
+  "aliases" : {
+    "default" : "forward",
+	//Transitions
+    "transitionToForward" : "halfBackward",
+    "transitionToForward2" : "halfForward",
+    "transitionToBackward" : "halfForward",
+    "transitionToBackward2" : "halfBackward",
+	//Landing
+    "retracting.1" : "landing.2",
+    "retracting.2" : "landing.1"
+  }
+}

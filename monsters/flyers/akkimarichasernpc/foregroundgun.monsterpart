@@ -1,0 +1,9 @@
+{
+  "name" : "akkimarichasernpc-foregroundgun",
+  "category" : "akkimarichasernpc",
+  "type" : "foregroundgun",
+
+  "frames" : {
+    "foregroundgun" : "akkimarichasernpc-gun.png"
+  }
+}

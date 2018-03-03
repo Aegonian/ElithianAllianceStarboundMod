@@ -1,0 +1,30 @@
+{
+  "materialId" : 30111,
+  "materialName" : "akkimariplatform",
+  "collisionKind" : "platform",
+  "transparent" : true,
+  "itemDrop" : "akkimariplatform",
+  "shortdescription" : "Akris Platform",
+  "description" : "A metal platform built from plates of scrap metal.",
+  
+  "glitchDescription" : "Observation. This metal platform was assembled from scrap metal plates.",
+  "floranDescription" : "Metal platformsss.",
+  "novakidDescription" : "A metal platform made of plates o' scrap metal. Not sure it's safe.",
+  
+  "drodenDescription" : "Analysis complete. Scrap metal platform.",
+  "akkimariDescription" : "<selfname> stands on platform, drops down from platform. <selfname> pleased.",
+  
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "category" : "Supports",
+  
+  "renderTemplate" : "/tiles/platformtemplate.config",
+  "renderParameters" : {
+    "texture" : "akkimariplatform.png",
+    "variants" : 4,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 0,
+    "platform" : true
+  }
+}

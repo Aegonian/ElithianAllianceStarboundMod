@@ -1,0 +1,11 @@
+{
+  "itemName" : "akkimaribeam",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "akkimaribeam.png",
+  "shortdescription" : "Akris Beam",
+  "description" : "A strong metal beam.",
+
+  "materialId" : 30150
+}

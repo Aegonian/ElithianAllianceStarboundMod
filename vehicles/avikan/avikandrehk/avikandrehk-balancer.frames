@@ -1,0 +1,10 @@
+{
+  "frameGrid" : {
+    "size" : [32, 40],
+    "dimensions" : [3, 1],
+
+    "names" : [
+      [ "active.0", "active.1", "active.2" ]
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name" : "armour1",
+  "category" : "akkimarichasernpc",
+  "type" : "armour",
+
+  "frames" : {
+    "armour" : "armour1.png"
+  }
+}

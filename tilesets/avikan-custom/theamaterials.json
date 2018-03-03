@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":74,
+ "tilecount":81,
  "tileheight":8,
  "tileproperties":
     {
@@ -451,12 +451,47 @@
          "\/\/shortdescription":"Alliance Pipe",
          "material":"alliancepipe"
         },
+     "74":
+        {
+         "\/\/shortdescription":"Akris Beam",
+         "material":"akkimaribeam"
+        },
+     "75":
+        {
+         "\/\/shortdescription":"Akris Innel Wall",
+         "material":"akkimarifoundation"
+        },
+     "76":
+        {
+         "\/\/shortdescription":"Akris Floor Panel",
+         "material":"akkimarigroundpanel"
+        },
+     "77":
+        {
+         "\/\/shortdescription":"Akris Hull Panel",
+         "material":"akkimarihullpanel"
+        },
+     "78":
+        {
+         "\/\/shortdescription":"Akris Platform",
+         "material":"akkimariplatform"
+        },
+     "79":
+        {
+         "\/\/shortdescription":"Akris Plating",
+         "material":"akkimariplating"
+        },
      "8":
         {
          "\/\/description":"A THEA material",
          "\/\/name":"avikanglass",
          "\/\/shortdescription":"Avikan Glass",
          "material":"avikanglass"
+        },
+     "80":
+        {
+         "\/\/shortdescription":"Akris Scrap Plating",
+         "material":"akkimariscrapplating"
         },
      "9":
         {
@@ -756,9 +791,37 @@
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/alliancepipe.png"
         },
+     "74":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/akkimaribeam.png"
+        },
+     "75":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/akkimarifoundation.png"
+        },
+     "76":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/akkimarigroundpanel.png"
+        },
+     "77":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/akkimarihullpanel.png"
+        },
+     "78":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/akkimariplatform.png"
+        },
+     "79":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/akkimariplating.png"
+        },
      "8":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/avikanglass.png"
+        },
+     "80":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/akkimariscrapplating.png"
         },
      "9":
         {

@@ -29,7 +29,7 @@
         "layer" : "back",
 		"collidesForeground" : false,
         "timeToLive" : 0.8,
-        "destructionTime" : 0.1,
+        "destructionTime" : 0.25,
         "destructionAction" : "fade",
         "fullbright" : true
       }

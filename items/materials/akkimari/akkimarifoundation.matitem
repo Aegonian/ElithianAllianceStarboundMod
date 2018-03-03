@@ -1,0 +1,11 @@
+{
+  "itemName" : "akkimarifoundation",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "akkimarifoundation.png",
+  "shortdescription" : "Akris Inner Wall",
+  "description" : "Metal plating used as an inner wall.",
+
+  "materialId" : 30151
+}

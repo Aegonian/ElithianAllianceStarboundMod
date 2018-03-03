@@ -1,0 +1,11 @@
+{
+  "itemName" : "akkimariscrapplating",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "akkimariscrapplating.png",
+  "shortdescription" : "Akris Scrap Plating",
+  "description" : "Durable plating made from assorted scrap metal.",
+
+  "materialId" : 30098
+}

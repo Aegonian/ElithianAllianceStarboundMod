@@ -143,6 +143,7 @@
     "collisionPoly" : [[-3.8, 0.0], [-2.5, -1.0], [2.5, -1.0], [3.8, 0.0], [2.5, 1.0], [-2.5, 1.0]],
     "mass" : 4,
     "airFriction" : 4,
+    "liquidFriction" : 25.0,
     "ignorePlatformCollision" : true,
     "gravityEnabled" : true,
     "collisionEnabled" : true
@@ -150,6 +151,7 @@
   "occupiedMovementSettings" : {
     "collisionPoly" : [[-3.8, 0.0], [-2.5, -1.0], [2.5, -1.0], [3.8, 0.0], [2.5, 1.0], [-2.5, 1.0]],
     "mass" : 4,
+    "liquidFriction" : 6.0,
     "gravityEnabled" : true,
     "collisionEnabled" : true
   }

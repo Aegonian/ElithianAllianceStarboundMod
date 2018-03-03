@@ -1,0 +1,9 @@
+{
+  "name" : "akkimarichasernpc-thrusters",
+  "category" : "akkimarichasernpc",
+  "type" : "thrusters",
+
+  "frames" : {
+    "thrusters" : "akkimarichasernpc-thrusters.png"
+  }
+}

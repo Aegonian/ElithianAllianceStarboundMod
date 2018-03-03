@@ -1,24 +1,32 @@
 [
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : 
-		  [
-			[ "generic", "largespace" ],
-			{
-			  "name" : "Giant Sandspitter",
-			  "typeName" : "giantsandspitter"
-			}
-		  ]
-	},
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : 
-		  [
-			[ "generic", "largespace" ],
-			{
-			  "name" : "Elite Drahl",
-			  "typeName" : "avikanlargedrone"
-			}
-		  ]
-	}
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : [
+	  [ "generic", "largespace" ],
+	  {
+		"name" : "Giant Sandspitter",
+		"typeName" : "giantsandspitter"
+	  }
+	]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : [
+	  [ "generic", "largespace" ],
+	  {
+		"name" : "Elite Drahl",
+		"typeName" : "avikanlargedrone"
+	  }
+	]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : [
+	  [ "generic", "largespace" ],
+	  {
+		"name" : "Akkimari Justicar",
+		"typeName" : "akkimarijusticar"
+	  }
+	]
+  }
 ]

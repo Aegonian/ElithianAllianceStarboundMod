@@ -15,6 +15,7 @@
   "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
   "health" : 6,
   "category" : "materials",
+  "blocksLiquidFlow" : false,
 
   "renderTemplate" : "/tiles/classicmaterialtemplate.config",
   "renderParameters" : {

@@ -1,0 +1,11 @@
+{
+  "itemName" : "akkimarihullpanel",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "akkimarihullpanel.png",
+  "shortdescription" : "Akris Hull Panel",
+  "description" : "Durable plating made from assorted scrap metal.",
+
+  "materialId" : 30089
+}

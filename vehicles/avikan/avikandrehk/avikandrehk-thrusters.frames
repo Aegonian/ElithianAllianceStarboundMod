@@ -1,0 +1,37 @@
+{
+  "frameGrid" : {
+    "size" : [32, 40],
+    "dimensions" : [4, 4],
+
+    "names" : [
+      [ "forward.0", "forward.1", "forward.2", "forward.3" ],
+      [ "halfForward.0", "halfForward.1", "halfForward.2", "halfForward.3" ],
+      [ "halfBackward.0", "halfBackward.1", "halfBackward.2", "halfBackward.3" ],
+      [ "backward.0", "backward.1", "backward.2", "backward.3" ]
+    ]
+  },
+
+  "aliases" : {
+    "default" : "forward.1",
+	//Transition to Forward - Step 1
+    "transitionToForward.0" : "halfBackward.0",
+    "transitionToForward.1" : "halfBackward.1",
+    "transitionToForward.2" : "halfBackward.2",
+    "transitionToForward.3" : "halfBackward.3",
+	//Transition to Forward - Step 2
+    "transitionToForward2.0" : "halfForward.0",
+    "transitionToForward2.1" : "halfForward.1",
+    "transitionToForward2.2" : "halfForward.2",
+    "transitionToForward2.3" : "halfForward.3",
+	//Transition to Backward - Step 1
+    "transitionToBackward.0" : "halfForward.0",
+    "transitionToBackward.1" : "halfForward.1",
+    "transitionToBackward.2" : "halfForward.2",
+    "transitionToBackward.3" : "halfForward.3",
+	//Transition to Backward - Step 2
+    "transitionToBackward2.0" : "halfBackward.0",
+    "transitionToBackward2.1" : "halfBackward.1",
+    "transitionToBackward2.2" : "halfBackward.2",
+    "transitionToBackward2.3" : "halfBackward.3"
+  }
+}

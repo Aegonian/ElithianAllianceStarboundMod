@@ -1,0 +1,9 @@
+{
+  "type" : "thea-spawnchaser",
+
+  "scripts" : ["/stagehands/thea-spawnvehicle.lua"],
+  "scriptDelta" : 10,
+  
+  "vehicle" : "akkimarichaser",
+  "vehicleSpawnArea" : [-4.25, -2.25, 4.75, 2.25]
+}

@@ -59,7 +59,7 @@
 			
 			//Aiming
             "rotateAim" : true,
-			"holdAim": true,	//Will keep the aimDirection of the first shot when firing multiple shots
+			"holdAim": false,	//Will keep the aimDirection of the first shot when firing multiple shots
             "fireSound" : "fire",
 			"fireStateType": "gun",
             "fireState" : "fire",

@@ -1,14 +1,14 @@
 [
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : ["avikan", "avikan-starfarerhead"]
-	},
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : ["avikan", "avikan-astronauthead"]
-	},
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : ["avikan", "avikan-openhelmet"]
-	}
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : ["avikan", "avikan-starfarerhead"]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	value" : ["avikan", "avikan-astronauthead"]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : ["avikan", "avikan-openhelmet"]
+  }
 ]

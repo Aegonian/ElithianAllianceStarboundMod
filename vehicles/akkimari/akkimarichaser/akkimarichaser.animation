@@ -1,0 +1,456 @@
+{
+  "globalTagDefaults" : {
+    "colour" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "body" : {
+        "default" : "idle",
+        "states" : {
+		  //GENERAL
+          "idle" : {},
+		  "invisible" : {},
+		  //WARP IN SEQUENCE
+          "warpInPart1" : {
+            "frames" : 4,  
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "warpInPart2"
+		  },
+          "warpInPart2" : {
+            "frames" : 4,  
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "idle"
+		  },
+		  //WARP OUT SEQUENCE
+          "warpOutPart1" : {
+            "frames" : 4,  
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "warpOutPart2"
+		  },
+          "warpOutPart2" : {
+            "frames" : 4,  
+            "cycle" : 0.33,
+            "mode" : "transition",
+            "transition" : "invisible"
+		  }
+        }
+      },
+	  "foregroundgun" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {},
+		  "invisible" : {}
+		}
+	  },
+	  "foregroundgunmuzzle" : {
+        "default" : "invisible",
+        "states" : {
+		  "firing" : {
+            "frames" : 2,  
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "invisible"
+		  },
+		  "invisible" : {}
+		}
+	  },
+	  "backgroundgun" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {},
+		  "invisible" : {}
+		}
+	  },
+	  "backgroundgunmuzzle" : {
+        "default" : "invisible",
+        "states" : {
+		  "firing" : {
+            "frames" : 2,  
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "invisible"
+		  },
+		  "invisible" : {}
+		}
+	  },
+	  "thrusters" : {
+        "default" : "invisible",
+        "states" : {
+		  "idle" : {
+            "frames" : 4,  
+            "cycle" : 0.4,
+            "mode" : "loop",
+            "properties" : {
+              "particleEmittersOn" : [ "thrusters-idle" ],
+              "particleEmittersOff" : [ "thrusters-active", "thrusters-boost" ]
+            }
+		  },
+		  "active" : {
+            "frames" : 4,  
+            "cycle" : 0.3,
+            "mode" : "loop",
+            "properties" : {
+              "particleEmittersOn" : [ "thrusters-active" ],
+              "particleEmittersOff" : [ "thrusters-idle", "thrusters-boost" ]
+            }
+		  },
+		  "boost" : {
+            "frames" : 4,  
+            "cycle" : 0.25,
+            "mode" : "loop",
+            "properties" : {
+              "particleEmittersOn" : [ "thrusters-boost" ],
+              "particleEmittersOff" : [ "thrusters-idle", "thrusters-active" ]
+            }
+		  },
+		  "invisible" : {
+            "properties" : {
+              "particleEmittersOff" : [ "thrusters-idle", "thrusters-active", "thrusters-boost" ]
+            }
+		  }
+		}
+	  }
+    },
+
+    "parts" : {
+	  //BACKGROUND
+      "background" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : -1,
+          "transformationGroups" : [ "flip", "rotation" ],
+          "drivingSeatPosition" : [-0.875, 1.375]
+        },
+        "partStates" : {
+          "body" : {
+			//GENERAL ANIMATION
+            "idle" : {
+              "properties" : {
+                "image" : "akkimarichaser-background.png:idle"
+              }
+            },
+            "invisible" : {
+              "properties" : {}
+            },
+            //WARP IN SEQUENCE
+			"warpInPart1" : {
+              "properties" : {}
+            },
+            "warpInPart2" : {
+              "properties" : {
+                "image" : "akkimarichaser-background.png:idle"
+              }
+            },
+			//WARP OUT SEQUENCE
+            "warpOutPart1" : {
+              "properties" : {
+                "image" : "akkimarichaser-background.png:idle"
+              }
+            },
+            "warpOutPart2" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+      "foreground" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 2,
+          "transformationGroups" : [ "flip", "rotation" ]
+        },
+        "partStates" : {
+          "body" : {
+			//GENERAL ANIMATION
+            "idle" : {
+              "properties" : {
+                "image" : "akkimarichaser-foreground.png:idle"
+              }
+            },
+            "invisible" : {
+              "properties" : {}
+            },
+            //WARP IN SEQUENCE
+			"warpInPart1" : {
+              "properties" : {}
+            },
+            "warpInPart2" : {
+              "properties" : {
+                "image" : "akkimarichaser-foreground.png:idle"
+              }
+            },
+			//WARP OUT SEQUENCE
+            "warpOutPart1" : {
+              "properties" : {
+                "image" : "akkimarichaser-foreground.png:idle"
+              }
+            },
+            "warpOutPart2" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+	  //WARPING SPRITES
+      "warp" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 6,
+          "fullbright" : true,
+          "transformationGroups" : [ "flip", "rotation" ]
+        },
+        "partStates" : {
+          "body" : {
+            //WARP IN SEQUENCE
+			"warpInPart1" : {
+              "properties" : {
+                "image" : "akkimarichaser-warp.png:warpInPart1.<frame>"
+              }
+            },
+            "warpInPart2" : {
+              "properties" : {
+                "image" : "akkimarichaser-warp.png:warpInPart2.<frame>"
+              }
+            },
+			//WARP OUT SEQUENCE
+            "warpOutPart1" : {
+              "properties" : {
+                "image" : "akkimarichaser-warp.png:warpOutPart1.<frame>"
+              }
+            },
+            "warpOutPart2" : {
+              "properties" : {
+                "image" : "akkimarichaser-warp.png:warpOutPart2.<frame>"
+              }
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+	  //FOREGROUND GUN
+      "foregroundgun" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 4,
+          "rotationGroup" : "guns",
+          "rotationCenter" : [0.5, 1.25],
+		  "offset" : [0.75, 1.25],
+          "anchorPart" : "background",
+          "firePoint" : [0.5, 0.0]
+        },
+        "partStates" : {
+          "foregroundgun" : {
+            "idle" : {
+              "properties" : {
+                "image" : "akkimarichaser-gun.png:idle"
+              }
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+	  "foregroundgunmuzzle" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 5,
+          "rotationGroup" : "guns",
+          "rotationCenter" : [0.5, 1.25],
+		  "offset" : [0.75, 1.25],
+          "anchorPart" : "background",
+		  "fullbright" : true
+        },
+        "partStates" : {
+          "foregroundgunmuzzle" : {
+			"firing" : {
+              "properties" : {
+                "image" : "akkimarichaser-muzzle.png:fire.<frame>"
+              }
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+	  //BACKGROUND GUN
+      "backgroundgun" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : -3,
+          "rotationGroup" : "guns",
+          "rotationCenter" : [1.0, 1.25],
+          "offset" : [1.25, 1.25],
+          "anchorPart" : "background",
+          "firePoint" : [0.5, 0.0]
+        },
+        "partStates" : {
+          "backgroundgun" : {
+            "idle" : {
+              "properties" : {
+                "image" : "akkimarichaser-gun.png:idle"
+              }
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+	  "backgroundgunmuzzle" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : -2,
+          "rotationGroup" : "guns",
+          "rotationCenter" : [1.0, 1.25],
+          "offset" : [1.25, 1.25],
+          "anchorPart" : "background",
+		  "fullbright" : true
+        },
+        "partStates" : {
+          "backgroundgunmuzzle" : {
+			"firing" : {
+              "properties" : {
+                "image" : "akkimarichaser-muzzle.png:fire.<frame>"
+              }
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+	  //THRUSTERS
+	  "thrusters" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 4,
+		  "fullbright" : true,
+          "transformationGroups" : [ "flip", "rotation" ]
+        },
+        "partStates" : {
+          "thrusters" : {
+			"idle" : {
+              "properties" : {
+                "image" : "akkimarichaser-thrusters.png:idle.<frame>"
+              }
+            },
+			"active" : {
+              "properties" : {
+                "image" : "akkimarichaser-thrusters.png:active.<frame>"
+              }
+            },
+			"boost" : {
+              "properties" : {
+                "image" : "akkimarichaser-thrusters.png:boost.<frame>"
+              }
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "rotation" : {
+      "interpolated" : true
+    },
+    "flip" : {}
+  },
+  "rotationGroups" : {
+    "guns" : {
+      "angularVelocity" : 10.0
+    }
+  },
+  
+  "particleEmitters" : {
+	"thrusters-idle" : {
+      "transformationGroups" : [ "flip", "rotation" ],
+      "emissionRate" : 7.5,
+	  "emissionVariance" : 1.5,
+      "offsetRegion" : [-0.875, -1.375, -0.875, -1.375],
+      "particles" : [
+		{ "particle" : "akkimarithrustersmall" }
+	  ]
+    },
+	"thrusters-active" : {
+      "transformationGroups" : [ "flip", "rotation" ],
+      "emissionRate" : 10.0,
+	  "emissionVariance" : 1.5,
+      "offsetRegion" : [-0.875, -1.375, -0.875, -1.375],
+      "particles" : [
+		{ "particle" : "akkimarithruster" },
+		{ "particle" : "akkimarithruster" }
+	  ]
+    },
+	"thrusters-boost" : {
+      "transformationGroups" : [ "flip", "rotation" ],
+      "emissionRate" : 12.5,
+	  "emissionVariance" : 1.5,
+      "offsetRegion" : [-0.875, -1.375, -0.875, -1.375],
+      "particles" : [
+		{ "particle" : "akkimarithruster" },
+		{ "particle" : "akkimarithruster" },
+		{ "particle" : "akkimariashsmoke-air" }
+	  ]
+    },
+	"sparks" : {
+      "transformationGroups" : [ "flip", "rotation" ],
+      "emissionRate" : 2.0,
+	  "emissionVariance" : 1.5,
+      "offsetRegion" : [0.5, 1.25, 0.5, 1.25],
+      "particles" : [
+		{ "particle" : "thea-electricspark" }
+	  ]
+    },
+	"fire" : {
+      "transformationGroups" : [ "flip", "rotation" ],
+      "emissionRate" : 20.0,
+	  "emissionVariance" : 0.5,
+      "offsetRegion" : [-0.125, -1.0, -0.125, -1.0],
+      "particles" : [
+		{ "particle" : "fireshard" },
+		{ "particle" : "firesmoke" }
+	  ]
+    }
+  },
+
+  "sounds" : {
+	//ENGINE SOUNDS
+	"engineStart" : [ "/sfx/tech/thea_mech_powerup.ogg" ],
+    "engineLoop" : [ "/sfx/tech/akkimarichaser_engineloop2.ogg" ],
+	
+	//DAMAGE
+	"explode" : [
+	  "/sfx/gun/grenadeblast_small_fire1.ogg",
+	  "/sfx/gun/grenadeblast_small_fire2.ogg",
+	  "/sfx/gun/grenadeblast_small_fire3.ogg"
+	],
+	"warning" : [ "/sfx/npc/monsters/akkimarijusticar_alert.ogg" ],
+	
+	//COLLISION
+    "collisionNotification" : [
+	  "/sfx/tech/hoverbike_bump1.ogg",
+	  "/sfx/tech/hoverbike_bump2.ogg",
+	  "/sfx/tech/hoverbike_bump3.ogg"
+	],
+    "collisionDamage" : [ "/sfx/tech/hoverbike_crash1.ogg" ],
+    "collisionLoop" : [ "/sfx/rails/rail_grind_loop.ogg" ],
+	
+	//WEAPONRY
+	"fire" : [ "/sfx/gun/akkimari_energyfire2.ogg" ],
+	
+	//SPAWNING
+    "returnvehicle" : [ "/sfx/tools/teleport_up.ogg" ]
+  }
+}
