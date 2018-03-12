@@ -1,0 +1,124 @@
+{
+  "animationParts" : { },
+  "animationCustom" : {
+    "animatedParts" : {
+      "stateTypes" : {
+        "swoosh" : {
+          "states" : {
+            "flip" : {
+			  "properties" : {
+				"persistentSound" : "/sfx/melee/spear_twirl_loop.ogg"
+			  }
+			}
+          }
+        }
+      },
+
+      "parts" : {
+        "swoosh" : {
+          "partStates" : {
+            "swoosh" : {
+              "flip" : {
+                "properties" : {
+                  "image" : "/items/active/weapons/melee/abilities/bowstaff/thea-staffspinslash/swoosh.png",
+                  "offset" : [2.25, 2.75],
+                  "damageArea" : [[-6.0, -3.5], [-6.0, 0], [-3.5, 2.5], [0, 2.5], [2.5, 0], [2.5, -3.5], [0, -6.0], [-3.5, -6.0]]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "particleEmitters" : {
+      "flip" : {
+        "active" : false,
+        "transformationGroups" : ["weapon"],
+        "offsetRegion" : [-4, -4, 5, 5],
+        "emissionRate" : 70,
+        "particles" : []
+      }
+    },
+    "sounds" : {
+      "spinSlash" : [ "/sfx/melee/swing_broadsword.ogg" ],
+      "launch" : [ "/sfx/melee/swing_broadsword.ogg" ]
+    }
+  },
+
+  "ability" : {
+    "name" : "Sky Dance",
+    "type" : "thea-staffspinslash",
+    "scripts" : ["/items/active/weapons/melee/abilities/bowstaff/thea-staffspinslash/thea-staffspinslash.lua"],
+    "class" : "TheaStaffSpinSlash",
+
+    "damageConfig" : {
+      "damageSourceKind" : "broadsword",
+      "statusEffects" : [ ],
+      "baseDamage" : 6,
+      "knockback" : [0, -35],
+      "timeout" : 0.2,
+      "timeoutGroup" : "alt"
+    },
+
+    "flipMovementParameters" : {
+      "collisionPoly" : [ [-2.0, -1.0], [-1.0, -2.0], [1.0, -2.0], [2.0, -1.0], [2.0, 1.0], [1.0, 2.0], [-1.0, 2.0], [-2.0, 1.0] ]
+    },
+
+    "energyUsage" : 60.0,
+    "launchEnergyUsage" : 50.0,
+    "cooldownTime" : 0.5,
+	
+	//Charge Settings
+	"chargeTime" : 0.75,
+	"releaseOnReady" : true,
+	
+	//Rotation Settings
+    "minRotations" : 2,
+    "maxRotations" : 5,
+    "rotationTime" : 0.2,
+
+	//Jump Settings
+    "jumpVelocity" : [35, 20],
+    "chargedJumpVelocity" : [15, 50],
+    "jumpDuration" : 0.2,
+	"midAirJumpVelocity" : 30,
+	
+	//Launch Settings
+	"launchVelocity" : 40,
+	"launchAfterHit" : true,
+
+    "stances" : {
+      "windup" : {
+        "duration" : 0.2,
+        "armRotation" : -80,
+        "endArmRotation" : 80,
+        "weaponRotation" : 0,
+        "endWeaponRotation" : 70,
+		"weaponOffset" : [0, 0],
+		"endWeaponOffset" : [0, 1.0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "flip" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "launch" : {
+        "duration" : 0.3,
+        "armRotation" : -200,
+        "weaponRotation" : 40,
+		"weaponOffset" : [0, 1.0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  }
+}

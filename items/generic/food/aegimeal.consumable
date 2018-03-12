@@ -1,0 +1,32 @@
+{
+  "itemName" : "aegimeal",
+  "rarity" : "Uncommon",
+  "price" : 220,
+  "category" : "preparedFood",
+  "inventoryIcon" : "aegimeal.png",
+  "description" : "A full meal preferred by the Aegi.",
+  "shortdescription" : "Aeginian Meal",
+  "effects" : [ [
+    {
+        "effect" : "runboostfood",
+        "duration" : 120
+    },
+	{
+        "effect" : "maxhealthscalingboostfood",
+        "duration" : 210
+    },
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 210
+    }
+  ] ],
+  "foodValue" : 70,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

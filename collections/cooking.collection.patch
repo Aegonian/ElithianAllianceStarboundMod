@@ -7,7 +7,6 @@
 	  "item" : "avikanmeatchunk"
 	}
   },
-  
   {
 	"op" : "add", 
     "path" : "/collectables/avikanmeal",
@@ -16,7 +15,6 @@
       "item" : "avikanmeal"
     }
   },
-  
   {
 	"op" : "add", 
     "path" : "/collectables/bolbohnjam",
@@ -26,7 +24,6 @@
       "item" : "bolbohnjam"
     }
   },
-  
   {
 	"op" : "add", 
     "path" : "/collectables/spicebol",
@@ -36,7 +33,6 @@
       "item" : "spicebol"
     }
   },
-  
   {
 	"op" : "add", 
     "path" : "/collectables/dunebun",
@@ -46,7 +42,6 @@
       "item" : "dunebun"
     }
   },
-  
   {
 	"op" : "add", 
     "path" : "/collectables/stuffeddunebun",
@@ -56,7 +51,6 @@
       "item" : "stuffeddunebun"
     }
   },
-  
   {
 	"op" : "add", 
     "path" : "/collectables/kadavancactusjuice",
@@ -66,7 +60,6 @@
       "item" : "kadavancactusjuice"
     }
   },
-  
   {
 	"op" : "add", 
     "path" : "/collectables/kadavanmeatjuice",
@@ -76,14 +69,67 @@
       "item" : "kadavanmeatjuice"
     }
   },
-  
+  {
+	"op" : "add", 
+    "path" : "/collectables/bolbohnbun",
+    "value" :     
+    {
+      "order" : 159,
+      "item" : "bolbohnbun"
+    }
+  },
   {
 	"op" : "add", 
     "path" : "/collectables/loftbread",
     "value" :     
     {
-      "order" : 159,
+      "order" : 160,
       "item" : "loftbread"
+    }
+  },
+  {
+	"op" : "add", 
+    "path" : "/collectables/bakedborato",
+    "value" :     
+    {
+      "order" : 161,
+      "item" : "bakedborato"
+    }
+  },
+  {
+	"op" : "add", 
+    "path" : "/collectables/boratochips",
+    "value" :     
+    {
+      "order" : 162,
+      "item" : "boratochips"
+    }
+  },
+  {
+	"op" : "add", 
+    "path" : "/collectables/vahlberryjam",
+    "value" :     
+    {
+      "order" : 163,
+      "item" : "vahlberryjam"
+    }
+  },
+  {
+	"op" : "add", 
+    "path" : "/collectables/aegimeal",
+    "value" :     
+    {
+      "order" : 164,
+      "item" : "aegimeal"
+    }
+  },
+  {
+	"op" : "add", 
+    "path" : "/collectables/alliancesodamix",
+    "value" :     
+    {
+      "order" : 165,
+      "item" : "alliancesodamix"
     }
   }
 ]

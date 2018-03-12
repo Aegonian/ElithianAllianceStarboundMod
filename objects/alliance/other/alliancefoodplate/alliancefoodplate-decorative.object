@@ -1,0 +1,46 @@
+{
+  "objectName" : "alliancefoodplate-decorative",
+  "colonyTags" : ["alliance","aegi"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 220,
+  "description" : "A plate full of food.",
+  "shortdescription" : "Aeginian Plate",
+  "race" : "aegi",
+
+  "apexDescription" : "Dinner.",
+  "avianDescription" : "Delicious food.",
+  "floranDescription" : "Foodsss.",
+  "glitchDescription" : "Observation. A healthy meal.",
+  "humanDescription" : "Food. Yummy food!",
+  "hylotlDescription" : "A well-balanced dinner.",
+  "novakidDescription" : "Food.",
+
+  "aegiDescription" : "A balanced meal.",
+  "avikanDescription" : "An alien dish.",
+  "erixianDescription" : "There isn't enough meat in this dish.",
+  "trinkDescription" : "A standard Aeginian meal.",
+  "hymidDescription" : "A delicious dish.",
+  "notixDescription" : "A dish likely prepared by the Aegi.",
+  "jorgasianDescription" : "A balanced meal.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Analysis complete. Nutritional value: excellent.",
+  "akkimariDescription" : "Akki hungry.",
+
+  "inventoryIcon" : "alliancefoodplateicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "alliancefoodplate.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

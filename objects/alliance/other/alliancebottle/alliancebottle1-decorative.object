@@ -1,0 +1,46 @@
+{
+  "objectName" : "alliancebottle1-decorative",
+  "colonyTags" : ["alliance","aegi"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 60,
+  "description" : "A bottle of Froza.",
+  "shortdescription" : "Froza Bottle",
+  "race" : "aegi",
+
+  "apexDescription" : "A bottle of soda.",
+  "avianDescription" : "A full bottle of soda.",
+  "floranDescription" : "Drinksss.",
+  "glitchDescription" : "Observation. A soda bottle.",
+  "humanDescription" : "I love this alien soda!",
+  "hylotlDescription" : "A surprisingly nutritional soda.",
+  "novakidDescription" : "Drink up.",
+
+  "aegiDescription" : "A bottle of soda.",
+  "avikanDescription" : "An alien drink. Not sure if I should try it.",
+  "erixianDescription" : "A soda bottle from the Union.",
+  "trinkDescription" : "This is quite a popular soda amongst the Aegi.",
+  "hymidDescription" : "A bottle of soda.",
+  "notixDescription" : "The Aegi make great sodas.",
+  "jorgasianDescription" : "Just a bottle of soda from the Union.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Analysis complete. Alien drink.",
+  "akkimariDescription" : "Akki thirsty.",
+
+  "inventoryIcon" : "alliancebottle1icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "alliancebottle1.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

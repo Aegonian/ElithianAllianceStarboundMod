@@ -8,7 +8,7 @@
     "anchor" : [ "akki-cargodrop", "akki-cargodrop2", "akki-tower" ],
 
     "maxRadius" : 1000000,
-    "maxParts" : 2,
+    "maxParts" : 3,
     "protected" : false
   },
 

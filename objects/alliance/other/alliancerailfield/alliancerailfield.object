@@ -1,0 +1,139 @@
+{
+  "objectName" : "alliancerailfield",
+  "objectType" : "physics",
+  "colonyTags" : ["alliance"],
+  "printable" : false,
+  "rarity" : "Common",
+
+  "category" : "wire",
+  "price" : 10,
+  "description" : "This energy field will prevent certain entities from passing through.",
+  "shortdescription" : "Alliance Blocking Field",
+  "race" : "aegi",
+
+  "floranDescription" : "Some entitiesss can not passs through here.",
+  "glitchDescription" : "Informed. This blocking field will prevent certain entities from passing through.",
+  "drodenDescription" : "Detected blocking field. Prevents specific entities from passing through.",
+  "akkimariDescription" : "Akki can pass through. Others can not.",
+
+  "inventoryIcon" : "alliancerailfieldicon.png",
+  "orientations" : [
+    {
+      "image" : "alliancerailfieldvertical.png:<color>.off",
+      "imagePosition" : [0, 0],
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "animationParts" : {
+        "bg" : "alliancerailfieldvertical.png",
+        "fg" : "alliancerailfieldverticallit.png"
+      },
+      "animationPosition" : [0, 0],
+
+      "detectArea" : [ [-0.25, 0], [1.25, 7] ],
+
+      "spaceScan" : 0.5,
+      "anchors" : [ "top", "bottom" ],
+
+      "enableCollision" : "barrierVertical"
+    },
+    {
+      "image" : "alliancerailfieldvertical.png:<color>.off",
+      "imagePosition" : [0, 0],
+
+      "direction" : "right",
+
+      "animationParts" : {
+        "bg" : "alliancerailfieldvertical.png",
+        "fg" : "alliancerailfieldverticallit.png"
+      },
+      "animationPosition" : [0, 0],
+
+      "detectArea" : [ [-0.25, 0], [1.25, 7] ],
+
+      "spaceScan" : 0.5,
+      "anchors" : [ "top", "bottom" ],
+
+      "enableCollision" : "barrierVertical"
+    },
+    {
+      "image" : "alliancerailfieldhorizontal.png:<color>.off",
+      "imagePosition" : [0, 0],
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "animationParts" : {
+        "bg" : "alliancerailfieldhorizontal.png",
+        "fg" : "alliancerailfieldhorizontallit.png"
+      },
+      "animationPosition" : [0, 0],
+
+      "detectArea" : [ [0, -0.75], [7, 0.75] ],
+
+      "spaceScan" : 0.5,
+      "anchors" : [ "left", "right" ],
+
+      "enableCollision" : "barrierHorizontal"
+    },
+    {
+      "image" : "alliancerailfieldhorizontal.png:<color>.off",
+      "imagePosition" : [0, 0],
+
+      "direction" : "right",
+
+      "animationParts" : {
+        "bg" : "alliancerailfieldhorizontal.png",
+        "fg" : "alliancerailfieldhorizontallit.png"
+      },
+      "animationPosition" : [0, 0],
+
+      "detectArea" : [ [0, -0.75], [7, 0.75] ],
+
+      "spaceScan" : 0.5,
+      "anchors" : [ "left", "right" ],
+
+      "enableCollision" : "barrierHorizontal"
+    }
+  ],
+
+  "physicsCollisions" : {
+    "barrierVertical" : {
+      "collision" : [
+        [0.25, 0],
+        [0.75, 0],
+        [0.75, 7],
+        [0.25, 7]
+      ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["monster", "npc"],
+      "enabled" : false
+    },
+    "barrierHorizontal" : {
+      "collision" : [
+        [0, 0.25],
+        [7, 0.25],
+        [7, 0.75],
+        [0, 0.75]
+      ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["monster", "npc"],
+      "enabled" : false
+    }
+  },
+
+  "scripts" : [
+    "/objects/space/dockingfield/dockingfield.lua"
+  ],
+  "scriptDelta" : 5,
+
+  "animation" : "alliancerailfield.animation",
+
+  "outputNodes" : [ [0, 0] ],
+
+  "interactive" : false,
+
+  "detectDuration" : 0.1,
+  "detectEntityTypes" : [ "monster", "npc" ]
+}

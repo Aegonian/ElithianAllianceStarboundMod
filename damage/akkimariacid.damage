@@ -7,7 +7,6 @@
         "sounds" : [ "/sfx/projectiles/flame_burn.ogg" ],
         "particles" : [
           [
-
             {
               "type" : "animated",
               "animation" : "/animations/akkimariacidhitspark/akkimariacidhitspark.animation",
@@ -30,7 +29,7 @@
         "sounds" : [ "/sfx/projectiles/flame_burn.ogg" ],
         "particles" : [
           [
-            // CRITICAL FIRE PUFF
+            // CRITICAL ACID HIT
             {
               "type" : "animated",
               "animation" : "/animations/akkimaritrail/akkimaritrail.animation",
@@ -124,7 +123,6 @@
         "sounds" : [ "/sfx/projectiles/fireball_spit.ogg" ],
         "particles" : [
           [
-
             {
               "type" : "animated",
               "animation" : "/animations/akkimariacidhitspark/akkimariacidhitspark.animation",

@@ -32,7 +32,7 @@ function TheaEnhancedMeleeCombo:update(dt, fireMode, shiftHeld)
 
   if self.cooldownTimer > 0 then
     self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
-    if self.cooldownTimer == 0 then
+    if self.cooldownTimer == 0 and self.useReadyFlash then
       self:readyFlash()
     end
   end
@@ -68,6 +68,11 @@ function TheaEnhancedMeleeCombo:windup()
   local stance = self.stances["windup"..self.comboStep]
 
   self.weapon:setStance(stance)
+  
+  --Optionally flash the weapon
+  if stance.flashTime then
+	self:animatedFlash(stance.flashTime, stance.flashDirectives or self.flashDirectives)
+  end
 
   self.edgeTriggerTimer = 0
 
@@ -96,6 +101,11 @@ function TheaEnhancedMeleeCombo:wait()
   local stance = self.stances["wait"..(self.comboStep - 1)]
 
   self.weapon:setStance(stance)
+  
+  --Optionally flash the weapon
+  if stance.flashTime then
+	self:animatedFlash(stance.flashTime, stance.flashDirectives or self.flashDirectives)
+  end
 
   util.wait(stance.duration, function()
     if self:shouldActivate() then
@@ -115,6 +125,11 @@ function TheaEnhancedMeleeCombo:preslash()
 
   self.weapon:setStance(stance)
   self.weapon:updateAim()
+  
+  --Optionally flash the weapon
+  if stance.flashTime then
+	self:animatedFlash(stance.flashTime, stance.flashDirectives or self.flashDirectives)
+  end
 
   util.wait(stance.duration)
 
@@ -135,6 +150,11 @@ function TheaEnhancedMeleeCombo:fire()
   local swooshKey = self.animKeyPrefix .. (self.elementalType or self.weapon.elementalType) .. "swoosh"
   animator.setParticleEmitterOffsetRegion(swooshKey, self.swooshOffsetRegions[self.comboStep])
   animator.burstParticleEmitter(swooshKey)
+  
+  --Optionally flash the weapon
+  if stance.flashTime then
+	self:animatedFlash(stance.flashTime, stance.flashDirectives or self.flashDirectives)
+  end
   
   --If this move has a velocity modifier, add it to our movement controller
   if stance.xVelocity then
@@ -226,6 +246,11 @@ end
 function TheaEnhancedMeleeCombo:readyFlash()
   animator.setGlobalTag("bladeDirectives", self.flashDirectives)
   self.flashTimer = self.flashTime
+end
+
+function TheaEnhancedMeleeCombo:animatedFlash(flashTime, flashDirectives)
+  animator.setGlobalTag("bladeDirectives", flashDirectives)
+  self.flashTimer = flashTime or self.flashTime
 end
 
 function TheaEnhancedMeleeCombo:computeDamageAndCooldowns()

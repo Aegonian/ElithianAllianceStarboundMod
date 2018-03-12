@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "borato", "count" : 1 }
+  ],
+  "output" : { "item" : "bakedborato", "count" : 1 },
+  "groups" : [ "craftingfood", "sides" ],
+  "collectables" : { "cooking" : "bakedborato" }
+}

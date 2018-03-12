@@ -5,9 +5,9 @@ function init()
   self.jumpSoundPlayed = false
   
   effect.addStatModifierGroup({
-	{stat = "fallDamageMultiplier", effectiveMultiplier = 0.75}},
+	{stat = "fallDamageMultiplier", effectiveMultiplier = 0.75},
 	{stat = "jumpModifier", amount = 0.25}
-  )
+  })
 end
 
 function update(dt)

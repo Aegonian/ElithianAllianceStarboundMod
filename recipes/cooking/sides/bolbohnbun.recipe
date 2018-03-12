@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "dunebun", "count" : 1 },
+	{ "item" : "bolbohnjam", "count" : 1 }
+  ],
+  "output" : { "item" : "bolbohnbun", "count" : 1 },
+  "groups" : [ "craftingfood", "sides" ],
+  "collectables" : { "cooking" : "bolbohnbun" }
+}

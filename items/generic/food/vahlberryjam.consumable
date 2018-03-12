@@ -1,0 +1,25 @@
+{
+  "itemName" : "vahlberryjam",
+  "rarity" : "Common",
+  "price" : 120,
+  "category" : "preparedFood",
+  "inventoryIcon" : "vahlberryjam.png",
+  "description" : "A delicious jam full of vitamins.",
+  "shortdescription" : "Vahlberry Jam",
+  "effects" : [ [
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 225
+    }
+  ] ],
+  "foodValue" : 25,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ],
+  "emitters" : [ "drinking" ]
+}

@@ -71,26 +71,26 @@
 		  //FLYING
 		  "transitionToForward" : {
             "frames" : 1,  
-            "cycle" : 0.1,
+            "cycle" : 0.125,
             "mode" : "transition",
             "transition" : "transitionToForward2"
 		  },
 		  "transitionToForward2" : {
             "frames" : 1,  
-            "cycle" : 0.1,
+            "cycle" : 0.125,
             "mode" : "transition",
             "transition" : "forward"
 		  },
 		  "forward" : {},
 		  "transitionToBackward" : {
             "frames" : 1,  
-            "cycle" : 0.1,
+            "cycle" : 0.125,
             "mode" : "transition",
             "transition" : "transitionToBackward2"
 		  },
 		  "transitionToBackward2" : {
             "frames" : 1,  
-            "cycle" : 0.1,
+            "cycle" : 0.125,
             "mode" : "transition",
             "transition" : "backward"
 		  },

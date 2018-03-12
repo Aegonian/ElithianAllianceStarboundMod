@@ -219,7 +219,9 @@
 		{"weight" : 0.25, "item" : "loftgrainseed" },
 		{"weight" : 0.25, "item" : "loftgrain" },
 		{"weight" : 0.25, "item" : "sugarcaneseed" },
-		{"weight" : 0.25, "item" : "sugar" }
+		{"weight" : 0.25, "item" : "sugar" },
+		{"weight" : 0.25, "item" : "vahlberryseed" },
+		{"weight" : 0.25, "item" : "vahlberries" }
       ]
     } ]
   ],
@@ -240,7 +242,11 @@
   "alliancefood" : [
     [1, {
       "pool" : [
-        {"weight" : 0.1, "item" : "bread" }
+        {"weight" : 0.1, "item" : "aegimeal" },
+        {"weight" : 0.2, "item" : "bakedborato" },
+        {"weight" : 0.2, "item" : "boratochips" },
+        {"weight" : 0.2, "item" : "loftbread" },
+        {"weight" : 0.2, "item" : "vahlberryjam" }
       ]
     } ]
   ],
@@ -273,6 +279,57 @@
 		{"weight" : 0.20, "item" : "aegi-soldierlegs" },
 		//BACK ITEMS
 		{"weight" : 0.20, "item" : "aegi-soldierback" }
+      ]
+    } ]
+  ],
+  
+	//ALLIANCE SPECIFIC LOOT
+  "alliancefoodplatedrop" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "aegimeal", 1 ]}
+      ]
+    } ]
+  ],
+  "alliancebottle1drop" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "alliancesodabottle", 1 ]}
+      ]
+    } ]
+  ],
+  "alliancebottle2drop" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "alliancesodabottle2", 1 ]}
+      ]
+    } ]
+  ],
+  "alliancebottle3drop" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "alliancesodabottle3", 1 ]}
+      ]
+    } ]
+  ],
+  "alliancecan1drop" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "alliancesodacan", 1 ]}
+      ]
+    } ]
+  ],
+  "alliancecan2drop" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "alliancesodacan2", 1 ]}
+      ]
+    } ]
+  ],
+  "alliancecan3drop" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "alliancesodacan3", 1 ]}
       ]
     } ]
   ],

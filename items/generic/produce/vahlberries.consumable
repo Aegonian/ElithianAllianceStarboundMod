@@ -1,0 +1,20 @@
+{
+  "itemName" : "vahlberries",
+  "rarity" : "Common",
+  "price" : 80,
+  "category" : "food",
+  "eventCategory" : "eventCrop",
+  "inventoryIcon" : "vahlberries.png",
+  "description" : "Juicy, tasteful berries full of vitamins.",
+  "shortdescription" : "Vahlberries",
+  "foodValue" : 5.0,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ],
+  "learnBlueprintsOnPickup" : [ "aegimeal", "vahlberryjam" ]
+}

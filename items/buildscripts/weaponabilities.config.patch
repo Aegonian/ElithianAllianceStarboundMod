@@ -101,6 +101,11 @@
 	"path": "/thea-lancecharge",
 	"value": "/items/active/weapons/melee/abilities/lance/thea-lancecharge/thea-lancecharge.weaponability"
   },
+  {
+	"op": "add",
+	"path": "/thea-staffspinslash",
+	"value": "/items/active/weapons/melee/abilities/bowstaff/thea-staffspinslash/thea-staffspinslash.weaponability"
+  },
   
   //======================================================================================================================
   //	Weapon Attachments and Mods

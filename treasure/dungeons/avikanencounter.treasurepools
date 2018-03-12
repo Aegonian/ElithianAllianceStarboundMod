@@ -285,7 +285,8 @@
 		{"weight" : 0.25, "item" : "kadavancactusjuice" },
 		{"weight" : 0.05, "item" : "kadavanmeatjuice" },
 		{"weight" : 0.05, "item" : "spicebol" },
-		{"weight" : 0.05, "item" : "bolbohnjam" }
+		{"weight" : 0.05, "item" : "bolbohnjam" },
+		{"weight" : 0.05, "item" : "bolbohnbun" }
       ]
     } ]
   ],

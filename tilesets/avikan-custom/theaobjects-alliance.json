@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":106,
+ "tilecount":108,
  "tileheight":128,
  "tileproperties":
     {
@@ -79,6 +79,22 @@
          "imagePositionX":"-8",
          "imagePositionY":"-8",
          "object":"alliancealarm",
+         "tilesetDirection":"right"
+        },
+     "106":
+        {
+         "\/\/shortdescription":"Alliance Blocking Field",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"alliancerailfield",
+         "tilesetDirection":"right"
+        },
+     "107":
+        {
+         "\/\/shortdescription":"Alliance Blocking Field",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"alliancerailfield",
          "tilesetDirection":"right"
         },
      "11":
@@ -895,6 +911,14 @@
      "105":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancealarm.png"
+        },
+     "106":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancerailfieldhorizontal.png"
+        },
+     "107":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancerailfieldvertical.png"
         },
      "11":
         {

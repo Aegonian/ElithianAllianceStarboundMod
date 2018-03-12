@@ -157,5 +157,24 @@
 		]
 	  } ]
 	]
+  },
+
+  //VAHLBERRY
+  { "op" : "add",
+	"path" : "/vahlberryHarvest",
+	"value" : [
+	  [0, {
+		"pool" : [
+		  {"weight" : 0.89, "item" : "vahlberries"},
+		  {"weight" : 0.01, "item" : "vahlberryseed"},
+		  {"weight" : 0.1, "item" : "plantfibre"}
+		],
+		"poolRounds" : [
+		  [0.5, 1],
+		  [0.3, 2],
+		  [0.2, 3]
+		]
+	  } ]
+	]
   }
 ]

@@ -1,0 +1,75 @@
+{
+  "objectName" : "wildvahlberryseed",
+  "colonyTags" : ["nature"],
+  "rarity" : "Common",
+  "category" : "seed",
+  "description" : "Juicy berries full of vitamins.",
+  "shortdescription" : "Vahlberry Seed",
+  "objectType" : "farmable",
+  "printable" : false,
+  "price" : 10,
+  "hasObjectItem" : false,
+
+  "biomePlaced" : true,
+
+  "apexDescription" : "Brightly coloured berries grow from this plant. They look delicious.",
+  "avianDescription" : "Delicious berries!",
+  "floranDescription" : "Floran likesss ssoft berriess.",
+  "glitchDescription" : "Informed. Crushing these berries can create a sticky mess.",
+  "humanDescription" : "Alien berries, they look delicious!",
+  "hylotlDescription" : "Bright fruit from another world. Is it safe to eat?",
+  "novakidDescription" : "Berries. Tiny balls of sugar.",
+  
+  "aegiDescription" : "Vahlberries are an Aeginian favourite.",
+  "avikanDescription" : "Alien fruit. I'm not sure if I should try to eat them.",
+  "erixianDescription" : "Berries from Elithia. The Aegi love these.",
+  "trinkDescription" : "Vahlberries are popular amongst the Aegi.",
+  "hymidDescription" : "Vahlberries, one of many Elithian exports highly valued by the Hymid.",
+  "notixDescription" : "I believe these are vahlberries. The Aegi love them.",
+  "jorgasianDescription" : "Tasteful berries, and rich in vitamins too.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "These fibers can be woven into cloth.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected alien plantlife. Analysis: fruit-bearing plant. Rich in vitamins.",
+  "akkimariDescription" : "Akki enjoys tasting new tastes. Berries look tasteful.",
+
+  "inventoryIcon" : "vahlberryseedicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "vahlberryseed.png:<color>.<stage>.<alt>",
+      "imagePosition" : [0, 0],
+
+      "spaces" : [ [1, 0], [0, 0], [1, 1], [0, 1], [1, 2], [0, 2], [1, 3], [0, 3] ],
+      "requireTilledAnchors" : false,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "radioMessagesOnPickup" : [ "pickupseed" ],
+
+  "stages" : [
+    {
+      "duration" : [360, 420]
+    },
+    {
+      "duration" : [360, 420]
+    },
+    {
+      "alts" : 5,
+      "duration" : [960, 1080]
+    },
+    {
+      "alts" : 5,
+      "harvestPool" : "vahlberryHarvest",
+      "resetToStage" : 2
+    }
+  ],
+
+  "breakDropOptions" : [
+    [ [ "vahlberryseed", 1, { } ] ]
+  ],
+
+  "maxImmersion" : 0.125,
+  "consumeSoilMoisture" : false
+}

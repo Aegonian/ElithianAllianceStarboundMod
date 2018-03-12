@@ -87,7 +87,8 @@
 	  [ "thea-siegerunner" ],
 		//Akkimari Weapons
 	  [ "akkimari-sawbladelauncher", "akkimari-scrapyard" ],
-	  [ "akkimari-blastsling", "akkimari-karchaablade" ]
+	  [ "akkimari-blastsling", "akkimari-karchaablade" ],
+	  [ "akkimari-charakkiblade" ]
     ]
   }
 }

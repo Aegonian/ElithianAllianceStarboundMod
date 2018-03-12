@@ -1,0 +1,33 @@
+{
+  "itemName" : "alliancesodamix",
+  "rarity" : "Rare",
+  "price" : 300,
+  "category" : "drink",
+  "inventoryIcon" : "alliancesodamix.png",
+  "description" : "Vahlberries mixed with various sodas for a bizarre but delightful taste.",
+  "shortdescription" : "Vahlberry Soda Mix",
+  "effects" : [ [
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 90
+    },
+    {
+        "effect" : "maxhealthscalingboostfood",
+        "duration" : 90
+    },
+    {
+        "effect" : "thea-statusimmunity",
+        "duration" : 30
+    }
+  ] ],
+  "foodValue" : 40,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ],
+  "emitters" : [ "drinking" ]
+}

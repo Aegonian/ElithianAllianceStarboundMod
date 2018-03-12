@@ -1,0 +1,46 @@
+{
+  "objectName" : "alliancecan3-decorative",
+  "colonyTags" : ["alliance","aegi"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 40,
+  "description" : "A can of Corus.",
+  "shortdescription" : "Corus Can",
+  "race" : "aegi",
+
+  "apexDescription" : "A can of soda.",
+  "avianDescription" : "A full can of soda.",
+  "floranDescription" : "Drinksss.",
+  "glitchDescription" : "Observation. A soda can.",
+  "humanDescription" : "I love this alien soda!",
+  "hylotlDescription" : "A surprisingly nutritional soda.",
+  "novakidDescription" : "Drink up.",
+
+  "aegiDescription" : "A can of soda.",
+  "avikanDescription" : "An alien drink. Not sure if I should try it.",
+  "erixianDescription" : "A soda can from the Union.",
+  "trinkDescription" : "This is quite a popular soda amongst the Aegi.",
+  "hymidDescription" : "A can of soda.",
+  "notixDescription" : "The Aegi make great sodas.",
+  "jorgasianDescription" : "Just a can of soda from the Union.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Analysis complete. Alien drink.",
+  "akkimariDescription" : "Akki thirsty.",
+
+  "inventoryIcon" : "alliancecan3icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "alliancecan3.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

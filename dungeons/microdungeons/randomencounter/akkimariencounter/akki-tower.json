@@ -3,7 +3,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJzt111ugzAMB3C4a5kEp+ByvPVQe1ijIdcO\/kiM0zrS\/2Fa2\/k3Jw49pmk\/YmYS5u5605GOdKQjHTGSjrHqvtthrbeZY+q0vBy96m\/kCWUwWMIZykpHHENZ6bAZHnM9HS3Ne7HNf1leWV\/Rrjsd6\/zvKRnNsZx6MapjRXqxGvfWnQ6Y7UMco\/XjU+YuPB\/LoP3Y5vf74zy3RnHAuw\/OrhEc2N0HLZq9dYeD6sPZNJqj1ez1dlzNXO3sZTrISBe1r8rPZQZEd2AzF7NFd9TOucP5aOKA+6h2H0ot3g5J0tHXwZ25mtnr6aC+y8IzrplZzHp3IqJF1Uud96iOq9odzofZgd0VWH+0z71Gx65x9JhZng5NojmkM1c6e70c5zlEnQns99Ec2Nmg7hLNd\/U7zgdWL+yP9A7xcGAzFrv3sL3G3VteDkvSwXdwLNqZy529TIPJsb1qqd3l2HfBkvLeKI7ac1TN6OmoWRbQj6tn9wXkcTF\/BYZmDuqZvWbzdlCW4uA8g2D9qTmEBrYDs2AOSSiHwiByQEtxWAIdSkPN8fbaJ0ip5UeZ8n74uc8+\/UD\/jkd67KvA9YvPR2ADa1\/VzshADhePoX6To7XL0cHyUKba6xoYNA6252hbZy+H2DSAg2Pq\/T9o7dgNnx3N0bOvmUzmS\/MLyHLgTA==",
+         "data":"eJztl02OwzAIRpO71iMl9+yuh5rFBE1EgdgkBmNh6a36I54wH8l7WZZ3kiRJkiRJ4kqvE71+fGZwgDODA5z0GMcBTnrcc3itMh4u2rOvf5SD7UB7PD229d8HiOZRTr2I6rERvdhu3i1PD8w+iUe0fsySu3g+StB+7Ov3\/jjnVhQPvPtwdkXwoHYfdtHcLQ8Prg9np2geT2WvtcdV5mqz17sf+D5BBozuQWUu5Ta6hzTnUeYD3yNpH7a6WHu0kB59PWozV5O9lh7cuyyecU1mWXpw9XLzPqrHVe0R5oPaFVR\/tM+9Hh49MsvSQ8NoHq2Z25q9Vh7nHOJmgvp8NA9qNrhdonlX95gPql7cn9YdYuFBZSy196i7Vnu3rDzukB7PumgztzZ7n3C48tiPWqRdTr0LAvDbUTyk5yjJ0dJDcimoH1fP7gXxusjfJx1qPbhndsnN2oNzAY+aZxCqP5JHDwfOhfJogfPo6UC5gMcdsIeFwwcBtfwogd\/j\/\/0Y1W9FdBfrexXRwcrFyqOXj3X9vby86691kr7nXW+tk3cNSZIkSTI7vzOg+S4=",
          "encoding":"base64",
          "height":80,
          "name":"back",
@@ -482,38 +482,6 @@
                 {
                  "gid":200,
                  "height":8,
-                 "id":856,
-                 "name":"",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":272,
-                 "y":104
-                }, 
-                {
-                 "gid":200,
-                 "height":8,
-                 "id":857,
-                 "name":"",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":104,
-                 "y":104
-                }, 
-                {
-                 "gid":200,
-                 "height":8,
                  "id":858,
                  "name":"",
                  "properties":
@@ -524,7 +492,7 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":96,
+                 "x":104,
                  "y":496
                 }, 
                 {
@@ -540,40 +508,8 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":280,
+                 "x":272,
                  "y":496
-                }, 
-                {
-                 "gid":200,
-                 "height":8,
-                 "id":860,
-                 "name":"",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":320,
-                 "y":360
-                }, 
-                {
-                 "gid":200,
-                 "height":8,
-                 "id":861,
-                 "name":"",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":56,
-                 "y":360
                 }, 
                 {
                  "gid":201,
@@ -588,8 +524,8 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":280,
-                 "y":512
+                 "x":272,
+                 "y":520
                 }, 
                 {
                  "gid":201,
@@ -604,8 +540,8 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":96,
-                 "y":512
+                 "x":104,
+                 "y":520
                 }],
          "opacity":1,
          "type":"objectgroup",

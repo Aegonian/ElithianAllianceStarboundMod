@@ -1,0 +1,12 @@
+{
+  "name" : "thea-statusimmunity",
+  "effectConfig" : {},
+  "defaultDuration" : 1,
+
+  "scripts" : [
+    "thea-statusimmunity.lua"
+  ],
+  
+  "label" : "Status Immunity",
+  "icon" : "/interface/statuses/thea-statusimmunity.png"
+}

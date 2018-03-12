@@ -3,7 +3,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJzt00EOwjAMRNEcvZfLjkOxygq1smOP44o\/0t9VyA\/oHOOaPRvOTt+LAwcOHDh6hONdd592RO9NcwzRqhyq+5M8rQwBSzvDGo4+hjUcfQxrOHAohgOHYjhwKIYDh2I4cCiGA4diUUcHi9GAo2hZjpMWh+GvHCcsToPZUWnZMLgcFZZNw5Pj59lPYYLfo\/T+gMX0f2p8v\/v9aGww\/a8q3xGho8QTuD\/kyHYVOkyeO9PTcwmGHYfZM3PvVDncphc4LCb1d5DtuAKf3c2h\/F2JiIiIiIiIiKR9AaP+mPY=",
+         "data":"eJzt0jEKg0AURVGz15Cd2rmoFDKNRZAw748znAe3U\/kH3Ldt2yVJkjS01Ga\/\/7oVDG0rGNo4nmNo43iOoY2DIzEOjsQ4OBLj4EiMgyMxDo7EODgS4+BIjIMjMQ6OxDg4EuN4jqWHgaPfejlGWnoaVnKMsCQM1ZakocpSYTguvV9nnz9r71+\/exTdX9Xslur\/akZDlaXKkfJU359yjb7\/runXc6PvvWsafYMkSav3BTeYIoc=",
          "encoding":"base64",
          "height":80,
          "name":"back",
@@ -16,7 +16,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJztz0EKwCAUQ0HvfzYP5UoQQdpNiz\/MQPZ5rQEAAAAAAAAAAIn6j6v+P6nlawkNU0rHVP3\/SUrH6u3Pmxt2VX4CAAAAAM8GG42NDQ==",
+         "data":"eJztz1EGACAURNH2v7YW1VckIlF6zznM\/9xSAAAAAAAAAAAAAAAAztWHi\/4\/U8ttGRq6LB1d9P8rWTpGuz9\/bphF+QkAkTWeMY0N",
          "encoding":"base64",
          "height":80,
          "name":"front",
@@ -46,9 +46,9 @@
          "name":"objects",
          "objects":[
                 {
-                 "gid":356,
+                 "gid":363,
                  "height":88,
-                 "id":813,
+                 "id":815,
                  "name":"",
                  "properties":
                     {
@@ -59,12 +59,12 @@
                  "visible":true,
                  "width":40,
                  "x":152,
-                 "y":368
+                 "y":496
                 }, 
                 {
-                 "gid":357,
+                 "gid":364,
                  "height":16,
-                 "id":814,
+                 "id":816,
                  "name":"",
                  "properties":
                     {
@@ -75,7 +75,7 @@
                  "visible":true,
                  "width":24,
                  "x":192,
-                 "y":368
+                 "y":496
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -105,7 +105,7 @@
          "objects":[
                 {
                  "height":8,
-                 "id":811,
+                 "id":817,
                  "name":"",
                  "properties":
                     {
@@ -117,7 +117,7 @@
                  "visible":true,
                  "width":8,
                  "x":224,
-                 "y":312
+                 "y":440
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -159,23 +159,7 @@
                 {
                  "gid":200,
                  "height":8,
-                 "id":708,
-                 "name":"",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":272,
-                 "y":104
-                }, 
-                {
-                 "gid":200,
-                 "height":8,
-                 "id":710,
+                 "id":830,
                  "name":"",
                  "properties":
                     {
@@ -186,12 +170,12 @@
                  "visible":true,
                  "width":8,
                  "x":104,
-                 "y":104
+                 "y":496
                 }, 
                 {
                  "gid":200,
                  "height":8,
-                 "id":711,
+                 "id":831,
                  "name":"",
                  "properties":
                     {
@@ -201,61 +185,13 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":96,
-                 "y":368
-                }, 
-                {
-                 "gid":200,
-                 "height":8,
-                 "id":712,
-                 "name":"",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":280,
-                 "y":368
-                }, 
-                {
-                 "gid":200,
-                 "height":8,
-                 "id":715,
-                 "name":"",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":320,
-                 "y":232
-                }, 
-                {
-                 "gid":200,
-                 "height":8,
-                 "id":716,
-                 "name":"",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":56,
-                 "y":232
+                 "x":272,
+                 "y":496
                 }, 
                 {
                  "gid":201,
                  "height":8,
-                 "id":729,
+                 "id":834,
                  "name":"",
                  "properties":
                     {
@@ -265,13 +201,13 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":280,
-                 "y":384
+                 "x":272,
+                 "y":520
                 }, 
                 {
                  "gid":201,
                  "height":8,
-                 "id":730,
+                 "id":835,
                  "name":"",
                  "properties":
                     {
@@ -281,8 +217,8 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":96,
-                 "y":384
+                 "x":104,
+                 "y":520
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -303,7 +239,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":815,
+ "nextobjectid":836,
  "orientation":"orthogonal",
  "properties":
     {
@@ -333,7 +269,7 @@
          "source":"..\/..\/..\/..\/tilesets\/avikan-custom\/theamaterials.json"
         }, 
         {
-         "firstgid":356,
+         "firstgid":363,
          "source":"..\/..\/..\/..\/tilesets\/avikan-custom\/theaobjects-akkimari.json"
         }],
  "tilewidth":8,

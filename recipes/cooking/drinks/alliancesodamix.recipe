@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "alliancesodabottle", "count" : 1 },
+	{ "item" : "alliancesodabottle2", "count" : 1 },
+	{ "item" : "alliancesodabottle3", "count" : 1 },
+	{ "item" : "vahlberries", "count" : 1 },
+	{ "item" : "selvasextract", "count" : 1 }
+  ],
+  "output" : { "item" : "alliancesodamix", "count" : 1 },
+  "groups" : [ "craftingfood", "drinks" ],
+  "collectables" : { "cooking" : "alliancesodamix" }
+}

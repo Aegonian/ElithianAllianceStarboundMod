@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "borato", "count" : 1 }
+  ],
+  "output" : { "item" : "boratochips", "count" : 1 },
+  "groups" : [ "craftingfood", "snacks" ],
+  "collectables" : { "cooking" : "boratochips" }
+}

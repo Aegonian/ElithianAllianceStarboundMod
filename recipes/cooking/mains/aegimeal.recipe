@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "loftbread", "count" : 1 },
+    { "item" : "bakedborato", "count" : 1 },
+    { "item" : "vahlberries", "count" : 1 }
+  ],
+  "output" : { "item" : "aegimeal", "count" : 1 },
+  "groups" : [ "craftingfood", "mains" ],
+  "collectables" : { "cooking" : "aegimeal" }
+}

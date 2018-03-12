@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":8,
+ "tilecount":9,
  "tileheight":32,
  "tileproperties":
     {
@@ -72,6 +72,14 @@
          "imagePositionY":"0",
          "object":"wildselvasseed",
          "tilesetDirection":"right"
+        },
+     "8":
+        {
+         "\/\/shortdescription":"Vahlberry",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"vahlberryseed",
+         "tilesetDirection":"right"
         }
     },
  "tiles":
@@ -107,6 +115,10 @@
      "7":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/farmables\/selvasseed.png"
+        },
+     "8":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/farmables\/vahlberryseed.png"
         }
     },
  "tilewidth":16
