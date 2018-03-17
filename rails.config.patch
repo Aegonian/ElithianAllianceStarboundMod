@@ -30,5 +30,13 @@
       "friction": 1.0,
       "speedLimit": 60
     }
+  },
+  {
+    "op": "add",
+    "path": "/akkimarirail",
+    "value": {
+      "friction": 1.0,
+      "speedLimit": 60
+    }
   }
 ]

@@ -1,0 +1,13 @@
+{
+  "type" : "aegicolonymerchant",
+  "baseType" : "aegivillagemerchant",
+
+  "scriptConfig" : {
+	  "merchant" : {
+		"categories" : {
+		  "aegi" : [ "aegicolony" ]
+		},
+		"numItems" : 8
+    }
+  }
+}

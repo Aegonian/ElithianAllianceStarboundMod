@@ -91,6 +91,17 @@
       "chance" : 1
     },
 	
+    //============================================= SHOPS =============================================
+    {
+      "name" : "aegicolony-store",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+        [ "doNotConnectToPart", [ "aegicolony-sideleft", "aegicolony-sideright" ] ]
+      ],
+      "def" : [ "tmx", "aegicolony-store.json" ],
+      "chance" : 1
+    },
+	
     //============================================= DECORATION =============================================
     {
       "name" : "aegicolony-garden1",
@@ -138,7 +149,7 @@
         [ "doNotConnectToPart", [ "aegicolony-landingtower1", "aegicolony-largebase1", "aegicolony-prefabhomelarge1", "aegicolony-prefabhomelarge2", "aegicolony-sideright" ] ]
       ],
       "def" : [ "tmx", "aegicolony-sideleft.json" ],
-      "chance" : 1
+      "chance" : 5
     },
     {
       "name" : "aegicolony-sideright",
@@ -148,7 +159,7 @@
         [ "doNotConnectToPart", [ "aegicolony-landingtower1", "aegicolony-largebase1", "aegicolony-prefabhomelarge1", "aegicolony-prefabhomelarge2", "aegicolony-sideleft" ] ]
       ],
       "def" : [ "tmx", "aegicolony-sideright.json" ],
-      "chance" : 1
+      "chance" : 5
     }
   ]
 }

@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "loftbread", "count" : 1 },
+	{ "item" : "vahlberryjam", "count" : 1 }
+  ],
+  "output" : { "item" : "vahlberrybread", "count" : 1 },
+  "groups" : [ "craftingfood", "sides" ],
+  "collectables" : { "cooking" : "vahlberrybread" }
+}

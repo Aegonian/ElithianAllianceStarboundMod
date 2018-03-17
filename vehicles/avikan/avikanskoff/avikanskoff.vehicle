@@ -1,7 +1,7 @@
 {
   "name" : "avikanskoff",
-  "script" : "/vehicles/alliance/allianceshuttle/allianceshuttle.lua",
-  "boundBox" : [-8, -8, 8, 8],
+  "script" : "/vehicles/thea-shuttlecraft.lua",
+  "boundBox" : [-8, -2, 8, 2],
   "slaveControlTimeout" : 2.0,
   "slaveControlHeartbeat" : 1.0,
   "canBeHit" : true,
@@ -71,10 +71,10 @@
   "flyControlForceX" : 200,
   "flyControlForceY" : 150,
   "stopControlForce" : 100,
-  "verticalMovementAngle" : 0.35, //from 0 to 1. Determines maximum angle when vehicle moves on the vertical axis, or when actively switching directions
-  "brakingAngle" : 0.175, //from 0 to 1. Determines maximum angle when the vehicle is passively braking
-  "maxLiquidImmersion" : 0.95, //maximum liquid immersion before the vehicle sinks
-  "liquidBuoyancy" : 2.0, //Buoyancy while floating in a liquid
+  "verticalMovementAngle" : 0.35,	//from 0 to 1. Determines maximum angle when vehicle moves on the vertical axis, or when actively switching directions
+  "brakingAngle" : 0.175,			//from 0 to 1. Determines maximum angle when the vehicle is passively braking
+  "maxLiquidImmersion" : 0.95,		//maximum liquid immersion before the vehicle sinks
+  "liquidBuoyancy" : 2.0,			//Buoyancy while floating in a liquid
 
   //HEALTH SETTINGS
   "protection" : 50,

@@ -1,5 +1,7 @@
 [
-	//STARFARER'S REFUGE
+	//=========================================================================================================
+	// STARFARER'S REFUGE
+	//=========================================================================================================
 	{ "op" : "add", "path" : "/avikanlostandfound",
 		"value" : [
 			[ 0, [
@@ -51,8 +53,9 @@
 		]
 	},
 	
-	//AVIKAN
-	
+	//=========================================================================================================
+	// AVIKAN
+	//=========================================================================================================
 	{ "op" : "add", "path" : "/avikanspace",
 		"value" : [
 			[ 0, [
@@ -170,7 +173,8 @@
 			  { "item": { "name": "avikanspiketrap" }, "rarity": 0.5 },
 			  { "item": { "name": "avikantarspiketrap" }, "rarity": 0.5 },
 			  { "item": { "name": "avikanpoisonspiketrap" }, "rarity": 0.5 },
-			  { "item": { "name": "avikan-clanbow" }, "rarity": 0.5 }
+			  { "item": { "name": "avikan-clanbow" }, "rarity": 0.5 },
+			  { "item": { "name": "avikanbowstaff" }, "rarity": 0.5 }
 			] ]		
 		]
 	},
@@ -457,12 +461,38 @@
 		]
 	},
 	
-	
-	//DRODEN
+	//=========================================================================================================
+	// DRODEN
+	//=========================================================================================================
 	//Nothing yet!
 	
+	//=========================================================================================================
+	// AEGI
+	//=========================================================================================================
+	{ "op" : "add", "path" : "/aegicolony",
+		"value" : [
+			[ 0, [
+			  //FOODS
+			  { "item": { "name": "aegimeal" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancesodabottle" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancesodabottle2" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancesodabottle3" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancesodacan" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancesodacan2" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancesodacan3" }, "rarity": 0.5 },
+			  { "item": { "name": "vahlberryjam" }, "rarity": 0.5 },
+			  { "item": { "name": "boratochips" }, "rarity": 0.5 },
+			  { "item": { "name": "mellowroot" }, "rarity": 0.5 },
+			  //MATERIALS
+			  { "item": { "name": "alliancecloth" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancemetal" }, "rarity": 0.5 }
+			] ]
+		]
+	},
 	
-	//TRINK
+	//=========================================================================================================
+	// TRINK
+	//=========================================================================================================
 	{ "op" : "add", "path" : "/trinkspace",
 		"value" : [
 			[ 0, [
@@ -644,7 +674,7 @@
 			  { "item" : { "name" : "trink-combatchest", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.5 },
 			  { "item" : { "name" : "trink-combatlegs", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.5 },
 			  
-			  { "item" : { "name" : "trinkmerchantback", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.5 }
+			  { "item" : { "name" : "trinkmerchantback", "parameters" : { "colorIndex" : 0 } }, "rarity" : 2.5 }
 			] ]
 		]
 	}

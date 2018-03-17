@@ -1,0 +1,27 @@
+{
+  "frameGrid" : {
+    "size" : [40, 48],
+    "dimensions" : [4, 1],
+    "names" : [
+	  ["onRail.1", "onRail.2", "onRail.3", "onRail.4"]
+	]
+  },
+
+  "aliases" : {
+    //GENERAL
+	"default" : "onRail.1",
+    "offRail" : "onRail.4",
+	//IDLE
+    "idle.1" : "onRail.1",
+	//LEFT
+    "left.1" : "onRail.4",
+    "left.2" : "onRail.3",
+    "left.3" : "onRail.2",
+    "left.4" : "onRail.1",
+	//RIGHT
+    "right.1" : "onRail.1",
+    "right.2" : "onRail.2",
+    "right.3" : "onRail.3",
+    "right.4" : "onRail.4"
+  }
+}

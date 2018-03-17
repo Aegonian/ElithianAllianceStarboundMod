@@ -1,6 +1,6 @@
 {
   "input" : [
-    { "item" : "monsterscales", "count" : 4 }
+    { "item" : "monsterscales", "count" : 3 }
   ],
   "output" : { "item" : "avikanjavelin", "count" : 3 },
   "groups" : [ "avikanbonecrafting", "consumables", "all" ]

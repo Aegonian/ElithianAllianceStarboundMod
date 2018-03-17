@@ -1,0 +1,68 @@
+{
+  "objectName" : "mellowrootseed",
+  "colonyTags" : ["nature"],
+  "rarity" : "Common",
+  "category" : "seed",
+  "description" : "A soft, juicy vegetable high in nutrients.",
+  "shortdescription" : "Mellowroot Seed",
+  "objectType" : "farmable",
+  "printable" : false,
+  "price" : 20,
+
+  "apexDescription" : "Soft, juicy vegetables.",
+  "avianDescription" : "I prefer the seeds, but the crop itself is okay too.",
+  "floranDescription" : "Floran thinksss thiss plant iss too mushy.",
+  "glitchDescription" : "Informed. This soft vegetable is high in nutrients.",
+  "humanDescription" : "This crop is far too mushy for me.",
+  "hylotlDescription" : "A soft, watery vegetable.",
+  "novakidDescription" : "Just some kinda soft herb.",
+  
+  "aegiDescription" : "The mellowroot is a vital part of a good meal.",
+  "avikanDescription" : "An alien plant. It's very juicy, unlike anything on Kadavan.",
+  "erixianDescription" : "A soft, watery crop.",
+  "trinkDescription" : "This crop is nutrient-rich.",
+  "hymidDescription" : "A soft, watery crop from Elithia.",
+  "notixDescription" : "The shape of this crop is quite odd.",
+  "jorgasianDescription" : "A juicy vegetable. It tastes quite good.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected alien flora. Detected high quantities of water inside.",
+  "akkimariDescription" : "Akki not like alien plants.",
+
+  "inventoryIcon" : "mellowrootseedicon.png",
+
+  "tooltipKind" : "seed",
+  "largeImage" : "mellowrootseed.png:default.2.0",
+
+  "orientations" : [
+    {
+      "dualImage" : "mellowrootseed.png:<color>.<stage>.<alt>",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaces" : [ [1, 0], [0, 0], [1, 1], [0, 1] ],
+      "requireTilledAnchors" : true,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "radioMessagesOnPickup" : [ "pickupseed" ],
+
+  "stages" : [
+    {
+      "duration" : [580, 660]
+    },
+    {
+      "duration" : [580, 660]
+    },
+    {
+      "alts" : 4,
+      "harvestPool" : "mellowrootHarvest"
+    }
+  ],
+
+  "maxImmersion" : 0.25
+}

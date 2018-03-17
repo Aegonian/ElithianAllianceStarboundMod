@@ -1,0 +1,20 @@
+{
+  "itemName" : "mellowroot",
+  "rarity" : "Common",
+  "price" : 50,
+  "category" : "food",
+  "eventCategory" : "eventCrop",
+  "inventoryIcon" : "mellowroot.png",
+  "description" : "A soft, juicy vegetable.",
+  "shortdescription" : "Mellowroot",
+  "foodValue" : 10,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ],
+  "learnBlueprintsOnPickup" : [ "mellowrootchops" ]
+}

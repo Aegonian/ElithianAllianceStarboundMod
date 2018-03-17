@@ -66,6 +66,8 @@ function init()
   self.idleEngineTimer = 0
   self.warningSoundIsPlaying = false
   animator.stopAllSounds("warning")
+  self.nullifyImpactDamage = true
+  self.nullifyImpactDamageTimer = 0
 
   self.driver = nil
   self.facingDirection = config.getParameter("facingDirection") or 1 --Allow the spawner to set the starting facing direction
@@ -131,6 +133,12 @@ end
 --============================================== UPDATE ======================================================
 --============================================================================================================
 function update()
+  --Nullify collision damage for a short time after spawning
+  self.nullifyImpactDamageTimer = math.min(10, self.nullifyImpactDamageTimer + script.updateDt())
+  if self.nullifyImpactDamageTimer > 2.0 then
+	self.nullifyImpactDamage = false
+  end
+  
   --Remove vehicle if animation was set to invisible
   if (animator.animationState("body")=="invisible") then
     vehicle.destroy()
@@ -144,6 +152,11 @@ function update()
 	--Hide landing gear and passenger door while warping
 	animator.setAnimationState("landingGear", "invisible")
 	animator.setAnimationState("passengerDoor", "invisible")
+  --Optionally raise the landing gear when starting warp
+  elseif (animator.animationState("body")=="warpInPart2" or animator.animationState("body")=="warpOutPart1") then
+	if config.getParameter("raiseLandingGearInWarp") then
+	  animator.setAnimationState("landingGear", "up")
+	end
   --When not warping (i.e. idle or in use)
   else
     local driverThisFrame = vehicle.entityLoungingIn("drivingSeat")
@@ -441,6 +454,10 @@ function updateDriveEffects(healthFactor, driverThisFrame)
 	  animator.playSound("engineStart")
     end
 	
+	--Disable idle engine sounds as there is a driver
+	animator.stopAllSounds("engineLoopIdle")
+	self.idleLoopSoundPlaying = false
+	
 	--If it isn't playing yet, start playing the engine loop sound
 	if self.loopSoundPlaying == false then
 	  animator.playSound("engineLoop", -1)
@@ -468,6 +485,17 @@ function updateDriveEffects(healthFactor, driverThisFrame)
 	--Disable active engine sounds as there is no driver
 	animator.stopAllSounds("engineLoop")
 	self.loopSoundPlaying = false
+	
+	--Enable temporary idle engine sound after exiting the vehicle
+	if self.idleEngineTimer > 0 then
+	  if not self.idleLoopSoundPlaying then
+		animator.playSound("engineLoopIdle", -1)
+		self.idleLoopSoundPlaying = true
+	  end
+	else
+	  animator.stopAllSounds("engineLoopIdle")
+	  self.idleLoopSoundPlaying = false
+	end
   end
   
   --If we are at critical health, loop a warning sound
@@ -674,7 +702,7 @@ function updateDamage(damage, headlights)
       return maxAccel
     end
 
-    if findMaxAccel(self.collisionDamageTrackingVelocities) >= self.minDamageCollisionAccel then
+    if findMaxAccel(self.collisionDamageTrackingVelocities) >= self.minDamageCollisionAccel and not self.nullifyImpactDamage then
       animator.playSound("collisionDamage")
       setDamageEmotes()
 

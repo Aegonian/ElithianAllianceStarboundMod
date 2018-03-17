@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":229,
+ "tilecount":231,
  "tileheight":256,
  "tileproperties":
     {
@@ -1169,12 +1169,28 @@
          "object":"avikanshiplight",
          "tilesetDirection":"right"
         },
+     "229":
+        {
+         "\/\/shortdescription":"Mech Assembly Station",
+         "imagePositionX":"-24",
+         "imagePositionY":"0",
+         "object":"avikanmechassemblystation",
+         "tilesetDirection":"right"
+        },
      "23":
         {
          "\/\/shortdescription":"Covered Avikan Vehicle",
          "imagePositionX":"0",
          "imagePositionY":"0",
          "object":"avikanhoverbikecovered",
+         "tilesetDirection":"right"
+        },
+     "230":
+        {
+         "\/\/shortdescription":"Mech Part Crafting Table",
+         "imagePositionX":"-32",
+         "imagePositionY":"0",
+         "object":"avikanmechcraftingtable",
          "tilesetDirection":"right"
         },
      "24":
@@ -2424,9 +2440,17 @@
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/avikan\/avikanshiplight.png"
         },
+     "229":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/avikan\/avikanmechassemblystation.png"
+        },
      "23":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/avikan\/avikanhoverbikecovered.png"
+        },
+     "230":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/avikan\/avikanmechcraftingtable.png"
         },
      "24":
         {

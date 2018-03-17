@@ -1,0 +1,92 @@
+{
+  "type" : "ao-highpriest",
+  "baseType" : "ao-idle",
+
+  "npcname" : "Kaviri",
+
+  "scriptConfig" : {
+    "behavior" : "tonauacoutpost",
+
+    "behaviorConfig" : {
+      "blessings" : [
+        "regeneration1",
+        "glow",
+        "jumpboost",
+        "nofalldamage",
+        "rage",
+        "runboost",
+        "thorns"
+      ],
+      "blessingDuration" : 1800,
+      "rotationTime" : 86400
+    },
+	
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [
+		    "The Rhaiod is open to all.",
+			"Rhadeis blesses us today.",
+			"The priests of the Rhaiod are here for anyone who needs help."
+		  ]
+		},
+
+        "avikan" : {
+          "default" : [
+		    "The Rhaiod is open to all.",
+			"Rhadeis blesses us today.",
+			"The priests of the Rhaiod are here for anyone who needs help."
+          ],
+          "glitch" : [
+            "The Rhaiod accepts machines. We do not discriminate.",
+			"Even machines may walk the path of the Rhaiod.",
+			"Rhadeis saw no difference between organics and synthetics. And so, the Rhaiod sees no difference, either."
+          ],
+          "avikan" : [
+            "Rhadeis blesses your travels, esteemed Captain.",
+			"When traveling along the stars, always keep Rhadeis with you.",
+			"The Rhaiod will help guide you along your path, wherever it may take you."
+          ],
+		  "trink" : [
+            "The Rhaiod accepts machines. We do not discriminate.",
+			"Even machines may walk the path of the Rhaiod.",
+			"Rhadeis saw no difference between organics and synthetics. And so, the Rhaiod sees no difference, either."
+          ],
+		  "droden" : [
+            "The Rhaiod accepts machines. We do not discriminate.",
+			"Even machines may walk the path of the Rhaiod.",
+			"Rhadeis saw no difference between organics and synthetics. And so, the Rhaiod sees no difference, either."
+          ]
+        }
+      },
+      "bless" : {
+        "default" : {
+          "default" : [
+            "Be blessed, follower of the Rhaiod.",
+            "Rhadeis blesses you.",
+            "Let Rhadeis light your path, and you shall be blessed.",
+            "The blessings of Rhadeis upon you."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "avikan-highpriestchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "avikan-priestlegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "itemName" : "vahlberrybread",
+  "rarity" : "Common",
+  "price" : 180,
+  "category" : "preparedFood",
+  "inventoryIcon" : "vahlberrybread.png",
+  "description" : "Loftbread filled with vahlberry jam for a fresh, delicious taste.",
+  "shortdescription" : "Vahlberry Bread",
+  "effects" : [ [
+    {
+        "effect" : "maxhealthscalingboostfood",
+        "duration" : 180
+    },
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 180
+    }
+  ] ],
+  "foodValue" : 50,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ],
+  "learnBlueprintsOnPickup" : [ "aegimeal" ]
+}

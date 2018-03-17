@@ -2,6 +2,7 @@
   "itemName" : "avikancrook",
   "price" : 250,
   "level" : 1,
+  "fixedLevel" : false,
   "maxStack" : 1,
   "rarity" : "common",
   "description" : "A bone crook used by Gad'hur herders.",

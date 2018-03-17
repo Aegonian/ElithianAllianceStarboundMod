@@ -158,7 +158,8 @@
 		{"weight" : 0.05, "item" : "avikanvanguarddagger" },
 		{"weight" : 0.05, "item" : "avikanvanguardhammer" },
 		{"weight" : 0.05, "item" : "avikanvanguardshortsword" },
-		{"weight" : 0.05, "item" : "avikanvanguardspear" }
+		{"weight" : 0.05, "item" : "avikanvanguardspear" },
+		{"weight" : 0.05, "item" : "avikanbowstaff" }
       ]
     } ]
   ],

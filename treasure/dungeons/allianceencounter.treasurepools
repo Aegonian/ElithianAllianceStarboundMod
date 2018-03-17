@@ -246,7 +246,8 @@
         {"weight" : 0.2, "item" : "bakedborato" },
         {"weight" : 0.2, "item" : "boratochips" },
         {"weight" : 0.2, "item" : "loftbread" },
-        {"weight" : 0.2, "item" : "vahlberryjam" }
+        {"weight" : 0.2, "item" : "vahlberryjam" },
+        {"weight" : 0.1, "item" : "vahlberrybread" }
       ]
     } ]
   ],
@@ -277,6 +278,9 @@
 		{"weight" : 0.20, "item" : "aegi-soldierhead" },
 		{"weight" : 0.20, "item" : "aegi-soldierchest" },
 		{"weight" : 0.20, "item" : "aegi-soldierlegs" },
+		//DESIGNER SET
+		{"weight" : 0.20, "item" : "aegi-suitchest" },
+		{"weight" : 0.20, "item" : "aegi-suitlegs" },
 		//BACK ITEMS
 		{"weight" : 0.20, "item" : "aegi-soldierback" }
       ]

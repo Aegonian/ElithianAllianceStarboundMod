@@ -100,7 +100,7 @@
         }
       },
 	  "landingGear" : {
-        "default" : "down",
+        "default" : "up",
         "states" : {
           "down" : {},
           "raise" : {
@@ -146,7 +146,7 @@
       "foreground" : {
         "properties" : {
           "centered" : true,
-          "zLevel" : 1,
+          "zLevel" : 2,
           "transformationGroups" : ["flip", "rotation"]
         },
         "partStates" : {
@@ -171,6 +171,42 @@
             },
             "warpOutPart2" : {
               "properties" : {}
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+	  
+	//LANDING GEAR -- Rendered in front of player, but behind the foreground
+	  "landingGear" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 1,
+          "transformationGroups" : ["flip", "rotation"]
+        },
+        "partStates" : {
+          "landingGear" : {
+            "down" : {
+              "properties" : {
+                "image" : "allianceshuttle-landinggear.png:<damageState>.down"
+              }
+            },
+            "raise" : {
+              "properties" : {
+                "image" : "allianceshuttle-landinggear.png:<damageState>.raise.<frame>"
+              }
+            },
+            "up" : {
+              "properties" : {
+                "image" : "allianceshuttle-landinggear.png:<damageState>.up"
+              }
+            },
+            "lower" : {
+              "properties" : {
+                "image" : "allianceshuttle-landinggear.png:<damageState>.lower.<frame>"
+              }
             },
             "invisible" : {
               "properties" : {}
@@ -222,7 +258,7 @@
 	  "lights" : {
         "properties" : {
           "centered" : true,
-          "zLevel" : 2,
+          "zLevel" : 3,
           "fullbright" : true,
           "transformationGroups" : ["flip", "rotation"]
         },
@@ -246,7 +282,7 @@
         "properties" : {
           "centered" : true,
           "fullbright" : true,
-          "zLevel" : 2,
+          "zLevel" : 3,
           "transformationGroups" : ["flip", "rotation"]
         },
         "partStates" : {
@@ -273,7 +309,7 @@
         "properties" : {
           "centered" : true,
           "fullbright" : true,
-          "zLevel" : 2,
+          "zLevel" : 3,
           "transformationGroups" : ["flip", "rotation"]
         },
         "partStates" : {
@@ -301,7 +337,7 @@
       "warp" : {
         "properties" : {
           "centered" : true,
-          "zLevel" : 3,
+          "zLevel" : 4,
           "fullbright" : true,
           "transformationGroups" : ["flip", "rotation"]
         },

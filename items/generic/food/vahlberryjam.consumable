@@ -21,5 +21,6 @@
   "blockingEffects" : [
     "wellfed"
   ],
-  "emitters" : [ "drinking" ]
+  "emitters" : [ "drinking" ],
+  "learnBlueprintsOnPickup" : [ "vahlberrybread" ]
 }

@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":108,
+ "tilecount":126,
  "tileheight":128,
  "tileproperties":
     {
@@ -97,12 +97,108 @@
          "object":"alliancerailfield",
          "tilesetDirection":"right"
         },
+     "108":
+        {
+         "\/\/shortdescription":"Alliance Store Shelf",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"alliancestoreshelf",
+         "tilesetDirection":"right"
+        },
+     "109":
+        {
+         "\/\/shortdescription":"Alliance Store Sign",
+         "imagePositionX":"-40",
+         "imagePositionY":"-8",
+         "object":"alliancestoresign",
+         "tilesetDirection":"right"
+        },
      "11":
         {
          "\/\/shortdescription":"Alliance Books",
          "imagePositionX":"0",
          "imagePositionY":"0",
          "object":"alliancebooks3",
+         "tilesetDirection":"right"
+        },
+     "110":
+        {
+         "\/\/shortdescription":"Froza Bottle",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"alliancebottle1",
+         "tilesetDirection":"right"
+        },
+     "111":
+        {
+         "\/\/shortdescription":"Froza Bottle",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"alliancebottle1-decorative",
+         "tilesetDirection":"right"
+        },
+     "112":
+        {
+         "\/\/shortdescription":"Le'mar Bottle",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"alliancebottle2",
+         "tilesetDirection":"right"
+        },
+     "113":
+        {
+         "\/\/shortdescription":"Le'mar Bottle",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"alliancebottle2-decorative",
+         "tilesetDirection":"right"
+        },
+     "114":
+        {
+         "\/\/shortdescription":"Corus Bottle",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"alliancebottle3",
+         "tilesetDirection":"right"
+        },
+     "115":
+        {
+         "\/\/shortdescription":"Corus Bottle",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"alliancebottle3-decorative",
+         "tilesetDirection":"right"
+        },
+     "116":
+        {
+         "\/\/shortdescription":"Froza Can",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"alliancecan1",
+         "tilesetDirection":"right"
+        },
+     "117":
+        {
+         "\/\/shortdescription":"Froza Can",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"alliancecan1-decorative",
+         "tilesetDirection":"right"
+        },
+     "118":
+        {
+         "\/\/shortdescription":"Le'mar Can",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"alliancecan2",
+         "tilesetDirection":"right"
+        },
+     "119":
+        {
+         "\/\/shortdescription":"Le'mar Can",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"alliancecan2-decorative",
          "tilesetDirection":"right"
         },
      "12":
@@ -112,6 +208,54 @@
          "imagePositionY":"0",
          "object":"alliancebunkbed",
          "tilesetDirection":"right"
+        },
+     "120":
+        {
+         "\/\/shortdescription":"Corus Can",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"alliancecan3",
+         "tilesetDirection":"right"
+        },
+     "121":
+        {
+         "\/\/shortdescription":"Corus Can",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"alliancecan3-decorative",
+         "tilesetDirection":"right"
+        },
+     "122":
+        {
+         "\/\/shortdescription":"Aeginian Plate",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"alliancefoodplate",
+         "tilesetDirection":"right"
+        },
+     "123":
+        {
+         "\/\/shortdescription":"Aeginian Plate",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"alliancefoodplate-decorative",
+         "tilesetDirection":"right"
+        },
+     "124":
+        {
+         "\/\/shortdescription":"Alliance Store Counter",
+         "imagePositionX":"-32",
+         "imagePositionY":"0",
+         "object":"alliancestorecounter",
+         "tilesetDirection":"right"
+        },
+     "125":
+        {
+         "\/\/shortdescription":"Alliance Store Counter",
+         "imagePositionX":"-32",
+         "imagePositionY":"0",
+         "object":"alliancestorecounter",
+         "tilesetDirection":"left"
         },
      "13":
         {
@@ -920,13 +1064,85 @@
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancerailfieldvertical.png"
         },
+     "108":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancestoreshelf.png"
+        },
+     "109":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancestoresign.png"
+        },
      "11":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancebooks3.png"
         },
+     "110":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancebottle1.png"
+        },
+     "111":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancebottle1-decorative.png"
+        },
+     "112":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancebottle2.png"
+        },
+     "113":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancebottle2-decorative.png"
+        },
+     "114":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancebottle3.png"
+        },
+     "115":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancebottle3-decorative.png"
+        },
+     "116":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancecan1.png"
+        },
+     "117":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancecan1-decorative.png"
+        },
+     "118":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancecan2.png"
+        },
+     "119":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancecan2-decorative.png"
+        },
      "12":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancebunkbed.png"
+        },
+     "120":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancecan3.png"
+        },
+     "121":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancecan3-decorative.png"
+        },
+     "122":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancefoodplate.png"
+        },
+     "123":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancefoodplate-decorative.png"
+        },
+     "124":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancestorecounter.png"
+        },
+     "125":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancestorecounterleft.png"
         },
      "13":
         {

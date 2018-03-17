@@ -1,0 +1,16 @@
+{
+  "frameGrid" : {
+    "size" : [172, 48],
+    "dimensions" : [4, 4],
+
+    "names" : [
+      [ null, "undamaged.default", null, "undamaged.flipped"],
+      [ null, "scratched.default", null, "scratched.flipped" ],
+      [ null, "dented.default", null, "dented.flipped" ],
+      [ null, "wrecked.default", null, "wrecked.flipped" ]
+    ]
+  },
+  "aliases" : {
+    "default.default" : "undamaged.default"
+  }
+}

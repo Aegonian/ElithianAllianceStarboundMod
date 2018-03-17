@@ -1,0 +1,34 @@
+{
+  "itemName" : "alliancehovercarbluecontroller",
+  "level" : 1,
+  "price" : 25000,
+  "rarity" : "Legendary",
+  "category" : "vehicleController",
+  "description" : "Summons a blue Aventor Galliot from your ship's cargo hold.",
+  "shortdescription" : "Aventor Galliot Controller",
+  "twoHanded" : true,
+  "maxStack" : 1,
+  "itemTags" : ["vehiclecontroller"],
+
+  "animation" : "thea-vehiclecontroller.animation",
+  "scripts" : ["vehiclecontroller.lua"],
+  "animationScripts" : ["vehiclecursor.lua"],
+  "filled" : true,
+  "tooltipKind" : "vehicle",
+  "largeImage" : "/vehicles/alliance/alliancehovercar/alliancehovercarblue.png",
+
+  "respawnTime" : 1.0,
+
+  "vehicleType" : "alliancehovercarblue",
+  "vehicleBoundingBox" : [-9.25, -2.75, 9.25, 2.75],
+  "vehicleImage" : "/vehicles/alliance/alliancehovercar/alliancehovercarblue.png",
+
+  "animationParts" : {
+    "casing" : "alliancehovercarbluecontroller.png"
+  },
+
+  "inventoryIcon" : "alliancehovercarbluecontroller.png:full",
+  "emptyInventoryIcon" : "/items/active/vehiclecontroller/alliancehovercarbluecontroller.png:empty",
+  "filledInventoryIcon" : "/items/active/vehiclecontroller/alliancehovercarbluecontroller.png:full"
+
+}

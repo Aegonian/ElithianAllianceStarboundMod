@@ -1,0 +1,11 @@
+{
+  "name" : "akkimarirailrider-idle",
+  "states" : ["idle"],
+  "cycle" : 1.0,
+  "cyclic" : true,
+  "duration" : 4.0,
+  "steps" : [
+    // body, frontArm, backArm, headOffset, frontArmOffset, backArmOffset
+    [ null, "run.3", null, [0, 0], [0, -1], [0, 0] ]
+  ]
+}

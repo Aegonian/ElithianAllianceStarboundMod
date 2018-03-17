@@ -116,10 +116,28 @@
   },
   {
 	"op" : "add", 
-    "path" : "/collectables/aegimeal",
+    "path" : "/collectables/vahlberrybread",
     "value" :     
     {
       "order" : 164,
+      "item" : "vahlberrybread"
+    }
+  },
+  {
+	"op" : "add", 
+    "path" : "/collectables/mellowrootchops",
+    "value" :     
+    {
+      "order" : 165,
+      "item" : "mellowrootchops"
+    }
+  },
+  {
+	"op" : "add", 
+    "path" : "/collectables/aegimeal",
+    "value" :     
+    {
+      "order" : 166,
       "item" : "aegimeal"
     }
   },
@@ -128,7 +146,7 @@
     "path" : "/collectables/alliancesodamix",
     "value" :     
     {
-      "order" : 165,
+      "order" : 167,
       "item" : "alliancesodamix"
     }
   }

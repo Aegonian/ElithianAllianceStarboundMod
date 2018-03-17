@@ -1,0 +1,67 @@
+{
+  "objectName" : "alliancestoresign",
+  "colonyTags" : ["alliance","commerce"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 100,
+  "description" : "A sign advertising a place to go shopping.",
+  "shortdescription" : "Alliance Store Sign",
+  "race" : "aegi",
+
+  "apexDescription" : "A sign for a store.",
+  "avianDescription" : "It says \"store\".",
+  "floranDescription" : "Sssign for a store.",
+  "glitchDescription" : "Comforted. A sign that indicates a store.",
+  "humanDescription" : "Looks like the sign for a store.",
+  "hylotlDescription" : "This is the sign for a store.",
+  "novakidDescription" : "Must be a store.",
+
+  "aegiDescription" : "There is a store here, judging by the sign.",
+  "avikanDescription" : "Is this an alien market?",
+  "erixianDescription" : "A store, clearly.",
+  "trinkDescription" : "This sign can be seen from far away. It's quite effective.",
+  "hymidDescription" : "There's a store here.",
+  "notixDescription" : "I can't read, but I believe such signs indicate the presence of a store.",
+  "jorgasianDescription" : "A store sign.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien sign. Indicates the presence of a marketplace.",
+  "akkimariDescription" : "Akki know bit of alien language. Store.",
+
+  "lightColor" : [71, 88, 96],
+
+  "inventoryIcon" : "alliancestoresignicon.png",
+  "orientations" : [
+    {
+      "image" : "alliancestoresign.png:<color>.<frame>",
+      "imagePosition" : [-40, -8],
+      "animationPosition" : [-40, -8],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+  "animationParts" : {
+    "bg" : "alliancestoresign.png",
+    "fg" : "alliancestoresignlit.png"
+},
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/tinywallswitch.ogg" ],
+      "off" : [ "/sfx/objects/tinywallswitch.ogg" ]
+    }
+  },
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+
+  "inputNodes" : [ [0, 0] ],
+
+  "interactive" : false
+}

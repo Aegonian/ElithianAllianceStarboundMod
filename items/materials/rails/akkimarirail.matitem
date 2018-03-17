@@ -1,0 +1,11 @@
+{
+  "itemName" : "akkimarirail",
+  "price" : 0,
+  "category" : "rail",
+  "rarity" : "Common",
+  "inventoryIcon" : "akkimarirail.png",
+  "shortdescription" : "Akkimari Rail",
+  "description" : "A rail made of assorted scrap metal.",
+
+  "materialId" : 30204
+}

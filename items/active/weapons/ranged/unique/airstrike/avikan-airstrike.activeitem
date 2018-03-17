@@ -58,7 +58,7 @@
     "class" : "TheaLaserTarget",
 
     "chargeTime" : 3.3,
-    "baseDamage" : 25,
+    "baseDamage" : 27.5,
     "baseEnergyUsage" : 200,
     "inaccuracy" : 0.0,
 	

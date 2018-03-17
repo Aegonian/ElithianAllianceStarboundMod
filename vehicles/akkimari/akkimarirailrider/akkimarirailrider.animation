@@ -1,0 +1,144 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "rail" : {
+        "default" : "off",
+        "states" : {
+          "off" : {
+            "properties" : {
+              "immediateSound" : "/sfx/objects/steel_elevator_hit.ogg",
+              "immediateSoundRangeMultiplier" : 0.5
+            }
+          },
+          "idle" : {
+            "frames" : 1,
+            "properties" : {
+              //"persistentSound" : "/sfx/tech/composite_platform_loop.ogg",
+              //"persistentSoundRangeMultiplier" : 0.5
+            }
+          },
+          "right" : {
+            "frames" : 4,
+            "cycle" : 0.2,
+            "mode" : "loop",
+            "properties" : {
+              //"persistentSound" : "/sfx/tech/composite_platform_loop.ogg",
+              //"persistentSoundRangeMultiplier" : 0.5
+            }
+          },
+          "left" : {
+            "frames" : 4,
+            "cycle" : 0.2,
+            "mode" : "loop",
+            "properties" : {
+              //"persistentSound" : "/sfx/tech/composite_platform_loop.ogg",
+              //"persistentSoundRangeMultiplier" : 0.5
+            }
+          }
+        }
+      },
+      "lever" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {},
+          "left" : {},
+          "right" : {}
+        }
+      }
+    },
+
+    "parts" : {
+      "lever" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [0, -2.5],
+          "zLevel" : 2
+        },
+        "partStates" : {
+          "lever" : {
+            "idle" : {
+              "properties" : {
+                "image" : "akkimarirailrider-lever.png:idle"
+              }
+            },
+            "left" : {
+              "properties" : {
+                "image" : "akkimarirailrider-lever.png:left"
+              }
+            },
+            "right" : {
+              "properties" : {
+                "image" : "akkimarirailrider-lever.png:right"
+              }
+            }
+          }
+        }
+      },
+      "foreground" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [0, -2.5],
+          "zLevel" : 1
+        },
+        "partStates" : {
+          "rail" : {
+            "idle" : {
+              "properties" : {
+                "image" : "akkimarirailrider-foreground.png:idle.<frame>"
+              }
+            },
+            "left" : {
+              "properties" : {
+                "image" : "akkimarirailrider-foreground.png:left.<frame>"
+              }
+            },
+            "right" : {
+              "properties" : {
+                "image" : "akkimarirailrider-foreground.png:right.<frame>"
+              }
+            },
+            "off" : {
+              "properties" : {
+                "image" : "akkimarirailrider-foreground.png:offRail"
+              }
+            }
+          }
+        }
+      },
+      "background" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [0, -2.5],
+          "zLevel" : -1,
+          "standPosition" : [0, 0.25]
+        },
+        "partStates" : {
+          "rail" : {
+            "idle" : {
+              "properties" : {
+                "image" : "akkimarirailrider-background.png:idle.<frame>"
+              }
+            },
+            "left" : {
+              "properties" : {
+                "image" : "akkimarirailrider-background.png:left.<frame>"
+              }
+            },
+            "right" : {
+              "properties" : {
+                "image" : "akkimarirailrider-background.png:right.<frame>"
+              }
+            },
+            "off" : {
+              "properties" : {
+                "image" : "akkimarirailrider-background.png:offRail"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "sounds" : {}
+}

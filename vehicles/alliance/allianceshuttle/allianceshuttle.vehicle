@@ -1,7 +1,7 @@
 {
   "name" : "allianceshuttle",
-  "script" : "allianceshuttle.lua",
-  "boundBox" : [-5, -5, 5, 5],
+  "script" : "/vehicles/thea-shuttlecraft.lua",
+  "boundBox" : [-5, -1.5, 5, 1.5],
   "slaveControlTimeout" : 2.0,
   "slaveControlHeartbeat" : 1.0,
   "canBeHit" : true,
@@ -49,6 +49,7 @@
   
   //GENERAL SETTINGS
   "warpInDelay" : 1.0,
+  "raiseLandingGearInWarp" : true,
   
   "levelApproachFactor" : 0.01,
   "angleApproachFactor" : 0.05,

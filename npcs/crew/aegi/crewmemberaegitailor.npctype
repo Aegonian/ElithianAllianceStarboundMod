@@ -36,8 +36,8 @@
       ],
 	  
 	  "defaultUniform" : {
-		"chest" : "aegi-formalchest",
-		"legs" : "aegi-formallegs"
+		"chest" : "aegi-suitchest",
+		"legs" : "aegi-suitlegs"
 	  },
 	  
       "uniformSlots" : ["chest", "chestCosmetic", "legs", "legsCosmetic", "back", "backCosmetic"]
@@ -71,8 +71,8 @@
     "default" : [
       [0, [
           {
-			"chest" : [ { "name" : "aegi-formalchest", "data" : { "colorIndex" : 9 } } ],
-            "legs" : [ { "name" : "aegi-formallegs", "data" : { "colorIndex" : 9 } } ],
+			"chest" : [ { "name" : "aegi-suitchest", "data" : { "colorIndex" : 9 } } ],
+            "legs" : [ { "name" : "aegi-suitlegs", "data" : { "colorIndex" : 9 } } ],
             "sheathedprimary" : [
 			  "thea-tier1pistol"
 			]

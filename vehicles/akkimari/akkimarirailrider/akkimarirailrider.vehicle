@@ -1,0 +1,42 @@
+{
+  "name" : "akkimarirailrider",
+  "boundBox" : [-1.5, -5.5, 1.5, 1.0],
+  "slaveControlTimeout" : 2.0,
+  "slaveControlHeartbeat" : 1.0,
+  "canBeHit" : false,
+
+  "persistent" : true,
+
+  "script" : "/vehicles/akkimari/akkimarirailrider/akkimarirailrider.lua",
+  "animation" : "/vehicles/akkimari/akkimarirailrider/akkimarirailrider.animation",
+
+  "movementSettings" : {
+    "collisionPoly" : [ [-0.75, 0.5], [0.75, 0.5], [1.25, -5.0], [-1.25, -5.0] ],
+    "mass" : 2.0,
+    "ignorePlatformCollision" : true,
+    "physicsEffectCategories" : []
+  },
+
+  "loungePositions" : {
+    "seat" : {
+      "part" : "background",
+      "partAnchor" : "standPosition",
+      "orientation" : "stand"
+    }
+  },
+
+  "physicsCollisions" : {
+    "platform" : {
+      "collision" : [ [-0.875, -4.75], [0.875, -4.75], [0.875, -5.0], [-0.875, -5.0] ],
+      "collisionKind" : "platform"
+    }
+  },
+
+  "railConfig" : {
+    "speed" : 12
+  },
+  
+  "driverDances" : [ "akkimarirailrider-left", "akkimarirailrider-idle", "akkimarirailrider-right" ],
+
+  "popItem" : "stationtram"
+}

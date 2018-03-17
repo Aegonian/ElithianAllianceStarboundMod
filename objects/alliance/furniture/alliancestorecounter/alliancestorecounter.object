@@ -1,0 +1,61 @@
+{
+  "objectName" : "alliancestorecounter",
+  "colonyTags" : ["alliance","commerce"],
+  "printable" : false,
+  "rarity" : "Common",
+  "category" : "furniture",
+  "price" : 200,
+  "description" : "A store counter.",
+  "shortdescription" : "Alliance Store Counter",
+  "race" : "aegi",
+
+  "apexDescription" : "A store counter. I should confirm my purchases here.",
+  "avianDescription" : "Simply a store counter.",
+  "floranDescription" : "Ssstore counter.",
+  "glitchDescription" : "Observation. A store counter.",
+  "humanDescription" : "A store counter.",
+  "hylotlDescription" : "This is where purchases are made final.",
+  "novakidDescription" : "Did I get all of my groceries?",
+
+  "aegiDescription" : "A store counter.",
+  "avikanDescription" : "Some sort of alien desk. Maybe the merchants sit here?",
+  "erixianDescription" : "A standard store counter.",
+  "trinkDescription" : "A store counter. It also offers space for displaying products.",
+  "hymidDescription" : "Do I have everything I need?",
+  "notixDescription" : "It appears to be a store counter.",
+  "jorgasianDescription" : "A store counter.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien counter.",
+
+  "inventoryIcon" : "alliancestorecountericon.png",
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+
+  "orientations" : [
+    {
+      "image" : "alliancestorecounterleft.png:<color>",
+      "imagePosition" : [-32, 0],
+      "direction" : "left",
+
+      "sitPosition" : [2, 22],
+	  "sitCoverImage" : "/objects/alliance/furniture/alliancestorecounter/alliancestorecounterleftcover.png",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "alliancestorecounter.png:<color>",
+      "imagePosition" : [-32, 0],
+      "direction" : "right",
+
+      "sitPosition" : [2, 22],
+	  "sitCoverImage" : "/objects/alliance/furniture/alliancestorecounter/alliancestorecountercover.png",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

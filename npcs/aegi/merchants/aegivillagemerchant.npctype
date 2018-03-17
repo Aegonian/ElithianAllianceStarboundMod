@@ -1,0 +1,12 @@
+{
+  "type" : "aegivillagemerchant",
+  "baseType" : "merchant",
+
+  "dropPools" : [ "aegiDeathTreasure" ],
+
+  "scriptConfig" : {
+    "questGenerator" : { "pools" : [], "enableParticipation" : false }
+  },
+  
+  "matchColorIndices" : true
+}

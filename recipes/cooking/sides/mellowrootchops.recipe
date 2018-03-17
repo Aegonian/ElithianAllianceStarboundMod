@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "mellowroot", "count" : 1 }
+  ],
+  "output" : { "item" : "mellowrootchops", "count" : 1 },
+  "groups" : [ "craftingfood", "sides" ],
+  "collectables" : { "cooking" : "mellowrootchops" }
+}

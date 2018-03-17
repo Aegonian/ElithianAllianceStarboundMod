@@ -159,6 +159,26 @@
 	]
   },
 
+  //MELLOWROOT
+  { "op" : "add",
+	"path" : "/mellowrootHarvest",
+	"value" : [
+	  [0, {
+		"fill" : [
+		  {"item" : "mellowrootseed"}
+		],
+		"pool" : [
+		  {"weight" : 0.89, "item" : "mellowroot"},
+		  {"weight" : 0.01, "item" : "mellowrootseed"},
+		  {"weight" : 0.1, "item" : "plantfibre"}
+		],
+		"poolRounds" : [
+		  [1.0, 1]
+		]
+	  } ]
+	]
+  },
+
   //VAHLBERRY
   { "op" : "add",
 	"path" : "/vahlberryHarvest",

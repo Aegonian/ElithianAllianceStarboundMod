@@ -1,5 +1,5 @@
 function broadcastTheft(playerId, licenseItem, broadcastRange)
-  local allowTheft = world.entityHasCountOfItem(playerId, licenseItem) > 0
+  local allowTheft = world.entityHasCountOfItem(playerId, licenseItem) > 0 or licenseItem == nil
   
   if not allowTheft then
 	local notification = {

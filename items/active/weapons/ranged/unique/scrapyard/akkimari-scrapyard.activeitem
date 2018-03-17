@@ -74,7 +74,7 @@
     "class" : "TheaRandomProjectileGunFire",
 
     "fireTime" : 1.4,
-    "baseDps" : 11.0,
+    "baseDps" : 10.5,
     "energyUsage" : 40,
     "inaccuracy" : 0.045,
 
