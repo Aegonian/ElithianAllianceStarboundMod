@@ -1,0 +1,12 @@
+{
+  "frameGrid" : {
+    "size" : [8, 16],
+    "dimensions" : [3, 1],
+    "names" : [
+      [ "default.day", "default.night", "default.off" ]
+    ]
+  },
+  "aliases" : {
+    "default.default" : "default.off"
+  }
+}

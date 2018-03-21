@@ -1,0 +1,29 @@
+{
+  "materialId" : 30153,
+  "materialName" : "alliancepavementstone",
+  "particleColor" : [91, 92, 91, 255],
+  "itemDrop" : "alliancepavementstone", 
+  "shortdescription" : "Alliance Pavement Slabs",
+  
+  "description" : "Stone slabs used as pavement.",
+  "glitchDescription" : "Observation. Stone slabs.",
+  "floranDescription" : "Floran like the feel of sstone under feet.",
+  "novakidDescription" : "Just some stone slabs.",
+  
+  "drodenDescription" : "Analysis complete. Stone pavement.",
+  "akkimariDescription" : "Stone feel good under Akki's feet.",
+
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "alliancepavementstone.png",
+    "variants" : 6,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1500
+  }
+}

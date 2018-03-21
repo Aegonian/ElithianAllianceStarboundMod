@@ -36,7 +36,7 @@ function TheaStaffSpinSlash:update(dt, fireMode, shiftHeld)
     self:setState(self.flip, 0, true)
   end
   
-  world.debugText(self.queryDamageSince, mcontroller.position(), "red")
+  --world.debugText(self.queryDamageSince, mcontroller.position(), "red")
 end
 
 function TheaStaffSpinSlash:windup()

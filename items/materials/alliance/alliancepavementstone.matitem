@@ -1,0 +1,13 @@
+{
+  "itemName" : "alliancepavementstone",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "alliancepavementstone.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  
+  "shortdescription" : "Alliance Pavement Slabs",
+  "description" : "Stone slabs used as pavement.",
+
+  "materialId" : 30153
+}

@@ -1,0 +1,29 @@
+{
+  "materialId" : 30154,
+  "materialName" : "alliancestonebrick",
+  "particleColor" : [91, 92, 91, 255],
+  "itemDrop" : "alliancestonebrick", 
+  "shortdescription" : "Alliance Stone Bricks",
+  
+  "description" : "Heavy stone bricks.",
+  "glitchDescription" : "Observation. Stone bricks.",
+  "floranDescription" : "Floran like the feel of sstone under feet.",
+  "novakidDescription" : "Stone bricks, plain an' simple.",
+  
+  "drodenDescription" : "Analysis complete. Stone bricks.",
+  "akkimariDescription" : "Stone feel good under Akki's feet.",
+
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "alliancestonebrick.png",
+    "variants" : 6,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1500
+  }
+}

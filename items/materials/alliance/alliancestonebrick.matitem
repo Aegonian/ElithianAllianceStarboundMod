@@ -1,0 +1,13 @@
+{
+  "itemName" : "alliancestonebrick",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "alliancestonebrick.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  
+  "shortdescription" : "Alliance Stone Bricks",
+  "description" : "Heavy stone bricks.",
+
+  "materialId" : 30154
+}

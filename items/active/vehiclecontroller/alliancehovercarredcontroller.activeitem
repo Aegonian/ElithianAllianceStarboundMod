@@ -1,0 +1,34 @@
+{
+  "itemName" : "alliancehovercarredcontroller",
+  "level" : 1,
+  "price" : 25000,
+  "rarity" : "Legendary",
+  "category" : "vehicleController",
+  "description" : "Summons a red Aventor Galliot from your ship's cargo hold.",
+  "shortdescription" : "Aventor Galliot Controller",
+  "twoHanded" : true,
+  "maxStack" : 1,
+  "itemTags" : ["vehiclecontroller"],
+
+  "animation" : "thea-vehiclecontroller.animation",
+  "scripts" : ["vehiclecontroller.lua"],
+  "animationScripts" : ["vehiclecursor.lua"],
+  "filled" : true,
+  "tooltipKind" : "vehicle",
+  "largeImage" : "/vehicles/alliance/alliancehovercar/alliancehovercarred.png",
+
+  "respawnTime" : 1.0,
+
+  "vehicleType" : "alliancehovercarred",
+  "vehicleBoundingBox" : [-9.25, -2.75, 9.25, 2.75],
+  "vehicleImage" : "/vehicles/alliance/alliancehovercar/alliancehovercarred.png",
+
+  "animationParts" : {
+    "casing" : "alliancehovercarredcontroller.png"
+  },
+
+  "inventoryIcon" : "alliancehovercarredcontroller.png:full",
+  "emptyInventoryIcon" : "/items/active/vehiclecontroller/alliancehovercarredcontroller.png:empty",
+  "filledInventoryIcon" : "/items/active/vehiclecontroller/alliancehovercarredcontroller.png:full"
+
+}

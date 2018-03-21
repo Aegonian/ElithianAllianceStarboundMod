@@ -1,0 +1,84 @@
+{
+  "objectName" : "alliancemanholedoor",
+  "colonyTags" : ["alliance","door"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "A heavy metal manhole cover.",
+  "shortdescription" : "Alliance Manhole Cover",
+  "race" : "aegi",
+  "category" : "furniture",
+  "price" : 120,
+
+  "apexDescription" : "A manhole cover. To stop fools falling down a hole.",
+  "avianDescription" : "A manhole cover.",
+  "floranDescription" : "Manhole cover, iss ssomething hiding beneath?",
+  "glitchDescription" : "Surprised. A manhole cover.",
+  "humanDescription" : "A manhole cover, just waiting for someone to fall down in comical fashion.",
+  "hylotlDescription" : "A manhole cover, what lurks beneath?",
+  "novakidDescription" : "Some kinda manhole cover, what's it hidin'?",
+
+  "aegiDescription" : "A large manhole cover. It might lead to some sewers.",
+  "avikanDescription" : "A door of some kind. Where does it lead?",
+  "erixianDescription" : "This might lead into the sewers.",
+  "trinkDescription" : "A manhole cover. It keeps people from falling into the sewers.",
+  "hymidDescription" : "There might be sewers underneath.",
+  "notixDescription" : "A large metal door. I sense a cavity beneath it.",
+  "jorgasianDescription" : "If this leads into the sewers, I'd rather not enter.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected metal door. Scanning for passages underneath...",
+  "akkimariDescription" : "Door in ground. Akki curious.",
+
+  "inventoryIcon" : "alliancemanholedooricon.png",
+
+  "tooltipKind" : "door",
+  "largeImage" : "alliancemanholedoor.png:right",
+
+  "scripts" : [ "/objects/wired/door/door.lua" ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/door/door.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/airlock_open.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/objects/airlock_close.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "alliancemanholedoor.png"
+  },
+
+  "orientations" : [
+    {
+      "image" : "alliancemanholedoor.png:default",
+      "imagePosition" : [-16, -16],
+      "renderLayer" : "Object+5",
+      "animationPosition" : [-16, -16],
+      "flipImages" : true,
+      "direction" : "left",
+
+      "spaces" : [[-2, 0],[-1, 0],[0, 0],[1, 0],[2, 0]],
+      "anchors" : [ "left", "right" ]
+    },
+    {
+      "image" : "alliancemanholedoor.png:default",
+      "imagePosition" : [-16, -16],
+      "renderLayer" : "Object+5",
+      "animationPosition" : [-16, -16],
+      "direction" : "right",
+
+      "spaces" : [[-2, 0],[-1, 0],[0, 0],[1, 0],[2, 0]],
+      "anchors" : [ "left", "right" ]
+    }
+  ],
+
+  "inputNodes" : [ [-2, 0] ],
+  "outputNodes" : [ [2, 0] ]
+}

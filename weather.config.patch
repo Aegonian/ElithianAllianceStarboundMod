@@ -1,0 +1,11 @@
+[
+  {
+    "op": "add",
+    "path": "/elithia", //Currently unused
+    "value": [
+	  [0.850, "clear"],
+	  [0.075, "rain"],
+	  [0.075, "drizzle"]
+	]
+  }
+]

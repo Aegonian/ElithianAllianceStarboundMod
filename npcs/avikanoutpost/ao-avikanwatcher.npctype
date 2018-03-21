@@ -3,7 +3,6 @@
   "baseType" : "ao-civilian",
 
   "scriptConfig" : {
-  
     "dialog" : {
 	  "converse" : {
         "default" : {

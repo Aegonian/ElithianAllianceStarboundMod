@@ -1,0 +1,46 @@
+{
+  "objectName" : "allianceparasol",
+  "colonyTags" : ["alliance"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "A colourful parasol.",
+  "shortdescription" : "Alliance Parasol",
+  "race" : "aegi",
+  "category" : "furniture",
+  "price" : 25,
+
+  "apexDescription" : "Simply a parasol.",
+  "avianDescription" : "A parasol.",
+  "floranDescription" : "Parasssol.",
+  "glitchDescription" : "Relieved. This parasol will provide some cool shade.",
+  "humanDescription" : "That's a parasol alright.",
+  "hylotlDescription" : "A parasol. It can provide some much-needed comfort on a hot, sunny day.",
+  "novakidDescription" : "Provides a bit o' shade.",
+
+  "aegiDescription" : "A nice and simple parasol.",
+  "avikanDescription" : "An alien sun sheet.",
+  "erixianDescription" : "A parasol. I prefer to stay out in the sun.",
+  "trinkDescription" : "A parasol. A simple but effective way to create some shade.",
+  "hymidDescription" : "This parasol will provide some much-needed shade.",
+  "notixDescription" : "It's a parasol.",
+  "jorgasianDescription" : "Just a parasol.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien sun sheet.",
+  "akkimariDescription" : "Shelter from burning sun.",
+
+  "inventoryIcon" : "allianceparasolicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "allianceparasol.png:<color>",
+
+      "imagePosition" : [-32, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

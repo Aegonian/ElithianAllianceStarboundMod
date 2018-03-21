@@ -1,0 +1,45 @@
+{
+  "type" : "eo-vehicleassistant",
+  "baseType" : "thea-villager",
+
+  "dropPools" : [ "aegiDeathTreasure" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "We've got all the best vehicles here. Make sure you speak to my manager upstairs!",
+		    "See a vehicle you like? My manager would be happy to give you the details.",
+		    "This dealership has all the best vehicles. Aventor, Veronas, AAE - you name it!",
+		    "Looking for something fast? Or something that can take a hit? We have it all here!",
+		    "You look like you like hovercars. We've got the best ones right here."
+		  ]
+		}
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "aegi-formalchest", "parameters" : { "colorIndex" : [1, 2] } },
+              { "name" : "aegi-shirt", "parameters" : { "colorIndex" : [1, 2] } }
+            ],
+            "legs" : [
+              { "name" : "aegi-formallegs", "parameters" : { "colorIndex" : [1, 2] } }
+            ],
+            "back" : [
+              { "name" : "thea-hiddenback", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

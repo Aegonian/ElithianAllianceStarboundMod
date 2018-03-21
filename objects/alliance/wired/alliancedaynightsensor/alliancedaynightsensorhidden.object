@@ -1,0 +1,39 @@
+{
+  "objectName" : "alliancedaynightsensorhidden",
+  "colonyTags" : ["alliance","wired"],
+  "rarity" : "Common",
+  "category" : "wire",
+  "printable" : false,
+  "price" : 250,
+  "description" : "Nothing here...",
+  "shortdescription" : "Alliance Day/Night Sensor",
+  "race" : "aegi",
+
+  "inventoryIcon" : "alliancedaynightsensorhiddenicon.png",
+  "orientations" : [
+    {
+	  "image" : "alliancedaynightsensorhidden.png:<color>.default",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : []
+    }
+  ],
+
+  "scripts" : [
+    "alliancedaynightsensor.lua"
+  ],
+  "scriptDelta" : 5,
+
+  "animation" : "alliancedaynightsensor.animation",
+  "animationCustom" : {},
+  "animationParts" : {
+    "bg" : "alliancedaynightsensorhidden.png",
+    "fg" : "alliancedaynightsensorhiddenlit.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "outputNodes" : [ [0, 0], [0, 1] ]
+}

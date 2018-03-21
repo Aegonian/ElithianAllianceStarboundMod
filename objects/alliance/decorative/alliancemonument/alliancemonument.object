@@ -1,0 +1,46 @@
+{
+  "objectName" : "alliancemonument",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Legendary",
+  "description" : "A large monument depicting the planet Elithia.",
+  "shortdescription" : "Monument of Elithia",
+  "race" : "aegi",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 1500,
+
+  "apexDescription" : "A large monument to some planet.",
+  "avianDescription" : "This statue depicts a planet.",
+  "floranDescription" : "Planet of the aliensss.",
+  "glitchDescription" : "Curious. What planet is this?",
+  "humanDescription" : "A large statue depicting an alien world.",
+  "hylotlDescription" : "This monument appears to be dedicated to a planet.",
+  "novakidDescription" : "A might fine piece o' art.",
+
+  "aegiDescription" : "Elithia, my home planet, and the home of the Elithian Alliance.",
+  "avikanDescription" : "I believe this planet is called Elithia.",
+  "erixianDescription" : "Elithia, planet of the Aegi, Dremeton, and so many more.",
+  "trinkDescription" : "Planet Elithia. It is where the Elithian Alliance started.",
+  "hymidDescription" : "Planet Elithia, beautifully represented in this masterfully crafted globe.",
+  "notixDescription" : "Elithia. Home of the Elithian Alliance.",
+  "jorgasianDescription" : "Elithia truly is a beautiful world.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "theleanDescription" : "TODO",
+  "drodenDescription" : "Detected alien monument. Database suggests the planet is called Elithia.",
+  "akkimariDescription" : "Akki heard this planet is Elithia.",
+
+  "inventoryIcon" : "alliancemonumenticon.png",
+  "orientations" : [
+    {
+      "image" : "alliancemonument.png:<color>",
+
+      "imagePosition" : [-48, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

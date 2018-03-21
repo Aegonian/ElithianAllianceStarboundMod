@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":81,
+ "tilecount":84,
  "tileheight":8,
  "tileproperties":
     {
@@ -493,6 +493,21 @@
          "\/\/shortdescription":"Akris Scrap Plating",
          "material":"akkimariscrapplating"
         },
+     "81":
+        {
+         "\/\/shortdescription":"Alliance Pavement Slabs",
+         "material":"alliancepavementstone"
+        },
+     "82":
+        {
+         "\/\/shortdescription":"Alliance Stone Platform",
+         "material":"alliancestoneplatform"
+        },
+     "83":
+        {
+         "\/\/shortdescription":"Alliance Stone Bricks",
+         "material":"alliancestonebrick"
+        },
      "9":
         {
          "\/\/description":"A THEA material",
@@ -822,6 +837,18 @@
      "80":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/akkimariscrapplating.png"
+        },
+     "81":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/alliancepavementstone.png"
+        },
+     "82":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/alliancestoneplatform.png"
+        },
+     "83":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/alliancestonebrick.png"
         },
      "9":
         {

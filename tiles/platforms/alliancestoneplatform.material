@@ -1,0 +1,30 @@
+{
+  "materialId" : 30112,
+  "materialName" : "alliancestoneplatform",
+  "collisionKind" : "platform",
+  "transparent" : true,
+  "itemDrop" : "alliancestoneplatform",
+  "shortdescription" : "Alliance Stone Platform",
+  "description" : "A stone platform.",
+  
+  "glitchDescription" : "Observation. A thick stone platform.",
+  "floranDescription" : "Ssstone platformss.",
+  "novakidDescription" : "A thick, heavy stone platform. Study for sure.",
+  
+  "drodenDescription" : "Analysis complete. Stone platform.",
+  "akkimariDescription" : "Stone platform...",
+  
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "category" : "Supports",
+  
+  "renderTemplate" : "/tiles/platformtemplate.config",
+  "renderParameters" : {
+    "texture" : "alliancestoneplatform.png",
+    "variants" : 4,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 0,
+    "platform" : true
+  }
+}

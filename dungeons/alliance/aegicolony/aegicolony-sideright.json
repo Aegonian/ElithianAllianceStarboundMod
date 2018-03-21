@@ -3,7 +3,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJzt1ttKw1AURdHQN39VsGBBEPx5FSuE0FybZLXZY8FAsPFlnoPpqWmaEwAAALux8Wmfm\/a5aZ+b9rlpn5v2uWmfm\/a5aZ+b9rlpn5v2y3e+8++1Xz7tc9M+t9\/2XzdMnfbLp31u5x5Tp\/19++yYM+2Xz73PTfvctM9N++y8azNz73PTPjftc9M+O+\/azNz73LTPTfvctM\/Ou3a7Dd1t93679bXVftsNddd+u03tqP26m9vQu3adjf2fmWLOnrX9+wraW6N7pfYfP16vP6f6f77dfqjd2O8rt780fz2nujT97ft263Pt1733Q+s+o\/1+7bvPab9v+\/az2u\/fvv185fZvd3Dvl2\/N7\/dHa\/\/CKO21r0h77SvSXvuKtNe+Iu21r0h77SvSXvuKtNe+Iu21r0j747V3BpnezuJxelc9h3TfiueQblnxDNLtHvWstj7ndIdnpXme1gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHN03V5JBgg==",
+         "data":"eJzt1tFKw0AURdHQN39VsGBBEPx5LSqE0KTpJM1pc9eBhWDjy57B9NB13QEAAIDN2PVpn5v2uWmfm\/a5aZ+b9rlpn5v2uWmfm\/a5aZ+b9u07Lvx77dunfW7a53Zu\/3XB3GnfPu1zO46YO+2X7XPglmnfPvc+N+1z0z437bPzrs3Mvc9N+9y0z0377LxrM3Pvc9M+N+1z0z4779r7bexuT5k77cfX0l375Wvtrv2yze2o\/bq7taF37Tpb8n\/m1jt\/3rO2f19Bf2t0r9T+48fr38+5\/p\/vt59qd+33ldufut+ec5268fZju\/S59uve+6kNn9F+u\/bD57Tftn3\/We23b99\/vnL7twXc+\/at+f1+b+1fuEp77SvSXvuKtNe+Iu21r0h77SvSXvuKtNe+Iu21r0h77SvSfn\/tnUGmt7N4nN5VzyHdt+I5pFtWPIN0u0c9q3ufc7rDs9I8T2sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPbuG91RQsw=",
          "encoding":"base64",
          "height":150,
          "name":"back",
@@ -33,7 +33,7 @@
          "name":"objects",
          "objects":[
                 {
-                 "gid":132,
+                 "gid":141,
                  "height":40,
                  "id":250,
                  "name":"",
@@ -49,7 +49,7 @@
                  "y":448
                 }, 
                 {
-                 "gid":194,
+                 "gid":203,
                  "height":40,
                  "id":251,
                  "name":"",
@@ -65,7 +65,7 @@
                  "y":448
                 }, 
                 {
-                 "gid":194,
+                 "gid":203,
                  "height":40,
                  "id":252,
                  "name":"",
@@ -81,7 +81,7 @@
                  "y":448
                 }, 
                 {
-                 "gid":215,
+                 "gid":224,
                  "height":8,
                  "id":253,
                  "name":"",
@@ -97,7 +97,7 @@
                  "y":416
                 }, 
                 {
-                 "gid":215,
+                 "gid":224,
                  "height":8,
                  "id":254,
                  "name":"",
@@ -113,7 +113,7 @@
                  "y":416
                 }, 
                 {
-                 "gid":205,
+                 "gid":214,
                  "height":96,
                  "id":257,
                  "name":"",
@@ -129,7 +129,7 @@
                  "y":464
                 }, 
                 {
-                 "gid":2147483789,
+                 "gid":2147483798,
                  "height":20,
                  "id":259,
                  "name":"",
@@ -145,7 +145,7 @@
                  "y":448
                 }, 
                 {
-                 "gid":2147483789,
+                 "gid":2147483798,
                  "height":20,
                  "id":260,
                  "name":"",
@@ -161,7 +161,7 @@
                  "y":448
                 }, 
                 {
-                 "gid":125,
+                 "gid":134,
                  "height":48,
                  "id":261,
                  "name":"",
@@ -257,7 +257,7 @@
                  "y":464
                 }, 
                 {
-                 "gid":225,
+                 "gid":234,
                  "height":28,
                  "id":270,
                  "name":"",
@@ -273,7 +273,7 @@
                  "y":448
                 }, 
                 {
-                 "gid":202,
+                 "gid":211,
                  "height":16,
                  "id":271,
                  "name":"",
@@ -289,7 +289,7 @@
                  "y":368
                 }, 
                 {
-                 "gid":202,
+                 "gid":211,
                  "height":16,
                  "id":272,
                  "name":"",
@@ -305,7 +305,7 @@
                  "y":248
                 }, 
                 {
-                 "gid":215,
+                 "gid":224,
                  "height":8,
                  "id":273,
                  "name":"",
@@ -561,7 +561,7 @@
          "source":"..\/..\/..\/tilesets\/avikan-custom\/theamaterials.json"
         }, 
         {
-         "firstgid":125,
+         "firstgid":134,
          "source":"..\/..\/..\/tilesets\/avikan-custom\/theaobjects-alliance.json"
         }],
  "tilewidth":8,

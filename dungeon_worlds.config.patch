@@ -59,6 +59,27 @@
       "musicTrack" : "/music/planetarium.ogg"
     }
   },
+  {
+    "op" : "add",
+    "path" : "/allianceoutpost",
+    "value" : {
+      "primaryDungeon" : "allianceoutpost",
+	  "weatherPool" : [
+		[0.850, "clear"],
+		[0.075, "rain"],
+		[0.075, "drizzle"]
+	  ],
+      "threatLevel" : 1,
+      "gravity" : 80,
+      "worldSize" : [2000, 1000],
+      "dungeonBaseHeight" : 350,
+	  "dungeonSurfaceHeight" : 130,
+      "ambientLightLevel" : [128, 128, 128],
+      "biome" : "elithia",
+      //"ambientNoises" : "/sfx/environmental/space_loop2.ogg",
+      "musicTrack" : "/music/planetarium.ogg"
+    }
+  },
 
   //==========================================================================================================
   //============================================ MISSIONS ====================================================

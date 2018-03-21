@@ -1,0 +1,45 @@
+{
+  "objectName" : "alliancehovercarredobject",
+  "colonyTags" : ["alliance","vehicle"],
+  "rarity" : "Legendary",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 2500,
+  "description" : "A luxury personal transportation vehicle.",
+  "shortdescription" : "Alliance Hovercar",
+  "race" : "aegi",
+  
+  "health" : 6,
+
+  "apexDescription" : "A highly advanced hover car.",
+  "avianDescription" : "How does this thing achieve flight?",
+  "floranDescription" : "Floran doess not undersstand how it fliess.",
+  "glitchDescription" : "Wondering. How does this vehicle achieve lift-off?",
+  "humanDescription" : "Looks like a luxury hovercar. Cool!",
+  "hylotlDescription" : "An elegant hover vehicle.",
+  "novakidDescription" : "Flies like a charm.",
+
+  "aegiDescription" : "An Aventor Galliot, one of the most popular personal transportation vehicles.",
+  "avikanDescription" : "This alien vehicle looks fast.",
+  "erixianDescription" : "Aventor's hovercars are popular throughout the Alliance.",
+  "trinkDescription" : "Aventor creates fascinating vehicles.",
+  "hymidDescription" : "The Galliot is one of Aventor's most popular products.",
+  "notixDescription" : "A fast, streamlined vehicle, the Galliot is an Alliance-favourite.",
+  "jorgasianDescription" : "Aventor's vehicles are used throughout the Alliance.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien hovercraft.",
+  "akkimariDescription" : "Akki ride fast alien vehicle!",
+
+  "inventoryIcon" : "alliancehovercarredicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "alliancehovercarred.png:<color>",
+      "imagePosition" : [-72, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "itemName" : "alliancestoneplatform",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "alliancestoneplatform.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  
+  "shortdescription" : "Alliance Stone Stairs",
+  "description" : "Stone stairs.",
+
+  "materialId" : 30112
+}

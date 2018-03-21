@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":126,
+ "tilecount":136,
  "tileheight":128,
  "tileproperties":
     {
@@ -257,12 +257,92 @@
          "object":"alliancestorecounter",
          "tilesetDirection":"left"
         },
+     "126":
+        {
+         "\/\/shortdescription":"Alliance Hovercar",
+         "imagePositionX":"-72",
+         "imagePositionY":"0",
+         "object":"alliancehovercarblueobject",
+         "tilesetDirection":"right"
+        },
+     "127":
+        {
+         "\/\/shortdescription":"Alliance Hovercar",
+         "imagePositionX":"-72",
+         "imagePositionY":"0",
+         "object":"alliancehovercarredobject",
+         "tilesetDirection":"right"
+        },
+     "128":
+        {
+         "\/\/shortdescription":"Monument of Elithia",
+         "imagePositionX":"-48",
+         "imagePositionY":"0",
+         "object":"alliancemonument",
+         "tilesetDirection":"right"
+        },
+     "129":
+        {
+         "\/\/shortdescription":"Alliance Antenna",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"allianceantenna2",
+         "tilesetDirection":"right"
+        },
      "13":
         {
          "\/\/shortdescription":"Alliance Wall Button",
          "imagePositionX":"-8",
          "imagePositionY":"-8",
          "object":"alliancebutton",
+         "tilesetDirection":"right"
+        },
+     "130":
+        {
+         "\/\/shortdescription":"Alliance Fountain",
+         "imagePositionX":"-32",
+         "imagePositionY":"0",
+         "object":"alliancefountain",
+         "tilesetDirection":"right"
+        },
+     "131":
+        {
+         "\/\/shortdescription":"Alliance Parasol",
+         "imagePositionX":"-32",
+         "imagePositionY":"0",
+         "object":"allianceparasol",
+         "tilesetDirection":"right"
+        },
+     "132":
+        {
+         "\/\/shortdescription":"Alliance Round Table",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"alliancetable2",
+         "tilesetDirection":"right"
+        },
+     "133":
+        {
+         "\/\/shortdescription":"Alliance Manhole Cover",
+         "imagePositionX":"-16",
+         "imagePositionY":"-16",
+         "object":"alliancemanholedoor",
+         "tilesetDirection":"right"
+        },
+     "134":
+        {
+         "\/\/shortdescription":"Alliance Day\/Night Sensor",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"alliancedaynightsensor",
+         "tilesetDirection":"right"
+        },
+     "135":
+        {
+         "\/\/shortdescription":"Alliance Day\/Night Sensor",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"alliancedaynightsensorhidden",
          "tilesetDirection":"right"
         },
      "14":
@@ -396,7 +476,7 @@
      "29":
         {
          "\/\/shortdescription":"Alliance Hoverbike",
-         "imagePositionX":"-28",
+         "imagePositionX":"-24",
          "imagePositionY":"0",
          "object":"alliancehoverbikeobject",
          "tilesetDirection":"right"
@@ -1144,9 +1224,49 @@
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancestorecounterleft.png"
         },
+     "126":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancehovercarblue.png"
+        },
+     "127":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancehovercarred.png"
+        },
+     "128":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancemonument.png"
+        },
+     "129":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/allianceantenna2.png"
+        },
      "13":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancebutton.png"
+        },
+     "130":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancefountain.png"
+        },
+     "131":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/allianceparasol.png"
+        },
+     "132":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancetable2.png"
+        },
+     "133":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancemanholedoor.png"
+        },
+     "134":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancedaynightsensor.png"
+        },
+     "135":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancedaynightsensorhidden.png"
         },
      "14":
         {

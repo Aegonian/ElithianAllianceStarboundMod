@@ -9,13 +9,13 @@
 
   "animationPartTags" : {
     "foreground" : {
-      "partImage" : "/vehicles/alliance/alliancehovercar/blue/alliancehovercarblue-foreground.png"
+      "partImage" : "/vehicles/alliance/alliancehovercar/colours/alliancehovercarblue-foreground.png"
     },
     "landingGear" : {
-      "partImage" : "/vehicles/alliance/alliancehovercar/blue/alliancehovercarblue-landinggear.png"
+      "partImage" : "/vehicles/alliance/alliancehovercar/colours/alliancehovercarblue-landinggear.png"
     },
     "background" : {
-      "partImage" : "/vehicles/alliance/alliancehovercar/blue/alliancehovercarblue-background.png"
+      "partImage" : "/vehicles/alliance/alliancehovercar/colours/alliancehovercarblue-background.png"
     },
     "lights" : {
       "partImage" : "/vehicles/alliance/alliancehovercar/alliancehovercar-headlights.png"

@@ -1,0 +1,60 @@
+{
+  "objectName" : "alliancedaynightsensor",
+  "colonyTags" : ["alliance","wired"],
+  "rarity" : "Common",
+  "category" : "wire",
+  "printable" : false,
+  "price" : 250,
+  "description" : "A sensor that detects the current time of day.",
+  "shortdescription" : "Alliance Day/Night Sensor",
+  "race" : "aegi",
+
+  "apexDescription" : "A sensor that detects the time of day.",
+  "avianDescription" : "This sensor senses the time of day.",
+  "floranDescription" : "Sssenssor tellss Floran the time of day",
+  "glitchDescription" : "Observation. This sensor detects the current time of day.",
+  "humanDescription" : "This will tell me the time of day, but only in absolutes.",
+  "hylotlDescription" : "This sensor turns on and off depending on the time of day.",
+  "novakidDescription" : "Some kinda time-telling device.",
+
+  "aegiDescription" : "This sensor tells day from night.",
+  "avikanDescription" : "A sensor that tells you the time of day. Might as well look at the sun.",
+  "erixianDescription" : "A simple day/night sensor.",
+  "trinkDescription" : "A sensor that changes output depending on the time of day.",
+  "hymidDescription" : "A simple day and night sensor.",
+  "notixDescription" : "A day/night sensor.",
+  "jorgasianDescription" : "A basic day/night sensor.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Analysis. Sensor. Detects time of day.",
+  "akkimariDescription" : "Akki can tell time of day here.",
+
+  "inventoryIcon" : "alliancedaynightsensoricon.png",
+  "orientations" : [
+    {
+	  "image" : "alliancedaynightsensor.png:<color>.default",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+
+  "scripts" : [
+    "alliancedaynightsensor.lua"
+  ],
+  "scriptDelta" : 5,
+
+  "animation" : "alliancedaynightsensor.animation",
+  "animationCustom" : {},
+  "animationParts" : {
+    "bg" : "alliancedaynightsensor.png",
+    "fg" : "alliancedaynightsensorlit.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "outputNodes" : [ [0, 0], [0, 1] ]
+}

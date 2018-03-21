@@ -467,6 +467,55 @@
 	//Nothing yet!
 	
 	//=========================================================================================================
+	// ALLIANCE OUTPOST
+	//=========================================================================================================
+	{ "op" : "add", "path" : "/allianceoutpostposters",
+		"value" : [
+			[ 0, [
+			  //POSTERS
+			  { "item": { "name": "allianceposter" }, "rarity": 0.5 },
+			  { "item": { "name": "allianceposteraae" }, "rarity": 0.5 },
+			  { "item": { "name": "allianceposterart" }, "rarity": 0.5 },
+			  { "item": { "name": "allianceposteraventor" }, "rarity": 0.5 },
+			  { "item": { "name": "allianceposterbriggs" }, "rarity": 0.5 },
+			  { "item": { "name": "allianceposterenerth" }, "rarity": 0.5 },
+			  { "item": { "name": "allianceposterfroza" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancepostergame" }, "rarity": 0.5 }
+			] ]
+		]
+	},
+	{ "op" : "add", "path" : "/allianceoutpostplushies",
+		"value" : [
+			[ 0, [
+			  //PLUSHIES
+			  { "item": { "name": "centensplushie" }, "rarity": 0.5 },
+			  { "item": { "name": "dremetonplushie" }, "rarity": 0.5 },
+			  { "item": { "name": "notixplushie" }, "rarity": 0.5 },
+			  { "item": { "name": "trangiiplushie" }, "rarity": 0.5 },
+			  { "item": { "name": "trinkplushie" }, "rarity": 0.5 },
+			  //MISC
+			  { "item": { "name": "allianceminiglobe" }, "rarity": 0.5 }
+			] ]
+		]
+	},
+	{ "op" : "add", "path" : "/allianceoutpostvehicles",
+		"value" : [
+			[ 0, [
+			  //VEHICLE OBJECTS
+			  { "item": { "name": "alliancehoverbikeobject" }, "rarity": 0.5 },
+			  { "item": { "name": "allianceshuttleobject" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancetruckobject" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancehovercarblueobject" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancehovercarredobject" }, "rarity": 0.5 },
+			  //VEHICLE CONTROLLERS
+			  { "item": { "name": "alliancehovercarbluecontroller" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancehovercarredcontroller" }, "rarity": 0.5 },
+			  { "item": { "name": "allianceshuttlecontroller" }, "rarity": 0.5 }
+			] ]
+		]
+	},
+	
+	//=========================================================================================================
 	// AEGI
 	//=========================================================================================================
 	{ "op" : "add", "path" : "/aegicolony",

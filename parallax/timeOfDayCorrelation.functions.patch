@@ -1,0 +1,8 @@
+[
+  //Custom time of day function for sowing and hiding lit windows in parallax backgrounds. Activates some time before nightfall, deactivates slightly after sunrise
+  {
+    "op": "add",
+    "path": "/thea-nightWindowsVisible",
+    "value": ["linear", "clamp", [0, 1], [0.05, 0], [0.40, 0], [0.45, 1],  [0.95, 1]]
+  }
+]

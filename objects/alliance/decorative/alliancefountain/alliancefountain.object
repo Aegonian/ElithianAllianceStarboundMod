@@ -1,0 +1,79 @@
+{
+  "objectName" : "alliancefountain",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 300,
+  "description" : "A beautiful water fountain.",
+  "shortdescription" : "Alliance Fountain",
+  "race" : "aegi",
+
+  "apexDescription" : "A pretty fountain. The sound of the water is soothing.",
+  "avianDescription" : "A large fountain. Reminds me of a birdbath.",
+  "floranDescription" : "Water is bringer of life for Floran.",
+  "glitchDescription" : "Relaxed. The sounds of this water is calming.",
+  "humanDescription" : "If I had a penny I'd throw it in.",
+  "hylotlDescription" : "Beautiful clear water. Sometimes I miss the ocean.",
+  "novakidDescription" : "Some kinda splashy statue spoutin' water.",
+
+  "aegiDescription" : "A fountain. The sound of it always managed to calm me.",
+  "avikanDescription" : "Aliens waste water in many ways...",
+  "erixianDescription" : "A water fountain.",
+  "trinkDescription" : "This fountain wastes almost no water. It's quite efficient.",
+  "hymidDescription" : "I can always relax when there's flowing water nearby.",
+  "notixDescription" : "I can hear water flowing. It's soothing.",
+  "jorgasianDescription" : "A large fountain of Aeginian design.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected water source. Recommend extraction.",
+  "akkimariDescription" : "Water flows. Akki grows thirsty.",
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+
+  "inventoryIcon" : "alliancefountainicon.png",
+  "orientations" : [
+    {
+      "image" : "alliancefountain.png:<color>.<frame>",
+      "imagePosition" : [-32, 0],
+      "frames" : 3,
+      "animationCycle" : 0.4,
+      "direction" : "left",
+      "flipImages" : true,
+
+      "sitPositions" : [
+        // Positions from front to back.
+        [4, 24], // Right
+        [20, 24] // Left
+      ],
+
+      "interactiveSpaces" : [ [-4,0], [-4,1], [-3,0], [-3,1], [-2,0], [-2,1], [-1,0], [-1,1] ],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "alliancefountain.png:<color>.<frame>",
+      "imagePosition" : [-32, 0],
+      "frames" : 3,
+      "animationCycle" : 0.4,
+      "direction" : "right",
+
+      "sitPositions" : [
+        // Positions from front to back.
+        [4, 24], // Left
+        [20, 24] // Right
+      ],
+      
+      "interactiveSpaces" : [ [0,0], [0,1], [1,0], [1,1], [2,0], [2,1], [3,0], [3,1] ],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/fountain1.ogg"
+
+}
