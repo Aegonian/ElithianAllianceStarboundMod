@@ -25,9 +25,15 @@ function TheaReloadFire:update(dt, fireMode, shiftHeld)
     animator.setLightActive("muzzleFlash", false)
   end
 
+  if animator.animationState("weapon") == "fire" and not self.weapon.currentAbility then
+	animator.setAnimationState("weapon", "reload")
+  end
+  
   if self.fireMode == (self.activatingFireMode or self.abilitySlot)
     and not self.weapon.currentAbility
     and self.cooldownTimer == 0
+	and animator.animationState("weapon") ~= "reload"
+	and animator.animationState("weapon") ~= "fire"
     and not status.resourceLocked("energy")
     and not world.lineTileCollision(mcontroller.position(), self:firePosition()) then
 
@@ -47,6 +53,19 @@ function TheaReloadFire:auto()
 
   self:fireProjectile()
   self:muzzleFlash()
+  
+  if self.recoilKnockbackVelocity then
+	if not (self.crouchStopsRecoil and mcontroller.crouching()) then
+	  local recoilVelocity = vec2.mul(vec2.norm(vec2.mul(self:aimVector(0), -1)), self.recoilKnockbackVelocity)
+	  mcontroller.setYVelocity(0)
+	  mcontroller.addMomentum(recoilVelocity)
+	  mcontroller.controlJump()
+	elseif self.crouchRecoilKnockbackVelocity then
+	  local recoilVelocity = vec2.mul(vec2.norm(vec2.mul(self:aimVector(0), -1)), self.crouchRecoilKnockbackVelocity)
+	  mcontroller.setYVelocity(0)
+	  mcontroller.addMomentum(recoilVelocity)
+	end
+  end
 
   if self.stances.fire.duration then
     util.wait(self.stances.fire.duration)

@@ -1,0 +1,21 @@
+{
+  "projectileName" : "skoffwreckertrail",
+  "physics" : "laser",
+  "bounces" : -1,
+  "image" : "skoffwreckertrail.png",
+  "animationCycle" : 1.0,
+  "timeToLive" : 2.0,
+  "frameNumber" : 1,
+  "power" : 1,
+  "speed" : 0,
+  "piercing" : true,
+  "supportsProcessing" : true,
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "emitters" : [ "skoffwreckertrail" ],
+  "actionOnReap" : [ ],
+  "statusEffects" : [
+    "linerifleburn"
+  ],
+  "fullbright" : true,
+  "damageKind" : "linerifle"
+}

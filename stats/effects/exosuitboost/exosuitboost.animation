@@ -1,8 +1,6 @@
 {
   "sounds" : {
-
 	"jump" : ["/sfx/tech/exosuit_jump.ogg"],
 	"move" : ["/sfx/tech/exosuit_step.ogg"]
-	
   }
 }

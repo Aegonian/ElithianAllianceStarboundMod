@@ -25,7 +25,8 @@
   },
   "animationCustom" : {
     "sounds" : {
-	  "windupLoop" : [ "/sfx/melee/spear_twirl_loop.ogg" ]
+	  "windupLoop" : [ "/sfx/melee/spear_twirl_loop.ogg" ],
+	  "stick" : [ "/sfx/projectiles/ropehook_impact1.ogg" ]
     }
   },
 
@@ -232,8 +233,9 @@
     "scripts" : ["/items/active/weapons/melee/abilities/bowstaff/thea-staffvault.lua"],
 	"class" : "TheaStaffVault",
 	
-	"cooldownTime" : 1.0,
+	"cooldownTime" : 0.15,
 	"dashCooldownTime" : 0.4,
+	"stickCooldownTime" : 0.5,
 	
 	"vaultEnergy" : 50,
 	"dashEnergy" : 25,
@@ -250,11 +252,11 @@
 
     "stances" : {
 	  "windup" : {
-        "duration" : 0.25,
-        "armRotation" : 90,
+        "duration" : 0.35,
+        "armRotation" : 160,
         "weaponRotation" : 180,
         "weaponOffset" : [0, 0],
-        "twoHanded" : false,
+        "twoHanded" : true,
 		
         "allowRotate" : false,
         "allowFlip" : false
@@ -288,6 +290,18 @@
 
         "allowRotate" : false,
         "allowFlip" : false
+      },
+      "stick" : {
+        "armRotation" : -35,
+        "weaponRotation" : -80,
+        "twoHanded" : true,
+        "weaponOffset" : [0.0, -1.0],
+
+        "allowRotate" : false,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.1",
+        "backArmFrame" : "swim.3"
       }
     }
   },

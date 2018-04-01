@@ -55,8 +55,7 @@
           "image" : "<partImage><paletteSwaps>?<directives>?<bladeDirectives>",
           "offset" : [0.0, 0.0],
           "transformationGroups" : ["weapon"],
-          "damageArea" : [[0, -0.5], [-0.75, 1.0], [-0.75, 2.75], [0, 4.25], [0.75, 2.75], [0.75, 1.0]],
-          "groundImpactPoly" : [ [0.75, -1.5],  [-0.75, -1.5],  [-0.75, -4],  [0.75, -4] ]
+          "damageArea" : [[0, -0.5], [-0.75, 1.0], [-0.75, 2.75], [0, 4.25], [0.75, 2.75], [0.75, 1.0]]
         }
       },
 	  "bladeFullbright" : {
@@ -149,6 +148,7 @@
     "fire" : [],
 	"fire2" : [],
 	"fire3" : [],
-	"fire4" : []
+	"fire4" : [],
+	"readyBlade" : []
   }
 }

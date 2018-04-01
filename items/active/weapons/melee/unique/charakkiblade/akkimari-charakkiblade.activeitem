@@ -28,7 +28,8 @@
       "fire" : [ "/sfx/melee/swing_broadsword.ogg" ],
       "fire2" : [ "/sfx/melee/swing_hammer.ogg" ],
       "fire3" : [ "/sfx/melee/swing_spear.ogg" ],
-      "fire4" : [ "/sfx/melee/swing_broadsword.ogg" ]
+      "fire4" : [ "/sfx/melee/swing_broadsword.ogg" ],
+      "readyBlade" : [ "/sfx/npc/monsters/orbide_windup2.ogg" ]
     }
   },
 
@@ -220,8 +221,14 @@
         "allowRotate" : true,
         "allowFlip" : true,
 		
+		//Stance effects from weapon.lua
+		"playSounds" : [
+		  "readyBlade"
+		],
+		
 		"flashTime" : 0.35,
-		"flashDirectives" : "fade=FF4848FF=0.15?border=2;FFFFFF50;00000000"
+		//"flashDirectives" : "fade=FF4848FF=0.15?border=2;FFFFFF50;00000000"
+		"flashDirectives" : "fade=FFFFFF=0.025?border=2;FF484850;00000000"
       },
       "fire4" : {
         "duration" : 0.4,

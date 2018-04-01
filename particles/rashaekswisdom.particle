@@ -1,0 +1,20 @@
+{
+  "kind" : "rashaekswisdomcharge",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/rashaekswisdomcharge/rashaekswisdomcharge.animation",
+    "position" : [0, 0],
+    "approach" : [50, 50],
+    "light" : [0, 80, 120],
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.5,
+    "fade" : 1,
+    "size" : 1.0,
+    "layer" : "middle",
+    "timeToLive" : 0.2,
+	"fullbright" : true,
+    "variance" : {
+      "rotation" : 180
+    }
+  }
+}

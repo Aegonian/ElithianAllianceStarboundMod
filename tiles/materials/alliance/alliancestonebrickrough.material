@@ -1,0 +1,29 @@
+{
+  "materialId" : 30155,
+  "materialName" : "alliancestonebrickrough",
+  "particleColor" : [91, 92, 91, 255],
+  "itemDrop" : "alliancestonebrickrough", 
+  "shortdescription" : "Alliance Rough Bricks",
+  
+  "description" : "Heavy stone bricks, roughened with age.",
+  "glitchDescription" : "Observation. Rough stone bricks.",
+  "floranDescription" : "Floran like the feel of sstone under feet.",
+  "novakidDescription" : "Stone bricks, rough and cracked.",
+  
+  "drodenDescription" : "Analysis complete. Old stone bricks.",
+  "akkimariDescription" : "Stone feel good under Akki's feet.",
+
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "alliancestonebrickrough.png",
+    "variants" : 6,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 1450
+  }
+}

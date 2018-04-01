@@ -2,6 +2,7 @@
   "projectileName" : "allianceparticlebullet",
   "physics" : "lineriflebullet",
   "bounces" : 0,
+  "piercing" : true,
   "image" : "allianceparticlebullet.png",
   "animationCycle" : 0.5,
   "frameNumber" : 1,
@@ -11,7 +12,7 @@
   "actionOnReap" : [
     {
       "action" : "config",
-      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+      "file" : "/projectiles/explosions/hymidplasmaexplosionlarge/lightrunnerexplosion.config"
     }
   ],
   "periodicActions" : [
@@ -25,8 +26,8 @@
         "image" : "/projectiles/alliance/allianceparticlebullet/trail.png",
         "position" : [-2.5, 0],
         "layer" : "middle",
-        "timeToLive" : 0.0,
-        "destructionTime" : 1.0,
+        "timeToLive" : 0.5,
+        "destructionTime" : 0.25,
         "destructionAction" : "fade",
         "fullbright" : true
       }

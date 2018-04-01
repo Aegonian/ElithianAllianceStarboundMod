@@ -14,11 +14,11 @@
   "twoHanded" : true,
   
   //CONFIGURATION FOR WEAPONS COLLECTION
-  "collectablesOnPickup" : { "thea_weapons" : "avikan-linebreaker" },
+  "collectablesOnPickup" : { "thea_weapons" : "thea-lightrunner" },
   
   "meritTokenValue" : 100,
   
-  "cursor" : "/cursors/thea-trianglereticle.cursor",
+  "cursor" : "/cursors/thea-bracketreticle2.cursor",
   
   "animation" : "thea-lightrunner.animation",
   "animationParts" : {
@@ -60,7 +60,7 @@
       }
     },
     "sounds" : {
-      "fire" : [ "/sfx/gun/thea_plasmagun1.ogg" ],
+      "fire" : [ "/sfx/gun/lightrunner_fire_heavy.ogg" ],
       "reload" : [ ]
     }
   },
@@ -78,7 +78,7 @@
 
     "fireTime" : 1.15,
     "baseDps" : 10.5,
-    "energyUsage" : 50,
+    "energyUsage" : 75,
     "inaccuracy" : 0.0,
 
     "projectileCount" : 1,
@@ -88,6 +88,10 @@
     "projectileParameters" : {
       "knockback" : 40
     },
+	
+	"recoilKnockbackVelocity" : 45,
+	"crouchRecoilKnockbackVelocity" : 20,
+	"crouchStopsRecoil" : true,
 	
     "stances" : {
       "idle" : {

@@ -1,4 +1,4 @@
---An advanced melee combo ability. Allows any of the combo steps to include a weapon spin animation, and allows for completed combos to reset cooldown times
+--An advanced melee combo ability. Allows any of the combo steps to include a weapon spin animation, allows for completed combos to reset cooldown times, allows for firing of projectiles and many other small features
 
 -- Melee primary ability
 TheaEnhancedMeleeCombo = WeaponAbility:new()
@@ -6,6 +6,7 @@ TheaEnhancedMeleeCombo = WeaponAbility:new()
 function TheaEnhancedMeleeCombo:init()
   self.comboStep = 1
   self.airTime = 0
+  self.currentParticleEmitter = nil
 
   self.energyUsage = self.energyUsage or 0
 
@@ -30,6 +31,9 @@ end
 function TheaEnhancedMeleeCombo:update(dt, fireMode, shiftHeld)
   WeaponAbility.update(self, dt, fireMode, shiftHeld)
 
+  --Debug functionality
+  world.debugPoint(vec2.add(mcontroller.position(), activeItem.handPosition(animator.partPoint("blade", "projectileFirePoint") or {0,0})), "red")
+  
   if self.cooldownTimer > 0 then
     self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
     if self.cooldownTimer == 0 and self.useReadyFlash then
@@ -76,12 +80,32 @@ function TheaEnhancedMeleeCombo:windup()
 
   self.edgeTriggerTimer = 0
 
+  --Timer used for optional shaking
+  local timer = 0
   if stance.hold then
     while self.fireMode == (self.activatingFireMode or self.abilitySlot) do
       coroutine.yield()
     end
   else
-    util.wait(stance.duration)
+	util.wait(stance.duration, function()
+	  --Optional particle emitter
+	  if stance.particleEmitter then
+		animator.setParticleEmitterActive(stance.particleEmitter, true)
+		self.currentParticleEmitter = stance.particleEmitter
+	  end
+	  if stance.shake then
+		local wavePeriod = (stance.shakeWavePeriod or 0.125) / (2 * math.pi)
+		local waveAmplitude = stance.shakeWaveAmplitude or 0.075
+		
+		timer = timer + self.dt
+		local rotation = waveAmplitude * math.sin(timer / wavePeriod)
+		
+		self.weapon.relativeWeaponRotation = rotation + util.toRadians(stance.weaponRotation) --Add weaponRotation again, as relativeWeaponRotation overwrites it
+	  end
+	end)
+	if stance.particleEmitter then
+	  animator.setParticleEmitterActive(stance.particleEmitter, false)
+	end
   end
 
   if self.energyUsage then
@@ -108,11 +132,19 @@ function TheaEnhancedMeleeCombo:wait()
   end
 
   util.wait(stance.duration, function()
+    --Optional particle emitter
+	if stance.particleEmitter then
+	  animator.setParticleEmitterActive(stance.particleEmitter, true)
+	  self.currentParticleEmitter = stance.particleEmitter
+    end
     if self:shouldActivate() then
       self:setState(self.windup)
       return
     end
   end)
+  if stance.particleEmitter then
+	animator.setParticleEmitterActive(stance.particleEmitter, false)
+  end
 
   self.cooldownTimer = math.max(0, self.cooldowns[self.comboStep - 1] - stance.duration)
   self.comboStep = 1
@@ -131,7 +163,16 @@ function TheaEnhancedMeleeCombo:preslash()
 	self:animatedFlash(stance.flashTime, stance.flashDirectives or self.flashDirectives)
   end
 
-  util.wait(stance.duration)
+  util.wait(stance.duration, function()
+    --Optional particle emitter
+	if stance.particleEmitter then
+	  animator.setParticleEmitterActive(stance.particleEmitter, true)
+	  self.currentParticleEmitter = stance.particleEmitter
+    end
+  end)
+  if stance.particleEmitter then
+	animator.setParticleEmitterActive(stance.particleEmitter, false)
+  end
 
   self:setState(self.fire)
 end
@@ -156,10 +197,38 @@ function TheaEnhancedMeleeCombo:fire()
 	self:animatedFlash(stance.flashTime, stance.flashDirectives or self.flashDirectives)
   end
   
+  --Optionally fire a projectile
+  if stance.projectile then
+	local firePosition = vec2.add(mcontroller.position(), activeItem.handPosition(animator.partPoint("blade", "projectileFirePoint") or {0,0}))
+	local params = stance.projectileParameters or {}
+	params.power = stance.projectileDamage * config.getParameter("damageLevelMultiplier")
+	params.powerMultiplier = activeItem.ownerPowerMultiplier()
+	params.speed = util.randomInRange(params.speed)
+	
+	world.debugPoint(firePosition, "red")
+	
+	if not world.lineTileCollision(mcontroller.position(), firePosition) then
+	  for i = 1, (stance.projectileCount or 1) do
+		local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle + sb.nrand(stance.projectileInaccuracy or 0, 0) + (stance.projectileAimAngleOffset or 0))
+		aimVector[1] = aimVector[1] * mcontroller.facingDirection()
+		
+		world.spawnProjectile(
+		  stance.projectile,
+		  firePosition,
+		  activeItem.ownerEntityId(),
+		  aimVector,
+		  false,
+		  params
+		)
+	  end
+	end
+  end
+  
   --If this move has a velocity modifier, add it to our movement controller
   if stance.xVelocity then
 	if stance.onlyInAir and self.airTime > 0.15 and not (stance.notInLiquid and mcontroller.liquidMovement()) and not (stance.notInSpace and mcontroller.zeroG()) or
-	not stance.onlyInAir and self.airTime < 0.1 and not (stance.notInLiquid and mcontroller.liquidMovement()) and not (stance.notInSpace and mcontroller.zeroG()) then
+	not stance.onlyInAir and self.airTime < 0.1 and not (stance.notInLiquid and mcontroller.liquidMovement()) and not (stance.notInSpace and mcontroller.zeroG()) or
+	stance.anywhere then
 	  if not stance.maxAimAngle or self.weapon.aimAngle <= stance.maxAimAngle then
 		if stance.addVelocity then
 		  mcontroller.setXVelocity(vec2.add(stance.xVelocity, mcontroller.xVelocity()))
@@ -171,12 +240,33 @@ function TheaEnhancedMeleeCombo:fire()
   end
   if stance.yVelocity then
 	if stance.onlyInAir and self.airTime > 0.15 and not (stance.notInLiquid and mcontroller.liquidMovement()) and not (stance.notInSpace and mcontroller.zeroG()) or
-	not stance.onlyInAir and self.airTime < 0.1 and not (stance.notInLiquid and mcontroller.liquidMovement()) and not (stance.notInSpace and mcontroller.zeroG()) then
+	not stance.onlyInAir and self.airTime < 0.1 and not (stance.notInLiquid and mcontroller.liquidMovement()) and not (stance.notInSpace and mcontroller.zeroG()) or
+	stance.anywhere then
 	  if not stance.maxAimAngle or self.weapon.aimAngle <= stance.maxAimAngle then
 		if stance.addVelocity then
 		  mcontroller.setYVelocity(vec2.add(stance.yVelocity, mcontroller.yVelocity()))
 		else
 		  mcontroller.setYVelocity(stance.yVelocity)
+		end
+	  end
+	end
+  end
+  if stance.directionalVelocity then
+	if stance.onlyInAir and self.airTime > 0.15 and not (stance.notInLiquid and mcontroller.liquidMovement()) and not (stance.notInSpace and mcontroller.zeroG()) or
+	not stance.onlyInAir and self.airTime < 0.1 and not (stance.notInLiquid and mcontroller.liquidMovement()) and not (stance.notInSpace and mcontroller.zeroG()) or
+	stance.anywhere then
+	  if not stance.maxAimAngle or self.weapon.aimAngle <= stance.maxAimAngle then
+		local targetVelocity = vec2.mul(vec2.norm(vec2.mul(self:aimVector(0), 1)), stance.directionalVelocity)
+		if stance.jump then
+		  mcontroller.controlJump()
+		end
+		if stance.addVelocity then
+		  mcontroller.setVelocity(vec2.add(targetVelocity, mcontroller.velocity()))
+		elseif stance.addMomentum then
+		  mcontroller.setYVelocity(0)
+		  mcontroller.addMomentum(targetVelocity)
+		else
+		  mcontroller.setVelocity(targetVelocity)
 		end
 	  end
 	end
@@ -282,6 +372,16 @@ function TheaEnhancedMeleeCombo:computeDamageAndCooldowns()
   end
 end
 
+--Aim vector for firing projectiles
+function TheaEnhancedMeleeCombo:aimVector(inaccuracy)
+  local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle + sb.nrand(inaccuracy, 0))
+  aimVector[1] = aimVector[1] * mcontroller.facingDirection()
+  return aimVector
+end
+
 function TheaEnhancedMeleeCombo:uninit()
   self.weapon:setDamage()
+  if self.currentParticleEmitter then
+	animator.setParticleEmitterActive(self.currentParticleEmitter, false)
+  end
 end

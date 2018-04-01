@@ -1,0 +1,15 @@
+{
+  "name" : "shalakkaritual-heal",
+  "effectConfig" : {
+    "healAmount" : 25,
+    "emissionRate" : 20,
+	"completeDuration" : true
+  },
+  "defaultDuration" : 2.5, //Functions as immunity time until the effect can be applied again
+
+  "scripts" : [
+    "/stats/effects/thea-instantheal/thea-instantheal.lua"
+  ],
+
+  "animationConfig" : "shalakkaritual-heal.animation"
+}

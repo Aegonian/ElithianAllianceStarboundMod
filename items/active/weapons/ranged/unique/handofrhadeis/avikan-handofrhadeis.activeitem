@@ -112,7 +112,7 @@
       "idle" : {
         "armRotation" : 0,
         "weaponRotation" : 0,
-        "twoHanded" : true,
+        "twoHanded" : false,
 
         "allowRotate" : true,
         "allowFlip" : true
@@ -120,7 +120,7 @@
       "charge" : {
         "armRotation" : -2,
         "weaponRotation" : 2,
-        "twoHanded" : true,
+        "twoHanded" : false,
 
         "allowRotate" : true,
         "allowFlip" : true
@@ -130,7 +130,7 @@
         "armRotation" : 5,
         "weaponRotation" : 5,
 		"weaponOffset" : [0.0, 0],
-        "twoHanded" : true,
+        "twoHanded" : false,
 
         "allowRotate" : false,
         "allowFlip" : false
@@ -140,7 +140,7 @@
         "armRotation" : 5,
         "weaponRotation" : 5,
 		"weaponOffset" : [0.0, 0],
-        "twoHanded" : true,
+        "twoHanded" : false,
 
         "allowRotate" : false,
         "allowFlip" : false
@@ -149,7 +149,7 @@
         "duration" : 0.1,
         "armRotation" : 2,
         "weaponRotation" : 2,
-        "twoHanded" : true,
+        "twoHanded" : false,
 
         "allowRotate" : false,
         "allowFlip" : false

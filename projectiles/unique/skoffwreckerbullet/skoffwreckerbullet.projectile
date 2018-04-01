@@ -1,0 +1,60 @@
+{
+  "projectileName" : "skoffwreckerbullet",
+  "image" : "skoffwreckerbullet.png",
+  "physics" : "lineriflebullet",
+  "bounces" : 0,
+  "piercing" : true,
+  "flippable" : true,
+  "animationCycle" : 0.3,
+  "frameNumber" : 3,
+  "emitters" : [ "linerifleswoosh" ],
+  "lightColor" : [200, 120, 0],
+  "fullbright" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+	  "file" : "/projectiles/explosions/primeinitiativeexplosion/skoffwreckerexplosion.config"
+    }
+  ],
+  "periodicActions" : [
+	{
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+		"type" : "animated",
+		"animation" : "/projectiles/unique/skoffwreckerbullet/trail.animation",
+        "position" : [-1.25, 0],
+        "layer" : "back",
+		"collidesForeground" : false,
+        "timeToLive" : 2.0,
+        "destructionTime" : 0.1,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    },
+	{
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "projectile",
+      "rotate" : true,
+      "type" : "skoffwreckertrail",
+      "config" : {},
+      "inheritDamageFactor" : 0.075,
+      "direction" : [0, -1],
+      "offsetRange" : [0.0, 0.0, 0.0, 0.0]
+    }
+  ],
+  "statusEffects" : [
+    "linerifleburn"
+  ],
+  "power" : 5.0,
+  "speed" : 150,
+  "timeToLive" : 1.5,
+  "damageKind" : "linerifle",
+  
+  "scripts" : [ "/projectiles/scripts/thea-lineriflehoming.lua" ],
+  "searchRadius" : 50,
+  "baseHomingControlForce" : 0.75
+}

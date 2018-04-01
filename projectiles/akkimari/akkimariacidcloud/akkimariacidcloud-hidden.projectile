@@ -1,0 +1,27 @@
+{
+  "projectileName" : "akkimariacidcloud-hidden",
+  "physics" : "flame",
+  "bounces" : -1,
+  "image" : "akkimariacidcloud.png",
+  "animationCycle" : 1.5,
+  "timeToLive" : 1.5,
+  "frameNumber" : 8,
+  "power" : 1,
+  "speed" : 5,
+  "piercing" : true,
+  "supportsProcessing" : true,
+  "damagePoly" : [ [-18, 0], [-12, -12], [0, -18], [12, -12], [18, 0], [12, 12], [0, 18], [-12, 12] ],
+  //"emitters" : [ "akkimaritrail" ],
+  "actionOnReap" : [ ],
+  "statusEffects" : [
+    "akkimariacidburn"
+  ],
+  "fullbright" : false,
+  "damageKind" : "akkimariacidhidden",
+
+  "scripts" : ["/projectiles/scripts/thea-randomspeedprojectile.lua"],
+  "scriptDelta" : 1,
+  
+  "minSpeed" : 6,
+  "maxSpeed" : 8
+}

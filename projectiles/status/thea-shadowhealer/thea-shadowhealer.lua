@@ -8,8 +8,6 @@ function init()
   self.snapRange = config.getParameter("snapRange")
   self.snapSpeed = config.getParameter("snapSpeed")
   self.snapForce = config.getParameter("snapForce")
-  self.restoreBase = config.getParameter("restoreBase")
-  self.restorePercentage = config.getParameter("restorePercentage")
 
   self.targetEntity = nil
   

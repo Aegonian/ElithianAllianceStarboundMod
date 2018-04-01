@@ -4,7 +4,7 @@
   "animationCycle" : 0.2,
   "frameNumber" : 6,
   "speed" : 0,
-  "lightColor" : [128, 128, 64],
+  "lightColor" : [30, 60, 75],
   "damagePoly" : [ [-18, 0], [-12, -12], [0, -18], [12, -12], [18, 0], [12, 12], [0, 18], [-12, 12] ],
   "animationLoops" : false,
   "piercing" : true,

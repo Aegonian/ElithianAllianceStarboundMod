@@ -33,8 +33,5 @@
   "pickupRange" : 0.75,
   "snapRange" : 2,
   "snapSpeed" : 150,
-  "snapForce" : 250,
-
-  "restoreBase" : 40,
-  "restorePercentage" : 0
+  "snapForce" : 250
 }

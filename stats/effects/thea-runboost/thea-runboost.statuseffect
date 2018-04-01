@@ -1,0 +1,16 @@
+{
+  "name" : "thea-runboost",
+  "effectConfig" : {
+	"speedModifier" : 1.5
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "thea-runboost.lua"
+  ],
+
+  "animationConfig" : "thea-runboost.animation",
+
+  "label" : "Run Boost",
+  "icon" : "/interface/statuses/haste.png"
+}

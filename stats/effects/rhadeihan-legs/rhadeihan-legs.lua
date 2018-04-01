@@ -17,7 +17,7 @@ function update(dt)
 
   self.cooldownTimer = math.max(0, self.cooldownTimer - dt)
   
-  if mcontroller.falling() then
+  if mcontroller.falling() and not status.statPositive("activeMovementAbilities") then
 	if self.cooldownTimer == 0 then
 	  mcontroller.setYVelocity(math.max(mcontroller.yVelocity(), self.maxFallSpeed))
 	  animator.setAnimationState("jets", "active")

@@ -27,12 +27,12 @@
             "mode" : "transition",
             "transition" : "idle"
           },
-		  "fire4" : {
-			"frames" : 3,
+          "fire4" : {
+            "frames" : 3,
             "cycle" : 0.1,
             "mode" : "transition",
             "transition" : "idle"
-		  }
+          }
         }
       },
       "lights" : {
@@ -56,7 +56,8 @@
           "offset" : [0.0, 0.0],
           "transformationGroups" : ["weapon"],
           "damageArea" : [[0, -0.5], [-0.75, 1.0], [-0.75, 2.75], [0, 4.25], [0.75, 2.75], [0.75, 1.0]],
-          "groundImpactPoly" : [ [0.75, -1.5],  [-0.75, -1.5],  [-0.75, -4],  [0.75, -4] ]
+          //"projectileFirePoint" : [0.375, 3.375] //Projectile offset at the the center of the orb
+          "projectileFirePoint" : [0.375, 6.5] //Projectile offset in front of the weapon for correct explosion placement
         }
       },
 	  "bladeFullbright" : {
@@ -88,7 +89,6 @@
           "offset" : [3.0, 0.0],
           "transformationGroups" : ["swoosh"]
         },
-
         "partStates" : {
           "swoosh" : {
             "idle" : {
@@ -112,12 +112,12 @@
                 "damageArea" : [[5, 2], [2.5, 3], [-1, 3], [-4, 1.75], [-5, -0.25], [-5, -2.25], [-4, -3.25], [0, -2.5]]
               }
             },
-            "fire3" : {
+			"fire3" : {
               "properties" : {
-                "image" : "/items/active/weapons/melee/unique/rashaekswisdom/swoosh/rashaekswisdomswoosh-thrust.png:<frame>",
+                "image" : "/items/active/weapons/melee/unique/rashaekswisdom/swoosh/rashaekswisdomswoosh-downcut.png:<frame>",
 				"fullbright" : true,
-                "offset" : [3.5, 0],
-                "damageArea" : [[-3.5, 0], [-1, 1], [1, 1], [4, 0], [1, -1], [-1, -1]]
+                "offset" : [0, 2.5],
+                "damageArea" : [[-5, 2], [-2.5, 3], [1, 3], [4, 1.75], [5, -0.25], [5, -2.25], [4, -3.25], [0, -2.5]]
               }
             },
             "fire4" : {
@@ -140,6 +140,15 @@
   },
 
   "particleEmitters" : {
+    "chargeExplosion" : {
+      "active" : false,
+      "emissionRate" : 5.0,
+      "transformationGroups" : ["weapon"],
+	  "offsetRegion" : [0.375, 3.375, 0.375, 3.375],
+      "particles" : [
+        { "particle" : "rashaekswisdomcharge"}
+      ]
+    },
     "xanafianswoosh" : {
       "active" : false,
       "transformationGroups" : ["swoosh"],

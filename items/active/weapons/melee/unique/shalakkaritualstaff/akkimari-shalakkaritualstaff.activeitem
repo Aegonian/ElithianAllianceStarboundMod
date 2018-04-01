@@ -1,0 +1,270 @@
+{
+  "itemName" : "akkimari-shalakkaritualstaff",
+  "price" : 1500,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "essential",
+  "description" : "^orange;A bladed staff used in the rituals of Shalakka shamans.",
+  "shortdescription" : "^orange;Shalakka Ritual Staff^white;",
+  "tooltipKind" : "thea-sword-unique",
+  "category" : "Ritual Staff",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","scathe","akkimari","theaUnique"],
+
+  "inventoryIcon" : "akkimari-shalakkaritualstafficon.png",
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "akkimari-shalakkaritualstaff" },
+  
+  "meritTokenValue" : 100,
+
+  "animation" : "akkimari-shalakkaritualstaff.animation",
+  "animationParts" : {
+    "blade" : "akkimari-shalakkaritualstaff.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_hammer.ogg" ],
+      "fire2" : [ "/sfx/melee/swing_broadsword.ogg" ],
+      "fire3" : [ "/sfx/melee/swing_spear.ogg" ],
+      "fire4" : [ "/sfx/melee/swing_hammer.ogg" ],
+      "shake" : [ "/sfx/melee/shalakka_rattle_short.ogg" ],
+      "releaseCloudAcid" : [ "/sfx/gun/pumpgun_draw2.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "thea-bowstaffcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.9,
+	"baseDps" : 8.5,
+	
+	"comboSteps" : 4,
+	
+	"swooshOffsetRegions" : [
+      [0.75, 0.0, 4.25, 5.0],
+      [0.75, 0.0, 4.25, 5.0],
+      [1.5, -1.0, 5.5, 1.0],
+      [4.25, 4.25, -4.25, -4.25]
+    ],
+	
+	"damageConfig" : {
+      "damageSourceKind" : "spear",
+      "statusEffects" : [ ],
+      "knockbackMode" : "aim",
+      "timeout" : 0.25
+    },
+    "stepDamageConfig" : [
+      {
+        "baseDamageFactor" : 1.0,
+		"damageSourceKind" : "hammer",
+        "knockback" : 15
+      },
+      {
+        "baseDamageFactor" : 0.75,
+		"damageSourceKind" : "spear",
+        "knockback" : 15
+      },
+      {
+        "baseDamageFactor" : 1.15,
+		"damageSourceKind" : "spear",
+        "knockback" : 15
+      },
+      {
+        "baseDamageFactor" : 1.75,
+		"damageSourceKind" : "spear",
+        "knockback" : 25
+      }
+    ],
+	
+	"stances" : {
+      //IDLE - DEFAULT
+	  "idle" : {
+        "armRotation" : -90,
+        "weaponRotation" : -15,
+        "weaponOffset" : [0, 0],
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+	  //COMBO STEP 1
+      "windup1" : {
+        "duration" : 0.15,
+        "armRotation" : 90,
+        "weaponRotation" : -10,
+        "weaponOffset" : [0, 0.625],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash1" : {
+        "duration" : 0.025,
+        "armRotation" : 55,
+        "weaponRotation" : -45,
+        "weaponOffset" : [0, 1],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire1" : {
+        "duration" : 0.2,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "weaponOffset" : [0, 1],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+		
+		"yVelocity" : 30,
+		"onlyInAir" : true,
+		"notInLiquid" : true,
+		"notInSpace" : true,
+		"maxAimAngle" : 0.0 //Aiming downwards is less than 0, aiming up is more than 0
+      },
+      "wait1" : {
+        "duration" : 0.2,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "weaponOffset" : [0, 1],
+        "twoHanded" : true,
+		
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+	  //COMBO STEP 2
+      "windup2" : {
+        "duration" : 0.25,
+        "armRotation" : -110,
+        "weaponRotation" : 40,
+        "weaponOffset" : [0, -0.5],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash2" : {
+        "duration" : 0.025,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+        "weaponOffset" : [0, -0.5],
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire2" : {
+        "duration" : 0.25,
+        "armRotation" : 80,
+        "weaponRotation" : 20,
+        "weaponOffset" : [0, -1],
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait2" : {
+        "duration" : 0.2,
+        "armRotation" : 60,
+        "weaponRotation" : 30,
+        "weaponOffset" : [0, -0.5],
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+	  //COMBO STEP 3
+      "windup3" : {
+        "duration" : 0.25,
+        "armRotation" : -150,
+        "weaponRotation" : 210,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire3" : {
+        "duration" : 0.25,
+        "armRotation" : 0,
+        "weaponRotation" : 90,
+        "weaponOffset" : [0, -1.5],
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "wait3" : {
+        "duration" : 0.2,
+        "armRotation" : -5,
+        "weaponRotation" : 85,
+        "weaponOffset" : [0, -1.0],
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+	  //COMBO STEP 4
+      "windup4" : {
+        "duration" : 0.5,
+        "armRotation" : -165,
+        "weaponRotation" : 30,
+        "weaponOffset" : [0, -0.5],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+		
+		//Stance effects from weapon.lua
+		"animationStates" : {
+		  "weapon" : "shake"
+		},
+		"playSounds" : [
+		  "shake"
+		],
+		
+		"shake" : true,
+		"particleEmitter" : "chargeClouds"
+      },
+      "fire4" : {
+        "duration" : 0.4,
+        "armRotation" : 0,
+        "weaponRotation" : -90,
+        "weaponOffset" : [0, 2.0],
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true,
+		
+		//Stance effects from weapon.lua
+		"animationStates" : {
+		  "weapon" : "releaseClouds"
+		},
+		"playSounds" : [
+		  "releaseCloudAcid"
+		],
+		
+		//Projectile
+		"projectile" : "akkimariacidcloud-hidden",
+		"projectileCount" : 8,
+		"projectileDamage" : 0.01,
+		"projectileParameters" : {
+		  "minSpeed" : 6,
+		  "maxSpeed" : 16
+		},
+		"projectileInaccuracy" : 0.4,
+		"projectileAimAngleOffset" : 0
+      }
+    }
+  },
+
+  "altAbilityType" : "thea-ritualdance",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

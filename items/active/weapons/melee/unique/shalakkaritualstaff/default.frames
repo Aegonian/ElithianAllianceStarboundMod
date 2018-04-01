@@ -1,0 +1,14 @@
+{
+  "frameGrid" : {
+    "size" : [23, 66],
+    "dimensions" : [4, 1],
+
+    "names" : [
+      [ "idle", "shake.1", "shake.2", "release.1" ]
+    ]
+  },
+
+  "aliases" : {
+    "shake.3" : "idle"
+  }
+}

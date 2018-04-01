@@ -1,0 +1,70 @@
+{
+  "kind" : "akkimariacidhidden",
+  "elementalType" : "akkimariacid",
+  "effects" : {
+    "organic" : {
+      "hit" : {
+        "sounds" : [ ],
+        "particles" : [
+          [
+          ]
+        ]
+      },
+      "kill" : {
+        "sounds" : [ ],
+        "particles" : [
+          [
+          ]
+        ]
+      }
+    },
+    "robotic" : {
+      "hit" : {
+        "sounds" : [ ],
+        "particles" : [
+          [
+          ]
+        ]
+      },
+      "kill" : {
+        "sounds" : [ ],
+        "particles" : [
+          [
+          ]
+        ]
+      }
+    },
+    "wooden" : {
+      "hit" : {
+        "sounds" : [ ],
+        "particles" : [
+          [
+          ]
+        ]
+      },
+      "kill" : {
+        "sounds" : [ ],
+        "particles" : [
+          [
+          ]
+        ]
+      }
+    },
+    "stone" : {
+      "hit" : {
+        "sounds" : [ ],
+        "particles" : [
+          [
+          ]
+        ]
+      },
+      "kill" : {
+        "sounds" : [ ],
+        "particles" : [
+          [
+          ]
+        ]
+      }
+    }
+  }
+}

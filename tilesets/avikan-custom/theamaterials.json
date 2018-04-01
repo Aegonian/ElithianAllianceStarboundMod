@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":84,
+ "tilecount":85,
  "tileheight":8,
  "tileproperties":
     {
@@ -508,6 +508,11 @@
          "\/\/shortdescription":"Alliance Stone Bricks",
          "material":"alliancestonebrick"
         },
+     "84":
+        {
+         "\/\/shortdescription":"Alliance Rough Bricks",
+         "material":"alliancestonebrickrough"
+        },
      "9":
         {
          "\/\/description":"A THEA material",
@@ -849,6 +854,10 @@
      "83":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/alliancestonebrick.png"
+        },
+     "84":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/alliancestonebrickrough.png"
         },
      "9":
         {

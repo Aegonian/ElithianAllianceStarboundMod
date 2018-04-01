@@ -336,6 +336,24 @@
       "title" : "Charakki Blade",
       "description" : "An agile scathe used by the ferocious Charakki tribe.",
       "icon" : "/items/active/weapons/melee/unique/charakkiblade/akkimari-charakkibladeicon.png"
+    },
+	"avikan-skoffwreckersbow" : {
+      "order" : 55,
+      "title" : "Skoffwrecker's Bow",
+      "description" : "A monstrous linerifle capable of downing ships in flight.",
+      "icon" : "/items/active/weapons/ranged/unique/skoffwreckersbow/avikan-skoffwreckersbowicon.png"
+    },
+	"thea-lightrunner" : {
+      "order" : 56,
+      "title" : "C42 Lightrunner",
+      "description" : "A prototype weapon born from a classified research project.",
+      "icon" : "/items/active/weapons/ranged/unique/lightrunner/thea-lightrunnericon.png"
+    },
+	"akkimari-shalakkaritualstaff" : {
+      "order" : 57,
+      "title" : "Shalakka Ritual Staff",
+      "description" : "A bladed staff used in the rituals of Shalakka shamans.",
+      "icon" : "/items/active/weapons/melee/unique/shalakkaritualstaff/akkimari-shalakkaritualstafficon.png"
     }
   }
 }

@@ -1,0 +1,16 @@
+{
+  "name" : "shalakkaritual-attack",
+  "effectConfig" : {
+    "powerModifier" : 1.15
+  },
+  "defaultDuration" : 20,
+
+  "scripts" : [
+    "/stats/effects/thea-powerboost/thea-powerboost.lua"
+  ],
+
+  "animationConfig" : "shalakkaritual-attack.animation",
+
+  "label" : "Shamanic Rage",
+  "icon" : "/interface/statuses/shalakkaritual-attack.png"
+}

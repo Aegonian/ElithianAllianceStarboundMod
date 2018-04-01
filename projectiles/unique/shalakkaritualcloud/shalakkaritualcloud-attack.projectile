@@ -1,0 +1,30 @@
+{
+  "projectileName" : "shalakkaritualcloud-attack",
+  "physics" : "thea-heavydustcloud",
+  "bounces" : -1,
+  "image" : "shalakkaritualcloud-attack.png",
+  "animationCycle" : 2.0,
+  "timeToLive" : 2.0,
+  "frameNumber" : 8,
+  "speed" : 10,
+  "piercing" : true,
+  "supportsProcessing" : true,
+  "damagePoly" : [ [-18, 0], [-12, -12], [0, -18], [12, -12], [18, 0], [12, 12], [0, 18], [-12, 12] ],
+  //"emitters" : [ "akkimaritrail" ],
+  "actionOnReap" : [ ],
+  "statusEffects" : [
+    "shalakkaritual-attack"
+  ],
+  "fullbright" : false,
+  
+  "power" : 0,
+  
+  "damageTeam" : { "type" : "enemy" },
+  "damageKind" : "hidden",
+
+  "scripts" : ["/projectiles/scripts/thea-randomspeedprojectile.lua"],
+  "scriptDelta" : 1,
+  
+  "minSpeed" : 9,
+  "maxSpeed" : 11
+}

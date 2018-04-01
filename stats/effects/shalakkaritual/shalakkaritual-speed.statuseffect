@@ -1,0 +1,16 @@
+{
+  "name" : "shalakkaritual-speed",
+  "effectConfig" : {
+	"speedModifier" : 1.35
+  },
+  "defaultDuration" : 15,
+
+  "scripts" : [
+    "/stats/effects/thea-runboost/thea-runboost.lua"
+  ],
+
+  "animationConfig" : "shalakkaritual-speed.animation",
+
+  "label" : "Shamanic Haste",
+  "icon" : "/interface/statuses/shalakkaritual-speed.png"
+}

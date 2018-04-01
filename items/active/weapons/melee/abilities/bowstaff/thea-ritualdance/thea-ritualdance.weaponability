@@ -1,0 +1,160 @@
+{
+  "animationParts" : { },
+  "animationCustom" : {
+    "particleEmitters" : {
+      "chargeCloudsSpeed" : {
+		"active" : false,
+		"emissionRate" : 15.0,
+		"transformationGroups" : ["weapon"],
+		"offsetRegion" : [0.25, 3.375, -0.25, 2.5],
+		"particles" : [
+		  { "particle" : "akkimarifogsmall-speed"}
+		]
+	  },
+      "chargeCloudsHeal" : {
+		"active" : false,
+		"emissionRate" : 15.0,
+		"transformationGroups" : ["weapon"],
+		"offsetRegion" : [0.25, 3.375, -0.25, 2.5],
+		"particles" : [
+		  { "particle" : "akkimarifogsmall-heal"}
+		]
+	  },
+      "chargeCloudsAttack" : {
+		"active" : false,
+		"emissionRate" : 15.0,
+		"transformationGroups" : ["weapon"],
+		"offsetRegion" : [0.25, 3.375, -0.25, 2.5],
+		"particles" : [
+		  { "particle" : "akkimarifogsmall-attack"}
+		]
+	  }
+    },
+    "sounds" : {
+      "shakeLoop" : [ "/sfx/melee/shalakka_rattle_long.ogg" ],
+	  "windupLoop" : [ "/sfx/melee/spear_twirl_loop.ogg" ],
+	  "release" : [ "/sfx/gun/pumpgun_draw2.ogg" ]
+    }
+  },
+
+  "ability" : {
+    "name" : "Shalakka Ritual",
+    "type" : "thea-ritualdance",
+    "scripts" : ["/items/active/weapons/melee/abilities/bowstaff/thea-ritualdance/thea-ritualdance.lua"],
+    "class" : "TheaRitualDance",
+
+    "cooldownTime" : 1.0,
+	
+	//Ritual Settings
+	"danceLevels" : 3,
+	"danceProjectiles" : [
+	  "shalakkaritualcloud-speed",
+	  "shalakkaritualcloud-heal",
+	  "shalakkaritualcloud-attack"
+	],
+	"projectileCount" : 12,
+	"projectileDamage" : 0,
+	"projectileParameters" : {},
+	"projectileInaccuracy" : 0.9,
+	"projectileAimAngleOffset" : 0,
+
+    "stances" : {
+      //First dance
+	  "danceStart1" : {
+        "duration" : 0.25,
+        "armRotation" : -45,
+        "weaponRotation" : 10,
+		"weaponOffset" : [0, -0.25],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "danceEnd1" : {
+        "duration" : 0.6,
+        "armRotation" : 70,
+        "weaponRotation" : -30,
+        "twoHanded" : false,
+		"weaponOffset" : [0, 0.5],
+
+        "allowRotate" : false,
+        "allowFlip" : true,
+		
+		"shake" : true,
+		"particleEmitter" : "chargeCloudsSpeed"
+      },
+      //Second dance
+	  "danceStart2" : {
+        "duration" : 0.15,
+        "armRotation" : -120,
+        "weaponRotation" : 20,
+		"weaponOffset" : [0, -0.5],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "danceEnd2" : {
+        "duration" : 0.6,
+        "armRotation" : -35,
+        "weaponRotation" : -60,
+		"weaponOffset" : [0, 0.5],
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true,
+		
+		"shake" : true,
+		"particleEmitter" : "chargeCloudsHeal"
+      },
+      //Third dance
+	  "danceStart3" : {
+        "duration" : 0.15,
+        "armRotation" : 35,
+        "weaponRotation" : 0,
+		"weaponOffset" : [0, -0.25],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "danceEnd3" : {
+        "duration" : 0.6,
+        "armRotation" : 90,
+        "weaponRotation" : -10,
+		"weaponOffset" : [0, 0.5],
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true,
+		
+		"shake" : true,
+		"particleEmitter" : "chargeCloudsAttack"
+      },
+      //Release buff clouds
+      "releaseWindup" : {
+        "duration" : 0.5,
+        "armRotation" : -50,
+        "endArmRotation" : 80,
+        "weaponRotation" : 0,
+        "endWeaponRotation" : 320,
+		"weaponOffset" : [0, 0],
+		"endWeaponOffset" : [0, 0.5],
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "release" : {
+        "duration" : 0.6,
+        "armRotation" : 95,
+        "weaponRotation" : -85,
+		"weaponOffset" : [0, 0.5],
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  }
+}

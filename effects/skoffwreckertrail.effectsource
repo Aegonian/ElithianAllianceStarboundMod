@@ -2,7 +2,7 @@
   "kind" : "skoffwreckertrail",
   "location" : "mouth",
   "definition" : {
-    "duration" : 0.001,
+    "duration" : 0.05,
     "loops" : true,
     "start" : {
       "particles" : [
@@ -11,7 +11,7 @@
       "sounds" : [ [ ] ]
     },
     "particles" : [
-      [ "skoffwreckertrail" ]
+      [ "linerifleburnbright2" ]
     ],
     "sounds" : [ [ ] ],
     "stop" : {
