@@ -9,6 +9,7 @@ TheaStaffVault = WeaponAbility:new()
 function TheaStaffVault:init()
   self.cooldownTimer = self.cooldownTime
   self.dashCooldownTimer = self.dashCooldownTime
+  self.wallCollisionSet = {"Dynamic", "Block"}
   
   self.dashesLeft = config.getParameter("dashCount", self.maxDashes)
   self.airTime = 0
@@ -29,11 +30,13 @@ function TheaStaffVault:update(dt, fireMode, shiftHeld)
   self.dashCooldownTimer = math.max(0, self.dashCooldownTimer - self.dt)
   self.stickCooldownTimer = math.max(0, self.stickCooldownTimer - self.dt)
   
-  --Debug code for checking impact polys
+  --Debug code for checking impact points
   world.debugPoly(poly.translate(poly.handPosition(animator.partPoly("blade", "groundImpactPoly")), mcontroller.position()), "red")
   world.debugPoly(poly.translate(poly.handPosition(animator.partPoly("blade", "wallImpactPolySticking")), mcontroller.position()), "green")
   world.debugPoly(poly.translate(poly.handPosition(animator.partPoly("blade", "wallImpactPoly")), mcontroller.position()), "blue")
   world.debugText(self.dashesLeft, mcontroller.position(), "red")
+  local offset = {self.wallDetectOffset[1] * mcontroller.facingDirection(), self.wallDetectOffset[2]}
+  world.debugPoint(vec2.add(mcontroller.position(), offset), "green")
   
   --Calculate our time spent in the air for potential aerial moves
   if mcontroller.onGround() then
@@ -185,6 +188,8 @@ function TheaStaffVault:dash()
   self.dashesLeft = self.dashesLeft - 1
   activeItem.setInstanceValue("dashCount", self.dashesLeft)
   
+  self.stickCooldownTimer = 0
+  
   util.wait(self.stances.dash.duration, function(dt)
 	--Determine in what direction we should charge
     local aimDirection = {mcontroller.facingDirection() * math.cos(self.weapon.aimAngle), math.sin(self.weapon.aimAngle)}
@@ -200,8 +205,10 @@ function TheaStaffVault:dash()
 	
 	self.dashCooldownTimer = self.dashCooldownTime
 	
-	local wallImpact = world.polyCollision(poly.translate(poly.handPosition(animator.partPoly("blade", "wallImpactPoly")), mcontroller.position()))
-	if wallImpact and self.fireMode == "alt" and self.stickCooldownTimer == 0 then
+	local wallImpact = world.polyCollision(poly.translate(poly.handPosition(animator.partPoly("blade", "wallImpactPoly")), mcontroller.position()), nil, self.wallCollisionSet)
+	local offset = {self.wallDetectOffset[1] * mcontroller.facingDirection(), self.wallDetectOffset[2]}
+	local wallDetected = world.pointCollision(vec2.add(mcontroller.position(), offset), self.wallCollisionSet)
+	if wallImpact and wallDetected and self.fireMode == "alt" and self.stickCooldownTimer == 0 then
 	  animator.setParticleEmitterActive("dash", false)
 	  animator.setAnimationState("thruster", "inactive")
   
@@ -236,11 +243,16 @@ function TheaStaffVault:stick()
 	
 	minimumStickTimer = math.max(0, minimumStickTimer - self.dt)
 	
-	local wallImpact = world.polyCollision(poly.translate(poly.handPosition(animator.partPoly("blade", "wallImpactPolySticking")), mcontroller.position()))
+	local wallImpact = world.polyCollision(poly.translate(poly.handPosition(animator.partPoly("blade", "wallImpactPolySticking")), mcontroller.position()), nil, self.wallCollisionSet)
 	if not wallImpact and minimumStickTimer == 0 then
 	  canStick = false
 	end
 	coroutine.yield()
+  end
+  
+  if self.dashesLeft == 0 then
+	self.dashesLeft = self.dashesLeft + 1
+	activeItem.setInstanceValue("dashCount", self.dashesLeft)
   end
 end
 

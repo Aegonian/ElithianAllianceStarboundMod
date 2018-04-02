@@ -237,6 +237,8 @@
 	"dashCooldownTime" : 0.4,
 	"stickCooldownTime" : 0.5,
 	
+	"wallDetectOffset" : [1.5, -1], //Offset for wall detection when checking for a wall to stick to. Prevents sticking from activating on ceilings and such
+	
 	"vaultEnergy" : 50,
 	"dashEnergy" : 25,
 	

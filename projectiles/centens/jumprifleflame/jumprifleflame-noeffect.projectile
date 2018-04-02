@@ -1,0 +1,31 @@
+{
+  "projectileName" : "jumprifleflame-noeffect",
+  "physics" : "stickybomb",
+  "bounces" : -1,
+  "timeToLive" : 5,
+  "speed" : 20,
+  "image" : "jumprifleflame.png",
+  "orientationLocked" : true,
+  "flippable" : true,
+  "animationCycle" : 0.8,
+  "lightColor" : [235, 126, 2],
+  "fullbright" : true,
+  "frameNumber" : 8,
+  "emitters" : [ "jumprifleflames" ],
+  "piercing" : true,
+  "damagePoly" : [ [-6, 0], [-4, -4], [0, -6], [4, -4], [6, 0], [4, 4], [0, 6], [-4, 4] ],
+  "actionOnReap" : [],
+  "damageKind" : "jumpweapon",
+  "universalDamage" : true,
+  "statusEffects" : [],
+  "hydrophobic" : true,
+  
+  "persistentAudio" : "/sfx/projectiles/thea_flame_burning.ogg",
+  
+  "scripts" : [ "/projectiles/scripts/thea-uprightprojectile.lua" ],
+  "rotateInAir" : false,
+  "randomTimeToLive" : true,
+  "timeToLiveMilliseconds" : true,
+  "minLifeTime" : 350,
+  "maxLifeTime" : 650
+}

@@ -81,6 +81,7 @@
         "allowFlip" : true,
 		
 		"shake" : true,
+		"emote" : "annoyed",
 		"particleEmitter" : "chargeCloudsSpeed"
       },
       //Second dance
@@ -105,6 +106,7 @@
         "allowFlip" : true,
 		
 		"shake" : true,
+		"emote" : "happy",
 		"particleEmitter" : "chargeCloudsHeal"
       },
       //Third dance
@@ -129,6 +131,7 @@
         "allowFlip" : true,
 		
 		"shake" : true,
+		"emote" : "annoyed",
 		"particleEmitter" : "chargeCloudsAttack"
       },
       //Release buff clouds
@@ -153,7 +156,9 @@
         "twoHanded" : false,
 
         "allowRotate" : false,
-        "allowFlip" : true
+        "allowFlip" : true,
+		
+		"emote" : "laugh"
       }
     }
   }

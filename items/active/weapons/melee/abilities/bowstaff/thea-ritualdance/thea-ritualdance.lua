@@ -43,6 +43,9 @@ function TheaRitualDance:danceStart()
   if stance.shake then
 	animator.playSound("shakeLoop", -1)
   end
+  if stance.emote then
+	activeItem.emote(stance.emote)
+  end
   
   local timer = 0
   util.wait(stance.duration, function()
@@ -90,6 +93,9 @@ function TheaRitualDance:danceEnd()
   if stance.shake then
 	animator.playSound("shakeLoop", -1)
   end
+  if stance.emote then
+	activeItem.emote(stance.emote)
+  end
   
   local timer = 0
   util.wait(stance.duration, function()
@@ -136,6 +142,9 @@ function TheaRitualDance:releaseWindup()
   self.weapon.aimAngle = 0
   
   animator.playSound("windupLoop", -1)
+  if self.stances.releaseWindup.emote then
+	activeItem.emote(self.stances.releaseWindup.emote)
+  end
   
   --Smoothly rotate into the vaulting animation
   local progress = 0
@@ -171,6 +180,9 @@ function TheaRitualDance:releaseClouds()
   animator.playSound("release")
   animator.playSound("shakeLoop", -1)
   animator.setAnimationState("weapon", "releaseClouds")
+  if self.stances.release.emote then
+	activeItem.emote(self.stances.release.emote)
+  end
   
   --Set up for projectile spawning
   local firePosition = vec2.add(mcontroller.position(), activeItem.handPosition(animator.partPoint("blade", "projectileFirePoint") or {0,0}))

@@ -1,3 +1,5 @@
+require("/scripts/vec2.lua")
+
 function init()
   animator.setParticleEmitterOffsetRegion("flames", mcontroller.boundBox())
   animator.setParticleEmitterActive("flames", true)
@@ -6,11 +8,13 @@ function init()
   
   script.setUpdateDelta(5)
   
-  self.damageMultiplier = 0.015
-  self.minDamage = 1
-  self.maxDamage = 50
+  self.tickDamagePercentage = 0.035
   self.tickTime = 1.0
   self.tickTimer = self.tickTime
+  self.projectileTime = 0.25
+  self.projectileTimer = self.projectileTime
+  
+  self.lastPosition = nil
 end
 
 function update(dt)
@@ -18,17 +22,41 @@ function update(dt)
     effect.expire()
   end
 
-  self.tickTimer = self.tickTimer - dt
-  if self.tickTimer <= 0 then
+  --Overwrite other burning effects
+  status.removeEphemeralEffect("thea-burning")
+  status.removeEphemeralEffect("burning")
+  
+  --Dealing damage to self
+  local targetDamage = math.floor(status.resourceMax("health") * self.tickDamagePercentage) + 1
+  local actualDamage = math.min(targetDamage, 25)
+  
+  self.tickTimer = math.max(0, self.tickTimer - dt)
+  if self.tickTimer == 0 then
     self.tickTimer = self.tickTime
-	local damage = math.floor(status.resourceMax("health") * self.damageMultiplier)
-	local damageConfig = {
-	  power = math.max(self.minDamage, math.min(damage, self.maxDamage)),
-	  speed = 0,
-	  physics = "default"
-	}
-	world.spawnProjectile("jumprifleburnburstspawner", mcontroller.position(), effect.sourceEntity() or nil, {0, 0}, true, damageConfig)
+	
+    status.applySelfDamageRequest({
+        damageType = "IgnoresDef",
+        damage = actualDamage,
+        damageSourceKind = "fire",
+        sourceEntityId = entity.id()
+      })
 	animator.playSound("burst")
+  end
+  
+  --Spawning fire trail
+  self.projectileTimer = math.max(0, self.projectileTimer - dt)
+  local distanceMoved = {0,0}
+  if self.lastPosition then
+	distanceMoved  = world.distance(mcontroller.position(), self.lastPosition)
+  end
+  if self.projectileTimer == 0 and (not self.lastPosition or vec2.mag(distanceMoved) > 2) and mcontroller.onGround() then
+    self.projectileTimer = self.projectileTime
+	
+	local projectileConfig = {
+	  power = 2
+	}
+	world.spawnProjectile("jumprifleflame-noeffect", mcontroller.position(), effect.sourceEntity() or nil, {0, 0}, false, projectileConfig)
+	self.lastPosition = mcontroller.position()
   end
 end
 
