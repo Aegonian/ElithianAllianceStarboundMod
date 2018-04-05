@@ -14,7 +14,7 @@
 
   "radioMessagesOnPickup" : [ "pickupavikanhunting" ],
 
-  "animation" : "/items/active/weapons/bow/bow.animation",
+  "animation" : "/items/active/weapons/ranged/animations/thea-bow.animation",
   "animationParts" : {
     "bow" : "avikan-nomadashortbowfull.png"
   },
@@ -36,7 +36,7 @@
     "scripts" : ["/items/active/weapons/ranged/abilities/bow/thea-shortbowshot.lua"],
     "class" : "TheaShortBowShot",
 	
-	"fireOffset" : [1.75, 0],
+	"fireOffset" : [0.75, 0],
 
     "energyPerShot" : 15,
     "cooldownTime" : 0.2,

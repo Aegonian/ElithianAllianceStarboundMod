@@ -7,6 +7,7 @@ function TheaLongBowShot:init()
   self.energyPerShot = self.energyPerShot or 0
 
   self.drawTime = 0
+  animator.setAnimationState("bow", "idle")
   self.cooldownTimer = self.cooldownTime
 
   self:reset()
@@ -18,6 +19,8 @@ end
 
 function TheaLongBowShot:update(dt, fireMode, shiftHeld)
   WeaponAbility.update(self, dt, fireMode, shiftHeld)
+
+  world.debugPoint(self:firePosition(), "red")
 
   self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
 
@@ -32,6 +35,7 @@ end
 
 function TheaLongBowShot:reset()
   animator.setGlobalTag("drawFrame", "0")
+  animator.setAnimationState("bow", "idle")
   self.weapon:setStance(self.stances.idle)
 end
 
@@ -49,12 +53,12 @@ function TheaLongBowShot:draw()
     animator.setGlobalTag("drawFrame", drawFrame)
     self.stances.draw.frontArmFrame = self.drawArmFrames[drawFrame + 1]
 	
-	if self:perfectTiming() then
-      world.debugText("PERFECT", mcontroller.position(), "green")
-	  local canHoldBow = status.overConsumeResource("energy", self.holdEnergyUsage * self.dt)
-    else
-      world.debugText("NOPE", mcontroller.position(), "red")
-    end
+	--if self:perfectTiming() then
+      --world.debugText("PERFECT", mcontroller.position(), "green")
+	  --local canHoldBow = status.overConsumeResource("energy", self.holdEnergyUsage * self.dt)
+    --else
+      --world.debugText("NOPE", mcontroller.position(), "red")
+    --end
 
     coroutine.yield()
   end
@@ -68,7 +72,7 @@ function TheaLongBowShot:fire()
   animator.stopAllSounds("draw")
   animator.setGlobalTag("drawFrame", "0")
 
-  if not world.pointTileCollision(self:firePosition()) and status.overConsumeResource("energy", self.energyPerShot) then
+  if not world.lineTileCollision(mcontroller.position(), self:firePosition()) and status.overConsumeResource("energy", self.energyPerShot) then
     world.spawnProjectile(
         self:perfectTiming() and self.powerProjectileType or self.projectileType,
         self:firePosition(),
@@ -83,6 +87,8 @@ function TheaLongBowShot:fire()
     else
       animator.playSound("release")
     end
+	
+	animator.setAnimationState("bow", "loosed")
 
     self.drawTime = 0
 

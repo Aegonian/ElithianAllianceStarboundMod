@@ -4,7 +4,7 @@
   "price" : 1000,
   "rarity" : "Rare",
   "category" : "railPlatform",
-  "description" : "Place a user-controlled tram that works with rail tram stops",
+  "description" : "Place a user-controlled tram that works with rail tram stops.",
   "shortdescription" : "Alliance Rail Tram",
   "twoHanded" : true,
   "maxStack" : 10,

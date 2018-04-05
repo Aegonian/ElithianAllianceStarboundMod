@@ -3,7 +3,7 @@
   "effectConfig" : {
     "powerModifier" : 1.15
   },
-  "defaultDuration" : 20,
+  "defaultDuration" : 30,
 
   "scripts" : [
     "/stats/effects/thea-powerboost/thea-powerboost.lua"

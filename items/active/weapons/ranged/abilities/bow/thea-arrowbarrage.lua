@@ -6,6 +6,7 @@ function TheaArrowBarrage:init()
   self.energyPerShot = self.energyPerShot or 0
 
   self.drawTime = 0
+  animator.setAnimationState("bow", "idle")
   self.cooldownTimer = self.cooldownTime
 
   self.projectileParameters = self.projectileParameters or {}
@@ -77,6 +78,7 @@ end
 
 function TheaArrowBarrage:reset()
   animator.setGlobalTag("drawFrame", "0")
+  animator.setAnimationState("bow", "idle")
   -- self.weapon:setStance(self.stances.idle)
 end
 
@@ -147,6 +149,8 @@ function TheaArrowBarrage:fire()
     animator.playSound("release")
 
     self.drawTime = 0
+	
+	animator.setAnimationState("bow", "loosed")
 
     util.wait(self.stances.fire.duration)
   end

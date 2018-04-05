@@ -1,3 +1,5 @@
+--Modified bow shot ability that allows for a loosed animation state
+
 require "/scripts/vec2.lua"
 
 -- Bow primary ability
@@ -7,6 +9,7 @@ function TheaBowShot:init()
   self.energyPerShot = self.energyPerShot or 0
 
   self.drawTime = 0
+  animator.setAnimationState("bow", "idle")
   self.cooldownTimer = self.cooldownTime
 
   self:reset()
@@ -19,6 +22,8 @@ end
 function TheaBowShot:update(dt, fireMode, shiftHeld)
   WeaponAbility.update(self, dt, fireMode, shiftHeld)
 
+  world.debugPoint(self:firePosition(), "red")
+  
   self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
 
   if not self.weapon.currentAbility and self.fireMode == (self.activatingFireMode or self.abilitySlot) and self.cooldownTimer == 0 and (self.energyPerShot == 0 or not status.resourceLocked("energy")) then
@@ -32,6 +37,7 @@ end
 
 function TheaBowShot:reset()
   animator.setGlobalTag("drawFrame", "0")
+  animator.setAnimationState("bow", "idle")
   self.weapon:setStance(self.stances.idle)
 end
 
@@ -49,11 +55,11 @@ function TheaBowShot:draw()
     animator.setGlobalTag("drawFrame", drawFrame)
     self.stances.draw.frontArmFrame = self.drawArmFrames[drawFrame + 1]
 	
-	if self:perfectTiming() then
-      world.debugText("PERFECT", mcontroller.position(), "green")
-    else
-      world.debugText("NOPE", mcontroller.position(), "red")
-    end
+	--if self:perfectTiming() then
+      --world.debugText("PERFECT", mcontroller.position(), "green")
+    --else
+      --world.debugText("NOPE", mcontroller.position(), "red")
+    --end
 
     coroutine.yield()
   end
@@ -67,7 +73,7 @@ function TheaBowShot:fire()
   animator.stopAllSounds("draw")
   animator.setGlobalTag("drawFrame", "0")
 
-  if not world.pointTileCollision(self:firePosition()) and status.overConsumeResource("energy", self.energyPerShot) then
+  if not world.lineTileCollision(mcontroller.position(), self:firePosition()) and status.overConsumeResource("energy", self.energyPerShot) then
     world.spawnProjectile(
         self:perfectTiming() and self.powerProjectileType or self.projectileType,
         self:firePosition(),
@@ -82,6 +88,8 @@ function TheaBowShot:fire()
     else
       animator.playSound("release")
     end
+	
+	animator.setAnimationState("bow", "loosed")
 
     self.drawTime = 0
 

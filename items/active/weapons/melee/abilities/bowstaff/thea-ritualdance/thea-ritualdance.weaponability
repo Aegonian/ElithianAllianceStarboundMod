@@ -28,17 +28,46 @@
 		"particles" : [
 		  { "particle" : "akkimarifogsmall-attack"}
 		]
+	  },
+      "sparks" : {
+		"emissionRate" : 10,
+		"transformationGroups" : ["weapon"],
+		"offsetRegion" : [0.25, 3.0, 0.25, 3.0],
+		"particles" : [
+		  {
+		  "particle" : {
+            "type" : "ember",
+            "size" : 1.0,
+            "color" : [255, 226, 67, 255],
+            "light" : [191, 181, 120],
+            "fade" : 0.5,
+            "position" : [0.0, 0],
+            "initialVelocity" : [2.0, 0.0],
+            "finalVelocity" : [0.0, -50.0],
+            "approach" : [1, 20],
+            "timeToLive" : 0.75,
+            "layer" : "front",
+            "fullbright" : true,
+            "variance" : {
+			  "initialVelocity" : [4, 3],
+			  "timeToLive" : 0.5
+			  }
+			}
+		  }
+		]
 	  }
     },
     "sounds" : {
       "shakeLoop" : [ "/sfx/melee/shalakka_rattle_long.ogg" ],
 	  "windupLoop" : [ "/sfx/melee/spear_twirl_loop.ogg" ],
-	  "release" : [ "/sfx/gun/pumpgun_draw2.ogg" ]
+	  "release" : [ "/sfx/gun/pumpgun_draw2.ogg" ],
+	  "engage" : [ "/sfx/blocks/footstep_composite.ogg" ],
+	  "grind" : [ "/sfx/rails/rail_grind_loop.ogg" ]
     }
   },
 
   "ability" : {
-    "name" : "Shalakka Ritual",
+    "name" : "Ritual / Rail Hook",
     "type" : "thea-ritualdance",
     "scripts" : ["/items/active/weapons/melee/abilities/bowstaff/thea-ritualdance/thea-ritualdance.lua"],
     "class" : "TheaRitualDance",
@@ -57,6 +86,16 @@
 	"projectileParameters" : {},
 	"projectileInaccuracy" : 0.9,
 	"projectileAimAngleOffset" : 0,
+	
+	//Rail Hook Settings
+	"allowRailHook" : true,
+	"hookCooldownTime" : 0.25,
+	"railConfig" : {
+	  "useGravity" : true,
+	  "gravityMultiplier" : 1.2
+	},
+	"connectionOffset" : [0, 4.5],
+	"railFriction" : 0.25,
 
     "stances" : {
       //First dance
@@ -159,6 +198,16 @@
         "allowFlip" : true,
 		
 		"emote" : "laugh"
+      },
+	  //Rail Hook
+      "railHook" : {
+        "armRotation" : 80,
+        "weaponRotation" : -65,
+		"weaponOffset" : [0, 0.5],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
       }
     }
   }

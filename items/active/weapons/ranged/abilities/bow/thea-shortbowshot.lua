@@ -1,3 +1,5 @@
+--Modified bow shot ability that excludes the perfect timing mechanic
+
 require "/scripts/vec2.lua"
 
 -- Bow primary ability
@@ -7,6 +9,7 @@ function TheaShortBowShot:init()
   self.energyPerShot = self.energyPerShot or 0
 
   self.drawTime = 0
+  animator.setAnimationState("bow", "idle")
   self.cooldownTimer = self.cooldownTime
 
   self:reset()
@@ -18,6 +21,8 @@ end
 
 function TheaShortBowShot:update(dt, fireMode, shiftHeld)
   WeaponAbility.update(self, dt, fireMode, shiftHeld)
+
+  world.debugPoint(self:firePosition(), "red")
 
   self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
 
@@ -32,6 +37,7 @@ end
 
 function TheaShortBowShot:reset()
   animator.setGlobalTag("drawFrame", "0")
+  animator.setAnimationState("bow", "idle")
   self.weapon:setStance(self.stances.idle)
 end
 
@@ -61,7 +67,7 @@ function TheaShortBowShot:fire()
   animator.stopAllSounds("draw")
   animator.setGlobalTag("drawFrame", "0")
 
-  if not world.pointTileCollision(self:firePosition()) and status.overConsumeResource("energy", self.energyPerShot) then
+  if not world.lineTileCollision(mcontroller.position(), self:firePosition()) and status.overConsumeResource("energy", self.energyPerShot) then
     world.spawnProjectile(
         self.projectileType,
         self:firePosition(),
@@ -74,6 +80,8 @@ function TheaShortBowShot:fire()
 	animator.playSound("release")
 
     self.drawTime = 0
+	
+	animator.setAnimationState("bow", "loosed")
 
     util.wait(self.stances.fire.duration)
   end

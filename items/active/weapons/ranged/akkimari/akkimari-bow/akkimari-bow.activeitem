@@ -13,7 +13,7 @@
   "twoHanded" : true,
   "itemTags" : ["weapon","ranged","bow","akkimari"],
 
-  "animation" : "/items/active/weapons/bow/bow.animation",
+  "animation" : "/items/active/weapons/ranged/animations/thea-bow.animation",
   "animationParts" : {
     "bow" : "akkimari-bow.png"
   },
@@ -36,7 +36,7 @@
     "scripts" : ["/items/active/weapons/ranged/abilities/bow/thea-bowshot.lua"],
     "class" : "TheaBowShot",
 	
-	"fireOffset" : [1.75, 0],
+	"fireOffset" : [0.75, 0],
 
     "energyPerShot" : 30,
     "cooldownTime" : 0.4,

@@ -31,17 +31,17 @@
       "parts" : {
         "middleFullbright" : {
 		  "properties" : {
-		    "offset" : [1.0, -0.875]
+		    "offset" : [1.125, -0.75]
 		  }
 		},
 		"charge" : {
 		  "properties" : {
-		    "offset" : [1.0, -0.875]
+		    "offset" : [1.125, -0.75]
 		  }
 		},
 		"chargehold" : {
 		  "properties" : {
-		    "offset" : [1.0, -0.875]
+		    "offset" : [1.125, -0.75]
 		  }
 		}
       }
@@ -54,7 +54,7 @@
     }
   },
 
-  "baseOffset" : [1.0, -0.875],
+  "baseOffset" : [1.125, -0.75],
   "muzzleOffset" : [2.625, 0.0],
 
   "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
@@ -91,7 +91,10 @@
         "twoHanded" : true,
 
         "allowRotate" : true,
-        "allowFlip" : true
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
       },
       "charge" : {
         "armRotation" : -2,
@@ -99,7 +102,10 @@
         "twoHanded" : true,
 
         "allowRotate" : true,
-        "allowFlip" : true
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
       },
       "fire" : {
         "armRotation" : 4,
@@ -108,7 +114,10 @@
         "twoHanded" : true,
 
         "allowRotate" : false,
-        "allowFlip" : false
+        "allowFlip" : false,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
       },
       "cooldown" : {
         "duration" : 0.05,
@@ -118,7 +127,10 @@
         "twoHanded" : true,
 
         "allowRotate" : false,
-        "allowFlip" : false
+        "allowFlip" : false,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
       },
       "discharge" : {
         "duration" : 0.1,
@@ -127,7 +139,10 @@
         "twoHanded" : true,
 
         "allowRotate" : false,
-        "allowFlip" : false
+        "allowFlip" : false,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
       }
 	}
   },

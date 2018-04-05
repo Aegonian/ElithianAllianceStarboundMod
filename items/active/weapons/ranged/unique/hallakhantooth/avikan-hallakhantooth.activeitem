@@ -43,7 +43,7 @@
     "scripts" : ["/items/active/weapons/ranged/abilities/bow/thea-longbowshot.lua"],
     "class" : "TheaLongBowShot",
 	
-	"fireOffset" : [1.75, 0],
+	"fireOffset" : [0.75, 0],
 
     "energyPerShot" : 40,
 	"holdEnergyUsage" : 10,

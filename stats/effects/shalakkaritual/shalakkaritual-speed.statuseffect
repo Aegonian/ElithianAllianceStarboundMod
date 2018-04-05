@@ -3,7 +3,7 @@
   "effectConfig" : {
 	"speedModifier" : 1.35
   },
-  "defaultDuration" : 15,
+  "defaultDuration" : 25,
 
   "scripts" : [
     "/stats/effects/thea-runboost/thea-runboost.lua"

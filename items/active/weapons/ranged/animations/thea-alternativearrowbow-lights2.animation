@@ -1,8 +1,15 @@
-//Animation for bow-type weapon which can swap ammo/arrow types. Has an additional layer for adding fullbright parts to the ammo sprites
+//Animation for bow-type weapon which can swap ammo/arrow types. Has an additional layer for adding fullbright parts to both the bow and ammo sprites
 
 {
   "animatedParts" : {
     "stateTypes" : {
+      "bow" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {},
+          "loosed" : {}
+        }
+      },
       "arrows" : {
         "default" : "hidden",
         "states" : {
@@ -16,8 +23,21 @@
       "bow" : {
         "properties" : {
           "centered" : true,
-          "image" : "<partImage>:<drawFrame>",
           "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "bow" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:<drawFrame>"
+              }
+            },
+            "loosed" : {
+              "properties" : {
+                "image" : "<partImage>:loosed"
+              }
+            }
+          }
         }
       },
 	  "lights" : {
@@ -25,8 +45,21 @@
           "zLevel" : 1,
           "centered" : true,
 		  "fullbright" : true,
-          "image" : "<partImage>:<drawFrame>",
           "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "bow" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:<drawFrame>"
+              }
+            },
+            "loosed" : {
+              "properties" : {
+                "image" : "<partImage>:loosed"
+              }
+            }
+          }
         }
       },
 	  "arrows" : {

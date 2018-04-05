@@ -1,4 +1,4 @@
-//Animation for bow-type weapon which can swap ammo/arrow types
+//Animation for bow-type weapon which has a unique animation state for when the arrow has been loosed
 
 {
   "animatedParts" : {
@@ -8,13 +8,6 @@
         "states" : {
           "idle" : {},
           "loosed" : {}
-        }
-      },
-      "arrows" : {
-        "default" : "hidden",
-        "states" : {
-          "hidden" : {},
-          "visible" : {}
         }
       }
     },
@@ -35,27 +28,6 @@
             "loosed" : {
               "properties" : {
                 "image" : "<partImage>:loosed"
-              }
-            }
-          }
-        }
-      },
-	  "arrows" : {
-        "properties" : {
-          "zLevel" : 1,
-          "centered" : true,
-          "transformationGroups" : ["weapon"]
-        },
-        "partStates" : {
-          "arrows" : {
-            "hidden" : {
-              "properties" : {
-                "image" : ""
-              }
-            },
-            "visible" : {
-              "properties" : {
-                "image" : "<partImage>:<drawFrame>"
               }
             }
           }
