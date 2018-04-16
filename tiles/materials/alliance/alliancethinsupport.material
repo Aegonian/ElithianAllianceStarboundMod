@@ -1,0 +1,29 @@
+{
+  "materialId" : 30156,
+  "materialName" : "alliancethinsupport",
+  "particleColor" : [97, 97, 97, 255],
+  "itemDrop" : "alliancethinsupport", 
+  "shortdescription" : "Alliance Support Grid",
+  
+  "description" : "Light structural support beams.",
+  "glitchDescription" : "Observation. This is likely a structural support beam.",
+  "floranDescription" : "Pillarss for ssupporting light thingss.",
+  "novakidDescription" : "Some sorta light support structure.",
+  
+  "drodenDescription" : "Analysis complete. Structural support beam.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  "blocksLiquidFlow" : false,
+  
+  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderParameters" : {
+    "texture" : "alliancethinsupport.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 60
+  }
+}

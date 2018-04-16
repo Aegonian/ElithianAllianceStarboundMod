@@ -72,7 +72,7 @@
       "threatLevel" : 1,
       "gravity" : 80,
       "worldSize" : [2000, 1000],
-      "dungeonBaseHeight" : 350,
+      "dungeonBaseHeight" : 800,
 	  "dungeonSurfaceHeight" : 130,
       "ambientLightLevel" : [128, 128, 128],
       "biome" : "elithia",

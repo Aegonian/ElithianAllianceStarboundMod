@@ -7,8 +7,10 @@
           "occupied" : {
 			"properties" : {
               "particleEmittersOn" : [ "drips" ],
-			  "persistentSound" : "/sfx/objects/allianceshower.ogg",
-			  "immediateSound" : "/sfx/objects/oillantern_on.ogg"
+			  "persistentSound" : "/sfx/objects/allianceshower2.ogg",
+			  "persistentSoundRangeMultiplier" : 0.3,
+			  "immediateSound" : "/sfx/objects/oillantern_on.ogg",
+			  "immediateSoundRangeMultiplier" : 0.3
             }
 		  },
           "empty" : {

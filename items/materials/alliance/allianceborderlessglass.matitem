@@ -1,0 +1,13 @@
+{
+  "itemName" : "allianceborderlessglass",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "allianceborderlessglass.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  
+  "shortdescription" : "Borderless Alliance Glass",
+  "description" : "Triple-pane glass-like plastic, perfectly insulated.",
+
+  "materialId" : 30158
+}

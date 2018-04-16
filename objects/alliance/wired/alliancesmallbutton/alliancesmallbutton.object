@@ -26,7 +26,7 @@
   ],
 
   "scripts" : [
-    "/objects/wired/momentaryswitch/momentaryswitch.lua",
+    "/objects/scripts/thea-momentaryswitch.lua",
     "/scripts/npcToyObject.lua"
   ],
   "scriptDelta" : 5,

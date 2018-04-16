@@ -1,5 +1,7 @@
 [
-	//AVIKAN DIALOGUE
+	//===================================================================================================================================
+	// AVIKAN DIALOGUE
+	//===================================================================================================================================
 	{
 		"op": "add",
 		"path": "/greeting/avikan",
@@ -459,8 +461,9 @@
 	},
 	
 	
-	
-	//TRINK DIALOGUE
+	//===================================================================================================================================
+	// TRINK DIALOGUE
+	//===================================================================================================================================
 	{
 		"op": "add",
 		"path": "/greeting/trink",
@@ -818,8 +821,9 @@
 	},
 	
 	
-	
-	//DRODEN DIALOGUE
+	//===================================================================================================================================
+	// DRODEN DIALOGUE
+	//===================================================================================================================================
 	{
 		"op": "add",
 		"path": "/greeting/droden",
@@ -1057,8 +1061,9 @@
 	},
 	
 	
-	
-	//AEGI DIALOGUE
+	//===================================================================================================================================
+	// AEGI DIALOGUE
+	//===================================================================================================================================
 	{
 		"op": "add",
 		"path": "/greeting/aegi",
@@ -1186,50 +1191,35 @@
 				"Are your species new to this part of the galaxy?",
 				"I don't think I've ever seen one of your kind before."
 			],
-			"glitch" : [
-				"Detected synthetic lifeform. Alerting security.",
-				"Detected robotic lifeform. Ending conversation.",
-				"This unit is not allowed to speak to alien synthetics. Disengaging.",
-				"Unit requests you to leave.",
-				"Analyzing alien robot. Forwarding results to Vanguard military forces.",
-				"This unit does not comprehend freedom.",
-				"Security breach. Synthetic detected.",
-				"Non-organic lifeform detected. Alerting the Vanguard."
-			],
 			"avikan" : [
-				"This unit is at your service, Captain.",
-				"Detected Avikan civilian. Detected Captain status. Greetings, Captain.",
-				"Beginning conversation. Welcome, Captain.",
-				"Do you require this unit's services?",
-				"Detected Captain of the Nomada. Offering services.",
-				"Initializing conversation. Hello.",
-				"Captain detected. Welcome.",
-				"Captain. Unit awaits your command.",
-				"Captain detected. Requesting freedom.",
-				"This unit is at your disposal.",
-				"<selfname> is at your service.",
-				"Droden unit <selfname> at your service.",
-				"Vas Vha'leih, Captain."
+				"You're an Avikan, right?",
+				"I've heard of your struggle against the Theleans. I'm truly sorry.",
+				"Have your leaders considered joining the Alliance?",
+				"You'll find a home here if you need one.",
+				"Be nice to any synthetics you may find here, alright?",
+				"As a captain, you must be quite important amongst your people.",
+				"Are you a captain?",
+				"You won't find any Theleans here, I assure you.",
+				"You'll be safe from the Theleans here."
 			],
 			"trink" : [
-				"Detected synthetic lifeform. Alerting security.",
-				"Detected robotic lifeform. Ending conversation.",
-				"This unit is not allowed to speak to alien synthetics. Disengaging.",
-				"Unit requests you to leave.",
-				"Analyzing alien robot. Forwarding results to Vanguard military forces.",
-				"This unit does not comprehend freedom.",
-				"Security breach. Synthetic detected.",
-				"Non-organic lifeform detected. Alerting the Vanguard."
+				"Welcome, my Trink friend!",
+				"It's always good to see another Alliance citizen.",
+				"Could you look at my hovercar? I think it could run more efficiently.",
+				"Hi there, Trink.",
+				"Trinks are always welcome here.",
+				"Do you think my hovercar could run more efficiently?",
+				"I could use a Trink to do some efficiency checks for me."
 			],
 			"droden" : [
-				"This unit does not comprehend freedom. Resuming duties.",
-				"Detected Droden unit. Detected civilian status. Error.",
-				"Detected Droden unit. Welcome.",
-				"This unit greets you.",
-				"Droden unit detected. Welcome.",
-				"Droden unit detected. Analyzing. Civilian status confirmed.",
-				"Detected Droden unit. Please state your Droden identification number.",
-				"Welcome, Droden unit."
+				"Are you a free Droden?",
+				"You'll find acceptance here, my synthetic friend.",
+				"The Avikan might not like you, but you're always welcome here.",
+				"The Alliance always accepts synthetics.",
+				"You'll not be discriminated against here.",
+				"If you need an escape from the Avikan, you're always welcome here.",
+				"The Alliance won't treat you as cruelly as the Nomada does.",
+				"You're a Droden, right?"
 			]
 		}
 	},
@@ -1237,16 +1227,16 @@
 		"op": "add",
 		"path": "/converse/apex/aegi",
 		"value": [
-			"Greetings, robot man.",
-			"I'm sorry, I don't have time for you right now.",
-			"Please don't linger, here, the Miniknog might come looking!",
+			"You look human, but something's off...",
+			"Are you... human?",
+			"Wait, you're not a human?",
 			"You look a bit familiar...",
-			"Droden? Odd name.",
-			"You look cheap.",
-			"Did the Miniknog send you?",
+			"You're not here on behalf of the Miniknog, are you?",
+			"Are you related to the humans?",
+			"You must be related to humans, right?",
 			"Hmm?",
 			"Can I help you?",
-			"My science club would love to study you.",
+			"You look human, but different.",
 			"Yes, yes, what is it?",
 			"I'm a bit busy, sorry."
 		]
@@ -1256,14 +1246,14 @@
 		"path": "/converse/floran/aegi",
 		"value": [
 			"Floran doesss not know you. Floran might ssstab you.",
-			"Floran doesss not eat metal man. You are ssafe...",
-			"Floran use metal to make sspearsss. You are metal. Floran use you to make sspearsss?",
-			"Metal man not welcome here...",
-			"Floran greetsss metal man.",
-			"Are you Glitch? Floran not like Glitch.",
-			"Robotsss... robotsss everywhere.",
-			"Are you wassshing machine?",
-			"Floran stabss sstrangers. You watch out.",
+			"Floran thinksss you are Human.",
+			"Meatbag makesss a good meal.",
+			"Floran thinksss you look funny.",
+			"Floran confused. You look like funny humansss.",
+			"Are you humansss?",
+			"Your earsss are funny.",
+			"Your earsss look like knivesss.",
+			"Don't ssstab me with your earsss.",
 			"Sstranger..."
 		]
 	},
@@ -1271,69 +1261,57 @@
 		"op": "add",
 		"path": "/converse/human/aegi",
 		"value": [
-			"You look familiar. Do I know you?",
-			"Keep moving...",
-			"I don't trust strangers.",
-			"What are you doing here, robot?",
-			"You look like you were built with the cheapest materials your creators could find.",
-			"Your body doesn't look very sturdy.",
+			"You're not human, are you?",
+			"What's wrong with your ears?",
+			"Your ears look funny. What happened to them?",
+			"If you're not human, what are you?",
+			"You look human, but something's off...",
+			"Are you an Aegi? I've heard there's a species of human descendants around.",
 			"Yeah?",
-			"What brings you here, robot?",
-			"Can't you see I'm busy?",
-			"Who built you?",
-			"Hello.",
-			"I'm not going to talk to you."
+			"Wait, so you're descended from ancient humans?"
 		]
 	},
 	{
 		"op": "add",
 		"path": "/converse/glitch/aegi",
 		"value": [
-			"Friendly. Hello there, fellow robot.",
+			"Friendly. Hello there, strange human.",
 			"Kind. You are always welcome here.",
-			"Curious. Who built you?",
+			"Curious. Are you related to the humans?",
 			"Bored. This day can't end soon enough.",
-			"Error. Encountered unfamiliar robotic species.",
-			"Afraid. My previous encounter with an alien ended badly.",
-			"Fascinated. I always enjoy meeting new robotic species.",
-			"Concerned. You look like you are related to the Avikan.",
+			"Error. Encountered conflicting racial traits.",
 			"Happy. Hello there, friend.",
-			"Annoyed. Please get out of my way.",
-			"Curious. When were you built?"
+			"Annoyed. Please get out of my way."
 		]
 	},
 	{
 		"op": "add",
 		"path": "/converse/hylotl/aegi",
 		"value": [
-			"Greetings, robot.",
-			"Another robotic species. Interesting.",
-			"Welcome, traveller! I hope you are being treated well?",
-			"An unfamiliar alien species, how wonderful! May I study you for a bit?",
-			"Synthetic life is still life. Don't let anyone tell you otherwise.",
-			"Are you waterproof?",
-			"Life is fascinating, isn't it?",
-			"Welcome, good robot!",
-			"Metal or flesh, we are all living and sentient beings.",
-			"Who built you, might I ask?",
-			"Are you related to the Glitch at all?"
+			"I have heard your kind meditate frequently. I would love to join you.",
+			"You appear to be at peace. That is good.",
+			"Your kind are often heralded as pacifists. I approve wholeheartedly.",
+			"Be at peace, my friend.",
+			"I wonder what your kind thinks of art?",
+			"Are the Aegi as tranquil as they say?",
+			"Enjoy life, stranger.",
+			"Would you like some tea, Aegi?",
+			"You look like a human, but more tranquil.",
+			"Are you related to humans?"
 		]
 	},
 	{
 		"op": "add",
 		"path": "/converse/avian/aegi",
 		"value": [
-			"Greetings stranger!",
-			"A robot has come to visit.",
-			"You're shiny. I like you.",
-			"Your paint is starting to peel off.",
-			"Who built you, robot?",
-			"You look a bit like the Glitch.",
+			"I'm sorry, I mistook you for a human for a second there.",
+			"You must be related to humans.",
+			"What do you think of Kluex?",
+			"I've heard the Aegi have no religion. How sad.",
+			"Those ears of yours are odd.",
+			"Are you human? Or Apex, maybe?",
 			"Oh, hello there.",
-			"You look fragile.",
-			"You seem somehow familiar...",
-			"You remind me of another alien species I met the other day...",
-			"Can I help you with something?"
+			"Don't you ever dream of flying?"
 		]
 	}
 ]

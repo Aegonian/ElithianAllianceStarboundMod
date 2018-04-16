@@ -1,0 +1,40 @@
+{
+  "objectName" : "alliancebannernotix",
+  "colonyTags" : ["alliance","notix"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 100,
+  "description" : "A banner adorned with the emblem of the Notician Federation.",
+  "shortdescription" : "Notician Federation Banner",
+  "race" : "notix",
+  
+  "floranDescription" : "Floran likesss colourful bannersss.",
+  "glitchDescription" : "Observation. This banner is adorned with some alien emblem.",
+  
+  "drodenDescription" : "Detected alien emblem. Emblem identified as Notician Federation iconography.",
+  
+  "inventoryIcon" : "alliancebannernotixicon.png",
+  "orientations" : [
+    {
+      "image" : "alliancebannernotix.png:<color>",
+      "imagePosition" : [-16, -72],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "bgAnchors" : [
+		[-2, 0], [-1, 0], [0, 0], [1, 0]
+	  ]
+    },
+	{
+      "image" : "alliancebannernotixtop.png:<color>",
+      "imagePosition" : [-16, -72],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ]
+}

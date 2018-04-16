@@ -84,11 +84,11 @@
 		//Alliance Weapons
 	  [ "thea-sidewinder", "thea-skylighter" ],
 	  [ "thea-defiant", "thea-meltdown" ],
-	  [ "thea-siegerunner" ],
+	  [ "thea-siegerunner", "thea-lightrunner" ],
 		//Akkimari Weapons
 	  [ "akkimari-sawbladelauncher", "akkimari-scrapyard" ],
 	  [ "akkimari-blastsling", "akkimari-karchaablade" ],
-	  [ "akkimari-charakkiblade" ]
+	  [ "akkimari-charakkiblade", "akkimari-shalakkaritualstaff" ]
     ]
   }
 }

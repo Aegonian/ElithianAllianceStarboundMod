@@ -20,5 +20,33 @@
 	  "defaultSecondaryColors" : ["7F7F7F", "616161", "474747", "333333"],	//From LIGHT to DARK
 	  "animationCustom" : {}
 	}
+  },
+  {
+    "op" : "add",
+    "path" : "/alliance",
+    "value" : {
+	  "stats" : {
+		"speed" : 6,
+		"control" : 6
+	  },
+	  "partParameters" : {},
+	  "partImages" : {
+		"backBoosterBack" : "booster/alliance_back_back.png",
+		"backBoosterFullbright" : "boosterflame/alliance_back.png",
+		"backBoosterFront" : "booster/alliance_back_front.png",
+		"frontBoosterBack" : "booster/alliance_front_back.png",
+		"frontBoosterFullbright" : "boosterflame/alliance_front.png",
+		"frontBoosterFront" : "booster/alliance_front_front.png"
+	  },
+	  "defaultPrimaryColors" : ["DBDBDB", "B5B5B5", "848484", "4C4C4C"],	//From LIGHT to DARK
+	  "defaultSecondaryColors" : ["838383", "555555", "383838", "1E1E1E"],	//From LIGHT to DARK
+	  "animationCustom" : {
+		"animatedParts" : { "parts" : {
+		  "frontBoosterFullbright" : { "properties" : {
+			"zLevel" : 10.5
+		  }}
+		}}
+	  }
+	}
   }
 ]

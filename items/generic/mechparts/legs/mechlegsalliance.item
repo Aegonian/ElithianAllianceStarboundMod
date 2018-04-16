@@ -1,0 +1,15 @@
+{
+  "itemName" : "mechlegsalliance",
+  "price" : 4480,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "category" : "mechPart",
+  "tooltipKind" : "mechlegs",
+  "builder" : "/items/buildscripts/buildmechpart.lua",
+  "inventoryIcon" : "mechlegsalliance.png",
+  "description" : "Reliable mech legs built by Enerth Engineering.",
+  "shortdescription" : "Guardian Mech Legs",
+  "itemTags" : [ ],
+
+  "mechPart" : ["legs", "alliance"]
+}

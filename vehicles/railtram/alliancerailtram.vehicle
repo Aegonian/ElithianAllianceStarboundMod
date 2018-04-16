@@ -8,7 +8,7 @@
   "persistent" : true,
 
   "script" : "/vehicles/railtram/railtram.lua",
-  "animation" : "/vehicles/railtram/alliancerailtram.animation",
+  "animation" : "/vehicles/railtram/thea-railtram.animation",
 
   "animationPartTags" : {
     "gate" : {

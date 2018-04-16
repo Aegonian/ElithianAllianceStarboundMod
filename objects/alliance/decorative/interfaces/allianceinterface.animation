@@ -1,0 +1,40 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "light" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "on" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "loop"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "light" : {
+        "properties" : {
+          "centered" : false
+        },
+        "partStates" : {
+          "light" : {
+            "off" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "on" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.<frame>",
+                "fullbright" : true
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

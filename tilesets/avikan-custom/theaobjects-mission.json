@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":3,
+ "tilecount":4,
  "tileheight":64,
  "tileproperties":
     {
@@ -32,6 +32,14 @@
          "imagePositionY":"0",
          "object":"returnavikanoutpostteleporter",
          "tilesetDirection":"right"
+        },
+     "3":
+        {
+         "\/\/shortdescription":"Hidden Light",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"theahiddenlight",
+         "tilesetDirection":"right"
         }
     },
  "tiles":
@@ -47,6 +55,10 @@
      "2":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/mission\/returnavikanoutpostteleporter.png"
+        },
+     "3":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/mission\/theahiddenlighticon.png"
         }
     },
  "tilewidth":216

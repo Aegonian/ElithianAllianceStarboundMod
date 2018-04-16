@@ -32,7 +32,7 @@
   "inventoryIcon" : "allianceinterface6icon.png",
   "orientations" : [
     {
-      "image" : "allianceinterface6.png:<color>.<frame>",
+      "dualImage" : "allianceinterface6.png:<color>.<frame>",
       "imagePosition" : [0, 0],
 	  
 	  "fullbright" : true,
@@ -44,5 +44,20 @@
       "spaceScan" : 0.1,
       "anchors" : [ "background" ]
     }
-  ]
+  ],
+
+  "animation" : "/objects/alliance/decorative/interfaces/allianceinterface.animation",
+  "animationParts" : {
+    "light" : "allianceinterface6.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "defaultLightState" : true,
+  "lightColor" : [0, 44, 76],
+  "lightColorOff" : [0, 0, 0],
+
+  "inputNodes" : [ [0, 0] ]
 }

@@ -1,0 +1,46 @@
+{
+  "objectName" : "allianceglassroof",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 40,
+  "description" : "A large, slanted glass roof.",
+  "shortdescription" : "Alliance Glass Roof",
+  "race" : "aegi",
+
+  "floranDescription" : "Floran confused by glasss roof.",
+  "glitchDescription" : "Amazed. This window is extraordinarily strong.",
+  "drodenDescription" : "Analysis. Glass.",
+  "akkimariDescription" : "Glass roof.",
+
+  "inventoryIcon" : "allianceglassrooficon.png",
+  "orientations" : [
+    {
+      "image" : "allianceglassroofleft.png:<color>",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+      "anchors" : [],
+      "collision" : "solid",
+      "collisionSpaces" : [
+		[0, 0], [1, 1], [2, 1], [3, 2], [4, 2], [5, 3], [6, 3], [7, 4], [8, 4], [9, 5]
+      ]
+    },
+    {
+      "image" : "allianceglassroofright.png:<color>",
+      "imagePosition" : [-72, 0],
+      "direction" : "right",
+      "flipImages" : false,
+
+      "spaceScan" : 0.1,
+      "anchors" : [],
+      "collision" : "solid",
+      "collisionSpaces" : [
+		[-9, 5], [-8, 4], [-7, 4], [-6, 3], [-5, 3], [-4, 2], [-3, 2], [-2, 1], [-1, 1], [0, 0]
+      ]
+    }
+  ]
+}

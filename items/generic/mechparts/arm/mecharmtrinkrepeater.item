@@ -1,0 +1,15 @@
+{
+  "itemName" : "mecharmtrinkrepeater",
+  "price" : 5600,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "category" : "mechPart",
+  "tooltipKind" : "mecharm",
+  "builder" : "/items/buildscripts/buildmechpart.lua",
+  "inventoryIcon" : "mecharmtrinkrepeater.png",
+  "description" : "A Trinkian laser repeater arm for modular mech suits.",
+  "shortdescription" : "Laser Repeater Mech Arm",
+  "itemTags" : [ ],
+
+  "mechPart" : ["arm", "trinkrepeater"]
+}

@@ -1,0 +1,40 @@
+{
+  "objectName" : "alliancebannerdremeton",
+  "colonyTags" : ["alliance","dremeton"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 100,
+  "description" : "A banner adorned with the emblem of the Dremeton Union of Cities.",
+  "shortdescription" : "Union of Cities Banner",
+  "race" : "dremeton",
+  
+  "floranDescription" : "Floran likesss colourful bannersss.",
+  "glitchDescription" : "Observation. This banner is adorned with some alien emblem.",
+  
+  "drodenDescription" : "Detected alien emblem. Emblem identified as Dremeton Union of Cities iconography.",
+  
+  "inventoryIcon" : "alliancebannerdremetonicon.png",
+  "orientations" : [
+    {
+      "image" : "alliancebannerdremeton.png:<color>",
+      "imagePosition" : [-16, -72],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "bgAnchors" : [
+		[-2, 0], [-1, 0], [0, 0], [1, 0]
+	  ]
+    },
+	{
+      "image" : "alliancebannerdremetontop.png:<color>",
+      "imagePosition" : [-16, -72],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ]
+}

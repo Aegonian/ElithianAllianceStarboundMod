@@ -121,6 +121,18 @@
       "offset" : [0, 450],
       "parallax" : [8.1, 4.2]
     },
+    {
+      "kind" : "creonforestback",
+      "offset" : [0, 30],
+      "parallax" : [8.5, 4.2],
+      "fadePercent" : 0.1
+    },
+    {
+      "kind" : "creoncitywall",
+      "offset" : [0, 5],
+      "parallax" : [8.75, 4.2],
+      "fadePercent" : 0.1
+    },
 	//Background City
     {
       "kind" : "cityships",
@@ -142,13 +154,13 @@
     },
     {
       "kind" : "creonskyline",
-      "offset" : [0, 10],
+      "offset" : [0, 0],
       "parallax" : [9.0, 4.3],
       "fadePercent" : 0.40
     },
     {
       "kind" : "creonskylinenight",
-      "offset" : [300, 10],
+      "offset" : [301, 0],
       "parallax" : [9.0, 4.3],
       "fadePercent" : 0.40,
       "unlit" : true,
@@ -164,7 +176,7 @@
     },
     {
       "kind" : "cityscape5",
-      "offset" : [0, 25],
+      "offset" : [0, 0],
       "parallax" : [10.0, 4.4],
       "fadePercent" : 0.50
     },
@@ -178,7 +190,7 @@
     },
     {
       "kind" : "cityscape6",
-      "offset" : [0, 25],
+      "offset" : [0, 0],
       "parallax" : [11.0, 4.5],
       "fadePercent" : 0.60
     },

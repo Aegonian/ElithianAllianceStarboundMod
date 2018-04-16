@@ -1,0 +1,40 @@
+{
+  "objectName" : "alliancebanneraegi",
+  "colonyTags" : ["alliance","notix"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 100,
+  "description" : "A banner adorned with the emblem of the Aeginian Federal Union.",
+  "shortdescription" : "Federal Union Banner",
+  "race" : "notix",
+  
+  "floranDescription" : "Floran likesss colourful bannersss.",
+  "glitchDescription" : "Observation. This banner is adorned with some alien emblem.",
+  
+  "drodenDescription" : "Detected alien emblem. Emblem identified as Aeginian Federal Union iconography.",
+  
+  "inventoryIcon" : "alliancebanneraegiicon.png",
+  "orientations" : [
+    {
+      "image" : "alliancebanneraegi.png:<color>",
+      "imagePosition" : [-16, -72],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "bgAnchors" : [
+		[-2, 0], [-1, 0], [0, 0], [1, 0]
+	  ]
+    },
+	{
+      "image" : "alliancebanneraegitop.png:<color>",
+      "imagePosition" : [-16, -72],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ]
+}

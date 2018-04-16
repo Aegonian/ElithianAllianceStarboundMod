@@ -1,0 +1,45 @@
+{
+  "objectName" : "allianceportrait",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 250,
+  "description" : "A large portrait of Lyiin Taemera, President of the Aeginian Federal Union.",
+  "shortdescription" : "Portrait of Lyiin Taemera",
+  "race" : "aegi",
+
+  "apexDescription" : "A large portrait of some important person.",
+  "avianDescription" : "This person must be quite important.",
+  "floranDescription" : "Large picture of important perssson.",
+  "glitchDescription" : "Curious. Who is this?",
+  "humanDescription" : "Some sorta important person.",
+  "hylotlDescription" : "This person has an aura of responsibility and authority to them.",
+  "novakidDescription" : "Soma kinda important guy.",
+
+  "aegiDescription" : "A portrait of Lyiin Taemera, the current President of the Union.",
+  "avikanDescription" : "This must be an alien leader.",
+  "erixianDescription" : "Lyiin Taemera, the current President of the Union.",
+  "trinkDescription" : "A portrait of Lyiin Taemera. He is the current President of the Union.",
+  "hymidDescription" : "The great Lyiin Taemera. It's a good portrait.",
+  "notixDescription" : "I assume this is a portrait.",
+  "jorgasianDescription" : "This portrait portrays the current President of the Union.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien portrait.",
+  "akkimariDescription" : "Akki think this person important.",
+
+  "inventoryIcon" : "allianceportraiticon.png",
+  "orientations" : [
+	{
+	  "imageLayers" : [ { "image" : "allianceportrait.png:<color>", "fullbright" : true }, { "image" : "allianceportraitlit.png:<color>" } ],
+      "imagePosition" : [-16, -16],
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "background" ]
+    }
+  ]
+}

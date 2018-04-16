@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":85,
+ "tilecount":90,
  "tileheight":8,
  "tileproperties":
     {
@@ -513,6 +513,31 @@
          "\/\/shortdescription":"Alliance Rough Bricks",
          "material":"alliancestonebrickrough"
         },
+     "85":
+        {
+         "\/\/shortdescription":"Alliance Support Grid",
+         "material":"alliancethinsupport"
+        },
+     "86":
+        {
+         "\/\/shortdescription":"Alliance Sewage Bars",
+         "material":"alliancesewagebars"
+        },
+     "87":
+        {
+         "\/\/shortdescription":"Big Pipe Left",
+         "material":"avikanthickpipeleft"
+        },
+     "88":
+        {
+         "\/\/shortdescription":"Big Pipe Right",
+         "material":"avikanthickpiperight"
+        },
+     "89":
+        {
+         "\/\/shortdescription":"Borderless Alliance Glass",
+         "material":"allianceborderlessglass"
+        },
      "9":
         {
          "\/\/description":"A THEA material",
@@ -858,6 +883,26 @@
      "84":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/alliancestonebrickrough.png"
+        },
+     "85":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/alliancethinsupport.png"
+        },
+     "86":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/alliancesewagebars.png"
+        },
+     "87":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/avikanthickpipeleft.png"
+        },
+     "88":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/avikanthickpiperight.png"
+        },
+     "89":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/allianceborderlessglass.png"
         },
      "9":
         {

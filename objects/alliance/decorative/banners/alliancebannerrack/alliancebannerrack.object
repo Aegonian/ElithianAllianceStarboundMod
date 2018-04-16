@@ -1,0 +1,31 @@
+{
+  "objectName" : "alliancebannerrack",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 100,
+  "description" : "Banners of all of the members of the Elithian Alliance.",
+  "shortdescription" : "Elithian Alliance Banners",
+  "race" : "aegi",
+  
+  "floranDescription" : "Floran likesss colourful bannersss.",
+  "glitchDescription" : "Observation. These banners are decorated with a plethora of alien emblems.",
+  
+  "drodenDescription" : "Detected alien banners.",
+  
+  "inventoryIcon" : "alliancebannerrackicon.png",
+  "orientations" : [
+    {
+      "image" : "alliancebannerrack.png:<color>",
+      "imagePosition" : [-80, -32],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "bgAnchors" : [
+		[-10, 0], [-9, 0], [-8, 0], [-7, 0], [-6, 0], [-5, 0], [-4, 0], [-3, 0], [-2, 0], [-1, 0], [0, 0], [1, 0], [2, 0], [3, 0], [4, 0], [5, 0], [6, 0], [7, 0], [8, 0], [9, 0]
+	  ]
+    }
+  ]
+}

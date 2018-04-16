@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":136,
+ "tilecount":154,
  "tileheight":128,
  "tileproperties":
     {
@@ -345,6 +345,38 @@
          "object":"alliancedaynightsensorhidden",
          "tilesetDirection":"right"
         },
+     "136":
+        {
+         "\/\/shortdescription":"Elithian Alliance Banner",
+         "imagePositionX":"-16",
+         "imagePositionY":"-72",
+         "object":"alliancebanner",
+         "tilesetDirection":"right"
+        },
+     "137":
+        {
+         "\/\/shortdescription":"Trink Circuit Banner",
+         "imagePositionX":"-16",
+         "imagePositionY":"-72",
+         "object":"alliancebannertrink",
+         "tilesetDirection":"right"
+        },
+     "138":
+        {
+         "\/\/shortdescription":"Union of Cities Banner",
+         "imagePositionX":"-16",
+         "imagePositionY":"-72",
+         "object":"alliancebannerdremeton",
+         "tilesetDirection":"right"
+        },
+     "139":
+        {
+         "\/\/shortdescription":"Erixian Republic Banner",
+         "imagePositionX":"-16",
+         "imagePositionY":"-72",
+         "object":"alliancebannererixian",
+         "tilesetDirection":"right"
+        },
      "14":
         {
          "\/\/shortdescription":"Alliance Cabinet",
@@ -353,12 +385,124 @@
          "object":"alliancecabinet",
          "tilesetDirection":"right"
         },
+     "140":
+        {
+         "\/\/shortdescription":"Republic of Hyzolia Banner",
+         "imagePositionX":"-16",
+         "imagePositionY":"-72",
+         "object":"alliancebannerhymid",
+         "tilesetDirection":"right"
+        },
+     "141":
+        {
+         "\/\/shortdescription":"Triple Monarchy Banner",
+         "imagePositionX":"-16",
+         "imagePositionY":"-72",
+         "object":"alliancebannerjorgasian",
+         "tilesetDirection":"right"
+        },
+     "142":
+        {
+         "\/\/shortdescription":"Notician Federation Banner",
+         "imagePositionX":"-16",
+         "imagePositionY":"-72",
+         "object":"alliancebannernotix",
+         "tilesetDirection":"right"
+        },
+     "143":
+        {
+         "\/\/shortdescription":"Elithian Alliance Banners",
+         "imagePositionX":"-80",
+         "imagePositionY":"-32",
+         "object":"alliancebannerrack",
+         "tilesetDirection":"right"
+        },
+     "144":
+        {
+         "\/\/shortdescription":"Alliance Ceiling Monitor",
+         "imagePositionX":"-16",
+         "imagePositionY":"-8",
+         "object":"allianceceilingmonitor",
+         "tilesetDirection":"right"
+        },
+     "145":
+        {
+         "\/\/shortdescription":"Hologram of Elithia",
+         "imagePositionX":"-48",
+         "imagePositionY":"0",
+         "object":"allianceglobehologram",
+         "tilesetDirection":"right"
+        },
+     "146":
+        {
+         "\/\/shortdescription":"Alliance Conference Table",
+         "imagePositionX":"-48",
+         "imagePositionY":"0",
+         "object":"allianceroundtable",
+         "tilesetDirection":"right"
+        },
+     "147":
+        {
+         "\/\/shortdescription":"Alliance Infospire",
+         "imagePositionX":"-40",
+         "imagePositionY":"-40",
+         "object":"allianceinfospire",
+         "tilesetDirection":"right"
+        },
+     "148":
+        {
+         "\/\/shortdescription":"Dim Alliance Light Strip",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"alliancelightstripdim",
+         "tilesetDirection":"right"
+        },
+     "149":
+        {
+         "\/\/shortdescription":"Alliance Glass Roof",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"allianceglassroof",
+         "tilesetDirection":"left"
+        },
      "15":
         {
          "\/\/shortdescription":"Alliance Chair",
          "imagePositionX":"-8",
          "imagePositionY":"0",
          "object":"alliancechair",
+         "tilesetDirection":"right"
+        },
+     "150":
+        {
+         "\/\/shortdescription":"Alliance Glass Roof",
+         "imagePositionX":"-72",
+         "imagePositionY":"0",
+         "object":"allianceglassroof",
+         "tilesetDirection":"right"
+        },
+     "151":
+        {
+         "\/\/shortdescription":"Aeginian Federal Union Banner",
+         "imagePositionX":"-16",
+         "imagePositionY":"-72",
+         "object":"alliancebanneraegi",
+         "tilesetDirection":"right"
+        },
+     "152":
+        {
+         "\/\/shortdescription":"Alliance Railing",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"alliancerailing",
+         "tilesetDirection":"right"
+        },
+     "153":
+        {
+         "\/\/shortdescription":"Locked Alliance Blast Door",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"allianceblastdoorlocked",
          "tilesetDirection":"right"
         },
      "16":
@@ -879,7 +1023,7 @@
          "imagePositionX":"-8",
          "imagePositionY":"0",
          "object":"alliancespotlight",
-         "tilesetDirection":"right"
+         "tilesetDirection":"left"
         },
      "75":
         {
@@ -1268,13 +1412,85 @@
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancedaynightsensorhidden.png"
         },
+     "136":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancebanner.png"
+        },
+     "137":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancebannertrink.png"
+        },
+     "138":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancebannerdremeton.png"
+        },
+     "139":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancebannererixian.png"
+        },
      "14":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancecabinet.png"
         },
+     "140":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancebannerhymid.png"
+        },
+     "141":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancebannerjorgasian.png"
+        },
+     "142":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancebannernotix.png"
+        },
+     "143":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancebannerrack.png"
+        },
+     "144":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/allianceceilingmonitor.png"
+        },
+     "145":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/allianceglobehologram.png"
+        },
+     "146":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/allianceroundtable.png"
+        },
+     "147":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/allianceinfospire.png"
+        },
+     "148":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancelightstripdim.png"
+        },
+     "149":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/allianceglassroofleft.png"
+        },
      "15":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancechair.png"
+        },
+     "150":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/allianceglassroofright.png"
+        },
+     "151":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancebanneraegi.png"
+        },
+     "152":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancerailing.png"
+        },
+     "153":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/allianceblastdoorlocked.png"
         },
      "16":
         {

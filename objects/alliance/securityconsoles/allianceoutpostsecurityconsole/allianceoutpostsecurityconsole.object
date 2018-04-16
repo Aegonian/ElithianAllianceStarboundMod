@@ -1,0 +1,55 @@
+{
+  "objectName" : "allianceoutpostsecurityconsole",
+  "colonyTags" : ["wired"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "This console can only be activated using the correct security pass.",
+  "shortdescription" : "Alliance Security Console",
+  "race" : "aegi",
+  "category" : "wire",
+  "price" : 20,
+  
+  "lightColor" : [0, 32, 50],
+  
+  "floranDescription" : "Floran needsss ssecurity passs.",
+  "glitchDescription" : "Frustrated. This console requires a valid security pass.",
+  "novakidDescription" : "Some sorta security terminal. Gotta have the right pass to access it.",
+  
+  "avikanDescription" : "I'll need a security pass to access this console.",
+  "drodenDescription" : "Detected alien security terminal. Requires security pass to access.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+	{
+      "dualImage" : "allianceoutpostsecurityconsole.png:<color>.off",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "scripts" : [
+    "/objects/scripts/thea-passswitch.lua"
+  ],
+  "scriptDelta" : 5,
+
+  "requiredItem" : "allianceambassadorpass",
+  "activeTime" : 3.0,
+
+  "animation" : "/objects/wired/switch/switchtoggle2lit.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/interface/ship_confirm1.ogg" ],
+      "off" : [ "/sfx/interface/ship_error1.ogg" ]
+    }
+  },
+
+  "animationParts" : {
+    "bg" : "allianceoutpostsecurityconsole.png",
+    "fg" : "allianceoutpostsecurityconsolelit.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "outputNodes" : [ [2, 1] ]
+}

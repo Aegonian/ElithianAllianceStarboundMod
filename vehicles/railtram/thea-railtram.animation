@@ -12,7 +12,7 @@
           },
           "on" : {
             "frames" : 8,
-            "cycle" : 0.4,
+            "cycle" : 0.8,
             "mode" : "loop",
             "properties" : {
               "persistentSound" : "/sfx/tech/composite_platform_loop.ogg",
@@ -45,8 +45,6 @@
               "immediateSound" : "/sfx/tech/tramplatform_open.ogg",
               "immediateSoundRangeMultiplier" : 0.5
             }
-
-
           }
         }
       },
@@ -102,7 +100,6 @@
           "zLevel" : 1,
           "standPosition" : [0, 1.0]
         },
-
         "partStates" : {
           "gate" : {
             "open" : {
@@ -135,7 +132,6 @@
           "zLevel" : 0,
           "fullbright" : true
         },
-
         "partStates" : {
           "rail" : {
             "on" : {
@@ -157,7 +153,6 @@
           "offset" : [0, 2.0],
           "zLevel" : -1
         },
-
         "partStates" : {
           "rail" : {
             "on" : {

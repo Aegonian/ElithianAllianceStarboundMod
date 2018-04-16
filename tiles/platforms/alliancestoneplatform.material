@@ -14,7 +14,7 @@
   "drodenDescription" : "Analysis complete. Stone platform.",
   "akkimariDescription" : "Stone platform...",
   
-  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
   "category" : "Supports",
   
   "renderTemplate" : "/tiles/platformtemplate.config",

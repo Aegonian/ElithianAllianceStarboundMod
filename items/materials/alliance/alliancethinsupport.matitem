@@ -1,0 +1,13 @@
+{
+  "itemName" : "alliancethinsupport",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "alliancethinsupport.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  
+  "shortdescription" : "Alliance Support Grid",
+  "description" : "Light structural support beams.",
+
+  "materialId" : 30156
+}

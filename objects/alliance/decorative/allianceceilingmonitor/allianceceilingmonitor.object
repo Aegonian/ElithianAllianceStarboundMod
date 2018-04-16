@@ -1,0 +1,63 @@
+{
+  "objectName" : "allianceceilingmonitor",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A ceiling-mounted monitor.",
+  "shortdescription" : "Alliance Ceiling Monitor",
+  "race" : "aegi",
+
+  "apexDescription" : "A sleek monitor.",
+  "avianDescription" : "This monitor shines.",
+  "floranDescription" : "Ssshiny sscreen.",
+  "glitchDescription" : "Observation. A ceiling-mounted monitor.",
+  "humanDescription" : "It's a monitor mounted to the ceiling.",
+  "hylotlDescription" : "A sleek ceiling-mounted monitor.",
+  "novakidDescription" : "Some monitor.",
+
+  "aegiDescription" : "A sleek monitor.",
+  "avikanDescription" : "An alien-built monitor.",
+  "erixianDescription" : "A screen.",
+  "trinkDescription" : "A ceiling-mounted monitor.",
+  "hymidDescription" : "It's a screen.",
+  "notixDescription" : "I can hear this screen buzzing lightly.",
+  "jorgasianDescription" : "Simply a screen.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "A monitor.",
+  "theleanDescription" : "TODO",
+  "drodenDescription" : "Detected alien interface.",
+  "akkimariDescription" : "Screen is shiny.",
+
+  "category" : "decorative",
+  "lightColor" : [0, 32, 50],
+
+  "inventoryIcon" : "allianceceilingmonitoricon.png",
+  "orientations" : [
+    {
+      "dualImage" : "allianceceilingmonitor.png:<color>.<frame>",
+      "imagePosition" : [-16, -8],
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/fluorescent_light_quiet.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+  
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+  "animationParts" : {
+    "bg" : "allianceceilingmonitor.png",
+    "fg" : "allianceceilingmonitorlit.png"
+  },
+  "animationPosition" : [-16, -8],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : true,
+
+  "inputNodes" : [ [-2, 0] ]
+}

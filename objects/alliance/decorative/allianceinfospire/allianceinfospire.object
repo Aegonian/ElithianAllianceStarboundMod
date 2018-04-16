@@ -1,0 +1,66 @@
+{
+  "objectName" : "allianceinfospire",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "printable" : false,
+  "price" : 250,
+  "description" : "Several monitors mounted to a large central processing unit.",
+  "shortdescription" : "Alliance Infospire",
+  "race" : "aegi",
+
+  "apexDescription" : "That's quite a few screens.",
+  "avianDescription" : "Shiny screens.",
+  "floranDescription" : "Ssshiny sscreenss.",
+  "glitchDescription" : "Observation. Several monitors attached to a central processing unit.",
+  "humanDescription" : "That's quite the monitor array.",
+  "hylotlDescription" : "A large and bulky monitor array.",
+  "novakidDescription" : "Lots of screens.",
+
+  "aegiDescription" : "An Infospire, it shows real-time information about the entire Elithian economy.",
+  "avikanDescription" : "I wonder what all of this information really means...",
+  "erixianDescription" : "The CPU on this Infospire is quite powerful.",
+  "trinkDescription" : "An efficient solution to collecting and displaying economical information.",
+  "hymidDescription" : "There's a lot of information about the Elithian economy here.",
+  "notixDescription" : "The buzz from these screens is soothing.",
+  "jorgasianDescription" : "These monitors display economical information.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "This Infospire displays all the latest news regarding the Elithian economy.",
+  "theleanDescription" : "TODO",
+  "drodenDescription" : "Detected alien interface.",
+  "akkimariDescription" : "Shiny screens, Akki steal?",
+
+  "category" : "decorative",
+  "lightColor" : [0, 48, 75],
+
+  "inventoryIcon" : "allianceinfospireicon.png",
+  "orientations" : [
+    {
+      "image" : "allianceinfospire.png:<color>.<frame>",
+      "imagePosition" : [-40, -40],
+      "direction" : "right",
+      "flipImages" : false,
+	  
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/fluorescent_light_quiet.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+  
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+  "animationParts" : {
+    "bg" : "allianceinfospire.png",
+    "fg" : "allianceinfospirelit.png"
+  },
+  "animationPosition" : [-40, -40],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : false,
+
+  "inputNodes" : [ [0, 0] ]
+}

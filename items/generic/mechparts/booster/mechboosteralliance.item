@@ -1,0 +1,15 @@
+{
+  "itemName" : "mechboosteralliance",
+  "price" : 6720,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "category" : "mechPart",
+  "tooltipKind" : "mechbooster",
+  "builder" : "/items/buildscripts/buildmechpart.lua",
+  "inventoryIcon" : "mechboosteralliance.png",
+  "description" : "State-of-the-art mech boosters built by Enerth Engineering.",
+  "shortdescription" : "Guardian Mech Boosters",
+  "itemTags" : [ ],
+
+  "mechPart" : ["booster", "alliance"]
+}

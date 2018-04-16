@@ -21,5 +21,28 @@
 	  "defaultSecondaryColors" : ["7F7F7F", "616161", "474747", "333333"],	//From LIGHT to DARK
 	  "animationCustom" : {}
 	}
+  },
+  {
+    "op" : "add",
+    "path" : "/alliance",
+    "value" : {
+	  "stats" : {
+		"speed" : 6,
+		"jump" : 6
+	  },
+	  "partParameters" : {},
+	  "partImages" : {
+		"backLeg" : "leg/alliance.png",
+		"backLegFullbright" : "leg/alliance_fullbright.png",
+		"backLegJoint" : "legjoint/alliance_back.png",
+		"frontLeg" : "leg/alliance.png",
+		"frontLegFullbright" : "leg/alliance_fullbright.png",
+		"frontLegJoint" : "legjoint/alliance_front.png",
+		"hips" : "hips/alliance.png"
+	  },
+	  "defaultPrimaryColors" : ["DBDBDB", "B5B5B5", "848484", "4C4C4C"],	//From LIGHT to DARK
+	  "defaultSecondaryColors" : ["838383", "555555", "383838", "1E1E1E"],	//From LIGHT to DARK
+	  "animationCustom" : {}
+	}
   }
 ]

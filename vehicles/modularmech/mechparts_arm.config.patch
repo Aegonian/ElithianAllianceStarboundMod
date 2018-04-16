@@ -1,4 +1,7 @@
 [
+  //==========================================================================================================================
+  // LINERIFLE
+  //==========================================================================================================================
   {
     "op" : "add",
     "path" : "/linerifle",
@@ -11,7 +14,7 @@
 		"script" : "/vehicles/modularmech/armscripts/thea-chargedarm.lua",
 		"armClass" : "TheaChargedArm",
 
-		"rotationLimits" : [-1.75, 1.75],
+		"rotationLimits" : [-1.0, 1.0],
 		"fireOffset" : [5.0, -0.1],
 
 		"windupTime" : 0.5,
@@ -19,11 +22,16 @@
 		
 		"repeatFire" : false,	//Makes the weapon continuously fire once charged
 		"fireTime" : 0.125,		//Unused if repeatFire is false
+		
+		//Config for which particle emitters to use
+		"chargeMuzzleParticles" : true,
+		"chargeParticles" : true,
 
 		"projectileType" : "mechlineriflebullet",
-		"projectileTrackSource" : false,
+		"projectileTrackSource" : false,		//If true, the projectile will move with the mech while in space
+		"projectileInheritVelocity" : false,	//If true, the projectile will inherit the mech's velocity upon firing while in space
 		"projectileParameters" : {
-		  "power" : 350,
+		  "power" : 275,
 		  "searchRadius" : 25,
 		  "baseHomingControlForce" : 1.5
 		}
@@ -55,7 +63,7 @@
 			"anchorPart" : "<armName>",
 			"offsetRegion" : [5.375, 2.75, 5.375, 2.75],
 			"particles" : [
-			  { "particle" : "lineriflepuff"}
+			  { "particle" : "lineriflepuff" }
 			]
 		  },
 		  "<armName>Charge" : {
@@ -64,7 +72,7 @@
 			"anchorPart" : "<armName>",
 			"offsetRegion" : [1.75, 2.25, 2.25, 2.75],
 			"particles" : [
-			  { "particle" : "lineriflearc"}
+			  { "particle" : "lineriflearc" }
 			]
 		  },
 		  "<armName>ChargeMuzzle" : {
@@ -73,11 +81,11 @@
 			"anchorPart" : "<armName>",
 			"offsetRegion" : [5.375, 2.75, 5.375, 2.75],
 			"particles" : [
-			  { "particle" : "lineriflecharge"},
-			  { "particle" : "lineriflecharge"},
-			  { "particle" : "lineriflecharge"},
-			  { "particle" : "lineriflecharge"},
-			  { "particle" : "lineriflecharge"}
+			  { "particle" : "lineriflecharge" },
+			  { "particle" : "lineriflecharge" },
+			  { "particle" : "lineriflecharge" },
+			  { "particle" : "lineriflecharge" },
+			  { "particle" : "lineriflecharge" }
 			]
 		  }
 		},
@@ -85,6 +93,161 @@
 		  "<armName>Fire" : [ "/sfx/gun/plasma_sniper4.ogg" ],
 		  "<armName>Charge" : [ "/sfx/melee/charge_up7.ogg" ],
 		  "<armName>Discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
+		}
+	  }
+	}
+  },
+  
+  //==========================================================================================================================
+  // ALLIANCE RAILGUN
+  //==========================================================================================================================
+  {
+    "op" : "add",
+    "path" : "/alliancerailgun",
+    "value" : {
+	  "stats" : {
+		"power" : 7,
+		"energy" : 7
+	  },
+	  "partParameters" : {
+		"script" : "/vehicles/modularmech/armscripts/thea-chargedarm.lua",
+		"armClass" : "TheaChargedArm",
+
+		"rotationLimits" : [-1.0, 1.0],
+		"fireOffset" : [2.9, -0.45],
+
+		"windupTime" : 1.0,
+		"cooldownTime" : 0.75,
+		
+		"repeatFire" : false,	//Makes the weapon continuously fire once charged
+		"fireTime" : 0.125,		//Unused if repeatFire is false
+		
+		//Config for which particle emitters to use
+		"chargeMuzzleParticles" : false,
+		"chargeParticles" : false,
+
+		"projectileType" : "allianceparticlebullet",
+		"projectileTrackSource" : false,		//If true, the projectile will move with the mech while in space
+		"projectileInheritVelocity" : false,	//If true, the projectile will inherit the mech's velocity upon firing while in space
+		"projectileParameters" : {
+		  "power" : 350
+		}
+	  },
+	  "partImages" : {
+		"<armName>" : "arm/alliancerailgun.png",
+		"<armName>Fullbright" : "arm/alliancerailgun_fullbright.png"
+	  },
+	  "defaultPrimaryColors" : ["DBDBDB", "B5B5B5", "848484", "4C4C4C"],	//From LIGHT to DARK
+	  "defaultSecondaryColors" : ["838383", "555555", "383838", "1E1E1E"],	//From LIGHT to DARK
+	  "animationCustom" : {
+		"animatedParts" : { "stateTypes" : { "<armName>" : {
+		  "states" : {
+			"windup" : {
+			  "cycle" : 0.5
+			},
+			"active" : {
+			  "cycle" : 0.5
+			},
+			"winddown" : {
+			  "cycle" : 0.05
+			}
+		  }
+		}}},
+		"particleEmitters" : {
+		  "<armName>Fire" : {
+			"active" : false,
+			"burstCount" : 10,
+			"anchorPart" : "<armName>",
+			"offsetRegion" : [5.0, 3.0, 6.0, 2.25],
+			"particles" : [
+			  { "particle" : "akkimariashsmoke-air" }
+			]
+		  }
+		},
+		"sounds" : {
+		  "<armName>Fire" : [ "/sfx/gun/lightrunner_fire_heavy.ogg" ],
+		  "<armName>Charge" : [ "/sfx/gun/violatedioncannon_chargeup_short2.ogg" ],
+		  "<armName>Discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
+		}
+	  }
+	}
+  },
+  
+  //==========================================================================================================================
+  // TRINK LASER REPEATER
+  //==========================================================================================================================
+  {
+    "op" : "add",
+    "path" : "/trinkrepeater",
+    "value" : {
+	  "stats" : {
+		"power" : 6,
+		"energy" : 6
+	  },
+	  "partParameters" : {
+		"script" : "/vehicles/modularmech/armscripts/thea-gatlingarm.lua",
+		"armClass" : "GatlingArm",
+
+		"rotationLimits" : [-1.75, 1.75],
+		"fireOffset" : [3.0, -0.25],
+
+		"windupTime" : 0.4,
+		"fireTime" : 0.12,
+
+		"projectileType" : "trinklaserbulletbounce",
+		"projectileTrackSource" : false,		//If true, the projectile will move with the mech while in space
+		"projectileInheritVelocity" : false,	//If true, the projectile will inherit the mech's velocity upon firing while in space
+		"projectileParameters" : {
+		  "power" : 35,
+		  "bounces" : 1,
+		  "piercing" : true
+		},
+
+		"projectileInaccuracy" : 0.025
+	  },
+	  "partImages" : {
+		"<armName>" : "arm/trinkrepeater.png",
+		"<armName>Fullbright" : "arm/trinkrepeater_fullbright.png"
+	  },
+	  "defaultPrimaryColors" : ["838383", "555555", "383838", "1E1E1E"],	//From LIGHT to DARK
+	  "defaultSecondaryColors" : ["838383", "555555", "383838", "1E1E1E"],	//From LIGHT to DARK
+	  "animationCustom" : {
+		"animatedParts" : { "stateTypes" : { "<armName>" : {
+		  "states" : {
+			"windup" : {
+			  "cycle" : 0.4,
+			  "properties" : {
+				"persistentSound" : "/sfx/gun/mech_gatling_windup.ogg",
+				"persistentSoundRangeMultiplier" : 1.0,
+				"persistentSoundStopTime" : 0.2
+			  }
+			},
+			"active" : {
+			  "cycle" : 0.12
+			},
+			"winddown" : {
+			  "cycle" : 0.4,
+			  "properties" : {
+				"persistentSound" : "/sfx/gun/mech_gatling_winddown.ogg",
+				"persistentSoundRangeMultiplier" : 1.0,
+				"persistentSoundStopTime" : 0.2
+			  }
+			}
+		  }
+		}}},
+		"particleEmitters" : {
+		  "<armName>Fire" : {
+			"active" : false,
+			"burstCount" : 3,
+			"anchorPart" : "<armName>",
+			"offsetRegion" : [4.0, 2.5, 4.0, 2.25],
+			"particles" : [
+			  { "particle" : "trinklasermuzzle" }
+			]
+		  }
+		},
+		"sounds" : {
+		  "<armName>Fire" : [ "/sfx/gun/trink_energizer.ogg" ]
 		}
 	  }
 	}

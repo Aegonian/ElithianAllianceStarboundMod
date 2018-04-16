@@ -1,0 +1,12 @@
+{
+  "itemName" : "allianceambassadorpass",
+  "price" : 0,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "Security Pass",
+  "tooltipKind" : "tool",
+  "inventoryIcon" : "allianceambassadorpass.png",
+  "largeImage" : "allianceambassadorpasslarge.png",
+  "description" : "A security card given to all ambassadors of the Elithian Alliance.",
+  "shortdescription" : "^#BA66FF;Alliance Ambassador Pass^white;"
+}

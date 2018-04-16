@@ -1,0 +1,49 @@
+{
+  "objectName" : "allianceglobehologram",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "description" : "A large holographic display of Elithia.",
+  "shortdescription" : "Hologram of Elithia",
+  "race" : "aegi",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 1000,
+  
+  "lightColor" : [16, 88, 128],
+
+  "apexDescription" : "A large hologram. Is this the planet Elithia?",
+  "avianDescription" : "A large planetary hologram.",
+  "floranDescription" : "Planet made of lightsss.",
+  "glitchDescription" : "Amazed. What a beautiful planet.",
+  "humanDescription" : "That's quite the holographic display.",
+  "hylotlDescription" : "This hologram instills a sense of serenity in me.",
+  "novakidDescription" : "Now that's a hologram.",
+
+  "aegiDescription" : "A hologram displaying real-time information about Elithia.",
+  "avikanDescription" : "The Nomada might learn something from this projection.",
+  "erixianDescription" : "This hologram is updated in real-time.",
+  "trinkDescription" : "A large holographic projection of Elithia.",
+  "hymidDescription" : "A massive holographic projection of Elithia.",
+  "notixDescription" : "This hologram buzzes quite loudly.",
+  "jorgasianDescription" : "That's quite the hologram.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "theleanDescription" : "TODO",
+  "drodenDescription" : "Detected holographic projection. Analyzing. Reporting findings to Nomada command.",
+  "akkimariDescription" : "Great hologram of Elithia. Akki impressed.",
+
+  "inventoryIcon" : "allianceglobehologramicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "allianceglobehologram.png:<color>.<frame>", "fullbright" : true }, { "image" : "allianceglobehologramlit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-48, 0],
+      "frames" : 16,
+      "animationCycle" : 1.6,
+      "lightPosition" : [0, 2],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}
