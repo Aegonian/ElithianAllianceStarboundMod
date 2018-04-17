@@ -1,0 +1,58 @@
+{
+  "objectName" : "alliancevehiclerepair",
+  "colonyTags" : [],
+  "rarity" : "legendary",
+  "category" : "other",
+  "printable" : false,
+  "subtitle" : "Vehicle repairs",
+  "tooltipKind" : "container",
+  "description" : "This engineer should be able to fix my vehicles.",
+  "shortdescription" : "Faro's Vehicle Workshop",
+  "race" : "aegi",
+  
+  "statusEffects" : [ ],
+  "price" : 50,
+  
+  "floranDescription" : "Floran takesss broken vehicle to sstrange man. Ssstrange man fixess vehicle.",
+  "glitchDescription" : "Delighted. This engineer can fix up any broken vehicle I present him with.",
+  "novakidDescription" : "This fella looks like he could fix up my vehicles.",
+  
+  "aegiDescription" : "Faro's a skilled vehicle repairman working for Enerth Engineering. He can fix my vehicles.",
+  "drodenDescription" : "Detected alien engineer. Likely offers vehicle reparation services.",
+  "akkimariDescription" : "Akki bring broken vehicles to alien. Alien fixes them.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "alliancevehiclerepair.png:<color>.<frame>" }, { "image" : "alliancevehiclerepairlights.png:<color>.<frame>", "fullbright" : true } ],
+	  "direction" : "right",
+	  
+      "imagePosition" : [-72, 0],
+      "frames" : 16,
+      "animationCycle" : 1.6,
+
+	  "spaces" : [
+        [1, 2], [2, 2], [3, 2],
+        [1, 1], [2, 1], [3, 1],
+        [1, 0], [2, 0], [3, 0]
+      ],
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "interactAction" : "ScriptPane",
+  "interactData" : "/interface/scripted/vehiclerepair/avikan-vehiclerepairgui.config",
+
+  "scripts" : [ "/objects/outpost/repairo/repairo.lua" ],
+  "scriptDelta" : 20,
+
+  "chipRepairFactor" : 0.2,
+
+  "chatRadius" : 10,
+  "chatCooldown" : 15,
+  "chatOptions" : [
+    "I can take a look at any broken vehicles you have.",
+    "If you have a few Auto Chips, I can repair your vehicles for you.",
+    "I can rebuild any vehicles you've lost or forgotten. Just need a few Auto Chips!"
+  ]
+}

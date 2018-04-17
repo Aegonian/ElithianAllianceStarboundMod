@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":154,
+ "tilecount":158,
  "tileheight":128,
  "tileproperties":
     {
@@ -503,6 +503,38 @@
          "imagePositionX":"0",
          "imagePositionY":"0",
          "object":"allianceblastdoorlocked",
+         "tilesetDirection":"right"
+        },
+     "154":
+        {
+         "\/\/shortdescription":"Alliance Security Console",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"allianceoutpostsecurityconsole",
+         "tilesetDirection":"right"
+        },
+     "155":
+        {
+         "\/\/shortdescription":"Alliance Mech Assembly Station",
+         "imagePositionX":"-24",
+         "imagePositionY":"0",
+         "object":"alliancemechassemblystation",
+         "tilesetDirection":"right"
+        },
+     "156":
+        {
+         "\/\/shortdescription":"Alliance Mech Crafting Table",
+         "imagePositionX":"-32",
+         "imagePositionY":"0",
+         "object":"alliancemechcraftingtable",
+         "tilesetDirection":"right"
+        },
+     "157":
+        {
+         "\/\/shortdescription":"Faro's Vehicle Workshop",
+         "imagePositionX":"-72",
+         "imagePositionY":"0",
+         "object":"alliancevehiclerepair",
          "tilesetDirection":"right"
         },
      "16":
@@ -1491,6 +1523,22 @@
      "153":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/allianceblastdoorlocked.png"
+        },
+     "154":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/allianceoutpostsecurityconsole.png"
+        },
+     "155":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancemechassemblystation.png"
+        },
+     "156":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancemechcraftingtable.png"
+        },
+     "157":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancevehiclerepair.png"
         },
      "16":
         {

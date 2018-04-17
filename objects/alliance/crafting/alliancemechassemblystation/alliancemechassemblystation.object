@@ -1,0 +1,65 @@
+{
+  "objectName" : "alliancemechassemblystation",
+  "colonyTags" : ["alliance"],
+  "printable" : false,
+  "rarity" : "Legendary",
+  "category" : "other",
+  "price" : 0,
+  "description" : "Equip and customise your personal mech!",
+  "shortdescription" : "Mech Assembly Station",
+  "race" : "aegi",
+
+  "lightColor" : [0, 32, 50],
+
+  "flickerPeriod" : 0.3,
+  "flickerMinIntensity" : 0.95,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.075,
+  "flickerIntensityVariance" : 0.025,
+
+  "apexDescription" : "With this station I could assemble components into a working mech suit.",
+  "avianDescription" : "This station is made for piecing together large mech vehicles.",
+  "floranDescription" : "Floran could make big mech with thisss station.",
+  "glitchDescription" : "Astonished. This advanced assembly station is designed to make mech suits.",
+  "humanDescription" : "This station is for building and outfitting mech suits.",
+  "hylotlDescription" : "This terminal is for customizing and outfitting mech vehicles.",
+  "novakidDescription" : "This station'll let me put together a mech any way I like.",
+  
+  "drodenDescription" : "Detected mech assembly station. Used to assemble components into functional mech suits.",
+  "akkimariDescription" : "Mech assemble here. Akki ready to stomp around.",
+
+  "inventoryIcon" : "alliancemechassemblystationicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "alliancemechassemblystation.png:<frame>" }, { "image" : "alliancemechassemblystationlights.png:<frame>", "fullbright" : true } ],
+      "flipImages" : true,
+      "imagePosition" : [-24, 0],
+      "frames" : 10,
+      "animationCycle" : 1.0,
+
+      "lightPosition" : [1, 2],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "left"
+    },
+    {
+      "imageLayers" : [ { "image" : "alliancemechassemblystation.png:<frame>" }, { "image" : "alliancemechassemblystationlights.png:<frame>", "fullbright" : true } ],
+      "imagePosition" : [-24, 0],
+      "frames" : 10,
+      "animationCycle" : 1.0,
+
+      "lightPosition" : [-1, 2],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "right"
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/outpostmonitor_static.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+
+  "interactAction" : "ScriptPane",
+  "interactData" : "/interface/scripted/mechassembly/mechassemblygui.config"
+}

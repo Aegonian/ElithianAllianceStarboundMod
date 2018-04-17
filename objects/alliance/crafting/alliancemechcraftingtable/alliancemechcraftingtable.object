@@ -1,0 +1,63 @@
+{
+  "objectName" : "alliancemechcraftingtable",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Legendary",
+  "price" : 2500,
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/craftingmech.config"
+  },
+  "printable" : false,
+  "description" : "Used to produce modular mech components.",
+  "shortdescription" : "^orange;Mech Part Crafting Table^white;",
+  "race" : "aegi",
+  "category" : "crafting",
+
+  "apexDescription" : "This table can be used to produce modular mech components.",
+  "avianDescription" : "With this table I can assemble modular mech components.",
+  "floranDescription" : "A crafting ssstation for making mech parts.",
+  "glitchDescription" : "Excited. This station is designed to assemble modular mech components",
+  "humanDescription" : "I can assemble modular mech components at this station.",
+  "hylotlDescription" : "This industrial looking table produces modular mech components.",
+  "novakidDescription" : "With this here table I could build some mech parts.",
+  
+  "drodenDescription" : "Detected mech crafting station. Used to produce new mech parts.",
+  "akkimariDescription" : "Akki builds new mech parts here.",
+
+  "inventoryIcon" : "alliancemechcraftingtableicon.png",
+  "orientations" : [
+    {
+      "image" : "alliancemechcraftingtable.png:<frame>",
+      "flipImages" : true,
+      "imagePosition" : [-32, 0],
+      "animationPosition" : [-32, 0],
+      "frames" : 41,
+      "animationCycle" : 4.1,
+
+      "lightPosition" : [1, 2],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "left"
+    },
+    {
+      "image" : "alliancemechcraftingtable.png:<frame>",
+      "imagePosition" : [-32, 0],
+      "animationPosition" : [-32, 0],
+      "frames" : 41,
+      "animationCycle" : 4.1,
+
+      "lightPosition" : [-1, 2],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "right"
+    }
+  ],
+
+  "animation" : "alliancemechcraftingtable.animation",
+  "animationParts" : {
+    "bg" : "alliancemechcraftingtable.png",
+    "fg" : "alliancemechcraftingtablelights.png"
+  }
+}
