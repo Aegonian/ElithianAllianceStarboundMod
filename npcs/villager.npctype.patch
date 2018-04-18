@@ -1,82 +1,80 @@
 [
-	//AVIKAN
-	{ "op" : "add", "path" : "/items/avikan",
-	  "value" : [
-			[0, [
-				{
-					"chest" : [
-						{ "name" : "avikan-elderchest", "data" : { "colorIndex" : 2 } },
-						{ "name" : "avikan-elderchest", "data" : { "colorIndex" : 3 } },
-						{ "name" : "avikan-nomadicchest", "data" : { "colorIndex" : 0 } },
-						{ "name" : "avikan-nomadicchest", "data" : { "colorIndex" : 1 } },
-						{ "name" : "avikan-travellerchest", "data" : { "colorIndex" : 0 } },
-						{ "name" : "avikan-travellerchest", "data" : { "colorIndex" : 1 } },
-						{ "name" : "thea-hiddenchest", "data" : { "colorIndex" : 1 } }
-					],
-					"legs" : [
-						{ "name" : "avikan-elderlegs", "data" : { "colorIndex" : 2 } },
-						{ "name" : "avikan-elderlegs", "data" : { "colorIndex" : 3 } },
-						{ "name" : "avikan-nomadiclegs", "data" : { "colorIndex" : 0 } },
-						{ "name" : "avikan-nomadiclegs", "data" : { "colorIndex" : 1 } },
-						{ "name" : "avikan-travellerlegs", "data" : { "colorIndex" : 0 } },
-						{ "name" : "avikan-travellerlegs", "data" : { "colorIndex" : 1 } },
-						{ "name" : "avikan-merchantlegs", "data" : { "colorIndex" : 1 } },
-						{ "name" : "avikan-merchantlegs", "data" : { "colorIndex" : 2 } }
-					],
-					"head" : [
-						{ "name" : "thea-hiddenhead", "data" : { "colorIndex" : 1 } }
-					]
-				}
-			]   ]
-		]
-	},
+  //AVIKAN
+  { "op" : "add", "path" : "/items/avikan",
+	"value" : [
+	  [0, [
+		{
+		  "chest" : [
+			{ "name" : "avikan-elderchest", "data" : { "colorIndex" : 2 } },
+			{ "name" : "avikan-elderchest", "data" : { "colorIndex" : 3 } },
+			{ "name" : "avikan-nomadicchest", "data" : { "colorIndex" : 0 } },
+			{ "name" : "avikan-nomadicchest", "data" : { "colorIndex" : 1 } },
+			{ "name" : "avikan-travellerchest", "data" : { "colorIndex" : 0 } },
+			{ "name" : "avikan-travellerchest", "data" : { "colorIndex" : 1 } },
+			{ "name" : "thea-hiddenchest", "data" : { "colorIndex" : 1 } }
+		  ],
+		  "legs" : [
+			{ "name" : "avikan-elderlegs", "data" : { "colorIndex" : 2 } },
+			{ "name" : "avikan-elderlegs", "data" : { "colorIndex" : 3 } },
+			{ "name" : "avikan-nomadiclegs", "data" : { "colorIndex" : 0 } },
+			{ "name" : "avikan-nomadiclegs", "data" : { "colorIndex" : 1 } },
+			{ "name" : "avikan-travellerlegs", "data" : { "colorIndex" : 0 } },
+			{ "name" : "avikan-travellerlegs", "data" : { "colorIndex" : 1 } },
+			{ "name" : "avikan-merchantlegs", "data" : { "colorIndex" : 1 } },
+			{ "name" : "avikan-merchantlegs", "data" : { "colorIndex" : 2 } }
+		  ],
+		  "head" : [
+			{ "name" : "thea-hiddenhead", "data" : { "colorIndex" : 1 } }
+		  ]
+		}
+	  ] ]
+	]
+  },
+
+  //TRINK
+  { "op" : "add", "path" : "/items/trink",
+	"value" : [
+	  [0, [
+		{
+		  "chest" : [
+			{ "name" : "trink-paintedchest", "data" : { "colorIndex" : 2 } },
+			{ "name" : "trink-stripedchest", "data" : { "colorIndex" : [0, 1, 2, 3, 7, 8] } },
+			{ "name" : "thea-hiddenchest", "data" : { "colorIndex" : 1 } }
+		  ],
+		  "legs" : [
+			{ "name" : "trink-paintedlegs", "data" : { "colorIndex" : [1, 2] } },
+			{ "name" : "trink-stripedlegs", "data" : { "colorIndex" : [0, 1, 2, 3, 7, 8] } },
+			{ "name" : "thea-hiddenlegs", "data" : { "colorIndex" : 1 } }
+		  ],
+		  "head" : [
+			{ "name" : "thea-hiddenhead", "data" : { "colorIndex" : 1 } }
+		  ]
+		}
+	  ] ]
+	]
+  },
 	
-	
-	
-	//TRINK
-	{ "op" : "add", "path" : "/items/trink",
-	  "value" : [
-			[0, [
-				{
-					"chest" : [
-						{ "name" : "trink-paintedchest", "data" : { "colorIndex" : 2 } },
-						{ "name" : "trink-stripedchest", "data" : { "colorIndex" : [0, 1, 2, 3, 7, 8] } },
-						{ "name" : "thea-hiddenchest", "data" : { "colorIndex" : 1 } }
-					],
-					"legs" : [
-						{ "name" : "trink-paintedlegs", "data" : { "colorIndex" : [1, 2] } },
-						{ "name" : "trink-stripedlegs", "data" : { "colorIndex" : [0, 1, 2, 3, 7, 8] } },
-						{ "name" : "thea-hiddenlegs", "data" : { "colorIndex" : 1 } }
-					],
-					"head" : [
-						{ "name" : "thea-hiddenhead", "data" : { "colorIndex" : 1 } }
-					]
-				}
-			]   ]
-		]
-	},
-	
-	//AEGI
-	{ "op" : "add", "path" : "/items/aegi",
-	  "value" : [
-			[0, [
-				{
-					"chest" : [
-						{ "name" : "aegi-shirt", "data" : { "colorIndex" : 0 } },
-						{ "name" : "aegi-tanktop", "data" : { "colorIndex" : 0 } },
-						{ "name" : "aegi-formalchest", "data" : { "colorIndex" : 0 } }
-					],
-					"legs" : [
-						{ "name" : "aegi-asauniformlegs", "data" : { "colorIndex" : 0 } },
-						{ "name" : "aegi-shorts", "data" : { "colorIndex" : 0 } },
-						{ "name" : "aegi-formallegs", "data" : { "colorIndex" : 0 } }
-					],
-					"head" : [
-						{ "name" : "aegi-asauniformhead", "data" : { "colorIndex" : 0 } },
-						{ "name" : "thea-hiddenhead", "data" : { "colorIndex" : 1 } }
-					]
-				}
-			]   ]
-		]
-	}
+  //AEGI
+  { "op" : "add", "path" : "/items/aegi",
+	"value" : [
+	  [0, [
+		{
+		  "chest" : [
+			{ "name" : "aegi-shirt", "data" : { "colorIndex" : 0 } },
+			{ "name" : "aegi-tanktop", "data" : { "colorIndex" : 0 } },
+			{ "name" : "aegi-formalchest", "data" : { "colorIndex" : 0 } }
+		  ],
+		  "legs" : [
+			{ "name" : "aegi-asauniformlegs", "data" : { "colorIndex" : 0 } },
+			{ "name" : "aegi-shorts", "data" : { "colorIndex" : 0 } },
+			{ "name" : "aegi-formallegs", "data" : { "colorIndex" : 0 } }
+		  ],
+		  "head" : [
+			{ "name" : "aegi-asauniformhead", "data" : { "colorIndex" : 0 } },
+			{ "name" : "thea-hiddenhead", "data" : { "colorIndex" : 1 } }
+		  ]
+		}
+	  ] ]
+	]
+  }
 ]

@@ -1105,7 +1105,7 @@
 		"path": "/converse/aegi",
 		"value": {
 			"generic" : [
-				"I'm getting a promotion soo, I just know it!",
+				"I'm getting a promotion soon, I just know it!",
 				"Briggs Shipbuilding is hiring new engineers. I think I'm going to sign up.",
 				"Did you hear? Briggs just released a line of personal defence firearms!",
 				"I didn't think Briggs Shipbuilding made weapons, too.",
@@ -1190,6 +1190,17 @@
 				"Might I ask what you are?",
 				"Are your species new to this part of the galaxy?",
 				"I don't think I've ever seen one of your kind before."
+			],
+			"human" : [
+				"Are you truly a human? I thought you were all extinct!",
+				"A human here on our world... What a strange and wonderful day!",
+				"Are you a human? How marvelous...",
+				"I've heard about the tragedy on Earth. I'm so sorry.",
+				"You'll find a home here, if you want it.",
+				"You are always welcome here.",
+				"You'll find refuge here, I promise.",
+				"It's incredible to finally meet a human!",
+				"You're a human, right? That's incredible!"
 			],
 			"avikan" : [
 				"You're an Avikan, right?",

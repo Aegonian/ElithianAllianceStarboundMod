@@ -41,8 +41,8 @@
   "elementalType" : "physical",
   
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
-    "class" : "GunFire",
+    "scripts" : ["/items/active/weapons/ranged/other/thea-instakillgun/thea-debuggunfire.lua"],
+    "class" : "TheaDebugGunFire",
 
     "fireTime" : 1.0,
     "baseDps" : 50000.0,

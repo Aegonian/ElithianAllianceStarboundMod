@@ -1,0 +1,55 @@
+{
+  "objectName" : "allianceweaponshop",
+  "colonyTags" : ["alliance"],
+  "printable" : false,
+  "rarity" : "Common",
+  "category" : "furniture",
+  "price" : 200,
+  "description" : "This store sells a variety of weapons.",
+  "shortdescription" : "Alliance Weapons Store",
+  "race" : "aegi",
+
+  "floranDescription" : "Ssshop for weaponss.",
+  "glitchDescription" : "Observation. A weapons store.",
+  "novakidDescription" : "Could get m'self a new gun here.",
+  
+  "drodenDescription" : "Detected alien weapon store.",
+  "akkimariDescription" : "Akki buy new weapons.",
+
+  "inventoryIcon" : "allianceweaponshopicon.png",
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "allianceweaponshop.png:<color>.<frame>" }, { "image" : "allianceweaponshoplights.png:<color>.<frame>", "fullbright" : true } ],
+      "imagePosition" : [-40, 0],
+	  
+      "frames" : 8,
+      "animationCycle" : 0.8,
+
+      "sitPosition" : [10, 22],
+	  "sitCoverImage" : "/objects/alliance/other/allianceweaponshop/allianceweaponshopcover.png",
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "bottom" ]
+    },
+    {
+	  "imageLayers" : [ { "image" : "allianceweaponshop.png:<color>.<frame>" }, { "image" : "allianceweaponshoplights.png:<color>.<frame>", "fullbright" : true } ],
+      "imagePosition" : [-40, 0],
+	  
+      "frames" : 8,
+      "animationCycle" : 0.8,
+
+      "sitPosition" : [10, 22],
+	  "sitCoverImage" : "/objects/alliance/other/allianceweaponshop/allianceweaponshopcover.png",
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

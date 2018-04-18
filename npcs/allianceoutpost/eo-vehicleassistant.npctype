@@ -1,6 +1,6 @@
 {
   "type" : "eo-vehicleassistant",
-  "baseType" : "thea-villager",
+  "baseType" : "eo-civilian",
 
   "dropPools" : [ "aegiDeathTreasure" ],
 

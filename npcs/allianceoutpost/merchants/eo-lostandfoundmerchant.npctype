@@ -1,0 +1,87 @@
+{
+  "type" : "eo-lostandfoundmerchant",
+  "baseType" : "thea-loungingmerchant",
+
+  "scriptConfig" : {    
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "poolsFile" : "/npcs/merchantpools.config",
+      
+	  "categories" : {
+        "override" : [ "alliancelostandfound" ]
+      },
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 20,
+	  
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "Lost and Found",
+          "subtitle" : "  Recover lost unique equipment"
+        }
+      }
+    },
+	
+	"dialog" : {
+      "merchant" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "Lost something? I may be able to get it back for you!"
+            ]
+          }
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "If you ever lose something important, you know where to find me."
+            ]
+          }
+        },
+        "follow" : {
+          "default" : {
+            "default" : [
+              "My supplies are close by. Follow me."
+            ]
+          }
+        },
+        "welcome" : {
+          "default" : {
+            "default" : [
+              "Now, what is it that you've lost?"
+            ]
+          }
+        },
+        "tout" : {
+          "default" : {
+            "default" : [
+              "Lost something important? I may have come across it!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "aegi-asauniformhead", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "chest" : [
+              { "name" : "aegi-suitchest", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "aegi-suitlegs", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "back" : [
+              { "name" : "thea-hiddenback", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

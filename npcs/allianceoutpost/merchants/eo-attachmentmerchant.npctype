@@ -1,0 +1,87 @@
+{
+  "type" : "eo-attachmentmerchant",
+  "baseType" : "ao-stationarymerchant",
+
+  "scriptConfig" : {    
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "poolsFile" : "/npcs/merchantpools.config",
+      
+	  "categories" : {
+        "override" : [ "allianceoutpostattachments" ]
+      },
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 20,
+	  
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "Weapon Attachments Dealer",
+          "subtitle" : "  For all your weapon modification needs"
+        }
+      }
+    },
+	
+	"dialog" : {
+      "merchant" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "Looking to personalize your weapons? You've come to the right place!"
+            ]
+          }
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "I'll be here if you need more weapon mods."
+            ]
+          }
+        },
+        "follow" : {
+          "default" : {
+            "default" : [
+              "My supplies are right over there."
+            ]
+          }
+        },
+        "welcome" : {
+          "default" : {
+            "default" : [
+              "Now, let's see if we can find you what you need."
+            ]
+          }
+        },
+        "tout" : {
+          "default" : {
+            "default" : [
+              "Bored of the same old guns? Personalize them with some mods!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "aegi-tier1head", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "chest" : [
+              { "name" : "aegi-tier2chest", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "aegi-tier2legs", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "back" : [
+              { "name" : "thea-hiddenback", "parameters" : { "colorIndex" : 1 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

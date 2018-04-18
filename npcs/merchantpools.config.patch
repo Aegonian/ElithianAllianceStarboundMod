@@ -469,6 +469,26 @@
 	//=========================================================================================================
 	// ALLIANCE OUTPOST
 	//=========================================================================================================
+	{ "op" : "add", "path" : "/alliancelostandfound",
+		"value" : [
+			[ 0, [
+			  //Misc Armour
+			  // Nothing here yet!
+			  //Custom Tailoring
+			  { "item": { "name": "aegi-protectoratehead" }, "prerequisiteQuest" : "aegicustomtailoring" },
+			  { "item": { "name": "protectoratechest" }, "prerequisiteQuest" : "aegicustomtailoring" },
+			  { "item": { "name": "protectoratepants" }, "prerequisiteQuest" : "aegicustomtailoring" },
+			  { "item": { "name": "trink-protectoratechest" }, "prerequisiteQuest" : "trinkcustomtailoring" },
+			  { "item": { "name": "trink-protectoratelegs" }, "prerequisiteQuest" : "trinkcustomtailoring" },
+			  //Story Armour
+			  // Nothing here yet!
+			  //Quest Reward Items
+			  //{ "item": { "name": "avikanwatcherpass" }, "prerequisiteQuest" : "avikanstoryhidden", "price" : 5000 },
+			  //Starter Weapons
+			  { "item": { "name": "brokenprotectoratebroadsword" }, "prerequisiteQuest" : "protectorate", "price" : 5000 }
+			] ]
+		]
+	},
 	{ "op" : "add", "path" : "/allianceoutpostposters",
 		"value" : [
 			[ 0, [
@@ -511,6 +531,64 @@
 			  { "item": { "name": "alliancehovercarbluecontroller" }, "rarity": 0.5 },
 			  { "item": { "name": "alliancehovercarredcontroller" }, "rarity": 0.5 },
 			  { "item": { "name": "allianceshuttlecontroller" }, "rarity": 0.5 }
+			] ]
+		]
+	},
+	{ "op" : "add", "path" : "/allianceoutpostbooks",
+		"value" : [
+			[ 0, [
+			  //VEHICLE OBJECTS
+			  { "item": { "name": "alliancehoverbikeobject" }, "rarity": 0.5 },
+			  { "item": { "name": "allianceshuttleobject" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancetruckobject" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancehovercarblueobject" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancehovercarredobject" }, "rarity": 0.5 },
+			  //VEHICLE CONTROLLERS
+			  { "item": { "name": "alliancehovercarbluecontroller" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancehovercarredcontroller" }, "rarity": 0.5 },
+			  { "item": { "name": "allianceshuttlecontroller" }, "rarity": 0.5 }
+			] ]
+		]
+	},
+	{ "op" : "add", "path" : "/allianceoutpostweapons",
+		"value" : [
+			[ 0, [
+			  //RANGED
+			  { "item": { "name": "thea-aaerifle1" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-aaerifle2" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-aaerifle3" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-aaerifle4" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-aaelauncher1" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-briggsshotgun" }, "rarity": 0.5 },
+			  //MELEE
+			  { "item": { "name": "thea-prod" }, "rarity": 0.5 }
+			] ]
+		]
+	},
+	{ "op" : "add", "path" : "/allianceoutpostattachments",
+		"value" : [
+			[ 0, [
+			  //ATTACHMENTS
+			  { "item": { "name": "thea-bayonetattachment" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-blastammomod-minigun" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-blazeammomod-shotgun" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-clusterammomod-grenade" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-explosiveammomod-sniper" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-flareattachment" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-flashlightattachment" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-greenlaserattachment" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-grenadeammomod-shotgun" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-grenadeattachment" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-impactammomod-sniper" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-napalmrocketmod-rpg" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-redlaserattachment" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-ricochetammomod-shotgun" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-silencerattachment-assault" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-slugammomod-shotgun" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-smartmissilemod-rpg" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-stickyammomod-grenade" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-stickyattachment" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-stunammomod-grenade" }, "rarity": 0.5 }
 			] ]
 		]
 	},

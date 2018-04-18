@@ -40,6 +40,14 @@
       "flipImages" : true,
       "direction" : "left",
       "anchors" : [ "background" ]
+    },
+	{
+	  "imageLayers" : [ { "image" : "allianceportrait.png:<color>", "fullbright" : true }, { "image" : "allianceportraitlit.png:<color>" } ],
+      "imagePosition" : [-16, -16],
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "background" ]
     }
   ]
 }

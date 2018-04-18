@@ -1,0 +1,146 @@
+//Custom behaviour which allows a lounging NPC to cycle through all of their dialogue lines from top to bottom
+
+{
+  "name": "thea-loungingconverser",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/query.lua",
+    "/scripts/actions/world.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/npc.lua",
+    "/scripts/actions/entity.lua",
+    "/scripts/actions/dialog.lua",
+    "/scripts/actions/time.lua"
+  ],
+  "parameters": {
+    "loungableSearchRadius": 30
+  },
+  "root": {
+    "title": "parallel",
+    "type": "composite",
+    "name": "parallel",
+    "parameters": {
+      "fail": {"value": -1},
+      "success": {"value": -1}
+    },
+    "children": [
+      {
+        "title": "Sit",
+        "type": "composite",
+        "name": "sequence",
+        "parameters": {},
+        "children": [
+          {
+            "title": "",
+            "type": "action",
+            "name": "findLoungable",
+            "parameters": {
+              "orderBy": {"value": "nearest"},
+              "orientation": {"value": "sit"},
+              "position": {"key": "spawn"},
+              "range": {"key": "<loungableSearchRadius>"},
+              "unoccupied": {"value": true}
+            },
+            "output": {
+              "entity": "chair"
+            }
+          },
+          {
+            "title": "",
+            "type": "action",
+            "name": "entityPosition",
+            "parameters": {
+              "entity": {"key": "chair"}
+            },
+            "output": {
+              "position": "chair"
+            }
+          },
+          {
+            "title": "",
+            "type": "composite",
+            "name": "parallel",
+            "parameters": {
+              "fail": {"value": 1},
+              "success": {"value": -1}
+            },
+            "children": [
+              {
+                "title": "entityExists",
+                "type": "action",
+                "name": "entityExists",
+                "parameters": {
+                  "entity": {"key": "chair"}
+                }
+              },
+              {
+                "title": "",
+                "type": "action",
+                "name": "moveToPosition",
+                "parameters": {
+                  "groundPosition": {"value": true},
+                  "position": {"key": "chair"}
+                },
+                "output": {
+                }
+              },
+              {
+                "title": null,
+                "type": "decorator",
+                "name": "inverter",
+                "parameters": {},
+                "child": {
+                  "title": null,
+                  "type": "action",
+                  "name": "loungableOccupied",
+                  "parameters": {
+                    "entity": {"key": "chair"}
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "title": "parallel",
+            "type": "composite",
+            "name": "parallel",
+            "parameters": {
+              "fail": {"value": 1},
+              "success": {"value": -1}
+            },
+            "children": [
+              {
+                "title": "entityExists",
+                "type": "action",
+                "name": "entityExists",
+                "parameters": {
+                  "entity": {"key": "chair"}
+                }
+              },
+              {
+                "title": "lounge",
+                "type": "action",
+                "name": "lounge",
+                "parameters": {
+                  "entity": {"key": "chair"}
+                }
+              },
+              {
+                "title": "runner",
+                "type": "action",
+                "name": "runner",
+                "parameters": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Conversation Sequence",
+        "type": "module",
+        "name": "converseseq",
+        "parameters": {}
+      }
+    ]
+  }
+}

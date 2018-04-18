@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":158,
+ "tilecount":163,
  "tileheight":128,
  "tileproperties":
     {
@@ -537,12 +537,52 @@
          "object":"alliancevehiclerepair",
          "tilesetDirection":"right"
         },
+     "158":
+        {
+         "\/\/shortdescription":"Portrait of Lyiin Taemera",
+         "imagePositionX":"-16",
+         "imagePositionY":"-16",
+         "object":"allianceportrait",
+         "tilesetDirection":"right"
+        },
+     "159":
+        {
+         "\/\/shortdescription":"Alliance Vending Machine",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"alliancevendingmachine",
+         "tilesetDirection":"right"
+        },
      "16":
         {
          "\/\/shortdescription":"Alliance Soft Chair",
          "imagePositionX":"-8",
          "imagePositionY":"0",
          "object":"alliancechair2",
+         "tilesetDirection":"right"
+        },
+     "160":
+        {
+         "\/\/shortdescription":"Alliance Weapons Store",
+         "imagePositionX":"-40",
+         "imagePositionY":"0",
+         "object":"allianceweaponshop",
+         "tilesetDirection":"right"
+        },
+     "161":
+        {
+         "\/\/shortdescription":"Tele-2-Go Shop",
+         "imagePositionX":"-32",
+         "imagePositionY":"0",
+         "object":"allianceteleportshop",
+         "tilesetDirection":"right"
+        },
+     "162":
+        {
+         "\/\/shortdescription":"Tele-2-Go Teleporter",
+         "imagePositionX":"-24",
+         "imagePositionY":"0",
+         "object":"allianceteleportshop2",
          "tilesetDirection":"right"
         },
      "17":
@@ -1540,9 +1580,29 @@
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancevehiclerepair.png"
         },
+     "158":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/allianceportrait.png"
+        },
+     "159":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancevendingmachine.png"
+        },
      "16":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancechair2.png"
+        },
+     "160":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/allianceweaponshop.png"
+        },
+     "161":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/allianceteleportshop.png"
+        },
+     "162":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/allianceteleportshop2.png"
         },
      "17":
         {

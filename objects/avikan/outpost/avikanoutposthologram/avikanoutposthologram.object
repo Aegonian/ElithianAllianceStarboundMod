@@ -79,6 +79,6 @@
   ],
 
   //Mouth position is relative to the top-left corner of the object
-  "mouthPosition" : [0, 0],
+  "mouthPosition" : [3, -2],
   "questIndicatorPosition" : [0.5, -0.5]
 }

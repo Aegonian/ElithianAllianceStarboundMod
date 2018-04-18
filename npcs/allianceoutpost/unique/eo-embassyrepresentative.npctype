@@ -1,0 +1,56 @@
+{
+  "type" : "eo-embassyrepresentative",
+  "baseType" : "eo-lounger",
+
+  "npcname" : "Mumam",
+  "identity" : {
+    "imagePath" : "aegi",
+    "gender" : "male",
+    "hairGroup" : "hair",
+    "hairType" : "male13",
+	"facialMaskGroup" : "ears",
+	"facialMask" : "4"
+  },
+
+  "dropPools" : [ "aegiDeathTreasure" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [
+		    "Welcome to the Creon Embassy, traveler."
+		  ],
+		  "aegi" : [
+		    "Welcome back to the Creon Embassy, ambassador <entityname>."
+		  ],
+		  "trink" : [
+		    "Welcome back to the Creon Embassy, ambassador <entityname>."
+		  ]
+		}
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "aegi-asauniformhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "aegi-asauniformchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "aegi-asauniformlegs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "back" : [
+              { "name" : "thea-hiddenback", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

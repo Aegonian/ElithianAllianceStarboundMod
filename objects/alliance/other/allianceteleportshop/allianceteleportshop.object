@@ -1,0 +1,52 @@
+{
+  "objectName" : "allianceteleportshop",
+  "colonyTags" : ["alliance"],
+  "printable" : false,
+  "rarity" : "Legendary",
+  "category" : "furniture",
+  "price" : 200,
+  "description" : "This shop offers personal teleporters in a variety of styles.",
+  "shortdescription" : "Tele-2-Go",
+  "race" : "aegi",
+
+  "apexDescription" : "A shop selling teleporters. This could come in handy.",
+  "avianDescription" : "Oh, it's a shop selling teleportation devices! Very useful to know.",
+  "floranDescription" : "Floran can buy teleportersss from this shop.",
+  "glitchDescription" : "Interested. A vendor selling teleportation devices!",
+  "humanDescription" : "A shop full of teleporters. A set up for the perfect getaway...",
+  "hylotlDescription" : "A shop selling teleporters. Maybe I should browse it.",
+  "novakidDescription" : "A shop sellin' teleporters... If you've got a pot of pixels to spare.",
+  
+  "drodenDescription" : "Detected merchant. Offers various personal teleporters.",
+  "akkimariDescription" : "Akki buy teleporter here. Akki use to infiltrate.",
+  
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/craftingmerchant.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "Tele-2-Go",
+        "subtitle" : "  Personalized interstellar travel",
+        "icon" : {
+          "file" : "/interface/crafting/avikanteleshopicon.png"
+        }
+      }
+    },
+    "filter" : [ "teleshop" ]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "allianceteleportshop.png:<frame>", "fullbright" : true }, { "image" : "allianceteleportshoplit.png:<frame>" } ],
+      "direction" : "right",
+
+      "imagePosition" : [-32, 0],
+      "frames" : 32,
+      "animationCycle" : 3.2,
+
+	  "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

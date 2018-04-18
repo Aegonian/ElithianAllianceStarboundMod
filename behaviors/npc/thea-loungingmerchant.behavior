@@ -18,7 +18,8 @@
   ],
   "parameters": {
     "beamOutWhenNotInUse": false,
-    "noticePlayersRadius": 20
+    "noticePlayersRadius": 20,
+    "loungableSearchRadius": 5
   },
   "root": {
     "title": "sequence",
@@ -79,7 +80,7 @@
 				  "orderBy": {"value": "nearest"},
 				  "orientation": {"value": "sit"},
 				  "position": {"key": "spawn"},
-				  "range": {"value": 5},
+				  "range": {"key": "<loungableSearchRadius>"},
 				  "unoccupied": {"value": true}
 				},
 				"output": {

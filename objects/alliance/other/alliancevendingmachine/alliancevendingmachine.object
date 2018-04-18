@@ -1,0 +1,94 @@
+{
+  "objectName" : "alliancevendingmachine",
+  "colonyTags" : ["alliance","commerce"],
+  "rarity" : "Common",
+  "printable" : false,
+  "price" : 135,
+  "description" : "A vending machine filled with popular beverages.",
+  "shortdescription" : "Alliance Vending Machine",
+  "race" : "aegi",
+
+  "apexDescription" : "It's full of all sorts of soft drinks.",
+  "avianDescription" : "The drinks in here look a little sweet for my taste...",
+  "floranDescription" : "Floran dissslike over-sweet drinks.",
+  "glitchDescription" : "Intrigued. I wouldn't mind trying some of these foreign beverages.",
+  "humanDescription" : "The machine is selling soft drinks.",
+  "hylotlDescription" : "There is no Reef-Cola in here, unfortunately.",
+  "novakidDescription" : "Never been a great fan of fizzy drinks.",
+
+  "aegiDescription" : "A vending machine full of beverages.",
+  "avikanDescription" : "This machine dispenses drinks. What a strange thing.",
+  "erixianDescription" : "This vending machine holds all the most popular sodas produced in the Union.",
+  "trinkDescription" : "The most popular sodas in the Union can be purchased here.",
+  "hymidDescription" : "The Union produces great sodas.",
+  "notixDescription" : "Strangely enough, I actually like the sodas made by the Aegi.",
+  "jorgasianDescription" : "A vending machine. It's full of drinks.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "This vending machine dispenses all sorts of beverages.",
+  "theleanDescription" : "TODO",
+  "drodenDescription" : "Detected alien device. Analysis: dispenses drinks in exchange for currency.",
+  "akkimariDescription" : "Akki want drink. Akki smash glass?",
+  
+  "category" : "decorative",
+  "lightColor" : [180, 180, 180],
+
+  "interactAction" : "OpenMerchantInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/vendingmachine.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : " Soda Vending Machine",
+        "subtitle" : " The best drinks in the Union"
+      }
+    },
+    "buyFactor" : 2.5,
+    "sellFactor" : 0.2,
+    "items" : [
+      { "item" : "alliancesodacan" },
+      { "item" : "alliancesodacan2" },
+      { "item" : "alliancesodacan3" }
+    ]
+  },
+
+  "inventoryIcon" : "alliancevendingmachineicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "alliancevendingmachine.png:<color>",
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ],
+
+  "scripts" : [ "/scripts/npcToyObject.lua" ],
+  "npcToy" : {
+    "influence" : [
+      "vendingmachineActivate",
+      "vendingmachineCollect",
+      "vendingmachineConsume",
+      "vendingmachineComplete"
+    ],
+    "defaultReactions" : {
+      "vendingmachineActivate" : [
+        [1.0, "pressbutton"]
+      ],
+      "vendingmachineCollect" : [
+        [1.0, "crouchcollect"]
+      ],
+      "vendingmachineConsume" : [
+        [1.0, "drink"]
+      ],
+      "vendingmachineComplete" : [
+        [1.0, "smile"],
+        [0.1, "vomit"]
+      ]
+    },
+    "preciseStandPositionLeft" : [-0.5, 0.0],
+    "preciseStandPositionRight" : [2.0, 0.0],
+    "maxNpcs" : 1
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "type" : "eo-weaponmerchant",
+  "baseType" : "thea-loungingmerchant",
+
+  "scriptConfig" : {    
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "poolsFile" : "/npcs/merchantpools.config",
+      
+	  "categories" : {
+        "override" : [ "allianceoutpostweapons" ]
+      },
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 20,
+	  
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "Weapons Dealer",
+          "subtitle" : "  A weapon for every situation"
+        }
+      }
+    },
+	
+	"dialog" : {
+      "merchant" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "I think I have a weapon that fits you just right!"
+            ]
+          }
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "Come back whenever you need a new gun."
+            ]
+          }
+        },
+        "follow" : {
+          "default" : {
+            "default" : [
+              "My guns are just over there."
+            ]
+          }
+        },
+        "welcome" : {
+          "default" : {
+            "default" : [
+              "Now, what kind of weapon are you looking for?"
+            ]
+          }
+        },
+        "tout" : {
+          "default" : {
+            "default" : [
+              "In need of protection? I've got the best weapons right here!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "aegi-tier1head", "parameters" : { "colorIndex" : 4 } }
+            ],
+            "chest" : [
+              { "name" : "aegi-tier1chest", "parameters" : { "colorIndex" : 4 } }
+            ],
+            "legs" : [
+              { "name" : "aegi-tier1legs", "parameters" : { "colorIndex" : 4 } }
+            ],
+            "back" : [
+              { "name" : "thea-hiddenback", "parameters" : { "colorIndex" : 4 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

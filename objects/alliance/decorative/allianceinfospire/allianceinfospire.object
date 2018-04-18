@@ -50,7 +50,7 @@
   "soundEffect" : "/sfx/objects/fluorescent_light_quiet.ogg",
   "soundEffectRangeMultiplier" : 0.5,
   
-  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+  "animation" : "allianceinfospire.animation",
   "animationParts" : {
     "bg" : "allianceinfospire.png",
     "fg" : "allianceinfospirelit.png"

@@ -24,8 +24,8 @@
   
   "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
   "animationParts" : {
-    "bg" : "alliancelightstrip.png",
-    "fg" : "alliancelightstriplit.png"
+    "bg" : "theahiddenlight.png",
+    "fg" : "theahiddenlight.png"
   },
   "animationPosition" : [0, 0],
 
