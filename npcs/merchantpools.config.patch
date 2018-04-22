@@ -467,7 +467,7 @@
 	//Nothing yet!
 	
 	//=========================================================================================================
-	// ALLIANCE OUTPOST
+	// CREON EMBASSY
 	//=========================================================================================================
 	{ "op" : "add", "path" : "/alliancelostandfound",
 		"value" : [
@@ -589,6 +589,34 @@
 			  { "item": { "name": "thea-stickyammomod-grenade" }, "rarity": 0.5 },
 			  { "item": { "name": "thea-stickyattachment" }, "rarity": 0.5 },
 			  { "item": { "name": "thea-stunammomod-grenade" }, "rarity": 0.5 }
+			] ]
+		]
+	},
+	{ "op" : "add", "path" : "/allianceoutposthotbrod",
+		"value" : [
+			[ 0, [
+			  //FOOD
+			  { "item": { "name": "hotbrod" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancesodabottle" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancesodabottle2" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancesodabottle3" }, "rarity": 0.5 }
+			] ]
+		]
+	},
+	{ "op" : "add", "path" : "/allianceoutpostvehicleparts",
+		"value" : [
+			[ 0, [
+			  //MATERIALS
+			  { "item": { "name": "autochip" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancemetal" }, "rarity": 0.5 }
+			] ]
+		]
+	},
+	{ "op" : "add", "path" : "/allianceoutpostcontracts",
+		"value" : [
+			[ 0, [
+			  //OTHER
+			  { "item": { "name": "alliancecrewcontract" }, "rarity": 0.5 }
 			] ]
 		]
 	},

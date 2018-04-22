@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "alliancemetaltier6", "count" : 6 },
+    { "item" : "allianceplasmacore", "count" : 2 },
+    { "item" : "excelsiorheatsink", "count" : 1 }
+  ],
+  "output" : { "item" : "thea-excelsior", "count" : 1 },
+  "groups" : [ "alliancecrafting3", "weapons", "all" ]
+}

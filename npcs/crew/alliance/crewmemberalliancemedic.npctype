@@ -1,0 +1,92 @@
+{
+  "type" : "crewmemberalliancemedic",
+  "baseType" : "crewmemberalliance",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : true
+    },
+
+	"crew" : {
+	  "role" : {
+        "type" : "alliancemedic",
+        "name" : "Medic",
+        "field" : "Alliance",
+        "uniformColorIndex" : 3,
+
+        "benefits" : [
+          {
+            "type" : "Regeneration",
+            "value" : 1
+          }
+        ]
+      }
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "roleDescription" : {
+          "default" : {
+            "default" : [
+              "As your medical officer, I'll keep an eye on your health in between adventures."
+            ]
+          }
+        },
+        "fieldBenefit" : {
+          "default" : {
+            "default" : [
+              "You look hurt! Let me help!",
+              "I'll tend to those wounds of yours.",
+              "Hold still, I'll treat those wounds for you.",
+              "You might need medical assistance. Let me help!"
+            ]
+          }
+        },
+        "combatBenefit" : {
+          "default" : {
+            "default" : [
+              "You look hurt! Let me help!",
+              "I'll tend to those wounds of yours.",
+              "Hold still, I'll treat those wounds for you.",
+              "You might need medical assistance. Let me help!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [ //DEFAULT EQUIPMENT -- Used for Aegi and other humanoids
+      [0, [
+		{
+		  "head" : [ { "name" : "aegi-allianceuniformhead", "data" : { "colorIndex" : 3 } } ],
+		  "chest" : [ { "name" : "aegi-allianceuniformchest", "data" : { "colorIndex" : 3 } } ],
+		  "legs" : [ { "name" : "aegi-allianceuniformlegs", "data" : { "colorIndex" : 3 } } ],
+		  "primary" : [
+			"alliancebandage"
+		  ],
+		  "sheathedprimary" : [
+			"thea-tier5pistol"
+		  ]
+		}
+	  ] ]
+    ],
+    "trink" : [ //TRINKIAN EQUIPMENT -- Used for Trinks exclusively
+      [0, [
+		{
+		  "chest" : [ { "name" : "trink-alliancechest", "data" : { "colorIndex" : 3 } } ],
+		  "legs" : [ { "name" : "trink-alliancelegs", "data" : { "colorIndex" : 3 } } ],
+		  "primary" : [
+			"alliancebandage"
+		  ],
+		  "sheathedprimary" : [
+			"thea-tier5pistol"
+		  ]
+		}
+	  ] ]
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "objectName" : "trinkshipwindowsimple",
+  "colonyTags" : ["trink"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A monitor used by the Trinks as a replacement for windows.",
+  "shortdescription" : "Simple Trinkian Ship Window",
+  "race" : "trink",  
+  "lightColor" : [10, 50, 10],
+
+  "apexDescription" : "This seems to be some sort of digital window.",
+  "avianDescription" : "A digital window? I prefer actual windows.",
+  "floranDescription" : "Floran doesn't underssstand ssshiny ssscreen...",
+  "glitchDescription" : "Intrigued. This monitor srves as a digital window, to replace actual windows.",
+  "humanDescription" : "A digital window? How awesome is that?",
+  "hylotlDescription" : "A digital window to circumvent the structural weakpoints created by real windows.",
+  "novakidDescription" : "What sort of mockery is this? Is this supposed to some sorta window?",
+
+  "aegiDescription" : "A digital Trinkian window. It's connected to sensors all around the ship.",
+  "avikanDescription" : "Is this supposed to be a window?",
+  "erixianDescription" : "A digital window. It's not quite as clear as a real window.",
+  "trinkDescription" : "Us Trinks have no need for actual windows. These monitors display all the information we need about our surroundings.",
+  "hymidDescription" : "A digital window, connected to sensors all around the ship.",
+  "notixDescription" : "Digital windows to circumvent the structural weakpoints created by actual windows.",
+  "jorgasianDescription" : "A digital window, readable only to the Trink.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Alien interface detected. Unable to translate.",
+  
+  "inventoryIcon" : "trinkshipwindowsimpleicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "trinkshipwindowsimple.png:<color>.<frame>", "fullbright" : true }, { "image" : "trinkshipwindowsimplelit.png:<color>.<frame>" } ],
+      "imagePosition" : [-8, 0],
+      "frames" : 5,
+      "animationCycle" : 0.4,
+      "lightPosition" : [0, 1],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "itemName" : "trinkuniquecache",
+  "level" : 1,
+  "price" : 250,
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "A sealed cache containing a random Unique-quality item. Hold ^green;[LMB] ^white;to open!",
+  "shortdescription" : "^orange;Unique Trinkian Cache^white;",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "trinkuniquecacheicon.png",
+  "animation" : "trinkuniquecache.animation",
+  "animationParts" : {
+    "treasurebox" : "trinkuniquecache.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "open" : [ "/sfx/objects/colonydeed_partyhorn.ogg" ],
+	  "openLoop" : [ "/sfx/other/thea_sealedcache_opening2.ogg" ]
+    }
+  },
+  
+  "scripts" : ["/items/active/other/thea-sealedcache/thea-sealedcache.lua"],
+
+  "fireOffset" : [1.0, 0.0],
+
+  "treasure" : {
+    "pool" : "uniqueweaponsTrink"
+  }
+}

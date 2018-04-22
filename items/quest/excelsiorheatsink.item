@@ -1,0 +1,11 @@
+{
+  "itemName" : "excelsiorheatsink",
+  "price" : 500,
+  "rarity" : "Essential",
+  "category" : "Quest Item",
+  "tooltipKind" : "thea-unique",
+  "inventoryIcon" : "excelsiorheatsink.png",
+  "description" : "The heatsink of a small but powerful weapon, designed by AEG-Corps.",
+  "shortdescription" : "^orange;Excelsior Heatsink^white;",
+  "itemTags" : [ "questitem" ]
+}

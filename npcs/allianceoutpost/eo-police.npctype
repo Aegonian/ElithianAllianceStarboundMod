@@ -1,0 +1,47 @@
+{
+  "type" : "eo-police",
+  "baseType" : "eo-civilian",
+
+  "dropPools" : [ "aegiDeathTreasure" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "I'm here to keep the peace.",
+		    "Even the Embassy needs some security.",
+		    "Keep to the rules, and you'll do just fine here.",
+		    "Go causing trouble and you'll find P-ASA after you in no time. Just a friendly warning.",
+		    "P-ASA is here to keep the peace. Not that we're needed very often."
+		  ]
+		}
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+		{
+		  "head" : [
+			{ "name" : "aegi-policehead", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "chest" : [
+			{ "name" : "aegi-policechest", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "legs" : [
+			{ "name" : "aegi-policelegs", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "back" : [
+			{ "name" : "thea-hiddenback", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "primary" : [
+			[ "thea-policepistol" ]
+		  ]
+		}
+      ]]
+    ]
+  }
+}

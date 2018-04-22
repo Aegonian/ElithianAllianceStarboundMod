@@ -41,7 +41,6 @@
       "direction" : "left",
       "anchors" : [ "bottom" ],
       "collision" : "platform"
-
     },
     {
 	  "imageLayers" : [ { "image" : "avikandrodenshop.png", "fullbright" : true }, { "image" : "avikandrodenshoplit.png" } ],
@@ -52,7 +51,6 @@
       "direction" : "right",
       "anchors" : [ "bottom" ],
       "collision" : "platform"
-
     }
   ],
   

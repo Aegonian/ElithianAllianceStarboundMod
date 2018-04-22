@@ -1,0 +1,70 @@
+{
+  "objectName" : "allianceblastdoorautomated",
+  "colonyTags" : ["alliance", "door"],
+  "rarity" : "Common",
+  "category" : "door",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A highly resistant blast door.",
+  "shortdescription" : "Alliance Automated Door",
+  "race" : "aegi",
+  
+  "health" : 8,
+
+  "apexDescription" : "A heavy blast door.",
+  "avianDescription" : "A shiny blast door.",
+  "floranDescription" : "Floran wondersss what is behind metal doorsss.",
+  "glitchDescription" : "Observation. A blast door.",
+  "humanDescription" : "A heavy metal blast door. Cool.",
+  "hylotlDescription" : "A metal blast door.",
+
+  "aegiDescription" : "A thick blast door.",
+  "avikanDescription" : "An alien blast door.",
+  "erixianDescription" : "A blast door. It looks like it can withstand anything.",
+  "trinkDescription" : "A strong blast door.",
+  "hymidDescription" : "A thick blast door. It won't be breached easily.",
+  "notixDescription" : "A blast door.",
+  "jorgasianDescription" : "A blast door. What might lie beyond it?",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Blast door detected.",
+
+  "inventoryIcon" : "allianceblastdoorautomatedicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "allianceblastdoorautomated.png:default",
+      "imagePosition" : [0, 0],
+      "renderLayer" : "Object+5",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom", "top" ]
+    }
+  ],
+
+  "animation" : "/objects/wired/door/door.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_open.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_close.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "allianceblastdoorautomated.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "outputNodes" : [ [1, 0] ],
+
+  "scripts" : [ "/objects/scripts/thea-automateddoor.lua" ],
+  "scriptDelta" : 5,
+  
+  "detectDuration" : 0.5,
+  "detectArea" : [ [-2, 0], [4, 5] ]
+}

@@ -1,0 +1,229 @@
+{
+  "type" : "crewmemberalliance",
+  "baseType" : "crewmember",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+
+	"crew" : {
+      "ranks" : [
+        "Rookie <role>",
+        "Beginner <role>",
+        "Experienced <role>",
+        "Advanced <role>",
+        "Self-taught <role>",
+        "Educated <role>",
+        "Master <role>",
+        "Assistant <role>",
+        "Apprentice <role>",
+        "Private <role>",
+        "Expert <role>",
+        "<field> <role>"
+      ],
+	  
+	  "defaultUniform" : {
+		"chest" : "protectoratechest",
+		"legs" : "protectoratepants"
+	  },
+	  
+      "uniformSlots" : []
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "offer" : {
+          "aegi" : {
+            "default" : [
+              "Hey there, adventurer. Might I join your crew?",
+              "I'm <selfname>, looking to join a spaceship crew. Are you hiring?",
+              "Do you need anyone for your crew? I'd love to join you!",
+              "I'd love to join your crew, if you'll have me."
+            ]
+          },
+          "trink" : {
+            "default" : [
+              "Greetings, adventurer. Might I join your crew?",
+              "I'm certain that my skills will benefit your crew.",
+              "Are you hiring? I would like to join your crew.",
+              "I think we can help each other. Might I join your crew?"
+            ]
+          }
+        },
+		"roleDescription" : {
+          "aegi" : {
+            "default" : [
+              "I'll keep you safe in battle, sir!",
+              "Let me fight for you!",
+              "Always ready, captain!",
+              "I'm here if you need me!"
+            ]
+          },
+          "trink" : {
+            "default" : [
+              "I'm ready for combat!",
+              "Let me know if you require combat support.",
+              "I will charge into battle with you.",
+              "If you need combat support, you know where to find me."
+            ]
+          }
+        },
+		"respawned" : {
+          "aegi" : {
+            "default" : [
+              "I've never felt anything as strange as that...",
+              "I thought that was the end for me!",
+              "I'm back!",
+              "I'm alive!"
+            ]
+          },
+          "trink" : {
+            "default" : [
+              "Being uploaded into a new body is bad for my memory...",
+              "I should be more careful with my hull next time...",
+              "Some of my memories didn't transfer to my new body properly...",
+              "I'm glad my database wasn't corrupted when I was reuploaded."
+            ]
+          }
+        },
+		"unfollow" : {
+          "aegi" : {
+            "default" : [
+              "I'll wait for you here.",
+              "Let me know when you want to head out again.",
+              "I'll stand guard here.",
+              "I'll be here when you get back."
+            ]
+          },
+          "trink" : {
+            "default" : [
+              "I'll wait here.",
+              "Call me when we're heading out again.",
+              "I'll stay here, then.",
+              "I'll wait for you here."
+            ]
+          }
+        },
+		"follow" : {
+          "aegi" : {
+            "default" : [
+              "Ready to go, sir!",
+              "Let's be off, then!",
+              "I'll follow you, captain!",
+              "Are we heading out then?"
+            ]
+          },
+          "trink" : {
+            "default" : [
+              "Ready to go.",
+              "I'm all ready.",
+              "Let's go, then.",
+              "I'm good to go."
+            ]
+          }
+        },
+		"cantreach" : {
+          "aegi" : {
+            "default" : [
+              "I can't reach you!",
+              "I can't get over there!",
+              "Wait for me!",
+              "I'll find a way around!"
+            ]
+          },
+          "trink" : {
+            "default" : [
+              "I can't reach you!",
+              "I can't get over there!",
+              "I can't find my way there!",
+              "Wait up!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [ //DEFAULT EQUIPMENT -- Used for Aegi and other humanoids
+      [0, [
+		{
+		  "head" : [ { "name" : "aegi-allianceuniformhead", "data" : { "colorIndex" : 0 } } ],
+		  "chest" : [ { "name" : "aegi-allianceuniformchest", "data" : { "colorIndex" : 0 } } ],
+		  "legs" : [ { "name" : "aegi-allianceuniformlegs", "data" : { "colorIndex" : 0 } } ],
+		  "primary" : [
+			"thea-tier2rifle",
+			"thea-tier2shotgun",
+			"thea-tier2sniper"
+		  ],
+		  "sheathedprimary" : [
+			"thea-tier1broadsword",
+			"thea-tier1shortsword",
+			"thea-tier2dagger",
+			"thea-tier2spear",
+			"thea-tier3axe",
+			"thea-tier3hammer"
+		  ]
+		},
+		{
+		  "chest" : [ { "name" : "aegi-allianceuniformchest", "data" : { "colorIndex" : 0 } } ],
+		  "legs" : [ { "name" : "aegi-allianceuniformlegs", "data" : { "colorIndex" : 0 } } ],
+		  "primary" : [
+			"thea-tier1broadsword",
+			"thea-tier1shortsword",
+			"thea-tier2dagger",
+			"thea-tier2spear",
+			"thea-tier3axe",
+			"thea-tier3hammer"
+		  ],
+		  "sheathedprimary" : [
+			"thea-tier2rifle",
+			"thea-tier2shotgun",
+			"thea-tier2sniper"
+		  ]
+		}
+	  ] ]
+    ],
+    "trink" : [ //TRINKIAN EQUIPMENT -- Used for Trinks exclusively
+      [0, [
+		{
+		  "chest" : [ { "name" : "trink-alliancechest", "data" : { "colorIndex" : 0 } } ],
+		  "legs" : [ { "name" : "trink-alliancelegs", "data" : { "colorIndex" : 0 } } ],
+		  "primary" : [
+			"thea-tier2rifle",
+			"thea-tier2shotgun",
+			"thea-tier2sniper"
+		  ],
+		  "sheathedprimary" : [
+			"thea-tier1broadsword",
+			"thea-tier1shortsword",
+			"thea-tier2dagger",
+			"thea-tier2spear",
+			"thea-tier3axe",
+			"thea-tier3hammer"
+		  ]
+		},
+		{
+		  "chest" : [ { "name" : "trink-alliancechest", "data" : { "colorIndex" : 0 } } ],
+		  "legs" : [ { "name" : "trink-alliancelegs", "data" : { "colorIndex" : 0 } } ],
+		  "primary" : [
+			"thea-tier1broadsword",
+			"thea-tier1shortsword",
+			"thea-tier2dagger",
+			"thea-tier2spear",
+			"thea-tier3axe",
+			"thea-tier3hammer"
+		  ],
+		  "sheathedprimary" : [
+			"thea-tier2rifle",
+			"thea-tier2shotgun",
+			"thea-tier2sniper"
+		  ]
+		}
+	  ] ]
+    ]
+  }
+}

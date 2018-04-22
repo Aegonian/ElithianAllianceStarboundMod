@@ -62,7 +62,10 @@
         "twoHanded" : true,
   
         "allowRotate" : true,
-        "allowFlip" : true
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
       },
       "load" : {
         "aimAngle" : 0,

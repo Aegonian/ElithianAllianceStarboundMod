@@ -1,0 +1,193 @@
+{
+  "objectName" : "trinkspotlight2",
+  "colonyTags" : ["trink","light"],
+  "rarity" : "Common",
+  "category" : "light",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A directional light, for highlighting areas of interest.",
+  "shortdescription" : "Small Trinkian Spotlight",
+  "race" : "trink",
+  
+  "lightColor" : [121, 255, 75],
+  "pointLight" : true,
+  "pointBeam" : 10,
+  "beamAmbience" : 0.2,
+
+  "apexDescription" : "It's a light, it's sole purpose is to point at that thing.",
+  "avianDescription" : "I should check out what the light is pointing at, it might be more interesting.",
+  "floranDescription" : "Bright light shinesss on pretty objects.",
+  "glitchDescription" : "Humbled. This light is diligently performing it's one purpose.",
+  "humanDescription" : "I should probably be more interested in what this light is aimed at.",
+  "hylotlDescription" : "This light is here to illuminate a subject more worthy of my interest than itself.",
+  "novakidDescription" : "I wonder what this light could be pointin' at?",
+
+  "aegiDescription" : "Perhaps I should be looking at whatever this light is pointing at.",
+  "avikanDescription" : "A bright light made to highlight something. Perhaps I should look at that something instead.",
+  "erixianDescription" : "A light made for highlighting.",
+  "trinkDescription" : "Not the most efficient way to highlight something, but it does look good.",
+  "hymidDescription" : "This light illuminates something that's probably more interesting to look at.",
+  "notixDescription" : "I suppose this is a light, but I can't be certain.",
+  "jorgasianDescription" : "A light pointed at something more interesting.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Directional light. Recommend observing the highlighted area.",
+
+  "inventoryIcon" : "trinkspotlight2icon.png",
+  "orientations" : [
+    {
+      "image" : "trinkspotlight2ceiling1.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "animationParts" : {
+        "bg" : "trinkspotlight2ceiling1.png",
+        "fg" : "trinkspotlight2ceiling2.png"
+      },
+      "direction" : "right",
+
+      "spaceScan" : 0.01,
+      "fgAnchors" : [ [0, 0] ],
+      "lightPosition" : [0, 0],
+      "beamAngle" : 270
+    },
+
+    {
+      "image" : "trinkspotlight2ceilingleft1.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "animationParts" : {
+        "bg" : "trinkspotlight2ceilingleft1.png",
+        "fg" : "trinkspotlight2ceilingleft2.png"
+      },
+      "direction" : "right",
+
+      "spaceScan" : 0.01,
+      "anchors" : [ "top", "left" ],
+      "lightPosition" : [0, 0],
+      "beamAngle" : 315
+    },
+
+    {
+      "image" : "trinkspotlight2ceilingright1.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "animationParts" : {
+        "bg" : "trinkspotlight2ceilingright1.png",
+        "fg" : "trinkspotlight2ceilingright2.png"
+      },
+      "direction" : "right",
+
+      "spaceScan" : 0.01,
+      "anchors" : [ "top", "right" ],
+      "lightPosition" : [0, 0],
+      "beamAngle" : 225
+    },
+
+    {
+      "image" : "trinkspotlight2groundleft1.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "animationParts" : {
+        "bg" : "trinkspotlight2groundleft1.png",
+        "fg" : "trinkspotlight2groundleft2.png"
+      },
+      "direction" : "right",
+
+      "spaceScan" : 0.01,
+      "anchors" : [ "bottom", "left" ],
+      "lightPosition" : [0, 0],
+      "beamAngle" : 45
+    },
+
+    {
+      "image" : "trinkspotlight2groundright1.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "animationParts" : {
+        "bg" : "trinkspotlight2groundright1.png",
+        "fg" : "trinkspotlight2groundright2.png"
+      },
+      "direction" : "right",
+
+      "spaceScan" : 0.01,
+      "anchors" : [ "bottom", "right" ],
+      "lightPosition" : [0, 0],
+      "beamAngle" : 135
+    },
+
+    {
+      "image" : "trinkspotlight2ceiling1.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "animationParts" : {
+        "bg" : "trinkspotlight2ceiling1.png",
+        "fg" : "trinkspotlight2ceiling2.png"
+      },
+      "direction" : "right",
+
+      "spaceScan" : 0.01,
+      "anchors" : [ "top" ],
+      "lightPosition" : [0, 0],
+      "beamAngle" : 270
+    },
+
+    {
+      "image" : "trinkspotlight2ground1.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "animationParts" : {
+        "bg" : "trinkspotlight2ground1.png",
+        "fg" : "trinkspotlight2ground2.png"
+      },
+      "direction" : "right",
+
+      "spaceScan" : 0.01,
+      "anchors" : [ "bottom" ],
+      "lightPosition" : [0, 0],
+      "beamAngle" : 90
+    },
+
+    {
+      "image" : "trinkspotlight2left1.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "animationParts" : {
+        "bg" : "trinkspotlight2left1.png",
+        "fg" : "trinkspotlight2left2.png"
+      },
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "left" ],
+      "lightPosition" : [0, 0],
+      "beamAngle" : 0
+    },
+
+    {
+      "image" : "trinkspotlight2right1.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "animationParts" : {
+        "bg" : "trinkspotlight2right1.png",
+        "fg" : "trinkspotlight2right2.png"
+      },
+      "direction" : "right",
+
+      "spaceScan" : 0.01,
+      "anchors" : [ "right" ],
+      "lightPosition" : [0, 0],
+      "beamAngle" : 180
+    }
+  ],
+
+  "animation" : "/objects/animations/thea-spotlight.animation",
+  "animationParts" : {
+    "bg" : "trinkspotlight2right.png",
+    "fg" : "trinkspotlight2rightlit.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/floodlights_on.ogg" ],
+      "off" : [ "/sfx/objects/floodlights_off.ogg" ]
+    }
+  },
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+
+  "interactive" : false,
+
+  "inputNodes" : [ [0, 0] ]
+}

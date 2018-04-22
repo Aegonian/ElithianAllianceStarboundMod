@@ -1,0 +1,72 @@
+{
+  "type" : "eo-engineer",
+  "baseType" : "eo-civilian",
+
+  "dropPools" : [ "aegiDeathTreasure" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "Hi there."
+		  ]
+		},
+        "aegi" : {
+		  "default" : [ 
+		    "I just love working on vehicles and other machines.",
+		    "Are your vehicles in need of repair? You should see Faro.",
+		    "Faro can repair your vehicles.",
+		    "I've got a crush on Azurii, but don't tell her!",
+		    "Azurii is a mech specialist, but Faro knows his way around pretty much all other vehicles."
+		  ]
+		},
+        "trink" : {
+		  "default" : [ 
+		    "I'm here to help the Aegi keep their machines at peak efficiency.",
+		    "We Trink are in high demand in engineering facilities.",
+		    "Need some vehicles repaired? Talk to Faro.",
+		    "Faro's a great mechanic. He's even better than many Trink.",
+		    "Need some engineering advice?"
+		  ]
+		}
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "aegi" : [
+      [0, [
+		{
+		  "head" : [
+			{ "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : [0, 4, 5] } },
+			{ "name" : "aegi-enerthhead", "parameters" : { "colorIndex" : [0, 4, 5] } }
+		  ],
+		  "chest" : [
+			{ "name" : "aegi-enerthchest", "parameters" : { "colorIndex" : [0, 4, 5] } }
+		  ],
+		  "legs" : [
+			{ "name" : "aegi-enerthlegs", "parameters" : { "colorIndex" : [0, 4, 5] } }
+		  ]
+		}
+	  ] ]
+    ],
+    "trink" : [
+      [0, [
+		{
+		  "head" : [
+			{ "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : [8, 4, 5] } }
+		  ],
+		  "chest" : [
+			{ "name" : "trink-paintedchest", "parameters" : { "colorIndex" : [8, 4, 5] } },
+			{ "name" : "trink-stripedchest", "parameters" : { "colorIndex" : [8, 4, 5] } }
+		  ],
+		  "legs" : [
+			{ "name" : "trink-engineerlegs", "parameters" : { "colorIndex" : [8, 4, 5] } }
+		  ]
+		}
+	  ] ]
+    ]
+  }
+}

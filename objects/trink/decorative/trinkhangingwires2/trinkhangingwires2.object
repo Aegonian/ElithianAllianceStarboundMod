@@ -1,0 +1,46 @@
+{
+  "objectName" : "trinkhangingwires2",
+  "colonyTags" : ["trink"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 25,
+  "description" : "A bunch of loose-hanging wires.",
+  "shortdescription" : "Trinkian Hanging Wires",
+  "race" : "trink",
+
+  "apexDescription" : "Just some loose-hanging wires",
+  "avianDescription" : "A bunch of wires. Looks messy.",
+  "floranDescription" : "Floran not touch wiresss. Floran ssmart.",
+  "glitchDescription" : "Observation. Loose-hanging electrical wires.",
+  "humanDescription" : "Better not get too close to those wires. I don't want to get zapped.",
+  "hylotlDescription" : "A messy bunch of wires.",
+  "novakidDescription" : "Just a bunch 'a wires.",
+
+  "aegiDescription" : "Loose-hanging wires. Someone should fix them.",
+  "avikanDescription" : "The Vanguard might want me to sabotage these wires.",
+  "erixianDescription" : "Just some wires.",
+  "trinkDescription" : "I should tidy up these wires. Having them hang around isn't very efficient.",
+  "hymidDescription" : "I should be craeful not to touch these wires while I'm wet.",
+  "notixDescription" : "These wires hum softly.",
+  "jorgasianDescription" : "The Trink don't usually keep wires hanging around like that.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Analysis complete. Detected alien wiring. Recommend sabotage.",
+  "akkimariDescription" : "Akki no touch the wires.",
+
+  "inventoryIcon" : "trinkhangingwires2icon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "trinkhangingwires2.png:<color>",
+
+      "imagePosition" : [0, -24],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ]
+}

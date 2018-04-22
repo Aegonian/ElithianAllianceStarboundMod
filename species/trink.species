@@ -22,6 +22,15 @@
 //NEW in v2.3.0
 	  { "item" : "trinkpanel" },
 	  { "item" : "trinkscanner" },
+	  { "item" : "trinkmonitorwide" },
+	  { "item" : "trinkmonitorsmall" },
+	  { "item" : "trinkshipwindowsimple" },
+	  { "item" : "trinklargeconsole" },
+	  { "item" : "trinkspotlight" },
+	  { "item" : "trinkspotlight2" },
+	  { "item" : "trinkhangingwires" },
+	  { "item" : "trinkhangingwires2" },
+	  { "item" : "trinkhangingwires3" },
 
 //NEW in v2.2.1
 	  { "item" : "trinkslopedpanel" },

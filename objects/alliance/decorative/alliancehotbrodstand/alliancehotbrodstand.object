@@ -1,0 +1,43 @@
+{
+  "objectName" : "alliancehotbrodstand",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 150,
+  "description" : "This place sells Hotbröd.",
+  "shortdescription" : "Hotbröd Stand",
+  "race" : "aegi",
+
+  "apexDescription" : "This place sells bread of some kind.",
+  "avianDescription" : "This place sells delicious bread!",
+  "floranDescription" : "Floran doesss not know what to think of alien breadss.",
+  "glitchDescription" : "Observation. This place sells a type of warm bread.",
+  "humanDescription" : "Hotbröd? That sounds familiar...",
+  "hylotlDescription" : "A stand for baking and selling some type of bread.",
+  "novakidDescription" : "They sell some sorta bread here.",
+
+  "aegiDescription" : "A Hotbröd stand. They've grown in popularity over the past few years.",
+  "avikanDescription" : "I smell alien food. It reminds of of the smell of dunebuns.",
+  "erixianDescription" : "The Aegi are quite fond of their Hotbröd.",
+  "trinkDescription" : "A place that sells Hotbröd, an Aeginian delicacy.",
+  "hymidDescription" : "Hotbröd! I would love one right now!",
+  "notixDescription" : "Whatever it is they sell here, it smells quite nicely.",
+  "jorgasianDescription" : "A Hotbröd stand, quite popular in the Union right now.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien food. Recommend caution.",
+  "akkimariDescription" : "Akki smell food. Hungry now!",
+
+  "inventoryIcon" : "alliancehotbrodstandicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "alliancehotbrodstand.png:<color>",
+      "imagePosition" : [-16, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

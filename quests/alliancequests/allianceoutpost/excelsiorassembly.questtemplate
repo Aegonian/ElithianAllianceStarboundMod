@@ -1,0 +1,54 @@
+{
+  "id" : "excelsiorassembly",
+  "prerequisites" : [],
+  "title" : "^green;Excelsior Assembly",
+  "text" : "I found a fragment of a weapon blueprint. ^green;I should find the other pieces and bring them to a weapons dealer in the Creon Embassy ^white;- they'll know how to read the completed blueprint.",
+  "completionText" : "You found quite the blueprint! Here, let me combine it all and translate it into something you can use at a crafting station. I think you'll be happy with the results!",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "excelsiorheatsink", 1 ], [ "thea-excelsior-recipe", 1 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+	"portraits" : {
+      "questStarted" : "player",
+      "questComplete" : "questReceiver"
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "excelsiorblueprint1",
+        "count" : 1,
+        "consume" : true
+      },
+      {
+        "type" : "gatherItem",
+        "itemName" : "excelsiorblueprint2",
+        "count" : 1,
+        "consume" : true
+      },
+      {
+        "type" : "gatherItem",
+        "itemName" : "excelsiorblueprint3",
+        "count" : 1,
+        "consume" : true
+      },
+      {
+        "type" : "gatherItem",
+        "itemName" : "excelsiorblueprint4",
+        "count" : 1,
+        "consume" : true
+      },
+      {
+        "type" : "gatherItem",
+        "itemName" : "excelsiorblueprint5",
+        "count" : 1,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Find ^orange;Faze ^reset;in the ^orange;Creon Embassy^reset;"
+  }
+}

@@ -338,6 +338,42 @@
     } ]
   ],
   
+  "allianceexcelsiorblueprint1" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "excelsiorblueprint1", 1 ]}
+      ]
+    } ]
+  ],
+  "allianceexcelsiorblueprint2" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "excelsiorblueprint2", 1 ]}
+      ]
+    } ]
+  ],
+  "allianceexcelsiorblueprint3" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "excelsiorblueprint3", 1 ]}
+      ]
+    } ]
+  ],
+  "allianceexcelsiorblueprint4" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "excelsiorblueprint4", 1 ]}
+      ]
+    } ]
+  ],
+  "allianceexcelsiorblueprint5" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "excelsiorblueprint5", 1 ]}
+      ]
+    } ]
+  ],
+  
 	//ALLIANCE CODICES
   "alliancecodex" : [
     [1, {

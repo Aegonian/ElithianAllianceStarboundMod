@@ -25,7 +25,7 @@
     "buyFactor" : 1.0,
     "sellFactor" : 0.2,
     "items" : [
-	  //OTHER
+	  //AVIKAN
       { "item" : { "name" : "avikanmerittoken" }, "price" : 175 },
 	  { "item" : { "name" : "avikanarmring" }, "price" : 1000 },
 	  { "item" : { "name" : "avikandronemissilepod" }, "price" : 10000 },
@@ -38,15 +38,17 @@
 	  { "item" : { "name" : "sandspittersack" }, "price" : 1500 },
 	  { "item" : { "name" : "stingwingqueen" }, "price" : 1500 },
 	  { "item" : { "name" : "valahrgland" }, "price" : 1500 },
+	  //THELEAN
 	  { "item" : { "name" : "theleanmetal" }, "price" : 3500 },
 	  { "item" : { "name" : "theleantissue" }, "price" : 2500 },
+	  //CENTENSIAN
 	  { "item" : { "name" : "centensianwarpcore" }, "price" : 12500 },
 	  { "item" : { "name" : "jumpgatecore" }, "price" : 5000 },
 	  { "item" : { "name" : "centensiantech" }, "price" : 2500 },
 	  { "item" : { "name" : "centensianmetal" }, "price" : 1000 },
 	  { "item" : { "name" : "centensrelic" }, "price" : 15000 },
-	  { "item" : { "name" : "avikancraftingguide" }, "prerequisiteQuest" : "avikancrafting", "price" : 1250 },
-	  { "item" : { "name" : "trinkcraftingguide" }, "prerequisiteQuest" : "trinkcrafting2", "price" : 1250 }
+	  //CRAFTING GUIDES
+	  { "item" : { "name" : "avikancraftingguide" }, "prerequisiteQuest" : "avikancrafting", "price" : 1250 }
     ]
   },
   "printable" : false,

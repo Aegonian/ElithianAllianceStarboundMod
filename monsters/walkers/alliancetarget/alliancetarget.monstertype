@@ -1,0 +1,121 @@
+{
+  "type" : "alliancetarget",
+
+  "categories" : [ "alliancetarget" ],
+  "parts" : [ "body" ],
+
+  "animation" : "alliancetarget.animation",
+
+  "dropPools" : [ { "default" : "empty" } ],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+
+    "behavior" : "monster",
+
+    "behaviorConfig" : {
+      "damageOnTouch" : true,
+
+      "targetOnDamage" : false
+    },
+
+    "damageTeamType" : "passive",
+
+    "touchDamage" : {
+      "poly" : [ [0.5125, 2.25], [1.0125, 1.75],  [1.0125, -0.8], [0.5125, -1.2],  [-0.5125, -1.2], [-1.0125, -0.8],  [-1.0125, 1.75], [-0.5125, 2.25] ],
+      "damage" : 8,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "slash",
+      "knockback" : 20,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-4, -4, 4, 4],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [0.35, 1.25], [1.0, 0.65],  [1.0, -0.925], [0.35, -2.625],  [-0.35, -2.625], [-1.0, -0.925],  [-1.0, 0.65], [-0.35, 1.25] ],
+
+      "mass" : 500.0,
+      "walkSpeed" : 0,
+      "runSpeed" : 0,
+
+      "airFriction" : 1000,
+	  "groundFriction" : 1000,
+
+      "airJumpProfile" : {
+        "jumpSpeed" : 1.0,
+        "jumpInitialPercentage" : 1.0,
+        "jumpHoldTime" : 0.0
+      }
+    },
+
+    "aggressive" : false,
+
+    "bodyMaterialKind" : "robotic",
+
+    "knockoutTime" : 0.3,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "robotic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.25
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 1000
+        },
+        "maxHealth" : {
+          "baseValue" : 50000
+        },
+        "protection" : {
+          "baseValue" : 0.0
+        },
+        "healthRegen" : {
+          "baseValue" : 50000.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -8],
+
+    "capturable" : false,
+    "relocatable" : false
+  }
+}

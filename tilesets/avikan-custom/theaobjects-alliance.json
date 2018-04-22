@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":163,
+ "tilecount":171,
  "tileheight":128,
  "tileproperties":
     {
@@ -585,12 +585,76 @@
          "object":"allianceteleportshop2",
          "tilesetDirection":"right"
         },
+     "163":
+        {
+         "\/\/shortdescription":"Gun Range Security Console",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"alliancegunrangesecurityconsole",
+         "tilesetDirection":"right"
+        },
+     "164":
+        {
+         "\/\/shortdescription":"Bolter's Bazaar",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"allianceblackmarket",
+         "tilesetDirection":"right"
+        },
+     "165":
+        {
+         "\/\/shortdescription":"Bolter's Teleporter",
+         "imagePositionX":"-24",
+         "imagePositionY":"0",
+         "object":"allianceblackmarketteleporter",
+         "tilesetDirection":"right"
+        },
+     "166":
+        {
+         "\/\/shortdescription":"Hotbr\u00f6d Stand",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"alliancehotbrodstand",
+         "tilesetDirection":"right"
+        },
+     "167":
+        {
+         "\/\/shortdescription":"Alliance Automated Door",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"allianceblastdoorautomated",
+         "tilesetDirection":"right"
+        },
+     "168":
+        {
+         "\/\/shortdescription":"Alliance Automated Door",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"allianceslidingdoorautomated",
+         "tilesetDirection":"right"
+        },
+     "169":
+        {
+         "\/\/shortdescription":"Alliance Keypad",
+         "imagePositionX":"-8",
+         "imagePositionY":"-8",
+         "object":"alliancekeypad",
+         "tilesetDirection":"right"
+        },
      "17":
         {
          "\/\/shortdescription":"Alliance Closet",
          "imagePositionX":"-16",
          "imagePositionY":"0",
          "object":"alliancecloset",
+         "tilesetDirection":"right"
+        },
+     "170":
+        {
+         "\/\/shortdescription":"Alliance Recruitment Desk",
+         "imagePositionX":"-32",
+         "imagePositionY":"0",
+         "object":"alliancerecruitmentdesk",
          "tilesetDirection":"right"
         },
      "18":
@@ -1604,9 +1668,41 @@
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/allianceteleportshop2.png"
         },
+     "163":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancegunrangesecurityconsole.png"
+        },
+     "164":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/allianceblackmarket.png"
+        },
+     "165":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/allianceblackmarketteleporter.png"
+        },
+     "166":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancehotbrodstand.png"
+        },
+     "167":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/allianceblastdoorautomated.png"
+        },
+     "168":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/allianceslidingdoorautomated.png"
+        },
+     "169":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancekeypad.png"
+        },
      "17":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancecloset.png"
+        },
+     "170":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancerecruitmentdesk.png"
         },
      "18":
         {

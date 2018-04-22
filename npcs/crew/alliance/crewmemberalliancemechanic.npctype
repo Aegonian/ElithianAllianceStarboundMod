@@ -1,0 +1,67 @@
+{
+  "type" : "crewmemberalliancemechanic",
+  "baseType" : "crewmemberalliance",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : true
+    },
+
+	"crew" : {
+	  "role" : {
+        "type" : "alliancemechanic",
+        "name" : "Mechanic",
+        "field" : "Alliance",
+        "uniformColorIndex" : 8,
+
+        "benefits" : [
+          {
+            "type" : "ShipUpgradeBenefit",
+            "property" : "fuelEfficiency",
+            "value" : 0.1
+          }
+        ]
+      }
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "roleDescription" : {
+          "default" : {
+            "default" : [
+              "I'll keep working on the ship's fueling systems. Fuel efficiency is up 10%!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [ //DEFAULT EQUIPMENT -- Used for Aegi and other humanoids
+      [0, [
+		{
+		  "head" : [ { "name" : "aegi-allianceuniformhead", "data" : { "colorIndex" : 8 } } ],
+		  "chest" : [ { "name" : "aegi-allianceuniformchest", "data" : { "colorIndex" : 8 } } ],
+		  "legs" : [ { "name" : "aegi-allianceuniformlegs", "data" : { "colorIndex" : 8 } } ],
+		  "sheathedprimary" : [
+			"thea-wrench"
+		  ]
+		}
+	  ] ]
+    ],
+    "trink" : [ //TRINKIAN EQUIPMENT -- Used for Trinks exclusively
+      [0, [
+		{
+		  "chest" : [ { "name" : "trink-alliancechest", "data" : { "colorIndex" : 8 } } ],
+		  "legs" : [ { "name" : "trink-alliancelegs", "data" : { "colorIndex" : 8 } } ],
+		  "sheathedprimary" : [
+			"thea-wrench"
+		  ]
+		}
+	  ] ]
+    ]
+  }
+}

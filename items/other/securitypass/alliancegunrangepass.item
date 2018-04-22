@@ -1,0 +1,12 @@
+{
+  "itemName" : "alliancegunrangepass",
+  "price" : 0,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "Security Pass",
+  "tooltipKind" : "tool",
+  "inventoryIcon" : "alliancegunrangepass.png",
+  "largeImage" : "alliancegunrangepasslarge.png",
+  "description" : "A security pass granting access to the Creon Embassy's gun range.",
+  "shortdescription" : "^#BA66FF;Embassy Gun Range Pass^white;"
+}

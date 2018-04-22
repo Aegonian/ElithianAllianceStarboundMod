@@ -1,0 +1,71 @@
+{
+  "objectName" : "allianceslidingdoorautomated",
+  "colonyTags" : ["alliance", "door"],
+  "rarity" : "Common",
+  "category" : "door",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A sleek sliding door.",
+  "shortdescription" : "Alliance Automated Door",
+  "race" : "aegi",
+  
+  "health" : 8,
+
+  "apexDescription" : "A simple sliding door.",
+  "avianDescription" : "This door will slide into the wall when opened.",
+  "floranDescription" : "Ssliding door is ssneaky.",
+  "glitchDescription" : "Practical. Sliding doors save a lot of space.",
+  "humanDescription" : "I hate it when these doors don't open quickly enough...",
+  "hylotlDescription" : "A practical sliding door.",
+  "novakidDescription" : "I always liked these types of sliding doors.",
+
+  "aegiDescription" : "A basic Alliance-certified sliding door.",
+  "avikanDescription" : "An alien sliding door.",
+  "erixianDescription" : "A sliding door.",
+  "trinkDescription" : "An efficient sliding door.",
+  "hymidDescription" : "This door was designed by our allies, the Aegi.",
+  "notixDescription" : "An Aeginian-built door.",
+  "jorgasianDescription" : "A basic sliding door.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected sliding door.",
+
+  "inventoryIcon" : "allianceslidingdoorautomatedicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "allianceslidingdoorautomated.png:default",
+      "imagePosition" : [0, 0],
+      "renderLayer" : "Object+5",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom", "top" ]
+    }
+  ],
+
+  "animation" : "/objects/wired/door/door.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/bunkerslidingdoor_open.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/objects/bunkerslidingdoor_close.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "allianceslidingdoorautomated.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "outputNodes" : [ [0, 0] ],
+
+  "scripts" : [ "/objects/scripts/thea-automateddoor.lua" ],
+  "scriptDelta" : 5,
+  
+  "detectDuration" : 0.5,
+  "detectArea" : [ [-2, 0], [4, 5] ]
+}

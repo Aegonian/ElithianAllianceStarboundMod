@@ -1,7 +1,16 @@
 {
   "animatedParts" : {
     "stateTypes" : {
+      "bow" : {
+        "priority" : 3,
+        "default" : "idle",
+        "states" : {
+          "idle" : {},
+          "loosed" : {}
+        }
+      },
 	  "ammoType" : {
+        "priority" : 0,
         "default" : "1",
         "states" : {
           "1" : {
@@ -30,8 +39,21 @@
       "bow" : {
         "properties" : {
           "centered" : true,
-          "image" : "<partImage>:<drawFrame>",
           "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "bow" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:<drawFrame>"
+              }
+            },
+            "loosed" : {
+              "properties" : {
+                "image" : "<partImage>:loosed"
+              }
+            }
+          }
         }
       },
       "ammo" : {
@@ -56,6 +78,13 @@
             "3" : {
               "properties" : {
                 "image" : "<partImage>:vaash.<drawFrame>"
+              }
+            }
+          },
+          "bow" : {
+            "loosed" : {
+              "properties" : {
+                "image" : "<partImage>:loosed"
               }
             }
           }
@@ -84,6 +113,13 @@
             "3" : {
               "properties" : {
                 "image" : "<partImage>:vaash.<drawFrame>"
+              }
+            }
+          },
+          "bow" : {
+            "loosed" : {
+              "properties" : {
+                "image" : "<partImage>:loosed"
               }
             }
           }

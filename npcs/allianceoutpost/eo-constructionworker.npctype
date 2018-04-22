@@ -1,0 +1,79 @@
+{
+  "type" : "eo-constructionworker",
+  "baseType" : "eo-civilian",
+
+  "dropPools" : [ "aegiDeathTreasure" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "I'm working here."
+		  ]
+		},
+        "aegi" : {
+		  "default" : [ 
+		    "The Embassy is open, but not everything is finished yet.",
+		    "Sorry, I've got to concentrate on my work.",
+		    "Briggs builds ships, but we do general construction work too.",
+		    "Some of the Embassy is still under construction. We're working as quickly as we can to finish it all.",
+		    "Briggs offered to help out with the construction of the Creon Embassy. I'm glad to be a part of the project."
+		  ]
+		},
+        "trink" : {
+		  "default" : [ 
+		    "Working together with the Aegi has been great.",
+		    "The Trink are happy to help with the construction of this new embassy.",
+		    "Briggs has sent some incredibly skilled construction workers to help us build this place.",
+		    "Watch your head in the construction zones.",
+		    "We'll get this place up and running as soon as we can."
+		  ]
+		}
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "aegi" : [
+      [0, [
+		{
+		  "head" : [
+			{ "name" : "aegi-briggshead", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "chest" : [
+			{ "name" : "aegi-briggschest", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "legs" : [
+			{ "name" : "aegi-briggslegs", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "primary" : [
+			[ "thea-wrench" ],
+			[ "alliance-mininglaser" ]
+		  ]
+		}
+	  ] ]
+    ],
+    "trink" : [
+      [0, [
+		{
+		  "head" : [
+			{ "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : [1, 2, 5, 6, 11] } }
+		  ],
+		  "chest" : [
+			{ "name" : "trink-paintedchest", "parameters" : { "colorIndex" : [1, 2, 5, 6, 11] } },
+			{ "name" : "trink-stripedchest", "parameters" : { "colorIndex" : [1, 2, 5, 6, 11] } }
+		  ],
+		  "legs" : [
+			{ "name" : "trink-welderlegs", "parameters" : { "colorIndex" : [1, 2, 5, 6, 11] } }
+		  ],
+		  "primary" : [
+			[ "trink-wrench" ],
+			[ "trink-weldingtorch" ]
+		  ]
+		}
+	  ] ]
+    ]
+  }
+}

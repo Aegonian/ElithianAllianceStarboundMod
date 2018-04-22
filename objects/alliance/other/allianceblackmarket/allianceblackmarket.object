@@ -1,0 +1,77 @@
+{
+  "objectName" : "allianceblackmarket",
+  "colonyTags" : ["alliance"],
+  "printable" : false,
+  "rarity" : "Legendary",
+  "description" : "This Trink look shady...",
+  "shortdescription" : "Bolter's Bazaar",
+  "race" : "aegi",
+  
+  "lightColor" : [10, 50, 10],
+  
+  "floranDescription" : "Ssshady looking robot can ssell Floran many goodsss.",
+  "glitchDescription" : "Hesitant. I am not sure if I should be dealing with such shady figures.",
+  "novakidDescription" : "A shady lookin' fella. Gotta be a black market of sorts.",
+  
+  "avikanDescription" : "A machine, and a shady one at that. I should be careful.",
+  "drodenDescription" : "Detected unregistered robotic merchant. Recommending caution.",
+  "akkimariDescription" : "Shady alien sells the good stuff.",
+  
+  "interactAction" : "OpenMerchantInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/merchant.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "Bolter's Bazaar",
+        "subtitle" : "  For all your semi-legal goods"
+      }
+    },
+    "buyFactor" : 1.0,
+    "sellFactor" : 0.2,
+    "items" : [
+	  //ALLIANCE
+	  { "item" : { "name" : "excelsiorheatsink" }, "prerequisiteQuest" : "excelsiorassembly", "price" : 5000 },
+	  { "item" : { "name" : "excelsiorblueprint1" }, "price" : 7500 },
+	  { "item" : { "name" : "excelsiorblueprint2" }, "price" : 7500 },
+	  { "item" : { "name" : "excelsiorblueprint3" }, "price" : 7500 },
+	  { "item" : { "name" : "excelsiorblueprint4" }, "price" : 7500 },
+	  { "item" : { "name" : "excelsiorblueprint5" }, "price" : 7500 },
+	  //THELEAN
+	  { "item" : { "name" : "theleanmetal" }, "price" : 3500 },
+	  { "item" : { "name" : "theleantissue" }, "price" : 2500 },
+	  //CENTENSIAN
+	  { "item" : { "name" : "centensianwarpcore" }, "price" : 12500 },
+	  { "item" : { "name" : "jumpgatecore" }, "price" : 5000 },
+	  { "item" : { "name" : "centensiantech" }, "price" : 2500 },
+	  { "item" : { "name" : "centensianmetal" }, "price" : 1000 },
+	  { "item" : { "name" : "centensrelic" }, "price" : 15000 },
+	  //CRAFTING GUIDES
+	  { "item" : { "name" : "trinkcraftingguide" }, "prerequisiteQuest" : "trinkcrafting2", "price" : 1250 },
+	  //CACHES
+	  { "item" : { "name" : "allianceuniquecache" }, "price" : 50000 },
+	  { "item" : { "name" : "trinkuniquecache" }, "price" : 50000 }
+    ]
+  },
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "allianceblackmarket.png:<frame>" }, { "image" : "allianceblackmarketlights.png:<frame>", "fullbright" : true } ],
+      "direction" : "right",
+
+      "imagePosition" : [0, 0],
+      "frames" : 30,
+      "animationCycle" : 3.0,
+      "lightPosition" : [0, 2],
+
+	  "spaceScan" : 0.1,
+      "interactiveSpaces" : [
+        [2, 3], [3, 3],
+        [2, 2], [3, 2],
+        [2, 1], [3, 1],
+        [2, 0], [3, 0]
+      ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

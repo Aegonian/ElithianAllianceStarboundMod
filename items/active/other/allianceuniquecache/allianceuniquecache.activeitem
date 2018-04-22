@@ -1,0 +1,30 @@
+{
+  "itemName" : "allianceuniquecache",
+  "level" : 1,
+  "price" : 250,
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "A sealed cache containing a random Unique-quality item. Hold ^green;[LMB] ^white;to open!",
+  "shortdescription" : "^orange;Unique Alliance Cache^white;",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "allianceuniquecacheicon.png",
+  "animation" : "allianceuniquecache.animation",
+  "animationParts" : {
+    "treasurebox" : "allianceuniquecache.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "open" : [ "/sfx/objects/colonydeed_partyhorn.ogg" ],
+	  "openLoop" : [ "/sfx/other/thea_sealedcache_opening2.ogg" ]
+    }
+  },
+  
+  "scripts" : ["/items/active/other/thea-sealedcache/thea-sealedcache.lua"],
+
+  "fireOffset" : [1.0, 0.0],
+
+  "treasure" : {
+    "pool" : "uniqueweaponsAlliance"
+  }
+}

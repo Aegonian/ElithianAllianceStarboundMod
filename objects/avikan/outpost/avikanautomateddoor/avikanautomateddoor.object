@@ -28,9 +28,6 @@
     }
   ],
 
-  "scripts" : [ "/objects/scripts/thea-automateddoor.lua" ],
-  "scriptDelta" : 5,
-
   "animation" : "/objects/wired/door/door.animation",
   "animationCustom" : {
     "sounds" : {
@@ -50,6 +47,9 @@
   "animationPosition" : [0, 0],
   
   "outputNodes" : [ [1, 0] ],
+
+  "scripts" : [ "/objects/scripts/thea-automateddoor.lua" ],
+  "scriptDelta" : 5,
   
   "detectDuration" : 0.5,
   "detectArea" : [ [-2, 0], [4, 5] ]

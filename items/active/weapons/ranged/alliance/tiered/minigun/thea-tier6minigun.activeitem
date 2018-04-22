@@ -8,7 +8,7 @@
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Valkyrie V-2",
   "level" : 6,
-  "tooltipKind" : "thea-speedupminigun-mf",
+  "tooltipKind" : "thea-speedupminigun-mf-attachment",
   "category" : "Minigun",
   "itemTags" : ["weapon","ranged","minigun","alliance","aae","allianceUpgradeable"],
   "twoHanded" : true,
@@ -147,5 +147,5 @@
 	}
   },
 
-  "builder" : "/items/buildscripts/thea-buildspeedupminigun.lua"
+  "builder" : "/items/buildscripts/thea-buildspeedupminigun-mf-attachment.lua"
 }

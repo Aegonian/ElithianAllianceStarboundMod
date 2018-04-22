@@ -1,0 +1,56 @@
+{
+  "type" : "eo-soldier",
+  "baseType" : "eo-civilian",
+
+  "dropPools" : [ "aegiDeathTreasure" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [
+		    "This floor is for ambassadors only.",
+		    "I'm gonna have to ask you to leave.",
+		    "These offices are restricted."
+		  ],
+		  "aegi" : [
+		    "Welcome to the Command Center, ambassador.",
+		    "Do you have business with the President?",
+		    "Make sure to keep your ambassador's pass on you at all times."
+		  ],
+		  "trink" : [
+		    "Welcome to the Command Center, ambassador.",
+		    "Do you have business with the President?",
+		    "Make sure to keep your ambassador's pass on you at all times."
+		  ]
+		}
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+		{
+		  "head" : [
+			{ "name" : "aegi-soldierhead", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "chest" : [
+			{ "name" : "aegi-soldierchest", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "legs" : [
+			{ "name" : "aegi-soldierlegs", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "back" : [
+			{ "name" : "thea-hiddenback", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "primary" : [
+			[ "thea-tier3rifle" ],
+			[ "thea-tier4rifle" ]
+		  ]
+		}
+      ]]
+    ]
+  }
+}

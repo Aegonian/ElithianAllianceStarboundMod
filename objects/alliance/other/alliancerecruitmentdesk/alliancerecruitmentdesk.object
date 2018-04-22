@@ -1,0 +1,68 @@
+{
+  "objectName" : "alliancerecruitmentdesk",
+  "colonyTags" : ["alliance"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 100,
+  "description" : "A place to recruit new crew members from all over the Alliance.",
+  "shortdescription" : "Alliance Recruitment Desk",
+  "race" : "aegi",
+
+  "apexDescription" : "This place offers recruitment options.",
+  "avianDescription" : "A recruitment desk. I can hire some additional crew members here.",
+  "floranDescription" : "Floran buysss friendss here.",
+  "glitchDescription" : "Pleased. This recruitment desk allows me to easily recruit new crew members.",
+  "humanDescription" : "A recruitment desk, for recruiting new crew members.",
+  "hylotlDescription" : "I can hire additional crew here.",
+  "novakidDescription" : "Lemme hire some new crew.",
+
+  "aegiDescription" : "A recruitment desk offering crew members from all over the Elithian Alliance.",
+  "avikanDescription" : "A place to hire alien crew members. Should I use it?",
+  "erixianDescription" : "I can hire new crew members here.",
+  "trinkDescription" : "This recruitment office redirects recruitment requests to all members of the Alliance. It is quite efficient.",
+  "hymidDescription" : "I can hire some additional crew members here.",
+  "notixDescription" : "I can bolster my crew here.",
+  "jorgasianDescription" : "More crew members won't hurt, right?",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien recruitment office. Allows for the recruitment of alien crew members.",
+  "akkimariDescription" : "Akki buy friends here.",
+
+  "inventoryIcon" : "alliancerecruitmentdeskicon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "alliancerecruitmentdesk.png:<frame>", "fullbright" : true }, { "image" : "alliancerecruitmentdesklit.png:<frame>" } ],
+
+      "imagePosition" : [-32, 0],
+      "frames" : 20,
+      "animationCycle" : 2.0,
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "bottom" ]
+    },
+    {
+	  "imageLayers" : [ { "image" : "alliancerecruitmentdesk.png:<frame>", "fullbright" : true }, { "image" : "alliancerecruitmentdesklit.png:<frame>" } ],
+
+      "imagePosition" : [-32, 0],
+      "frames" : 20,
+      "animationCycle" : 2.0,
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+  "interactAction" : "ScriptPane",
+  "interactData" : "/interface/scripted/alliancerecruitment/alliancerecruitmentgui.config",
+  
+  "scripts" : [ "/objects/alliance/other/alliancerecruitmentdesk/alliancerecruitmentdesk.lua" ],
+  "scriptDelta" : 5,
+  
+  "crewmemberSpecies" : [ "aegi", "trink" ],
+  "spawnOffset" : [2, 2]
+}

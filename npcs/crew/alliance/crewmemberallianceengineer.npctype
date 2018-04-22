@@ -1,0 +1,67 @@
+{
+  "type" : "crewmemberallianceengineer",
+  "baseType" : "crewmemberalliance",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : true
+    },
+
+	"crew" : {
+	  "role" : {
+        "type" : "allianceengineer",
+        "name" : "Engineer",
+        "field" : "Alliance",
+        "uniformColorIndex" : 5,
+
+        "benefits" : [
+          {
+            "type" : "ShipUpgradeBenefit",
+            "property" : "shipSpeed",
+            "value" : 3.75
+          }
+        ]
+      }
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "roleDescription" : {
+          "default" : {
+            "default" : [
+              "I'll make sure your engines run smoothly. Thrust velocity is up by 25%!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [ //DEFAULT EQUIPMENT -- Used for Aegi and other humanoids
+      [0, [
+		{
+		  "head" : [ { "name" : "aegi-allianceuniformhead", "data" : { "colorIndex" : 5 } } ],
+		  "chest" : [ { "name" : "aegi-allianceuniformchest", "data" : { "colorIndex" : 5 } } ],
+		  "legs" : [ { "name" : "aegi-allianceuniformlegs", "data" : { "colorIndex" : 5 } } ],
+		  "sheathedprimary" : [
+			"thea-prod"
+		  ]
+		}
+	  ] ]
+    ],
+    "trink" : [ //TRINKIAN EQUIPMENT -- Used for Trinks exclusively
+      [0, [
+		{
+		  "chest" : [ { "name" : "trink-alliancechest", "data" : { "colorIndex" : 5 } } ],
+		  "legs" : [ { "name" : "trink-alliancelegs", "data" : { "colorIndex" : 5 } } ],
+		  "sheathedprimary" : [
+			"thea-prod"
+		  ]
+		}
+	  ] ]
+    ]
+  }
+}

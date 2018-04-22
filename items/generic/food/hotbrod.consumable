@@ -1,0 +1,24 @@
+{
+  "itemName" : "hotbrod",
+  "rarity" : "Uncommon",
+  "price" : 160,
+  "category" : "preparedFood",
+  "inventoryIcon" : "hotbrod.png",
+  "description" : "A warm folded piece of bread, with a secret ingredient inside for an amazing taste.",
+  "shortdescription" : "Hotbröd",
+  "effects" : [ [
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 480
+    }
+  ] ],
+  "foodValue" : 35,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

@@ -44,8 +44,8 @@
     "scripts" : ["/items/active/weapons/ranged/other/thea-instakillgun/thea-debuggunfire.lua"],
     "class" : "TheaDebugGunFire",
 
-    "fireTime" : 1.0,
-    "baseDps" : 50000.0,
+    "fireTime" : 0.5,
+    "baseDps" : 100000.0,
     "energyUsage" : 100,
     "inaccuracy" : 0.0,
 

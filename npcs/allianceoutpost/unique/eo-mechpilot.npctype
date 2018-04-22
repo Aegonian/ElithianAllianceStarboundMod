@@ -1,0 +1,50 @@
+{
+  "type" : "eo-mechpilot",
+  "baseType" : "eo-civilian",
+
+  "npcname" : "Azurii",
+  "identity" : {
+    "imagePath" : "aegi",
+    "gender" : "female",
+    "hairGroup" : "hair",
+    "hairType" : "fem20",
+	"facialMaskGroup" : "ears",
+	"facialMask" : "5"
+  },
+  
+  "dropPools" : [ "aegiDeathTreasure" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [
+		    "Don't you just love mechs? They're so awesome to pilot!"
+		  ]
+		}
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "aegi-mechpilothead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "aegi-mechpilotchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "aegi-tier6alegs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "back" : [
+              { "name" : "thea-hiddenback", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

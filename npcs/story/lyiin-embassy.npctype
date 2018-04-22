@@ -36,10 +36,10 @@
             "I'm not sure how you got in here, but I must ask you to leave."
           ],
 		  "aegi" : [
-            "Ah, ambassador! Welcome back to Creon."
+            "Ah, ambassador <entityname>! Welcome back to Creon."
           ],
 		  "trink" : [
-            "Ah, ambassador! Welcome back to Creon."
+            "Ah, ambassador <entityname>! Welcome back to Creon."
           ]
         }
       }

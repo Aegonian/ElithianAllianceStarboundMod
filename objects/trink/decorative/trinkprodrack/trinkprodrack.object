@@ -26,20 +26,32 @@
   "centensDescription" : "TODO.",
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
-  "drodenDescription" : "Analysis complete. Detected alien weaponry. Eletric generators detected.",
+  "drodenDescription" : "Analysis complete. Detected alien weaponry. Electric generators detected.",
 
   "inventoryIcon" : "trinkprodrackicon.png",
   "orientations" : [
     {
-      "dualImage" : "trinkprodrack.png:<color>",
+	  "imageLayers" : [ { "image" : "trinkprodrack.png:<color>", "fullbright" : true }, { "image" : "trinkprodracklit.png:<color>" } ],
 
       "imagePosition" : [0, 0],
       "frames" : 1,
       "animationCycle" : 0.5,
 
       "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
       "anchors" : [ "bottom" ]
+    },
+    {
+	  "imageLayers" : [ { "image" : "trinkprodrack.png:<color>", "fullbright" : true }, { "image" : "trinkprodracklit.png:<color>" } ],
 
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ]
     }
   ]
 }

@@ -1,0 +1,70 @@
+{
+  "type" : "eo-ambassador",
+  "baseType" : "eo-civilian",
+
+  "dropPools" : [ "aegiDeathTreasure" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "Welcome to the Creon Embassy."
+		  ]
+		},
+        "aegi" : {
+		  "default" : [ 
+		    "Welcome to the Creon Embassy.",
+		    "What do you think of our embassy?",
+		    "Are you here on official business?",
+		    "Let me know if I can help you with anything.",
+		    "I'd be happy to offer some advice or counseling if you need it."
+		  ]
+		},
+        "trink" : {
+		  "default" : [ 
+		    "Welcome to the great embassy of Creon.",
+		    "Can I be of assistance?",
+		    "Can I assist you on anything?",
+		    "The Aegi built a great embassy here. I am glad to be an ambassador.",
+		    "If you need some information on the Trink Circuit, I'll be happy to help."
+		  ]
+		}
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "aegi" : [
+      [0, [
+		{
+		  "head" : [
+			{ "name" : "aegi-allianceuniformhead", "parameters" : { "colorIndex" : 7 } }
+		  ],
+		  "chest" : [
+			{ "name" : "aegi-allianceuniformchest", "parameters" : { "colorIndex" : 7 } }
+		  ],
+		  "legs" : [
+			{ "name" : "aegi-allianceuniformlegs", "parameters" : { "colorIndex" : 7 } }
+		  ]
+		}
+	  ] ]
+    ],
+    "trink" : [
+      [0, [
+		{
+		  "head" : [
+			{ "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "chest" : [
+			{ "name" : "trink-alliancechest", "parameters" : { "colorIndex" : 7 } }
+		  ],
+		  "legs" : [
+			{ "name" : "trink-alliancelegs", "parameters" : { "colorIndex" : 7 } }
+		  ]
+		}
+	  ] ]
+    ]
+  }
+}

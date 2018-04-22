@@ -16,7 +16,6 @@
           "centered" : false,
 		  "fullbright" : true
         },
-
         "partStates" : {
           "light" : {
             "off" : {
@@ -24,7 +23,6 @@
                 "image" : "<partImage>:<color>.off"
               }
             },
-
             "on" : {
               "properties" : {
                 "image" : "<partImage>:<color>.on",
@@ -39,7 +37,6 @@
           "centered" : false,
           "zLevel" : 1
         },
-
         "partStates" : {
           "light" : {
             "off" : {
@@ -47,7 +44,6 @@
                 "image" : "<partImage>:<color>.off"
               }
             },
-
             "on" : {
               "properties" : {
                 "image" : "<partImage>:<color>.on"

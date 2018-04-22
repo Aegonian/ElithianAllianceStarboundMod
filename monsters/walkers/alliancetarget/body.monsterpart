@@ -1,0 +1,9 @@
+{
+  "name" : "alliancetarget",
+  "category" : "alliancetarget",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "alliancetarget.png"
+  }
+}

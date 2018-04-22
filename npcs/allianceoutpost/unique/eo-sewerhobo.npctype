@@ -1,0 +1,49 @@
+{
+  "type" : "eo-sewerhobo",
+  "baseType" : "eo-lounger",
+
+  "npcname" : "Holo",
+  "identity" : {
+    "imagePath" : "aegi",
+    "gender" : "female",
+    "hairGroup" : "hair",
+    "hairType" : "fem7",
+	"facialMaskGroup" : "ears",
+	"facialMask" : "5"
+  },
+  
+  "dropPools" : [ "aegiDeathTreasure" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [
+		    "I like the sewers. It's always so quiet and peaceful here."
+		  ]
+		}
+      }
+    }
+  },
+  
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "aegi-tanktop", "parameters" : { "colorIndex" : 11 } }
+            ],
+            "legs" : [
+              { "name" : "aegi-baggylegs", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "back" : [
+              { "name" : "thea-hiddenback", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "itemName" : "alliancecrewcontract",
+  "price" : 7500,
+  "maxStack" : 100,
+  "rarity" : "Legendary",
+  "category" : "Contract",
+  "tooltipKind" : "tool",
+  "inventoryIcon" : "alliancecrewcontract.png",
+  "largeImage" : "alliancecrewcontractlarge.png",
+  "description" : "A contract for hiring the services of Alliance crew members.",
+  "shortdescription" : "^#BA66FF;Alliance Crew Contract^white;"
+}

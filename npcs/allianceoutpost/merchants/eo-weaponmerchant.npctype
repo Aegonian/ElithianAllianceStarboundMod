@@ -2,7 +2,13 @@
   "type" : "eo-weaponmerchant",
   "baseType" : "thea-loungingmerchant",
 
-  "scriptConfig" : {    
+  "npcname" : "Faze",
+
+  "scriptConfig" : {
+
+	//"offeredQuests" : [ "" ],
+	"turnInQuests" : [ "excelsiorassembly" ],
+	
     "merchant" : {
       "waitTime" : 40,
       "storeRadius" : 8,

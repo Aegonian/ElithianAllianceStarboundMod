@@ -1,0 +1,23 @@
+{
+  "materialId" : 30159,
+  "materialName" : "thea-hiddenmaterial",
+  "particleColor" : [237, 254, 255, 255],
+  "itemDrop" : "alliancemetal", 
+  "shortdescription" : "Hidden Material",
+  
+  "description" : "...",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 2,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "thea-hiddenmaterial.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 0
+  }
+}

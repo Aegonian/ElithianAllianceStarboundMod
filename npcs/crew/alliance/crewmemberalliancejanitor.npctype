@@ -1,0 +1,76 @@
+{
+  "type" : "crewmemberalliancejanitor",
+  "baseType" : "crewmemberalliance",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : true
+    },
+
+	"crew" : {
+	  "role" : {
+        "type" : "alliancejanitor",
+        "name" : "Janitor",
+        "field" : "Alliance",
+        "uniformColorIndex" : 11,
+
+        "benefits" : [
+          {
+            "type" : "ShipUpgradeBenefit",
+            "property" : "shipSpeed",
+            "value" : 3.75
+          }
+        ]
+      }
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "roleDescription" : {
+          "default" : {
+            "default" : [
+              "I'm <selfname>, your proud janitor.",
+              "I'm the janitor. I'll keep your ship nice and clean.",
+              "As janitor, I'll make sure you always have a clean ship to come back to.",
+              "I'm <selfname>, janitor."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [ //DEFAULT EQUIPMENT -- Used for Aegi and other humanoids
+      [0, [
+		{
+		  "head" : [ { "name" : "aegi-allianceuniformhead", "data" : { "colorIndex" : 11 } } ],
+		  "chest" : [ { "name" : "aegi-allianceuniformchest", "data" : { "colorIndex" : 11 } } ],
+		  "legs" : [ { "name" : "aegi-allianceuniformlegs", "data" : { "colorIndex" : 11 } } ],
+		  "primary" : [
+			"broom"
+		  ],
+		  "sheathedprimary" : [
+			"thea-tier2shotgun"
+		  ]
+		}
+	  ] ]
+    ],
+    "trink" : [ //TRINKIAN EQUIPMENT -- Used for Trinks exclusively
+      [0, [
+		{
+		  "chest" : [ { "name" : "trink-alliancechest", "data" : { "colorIndex" : 11 } } ],
+		  "legs" : [ { "name" : "trink-alliancelegs", "data" : { "colorIndex" : 11 } } ],
+		  "primary" : [
+			"broom"
+		  ],
+		  "sheathedprimary" : [
+			"thea-tier2shotgun"
+		  ]
+		}
+	  ] ]
+    ]
+  }
+}

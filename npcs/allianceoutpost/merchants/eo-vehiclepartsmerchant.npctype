@@ -1,0 +1,87 @@
+{
+  "type" : "eo-vehiclepartsmerchant",
+  "baseType" : "ao-wandermerchant",
+
+  "scriptConfig" : {    
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "poolsFile" : "/npcs/merchantpools.config",
+      
+	  "categories" : {
+        "override" : [ "allianceoutpostvehicleparts" ]
+      },
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 16,
+	  
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "Vehicle Parts Dealer",
+          "subtitle" : "  Auto chips and other parts"
+        }
+      }
+    },
+	
+	"dialog" : {
+      "merchant" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "I think I have exactly what you need."
+            ]
+          }
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "Come back soon!"
+            ]
+          }
+        },
+        "follow" : {
+          "default" : {
+            "default" : [
+              "My supplies are just over there."
+            ]
+          }
+        },
+        "welcome" : {
+          "default" : {
+            "default" : [
+              "Here we are. Let's see what you need!"
+            ]
+          }
+        },
+        "tout" : {
+          "default" : {
+            "default" : [
+              "Need some Auto Chips, or any other vehicle parts?"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "aegi-enerthchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "aegi-enerthlegs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "back" : [
+              { "name" : "aegi-soldierback", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

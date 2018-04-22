@@ -36,11 +36,10 @@
       "imagePosition" : [0, 0],
       "frames" : 5,
       "animationCycle" : 0.4,
-      "lightPosition" : [0, 1],
+      "lightPosition" : [2, 1],
 
       "spaceScan" : 0.1,
       "anchors" : [ "background" ]
-
     }
   ]
 }

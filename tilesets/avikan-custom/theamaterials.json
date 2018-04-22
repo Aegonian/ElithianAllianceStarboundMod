@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":90,
+ "tilecount":91,
  "tileheight":8,
  "tileproperties":
     {
@@ -544,6 +544,11 @@
          "\/\/name":"avikangroundpanel",
          "\/\/shortdescription":"Avikan Ground Panel",
          "material":"avikangroundpanel"
+        },
+     "90":
+        {
+         "\/\/shortdescription":"Hidden Material",
+         "material":"thea-hiddenmaterial"
         }
     },
  "tiles":
@@ -907,6 +912,10 @@
      "9":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/avikangroundpanel.png"
+        },
+     "90":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/thea-hiddenmaterial.png"
         }
     },
  "tilewidth":8

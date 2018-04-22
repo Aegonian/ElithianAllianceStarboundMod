@@ -1,0 +1,51 @@
+{
+  "type" : "eo-avikanvisitor",
+  "baseType" : "eo-civilian",
+
+  "npcname" : "Valyakan",
+  
+  "dropPools" : [ "aegiDeathTreasure" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [
+		    "The Avikan Nomada has heard of this place. I was sent here to visit, and so far, I'm impressed."
+		  ],
+		  "avikan" : [
+		    "Are you here on Nomada business, Captain? It's good to finally see another Avikan again."
+		  ],
+		  "droden" : [
+		    "I'm not the biggest fan of the Droden, but seeing one of your kind is still a relief after so long in alien territory."
+		  ],
+		  "trink" : [
+		    "It seems all machines are accepted here. Don't expect the same if you ever visit the Nomada. Just a warning."
+		  ]
+		}
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+		{
+		  "head" : [
+			{ "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "chest" : [
+			{ "name" : "avikan-councilchest", "parameters" : { "colorIndex" : 4 } }
+		  ],
+		  "legs" : [
+			{ "name" : "avikan-councillegs", "parameters" : { "colorIndex" : 4 } }
+		  ],
+		  "back" : [
+			{ "name" : "thea-hiddenback", "parameters" : { "colorIndex" : 0 } }
+		  ]
+		}
+      ]]
+    ]
+  }
+}

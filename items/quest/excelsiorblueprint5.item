@@ -1,0 +1,12 @@
+{
+  "itemName" : "excelsiorblueprint5",
+  "price" : 10,
+  "rarity" : "Legendary",
+  "category" : "Quest Item",
+  "inventoryIcon" : "excelsiorblueprint5.png",
+  "description" : "A fragment of a weapon blueprint.",
+  "shortdescription" : "^#BA66FF;Blueprint Fragment 5^white;",
+  "itemTags" : [ "questitem" ],
+  
+  "pickupQuestTemplates" : [ "excelsiorassembly" ]
+}

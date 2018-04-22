@@ -1,0 +1,78 @@
+{
+  "type" : "crewmemberalliancetailor",
+  "baseType" : "crewmemberalliance",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : true
+    },
+
+	"crew" : {
+	  "role" : {
+        "type" : "alliancetailor",
+        "name" : "Tailor",
+        "field" : "Alliance",
+        "uniformColorIndex" : 9
+      },
+
+      // This interactActions only happens when in a crew, and only when
+      // interacted with by the captain.
+      "interactAction" : "Message",
+      "interactData" : {
+        "messageType" : "recruits.offerUniformUpdate",
+        "messageArgs" : [ ]
+      }
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "roleDescription" : {
+          "default" : {
+            "default" : [
+              "Come to me if you want to update your crew's uniform!",
+              "My tailoring skills let me update your crew's uniform. Just speak to me when you need my services!"
+            ]
+          }
+        }
+      },
+      "converse" : {
+        "default" : {
+          "default" : [
+            "That look is definitely in this season!",
+            "Looking good!",
+            "This outfit will make your crew really stand out. Great choice, captain!",
+            "Incredible fashion sense, captain!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [ //DEFAULT EQUIPMENT -- Used for Aegi and other humanoids
+      [0, [
+		{
+		  "head" : [ { "name" : "aegi-allianceuniformhead", "data" : { "colorIndex" : 9 } } ],
+		  "chest" : [ { "name" : "aegi-allianceuniformchest", "data" : { "colorIndex" : 9 } } ],
+		  "legs" : [ { "name" : "aegi-allianceuniformlegs", "data" : { "colorIndex" : 9 } } ],
+		  "sheathedprimary" : [
+			"thea-tier1pistol"
+		  ]
+		}
+	  ] ]
+    ],
+    "trink" : [ //TRINKIAN EQUIPMENT -- Used for Trinks exclusively
+      [0, [
+		{
+		  "chest" : [ { "name" : "trink-alliancechest", "data" : { "colorIndex" : 9 } } ],
+		  "legs" : [ { "name" : "trink-alliancelegs", "data" : { "colorIndex" : 9 } } ],
+		  "sheathedprimary" : [
+			"thea-tier1pistol"
+		  ]
+		}
+	  ] ]
+    ]
+  }
+}

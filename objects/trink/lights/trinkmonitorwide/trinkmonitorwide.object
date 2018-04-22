@@ -1,0 +1,45 @@
+{
+  "objectName" : "trinkmonitorwide",
+  "colonyTags" : ["trink"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A monitor displaying some information.",
+  "shortdescription" : "Wide Trinkian Monitor",
+  "race" : "trink",  
+  "lightColor" : [10, 50, 10],
+
+  "apexDescription" : "I guess this monitor shows a lot of information, but I don't understand any of it.",
+  "avianDescription" : "I wonder what all these lines mean?",
+  "floranDescription" : "Floran doesn't underssstand ssshiny ssscreen...",
+  "glitchDescription" : "Incapability. I am unable to read this information.",
+  "humanDescription" : "Mhm. Yeah. I have no idea what all this information means.",
+  "hylotlDescription" : "This monitor displays some information, but what it means is a mystery to me.",
+
+  "aegiDescription" : "A Trinkian monitor displaying encoded information.",
+  "avikanDescription" : "This monitor displays information in a way I don't understand.",
+  "erixianDescription" : "Trinkian monitors display information in a very curious manner.",
+  "trinkDescription" : "This monitor displays over a 128GBs of data per second. Few can decrypt it all at the same rate.",
+  "hymidDescription" : "I wish I knew how to decrypt all of this information.",
+  "notixDescription" : "We may have built the Trinks, but their data is too difficult to decrypt for me.",
+  "jorgasianDescription" : "A Trinkian monitor. I wonder what it displays?",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Alien interface detected. Unable to translate.",
+  
+  "inventoryIcon" : "trinkmonitorwideicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "trinkmonitorwide.png:<color>.<frame>", "fullbright" : true }, { "image" : "trinkmonitorwidelit.png:<color>.<frame>" } ],
+      "imagePosition" : [0, 0],
+      "frames" : 5,
+      "animationCycle" : 0.4,
+      "lightPosition" : [3, 1],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "type" : "eo-hotbrodmerchant",
+  "baseType" : "ao-stationarymerchant",
+
+  "scriptConfig" : {    
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "poolsFile" : "/npcs/merchantpools.config",
+      
+	  "categories" : {
+        "override" : [ "allianceoutposthotbrod" ]
+      },
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 20,
+	  
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "Hotbröd Stand",
+          "subtitle" : "  Delicious Hotbröd for all"
+        }
+      }
+    },
+	
+	"dialog" : {
+      "merchant" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "You look like you're in the mood for some Hotbröd, my friend."
+            ]
+          }
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "Come back any time!"
+            ]
+          }
+        },
+        "follow" : {
+          "default" : {
+            "default" : [
+              "My stand is just over there, follow me."
+            ]
+          }
+        },
+        "welcome" : {
+          "default" : {
+            "default" : [
+              "Now, let's get you something to eat!"
+            ]
+          }
+        },
+        "tout" : {
+          "default" : {
+            "default" : [
+              "Hungry? Look no further! We've got delicious Hotbröd right here!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "aegi-asauniformhead", "parameters" : { "colorIndex" : 5 } }
+            ],
+            "chest" : [
+              { "name" : "aegi-storeclerkchest", "parameters" : { "colorIndex" : 5 } }
+            ],
+            "legs" : [
+              { "name" : "aegi-storeclerklegs", "parameters" : { "colorIndex" : 5 } }
+            ],
+            "back" : [
+              { "name" : "thea-hiddenback", "parameters" : { "colorIndex" : 5 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}
