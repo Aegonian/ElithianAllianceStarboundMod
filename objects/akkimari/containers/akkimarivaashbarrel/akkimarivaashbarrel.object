@@ -1,0 +1,75 @@
+{
+  "objectName" : "akkimarivaashbarrel",
+  "colonyTags" : ["akkimari"],
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "printable" : false,
+  "price" : 100,
+  "description" : "A reinforced container built to hold Vaash.",
+  "shortdescription" : "Akkimari Vaash Barrel",
+  "race" : "akkimari",
+
+  "apexDescription" : "A metal container full of water.",
+  "avianDescription" : "Fresh water!",
+  "floranDescription" : "Water in big boxesss.",
+  "glitchDescription" : "Observation. A metal container filled with water.",
+  "humanDescription" : "Fresh and clean water - how do I get it out?",
+  "hylotlDescription" : "Pure water, refreshing for the soul.",
+
+  "aegiDescription" : "A container containing water. This looks like it'll never leak.",
+  "avikanDescription" : "A container full of water, of vital importance to our people.",
+  "erixianDescription" : "This water container has unusually thick glass. I guess the Avikan really don't want it to leak.",
+  "trinkDescription" : "This water container is unlikely to ever start leaking.",
+  "hymidDescription" : "Fresh water! I could use some right now.",
+  "notixDescription" : "A container full of fresh water.",
+  "jorgasianDescription" : "A properly sealed container, filled with water.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected water supply. Container status: unbreached.",
+
+  "inventoryIcon" : "akkimarivaashbarrelicon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "akkimarivaashbarrel.png:<color>", "fullbright" : true }, { "image" : "akkimarivaashbarrellit.png:<color>" } ],
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    },
+    {
+	  "imageLayers" : [ { "image" : "akkimarivaashbarrel.png:<color>", "fullbright" : true }, { "image" : "akkimarivaashbarrellit.png:<color>" } ],
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/chest_small_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/chest_small_close.ogg" ],
+  "slotCount" : 1,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 10,
+  "autoCloseCooldown" : 3600,
+  
+  "scripts" : [ "/objects/scripts/thea-liquidcontainer.lua" ],
+  "scriptDelta" : 20,
+  
+  "liquidWhitelist" : [
+	"akkimariacid"
+  ],
+  
+  "animation" : "akkimarivaashbarrel.animation",
+  "animationParts" : {
+    "fg" : "akkimarivaashbarrellit.png",
+    "bg" : "akkimarivaashbarrel.png"
+  },
+  "animationPosition" : [0, 0]
+}

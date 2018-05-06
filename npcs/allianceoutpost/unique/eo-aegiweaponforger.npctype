@@ -1,0 +1,50 @@
+{
+  "type" : "eo-aegiweaponforger",
+  "baseType" : "eo-civilian",
+
+  "npcname" : "Hadaeko",
+  "identity" : {
+    "imagePath" : "aegi",
+    "gender" : "female",
+    "hairGroup" : "hair",
+    "hairType" : "fem6",
+	"facialMaskGroup" : "ears",
+	"facialMask" : "1"
+  },
+  
+  "dropPools" : [ "aegiDeathTreasure" ],
+
+  "scriptConfig" : {
+	//"offeredQuests" : [ "weaponrestorationaegi" ],
+	//"turnInQuests" : [ "weaponrestorationaegi" ],
+	
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [
+		    "I'm a weaponsmith working with Stryker Smithing. Do you need a weapon forged?"
+		  ]
+		}
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+		{
+		  "head" : [
+			{ "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 8 } }
+		  ],
+		  "chest" : [
+			{ "name" : "aegi-tier3chest", "parameters" : { "colorIndex" : 8 } }
+		  ],
+		  "legs" : [
+			{ "name" : "aegi-tier3legs", "parameters" : { "colorIndex" : 8 } }
+		  ]
+		}
+      ]]
+    ]
+  }
+}

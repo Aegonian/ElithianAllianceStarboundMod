@@ -3,6 +3,7 @@
   //============================================ MOVING SHIPS ================================================
   //==========================================================================================================
   
+  // AVIKAN SHIPS
   {
     "op": "add",
     "path": "/avikanmerchantship",
@@ -14,7 +15,6 @@
 		"horizonClouds" : false,
 		"horizonImages" : [ { "left": "/celestial/system/ships/shiphorizonleft.png", "right": "/celestial/system/ships/avikanshiphorizonright.png" } ]
 	  },
-
 	  "moving" : true,
 	  "speed" : 15.0,
 	  "orbitRange" : [1, 1],
@@ -22,11 +22,34 @@
 	  "parameters" : {
 		"icon" : "/celestial/system/ships/avikannpcship.png",
 		"displayName" : "Friendly Avikan Ship",
-		"description" : "This ship acknowledges our communications and her captain cordially invites us to pay a visit."
+		"description" : "This ship acknowledges our communications and has cautiously accepted our docking request."
+	  }
+	}
+  },
+  {
+    "op": "add",
+    "path": "/avikanwarship",
+    "value": {
+	  "warpAction" : "InstanceWorld:avikanwarship",
+	  "threatLevel" : 1,
+	  "skyParameters" : {
+		"seed" : 0,
+		"horizonClouds" : false,
+		"horizonImages" : [ { "left": "/celestial/system/ships/shiphorizonleft.png", "right": "/celestial/system/ships/avikanshiphorizonright.png" } ]
+	  },
+	  "moving" : true,
+	  "speed" : 15.0,
+	  "orbitRange" : [1, 1],
+	  "lifeTime" : [1500, 2100],
+	  "parameters" : {
+		"icon" : "/celestial/system/ships/avikannpcship.png",
+		"displayName" : "Friendly Avikan Ship",
+		"description" : "This ship acknowledges our communications and has cautiously accepted our docking request."
 	  }
 	}
   },
   
+  //TRINKIAN SHIPS
   {
     "op": "add",
     "path": "/trinkmerchantship",
@@ -38,7 +61,6 @@
 		"horizonClouds" : false,
 		"horizonImages" : [ { "left": "/celestial/system/ships/shiphorizonleft.png", "right": "/celestial/system/ships/trinkshiphorizonright.png" } ]
 	  },
-
 	  "moving" : true,
 	  "speed" : 15.0,
 	  "orbitRange" : [1, 1],
@@ -46,6 +68,30 @@
 	  "parameters" : {
 		"icon" : "/celestial/system/ships/trinknpcship.png",
 		"displayName" : "Friendly Trinkian Ship",
+		"description" : "This ship acknowledges our communications and her captain cordially invites us to pay a visit."
+	  }
+	}
+  },
+  
+  //ALLIANCE SHIPS
+  {
+    "op": "add",
+    "path": "/alliancemerchantship",
+    "value": {
+	  "warpAction" : "InstanceWorld:alliancemerchantship",
+	  "threatLevel" : 1,
+	  "skyParameters" : {
+		"seed" : 0,
+		"horizonClouds" : false,
+		"horizonImages" : [ { "left": "/celestial/system/ships/shiphorizonleft.png", "right": "/celestial/system/ships/alliancecargoshiphorizonright.png" } ]
+	  },
+	  "moving" : true,
+	  "speed" : 15.0,
+	  "orbitRange" : [1, 1],
+	  "lifeTime" : [1500, 2100],
+	  "parameters" : {
+		"icon" : "/celestial/system/ships/alliancenpcship.png",
+		"displayName" : "Friendly Alliance Ship",
 		"description" : "This ship acknowledges our communications and her captain cordially invites us to pay a visit."
 	  }
 	}

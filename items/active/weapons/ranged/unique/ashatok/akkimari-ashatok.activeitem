@@ -1,0 +1,157 @@
+{
+  "itemName" : "akkimari-ashatok",
+  "price" : 1500,
+  "inventoryIcon" : "akkimari-ashatok.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;An unstable makeshift weapon that randomly fires highly volatile projectiles.",
+  "shortdescription" : "^orange;Ashatok^white;",
+  "level" : 6,
+  "tooltipKind" : "thea-gun-unique",
+  "category" : "Makeshift Weapon",
+  "itemTags" : ["weapon","ranged","akkimari","theaUnique"],
+  "twoHanded" : true,
+  
+  "cursor" : "/cursors/thea-triplereticle-large.cursor",
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "akkimari-ashatok" },
+  
+  "meritTokenValue" : 100,
+
+  "animation" : "akkimari-ashatok.animation",
+  "animationParts" : {
+    "middle" : "akkimari-ashatok.png",
+    "middleFullbright" : "akkimari-ashatoklights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/ashatokmuzzleflash.png",
+    "powerMuzzleFlash" : "/items/active/weapons/ranged/muzzleflash/ashatokpowermuzzle.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+		    "offset" : [0.375, -0.75]
+		  }
+		},
+		"laserLight" : {
+		  "properties" : {
+			"offset" : [0.375, -0.75]
+		  }
+		}
+      }
+    },
+	"particleEmitters" : {
+	  "muzzleFlash" : {
+        "particles" : []
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/akkimari_energyfire2.ogg" ],
+      "powerFire" : [ "/sfx/gun/akkimari_energyfire_heavy.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.375, -0.75],
+  "muzzleOffset" : [2.25, 0.25],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "akkimariacid",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-randompowerfire.lua"],
+    "class" : "RandomPowerFire",
+
+    "fireTime" : 0.22,
+    "baseDps" : 10.5,
+    "energyUsage" : 45.0,
+    "inaccuracy" : 0.022,
+
+    "projectileCount" : 1,
+	"powerProjectileChance" : 0.2,				//Between 0 (0%) and 1 (100%)
+	"powerProjectileDamageMultiplier" : 1.5,	//Multiply damage for power projectiles by this amount
+    "fireType" : "auto",
+
+    "projectileType" : "justicarbullet",
+    "projectileParameters" : {
+      "knockback" : 6,
+      "speed" : 65,
+	  "statusEffects" : [
+		"akkimariacidburn"
+	  ]
+    },
+    "powerProjectileType" : "justicarbomb",
+    "powerProjectileParameters" : {
+      "knockback" : 12,
+      "speed" : 65,
+	  "statusEffects" : [
+		"akkimariacidburn"
+	  ]
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      },
+      "cooldown" : {
+        "duration" : 0.125,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      },
+      "powerFire" : {
+        "duration" : 0,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      },
+      "powerCooldown" : {
+        "duration" : 0.35,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

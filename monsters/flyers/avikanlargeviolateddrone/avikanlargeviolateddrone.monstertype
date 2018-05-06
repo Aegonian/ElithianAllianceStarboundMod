@@ -8,7 +8,7 @@
 
   "animation" : "avikanlargeviolateddrone.animation",
 
-  "dropPools" : [ { "default" : "avikanlargeviolateddroneTreasureGuaranteed", "bow" : "avikanlargeviolateddroneHuntingGuaranteed", "electromagneticextractor" : "electromagneticextractorTreasure" } ],
+  "dropPools" : [ { "default" : "avikanlargeviolateddroneTreasureGuaranteed", "bow" : "avikanlargeviolateddroneHuntingGuaranteed" } ],
 
   "baseParameters" : {
     "scripts" : [

@@ -354,6 +354,24 @@
       "title" : "Shalakka Ritual Staff",
       "description" : "A bladed staff used in the rituals of Shalakka shamans.",
       "icon" : "/items/active/weapons/melee/unique/shalakkaritualstaff/akkimari-shalakkaritualstafficon.png"
+    },
+	"akkimari-ashatok" : {
+      "order" : 58,
+      "title" : "Ashatok",
+      "description" : "An unstable makeshift weapon that randomly fires highly volatile projectiles.",
+      "icon" : "/items/active/weapons/ranged/unique/ashatok/akkimari-ashatok.png"
+    },
+	"thea-excelsior" : {
+      "order" : 59,
+      "title" : "C22 Excelsior",
+      "description" : "A powerful sidearm with a built-in heat sink system.",
+      "icon" : "/items/active/weapons/ranged/unique/excelsior/thea-excelsioricon.png"
+    },
+	"centens-oculusshield" : {
+      "order" : 60,
+      "title" : "Oculus Ward",
+      "description" : "A powerful shield projector built using Centensian technology.",
+      "icon" : "/items/active/shields/unique/oculus/centens-oculusshieldicon.png"
     }
   }
 }

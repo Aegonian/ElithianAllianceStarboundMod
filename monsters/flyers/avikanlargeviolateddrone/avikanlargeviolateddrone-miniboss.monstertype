@@ -8,7 +8,7 @@
 
   "animation" : "avikanlargeviolateddrone.animation",
 
-  "dropPools" : [ { "default" : "avikanlargeviolateddroneTreasureGuaranteed", "bow" : "avikanlargeviolateddroneHuntingGuaranteed", "electromagneticextractor" : "electromagneticextractorTreasure" } ],
+  "dropPools" : [ { "default" : "avikanlargeviolateddroneTreasureGuaranteed", "bow" : "avikanlargeviolateddroneHuntingGuaranteed" } ],
 
   "baseParameters" : {
     "scripts" : [
@@ -18,7 +18,7 @@
     "behavior" : "monster",
     "deathBehavior" : "monster-death",
 
-    "seeThroughLiquid" : false,
+    "seeThroughLiquid" : true,
     "behaviorConfig" : {
       "damageOnTouch" : true,
 
@@ -367,6 +367,9 @@
         "knockbackThreshold" : {
           "baseValue" : 12
         },
+        "grit" : {
+          "baseValue" : 1.0
+        },
         "maxHealth" : {
           "baseValue" : 1250
         },
@@ -386,13 +389,13 @@
           "baseValue" : 0.0
         },
         "fireStatusImmunity" : {
-          "baseValue" : 0.0
+          "baseValue" : 1.0
         },
         "iceResistance" : {
           "baseValue" : 0.0
         },
         "iceStatusImmunity" : {
-          "baseValue" : 0.0
+          "baseValue" : 1.0
         },
         "electricResistance" : {
           "baseValue" : 0.0
@@ -419,6 +422,12 @@
           "baseValue" : 1.0
         },
         "xanafianStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "akkimariacidResistance" : {
+          "baseValue" : 0.0
+        },
+        "akkimariacidStatusImmunity" : {
           "baseValue" : 1.0
         },
         "bleedingImmunity" : {

@@ -1,0 +1,9 @@
+{
+  "name" : "centensguardian-gun",
+  "category" : "centensguardian",
+  "type" : "gun",
+
+  "frames" : {
+    "gun" : "centensguardian-gun.png"
+  }
+}

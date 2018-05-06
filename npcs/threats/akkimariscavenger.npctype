@@ -51,7 +51,7 @@
             ],
             "sheathedprimary" : [
 			  "akkimari-nailgun",
-			  "akkimari-strafegun"
+			  "akkimari-strafegun-npc"
             ]
           },
 		  {
@@ -71,7 +71,7 @@
 			  { "name" : "akkimari-scavengerlegs3" }
 			],
             "primary" : [
-			  "akkimari-trackrifle",
+			  "akkimari-trackrifle-npc",
 			  "akkimari-spikecannon"
             ],
             "sheathedprimary" : [

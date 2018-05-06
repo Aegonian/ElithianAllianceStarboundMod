@@ -4,9 +4,12 @@
 
   "npcname" : "Valyakan",
   
-  "dropPools" : [ "aegiDeathTreasure" ],
+  "dropPools" : [ "avikanDeathTreasure" ],
 
   "scriptConfig" : {
+	"offeredQuests" : [ "oculusward4" ],
+	"turnInQuests" : [ "oculusward3", "oculusward4" ],
+	
     "dialog" : {
 	  "converse" : {
         "default" : {

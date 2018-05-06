@@ -69,13 +69,13 @@
       [0, [
           {
             "head" : [
-              { "name" : "aegi-asauniformhead", "parameters" : { "colorIndex" : 1 } }
+              { "name" : "aegi-allianceuniformhead", "parameters" : { "colorIndex" : 1 } }
             ],
             "chest" : [
-              { "name" : "aegi-suitchest", "parameters" : { "colorIndex" : 1 } }
+              { "name" : "aegi-allianceuniformchest", "parameters" : { "colorIndex" : 1 } }
             ],
             "legs" : [
-              { "name" : "aegi-suitlegs", "parameters" : { "colorIndex" : 1 } }
+              { "name" : "aegi-allianceuniformlegs", "parameters" : { "colorIndex" : 1 } }
             ],
             "back" : [
               { "name" : "thea-hiddenback", "parameters" : { "colorIndex" : 0 } }

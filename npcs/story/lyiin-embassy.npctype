@@ -6,7 +6,7 @@
   
   "keepAlive" : true,
 
-  "npcname" : "Lyiin Taemera",
+  "npcname" : "Lyiin",
   "identity" : {
     "imagePath" : "aegi",
     "gender" : "male",
@@ -51,13 +51,13 @@
       [0, [
           {
             "head" : [
-              { "name" : "aegi-presidenthead", "parameters" : { "colorIndex" : 0 } }
+              { "name" : "aegi-admiralhead", "parameters" : { "colorIndex" : 0 } }
             ],
             "chest" : [
-              { "name" : "aegi-presidentchest", "parameters" : { "colorIndex" : 0 } }
+              { "name" : "aegi-admiralchest", "parameters" : { "colorIndex" : 0 } }
             ],
             "legs" : [
-              { "name" : "aegi-presidentlegs", "parameters" : { "colorIndex" : 0 } }
+              { "name" : "aegi-admirallegs", "parameters" : { "colorIndex" : 0 } }
             ]
           }
         ] ]

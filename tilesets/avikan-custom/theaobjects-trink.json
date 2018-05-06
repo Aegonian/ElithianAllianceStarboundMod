@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":43,
+ "tilecount":47,
  "tileheight":104,
  "tileproperties":
     {
@@ -313,6 +313,38 @@
          "object":"trinkweaponchest",
          "tilesetDirection":"right"
         },
+     "43":
+        {
+         "\/\/shortdescription":"Small Trinkian Teleporter",
+         "imagePositionX":"-24",
+         "imagePositionY":"0",
+         "object":"trinklowteleporter",
+         "tilesetDirection":"right"
+        },
+     "44":
+        {
+         "\/\/shortdescription":"Hanging Trinkian Wires",
+         "imagePositionX":"0",
+         "imagePositionY":"-8",
+         "object":"trinkhangingwires",
+         "tilesetDirection":"right"
+        },
+     "45":
+        {
+         "\/\/shortdescription":"Hanging Trinkian Wires",
+         "imagePositionX":"0",
+         "imagePositionY":"-24",
+         "object":"trinkhangingwires2",
+         "tilesetDirection":"right"
+        },
+     "46":
+        {
+         "\/\/shortdescription":"Hanging Trinkian Wires",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"trinkhangingwires3",
+         "tilesetDirection":"right"
+        },
      "5":
         {
          "\/\/shortdescription":"Trinkian Generator",
@@ -507,6 +539,22 @@
      "42":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/trink\/trinkweaponchest.png"
+        },
+     "43":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/trink\/trinklowteleporter.png"
+        },
+     "44":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/trink\/trinkhangingwires.png"
+        },
+     "45":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/trink\/trinkhangingwires2.png"
+        },
+     "46":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/trink\/trinkhangingwires3.png"
         },
      "5":
         {

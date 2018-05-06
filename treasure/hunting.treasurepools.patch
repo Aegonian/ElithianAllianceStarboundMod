@@ -99,7 +99,7 @@
 		{"pool" : "avikanlargedroneHunting"}
       ]
     }]
-   ]	
+   ]
   },
   
   {"op" : "add",
@@ -112,7 +112,7 @@
         {"weight" : 0.005, "item" : "avikanlargedroneaf"}
       ]
     }]
-   ]	
+   ]
   },
   
   {"op" : "add",
@@ -180,6 +180,18 @@
   },
   
   {"op" : "add",
+   "path" : "/akkimarijusticarHuntingGuaranteed",
+   "value" : [
+	[1, {
+      "fill" : [
+        {"item" : "vaashcontainer"},
+		{"pool" : "akkimarijusticarHunting"}
+      ]
+    }]
+   ]	
+  },
+  
+  {"op" : "add",
    "path" : "/akkimarijusticarHunting",
    "value" : [
 	[1, {
@@ -213,6 +225,44 @@
 		{"weight" : 0.599, "item" : "alienmeat"},
 		{"weight" : 0.399, "item" : "farythscale"},
         {"weight" : 0.002, "item" : "farythaf"}
+      ]
+    }]
+   ]
+  },
+  
+  {"op" : "add",
+   "path" : "/centensguardianHuntingGuaranteed",
+   "value" : [
+	[1, {
+      "fill" : [
+        {"item" : "oculusshieldcore"},
+		{"pool" : "centensguardianHunting"}
+      ]
+    }]
+   ]	
+  },
+  
+  {"op" : "add",
+   "path" : "/centensguardianHunting",
+   "value" : [
+	[1, {
+      "pool" : [
+        {"weight" : 0.498, "item" : "centensiantech"},
+        {"weight" : 0.497, "item" : "centensianwarpcore"},
+        {"weight" : 0.005, "item" : "centensguardianaf"}
+      ]
+    }]
+   ]
+  },
+  
+  {"op" : "add",
+   "path" : "/centenskeeperHunting",
+   "value" : [
+	[1, {
+      "pool" : [
+        {"weight" : 0.498, "item" : "centensiantech"},
+        {"weight" : 0.497, "item" : "centensianwarpcore"},
+        {"weight" : 0.005, "item" : "centenskeeperaf"}
       ]
     }]
    ]

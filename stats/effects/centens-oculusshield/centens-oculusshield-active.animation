@@ -1,0 +1,60 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "shield" : {
+        "default" : "activate",
+        "states" : {
+          "activate" : {
+            "frames" : 8,
+            "cycle" : 0.4,
+            "mode" : "transition",
+			"transition" : "active"
+          },
+          "active" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "loop",
+			"properties" : {
+              "persistentSound" : "/sfx/melee/oculusshield_loop.ogg"
+            }
+          }
+        }
+      }
+    },
+    "parts" : {
+      "shield" : {
+        "properties" : {
+          "zLevel" : 0,
+		  "fullbright" : true,
+          "transformationGroups" : ["shield"]
+        },
+        "partStates" : {
+          "shield" : {
+            "activate" : {
+              "properties" : {
+                "image" : "centens-oculusshield.png:activate.<frame>"
+              }
+            },
+            "active" : {
+              "properties" : {
+                "image" : "centens-oculusshield.png:active.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "shield" : {}
+  },
+  
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [72, 108, 128]
+    }
+  }
+}

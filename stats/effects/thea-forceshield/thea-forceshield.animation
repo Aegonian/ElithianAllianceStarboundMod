@@ -22,7 +22,8 @@
       "shield" : {
         "properties" : {
           "zLevel" : 0,
-		  "fullbright" : true
+		  "fullbright" : true,
+          "transformationGroups" : ["shield"]
         },
         "partStates" : {
           "shield" : {
@@ -41,6 +42,11 @@
       }
     }
   },
+
+  "transformationGroups" : {
+    "shield" : {}
+  },
+  
   "lights" : {
     "glow" : {
       "active" : true,

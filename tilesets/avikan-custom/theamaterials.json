@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":91,
+ "tilecount":93,
  "tileheight":8,
  "tileproperties":
     {
@@ -549,6 +549,16 @@
         {
          "\/\/shortdescription":"Hidden Material",
          "material":"thea-hiddenmaterial"
+        },
+     "91":
+        {
+         "\/\/shortdescription":"Unbreakable Cobblestone",
+         "material":"thea-unbreakablecobblestone"
+        },
+     "92":
+        {
+         "\/\/shortdescription":"Unbreakable Dirt",
+         "material":"thea-unbreakabledirt"
         }
     },
  "tiles":
@@ -916,6 +926,14 @@
      "90":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/thea-hiddenmaterial.png"
+        },
+     "91":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/thea-unbreakablecobblestone.png"
+        },
+     "92":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/thea-unbreakabledirt.png"
         }
     },
  "tilewidth":8

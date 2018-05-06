@@ -1,0 +1,23 @@
+{
+  "projectileName" : "oculuscannonbullet",
+  "physics" : "laser",
+  "bounces" : 0,
+  "image" : "oculuscannonbullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "renderLayer" : "Monster+1",
+  "power" : 50,
+  "speed" : 110,
+  "supportsProcessing" : true,
+  //"emitters" : [ "akkimaritraillightmedium" ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/xanafianexplosionsmall/xanafianexplosionsmall.config"
+    }
+  ],
+  "lightColor" : [30, 60, 75],
+  "fullbright" : true,
+  "damageType" : "NoDamage",
+  "damageKind" : "xanafian"
+}

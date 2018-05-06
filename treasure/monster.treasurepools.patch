@@ -265,6 +265,18 @@
   },
   
   {"op" : "add",
+   "path" : "/akkimarijusticarTreasureGuaranteed",
+   "value" : [
+	[1, {
+      "fill" : [
+        {"item" : "vaashcontainer"},
+		{"pool" : "akkimarijusticarTreasure"}
+      ]
+    }]
+   ]	
+  },
+  
+  {"op" : "add",
    "path" : "/akkimarijusticarTreasure",
    "value" : [
 	[1, {
@@ -329,6 +341,48 @@
 		{"weight" : 0.05, "pool" : "akkimariWeapons"},
 		{"weight" : 0.05, "pool" : "akkimariScrapMetal"},
         {"weight" : 0.001, "item" : "akkimarichasercontroller"}
+      ]
+    }]
+   ]
+  },
+  
+  {"op" : "add",
+   "path" : "/centensguardianTreasureGuaranteed",
+   "value" : [
+	[1, {
+      "fill" : [
+        {"item" : "oculusshieldcore"},
+		{"pool" : "centensguardianTreasure"}
+      ]
+    }]
+   ]	
+  },
+  
+  {"op" : "add",
+   "path" : "/centensguardianTreasure",
+   "value" : [
+	[1, {
+      "pool" : [
+        {"weight" : 0.697, "pool" : "money"},
+		{"weight" : 0.15, "item" : "centensianmetal"},
+		{"weight" : 0.1, "item" : "centensiantech"},
+		{"weight" : 0.05, "item" : "centensianwarpcore"},
+        {"weight" : 0.003, "item" : "centensguardianaf"}
+      ]
+    }]
+   ]
+  },
+  
+  {"op" : "add",
+   "path" : "/centenskeeperTreasure",
+   "value" : [
+	[1, {
+      "pool" : [
+        {"weight" : 0.697, "pool" : "money"},
+		{"weight" : 0.15, "item" : "centensianmetal"},
+		{"weight" : 0.1, "item" : "centensiantech"},
+		{"weight" : 0.05, "item" : "centensianwarpcore"},
+        {"weight" : 0.003, "item" : "centenskeeperaf"}
       ]
     }]
    ]

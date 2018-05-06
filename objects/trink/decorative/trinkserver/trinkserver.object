@@ -37,7 +37,7 @@
       "imagePosition" : [0, 0],
       "frames" : 6,
       "animationCycle" : 0.6,
-      "lightPosition" : [0, 3],
+      "lightPosition" : [2, 3],
 
       "spaceScan" : 0.1,
       "flipImages" : true,
@@ -52,7 +52,7 @@
       "imagePosition" : [0, 0],
       "frames" : 6,
       "animationCycle" : 0.6,
-      "lightPosition" : [1, 3],
+      "lightPosition" : [3, 3],
 
       "spaceScan" : 0.1,
       "direction" : "right",

@@ -2,157 +2,258 @@
   //MONSTER DROPS
   { "op" : "add",
     "path" : "/acceptItems/-",
-	"value" :
-		"greatmonsterbone"
+	"value" : "greatmonsterbone"
   },
   { "op" : "add",
     "path" : "/acceptItems/-",
-	"value" :
-		"grandmonsterbone"
+	"value" : "grandmonsterbone"
   },
   { "op" : "add",
     "path" : "/acceptItems/-",
-	"value" :
-		"monsterbone"
+	"value" : "monsterbone"
   },
   { "op" : "add",
     "path" : "/acceptItems/-",
-	"value" :
-		"monsterclaws"
+	"value" : "monsterclaws"
   },
   { "op" : "add",
     "path" : "/acceptItems/-",
-	"value" :
-		"monsterhide"
+	"value" : "monsterhide"
   },
   { "op" : "add",
     "path" : "/acceptItems/-",
-	"value" :
-		"monsterplate"
+	"value" : "monsterplate"
   },
   { "op" : "add",
     "path" : "/acceptItems/-",
-	"value" :
-		"monsterscales"
+	"value" : "monsterscales"
   },
   { "op" : "add",
     "path" : "/acceptItems/-",
-	"value" :
-		"monsterspine"
+	"value" : "monsterspine"
   },
   { "op" : "add",
     "path" : "/acceptItems/-",
-	"value" :
-		"sandcrawlertooth"
+	"value" : "sandcrawlertooth"
   },
   { "op" : "add",
     "path" : "/acceptItems/-",
-	"value" :
-		"sandspittersack"
+	"value" : "sandspittersack"
   },
   { "op" : "add",
     "path" : "/acceptItems/-",
-	"value" :
-		"theleantissue"
+	"value" : "theleantissue"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "farythscale"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "ghavorkanpowercell"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "kelbethide"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "theleanmetal"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "valahrgland"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "stingwingqueen"
+  },
+  
+  //FARMABLES
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "ambrumfiber"
   },
   
   //CRAFTED ITEMS
   { "op" : "add",
     "path" : "/acceptItems/-",
-	"value" :
-		"avikancloth"
+	"value" : "avikancloth"
   },
   { "op" : "add",
     "path" : "/acceptItems/-",
-	"value" :
-		"monsterleather"
+	"value" : "monsterleather"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "alliancecloth"
   },
   
   //PREPARED FOODS
   { "op" : "add",
     "path" : "/acceptItems/-",
-	"value" :
-		"avikanmeal"
+	"value" : "avikanmeal"
   },
   { "op" : "add",
     "path" : "/acceptItems/-",
-	"value" :
-		"bolbohnjam"
+	"value" : "bolbohnjam"
   },
   { "op" : "add",
     "path" : "/acceptItems/-",
-	"value" :
-		"dunebun"
+	"value" : "dunebun"
   },
   { "op" : "add",
     "path" : "/acceptItems/-",
-	"value" :
-		"kadavancactusjuice"
+	"value" : "kadavancactusjuice"
   },
   { "op" : "add",
     "path" : "/acceptItems/-",
-	"value" :
-		"kadavanmeatjuice"
+	"value" : "kadavanmeatjuice"
   },
   { "op" : "add",
     "path" : "/acceptItems/-",
-	"value" :
-		"spicebol"
+	"value" : "spicebol"
   },
   { "op" : "add",
     "path" : "/acceptItems/-",
-	"value" :
-		"stuffeddunebun"
+	"value" : "stuffeddunebun"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "aegimeal"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "alliancesodamix"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "bakedborato"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "bolbohnbun"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "boratochips"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "loftbread"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "mellowrootchops"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "vahlberrybread"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "vahlberryjam"
   },
   
   //PRODUCE
   { "op" : "add",
     "path" : "/acceptItems/-",
-	"value" :
-		"avikanspices"
+	"value" : "avikanspices"
   },
   { "op" : "add",
     "path" : "/acceptItems/-",
-	"value" :
-		"bolbohn"
+	"value" : "bolbohn"
   },
   { "op" : "add",
     "path" : "/acceptItems/-",
-	"value" :
-		"dunestalk"
+	"value" : "dunestalk"
   },
   { "op" : "add",
     "path" : "/acceptItems/-",
-	"value" :
-		"kadavancactus"
+	"value" : "kadavancactus"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "borato"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "loftgrain"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "mellowroot"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "selvasextract"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "vahlberries"
   },
   
   //MEAT
   { "op" : "add",
     "path" : "/acceptItems/-",
-	"value" :
-		"avikanmeatchunk"
+	"value" : "avikanmeatchunk"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "cookedkelbetmeat"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "cookedsandcrawlermeat"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "kelbetmeat"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "sandcrawlermeat"
   },
   
   //SEEDS
   { "op" : "add",
     "path" : "/acceptItems/-",
-	"value" :
-		"avikancactusseed"
+	"value" : "avikancactusseed"
   },
   { "op" : "add",
     "path" : "/acceptItems/-",
-	"value" :
-		"avikanspiceplantseed"
+	"value" : "avikanspiceplantseed"
   },
   { "op" : "add",
     "path" : "/acceptItems/-",
-	"value" :
-		"bolbohnseed"
+	"value" : "bolbohnseed"
   },
   { "op" : "add",
     "path" : "/acceptItems/-",
-	"value" :
-		"dunestalkseed"
+	"value" : "dunestalkseed"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "ambrumseed"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "boratoseed"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "loftgrainseed"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "mellowrootseed"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "selvasseed"
+  },
+  { "op" : "add",
+    "path" : "/acceptItems/-",
+	"value" : "vahlberryseed"
   }
 ]

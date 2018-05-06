@@ -16,6 +16,20 @@
     } ]
   ],
   
+  "akkimarivaashbarrel" : [
+    [1, {
+      "poolRounds" : [
+        [0.4, 0],
+        [0.2, 1],
+        [0.2, 2],
+        [0.2, 3]
+      ],
+	  "pool" : [
+		{"weight" : 1.0, "item" : [ "akkimariacid", 5 ] }
+      ]
+    } ]
+  ],
+  
 	//GENERIC POOLS
   "akkimariScrapMetal" : [
 	//TIER 1, STARTING PLANETS
@@ -51,7 +65,7 @@
       ],
       "allowDuplication" : true
     } ],
-	//TIER 4, HARD PLANETS - FINAL STAGE OF AVIKAN BONE PROGRESSION
+	//TIER 4, HARD PLANETS
 	[3, {
       "pool" : [
         {"weight" : 0.5, "item" : "akkimarimetaltier4"}
@@ -62,7 +76,7 @@
       ],
       "allowDuplication" : true
     } ],
-	//TIER 5, VERY HARD PLANETS - BEYOND PROGRESSION
+	//TIER 5, VERY HARD PLANETS
 	[4, {
       "pool" : [
         {"weight" : 0.5, "item" : "akkimarimetaltier5"}
@@ -73,7 +87,7 @@
       ],
       "allowDuplication" : true
     } ],
-	//TIER 6, EXTREMELY HARD PLANETS - BEYOND PROGRESSION
+	//TIER 6, EXTREMELY HARD PLANETS
 	[5, {
       "pool" : [
         {"weight" : 0.5, "item" : "akkimarimetaltier6"}

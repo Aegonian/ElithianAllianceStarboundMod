@@ -1,0 +1,303 @@
+{
+  "type" : "centenskeeper",
+  "shortdescription" : "Ce'Tennan Keeper",
+  "description" : "A Ce'Tennan construct built to safeguard their creations.",
+
+  "categories" : [ "centenskeeper" ],
+  "parts" : [ "body", "lights" ],
+
+  "animation" : "centenskeeper.animation",
+
+  "dropPools" : [ { "default" : "centenskeeperTreasure", "bow" : "centenskeeperHunting", "electromagneticextractor" : "electromagneticextractorTreasure" } ],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+
+    "behavior" : "monster",
+    "deathBehavior" : "monster-death",
+
+    "seeThroughLiquid" : false,
+    "behaviorConfig" : {
+      "damageOnTouch" : true,
+
+      "targetQueryRange" : 30,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : true,
+      "keepTargetInRange" : 80,
+      "targetOutOfSightTime" : 10.0,
+
+      "foundTargetActions" : [
+        {
+          "name" : "action-animate",
+          "parameters" : {
+            "stateType" : "body",
+            "state" : "wakeup",
+            "animationTimer" : 0.7
+          }
+        }
+      ],
+
+      "fleeActions" : [ ],
+
+      "hostileActions" : [
+		//LASER ATTACK
+		{
+          "name" : "action-fire",
+          "cooldown" : 3.5,
+          "parameters" : {
+            //General Config
+			"requireLineOfSight" : true,
+            "faceTarget" : false,
+            "maximumRange" : 40,
+            "minimumRange" : 5,
+            "onGround" : false,	//Allows the ability to be used while airborne
+			"damageRepeatGroup" : "centenskeeper",
+			
+			//Windup
+            "windupTime" : 0.8,
+			"windupStateType" : "body",
+            "windupState" : "windup",
+
+			//Projectile
+            "projectileType" : "keeperlaserbullet",
+            "projectileCount" : 8,
+			"projectileInterval": 0.1,
+            "projectileParameters" : {
+              "power" : 5
+            },
+            "fireDelay" : 0.0,
+			
+			//Aiming
+			"aimAtTarget": true,
+            "rotateAim" : false,
+			"holdAim": true,	//If true, will keep the aimDirection of the first shot when firing multiple shots
+            "fireSound" : "",
+			"fireStateType": "body",
+            "fireState" : "fire",
+			"fireParticleBurst": "",
+			"aimDirection": [1, 0],
+			"fireOffset" : [0.875, 0.125],
+			"inaccuracy" : 0.0,
+            "rotationCenter" : [0.0, 0.0],
+			"fireArc": false,
+			"highArc": false,
+
+			//Winddown
+            "winddownState" : "winddown",
+			"winddownStateType" : "body",
+            "winddownTime" : 0.8,
+			"winddownStopForce": 0.0
+          }
+        }
+      ],
+
+      "periodicActions" : [
+       ],
+
+      "approachActions" : [
+        {
+          "name" : "approach-fly",
+          "parameters" : {
+            "minRange" : 8,
+            "maxRange" : 14,
+            "groundDistance" : 6
+          }
+        }
+      ],
+
+      "followActions" : [
+        {
+          "name" : "approach-teleport",
+          "parameters" : {
+          }
+        },
+        {
+          "name" : "approach-fly",
+          "parameters" : {
+            "minRange" : 8,
+            "maxRange" : 14,
+            "groundDistance" : 4
+          }
+        }
+      ],
+
+      "wanderActions" : [
+        {
+          "name" : "land-fly",
+          "cooldown" : 0,
+          "parameters" : {
+			"landCheckDistance": 30,
+            "landDirection" : [0, -1],
+            "flySpeed" : 8,
+            "flyControlForce" : 5,
+            "idleTime" : [5,10]
+          }
+        }
+      ],
+
+      "deathActions" : [
+        {
+          "name" : "action-projectile",
+          "parameters" : {
+            "projectileCount" : 1,
+            "projectileType" : "avikandroneexplosion",
+            "projectileParameters" : {
+              "damageTeam" : { "type" : "enemy", "team" : 0 },
+			  "power" : 10.0
+            },
+            "aimDirection" : [0, 0],
+            "inaccuracy" : 0,
+            "fireOffset" : [0, 0]
+          }
+        }
+      ],
+
+      "concurrentActions" : [ ],
+
+      "concurrentHostileActions" : [ ]
+    },
+
+    "touchDamage" : {
+      "poly" : [ [0, 1.375], [1.0, 1.0], [1.375, 0], [1.0, -1.0], [0, -1.375], [-1.0, -1.0], [-1.375, 0], [-1.0, 1.0] ],
+      "damage" : 9,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "lash",
+      "knockback" : 20,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-4, -4, 4, 4],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [0, 1.375], [1.0, 1.0], [1.375, 0], [1.0, -1.0], [0, -1.375], [-1.0, -1.0], [-1.375, 0], [-1.0, 1.0] ],
+
+      "mass" : 0.5,
+      "walkSpeed" : 4,
+      "runSpeed" : 12,
+      "gravityEnabled" : false,
+
+      "airFriction" : 2.5,
+      "airForce" : 15,
+      "flySpeed" : 20
+    },
+
+    "bodyMaterialKind" : "robotic",
+
+    "knockoutTime" : 0.2,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "robotic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.4
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 9
+        },
+        "maxHealth" : {
+          "baseValue" : 56
+        },
+        "protection" : {
+          "baseValue" : 0.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+        "physicalResistance" : {
+          "baseValue" : 0.0
+        },
+        "fireResistance" : {
+          "baseValue" : 0.0
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "iceResistance" : {
+          "baseValue" : 0.0
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "electricResistance" : {
+          "baseValue" : -0.5
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "poisonResistance" : {
+          "baseValue" : 0.5
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "linerifleResistance" : {
+          "baseValue" : -0.5
+        },
+        "linerifleStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "centensianenergyResistance" : {
+          "baseValue" : 0.0
+        },
+        "centensianenergyStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "xanafianStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "akkimariacidResistance" : {
+          "baseValue" : 0.0
+        },
+        "akkimariacidStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "bleedingImmunity" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -8],
+    "capturable" : true,
+    "captureHealthFraction" : 0.5,
+    "nametagColor" : [64, 200, 255],
+    "captureCollectables" : { "monsters" : "centenskeeper" }
+  }
+}

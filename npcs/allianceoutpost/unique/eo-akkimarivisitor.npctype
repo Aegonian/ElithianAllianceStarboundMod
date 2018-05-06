@@ -7,6 +7,9 @@
   "dropPools" : [ "aegiDeathTreasure" ],
 
   "scriptConfig" : {
+	"offeredQuests" : [ "ashatok2" ],
+	"turnInQuests" : [ "ashatok", "ashatok2" ],
+	
     "dialog" : {
 	  "converse" : {
         "default" : {

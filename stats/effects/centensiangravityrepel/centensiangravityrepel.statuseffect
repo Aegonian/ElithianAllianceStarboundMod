@@ -1,7 +1,10 @@
 {
   "name" : "centensiangravityrepel",
+  "effectConfig" : {
+    "frequency" : 0.3	//How often the projectile-repelling field is created
+  },
 
-  "defaultDuration" : 5,
+  "defaultDuration" : 1,
 
   "scripts" : [
     "centensiangravityrepel.lua"

@@ -1,0 +1,17 @@
+{
+  "frameGrid" : {
+    "size" : [64, 64],
+    "dimensions" : [8, 3],
+    "names" : [
+      [ "recharge.1", "recharge.2", "recharge.3", "recharge.4", "recharge.5", "recharge.6", "recharge.7", "recharge.8" ],
+      [ "activate.1", "activate.2", "activate.3", "activate.4", "activate.5", "activate.6", "activate.7", "activate.8" ],
+      [ "on.1", "on.2", "on.3", "on.4", "break.1", "break.2", "break.3", "break.4" ]
+    ]
+  },
+  "aliases" : {
+	"on.5" : "on.1",
+    "on.6" : "on.1",
+    "on.7" : "on.1",
+    "on.8" : "on.1"
+  }
+}

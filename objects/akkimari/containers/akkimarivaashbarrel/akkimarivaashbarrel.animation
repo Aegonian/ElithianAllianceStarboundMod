@@ -1,0 +1,72 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "liquidState" : {
+        "default" : "noLiquid",
+        "states" : {
+          "noLiquid" : {
+			"properties" : {
+              "lightsOff" : [ "glow" ]
+            }
+		  },
+          "hasLiquid" : {
+			"properties" : {
+              "lightsOn" : [ "glow" ]
+            }
+		  }
+        }
+      }
+    },
+	
+    "parts" : {
+	  "fg" : {
+        "properties" : {
+          "centered" : false,
+          "zLevel" : 1
+        },
+        "partStates" : {
+          "liquidState" : {
+            "noLiquid" : {
+              "properties" : {
+                "image" : "<partImage>:empty"
+              }
+            },
+            "hasLiquid" : {
+              "properties" : {
+                "image" : "<partImage>:full"
+              }
+            }
+          }
+        }
+      },
+	  "bg" : {
+        "properties" : {
+          "centered" : false,
+          "zLevel" : 0,
+		  "fullbright" : true
+        },
+        "partStates" : {
+          "liquidState" : {
+            "noLiquid" : {
+              "properties" : {
+                "image" : "<partImage>:empty"
+              }
+            },
+            "hasLiquid" : {
+              "properties" : {
+                "image" : "<partImage>:full"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "lights" : {
+    "glow" : {
+      "position" : [0, 1],
+      "color" : [0, 90, 0]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id" : "alliancemechparts2",
+  "prerequisites" : [ "alliancemechparts", "mechupgrade2" ],
+  "title" : "^green;Blasting through Space",
+  "text" : "I just received a new batch of mech weapon blueprints! You can have a copy of both, ^green;if you can find me some of that weird ^orange;Vaash liquid ^reset;reportedly found on ^green;mutated planets^reset;. ^orange;50 Units ^green;should be enough^reset;. The Akkimari use it to power their tech - I want to see if I can design some custom weapons with it myself!",
+  "completionText" : "You are just the best, thank you! Here, take the blueprints I promised you - they should serve you well!",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "alliancecache", 1 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "default" : "questGiver"
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "akkimariacid",
+        "count" : 50,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Return to ^orange;Azurii ^reset;in the ^orange;Creon Embassy^reset;",
+
+    "giveBlueprints" : [ "mecharmalliancerailgun", "mecharmtrinkrepeater" ]
+  }
+}

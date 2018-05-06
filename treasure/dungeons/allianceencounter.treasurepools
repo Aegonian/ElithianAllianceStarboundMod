@@ -281,6 +281,9 @@
 		//DESIGNER SET
 		{"weight" : 0.20, "item" : "aegi-suitchest" },
 		{"weight" : 0.20, "item" : "aegi-suitlegs" },
+		//STORE CLERK SET
+		{"weight" : 0.20, "item" : "aegi-storeclerkchest" },
+		{"weight" : 0.20, "item" : "aegi-storeclerklegs" },
 		//BACK ITEMS
 		{"weight" : 0.20, "item" : "aegi-soldierback" }
       ]

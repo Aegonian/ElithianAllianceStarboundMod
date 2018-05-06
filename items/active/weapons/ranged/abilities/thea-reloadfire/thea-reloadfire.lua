@@ -55,11 +55,16 @@ function TheaReloadFire:auto()
   self:muzzleFlash()
   
   if self.recoilKnockbackVelocity then
+	--If not crouching or if crouch does not impact recoil
 	if not (self.crouchStopsRecoil and mcontroller.crouching()) then
 	  local recoilVelocity = vec2.mul(vec2.norm(vec2.mul(self:aimVector(0), -1)), self.recoilKnockbackVelocity)
-	  mcontroller.setYVelocity(0)
+	  --If aiming down and not in zero G, reset Y velocity first to allow for breaking of falls
+	  if (self.weapon.aimAngle <= 0 and not mcontroller.zeroG()) then
+		mcontroller.setYVelocity(0)
+	  end
 	  mcontroller.addMomentum(recoilVelocity)
 	  mcontroller.controlJump()
+	--If crouching
 	elseif self.crouchRecoilKnockbackVelocity then
 	  local recoilVelocity = vec2.mul(vec2.norm(vec2.mul(self:aimVector(0), -1)), self.crouchRecoilKnockbackVelocity)
 	  mcontroller.setYVelocity(0)

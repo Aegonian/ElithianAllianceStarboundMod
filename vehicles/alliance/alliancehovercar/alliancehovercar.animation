@@ -480,8 +480,8 @@
   "sounds" : {
 	//ENGINE SOUNDS
 	"engineStart" : [ "/sfx/tech/mech_activate3.ogg" ],
-    "engineLoop" : ["/sfx/tech/thea_shuttle_engineloop.ogg"],
-    "engineLoopIdle" : ["/sfx/tech/hoverbike_idle_loop.ogg"],
+    "engineLoop" : [ "/sfx/tech/thea_shuttle_engineloop.ogg" ],
+    "engineLoopIdle" : [ "/sfx/tech/hoverbike_idle_loop.ogg" ],
 	
 	//DAMAGE
 	"changeDamageState" : [

@@ -1,0 +1,12 @@
+{
+  "name" : "centens-oculusshield-active",
+  "effectConfig" : {},
+  "defaultDuration" : 0.1,
+
+  "scripts" : [
+    "centens-oculusshield-active.lua"
+  ],
+  "scriptDelta" : 1,
+
+  "animationConfig" : "centens-oculusshield-active.animation"
+}

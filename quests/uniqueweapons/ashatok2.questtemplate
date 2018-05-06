@@ -1,0 +1,36 @@
+{
+  "id" : "ashatok2",
+  "prerequisites" : [],
+  "title" : "^orange;Acidic Warfare II",
+  "text" : "Chacharra need materials. Many materials. Many pixels, too, want payment. ^green;Find Chacharra ^orange;12 Hardened Scrap Metal ^green;and ^orange;30000 Pixels^green;. ^white;Then Chacharra will make weapon for you.",
+  "completionText" : "Chacharra happy, have all Akki need. Here you go: weapon for you. Use it much, fights you win.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "akkimari-ashatok", 1 ], [ "alliancecache", 1 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "questGiver",
+      "questComplete" : "questReceiver"
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "akkimarimetaltier4",
+        "count" : 12,
+        "consume" : true
+      },
+      {
+        "type" : "gatherItem",
+        "itemName" : "money",
+        "count" : 30000,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Return to ^orange;Chacharra ^reset;in the ^orange;Creon Embassy^reset;"
+  }
+}

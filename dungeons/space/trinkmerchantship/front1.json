@@ -33,7 +33,7 @@
          "name":"objects",
          "objects":[
                 {
-                 "gid":115,
+                 "gid":153,
                  "height":104,
                  "id":662,
                  "name":"",
@@ -49,7 +49,7 @@
                  "y":152
                 }, 
                 {
-                 "gid":116,
+                 "gid":154,
                  "height":48,
                  "id":663,
                  "name":"",
@@ -65,7 +65,7 @@
                  "y":200
                 }, 
                 {
-                 "gid":2147483764,
+                 "gid":2147483802,
                  "height":48,
                  "id":666,
                  "name":"",
@@ -81,7 +81,7 @@
                  "y":200
                 }, 
                 {
-                 "gid":2147483790,
+                 "gid":2147483828,
                  "height":48,
                  "id":671,
                  "name":"",
@@ -97,7 +97,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":140,
+                 "gid":178,
                  "height":104,
                  "id":672,
                  "name":"",
@@ -113,7 +113,7 @@
                  "y":464
                 }, 
                 {
-                 "gid":142,
+                 "gid":180,
                  "height":48,
                  "id":673,
                  "name":"",
@@ -129,7 +129,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":2147483759,
+                 "gid":2147483797,
                  "height":32,
                  "id":685,
                  "name":"",
@@ -145,7 +145,7 @@
                  "y":200
                 }, 
                 {
-                 "gid":2147483759,
+                 "gid":2147483797,
                  "height":32,
                  "id":686,
                  "name":"",
@@ -161,7 +161,7 @@
                  "y":352
                 }, 
                 {
-                 "gid":111,
+                 "gid":149,
                  "height":32,
                  "id":689,
                  "name":"",
@@ -177,7 +177,7 @@
                  "y":200
                 }, 
                 {
-                 "gid":111,
+                 "gid":149,
                  "height":32,
                  "id":690,
                  "name":"",
@@ -193,7 +193,7 @@
                  "y":352
                 }, 
                 {
-                 "gid":125,
+                 "gid":163,
                  "height":8,
                  "id":705,
                  "name":"",
@@ -209,7 +209,7 @@
                  "y":320
                 }, 
                 {
-                 "gid":125,
+                 "gid":163,
                  "height":8,
                  "id":706,
                  "name":"",
@@ -225,7 +225,7 @@
                  "y":320
                 }, 
                 {
-                 "gid":125,
+                 "gid":163,
                  "height":8,
                  "id":707,
                  "name":"",
@@ -241,7 +241,7 @@
                  "y":168
                 }, 
                 {
-                 "gid":125,
+                 "gid":163,
                  "height":8,
                  "id":708,
                  "name":"",
@@ -257,7 +257,7 @@
                  "y":168
                 }, 
                 {
-                 "gid":125,
+                 "gid":163,
                  "height":8,
                  "id":711,
                  "name":"",
@@ -273,7 +273,7 @@
                  "y":216
                 }, 
                 {
-                 "gid":125,
+                 "gid":163,
                  "height":8,
                  "id":712,
                  "name":"",
@@ -289,7 +289,7 @@
                  "y":216
                 }, 
                 {
-                 "gid":126,
+                 "gid":164,
                  "height":40,
                  "id":714,
                  "name":"",
@@ -305,23 +305,7 @@
                  "y":304
                 }, 
                 {
-                 "gid":113,
-                 "height":16,
-                 "id":717,
-                 "name":"",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":720,
-                 "y":264
-                }, 
-                {
-                 "gid":113,
+                 "gid":151,
                  "height":16,
                  "id":718,
                  "name":"",
@@ -337,7 +321,7 @@
                  "y":240
                 }, 
                 {
-                 "gid":113,
+                 "gid":151,
                  "height":16,
                  "id":719,
                  "name":"",
@@ -353,7 +337,7 @@
                  "y":288
                 }, 
                 {
-                 "gid":113,
+                 "gid":151,
                  "height":16,
                  "id":720,
                  "name":"",
@@ -369,7 +353,7 @@
                  "y":264
                 }, 
                 {
-                 "gid":113,
+                 "gid":151,
                  "height":16,
                  "id":721,
                  "name":"",
@@ -385,7 +369,7 @@
                  "y":240
                 }, 
                 {
-                 "gid":146,
+                 "gid":184,
                  "height":24,
                  "id":734,
                  "name":"",
@@ -398,7 +382,23 @@
                  "visible":true,
                  "width":32,
                  "x":720,
-                 "y":296
+                 "y":288
+                }, 
+                {
+                 "gid":187,
+                 "height":16,
+                 "id":736,
+                 "name":"",
+                 "properties":
+                    {
+                     "parameters":"{ \"interactData\" : \"\/interface\/warping\/allianceoutpostwarp.config\" }"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":48,
+                 "x":712,
+                 "y":304
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -523,7 +523,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":735,
+ "nextobjectid":737,
  "orientation":"orthogonal",
  "properties":
     {
@@ -545,11 +545,11 @@
          "source":"..\/..\/..\/tilesets\/avikan-custom\/theamaterials.json"
         }, 
         {
-         "firstgid":106,
+         "firstgid":144,
          "source":"..\/..\/..\/tilesets\/avikan-custom\/theaobjects-trink.json"
         }, 
         {
-         "firstgid":149,
+         "firstgid":191,
          "source":"..\/..\/..\/tilesets\/avikan-custom\/theaobjects-space.json"
         }],
  "tilewidth":8,

@@ -87,7 +87,7 @@
 	  [0, {
 		"pool" : [
 		  {"weight" : 0.89, "item" : "ambrumfiber"},
-		  {"weight" : 0.01, "item" : "ambrumfiberseed"},
+		  {"weight" : 0.01, "item" : "ambrumseed"},
 		  {"weight" : 0.1, "item" : "plantfibre"}
 		],
 		"poolRounds" : [

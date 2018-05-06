@@ -1,0 +1,12 @@
+{
+  "name" : "centens-oculusshield-break",
+  "effectConfig" : {},
+  "defaultDuration" : 0.8,
+
+  "scripts" : [
+    "centens-oculusshield-break.lua"
+  ],
+  "scriptDelta" : 1,
+
+  "animationConfig" : "centens-oculusshield-break.animation"
+}

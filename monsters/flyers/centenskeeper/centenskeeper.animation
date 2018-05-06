@@ -1,0 +1,285 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "body" : {
+        "priority" : 0,
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 1
+          },
+          "wakeup" : {
+            "frames" : 7,
+            "cycle" : 0.7,
+            "mode" : "transition",
+            "transition" : "fly"
+          },
+          "fly" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "loop",
+			"properties" : {
+              "particleEmittersOff" : [ "chargeLaser" ]
+            }
+          },
+          "windup" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "fire",
+            "properties" : {
+              "particleEmittersOn" : [ "chargeLaser" ],
+              "immediateSound" : "/sfx/npc/boss/crystalboss_beamin.ogg"
+            },
+            "frameProperties" : {
+              "particleEmittersOn" : [ [], [ "chargeLaser" ], [], [], [], [], [], [] ],
+              "particleEmittersOff" : [ [], [], [], [], [], [], [], [ "chargeLaser" ] ]
+            }
+          },
+          "fire" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "loop",
+			"properties" : {
+              "persistentSound" : "/sfx/npc/boss/crystalboss_beam.ogg"
+            }
+          },
+          "winddown" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "fly",
+            "properties" : {
+              "immediateSound" : "/sfx/npc/monsters/centensoculus_laserend.ogg"
+            }
+          }
+        }
+      },
+      "damage" : {
+        "priority" : 3,
+        "default" : "none",
+        "states" : {
+          "none" : {
+            "frames" : 1
+          },
+          "stunned" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "loop"
+          }
+        }
+      },
+      "releaseParticles" : {
+        "default" : "off",
+        "states" : {
+          "off" : {
+            "frames" : 1,
+            "properties" : {
+              "particleEmittersOff" : [ "releaseParticles" ]
+            }
+          },
+          "on" : {
+            "frames" : 1,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "off",
+            "properties" : {
+              "particleEmittersOn" : [ "releaseParticles" ]
+            }
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "body" : {
+        "properties" : {
+          "transformationGroups" : [ "body" ],
+          "offset" : [0.0, 0.0]
+        },
+        "partStates" : {
+          "body" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "wakeup" : {
+              "properties" : {
+                "image" : "<partImage>:wakeup.<frame>"
+              }
+            },
+            "fly" : {
+              "properties" : {
+                "image" : "<partImage>:fly.<frame>"
+              }
+            },
+            "windup" : {
+              "properties" : {
+                "image" : "<partImage>:windup.<frame>"
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:fire.<frame>"
+              }
+            },
+            "winddown" : {
+              "properties" : {
+                "image" : "<partImage>:winddown.<frame>"
+              }
+            }
+          },
+          "damage" : {
+            "stunned" : {
+              "properties" : {
+                "image" : "<partImage>:hurt.<frame>"
+              }
+            }
+          }
+        }
+      },
+	  "lights" : {
+        "properties" : {
+		  "zLevel" : 1,
+          "transformationGroups" : [ "body" ],
+		  "fullbright" : true,
+          "offset" : [0.0, 0.0]
+        },
+        "partStates" : {
+          "body" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "wakeup" : {
+              "properties" : {
+                "image" : "<partImage>:wakeup.<frame>"
+              }
+            },
+            "fly" : {
+              "properties" : {
+                "image" : "<partImage>:fly.<frame>"
+              }
+            },
+            "windup" : {
+              "properties" : {
+                "image" : "<partImage>:windup.<frame>"
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:fire.<frame>"
+              }
+            },
+            "winddown" : {
+              "properties" : {
+                "image" : "<partImage>:winddown.<frame>"
+              }
+            }
+          },
+          "damage" : {
+            "stunned" : {
+              "properties" : {
+                "image" : "<partImage>:hurt.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "body" : { "interpolated" : true }
+  },
+  
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [30, 60, 75],
+      "pointLight" : true
+    }
+  },
+
+  "effects" : {
+    "blink" : {
+      "type" : "flash",
+      "time" : 0,
+      "directives" : "fade=ffffff;0.5"
+    }
+  },
+
+  "particleEmitters" : {
+    "deathPoof" : {
+      "particles" : [
+        { "particle" : "electricswoosh1" },
+        { "particle" : "electricswoosh2" },
+        { "particle" : "electricswoosh1" },
+        { "particle" : "electricswoosh2" },
+
+        { "particle" : "deathfizz1left" },
+        { "particle" : "deathfizz1right" },
+        { "particle" : "deathfizz2left" },
+        { "particle" : "deathfizz2right" },
+        { "particle" : "deathfizz3left" },
+        { "particle" : "deathfizz3right" },
+        { "particle" : "deathfizz4left" },
+        { "particle" : "deathfizz4right" },
+		
+		{ "particle" : "centensguardiandebris2" },
+		{ "particle" : "centensguardiandebris2" },
+		{ "particle" : "centensguardiandebris2" },
+		{ "particle" : "centensguardiandebris2" },
+		{ "particle" : "centensguardiandebris2" },
+		{ "particle" : "centensguardiandebris2" },
+		{ "particle" : "centensguardiandebris2" },
+		{ "particle" : "centensguardiandebris2" }
+      ]
+    },
+    "captureParticles" : {
+      "particles" : [
+        { "particle" : "monstercapture" }
+      ]
+    },
+    "releaseParticles" : {
+      "particles" : [
+        { "particle" : "monsterrelease" }
+      ]
+    },
+    "teleportOut" : {
+      "particles" : [
+        { "particle" : "monstercapture" }
+      ]
+    },
+    "teleportIn" : {
+      "particles" : [
+        { "particle" : "monsterrelease" }
+      ]
+    },
+    "levelUp" : {
+      "particles" : [
+        { "particle" : "monsterlevelup" }
+      ]
+    },
+	
+	//ABILITIES
+    "chargeLaser" : {
+      "active" : false,
+      "emissionRate" : 5.0,
+      "transformationGroups" : ["body"],
+	  "offsetRegion" : [0.875, 0.125, 0.875, 0.125],
+      "particles" : [
+        { "particle" : "rashaekswisdomcharge"}
+      ]
+    }
+  },
+
+  "sounds" : {
+    "aggroHop" : [ "/sfx/npc/monsters/monster_surprise.ogg" ],
+    "deathPuff" : [ "/sfx/npc/enemydeathpuff.ogg" ],
+    "fire" : [ "/sfx/gun/akkimari_energyfire2.ogg" ]
+  }
+}

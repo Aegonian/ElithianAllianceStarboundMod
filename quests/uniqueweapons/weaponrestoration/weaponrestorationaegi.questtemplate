@@ -1,0 +1,36 @@
+{
+  "id" : "weaponrestorationaegi",
+  "prerequisites" : [ "aegicustomtailoring", "glitch_mission2" ],
+  "requiredItems" : [ "thea-excaliburbroken" ],
+  "title" : "^orange;Excalibur Reborn",
+  "text" : "Let me see that weapon of yours! It's an old Excalibur-class shieldblade, one of only very few ever made... I could repair it for you, if you have the right materials. ^green;Bring me ^orange;12 pieces of Integrated Allosteel^reset;, and I will start reforging the blade.",
+  "completionText" : "That's just what I needed, thanks! I'll start working on the blade, but I need you to find some more materials before I can completely restore this weapon to its former glory.",
+  "moneyRange" : [50, 50],
+  "rewards" : [],
+  "canBeAbandoned" : false,
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+	"portraits" : {
+      "default" : "questGiver"
+    },
+	"followUp" : "weaponrestorationaegi2",
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "thea-excaliburbroken",
+        "count" : 1,
+        "consume" : true
+      },
+      {
+        "type" : "gatherItem",
+        "itemName" : "alliancemetaltier6",
+        "count" : 12,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Return to ^orange;Hadaeko ^reset;in the ^orange;Creon Embassy^reset;"
+  }
+}

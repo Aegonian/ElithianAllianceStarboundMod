@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":171,
+ "tilecount":174,
  "tileheight":128,
  "tileproperties":
     {
@@ -656,6 +656,30 @@
          "imagePositionY":"0",
          "object":"alliancerecruitmentdesk",
          "tilesetDirection":"right"
+        },
+     "171":
+        {
+         "\/\/shortdescription":"Small Alliance Teleporter",
+         "imagePositionX":"-24",
+         "imagePositionY":"0",
+         "object":"alliancelowteleporter",
+         "tilesetDirection":"right"
+        },
+     "172":
+        {
+         "\/\/shortdescription":"AAE Cargo Container",
+         "imagePositionX":"-72",
+         "imagePositionY":"0",
+         "object":"alliancespacecontainer",
+         "tilesetDirection":"right"
+        },
+     "173":
+        {
+         "\/\/shortdescription":"AAE Cargo Container",
+         "imagePositionX":"-72",
+         "imagePositionY":"0",
+         "object":"alliancespacecontainer",
+         "tilesetDirection":"left"
         },
      "18":
         {
@@ -1703,6 +1727,18 @@
      "170":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancerecruitmentdesk.png"
+        },
+     "171":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancelowteleporter.png"
+        },
+     "172":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancespacecontainer.png"
+        },
+     "173":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancespacecontainerleft.png"
         },
      "18":
         {

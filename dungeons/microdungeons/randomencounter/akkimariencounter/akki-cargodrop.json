@@ -46,7 +46,7 @@
          "name":"objects",
          "objects":[
                 {
-                 "gid":363,
+                 "gid":375,
                  "height":88,
                  "id":815,
                  "name":"",
@@ -62,7 +62,7 @@
                  "y":496
                 }, 
                 {
-                 "gid":364,
+                 "gid":376,
                  "height":16,
                  "id":816,
                  "name":"",
@@ -75,6 +75,38 @@
                  "visible":true,
                  "width":24,
                  "x":192,
+                 "y":496
+                }, 
+                {
+                 "gid":383,
+                 "height":24,
+                 "id":836,
+                 "name":"",
+                 "properties":
+                    {
+                     "parameters":"{ \"treasurePools\" : [ \"akkimarivaashbarrel\" ] }"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":224,
+                 "y":496
+                }, 
+                {
+                 "gid":383,
+                 "height":24,
+                 "id":837,
+                 "name":"",
+                 "properties":
+                    {
+                     "parameters":"{ \"treasurePools\" : [ \"akkimarivaashbarrel\" ] }"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":248,
                  "y":496
                 }],
          "opacity":1,
@@ -239,7 +271,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":836,
+ "nextobjectid":838,
  "orientation":"orthogonal",
  "properties":
     {
@@ -269,7 +301,7 @@
          "source":"..\/..\/..\/..\/tilesets\/avikan-custom\/theamaterials.json"
         }, 
         {
-         "firstgid":363,
+         "firstgid":375,
          "source":"..\/..\/..\/..\/tilesets\/avikan-custom\/theaobjects-akkimari.json"
         }],
  "tilewidth":8,

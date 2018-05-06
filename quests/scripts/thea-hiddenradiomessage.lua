@@ -27,9 +27,9 @@ function update(dt)
   if player.worldId() ~= player.ownShipWorldId() then
 	player.radioMessage(self.radioMessages.startMessage, self.firstMessageDelay)
 	player.radioMessage(self.radioMessages.secondMessage, self.firstMessageDelay + self.messageInterval)
-	player.radioMessage(self.radioMessages.thirdMessage, self.firstMessageDelay + self.messageInterval*2)
-	player.radioMessage(self.radioMessages.fourthMessage, self.firstMessageDelay + self.messageInterval*3)
-	player.radioMessage(self.radioMessages.endMessage, self.firstMessageDelay + self.messageInterval*4)
+	player.radioMessage(self.radioMessages.thirdMessage, self.firstMessageDelay + self.messageInterval * 2)
+	player.radioMessage(self.radioMessages.fourthMessage, self.firstMessageDelay + self.messageInterval *3 )
+	player.radioMessage(self.radioMessages.endMessage, self.firstMessageDelay + self.messageInterval * 4)
 	
 	quest.complete()
   end

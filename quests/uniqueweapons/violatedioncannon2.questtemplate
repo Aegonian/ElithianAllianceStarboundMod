@@ -1,0 +1,43 @@
+{
+  "id" : "violatedioncannon2",
+  "prerequisites" : [ "violatedioncannon" ],
+  "title" : "^orange;Harnessing the Corruption II",
+  "text" : "If I am to build a weapon from this Ion Core, I'm going to need some materials. Could you fetch me about ^orange;12 Superb Kavanite Plates ^white; and ^orange;5 Dranite Plates^white;? I'll work on some plans for the weapon in the mean time.",
+  "completionText" : "Those are perfect, Captain! Lucky for you, I just finished drawing the blueprints for the weapon I intend to build. I'll need some more materials, however.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "avikanmerittoken", 5 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : {
+        "portrait" : [ {"image" : "/objects/avikan/outpost/avikangunsmith/avikangunsmithportrait.png"} ],
+        "title" : "Ayurin"
+      },
+      "questComplete" : {
+        "portrait" : [ {"image" : "/objects/avikan/outpost/avikangunsmith/avikangunsmithportrait.png"} ],
+        "title" : "Ayurin"
+      }
+    },
+	"followUp" : "violatedioncannon3",
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "avikanmetaltier6",
+        "count" : 12,
+        "consume" : true
+      },
+	  {
+        "type" : "gatherItem",
+        "itemName" : "avikandarkmetal",
+        "count" : 5,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Return to ^orange;Ayurin ^reset;in the ^orange;Starfarer's Refuge^reset;"
+  }
+}

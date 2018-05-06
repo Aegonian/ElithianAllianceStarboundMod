@@ -1,0 +1,34 @@
+{
+  "frameGrid" : {
+    "size" : [64, 60],
+    "dimensions" : [9, 13],
+
+    "names" : [
+	//FLYING
+      [ null, "fly.1", "fly.2", "fly.3", "fly.4", "fly.5", "fly.6", "fly.7", "fly.8" ],
+	  [ null, "fly.9", "fly.10", "fly.11", "fly.12", "fly.13", "fly.14", "fly.15", "fly.16" ],
+	//HURT
+      [ null, "hurt.1", "hurt.2", "hurt.3", "hurt.4", null, null, null, null ],
+	//IDLE + WAKEUP
+	  [ null, "idle.1", "wakeup.1", "wakeup.2", "wakeup.3", "wakeup.4", "wakeup.5", "wakeup.6", "wakeup.7" ],
+	//DUAL CANNON
+	  [ null, "cannonwindup.1", "cannonwindup.2", "cannonwindup.3", "cannonwindup.4", "cannonwindup.5", "cannonwindup.6", "cannonwindup.7", "cannonwindup.8" ],
+	  [ null, "cannonwinddown.1", "cannonwinddown.2", "cannonwinddown.3", "cannonwinddown.4", "cannonwinddown.5", "cannonwinddown.6", "cannonwinddown.7", "cannonwinddown.8" ],
+	//LASER
+	  [ null, "laserwindup.1", "laserwindup.2", "laserwindup.3", "laserwindup.4", "laserwindup.5", "laserwindup.6", "laserwindup.7", "laserwindup.8" ],
+	  [ null, "laserfire.1", "laserfire.2", "laserfire.3", "laserfire.4", "laserfire.5", "laserfire.6", "laserfire.7", "laserfire.8" ],
+	  [ null, "laserwinddown.1", "laserwinddown.2", "laserwinddown.3", "laserwinddown.4", "laserwinddown.5", "laserwinddown.6", "laserwinddown.7", "laserwinddown.8" ],
+	//BURST
+	  [ null, "burstwindup.1", "burstwindup.2", "burstwindup.3", "burstwindup.4", "burstwindup.5", "burstwindup.6", "burstwindup.7", "burstwindup.8" ],
+	  [ null, "burstfire.1", "burstfire.2", "burstfire.3", "burstfire.4", "burstfire.5", "burstfire.6", "burstfire.7", "burstfire.8" ],
+	  [ null, "burstfire.9", "burstfire.10", "burstfire.11", "burstfire.12", "burstfire.13", "burstfire.14", "burstfire.15", "burstfire.16" ],
+	  [ null, "burstwinddown.1", "burstwinddown.2", "burstwinddown.3", "burstwinddown.4", "burstwinddown.5", "burstwinddown.6", "burstwinddown.7", "burstwinddown.8" ]
+    ]
+  },
+  "aliases" : {
+    //DUAL CANNON
+	"cannonfire.1" : "cannonwindup.8",
+    "cannonfire.2" : "cannonwindup.8",
+    "cannonfire.3" : "cannonwindup.8"
+  }
+}

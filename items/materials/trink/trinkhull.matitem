@@ -6,10 +6,7 @@
   "inventoryIcon" : "trinkhull.png",
   "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
   "shortdescription" : "Trinkian Hull",
-  
-  "description" : "A strong metal hull for ships and buildings alike..",
-  "glitchDescription" : "Observation. Thick and heavy hull plating. Very reliable protection.",
-  "floranDescription" : "Thick hull for making placess sssafe...",
+  "description" : "A strong metal hull for ships and buildings alike.",
 
   "materialId" : 30064
 }

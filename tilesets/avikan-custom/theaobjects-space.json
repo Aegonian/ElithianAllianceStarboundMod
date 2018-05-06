@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":19,
+ "tilecount":23,
  "tileheight":96,
  "tileproperties":
     {
@@ -97,6 +97,14 @@
          "object":"mechbeacon",
          "tilesetDirection":"right"
         },
+     "19":
+        {
+         "\/\/shortdescription":"AAE Cargo Container (Clamped)",
+         "imagePositionX":"-112",
+         "imagePositionY":"-56",
+         "object":"alliancespacecontainerclamped",
+         "tilesetDirection":"right"
+        },
      "2":
         {
          "\/\/shortdescription":"Alliance Ship Thruster",
@@ -104,6 +112,30 @@
          "imagePositionY":"-24",
          "object":"allianceshipthruster",
          "tilesetDirection":"right"
+        },
+     "20":
+        {
+         "\/\/shortdescription":"AAE Cargo Container (Clamped)",
+         "imagePositionX":"-112",
+         "imagePositionY":"-56",
+         "object":"alliancespacecontainerclamped",
+         "tilesetDirection":"left"
+        },
+     "21":
+        {
+         "\/\/shortdescription":"AAE Cargo Container (Clamped)",
+         "imagePositionX":"-112",
+         "imagePositionY":"0",
+         "object":"alliancespacecontainerclamped",
+         "tilesetDirection":"right"
+        },
+     "22":
+        {
+         "\/\/shortdescription":"AAE Cargo Container (Clamped)",
+         "imagePositionX":"-112",
+         "imagePositionY":"0",
+         "object":"alliancespacecontainerclamped",
+         "tilesetDirection":"left"
         },
      "3":
         {
@@ -208,9 +240,25 @@
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/space\/mechbeacon.png"
         },
+     "19":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/space\/alliancespacecontainerclamped.png"
+        },
      "2":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/space\/allianceshipthruster.png"
+        },
+     "20":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/space\/alliancespacecontainerclampedleft.png"
+        },
+     "21":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/space\/alliancespacecontainerclampedtop.png"
+        },
+     "22":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/space\/alliancespacecontainerclampedtopleft.png"
         },
      "3":
         {
@@ -241,5 +289,5 @@
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/space\/thea-diagonaldockingfield-left.png"
         }
     },
- "tilewidth":104
+ "tilewidth":240
 }

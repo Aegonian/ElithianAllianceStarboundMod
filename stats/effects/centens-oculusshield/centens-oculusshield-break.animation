@@ -1,0 +1,53 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "shield" : {
+        "default" : "break",
+        "states" : {
+          "break" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "transition",
+			"transition" : "none"
+          },
+          "none" : {}
+        }
+      }
+    },
+    "parts" : {
+      "shield" : {
+        "properties" : {
+          "zLevel" : 0,
+		  "fullbright" : true,
+          "transformationGroups" : ["shield"]
+        },
+        "partStates" : {
+          "shield" : {
+            "break" : {
+              "properties" : {
+                "image" : "centens-oculusshield.png:break.<frame>"
+              }
+            },
+            "none" : {
+              "properties" : {
+                "image" : ""
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "shield" : {}
+  },
+  
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [72, 108, 128]
+    }
+  }
+}

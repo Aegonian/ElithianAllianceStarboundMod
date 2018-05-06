@@ -1,0 +1,68 @@
+{
+  "objectName" : "akkimarigenerator",
+  "colonyTags" : ["wired","akkimari"],
+  "rarity" : "Common",
+  "description" : "A heavy generator that can power other objects.",
+  "shortdescription" : "Akkimari Generator",
+  "race" : "akkimari",
+  "printable" : false,
+  "category" : "wire",
+  "price" : 120,
+
+  "apexDescription" : "A generator of some kind. The design is unfamiliar to me.",
+  "avianDescription" : "A generator. It looks odd.",
+  "floranDescription" : "Floran not recognize thisss generator.",
+  "glitchDescription" : "Judgmental. This generator is very polluting.",
+  "humanDescription" : "Some sort of weird alien generator. It's very hot to the touch.",
+  "hylotlDescription" : "Not a very elegant generator.",
+  "novakidDescription" : "Just some kinda generator.",
+
+  "aegiDescription" : "A generator, likely built by the Akkimari.",
+  "avikanDescription" : "Is this a generator? It looks strange.",
+  "erixianDescription" : "I wonder what sort of fuel this generator uses.",
+  "trinkDescription" : "A very inefficient generator.",
+  "hymidDescription" : "A very polluting generator.",
+  "notixDescription" : "This generator rumbles loudly, almost unpleasantly.",
+  "jorgasianDescription" : "A big, heavy generator. Powerful, but not exactly eco-friendly.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien generator. Fuel source unknown.",
+  "akkimariDescription" : "Generator makes power. Power makes light. Light makes life.",
+
+  "inventoryIcon" : "akkimarigeneratoricon.png",
+  "orientations" : [
+    {
+      "dualImage" : "akkimarigenerator.png:<color>.off",
+      "imagePosition" : [-16, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+  "scripts" : [
+    "/objects/scripts/thea-generatorswitch.lua"
+  ],
+  "scriptDelta" : 5,
+
+  "animation" : "akkimarigenerator.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/floodlights_on.ogg" ],
+      "off" : [ "/sfx/objects/floodlights_off.ogg" ]
+    }
+  },
+
+  "animationParts" : {
+    "bg" : "akkimarigenerator.png",
+    "fg" : "akkimarigeneratorlit.png"
+  },
+  "animationPosition" : [-16, 0],
+  
+  "interactive" : true,
+  "defaultSwitchState" : true,
+  "soundEffect" : "/sfx/tech/hoverbike_idle_loop.ogg",
+  
+  "outputNodes" : [ [1, 1] ]
+}

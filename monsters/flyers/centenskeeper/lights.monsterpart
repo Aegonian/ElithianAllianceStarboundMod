@@ -1,0 +1,9 @@
+{
+  "name" : "centenskeeperlights",
+  "category" : "centenskeeper",
+  "type" : "lights",
+
+  "frames" : {
+    "lights" : "centenskeeperlights.png"
+  }
+}

@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":231,
+ "tilecount":233,
  "tileheight":256,
  "tileproperties":
     {
@@ -1192,6 +1192,22 @@
          "imagePositionY":"0",
          "object":"avikanmechcraftingtable",
          "tilesetDirection":"right"
+        },
+     "231":
+        {
+         "\/\/shortdescription":"Long Avikan Hatch",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"avikanhatchlong",
+         "tilesetDirection":"right"
+        },
+     "232":
+        {
+         "\/\/shortdescription":"Avikan Generator",
+         "imagePositionX":"0",
+         "imagePositionY":"-16",
+         "object":"avikangenerator",
+         "tilesetDirection":"left"
         },
      "24":
         {
@@ -2451,6 +2467,14 @@
      "230":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/avikan\/avikanmechcraftingtable.png"
+        },
+     "231":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/avikan\/avikanhatchlong.png"
+        },
+     "232":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/avikan\/avikangeneratorside.png"
         },
      "24":
         {

@@ -1,4 +1,6 @@
 function init()
+  setDirection(storage.doorDirection or object.direction())
+  
   if storage.state == nil then storage.state = config.getParameter("defaultLightState", true) end
 
   self.interactive = config.getParameter("interactive", true)
@@ -53,5 +55,12 @@ function setLightState(newState)
       animator.playSound("off");
     end
     object.setLightColor(config.getParameter("lightColorOff", {0, 0, 0}))
+  end
+end
+
+function setDirection(direction)
+  storage.doorDirection = direction
+  if direction < 0 then
+	object.setConfigParameter("inputNodes", config.getParameter("sideInputNodes"))
   end
 end

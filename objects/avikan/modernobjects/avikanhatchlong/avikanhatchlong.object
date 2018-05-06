@@ -1,0 +1,55 @@
+{
+  "objectName" : "avikanhatchlong",
+  "colonyTags" : ["avikan", "door"],
+  "rarity" : "Common",
+  "category" : "door",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A metal hatch, for closing off vertical compartments.",
+  "shortdescription" : "Long Avikan Hatch",
+  "race" : "avikan",
+  
+  "health" : 4,
+
+  "floranDescription" : "Metal hatchesss.",
+  "glitchDescription" : "Observative. This is a metal hatch.",
+  "novakidDescription" : "A metal hatch, like a modern trapdoor.",
+  
+  "drodenDescription" : "Detected Nomada-built hatch.",
+
+  "inventoryIcon" : "avikanhatchlongicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanhatchlong.png:default",
+      "imagePosition" : [0, 0],
+      "renderLayer" : "Object+5",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "left", "right" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/door/door.lua" ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/door/door.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_open.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_close.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "avikanhatchlong.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "inputNodes" : [ [6, 0] ],
+  "outputNodes" : [ [0, 0] ]
+}

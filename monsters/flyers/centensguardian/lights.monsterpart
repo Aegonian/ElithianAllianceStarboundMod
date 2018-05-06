@@ -1,0 +1,9 @@
+{
+  "name" : "centensguardian-lights",
+  "category" : "centensguardian",
+  "type" : "lights",
+
+  "frames" : {
+    "lights" : "centensguardian-lights.png"
+  }
+}

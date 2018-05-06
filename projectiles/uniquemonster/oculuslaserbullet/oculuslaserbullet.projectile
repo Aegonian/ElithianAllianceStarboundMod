@@ -1,0 +1,46 @@
+{
+  "projectileName" : "oculuslaserbullet",
+  "image" : "oculuslaserbullet.png",
+  "physics" : "lineriflebullet",
+  "bounces" : 0,
+  "piercing" : true,
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "renderLayer" : "Monster+1",
+  //"emitters" : [ "linerifletrail", "linerifletrail2" ],
+  "lightColor" : [30, 60, 75],
+  "fullbright" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/uniquemonster/oculuslaserbullet/oculuslaserimpact.config"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "animated",
+        "animation" : "/projectiles/uniquemonster/oculuslaserbullet/trail.animation",
+        "position" : [1.375, 0],
+		"light" : [30, 60, 75],
+        "layer" : "middle",
+		"collidesForeground" : false,
+        "timeToLive" : 0.5,
+        "destructionTime" : 0.1,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  "statusEffects" : [],
+  "damagePoly" : [ [-8, 4], [32, 4], [32, -4], [-8, -4] ],
+  "power" : 5.0,
+  "speed" : 130,
+  "damageKind" : "xanafian",
+  
+  "scripts" : [ "/projectiles/scripts/thea-linerifle.lua" ]
+}

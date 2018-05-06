@@ -1,0 +1,26 @@
+{
+  "id" : "aegihistory1",
+  "species" : "aegi",
+  "title" : "Aeginian History - Part 1",
+  "description" : "The summarized recorded history of the Aeginian people.",
+  "icon" : "aegicover1.png",
+  "contentPages" : [
+
+"^orange;Chapter 0 - Introduction^reset;
+
+This is the summarized recorded history of how the Aeginian people fled from their home planet of Terra and found Elithia, creating the Aeginian Federal Union and shaping the basis on which the Elithian Alliance would later be built. This summary was written by Aena of Hythe, literary professor at the University of Creon.",
+
+"^orange;Chapter 1 - Terra^reset;
+
+In 247 BA (Before Arrival), Human scientists discovered a large asteroid that was on a collision course with Terra. The estimated date of impact was only months away, giving mankind only a small window of time to prepare. Two projects were almost immediately started: Operation Guardian and Operation Exodus.
+
+Operation Guardian was an attempt to deflect the asteroid and bring it off course.",
+
+"A space shuttle was built to be sent to the asteroid, where it would install large numbers of ion thrusters intended to change the asteroid's trajectory and steer it away from Earth. The operation failed, however, when the shuttle carrying the thrusters suffered a malfunction during the launch sequence which caused it to explode shortly after take-off. The operation was scrapped, leaving Operation Exodus as mankind's last resort."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

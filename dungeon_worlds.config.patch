@@ -23,9 +23,47 @@
   },
   {
     "op" : "add",
+    "path" : "/avikanwarship",
+    "value" : {
+	  "primaryDungeon" : "avikanwarship",
+	  "threatLevel" : 6,
+	  "gravity" : 0,
+	  "airless" : true,
+	  "worldSize" : [1300, 200],
+	  "dungeonBaseHeight" : 150,
+	  "dungeonSurfaceHeight" : 150,
+	  "ambientLightLevel" : [32, 32, 32],
+	  "ambientNoises" : "/sfx/environmental/space_loop4.ogg",
+	  "musicTrack" : "/music/tranquility-base.ogg",
+	  "environmentStatusEffects" : ["biomeairless", "dontstarve"],
+	  "worldEdgeForceRegions" : "TopAndBottom",
+	  "biome" : "space"
+    }
+  },
+  {
+    "op" : "add",
     "path" : "/trinkmerchantship",
     "value" : {
 	  "primaryDungeon" : "trinkmerchantship",
+	  "threatLevel" : 3,
+	  "gravity" : 0,
+	  "airless" : true,
+	  "worldSize" : [1300, 200],
+	  "dungeonBaseHeight" : 150,
+	  "dungeonSurfaceHeight" : 150,
+	  "ambientLightLevel" : [32, 32, 32],
+	  "ambientNoises" : "/sfx/environmental/space_loop4.ogg",
+	  "musicTrack" : "/music/tranquility-base.ogg",
+	  "environmentStatusEffects" : ["biomeairless", "dontstarve"],
+	  "worldEdgeForceRegions" : "TopAndBottom",
+	  "biome" : "space"
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/alliancemerchantship",
+    "value" : {
+	  "primaryDungeon" : "alliancemerchantship",
 	  "threatLevel" : 3,
 	  "gravity" : 0,
 	  "airless" : true,
@@ -76,7 +114,7 @@
 	  "dungeonSurfaceHeight" : 130,
       "ambientLightLevel" : [128, 128, 128],
       "biome" : "elithia",
-      //"ambientNoises" : "/sfx/environmental/space_loop2.ogg",
+      //"ambientNoises" : "/sfx/environmental/garden_day.ogg",
       "musicTrack" : "/music/planetarium.ogg"
     }
   },
@@ -113,6 +151,22 @@
       "ambientLightLevel" : [32, 32, 32],
       "biome" : "desert",
       "ambientNoises" : "/sfx/environmental/desert_day.ogg",
+      "musicTrack" : "/music/ocean-battle1-loop.ogg",
+	  "environmentStatusEffects" : ["dontstarve"]
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/akkimaridronebattle",
+    "value" : {
+      "primaryDungeon" : "akkimaridronebattle",
+      "threatLevel" : 6,
+      "gravity" : 80,
+      "worldSize" : [2000, 1000],
+      "dungeonBaseHeight" : 450,
+      "ambientLightLevel" : [32, 32, 32],
+      "biome" : "garden",
+      "ambientNoises" : "/sfx/environmental/garden_day.ogg",
       "musicTrack" : "/music/ocean-battle1-loop.ogg",
 	  "environmentStatusEffects" : ["dontstarve"]
     }

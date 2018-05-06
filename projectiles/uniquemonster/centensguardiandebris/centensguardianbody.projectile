@@ -1,0 +1,48 @@
+{
+  "projectileName" : "centensguardianbody",
+  "image" : "centensguardianbody.png",
+  "physics" : "thea-hugedebris",
+  "animationCycle" : 2,
+  "frameNumber" : 1,
+  "renderLayer" : "Object+1",
+  "power" : 0,
+  "speed" : 15,
+  "piercing" : true,
+  "initialVelocity" : 15,
+  "timeToLive" : 20,
+  "bounces" : -1,
+  "flippable" : true,
+  "orientationLocked" : false,
+
+  "actionOnCollide" : [
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/blocks/footstep_stone3.ogg" ]
+    }
+  ],
+
+  "actionOnReap" : [
+	{
+      "action" : "loop",
+      "count" : 2,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : "centensguardiandebris1"
+        }
+      ]
+    },
+	{
+      "action" : "loop",
+      "count" : 8,
+      "body" : [
+        {
+          "action" : "particle",
+          "specification" : "centensguardiandebris2"
+        }
+      ]
+    }
+  ],
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

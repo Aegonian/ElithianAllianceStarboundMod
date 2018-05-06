@@ -111,5 +111,33 @@
 		"Welcome, starfarer."
 	  ]
 	}
+  },
+  
+  //AEGI DIALOGUE
+  {
+	"op": "add",
+	"path": "/converse/aegi",
+	"value": {
+	  "default" : [
+		"Hi there! Welcome to our humble ship.",
+		"What brings you all the way to our little ship?",
+		"It's been a while since I saw a new face here. Who are you?",
+		"It gets lonely out in space. It's nice to finally meet someone new here.",
+		"I'm <selfname>, nice meeting you!",
+		"Greetings, my fellow traveler of the stars.",
+		"You're quite welcome here, whoever you are.",
+		"Do you have a large crew on that ship of yours?"
+	  ],
+	  "aegi" : [
+		"It's good to see another Aegi! Are you a new crewmember, or just visiting?",
+		"Are you here on official Union business?",
+		"You must have been to the Union colonies. We've been resupplying them, but I've never visited one myself.",
+		"I've heard of you! You're ambassador <entityname>, right?",
+		"Pleased to meet you! I'm <selfname>.",
+		"Do you ever get lonely out in space? I know I do.",
+		"Do you need to visit the Creon Embassy? We have a teleporter on board that can take you there.",
+		"Are you here for an inspection?"
+	  ]
+	}
   }
 ]

@@ -1,0 +1,29 @@
+{
+  "id" : "oculusward4",
+  "prerequisites" : [ "oculusward3" ],
+  "title" : "^orange;A Shielded Eye IV",
+  "text" : "The power supply is tricky to fix, but if I link it to your suit's energy reserves, I should be able to get the generator running again. ^green;You will have to find ^orange;50 units of Centensian Liquid^reset;: that will help me link up your suit to the shield generator.",
+  "completionText" : "Here you go, Captain! One fully functional Centensian shield, ready to be put to the test. Just be careful not to exhaust your energy reserves, or you'll be left defenseless for some time...",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "centens-oculusshield", 1 ], [ "avikancache", 1 ], [ "avikanmerittoken", 10 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "default" : "questGiver"
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "centensianliquid",
+        "count" : 50,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Find ^orange;Valyakan ^reset;in the ^orange;Creon Embassy^reset;"
+  }
+}

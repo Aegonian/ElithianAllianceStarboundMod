@@ -1,0 +1,22 @@
+{
+  "id" : "allianceuniform-trink",
+  "prerequisites" : [ "trinkcustomtailoring", "alliancestory-passpickup" ],
+  "title" : "^orange;Suiting Up",
+  "text" : "Greetings, ambassador! I have your Alliance body mods ready for you: here you are.",
+  "completionText" : "I received my official Elithian Alliance body mods. Let's install them!",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "trink-alliancechest", 1 ], [ "trink-alliancelegs", 1 ], [ "alliancecache", 1 ] ]
+  ],
+  "canBeAbandoned" : false,
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/thea-autocomplete.lua",
+  "scriptConfig" : {
+	"portraits" : {
+      "questStarted" : "questGiver",
+	  "questComplete" : "player"
+    },
+    "requireTurnIn" : false
+  }
+}

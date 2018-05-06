@@ -14,9 +14,9 @@
   "twoHanded" : false,
   
   //CONFIGURATION FOR WEAPONS COLLECTION
-  "collectablesOnPickup" : { "thea_weapons" : "thea-sidewinder" },
+  "collectablesOnPickup" : { "thea_weapons" : "thea-excelsior" },
   
-  "meritTokenValue" : 50,
+  //"meritTokenValue" : 50,
 
   "animation" : "thea-excelsior.animation",
   "animationParts" : {
@@ -59,7 +59,7 @@
 	"heatPerShot" : 10,				//Heat generated per shot
 	
 	"coolingIdleTime" : 0.25,		//Time before passive cooling kicks in
-	"heatLossRate" : 35,			//Heat lost per second while not overheated
+	"heatLossRate" : 40,			//Heat lost per second while not overheated
 	"heatLossRateOverheated" : 15,	//Heat lost per second while overheated
 	
 	"overheatThreshold" : 70,		//Heat threshold to overheat
@@ -72,7 +72,7 @@
 
     "projectileType" : "allianceenergybullet",
     "projectileParameters" : {
-      "knockback" : 12
+      "knockback" : 10
     },
 	
     "stances" : {

@@ -1,0 +1,36 @@
+{
+  "id" : "oculusward2",
+  "prerequisites" : [ "oculusward" ],
+  "title" : "^orange;A Shielded Eye II",
+  "text" : "The shield generator is still in pristine condition, but all of the connections were fried, and there's no power source for the shield. ^green;Find me ^orange;8 pieces of Centensian Tech^green; and ^orange;16 pieces of Centensian Metal^reset;, and I should be able to build a functional casing for the generator.",
+  "completionText" : "Here you go, Captain. This shield is starting to come together quite well!",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "oculuswardcasing", 1 ], [ "avikanmerittoken", 5 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "default" : "questGiver"
+    },
+	"followUp" : "oculusward3",
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "centensiantech",
+        "count" : 8,
+        "consume" : true
+      },
+      {
+        "type" : "gatherItem",
+        "itemName" : "centensianmetal",
+        "count" : 16,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Find ^orange;Adako ^reset;in the ^orange;Starfarer's Refuge^reset;"
+  }
+}

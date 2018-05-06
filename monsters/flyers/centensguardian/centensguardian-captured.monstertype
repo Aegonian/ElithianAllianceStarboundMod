@@ -1,0 +1,466 @@
+{
+  "type" : "centensguardian-captured",
+  "shortdescription" : "Oculus",
+  "description" : "An automated defence system built by the Ce'Tennan.",
+
+  "categories" : [ "centensguardian" ],
+  "parts" : [ "body", "side", "lights", "gun", "gunlights" ],
+
+  "animation" : "centensguardian.animation",
+
+  "dropPools" : [ { "default" : "centensguardianTreasureGuaranteed", "bow" : "centensguardianHuntingGuaranteed" } ],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+
+    "behavior" : "monster",
+    "deathBehavior" : "monster-death",
+
+    "seeThroughLiquid" : false,
+    "behaviorConfig" : {
+      "damageOnTouch" : true,
+
+      "targetQueryRange" : 30,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : true,
+      "keepTargetInRange" : 50,
+      "targetOutOfSightTime" : 5.0,
+
+      "foundTargetActions" : [
+        {
+          "name" : "action-animate",
+          "parameters" : {
+            "stateType" : "body",
+            "state" : "wakeup",
+            "animationTimer" : 0.7
+          }
+        }
+      ],
+
+      "fleeActions" : [ ],
+
+      "hostileActions" : [
+		//DUAL CANNON ATTACK
+		{
+          "name" : "action-fire",
+          "cooldown" : 12.0,
+          "parameters" : {
+            //General Config
+			"requireLineOfSight" : true,
+            "faceTarget" : true,
+            "maximumRange" : 25,
+            "minimumRange" : 5,
+            "onGround" : false,	//Allows the ability to be used while airborne
+			"damageRepeatGroup" : "", //Removes the damage cooldown time, allowing every projectile that connects to damage the target
+			
+			//Windup
+            "windupTime" : 0.8,
+			"windupStateType" : "body",
+            "windupState" : "cannonwindup",
+
+			//Projectile
+            "projectileType" : "oculuscannonbullet",
+            "projectileCount" : 24,
+			"projectileInterval": 0.1,
+            "projectileParameters" : {
+              "power" : 1
+            },
+            "fireDelay" : 0.0,
+			
+			//Aiming
+            "rotateAim" : true,
+			"holdAim": false,	//If true, will keep the aimDirection of the first shot when firing multiple shots
+            "fireSound" : "cannonfire",
+			"fireStateType": "body",
+            "fireState" : "cannonfire",
+			"fireParticleBurst": "",
+			"fireOffsets" : [ [1.75, 0.25], [1.75, -0.25] ],
+			"inaccuracy" : 0.0,
+            "rotationCenter" : [-1.0, 0.0],
+			"fireArc": false,
+			"highArc": false,
+
+			//Winddown
+            "winddownState" : "cannonwinddown",
+			"winddownStateType" : "body",
+            "winddownTime" : 0.8,
+			"winddownStopForce": 0.0
+          }
+        },
+		//LASER ATTACK
+		{
+          "name" : "action-fire",
+          "cooldown" : 4.5,
+          "parameters" : {
+            //General Config
+			"requireLineOfSight" : true,
+            "faceTarget" : false,
+            "maximumRange" : 50,
+            "minimumRange" : 5,
+            "onGround" : false,	//Allows the ability to be used while airborne
+			"damageRepeatGroup" : "centensguardian",
+			
+			//Windup
+            "windupTime" : 0.8,
+			"windupStateType" : "body",
+            "windupState" : "laserwindup",
+
+			//Projectile
+            "projectileType" : "oculuslaserbullet",
+            "projectileCount" : 8,
+			"projectileInterval": 0.1,
+            "projectileParameters" : {
+              "power" : 20
+            },
+            "fireDelay" : 0.0,
+			
+			//Aiming
+			"aimAtTarget": true,
+            "rotateAim" : false,
+			"holdAim": true,	//If true, will keep the aimDirection of the first shot when firing multiple shots
+            "fireSound" : "",
+			"fireStateType": "body",
+            "fireState" : "laserfire",
+			"fireParticleBurst": "",
+			"aimDirection": [1, 0],
+			"fireOffset" : [1.75, 0.125],
+			"inaccuracy" : 0.0,
+            "rotationCenter" : [0.0, 0.0],
+			"fireArc": false,
+			"highArc": false,
+
+			//Winddown
+            "winddownState" : "laserwinddown",
+			"winddownStateType" : "body",
+            "winddownTime" : 0.8,
+			"winddownStopForce": 0.0
+          }
+        },
+		//BURST ATTACK
+		{
+          "name" : "action-fire",
+          "cooldown" : 9.5,
+          "parameters" : {
+            //General Config
+			"requireLineOfSight" : false,
+            "faceTarget" : true,
+            "maximumRange" : 30,
+            "minimumRange" : 1,
+            "onGround" : false,	//Allows the ability to be used while airborne
+			"damageRepeatGroup" : "", //Removes the damage cooldown time, allowing every projectile that connects to damage the target
+			
+			//Windup
+            "windupTime" : 0.8,
+			"windupStateType" : "body",
+            "windupState" : "burstwindup",
+
+			//Projectile
+            "projectileType" : "oculusburstbullet",
+            "projectileCount" : 10,
+			"projectileInterval": 0.1,
+            "projectileParameters" : {
+              "power" : 1
+            },
+            "fireDelay" : 0.0,
+			
+			//Aiming
+			"aimAtTarget": true,
+            "rotateAim" : false,
+			"holdAim": true,	//If true, will keep the aimDirection of the first shot when firing multiple shots
+            "fireSound" : "cannonfire",
+			"fireStateType": "body",
+            "fireState" : "burstfire",
+			"fireParticleBurst": "",
+			"aimDirection": [1, 0],
+			"fireOffsets" : [ [1.75, 0.125], [1.75, 0.125], [1.75, 0.125] ],
+			"inaccuracy" : 3.0,
+            "rotationCenter" : [0.0, 0.0],
+			"fireArc": false,
+			"highArc": false,
+
+			//Winddown
+            "winddownState" : "burstwinddown",
+			"winddownStateType" : "body",
+            "winddownTime" : 0.8,
+			"winddownStopForce": 0.0
+          }
+        }
+	  ],
+
+      "periodicActions" : [
+	  ],
+
+      "approachActions" : [
+        {
+          "name" : "approach-fly",
+          "parameters" : {
+            "minRange" : 8,
+            "maxRange" : 12,
+            "groundDistance" : 5
+          }
+        }
+      ],
+
+      "followActions" : [
+        {
+          "name" : "approach-teleport",
+          "parameters" : {
+          }
+        },
+        {
+          "name" : "approach-fly",
+          "parameters" : {
+            "minRange" : 8,
+            "maxRange" : 12,
+            "groundDistance" : 5
+          }
+        }
+      ],
+
+      "wanderActions" : [
+        {
+          "name" : "land-fly",
+          "cooldown" : 0,
+          "parameters" : {
+			"landCheckDistance": 30,
+            "landDirection" : [0, -1],
+            "flySpeed" : 8,
+            "flyControlForce" : 5,
+            "idleTime" : [5,10]
+          }
+        }
+      ],
+
+      "deathActions" : [
+        {
+          "name" : "action-projectile",
+          "parameters" : {
+            "projectileCount" : 1,
+            "projectileType" : "avikanlargedroneexplosion",
+            "projectileParameters" : {
+              "damageTeam" : { "type" : "enemy", "team" : 0 },
+			  "power" : 10.0
+            },
+            "aimDirection" : [0, 0],
+            "inaccuracy" : 0,
+            "fireOffset" : [0, 0]
+          }
+        },
+		{
+          "name" : "action-projectile",
+          "parameters" : {
+            "projectileCount" : 1,
+            "projectileType" : "centensguardianbody",
+            "projectileParameters" : {
+              "damageTeam" : { "type" : "enemy", "team" : 0 },
+			  "speed" : 10,
+			  "power" : 0.0
+            },
+            "aimDirection" : [0.2, 0.5],
+            "inaccuracy" : 0.1,
+            "fireOffset" : [0, 0]
+          }
+        },
+		{
+          "name" : "action-projectile",
+          "parameters" : {
+            "projectileCount" : 1,
+            "projectileType" : "centensguardianplate",
+            "projectileParameters" : {
+              "damageTeam" : { "type" : "enemy", "team" : 0 },
+			  "speed" : 10,
+			  "power" : 0.0
+            },
+            "aimDirection" : [0.2, 0.5],
+            "inaccuracy" : 0.2,
+            "fireOffset" : [0, 0]
+          }
+        }
+      ],
+
+      "concurrentActions" : [],
+
+      "concurrentHostileActions" : [
+        {
+          "name" : "thea-initialstatuseffect",
+          "parameters" : {
+            "duration" : 5,
+            "statusEffect" : "thea-monstershield"
+          }
+        }
+      ]
+    },
+
+    "touchDamage" : {
+      "poly" : [ [0, 2.75], [2.0, 2.0], [2.75, 0], [2.0, -2.0], [0, -2.75], [-2.0, -2.0], [-2.75, 0], [-2.0, 2.0] ],
+      "damage" : 5,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "lash",
+      "knockback" : 20,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-6.5, -6.5, 6.5, 6.5],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [0, 2.75], [2.0, 2.0], [2.75, 0], [2.0, -2.0], [0, -2.75], [-2.0, -2.0], [-2.75, 0], [-2.0, 2.0] ],
+
+      "mass" : 1.0,
+      "walkSpeed" : 4,
+      "runSpeed" : 12,
+      "gravityEnabled" : false,
+
+      "airFriction" : 2.5,
+      "airForce" : 15,
+      "flySpeed" : 12
+    },
+
+    "bodyMaterialKind" : "robotic",
+
+    "knockoutTime" : 0.4,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "robotic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.4
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 12
+        },
+        "grit" : {
+          "baseValue" : 1.0
+        },
+        "maxHealth" : {
+          "baseValue" : 250
+        },
+        "protection" : {
+          "baseValue" : 0.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+        "physicalResistance" : {
+          "baseValue" : 0.0
+        },
+        "fireResistance" : {
+          "baseValue" : 0.0
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "iceResistance" : {
+          "baseValue" : 0.0
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "electricResistance" : {
+          "baseValue" : 0.0
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "poisonResistance" : {
+          "baseValue" : 0.5
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "linerifleResistance" : {
+          "baseValue" : 0.0
+        },
+        "linerifleStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "centensianenergyResistance" : {
+          "baseValue" : 0.0
+        },
+        "centensianenergyStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "xanafianStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "akkimariacidResistance" : {
+          "baseValue" : 0.0
+        },
+        "akkimariacidStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "bleedingImmunity" : {
+          "baseValue" : 1.0
+        },
+		//SHIELD STATUS EFFECT CONFIG
+		//The monster shield status effect reads these stats to determine shield health etc.
+        "maxShieldAbsolute" : {
+          "baseValue" : 1000 //Absolute maximum value for shield health, regardless of monster level
+        },
+        "maxShield" : {
+          "baseValue" : 50 //This stat gets multiplied in the monster shield effect. The monster table isn't available in status effects, so the script uses world level instead of monster level...
+        },
+        "shieldStartPercentage" : {
+          "baseValue" : 1.0 //How much of the shield is regenerated initially when the shield is activated
+        },
+        "shieldRegenPercentage" : {
+          "baseValue" : 0.10 //How much of the shield health gets regenerated per second while regen is active
+        },
+        "shieldRechargeTimeAfterHit" : {
+          "baseValue" : 6.0 //How many seconds it takes for the shield to start regenerating after taking a hit
+        },
+        "shieldCooldownTimeAfterBreak" : {
+          "baseValue" : 4.0 //How many seconds it takes before shield recharge starts after it breaks (total time for shield to come back is this + shieldRechargeTimeAfterHit)
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        },
+		//SHIELD STATUS EFFECT CONFIG
+		//Monsters must have a shieldHealth resource set here in order for shield effects to function properly
+        "shieldHealth" : {
+          "maxStat" : "maxShieldAbsolute",
+          "defaultPercentage" : 0
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -8],
+    "capturable" : true,
+    "captureHealthFraction" : 0.5,
+    "nametagColor" : [64, 200, 255],
+    "captureCollectables" : { "monsters" : "centensguardian-captured" }
+  }
+}

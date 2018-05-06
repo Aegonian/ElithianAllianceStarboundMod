@@ -1,0 +1,9 @@
+{
+  "name" : "centensguardian-gunlights",
+  "category" : "centensguardian",
+  "type" : "gunlights",
+
+  "frames" : {
+    "gunlights" : "centensguardian-gunlights.png"
+  }
+}

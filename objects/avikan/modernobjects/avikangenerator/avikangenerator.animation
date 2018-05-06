@@ -33,7 +33,6 @@
         "properties" : {
           "centered" : false
         },
-
         "partStates" : {
           "light" : {
             "on" : {
@@ -68,7 +67,6 @@
           "centered" : false,
           "zLevel" : 1
         },
-
         "partStates" : {
           "light" : {
             "on" : {

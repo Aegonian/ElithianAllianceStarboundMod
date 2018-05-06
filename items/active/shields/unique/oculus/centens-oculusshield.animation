@@ -1,0 +1,115 @@
+{
+  "globalTagDefaults" : {
+    "hand" : "near",
+    "directives" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "shield" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {},
+          "cooldown" : {},
+          "raised" : {},
+          "block" : {
+            "frames" : 1,
+            "cycle" : 0.12,
+            "mode" : "transition",
+            "transition" : "raised"
+          }
+        }
+      }
+    },
+    "parts" : {
+      "shield" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "transformationGroups" : ["shield"],
+          "rotationCenter" : [0, 0]
+        },
+        "partStates" : {
+          "shield" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:<hand>idle"
+              }
+            },
+            "cooldown" : {
+              "properties" : {
+                "image" : "<partImage>:<hand>idle"
+              }
+            },
+            "raised" : {
+              "properties" : {
+                "image" : "<partImage>:<hand>raised"
+              }
+            },
+            "block" : {
+              "properties" : {
+                "image" : "<partImage>:<hand>raised",
+                "offset" : [-0.25, 0]
+              }
+            }
+          }
+        }
+      },
+      "lights" : {
+        "properties" : {
+          "zLevel" : 2,
+          "centered" : true,
+          "fullbright" : true,
+          "transformationGroups" : ["shield"],
+          "rotationCenter" : [0, 0]
+        },
+        "partStates" : {
+          "shield" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:<hand>idle"
+              }
+            },
+            "cooldown" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "raised" : {
+              "properties" : {
+                "image" : "<partImage>:<hand>raised"
+              }
+            },
+            "block" : {
+              "properties" : {
+                "image" : "<partImage>:<hand>raised",
+                "offset" : [-0.25, 0]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "shield" : {}
+  },
+  
+  "particleEmitters" : {
+	"break" : {
+      "burstCount"  : 12,
+	  "offsetRegion" : [-3.5, -3.5, 1.5, 1.5],
+      "particles" : [
+        { "particle" : "bubbleshieldfragment" }
+	  ]
+    }
+  },
+
+  "sounds" : {
+    "raiseShield" : [ ],
+    "lowerShield" : [ ],
+    "block" : [ ],
+    "break" : [ ]
+  }
+}

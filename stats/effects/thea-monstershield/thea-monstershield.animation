@@ -1,0 +1,93 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "shield" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "recharge" : {
+            "frames" : 6,
+            "cycle" : 0.6,
+            "mode" : "loop"
+          },
+          "activate" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+			"transition" : "on"
+          },
+          "on" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "loop"
+          },
+          "break" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "transition",
+			"transition" : "off"
+          }
+        }
+      }
+    },
+    "parts" : {
+      "shield" : {
+        "properties" : {
+          "zLevel" : 0,
+		  "fullbright" : true
+        },
+        "partStates" : {
+          "shield" : {
+            "off" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "recharge" : {
+              "properties" : {
+                "image" : "thea-monstershield.png:recharge.<frame>"
+              }
+            },
+            "activate" : {
+              "properties" : {
+                "image" : "thea-monstershield.png:activate.<frame>"
+              }
+            },
+            "on" : {
+              "properties" : {
+                "image" : "thea-monstershield.png:on.<frame>?<shieldDirectives>"
+              }
+            },
+            "break" : {
+              "properties" : {
+                "image" : "thea-monstershield.png:break.<frame>?<shieldDirectives>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  
+  "particleEmitters" : {
+	"break" : {
+      "burstCount"  : 24,
+	  "offsetRegion" : [-3.5, -3.5, 3.5, 3.5],
+      "particles" : [
+        { "particle" : "monstershieldfragment" }
+	  ]
+    }
+  },
+  
+  "lights" : {
+    "glow" : {
+      "active" : false,
+      "position" : [0, 0],
+      "color" : [72, 108, 128]
+    }
+  },
+
+  "sounds" : {
+    "break" : [ "/sfx/statuseffects/thea_bubbleshield_break.ogg" ]
+  }
+}

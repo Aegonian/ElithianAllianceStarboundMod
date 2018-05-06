@@ -48,7 +48,7 @@
     }
   ],
 
-  "offeredQuests" : [ "gaterepair" ],
+  "offeredQuests" : [ "gaterepair", "alliancestory-passpickup" ],
 
   "animation" : "/objects/ship/techstation.animation",
   "scripts" : [

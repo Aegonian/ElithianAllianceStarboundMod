@@ -16,5 +16,23 @@
 		"name" : "Recruiter Rokhan"
 	  }
 	}
+  },
+  { "op" : "add",
+	"path" : "/akkimaridronebattle",
+	"value" : {
+	  "paneLayout" : "/interface/windowconfig/portraitconfirmation.config:paneLayout",
+	  "icon" : "/interface/warping/icon.png",
+	  "title" : "Teleport Confirmation",
+	  "subtitle" : "Union outpost",
+	  "message" : "\n\nAre you ready to be sent to the attacked ^orange;Union outpost^white;? \n^red;You'll need some powerful equipment in order to survive down there.",
+	  "okCaption" : "Ready",
+	  "cancelCaption" : "Not now",
+	  "images" : {
+		"portrait" : [ {"image" : "/quests/alliancequests/allianceoutpost/embassyrepresentative.png"} ]
+	  },
+	  "labels" : {
+		"name" : "Delegate Mumam"
+	  }
+	}
   }
 ]

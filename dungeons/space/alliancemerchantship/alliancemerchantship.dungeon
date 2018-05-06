@@ -1,0 +1,63 @@
+{
+  "metadata" : {
+    "name" : "alliancemerchantship",
+	"species" : "aegi",
+    "rules" : [
+    ],
+    "anchor" : [ "back1", "back2" ],
+    "gravity" : 80,
+    "breathable" : true,
+    "maxRadius" : 1000000,
+    "maxParts" : 4,
+    "protected" : true
+},
+
+  "parts" : [
+
+    // SAFE ZONE -- Essential starting zone for safe space encounters
+    {
+      "name" : "safe-empty",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "/dungeons/space/hazards/safe-empty.json" ],
+      "chance" : 0,
+      "markDungeonId" : false
+    },
+
+    // SHIP PARTS
+
+    {
+      "name" : "back1",
+      "rules" : [
+        [ "doNotCombineWith", [ "back1" ] ]
+      ],
+      "def" : [ "tmx", "back1.json" ],
+      "chance" : 0.3
+    },
+    {
+      "name" : "back2",
+      "rules" : [
+        [ "doNotCombineWith", [ "back2" ] ]
+      ],
+      "def" : [ "tmx", "back2.json" ],
+      "chance" : 0.3
+    },
+    {
+      "name" : "front1",
+      "rules" : [
+        [ "doNotCombineWith", [ "front1", "front2" ] ]
+      ],
+      "def" : [ "tmx", "front1.json" ],
+      "chance" : 0.3
+    },
+    {
+      "name" : "front2",
+      "rules" : [
+        [ "doNotCombineWith", [ "front1", "front2" ] ]
+      ],
+      "def" : [ "tmx", "front2.json" ],
+      "chance" : 0.3
+    }
+  ]
+}

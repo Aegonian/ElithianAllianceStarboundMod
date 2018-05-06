@@ -1,0 +1,26 @@
+{
+  "id" : "aegihistory4",
+  "species" : "aegi",
+  "title" : "Aeginian History - Part 4",
+  "description" : "The summarized recorded history of the Aeginian people.",
+  "icon" : "aegicover4.png",
+  "contentPages" : [
+
+"The result was massive global starvation and a great shortage of resources. As the surviving nations' food supplies started to run out, they turned to war to fight over what little food remained. In 245 BA, the spaceships lost contact with Home Command on Terra.
+
+Exactly what happened to the surviving nations is unknown, but it is assumed that mankind on Terra drove itself into extinction during the events following the asteroid's impact.",
+
+"^yellow;[NOTE - The recent discovery of the Terrene Protectorate disproves this assumption]^reset;
+
+The fate of the Voyager Company is unknown: contact with these ships was lost sometime in 239 BA. The Endurance Company, however, arrived at its destination system in 1 BA, with 19 of its 21 ships remaining. The ships continued on their way towards PT167089-06, and arrived at the planet in 0 AA (After Arrival).",
+
+"^orange;Chapter 3 - Arrival^reset;
+
+The planet looked surprisingly much like Terra: a blue marble with lush green continents and familiar white clouds. Scans of the planet and its atmosphere revealed an even greater likeness to Terra, with a breathable atmosphere, and an atmospheric pressure and gravity only slightly higher than that of Terra."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

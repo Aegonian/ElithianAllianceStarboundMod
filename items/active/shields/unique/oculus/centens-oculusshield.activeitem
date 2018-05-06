@@ -1,0 +1,67 @@
+{
+  "itemName" : "centens-oculusshield",
+  "level" : 6,
+  "price" : 600,
+  "inventoryIcon" : "centens-oculusshieldicon.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "category" : "shield",
+  "description" : "^orange;A powerful shield projector built using Centensian technology.",
+  "shortdescription" : "^orange;Oculus Ward^reset;",
+  "tooltipKind" : "thea-unique",
+  "twoHanded" : false,
+  "itemTags" : ["shield","centens","theaUnique"],
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "centens-oculusshield" },
+  
+  "meritTokenValue" : 100,
+
+  "animation" : "centens-oculusshield.animation",
+  "animationParts" : {
+    "shield" : "centens-oculusshield.png",
+    "lights" : "centens-oculusshieldlights.png",
+    "forcefield" : "centens-oculusshieldfield.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "raiseShield" : [ "/sfx/melee/oculusshield_charge.ogg" ],
+      "block" : [ "/sfx/gun/xanafian_fire4.ogg" ],
+      "break" : [ "/sfx/statuseffects/thea_bubbleshield_break.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/shields/unique/oculus/centens-oculusshield.lua"],
+
+  //GENERAL
+  "minActiveTime" : 0.4,
+  "forceWalk" : true,
+  
+  //ENERGY AND COOLDOWN
+  "energyUsagePerSecond" : 10,
+  "energyUsagePerHit" : 45,
+  "hitCooldown" : 0.4,			//Cooldown after a hit. Another hit during this period will not incur an energy loss
+  "cooldownTime" : 0.8,
+
+  //SHIELD
+  "shieldPoly" : [ [0, 3.75], [2.75, 2.75], [3.75, 0], [2.75, -2.75], [0, -3.75], [-2.75, -2.75], [-3.75, 0], [-2.75, 2.75] ],
+  "shieldPolyOffset" : [-1.125, 0.375], //Offsets the shield poly by this vec2 to compensate for handPosition and re-center the shield poly
+  "knockback" : 16,
+  
+  "stances" : {
+    "idle" : {
+      "armRotation" : -90,
+      "shieldRotation" : 0,
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "raised" : {
+      "armRotation" : 0,
+      "shieldRotation" : 0,
+      "allowRotate" : false,
+      "allowFlip" : true
+    }
+  },
+
+  "builder" : "/items/buildscripts/thea-buildshield-mf.lua"
+}

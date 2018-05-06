@@ -38,6 +38,41 @@
 	  }
     }
   },
+  //====================================== AVIKAN WAR SHIP ======================================
+  {
+    "op" : "add",
+    "path" : "/avikanwarship",
+    "value" : {
+      "type" : "FloatingDungeon",
+      "dungeonWorld" : "avikanwarship",
+	  "beamUpRule" : "Anywhere",
+	  "disableDeathDrops" : true,
+
+	  "tempWorldDeleteTime" : 600000,
+
+	  "skyParameters" : {
+		"dayLength" : 10000,
+		"surfaceLevel" : 1000,
+		"spaceLevel" : 3000,
+		"seed" : -5288806180628666923,
+
+		"skyType" : "barren",
+		"skyColoring" : {
+		  "mainColor" : [200, 200, 255],
+
+		  "morningColors" : [[200, 200, 255], [200, 200, 255]],
+		  "dayColors" : [[200, 200, 255], [200, 200, 255]],
+		  "eveningColors" : [[200, 200, 255], [200, 200, 255]],
+		  "nightColors" : [[200, 200, 255], [200, 200, 255]],
+
+		  "morningLightColor" : [120, 120, 120],
+		  "dayLightColor" : [120, 120, 120],
+		  "eveningLightColor" : [120, 120, 120],
+		  "nightLightColor" : [120, 120, 120]
+		}
+	  }
+    }
+  },
   
   //====================================== TRINK MERCHANT SHIP ======================================
   {
@@ -46,6 +81,42 @@
     "value" : {
       "type" : "FloatingDungeon",
       "dungeonWorld" : "trinkmerchantship",
+	  "beamUpRule" : "Anywhere",
+	  "disableDeathDrops" : true,
+
+	  "tempWorldDeleteTime" : 600000,
+
+	  "skyParameters" : {
+		"dayLength" : 10000,
+		"surfaceLevel" : 1000,
+		"spaceLevel" : 3000,
+		"seed" : -5288806180628666923,
+
+		"skyType" : "barren",
+		"skyColoring" : {
+		  "mainColor" : [200, 200, 255],
+
+		  "morningColors" : [[200, 200, 255], [200, 200, 255]],
+		  "dayColors" : [[200, 200, 255], [200, 200, 255]],
+		  "eveningColors" : [[200, 200, 255], [200, 200, 255]],
+		  "nightColors" : [[200, 200, 255], [200, 200, 255]],
+
+		  "morningLightColor" : [120, 120, 120],
+		  "dayLightColor" : [120, 120, 120],
+		  "eveningLightColor" : [120, 120, 120],
+		  "nightLightColor" : [120, 120, 120]
+		}
+	  }
+    }
+  },
+  
+  //====================================== ALLIANCE MERCHANT SHIP ======================================
+  {
+    "op" : "add",
+    "path" : "/alliancemerchantship",
+    "value" : {
+      "type" : "FloatingDungeon",
+      "dungeonWorld" : "alliancemerchantship",
 	  "beamUpRule" : "Anywhere",
 	  "disableDeathDrops" : true,
 
@@ -377,7 +448,42 @@
         } ]
       },
       "horizonImages" : [ ]
+      }
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/akkimaridronebattle",
+    "value" : {
+      "type" : "FloatingDungeon",
+      "dungeonWorld" : "akkimaridronebattle",
+      "seed" : 4321,
+      "spawningEnabled" : false,
+	  "beamUpRule" : "AnywhereWithWarning",
+      "disableDeathDrops" : true,
+
+      "skyParameters" : {
+	  "dayLength" : 10000,
+      "surfaceLevel" : 400,
+      "spaceLevel" : 3000,
+      "seed" : -5288806180628666923,
 	  
+	  "skyType" : "atmospheric",
+      "skyColoring" : {
+        "mainColor" : [255, 255, 255],
+
+		"morningColors" : [ [115, 224, 255], [255, 255, 255] ],
+		"dayColors" : [ [115, 224, 255], [255, 255, 255] ],
+		"eveningColors" : [ [115, 224, 255], [255, 255, 255] ],
+		"nightColors" : [ [115, 224, 255], [255, 255, 255] ],
+
+		"morningLightColor" : [200, 200, 200],
+		"dayLightColor" : [200, 200, 200],
+		"eveningLightColor" : [200, 200, 200],
+		"nightLightColor" : [200, 200, 200]
+      },
+	  
+      "horizonImages" : [ ]
       }
     }
   },

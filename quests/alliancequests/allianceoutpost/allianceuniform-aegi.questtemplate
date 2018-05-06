@@ -1,0 +1,22 @@
+{
+  "id" : "allianceuniform-aegi",
+  "prerequisites" : [ "aegicustomtailoring", "alliancestory-passpickup" ],
+  "title" : "^orange;Suiting Up",
+  "text" : "Greetings, ambassador! I have your uniform ready for you: here you are.",
+  "completionText" : "I received my official Elithian Alliance uniform. Let's put it on!",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "aegi-allianceuniformhead", 1 ], [ "aegi-allianceuniformchest", 1 ], [ "aegi-allianceuniformlegs", 1 ], [ "alliancecache", 1 ] ]
+  ],
+  "canBeAbandoned" : false,
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/thea-autocomplete.lua",
+  "scriptConfig" : {
+	"portraits" : {
+      "questStarted" : "questGiver",
+	  "questComplete" : "player"
+    },
+    "requireTurnIn" : false
+  }
+}

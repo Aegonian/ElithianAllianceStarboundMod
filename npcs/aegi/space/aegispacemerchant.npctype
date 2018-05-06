@@ -1,0 +1,44 @@
+{
+  "type" : "aegispacemerchant",
+  "baseType" : "merchant",
+
+  "scriptConfig" : {
+    "questGenerator" : { "pools" : [], "enableParticipation" : false },
+
+    "merchant" : {
+      "waitTime" : 10,
+      "storeRadius" : -1,
+      "categories" : {
+        "override" : [ "aegispace" ]
+      },
+      "buyFactorRange" : [ 0.7, 1.5 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 5,
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "  Spacefaring Merchant",
+          "subtitle" : "  Sells items for Spacefarers!"
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "aegi-allianceuniformchest", "parameters" : { "colorIndex" : [4, 5] } }
+            ],
+            "legs" : [
+              { "name" : "aegi-allianceuniformlegs", "parameters" : { "colorIndex" : [4, 5] } }
+            ],
+            "back" : [
+              { "name" : "aegi-soldierback", "parameters" : { "colorIndex" : [4, 5] } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

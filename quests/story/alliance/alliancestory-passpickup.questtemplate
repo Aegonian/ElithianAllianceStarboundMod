@@ -1,0 +1,75 @@
+{
+  "id" : "alliancestory-passpickup",
+  "mainQuest" : true,
+  "prerequisites" : [ "alliancestorystart", "shiprepair" ],
+  "title" : "Return to the Elithian Alliance",
+  "text" : "I have received a transmission from ^orange;Admiral Lyiin ^reset;while you were out exploring. ^green;I can patch it through to you now, if you have time.^reset;",
+  "completionText" : "Here you are, ambassador. Your very own ^orange;Ambassador's Pass^reset;: it'll allow you to ^green;visit the Command Center at the very top of the Creon Embassy^reset;.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "allianceambassadorpass", 1 ] ]
+  ],
+  "canBeAbandoned" : false,
+  "questGiverIndicator" : "mainquestgiver",
+  "questReceiverIndicator" : "mainquestreceiver",
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/thea-turninquest.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "sail",
+      "questComplete" : "questReceiver"
+    },
+    "requireTurnIn" : true,
+    "radioMessages" : [
+	  {
+		"messageId" : "allianceStory-pickUpPass1",
+		"type" : "quest",
+		"unique" : false,
+		"senderName" : "Admiral Lyiin",
+		"text" : "Ah, it is good to hear from you again, ambassador!",
+		"portraitImage" : "/interface/chatbubbles/lyiin.png:<frame>"
+	  },
+	  {
+		"messageId" : "allianceStory-pickUpPass2",
+		"type" : "quest",
+		"unique" : false,
+		"senderName" : "Admiral Lyiin",
+		"text" : "A new embassy was recently opened near Creon, and I'd like to invite you to join me there.",
+		"portraitImage" : "/interface/chatbubbles/lyiin.png:<frame>"
+	  },
+	  {
+		"messageId" : "allianceStory-pickUpPass3",
+		"type" : "quest",
+		"unique" : false,
+		"senderName" : "Admiral Lyiin",
+		"text" : "Any Alliance vessels you find out in space should be equipped with a teleporter that can bring you to the Creon Embassy.",
+		"portraitImage" : "/interface/chatbubbles/lyiin.png:<frame>"
+	  },
+	  {
+		"messageId" : "allianceStory-pickUpPass4",
+		"type" : "quest",
+		"unique" : false,
+		"senderName" : "Admiral Lyiin",
+		"text" : "Once you're there, report to the secretary desk in the Embassy's lobby. The secretary will give you your ^orange;Ambassador's Pass^reset;, which you'll need to access the Embassy's upper levels.",
+		"portraitImage" : "/interface/chatbubbles/lyiin.png:<frame>"
+	  },
+	  {
+		"messageId" : "allianceStory-pickUpPass5",
+		"type" : "quest",
+		"unique" : false,
+		"senderName" : "Admiral Lyiin",
+		"text" : "Come visit Creon soon, ambassador. I'll be waiting for you.",
+		"portraitImage" : "/interface/chatbubbles/lyiin.png:<frame>"
+	  }
+	],
+	"initialMessageDelay" : 1,
+	"messageInterval" : 5,
+	
+	//Description when starting the quest
+    "description" : "Listen to ^orange;Admiral Lyiin^reset;'s transmission",
+	
+	//Description when quest can be turned in
+	"turnInDescription" : "Check in with ^orange;Dayleid ^reset;in the ^orange;Creon Embassy^reset;"
+  }
+}

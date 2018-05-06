@@ -1,0 +1,24 @@
+{
+  "id" : "aegihistory2",
+  "species" : "aegi",
+  "title" : "Aeginian History - Part 2",
+  "description" : "The summarized recorded history of the Aeginian people.",
+  "icon" : "aegicover2.png",
+  "contentPages" : [
+
+"After the failure of Operation Guardian, Operation Exodus remained as humanity's last hope, and work on the project was greatly accelerated.
+
+Operation Exodus was a multinational project that had all the participating nations' space agencies cooperate in the construction of a large number of spaceships. These spaceships would be sent out to look for a new home for mankind.",
+
+"Unfortunately, the small time frame and the fact that spaceship development was still in early stages meant that the spaceships produced by Operation Exodus functioned less than optimally.
+
+A grand total of 42 ships was eventually built and ready for launch. Each ship would carry a crew of 1000, which included scientists, engineers and people selected for their genetic superiority.",
+
+"During the flight, the scientists would use the on-board laboratories to further their bio-engineering studies and prepare the next generation for life on an alien planet. Most of the genetic differences between Humans and Aegi are a direct result of these bio-engineering projects."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

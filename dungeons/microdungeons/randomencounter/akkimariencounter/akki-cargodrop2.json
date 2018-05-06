@@ -46,7 +46,7 @@
          "name":"objects",
          "objects":[
                 {
-                 "gid":2147484012,
+                 "gid":2147484024,
                  "height":16,
                  "id":822,
                  "name":"",
@@ -62,7 +62,7 @@
                  "y":496
                 }, 
                 {
-                 "gid":365,
+                 "gid":377,
                  "height":88,
                  "id":823,
                  "name":"",
@@ -78,7 +78,7 @@
                  "y":496
                 }, 
                 {
-                 "gid":364,
+                 "gid":376,
                  "height":16,
                  "id":824,
                  "name":"",
@@ -91,6 +91,22 @@
                  "visible":true,
                  "width":24,
                  "x":144,
+                 "y":496
+                }, 
+                {
+                 "gid":383,
+                 "height":24,
+                 "id":842,
+                 "name":"",
+                 "properties":
+                    {
+                     "parameters":"{ \"treasurePools\" : [ \"akkimarivaashbarrel\" ] }"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":248,
                  "y":496
                 }],
          "opacity":1,
@@ -287,7 +303,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":842,
+ "nextobjectid":843,
  "orientation":"orthogonal",
  "properties":
     {
@@ -317,7 +333,7 @@
          "source":"..\/..\/..\/..\/tilesets\/avikan-custom\/theamaterials.json"
         }, 
         {
-         "firstgid":363,
+         "firstgid":375,
          "source":"..\/..\/..\/..\/tilesets\/avikan-custom\/theaobjects-akkimari.json"
         }],
  "tilewidth":8,

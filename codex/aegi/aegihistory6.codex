@@ -1,0 +1,28 @@
+{
+  "id" : "aegihistory6",
+  "species" : "aegi",
+  "title" : "Aeginian History - Part 6",
+  "description" : "The summarized recorded history of the Aeginian people.",
+  "icon" : "aegicover6.png",
+  "contentPages" : [
+
+"The majority argued that a peaceful, diplomatic approach would be best, to try and establish friendship with the alien species, while others argued for a more aggressive approach and defend their settlement at any cost.
+
+As tensions rose between the settlers, the second group eventually broke off from the others in 5 AA and moved elsewhere to start a new settlement, Lonro.",
+
+"Over time, the settlers of Creon City managed to start peaceful interactions with the Dremeton, using variations on sign language for communication. In 30 AA, the settlers of Creon City had started learning the Dremetonian language, and started teaching the tribe the English language in return.
+
+The Dremeton started referring to the settlers as Aegi, their word for \"friend\" or \"ally\". The name stuck, and the settlers eventually started calling themselves Aegi as well.",
+
+"^orange;Chapter 5 - Unification^reset;
+
+In 32 AA, the leaders of Creon City and Lonro met again to discuss the situation. The settlers of Lonro were impressed by the actions of the Creon City settlers, and after a few days of negotiations the Aeginian Federal Union was officially formed. The settlers would be known as Aegi from that point onwards, and the two cities would form a federal nation with semi-independent governments.",
+
+"The Aeginian Federal Union enjoyed a steady development and went on to spread across almost half the planet, and eventually branched out to other planets as well, creating the Union Colonies. In 78 AA, the Dremeton tribes and the Aeginian Union agreed upon a common set of laws - the Elithian Code - which would later form the basis of the Elithian Alliance."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

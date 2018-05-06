@@ -63,6 +63,6 @@
   "sitCoverImage" : "/objects/trink/misc/trinkrepairpod/trinkrepairpodcover.png",
   "sitEmote" : "sleep",
   "sitStatusEffects" : [
-    "bed3"
+    "thea-repairpod"
   ]
 }

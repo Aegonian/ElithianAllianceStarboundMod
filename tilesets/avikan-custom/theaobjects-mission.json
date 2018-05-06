@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":4,
+ "tilecount":5,
  "tileheight":64,
  "tileproperties":
     {
@@ -40,6 +40,14 @@
          "imagePositionY":"0",
          "object":"theahiddenlight",
          "tilesetDirection":"right"
+        },
+     "4":
+        {
+         "\/\/shortdescription":"Embassy Return Teleporter",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"returnallianceoutpostteleporter",
+         "tilesetDirection":"right"
         }
     },
  "tiles":
@@ -59,6 +67,10 @@
      "3":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/mission\/theahiddenlighticon.png"
+        },
+     "4":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/mission\/returnallianceoutpostteleporter.png"
         }
     },
  "tilewidth":216

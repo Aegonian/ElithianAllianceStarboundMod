@@ -37,7 +37,7 @@
 
 	"initialDashSpeed" : 55,
     "chargeSpeedModifier" : 2.0,
-	"maxChargeSpeed" : 25,
+	"maxChargeSpeed" : 45,
     "maxAirTime" : 1.0,
 
     "damageConfig" : {

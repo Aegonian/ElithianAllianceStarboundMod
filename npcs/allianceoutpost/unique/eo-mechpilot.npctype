@@ -15,6 +15,9 @@
   "dropPools" : [ "aegiDeathTreasure" ],
 
   "scriptConfig" : {
+	"offeredQuests" : [ "alliancemechparts", "alliancemechparts2" ],
+	"turnInQuests" : [ "alliancemechparts", "alliancemechparts2" ],
+	
     "dialog" : {
 	  "converse" : {
         "default" : {

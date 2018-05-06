@@ -40,23 +40,40 @@
   "orientations" : [
     {
       "image" : "avikangenerator.png:<color>.<frame>",
+      "direction" : "right",
       "imagePosition" : [-16, 0],
       "frames" : 4,
       "animationCycle" : 0.4,
+	  
+	  "animationParts" : {
+		"bg" : "avikangenerator.png",
+		"fg" : "avikangeneratorlit.png"
+	  },
+	  "animationPosition" : [-16, 0],
 
       "spaceScan" : 0.1,
 	  "anchors" : [ "top", "bottom" ]
+    },
+    {
+      "image" : "avikangeneratorside.png:<color>.<frame>",
+      "direction" : "left",
+      "imagePosition" : [0, -16],
+      "frames" : 4,
+      "animationCycle" : 0.4,
+	  
+	  "animationParts" : {
+		"bg" : "avikangeneratorside.png",
+		"fg" : "avikangeneratorsidelit.png"
+	  },
+	  "animationPosition" : [0, -16],
+
+      "spaceScan" : 0.1,
+	  "anchors" : [ "left", "right" ]
     }
   ],
 
   "soundEffect" : "/sfx/objects/avikangenerator.ogg",
-  
   "animation" : "avikangenerator.animation",
-  "animationParts" : {
-    "bg" : "avikangenerator.png",
-    "fg" : "avikangeneratorlit.png"
-  },
-  "animationPosition" : [-16, 0],
 
   "scripts" : [ "avikangenerator.lua" ],
   "scriptDelta" : 60,
@@ -64,6 +81,6 @@
   "defaultLightState" : true,
   "interactive" : false,
 
-  "inputNodes" : [ [-2, 0] ]
-
+  "inputNodes" : [ [-2, 0] ],
+  "sideInputNodes" : [ [0, 1] ]
 }

@@ -1,0 +1,20 @@
+{
+  "name": "thea-initialstatuseffect",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/status.lua"
+  ],
+  "parameters": {
+    "duration": 1,
+    "statusEffect": "thea-monstershield"
+  },
+  "root": {
+    "title": "addEphemeralEffect",
+    "type": "action",
+    "name": "addEphemeralEffect",
+    "parameters": {
+      "duration": {"value": "<duration>"},
+      "name": {"value": "<statusEffect>"}
+    }
+  }
+}

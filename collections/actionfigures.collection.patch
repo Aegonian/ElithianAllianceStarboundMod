@@ -146,5 +146,23 @@
 		"order" : 83,
 		"item" : "farythaf"
 	  }
+	},
+	{
+	  "op": "add", 
+	  "path": "/collectables/centensguardianaf",
+	  "value": 		
+	  {
+		"order" : 84,
+		"item" : "centensguardianaf"
+	  }
+	},
+	{
+	  "op": "add", 
+	  "path": "/collectables/centenskeeperaf",
+	  "value": 		
+	  {
+		"order" : 85,
+		"item" : "centenskeeperaf"
+	  }
 	}
 ]

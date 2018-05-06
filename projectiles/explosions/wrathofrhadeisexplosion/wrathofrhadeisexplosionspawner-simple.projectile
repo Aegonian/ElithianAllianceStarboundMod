@@ -1,0 +1,14 @@
+{
+  "projectileName" : "wrathofrhadeisexplosionspawner-simple",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "physics" : "thea-noclipprojectile",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/wrathofrhadeisexplosion/wrathofrhadeisexplosion.config"
+    }
+  ],
+  "damageKind" : "xanafian",
+  "damageType" : "NoDamage",
+  "timeToLive" : 0
+}

@@ -127,7 +127,7 @@
 	  "baseImageChecked" : "/interface/codex/tab_aegi_select.png",
 	  "pressedOffset" : [0, 0],
 	  "data" : {
-		"species" : "???"
+		"species" : "aegi"
 	  }
 	}
   },

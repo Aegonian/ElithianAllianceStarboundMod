@@ -1,0 +1,9 @@
+{
+  "name" : "centensguardian",
+  "category" : "centensguardian",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "centensguardian.png"
+  }
+}

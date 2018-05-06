@@ -1,0 +1,11 @@
+{
+  "itemName" : "centensslopedpanel",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "centensslopedpanel.png",
+  "shortdescription" : "Centensian Sloped Panel",
+  "description" : "A sloped panel built with a lightweight but incredibly strong metal.",
+
+  "materialId" : 30160
+}

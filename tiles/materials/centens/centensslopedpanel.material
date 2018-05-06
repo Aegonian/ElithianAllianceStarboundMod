@@ -1,0 +1,28 @@
+{
+  "materialId" : 30160,
+  "materialName" : "centensslopedpanel",
+  "particleColor" : [203, 196, 193, 255],
+  "itemDrop" : "centensslopedpanel",
+  "shortdescription" : "Centensian Sloped Panel",
+
+  "description" : "A sloped panel built with a lightweight but incredibly strong metal.",
+  "glitchDescription" : "Fascinated. This metal panel is stronger and lighter than anything I've encountered before.",
+  "floranDescription" : "Floran is confused. Metal isss light and so sstrong Floran can't scratch it...",
+  "novakidDescription" : "Those are metal wall panels alright.",
+  
+  "drodenDescription" : "Analysis complete. Centensian metal plating detected.",
+  
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "health" : 8,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "centensslopedpanel.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 150
+  }
+}

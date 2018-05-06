@@ -1,0 +1,9 @@
+{
+  "name" : "centenskeeper",
+  "category" : "centenskeeper",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "centenskeeper.png"
+  }
+}

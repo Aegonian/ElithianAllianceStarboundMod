@@ -1,0 +1,11 @@
+{
+  "itemName" : "oculuswardcasing",
+  "price" : 1000,
+  "rarity" : "Essential",
+  "category" : "Quest Item",
+  "tooltipKind" : "thea-unique",
+  "inventoryIcon" : "oculuswardcasing.png",
+  "description" : "A shield built with Centensian components. The power source is still busted...",
+  "shortdescription" : "^orange;Centensian Shield Casing^white;",
+  "itemTags" : [ "questitem" ]
+}

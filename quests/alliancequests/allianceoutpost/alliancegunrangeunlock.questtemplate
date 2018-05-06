@@ -1,0 +1,38 @@
+{
+  "id" : "alliancegunrangeunlock",
+  "prerequisites" : [],
+  "title" : "^orange;Justice for the Justicar",
+  "text" : "A Union outpost was recently attacked by a pack of Akkimari. We need someone to beam down to the planet and ^green;put an end to the ^orange;Akkimari Justicar ^green;that leads the pack^white;. As a reward, ^green;you will earn yourself access to the Creon Embassy's shooting range^white;.",
+  "completionText" : "Great work, I received a report that the Justicar has been taken care of. Here you go: this security card will give you access to the shooting range.",
+  "moneyRange" : [1000, 1000],
+  "rewards" : [ 
+	[ [ "alliancegunrangepass", 1 ], [ "alliancecache", 1 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/instance.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "default" : "questGiver"
+    },
+
+    "descriptions" : {
+      "enterInstance" : "Talk to ^orange;Mumam^reset; to warp down to the ^orange;Union outpost^reset;",
+      "findGoal" : "Destroy the ^orange;Akkimari Justicar^reset;",
+      "turnIn" : "Return to ^orange;Mumam^reset; in the ^orange;Creon Embassy^reset;"
+    },
+
+    "warpEntityUid" : "eo-embassyrepresentative",
+    "warpAction" : "instanceworld:akkimaridronebattle",
+    "warpDialog" : "/interface/confirmation/teleportconfirmation.config:akkimaridronebattle",
+
+    "goalTrigger" : "message",
+    "triggerMessage" : "akkimaridroneMinibossDeath",
+	
+    "goalEntityUid" : "akkimaridroneMiniboss",
+    "indicateGoal" : true,
+    "trackGoalEntity" : true,
+
+    "turnInEntityUid" : "ao-vanguardrecruiter"
+  }
+}

@@ -51,7 +51,7 @@
             "windupState" : "idle",
 
 			//Projectile
-            "projectileType" : "straferbullet-short",
+            "projectileType" : "straferbullet-short-noeffect",
             "projectileCount" : 8,
 			"projectileInterval": 0.1,
             "projectileParameters" : {

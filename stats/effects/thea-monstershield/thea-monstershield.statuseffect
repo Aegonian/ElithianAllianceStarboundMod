@@ -1,0 +1,17 @@
+{
+  "name" : "thea-monstershield",
+  "effectConfig" : {
+	"maxOverlayFactor" : 0.75		//How much the shield can be discoloured based on shield health factor
+  },
+  "defaultDuration" : 0.5,
+
+  "scripts" : [
+    "thea-monstershield.lua"
+  ],
+  "scriptDelta" : 5,
+
+  "animationConfig" : "thea-monstershield.animation",
+  
+  "label" : "Bubble Shield",
+  "icon" : "/interface/statuses/thea-bubbleshield.png"
+}

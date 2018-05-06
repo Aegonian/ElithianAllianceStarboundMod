@@ -1,0 +1,50 @@
+{
+  "type" : "eo-janitor",
+  "baseType" : "eo-civilian",
+
+  "dropPools" : [ "aegiDeathTreasure" ],
+
+  "movementParameters" : {
+    "walkSpeed" : 5.0
+  },
+
+  "scriptConfig" : {
+    "behavior" : "thea-janitor",
+
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "How are you today?",
+            "Don't mind me, I'll just be sweeping the floor.",
+            "The life of a janitor isn't too bad.",
+            "Make sure you don't drag any dirt in!",
+            "Hmm? Oh, hi there!"
+          ]
+        }
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "aegi" : [
+      [0, [
+		{
+		  "head" : [
+			{ "name" : "aegi-allianceuniformhead", "parameters" : { "colorIndex" : 11 } }
+		  ],
+		  "chest" : [
+			{ "name" : "aegi-allianceuniformchest", "parameters" : { "colorIndex" : 11 } }
+		  ],
+		  "legs" : [
+			{ "name" : "aegi-allianceuniformlegs", "parameters" : { "colorIndex" : 11 } }
+		  ],
+		  "primary" : [
+			"broom"
+		  ]
+		}
+	  ] ]
+    ]
+  }
+}

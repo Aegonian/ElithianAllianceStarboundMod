@@ -1,0 +1,15 @@
+{
+  "itemName" : "oculusshieldcore",
+  "price" : 500,
+  "rarity" : "Legendary",
+  "category" : "Quest Item",
+  "inventoryIcon" : "oculusshieldcore.png",
+  "description" : "A shield generator stripped from a Ce'Tennan Oculus drone.",
+  "shortdescription" : "^#BA66FF;Oculus Shield Core^white;",
+  "itemTags" : [ "questitem" ],
+  
+  "pickupQuestTemplates" : [ "oculusward" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 5
+}

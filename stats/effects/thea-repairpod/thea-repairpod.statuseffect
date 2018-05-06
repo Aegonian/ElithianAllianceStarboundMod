@@ -1,0 +1,16 @@
+{
+  "name" : "thea-repairpod",
+  "effectConfig" : {
+    "healTime" : 48
+  },
+  "defaultDuration" : 10,
+
+  "scripts" : [
+    "thea-repairpod.lua"
+  ],
+
+  "animationConfig" : "thea-repairpod.animation",
+
+  "label" : "Repairing",
+  "icon" : "/interface/statuses/heal.png"
+}

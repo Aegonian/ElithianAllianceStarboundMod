@@ -1,0 +1,66 @@
+{
+  "type" : "aegispacenavigator",
+  "baseType" : "thea-villager",
+
+  "dropPools" : [ "aegiDeathTreasure" ],
+
+  "scriptConfig" : {
+    "behavior" : "thea-lounger",
+
+    "behaviorConfig" : {
+      "loungableSearchRadius" : 5,
+      "greetingChance" : 0
+    },
+	
+    "questGenerator" : {
+      "enableParticipation" : false
+    },
+
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "Welcome to our ship, traveler."
+		  ]
+		},
+        "aegi" : {
+		  "default" : [ 
+		    "I'm sorry, I have to concentrate on my work here.",
+		    "I'm navigating the ship. I don't have time to talk, sorry.",
+		    "We detected your ship approaching us. What brings you here?",
+		    "Navigating ships is a difficult job sometimes. At other times, it's just boring.",
+		    "I've always loved flying ships.",
+		    "My calling is as ship navigator, so I'm incredibly happy I got accepted onto this ship!",
+		    "Welcome, traveler. I saw you approaching our ship.",
+		    "We're on our way to one of the Union colonies.",
+		    "Where are your journeys taking you, traveler?"
+		  ]
+		}
+      }
+    }
+  },
+  
+  "matchColorIndices" : false,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "aegi-tier2head", "parameters" : { "colorIndex" : [0] } }
+            ],
+            "chest" : [
+              { "name" : "aegi-allianceuniformchest", "parameters" : { "colorIndex" : [7] } },
+              { "name" : "aegi-tier2chest", "parameters" : { "colorIndex" : [0] } }
+            ],
+            "legs" : [
+              { "name" : "aegi-allianceuniformlegs", "parameters" : { "colorIndex" : [7] } },
+              { "name" : "aegi-tier2legs", "parameters" : { "colorIndex" : [0] } }
+            ],
+            "sheathedprimary" : [
+              "thea-tier5pistol"
+            ]
+          }
+        ] ]
+    ]
+  }
+}

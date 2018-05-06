@@ -1,0 +1,35 @@
+{
+  "id" : "weaponrestorationaegi2",
+  "prerequisites" : [ "weaponrestorationaegi" ],
+  "title" : "^orange;Excalibur Reborn II",
+  "text" : "Now comes the hard part... You will need to obtain a small Xanafian Shard. It powers the weapon, and without it, this magnificent blade is just that: a blade.",
+  "completionText" : "That's just what I needed, thanks! I'll start working on the blade, but I need you to find some more materials before I can completely restore this weapon to its former glory.",
+  "moneyRange" : [50, 50],
+  "rewards" : [],
+  "canBeAbandoned" : false,
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+	"portraits" : {
+      "default" : "questGiver"
+    },
+	"followUp" : "weaponrestorationaegi2",
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "thea-excaliburbroken",
+        "count" : 1,
+        "consume" : true
+      },
+      {
+        "type" : "gatherItem",
+        "itemName" : "alliancemetaltier6",
+        "count" : 12,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Return to ^orange;Ayurin ^reset;in the ^orange;Starfarer's Refuge^reset;"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "type" : "aegispacecrewmate",
+  "baseType" : "thea-villager",
+
+  "dropPools" : [ "aegiDeathTreasure" ],
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "greetingChance" : 0
+    },
+    "questGenerator" : {
+      "enableParticipation" : false
+    },
+
+    "dialog" : {
+      "converse" : "/dialog/shipcrew.config:converse"
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [
+              { "name" : "aegi-allianceuniformchest", "parameters" : { "colorIndex" : [0, 8] } },
+              { "name" : "aegi-tanktop", "parameters" : { "colorIndex" : [8] } },
+              { "name" : "aegi-shirt", "parameters" : { "colorIndex" : [8] } }
+            ],
+            "legs" : [
+              { "name" : "aegi-allianceuniformlegs", "parameters" : { "colorIndex" : [0, 8] } }
+            ],
+            "sheathedprimary" : [
+              "thea-tier3pistol"
+            ]
+          }
+        ] ]
+    ]
+  }
+}

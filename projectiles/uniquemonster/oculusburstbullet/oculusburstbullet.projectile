@@ -1,0 +1,35 @@
+{
+  "projectileName" : "oculusburstbullet",
+  "physics" : "centensgravityseeker",
+  "bounces" : 0,
+  "image" : "oculusburstbullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "renderLayer" : "Monster+1",
+  "power" : 50,
+  "speed" : 20,
+  "supportsProcessing" : true,
+  //"emitters" : [ "akkimaritraillightmedium" ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/xanafianexplosionsmall/xanafianexplosionsmall.config"
+    }
+  ],
+  "lightColor" : [30, 60, 75],
+  "fullbright" : true,
+  "damageType" : "NoDamage",
+  "damageKind" : "xanafian",
+  
+  //SCRIPT CONFIG
+  "scripts" : [ "/projectiles/scripts/thea-homingbullet.lua" ],
+  "searchRadius" : 30,
+  "baseHomingControlForce" : 0.5,
+  
+  "randomTimeToLive" : true,
+  "timeToLiveMilliseconds" : true,
+  "minLifeTime" : 350,
+  "maxLifeTime" : 450,
+  
+  "homingStartDelay" : 0.125
+}

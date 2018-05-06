@@ -34,6 +34,7 @@
       "bg" : {
         "properties" : {
           "centered" : false,
+          "zLevel" : 0,
 		  "fullbright" : true
         },
 

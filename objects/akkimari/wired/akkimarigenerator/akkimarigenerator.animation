@@ -1,0 +1,84 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "switchState" : {
+        "default" : "off",
+        "states" : {
+          "on" : {
+            "frames" : 4,
+            "cycle" : 0.25,
+			"mode" : "loop",
+            "properties" : {
+			  "particleEmittersOn" : [ "smoke" ]
+            }
+          },
+          "off" : {
+            "properties" : {
+			  "particleEmittersOff" : [ "smoke" ]
+            }
+		  }
+        }
+      }
+    },
+
+    "parts" : {
+      "bg" : {
+        "properties" : {
+          "centered" : false
+        },
+        "partStates" : {
+          "switchState" : {
+            "on" : {
+              "properties" : {
+                "image" : "<partImage>:on.<frame>",
+                "fullbright" : true
+              }
+            },
+            "off" : {
+              "properties" : {
+                "image" : "<partImage>:off",
+                "fullbright" : true
+              }
+            }
+          }
+        }
+      },
+      "fg" : {
+        "properties" : {
+          "centered" : false,
+          "zLevel" : 1
+        },
+        "partStates" : {
+          "switchState" : {
+            "on" : {
+              "properties" : {
+                "image" : "<partImage>:on.<frame>"
+              }
+            },
+            "off" : {
+              "properties" : {
+                "image" : "<partImage>:off"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  
+  "particleEmitters" : {
+    "smoke" : {
+      "emissionRate" : 10,
+      "emissionRateVariance" : 2.5,
+      "offsetRegion" : [3.875, 1.25, 3.875, 1.25],
+      "particles" : [
+		{ "particle" : "akkimariashsmoke-back"}
+	  ]
+    }
+  },
+
+  "sounds" : {
+    "on" : [],
+    "off" : []
+  }
+}

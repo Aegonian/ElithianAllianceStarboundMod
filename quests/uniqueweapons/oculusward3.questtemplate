@@ -1,0 +1,31 @@
+{
+  "id" : "oculusward3",
+  "prerequisites" : [ "oculusward2" ],
+  "title" : "^orange;A Shielded Eye III",
+  "text" : "The shield is pretty much done, but I couldn't fix the power supply. I have a friend who might know how to fix it, but he went off to visit some ^orange;alien embassy^reset;. ^green;Find him and bring him the shield^reset;, and he should be able to help you finish the shield.",
+  "completionText" : "Ah, so Adako sent you? It's good to hear from him again, and I'd be glad to help you with this project.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "avikanmerittoken", 5 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "questGiver",
+      "questComplete" : "questReceiver"
+    },
+	"followUp" : "oculusward4",
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "oculuswardcasing",
+        "count" : 1,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Find ^orange;Valyakan ^reset;in the ^orange;Creon Embassy^reset;"
+  }
+}

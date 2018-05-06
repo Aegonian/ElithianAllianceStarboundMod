@@ -1,0 +1,78 @@
+{
+  "objectName" : "alliancespacecontainerclamped",
+  "colonyTags" : ["alliance", "storage"],
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "category" : "storage",
+  "printable" : false,
+  "price" : 750,
+  "description" : "A large cargo container used for transport by spaceship.",
+  "shortdescription" : "AAE Cargo Container",
+  "race" : "aegi",
+
+  "health" : 12,
+
+  "apexDescription" : "It's a sturdy space-worthy container.",
+  "avianDescription" : "I think this is used to transport cargo in outer space.",
+  "floranDescription" : "Maybe there'ss food in it.",
+  "glitchDescription" : "Curious. What's stored in here?",
+  "humanDescription" : "This container is sturdy enough for use in outer space.",
+  "hylotlDescription" : "A heavy cargo container used in spaceborne transportation of cargo.",
+  "novakidDescription" : "A large container for haulin' goods.",
+
+  "aegiDescription" : "This container is built to withstand the extremities of outer space.",
+  "avikanDescription" : "A large alien-built container. It's sturdy enough to be used in outer space.",
+  "erixianDescription" : "A large cargo container. I reckon it could withstand the extreme conditions in outer space.",
+  "trinkDescription" : "This cargo container was built to be used in space. Very specific tools have to be used to handle it.",
+  "hymidDescription" : "A massive cargo container strong enough for use in outer space.",
+  "notixDescription" : "This cargo container is extremely sturdy.",
+  "jorgasianDescription" : "A cargo container built for use in space.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Analyzing content.",
+
+  "inventoryIcon" : "alliancespacecontainerclampedicon.png",
+  "orientations" : [
+    {
+      "image" : "alliancespacecontainerclamped.png:<color>",
+      "imagePosition" : [-112, -56],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    },
+	{
+      "image" : "alliancespacecontainerclampedleft.png:<color>",
+      "imagePosition" : [-112, -56],
+      "direction" : "left",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    },
+    {
+      "image" : "alliancespacecontainerclampedtop.png:<color>",
+      "imagePosition" : [-112, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+	{
+      "image" : "alliancespacecontainerclampedtopleft.png:<color>",
+      "imagePosition" : [-112, 0],
+      "direction" : "left",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/shippingcontainer_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/shippingcontainer_close.ogg" ],
+  "slotCount" : 64,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600
+}

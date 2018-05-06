@@ -1,0 +1,9 @@
+{
+  "name" : "centensguardian-side",
+  "category" : "centensguardian",
+  "type" : "side",
+
+  "frames" : {
+    "side" : "centensguardian-side.png"
+  }
+}

@@ -481,11 +481,20 @@
 			  { "item": { "name": "trink-protectoratechest" }, "prerequisiteQuest" : "trinkcustomtailoring" },
 			  { "item": { "name": "trink-protectoratelegs" }, "prerequisiteQuest" : "trinkcustomtailoring" },
 			  //Story Armour
-			  // Nothing here yet!
+			  { "item": { "name": "aegi-allianceuniformhead" }, "prerequisiteQuest" : "allianceuniform-aegi" },
+			  { "item": { "name": "aegi-allianceuniformchest" }, "prerequisiteQuest" : "allianceuniform-aegi" },
+			  { "item": { "name": "aegi-allianceuniformlegs" }, "prerequisiteQuest" : "allianceuniform-aegi" },
+			  { "item": { "name": "trink-alliancechest" }, "prerequisiteQuest" : "allianceuniform-trink" },
+			  { "item": { "name": "trink-alliancelegs" }, "prerequisiteQuest" : "allianceuniform-trink" },
 			  //Quest Reward Items
-			  //{ "item": { "name": "avikanwatcherpass" }, "prerequisiteQuest" : "avikanstoryhidden", "price" : 5000 },
+			  { "item": { "name": "allianceambassadorpass" }, "prerequisiteQuest" : "alliancestory-passpickup", "price" : 5000 },
+			  { "item": { "name": "alliancegunrangepass" }, "prerequisiteQuest" : "alliancegunrangeunlock", "price" : 5000 },
+			  { "item": { "name": "aegi-mechpilothead" }, "prerequisiteQuest" : "alliancemechparts" },
+			  { "item": { "name": "aegi-mechpilotchest" }, "prerequisiteQuest" : "alliancemechparts" },
 			  //Starter Weapons
-			  { "item": { "name": "brokenprotectoratebroadsword" }, "prerequisiteQuest" : "protectorate", "price" : 5000 }
+			  { "item": { "name": "brokenprotectoratebroadsword" }, "prerequisiteQuest" : "protectorate", "price" : 5000 },
+			  { "item": { "name": "thea-excaliburbroken" }, "prerequisiteQuest" : "aegicustomtailoring", "price" : 5000 },
+			  { "item": { "name": "trinkprimecircuitbroken" }, "prerequisiteQuest" : "trinkcustomtailoring", "price" : 5000 }
 			] ]
 		]
 	},
@@ -537,16 +546,13 @@
 	{ "op" : "add", "path" : "/allianceoutpostbooks",
 		"value" : [
 			[ 0, [
-			  //VEHICLE OBJECTS
-			  { "item": { "name": "alliancehoverbikeobject" }, "rarity": 0.5 },
-			  { "item": { "name": "allianceshuttleobject" }, "rarity": 0.5 },
-			  { "item": { "name": "alliancetruckobject" }, "rarity": 0.5 },
-			  { "item": { "name": "alliancehovercarblueobject" }, "rarity": 0.5 },
-			  { "item": { "name": "alliancehovercarredobject" }, "rarity": 0.5 },
-			  //VEHICLE CONTROLLERS
-			  { "item": { "name": "alliancehovercarbluecontroller" }, "rarity": 0.5 },
-			  { "item": { "name": "alliancehovercarredcontroller" }, "rarity": 0.5 },
-			  { "item": { "name": "allianceshuttlecontroller" }, "rarity": 0.5 }
+			  //CODICES
+			  { "item": { "name": "aegihistory1" }, "rarity": 0.5, "price" : 500 },
+			  { "item": { "name": "aegihistory2" }, "rarity": 0.5, "price" : 500 },
+			  { "item": { "name": "aegihistory3" }, "rarity": 0.5, "price" : 500 },
+			  { "item": { "name": "aegihistory4" }, "rarity": 0.5, "price" : 500 },
+			  { "item": { "name": "aegihistory5" }, "rarity": 0.5, "price" : 500 },
+			  { "item": { "name": "aegihistory6" }, "rarity": 0.5, "price" : 500 }
 			] ]
 		]
 	},
@@ -624,6 +630,25 @@
 	//=========================================================================================================
 	// AEGI
 	//=========================================================================================================
+	{ "op" : "add", "path" : "/aegispace",
+		"value" : [
+			[ 0, [
+			  { "item": { "name": "alliancespacecontainer" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancespacecontainerclamped" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-wrench" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-prod" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-collectiverifle1" }, "rarity": 0.5 },
+			  { "item": { "name": "alliance-mininglaser" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-collectivepistol1" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-theledosrifle" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-theledosshotgun" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-collectivesniper1" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-collectivesniper2" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-theledossniper" }, "rarity": 0.5 }
+			] ]					
+		]
+	},
+	
 	{ "op" : "add", "path" : "/aegicolony",
 		"value" : [
 			[ 0, [

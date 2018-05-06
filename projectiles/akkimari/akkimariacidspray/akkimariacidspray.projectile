@@ -1,0 +1,23 @@
+{
+  "projectileName" : "akkimariacidspray",
+  "image" : "akkimariacidspray.png",
+  "physics" : "avikanharpoon",
+  "animationCycle" : 1.0,
+  "animationLoops" : false,
+  "frameNumber" : 12,
+  "emitters" : [ "akkimariacidrainlight" ],
+  "power" : 50,
+  "speed" : 7,
+  "timeToLive" : 1.0,
+  "bounces" : -1,
+  "layer" : "middle",
+  "piercing" : true,
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "actionOnReap" : [],
+  "hydrophobic" : false,
+  "statusEffects" : [
+    "akkimariacidburn"
+  ],
+  "fullbright" : true,
+  "damageKind" : "akkimariacid"
+}

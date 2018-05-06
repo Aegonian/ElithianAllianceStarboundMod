@@ -1,0 +1,26 @@
+{
+  "frameGrid" : {
+    "size" : [55, 13],
+    "dimensions" : [9, 1],
+
+    "names" : [
+      [ "idle", "cannonwindup.3", "cannonwindup.4", "cannonwindup.5", "cannonwindup.6", "cannonwindup.7", "ready", "cannonfire.1", "cannonfire.2" ]
+    ]
+  },
+  "aliases" : {
+    "cannonwindup.1" : "idle",
+    "cannonwindup.2" : "idle",
+    "cannonwindup.8" : "ready",
+	
+    "cannonwinddown.1" : "cannonwindup.7",
+    "cannonwinddown.2" : "cannonwindup.6",
+    "cannonwinddown.3" : "cannonwindup.5",
+    "cannonwinddown.4" : "cannonwindup.4",
+    "cannonwinddown.5" : "cannonwindup.3",
+    "cannonwinddown.6" : "idle",
+    "cannonwinddown.7" : "idle",
+    "cannonwinddown.8" : "idle",
+	
+    "cannonfire.3" : "ready"
+  }
+}

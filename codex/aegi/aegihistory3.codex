@@ -1,0 +1,22 @@
+{
+  "id" : "aegihistory3",
+  "species" : "aegi",
+  "title" : "Aeginian History - Part 3",
+  "description" : "The summarized recorded history of the Aeginian people.",
+  "icon" : "aegicover3.png",
+  "contentPages" : [
+
+"^orange;Chapter 2 - Exodus^reset;
+
+At dawn, two days before the asteroid's projected time of impact, the ships were prepared for launch that evening. After performing all final checks and ensuring that all passengers were on board, the ships were launched. The launch went relatively: 39 out of 42 ships survived the launch. The ships had been divided into two groups set for different destinations.",
+
+"The first group, the Voyager Company, was sent to the RS341023 system, which was believed to be home to a habitable planet. The other group, the Endurance Company, was sent to the PT167089 system, or more specifically to PT167089-06, the sixth planet in the system. This planet was also believed to be potentially habitable, but there were no guarantees: readings of PT167089-06 showed promise, but they could not tell humanity of the exact conditions on the planet.",
+
+"The day after the spaceships had launched, in 246 BA, the asteroid hit Terra with massive force. The impact event destroyed several Human nations at once, and caused massive problems for the surviving nations. The impact swept up a layer of dust that would cover the entire planet and blot out the sun for several years, causing massive harvest failures and killing off many species of plants and animals."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

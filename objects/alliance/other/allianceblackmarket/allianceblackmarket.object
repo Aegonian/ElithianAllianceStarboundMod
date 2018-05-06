@@ -3,7 +3,7 @@
   "colonyTags" : ["alliance"],
   "printable" : false,
   "rarity" : "Legendary",
-  "description" : "This Trink look shady...",
+  "description" : "This Trink looks shady...",
   "shortdescription" : "Bolter's Bazaar",
   "race" : "aegi",
   
@@ -15,7 +15,7 @@
   
   "avikanDescription" : "A machine, and a shady one at that. I should be careful.",
   "drodenDescription" : "Detected unregistered robotic merchant. Recommending caution.",
-  "akkimariDescription" : "Shady alien sells the good stuff.",
+  "akkimariDescription" : "Shady alien sells good stuff.",
   
   "interactAction" : "OpenMerchantInterface",
   "interactData" : {
@@ -36,6 +36,7 @@
 	  { "item" : { "name" : "excelsiorblueprint3" }, "price" : 7500 },
 	  { "item" : { "name" : "excelsiorblueprint4" }, "price" : 7500 },
 	  { "item" : { "name" : "excelsiorblueprint5" }, "price" : 7500 },
+	  { "item" : { "name" : "unioncitizenpass" }, "price" : 50000 },
 	  //THELEAN
 	  { "item" : { "name" : "theleanmetal" }, "price" : 3500 },
 	  { "item" : { "name" : "theleantissue" }, "price" : 2500 },

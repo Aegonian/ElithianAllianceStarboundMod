@@ -14,7 +14,7 @@
   "actionOnReap" : [
     {
       "action" : "config",
-      "file" : "/projectiles/explosions/akkimariacidexplosion/akkimariacidexplosion.config"
+      "file" : "/projectiles/explosions/akkimariacidexplosion/akkimariacidexplosion-effect.config"
     }
   ],
   "statusEffects" : [

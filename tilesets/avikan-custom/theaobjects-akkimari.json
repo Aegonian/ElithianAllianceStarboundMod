@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":7,
+ "tilecount":9,
  "tileheight":88,
  "tileproperties":
     {
@@ -64,6 +64,22 @@
          "imagePositionY":"0",
          "object":"akkimarilightstrip",
          "tilesetDirection":"right"
+        },
+     "7":
+        {
+         "\/\/shortdescription":"Akkimari Generator",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"akkimarigenerator",
+         "tilesetDirection":"right"
+        },
+     "8":
+        {
+         "\/\/shortdescription":"Akkimari Vaash Barrel",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"akkimarivaashbarrel",
+         "tilesetDirection":"right"
         }
     },
  "tiles":
@@ -95,6 +111,14 @@
      "6":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarilightstrip.png"
+        },
+     "7":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarigenerator.png"
+        },
+     "8":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarivaashbarrel.png"
         }
     },
  "tilewidth":48

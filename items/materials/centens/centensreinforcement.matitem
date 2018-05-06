@@ -2,7 +2,7 @@
   "itemName" : "centensreinforcement",
   "price" : 0,
   "category" : "block",
-  "rarity" : "Common",
+  "rarity" : "Rare",
   "inventoryIcon" : "centensreinforcement.png",
   "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
   "shortdescription" : "Centensian Reinforcement",

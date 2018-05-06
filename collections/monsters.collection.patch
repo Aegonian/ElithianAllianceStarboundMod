@@ -164,5 +164,25 @@
 	    "monsterType" : "faryth",
 	    "icon" : "/monsters/flyers/faryth/farythicon.png"
 	  }
+	},
+	{
+	  "op": "add",
+	  "path": "/collectables/centensguardian-captured",
+	  "value": 	  
+	  {
+	    "order" : 74,
+	    "monsterType" : "centensguardian-captured",
+	    "icon" : "/monsters/flyers/centensguardian/centensguardianicon.png"
+	  }
+	},
+	{
+	  "op": "add",
+	  "path": "/collectables/centenskeeper",
+	  "value": 	  
+	  {
+	    "order" : 75,
+	    "monsterType" : "centenskeeper",
+	    "icon" : "/monsters/flyers/centenskeeper/centenskeepericon.png"
+	  }
 	}
 ]

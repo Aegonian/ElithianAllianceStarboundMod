@@ -1,0 +1,543 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "body" : {
+        "priority" : 0,
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 1
+          },
+          "wakeup" : {
+            "frames" : 7,
+            "cycle" : 0.7,
+            "mode" : "transition",
+            "transition" : "fly"
+          },
+          "fly" : {
+            "frames" : 16,
+            "cycle" : 1.6,
+            "mode" : "loop",
+			"properties" : {
+              "particleEmittersOff" : [ "chargeLaser" ]
+            }
+          },
+		//DUAL CANNON ATTACK
+          "cannonwindup" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "properties" : {
+              "immediateSound" : "/sfx/npc/monsters/avikandrone_lowergun.ogg"
+            }
+          },
+          "cannonfire" : {
+            "frames" : 3,
+            "cycle" : 0.1,
+            "mode" : "loop"
+          },
+          "cannonwinddown" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "fly",
+            "properties" : {
+              "immediateSound" : "/sfx/npc/monsters/avikandrone_raisegun.ogg"
+            }
+          },
+		//LASER ATTACK
+          "laserwindup" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "properties" : {
+              "particleEmittersOn" : [ "chargeLaser" ],
+              "immediateSound" : "/sfx/npc/boss/crystalboss_beamin.ogg"
+            },
+            "frameProperties" : {
+              "particleEmittersOn" : [ [], [ "chargeLaser" ], [], [], [], [], [], [] ],
+              "particleEmittersOff" : [ [], [], [], [], [], [], [], [ "chargeLaser" ] ]
+            }
+          },
+          "laserfire" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "loop",
+			"properties" : {
+              "persistentSound" : "/sfx/npc/boss/crystalboss_beam.ogg"
+            }
+          },
+          "laserwinddown" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "fly",
+            "properties" : {
+              "immediateSound" : "/sfx/npc/monsters/centensoculus_laserend.ogg"
+            }
+          },
+		//BURST ATTACK
+          "burstwindup" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "burstfire"
+          },
+          "burstfire" : {
+            "frames" : 16,
+            "cycle" : 1.0,
+            "mode" : "loop"
+          },
+          "burstwinddown" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "fly"
+          }
+        }
+      },
+      "damage" : {
+        "priority" : 3,
+        "default" : "none",
+        "states" : {
+          "none" : {
+            "frames" : 1
+          },
+          "stunned" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "transition",
+			"transition" : "none"
+          }
+        }
+      },
+      "releaseParticles" : {
+        "default" : "off",
+        "states" : {
+          "off" : {
+            "frames" : 1,
+            "properties" : {
+              "particleEmittersOff" : [ "releaseParticles" ]
+            }
+          },
+          "on" : {
+            "frames" : 1,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "off",
+            "properties" : {
+              "particleEmittersOn" : [ "releaseParticles" ]
+            }
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      //================================= MAIN BODY =================================
+	  "body" : {
+        "properties" : {
+		  "zLevel" : 0,
+          "transformationGroups" : [ "body" ],
+          "offset" : [0.0, 0.0]
+        },
+        "partStates" : {
+          "body" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "wakeup" : {
+              "properties" : {
+                "image" : "<partImage>:wakeup.<frame>"
+              }
+            },
+            "fly" : {
+              "properties" : {
+                "image" : "<partImage>:fly.<frame>"
+              }
+            },
+		  //DUAL CANNON ATTACK
+            "cannonwindup" : {
+              "properties" : {
+                "image" : "<partImage>:cannonwindup.<frame>"
+              }
+            },
+            "cannonfire" : {
+              "properties" : {
+                "image" : "<partImage>:cannonfire.<frame>"
+              }
+            },
+            "cannonwinddown" : {
+              "properties" : {
+                "image" : "<partImage>:cannonwinddown.<frame>"
+              }
+            },
+		  //LASER ATTACK
+            "laserwindup" : {
+              "properties" : {
+                "image" : "<partImage>:laserwindup.<frame>"
+              }
+            },
+            "laserfire" : {
+              "properties" : {
+                "image" : "<partImage>:laserfire.<frame>"
+              }
+            },
+            "laserwinddown" : {
+              "properties" : {
+                "image" : "<partImage>:laserwinddown.<frame>"
+              }
+            },
+		  //BURST ATTACK
+            "burstwindup" : {
+              "properties" : {
+                "image" : "<partImage>:burstwindup.<frame>"
+              }
+            },
+            "burstfire" : {
+              "properties" : {
+                "image" : "<partImage>:burstfire.<frame>"
+              }
+            },
+            "burstwinddown" : {
+              "properties" : {
+                "image" : "<partImage>:burstwinddown.<frame>"
+              }
+            }
+          },
+          "damage" : {
+            "stunned" : {
+              "properties" : {
+                "image" : "<partImage>:hurt.<frame>"
+              }
+            }
+          }
+        }
+      },
+      //================================= SIDE PLATE =================================
+	  "side" : {
+        "properties" : {
+		  "zLevel" : 4,
+          "transformationGroups" : [ "body" ],
+          "offset" : [0.0, 0.0]
+        },
+        "partStates" : {
+          "body" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "wakeup" : {
+              "properties" : {
+                "image" : "<partImage>:wakeup.<frame>"
+              }
+            },
+            "fly" : {
+              "properties" : {
+                "image" : "<partImage>:fly.<frame>"
+              }
+            },
+		  //DUAL CANNON ATTACK
+            "cannonwindup" : {
+              "properties" : {
+                "image" : "<partImage>:cannonwindup.<frame>"
+              }
+            },
+            "cannonfire" : {
+              "properties" : {
+                "image" : "<partImage>:cannonfire.<frame>"
+              }
+            },
+            "cannonwinddown" : {
+              "properties" : {
+                "image" : "<partImage>:cannonwinddown.<frame>"
+              }
+            },
+		  //LASER ATTACK
+            "laserwindup" : {
+              "properties" : {
+                "image" : "<partImage>:laserwindup.<frame>"
+              }
+            },
+            "laserfire" : {
+              "properties" : {
+                "image" : "<partImage>:laserfire.<frame>"
+              }
+            },
+            "laserwinddown" : {
+              "properties" : {
+                "image" : "<partImage>:laserwinddown.<frame>"
+              }
+            },
+		  //BURST ATTACK
+            "burstwindup" : {
+              "properties" : {
+                "image" : "<partImage>:burstwindup.<frame>"
+              }
+            },
+            "burstfire" : {
+              "properties" : {
+                "image" : "<partImage>:burstfire.<frame>"
+              }
+            },
+            "burstwinddown" : {
+              "properties" : {
+                "image" : "<partImage>:burstwinddown.<frame>"
+              }
+            }
+          },
+          "damage" : {
+            "stunned" : {
+              "properties" : {
+                "image" : "<partImage>:hurt.<frame>"
+              }
+            }
+          }
+        }
+      },
+      //================================= MAIN BODY LIGHTS =================================
+	  "lights" : {
+        "properties" : {
+		  "zLevel" : 1,
+          "transformationGroups" : [ "body" ],
+		  "fullbright" : true,
+          "offset" : [0.0, 0.0]
+        },
+        "partStates" : {
+          "body" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "wakeup" : {
+              "properties" : {
+                "image" : "<partImage>:wakeup.<frame>"
+              }
+            },
+            "fly" : {
+              "properties" : {
+                "image" : "<partImage>:fly.<frame>"
+              }
+            },
+		  //DUAL CANNON ATTACK
+            "cannonwindup" : {
+              "properties" : {
+                "image" : "<partImage>:cannonwindup.<frame>"
+              }
+            },
+            "cannonfire" : {
+              "properties" : {
+                "image" : "<partImage>:cannonfire.<frame>"
+              }
+            },
+            "cannonwinddown" : {
+              "properties" : {
+                "image" : "<partImage>:cannonwinddown.<frame>"
+              }
+            },
+		  //LASER ATTACK
+            "laserwindup" : {
+              "properties" : {
+                "image" : "<partImage>:laserwindup.<frame>"
+              }
+            },
+            "laserfire" : {
+              "properties" : {
+                "image" : "<partImage>:laserfire.<frame>"
+              }
+            },
+            "laserwinddown" : {
+              "properties" : {
+                "image" : "<partImage>:laserwinddown.<frame>"
+              }
+            },
+		  //BURST ATTACK
+            "burstwindup" : {
+              "properties" : {
+                "image" : "<partImage>:burstwindup.<frame>"
+              }
+            },
+            "burstfire" : {
+              "properties" : {
+                "image" : "<partImage>:burstfire.<frame>"
+              }
+            },
+            "burstwinddown" : {
+              "properties" : {
+                "image" : "<partImage>:burstwinddown.<frame>"
+              }
+            }
+          },
+          "damage" : {
+            "stunned" : {
+              "properties" : {
+                "image" : "<partImage>:hurt.<frame>"
+              }
+            }
+          }
+        }
+      },
+      //================================= DUAL CANNON =================================
+	  "gun" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 2,
+          "transformationGroups" : [ "aim", "body" ],
+          "offset" : [-1.0, 0.0]
+        },
+        "partStates" : {
+          "body" : {
+            "cannonwindup" : {
+              "properties" : {
+                "image" : "<partImage>:cannonwindup.<frame>"
+              }
+            },
+            "cannonfire" : {
+              "properties" : {
+                "image" : "<partImage>:cannonfire.<frame>"
+              }
+            },
+            "cannonwinddown" : {
+              "properties" : {
+                "image" : "<partImage>:cannonwinddown.<frame>"
+              }
+            }
+          }
+        }
+      },
+	  "gunlights" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 3,
+          "transformationGroups" : [ "aim", "body" ],
+		  "fullbright" : true,
+          "offset" : [-1.0, 0.0]
+        },
+        "partStates" : {
+          "body" : {
+            "cannonwindup" : {
+              "properties" : {
+                "image" : "<partImage>:cannonwindup.<frame>"
+              }
+            },
+            "cannonfire" : {
+              "properties" : {
+                "image" : "<partImage>:cannonfire.<frame>"
+              }
+            },
+            "cannonwinddown" : {
+              "properties" : {
+                "image" : "<partImage>:cannonwinddown.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "body" : { "interpolated" : true },
+	"aim" : { "interpolated" : true }
+  },
+  
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [30, 60, 75],
+      "pointLight" : true
+    }
+  },
+
+  "effects" : {
+    "blink" : {
+      "type" : "flash",
+      "time" : 0,
+      "directives" : "fade=ffffff;0.5"
+    }
+  },
+
+  "particleEmitters" : {
+    "deathPoof" : {
+      "particles" : [
+        { "particle" : "electricswoosh1" },
+        { "particle" : "electricswoosh2" },
+        { "particle" : "electricswoosh1" },
+        { "particle" : "electricswoosh2" },
+
+        { "particle" : "deathfizz1left" },
+        { "particle" : "deathfizz1right" },
+        { "particle" : "deathfizz2left" },
+        { "particle" : "deathfizz2right" },
+        { "particle" : "deathfizz3left" },
+        { "particle" : "deathfizz3right" },
+        { "particle" : "deathfizz4left" },
+        { "particle" : "deathfizz4right" },
+		
+        { "particle" : "centensguardiandebris1" },
+		{ "particle" : "centensguardiandebris1" },
+		
+		{ "particle" : "centensguardiandebris2" },
+		{ "particle" : "centensguardiandebris2" },
+		{ "particle" : "centensguardiandebris2" },
+		{ "particle" : "centensguardiandebris2" },
+		{ "particle" : "centensguardiandebris2" },
+		{ "particle" : "centensguardiandebris2" },
+		{ "particle" : "centensguardiandebris2" },
+		{ "particle" : "centensguardiandebris2" },
+		
+		{ "particle" : "centensguardiandebris3" },
+		{ "particle" : "centensguardiandebris3" },
+		
+		{ "particle" : "centensguardiandebris4" }
+      ]
+    },
+    "captureParticles" : {
+      "particles" : [
+        { "particle" : "monstercapture" }
+      ]
+    },
+    "releaseParticles" : {
+      "particles" : [
+        { "particle" : "monsterrelease" }
+      ]
+    },
+    "teleportOut" : {
+      "particles" : [
+        { "particle" : "monstercapture" }
+      ]
+    },
+    "teleportIn" : {
+      "particles" : [
+        { "particle" : "monsterrelease" }
+      ]
+    },
+    "levelUp" : {
+      "particles" : [
+        { "particle" : "monsterlevelup" }
+      ]
+    },
+	
+	//ABILITIES
+    "chargeLaser" : {
+      "active" : false,
+      "emissionRate" : 5.0,
+      "transformationGroups" : ["body"],
+	  "offsetRegion" : [1.75, 0.125, 1.75, 0.125],
+      "particles" : [
+        { "particle" : "rashaekswisdomcharge"}
+      ]
+    }
+  },
+
+  "sounds" : {
+    "aggroHop" : [ "/sfx/npc/monsters/monster_surprise.ogg" ],
+    "deathPuff" : [ "/sfx/npc/enemydeathpuff.ogg" ],
+	
+	//ATTACKS
+    "cannonfire" : [ "/sfx/gun/xanafian_fire5.ogg" ]
+  }
+}

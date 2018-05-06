@@ -34,7 +34,8 @@
       "shield" : {
         "properties" : {
           "zLevel" : 0,
-		  "fullbright" : true
+		  "fullbright" : true,
+          "transformationGroups" : ["shield"]
         },
         "partStates" : {
           "shield" : {
@@ -68,10 +69,14 @@
       }
     }
   },
+
+  "transformationGroups" : {
+    "shield" : {}
+  },
   
   "particleEmitters" : {
 	"break" : {
-      "burstCount"  : 12,
+      "burstCount"  : 100,
 	  "offsetRegion" : [-2.5, -2.5, 2.5, 2.5],
       "particles" : [
         { "particle" : "bubbleshieldfragment" }

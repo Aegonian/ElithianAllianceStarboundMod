@@ -1,0 +1,15 @@
+{
+  "itemName" : "vaashcontainer",
+  "price" : 500,
+  "rarity" : "Legendary",
+  "category" : "Quest Item",
+  "inventoryIcon" : "vaashcontainer.png",
+  "description" : "A container full of highly volatile Vaash, taken from a Justicar's wreckage.",
+  "shortdescription" : "^#BA66FF;Vaash Container^white;",
+  "itemTags" : [ "questitem" ],
+  
+  "pickupQuestTemplates" : [ "ashatok" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 5
+}

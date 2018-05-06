@@ -54,6 +54,12 @@
   "scripts" : [ "/objects/scripts/thea-liquidcontainer.lua" ],
   "scriptDelta" : 20,
   
+  "liquidWhitelist" : [
+	"liquidwater",
+	"liquidhealing",
+	"swampwater"
+  ],
+  
   "animation" : "/objects/animations/thea-liquidcontainer.animation",
   "animationParts" : {
     "container" : "avikanwatercontainer.png"

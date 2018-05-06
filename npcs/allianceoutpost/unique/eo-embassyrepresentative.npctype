@@ -15,6 +15,11 @@
   "dropPools" : [ "aegiDeathTreasure" ],
 
   "scriptConfig" : {
+    "uniqueId" : "eo-embassyrepresentative",
+	
+	"offeredQuests" : [ "allianceuniform-aegi", "allianceuniform-trink", "alliancegunrangeunlock" ],
+	"turnInQuests" : [ "alliancegunrangeunlock" ],
+	
     "dialog" : {
 	  "converse" : {
         "default" : {
@@ -38,13 +43,13 @@
       [0, [
           {
             "head" : [
-              { "name" : "aegi-asauniformhead", "parameters" : { "colorIndex" : 0 } }
+              { "name" : "aegi-allianceuniformhead", "parameters" : { "colorIndex" : 7 } }
             ],
             "chest" : [
-              { "name" : "aegi-asauniformchest", "parameters" : { "colorIndex" : 0 } }
+              { "name" : "aegi-allianceuniformchest", "parameters" : { "colorIndex" : 7 } }
             ],
             "legs" : [
-              { "name" : "aegi-asauniformlegs", "parameters" : { "colorIndex" : 0 } }
+              { "name" : "aegi-allianceuniformlegs", "parameters" : { "colorIndex" : 7 } }
             ],
             "back" : [
               { "name" : "thea-hiddenback", "parameters" : { "colorIndex" : 0 } }

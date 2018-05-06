@@ -1,0 +1,34 @@
+{
+  "projectileName" : "forceshieldexplosion-invisible",
+  "image" : "forceshieldexplosion-invisible.png",
+  "physics" : "illusion",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "speed" : 0,
+  //"power" : 0,
+  "knockback" : 60,
+  "fullbright" : true,
+  "statusEffects" : [ ],
+  "damagePoly" : [ [-52, 0], [-39, -39], [0, -52], [39, -39], [52, 0], [39, 39], [0, 52], [-39, 39] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "damageKind" : "default",
+  //"damageType" : "NoDamage",
+  
+  "physicsForces" : {
+    "vacuum" : {
+      "type" : "RadialForceRegion",
+      "outerRadius" : 50,
+      "innerRadius" : 1,
+      "targetRadialVelocity" : 50,
+      "controlForce" : 5000,
+      "categoryWhitelist" : ["projectile","itemdrop"]
+    }
+  },
+
+  "clientEntityMode" : "ClientSlaveOnly",
+  
+  "scripts" : [ "/projectiles/scripts/thea-stationaryprojectile.lua" ]
+}

@@ -1,0 +1,31 @@
+{
+  "id" : "alliancemechparts",
+  "prerequisites" : [ "mechunlock" ],
+  "title" : "^green;Alliance Mech Parts",
+  "text" : "You look like a mech enthusiast! I've got some Enerth mech blueprints you might like, but I can't just give them away for free... If you can ^green;find me a ^orange;Salvaged Nano Receptable ^white;while you're ^green;out in space^white;, I'll give you the blueprints and some armour to boot!",
+  "completionText" : "I knew you'd get the job done! Here you are, the armour and blueprints I promised you!",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "aegi-mechpilothead", 1 ], [ "aegi-mechpilotchest", 20 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+	"portraits" : {
+      "default" : "questGiver"
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "salvagetier6",
+        "count" : 1,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Return to ^orange;Azurii ^reset;in the ^orange;Creon Embassy^reset;",
+
+    "giveBlueprints" : [ "mechboosteravikan", "mechlegsavikan" ]
+  }
+}

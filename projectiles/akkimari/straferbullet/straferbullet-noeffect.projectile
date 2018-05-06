@@ -1,0 +1,52 @@
+{
+  "projectileName" : "straferbullet-noeffect",
+  "physics" : "lineriflebullet",
+  "bounces" : 0,
+  "image" : "straferbullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 90,
+  "supportsProcessing" : true,
+  "emitters" : [ "akkimaritraillight" ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/akkimariacidimpact/akkimariacidimpact.config"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "animated",
+        "animation" : "/projectiles/akkimari/straferbullet/trail.animation",
+        "position" : [-1.0, 0],
+        "layer" : "back",
+		"collidesForeground" : false,
+        "timeToLive" : 0.2,
+        "destructionTime" : 0.1,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  "statusEffects" : [],
+  "lightColor" : [0, 75, 10],
+  "fullbright" : true,
+  "damageKind" : "akkimariacid",
+
+  "scripts" : ["/projectiles/scripts/thea-lineriflehoming-wave.lua"],
+  "scriptDelta" : 1,
+
+  //Wave
+  "wavePeriod" : 0.15,
+  "waveAmplitude" : 0.125,
+  
+  //Homing
+  "searchRadius" : 15,
+  "baseHomingControlForce" : 1.0
+}

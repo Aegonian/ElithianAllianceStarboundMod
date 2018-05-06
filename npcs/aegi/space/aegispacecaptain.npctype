@@ -1,0 +1,72 @@
+{
+  "type" : "aegispacecaptain",
+  "baseType" : "thea-villager",
+
+  "dropPools" : [ "aegiDeathTreasure" ],
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "greetingChance" : 0,
+      "alwaysRun" : false,
+      "wanderDistance" : 5
+    },
+    "questGenerator" : {
+      "enableParticipation" : false
+    },
+
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "Welcome to our ship, traveler."
+		  ]
+		},
+        "aegi" : {
+		  "default" : [
+		    "Welcome to our ship, traveler.",
+		    "I see you have your own ship too. Welcome, my fellow captain.",
+		    "What brings you to our ship?",
+		    "Being in command of a ship can be a tedious job, but I love it still.",
+		    "My navigators detected your approaching ship. What brings you to us in this vast emptiness of space?",
+		    "Please do not distract my navigators too much. They are quite busy managing the ship's navigation systems.",
+		    "Ah, hello there! Are you here to do business? We should have some additional cargo you can buy."
+		  ],
+		  "aegi" : [
+		    "Welcome to our ship, my fellow captain.",
+		    "Are you here on official Union business, my friend?",
+		    "What brings you to our ship?",
+		    "Being in command of a ship can be a tedious job, as you must know, but I love it still.",
+		    "My navigators detected your approaching ship. What brings you to us in this vast emptiness of space?",
+		    "Please do not distract my navigators too much. They are quite busy managing the ship's navigation systems.",
+		    "Ah, hello there! Are you here to do business? We should have some additional cargo you can buy."
+		  ]
+		}
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "aegi-captainhead", "parameters" : { "colorIndex" : [0] } }
+            ],
+            "chest" : [
+              { "name" : "aegi-captainchest", "parameters" : { "colorIndex" : [0] } }
+            ],
+            "legs" : [
+              { "name" : "aegi-captainlegs", "parameters" : { "colorIndex" : [0] } }
+            ],
+            "primary" : [
+              ""
+            ],
+            "sheathedprimary" : [
+              "thea-tier6smg"
+            ]
+          }
+        ] ]
+    ]
+  }
+}

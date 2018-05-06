@@ -5,30 +5,41 @@
 
     },
  "spacing":0,
- "tilecount":4,
+ "tilecount":6,
  "tileheight":8,
  "tileproperties":
     {
      "0":
         {
-         "//shortdescription":"Centensian Liquid",
+         "\/\/shortdescription":"Centensian Liquid",
          "liquid":"centensianliquid"
         },
      "1":
         {
-         "//shortdescription":"Centensian Liquid (Endless)",
+         "\/\/shortdescription":"Centensian Liquid (Endless)",
          "liquid":"centensianliquid",
          "source":"true"
         },
      "2":
         {
-         "//shortdescription":"Quick Sand",
+         "\/\/shortdescription":"Quick Sand",
          "liquid":"quicksand"
         },
      "3":
         {
-         "//shortdescription":"Quick Sand (Endless)",
+         "\/\/shortdescription":"Quick Sand (Endless)",
          "liquid":"quicksand",
+         "source":"true"
+        },
+     "4":
+        {
+         "\/\/shortdescription":"Vaash",
+         "liquid":"akkimariacid"
+        },
+     "5":
+        {
+         "\/\/shortdescription":"Vaash (Endless)",
+         "liquid":"akkimariacid",
          "source":"true"
         }
     },
@@ -36,19 +47,27 @@
     {
      "0":
         {
-         "image":"./../../../../tiled/avikan-custom/liquids/centensianliquid.png"
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/liquids\/centensianliquid.png"
         },
      "1":
         {
-         "image":"./../../../../tiled/avikan-custom/liquids/centensianliquid_source.png"
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/liquids\/centensianliquid_source.png"
         },
      "2":
         {
-         "image":"./../../../../tiled/avikan-custom/liquids/quicksand.png"
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/liquids\/quicksand.png"
         },
      "3":
         {
-         "image":"./../../../../tiled/avikan-custom/liquids/quicksand_source.png"
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/liquids\/quicksand_source.png"
+        },
+     "4":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/liquids\/akkimariacid.png"
+        },
+     "5":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/liquids\/akkimariacid_source.png"
         }
     },
  "tilewidth":8

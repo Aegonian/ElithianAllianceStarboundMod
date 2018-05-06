@@ -1,8 +1,24 @@
 {
-  //AVIKAN QUEST - STOPPING THE CORRUPTION  
+  //AVIKAN QUEST - STOPPING THE CORRUPTION
   "vanguarddronebattle1" : {
     "type" : "mission",
     "text" : "Your target is the Violated Elite Drahl located in this area. Take it out, then find the return teleporter in a small storage room to the east.",
+    "persistTime" : 8.0
+  },
+  //ALLIANCE QUEST - ???
+  "akkimaridronebattle1" : {
+    "type" : "mission",
+    "text" : "You'll find a group of Akkimari scavengers beyond the cliffs ahead. Be careful: they appear to be heavily armed, and are assisted by drones and a Chaseflight.",
+    "persistTime" : 8.0
+  },
+  "akkimaridronebattle2" : {
+    "type" : "mission",
+    "text" : "The target you are after is the large Akkimari Justicar just up ahead. Take it out, then find a return teleporter further to the east.",
+    "persistTime" : 8.0
+  },
+  "akkimaridronebattle3" : {
+    "unique" : false,
+    "text" : "I have decrypted the security code for the door ahead. The passcode to unlock the door is 55512.",
     "persistTime" : 8.0
   }
 }
