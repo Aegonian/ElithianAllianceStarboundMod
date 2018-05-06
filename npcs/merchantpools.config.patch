@@ -547,12 +547,12 @@
 		"value" : [
 			[ 0, [
 			  //CODICES
-			  { "item": { "name": "aegihistory1" }, "rarity": 0.5, "price" : 500 },
-			  { "item": { "name": "aegihistory2" }, "rarity": 0.5, "price" : 500 },
-			  { "item": { "name": "aegihistory3" }, "rarity": 0.5, "price" : 500 },
-			  { "item": { "name": "aegihistory4" }, "rarity": 0.5, "price" : 500 },
-			  { "item": { "name": "aegihistory5" }, "rarity": 0.5, "price" : 500 },
-			  { "item": { "name": "aegihistory6" }, "rarity": 0.5, "price" : 500 }
+			  { "item": { "name": "aegihistory1-codex" }, "rarity": 0.5, "price" : 500 },
+			  { "item": { "name": "aegihistory2-codex" }, "rarity": 0.5, "price" : 500 },
+			  { "item": { "name": "aegihistory3-codex" }, "rarity": 0.5, "price" : 500 },
+			  { "item": { "name": "aegihistory4-codex" }, "rarity": 0.5, "price" : 500 },
+			  { "item": { "name": "aegihistory5-codex" }, "rarity": 0.5, "price" : 500 },
+			  { "item": { "name": "aegihistory6-codex" }, "rarity": 0.5, "price" : 500 }
 			] ]
 		]
 	},
