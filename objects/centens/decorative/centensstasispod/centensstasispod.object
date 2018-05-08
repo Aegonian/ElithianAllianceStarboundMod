@@ -1,0 +1,44 @@
+{
+  "objectName" : "centensstasispod",
+  "colonyTags" : ["centens"],
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 1500,
+  "description" : "A stasis pod. It can sustain someone in cryosleep for millenia.",
+  "shortdescription" : "Centensian Stasis Pod",
+  "race" : "centens",
+
+  "apexDescription" : "A stasis pod! Is anyone inside?",
+  "avianDescription" : "This stasis pod looks ancient - is anyone inside?",
+  "floranDescription" : "Sssleeping box lookss old...",
+  "glitchDescription" : "Curious. Is anyone inside the stasis pod?",
+  "humanDescription" : "An ancient stasis pod - is there anyone inside of it?",
+  "hylotlDescription" : "A stasis pod like this can keep someone alive for millenia.",
+
+  "aegiDescription" : "A Centensian stasis pod! Is there anyone inside?",
+  "avikanDescription" : "This stasis pod was built by the Old Ones! Could it still have someone inside?",
+  "erixianDescription" : "A Centensian stasis pod. I can't see if anyone's inside.",
+  "trinkDescription" : "This stasis pod was created by the Centens. There doesn't seem to be a way to look inside...",
+  "hymidDescription" : "Could it be? A Centensian stasis pod!",
+  "notixDescription" : "This stasis pod is locked tight - it won't open without the proper access key.",
+  "jorgasianDescription" : "A Centensian stasis pod - is anyone inside?",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "A stasis pod built by the Ce'Tennan. It won't open without the proper access key.",
+  "drodenDescription" : "Detected Centensian stasis. Occupant status: unknown.",
+  
+  "inventoryIcon" : "centensstasispodicon.png",
+  "orientations" : [
+    {
+      "image" : "centensstasispod.png",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ]
+}

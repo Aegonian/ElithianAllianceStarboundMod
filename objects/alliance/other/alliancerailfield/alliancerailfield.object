@@ -106,7 +106,7 @@
         [0.75, 7],
         [0.25, 7]
       ],
-      "collisionKind" : "slippery",
+      "collisionKind" : "dynamic",
       "categoryWhitelist" : ["monster", "npc"],
       "enabled" : false
     },
@@ -117,7 +117,7 @@
         [7, 0.75],
         [0, 0.75]
       ],
-      "collisionKind" : "slippery",
+      "collisionKind" : "dynamic",
       "categoryWhitelist" : ["monster", "npc"],
       "enabled" : false
     }

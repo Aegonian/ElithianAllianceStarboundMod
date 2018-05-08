@@ -3,7 +3,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJzt1UFugzAURVHYDmokhl1elvZm2VYbFdRfZBt\/2w0m3CfdQSXTwEmTahju6rPhJB3thB9+PXa0C374naGjnfDDr8eOdsEPvzOES11VHsNJp3Zdzs5O9V3SzU51XdbNTuVd3u45lXd5u3UqC79lKgs7M\/nDz0z+8DOTv27sPsdwrc7nTP7wM5M\/\/MzkDz8z+cPPTP7wM5M\/\/MzkDz8z+cPPTP7wM5M\/\/MzkDz8z+cPPTP7wM5M\/\/MzkD79lKivqpxcb4lc3\/H5W+ly37zPz0jT+\/HxLXLc9Ny3XlkzlJf1UYFjqt1rMxmTPb3v+6n7zppSfNZsr\/FTXrp+chjWf3+1nMeUxB\/xS3qGpviw\/ZRg+lmJ+j53rrYX9Howt5DePv\/exN7Up208Bx0eglF+oddPm7y73\/8dkrOeM12lol\/L7c257L88zsfss7WMM1+p8rH\/yi9barYde6fdOhhVuRX5HP29ndjl+ye\/BMxS79xf5ndYx9LwN3ar8jvDMff3GPq38shxjlrnnvG4d5PXLdlyNcs+dxKuVn9vyTWvhl2P5rvat\/e4Vv\/toi178Wr4HRERERERERERERERERKfpC0LCL0U=",
+         "data":"eJzt1UFugzAQRmE4EmokL3u1XC47DtVWJQpFxhj\/ZsZO30hvUclpxl8T+hiG+6PNhk7ydsIPvxbzdsEPvx7ydsIPvxbzdsEPvx7CxdFv6HRa8DO+8iXj4Wd+yYvHys\/+ZnZztZ\/DlUznSj+H67gMftpc4edxD8\/BTxv8tKnpZ7375xiv1vmcwU\/bAT9tB\/y0HfDTdsBP2wE\/bQf8tB3w03bAT9sBP20H\/LQd8NN2wE\/bAT9tB\/zK37\/ALulnbYifNvhp97p9nwlL0\/j78y3xuu25aXltyRTaHfqVGJb6PS3CyuTIb3v+v\/uFTSm\/tVkQ\/AS7LL+zhsr3d\/tdTHmEiF\/KOzaiXbZfjuG8tOc3H7x+bbF+Du5NzC+Mrz2OpoLdKb+Y4xwp5RfrOdPmc5f7\/2NaWYeM96lol\/L7c267y8+ZvT1L+xjj1Tq\/l\/Xnr7ZbC1n6vZOh9fPP+76N2eX4JZ+DPZR4hlt+\/rpzjN23opvk5+GZ+\/6VfWr5ZTnuWSrmxh5X+2U7Po3OmjdgYuF32vJNq+GXY\/mu9rX97sLv9rZoxa\/m34CIiIiIiIiIiIiIiIiom74AkXyPHg==",
          "encoding":"base64",
          "height":80,
          "name":"back",
@@ -16,7 +16,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJzt10sOgyAUQFHdTxOn3f\/EbXXQOJBgKz4UP+ckzGiEG6ix6wAAAAAAAIA7evf5UWv+3ekXo1+MfjE1+g366beRfjH+\/2Kcvxj9Ykp7uL9z+sUMmXa\/+qXzn94vd\/b+9cs1fKpcizX90t89Vel9dH\/nSnt4f8z5\/vi6676O4rsgpvQ9ypz7u82YjLTfeOCz93xWTbl158bUb499rl1DS2vXGBmvPj9qzW\/d9YiGrcaeWu\/tqt1Srfd65XaT1nuOdDpDv6W1nHEsrfuMWt+3s5yrGkrOQrTb3a3dv14AAAAAAAAAcF0ffKRebA==",
+         "data":"eJzt10sKgzAUQFFdU8Fp9w8uqoPiwBBb44vGzzmQWYrJJanYdQAAAAAAAMAdvfv8qDX\/7vSL0S9Gv5ga\/Qb99NtIvxj\/fzHOX4x+MaU93N85\/WKGTLtf\/dL5T++XO3v\/+uUaPlWuxZp+6e+eqvQ+ur9zpT28P+Z8f3zddV9H8V0QU\/oeZc793WZMRtpvPPDZez6rpty6c2Pqt8c+166hpbVrjIxXnx+15rfuekTDVmNPrfd21W6p1nu9crtJ6z1HOp2h39JazjiW1n1Gre\/bWc5VDSVnIdrt7tbuXy8AAAAAAAAAuK4PnoVs2g==",
          "encoding":"base64",
          "height":80,
          "name":"front",
@@ -47,7 +47,7 @@
          "name":"objects",
          "objects":[
                 {
-                 "gid":518,
+                 "gid":619,
                  "height":16,
                  "id":803,
                  "name":"",
@@ -63,7 +63,7 @@
                  "y":368
                 }, 
                 {
-                 "gid":198,
+                 "gid":203,
                  "height":8,
                  "id":804,
                  "name":"",
@@ -79,7 +79,7 @@
                  "y":368
                 }, 
                 {
-                 "gid":197,
+                 "gid":202,
                  "height":8,
                  "id":805,
                  "name":"",
@@ -95,7 +95,7 @@
                  "y":360
                 }, 
                 {
-                 "gid":197,
+                 "gid":202,
                  "height":8,
                  "id":806,
                  "name":"",
@@ -111,7 +111,7 @@
                  "y":368
                 }, 
                 {
-                 "gid":197,
+                 "gid":202,
                  "height":8,
                  "id":807,
                  "name":"",
@@ -205,7 +205,7 @@
          "name":"anchors etc",
          "objects":[
                 {
-                 "gid":195,
+                 "gid":200,
                  "height":8,
                  "id":708,
                  "name":"",
@@ -221,7 +221,7 @@
                  "y":104
                 }, 
                 {
-                 "gid":195,
+                 "gid":200,
                  "height":8,
                  "id":710,
                  "name":"",
@@ -237,7 +237,7 @@
                  "y":104
                 }, 
                 {
-                 "gid":195,
+                 "gid":200,
                  "height":8,
                  "id":711,
                  "name":"",
@@ -253,7 +253,7 @@
                  "y":368
                 }, 
                 {
-                 "gid":195,
+                 "gid":200,
                  "height":8,
                  "id":712,
                  "name":"",
@@ -269,7 +269,7 @@
                  "y":368
                 }, 
                 {
-                 "gid":195,
+                 "gid":200,
                  "height":8,
                  "id":715,
                  "name":"",
@@ -285,7 +285,7 @@
                  "y":232
                 }, 
                 {
-                 "gid":195,
+                 "gid":200,
                  "height":8,
                  "id":716,
                  "name":"",
@@ -301,7 +301,7 @@
                  "y":232
                 }, 
                 {
-                 "gid":196,
+                 "gid":201,
                  "height":8,
                  "id":729,
                  "name":"",
@@ -317,7 +317,7 @@
                  "y":392
                 }, 
                 {
-                 "gid":196,
+                 "gid":201,
                  "height":8,
                  "id":730,
                  "name":"",
@@ -365,27 +365,27 @@
          "source":"..\/..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/materials.json"
         }, 
         {
-         "firstgid":191,
+         "firstgid":196,
          "source":"..\/..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/miscellaneous.json"
         }, 
         {
-         "firstgid":211,
+         "firstgid":218,
          "source":"..\/..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/liquids.json"
         }, 
         {
-         "firstgid":239,
+         "firstgid":246,
          "source":"..\/..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/supports.json"
         }, 
         {
-         "firstgid":275,
+         "firstgid":282,
          "source":"..\/..\/..\/..\/tilesets\/avikan-custom\/theamaterials.json"
         }, 
         {
-         "firstgid":318,
+         "firstgid":379,
          "source":"..\/..\/..\/..\/tilesets\/avikan-custom\/theaobjects-avikan.json"
         }, 
         {
-         "firstgid":511,
+         "firstgid":612,
          "source":"..\/..\/..\/..\/tilesets\/avikan-custom\/theaobjects-centens.json"
         }],
  "tilewidth":8,

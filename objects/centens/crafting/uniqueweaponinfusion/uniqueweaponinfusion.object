@@ -1,0 +1,62 @@
+{
+  "objectName" : "uniqueweaponinfusion",
+  "colonyTags" : ["centens"],
+  "printable" : false,
+  "rarity" : "Legendary",
+  "description" : "An ancient construct overflowing with energy. Perhaps my equipment can be strengthened here.",
+  "shortdescription" : "Weapon Infusion Station",
+  "race" : "centens",
+  "category" : "crafting",
+  "price" : 2500,
+  
+  "lightColor" : [48, 91, 114],
+
+  "apexDescription" : "This construct is overflowing with energy. Maybe I can strengthen my equipment here.",
+  "avianDescription" : "This almost looks like an ancient alien altar. Some of my equipment seems to pulse as I come closer.",
+  "floranDescription" : "Floran make weaponss ssstronger here.",
+  "glitchDescription" : "Compelled. Something about this construct draws me closer...",
+  "humanDescription" : "Some of my equipment is starting to pulsate. It's like this construct is resonating with my gear.",
+  "hylotlDescription" : "This mysterious construct overflows with energy. My equipment starts to pulsate as I come closer...",
+  "novakidDescription" : "Like some kinda star forge, I bet that this construct can strengthen my equipment.",
+
+  "aegiDescription" : "Some of my gear is starting to pulsate, as though this construct is calling to it.",
+  "avikanDescription" : "An ancient construct left behind by the Old Ones. Some of my powerful equipment is resonating with its energy.",
+  "erixianDescription" : "It's like this construct is resonating with some of my weapons. I should investigate.",
+  "trinkDescription" : "The energy of this Centensian construct is resonating with some of my equipment.",
+  "hymidDescription" : "This construct is overflowing with energy, and my equipment is starting to resonate with it...",
+  "notixDescription" : "The hum produced by this construct is almost painful. There must be a lot of energy flowing through here.",
+  "jorgasianDescription" : "The energy flowing through this construct is resonating with some of my equipment.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Analysis complete. Centensian construct. Energy may be used to strengthen specific equipment.",
+  "akkimariDescription" : "Strange energy flows here. Akki's weapons resonate. Bathe them in the light?",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "uniqueweaponinfusion.png:<color>.<frame>", "fullbright" : true }, { "image" : "uniqueweaponinfusionlit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-32, 0],
+      "frames" : 4,
+      "animationCycle" : 0.4,
+      "lightPosition" : [1, 3],
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "objectType" : "container",
+
+  "openSounds" : [ "/sfx/objects/chest_medium_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/chest_medium_close.ogg" ],
+  "slotCount" : 3,
+  "uiConfig" : "/interface/scripted/uniqueweaponinfusion/uniqueweaponinfusiongui.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600,
+
+  "scripts" : [ "uniqueweaponinfusion.lua" ],
+  "scriptDelta" : 5
+}

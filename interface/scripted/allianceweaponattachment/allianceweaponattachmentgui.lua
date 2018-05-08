@@ -1,5 +1,4 @@
 require "/scripts/util.lua"
-require "/scripts/interp.lua"
 
 --Slots: 0 = unmodded weapon, 1 = attachment, 2 = assembled weapon
 

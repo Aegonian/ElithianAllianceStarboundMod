@@ -1,0 +1,29 @@
+{
+  "materialId" : 30163,
+  "materialName" : "centensvertglowpanel2",
+  "particleColor" : [203, 196, 193, 255],
+  "itemDrop" : "centensvertglowpanel2", 
+  "shortdescription" : "Glowing Centensian Panel",
+  
+  "description" : "An ancient, glowing panel. It has no visible power source.",
+  "glitchDescription" : "Fascinated. This ancient panel still glows bright.",
+  "floranDescription" : "Thisss panel glowsss.",
+  "novakidDescription" : "Somehow this 'ere panel glows, yet there's no source of power connected to it.",
+  
+  "drodenDescription" : "Analysis complete. Detected Centensian lighting technology.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "centensvertglowpanel2.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 80,
+    "radiantLight" : [44, 90, 112]
+  }
+}

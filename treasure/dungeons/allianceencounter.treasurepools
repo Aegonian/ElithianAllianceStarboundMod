@@ -1,6 +1,21 @@
 {
 	//ALLIANCE SETTLEMENTS
   "alliancecrate" : [
+    [0, {
+      "poolRounds" : [
+        [0.6, 0],
+        [0.2, 1],
+        [0.1, 2],
+        [0.1, 3]
+      ],
+	  "pool" : [
+        {"weight" : 0.10, "pool" : "alliancefarming" },
+		{"weight" : 0.30, "pool" : "alliancecraftingmaterials" },
+		{"weight" : 0.20, "item" : ["alliancemetal", 2] },
+		{"weight" : 0.10, "pool" : "alliancecodex" },
+		{"weight" : 0.10, "pool" : "aegiclothing" }
+      ]
+    } ],
     [1, {
       "poolRounds" : [
         [0.6, 1],
@@ -20,6 +35,21 @@
   ],
 
   "alliancecratelarge" : [
+    [0, {
+      "poolRounds" : [
+        [0.3, 0],
+        [0.4, 1],
+        [0.2, 2],
+        [0.1, 3]
+      ],
+      "pool" : [
+        {"weight" : 0.10, "pool" : "alliancefarming" },
+		{"weight" : 0.25, "pool" : "alliancecraftingmaterials" },
+		{"weight" : 0.20, "item" : ["alliancemetal", 3] },
+		{"weight" : 0.10, "pool" : "alliancecodex" },
+		{"weight" : 0.10, "pool" : "aegiclothing" }
+      ]
+    } ],
     [1, {
       "poolRounds" : [
         [0.3, 1],
@@ -39,6 +69,19 @@
   ],
   
   "allianceshippingcontainer" : [
+    [0, {
+      "poolRounds" : [
+        [0.3, 4],
+        [0.4, 6],
+        [0.2, 8],
+        [0.1, 10]
+      ],
+      "pool" : [
+		{"weight" : 0.9, "pool" : "alliancecraftingmaterials" },
+		{"weight" : 0.03, "pool" : "alliancecodex" },
+		{"weight" : 0.03, "pool" : "aegiclothing" }
+      ]
+    } ],
     [1, {
       "poolRounds" : [
         [0.3, 6],

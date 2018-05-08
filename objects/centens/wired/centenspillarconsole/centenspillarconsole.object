@@ -1,0 +1,68 @@
+{
+  "objectName" : "centenspillarconsole",
+  "colonyTags" : ["centens","wired"],
+  "rarity" : "Rare",
+  "category" : "wire",
+  "printable" : false,
+  "price" : 500,
+  "description" : "A hard holographic interface.",
+  "shortdescription" : "Centensian Pillar Console",
+  "race" : "centens",
+
+  "apexDescription" : "A hard holographic interface. I have no idea how this was achieved.",
+  "avianDescription" : "It's ancient, yet it shows no signs of age. Is this Kluex's work?",
+  "floranDescription" : "Ssscreen feels hard, but ssscreen is only light... Floran iss confused.",
+  "glitchDescription" : "Amazed. This piece of technology is fascinatingly advanced.",
+  "humanDescription" : "A hard holographic screen. Trying to stick my hand through it is like moving through a thick jelly.",
+  "hylotlDescription" : "An ancient console. It is quite remarkable.",
+  "novakidDescription" : "Now this is one strange device. It's made of light, but I can touch it.",
+
+  "aegiDescription" : "This Centensian interface is strange kind of hard hologram.",
+  "avikanDescription" : "The Old Ones built this. It still functions, even after eons of disuse.",
+  "erixianDescription" : "This hologram is hard enough to injure you if you run into it.",
+  "trinkDescription" : "A hard holographic interface built by the Centens.",
+  "hymidDescription" : "This was built by the Centens. How the hologram manages to grow hard is beyond me.",
+  "notixDescription" : "It's strange how quiet this console is.",
+  "jorgasianDescription" : "A hard holographic interface. Centensian in nature, of course.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Analysis. Detected Centensian interface.",
+  
+  "lightColor" : [45, 90, 115],
+  "lightColorOff" : [30, 60, 115],
+
+  "inventoryIcon" : "centenspillarconsoleicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "centenspillarconsolepreview.png",
+      "imagePosition" : [-16, 0],
+      "lightPosition" : [0, 2],
+	  
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "scripts" : [
+    "/objects/wired/switch/switch.lua"
+  ],
+  "scriptDelta" : 5,
+  
+  "defaultSwitchState" : true,
+
+  "animation" : "centenspillarconsole.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/console_generic_switchon.ogg" ],
+      "off" : [ "/sfx/objects/console_generic_switchoff.ogg" ]
+    }
+  },
+  "animationParts" : {
+    "bg" : "centenspillarconsolelit.png",
+    "fg" : "centenspillarconsole.png"
+  },
+  "animationPosition" : [-16, 0],
+
+  "outputNodes" : [ [1, 0] ]
+}

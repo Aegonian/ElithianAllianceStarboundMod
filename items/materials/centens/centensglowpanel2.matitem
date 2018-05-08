@@ -1,0 +1,12 @@
+{
+  "itemName" : "centensglowpanel2",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Rare",
+  "inventoryIcon" : "centensglowpanel2.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "description" : "A glowing panel.",
+  "shortdescription" : "Glowing Centensian Panel",
+
+  "materialId" : 30162
+}

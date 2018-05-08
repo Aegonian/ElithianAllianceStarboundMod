@@ -5,8 +5,8 @@
 
     },
  "spacing":0,
- "tilecount":19,
- "tileheight":80,
+ "tilecount":22,
+ "tileheight":256,
  "tileproperties":
     {
      "0":
@@ -97,12 +97,36 @@
          "object":"centensmonolith2",
          "tilesetDirection":"right"
         },
+     "19":
+        {
+         "\/\/shortdescription":"Centensian Hover Light",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"centenshoverlight2",
+         "tilesetDirection":"right"
+        },
      "2":
         {
          "\/\/shortdescription":"Centensian Container",
          "imagePositionX":"-8",
          "imagePositionY":"0",
          "object":"centenschest",
+         "tilesetDirection":"right"
+        },
+     "20":
+        {
+         "\/\/shortdescription":"Centensian Pillar Console",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"centenspillarconsole",
+         "tilesetDirection":"right"
+        },
+     "21":
+        {
+         "\/\/shortdescription":"Weapon Infusion Station",
+         "imagePositionX":"-32",
+         "imagePositionY":"0",
+         "object":"uniqueweaponinfusion",
          "tilesetDirection":"right"
         },
      "3":
@@ -123,7 +147,7 @@
         },
      "5":
         {
-         "\/\/shortdescription":"Centensian Light",
+         "\/\/shortdescription":"Centensian Hover Light",
          "imagePositionX":"0",
          "imagePositionY":"0",
          "object":"centenshoverlight",
@@ -208,9 +232,21 @@
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/centens\/centensmonolith2.png"
         },
+     "19":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/centens\/centenshoverlight2.png"
+        },
      "2":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/centens\/centenschest.png"
+        },
+     "20":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/centens\/centenspillarconsole.png"
+        },
+     "21":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/centens\/uniqueweaponinfusion.png"
         },
      "3":
         {

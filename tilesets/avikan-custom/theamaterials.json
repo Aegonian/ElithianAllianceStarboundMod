@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":93,
+ "tilecount":97,
  "tileheight":8,
  "tileproperties":
     {
@@ -559,6 +559,26 @@
         {
          "\/\/shortdescription":"Unbreakable Dirt",
          "material":"thea-unbreakabledirt"
+        },
+     "93":
+        {
+         "\/\/shortdescription":"Glowing Centensian Panel",
+         "material":"centensglowpanel2"
+        },
+     "94":
+        {
+         "\/\/shortdescription":"Sloped Centensian Panel",
+         "material":"centensslopedpanel"
+        },
+     "95":
+        {
+         "\/\/shortdescription":"Glowing Centensian Panel (vert)",
+         "material":"centensvertglowpanel"
+        },
+     "96":
+        {
+         "\/\/shortdescription":"Glowing Centensian Panel (vert)",
+         "material":"centensvertglowpanel2"
         }
     },
  "tiles":
@@ -934,6 +954,22 @@
      "92":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/thea-unbreakabledirt.png"
+        },
+     "93":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/centensglowpanel2.png"
+        },
+     "94":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/centensslopedpanel.png"
+        },
+     "95":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/centensvertglowpanel.png"
+        },
+     "96":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/centensvertglowpanel2.png"
         }
     },
  "tilewidth":8

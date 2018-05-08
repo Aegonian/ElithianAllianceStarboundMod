@@ -1,0 +1,52 @@
+{
+  "objectName" : "centenshoverlight2",
+  "colonyTags" : ["centens", "light"],
+  "rarity" : "Rare",
+  "category" : "light",
+  "printable" : false,
+  "price" : 250,
+  "description" : "A levitating light. Ancient, yet still functional.",
+  "shortdescription" : "Centensian Hover Light",
+  "race" : "centens",
+  "hydrophobic" : false,
+
+  "apexDescription" : "A hovering light. Fancy.",
+  "avianDescription" : "A pretty, hovering light.",
+  "floranDescription" : "Floran not understand how light floatsss.",
+  "glitchDescription" : "Impressed. This hovering light uses technology beyond ours.",
+  "humanDescription" : "A hovering light. Don't bump your head!",
+  "hylotlDescription" : "A hovering light. A feat of technology, but unnecessary underwater.",
+
+  "aegiDescription" : "A hovering light, built by the Centens. Still functional.",
+  "avikanDescription" : "This light still burns after eons of use, and will keep burning until the star that fuels it is exhausted.",
+  "erixianDescription" : "A hovering light. Impressive.",
+  "trinkDescription" : "A hovering light, built by the Centens.",
+  "hymidDescription" : "A hovering light. I have no idea how it works.",
+  "notixDescription" : "An advanced light that hovers in the air.",
+  "jorgasianDescription" : "An advanced, hovering light.",
+  "centensDescription" : "The jumpgates powering this light still work. Our design was flawless.",
+  "dremetonDescription" : "An efficient light that hovers gently in the air.",
+  "theleanDescription" : "A hovering light. Built using Centensian technology, no doubt.",
+  "drodenDescription" : "Detected Centensian technology. Hovering light confirmed.",
+  
+  "statusEffects" : [ ],
+  
+  "lightColor" : [85, 173, 214],
+  "flickerDistance" : 0.5,
+  "flickerStrength" : 0.05,
+
+  "inventoryIcon" : "centenshoverlight2icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "centenshoverlight2.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "frames" : 6,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/electriclight.ogg"
+
+}
