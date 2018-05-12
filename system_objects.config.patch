@@ -95,9 +95,42 @@
 		"description" : "This ship acknowledges our communications and her captain cordially invites us to pay a visit."
 	  }
 	}
-  }
+  },
   
   //==========================================================================================================
   //============================================ STATIC LOCATIONS ============================================
   //==========================================================================================================
+  
+  //Nothing yet!
+  
+  //==========================================================================================================
+  //============================================ TEMPORARY LOCATIONS ============================================
+  //==========================================================================================================
+  
+  //PECULIAR ANOMALIES
+  {
+    "op": "add",
+    "path": "/thea-peculiaranomaly",
+	"value": {
+	  "warpAction" : "InstanceWorld:thea-spaceencounter",
+	  "skyParameters" : {
+		"seed" : 0,
+		"horizonClouds" : false,
+		"horizonImages" : [ { "left": "/celestial/system/peculiaranomaly/peculiaranomalyhorizonleft.png", "right": "/celestial/system/peculiaranomaly/peculiaranomalyhorizonright.png" } ]
+	  },
+
+	  "moving" : false,
+	  "speed" : 0,
+	  "orbitRange" : [0, 0],
+	  "generatedParameters" : {
+		"displayName" : "/celestial/thea-peculiaranomalynames.config:nameGen"
+	  },
+	  "lifeTime" : [1500, 2100],
+	  "parameters" : {
+		"icon" : "/celestial/system/peculiaranomaly/peculiaranomaly.png",
+		"displayName" : "???",
+		"description" : "Highly peculiar energy readings have been detected, but the celestial interference prevents a detailed scan. An investigation is warranted."
+	  }
+	}
+  }
 ]

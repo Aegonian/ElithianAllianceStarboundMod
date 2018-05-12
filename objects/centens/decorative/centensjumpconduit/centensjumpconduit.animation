@@ -1,0 +1,97 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "light" : {
+        "default" : "on",
+        "states" : {
+          "on" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "loop"
+          },
+          "off" : {
+            "frames" : 1
+          },
+          "turnon" : {
+            "frames" : 5,
+            "cycle" : 0.4,
+            "mode" : "transition",
+            "transition" : "on"
+          },
+          "turnoff" : {
+            "frames" : 5,
+            "cycle" : 0.4,
+            "mode" : "transition",
+            "transition" : "off"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "bg" : {
+        "properties" : {
+          "centered" : false
+        },
+        "partStates" : {
+          "light" : {
+            "on" : {
+              "properties" : {
+                "image" : "<partImage>:active.<frame>",
+                "fullbright" : true
+              }
+            },
+            "off" : {
+              "properties" : {
+                "image" : "<partImage>:off.<frame>",
+                "fullbright" : true
+              }
+            },
+            "turnon" : {
+              "properties" : {
+                "image" : "<partImage>:start.<frame>",
+                "fullbright" : true
+              }
+            },
+            "turnoff" : {
+              "properties" : {
+                "image" : "<partImage>:stop.<frame>",
+                "fullbright" : true
+              }
+            }
+          }
+        }
+      },
+      "fg" : {
+        "properties" : {
+          "centered" : false,
+          "zLevel" : 1
+        },
+        "partStates" : {
+          "light" : {
+            "on" : {
+              "properties" : {
+                "image" : "<partImage>:active.<frame>"
+              }
+            },
+            "off" : {
+              "properties" : {
+                "image" : "<partImage>:off.<frame>"
+              }
+            },
+            "turnon" : {
+              "properties" : {
+                "image" : "<partImage>:start.<frame>"
+              }
+            },
+            "turnoff" : {
+              "properties" : {
+                "image" : "<partImage>:stop.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

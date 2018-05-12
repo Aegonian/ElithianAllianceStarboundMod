@@ -1,0 +1,31 @@
+{
+  "id" : "shardbreakertool3",
+  "prerequisites" : [ "shardbreakertool2" ],
+  "title" : "^orange;Tools of the Ancients III",
+  "text" : "The tool uses a Xanafian Shard as its power source, so you'll need to find a new one. ^green;Find some ruins of the Old Ones^reset;, and hopefully you'll find a ^orange;Centensian Relic^reset; - a small hovering cube - which should contain a Shard. Bring it to Vanhas - he'll know how to extract the Shard once you have the relic.",
+  "completionText" : "Adako told me to expect you. I can open that relic for you.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "avikanmerittoken", 5 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "questGiver",
+      "questComplete" : "questReceiver"
+    },
+	"followUp" : "shardbreakertool4",
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "centensrelic",
+        "count" : 1,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Find ^orange;Vanhas ^reset;in the ^orange;Starfarer's Refuge^reset;"
+  }
+}

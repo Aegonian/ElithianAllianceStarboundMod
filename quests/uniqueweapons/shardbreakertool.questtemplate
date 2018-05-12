@@ -1,0 +1,31 @@
+{
+  "id" : "shardbreakertool",
+  "prerequisites" : [],
+  "title" : "^orange;Tools of the Ancients",
+  "text" : "I found the broken casing of some ancient tool. ^green;If I can find someone who knows Centensian technology, they may be able to repair it.^reset;",
+  "completionText" : "Ah, Captain, what do you have for me? Hmm, I have seen casings like these before. I think I can repair it for you.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "avikanmerittoken", 5 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "player",
+      "questComplete" : "questReceiver"
+    },
+	"followUp" : "shardbreakertool2",
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "shardbreakercasing",
+        "count" : 1,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Find ^orange;Adako ^reset;in the ^orange;Starfarer's Refuge^reset;"
+  }
+}

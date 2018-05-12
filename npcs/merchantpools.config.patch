@@ -27,6 +27,7 @@
 			  { "item": { "name": "avikanwatcherpass" }, "prerequisiteQuest" : "avikanstoryhidden", "price" : 5000 },
 			  { "item": { "name": "keffriderslicense" }, "prerequisiteQuest" : "keffrider4", "price" : 5000 },
 			  { "item": { "name": "avikangunrangepass" }, "prerequisiteQuest" : "avikangunrangeunlock", "price" : 5000 },
+			  { "item": { "name": "centensbeamaxe" }, "prerequisiteQuest" : "shardbreakertool4", "price" : 100000 },
 			  //Starter Weapons
 			  { "item": { "name": "brokenprotectoratebroadsword" }, "prerequisiteQuest" : "protectorate", "price" : 5000 },
 			  { "item": { "name": "avikan-brokenvhaleihanspear" }, "prerequisiteQuest" : "avikancustomtailoring", "price" : 5000 },

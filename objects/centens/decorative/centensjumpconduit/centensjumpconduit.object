@@ -1,0 +1,110 @@
+{
+  "objectName" : "centensjumpconduit",
+  "colonyTags" : ["centens"],
+  "rarity" : "Common",
+  "category" : "light",
+  "price" : 600,
+  "description" : "A conduit through which concentrated jumpfire is conducted.",
+  "shortdescription" : "Centensian Jumpfire Conduit",
+  "race" : "centens",
+  "printable" : false,
+  "hydrophobic" : false,
+  
+  "health" : 4,
+
+  "apexDescription" : "The heat radiating from this conduit is unbearable.",
+  "avianDescription" : "I feel like I'm flying too close to the sun. The heat is incredible.",
+  "floranDescription" : "Floran feeling too hot. Floran fearsss ssspontaneous combusstion...",
+  "glitchDescription" : "Cautious. The heat radiating from this conduit is almost dangerous.",
+  "humanDescription" : "The heat here is almost unbearable.",
+  "hylotlDescription" : "I shouldn't stay here long. This conduit is far too hot for me.",
+  "novakidDescription" : "This feels like raw solar energy.",
+
+  "aegiDescription" : "This conduit is conducting solar energy. The radiation is weakened by containment fields, but the heat is still almost unbearable.",
+  "avikanDescription" : "The Old Ones harvested stars with ease. Solar energy flows through this conduit.",
+  "erixianDescription" : "A conduit through which solar energy flows. The heat reminds me of home.",
+  "trinkDescription" : "The Centens harvested stars for energy. This conduit is conducting solar energy.",
+  "hymidDescription" : "I could use a drink. This conduit is radiating so much heat that I feel like I'm drying up.",
+  "notixDescription" : "The heat radiated by this conduit is unbearable.",
+  "jorgasianDescription" : "Solar energy flows through this conduit. The containment fields are keeping it contained, but I shouldn't try touching it.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Warning. Heat levels rising. Diverting power to cooling systems...",
+  "akkimariDescription" : "Akki wish Akki could harvest all this energy. Akki could defeat invaders.",
+
+  "lightColor" : [218, 83, 2],
+  "flickerDistance" : 1.0,
+  "flickerStrength" : 0.1,
+
+  "inventoryIcon" : "centensjumpconduiticon.png",
+  "orientations" : [
+    {
+      "image" : "centensjumpconduit.png:<color>.<frame>",
+      "direction" : "right",
+      "imagePosition" : [-16, 0],
+      "frames" : 4,
+      "animationCycle" : 0.4,
+	  
+	  "animationParts" : {
+		"bg" : "centensjumpconduit.png",
+		"fg" : "centensjumpconduitlit.png"
+	  },
+	  "animationPosition" : [-16, 0],
+
+      "spaceScan" : 0.1,
+	  "anchors" : [ "top", "bottom" ],
+
+      "touchDamage" : {
+        "poly" : [ [1, 0.5], [-1, 0.5], [-1, 7.5], [1, 7.5] ],
+        "damage" : 50,
+        "knockback" : 50,
+
+        "damageType" : "Environment",
+        "damageSourceKind" : "jumpweapon",
+		"statusEffects" : [
+		  "jumprifleburn"
+		]
+      }
+    },
+    {
+      "image" : "centensjumpconduitside.png:<color>.<frame>",
+      "direction" : "left",
+      "imagePosition" : [0, -16],
+      "frames" : 4,
+      "animationCycle" : 0.4,
+	  
+	  "animationParts" : {
+		"bg" : "centensjumpconduitside.png",
+		"fg" : "centensjumpconduitsidelit.png"
+	  },
+	  "animationPosition" : [0, -16],
+
+      "spaceScan" : 0.1,
+	  "anchors" : [ "left", "right" ],
+
+      "touchDamage" : {
+        "poly" : [ [0.5, 1], [0.5, -1], [7.5, -1], [7.5, 1] ],
+        "damage" : 50,
+        "knockback" : 50,
+
+        "damageType" : "Environment",
+        "damageSourceKind" : "jumpweapon",
+		"statusEffects" : [
+		  "jumprifleburn"
+		]
+      }
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/avikangenerator.ogg",
+  "animation" : "centensjumpconduit.animation",
+
+  "scripts" : [ "centensjumpconduit.lua" ],
+  "scriptDelta" : 60,
+  
+  "defaultLightState" : true,
+  "interactive" : false,
+
+  "inputNodes" : [ [0, 0] ]
+}

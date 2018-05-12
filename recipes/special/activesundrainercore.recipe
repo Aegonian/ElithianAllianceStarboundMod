@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "centensianliquid", "count" : 50 },
+    { "item" : "sundrainercore", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "activesundrainercore",
+    "count" : 1
+  },
+  "groups" : [ "jumpgateuplinkstation" ]
+}

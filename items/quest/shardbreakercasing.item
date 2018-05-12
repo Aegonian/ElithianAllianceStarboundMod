@@ -1,0 +1,15 @@
+{
+  "itemName" : "shardbreakercasing",
+  "price" : 25,
+  "rarity" : "Legendary",
+  "category" : "Quest Item",
+  "inventoryIcon" : "shardbreakercasing.png",
+  "description" : "An ancient metal casing, likely part of some broken tool. Perhaps it can be mended.",
+  "shortdescription" : "^#BA66FF;Broken Ancient Casing^white;",
+  "itemTags" : [ "questitem" ],
+  
+  "pickupQuestTemplates" : [ "shardbreakertool" ],
+  
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 1
+}

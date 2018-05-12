@@ -32,7 +32,8 @@
       "rules" : [
         [ "maxSpawnCount", [1] ]
       ],
-      "def" : [ "tmx", "akki-tower.json" ]
+      "def" : [ "tmx", "akki-tower.json" ],
+      "minimumThreatLevel" : 2
     }
   ]
 }

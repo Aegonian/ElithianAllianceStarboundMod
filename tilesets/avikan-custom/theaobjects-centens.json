@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":22,
+ "tilecount":29,
  "tileheight":256,
  "tileproperties":
     {
@@ -129,6 +129,62 @@
          "object":"uniqueweaponinfusion",
          "tilesetDirection":"right"
         },
+     "22":
+        {
+         "\/\/shortdescription":"Centensian Column",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"centenscolumn",
+         "tilesetDirection":"right"
+        },
+     "23":
+        {
+         "\/\/shortdescription":"Centensian Jumpfire Conduit",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"centensjumpconduit",
+         "tilesetDirection":"right"
+        },
+     "24":
+        {
+         "\/\/shortdescription":"Centensian Jumpfire Conduit",
+         "imagePositionX":"0",
+         "imagePositionY":"-16",
+         "object":"centensjumpconduit",
+         "tilesetDirection":"left"
+        },
+     "25":
+        {
+         "\/\/shortdescription":"Jumpgate Uplink Station",
+         "imagePositionX":"-64",
+         "imagePositionY":"0",
+         "object":"jumpgateuplinkstation",
+         "tilesetDirection":"right"
+        },
+     "26":
+        {
+         "\/\/shortdescription":"Centensian Teleporter",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"centensianmidteleporter",
+         "tilesetDirection":"right"
+        },
+     "27":
+        {
+         "\/\/shortdescription":"Centensian Teleporter",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"centensianteleporter",
+         "tilesetDirection":"right"
+        },
+     "28":
+        {
+         "\/\/shortdescription":"Unique Weapon Reforger",
+         "imagePositionX":"-32",
+         "imagePositionY":"0",
+         "object":"uniqueweaponcollection",
+         "tilesetDirection":"right"
+        },
      "3":
         {
          "\/\/shortdescription":"Centensian Console",
@@ -248,6 +304,34 @@
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/centens\/uniqueweaponinfusion.png"
         },
+     "22":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/centens\/centenscolumn.png"
+        },
+     "23":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/centens\/centensjumpconduit.png"
+        },
+     "24":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/centens\/centensjumpconduitside.png"
+        },
+     "25":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/centens\/jumpgateuplinkstation.png"
+        },
+     "26":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/centens\/centensianmidteleporter.png"
+        },
+     "27":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/centens\/centensianteleporter.png"
+        },
+     "28":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/centens\/uniqueweaponcollection.png"
+        },
      "3":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/centens\/centensconsole.png"
@@ -277,5 +361,5 @@
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/centens\/jumprifledisplay.png"
         }
     },
- "tilewidth":64
+ "tilewidth":128
 }

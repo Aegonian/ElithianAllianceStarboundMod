@@ -6,6 +6,7 @@
     "value": []
   },*/
   
+  //NPC Spaceships
   {
     "op": "add",
     "path": "/objectSpawnPool/-",
@@ -25,5 +26,12 @@
     "op": "add",
     "path": "/objectSpawnPool/-",
     "value": [0.08, "alliancemerchantship"]
+  },
+  
+  //Temporary Locations
+  {
+    "op": "add",
+    "path": "/objectSpawnPool/-",
+    "value": [0.04, "thea-peculiaranomaly"]
   }
 ]

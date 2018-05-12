@@ -23,7 +23,7 @@
     "lightTransparent" : false,
     "occludesBelow" : true,
     "multiColored" : false,
-    "zLevel" : 80,
+    "zLevel" : 280,
     "radiantLight" : [67, 28, 112]
   }
 }

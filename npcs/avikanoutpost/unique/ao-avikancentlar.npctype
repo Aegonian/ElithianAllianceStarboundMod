@@ -5,8 +5,8 @@
   "npcname" : "Adako",
 
   "scriptConfig" : {
-	"offeredQuests" : [ "oculusward2", "oculusward3" ],
-	"turnInQuests" : [ "oculusward", "oculusward2" ],
+	"offeredQuests" : [ "oculusward2", "oculusward3", "shardbreakertool2", "shardbreakertool3" ],
+	"turnInQuests" : [ "oculusward", "oculusward2", "shardbreakertool", "shardbreakertool2", "shardbreakertool4" ],
   
     "dialog" : {
 	  "converse" : {

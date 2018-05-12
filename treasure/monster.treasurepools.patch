@@ -378,10 +378,10 @@
    "value" : [
 	[1, {
       "pool" : [
-        {"weight" : 0.697, "pool" : "money"},
-		{"weight" : 0.15, "item" : "centensianmetal"},
-		{"weight" : 0.1, "item" : "centensiantech"},
-		{"weight" : 0.05, "item" : "centensianwarpcore"},
+        {"weight" : 0.847, "pool" : "money"},
+		{"weight" : 0.0875, "item" : "centensianmetal"},
+		{"weight" : 0.05, "item" : "centensiantech"},
+		{"weight" : 0.0125, "item" : "centensianwarpcore"},
         {"weight" : 0.003, "item" : "centenskeeperaf"}
       ]
     }]

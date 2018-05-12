@@ -146,6 +146,42 @@
     }
   },
   
+  //====================================== THEA SPACE ENCOUNTER ======================================
+  {
+    "op" : "add",
+    "path" : "/thea-spaceencounter",
+    "value" : {
+      "type" : "FloatingDungeon",
+      "dungeonWorld" : "thea-spaceencounter",
+	  "beamUpRule" : "Anywhere",
+	  "disableDeathDrops" : true,
+
+	  "tempWorldDeleteTime" : 600000,
+
+	  "skyParameters" : {
+		"dayLength" : 10000,
+		"surfaceLevel" : 1000,
+		"spaceLevel" : 3000,
+		"seed" : -5288806180628666923,
+
+		"skyType" : "barren",
+		"skyColoring" : {
+		  "mainColor" : [200, 200, 255],
+
+		  "morningColors" : [[200, 200, 255], [200, 200, 255]],
+		  "dayColors" : [[200, 200, 255], [200, 200, 255]],
+		  "eveningColors" : [[200, 200, 255], [200, 200, 255]],
+		  "nightColors" : [[200, 200, 255], [200, 200, 255]],
+
+		  "morningLightColor" : [120, 120, 120],
+		  "dayLightColor" : [120, 120, 120],
+		  "eveningLightColor" : [120, 120, 120],
+		  "nightLightColor" : [120, 120, 120]
+		}
+	  }
+    }
+  },
+  
   //========================================================================================================
   //============================================ AVIKAN OUTPOST ============================================
   //========================================================================================================
@@ -305,6 +341,50 @@
 			}
 		  ]
 		},
+		"horizonImages" : [ ]
+      }
+    }
+  },
+  
+  //========================================================================================================
+  //============================================ CENTENSIAN WORKSHOP ============================================
+  //========================================================================================================
+  {
+    "op" : "add",
+    "path" : "/centensworkshop",
+    "value" : {
+      "type" : "FloatingDungeon",
+      "dungeonWorld" : "centensworkshop",
+      "seed" : 4321,
+      "spawningEnabled" : false,
+	  "beamUpRule" : "Anywhere",
+      "disableDeathDrops" : true,
+
+      "worldProperties" : {
+        "nonCombat" : false
+      },
+
+      "skyParameters" : {
+		"dayLength" : 100000,
+		"surfaceLevel" : 130,
+		"spaceLevel" : 3000,
+		"seed" : -5288806180628666923,
+	  
+		"skyType" : "atmospheric",
+		"skyColoring" : {
+		  "mainColor" : [128, 200, 255],
+
+		  "morningColors" : [[128, 200, 255], [128, 200, 255]],
+		  "dayColors" : [[128, 200, 255], [128, 200, 255]],
+		  "eveningColors" : [[128, 200, 255], [128, 200, 255]],
+		  "nightColors" : [[128, 200, 255], [128, 200, 255]],
+
+		  "morningLightColor" : [200, 200, 200],
+		  "dayLightColor" : [200, 200, 200],
+		  "eveningLightColor" : [200, 200, 200],
+		  "nightLightColor" : [200, 200, 200]
+		},
+		
 		"horizonImages" : [ ]
       }
     }

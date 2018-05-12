@@ -1,0 +1,20 @@
+{
+  "frameGrid" : {
+    "size" : [32, 64],
+    "dimensions" : [5, 2],
+    "names" : [
+      [ "active.1", "active.2", "active.3", "active.4", "off.1" ],
+	  [ "stop.1", "stop.2", "stop.3", "stop.4", "stop.5" ]
+    ]
+  },
+
+  "aliases" : {
+    "default.0" : "active.1",
+    "default.default" : "active.1",
+	"start.1" : "stop.5",
+	"start.2" : "stop.4",
+	"start.3" : "stop.3",
+	"start.4" : "stop.2",
+	"start.5" : "stop.1"
+  }
+}

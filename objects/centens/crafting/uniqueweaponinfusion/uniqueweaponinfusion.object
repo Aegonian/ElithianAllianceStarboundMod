@@ -11,6 +11,12 @@
   
   "lightColor" : [48, 91, 114],
 
+  "flickerPeriod" : 0.4,
+  "flickerMinIntensity" : 0.95,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.0,
+  "flickerIntensityVariance" : 0.0,
+
   "apexDescription" : "This construct is overflowing with energy. Maybe I can strengthen my equipment here.",
   "avianDescription" : "This almost looks like an ancient alien altar. Some of my equipment seems to pulse as I come closer.",
   "floranDescription" : "Floran make weaponss ssstronger here.",
@@ -47,6 +53,9 @@
       "anchors" : [ "bottom" ]
     }
   ],
+
+  "soundEffect" : "/sfx/objects/scififurnace.ogg",
+  "soundEffectRangeMultiplier" : 1.0,
 
   "objectType" : "container",
 

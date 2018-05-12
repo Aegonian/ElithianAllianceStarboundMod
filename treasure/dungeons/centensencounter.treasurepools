@@ -87,6 +87,14 @@
     } ]
   ],
   
+  "shardbreakercasing" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "shardbreakercasing", 1 ]}
+      ]
+    } ]
+  ],
+  
   "centensianWarpcoreDrop" : [
     [1, {
       "fill" : [

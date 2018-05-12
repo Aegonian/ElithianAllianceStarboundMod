@@ -1,0 +1,47 @@
+{
+  "objectName" : "centenscolumn",
+  "colonyTags" : ["centens"],
+  "rarity" : "Rare",
+  "description" : "A massive column.",
+  "shortdescription" : "Centensian Column",
+  "race" : "centens",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 600,
+
+  "apexDescription" : "A large metal column. Or is it a pillar?",
+  "avianDescription" : "A massive, ancient column. It's incredible that it's still standing.",
+  "floranDescription" : "Floran can't break thisss metal. Floran mad.",
+  "glitchDescription" : "Fascinated. My readings indicate that this column has stood here for tens of thousands of years, maybe more.",
+  "humanDescription" : "Now THAT's a column!",
+  "hylotlDescription" : "Columns are common in many forms of alien architecture. They present an image of strength and serenity.",
+  "novakidDescription" : "That's quite the column.",
+
+  "aegiDescription" : "A Centensian-built column. It's quite massive.",
+  "avikanDescription" : "The Old Ones built many impressive structures.",
+  "erixianDescription" : "I have always loved columns in architecture.",
+  "trinkDescription" : "A large column. These are often used for support, but given that the Centens built it, it likely only serves as decoration.",
+  "hymidDescription" : "A massive column fit for the gods.",
+  "notixDescription" : "A large column. It can support a heavy weight.",
+  "jorgasianDescription" : "Columns almost always look good.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "theleanDescription" : "TODO",
+  "drodenDescription" : "Detected Centensian column.",
+  "akkimariDescription" : "Akki can't scrap this metal. Metal too strong.",
+
+  "inventoryIcon" : "centenscolumnicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "centenscolumn.png:<color>",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ]
+}

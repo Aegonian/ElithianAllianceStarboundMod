@@ -1,0 +1,82 @@
+{
+  "objectName" : "jumpgateuplinkstation",
+  "colonyTags" : ["centens"],
+  "rarity" : "Legendary",
+  "description" : "Some sort of ancient device. Massive amounts of energy flow through it.",
+  "shortdescription" : "Jumpgate Uplink Station",
+  "race" : "centens",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 2500,
+
+  "apexDescription" : "The raw energy flowing through this device is unimaginable...",
+  "avianDescription" : "I have seen powerful Power Crystals, but all of them fade compared to the energy flowing through here.",
+  "floranDescription" : "Floran uncomfortable. Floran afraid of catching fire.",
+  "glitchDescription" : "Uneasy. The raw energy flowing through here could easily melt a whole city.",
+  "humanDescription" : "The amount of energy flowing through here is incredible. It's as if I'm right next to a massive star.",
+  "hylotlDescription" : "Whatever fields are containing this energy are incredibly potent. If the fields failed, this entire place would evaporate in an instant.",
+  "novakidDescription" : "I can feel the primal energy of a star here. It's like it's calling to me...",
+
+  "aegiDescription" : "The energy flowing through here is incredible. How the Centens managed to contain it is beyond me.",
+  "avikanDescription" : "The Old Ones harvested energy directly from the stars. If the containment fields failed, this entire place would evaporate instantly.",
+  "erixianDescription" : "The lava streams on Heragon provide us with much energy, but it all fades in comparison to the energy flowing through here.",
+  "trinkDescription" : "My systems are showing multiple anomalies. Whatever field is containing all this energy, it's also interfering with my computers.",
+  "hymidDescription" : "The raw energy of a star flows through here. I'm not sure how it's even possible.",
+  "notixDescription" : "I don't feel very well... All this heat is painful.",
+  "jorgasianDescription" : "The Centens harvested more energy than the entire Alliance combined ever could.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "theleanDescription" : "TODO",
+  "drodenDescription" : "Detected Old Ones technology. Energy readings spiking. Hazard levels increasing. System anomolies detected.",
+  "akkimariDescription" : "Akki sense much power. Unimaginable power. Enough power to take back Kel'chis?",
+  
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/jumpgateuplinkstationcrafting.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "Jumpgate Uplink Station",
+        "subtitle" : "  Resynchronize defective jumpgates",
+        "icon" : {
+          "file" : "/interface/crafting/jumpgateuplinkstationicon.png"
+        }
+      }
+    },
+    "filter" : [ "jumpgateuplinkstation" ]
+  },
+
+  "lightColor" : [218, 83, 2],
+  "flickerDistance" : 1.0,
+  "flickerStrength" : 0.1,
+
+  "soundEffect" : "/sfx/objects/avikangenerator.ogg",
+
+  "inventoryIcon" : "jumpgateuplinkstationicon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "jumpgateuplinkstation.png:<color>.<frame>", "fullbright" : true }, { "image" : "jumpgateuplinkstationlit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-64, 0],
+      "frames" : 4,
+      "animationCycle" : 0.4,
+      "lightPosition" : [0, 3],
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ]
+    },
+    {
+	  "imageLayers" : [ { "image" : "jumpgateuplinkstation.png:<color>.<frame>", "fullbright" : true }, { "image" : "jumpgateuplinkstationlit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-64, 0],
+      "frames" : 4,
+      "animationCycle" : 0.4,
+      "lightPosition" : [0, 3],
+
+      "spaceScan" : 0.1,
+      "direction" : "left",
+      "flipImages" : true,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

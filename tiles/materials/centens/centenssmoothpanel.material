@@ -19,10 +19,10 @@
   "renderTemplate" : "/tiles/classicmaterialtemplate.config",
   "renderParameters" : {
     "texture" : "centenssmoothpanel.png",
-    "variants" : 5,
+    "variants" : 10,
     "lightTransparent" : false,
     "occludesBelow" : true,
     "multiColored" : false,
-    "zLevel" : 100
+    "zLevel" : 300
   }
 }

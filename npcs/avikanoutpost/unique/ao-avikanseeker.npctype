@@ -6,8 +6,8 @@
 
   "scriptConfig" : {
     	
-	"offeredQuests" : [ "weaponrestorationavikan", "weaponrestorationavikan2" ],
-	"turnInQuests" : [ "weaponrestorationavikan" ],
+	"offeredQuests" : [ "weaponrestorationavikan", "weaponrestorationavikan2", "shardbreakertool4" ],
+	"turnInQuests" : [ "weaponrestorationavikan", "shardbreakertool3" ],
   
     "dialog" : {
 	  "converse" : {

@@ -1,0 +1,33 @@
+{
+  "id" : "shardbreakertool4",
+  "prerequisites" : [ "shardbreakertool3" ],
+  "title" : "^orange;Tools of the Ancients IV",
+  "text" : "Here you go, Captain. ^green;Bring this ^orange;Xanafian Shard^green; back to Adako^reset;, and he can put together that tool you've been working on.",
+  "completionText" : "The Shard is a perfect fit! Here you go, Captain: one fully restored tool of the Old Ones.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "centensbeamaxe", 1 ], [ "avikancache", 1 ], [ "avikanmerittoken", 10 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "questGiver",
+      "questComplete" : "questReceiver"
+    },
+    "requireTurnIn" : true,
+	"acceptItems" : [
+	  "xanafianshard3"
+	],
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "xanafianshard3",
+        "count" : 1,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Return to ^orange;Adako ^reset;in the ^orange;Starfarer's Refuge^reset;"
+  }
+}

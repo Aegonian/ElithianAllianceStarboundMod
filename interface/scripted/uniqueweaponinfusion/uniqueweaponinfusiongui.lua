@@ -13,7 +13,6 @@ function update(dt)
   local itemCheck = false
   local itemLevel = nil
   
-  
   if item then
 	if root.itemHasTag(itemConfig.config.itemName, "theaUnique") then
 	  itemCheck = true

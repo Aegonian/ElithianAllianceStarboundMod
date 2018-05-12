@@ -19,9 +19,10 @@ function valueOfContents()
   local allItems = widget.itemGridItems("itemGrid")
   for _, item in pairs(allItems) do
     local itemValue = 0
-	local itemConfig = root.itemConfig(item.name)
-	if itemConfig.config.meritTokenValue and itemConfig.config.meritTokenValue > 0 then
-	  itemValue = math.ceil(itemConfig.config.meritTokenValue)
+	local itemConfig = root.itemConfig(item) or root.itemConfig(item.name)
+	local configuredValue = itemConfig.parameters.meritTokenValue or itemConfig.config.meritTokenValue or nil
+	if configuredValue and configuredValue > 0 then
+	  itemValue = math.ceil(configuredValue)
 	end
 	value = value + ( itemValue * item.count )
   end

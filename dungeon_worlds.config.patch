@@ -2,6 +2,7 @@
   //==========================================================================================================
   //============================================ SPACE ENCOUNTERS ============================================
   //==========================================================================================================
+  //------------------------ NPC SPACESHIPS ------------------------
   {
     "op" : "add",
     "path" : "/avikanmerchantship",
@@ -78,6 +79,26 @@
 	  "biome" : "space"
     }
   },
+  //------------------------ TEMPORARY LOCATIONS ------------------------
+  {
+    "op" : "add",
+    "path" : "/thea-spaceencounter",
+    "value" : {
+	  "primaryDungeon" : "thea-spaceencounter",
+	  "threatLevel" : 6,
+	  "gravity" : 0,
+	  "airless" : true,
+	  "worldSize" : [1200, 200],
+	  "dungeonBaseHeight" : 150,
+	  "dungeonSurfaceHeight" : 150,
+	  "ambientLightLevel" : [32, 32, 32],
+	  "ambientNoises" : "/sfx/environmental/space_loop4.ogg",
+	  "musicTrack" : "/music/lava-exploration1.ogg",
+	  "environmentStatusEffects" : ["biomeairless", "dontstarve"],
+	  "worldEdgeForceRegions" : "TopAndBottom",
+	  "biome" : "space"
+    }
+  },
   
   //==========================================================================================================
   //============================================ OUTPOSTS ====================================================
@@ -116,6 +137,26 @@
       "biome" : "elithia",
       //"ambientNoises" : "/sfx/environmental/garden_day.ogg",
       "musicTrack" : "/music/planetarium.ogg"
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/centensworkshop",
+    "value" : {
+      "primaryDungeon" : "centensworkshop",
+	  "weatherPool" : [
+		[0.150, "clear"],
+		[0.850, "windstorm"]
+	  ],
+      "threatLevel" : 6,
+      "gravity" : 80,
+      "worldSize" : [2000, 500],
+      "dungeonBaseHeight" : 500,
+	  "dungeonSurfaceHeight" : 200,
+      "ambientLightLevel" : [128, 128, 128],
+      "biome" : "centensskycity",
+      //"ambientNoises" : "/sfx/environmental/garden_day.ogg",
+      "musicTrack" : "/music/the-eternal-tide.ogg"
     }
   },
 

@@ -20,7 +20,7 @@
   "renderParameters" : {
     "texture" : "centensreinforcement.png",
     "variants" : 5,
-    "lightTransparent" : true,
+    "lightTransparent" : false,
     "multiColored" : false,
     "occludesBelow" : false,
     "zLevel" : 0

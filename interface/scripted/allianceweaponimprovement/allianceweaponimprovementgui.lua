@@ -32,7 +32,7 @@ function populateItemList(forceRepop)
     self.upgradeableWeaponItems = upgradeableWeaponItems
     widget.clearListItems(self.itemList)
     widget.setButtonEnabled("btnUpgrade", false)
-
+	
     local showEmptyLabel = true
 
     for i, item in pairs(self.upgradeableWeaponItems) do
