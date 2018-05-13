@@ -22,7 +22,6 @@
   "dropPools" : [],
 
   "scriptConfig" : {
-  
 	"offeredQuests" : [ "avikanmanipulator" ],
 	"turnInQuests" : [ "avikanstorystart", "avikanmanipulator" ],
 

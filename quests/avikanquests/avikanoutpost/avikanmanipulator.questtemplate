@@ -1,0 +1,31 @@
+{
+  "id" : "avikanmanipulator",
+  "prerequisites" : [ "avikanstorystart" ],
+  "title" : "^green;Personalized Manipulation",
+  "text" : "The Vanguard are eager to study and replicate the Matter Manipulator you retrieved from the Protectorate, but they need some materials. ^green;I'm assigning you with retrieving ^orange;20 Manipulator Modules ^green;so that the Vanguard can start replicating the device. ^reset;You'll be rewarded for it too, of course.",
+  "completionText" : "Well done, Captain. I will have my Watchers bring these to the Vanguard. In the mean time, they built you a new casing for your own Matter Manipulator - one more befitting of a Captain of the Nomada. Enjoy it, Captain.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "avikanmanipulatorskin", 1 ], [ "avikancache", 1 ], [ "avikanmerittoken", 20 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "default" : "questGiver"
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "manipulatormodule",
+        "count" : 20,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Return to ^orange;Zaheed ^reset;in the ^orange;Starfarer's Refuge^reset;",
+
+    "giveBlueprints" : [ "avikanmanipulatorskin" ]
+  }
+}

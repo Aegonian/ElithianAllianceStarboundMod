@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "alliancemetal", "count" : 12 },
+    { "item" : "manipulatormodule", "count" : 16 } 
+  ],
+  "output" : {
+    "item" : "alliancemanipulatorskin",
+    "count" : 1
+  },
+  "groups" : [ "plain", "all" ],
+  "duration" : 0.5
+}

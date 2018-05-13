@@ -48,7 +48,9 @@
 	  { "item" : { "name" : "centensianmetal" }, "price" : 1000 },
 	  { "item" : { "name" : "centensrelic" }, "price" : 15000 },
 	  //CRAFTING GUIDES
-	  { "item" : { "name" : "avikancraftingguide" }, "prerequisiteQuest" : "avikancrafting", "price" : 1250 }
+	  { "item" : { "name" : "avikancraftingguide" }, "prerequisiteQuest" : "avikancrafting", "price" : 1250 },
+	  //MANIPULATOR SKINS
+	  { "item" : { "name" : "avikanmanipulatorskin" }, "price" : 25000 }
     ]
   },
   "printable" : false,

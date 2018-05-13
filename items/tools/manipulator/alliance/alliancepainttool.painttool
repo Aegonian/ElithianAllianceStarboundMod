@@ -1,0 +1,46 @@
+{
+  "itemName" : "alliancepainttool",
+  "price" : 0,
+  "inventoryIcon" : "iconpaintmode.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "Primary fire applies paint, secondary changes colour. ^green;Quick select with [Y] key.",
+  "shortdescription" : "Paint Mode",
+
+  "fireTime" : 0.05,
+  "blockRadius" : 3,
+  "altBlockRadius" : 1,
+  "twoHanded" : true,
+  "strikeSounds" : [ "/sfx/tools/paint_splash.ogg" ],
+  "largeImage" : "alliancepainttoollarge.png",
+  "tooltipKind" : "mm",
+  "category" : "Tool",
+
+  "image" : "/items/tools/manipulator/alliance/alliancepainttool.png:0",
+  "endImages" : [ "/humanoid/any/ball.png", "/humanoid/any/tileglow.png", "/humanoid/any/4tileglow.png", "/humanoid/any/ball.png" ],
+  "handPosition" : [-1.5, -0.5],
+  "firePosition" : [5, 0],
+  "segmentsPerUnit" : 1,
+  "nearControlPointElasticity" : 0.1,
+  "farControlPointElasticity" : 0.9,
+  "nearControlPointDistance" : 0.9,
+  "targetSegmentRun" : 1,
+  "innerBrightnessScale" : 20,
+  "firstStripeThickness" : 0.2,
+  "secondStripeThickness" : 0.05,
+  "minBeamWidth" : 1,
+  "maxBeamWidth" : 5,
+  "maxBeamJitter" : 0.2,
+  "minBeamJitter" : 0.1,
+  "minBeamTrans" : 0.6,
+  "maxBeamTrans" : 0.6,
+  "minBeamLines" : 1,
+  "maxBeamLines" : 5,
+
+  "colorNumbers" : [
+    [0, 0, 0, 0], "red", "blue", "green", "yellow", "orange", [210, 45, 193, 255], "black", "white"
+  ],
+  "colorKeys" : [
+    "", ".red", ".blue", ".green", ".yellow", ".orange", ".pink", ".black", ".white"
+  ]
+}

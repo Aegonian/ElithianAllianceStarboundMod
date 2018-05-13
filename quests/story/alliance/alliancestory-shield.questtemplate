@@ -1,0 +1,31 @@
+{
+  "id" : "alliancestory-shield",
+  "mainQuest" : true,
+  "prerequisites" : [ "alliancestory-passpickup" ],
+  "title" : "Report to Admiral Lyiin",
+  "text" : "^orange;Admiral Lyiin ^reset;has requested that you ^green;join him in the ^orange;Command Center^reset;, ambassador. Please go and visit him as soon as possible, and make sure you bring your ^orange;Ambassador's Pass ^reset;with you.",
+  "completionText" : "Welcome back to Creon, Ambassador. Please accept this: it's a shield adorned with the Alliance's emblem. It was meant as a gift to the Protectorate, but now that they are gone, I wanted you to have it.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "allianceemblemshield", 1 ], [ "alliancecache", 1 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "questGiver",
+      "questComplete" : "questReceiver"
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "allianceambassadorpass",
+        "count" : 1,
+        "consume" : false
+      }
+    ],
+	"turnInDescription" : "Report to ^orange;Admiral Lyiin ^reset;in the ^orange;Creon Embassy^reset;"
+  }
+}

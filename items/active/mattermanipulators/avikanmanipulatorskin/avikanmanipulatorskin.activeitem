@@ -1,0 +1,35 @@
+{
+  "itemName" : "avikanmanipulatorskin",
+  "level" : 1,
+  "price" : 250,
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  //"tooltipKind" : "gun",
+  "category" : "Manipulator Override",
+  "description" : "Changes the appearance of your Matter Manipulator. ^red;Must have unlocked all modes.^reset;",
+  "shortdescription" : "Avikan Manipulator",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "avikanmanipulatorskinicon.png",
+  "animation" : "avikanmanipulatorskin.animation",
+  "animationParts" : {
+    "manipulator" : "avikanmanipulatorskin.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "override" : [ "/sfx/objects/colonydeed_partyhorn.ogg" ],
+      "fail" : [ "/sfx/interface/clickon_error.ogg" ]
+    }
+  },
+  
+  "scripts" : ["/items/active/mattermanipulators/thea-manipulatoroverride.lua"],
+  
+  "fireOffset" : [1.0, 0.0],
+
+  "overrides" : {
+    "beamaxe" : "avikanbeamaxe",
+    "wiretool" : "avikanwiretool",
+    "painttool" : "avikanpainttool",
+    "inspectiontool" : "avikanscanmode"
+  }
+}

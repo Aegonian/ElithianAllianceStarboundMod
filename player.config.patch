@@ -1,67 +1,73 @@
 [	
-	//PLAYABLE SPECIES
-	//Avikan
-	{"op" : "add",
-		"path" : "/species/-",
-		"value" : "avikan"
-	},
-	//Trink
-	{"op" : "add",
-		"path" : "/species/-",
-		"value" : "trink"
-	},
-	//Droden
-	{"op" : "add",
-		"path" : "/species/-",
-		"value" : "droden"
-	},
-	//Aegi
-	{"op" : "add",
-		"path" : "/species/-",
-		"value" : "aegi"
-	},
-	
-	//DEFAULT CODEXES
-	//Avikan
-	{"op" : "add",
-		"path" : "/defaultCodexes/avikan",
-		"value" : [ "protectorate1", "protectorate2" ]
-	},
-	//Trink
-	{"op" : "add",
-		"path" : "/defaultCodexes/trink",
-		"value" : [ "protectorate1", "protectorate2" ]
-	},
-	//Droden
-	{"op" : "add",
-		"path" : "/defaultCodexes/droden",
-		"value" : [ "protectorate1", "protectorate2" ]
-	},
-	//Aegi
-	{"op" : "add",
-		"path" : "/defaultCodexes/aegi",
-		"value" : [ "protectorate1", "protectorate2" ]
-	},
-	
-	//MECH STARTING BODIES
-	//Avikan
-	{"op" : "add",
-		"path" : "/deploymentConfig/speciesStarterMechBody/avikan",
-		"value" : "mechbodyavikanproto"
-	},
-	//Trink
-	{"op" : "add",
-		"path" : "/deploymentConfig/speciesStarterMechBody/trink",
-		"value" : "mechbodytrinkproto"
-	},
-	//Droden
-	{"op" : "add",
-		"path" : "/deploymentConfig/speciesStarterMechBody/droden",
-		"value" : "mechbodyavikanproto"
-	},
-	//Aegi
-	{"op" : "add",
-		"path" : "/deploymentConfig/speciesStarterMechBody/aegi",
-		"value" : "mechbodyaegiproto"
-	}
+  //PLAYABLE SPECIES
+  //Avikan
+  { "op" : "add",
+	"path" : "/species/-",
+	"value" : "avikan"
+  },
+  //Trink
+  { "op" : "add",
+	"path" : "/species/-",
+	"value" : "trink"
+  },
+  //Droden
+  { "op" : "add",
+	"path" : "/species/-",
+	"value" : "droden"
+  },
+  //Aegi
+  { "op" : "add",
+	"path" : "/species/-",
+	"value" : "aegi"
+  },
+
+  //DEFAULT CODEXES
+  //Avikan
+  { "op" : "add",
+	"path" : "/defaultCodexes/avikan",
+	"value" : [ "protectorate1", "protectorate2" ]
+  },
+  //Trink
+  { "op" : "add",
+	"path" : "/defaultCodexes/trink",
+	"value" : [ "protectorate1", "protectorate2" ]
+  },
+  //Droden
+  { "op" : "add",
+	"path" : "/defaultCodexes/droden",
+	"value" : [ "protectorate1", "protectorate2" ]
+  },
+  //Aegi
+  { "op" : "add",
+	"path" : "/defaultCodexes/aegi",
+	"value" : [ "protectorate1", "protectorate2" ]
+  },
+
+  //MECH STARTING BODIES
+  //Avikan
+  { "op" : "add",
+	"path" : "/deploymentConfig/speciesStarterMechBody/avikan",
+	"value" : "mechbodyavikanproto"
+  },
+  //Trink
+  { "op" : "add",
+	"path" : "/deploymentConfig/speciesStarterMechBody/trink",
+	"value" : "mechbodytrinkproto"
+  },
+  //Droden
+  { "op" : "add",
+	"path" : "/deploymentConfig/speciesStarterMechBody/droden",
+	"value" : "mechbodyavikanproto"
+  },
+  //Aegi
+  { "op" : "add",
+	"path" : "/deploymentConfig/speciesStarterMechBody/aegi",
+	"value" : "mechbodyaegiproto"
+  },
+
+  //DEFAULT CRAFTING RECIPES -- Applies to all species
+  { "op" : "add",
+	"path" : "/defaultBlueprints/tier1/-",
+	"value" : { "item" : "defaultmanipulatorskin" }
+  }
 ]

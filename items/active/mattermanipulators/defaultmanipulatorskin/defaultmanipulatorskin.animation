@@ -1,0 +1,36 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+	  "manipulator" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {}
+        }
+      }
+    },
+
+    "parts" : {
+	  "manipulator" : {
+        "properties" : {
+          "centered" : true,
+          "fullbright" : false,
+          "offset" : [0.25, 0.0]
+        },
+        "partStates" : {
+          "manipulator" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  
+  "sounds" : {
+    "override" : [ ],
+	"fail" : [ ]
+  }
+}

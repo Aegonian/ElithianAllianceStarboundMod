@@ -23,9 +23,8 @@
   "dropPools" : [],
 
   "scriptConfig" : {
-  
-	"offeredQuests" : [ ],
-	"turnInQuests" : [ ],
+	"offeredQuests" : [ "alliancemanipulator" ],
+	"turnInQuests" : [ "alliancemanipulator", "alliancestory-shield" ],
 
     "chatPortrait" : "/interface/chatbubbles/lyiin.png:<frame>",
 

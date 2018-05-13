@@ -19,8 +19,8 @@ function init()
   storage.currentMessageIndex = storage.currentMessageIndex or 1
   self.messageTimer = self.messageInterval - config.getParameter("initialMessageDelay")
   
-  sb.logInfo("THEA MOD INFO: Started a THEA story quest")
-  sb.logInfo("THEA MOD INFO: Number of radioMessages in this quest is " .. #self.radioMessages)
+  --sb.logInfo("THEA MOD INFO: Started a THEA story quest")
+  --sb.logInfo("THEA MOD INFO: Number of radioMessages in this quest is " .. #self.radioMessages)
 end
 
 -- QUEST START ACTIONS
@@ -40,7 +40,7 @@ end
 
 -- QUEST UPDATE FUNCTIONS
 function update(dt)
-  world.debugText(sb.printJson(quest.state()), world.entityPosition(player.id()), "red")
+  --world.debugText(sb.printJson(quest.state()), world.entityPosition(player.id()), "red")
   
   if quest.state() == "Active" then
 	self.messageTimer = math.min(self.messageInterval, self.messageTimer + dt)
@@ -56,9 +56,9 @@ function update(dt)
 	self.messageTimer = 0
 	end
 
-	world.debugText("messageTimer = " .. self.messageTimer, vec2.add(world.entityPosition(player.id()), {0,1}), "red")
-	world.debugText("messages left = " .. storage.messagesLeft, vec2.add(world.entityPosition(player.id()), {0,2}), "red")
-	world.debugText("current message = " .. storage.currentMessageIndex, vec2.add(world.entityPosition(player.id()), {0,3}), "red")
+	--world.debugText("messageTimer = " .. self.messageTimer, vec2.add(world.entityPosition(player.id()), {0,1}), "red")
+	--world.debugText("messages left = " .. storage.messagesLeft, vec2.add(world.entityPosition(player.id()), {0,2}), "red")
+	--world.debugText("current message = " .. storage.currentMessageIndex, vec2.add(world.entityPosition(player.id()), {0,3}), "red")
   end
   
   --If we have played all messages, allow the quest to be turned in

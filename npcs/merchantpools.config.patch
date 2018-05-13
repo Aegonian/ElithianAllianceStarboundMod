@@ -492,6 +492,7 @@
 			  { "item": { "name": "alliancegunrangepass" }, "prerequisiteQuest" : "alliancegunrangeunlock", "price" : 5000 },
 			  { "item": { "name": "aegi-mechpilothead" }, "prerequisiteQuest" : "alliancemechparts" },
 			  { "item": { "name": "aegi-mechpilotchest" }, "prerequisiteQuest" : "alliancemechparts" },
+			  { "item": { "name": "allianceemblemshield" }, "prerequisiteQuest" : "alliancestory-shield", "price" : 5000 },
 			  //Starter Weapons
 			  { "item": { "name": "brokenprotectoratebroadsword" }, "prerequisiteQuest" : "protectorate", "price" : 5000 },
 			  { "item": { "name": "thea-excaliburbroken" }, "prerequisiteQuest" : "aegicustomtailoring", "price" : 5000 },

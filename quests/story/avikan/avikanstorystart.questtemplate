@@ -3,7 +3,7 @@
   "mainQuest" : true,
   "prerequisites" : [ "avikanstoryhidden" ],
   "title" : "Report back to Commander Zaheed",
-  "text" : "Earth and the Protectorate are gone. My mission to infiltrate the organization is over. ^green;It's time for me to head back to the ^orange;Starfarer's Refuge ^green;and report to ^orange;Commander Zaheed ^green;of the Watchers.",
+  "text" : "Earth and the Protectorate are gone. My mission to infiltrate the organization is over. ^green;It's time for me to head back to the ^orange;Starfarer's Refuge ^green;and report to ^orange;Commander Zaheed ^green;of the Watchers.^reset;",
   "completionText" : "You have done well, Captain. The Watchers are grateful for your efforts. You are free to do as you please while I discuss your findings with the Iris. I will contact you again when I have a new assignment for you.",
   "moneyRange" : [50, 50],
   "rewards" : [
@@ -29,6 +29,6 @@
         "consume" : false
       }
     ],
-	"turnInDescription" : "Return to ^orange;Zaheed ^reset;in the ^orange;Starfarer's Refuge^reset;"
+	"turnInDescription" : "Report to ^orange;Zaheed ^reset;in the ^orange;Starfarer's Refuge^reset;"
   }
 }
