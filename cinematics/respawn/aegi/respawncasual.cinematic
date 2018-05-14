@@ -91,6 +91,41 @@
       ]
     },
     {
+      "drawables" : [
+        {
+          "image" : "/cinematics/respawn/aegi/layer1.png:<frame>"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 2.4995,
+          "zoom" : 2,
+          "alpha" : 0,
+          "frame" : 0,
+          "position" : [480, 270]
+        },
+        {
+          "timecode" : 2.5,
+          "zoom" : 2,
+          "alpha" : 1,
+          "frame" : 0,
+          "position" : [480, 270]
+        },
+        {
+          "timecode" : 11,
+          "alpha" : 1,
+          "zoom" : 2,
+          "frame" : 75.999
+        },
+        {
+          "timecode" : 11.05,
+          "alpha" : 0,
+          "zoom" : 2,
+          "frame" : 75.999
+        }
+      ]
+    },
+    {
       "avatar" : "fullneutralnude",
       "keyframes" : [
         {
@@ -98,14 +133,14 @@
           "zoom" : 2,
           "alpha" : 0,
           "frame" : 0,
-          "position" : [482, 254]
+          "position" : [479, 265]
         },
         {
           "timecode" : 10.795,
           "zoom" : 2,
           "alpha" : 1,
           "frame" : 0,
-          "position" : [482, 254]
+          "position" : [479, 265]
         },
         {
           "timecode" : 12.5,
@@ -118,7 +153,7 @@
     {
       "drawables" : [
         {
-          "image" : "/cinematics/respawn/aegi/layer1.png:<frame>"
+          "image" : "/cinematics/respawn/aegi/layer2.png:<frame>"
         }
       ],
       "keyframes" : [
