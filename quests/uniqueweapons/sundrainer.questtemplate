@@ -1,0 +1,31 @@
+{
+  "id" : "sundrainer",
+  "prerequisites" : [],
+  "title" : "^orange;Consuming the Stars",
+  "text" : "I found a ^orange;Mysterious Weapon Core ^reset;in an ancient Centensian ruin. ^green;I should take it to someone who knows more about such ancient relics.^reset;",
+  "completionText" : "What a find, Captain! This is the core of an ancient Centensian jumprifle, but far more powerful than the common ones.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "avikanmerittoken", 5 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "player",
+      "questComplete" : "questReceiver"
+    },
+	"followUp" : "sundrainer2",
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "sundrainercore",
+        "count" : 1,
+        "consume" : false
+      }
+    ],
+	"turnInDescription" : "Find ^orange;Adako ^reset;in the ^orange;Starfarer's Refuge^reset;"
+  }
+}

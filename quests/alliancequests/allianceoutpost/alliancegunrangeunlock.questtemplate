@@ -5,7 +5,7 @@
   "text" : "A Union outpost was recently attacked by a pack of Akkimari. We need someone to beam down to the planet and ^green;put an end to the ^orange;Akkimari Justicar ^green;that leads the pack^white;. As a reward, ^green;you will earn yourself access to the Creon Embassy's shooting range^white;.",
   "completionText" : "Great work, I received a report that the Justicar has been taken care of. Here you go: this security card will give you access to the shooting range.",
   "moneyRange" : [1000, 1000],
-  "rewards" : [ 
+  "rewards" : [
 	[ [ "alliancegunrangepass", 1 ], [ "alliancecache", 1 ] ]
   ],
 

@@ -1,0 +1,31 @@
+{
+  "id" : "weaponrestorationaegi4",
+  "prerequisites" : [ "weaponrestorationaegi3" ],
+  "title" : "^orange;Excalibur Reborn IV",
+  "text" : "^green;You should head back to ^orange;Hadaeko^reset;, she'll want to have that Shard so you can finish your little project. Make sure to show me the weapon once it's finished - I'd love to see a true Excalibur-class shieldblade!",
+  "completionText" : "I knew Barnos would get the job done! Let me just assemble everything... Here you go: your fully restored Excalibur-class shieldblade!",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+	[ [ "thea-excalibur", 1 ], [ "alliancecache", 1 ] ]
+  ],
+  "canBeAbandoned" : false,
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+	"portraits" : {
+      "questStarted" : "questGiver",
+      "questComplete" : "questReceiver"
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "xanafianshard2",
+        "count" : 1,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Return to ^orange;Hadaeko ^reset;in the ^orange;Creon Embassy^reset;"
+  }
+}

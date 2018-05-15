@@ -1,0 +1,106 @@
+{
+  "type" : "eo-weaponfanatic",
+  "baseType" : "ao-stationarymerchant",
+
+  "npcname" : "Barnos",
+  "identity" : {
+    "imagePath" : "aegi",
+    "gender" : "male",
+    "hairGroup" : "hair",
+    "hairType" : "male10",
+	"facialMaskGroup" : "ears",
+	"facialMask" : "5"
+  },
+  
+  "dropPools" : [ "aegiDeathTreasure" ],
+
+  "scriptConfig" : {
+	"offeredQuests" : [ "weaponrestorationaegi4" ],
+	"turnInQuests" : [ "weaponrestorationaegi3" ],
+	
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "poolsFile" : "/npcs/merchantpools.config",
+      
+	  "categories" : {
+        "override" : [ "allianceoutpostuniqueweapons" ]
+      },
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 20,
+	  
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "Weapon Fanatic",
+          "subtitle" : "  Unique item caches"
+        }
+      }
+    },
+	
+	"dialog" : {
+      "merchant" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "I see you're a fan of good weapons too!"
+            ]
+          }
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "Nothing beats the feel of a good gun in your hands."
+            ]
+          }
+        },
+        "follow" : {
+          "default" : {
+            "default" : [
+              "My stores are just over there."
+            ]
+          }
+        },
+        "welcome" : {
+          "default" : {
+            "default" : [
+              "Now, let's find you a good weapon."
+            ]
+          }
+        },
+        "tout" : {
+          "default" : {
+            "default" : [
+              "Want some real firepower? I've got some great weapons here."
+            ]
+          }
+        }
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+		{
+		  "head" : [
+			{ "name" : "aegi-tier1head", "parameters" : { "colorIndex" : 4 } }
+		  ],
+		  "chest" : [
+			{ "name" : "aegi-tier2chest", "parameters" : { "colorIndex" : 4 } }
+		  ],
+		  "legs" : [
+			{ "name" : "aegi-tier1legs", "parameters" : { "colorIndex" : 4 } }
+		  ],
+		  "back" : [
+			{ "name" : "thea-hiddenback", "parameters" : { "colorIndex" : 4 } }
+		  ],
+		  "primary" : [
+			[ "thea-siegerunner" ]
+		  ]
+		}
+      ]]
+    ]
+  }
+}

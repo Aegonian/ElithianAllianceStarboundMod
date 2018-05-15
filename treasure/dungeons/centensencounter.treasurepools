@@ -37,6 +37,25 @@
 		{"weight" : 0.05, "pool" : "centensianAugment" }
       ],
       "allowDuplication" : false
+    } ],
+    [5, {
+      "poolRounds" : [
+        [0.5, 1],
+        [0.4, 2],
+        [0.1, 3]
+      ],
+      "pool" : [
+        {"weight" : 0.2, "item" : "centensiantech" },
+		{"weight" : 0.1, "item" : ["centensiantech", 2] },
+		{"weight" : 0.4, "item" : ["centensianmetal", 5] },
+		{"weight" : 0.1, "item" : "jumpgatecore" },
+		{"weight" : 0.05, "item" : "centensianwarpcore" },
+		{"weight" : 0.2, "pool" : "centensianGun" },
+		{"weight" : 0.2, "item" : "centenscache" },
+		{"weight" : 0.05, "pool" : "centensianAugment" },
+		{"weight" : 0.1, "item" : "sundrainercore" }
+      ],
+      "allowDuplication" : false
     } ]
   ],
 
@@ -69,8 +88,8 @@
 		{"weight" : 0.05, "item" : "centensianwarpcore" },
 		{"weight" : 0.1, "pool" : "centensianGun" },
 		{"weight" : 0.3, "item" : "centenscache" },
-		{"weight" : 0.05, "pool" : "centensianAugment" }
-		//{"weight" : 0.1, "item" : "sundrainercore" }
+		{"weight" : 0.05, "pool" : "centensianAugment" },
+		{"weight" : 0.1, "item" : "sundrainercore" }
       ],
       "allowDuplication" : false
     } ]

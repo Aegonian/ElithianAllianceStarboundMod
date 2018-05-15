@@ -37,6 +37,11 @@
 	  { "item" : { "name" : "excelsiorblueprint4" }, "price" : 7500 },
 	  { "item" : { "name" : "excelsiorblueprint5" }, "price" : 7500 },
 	  { "item" : { "name" : "unioncitizenpass" }, "price" : 50000 },
+	  //WILDLIFE
+	  { "item" : { "name" : "farythscale" }, "price" : 1000 },
+	  { "item" : { "name" : "kelbethide" }, "price" : 1000 },
+	  { "item" : { "name" : "kelbetmeat" }, "price" : 500 },
+	  { "item" : { "name" : "cookedkelbetmeat" }, "price" : 750 },
 	  //THELEAN
 	  { "item" : { "name" : "theleanmetal" }, "price" : 3500 },
 	  { "item" : { "name" : "theleantissue" }, "price" : 2500 },
@@ -48,9 +53,6 @@
 	  { "item" : { "name" : "centensrelic" }, "price" : 15000 },
 	  //CRAFTING GUIDES
 	  { "item" : { "name" : "trinkcraftingguide" }, "prerequisiteQuest" : "trinkcrafting2", "price" : 1250 },
-	  //CACHES
-	  { "item" : { "name" : "allianceuniquecache" }, "price" : 50000 },
-	  { "item" : { "name" : "trinkuniquecache" }, "price" : 50000 },
 	  //MANIPULATOR SKINS
 	  { "item" : { "name" : "alliancemanipulatorskin" }, "price" : 25000 },
 	  { "item" : { "name" : "trinkmanipulatorskin" }, "price" : 25000 }

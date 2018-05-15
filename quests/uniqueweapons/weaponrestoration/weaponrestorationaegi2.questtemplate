@@ -2,8 +2,8 @@
   "id" : "weaponrestorationaegi2",
   "prerequisites" : [ "weaponrestorationaegi" ],
   "title" : "^orange;Excalibur Reborn II",
-  "text" : "Now comes the hard part... You will need to obtain a small Xanafian Shard. It powers the weapon, and without it, this magnificent blade is just that: a blade.",
-  "completionText" : "That's just what I needed, thanks! I'll start working on the blade, but I need you to find some more materials before I can completely restore this weapon to its former glory.",
+  "text" : "Now comes the hard part... You will need to obtain a small ^orange;Xanafian Shard^reset;. It powers the weapon, and without it, this magnificent blade is just that: a blade. ^green;Explore the galaxy and find a ^orange;Centensian Relic ^reset;- a small hovering cube - in one of those ^orange;old ruins^reset;. It should contain a Shard.",
+  "completionText" : "That's exactly what we were looking for! Now to actually extract the Shard from the relic...",
   "moneyRange" : [50, 50],
   "rewards" : [],
   "canBeAbandoned" : false,
@@ -14,22 +14,16 @@
 	"portraits" : {
       "default" : "questGiver"
     },
-	"followUp" : "weaponrestorationaegi2",
+	"followUp" : "weaponrestorationaegi3",
     "requireTurnIn" : true,
     "conditions" : [
       {
         "type" : "gatherItem",
-        "itemName" : "thea-excaliburbroken",
+        "itemName" : "centensrelic",
         "count" : 1,
-        "consume" : true
-      },
-      {
-        "type" : "gatherItem",
-        "itemName" : "alliancemetaltier6",
-        "count" : 12,
-        "consume" : true
+        "consume" : false
       }
     ],
-	"turnInDescription" : "Return to ^orange;Ayurin ^reset;in the ^orange;Starfarer's Refuge^reset;"
+	"turnInDescription" : "Return to ^orange;Hadaeko ^reset;in the ^orange;Creon Embassy^reset;"
   }
 }

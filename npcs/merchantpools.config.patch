@@ -500,6 +500,15 @@
 			] ]
 		]
 	},
+	{ "op" : "add", "path" : "/allianceoutpostuniqueweapons",
+		"value" : [
+			[ 0, [
+			  //SEALED CACHES
+			  { "item": { "name": "allianceuniquecache" }, "price" : 50000 },
+			  { "item": { "name": "trinkuniquecache" }, "price" : 50000 }
+			] ]
+		]
+	},
 	{ "op" : "add", "path" : "/allianceoutpostposters",
 		"value" : [
 			[ 0, [

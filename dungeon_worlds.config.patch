@@ -108,7 +108,7 @@
     "path" : "/avikanoutpost",
     "value" : {
       "primaryDungeon" : "avikanoutpost",
-      "threatLevel" : 1,
+      "threatLevel" : 2,
       "gravity" : 80,
       "worldSize" : [2000, 1000],
       "dungeonBaseHeight" : 350,
@@ -128,7 +128,7 @@
 		[0.075, "rain"],
 		[0.075, "drizzle"]
 	  ],
-      "threatLevel" : 1,
+      "threatLevel" : 2,
       "gravity" : 80,
       "worldSize" : [2000, 500],
       "dungeonBaseHeight" : 500,

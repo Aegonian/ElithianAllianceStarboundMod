@@ -15,8 +15,8 @@
   "dropPools" : [ "aegiDeathTreasure" ],
 
   "scriptConfig" : {
-	//"offeredQuests" : [ "weaponrestorationaegi" ],
-	//"turnInQuests" : [ "weaponrestorationaegi" ],
+	"offeredQuests" : [ "weaponrestorationaegi", "weaponrestorationaegi2", "weaponrestorationaegi3" ],
+	"turnInQuests" : [ "weaponrestorationaegi", "weaponrestorationaegi2", "weaponrestorationaegi4" ],
 	
     "dialog" : {
 	  "converse" : {

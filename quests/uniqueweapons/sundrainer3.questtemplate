@@ -1,0 +1,31 @@
+{
+  "id" : "sundrainer3",
+  "prerequisites" : [ "sundrainer2" ],
+  "title" : "^orange;Consuming the Stars III",
+  "text" : "Now comes the hard part: you will need to reactivate that weapon core. You can only do so at a ^orange;Jumpgate Uplink Station^reset;, but few still exist. I have heard rumours of a place called ^orange;Vhos Avha'las ^reset;that might hold such a station. ^green;Perhaps you can find it by exploring space and looking for peculiar anomalies.^reset;",
+  "completionText" : "Incredible, you managed to reactivate the core! Now all that is left is to assemble the final weapon.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "avikanmerittoken", 5 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "questGiver",
+      "questComplete" : "questReceiver"
+    },
+	"followUp" : "sundrainer4",
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "activesundrainercore",
+        "count" : 1,
+        "consume" : false
+      }
+    ],
+	"turnInDescription" : "Return to ^orange;Adako ^reset;in the ^orange;Starfarer's Refuge^reset;"
+  }
+}

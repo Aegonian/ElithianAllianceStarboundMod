@@ -1,0 +1,39 @@
+{
+  "id" : "sundrainer4",
+  "prerequisites" : [ "sundrainer3" ],
+  "title" : "^orange;Consuming the Stars IV",
+  "text" : "^green;Take the ^orange;frame Ayurin built ^green;and bring it to ^orange;Vanhas ^green;here in the ^orange;Starfarer's Refuge. ^reset;He will know how to combine the frame and the reactivated core to build a fully functional jumprifle. It's been an honour working on this project with you, Captain.",
+  "completionText" : "I've been expecting you, Captain. Here, I will assemble that weapon for you... Just a little longer... There! A fully restored jumprifle! Be careful where you point that thing: it delivers quite the punch.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "centens-sundrainer", 1 ], [ "avikancache", 1 ], [ "avikanmerittoken", 10 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "questGiver",
+      "questComplete" : "questReceiver"
+    },
+    "requireTurnIn" : true,
+	"acceptItems" : [
+	  "sundrainerframe"
+	],
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "sundrainerframe",
+        "count" : 1,
+        "consume" : true
+      },
+      {
+        "type" : "gatherItem",
+        "itemName" : "activesundrainercore",
+        "count" : 1,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Find ^orange;Vanhas ^reset;in the ^orange;Starfarer's Refuge^reset;"
+  }
+}

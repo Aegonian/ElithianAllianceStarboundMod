@@ -2,7 +2,7 @@
   "type" : "eo-attachmentmerchant",
   "baseType" : "ao-stationarymerchant",
 
-  "scriptConfig" : {    
+  "scriptConfig" : {
     "merchant" : {
       "waitTime" : 40,
       "storeRadius" : 8,

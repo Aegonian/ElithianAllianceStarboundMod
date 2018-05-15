@@ -9,8 +9,8 @@
   "shortdescription" : "^orange;Mysterious Weapon Core^white;",
   "itemTags" : [ "questitem" ],
   
-  //Merit Token Value for material exchange
-  "meritTokenValue" : 5
+  "pickupQuestTemplates" : [ "sundrainer" ],
   
-  //"pickupQuestTemplates" : [ "consumingthestars.gearup" ]
+  //Merit Token Value for material exchange
+  "meritTokenValue" : 15
 }
