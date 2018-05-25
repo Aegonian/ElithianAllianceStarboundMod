@@ -28,17 +28,34 @@
   "theleanDescription" : "A stasis pod built by the Ce'Tennan. It won't open without the proper access key.",
   "drodenDescription" : "Detected Centensian stasis. Occupant status: unknown.",
   
+  "lightColor" : [30, 61, 76],
+  
   "inventoryIcon" : "centensstasispodicon.png",
   "orientations" : [
     {
-      "image" : "centensstasispod.png",
-      "imagePosition" : [0, 0],
+	  "imageLayers" : [ { "image" : "centensstasispod.png:<color>", "fullbright" : true }, { "image" : "centensstasispodlit.png:<color>" } ],
+      "imagePosition" : [-24, 0],
       "frames" : 1,
       "animationCycle" : 0.5,
+	  
+      "lightPosition" : [0, 2],
 
       "spaceScan" : 0.1,
-      "anchors" : [ "bottom" ],
-      "collision" : "platform"
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "bottom" ]
+    },
+    {
+	  "imageLayers" : [ { "image" : "centensstasispod.png:<color>", "fullbright" : true }, { "image" : "centensstasispodlit.png:<color>" } ],
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+	  
+      "lightPosition" : [0, 2],
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ]
     }
   ]
 }

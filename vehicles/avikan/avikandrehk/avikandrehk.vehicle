@@ -62,11 +62,11 @@
   "idleAimAngle" : 135,
   "warpAimAngle" : 180,
   //PRIMARY FIRE
-  "fireTime" : 0.4,
+  "fireTime" : 0.3,
   "fireInaccuracy" : 0.01,
   "fireProjectile" : "avikanexplosivebullet",
   "fireProjectileConfig" : {
-    "power" : 40
+    "power" : 30
   },
   
   //SOUND SETTINGS

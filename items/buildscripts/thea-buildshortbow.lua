@@ -28,14 +28,25 @@ function build(directory, config, parameters, level, seed)
   -- calculate damage level multiplier
   config.damageLevelMultiplier = root.evalFunction("weaponDamageLevelMultiplier", configParameter("level", 1))
 
-  config.tooltipFields = {}
-  config.tooltipFields.subtitle = parameters.category
-  config.tooltipFields.energyPerShotLabel = config.primaryAbility.energyPerShot or 0
-  local bestDrawTime = 0.4
-  local bestDrawMultiplier = root.evalFunction(config.primaryAbility.drawPowerMultiplier, bestDrawTime)
-  config.tooltipFields.maxDamageLabel = util.round(config.primaryAbility.projectileParameters.power * config.damageLevelMultiplier * bestDrawMultiplier, 1)
-  if elementalType ~= "physical" then
-    config.tooltipFields.damageKindImage = "/interface/elements/"..elementalType..".png"
+  -- populate tooltip fields
+  if config.tooltipKind ~= "base" then
+	config.tooltipFields = {}
+	config.tooltipFields.subtitle = parameters.category
+	config.tooltipFields.energyPerShotLabel = config.primaryAbility.energyPerShot or 0
+	local bestDrawTime = 0.4
+	local bestDrawMultiplier = root.evalFunction(config.primaryAbility.drawPowerMultiplier, bestDrawTime)
+	config.tooltipFields.maxDamageLabel = util.round(config.primaryAbility.projectileParameters.power * config.damageLevelMultiplier * bestDrawMultiplier, 1)
+	if elementalType ~= "physical" then
+	  config.tooltipFields.damageKindImage = "/interface/elements/"..elementalType..".png"
+	end
+    if config.primaryAbility then
+      config.tooltipFields.primaryAbilityTitleLabel = "Primary:"
+      config.tooltipFields.primaryAbilityLabel = config.primaryAbility.name or "unknown"
+    end
+    if config.altAbility then
+      config.tooltipFields.altAbilityTitleLabel = "Special:"
+      config.tooltipFields.altAbilityLabel = config.altAbility.name or "unknown"
+    end
   end
 
   -- set price

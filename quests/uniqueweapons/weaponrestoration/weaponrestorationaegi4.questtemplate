@@ -6,7 +6,7 @@
   "completionText" : "I knew Barnos would get the job done! Let me just assemble everything... Here you go: your fully restored Excalibur-class shieldblade!",
   "moneyRange" : [50, 50],
   "rewards" : [
-	[ [ "thea-excalibur", 1 ], [ "alliancecache", 1 ] ]
+	[ [ "thea-excalibur", 1 ], [ "excaliburshieldblade-codex", 1 ], [ "alliancecache", 1 ] ]
   ],
   "canBeAbandoned" : false,
 

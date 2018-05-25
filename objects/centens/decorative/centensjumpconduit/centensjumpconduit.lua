@@ -45,6 +45,11 @@ function setLightState(newState)
       animator.playSound("on");
     end
     object.setLightColor(config.getParameter("lightColor", {255, 255, 255}))
+	if object.direction() > 0 then
+	  object.setDamageSources({config.getParameter("damageSource")})
+	else
+	  object.setDamageSources({config.getParameter("damageSourceFlipped")})
+	end
   --If we got deactivated
   else
     object.setSoundEffectEnabled(false)
@@ -53,5 +58,6 @@ function setLightState(newState)
       animator.playSound("off");
     end
     object.setLightColor(config.getParameter("lightColorOff", {0, 0, 0}))
+	object.setDamageSources()
   end
 end

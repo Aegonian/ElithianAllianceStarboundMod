@@ -53,19 +53,7 @@
 	  "animationPosition" : [-16, 0],
 
       "spaceScan" : 0.1,
-	  "anchors" : [ "top", "bottom" ],
-
-      "touchDamage" : {
-        "poly" : [ [1, 0.5], [-1, 0.5], [-1, 7.5], [1, 7.5] ],
-        "damage" : 50,
-        "knockback" : 50,
-
-        "damageType" : "Environment",
-        "damageSourceKind" : "jumpweapon",
-		"statusEffects" : [
-		  "jumprifleburn"
-		]
-      }
+	  "anchors" : [ "top", "bottom" ]
     },
     {
       "image" : "centensjumpconduitside.png:<color>.<frame>",
@@ -81,19 +69,7 @@
 	  "animationPosition" : [0, -16],
 
       "spaceScan" : 0.1,
-	  "anchors" : [ "left", "right" ],
-
-      "touchDamage" : {
-        "poly" : [ [0.5, 1], [0.5, -1], [7.5, -1], [7.5, 1] ],
-        "damage" : 50,
-        "knockback" : 50,
-
-        "damageType" : "Environment",
-        "damageSourceKind" : "jumpweapon",
-		"statusEffects" : [
-		  "jumprifleburn"
-		]
-      }
+	  "anchors" : [ "left", "right" ]
     }
   ],
 
@@ -105,6 +81,29 @@
   
   "defaultLightState" : true,
   "interactive" : false,
+
+  "damageSource" : {
+	"poly" : [ [1, 0.5], [-1, 0.5], [-1, 7.5], [1, 7.5] ],
+	"damage" : 50,
+	"knockback" : 50,
+
+	"teamType" : "indiscriminate",
+	"damageSourceKind" : "jumpweapon",
+	"statusEffects" : [
+	  "jumprifleburn"
+	]
+  },
+  "damageSourceFlipped" : {
+	"poly" : [ [0.5, 1], [0.5, -1], [7.5, -1], [7.5, 1] ],
+	"damage" : 50,
+	"knockback" : 50,
+
+	"teamType" : "indiscriminate",
+	"damageSourceKind" : "jumpweapon",
+	"statusEffects" : [
+	  "jumprifleburn"
+	]
+  },
 
   "inputNodes" : [ [0, 0] ]
 }

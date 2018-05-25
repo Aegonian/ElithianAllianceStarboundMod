@@ -6,6 +6,24 @@
 
   "scriptConfig" : {
     "behaviorConfig" : {
+      //Melee Behaviour
+	  //"leapWindup" : 0.1,				//Defaults to 0.1
+	  //"leapCooldown": 4,				//Defaults to 4.0
+	  //"leapChance": 0.5,				//Defaults to 0.5
+	  //"switchToRangedCooldown": 8,	//Defaults to 8.0
+	  //"liquidHesitationTime": 3,		//Defaults to 3.0
+	  //"forceRunRange": 15,			//Defaults to 15.0
+	  //"cantReachDialog": true			//Defaults to true
+	  
+	  //Ranged Behaviour
+	  //"rangedAimTime": 0.25,			//Defaults to 0.0
+	  //"rangedWindupTime": 0.05,		//Defaults to 0.05
+	  //"rangedMinFireTime": 4,			//Defaults to 0.5
+	  //"rangedMaxFireTime": 6,			//Defaults to 1.0
+	  //"bowDrawTime": 1,				//Defaults to 1.0
+	  //"arrowSpeed": 62.5,				//Defaults to 62.5
+	  
+	  //Crewmember Behaviour
       "friendlyNpcTypes" : ["crewmemberakkimariscavenger"]
     },
 	

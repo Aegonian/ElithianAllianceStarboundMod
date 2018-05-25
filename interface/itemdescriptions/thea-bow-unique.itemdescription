@@ -35,9 +35,22 @@
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
+  "altAbilityTitleLabel" : {
+    "type" : "label",
+    "position" : [16, 65],
+    "hAnchor" : "left",
+    "value" : ""
+  },
+  "altAbilityLabel" : {
+    "type" : "label",
+    "position" : [133, 65],
+    "hAnchor" : "right",
+    "centered" : true,
+    "wrapWidth" : 126
+  },
   "descriptionLabel" : {
     "type" : "label",
-    "position" : [16, 70],
+    "position" : [16, 65],
     "hAnchor" : "left",
     "vAnchor" : "top",
     "wrapWidth" : 122,
@@ -98,5 +111,4 @@
     "showRarity" : false,
     "showBackingImageWhenFull" : true
   }
-
 }

@@ -1,0 +1,18 @@
+{
+  "frameGrid" : {
+    "size" : [35, 70],
+    "dimensions" : [5, 3],
+    "names" : [
+      [ "bow.0", "bow.1", "bow.2", "bow.3", "bow.4" ],
+      [ "transformToSpear.1", "transformToSpear.2", "transformToSpear.3", "transformToSpear.4", "transformToSpear.5" ],
+      [ "spear.1", "spear.2", null, null, null ]
+    ]
+  },
+
+  "aliases" : {
+    "transformToBow.1" : "transformToSpear.4",
+    "transformToBow.2" : "transformToSpear.3",
+    "transformToBow.3" : "transformToSpear.2",
+    "transformToBow.4" : "transformToSpear.1"
+  }
+}

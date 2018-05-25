@@ -46,7 +46,9 @@
     "energyUsage" : [28, 35],
     "inaccuracy" : 0.025,
 
-    "fireType" : ["auto"],
+    "burstTime" : 0.1,
+    "burstCount" : [2, 4],
+    "fireType" : ["auto", "burst"],
 
     "projectileType" : "avikanbullet",
     "projectileParameters" : {
@@ -106,7 +108,12 @@
       "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
     },
     "gunParts" : ["butt", "middle", "barrel"],
-    "altAbilities" : [],
+    "altAbilities" : [
+	  "avikan-bouncingshot",
+	  "avikan-explodingshot",
+	  "avikan-flashlight",
+	  "avikan-boltlauncher"
+	],
     "palette" : "/items/active/weapons/colors/ranged.weaponcolors",
     "iconDrawables" : ["butt", "middle", "barrel"]
   }]

@@ -10,7 +10,7 @@
   "tooltipKind" : "thea-optionalchargegun-unique",
   "category" : "Pulsar Pistol",
   "itemTags" : ["weapon","ranged","centens","theaUnique"],
-  "twoHanded" : true,
+  "twoHanded" : false,
   
   //CONFIGURATION FOR WEAPONS COLLECTION
   "collectablesOnPickup" : { "thea_weapons" : "avikan-handofrhadeis" },
@@ -74,8 +74,8 @@
     "class" : "TheaOptionalCharge",
 
     "chargeTime" : 0.5,
-    "baseDamage" : 3.0,
-    "baseEnergyUsage" : 10,
+    "baseDamage" : 1.5,
+    "baseEnergyUsage" : 7,
     "inaccuracy" : 0.02,
 	
 	"chargePowerMultiplier" : 3.0,

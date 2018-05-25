@@ -277,7 +277,7 @@
   "lights" : {
     "glow" : {
       "position" : [0, 2.0],
-      "color" : [75, 100, 125],
+      "color" : [125, 92, 0],
       "transformationGroups" : ["weapon"]
     }
   },

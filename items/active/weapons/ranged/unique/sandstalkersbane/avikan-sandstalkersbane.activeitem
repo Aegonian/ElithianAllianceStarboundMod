@@ -21,7 +21,7 @@
   
   "cursor" : "/cursors/thea-heavybowreticle.cursor",
 
-  "animation" : "/items/active/weapons/bow/bow.animation",
+  "animation" : "/items/active/weapons/ranged/animations/thea-bow.animation",
   "animationParts" : {
     "bow" : "avikan-sandstalkersbanefull.png"
   },
@@ -152,5 +152,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildbow.lua"
+  "builder" : "/items/buildscripts/thea-buildbow.lua"
 }

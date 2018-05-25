@@ -2,43 +2,56 @@
   "background" : {
     "type" : "background",
     "fileHeader" : "/interface/tooltips/header.png",
-    "fileBody" : "/interface/tooltips/bodyobject3.png",
+    "fileBody" : "/interface/tooltips/bodyobjectthea.png",
     "fileFooter" : "/interface/tooltips/footer.png"
   },
   "moneyIcon" : {
     "type" : "image",
-    "position" : [97, 23],
+    "position" : [98, 23],
     "file" : "/interface/money.png"
   },
   "priceLabel" : {
     "type" : "label",
-    "position" : [110, 23],
+    "position" : [111, 23],
     "hAnchor" : "left",
     "value" : "tree"
   },
   "maxDamageTitleLabel" : {
     "type" : "label",
-    "position" : [9, 68],
+    "position" : [9, 78],
     "hAnchor" : "left",
     "value" : "Base Max Damage:"
   },
   "maxDamageLabel" : {
     "type" : "label",
-    "position" : [130, 68],
+    "position" : [130, 78],
     "hAnchor" : "right",
     "centered" : true,
     "wrapWidth" : 126
   },
   "energyPerShotTitleLabel" : {
     "type" : "label",
-    "position" : [9, 59],
+    "position" : [9, 69],
     "hAnchor" : "left",
     "value" : "Energy Per Shot:"
   },
   "energyPerShotLabel" : {
     "type" : "label",
-    "position" : [130, 59],
+    "position" : [130, 69],
     "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "altAbilityTitleLabel" : {
+    "type" : "label",
+    "position" : [9, 60],
+    "hAnchor" : "left",
+    "value" : ""
+  },
+  "altAbilityLabel" : {
+    "type" : "label",
+    "position" : [130, 60],
+    "hAnchor" : "right",
+    "centered" : true,
     "wrapWidth" : 126
   },
   "descriptionLabel" : {
@@ -52,7 +65,7 @@
   },
   "handednessLabel" : {
     "type" : "label",
-    "position" : [90, 134],
+    "position" : [90, 144],
     "hAnchor" : "right",
     "centered" : true,
     "wrapWidth" : 126
@@ -68,7 +81,7 @@
   },
   "damageKindImage" : {
     "type" : "image",
-    "position" : [120, 90],
+    "position" : [120, 100],
     "file" : "",
     "centered" : true,
     "maxSize" : [16, 16],
@@ -76,7 +89,7 @@
   },
   "objectImage" : {
     "type" : "image",
-    "position" : [70, 105],
+    "position" : [70, 115],
     "file" : "",
     "centered" : true,
     "maxSize" : [40, 40],

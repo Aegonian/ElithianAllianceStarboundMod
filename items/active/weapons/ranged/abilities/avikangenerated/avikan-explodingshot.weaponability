@@ -1,0 +1,44 @@
+{
+  "animationParts" : {},
+  "animationCustom" : {
+    "sounds" : {
+      "altFire" : [ "/sfx/gun/shotgun1.ogg" ]
+    }
+  },
+
+  "ability" : {
+    "name" : "Exploding Shot",
+    "type" : "avikan-explodingshot",
+    "scripts" : ["/items/active/weapons/ranged/abilities/altfire.lua"],
+    "class" : "AltFireAttack",
+
+    "projectileType" : "avikanexplosivebullet",
+    "projectileParameters" : {},
+
+    // use baseDps and fireTime from primary fire
+
+    "baseDamageMultiplier" : 1.75,
+    "energyUsage" : 50,
+
+    "stances" : {
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 6,
+        "weaponRotation" : 6,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.125,
+        "armRotation" : 6,
+        "weaponRotation" : 6,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  }
+}

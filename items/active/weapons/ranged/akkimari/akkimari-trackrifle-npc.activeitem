@@ -56,7 +56,7 @@
 
     "fireTime" : 0.35,
     "baseDps" : 10.5,
-    "energyUsage" : 35,
+    "energyUsage" : 10,
     "inaccuracy" : 0.015,
 
     "projectileCount" : 1,

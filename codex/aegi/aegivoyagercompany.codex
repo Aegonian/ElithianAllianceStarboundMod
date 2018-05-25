@@ -1,0 +1,38 @@
+{
+  "id" : "aegivoyagercompany",
+  "species" : "aegi",
+  "title" : "The Voyager Company",
+  "description" : "An introduction to the mystery of the lost Voyager Company.",
+  "icon" : "aegifile2.png",
+  "contentPages" : [
+
+"^orange;Introduction^reset;
+
+This is a short introduction to the mystery of the long-lost Voyager Company, one of the two fleets that were built to carry mankind to a new home. This summary was written by Aena of Hythe, literary professor at the University of Creon.",
+
+"^orange;The Voyager Company^reset;
+
+The Voyager Company was a fleet of 21 spaceships built by mankind as part of Operation Exodus: a last-ditch effort to save humanity from potential extinction. In 246 BA, only a day before Earth was hit by a massive asteroid, the Voyager Company launched its 21 ships alongside the 21 ships of the Endurance Company.",
+
+"The Voyager Company lost two ships on launch: both suffered a malfunction as a result of the rushed development of the ships. All 2000 souls on board these ships were unfortunately lost, but they will forever be remembered.
+
+The surviving 19 ships successfully fled the Earth, and traveled to the edge of the Sol System alongside the Endurance Company. At the edge of the system, the two fleets parted ways, both heading to what was hoped to be a new home for humanity.",
+
+"The Voyager Company set course for the RS341023 system, which was believed to be home to a habitable planet, RS341023-02. The Endurance and Voyager Companies communicated on a daily basis, sharing progress on their journeys and their genetic modification programs. After approximately six years, however, all communications between the two fleets abruptly ended.",
+
+"There were no clear signs of a conflict or accident, and to this day, what happened to the Voyager Company is unknown. For the remaining 239 years of the Endurance's journey, it attempted to re-establish communications with its sister fleet, but to no avail. In 48 AA, the settlers of the Endurance Company - now known as the Aegi - sent out a scouting flotilla to investigate the RS341023 system, but it found no signs of the Voyager Company (which was meant to arrive in the system in 22 AA).",
+
+"Additional scouting flotillas have been sent to the RS341023 system on multiple occasions, but none have ever found a trace of the Voyager Company.
+
+The Voyager's target planet - RS341023-02 - was found to be habitable, but it presented a harsh environment. A small outpost has been set up there in the hopes that the Voyager Company would one day arrive, but after hundreds of years, hope has started to fade.",
+
+"One final scouting mission was deployed, tasked with retracing the path of the Voyager Company from Earth to RS341023-02, but again no traces of the fleet were found.
+
+To this day, the loss of the Voyager Company remains one of the largest unsolved mysteries in the Aeginian Federal Union."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

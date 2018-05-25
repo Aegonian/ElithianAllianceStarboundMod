@@ -1,0 +1,24 @@
+{
+  "id" : "excaliburshieldblade",
+  "species" : "aegi",
+  "title" : "Excalibur-class Shieldblades",
+  "description" : "A description of the famous Excalibur-class shieldblades.",
+  "icon" : "aegiuniqueweapon.png",
+  "contentPages" : [
+
+"^orange;Excalibur-class Shieldblades^reset;
+
+The Excalibur-class shieldblades are a group of shieldblades - also known as Aevis - designed and built by the now-defunct Aeviri Armaments. They were shieldblades of exceptional make, hand-crafted using the highest-quality allosteel for a lightweight yet extremely resilient blade. Their defining feature, however, was the Xanafian Shard that powered them.",
+
+"Aeginian technology rarely utilizes Xanafian Shards due to their rarity and unpredictability, but Aeviri Armaments was able to craft exceptional gear using such shards. The shard was set in the center of the weapon, where its energy could be best distributed across the weapon's length. An intuitive pressure sensor in the weapon's grip allowed the user to activate one of two modes on the weapon: Offence or Defence.",
+
+"In Offence Mode, the Xanafian Shard would project a layer of energy over the blade, granting it a strange, bright glow that would help tear apart the molecules of whatever the weapon would strike. In Defence Mode, the energy would be projected across the length of the weapon, enhancing its defensive capabilities. Every time the energized shield was struck, it would release a burst of energy that damages and knocks back whatever landed the blow.",
+
+"Only few Excalibur-class shieldblades were built, and all were originally granted to members of the Taemera family (whose members are best known for having been elected as President of the Aeginian Federal Union on many occasions). Over time, the weapons have been passed on to other people as well, and nowadays, they are a highly sought-after collector's item."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

@@ -171,5 +171,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildbow.lua"
+  "builder" : "/items/buildscripts/thea-buildbow.lua"
 }

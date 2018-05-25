@@ -42,6 +42,27 @@
 	"path": "/thea-flashlight-builtin",
 	"value": "/items/active/weapons/ranged/abilities/attachments/thea-flashlight/thea-flashlight-builtin.weaponability"
   },
+  //Avikan Generated Weapons
+  {
+	"op": "add",
+	"path": "/avikan-bouncingshot",
+	"value": "/items/active/weapons/ranged/abilities/avikangenerated/avikan-bouncingshot.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/avikan-explodingshot",
+	"value": "/items/active/weapons/ranged/abilities/avikangenerated/avikan-explodingshot.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/avikan-flashlight",
+	"value": "/items/active/weapons/ranged/abilities/avikangenerated/avikan-flashlight.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/avikan-boltlauncher",
+	"value": "/items/active/weapons/ranged/abilities/avikangenerated/avikan-boltlauncher.weaponability"
+  },
   
   //======================================================================================================================
   //	MELEE ABILITIES

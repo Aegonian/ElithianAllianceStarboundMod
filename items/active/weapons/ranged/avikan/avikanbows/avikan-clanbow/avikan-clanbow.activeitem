@@ -5,9 +5,9 @@
   "inventoryIcon" : "avikan-clanbowicon.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "tooltipKind" : "bow",
+  "tooltipKind" : "thea-bow",
   "category" : "bow",
-  "description" : "The pride of the clan.",
+  "description" : "^gray;The pride of the clan, used to harvest monster parts.",
   "shortdescription" : "Clan's Greatbow",
   "twoHanded" : true,
   "itemTags" : ["weapon","ranged","bow","avikan"],
@@ -145,5 +145,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildbow.lua"
+  "builder" : "/items/buildscripts/thea-buildbow.lua"
 }

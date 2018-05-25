@@ -1,0 +1,249 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "swoosh" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+          },
+          "fire" : {
+            "frames" : 3,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire2" : {
+            "frames" : 3,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "fire3" : {
+            "frames" : 3,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
+      },
+	  "weapon" : {
+        "default" : "bow",
+        "states" : {
+          "bow" : {
+            "properties" : {
+              "lightsOff" : ["glow"],
+              "particleEmittersOff" : [ "bladeFront", "bladeBack" ]
+            }
+		  },
+          "transformToSpear" : {
+            "frames" : 5,
+            "cycle" : 0.6,
+            "mode" : "transition",
+            "transition" : "spear",
+            "properties" : {
+              "lightsOff" : ["glow"],
+			  "persistentSound" : "/sfx/melee/spear_twirl_loop.ogg"
+            },
+			"frameProperties" : {
+			  "particleEmittersOn" : [ [], [], [ "bladeFront" ], [], [ "bladeBack" ] ]
+			}
+          },
+          "spear" : {
+            "frames" : 2,
+            "cycle" : 0.3,
+            "mode" : "loop",
+            "properties" : {
+              "lightsOn" : ["glow"],
+              "particleEmittersOn" : [ "bladeFront", "bladeBack" ]
+            }
+          },
+          "transformToBow" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "transition",
+            "transition" : "bow",
+            "properties" : {
+              "lightsOff" : ["glow"],
+              "particleEmittersOff" : [ "bladeFront", "bladeBack" ]
+            }
+          }
+        }
+      }
+    },
+	
+    "parts" : {
+      "weapon" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "weapon" : {
+            "bow" : {
+              "properties" : {
+				"image" : "<partImage>:bow.<drawFrame>"
+              }
+            },
+            "transformToSpear" : {
+              "properties" : {
+				"image" : "<partImage>:transformToSpear.<frame>"
+              }
+            },
+            "spear" : {
+              "properties" : {
+				"image" : "<partImage>:spear.<frame>"
+              }
+            },
+            "transformToBow" : {
+              "properties" : {
+				"image" : "<partImage>:transformToBow.<frame>"
+              }
+            }
+          }
+		}
+      },
+	  "lights" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "fullbright" : true,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "weapon" : {
+            "bow" : {
+              "properties" : {
+				"image" : "<partImage>:bow.<drawFrame>"
+              }
+            },
+            "transformToSpear" : {
+              "properties" : {
+				"image" : "<partImage>:transformToSpear.<frame>"
+              }
+            },
+            "spear" : {
+              "properties" : {
+				"image" : "<partImage>:spear.<frame>"
+              }
+            },
+            "transformToBow" : {
+              "properties" : {
+				"image" : "<partImage>:transformToBow.<frame>"
+              }
+            }
+          }
+		}
+      },
+      "swoosh" : {
+        "properties" : {
+          "zLevel" : -1,
+          "centered" : true,
+          "fullbright" : true,
+          "transformationGroups" : ["weapon"],
+          "rotationCenter" : [0, 0]
+        },
+        "partStates" : {
+          "swoosh" : {
+            "idle" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "/items/active/weapons/ranged/unique/lightstalker/swoosh/thrust.png:<frame>",
+                "offset" : [0.125, 3.5],
+                "damageArea" : [[0, -3.5], [1, -1], [1, 1], [0, 4], [-1, 1], [-1, -1]]
+              }
+            },
+            "fire2" : {
+              "properties" : {
+                "image" : "/items/active/weapons/ranged/unique/lightstalker/swoosh/slash.png:<frame>",
+                "offset" : [-0.5, 5.5],
+                "damageArea" : [[1, -4], [1, 2.5], [-2, 2.5], [-2, -4]]
+              }
+            },
+            "fire3" : {
+              "properties" : {
+                "image" : "/items/active/weapons/ranged/unique/lightstalker/swoosh/thrust.png:<frame>",
+                "offset" : [0.125, 4.0],
+                "damageArea" : [[0, -3.5], [1, -1], [1, 1], [0, 4], [-1, 1], [-1, -1]]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "rotationGroups" : {
+    "weapon" : {
+      "angularVelocity" : 0
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "muzzle" : {},
+    "swoosh" : {}
+  },
+  
+  "particleEmitters" : {
+	"chargeparticles" : {
+	  "active" : false,
+      "emissionRate" : 8,
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [-0.5, 0, 0.5, 0],
+      "particles" : [
+        { "particle" : "linerifleburnbright"}
+      ]
+    },
+    "bladeFront" : {
+      "active" : false,
+      "transformationGroups" : ["weapon"],
+      "offsetRegion" : [-0.75, 2.5, 0.75, 4.0],
+      "emissionRate" : 3,
+      "particles" : [
+        { "particle" : "avikanenergyblade"},
+        { "particle" : "avikanenergyblade2"},
+        { "particle" : "linerifleburnbright"}
+      ]
+    },
+    "bladeBack" : {
+      "active" : false,
+      "transformationGroups" : ["weapon"],
+      "offsetRegion" : [-0.5, -3.0, 0.5, -3.5],
+      "emissionRate" : 2,
+      "particles" : [
+        //{ "particle" : "avikanenergyblade" },
+        //{ "particle" : "avikanenergyblade2" },
+        { "particle" : "linerifleburnbright" }
+      ]
+    }
+  },
+
+  "lights" : {
+    "glow" : {
+      "position" : [0, 2.0],
+      "color" : [125, 92, 0],
+      "transformationGroups" : ["weapon"]
+    }
+  },
+
+  "sounds" : {
+    //BOW SOUNDS
+	"draw" : [ ],
+    "fullyDrawnLoop" : [ ],
+    "release" : [ ],
+	"discharge" : [ ],
+	
+	//SPEAR SOUNDS
+    "fire" : [ ],
+    "fire2" : [ ],
+    "fire3" : [ ],
+	
+	//TRANSFORM SOUNDS
+    "transform" : [ ]
+  }
+}

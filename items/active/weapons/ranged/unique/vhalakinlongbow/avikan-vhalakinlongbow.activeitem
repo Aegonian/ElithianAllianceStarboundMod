@@ -29,12 +29,12 @@
 	  "parts" : {
 		"bow" : {
 		  "properties" : {
-			"offset" : [0.15, 0]
+			"offset" : [0.1, 0]
 		  }
 		},
 		"lights" : {
 		  "properties" : {
-			"offset" : [0.15, 0]
+			"offset" : [0.1, 0]
 		  }
 		}
 	  }
@@ -52,11 +52,13 @@
 
   "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
   
+  "elementalType" : "linerifle",
+  
   "primaryAbility" : {
     "scripts" : ["/items/active/weapons/ranged/abilities/thea-linebowshot.lua"],
     "class" : "TheaLineBowShot",
 
-	"drawTime" : 1.5,
+	"drawTime" : 1.2,
 	"baseDamage" : 11.5,
     "energyPerShot" : 45,
     "cooldownTime" : 0.6,

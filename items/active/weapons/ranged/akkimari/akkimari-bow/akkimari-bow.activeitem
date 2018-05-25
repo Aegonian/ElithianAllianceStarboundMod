@@ -8,7 +8,7 @@
   "rarity" : "Legendary",
   "tooltipKind" : "bow",
   "category" : "bow",
-  "description" : "An Akkimari bow.",
+  "description" : "^gray;A makeshift metal bow, used to harvest meat and materials.",
   "shortdescription" : "Makeshift Bow",
   "twoHanded" : true,
   "itemTags" : ["weapon","ranged","bow","akkimari"],

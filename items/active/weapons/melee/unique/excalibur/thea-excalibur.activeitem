@@ -5,8 +5,9 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "^orange;A grand Aevis crafted in honor of the Taemera family.",
+  "manufacturer" : "^gray;Aeviri Armaments^reset;",
   "shortdescription" : "^orange;Excalibur^white;",
-  "tooltipKind" : "thea-sword-unique",
+  "tooltipKind" : "thea-sword-unique-mf",
   "category" : "Shieldblade",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","shieldblade","aegi"],
@@ -50,5 +51,5 @@
   "altAbilityType" : "thea-shieldbladedefendenergy",
   "altAbility" : {},
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

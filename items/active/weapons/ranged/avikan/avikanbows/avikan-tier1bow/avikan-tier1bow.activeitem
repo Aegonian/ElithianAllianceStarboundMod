@@ -5,9 +5,9 @@
   "inventoryIcon" : "avikan-tier1bowicon.png",
   "maxStack" : 1,
   "rarity" : "common",
-  "tooltipKind" : "bow",
+  "tooltipKind" : "thea-bow",
   "category" : "bow",
-  "description" : "Used to harvest monster bones and hides.",
+  "description" : "^gray;Used to harvest monster bones and hides.",
   "shortdescription" : "Bone Bow",
   "twoHanded" : true,
   "itemTags" : ["weapon","ranged","bow","avikan"],
@@ -145,5 +145,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildbow.lua"
+  "builder" : "/items/buildscripts/thea-buildbow.lua"
 }

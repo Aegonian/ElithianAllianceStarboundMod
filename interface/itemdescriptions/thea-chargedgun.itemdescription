@@ -10,18 +10,6 @@
     "hAnchor" : "left",
     "value" : "tree"
   },
-  "chargeTimeTitleLabel" : {
-    "type" : "label",
-    "position" : [16, 74],
-    "hAnchor" : "left",
-    "value" : "Charge Time:"
-  },
-  "chargeTimeLabel" : {
-    "type" : "label",
-    "position" : [134, 74],
-    "hAnchor" : "right",
-    "wrapWidth" : 126
-  },
   "damagePerShotTitleLabel" : {
     "type" : "label",
     "position" : [16, 83],
@@ -31,6 +19,18 @@
   "damagePerShotLabel" : {
     "type" : "label",
     "position" : [134, 83],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "chargeTimeTitleLabel" : {
+    "type" : "label",
+    "position" : [16, 74],
+    "hAnchor" : "left",
+    "value" : "Charge Time:"
+  },
+  "chargeTimeLabel" : {
+    "type" : "label",
+    "position" : [134, 74],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
@@ -111,5 +111,4 @@
     "showRarity" : false,
     "showBackingImageWhenFull" : true
   }
-
 }

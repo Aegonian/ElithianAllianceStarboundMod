@@ -24,16 +24,30 @@ function build(directory, config, parameters, level, seed)
   -- elemental type
   local elementalType = parameters.elementalType or config.elementalType or "physical"
   replacePatternInData(config, nil, "<elementalType>", elementalType)
+  if config.altAbility and config.altAbility.elementalConfig then
+    util.mergeTable(config.altAbility, config.altAbility.elementalConfig[elementalType])
+  end
 
   -- calculate damage level multiplier
   config.damageLevelMultiplier = root.evalFunction("weaponDamageLevelMultiplier", configParameter("level", 1))
 
-  config.tooltipFields = {}
-  config.tooltipFields.subtitle = parameters.category
-  config.tooltipFields.energyPerShotLabel = config.primaryAbility.energyPerShot or 0
-  config.tooltipFields.maxDamageLabel = config.primaryAbility.baseDamage * config.damageLevelMultiplier
-  if elementalType ~= "physical" then
-    config.tooltipFields.damageKindImage = "/interface/elements/"..elementalType..".png"
+  -- populate tooltip fields
+  if config.tooltipKind ~= "base" then
+	config.tooltipFields = {}
+	config.tooltipFields.subtitle = parameters.category
+	config.tooltipFields.energyPerShotLabel = config.primaryAbility.energyPerShot or 0
+	config.tooltipFields.maxDamageLabel = config.primaryAbility.baseDamage * config.damageLevelMultiplier
+	if elementalType ~= "physical" then
+	  config.tooltipFields.damageKindImage = "/interface/elements/"..elementalType..".png"
+	end
+    if config.primaryAbility then
+      config.tooltipFields.primaryAbilityTitleLabel = "Primary:"
+      config.tooltipFields.primaryAbilityLabel = config.primaryAbility.name or "unknown"
+    end
+    if config.altAbility then
+      config.tooltipFields.altAbilityTitleLabel = "Special:"
+      config.tooltipFields.altAbilityLabel = config.altAbility.name or "unknown"
+    end
   end
 
   -- set price

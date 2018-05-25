@@ -107,7 +107,7 @@
       "order" : 17,
       "title" : "Void Eater",
       "description" : "An ancient weapon built to bend space-time.",
-      "icon" : "/items/active/weapons/ranged/unique/voideater/centens-voideater.png"
+      "icon" : "/items/active/weapons/ranged/unique/voideater/centens-voideatericon.png"
     },
 	//TRINKIAN WEAAPONS
 	"trink-shockbolter" : {
@@ -372,6 +372,12 @@
       "title" : "Oculus Ward",
       "description" : "A powerful shield projector built using Centensian technology.",
       "icon" : "/items/active/shields/unique/oculus/centens-oculusshieldicon.png"
+    },
+	"avikan-lightstalker" : {
+      "order" : 61,
+      "title" : "Lightstalker",
+      "description" : "A powerful linebow that doubles as a spear.",
+      "icon" : "/items/active/weapons/ranged/unique/lightstalker/avikan-lightstalkericon.png"
     }
   }
 }

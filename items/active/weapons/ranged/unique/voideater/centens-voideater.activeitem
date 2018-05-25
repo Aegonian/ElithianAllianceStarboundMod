@@ -1,7 +1,7 @@
 {
   "itemName" : "centens-voideater",
   "price" : 1500,
-  "inventoryIcon" : "centens-voideater.png",
+  "inventoryIcon" : "centens-voideatericon.png",
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "^orange;An ancient weapon built to bend space-time.",
@@ -19,12 +19,27 @@
   
   "animation" : "centens-voideater.animation",
   "animationParts" : {
-    "butt" : "",
-    "middle" : "centens-voideater.png",
-    "barrel" : "",
+    "gun" : "centens-voideater.png",
+    "lights" : "centens-voideaterlights.png",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/xanafianmuzzle.png"
   },
   "animationCustom" : {
+	"animatedParts" : {
+      "parts" : {
+        "gun" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [0.8, 0.1]
+		  }
+		},
+		"lights" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [0.8, 0.1]
+		  }
+		}
+      }
+    },
     "sounds" : {
       "fire" : [ "/sfx/gun/xanafian_fire3.ogg" ]
     }

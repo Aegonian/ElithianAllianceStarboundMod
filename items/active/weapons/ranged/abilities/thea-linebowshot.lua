@@ -41,9 +41,16 @@ function TheaLineBowShot:draw()
 
     self.drawTimer = math.min(self.drawTime, self.drawTimer + self.dt)
 	
-	--Calculate which frame we are on
+	--Calculate how far along the charge is
 	self.drawPercentage = self.drawTimer / self.drawTime
-	self.drawFrame = math.ceil(self.drawPercentage * self.drawLevels)
+	--Calculate the correct draw frame to use. Subtract the total drawLevels by 1, as the final drawLevel should only be displayed once fully charged
+	self.drawFrame = math.ceil(self.drawPercentage * (self.drawLevels - 1))
+	--If fully charged, use the final drawLevel as our drawFrame
+	if self.drawPercentage == 1 then
+	  self.drawFrame = self.drawLevels
+	end
+	--world.debugText(self.drawPercentage, vec2.add(mcontroller.position(), {0,1}), "red")
+	--world.debugText(self.drawFrame, vec2.add(mcontroller.position(), {0,2}), "red")
 	--If at max charge level, alternate draw frames to animate the charge
 	if self.drawFrame == self.drawLevels then
 	  self.animationTimer = math.max(0, self.animationTimer - self.dt)

@@ -14,7 +14,7 @@
   //CONFIGURATION FOR WEAPONS COLLECTION
   "collectablesOnPickup" : { "thea_weapons" : "akkimari-karchaablade" },
   
-  "meritTokenValue" : 50,
+  "meritTokenValue" : 100,
 
   "inventoryIcon" : "akkimari-karchaablade.png:front",
   "animation" : "akkimari-karchaablade.animation",

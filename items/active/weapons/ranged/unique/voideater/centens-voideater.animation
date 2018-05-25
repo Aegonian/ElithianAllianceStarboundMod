@@ -20,25 +20,20 @@
     },
 
     "parts" : {
-      "butt" : {
+      "gun" : {
         "properties" : {
+          "zLevel" : 0,
           "centered" : true,
           "image" : "<partImage><paletteSwaps>",
           "offset" : [0, 0], // x offset is set dynamically
           "transformationGroups" : ["weapon"]
         }
       },
-      "middle" : {
+      "lights" : {
         "properties" : {
+          "zLevel" : 1,
           "centered" : true,
-          "image" : "<partImage><paletteSwaps>",
-          "offset" : [0, 0], // x offset is set dynamically
-          "transformationGroups" : ["weapon"]
-        }
-      },
-      "barrel" : {
-        "properties" : {
-          "centered" : true,
+          "fullbright" : true,
           "image" : "<partImage><paletteSwaps>",
           "offset" : [0, 0], // x offset is set dynamically
           "transformationGroups" : ["weapon"]
