@@ -1,0 +1,141 @@
+{
+  "itemName" : "akkimari-shakkar-npc",
+  "price" : 1500,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "essential",
+  "description" : "^orange;A brutal spear with an electrified blade.",
+  "shortdescription" : "^orange;Shakkar (NPC)^white;",
+  "tooltipKind" : "thea-sword-unique",
+  "category" : "Shock Spear",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spear","akkimari","theaUnique"],
+
+  "inventoryIcon" : "akkimari-shakkaricon.png",
+
+  "animation" : "akkimari-shakkar.animation",
+  "animationParts" : {
+    "blade" : "akkimari-shakkar.png",
+    "bladeFullbright" : "akkimari-shakkarlights.png",
+    "arcing" : "akkimari-shakkararcing.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_spear_electric1.ogg", "/sfx/melee/swing_spear_electric2.ogg", "/sfx/melee/swing_spear_electric3.ogg" ],
+      "fire2" : [ "/sfx/melee/swing_shortsword_electric1.ogg", "/sfx/melee/swing_shortsword_electric2.ogg", "/sfx/melee/swing_shortsword_electric3.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "electric",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/melee/abilities/thea-enhancedmeleecombo.lua"],
+    "class" : "TheaEnhancedMeleeCombo",
+
+    "comboSteps" : 2,
+
+    "flashTime" : 0.15,
+    "flashDirectives" : "fade=FFFFFFFF=0.15",
+
+    "swooshOffsetRegions" : [
+      [1.5, -1.0, 5.5, 1.0],
+      [3.0, -0.5, 6.5, 2.0]
+    ],
+
+    // cooldown time multiplier for steps after the first, compounded per combo step
+    "comboSpeedFactor" : 0.9,
+
+    "edgeTriggerGrace" : 0.25,
+
+    "fireTime" : 0.8,
+    "baseDps" : 11.5,
+
+    "damageConfig" : {
+      "damageSourceKind" : "electricspear",
+      "statusEffects" : [ "electrified" ],
+      "knockbackMode" : "aim",
+      "timeout" : 0.5
+    },
+    "stepDamageConfig" : [
+      {
+        "baseDamageFactor" : 1.0,
+        "knockback" : 8
+      },
+      {
+        "baseDamageFactor" : 1.5,
+        "knockback" : 18
+      }
+    ],
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 85,
+        "weaponRotation" : -190,
+        "twoHanded" : true,
+        "weaponOffset" : [0.5, 0.5],
+
+        "allowRotate" : false,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.5",
+        "backArmFrame" : "swimIdle.2"
+      },
+      "windup1" : {
+        "duration" : 0.15,
+        "armRotation" : 130,
+        "weaponRotation" : -215,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 0.0],
+
+        "allowRotate" : true,
+        "allowFlip" : false
+      },
+      "fire1" : {
+        "duration" : 0.3,
+        "armRotation" : 20,
+        "weaponRotation" : -120,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 2.25],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait1" : {
+        "duration" : 0.1,
+        "armRotation" : 20,
+        "weaponRotation" : -120,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 2.25],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "windup2" : {
+        "duration" : 0.1,
+        "armRotation" : 20,
+        "weaponRotation" : -120,
+        "twoHanded" : false,
+        "weaponOffset" : [0, 2.25],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire2" : {
+        "duration" : 0.3,
+        "armRotation" : 130,
+        "weaponRotation" : -235,
+        "twoHanded" : false,
+        "weaponOffset" : [0, 0.0],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

@@ -1,0 +1,20 @@
+{
+  "itemName" : "thea-clusterammomod-grenade",
+  "price" : 750,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "tooltipKind" : "thea-attachment",
+  "category" : "Ammo Mod",
+  "inventoryIcon" : "thea-clusterammomod-grenade.png",
+  "largeImage" : "thea-clusterammomod-grenadelarge.png",
+  "builder" : "/items/buildscripts/thea-buildattachment.lua",
+  
+  "manufacturer" : "^gray;AAE^reset;",
+  "description" : "Grenade launcher ammunition that releases small cluster grenades on detonation.",
+  "shortdescription" : "Cluster Ammo",
+  
+  "itemTags" : [ "thea_attachment" ],
+  
+  "theaAttachmentType" : "aae_grenade1",
+  "theaAttachmentAbility" : "thea-loadclustergrenade"
+}

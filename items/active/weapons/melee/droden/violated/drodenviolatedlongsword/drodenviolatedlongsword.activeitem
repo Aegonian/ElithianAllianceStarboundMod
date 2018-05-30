@@ -18,7 +18,7 @@
 
   "elementalType" : "physical",
 
-  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbilityType" : "thea-longswordcombo",
   "primaryAbility" : {
     "fireTime" : [0.71, 0.9],
     "baseDps" : [10, 11]

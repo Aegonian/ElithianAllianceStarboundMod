@@ -1,7 +1,7 @@
 require "/scripts/vec2.lua"
 
 function init()
-  --Settings form config file
+  --Settings from config file
   self.movementSettings = config.getParameter("movementSettings")
   self.occupiedMovementSettings = config.getParameter("occupiedMovementSettings")
   self.noPlatformMovementSettings = config.getParameter("noPlatformMovementSettings")

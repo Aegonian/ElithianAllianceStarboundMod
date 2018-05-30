@@ -1,0 +1,20 @@
+{
+  "itemName" : "thea-flareattachment",
+  "price" : 500,
+  "maxStack" : 1,
+  "rarity" : "Uncommon",
+  "tooltipKind" : "thea-attachment",
+  "category" : "Weapon Attachment",
+  "inventoryIcon" : "thea-flareattachment.png",
+  "largeImage" : "thea-flareattachmentlarge.png",
+  "builder" : "/items/buildscripts/thea-buildattachment.lua",
+  
+  "manufacturer" : "^gray;AAE^reset;",
+  "description" : "An underbarrel flare launcher.",
+  "shortdescription" : "Flare Launcher",
+  
+  "itemTags" : [ "thea_attachment" ],
+  
+  "theaAttachmentType" : "aae_assault1",
+  "theaAttachmentAbility" : "thea-flarelauncher"
+}

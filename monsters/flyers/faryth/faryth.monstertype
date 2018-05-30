@@ -16,6 +16,7 @@
     ],
 
     "behavior" : "monster",
+    "deathBehavior" : "monster-death",
 
 	"seeThroughLiquid" : false,
     "behaviorConfig" : {
@@ -104,6 +105,15 @@
             "ceilingDistance" : 8,
             "xVelocity" : 12,
             "yVelocity" : 18
+          }
+        }
+      ],
+
+      "deathActions" : [
+		{
+          "name" : "thea-senddeathmessage",
+          "parameters" : {
+            "deathMessage" : "farythDeath"
           }
         }
       ],

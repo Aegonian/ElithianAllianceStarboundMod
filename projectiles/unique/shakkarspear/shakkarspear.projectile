@@ -1,0 +1,49 @@
+{
+  "projectileName" : "shakkarspear",
+  "physics" : "thea-throwingspear",
+  "bounces" : 0,
+  "image" : "shakkarspear.png",
+  "animationCycle" : 1.0,
+  "frameNumber" : 1,
+  "flippable" : true,
+  "emitters" : [ "daggerblue", "shakkarspear" ],
+  "power" : 20,
+  "damagePoly" : [[-20, 5], [20, 5], [20, -5], [-20, -5]],
+  "knockback" : 10,
+  "piercing" : true,
+  "knockbackDirectional" : true,
+  "timeToLive" : 5,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+	{
+      "action" : "projectile",
+      "type" : "shakkarspear-returning",
+      "inheritDamageFactor" : 0.0,
+      "inheritSpeedFactor" : 1.0,
+      "angleAdjust" : 0
+    }
+  ],
+  "actionOnCollide" : [
+    {
+      "action" : "sound",
+      "options" : [
+        "/sfx/melee/sword_hit_stone2.ogg"
+      ]
+    },
+	{
+      "action" : "projectile",
+      "type" : "electricstunexplosionspawner",
+      "inheritDamageFactor" : 0.5,
+      "inheritSpeedFactor" : 0.0,
+      "angleAdjust" : 0
+    }
+  ],
+  "damageKind" : "electricspear",
+  "statusEffects" : [ "electrified" ],
+  "hydrophobic" : false,
+
+  "persistentAudio" : "/sfx/objects/teslaspike.ogg",
+
+  "scripts" : ["/projectiles/scripts/thea-throwingspear.lua"],
+  "lifetimeAfterCollision" : 0.4
+}

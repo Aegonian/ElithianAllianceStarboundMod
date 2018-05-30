@@ -1,4 +1,10 @@
 {
+  "animationCustom" : {
+    "sounds" : {
+      "aimingReady" : [ "/sfx/npc/monsters/orbide_windup2.ogg" ]
+    }
+  },
+  
   "ability" : {
     "type" : "spearthrow",
     "class" : "SpearThrow",
@@ -7,57 +13,49 @@
 
     "walkWhileFiring" : true,
 
-    "fireOffset" : [1.75, 0],
+    "fireOffset" : [0.0, 0.0],
 
     "energyPerShot" : 60,
 
-    "windupTime" : 0.5,
+    "windupTime" : 0.9,
+	"cooldownTime" : 1.0,
 
-    "projectileType" : "woodenarrow",
+    "projectileType" : "avikantier2huntingspear",
     "projectileParameters" : {
-      "speed" : 45,
-      "power" : 8.125
+      "speed" : 65,
+      "power" : 6
     },
 
     "stances" : {
-      "idle" : {
-        "armRotation" : -90,
-        "weaponRotation" : 0,
-        "twoHanded" : false,
-        "weaponOffset" : [0, 0.5],
-
-        "allowRotate" : true,
-        "allowFlip" : true
-      },
 	  "windup" : {
-        "armRotation" : -60,
-        "weaponRotation" : 0,
+        "armRotation" : 50,
+        "weaponRotation" : -170,
         "allowRotate" : false,
         "allowFlip" : true,
         "twoHanded" : true
       },
       "aiming" : {
-        "armRotation" : 0,
-        "weaponRotation" : 0,
+        "armRotation" : 130,
+        "weaponRotation" : -220,
         "allowRotate" : false,
         "allowFlip" : true,
-        "twoHanded" : true
+        "twoHanded" : false
       },
       "fire" : {
-        "duration" : 0.2,
-        "armRotation" : 0,
-        "weaponRotation" : 0,
+        "duration" : 0.3,
+        "armRotation" : 30,
+        "weaponRotation" : -320,
         "allowRotate" : false,
         "allowFlip" : true,
-        "twoHanded" : true
+        "twoHanded" : false
       },
-      "waiting" : {
-        "duration" : 0.2,
-        "armRotation" : 0,
+	  "cooldown" : {
+		"duration" : 0.25,
+        "armRotation" : -90,
         "weaponRotation" : 0,
         "allowRotate" : false,
         "allowFlip" : true,
-        "twoHanded" : true
+        "twoHanded" : false
       }
     }
   }

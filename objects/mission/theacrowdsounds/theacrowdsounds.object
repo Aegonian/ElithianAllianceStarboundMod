@@ -1,0 +1,25 @@
+{
+  "objectName" : "theacrowdsounds",
+  "colonyTags" : [],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 0,
+  "description" : "Nothing here...",
+  "shortdescription" : "Crowd Sounds Source",
+  "race" : "aegi",
+
+  "inventoryIcon" : "theacrowdsoundsicon.png",
+  "orientations" : [
+    {
+      "image" : "theacrowdsounds.png:<color>",
+      "imagePosition" : [0, 0],
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/hubbub.ogg",
+  "soundEffectRangeMultiplier" : 2.0
+}

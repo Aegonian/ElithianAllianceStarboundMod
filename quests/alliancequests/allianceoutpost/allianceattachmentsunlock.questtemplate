@@ -1,0 +1,30 @@
+{
+  "id" : "allianceattachmentsunlock",
+  "prerequisites" : [ ],
+  "title" : "^green;Personalized Warfare",
+  "text" : "Want to get your hands on some better weapon attachments? If you can prove to me that you're a good fighter, I'll open up more of my inventory to you! My challenge for you is to ^green;find and kill ^orange;20 Faryth ^green;- you'll find the green flying monsters on lush and forest planets.^reset;",
+  "completionText" : "Well done, those Faryth aren't easy targets! You can now access a few more useful weapon attachments, but there's much more to come.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "alliancecache", 1 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/thea-main.lua",
+  "scriptConfig" : {
+	"portraits" : {
+      "default" : "questGiver"
+    },
+    "followUp" : "allianceattachmentsunlock2",
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "killMonsters",
+        "displayMonsterName" : "Faryth",
+        "targetMessage" : "farythDeath",
+        "count" : 20
+      }
+    ],
+	"turnInDescription" : "Return to ^orange;Aberos ^reset;in the ^orange;Creon Embassy^reset;"
+  }
+}

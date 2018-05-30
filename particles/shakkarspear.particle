@@ -1,0 +1,25 @@
+{
+  "kind" : "shakkarspear",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/thea-electricstunarc/thea-electricstunarc.animation",
+    "position" : [0, 0],
+    "finalVelocity" : [0, 0],
+    "approach" : [50, 50],
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.7,
+    "fade" : 1,
+    "size" : 0.8,
+    "layer" : "middle",
+    "timeToLive" : 5.7,
+	"fullbright" : true,
+	"light" : [72, 96, 128],
+    "variance" : {
+	  "position" : [0.25, 0.25],
+      "finalVelocity" : [1.5, 1.5],
+	  "size" : 0.2,
+      "rotation" : 180,
+      "angularVelocity" : 180
+    }
+  }
+}

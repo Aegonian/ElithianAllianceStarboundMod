@@ -1,0 +1,220 @@
+{
+  "itemName" : "akkimari-shakkar",
+  "price" : 1500,
+  "level" : 6,
+  "fixedLevel" : false,
+  "maxStack" : 1,
+  "rarity" : "essential",
+  "description" : "^orange;A brutal spear with an electrified blade.",
+  "shortdescription" : "^orange;Shakkar^white;",
+  "tooltipKind" : "thea-sword-unique",
+  "category" : "Shock Spear",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spear","akkimari","theaUnique"],
+
+  "inventoryIcon" : "akkimari-shakkaricon.png",
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  //"collectablesOnPickup" : { "thea_weapons" : "akkimari-shakkar" },
+  
+  "meritTokenValue" : 100,
+
+  "animation" : "akkimari-shakkar.animation",
+  "animationParts" : {
+    "blade" : "akkimari-shakkar.png",
+    "bladeFullbright" : "akkimari-shakkarlights.png",
+    "arcing" : "akkimari-shakkararcing.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_spear_electric1.ogg", "/sfx/melee/swing_spear_electric2.ogg", "/sfx/melee/swing_spear_electric3.ogg" ],
+      "fire2" : [ "/sfx/melee/swing_shortsword_electric1.ogg", "/sfx/melee/swing_shortsword_electric2.ogg", "/sfx/melee/swing_shortsword_electric3.ogg" ],
+	  "throw" : [ "/sfx/melee/swing_spear.ogg" ],
+	  "windupLoop" : [ "/sfx/melee/debilitator_idle.ogg" ],
+	  "aimingLoop" : [ "/sfx/objects/teslaspike.ogg" ],
+	  "aimingReady" : [ "/sfx/melee/swing_broadsword_electric3.ogg" ],
+	  //"idleLoop" : [ "/sfx/melee/shakkar_idle.ogg" ],
+	  "cooldownReady" : [ "/sfx/objects/console_button2.ogg" ]
+    },
+	"particleEmitters" : {
+	  "electricarcing" : {
+		"particles" : [
+		  { "particle" : "thea-electricstunarc"},
+		  { "particle" : "thea-electricstunarc"}
+		]
+	  }
+	}
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "electric",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/melee/abilities/thea-enhancedmeleecombo.lua"],
+    "class" : "TheaEnhancedMeleeCombo",
+
+    "comboSteps" : 2,
+
+    "flashTime" : 0.15,
+    "flashDirectives" : "fade=FFFFFFFF=0.15",
+
+    "swooshOffsetRegions" : [
+      [1.5, -1.0, 5.5, 1.0],
+      [3.0, -0.5, 6.5, 2.0]
+    ],
+
+    // cooldown time multiplier for steps after the first, compounded per combo step
+    "comboSpeedFactor" : 0.9,
+
+    "edgeTriggerGrace" : 0.25,
+
+    "fireTime" : 0.8,
+    "baseDps" : 11.5,
+
+    "damageConfig" : {
+      "damageSourceKind" : "electricspear",
+      "statusEffects" : [ "electrified" ],
+      "knockbackMode" : "aim",
+      "timeout" : 0.5
+    },
+    "stepDamageConfig" : [
+      {
+        "baseDamageFactor" : 1.0,
+        "knockback" : 8
+      },
+      {
+        "baseDamageFactor" : 1.5,
+        "knockback" : 18
+      }
+    ],
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 85,
+        "weaponRotation" : -190,
+        "twoHanded" : true,
+        "weaponOffset" : [0.5, 0.5],
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.5",
+        "backArmFrame" : "swimIdle.2"
+      },
+      "windup1" : {
+        "duration" : 0.15,
+        "armRotation" : 130,
+        "weaponRotation" : -215,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 0.0],
+
+        "allowRotate" : true,
+        "allowFlip" : false
+      },
+      "fire1" : {
+        "duration" : 0.3,
+        "armRotation" : 20,
+        "weaponRotation" : -120,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 2.25],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait1" : {
+        "duration" : 0.1,
+        "armRotation" : 20,
+        "weaponRotation" : -120,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 2.25],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "windup2" : {
+        "duration" : 0.1,
+        "armRotation" : 20,
+        "weaponRotation" : -120,
+        "twoHanded" : false,
+        "weaponOffset" : [0, 2.25],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire2" : {
+        "duration" : 0.3,
+        "armRotation" : 130,
+        "weaponRotation" : -235,
+        "twoHanded" : false,
+        "weaponOffset" : [0, 0.0],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "altAbility" : {
+    "name" : "Overload",
+    "scripts" : ["/items/active/weapons/melee/abilities/spear/spearthrow/spearthrow.lua"],
+	"class" : "SpearThrow",
+
+    "walkWhileFiring" : true,
+
+    "fireOffset" : [0.0, 0.0],
+
+    "energyPerShot" : 80,
+
+    "windupTime" : 0.9,
+	"cooldownTime" : 3.0,
+
+    "projectileType" : "shakkarspear",
+    "projectileParameters" : {
+      "speed" : 70,	//65 for regular spear throwing abilities
+      "power" : 10
+    },
+	
+	//Optional animations config
+	"windupParticles" : true,
+	"aimingParticles" : true,
+	"cooldownLightsOff" : true,
+
+    "stances" : {
+	  "windup" : {
+        "armRotation" : 50,
+        "weaponRotation" : -170,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "aiming" : {
+        "armRotation" : 130,
+        "weaponRotation" : -220,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : false
+      },
+      "fire" : {
+        "duration" : 0.3,
+        "armRotation" : 30,
+        "weaponRotation" : -320,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : false
+      },
+	  "cooldown" : {
+		"duration" : 0.25,
+        "armRotation" : -90,
+        "weaponRotation" : 0,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

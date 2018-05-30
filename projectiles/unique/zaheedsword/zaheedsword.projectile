@@ -24,6 +24,8 @@
   "damageKind" : "default",
   "hydrophobic" : false,
 
+  "persistentAudio" : "/sfx/projectiles/boomerang3.ogg",
+
   "scripts" : ["/projectiles/scripts/thea-throwingspear.lua"],
   "lifetimeAfterCollision" : 0.025
 }

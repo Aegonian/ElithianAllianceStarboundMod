@@ -69,6 +69,16 @@
   //======================================================================================================================
   {
 	"op": "add",
+	"path": "/thea-longswordcombo",
+	"value": "/items/active/weapons/melee/abilities/broadsword/thea-longswordcombo.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/spearthrow",
+	"value": "/items/active/weapons/melee/abilities/spear/spearthrow/spearthrow.weaponability"
+  },
+  {
+	"op": "add",
 	"path": "/thea-whirlwind",
 	"value": "/items/active/weapons/melee/abilities/broadsword/thea-whirlwind/thea-whirlwind.weaponability"
   },

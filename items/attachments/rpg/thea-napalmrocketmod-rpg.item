@@ -1,0 +1,20 @@
+{
+  "itemName" : "thea-napalmrocketmod-rpg",
+  "price" : 1000,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "tooltipKind" : "thea-attachment",
+  "category" : "Ammo Mod",
+  "inventoryIcon" : "thea-napalmrocketmod-rpg.png",
+  "largeImage" : "thea-napalmrocketmod-rpglarge.png",
+  "builder" : "/items/buildscripts/thea-buildattachment.lua",
+  
+  "manufacturer" : "^gray;AAE^reset;",
+  "description" : "Rocket launcher ammunition that leaves behind fire after detonation.",
+  "shortdescription" : "Napalm Rocket",
+  
+  "itemTags" : [ "thea_attachment" ],
+  
+  "theaAttachmentType" : "aae_rpg1",
+  "theaAttachmentAbility" : "thea-loadnapalmrocket"
+}

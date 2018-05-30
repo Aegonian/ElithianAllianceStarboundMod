@@ -1,0 +1,20 @@
+{
+  "itemName" : "thea-slugammomod-shotgun",
+  "price" : 500,
+  "maxStack" : 1,
+  "rarity" : "Uncommon",
+  "tooltipKind" : "thea-attachment",
+  "category" : "Ammo Mod",
+  "inventoryIcon" : "thea-slugammomod-shotgun.png",
+  "largeImage" : "thea-slugammomod-shotgunlarge.png",
+  "builder" : "/items/buildscripts/thea-buildattachment.lua",
+  
+  "manufacturer" : "^gray;AAE^reset;",
+  "description" : "Shotgun ammunition that fires a single, powerful projectile.",
+  "shortdescription" : "Slug Ammo",
+  
+  "itemTags" : [ "thea_attachment" ],
+  
+  "theaAttachmentType" : "aae_shotgun1",
+  "theaAttachmentAbility" : "thea-loadslugshotgun"
+}

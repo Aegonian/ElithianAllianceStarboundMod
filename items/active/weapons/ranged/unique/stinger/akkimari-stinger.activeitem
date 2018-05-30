@@ -1,0 +1,220 @@
+{
+  "itemName" : "akkimari-stinger",
+  "price" : 1500,
+  "inventoryIcon" : "akkimari-stingericon.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;A lightweight driftrifle built for tactical incursions.",
+  "shortdescription" : "^orange;Stinger^reset;",
+  "level" : 6,
+  "fixedLevel" : false,
+  "tooltipKind" : "thea-chargedgunalt-unique",
+  "category" : "Drift Rifle",
+  "itemTags" : ["weapon","ranged","driftrifle","akkimari","theaUnique"],
+  "twoHanded" : true,
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  //"collectablesOnPickup" : { "thea_weapons" : "akkimari-stinger" },
+  
+  "meritTokenValue" : 100,
+  
+  "cursor" : "/cursors/thea-triplereticle.cursor",
+  
+  "animation" : "akkimari-stinger.animation",
+  "animationParts" : {
+    "gun" : "akkimari-stinger.png",
+    "lights" : "akkimari-stingerlights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/akkimarimuzzleflash.png",
+    "charge" : "akkimari-stingercharge.png",
+    "chargeAlt" : "akkimari-stingercharge-alt.png"
+  },
+  "animationCustom" : {
+	"animatedParts" : {
+      "parts" : {
+        "gun" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.625, 0.2]
+		  }
+		},
+		"lights" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.625, 0.2]
+		  }
+		},
+		"charge" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.625, 0.2]
+		  }
+		},
+		"chargeAlt" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.625, 0.2]
+		  }
+		}
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/akkimari_energyfire3.ogg" ],
+      "fireAlt" : [ "/sfx/gun/akkimari_energyfire3.ogg" ],
+	  "chargeLoop" : [ "/sfx/gun/akkimari_charge4.ogg" ],
+	  "chargeLoopAlt" : [ "/sfx/gun/akkimari_charge5.ogg" ],
+	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ],
+	  "dischargeAlt" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
+    }
+  },
+  "animationScripts" : ["/items/active/effects/lightning.lua"],
+
+  "baseOffset" : [1.625, 0.2],
+  "muzzleOffset" : [1.75, 0.125],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "akkimariacid",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-chargedshot.lua"],
+    "class" : "TheaChargedShot",
+
+    "chargeTime" : 0.4,
+    "baseDamage" : 6.0,
+    "baseEnergyUsage" : 20,
+    "inaccuracy" : 0.05,
+	
+	"cooldownTime" : 0.3,
+
+    "projectileType" : "driftriflebullet-light",
+	"projectileCount" : 1,
+	"projectileParameters" : {
+      "knockback" : 10,
+	  "wavePeriod" : 0.1,
+	  "waveAmplitude" : 0.35,
+	  "searchRadius" : 35,
+	  "baseHomingControlForce" : 2.0
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "charge" : {
+        "armRotation" : -2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+		"weaponOffset" : [-0.15, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.25,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+		"weaponOffset" : [-0.15, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "discharge" : {
+        "duration" : 0.1,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+	}
+  },
+
+  "altAbility" : {
+    "name" : "Precision Bolt",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-chargedshot-altfire.lua"],
+    "class" : "TheaChargedShotAltFire",
+
+    "chargeTime" : 0.7,
+    "baseDamage" : 10.0,
+    "baseEnergyUsage" : 35,
+    "inaccuracy" : 0.0,
+	
+	"cooldownTime" : 0.4,
+
+    "projectileType" : "driftriflebullet",
+	"projectileCount" : 1,
+	"projectileParameters" : {
+      "knockback" : 10,
+	  "wavePeriod" : 0.1,
+	  "waveAmplitude" : 0.1,
+	  "searchRadius" : 0,
+	  "baseHomingControlForce" : 0.0
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "charge" : {
+        "armRotation" : -2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+		"weaponOffset" : [-0.15, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.35,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+		"weaponOffset" : [-0.15, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "discharge" : {
+        "duration" : 0.1,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+	}
+  },
+
+  "builder" : "/items/buildscripts/thea-buildchargedgun.lua"
+}

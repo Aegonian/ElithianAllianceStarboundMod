@@ -16,6 +16,7 @@
     ],
 
     "behavior" : "monster",
+    "deathBehavior" : "monster-death",
 
     "behaviorConfig" : {
       "damageOnTouch" : true,
@@ -127,7 +128,20 @@
             "wanderTime" : [5, 15]
           }
         }
-      ]
+      ],
+
+      "deathActions" : [
+		{
+          "name" : "thea-senddeathmessage",
+          "parameters" : {
+            "deathMessage" : "sandspitterDeath"
+          }
+        }
+      ],
+
+      "concurrentActions" : [ ],
+
+      "concurrentHostileActions" : [ ]
     },
     
     "damageParts" : {

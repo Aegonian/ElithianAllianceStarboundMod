@@ -46,58 +46,9 @@
     }
   },
 
+  "altAbilityType" : "spearthrow",
   "altAbility" : {
-    "name" : "Spear Throw",
-    "scripts" : ["/items/active/weapons/melee/abilities/spear/spearthrow/spearthrow.lua"],
-	"class" : "SpearThrow",
-
-    "walkWhileFiring" : true,
-
-    "fireOffset" : [0.0, 0.0],
-
-    "energyPerShot" : 60,
-
-    "windupTime" : 0.9,
-	"cooldownTime" : 1.0,
-
-    "projectileType" : "avikankeffridersspear",
-    "projectileParameters" : {
-      "speed" : 65,
-      "power" : 6
-    },
-
-    "stances" : {
-	  "windup" : {
-        "armRotation" : 50,
-        "weaponRotation" : -170,
-        "allowRotate" : false,
-        "allowFlip" : true,
-        "twoHanded" : true
-      },
-      "aiming" : {
-        "armRotation" : 130,
-        "weaponRotation" : -230,
-        "allowRotate" : true,
-        "allowFlip" : true,
-        "twoHanded" : false
-      },
-      "fire" : {
-        "duration" : 0.3,
-        "armRotation" : 30,
-        "weaponRotation" : -320,
-        "allowRotate" : false,
-        "allowFlip" : true,
-        "twoHanded" : false
-      },
-	  "cooldown" : {
-		"duration" : 0.25,
-        "armRotation" : -90,
-        "weaponRotation" : 0,
-        "allowRotate" : false,
-        "allowFlip" : true,
-        "twoHanded" : false
-      }
-    }
+    "projectileType" : "avikankeffridersspear"
   },
 
   "builder" : "/items/buildscripts/buildunrandweapon.lua",

@@ -1,0 +1,20 @@
+{
+  "itemName" : "thea-stunammomod-grenade",
+  "price" : 750,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "tooltipKind" : "thea-attachment",
+  "category" : "Ammo Mod",
+  "inventoryIcon" : "thea-stunammomod-grenade.png",
+  "largeImage" : "thea-stunammomod-grenadelarge.png",
+  "builder" : "/items/buildscripts/thea-buildattachment.lua",
+  
+  "manufacturer" : "^gray;AAE^reset;",
+  "description" : "Grenade launcher ammunition that briefly stuns targets on detonation.",
+  "shortdescription" : "Stun Ammo",
+  
+  "itemTags" : [ "thea_attachment" ],
+  
+  "theaAttachmentType" : "aae_grenade1",
+  "theaAttachmentAbility" : "thea-loadstungrenade"
+}

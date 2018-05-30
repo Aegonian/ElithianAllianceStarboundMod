@@ -1,7 +1,9 @@
 {
   "name" : "targethighlight",
-  "effectConfig" : { },
-  "defaultDuration" : 3,
+  "effectConfig" : {
+  	"damageAdditionPercentage" : 0.1	//How much additional damage the target should take when taking damage. If set to 1.0, incoming damage is effectively doubled
+  },
+  "defaultDuration" : 5,
 
   "scripts" : [
     "targethighlight.lua"

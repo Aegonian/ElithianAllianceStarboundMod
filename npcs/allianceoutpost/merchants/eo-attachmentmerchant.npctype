@@ -2,7 +2,12 @@
   "type" : "eo-attachmentmerchant",
   "baseType" : "ao-stationarymerchant",
 
+  "npcname" : "Aberos",
+  
   "scriptConfig" : {
+	"offeredQuests" : [ "allianceattachmentsunlock", "allianceattachmentsunlock2", "allianceattachmentsunlock3" ],
+	"turnInQuests" : [ "allianceattachmentsunlock", "allianceattachmentsunlock2", "allianceattachmentsunlock3" ],
+	
     "merchant" : {
       "waitTime" : 40,
       "storeRadius" : 8,
@@ -13,7 +18,7 @@
       },
       "buyFactorRange" : [ 1.0, 1.0 ],
       "sellFactorRange" : [ 0.2, 0.2 ],
-      "numItems" : 20,
+      "numItems" : 50,
 	  
       "paneLayoutOverride" : {
         "windowtitle" : {

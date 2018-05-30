@@ -1,0 +1,14 @@
+{
+  "name" : "targethighlight-noweakness",
+  "effectConfig" : {},
+  "defaultDuration" : 3,
+
+  "scripts" : [
+    "targethighlight.lua"
+  ],
+
+  "animationConfig" : "targethighlight.animation",
+
+  "label" : "Marked",
+  "icon" : "/interface/statuses/marked.png"
+}

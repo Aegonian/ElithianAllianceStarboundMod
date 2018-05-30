@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":5,
+ "tilecount":6,
  "tileheight":64,
  "tileproperties":
     {
@@ -48,6 +48,14 @@
          "imagePositionY":"0",
          "object":"returnallianceoutpostteleporter",
          "tilesetDirection":"right"
+        },
+     "5":
+        {
+         "\/\/shortdescription":"Crowd Sounds Source",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"theacrowdsounds",
+         "tilesetDirection":"right"
         }
     },
  "tiles":
@@ -71,6 +79,10 @@
      "4":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/mission\/returnallianceoutpostteleporter.png"
+        },
+     "5":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/mission\/theacrowdsounds.png"
         }
     },
  "tilewidth":216

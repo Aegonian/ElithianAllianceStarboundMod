@@ -1,0 +1,21 @@
+{
+  "projectileName" : "shakkarspear-returning",
+  "physics" : "thea-throwingspear",
+  "bounces" : 0,
+  "image" : "shakkarspear-returning.png",
+  "animationCycle" : 0.4,
+  "frameNumber" : 5,
+  "flippable" : true,
+  "fullbright" : true,
+  "emitters" : [ "daggerblue" ],
+  "power" : 0,
+  "knockback" : 10,
+  "onlyHitTerrain" : true,
+  "knockbackDirectional" : true,
+  "timeToLive" : 0.4,
+  "supportsProcessing" : true,
+  "actionOnReap" : [],
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "hydrophobic" : false
+}

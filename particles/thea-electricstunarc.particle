@@ -13,6 +13,7 @@
     "layer" : "middle",
     "timeToLive" : 5.7,
 	"fullbright" : true,
+	"light" : [72, 96, 128],
     "variance" : {
       "finalVelocity" : [1.5, 1.5],
 	  "size" : 0.2,

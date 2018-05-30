@@ -74,6 +74,7 @@
 	  [ "avikan-linebreaker", "avikan-oathbreaker" ],
 	  [ "avikan-vhalakinlongbow", "avikanteslaspear" ],
 	  [ "avikan-conscriptor", "avikan-anakahrstaff" ],
+	  [ "avikan-skoffwreckersbow", "avikan-lightstalker" ],
 		//Centens Weapons
 	  [ "avikan-handofrhadeis", "centens-deathseeker" ],
 	  [ "centens-voideater", "centens-voiceofrhadeis" ],
@@ -88,7 +89,8 @@
 		//Akkimari Weapons
 	  [ "akkimari-sawbladelauncher", "akkimari-scrapyard" ],
 	  [ "akkimari-blastsling", "akkimari-karchaablade" ],
-	  [ "akkimari-charakkiblade", "akkimari-shalakkaritualstaff" ]
+	  [ "akkimari-charakkiblade", "akkimari-shalakkaritualstaff" ],
+	  [ "akkimari-stinger" ]
     ]
   }
 }

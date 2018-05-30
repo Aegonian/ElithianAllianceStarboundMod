@@ -1,0 +1,24 @@
+{
+  "kind" : "thea-electricstunarc2",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/thea-electricstunarc/thea-electricstunarc2.animation",
+    "position" : [0.5, 0],
+    "finalVelocity" : [0, 0],
+    "approach" : [50, 50],
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.7,
+    "fade" : 1,
+    "size" : 0.8,
+    "layer" : "middle",
+    "timeToLive" : 5.7,
+	"fullbright" : true,
+	"light" : [72, 96, 128],
+    "variance" : {
+      "finalVelocity" : [5.5, 5.5],
+	  "size" : 0.2,
+      "rotation" : 180,
+      "angularVelocity" : 180
+    }
+  }
+}

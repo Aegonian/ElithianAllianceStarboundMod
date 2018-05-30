@@ -1,0 +1,29 @@
+{
+  "id" : "allianceattachmentsunlock3",
+  "prerequisites" : [ "allianceattachmentsunlock2" ],
+  "title" : "^green;Personalized Warfare III",
+  "text" : "I've got one final challenge for you! I want you to ^green;find and destroy a ^orange;Ce'Tennan Oculus^reset;, and you'll earn yourself access to the best weapon attachments I have. ^green;I've heard the ancient drones can be found in highly peculiar space anomalies ^reset;- you'd better come prepared, as it'll put up a heck of a fight.",
+  "completionText" : "You're a master at fighting alright! You can now access my best weapon attachments - you've more than earned it.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "alliancecache", 1 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/thea-main.lua",
+  "scriptConfig" : {
+	"portraits" : {
+      "default" : "questGiver"
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "killMonsters",
+        "displayMonsterName" : "Ce'Tennan Oculus",
+        "targetMessage" : "centensguardianDeath",
+        "count" : 1
+      }
+    ],
+	"turnInDescription" : "Return to ^orange;Aberos ^reset;in the ^orange;Creon Embassy^reset;"
+  }
+}

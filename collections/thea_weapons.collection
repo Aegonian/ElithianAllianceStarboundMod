@@ -378,6 +378,12 @@
       "title" : "Lightstalker",
       "description" : "A powerful linebow that doubles as a spear.",
       "icon" : "/items/active/weapons/ranged/unique/lightstalker/avikan-lightstalkericon.png"
+    },
+	"akkimari-stinger" : {
+      "order" : 62,
+      "title" : "Stinger",
+      "description" : "A lightweight driftrifle built for tactical incursions.",
+      "icon" : "/items/active/weapons/ranged/unique/stinger/akkimari-stingericon.png"
     }
   }
 }

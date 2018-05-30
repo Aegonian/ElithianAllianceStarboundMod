@@ -1,0 +1,30 @@
+{
+  "id" : "allianceattachmentsunlock2",
+  "prerequisites" : [ "allianceattachmentsunlock" ],
+  "title" : "^green;Personalized Warfare II",
+  "text" : "I've got some more weapon attachments in store for you, if you can beat my next challenge. I want you to ^green;find and kill ^orange;5 Sandspitters^reset;, but it won't be easy! ^green;You can find the large worm-like beasts on desert worlds ^reset;- watch out for the sand they spit at you!",
+  "completionText" : "I wasn't sure if you'd beat that one, but I guess I was wrong to doubt you! You've earned yourself access to a few more powerful weapon attachments!",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "alliancecache", 1 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/thea-main.lua",
+  "scriptConfig" : {
+	"portraits" : {
+      "default" : "questGiver"
+    },
+    "followUp" : "allianceattachmentsunlock3",
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "killMonsters",
+        "displayMonsterName" : "Sandspitters",
+        "targetMessage" : "sandspitterDeath",
+        "count" : 5
+      }
+    ],
+	"turnInDescription" : "Return to ^orange;Aberos ^reset;in the ^orange;Creon Embassy^reset;"
+  }
+}

@@ -1,4 +1,7 @@
 [
+  //===============================================================================
+  // INITIAL QUESTS
+  //===============================================================================
   { "op" : "add",
 	"path" : "/initialquests/avikan",
 	"value" : [ "protectorate", "avikancustomtailoring", "avikanstoryhidden" ]
@@ -14,5 +17,13 @@
   { "op" : "add",
 	"path" : "/initialquests/aegi",
 	"value" : [ "protectorate", "aegicustomtailoring", "alliancestoryhidden" ]
+  },
+  
+  //===============================================================================
+  // QUEST OBJECTIVE DESCRIPTIONS
+  //===============================================================================
+  { "op" : "add",
+	"path" : "/objectiveDescriptions/theaMonsterKill",
+	"value" : "Kill <monsterName>: <current> / <required>"
   }
 ]

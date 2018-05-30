@@ -68,7 +68,6 @@
           "transformationGroups" : ["weapon"],
           "rotationCenter" : [0, 0]
 		},
-
         "partStates" : {
           "lights" : {
             "active" : {
@@ -87,7 +86,6 @@
           "offset" : [3.0, 0.0],
           "transformationGroups" : ["swoosh"]
         },
-
         "partStates" : {
           "swoosh" : {
             "idle" : {

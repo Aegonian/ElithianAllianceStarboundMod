@@ -1,7 +1,9 @@
 {
-	//AKKIMARI SETTLEMENTS
+  //=================================================================
+  // AKKIMARI SETTLEMENTS
+  //=================================================================
   "akkimarichest" : [
-    [1, {
+    [0, {
       "poolRounds" : [
         [0.6, 1],
         [0.2, 2],
@@ -12,6 +14,20 @@
 		{"weight" : 0.60, "pool" : "money" },
         {"weight" : 0.30, "pool" : "akkimariScrapMetal" },
 		{"weight" : 0.10, "pool" : "akkimariWeapons" }
+      ]
+    } ],
+    [1, {
+      "poolRounds" : [
+        [0.6, 1],
+        [0.2, 2],
+        [0.1, 3],
+        [0.1, 4]
+      ],
+	  "pool" : [
+		{"weight" : 0.55, "pool" : "money" },
+        {"weight" : 0.30, "pool" : "akkimariScrapMetal" },
+		{"weight" : 0.10, "pool" : "akkimariWeapons" },
+		{"weight" : 0.05, "item" : "akkimaricache" }
       ]
     } ]
   ],
@@ -30,7 +46,9 @@
     } ]
   ],
   
-	//GENERIC POOLS
+  //=================================================================
+  // GENERIC POOLS
+  //=================================================================
   "akkimariScrapMetal" : [
 	//TIER 1, STARTING PLANETS
     [0, {

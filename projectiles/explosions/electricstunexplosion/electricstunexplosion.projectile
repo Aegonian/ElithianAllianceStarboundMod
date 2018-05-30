@@ -2,7 +2,7 @@
   "projectileName" : "electricstunexplosion",
   "image" : "electricstunexplosion.png",
   "animationCycle" : 0.4,
-  "frameNumber" : 5,
+  "frameNumber" : 6,
   "speed" : 0,
   "lightColor" : [156, 196, 255],
   "pointLight" : true,

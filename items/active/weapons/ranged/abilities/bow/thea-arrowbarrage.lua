@@ -113,6 +113,8 @@ function TheaArrowBarrage:draw()
 
     -- I feel like there's a joke here about Zeno's paradoxes
     self.weapon.aimAngle = (4 * self.weapon.aimAngle + vec2.angle(aimVec)) / 5
+	
+	world.debugLine(self:firePosition(), vec2.add(self:firePosition(), vec2.mul(vec2.norm(self:idealAimVector()), 3)), "red")
 
     coroutine.yield()
   end

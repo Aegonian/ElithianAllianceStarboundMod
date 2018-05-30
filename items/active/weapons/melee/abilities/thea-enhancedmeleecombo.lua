@@ -24,6 +24,7 @@ function TheaEnhancedMeleeCombo:init()
   self.weapon.onLeaveAbility = function()
     self.weapon:setStance(self.stances.idle)
 	animator.setAnimationState("swoosh", "idle")
+	self.weapon.aimAngle = 0 --Force aim angle to reset to 0 to properly go back into a non-rotatable stance after exiting a rotatable one
   end
 end
 

@@ -585,27 +585,41 @@
 	{ "op" : "add", "path" : "/allianceoutpostattachments",
 		"value" : [
 			[ 0, [
-			  //ATTACHMENTS
-			  { "item": { "name": "thea-bayonetattachment" }, "rarity": 0.5 },
-			  { "item": { "name": "thea-blastammomod-minigun" }, "rarity": 0.5 },
-			  { "item": { "name": "thea-blazeammomod-shotgun" }, "rarity": 0.5 },
-			  { "item": { "name": "thea-clusterammomod-grenade" }, "rarity": 0.5 },
-			  { "item": { "name": "thea-explosiveammomod-sniper" }, "rarity": 0.5 },
-			  { "item": { "name": "thea-flareattachment" }, "rarity": 0.5 },
-			  { "item": { "name": "thea-flashlightattachment" }, "rarity": 0.5 },
-			  { "item": { "name": "thea-greenlaserattachment" }, "rarity": 0.5 },
-			  { "item": { "name": "thea-grenadeammomod-shotgun" }, "rarity": 0.5 },
-			  { "item": { "name": "thea-grenadeattachment" }, "rarity": 0.5 },
-			  { "item": { "name": "thea-impactammomod-sniper" }, "rarity": 0.5 },
-			  { "item": { "name": "thea-napalmrocketmod-rpg" }, "rarity": 0.5 },
-			  { "item": { "name": "thea-redlaserattachment" }, "rarity": 0.5 },
-			  { "item": { "name": "thea-ricochetammomod-shotgun" }, "rarity": 0.5 },
-			  { "item": { "name": "thea-silencerattachment-assault" }, "rarity": 0.5 },
-			  { "item": { "name": "thea-slugammomod-shotgun" }, "rarity": 0.5 },
-			  { "item": { "name": "thea-smartmissilemod-rpg" }, "rarity": 0.5 },
-			  { "item": { "name": "thea-stickyammomod-grenade" }, "rarity": 0.5 },
-			  { "item": { "name": "thea-stickyattachment" }, "rarity": 0.5 },
-			  { "item": { "name": "thea-stunammomod-grenade" }, "rarity": 0.5 }
+			//ATTACHMENTS TIER 0 - COMMON - COST: 375
+			  //Assault
+			  { "item": { "name": "thea-redlaserattachment" } },
+			  { "item": { "name": "thea-greenlaserattachment" } },
+			  { "item": { "name": "thea-flashlightattachment" } },
+			  //Shotgun
+			  { "item": { "name": "thea-ricochetammomod-shotgun" } },
+			  //Sniper
+			  { "item": { "name": "thea-bayonetattachment" } },
+			//ATTACHMENTS TIER 1 - UNCOMMON - COST: 500
+			  //Assault
+			  { "item": { "name": "thea-silencerattachment-assault" }, "prerequisiteQuest" : "allianceattachmentsunlock" },
+			  { "item": { "name": "thea-flareattachment" }, "prerequisiteQuest" : "allianceattachmentsunlock" },
+			  //Shotgun
+			  { "item": { "name": "thea-slugammomod-shotgun" }, "prerequisiteQuest" : "allianceattachmentsunlock" },
+			  //Sniper
+			  { "item": { "name": "thea-impactammomod-sniper" }, "prerequisiteQuest" : "allianceattachmentsunlock" },
+			//ATTACHMENTS TIER 2 - RARE - COST: 750
+			  //Assault
+			  { "item": { "name": "thea-stickyattachment" }, "prerequisiteQuest" : "allianceattachmentsunlock2" },
+			  { "item": { "name": "thea-grenadeattachment" }, "prerequisiteQuest" : "allianceattachmentsunlock2" },
+			  //Shotgun
+			  { "item": { "name": "thea-grenadeammomod-shotgun" }, "prerequisiteQuest" : "allianceattachmentsunlock2" },
+			  { "item": { "name": "thea-blazeammomod-shotgun" }, "prerequisiteQuest" : "allianceattachmentsunlock2" },
+			  //Sniper
+			  { "item": { "name": "thea-explosiveammomod-sniper" }, "prerequisiteQuest" : "allianceattachmentsunlock2" },
+			  //Grenade
+			  { "item": { "name": "thea-clusterammomod-grenade" }, "prerequisiteQuest" : "allianceattachmentsunlock2" },
+			  { "item": { "name": "thea-stunammomod-grenade" }, "prerequisiteQuest" : "allianceattachmentsunlock2" },
+			//ATTACHMENTS TIER 3 - LEGENDARY - COST: 1000
+			  //Rocket
+			  { "item": { "name": "thea-napalmrocketmod-rpg" }, "prerequisiteQuest" : "allianceattachmentsunlock3" },
+			  { "item": { "name": "thea-smartmissilemod-rpg" }, "prerequisiteQuest" : "allianceattachmentsunlock3" },
+			  //Minigun
+			  { "item": { "name": "thea-blastammomod-minigun" }, "prerequisiteQuest" : "allianceattachmentsunlock3" }
 			] ]
 		]
 	},
