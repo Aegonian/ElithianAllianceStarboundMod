@@ -14,7 +14,7 @@ function spawnCompanion(_, _, crewmemberType)
   local uniqueId = sb.makeUuid()
   local parameters = {
 	  scriptConfig = {
-	  uniqueId = uniqueId
+		uniqueId = uniqueId
 	  }
 	}
   local entityType = "crewmemberalliance"

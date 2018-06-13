@@ -1,0 +1,115 @@
+{
+  "globalTagDefaults" : {
+    "paletteSwaps" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "swoosh" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {},
+          "fire" : {
+            "frames" : 1,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "idle",
+			"properties" : {
+			  "persistentSound" : "/sfx/melee/spear_twirl_loop.ogg"
+			}
+          },
+          "fire2" : {
+            "frames" : 1,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "idle",
+			"properties" : {
+			  "persistentSound" : "/sfx/melee/spear_twirl_loop.ogg"
+			}
+          },
+          "fire3" : {
+            "frames" : 1,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "idle",
+			"properties" : {
+			  "persistentSound" : "/sfx/melee/spear_twirl_loop.ogg"
+			}
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "blade" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "image" : "<partImage><paletteSwaps>",
+          "offset" : [0.0, 0.0],
+          "transformationGroups" : ["weapon"]
+        }
+      },
+      "swoosh" : {
+        "properties" : {
+          "zLevel" : -1,
+          "centered" : true,
+          "fullbright" : false,
+          "offset" : [3.0, 0.0],
+          "transformationGroups" : ["swoosh"]
+        },
+        "partStates" : {
+          "swoosh" : {
+            "idle" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+			"fire" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/unique/razaara/swoosh/spinright.png:<frame>",
+                "offset" : [0.0, 0.0],
+                "damageArea" : [ [-2.0, 1.0], [-1.0, 2.0], [1.0, 2.0], [2.0, 1.0], [2.0, -1.0], [1.0, -2.0], [-1.0, -2.0], [-2.0, -1.0] ]
+              }
+            },
+			"fire2" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/unique/razaara/swoosh/spinleft.png:<frame>",
+                "offset" : [0.0, 0.0],
+                "damageArea" : [ [-2.0, 1.0], [-1.0, 2.0], [1.0, 2.0], [2.0, 1.0], [2.0, -1.0], [1.0, -2.0], [-1.0, -2.0], [-2.0, -1.0] ]
+              }
+            },
+            "fire3" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/unique/razaara/swoosh/spinrightstrong.png:<frame>",
+                "offset" : [0.0, 0.0],
+                "damageArea" : [ [-2.0, 1.0], [-1.0, 2.0], [1.0, 2.0], [2.0, 1.0], [2.0, -1.0], [1.0, -2.0], [-1.0, -2.0], [-2.0, -1.0] ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "swoosh" : {}
+  },
+
+  "particleEmitters" : {
+    "physicalswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+	  "offsetRegion" : [3.5, -1.0, 7.5, 1.0],
+      "burstCount" : 4,
+      "particles" : []
+    }
+  },
+
+  "sounds" : {
+    "fire" : [],
+	"fire2" : [],
+	"fire3" : []
+  }
+}

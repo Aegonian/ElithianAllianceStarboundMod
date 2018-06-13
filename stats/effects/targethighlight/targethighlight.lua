@@ -3,6 +3,8 @@ function init()
   self.queryDamageSince = 0
   
   script.setUpdateDelta(1)
+  
+  self.canMultiplyDamage = false --Disable damage amplification on the first frame to prevent damage amplification for damage received before the effect was active
 end
 
 function update(dt)
@@ -10,6 +12,9 @@ function update(dt)
   local damageNotifications, nextStep = status.damageTakenSince(self.queryDamageSince)
   self.queryDamageSince = nextStep
   
+  world.debugText(nextStep, mcontroller.position(), "red")
+  
+  if self.canMultiplyDamage then
   for _, notification in ipairs(damageNotifications) do
 	if notification.healthLost > 1 and config.getParameter("damageAdditionPercentage", 0) > 0 then
 	  --sb.logInfo(sb.printJson(notification, 1))
@@ -22,6 +27,9 @@ function update(dt)
 	  status.applySelfDamageRequest(damageRequest)
 	end
   end
+  end
+  
+  self.canMultiplyDamage = true
 end
 
 function uninit()

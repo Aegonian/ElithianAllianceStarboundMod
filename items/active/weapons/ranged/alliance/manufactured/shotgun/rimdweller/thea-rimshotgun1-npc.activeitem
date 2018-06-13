@@ -1,0 +1,133 @@
+{
+  "itemName" : "thea-rimshotgun1-npc",
+  "price" : 350,
+  "inventoryIcon" : "thea-rimshotgun1.png:idle",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A shotgun produced somewhere in the Rim.",
+  "manufacturer" : "^gray;The Rim^reset;",
+  "shortdescription" : "Breacher RM14 (NPC)",
+  "level" : 6,
+  "fixedLevel" : false,
+  "tooltipKind" : "thea-gun-mf",
+  "category" : "Shotgun",
+  "itemTags" : ["weapon","ranged","shotgun","alliance","rimdweller","allianceUpgradeable"],
+  "twoHanded" : true,
+  
+  "cursor" : "/cursors/thea-widereticle.cursor",
+
+  "animation" : "/items/active/weapons/ranged/animations/thea-reloadshotgun-flashlight.animation",
+  "animationParts" : {
+    "middle" : "thea-rimshotgun1.png",
+    "middleFullbright" : "thea-rimshotgun1lights.png",
+    "flashLight" : "thea-rimshotgun1flashlight.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "stateTypes" : {
+		"light" : {
+		  "default" : "on"
+		}
+	  },
+	  "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+		    "offset" : [0.625, 0.25]
+		  }
+		},
+        "flashLight" : {
+		  "properties" : {
+		    "offset" : [0.625, 0.25]
+		  }
+		}
+      }
+    },
+    "particleEmitters" : {
+      "muzzleFlash" : {
+        "transformationGroups" : ["weapon"],
+		"offsetRegion" : [0.623, 0.625, 0.625, 0.625],
+        "particles" : [
+          { "particle" : "thea-discardedbulletlight" }
+        ]
+      }
+    },
+    "lights" : {
+      "flashlightSpread" : {
+        "active" : true,
+        "position" : [2.0, 0.0],
+        "transformationGroups" : ["weapon"],
+        "color" : [80, 80, 20]
+      },
+      "flashlight" : {
+        "active" : true,
+        "position" : [2.0, 0.0],
+        "transformationGroups" : ["weapon"],
+        "color" : [200, 200, 50],
+        "pointLight" : true,
+        "pointAngle" : 0.00,
+        "pointBeam" : 2.5
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/shotgun2.ogg" ],
+      "reload" : [ "/sfx/gun/reload/shotgun_reload_clip3.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.625, 0.25],
+  "muzzleOffset" : [2.125, 0.25],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-reloadfire/thea-reloadfire.lua"],
+    "class" : "TheaReloadFire",
+
+    "fireTime" : 1.0,
+    "baseDps" : 10.5,
+    "energyUsage" : 35,
+    "inaccuracy" : 0.15,
+
+    "projectileCount" : 16,
+    "fireType" : "auto",
+
+    "projectileType" : "alliancepellet",
+    "projectileParameters" : {
+      "knockback" : 10
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0.25,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.3,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+}

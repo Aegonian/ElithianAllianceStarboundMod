@@ -1,0 +1,26 @@
+{
+  "name": "merchant_aegi",
+  "priority": 4,
+
+  "colonyTagCriteria": {
+    "light": 1,
+    "door": 1,
+    "alliance": 8,
+    "storage": 8,
+    "commerce": 8
+  },
+
+  "tenants": [
+    {
+      "spawn": "npc",
+      "species": "aegi",
+      "type": "tenantaegimerchant",
+      "overrides": {}
+     }
+   ],
+
+  "rent": {
+    "periodRange": [900.0, 1800.0],
+    "pool": "allianceMerchantGift"
+  }
+}

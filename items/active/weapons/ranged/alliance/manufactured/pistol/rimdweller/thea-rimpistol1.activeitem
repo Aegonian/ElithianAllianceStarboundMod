@@ -1,0 +1,104 @@
+{
+  "itemName" : "thea-rimpistol1",
+  "price" : 250,
+  "inventoryIcon" : "thea-rimpistol1.png:idle",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A handgun produced somewhere in the Rim.",
+  "manufacturer" : "^gray;The Rim^reset;",
+  "shortdescription" : "Broker RM1",
+  "level" : 6,
+  "fixedLevel" : false,
+  "tooltipKind" : "thea-gun-mf",
+  "category" : "Handgun",
+  "itemTags" : ["weapon","ranged","pistol","alliance","rimdweller","allianceUpgradeable"],
+  "twoHanded" : false,
+
+  "animation" : "/items/active/weapons/ranged/animations/thea-gun-ejectbullet2.animation",
+  "animationParts" : {
+    "middle" : "thea-rimpistol1.png",
+    "middleFullbright" : "thea-rimpistol1lights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+		    "offset" : [0.25, 0.0]
+		  }
+		}
+      }
+    },
+    "particleEmitters" : {
+      "muzzleFlash" : {
+        "transformationGroups" : ["weapon"],
+		"offsetRegion" : [0.125, 0.125, 0.125, 0.125],
+        "particles" : [
+          { "particle" : "thea-discardedbulletlight" }
+        ]
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/pistol2.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.25, 0.0],
+  "muzzleOffset" : [1.0, 0.375],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-gunfire.lua"],
+    "class" : "TheaGunFire",
+
+    "fireTime" : 0.38,
+    "baseDps" : 7.0,
+    "energyUsage" : 24,
+    "inaccuracy" : 0.025,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "alliancephysicalbullet",
+    "projectileParameters" : {
+      "knockback" : 4
+    },
+	
+	"singleFireAnimation" : true, //Tells the weapon that the active animation is single-fire instead of looping, allowing altFire to also play the active animation
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 6,
+        "weaponRotation" : 7,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.1,
+        "armRotation" : 6,
+        "weaponRotation" : 7,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+}

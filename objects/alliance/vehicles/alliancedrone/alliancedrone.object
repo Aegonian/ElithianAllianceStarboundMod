@@ -1,0 +1,44 @@
+{
+  "objectName" : "alliancedroneobject",
+  "colonyTags" : ["alliance","vehicle"],
+  "rarity" : "Legendary",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 1500,
+  "description" : "A small drone.",
+  "shortdescription" : "Alliance Drone",
+  "race" : "aegi",
+  
+  "health" : 4,
+
+  "apexDescription" : "A small drone.",
+  "avianDescription" : "That's just a small drone.",
+  "floranDescription" : "Floran seesss a drone, Floran wantss to fly it.",
+  "glitchDescription" : "Observation. A small drone.",
+  "humanDescription" : "Awesome, it's a drone!",
+  "hylotlDescription" : "A drone. It can hover very quietly.",
+  "novakidDescription" : "A small hoverin' construct.",
+
+  "aegiDescription" : "A small drone built by AAE.",
+  "avikanDescription" : "An alien vehicle. It looks a bit like the Drahl.",
+  "erixianDescription" : "This drone was likely manufactured by AAE.",
+  "trinkDescription" : "An efficient drone design.",
+  "hymidDescription" : "A small AAE drone. It's quite robust.",
+  "notixDescription" : "To others these drones may seem quiet, but I can always clearly hear them.",
+  "jorgasianDescription" : "A lightweight AAE drone.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien vehicle. Similarities to Vanguard Drahl units noted.",
+
+  "inventoryIcon" : "alliancedroneicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "alliancedrone.png:<color>",
+      "imagePosition" : [-16, 0],
+
+      "spaceScan" : 0.1,
+      "fgAnchors" : [ [1, -1], [0, -1], [-1, -1] ]
+    }
+  ]
+}

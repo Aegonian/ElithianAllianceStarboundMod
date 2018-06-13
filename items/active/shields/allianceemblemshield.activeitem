@@ -13,7 +13,7 @@
   
   "inventoryIcon" : "images/allianceemblemshield.png:nearidle",
 
-  "animation" : "allianceemblemshield.animation",
+  "animation" : "thea-shieldlights.animation",
   "animationParts" : {
     "shield" : "images/allianceemblemshield.png",
     "shieldLights" : "images/allianceemblemshieldlights.png"

@@ -76,7 +76,7 @@
       "body" : {
         "properties" : {
           "transformationGroups" : [ "body" ],
-          "offset" : [0.0, 2.5]
+          "offset" : [0.0, 2.0]
         },
         "partStates" : {
           "body" : {

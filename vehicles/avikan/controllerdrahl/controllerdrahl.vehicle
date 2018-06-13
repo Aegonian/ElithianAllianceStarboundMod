@@ -1,6 +1,6 @@
 {
   "name" : "controllerdrahl",
-  "script" : "controllerdrahl.lua",
+  "script" : "/vehicles/thea-remotecontroldrone.lua",
   "boundBox" : [-1, -1, 1, 1],
   "slaveControlTimeout" : 2.0,
   "slaveControlHeartbeat" : 1.0,
@@ -8,6 +8,8 @@
   "animation" : "controllerdrahl.animation",
 
   //GENERAL SETTINGS
+  "edgeOfRangeDistance" : 40,	//Minimum distance to owner for the antenna to start blinking rapidly. Should match configured value in controller config
+  "signalLossTimout" : 0.5,		//Time before loss of signal is considered final. Used to prevent minor lag from messing with the antenna animation
 
   //HEALTH AND DAMAGE STATS
   "materialKind" : "robotic",
@@ -21,6 +23,7 @@
   },
 
   //COMBAT SETTINGS
+  "fireMode" : "charged",
   "fireProjectile" : "avikandronebulletseeking",
   "fireProjectileConfig" : {
     "power" : 40

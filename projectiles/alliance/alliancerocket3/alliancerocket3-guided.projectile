@@ -1,0 +1,27 @@
+{
+  "projectileName" : "alliancerocket3-guided",
+  "image" : "alliancerocket3-guided.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 4,
+  "lightColor" : [255, 255, 128],
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/avikanrocketexplosion/avikanrocketexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "emitters" : [ "rocketsmoke" ],
+  "flippable" : true,
+  "power" : 10.0,
+  "speed" : 1.0,
+  "acceleration" : 75,
+  "physics" : "rocket",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+
+  "scripts" : [ "/projectiles/activeitems/guidedrocket/guidedrocket.lua" ],
+  "rotationRate" : 6.0,
+  "maxTrackingAngle" : 3.0
+}

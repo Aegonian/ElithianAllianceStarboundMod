@@ -1,0 +1,37 @@
+{
+  "id" : "avikanmechunlock",
+  "prerequisites" : [ "avikangunrangeunlock", "techscientist4" ],
+  "title" : "^green;The Vanguard's Vehicles",
+  "text" : "The Vanguard is deploying its vehicles across more and more locations every day, and we need to test them to ensure they continue to operate effectively. I need you to ^green;enter our testing facility and put the ^orange;Vanguard Krahl ^green;to the test^reset;. In return, I'll allow ^orange;Jakhar ^reset;to sell you Vanguard vehicles.",
+  "completionText" : "Well done, your run through the testing facility has provided the Vanguard with a lot of information to study. Jakhar has been informed that he can now sell you Vanguard vehicles: make sure to pay him a visit.",
+  "moneyRange" : [1000, 1000],
+  "rewards" : [ 
+	[ [ "avikanmerittoken", 250 ], [ "avikancache", 1 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/instance.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "default" : "questGiver"
+    },
+
+    "descriptions" : {
+      "enterInstance" : "Talk to ^orange;Rokhan^reset; to enter the ^orange;testing facility^reset;",
+      "findGoal" : "Reach the end of the ^orange;Vanguard testing facility^reset;",
+      "turnIn" : "Return to ^orange;Rokhan^reset; in the ^orange;Starfarer's Refuge^reset;"
+    },
+
+    "warpEntityUid" : "ao-vanguardrecruiter",
+    "warpAction" : "instanceworld:vanguardmechunlock",
+    "warpDialog" : "/interface/confirmation/teleportconfirmation.config:vanguardmechunlock",
+
+    "goalTrigger" : "proximity",
+    "proximityRange" : 10,
+    "goalEntityUid" : "vanguardmechunlockteleporter",
+    "indicateGoal" : false,
+    "trackGoalEntity" : false,
+
+    "turnInEntityUid" : "ao-vanguardrecruiter"
+  }
+}

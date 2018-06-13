@@ -5,6 +5,13 @@
 
   "animatedParts" : {
     "stateTypes" : {
+	  "headlight" : {
+        "default" : "off",
+        "states" : {
+          "on" : {},
+		  "off" : {}
+		}
+	  },
       "mech" : {
         "default" : "idleOpen",
         "states" : {
@@ -254,6 +261,27 @@
               "properties" : {}
             },
             "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
+	  //HEADLIGHT
+	  "headlight" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 4,
+          "anchorPart" : "seat",
+		  "fullbright" : true
+        },
+        "partStates" : {
+          "headlight" : {
+			"on" : {
+              "properties" : {
+                "image" : "avikanmechheadlight.png:on"
+              }
+            },
+            "off" : {
               "properties" : {}
             }
           }
@@ -766,6 +794,9 @@
   },
 
   "transformationGroups" : {
+    "rotation" : {
+      "interpolated" : true
+    },
     "flip" : {}
   },
   "rotationGroups" : {
@@ -842,15 +873,43 @@
     }
   },
 
+  "lights" : {
+    "headlight" : {
+      "active" : true,
+	  "anchorPart" : "seat",
+      "position" : [1.25, -1.5],
+      "color" : [250, 250, 250],
+      "pointLight" : true,
+      "pointAngle" : -15,
+      "pointBeam" : 3
+    }
+  },
+
   "sounds" : {
+	//GENERIC SOUNDS
     "returnvehicle" : [ "/sfx/tools/teleport_up.ogg" ],
-	"fire" : [ "/sfx/gun/mech_gun3.ogg" ],
-	"secondaryFire" : [ "/sfx/gun/grenade3.ogg" ],
 	"powerup" : [ "/sfx/tech/thea_mech_powerup.ogg" ],
 	"powerdown" : [ "/sfx/tech/thea_mech_powerdown.ogg" ],
+	
+	//COMBAT SOUNDS
+	"fire" : [ "/sfx/gun/mech_gun3.ogg" ],
+	"secondaryFire" : [ "/sfx/gun/grenade3.ogg" ],
+	
+	//MOVEMENT SOUNDS
 	"jump" : [ "/sfx/tech/thea_mech_jump2.ogg" ],
 	"landing" : [ "/sfx/tech/thea_mech_impact.ogg" ],
 	"boost" : [ "/sfx/tech/thea_mech_jetpack.ogg" ],
-	"warning" : [ "/sfx/objects/redalert2.ogg" ]
+	
+	//HEALTH SOUNDS
+	"warning" : [ "/sfx/objects/redalert2.ogg" ],
+	"explode" : [
+	  "/sfx/gun/grenadeblast_small_fire1.ogg",
+	  "/sfx/gun/grenadeblast_small_fire2.ogg",
+	  "/sfx/gun/grenadeblast_small_fire3.ogg"
+	],
+	
+	//INPUT SOUNDS
+    "headlightSwitchOn" : [ "/sfx/objects/floodlights_on.ogg" ],
+    "headlightSwitchOff" : [ "/sfx/objects/floodlights_off.ogg" ]
   }
 }

@@ -1,10 +1,23 @@
 [
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : 
-		  {
-			"tag" : "avikan",
-			"name" : "pieces of ^orange;Avikan furniture"
-		  }
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : {
+	  "tag" : "avikan",
+	  "name" : "pieces of ^orange;Avikan furniture"
 	}
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : {
+	  "tag" : "alliance",
+	  "name" : "pieces of ^orange;Alliance furniture"
+	}
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : {
+	  "tag" : "trink",
+	  "name" : "pieces of ^orange;Trinkian furniture"
+	}
+  }
 ]

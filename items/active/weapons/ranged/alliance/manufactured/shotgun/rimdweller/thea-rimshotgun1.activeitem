@@ -16,10 +16,11 @@
   
   "cursor" : "/cursors/thea-widereticle.cursor",
 
-  "animation" : "/items/active/weapons/ranged/animations/thea-reloadshotgun.animation",
+  "animation" : "/items/active/weapons/ranged/animations/thea-reloadshotgun-flashlight.animation",
   "animationParts" : {
     "middle" : "thea-rimshotgun1.png",
     "middleFullbright" : "thea-rimshotgun1lights.png",
+    "flashLight" : "thea-rimshotgun1flashlight.png",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
   },
   "animationCustom" : {
@@ -29,7 +30,38 @@
 		  "properties" : {
 		    "offset" : [0.625, 0.25]
 		  }
+		},
+        "flashLight" : {
+		  "properties" : {
+		    "offset" : [0.625, 0.25]
+		  }
 		}
+      }
+    },
+    "particleEmitters" : {
+      "reload" : {
+        "transformationGroups" : ["weapon"],
+		"offsetRegion" : [0.623, 0.625, 0.625, 0.625],
+        "particles" : [
+          { "particle" : "thea-discardedbulletlight" }
+        ]
+      }
+    },
+    "lights" : {
+      "flashlightSpread" : {
+        "active" : false,
+        "position" : [2.0, 0.0],
+        "transformationGroups" : ["weapon"],
+        "color" : [80, 80, 20]
+      },
+      "flashlight" : {
+        "active" : false,
+        "position" : [2.0, 0.0],
+        "transformationGroups" : ["weapon"],
+        "color" : [200, 200, 50],
+        "pointLight" : true,
+        "pointAngle" : 0.00,
+        "pointBeam" : 2.5
       }
     },
     "sounds" : {
@@ -62,6 +94,8 @@
       "knockback" : 10
     },
 	
+	"reloadParticles" : true,
+	
     "stances" : {
       "idle" : {
         "armRotation" : 0,
@@ -91,6 +125,8 @@
       }
     }
   },
+  
+  "altAbilityType" : "thea-flashlight-builtin",
 
   "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

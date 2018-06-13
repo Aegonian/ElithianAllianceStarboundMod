@@ -16,7 +16,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJztlEEOwjAQA8vz+DuP4oQQSlLRJpvxJh7JR5S1BzgOY4wxxhhjjNmb10nMHM4ctHzY1Vj+ddDa++rn7a7OqA17fOzuKGqv0U5WdzNjnygnK3ghNon0kdUJvYOdfFHpvrsTxb47OsnWaSU3mW9vkdFJxpuvkOW3kuHGkUT9l43YJ8t3JgolJ7u7aGEfesx2EfHmSsx2EfHmKhC\/jai3s0O6UHhfgagNlHwo+5nV+W7\/mXc9H\/Xcue8qhIcMd7ac1NLbmXLQ44O4e5QH9dyFundVDz0uPtD3r5YR0B1WyUjoLpkTBd0rW6Kh+2XJTOiu6iGgOyuGhO6uFhq6v1JUoHdQiQr0DgpRgt6Cjhr0HnTUoPewixJ6F7uoQ29kFyX0VnZRh97NLurQG9pFCb2lPfxCb2oHJfTGdlCH3t0e2thDHrypUeMNLgA+Nw==",
+         "data":"eJztlEEOwjAQA8vD+SGP4oQQSlLRJpvxJh7JR5S1BzgOY4wxxhhjjNmb10nMHM4ctHzY1Vj+ddDa++rn7a7OqA17fOzuKGqv0U5WdzNjnygnK3ghNon0kdUJvYOdfFHpvrsTxb47OsnWaSU3mW9vkdFJxpuvkOW3kuHGkUT9l43YJ8t3JgolJ7u7aGEfesx2EfHmSsx2EfHmKhC\/jai3s0O6UHhfgagNlHwo+5nV+W7\/mXc9H\/Xcue8qhIcMd7ac1NLbmXLQ44O4e5QH9dyFundVDz0uPtD3r5YR0B1WyUjoLpkTBd0rW6Kh+2XJTOiu6iGgOyuGhO6uFhq6v1JUoHdQiQr0DgpRgt6Cjhr0HnTUoPewixJ6F7uoQ29kFyX0VnZRh97NLurQG9pFCb2lPfxCb2oHJfTGdlCH3t0e2thDHrypUeMNkoxEGw==",
          "encoding":"base64",
          "height":60,
          "name":"front",
@@ -255,7 +255,7 @@
                  "y":72
                 }, 
                 {
-                 "gid":455,
+                 "gid":509,
                  "height":16,
                  "id":836,
                  "name":"",
@@ -271,7 +271,7 @@
                  "y":232
                 }, 
                 {
-                 "gid":455,
+                 "gid":509,
                  "height":16,
                  "id":837,
                  "name":"",
@@ -287,7 +287,7 @@
                  "y":240
                 }, 
                 {
-                 "gid":2147484103,
+                 "gid":2147484157,
                  "height":16,
                  "id":838,
                  "name":"",
@@ -303,7 +303,7 @@
                  "y":240
                 }, 
                 {
-                 "gid":455,
+                 "gid":509,
                  "height":16,
                  "id":839,
                  "name":"",
@@ -319,7 +319,7 @@
                  "y":248
                 }, 
                 {
-                 "gid":455,
+                 "gid":509,
                  "height":16,
                  "id":840,
                  "name":"",
@@ -335,7 +335,7 @@
                  "y":256
                 }, 
                 {
-                 "gid":455,
+                 "gid":509,
                  "height":16,
                  "id":841,
                  "name":"",
@@ -351,7 +351,7 @@
                  "y":224
                 }, 
                 {
-                 "gid":2147484103,
+                 "gid":2147484157,
                  "height":16,
                  "id":842,
                  "name":"",
@@ -406,7 +406,7 @@
                  "visible":true,
                  "width":8,
                  "x":248,
-                 "y":224
+                 "y":216
                 }, 
                 {
                  "height":8,
@@ -422,7 +422,7 @@
                  "visible":true,
                  "width":8,
                  "x":384,
-                 "y":224
+                 "y":216
                 }, 
                 {
                  "height":8,
@@ -438,7 +438,7 @@
                  "visible":true,
                  "width":8,
                  "x":528,
-                 "y":216
+                 "y":208
                 }, 
                 {
                  "height":8,
@@ -745,11 +745,11 @@
          "source":"..\/..\/..\/..\/tilesets\/avikan-custom\/theamaterials.json"
         }, 
         {
-         "firstgid":327,
+         "firstgid":379,
          "source":"..\/..\/..\/..\/tilesets\/avikan-custom\/thealiquids.json"
         }, 
         {
-         "firstgid":331,
+         "firstgid":385,
          "source":"..\/..\/..\/..\/tilesets\/avikan-custom\/theaobjects-avikan.json"
         }],
  "tilewidth":8,

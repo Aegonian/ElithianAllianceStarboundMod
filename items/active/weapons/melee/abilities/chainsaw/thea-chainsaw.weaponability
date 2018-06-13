@@ -1,0 +1,54 @@
+{
+  "ability" : {
+    "type" : "thea-chainsaw",
+    "class" : "TheaChainSaw",
+    "name" : "Cut",
+    "scripts" : ["/items/active/weapons/melee/abilities/chainsaw/thea-chainsaw.lua"],
+
+	//Weapon settings
+    "fireTime" : 0.1,
+    "baseDps" : 12.5,
+	"cooldownTime" : 0.3,
+	
+	//Tile damage settings
+	"tileDamage" : 0.5,
+	"damageTileDepth" : 3,
+	"damageForeground" : true,
+	"damageBackground" : false,
+	
+    "damageConfig" : {
+      "damageSourceKind" : "dagger",
+      "statusEffects" : [ ],
+      "knockbackMode" : "aim",
+      "knockback" : 1,
+      "timeoutGroup" : "primary"
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : -40,
+        "weaponRotation" : 20,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 0],
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      },
+      "hold" : {
+        "armRotation" : -15,
+        "weaponRotation" : 15,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 0],
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      }
+    }
+  }
+}

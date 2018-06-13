@@ -12,6 +12,11 @@
             "cycle" : 0.8,
             "mode" : "loop"
           },
+          "warning" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "loop"
+          },
           "searching" : {
             "frames" : 2,
             "cycle" : 0.4,
@@ -38,6 +43,11 @@
             "active" : {
               "properties" : {
                 "image" : "<partImage>:active.<frame>"
+              }
+            },
+            "warning" : {
+              "properties" : {
+                "image" : "<partImage>:warning.<frame>"
               }
             },
             "searching" : {
@@ -67,6 +77,11 @@
                 "image" : "<partImage>:active.<frame>"
               }
             },
+            "warning" : {
+              "properties" : {
+                "image" : "<partImage>:warning.<frame>"
+              }
+            },
             "searching" : {
               "properties" : {
                 "image" : "<partImage>:searching.<frame>"
@@ -80,6 +95,7 @@
 
   "sounds" : {
     "placeOk" : ["/sfx/tech/vehicle_appear1.ogg"],
-    "placeBad" : ["/sfx/interface/clickon_error.ogg"]
+    "placeBad" : ["/sfx/interface/clickon_error.ogg"],
+    "warning" : ["/sfx/interface/sniper_mark_pitch1.ogg"]
   }
 }

@@ -1,38 +1,57 @@
 [
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : 
-		  [
-			[ "generic" ],
-			{
-			  "name" : "Avikan rogues",
-			  "species" : "avikan",
-			  "typeName" : "avikanrogue"
-			}
-		  ]
-	},
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : 
-		  [
-			[ "generic" ],
-			{
-			  "name" : "violated Droden",
-			  "species" : "droden",
-			  "typeName" : "drodenviolated"
-			}
-		  ]
-	},
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : 
-		  [
-			[ "generic" ],
-			{
-			  "name" : "Akkimari scavengers",
-			  "species" : "akkimari",
-			  "typeName" : "akkimariscavenger"
-			}
-		  ]
-	}
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : [
+	  [ "generic" ],
+	  {
+		"name" : "Avikan rogues",
+		"species" : "avikan",
+		"typeName" : "avikanrogue"
+	  }
+	]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : [
+	  [ "generic" ],
+	  {
+		"name" : "violated Droden",
+		"species" : "droden",
+		"typeName" : "drodenviolated"
+	  }
+	]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : [
+	  [ "generic" ],
+	  {
+		"name" : "Akkimari scavengers",
+		"species" : "akkimari",
+		"typeName" : "akkimariscavenger"
+	  }
+	]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : [
+	  [ "generic" ],
+	  {
+		"name" : "Akkimari cloakers",
+		"species" : "akkimari",
+		"typeName" : "akkimaricloaker"
+	  }
+	]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : [
+	  [ "generic" ],
+	  {
+		"name" : "Rimdweller mercenaries",
+		"species" : "aegi",
+		"typeName" : "aegirimfighter"
+	  }
+	]
+  }
 ]

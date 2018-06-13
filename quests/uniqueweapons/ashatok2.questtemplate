@@ -1,6 +1,6 @@
 {
   "id" : "ashatok2",
-  "prerequisites" : [],
+  "prerequisites" : [ "ashatok" ],
   "title" : "^orange;Acidic Warfare II",
   "text" : "Chacharra need materials. Many materials. Many pixels, too, want payment. ^green;Find Chacharra ^orange;12 Hardened Scrap Metal ^green;and ^orange;30000 Pixels^green;. ^white;Then Chacharra will make weapon for you.",
   "completionText" : "Chacharra happy, have all Akki need. Here you go: weapon for you. Use it much, fights you win.",

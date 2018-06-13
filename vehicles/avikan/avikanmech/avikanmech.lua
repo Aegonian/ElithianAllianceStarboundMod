@@ -10,12 +10,14 @@ function init()
   self.worldBottomDeathLevel = 8
   self.materialKind = config.getParameter("materialKind")
   self.damageTakenEmote = config.getParameter("damageTakenEmote")
-  self.mechAimLimit = config.getParameter("mechAimLimit") * math.pi / 180
+  self.mechAimLimitLow = config.getParameter("mechAimLimitLow") * math.pi / 180
+  self.mechAimLimitHigh = config.getParameter("mechAimLimitHigh") * math.pi / 180
   self.fireTime = config.getParameter("fireTime")
   self.fireProjectile = config.getParameter("fireProjectile")
   self.fireProjectileConfig = config.getParameter("fireProjectileConfig")
   self.secondaryFireTime = config.getParameter("secondaryFireTime")
   self.secondaryFireBurstTime = config.getParameter("secondaryFireBurstTime")
+  self.secondaryFireAimVector = config.getParameter("secondaryFireAimVector")
   self.secondaryFireProjectile = config.getParameter("secondaryFireProjectile")
   self.secondaryFireProjectileCount = config.getParameter("secondaryFireProjectileCount")
   self.secondaryFireInaccuracy = config.getParameter("secondaryFireInaccuracy")
@@ -35,15 +37,10 @@ function init()
   self.maxBoostTime = config.getParameter("maxBoostTime")
 
   --Starting stats
-  self.driver = nil;
+  self.driver = nil
+  self.mechFlipped = false
   self.facingDirection = config.getParameter("facingDirection") or 1 --Allow the spawner to set the starting facing direction
-  if self.facingDirection > 0 then
-	self.mechFlipped = false
-  elseif self.facingDirection < 0 then
-	self.mechFlipped = true
-  else
-	self.mechFlipped = false
-  end
+  setDirection(self.facingDirection)
   self.jumpTimer = 0
   self.lastPosition = mcontroller.position()
   self.fireTimer = self.fireTime
@@ -65,6 +62,10 @@ function init()
   self.boostSoundIsPlaying = false
   self.warningSoundIsPlaying = false
   self.boostTimeLeft = self.maxBoostTime
+  self.headlightCanToggle = true
+  self.headlightOn = false
+  animator.setAnimationState("headlight", "off")
+  animator.setLightActive("headlight", false)
   
   --Setting up damage phase storage
   if not storage.damagePhase then
@@ -202,11 +203,13 @@ function update()
 	--Set the current driver
     local driverThisFrame = vehicle.entityLoungingIn("drivingSeat")
 
-	--Set the vehicle's damage team based on driver presence
+	--Set the vehicle's damage team based on driver presence, and enable or disable the item magnet
     if (driverThisFrame ~= nil) then
       vehicle.setDamageTeam(world.entityDamageTeam(driverThisFrame))
+	  vehicle.setForceRegionEnabled("itemMagnet", true)
     else
       vehicle.setDamageTeam({type = "passive"})
+	  vehicle.setForceRegionEnabled("itemMagnet", false)
     end
 
 	--Current health factor
@@ -218,7 +221,9 @@ function update()
 	self.secondaryFireBurstTimer = math.max(0, self.secondaryFireBurstTimer - script.updateDt())
 
 	--Cycle through these functions every frame
-    setDirection()
+    if driverThisFrame then
+	  setDirection()
+	end
 	move()
 	aim()
 
@@ -340,6 +345,7 @@ function updateDamagePhase()
   --Vehicle destruction code
   if storage.health <= 0 then
 	animator.burstParticleEmitter("explosion")
+	animator.playSound("explode")
 	world.spawnProjectile(self.explosionProjectile, mcontroller.position(), 0, {0, 0}, false, self.explosionProjectileConfig)
 	vehicle.destroy()
   end
@@ -382,11 +388,15 @@ function selfDamageNotifications()
 end
 
 --Set the vehicle's facing direction
-function setDirection()
+function setDirection(direction)
   animator.resetTransformationGroup("flip")
-  local diff = world.distance(vehicle.aimPosition("drivingSeat"), mcontroller.position())
-  aimAngle = math.atan(diff[2], diff[1])
-  self.mechFlipped = aimAngle > math.pi / 2 or aimAngle < -math.pi / 2
+  if not direction then
+	local diff = world.distance(vehicle.aimPosition("drivingSeat"), mcontroller.position())
+	aimAngle = math.atan(diff[2], diff[1])
+	self.mechFlipped = aimAngle > math.pi / 2 or aimAngle < -math.pi / 2
+  else
+	self.mechFlipped = direction < 0
+  end
   if self.mechFlipped then
     animator.scaleTransformationGroup("flip", {-1, 1})
   end
@@ -514,6 +524,26 @@ function move()
 	elseif vehicle.controlHeld("drivingSeat", "down") and mcontroller.yVelocity() < -4.0 then
 	  mcontroller.applyParameters(self.noPlatformMovementSettings)
 	end
+	
+	--Headlight control
+	if vehicle.controlHeld("drivingSeat", "Special1") then
+	  if self.headlightCanToggle then
+		if not self.headlightOn then
+		  animator.playSound("headlightSwitchOn")
+		  animator.setAnimationState("headlight", "on")
+		  animator.setLightActive("headlight", true)
+		  self.headlightOn = true
+		else
+		  animator.playSound("headlightSwitchOff")
+		  animator.setAnimationState("headlight", "off")
+		  animator.setLightActive("headlight", false)
+		  self.headlightOn = false
+		end
+		self.headlightCanToggle = false
+	  end
+	else
+	  self.headlightCanToggle = true
+	end
   end
 end
 
@@ -529,18 +559,22 @@ function aim()
 	--Rotate the guns
 	if self.mechFlipped then
 	  if self.aimAngle > 0 then
-		self.aimAngle = math.max(self.aimAngle, math.pi - self.mechAimLimit)
+		self.aimAngle = math.max(self.aimAngle, math.pi - self.mechAimLimitHigh)
 	  else
-		self.aimAngle = math.min(self.aimAngle, -math.pi + self.mechAimLimit)
+		self.aimAngle = math.min(self.aimAngle, -math.pi + self.mechAimLimitLow)
 	  end
 	  animator.rotateGroup("guns", math.pi - self.aimAngle)
+	  animator.resetTransformationGroup("rotation")
+	  animator.rotateTransformationGroup("rotation", math.pi + self.aimAngle, {0.5, -2.5})
 	else
 	  if self.aimAngle > 0 then
-        self.aimAngle = math.min(self.aimAngle, self.mechAimLimit)
+        self.aimAngle = math.min(self.aimAngle, self.mechAimLimitHigh)
       else
-        self.aimAngle = math.max(self.aimAngle, -self.mechAimLimit)
+        self.aimAngle = math.max(self.aimAngle, -self.mechAimLimitLow)
       end	  
 	  animator.rotateGroup("guns", self.aimAngle)
+	  animator.resetTransformationGroup("rotation")
+	  animator.rotateTransformationGroup("rotation", self.aimAngle, {0.5, -2.5})
 	end
 	
 	--Firing behaviour
@@ -572,8 +606,9 @@ function aim()
 	--Secondary firing behaviour, part 2
 	if self.secondaryIsFiring then
 	  if self.secondaryFireBurstTimer <= 0 and self.secondaryBurstsLeft > 0 then
-		local aimVector = vec2.rotate({1*facingDirection, 2}, sb.nrand(self.secondaryFireInaccuracy, 0))
-		world.spawnProjectile(self.secondaryFireProjectile, vec2.add(mcontroller.position(), animator.partPoint("seat", "secondaryFirePosition")), vehicle.entityLoungingIn("drivingSeat"), aimVector, false, self.secondaryFireProjectileConfig)
+		local aimVector = vec2.rotate({self.secondaryFireAimVector[1] * facingDirection, self.secondaryFireAimVector[2]}, sb.nrand(self.secondaryFireInaccuracy, 0))
+		local firePosition = vec2.add(mcontroller.position(), animator.partPoint("seat", "secondaryFirePosition"))
+		world.spawnProjectile(self.secondaryFireProjectile, firePosition, vehicle.entityLoungingIn("drivingSeat"), aimVector, false, self.secondaryFireProjectileConfig)
 		animator.playSound("secondaryFire")
 		self.secondaryFireBurstTimer = self.secondaryFireBurstTime
 		self.secondaryBurstsLeft = self.secondaryBurstsLeft - 1

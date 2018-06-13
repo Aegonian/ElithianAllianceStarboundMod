@@ -384,6 +384,18 @@
       "title" : "Stinger",
       "description" : "A lightweight driftrifle built for tactical incursions.",
       "icon" : "/items/active/weapons/ranged/unique/stinger/akkimari-stingericon.png"
+    },
+	"akkimari-shakkar" : {
+      "order" : 63,
+      "title" : "Shakkar",
+      "description" : "A brutal spear with an electrified blade.",
+      "icon" : "/items/active/weapons/melee/unique/shakkar/akkimari-shakkaricon.png"
+    },
+	"akkimari-razaara" : {
+      "order" : 64,
+      "title" : "Razaara",
+      "description" : "A razor-sharp whirlblade that slices through flesh and bone with ease.",
+      "icon" : "/items/active/weapons/melee/unique/razaara/akkimari-razaara.png"
     }
   }
 }

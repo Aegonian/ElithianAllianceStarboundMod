@@ -1,0 +1,31 @@
+{
+  "projectileName" : "alliancetransportdronecrate",
+  "image" : "alliancetransportdronecrate.png",
+  "physics" : "thea-largedebris",
+  "animationCycle" : 2,
+  "frameNumber" : 1,
+  "renderLayer" : "Object+1",
+  "emitters" : [ ],
+  "power" : 1,
+  "speed" : 0,
+  "onlyHitTerrain" : true,
+  "initialVelocity" : 0,
+  "timeToLive" : 100,
+  "bounces" : 0,
+  "flippable" : true,
+  "orientationLocked" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/uniquemonster/alliancetransportdronecrate/alliancetransportdronecrateexplosion.config"
+    }
+  ],
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  
+  "scripts" : [ "/projectiles/scripts/thea-treasureprojectile.lua" ],
+  "treasurePool" : "alliancetransportdroneCrateTreasure",
+  "itemVelocity" : [0, 25],	//Velocity at which to launch the item
+  "scatterAngle" : 45,		//Max scatter angle for randomizing item velocity direction
+  "intangibleTime" : 1.0	//Amount of time for the item to be intangible
+}

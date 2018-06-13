@@ -1,0 +1,140 @@
+{
+  "globalTagDefaults" : {
+    "paletteSwaps" : ""
+  },
+  
+  "animatedParts" : {
+    "stateTypes" : {
+      "blade" : {
+        "default" : "inactive",
+        "states" : {
+          "inactive" : {},
+          "extend" : {
+            "frames" : 3,
+            "cycle" : 0.15,
+            "mode" : "transition",
+            "transition" : "active",
+            "properties" : {
+              "immediateSound" : "/sfx/tools/chainsaw_rev_up.ogg"
+            }
+          },
+          "active" : {
+            "frames" : 3,
+            "cycle" : 0.15,
+            "mode" : "loop"
+          },
+          "retract" : {
+            "frames" : 3,
+            "cycle" : 0.3,
+            "mode" : "transition",
+            "transition" : "retract2",
+            "properties" : {
+              "immediateSound" : "/sfx/tools/chainsaw_rev_down.ogg"
+            }
+          },
+          "retract2" : {
+            "frames" : 3,
+            "cycle" : 0.45,
+            "mode" : "transition",
+            "transition" : "inactive"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "blade" : {
+        "properties" : {
+          "zLevel" : -1,
+          "centered" : true,
+          "image" : "<partImage><paletteSwaps>",
+          "offset" : [1.0, -0.125],
+          "transformationGroups" : ["weapon"],
+          "damageArea" : [ [-0.75, -0.5], [-0.75, 0.25], [2.0, 0.25], [2.0, -0.5] ],
+		  "sourcePosition" : [0.0, -0.125], //Starting position for the tile collision detection
+		  "tipPosition" : [2.0, -0.125] //Tip of the blade for tile collision detection
+        },
+        "partStates" : {
+          "blade" : {
+            "inactive" : {
+              "properties" : {
+                "image" : "<partImage>:idle<directives>?<bladeDirectives>"
+              }
+            },
+            "extend" : {
+              "properties" : {
+                "image" : "<partImage>:active.<frame>?<directives>?<bladeDirectives>"
+              }
+            },
+            "active" : {
+              "properties" : {
+                "image" : "<partImage>:active.<frame>?<directives>?<bladeDirectives>"
+              }
+            },
+            "retract" : {
+              "properties" : {
+                "image" : "<partImage>:active.<frame>?<directives>?<bladeDirectives>"
+              }
+            },
+            "retract2" : {
+              "properties" : {
+                "image" : "<partImage>:active.<frame>?<directives>?<bladeDirectives>"
+              }
+            }
+          }
+        }
+      },
+      "lights" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "image" : "<partImage><paletteSwaps>",
+          "offset" : [1.0, -0.125],
+          "fullbright" : true,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "blade" : {
+            "inactive" : {
+              "properties" : {
+                "image" : "<partImage>:idle<directives>?<bladeDirectives>"
+              }
+            },
+            "extend" : {
+              "properties" : {
+                "image" : "<partImage>:active.<frame>?<directives>?<bladeDirectives>"
+              }
+            },
+            "active" : {
+              "properties" : {
+                "image" : "<partImage>:active.<frame>?<directives>?<bladeDirectives>"
+              }
+            },
+            "retract" : {
+              "properties" : {
+                "image" : "<partImage>:active.<frame>?<directives>?<bladeDirectives>"
+              }
+            },
+            "retract2" : {
+              "properties" : {
+                "image" : "<partImage>:active.<frame>?<directives>?<bladeDirectives>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "swoosh" : {}
+  },
+
+  "particleEmitters" : {},
+
+  "sounds" : {
+    "idleLoop" : [ ],
+	"holdLoop" : [ ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name" : "alliancetransportdrone",
+  "category" : "alliancetransportdrone",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "alliancetransportdrone.png"
+  }
+}

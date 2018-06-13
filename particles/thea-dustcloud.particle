@@ -1,0 +1,21 @@
+{
+  "kind" : "thea-dustcloud",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/thea-dustcloud/thea-dustcloud.animation",
+    "position" : [0.5, 0.5],
+	"initialVelocity" : [0.0, 4.0],
+    "finalVelocity" : [0, -1.0],
+    "approach" : [0, 5],
+    "destructionAction" : "fade",
+    "destructionTime" : 1.0,
+    "fade" : 0.5,
+    "size" : 1,
+    "layer" : "front",
+    "timeToLive" : 0.8,
+    "variance" : {
+      "initialVelocity" : [3.0, 4.0],
+	  "timeToLive" : 0.8
+    }
+  }
+}

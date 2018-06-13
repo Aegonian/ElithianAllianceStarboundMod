@@ -1,0 +1,147 @@
+[
+  //=======================================================================
+  // AVIKAN
+  //=======================================================================
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["avikan-sunglass", [
+		{ "name" : "avikanglassitem", "count" : 2 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["avikan-engineerhead", [
+		{ "name" : "avikanmetal", "count" : 8 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["avikan-scribehead", [
+		{ "name" : "avikanglassitem", "count" : 2 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["avikan-starfarerhead", [
+		{ "name" : "avikanglassitem", "count" : 8 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["avikan-astronauthead", [
+		{ "name" : "avikanglassitem", "count" : 8 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["avikan-openhelmet", [
+		{ "name" : "avikanmetal", "count" : 8 }
+	  ]]
+  },
+  //=======================================================================
+  // DRODEN
+  //=======================================================================
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["droden-protectoratehead", [
+		{ "name" : "avikanmetal", "count" : 8 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["droden-legionhead", [
+		{ "name" : "avikanmetal", "count" : 8 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["droden-heavyhead", [
+		{ "name" : "avikanmetal", "count" : 8 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["droden-combathead", [
+		{ "name" : "avikanmetal", "count" : 8 }
+	  ]]
+  },
+  //=======================================================================
+  // TRINK
+  //=======================================================================
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["trink-welderlegs", [
+		{ "name" : "trinkmetal", "count" : 8 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["trink-engineerlegs", [
+		{ "name" : "trinkmetal", "count" : 8 }
+	  ]]
+  },
+  //=======================================================================
+  // AEGI
+  //=======================================================================
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["aegi-asauniformhead", [
+		{ "name" : "alliancecloth", "count" : 8 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["aegi-captainhead", [
+		{ "name" : "alliancecloth", "count" : 8 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["aegi-rimdwellerhead", [
+		{ "name" : "allianceglassitem", "count" : 8 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["aegi-soldierhead", [
+		{ "name" : "alliancemetal", "count" : 8 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["aegi-briggshead", [
+		{ "name" : "alliancemetal", "count" : 8 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["aegi-briggsguardianhead", [
+		{ "name" : "alliancemetal", "count" : 8 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["aegi-mechpilothead", [
+		{ "name" : "alliancemetal", "count" : 8 }
+	  ]]
+  }
+]

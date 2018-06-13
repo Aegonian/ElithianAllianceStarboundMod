@@ -352,6 +352,9 @@
         "knockbackThreshold" : {
           "baseValue" : 12
         },
+        "grit" : {
+          "baseValue" : 1.0
+        },
         "maxHealth" : {
           "baseValue" : 750
         },

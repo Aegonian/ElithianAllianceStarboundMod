@@ -30,7 +30,11 @@
   "vehicleBoundingBox" : [-1.5, -1.5, 1.5, 1.5],
   
   //Generic configuration
-  "cooldownTime" : 1.0,
-  "transmissionRange" : 50,
+  "cooldownTime" : 1.0,				//Cooldown time between drone spawns
+  "transmissionRange" : 50,			//Maximum distance at which to search for and control the drone
+  "edgeOfRangeDistance" : 40,		//Minimum distance to controlled vehicle before warning noise starts playing
+  "receiveInputTimeout" : 0.5,		//If we haven't received a response for this amount of time, disconnect from the drone
+  "cameraFocusOnVehicle" : false,	//If set to true, the player's camera will follow the controlled vehicle while it is in range
+  "warningSoundFrequency" : 0.2,
   "filled" : true
 }

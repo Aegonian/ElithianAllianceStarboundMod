@@ -1,0 +1,54 @@
+{
+  "objectName" : "allianceweaponcabinet",
+  "colonyTags" : ["alliance","combat","storage"],
+  "printable" : false,
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "category" : "storage",
+  "description" : "A locked filled with weapons.",
+  "shortdescription" : "Alliance Weapon Locker",
+  "race" : "aegi",
+  "price" : 300,
+  "health" : 2.5,
+
+  "apexDescription" : "These weapons would be of great use to the rebels.",
+  "avianDescription" : "A weapons locked.",
+  "floranDescription" : "Floran wantsss these weaponss.",
+  "glitchDescription" : "Careful. These weapons could be dangerous. Better keep the cabinet locked.",
+  "humanDescription" : "A locked full of awesome guns!",
+  "hylotlDescription" : "A collection of alien firearms.",
+  "novakidDescription" : "A closet for my guns.",
+
+  "aegiDescription" : "A military weapons locker.",
+  "avikanDescription" : "Storage for alien weaponry.",
+  "erixianDescription" : "A locked full of military-grade weapons.",
+  "trinkDescription" : "The weapons locker has multiple safety features. It's quite efficient.",
+  "hymidDescription" : "A locker for storing weapons.",
+  "notixDescription" : "Storage for military-grade weaponry.",
+  "jorgasianDescription" : "An Alliance-approved weapons locker.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien weaponry storage. Scanning items.",
+  "akkimariDescription" : "Akki take alien weapons?",
+
+  "inventoryIcon" : "allianceweaponcabineticon.png",
+  "orientations" : [
+    {
+      "dualImage" : "allianceweaponcabinet.png:<color>.<key>",
+      "imagePosition" : [-16, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/chest_small_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/chest_small_close.ogg" ],
+  "slotCount" : 32,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600
+}

@@ -11,8 +11,8 @@
 
 	"crew" : {
 	  "defaultUniform" : {
-		"chest" : "avikan-protectoratechest",
-		"legs" : "avikan-protectoratelegs"
+		"chest" : "akkimari-protectoratechest",
+		"legs" : "akkimari-protectoratelegs"
 	  },
 	  
 	  "uniformSlots" : []
@@ -88,31 +88,29 @@
     "default" : [
       [0, [
           {
-            "chest" : [ { "name" : "avikan-protectoratechest", "data" : { "colorIndex" : 4 } } ],
-            "legs" : [ { "name" : "avikan-protectoratelegs", "data" : { "colorIndex" : 4 } } ],
+            "chest" : [ { "name" : "akkimari-protectoratechest", "data" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "akkimari-protectoratelegs", "data" : { "colorIndex" : 4 } } ],
             "primary" : [ 
-			  "avikan-assaultrifle",
-			  "avikan-assaultrifle2",
-			  "avikan-shotgun",
-			  "avikan-sniperrifle"
+			  "akkimari-tier1shortsword",
+			  "akkimari-tier3axe",
+			  "akkimari-tier2dagger"
 			],
             "sheathedprimary" : [
-			  "avikanvanguardbroadsword",
-			  "avikanvanguardspear"
+			  "akkimari-strafegun-npc",
+			  "akkimari-trackrifle-npc"
 			]
           },
           {
-            "chest" : [ { "name" : "avikan-protectoratechest", "data" : { "colorIndex" : 4 } } ],
-            "legs" : [ { "name" : "avikan-protectoratelegs", "data" : { "colorIndex" : 4 } } ],
+            "chest" : [ { "name" : "akkimari-protectoratechest", "data" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "akkimari-protectoratelegs", "data" : { "colorIndex" : 4 } } ],
             "primary" : [ 
-			  "avikanvanguardbroadsword",
-			  "avikanvanguardspear"
+			  "akkimari-strafegun-npc",
+			  "akkimari-trackrifle-npc"
 			],
             "sheathedprimary" : [
-			  "avikan-assaultrifle",
-			  "avikan-assaultrifle2",
-			  "avikan-shotgun",
-			  "avikan-sniperrifle"
+			  "akkimari-tier1shortsword",
+			  "akkimari-tier3axe",
+			  "akkimari-tier2dagger"
 			]
           }
         ] ]

@@ -69,6 +69,11 @@
   //======================================================================================================================
   {
 	"op": "add",
+	"path": "/thea-chainsaw",
+	"value": "/items/active/weapons/melee/abilities/chainsaw/thea-chainsaw.weaponability"
+  },
+  {
+	"op": "add",
 	"path": "/thea-longswordcombo",
 	"value": "/items/active/weapons/melee/abilities/broadsword/thea-longswordcombo.weaponability"
   },

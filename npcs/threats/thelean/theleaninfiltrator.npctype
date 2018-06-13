@@ -1,0 +1,80 @@
+{
+  "type" : "theleaninfiltrator",
+  "baseType" : "hostile",
+
+  "levelVariance" : [1, 1.5],
+
+  "dropPools" : [ "theleanDeathTreasure" ],
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "friendlyNpcTypes" : ["crewmemberavikanroguecaptain"]
+    },
+
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Attack!"
+          ]
+        },
+        "avikan" : {
+          "default" : [
+            "I won't let you take my freedom!",
+            "You've come to the wrong place!",
+            "You've seen enough!",
+            "You'd better turn back!",
+            "Your days are done!"
+          ],
+		  "avikan" : [
+            "I'm done with the Nomada!",
+            "I won't deal with the Nomada any longer!",
+            "I've left the Nomada behind!",
+            "So, the Nomada finally sent someone after me!",
+            "Rhadeis guides my path!"
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+			  { "name" : "thelean-mediumhead" },
+			  { "name" : "thelean-lighthead" },
+			  { "name" : "thelean-verylighthead" }
+			],
+            "chest" : [
+			  { "name" : "thelean-mediumchest" },
+			  { "name" : "thelean-lightchest" },
+			  { "name" : "thelean-verylightchest" }
+			],
+            "legs" : [
+			  { "name" : "thea-hiddenlegs" }
+			],
+            "primary" : [ "thelean-tendril", "capturepod-ghavorkan", "thelean-pistol" ],
+            "sheathedprimary" : [ "thelean-assaultrifle", "thelean-sniperrifle" ],
+			"alt" : [ "theleanshield" ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {    
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 250.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.5
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

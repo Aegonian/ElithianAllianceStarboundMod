@@ -1,0 +1,71 @@
+{
+  "objectName" : "avikanmechspawner",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 500,
+  "description" : "A station for repairing and maintaining Vanguard Krahls.",
+  "shortdescription" : "Vanguard Krahl Bay",
+  "race" : "avikan",
+
+  "apexDescription" : "A mech bay of some kind.",
+  "avianDescription" : "A mech bay.",
+  "floranDescription" : "Thiss isss a mech bay. Floran Ssmart.",
+  "glitchDescription" : "Observation. An alien mech bay.",
+  "humanDescription" : "This looks like a mech bay.",
+  "hylotlDescription" : "A workstation where one can repair and maintain mechs.",
+  "novakidDescription" : "I reckon it's some kinda mech bay.",
+
+  "aegiDescription" : "A mech bay built for Avikan Krahls.",
+  "avikanDescription" : "This station allows for easy maintenance on Krahls.",
+  "erixianDescription" : "An Avikan-built mech bay.",
+  "trinkDescription" : "A decently efficient mech bay.",
+  "hymidDescription" : "It's a mech bay, built by the Avikan.",
+  "notixDescription" : "I think it's a mech bay.",
+  "jorgasianDescription" : "A mech bay built by the Avikan. I believe they call their mechs 'Krahl'.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Detected Vanguard Krahl Bay. Allows for easy maintenance on Krahls.",
+  "akkimariDescription" : "Alien mech bay. Akki steal mech, scavenge for parts?",
+
+
+  "inventoryIcon" : "avikanmechspawnericon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "avikanmechspawner.png:<color>", "fullbright" : true }, { "image" : "avikanmechspawnerlit.png:<color>" } ],
+
+      "imagePosition" : [-40, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "bottom" ]
+    },
+    {
+	  "imageLayers" : [ { "image" : "avikanmechspawner.png:<color>", "fullbright" : true }, { "image" : "avikanmechspawnerlit.png:<color>" } ],
+
+      "imagePosition" : [-40, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+  "scripts" : [ "/objects/mission/avikanmechspawner/avikanmechspawner.lua" ],
+  "scriptDelta" : 5,
+  
+  "vehicleType" : "avikanmech",
+  "vehicleParameters" : {
+	"facingDirection" : 1
+  },
+  "initialCooldownTime" : 0.5,
+  "cooldownTime" : 5.0,
+  "spawnOffset" : [0, 6]
+}

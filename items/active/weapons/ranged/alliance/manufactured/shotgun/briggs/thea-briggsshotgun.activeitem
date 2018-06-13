@@ -57,7 +57,6 @@
     },
 	"sounds" : {
       "fire" : [ "/sfx/gun/shotgun2.ogg" ],
-	  "altFire" : [ "/sfx/gun/shotgun4.ogg" ],
       "reload" : [ "/sfx/gun/reload/shotgun_reload_clip3.ogg" ]
     }
   },

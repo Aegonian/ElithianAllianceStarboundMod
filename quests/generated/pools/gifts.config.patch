@@ -1,14 +1,52 @@
 [
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : "avikanmeal"
-	},
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : "spicebol"
-	},
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : "stuffeddunebun"
-	}
+  //AVIKAN
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : "avikanmeal"
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : "spicebol"
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : "stuffeddunebun"
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : "bolbohnbun"
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : "avikangift"
+  },
+  //AEGI
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : "hotbrod"
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : "vahlberrybread"
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : "centensplushie"
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : "dremetonplushie"
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : "notixplushie"
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : "trangiiplushie"
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : "trinkplushie"
+  }
 ]

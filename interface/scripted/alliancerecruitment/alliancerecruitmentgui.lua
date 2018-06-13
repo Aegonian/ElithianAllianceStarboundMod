@@ -23,6 +23,8 @@ function update(dt)
   widget.setButtonEnabled("btnRecruitMedic", canRecruit)
   widget.setButtonEnabled("btnRecruitEngineer", canRecruit)
   widget.setButtonEnabled("btnRecruitMechanic", canRecruit)
+  widget.setButtonEnabled("btnRecruitJanitor", canRecruit)
+  widget.setButtonEnabled("btnRecruitTailor", canRecruit)
 end
 
 function recruitCrewmemberCombat()

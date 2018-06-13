@@ -1,0 +1,89 @@
+{
+  "type" : "crewmembertheleaninfiltrator",
+  "baseType" : "crewmemberthelean",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+
+	"crew" : {
+	  "role" : {
+        "type" : "theleaninfiltrator",
+        "name" : "Infiltrator",
+        "field" : "Narvakhan",
+        "uniformColorIndex" : 4
+      },
+
+      "ranks" : [
+        "<field> <role>",
+        "<field> Scout",
+        "<field> Intruder",
+        "Dominion <role>"
+      ],
+	  
+	  "defaultUniform" : {
+		"head" : "thelean-lighthead",
+		"chest" : "thelean-mediumchest",
+		"legs" : "thea-hiddenlegs"
+	  },
+	  
+	  "uniformSlots" : []
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "offer" : {
+          "thelean" : {
+            "default" : [
+              "You are stronger than I anticipated. I will join you.",
+              "Your strength is admirable. I will fight for you.",
+              "I never believed in Creaton. Perhaps you will be a better leader.",
+              "I don't care for the Dominion. I will fight for you, instead."
+            ]
+          }
+        },
+		"roleDescription" : {
+          "thelean" : {
+            "default" : [
+              "I will fight anything and anyone. I have no fear.",
+              "Point me to a target and I will kill it.",
+              "Death will come for your enemies.",
+              "Your enemies will die by my hand."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+            "head" : [
+			  { "name" : "thelean-lighthead" }
+			],
+            "chest" : [
+			  { "name" : "thelean-mediumchest" },
+			  { "name" : "thelean-lightchest" },
+			  { "name" : "thelean-verylightchest" }
+			],
+            "legs" : [
+			  { "name" : "thea-hiddenlegs" }
+			],
+            "primary" : [
+              "thelean-tendril"
+            ],
+            "sheathedprimary" : [
+              "thelean-assaultrifle",
+			  "thelean-sniperrifle",
+			  "thelean-pistol"
+            ]
+          }
+        ] ]
+    ]
+  }
+}

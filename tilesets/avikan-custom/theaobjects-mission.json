@@ -5,8 +5,8 @@
 
     },
  "spacing":0,
- "tilecount":6,
- "tileheight":64,
+ "tilecount":8,
+ "tileheight":72,
  "tileproperties":
     {
      "0":
@@ -56,6 +56,22 @@
          "imagePositionY":"0",
          "object":"theacrowdsounds",
          "tilesetDirection":"right"
+        },
+     "6":
+        {
+         "\/\/shortdescription":"Wired Target",
+         "imagePositionX":"-8",
+         "imagePositionY":"-8",
+         "object":"theawiredtarget",
+         "tilesetDirection":"right"
+        },
+     "7":
+        {
+         "\/\/shortdescription":"Vanguard Krahl Bay",
+         "imagePositionX":"-40",
+         "imagePositionY":"0",
+         "object":"avikanmechspawner",
+         "tilesetDirection":"right"
         }
     },
  "tiles":
@@ -83,6 +99,14 @@
      "5":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/mission\/theacrowdsounds.png"
+        },
+     "6":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/mission\/wiredtarget.png"
+        },
+     "7":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/mission\/avikanmechspawner.png"
         }
     },
  "tilewidth":216

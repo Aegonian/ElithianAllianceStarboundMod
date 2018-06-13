@@ -1,65 +1,207 @@
 [
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : 
-		  ["avikantapestry", [
-			{ "name" : "monsterleather", "count" : 1 }
-		  ]]
-	},
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : 
-		  ["avikantapestry1", [
-			{ "name" : "monsterleather", "count" : 2 }
-		  ]]
-	},
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : 
-		  ["avikanwidetapestry", [
-			{ "name" : "monsterleather", "count" : 2 }
-		  ]]
-	},
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : 
-		  ["avikanflagtapestry", [
-			{ "name" : "monsterleather", "count" : 2 }
-		  ]]
-	},
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : 
-		  ["avikanclothtapestry", [
-			{ "name" : "avikancloth", "count" : 1 }
-		  ]]
-	},
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : 
-		  ["avikanbed", [
-			{ "name" : "monsterleather", "count" : 1 }
-		  ]]
-	},
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : 
-		  ["avikanchair", [
-			{ "name" : "monsterleather", "count" : 1 }
-		  ]]
-	},
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : 
-		  ["avikanchest", [
-			{ "name" : "monsterleather", "count" : 1 }
-		  ]]
-	},
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : 
-		  ["avikanlargechair", [
-			{ "name" : "monsterleather", "count" : 1 }
-		  ]]
-	}
+  //=======================================================================
+  // AVIKAN
+  //=======================================================================
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["avikantapestry", [
+		{ "name" : "monsterleather", "count" : 1 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["avikantapestry1", [
+		{ "name" : "monsterleather", "count" : 2 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["avikanwidetapestry", [
+		{ "name" : "monsterleather", "count" : 2 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["avikanflagtapestry", [
+		{ "name" : "monsterleather", "count" : 2 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["avikanclothtapestry", [
+		{ "name" : "avikancloth", "count" : 1 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["avikanbed", [
+		{ "name" : "monsterleather", "count" : 1 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["avikanchair", [
+		{ "name" : "monsterleather", "count" : 1 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["avikanchest", [
+		{ "name" : "monsterleather", "count" : 1 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["avikanlargechair", [
+		{ "name" : "monsterleather", "count" : 1 }
+	  ]]
+  },
+  //=======================================================================
+  // TRINK
+  //=======================================================================
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["trinkantenna", [
+		{ "name" : "trinkmetal", "count" : 2 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["trinksatellitedish", [
+		{ "name" : "trinkmetal", "count" : 2 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["trinkroofantenna", [
+		{ "name" : "trinkmetal", "count" : 2 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["trinkroofdish", [
+		{ "name" : "trinkmetal", "count" : 2 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["trinkgenerator", [
+		{ "name" : "trinkpowercore", "count" : 1 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["trinklightpillar", [
+		{ "name" : "trinkwiring", "count" : 2 }
+	  ]]
+  },
+  //=======================================================================
+  // AEGI
+  //=======================================================================
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["allianceposter", [
+		{ "name" : "paper", "count" : 2 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["allianceposteraae", [
+		{ "name" : "paper", "count" : 2 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["allianceposterart", [
+		{ "name" : "paper", "count" : 2 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["allianceposteraventor", [
+		{ "name" : "paper", "count" : 2 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["allianceposterbriggs", [
+		{ "name" : "paper", "count" : 2 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["allianceposterenerth", [
+		{ "name" : "paper", "count" : 2 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["allianceposterfroza", [
+		{ "name" : "paper", "count" : 2 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["alliancepostergame", [
+		{ "name" : "paper", "count" : 2 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["centensplushie", [
+		{ "name" : "alliancecloth", "count" : 2 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["dremetonplushie", [
+		{ "name" : "alliancecloth", "count" : 2 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["notixplushie", [
+		{ "name" : "alliancecloth", "count" : 2 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["trangiiplushie", [
+		{ "name" : "alliancecloth", "count" : 2 }
+	  ]]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : 
+	  ["trinkplushie", [
+		{ "name" : "alliancecloth", "count" : 2 }
+	  ]]
+  }
 ]

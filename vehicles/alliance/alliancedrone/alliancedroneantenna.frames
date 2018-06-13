@@ -1,0 +1,14 @@
+{
+  "frameGrid" : {
+    "size" : [36, 44],
+    "dimensions" : [9, 3],
+
+    "names" : [
+      [ null, "inRange.1", "inRange.2", "inRange.3", "inRange.4", "inRange.5", "inRange.6", "inRange.7", "inRange.8" ],
+      [ null, "edgeOfRange.1", "edgeOfRange.2", "edgeOfRange.3", "edgeOfRange.4", "edgeOfRange.5", "edgeOfRange.6", "edgeOfRange.7", "edgeOfRange.8" ],
+      [ null, "outOfRange.1", "outOfRange.2", "outOfRange.3", "outOfRange.4", "outOfRange.5", "outOfRange.6", "outOfRange.7", "outOfRange.8" ]
+    ]
+  },
+  "aliases" : {
+  }
+}

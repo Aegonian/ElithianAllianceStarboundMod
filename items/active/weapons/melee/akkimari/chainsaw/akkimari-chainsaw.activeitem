@@ -1,0 +1,47 @@
+{
+  "itemName" : "akkimari-chainsaw",
+  "price" : 300,
+  "level" : 6,
+  "fixedLevel" : false,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A powerful chainsaw that cuts through metal, flesh and rock all.",
+  "shortdescription" : "Akris Chainsaw",
+  "tooltipKind" : "thea-chainsaw",
+  "category" : "Chainsaw",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","chainsaw","akkimari"],
+
+  "inventoryIcon" : "akkimari-chainsaw.png:idle",
+
+  "animation" : "akkimari-chainsaw.animation",
+  "animationParts" : {
+    "blade" : "akkimari-chainsaw.png",
+	"lights" : "akkimari-chainsawlights.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "idleLoop" : [ "/sfx/tools/chainsaw_idle.ogg" ],
+	  "holdLoop" : [ "/sfx/tools/chainsaw_cut_wood.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/energymeleeweapon.lua"],
+
+  "activeTime" : 2.1,
+
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+  
+  "primaryAbilityType" : "thea-chainsaw",
+  "primaryAbility" : {
+    //Weapon settings
+	"baseDps" : 13.5,
+	
+	//Tile damage settings
+	"tileDamage" : 0.4
+  },
+  
+  "builder" : "/items/buildscripts/thea-buildchainsaw.lua"
+}

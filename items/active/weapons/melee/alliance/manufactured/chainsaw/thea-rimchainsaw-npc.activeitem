@@ -1,0 +1,49 @@
+{
+  "itemName" : "thea-rimchainsaw-npc",
+  "price" : 300,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A powerful chainsaw that cuts through metal, flesh and rock all.",
+  "manufacturer" : "^gray;The Rim^reset;",
+  "shortdescription" : "Rimrock Cutter (NPC)",
+  "tooltipKind" : "thea-sword-mf",
+  "category" : "Chainsaw",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","chainsaw","alliance","rimdweller","allianceUpgradeable"],
+
+  "inventoryIcon" : "thea-rimchainsaw.png:idle",
+
+  "animation" : "/items/active/weapons/melee/animations/thea-chainsaw.animation",
+  "animationParts" : {
+    "blade" : "thea-rimchainsaw.png",
+	"lights" : "thea-rimchainsawlights.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "idleLoop" : [ "/sfx/tools/chainsaw_idle.ogg" ],
+	  "holdLoop" : [ "/sfx/tools/chainsaw_cut_wood.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/energymeleeweapon.lua"],
+
+  "activeTime" : 2.1,
+
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+  
+  "primaryAbilityType" : "thea-chainsaw",
+  "primaryAbility" : {
+	"tileDamage" : 0,
+	
+    "stances" : {
+      "hold" : {
+        "duration" : 1.25
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+}

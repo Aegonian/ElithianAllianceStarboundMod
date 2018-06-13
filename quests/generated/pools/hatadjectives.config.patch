@@ -1,0 +1,92 @@
+[
+  // Adjective on the left, itemName on the right
+  
+  //=======================================================================
+  // AVIKAN
+  //=======================================================================
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : ["cool", "avikan-sunglass"]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : ["smart", "avikan-engineerhead"]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : ["wise", "avikan-scribehead"]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : ["adventurous", "avikan-starfarerhead"]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : ["adventurous", "avikan-astronauthead"]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : ["roguish", "avikan-openhelmet"]
+  },
+  //=======================================================================
+  // DRODEN
+  //=======================================================================
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : ["honourable", "droden-protectoratehead"]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : ["powerful", "droden-legionhead"]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : ["militant", "droden-heavyhead"]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : ["powerful", "droden-combathead"]
+  },
+  //=======================================================================
+  // TRINK
+  //=======================================================================
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : ["capable", "trink-welderlegs"]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : ["ingenious", "trink-engineerlegs"]
+  },
+  //=======================================================================
+  // AEGI
+  //=======================================================================
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : ["professional", "aegi-asauniformhead"]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : ["authoritative", "aegi-captainhead"]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : ["roguish", "aegi-rimdwellerhead"]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : ["powerful", "aegi-soldierhead"]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : ["protected", "aegi-briggshead"]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : ["impressive", "aegi-briggsguardianhead"]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : ["adventurous", "aegi-mechpilothead"]
+  }
+]

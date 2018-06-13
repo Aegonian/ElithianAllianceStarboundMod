@@ -28,11 +28,18 @@
     "buyFactor" : 1.0,
     "sellFactor" : 0.2,
     "items" : [
-      { "item" : "avikantransmitter" },
+      //ITEMS
+	  { "item" : "avikantransmitter" },
 	  { "item" : "avikanjumpgatecore" },
 	  { "item" : "autochip" },
+	  //CONTROLLERS
       { "item" : "avikankeffcontroller", "prerequisiteQuest" : "keffrider4" },
       { "item" : "avikanlightkeffcontroller", "prerequisiteQuest" : "keffrider4" },
+      { "item" : "avikanmechcontroller", "prerequisiteQuest" : "avikanmechunlock" },
+      { "item" : "avikandrehkcontroller", "prerequisiteQuest" : "avikanmechunlock" },
+      { "item" : "avikanskoffcontroller", "prerequisiteQuest" : "avikanmechunlock" },
+      { "item" : "drahlcontroller", "prerequisiteQuest" : "avikanmechunlock" },
+	  //OBJECTS
 	  { "item" : "avikanhoverbikeobject" },
 	  { "item" : "avikanmechobject" },
 	  { "item" : "avikansmallship" },

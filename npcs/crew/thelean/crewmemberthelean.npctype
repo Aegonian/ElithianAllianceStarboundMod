@@ -1,0 +1,129 @@
+{
+  "type" : "crewmemberthelean",
+  "baseType" : "crewmember",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+
+	"crew" : {
+	  "defaultUniform" : {
+		"chest" : "thea-hiddenchest",
+		"legs" : "thea-hiddenlegs"
+	  },
+	  
+	  "uniformSlots" : []
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "offer" : {
+          "thelean" : {
+            "default" : [
+              "You are stronger than I anticipated. I will join you.",
+              "Your strength is admirable. I will fight for you.",
+              "I never believed in Creaton. Perhaps you will be a better leader.",
+              "I don't care for the Dominion. I will fight for you, instead."
+            ]
+          }
+        },
+		"roleDescription" : {
+          "thelean" : {
+            "default" : [
+              "I will fight anything and anyone. I have no fear.",
+              "Point me to a target and I will kill it.",
+              "Death will come for your enemies.",
+              "Your enemies will die by my hand."
+            ]
+          }
+        },
+		"respawned" : {
+          "thelean" : {
+            "default" : [
+              "I need to be stronger.",
+              "I failed... I will become stronger.",
+              "Death is for the weak.",
+              "Even death won't stop me."
+            ]
+          }
+        },
+		"unfollow" : {
+          "thelean" : {
+            "default" : [
+              "Do not be gone for long. I am eager to fight something.",
+              "Don't make me wait long.",
+              "I should be your vanguard, not some idle guard.",
+              "I will hold my position. For now."
+            ]
+          }
+        },
+		"follow" : {
+          "thelean" : {
+            "default" : [
+              "Point me to a target.",
+              "I am eager for a fight.",
+              "I will show you my strength.",
+              "It's time to hunt."
+            ]
+          }
+        },
+		"cantreach" : {
+          "thelean" : {
+            "default" : [
+              "You are out of my reach.",
+              "I can't go there.",
+              "Do not leave me behind!",
+              "I will find a way there."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "thea-hiddenchest", "data" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "thea-hiddenlegs", "data" : { "colorIndex" : 4 } } ],
+            "primary" : [ 
+			  "thelean-tendril"
+			],
+            "sheathedprimary" : [
+			  "thelean-assaultrifle",
+			  "thelean-sniperrifle"
+			]
+          },
+          {
+            "chest" : [ { "name" : "thea-hiddenchest", "data" : { "colorIndex" : 4 } } ],
+            "legs" : [ { "name" : "thea-hiddenlegs", "data" : { "colorIndex" : 4 } } ],
+            "primary" : [ 
+			  "thelean-assaultrifle",
+			  "thelean-sniperrifle"
+			],
+            "sheathedprimary" : [
+			  "thelean-tendril"
+			]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 350.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 0.33
+      },
+      "healthRegen" : {
+        "baseValue" : 2.0
+      }
+    }
+  }
+}

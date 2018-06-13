@@ -1,7 +1,7 @@
 {
   "itemName" : "thea-rimsniper1",
   "price" : 325,
-  "inventoryIcon" : "thea-rimsniper1.png",
+  "inventoryIcon" : "thea-rimsniper1.png:idle",
   "maxStack" : 1,
   "rarity" : "Legendary",
   "description" : "A sniper rifle produced somewhere in the Rim.",
@@ -16,7 +16,7 @@
   
   "cursor" : "/cursors/thea-precisereticle.cursor",
   
-  "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
+  "animation" : "/items/active/weapons/ranged/animations/thea-gun-ejectbullet2.animation",
   "animationParts" : {
     "middle" : "thea-rimsniper1.png",
     "middleFullbright" : "thea-rimsniper1lights.png",
@@ -33,9 +33,24 @@
       }
     },
     "particleEmitters" : {
+      "muzzleFlash" : {
+        "transformationGroups" : ["weapon"],
+		"offsetRegion" : [0.875, 0.375, 0.875, 0.375],
+        "particles" : [
+          { "particle" : "thea-discardedbulletlight" }
+        ]
+      },
+      "altMuzzleFlash" : {
+        "transformationGroups" : ["weapon"],
+		"offsetRegion" : [0.875, 0.375, 0.875, 0.275],
+        "particles" : [
+          { "particle" : "thea-discardedbulletlight" }
+        ]
+      }
     },
     "sounds" : {
-      "fire" : [ "/sfx/gun/sniper3.ogg" ]
+      "fire" : [ "/sfx/gun/sniper3.ogg" ],
+      "altFire" : [ "/sfx/gun/sniper3.ogg" ]
     }
   },
 
@@ -47,8 +62,8 @@
   "elementalType" : "physical",
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
-    "class" : "GunFire",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-gunfire.lua"],
+    "class" : "TheaGunFire",
 
     "fireTime" : 1.1,
     "baseDps" : 8.5,
@@ -63,6 +78,8 @@
       "knockback" : 15,
 	  "speed" : 200
     },
+	
+	"singleFireAnimation" : true, //Tells the weapon that the active animation is single-fire instead of looping, allowing altFire to also play the active animation
 	
     "stances" : {
       "idle" : {
@@ -86,6 +103,60 @@
         "duration" : 0.35,
         "armRotation" : 4,
         "weaponRotation" : 4,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "altAbility" : {
+    "name" : "Concussion Round",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-altfire.lua"],
+	"class" : "TheaAltFireAttack",
+
+    "fireTime" : 2.0,
+    "baseDps" : 0.5,
+    "energyUsage" : 75,
+    "inaccuracy" : 0.005,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "allianceimpactbullet",
+    "projectileParameters" : {
+      "knockback" : 15,
+	  "speed" : 200,
+	  "statusEffects" : [ "thea-stunned" ],
+	  "damageType" : "damage",
+	  "actionOnReap" : [
+		{
+		  "action" : "config",
+		  "file" : "/projectiles/explosions/allianceknockbackexplosion/allianceknockbackexplosion-weak.config"
+		}
+	  ]
+    },
+	
+	"hidePrimaryMuzzleFlash" : false,
+	"useParticleEmitter" : true,
+	"usePrimaryFireSound" : false,
+	"animateWeapon" : true, //Sets the weapon's animation state to "active" when firing
+
+    "stances" : {
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 6,
+        "weaponRotation" : 6,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.45,
+        "armRotation" : 6,
+        "weaponRotation" : 6,
         "twoHanded" : true,
 
         "allowRotate" : false,

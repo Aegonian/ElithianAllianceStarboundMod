@@ -1,11 +1,16 @@
 {
-  //AVIKAN QUEST - STOPPING THE CORRUPTION
+  //=======================================================================
+  // AVIKAN QUEST - STOPPING THE CORRUPTION
+  //=======================================================================
   "vanguarddronebattle1" : {
     "type" : "mission",
     "text" : "Your target is the Violated Elite Drahl located in this area. Take it out, then find the return teleporter in a small storage room to the east.",
     "persistTime" : 8.0
   },
-  //ALLIANCE QUEST - ???
+  
+  //=======================================================================
+  // ALLIANCE QUEST - JUSTICE FOR THE JUSTICAR
+  //=======================================================================
   "akkimaridronebattle1" : {
     "type" : "mission",
     "text" : "You'll find a group of Akkimari scavengers beyond the cliffs ahead. Be careful: they appear to be heavily armed, and are assisted by drones and a Chaseflight.",
@@ -20,5 +25,64 @@
     "unique" : false,
     "text" : "I have decrypted the security code for the door ahead. The passcode to unlock the door is 55512.",
     "persistTime" : 8.0
+  },
+  
+  //=======================================================================
+  // AVIKAN QUEST - ???
+  //=======================================================================
+  "vanguardmechunlock1" : {
+    "type" : "mission",
+    "text" : "I am detecting multiple Vanguard Krahls in the room ahead. You should enter one.",
+    "persistTime" : 4.0
+  },
+  "vanguardmechunlock2" : {
+    "type" : "mission",
+    "text" : "Your first assigned goal is to destroy all targets in this room. Your Krahl's primary explosive cannon should suffice here.",
+    "persistTime" : 4.0
+  },
+  "vanguardmechunlock3" : {
+    "type" : "mission",
+    "text" : "Rokhan is pleased with your progress so far, but there are a few more tests for you to run.",
+    "persistTime" : 2.0
+  },
+  "vanguardmechunlock4" : {
+    "type" : "mission",
+    "text" : "Your Krahl is equipped with powerful jumpjets. You can activate them by jumping while in the air.",
+    "persistTime" : 4.0
+  },
+  "vanguardmechunlock5" : {
+    "type" : "mission",
+    "text" : "Your Krahl's jumpjets have good range, but they cannot be used indefinitely. Always mind the amount of time you spend in the air.",
+    "persistTime" : 2.0
+  },
+  "vanguardmechunlock6" : {
+    "type" : "mission",
+    "text" : "The Krahl is fully capable of underwater operation. Do not hesitate to jump in.",
+    "persistTime" : 2.0
+  },
+  "vanguardmechunlock7" : {
+    "type" : "mission",
+    "text" : "I am detecting low levels of light. You can use the ^green;[F] ^reset;button to activate the Krahl's headlights.",
+    "persistTime" : 4.0
+  },
+  "vanguardmechunlock8" : {
+    "type" : "mission",
+    "text" : "The Krahl's jumpjets can also be used for horizontal flight. Try to fly to the other side.",
+    "persistTime" : 4.0
+  },
+  "vanguardmechunlock9" : {
+    "type" : "mission",
+    "text" : "Your final challenge is to reach the room on the other side of this valley. I am detecting multiple hostiles on your path.",
+    "persistTime" : 4.0
+  },
+  "vanguardmechunlock10" : {
+    "type" : "mission",
+    "text" : "The Krahl will not fit through this small door. Jump out to proceed to the teleporter.",
+    "persistTime" : 2.0
+  },
+  "vanguardmechunlock11" : {
+    "type" : "mission",
+    "text" : "This teleporter marks the end of the testing course. You should return to Rokhan.",
+    "persistTime" : 4.0
   }
 }

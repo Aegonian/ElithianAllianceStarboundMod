@@ -81,8 +81,8 @@
 			],
             "primary" : [
               "akkimari-nailgun",
-			  "akkimari-strafegun",
-			  "akkimari-trackrifle",
+			  "akkimari-strafegun-npc",
+			  "akkimari-trackrifle-npc",
 			  "akkimari-spikecannon"
             ]
           }

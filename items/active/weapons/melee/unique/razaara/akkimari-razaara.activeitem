@@ -1,0 +1,212 @@
+{
+  "itemName" : "akkimari-razaara",
+  "price" : 1500,
+  "level" : 7,
+  "maxStack" : 1,
+  "rarity" : "essential",
+  "description" : "^orange;A razor-sharp whirlblade that slices through flesh and bone with ease.",
+  "shortdescription" : "^orange;Razaara^white;",
+  "tooltipKind" : "thea-sword-unique",
+  "category" : "Whirlblade",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","melee","whirlblade","akkimari","theaUnique"],
+
+  "inventoryIcon" : "akkimari-razaara.png",
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "akkimari-razaara" },
+  
+  "meritTokenValue" : 100,
+
+  "animation" : "akkimari-razaara.animation",
+  "animationParts" : {
+    "blade" : "akkimari-razaara.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+	  "fire" : [ "/sfx/melee/swing_dagger.ogg" ],
+	  "fire2" : [ "/sfx/melee/swing_dagger.ogg" ],
+	  "fire3" : [ "/sfx/melee/swing_spear.ogg" ]
+	}
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbility" : {
+    "name" : "Combo Strike",
+    "type" : "thea-bowstaffcombo",
+    "scripts" : ["/items/active/weapons/melee/abilities/thea-enhancedmeleecombo.lua"],
+    "class" : "TheaEnhancedMeleeCombo",
+
+    "comboSteps" : 3,
+	"fullComboCooldown" : 0.1, //If this value has been set, completing the combo will reset the cooldown time to this value. Allows for continuous combos
+
+    "flashTime" : 0.2,
+    "flashDirectives" : "fade=FFFFFFFF=0.15",
+
+    "swooshOffsetRegions" : [
+      [0.75, 0.75, -0.75, -0.75],
+      [0.75, 0.75, -0.75, -0.75],
+      [0.75, 0.75, -0.75, -0.75]
+    ],
+
+    // cooldown time multiplier for steps after the first, compounded per combo step
+    "comboSpeedFactor" : 0.9,
+
+    "edgeTriggerGrace" : 0.25,
+
+    "fireTime" : 0.45,
+    "baseDps" : 8.0,
+
+    "damageConfig" : {
+      "damageSourceKind" : "dagger",
+      "statusEffects" : [ "thea-bleeding" ],
+      "knockbackMode" : "facing",
+      "timeout" : 0.2
+    },
+    "stepDamageConfig" : [
+      {
+        "baseDamageFactor" : 1.0,
+        "knockback" : 10
+      },
+      {
+        "baseDamageFactor" : 0.75,
+        "knockback" : 7.5
+      },
+      {
+        "baseDamageFactor" : 1.0,
+        "knockback" : 15
+      }
+    ],
+
+    "stances" : {
+      //IDLE - DEFAULT
+	  "idle" : {
+        "armRotation" : -90,
+        "weaponRotation" : -15,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : false,
+		
+        "allowRotate" : false,
+        "allowFlip" : true,
+		
+		"aimAngle" : 0
+      },
+	  //COMBO STEP 1
+      "windup1" : {
+        "duration" : 0.1,
+        "armRotation" : 90,
+        "weaponRotation" : -15,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash1" : {
+        "duration" : 0.025,
+        "armRotation" : 55,
+        "weaponRotation" : -15,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire1" : {
+        "duration" : 0.15,
+        "armRotation" : -20,
+        "weaponRotation" : -15,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : false,
+		
+		"spinRate" : -1250,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait1" : {
+        "duration" : 0.1,
+        "armRotation" : -45,
+        "weaponRotation" : -15,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : false,
+		
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+	  //COMBO STEP 2
+      "windup2" : {
+        "duration" : 0.1,
+        "armRotation" : -110,
+        "weaponRotation" : -15,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash2" : {
+        "duration" : 0.025,
+        "armRotation" : 5,
+        "weaponRotation" : -15,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire2" : {
+        "duration" : 0.15,
+        "armRotation" : 40,
+        "weaponRotation" : -15,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : false,
+		
+		"spinRate" : 1000,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait2" : {
+        "duration" : 0.1,
+        "armRotation" : 60,
+        "weaponRotation" : -15,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+	  //COMBO STEP 3
+      "windup3" : {
+        "duration" : 0.2,
+        "armRotation" : -150,
+        "weaponRotation" : -15,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire3" : {
+        "duration" : 0.3,
+        "armRotation" : 0,
+        "weaponRotation" : -15,
+        "weaponOffset" : [0, 0],
+        "twoHanded" : false,
+		
+		"spinRate" : -1500,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

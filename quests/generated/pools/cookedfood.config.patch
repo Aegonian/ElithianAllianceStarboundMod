@@ -1,30 +1,68 @@
 [
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : "avikanmeal"
-	},
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : "bolbohnjam"
-	},
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : "dunebun"
-	},
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : "kadavancactusjuice"
-	},
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : "kadavanmeatjuice"
-	},
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : "spicebol"
-	},
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : "stuffeddunebun"
-	}
+  //AVIKAN
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : "avikanmeal"
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : "bolbohnjam"
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : "dunebun"
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : "kadavancactusjuice"
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : "kadavanmeatjuice"
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : "spicebol"
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : "stuffeddunebun"
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : "bolbohnbun"
+  },
+  //ALLIANCE
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : "aegimeal"
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : "bakedborato"
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : "boratochips"
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : "hotbrod"
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : "loftbread"
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : "mellowrootchops"
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : "vahlberrybread"
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : "vahlberryjam"
+  }
 ]

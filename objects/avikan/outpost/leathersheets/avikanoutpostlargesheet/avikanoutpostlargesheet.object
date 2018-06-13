@@ -24,9 +24,8 @@
       "animationCycle" : 0.5,
 
       "spaceScan" : 0.5,
-      "anchors" : [ "background" ],
+      "anchors" : [],
 	  "collision" : "solid"
-
     }
   ]
 }

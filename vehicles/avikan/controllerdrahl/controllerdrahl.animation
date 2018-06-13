@@ -33,6 +33,28 @@
 		  "invisible" : {}
         }
       },
+      "antenna" : {
+        "priority" : 0,
+        "default" : "outOfRange",
+        "states" : {
+		  "inRange" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "loop"
+          },
+		  "edgeOfRange" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "loop"
+          },
+		  "outOfRange" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "loop"
+          },
+		  "invisible" : {}
+        }
+      },
 	  "damage" : {
         "priority" : 0,
         "default" : "undamaged",
@@ -150,9 +172,41 @@
           }
         }
       },
-	  "damage" : {
+      "antenna" : {
         "properties" : {
 		  "zLevel" : 2,
+          "transformationGroups" : [ "body" ],
+		  "fullbright" : true,
+          "offset" : [0.0, -0.25]
+        },
+        "partStates" : {
+          "antenna" : {
+            "inRange" : {
+              "properties" : {
+                "image" : "controllerdrahlantenna.png:inRange.<frame>"
+              }
+            },
+            "edgeOfRange" : {
+              "properties" : {
+                "image" : "controllerdrahlantenna.png:edgeOfRange.<frame>"
+              }
+            },
+            "outOfRange" : {
+              "properties" : {
+                "image" : "controllerdrahlantenna.png:outOfRange.<frame>"
+              }
+            },
+            "invisisble" : {
+              "properties" : {
+                "image" : ""
+              }
+            }
+          }
+        }
+      },
+	  "damage" : {
+        "properties" : {
+		  "zLevel" : 3,
           "transformationGroups" : [ "body" ],
           "offset" : [0.0, -0.25]
         },
@@ -178,7 +232,7 @@
       },
 	  "warp" : {
         "properties" : {
-		  "zLevel" : 3,
+		  "zLevel" : 4,
           "transformationGroups" : [ "body" ],
 		  "fullbright" : true,
           "offset" : [0.0, -0.25]
@@ -192,22 +246,22 @@
             },
             "warpInPart1" : {
               "properties" : {
-                "image" : "controlldrahlwarp.png:warpInPart1.<frame>"
+                "image" : "controllerdrahlwarp.png:warpInPart1.<frame>"
               }
             },
             "warpInPart2" : {
               "properties" : {
-                "image" : "controlldrahlwarp.png:warpInPart2.<frame>"
+                "image" : "controllerdrahlwarp.png:warpInPart2.<frame>"
               }
             },
             "warpOutPart1" : {
               "properties" : {
-                "image" : "controlldrahlwarp.png:warpOutPart1.<frame>"
+                "image" : "controllerdrahlwarp.png:warpOutPart1.<frame>"
               }
             },
             "warpOutPart2" : {
               "properties" : {
-                "image" : "controlldrahlwarp.png:warpOutPart2.<frame>"
+                "image" : "controllerdrahlwarp.png:warpOutPart2.<frame>"
               }
             }
           }

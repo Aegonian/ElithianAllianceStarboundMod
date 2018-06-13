@@ -3,11 +3,11 @@
   "baseType" : "aegivillagemerchant",
 
   "scriptConfig" : {
-	  "merchant" : {
-		"categories" : {
-		  "aegi" : [ "aegicolony" ]
-		},
-		"numItems" : 8
+	"merchant" : {
+	  "categories" : {
+		"aegi" : [ "aegicolony" ]
+	  },
+	  "numItems" : 8
     }
   }
 }

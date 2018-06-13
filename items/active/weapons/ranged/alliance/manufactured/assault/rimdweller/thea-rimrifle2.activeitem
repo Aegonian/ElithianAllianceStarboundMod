@@ -1,7 +1,7 @@
 {
   "itemName" : "thea-rimrifle2",
   "price" : 325,
-  "inventoryIcon" : "thea-rimrifle2.png",
+  "inventoryIcon" : "thea-rimrifle2.png:idle",
   "maxStack" : 1,
   "rarity" : "Legendary",
   "description" : "An assault rifle produced somewhere in the Rim.",
@@ -14,7 +14,7 @@
   "itemTags" : ["weapon","ranged","assaultrifle","alliance","rimdweller","allianceUpgradeable"],
   "twoHanded" : true,
   
-  "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
+  "animation" : "/items/active/weapons/ranged/animations/thea-gun-ejectbullet.animation",
   "animationParts" : {
     "middle" : "thea-rimrifle2.png",
     "middleFullbright" : "thea-rimrifle2lights.png",
@@ -31,9 +31,24 @@
       }
     },
     "particleEmitters" : {
+      "muzzleFlash" : {
+        "transformationGroups" : ["weapon"],
+		"offsetRegion" : [0.875, 0.375, 0.875, 0.375],
+        "particles" : [
+          { "particle" : "thea-discardedbulletlight" }
+        ]
+      },
+      "altMuzzleFlash" : {
+        "transformationGroups" : ["weapon"],
+		"offsetRegion" : [0.875, 0.375, 0.875, 0.275],
+        "particles" : [
+          { "particle" : "thea-discardedbulletlight" }
+        ]
+      }
     },
     "sounds" : {
-      "fire" : [ "/sfx/gun/shotgun4.ogg" ]
+      "fire" : [ "/sfx/gun/shotgun4.ogg" ],
+      "altFire" : [ "/sfx/gun/shotgun4.ogg" ]
     }
   },
 
@@ -45,8 +60,8 @@
   "elementalType" : "physical",
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
-    "class" : "GunFire",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-gunfire.lua"],
+    "class" : "TheaGunFire",
 
     "fireTime" : 0.38,
     "baseDps" : 10.0,
@@ -63,6 +78,8 @@
       "knockback" : 6
     },
 	
+	"singleFireAnimation" : true, //Tells the weapon that the active animation is single-fire instead of looping, allowing altFire to also play the active animation
+	
     "stances" : {
       "idle" : {
         "armRotation" : 0,
@@ -72,6 +89,54 @@
         "allowRotate" : true,
         "allowFlip" : true
       },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.125,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "altAbility" : {
+    "name" : "Proximity Ammo",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-altfire.lua"],
+	"class" : "TheaAltFireAttack",
+
+    "fireTime" : 0.38,
+    "baseDps" : 11.5,
+    "energyUsage" : 55.0,
+    "inaccuracy" : 0.01,
+
+    "projectileCount" : 1,
+    "burstTime" : 0.2,
+    "burstCount" : 2,
+    "fireType" : "burst",
+	
+	"projectileType" : "allianceproximitybullet",
+	"projectileParameters" : {
+	  "knockback" : 6,
+	  "speed" : 160
+	},
+	
+	"hidePrimaryMuzzleFlash" : false,
+	"useParticleEmitter" : true,
+	"usePrimaryFireSound" : false,
+	"animateWeapon" : true, //Sets the weapon's animation state to "active" when firing
+
+    "stances" : {
       "fire" : {
         "duration" : 0,
         "armRotation" : 3,

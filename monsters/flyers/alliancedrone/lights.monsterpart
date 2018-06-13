@@ -1,0 +1,9 @@
+{
+  "name" : "alliancedronelights",
+  "category" : "alliancedrone",
+  "type" : "lights",
+
+  "frames" : {
+    "lights" : "alliancedronelights.png"
+  }
+}

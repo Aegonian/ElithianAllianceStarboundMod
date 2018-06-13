@@ -1,4 +1,5 @@
 [
+  //AVIKAN
   { "op" : "add",
 	"path" : "/0/1/-",
 	"value" : ["avikan", "avikan-starfarerhead"]
@@ -10,5 +11,40 @@
   { "op" : "add",
 	"path" : "/0/1/-",
 	"value" : ["avikan", "avikan-openhelmet"]
+  },
+  //DRODEN
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : ["droden", "droden-heavyhead"]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : ["droden", "droden-combathead"]
+  },
+  //TRINK
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : ["trink", "trink-welderlegs"]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : ["trink", "trink-engineerlegs"]
+  },
+  //AEGI
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : ["aegi", "aegi-soldierhead"]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : ["aegi", "aegi-briggshead"]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : ["aegi", "aegi-briggsguardianhead"]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : ["aegi", "aegi-mechpilothead"]
   }
 ]

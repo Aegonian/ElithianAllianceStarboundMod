@@ -26,12 +26,31 @@
       [0, [
 		{
 		  "head" : [
-			{ "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } }
+			//No Hat
+			{ "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } },
+			{ "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } },
+			{ "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } },
+			{ "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } },
+			//Hats
+			{ "name" : "aegi-fedora", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-cap", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-beanie", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } }
 		  ],
 		  "chest" : [
+			//Common Items
+			{ "name" : "aegi-shirt", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-shirt", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
 			{ "name" : "aegi-shirt", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
 			{ "name" : "aegi-tanktop", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
-			{ "name" : "aegi-formalchest", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } }
+			{ "name" : "aegi-tanktop", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-tanktop", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-formalchest", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-formalchest", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-formalchest", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			//Branded Items
+			{ "name" : "aegi-brandshirtgame", "parameters" : { "colorIndex" : 0 } },
+			{ "name" : "aegi-brandshirtaventor", "parameters" : { "colorIndex" : 0 } },
+			{ "name" : "aegi-brandshirtfroza", "parameters" : { "colorIndex" : 0 } }
 		  ],
 		  "legs" : [
 			{ "name" : "aegi-asauniformlegs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },

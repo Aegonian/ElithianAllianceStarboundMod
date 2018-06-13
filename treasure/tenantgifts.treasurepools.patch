@@ -1,5 +1,8 @@
-[	
-  //============================= AVIKAN ===============================================================
+[
+  //==================================================================================
+  // AVIKAN
+  //==================================================================================
+  //=========================== AVIKAN TENANTS ===========================
   {"op" : "add",
   "path" : "/avikanGift",
   "value" : [
@@ -100,6 +103,7 @@
     } ] ]
   },
   
+  //=========================== AVIKAN POOLS ===========================
   {"op" : "add",
   "path" : "/avikanWeaponGift",
   "value" : [
@@ -218,7 +222,10 @@
     } ] ]
   },
   
-  //============================= TRINK ===============================================================
+  //==================================================================================
+  // TRINK
+  //==================================================================================
+  //=========================== TRINKIAN TENANTS ===========================
   {"op" : "add",
   "path" : "/trinkGift",
   "value" : [
@@ -239,6 +246,7 @@
     } ] ]
   },
   
+  //=========================== TRINKIAN POOLS ===========================
   {"op" : "add",
   "path" : "/trinkMaterialsGift",
   "value" : [
@@ -250,6 +258,138 @@
         {"weight" : 0.4, "item" : "trinklaserdiode"},
         {"weight" : 0.01, "item" : "centensiantech"},
         {"weight" : 0.005, "item" : "jumpgatecore"}
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    } ] ]
+  },
+  
+  //==================================================================================
+  // ALLIANCE
+  //==================================================================================
+  //=========================== ALLIANCE TENANTS ===========================
+  {"op" : "add",
+  "path" : "/allianceGift",
+  "value" : [
+    [1, {
+      "pool" : [
+		//GENERIC POOLS
+        {"weight" : 0.4, "pool" : "tenantMoney"},
+        {"weight" : 0.145, "pool" : "healingItem"},
+        {"weight" : 0.005, "pool" : "instrument"},
+		//ALLIANCE POOLS
+        {"weight" : 0.2, "pool" : "allianceFoodGift"},
+        {"weight" : 0.2, "pool" : "allianceMaterialsGift"},
+		//ITEMS
+        {"weight" : 0.05, "item" : "alliancecache"}
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    } ] ]
+  },
+  
+  {"op" : "add",
+  "path" : "/allianceMerchantGift",
+  "value" : [
+    [1, {
+      "pool" : [
+		//GENERIC POOLS
+        {"weight" : 0.6, "pool" : "tenantMoney"},
+        {"weight" : 0.145, "pool" : "healingItem"},
+        {"weight" : 0.005, "pool" : "instrument"},
+		//ALLIANCE POOLS
+        {"weight" : 0.1, "pool" : "allianceFoodGift"},
+        {"weight" : 0.1, "pool" : "allianceMaterialsGift"},
+		//ITEMS
+        {"weight" : 0.05, "item" : "alliancecache"}
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    } ] ]
+  },
+  
+  {"op" : "add",
+  "path" : "/allianceGuardGift",
+  "value" : [
+    [1, {
+      "pool" : [
+		//GENERIC POOLS
+        {"weight" : 0.4, "pool" : "tenantMoney"},
+        {"weight" : 0.145, "pool" : "healingItem"},
+        {"weight" : 0.005, "pool" : "instrument"},
+		//ALLIANCE POOLS
+        {"weight" : 0.1, "pool" : "allianceFoodGift"},
+        {"weight" : 0.3, "pool" : "allianceWeaponsGift"},
+        {"weight" : 0.1, "pool" : "allianceMaterialsGift"},
+		//ITEMS
+        {"weight" : 0.05, "item" : "alliancecache"}
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    } ] ]
+  },
+  
+  //=========================== ALLIANCE POOLS ===========================
+  {"op" : "add",
+  "path" : "/allianceMaterialsGift",
+  "value" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.4, "item" : ["alliancemetal", 4] },
+		{"weight" : 0.3, "item" : ["alliancecloth", 3] },
+		{"weight" : 0.3, "item" : ["allianceballisticfiber", 3] }
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    } ] ]
+  },
+  
+  {"op" : "add",
+  "path" : "/allianceWeaponsGift",
+  "value" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.4, "item" : ["alliancemetal", 4] },
+		{"weight" : 0.3, "item" : ["alliancecloth", 3] },
+		{"weight" : 0.3, "item" : ["allianceballisticfiber", 3] }
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    } ] ]
+  },
+  
+  {"op" : "add",
+  "path" : "/allianceFoodGift",
+  "value" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.05, "item" : "aegimeal" },
+		{"weight" : 0.1, "item" : "alliancesodabottle" },
+		{"weight" : 0.1, "item" : "alliancesodabottle2" },
+		{"weight" : 0.1, "item" : "alliancesodabottle3" },
+		{"weight" : 0.2, "item" : "alliancesodacan" },
+		{"weight" : 0.2, "item" : "alliancesodacan2" },
+		{"weight" : 0.2, "item" : "alliancesodacan3" },
+		{"weight" : 0.2, "item" : "bakedborato" },
+		{"weight" : 0.2, "item" : "boratochips" },
+		{"weight" : 0.2, "item" : "hotbrod" },
+		{"weight" : 0.2, "item" : "loftbread" },
+		{"weight" : 0.2, "item" : "mellowrootchops" },
+		{"weight" : 0.2, "item" : "vahlberrybread" },
+		{"weight" : 0.2, "item" : "vahlberryjam" },
+		{"weight" : 0.2, "item" : "bakedborato" }
       ],
       "poolRounds" : [
         [1, 1]

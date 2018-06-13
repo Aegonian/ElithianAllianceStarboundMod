@@ -1,0 +1,27 @@
+{
+  "name": "aegisoldiertenant",
+  "priority": 18,
+
+  "colonyTagCriteria": {
+    "light": 1,
+    "door": 1,
+    "alliance": 8,
+    "combat": 8,
+    "alliancesoldier": 2
+  },
+
+  "tenants": [
+    {
+      "spawn": "npc",
+      "species": "aegi",
+      "level": 6,
+      "type": "tenantaegisoldier",
+      "overrides": {}
+     }
+   ],
+
+  "rent": {
+    "periodRange": [900.0, 1800.0],
+    "pool": "allianceGuardGift"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind" : "alliancetransportdronecrate3",
+  "definition" : {
+    "type" : "textured",
+    "image" : "/particles/alliancetransportdronecrate/alliancetransportdronecrate3.png",
+    "position" : [0, 0],
+    "size" : 1.0,
+    "color" : [255, 255, 255, 255],
+    "fade" : 0,
+    "initialVelocity" : [0.0, 3.0],
+    "finalVelocity" : [0, -6.0],
+    "approach" : [0, 20],
+    "rotation" : 0,
+    "flippable" : true,
+    "angularVelocity" : 0,
+    "timeToLive" : 1.5,
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.25,
+    "layer" : "middle",
+    "variance" : {
+	  "position" : [1.5, 0.25],
+      "initialVelocity" : [10.0, 1.0],
+	  "timeToLive" : 0.25,
+	  "angularVelocity" : 80
+    }
+  }
+}

@@ -1,0 +1,16 @@
+[
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : {
+      "name" : "Sandcrawler",
+      "typeName" : "largesandcrawler"
+    }
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : {
+      "name" : "Trangii",
+      "typeName" : "wildtrangii"
+    }
+  }
+]

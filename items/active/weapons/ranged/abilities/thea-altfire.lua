@@ -1,4 +1,4 @@
---Custom altFire attack which has the added option to play an altFire animation
+--Custom altFire attack which has the added option to play an altFire animation, or if "animateWeapon" is configured, set the weapon's animation state to "active" when firing
 
 require "/scripts/util.lua"
 require "/items/active/weapons/weapon.lua"
@@ -32,6 +32,44 @@ function TheaAltFireAttack:update(dt, fireMode, shiftHeld)
       self:setState(self.burst)
     end
   end
+end
+
+function TheaAltFireAttack:auto()
+  self.weapon:setStance(self.stances.fire)
+  if self.animateWeapon then
+	animator.setAnimationState("weapon", "active")
+  end
+
+  self:fireProjectile()
+  self:muzzleFlash()
+
+  if self.stances.fire.duration then
+    util.wait(self.stances.fire.duration)
+  end
+
+  self.cooldownTimer = self.fireTime
+  self:setState(self.cooldown)
+end
+
+function TheaAltFireAttack:burst()
+  self.weapon:setStance(self.stances.fire)
+  if self.animateWeapon then
+	animator.setAnimationState("weapon", "active")
+  end
+
+  local shots = self.burstCount
+  while shots > 0 and status.overConsumeResource("energy", self:energyPerShot()) do
+    self:fireProjectile()
+    self:muzzleFlash()
+    shots = shots - 1
+
+    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(1 - shots / self.burstCount, 0, self.stances.fire.weaponRotation))
+    self.weapon.relativeArmRotation = util.toRadians(interp.linear(1 - shots / self.burstCount, 0, self.stances.fire.armRotation))
+
+    util.wait(self.burstTime)
+  end
+
+  self.cooldownTimer = (self.fireTime - self.burstTime) * self.burstCount
 end
 
 function TheaAltFireAttack:muzzleFlash()

@@ -28,5 +28,15 @@
 		"typeName" : "akkimarijusticar"
 	  }
 	]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : [
+	  [ "generic", "largespace" ],
+	  {
+		"name" : "Ce'Tennan Oculus",
+		"typeName" : "centensguardian"
+	  }
+	]
   }
 ]

@@ -1,0 +1,88 @@
+{
+  "type" : "akkimaricloaker",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "akkimariCloakerDeathTreasure" ],
+  
+  "innateStatusEffects" : [ 
+	"thea-cloaking"
+  ],
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      //Melee Behaviour
+	  "leapWindup" : 0.25,				//Defaults to 0.1
+	  "leapCooldown": 3,				//Defaults to 4.0
+	  "leapChance": 0.9,				//Defaults to 0.5
+	  //"switchToRangedCooldown": 8,	//Defaults to 8.0
+	  //"liquidHesitationTime": 3,		//Defaults to 3.0
+	  //"forceRunRange": 15,			//Defaults to 15.0
+	  "cantReachDialog": false			//Defaults to true
+	  
+	  //Ranged Behaviour
+	  //"rangedAimTime": 0.25,			//Defaults to 0.0
+	  //"rangedWindupTime": 0.05,		//Defaults to 0.05
+	  //"rangedMinFireTime": 4,			//Defaults to 0.5
+	  //"rangedMaxFireTime": 6,			//Defaults to 1.0
+	  //"bowDrawTime": 1,				//Defaults to 1.0
+	  //"arrowSpeed": 62.5				//Defaults to 62.5
+    },
+	
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Kill, kill, kill!",
+            "Dead! You finished!",
+            "<selfname> going to eat you!",
+            "You belong to <selfname> now!",
+            "<selfname> gonna eat!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0,
+	    [
+          {
+            "head" : [
+			  { "name" : "akkimari-skulkerhead" }
+			],
+            "chest" : [
+			  { "name" : "akkimari-scavengerchest" },
+			  { "name" : "akkimari-scavengerchest2" }
+			],
+            "legs" : [
+			  { "name" : "akkimari-scavengerlegs" },
+			  { "name" : "akkimari-scavengerlegs2" },
+			  { "name" : "akkimari-scavengerlegs3" }
+			],
+            "primary" : [
+			  "akkimari-shakkar-npc"
+            ]
+          }
+        ]
+	  ]
+    ]
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 100.0	//Defaults to 70.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 0.75	//Defaults to 0.65
+      },
+      "protection" : {
+        "baseValue" : 1.0	//Defaults to 1.0
+      },
+      "healthRegen" : {
+        "baseValue" : 0.0	//Defaults to 0.0
+      }
+    }
+  }
+}

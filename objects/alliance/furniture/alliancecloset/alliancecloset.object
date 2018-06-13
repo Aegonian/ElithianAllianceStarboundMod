@@ -1,6 +1,6 @@
 {
   "objectName" : "alliancecloset",
-  "colonyTags" : ["alliance","storage"],
+  "colonyTags" : ["alliance","allianceclothing","storage"],
   "printable" : false,
   "rarity" : "Common",
   "objectType" : "container",
@@ -25,7 +25,7 @@
   "erixianDescription" : "A large closet.",
   "trinkDescription" : "A wardrobe, with plenty of space for other items too.",
   "hymidDescription" : "A closet.",
-  "notixDescription" : "This closetcontains many personal items.",
+  "notixDescription" : "This closet contains many personal items.",
   "jorgasianDescription" : "A closet. It has plenty of storage space.",
   "centensDescription" : "TODO.",
   "dremetonDescription" : "TODO.",

@@ -1,0 +1,16 @@
+{
+  "projectileName" : "allianceknockbackexplosion-weak",
+  "image" : "allianceknockbackexplosion.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 5,
+  "speed" : 0,
+  "fullbright" : false,
+  "statusEffects" : [ ],
+  "damagePoly" : [ [-31, 0], [-23, -23], [0, -31], [23, -23], [31, 0], [23, 23], [0, 31], [-23, 23] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "damageKind" : "default",
+  "knockback" : 20
+}

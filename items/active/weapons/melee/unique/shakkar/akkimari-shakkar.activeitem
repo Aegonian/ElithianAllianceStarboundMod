@@ -15,7 +15,7 @@
   "inventoryIcon" : "akkimari-shakkaricon.png",
   
   //CONFIGURATION FOR WEAPONS COLLECTION
-  //"collectablesOnPickup" : { "thea_weapons" : "akkimari-shakkar" },
+  "collectablesOnPickup" : { "thea_weapons" : "akkimari-shakkar" },
   
   "meritTokenValue" : 100,
 

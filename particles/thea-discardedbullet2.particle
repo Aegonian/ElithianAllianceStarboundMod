@@ -1,3 +1,5 @@
+//Shoots further back than the regular discarded cartridge, useful; for more powerful weapons
+
 {
   "kind" : "thea-discardedbullet2",
   "definition" : {
@@ -6,14 +8,14 @@
 	"position" : [0, 0],
 	"size" : 1.0,
     "fade" : 0.9,
-    "initialVelocity" : [-4, 6.0],
-    "finalVelocity" : [-4, -6.0],
-    "approach" : [0, 20],
+    "initialVelocity" : [-8, 3.0],
+    "finalVelocity" : [0, -25.0],
+    "approach" : [5, 20],
     "timeToLive" : 2.4,
     "layer" : "front",
     "collidesForeground" : true,
     "variance" : {
-      "initialVelocity" : [2, 2.0]
+      "initialVelocity" : [2, 2]
     }
   }
 }

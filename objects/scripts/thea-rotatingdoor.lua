@@ -1,5 +1,6 @@
 require "/scripts/util.lua"
 require "/scripts/vec2.lua"
+require "/scripts/poly.lua"
 
 function init()  
   setDirection(storage.doorDirection or object.direction())
@@ -12,6 +13,12 @@ function init()
   self.closedRotation = config.getParameter("closedRotation") or 0
   self.openRotation = config.getParameter("openRotation") or 90
   self.openTime = config.getParameter("openTime") or 1.0
+  self.hingePoint = config.getParameter("hingePoint") or {0, 0}
+  self.doorVector = config.getParameter("doorVector") or {0, -1}
+  self.doorPolyPoints = config.getParameter("doorPoly") or {
+	{0,-1}, {0,1}, {1,1}, {1,-1}
+  }
+  
   self.wasClosed = true
   self.wasMoving = false
   
@@ -75,8 +82,42 @@ function update()
 	animator.rotateTransformationGroup("door", targetRotationRadians, animator.partPoint("door", "hingePoint"))
   end
   
-  if self.lastState ~= state then
-	updatePhysicsCollision(state)
+  --Figuring out the hinge and end point locations for the door
+  --These values are used for debugging, but some parts are also used for calculating dynamic spaces and  damageSources
+  local hinge = vec2.add(entity.position(), self.hingePoint)
+  local doorVector = vec2.rotate(self.doorVector, targetRotationRadians)
+  if storage.doorDirection < 0 then
+	doorVector[1] = doorVector[1] * -1
+  end
+  local doorEndPoint = vec2.add(hinge, doorVector)
+  world.debugPoint(hinge, "red")
+  world.debugPoint(doorEndPoint, "red")
+  world.debugLine(hinge, doorEndPoint, "red")
+  
+  --Setting the knockback for the door
+  if config.getParameter("useDamageSource") then
+	if state == "opening" or state == "closing" then
+	  local damageSource = config.getParameter("damageSource")
+	  local p1 = vec2.add(vec2.rotate(self.doorPolyPoints[1], targetRotationRadians), self.hingePoint)
+	  local p2 = vec2.add(vec2.rotate(self.doorPolyPoints[2], targetRotationRadians), self.hingePoint)
+	  local p3 = vec2.add(vec2.rotate(self.doorPolyPoints[3], targetRotationRadians), self.hingePoint)
+	  local p4 = vec2.add(vec2.rotate(self.doorPolyPoints[4], targetRotationRadians), self.hingePoint)
+	  if storage.doorDirection < 0 then
+		local doorWidth = config.getParameter("doorWidth") or 1
+		p1[1] = p1[1] * -1 + doorWidth
+		p2[1] = p2[1] * -1 + doorWidth
+		p3[1] = p3[1] * -1 + doorWidth
+		p4[1] = p4[1] * -1 + doorWidth
+	  end 
+	  damageSource.poly = {p1, p2, p3, p4}	
+	  object.setDamageSources({damageSource})
+	else
+	  object.setDamageSources()
+	end
+  end
+  
+  if self.lastState ~= state or state == "opening" or state == "closing" then
+	updatePhysicsCollision(state, targetRotationRadians)
   end
   
   storage.cycle = cycle
@@ -84,37 +125,74 @@ function update()
   self.lastState = storage.state
 end
 
-function updatePhysicsCollision(state)
+function dynamicSpaces(radians)
+  spaces = {}
+    
+  for _, space in ipairs(config.getParameter("doorSpaces")) do
+	local spaceVector = vec2.rotate(space, radians)
+	if storage.doorDirection < 0 then
+	  spaceVector[1] = spaceVector[1] * -1
+	end
+	local tilePos = vec2.floor(vec2.add(self.hingePoint, spaceVector))
+	--world.debugPoint(vec2.add(tilePos, entity.position()), "pink")
+	local p1 = {tilePos[1] + 0, tilePos[2] + 0}
+	local p2 = {tilePos[1] + 1, tilePos[2] + 0}
+	local p3 = {tilePos[1] + 1, tilePos[2] + 1}
+	local p4 = {tilePos[1] + 0, tilePos[2] + 1}
+	local tilePoly = {p1, p2, p3, p4}
+	world.debugPoly(poly.translate(tilePoly, entity.position()), "pink")
+	table.insert(spaces, tilePos)
+  end
+  
+  return spaces
+end
+
+function updatePhysicsCollision(state, radians)
   self.collideSpaces = {}
   local metamaterial = "metamaterial:lockedDoor"
   
+  --While OPEN
   if state == "open" then
 	self.newSpaces = config.getParameter("collisionSpacesOpen")
 	for i, space in ipairs(self.newSpaces) do
 	  table.insert(self.collideSpaces, {space, metamaterial})
 	end
+	object.setOutputNodeLevel(0, false)
+	object.setOutputNodeLevel(1, true)
+	--While OPENING or CLOSING
   elseif state == "opening" or state == "closing" then
 	self.newSpaces = config.getParameter("collisionSpacesTransition")
 	for i, space in ipairs(self.newSpaces) do
 	  table.insert(self.collideSpaces, {space, metamaterial})
 	end
+	--Optionally calculate dynamic spaces
+	if config.getParameter("useDynamicSpaces") then
+	  self.dynamicSpaces = dynamicSpaces(radians)
+	  for i, space in ipairs(self.dynamicSpaces) do
+		table.insert(self.collideSpaces, {space, metamaterial})
+	  end
+	end
+	object.setOutputNodeLevel(0, true)
+	object.setOutputNodeLevel(1, false)
+  --While CLOSED
   elseif state == "closed" then
 	self.newSpaces = config.getParameter("collisionSpacesClosed")
 	for i, space in ipairs(self.newSpaces) do
 	  table.insert(self.collideSpaces, {space, metamaterial})
 	end
+	object.setOutputNodeLevel(0, false)
+	object.setOutputNodeLevel(1, false)
   end
   
   object.setMaterialSpaces(self.collideSpaces)
   
---Old code, might be useful for other stuff later down the line
-  --local isFlipped = storage.doorDirection < 0
-  --physics.setCollisionEnabled("openLeft", isFlipped and state == "open")
-  --physics.setCollisionEnabled("closedLeft", isFlipped and state == "closed")
-  --physics.setCollisionEnabled("transitionLeft", isFlipped and (state == "opening" or state == "closing"))
-  --physics.setCollisionEnabled("openRight", not isFlipped and state == "open")
-  --physics.setCollisionEnabled("closedRight", not isFlipped and state == "closed")
-  --physics.setCollisionEnabled("transitionRight", not isFlipped and (state == "opening" or state == "closing"))
+  if config.getParameter("removeLiquids") then
+	for _, space in ipairs(self.collideSpaces) do
+	  local targetPos = vec2.add(vec2.add(entity.position(), space[1]), {0.5, 0.5})
+	  world.forceDestroyLiquid(targetPos)
+	  world.debugPoint(targetPos, "yellow")
+	end
+  end
 end
 
 function onNodeConnectionChange(args)

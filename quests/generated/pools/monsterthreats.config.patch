@@ -24,6 +24,16 @@
 	"value" : [
 	  [ "generic" ],
 	  {
+		"name" : "Wild Faryths",
+		"typeName" : "faryth"
+	  }
+	]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : [
+	  [ "generic" ],
+	  {
 		"name" : "Hacked Drahls",
 		"typeName" : "avikandrone"
 	  }
@@ -46,6 +56,16 @@
 	  {
 		"name" : "Hacked Trinkian Drones",
 		"typeName" : "trinkdrone"
+	  }
+	]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : [
+	  [ "generic" ],
+	  {
+		"name" : "Akkimari Arbiters",
+		"typeName" : "akkimariarbiter"
 	  }
 	]
   }

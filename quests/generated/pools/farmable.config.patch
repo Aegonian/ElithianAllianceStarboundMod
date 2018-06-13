@@ -1,18 +1,44 @@
 [
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : ["dunestalkseed", "dunestalk"]
-	},
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : ["bolbohnseed", "bolbohn"]
-	},
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : ["avikancactusseed", "kadavancactus"]
-	},
-	{"op" : "add",
-		"path" : "/0/1/-",
-		"value" : ["avikanspiceplantseed", "avikanspices"]
-	}
+  //AVIKAN
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : [ "dunestalkseed", "dunestalk" ]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : [ "bolbohnseed", "bolbohn" ]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : [ "avikancactusseed", "kadavancactus" ]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : [ "avikanspiceplantseed", "avikanspices" ]
+  },
+  //AEGI
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : [ "ambrumseed", "ambrumfiber" ]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : [ "boratoseed", "borato" ]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : [ "loftgrainseed", "loftgrain" ]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : [ "mellowrootseed", "mellowroot" ]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : [ "selvasseed", "selvasextract" ]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : [ "vahlberryseed", "vahlberries" ]
+  }
 ]

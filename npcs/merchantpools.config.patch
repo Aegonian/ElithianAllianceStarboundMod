@@ -547,10 +547,12 @@
 			  { "item": { "name": "alliancetruckobject" }, "rarity": 0.5 },
 			  { "item": { "name": "alliancehovercarblueobject" }, "rarity": 0.5 },
 			  { "item": { "name": "alliancehovercarredobject" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancedroneobject" }, "rarity": 0.5 },
 			  //VEHICLE CONTROLLERS
 			  { "item": { "name": "alliancehovercarbluecontroller" }, "rarity": 0.5 },
 			  { "item": { "name": "alliancehovercarredcontroller" }, "rarity": 0.5 },
-			  { "item": { "name": "allianceshuttlecontroller" }, "rarity": 0.5 }
+			  { "item": { "name": "allianceshuttlecontroller" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancedronecontroller" }, "rarity": 0.5 }
 			] ]
 		]
 	},
@@ -690,7 +692,130 @@
 			  { "item": { "name": "mellowroot" }, "rarity": 0.5 },
 			  //MATERIALS
 			  { "item": { "name": "alliancecloth" }, "rarity": 0.5 },
-			  { "item": { "name": "alliancemetal" }, "rarity": 0.5 }
+			  { "item": { "name": "alliancemetal" }, "rarity": 0.5 },
+			  //CLOTHING
+			  { "item": { "name": "aegi-brandshirtaventor" }, "rarity": 0.1 },
+			  { "item": { "name": "aegi-brandshirtfroza" }, "rarity": 0.1 },
+			  { "item": { "name": "aegi-brandshirtgame" }, "rarity": 0.1 },
+			  { "item": { "name": "aegi-beanie", "parameters" : { "colorIndex" : 0 } }, "rarity": 0.05 },
+			  { "item": { "name": "aegi-beanie", "parameters" : { "colorIndex" : 1 } }, "rarity": 0.05 },
+			  { "item": { "name": "aegi-beanie", "parameters" : { "colorIndex" : 4 } }, "rarity": 0.05 },
+			  { "item": { "name": "aegi-beanie", "parameters" : { "colorIndex" : 8 } }, "rarity": 0.05 },
+			  { "item": { "name": "aegi-cap", "parameters" : { "colorIndex" : 0 } }, "rarity": 0.05 },
+			  { "item": { "name": "aegi-cap", "parameters" : { "colorIndex" : 1 } }, "rarity": 0.05 },
+			  { "item": { "name": "aegi-cap", "parameters" : { "colorIndex" : 4 } }, "rarity": 0.05 },
+			  { "item": { "name": "aegi-cap", "parameters" : { "colorIndex" : 8 } }, "rarity": 0.05 },
+			  { "item": { "name": "aegi-fedora", "parameters" : { "colorIndex" : 0 } }, "rarity": 0.05 },
+			  { "item": { "name": "aegi-fedora", "parameters" : { "colorIndex" : 1 } }, "rarity": 0.05 },
+			  { "item": { "name": "aegi-fedora", "parameters" : { "colorIndex" : 4 } }, "rarity": 0.05 },
+			  { "item": { "name": "aegi-fedora", "parameters" : { "colorIndex" : 8 } }, "rarity": 0.05 },
+			  { "item": { "name": "aegi-hood", "parameters" : { "colorIndex" : 0 } }, "rarity": 0.05 },
+			  { "item": { "name": "aegi-hood", "parameters" : { "colorIndex" : 1 } }, "rarity": 0.05 },
+			  { "item": { "name": "aegi-hood", "parameters" : { "colorIndex" : 4 } }, "rarity": 0.05 },
+			  { "item": { "name": "aegi-hood", "parameters" : { "colorIndex" : 8 } }, "rarity": 0.05 }
+			] ]
+		]
+	},
+	
+	{ "op" : "add", "path" : "/aegicolonyfood",
+		"value" : [
+			[ 0, [
+			  //FOODS
+			  { "item": { "name": "aegimeal" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancesodabottle" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancesodabottle2" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancesodabottle3" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancesodacan" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancesodacan2" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancesodacan3" }, "rarity": 0.5 },
+			  { "item": { "name": "vahlberryjam" }, "rarity": 0.5 },
+			  { "item": { "name": "boratochips" }, "rarity": 0.5 },
+			  { "item": { "name": "mellowroot" }, "rarity": 0.5 }
+			] ]
+		]
+	},
+	
+	{ "op" : "add", "path" : "/aegicolonyclothing",
+		"value" : [
+			[ 0, [
+			  //PROMOTIONAL SHIRTS
+			  { "item": { "name": "aegi-brandshirtaventor" }, "rarity": 1.0 },
+			  { "item": { "name": "aegi-brandshirtfroza" }, "rarity": 1.0 },
+			  { "item": { "name": "aegi-brandshirtgame" }, "rarity": 1.0 },
+			  //HATS
+			  { "item": { "name": "aegi-beanie", "parameters" : { "colorIndex" : 0 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-beanie", "parameters" : { "colorIndex" : 1 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-beanie", "parameters" : { "colorIndex" : 4 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-beanie", "parameters" : { "colorIndex" : 8 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-cap", "parameters" : { "colorIndex" : 0 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-cap", "parameters" : { "colorIndex" : 1 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-cap", "parameters" : { "colorIndex" : 4 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-cap", "parameters" : { "colorIndex" : 8 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-fedora", "parameters" : { "colorIndex" : 0 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-fedora", "parameters" : { "colorIndex" : 1 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-fedora", "parameters" : { "colorIndex" : 4 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-fedora", "parameters" : { "colorIndex" : 8 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-hood", "parameters" : { "colorIndex" : 0 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-hood", "parameters" : { "colorIndex" : 1 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-hood", "parameters" : { "colorIndex" : 4 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-hood", "parameters" : { "colorIndex" : 8 } }, "rarity": 0.25 },
+			  //GENERIC CLOTHING
+			  { "item": { "name": "aegi-swimwearchest", "parameters" : { "colorIndex" : 0 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-swimwearchest", "parameters" : { "colorIndex" : 1 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-swimwearchest", "parameters" : { "colorIndex" : 4 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-swimwearchest", "parameters" : { "colorIndex" : 8 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-swimwearlegs", "parameters" : { "colorIndex" : 0 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-swimwearlegs", "parameters" : { "colorIndex" : 1 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-swimwearlegs", "parameters" : { "colorIndex" : 4 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-swimwearlegs", "parameters" : { "colorIndex" : 8 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-tanktop", "parameters" : { "colorIndex" : 0 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-tanktop", "parameters" : { "colorIndex" : 1 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-tanktop", "parameters" : { "colorIndex" : 4 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-tanktop", "parameters" : { "colorIndex" : 8 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-shorts", "parameters" : { "colorIndex" : 0 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-shorts", "parameters" : { "colorIndex" : 1 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-shorts", "parameters" : { "colorIndex" : 4 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-shorts", "parameters" : { "colorIndex" : 8 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-shirt", "parameters" : { "colorIndex" : 0 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-shirt", "parameters" : { "colorIndex" : 1 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-shirt", "parameters" : { "colorIndex" : 4 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-shirt", "parameters" : { "colorIndex" : 8 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-formalchest", "parameters" : { "colorIndex" : 0 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-formalchest", "parameters" : { "colorIndex" : 1 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-formalchest", "parameters" : { "colorIndex" : 4 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-formalchest", "parameters" : { "colorIndex" : 8 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-formallegs", "parameters" : { "colorIndex" : 0 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-formallegs", "parameters" : { "colorIndex" : 1 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-formallegs", "parameters" : { "colorIndex" : 4 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-formallegs", "parameters" : { "colorIndex" : 8 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-baggylegs", "parameters" : { "colorIndex" : 0 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-baggylegs", "parameters" : { "colorIndex" : 1 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-baggylegs", "parameters" : { "colorIndex" : 4 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-baggylegs", "parameters" : { "colorIndex" : 8 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-casuallegs", "parameters" : { "colorIndex" : 0 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-casuallegs", "parameters" : { "colorIndex" : 1 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-casuallegs", "parameters" : { "colorIndex" : 4 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-casuallegs", "parameters" : { "colorIndex" : 8 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-asauniformhead", "parameters" : { "colorIndex" : 0 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-asauniformhead", "parameters" : { "colorIndex" : 1 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-asauniformhead", "parameters" : { "colorIndex" : 4 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-asauniformhead", "parameters" : { "colorIndex" : 8 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-asauniformchest", "parameters" : { "colorIndex" : 0 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-asauniformchest", "parameters" : { "colorIndex" : 1 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-asauniformchest", "parameters" : { "colorIndex" : 4 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-asauniformchest", "parameters" : { "colorIndex" : 8 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-asauniformlegs", "parameters" : { "colorIndex" : 0 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-asauniformlegs", "parameters" : { "colorIndex" : 1 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-asauniformlegs", "parameters" : { "colorIndex" : 4 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-asauniformlegs", "parameters" : { "colorIndex" : 8 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-asacoatchest", "parameters" : { "colorIndex" : 0 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-asacoatchest", "parameters" : { "colorIndex" : 1 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-asacoatchest", "parameters" : { "colorIndex" : 4 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-asacoatchest", "parameters" : { "colorIndex" : 8 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-asacoatlegs", "parameters" : { "colorIndex" : 0 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-asacoatlegs", "parameters" : { "colorIndex" : 1 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-asacoatlegs", "parameters" : { "colorIndex" : 4 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-asacoatlegs", "parameters" : { "colorIndex" : 8 } }, "rarity": 0.25 }
 			] ]
 		]
 	},

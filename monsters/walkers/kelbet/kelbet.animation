@@ -80,7 +80,7 @@
       "body" : {
         "properties" : {
           "transformationGroups" : [ "body" ],
-          "offset" : [0.5, 2.5]
+          "offset" : [0.5, 0.5]
         },
         "partStates" : {
           "body" : {

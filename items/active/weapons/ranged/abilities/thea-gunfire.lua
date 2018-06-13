@@ -37,16 +37,18 @@ function TheaGunFire:update(dt, fireMode, shiftHeld)
     elseif self.fireType == "burst" then
       self:setState(self.burst)
     end
-  elseif self.fireMode ~= (self.activatingFireMode or self.abilitySlot) then
+  elseif self.fireMode ~= (self.activatingFireMode or self.abilitySlot) and not self.singleFireAnimation then
 	animator.setAnimationState("weapon", "idle")
-  elseif status.resourceLocked("energy") then
+  elseif status.resourceLocked("energy") and not self.singleFireAnimation then
 	animator.setAnimationState("weapon", "idle")
   end
 end
 
 function TheaGunFire:auto()
   self.weapon:setStance(self.stances.fire)
-  animator.setAnimationState("weapon", "active")
+  if not self.singleFireAnimation then
+	animator.setAnimationState("weapon", "active")
+  end
 
   self:fireProjectile()
   self:muzzleFlash()
@@ -61,7 +63,9 @@ end
 
 function TheaGunFire:burst()
   self.weapon:setStance(self.stances.fire)
-  animator.setAnimationState("weapon", "active")
+  if not self.singleFireAnimation then
+	animator.setAnimationState("weapon", "active")
+  end
 
   local shots = self.burstCount
   while shots > 0 and status.overConsumeResource("energy", self:energyPerShot()) do
@@ -110,6 +114,10 @@ function TheaGunFire:fireProjectile(projectileType, projectileParams, inaccuracy
   params.powerMultiplier = activeItem.ownerPowerMultiplier()
   params.speed = util.randomInRange(params.speed)
 
+  if self.singleFireAnimation then
+	animator.setAnimationState("weapon", "active")
+  end
+  
   if not projectileType then
     projectileType = self.projectileType
   end

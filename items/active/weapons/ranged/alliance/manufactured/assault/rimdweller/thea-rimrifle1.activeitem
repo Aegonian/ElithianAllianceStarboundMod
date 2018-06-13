@@ -1,7 +1,7 @@
 {
   "itemName" : "thea-rimrifle1",
   "price" : 325,
-  "inventoryIcon" : "thea-rimrifle1.png",
+  "inventoryIcon" : "thea-rimrifle1.png:idle",
   "maxStack" : 1,
   "rarity" : "Legendary",
   "description" : "An assault rifle produced somewhere in the Rim.",
@@ -14,7 +14,7 @@
   "itemTags" : ["weapon","ranged","assaultrifle","alliance","rimdweller","allianceUpgradeable"],
   "twoHanded" : true,
   
-  "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
+  "animation" : "/items/active/weapons/ranged/animations/thea-gun-ejectbullet.animation",
   "animationParts" : {
     "middle" : "thea-rimrifle1.png",
     "middleFullbright" : "thea-rimrifle1lights.png",
@@ -31,9 +31,24 @@
       }
     },
     "particleEmitters" : {
+      "muzzleFlash" : {
+        "transformationGroups" : ["weapon"],
+		"offsetRegion" : [0.875, 0.375, 0.875, 0.375],
+        "particles" : [
+          { "particle" : "thea-discardedbulletlight" }
+        ]
+      },
+      "altMuzzleFlash" : {
+        "transformationGroups" : ["weapon"],
+		"offsetRegion" : [0.875, 0.375, 0.875, 0.275],
+        "particles" : [
+          { "particle" : "thea-discardedbulletlight" }
+        ]
+      }
     },
     "sounds" : {
-      "fire" : [ "/sfx/gun/shotgun3.ogg" ]
+      "fire" : ["/sfx/gun/ar2.ogg"],
+      "altFire" : [ "/sfx/gun/ar2.ogg" ]
     }
   },
 
@@ -45,8 +60,8 @@
   "elementalType" : "physical",
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
-    "class" : "GunFire",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-gunfire.lua"],
+    "class" : "TheaGunFire",
 
     "fireTime" : 0.08,
     "baseDps" : 10.5,
@@ -60,6 +75,8 @@
     "projectileParameters" : {
       "knockback" : 1
     },
+	
+	"singleFireAnimation" : true, //Tells the weapon that the active animation is single-fire instead of looping, allowing altFire to also play the active animation
 	
     "stances" : {
       "idle" : {
@@ -83,6 +100,52 @@
         "duration" : 0.075,
         "armRotation" : 3,
         "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "altAbility" : {
+    "name" : "Focused Ricochet",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-altfire.lua"],
+	"class" : "TheaAltFireAttack",
+
+    "baseDps" : 9.0,
+	"fireTime" : 0.25,
+    "energyUsage" : 35.0,
+    "inaccuracy" : 0.01,
+
+	"projectileCount" : 1,
+    "fireType" : "auto",
+	
+	"projectileType" : "alliancephysicalbullet-bouncing",
+	"projectileParameters" : {
+	  "knockback" : 6,
+	  "piercing" : true
+	},
+	
+	"hidePrimaryMuzzleFlash" : false,
+	"useParticleEmitter" : true,
+	"usePrimaryFireSound" : false,
+	"animateWeapon" : true, //Sets the weapon's animation state to "active" when firing
+
+    "stances" : {
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.1,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
         "twoHanded" : true,
 
         "allowRotate" : false,

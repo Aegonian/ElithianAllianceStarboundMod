@@ -1,0 +1,40 @@
+{
+  "itemName" : "alliancedronecontroller",
+  "itemTags" : ["vehiclecontroller"],
+  "level" : 1,
+  "maxStack" : 1,
+  "price" : 15000,
+  "rarity" : "Legendary",
+  "tooltipKind" : "vehicle",
+  "largeImage" : "/vehicles/alliance/alliancedrone/alliancedroneicon.png",
+  "category" : "Remote Vehicle Controller",
+  "description" : "Allows you to summon and control an AAE Recon Drone.",
+  "shortdescription" : "AAE Drone Controller",
+  "twoHanded" : true,
+  "inventoryIcon" : "alliancedronecontroller.png:active.1",
+  "emptyInventoryIcon" : "/items/active/remotecontroller/alliancedronecontroller.png:active.1",
+  "filledInventoryIcon" : "/items/active/remotecontroller/alliancedronecontroller.png:inactive.1",
+  
+  "animation" : "thea-remotecontroller.animation",
+  "animationParts" : {
+    "casing" : "alliancedronecontroller.png",
+	"lights" : "alliancedronecontrollerlights.png"
+  },  
+  
+  "scripts" : ["thea-remotecontroller.lua"],
+  "animationScripts" : ["/items/active/vehiclecontroller/vehiclecursor.lua"],
+
+  //Item specific configuration
+  "vehicleType" : "alliancedrone",
+  "vehicleImage" : "/vehicles/alliance/alliancedrone/alliancedroneicon.png",
+  "vehicleBoundingBox" : [-1.5, -1.5, 1.5, 1.5],
+  
+  //Generic configuration
+  "cooldownTime" : 1.0,				//Cooldown time between drone spawns
+  "transmissionRange" : 100,			//Maximum distance at which to search for and control the drone
+  "edgeOfRangeDistance" : 80,		//Minimum distance to controlled vehicle before warning noise starts playing
+  "receiveInputTimeout" : 0.5,		//If we haven't received a response for this amount of time, disconnect from the drone
+  "cameraFocusOnVehicle" : true,	//If set to true, the player's camera will follow the controlled vehicle while it is in range
+  "warningSoundFrequency" : 0.5,
+  "filled" : true
+}

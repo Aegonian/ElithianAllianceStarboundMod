@@ -386,5 +386,25 @@
       ]
     }]
    ]
+  },
+  
+  {"op" : "add",
+   "path" : "/alliancetransportdroneCrateTreasure",
+   "value" : [
+	[1, {
+      "poolRounds" : [
+        [0.5, 2],
+        [0.3, 3],
+        [0.2, 4]
+      ],
+      "pool" : [
+        {"weight" : 0.20, "pool" : "alliancefarming" },
+		{"weight" : 0.50, "pool" : "alliancecraftingmaterials" },
+		{"weight" : 0.20, "item" : "alliancemetal" },
+		{"weight" : 0.05, "pool" : "alliancecodex" },
+		{"weight" : 0.05, "pool" : "aegiclothing" }
+      ]
+    }]
+   ]
   }
 ]

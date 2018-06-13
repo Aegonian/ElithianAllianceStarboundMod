@@ -1,0 +1,14 @@
+{
+  "frameGrid" : {
+    "size" : [35, 16],
+    "dimensions" : [3, 1],
+
+    "names" : [
+      [ "active.1", "active.2", "active.3" ]
+    ]
+  },
+
+  "aliases" : {
+    "idle" : "active.1"
+  }
+}

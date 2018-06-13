@@ -1,474 +1,474 @@
 [
-	//AVIKAN DIALOGUE
-	{
-		"op": "add",
-		"path": "/reattack/avikan",
-		"value": {
-			"default" : [
-				"Target reacquired!",
-				"You're not getting away this time!",
-				"Rhadeis will stop you this time!",
-				"The hunt goes on.",
-				"You made a mistake returning here."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/attack/avikan",
-		"value": {
-			"default" : [
-				"Invaders, eliminate them!",
-				"They're after the artefacts, get them!",
-				"Prepare to meet your maker!",
-				"This ends now!",
-				"Your head will make a fine trophy!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/killedTarget/avikan",
-		"value": {
-			"default" : [
-				"And so the hunt ends.",
-				"Rhadeis favours us today!",
-				"Another battle won.",
-				"Target eliminated!",
-				"Threat eliminated."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/lostTarget/avikan",
-		"value": {
-			"default" : [
-				"Target escaped...",
-				"I'll get you next time.",
-				"Rhadeis will bring you justice, one way or another.",
-				"This isn't over yet.",
-				"The hunt ends. For now..."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/outOfSight/avikan",
-		"value": {
-			"default" : [
-				"I lost the target!",
-				"Where did it go?",
-				"Rhadeis will find you again.",
-				"Does anyone have an eye on the target?",
-				"They're elusive..."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/cantReach/avikan",
-		"value": {
-			"default" : [
-				"Get back here, coward!",
-				"Vathra! I can't get over there!",
-				"Rhadeis will guide me to you.",
-				"Can anyone reach the target?",
-				"I can't reach the target!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/cheerOn/avikan",
-		"value": {
-			"default" : [
-				"Get them!",
-				"We're almost there!",
-				"Fight! We can't lose them now!",
-				"Rhadeis, strike them down!",
-				"Your head will be mine!"
-			]
-		}
-	},
-	
-	
-	
-	//TRINK DIALOGUE
-	{
-		"op": "add",
-		"path": "/reattack/trink",
-		"value": {
-			"default" : [
-				"Target reacquired!",
-				"The target has been reacquired!",
-				"Your return was a mistake.",
-				"You'll not escape again!",
-				"The Circuit shall hunt you down!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/attack/trink",
-		"value": {
-			"default" : [
-				"Eliminate the invaders!",
-				"Hostile detected!",
-				"The Circuit shall hunt you down!",
-				"You've come to your journey's end!",
-				"Elimination protocol initiated!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/killedTarget/trink",
-		"value": {
-			"default" : [
-				"Threat levels have returned to normal.",
-				"The Circuit is victorious.",
-				"Efficiency wins it every time.",
-				"Target eliminated.",
-				"Exiting combat stance."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/lostTarget/trink",
-		"value": {
-			"default" : [
-				"Target escaped.",
-				"The target has left the area.",
-				"Combat situation resolved. The target was lost.",
-				"Error. Target not found.",
-				"The hostile got away."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/outOfSight/trink",
-		"value": {
-			"default" : [
-				"I lost sight of the target!",
-				"Error. Target out of sight.",
-				"The Circuit shall find you again..",
-				"My scans fail to reveal the target.",
-				"The target is elusive."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/cantReach/trink",
-		"value": {
-			"default" : [
-				"Unable to reach the target!",
-				"I am unable to reach the target!",
-				"The hostile is beyond my reach.",
-				"Do not let them get away!",
-				"I can't reach the target!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/cheerOn/trink",
-		"value": {
-			"default" : [
-				"The target will be eliminated shortly.",
-				"The Circuit shall be victorious.",
-				"The target shall fall soon!",
-				"Get them!",
-				"You're done for!"
-			]
-		}
-	},
-	
-	
-	
-	//DRODEN DIALOGUE
-	{
-		"op": "add",
-		"path": "/reattack/droden",
-		"value": {
-			"default" : [
-				"Target reacquired.",
-				"Located target. Commencing assault.",
-				"Assuming battle position.",
-				"Preparing for elimination of target.",
-				"Target acquired. Battle modules loaded."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/attack/droden",
-		"value": {
-			"default" : [
-				"Acquired combat target.",
-				"Battle modules initiated. Commencing assault.",
-				"Elimination of target in progress.",
-				"Target acquired. Eliminating.",
-				"Commencing battle."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/killedTarget/droden",
-		"value": {
-			"default" : [
-				"Target eliminated.",
-				"Battle concluded.",
-				"Unloading battle modules.",
-				"Victory achieved.",
-				"Elimination complete."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/lostTarget/droden",
-		"value": {
-			"default" : [
-				"Target has escaped. Ending battle state.",
-				"Target lost.",
-				"Elimination incomplete. Target lost.",
-				"Ending combat procedures. Target lost.",
-				"Target has escaped."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/outOfSight/droden",
-		"value": {
-			"default" : [
-				"Lost visual on target. Searching.",
-				"Target lost. Reacquiring.",
-				"Target loss confirmed.",
-				"Unable to detect target.",
-				"Target lost."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/cantReach/droden",
-		"value": {
-			"default" : [
-				"Unable to reach target.",
-				"Combat halted. Unable to reach target.",
-				"Requesting help. Unable to reach target.",
-				"Unable to reach target. Recalculating path.",
-				"Unable to reach target. Elimination incomplete."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/cheerOn/droden",
-		"value": {
-			"default" : [
-				"Eliminate target.",
-				"Target is hurt. Eliminate.",
-				"Assume battle positions.",
-				"Acquiring battle position.",
-				"Target elimination nearing completion."
-			]
-		}
-	},
-	
-	
-	
-	//THELEAN DIALOGUE
-	{
-		"op": "add",
-		"path": "/reattack/thelean",
-		"value": {
-			"default" : [
-				"Target reacquired.",
-				"I found you!",
-				"Death has found you!",
-				"Your death shall be quick!",
-				"Death has come for you!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/attack/thelean",
-		"value": {
-			"default" : [
-				"Death has come for you!",
-				"Intruders die!",
-				"Creaton shall take you!",
-				"Death has found a new prey!",
-				"Eliminate the intruder!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/killedTarget/thelean",
-		"value": {
-			"default" : [
-				"Target eliminated.",
-				"Victorious once more.",
-				"Death has claimed its prize.",
-				"Creaton will show no mercy.",
-				"Death has taken you!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/lostTarget/thelean",
-		"value": {
-			"default" : [
-				"This isn't over yet...",
-				"Death will find you sooner or later.",
-				"The target has escaped.",
-				"Death shall come for you soon enough...",
-				"You'll not escape me next time."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/outOfSight/thelean",
-		"value": {
-			"default" : [
-				"The target has escaped my sight!",
-				"The eye of Creaton shall find you again!",
-				"Death will find you soon enough!",
-				"My sight has betrayed me!",
-				"Creaton will find you!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/cantReach/thelean",
-		"value": {
-			"default" : [
-				"Death will find its way to you!",
-				"Get back here and face death!",
-				"Flee, you weakling!",
-				"I'll get to you soon enough...",
-				"You'll not escape me so easily!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/cheerOn/thelean",
-		"value": {
-			"default" : [
-				"Eliminate that target!",
-				"Death embrace you!",
-				"Creaton shall take you!",
-				"There is not turning back now!",
-				"Death will feast today!"
-			]
-		}
-	},
-	
-	
-	
-	//AEGI DIALOGUE
-	{
-		"op": "add",
-		"path": "/reattack/aegi",
-		"value": {
-			"default" : [
-				"I found the target!",
-				"Eyes on the target!",
-				"Tango in sight!",
-				"I have a clear shot!",
-				"Engaging the target!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/attack/aegi",
-		"value": {
-			"default" : [
-				"Defeat the enemy!",
-				"Not on my watch!",
-				"Got a target!",
-				"You messed up!",
-				"You'll regret this!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/killedTarget/aegi",
-		"value": {
-			"default" : [
-				"Target eliminated.",
-				"Tango down!",
-				"Victorious!",
-				"That seemed to be the last.",
-				"Did my job again."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/lostTarget/aegi",
-		"value": {
-			"default" : [
-				"Target lost!",
-				"Seems they escaped...",
-				"The target got away.",
-				"I should pay more attention next time...",
-				"The enemy got away."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/outOfSight/aegi",
-		"value": {
-			"default" : [
-				"I lost the target!",
-				"I don't have eyes on the target!",
-				"Sweep the area!",
-				"Don't let them get away!",
-				"I can't see the target!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/cantReach/aegi",
-		"value": {
-			"default" : [
-				"I can't get up there!",
-				"Target is out of range!",
-				"I can't reach the target!",
-				"Can anyone reach the target?",
-				"I need to find another route!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/cheerOn/aegi",
-		"value": {
-			"default" : [
-				"Get them!",
-				"Don't let up now!",
-				"Push onward!",
-				"Push for the final strike!",
-				"Just a little longer!"
-			]
-		}
-	}
+  //AVIKAN DIALOGUE
+  {
+    "op": "add",
+    "path": "/reattack/avikan",
+    "value": {
+	  "default" : [
+		"Target reacquired!",
+		"You're not getting away this time!",
+		"Rhadeis will stop you this time!",
+		"The hunt goes on.",
+		"You made a mistake returning here."
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/attack/avikan",
+    "value": {
+	  "default" : [
+		"Invaders, eliminate them!",
+		"They're after the artefacts, get them!",
+		"Prepare to meet your maker!",
+		"This ends now!",
+		"Your head will make a fine trophy!"
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/killedTarget/avikan",
+    "value": {
+	  "default" : [
+		"And so the hunt ends.",
+		"Rhadeis favours us today!",
+		"Another battle won.",
+		"Target eliminated!",
+		"Threat eliminated."
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/lostTarget/avikan",
+    "value": {
+	  "default" : [
+		"Target escaped...",
+		"I'll get you next time.",
+		"Rhadeis will bring you justice, one way or another.",
+		"This isn't over yet.",
+		"The hunt ends. For now..."
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/outOfSight/avikan",
+    "value": {
+	  "default" : [
+		"I lost the target!",
+		"Where did it go?",
+		"Rhadeis will find you again.",
+		"Does anyone have an eye on the target?",
+		"They're elusive..."
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/cantReach/avikan",
+    "value": {
+	  "default" : [
+		"Get back here, coward!",
+		"Vathra! I can't get over there!",
+		"Rhadeis will guide me to you.",
+		"Can anyone reach the target?",
+		"I can't reach the target!"
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/cheerOn/avikan",
+    "value": {
+	  "default" : [
+		"Get them!",
+		"We're almost there!",
+		"Fight! We can't lose them now!",
+		"Rhadeis, strike them down!",
+		"Your head will be mine!"
+	  ]
+    }
+  },
+  
+  
+  
+  //TRINK DIALOGUE
+  {
+    "op": "add",
+    "path": "/reattack/trink",
+    "value": {
+	  "default" : [
+		"Target reacquired!",
+		"The target has been reacquired!",
+		"Your return was a mistake.",
+		"You'll not escape again!",
+		"The Circuit shall hunt you down!"
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/attack/trink",
+    "value": {
+	  "default" : [
+		"Eliminate the invaders!",
+		"Hostile detected!",
+		"The Circuit shall hunt you down!",
+		"You've come to your journey's end!",
+		"Elimination protocol initiated!"
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/killedTarget/trink",
+    "value": {
+	  "default" : [
+		"Threat levels have returned to normal.",
+		"The Circuit is victorious.",
+		"Efficiency wins it every time.",
+		"Target eliminated.",
+		"Exiting combat stance."
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/lostTarget/trink",
+    "value": {
+	  "default" : [
+		"Target escaped.",
+		"The target has left the area.",
+		"Combat situation resolved. The target was lost.",
+		"Error. Target not found.",
+		"The hostile got away."
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/outOfSight/trink",
+    "value": {
+	  "default" : [
+		"I lost sight of the target!",
+		"Error. Target out of sight.",
+		"The Circuit shall find you again..",
+		"My scans fail to reveal the target.",
+		"The target is elusive."
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/cantReach/trink",
+    "value": {
+	  "default" : [
+		"Unable to reach the target!",
+		"I am unable to reach the target!",
+		"The hostile is beyond my reach.",
+		"Do not let them get away!",
+		"I can't reach the target!"
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/cheerOn/trink",
+    "value": {
+	  "default" : [
+		"The target will be eliminated shortly.",
+		"The Circuit shall be victorious.",
+		"The target shall fall soon!",
+		"Get them!",
+		"You're done for!"
+	  ]
+    }
+  },
+  
+  
+  
+  //DRODEN DIALOGUE
+  {
+    "op": "add",
+    "path": "/reattack/droden",
+    "value": {
+	  "default" : [
+		"Target reacquired.",
+		"Located target. Commencing assault.",
+		"Assuming battle position.",
+		"Preparing for elimination of target.",
+		"Target acquired. Battle modules loaded."
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/attack/droden",
+    "value": {
+	  "default" : [
+		"Acquired combat target.",
+		"Battle modules initiated. Commencing assault.",
+		"Elimination of target in progress.",
+		"Target acquired. Eliminating.",
+		"Commencing battle."
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/killedTarget/droden",
+    "value": {
+	  "default" : [
+		"Target eliminated.",
+		"Battle concluded.",
+		"Unloading battle modules.",
+		"Victory achieved.",
+		"Elimination complete."
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/lostTarget/droden",
+    "value": {
+	  "default" : [
+		"Target has escaped. Ending battle state.",
+		"Target lost.",
+		"Elimination incomplete. Target lost.",
+		"Ending combat procedures. Target lost.",
+		"Target has escaped."
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/outOfSight/droden",
+    "value": {
+	  "default" : [
+		"Lost visual on target. Searching.",
+		"Target lost. Reacquiring.",
+		"Target loss confirmed.",
+		"Unable to detect target.",
+		"Target lost."
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/cantReach/droden",
+    "value": {
+	  "default" : [
+		"Unable to reach target.",
+		"Combat halted. Unable to reach target.",
+		"Requesting help. Unable to reach target.",
+		"Unable to reach target. Recalculating path.",
+		"Unable to reach target. Elimination incomplete."
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/cheerOn/droden",
+    "value": {
+	  "default" : [
+		"Eliminate target.",
+		"Target is hurt. Eliminate.",
+		"Assume battle positions.",
+		"Acquiring battle position.",
+		"Target elimination nearing completion."
+	  ]
+    }
+  },
+  
+  
+  
+  //THELEAN DIALOGUE
+  {
+    "op": "add",
+    "path": "/reattack/thelean",
+    "value": {
+	  "default" : [
+		"Target reacquired.",
+		"I found you!",
+		"Death has found you!",
+		"Your death shall be quick!",
+		"Death has come for you!"
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/attack/thelean",
+    "value": {
+	  "default" : [
+		"Death has come for you!",
+		"Intruders die!",
+		"Creaton shall take you!",
+		"Death has found a new prey!",
+		"Eliminate the intruder!"
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/killedTarget/thelean",
+    "value": {
+	  "default" : [
+		"Target eliminated.",
+		"Victorious once more.",
+		"Death has claimed its prize.",
+		"Creaton will show no mercy.",
+		"Death has taken you!"
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/lostTarget/thelean",
+    "value": {
+	  "default" : [
+		"This isn't over yet...",
+		"Death will find you sooner or later.",
+		"The target has escaped.",
+		"Death shall come for you soon enough...",
+		"You'll not escape me next time."
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/outOfSight/thelean",
+    "value": {
+	  "default" : [
+		"The target has escaped my sight!",
+		"The eye of Creaton shall find you again!",
+		"Death will find you soon enough!",
+		"My sight has betrayed me!",
+		"Creaton will find you!"
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/cantReach/thelean",
+    "value": {
+	  "default" : [
+		"Death will find its way to you!",
+		"Get back here and face death!",
+		"Flee, you weakling!",
+		"I'll get to you soon enough...",
+		"You'll not escape me so easily!"
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/cheerOn/thelean",
+    "value": {
+	  "default" : [
+		"Eliminate that target!",
+		"Death embrace you!",
+		"Creaton shall take you!",
+		"There is not turning back now!",
+		"Death will feast today!"
+	  ]
+    }
+  },
+  
+  
+  
+  //AEGI DIALOGUE
+  {
+    "op": "add",
+    "path": "/reattack/aegi",
+    "value": {
+	  "default" : [
+		"I found the target!",
+		"Eyes on the target!",
+		"Tango in sight!",
+		"I have a clear shot!",
+		"Engaging the target!"
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/attack/aegi",
+    "value": {
+	  "default" : [
+		"Defeat the enemy!",
+		"Not on my watch!",
+		"Got a target!",
+		"You messed up!",
+		"You'll regret this!"
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/killedTarget/aegi",
+    "value": {
+	  "default" : [
+		"Target eliminated.",
+		"Tango down!",
+		"Victorious!",
+		"That seemed to be the last.",
+		"Did my job again."
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/lostTarget/aegi",
+    "value": {
+	  "default" : [
+		"Target lost!",
+		"Seems they escaped...",
+		"The target got away.",
+		"I should pay more attention next time...",
+		"The enemy got away."
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/outOfSight/aegi",
+    "value": {
+	  "default" : [
+		"I lost the target!",
+		"I don't have eyes on the target!",
+		"Sweep the area!",
+		"Don't let them get away!",
+		"I can't see the target!"
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/cantReach/aegi",
+    "value": {
+	  "default" : [
+		"I can't get up there!",
+		"Target is out of range!",
+		"I can't reach the target!",
+		"Can anyone reach the target?",
+		"I need to find another route!"
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/cheerOn/aegi",
+    "value": {
+	  "default" : [
+		"Get them!",
+		"Don't let up now!",
+		"Push onward!",
+		"Push for the final strike!",
+		"Just a little longer!"
+	  ]
+    }
+  }
 ]

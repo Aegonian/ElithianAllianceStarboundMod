@@ -7,8 +7,8 @@
   "scriptConfig" : {
     "uniqueId" : "ao-vanguardrecruiter",
 	
-	"offeredQuests" : [ "avikangunrangeunlock" ],
-	"turnInQuests" : [ "avikangunrangeunlock" ],
+	"offeredQuests" : [ "avikangunrangeunlock", "avikanmechunlock" ],
+	"turnInQuests" : [ "avikangunrangeunlock", "avikanmechunlock" ],
   
     "dialog" : {
 	  "converse" : {

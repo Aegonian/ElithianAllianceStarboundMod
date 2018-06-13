@@ -492,7 +492,59 @@
 
       "skyParameters" : {
 	  "dayLength" : 10000,
-      "surfaceLevel" : 400,
+      "surfaceLevel" : 200,
+      "spaceLevel" : 3000,
+      "seed" : -5288806180628666923,
+	  
+	  "skyType" : "atmospheric",
+      "skyColoring" : {
+        "mainColor" : [255, 255, 255],
+
+        "morningColors" : [ [115, 224, 255], [255, 255, 255] ],
+        "dayColors" : [ [115, 224, 255], [255, 255, 255] ],
+        "eveningColors" : [ [115, 224, 255], [255, 255, 255] ],
+        "nightColors" : [ [115, 224, 255], [255, 255, 255] ],
+
+        "morningLightColor" : [200, 200, 200],
+        "dayLightColor" : [200, 200, 200],
+        "eveningLightColor" : [200, 200, 200],
+        "nightLightColor" : [200, 200, 200]
+      },
+	  
+      "planet" : {
+        "pos" : [ 0.00538729, 0.46961 ],
+        "layers" : [ {
+          "scale" : 0.15,
+          "image" : "/celestial/system/gas_giant/gas_giant_base.png?hueshift=30"
+        }, {
+          "scale" : 0.15,
+          "image" : "/celestial/system/gas_giant/gas_giant_clouds_0.png?hueshift=30?addmask=/celestial/system/gas_giant/gas_giant_dynamics/2.png+/celestial/system/gas_giant/gas_giant_dynamics/23.png"
+        }, {
+          "scale" : 0.15,
+          "image" : "/celestial/system/gas_giant/gas_giant_clouds_1.png?hueshift=30?addmask=/celestial/system/gas_giant/gas_giant_dynamics/28.png+/celestial/system/gas_giant/gas_giant_dynamics/23.png"
+        }, {
+          "scale" : 0.15,
+          "image" : "/celestial/system/gas_giant/shadows/9.png"
+        } ]
+      },
+      "horizonImages" : [ ]
+      }
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/vanguardmechunlock",
+    "value" : {
+      "type" : "FloatingDungeon",
+      "dungeonWorld" : "vanguardmechunlock",
+      "seed" : 4321,
+      "spawningEnabled" : false,
+	  "beamUpRule" : "AnywhereWithWarning",
+      "disableDeathDrops" : true,
+
+      "skyParameters" : {
+	  "dayLength" : 10000,
+      "surfaceLevel" : 200,
       "spaceLevel" : 3000,
       "seed" : -5288806180628666923,
 	  

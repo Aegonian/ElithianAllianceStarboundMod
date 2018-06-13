@@ -1,0 +1,27 @@
+{
+  "name": "guardT2_aegi",
+  "priority": 8,
+
+  "colonyTagCriteria": {
+    "light": 1,
+    "door": 1,
+    "alliance": 8,
+    "combat": 8,
+    "alliancetier2": 2
+  },
+
+  "tenants": [
+    {
+      "spawn": "npc",
+      "species": "aegi",
+      "level": 2,
+      "type": "tenantaegiguardtier2",
+      "overrides": {}
+     }
+   ],
+
+  "rent": {
+    "periodRange": [900.0, 1800.0],
+    "pool": "allianceGuardGift"
+  }
+}

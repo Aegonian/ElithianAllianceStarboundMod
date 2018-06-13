@@ -173,9 +173,52 @@
   "scripts" : [ "/objects/scripts/thea-rotatingdoor.lua" ],
   "scriptDelta" : 1,
   
+  //General Settings
   "closedRotation" : 0,
-  "openRotation" : 90,	//NOTE: Relative to closedRotation
+  "openRotation" : 90,			//NOTE: Relative to closedRotation
   "openTime" : 3.0,
+  "removeLiquids" : true,		//If set to true, the door will actively remove liquids from its collision spaces
+  
+  //Debug Settings (must be set - also used in dynamic spaces and damageSource calculations!)
+  "hingePoint" : [1.0, 12.0],	//Position relative to object origin that acts as rotational center of the door (separate from animation file's hingePoint!)
+  "doorVector" : [0, -12],		//Vector of the door in closed position. Determines the length and starting rotation of the door
+  
+  //DamageSource Settings (allows the door to push creatures out of the way)
+  "useDamageSource" : false,
+  "doorPoly" : [				//Poly for the door collision, relative to its hinge position. Must be four points
+	[-1, 0],
+	[1, 0],
+	[1, -12],
+	[-1, -12]
+  ],
+  "doorWidth" : 2, //Total width of the door. Required for poly correction when the object is flipped
+  
+  //Dynamic Spaces Settings (allows for fully dynamic object spaces while rotating)
+  "useDynamicSpaces" : true,
+  "doorSpaces" : [				//Spaces occupied by the door, relative to its hinge position. Used to calculate dynamic spaces
+	[-0.5, -0.5], [0.5, -0.5],
+	[-0.5, -1.5], [0.5, -1.5],
+	[-0.5, -2.5], [0.5, -2.5],
+	[-0.5, -3.5], [0.5, -3.5],
+	[-0.5, -4.5], [0.5, -4.5],
+	[-0.5, -5.5], [0.5, -5.5],
+	[-0.5, -6.5], [0.5, -6.5],
+	[-0.5, -7.5], [0.5, -7.5],
+	[-0.5, -8.5], [0.5, -8.5],
+	[-0.5, -9.5], [0.5, -9.5],
+	[-0.5, -10.5], [0.5, -10.5],
+	[-0.5, -11.5], [0.5, -11.5]
+  ],
+  
+  "damageSource" : {
+	"poly" : [ [0, 0], [0,1] ],
+	"damage" : 0,
+	"knockback" : 40,
+
+	"teamType" : "indiscriminate",
+	"damageSourceKind" : "hidden",
+	"damageRepeatTimeout" : 0.05
+  },
 
   "animation" : "avikancargodoor.animation",
   "animationParts" : {
@@ -186,5 +229,7 @@
   "animationPosition" : [52, 52],
 
   "inputNodes" : [ [0, 0] ],
-  "flippedInputNodes"  : [ [0, 0] ]
+  "flippedInputNodes"  : [ [0, 0] ],
+  "outputNodes" : [ [1, 11], [1, 12] ],
+  "flippedOutputNodes"  : [ [1, 11], [1, 12] ]
 }

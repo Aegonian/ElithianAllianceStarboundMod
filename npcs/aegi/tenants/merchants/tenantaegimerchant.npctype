@@ -1,0 +1,26 @@
+{
+  "type" : "tenantaegimerchant",
+  "baseType" : "aegivillagemerchant",
+  
+  "dropPools" : [],
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "tenant", "merchant"],
+      "enableParticipation" : true,
+      
+      "graduation" : {
+        "nextNpcType" : [
+          [1, "crewmemberaegitailor"]
+        ]
+      }
+    },
+	
+	"merchant" : {
+	  "categories" : {
+		"aegi" : [ "aegicolony" ]
+	  },
+	  "numItems" : 8
+    }
+  }
+}

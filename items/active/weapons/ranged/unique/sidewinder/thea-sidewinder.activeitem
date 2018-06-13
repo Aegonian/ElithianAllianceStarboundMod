@@ -27,7 +27,19 @@
     "sounds" : {
       "fire" : [ "/sfx/gun/sidewinder_fire.ogg" ],
 	  "reload" : [ "/sfx/gun/reload/sidewinder_reload2.ogg" ]
-    }
+    },
+	"particleEmitters" : {
+	  "reload" : {
+		"transformationGroups" : ["muzzle"],
+		"offsetRegion" : [-0.75, 0, -0.75, 0],
+		"particles" : [
+          { "particle" : "thea-discardedbulletlight" },
+          { "particle" : "thea-discardedbulletlight" },
+          { "particle" : "thea-discardedbulletlight" },
+          { "particle" : "thea-discardedbulletlight" }
+        ]
+	  }
+	}
   },
 
   "baseOffset" : [0.66, 0.0],

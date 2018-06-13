@@ -1,0 +1,55 @@
+{
+  "type" : "tenantaegiguardtier4",
+  "baseType" : "thea-friendlyguard",
+  
+  "dropPools" : [],
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "tenant", "guard"],
+      "enableParticipation" : true,
+
+      // Every 30 seconds, decide whether to generate a quest and if so, spend
+      // the rest of the 30s window trying to generate it.
+      "timeLimit" : 30,
+
+      // Don't generate new quests if there are already more than <nearbyQuestLimit>
+      // questmanager stagehands nearby, within a <nearbyQuestRange> tile range.
+      "nearbyQuestLimit" : 2,
+      "nearbyQuestRange" : 50,
+      "questCountRange" : [1, 4],
+      
+      "graduation" : {
+        "nextNpcType" : [
+          [1, "crewmemberaegimercenary"],
+		  [1, "crewmemberaegisoldier"]
+        ]
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "aegi-tier4head", "data" : { "colorIndex" : 8 } } ],
+            "chest" : [ { "name" : "aegi-tier4chest", "data" : { "colorIndex" : 8 } } ],
+            "legs" : [ { "name" : "aegi-tier4legs", "data" : { "colorIndex" : 8 } } ],
+            "primary" : [
+			  "thea-tier4rifle",
+			  "thea-tier4shotgun",
+			  "thea-tier4sniper"
+			],
+			"sheathedprimary" : [
+			  "thea-tier4broadsword",
+			  "thea-tier4shortsword"
+			],
+			"alt" : [
+			  "allianceshield"
+			]
+          }
+        ] ]
+    ]
+  }
+}

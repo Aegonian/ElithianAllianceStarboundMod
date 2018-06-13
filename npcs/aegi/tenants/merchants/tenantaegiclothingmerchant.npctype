@@ -1,0 +1,39 @@
+{
+  "type" : "tenantaegiclothingmerchant",
+  "baseType" : "aegivillagemerchant",
+  
+  "dropPools" : [],
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "tenant", "merchant"],
+      "enableParticipation" : true,
+      
+      "graduation" : {
+        "nextNpcType" : [
+          [1, "crewmemberaegitailor"]
+        ]
+      }
+    },
+	
+	"merchant" : {
+	  "categories" : {
+		"aegi" : [ "aegicolonyclothing" ]
+	  },
+	  "numItems" : 16
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "aegi-fedora", "data" : { "colorIndex" : 9 } } ],
+            "chest" : [ { "name" : "aegi-storeclerkchest", "data" : { "colorIndex" : 9 } } ],
+            "legs" : [ { "name" : "aegi-storeclerklegs", "data" : { "colorIndex" : 9 } } ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":174,
+ "tilecount":176,
  "tileheight":128,
  "tileproperties":
     {
@@ -680,6 +680,22 @@
          "imagePositionY":"0",
          "object":"alliancespacecontainer",
          "tilesetDirection":"left"
+        },
+     "174":
+        {
+         "\/\/shortdescription":"Alliance Weapon Locker",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"allianceweaponcabinet",
+         "tilesetDirection":"right"
+        },
+     "175":
+        {
+         "\/\/shortdescription":"Alliance Drone",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"alliancedroneobject",
+         "tilesetDirection":"right"
         },
      "18":
         {
@@ -1739,6 +1755,14 @@
      "173":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancespacecontainerleft.png"
+        },
+     "174":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/allianceweaponcabinet.png"
+        },
+     "175":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancedrone.png"
         },
      "18":
         {
