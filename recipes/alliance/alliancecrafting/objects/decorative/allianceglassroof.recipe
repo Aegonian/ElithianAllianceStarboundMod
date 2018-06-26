@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "allianceglassitem", "count" : 6 }
+  ],
+  "output" : {
+    "item" : "allianceglassroof",
+    "count" : 1
+  },
+  "groups" : [ "alliancecrafting", "furniture", "all" ]
+}

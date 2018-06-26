@@ -56,5 +56,16 @@
           }
         ] ]
     ]
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+	  "xanafianStatusImmunity" : {
+		"baseValue" : 1.0
+	  },
+	  "bleedingImmunity" : {
+		"baseValue" : 1.0
+	  }
+    }
   }
 }

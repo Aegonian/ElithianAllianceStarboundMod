@@ -33,7 +33,7 @@
          "name":"objects",
          "objects":[
                 {
-                 "gid":222,
+                 "gid":238,
                  "height":8,
                  "id":210,
                  "name":"",
@@ -49,7 +49,7 @@
                  "y":416
                 }, 
                 {
-                 "gid":201,
+                 "gid":217,
                  "height":40,
                  "id":216,
                  "name":"",
@@ -65,7 +65,7 @@
                  "y":448
                 }, 
                 {
-                 "gid":201,
+                 "gid":217,
                  "height":40,
                  "id":217,
                  "name":"",
@@ -113,7 +113,7 @@
                  "y":464
                 }, 
                 {
-                 "gid":241,
+                 "gid":257,
                  "height":32,
                  "id":255,
                  "name":"",
@@ -129,7 +129,7 @@
                  "y":392
                 }, 
                 {
-                 "gid":240,
+                 "gid":256,
                  "height":40,
                  "id":260,
                  "name":"",
@@ -145,7 +145,7 @@
                  "y":448
                 }, 
                 {
-                 "gid":240,
+                 "gid":256,
                  "height":40,
                  "id":261,
                  "name":"",
@@ -161,7 +161,7 @@
                  "y":448
                 }, 
                 {
-                 "gid":240,
+                 "gid":256,
                  "height":40,
                  "id":262,
                  "name":"",
@@ -177,7 +177,7 @@
                  "y":448
                 }, 
                 {
-                 "gid":240,
+                 "gid":256,
                  "height":40,
                  "id":263,
                  "name":"",
@@ -193,7 +193,7 @@
                  "y":448
                 }, 
                 {
-                 "gid":240,
+                 "gid":256,
                  "height":40,
                  "id":264,
                  "name":"",
@@ -209,7 +209,7 @@
                  "y":448
                 }, 
                 {
-                 "gid":222,
+                 "gid":238,
                  "height":8,
                  "id":265,
                  "name":"",
@@ -225,7 +225,7 @@
                  "y":416
                 }, 
                 {
-                 "gid":222,
+                 "gid":238,
                  "height":8,
                  "id":266,
                  "name":"",
@@ -241,7 +241,7 @@
                  "y":416
                 }, 
                 {
-                 "gid":222,
+                 "gid":238,
                  "height":8,
                  "id":267,
                  "name":"",
@@ -257,7 +257,7 @@
                  "y":416
                 }, 
                 {
-                 "gid":240,
+                 "gid":256,
                  "height":40,
                  "id":268,
                  "name":"",
@@ -273,7 +273,7 @@
                  "y":448
                 }, 
                 {
-                 "gid":242,
+                 "gid":258,
                  "height":16,
                  "id":269,
                  "name":"",
@@ -289,7 +289,7 @@
                  "y":448
                 }, 
                 {
-                 "gid":244,
+                 "gid":260,
                  "height":16,
                  "id":270,
                  "name":"",
@@ -305,7 +305,7 @@
                  "y":448
                 }, 
                 {
-                 "gid":244,
+                 "gid":260,
                  "height":16,
                  "id":271,
                  "name":"",
@@ -321,7 +321,7 @@
                  "y":448
                 }, 
                 {
-                 "gid":246,
+                 "gid":262,
                  "height":16,
                  "id":272,
                  "name":"",
@@ -337,7 +337,7 @@
                  "y":448
                 }, 
                 {
-                 "gid":190,
+                 "gid":206,
                  "height":24,
                  "id":275,
                  "name":"",
@@ -353,7 +353,7 @@
                  "y":448
                 }, 
                 {
-                 "gid":190,
+                 "gid":206,
                  "height":24,
                  "id":276,
                  "name":"",
@@ -369,7 +369,7 @@
                  "y":448
                 }, 
                 {
-                 "gid":132,
+                 "gid":148,
                  "height":48,
                  "id":277,
                  "name":"",
@@ -385,7 +385,7 @@
                  "y":392
                 }, 
                 {
-                 "gid":227,
+                 "gid":243,
                  "height":24,
                  "id":279,
                  "name":"",
@@ -401,7 +401,7 @@
                  "y":448
                 }, 
                 {
-                 "gid":230,
+                 "gid":246,
                  "height":16,
                  "id":280,
                  "name":"",
@@ -417,7 +417,7 @@
                  "y":448
                 }, 
                 {
-                 "gid":257,
+                 "gid":273,
                  "height":28,
                  "id":284,
                  "name":"",
@@ -433,7 +433,7 @@
                  "y":448
                 }, 
                 {
-                 "gid":231,
+                 "gid":247,
                  "height":24,
                  "id":286,
                  "name":"",
@@ -520,6 +520,22 @@
                  "width":8,
                  "x":240,
                  "y":432
+                }, 
+                {
+                 "height":8,
+                 "id":288,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"alliancedrone",
+                     "parameters":"{ \"aggressive\" : false }"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":392,
+                 "y":312
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -683,7 +699,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":288,
+ "nextobjectid":289,
  "orientation":"orthogonal",
  "properties":
     {
@@ -705,7 +721,7 @@
          "source":"..\/..\/..\/tilesets\/avikan-custom\/theamaterials.json"
         }, 
         {
-         "firstgid":132,
+         "firstgid":148,
          "source":"..\/..\/..\/tilesets\/avikan-custom\/theaobjects-alliance.json"
         }],
  "tilewidth":8,

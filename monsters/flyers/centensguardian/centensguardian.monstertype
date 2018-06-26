@@ -448,6 +448,9 @@
         "bleedingImmunity" : {
           "baseValue" : 1.0
         },
+        "stunImmunity" : {
+          "baseValue" : 1.0
+        },
 		//SHIELD STATUS EFFECT CONFIG
 		//The monster shield status effect reads these stats to determine shield health etc.
         "maxShieldAbsolute" : {

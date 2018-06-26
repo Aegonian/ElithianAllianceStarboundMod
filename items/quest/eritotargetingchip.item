@@ -1,0 +1,10 @@
+{
+  "itemName" : "eritotargetingchip",
+  "price" : 100,
+  "rarity" : "Legendary",
+  "category" : "Quest Item",
+  "inventoryIcon" : "eritotargetingchip.png",
+  "description" : "A targeting chip for small missiles.",
+  "shortdescription" : "^#BA66FF;Erito Targeting Chip^white;",
+  "itemTags" : [ "questitem" ]
+}

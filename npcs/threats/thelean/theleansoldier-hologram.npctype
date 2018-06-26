@@ -117,6 +117,37 @@
 	  },
 	  "healthRegen" : {
 		"baseValue" : 0.0
+	  },
+	  //STATUS EFFECT IMMUNITIES
+	  "fireStatusImmunity" : {
+		"baseValue" : 0.0
+	  },
+	  "iceStatusImmunity" : {
+		"baseValue" : 0.0
+	  },
+	  "electricStatusImmunity" : {
+		"baseValue" : 0.0
+	  },
+	  "poisonStatusImmunity" : {
+		"baseValue" : 1.0
+	  },
+	  "linerifleStatusImmunity" : {
+		"baseValue" : 0.0
+	  },
+	  "centensianenergyStatusImmunity" : {
+		"baseValue" : 0.0
+	  },
+	  "xanafianStatusImmunity" : {
+		"baseValue" : 1.0
+	  },
+	  "akkimariacidStatusImmunity" : {
+		"baseValue" : 0.0
+	  },
+	  "bleedingImmunity" : {
+		"baseValue" : 1.0
+	  },
+	  "stunImmunity" : {
+		"baseValue" : 0.0
 	  }
     }
   }

@@ -1,0 +1,151 @@
+{
+  "itemName" : "thea-nauroo",
+  "price" : 1500,
+  "inventoryIcon" : "thea-nauroo.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;A dual-barrel rocket launcher built to impress.",
+  "manufacturer" : "^gray;Erito Security^reset;",
+  "shortdescription" : "^orange;Nauroo^white;",
+  "level" : 6,
+  "tooltipKind" : "thea-gun-unique-mf",
+  "category" : "Rocket Launcher",
+  "itemTags" : ["weapon","ranged","rocketlauncher","alliance","theaUnique"],
+  "twoHanded" : true,
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "thea-nauroo" },
+  
+  //"meritTokenValue" : 50,
+  
+  "cursor" : "/cursors/thea-squarereticle.cursor",
+  
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "thea-nauroo.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/thea-invisiblemuzzle.png"
+  },
+  "animationCustom" : {
+    "particleEmitters" : {
+      "muzzleFlash" : {
+        "particles" : [
+          { "particle" : "rocketbarrelpuff", "offset" : [0.0, 0.0] },
+		  { "particle" : "missilepodsmoke", "offset" : [0.1, -0.5] }
+        ]
+      }
+    },
+	"sounds" : {
+      "fire" : [ "/sfx/gun/rocket2.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.0, 0.375],
+  "muzzleOffset" : [2.0, 0.25],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/multibarrelshot/multibarrelshot.lua"],
+    "class" : "MultiBarrelShot",
+
+    "fireTime" : 0.85,
+    "baseDps" : 10.5,
+    "energyUsage" : 40,
+    "inaccuracy" : 0.0,
+	
+	"primaryFiringOffset" : [2.0, 0.875],
+	"secondaryFiringOffset" : [2.0, 0.375],
+
+    "projectileCount" : 2,
+    "fireType" : "auto",
+
+    "projectileTypePerBarrel" : [ "nauroorocket", "nauroorocket2" ],
+    "projectileParameters" : {},
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.35,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "altAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/multibarrelshot/multibarrelshot.lua"],
+    "class" : "MultiBarrelShot",
+	"name" : "Precision Rockets",
+
+    "fireTime" : 1.25,
+    "baseDps" : 8.5,
+    "energyUsage" : 50,
+    "inaccuracy" : 0.0,
+	
+	"primaryFiringOffset" : [2.0, 0.875],
+	"secondaryFiringOffset" : [2.0, 0.375],
+
+    "projectileCount" : 2,
+    "fireType" : "auto",
+
+    "projectileType" : "nauroorocket3",
+    "projectileParameters" : {},
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.35,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+}

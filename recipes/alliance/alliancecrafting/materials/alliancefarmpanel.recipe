@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "alliancemetal", "count" : 1 },
+	{ "item" : "dirtmaterial", "count" : 10 }
+  ],
+  "output" : {
+    "item" : "alliancefarmpanel",
+    "count" : 20
+  },
+  "duration" : 0.5,
+  "groups"  : [ "alliancecrafting", "materials", "all" ]
+}

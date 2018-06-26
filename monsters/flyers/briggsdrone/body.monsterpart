@@ -1,0 +1,9 @@
+{
+  "name" : "briggsdrone",
+  "category" : "briggsdrone",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "briggsdrone.png"
+  }
+}

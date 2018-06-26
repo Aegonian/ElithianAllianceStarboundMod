@@ -1,0 +1,145 @@
+{
+  "itemName" : "thea-rimgrenadelauncher1-npc",
+  "price" : 500,
+  "inventoryIcon" : "thea-rimgrenadelauncher1icon.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A grenade launcher produced somewhere in the Rim.",
+  "manufacturer" : "^gray;The Rim^reset;",
+  "shortdescription" : "Sledger RM22 (NPC)",
+  "level" : 6,
+  "fixedLevel" : false,
+  "tooltipKind" : "thea-gun-mf",
+  "category" : "Grenade Launcher",
+  "itemTags" : ["weapon","ranged","bow","alliance","rimdweller","allianceUpgradeable"],
+  "twoHanded" : true,
+  
+  "animation" : "/items/active/weapons/ranged/animations/thea-reloadgrenadelauncher.animation",
+  "animationParts" : {
+    "middle" : "thea-rimgrenadelauncher1.png",
+    "middleFullbright" : "thea-rimgrenadelauncher1lights.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+		    "offset" : [0.625, 0.125]
+		  }
+		}
+      }
+    },
+    "particleEmitters" : {
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/grenade2.ogg" ],
+      "reload" : [ "/sfx/gun/reload/thea_grenadelauncher_reload.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.625, 0.125],
+  "muzzleOffset" : [1.75, 0.125],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-crossbow/thea-crossbow.lua"],
+    "class" : "TheaCrossBow",
+
+    "baseDamage" : 10,
+    "baseEnergyUsage" : 30,
+    "inaccuracy" : 0.020,
+	
+	"cooldownTime" : 0.9,
+	
+	"useQuiverDamageBonus" : false,
+
+    "projectileType" : "alliancegrenade2",
+	"projectileCount" : 1,
+	"projectileParameters" : {
+	  "speed" : 50
+	},
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0.35,
+        "armRotation" : 4,
+        "weaponRotation" : 5,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.3,
+        "armRotation" : 2,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+	}
+  },
+
+  "altAbility" : {
+    "name" : "Incendiary Grenade",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-crossbow/thea-crossbow.lua"],
+    "class" : "TheaCrossBow",
+
+    "baseDamage" : 8,
+    "baseEnergyUsage" : 45,
+    "inaccuracy" : 0.020,
+	
+	"cooldownTime" : 0.9,
+	
+	"useQuiverDamageBonus" : false,
+
+    "projectileType" : "alliancenapalmgrenade",
+	"projectileCount" : 1,
+	"projectileParameters" : {
+	  "speed" : 50
+	},
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0.35,
+        "armRotation" : 4,
+        "weaponRotation" : 5,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.3,
+        "armRotation" : 2,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+	}
+  },
+
+  "builder" : "/items/buildscripts/thea-buildreloadweapon-mf-attachment.lua"
+}

@@ -1,0 +1,83 @@
+{
+  "type" : "aegirimsoldier",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "aegiRimSoldierDeathTreasure" ],
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+	  //Crewmember Behaviour
+      "friendlyNpcTypes" : ["crewmemberaegirimdweller"]
+    },
+	
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "You've come to the wrong neighborhood!",
+            "The Rim is ours!",
+            "You're in trouble now!",
+            "Stay out of the Rim!",
+            "The Rim doesn't want you!"
+          ],
+          "aegi" : [
+            "You've come to the wrong neighborhood!",
+            "The Rim is ours!",
+            "Your Alliance has no power in the Rim!",
+            "Stay out of the Rim!",
+            "The Rim doesn't want you!"
+          ],
+          "trink" : [
+            "You've come to the wrong neighborhood!",
+            "The Rim is ours!",
+            "Your Alliance has no power in the Rim!",
+            "Stay out of the Rim!",
+            "The Rim doesn't want you!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0,
+	    [
+          {
+            "head" : [
+			  { "name" : "aegi-rimsoldierhead" }
+			],
+            "chest" : [
+			  { "name" : "aegi-rimsoldierchest" }
+			],
+            "legs" : [
+			  { "name" : "aegi-rimsoldierlegs" }
+			],
+            "primary" : [
+			  //"thea-rimshotgun1-npc",
+			  //"thea-rimlauncher1",
+			  "thea-rimgrenadelauncher1-npc"
+            ],
+            "sheathedprimary" : [
+			  "thea-rimchainsaw-npc"
+            ]
+          }
+        ]
+	  ]
+    ]
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 250.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.5
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

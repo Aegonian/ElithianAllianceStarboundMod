@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":97,
+ "tilecount":101,
  "tileheight":8,
  "tileproperties":
     {
@@ -29,6 +29,11 @@
          "\/\/name":"avikanheavypipe",
          "\/\/shortdescription":"Heavy Avikan Pipe",
          "material":"avikanheavypipe"
+        },
+     "100":
+        {
+         "\/\/shortdescription":"Rim Stairs",
+         "material":"rimdwellerstairsplatform"
         },
      "11":
         {
@@ -579,6 +584,21 @@
         {
          "\/\/shortdescription":"Glowing Centensian Panel (vert)",
          "material":"centensvertglowpanel2"
+        },
+     "97":
+        {
+         "\/\/shortdescription":"Alliance Backpanel",
+         "material":"alliancebackpanel"
+        },
+     "98":
+        {
+         "\/\/shortdescription":"Rim Hull Panel",
+         "material":"rimdwellerhullpanel"
+        },
+     "99":
+        {
+         "\/\/shortdescription":"Rim Panel",
+         "material":"rimdwellerpanel"
         }
     },
  "tiles":
@@ -594,6 +614,10 @@
      "10":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/avikanheavypipe.png"
+        },
+     "100":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/rimdwellerstairsplatform.png"
         },
      "11":
         {
@@ -970,6 +994,18 @@
      "96":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/centensvertglowpanel2.png"
+        },
+     "97":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/alliancebackpanel.png"
+        },
+     "98":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/rimdwellerhullpanel.png"
+        },
+     "99":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/rimdwellerpanel.png"
         }
     },
  "tilewidth":8

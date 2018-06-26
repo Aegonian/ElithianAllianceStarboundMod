@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":176,
+ "tilecount":178,
  "tileheight":128,
  "tileproperties":
     {
@@ -695,6 +695,22 @@
          "imagePositionX":"-16",
          "imagePositionY":"0",
          "object":"alliancedroneobject",
+         "tilesetDirection":"right"
+        },
+     "176":
+        {
+         "\/\/shortdescription":"Rim Blast Door",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"rimblastdoor",
+         "tilesetDirection":"right"
+        },
+     "177":
+        {
+         "\/\/shortdescription":"Rim Sliding Door",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"rimslidingdoor",
          "tilesetDirection":"right"
         },
      "18":
@@ -1763,6 +1779,14 @@
      "175":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancedrone.png"
+        },
+     "176":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/rimblastdoor.png"
+        },
+     "177":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/rimslidingdoor.png"
         },
      "18":
         {

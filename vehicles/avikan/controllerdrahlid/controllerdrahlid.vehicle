@@ -1,0 +1,44 @@
+{
+  "name" : "controllerdrahlid",
+  "script" : "/vehicles/thea-remotecontroldrone.lua",
+  "boundBox" : [-1, -1, 1, 1],
+  "slaveControlTimeout" : 2.0,
+  "slaveControlHeartbeat" : 1.0,
+  "canBeHit" : true,
+  "animation" : "controllerdrahlid.animation",
+
+  //GENERAL SETTINGS
+  "edgeOfRangeDistance" : 55,	//Minimum distance to owner for the antenna to start blinking rapidly. Should match configured value in controller config
+  "signalLossTimout" : 0.5,		//Time before loss of signal is considered final. Used to prevent minor lag from messing with the antenna animation
+
+  //HEALTH AND DAMAGE STATS
+  "materialKind" : "robotic",
+  "protection" : 50,
+  "maxHealth" : 75,
+  "damagedThreshold" : 45,
+  "wreckedThreshold" : 20,
+  "explosionProjectile" : "avikanminidroneexplosion",
+  "explosionProjectileConfig" : {
+    "power" : 8
+  },
+
+  //COMBAT SETTINGS
+  "fireMode" : "none",
+  
+  //MOVEMENT SETTINGS
+  "flyingSpeed" : 15,
+  "flyControlForce" : 65,
+  "minimumTargetDistance" : 0.2, //Only move the vehicle if it is at least this far from the target position
+
+  //MOVEMENT CONTROLLER SETTINGS
+  "movementSettings" : {
+    "collisionPoly" : [ [0.26, 0.625],  [0.625, 0.26], [0.625, -0.26], [0.26, -0.625], [-0.26, -0.625], [-0.625, -0.26], [-0.625, 0.26], [-0.26, 0.625] ],
+    "mass" : 1.0,
+    "airFriction" : 3.5,
+    "liquidFriction" : 10.0,
+    "groundFriction" : 10.0,
+    "ignorePlatformCollision" : true,
+    "gravityEnabled" : false,
+    "collisionEnabled" : true
+  }
+}

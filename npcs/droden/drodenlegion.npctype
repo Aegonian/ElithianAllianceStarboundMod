@@ -106,7 +106,14 @@
       },
       "healthRegen" : {
         "baseValue" : 0.0
-      }
+      },
+	  //STATUS EFFECT IMMUNITIES
+	  "xanafianStatusImmunity" : {
+		"baseValue" : 1.0
+	  },
+	  "bleedingImmunity" : {
+		"baseValue" : 1.0
+	  }
     }
   }
 }

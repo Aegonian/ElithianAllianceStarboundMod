@@ -1,0 +1,28 @@
+{
+  "materialId" : 30166,
+  "materialName" : "alliancebackpanel",
+  "particleColor" : [97, 97, 97, 255],
+  "itemDrop" : "alliancebackpanel", 
+  "shortdescription" : "Alliance Backpanel",
+  
+  "description" : "A metal wall panel.",
+  "glitchDescription" : "Observation. A wall panel.",
+  "floranDescription" : "Floran not interessted in boring panelsss.",
+  "novakidDescription" : "Metal panels for buildin' interior walls.",
+  
+  "drodenDescription" : "Analysis complete. Metal wall panel.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "alliancebackpanel.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 30
+  }
+}

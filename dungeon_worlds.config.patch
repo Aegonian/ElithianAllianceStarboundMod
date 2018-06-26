@@ -79,6 +79,25 @@
 	  "biome" : "space"
     }
   },
+  {
+    "op" : "add",
+    "path" : "/rimdwellerhostileship",
+    "value" : {
+	  "primaryDungeon" : "rimdwellerhostileship",
+	  "threatLevel" : 3,
+	  "gravity" : 0,
+	  "airless" : true,
+	  "worldSize" : [1300, 200],
+	  "dungeonBaseHeight" : 150,
+	  "dungeonSurfaceHeight" : 150,
+	  "ambientLightLevel" : [32, 32, 32],
+	  "ambientNoises" : "/sfx/environmental/space_loop4.ogg",
+	  "musicTrack" : "/music/lava-exploration1.ogg",
+	  "environmentStatusEffects" : ["biomeairless", "dontstarve"],
+	  "worldEdgeForceRegions" : "TopAndBottom",
+	  "biome" : "space"
+    }
+  },
   //------------------------ TEMPORARY LOCATIONS ------------------------
   {
     "op" : "add",

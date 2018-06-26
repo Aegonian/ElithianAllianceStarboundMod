@@ -23,6 +23,9 @@ function MultiBarrelShot:update(dt, fireMode, shiftHeld)
 
   self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
 
+  world.debugPoint(vec2.add(mcontroller.position(), activeItem.handPosition(self.firePosition1)), "orange")
+  world.debugPoint(vec2.add(mcontroller.position(), activeItem.handPosition(self.firePosition2)), "orange")
+  
   if animator.animationState("firing") ~= "fire" then
     animator.setLightActive("muzzleFlash", false)
   end
@@ -104,13 +107,6 @@ function MultiBarrelShot:fireProjectile(projectileType, projectileParams, inaccu
   params.power = self:damagePerShot()
   params.powerMultiplier = activeItem.ownerPowerMultiplier()
   params.speed = util.randomInRange(params.speed)
-
-  if not projectileType then
-    projectileType = self.projectileType
-  end
-  if type(projectileType) == "table" then
-    projectileType = projectileType[math.random(#projectileType)]
-  end
   
   local projectileId = 0
   for i = 1, (projectileCount or self.projectileCount) do
@@ -118,6 +114,17 @@ function MultiBarrelShot:fireProjectile(projectileType, projectileParams, inaccu
       params.timeToLive = util.randomInRange(params.timeToLive)
     end
 
+	if self.projectileTypePerBarrel then
+	  projectileType = self.projectileTypePerBarrel[self.currentBarrel]
+	else
+	  if not projectileType then
+		projectileType = self.projectileType
+	  end
+	  if type(projectileType) == "table" then
+		projectileType = projectileType[math.random(#projectileType)]
+	  end
+	end
+	
     projectileId = world.spawnProjectile(
         projectileType,
         firePosition or self:firePosition(),

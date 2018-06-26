@@ -97,6 +97,29 @@
 	}
   },
   
+  //HOSTILE SHIPS
+  {
+    "op": "add",
+    "path": "/rimdwellerhostileship",
+    "value": {
+	  "warpAction" : "InstanceWorld:rimdwellerhostileship",
+	  "skyParameters" : {
+		"seed" : 0,
+		"horizonClouds" : false,
+		"horizonImages" : [ { "left": "/celestial/system/ships/shiphorizonleft.png", "right": "/celestial/system/ships/rimdwellershiphorizonright.png" } ]
+	  },
+	  "moving" : true,
+	  "speed" : 15.0,
+	  "orbitRange" : [1, 1],
+	  "lifeTime" : [1500, 2100],
+	  "parameters" : {
+		"icon" : "/celestial/system/ships/rimdwellernpcship.png",
+		"displayName" : "Hostile Rimdweller Ship",
+		"description" : "A faint signal coming from an unregistered ship has been detected. Whoever's flying the ship probably doesn't want visitors."
+	  }
+	}
+  },
+  
   //==========================================================================================================
   //============================================ STATIC LOCATIONS ============================================
   //==========================================================================================================
@@ -113,6 +136,7 @@
     "path": "/thea-peculiaranomaly",
 	"value": {
 	  "warpAction" : "InstanceWorld:thea-spaceencounter",
+	  "threatLevel" : 6,
 	  "skyParameters" : {
 		"seed" : 0,
 		"horizonClouds" : false,

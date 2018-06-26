@@ -13,7 +13,7 @@
   "ouchNoises" : [ "/sfx/humanoid/floranhurt_female3.ogg", "/sfx/humanoid/floranhurt_female3.ogg" ],
   "charGenTextLabels" : [ "SKIN COLOR", "N/A", "SHIRT", "PANTS", "HEAD SHAPE", "FLAP COLOR", "SHIRT COLOR", "PANTS COLOR", "THELEAN", "PERSONALITY" ],
   "skull" : "/humanoid/thelean/dead.png",
-  "effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=79ff4bFF?replace=31a6ffFF=00c901FF",
+  "effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=FF7272FF?replace=31a6ffFF=FF0000FF",
   "defaultBlueprints" : {
     "tier1" : [
 	

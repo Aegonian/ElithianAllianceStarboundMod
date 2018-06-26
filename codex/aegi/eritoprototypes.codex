@@ -1,0 +1,20 @@
+{
+  "id" : "eritoprototypes",
+  "species" : "aegi",
+  "title" : "Nauroo Development Notes",
+  "description" : "The abandoned notes of an Erito Security engineer.",
+  "icon" : "eritofile.png",
+  "contentPages" : [
+
+"Jaren Erito - Log Entry 73
+
+I've finally completed the blueprints for my latest weapon, the Nauroo. I faced many issues in designing this dual-barrel rocket launcher, but with some help, the plans have finally been completed. My brother designed cheaply-produced targeting chips for the missiles, allowing the user to fire and forget - no laser guidance needed.",
+
+"I'll present the blueprints to my father in a few days, when he returns from his trip to Hyzolia. I think - and hope - he'll be pleased. In the meantime, I think I may start working on my next weapon. I had a concept for a plasma-infused projectile that releases some of its energy whenever it hits a hard surface. If I can get it to work with the ricocheting projectiles made by my brother, I think this weapon could cause quite the mayhem on the battlefield."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

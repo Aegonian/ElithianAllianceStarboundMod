@@ -1,0 +1,28 @@
+{
+  "materialId" : 30165,
+  "materialName" : "rimdwellerpanel",
+  "particleColor" : [144, 134, 125, 255],
+  "itemDrop" : "rimdwellerpanel", 
+  "shortdescription" : "Rim Panel",
+  
+  "description" : "Rusty old metal panels.",
+  "glitchDescription" : "Displeased. Someone should polish this plating.",
+  "floranDescription" : "Russsty metal platess are good for back rubsss.",
+  "novakidDescription" : "A metal panel that needs polishin'.",
+  
+  "drodenDescription" : "Analysis complete. Metal panel. Moderate deterioration detected",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "rimdwellerpanel.png",
+    "variants" : 4,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 50
+  }
+}

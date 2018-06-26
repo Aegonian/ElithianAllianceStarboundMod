@@ -6,5 +6,9 @@
   { "op" : "add",
 	"path" : "/storeInventory/deeds/-",
 	"value" : "trinkcolonydeed"
+  },
+  { "op" : "add",
+	"path" : "/storeInventory/deeds/-",
+	"value" : "alliancecolonydeed"
   }
 ]

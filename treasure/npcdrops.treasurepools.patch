@@ -331,6 +331,7 @@
     }]
    ]
   },
+  //RIMDWELLERS
   {"op" : "add",
    "path" : "/aegiRimDwellerDeathTreasure",
    "value" : [
@@ -338,6 +339,23 @@
       "pool" : [
         {"weight" : 0.6, "pool" : "money"},
         {"weight" : 0.05, "pool" : "alliancerimdwellerweapons"},
+        {"weight" : 0.35, "item" : "alliancemetal"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+   ]
+  },
+  {"op" : "add",
+   "path" : "/aegiRimSoldierDeathTreasure",
+   "value" : [
+	[0, {
+      "pool" : [
+        {"weight" : 0.6, "pool" : "money"},
+        {"weight" : 0.05, "pool" : "alliancerimdwellerweapons2"},
         {"weight" : 0.35, "item" : "alliancemetal"}
       ],
       "poolRounds" : [

@@ -102,7 +102,7 @@ function update(dt, fireMode, shiftHeld)
   
   --If a vehicle has been deployed, and we press alt fire, try to store the vehicle again
   if config.getParameter("filled") == false and fireMode == "alt" and self.consumePromise == nil then
-	local vehicleId = world.entityQuery(activeItem.ownerAimPosition(), 0, {includedTypes = {"vehicle"}, order = "nearest"})[1]
+	local vehicleId = world.entityQuery(activeItem.ownerAimPosition(), config.getParameter("pickUpRange") or 0, {includedTypes = {"vehicle"}, order = "nearest"})[1]
 	if vehicleId then
       self.consumePromise = world.sendEntityMessage(vehicleId, "storeVehicle", config.getParameter("key"))
     end

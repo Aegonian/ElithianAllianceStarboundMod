@@ -20,7 +20,7 @@
             "Stay out of the Rim!",
             "The Rim doesn't want you!"
           ],
-          "aehi" : [
+          "aegi" : [
             "You've come to the wrong neighborhood!",
             "The Rim is ours!",
             "Your Alliance has no power in the Rim!",
@@ -59,8 +59,7 @@
 			  "thea-rimrifle2",
 			  "thea-rimsniper1",
 			  "thea-rimshotgun1-npc",
-			  "thea-rimpistol1",
-			  "thea-rimlauncher1"
+			  "thea-rimpistol1"
             ],
             "sheathedprimary" : [
 			  "thea-rimchainsaw-npc"

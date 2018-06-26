@@ -242,7 +242,8 @@
           "rotationCenter" : [0.5, 1.25],
 		  "offset" : [0.75, 1.25],
           "anchorPart" : "background",
-          "firePoint" : [0.5, 0.0]
+          "firePoint" : [0.5, 0.0],
+          "origin" : [0.0, 0.0]
         },
         "partStates" : {
           "foregroundgun" : {
@@ -289,7 +290,8 @@
           "rotationCenter" : [1.0, 1.25],
           "offset" : [1.25, 1.25],
           "anchorPart" : "background",
-          "firePoint" : [0.5, 0.0]
+          "firePoint" : [0.5, 0.0],
+          "origin" : [0.0, 0.0]
         },
         "partStates" : {
           "backgroundgun" : {

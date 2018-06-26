@@ -1,0 +1,13 @@
+{
+  "itemName" : "rimdwellerstairsplatform",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "rimdwellerstairsplatform.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  
+  "shortdescription" : "Rim Stairs",
+  "description" : "Sturdy metal stairs.",
+
+  "materialId" : 30113
+}

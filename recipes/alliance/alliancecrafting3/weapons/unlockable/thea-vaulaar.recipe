@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "alliancemetaltier6", "count" : 8 },
+    { "item" : "allianceplasmacore", "count" : 4 }
+  ],
+  "output" : { "item" : "thea-vaulaar", "count" : 1 },
+  "groups" : [ "alliancecrafting3", "weapons", "all" ]
+}

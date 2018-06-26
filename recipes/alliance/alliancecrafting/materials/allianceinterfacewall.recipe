@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "alliancemetal", "count" : 1 },
+    { "item" : "alliancecircuitry", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "allianceinterfacewall",
+    "count" : 20
+  },
+  "duration" : 0.5,
+  "groups"  : [ "alliancecrafting", "materials", "all" ]
+}

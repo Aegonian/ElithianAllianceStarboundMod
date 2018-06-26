@@ -1,0 +1,10 @@
+{
+  "itemName" : "alliancebrick",
+  "price" : 5,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "alliancebrick.png",
+  "description" : "A heavy and extremely hard stone brick.",
+  "shortdescription" : "Alliance Brick",
+  "itemTags" : [ "reagent" ]
+}

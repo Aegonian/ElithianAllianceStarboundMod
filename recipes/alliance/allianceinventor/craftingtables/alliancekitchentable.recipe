@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "alliancemetal", "count" : 12 },
+    { "item" : "alliancecloth", "count" : 2 }
+  ],
+  "output" : {
+    "item" : "alliancekitchentable",
+    "count" : 1
+  },
+  "duration" : 5,
+  "groups" : [ "allianceinventor", "craftingstations", "all" ]
+}

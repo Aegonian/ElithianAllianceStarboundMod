@@ -1,5 +1,7 @@
 [
-  //AVIKAN DIALOGUE
+  //===================================================================================================================================
+  // AVIKAN DIALOGUE
+  //===================================================================================================================================
   {
     "op": "add",
     "path": "/reattack/avikan",
@@ -92,9 +94,9 @@
     }
   },
   
-  
-  
-  //TRINK DIALOGUE
+  //===================================================================================================================================
+  // TRINK DIALOGUE
+  //===================================================================================================================================
   {
     "op": "add",
     "path": "/reattack/trink",
@@ -187,9 +189,9 @@
     }
   },
   
-  
-  
-  //DRODEN DIALOGUE
+  //===================================================================================================================================
+  // DRODEN DIALOGUE
+  //===================================================================================================================================
   {
     "op": "add",
     "path": "/reattack/droden",
@@ -282,19 +284,19 @@
     }
   },
   
-  
-  
-  //THELEAN DIALOGUE
+  //===================================================================================================================================
+  // THELEAN DIALOGUE
+  //===================================================================================================================================
   {
     "op": "add",
     "path": "/reattack/thelean",
     "value": {
 	  "default" : [
 		"Target reacquired.",
-		"I found you!",
-		"Death has found you!",
-		"Your death shall be quick!",
-		"Death has come for you!"
+		"Locking on to the target.",
+		"Eliminating target.",
+		"Your end is nigh.",
+		"You made a mistake showing yourself again."
 	  ]
     }
   },
@@ -303,11 +305,11 @@
     "path": "/attack/thelean",
     "value": {
 	  "default" : [
-		"Death has come for you!",
-		"Intruders die!",
-		"Creaton shall take you!",
-		"Death has found a new prey!",
-		"Eliminate the intruder!"
+		"Target acquired.",
+		"Heretic found. Commencing elimination.",
+		"You've made a mistake.",
+		"Another trophy for my collection.",
+		"You'll regret coming here."
 	  ]
     }
   },
@@ -317,10 +319,10 @@
     "value": {
 	  "default" : [
 		"Target eliminated.",
-		"Victorious once more.",
+		"A victory, as expected.",
 		"Death has claimed its prize.",
-		"Creaton will show no mercy.",
-		"Death has taken you!"
+		"No mercy for the weak.",
+		"That wasn't much of a fight."
 	  ]
     }
   },
@@ -329,10 +331,10 @@
     "path": "/lostTarget/thelean",
     "value": {
 	  "default" : [
-		"This isn't over yet...",
+		"Lost the target.",
 		"Death will find you sooner or later.",
 		"The target has escaped.",
-		"Death shall come for you soon enough...",
+		"We'll find the target again soon enough.",
 		"You'll not escape me next time."
 	  ]
     }
@@ -342,11 +344,11 @@
     "path": "/outOfSight/thelean",
     "value": {
 	  "default" : [
-		"The target has escaped my sight!",
-		"The eye of Creaton shall find you again!",
-		"Death will find you soon enough!",
-		"My sight has betrayed me!",
-		"Creaton will find you!"
+		"Target is in hiding. Find them!",
+		"Lost sight of the target.",
+		"Scan the area. We must find the target.",
+		"Requesting local area scan. Target has broken line of sight.",
+		"Target lock was broken. Find them!"
 	  ]
     }
   },
@@ -355,11 +357,11 @@
     "path": "/cantReach/thelean",
     "value": {
 	  "default" : [
-		"Death will find its way to you!",
+		"Assessing situation. Scanning for alternate routes.",
 		"Get back here and face death!",
 		"Flee, you weakling!",
-		"I'll get to you soon enough...",
-		"You'll not escape me so easily!"
+		"Target is out of reach.",
+		"Find a way to the target!"
 	  ]
     }
   },
@@ -368,18 +370,18 @@
     "path": "/cheerOn/thelean",
     "value": {
 	  "default" : [
-		"Eliminate that target!",
-		"Death embrace you!",
-		"Creaton shall take you!",
-		"There is not turning back now!",
-		"Death will feast today!"
+		"Eliminate that target.",
+		"Requesting assistance. Annihilate them.",
+		"You are done for now.",
+		"Nowhere to hide now.",
+		"Destroy them!"
 	  ]
     }
   },
   
-  
-  
-  //AEGI DIALOGUE
+  //===================================================================================================================================
+  // AEGI DIALOGUE
+  //===================================================================================================================================
   {
     "op": "add",
     "path": "/reattack/aegi",
@@ -468,6 +470,101 @@
 		"Push onward!",
 		"Push for the final strike!",
 		"Just a little longer!"
+	  ]
+    }
+  },
+  
+  //===================================================================================================================================
+  // AKKIMARI DIALOGUE
+  //===================================================================================================================================
+  {
+    "op": "add",
+    "path": "/reattack/akkimari",
+    "value": {
+	  "default" : [
+		"<selfname> found you!",
+		"You dead! <selfname> gonna kill you!",
+		"Dead! You finished!",
+		"<selfname> found you again. <selfname> will always find you again!",
+		"You dead now!"
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/attack/akkimari",
+    "value": {
+	  "default" : [
+		"Kill, kill, kill!",
+		"Dead! You finished!",
+		"<selfname> going to eat you!",
+		"You belong to <selfname> now!",
+		"<selfname> gonna eat!"
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/killedTarget/akkimari",
+    "value": {
+	  "default" : [
+		"<selfname> gonna feast on you now!",
+		"<selfname> wins!",
+		"You dead! Hahaha!",
+		"No more fight. <selfname> bored.",
+		"<selfname> hope will fight again soon..."
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/lostTarget/akkimari",
+    "value": {
+	  "default" : [
+		"<selfname> mad! Food got away!",
+		"No! You not flee, you fight!",
+		"You weak! <selfname> want good fight.",
+		"Food escaped. <selfname> mad...",
+		"Gah! Fight not end well."
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/outOfSight/akkimari",
+    "value": {
+	  "default" : [
+		"Get back! You fight <selfname> now!",
+		"No fleeing! You fight!",
+		"<selfname> gonna find you again!",
+		"You run! <selfname> chase you!",
+		"Food trying to run. Get back!"
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/cantReach/akkimari",
+    "value": {
+	  "default" : [
+		"No! No no no!",
+		"Get down here! <selfname> wanna fight!",
+		"<selfname> can't go there!",
+		"<selfname> gonna find a way there. <selfname> gonna kill you then!",
+		"Stupid! Get back and fight!"
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/cheerOn/akkimari",
+    "value": {
+	  "default" : [
+		"<selfname> gonna feast with friends now!",
+		"Akkimari stronger than anyone!",
+		"Akkimari gonna kill you now!",
+		"Bounty for Akkimari!",
+		"Dead! You dead now!"
 	  ]
     }
   }

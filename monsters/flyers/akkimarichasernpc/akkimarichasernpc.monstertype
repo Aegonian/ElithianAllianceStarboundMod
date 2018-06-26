@@ -34,7 +34,7 @@
 
       "hostileActions" : [
 		{
-          "name" : "action-fire",
+          "name" : "thea-monsterfire",
           "cooldown" : 3.0,
           "parameters" : {
             //General Config
@@ -76,7 +76,9 @@
             "winddownState" : "idle",
 			"winddownStateType" : "gun",
             "winddownTime" : 0.25,
-			"winddownStopForce": 0.0
+			"winddownStopForce": 0.0,
+			"winddownFaceTarget" : true,
+			"winddownRotateAim" : true
           }
         }
 	  ],

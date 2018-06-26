@@ -1,0 +1,40 @@
+{
+  "itemName" : "drahlidcontroller",
+  "itemTags" : ["vehiclecontroller"],
+  "level" : 1,
+  "maxStack" : 1,
+  "price" : 12500,
+  "rarity" : "Legendary",
+  "tooltipKind" : "vehicle",
+  "largeImage" : "/vehicles/avikan/controllerdrahlid/controllerdrahlidicon.png",
+  "category" : "Remote Vehicle Controller",
+  "description" : "Allows you to summon and control a small Drahlid unit.",
+  "shortdescription" : "Drahlid Remote Controller",
+  "twoHanded" : true,
+  "inventoryIcon" : "drahlidcontroller.png:active.1",
+  "emptyInventoryIcon" : "/items/active/remotecontroller/drahlidcontroller.png:active.1",
+  "filledInventoryIcon" : "/items/active/remotecontroller/drahlidcontroller.png:inactive.1",
+  
+  "animation" : "thea-remotecontroller.animation",
+  "animationParts" : {
+    "casing" : "drahlidcontroller.png",
+	"lights" : "drahlidcontrollerlights.png"
+  },  
+  
+  "scripts" : ["thea-remotecontroller.lua"],
+  "animationScripts" : ["/items/active/vehiclecontroller/vehiclecursor.lua"],
+
+  //Item specific configuration
+  "vehicleType" : "controllerdrahlid",
+  "vehicleImage" : "/vehicles/avikan/controllerdrahlid/controllerdrahlidicon.png",
+  "vehicleBoundingBox" : [-1.5, -1.5, 1.5, 1.5],
+  
+  //Generic configuration
+  "cooldownTime" : 1.0,				//Cooldown time between drone spawns
+  "transmissionRange" : 80,			//Maximum distance at which to search for and control the drone
+  "edgeOfRangeDistance" : 55,		//Minimum distance to controlled vehicle before warning noise starts playing
+  "receiveInputTimeout" : 0.5,		//If we haven't received a response for this amount of time, disconnect from the drone
+  "cameraFocusOnVehicle" : true,	//If set to true, the player's camera will follow the controlled vehicle while it is in range
+  "warningSoundFrequency" : 0.2,
+  "filled" : true
+}

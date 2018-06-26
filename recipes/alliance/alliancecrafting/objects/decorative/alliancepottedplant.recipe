@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "alliancemetal", "count" : 2 },
+    { "item" : "plantfibre", "count" : 3 }
+  ],
+  "output" : {
+    "item" : "alliancepottedplant",
+    "count" : 1
+  },
+  "groups" : [ "alliancecrafting", "furniture", "all" ]
+}

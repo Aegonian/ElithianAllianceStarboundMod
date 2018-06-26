@@ -1,54 +1,80 @@
 [
-	//AVIKAN DIALOGUE
-	{
-		"op": "add",
-		"path": "/converse/avikan",
-		"value": {
-			"default" : [
-				"What's the mission today?",
-				"I'm ready for an adventure!",
-				"Rhadeis will guide our travels.",
-				"The stars are ours to explore."
-			]
-		}
-	},
-	//TRINK DIALOGUE
-	{
-		"op": "add",
-		"path": "/converse/trink",
-		"value": {
-			"default" : [
-				"What is our current mission?",
-				"I am always ready for adventure.",
-				"I was built ready for adventure.",
-				"I will ensure your safety."
-			]
-		}
-	},
-	//DRODEN DIALOGUE
-	{
-		"op": "add",
-		"path": "/converse/droden",
-		"value": {
-			"default" : [
-				"This unit is ready.",
-				"Requesting current objective details.",
-				"Requesting briefing on current mission.",
-				"This unit is ready to serve."
-			]
-		}
-	},
-	//AEGI DIALOGUE
-	{
-		"op": "add",
-		"path": "/converse/aegi",
-		"value": {
-			"default" : [
-				"What's up, boss?",
-				"Let's get out there!",
-				"I have your back, boss.",
-				"I'm with you."
-			]
-		}
+  //AVIKAN DIALOGUE
+  {
+	"op": "add",
+	"path": "/converse/avikan",
+	"value": {
+	  "default" : [
+		"What's the mission today?",
+		"I'm ready for an adventure!",
+		"Rhadeis will guide our travels.",
+		"The stars are ours to explore."
+	  ]
 	}
+  },
+  //TRINK DIALOGUE
+  {
+	"op": "add",
+	"path": "/converse/trink",
+	"value": {
+	  "default" : [
+		"What is our current mission?",
+		"I am always ready for adventure.",
+		"I was built ready for adventure.",
+		"I will ensure your safety."
+	  ]
+	}
+  },
+  //DRODEN DIALOGUE
+  {
+	"op": "add",
+	"path": "/converse/droden",
+	"value": {
+	  "default" : [
+		"This unit is ready.",
+		"Requesting current objective details.",
+		"Requesting briefing on current mission.",
+		"This unit is ready to serve."
+	  ]
+	}
+  },
+  //AEGI DIALOGUE
+  {
+	"op": "add",
+	"path": "/converse/aegi",
+	"value": {
+	  "default" : [
+		"What's up, boss?",
+		"Let's get out there!",
+		"I have your back, boss.",
+		"I'm with you."
+	  ]
+	}
+  },
+  //AKKIMARI DIALOGUE
+  {
+	"op": "add",
+	"path": "/converse/akkimari",
+	"value": {
+	  "default" : [
+		"What's up, boss?",
+		"Let's get out there!",
+		"I have your back, boss.",
+		"I'm with you."
+	  ]
+	}
+  },
+  //THELEAN DIALOGUE
+  {
+	"op": "add",
+	"path": "/converse/thelean",
+	"value": {
+	  "default" : [
+		"What's up, boss?",
+		"Let's get out there!",
+		"I have your back, boss.",
+		"I'm with you."
+	  ]
+	}
+  }
 ]

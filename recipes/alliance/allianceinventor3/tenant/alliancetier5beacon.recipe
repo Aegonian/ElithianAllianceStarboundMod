@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "alliancemetaltier5", "count" : 6 },
+	{ "item" : "alliancecircuitry", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "alliancetier5beacon",
+    "count" : 1
+  },
+  "duration" : 5,
+  "groups" : [ "allianceinventor3", "alliancetenant", "all" ]
+}

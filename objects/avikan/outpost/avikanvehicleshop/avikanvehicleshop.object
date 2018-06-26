@@ -39,6 +39,7 @@
       { "item" : "avikandrehkcontroller", "prerequisiteQuest" : "avikanmechunlock" },
       { "item" : "avikanskoffcontroller", "prerequisiteQuest" : "avikanmechunlock" },
       { "item" : "drahlcontroller", "prerequisiteQuest" : "avikanmechunlock" },
+      { "item" : "drahlidcontroller", "prerequisiteQuest" : "avikanmechunlock" },
 	  //OBJECTS
 	  { "item" : "avikanhoverbikeobject" },
 	  { "item" : "avikanmechobject" },

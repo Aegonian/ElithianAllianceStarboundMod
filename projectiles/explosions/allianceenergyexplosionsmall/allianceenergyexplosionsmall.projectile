@@ -1,0 +1,18 @@
+{
+  "projectileName" : "allianceenergyexplosionsmall",
+  "image" : "allianceenergyexplosionsmall.png",
+  "animationCycle" : 0.3,
+  "frameNumber" : 5,
+  "speed" : 0,
+  "lightColor" : [63, 100, 127],
+  "pointLight" : true,
+  "fullbright" : true,
+  "statusEffects" : [ ],
+  "damagePoly" : [ [-18, 0], [-12, -12], [0, -18], [12, -12], [18, 0], [12, 12], [0, 18], [-12, 12] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "damageKind" : "default",
+  "knockback" : 4
+}

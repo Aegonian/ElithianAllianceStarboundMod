@@ -17,13 +17,15 @@
 
     "behavior" : "monster",
     "deathBehavior" : "monster-death",
+	  
+	"aggressive" : false,
 
     "seeThroughLiquid" : false,
     "behaviorConfig" : {
       "damageOnTouch" : true,
 
       "targetQueryRange" : 5,
-      "targetOnDamage" : true,
+      "targetOnDamage" : false,
       "keepTargetInSight" : true,
       "keepTargetInRange" : 100,
       "targetOutOfSightTime" : 5.0,

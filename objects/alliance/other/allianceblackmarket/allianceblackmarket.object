@@ -36,6 +36,7 @@
 	  { "item" : { "name" : "excelsiorblueprint3" }, "price" : 7500 },
 	  { "item" : { "name" : "excelsiorblueprint4" }, "price" : 7500 },
 	  { "item" : { "name" : "excelsiorblueprint5" }, "price" : 7500 },
+	  { "item" : { "name" : "eritotargetingchip" }, "price" : 5000 },
 	  { "item" : { "name" : "unioncitizenpass" }, "price" : 50000 },
 	  //WILDLIFE
 	  { "item" : { "name" : "farythscale" }, "price" : 1000 },
@@ -53,6 +54,7 @@
 	  { "item" : { "name" : "centensrelic" }, "price" : 15000 },
 	  //CRAFTING GUIDES
 	  { "item" : { "name" : "trinkcraftingguide" }, "prerequisiteQuest" : "trinkcrafting2", "price" : 1250 },
+	  { "item" : { "name" : "alliancecraftingguide" }, "prerequisiteQuest" : "alliancecrafting", "price" : 1250 },
 	  //MANIPULATOR SKINS
 	  { "item" : { "name" : "alliancemanipulatorskin" }, "price" : 25000 },
 	  { "item" : { "name" : "trinkmanipulatorskin" }, "price" : 25000 }

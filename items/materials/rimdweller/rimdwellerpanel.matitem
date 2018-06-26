@@ -1,0 +1,13 @@
+{
+  "itemName" : "rimdwellerpanel",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "rimdwellerpanel.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  
+  "shortdescription" : "Rim Panel",
+  "description" : "Rusty old metal panels.",
+
+  "materialId" : 30165
+}

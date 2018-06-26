@@ -69,5 +69,23 @@
   { "op" : "add",
 	"path" : "/defaultBlueprints/tier1/-",
 	"value" : { "item" : "defaultmanipulatorskin" }
+  },
+
+  //SPACE MONSTERS -- Determines which monsters get detected by the mech when in space
+  { "op" : "add",
+	"path" : "/deploymentConfig/enemyDetectTypeNames/-",
+	"value" : "centensguardian-space"
+  },
+  { "op" : "add",
+	"path" : "/deploymentConfig/enemyDetectTypeNames/-",
+	"value" : "centenskeeper-space"
+  },
+  { "op" : "add",
+	"path" : "/deploymentConfig/enemyDetectTypeNames/-",
+	"value" : "rimdwellerautocannon"
+  },
+  { "op" : "add",
+	"path" : "/deploymentConfig/enemyDetectTypeNames/-",
+	"value" : "rimdwellermissilelauncher"
   }
 ]

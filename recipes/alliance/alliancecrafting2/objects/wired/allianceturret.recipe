@@ -1,0 +1,14 @@
+{
+  "input" : [
+    { "item" : "alliancemetaltier4", "count" : 5 },
+	{ "item" : "allianceplasmacore", "count" : 1 },
+	{ "item" : "alliancequantumchip", "count" : 1 },
+	{ "item" : "alliancecircuitry", "count" : 3 },
+	{ "item" : "allianceballisticplate", "count" : 2 }
+  ],
+  "output" : {
+    "item" : "allianceturret",
+    "count" : 1
+  },
+  "groups" : [ "alliancecrafting2", "furniture", "all" ]
+}

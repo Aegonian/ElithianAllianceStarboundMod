@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "paper", "count" : 3 },
+    { "item" : "alliancecloth", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "alliancebooks1",
+    "count" : 1
+  },
+  "groups" : [ "alliancecrafting", "furniture", "all" ]
+}

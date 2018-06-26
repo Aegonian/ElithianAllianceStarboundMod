@@ -1,0 +1,91 @@
+{
+  "itemName" : "thea-vaulaar",
+  "price" : 1500,
+  "inventoryIcon" : "thea-vaulaar.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;A dual-barrel assault rifle for causing mayhem.",
+  "manufacturer" : "^gray;Erito Security^reset;",
+  "shortdescription" : "^orange;Vaulaar^white;",
+  "level" : 6,
+  "tooltipKind" : "thea-gun-unique-mf",
+  "category" : "Assault Rifle",
+  "itemTags" : ["weapon","ranged","assaultrifle","alliance","theaUnique"],
+  "twoHanded" : true,
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "thea-vaulaar" },
+  
+  //"meritTokenValue" : 50,
+  
+  "cursor" : "/cursors/thea-squarereticle.cursor",
+  
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "thea-vaulaar.png",
+    "barrel" : "",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/allianceenergyflash.png"
+  },
+  "animationCustom" : {
+	"sounds" : {
+      "fire" : [ "/sfx/gun/rocket3.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.75, 0.25],
+  "muzzleOffset" : [2.0, 0.125],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/multibarrelshot/multibarrelshot.lua"],
+    "class" : "MultiBarrelShot",
+
+    "fireTime" : 0.32,
+    "baseDps" : 11.0,
+    "energyUsage" : 40.0,
+    "inaccuracy" : 0.0,
+	
+	"primaryFiringOffset" : [2.75, 0.625],
+	"secondaryFiringOffset" : [2.75, 0.125],
+
+    "projectileCount" : 2,
+    "fireType" : "auto",
+
+    "projectileType" : "vaulaarbullet",
+    "projectileParameters" : {},
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.15,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+}

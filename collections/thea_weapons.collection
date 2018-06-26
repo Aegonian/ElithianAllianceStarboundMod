@@ -396,6 +396,18 @@
       "title" : "Razaara",
       "description" : "A razor-sharp whirlblade that slices through flesh and bone with ease.",
       "icon" : "/items/active/weapons/melee/unique/razaara/akkimari-razaara.png"
+    },
+	"thea-nauroo" : {
+      "order" : 65,
+      "title" : "Nauroo",
+      "description" : "A dual-barrel rocket launcher built to impress.",
+      "icon" : "/items/active/weapons/ranged/unique/nauroo/thea-nauroo.png"
+    },
+	"thea-vaulaar" : {
+      "order" : 66,
+      "title" : "Vaulaar",
+      "description" : "A dual-barrel assault rifle for causing mayhem.",
+      "icon" : "/items/active/weapons/ranged/unique/vaulaar/thea-vaulaar.png"
     }
   }
 }

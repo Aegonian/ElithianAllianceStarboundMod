@@ -432,6 +432,9 @@
         },
         "bleedingImmunity" : {
           "baseValue" : 1.0
+        },
+        "stunImmunity" : {
+          "baseValue" : 1.0
         }
       },
 

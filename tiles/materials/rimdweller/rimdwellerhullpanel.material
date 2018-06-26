@@ -1,0 +1,28 @@
+{
+  "materialId" : 30164,
+  "materialName" : "rimdwellerhullpanel",
+  "particleColor" : [144, 134, 125, 255],
+  "itemDrop" : "rimdwellerhullpanel",
+  "shortdescription" : "Rim Hull Panel",
+
+  "description" : "Worn metal plating found on the exterior of spaceships from the Rim.",
+  "glitchDescription" : "Curious. What caused all of the damage to this hull?",
+  "floranDescription" : "Busssted metal plating.",
+  "novakidDescription" : "This hull's been banged up good, but it still holds.",
+  
+  "drodenDescription" : "Analysis complete. Hull plating. Signs of combat damage detected.",
+  
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "health" : 24,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "rimdwellerhullpanel.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 5000
+  }
+}

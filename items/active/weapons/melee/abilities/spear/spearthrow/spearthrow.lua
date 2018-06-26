@@ -5,7 +5,7 @@ require "/items/active/weapons/weapon.lua"
 SpearThrow = WeaponAbility:new()
 
 function SpearThrow:init()
-  self:reset()
+  self:reset(true)
   
   self.projectileGravityMultiplier = root.projectileGravityMultiplier(self.projectileType)
   self.thrownProjectile = nil
@@ -38,7 +38,7 @@ function SpearThrow:update(dt, fireMode, shiftHeld)
 	end
   end
 
-  --Optionally play a sound when the trhow ability is ready for use
+  --Optionally play a sound when the throw ability is ready for use
   if animator.hasSound("cooldownReady") and not self.cooldownSoundHasPlayed and self.cooldownTimer == 0 then
 	animator.playSound("cooldownReady")
 	self.cooldownSoundHasPlayed = true
@@ -46,6 +46,8 @@ function SpearThrow:update(dt, fireMode, shiftHeld)
   
   self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
   self.aimTypeSwitchTimer = math.max(0, self.aimTypeSwitchTimer - self.dt)
+  
+  world.debugText(self.cooldownTimer, mcontroller.position(), "red")
   
   if not self.weapon.currentAbility
 	and self.fireMode == (self.activatingFireMode or self.abilitySlot)
@@ -157,7 +159,7 @@ function SpearThrow:aiming()
   if self.windupTimer == 0 then
 	self:setState(self.fire)
   else
-    self:reset()
+    self:reset(false)
   end
 end
 
@@ -214,6 +216,7 @@ function SpearThrow:cooldown()
 	animator.stopAllSounds("idleLoop")
   end
   self.idleLoopPlaying = false
+  self:reset(true)
 end
 
 function SpearThrow:idealAimVector()
@@ -256,10 +259,12 @@ function SpearThrow:firePosition()
   return vec2.add(mcontroller.position(), activeItem.handPosition(self.fireOffset))
 end
 
-function SpearThrow:reset()
+function SpearThrow:reset(forceCooldown)
   self.windupTimer = self.windupTime
-  self.cooldownTimer = self.cooldownTime
-  self.cooldownSoundHasPlayed = false
+  if forceCooldown then
+	self.cooldownTimer = self.cooldownTime
+	self.cooldownSoundHasPlayed = false
+  end
   
   if animator.animationState("weapon") ~= "visible" then
 	--Return the weapon to the player's hand
@@ -293,5 +298,5 @@ function SpearThrow:uninit()
   if self.thrownProjectile then
 	world.sendEntityMessage(self.thrownProjectile, "kill")
   end
-  self:reset()
+  self:reset(false)
 end

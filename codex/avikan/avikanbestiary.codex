@@ -1,0 +1,34 @@
+{
+  "id" : "avikanbestiary",
+  "species" : "avikan",
+  "title" : "Kadavan Bestiary",
+  "description" : "A brief overview of Kadavan wildlife. Best read by gaslight.",
+  "icon" : "avikanscroll4.png",
+  "contentPages" : [
+
+"Vas Vha'leih, young hunter. All across the galaxy, on arid desert worlds, you may find wildlife originally native to Kadavan. As the Avikan spread across the stars, they took with them animals that reminded them of home. Now, these creatures thrive on alien worlds, granting you the opportunity to partake in the traditional hunts of the Avikan people.
+
+In this short scroll, you will learn how to identify these creatures of Kadavan.",
+
+"^orange;Sandcrawler: ^reset;Perhaps the most iconic of Kadavan animals, the Sandcrawler is a large worm-like creature that burrows beneath the sand. It detects its prey through vibrations in the earth, and will surface when its prey draws close enough.
+
+The Sandcrawler can be found in placed rich in quicksand: these are most commonly found on desert planets. Look for small piles of loose sand along the ground, and you'll run into a Sandcrawler soon enough.",
+
+"^orange;Sandspitter: ^reset;The great Sandspitter is best described as a worm-like beast that uses disproportionately small legs to walk and crawl around. The beast stands taller than the average Avikan, and is easily recognized by the sand it spits to slow down its prey.
+
+While less common than the Sandcrawler, the Sandspitter can also be found in quicksand biomes. They are found above the surface, and are easy to spot even to the untrained eye.",
+
+"^orange;Valahr: ^reset;The flying Valahr is a winged worm-like creature with a dark blue skin. It likes to hide in caves, and saliva often drips from its mouth while it sleeps.
+
+The Valahr is most commonly found in small caverns and rocky overhangs in quicksand biomes. They often live in small groups, and tend to rest hanging upside-down from the cavern ceiling.",
+
+"^orange;Stingwing: ^reset;The Stingwing is a small flying insect that travels in dense swarms. They make a loud buzzing noise, and will attack relentlessly until the queen of the swarm is taken down.
+
+Stingwing swarms are found in quicksand biomes, where they like to hang around in shallow pits that act as their nests. They can also occasionally be found flying around other areas of the quicksand biome. Listen for the iconic buzzing sound of an active swarm, and you will find them soon enough."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

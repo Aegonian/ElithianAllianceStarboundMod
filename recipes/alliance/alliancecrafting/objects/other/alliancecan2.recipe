@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "alliancesodacan2", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "alliancecan2",
+    "count" : 1
+  },
+  "groups" : [ "alliancecrafting", "furniture", "all" ]
+}

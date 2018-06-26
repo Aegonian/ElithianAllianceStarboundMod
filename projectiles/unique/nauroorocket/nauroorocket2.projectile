@@ -1,0 +1,37 @@
+{
+  "projectileName" : "nauroorocket2",
+  "image" : "nauroorocket.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 4,
+  "damageKindImage" : "icon.png",
+  "lightColor" : [128, 128, 64],
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/avikanairstrikeexplosion/avikanairstrikeexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "emitters" : [ "tinyrocketsmoke" ],
+  "flippable" : true,
+  "layer" : "front",
+  "power" : 10.0,
+  "speed" : 30.0,
+  "physics" : "laser",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+
+  "scripts" : ["/projectiles/scripts/thea-homingbullet-wave.lua"],
+  "scriptDelta" : 1,
+
+  //Wave
+  "wavePeriod" : 0.65,
+  "waveAmplitude" : -0.25,
+  
+  //Homing
+  "homingStyle" : "rotateToTarget",
+  "searchRadius" : 45,
+  "rotationRate" : 1.0,
+  "trackingLimit" : 1.5
+}

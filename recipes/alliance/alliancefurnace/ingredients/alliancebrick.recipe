@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "cobblestonematerial", "count" : 2 },
+    { "item" : "mud", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "alliancebrick",
+    "count" : 3
+  },
+  "groups" : [ "alliancefurnace", "ingredients", "all" ]
+}

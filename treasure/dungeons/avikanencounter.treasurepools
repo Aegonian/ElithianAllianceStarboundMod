@@ -368,7 +368,8 @@
         {"weight" : 1.0, "item" : "avikangods1-codex" },
 		{"weight" : 1.0, "item" : "avikanlineriflewarning-codex" },
 		{"weight" : 1.0, "item" : "avikanramblings-codex" },
-		{"weight" : 1.0, "item" : "kadavanlocations-codex" }
+		{"weight" : 1.0, "item" : "kadavanlocations-codex" },
+		{"weight" : 1.0, "item" : "avikanbestiary-codex" }
       ]
     } ]
   ],

@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "alliancemetal", "count" : 20 },
+    { "item" : "allianceballisticplate", "count" : 4 }
+  ],
+  "output" : {
+    "item" : "alliancespacecontainerclamped",
+    "count" : 1
+  },
+  "groups" : [ "alliancecrafting", "furniture", "all" ]
+}

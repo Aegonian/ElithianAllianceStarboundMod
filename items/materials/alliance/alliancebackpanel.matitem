@@ -1,0 +1,13 @@
+{
+  "itemName" : "alliancebackpanel",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "alliancebackpanel.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  
+  "shortdescription" : "Alliance Backpanel",
+  "description" : "A metal wall panel.",
+
+  "materialId" : 30166
+}

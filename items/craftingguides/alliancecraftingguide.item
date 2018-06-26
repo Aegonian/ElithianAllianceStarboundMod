@@ -1,0 +1,319 @@
+{
+  "itemName" : "alliancecraftingguide",
+  "price" : 2500,
+  "rarity" : "Legendary",
+  "inventoryIcon" : "alliancecraftingguide.png",
+  "description" : "A guide to Alliance crafting. Unlocks most Alliance crafting recipes, regardless of race.",
+  "shortdescription" : "^#BA66FF;Alliance Crafting Guide^white;",
+  "category" : "Crafting Guide",
+  "learnBlueprintsOnPickup" : [
+	
+// Empty Hands
+	  "allianceinventor",
+	  "flagaegi",
+
+// Alliance Crafting 1
+	//Armour
+	  "aegi-tier1chest",
+	  "aegi-tier1head",
+	  "aegi-tier1legs",
+	  "aegi-tier2chest",
+	  "aegi-tier2head",
+	  "aegi-tier2legs",
+	//Consumables
+	  "alliancebandage",
+	//Ingredients
+	  "allianceballisticfiber",
+	  "alliancecloth",
+	  "alliancemagazine",
+	  "allianceplasmacore",
+	  "paper",
+	//Materials - Platforms
+	  "allianceplatform",
+	  "alliancestairsplatform",
+	  "alliancestoneplatform",
+	  "alliancethickplatform",
+	  "alliancethickstairsplatform",
+	//Materials
+	  "alliancedoublepanel",
+	  "alliancefarmpanel",
+	  "alliancefence",
+	  "allianceglass",
+	  "alliancehullpanel",
+	  "allianceinterfacewall",
+	  "alliancepavementstone",
+	  "alliancepipe",
+	  "allianceprefabwall",
+	  "alliancereinforcement",
+	  "allianceslopedglass",
+	  "allianceslopedpanel",
+	  "alliancesmoothpanel",
+	  "alliancestonebrick",
+	  "alliancestonebrickrough",
+	  "alliancestripedpanel",
+	  "alliancesupport",
+	  "alliancethinsupport",
+	  "avikanthickpipebottom",
+	  "avikanthickpipeleft",
+	  "avikanthickpiperight",
+	  "avikanthickpipetop",
+	//Objects - Containers
+	  "alliancecrate",
+	  "alliancelargecrate",
+	  "allianceshippingcontainer",
+	  "alliancespacecontainer",
+	  "alliancespacecontainerclamped",
+	  "alliancestoragelocker",
+	  "allianceweaponcabinet",
+	  "allianceweaponchest",
+	//Objects - Decorative
+	  "allianceantenna",
+	  "allianceantenna2",
+	  "alliancebooks1",
+	  "alliancebooks2",
+	  "alliancebooks3",
+	  "allianceceilingmonitor",
+	  "alliancecomputerscreen",
+	  "alliancefountain",
+	  "allianceglassroof",
+	  "allianceglobehologram",
+	  "alliancehologram1",
+	  "alliancehologram2",
+	  "alliancehologram3",
+	  "alliancehologram4",
+	  "allianceinfospire",
+	  "allianceinterface1",
+	  "allianceinterface2",
+	  "allianceinterface3",
+	  "allianceinterface4",
+	  "allianceinterface5",
+	  "allianceinterface6",
+	  "alliancelaptop",
+	  "alliancemonument",
+	  "allianceparasol",
+	  "allianceplanter1",
+	  "allianceplanter2",
+	  "allianceplanter3",
+	  "allianceplanter4",
+	  "alliancepottedplant",
+	  "alliancepottedshrub",
+	  "allianceradio",
+	  "alliancerailing",
+	  "alliancespaceheater",
+	  "alliancestoreshelf",
+	  "alliancestoresign",
+	  "alliancetv",
+	  "alliancetv2",
+	//Objects - Doors
+	  "allianceblastdoor",
+	  "allianceblastdoorautomated",
+	  "alliancecargodoor",
+	  "alliancemanholedoor",
+	  "allianceslidingdoor",
+	  "allianceslidingdoorautomated",
+	//Objects - Furniture
+	  "alliancebathroomsink",
+	  "alliancebathroomsinkmirror",
+	  "alliancebathroomstall",
+	  "alliancebed",
+	  "alliancebench",
+	  "alliancebench2",
+	  "alliancebookcase",
+	  "alliancebunkbed",
+	  "alliancecabinet",
+	  "alliancechair",
+	  "alliancechair2",
+	  "alliancecloset",
+	  "alliancedesk",
+	  "alliancefridge",
+	  "alliancekitchencabinet",
+	  "alliancekitchensink",
+	  "alliancemedscanner",
+	  "alliancereceptiondesk",
+	  "allianceroundtable",
+	  "allianceshelf",
+	  "allianceshower",
+	  "alliancestorecounter",
+	  "alliancetable",
+	  "alliancetable2",
+	  "alliancetoilet",
+	  "alliancetowelrack",
+	  "alliancetvstand",
+	//Objects - Lights
+	  "alliancealarm",
+	  "alliancedesklight",
+	  "alliancelandingbeacon",
+	  "alliancelightstrip",
+	  "alliancespotlight",
+	  "alliancestandinglamp",
+	  "alliancestreetlight",
+	  "alliancetablelamp",
+	  "alliancewalllight",
+	//Objects - Other
+	  "alliancebottle1",
+	  "alliancebottle2",
+	  "alliancebottle3",
+	  "alliancecan1",
+	  "alliancecan2",
+	  "alliancecan3",
+	  "alliancefoodplate",
+	  "alliancesprinkler",
+	//Objects - Wired
+	  "alliancebutton",
+	  "allianceconsole",
+	  "alliancedaynightsensor",
+	  "alliancekeypad",
+	  "alliancelargepressureplate",
+	  "alliancepressureplate",
+	  "alliancescanner",
+	  "alliancesmallbutton",
+	  "alliancewallswitch",
+	//Weapons - Melee
+	  "thea-tier1broadsword",
+	  "thea-tier1shortsword",
+	  "thea-tier2dagger",
+	  "thea-tier2spear",
+	//Weapons - Ranged
+	  "thea-tier1pistol",
+	  "thea-tier1rifle",
+	  "thea-tier1shotgun",
+	  "thea-tier1sniper",
+	  "thea-tier2rifle",
+	  "thea-tier2shotgun",
+	  "thea-tier2smg",
+	  "thea-tier2sniper",
+	  
+//Alliance Crafting 2
+	//Armour
+	  "aegi-tier3chest",
+	  "aegi-tier3head",
+	  "aegi-tier3legs",
+	  "aegi-tier4chest",
+	  "aegi-tier4head",
+	  "aegi-tier4legs",
+	//Consumables
+	  "allianceflare",
+	  "alliancemedsalve",
+	  "alliancethrowablegrenade",
+	//Ingredients
+	  "allianceballisticplate",
+	//Objects - Wired
+	  "allianceturret",
+	//Weapons - Melee
+	  "thea-tier3axe",
+	  "thea-tier3hammer",
+	  "thea-tier4broadsword",
+	  "thea-tier4shortsword",
+	//Weapons - Ranged
+	  "thea-tier3grenadelauncher",
+	  "thea-tier3pistol",
+	  "thea-tier3rifle",
+	  "thea-tier3shotgun",
+	  "thea-tier3sniper",
+	  "thea-tier4machinegun",
+	  "thea-tier4rifle",
+	  "thea-tier4shotgun",
+	  "thea-tier4smg",
+	  "thea-tier4sniper",
+	//Weapons
+	  "alliancegrapplinghook",
+	  
+//Alliance Crafting 3
+	//Armour - Accelerator
+	  "aegi-tier5achest",
+	  "aegi-tier5ahead",
+	  "aegi-tier5alegs",
+	  "aegi-tier6achest",
+	  "aegi-tier6ahead",
+	  "aegi-tier6alegs",
+	//Armour - Manipulator
+	  "aegi-tier5mchest",
+	  "aegi-tier5mhead",
+	  "aegi-tier5mlegs",
+	  "aegi-tier6mchest",
+	  "aegi-tier6mhead",
+	  "aegi-tier6mlegs",
+	//Armour - Separator
+	  "aegi-tier5schest",
+	  "aegi-tier5shead",
+	  "aegi-tier5slegs",
+	  "aegi-tier6schest",
+	  "aegi-tier6shead",
+	  "aegi-tier6slegs",
+	//Consumables
+	  "alliancemedicalkit",
+	//Ingredients
+	  "alliancecoreenergetic",
+	  "alliancecorepowerful",
+	  "alliancecorevigorous",
+	//Weapons - Melee
+	  "thea-tier5dagger",
+	  "thea-tier5spear",
+	  "thea-tier6axe",
+	  "thea-tier6hammer",
+	//Weapons - Ranged
+	  "thea-tier5pistol",
+	  "thea-tier5rifle",
+	  "thea-tier5rocketlauncher",
+	  "thea-tier5shotgun",
+	  "thea-tier5sniper",
+	  "thea-tier6minigun",
+	  "thea-tier6rifle",
+	  "thea-tier6shotgun",
+	  "thea-tier6smg",
+	  "thea-tier6sniper",
+	  
+//Alliance Furnace 1
+	//Bars
+	  "alliancemetal",
+	  "alliancemetaltier2",
+	//Ingredients
+	  "alliancebrick",
+	  "alliancecircuitry",
+	  "allianceglassitem",
+	  
+//Alliance Furnace 2
+	//Bars
+	  "alliancemetaltier3",
+	  "alliancemetaltier4",
+	//Ingredients
+	  "alliancequantumchip",
+	  
+//Alliance Furnace 3
+	//Bars
+	  "alliancemetaltier5",
+	  "alliancemetaltier6",
+	  
+//Alliance Inventor 1
+	//Crafting Tables
+	  "alliancecookingstove",
+	  "alliancecrafting",
+	  "alliancefurnace",
+	  "alliancekitchentable",
+	//EPPs
+	  "alliancebreathprotectionback",
+	//Tenant
+	  "alliancetier2beacon",
+	  
+//Alliance Inventor 2
+	//Crafting Tables
+	  "allianceweaponattachmentbench",
+	  "allianceweaponimprovementbench",
+	//EPPs
+	  "allianceradiationprotectionback",
+	//Tenant
+	  "alliancetier3beacon",
+	  "alliancetier4beacon",
+	  
+//Alliance Inventor 3
+	//EPPs
+	  "alliancecoldprotectionback",
+	  "avikanheatprotectionback",
+	//Tenant
+	  "alliancesoldierbeacon",
+	  "alliancetier5beacon",
+	  "alliancetier6beacon"
+	
+    ],
+  "itemTags" : [ "craftingguide" ]
+}

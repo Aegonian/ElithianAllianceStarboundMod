@@ -17,7 +17,310 @@
     "tier1" : [
 
 // Empty Hands
-      { "item" : "flaghuman" }
+      { "item" : "allianceinventor" },
+      { "item" : "flagaegi" },
+
+// Alliance Crafting 1
+	//Armour
+      { "item" : "aegi-tier1chest" },
+      { "item" : "aegi-tier1head" },
+      { "item" : "aegi-tier1legs" },
+      { "item" : "aegi-tier2chest" },
+      { "item" : "aegi-tier2head" },
+      { "item" : "aegi-tier2legs" },
+	//Consumables
+      { "item" : "alliancebandage" },
+	//Ingredients
+      { "item" : "allianceballisticfiber" },
+      { "item" : "alliancecloth" },
+      { "item" : "alliancemagazine" },
+      { "item" : "allianceplasmacore" },
+      { "item" : "paper" },
+	//Materials - Platforms
+      { "item" : "allianceplatform" },
+      { "item" : "alliancestairsplatform" },
+      { "item" : "alliancestoneplatform" },
+      { "item" : "alliancethickplatform" },
+      { "item" : "alliancethickstairsplatform" },
+	//Materials
+      { "item" : "alliancedoublepanel" },
+      { "item" : "alliancefarmpanel" },
+      { "item" : "alliancefence" },
+      { "item" : "allianceglass" },
+      { "item" : "alliancehullpanel" },
+      { "item" : "allianceinterfacewall" },
+      { "item" : "alliancepavementstone" },
+      { "item" : "alliancepipe" },
+      { "item" : "allianceprefabwall" },
+      { "item" : "alliancereinforcement" },
+      { "item" : "allianceslopedglass" },
+      { "item" : "allianceslopedpanel" },
+      { "item" : "alliancesmoothpanel" },
+      { "item" : "alliancestonebrick" },
+      { "item" : "alliancestonebrickrough" },
+      { "item" : "alliancestripedpanel" },
+      { "item" : "alliancesupport" },
+      { "item" : "alliancethinsupport" },
+      { "item" : "avikanthickpipebottom" },
+      { "item" : "avikanthickpipeleft" },
+      { "item" : "avikanthickpiperight" },
+      { "item" : "avikanthickpipetop" },
+	//Objects - Containers
+      { "item" : "alliancecrate" },
+      { "item" : "alliancelargecrate" },
+      { "item" : "allianceshippingcontainer" },
+      { "item" : "alliancespacecontainer" },
+      { "item" : "alliancespacecontainerclamped" },
+      { "item" : "alliancestoragelocker" },
+      { "item" : "allianceweaponcabinet" },
+      { "item" : "allianceweaponchest" },
+	//Objects - Decorative
+      { "item" : "allianceantenna" },
+      { "item" : "allianceantenna2" },
+      { "item" : "alliancebooks1" },
+      { "item" : "alliancebooks2" },
+      { "item" : "alliancebooks3" },
+      { "item" : "allianceceilingmonitor" },
+      { "item" : "alliancecomputerscreen" },
+      { "item" : "alliancefountain" },
+      { "item" : "allianceglassroof" },
+      { "item" : "allianceglobehologram" },
+      { "item" : "alliancehologram1" },
+      { "item" : "alliancehologram2" },
+      { "item" : "alliancehologram3" },
+      { "item" : "alliancehologram4" },
+      { "item" : "allianceinfospire" },
+      { "item" : "allianceinterface1" },
+      { "item" : "allianceinterface2" },
+      { "item" : "allianceinterface3" },
+      { "item" : "allianceinterface4" },
+      { "item" : "allianceinterface5" },
+      { "item" : "allianceinterface6" },
+      { "item" : "alliancelaptop" },
+      { "item" : "alliancemonument" },
+      { "item" : "allianceparasol" },
+      { "item" : "allianceplanter1" },
+      { "item" : "allianceplanter2" },
+      { "item" : "allianceplanter3" },
+      { "item" : "allianceplanter4" },
+      { "item" : "alliancepottedplant" },
+      { "item" : "alliancepottedshrub" },
+      { "item" : "allianceradio" },
+      { "item" : "alliancerailing" },
+      { "item" : "alliancespaceheater" },
+      { "item" : "alliancestoreshelf" },
+      { "item" : "alliancestoresign" },
+      { "item" : "alliancetv" },
+      { "item" : "alliancetv2" },
+	//Objects - Doors
+      { "item" : "allianceblastdoor" },
+      { "item" : "allianceblastdoorautomated" },
+      { "item" : "alliancecargodoor" },
+      { "item" : "alliancemanholedoor" },
+      { "item" : "allianceslidingdoor" },
+      { "item" : "allianceslidingdoorautomated" },
+	//Objects - Furniture
+      { "item" : "alliancebathroomsink" },
+      { "item" : "alliancebathroomsinkmirror" },
+      { "item" : "alliancebathroomstall" },
+      { "item" : "alliancebed" },
+      { "item" : "alliancebench" },
+      { "item" : "alliancebench2" },
+      { "item" : "alliancebookcase" },
+      { "item" : "alliancebunkbed" },
+      { "item" : "alliancecabinet" },
+      { "item" : "alliancechair" },
+      { "item" : "alliancechair2" },
+      { "item" : "alliancecloset" },
+      { "item" : "alliancedesk" },
+      { "item" : "alliancefridge" },
+      { "item" : "alliancekitchencabinet" },
+      { "item" : "alliancekitchensink" },
+      { "item" : "alliancemedscanner" },
+      { "item" : "alliancereceptiondesk" },
+      { "item" : "allianceroundtable" },
+      { "item" : "allianceshelf" },
+      { "item" : "allianceshower" },
+      { "item" : "alliancestorecounter" },
+      { "item" : "alliancetable" },
+      { "item" : "alliancetable2" },
+      { "item" : "alliancetoilet" },
+      { "item" : "alliancetowelrack" },
+      { "item" : "alliancetvstand" },
+	//Objects - Lights
+      { "item" : "alliancealarm" },
+      { "item" : "alliancedesklight" },
+      { "item" : "alliancelandingbeacon" },
+      { "item" : "alliancelightstrip" },
+      { "item" : "alliancespotlight" },
+      { "item" : "alliancestandinglamp" },
+      { "item" : "alliancestreetlight" },
+      { "item" : "alliancetablelamp" },
+      { "item" : "alliancewalllight" },
+	//Objects - Other
+      { "item" : "alliancebottle1" },
+      { "item" : "alliancebottle2" },
+      { "item" : "alliancebottle3" },
+      { "item" : "alliancecan1" },
+      { "item" : "alliancecan2" },
+      { "item" : "alliancecan3" },
+      { "item" : "alliancefoodplate" },
+      { "item" : "alliancesprinkler" },
+	//Objects - Wired
+      { "item" : "alliancebutton" },
+      { "item" : "allianceconsole" },
+      { "item" : "alliancedaynightsensor" },
+      { "item" : "alliancekeypad" },
+      { "item" : "alliancelargepressureplate" },
+      { "item" : "alliancepressureplate" },
+      { "item" : "alliancescanner" },
+      { "item" : "alliancesmallbutton" },
+      { "item" : "alliancewallswitch" },
+	//Weapons - Melee
+      { "item" : "thea-tier1broadsword" },
+      { "item" : "thea-tier1shortsword" },
+      { "item" : "thea-tier2dagger" },
+      { "item" : "thea-tier2spear" },
+	//Weapons - Ranged
+      { "item" : "thea-tier1pistol" },
+      { "item" : "thea-tier1rifle" },
+      { "item" : "thea-tier1shotgun" },
+      { "item" : "thea-tier1sniper" },
+      { "item" : "thea-tier2rifle" },
+      { "item" : "thea-tier2shotgun" },
+      { "item" : "thea-tier2smg" },
+      { "item" : "thea-tier2sniper" },
+	  
+//Alliance Crafting 2
+	//Armour
+      { "item" : "aegi-tier3chest" },
+      { "item" : "aegi-tier3head" },
+      { "item" : "aegi-tier3legs" },
+      { "item" : "aegi-tier4chest" },
+      { "item" : "aegi-tier4head" },
+      { "item" : "aegi-tier4legs" },
+	//Consumables
+      { "item" : "allianceflare" },
+      { "item" : "alliancemedsalve" },
+      { "item" : "alliancethrowablegrenade" },
+	//Ingredients
+      { "item" : "allianceballisticplate" },
+	//Objects - Wired
+      { "item" : "allianceturret" },
+	//Weapons - Melee
+      { "item" : "thea-tier3axe" },
+      { "item" : "thea-tier3hammer" },
+      { "item" : "thea-tier4broadsword" },
+      { "item" : "thea-tier4shortsword" },
+	//Weapons - Ranged
+      { "item" : "thea-tier3grenadelauncher" },
+      { "item" : "thea-tier3pistol" },
+      { "item" : "thea-tier3rifle" },
+      { "item" : "thea-tier3shotgun" },
+      { "item" : "thea-tier3sniper" },
+      { "item" : "thea-tier4machinegun" },
+      { "item" : "thea-tier4rifle" },
+      { "item" : "thea-tier4shotgun" },
+      { "item" : "thea-tier4smg" },
+      { "item" : "thea-tier4sniper" },
+	//Weapons
+      { "item" : "alliancegrapplinghook" },
+	  
+//Alliance Crafting 3
+	//Armour - Accelerator
+      { "item" : "aegi-tier5achest" },
+      { "item" : "aegi-tier5ahead" },
+      { "item" : "aegi-tier5alegs" },
+      { "item" : "aegi-tier6achest" },
+      { "item" : "aegi-tier6ahead" },
+      { "item" : "aegi-tier6alegs" },
+	//Armour - Manipulator
+      { "item" : "aegi-tier5mchest" },
+      { "item" : "aegi-tier5mhead" },
+      { "item" : "aegi-tier5mlegs" },
+      { "item" : "aegi-tier6mchest" },
+      { "item" : "aegi-tier6mhead" },
+      { "item" : "aegi-tier6mlegs" },
+	//Armour - Separator
+      { "item" : "aegi-tier5schest" },
+      { "item" : "aegi-tier5shead" },
+      { "item" : "aegi-tier5slegs" },
+      { "item" : "aegi-tier6schest" },
+      { "item" : "aegi-tier6shead" },
+      { "item" : "aegi-tier6slegs" },
+	//Consumables
+      { "item" : "alliancemedicalkit" },
+	//Ingredients
+      { "item" : "alliancecoreenergetic" },
+      { "item" : "alliancecorepowerful" },
+      { "item" : "alliancecorevigorous" },
+	//Weapons - Melee
+      { "item" : "thea-tier5dagger" },
+      { "item" : "thea-tier5spear" },
+      { "item" : "thea-tier6axe" },
+      { "item" : "thea-tier6hammer" },
+	//Weapons - Ranged
+      { "item" : "thea-tier5pistol" },
+      { "item" : "thea-tier5rifle" },
+      { "item" : "thea-tier5rocketlauncher" },
+      { "item" : "thea-tier5shotgun" },
+      { "item" : "thea-tier5sniper" },
+      { "item" : "thea-tier6minigun" },
+      { "item" : "thea-tier6rifle" },
+      { "item" : "thea-tier6shotgun" },
+      { "item" : "thea-tier6smg" },
+      { "item" : "thea-tier6sniper" },
+	  
+//Alliance Furnace 1
+	//Bars
+      { "item" : "alliancemetal" },
+      { "item" : "alliancemetaltier2" },
+	//Ingredients
+      { "item" : "alliancebrick" },
+      { "item" : "alliancecircuitry" },
+      { "item" : "allianceglassitem" },
+	  
+//Alliance Furnace 2
+	//Bars
+      { "item" : "alliancemetaltier3" },
+      { "item" : "alliancemetaltier4" },
+	//Ingredients
+      { "item" : "alliancequantumchip" },
+	  
+//Alliance Furnace 3
+	//Bars
+      { "item" : "alliancemetaltier5" },
+      { "item" : "alliancemetaltier6" },
+	  
+//Alliance Inventor 1
+	//Crafting Tables
+      { "item" : "alliancecookingstove" },
+      { "item" : "alliancecrafting" },
+      { "item" : "alliancefurnace" },
+      { "item" : "alliancekitchentable" },
+	//EPPs
+      { "item" : "alliancebreathprotectionback" },
+	//Tenant
+      { "item" : "alliancetier2beacon" },
+	  
+//Alliance Inventor 2
+	//Crafting Tables
+      { "item" : "allianceweaponattachmentbench" },
+      { "item" : "allianceweaponimprovementbench" },
+	//EPPs
+      { "item" : "allianceradiationprotectionback" },
+	//Tenant
+      { "item" : "alliancetier3beacon" },
+      { "item" : "alliancetier4beacon" },
+	  
+//Alliance Inventor 3
+	//EPPs
+      { "item" : "alliancecoldprotectionback" },
+      { "item" : "avikanheatprotectionback" },
+	//Tenant
+      { "item" : "alliancesoldierbeacon" },
+      { "item" : "alliancetier5beacon" },
+      { "item" : "alliancetier6beacon" }
 
     ]
   },

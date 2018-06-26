@@ -119,11 +119,14 @@ function TheaZaheedThrow:attemptTeleport()
   
   --Return the weapon to the player's hand
   animator.setAnimationState("blade", "returning")
+  self:reset(true)
 end
 
-function TheaZaheedThrow:reset()
+function TheaZaheedThrow:reset(forceCooldown)
   self.windupTimer = self.windupTime
-  self.cooldownTimer = self.cooldownTime
+  if forceCooldown then
+	self.cooldownTimer = self.cooldownTime
+  end
   self.waitTimer = self.maxWaitTime
   self.targetPosition = nil
   if animator.animationState("blade") == "hidden" then

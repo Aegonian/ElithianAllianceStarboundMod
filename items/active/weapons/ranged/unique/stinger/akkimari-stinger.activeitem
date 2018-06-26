@@ -14,7 +14,7 @@
   "twoHanded" : true,
   
   //CONFIGURATION FOR WEAPONS COLLECTION
-  //"collectablesOnPickup" : { "thea_weapons" : "akkimari-stinger" },
+  "collectablesOnPickup" : { "thea_weapons" : "akkimari-stinger" },
   
   "meritTokenValue" : 100,
   

@@ -1,0 +1,66 @@
+{
+  "type" : "crewmembertrinkrimdweller",
+  "baseType" : "crewmembertrink",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+
+	"crew" : {
+	  "role" : {
+        "type" : "rimdweller",
+        "name" : "Rimdweller",
+        "field" : "Rim",
+        "uniformColorIndex" : 1
+      },
+
+      "ranks" : [
+        "Mercenary from the <field>",
+        "<field>-born Criminal",
+        "Rogue <role>",
+        "Self-trained <role>",
+        "Anonymous <role>",
+        "<field> Smuggler",
+        "<role> Mercenary"
+      ]
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+		{
+		  "chest" : [ { "name" : "trink-rimchest", "data" : { "colorIndex" : 1 } } ],
+		  "legs" : [ { "name" : "trink-rimlegs", "data" : { "colorIndex" : 1 } } ],
+		  "primary" : [
+			"thea-rimrifle1",
+			"thea-rimrifle2",
+			"thea-rimsniper1",
+			"thea-rimshotgun1-npc"
+		  ],
+		  "sheathedprimary" : [
+			"thea-rimchainsaw-npc"
+		  ]
+		}
+	  ] ],
+      [0, [
+		{
+		  "chest" : [ { "name" : "trink-rimchest", "data" : { "colorIndex" : 1 } } ],
+		  "legs" : [ { "name" : "trink-rimlegs", "data" : { "colorIndex" : 1 } } ],
+		  "primary" : [
+			"thea-rimchainsaw-npc"
+		  ],
+		  "sheathedprimary" : [
+			"thea-rimrifle1",
+			"thea-rimrifle2",
+			"thea-rimsniper1",
+			"thea-rimshotgun1-npc"
+		  ]
+		}
+	  ] ]
+    ]
+  }
+}

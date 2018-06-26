@@ -5,7 +5,7 @@
     "rules" : [
     ],
 	
-    "anchor" : [ "akki-cargodrop", "akki-cargodrop2", "akki-tower" ],
+    "anchor" : [ "akki-cargodrop", "akki-cargodrop2", "akki-tower", "akki-justicarspawn" ],
 
     "maxRadius" : 1000000,
     "maxParts" : 3,
@@ -33,6 +33,14 @@
         [ "maxSpawnCount", [1] ]
       ],
       "def" : [ "tmx", "akki-tower.json" ],
+      "minimumThreatLevel" : 2
+    },
+    {
+      "name" : "akki-justicarspawn",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "akki-justicarspawn.json" ],
       "minimumThreatLevel" : 2
     }
   ]

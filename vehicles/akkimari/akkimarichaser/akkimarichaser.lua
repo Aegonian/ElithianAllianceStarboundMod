@@ -335,13 +335,27 @@ function aim(driverThisFrame)
 		local finalFireAngle = vec2.rotate({1, 0}, self.fireAngle + sb.nrand(self.fireInaccuracy, 0))
 		--fireAngle[1] = fireAngle[1] * self.facingDirection
 		if self.lastGunFired == 0 then
-		  world.spawnProjectile(self.fireProjectile, vec2.add(mcontroller.position(), animator.partPoint("foregroundgun", "firePoint")), vehicle.entityLoungingIn("drivingSeat"), finalFireAngle, false, self.fireProjectileConfig)
+		  local foregroundFirePos = vec2.add(mcontroller.position(), animator.partPoint("foregroundgun", "firePoint"))
+		  local foregroundOrigin = vec2.add(mcontroller.position(), animator.partPoint("foregroundgun", "origin"))
+		  if not world.lineTileCollision(foregroundFirePos, foregroundOrigin) then
+			world.spawnProjectile(self.fireProjectile, foregroundFirePos, vehicle.entityLoungingIn("drivingSeat"), finalFireAngle, false, self.fireProjectileConfig)
+			world.debugLine(foregroundFirePos, foregroundOrigin, "green")
+		  else
+			world.debugLine(foregroundFirePos, foregroundOrigin, "red")
+		  end
 		  animator.setAnimationState("foregroundgunmuzzle", "firing")
 		  animator.playSound("fire")
 		  self.fireTimer = self.fireTime
 		  self.lastGunFired = 1
 		elseif self.lastGunFired == 1 then
-		  world.spawnProjectile(self.fireProjectile, vec2.add(mcontroller.position(), animator.partPoint("backgroundgun", "firePoint")), vehicle.entityLoungingIn("drivingSeat"), finalFireAngle, false, self.fireProjectileConfig)
+		  local backgroundFirePos = vec2.add(mcontroller.position(), animator.partPoint("backgroundgun", "firePoint"))
+		  local backgroundOrigin = vec2.add(mcontroller.position(), animator.partPoint("backgroundgun", "origin"))
+		  if not world.lineTileCollision(backgroundFirePos, backgroundOrigin) then
+			world.spawnProjectile(self.fireProjectile, backgroundFirePos, vehicle.entityLoungingIn("drivingSeat"), finalFireAngle, false, self.fireProjectileConfig)
+			world.debugLine(backgroundFirePos, backgroundOrigin, "green")
+		  else
+			world.debugLine(backgroundFirePos, backgroundOrigin, "red")
+		  end
 		  animator.setAnimationState("backgroundgunmuzzle", "firing")
 		  animator.playSound("fire")
 		  self.fireTimer = self.fireTime

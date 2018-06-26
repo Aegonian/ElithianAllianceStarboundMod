@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "alliancemetaltier6", "count" : 12 },
+    { "item" : "alliancemagazine", "count" : 1 },
+    { "item" : "eritotargetingchip", "count" : 1 }
+  ],
+  "output" : { "item" : "thea-nauroo", "count" : 1 },
+  "groups" : [ "alliancecrafting3", "weapons", "all" ]
+}

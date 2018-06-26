@@ -27,6 +27,11 @@
     "path": "/objectSpawnPool/-",
     "value": [0.08, "alliancemerchantship"]
   },
+  {
+    "op": "add",
+    "path": "/objectSpawnPool/-",
+    "value": [0.08, "rimdwellerhostileship"]
+  },
   
   //Temporary Locations
   {
