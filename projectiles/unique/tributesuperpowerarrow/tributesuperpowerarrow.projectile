@@ -18,6 +18,10 @@
     {
       "action" : "config",
       "file" : "/projectiles/explosions/allianceenergyexplosionmedium/allianceenergyexplosionmedium.config"
+    },
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/brokenarrows/brokentributesuperarrow.config"
     }
   ],
   "damageKind" : "bow",

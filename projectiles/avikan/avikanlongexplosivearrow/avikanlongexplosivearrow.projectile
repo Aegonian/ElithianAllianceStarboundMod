@@ -16,6 +16,10 @@
     {
       "action" : "config",
       "file" : "/projectiles/explosions/avikanairstrikeexplosion/avikanairstrikeexplosion.config"
+    },
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/brokenarrows/brokenavikanlongexplosivearrow.config"
     }
   ],
   "damageType" : "NoDamage",

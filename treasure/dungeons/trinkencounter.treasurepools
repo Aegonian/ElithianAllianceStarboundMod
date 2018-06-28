@@ -147,7 +147,15 @@
 		{"weight" : 0.20, "item" : ["trinkelectronics", 10] }
       ]
     } ]
-  ]
+  ],
   
+  "trinkrimdwellerarmour" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.1, "item" : "trink-rimchest" },
+		{"weight" : 0.1, "item" : "trink-rimlegs" }
+      ]
+    } ]
+  ]  
 }
 

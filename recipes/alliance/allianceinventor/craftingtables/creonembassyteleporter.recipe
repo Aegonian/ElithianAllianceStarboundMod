@@ -1,0 +1,14 @@
+{
+  "input" : [
+    { "item" : "alliancemetaltier3", "count" : 12 },
+    { "item" : "alliancecircuitry", "count" : 4 },
+    { "item" : "alliancecloth", "count" : 6 },
+	{ "item" : "teleportercore", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "creonembassyteleporter",
+    "count" : 1
+  },
+  "duration" : 5,
+  "groups" : [ "allianceinventor", "craftingstations", "all" ]
+}

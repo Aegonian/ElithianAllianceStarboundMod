@@ -15,18 +15,18 @@ function update(dt)
   world.debugText(nextStep, mcontroller.position(), "red")
   
   if self.canMultiplyDamage then
-  for _, notification in ipairs(damageNotifications) do
-	if notification.healthLost > 1 and config.getParameter("damageAdditionPercentage", 0) > 0 then
-	  --sb.logInfo(sb.printJson(notification, 1))
+	for _, notification in ipairs(damageNotifications) do
+	  if notification.healthLost > 1 and config.getParameter("damageAdditionPercentage", 0) > 0 then
+		--sb.logInfo(sb.printJson(notification, 1))
 	  
-	  local damageRequest = {}
-	  damageRequest.damageType = "IgnoresDef"
-	  damageRequest.damage = notification.damageDealt * 0.1
-	  damageRequest.damageSourceKind = notification.damageSourceKind
-	  damageRequest.sourceEntityId = notification.sourceEntityId
-	  status.applySelfDamageRequest(damageRequest)
+		local damageRequest = {}
+		damageRequest.damageType = "IgnoresDef"
+		damageRequest.damage = notification.damageDealt * 0.1
+		damageRequest.damageSourceKind = notification.damageSourceKind
+		damageRequest.sourceEntityId = notification.sourceEntityId
+		status.applySelfDamageRequest(damageRequest)
+	  end
 	end
-  end
   end
   
   self.canMultiplyDamage = true

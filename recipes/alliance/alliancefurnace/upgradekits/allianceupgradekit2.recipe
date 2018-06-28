@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "alliancemetaltier2", "count" : 6 },
+    { "item" : "liquidoil", "count" : 4 }
+  ],
+  "output" : {
+    "item" : "allianceupgradekit2",
+    "count" : 1
+  },
+  "groups" : [ "alliancefurnace", "upgradekits", "all" ]
+}

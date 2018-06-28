@@ -19,17 +19,17 @@
   "hylotlDescription" : "A door large enough for a gentle giant.",
   "novakidDescription" : "Now that's a massive door!",
 
-  "aegiDescription" : "A large cargo door. It was probably designed to let Skoffs in.",
-  "avikanDescription" : "This cargo door is large enough even for the bigger types of Skoff.",
-  "erixianDescription" : "A massive cargo door. The Avikan must move some giant cargo.",
+  "aegiDescription" : "A large cargo door. Even a shuttlecraft should be able to fit through.",
+  "avikanDescription" : "A large alien cargo door. A Skoff should fit through.",
+  "erixianDescription" : "A large cargo door, for when moving large cargo.",
   "trinkDescription" : "This cargo door isn't very space-efficient.",
   "hymidDescription" : "A cargo door big enough for some personal spaceships.",
   "notixDescription" : "Most vehicles could fit right through this door.",
-  "jorgasianDescription" : "I wonder why the Avikan need such a large cargo door?",
+  "jorgasianDescription" : "A cargo door fit for a spacestation hangar",
   "centensDescription" : "TODO.",
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
-  "drodenDescription" : "Cargo door. Design officially approved for Skoff hangars.",
+  "drodenDescription" : "Cargo door. Alien design is remarkably familiar.",
 
   "inventoryIcon" : "alliancecargodooricon.png",
   "orientations" : [

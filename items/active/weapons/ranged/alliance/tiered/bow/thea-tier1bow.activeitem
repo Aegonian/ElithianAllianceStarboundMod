@@ -1,0 +1,146 @@
+{
+  "itemName" : "thea-tier1bow",
+  "price" : 250,
+  "level" : 1,
+  "inventoryIcon" : "thea-tier1bowicon.png",
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "tooltipKind" : "thea-bow-mf",
+  "category" : "bow",
+  "description" : "^gray;Harvests meat and other goods from monsters.",
+  "manufacturer" : "^gray;Bredon Arms^reset;",
+  "shortdescription" : "Bredon Compound Bow",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","bow","alliance","allianceUpgradeable"],
+
+  "animation" : "/items/active/weapons/ranged/animations/thea-bow.animation",
+  "animationParts" : {
+    "bow" : "thea-tier1bow.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : { "parts" : { "bow" : { "properties" : {
+      "offset" : [0.25, 0]
+    }}}},
+    "sounds" : {
+      "draw" : [ "/sfx/gun/bow_draw1.ogg", "/sfx/gun/bow_draw2.ogg", "/sfx/gun/bow_draw3.ogg" ],
+      "release" : [ "/sfx/gun/bow_loose.ogg" ],
+      "perfectRelease" : [ "/sfx/gun/bow_loose_perfect.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/bow/bow.lua"],
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/bow/thea-bowshot.lua"],
+    "class" : "TheaBowShot",
+	
+	"fireOffset" : [0.75, 0],
+
+    "energyPerShot" : 30,
+    "cooldownTime" : 0.4,
+    "inaccuracy" : 0.01,
+	
+	"walkWhileFiring" : true,
+	"useQuiverDamageBonus" : true,
+
+    "drawFrameSelector" : "bowImageSelector",
+    "drawPowerMultiplier" : "drawTimeMultiplier",
+    "drawSpeedMultiplier" : "drawTimeMultiplier",
+
+    "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
+
+    "projectileType" : "alliancearrow",
+    "powerProjectileType" : "alliancepowerarrow",
+    "powerProjectileTime" : [0.9, 1.1],
+    "projectileParameters" : {
+      "speed" : 80,
+      "power" : 6.5
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : -30,
+        "weaponRotation" : 0,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "draw" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "fire" : {
+        "duration" : 0.2,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true,
+
+        "frontArmFrame" : "idle.3"
+      }
+    }
+  },
+
+  "altAbility" : {
+    "name" : "Arrow Barrage",
+    "scripts" : ["/items/active/weapons/ranged/abilities/bow/thea-arrowbarrage.lua"],
+	"class" : "TheaArrowBarrage",
+
+    "fireOffset" : [1.75, 0],
+
+    "energyPerShot" : 60,
+    "cooldownTime" : 0.25,
+	
+	"walkWhileFiring" : true,
+	"useQuiverDamageBonus" : true,
+
+    "drawFrameSelector" : "bowImageSelectorNoPower",
+    "drawPowerMultiplier" : "normalizedDrawTimeMultiplier",
+    "drawSpeedMultiplier" : "normalizedDrawTimeMultiplier",
+
+    "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
+
+    "projectileType" : "alliancearrow",
+    "projectileParameters" : {
+      "speed" : 45,
+      "power" : 5.0
+    },
+
+    "splitDelay" : 1.0,
+    "splitAngle" : 15,
+
+    "stances" : {
+      "windup" : {
+        "duration" : 0.75,
+        "armRotation" : -60,
+        "weaponRotation" : 0,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "draw" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "fire" : {
+        "duration" : 0.2,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true,
+
+        "frontArmFrame" : "idle.3"
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/thea-buildbow.lua"
+}

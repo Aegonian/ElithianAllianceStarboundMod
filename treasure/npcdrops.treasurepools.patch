@@ -218,6 +218,25 @@
     }]
    ]
   },
+  //RIMDWELLERS
+  {"op" : "add",
+   "path" : "/trinkRimDwellerDeathTreasure",
+   "value" : [
+	[0, {
+      "pool" : [
+        {"weight" : 0.6, "pool" : "money"},
+        {"weight" : 0.05, "pool" : "alliancerimdwellerweapons"},
+        {"weight" : 0.05, "pool" : "trinkrimdwellerarmour"},
+        {"weight" : 0.3, "item" : "trinkmetal"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+   ]
+  },
   
   //=========================================================================================
   //=================================== THELEAN DROP POOLS ==================================
@@ -339,7 +358,8 @@
       "pool" : [
         {"weight" : 0.6, "pool" : "money"},
         {"weight" : 0.05, "pool" : "alliancerimdwellerweapons"},
-        {"weight" : 0.35, "item" : "alliancemetal"}
+        {"weight" : 0.05, "pool" : "alliancerimdwellerarmour"},
+        {"weight" : 0.3, "item" : "alliancemetal"}
       ],
       "poolRounds" : [
         [0.20, 0],
@@ -356,7 +376,8 @@
       "pool" : [
         {"weight" : 0.6, "pool" : "money"},
         {"weight" : 0.05, "pool" : "alliancerimdwellerweapons2"},
-        {"weight" : 0.35, "item" : "alliancemetal"}
+        {"weight" : 0.05, "pool" : "alliancerimdwellerarmour2"},
+        {"weight" : 0.3, "item" : "alliancemetal"}
       ],
       "poolRounds" : [
         [0.20, 0],

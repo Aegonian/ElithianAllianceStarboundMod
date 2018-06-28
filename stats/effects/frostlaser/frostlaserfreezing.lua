@@ -20,6 +20,8 @@ function update(dt)
 	airJumpModifier = 0.85
   })
   
+  world.debugText(self.activeTimer, mcontroller.position(), "red")
+  
   if self.activeTimer >= config.getParameter("timeToFreeze", 5) then
 	status.addEphemeralEffect("frostlaserfrozen", config.getParameter("freezeDuration", 5), effect.sourceEntity())
 	effect.expire()

@@ -4,9 +4,9 @@
 
   "effectConfig" : {
 	"timeToFreeze" : 1.0,
-	"freezeDuration" : 2.5
+	"freezeDuration" : 4.0
   },
-  "defaultDuration" : 0.5,
+  "defaultDuration" : 0.25,
 
   "scripts" : [
     "frostlaserfreezing.lua"

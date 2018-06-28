@@ -2,7 +2,6 @@
   "projectileName" : "tributearrow",
   "physics" : "avikanarrow",
   "bounces" : 0,
-  "damageKindImage" : "icon.png",
   "image" : "tributearrow.png",
   "animationCycle" : 0.5,
   "frameNumber" : 1,

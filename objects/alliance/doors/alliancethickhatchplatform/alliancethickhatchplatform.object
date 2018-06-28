@@ -1,0 +1,66 @@
+{
+  "objectName" : "alliancethickhatchplatform",
+  "colonyTags" : ["alliance", "door"],
+  "rarity" : "Common",
+  "category" : "door",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A metal hatch with a built-in platform.",
+  "shortdescription" : "Thick Alliance Platform Hatch",
+  "race" : "aegi",
+  
+  "health" : 4,
+
+  "floranDescription" : "Metal hatchesss hass platform insside.",
+  "glitchDescription" : "Pleased. This metal hatch doubles as a platform when opened.",
+  "novakidDescription" : "This hatch acts as a platform when open. Now that's useful!",
+  
+  "drodenDescription" : "Detected alien hatch. Design incorporates built-in platform.",
+
+  "inventoryIcon" : "alliancethickhatchplatformicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "alliancethickhatchplatform.png:default",
+      "imagePosition" : [0, 0],
+      "renderLayer" : "Object+5",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "left", "right" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/door/door.lua" ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/door/door.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_open.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_close.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "alliancethickhatchplatform.png"
+  },
+  "animationPosition" : [0, 0],
+  
+  //Config for platform when opened
+  "platformDoors" : true,
+  "openMaterials" : [ ],
+  "openMaterialSpaces" : [
+	  [[0,1],"metamaterial:objectplatform"],
+	  [[1,1],"metamaterial:objectplatform"],
+	  [[2,1],"metamaterial:objectplatform"],
+	  [[3,1],"metamaterial:objectplatform"],
+	  [[4,1],"metamaterial:objectplatform"]
+  ],
+
+  "inputNodes" : [ [4, 1] ],
+  "outputNodes" : [ [0, 0] ]
+}

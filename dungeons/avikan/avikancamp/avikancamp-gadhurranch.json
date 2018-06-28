@@ -3,7 +3,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJzt0TFqwwAUREHhLjdykdL3P1MIGJLGSIhIT\/GfhbnA29uyLDcAAABOY+vTvpv23bTvpn037btp3037btp3076b9t2076Z9N+27ad9N+27ad9O+m\/bdtO+mfTftu2nfTftu2nfTvpv23bTvpn037btp3037btp3076b9t2076Z9N+27ad9N+27ad9O+m\/Z\/t8+nrdN+\/x7LT+\/ftk77fftu\/Kr91v7a75v23dbab+l\/Zvv7Be2d9tduv9b\/qPYfrNJe+4m0134i7bWfSHvtJ9Je+4m0134i7bWfSHvtJ9Je+4m0f7\/2Pmh6++I6vaf+UPed+EPdcuIHdburfnX0z3WH\/0rzntYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALy7LzbPoQ8=",
+         "data":"eJzt0TFqwwAUREHhLldykdL3P1IIGJLGSIhIT\/GfhbnA29uyLDcAAABOY+vTvpv23bTvpn037btp3037btp3076b9t2076Z9N+27ad9N+27ad9O+m\/bdtO+mfTftu2nfTftu2nfTvpv23bTvpn037btp3037btp3076b9t2076Z9N+27ad9N+27ad9O+m\/Z\/t8+nrdN+\/x7LT+\/ftk77fftu\/Kr91v7a75v23dbab+l\/Zvv7Be2d9tduv9b\/qPYfrNJe+4m0134i7bWfSHvtJ9Je+4m0134i7bWfSHvtJ9Je+4m0f7\/2Pmh6++I6vaf+UPed+EPdcuIHdburfnX0z3WH\/0rzntYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALy7L0Guogs=",
          "encoding":"base64",
          "height":150,
          "name":"back",
@@ -16,7 +16,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJzt0EEKAgEQA0Gv\/sj\/v8y7KIIasnGroO+TuVwAAAAAAAAAAAAAAAAAAAAAAAAAAGDXrX3Ag6Pdk3S0rUe751eueltKe9dCKe1dC6W0dy2U0t61UEp710Ip7V0LpbR3LZTS3rVQSnvXQintXQultHctlNLetVBKe9dCKe1dC6W0dy2U0t61UEp710Ip7V0LpbR3LZTW3ne0mtrbz\/bvV9o\/OePPn2n\/6Yw\/f9T+2xl\/\/qlv\/uLvfX7e59cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPy7O6SKQAU=",
+         "data":"eJzt0EEKAgEQA0Gvfsn\/P8y7KIIasnGroO+TuVwAAAAAAAAAAAAAAAAAAAAAAAAAAGDXrX3Ag6Pdk3S0rUe751eueltKe9dCKe1dC6W0dy2U0t61UEp710Ip7V0LpbR3LZTS3rVQSnvXQintXQultHctlNLetVBKe9dCKe1dC6W0dy2U0t61UEp710Ip7V0LpbR3LZTW3ne0mtrbz\/bvV9o\/OePPn2n\/6Yw\/f9T+2xl\/\/qlv\/uLvfX7e59cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPy7O\/bWQA0=",
          "encoding":"base64",
          "height":150,
          "name":"front",
@@ -33,7 +33,7 @@
          "name":"objects",
          "objects":[
                 {
-                 "gid":159,
+                 "gid":219,
                  "height":64,
                  "id":205,
                  "name":"",
@@ -49,7 +49,7 @@
                  "y":464
                 }, 
                 {
-                 "gid":188,
+                 "gid":248,
                  "height":24,
                  "id":206,
                  "name":"",
@@ -65,7 +65,7 @@
                  "y":424
                 }, 
                 {
-                 "gid":176,
+                 "gid":236,
                  "height":48,
                  "id":207,
                  "name":"",
@@ -81,7 +81,7 @@
                  "y":464
                 }, 
                 {
-                 "gid":157,
+                 "gid":217,
                  "height":40,
                  "id":208,
                  "name":"",
@@ -97,7 +97,7 @@
                  "y":464
                 }, 
                 {
-                 "gid":93,
+                 "gid":153,
                  "height":16,
                  "id":209,
                  "name":"",
@@ -113,7 +113,7 @@
                  "y":464
                 }, 
                 {
-                 "gid":261,
+                 "gid":321,
                  "height":16,
                  "id":210,
                  "name":"",
@@ -129,7 +129,7 @@
                  "y":464
                 }, 
                 {
-                 "gid":262,
+                 "gid":322,
                  "height":16,
                  "id":211,
                  "name":"",
@@ -145,7 +145,7 @@
                  "y":464
                 }, 
                 {
-                 "gid":262,
+                 "gid":322,
                  "height":16,
                  "id":216,
                  "name":"",
@@ -214,7 +214,7 @@
                  "visible":true,
                  "width":8,
                  "x":248,
-                 "y":456
+                 "y":424
                 }, 
                 {
                  "height":8,
@@ -229,7 +229,7 @@
                  "visible":true,
                  "width":8,
                  "x":336,
-                 "y":456
+                 "y":424
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -407,15 +407,15 @@
          "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/miscellaneous.json"
         }, 
         {
-         "firstgid":21,
+         "firstgid":23,
          "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/liquids.json"
         }, 
         {
-         "firstgid":49,
+         "firstgid":51,
          "source":"..\/..\/..\/tilesets\/avikan-custom\/theamaterials.json"
         }, 
         {
-         "firstgid":92,
+         "firstgid":152,
          "source":"..\/..\/..\/tilesets\/avikan-custom\/theaobjects-avikan.json"
         }],
  "tilewidth":8,

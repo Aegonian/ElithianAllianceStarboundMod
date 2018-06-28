@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "alliancemetal", "count" : 12 },
+    { "item" : "allianceglassitem", "count" : 4 },
+    { "item" : "alliancecircuitry", "count" : 2 }
+  ],
+  "output" : {
+    "item" : "alliancerailcrafting",
+    "count" : 1
+  },
+  "duration" : 5,
+  "groups" : [ "allianceinventor2", "craftingstations", "all" ]
+}

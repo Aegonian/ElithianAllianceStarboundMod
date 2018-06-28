@@ -54,8 +54,8 @@
 			  { "name" : "aegi-rimsoldierlegs" }
 			],
             "primary" : [
-			  //"thea-rimshotgun1-npc",
-			  //"thea-rimlauncher1",
+			  "thea-rimshotgun1-npc",
+			  "thea-rimlauncher1",
 			  "thea-rimgrenadelauncher1-npc"
             ],
             "sheathedprimary" : [

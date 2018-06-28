@@ -8,8 +8,6 @@
   "category" : "decorative",
   "printable" : false,
   "price" : 500,
-  
-  "lightColor" : [16, 88, 128],
 
   "apexDescription" : "A large hologram. Is this the planet Elithia?",
   "avianDescription" : "A large planetary hologram.",
@@ -35,7 +33,7 @@
   "inventoryIcon" : "allianceglobehologramicon.png",
   "orientations" : [
     {
-      "imageLayers" : [ { "image" : "allianceglobehologram.png:<color>.<frame>", "fullbright" : true }, { "image" : "allianceglobehologramlit.png:<color>.<frame>" } ],
+      "image" : "allianceglobehologram.png",
 
       "imagePosition" : [-48, 0],
       "frames" : 16,
@@ -45,5 +43,23 @@
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]
     }
-  ]
+  ],
+
+  "animation" : "allianceglobehologram.animation",
+  "animationParts" : {
+    "base" : "base.png",
+    "hologram" : "hologram.png"
+  },
+  "animationPosition" : [-48, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : false,
+  
+  "defaultLightState" : true,
+  "lightColor" : [16, 88, 128],
+  "lightColorOff" : [0, 0, 0],
+
+  "inputNodes" : [ [-1, 0] ]
 }

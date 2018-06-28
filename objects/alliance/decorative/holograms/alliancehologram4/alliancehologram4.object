@@ -28,8 +28,6 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Detected alien hologram. Attempting translation.",
-
-  "lightColor" : [0, 48, 64],
   
   "inventoryIcon" : "alliancehologram4icon.png",
   "orientations" : [
@@ -44,5 +42,22 @@
       "spaceScan" : 0.1,
       "anchors" : [ ]
     }
-  ]
+  ],
+
+  "animation" : "/objects/alliance/decorative/holograms/alliancehologram.animation",
+  "animationParts" : {
+    "light" : "alliancehologram4.png"
+  },
+  "animationPosition" : [-8, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : false,
+  
+  "defaultLightState" : true,
+  "lightColor" : [0, 48, 64],
+  "lightColorOff" : [0, 0, 0],
+
+  "inputNodes" : [ [0, 0] ]
 }

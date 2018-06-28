@@ -41,7 +41,7 @@
   
   "altAbilityType" : "thea-shieldbladedefend",
   "altAbility" : {
-	"energyUsage" : 60
+	"energyUsage" : 50
   },
 
   "builder" : "/items/buildscripts/buildunrandweapon.lua"

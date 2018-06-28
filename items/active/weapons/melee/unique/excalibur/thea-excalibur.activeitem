@@ -49,7 +49,9 @@
   },
   
   "altAbilityType" : "thea-shieldbladedefendenergy",
-  "altAbility" : {},
+  "altAbility" : {
+	"energyUsage" : 50
+  },
 
   "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

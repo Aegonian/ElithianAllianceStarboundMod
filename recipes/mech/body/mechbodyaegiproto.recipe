@@ -1,7 +1,7 @@
 {
   "input" : [
-    { "item" : "avikanmetal", "count" : 40 },
-	{ "item" : "avikandarkmetal", "count" : 20 }
+    { "item" : "alliancemetal", "count" : 40 },
+	{ "item" : "allianceballisticplate", "count" : 10 }
   ],
   "duration" : 3,
   "output" : { "item" : "mechbodyaegiproto", "count" : 1 },

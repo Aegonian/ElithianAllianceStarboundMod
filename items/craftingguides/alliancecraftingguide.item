@@ -20,6 +20,18 @@
 	  "aegi-tier2chest",
 	  "aegi-tier2head",
 	  "aegi-tier2legs",
+	//Armour - Clothing
+	  "aegi-asacoatchest",
+	  "aegi-asacoatlegs",
+	  "aegi-asauniformchest",
+	  "aegi-asauniformlegs",
+	  "aegi-baggylegs",
+	  "aegi-casuallegs",
+	  "aegi-formalchest",
+	  "aegi-formallegs",
+	  "aegi-shirt",
+	  "aegi-shorts",
+	  "aegi-tanktop",
 	//Consumables
 	  "alliancebandage",
 	//Ingredients
@@ -39,6 +51,7 @@
 	  "alliancefarmpanel",
 	  "alliancefence",
 	  "allianceglass",
+	  "alliancegroundpanel",
 	  "alliancehullpanel",
 	  "allianceinterfacewall",
 	  "alliancepavementstone",
@@ -111,6 +124,8 @@
 	  "alliancemanholedoor",
 	  "allianceslidingdoor",
 	  "allianceslidingdoorautomated",
+	  "alliancethickhatch",
+	  "alliancethickhatchplatform",
 	//Objects - Furniture
 	  "alliancebathroomsink",
 	  "alliancebathroomsinkmirror",
@@ -173,11 +188,13 @@
 	  "thea-tier1shortsword",
 	  "thea-tier2dagger",
 	  "thea-tier2spear",
+	  "allianceshield",
 	//Weapons - Ranged
 	  "thea-tier1pistol",
 	  "thea-tier1rifle",
 	  "thea-tier1shotgun",
 	  "thea-tier1sniper",
+	  "thea-tier1bow",
 	  "thea-tier2rifle",
 	  "thea-tier2shotgun",
 	  "thea-tier2smg",
@@ -246,6 +263,8 @@
 	  "alliancecoreenergetic",
 	  "alliancecorepowerful",
 	  "alliancecorevigorous",
+	//Objects - Generator
+	  "allianceshieldgenerator",
 	//Weapons - Melee
 	  "thea-tier5dagger",
 	  "thea-tier5spear",
@@ -271,6 +290,9 @@
 	  "alliancebrick",
 	  "alliancecircuitry",
 	  "allianceglassitem",
+	  "connectorstrip",
+	//Upgrade Kits
+	  "allianceupgradekit2",
 	  
 //Alliance Furnace 2
 	//Bars
@@ -278,11 +300,17 @@
 	  "alliancemetaltier4",
 	//Ingredients
 	  "alliancequantumchip",
+	//Upgrade Kits
+	  "allianceupgradekit3",
+	  "allianceupgradekit4",
 	  
 //Alliance Furnace 3
 	//Bars
 	  "alliancemetaltier5",
 	  "alliancemetaltier6",
+	//Upgrade Kits
+	  "allianceupgradekit5",
+	  "allianceupgradekit6",
 	  
 //Alliance Inventor 1
 	//Crafting Tables
@@ -290,6 +318,7 @@
 	  "alliancecrafting",
 	  "alliancefurnace",
 	  "alliancekitchentable",
+	  "creonembassyteleporter",
 	//EPPs
 	  "alliancebreathprotectionback",
 	//Tenant
@@ -299,6 +328,7 @@
 	//Crafting Tables
 	  "allianceweaponattachmentbench",
 	  "allianceweaponimprovementbench",
+	  "alliancerailcrafting",
 	//EPPs
 	  "allianceradiationprotectionback",
 	//Tenant
@@ -308,11 +338,22 @@
 //Alliance Inventor 3
 	//EPPs
 	  "alliancecoldprotectionback",
-	  "avikanheatprotectionback",
+	  "allianceheatprotectionback",
 	//Tenant
 	  "alliancesoldierbeacon",
 	  "alliancetier5beacon",
-	  "alliancetier6beacon"
+	  "alliancetier6beacon",
+	  
+//Alliance Rail Crafting
+	//Rails
+	  "alliancerail",
+	//Rails Hooks
+	  "alliancerailhook",
+	//Rail Vehicles
+	  "alliancerailplatform",
+	  "alliancerailtram",
+	  "allianceelevator",
+	  "alliancebriggstram"
 	
     ],
   "itemTags" : [ "craftingguide" ]

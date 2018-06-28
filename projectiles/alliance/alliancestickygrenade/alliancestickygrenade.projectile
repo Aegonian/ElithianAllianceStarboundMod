@@ -6,6 +6,7 @@
   "image" : "alliancestickygrenade.png",
   "animationCycle" : 0.5,
   "frameNumber" : 1,
+  "piercing" : true,
   //"emitters" : [ "rocketsmoke" ],
   "speed" : 20,
   "actionOnReap" : [
@@ -18,7 +19,10 @@
   "damageType" : "NoDamage",
   "damageKind" : "default",
   
-  "scripts" : [ "/projectiles/scripts/thea-proximityexplode.lua" ],
-  "searchRadius" : 2.5,
-  "waitUntilSticky" : true
+  "renderLayer" : "Monster+1",
+  
+  "scripts" : [ "/projectiles/scripts/thea-stickingprojectile.lua" ],
+  "searchRadius" : 0.1,
+  "stickToTargetTime" : 2.5,
+  "proximitySearchRadius" : 2.5
 }

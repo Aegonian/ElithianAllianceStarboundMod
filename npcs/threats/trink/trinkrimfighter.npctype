@@ -2,7 +2,7 @@
   "type" : "trinkrimfighter",
   "baseType" : "hostile",
 
-  "dropPools" : [ "aegiRimDwellerDeathTreasure" ],
+  "dropPools" : [ "trinkRimDwellerDeathTreasure" ],
 
   "scriptConfig" : {
     "behaviorConfig" : {

@@ -1,0 +1,26 @@
+{
+  "kind" : "brokenavikanlongarrow2",
+  "definition" : {
+    "type" : "textured",
+    "image" : "/particles/brokenarrows/avikanlongarrow/brokenavikanlongarrow2.png",
+    "position" : [0, 0],
+    "size" : 1.0,
+    "color" : [255, 255, 255, 255],
+    "fade" : 0,
+    "initialVelocity" : [2.0, 9.0],
+    "finalVelocity" : [0, -6],
+    "approach" : [5, 50],
+    "rotation" : 0,
+    "flippable" : true,
+    "angularVelocity" : 45,
+    "timeToLive" : 0.75,
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.25,
+    "layer" : "middle",
+	"variance" : {
+	  "initialVelocity" : [9, 3],
+	  "timeToLive" : 0.5,
+	  "angularVelocity" : 540
+	}
+  }
+}

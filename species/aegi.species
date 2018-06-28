@@ -28,6 +28,18 @@
       { "item" : "aegi-tier2chest" },
       { "item" : "aegi-tier2head" },
       { "item" : "aegi-tier2legs" },
+	//Armour - Clothing
+      { "item" : "aegi-asacoatchest" },
+      { "item" : "aegi-asacoatlegs" },
+      { "item" : "aegi-asauniformchest" },
+      { "item" : "aegi-asauniformlegs" },
+      { "item" : "aegi-baggylegs" },
+      { "item" : "aegi-casuallegs" },
+      { "item" : "aegi-formalchest" },
+      { "item" : "aegi-formallegs" },
+      { "item" : "aegi-shirt" },
+      { "item" : "aegi-shorts" },
+      { "item" : "aegi-tanktop" },
 	//Consumables
       { "item" : "alliancebandage" },
 	//Ingredients
@@ -47,6 +59,7 @@
       { "item" : "alliancefarmpanel" },
       { "item" : "alliancefence" },
       { "item" : "allianceglass" },
+      { "item" : "alliancegroundpanel" },
       { "item" : "alliancehullpanel" },
       { "item" : "allianceinterfacewall" },
       { "item" : "alliancepavementstone" },
@@ -119,6 +132,8 @@
       { "item" : "alliancemanholedoor" },
       { "item" : "allianceslidingdoor" },
       { "item" : "allianceslidingdoorautomated" },
+      { "item" : "alliancethickhatch" },
+      { "item" : "alliancethickhatchplatform" },
 	//Objects - Furniture
       { "item" : "alliancebathroomsink" },
       { "item" : "alliancebathroomsinkmirror" },
@@ -181,11 +196,13 @@
       { "item" : "thea-tier1shortsword" },
       { "item" : "thea-tier2dagger" },
       { "item" : "thea-tier2spear" },
+      { "item" : "allianceshield" },
 	//Weapons - Ranged
       { "item" : "thea-tier1pistol" },
       { "item" : "thea-tier1rifle" },
       { "item" : "thea-tier1shotgun" },
       { "item" : "thea-tier1sniper" },
+      { "item" : "thea-tier1bow" },
       { "item" : "thea-tier2rifle" },
       { "item" : "thea-tier2shotgun" },
       { "item" : "thea-tier2smg" },
@@ -254,6 +271,8 @@
       { "item" : "alliancecoreenergetic" },
       { "item" : "alliancecorepowerful" },
       { "item" : "alliancecorevigorous" },
+	//Objects - Generator
+      { "item" : "allianceshieldgenerator" },
 	//Weapons - Melee
       { "item" : "thea-tier5dagger" },
       { "item" : "thea-tier5spear" },
@@ -279,6 +298,9 @@
       { "item" : "alliancebrick" },
       { "item" : "alliancecircuitry" },
       { "item" : "allianceglassitem" },
+      { "item" : "connectorstrip" },
+	//Upgrade Kits
+      { "item" : "allianceupgradekit2" },
 	  
 //Alliance Furnace 2
 	//Bars
@@ -286,11 +308,17 @@
       { "item" : "alliancemetaltier4" },
 	//Ingredients
       { "item" : "alliancequantumchip" },
+	//Upgrade Kits
+      { "item" : "allianceupgradekit3" },
+      { "item" : "allianceupgradekit4" },
 	  
 //Alliance Furnace 3
 	//Bars
       { "item" : "alliancemetaltier5" },
       { "item" : "alliancemetaltier6" },
+	//Upgrade Kits
+      { "item" : "allianceupgradekit5" },
+      { "item" : "allianceupgradekit6" },
 	  
 //Alliance Inventor 1
 	//Crafting Tables
@@ -298,6 +326,7 @@
       { "item" : "alliancecrafting" },
       { "item" : "alliancefurnace" },
       { "item" : "alliancekitchentable" },
+      { "item" : "creonembassyteleporter" },
 	//EPPs
       { "item" : "alliancebreathprotectionback" },
 	//Tenant
@@ -307,6 +336,7 @@
 	//Crafting Tables
       { "item" : "allianceweaponattachmentbench" },
       { "item" : "allianceweaponimprovementbench" },
+      { "item" : "alliancerailcrafting" },
 	//EPPs
       { "item" : "allianceradiationprotectionback" },
 	//Tenant
@@ -316,11 +346,22 @@
 //Alliance Inventor 3
 	//EPPs
       { "item" : "alliancecoldprotectionback" },
-      { "item" : "avikanheatprotectionback" },
+      { "item" : "allianceheatprotectionback" },
 	//Tenant
       { "item" : "alliancesoldierbeacon" },
       { "item" : "alliancetier5beacon" },
-      { "item" : "alliancetier6beacon" }
+      { "item" : "alliancetier6beacon" },
+	  
+//Alliance Rail Crafting
+	//Rails
+      { "item" : "alliancerail" },
+	//Rails Hooks
+      { "item" : "alliancerailhook" },
+	//Rail Vehicles
+      { "item" : "alliancerailplatform" },
+      { "item" : "alliancerailtram" },
+      { "item" : "allianceelevator" },
+      { "item" : "alliancebriggstram" }
 
     ]
   },

@@ -1,16 +1,16 @@
 {
   "itemName" : "allianceshield",
-  "level" : 6,
+  "level" : 2,
   "price" : 600,
   "maxStack" : 1,
-  "rarity" : "Legendary",
+  "rarity" : "Uncommon",
   "category" : "shield",
   "description" : "A modern metal shield built by Stryker Smithing.",
   "manufacturer" : "^gray;Stryker Smithing^reset;",
   "shortdescription" : "Stryker X-07 Shield",
   "tooltipKind" : "thea-shield-mf",
   "twoHanded" : false,
-  "itemTags" : ["shield","alliance","strykersmithing"],
+  "itemTags" : ["shield","alliance","strykersmithing","allianceUpgradeable"],
   
   "inventoryIcon" : "images/allianceshield.png:nearidle",
 

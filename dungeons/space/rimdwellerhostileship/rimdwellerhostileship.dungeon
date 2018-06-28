@@ -4,7 +4,7 @@
 	"species" : "aegi",
     "rules" : [
     ],
-    "anchor" : [ "back1" ],
+    "anchor" : [ "back1", "back2" ],
     "gravity" : 80,
     "breathable" : true,
     "maxRadius" : 1000000,

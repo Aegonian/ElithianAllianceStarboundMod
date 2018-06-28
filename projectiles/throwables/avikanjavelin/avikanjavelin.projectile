@@ -7,7 +7,6 @@
   "power" : 25,
   "knockback" : 10,
   "knockbackDirectional" : true,
-  "damageKindImage" : "icon.png",
   "timeToLive" : 30,
   "pointLight" : false,
   "actionOnReap" : [

@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "alliancecloth", "count" : 8 }
+  ],
+  "duration" : 5,
+  "output" : { "item" : "aegi-shirt", "count" : 1 },
+  "groups" : [ "alliancecrafting", "armours", "all" ]
+}

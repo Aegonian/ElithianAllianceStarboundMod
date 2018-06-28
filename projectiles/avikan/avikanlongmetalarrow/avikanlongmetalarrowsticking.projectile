@@ -12,5 +12,16 @@
   "supportsProcessing" : true,
   "damageType" : "NoDamage",
   "damageKind" : "default",
-  "hydrophobic" : false
+  "hydrophobic" : false,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/brokenarrows/brokenavikanlongmetalarrow.config"
+    }
+  ],
+  
+  "renderLayer" : "Monster+1",
+  
+  "scripts" : [ "/projectiles/scripts/thea-stickingprojectile.lua" ],
+  "searchRadius" : 0.1
 }

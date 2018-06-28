@@ -18,7 +18,7 @@
         }
       }
     },
-    "filter" : [ "avikanrailcrafting" ]
+    "filter" : [ "avikanrailcrafting", "railobject" ]
   },
   "printable" : false,
   "price" : 750,
@@ -56,7 +56,6 @@
       "flipImages" : true,
       "direction" : "left",
       "anchors" : [ "bottom" ]
-
     },
     {
 	  "imageLayers" : [ { "image" : "avikanrailcrafting.png:<color>.<frame>" }, { "image" : "avikanrailcraftinglights.png:<color>.<frame>", "fullbright" : true } ],
@@ -68,7 +67,6 @@
       "spaceScan" : 0.1,
       "direction" : "right",
       "anchors" : [ "bottom" ]
-
     }
   ],
 
