@@ -481,9 +481,34 @@
   "alliancecodex" : [
     [1, {
 	  "pool" : [
-        {"weight" : 0.5, "pool" : "avikanothercodex" },
-		{"weight" : 1.0, "pool" : "avikanhistorycodex" },
-		{"weight" : 1.0, "pool" : "avikanrhadeiscodex" }
+        {"weight" : 1.0, "pool" : "allianceothercodex" },
+		{"weight" : 1.0, "pool" : "alliancehistorycodex" }
+      ]
+    } ]
+  ],
+  "alliancehistorycodex" : [
+    [1, {
+      "poolRounds" : [
+        [0.9, 1],
+        [0.1, 2]
+      ],
+	  "pool" : [
+        {"weight" : 1.0, "item" : "aegihistory1-codex" },
+		{"weight" : 1.0, "item" : "aegihistory2-codex" },
+		{"weight" : 1.0, "item" : "aegihistory3-codex" },
+		{"weight" : 1.0, "item" : "aegihistory4-codex" },
+		{"weight" : 1.0, "item" : "aegihistory5-codex" },
+		{"weight" : 1.0, "item" : "aegihistory6-codex" }
+      ]
+    } ]
+  ],
+  "allianceothercodex" : [
+    [1, {
+	  "pool" : [
+        {"weight" : 1.0, "item" : "aaepamphlet-codex" },
+		{"weight" : 1.0, "item" : "enerthpamphlet-codex" },
+		{"weight" : 1.0, "item" : "mehrosavanpamphlet-codex" },
+		{"weight" : 1.0, "item" : "aegivoyagercompany-codex" }
       ]
     } ]
   ]

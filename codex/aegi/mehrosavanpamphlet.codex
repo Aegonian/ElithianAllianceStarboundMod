@@ -1,0 +1,22 @@
+{
+  "id" : "mehrosavanpamphlet",
+  "species" : "aegi",
+  "title" : "Mehros Avan Pamphlet",
+  "description" : "A leaflet with information about Mehros Avan's art exposition.",
+  "icon" : "mehrosavanpamphlet.png",
+  "contentPages" : [
+
+"^orange;Mehros Avan's glorious return to the Creon City Arthouse^reset;
+
+Returning to the Creon City Arthouse soon: the full exposition of Mehros Avan's incredible kinetic sculptures. The exposition includes some of Mehros's best works, like 'The Winds of Aeviri', 'Lust', 'Stellaria' and the ever-popular 'Dreams of a Hymid'. Mehros Avan's latest work, titled 'The Rains of Scii', will also be on display for the first time.",
+
+"Do not miss out on this amazing opportunity to experience the best art the Aeginian Federal Union has to offer. The exposition will be open to all, and entry is completely free of charge.
+
+For additional information, visit ain.mehrosavan.afu, or follow the Mehros Avan committee on HoloMe."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

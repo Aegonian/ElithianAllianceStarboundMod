@@ -1,0 +1,26 @@
+{
+  "id" : "enerthpamphlet",
+  "species" : "aegi",
+  "title" : "Enerth Engineering Pamphlet",
+  "description" : "A leaflet with information about Enerth Engineering.",
+  "icon" : "enerthpamphlet.png",
+  "contentPages" : [
+
+"^orange;Enerth Engineering - A solution for Every Problem^reset;
+
+Founded in 102 AA by the brothers Jorah and Marin Enerth, Enerth Engineering has since grown to be one of the largest industrial organizations in the Aeginian Federal Union, and by extension, the Elithian Alliance. Offering a wide array of products, ranging from household tools and computer systems to modular homes, carriers and ferries, Enerth Engineering is truly a part of everyday life in the Union.",
+
+"^orange;What can Enerth Engineering do for you?^reset;
+
+Is your personal computer or laptop malfunctioning? Connection issues on your TV? Household systems unresponsive? Contact your local Enerth Engineering office and ask for an engineer - we can guarantee a response time of no more than 60 minutes in all urban areas on Elithia. All offices are open all-day, all-week!",
+
+"^orange;Looking for work as an Engineer?^reset;
+
+Enerth Engineering is always recruiting more engineers so we can provide our services everywhere, anytime. Visit your local Enerth Engineering office or recruitment agency and find out how you can help Enerth Engineering grow."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

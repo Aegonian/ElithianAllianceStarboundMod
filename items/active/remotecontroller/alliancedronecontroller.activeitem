@@ -9,7 +9,7 @@
   "largeImage" : "/vehicles/alliance/alliancedrone/alliancedroneicon.png",
   "category" : "Remote Vehicle Controller",
   "description" : "Allows you to summon and control an AAE Recon Drone.",
-  "shortdescription" : "AAE Drone Controller",
+  "shortdescription" : "Phantom-5 Controller",
   "twoHanded" : true,
   "inventoryIcon" : "alliancedronecontroller.png:active.1",
   "emptyInventoryIcon" : "/items/active/remotecontroller/alliancedronecontroller.png:active.1",
@@ -31,7 +31,7 @@
   
   //Generic configuration
   "cooldownTime" : 1.0,				//Cooldown time between drone spawns
-  "transmissionRange" : 100,			//Maximum distance at which to search for and control the drone
+  "transmissionRange" : 100,		//Maximum distance at which to search for and control the drone
   "edgeOfRangeDistance" : 80,		//Minimum distance to controlled vehicle before warning noise starts playing
   "receiveInputTimeout" : 0.5,		//If we haven't received a response for this amount of time, disconnect from the drone
   "cameraFocusOnVehicle" : true,	//If set to true, the player's camera will follow the controlled vehicle while it is in range
