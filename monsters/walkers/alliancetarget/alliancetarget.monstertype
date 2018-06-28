@@ -21,7 +21,7 @@
       "targetOnDamage" : false
     },
 
-    "damageTeamType" : "passive",
+    //"damageTeamType" : "passive",
 
     "touchDamage" : {
       "poly" : [ [0.5125, 2.25], [1.0125, 1.75],  [1.0125, -0.8], [0.5125, -1.2],  [-0.5125, -1.2], [-1.0125, -0.8],  [-1.0125, 1.75], [-0.5125, 2.25] ],

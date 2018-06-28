@@ -1,7 +1,7 @@
 {
   "itemName" : "allianceupgradekit3",
   "price" : 300,
-  "maxStack" : 1,
+  "maxStack" : 50,
   "rarity" : "Uncommon",
   "category" : "craftingMaterial",
   "inventoryIcon" : "allianceupgradekit3.png",

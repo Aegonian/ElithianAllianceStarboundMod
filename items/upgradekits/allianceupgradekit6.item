@@ -1,7 +1,7 @@
 {
   "itemName" : "allianceupgradekit6",
   "price" : 1000,
-  "maxStack" : 1,
+  "maxStack" : 50,
   "rarity" : "Legendary",
   "category" : "craftingMaterial",
   "inventoryIcon" : "allianceupgradekit6.png",

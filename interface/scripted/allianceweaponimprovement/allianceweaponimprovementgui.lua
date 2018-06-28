@@ -132,7 +132,7 @@ function doUpgrade()
 		upgradedItem.parameters.level = self.upgradeToLevel
 		upgradedItem.parameters.shortdescription = itemConfig.config.shortdescription .. " [L." .. self.upgradeToLevel .."]"
         
-		world.containerTakeAt(pane.containerEntityId(), 0)
+		world.containerTakeNumItemsAt(pane.containerEntityId(), 0, 1)
 		player.giveItem(upgradedItem)
       end
     end
