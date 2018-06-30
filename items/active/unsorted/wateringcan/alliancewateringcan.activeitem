@@ -1,19 +1,19 @@
 {
-  "itemName" : "avikanwateringsack",
+  "itemName" : "alliancewateringcan",
   "price" : 50,
   "maxStack" : 1,
   "rarity" : "Common",
   "category" : "tool",
-  "description" : "A primitive but effective way to water your crops.",
-  "shortdescription" : "Avikan Watering Sack",
+  "description" : "A basic watering can, useful for tending to your crops manually.",
+  "shortdescription" : "Allosteel Watering Can",
   "tooltipKind" : "base",
   "twoHanded" : false,
 
-  "inventoryIcon" : "avikanwateringsack.png",
+  "inventoryIcon" : "alliancewateringcan.png",
 
-  "animation" : "avikanwateringsack.animation",
+  "animation" : "alliancewateringcan.animation",
   "animationParts" : {
-    "wateringcan" : "avikanwateringsack.png"
+    "wateringcan" : "alliancewateringcan.png"
   },
   "animationCustom" : { },
 
@@ -24,7 +24,7 @@
 
   "cooldownTime" : 1.0,
 
-  "projectileRate" : 0.05,
+  "projectileRate" : 0.035,
   "projectileInaccuracy" : 0.4,
   "projectileType" : "watersprinkledroplet",
   "projectileParameters" : {

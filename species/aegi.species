@@ -207,6 +207,9 @@
       { "item" : "thea-tier2shotgun" },
       { "item" : "thea-tier2smg" },
       { "item" : "thea-tier2sniper" },
+	//Weapons - Other
+      { "item" : "alliancehoe" },
+      { "item" : "alliancewateringcan" },
 	  
 //Alliance Crafting 2
 	//Armour

@@ -5,8 +5,8 @@
         "properties" : {
           "image" : "<partImage>",
           "centered" : true,
-          "offset" : [0.0, -0.1],
-          "waterPoint" : [0.7, 0.5]
+          "offset" : [0.875, 0.0],
+          "waterPoint" : [1.25, 0.5]
         }
       }
     }
