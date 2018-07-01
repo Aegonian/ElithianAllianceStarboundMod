@@ -1,0 +1,171 @@
+//Variation on the lounging behaviour that allows a loungableSearchRadius to be set. Can be used to more directly influence where an NPC will attempt to Lounge by decreasing this radius. This variation searches for loungable objects with a laying orientation instead of a sitting one
+
+{
+  "name": "thea-loungerlaying",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/query.lua",
+    "/scripts/actions/world.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/npc.lua",
+    "/scripts/actions/entity.lua",
+    "/scripts/actions/dialog.lua",
+    "/scripts/actions/time.lua"
+  ],
+  "parameters": {
+    "loungableSearchRadius": 30
+  },
+  "root": {
+    "title": "parallel",
+    "type": "composite",
+    "name": "parallel",
+    "parameters": {
+      "fail": {"value": -1},
+      "success": {"value": -1}
+    },
+    "children": [
+      {
+        "title": "Sit",
+        "type": "composite",
+        "name": "sequence",
+        "parameters": {},
+        "children": [
+          {
+            "title": "",
+            "type": "action",
+            "name": "findLoungable",
+            "parameters": {
+              "orderBy": {"value": "nearest"},
+              "orientation": {"value": "lay"},
+              "position": {"key": "spawn"},
+              "range": {"key": "<loungableSearchRadius>"},
+              "unoccupied": {"value": true}
+            },
+            "output": {
+              "entity": "chair"
+            }
+          },
+          {
+            "title": "",
+            "type": "action",
+            "name": "entityPosition",
+            "parameters": {
+              "entity": {"key": "chair"}
+            },
+            "output": {
+              "position": "chair"
+            }
+          },
+          {
+            "title": "",
+            "type": "composite",
+            "name": "parallel",
+            "parameters": {
+              "fail": {"value": 1},
+              "success": {"value": -1}
+            },
+            "children": [
+              {
+                "title": "entityExists",
+                "type": "action",
+                "name": "entityExists",
+                "parameters": {
+                  "entity": {"key": "chair"}
+                }
+              },
+              {
+                "title": "",
+                "type": "action",
+                "name": "moveToPosition",
+                "parameters": {
+                  "groundPosition": {"value": true},
+                  "position": {"key": "chair"}
+                },
+                "output": {
+                }
+              },
+              {
+                "title": null,
+                "type": "decorator",
+                "name": "inverter",
+                "parameters": {},
+                "child": {
+                  "title": null,
+                  "type": "action",
+                  "name": "loungableOccupied",
+                  "parameters": {
+                    "entity": {"key": "chair"}
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "title": "parallel",
+            "type": "composite",
+            "name": "parallel",
+            "parameters": {
+              "fail": {"value": 1},
+              "success": {"value": -1}
+            },
+            "children": [
+              {
+                "title": "entityExists",
+                "type": "action",
+                "name": "entityExists",
+                "parameters": {
+                  "entity": {"key": "chair"}
+                }
+              },
+              {
+                "title": "lounge",
+                "type": "action",
+                "name": "lounge",
+                "parameters": {
+                  "entity": {"key": "chair"}
+                }
+              },
+              {
+                "title": "runner",
+                "type": "action",
+                "name": "runner",
+                "parameters": {}
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Converse",
+        "type": "composite",
+        "name": "sequence",
+        "parameters": {},
+        "children": [
+          {
+            "title": "wasInteracted",
+            "type": "action",
+            "name": "wasInteracted",
+            "parameters": {}
+          },
+          {
+            "title": "sayToEntity",
+            "type": "action",
+            "name": "sayToEntity",
+            "parameters": {
+              "dialogType": {"value": "dialog.converse"},
+              "entity": {"key": "interactionSource"}
+            }
+          },
+          {
+            "title": "timer",
+            "type": "action",
+            "name": "timer",
+            "parameters": {
+              "time": {"value": 1}
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

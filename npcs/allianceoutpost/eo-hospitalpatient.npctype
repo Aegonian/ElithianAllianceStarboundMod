@@ -1,0 +1,43 @@
+{
+  "type" : "eo-hospitalpatient",
+  "baseType" : "eo-lounger",
+
+  "dropPools" : [ "aegiDeathTreasure" ],
+
+  "scriptConfig" : {
+    "behavior" : "thea-loungerlaying",
+	
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "I don't feel so well...",
+		    "Ugh...",
+		    "...",
+		    "My stomach hurts...",
+		    "My body aches..."
+		  ]
+		}
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "aegi" : [
+      [0, [
+		{
+		  "head" : [
+			{ "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "chest" : [
+			{ "name" : "aegi-storeclerkchest", "parameters" : { "colorIndex" : 3 } }
+		  ],
+		  "legs" : [
+			{ "name" : "aegi-storeclerklegs", "parameters" : { "colorIndex" : 3 } }
+		  ]
+		}
+	  ] ]
+    ]
+  }
+}

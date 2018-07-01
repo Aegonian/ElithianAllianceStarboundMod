@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "alliancemetal", "count" : 3 },
+	{ "item" : "alliancecircuitry", "count" : 2 },
+	{ "item" : "diamond", "count" : 1 }
+  ],
+  "output" : { "item" : "alliancepettether", "count" : 1 },
+  "duration" : 5,
+  "groups" : [ "allianceinventor2", "craftingstations", "all" ]
+}

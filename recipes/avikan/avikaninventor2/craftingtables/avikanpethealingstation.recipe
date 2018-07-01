@@ -8,5 +8,6 @@
 	{ "item" : "avikanmeatchunk", "count" : 2 }
   ],
   "output" : { "item" : "avikanpethealingstation", "count" : 1 },
-  "groups" : [ "avikanmetalcrafting", "metalfurniture", "all" ]
+  "duration" : 5,
+  "groups" : [ "avikaninventor2", "craftingstations", "all" ]
 }

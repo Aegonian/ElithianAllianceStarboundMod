@@ -1,0 +1,87 @@
+{
+  "type" : "eo-medicalmerchant",
+  "baseType" : "thea-loungingmerchant",
+
+  "scriptConfig" : {    
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "poolsFile" : "/npcs/merchantpools.config",
+      
+	  "categories" : {
+        "override" : [ "allianceoutpostmedicine" ]
+      },
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 20,
+	  
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "Creon Embassy Hospital",
+          "subtitle" : "  Medical Supplies"
+        }
+      }
+    },
+	
+	"dialog" : {
+      "merchant" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "I can provide you with some medical supplies if you need them."
+            ]
+          }
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "Do be careful out there!"
+            ]
+          }
+        },
+        "follow" : {
+          "default" : {
+            "default" : [
+              "My supplies are over there. Please, follow me."
+            ]
+          }
+        },
+        "welcome" : {
+          "default" : {
+            "default" : [
+              "Now, do you have any symptoms?"
+            ]
+          }
+        },
+        "tout" : {
+          "default" : {
+            "default" : [
+              "In need of some medical supplies?"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "aegi-medicchest", "parameters" : { "colorIndex" : 8 } }
+            ],
+            "legs" : [
+              { "name" : "aegi-mediclegs", "parameters" : { "colorIndex" : 8 } }
+            ],
+            "back" : [
+              { "name" : "thea-hiddenback", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

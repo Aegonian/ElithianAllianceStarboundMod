@@ -1,0 +1,13 @@
+{
+  "frameGrid" : {
+    "size" : [24, 24],
+    "dimensions" : [12, 1],
+    "names" : [
+      [ "idle.1", "healing.1", "healing.2", "healing.3", "healing.4", "healing.5", "healing.6", "healed.1", "refilling.1", "refilling.2", "refilling.3", "refilling.4" ]
+    ]
+  },
+  "aliases" : {
+    "default.default" : "idle.1"
+  }
+}
+

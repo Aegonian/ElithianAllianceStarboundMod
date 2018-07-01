@@ -1,0 +1,47 @@
+{
+  "type" : "eo-doctor",
+  "baseType" : "eo-lounger",
+
+  "npcname" : "Avemii",
+  "identity" : {
+    "imagePath" : "aegi",
+    "gender" : "female",
+    "hairGroup" : "hair",
+    "hairType" : "fem1",
+	"facialMaskGroup" : "ears",
+	"facialMask" : "2"
+  },
+  
+  "dropPools" : [ "aegiDeathTreasure" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "aegi" : [
+		    "Are you in need of medical attention?"
+		  ]
+		}
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+		{
+		  "head" : [
+			{ "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "chest" : [
+			{ "name" : "aegi-medicchest", "parameters" : { "colorIndex" : 3 } }
+		  ],
+		  "legs" : [
+			{ "name" : "aegi-mediclegs", "parameters" : { "colorIndex" : 3 } }
+		  ]
+		}
+      ]]
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 {
   "input" : [
-    { "item" : "alliancemetaltier2", "count" : 6 }
+    { "item" : "alliancemetal", "count" : 6 }
   ],
   "output" : { "item" : "alliancehoe", "count" : 1 },
   "groups" : [ "alliancecrafting", "weapons", "all" ]

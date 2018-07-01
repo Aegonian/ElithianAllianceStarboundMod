@@ -83,6 +83,12 @@ function TheaChargedArm:update(dt)
 	self.bobLocked = true
   else
 	animator.setAnimationState(self.armName, "idle")
+	animator.stopAllSounds(self.armName .. "Charge")
+	
+	self.fireTimer = 0
+	self.chargeStarted = false
+	self.windupTimer = 0
+	self.cooldownTimer = 0
 
     self.bobLocked = false
   end

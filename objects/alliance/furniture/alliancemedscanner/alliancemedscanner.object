@@ -71,7 +71,7 @@
   "sitCoverImage" : "/objects/alliance/furniture/alliancemedscanner/alliancemedscannercover.png",
   "sitEmote" : "sleep",
   "sitStatusEffects" : [
-    "bed1"
+    "bed6"
   ],
   "sitEffectEmitters" : [ "sleepbubbles" ]
 }

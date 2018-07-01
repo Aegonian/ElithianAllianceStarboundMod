@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "alliancemetal", "count" : 5 },
+	{ "item" : "alliancecircuitry", "count" : 2 },
+	{ "item" : "alliancequantumchip", "count" : 1 },
+	{ "item" : "selvasextract", "count" : 5 }
+  ],
+  "output" : { "item" : "alliancepethealingstation", "count" : 1 },
+  "duration" : 5,
+  "groups" : [ "allianceinventor2", "craftingstations", "all" ]
+}

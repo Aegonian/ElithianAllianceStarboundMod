@@ -1,0 +1,45 @@
+{
+  "type" : "eo-medic",
+  "baseType" : "eo-civilian",
+
+  "dropPools" : [ "aegiDeathTreasure" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+		    "Are you in need of medical assistance?",
+		    "I could offer medical assistance, if you need it.",
+		    "I'm sorry, I have other patients to attend to.",
+		    "If you need medical assistance, let me know.",
+		    "I love helping people. It makes me feel like I matter.",
+		    "Helping people has always been my calling.",
+		    "Do you need someone to look you over?",
+		    "You look hurt. Are you alright?",
+		    "Are you well?"
+          ]
+        }
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+		{
+		  "head" : [
+			{ "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "chest" : [
+			{ "name" : "aegi-medicchest", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "legs" : [
+			{ "name" : "aegi-mediclegs", "parameters" : { "colorIndex" : 0 } }
+		  ]
+		}
+	  ] ]
+    ]
+  }
+}

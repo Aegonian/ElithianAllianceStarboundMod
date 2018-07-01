@@ -653,6 +653,16 @@
 			] ]
 		]
 	},
+	{ "op" : "add", "path" : "/allianceoutpostmedicine",
+		"value" : [
+			[ 0, [
+			  //CONSUMABLES
+			  { "item": { "name": "alliancebandage" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancemedsalve" }, "rarity": 0.5 },
+			  { "item": { "name": "selvasextract" }, "rarity": 0.5 }
+			] ]
+		]
+	},
 	
 	//=========================================================================================================
 	// AEGI

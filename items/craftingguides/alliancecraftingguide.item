@@ -8,6 +8,10 @@
   "category" : "Crafting Guide",
   "learnBlueprintsOnPickup" : [
 	
+//New in v2.3.1
+	  "alliancepethealingstation",
+	  "alliancepettether",
+	
 // Empty Hands
 	  "allianceinventor",
 	  "flagaegi",
