@@ -1,0 +1,17 @@
+[
+  {
+    "op": "add",
+    "path": "/groups/-",
+    "value": "alliancefurnace"
+  },
+  {
+    "op": "add",
+    "path": "/groups/-",
+    "value": "avikanfurnace"
+  },
+  {
+    "op": "add",
+    "path": "/groups/-",
+    "value": "trinkcrafting"
+  }
+]

@@ -2,6 +2,7 @@
   "itemName" : "zaheedsword",
   "price" : 1500,
   "level" : 6,
+  "fixedLevel" : false,
   "maxStack" : 1,
   "rarity" : "essential",
   "description" : "^orange;A modified Droden longsword used by commander Zaheed.",

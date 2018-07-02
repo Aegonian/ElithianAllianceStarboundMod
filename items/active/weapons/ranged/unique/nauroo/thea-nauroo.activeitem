@@ -8,6 +8,7 @@
   "manufacturer" : "^gray;Erito Security^reset;",
   "shortdescription" : "^orange;Nauroo^white;",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "thea-gun-unique-mf",
   "category" : "Rocket Launcher",
   "itemTags" : ["weapon","ranged","rocketlauncher","alliance","theaUnique"],

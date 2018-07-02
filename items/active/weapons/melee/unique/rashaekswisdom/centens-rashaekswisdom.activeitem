@@ -2,6 +2,7 @@
   "itemName" : "centens-rashaekswisdom",
   "price" : 1500,
   "level" : 6,
+  "fixedLevel" : false,
   "maxStack" : 1,
   "rarity" : "essential",
   "description" : "^orange;A relic associated with Rashaek, the Thelean uplifter.",

@@ -278,6 +278,12 @@
             "inaccuracy" : 0,
             "fireOffset" : [0, 0]
           }
+        },
+		{
+          "name" : "thea-senddeathmessage",
+          "parameters" : {
+            "deathMessage" : "centensguardianDeath"
+          }
         }
       ],
 

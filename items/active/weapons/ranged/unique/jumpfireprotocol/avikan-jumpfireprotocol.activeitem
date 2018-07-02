@@ -7,6 +7,7 @@
   "description" : "^orange;A unique weapon built using Centensian and Avikan tech.",
   "shortdescription" : "^orange;Jumpfire Protocol^white;",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "thea-speedupminigun-unique",
   "category" : "Modified Jumprifle",
   "itemTags" : ["weapon","ranged","avikan","jumprifle","theaUnique"],

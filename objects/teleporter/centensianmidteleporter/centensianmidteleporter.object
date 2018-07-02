@@ -78,5 +78,5 @@
   "teleporterFootPosition" : [0, 1],
 
   "scripts" : [ "/objects/teleporter/centensianteleporter/centensianteleporter.lua" ],
-  "detectArea" : [ [-1, 0], [1, 5] ]
+  "detectArea" : [ [-6, 0], [6, 5] ]
 }

@@ -2,6 +2,7 @@
   "itemName" : "avikan-sandstalkersbane",
   "price" : 1500,
   "level" : 6,
+  "fixedLevel" : false,
   "inventoryIcon" : "avikan-sandstalkersbaneicon.png",
   "maxStack" : 1,
   "rarity" : "Essential",

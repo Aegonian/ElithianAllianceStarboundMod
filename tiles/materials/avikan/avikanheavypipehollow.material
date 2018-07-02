@@ -1,0 +1,29 @@
+{
+  "materialId" : 30167,
+  "materialName" : "avikanheavypipehollow",
+  "particleColor" : [97, 97, 97, 255],
+  "itemDrop" : "avikanheavypipehollow", 
+  "shortdescription" : "Avikan Heavy Pipe (Hollow)",
+  
+  "description" : "A heavy, thick pipe. Liquids can flow through it.",
+  "glitchDescription" : "Pleased. With piping like this, I'll not have to worry about leakages.",
+  "floranDescription" : "Pipe isss big, but Floran can't fit through...",
+  "novakidDescription" : "Not sure what this 'ere pipe is carrying, but I'm guessin' its dangerous.",
+  
+  "drodenDescription" : "Analysis failed. Unable to scan pipe contents.",
+
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "health" : 6,
+  "category" : "materials",
+  "blocksLiquidFlow" : false,
+  
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "avikanheavypipe.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 200
+  }
+}

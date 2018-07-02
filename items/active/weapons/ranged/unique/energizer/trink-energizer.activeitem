@@ -7,6 +7,7 @@
   "description" : "^orange;An energy rifle built for tactical incursions.",
   "shortdescription" : "^orange;HL-5 Energizer^white;",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "thea-gun-unique",
   "category" : "Directed Energy Rifle",
   "itemTags" : ["weapon","ranged","laserrifle","trink","energy","theaUnique"],

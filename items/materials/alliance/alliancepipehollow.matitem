@@ -1,0 +1,15 @@
+{
+  "itemName" : "alliancepipehollow",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "alliancepipehollow.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  "shortdescription" : "Alliance Pipe (Hollow)",
+  
+  "description" : "A heavy, thick pipe. Liquids can flow through it.",
+  "glitchDescription" : "Statement. A pipe.",
+  "floranDescription" : "Thiss pipe is big.",
+
+  "materialId" : 30169
+}

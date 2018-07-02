@@ -8,6 +8,7 @@
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "^orange;Skylighter^white;",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "thea-ammogun-mf-unique",
   "category" : "Hand Cannon",
   "itemTags" : ["weapon","ranged","pistol","alliance","theaUnique"],

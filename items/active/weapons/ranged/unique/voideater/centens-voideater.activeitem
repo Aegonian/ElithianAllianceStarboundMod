@@ -7,6 +7,7 @@
   "description" : "^orange;An ancient weapon built to bend space-time.",
   "shortdescription" : "^orange;Void Eater^white;",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "thea-gun-unique",
   "category" : "Gravity Distortion Rifle",
   "itemTags" : ["weapon","ranged","centens","theaUnique"],

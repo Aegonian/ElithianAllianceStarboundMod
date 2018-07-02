@@ -7,6 +7,7 @@
   "description" : "^orange;A linerifle built for elite Vanguard troops.",
   "shortdescription" : "^orange;Guardbreaker's Bow^white;",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "thea-chargedgun-unique",
   "category" : "Line Rifle",
   "itemTags" : ["weapon","ranged","avikan","linerifle","theaUnique"],

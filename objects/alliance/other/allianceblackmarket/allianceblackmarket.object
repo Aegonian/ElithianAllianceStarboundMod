@@ -57,7 +57,9 @@
 	  { "item" : { "name" : "alliancecraftingguide" }, "prerequisiteQuest" : "alliancecrafting", "price" : 1250 },
 	  //MANIPULATOR SKINS
 	  { "item" : { "name" : "alliancemanipulatorskin" }, "price" : 25000 },
-	  { "item" : { "name" : "trinkmanipulatorskin" }, "price" : 25000 }
+	  { "item" : { "name" : "trinkmanipulatorskin" }, "price" : 25000 },
+	  //ARMOUR
+	  { "item" : { "name" : "trink-rags" }, "price" : 1000 }
     ]
   },
 

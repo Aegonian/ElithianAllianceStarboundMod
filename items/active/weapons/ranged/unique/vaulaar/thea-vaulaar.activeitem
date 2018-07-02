@@ -8,6 +8,7 @@
   "manufacturer" : "^gray;Erito Security^reset;",
   "shortdescription" : "^orange;Vaulaar^white;",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "thea-gun-unique-mf",
   "category" : "Assault Rifle",
   "itemTags" : ["weapon","ranged","assaultrifle","alliance","theaUnique"],

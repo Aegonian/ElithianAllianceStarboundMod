@@ -7,6 +7,7 @@
   "description" : "^orange;A weapon once held by the Thellhunter of legend.",
   "shortdescription" : "^orange;Thellhunter's Bow^white;",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "thea-chargedgunalt-unique",
   "category" : "Line Rifle",
   "itemTags" : ["weapon","ranged","avikan","linerifle","theaUnique"],

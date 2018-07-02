@@ -7,6 +7,7 @@
   "description" : "^orange;A makeshift Akkimari weapon firing razor-sharp sawblades.",
   "shortdescription" : "^orange;Razorrail^white;",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "thea-gun-unique",
   "category" : "Makeshift Weapon",
   "itemTags" : ["weapon","ranged","akkimari","theaUnique"],

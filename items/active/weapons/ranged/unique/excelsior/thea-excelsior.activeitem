@@ -8,6 +8,7 @@
   "manufacturer" : "^gray;AEG-Corps^reset;",
   "shortdescription" : "^orange;C22 Excelsior^white;",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "thea-overheatgun-unique-mf",
   "category" : "Sidearm",
   "itemTags" : ["weapon","ranged","pistol","alliance","theaUnique"],

@@ -8,6 +8,7 @@
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "^orange;Siegerunner^white;",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "thea-ammogun-mf-unique",
   "category" : "Assault Rifle",
   "itemTags" : ["weapon","ranged","assaultrifle","alliance","theaUnique"],

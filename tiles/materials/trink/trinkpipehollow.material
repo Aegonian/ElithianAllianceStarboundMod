@@ -1,0 +1,29 @@
+{
+  "materialId" : 30168,
+  "materialName" : "trinkpipehollow",
+  "particleColor" : [85, 85, 85, 255],
+  "itemDrop" : "trinkpipehollow", 
+  "shortdescription" : "Trinkian Pipe (Hollow)",
+  
+  "description" : "A heavy, thick pipe. Liquids can flow through it.",
+  "glitchDescription" : "Statement. A pipe.",
+  "floranDescription" : "Floran wonderss what iss inside pipes?",
+  "novakidDescription" : "A big pipe for moving about liquids. Hope there isn't any poop in there.",
+  
+  "drodenDescription" : "Analysis failed. Unable to scan pipe contents.",
+
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "health" : 6,
+  "category" : "materials",
+  "blocksLiquidFlow" : false,
+  
+  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderParameters" : {
+    "texture" : "trinkpipe.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 200
+  }
+}

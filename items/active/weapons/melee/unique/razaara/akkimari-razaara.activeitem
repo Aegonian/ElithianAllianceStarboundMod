@@ -1,7 +1,8 @@
 {
   "itemName" : "akkimari-razaara",
   "price" : 1500,
-  "level" : 7,
+  "level" : 6,
+  "fixedLevel" : false,
   "maxStack" : 1,
   "rarity" : "essential",
   "description" : "^orange;A razor-sharp whirlblade that slices through flesh and bone with ease.",

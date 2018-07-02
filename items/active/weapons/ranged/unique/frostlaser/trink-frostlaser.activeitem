@@ -2,6 +2,7 @@
   "itemName" : "trink-frostlaser",
   "price" : 1500,
   "level" : 6,
+  "fixedLevel" : false,
   "inventoryIcon" : "trink-frostlaser.png",
   "maxStack" : 1,
   "rarity" : "Essential",

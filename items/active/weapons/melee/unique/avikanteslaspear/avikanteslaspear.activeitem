@@ -2,6 +2,7 @@
   "itemName" : "avikanteslaspear",
   "price" : 1500,
   "level" : 6,
+  "fixedLevel" : false,
   "maxStack" : 1,
   "rarity" : "essential",
   "description" : "^orange;A bone spear built around an electric shock generator.",

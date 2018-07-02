@@ -2,6 +2,7 @@
   "itemName" : "thea-lightrunner",
   "price" : 1500,
   "level" : 6,
+  "fixedLevel" : false,
   "inventoryIcon" : "thea-lightrunnericon.png",
   "maxStack" : 1,
   "rarity" : "Essential",

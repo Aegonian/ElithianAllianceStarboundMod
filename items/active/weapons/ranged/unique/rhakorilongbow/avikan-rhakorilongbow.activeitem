@@ -2,6 +2,7 @@
   "itemName" : "avikan-rhakorilongbow",
   "price" : 1500,
   "level" : 6,
+  "fixedLevel" : false,
   "inventoryIcon" : "avikan-rhakorilongbowicon.png",
   "maxStack" : 1,
   "rarity" : "Essential",

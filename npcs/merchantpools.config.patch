@@ -38,6 +38,7 @@
 	{ "op" : "add", "path" : "/drodenmerchant",
 		"value" : [
 			[ 0, [
+			  //ARMOUR
 			  { "item": { "name": "droden-bannerchest" }, "rarity": 0.5 },
 			  { "item": { "name": "droden-combathead" }, "rarity": 0.5 },
 			  { "item": { "name": "droden-combatchest" }, "rarity": 0.5 },
@@ -49,7 +50,14 @@
 			  { "item": { "name": "droden-heavychest" }, "rarity": 0.5 },
 			  { "item": { "name": "droden-heavylegs" }, "rarity": 0.5 },
 			  { "item": { "name": "drodenantennapack" }, "rarity": 0.5 },
-			  { "item": { "name": "drodenswordback" }, "rarity": 0.5 }
+			  { "item": { "name": "drodenswordback" }, "rarity": 0.5 },
+			  //OBJECTS
+			  { "item": { "name": "avikandroden" }, "rarity": 0.5 },
+			  { "item": { "name": "avikandrodenheavy" }, "rarity": 0.5 },
+			  { "item": { "name": "avikandrodenlegion1" }, "rarity": 0.5 },
+			  { "item": { "name": "avikandrodenlegion2" }, "rarity": 0.5 },
+			  { "item": { "name": "avikandrodenlegion3" }, "rarity": 0.5 },
+			  { "item": { "name": "avikandrodenlegion4" }, "rarity": 0.5 }
 			] ]
 		]
 	},

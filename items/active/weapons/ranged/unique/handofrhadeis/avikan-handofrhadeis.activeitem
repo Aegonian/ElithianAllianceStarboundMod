@@ -7,6 +7,7 @@
   "description" : "^orange;A weapon said to have been held by Rhadeis himself.",
   "shortdescription" : "^orange;Hand of Rhadeis^white;",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "thea-optionalchargegun-unique",
   "category" : "Pulsar Pistol",
   "itemTags" : ["weapon","ranged","centens","theaUnique"],

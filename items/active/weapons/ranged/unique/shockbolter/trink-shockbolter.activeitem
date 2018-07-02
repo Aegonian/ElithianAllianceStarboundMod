@@ -7,6 +7,7 @@
   "description" : "^orange;A reverse-engineered Thelean design built to shock foes.",
   "shortdescription" : "^orange;SDL-02 Shockbolter^white;",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "thea-gun-unique",
   "category" : "Prototype Weapon",
   "itemTags" : ["weapon","ranged","trink","theaUnique"],

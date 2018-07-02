@@ -17,6 +17,9 @@
   "defaultBlueprints" : {
     "tier1" : [
 
+//NEW in v2.3.2
+	  { "item" : "avikanheavypipehollow" },
+
 //NEW in v2.3.0
 	  { "item" : "avikansmallwatercontainer2" },
 	  { "item" : "avikanmarketstallmodernweapons" },

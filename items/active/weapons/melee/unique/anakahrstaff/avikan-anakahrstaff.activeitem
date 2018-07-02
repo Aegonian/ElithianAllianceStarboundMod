@@ -2,6 +2,7 @@
   "itemName" : "avikan-anakahrstaff",
   "price" : 1500,
   "level" : 6,
+  "fixedLevel" : false,
   "maxStack" : 1,
   "rarity" : "essential",
   "description" : "^orange;A staff armed with dual static linecharge drives.",

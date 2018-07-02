@@ -7,6 +7,7 @@
   "description" : "^orange;A linerifle using a unique drive for near-instant charging.",
   "shortdescription" : "^orange;Null-Drive Vector^white;",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "thea-chargedgun-unique",
   "category" : "Line Rifle",
   "itemTags" : ["weapon","ranged","avikan","linerifle","theaUnique"],

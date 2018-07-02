@@ -2,6 +2,7 @@
   "itemName" : "thea-tributelance",
   "price" : 1500,
   "level" : 6,
+  "fixedLevel" : false,
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "^orange;A long and powerful lance forged in tribute to Elithia.",

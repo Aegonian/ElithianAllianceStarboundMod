@@ -7,6 +7,7 @@
   "description" : "^orange;A mysterious weapon that fires enemy-seeking orbs.",
   "shortdescription" : "^orange;Deathseeker^white;",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "thea-chargedgun-unique",
   "category" : "Volley Launcher",
   "itemTags" : ["weapon","ranged","centens","theaUnique"],

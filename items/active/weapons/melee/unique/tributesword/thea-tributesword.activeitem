@@ -2,6 +2,7 @@
   "itemName" : "thea-tributesword",
   "price" : 1500,
   "level" : 6,
+  "fixedLevel" : false,
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "^orange;An ultra-sharp blade forged in tribute to Elithia.",

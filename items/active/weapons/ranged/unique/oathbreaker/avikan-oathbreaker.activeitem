@@ -7,6 +7,7 @@
   "description" : "^orange;A shotgun firing a single devastating slug.",
   "shortdescription" : "^orange;Oathbreaker's Sorrow^white;",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "thea-gun-unique",
   "category" : "Shotgun",
   "itemTags" : ["weapon","ranged","shotgun","avikan","theaUnique"],

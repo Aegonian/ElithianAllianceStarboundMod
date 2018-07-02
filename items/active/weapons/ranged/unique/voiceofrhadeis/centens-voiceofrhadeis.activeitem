@@ -7,6 +7,7 @@
   "description" : "^orange;A Centensian weapon which can adapt to any situation.",
   "shortdescription" : "^orange;Voice of Rhadeis^white;",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "thea-gun-unique",
   "category" : "Elemental Rifle",
   "itemTags" : ["weapon","ranged","centens","theaUnique"],

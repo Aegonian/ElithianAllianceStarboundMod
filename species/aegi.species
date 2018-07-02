@@ -16,6 +16,9 @@
   "defaultBlueprints" : {
     "tier1" : [
 
+//NEW in v2.3.2
+	  { "item" : "alliancepipehollow" },
+
 //NEW in v2.3.1
 	  { "item" : "alliancepethealingstation" },
 	  { "item" : "alliancepettether" },

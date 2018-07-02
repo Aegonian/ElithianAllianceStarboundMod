@@ -7,6 +7,7 @@
   "description" : "^orange;A linerifle corrupted by Thelean vesomeyr.",
   "shortdescription" : "^orange;Corruptor's Bow^white;",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "thea-chargedgunalt-unique",
   "category" : "Line Rifle",
   "itemTags" : ["weapon","ranged","avikan","linerifle","theaUnique"],

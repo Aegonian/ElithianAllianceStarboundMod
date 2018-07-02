@@ -7,6 +7,7 @@
   "description" : "^orange;A weapon that draws power from the edge of a black hole.",
   "shortdescription" : "^orange;Event Horizon^white;",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "thea-speedupminigun-unique",
   "category" : "Minigun",
   "itemTags" : ["weapon","ranged","centens","minign","theaUnique"],

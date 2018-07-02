@@ -7,6 +7,7 @@
   "description" : "^orange;A close-range electric weapon capable of dealing massive sustained damage.",
   "shortdescription" : "^orange;SDL-05 Arclighter^white;",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "thea-gun-unique",
   "category" : "Prototype Weapon",
   "itemTags" : ["weapon","ranged","trink","theaUnique"],

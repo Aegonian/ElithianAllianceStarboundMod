@@ -2,6 +2,7 @@
   "itemName" : "avikan-lightstalker",
   "price" : 1500,
   "level" : 6,
+  "fixedLevel" : false,
   "inventoryIcon" : "avikan-lightstalkericon.png",
   "maxStack" : 1,
   "rarity" : "Essential",

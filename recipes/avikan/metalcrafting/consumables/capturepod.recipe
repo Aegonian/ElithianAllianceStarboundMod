@@ -1,6 +1,6 @@
 {
   "input" : [
-    { "item" : "avikanmetaltier4", "count" : 3 },
+    { "item" : "avikanmetaltier5", "count" : 3 },
 	{ "item" : "diamond", "count" : 1 }
   ],
   "output" : { "item" : "capturepod", "count" : 1 },

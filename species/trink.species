@@ -19,6 +19,9 @@
   "defaultBlueprints" : {
     "tier1" : [
 
+//NEW in v2.3.2
+	  { "item" : "trinkpipehollow" },
+
 //NEW in v2.3.0
 	  { "item" : "trinkpanel" },
 	  { "item" : "trinkscanner" },

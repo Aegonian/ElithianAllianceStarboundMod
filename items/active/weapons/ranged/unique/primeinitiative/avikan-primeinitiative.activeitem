@@ -7,6 +7,7 @@
   "description" : "^orange;A massively powerful linerifle built to rip through enemy lines.",
   "shortdescription" : "^orange;Prime Initiative^white;",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "thea-chargedgun-unique",
   "category" : "Heavy Line Rifle",
   "itemTags" : ["weapon","ranged","avikan","linerifle","theaUnique"],
