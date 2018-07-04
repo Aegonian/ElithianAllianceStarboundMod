@@ -22976,6 +22976,38 @@
                  "width":8,
                  "x":12336,
                  "y":2696
+                }, 
+                {
+                 "height":8,
+                 "id":3434,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"fishcritter",
+                     "parameters":"{ \"damageTeamType\" : \"ghostly\" }"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":12768,
+                 "y":2984
+                }, 
+                {
+                 "height":8,
+                 "id":3435,
+                 "name":"",
+                 "properties":
+                    {
+                     "monster":"fishcritter",
+                     "parameters":"{ \"damageTeamType\" : \"ghostly\" }"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":12840,
+                 "y":2976
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -25300,6 +25332,23 @@
                  "width":8,
                  "x":10704,
                  "y":3272
+                }, 
+                {
+                 "height":8,
+                 "id":3437,
+                 "name":"",
+                 "properties":
+                    {
+                     "npc":"aegi",
+                     "seed":"113355",
+                     "typeName":"eo-bannermerchant"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":11408,
+                 "y":1752
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -25454,7 +25503,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":3434,
+ "nextobjectid":3438,
  "orientation":"orthogonal",
  "properties":
     {

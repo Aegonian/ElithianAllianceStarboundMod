@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "alliancemetal", "count" : 2 },
+    { "item" : "alliancecircuitry", "count" : 1 },
+    { "item" : "allianceglassitem", "count" : 1 }
+  ],
+  "output" : { "item" : "railstop", "count" : 1 },
+  "groups" : [ "alliancerailcrafting", "all" ]
+}

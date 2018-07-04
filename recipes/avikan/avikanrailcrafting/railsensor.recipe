@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "avikanmetal", "count" : 2 },
+    { "item" : "avikancircuitry", "count" : 1 }
+  ],
+  "output" : { "item" : "railsensor", "count" : 1 },
+  "groups" : [ "avikanrailcrafting", "all" ]
+}

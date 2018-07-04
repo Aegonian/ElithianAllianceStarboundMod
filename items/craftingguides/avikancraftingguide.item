@@ -8,6 +8,12 @@
   "category" : "Crafting Guide",
   "learnBlueprintsOnPickup" : [
 	
+//New in v2.3.3
+	  "avikanmechassemblystation",
+	  "avikanmechcraftingtable",
+	  "avikanbackgrounddoor",
+	  "avikanpowerpanel2",
+	
 //New in v2.3.2
 	  "avikanheavypipehollow",
 	

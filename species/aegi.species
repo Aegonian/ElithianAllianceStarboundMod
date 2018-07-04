@@ -16,6 +16,14 @@
   "defaultBlueprints" : {
     "tier1" : [
 
+//NEW in v2.3.3
+	  { "item" : "allianceshipcore" },
+	  { "item" : "alliancemechassemblystation" },
+	  { "item" : "alliancemechcraftingtable" },
+	  { "item" : "alliancebackgrounddoor" },
+	  { "item" : "alliancebackgrounddoor2" },
+	  { "item" : "allianceserver" },
+
 //NEW in v2.3.2
 	  { "item" : "alliancepipehollow" },
 

@@ -8,6 +8,14 @@
   "category" : "Crafting Guide",
   "learnBlueprintsOnPickup" : [
 	
+//New in v2.3.3
+	  "allianceshipcore",
+	  "alliancemechassemblystation",
+	  "alliancemechcraftingtable",
+	  "alliancebackgrounddoor",
+	  "alliancebackgrounddoor2",
+	  "allianceserver",
+	
 //New in v2.3.2
 	  "alliancepipehollow",
 	

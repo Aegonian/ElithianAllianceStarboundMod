@@ -1,0 +1,26 @@
+{
+  "type" : "aegicook",
+  "baseType" : "aegivillagemerchant",
+
+  "scriptConfig" : {
+	"merchant" : {
+	  "categories" : {
+		"aegi" : [ "aegicolonyfood" ]
+	  },
+	  "numItems" : 5
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+		  {
+            "head" : [ "aegi-cookhead" ],
+            "chest" : [ "aegi-cookchest" ],
+            "legs" : [ "aegi-cooklegs" ]
+          }
+        ] ]
+    ]
+  }
+}

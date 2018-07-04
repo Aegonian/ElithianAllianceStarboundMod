@@ -1,0 +1,32 @@
+{
+  "type" : "tenantaegicook",
+  "baseType" : "aegicook",
+  
+  "dropPools" : [],
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "tenant", "merchant"],
+      "enableParticipation" : true,
+      
+      "graduation" : {
+        "nextNpcType" : [
+          [1, "crewmemberaegimedic"]
+        ]
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "aegi-cookhead", "data" : { "colorIndex" : 8 } } ],
+            "chest" : [ { "name" : "aegi-cookchest", "data" : { "colorIndex" : 8 } } ],
+            "legs" : [ { "name" : "aegi-cooklegs", "data" : { "colorIndex" : 8 } } ]
+          }
+        ] ]
+    ]
+  }
+}

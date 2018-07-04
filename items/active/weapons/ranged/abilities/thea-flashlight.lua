@@ -22,10 +22,15 @@ function TheaFlashlight:update(dt, fireMode, shiftHeld)
 end
 
 function TheaFlashlight:reset()
-  animator.setLightActive("flashlight", false)
-  animator.setLightActive("flashlightSpread", false)
-  animator.setAnimationState("light", "off")
-  self.active = false
+  --animator.setLightActive("flashlight", false)
+  --animator.setLightActive("flashlightSpread", false)
+  --animator.setAnimationState("light", "off")
+  --self.active = false
+  if animator.animationState("light") == "on" then
+	self.active = true
+  else
+	self.active = false
+  end
 end
 
 function TheaFlashlight:uninit()

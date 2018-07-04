@@ -63,8 +63,8 @@
       "direction" : "right",
 
       "animationParts" : {
-        "bg" : "thea-dockingfieldvertical.png",
-        "fg" : "thea-dockingfieldverticallit.png"
+        "bg" : "thea-dockingfieldsmallvertical.png",
+        "fg" : "thea-dockingfieldsmallverticallit.png"
       },
       "animationPosition" : [-4, 0],
 

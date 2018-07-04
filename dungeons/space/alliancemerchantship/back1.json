@@ -698,23 +698,6 @@
                 }, 
                 {
                  "height":8,
-                 "id":999,
-                 "name":"",
-                 "properties":
-                    {
-                     "back":"alliancehullpanel",
-                     "colorVariant":"7",
-                     "front":"alliancehullpanel"
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":480,
-                 "y":256
-                }, 
-                {
-                 "height":8,
                  "id":1000,
                  "name":"",
                  "properties":

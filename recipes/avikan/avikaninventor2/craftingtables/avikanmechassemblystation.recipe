@@ -1,0 +1,14 @@
+{
+  "input" : [
+    { "item" : "avikanmetaltier6", "count" : 8 },
+    { "item" : "avikandarkmetal", "count" : 4 },
+    { "item" : "avikancircuitry", "count" : 4 },
+    { "item" : "avikanmacrochip", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "avikanmechassemblystation",
+    "count" : 1
+  },
+  "duration" : 5,
+  "groups" : [ "avikaninventor2", "craftingstations", "all" ]
+}

@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "alliancemetal", "count" : 2 }
+  ],
+  "output" : { "item" : "railbumper", "count" : 1 },
+  "groups" : [ "alliancerailcrafting", "all" ]
+}

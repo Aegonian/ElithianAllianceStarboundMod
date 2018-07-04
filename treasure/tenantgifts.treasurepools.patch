@@ -315,6 +315,28 @@
   },
   
   {"op" : "add",
+  "path" : "/allianceCookGift",
+  "value" : [
+    [1, {
+      "pool" : [
+		//GENERIC POOLS
+        {"weight" : 0.3, "pool" : "tenantMoney"},
+        {"weight" : 0.145, "pool" : "healingItem"},
+        {"weight" : 0.005, "pool" : "instrument"},
+		//ALLIANCE POOLS
+        {"weight" : 0.4, "pool" : "allianceFoodGift"},
+        {"weight" : 0.1, "pool" : "allianceMaterialsGift"},
+		//ITEMS
+        {"weight" : 0.05, "item" : "alliancecache"}
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    } ] ]
+  },
+  
+  {"op" : "add",
   "path" : "/allianceGuardGift",
   "value" : [
     [1, {

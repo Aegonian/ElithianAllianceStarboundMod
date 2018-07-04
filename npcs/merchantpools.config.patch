@@ -671,6 +671,22 @@
 			] ]
 		]
 	},
+	{ "op" : "add", "path" : "/allianceoutpostbanners",
+		"value" : [
+			[ 0, [
+			  //OBJECTS
+			  { "item": { "name": "alliancebanner" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancebanneraegi" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancebannerdremeton" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancebannererixian" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancebannerhymid" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancebannerjorgasian" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancebannernotix" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancebannerrack" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancebannertrink" }, "rarity": 0.5 }
+			] ]
+		]
+	},
 	
 	//=========================================================================================================
 	// AEGI
@@ -739,16 +755,13 @@
 		"value" : [
 			[ 0, [
 			  //FOODS
-			  { "item": { "name": "aegimeal" }, "rarity": 0.5 },
-			  { "item": { "name": "alliancesodabottle" }, "rarity": 0.5 },
-			  { "item": { "name": "alliancesodabottle2" }, "rarity": 0.5 },
-			  { "item": { "name": "alliancesodabottle3" }, "rarity": 0.5 },
-			  { "item": { "name": "alliancesodacan" }, "rarity": 0.5 },
-			  { "item": { "name": "alliancesodacan2" }, "rarity": 0.5 },
-			  { "item": { "name": "alliancesodacan3" }, "rarity": 0.5 },
-			  { "item": { "name": "vahlberryjam" }, "rarity": 0.5 },
+			  { "item": { "name": "aegimeal" }, "rarity": 0.25 },
+			  { "item": { "name": "bakedborato" }, "rarity": 0.5 },
 			  { "item": { "name": "boratochips" }, "rarity": 0.5 },
-			  { "item": { "name": "mellowroot" }, "rarity": 0.5 }
+			  { "item": { "name": "loftbread" }, "rarity": 0.5 },
+			  { "item": { "name": "mellowrootchops" }, "rarity": 0.5 },
+			  { "item": { "name": "vahlberrybread" }, "rarity": 0.5 },
+			  { "item": { "name": "vahlberryjam" }, "rarity": 0.5 }
 			] ]
 		]
 	},

@@ -1,0 +1,87 @@
+{
+  "type" : "eo-bannermerchant",
+  "baseType" : "ao-stationarymerchant",
+
+  "scriptConfig" : {    
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "poolsFile" : "/npcs/merchantpools.config",
+      
+	  "categories" : {
+        "override" : [ "allianceoutpostbanners" ]
+      },
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 20,
+	  
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "Banner Merchant",
+          "subtitle" : "  A banner for every nation"
+        }
+      }
+    },
+	
+	"dialog" : {
+      "merchant" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "Ah, a customer! What banner are you looking for?"
+            ]
+          }
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "Come back soon!"
+            ]
+          }
+        },
+        "follow" : {
+          "default" : {
+            "default" : [
+              "My supplies are right over there. Come with me."
+            ]
+          }
+        },
+        "welcome" : {
+          "default" : {
+            "default" : [
+              "So, any banner in particular you're interested in?"
+            ]
+          }
+        },
+        "tout" : {
+          "default" : {
+            "default" : [
+              "These banners are just lovely, no? I can get you some for your own personal use!"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "aegi-asauniformhead", "parameters" : { "colorIndex" : 9 } }
+            ],
+            "chest" : [
+              { "name" : "aegi-suitchest", "parameters" : { "colorIndex" : 9 } }
+            ],
+            "legs" : [
+              { "name" : "aegi-suitlegs", "parameters" : { "colorIndex" : 9 } }
+            ],
+            "back" : [
+              { "name" : "thea-hiddenback", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "input" : [
+    { "item" : "alliancemetal", "count" : 24 },
+    { "item" : "alliancecircuitry", "count" : 8 },
+    { "item" : "alliancequantumchip", "count" : 1 },
+    { "item" : "allianceplasmacore", "count" : 6 },
+    { "item" : "allianceballisticplate", "count" : 4 },
+    { "item" : "allianceballisticfiber", "count" : 6 }
+  ],
+  "output" : {
+    "item" : "allianceshipcore",
+    "count" : 1
+  },
+  "groups" : [ "alliancecrafting", "furniture", "all" ]
+}

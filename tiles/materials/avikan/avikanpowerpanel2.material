@@ -1,0 +1,29 @@
+{
+  "materialId" : 30170,
+  "materialName" : "avikanpowerpanel2",
+  "particleColor" : [215, 184, 137, 255],
+  "itemDrop" : "avikanpowerpanel2", 
+  "shortdescription" : "Avikan Power Panel (Glow)",
+  
+  "description" : "A metal panel with power cables embedded in its plating.",
+  "glitchDescription" : "Observation. Power runs through the cables hidden inside these panels.",
+  "floranDescription" : "Metal panelsss radiate power...",
+  "novakidDescription" : "There's a flow of energy inside this 'ere wall.",
+  
+  "drodenDescription" : "Analysis complete. Power cables run through this panel.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "avikanpowerpanel.png",
+    "variants" : 4,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 50,
+    "radiantLight" : [56, 22, 0]
+  }
+}

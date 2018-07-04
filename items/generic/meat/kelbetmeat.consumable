@@ -20,5 +20,6 @@
   "rottingMultiplier" : 0.5,
   "blockingEffects" : [
     "wellfed"
-  ]
+  ],
+  "learnBlueprintsOnPickup" : [ "cookedkelbetmeat" ]
 }
