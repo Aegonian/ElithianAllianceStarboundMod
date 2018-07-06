@@ -78,4 +78,4 @@ Additionally, you can check out Sigma 42's excellent [unofficial guide](http://s
 
 Want to support the mod? I have a Patreon page for those who wish to support the mod with a small monthly donation, which also comes with a few nice rewards! This is completely optional, of course: your subscription to the mod is quite enough for me!
 
-If you do wish to support me on Patreon, you can find my page [here](https://steamcommunity.com/linkfilter/?url=https://www.patreon.com/aegonian).
+If you do wish to support me on Patreon, you can find my page [here](https://www.patreon.com/aegonian).
