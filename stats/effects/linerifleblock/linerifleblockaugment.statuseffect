@@ -1,0 +1,9 @@
+{
+  "name" : "linerifleblockaugment",
+  "effectConfig" : {},
+  "defaultDuration" : 60,
+
+  "scripts" : [
+    "linerifleblock.lua"
+  ]
+}

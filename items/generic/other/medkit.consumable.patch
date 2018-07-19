@@ -1,0 +1,16 @@
+[
+  { "op": "add", 
+	"path": "/effects/0/-",
+	"value": {
+	  "effect" : "akkimariacidblock",
+	  "duration" : 2
+	}
+  },
+  { "op": "add", 
+	"path": "/effects/0/-",
+	"value": {
+	  "effect" : "linerifleblock",
+	  "duration" : 2
+	}
+  }
+]

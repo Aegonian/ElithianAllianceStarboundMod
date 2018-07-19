@@ -38,6 +38,13 @@
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]
+    },
+    {
+      "dualImage" : "allianceantenna2flipped.png:<color>",
+      "imagePosition" : [0, -40],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
     }
   ]
 }

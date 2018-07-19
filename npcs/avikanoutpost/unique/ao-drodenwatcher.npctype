@@ -1,0 +1,46 @@
+{
+  "type" : "ao-drodenwatcher",
+  "baseType" : "ao-civilian",
+
+  "npcname" : "Lens-88",
+
+  "scriptConfig" : {
+    	
+	"offeredQuests" : [ "drodenwatcherarmour" ],
+	"turnInQuests" : [ "drodenwatcherarmour" ],
+  
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "Detected unauthorized entity. Alerting security forces."
+		  ],
+		  "avikan" : [ 
+		    "Detected Nomada Captain. Vas Vha'leih."
+		  ],
+		  "droden" : [ 
+		    "Detected Captain-status Droden unit. Vas Vha'leih."
+		  ]
+		}
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "droden-watcherhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "droden-watcherchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "droden-watcherlegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

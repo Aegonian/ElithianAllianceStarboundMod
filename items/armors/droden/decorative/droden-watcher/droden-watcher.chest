@@ -1,0 +1,57 @@
+{
+  "itemName" : "droden-watcherchest",
+  "price" : 2500,
+  "inventoryIcon" : "icons.png:chest",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "category" : "chestwear",
+  "description" : "^green;Droden. ^white;A chassis replacement for Droden Watcher units.",
+  "shortdescription" : "Watcher Chassis",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : {
+    "body" : "chestm.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "femaleFrames" : {
+    "body" : "chestf.png",
+    "backSleeve" : "bsleeve.png",
+    "frontSleeve" : "fsleeve.png"
+  },
+
+  "colorOptions" : [
+  
+	//Colours go from LIGHT to DARK - LIGHT/MEDIUM/DARK
+	
+	//DEFAULT - NO DYE
+	/* 0- RED */
+    { "e0975c" : "F72110", "a85636" : "B50F07", "6f2919" : "890C05" },
+	
+	//DYE COLOURS
+    /* 1- BLACK */
+    { "e0975c" : "3D3D3D", "a85636" : "282828", "6f2919" : "0F0F0F" },
+    /* 2- GREY */
+    { "e0975c" : "878787", "a85636" : "5B5B5B", "6f2919" : "3D3D3D" },
+    /* 3- WHITE */
+    { "e0975c" : "DBDBDB", "a85636" : "999999", "6f2919" : "666666" },
+    /* 4- RED */
+    { "e0975c" : "F72110", "a85636" : "B50F07", "6f2919" : "890C05" },
+    /* 5- ORANGE */
+    { "e0975c" : "F77410", "a85636" : "AD4800", "6f2919" : "7A3300" },
+    /* 6- YELLOW */
+    { "e0975c" : "F7BA10", "a85636" : "AA7A00", "6f2919" : "7A5900" },
+    /* 7- GREEN */
+    { "e0975c" : "339600", "a85636" : "226300", "6f2919" : "153D00" },
+    /* 8- BLUE */
+    { "e0975c" : "2143BC", "a85636" : "142F91", "6f2919" : "071960" },
+    /* 9- PURPLE */
+    { "e0975c" : "7E47D1", "a85636" : "5D21B7", "6f2919" : "380C7A" },
+    /* 10- PINK */
+    { "e0975c" : "CF4EDB", "a85636" : "9B2EA5", "6f2919" : "6B1572" },
+    /* 11- BROWN */
+    { "e0975c" : "84674C", "a85636" : "5B432C", "6f2919" : "3D2917" }
+
+  ]
+}

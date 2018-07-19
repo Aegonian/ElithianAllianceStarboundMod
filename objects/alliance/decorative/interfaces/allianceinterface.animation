@@ -23,7 +23,8 @@
           "light" : {
             "off" : {
               "properties" : {
-                "image" : ""
+                "image" : "<partImage>:off",
+                "fullbright" : true
               }
             },
             "on" : {

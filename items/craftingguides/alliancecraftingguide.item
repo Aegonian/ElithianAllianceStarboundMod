@@ -8,6 +8,11 @@
   "category" : "Crafting Guide",
   "learnBlueprintsOnPickup" : [
 	
+//New in v2.3.4
+	  "aegishiplight",
+	  "allianceraildoor",
+	  "alliancerailhatch",
+	
 //New in v2.3.3
 	  "allianceshipcore",
 	  "alliancemechassemblystation",

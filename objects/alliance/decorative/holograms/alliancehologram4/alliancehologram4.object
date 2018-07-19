@@ -32,7 +32,7 @@
   "inventoryIcon" : "alliancehologram4icon.png",
   "orientations" : [
     {
-      "image" : "alliancehologram4.png:<color>.<frame>",
+      "dualImage" : "alliancehologram4.png:<color>.<frame>",
       "imagePosition" : [-8, 0],
 	  
       "frames" : 16,

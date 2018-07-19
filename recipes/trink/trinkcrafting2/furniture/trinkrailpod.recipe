@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "trinkmetaltier4", "count" : 15 },
+    { "item" : "trinkelectronics", "count" : 2 },
+    { "item" : "trinkpowercore", "count" : 1 },
+    { "item" : "trinkwiring", "count" : 10 }
+  ],
+  "output" : {
+    "item" : "trinkrailpod",
+    "count" : 1
+  },
+  "groups" : [ "trinkcrafting2", "furniture", "all" ]
+}

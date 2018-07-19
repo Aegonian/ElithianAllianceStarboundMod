@@ -1,0 +1,60 @@
+{
+  "objectName" : "allianceraildoor",
+  "colonyTags" : ["alliance","door","rails"],
+  "rarity" : "Common",
+  "category" : "door",
+  "printable" : false,
+  "price" : 150,
+  "description" : "A thick metal door with a rail going through it.",
+  "shortdescription" : "Alliance Rail Door",
+  "race" : "aegi",
+  
+  "health" : 4,
+
+  "floranDescription" : "Rail goesss through the metal door.",
+  "glitchDescription" : "Pleased. This metal door has a rail going through it.",
+  "novakidDescription" : "Some kinda door with a rail goin' through it.",
+  
+  "drodenDescription" : "Detected alien door. Detected rail system inside.",
+  "akkimariDescription" : "Rail goes through door.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "allianceraildoor.png:default",
+      "imagePosition" : [-8, 0],
+      "renderLayer" : "Object+5",
+	  
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom", "top" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/door/door.lua" ],
+  "scriptDelta" : 5,
+
+  "openMaterialSpaces" : [
+    [[-1, 1], "metamaterial:rail"], [[0, 1], "metamaterial:rail"]
+  ],
+
+  "animation" : "/objects/wired/door/door.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_open.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_close.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "allianceraildoor.png"
+  },
+  "animationPosition" : [-8, 0],
+
+  "inputNodes" : [ [-1, 6] ],
+  "outputNodes" : [ [0, 0] ]
+}

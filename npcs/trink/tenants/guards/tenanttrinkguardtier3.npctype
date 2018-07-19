@@ -50,5 +50,13 @@
           }
         ] ]
     ]
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+	  "bleedingImmunity" : {
+		"baseValue" : 1.0
+	  }
+    }
   }
 }

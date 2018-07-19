@@ -1,0 +1,9 @@
+{
+  "name" : "akkimariacidblockaugment",
+  "effectConfig" : {},
+  "defaultDuration" : 60,
+
+  "scripts" : [
+    "akkimariacidblock.lua"
+  ]
+}

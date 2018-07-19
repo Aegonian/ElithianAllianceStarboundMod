@@ -1,0 +1,48 @@
+{
+  "type" : "eo-humanprotector",
+  "baseType" : "eo-civilian",
+
+  "npcname" : "Alice",
+  "identity" : {
+    "imagePath" : "human",
+    "gender" : "female",
+    "hairGroup" : "hair",
+    "hairType" : "fem15"
+  },
+
+  "dropPools" : [ "aegiDeathTreasure" ],
+
+  "scriptConfig" : {
+	//"offeredQuests" : [ "alliancecrafting" ],
+	//"turnInQuests" : [ "alliancecrafting" ],
+	
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [
+		    "There's not much left of the Protectorate, but I still protect these people. It's something, at least."
+		  ]
+		}
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+		{
+		  "chest" : [
+			{ "name" : "protectoratechest", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "legs" : [
+			{ "name" : "protectoratepants", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "primary" : [
+			[ "aegisaltpistol" ]
+		  ]
+		}
+      ]]
+    ]
+  }
+}

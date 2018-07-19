@@ -1,0 +1,61 @@
+{
+  "objectName" : "alliancerailhatch",
+  "colonyTags" : ["alliance","door","rails"],
+  "rarity" : "Common",
+  "category" : "door",
+  "printable" : false,
+  "price" : 150,
+  "description" : "A thick metal hatch with a rail going through it.",
+  "shortdescription" : "Alliance Rail Hatch",
+  "race" : "aegi",
+  
+  "health" : 4,
+
+  "floranDescription" : "Rail goesss through the metal hatch.",
+  "glitchDescription" : "Pleased. This metal hatch has a rail going through it.",
+  "novakidDescription" : "Some kinda hatch with a rail goin' through it.",
+  
+  "drodenDescription" : "Detected alien hatch. Detected rail system inside.",
+  "akkimariDescription" : "Rail goes through hatch.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "alliancerailhatch.png:default",
+      "imagePosition" : [-24, -8],
+      "renderLayer" : "Object+5",
+      "animationPosition" : [-24, -8],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "left", "right" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/door/door.lua" ],
+  "scriptDelta" : 5,
+
+  "openMaterialSpaces" : [
+    [[0, -1], "metamaterial:rail"], [[0, 0], "metamaterial:rail"]
+  ],
+
+  "animation" : "/objects/wired/door/door.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_open.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_close.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "alliancerailhatch.png"
+  },
+
+  "inputNodes" : [ [-3, 0] ],
+  "outputNodes" : [ [3, -1] ]
+}

@@ -1,0 +1,12 @@
+{
+  "name" : "akkimariacidblock",
+  "effectConfig" : {},
+  "defaultDuration" : 60,
+
+  "scripts" : [
+    "akkimariacidblock.lua"
+  ],
+
+  "label" : "Vaash Resistance",
+  "icon" : "/interface/statuses/akkimariacidblock.png"
+}

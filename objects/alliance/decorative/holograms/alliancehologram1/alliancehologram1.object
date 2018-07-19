@@ -40,6 +40,20 @@
       "lightPosition" : [0, 1],
 
       "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ ]
+    },
+    {
+      "image" : "alliancehologram1.png:<color>.<frame>",
+      "imagePosition" : [-16, 0],
+	  
+      "frames" : 16,
+      "animationCycle" : 1.6,
+      "lightPosition" : [0, 1],
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
       "anchors" : [ ]
     }
   ],

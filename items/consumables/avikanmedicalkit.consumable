@@ -25,6 +25,14 @@
       {
         "effect" : "poisonblock",
         "duration" : 2
+      },
+      {
+        "effect" : "akkimariacidblock",
+        "duration" : 2
+      },
+      {
+        "effect" : "linerifleblock",
+        "duration" : 2
       }
     ] ],
   "emote" : "",

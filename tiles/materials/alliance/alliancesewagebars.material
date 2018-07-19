@@ -2,7 +2,7 @@
   "materialId" : 30157,
   "materialName" : "alliancesewagebars",
   "particleColor" : [97, 97, 97, 255],
-  "itemDrop" : "alliancepipe", 
+  "itemDrop" : "alliancesewagebars", 
   "shortdescription" : "Alliance Sewage Bars",
   
   "description" : "Metal bars.",

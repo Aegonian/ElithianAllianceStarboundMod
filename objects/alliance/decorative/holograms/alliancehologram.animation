@@ -23,7 +23,7 @@
           "light" : {
             "off" : {
               "properties" : {
-                "image" : ""
+                "image" : "<partImage>:off"
               }
             },
             "on" : {

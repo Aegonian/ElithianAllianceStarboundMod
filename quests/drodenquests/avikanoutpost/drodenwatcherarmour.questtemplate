@@ -1,0 +1,42 @@
+{
+  "id" : "drodenwatcherarmour",
+  "prerequisites" : [ "drodencustomtailoring", "avikanstorystart" ],
+  "title" : "^green;Droden of the Watchers",
+  "text" : "Detected Droden unit registered to the Watchers. Logs indicate recent interaction with Commander Zaheed. Watcher armour received. ^green;This unit can trade ^orange;Avikan-fitted Watcher armour ^green;for ^orange;Watcher-themed Droden part replacements.^reset; Return with full set to complete trade.",
+  "completionText" : "Trade accepted. Handing over Watcher-themed Droden part replacements. Ending conversation.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "droden-watcherhead", 1 ], [ "droden-watcherchest", 1 ], [ "droden-watcherlegs", 1 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+     "portraits" : {
+      "questStarted" : "questGiver",
+      "questComplete" : "questReceiver"
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "avikan-watcherhead",
+        "count" : 1,
+        "consume" : true
+      },
+      {
+        "type" : "gatherItem",
+        "itemName" : "avikan-watcherchest",
+        "count" : 1,
+        "consume" : true
+      },
+      {
+        "type" : "gatherItem",
+        "itemName" : "avikan-watcherlegs",
+        "count" : 1,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Return to ^orange;Lens-88 ^reset;in the ^orange;Starfarer's Refuge^reset;"
+  }
+}

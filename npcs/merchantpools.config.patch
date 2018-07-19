@@ -23,6 +23,9 @@
 			  { "item": { "name": "avikan-watcherhead" }, "prerequisiteQuest" : "avikanstorystart" },
 			  { "item": { "name": "avikan-watcherchest" }, "prerequisiteQuest" : "avikanstorystart" },
 			  { "item": { "name": "avikan-watcherlegs" }, "prerequisiteQuest" : "avikanstorystart" },
+			  { "item": { "name": "droden-watcherhead" }, "prerequisiteQuest" : "drodenwatcherarmour" },
+			  { "item": { "name": "droden-watcherchest" }, "prerequisiteQuest" : "drodenwatcherarmour" },
+			  { "item": { "name": "droden-watcherlegs" }, "prerequisiteQuest" : "drodenwatcherarmour" },
 			  //Quest Reward Items
 			  { "item": { "name": "avikanwatcherpass" }, "prerequisiteQuest" : "avikanstoryhidden", "price" : 5000 },
 			  { "item": { "name": "keffriderslicense" }, "prerequisiteQuest" : "keffrider4", "price" : 5000 },

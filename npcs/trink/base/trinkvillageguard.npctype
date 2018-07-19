@@ -27,5 +27,13 @@
     }
   },
   
-  "matchColorIndices" : true
+  "matchColorIndices" : true,
+
+  "statusControllerSettings" : {
+    "stats" : {
+	  "bleedingImmunity" : {
+		"baseValue" : 1.0
+	  }
+    }
+  }
 }

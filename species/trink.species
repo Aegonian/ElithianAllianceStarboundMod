@@ -19,6 +19,9 @@
   "defaultBlueprints" : {
     "tier1" : [
 
+//NEW in v2.3.4
+	  { "item" : "trinkrailpod" },
+
 //NEW in v2.3.2
 	  { "item" : "trinkpipehollow" },
 

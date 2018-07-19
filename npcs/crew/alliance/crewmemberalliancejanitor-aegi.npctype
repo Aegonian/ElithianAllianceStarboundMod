@@ -1,0 +1,17 @@
+{
+  "type" : "crewmemberalliancejanitor-aegi",
+  "baseType" : "crewmemberalliancejanitor",
+
+  // This npctype is a template. Do not use it for spawning NPCs directly
+
+  "scriptConfig" : {
+	"crew" : {	  
+	  "defaultUniform" : {
+		"chest" : "aegi-allianceuniformchest",
+		"legs" : "aegi-allianceuniformlegs"
+	  },
+	  
+      "uniformSlots" : ["chest", "chestCosmetic", "legs", "legsCosmetic", "back", "backCosmetic"]
+    }
+  }
+}

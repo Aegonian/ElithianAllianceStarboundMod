@@ -1,0 +1,13 @@
+{
+  "itemName" : "alliancesewagebars",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "alliancesewagebars.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  
+  "shortdescription" : "Alliance Sewage Bars",
+  "description" : "Metal bars.",
+
+  "materialId" : 30157
+}

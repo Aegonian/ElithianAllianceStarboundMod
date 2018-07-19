@@ -1,0 +1,74 @@
+{
+  "type" : "eo-humanrefugee",
+  "baseType" : "eo-civilian",
+
+  "dropPools" : [ "aegiDeathTreasure" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "We came here looking for refuge, and the Aegi have been providing for us well.",
+		    "It's quite incredible that we wound up on the same planet as our ancestors who fled Earth before us.",
+		    "This place is much like home, but it can never replace Earth...",
+		    "I lost everything when Earth was destroyed...",
+		    "I hope the Aegi can offer us a real place to stay soon.",
+		    "This place reminds me of the Protectorate.",
+		    "There's so many more intelligent species than we had in the Protectorate. It's fascinating.",
+		    "It's hard to believe that the Aegi fled Earth so many hundreds of years ago, too.",
+		    "It's strange to see a species that's descended from us humans.",
+		    "I iwsh I could go back to Earth...",
+		    "I miss my home."
+		  ]
+		}
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "human" : [
+      [0, [
+		{
+		  "head" : [
+			{ "name" : "caphead", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+			{ "name" : "caphead", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+			{ "name" : "caphead", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+			{ "name" : "caphead", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } }, 
+			"",
+			{ "name" : "fancaphead", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+			{ "name" : "fancaphead", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+			{ "name" : "fancaphead", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+			{ "name" : "fancaphead", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+			{ "name" : "glasses1head", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+			{ "name" : "glasses4head", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+			{ "name" : "glasses4head", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+			{ "name" : "glasses5head", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+			{ "name" : "scientisthead", "parameters" : { "colorIndex" : 0 } },
+			{ "name" : "scientisthead", "parameters" : { "colorIndex" : 0 } },
+			{ "name" : "winterscarfhead", "parameters" : { "colorIndex" : 4 } },
+			{ "name" : "winterscarfhead", "parameters" : { "colorIndex" : 5 } },
+			{ "name" : "winterscarfhead", "parameters" : { "colorIndex" : 6 } },
+			{ "name" : "winterscarfhead", "parameters" : { "colorIndex" : 7 } },
+			{ "name" : "winterscarfhead", "parameters" : { "colorIndex" : 8 } }
+		  ],
+		  "chest" : [
+			{ "name" : "conceptchest", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+			{ "name" : "coolchest", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+			{ "name" : "tshirtchest", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+			{ "name" : "hoodiechest", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+			{ "name" : "workoutchest", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } }
+		  ],
+		  "legs" : [
+			{ "name" : "coollegs", "parameters" : { "colorIndex" : [1, 3, 4, 5, 6, 7, 8, 9] } },
+			{ "name" : "workoutlegs", "parameters" : { "colorIndex" : 1 } },
+			{ "name" : "workoutlegs", "parameters" : { "colorIndex" : 1 } },
+			{ "name" : "workoutlegs", "parameters" : { "colorIndex" : 2 } },
+			{ "name" : "workoutlegs", "parameters" : { "colorIndex" : 8 } }
+		  ]
+		}
+	  ] ]
+    ]
+  }
+}

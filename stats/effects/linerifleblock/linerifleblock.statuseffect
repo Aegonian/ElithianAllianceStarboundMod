@@ -1,0 +1,12 @@
+{
+  "name" : "linerifleblock",
+  "effectConfig" : {},
+  "defaultDuration" : 60,
+
+  "scripts" : [
+    "linerifleblock.lua"
+  ],
+
+  "label" : "Lineburn Resistance",
+  "icon" : "/interface/statuses/linerifleblock.png"
+}
