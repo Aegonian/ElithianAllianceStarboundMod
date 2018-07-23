@@ -1,41 +1,51 @@
 [
-	//AVIKAN
-	{ "op" : "add",
-	  "path" : "/species/avikan",
-	  "value" : {
-		"aiFrames" : "avikanAI.png",
-		"portraitFrames" : "portraits/avikanportrait.png",
-		"staticFrames" : "staticAvikan.png"
-	  }
-	},
-	
-	//DRODEN
-	{ "op" : "add",
-	  "path" : "/species/droden",
-	  "value" : {
-		"aiFrames" : "drodenAI.png",
-		"portraitFrames" : "portraits/drodenportrait.png",
-		"staticFrames" : "staticDroden.png"
-	  }
-	},
-	
-	//TRINK
-	{ "op" : "add",
-	  "path" : "/species/trink",
-	  "value" : {
-		"aiFrames" : "trinkAI.png",
-		"portraitFrames" : "portraits/trinkportrait.png",
-		"staticFrames" : "staticTrink.png"
-	  }
-	},
-	
-	//AEGI
-	{ "op" : "add",
-	  "path" : "/species/aegi",
-	  "value" : {
-		"aiFrames" : "aegiAI.png",
-		"portraitFrames" : "portraits/aegiportrait.png",
-		"staticFrames" : "staticAegi.png"
-	  }
+  //AVIKAN
+  { "op" : "add",
+	"path" : "/species/avikan",
+	"value" : {
+	  "aiFrames" : "avikanAI.png",
+	  "portraitFrames" : "portraits/avikanportrait.png",
+	  "staticFrames" : "staticAvikan.png"
 	}
+  },
+  
+  //DRODEN
+  { "op" : "add",
+	"path" : "/species/droden",
+	"value" : {
+	  "aiFrames" : "drodenAI.png",
+	  "portraitFrames" : "portraits/drodenportrait.png",
+	  "staticFrames" : "staticDroden.png"
+	}
+  },
+  
+  //TRINK
+  { "op" : "add",
+	"path" : "/species/trink",
+	"value" : {
+	  "aiFrames" : "trinkAI.png",
+	  "portraitFrames" : "portraits/trinkportrait.png",
+	  "staticFrames" : "staticTrink.png"
+	}
+  },
+  
+  //AEGI
+  { "op" : "add",
+	"path" : "/species/aegi",
+	"value" : {
+	  "aiFrames" : "aegiAI.png",
+	  "portraitFrames" : "portraits/aegiportrait.png",
+	  "staticFrames" : "staticAegi.png"
+	}
+  },
+  
+  //AKKIMARI
+  { "op" : "add",
+	"path" : "/species/akkimari",
+	"value" : {
+	  "aiFrames" : "AkkimariAI.png",
+	  "portraitFrames" : "portraits/akkimariportrait.png",
+	  "staticFrames" : "staticAkkimari.png"
+	}
+  }
 ]

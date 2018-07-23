@@ -1,9 +1,9 @@
 {
   "background" : {
     "type" : "background",
-    "fileHeader" : "/interface/tooltips/header.png",
-    "fileBody" : "/interface/tooltips/bodyobjectextended.png",
-    "fileFooter" : "/interface/tooltips/footerobjectextended.png"
+    "fileHeader" : "/interface/tooltips/theauniqueheader.png",
+    "fileBody" : "/interface/tooltips/theauniquebody4.png",
+    "fileFooter" : "/interface/tooltips/theauniquefooter4.png"
   },
   "objectImage" : {
     "type" : "image",

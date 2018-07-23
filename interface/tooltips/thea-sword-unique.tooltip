@@ -1,9 +1,9 @@
 {
   "background" : {
     "type" : "background",
-    "fileHeader" : "/interface/tooltips/header.png",
-    "fileBody" : "/interface/tooltips/bodyobjectthea.png",
-    "fileFooter" : "/interface/tooltips/footerobject2.png"
+    "fileHeader" : "/interface/tooltips/theauniqueheader.png",
+    "fileBody" : "/interface/tooltips/theauniquebody.png",
+    "fileFooter" : "/interface/tooltips/theauniquefooter.png"
   },
   "moneyIcon" : {
     "type" : "image",

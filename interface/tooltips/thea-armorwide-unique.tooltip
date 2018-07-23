@@ -1,9 +1,9 @@
 {
   "background" : {
     "type" : "background",
-    "fileHeader" : "/interface/tooltips/theauniqueheader.png",
-    "fileBody" : "/interface/tooltips/theauniquebodyarmour.png",
-    "fileFooter" : "/interface/tooltips/theauniquefooter.png"
+    "fileHeader" : "/interface/tooltips/theauniqueheaderwide.png",
+    "fileBody" : "/interface/tooltips/theauniquebodyarmourwide.png",
+    "fileFooter" : "/interface/tooltips/theauniquefooterwide.png"
   },
   //THIS REPLACES THE RARITY LABEL, CREATING A FAKE CUSTOM RARITY
   "customRarityLabel" : {
@@ -16,12 +16,12 @@
   },
   "moneyIcon" : {
     "type" : "image",
-    "position" : [97, 23],
+    "position" : [146, 23],
     "file" : "/interface/money.png"
   },
   "priceLabel" : {
     "type" : "label",
-    "position" : [110, 23],
+    "position" : [159, 23],
     "hAnchor" : "left",
     "value" : "0"
   },
@@ -66,7 +66,7 @@
           "scissoring" : false,
           "type" : "image",
           "position" : [61, 0],
-          "file" : "/interface/tooltips/statlistback.png"
+          "file" : "/interface/tooltips/theastatlistbackwide.png"
         }
       }
     }

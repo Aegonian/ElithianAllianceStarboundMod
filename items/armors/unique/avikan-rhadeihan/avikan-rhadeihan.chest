@@ -7,7 +7,7 @@
   "category" : "chestwear",
   "description" : "^green;Avikan. ^white;A chestpiece with an integrated regenerative matrix which starts healing its wearer shortly after taking damage.",
   "shortdescription" : "^orange;Rhadeihan Chestpiece^white;",
-  "tooltipKind" : "thea-armor-unique",
+  "tooltipKind" : "thea-armorwide-unique",
 
   "maleFrames" : {
     "body" : "chestm.png",
