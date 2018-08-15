@@ -37,5 +37,15 @@
   { "op" : "add",
 	"path" : "/pickedUpParameters/aegiDescription",
 	"value" : "I'll return with help."
+  },
+  
+  //AKKIMARI
+  { "op" : "add",
+	"path" : "/akkimariDescription",
+	"value" : "Akki take Matter Manipulator now, then Akki run!"
+  },
+  { "op" : "add",
+	"path" : "/pickedUpParameters/akkimariDescription",
+	"value" : "Akki return to help later!"
   }
 ]

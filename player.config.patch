@@ -20,6 +20,11 @@
 	"path" : "/species/-",
 	"value" : "aegi"
   },
+  //Akkimari
+  { "op" : "add",
+	"path" : "/species/-",
+	"value" : "akkimari"
+  },
 
   //DEFAULT CODEXES
   //Avikan
@@ -40,6 +45,11 @@
   //Aegi
   { "op" : "add",
 	"path" : "/defaultCodexes/aegi",
+	"value" : [ "protectorate1", "protectorate2" ]
+  },
+  //Akkimari
+  { "op" : "add",
+	"path" : "/defaultCodexes/akkimari",
 	"value" : [ "protectorate1", "protectorate2" ]
   },
 
@@ -63,6 +73,11 @@
   { "op" : "add",
 	"path" : "/deploymentConfig/speciesStarterMechBody/aegi",
 	"value" : "mechbodyaegiproto"
+  },
+  //Akkimari
+  { "op" : "add",
+	"path" : "/deploymentConfig/speciesStarterMechBody/akkimari",
+	"value" : "mechbodyakkimariproto"
   },
 
   //DEFAULT CRAFTING RECIPES -- Applies to all species

@@ -22,5 +22,11 @@
     "op" : "add",
     "path" : "/scriptConfig/giveSpeciesBlueprints/aegi",
     "value" : ["mechbodyaegi"]
+  },
+  //AKKIMARI
+  {
+    "op" : "add",
+    "path" : "/scriptConfig/giveSpeciesBlueprints/aegi",
+    "value" : ["mechbodyakkimari"]
   }
 ]

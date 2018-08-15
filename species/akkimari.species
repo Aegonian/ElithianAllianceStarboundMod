@@ -11,7 +11,7 @@
   "humanoidConfig" : "/species/types/thea-akkimaroid.config",
   "nameGen" : [ "/species/akkimarinamegen.config:names", "/species/akkimarinamegen.config:names" ],
   "ouchNoises" : [ "/sfx/humanoid/akkimari_hurt_male1.ogg", "/sfx/humanoid/akkimari_hurt_male1.ogg" ],
-  "charGenTextLabels" : [ "Skin Colour", "Ear style", "Chestwear", "Legwear", "N/A", "Fur colour", "Chestwear colour", "Legwear colour", "AKKIMARI", "Personality" ],
+  "charGenTextLabels" : [ "Skin Colour", "N/A", "Chestwear", "Legwear", "Ear Size", "Fur colour", "Chestwear colour", "Legwear colour", "AKKIMARI", "Personality" ],
   "skull" : "/humanoid/akkimari/dead.png",
   "effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=AFFF72FF?replace=31a6ffFF=00FF21FF",
   "defaultBlueprints" : {
@@ -66,7 +66,7 @@
     {
       "name" : "male",
       "image" : "/interface/title/male.png",
-      "characterImage" : "/interface/title/drodenmale.png",
+      "characterImage" : "/interface/title/akkimarimale.png",
 	  "hairGroup" : "hair",
       "hair" : [ "0" ],
       "shirt" : [ "thea-hiddenchest" ],
@@ -79,7 +79,7 @@
     {
       "name" : "female",
       "image" : "/interface/title/female.png",
-      "characterImage" : "/interface/title/drodenfemale.png",
+      "characterImage" : "/interface/title/akkimarifemale.png",
 	  "hairGroup" : "hair",
       "hair" : [ "0" ],
       "shirt" : [ "thea-hiddenchest" ],

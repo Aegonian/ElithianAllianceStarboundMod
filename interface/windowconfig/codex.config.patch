@@ -115,6 +115,18 @@
 	  }
 	}
   },
+  { "op": "add",
+	"path": "/paneLayout/speciesTabs/buttons/-",
+	"value": {
+	  "position" : [31, 58],
+	  "baseImage" : "/interface/codex/tab_akkimari.png",
+	  "baseImageChecked" : "/interface/codex/tab_akkimari_select.png",
+	  "pressedOffset" : [0, 0],
+	  "data" : {
+		"species" : "akkimari"
+	  }
+	}
+  },
   
   //======================= Adding the Elithian race tabs ========================================================
   //Row 1

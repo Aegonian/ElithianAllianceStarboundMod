@@ -1,0 +1,55 @@
+{
+  "objectName" : "akkimarishiplockertier0",
+  "colonyTags" : ["akkimari", "storage"],
+  "printable" : false,
+  "rarity" : "Common",
+  
+  "category" : "decorative",
+  "description" : "Store some stuff, why don't you?",
+  "shortdescription" : "Ship locker",
+  "race" : "akkimari",
+  
+  "lightColor" : [0, 76, 0],
+
+  "apexDescription" : "The ship's storage system. It's not currently functional.",
+  "avianDescription" : "A device that holds many items for safe keeping. It's broken at the moment.",
+  "floranDescription" : "Ssstorage. It'sss not working.",
+  "glitchDescription" : "Distressed. This ship's storage system is malfunctioning.",
+  "humanDescription" : "A storage locker. It doesn't seem to be working.",
+  "hylotlDescription" : "An elegant storage solution. It's not currently powered.",
+  "novakidDescription" : "A locker. Ain't much use 'til it's fixed.",
+
+  "aegiDescription" : "The panel is broken. No way to access the ship locker until I fix it.",    
+  "avikanDescription" : "The ship locker is jammed. I should get it fixed as soon as possible.",
+  "erixianDescription" : "A broken ship locker, no way to open it.",
+  "trinkDescription" : "This ship locker will not open.",
+  "hymidDescription" : "A broken locker, it won't open.",
+  "notixDescription" : "This isn't going to open until I fix up the ship.",
+  "jorgasianDescription" : "This ship locker is broken.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Ship locker. Status: jammed.",
+  "akkimariDescription" : "Akki want to store stuff here. But is broken, Akki no use...",
+  
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "akkimarishiplockertier0.png:<color>.<frame>", "fullbright" : true }, { "image" : "akkimarishiplockertier0lit.png:<color>.<frame>" } ],
+      "imagePosition" : [-16, -8],
+      "frames" : 8,
+      "animationCycle" : 1,
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+  
+  "animation" : "/objects/noisy/noisy.animation",
+
+  "scripts" : [
+    "/objects/noisy/noisy.lua"
+  ],
+  
+  "sounds" : [ "/sfx/interface/clickon_error.ogg" ]
+  
+}

@@ -14,5 +14,9 @@
   { "op" : "add",
 	"path" : "/speciesOrdering/-",
 	"value" : "aegi"
+  },
+  { "op" : "add",
+	"path" : "/speciesOrdering/-",
+	"value" : "akkimari"
   }
 ]

@@ -1,0 +1,23 @@
+{
+  "config" : {
+    "shipUpgrades" : {
+      "capabilities" : ["teleport", "planetTravel", "systemTravel"],
+      "crewSize" : 10
+    }
+  },
+
+  "backgroundOverlays" : [
+    {
+      "image" : "akkimariT7.png",
+      "position" : [20, 4],
+      "fullbright" : true
+    },
+    {
+      "image" : "akkimariT7lit.png",
+      "position" : [20, 4]
+    }
+  ],
+
+  "blockKey" : "blockKey.config:blockKey",
+  "blockImage" : "akkimariT7blocks.png"
+}

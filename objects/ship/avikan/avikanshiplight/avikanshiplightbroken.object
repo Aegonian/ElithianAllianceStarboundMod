@@ -37,7 +37,7 @@
       "lightPosition" : [-1, 0],
 
       "spaceScan" : 0.1,
-      "anchors" : [ "background" ]
+      "anchors" : [ "top" ]
 
     }
   ],

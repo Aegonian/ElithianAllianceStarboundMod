@@ -32,13 +32,16 @@ end
 
 function TheaLaserSight:reset()
   --Disable the lights
-  animator.setLightActive("flashlight", false)
-  animator.setLightActive("flashlightSpread", false)
+  --animator.setLightActive("flashlight", false)
+  --animator.setLightActive("flashlightSpread", false)
   --Disable the laser
-  activeItem.setScriptedAnimationParameter("laserColour", self.laserColourInactive)
+  --activeItem.setScriptedAnimationParameter("laserColour", self.laserColourInactive)
   --Hide the laser sprite overlay
-  animator.setAnimationState("laser", "off")
-  self.active = false
+  if animator.animationState("laser") == "on" then
+	self.active = true
+  else
+	self.active = false
+  end
   
   --Optionally reposition the laser. Useful when the laser is configured through a modular alt ability
   if self.positionRelativeToMuzzle then

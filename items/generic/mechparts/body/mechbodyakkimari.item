@@ -1,0 +1,15 @@
+{
+  "itemName" : "mechbodyakkimari",
+  "price" : 9600,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "category" : "mechPart",
+  "tooltipKind" : "mechbody",
+  "builder" : "/items/buildscripts/buildmechpart.lua",
+  "inventoryIcon" : "mechbodyakkimari.png",
+  "description" : "A powerful mech body built by Akkimari scavengers.",
+  "shortdescription" : "Crusader Mech Body",
+  "itemTags" : [ ],
+
+  "mechPart" : ["body", "akkimari"]
+}

@@ -1,0 +1,24 @@
+{
+  "id" : "akkimaristoryhidden",
+  "mainQuest" : true,
+  "prerequisites" : [],
+  "title" : "Akkimari Story - Initial Setup",
+  "text" : "This quest acts as a prerequisite to the Akkimari storyline. You shouldn't be able to see this in your log.",
+  "completionText" : "This quest acts as a prerequisite to the Akkimari storyline. You shouldn't be able to see this in your log.",
+  "moneyRange" : [0, 0],
+  "canBeAbandoned" : false,
+  "invisible" : true,
+  "logOnly" : true,
+  
+  "rewards" : [ ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/thea-hiddenstorystart.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "default" : "player"
+    },
+    "requireTurnIn" : false,
+    "conditions" : [ ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "objectName" : "akkimarishipdoor",
+  "colonyTags" : ["akkimari", "door"],
+  "rarity" : "Common",
+  "category" : "door",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A blast door made of selected scrap metal.",
+  "shortdescription" : "Akris Ship Door",
+  "race" : "akkimari",
+  
+  "health" : 8,
+
+  "apexDescription" : "A blast door. It looks shoddy, yet sturdy.",
+  "avianDescription" : "A heavy blast door. Looks poorly made.",
+  "floranDescription" : "Floran wondersss what is behind metal doorsss.",
+  "glitchDescription" : "Curious. Why is this blast door covered in plates of scrap metal?",
+  "humanDescription" : "A scrap metal blast door. I'm surprised by how sturdy it is.",
+  "hylotlDescription" : "A crude blast door.",
+  "novakidDescription" : "Some kinda blast door made of scrap. Right...",
+
+  "aegiDescription" : "An Akkimari-made blast door. Surprisingly effective.",
+  "avikanDescription" : "It looks like a blast door covered in scrap.",
+  "erixianDescription" : "It may not look like much, but this door is surprisingly well-made.",
+  "trinkDescription" : "This door is unusually efficient for Akkimari standards.",
+  "hymidDescription" : "A difficult to breach blast door. Looks can be deceiving, it seems.",
+  "notixDescription" : "A blast door. Something about it feels odd.",
+  "jorgasianDescription" : "I'm surprised by how effective this door is, given its shoddy appearance.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Blast door detected.",
+  "akkimariDescription" : "Thick door. Keeps Akkimari safe.",
+
+  "inventoryIcon" : "akkimarishipdooricon.png",
+  "orientations" : [
+    {
+      "dualImage" : "akkimarishipdoor.png:default",
+      "imagePosition" : [0, 0],
+      "renderLayer" : "Object+5",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom", "top" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/door/door.lua" ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/door/door.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_open.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_close.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "akkimarishipdoor.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "inputNodes" : [ [0, 5] ],
+  "outputNodes" : [ [1, 0] ]
+}

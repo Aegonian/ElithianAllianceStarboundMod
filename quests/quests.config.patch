@@ -18,6 +18,10 @@
 	"path" : "/initialquests/aegi",
 	"value" : [ "protectorate", "aegicustomtailoring", "alliancestoryhidden" ]
   },
+  { "op" : "add",
+	"path" : "/initialquests/akkimari",
+	"value" : [ "protectorate", "akkimaricustomtailoring", "akkimaristoryhidden" ]
+  },
   
   //===============================================================================
   // QUEST OBJECTIVE DESCRIPTIONS

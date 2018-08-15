@@ -69,6 +69,29 @@
 	  }
 	}
   },
+  {
+    "op" : "add",
+    "path" : "/akkimariproto",
+    "value" : {
+	  "stats" : {
+		"energy" : 3,
+		"protection" : 3
+	  },
+	  "partParameters" : {},
+	  "partImages" : {
+		"bodyBack" : "body/akkimariproto_back.png",
+		"bodyFront" : "body/akkimariproto_front.png",
+		"bodyFullbright" : "body/akkimariproto_fullbright.png"
+	  },
+	  "defaultPrimaryColors" : ["DB9C72", "B5805B", "7C573F", "593F2F"],	//From LIGHT to DARK
+	  "defaultSecondaryColors" : ["676568", "545255", "414042", "353335"],	//From LIGHT to DARK
+	  "animationCustom" : {
+		"animatedParts" : { "parts" : { "bodyFront" : { "properties" : {
+		  "sitPosition" : [0.25, 0.35]
+		}}}}
+	  }
+	}
+  },
   
   //TIER 5
   {
@@ -142,6 +165,31 @@
 	  "animationCustom" : {
 		"animatedParts" : { "parts" : { "bodyFront" : { "properties" : {
 		  "sitPosition" : [0.25, 1.0]
+		}}}}
+	  }
+	}
+  },
+  {
+    "op" : "add",
+    "path" : "/akkimari",
+    "value" : {
+	  "stats" : {
+		"energy" : 5,
+		"protection" : 5
+	  },
+	  "partParameters" : {
+		"hazardImmunities" : ["biomeradiation", "biomecold"]
+	  },
+	  "partImages" : {
+		"bodyBack" : "body/akkimari_back.png",
+		"bodyFront" : "body/akkimari_front.png",
+		"bodyFullbright" : "body/akkimari_fullbright.png"
+	  },
+	  "defaultPrimaryColors" : ["DB9C72", "B5805B", "7C573F", "593F2F"],	//From LIGHT to DARK
+	  "defaultSecondaryColors" : ["676568", "545255", "414042", "353335"],	//From LIGHT to DARK
+	  "animationCustom" : {
+		"animatedParts" : { "parts" : { "bodyFront" : { "properties" : {
+		  "sitPosition" : [0.25, 0.35]
 		}}}}
 	  }
 	}

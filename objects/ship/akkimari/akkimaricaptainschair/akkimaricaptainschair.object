@@ -1,0 +1,68 @@
+{
+  "objectName" : "akkimaricaptainschair",
+  "colonyTags" : ["akkimari"],
+  "itemTags" : ["captainschair"],
+  "printable" : false,
+  "rarity" : "Common",
+  "objectType" : "loungeable",
+
+  "description" : "The Captain sits here to fly the ship.",
+  "shortdescription" : "Akris Captain's Chair",
+  "race" : "akkimari",
+  "category" : "furniture",
+  "lightColor" : [0, 76, 0],
+
+  "apexDescription" : "The portal to freedom. This Captain's chair allows access to the ship's navigation console.",
+  "avianDescription" : "The Captain's chair grants power over the wings of the ship.",
+  "floranDescription" : "Sssmells of alien butt.",
+  "glitchDescription" : "Anticipation. Where shall the ship go next?",
+  "humanDescription" : "Another Captain's chair? I feel a bit tempted to try and hijack it...",
+  "hylotlDescription" : "The Captain's chair. It is the gateway to many an adventure.",
+  "novakidDescription" : "The Captain's chair. Whoever sits here gets to decide where this ship's gonna go.",
+
+  "aegiDescription" : "This Captain's chair grants access to the navigation console.",
+  "avikanDescription" : "The Captain's chair - it is a true honour to sit on one of these.",
+  "erixianDescription" : "The Captain's chair. It grants access to the navigation console and flight controls.",
+  "trinkDescription" : "This Captain's chair has specialized sensors, allowing only its owner to use the navigator.",
+  "hymidDescription" : "A Captain's chair. The ship's navigation console is linked to it.",
+  "notixDescription" : "The Captain's chair, granting access to the starship's navigator.",
+  "jorgasianDescription" : "The ship's navigation console can be accessed from this Captain's chair.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected Captain's chair. Grants access to navigation console.",
+  "akkimariDescription" : "Akki sit, control ship. Fly to raid, find Kel'chis.",
+  
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "akkimaricaptainschair.png:<color>", "fullbright" : true }, { "image" : "akkimaricaptainschairlit.png:<color>" } ],
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "flipImages" : true,
+      "direction" : "left",
+      "sitPosition" : [-2, 21]
+    },
+    {
+      "imageLayers" : [ { "image" : "akkimaricaptainschair.png:<color>", "fullbright" : true }, { "image" : "akkimaricaptainschairlit.png:<color>" } ],
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "right",
+      "sitPosition" : [-2, 21]
+    }
+  ],
+  
+  "interactAction" : "ScriptPane",
+  "interactData" : "/interface/cockpit/cockpit.config",
+
+  "sitFlipDirection" : false,
+  "sitCoverImage" : "/objects/ship/akkimari/akkimaricaptainschair/akkimaricaptainschaircover.png"
+}

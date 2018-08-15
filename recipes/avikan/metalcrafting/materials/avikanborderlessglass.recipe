@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "avikanglassitem", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "avikanborderlessglass",
+    "count" : 20
+  },
+  "duration" : 0.5,
+  "groups"  : [ "avikanmetalcrafting", "metalmaterials", "all" ]
+}

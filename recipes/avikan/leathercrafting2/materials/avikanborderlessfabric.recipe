@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "avikancloth", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "avikanborderlessfabric",
+    "count" : 20
+  },
+  "duration" : 0.5,
+  "groups"  : [ "avikanleathercrafting2", "leathermaterials", "all" ]
+}

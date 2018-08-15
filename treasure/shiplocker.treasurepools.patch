@@ -52,5 +52,17 @@
 		]
 	  }]
 	]	
+  },
+	
+  { "op" : "add",
+	"path" : "/akkimariStarterTreasure",
+	"value" : [
+	  [0, {
+		"fill" : [
+		  {"pool" : "starterTreasure"},
+		  {"item" : [ "akkimari-kelchisdecreebroken", 1]}
+		]
+	  }]
+	]	
   }
 ]

@@ -16,5 +16,17 @@
     "op" : "add",
     "path" : "/swapSets/-",
     "value" : ["DBDBDB", "B5B5B5", "848484", "4C4C4C"]
+  },
+  //AKKIMARI SCRAP METAL
+  {
+    "op" : "add",
+    "path" : "/swapSets/-",
+    "value" : ["DB9C72", "B5805B", "7C573F", "593F2F"]
+  },
+  //AKKIMARI DARK METAL
+  {
+    "op" : "add",
+    "path" : "/swapSets/-",
+    "value" : ["676568", "545255", "414042", "353335"]
   }
 ]

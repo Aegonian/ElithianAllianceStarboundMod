@@ -1,0 +1,66 @@
+{
+  "objectName" : "thrusterakkimari",
+  "colonyTags" : [],
+  "scannable" : false,
+  "rarity" : "Common",
+  "description" : "This thruster keeps the ship in orbit.",
+  "shortdescription" : "Small Booster Flame",
+  "race" : "generic",
+
+  "apexDescription" : "Thrusters like these have been known to malfunction and eplode...",
+  "avianDescription" : "This thruster is like a wing, keeping the ship in orbit.",
+  "floranDescription" : "Ssscary fire.",
+  "glitchDescription" : "Analyse. Temperature too high to measure.",
+  "humanDescription" : "These vertical thrusters will keep the ship in orbit.",
+  "hylotlDescription" : "This thruster keeps the ship in orbit. The flame seems excessive.",
+  "novakidDescription" : "That's a big bad flame right there. Oughta keep us in orbit.",
+
+  "aegiDescription" : "This thruster should keep the ship in a nice and smooth orbit.",  
+  "avikanDescription" : "Without these vertical thrusters, this ship would quickly fall from orbit.",
+  "erixianDescription" : "This thruster is like an upside-down mountain of fire.",
+  "trinkDescription" : "This thruster is a decently efficient tool for keeping the ship in orbit.",
+  "hymidDescription" : "Vertical propulsion, to keep the ship in orbit. Very useful.",
+  "notixDescription" : "Vertical thrusters like these are essential - they keep the ship from falling out of orbit.",
+  "jorgasianDescription" : "The exhaust flame of this vertical thruster is incredibly hot.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Heat signature detected. Vertical thruster confirmed.",
+  "akkimariDescription" : "Akki use small thrusters, keep ship stable. Stable ship is strong ship.",
+
+  "category" : "light",
+  "lightColor" : [59, 183, 255],
+  "pointLight" : true,
+  "flickerDistance" : 0.2,
+  "flickerStrength" : 0.05,
+  "flickerTiming" : 4,
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "thrusterakkimari.png:on.1",
+      "imagePosition" : [0, 0],
+      "fullbright" : true,
+
+      "collision" : "solid",
+      "spaces" : [ [0, 0], [1, 0], [0, 1], [1, 1] ],
+      "anchors" : []
+    }
+  ],
+
+  "animation" : "/objects/ship/boosters/boosterflame.animation",
+  "animationParts" : {
+    "booster" : "thrusterakkimari.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : ["/objects/ship/boosters/boosterflame.lua"],
+  "scriptDelta" : 10,
+
+  "flyingBoosterStates" : {
+    "none" : "off",
+    "disembarking" : "turnOn",
+    "warp" : "turnOff",
+    "arriving" : "turnOn"
+  }
+}
