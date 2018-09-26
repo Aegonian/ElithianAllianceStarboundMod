@@ -5,15 +5,15 @@
   },
   { "op" : "add",
 	"path" : "/speciesOrdering/-",
-	"value" : "trink"
-  },
-  { "op" : "add",
-	"path" : "/speciesOrdering/-",
 	"value" : "droden"
   },
   { "op" : "add",
 	"path" : "/speciesOrdering/-",
 	"value" : "aegi"
+  },
+  { "op" : "add",
+	"path" : "/speciesOrdering/-",
+	"value" : "trink"
   },
   { "op" : "add",
 	"path" : "/speciesOrdering/-",
