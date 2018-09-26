@@ -1,0 +1,76 @@
+{
+  "animationParts" : { },
+  "animationCustom" : {
+    "particleEmitters" : {
+      "charge" : {
+		"active" : false,
+		"emissionRate" : 6.0,
+		"transformationGroups" : ["weapon"],
+		"offsetRegion" : [0.125, -0.25, -0.125, -0.25],
+		"particles" : [
+		  { "particle" : "akkimariashsmoke-air"}
+		]
+	  },
+      "extendBlade" : {
+		"active" : false,
+		"burstCount" : 12,
+		"transformationGroups" : ["weapon"],
+		"offsetRegion" : [0.125, 0.25, -0.125, -0.25],
+		"particles" : [
+		  { "particle" : "akkimariashsmoke-air"}
+		]
+	  }
+    },
+    "sounds" : {
+      "charge" : [ "/sfx/npc/monsters/orbide_windup1.ogg" ],
+      "chargefull" : [ ],
+      "superThrust" : [ "/sfx/melee/charge_full_swing3.ogg" ]
+    }
+  },
+
+  "ability" : {
+    "name" : "Powered Thrust",
+    "type" : "thea-extendlance",
+    "scripts" : ["/items/active/weapons/melee/abilities/lance/thea-extendlance/thea-extendlance.lua"],
+    "class" : "TheaExtendLance",
+
+    "rechargeTime" : 2.0,
+	
+	"energyUsage" : 20,
+	"chargeTime" : 0.5,
+	
+	"loopingReadySound" : false,
+	
+	"damageConfig" : {
+	  "baseDamage" : 15,
+      "damageSourceKind" : "spear",
+      "statusEffects" : [ ],
+      "knockbackMode" : "aim",
+      "knockback" : 60,
+      "timeoutGroup" : "primary"
+    },
+
+    "stances" : {
+	  "windup" : {
+        "duration" : 0.25,
+        "armRotation" : -110,
+        "weaponRotation" : 20,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 2.85],
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0.45,
+        "armRotation" : -5,
+        "weaponRotation" : -85,
+        "twoHanded" : false,
+        "weaponOffset" : [0, 3.15],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  }
+}

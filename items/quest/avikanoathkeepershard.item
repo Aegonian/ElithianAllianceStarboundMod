@@ -1,0 +1,11 @@
+{
+  "itemName" : "avikanoathkeepershard",
+  "price" : 1000,
+  "rarity" : "Essential",
+  "category" : "Quest Item",
+  "tooltipKind" : "thea-unique",
+  "inventoryIcon" : "avikanoathkeepershard.png",
+  "description" : "A shard of the Xanafir. It was once part of a famous weapon.",
+  "shortdescription" : "^orange;Shard of Fame^white;",
+  "itemTags" : [ "questitem" ]
+}

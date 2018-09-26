@@ -165,7 +165,7 @@ function update()
   
   --Reset certain parameters if we didn't get contacted by a controller last frame
   if self.gotInputOnLastFrame == false then
-	self.controlHeld = "none"
+	--self.controlHeld = "none"
   end
   self.lastTargetPosition = self.targetPosition
   self.gotInputOnLastFrame = false

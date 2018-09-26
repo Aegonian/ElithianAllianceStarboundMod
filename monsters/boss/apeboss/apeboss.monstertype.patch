@@ -33,5 +33,12 @@
 		"value": {
           "baseValue" : 1.0
         }
+	},
+	{
+		"op": "add",
+		"path" : "/baseParameters/statusSettings/stats/ignoreInvisibilityEffects",
+		"value": {
+          "baseValue" : 1.0
+        }
 	}
 ]

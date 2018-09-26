@@ -1,0 +1,70 @@
+{
+  "objectName" : "akkimariscavengertable",
+  "colonyTags" : ["akkimari", "crafting"],
+  "printable" : false,
+  "rarity" : "Rare",
+  "description" : "A worktable for recycling various items into scrap metal.",
+  "shortdescription" : "Scavenger's Worktable",
+  "race" : "akkimari",
+  "category" : "crafting",
+  "price" : 500,
+
+  "apexDescription" : "With the right tools, weapons can be upgraded here.",
+  "avianDescription" : "A place where I can upgrade my weapons.",
+  "floranDescription" : "Floran improvesss weaponss here.",
+  "glitchDescription" : "Excited. I can improve certain weapons here.",
+  "humanDescription" : "This workshop allows me to upgrade certain weapons.",
+  "hylotlDescription" : "Weapons can be upgraded here, so that even weak weapons are never wasted.",
+  "novakidDescription" : "My rifles could use a bit of improvement.",
+
+  "aegiDescription" : "A workshop for improving weapons.",
+  "avikanDescription" : "An alien workshop. Some weapons could be upgraded here.",
+  "erixianDescription" : "If I have some upgrade kits, I can improve my weapons here.",
+  "trinkDescription" : "With the right upgrade kit, many a weapon could be improved here.",
+  "hymidDescription" : "This workshop offers all the tools needed to upgrade my weapons.",
+  "notixDescription" : "I can improve my weapons here.",
+  "jorgasianDescription" : "A place for upgrading weapons",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Analysis complete. Workshop. Allows specific weapons to be upgraded for greater power.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "akkimariscavengertable.png:<color>.<frame>", "fullbright" : true }, { "image" : "akkimariscavengertablelit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-16, 0],
+      "frames" : 3,
+      "animationCycle" : 0.2,
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "bottom" ]
+    },
+    {
+	  "imageLayers" : [ { "image" : "akkimariscavengertable.png:<color>.<frame>", "fullbright" : true }, { "image" : "akkimariscavengertablelit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-16, 0],
+      "frames" : 3,
+      "animationCycle" : 0.2,
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "objectType" : "container",
+
+  "openSounds" : [ "/sfx/objects/chest_medium_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/chest_medium_close.ogg" ],
+  "slotCount" : 3,
+  "uiConfig" : "/interface/scripted/allianceweaponimprovement/allianceweaponimprovementgui.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600,
+
+  "scripts" : [ "/objects/alliance/crafting/weaponimprovementbench/allianceweaponimprovementbench.lua" ],
+  "scriptDelta" : 5
+}

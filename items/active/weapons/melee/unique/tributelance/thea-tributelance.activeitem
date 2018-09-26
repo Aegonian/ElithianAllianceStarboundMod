@@ -11,6 +11,9 @@
   "category" : "Lance",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","lance","theaUnique"],
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "thea-tributelance" },
 
   "inventoryIcon" : "thea-tributelance.png",
 

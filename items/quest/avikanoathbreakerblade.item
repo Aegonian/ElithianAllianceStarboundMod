@@ -1,0 +1,10 @@
+{
+  "itemName" : "avikanoathbreakerblade",
+  "price" : 1000,
+  "rarity" : "Legendary",
+  "category" : "Quest Item",
+  "inventoryIcon" : "avikanoathbreakerblade.png",
+  "description" : "The broken blade of a once-infamous sword. Its still very sharp.",
+  "shortdescription" : "^#BA66FF;Broken Blade of Infamy^white;",
+  "itemTags" : [ "questitem" ]
+}

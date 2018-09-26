@@ -1,0 +1,17 @@
+{
+  "name" : "thea-cloakingnpc",
+  "effectConfig" : {
+    "alpha" : 0.075,				//How transparent the user should be when cloaked (from 1.0 (fully visible) to 0.0 (completely invisible))
+	"detectDistance" : 40,			//How close a hostile target (usually the player) has to be before the cloak is activated
+	"cooldownTime" : 5,				//How long to wait before the cloak can be reactivated once broken
+	"reactivateTime" : 0.75,		//How long to wait before the cloak can be reactivated if interrupted by the user dealing damage
+	"initialCooldownTime" : 1.0		//How long to wait before the cloak can activated for the first time
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "thea-cloakingnpc.lua"
+  ],
+
+  "animationConfig" : "thea-cloakingnpc.animation"
+}

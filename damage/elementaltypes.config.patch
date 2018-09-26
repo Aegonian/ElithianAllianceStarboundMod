@@ -100,5 +100,20 @@
 		"kill" : "akkimariaciddamagenumber"
 	  }
 	}
+  },
+  
+  //AKKIMARI SCRAPPER
+  { "op" : "add",
+	"path" : "/akkimariscrapper",
+	"value" : {
+	  "resistanceStat" : "physicalResistance",
+	  "damageNumberParticles" : {
+		"hit" : "akkimariscrapperdamagenumber",
+		"stronghit" : "akkimariscrapperdamagenumberstrong",
+		"weakhit" : "akkimariscrapperdamagenumberweak",
+		"shieldhit" : "akkimariscrapperdamagenumber",
+		"kill" : "akkimariscrapperdamagenumber"
+	  }
+	}
   }
 ]

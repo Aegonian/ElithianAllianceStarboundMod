@@ -470,6 +470,9 @@
         },
         "shieldCooldownTimeAfterBreak" : {
           "baseValue" : 4.0 //How many seconds it takes before shield recharge starts after it breaks (total time for shield to come back is this + shieldRechargeTimeAfterHit)
+        },
+        "ignoreInvisibilityEffects" : {
+          "baseValue" : 1.0 //If set higher than 0, this entity ignores invisibility effects on other entities
         }
       },
 

@@ -6,6 +6,11 @@
 	},
 	{
 		"op": "add",
+		"path" : "/dropPools/0/akkimariscrapper",
+		"value": "akkimariscrapper"
+	},
+	{
+		"op": "add",
 		"path" : "/baseParameters/statusSettings/stats/linerifleResistance",
 		"value": {
           "baseValue" : -0.5

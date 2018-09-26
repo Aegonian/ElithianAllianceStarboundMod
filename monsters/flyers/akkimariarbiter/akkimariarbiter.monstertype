@@ -8,7 +8,7 @@
 
   "animation" : "akkimariarbiter.animation",
 
-  "dropPools" : [ { "default" : "akkimariarbiterTreasure", "bow" : "akkimariarbiterHunting", "electromagneticextractor" : "electromagneticextractorTreasure" } ],
+  "dropPools" : [ { "default" : "akkimariarbiterTreasure", "bow" : "akkimariarbiterHunting", "electromagneticextractor" : "electromagneticextractorTreasure", "akkimariscrapper" : "akkimariscrapper" } ],
 
   "baseParameters" : {
     "scripts" : [

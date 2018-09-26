@@ -30,7 +30,7 @@
 
   "activeTime" : 2.1,
 
-  "elementalType" : "physical",
+  "elementalType" : "akkimariscrapper",
 
   "aimOffset" : -1.0,
   
@@ -40,7 +40,15 @@
 	"baseDps" : 13.5,
 	
 	//Tile damage settings
-	"tileDamage" : 0.35
+	"tileDamage" : 0.35,
+	
+	"damageConfig" : {
+      "damageSourceKind" : "akkimariscrapper",
+      "statusEffects" : [ ],
+      "knockbackMode" : "aim",
+      "knockback" : 1,
+      "timeoutGroup" : "primary"
+    }
   },
   
   "builder" : "/items/buildscripts/thea-buildchainsaw.lua"

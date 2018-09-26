@@ -1,0 +1,82 @@
+{
+  // ==============================================================================================
+  //                           AKKIMARI SCRAPPER TREASURE POOLS
+  // ==============================================================================================
+
+  // ================================
+  //        Generic Tiered Pools
+  // ================================
+  
+  "akkimariscrapper" : [
+	//TIER 1, STARTING PLANETS
+    [0, {
+      "pool" : [
+        {"weight" : 0.5, "item" : "akkimarimetal"},
+		{"weight" : 0.5, "pool" : "money"}
+      ]
+    } ],
+	//TIER 2, EASY PLANETS
+	[1, {
+      "pool" : [
+        {"weight" : 0.5, "item" : "akkimarimetaltier2"},
+        {"weight" : 0.25, "item" : "akkimarimetal"},
+		{"weight" : 0.5, "pool" : "money"}
+      ]
+    } ],
+	//TIER 3, MEDIUM PLANETS
+	[2, {
+      "pool" : [
+        {"weight" : 0.5, "item" : "akkimarimetaltier3"},
+        {"weight" : 0.05, "item" : "akkimarimetaltier2"},
+        {"weight" : 0.25, "item" : "akkimarimetal"},
+		{"weight" : 0.5, "pool" : "money"}
+      ]
+    } ],
+	//TIER 4, HARD PLANETS
+	[3, {
+      "pool" : [
+        {"weight" : 0.5, "item" : "akkimarimetaltier4"},
+        {"weight" : 0.05, "item" : "akkimarimetaltier3"},
+        {"weight" : 0.05, "item" : "akkimarimetaltier2"},
+        {"weight" : 0.25, "item" : "akkimarimetal"},
+		{"weight" : 0.5, "pool" : "money"}
+      ]
+    } ],
+	//TIER 5, VERY HARD PLANETS
+	[4, {
+      "pool" : [
+        {"weight" : 0.5, "item" : "akkimarimetaltier5"},
+        {"weight" : 0.05, "item" : "akkimarimetaltier4"},
+        {"weight" : 0.05, "item" : "akkimarimetaltier3"},
+        {"weight" : 0.05, "item" : "akkimarimetaltier2"},
+        {"weight" : 0.25, "item" : "akkimarimetal"},
+		{"weight" : 0.5, "pool" : "money"}
+      ]
+    } ],
+	//TIER 6, EXTREMELY HARD PLANETS
+	[5, {
+      "pool" : [
+        {"weight" : 0.5, "item" : "akkimarimetaltier6"},
+        {"weight" : 0.05, "item" : "akkimarimetaltier5"},
+        {"weight" : 0.05, "item" : "akkimarimetaltier4"},
+        {"weight" : 0.05, "item" : "akkimarimetaltier3"},
+        {"weight" : 0.05, "item" : "akkimarimetaltier2"},
+        {"weight" : 0.25, "item" : "akkimarimetal"},
+		{"weight" : 0.5, "pool" : "money"}
+      ]
+    } ]
+  ]
+
+  // ================================
+  //        Special Pools
+  // ================================
+
+  //Nothing here yet!
+
+  // ================================
+  //        Unique Monster Pools
+  // ================================
+
+  //Nothing here yet!
+}
+

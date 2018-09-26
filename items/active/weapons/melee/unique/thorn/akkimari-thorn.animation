@@ -1,0 +1,161 @@
+{
+  "globalTagDefaults" : {
+    "paletteSwaps" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "blade" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {},
+          "charge" : {
+            "frames" : 2,
+            "cycle" : 0.4
+          },
+          "extend" : {},
+          "retract" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
+      },
+      "light" : {
+        "default" : "active",
+        "states" : {
+          "active" : {},
+          "recharge" : {}
+        }
+      },
+      "swoosh" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {},
+          "fire" : {
+            "frames" : 3,
+            "cycle" : 0.08,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+          "superThrust" : {
+            "frames" : 3,
+            "cycle" : 0.08,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "blade" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "offset" : [0.0, 0.0],
+          "transformationGroups" : ["weapon"],
+          "damageArea" : [[0, -2.0], [-0.75, -1.5], [-0.75, 2.0], [0, 5.0], [0.75, 2.0], [0.75, -1.5]]
+        },
+        "partStates" : {
+          "blade" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage><paletteSwaps>:idle"
+              }
+            },
+            "charge" : {
+              "properties" : {
+                "image" : "<partImage><paletteSwaps>:charge.<frame>"
+              }
+            },
+            "extend" : {
+              "properties" : {
+                "image" : "<partImage><paletteSwaps>:extend"
+              }
+            },
+            "retract" : {
+              "properties" : {
+                "image" : "<partImage><paletteSwaps>:retract.<frame>"
+              }
+            }
+          }
+        }
+      },
+	  "bladeFullbright" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "fullbright" : true,
+          "offset" : [0.0, 0.0],
+          "transformationGroups" : ["weapon"],
+          "rotationCenter" : [0, 0]
+        },
+        "partStates" : {
+          "light" : {
+            "active" : {
+              "properties" : {
+                "image" : "<partImage><paletteSwaps>:active"
+              }
+            },
+            "recharge" : {
+              "properties" : {
+                "image" : "<partImage><paletteSwaps>:recharge"
+              }
+            }
+          }
+        }
+      },
+      "swoosh" : {
+        "properties" : {
+          "zLevel" : -1,
+          "centered" : true,
+          "transformationGroups" : ["swoosh"]
+        },
+        "partStates" : {
+          "swoosh" : {
+            "idle" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/animations/swoosh/thea-lanceswoosh.png:<frame>",
+				"offset" : [4.25, 0.0],
+                "damageArea" : [[-7.5, 0], [-5, 1], [-0.5, 1], [4.5, 0], [-0.5, -1], [-5, -1]]
+              }
+            },
+            "superThrust" : {
+              "properties" : {
+                "image" : "/items/active/weapons/melee/animations/swoosh/thea-lancepowerthrust.png:<frame>",
+				"offset" : [7.25, 0.0],
+                "damageArea" : [[-10.0, 0], [-8.0, 1], [-0.5, 1], [4.5, 0], [-0.5, -1], [-8.0, -1]]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "swoosh" : {}
+  },
+
+  "particleEmitters" : {
+    "physicalswoosh" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 60,
+      "offsetRegion" : [3.5, -1.0, 7.5, 1.0],
+      "particles" : [ ]
+    }
+  },
+
+  "sounds" : {
+    "fire" : [ ]
+  }
+}

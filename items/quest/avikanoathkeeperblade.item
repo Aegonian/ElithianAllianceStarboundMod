@@ -1,0 +1,10 @@
+{
+  "itemName" : "avikanoathkeeperblade",
+  "price" : 1000,
+  "rarity" : "Legendary",
+  "category" : "Quest Item",
+  "inventoryIcon" : "avikanoathkeeperblade.png",
+  "description" : "The broken blade of a once-famous sword. Its still very sharp.",
+  "shortdescription" : "^#BA66FF;Broken Blade of Fame^white;",
+  "itemTags" : [ "questitem" ]
+}

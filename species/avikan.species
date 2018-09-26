@@ -147,7 +147,7 @@
 	  { "item" : "avikanheatprotectionback" },
 	  { "item" : "avikantier5beacon" },
 	  { "item" : "avikantier6beacon" },
-	  { "item" : "avikantiervanguardbeacon" },
+	  { "item" : "avikanvanguardbeacon" },
 	  
 // Bonecrafting 1
 	//Armour
@@ -234,7 +234,7 @@
 	//Furniture
 	  //Tent Obects
 	  { "item" : "avikanbed" },
-	  { "item" : "avikachair" },
+	  { "item" : "avikanchair" },
 	  { "item" : "avikanchest" },
 	  { "item" : "avikancurtain" },
 	  { "item" : "avikanflagtapestry" },
@@ -446,7 +446,7 @@
 	  //Ranged Tier 5
 	  { "item" : "avikan-assaultrifle2" },
 	  { "item" : "avikan-rocketlauncher" },
-	  { "item" : "avikan-sniperirlfe" },
+	  { "item" : "avikan-sniperrifle" },
 	  { "item" : "avikan-tier6linerifle" },
 	  //Uncategorized
 	  { "item" : "avikangrapplinghook" }

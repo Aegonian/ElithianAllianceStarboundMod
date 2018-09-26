@@ -5,7 +5,7 @@
   "dropPools" : [ "akkimariCloakerDeathTreasure" ],
   
   "innateStatusEffects" : [ 
-	"thea-cloaking"
+	"thea-cloakingnpc"
   ],
 
   "scriptConfig" : {

@@ -10,7 +10,7 @@
   "tooltipKind" : "thea-sword-unique",
   "category" : "Shock Baton",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","spear","prod","avikan","theaUnique"],
+  "itemTags" : ["weapon","melee","hammer","prod","trink","theaUnique"],
 
   "inventoryIcon" : "trink-debilitatoricon.png",
   
@@ -29,9 +29,9 @@
 	  "fireActive" : [ "/sfx/melee/swing_hammer_electric1.ogg", "/sfx/melee/swing_hammer_electric2.ogg", "/sfx/melee/swing_hammer_electric3.ogg" ],
 	  "idleLoop" : [ "/sfx/melee/debilitator_idle.ogg" ],
 	  //Secondary
-	  "charge" : ["/sfx/melee/charge_up13.ogg"],
-	  "chargefull" : ["/sfx/melee/charge_full_hold2.ogg"],
-	  "chargefire" : ["/sfx/melee/charge_full_swing3.ogg"]
+	  "charge" : [ "/sfx/melee/charge_up13.ogg" ],
+	  "chargefull" : [ "/sfx/melee/charge_full_hold2.ogg" ],
+	  "chargefire" : [ "/sfx/melee/charge_full_swing3.ogg" ]
     }
   },
 

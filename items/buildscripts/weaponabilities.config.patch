@@ -147,6 +147,11 @@
 	"path": "/thea-ritualdance",
 	"value": "/items/active/weapons/melee/abilities/bowstaff/thea-ritualdance/thea-ritualdance.weaponability"
   },
+  {
+	"op": "add",
+	"path": "/thea-extendlance",
+	"value": "/items/active/weapons/melee/abilities/lance/thea-extendlance/thea-extendlance.weaponability"
+  },
   
   //======================================================================================================================
   //	Weapon Attachments and Mods

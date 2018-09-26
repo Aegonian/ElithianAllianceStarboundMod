@@ -209,6 +209,9 @@
         },
         "bleedingImmunity" : {
           "baseValue" : 1.0
+        },
+        "ignoreInvisibilityEffects" : {
+          "baseValue" : 1.0 //If set higher than 0, this entity ignores invisibility effects on other entities
         }
       },
 

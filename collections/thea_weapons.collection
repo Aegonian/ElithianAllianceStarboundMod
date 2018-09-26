@@ -408,6 +408,19 @@
       "title" : "Vaulaar",
       "description" : "A dual-barrel assault rifle for causing mayhem.",
       "icon" : "/items/active/weapons/ranged/unique/vaulaar/thea-vaulaar.png"
+    },
+	//NEW WEAPONS v2.3.4
+	"thea-tributelance" : {
+      "order" : 67,
+      "title" : "Lance of the Elithian",
+      "description" : "A long and powerful lance forged in tribute to Elithia.",
+      "icon" : "/items/active/weapons/melee/unique/tributelance/thea-tributelance.png"
+    },
+	"akkimari-thorn" : {
+      "order" : 68,
+      "title" : "Thorn",
+      "description" : "An extending lance with incredible reach, favoured by Akkimari.",
+      "icon" : "/items/active/weapons/melee/unique/thorn/akkimari-thorn.png"
     }
   }
 }

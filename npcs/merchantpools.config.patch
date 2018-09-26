@@ -101,7 +101,7 @@
 			  { "item": { "name": "avikan-tier1bow" }, "rarity": 0.3 },
 			  { "item": { "name": "avikanboneshield"}, "rarity" : 0.3 },
 			  { "item": { "name": "avikanhuntingknife" }, "rarity": 0.5 },
-			  { "item": { "name": "monsterbone" }, "rarity": 0.5 }
+			  { "item": { "name": "monsterbone" }, "rarity": 0.5, "price" : 175 }
 			] ],
 			[ 1, [
 			  { "item": { "name": "avikantier2hammer" }, "rarity": 0.5 },
@@ -114,7 +114,7 @@
 			  { "item": { "name": "avikan-tier1bow" }, "rarity": 0.3 },
 			  { "item": { "name": "avikanboneshield"}, "rarity" : 0.3 },
 			  { "item": { "name": "avikanhuntingknife" }, "rarity": 0.5 },
-			  { "item": { "name": "monsterbone" }, "rarity": 0.5 },
+			  { "item": { "name": "monsterbone" }, "rarity": 0.5, "price" : 175 },
 			  { "item": { "name": "avikanspiketrap" }, "rarity": 0.5 },
 			  { "item": { "name": "avikantarspiketrap" }, "rarity": 0.5 },
 			  { "item": { "name": "avikanpoisonspiketrap" }, "rarity": 0.5 }
@@ -130,7 +130,7 @@
 			  { "item": { "name": "avikan-tier3bow" }, "rarity": 0.3 },
 			  { "item": { "name": "avikanboneshield"}, "rarity" : 0.3 },
 			  { "item": { "name": "avikanhuntingknife" }, "rarity": 0.5 },
-			  { "item": { "name": "monsterbone" }, "rarity": 0.5 },
+			  { "item": { "name": "monsterbone" }, "rarity": 0.5, "price" : 175 },
 			  { "item": { "name": "avikanspiketrap" }, "rarity": 0.5 },
 			  { "item": { "name": "avikantarspiketrap" }, "rarity": 0.5 },
 			  { "item": { "name": "avikanpoisonspiketrap" }, "rarity": 0.5 }
@@ -147,7 +147,7 @@
 			  { "item": { "name": "avikan-bonecrossbow" }, "rarity": 0.3 },
 			  { "item": { "name": "avikanboneshield"}, "rarity" : 0.3 },
 			  { "item": { "name": "avikanhuntingknife" }, "rarity": 0.5 },
-			  { "item": { "name": "monsterbone" }, "rarity": 0.5 },
+			  { "item": { "name": "monsterbone" }, "rarity": 0.5, "price" : 175 },
 			  { "item": { "name": "avikanspiketrap" }, "rarity": 0.5 },
 			  { "item": { "name": "avikantarspiketrap" }, "rarity": 0.5 },
 			  { "item": { "name": "avikanpoisonspiketrap" }, "rarity": 0.5 }
@@ -163,7 +163,7 @@
 			  { "item": { "name": "avikan-nomadabow" }, "rarity": 0.3 },
 			  { "item": { "name": "avikanboneshield"}, "rarity" : 0.3 },
 			  { "item": { "name": "avikanhuntingknife" }, "rarity": 0.5 },
-			  { "item": { "name": "monsterbone" }, "rarity": 0.5 },
+			  { "item": { "name": "monsterbone" }, "rarity": 0.5, "price" : 175 },
 			  { "item": { "name": "avikanspiketrap" }, "rarity": 0.5 },
 			  { "item": { "name": "avikantarspiketrap" }, "rarity": 0.5 },
 			  { "item": { "name": "avikanpoisonspiketrap" }, "rarity": 0.5 }
@@ -180,8 +180,8 @@
 			  { "item": { "name": "avikan-nomadacrossbow" }, "rarity": 0.3 },
 			  { "item": { "name": "avikanboneshield"}, "rarity" : 0.3 },
 			  { "item": { "name": "avikanhuntingknife" }, "rarity": 0.5 },
-			  { "item": { "name": "monsterbone" }, "rarity": 0.5 },
-			  { "item": { "name": "greatmonsterbone" }, "rarity": 0.5 },
+			  { "item": { "name": "monsterbone" }, "rarity": 0.5, "price" : 175 },
+			  { "item": { "name": "greatmonsterbone" }, "rarity": 0.5, "price" : 1400 },
 			  { "item": { "name": "avikanspiketrap" }, "rarity": 0.5 },
 			  { "item": { "name": "avikantarspiketrap" }, "rarity": 0.5 },
 			  { "item": { "name": "avikanpoisonspiketrap" }, "rarity": 0.5 },

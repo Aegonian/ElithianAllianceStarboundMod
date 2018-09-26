@@ -50,14 +50,6 @@
         }
       ]
     },
-	"cloakedParticles3" : {
-      "enabled" : false,
-      "emissionRate" : 0.35,
-	  "emissionVariance" : 0.15,
-      "particles" : [
-        { "particle" : "thea-electricstunarc2" }
-	  ]
-    },
 	"activate" : {
       "burstCount"  : 8,
       "particles" : [

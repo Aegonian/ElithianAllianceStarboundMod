@@ -24,5 +24,6 @@
   
   "scripts" : [ "/projectiles/scripts/thea-homingbullet.lua" ],
   "searchRadius" : 20,
-  "baseHomingControlForce" : 1.5
+  "baseHomingControlForce" : 1.5,
+  "ignoreInvisibility" : false
 }

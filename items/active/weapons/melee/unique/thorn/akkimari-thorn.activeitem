@@ -1,0 +1,53 @@
+{
+  "itemName" : "akkimari-thorn",
+  "price" : 1500,
+  "level" : 6,
+  "fixedLevel" : false,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;An extending lance with incredible reach, favoured by Akkimari.",
+  "shortdescription" : "^orange;Thorn^white;",
+  "tooltipKind" : "thea-sword-unique",
+  "category" : "Lance",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","lance","akkimari","theaUnique"],
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "akkimari-thorn" },
+
+  "inventoryIcon" : "akkimari-thornicon.png",
+
+  "animation" : "akkimari-thorn.animation",
+  "animationParts" : {
+    "bladeFullbright" : "akkimari-thornlights.png",
+    "blade" : "akkimari-thorn.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_spear.ogg" ],
+      "altFire" : [ "/sfx/melee/swing_spear.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "thea-lancethrust",
+  "primaryAbility" : {
+    "baseDps" : 10.5,
+	
+	"damageConfig" : {
+      "damageSourceKind" : "spear",
+      "knockbackMode" : "aim",
+      "knockback" : 40,
+      "timeoutGroup" : "primary"
+    }
+  },
+
+  "altAbilityType" : "thea-extendlance",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}
