@@ -15,7 +15,7 @@
 	  "converse" : {
         "default" : {
 		  "default" : [ 
-		    "I am a bug! Please report me."
+		    "I am a bug! Please report me. Beep beep."
 		  ]
 		},
 
@@ -23,7 +23,7 @@
           "default" : [
             "Unknown species detected. Ending conversation.",
 			"Detected unknown species. Aborting conversation.",
-			"Error. Species unknow. Aborting conversation."
+			"Error. Species unknown. Aborting conversation."
           ],
           "avikan" : [
             "Welcome to the Starfarer's Refuge, Captain. I am at your service.",
