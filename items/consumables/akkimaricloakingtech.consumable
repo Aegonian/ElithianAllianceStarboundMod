@@ -4,7 +4,7 @@
   "price" : 250,
   "category" : "Consumable",
   "inventoryIcon" : "akkimaricloakingtech.png",
-  "description" : "A single-use projector that temporarily hides the user from view.",
+  "description" : "A single-use holo-projector that temporarily hides the user from view.",
   "shortdescription" : "Akris Cloaking Projector",
   "effects" : [ [
       {
