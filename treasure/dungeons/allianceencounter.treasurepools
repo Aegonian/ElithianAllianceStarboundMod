@@ -210,7 +210,8 @@
 		{"weight" : 0.1, "item" : "thea-rimrifle2" },
 		{"weight" : 0.1, "item" : "thea-rimsniper1" },
 		{"weight" : 0.1, "item" : "thea-rimshotgun1" },
-		{"weight" : 0.1, "item" : "thea-rimpistol1" }
+		{"weight" : 0.1, "item" : "thea-rimpistol1" },
+		{"weight" : 0.1, "item" : "thea-rimchainsaw" }
       ]
     } ]
   ],

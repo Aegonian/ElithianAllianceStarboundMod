@@ -764,7 +764,13 @@
 			  { "item": { "name": "loftbread" }, "rarity": 0.5 },
 			  { "item": { "name": "mellowrootchops" }, "rarity": 0.5 },
 			  { "item": { "name": "vahlberrybread" }, "rarity": 0.5 },
-			  { "item": { "name": "vahlberryjam" }, "rarity": 0.5 }
+			  { "item": { "name": "vahlberryjam" }, "rarity": 0.5 },
+			  //CROPS
+			  { "item": { "name": "ambrumseed" }, "rarity": 0.5 },
+			  { "item": { "name": "boratoseed" }, "rarity": 0.5 },
+			  { "item": { "name": "loftgrainseed" }, "rarity": 0.5 },
+			  { "item": { "name": "selvasseed" }, "rarity": 0.5 },
+			  { "item": { "name": "vahlberryseed" }, "rarity": 0.5 }
 			] ]
 		]
 	},
@@ -1039,6 +1045,29 @@
 			  { "item" : { "name" : "trink-combatlegs", "parameters" : { "colorIndex" : 0 } }, "rarity" : 0.5 },
 			  
 			  { "item" : { "name" : "trinkmerchantback", "parameters" : { "colorIndex" : 0 } }, "rarity" : 2.5 }
+			] ]
+		]
+	},
+	
+	//=========================================================================================================
+	// EVENT - THE HARROWING
+	//=========================================================================================================
+	{ "op" : "add", "path" : "/harrowingEventVendor",
+		"value" : [
+			[ 0, [
+			  { "item": { "name": "harrowingcache" }, "price" : 1500 },
+			  { "item": { "name": "aegi-centenshead" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 },
+			  { "item": { "name": "aegi-pumpkinhead" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 },
+			  { "item": { "name": "aegi-trinkhead" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 },
+			  { "item": { "name": "avikan-drodenhead" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 },
+			  { "item": { "name": "avikan-sandspitterhead" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 },
+			  { "item": { "name": "avikan-theleanhead" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 },
+			  { "item": { "name": "droden-avikanhead" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 },
+			  { "item": { "name": "droden-drahlhead" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 },
+			  { "item": { "name": "droden-sandcrawlerhead" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 },
+			  { "item": { "name": "trink-ghost" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 },
+			  { "item": { "name": "trink-notix" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 },
+			  { "item": { "name": "trink-pumpkin" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 }
 			] ]
 		]
 	}

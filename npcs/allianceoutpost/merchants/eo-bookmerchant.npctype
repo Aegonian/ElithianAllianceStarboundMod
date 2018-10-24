@@ -2,7 +2,7 @@
   "type" : "eo-bookmerchant",
   "baseType" : "thea-loungingmerchant",
 
-  "scriptConfig" : {    
+  "scriptConfig" : {
     "merchant" : {
       "waitTime" : 40,
       "storeRadius" : 8,

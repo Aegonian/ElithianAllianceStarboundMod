@@ -1,0 +1,17 @@
+{
+  "itemName" : "harrowingcandyblue",
+  "rarity" : "Common",
+  "price" : 5,
+  "category" : "food",
+  "inventoryIcon" : "harrowingcandyblue.png",
+  "description" : "Sweets modeled after ancient candy, perfect for celebrating the Harrowing!",
+  "shortdescription" : "Harrowing Candy",
+  "effects" : [ [
+    {
+        "effect" : "jumpboost",
+        "duration" : 30
+    }
+  ] ],
+  "emote" : "happy",
+  "maxStack" : 100
+}

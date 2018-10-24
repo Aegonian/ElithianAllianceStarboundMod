@@ -340,7 +340,7 @@
         {"weight" : 0.899, "pool" : "money"},
 		{"weight" : 0.05, "pool" : "akkimariWeapons"},
 		{"weight" : 0.05, "pool" : "akkimariScrapMetal"},
-        {"weight" : 0.001, "item" : "akkimarichasercontroller"}
+        {"weight" : 0.01, "item" : "akkimarichasercontroller"}
       ]
     }]
    ]

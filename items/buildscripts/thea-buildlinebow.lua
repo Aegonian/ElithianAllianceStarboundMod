@@ -34,6 +34,7 @@ function build(directory, config, parameters, level, seed)
   -- populate tooltip fields
   if config.tooltipKind ~= "base" then
 	config.tooltipFields = {}
+    config.tooltipFields.levelLabel = util.round(configParameter("level", 1), 1)
 	config.tooltipFields.subtitle = parameters.category
 	config.tooltipFields.energyPerShotLabel = config.primaryAbility.energyPerShot or 0
 	config.tooltipFields.maxDamageLabel = config.primaryAbility.baseDamage * config.damageLevelMultiplier

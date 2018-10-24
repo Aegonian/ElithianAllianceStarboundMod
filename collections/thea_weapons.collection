@@ -109,7 +109,7 @@
       "description" : "An ancient weapon built to bend space-time.",
       "icon" : "/items/active/weapons/ranged/unique/voideater/centens-voideatericon.png"
     },
-	//TRINKIAN WEAAPONS
+	//TRINKIAN WEAPONS
 	"trink-shockbolter" : {
       "order" : 18,
       "title" : "SDL-02 Shockbolter",
@@ -420,7 +420,13 @@
       "order" : 68,
       "title" : "Thorn",
       "description" : "An extending lance with incredible reach, favoured by Akkimari.",
-      "icon" : "/items/active/weapons/melee/unique/thorn/akkimari-thorn.png"
+      "icon" : "/items/active/weapons/melee/unique/thorn/akkimari-thornicon.png"
+    },
+	"thea-shadowsembrace" : {
+      "order" : 69,
+      "title" : "Shadow's Embrace",
+      "description" : "A sword cloaked in shadows, built for the Harrowing.",
+      "icon" : "/items/active/weapons/melee/unique/shadowsembrace/thea-shadowsembrace.png"
     }
   }
 }

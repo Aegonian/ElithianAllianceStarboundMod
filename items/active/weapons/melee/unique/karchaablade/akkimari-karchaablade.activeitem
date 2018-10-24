@@ -116,5 +116,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildfist.lua"
+  "builder" : "/items/buildscripts/thea-buildfist.lua"
 }

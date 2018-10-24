@@ -1,0 +1,61 @@
+{
+  "itemName" : "thea-shadowsembrace",
+  "price" : 1500,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;A sword cloaked in shadows, built for the Harrowing.",
+  "shortdescription" : "^orange;Shadow's Embrace^white;",
+  "tooltipKind" : "thea-sword-unique",
+  "category" : "Longsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword","theaUnique"],
+
+  "inventoryIcon" : "thea-shadowsembraceicon.png",
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "thea-shadowsembrace" },
+  
+  "meritTokenValue" : 100,
+
+  "animation" : "thea-shadowsembrace.animation",
+  "animationParts" : {
+    "blade" : "thea-shadowsembrace.png",
+    "bladeFullbright" : "thea-shadowsembracelights.png"
+  },
+  "animationCustom" : {
+	"sounds" : {
+      "activateStatusEffect" : [ "/sfx/melee/spear_twirl_loop.ogg" ],
+      "abilityReady" : [ "/sfx/interface/sniper_mark_start1.ogg" ]
+    },
+	"particleEmitters" : {
+	  "activateStatusEffect" : {
+		"active" : false,
+		"transformationGroups" : ["weapon"],
+		"burstCount" : 1,
+		"particles" : []
+	  }
+	}
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "thea-longswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.8,
+    "baseDps" : 11.5
+  },
+
+  "altAbilityType" : "thea-activatestatus",
+  "altAbility" : {
+    "name" : "Shadow Cloak",
+	"statusEffect" : "thea-shadowcloak",
+	"statusEffectDuration" : 6,
+	
+	"forceStopSound" : true
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

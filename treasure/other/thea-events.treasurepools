@@ -1,0 +1,51 @@
+{
+  //=================================================================
+  // THE HARROWING
+  //=================================================================
+  "harrowingTreasurebox" : [
+    [1, {
+	  "fill" : [
+		{"pool" : "harrowingEventArmour" },
+		{"pool" : "harrowingEventCandy" }
+      ]
+    } ]
+  ],
+  
+  "harrowingEventArmour" : [
+    [1, {
+	  "pool" : [
+		{"weight" : 0.5, "item" : "aegi-centenshead" },
+		{"weight" : 0.5, "item" : "aegi-pumpkinhead" },
+		{"weight" : 0.5, "item" : "aegi-trinkhead" },
+		{"weight" : 0.5, "item" : "avikan-drodenhead" },
+		{"weight" : 0.5, "item" : "avikan-sandspitterhead" },
+		{"weight" : 0.5, "item" : "avikan-theleanhead" },
+		{"weight" : 0.5, "item" : "droden-avikanhead" },
+		{"weight" : 0.5, "item" : "droden-drahlhead" },
+		{"weight" : 0.5, "item" : "droden-sandcrawlerhead" },
+		{"weight" : 0.5, "item" : "trink-ghost" },
+		{"weight" : 0.5, "item" : "trink-notix" },
+		{"weight" : 0.5, "item" : "trink-pumpkin" }
+      ]
+    } ]
+  ],
+  
+  "harrowingEventCandy" : [
+    [1, {
+      "poolRounds" : [
+        [0.6, 1],
+        [0.3, 2],
+        [0.1, 3]
+      ],
+	  "pool" : [
+		{"weight" : 0.5, "item" : "harrowingcandyaqua" },
+		{"weight" : 0.5, "item" : "harrowingcandyblue" },
+		{"weight" : 0.5, "item" : "harrowingcandygreen" },
+		{"weight" : 0.5, "item" : "harrowingcandyorange" },
+		{"weight" : 0.5, "item" : "harrowingcandypink" },
+		{"weight" : 0.5, "item" : "harrowingcandyyellow" }
+      ]
+    } ]
+  ]
+}
+

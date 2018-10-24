@@ -1,0 +1,109 @@
+{
+  "type" : "harrowing-civilian",
+  "baseType" : "eo-civilian",
+
+  "dropPools" : [ "aegiDeathTreasure" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "The Harrowing is so much fun!"
+		  ]
+		},
+        "aegi" : {
+		  "default" : [ 
+		    "It may be old, but the Harrowing is still a fun event!",
+		    "I was hoping more people would be wearing masks this year.",
+		    "The masks are great, but the candy is the best part about the Harrowing!",
+		    "Are you enjoying the Harrowing?",
+		    "I read in a history book that the Harrowing was once called Halloween. What a weird name!"
+		  ]
+		},
+        "trink" : {
+		  "default" : [ 
+		    "I'm still not sure what the Harrowing is all about, but the masks are fun.",
+		    "I just saw some Aegi wearing masks and through I'd join in. How do I look?",
+		    "What do you think of my costume? That Aegi wearing a pumpkin mask made it for me!",
+		    "Masks are silly, but a little fun as well.",
+		    "Apparently the Harrowing is some kind of ancient Aeginian festival."
+		  ]
+		}
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "aegi" : [
+      [0, [
+		{
+		  "head" : [
+			//Masks
+			{ "name" : "aegi-centenshead", "parameters" : { "colorIndex" : 0 } },
+			{ "name" : "aegi-trinkhead", "parameters" : { "colorIndex" : 0 } },
+			{ "name" : "avikan-sandspitterhead", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "chest" : [
+			//Common Items
+			{ "name" : "aegi-shirt", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-shirt", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-shirt", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-tanktop", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-tanktop", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-tanktop", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-formalchest", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-formalchest", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-formalchest", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			//Branded Items
+			{ "name" : "aegi-brandshirtgame", "parameters" : { "colorIndex" : 0 } },
+			{ "name" : "aegi-brandshirtaventor", "parameters" : { "colorIndex" : 0 } },
+			{ "name" : "aegi-brandshirtfroza", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "legs" : [
+			{ "name" : "aegi-asauniformlegs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-asacoatlegs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-shorts", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-formallegs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-casuallegs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } },
+			{ "name" : "aegi-baggylegs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 8, 11] } }
+		  ]
+		}
+	  ] ]
+    ],
+    "trink" : [
+      [0, [
+		//COMBINATION 1 -- UNPAINTED
+		{
+		  "head" : [
+			{ "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "chest" : [
+			{ "name" : "thea-hiddenchest", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "legs" : [
+			{ "name" : "trink-ghost", "parameters" : { "colorIndex" : 0 } },
+			{ "name" : "trink-notix", "parameters" : { "colorIndex" : 0 } },
+			{ "name" : "trink-pumpkin", "parameters" : { "colorIndex" : 0 } }
+		  ]
+		},
+		//COMBINATION 2 -- PAINTED
+		{
+		  "head" : [
+			{ "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "chest" : [
+			{ "name" : "trink-paintedchest", "parameters" : { "colorIndex" : [0, 1, 2, 3, 8] } },
+			{ "name" : "trink-stripedchest", "parameters" : { "colorIndex" : [0, 1, 2, 3, 8] } }
+		  ],
+		  "legs" : [
+			{ "name" : "trink-ghost", "parameters" : { "colorIndex" : 0 } },
+			{ "name" : "trink-notix", "parameters" : { "colorIndex" : 0 } },
+			{ "name" : "trink-pumpkin", "parameters" : { "colorIndex" : 0 } }
+		  ]
+		}
+	  ] ]
+    ]
+  }
+}

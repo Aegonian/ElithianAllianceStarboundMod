@@ -1,0 +1,52 @@
+{
+  "animationParts" : { },
+  "animationCustom" : {
+    "sounds" : {
+      "activateStatusEffect" : [],
+      "abilityReady" : []
+    },
+	"particleEmitters" : {
+	  "activateStatusEffect" : {
+		"active" : false,
+		"transformationGroups" : ["weapon"],
+		"burstCount" : 1,
+		"particles" : []
+	  }
+	}
+  },
+
+  "ability" : {
+    "name" : "Activate Status",
+    "type" : "thea-activatestatus",
+    "scripts" : ["/items/active/weapons/melee/abilities/other/thea-activatestatus/thea-activatestatus.lua"],
+    "class" : "TheaActivateStatus",
+
+	//STANDARD CONFIG
+	"statusEffect" : "glow",
+    "energyUsage" : 35.0,
+    "cooldownTime" : 15.0,
+	
+	//CUSTOMIZATION CONFIG
+	"lightIndicator" : true,		//Enables light animation to indicate cooldown status
+	"cooldownPersistent" : true,	//Makes the cooldown time persist when swapping away from the weapon
+	"activateInstantly" : false,	//Allows the status effect to activate before any wait duration
+	"forceStopSound" : false,		//Stops the activation sound when the activation is done
+
+    "stances" : {
+      "activate" : {
+        "duration" : 0.5,
+		
+        "armRotation" : 90,
+        "endArmRotation" : -70,
+		
+        "weaponRotation" : 0,
+        "endWeaponRotation" : -480,
+		
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  }
+}

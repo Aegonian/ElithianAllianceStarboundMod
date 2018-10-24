@@ -1,0 +1,17 @@
+{
+  "name" : "thea-shadowcloak",
+  "effectConfig" : {
+    "directive" : "?multiply=00000015",		//Image processing directive to make the player transparent
+    "cloakedPowerModifier" : 1.25			//Damage multiplier while invisible
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "thea-cloaking.lua"
+  ],
+
+  "animationConfig" : "thea-shadowcloak.animation",
+
+  "label" : "Cloaked",
+  "icon" : "/interface/statuses/theacloaking.png"
+}

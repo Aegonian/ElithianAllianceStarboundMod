@@ -905,9 +905,9 @@
 		"Unit <selfname> is disengaging."
 	  ],
 	  "default" : [
-		"Detected unknown species. Aborting conversation.",
-		"Unknown species detected. Ending conversation.",
-		"Error. Species unknown. Aborting conversation."
+		"Detected unknown entity. Aborting conversation.",
+		"Unknown entity detected. Ending conversation.",
+		"Error. Entity unknown. Aborting conversation."
 	  ],
 	  "glitch" : [
 		"Detected synthetic lifeform. Alerting security.",
@@ -1187,9 +1187,9 @@
 		"There's a new Hymid in my engineering class. I like her."
 	  ],
 	  "default" : [
-		"Might I ask what you are?",
-		"Are your species new to this part of the galaxy?",
-		"I don't think I've ever seen one of your kind before."
+		"And who might you be?",
+		"You're a strange one, that's for sure. Oh, sorry, I meant no offense!",
+		"Are you new here?"
 	  ],
 	  "human" : [
 		"Are you truly a human? I thought you were all extinct!",

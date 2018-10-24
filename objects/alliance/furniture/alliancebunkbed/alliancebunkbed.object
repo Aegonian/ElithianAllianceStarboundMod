@@ -40,7 +40,7 @@
       "frames" : 1,
       "animationCycle" : 1.0,
 	  
-      "lightPosition" : [-2, 4],
+      "lightPosition" : [-2, 2],
 	  "sitPosition" : [-10, 14],
 
       "spaceScan" : 0.1,
@@ -56,7 +56,7 @@
       "frames" : 1,
       "animationCycle" : 1.0,
 	  
-      "lightPosition" : [2, 4],
+      "lightPosition" : [2, 2],
 	  "sitPosition" : [-18, 14],
 
       "spaceScan" : 0.1,

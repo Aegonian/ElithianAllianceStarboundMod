@@ -36,13 +36,13 @@
       "hostileActions" : [
         {
           "name" : "action-swoop",
-          "cooldown" : 1.0,
+          "cooldown" : 1.6,
           "parameters" : {
             "minimumRange" : 5,
             "maximumRange" : 35,
             "onGround" : false,
 			"windupState": "swoopwindup",
-            "windupTime" : 0.6,
+            "windupTime" : 1.2,
 
 			"swoopState": "swoop",
             "gravityMultiplier" : -0.85,
@@ -52,7 +52,7 @@
 			"minSwoopTime": 0.1,
             "swoopTime" : 0.75,
 
-            "winddownTime" : 0.4,
+            "winddownTime" : 0.8,
             "winddownState" : "fly",
             "winddownStopForce" : 35
           }

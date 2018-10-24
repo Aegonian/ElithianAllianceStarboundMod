@@ -37,7 +37,7 @@ function TheaLineRifle:update(dt, fireMode, shiftHeld)
 	and not world.lineTileCollision(mcontroller.position(), self:firePosition()) then
 
     self:setState(self.charge)
-  --If the charge was prematurily stopped or interrupted somehow
+  --If the charge was prematurely stopped or interrupted somehow
   elseif self.chargeHasStarted == true and (self.fireMode ~= (self.activatingFireMode or self.abilitySlot) or world.lineTileCollision(mcontroller.position(), self:firePosition())) then
     animator.stopAllSounds("chargeLoop")
 	animator.setAnimationState("charge", "off")

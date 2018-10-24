@@ -1,0 +1,12 @@
+{
+  "name" : "thea-bouncy",
+  "effectConfig" : {},
+  "defaultDuration" : 1.0,
+
+  "scripts" : [
+    "thea-bouncy.lua"
+  ],
+
+  "label" : "Bouncy",
+  "icon" : "/interface/statuses/bounce.png"
+}

@@ -1,0 +1,24 @@
+{
+  "kind" : "thea-darkcloakingcloudend",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/thea-darkcloakingcloud/thea-darkcloakingcloud.animation",
+    "position" : [0, 0],
+	"initialVelocity" : [0, -2.5],
+    "finalVelocity" : [0, -0.5],
+    "approach" : [50, 50],
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.0,
+    "timeToLive" : 1.25,
+    "fade" : 1,
+    "size" : 1,
+	"color" : [255, 255, 255, 255],
+    "layer" : "middle",
+    "variance" : {
+      "rotation" : 180,
+      "initialVelocity" : [35.0, 0.5],
+      "position" : [0.125, 0.125],
+	  "timeToLive" : 0.75
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name" : "swimboostcandy",
+  "effectConfig" : {
+    "movementParameters" : {
+      "liquidImpedance" : 0.1,
+      "liquidForce" : 250,
+      "liquidJumpProfile" : {
+        "jumpSpeed" : 50.0
+      }
+    }
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "swimboost.lua"
+  ],
+
+  "label" : "Swim Boost",
+  "icon" : "/interface/statuses/swimboost.png"
+}

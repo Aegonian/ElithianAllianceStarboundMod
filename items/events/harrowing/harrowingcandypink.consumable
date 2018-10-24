@@ -1,0 +1,17 @@
+{
+  "itemName" : "harrowingcandypink",
+  "rarity" : "Common",
+  "price" : 5,
+  "category" : "food",
+  "inventoryIcon" : "harrowingcandypink.png",
+  "description" : "Sweets modeled after ancient candy, perfect for celebrating the Harrowing!",
+  "shortdescription" : "Harrowing Candy",
+  "effects" : [ [
+    {
+        "effect" : "thea-bouncy",
+        "duration" : 10
+    }
+  ] ],
+  "emote" : "happy",
+  "maxStack" : 100
+}

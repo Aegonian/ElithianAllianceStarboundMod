@@ -1,0 +1,34 @@
+{
+  "itemName" : "harrowingcache",
+  "level" : 1,
+  "price" : 250,
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "A sealed cache containing Harrowing event items. Hold ^green;[LMB] ^white;to open!",
+  "shortdescription" : "Harrowing Cache",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "harrowingcacheicon.png",
+  "animation" : "harrowingcache.animation",
+  "animationParts" : {
+    "treasurebox" : "harrowingcache.png",
+    "lights" : "harrowingcachelights.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "open" : [ "/sfx/objects/colonydeed_partyhorn.ogg" ],
+	  "openLoop" : [ "/sfx/other/thea_sealedcache_opening2.ogg" ]
+    }
+  },
+  
+  "scripts" : ["/items/active/other/thea-sealedcache/thea-sealedcache.lua"],
+
+  "fireOffset" : [1.0, 0.0],
+
+  "treasure" : {
+    "pool" : "harrowingTreasurebox"
+  },
+  
+  //Makes the treasure's level depend on the threatLevel of the world the item is first used on
+  "useWorldLevel" : false
+}

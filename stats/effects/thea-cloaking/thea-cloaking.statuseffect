@@ -1,7 +1,7 @@
 {
   "name" : "thea-cloaking",
   "effectConfig" : {
-    "alpha" : 0.125,				//How transparent the user should be when cloaked (from 1.0 (fully visible) to 0.0 (completely invisible))
+    "directive" : "?multiply=ffffff15",		//Image processing directive to make the player transparent
     "cloakedPowerModifier" : 1.5	//Damage multiplier while invisible
   },
   "defaultDuration" : 5,

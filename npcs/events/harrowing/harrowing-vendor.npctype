@@ -1,0 +1,103 @@
+{
+  "type" : "harrowing-vendor",
+  "baseType" : "ao-wandermerchant",
+
+  "npcname" : "Ayala",
+  "identity" : {
+    "imagePath" : "aegi",
+    "gender" : "female",
+    "hairGroup" : "hair",
+    "hairType" : "fem14",
+	"facialMaskGroup" : "ears",
+	"facialMask" : "5"
+  },
+  
+  "dropPools" : [ "aegiDeathTreasure" ],
+
+  "scriptConfig" : {
+	"offeredQuests" : [ "harrowingeventstart" ],
+	"turnInQuests" : [ "harrowingeventstart" ],
+	
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "poolsFile" : "/npcs/merchantpools.config",
+      
+	  "categories" : {
+        "override" : [ "harrowingEventVendor" ]
+      },
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 16,
+	  
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "Ayala's Store of Horrors",
+          "subtitle" : "  For all your Harrowing needs!"
+        }
+      }
+    },
+	
+	"dialog" : {
+      "merchant" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "Looking to have some fun during the Harrowing? You've come to the right place!"
+            ]
+          }
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "Come back soon, the Harrowing won't last forever!"
+            ]
+          }
+        },
+        "follow" : {
+          "default" : {
+            "default" : [
+              "I've got my supplies just over there."
+            ]
+          }
+        },
+        "welcome" : {
+          "default" : {
+            "default" : [
+              "Welcome, welcome! Let's get you a mask, alright?"
+            ]
+          }
+        },
+        "tout" : {
+          "default" : {
+            "default" : [
+              "The Harrowing is upon us! Come and get your masks here!"
+            ]
+          }
+        }
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "aegi-pumpkinhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "aegi-rimdwellerchest", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "legs" : [
+              { "name" : "aegi-rimdwellerlegs", "parameters" : { "colorIndex" : 1 } }
+            ],
+            "back" : [
+              { "name" : "simplecapeback", "parameters" : { "colorIndex" : 1 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

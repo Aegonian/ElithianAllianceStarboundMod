@@ -32,7 +32,7 @@
   "orientations" : [
     {
       "image" : "avikanpurpletapestry.png:<color>",
-      "imagePosition" : [-16, -16],
+      "imagePosition" : [-8, -16],
       "frames" : 1,
       "animationCycle" : 0.5,
 
@@ -41,7 +41,7 @@
     },
 	{
       "image" : "avikanpurpletapestry.png:<color>",
-      "imagePosition" : [-16, -16],
+      "imagePosition" : [-8, -16],
       "frames" : 1,
       "animationCycle" : 0.5,
 

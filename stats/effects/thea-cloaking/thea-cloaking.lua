@@ -60,12 +60,12 @@ function activate()
   animator.setParticleEmitterActive("cloakedParticles", true)
   animator.setParticleEmitterActive("cloakedParticles2", true)
 
-  local alpha = math.ceil(config.getParameter("alpha") * 255)
-  local multiplyDirective = string.format("?multiply=ffffff%02x", alpha)
-  local borderDirective = "?border=2;FFFFFF30;00000000"
+  --local alpha = math.ceil(config.getParameter("alpha") * 255)
+  --local multiplyDirective = string.format("?multiply=ffffff%02x", alpha)
+  --local borderDirective = "?border=2;FFFFFF30;00000000"
   
   --local directive = multiplyDirective .. borderDirective
-  local directive = multiplyDirective
+  local directive = config.getParameter("directive")
   effect.setParentDirectives(directive)
   
   world.setProperty("entityinvisible" .. tostring(entity.id()), true)
