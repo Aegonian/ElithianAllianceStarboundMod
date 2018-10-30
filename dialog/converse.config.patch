@@ -224,7 +224,7 @@
 		"You look a bit like an Avikan. Just a little bit...",
 		"Those feathers are pretty. I don't suppose you'd want to part with a few?",
 		"Those feathers look a bit like flaps.",
-		"Can you fly, like toher birds?",
+		"Can you fly, like other birds?",
 		"You seem the musical type. Sing me a song, will you?",
 		"Could I have one of your feathers? It would make for a great souvenir!",
 		"Who is this Kluex figure?",
@@ -343,7 +343,7 @@
 	  "aegi" : [
 		"You remind me of another soft-skin I met some day.",
 		"Is it true that you fled your homeworld centuries ago?",
-		"Don't those... things on you head get in the way?",
+		"Don't those... things on your head get in the way?",
 		"Why are your ears so long and pointy?",
 		"I've never met such a strange soft-skin before.",
 		"You don't look like the other soft-skins.",
@@ -529,11 +529,11 @@
 		"My sensors seem to be malfunctioning again...",
 		"There was a server outage the other day. It was chaos.",
 		"The Circuit is everything.",
-		"The servers seems to be acting up again.",
+		"The servers seem to be acting up again.",
 		"Efficiency, my friend.",
 		"I wish to visit Icicle one day.",
-		"Have you ever been to Tranq-While?",
-		"Tranq-While is a magnificent place.",
+		"Have you ever been to Tranq'While?",
+		"Tranq'While is a magnificent place.",
 		"Har-Money might not be the largest city, but it is the most magnificent.",
 		"I computed my chances of survival in the event of a spaceship crash yesterday. They were not favourable.",
 		"I am having a very efficient day.",
@@ -564,7 +564,7 @@
 		"What is a soul?",
 		"I was built exactly 512 standard galactic days ago.",
 		"My systems have been running at optimal efficiency for 128 days in a row.",
-		"I was built in Tranq-While's primary manufactoring facility.",
+		"I was built in Tranq'While's primary manufacturing facility.",
 		"I was built in a colony not far from here.",
 		"My arm is malfunctioning. The actuator must have broken again.",
 		"My power core is quickly approaching its minimum charge level.",
@@ -578,7 +578,7 @@
 		"The Elithian Alliance is an efficient solution for defending planetary systems.",
 		"The Federation views Notix and Trinks as equals.",
 		"Organic life can live in harmony with synthetic life. Us Trinks are a living example.",
-		"Have you ever seen the primary manufactoring facility of Tranq-While? It is incredibly efficient in its energy usage.",
+		"Have you ever seen the primary manufacturing facility of Tranq'While? It is incredibly efficient in its energy usage.",
 		"My antenna was bent in yesterday's hailstorm.",
 		"I am getting my hull repainted today.",
 		"I am made of 60% durasteel.",
@@ -660,7 +660,7 @@
 		"You wouldn't like my homeworld, it's far too cold for you.",
 		"I don't rust, so don't worry about getting my hull wet.",
 		"Your kind appears to be highly intelligent.",
-		"Efficiency is everything, won't you agree?"
+		"Efficiency is everything, wouldn't you agree?"
 	  ],  
 	  "avikan" : [
 		"Why is your kind so hostile towards synthetic life?",
@@ -699,7 +699,7 @@
 		"Your frame seems fragile compared to a Trink hull.",
 		"You look a bit familiar...",
 		"You work for the Avikan?",
-		"The Theleans hacked your kind before. You should be careful.",
+		"The Theleans have hacked your kind before. You should be careful.",
 		"A fellow robotic lifeform! Welcome!"
 	  ],
 	  "aegi" : [
@@ -774,7 +774,7 @@
     "value": [
 	  "Kind. You are welcome in my home.",
 	  "Fascinated. I was unaware that there were more sentient synthetic races.",
-	  "Wondering. What metal are you made of?",
+	  "Wonder. What metal are you made of?",
 	  "Jealous. I wish I was as waterproof as you were.",
 	  "Error. Encountered unfamiliar alien species.",
 	  "Happy. I am always glad to see fellow robots.",
@@ -806,7 +806,7 @@
     "op": "add",
     "path": "/converse/avian/trink",
     "value": [
-	  "Greetings stranger!",
+	  "Greetings, stranger!",
 	  "A robot has come to visit.",
 	  "You're one shiny machine!",
 	  "You creep me out a bit... Your eyes never blink.",
@@ -1046,7 +1046,7 @@
     "op": "add",
     "path": "/converse/avian/droden",
     "value": [
-	  "Greetings stranger!",
+	  "Greetings, stranger!",
 	  "A robot has come to visit.",
 	  "You're shiny. I like you.",
 	  "Your paint is starting to peel off.",
