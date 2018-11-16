@@ -1,0 +1,83 @@
+{
+  "objectName" : "avikanracinggateslow",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "wire",
+  "printable" : false,
+  "price" : 100,
+  "description" : "A gate that slows down hoverbikes. It sends out a signal whenever a vehicle passes through it.",
+  "shortdescription" : "Avikan Racing Gate - Slow",
+  "race" : "avikan",
+	  
+  "lightColor" : [127, 0, 0],
+
+  "apexDescription" : "A racing gate. It'll slow down any hoverbike that passes by.",
+  "avianDescription" : "This racing gate slows down passing hoverbikes.",
+  "floranDescription" : "Floran ssshould be careful. Glowing pole ssslowss down hoverbikess.",
+  "glitchDescription" : "Cautious. Riding past this on a hoverbike causes a significant slow-down.",
+  "humanDescription" : "A racing gate that slows down passing hoverbikes. Darn.",
+  "hylotlDescription" : "A gate that slows down passing hoverbikes.",
+  "novakidDescription" : "This marker slows down hoverbikes. Yikes.",
+
+  "aegiDescription" : "This gate will slow down any passing hoverbike.",
+  "avikanDescription" : "A gate that slows down passing hoverbikes.",
+  "erixianDescription" : "A racing marker. It slows down passing hoverbikes.",
+  "trinkDescription" : "A marker that forces hoverbikes to slow down.",
+  "hymidDescription" : "This will slow down any passing hoverbikes.",
+  "notixDescription" : "A marker that slows down hoverbikes that pass by.",
+  "jorgasianDescription" : "A racing marker, it'll slow down any passing hoverbike.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected racing gate. Slows down passing hoverbikes.",
+  "akkimariDescription" : "If Akki speeds past on hoverbike, Akki will slow down.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+	  "image" : "gate.png:<color>",
+      "imagePosition" : [-8, 0],
+	  
+      "lightPosition" : [0, 6],
+
+      "materialSpaces" : [
+        [[0,10], "metamaterial:theaRacingGateSlow"],
+        [[0, 9], "metamaterial:theaRacingGateSlow"],
+        [[0, 8], "metamaterial:theaRacingGateSlow"],
+        [[0, 7], "metamaterial:theaRacingGateSlow"],
+        [[0, 6], "metamaterial:theaRacingGateSlow"],
+        [[0, 5], "metamaterial:theaRacingGateSlow"],
+        [[0, 4], "metamaterial:theaRacingGateSlow"],
+        [[0, 3], "metamaterial:theaRacingGateSlow"],
+        [[0, 2], "metamaterial:theaRacingGateSlow"],
+        [[0, 1], "metamaterial:theaRacingGateSlow"],
+        [[0, 0], "metamaterial:theaRacingGateSlow"]
+      ],
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+  "animation" : "/objects/animations/thea-racinggate.animation",
+  "animationParts" : {
+    "body" : "gate.png",
+    "lights" : "lights.png",
+    "switchLights" : "switchlights.png"
+  },
+  "animationPosition" : [-8, 0],
+
+  "scripts" : [
+    "/objects/wired/proximitysensor/proximitysensor.lua"
+  ],
+  "scriptDelta" : 5,
+
+  "outputNodes" : [ [0, 0] ],
+  
+  "interactive" : false,
+
+  "detectDuration" : 0.1,
+  "detectEntityTypes" : [ "vehicle" ],
+  "detectArea" : [ [0.0, 0.0], [1.0, 11.0] ]
+}

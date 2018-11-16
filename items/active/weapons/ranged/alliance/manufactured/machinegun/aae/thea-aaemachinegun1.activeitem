@@ -1,0 +1,117 @@
+{
+  "itemName" : "thea-aaemachinegun1",
+  "price" : 500,
+  "inventoryIcon" : "thea-aaemachinegun1.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A machinegun perfect for sustained fire.",
+  "manufacturer" : "^gray;AAE^reset;",
+  "shortdescription" : "Plutarch RS-6",
+  "level" : 6,
+  "fixedLevel" : false,
+  "tooltipKind" : "thea-gun-mf-attachment",
+  "category" : "Machinegun",
+  "itemTags" : ["weapon","ranged","machinegun","alliance","aae","allianceUpgradeable"],
+  "twoHanded" : true,
+  
+  //Custom field for recognizing compatible attachment types
+  "theaAttachmentType" : "aae_machinegun1",
+  
+  "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
+  "animationParts" : {
+    "middle" : "thea-aaemachinegun1.png",
+    "middleFullbright" : "thea-aaemachinegun1lights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/allianceenergyflash.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+		    "offset" : [1.375, 0.25]
+		  }
+		}
+      }
+    },
+    "particleEmitters" : {
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/thea_plasmagun5.ogg" ]
+    }
+  },
+
+  "baseOffset" : [1.375, 0.25],
+  "muzzleOffset" : [2.875, 0.25],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-accuracygunfire.lua"],
+    "class" : "TheaAccuracyGunFire",
+
+    "fireTime" : 0.1,
+    "baseDps" : 9.5,
+    "energyUsage" : 10.0,
+    "startInaccuracy" : 0.150,
+	"finalInaccuracy" : 0.008,
+	"maxAccuracyTime" : 2.5,		//Time spent firing before reaching max accuracy
+	"maxIdleTime" : 0.25,			//Time spent not firing before accuracy starts degrading
+	"crouchIncreaseVector" : 2,		//While crouching, accuracy increases faster by this vector (e.g. if set to 2, twice as fast)
+	"movementAccuracyLimit" : 0.75,	//While moving, limit the accuracy to this factor (e.g. if set to 0.75, max accuracy is only 75% while moving)
+	
+	//Config for animated cursor
+	"cursorFrames" : [
+	  "/cursors/animated/thea-machinegunreticle1.cursor",
+	  "/cursors/animated/thea-machinegunreticle2.cursor",
+	  "/cursors/animated/thea-machinegunreticle3.cursor",
+	  "/cursors/animated/thea-machinegunreticle4.cursor",
+	  "/cursors/animated/thea-machinegunreticle5.cursor",
+	  "/cursors/animated/thea-machinegunreticle6.cursor"
+	],
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "allianceenergybullet",
+    "projectileParameters" : {
+      "knockback" : 5
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotationMin" : 1,
+        "armRotationMax" : 8,
+        "weaponRotationMin" : 2,
+        "weaponRotationMax" : 12,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.075,
+        "armRotationMin" : 1,
+        "armRotationMax" : 8,
+        "weaponRotationMin" : 2,
+        "weaponRotationMax" : 12,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/thea-buildweapon-mf-attachment.lua"
+}

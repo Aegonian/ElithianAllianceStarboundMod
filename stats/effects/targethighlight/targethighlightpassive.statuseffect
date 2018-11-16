@@ -1,0 +1,16 @@
+{
+  "name" : "targethighlightpassive",
+  "effectConfig" : {
+	"directive" : "fade=FFD800=0.15"
+  },
+  "defaultDuration" : 3,
+
+  "scripts" : [
+    "targethighlight.lua"
+  ],
+
+  "animationConfig" : "targethighlightpassive.animation",
+
+  "label" : "Marked",
+  "icon" : "/interface/statuses/marked.png"
+}

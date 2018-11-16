@@ -7,7 +7,7 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "tooltipKind" : "thea-bow-unique",
-  "category" : "Bow",
+  "category" : "Recurve Bow",
   "description" : "^orange;A powerful bow crafted in tribute to Elithia.",
   "shortdescription" : "^orange;Bow of the Elithian^white;",
   "twoHanded" : true,
@@ -20,8 +20,8 @@
   "animationParts" : {
     "bow" : "thea-tributebowfull.png",
 	"lights" : "thea-tributebowlights.png",
-	"arrows" : "thea-tributebowarrows.png",
-	"arrowLights" : "thea-tributebowarrowlights.png"
+	"specialArrow" : "thea-tributebowarrows.png",
+	"specialArrowLights" : "thea-tributebowarrowlights.png"
   },
   "animationCustom" : {
     "animatedParts" : {
@@ -36,12 +36,12 @@
 			"offset" : [0.25, 0]
 		  }
 		},
-		"arrows" : {
+		"specialArrow" : {
 		  "properties" : {
 			"offset" : [0.25, 0]
 		  }
 		},
-		"arrowLights" : {
+		"specialArrowLights" : {
 		  "properties" : {
 			"offset" : [0.25, 0]
 		  }
@@ -61,27 +61,35 @@
     "scripts" : ["/items/active/weapons/ranged/abilities/bow/thea-bowshot.lua"],
     "class" : "TheaBowShot",
 	
-	"fireOffset" : [1.75, 0],
+	"fireOffset" : [0.75, 0],
 
-    "energyPerShot" : 30,
-    "cooldownTime" : 0.4,
-    "inaccuracy" : 0.01,
+    "drawTime" : 0.9,				//Time to fully draw the bow
+	"powerProjectileTime" : 0.3,	//After fully drawing, the bow is super-charged for this long
+	"energyPerShot" : 30,			//Total energy consumption for a full draw
+	"holdEnergyUsage" : 5,			//Energy consumption per second while fully drawn
 	
-	"walkWhileFiring" : true,
-	"useQuiverDamageBonus" : true,
-
-    "drawFrameSelector" : "bowImageSelector",
-    "drawPowerMultiplier" : "drawTimeMultiplier",
-    "drawSpeedMultiplier" : "drawTimeMultiplier",
+    "cooldownTime" : 0.4,			//Time between firing and drawing the next arrow
+    "inaccuracy" : 0.02,			//Inaccuracy of the shot
+	
+	"walkWhileFiring" : true,		//If true, prevents the player from running while drawing the bow
+	"useQuiverDamageBonus" : true,	//If true, allows this bow to use quiver damage bonuses
+	
+	"drainEnergyWhilePowerful" : false,	//If true, consume energy while at max power
+	"staticDamageMultiplier" : null,	//If this value is set, arrow damage is independent of draw time and is instead multiplied by this value
+	"dynamicDamageMultiplier" : 1.0,	//All damage is multiplied by this value. Useful for modifying damage using alt ability special arrows
 
     "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
 
+	"projectileCount" : 1,	//Amount of arrows to shoot at once
     "projectileType" : "tributearrow",
-    "powerProjectileType" : "tributepowerarrow",
-    "powerProjectileTime" : [0.9, 1.1],
     "projectileParameters" : {
       "speed" : 80,
-      "power" : 7.5
+      "power" : 6.5
+    },
+    "powerProjectileType" : "tributepowerarrow",
+    "powerProjectileParameters" : {
+      "speed" : 100,
+      "power" : 8.5
     },
 
     "stances" : {
@@ -112,63 +120,36 @@
     }
   },
 
+  "altAbilityType" : "thea-nockspecialarrow",
   "altAbility" : {
-	"name" : "Power Arrow",
-    "scripts" : ["/items/active/weapons/ranged/abilities/bow/thea-longbowspecialarrows.lua"],
-    "class" : "TheaLongbowSpecialArrows",
+	"name" : "Nock Power Arrow",
 	
-	"fireOffset" : [1.75, 0],
-
-    "energyPerShot" : 45,
-	"holdEnergyUsage" : 10,
-    "cooldownTime" : 1.25,
-    "inaccuracy" : 0.01,
+	//Which stats to adapt when nocking the special arrow
+	"adaptedStats" : {
+	  "projectileType" : true,
+	  "powerProjectileType" : true,
+	  "projectileCount" : false,
+	  "drawTime" : false,
+	  "energyPerShot" : true,
+	  "holdEnergyUsage" : false,
+	  "inaccuracy" : false,
+	  "staticDamageMultiplier" : false,
+	  "dynamicDamageMultiplier" : true
+	},
 	
-	"walkWhileFiring" : true,
-	"useQuiverDamageBonus" : true,
-
-    "drawFrameSelector" : "thea-regularBowImageSelector",
-    "drawPowerMultiplier" : "thea-regularBowTimeMultiplier",
-    "drawSpeedMultiplier" : "thea-regularBowTimeMultiplier",
-
-    "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
-
-    "projectileType" : "tributesuperarrow",
-    "powerProjectileType" : "tributesuperpowerarrow",
-    "powerProjectileTime" : [0.9, 1.1],
-	"projectileCount" : 1,
-    "projectileParameters" : {
-      "speed" : 80,
-      "power" : 8.5,
-	  "piercing" : false
-    },
-
-    "stances" : {
-      "idle" : {
-        "armRotation" : -30,
-        "weaponRotation" : 0,
-        "allowRotate" : true,
-        "allowFlip" : true,
-        "twoHanded" : true
-      },
-      "draw" : {
-        "armRotation" : 0,
-        "weaponRotation" : 0,
-        "allowRotate" : true,
-        "allowFlip" : true,
-        "twoHanded" : true
-      },
-      "fire" : {
-        "duration" : 0.2,
-        "armRotation" : 0,
-        "weaponRotation" : 0,
-        "allowRotate" : false,
-        "allowFlip" : true,
-        "twoHanded" : true,
-
-        "frontArmFrame" : "idle.3"
-      }
-    }
+	//The new stats which will overwrite the primary ability
+	"specialAbility" : {
+	  "projectileType" : "tributesuperarrow",
+	  "powerProjectileType" : "tributesuperpowerarrow",
+	  "projectileCount" : 1,
+	  
+	  "drawTime" : 1.0,
+	  "energyPerShot" : 45,
+	  "holdEnergyUsage" : 5,
+	  "inaccuracy" : 0.075,
+	  "staticDamageMultiplier" : 1.0,
+	  "dynamicDamageMultiplier" : 1.5
+	}
   },
 
   "builder" : "/items/buildscripts/thea-buildbow.lua"

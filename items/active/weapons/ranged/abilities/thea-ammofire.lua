@@ -17,18 +17,8 @@ function TheaAmmoFire:init()
   end
   
   self.currentAmmo = config.getParameter("ammoCount", self.maxAmmo)
-  self.reloadTimer = self.reloadTime
-  self.startedReloading = false
   
   animator.setAnimationState("gun", "readyState1")
-  
-  --If picking up the weapon with an empty magazine, go into reload state
-  if self.currentAmmo == 0 then
-	animator.setAnimationState("gun", "reload")
-	self.weapon:setStance(self.stances.reload)
-	animator.playSound("reload")
-	self.startedReloading = true
-  end
 end
 
 function TheaAmmoFire:update(dt, fireMode, shiftHeld)
@@ -44,8 +34,7 @@ function TheaAmmoFire:update(dt, fireMode, shiftHeld)
     and not self.weapon.currentAbility
     and self.cooldownTimer == 0
     and not world.lineTileCollision(mcontroller.position(), self:firePosition())
-	and self.currentAmmo > 0
-	and self.startedReloading == false then
+	and self.currentAmmo > 0 then
 
     if self.fireType == "auto" then
       self:setState(self.auto)
@@ -55,33 +44,13 @@ function TheaAmmoFire:update(dt, fireMode, shiftHeld)
   end
   
   --Reload automatically if clip is empty
-  if self.currentAmmo == 0 and self.startedReloading == false and not self.weapon.currentAbility then
-	animator.setAnimationState("gun", "reload")
-	self.weapon:setStance(self.stances.reload)
-	animator.playSound("reload")
-	animator.burstParticleEmitter("reload")
-	self.startedReloading = true
+  if self.currentAmmo == 0 and not self.weapon.currentAbility then
+	self:setState(self.reload)
   end
   
   --Manual reload
-  if self.fireMode == "alt" and self.currentAmmo ~= self.maxAmmo and self.startedReloading == false and not self.weapon.currentAbility then
-	animator.setAnimationState("gun", "reload")
-	self.weapon:setStance(self.stances.reload)
-	animator.playSound("reload")
-	animator.burstParticleEmitter("reload")
-	self.startedReloading = true
-  end
-  
-  --Reloading functionality
-  if self.startedReloading == true then
-	self.reloadTimer = math.max(0, self.reloadTimer - self.dt)
-	if self.reloadTimer <= 0 then
-	  self.reloadTimer = self.reloadTime
-	  self.currentAmmo = self.maxAmmo
-	  activeItem.setInstanceValue("ammoCount", self.maxAmmo)
-	  self.weapon:setStance(self.stances.idle)
-	  self.startedReloading = false
-	end
+  if self.fireMode == "alt" and self.currentAmmo ~= self.maxAmmo and not self.weapon.currentAbility then
+	self:setState(self.reload)
   end
 end
 
@@ -162,6 +131,45 @@ function TheaAmmoFire:cooldown()
 
     progress = math.min(1.0, progress + (self.dt / self.stances.cooldown.duration))
   end)
+end
+
+function TheaAmmoFire:reload()
+  self.weapon:setStance(self.stances.reload)
+  self.weapon:updateAim()
+
+  animator.setAnimationState("gun", "reload")
+  animator.playSound("reload")
+  animator.burstParticleEmitter("reload")
+  --self.startedReloading = true
+  
+  self.currentAmmo = self.maxAmmo
+  activeItem.setInstanceValue("ammoCount", self.maxAmmo)
+  
+  util.wait(self.stances.reload.duration)
+  
+  if self.stances.reloadTwirl then
+	self:setState(self.reloadTwirl)
+  elseif self.readyTime then
+	self.cooldownTimer = self.readyTime
+  end
+end
+
+function TheaAmmoFire:reloadTwirl()
+  self.weapon:setStance(self.stances.reloadTwirl)
+  self.weapon:updateAim()
+
+  local progress = 0
+  util.wait(self.stances.reloadTwirl.duration, function()
+
+	self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.reloadTwirl.weaponRotation, self.stances.reloadTwirl.endWeaponRotation))
+	self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.reloadTwirl.armRotation, self.stances.reloadTwirl.endArmRotation))
+
+	progress = math.min(1.0, progress + (self.dt / self.stances.reloadTwirl.duration))
+  end)
+  
+  if self.readyTime then
+	self.cooldownTimer = self.readyTime
+  end
 end
 
 function TheaAmmoFire:muzzleFlash()

@@ -6,7 +6,7 @@
   "inventoryIcon" : "avikan-hallakhantoothicon.png",
   "maxStack" : 1,
   "rarity" : "Essential",
-  "tooltipKind" : "thea-bow-unique",
+  "tooltipKind" : "thea-longbow-unique",
   "category" : "Longbow",
   "description" : "^orange;A bow ground down from a tooth of Halla'Khan.",
   "shortdescription" : "^orange;Tooth of Halla'Khan^white;",
@@ -23,14 +23,26 @@
   "animation" : "/items/active/weapons/ranged/animations/thea-alternativearrowbow.animation",
   "animationParts" : {
     "bow" : "avikan-hallakhantooth.png",
-	"arrows" : "avikan-hallakhantootharrows.png"
+	"specialArrow" : "avikan-hallakhantootharrows.png"
   },
   "animationCustom" : {
-    "animatedParts" : { "parts" : { "bow" : { "properties" : {
-      "offset" : [0.25, 0]
-    }}}},
+    "animatedParts" : {
+	  "parts" : {
+		"bow" : {
+		  "properties" : {
+			"offset" : [0.25, 0]
+		  }
+		},
+		"specialArrow" : {
+		  "properties" : {
+			"offset" : [0.25, 0]
+		  }
+		}
+	  }
+	},
     "sounds" : {
-      "draw" : [ "/sfx/gun/thea_longbow_draw.ogg" ],
+      "draw" : [ "/sfx/gun/bow/thea_bow_draw1.ogg", "/sfx/gun/bow/thea_bow_draw2.ogg", "/sfx/gun/bow/thea_bow_draw3.ogg" ],
+      "ready" : [ "/sfx/gun/bow/thea_bow_ready.ogg" ],
       "release" : [ "/sfx/gun/bow_loose.ogg" ],
       "perfectRelease" : [ "/sfx/gun/bow_loose_perfect.ogg" ]
     }
@@ -41,31 +53,38 @@
   "elementalType" : "avikanhunting",
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/abilities/bow/thea-longbowshot.lua"],
-    "class" : "TheaLongBowShot",
+    "scripts" : ["/items/active/weapons/ranged/abilities/bow/thea-bowshot.lua"],
+    "class" : "TheaBowShot",
 	
 	"fireOffset" : [0.75, 0],
 
-    "energyPerShot" : 40,
-	"holdEnergyUsage" : 10,
-    "cooldownTime" : 0.4,
-    "inaccuracy" : 0.01,
+    "drawTime" : 1.5,				//Time to fully draw the bow
+	"powerProjectileTime" : 25.0,	//After fully drawing, the bow is super-charged for this long
+	"energyPerShot" : 50,			//Total energy consumption for a full draw
+	"holdEnergyUsage" : 10,			//Energy consumption per second while fully drawn
 	
-	"walkWhileFiring" : true,
-	"useQuiverDamageBonus" : true,
-
-    "drawFrameSelector" : "thea-bowImageSelector",
-    "drawPowerMultiplier" : "thea-drawTimeMultiplier",
-    "drawSpeedMultiplier" : "thea-drawTimeMultiplier",
+    "cooldownTime" : 0.4,			//Time between firing and drawing the next arrow
+    "inaccuracy" : 0.00,			//Inaccuracy of the shot
+	
+	"walkWhileFiring" : true,		//If true, prevents the player from running while drawing the bow
+	"useQuiverDamageBonus" : true,	//If true, allows this bow to use quiver damage bonuses
+	
+	"drainEnergyWhilePowerful" : true,	//If true, consume energy while at max power
+	"staticDamageMultiplier" : null,	//If this value is set, arrow damage is independent of draw time and is instead multiplied by this value
+	"dynamicDamageMultiplier" : 1.0,	//All damage is multiplied by this value. Useful for modifying damage using alt ability special arrows
 
     "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
 
+	"projectileCount" : 1,	//Amount of arrows to shoot at once
     "projectileType" : "avikanlongarrow",
-    "powerProjectileType" : "avikanlongpowerarrow",
-    "powerProjectileTime" : [1.2, 1.5],
     "projectileParameters" : {
-      "speed" : 95,
-      "power" : 9.0
+      "speed" : 40,
+      "power" : 5.0
+    },
+    "powerProjectileType" : "avikanlongpowerarrow",
+    "powerProjectileParameters" : {
+      "speed" : 140,
+      "power" : 11.0
     },
 
     "stances" : {
@@ -96,63 +115,36 @@
     }
   },
 
+  "altAbilityType" : "thea-nockspecialarrow",
   "altAbility" : {
 	"name" : "Triple Draw",
-    "scripts" : ["/items/active/weapons/ranged/abilities/bow/thea-longbowspecialarrows.lua"],
-    "class" : "TheaLongbowSpecialArrows",
 	
-	"fireOffset" : [1.75, 0],
-
-    "energyPerShot" : 70,
-	"holdEnergyUsage" : 15,
-    "cooldownTime" : 0.4,
-    "inaccuracy" : 0.075,
+	//Which stats to adapt when nocking the special arrow
+	"adaptedStats" : {
+	  "projectileType" : false,
+	  "powerProjectileType" : false,
+	  "projectileCount" : true,
+	  "drawTime" : false,
+	  "energyPerShot" : true,
+	  "holdEnergyUsage" : true,
+	  "inaccuracy" : true,
+	  "staticDamageMultiplier" : false,
+	  "dynamicDamageMultiplier" : true
+	},
 	
-	"walkWhileFiring" : true,
-	"useQuiverDamageBonus" : true,
-
-    "drawFrameSelector" : "thea-bowImageSelector",
-    "drawPowerMultiplier" : "thea-drawTimeMultiplier",
-    "drawSpeedMultiplier" : "thea-drawTimeMultiplier",
-
-    "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
-
-    "projectileType" : "avikanlongarrow",
-    "powerProjectileType" : "avikanlongpowerarrow",
-    "powerProjectileTime" : [1.2, 1.5],
-	"projectileCount" : 3,
-    "projectileParameters" : {
-      "speed" : 95,
-      "power" : 4.0,
-	  "piercing" : false
-    },
-
-    "stances" : {
-      "idle" : {
-        "armRotation" : -30,
-        "weaponRotation" : 0,
-        "allowRotate" : true,
-        "allowFlip" : true,
-        "twoHanded" : true
-      },
-      "draw" : {
-        "armRotation" : 0,
-        "weaponRotation" : 0,
-        "allowRotate" : true,
-        "allowFlip" : true,
-        "twoHanded" : true
-      },
-      "fire" : {
-        "duration" : 0.2,
-        "armRotation" : 0,
-        "weaponRotation" : 0,
-        "allowRotate" : false,
-        "allowFlip" : true,
-        "twoHanded" : true,
-
-        "frontArmFrame" : "idle.3"
-      }
-    }
+	//The new stats which will overwrite the primary ability
+	"specialAbility" : {
+	  "projectileType" : "avikanlongarrow",
+	  "powerProjectileType" : "avikanlongpowerarrow",
+	  "projectileCount" : 3,
+	  
+	  "drawTime" : 1.0,
+	  "energyPerShot" : 70,
+	  "holdEnergyUsage" : 15,
+	  "inaccuracy" : 0.075,
+	  "staticDamageMultiplier" : 1.0,
+	  "dynamicDamageMultiplier" : 1.5
+	}
   },
 
   "builder" : "/items/buildscripts/thea-buildbow.lua"

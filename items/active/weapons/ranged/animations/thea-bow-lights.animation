@@ -1,0 +1,72 @@
+//Animation for bow-type weapon which has a unique animation state for when the arrow has been loosed. Has an additional layer for adding fullbright parts to the bow sprites
+
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "bow" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {},
+          "loosed" : {}
+        }
+      }
+    },
+	
+    "parts" : {
+      "bow" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "bow" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:<drawFrame>"
+              }
+            },
+            "loosed" : {
+              "properties" : {
+                "image" : "<partImage>:loosed"
+              }
+            }
+          }
+        }
+      },
+      "lights" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "fullbright" : true,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "bow" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:<drawFrame>"
+              }
+            },
+            "loosed" : {
+              "properties" : {
+                "image" : "<partImage>:loosed"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {}
+  },
+
+  "sounds" : {
+    "draw" : [ ],
+    "ready" : [ ],
+    "release" : [ ],
+    "perfectRelease" : [ ]
+  }
+}

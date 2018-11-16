@@ -35,6 +35,19 @@
 		}
       }
     },
+    "particleEmitters" : {
+      "reload" : {
+        "transformationGroups" : ["weapon"],
+		"offsetRegion" : [0.375, 0.5, 0.375, 0.5],
+        "particles" : [
+          { "particle" : "thea-discardedbullet" },
+          { "particle" : "thea-discardedbullet" },
+          { "particle" : "thea-discardedbullet" },
+          { "particle" : "thea-discardedbullet" },
+          { "particle" : "thea-discardedbullet" }
+        ]
+      }
+    },
     "sounds" : {
       "fire" : [ "/sfx/gun/conscriptor_fire.ogg" ],
 	  "reload" : [ "/sfx/gun/reload/conscriptor_reload.ogg" ]
@@ -56,7 +69,7 @@
     "baseDps" : 13.5,
     "inaccuracy" : 0.005,
 	
-	"reloadTime" : 1.4,
+	"readyTime" : 0.2, //Time between finishing the reload animation and being able to fire the first shot again
 	
 	"maxAmmo" : 5,
 	"cycleAfterShot" : true,
@@ -98,7 +111,7 @@
         "allowFlip" : true
       },
       "reload" : {
-        "duration" : 0.6,
+        "duration" : 1.25,
         "armRotation" : -25,
         "weaponRotation" : 55,
         "twoHanded" : true,

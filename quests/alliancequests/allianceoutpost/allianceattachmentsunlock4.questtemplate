@@ -1,0 +1,29 @@
+{
+  "id" : "allianceattachmentsunlock4",
+  "prerequisites" : [ "allianceattachmentsunlock3" ],
+  "title" : "^green;Personalized Warfare IV",
+  "text" : "I just received new inventory from AAE, and I think you might like these new attachments. I'll let you see the new inventory if you can do a little something for me. I've heard talk about ^orange;Akkimari drones equipped with stealth tech^reset; - ^green;take down a few of them^reset;, and I'll open up the new inventory for you.",
+  "completionText" : "Well done, once again! Your fighting these drones teaches us at the Embassy a lot about this new threat, so you've more than earned access to these new weapon attachments.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "alliancecache", 1 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/thea-main.lua",
+  "scriptConfig" : {
+	"portraits" : {
+      "default" : "questGiver"
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "killMonsters",
+        "displayMonsterName" : "Akkimari Strikers",
+        "targetMessage" : "akkimaristrikerDeath",
+        "count" : 5
+      }
+    ],
+	"turnInDescription" : "Return to ^orange;Aberos ^reset;in the ^orange;Creon Embassy^reset;"
+  }
+}

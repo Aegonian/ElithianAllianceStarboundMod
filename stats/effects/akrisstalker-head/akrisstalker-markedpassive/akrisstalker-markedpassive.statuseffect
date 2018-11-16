@@ -1,0 +1,16 @@
+{
+  "name" : "akrisstalker-markedpassive",
+  "effectConfig" : {
+	"directive" : "fade=FFD800=0.15"
+  },
+  "defaultDuration" : 3,
+
+  "scripts" : [
+    "/stats/effects/targethighlight/targethighlight.lua"
+  ],
+
+  "animationConfig" : "akrisstalker-markedpassive.animation",
+
+  "label" : "Marked",
+  "icon" : "/interface/statuses/akrismarked.png"
+}

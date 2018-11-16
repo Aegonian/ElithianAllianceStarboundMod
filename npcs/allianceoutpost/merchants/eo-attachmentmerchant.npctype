@@ -5,8 +5,8 @@
   "npcname" : "Aberos",
   
   "scriptConfig" : {
-	"offeredQuests" : [ "allianceattachmentsunlock", "allianceattachmentsunlock2", "allianceattachmentsunlock3" ],
-	"turnInQuests" : [ "allianceattachmentsunlock", "allianceattachmentsunlock2", "allianceattachmentsunlock3" ],
+	"offeredQuests" : [ "allianceattachmentsunlock", "allianceattachmentsunlock2", "allianceattachmentsunlock3", "allianceattachmentsunlock4" ],
+	"turnInQuests" : [ "allianceattachmentsunlock", "allianceattachmentsunlock2", "allianceattachmentsunlock3", "allianceattachmentsunlock4" ],
 	
     "merchant" : {
       "waitTime" : 40,

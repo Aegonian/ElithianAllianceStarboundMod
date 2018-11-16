@@ -28,7 +28,7 @@
           },
           "reload" : {
             "frames" : 8,
-            "cycle" : 1.0,
+            "cycle" : 0.9,
             "mode" : "transition",
             "transition" : "readyState1"
           }

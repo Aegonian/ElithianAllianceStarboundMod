@@ -1,0 +1,30 @@
+{
+  "projectileName" : "alliancelectricarrowsticking",
+  "physics" : "stickybomb",
+  "bounces" : 0,
+  "image" : "alliancelectricarrow.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "emitters" : [ "thea-electrictrail" ],
+  "piercing" : true,
+  "power" : 1,
+  "timeToLive" : 5,
+  "supportsProcessing" : true,
+  "hydrophobic" : false,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/brokenarrows/brokenalliancearrow.config"
+    }
+  ],
+  "damageType" : "ignoresdef",
+  "damageKind" : "hidden",
+  "statusEffects" : [
+    "electrified"
+  ],
+  
+  "renderLayer" : "Monster+1",
+  
+  "scripts" : [ "/projectiles/scripts/thea-stickingprojectile.lua" ],
+  "searchRadius" : 0.1
+}

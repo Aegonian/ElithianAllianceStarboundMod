@@ -1,0 +1,54 @@
+{
+  "objectName" : "akkimaribanner",
+  "colonyTags" : ["akkimari"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A slightly torn banner used to decorate Akkimari buildings.",
+  "shortdescription" : "Akris Banner",
+  "race" : "akkimari",
+
+  "apexDescription" : "A torn banner. I don't recognize the iconography.",
+  "avianDescription" : "A bright red banner, it's seen better days.",
+  "floranDescription" : "Floran wondersss who tore the bannerss.",
+  "glitchDescription" : "Curious. What does this icon represent?",
+  "humanDescription" : "A metal ring with a torn banner hanging from it.",
+  "hylotlDescription" : "A torn banner suspended from a metal ring. How quaint.",
+  "novakidDescription" : "A ragged banner.",
+
+  "aegiDescription" : "Some sort of Akkimari banner.",
+  "avikanDescription" : "An alien banner. It's not in the best condition.",
+  "erixianDescription" : "A long cloth banner. I like the colour.",
+  "trinkDescription" : "A typical display of Akkimari carelessness. The banner is all torn up.",
+  "hymidDescription" : "A simple banner. It looks old.",
+  "notixDescription" : "The ring this banner is hung from clatters softly.",
+  "jorgasianDescription" : "An Akkimari banner, typically rugged.",
+  "centensDescription" : "An imperfect banner for an imperfect species. Beautiful in its own way.",
+  "dremetonDescription" : "This banner is torn. How unfortunate.",
+  "theleanDescription" : "A torn Akkimari banner. My people have caused many torn banners...",
+  "drodenDescription" : "Scanning iconography database. Zero results. Iconography unknown.",
+  "akkimariDescription" : "Akki like banners. Make Akki feel connected.",
+  
+  "inventoryIcon" : "akkimaribannericon.png",
+  "orientations" : [
+    {
+      "image" : "akkimaribanner.png:<color>",
+      "imagePosition" : [-8, -64],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    },
+	{
+      "image" : "akkimaribannertop.png:<color>",
+      "imagePosition" : [-8, -64],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ]
+}

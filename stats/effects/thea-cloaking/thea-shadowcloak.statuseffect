@@ -1,5 +1,6 @@
 {
   "name" : "thea-shadowcloak",
+  "blockingStat" : "theaShadowCloakImmunity",
   "effectConfig" : {
     "directive" : "?multiply=00000015",		//Image processing directive to make the player transparent
     "cloakedPowerModifier" : 1.25			//Damage multiplier while invisible

@@ -54,7 +54,7 @@ function TheaLaserMarker:update(dt, fireMode, shiftHeld)
 	  for _, target in ipairs(targets) do
 		--Make sure we can damage the targeted entity
 		if world.entityCanDamage(activeItem.ownerEntityId(), target) then
-		  world.spawnProjectile("targethighlight", world.entityPosition(target), activeItem.ownerEntityId(), {0,0}, false, nil)
+		  world.spawnProjectile("targethighlightweakening", world.entityPosition(target), activeItem.ownerEntityId(), {0,0}, false, nil)
 		end
 	  end
 	end

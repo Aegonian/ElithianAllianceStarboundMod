@@ -1,0 +1,18 @@
+{
+  "name" : "thea-hoverjump",
+  "type" : "legs",
+
+  "scripts" : ["thea-hoverjump.lua"],
+  "animator" : "thea-hoverjump.animation",
+
+  "description" : "Hold ^green;[space] ^reset; to hover after jumping the air!",
+  "shortDescription" : "Hover Jump",
+  "rarity" : "Uncommon",
+  "icon" : "/tech/thea-hoverjump.png",
+
+  "chipCost" : 3,
+
+  "multiJumpCount" : 1,		//How many times we can jump while airborne
+  "hoverTime" : 1.5,		//How long we can hover in the air after jumping
+  "hoverActivations" : 3	//How many times the hover ability can be activated in a single jump
+}

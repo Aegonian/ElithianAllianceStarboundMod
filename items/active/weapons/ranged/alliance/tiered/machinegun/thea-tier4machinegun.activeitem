@@ -8,10 +8,13 @@
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Homer RS-2",
   "level" : 4,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-mf-attachment",
   "category" : "Machinegun",
   "itemTags" : ["weapon","ranged","machinegun","alliance","aae","allianceUpgradeable"],
   "twoHanded" : true,
+  
+  //Custom field for recognizing compatible attachment types
+  "theaAttachmentType" : "aae_machinegun1",
   
   "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
   "animationParts" : {
@@ -48,12 +51,14 @@
     "class" : "TheaAccuracyGunFire",
 
     "fireTime" : 0.14,
-    "baseDps" : 8.5,
+    "baseDps" : 9.5,
     "energyUsage" : 10.0,
     "startInaccuracy" : 0.125,
 	"finalInaccuracy" : 0.010,
 	"maxAccuracyTime" : 2.0,		//Time spent firing before reaching max accuracy
 	"maxIdleTime" : 0.25,			//Time spent not firing before accuracy starts degrading
+	"crouchIncreaseVector" : 2,		//While crouching, accuracy increases faster by this vector (e.g. if set to 2, twice as fast)
+	"movementAccuracyLimit" : 0.75,	//While moving, limit the accuracy to this factor (e.g. if set to 0.75, max accuracy is only 75% while moving)
 	
 	//Config for animated cursor
 	"cursorFrames" : [
@@ -84,10 +89,10 @@
       },
       "fire" : {
         "duration" : 0,
-        "armRotationMin" : 2,
+        "armRotationMin" : 1,
         "armRotationMax" : 6,
         "weaponRotationMin" : 2,
-        "weaponRotationMax" : 6,
+        "weaponRotationMax" : 10,
         "twoHanded" : true,
 
         "allowRotate" : false,
@@ -95,10 +100,10 @@
       },
       "cooldown" : {
         "duration" : 0.075,
-        "armRotationMin" : 2,
+        "armRotationMin" : 1,
         "armRotationMax" : 6,
         "weaponRotationMin" : 2,
-        "weaponRotationMax" : 6,
+        "weaponRotationMax" : 10,
         "twoHanded" : true,
 
         "allowRotate" : false,
@@ -107,5 +112,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf-attachment.lua"
 }

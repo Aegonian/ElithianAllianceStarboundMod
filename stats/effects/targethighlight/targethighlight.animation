@@ -6,13 +6,20 @@
         "states" : {
           "start" : {
             "frames" : 3,
-            "cycle" : 0.3,
+            "cycle" : 0.25,
+            "mode" : "transition",
+			"transition" : "idle"
+          },
+          "end" : {
+            "frames" : 3,
+            "cycle" : 0.25,
             "mode" : "transition",
 			"transition" : "idle"
           },
 		  "idle" : {
             "frames" : 1
-          }
+          },
+		  "invisible" : {}
         }
       }
     },
@@ -26,6 +33,12 @@
             "start" : {
               "properties" : {
                 "image" : "targethighlight.png:start.<frame>",
+				"fullbright" : true
+              }
+            },
+            "end" : {
+              "properties" : {
+                "image" : "targethighlight.png:end.<frame>",
 				"fullbright" : true
               }
             },

@@ -1,0 +1,9 @@
+{
+  "name" : "akkimaristrikerlights",
+  "category" : "akkimaristriker",
+  "type" : "lights",
+
+  "frames" : {
+    "lights" : "akkimaristrikerlights.png"
+  }
+}

@@ -1,7 +1,8 @@
 {
   "name" : "targethighlight",
   "effectConfig" : {
-  	"damageAdditionPercentage" : 0.1	//How much additional damage the target should take when taking damage. If set to 1.0, incoming damage is effectively doubled
+  	"damageAdditionPercentage" : 0.1,	//How much additional damage the target should take when taking damage. If set to 1.0, incoming damage is effectively doubled
+	"directive" : "fade=FF0000=0.15"
   },
   "defaultDuration" : 5,
 

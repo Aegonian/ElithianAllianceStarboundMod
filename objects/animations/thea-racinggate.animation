@@ -1,0 +1,58 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "switchState" : {
+        "default" : "off",
+        "states" : {
+          "on" : {},
+          "off" : {}
+        }
+      }
+    },
+
+    "parts" : {
+      "body" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : false,
+          "fullbright" : false,
+		  "image" : "<partImage>"
+		}
+      },
+      "lights" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : false,
+          "fullbright" : true,
+		  "image" : "<partImage>"
+        }
+      },
+      "switchLights" : {
+        "properties" : {
+          "zLevel" : 2,
+          "centered" : false,
+          "fullbright" : true
+        },
+        "partStates" : {
+          "switchState" : {
+            "on" : {
+              "properties" : {
+                "image" : "<partImage>"
+              }
+            },
+            "off" : {
+              "properties" : {
+                "image" : ""
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "sounds" : {
+    "on" : [],
+    "off" : []
+  }
+}

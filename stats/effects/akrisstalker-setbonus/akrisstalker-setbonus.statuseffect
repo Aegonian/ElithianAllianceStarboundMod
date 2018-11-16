@@ -1,0 +1,16 @@
+{
+  "name" : "akrisstalker-setbonus",
+  "effectConfig" : {
+	"speedModifier" : 1.25,
+	"jumpModifier" : 1.35,
+	"airJumpModifier" : 1.35
+  },
+  "defaultDuration" : 0.5,
+
+  "scripts" : [
+    "akrisstalker-setbonus.lua"
+  ],
+
+  "label" : "SET BONUS: Speed increase while invisible",
+  "icon" : "/interface/statuses/akrisstalker-setbonus.png"
+}

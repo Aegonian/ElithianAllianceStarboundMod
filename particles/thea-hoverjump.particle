@@ -1,0 +1,18 @@
+{
+  "kind" : "thea-hoverjump",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/thea-hoverjump/thea-hoverjump.animation",
+    "position" : [0, 0],
+    "finalVelocity" : [0, 0],
+    "approach" : [0, 50],
+    "size" : 1.0,
+    "timeToLive" : 0.85,
+    "layer" : "back",
+    "light" : [70, 100, 140],
+    "fade" : 0.5,
+    "variance" : {
+      "initialVelocity" : [0.0, 0.0]
+    }
+  }
+}

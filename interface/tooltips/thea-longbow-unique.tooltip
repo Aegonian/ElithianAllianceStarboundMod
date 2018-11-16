@@ -1,0 +1,135 @@
+{
+  "background" : {
+    "type" : "background",
+    "fileHeader" : "/interface/tooltips/theauniqueheader.png",
+    "fileBody" : "/interface/tooltips/theauniquebody3.png",
+    "fileFooter" : "/interface/tooltips/theauniquefooter3.png"
+  },
+  //===================== LEVEL LABELS =====================
+  "levelTitleLabel" : {
+    "type" : "label",
+    "position" : [120, 164],
+    "hAnchor" : "right",
+    "value" : "^gray;lvl^reset;"
+  },
+  "levelLabel" : {
+    "type" : "label",
+    "position" : [130, 164],
+    "hAnchor" : "right"
+  },
+  //=================== END LEVEL LABELS ===================
+  "moneyIcon" : {
+    "type" : "image",
+    "position" : [98, 23],
+    "file" : "/interface/money.png"
+  },
+  "priceLabel" : {
+    "type" : "label",
+    "position" : [111, 23],
+    "hAnchor" : "left",
+    "value" : "tree"
+  },
+  "perfectMaxDamageTitleLabel" : {
+    "type" : "label",
+    "position" : [9, 98],
+    "hAnchor" : "left",
+    "value" : "Max Damage:"
+  },
+  "perfectMaxDamageLabel" : {
+    "type" : "label",
+    "position" : [130, 98],
+    "hAnchor" : "right",
+    "centered" : true,
+    "wrapWidth" : 126
+  },
+  "drawTimeTitleLabel" : {
+    "type" : "label",
+    "position" : [9, 89],
+    "hAnchor" : "left",
+    "value" : "Draw Time:"
+  },
+  "drawTimeLabel" : {
+    "type" : "label",
+    "position" : [130, 89],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "energyPerShotTitleLabel" : {
+    "type" : "label",
+    "position" : [9, 80],
+    "hAnchor" : "left",
+    "value" : "Energy Per Shot:"
+  },
+  "energyPerShotLabel" : {
+    "type" : "label",
+    "position" : [130, 80],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "energyPerSecondTitleLabel" : {
+    "type" : "label",
+    "position" : [9, 71],
+    "hAnchor" : "left",
+    "value" : "Energy To Hold:"
+  },
+  "energyPerSecondLabel" : {
+    "type" : "label",
+    "position" : [130, 71],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "altAbilityTitleLabel" : {
+    "type" : "label",
+    "position" : [9, 62],
+    "hAnchor" : "left",
+    "value" : ""
+  },
+  "altAbilityLabel" : {
+    "type" : "label",
+    "position" : [130, 62],
+    "hAnchor" : "right",
+    "centered" : true,
+    "wrapWidth" : 126
+  },
+  "descriptionLabel" : {
+    "type" : "label",
+    "position" : [9, 60],
+    "hAnchor" : "left",
+    "vAnchor" : "top",
+    "wrapWidth" : 124,
+    "lineSpacing" : 1.0,
+    "value" : "Harvests meat and other goods from monsters."
+  },
+  "handednessLabel" : {
+    "type" : "label",
+    "position" : [90, 164],
+    "hAnchor" : "right",
+    "centered" : true,
+    "wrapWidth" : 126
+  },
+  //THIS REPLACES THE RARITY LABEL, CREATING A FAKE CUSTOM RARITY
+  "customRarityLabel" : {
+    "type" : "label",
+    "position" : [7, 23],
+    "hAnchor" : "left",
+    "centered" : true,
+    "wrapWidth" : 126,
+    "value" : "Unique"
+  },
+  "damageKindImage" : {
+    "type" : "image",
+    "position" : [120, 120],
+    "file" : "",
+    "centered" : true,
+    "maxSize" : [16, 16],
+    "minSize" : [16, 16]
+  },
+  "objectImage" : {
+    "type" : "image",
+    "position" : [70, 135],
+    "file" : "",
+    "centered" : true,
+    "maxSize" : [40, 40],
+    "minSize" : [40, 40]
+  }
+}

@@ -1,6 +1,8 @@
 {
   "name" : "targethighlight-noweakness",
-  "effectConfig" : {},
+  "effectConfig" : {
+	"directive" : "fade=FF0000=0.15"
+  },
   "defaultDuration" : 3,
 
   "scripts" : [

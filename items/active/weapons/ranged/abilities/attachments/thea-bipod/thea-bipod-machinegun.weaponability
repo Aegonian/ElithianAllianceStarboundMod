@@ -1,0 +1,31 @@
+{
+  "animationCustom" : {
+    "animatedParts" : {
+	  "parts" : {
+		"silencer" : {
+		  "properties" : {
+			"zLevel" : -1,
+			"image" : "/items/active/weapons/ranged/abilities/attachments/thea-bipod/thea-bipod-machinegun.png",
+			"centered" : true,
+			"offset" : [-1.0, -1.0],
+			"transformationGroups" : ["muzzle"]
+		  }
+		}
+	  }
+	}
+  },
+
+  "ability" : {
+    "name" : "Bipod",
+    "type" : "thea-bipod-machinegun",
+    "scripts" : ["/items/active/weapons/ranged/abilities/attachments/thea-statoverride.lua"],
+    "class" : "TheaStatOverride",
+
+	"adaptedAbilityIndex" : 1, //Which ability to adapt (1 = primary, 2 = secondary)
+	
+	"specialAbility" : {
+	  "crouchIncreaseVector" : 6,
+	  "movementAccuracyLimit" : 0.65
+	}
+  }
+}

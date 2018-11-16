@@ -14,6 +14,11 @@ function init()
   self.deactivated = false
   --self.queryDamageSince = 0
   
+  --Optionally set status immunities to prevent multiple stealth effects from being active at the same time
+  if config.getParameter("statusImmunities") then
+	effect.addStatModifierGroup(config.getParameter("statusImmunities"))
+  end
+  
   script.setUpdateDelta(1)
 end
 
@@ -33,7 +38,7 @@ function update(dt)
   end
   for _, notification in ipairs(damageNotificationsOutgoing) do
 	if notification.targetEntityId then
-	  if notification.sourceEntityId ~= notification.targetEntityId and self.activated and not self.deactivated then
+	  if notification.sourceEntityId ~= notification.targetEntityId and notification.healthLost > 1 and self.activated and not self.deactivated then
 		deactivate()
 	  end
 	end
@@ -42,11 +47,16 @@ function update(dt)
   --Activate the invisibility effect if we haven't activated yet
   if not self.activated then
 	activate()
+  --If activated and not yet deactivated, keep refreshing the invisibility property in case it gets accidentally removed 
+  elseif not self.deactivated then
+	world.setProperty("entityinvisible" .. tostring(entity.id()), true)
   end
   
   --Force the deactivation sequence to play before the effect expires
   if effect.duration() < 0.25 and not self.deactivated then
 	deactivate()
+  elseif effect.duration() > 0.25 and self.deactivated then
+	effect.expire()
   end
   
   --world.debugText("Invisible Status = " .. sb.printJson(world.getProperty("entityinvisible" .. tostring(entity.id())), 1), vec2.add(mcontroller.position(), {0,1}), "blue")

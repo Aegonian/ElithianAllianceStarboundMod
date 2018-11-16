@@ -599,40 +599,56 @@
 		"value" : [
 			[ 0, [
 			//ATTACHMENTS TIER 0 - COMMON - COST: 375
-			  //Assault
+			 //Assault
 			  { "item": { "name": "thea-redlaserattachment" } },
 			  { "item": { "name": "thea-greenlaserattachment" } },
 			  { "item": { "name": "thea-flashlightattachment" } },
-			  //Shotgun
+			 //Shotgun
 			  { "item": { "name": "thea-ricochetammomod-shotgun" } },
 			  //Sniper
 			  { "item": { "name": "thea-bayonetattachment" } },
 			//ATTACHMENTS TIER 1 - UNCOMMON - COST: 500
-			  //Assault
+			 //Assault
 			  { "item": { "name": "thea-silencerattachment-assault" }, "prerequisiteQuest" : "allianceattachmentsunlock" },
 			  { "item": { "name": "thea-flareattachment" }, "prerequisiteQuest" : "allianceattachmentsunlock" },
-			  //Shotgun
+			 //Shotgun
 			  { "item": { "name": "thea-slugammomod-shotgun" }, "prerequisiteQuest" : "allianceattachmentsunlock" },
-			  //Sniper
+			 //Sniper
 			  { "item": { "name": "thea-impactammomod-sniper" }, "prerequisiteQuest" : "allianceattachmentsunlock" },
 			//ATTACHMENTS TIER 2 - RARE - COST: 750
-			  //Assault
+			 //Assault
 			  { "item": { "name": "thea-stickyattachment" }, "prerequisiteQuest" : "allianceattachmentsunlock2" },
 			  { "item": { "name": "thea-grenadeattachment" }, "prerequisiteQuest" : "allianceattachmentsunlock2" },
-			  //Shotgun
+			 //Shotgun
 			  { "item": { "name": "thea-grenadeammomod-shotgun" }, "prerequisiteQuest" : "allianceattachmentsunlock2" },
 			  { "item": { "name": "thea-blazeammomod-shotgun" }, "prerequisiteQuest" : "allianceattachmentsunlock2" },
-			  //Sniper
+			 //Sniper
 			  { "item": { "name": "thea-explosiveammomod-sniper" }, "prerequisiteQuest" : "allianceattachmentsunlock2" },
-			  //Grenade
+			 //Grenade
 			  { "item": { "name": "thea-clusterammomod-grenade" }, "prerequisiteQuest" : "allianceattachmentsunlock2" },
 			  { "item": { "name": "thea-stunammomod-grenade" }, "prerequisiteQuest" : "allianceattachmentsunlock2" },
 			//ATTACHMENTS TIER 3 - LEGENDARY - COST: 1000
-			  //Rocket
+			 //Rocket
 			  { "item": { "name": "thea-napalmrocketmod-rpg" }, "prerequisiteQuest" : "allianceattachmentsunlock3" },
 			  { "item": { "name": "thea-smartmissilemod-rpg" }, "prerequisiteQuest" : "allianceattachmentsunlock3" },
-			  //Minigun
-			  { "item": { "name": "thea-blastammomod-minigun" }, "prerequisiteQuest" : "allianceattachmentsunlock3" }
+			 //Minigun
+			  { "item": { "name": "thea-blastammomod-minigun" }, "prerequisiteQuest" : "allianceattachmentsunlock3" },
+			  
+			//NEW ATTACHMENTS v2.3.5
+			 //Assault
+			  { "item": { "name": "thea-electricammomod-assault" }, "prerequisiteQuest" : "allianceattachmentsunlock4" },
+			  { "item": { "name": "thea-fireammomod-assault" }, "prerequisiteQuest" : "allianceattachmentsunlock4" },
+			  { "item": { "name": "thea-iceammomod-assault" }, "prerequisiteQuest" : "allianceattachmentsunlock4" },
+			  { "item": { "name": "thea-poisonammomod-assault" }, "prerequisiteQuest" : "allianceattachmentsunlock4" },
+			 //Machinegun
+			  { "item": { "name": "thea-bipodattachment-machinegun" }, "prerequisiteQuest" : "allianceattachmentsunlock4" },
+			  { "item": { "name": "thea-blastammomod-machinegun" }, "prerequisiteQuest" : "allianceattachmentsunlock4" },
+			 //Bow
+			  { "item": { "name": "thea-electricarrowmod-bow" }, "prerequisiteQuest" : "allianceattachmentsunlock4" },
+			  { "item": { "name": "thea-firearrowmod-bow" }, "prerequisiteQuest" : "allianceattachmentsunlock4" },
+			  { "item": { "name": "thea-icearrowmod-bow" }, "prerequisiteQuest" : "allianceattachmentsunlock4" },
+			  { "item": { "name": "thea-poisonarrowmod-bow" }, "prerequisiteQuest" : "allianceattachmentsunlock4" },
+			  { "item": { "name": "thea-stabilizerattachment-bow" }, "prerequisiteQuest" : "allianceattachmentsunlock4" }
 			] ]
 		]
 	},

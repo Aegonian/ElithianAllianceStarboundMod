@@ -5,47 +5,38 @@
 
   "animatedParts" : {
     "stateTypes" : {
-
       "movement" : {
         "default" : "idle",
         "states" : {
-
           "warpInPart1" : {
             "frames" : 4,  
             "cycle" : 0.33,
             "mode" : "transition",
             "transition" : "warpInPart2"
-            },
-
+		  },
           "warpInPart2" : {
             "frames" : 4,  
             "cycle" : 0.33,
             "mode" : "transition",
             "transition" : "idle"
-            },
-
+		  },
           "idle" : {},
-
           "warpOutPart1" : {
             "frames" : 4,  
             "cycle" : 0.33,
             "mode" : "transition",
             "transition" : "warpOutPart2"
-            },
-
+		  },
           "warpOutPart2" : {
             "frames" : 4,  
             "cycle" : 0.33,
             "mode" : "transition",
             "transition" : "invisible"
-            },
-
+		  },
           "invisible" : {}
-
         }
       },
-
-      "onfire" : {
+      "onFire" : {
         "default" : "off",
         "states" : {
           "off" : {},
@@ -56,7 +47,6 @@
           }
         }
       },
-
       "rearThruster" : {
         "default" : "off",
         "states" : {
@@ -68,19 +58,6 @@
           }
         }
       },
-	  
-	  "smallThruster" : {
-        "default" : "off",
-        "states" : {
-          "off" : {},
-          "on" : {
-            "frames" : 1,
-            "cycle" : 0.125,
-            "mode" : "loop"
-          }
-        }
-      },
-
       "bottomThruster" : {
         "default" : "off",
         "states" : {
@@ -92,7 +69,6 @@
           }
         }
       },
-
        "headlights" : {
         "default" : "off",
         "states" : {
@@ -100,55 +76,10 @@
           "on" : {}
         }
       }
-
     },
 
     "parts" : {
-
-      "background" : {
-        "properties" : {
-          "centered" : true,
-          "zLevel" : -1,
-          "transformationGroups" : ["flip", "rotation"]
-        },
-
-        "partStates" : {
-          "movement" : {
-
-            "warpInPart1" : {
-              "properties" : {}
-            },
-
-            "warpInPart2" : {
-              "properties" : {
-                "image" : "avikanlightkeffbackground.png:move.<damageState>"
-              }
-            },
-
-            "idle" : {
-              "properties" : {
-                "image" : "avikanlightkeffbackground.png:move.<damageState>"
-              }
-            },
-
-            "warpOutPart1" : {
-              "properties" : {
-                "image" : "avikanlightkeffbackground.png:move.<damageState>"
-              }
-            },
-
-            "warpOutPart2" : {
-              "properties" : {}
-            },
-
-            "invisible" : {
-              "properties" : {}
-            }
-
-          }
-        }
-      },
-
+	//FOREGROUND -- Rendered in front of the player, and holds the player anchors
       "foreground" : {
         "properties" : {
           "centered" : true,
@@ -156,11 +87,8 @@
           "transformationGroups" : ["flip", "rotation"],
           "drivingSeatPosition" : [0, 1.1]
         },
-
         "partStates" : {
-
           "movement" : {
-
             "warpInPart1" : {
               "properties" : {
                 "image" : ""
@@ -176,91 +104,72 @@
                 "image" : "avikanlightkeffforeground.png:move.<damageState>"
               }
             },
-
             "warpOutPart1" : {
               "properties" : {
                 "image" : "avikanlightkeffforeground.png:move.<damageState>"
               }
             },
-
             "warpOutPart2" : {
               "properties" : {}
             },
-
             "invisible" : {
               "properties" : {}
             }
           }
         }
       },
-
-      "warp" : {
+	  
+	//BACKGROUND -- Rendered behind the player
+      "background" : {
         "properties" : {
           "centered" : true,
-          "zLevel" : 3,
-          "fullbright" : true,
+          "zLevel" : -1,
           "transformationGroups" : ["flip", "rotation"]
         },
-
         "partStates" : {
-
           "movement" : {
-
             "warpInPart1" : {
-              "properties" : {
-                "image" : "avikanlightkeffwarp.png:warpInPart1.<frame>"
-              }
+              "properties" : {}
             },
             "warpInPart2" : {
               "properties" : {
-                "image" : "avikanlightkeffwarp.png:warpInPart2.<frame>"
+                "image" : "avikanlightkeffbackground.png:move.<damageState>"
               }
             },
-
-
             "idle" : {
-              "properties" : {}
+              "properties" : {
+                "image" : "avikanlightkeffbackground.png:move.<damageState>"
+              }
             },
-
-
             "warpOutPart1" : {
               "properties" : {
-                "image" : "avikanlightkeffwarp.png:warpOutPart1.<frame>"
+                "image" : "avikanlightkeffbackground.png:move.<damageState>"
               }
             },
             "warpOutPart2" : {
-              "properties" : {
-                "image" : "avikanlightkeffwarp.png:warpOutPart2.<frame>"
-              }
+              "properties" : {}
             },
-
-
             "invisible" : {
               "properties" : {}
             }
-
           }
         }
       },
 
-
-       "lights" : {
+	//LIGHTS -- Rendered in front of the rest of the vehicle
+	  "lights" : {
         "properties" : {
           "centered" : true,
           "zLevel" : 2,
           "fullbright" : true,
           "transformationGroups" : ["flip", "rotation"]
         },
-
         "partStates" : {
-
           "headlights" : {
-
             "off" : {
               "properties" : {
               }
             },
-
             "on" : {
               "properties" : {
                 "image" : "avikanlightkeffheadlights.png:headlights.<damageState>",
@@ -271,16 +180,16 @@
         }
       },
 
+	//FIRE -- Rendered in front of the rest of the vehicle
       "fire" : {
         "properties" : {
           "centered" : true,
-          "zLevel" : 2,
+          "zLevel" : 3,
           "fullbright" : true,
           "transformationGroups" : ["flip", "rotation"]
         },
-
         "partStates" : {
-          "onfire" : {
+          "onFire" : {
             "on" : {
               "properties" : {
                 "image" : "avikanlightkefffire.png:burn.<frame>"
@@ -290,7 +199,47 @@
         }
       },
 
+	//WARP OVERLAY, RENDERED ABOVE EVERYTHING
+      "warp" : {
+        "properties" : {
+          "centered" : true,
+          "zLevel" : 4,
+          "fullbright" : true,
+          "transformationGroups" : ["flip", "rotation"]
+        },
+        "partStates" : {
+          "movement" : {
+            "warpInPart1" : {
+              "properties" : {
+                "image" : "avikanlightkeffwarp.png:warpInPart1.<frame>"
+              }
+            },
+            "warpInPart2" : {
+              "properties" : {
+                "image" : "avikanlightkeffwarp.png:warpInPart2.<frame>"
+              }
+            },
+            "idle" : {
+              "properties" : {}
+            },
+            "warpOutPart1" : {
+              "properties" : {
+                "image" : "avikanlightkeffwarp.png:warpOutPart1.<frame>"
+              }
+            },
+            "warpOutPart2" : {
+              "properties" : {
+                "image" : "avikanlightkeffwarp.png:warpOutPart2.<frame>"
+              }
+            },
+            "invisible" : {
+              "properties" : {}
+            }
+          }
+        }
+      },
 
+	//THRUSTERS -- Rendered in front of the rest of the vehicle
       "rearThrust" : {
         "properties" : {
           "centered" : true,
@@ -299,21 +248,18 @@
           "light" : [87, 148, 150],
           "transformationGroups" : ["flip", "rotation"]
         },
-
         "partStates" : {
           "rearThruster" : {
             "on" : {
               "properties" : {
                 "image" : "/animations/keffthruster/keffrearthruster.png:thrust.<rearThrusterFrame>",
-
                 "offset" : [-3.25, 0.5]
               }
             }
           }
         }
       },
-	  
-	  "smallThrust" : {
+      "smallThrust" : {
         "properties" : {
           "centered" : true,
           "zLevel" : -1,
@@ -321,20 +267,17 @@
           "light" : [87, 148, 150],
           "transformationGroups" : ["flip", "rotation"]
         },
-
         "partStates" : {
           "rearThruster" : {
             "on" : {
               "properties" : {
-                "image" : "/animations/keffthruster/keffsmallthruster.png:thrust.<smallThrusterFrame>",
-
+                "image" : "/animations/keffthruster/keffsmallthruster.png:thrust.<rearThrusterFrame>",
                 "offset" : [-2.6, -0.3]
               }
             }
           }
         }
       },
-
       "bottomThrust" : {
         "properties" : {
           "centered" : true,
@@ -343,7 +286,6 @@
           "light" : [87, 148, 150],
           "transformationGroups" : ["flip", "rotation"]
         },
-
         "partStates" : {
           "bottomThruster" : {
             "on" : {
@@ -355,8 +297,6 @@
           }
         }
       }
-
-
     }
   },
 
@@ -368,77 +308,104 @@
   },
 
   "particleEmitters" : {
-
+	//THRUSTERS
     "rearThrusterIdle" : {
       "transformationGroups" : ["flip", "rotation"],
       "emissionRate" : 5.0,
-      "offsetRegion" : [ -2.75, 0.25, -2.75, 0.75],
-      "particles" : [{ "particle" : "thea-hoverbikethrust"}]
+      "offsetRegion" : [-2.75, -0.5, -2.75, 0.75],
+      "particles" : [
+		{ "particle" : "thea-hoverbikethrust"}
+	  ]
     },
     "rearThrusterDrive" : {
       "transformationGroups" : ["flip", "rotation"],
       "emissionRate" : 15.0,
-      "offsetRegion" : [ -3.25, 0.0, -3.25, 1.0],
-      "particles" : [{ "particle" : "thea-hoverbikethrust"}]
+      "offsetRegion" : [-3.25, -0.7, -3.25, 1.0],
+      "particles" : [
+		{ "particle" : "thea-hoverbikethrust" }
+	  ]
     },
-	
-	"smallThrusterIdle" : {
-      "transformationGroups" : ["flip", "rotation"],
-      "emissionRate" : 5.0,
-      "offsetRegion" : [ -2.1, -0.5, -2.1, -0.1],
-      "particles" : [{ "particle" : "thea-hoverbikethrust"}]
-    },
-    "smallThrusterDrive" : {
-      "transformationGroups" : ["flip", "rotation"],
-      "emissionRate" : 15.0,
-      "offsetRegion" : [ -2.6, -0.7, -2.6, 0.1],
-      "particles" : [{ "particle" : "thea-hoverbikethrust"}]
-    },
-
     "ventralThrusterIdle" : {
       "transformationGroups" : ["flip", "rotation"],
       "emissionRate" : 5.0,
       "offsetRegion" : [1.5, -0.75, 2.5, -0.75],
-      "particles" : [{ "particle" : "thea-hoverbikedownthrust"}]
+      "particles" : [
+		{ "particle" : "thea-hoverbikedownthrust" }
+	  ]
     },
     "ventralThrusterJump" : {
       "transformationGroups" : ["flip", "rotation"],
-      "emissionRate" : 15.0,
+      "emissionRate" : 10.0,
       "burstCount"  : 2,
       "offsetRegion" : [1.5, -0.75, 2.5, -0.75],
-      "particles" : [{ "particle" : "thea-hoverbikedownthrust"}]
+      "particles" : [
+		{ "particle" : "thea-hoverbikedownthrustnarrow" }
+	  ]
     },
-
-
-    "smoke" : {
-      "transformationGroups" : ["flip", "rotation"],
-      "emissionRate" : 0.0,
-      "offsetRegion" : [0.6, 0.3, 1.0, 0.75],
-      "particles" : [{ "particle" : "burningvehiclesmokefront"}]
-    },
-    
-    "fire" : {
-      "transformationGroups" : ["flip", "rotation"],
-      "emissionRate" : 0.0,
-      "offsetRegion" : [2, 0, 3, 0.75],
-      "particles" : [ { "particle" : "burningdust"},
-                      { "particle" : "campfireflames"},
-                      { "particle" : "fireshard"},
-                      { "particle" : "burningvehiclesmokeback"}]
-
-    },
-
+	
+	//DAMAGE
+	"damageShards" : {
+	  "transformationGroups" : ["flip", "rotation"],
+	  "emissionRate" : 0.0,
+	  "burstCount"  : 25,
+	  "offsetRegion" : [-2, -1.5, 3, 1],
+	  "particles" : [
+		{ "particle" : "avikankeffshard" },
+		{ "particle" : "thea-burningfullbright" }
+	  ]
+	},
+	"wreckage" : {
+	  "transformationGroups" : ["flip", "rotation"],
+	  "active" : false,
+	  "emissionRate" : 0.0,
+	  "particles" : [
+		{ "particle" : "avikankeffwreck1" },
+		{ "particle" : "avikankeffwreck2" },
+		{ "particle" : "avikankeffwreck3" },
+		{ "particle" : "avikankeffwreck4" }
+	  ]
+	},
     "damageIntermittent" : {
       "transformationGroups" : ["flip", "rotation"],
       "emissionRate" : 0.0,
       "burstCount"  : 4,
       "offsetRegion" : [2, 0, 3, 0.75],
-      "particles" : [{ "particle" : "burningvehiclesmokefront"},
-                     { "particle" : "fireshard"}]
+      "particles" : [
+		{ "particle" : "burningvehiclesmokefront" },
+		{ "particle" : "thea-burningfullbright" }
+	  ]
+    },
+    "smoke" : {
+      "transformationGroups" : ["flip", "rotation"],
+      "emissionRate" : 0.0,
+      "offsetRegion" : [0.6, 0.3, 1.0, 0.75],
+      "particles" : [
+		{ "particle" : "burningvehiclesmokefront" }
+	  ]
+    },
+    "fire" : {
+      "transformationGroups" : ["flip", "rotation"],
+      "emissionRate" : 0.0,
+      "offsetRegion" : [2, 0, 3, 0.75],
+      "particles" : [
+		{ "particle" : "campfireflames" },
+		{ "particle" : "thea-burningfullbright" },
+		{ "particle" : "burningvehiclesmokeback" }
+	  ]
+    },
+    "onFire" : {
+      "transformationGroups" : ["flip", "rotation"],
+	  "active" : false,
+      "emissionRate" : 6.0,
+      "offsetRegion" : [4.0, 0, 4.0, 0.5],
+      "particles" : [
+		{ "particle" : "thea-burningfullbright" },
+		{ "particle" : "campfireflames" }
+	  ]
     }
   },
-
- "lights" : {
+  
+  "lights" : {
 	"dashboardGlow" : {
       "active" : false,
       "transformationGroups" : ["flip", "rotation"],
@@ -458,40 +425,47 @@
   },
 
   "sounds" : {
-    "collisionNotification" : [ "/sfx/tech/hoverbike_bump1.ogg",
-                                "/sfx/tech/hoverbike_bump2.ogg",
-                                "/sfx/tech/hoverbike_bump3.ogg"  ],
-
-    "collisionDamage" : ["/sfx/tech/hoverbike_crash1.ogg"],
-
-
-   "changeDamageState" : [  "/sfx/gun/grenadeblast_small_fire1.ogg",
-                            "/sfx/gun/grenadeblast_small_fire2.ogg",
-                            "/sfx/gun/grenadeblast_small_fire3.ogg" ],
-
-   "explode" : [  "/sfx/gun/grenadeblast_small_fire1.ogg",
-                  "/sfx/gun/grenadeblast_small_fire2.ogg",
-                  "/sfx/gun/grenadeblast_small_fire3.ogg" ],
-
-
-    "engineStart" : ["/sfx/tech/keff_powerup_short.ogg"],
-
-    "engineLoop" : ["/sfx/tech/hoverbike_drive_loop.ogg"],
-
-    "engineStartDamaged" : ["/sfx/tech/keff_powerup_short.ogg"],
-
-    "engineLoopDamaged" : ["/sfx/tech/hoverbike_idle_loop.ogg"],
-
-    "damageIntermittent" : [ "/sfx/gun/grenadeblast_small_fire1.ogg",
-                             "/sfx/gun/grenadeblast_small_fire2.ogg",
-                             "/sfx/gun/grenadeblast_small_fire3.ogg" ],
-
-    "hornLoop" : ["/sfx/tech/honk.ogg"],
-    "headlightSwitchOn" : ["/sfx/objects/floodlights_on.ogg"],
-    "headlightSwitchOff" : ["/sfx/objects/floodlights_off.ogg"],
-
-    "returnvehicle" : ["/sfx/tools/teleport_up.ogg"]
-
-
+	//ENGINE SOUNDS
+	"engineStart" : [ "/sfx/tech/keff_powerup_short.ogg" ],
+	"engineStartDamaged" : [ "/sfx/tech/keff_powerup_short.ogg" ],
+	"engineLoop" : [ "/sfx/tech/hoverbike_drive_loop.ogg" ],
+	"engineLoopDamaged" : [ "/sfx/tech/hoverbike_idle_loop.ogg" ],
+	
+	//DAMAGE
+	"changeDamageState" : [
+	  "/sfx/gun/grenadeblast_small_fire1.ogg",
+	  "/sfx/gun/grenadeblast_small_fire2.ogg",
+	  "/sfx/gun/grenadeblast_small_fire3.ogg"
+	],
+	"explode" : [
+	  "/sfx/gun/grenadeblast_small_fire1.ogg",
+	  "/sfx/gun/grenadeblast_small_fire2.ogg",
+	  "/sfx/gun/grenadeblast_small_fire3.ogg"
+	],
+	"damageIntermittent" : [
+	  "/sfx/gun/grenadeblast_small_fire1.ogg",
+	  "/sfx/gun/grenadeblast_small_fire2.ogg",
+	  "/sfx/gun/grenadeblast_small_fire3.ogg"
+	],
+	
+	//COLLISION
+    "collisionNotification" : [
+	  "/sfx/tech/hoverbike_bump1.ogg",
+	  "/sfx/tech/hoverbike_bump2.ogg",
+	  "/sfx/tech/hoverbike_bump3.ogg"
+	],
+	"collisionDamage" : [ "/sfx/tech/hoverbike_crash1.ogg" ],
+	
+	//INPUT CONTROLS
+	"horn" : [ "/sfx/tech/honk.ogg" ],
+	"headlightSwitchOn" : [ "/sfx/objects/floodlights_on.ogg" ],
+	"headlightSwitchOff" : [ "/sfx/objects/floodlights_off.ogg" ],
+	
+	//VEHICLE DESPAWN
+	"returnvehicle" : [ "/sfx/tools/teleport_up.ogg" ],
+	
+	//GATE EFFECTS
+	"gateEffect_speedUp" : [ "/sfx/tech/thea_mech_powerup.ogg" ],
+	"gateEffect_slowDown" : [ "/sfx/tech/thea_mech_powerdown.ogg" ]
   }
 }

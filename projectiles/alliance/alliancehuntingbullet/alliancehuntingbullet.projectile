@@ -1,0 +1,19 @@
+{
+  "projectileName" : "alliancehuntingbullet",
+  "physics" : "laser",
+  "bounces" : 0,
+  "image" : "alliancehuntingbullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 220,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "fullbright" : false,
+  "damageKind" : "bow"
+}

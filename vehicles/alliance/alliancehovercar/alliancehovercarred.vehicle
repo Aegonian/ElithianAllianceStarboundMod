@@ -160,6 +160,8 @@
     "mass" : 4,
     "airFriction" : 4.0,
     "liquidFriction" : 25.0,
+    "groundFriction" : 60.0,
+    "slopeSlidingFactor" : 0,
     "ignorePlatformCollision" : true,
     "gravityEnabled" : true,
     "collisionEnabled" : true
@@ -169,6 +171,7 @@
     "mass" : 4,
     "airFriction" : 4.0,
     "liquidFriction" : 10.0,
+    "groundFriction" : 60.0,
     "ignorePlatformCollision" : true,
     "gravityEnabled" : false,
     "collisionEnabled" : true

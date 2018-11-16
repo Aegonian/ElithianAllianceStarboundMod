@@ -2,7 +2,10 @@
   "name" : "thea-burning",
   "blockingStat" : "fireStatusImmunity",
 
-  "effectConfig" : {},
+  "effectConfig" : {
+  	"tickDamagePercentage" : 0.025,		//Percentage of max health that ticks should damage for
+  	"maxTickDamage" : 20				//Absolute maximum damage per tick, regardless of max health
+  },
   "defaultDuration" : 5,
 
   "scripts" : [

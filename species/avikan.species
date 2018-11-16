@@ -17,6 +17,11 @@
   "defaultBlueprints" : {
     "tier1" : [
 
+//NEW in v2.3.5
+	  { "item" : "avikanracinggate" },
+	  { "item" : "avikanracinggatefast" },
+	  { "item" : "avikanracinggateslow" },
+
 //NEW in v2.3.4
 	  { "item" : "avikanborderlessfabric" },
 	  { "item" : "avikanborderlessglass" },

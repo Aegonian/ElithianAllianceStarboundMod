@@ -4,6 +4,11 @@
   //======================================================================================================================
   {
 	"op": "add",
+	"path": "/thea-arrowbarrage",
+	"value": "/items/active/weapons/ranged/abilities/bow/thea-arrowbarrage.weaponability"
+  },
+  {
+	"op": "add",
 	"path": "/jumpflare",
 	"value": "/items/active/weapons/ranged/abilities/jumpflare/jumpflare.weaponability"
   },
@@ -36,6 +41,11 @@
 	"op": "add",
 	"path": "/thea-loadspecialammo",
 	"value": "/items/active/weapons/ranged/abilities/thea-loadspecialammo/thea-loadspecialammo.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-nockspecialarrow",
+	"value": "/items/active/weapons/ranged/abilities/thea-nockspecialarrow/thea-nockspecialarrow.weaponability"
   },
   {
 	"op": "add",
@@ -201,6 +211,26 @@
 	"path": "/thea-silencer-assault",
 	"value": "/items/active/weapons/ranged/abilities/attachments/thea-silencer/thea-silencer-assault.weaponability"
   },
+  {
+	"op": "add",
+	"path": "/thea-loadfireassault",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-specialammo/thea-loadfireassault.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-loadelectricassault",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-specialammo/thea-loadelectricassault.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-loadiceassault",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-specialammo/thea-loadiceassault.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-loadpoisonassault",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-specialammo/thea-loadpoisonassault.weaponability"
+  },
   //Shotgun
   {
 	"op": "add",
@@ -235,6 +265,11 @@
   },
   {
 	"op": "add",
+	"path": "/thea-loadhuntingsniper",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-specialammo/thea-loadhuntingsniper.weaponability"
+  },
+  {
+	"op": "add",
 	"path": "/thea-bayonet",
 	"value": "/items/active/weapons/ranged/abilities/attachments/thea-bayonet/thea-bayonet.weaponability"
   },
@@ -265,10 +300,47 @@
 	"path": "/thea-loadnapalmrocket",
 	"value": "/items/active/weapons/ranged/abilities/attachments/thea-specialammo/thea-loadnapalmrocket.weaponability"
   },
-  //Rocket Launcher
+  //Minigun
   {
 	"op": "add",
 	"path": "/thea-loadexplosiveminigun",
 	"value": "/items/active/weapons/ranged/abilities/attachments/thea-specialammo/thea-loadexplosiveminigun.weaponability"
+  },
+  //Machinegun
+  {
+	"op": "add",
+	"path": "/thea-loadexplosivemachinegun",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-specialammo/thea-loadexplosivemachinegun.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-bipod-machinegun",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-bipod/thea-bipod-machinegun.weaponability"
+  },
+  //Bow
+  {
+	"op": "add",
+	"path": "/thea-nockelectricarrow",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-specialarrow/thea-nockelectricarrow.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-nockfirearrow",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-specialarrow/thea-nockfirearrow.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-nockicearrow",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-specialarrow/thea-nockicearrow.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-nockpoisonarrow",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-specialarrow/thea-nockpoisonarrow.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-stabilizer-bow",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-stabilizer/thea-stabilizer-bow.weaponability"
   }
 ]

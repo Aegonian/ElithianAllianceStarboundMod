@@ -40,32 +40,40 @@
   "scripts" : ["/items/active/weapons/ranged/thea-bow.lua"],
   
   "elementalType" : "avikanhunting",
-  
+
   "primaryAbility" : {
     "scripts" : ["/items/active/weapons/ranged/abilities/bow/thea-bowshot.lua"],
     "class" : "TheaBowShot",
 	
-	"fireOffset" : [1.75, 0],
+	"fireOffset" : [0.75, 0],
 
-    "energyPerShot" : 30,
-    "cooldownTime" : 0.4,
-    "inaccuracy" : 0.01,
+    "drawTime" : 1.1,				//Time to fully draw the bow
+	"powerProjectileTime" : 0.3,	//After fully drawing, the bow is super-charged for this long
+	"energyPerShot" : 30,			//Total energy consumption for a full draw
+	"holdEnergyUsage" : 5,			//Energy consumption per second while fully drawn
 	
-	"walkWhileFiring" : true,
-	"useQuiverDamageBonus" : true,
-
-    "drawFrameSelector" : "bowImageSelector",
-    "drawPowerMultiplier" : "drawTimeMultiplier",
-    "drawSpeedMultiplier" : "drawTimeMultiplier",
+    "cooldownTime" : 0.4,			//Time between firing and drawing the next arrow
+    "inaccuracy" : 0.0,				//Inaccuracy of the shot
+	
+	"walkWhileFiring" : true,		//If true, prevents the player from running while drawing the bow
+	"useQuiverDamageBonus" : true,	//If true, allows this bow to use quiver damage bonuses
+	
+	"drainEnergyWhilePowerful" : false,	//If true, consume energy while at max power
+	"staticDamageMultiplier" : null,	//If this value is set, arrow damage is independent of draw time and is instead multiplied by this value
+	"dynamicDamageMultiplier" : 1.0,	//All damage is multiplied by this value. Useful for modifying damage using alt ability special arrows
 
     "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
 
+	"projectileCount" : 1,	//Amount of arrows to shoot at once
     "projectileType" : "avikandeepdesertarrow",
-    "powerProjectileType" : "avikandeepdesertpowerarrow",
-    "powerProjectileTime" : [0.9, 1.1],
     "projectileParameters" : {
-      "speed" : 80,
-      "power" : 7.0
+      "speed" : 90,
+      "power" : 7.5
+    },
+    "powerProjectileType" : "avikandeepdesertpowerarrow",
+    "powerProjectileParameters" : {
+      "speed" : 110,
+      "power" : 9.5
     },
 
     "stances" : {
@@ -96,61 +104,9 @@
     }
   },
 
+  "altAbilityType" : "thea-arrowbarrage",
   "altAbility" : {
-    "name" : "Arrow Barrage",
-    "scripts" : ["/items/active/weapons/ranged/abilities/bow/thea-arrowbarrage.lua"],
-	"class" : "TheaArrowBarrage",
-
-    "fireOffset" : [1.75, 0],
-
-    "energyPerShot" : 60,
-    "cooldownTime" : 0.25,
-	
-	"walkWhileFiring" : true,
-	"useQuiverDamageBonus" : true,
-
-    "drawFrameSelector" : "bowImageSelectorNoPower",
-    "drawPowerMultiplier" : "normalizedDrawTimeMultiplier",
-    "drawSpeedMultiplier" : "normalizedDrawTimeMultiplier",
-
-    "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
-
-    "projectileType" : "avikandeepdesertarrow",
-    "projectileParameters" : {
-      "speed" : 45,
-      "power" : 5.5
-    },
-
-    "splitDelay" : 1.0,
-    "splitAngle" : 15,
-
-    "stances" : {
-      "windup" : {
-        "duration" : 0.75,
-        "armRotation" : -60,
-        "weaponRotation" : 0,
-        "allowRotate" : false,
-        "allowFlip" : true,
-        "twoHanded" : true
-      },
-      "draw" : {
-        "armRotation" : 0,
-        "weaponRotation" : 0,
-        "allowRotate" : false,
-        "allowFlip" : true,
-        "twoHanded" : true
-      },
-      "fire" : {
-        "duration" : 0.2,
-        "armRotation" : 0,
-        "weaponRotation" : 0,
-        "allowRotate" : false,
-        "allowFlip" : true,
-        "twoHanded" : true,
-
-        "frontArmFrame" : "idle.3"
-      }
-    }
+    "projectileType" : "avikandeepdesertarrow"
   },
 
   "builder" : "/items/buildscripts/thea-buildbow.lua"

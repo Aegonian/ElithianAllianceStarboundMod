@@ -1,0 +1,22 @@
+[
+  {
+    "op": "add",
+    "path": "/-",
+    "value": {
+      "name" : "theaRacingGateFast",
+	  "materialId" : 65400,
+	  "collisionKind" : "none",
+	  "blocksLiquidFlow" : false
+    }
+  },
+  {
+    "op": "add",
+    "path": "/-",
+    "value": {
+      "name" : "theaRacingGateSlow",
+	  "materialId" : 65401,
+	  "collisionKind" : "none",
+	  "blocksLiquidFlow" : false
+    }
+  }
+]

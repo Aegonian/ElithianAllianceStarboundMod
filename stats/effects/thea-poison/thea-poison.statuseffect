@@ -1,0 +1,20 @@
+{
+  "name" : "thea-poison",
+  "blockingStat" : "poisonStatusImmunity",
+
+  "effectConfig" : {
+  	"damageAdditionPercentage" : 0.05,	//How much additional damage the target should take when taking damage. If set to 1.0, incoming damage is effectively doubled
+  	"tickDamagePercentage" : 0.020,		//Percentage of max health that ticks should damage for
+  	"maxTickDamage" : 15				//Absolute maximum damage per tick, regardless of max health
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "thea-poison.lua"
+  ],
+
+  "animationConfig" : "thea-poison.animation",
+
+  "label" : "Poisoned",
+  "icon" : "/interface/statuses/poison.png"
+}

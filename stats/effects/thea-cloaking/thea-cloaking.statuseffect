@@ -1,8 +1,12 @@
 {
   "name" : "thea-cloaking",
+  "blockingStat" : "theaCloakingImmunity",
   "effectConfig" : {
     "directive" : "?multiply=ffffff15",		//Image processing directive to make the player transparent
-    "cloakedPowerModifier" : 1.5	//Damage multiplier while invisible
+    "cloakedPowerModifier" : 1.35,			//Damage multiplier while invisible
+    "statusImmunities" : [
+	  { "stat" : "theaShadowCloakImmunity", "amount" : 1 }
+	]
   },
   "defaultDuration" : 5,
 

@@ -1,0 +1,14 @@
+{
+  "name" : "rhadeihan-setbonus",
+  "effectConfig" : {
+	"powerModifier" : 1.20
+  },
+  "defaultDuration" : 0.5,
+
+  "scripts" : [
+    "rhadeihan-setbonus.lua"
+  ],
+
+  "label" : "SET BONUS: Damage increase at full health",
+  "icon" : "/interface/statuses/rhadeihan-setbonus.png"
+}

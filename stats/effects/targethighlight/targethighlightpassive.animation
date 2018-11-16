@@ -1,0 +1,63 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "target" : {
+        "default" : "start",
+        "states" : {
+          "start" : {
+            "frames" : 3,
+            "cycle" : 0.25,
+            "mode" : "transition",
+			"transition" : "idle"
+          },
+          "end" : {
+            "frames" : 3,
+            "cycle" : 0.25,
+            "mode" : "transition",
+			"transition" : "idle"
+          },
+		  "idle" : {
+            "frames" : 1
+          },
+		  "invisible" : {}
+        }
+      }
+    },
+    "parts" : {
+      "target" : {
+        "properties" : {
+          "zLevel" : 0
+        },
+        "partStates" : {
+          "target" : {
+            "start" : {
+              "properties" : {
+                "image" : "targethighlightpassive.png:start.<frame>",
+				"fullbright" : true
+              }
+            },
+            "end" : {
+              "properties" : {
+                "image" : "targethighlightpassive.png:end.<frame>",
+				"fullbright" : true
+              }
+            },
+			"idle" : {
+              "properties" : {
+                "image" : "targethighlightpassive.png:idle.<frame>",
+				"fullbright" : true
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [75, 0, 0]
+    }
+  }
+}

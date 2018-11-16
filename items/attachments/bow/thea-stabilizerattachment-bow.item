@@ -1,0 +1,20 @@
+{
+  "itemName" : "thea-stabilizerattachment-bow",
+  "price" : 500,
+  "maxStack" : 1,
+  "rarity" : "Uncommon",
+  "tooltipKind" : "thea-attachment",
+  "category" : "Weapon Attachment",
+  "inventoryIcon" : "thea-stabilizerattachment-bow.png",
+  "largeImage" : "thea-stabilizerattachment-bowlarge.png",
+  "builder" : "/items/buildscripts/thea-buildattachment.lua",
+  
+  "manufacturer" : "^gray;AAE^reset;",
+  "description" : "A bow stabilizer that increases accuracy and reduces draw time.",
+  "shortdescription" : "Stabilizer",
+  
+  "itemTags" : [ "thea_attachment" ],
+  
+  "theaAttachmentType" : "aae_bow1",
+  "theaAttachmentAbility" : "thea-stabilizer-bow"
+}

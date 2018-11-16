@@ -31,13 +31,19 @@ function TheaAccuracyGunFire:update(dt, fireMode, shiftHeld)
   
   --Code for calculating the current accuracy, based on time spent firing
   self.fireTimeFactor = self.timeSpentFiring / self.maxAccuracyTime
+  if mcontroller.walking() or mcontroller.running() or mcontroller.jumping() or mcontroller.falling() or mcontroller.flying() then
+	--world.debugText("MOVING!", mcontroller.position(), "red")
+	--While moving, limit the maximum accuracy of the weapon
+	self.fireTimeFactor = math.min(self.fireTimeFactor, self.movementAccuracyLimit)
+  end
   self.inaccuracy = self.startInaccuracy - (self.fireTimeFactor * (self.startInaccuracy - self.finalInaccuracy))
   
   --Code for calculating which cursor to use
   local cursorFrame = math.max(math.ceil(self.fireTimeFactor * #self.cursorFrames), 1)
   activeItem.setCursor(self.cursorFrames[cursorFrame])
   
-  world.debugText(cursorFrame, mcontroller.position(), "red")
+  --world.debugText(cursorFrame, mcontroller.position(), "red")
+  world.debugText(self.fireTimeFactor, mcontroller.position(), "red")
 
   if self.fireMode == (self.activatingFireMode or self.abilitySlot)
     and not self.weapon.currentAbility
@@ -62,7 +68,11 @@ function TheaAccuracyGunFire:update(dt, fireMode, shiftHeld)
 	self.timeSpentFiring = math.max(0, self.timeSpentFiring - self.dt)
   --If not idle, then start increasing accuracy
   else
-	self.timeSpentFiring = math.min(self.maxAccuracyTime, self.timeSpentFiring + self.dt)
+	if mcontroller.crouching() then
+	  self.timeSpentFiring = math.min(self.maxAccuracyTime, self.timeSpentFiring + (self.dt * self.crouchIncreaseVector))
+	else
+	  self.timeSpentFiring = math.min(self.maxAccuracyTime, self.timeSpentFiring + self.dt)
+	end
   end
 end
 

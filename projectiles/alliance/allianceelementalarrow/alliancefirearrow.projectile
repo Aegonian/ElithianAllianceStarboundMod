@@ -1,0 +1,32 @@
+{
+  "projectileName" : "alliancefirearrow",
+  "physics" : "avikanarrow",
+  "bounces" : 0,
+  "image" : "alliancefirearrow.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "emitters" : [],
+  "power" : 20,
+  "knockback" : 10,
+  "knockbackDirectional" : true,
+  "timeToLive" : 30,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "alliancefirearrowsticking",
+      "inheritDamageFactor" : 0.0,
+      "inheritSpeedFactor" : 0.6,
+      "angleAdjust" : 0
+    }
+  ],
+  "damageKind" : "fire",
+  "statusEffects" : [
+    "thea-burning"
+  ],
+  "hydrophobic" : false
+}

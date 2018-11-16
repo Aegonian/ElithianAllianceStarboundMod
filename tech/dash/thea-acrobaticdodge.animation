@@ -1,0 +1,51 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "dashing" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+          "on" : {}
+        }
+      }
+    }
+  },
+
+  "particleEmitters" : {
+    "dashParticlesLeft" : {
+      "emissionRate" : 40.0,
+      "particles" : [
+		{
+          "particle" : "sprint",
+          "flip" : true,
+          "offset" : [0, 0.0]
+        },
+        {
+          "particle" : "sprint",
+          "flip" : true,
+          "offset" : [0, -0.75]
+        }
+      ]
+    },
+    "dashParticlesRight" : {
+      "emissionRate" : 40.0,
+      "particles" : [
+		{
+          "particle" : "sprint",
+          "flip" : false,
+          "offset" : [0, 0.0]
+        },
+        {
+          "particle" : "sprint",
+          "flip" : false,
+          "offset" : [0, -0.75]
+        }
+      ]
+    }
+  },
+
+  "sounds" : {
+    "startDash" : [ "/sfx/tech/tech_dash.ogg" ],
+    "recharge" : [ "/sfx/tech/tech_dash_cooldown2.ogg" ]
+  }
+}

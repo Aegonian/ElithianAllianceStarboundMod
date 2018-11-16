@@ -1,0 +1,31 @@
+{
+  "animationCustom" : {
+    "animatedParts" : {
+	  "parts" : {
+		"silencer" : {
+		  "properties" : {
+			"zLevel" : -1,
+			"image" : "/items/active/weapons/ranged/abilities/attachments/thea-stabilizer/thea-stabilizer-bow.png:<drawFrame>",
+			"centered" : true,
+			"offset" : [1.625, -0.5],
+			"transformationGroups" : ["weapon"]
+		  }
+		}
+	  }
+	}
+  },
+
+  "ability" : {
+    "name" : "Stabilizer",
+    "type" : "thea-stabilizer-bow",
+    "scripts" : ["/items/active/weapons/ranged/abilities/attachments/thea-stabilizer/thea-stabilizer-bow.lua"],
+    "class" : "TheaBowStabilizer",
+
+	"adaptedAbilityIndex" : 1, //Which ability to adapt (1 = primary, 2 = secondary)
+	"drawTimeReduction" : 0.2,
+	
+	"specialAbility" : {
+	  "inaccuracy" : 0.005
+	}
+  }
+}

@@ -42,6 +42,7 @@
 
   "sounds" : {
     "draw" : [ ],
+    "ready" : [ ],
     "release" : [ ],
     "perfectRelease" : [ ]
   }

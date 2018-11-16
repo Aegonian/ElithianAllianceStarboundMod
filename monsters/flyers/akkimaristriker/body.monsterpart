@@ -1,0 +1,9 @@
+{
+  "name" : "akkimaristriker",
+  "category" : "akkimaristriker",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "akkimaristriker.png"
+  }
+}

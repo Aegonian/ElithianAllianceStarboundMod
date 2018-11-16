@@ -6,7 +6,7 @@
   "inventoryIcon" : "avikan-rhakorilongbowicon.png",
   "maxStack" : 1,
   "rarity" : "Essential",
-  "tooltipKind" : "thea-bow-unique",
+  "tooltipKind" : "thea-longbow-unique",
   "category" : "Longbow",
   "description" : "^orange;A longbow built by the clans of the Rhakori Highlands.",
   "shortdescription" : "^orange;Rhakori Longbow^white;",
@@ -23,8 +23,8 @@
   "animation" : "/items/active/weapons/ranged/animations/thea-alternativearrowbow-lights.animation",
   "animationParts" : {
     "bow" : "avikan-rhakorilongbow.png",
-	"arrows" : "avikan-rhakorilongbowarrows.png",
-	"lights" : "avikan-rhakorilongbowlights.png"
+	"lights" : "avikan-rhakorilongbowlights.png",
+	"specialArrow" : "avikan-rhakorilongbowarrows.png"
   },
   "animationCustom" : {
     "animatedParts" : {
@@ -39,7 +39,7 @@
 			"offset" : [0.25, 0]
 		  }
 		},
-		"arrows" : {
+		"specialArrow" : {
 		  "properties" : {
 			"offset" : [0.25, 0]
 		  }
@@ -47,7 +47,8 @@
 	  }
 	},
     "sounds" : {
-      "draw" : [ "/sfx/gun/thea_longbow_draw.ogg" ],
+      "draw" : [ "/sfx/gun/bow/thea_bow_draw1.ogg", "/sfx/gun/bow/thea_bow_draw2.ogg", "/sfx/gun/bow/thea_bow_draw3.ogg" ],
+      "ready" : [ "/sfx/gun/bow/thea_bow_ready.ogg" ],
       "release" : [ "/sfx/gun/bow_loose.ogg" ],
       "perfectRelease" : [ "/sfx/gun/bow_loose_perfect.ogg" ]
     }
@@ -58,31 +59,38 @@
   "elementalType" : "avikanhunting",
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/abilities/bow/thea-longbowshot.lua"],
-    "class" : "TheaLongBowShot",
+    "scripts" : ["/items/active/weapons/ranged/abilities/bow/thea-bowshot.lua"],
+    "class" : "TheaBowShot",
 	
 	"fireOffset" : [0.75, 0],
 
-    "energyPerShot" : 40,
-	"holdEnergyUsage" : 10,
-    "cooldownTime" : 0.4,
-    "inaccuracy" : 0.01,
+    "drawTime" : 1.6,				//Time to fully draw the bow
+	"powerProjectileTime" : 25.0,	//After fully drawing, the bow is super-charged for this long
+	"energyPerShot" : 50,			//Total energy consumption for a full draw
+	"holdEnergyUsage" : 10,			//Energy consumption per second while fully drawn
 	
-	"walkWhileFiring" : true,
-	"useQuiverDamageBonus" : true,
-
-    "drawFrameSelector" : "thea-bowImageSelector",
-    "drawPowerMultiplier" : "thea-drawTimeMultiplier",
-    "drawSpeedMultiplier" : "thea-drawTimeMultiplier",
+    "cooldownTime" : 0.4,			//Time between firing and drawing the next arrow
+    "inaccuracy" : 0.00,			//Inaccuracy of the shot
+	
+	"walkWhileFiring" : true,		//If true, prevents the player from running while drawing the bow
+	"useQuiverDamageBonus" : true,	//If true, allows this bow to use quiver damage bonuses
+	
+	"drainEnergyWhilePowerful" : true,	//If true, consume energy while at max power
+	"staticDamageMultiplier" : null,	//If this value is set, arrow damage is independent of draw time and is instead multiplied by this value
+	"dynamicDamageMultiplier" : 1.0,	//All damage is multiplied by this value. Useful for modifying damage using alt ability special arrows
 
     "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
 
+	"projectileCount" : 1,	//Amount of arrows to shoot at once
     "projectileType" : "avikanlongmetalarrow",
-    "powerProjectileType" : "avikanlongmetalpowerarrow",
-    "powerProjectileTime" : [1.2, 1.5],
     "projectileParameters" : {
-      "speed" : 95,
-      "power" : 9.0
+      "speed" : 40,
+      "power" : 5.5
+    },
+    "powerProjectileType" : "avikanlongmetalpowerarrow",
+    "powerProjectileParameters" : {
+      "speed" : 120,
+      "power" : 11.5
     },
 
     "stances" : {
@@ -113,63 +121,36 @@
     }
   },
 
+  "altAbilityType" : "thea-nockspecialarrow",
   "altAbility" : {
-	"name" : "Explosive Arrow",
-    "scripts" : ["/items/active/weapons/ranged/abilities/bow/thea-longbowspecialarrows.lua"],
-    "class" : "TheaLongbowSpecialArrows",
+	"name" : "Nock Explosive Arrow",
 	
-	"fireOffset" : [1.75, 0],
-
-    "energyPerShot" : 60,
-	"holdEnergyUsage" : 15,
-    "cooldownTime" : 1.25,
-    "inaccuracy" : 0.01,
+	//Which stats to adapt when nocking the special arrow
+	"adaptedStats" : {
+	  "projectileType" : true,
+	  "powerProjectileType" : true,
+	  "projectileCount" : false,
+	  "drawTime" : false,
+	  "energyPerShot" : true,
+	  "holdEnergyUsage" : true,
+	  "inaccuracy" : true,
+	  "staticDamageMultiplier" : false,
+	  "dynamicDamageMultiplier" : true
+	},
 	
-	"walkWhileFiring" : true,
-	"useQuiverDamageBonus" : true,
-
-    "drawFrameSelector" : "thea-bowImageSelector",
-    "drawPowerMultiplier" : "thea-bowFullPower",
-    "drawSpeedMultiplier" : "thea-drawTimeMultiplierSmooth",
-
-    "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
-
-    "projectileType" : "avikanlongexplosivearrow",
-    "powerProjectileType" : "avikanlongexplosivearrow",
-    "powerProjectileTime" : [1.2, 1.5],
-	"projectileCount" : 1,
-    "projectileParameters" : {
-      "speed" : 80,
-      "power" : 11.0,
-	  "piercing" : false
-    },
-
-    "stances" : {
-      "idle" : {
-        "armRotation" : -30,
-        "weaponRotation" : 0,
-        "allowRotate" : true,
-        "allowFlip" : true,
-        "twoHanded" : true
-      },
-      "draw" : {
-        "armRotation" : 0,
-        "weaponRotation" : 0,
-        "allowRotate" : true,
-        "allowFlip" : true,
-        "twoHanded" : true
-      },
-      "fire" : {
-        "duration" : 0.2,
-        "armRotation" : 0,
-        "weaponRotation" : 0,
-        "allowRotate" : false,
-        "allowFlip" : true,
-        "twoHanded" : true,
-
-        "frontArmFrame" : "idle.3"
-      }
-    }
+	//The new stats which will overwrite the primary ability
+	"specialAbility" : {
+	  "projectileType" : "avikanlongexplosivearrow",
+	  "powerProjectileType" : "avikanlongexplosivearrow",
+	  "projectileCount" : 1,
+	  
+	  "drawTime" : 1.0,
+	  "energyPerShot" : 70,
+	  "holdEnergyUsage" : 15,
+	  "inaccuracy" : 0.01,
+	  "staticDamageMultiplier" : 1.0,
+	  "dynamicDamageMultiplier" : 1.25
+	}
   },
 
   "builder" : "/items/buildscripts/thea-buildbow.lua"

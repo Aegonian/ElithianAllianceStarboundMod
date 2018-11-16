@@ -1,0 +1,33 @@
+{
+  "projectileName" : "alliancelectricpowerarrow",
+  "physics" : "avikanarrow",
+  "bounces" : 0,
+  "image" : "alliancelectricpowerarrow.png",
+  "animationCycle" : 0.3,
+  "frameNumber" : 3,
+  "lightColor" : [90, 100, 128],
+  "emitters" : [ "daggerblue", "thea-electrictrailfast" ],
+  "power" : 20,
+  "knockback" : 10,
+  "knockbackDirectional" : true,
+  "timeToLive" : 30,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "alliancelectricarrowsticking",
+      "inheritDamageFactor" : 0.0,
+      "inheritSpeedFactor" : 0.9,
+      "angleAdjust" : 0
+    }
+  ],
+  "damageKind" : "electric",
+  "statusEffects" : [
+    "electrified"
+  ],
+  "hydrophobic" : false
+}

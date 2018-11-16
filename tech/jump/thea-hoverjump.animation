@@ -1,0 +1,57 @@
+{
+  "particleEmitters" : {
+    "multiJumpParticles" : {
+      "burstCount" : 8,
+      "particles" : [
+        {
+          "particle" : "doublejump",
+          "offset" : [0.2, -3]
+        }
+      ]
+    },
+    "hoverBurst" : {
+      "burstCount" : 1,
+      "particles" : [
+        {
+          "particle" : "thea-hoverjump",
+          "offset" : [0.2, -3]
+        }
+      ]
+    },
+    "hoverLoop" : {
+      "active" : false,
+	  "emissionRate" : 4,
+      "particles" : [
+        {
+          "particle" : "thea-hoverjump",
+          "offset" : [0.2, -3]
+        },
+        {
+          "particle" : "jetboots",
+          "offset" : [-0.15, 0]
+        },
+        {
+          "particle" : "jetboots2",
+          "offset" : [-0.15, 0]
+        },
+        {
+          "particle" : "jetboots3",
+          "offset" : [-0.15, 0]
+        },
+        {
+          "particle" : "jetboots2",
+          "offset" : [0.15, 0]
+        },
+        {
+          "particle" : "jetboots3",
+          "offset" : [0.15, 0]
+        }
+      ]
+    }
+  },
+
+  "sounds" : {
+    "multiJumpSound" : [ "/sfx/tech/tech_doublejump.ogg" ],
+    "hoverSound" : [ "/sfx/tech/tech_hoverloop.ogg" ]
+  }
+}

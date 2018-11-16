@@ -1,7 +1,10 @@
 {
   "name" : "highlightenemies",
   "effectConfig" : {
-	"searchRadius" : 50
+	"searchRadius" : 100,
+	"stealthMarkerSuccessRate" : 35, //If the target is invisible, this is the % chance of successfully marking the target (0-100)
+	"agressiveMarkerProjectile" : "targethighlight",
+	"passiveMarkerProjectile" : "targethighlightpassive"
   },
   "defaultDuration" : 1.5,
 

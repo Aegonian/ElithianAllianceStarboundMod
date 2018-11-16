@@ -1,6 +1,8 @@
 {
   "type" : "eo-foodmerchant",
   "baseType" : "thea-loungingmerchant",
+  
+  "damageTeamType" : "ghostly",
 
   "scriptConfig" : {    
     "merchant" : {

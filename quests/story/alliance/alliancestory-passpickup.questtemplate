@@ -1,7 +1,7 @@
 {
   "id" : "alliancestory-passpickup",
   "mainQuest" : true,
-  "prerequisites" : [ "alliancestorystart", "shiprepair" ],
+  "prerequisites" : [ "alliancestorystart", "human_mission1" ],
   "title" : "Return to the Elithian Alliance",
   "text" : "I have received a transmission from ^orange;Admiral Lyiin ^reset;while you were out exploring. ^green;I can patch it through to you now, if you have time.^reset;",
   "completionText" : "Here you are, ambassador. Your very own ^orange;Ambassador's Pass^reset;: it'll allow you to ^green;visit the ^orange;Command Center ^green;at the very top of the Creon Embassy^reset;.",

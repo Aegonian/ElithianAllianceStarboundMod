@@ -33,10 +33,15 @@ function build(directory, config, parameters, level, seed)
 	config.tooltipFields = {}
     config.tooltipFields.levelLabel = util.round(configParameter("level", 1), 1)
 	config.tooltipFields.subtitle = parameters.category
+	config.tooltipFields.maxDamageLabel = util.round(config.primaryAbility.projectileParameters.power * config.primaryAbility.dynamicDamageMultiplier * config.damageLevelMultiplier, 1) or 0
+	config.tooltipFields.perfectMaxDamageLabel = util.round(config.primaryAbility.powerProjectileParameters.power * config.primaryAbility.dynamicDamageMultiplier * config.damageLevelMultiplier, 1) or 0
+	if config.altAbility then
+	  config.tooltipFields.drawTimeLabel = config.primaryAbility.drawTime - (config.altAbility.drawTimeReduction or 0) or 0
+	else
+	  config.tooltipFields.drawTimeLabel = config.primaryAbility.drawTime or 0
+	end
 	config.tooltipFields.energyPerShotLabel = config.primaryAbility.energyPerShot or 0
-	local bestDrawTime = (config.primaryAbility.powerProjectileTime[1] + config.primaryAbility.powerProjectileTime[2]) / 2
-	local bestDrawMultiplier = root.evalFunction(config.primaryAbility.drawPowerMultiplier, bestDrawTime)
-	config.tooltipFields.maxDamageLabel = util.round(config.primaryAbility.projectileParameters.power * config.damageLevelMultiplier * bestDrawMultiplier, 1)
+	config.tooltipFields.energyPerSecondLabel = config.primaryAbility.holdEnergyUsage or 0
 	if elementalType ~= "physical" then
 	  config.tooltipFields.damageKindImage = "/interface/elements/"..elementalType..".png"
 	end

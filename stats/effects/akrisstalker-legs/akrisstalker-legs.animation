@@ -1,0 +1,14 @@
+{
+  "particleEmitters" : {
+	"chargingCloakingField" : {
+      "enabled" : false,
+      "emissionRate" : 3.0,
+	  "emissionVariance" : 0.5,
+      "offsetRegion" : [-0.25, -1.0, 0.25, -3.0],
+      "particles" : [
+        { "particle" : "thea-electricstunarc" },
+        { "particle" : "thea-electricstunarc2" }
+	  ]
+    }
+  }
+}

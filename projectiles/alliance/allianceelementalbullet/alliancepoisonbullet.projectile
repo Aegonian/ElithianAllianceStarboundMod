@@ -1,0 +1,24 @@
+{
+  "projectileName" : "alliancepoisonbullet",
+  "physics" : "laser",
+  "bounces" : 0,
+  "image" : "alliancepoisonbullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 180,
+  "supportsProcessing" : true,
+  //"emitters" : [ "trinklasertrail" ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+    }
+  ],
+  "lightColor" : [35, 75, 20],
+  "fullbright" : true,
+  "damageKind" : "poisonplasmabullet",
+  "statusEffects" : [
+    "thea-poison"
+  ]
+}

@@ -21,11 +21,14 @@ function update(dt)
 	if self.cooldownTimer == 0 then
 	  mcontroller.setYVelocity(math.max(mcontroller.yVelocity(), self.maxFallSpeed))
 	  animator.setAnimationState("jets", "active")
+	  animator.setLightActive("boosterGlow", true)
 	else
 	  animator.setAnimationState("jets", "off")
+	  animator.setLightActive("boosterGlow", false)
 	end
   else
 	animator.setAnimationState("jets", "off")
+	animator.setLightActive("boosterGlow", false)
 	self.cooldownTimer = self.minFallTime
   end
 end

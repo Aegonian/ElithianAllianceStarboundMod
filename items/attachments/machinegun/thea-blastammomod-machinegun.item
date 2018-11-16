@@ -1,0 +1,20 @@
+{
+  "itemName" : "thea-blastammomod-machinegun",
+  "price" : 1000,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "tooltipKind" : "thea-attachment",
+  "category" : "Ammo Mod",
+  "inventoryIcon" : "thea-blastammomod-machinegun.png",
+  "largeImage" : "thea-blastammomod-machinegunlarge.png",
+  "builder" : "/items/buildscripts/thea-buildattachment.lua",
+  
+  "manufacturer" : "^gray;AAE^reset;",
+  "description" : "Machinegun ammunition that explodes on impact.",
+  "shortdescription" : "Blast Ammo",
+  
+  "itemTags" : [ "thea_attachment" ],
+  
+  "theaAttachmentType" : "aae_machinegun1",
+  "theaAttachmentAbility" : "thea-loadexplosivemachinegun"
+}

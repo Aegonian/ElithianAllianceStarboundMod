@@ -1,0 +1,20 @@
+{
+  "itemName" : "thea-poisonammomod-assault",
+  "price" : 500,
+  "maxStack" : 1,
+  "rarity" : "Uncommon",
+  "tooltipKind" : "thea-attachment",
+  "category" : "Ammo Mod",
+  "inventoryIcon" : "thea-poisonammomod-assault.png",
+  "largeImage" : "thea-poisonammomod-assaultlarge.png",
+  "builder" : "/items/buildscripts/thea-buildattachment.lua",
+  
+  "manufacturer" : "^gray;AAE^reset;",
+  "description" : "Elemental assault rifle ammunition that poisons and weakens targets.",
+  "shortdescription" : "Poison Ammo",
+  
+  "itemTags" : [ "thea_attachment" ],
+  
+  "theaAttachmentType" : "aae_assault1",
+  "theaAttachmentAbility" : "thea-loadpoisonassault"
+}

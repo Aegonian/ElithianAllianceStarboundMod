@@ -6,7 +6,7 @@ function init()
   
   script.setUpdateDelta(5)
 
-  self.tickDamagePercentage = 0.025
+  self.tickDamagePercentage = config.getParameter("tickDamagePercentage", 0.025)
   self.tickTime = 1.0
   self.tickTimer = self.tickTime
 end
@@ -17,7 +17,7 @@ function update(dt)
   end
 
   local targetDamage = math.floor(status.resourceMax("health") * self.tickDamagePercentage) + 1
-  local actualDamage = math.min(targetDamage, 10)
+  local actualDamage = math.min(targetDamage, config.getParameter("maxTickDamage", 10))
   
   self.tickTimer = self.tickTimer - dt
   if self.tickTimer <= 0 then

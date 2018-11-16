@@ -1,0 +1,20 @@
+{
+  "itemName" : "thea-firearrowmod-bow",
+  "price" : 500,
+  "maxStack" : 1,
+  "rarity" : "Uncommon",
+  "tooltipKind" : "thea-attachment",
+  "category" : "Arrow Mod",
+  "inventoryIcon" : "thea-firearrowmod-bow.png",
+  "largeImage" : "thea-firearrowmod-bowlarge.png",
+  "builder" : "/items/buildscripts/thea-buildattachment.lua",
+  
+  "manufacturer" : "^gray;AAE^reset;",
+  "description" : "An elemental arrow that burns targets.",
+  "shortdescription" : "Fire Arrow",
+  
+  "itemTags" : [ "thea_attachment" ],
+  
+  "theaAttachmentType" : "aae_bow1",
+  "theaAttachmentAbility" : "thea-nockfirearrow"
+}

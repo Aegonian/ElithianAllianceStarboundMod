@@ -35,5 +35,18 @@
         }
       }
     }
+  },
+  
+  "lights" : {
+    "boosterGlow" : {
+      "active" : false,
+      "position" : [0.0, -1.5],
+      "color" : [0, 87, 135],
+	  "flickerPeriod" : 0.15,
+	  "flickerMinIntensity" : 0.9,
+	  "flickerMaxIntensity" : 1,
+	  "flickerPeriodVariance" : 0.0,
+	  "flickerIntensityVariance" : 0.05
+    }
   }
 }

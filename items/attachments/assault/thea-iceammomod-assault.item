@@ -1,0 +1,20 @@
+{
+  "itemName" : "thea-iceammomod-assault",
+  "price" : 500,
+  "maxStack" : 1,
+  "rarity" : "Uncommon",
+  "tooltipKind" : "thea-attachment",
+  "category" : "Ammo Mod",
+  "inventoryIcon" : "thea-iceammomod-assault.png",
+  "largeImage" : "thea-iceammomod-assaultlarge.png",
+  "builder" : "/items/buildscripts/thea-buildattachment.lua",
+  
+  "manufacturer" : "^gray;AAE^reset;",
+  "description" : "Elemental assault rifle ammunition that slows down targets.",
+  "shortdescription" : "Ice Ammo",
+  
+  "itemTags" : [ "thea_attachment" ],
+  
+  "theaAttachmentType" : "aae_assault1",
+  "theaAttachmentAbility" : "thea-loadiceassault"
+}

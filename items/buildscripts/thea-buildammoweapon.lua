@@ -66,7 +66,11 @@ function build(directory, config, parameters, level, seed)
     config.tooltipFields.damagePerShotLabel = util.round((config.primaryAbility.baseDps or 0) * (config.primaryAbility.fireTime or 1.0) * config.damageLevelMultiplier, 1)
     config.tooltipFields.energyPerShotLabel = util.round((config.primaryAbility.energyUsage or 0) * (config.primaryAbility.fireTime or 1.0), 1)
 	config.tooltipFields.magazineSizeLabel = util.round(config.primaryAbility.maxAmmo, 1)
-	config.tooltipFields.reloadTimeLabel = util.round(config.primaryAbility.reloadTime, 1)
+	if config.primaryAbility.stances.reloadTwirl then
+	  config.tooltipFields.reloadTimeLabel = util.round(config.primaryAbility.stances.reload.duration + (config.primaryAbility.stances.reloadTwirl.duration or 0) + config.primaryAbility.readyTime, 1)
+	else
+	  config.tooltipFields.reloadTimeLabel = util.round(config.primaryAbility.stances.reload.duration + config.primaryAbility.readyTime, 1)
+	end
     if elementalType ~= "physical" then
       config.tooltipFields.damageKindImage = "/interface/elements/"..elementalType..".png"
     end
@@ -74,6 +78,8 @@ function build(directory, config, parameters, level, seed)
       config.tooltipFields.primaryAbilityTitleLabel = "Primary:"
       config.tooltipFields.primaryAbilityLabel = config.primaryAbility.name or "unknown"
     end
+	--Custom manufacturer label
+	config.tooltipFields.manufacturerLabel = configParameter("manufacturer") or "unknown"
   end
 
   -- set price

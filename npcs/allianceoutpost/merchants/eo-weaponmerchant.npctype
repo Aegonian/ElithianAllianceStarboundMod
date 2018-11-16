@@ -1,6 +1,8 @@
 {
   "type" : "eo-weaponmerchant",
   "baseType" : "thea-loungingmerchant",
+  
+  "damageTeamType" : "ghostly",
 
   "npcname" : "Faze",
 

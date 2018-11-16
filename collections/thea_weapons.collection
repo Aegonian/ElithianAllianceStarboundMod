@@ -427,6 +427,19 @@
       "title" : "Shadow's Embrace",
       "description" : "A sword cloaked in shadows, built for the Harrowing.",
       "icon" : "/items/active/weapons/melee/unique/shadowsembrace/thea-shadowsembrace.png"
+    },
+	//NEW WEAPONS v2.3.5
+	"akkimari-offender" : {
+      "order" : 70,
+      "title" : "Offender",
+      "description" : "An old break-action Vaash gun once used to commit numerous crimes.",
+      "icon" : "/items/active/weapons/ranged/unique/offender/akkimari-offendericon.png"
+    },
+	"akkimari-vengeance" : {
+      "order" : 71,
+      "title" : "Vengeance",
+      "description" : "An old Vaash rifle that has avenged many lives.",
+      "icon" : "/items/active/weapons/ranged/unique/vengeance/akkimari-vengeanceicon.png"
     }
   }
 }

@@ -29,39 +29,54 @@
     "centered" : true,
     "wrapWidth" : 126
   },
-  "energyPerShotTitleLabel" : {
+  "drawTimeTitleLabel" : {
     "type" : "label",
     "position" : [9, 69],
     "hAnchor" : "left",
-    "value" : "Energy Per Shot:"
+    "value" : "Draw Time:"
   },
-  "energyPerShotLabel" : {
+  "drawTimeLabel" : {
     "type" : "label",
     "position" : [130, 69],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
-  "altAbilityTitleLabel" : {
+  "energyPerShotTitleLabel" : {
     "type" : "label",
     "position" : [9, 60],
+    "hAnchor" : "left",
+    "value" : "Energy Per Shot:"
+  },
+  "energyPerShotLabel" : {
+    "type" : "label",
+    "position" : [130, 60],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "energyPerSecondTitleLabel" : {
+    "type" : "label",
+    "position" : [9, 51],
+    "hAnchor" : "left",
+    "value" : "Energy To Hold:"
+  },
+  "energyPerSecondLabel" : {
+    "type" : "label",
+    "position" : [130, 51],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "altAbilityTitleLabel" : {
+    "type" : "label",
+    "position" : [9, 42],
     "hAnchor" : "left",
     "value" : ""
   },
   "altAbilityLabel" : {
     "type" : "label",
-    "position" : [130, 60],
+    "position" : [130, 42],
     "hAnchor" : "right",
     "centered" : true,
     "wrapWidth" : 126
-  },
-  "descriptionLabel" : {
-    "type" : "label",
-    "position" : [9, 57],
-    "hAnchor" : "left",
-    "vAnchor" : "top",
-    "wrapWidth" : 124,
-    "lineSpacing" : 1.0,
-    "value" : "Harvests meat and other goods from monsters."
   },
   "handednessLabel" : {
     "type" : "label",

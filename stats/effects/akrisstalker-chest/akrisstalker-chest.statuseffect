@@ -1,0 +1,17 @@
+{
+  "name" : "akrisstalker-chest",
+  "effectConfig" : {
+	"activateThreshold" : 0.35,
+	"resetThreshold" : 0.45,
+	"cloakingDuration" : 5.0,
+	"invulnerabilityDuration" : 2.0
+  },
+  "defaultDuration" : 0.5,
+
+  "scripts" : [
+    "akrisstalker-chest.lua"
+  ],
+
+  "label" : "Back-up Cloaker",
+  "icon" : "/interface/statuses/akrisstalker-chest.png"
+}

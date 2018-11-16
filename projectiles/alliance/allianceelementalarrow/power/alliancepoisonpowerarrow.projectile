@@ -1,0 +1,33 @@
+{
+  "projectileName" : "alliancepoisonpowerarrow",
+  "physics" : "avikanarrow",
+  "bounces" : 0,
+  "image" : "alliancepoisonpowerarrow.png",
+  "animationCycle" : 0.3,
+  "frameNumber" : 3,
+  "lightColor" : [70, 128, 70],
+  "emitters" : [ "daggerblue", "poisonthrowertrail" ],
+  "power" : 20,
+  "knockback" : 10,
+  "knockbackDirectional" : true,
+  "timeToLive" : 30,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "alliancepoisonarrowsticking",
+      "inheritDamageFactor" : 0.0,
+      "inheritSpeedFactor" : 0.9,
+      "angleAdjust" : 0
+    }
+  ],
+  "damageKind" : "poison",
+  "statusEffects" : [
+    "thea-poison"
+  ],
+  "hydrophobic" : false
+}

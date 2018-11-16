@@ -23,8 +23,10 @@
       "offset" : [0.25, 0]
     }}}},
     "sounds" : {
-      "draw" : [ "/sfx/gun/thea_shortbow_draw.ogg" ],
-      "release" : [ "/sfx/gun/bow_loose.ogg" ]
+      "draw" : [ "/sfx/gun/bow/thea_bow_draw1.ogg", "/sfx/gun/bow/thea_bow_draw2.ogg", "/sfx/gun/bow/thea_bow_draw3.ogg" ],
+      "ready" : [ "/sfx/gun/bow/thea_bow_ready.ogg" ],
+      "release" : [ "/sfx/gun/bow_loose.ogg" ],
+      "perfectRelease" : [ "/sfx/gun/bow_loose_perfect.ogg" ]
     }
   },
 
@@ -33,28 +35,38 @@
   "elementalType" : "avikanhunting",
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/abilities/bow/thea-shortbowshot.lua"],
-    "class" : "TheaShortBowShot",
+    "scripts" : ["/items/active/weapons/ranged/abilities/bow/thea-bowshot.lua"],
+    "class" : "TheaBowShot",
 	
 	"fireOffset" : [0.75, 0],
 
-    "energyPerShot" : 15,
-    "cooldownTime" : 0.2,
-    "inaccuracy" : 0.02,
+    "drawTime" : 0.4,				//Time to fully draw the bow
+	"powerProjectileTime" : null,	//After fully drawing, the bow is super-charged for this long
+	"energyPerShot" : 15,			//Total energy consumption for a full draw
+	"holdEnergyUsage" : 1,			//Energy consumption per second while fully drawn
 	
-	"walkWhileFiring" : false,
-	"useQuiverDamageBonus" : true,
+    "cooldownTime" : 0.2,			//Time between firing and drawing the next arrow
+    "inaccuracy" : 0.04,			//Inaccuracy of the shot
+	
+	"walkWhileFiring" : false,		//If true, prevents the player from running while drawing the bow
+	"useQuiverDamageBonus" : true,	//If true, allows this bow to use quiver damage bonuses
+	
+	"drainEnergyWhilePowerful" : false,	//If true, consume energy while at max power
+	"staticDamageMultiplier" : null,	//If this value is set, arrow damage is independent of draw time and is instead multiplied by this value
+	"dynamicDamageMultiplier" : 1.0,	//All damage is multiplied by this value. Useful for modifying damage using alt ability special arrows
 
-    "drawFrameSelector" : "thea-shortbowImageSelector",
-    "drawPowerMultiplier" : "thea-shortbowdrawTimeMultiplier",
-    "drawSpeedMultiplier" : "thea-shortbowdrawTimeMultiplier",
+    "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
 
-    "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swimIdle.1"],
-
+	"projectileCount" : 1,	//Amount of arrows to shoot at once
     "projectileType" : "avikanmetalarrow",
     "projectileParameters" : {
       "speed" : 70,
-      "power" : 5.0
+      "power" : 3.0
+    },
+    "powerProjectileType" : "avikanmetalpowerarrow",
+    "powerProjectileParameters" : {
+      "speed" : 70,
+      "power" : 3.0
     },
 
     "stances" : {
@@ -85,5 +97,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/thea-buildshortbow.lua"
+  "builder" : "/items/buildscripts/thea-buildbow.lua"
 }

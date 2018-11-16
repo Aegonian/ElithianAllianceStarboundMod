@@ -18,9 +18,9 @@ function update(dt)
   self.cooldownTimer = math.max(0, self.cooldownTimer - dt)
   self.currentHealth = status.resource("health")
   
-  world.debugText(self.currentHealth, vec2.add(mcontroller.position(), {0,3}), "red")
-  world.debugText(self.lastHealth, vec2.add(mcontroller.position(), {0,2}), "red")
-  world.debugText(self.cooldownTimer, vec2.add(mcontroller.position(), {0,1}), "red")
+  --world.debugText(self.currentHealth, vec2.add(mcontroller.position(), {0,3}), "red")
+  --world.debugText(self.lastHealth, vec2.add(mcontroller.position(), {0,2}), "red")
+  --world.debugText(self.cooldownTimer, vec2.add(mcontroller.position(), {0,1}), "red")
   
   --Reset the cooldown timer if we lose health
   if self.currentHealth < self.lastHealth then

@@ -2,7 +2,11 @@ function init()
   animator.setParticleEmitterOffsetRegion("icetrail", mcontroller.boundBox())
   animator.setParticleEmitterActive("icetrail", true)
   effect.setParentDirectives("fade=00BBFF=0.85?border=2;00BBFF80;00000000")
-  self.queryDamageSince = 0
+  
+  --Check for damage taken in the init() step to ensure that damage taken before the status was applied won't get calculated for the damage increase
+  local damageNotifications, nextStep = status.damageTakenSince(self.queryDamageSince)
+  self.queryDamageSince = nextStep
+  
   self.totalDamageTaken = 0
 
   script.setUpdateDelta(1)
@@ -39,7 +43,7 @@ function update(dt)
 	  
 		local damageRequest = {}
 		damageRequest.damageType = "IgnoresDef"
-		damageRequest.damage = notification.damageDealt * 0.1
+		damageRequest.damage = notification.damageDealt * config.getParameter("damageAdditionPercentage", 0)
 		damageRequest.damageSourceKind = notification.damageSourceKind
 		damageRequest.sourceEntityId = notification.sourceEntityId
 		status.applySelfDamageRequest(damageRequest)

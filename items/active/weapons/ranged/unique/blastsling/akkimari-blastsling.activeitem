@@ -47,7 +47,8 @@
 	  }
 	},
     "sounds" : {
-      "draw" : [ "/sfx/gun/bow_draw1.ogg", "/sfx/gun/bow_draw2.ogg", "/sfx/gun/bow_draw3.ogg" ],
+      "draw" : [ "/sfx/gun/bow/thea_bow_draw1.ogg", "/sfx/gun/bow/thea_bow_draw2.ogg", "/sfx/gun/bow/thea_bow_draw3.ogg" ],
+      "ready" : [ "/sfx/gun/bow/thea_bow_ready.ogg" ],
       "release" : [ "/sfx/gun/bow_loose.ogg" ],
       "perfectRelease" : [ "/sfx/gun/bow_loose.ogg" ],
 	  "switchAmmo" : [ "/sfx/gun/reload/rocket_reload_clip1.ogg" ]
@@ -57,30 +58,38 @@
   "scripts" : ["/items/active/weapons/ranged/thea-bow.lua"],
   
   "aimOffset" : -1.0,
-  
+
   "primaryAbility" : {
     "scripts" : ["/items/active/weapons/ranged/abilities/bow/thea-bowshot.lua"],
     "class" : "TheaBowShot",
 	
 	"fireOffset" : [0.5, 0.5],
 
-    "energyPerShot" : 25,
-    "cooldownTime" : 0.6,
-    "inaccuracy" : 0.01,
+    "drawTime" : 0.7,				//Time to fully draw the bow
+	"powerProjectileTime" : null,	//After fully drawing, the bow is super-charged for this long
+	"energyPerShot" : 25,			//Total energy consumption for a full draw
+	"holdEnergyUsage" : 1,			//Energy consumption per second while fully drawn
 	
-	"walkWhileFiring" : false,
-	"useQuiverDamageBonus" : false,
-
-    "drawFrameSelector" : "bowImageSelector",
-    "drawPowerMultiplier" : "constant",
-    "drawSpeedMultiplier" : "thea-slingShotDrawTimeMultiplier",
+    "cooldownTime" : 0.6,			//Time between firing and drawing the next arrow
+    "inaccuracy" : 0.02,			//Inaccuracy of the shot
+	
+	"walkWhileFiring" : false,		//If true, prevents the player from running while drawing the bow
+	"useQuiverDamageBonus" : false,	//If true, allows this bow to use quiver damage bonuses
+	
+	"drainEnergyWhilePowerful" : false,	//If true, consume energy while at max power
+	"staticDamageMultiplier" : 1.0,		//If this value is set, arrow damage is independent of draw time and is instead multiplied by this value
+	"dynamicDamageMultiplier" : 1.0,	//All damage is multiplied by this value. Useful for modifying damage using alt ability special arrows
 
     "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
 
+	"projectileCount" : 1,	//Amount of arrows to shoot at once
     "projectileType" : "blastslingbomb-regular",
-    "powerProjectileType" : "blastslingbomb-regular",
-    "powerProjectileTime" : [0.9, 1.1],
     "projectileParameters" : {
+      "speed" : 50,
+      "power" : 5.5
+    },
+    "powerProjectileType" : "blastslingbomb-regular",
+    "powerProjectileParameters" : {
       "speed" : 50,
       "power" : 5.5
     },

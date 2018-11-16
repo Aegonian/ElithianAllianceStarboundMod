@@ -1,6 +1,8 @@
 {
   "type" : "eo-contractmerchant",
   "baseType" : "thea-loungingmerchant",
+  
+  "damageTeamType" : "ghostly",
 
   "scriptConfig" : {    
     "merchant" : {

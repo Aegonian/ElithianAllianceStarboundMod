@@ -1,0 +1,13 @@
+{
+  "name" : "setbonus-akrisstalker-legs",
+  "effectConfig" : {
+	"gearSetType" : "akrisStalker",				//The gear set that this item belongs to
+	"gearPiecesNeeded" : 3,						//How many set items are needed for a complete set
+	"setBonusEffect" : "akrisstalker-setbonus"	//The status effect to activate when the set is completed
+  },
+  "defaultDuration" : 0,
+
+  "scripts" : [
+    "/stats/effects/thea-setbonus/thea-setbonus.lua"
+  ]
+}

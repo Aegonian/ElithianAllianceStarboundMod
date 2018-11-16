@@ -47,6 +47,12 @@ function init()
   self.engineIdleVolume = config.getParameter("engineIdleVolume")
   self.engineRevVolume = config.getParameter("engineRevVolume")
   self.idleEngineTime = config.getParameter("idleEngineTime")
+  --Emote settings
+  self.damageTakenEmote = config.getParameter("damageTakenEmote")
+  self.driverEmote = config.getParameter("driverEmote")
+  self.driverEmoteDamaged = config.getParameter("driverEmoteDamaged")
+  self.driverEmoteNearDeath = config.getParameter("driverEmoteNearDeath")
+  self.damageEmoteTimer = 0
   
   --Starting stats
   self.selfDamageNotifications = {}
@@ -81,17 +87,12 @@ function init()
 
   animator.setAnimationState("headlights", "off")
   
-  --Emote settings
-  self.damageTakenEmote = config.getParameter("damageTakenEmote")
-  self.driverEmote = config.getParameter("driverEmote")
-  self.driverEmoteDamaged = config.getParameter("driverEmoteDamaged")
-  self.driverEmoteNearDeath = config.getParameter("driverEmoteNearDeath")
-  self.damageEmoteTimer = 0
-
-  --Owner Key, given to us by the vehicle controller
+  --OWNER KEY
+  --Inherited from vehicle controller to see what vehicle belongs to what controller
   self.ownerKey = config.getParameter("ownerKey")
   vehicle.setPersistent(self.ownerKey)
   
+  --VEHICLE PERSISTANCE
   --Function for making vehicles spawned from stagehands persistent
   message.setHandler("setPersistent", function(_, _)
       vehicle.setPersistent(true)
@@ -101,7 +102,8 @@ function init()
 	vehicle.setPersistent(true)
   end
 
-  --Assume maxhealth
+  --STARTING HEALTH CONFIG
+  --Inherit health factor from vehicle controller and set initial health values
   if (storage.health) then
     animator.setAnimationState("body", "idle")
   else
@@ -115,7 +117,8 @@ function init()
     animator.setAnimationState("body", "warpInPart1")
   end
 
-  --Setup the store functionality
+  --STORAGE
+  --Setting up the vehicle controller storage functionality  
   message.setHandler("store",
 	function(_, _, ownerKey)
 	  if (self.ownerKey and self.ownerKey == ownerKey and self.driver == nil and animator.animationState("body")=="idle") then
@@ -329,6 +332,7 @@ function control(driverThisFrame)
   end
   
   --CONTROLS WHILE DRIVERLESS
+  --If driverless and in a liquid, but not underwater, make the vehicle float
   if not driverThisFrame then
 	local waterLevel = mcontroller.liquidPercentage()
 	
@@ -597,7 +601,8 @@ function applyDamage(damageRequest)
   local healthLost = math.min(damage, storage.health)
   storage.health = storage.health - healthLost
 
-  --Create the floating damage numbers
+  --Send the damage notification back to the damage dealer so they can register the hit
+  --This should also create the floating damage numbers
   return {{
     sourceEntityId = damageRequest.sourceEntityId,
     targetEntityId = entity.id(),
@@ -611,7 +616,7 @@ function applyDamage(damageRequest)
   }}
 end
 
---This function can be used elsewhere to handle damage dealth by the vehicle to the vehicle itself
+--This function can be called elsewhere to apply damage caused by the vehicle itself
 function selfDamageNotifications()
   local sdn = self.selfDamageNotifications
   self.selfDamageNotifications = {}

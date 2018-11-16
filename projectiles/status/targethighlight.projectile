@@ -7,7 +7,7 @@
   "animationCycle" : 1.0,
   "frameNumber" : 1,
   "statusEffects" : [
-    "targethighlight"
+    "targethighlight-noweakness"
   ],
   "timeToLive" : 0.1,
   "power" : 0.0,

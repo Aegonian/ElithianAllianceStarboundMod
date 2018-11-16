@@ -36,7 +36,9 @@ function build(directory, config, parameters, level, seed)
 	config.tooltipFields = {}
     config.tooltipFields.levelLabel = util.round(configParameter("level", 1), 1)
 	config.tooltipFields.subtitle = parameters.category
+	config.tooltipFields.drawTimeLabel = config.primaryAbility.drawTime or 0
 	config.tooltipFields.energyPerShotLabel = config.primaryAbility.energyPerShot or 0
+	config.tooltipFields.energyPerSecondLabel = config.primaryAbility.holdEnergyUsage or 0
 	config.tooltipFields.maxDamageLabel = config.primaryAbility.baseDamage * config.damageLevelMultiplier
 	if elementalType ~= "physical" then
 	  config.tooltipFields.damageKindImage = "/interface/elements/"..elementalType..".png"

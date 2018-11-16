@@ -1,0 +1,24 @@
+{
+  "name" : "thea-acrobaticdodge",
+  "type" : "body",
+
+  "scripts" : ["thea-acrobaticdodge.lua"],
+  "animator" : "thea-acrobaticdodge.animation",
+
+  "description" : "Double tap ^green;[A]^white; or ^green;[D] ^white;to dodge attacks! Cooldown: 0.4s",
+  "shortDescription" : "Acrobatic Dodge",
+  "rarity" : "Uncommon",
+  "icon" : "/tech/thea-acrobaticdodge.png",
+
+  "chipCost" : 2,
+
+  "maximumDoubleTapTime" : 0.25,
+  "dashVelocity" : [30, 20],
+  "dashDuration" : 0.35,
+  "dashCooldown" : 0.4,
+  "stopAfterDash" : false,
+  "slowAfterDash" : true,
+  "slowDownFactor" : 0.75,
+  "groundOnly" : false,
+  "cooldownOnGroundOnly" : true
+}

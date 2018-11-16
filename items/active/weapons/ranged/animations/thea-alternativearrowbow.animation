@@ -10,7 +10,7 @@
           "loosed" : {}
         }
       },
-      "arrows" : {
+      "specialArrow" : {
         "default" : "hidden",
         "states" : {
           "hidden" : {},
@@ -22,6 +22,7 @@
     "parts" : {
       "bow" : {
         "properties" : {
+          "zLevel" : 0,
           "centered" : true,
           "transformationGroups" : ["weapon"]
         },
@@ -40,14 +41,14 @@
           }
         }
       },
-	  "arrows" : {
+	  "specialArrow" : {
         "properties" : {
           "zLevel" : 1,
           "centered" : true,
           "transformationGroups" : ["weapon"]
         },
         "partStates" : {
-          "arrows" : {
+          "specialArrow" : {
             "hidden" : {
               "properties" : {
                 "image" : ""
@@ -70,6 +71,7 @@
 
   "sounds" : {
     "draw" : [ ],
+    "ready" : [ ],
     "release" : [ ],
     "perfectRelease" : [ ]
   }

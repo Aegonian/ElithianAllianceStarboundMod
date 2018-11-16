@@ -72,7 +72,7 @@
     "baseDps" : 10.5,
     "inaccuracy" : 0.02,
 	
-	"reloadTime" : 2.2,
+	"readyTime" : 0.2, //Time between finishing the reload animation and being able to fire the first shot again
 	
 	"maxAmmo" : 24,
 	"cycleAfterShot" : false,
@@ -114,7 +114,7 @@
         "allowFlip" : true
       },
       "reload" : {
-        "duration" : 2.2,
+        "duration" : 2.3,
         "armRotation" : -25,
         "weaponRotation" : 30,
         "weaponOffset" : [-0.5, -0.125],
@@ -129,5 +129,5 @@
     }
   },
   
-  "builder" : "/items/buildscripts/thea-buildammoweapon-mf.lua"
+  "builder" : "/items/buildscripts/thea-buildammoweapon.lua"
 }

@@ -1,0 +1,135 @@
+{
+  "itemName" : "akkimari-vengeance",
+  "price" : 1500,
+  "inventoryIcon" : "akkimari-vengeanceicon.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;An old Vaash rifle that has avenged many lives.",
+  "shortdescription" : "^orange;Vengeance^white;",
+  "level" : 6,
+  "fixedLevel" : false,
+  "tooltipKind" : "thea-ammogun-unique",
+  "category" : "Click Rifle",
+  "itemTags" : ["weapon","ranged","sniperrifle","akkimari","theaUnique"],
+  "twoHanded" : true,
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "akkimari-vengeance" },
+  
+  "meritTokenValue" : 100,
+
+  "animation" : "akkimari-vengeance.animation",
+  "animationParts" : {
+    "middle" : "akkimari-vengeance.png",
+    "middleFullbright" : "akkimari-vengeancelights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+		    "offset" : [0.875, 0.25]
+		  }
+		}
+      }
+    },
+    "particleEmitters" : {
+      "reload" : {
+        "transformationGroups" : ["weapon"],
+		"offsetRegion" : [0.375, 0.5, 0.375, 0.5],
+        "particles" : [
+          { "particle" : "thea-discardedakkimaribullet" },
+          { "particle" : "thea-discardedakkimaribullet" }
+        ]
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/plasma_sniper4.ogg" ],
+	  "reload" : [ "/sfx/gun/reload/vengeance_reload.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.875, 0.25],
+  "muzzleOffset" : [2.375, 0.125],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-ammofire.lua"],
+    "class" : "TheaAmmoFire",
+
+    "fireTime" : 0.7,
+    "baseDps" : 12.5,
+    "inaccuracy" : 0.0,
+	
+	"readyTime" : 0.3, //Time between finishing the reload animation and being able to fire the first shot again
+	
+	"maxAmmo" : 2,
+	"cycleAfterShot" : false,
+	"fireAnimation" : false,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "akkimarivaashbullet",
+    "projectileParameters" : {
+      "knockback" : 12
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "run.1",
+        "backArmFrame" : "rotation"
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 5,
+        "weaponRotation" : 20,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "run.1",
+        "backArmFrame" : "rotation"
+      },
+      "cooldown" : {
+        "duration" : 0.35,
+        "armRotation" : 5,
+        "weaponRotation" : 20,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "run.1",
+        "backArmFrame" : "rotation"
+      },
+      "reload" : {
+        "duration" : 1.5,
+        "armRotation" : -25,
+        "weaponRotation" : 45,
+        "weaponOffset" : [-0.5, 0.125],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swimIdle.1",
+        "backArmFrame" : "rotation"
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/thea-buildammoweapon.lua"
+}

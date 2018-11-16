@@ -1,0 +1,40 @@
+{
+  "projectileName" : "alliancefirepowerarrow",
+  "physics" : "avikanarrow",
+  "bounces" : 0,
+  "image" : "alliancefirepowerarrow.png",
+  "animationCycle" : 0.3,
+  "frameNumber" : 3,
+  "lightColor" : [128, 90, 60],
+  "emitters" : [ "daggerblue", "thea-moltenshrapneltrail" ],
+  "power" : 20,
+  "knockback" : 10,
+  "knockbackDirectional" : true,
+  "timeToLive" : 30,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "alliancefirearrowsticking",
+      "inheritDamageFactor" : 0.0,
+      "inheritSpeedFactor" : 0.9,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanflame",
+      "inheritDamageFactor" : 0.5,
+      "inheritSpeedFactor" : 0.0,
+      "angleAdjust" : 0
+    }
+  ],
+  "damageKind" : "fire",
+  "statusEffects" : [
+    "thea-burning"
+  ],
+  "hydrophobic" : false
+}

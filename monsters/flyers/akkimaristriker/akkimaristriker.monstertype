@@ -1,0 +1,297 @@
+{
+  "type" : "akkimaristriker",
+  "shortdescription" : "Striker",
+  "description" : "A stealth combat drone in employ of the Akkimari.",
+
+  "categories" : [ "akkimaristriker" ],
+  "parts" : [ "body", "lights" ],
+
+  "animation" : "akkimaristriker.animation",
+
+  "dropPools" : [ { "default" : "akkimariarbiterTreasure", "bow" : "akkimariarbiterHunting", "electromagneticextractor" : "electromagneticextractorTreasure", "akkimariscrapper" : "akkimariscrapper" } ],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+
+    "behavior" : "monster",
+    "deathBehavior" : "monster-death",
+
+    "seeThroughLiquid" : false,
+    "behaviorConfig" : {
+      "damageOnTouch" : true,
+
+      "targetQueryRange" : 50,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : true,
+      "keepTargetInRange" : 75,
+      "targetOutOfSightTime" : 5.0,
+
+      "foundTargetActions" : [ ],
+
+      "fleeActions" : [ ],
+
+      "hostileActions" : [
+       {
+          "name" : "action-fire",
+          "cooldown" : 3.2,
+          "parameters" : {
+            "requireLineOfSight" : true,
+            "maximumRange" : 50,
+            "minimumRange" : 2,
+            "windupState" : "windup",
+            "windupTime" : 0.4,
+
+            "projectileType" : "driftriflebullet",
+            "projectileParameters": {
+			  "power" : 10
+			},
+            "fireOffset" : [0.125, -0.5],
+            "aimAtTarget" : true,
+			"inaccuracy" : 0.1,
+            "projectileCount" : 1,
+            "projectileInterval" : 0.05,
+            "onGround" : false,
+            "fireState" : "fire",
+            "fireSound" : "fire",
+            "fireDelay" : 0.4,
+
+            "fireArc": false,
+
+            "winddownState" : "winddown",
+            "winddownTime" : 0.4,
+			
+			"damageRepeatGroup" : "" //Removes the damage cooldown time, allowing every projectile that connects to damage the target
+          }
+        }
+      ],
+
+      "periodicActions" : [ ],
+
+      "approachActions" : [
+        {
+          "name" : "approach-fly",
+          "parameters" : {
+            "minRange" : 14,
+            "maxRange" : 24,
+            "groundDistance" : 6
+          }
+        }
+      ],
+
+      "followActions" : [
+        {
+          "name" : "approach-teleport",
+          "parameters" : {
+          }
+        },
+        {
+          "name" : "approach-fly",
+          "parameters" : {
+            "minRange" : 14,
+            "maxRange" : 24,
+            "groundDistance" : 4
+          }
+        }
+      ],
+
+      "wanderActions" : [
+        {
+          "name" : "wander-fly",
+          "parameters" : {
+            "wanderTime" : [1,4],
+            "groundDistance" : 3,
+            "ceilingDistance" : 4,
+            "xVelocity" : 8,
+            "yVelocity" : 15
+          }
+        }
+      ],
+
+      "deathActions" : [
+        {
+          "name" : "action-projectile",
+          "parameters" : {
+            "projectileCount" : 1,
+            "projectileType" : "avikandroneexplosion",
+            "projectileParameters" : {
+              "damageTeam" : { "type" : "enemy", "team" : 0 },
+			  "power" : 10.0
+            },
+            "aimDirection" : [0, 0],
+            "inaccuracy" : 0,
+            "fireOffset" : [0, 0]
+          }
+        },
+		{
+          "name" : "thea-senddeathmessage",
+          "parameters" : {
+            "deathMessage" : "akkimaristrikerDeath"
+          }
+        }
+      ],
+
+      "concurrentActions" : [
+        {
+          "name" : "thea-initialstatuseffect",
+          "parameters" : {
+            "duration" : 5,
+            "statusEffect" : "thea-cloakingnpc-akkimaristriker"
+          }
+        }
+	  ],
+
+      "concurrentHostileActions" : [
+        {
+          "name" : "thea-initialstatuseffect",
+          "parameters" : {
+            "duration" : 5,
+            "statusEffect" : "thea-cloakingnpc-akkimaristriker"
+          }
+        }
+	  ]
+    },
+
+    "touchDamage" : {
+      "poly" : [ [0.32, 0.75],  [1.5, 0.32], [1.5, -0.32], [0.32, -0.75], [-0.32, -0.75], [-1.5, -0.32], [-1.5, 0.32], [-0.32, 0.75] ],
+      "damage" : 9,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "lash",
+      "knockback" : 20,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-4, -4, 4, 4],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [0.32, 0.75],  [1.5, 0.32], [1.5, -0.32], [0.32, -0.75], [-0.32, -0.75], [-1.5, -0.32], [-1.5, 0.32], [-0.32, 0.75] ],
+
+      "mass" : 0.5,
+      "walkSpeed" : 4,
+      "runSpeed" : 12,
+      "gravityEnabled" : false,
+
+      "airFriction" : 2.5,
+      "airForce" : 15,
+      "flySpeed" : 17
+    },
+
+    "bodyMaterialKind" : "robotic",
+
+    "knockoutTime" : 0.3,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "robotic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.4
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 9
+        },
+        "maxHealth" : {
+          "baseValue" : 56
+        },
+        "protection" : {
+          "baseValue" : 0.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+        "physicalResistance" : {
+          "baseValue" : 0.0
+        },
+        "fireResistance" : {
+          "baseValue" : 0.0
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "iceResistance" : {
+          "baseValue" : 0.0
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "electricResistance" : {
+          "baseValue" : -0.5
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "poisonResistance" : {
+          "baseValue" : 0.5
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "linerifleResistance" : {
+          "baseValue" : -0.5
+        },
+        "linerifleStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "centensianenergyResistance" : {
+          "baseValue" : 0.0
+        },
+        "centensianenergyStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "xanafianStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "akkimariacidResistance" : {
+          "baseValue" : 0.0
+        },
+        "akkimariacidStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "bleedingImmunity" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -8],
+    "capturable" : true,
+    "captureHealthFraction" : 0.5,
+    "nametagColor" : [64, 200, 255],
+    "captureCollectables" : { "monsters" : "akkimariarbiter" }
+  }
+}

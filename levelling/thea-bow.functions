@@ -1,4 +1,29 @@
 {
-  "thea-regularBowTimeMultiplier" : [ "linear", "clamp", [0, 0], [0.1, 0.01], [0.2, 0.25], [0.89, 1.0], [0.9, 1.25], [1.1, 1.25] ],
-  "thea-regularBowImageSelector" : [ "linear", "clamp", [0, 0], [0.9, 4.0], [1.1, 4.0] ]
+  //SHORTBOW
+  //Very fast draw time, very low hold energy. Low damage/range
+  "thea-shortBowTimeMultiplier" : [ "linear", "clamp", [0, 0], [0.1, 0.01], [0.2, 0.25], [0.89, 1.0], [0.9, 1.25], [1.1, 1.25] ],
+  "thea-shortBowImageSelector" : [ "linear", "clamp", [0, 0], [0.9, 4.0], [1.1, 4.0] ],
+  
+  //RECURVE BOW
+  //Fast draw time, medium hold energy. Medium damage/range
+  "thea-recurveBowTimeMultiplier" : [ "linear", "clamp", [0, 0], [0.1, 0.01], [0.2, 0.25], [0.89, 1.0], [0.9, 1.25], [1.1, 1.25] ],
+  "thea-recurveBowImageSelector" : [ "linear", "clamp", [0, 0], [0.9, 4.0], [1.1, 4.0] ],
+  
+  //COMPOUND BOW
+  //Medium draw time, very low hold energy. High damage/range
+  "thea-compoundBowTimeMultiplier" : [ "linear", "clamp", [0, 0], [0.1, 0.01], [0.2, 0.25], [0.89, 1.0], [0.9, 1.25], [1.1, 1.25] ],
+  "thea-compoundBowImageSelector" : [ "linear", "clamp", [0, 0], [0.9, 4.0], [1.1, 4.0] ],
+  
+  //LONGBOW
+  //Slow draw time, high hold energy. Very high damage/range
+  "thea-longBowTimeMultiplier" : [ "linear", "clamp", [0, 0], [0.1, 0.01], [0.2, 0.25], [0.89, 1.0], [0.9, 1.25], [1.1, 1.25] ],
+  "thea-longBowImageSelector" : [ "linear", "clamp", [0, 0], [0.9, 4.0], [1.1, 4.0] ],
+  
+  //MISC FUNCTIONS
+  //For arrows that are at full power regardless of draw time (e.g. explosive arrows and other special arrows)
+  "thea-bowFullPower" : [ "linear", "clamp", [0, 1.0], [1.0, 1.0] ]
 }
+
+//BOW FUNCTION EXPLANATION
+//All functions are a list of vectors. The first value in a vector is the current drawTime, the second is the 
+//For time multipliers, 
