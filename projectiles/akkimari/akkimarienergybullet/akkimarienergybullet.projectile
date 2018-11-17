@@ -1,0 +1,24 @@
+{
+  "projectileName" : "akkimarienergybullet",
+  "physics" : "laser",
+  "bounces" : 0,
+  "image" : "akkimarienergybullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 180,
+  "supportsProcessing" : true,
+  "emitters" : [ "akkimaritraillight" ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/akkimariacidimpact/akkimariacidimpact.config"
+    }
+  ],
+  "statusEffects" : [
+    "akkimariacidburn"
+  ],
+  "lightColor" : [0, 75, 10],
+  "fullbright" : true,
+  "damageKind" : "akkimariacid"
+}

@@ -138,7 +138,7 @@
 
   "altAbility" : {
     "name" : "Switch Form",
-    "scripts" : ["/items/active/weapons/ranged/abilities/bow/thea-bowspeartransform.lua"],
+    "scripts" : ["/items/active/weapons/ranged/abilities/transform/thea-bowspeartransform.lua"],
 	"class" : "TheaBowSpearTransform",
 
     "transformCooldownTime" : 0.75,

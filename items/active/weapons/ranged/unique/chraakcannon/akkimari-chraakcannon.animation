@@ -1,0 +1,262 @@
+{
+  "globalTagDefaults" : {
+	"paletteSwaps" : "",
+	"bladeDirectives" : ""
+  },
+
+  "animatedParts" : {
+	"stateTypes" : {
+	  //MUZZLEFLASH STATETYPES
+	  "firing" : {
+		"default" : "off",
+		"states" : {
+		  "off" : {},
+		  "fire" : {
+			"frames" : 2,
+			"cycle" : 0.08,
+			"mode" : "transition",
+			"transition" : "off"
+		  }
+		}
+	  },
+	  //SWOOSH STATETYPES
+	  "swoosh" : {
+		"default" : "idle",
+		"states" : {
+		  "idle" : {},
+		  "fire" : {
+			"frames" : 3,
+			"cycle" : 0.15,
+			"mode" : "transition",
+			"transition" : "idle"
+		  }
+		}
+	  },
+	  //WEAPON STATETYPES
+	  "weapon" : {
+		"default" : "idle",
+		"states" : {
+		  //GUN ANIMATION STATES
+		  "idle" : {},
+		  "fire" : {},
+		  "reload" : {
+			"frames" : 7,
+			"cycle" : 0.9,
+			"mode" : "transition",
+			"transition" : "idle"
+		  },
+		  //TRANSFORM TO HAMMER
+		  "transformToHammer" : {
+			"frames" : 9,
+			"cycle" : 0.6,
+			"mode" : "transition",
+			"transition" : "hammerIdle"
+		  },
+		  //HAMMER ANIMATION STATES
+		  "hammerIdle" : {},
+		  //TRANSFORM TO GUN
+		  "transformToGun" : {
+			"frames" : 9,
+			"cycle" : 0.6,
+			"mode" : "transition",
+			"transition" : "idle"
+		  }
+		}
+	  }
+	},
+
+	"parts" : {
+	  //WEAPON MAIN BODY
+	  "middle" : {
+		"properties" : {
+		  "zLevel" : 0,
+		  "centered" : true,
+		  "image" : "<partImage><paletteSwaps>",
+		  "offset" : [0.0, 0.0],
+		  "transformationGroups" : ["weapon"],
+		  "groundImpactPoly" : [ [-0.25, 0.5], [0, -0.5], [-3.625, -0.25], [-2.875, 0.5] ]
+		},
+		"partStates" : {
+		  "weapon" : {
+			"idle" : {
+			  "properties" : {
+				"image" : "<partImage>:gun"
+			  }
+			},
+			"fire" : {
+			  "properties" : {
+				"image" : "<partImage>:fire"
+			  }
+			},
+			"reload" : {
+			  "properties" : {
+				"image" : "<partImage>:reload.<frame>"
+			  }
+			},
+			"transformToHammer" : {
+			  "properties" : {
+				"image" : "<partImage>:transformToHammer.<frame>"
+			  }
+			},
+			"hammerIdle" : {
+			  "properties" : {
+				"image" : "<partImage>:hammer?<bladeDirectives>"
+			  }
+			},
+			"transformToGun" : {
+			  "properties" : {
+				"image" : "<partImage>:transformToGun.<frame>"
+			  }
+			}
+		  }
+		}
+	  },
+	  //WEAPON MAIN LIGHTS
+	  "middleFullbright" : {
+		"properties" : {
+		  "zLevel" : 1,
+		  "centered" : true,
+		  "image" : "<partImage><paletteSwaps>",
+		  "offset" : [0.0, 0.0],
+		  "fullbright" : true,
+		  "transformationGroups" : ["weapon"]
+		},
+		"partStates" : {
+		  "weapon" : {
+			"idle" : {
+			  "properties" : {
+				"image" : "<partImage>:gun"
+			  }
+			},
+			"fire" : {
+			  "properties" : {
+				"image" : "<partImage>:fire"
+			  }
+			},
+			"reload" : {
+			  "properties" : {
+				"image" : "<partImage>:reload.<frame>"
+			  }
+			},
+			"transformToHammer" : {
+			  "properties" : {
+				"image" : "<partImage>:transformToHammer.<frame>"
+			  }
+			},
+			"hammerIdle" : {
+			  "properties" : {
+				"image" : "<partImage>:hammer"
+			  }
+			},
+			"transformToGun" : {
+			  "properties" : {
+				"image" : "<partImage>:transformToGun.<frame>"
+			  }
+			}
+		  }
+		}
+	  },
+	  //MUZZLEFLASH
+	  "muzzleFlash" : {
+		"properties" : {
+		  "zLevel" : 2,
+		  "centered" : true,
+		  "offset" : [0.75, 0],
+		  "fullbright" : true,
+		  "transformationGroups" : ["weapon"]
+		},
+		"partStates" : {
+		  "firing" : {
+			"off" : {
+			  "properties" : {
+				"image" : ""
+			  }
+			},
+			"fire" : {
+			  "properties" : {
+				"image" : "<partImage>:<variant>.<frame>"
+			  }
+			}
+		  }
+		}
+	  },
+	  //SWOOSH
+	  "swoosh" : {
+		"properties" : {
+		  "zLevel" : -1,
+		  "centered" : true,
+		  "offset" : [0.75, -1.625],
+		  "transformationGroups" : ["weapon"],
+		  "rotationCenter" : [0, 0]
+		},
+		"partStates" : {
+		  "swoosh" : {
+			"idle" : {
+			  "properties" : {
+				"image" : ""
+			  }
+			},
+			"fire" : {
+			  "properties" : {
+				"image" : "/items/active/weapons/ranged/unique/chraakcannon/swoosh/swoosh.png:<frame>",
+			  //"damageArea" : [[-3.5, 2], [-2.5, 3], [1, 3], [3, 1.75], [4, -0.25], [4, -2.25], [3, -3.25], [0, -2.5]]
+				"damageArea" : [[1, 2.5], [-3, 3.25], [-4, 2.25], [-4, 0.25], [-3, -1.75], [-1, -3], [2.5, -3], [3.5, -2]]
+			  }
+			}
+		  }
+		}
+	  }
+	}
+  },
+
+  "rotationGroups" : {
+	"weapon" : {
+	  "angularVelocity" : 0
+	}
+  },
+
+  "transformationGroups" : {
+	"weapon" : {},
+	"muzzle" : {},
+	"swoosh" : {}
+  },
+
+  "particleEmitters" : {
+	"muzzleFlash" : {
+	  "emissionRate" : 10.0,
+	  "burstCount" : 15.0,
+	  "transformationGroups" : ["muzzle"],
+	  "offsetRegion" : [0.25, 0.25, -3.0, -0.25],
+	  "particles" : [ ]
+	},
+	"swoosh" : {
+	  "active" : false,
+	  "emissionRate" : 10.0,
+	  "burstCount" : 15.0,
+	  "transformationGroups" : ["swoosh"],
+	  "offsetRegion" : [-2.0, 0.0, 1.5, 5.0],
+	  "particles" : [ ]
+	}
+  },
+
+  "lights" : {
+	"muzzleFlash" : {
+	  "active" : false,
+	  "position" : [0, 0],
+	  "color" : [0, 96, 10]
+	}
+  },
+
+  "sounds" : {
+	//GUN SOUNDS
+	"fire" : [ ],
+	"reload" : [ ],
+	
+	//HAMMER SOUNDS
+	"swing" : [ ],
+	"groundImpact" : [ ],
+	
+	//TRANSFORM SOUNDS
+	"transform" : [ ]
+  }
+}

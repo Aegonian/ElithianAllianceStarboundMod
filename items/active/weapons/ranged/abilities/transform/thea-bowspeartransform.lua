@@ -62,14 +62,13 @@ function TheaBowSpearTransform:transform()
   animator.setAnimationState("weapon", "transformToSpear")
   animator.playSound("transform")
 
-  --util.wait(self.stances.transforming.duration)
   --Smoothly transition into the other form's stance
   local progress = 0
   util.wait(self.stances.transforming.duration, function()
     progress = math.min(self.stances.transforming.duration, progress + self.dt)
     local progressRatio = math.sin(progress / self.stances.transforming.duration * 1.57)
-	world.debugText(progress, mcontroller.position(), "blue")
-	world.debugText(progressRatio, vec2.add(mcontroller.position(), {0, 1}), "red")
+	--world.debugText(progress, mcontroller.position(), "blue")
+	--world.debugText(progressRatio, vec2.add(mcontroller.position(), {0, 1}), "red")
 	
 	local from = self.stances.transforming.weaponOffset or {0,0}
     local to = self.stances.aiming.weaponOffset or {0,0}

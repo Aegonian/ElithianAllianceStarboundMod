@@ -440,6 +440,12 @@
       "title" : "Vengeance",
       "description" : "An old Vaash rifle that has avenged many lives.",
       "icon" : "/items/active/weapons/ranged/unique/vengeance/akkimari-vengeanceicon.png"
+    },
+	"akkimari-chraakcannon" : {
+      "order" : 72,
+      "title" : "Chraak Cannon",
+      "description" : "A re-purposed artillery cannon that doubles as a spiked hammer.",
+      "icon" : "/items/active/weapons/ranged/unique/chraakcannon/akkimari-chraakcannonicon.png"
     }
   }
 }

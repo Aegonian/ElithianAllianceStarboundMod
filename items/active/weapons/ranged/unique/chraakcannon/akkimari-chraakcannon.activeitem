@@ -1,0 +1,237 @@
+{
+  "itemName" : "akkimari-chraakcannon",
+  "price" : 1500,
+  "inventoryIcon" : "akkimari-chraakcannonicon.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;A re-purposed artillery cannon that doubles as a spiked hammer.",
+  "shortdescription" : "^orange;Chraak Cannon^white;",
+  "level" : 6,
+  "tooltipKind" : "thea-gun-patreon",
+  "category" : "Makeshift Weapon",
+  "itemTags" : ["weapon","ranged","akkimari","theaUnique"],
+  "twoHanded" : true,
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "akkimari-chraakcannon" },
+  
+  "meritTokenValue" : 100,
+  
+  "animation" : "akkimari-chraakcannon.animation",
+  "animationParts" : {
+    "middle" : "akkimari-chraakcannon.png",
+    "middleFullbright" : "akkimari-chraakcannonlights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/ashatokpowermuzzle.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+		    "offset" : [1.075, 0.575]
+		  }
+		},
+        "muzzleFlash" : {
+		  "properties" : {
+		    "offset" : [3.5, 0.0]
+		  }
+		}
+      }
+    },
+    "particleEmitters" : {
+      "muzzleFlash" : {
+        "particles" : [
+          { "particle" : "akkimariashsmoke", "offset" : [0.0, 0.0] }
+        ]
+      }
+    },
+    "sounds" : {
+	  //GUN SOUNDS
+      "fire" : [ "/sfx/gun/chraakcannon_fire.ogg" ],
+	  //HAMMER SOUNDS
+	  "swing" : [ "/sfx/melee/chraakcannon_swing.ogg" ],
+	  "groundImpact" : [ "/sfx/melee/hammer_smash1.ogg" ],
+	  //TRANSFORM SOUNDS
+	  "transform" : [ "/sfx/objects/cropshipper_door_open.ogg" ]
+    }
+  },
+
+  "baseOffset" : [1.075, 0.575],
+  "muzzleOffset" : [3.5, 0.0],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "akkimariacid",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-reloadfire/thea-reloadfire.lua"],
+    "class" : "TheaReloadFire",
+
+    "fireTime" : 1.5,
+    "baseDps" : 10.5,
+    "energyUsage" : 95.0,
+    "inaccuracy" : 0.01,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "akkimariartillerybomb",
+    "projectileParameters" : {},
+	
+	"recoilKnockbackVelocity" : 45,
+	"crouchRecoilKnockbackVelocity" : 20,
+	"crouchStopsRecoil" : true,
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "run.2"
+      },
+      "fire" : {
+        "duration" : 0.4,
+        "armRotation" : 14,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+
+        "frontArmFrame" : "run.2",
+		
+		"animated" : true
+      },
+      "cooldown" : {
+        "duration" : 0.75,
+        "armRotation" : 14,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "run.2"
+      }
+    }
+  },
+
+  "altAbility" : {
+    "name" : "Switch Form",
+    "scripts" : ["/items/active/weapons/ranged/abilities/transform/thea-gunhammertransform.lua"],
+	"class" : "TheaGunHammerTransform",
+
+    "transformCooldownTime" : 0.75,
+
+    "fireTime" : 1.2,
+    "baseDps" : 14.5,
+	
+	//Minimum and maximum aim angle modifiers. These enforce maximum aim angles to prevent weird stances
+	"maxAimAngleModifier" : 0.55,
+	"minAimAngleModifier" : 0.85,
+	
+	//Flash directive when reaching full charge
+    "flashDirectives" : "fade=FFFFFFFF=0.15",
+	"flashTime" : 0.2,
+
+    "damageConfig" : {
+      "damageSourceKind" : "hammer",
+      "statusEffects" : [ "thea-bleeding" ],
+      "knockbackMode" : "aim",
+      "knockback" : 18,
+      "timeoutGroup" : "primary"
+    },
+    "stepDamageConfig" : [
+      {
+        "baseDamageFactor" : 1.0,
+        "knockback" : 15
+      },
+      {
+        "baseDamageFactor" : 0.5,
+        "knockback" : 10
+      },
+      {
+        "baseDamageFactor" : 1.25,
+        "knockback" : 25
+      }
+    ],
+	//======================================================================
+
+    "stances" : {
+	  //Transforming from GUN to HAMMER
+	  "transforming" : {
+        "duration" : 0.9,
+		"armRotation" : 25,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+	  //Transforming from HAMMER to GUN
+      "reverting" : {
+        "duration" : 0.9,
+		"armRotation" : -100,
+		"endArmRotation" : 0,
+        "weaponRotation" : -90,
+        "endWeaponRotation" : 0,
+        "twoHanded" : true,
+        "weaponOffset" : [-3.0, 0.0],
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+	  //IDLE/MELEE AIMING
+	  "aiming" : {
+        "armRotation" : -110,
+        "weaponRotation" : -75,
+        "twoHanded" : true,
+        "weaponOffset" : [-3.0, 0.0],
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+	  //WINDUP
+      "windup" : {
+        "duration" : 1.2,
+        "armRotation" : -110,
+        "endArmRotation" : 70,
+        "weaponRotation" : -75,
+        "endWeaponRotation" : -10,
+        "weaponOffset" : [-3.0, 0.0],
+        "twoHanded" : true,
+
+        "allowFlip" : true,
+        "allowRotate" : false
+      },
+	  //PRESLASH
+      "preslash" : {
+        "duration" : 0.025,
+        "armRotation" : 55,
+        "weaponRotation" : -135,
+        "twoHanded" : true,
+        "weaponOffset" : [-3.0, 0.0],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+	  //FIRE/SWING
+      "fire" : {
+        "duration" : 0.4,
+        "armRotation" : -35,
+        "weaponRotation" : -145,
+        "weaponOffset" : [-3.0, 0.0],
+        "twoHanded" : true,
+
+        "allowFlip" : false,
+        "allowRotate" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

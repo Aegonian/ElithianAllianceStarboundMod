@@ -1,0 +1,98 @@
+{
+  "projectileName" : "akkimariartillerybomb",
+  "physics" : "grenade",
+  "bounces" : 0,
+  "image" : "akkimariartillerybomb.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "renderLayer" : "Monster+1",
+  "power" : 50,
+  "speed" : 75,
+  "supportsProcessing" : true,
+  "damagePoly" : [ [-4.5, 0], [-3, -3], [0, -4.5], [3, -3], [4.5, 0], [3, 3], [0, 4.5], [-3, 3] ],
+  "emitters" : [ "akkimaritrailbig" ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/akkimariacidexplosion/akkimariacidexplosion-effect.config"
+    },
+	//ACID SPREAD
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    }
+  ],
+  "statusEffects" : [
+    "akkimariacidburn"
+  ],
+  "lightColor" : [0, 75, 10],
+  "fullbright" : true,
+  "damageType" : "NoDamage",
+  "damageKind" : "akkimariacid"
+}

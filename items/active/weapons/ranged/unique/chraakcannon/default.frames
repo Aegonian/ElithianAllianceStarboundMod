@@ -1,0 +1,23 @@
+{
+  "frameGrid" : {
+    "size" : [61, 21],
+    "dimensions" : [10, 2],
+
+    "names" : [
+      [ "gun", "fire", "reload.1", "reload.2", "reload.3", "reload.4", "reload.5", "reload.6", "reload.7", null ],
+      [ "transformToHammer.1", "transformToHammer.2", "transformToHammer.3", "transformToHammer.4", "transformToHammer.5", "transformToHammer.6", "transformToHammer.7", "transformToHammer.8", "transformToHammer.9", "hammer" ]
+    ]
+  },
+
+  "aliases" : {
+    "transformToGun.1" : "transformToHammer.9",
+    "transformToGun.2" : "transformToHammer.8",
+    "transformToGun.3" : "transformToHammer.7",
+    "transformToGun.4" : "transformToHammer.6",
+    "transformToGun.5" : "transformToHammer.5",
+    "transformToGun.6" : "transformToHammer.4",
+    "transformToGun.7" : "transformToHammer.3",
+    "transformToGun.8" : "transformToHammer.2",
+    "transformToGun.9" : "transformToHammer.1"
+  }
+}
