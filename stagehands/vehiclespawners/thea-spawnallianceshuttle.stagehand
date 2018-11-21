@@ -1,7 +1,7 @@
 {
   "type" : "thea-spawnallianceshuttle",
 
-  "scripts" : ["/stagehands/thea-spawnvehicle.lua"],
+  "scripts" : ["/stagehands/vehiclespawners/thea-spawnvehicle.lua"],
   "scriptDelta" : 10,
   
   "vehicle" : "allianceshuttle",

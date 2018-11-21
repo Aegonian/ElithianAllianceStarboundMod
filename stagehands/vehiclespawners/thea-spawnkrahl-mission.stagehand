@@ -1,7 +1,7 @@
 {
   "type" : "thea-spawnkrahl-mission",
 
-  "scripts" : ["/stagehands/thea-vehiclerespawner.lua"],
+  "scripts" : ["/stagehands/vehiclespawners/thea-vehiclerespawner.lua"],
   "scriptDelta" : 10,
   
   "vehicle" : "avikanmech",

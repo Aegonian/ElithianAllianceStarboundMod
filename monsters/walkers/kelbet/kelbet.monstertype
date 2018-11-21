@@ -15,7 +15,7 @@
       "/monsters/monster.lua"
     ],
 
-    "behavior" : "monster",
+    "behavior" : "thea-monster-passive",
 
     "behaviorConfig" : {
       "damageOnTouch" : false,

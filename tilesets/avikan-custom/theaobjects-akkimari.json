@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":9,
+ "tilecount":12,
  "tileheight":88,
  "tileproperties":
     {
@@ -23,6 +23,22 @@
          "imagePositionX":"-8",
          "imagePositionY":"0",
          "object":"akkimarichest",
+         "tilesetDirection":"right"
+        },
+     "10":
+        {
+         "\/\/shortdescription":"Akris Beacon",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"akkimaribeacon",
+         "tilesetDirection":"right"
+        },
+     "11":
+        {
+         "\/\/shortdescription":"Akris Side Plate",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"akkimarisideplatinginverted",
          "tilesetDirection":"right"
         },
      "2":
@@ -80,6 +96,14 @@
          "imagePositionY":"0",
          "object":"akkimarivaashbarrel",
          "tilesetDirection":"right"
+        },
+     "9":
+        {
+         "\/\/shortdescription":"Akris Banner",
+         "imagePositionX":"-8",
+         "imagePositionY":"-64",
+         "object":"akkimaribanner",
+         "tilesetDirection":"right"
         }
     },
  "tiles":
@@ -91,6 +115,14 @@
      "1":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarichest.png"
+        },
+     "10":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimaribeacon.png"
+        },
+     "11":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarisideplatinginverted.png"
         },
      "2":
         {
@@ -119,6 +151,10 @@
      "8":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarivaashbarrel.png"
+        },
+     "9":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimaribanner.png"
         }
     },
  "tilewidth":48

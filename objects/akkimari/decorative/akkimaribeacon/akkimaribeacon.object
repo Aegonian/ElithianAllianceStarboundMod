@@ -1,0 +1,62 @@
+{
+  "objectName" : "akkimaribeacon",
+  "colonyTags" : ["akkimari"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 60,
+  "description" : "An beacon sending out some unknown signal.",
+  "shortdescription" : "Akris Beacon",
+  "race" : "akkimari",
+  "lightColor" : [0, 40, 0],
+
+  "apexDescription" : "A weird beacon. What is it doing here?",
+  "avianDescription" : "A beacon of some sort.",
+  "floranDescription" : "Floran uneasssy near thiss beacon.",
+  "glitchDescription" : "Ominous. This beacon makes me feel like something's coming for me...",
+  "humanDescription" : "This beacon makes me feel odd.",
+  "hylotlDescription" : "A strange device, likely some alien beacon. I hope it's not calling anything here.",
+  "novakidDescription" : "A weird device built by some weird alien.",
+
+  "aegiDescription" : "Akkimari technology is impressive, but something about this beacon makes me feel uneasy.",
+  "avikanDescription" : "I'm feeling a bit ill approaching this beacon...",
+  "erixianDescription" : "I'm feeling a bit uneasy. I'm not sure this beacon is safe.",
+  "trinkDescription" : "Interference from this beacon is messing up my systems. Is it a scrambler?",
+  "hymidDescription" : "This beacon feels ominous somehow.",
+  "notixDescription" : "I doubt others can hear it, but this beacon is sending out a signal that makes me nauseous.",
+  "jorgasianDescription" : "There's something off about this beacon...",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Scanning... System failure. Analysis incomplete.",
+  "akkimariDescription" : "Akki use beacon to contact home. Akki call for help, Akkimari come.",
+
+  "inventoryIcon" : "akkimaribeaconicon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "akkimaribeacon.png:<color>", "fullbright" : true }, { "image" : "akkimaribeaconlit.png:<color>" } ],
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "lightPosition" : [0, 2],
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "bottom" ]
+    },
+    {
+	  "imageLayers" : [ { "image" : "akkimaribeacon.png:<color>", "fullbright" : true }, { "image" : "akkimaribeaconlit.png:<color>" } ],
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "lightPosition" : [0, 2],
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

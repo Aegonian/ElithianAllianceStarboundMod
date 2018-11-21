@@ -33,8 +33,9 @@
           "default" : [
             "Kill, kill, kill!",
             "Dead! You finished!",
+            "Akki assa dakka!",
             "<selfname> going to eat you!",
-            "You belong to <selfname> now!",
+            "Dakka belong to <selfname> now!",
             "<selfname> gonna eat!"
           ]
         }
@@ -42,25 +43,30 @@
     }
   },
 
+  "matchColorIndices" : true,
   "items" : {
     "override" : [
       [0,
 	    [
           {
             "head" : [
-			  { "name" : "akkimari-scavengerhead" },
-			  { "name" : "akkimari-scavengerhead2" },
-			  { "name" : "akkimari-scavengerhead3" },
-			  { "name" : "akkimari-scavengerhead4" }
+			  { "name" : "akkimari-scavengerhead", "parameters" : { "colorIndex" : [1, 2, 11] } },
+			  { "name" : "akkimari-scavengerhead2", "parameters" : { "colorIndex" : [1, 2, 11] } },
+			  { "name" : "akkimari-scavengerhead3", "parameters" : { "colorIndex" : [1, 2, 11] } },
+			  { "name" : "akkimari-scavengerhead4", "parameters" : { "colorIndex" : [1, 2, 11] } },
+			  { "name" : "akkimari-tier1head", "parameters" : { "colorIndex" : [1, 2, 11] } },
+			  { "name" : "akkimari-tier3head", "parameters" : { "colorIndex" : [1, 2, 11] } }
 			],
             "chest" : [
-			  { "name" : "akkimari-scavengerchest" },
-			  { "name" : "akkimari-scavengerchest2" }
+			  { "name" : "akkimari-scavengerchest", "parameters" : { "colorIndex" : [1, 2, 11] } },
+			  { "name" : "akkimari-scavengerchest2", "parameters" : { "colorIndex" : [1, 2, 11] } },
+			  { "name" : "akkimari-tier1chest", "parameters" : { "colorIndex" : [1, 2, 11] } }
 			],
             "legs" : [
-			  { "name" : "akkimari-scavengerlegs" },
-			  { "name" : "akkimari-scavengerlegs2" },
-			  { "name" : "akkimari-scavengerlegs3" }
+			  { "name" : "akkimari-scavengerlegs", "parameters" : { "colorIndex" : [1, 2, 11] } },
+			  { "name" : "akkimari-scavengerlegs2", "parameters" : { "colorIndex" : [1, 2, 11] } },
+			  { "name" : "akkimari-scavengerlegs3", "parameters" : { "colorIndex" : [1, 2, 11] } },
+			  { "name" : "akkimari-tier1legs", "parameters" : { "colorIndex" : [1, 2, 11] } }
 			],
             "primary" : [
 			  "akkimari-tier1broadsword",
@@ -74,19 +80,23 @@
           },
 		  {
             "head" : [
-			  { "name" : "akkimari-scavengerhead" },
-			  { "name" : "akkimari-scavengerhead2" },
-			  { "name" : "akkimari-scavengerhead3" },
-			  { "name" : "akkimari-scavengerhead4" }
+			  { "name" : "akkimari-scavengerhead", "parameters" : { "colorIndex" : [1, 2, 11] } },
+			  { "name" : "akkimari-scavengerhead2", "parameters" : { "colorIndex" : [1, 2, 11] } },
+			  { "name" : "akkimari-scavengerhead3", "parameters" : { "colorIndex" : [1, 2, 11] } },
+			  { "name" : "akkimari-scavengerhead4", "parameters" : { "colorIndex" : [1, 2, 11] } },
+			  { "name" : "akkimari-tier1head", "parameters" : { "colorIndex" : [1, 2, 11] } },
+			  { "name" : "akkimari-tier3head", "parameters" : { "colorIndex" : [1, 2, 11] } }
 			],
             "chest" : [
-			  { "name" : "akkimari-scavengerchest" },
-			  { "name" : "akkimari-scavengerchest2" }
+			  { "name" : "akkimari-scavengerchest", "parameters" : { "colorIndex" : [1, 2, 11] } },
+			  { "name" : "akkimari-scavengerchest2", "parameters" : { "colorIndex" : [1, 2, 11] } },
+			  { "name" : "akkimari-tier1chest", "parameters" : { "colorIndex" : [1, 2, 11] } }
 			],
             "legs" : [
-			  { "name" : "akkimari-scavengerlegs" },
-			  { "name" : "akkimari-scavengerlegs2" },
-			  { "name" : "akkimari-scavengerlegs3" }
+			  { "name" : "akkimari-scavengerlegs", "parameters" : { "colorIndex" : [1, 2, 11] } },
+			  { "name" : "akkimari-scavengerlegs2", "parameters" : { "colorIndex" : [1, 2, 11] } },
+			  { "name" : "akkimari-scavengerlegs3", "parameters" : { "colorIndex" : [1, 2, 11] } },
+			  { "name" : "akkimari-tier1legs", "parameters" : { "colorIndex" : [1, 2, 11] } }
 			],
             "primary" : [
 			  "akkimari-trackrifle-npc",

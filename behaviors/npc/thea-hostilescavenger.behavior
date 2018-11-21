@@ -1,0 +1,405 @@
+{
+  "name": "thea-hostilescavenger",
+  "description": null,
+  "scripts": [
+    "/scripts/behavior.lua",
+    "/scripts/actions/math.lua",
+    "/scripts/actions/world.lua",
+    "/scripts/actions/dialog.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/time.lua",
+    "/scripts/actions/npc.lua"
+  ],
+  "parameters": {
+    "play": false
+  },
+  "root": {
+    "title": "Villager",
+    "type": "composite",
+    "name": "dynamic",
+    "parameters": {},
+    "children": [
+      {
+        "title": "overrides",
+        "type": "module",
+        "name": "overrides",
+        "parameters": {}
+      },
+      {
+        "title": "selector",
+        "type": "composite",
+        "name": "selector",
+        "parameters": {},
+        "children": [
+          {
+            "title": "parallel",
+            "type": "composite",
+            "name": "parallel",
+            "parameters": {
+              "fail": {"value": 1},
+              "success": {"value": -1}
+            },
+            "children": [
+              {
+                "title": "NPC Hostile Tracking",
+                "type": "module",
+                "name": "hostiletracking",
+                "parameters": {
+                  "trackingRange": {"value": 100}
+                }
+              },
+              {
+                "title": "sequence",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "setFlag",
+                    "type": "action",
+                    "name": "setFlag",
+                    "parameters": {
+                      "name": {"value": "inCombat"}
+                    }
+                  },
+                  {
+                    "title": "succeeder",
+                    "type": "decorator",
+                    "name": "succeeder",
+                    "parameters": {},
+                    "child": {
+                      "title": "selector",
+                      "type": "composite",
+                      "name": "selector",
+                      "parameters": {},
+                      "children": [
+                        {
+                          "title": "chance",
+                          "type": "action",
+                          "name": "chance",
+                          "parameters": {
+                            "chance": {"value": 0.75}
+                          }
+                        },
+                        {
+                          "title": "sequence",
+                          "type": "composite",
+                          "name": "sequence",
+                          "parameters": {},
+                          "children": [
+                            {
+                              "title": "entityInTypes",
+                              "type": "action",
+                              "name": "entityInTypes",
+                              "parameters": {
+                                "entity": {"key": "target"},
+                                "types": {"value": ["player"]}
+                              }
+                            },
+                            {
+                              "title": "selector",
+                              "type": "composite",
+                              "name": "selector",
+                              "parameters": {},
+                              "children": [
+                                {
+                                  "title": "listContains",
+                                  "type": "action",
+                                  "name": "listContains",
+                                  "parameters": {
+                                    "entity": {"key": "target"},
+                                    "list": {"key": "seenplayers"}
+                                  }
+                                },
+                                {
+                                  "title": "failer",
+                                  "type": "decorator",
+                                  "name": "failer",
+                                  "parameters": {},
+                                  "child": {
+                                    "title": "listPush",
+                                    "type": "action",
+                                    "name": "listPush",
+                                    "parameters": {
+                                      "entity": {"key": "target"},
+                                      "list": {"key": "seenplayers"}
+                                    },
+                                    "output": {
+                                      "list": "seenplayers"
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "title": "sayToEntity",
+                              "type": "action",
+                              "name": "sayToEntity",
+                              "parameters": {
+                                "dialogType": {"value": "dialog.reattack"},
+                                "entity": {"key": "target"},
+                                "tags": {"value": {}}
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "title": "sayToEntity",
+                          "type": "action",
+                          "name": "sayToEntity",
+                          "parameters": {
+                            "dialogType": {"value": "dialog.attack"},
+                            "entity": {"key": "target"},
+                            "tags": {"value": {}}
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "title": "NPC Combat",
+                    "type": "module",
+                    "name": "npccombat",
+                    "parameters": {}
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "failer",
+            "type": "decorator",
+            "name": "failer",
+            "parameters": {},
+            "child": {
+              "title": "selector",
+              "type": "composite",
+              "name": "selector",
+              "parameters": {},
+              "children": [
+                {
+                  "title": "inverter",
+                  "type": "decorator",
+                  "name": "inverter",
+                  "parameters": {},
+                  "child": {
+                    "title": "hasFlag",
+                    "type": "action",
+                    "name": "hasFlag",
+                    "parameters": {
+                      "name": {"key": "inCombat"}
+                    }
+                  }
+                },
+                {
+                  "title": "sequence",
+                  "type": "composite",
+                  "name": "sequence",
+                  "parameters": {},
+                  "children": [
+                    {
+                      "title": "unsetFlag",
+                      "type": "action",
+                      "name": "unsetFlag",
+                      "parameters": {
+                        "name": {"value": "inCombat"}
+                      }
+                    },
+                    {
+                      "title": "selector",
+                      "type": "composite",
+                      "name": "selector",
+                      "parameters": {},
+                      "children": [
+                        {
+                          "title": "chance",
+                          "type": "action",
+                          "name": "chance",
+                          "parameters": {
+                            "chance": {"value": 0.75}
+                          }
+                        },
+                        {
+                          "title": "sequence",
+                          "type": "composite",
+                          "name": "sequence",
+                          "parameters": {},
+                          "children": [
+                            {
+                              "title": "entityExists",
+                              "type": "action",
+                              "name": "entityExists",
+                              "parameters": {
+                                "entity": {"key": "target"}
+                              }
+                            },
+                            {
+                              "title": "sayToEntity",
+                              "type": "action",
+                              "name": "sayToEntity",
+                              "parameters": {
+                                "dialogType": {"value": "dialog.lostTarget"},
+                                "entity": {"key": "target"},
+                                "tags": {"value": {}}
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "title": "sayToEntity",
+                          "type": "action",
+                          "name": "sayToEntity",
+                          "parameters": {
+                            "dialogType": {"value": "dialog.killedTarget"},
+                            "entity": {"key": "target"},
+                            "tags": {"value": {}}
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "title": "sequence",
+        "type": "composite",
+        "name": "sequence",
+        "parameters": {},
+        "children": [
+          {
+            "title": "setDirection",
+            "type": "action",
+            "name": "setDirection",
+            "parameters": {
+              "direction": {"value": 1}
+            },
+            "output": {
+              "direction": "scavengeDirection"
+            }
+          },
+          {
+            "title": "dynamic",
+            "type": "composite",
+            "name": "dynamic",
+            "parameters": {},
+            "children": [
+              {
+                "title": "repeater",
+                "type": "decorator",
+                "name": "repeater",
+                "parameters": {},
+                "child": {
+                  "title": "sequence",
+                  "type": "composite",
+                  "name": "sequence",
+                  "parameters": {},
+                  "children": [
+                    {
+                      "title": "timer",
+                      "type": "action",
+                      "name": "timer",
+                      "parameters": {
+                        "time": {"value": [2, 10]}
+                      }
+                    },
+                    {
+                      "title": "reverseDirection",
+                      "type": "action",
+                      "name": "reverseDirection",
+                      "parameters": {
+                        "direction": {"key": "scavengeDirection"}
+                      },
+                      "output": {
+                        "direction": "scavengeDirection"
+                      }
+                    },
+                    {
+                      "title": "faceDirection",
+                      "type": "action",
+                      "name": "faceDirection",
+                      "parameters": {
+                        "direction": {"key": "scavengeDirection"}
+                      }
+                    },
+                    {
+                      "title": "timer",
+                      "type": "action",
+                      "name": "timer",
+                      "parameters": {
+                        "time": {"value": [1, 3]}
+                      }
+                    },
+                    {
+                      "title": "parallel",
+                      "type": "composite",
+                      "name": "parallel",
+                      "parameters": {
+                        "fail": {"value": -1},
+                        "success": {"value": -1}
+                      },
+                      "children": [
+                        {
+                          "title": "primaryFire",
+                          "type": "action",
+                          "name": "primaryFire",
+                          "parameters": {}
+                        },
+                        {
+                          "title": "sequence",
+                          "type": "composite",
+                          "name": "sequence",
+                          "parameters": {},
+                          "children": [
+                            {
+                              "title": "timer",
+                              "type": "action",
+                              "name": "timer",
+                              "parameters": {
+                                "time": {"value": 0.5}
+                              }
+                            },
+                            {
+                              "title": "parallel",
+                              "type": "composite",
+                              "name": "parallel",
+                              "parameters": {
+                                "fail": {"value": 1},
+                                "success": {"value": 1}
+                              },
+                              "children": [
+                                {
+                                  "title": "move",
+                                  "type": "action",
+                                  "name": "move",
+                                  "parameters": {
+                                    "direction": {"key": "scavengeDirection"}
+                                  }
+                                },
+                                {
+                                  "title": "timer",
+                                  "type": "action",
+                                  "name": "timer",
+                                  "parameters": {
+                                    "time": {"value": 2}
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

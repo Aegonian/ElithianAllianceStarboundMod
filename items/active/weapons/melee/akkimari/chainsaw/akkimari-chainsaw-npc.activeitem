@@ -1,0 +1,100 @@
+{
+  "itemName" : "akkimari-chainsaw-npc",
+  "price" : 300,
+  "level" : 6,
+  "fixedLevel" : false,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A powerful chainsaw that cuts through metal, flesh and rock all.",
+  "shortdescription" : "Akris Chainsaw (NPC)",
+  "tooltipKind" : "thea-chainsaw",
+  "category" : "Chainsaw",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","chainsaw","akkimari"],
+
+  "inventoryIcon" : "akkimari-chainsaw.png:idle",
+
+  "animation" : "akkimari-chainsaw-npc.animation",
+  "animationParts" : {
+    "blade" : "akkimari-chainsaw.png",
+	"lights" : "akkimari-chainsawlights.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "idleLoop" : [ "/sfx/tools/chainsaw_idle.ogg" ],
+	  "holdLoop" : [ "/sfx/tools/chainsaw_cut_wood.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/energymeleeweapon.lua"],
+
+  "activeTime" : 2.1,
+
+  "elementalType" : "akkimariscrapper",
+
+  "aimOffset" : -1.0,
+  
+  "primaryAbility" : {
+    "name" : "Cut",
+    "scripts" : ["/items/active/weapons/melee/akkimari/chainsaw/akkimari-chainsaw-npc.lua"],
+    "class" : "AkkimariChainSawNPC",
+
+	//NPC behaviour settings
+	"materialCheckPosition" : [1.5, -2.75],		//Position to check for materials. X value is multiplied by facingDirection
+	"forceMiningMaterial" : "akkimariscrap",	//Material to look for. If this material is at the check position, the weapon forces the user to start mining
+	"forceMiningTime" : 6.0,					//For how long we should mine when forced to
+	"forceMiningCooldownTime" : 4.0,			//Cooldown time in between forced mining activations
+	"enemyDetectionRange" : 50,					//Range at which to detect players
+	"enemyDetectionTime" : 10.0,				//If a player was detected within the last X seconds, disable forced mining behaviour
+	
+	//Weapon settings
+    "fireTime" : 0.1,
+    "baseDps" : 13.5,
+	"cooldownTime" : 0.3,
+	
+	//Tile damage settings
+	"tileDamage" : 0.0,
+	"damageTileDepth" : 3,
+	"damageForeground" : true,
+	"damageBackground" : false,
+	
+	"damageConfig" : {
+      "damageSourceKind" : "akkimariscrapper",
+      "statusEffects" : [ ],
+      "knockbackMode" : "aim",
+      "knockback" : 1,
+      "timeoutGroup" : "primary"
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : -5,
+        "weaponRotation" : 25,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 0],
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      },
+      "hold" : {
+        "duration" : 1.25,
+		
+        "armRotation" : -10,
+        "weaponRotation" : 15,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 0],
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/thea-buildchainsaw.lua"
+}

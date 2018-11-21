@@ -1,0 +1,31 @@
+{
+  "materialId" : 30171,
+  "materialName" : "akkimariscrap",
+  "particleColor" : [181, 128, 91, 255],
+  "itemDrop" : "akkimariscrap",
+  "shortdescription" : "Scrap Metal",
+
+  "description" : "A heap of scrap metal.",
+  "glitchDescription" : "Uninterested. A heap of junk.",
+  "floranDescription" : "Floran seesss only junk.",
+  "novakidDescription" : "That's some junk alright.",
+  
+  "drodenDescription" : "Detected scrap metal. Material value is minimal.",
+  "akkimariDescription" : "Akki take scrap, make things!",
+
+  "footstepSound" : "/sfx/blocks/footstep_bone.ogg",
+  "health" : 4,
+  "category" : "materials",
+  "falling" : true,
+  "cascading" : true,
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "akkimariscrap.png",
+    "variants" : 8,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 10
+  }
+}

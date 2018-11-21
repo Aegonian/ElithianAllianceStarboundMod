@@ -87,7 +87,7 @@
       "spawnChance" : 0.05,
       "monsterType" : "kelbet",
       "monsterParameters" : {
-        "aggressive" : true
+        "aggressive" : false
       }
     }
   },

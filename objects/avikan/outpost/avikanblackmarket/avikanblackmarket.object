@@ -29,6 +29,7 @@
       { "item" : { "name" : "avikanmerittoken" }, "price" : 175 },
 	  { "item" : { "name" : "avikanarmring" }, "price" : 1000 },
 	  { "item" : { "name" : "avikandronemissilepod" }, "price" : 10000 },
+	  { "item" : { "name" : "violatedioncore" }, "prerequisiteQuest" : "avikangunrangeunlock", "price" : 10000 },
 	  { "item" : { "name" : "avikangift" }, "price" : 1000 },
 	  { "item" : { "name" : "avikanshockcore" }, "price" : 1000 },
 	  { "item" : { "name" : "remotejumpgatecontroller" }, "prerequisiteQuest" : "keffrider3", "price" : 2500 },

@@ -1,0 +1,54 @@
+{
+  "objectName" : "allianceshuttleobjectrusted",
+  "colonyTags" : ["alliance","vehicle"],
+  "rarity" : "Legendary",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 2500,
+  "description" : "A rusted shuttlecraft that's been long out of commission.",
+  "shortdescription" : "Rusted Alliance Shuttlecraft",
+  "race" : "aegi",
+  
+  "health" : 6,
+
+  "apexDescription" : "A rusted shuttle. It's of no use to anyone but scavengers at this point.",
+  "avianDescription" : "A useless rusted shuttle. Its wings were clipped by time.",
+  "floranDescription" : "Russsted out sshuttle iss worthless.",
+  "glitchDescription" : "Saddened. This vehicle has seen the best of its days.",
+  "humanDescription" : "This shuttle is rusted through. It's little more than scrap metal now.",
+  "hylotlDescription" : "A once beautiful shuttle brought low by time and weather.",
+  "novakidDescription" : "A rusted out ship, it ain't of any use now.",
+
+  "aegiDescription" : "This ASA-26 Ranger has seen better days. I doubt it'll ever fly again.",
+  "avikanDescription" : "A rusted-out alien vessel.",
+  "erixianDescription" : "This shuttle is worn well beyond use.",
+  "trinkDescription" : "It takes a lot for a Ranger to start rusting.",
+  "hymidDescription" : "This Ranger is in no flying condition.",
+  "notixDescription" : "Rusted out Rangers are a rare find. This shuttle has been here for decades.",
+  "jorgasianDescription" : "This shuttle won't ever fly again.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien spacecraft. Status: decommissioned.",
+  "akkimariDescription" : "Akki take parts, make new ship. Much better ship!",
+
+  "inventoryIcon" : "allianceshuttlerustedicon.png",
+  "orientations" : [
+    {
+      "image" : "allianceshuttlerusted.png:<color>",
+      "imagePosition" : [-72, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+	{
+      "image" : "allianceshuttlerustedleft.png:<color>",
+      "imagePosition" : [-72, 0],
+      "direction" : "left",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

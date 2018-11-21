@@ -3095,7 +3095,7 @@
                  "y":1664
                 }, 
                 {
-                 "gid":366,
+                 "gid":369,
                  "height":64,
                  "id":1954,
                  "name":"",
@@ -3111,7 +3111,7 @@
                  "y":1640
                 }, 
                 {
-                 "gid":377,
+                 "gid":380,
                  "height":40,
                  "id":1955,
                  "name":"",
@@ -3127,7 +3127,7 @@
                  "y":1640
                 }, 
                 {
-                 "gid":412,
+                 "gid":415,
                  "height":8,
                  "id":1957,
                  "name":"",
@@ -3143,7 +3143,7 @@
                  "y":1584
                 }, 
                 {
-                 "gid":386,
+                 "gid":389,
                  "height":20,
                  "id":1960,
                  "name":"",
@@ -3159,7 +3159,7 @@
                  "y":1640
                 }, 
                 {
-                 "gid":2147484034,
+                 "gid":2147484037,
                  "height":20,
                  "id":1961,
                  "name":"",
@@ -3175,7 +3175,7 @@
                  "y":1640
                 }, 
                 {
-                 "gid":451,
+                 "gid":454,
                  "height":16,
                  "id":1962,
                  "name":"",
@@ -3191,7 +3191,7 @@
                  "y":1640
                 }, 
                 {
-                 "gid":428,
+                 "gid":431,
                  "height":24,
                  "id":1964,
                  "name":"",
@@ -3207,7 +3207,7 @@
                  "y":1640
                 }, 
                 {
-                 "gid":492,
+                 "gid":495,
                  "height":8,
                  "id":1965,
                  "name":"",
@@ -3223,7 +3223,7 @@
                  "y":1624
                 }, 
                 {
-                 "gid":486,
+                 "gid":489,
                  "height":8,
                  "id":1967,
                  "name":"",
@@ -3239,7 +3239,7 @@
                  "y":1624
                 }, 
                 {
-                 "gid":539,
+                 "gid":542,
                  "height":16,
                  "id":1968,
                  "name":"",
@@ -3255,7 +3255,7 @@
                  "y":1640
                 }, 
                 {
-                 "gid":446,
+                 "gid":449,
                  "height":16,
                  "id":1969,
                  "name":"",
@@ -3287,7 +3287,7 @@
                  "y":1552
                 }, 
                 {
-                 "gid":375,
+                 "gid":378,
                  "height":20,
                  "id":1975,
                  "name":"",
@@ -3351,7 +3351,7 @@
                  "y":1528
                 }, 
                 {
-                 "gid":615,
+                 "gid":618,
                  "height":16,
                  "id":1986,
                  "name":"",
@@ -3383,7 +3383,7 @@
                  "y":1680
                 }, 
                 {
-                 "gid":380,
+                 "gid":383,
                  "height":8,
                  "id":1991,
                  "name":"",
@@ -3399,7 +3399,7 @@
                  "y":1640
                 }, 
                 {
-                 "gid":391,
+                 "gid":394,
                  "height":16,
                  "id":1992,
                  "name":"",
@@ -3415,7 +3415,7 @@
                  "y":1560
                 }, 
                 {
-                 "gid":2147484039,
+                 "gid":2147484042,
                  "height":16,
                  "id":1993,
                  "name":"",
@@ -3431,7 +3431,7 @@
                  "y":1560
                 }, 
                 {
-                 "gid":391,
+                 "gid":394,
                  "height":16,
                  "id":1994,
                  "name":"",
@@ -4191,15 +4191,15 @@
          "source":"..\/..\/..\/tilesets\/avikan-custom\/theaobjects-akkimari.json"
         }, 
         {
-         "firstgid":362,
+         "firstgid":365,
          "source":"..\/..\/..\/tilesets\/avikan-custom\/theaobjects-mission.json"
         }, 
         {
-         "firstgid":370,
+         "firstgid":373,
          "source":"..\/..\/..\/tilesets\/avikan-custom\/theaobjects-alliance.json"
         }, 
         {
-         "firstgid":548,
+         "firstgid":551,
          "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-category\/wire.json"
         }],
  "tilewidth":8,

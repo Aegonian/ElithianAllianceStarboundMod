@@ -9,6 +9,7 @@ function TheaChainSaw:init()
   self.holdLoopPlaying = false
   self.damageLoopPlaying = false
   self.active = false
+  self.damagingTiles = false
   self.cooldownTimer = self.cooldownTime
   self.minimumActiveTimer = 0
 
@@ -23,6 +24,7 @@ function TheaChainSaw:init()
 
   self.weapon.onLeaveAbility = function()
 	self.weapon:setStance(self.stances.idle)
+	self.damagingTiles = false
   end
 end
 
@@ -32,6 +34,8 @@ function TheaChainSaw:update(dt, fireMode, shiftHeld)
 
   self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
   self.minimumActiveTimer = math.max(0, self.minimumActiveTimer - self.dt)
+  
+  animator.setParticleEmitterActive("miningSparks", self.damagingTiles)
   
   --world.debugText("Chainsaw Active? " .. sb.printJson(self.active), vec2.add(mcontroller.position(), {0,1}), "red")
   --world.debugText("Idle Loop Playing? " .. sb.printJson(self.idleLoopPlaying), vec2.add(mcontroller.position(), {0,2}), "red")
@@ -164,4 +168,6 @@ function TheaChainSaw:uninit()
   if animator.hasSound("damageLoop") then
 	animator.stopAllSounds("damageLoop")
   end
+  
+  animator.setParticleEmitterActive("miningSparks", false)
 end

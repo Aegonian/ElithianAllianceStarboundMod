@@ -13,7 +13,7 @@
   "drodenDescription" : "Analysis complete. Scrap metal hull plating. Exact composition unknown.",
   "akkimariDescription" : "Scrap plating. Cheap and strong, not very pretty.",
 
-  "footstepSound" : "/sfx/blocks/footstep_sand.ogg",
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
   "health" : 6,
   "category" : "materials",
   

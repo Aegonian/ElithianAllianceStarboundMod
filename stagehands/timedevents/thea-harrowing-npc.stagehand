@@ -1,0 +1,18 @@
+{
+  "type" : "thea-harrowing-npc",
+
+  "scripts" : ["/stagehands/timedevents/thea-eventtimer.lua"],
+  "scriptDelta" : 10,
+  
+  //NPC Settings
+  "npcSpecies" : [ "aegi", "trink" ],
+  "npcType" : "harrowing-civilian",
+  
+  //Event Timing Settings - All values in numbers or as null
+  "eventStartDay" : 290,		//If set, this day is used to mark the start of the event (inclusive)
+  "eventEndDay" : 311,			//If set, this day is used to mark the end of the event (exclusive - when it's this day, the event has ended!)
+  "eventActiveMonth" : null,	//If set and days are not set, the event is active for the duration of this month
+  
+  //Misc Settings
+  "stagehandDieAfterSpawning" : false	//If true, the stagehand dies after spawning an NPC
+}

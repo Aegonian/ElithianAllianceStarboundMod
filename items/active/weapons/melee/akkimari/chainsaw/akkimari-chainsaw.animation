@@ -131,7 +131,15 @@
     "swoosh" : {}
   },
 
-  "particleEmitters" : {},
+  "particleEmitters" : {
+	"miningSparks" : {
+	  "active" : false,
+	  "emissionRate" : 12.0,
+	  "transformationGroups" : ["weapon"],
+	  "offsetRegion" : [-0.25, -0.125, 2.0, -0.125],
+	  "particles" : [ ]
+	}
+  },
 
   "sounds" : {
     "idleLoop" : [ ],

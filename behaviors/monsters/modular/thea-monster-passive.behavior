@@ -1,0 +1,805 @@
+//Custom variant on the base monster script that allows the monster to perform actions without being aggressive. Useful for wildlife that should flee from players and NPCs without being flagged as "aggressive", which prevents NPCs from attacking them
+
+{
+  "name": "thea-monster-passive",
+  "description": "",
+  "scripts": [
+    "/scripts/behavior.lua",
+    "/scripts/actions/entity.lua",
+    "/scripts/actions/builders.lua",
+    "/scripts/actions/notification.lua",
+    "/scripts/actions/pets.lua",
+    "/scripts/actions/world.lua",
+    "/scripts/actions/status.lua"
+  ],
+  "parameters": {
+    "damageOnTouch": false,
+    "periodicActions": [],
+    "hostileActions": [],
+    "foundTargetActions": [],
+    "approachActions": [],
+    "wanderActions": [],
+    "concurrentActions": [],
+    "concurrentHostileActions": [],
+    "fleeActions": [],
+    "damageTakenActions": [],
+    "spawnActions": [],
+    "followDistance": 5,
+    "followActions": [],
+    "attackKnockbackThreshold": 15
+  },
+  "root": {
+    "title": "sequence",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "entityConfigParameter",
+        "type": "action",
+        "name": "entityConfigParameter",
+        "parameters": {
+          "default": {"value": true},
+          "path": {"value": "aggressive"}
+        },
+        "output": {
+          "bool": "aggressive"
+        }
+      },
+      {
+        "title": "setDamageOnTouch",
+        "type": "action",
+        "name": "setDamageOnTouch",
+        "parameters": {
+          "touchDamage": {"value": false}
+        }
+      },
+      {
+        "title": "succeeder",
+        "type": "decorator",
+        "name": "succeeder",
+        "parameters": {},
+        "child": {
+          "title": "spawnActions",
+          "type": "action",
+          "name": "sequenceActions",
+          "parameters": {
+            "actions": {"key": "<spawnActions>"}
+          }
+        }
+      },
+      {
+        "title": "setNumber",
+        "type": "action",
+        "name": "setNumber",
+        "parameters": {
+          "number": {"value": 0}
+        },
+        "output": {
+          "number": "heading"
+        }
+      },
+      {
+        "title": "setAggressive",
+        "type": "action",
+        "name": "setAggressive",
+        "parameters": {
+          "aggressive": {"value": false}
+        }
+      },
+      {
+        "title": "parallel",
+        "type": "composite",
+        "name": "parallel",
+        "parameters": {
+          "fail": {"value": -1},
+          "success": {"value": -1}
+        },
+        "children": [
+          {
+            "title": "receivedNotification",
+            "type": "action",
+            "name": "receivedNotification",
+            "parameters": {
+              "type": {"value": "setOwner"}
+            },
+            "output": {
+              "target": "ownerOverride"
+            }
+          },
+          {
+            "title": "selector",
+            "type": "composite",
+            "name": "selector",
+            "parameters": {},
+            "children": [
+              {
+                "title": "sequence",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "monster-targeting",
+                    "type": "module",
+                    "name": "monster-targeting",
+                    "parameters": {}
+                  },
+                  {
+                    "title": "setFlag",
+                    "type": "action",
+                    "name": "setFlag",
+                    "parameters": {
+                      "name": {"value": "hostile"}
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "sequence",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "unsetFlag",
+                    "type": "action",
+                    "name": "unsetFlag",
+                    "parameters": {
+                      "name": {"value": "hostile"}
+                    }
+                  },
+                  {
+                    "title": "selector",
+                    "type": "composite",
+                    "name": "selector",
+                    "parameters": {},
+                    "children": [
+                      {
+                        "title": "tetherEntity",
+                        "type": "action",
+                        "name": "tetherEntity",
+                        "parameters": {},
+                        "output": {
+                          "entity": "target"
+                        }
+                      },
+                      {
+                        "title": "ownerEntity",
+                        "type": "action",
+                        "name": "ownerEntity",
+                        "parameters": {
+                          "owner": {"key": "ownerOverride"}
+                        },
+                        "output": {
+                          "entity": "target"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "parallel",
+            "type": "composite",
+            "name": "parallel",
+            "parameters": {
+              "fail": {"value": 1},
+              "success": {"value": -1}
+            },
+            "children": [
+              {
+                "title": "inverter",
+                "type": "decorator",
+                "name": "inverter",
+                "parameters": {},
+                "child": {
+                  "title": "entityExists",
+                  "type": "action",
+                  "name": "entityExists",
+                  "parameters": {
+                    "entity": {"key": "target"}
+                  }
+                }
+              },
+              {
+                "title": "succeeder",
+                "type": "decorator",
+                "name": "succeeder",
+                "parameters": {},
+                "child": {
+                  "title": "concurrentActions",
+                  "type": "action",
+                  "name": "parallelActions",
+                  "parameters": {
+                    "actions": {"key": "<concurrentActions>"}
+                  }
+                }
+              },
+              {
+                "title": "runner",
+                "type": "action",
+                "name": "runner",
+                "parameters": {}
+              }
+            ]
+          },
+          {
+            "title": "sequence",
+            "type": "composite",
+            "name": "sequence",
+            "parameters": {},
+            "children": [
+              {
+                "title": "inverter",
+                "type": "decorator",
+                "name": "inverter",
+                "parameters": {},
+                "child": {
+                  "title": "hasFlag",
+                  "type": "action",
+                  "name": "hasFlag",
+                  "parameters": {
+                    "name": {"key": "crawling"}
+                  }
+                }
+              },
+              {
+                "title": "setNumber",
+                "type": "action",
+                "name": "setNumber",
+                "parameters": {
+                  "number": {"value": 0}
+                },
+                "output": {
+                  "number": "heading"
+                }
+              }
+            ]
+          },
+          {
+            "title": "sequence",
+            "type": "composite",
+            "name": "sequence",
+            "parameters": {},
+            "children": [
+              {
+                "title": "entityExists",
+                "type": "action",
+                "name": "entityExists",
+                "parameters": {
+                  "entity": {"key": "target"}
+                }
+              },
+              {
+                "title": "hasFlag",
+                "type": "action",
+                "name": "hasFlag",
+                "parameters": {
+                  "name": {"key": "hostile"}
+                }
+              },
+              {
+                "title": "setDamageOnTouch",
+                "type": "action",
+                "name": "setDamageOnTouch",
+                "parameters": {
+                  "touchDamage": {"key": "<damageOnTouch>"}
+                }
+              },
+              {
+                "title": "setAggressive",
+                "type": "action",
+                "name": "setAggressive",
+                "parameters": {
+                  "aggressive": {"value": false}
+                }
+              },
+              {
+                "title": "selector",
+                "type": "composite",
+                "name": "selector",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "parallel",
+                    "type": "composite",
+                    "name": "parallel",
+                    "parameters": {
+                      "fail": {"value": 1},
+                      "success": {"value": -1}
+                    },
+                    "children": [
+                      {
+                        "title": "hasFlag",
+                        "type": "action",
+                        "name": "hasFlag",
+                        "parameters": {
+                          "name": {"key": "hostile"}
+                        }
+                      },
+                      {
+                        "title": "entityExists",
+                        "type": "action",
+                        "name": "entityExists",
+                        "parameters": {
+                          "entity": {"key": "target"}
+                        }
+                      },
+                      {
+                        "title": "succeeder",
+                        "type": "decorator",
+                        "name": "succeeder",
+                        "parameters": {},
+                        "child": {
+                          "title": "concurrentHostileActions",
+                          "type": "action",
+                          "name": "parallelActions",
+                          "parameters": {
+                            "actions": {"key": "<concurrentHostileActions>"}
+                          }
+                        }
+                      },
+                      {
+                        "title": "runner",
+                        "type": "action",
+                        "name": "runner",
+                        "parameters": {}
+                      }
+                    ]
+                  },
+                  {
+                    "title": "failer",
+                    "type": "decorator",
+                    "name": "failer",
+                    "parameters": {},
+                    "child": {
+                      "title": "sequence",
+                      "type": "composite",
+                      "name": "sequence",
+                      "parameters": {},
+                      "children": [
+                        {
+                          "title": "setDamageOnTouch",
+                          "type": "action",
+                          "name": "setDamageOnTouch",
+                          "parameters": {
+                            "touchDamage": {"value": false}
+                          }
+                        },
+                        {
+                          "title": "setAggressive",
+                          "type": "action",
+                          "name": "setAggressive",
+                          "parameters": {
+                            "aggressive": {"value": false}
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "sequence",
+            "type": "composite",
+            "name": "sequence",
+            "parameters": {},
+            "children": [
+              {
+                "title": "hasFlag",
+                "type": "action",
+                "name": "hasFlag",
+                "parameters": {
+                  "name": {"key": "attacking"}
+                }
+              },
+              {
+                "title": "addStatModifier",
+                "type": "action",
+                "name": "addStatModifier",
+                "parameters": {
+                  "amount": {"key": "<attackKnockbackThreshold>"},
+                  "category": {"value": "monsterattack"},
+                  "stat": {"value": "knockbackThreshold"}
+                }
+              },
+              {
+                "title": "parallel",
+                "type": "composite",
+                "name": "parallel",
+                "parameters": {
+                  "fail": {"value": -1},
+                  "success": {"value": 1}
+                },
+                "children": [
+                  {
+                    "title": "inverter",
+                    "type": "decorator",
+                    "name": "inverter",
+                    "parameters": {},
+                    "child": {
+                      "title": "hasFlag",
+                      "type": "action",
+                      "name": "hasFlag",
+                      "parameters": {
+                        "name": {"key": "attacking"}
+                      }
+                    }
+                  },
+                  {
+                    "title": "runner",
+                    "type": "action",
+                    "name": "runner",
+                    "parameters": {}
+                  }
+                ]
+              },
+              {
+                "title": "clearPersistentEffects",
+                "type": "action",
+                "name": "clearPersistentEffects",
+                "parameters": {
+                  "category": {"value": "monsterattack"}
+                }
+              }
+            ]
+          },
+          {
+            "title": "dynamic",
+            "type": "composite",
+            "name": "dynamic",
+            "parameters": {},
+            "children": [
+              {
+                "title": "sequence",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "wasDamaged",
+                    "type": "action",
+                    "name": "wasDamaged",
+                    "parameters": {}
+                  },
+                  {
+                    "title": "damageTakenActions",
+                    "type": "action",
+                    "name": "selectorActions",
+                    "parameters": {
+                      "actions": {"key": "<damageTakenActions>"}
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "sequence",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "hasFlag",
+                    "type": "action",
+                    "name": "hasFlag",
+                    "parameters": {
+                      "name": {"key": "hostile"}
+                    }
+                  },
+                  {
+                    "title": "hasFlag",
+                    "type": "action",
+                    "name": "hasFlag",
+                    "parameters": {
+                      "name": {"key": "foundTarget"}
+                    }
+                  },
+                  {
+                    "title": "unsetFlag",
+                    "type": "action",
+                    "name": "unsetFlag",
+                    "parameters": {
+                      "name": {"value": "foundTarget"}
+                    }
+                  },
+                  {
+                    "title": "entityExists",
+                    "type": "action",
+                    "name": "entityExists",
+                    "parameters": {
+                      "entity": {"key": "target"}
+                    }
+                  },
+                  {
+                    "title": "foundTargetActions",
+                    "type": "action",
+                    "name": "selectorActions",
+                    "parameters": {
+                      "actions": {"key": "<foundTargetActions>"}
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "sequence",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "hasFlag",
+                    "type": "action",
+                    "name": "hasFlag",
+                    "parameters": {
+                      "name": {"key": "hostile"}
+                    }
+                  },
+                  {
+                    "title": "entityExists",
+                    "type": "action",
+                    "name": "entityExists",
+                    "parameters": {
+                      "entity": {"key": "target"}
+                    }
+                  },
+                  {
+                    "title": "flee",
+                    "type": "action",
+                    "name": "selectorActions",
+                    "parameters": {
+                      "actions": {"key": "<fleeActions>"}
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "parallel",
+                "type": "composite",
+                "name": "parallel",
+                "parameters": {
+                  "fail": {"value": 1},
+                  "success": {"value": -1}
+                },
+                "children": [
+                  {
+                    "title": "entityExists",
+                    "type": "action",
+                    "name": "entityExists",
+                    "parameters": {
+                      "entity": {"key": "target"}
+                    }
+                  },
+                  {
+                    "title": "hasFlag",
+                    "type": "action",
+                    "name": "hasFlag",
+                    "parameters": {
+                      "name": {"key": "hostile"}
+                    }
+                  },
+                  {
+                    "title": "inverter",
+                    "type": "decorator",
+                    "name": "inverter",
+                    "parameters": {},
+                    "child": {
+                      "title": "repeater",
+                      "type": "decorator",
+                      "name": "repeater",
+                      "parameters": {
+                        "maxLoops": {"value": -1},
+                        "untilSuccess": {"value": true}
+                      },
+                      "child": {
+                        "title": "inverter",
+                        "type": "decorator",
+                        "name": "inverter",
+                        "parameters": {},
+                        "child": {
+                          "title": "hostileActions",
+                          "type": "action",
+                          "name": "selectorActions",
+                          "parameters": {
+                            "actions": {"key": "<hostileActions>"}
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "sequence",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "inverter",
+                    "type": "decorator",
+                    "name": "inverter",
+                    "parameters": {},
+                    "child": {
+                      "title": "hasFlag",
+                      "type": "action",
+                      "name": "hasFlag",
+                      "parameters": {
+                        "name": {"key": "hostile"}
+                      }
+                    }
+                  },
+                  {
+                    "title": "periodicActions",
+                    "type": "action",
+                    "name": "selectorActions",
+                    "parameters": {
+                      "actions": {"key": "<periodicActions>"}
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "parallel",
+                "type": "composite",
+                "name": "parallel",
+                "parameters": {
+                  "fail": {"value": 1},
+                  "success": {"value": -1}
+                },
+                "children": [
+                  {
+                    "title": "entityExists",
+                    "type": "action",
+                    "name": "entityExists",
+                    "parameters": {
+                      "entity": {"key": "target"}
+                    }
+                  },
+                  {
+                    "title": "hasFlag",
+                    "type": "action",
+                    "name": "hasFlag",
+                    "parameters": {
+                      "name": {"key": "hostile"}
+                    }
+                  },
+                  {
+                    "title": "succeeder",
+                    "type": "decorator",
+                    "name": "succeeder",
+                    "parameters": {},
+                    "child": {
+                      "title": "approach",
+                      "type": "action",
+                      "name": "selectorActions",
+                      "parameters": {
+                        "actions": {"key": "<approachActions>"}
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "cooldown",
+                "type": "decorator",
+                "name": "cooldown",
+                "parameters": {
+                  "cooldown": {"value": 3},
+                  "onFail": {"value": true},
+                  "onSuccess": {"value": true}
+                },
+                "child": {
+                  "title": "parallel",
+                  "type": "composite",
+                  "name": "parallel",
+                  "parameters": {
+                    "fail": {"value": 1},
+                    "success": {"value": -1}
+                  },
+                  "children": [
+                    {
+                      "title": "inverter",
+                      "type": "decorator",
+                      "name": "inverter",
+                      "parameters": {},
+                      "child": {
+                        "title": "hasFlag",
+                        "type": "action",
+                        "name": "hasFlag",
+                        "parameters": {
+                          "name": {"key": "hostile"}
+                        }
+                      }
+                    },
+                    {
+                      "title": "entityExists",
+                      "type": "action",
+                      "name": "entityExists",
+                      "parameters": {
+                        "entity": {"key": "target"}
+                      }
+                    },
+                    {
+                      "title": "inverter",
+                      "type": "decorator",
+                      "name": "inverter",
+                      "parameters": {},
+                      "child": {
+                        "title": "entityInRange",
+                        "type": "action",
+                        "name": "entityInRange",
+                        "parameters": {
+                          "entity": {"key": "target"},
+                          "position": {"key": "self"},
+                          "range": {"key": "<followDistance>"},
+                          "xRange": {"key": ""},
+                          "yRange": {"key": ""}
+                        }
+                      }
+                    },
+                    {
+                      "title": "succeeder",
+                      "type": "decorator",
+                      "name": "succeeder",
+                      "parameters": {},
+                      "child": {
+                        "title": "follow",
+                        "type": "action",
+                        "name": "selectorActions",
+                        "parameters": {
+                          "actions": {"key": "<followActions>"}
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "sequence",
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": "inverter",
+                    "type": "decorator",
+                    "name": "inverter",
+                    "parameters": {},
+                    "child": {
+                      "title": "hasFlag",
+                      "type": "action",
+                      "name": "hasFlag",
+                      "parameters": {
+                        "name": {"key": "hostile"}
+                      }
+                    }
+                  },
+                  {
+                    "title": "wander",
+                    "type": "action",
+                    "name": "selectorActions",
+                    "parameters": {
+                      "actions": {"key": "<wanderActions>"},
+                      "dynamic": {"value": true}
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "runner",
+                "type": "action",
+                "name": "runner",
+                "parameters": {}
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

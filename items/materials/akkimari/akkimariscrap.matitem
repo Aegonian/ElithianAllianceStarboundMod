@@ -1,0 +1,11 @@
+{
+  "itemName" : "akkimariscrap",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "akkimariscrap.png",
+  "shortdescription" : "Scrap Metal",
+  "description" : "A heap of scrap metal.",
+
+  "materialId" : 30171
+}

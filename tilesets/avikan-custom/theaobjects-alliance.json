@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":178,
+ "tilecount":180,
  "tileheight":128,
  "tileproperties":
     {
@@ -712,6 +712,22 @@
          "imagePositionY":"0",
          "object":"rimslidingdoor",
          "tilesetDirection":"right"
+        },
+     "178":
+        {
+         "\/\/shortdescription":"Rusted Alliance Shuttlecraft",
+         "imagePositionX":"-72",
+         "imagePositionY":"0",
+         "object":"allianceshuttleobjectrusted",
+         "tilesetDirection":"right"
+        },
+     "179":
+        {
+         "\/\/shortdescription":"Rusted Alliance Shuttlecraft",
+         "imagePositionX":"-72",
+         "imagePositionY":"0",
+         "object":"allianceshuttleobjectrusted",
+         "tilesetDirection":"left"
         },
      "18":
         {
@@ -1787,6 +1803,14 @@
      "177":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/rimslidingdoor.png"
+        },
+     "178":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/allianceshuttlerusted.png"
+        },
+     "179":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/allianceshuttlerustedleft.png"
         },
      "18":
         {
