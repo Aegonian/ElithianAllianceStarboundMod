@@ -22,13 +22,22 @@ function update(dt)
 	--Must use this method as start time of os.time() is unknown and likely variable, and os.date() is unavailable in Starbound's version of LUA
 	local yearsSince2000 = (os.time() - os.time{year=2000, month=1, day=1, hour=0, sec=0}) / 31557600
 	local yearsSinceYearStart = yearsSince2000 - math.floor(yearsSince2000)
-	  
+	
+	--Figure out if this year is a leap year
+	local daysThisYear = 365
+	local currentYear = math.floor(yearsSince2000 + 2000)
+	world.debugText("Leap Year: " .. sb.print(checkLeapYear(currentYear)), vec2.add(entity.position(), {0,4}), "yellow")
+	world.debugText("Year: " .. sb.print(currentYear), vec2.add(entity.position(), {0,3}), "yellow")
+	if checkLeapYear(currentYear) then
+	  daysThisYear = 366
+	end
+	
 	--Calculate current month and day of the year
 	local currentMonth = math.ceil(yearsSinceYearStart * 12)
-	local currentDay = math.ceil(yearsSinceYearStart * 365)
+	local currentDay = math.ceil(yearsSinceYearStart * daysThisYear)
 	world.debugText("Month: " .. sb.print(currentMonth), vec2.add(entity.position(), {0,2}), "yellow")
 	world.debugText("Day: " .. sb.print(currentDay), vec2.add(entity.position(), {0,1}), "yellow")
-	  
+	
 	--Check if the current date matches the event dates
 	if self.eventStartDay and self.eventEndDay then
 	  if currentDay >= self.eventStartDay and currentDay < self.eventEndDay then
@@ -54,6 +63,28 @@ function update(dt)
   end
   
   world.debugText("Event active: " .. sb.print(self.eventActive), entity.position(), "yellow")
+end
+
+--This function is used to calculate whether the current year is a leap year or not
+function checkLeapYear(year)
+  local isLeapYear = false
+  
+  --To check for leap years, see if the current year is evenly divisible by 4, then 100, then 400
+  if (year % 4) == 0 then
+	if (year % 100) == 0 then
+	  if (year % 400) == 0 then
+		isLeapYear = true
+	  else
+		isLeapYear = false
+	  end
+	else
+	  isLeapYear = true
+	end
+  else
+	isLeapYear = false
+  end
+  
+  return isLeapYear
 end
 
 --This function is used to calculate a region around the stagehand position

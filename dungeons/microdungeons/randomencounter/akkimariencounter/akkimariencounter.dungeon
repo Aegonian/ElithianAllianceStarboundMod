@@ -5,7 +5,7 @@
     "rules" : [
     ],
 	
-    "anchor" : [ "akki-cargodrop", "akki-cargodrop2", "akki-tower", "akki-justicarspawn" ],
+    "anchor" : [ "akki-cargodrop", "akki-cargodrop2", "akki-tower", "akki-justicarspawn", "akki-beacon" ],
 
     "maxRadius" : 1000000,
     "maxParts" : 3,
@@ -42,6 +42,13 @@
       ],
       "def" : [ "tmx", "akki-justicarspawn.json" ],
       "minimumThreatLevel" : 2
+    },
+    {
+      "name" : "akki-beacon",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "akki-beacon.json" ]
     }
   ]
 }

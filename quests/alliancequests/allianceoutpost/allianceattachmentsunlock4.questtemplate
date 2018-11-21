@@ -21,7 +21,7 @@
         "type" : "killMonsters",
         "displayMonsterName" : "Akkimari Strikers",
         "targetMessage" : "akkimaristrikerDeath",
-        "count" : 5
+        "count" : 3
       }
     ],
 	"turnInDescription" : "Return to ^orange;Aberos ^reset;in the ^orange;Creon Embassy^reset;"

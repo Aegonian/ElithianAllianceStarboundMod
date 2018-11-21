@@ -25665,10 +25665,10 @@
          "y":0
         }, 
         {
-         "color":"#00ffff",
+         "color":"#7f00ff",
          "draworder":"topdown",
          "height":500,
-         "name":"events",
+         "name":"event-harrowing",
          "objects":[
                 {
                  "height":8,
@@ -25699,22 +25699,6 @@
                  "width":8,
                  "x":11104,
                  "y":2952
-                }, 
-                {
-                 "height":8,
-                 "id":3458,
-                 "name":"",
-                 "properties":
-                    {
-                     "npc":"aegi",
-                     "typeName":"harrowing-civilian"
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":11432,
-                 "y":3240
                 }, 
                 {
                  "height":8,
@@ -26000,6 +25984,21 @@
                  "width":8,
                  "x":4056,
                  "y":2920
+                }, 
+                {
+                 "height":8,
+                 "id":3497,
+                 "name":"",
+                 "properties":
+                    {
+                     "stagehand":"thea-harrowing-npc"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":11432,
+                 "y":3240
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -26008,7 +26007,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":3497,
+ "nextobjectid":3498,
  "orientation":"orthogonal",
  "properties":
     {
