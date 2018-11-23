@@ -51,7 +51,12 @@
 	  //CRAFTING GUIDES
 	  { "item" : { "name" : "avikancraftingguide" }, "prerequisiteQuest" : "avikancrafting", "price" : 1250 },
 	  //MANIPULATOR SKINS
-	  { "item" : { "name" : "avikanmanipulatorskin" }, "price" : 25000 }
+	  { "item" : { "name" : "avikanmanipulatorskin" }, "price" : 25000 },
+	  //ARMOUR
+	  { "item" : { "name" : "thea-hiddenhead" }, "price" : 500 },
+	  { "item" : { "name" : "thea-hiddenchest" }, "price" : 500 },
+	  { "item" : { "name" : "thea-hiddenlegs" }, "price" : 500 },
+	  { "item" : { "name" : "thea-hiddenback" }, "price" : 500 }
     ]
   },
   "printable" : false,

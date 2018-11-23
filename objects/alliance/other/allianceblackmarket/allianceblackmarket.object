@@ -59,7 +59,11 @@
 	  { "item" : { "name" : "alliancemanipulatorskin" }, "price" : 25000 },
 	  { "item" : { "name" : "trinkmanipulatorskin" }, "price" : 25000 },
 	  //ARMOUR
-	  { "item" : { "name" : "trink-rags" }, "price" : 1000 }
+	  { "item" : { "name" : "trink-rags" }, "price" : 1000 },
+	  { "item" : { "name" : "thea-hiddenhead" }, "price" : 500 },
+	  { "item" : { "name" : "thea-hiddenchest" }, "price" : 500 },
+	  { "item" : { "name" : "thea-hiddenlegs" }, "price" : 500 },
+	  { "item" : { "name" : "thea-hiddenback" }, "price" : 500 }
     ]
   },
 

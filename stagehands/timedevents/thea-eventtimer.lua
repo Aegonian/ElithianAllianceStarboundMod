@@ -40,10 +40,23 @@ function update(dt)
 	
 	--Check if the current date matches the event dates
 	if self.eventStartDay and self.eventEndDay then
-	  if currentDay >= self.eventStartDay and currentDay < self.eventEndDay then
+	  --If this is a leap year, and the start or end day is day 60 or later (February 29), increase start and/or end days by 1 to account for this leap day
+	  local finalStartDay = self.eventStartDay
+	  if finalStartDay >= 60 and checkLeapYear(currentYear) then
+		finalStartDay = self.eventStartDay + 1
+	  end
+	  local finalEndDay = self.eventEndDay
+	  if finalEndDay >= 60 and checkLeapYear(currentYear) then
+		finalEndDay = self.eventEndDay + 1
+	  end
+	  
+	  --If the current day is in between start and end days, activate the event
+	  if currentDay >= finalStartDay and currentDay < finalEndDay then
 		self.eventActive = true
 	  end
 	elseif self.eventActiveMonth then
+	  --If the current month is the event month, activate the event
+	  --Note that this function divides the year into 12 equally long months, and so actual start and end dates may not fully align with the intended month
 	  if currentMonth == self.eventActiveMonth then
 		self.eventActive = true
 	  end

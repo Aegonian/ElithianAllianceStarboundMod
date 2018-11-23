@@ -5,8 +5,8 @@
   "maxStack" : 1,
   "rarity" : "Common",
   "category" : "chestwear",
-  "description" : "Place this in your vanity slot to hide your equipment.",
-  "shortdescription" : "Hidden Chestpiece",
+  "description" : "A small device that hides armour in your chestwear slot.",
+  "shortdescription" : "Chestwear Cloaker",
   "tooltipKind" : "armor",
 
   "maleFrames" : {

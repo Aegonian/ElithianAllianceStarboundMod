@@ -14,9 +14,9 @@
   { "op" : "add",
 	"path" : "/speciesOrdering/-",
 	"value" : "trink"
-  },
+  }/*,
   { "op" : "add",
 	"path" : "/speciesOrdering/-",
 	"value" : "akkimari"
-  }
+  }*/
 ]

@@ -786,7 +786,8 @@
 			  { "item": { "name": "boratoseed" }, "rarity": 0.5 },
 			  { "item": { "name": "loftgrainseed" }, "rarity": 0.5 },
 			  { "item": { "name": "selvasseed" }, "rarity": 0.5 },
-			  { "item": { "name": "vahlberryseed" }, "rarity": 0.5 }
+			  { "item": { "name": "vahlberryseed" }, "rarity": 0.5 },
+			  { "item": { "name": "mellowrootseed" }, "rarity": 0.5 }
 			] ]
 		]
 	},
