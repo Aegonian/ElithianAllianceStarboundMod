@@ -38,7 +38,7 @@
       "animationCycle" : 0.5,
 
       "spaceScan" : 0.1,
-      "anchors" : [ "bottom" ],
+      "fgAnchors" : [ [-1, -1], [0, -1] ],
       "collision" : "platform",
       "flipImages" : true,
       "direction" : "right"
@@ -51,7 +51,7 @@
       "animationCycle" : 0.5,
 
       "spaceScan" : 0.1,
-      "anchors" : [ "bottom" ],
+      "fgAnchors" : [ [0, -1], [1, -1] ],
       "collision" : "platform",
       "direction" : "left"
     }

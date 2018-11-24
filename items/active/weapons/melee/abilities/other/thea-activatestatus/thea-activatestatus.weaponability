@@ -31,6 +31,8 @@
 	"cooldownPersistent" : true,	//Makes the cooldown time persist when swapping away from the weapon
 	"activateInstantly" : false,	//Allows the status effect to activate before any wait duration
 	"forceStopSound" : false,		//Stops the activation sound when the activation is done
+	
+	"blockingStat" : null,			//If this value is set, the effect won't activate while this player stat is positive. Useful to prevent wasting the ability
 
     "stances" : {
       "activate" : {

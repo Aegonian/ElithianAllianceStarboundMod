@@ -60,7 +60,7 @@ function TheaActivateStatus:activate()
   animator.burstParticleEmitter("activateStatusEffect")
   
   --Optionally activate the effect before any wait duration
-  if self.activateInstantly then
+  if self.activateInstantly and not (self.blockingStat and status.statPositive(self.blockingStat)) then
 	status.addEphemeralEffect(self.statusEffect)
 	self.cooldownTimer = self.cooldownTime
 	self.abilityReady = false
@@ -83,7 +83,7 @@ function TheaActivateStatus:activate()
 	end)
   end
   
-  if not self.activateInstantly then
+  if not self.activateInstantly and not (self.blockingStat and status.statPositive(self.blockingStat)) then
 	status.addEphemeralEffect(self.statusEffect, self.statusEffectDuration or nil)
 	self.cooldownTimer = self.cooldownTime
 	self.abilityReady = false

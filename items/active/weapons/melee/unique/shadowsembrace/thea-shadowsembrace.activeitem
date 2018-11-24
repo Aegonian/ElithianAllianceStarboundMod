@@ -54,6 +54,8 @@
 	"statusEffect" : "thea-shadowcloak",
 	"statusEffectDuration" : 6,
 	
+	"blockingStat" : "theaShadowCloakImmunity",
+	
 	"forceStopSound" : true
   },
 
