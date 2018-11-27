@@ -164,5 +164,14 @@
 		"order" : 85,
 		"item" : "centenskeeperaf"
 	  }
+	},
+	{
+	  "op": "add", 
+	  "path": "/collectables/akkimaristrikeraf",
+	  "value": 		
+	  {
+		"order" : 86,
+		"item" : "akkimaristrikeraf"
+	  }
 	}
 ]

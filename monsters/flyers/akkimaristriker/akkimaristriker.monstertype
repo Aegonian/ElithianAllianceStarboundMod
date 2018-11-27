@@ -8,7 +8,7 @@
 
   "animation" : "akkimaristriker.animation",
 
-  "dropPools" : [ { "default" : "akkimariarbiterTreasure", "bow" : "akkimariarbiterHunting", "electromagneticextractor" : "electromagneticextractorTreasure", "akkimariscrapper" : "akkimariscrapper" } ],
+  "dropPools" : [ { "default" : "akkimaristrikerTreasure", "bow" : "akkimaristrikerHunting", "electromagneticextractor" : "electromagneticextractorTreasure", "akkimariscrapper" : "akkimariscrapper" } ],
 
   "baseParameters" : {
     "scripts" : [
@@ -292,6 +292,6 @@
     "capturable" : true,
     "captureHealthFraction" : 0.5,
     "nametagColor" : [64, 200, 255],
-    "captureCollectables" : { "monsters" : "akkimariarbiter" }
+    "captureCollectables" : { "monsters" : "akkimaristriker" }
   }
 }

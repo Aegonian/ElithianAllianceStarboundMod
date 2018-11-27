@@ -184,5 +184,15 @@
 	    "monsterType" : "centenskeeper",
 	    "icon" : "/monsters/flyers/centenskeeper/centenskeepericon.png"
 	  }
+	},
+	{
+	  "op": "add",
+	  "path": "/collectables/akkimaristriker",
+	  "value": 	  
+	  {
+	    "order" : 76,
+	    "monsterType" : "akkimaristriker",
+	    "icon" : "/monsters/flyers/akkimaristriker/akkimaristrikericon.png"
+	  }
 	}
 ]

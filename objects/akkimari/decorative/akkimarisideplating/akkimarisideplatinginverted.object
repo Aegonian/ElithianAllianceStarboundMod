@@ -32,10 +32,11 @@
 
   "inventoryIcon" : "akkimarisideplatinginvertedicon.png",
   "orientations" : [
+	//Facing LEFT
 	{
       "image" : "akkimarisideplatinginverted.png:<color>",
 
-      "imagePosition" : [-8, 0],
+      "imagePosition" : [-8, -48],
       "frames" : 1,
       "animationCycle" : 0.75,
 
@@ -44,15 +45,41 @@
       "collision" : "solid",
       "direction" : "left"
     },
-    {
+	{
       "image" : "akkimarisideplatinginverted.png:<color>",
 
-      "imagePosition" : [-8, 0],
+      "imagePosition" : [-8, -48],
+      "frames" : 1,
+      "animationCycle" : 0.75,
+
+      "spaceScan" : 0.5,
+      "anchors" : [ "top" ],
+      "collision" : "solid",
+      "direction" : "left"
+    },
+	//Facing RIGHT
+	{
+      "image" : "akkimarisideplatinginverted.png:<color>",
+
+      "imagePosition" : [-8, -48],
       "frames" : 1,
       "animationCycle" : 0.75,
 
       "spaceScan" : 0.5,
       "bgAnchors" : [ [-1, 0] ],
+      "collision" : "solid",
+      "flipImages" : true,
+      "direction" : "right"
+    },
+    {
+      "image" : "akkimarisideplatinginverted.png:<color>",
+
+      "imagePosition" : [-8, -48],
+      "frames" : 1,
+      "animationCycle" : 0.75,
+
+      "spaceScan" : 0.5,
+      "anchors" : [ "top" ],
       "collision" : "solid",
       "flipImages" : true,
       "direction" : "right"

@@ -4,7 +4,7 @@
     "path": "/-",
     "value": {
       "name" : "theaRacingGateFast",
-	  "materialId" : 65400,
+	  "materialId" : 65450,
 	  "collisionKind" : "none",
 	  "blocksLiquidFlow" : false
     }
@@ -14,7 +14,7 @@
     "path": "/-",
     "value": {
       "name" : "theaRacingGateSlow",
-	  "materialId" : 65401,
+	  "materialId" : 65451,
 	  "collisionKind" : "none",
 	  "blocksLiquidFlow" : false
     }

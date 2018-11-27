@@ -44,6 +44,19 @@
       "collision" : "solid",
       "direction" : "left"
     },
+	{
+      "image" : "akkimarisideplating.png:<color>",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.75,
+
+      "spaceScan" : 0.5,
+      "anchors" : [ "bottom" ],
+      "collision" : "solid",
+      "direction" : "left"
+    },
+	//Facing RIGHT
     {
       "image" : "akkimarisideplating.png:<color>",
 
@@ -53,6 +66,19 @@
 
       "spaceScan" : 0.5,
       "bgAnchors" : [ [-1, 0] ],
+      "collision" : "solid",
+      "flipImages" : true,
+      "direction" : "right"
+    },
+    {
+      "image" : "akkimarisideplating.png:<color>",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.75,
+
+      "spaceScan" : 0.5,
+      "anchors" : [ "bottom" ],
       "collision" : "solid",
       "flipImages" : true,
       "direction" : "right"

@@ -11,7 +11,7 @@
   "description" : "^orange;A powerful bow crafted in tribute to Elithia.",
   "shortdescription" : "^orange;Bow of the Elithian^white;",
   "twoHanded" : true,
-  "itemTags" : ["weapon","ranged","bow","avikan","theaUnique"],
+  "itemTags" : ["weapon","ranged","bow","theaUnique"],
   
   //CONFIGURATION FOR WEAPONS COLLECTION
   "collectablesOnPickup" : { "thea_weapons" : "thea-tributebow" },
