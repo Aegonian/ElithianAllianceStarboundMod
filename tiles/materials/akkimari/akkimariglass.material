@@ -1,0 +1,29 @@
+{
+  "materialId" : 30172,
+  "materialName" : "akkimariglass",
+  "particleColor" : [237, 254, 255, 255],
+  "itemDrop" : "akkimariglass",
+  "shortdescription" : "Akris Glass",
+  
+  "description" : "A transparent multi-coloured crystal.",
+  "glitchDescription" : "Marveled. This crystal shines in many colours.",
+  "floranDescription" : "Colourful glasss.",
+  "novakidDescription" : "That's no glass, it's some kinda crystal.",
+  
+  "drodenDescription" : "Analysis complete. Crystalline material of unknown origin.",
+  "akkimariDescription" : "Akki not eat this crystal. Crystal too sharp.",
+
+  "footstepSound" : "/sfx/blocks/footstep_ice.ogg",
+  "health" : 2,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "akkimariglass.png",
+    "variants" : 10,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 10
+  }
+}

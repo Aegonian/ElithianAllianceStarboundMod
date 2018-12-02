@@ -20,7 +20,7 @@
   "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
   "renderParameters" : {
     "texture" : "akkimarihullpanel.png",
-    "variants" : 1,
+    "variants" : 4,
     "lightTransparent" : false,
     "occludesBelow" : false,
     "multiColored" : false,

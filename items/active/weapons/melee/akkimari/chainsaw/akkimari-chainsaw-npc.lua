@@ -71,31 +71,43 @@ function AkkimariChainSawNPC:update(dt, fireMode, shiftHeld)
 
   --Play active and inactive looping sounds
   if animator.animationState("blade") == "active" then
-	--Optionally play idle sound
+	--If the weapon is active, play damage and hold sounds
 	if self.active then
-	  if self.damagingTiles and animator.hasSound("damageLoop") then
-		if not self.damageLoopPlaying then
-		  animator.playSound("damageLoop", -1)
-		  self.damageLoopPlaying = true
-		  if animator.hasSound("holdLoop") then
-			animator.stopAllSounds("holdLoop")
-			self.holdLoopPlaying = false
-		  end
-		end
-	  else
-		if animator.hasSound("holdLoop") and not self.holdLoopPlaying then
+	  --If no hold loop sound is playing, activate them now
+	  if not self.holdLoopPlaying then
+		--If we have a holdLoop sound configured
+		if animator.hasSound("holdLoop") then
 		  animator.playSound("holdLoop", -1)
 		  self.holdLoopPlaying = true
-		  if animator.hasSound("idleLoop") then
-			animator.stopAllSounds("idleLoop")
-			self.idleLoopPlaying = false
-		  end
-		  if animator.hasSound("damageLoop") then
-			animator.stopAllSounds("damageLoop")
-			self.damageLoopPlaying = false
+		end
+		--If we have a damageLoop sound configured
+		if animator.hasSound("damageLoop") then
+		  animator.playSound("damageLoop", -1)
+		  self.holdLoopPlaying = true
+		end
+	  --If a hold loop sound is already playing, adjust volumes based on whether or not we are damaging tiles
+	  else
+		if animator.hasSound("holdLoop") then
+		  --If we are damaging tiles and have a damage loop sound configured
+		  if self.damagingTiles and animator.hasSound("damageLoop") then
+			animator.setSoundVolume("holdLoop", 0, 0)
+			animator.setSoundVolume("damageLoop", 1, 0)
+		  --If we aren't damaging any tiles or have no damage loop sound configured
+		  else
+			animator.setSoundVolume("holdLoop", 1, 0)
+			if animator.hasSound("damageLoop") then
+			  animator.setSoundVolume("damageLoop", 0, 0)
+			end
 		  end
 		end
 	  end
+	  --If we are active and have and idleLoop sound, stop playing it
+	  if animator.hasSound("idleLoop") then
+		animator.stopAllSounds("idleLoop")
+		self.idleLoopPlaying = false
+	  end
+	  
+	--If the weapon is spinning but not active (no primaryFire), play idle loop sound and stop active sounds
 	else
 	  if animator.hasSound("idleLoop") and not self.idleLoopPlaying then
 		animator.playSound("idleLoop", -1)
@@ -106,6 +118,8 @@ function AkkimariChainSawNPC:update(dt, fireMode, shiftHeld)
 		end
 	  end
 	end
+  
+  --If the weapon is not active, stop all sounds
   else
 	if animator.hasSound("idleLoop") then
 	  animator.stopAllSounds("idleLoop")
@@ -117,7 +131,7 @@ function AkkimariChainSawNPC:update(dt, fireMode, shiftHeld)
 	end
 	if animator.hasSound("damageLoop") then
 	  animator.stopAllSounds("damageLoop")
-	  self.damageLoopPlaying = false
+	  self.holdLoopPlaying = false
 	end
   end
   

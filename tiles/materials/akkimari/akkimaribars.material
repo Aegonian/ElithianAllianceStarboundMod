@@ -1,0 +1,30 @@
+{
+  "materialId" : 30176,
+  "materialName" : "akkimaribars",
+  "particleColor" : [84, 82, 85, 255],
+  "itemDrop" : "akkimaribars", 
+  "shortdescription" : "Akris Bars",
+  
+  "description" : "Incredibly sturdy metals bars.",
+  "glitchDescription" : "Relieved. Anyone locked behind these bars is sure to stay locked.",
+  "floranDescription" : "Metal bars make perfect ssspears and sshivsss.",
+  "novakidDescription" : "No outlaws gonna break these bars.",
+  
+  "drodenDescription" : "Analysis complete. Metal bar. Highly durable.",
+  "akkimariDescription" : "Akki lock away bad Akkimari. Better for Akkimari.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  "blocksLiquidFlow" : false,
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "akkimaribars.png",
+    "variants" : 4,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : false,
+    "zLevel" : 60
+  }
+}

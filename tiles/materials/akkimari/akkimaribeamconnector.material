@@ -1,0 +1,29 @@
+{
+  "materialId" : 30175,
+  "materialName" : "akkimaribeamconnector",
+  "particleColor" : [84, 82, 85, 255],
+  "itemDrop" : "akkimaribeamconnector", 
+  "shortdescription" : "Akris Beam Connector",
+  
+  "description" : "A sturdy beam connector piece.",
+  "glitchDescription" : "Observation. This connector is a structural necessity.",
+  "floranDescription" : "Small block connectsss beamss.",
+  "novakidDescription" : "It's just a beam connector piece.",
+  
+  "drodenDescription" : "Analysis complete. Metal beam. Likely a support structure.",
+  "akkimariDescription" : "Connector supports great weight. Even fat Akkimari.",
+
+  "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
+  "health" : 8,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "akkimaribeamconnector.png",
+    "variants" : 1,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 75
+  }
+}

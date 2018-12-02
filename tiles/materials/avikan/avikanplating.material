@@ -16,7 +16,7 @@
   "health" : 10,
   "category" : "materials",
   
-  "renderTemplate" : "/tiles/pipetemplate.config",
+  "renderTemplate" : "/tiles/thea-platingtemplate.config",
   "renderParameters" : {
     "texture" : "avikanplating.png",
     "variants" : 1,

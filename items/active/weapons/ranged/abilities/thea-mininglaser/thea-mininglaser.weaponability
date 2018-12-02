@@ -1,0 +1,70 @@
+{  
+  "ability" : {
+    "name" : "High-power Laser",
+    "type" : "thea-mininglaser",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-beamfire.lua"],
+    "class" : "TheaBeamFire",
+
+	"fireTime" : 0.1,
+    "baseDps" : 8.0,
+    "energyUsage" : 25.0,
+    "inaccuracy" : 0,
+	
+	"impactDamageTimeout" : 0.1,
+	"impactTileDamageForeground" : 50,
+	
+	"laserPiercing" : false,
+
+    "damageConfig" : {
+      "statusEffects" : [ ],
+      "damageSourceKind" : "plasma",
+      "knockback" : 1
+    },
+
+    "beamLength" : 50,
+
+    "chain" : {
+      "startOffset" : [0, 0],
+      "segmentImage" : "/items/active/weapons/ranged/alliance/manufactured/mininglaser/beam.png",
+      "endSegmentImage" : "/items/active/weapons/ranged/alliance/manufactured/mininglaser/beamend.png",
+      "segmentSize" : 0.48,
+      "overdrawLength" : 0.2,
+      "taper" : 0,
+      "waveform" : {
+        "frequency" : 2.0,
+        "amplitude" : 0.125,
+        "movement" : 40.0
+      },
+      "fullbright" : true
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.1,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  }
+}

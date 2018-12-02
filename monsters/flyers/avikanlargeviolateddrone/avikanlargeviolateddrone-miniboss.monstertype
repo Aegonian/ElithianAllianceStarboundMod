@@ -17,6 +17,9 @@
 
     "behavior" : "monster",
     "deathBehavior" : "monster-death",
+	
+	//Makes the monster's HP bar a large boss-type HP bar
+    "damageBar" : "Special",
 
     "seeThroughLiquid" : true,
     "behaviorConfig" : {

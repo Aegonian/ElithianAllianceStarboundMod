@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":102,
+ "tilecount":108,
  "tileheight":8,
  "tileproperties":
     {
@@ -39,6 +39,36 @@
         {
          "\/\/shortdescription":"Scrap Metal",
          "material":"akkimariscrap"
+        },
+     "102":
+        {
+         "\/\/shortdescription":"Akris Bars",
+         "material":"akkimaribars"
+        },
+     "103":
+        {
+         "\/\/shortdescription":"Akris Beam Connector",
+         "material":"akkimaribeamconnector"
+        },
+     "104":
+        {
+         "\/\/shortdescription":"Akris Glass",
+         "material":"akkimariglass"
+        },
+     "105":
+        {
+         "\/\/shortdescription":"Akris Plating (Front)",
+         "material":"akkimariplatingfront"
+        },
+     "106":
+        {
+         "\/\/shortdescription":"Akris Scrap Plating (Front)",
+         "material":"akkimariscrapplatingfront"
+        },
+     "107":
+        {
+         "\/\/shortdescription":"Akris Beam Vertical",
+         "material":"akkimaribeamvert"
         },
      "11":
         {
@@ -463,7 +493,7 @@
         },
      "74":
         {
-         "\/\/shortdescription":"Akris Beam",
+         "\/\/shortdescription":"Akris Beam Horizontal",
          "material":"akkimaribeam"
         },
      "75":
@@ -627,6 +657,30 @@
      "101":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/akkimariscrap.png"
+        },
+     "102":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/akkimaribars.png"
+        },
+     "103":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/akkimaribeamconnector.png"
+        },
+     "104":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/akkimariglass.png"
+        },
+     "105":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/akkimariplatingfront.png"
+        },
+     "106":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/akkimariscrapplatingfront.png"
+        },
+     "107":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/akkimaribeamvert.png"
         },
      "11":
         {

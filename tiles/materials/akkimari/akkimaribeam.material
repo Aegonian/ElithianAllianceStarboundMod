@@ -3,7 +3,7 @@
   "materialName" : "akkimaribeam",
   "particleColor" : [84, 82, 85, 255],
   "itemDrop" : "akkimaribeam", 
-  "shortdescription" : "Akris Beam",
+  "shortdescription" : "Akris Beam Horizontal",
   
   "description" : "A strong metal beam.",
   "glitchDescription" : "Observation. This metal beam looks very sturdy.",
@@ -17,13 +17,13 @@
   "health" : 8,
   "category" : "materials",
   
-  "renderTemplate" : "/tiles/girdertemplate.config",
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
   "renderParameters" : {
     "texture" : "akkimaribeam.png",
     "variants" : 4,
     "lightTransparent" : false,
     "occludesBelow" : true,
     "multiColored" : false,
-    "zLevel" : 75
+    "zLevel" : 70
   }
 }

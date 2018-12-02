@@ -1,0 +1,29 @@
+{
+  "materialId" : 30177,
+  "materialName" : "akkimariplatingfront",
+  "particleColor" : [181, 128, 91, 255],
+  "itemDrop" : "akkimariplatingfront", 
+  "shortdescription" : "Akris Plating (Front)",
+
+  "description" : "Irregular metal plating made from assorted scrap metal.",
+  "glitchDescription" : "Surprised. This plating was crafted from scrap metal.",
+  "floranDescription" : "Ssscrap metal plating.",
+  "novakidDescription" : "Some thick metal plating, looks mighty solid.",
+  
+  "drodenDescription" : "Analysis complete. Scrap metal hull plating. Exact composition unknown.",
+  "akkimariDescription" : "Big metal plating. Strong, yeees?",
+
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "health" : 10,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/thea-platingtemplate.config",
+  "renderParameters" : {
+    "texture" : "akkimariplating.png",
+    "variants" : 4,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 90
+  }
+}

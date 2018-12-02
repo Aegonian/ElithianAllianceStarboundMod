@@ -52,6 +52,11 @@
 	"path": "/thea-flashlight-builtin",
 	"value": "/items/active/weapons/ranged/abilities/attachments/thea-flashlight/thea-flashlight-builtin.weaponability"
   },
+  {
+	"op": "add",
+	"path": "/thea-mininglaser",
+	"value": "/items/active/weapons/ranged/abilities/thea-mininglaser/thea-mininglaser.weaponability"
+  },
   //Avikan Generated Weapons
   {
 	"op": "add",

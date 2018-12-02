@@ -11,6 +11,7 @@ function TheaBeamFire:init()
 
   self.cooldownTimer = self.fireTime
   self.impactSoundTimer = 0
+  self.impactDamageTimeout = self.impactDamageTimeout or 1.0
   self.impactDamageTimer = self.impactDamageTimeout
   
   --Optional animation set-up
@@ -70,7 +71,7 @@ function TheaBeamFire:fire()
   local wasColliding = false
   while self.fireMode == (self.activatingFireMode or self.abilitySlot) and status.overConsumeResource("energy", (self.energyUsage or 0) * self.dt) and not world.lineTileCollision(mcontroller.position(), self:firePosition()) do
     local beamStart = self:firePosition()
-    local beamEnd = vec2.add(beamStart, vec2.mul(vec2.norm(self:aimVector(0)), self.beamLength))
+    local beamEnd = vec2.add(beamStart, vec2.mul(vec2.norm(self:aimVector(self.inaccuracy or 0)), self.beamLength))
     local beamLength = self.beamLength
 	local beamIsColliding = false
 
@@ -109,6 +110,7 @@ function TheaBeamFire:fire()
 	  end
 	end
 	
+	--If the beam is colliding and not ending at max beam length
     if beamIsColliding == true then
       beamEnd = collidePoint
 
@@ -124,16 +126,52 @@ function TheaBeamFire:fire()
         self.impactSoundTimer = self.fireTime
       end
 	  
-	  if self.spawnImpactProjectile then
-		--Spawn a projectile at beamend, which damages terrain
-		if self.impactDamageTimer == 0 then
+	  --Run through configured actions when the impact timer is ready
+	  if self.impactDamageTimer == 0 then
+	  
+	  --If so configured, spawn a projectile at the impact position
+		if self.spawnImpactProjectile then
 		  world.spawnProjectile(
 			self.impactProjectile,
 			collidePoint,
 			activeItem.ownerEntityId()
 		  )
-		self.impactDamageTimer = self.impactDamageTimeout
 		end
+		
+		--If so configured, deal tile damage at the impact position		
+		--Foreground
+		if self.impactTileDamageForeground then
+		  local tileDamage = root.evalFunction("thea-chainsawMiningStrengthTimeMultiplier", config.getParameter("level", 1)) * self.impactTileDamageForeground * self.impactDamageTimeout
+		  if self.impactDamageRadius then
+			world.damageTileArea(collidePoint, self.impactDamageRadius, "foreground", mcontroller.position(), "blockish", tileDamage, self.impactHarvestLevel or 99)
+			world.debugText(tileDamage / self.impactDamageTimeout, collidePoint, "yellow")
+			world.debugPoint(collidePoint, "red")
+		  else
+			local beamVector = vec2.norm(world.distance(beamStart, beamEnd))
+			local damagePoint = vec2.sub(collidePoint, vec2.mul(beamVector, 0.25))
+			world.damageTiles({damagePoint}, "foreground", mcontroller.position(), "blockish", tileDamage, self.impactHarvestLevel or 99)
+			world.debugText(tileDamage / self.impactDamageTimeout, damagePoint, "yellow")
+			world.debugPoint(damagePoint, "red")
+		  end
+		end
+		--Background
+		if self.impactTileDamageBackground then
+		  local tileDamage = root.evalFunction("thea-chainsawMiningStrengthTimeMultiplier", config.getParameter("level", 1)) * self.impactTileDamageBackground * self.impactDamageTimeout
+		  if self.impactDamageRadius then
+			world.damageTileArea(collidePoint, self.impactDamageRadius, "background", mcontroller.position(), "blockish", tileDamage, self.impactHarvestLevel or 99)
+			world.debugText(tileDamage / self.impactDamageTimeout, collidePoint, "yellow")
+			world.debugPoint(collidePoint, "red")
+		  else
+			local beamVector = vec2.norm(world.distance(beamStart, beamEnd))
+			local damagePoint = vec2.sub(collidePoint, vec2.mul(beamVector, 0.25))
+			world.damageTiles({damagePoint}, "background", mcontroller.position(), "blockish", tileDamage, self.impactHarvestLevel or 99)
+			world.debugText(tileDamage / self.impactDamageTimeout, damagePoint, "yellow")
+			world.debugPoint(damagePoint, "red")
+		  end
+		end
+		
+		--Count down the impact timer again
+		self.impactDamageTimer = self.impactDamageTimeout
 	  end
     else
       animator.setParticleEmitterActive("beamCollision", false)

@@ -39,7 +39,7 @@
          "imagePositionX":"-8",
          "imagePositionY":"0",
          "object":"akkimarisideplatinginverted",
-         "tilesetDirection":"right"
+         "tilesetDirection":"left"
         },
      "2":
         {
@@ -71,7 +71,7 @@
          "imagePositionX":"-8",
          "imagePositionY":"0",
          "object":"akkimarisideplating",
-         "tilesetDirection":"right"
+         "tilesetDirection":"left"
         },
      "6":
         {

@@ -1,0 +1,11 @@
+{
+  "itemName" : "akkimaribeamconnector",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "akkimaribeamconnector.png",
+  "shortdescription" : "Akris Beam Connector",
+  "description" : "A sturdy beam connector piece.",
+
+  "materialId" : 30175
+}

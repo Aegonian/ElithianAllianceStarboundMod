@@ -22,7 +22,8 @@
   "animationCustom" : {
     "sounds" : {
       "idleLoop" : [ "/sfx/tools/chainsaw_idle.ogg" ],
-	  "holdLoop" : [ "/sfx/tools/chainsaw_cut_wood.ogg" ]
+	  "holdLoop" : [ "/sfx/tools/chainsaw_cut_wood.ogg" ],
+	  "damageLoop" : [ "/sfx/tools/chainsaw_cut_metal.ogg" ]
     }
   },
 
@@ -40,7 +41,7 @@
 	"baseDps" : 13.5,
 	
 	//Tile damage settings
-	"tileDamage" : 0.35,
+	"tileDamagePerSecond" : 12.0,
 	
 	"damageConfig" : {
       "damageSourceKind" : "akkimariscrapper",

@@ -23,7 +23,8 @@
   "animationCustom" : {
     "sounds" : {
       "idleLoop" : [ "/sfx/tools/chainsaw_idle.ogg" ],
-	  "holdLoop" : [ "/sfx/tools/chainsaw_cut_wood.ogg" ]
+	  "holdLoop" : [ "/sfx/tools/chainsaw_cut_wood.ogg" ],
+	  "damageLoop" : [ "/sfx/tools/chainsaw_cut_metal.ogg" ]
     }
   },
 

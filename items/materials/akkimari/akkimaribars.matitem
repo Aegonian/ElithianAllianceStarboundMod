@@ -1,0 +1,11 @@
+{
+  "itemName" : "akkimaribars",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "akkimaribars.png",
+  "shortdescription" : "Akris Bars",
+  "description" : "Incredibly sturdy metals bars.",
+
+  "materialId" : 30176
+}

@@ -1,0 +1,11 @@
+{
+  "itemName" : "akkimariglass",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "akkimariglass.png",
+  "shortdescription" : "Akris Glass",
+  "description" : "A transparent multi-coloured crystal.",
+
+  "materialId" : 30172
+}

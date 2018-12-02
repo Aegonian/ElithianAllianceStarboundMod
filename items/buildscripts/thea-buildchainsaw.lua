@@ -63,7 +63,7 @@ function build(directory, config, parameters, level, seed)
     config.tooltipFields = {}
     config.tooltipFields.levelLabel = util.round(configParameter("level", 1), 1)
     config.tooltipFields.dpsLabel = util.round((config.primaryAbility.baseDps or 0) * config.damageLevelMultiplier, 1)
-    config.tooltipFields.miningStrengthLabel = util.round(((config.primaryAbility.tileDamage or 1.0) / (config.primaryAbility.fireTime or 1.0)) * config.miningStrengthLevelMultiplier, 1)
+    config.tooltipFields.miningStrengthLabel = util.round((config.primaryAbility.tileDamagePerSecond or 1.0) * config.miningStrengthLevelMultiplier, 1)
     if elementalType ~= "physical" then
       config.tooltipFields.damageKindImage = "/interface/elements/"..elementalType..".png"
     end

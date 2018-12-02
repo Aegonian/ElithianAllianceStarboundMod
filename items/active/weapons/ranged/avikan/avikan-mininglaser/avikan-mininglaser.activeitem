@@ -2,15 +2,17 @@
   "itemName" : "avikan-mininglaser",
   "price" : 1000,
   "level" : 6,
-  "inventoryIcon" : "avikan-mininglaser.png",
+  "fixedLevel" : false,
   "maxStack" : 1,
   "rarity" : "Legendary",
   "description" : "A powerful mining laser. Burns through rock and enemies both!",
   "shortdescription" : "Nomada Mining Laser",
-  "tooltipKind" : "base",
+  "tooltipKind" : "thea-mininglaser",
   "category" : "Mining Laser",
   "itemTags" : ["weapon","ranged","mininglaser","avikan"],
   "twoHanded" : true,
+  
+  "inventoryIcon" : "avikan-mininglaser.png",
   
   "cursor" : "/cursors/thea-trianglereticle.cursor",
   
@@ -37,142 +39,38 @@
 
   "elementalType" : "physical",
 
+  "primaryAbilityType" : "thea-mininglaser",
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/abilities/thea-beamfire.lua"],
-    "class" : "TheaBeamFire",
-
     "fireTime" : 0.1,
-    "baseDps" : 4.0,
-    "energyUsage" : 25.0,
+    "baseDps" : 9.0,
+    "energyUsage" : 22.5,
     "inaccuracy" : 0.0,
 	
-	"impactDamageTimeout" : 0.2,
-	"spawnImpactProjectile" : true,
-	"impactProjectile" : "theamininglaserimpact",
-	
-	"laserPiercing" : false,
-
-    "damageConfig" : {
-      "statusEffects" : [ ],
-      "damageSourceKind" : "plasma",
-      "knockback" : 1
-    },
-
-    "beamLength" : 50,
+	"impactTileDamageForeground" : 45,
+	"impactDamageRadius" : 1.5,
 
     "chain" : {
-      "startOffset" : [0, 0],
       "segmentImage" : "/items/active/weapons/ranged/avikan/avikan-mininglaser/beam.png",
-      "endSegmentImage" : "/items/active/weapons/ranged/avikan/avikan-mininglaser/beamend.png",
-      "segmentSize" : 0.48,
-      "overdrawLength" : 0.2,
-      "taper" : 0,
-      "waveform" : {
-        "frequency" : 2.0,
-        "amplitude" : 0.125,
-        "movement" : 40.0
-      },
-      "fullbright" : true
-    },
-
-    "stances" : {
-      "idle" : {
-        "armRotation" : 0,
-        "weaponRotation" : 0,
-        "twoHanded" : true,
-
-        "allowRotate" : true,
-        "allowFlip" : true
-      },
-      "fire" : {
-        "duration" : 0,
-        "armRotation" : 0,
-        "weaponRotation" : 0,
-        "twoHanded" : true,
-
-        "allowRotate" : true,
-        "allowFlip" : true
-      },
-      "cooldown" : {
-        "duration" : 0.1,
-        "armRotation" : 0,
-        "weaponRotation" : 0,
-        "twoHanded" : true,
-
-        "allowRotate" : true,
-        "allowFlip" : true
-      }
+      "endSegmentImage" : "/items/active/weapons/ranged/avikan/avikan-mininglaser/beamend.png"
     }
   },
   
+  "altAbilityType" : "thea-mininglaser",
   "altAbility" : {
     "name" : "Low-power Laser",
-    "scripts" : ["/items/active/weapons/ranged/abilities/thea-beamfire.lua"],
-    "class" : "TheaBeamFire",
-
+	
     "fireTime" : 0.1,
-    "baseDps" : 2.0,
+    "baseDps" : 4.0,
     "energyUsage" : 5.0,
     "inaccuracy" : 0.0,
 	
-	"impactDamageTimeout" : 0.2,
-	"spawnImpactProjectile" : true,
-	"impactProjectile" : "theamininglaserimpactweak",
-	
-	"laserPiercing" : false,
-
-    "damageConfig" : {
-      "statusEffects" : [ ],
-      "damageSourceKind" : "plasma",
-      "knockback" : 1
-    },
-
-    "beamLength" : 50,
+	"impactTileDamageForeground" : 5,
 
     "chain" : {
-      "startOffset" : [0, 0],
       "segmentImage" : "/items/active/weapons/ranged/avikan/avikan-mininglaser/beamweak.png",
-      "endSegmentImage" : "/items/active/weapons/ranged/avikan/avikan-mininglaser/beamendweak.png",
-      "segmentSize" : 0.48,
-      "overdrawLength" : 0.2,
-      "taper" : 0,
-      "waveform" : {
-        "frequency" : 2.0,
-        "amplitude" : 0.125,
-        "movement" : 40.0
-      },
-      "fullbright" : true
-    },
-
-    "stances" : {
-      "idle" : {
-        "armRotation" : 0,
-        "weaponRotation" : 0,
-        "twoHanded" : true,
-
-        "allowRotate" : true,
-        "allowFlip" : true
-      },
-      "fire" : {
-        "duration" : 0,
-        "armRotation" : 0,
-        "weaponRotation" : 0,
-        "twoHanded" : true,
-
-        "allowRotate" : true,
-        "allowFlip" : true
-      },
-      "cooldown" : {
-        "duration" : 0.1,
-        "armRotation" : 0,
-        "weaponRotation" : 0,
-        "twoHanded" : true,
-
-        "allowRotate" : true,
-        "allowFlip" : true
-      }
+      "endSegmentImage" : "/items/active/weapons/ranged/avikan/avikan-mininglaser/beamendweak.png"
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildmininglaser-mf.lua"
 }
