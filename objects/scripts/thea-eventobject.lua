@@ -6,34 +6,24 @@ function init()
   self.event = config.getParameter("event")
   self.debugResults = config.getParameter("debugResults", true)
   
-  storage.spawnedNPC = storage.spawnedNPC or false
-  self.npcSpecies = config.getParameter("npcSpecies")
-  self.npcType = config.getParameter("npcType")
-  self.npcLevel = config.getParameter("npcLevel") or world.threatLevel()
-  
   self.eventActive = false
   self.eventActiveChecked = false
   
-  self.dieAfterSpawning = config.getParameter("stagehandDieAfterSpawning", true)
+  animator.setAnimationState("objectState", "hidden")
 end
 
 function update(dt)
-  --If region is active we haven't checked event dates yet, check if the event should activate
+  --If region is active we haven't check yet and no NPC has been spawned, check if the event should activate
   if world.regionActive(regionCheckArea()) and not self.eventActiveChecked then
 	self.eventActive, self.currentMonth, self.currentDay, self.leapYear = checkEventActive(self.event)
 	self.eventActiveChecked = true
   end
   
-  --If the event is active and the NPC has not yet been spawned, do so now
-  if self.eventActive and not storage.spawnedNPC then
-	local species = util.randomChoice(self.npcSpecies)
-	world.spawnNpc(entity.position(), species, self.npcType, self.npcLevel)
-	storage.spawnedNPC = true
-  end
-  
-  --If configured to die after spawning an NPC, do so here
-  if storage.spawnedNPC and self.dieAfterSpawning then
-	stagehand.die()
+  --Set the object's animation state based on event active check results
+  if self.eventActive then
+	animator.setAnimationState("objectState", "visible")
+  else
+	animator.setAnimationState("objectState", "hidden")
   end
     
   --If we have checked if the event is active, show the results in debug mode without running the check function again

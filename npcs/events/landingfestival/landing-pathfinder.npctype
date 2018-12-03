@@ -1,0 +1,103 @@
+{
+  "type" : "landing-pathfinder",
+  "baseType" : "ao-wandermerchant",
+
+  "npcname" : "The Pathfinder",
+  "identity" : {
+    "imagePath" : "aegi",
+    "gender" : "male",
+    "hairGroup" : "hair",
+    "hairType" : "male1",
+	"facialMaskGroup" : "ears",
+	"facialMask" : "1"
+  },
+  
+  "dropPools" : [ "aegiDeathTreasure" ],
+
+  "scriptConfig" : {
+	"offeredQuests" : [ "harrowingeventstart" ],
+	"turnInQuests" : [ "harrowingeventstart" ],
+	
+    "merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 8,
+      "poolsFile" : "/npcs/merchantpools.config",
+      
+	  "categories" : {
+        "override" : [ "harrowingEventVendor" ]
+      },
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "numItems" : 16,
+	  
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "The Pathfinder's Gifts",
+          "subtitle" : "  For all your Landing Festival needs!"
+        }
+      }
+    },
+	
+	"dialog" : {
+      "merchant" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "Hohoho! I have all the gifts you'll need this Landing Festival!"
+            ]
+          }
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "Hohoho! Come back soon!"
+            ]
+          }
+        },
+        "follow" : {
+          "default" : {
+            "default" : [
+              "My gifts are just over there!"
+            ]
+          }
+        },
+        "welcome" : {
+          "default" : {
+            "default" : [
+              "Hohoho! Let's see what you need!"
+            ]
+          }
+        },
+        "tout" : {
+          "default" : {
+            "default" : [
+              "Hohoho! Happy Landing Festival, folks!"
+            ]
+          }
+        }
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "aegi-pathfinderhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "aegi-pathfinderchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "aegi-pathfinderlegs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "primary" : [
+			  "thea-pathfinderstaff"
+			]
+          }
+      ]]
+    ]
+  }
+}

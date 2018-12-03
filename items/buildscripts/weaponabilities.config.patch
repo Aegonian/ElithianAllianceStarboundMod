@@ -167,6 +167,16 @@
 	"path": "/thea-extendlance",
 	"value": "/items/active/weapons/melee/abilities/lance/thea-extendlance/thea-extendlance.weaponability"
   },
+  {
+	"op": "add",
+	"path": "/thea-crookswing",
+	"value": "/items/active/weapons/melee/abilities/crook/thea-crookswing.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-railhook",
+	"value": "/items/active/weapons/melee/abilities/crook/thea-railhook/thea-railhook.weaponability"
+  },
   
   //======================================================================================================================
   //	GENERIC ABILITIES

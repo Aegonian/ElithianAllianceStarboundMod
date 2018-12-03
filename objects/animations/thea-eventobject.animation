@@ -1,0 +1,35 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "objectState" : {
+        "default" : "hidden",
+        "states" : {
+          "hidden" : {},
+          "visible" : {}
+        }
+      }
+    },
+
+    "parts" : {
+      "object" : {
+        "properties" : {
+          "centered" : false
+        },
+        "partStates" : {
+          "objectState" : {
+            "hidden" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "visible" : {
+              "properties" : {
+                "image" : "<partImage>:<color>"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

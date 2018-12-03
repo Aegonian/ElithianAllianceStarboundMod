@@ -1,23 +1,23 @@
 {
-  "itemName" : "avikancrook",
-  "price" : 250,
+  "itemName" : "thea-pathfinderstaff",
+  "price" : 500,
   "level" : 1,
   "fixedLevel" : false,
   "maxStack" : 1,
-  "rarity" : "common",
-  "description" : "A bone crook used by Gad'hur herders.",
-  "shortdescription" : "Bone Crook",
+  "rarity" : "Legendary",
+  "description" : "The ceremonial shepherd's crook of the Pathfinder.",
+  "shortdescription" : "Pathfinder's Staff",
   "tooltipKind" : "sword",
   "category" : "Crook",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","avikan"],
+  "itemTags" : ["weapon","melee","alliance","allianceUpgradeable"],
 
-  "inventoryIcon" : "avikancrook.png",
+  "inventoryIcon" : "thea-pathfinderstaff.png",
 
   "animation" : "/items/active/weapons/melee/broadsword/broadsword.animation",
   "animationParts" : {
     "handle" : "",
-    "blade" : "avikancrook.png"
+    "blade" : "thea-pathfinderstaff.png"
   },
   "animationCustom" : {
     "sounds" : {
