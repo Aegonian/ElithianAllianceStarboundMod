@@ -118,14 +118,14 @@
 			"fire" : {
               "properties" : {
                 "image" : "/items/active/weapons/melee/unique/kelchisdecree/swoosh/kelchisdecreeswoosh-downcut.png:<frame>",
-                "offset" : [0, 2.5],
+                "offset" : [-0.575, 2.125],
                 "damageArea" : [[-5, 2], [-2.5, 3], [1, 3], [4, 1.75], [5, -0.25], [5, -2.25], [4, -3.25], [0, -2.5]]
               }
             },
 			"fire2" : {
               "properties" : {
                 "image" : "/items/active/weapons/melee/unique/kelchisdecree/swoosh/kelchisdecreeswoosh-uppercut.png:<frame>",
-                "offset" : [0, 2.5],
+                "offset" : [0.2, 2.5],
                 "damageArea" : [[5, 2], [2.5, 3], [-1, 3], [-4, 1.75], [-5, -0.25], [-5, -2.25], [-4, -3.25], [0, -2.5]]
               }
             },

@@ -91,15 +91,15 @@
             },
             "fire" : {
               "properties" : {
-                "image" : "/items/active/weapons/melee/broadsword/swoosh/<elementalType>swoosh.png:<frame>",
-                "offset" : [0, 2.5],
+                "image" : "/items/active/weapons/melee/unique/shadowsembrace/swoosh/downcut.png:<frame>",
+                "offset" : [-0.2, 2.69],
                 "damageArea" : [[-5, 2], [-2.5, 3], [1, 3], [4, 1.75], [5, -0.25], [5, -2.25], [4, -3.25], [0, -2.5]]
               }
             },
             "fire2" : {
               "properties" : {
-                "image" : "/items/active/weapons/melee/broadsword/swoosh2/<elementalType>swoosh.png:<frame>",
-                "offset" : [5.0, 1.0],
+                "image" : "/items/active/weapons/melee/unique/shadowsembrace/swoosh/slash.png:<frame>",
+                "offset" : [4.0, 0.8],
                 "damageArea" : [[-4, 1], [2.5, 1], [2.5, -2], [-4, -2]]
               }
             },
