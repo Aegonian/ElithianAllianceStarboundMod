@@ -1,0 +1,12 @@
+{
+  "projectileName" : "landingpresentnotice",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/other/textexplosions/landingpresentnotice/landingpresentnotice.config"
+    }
+  ],
+  "damageKind" : "default",
+  "timeToLive" : 0.1
+}

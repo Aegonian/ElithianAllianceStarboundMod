@@ -1,0 +1,57 @@
+{
+  "type" : "landing-pilgrim",
+  "baseType" : "eo-civilian",
+  
+  "dropPools" : [ "aegiDeathTreasure" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "Happy Landing Festival! It's a time of celebration for all!",
+		    "The Landing Festival is upon us again!",
+		    "Another year has come to pass. It calls for celebration!",
+		    "Another year, another Landing Festival! Have you done your holiday shopping yet?",
+		    "A happy Landing Festival to you, my friend!"
+		  ]
+		}
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          //WITH HELD ITEM
+		  {
+            "head" : [
+              { "name" : "aegi-pilgrimhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "aegi-pilgrimchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "aegi-pilgrimlegs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "primary" : [
+			  "landingcache"
+			]
+          },
+		  //NO HELD ITEM
+          {
+            "head" : [
+              { "name" : "aegi-pilgrimhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "aegi-pilgrimchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "aegi-pilgrimlegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

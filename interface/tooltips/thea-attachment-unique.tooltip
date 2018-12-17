@@ -1,0 +1,60 @@
+{
+  "background" : {
+    "type" : "background",
+    "fileHeader" : "/interface/tooltips/theauniqueheader.png",
+    "fileBody" : "/interface/tooltips/theauniquebodyobject.png",
+    "fileFooter" : "/interface/tooltips/theauniquefooterobject.png"
+  },
+  "moneyIcon" : {
+    "type" : "image",
+    "position" : [97, 23],
+    "file" : "/interface/money.png"
+  },
+  "priceLabel" : {
+    "type" : "label",
+    "position" : [110, 23],
+    "hAnchor" : "left",
+    "value" : "0"
+  },
+  "descriptionLabel" : {
+    "type" : "label",
+    "position" : [11, 69],
+    "hAnchor" : "left",
+    "vAnchor" : "top",
+    "wrapWidth" : 123
+  },
+  //THIS REPLACES THE RARITY LABEL, CREATING A FAKE CUSTOM RARITY
+  "customRarityLabel" : {
+    "type" : "label",
+    "position" : [7, 23],
+    "hAnchor" : "left",
+    "centered" : true,
+    "wrapWidth" : 126,
+    "value" : "Unique"
+  },
+  "largeImage" : {
+    "type" : "image",
+    "position" : [70, 100],
+    "centered" : true,
+    "file" : "/interface/money.png",
+    "maxSize" : [70, 45],
+    "minSize" : [70, 45]
+  },
+  //Custom field, Manufacturer Label
+  "manufacturerLabel" : {
+    "type" : "label",
+    "position" : [130, 73],
+    "hAnchor" : "right",
+    "centered" : true,
+    "wrapWidth" : 126
+  },
+  //Custom field, Attachment Type
+  "attachmentTypeImage" : {
+    "type" : "image",
+    "position" : [16, 83],
+    "file" : "",
+    "centered" : true,
+    "maxSize" : [16, 16],
+    "minSize" : [16, 16]
+  }
+}

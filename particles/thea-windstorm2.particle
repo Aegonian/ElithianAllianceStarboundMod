@@ -1,0 +1,16 @@
+{
+  "kind" : "thea-windstorm2",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/windstorm/windstorm2.animation",
+    "fade" : 0.5,
+    "destructionAction" : "fade",
+    "destructionTime" : 0.1,
+    "initialVelocity" : [20, 0],
+    "finalVelocity" : [15, 0],
+    "approach" : [0, 0],
+    "timeToLive" : 1.5,
+    "size" : 1.0,
+    "layer" : "middle"
+  }
+}

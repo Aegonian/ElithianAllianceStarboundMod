@@ -1,0 +1,43 @@
+{
+  "objectName" : "landingtreelarge",
+  "colonyTags" : ["landingfestival"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 1000,
+  "description" : "A large pine tree decorated for the Landing Festival.",
+  "shortdescription" : "Landing Festival Tree",
+  "race" : "aegi",
+
+  "apexDescription" : "A decorated pine tree.",
+  "avianDescription" : "This tree is full of shiny goods!",
+  "floranDescription" : "Ssshiny tree makes Floran sssparkle!",
+  "glitchDescription" : "Curious. How did the tradition of decorating pine trees start?",
+  "humanDescription" : "A Christmas tree! There's something off about it though...",
+  "hylotlDescription" : "A majestic tree decorated with shiny trinkets. How quaint.",
+  "novakidDescription" : "Who hung all this gold in a tree?",
+
+  "aegiDescription" : "The traditional Landing Festival tree, complete with gifts and decorations aplenty!",
+  "avikanDescription" : "An alien plant decorated in golden trinkets. Aliens are weird.",
+  "erixianDescription" : "A tree decorated for the Landing Festival, an Aeginian tradition.",
+  "trinkDescription" : "I don't fully understand why the Aegi decorate their trees.",
+  "hymidDescription" : "A decorated Landing Festival tree. It's pretty!",
+  "notixDescription" : "The trinkets in this tree resonate on a pleasant frequency. It's soothing.",
+  "jorgasianDescription" : "The Aegi decorate their trees during the Landing Festival. It looks pretty.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Analysis complete. Alien plantlife. Detected multiple metal trinkets attached to branches. Purpose unknown.",
+  "akkimariDescription" : "Alien tree full of gold! Akki want, want want!",
+
+  "inventoryIcon" : "landingtreelargeicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "landingtreelarge.png:<color>",
+      "imagePosition" : [-64, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

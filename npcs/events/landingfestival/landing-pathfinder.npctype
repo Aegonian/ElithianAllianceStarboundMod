@@ -2,7 +2,7 @@
   "type" : "landing-pathfinder",
   "baseType" : "ao-wandermerchant",
 
-  "npcname" : "The Pathfinder",
+  "npcname" : "Pathfinder",
   "identity" : {
     "imagePath" : "aegi",
     "gender" : "male",
@@ -15,8 +15,8 @@
   "dropPools" : [ "aegiDeathTreasure" ],
 
   "scriptConfig" : {
-	"offeredQuests" : [ "harrowingeventstart" ],
-	"turnInQuests" : [ "harrowingeventstart" ],
+	"offeredQuests" : [ "landingpresentrecovery" ],
+	"turnInQuests" : [ "landingpresentrecovery" ],
 	
     "merchant" : {
       "waitTime" : 40,
@@ -24,7 +24,7 @@
       "poolsFile" : "/npcs/merchantpools.config",
       
 	  "categories" : {
-        "override" : [ "harrowingEventVendor" ]
+        "override" : [ "landingFestivalEventVendor" ]
       },
       "buyFactorRange" : [ 1.0, 1.0 ],
       "sellFactorRange" : [ 0.2, 0.2 ],

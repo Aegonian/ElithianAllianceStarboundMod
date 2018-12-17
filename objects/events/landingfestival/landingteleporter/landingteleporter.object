@@ -1,0 +1,70 @@
+{
+  "objectName" : "landingteleporter",
+  "colonyTags" : ["alliance"],
+  "objectType" : "teleporter",
+  "rarity" : "Legendary",
+  "description" : "A teleporter linked to the Landing Festival Hall. \n^red;Destroyed when broken.",
+  "shortdescription" : "Festival Hall Teleporter",
+  "price" : 3000,
+  "printable" : false,
+  
+  "category" : "teleporter",
+  "lightPosition" : [0, 5],
+  "health" : 20,
+  "breakDropPool" : "remoteteleporter",
+  "teleporterFootPosition" : [0, 1],
+
+  "apexDescription" : "This teleporter is only active at a specific time of year.",
+  "avianDescription" : "This teleporter is only active at a specific time of year.",
+  "floranDescription" : "Floran can only use teleportersss when it isss active.",
+  "glitchDescription" : "Analysis. This teleporter is only active at a specific time of year.",
+  "humanDescription" : "This teleporter is only active at a specific time of year.",
+  "hylotlDescription" : "This teleporter is only active at a specific time of year.",
+  "novakidDescription" : "This teleporter is only active at a specific time of year.",
+  
+  "aegiDescription" : "This teleporter is linked directly to the Landing Festival Hall. It'll only activate during the Landing Festival.",
+  "avikanDescription" : "This alien teleporter is linked to a set location. It only seems to be active during a specific time of year.",
+  "erixianDescription" : "This teleporter is linked directly to the Landing Festival Hall. It'll only activate during the Landing Festival.",
+  "trinkDescription" : "This teleporter is linked directly to the Landing Festival Hall. It'll only activate during the Landing Festival.",
+  "hymidDescription" : "This teleporter is linked directly to the Landing Festival Hall. It'll only activate during the Landing Festival.",
+  "notixDescription" : "This teleporter is linked directly to the Landing Festival Hall. It'll only activate during the Landing Festival.",
+  "jorgasianDescription" : "This teleporter is linked directly to the Landing Festival Hall. It'll only activate during the Landing Festival.",
+  "centensDescription" : "TODO",
+  "dremetonDescription" : "TODO",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Analysis. Readings indicate that this teleporter only activates during a specific time of year.",
+  "akkimariDescription" : "Akki knows teleporter is only active at some specific time.",
+
+  "inventoryIcon" : "landingteleportericon.png",
+  "orientations" : [
+    {
+      "image" : "landingteleporter.png:active",
+
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "solid",
+      "collisionSpaces" : [ [-2, 0], [-1, 0], [0, 0], [1, 0] ]
+    }
+  ],
+  
+  "animation" : "landingteleporter.animation",
+  "animationParts" : {
+    "object" : "landingteleporter.png",
+    "objectFullbright" : "landingteleporterlights.png"
+  },
+  "animationPosition" : [-24, 0],
+
+  "interactAction" : null, //The interactAction is changed to "OpenTeleportDialog" in the event script!
+  "interactData" : "/interface/warping/alliancefestivalhallwarp.config",
+
+  "scripts" : [ "/objects/scripts/thea-eventteleporter.lua" ],
+  "scriptDelta" : 1,
+  
+  "event" : "landingfestival",
+  "activeLightColor" : [99, 132, 153],
+  "inactiveLightColor" : [0, 0, 0]
+}

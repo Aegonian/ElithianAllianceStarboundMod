@@ -1,0 +1,71 @@
+{
+  "projectileName" : "landingfireworksgreen3",
+  "bounces" : -1,
+  "timeToLive" : 0.6,
+  "speed" : 80,
+  "physics" : "fireworkfall",
+  "image" : "landingfireworksgreen3.png",
+  "emitters" : [ "landingfireworksgreenyellow" ],
+  "frameNumber" : 1,
+  "damageKind" : "fire",
+  "onlyHitTerrain" : true,
+  "hydrophobic" : true,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "landingfireworksgreen4",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "angle" : 0
+    },
+    {
+      "action" : "projectile",
+      "type" : "landingfireworksgreen4",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "angle" : 45
+    },
+    {
+      "action" : "projectile",
+      "type" : "landingfireworksgreen4",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "angle" : 90
+    },
+    {
+      "action" : "projectile",
+      "type" : "landingfireworksgreen4",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "angle" : 135
+    },
+    {
+      "action" : "projectile",
+      "type" : "landingfireworksgreen4",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "angle" : 180
+    },
+    {
+      "action" : "projectile",
+      "type" : "landingfireworksgreen4",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "angle" : 225
+    },
+    {
+      "action" : "projectile",
+      "type" : "landingfireworksgreen4",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "angle" : 270
+    },
+    {
+      "action" : "projectile",
+      "type" : "landingfireworksgreen4",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "angle" : 315
+    }
+  ]
+}

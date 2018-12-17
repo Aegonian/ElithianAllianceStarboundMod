@@ -1,0 +1,14 @@
+{
+  "input" : [
+    { "item" : "aegi-allianceuniformhead", "count" : 1 },
+    { "item" : "mediumsnowball", "count" : 1 },
+    { "item" : "largesnowball", "count" : 1 },
+    { "item" : "giganticsnowball", "count" : 1 },
+    { "item" : "logblock", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "landingsnowman",
+    "count" : 1
+  },
+  "groups" : [ "plain", "all" ]
+}

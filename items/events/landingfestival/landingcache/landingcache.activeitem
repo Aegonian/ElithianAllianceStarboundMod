@@ -1,0 +1,33 @@
+{
+  "itemName" : "landingcache",
+  "level" : 1,
+  "price" : 250,
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "A wrapped present containing random event items. Hold ^green;[LMB] ^white;to open!",
+  "shortdescription" : "Landing Festival Present",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "landingcacheicon.png",
+  "animation" : "landingcache.animation",
+  "animationParts" : {
+    "treasurebox" : "landingcache.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "open" : [ "/sfx/objects/colonydeed_partyhorn.ogg" ],
+	  "openLoop" : [ "/sfx/other/thea_sealedcache_opening2.ogg" ]
+    }
+  },
+  
+  "scripts" : ["/items/active/other/thea-sealedcache/thea-sealedcache.lua"],
+
+  "fireOffset" : [1.0, 0.0],
+
+  "treasure" : {
+    "pool" : "landingTreasurebox"
+  },
+  
+  //Makes the treasure's level depend on the threatLevel of the world the item is first used on
+  "useWorldLevel" : true
+}

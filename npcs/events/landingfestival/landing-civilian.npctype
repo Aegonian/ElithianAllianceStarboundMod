@@ -1,0 +1,52 @@
+{
+  "type" : "landing-civilian",
+  "baseType" : "eo-civilian",
+  
+  "dropPools" : [ "aegiDeathTreasure" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "The Festival Hall is great again this year!",
+		    "Welcome to the Festival Hall, stranger!",
+		    "Hello.",
+		    "Hey there!",
+		    "Happy Landing Festival!",
+		    "Have you been to the Festival Hall before?",
+		    "Is this your first time in the Festival Hall?",
+		    "Happy holidays to you!",
+		    "Greetings, friend.",
+		    "It's quite cold here, don't you think?",
+		    "I've heard rumours of a Trink with faulty wiring hanging out in a cave nearby. It's probably best to stay away."
+		  ]
+		}
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "aegi-beanie", "parameters" : { "colorIndex" : [0, 2, 3, 4, 8, 9, 11] } },
+              { "name" : "aegi-hood", "parameters" : { "colorIndex" : [0, 2, 3, 4, 8, 9, 11] } },
+              { "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : [0, 2, 3, 4, 8, 9, 11] } }
+            ],
+            "chest" : [
+              { "name" : "aegi-wintercoat", "parameters" : { "colorIndex" : [0, 2, 3, 4, 8, 9, 11] } },
+              { "name" : "aegi-warmjacket", "parameters" : { "colorIndex" : [0, 2, 3, 4, 8, 9, 11] } }
+            ],
+            "legs" : [
+              { "name" : "aegi-baggylegs", "parameters" : { "colorIndex" : [0, 2, 3, 4, 8, 9, 11] } },
+              { "name" : "aegi-casuallegs", "parameters" : { "colorIndex" : [0, 2, 3, 4, 8, 9, 11] } },
+              { "name" : "aegi-asacoatlegs", "parameters" : { "colorIndex" : [0, 2, 3, 4, 8, 9, 11] } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

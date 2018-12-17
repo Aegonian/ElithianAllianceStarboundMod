@@ -7,10 +7,20 @@
   "category" : "legarmour",
   "description" : "^green;Avikan. ^white;An exosuit built to enhance the agility of Vanguard soldiers. The reinforced spine also reduces fall damage.",
   "shortdescription" : "^orange;Vanguard Exo-suit^white;",
-  "tooltipKind" : "thea-armor-unique",
+  "tooltipKind" : "thea-armorwide-unique",
+  "itemTags" : [ "theaUniqueArmour" ],
+  
+  //CONFIGURATION FOR UNIQUE EQUIPMENT COLLECTION
+  //"collectablesOnPickup" : { "thea_weapons" : "avikan-exosuitlegs" },
+  
+  "meritTokenValue" : 100,
 
   "maleFrames" : "pants.png",
   "femaleFrames" : "pants.png",
+
+  "statusEffects" : [
+	"exosuitboost"
+  ],
   
   "level" : 6,
   "leveledStatusEffects" : [
@@ -31,12 +41,7 @@
     }
   ],
 
-  "statusEffects" : [
-	"exosuitboost"
-  ],
-
   "colorOptions" : [
-  
 	//Colours go from LIGHT to DARK - LIGHT/MEDIUM/DARK
 	
 	//DEFAULT - NO DYE
@@ -66,6 +71,7 @@
     { "e0975c" : "D13BB7", "a85636" : "812570", "6f2919" : "3E1235" },
     /* 11- BROWN */
     { "e0975c" : "C1A57C", "a85636" : "7C6A4F", "6f2919" : "44392C" }
-
-  ]
+  ],
+  
+  "builder" : "/items/buildscripts/thea-buildarmor.lua"
 }

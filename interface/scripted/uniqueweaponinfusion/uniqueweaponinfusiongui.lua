@@ -14,7 +14,7 @@ function update(dt)
   local itemLevel = nil
   
   if item then
-	if root.itemHasTag(itemConfig.config.itemName, "theaUnique") then
+	if root.itemHasTag(itemConfig.config.itemName, "theaUnique") or root.itemHasTag(itemConfig.config.itemName, "theaUniqueArmour") then
 	  itemCheck = true
 	end
 	
@@ -37,7 +37,7 @@ function update(dt)
   local sacrificeLevel = nil
   
   if sacrifice then
-	if root.itemHasTag(sacrificeConfig.config.itemName, "weapon") or root.itemHasTag(sacrificeConfig.config.itemName, "theaUnique") then
+	if root.itemHasTag(sacrificeConfig.config.itemName, "weapon") or root.itemHasTag(sacrificeConfig.config.itemName, "theaUnique") or root.itemHasTag(sacrificeConfig.config.itemName, "theaUniqueArmour") then
 	  sacrificeCheck = true
 	end
 	
@@ -78,7 +78,7 @@ function attemptInfuse()
   local itemLevel = 0
   
   if item then
-	if root.itemHasTag(itemConfig.config.itemName, "theaUnique") then
+	if root.itemHasTag(itemConfig.config.itemName, "theaUnique") or root.itemHasTag(itemConfig.config.itemName, "theaUniqueArmour") then
 	  itemCheck = true
 	  itemLevel = itemConfig.parameters.level or itemConfig.config.level
 	  --sb.logInfo("UNIQUEINFUSION - ItemInfo - " .. itemConfig.config.itemName)
@@ -99,7 +99,7 @@ function attemptInfuse()
   local sacrificeLevel = 0
   
   if sacrifice then
-	if root.itemHasTag(sacrificeConfig.config.itemName, "weapon") or root.itemHasTag(sacrificeConfig.config.itemName, "theaUnique") then
+	if root.itemHasTag(sacrificeConfig.config.itemName, "weapon") or root.itemHasTag(sacrificeConfig.config.itemName, "theaUnique") or root.itemHasTag(sacrificeConfig.config.itemName, "theaUniqueArmour") then
 	  sacrificeCheck = true
 	  sacrificeLevel = sacrificeConfig.parameters.level or sacrificeConfig.config.level
 	  --sb.logInfo("UNIQUEINFUSION - SacrificeInfo - " .. sacrificeLevel)

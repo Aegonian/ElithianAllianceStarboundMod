@@ -1,0 +1,43 @@
+{
+  "objectName" : "landingpresent3",
+  "colonyTags" : ["landingfestival"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A wrapped present for the Landing Festival.",
+  "shortdescription" : "Landing Festival Present",
+  "race" : "aegi",
+
+  "apexDescription" : "A gift! Who is it for?",
+  "avianDescription" : "I wonder who this present is for.",
+  "floranDescription" : "Floran want presssent! Floran hopesss it'ss a new knife for ssstabbing.",
+  "glitchDescription" : "Curious. Who is this gift for?",
+  "humanDescription" : "A big present! I wanna open it!",
+  "hylotlDescription" : "The tradition of gift-giving is a very positive one.",
+  "novakidDescription" : "Could there be a new revolver inside?",
+
+  "aegiDescription" : "A nicely wrapped gift, just asking to be unwrapped..,",
+  "avikanDescription" : "It's a box of some sort. I'm not sure what all that decoration is good for.",
+  "erixianDescription" : "A gift for some lucky recipient.",
+  "trinkDescription" : "A gift wrapped in decorative paper. Not very efficient.",
+  "hymidDescription" : "The Aegi love wrapping their gifts. I've never really understood why, but I like getting presents regardless.",
+  "notixDescription" : "I think it's a box.",
+  "jorgasianDescription" : "A gift. Apparently wrapping these up is an ancient Aeginian tradition.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Analyzing. Detected boxed product. Low material value.",
+  "akkimariDescription" : "Akki want to see inside!",
+
+  "inventoryIcon" : "landingpresent3icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "landingpresent3.png:<color>",
+      "imagePosition" : [-8, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

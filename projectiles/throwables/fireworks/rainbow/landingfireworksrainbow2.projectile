@@ -1,0 +1,78 @@
+{
+  "projectileName" : "landingfireworksrainbow2",
+  "bounces" : -1,
+  "timeToLive" : 0.6,
+  "physics" : "laser",
+  "image" : "landingfireworksrainbow2.png",
+  "emitters" : [ "thea-rocketsmoke" ],
+  "frameNumber" : 1,
+  "lightColor" : [75, 60, 0],
+  "damageKind" : "fire",
+  "damagePoly" : [ [-7, -2], [-7, 2], [6, 4], [10, 0], [6, -4] ],
+  "actionOnReap" : [
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/projectiles/firework_explode1.ogg" ]
+    },
+    {
+      "action" : "config",
+      "file" : "/projectiles/throwables/fireworks/landingfireworksflash.config"
+    },
+    {
+      "action" : "projectile",
+      "type" : "landingfireworksrainbow3",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "angle" : 22
+    },
+    {
+      "action" : "projectile",
+      "type" : "landingfireworksrainbow3",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "angle" : 68
+    },
+    {
+      "action" : "projectile",
+      "type" : "landingfireworksrainbow3",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "angle" : 112
+    },
+    {
+      "action" : "projectile",
+      "type" : "landingfireworksrainbow3",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "angle" : 158
+    },
+    {
+      "action" : "projectile",
+      "type" : "landingfireworksrainbow3",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "angle" : 202
+    },
+    {
+      "action" : "projectile",
+      "type" : "landingfireworksrainbow3",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "angle" : 248
+    },
+    {
+      "action" : "projectile",
+      "type" : "landingfireworksrainbow3",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "angle" : 292
+    },
+    {
+      "action" : "projectile",
+      "type" : "landingfireworksrainbow3",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "angle" : 338
+    }
+  ]
+}

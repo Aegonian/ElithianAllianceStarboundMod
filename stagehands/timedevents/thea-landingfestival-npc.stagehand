@@ -1,0 +1,16 @@
+{
+  "type" : "thea-landingfestival-npc",
+
+  "scripts" : ["/stagehands/timedevents/thea-eventtimer.lua"],
+  "scriptDelta" : 1,
+  
+  //NPC Settings
+  "npcSpecies" : [ "aegi" ],
+  "npcType" : "landing-pilgrim",
+  
+  //Event Settings
+  "event" : "landingfestival",
+  
+  //Misc Settings
+  "stagehandDieAfterSpawning" : false //If true, the stagehand dies after spawning an NPC
+}

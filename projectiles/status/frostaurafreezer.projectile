@@ -1,0 +1,17 @@
+{
+  "projectileName" : "frostaurafreezer",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "physics" : "laser",
+  "bounces" : 0,
+  "piercing" : true,
+  "animationCycle" : 1.0,
+  "frameNumber" : 1,
+  "statusEffects" : [
+    "frostlaserfreezingslow"
+  ],
+  "damagePoly" : [ [-37, 0], [-28, -28], [0, -37], [28, -28], [37, 0], [28, 28], [0, 37], [-28, 28] ],
+  "timeToLive" : 0.1,
+  "power" : 0.0,
+  "damageKind" : "hidden",
+  "damageType" : "ignoresdef"
+}

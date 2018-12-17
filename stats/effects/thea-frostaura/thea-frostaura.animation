@@ -1,0 +1,34 @@
+{
+  "particleEmitters" : {
+    "frostparticles" : {
+      "enabled" : true,
+      "emissionRate" : 2.0,
+      "particles" : [
+        {
+          "particle" : "thea-frostlaserimpact"
+        },
+        {
+          "particle" : "thea-frostlaserimpact2"
+        },
+        {
+          "particle" : "iceswoosh3"
+        },
+        {
+          "particle" : "thea-snowparticles"
+        },
+        {
+          "particle" : "thea-snowparticles"
+        }
+      ]
+    },
+    "fogparticles" : {
+      "enabled" : true,
+      "emissionRate" : 5.0,
+      "particles" : [
+        {
+          "particle" : "thea-fog"
+        }
+      ]
+    }
+  }
+}

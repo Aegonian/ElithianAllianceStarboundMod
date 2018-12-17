@@ -8,18 +8,28 @@
   "description" : "^green;Avikan. ^white;A chestpiece with an integrated regenerative matrix which starts healing its wearer shortly after taking damage.",
   "shortdescription" : "^orange;Rhadeihan Chestpiece^white;",
   "tooltipKind" : "thea-armorwide-unique",
+  "itemTags" : [ "theaUniqueArmour" ],
+  
+  //CONFIGURATION FOR UNIQUE EQUIPMENT COLLECTION
+  //"collectablesOnPickup" : { "thea_weapons" : "aegi-wintersembrace" },
+  
+  "meritTokenValue" : 100,
 
   "maleFrames" : {
     "body" : "chestm.png",
     "backSleeve" : "bsleeve.png",
     "frontSleeve" : "fsleeve.png"
   },
-
   "femaleFrames" : {
     "body" : "chestf.png",
     "backSleeve" : "bsleeve.png",
     "frontSleeve" : "fsleeve.png"
   },
+  
+  "statusEffects" : [
+	"rhadeihan-chest",
+	"setbonus-rhadeihan-chest"
+  ],
 
   "level" : 7,
   "leveledStatusEffects" : [
@@ -45,13 +55,7 @@
     }
   ],
   
-  "statusEffects" : [
-	"rhadeihan-chest",
-	"setbonus-rhadeihan-chest"
-  ],
-  
   "colorOptions" : [
-  
 	//Colours go from LIGHT to DARK - LIGHT/MEDIUM/DARK
 	
 	//DEFAULT - NO DYE
@@ -81,5 +85,7 @@
     { "e0975c" : "D13BB7", "a85636" : "812570", "6f2919" : "3E1235" },
     /* 11- BROWN */
     { "e0975c" : "C1A57C", "a85636" : "7C6A4F", "6f2919" : "44392C" }
-  ]
+  ],
+  
+  "builder" : "/items/buildscripts/thea-buildarmor.lua"
 }

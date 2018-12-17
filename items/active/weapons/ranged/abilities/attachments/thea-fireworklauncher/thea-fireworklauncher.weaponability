@@ -1,0 +1,77 @@
+{
+  "animationCustom" : {
+    "animatedParts" : { "parts" : {
+      "grenadelauncher" : {
+        "properties" : {
+          "zLevel" : -2,
+          "centered" : true,
+          "offset" : [-1.125, -0.75],
+          "transformationGroups" : ["muzzle"],
+          "firePosition" : [0.5, -0.075],
+          "image" : "/items/active/weapons/ranged/abilities/attachments/thea-fireworklauncher/thea-fireworklauncher.png"
+        }
+      }
+    }},
+    "sounds" : {
+      "altFire" : [ "/sfx/projectiles/firework_launch1.ogg" ]
+    },
+    "particleEmitters" : {
+      "altMuzzleFlash" : {
+        "active" : false,
+        "emissionRate" : 8,
+        "transformationGroups" : ["muzzle"],
+        "offsetRegion" : [-0.875, -0.625, -0.875, -0.625],
+        "particles" : [
+          { "particle" : "rocketbarrelpuff", "offset" : [0.0, 0.0] },
+          { "particle" : "rocketbarrelpuff", "offset" : [0.0, 0.0] },
+          { "particle" : "rocketbarrelpuff", "offset" : [0.0, 0.0] }
+        ]
+      }
+    }
+  },
+
+  "ability" : {
+    "name" : "^orange;Fireworks Launcher^reset;",
+    "type" : "thea-fireworklauncher",
+    "scripts" : ["/items/active/weapons/ranged/abilities/altfire.lua"],
+    "class" : "AltFireAttack",
+
+    "baseDamage" : 0.25,
+    "fireTime" : 2.0,
+    "energyUsage" : 25,
+    "inaccuracy" : 0,
+	
+    "projectileCount" : 1,
+    "fireType" : "auto",
+	
+	"projectileType" : [ "landingfireworksblue2", "landingfireworksgreen2", "landingfireworkspurple2", "landingfireworksred2" ],
+    "projectileParameters" : {
+	  "bounces" : 0,
+	  "speed" : 50
+	},
+
+    "firePositionPart" : "grenadelauncher",
+    "hidePrimaryMuzzleFlash" : true,
+
+    "stances" : {
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.1,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  }
+}

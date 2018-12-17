@@ -46,6 +46,129 @@
 		{"weight" : 0.5, "item" : "harrowingcandyyellow" }
       ]
     } ]
+  ],
+  
+  //=================================================================
+  // LANDING FESTIVAL
+  //=================================================================
+  "landingTreasurebox" : [
+    [1, {
+	  "fill" : [
+		{"pool" : "landingFireworks" },
+		{"pool" : "allianceEventPools" }
+      ]
+    } ]
+  ],
+  
+  "landingFireworks" : [
+    [1, {
+      "poolRounds" : [
+        [0.6, 2],
+        [0.3, 4],
+        [0.1, 6]
+      ],
+	  "pool" : [
+		{"weight" : 0.5, "item" : "landingfireworksblue" },
+		{"weight" : 0.5, "item" : "landingfireworksgreen" },
+		{"weight" : 0.5, "item" : "landingfireworkspurple" },
+		{"weight" : 0.5, "item" : "landingfireworksred" },
+		{"weight" : 0.25, "item" : "landingfireworksrainbow" }
+      ]
+    } ]
+  ],
+  
+  //This treasure pool includes pools from all other Alliance events, allowing players a second chance at receiving event items from other events
+  "allianceEventPools" : [
+    [1, {
+	  "pool" : [
+		{"weight" : 0.5, "pool" : "harrowingEventArmour" },
+		{"weight" : 0.5, "pool" : "harrowingEventCandy" }
+      ]
+    } ]
+  ],
+  
+  "fireworksLauncherReward" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "thea-fireworkattachment", 1 ]},
+        {"item" : [ "landingfireworksblue", 5 ]},
+        {"item" : [ "landingfireworksgreen", 5 ]},
+        {"item" : [ "landingfireworkspurple", 5 ]},
+        {"item" : [ "landingfireworksred", 5 ]},
+        {"item" : [ "landingfireworksrainbow", 2 ]}
+      ]
+    } ]
+  ],
+  
+  "landingmissingpresent1" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "landingmissingpresent1", 1 ]}
+      ]
+    } ]
+  ],
+  "landingmissingpresent2" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "landingmissingpresent2", 1 ]}
+      ]
+    } ]
+  ],
+  "landingmissingpresent3" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "landingmissingpresent3", 1 ]}
+      ]
+    } ]
+  ],
+  "landingmissingpresent4" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "landingmissingpresent4", 1 ]}
+      ]
+    } ]
+  ],
+  "landingmissingpresent5" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "landingmissingpresent5", 1 ]}
+      ]
+    } ]
+  ],
+  "landingmissingpresent6" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "landingmissingpresent6", 1 ]}
+      ]
+    } ]
+  ],
+  "landingmissingpresent7" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "landingmissingpresent7", 1 ]}
+      ]
+    } ]
+  ],
+  "landingmissingpresent8" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "landingmissingpresent8", 1 ]}
+      ]
+    } ]
+  ],
+  "landingmissingpresent9" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "landingmissingpresent9", 1 ]}
+      ]
+    } ]
+  ],
+  "landingmissingpresent10" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "landingmissingpresent10", 1 ]}
+      ]
+    } ]
   ]
 }
 

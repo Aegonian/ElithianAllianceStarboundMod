@@ -1,10 +1,10 @@
 {
   "name" : "thea_weapons",
-  "title" : "Unique Weapons",
+  "title" : "Unique Equipment",
   "type" : "generic",
 
   "collectables" : {
-	//AVIKAN WEAPONS
+	//AVIKAN EQUIPMENT
     "avikan-thellhuntersbow" : {
       "order" : 1,
       "title" : "Thellhunter's Bow",
@@ -77,14 +77,14 @@
       "description" : "A modified Droden longsword used by commander Zaheed.",
       "icon" : "/items/active/weapons/melee/unique/zaheedsword/zaheedswordicon.png"
     },
-	//DRODEN WEAPONS
+	//DRODEN EQUIPMENT
     "drodenlegion" : {
       "order" : 13,
       "title" : "Legion",
       "description" : "A pre-Exodus switchgear blade, made for the Droden Legion.",
       "icon" : "/items/active/weapons/melee/unique/drodenlegion/drodenlegion.png"
     },
-	//CENTENSIAN WEAPONS
+	//CENTENSIAN EQUIPMENT
     "centens-deathseeker" : {
       "order" : 14,
       "title" : "Deathseeker",
@@ -109,7 +109,7 @@
       "description" : "An ancient weapon built to bend space-time.",
       "icon" : "/items/active/weapons/ranged/unique/voideater/centens-voideatericon.png"
     },
-	//TRINKIAN WEAPONS
+	//TRINKIAN EQUIPMENT
 	"trink-shockbolter" : {
       "order" : 18,
       "title" : "SDL-02 Shockbolter",
@@ -134,7 +134,7 @@
       "description" : "An energy rifle built for tactical incursions.",
       "icon" : "/items/active/weapons/ranged/unique/energizer/trink-energizericon.png"
     },
-	//NEW WEAPONS - v2.1.5
+	//NEW EQUIPMENT - v2.1.5
 	"avikan-ayurinswrath" : {
       "order" : 22,
       "title" : "Ayurin's Wrath",
@@ -165,7 +165,7 @@
       "description" : "An ultra-sharp blade forged in tribute to Elithia.",
       "icon" : "/items/active/weapons/melee/unique/tributesword/thea-tributesword.png"
     },
-	//NEW WEAPONS - v2.1.6
+	//NEW EQUIPMENT - v2.1.6
 	"avikan-guardbreakersbow" : {
       "order" : 27,
       "title" : "Guardbreaker's Bow",
@@ -208,7 +208,7 @@
       "description" : "A close-range electric weapon capable of dealing massive sustained damage.",
       "icon" : "/items/active/weapons/ranged/unique/arclighter/trink-arclighter.png"
     },
-	//NEW WEAPONS - v2.2.0
+	//NEW EQUIPMENT - v2.2.0
 	"thea-sidewinder" : {
       "order" : 34,
       "title" : "Sidewinder",
@@ -251,7 +251,7 @@
       "description" : "A shotgun firing a single devastating slug.",
       "icon" : "/items/active/weapons/ranged/unique/oathbreaker/avikan-oathbreaker.png"
     },
-	//NEW WEAPONS - v2.2.2
+	//NEW EQUIPMENT - v2.2.2
 	"avikan-vhalakinlongbow" : {
       "order" : 41,
       "title" : "Vhalakin Longbow",
@@ -270,7 +270,7 @@
       "description" : "A hammer wielding the strength of a Centensian god.",
       "icon" : "/items/active/weapons/melee/unique/wrathofrhadeis/centens-wrathofrhadeisicon.png"
     },
-	//NEW WEAPONS - v2.3.0
+	//NEW EQUIPMENT - v2.3.0
 	"avikan-conscriptor" : {
       "order" : 44,
       "title" : "Conscriptor",
@@ -409,7 +409,7 @@
       "description" : "A dual-barrel assault rifle for causing mayhem.",
       "icon" : "/items/active/weapons/ranged/unique/vaulaar/thea-vaulaar.png"
     },
-	//NEW WEAPONS v2.3.4
+	//NEW EQUIPMENT v2.3.4
 	"thea-tributelance" : {
       "order" : 67,
       "title" : "Lance of the Elithian",
@@ -428,7 +428,7 @@
       "description" : "A sword cloaked in shadows, built for the Harrowing.",
       "icon" : "/items/active/weapons/melee/unique/shadowsembrace/thea-shadowsembrace.png"
     },
-	//NEW WEAPONS v2.3.5
+	//NEW EQUIPMENT v2.3.5
 	"akkimari-offender" : {
       "order" : 70,
       "title" : "Offender",
@@ -446,6 +446,25 @@
       "title" : "Chraak Cannon",
       "description" : "A re-purposed artillery cannon that doubles as a spiked hammer.",
       "icon" : "/items/active/weapons/ranged/unique/chraakcannon/akkimari-chraakcannonicon.png"
+    },
+	//NEW EQUIPMENT v2.3.7
+	"notix-snowpiercer" : {
+      "order" : 73,
+      "title" : "Snowpiercer",
+      "description" : "A devastating cryogenic weapon designed by the Notix.",
+      "icon" : "/items/active/weapons/ranged/unique/snowpiercer/notix-snowpiercericon.png"
+    },
+	"aegi-wintersembrace" : {
+      "order" : 74,
+      "title" : "Winter's Embrace",
+      "description" : "A strange chestplate imbued with the cold of winter. It freezes its surroundings.",
+      "icon" : "/items/armors/unique/aegi-wintersembrace/icons.png:chest"
+    },
+	"thea-fireworkattachment" : {
+      "order" : 75,
+      "title" : "Fireworks Launcher",
+      "description" : "An underbarrel fireworks launcher to celebrate the Landing Festival!.",
+      "icon" : "/items/attachments/unique/thea-fireworkattachmentlarge.png"
     }
   }
 }

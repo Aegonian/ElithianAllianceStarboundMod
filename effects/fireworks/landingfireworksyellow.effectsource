@@ -1,0 +1,24 @@
+{
+  "kind" : "landingfireworksyellow",
+  "location" : "mouth",
+  "definition" : {
+    "duration" : 0.0125,
+    "loops" : true,
+    "start" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [ [ ] ]
+    },
+    "particles" : [
+      [ "landingfireworksyellow" ]
+    ],
+    "sounds" : [ [ ] ],
+    "stop" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [ [ ] ]
+    }
+  }
+}

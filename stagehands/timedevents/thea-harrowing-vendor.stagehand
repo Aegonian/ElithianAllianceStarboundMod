@@ -12,5 +12,5 @@
   "event" : "harrowing",
   
   //Misc Settings
-  "stagehandDieAfterSpawning" : false	//If true, the stagehand dies after spawning an NPC
+  "stagehandDieAfterSpawning" : false //If true, the stagehand dies after spawning an NPC
 }

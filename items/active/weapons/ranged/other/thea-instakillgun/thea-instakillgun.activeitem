@@ -9,7 +9,7 @@
   "level" : 10,
   "tooltipKind" : "thea-gun-unique",
   "category" : "Pistol",
-  "itemTags" : [],
+  "itemTags" : [ "weapon" ],
   "twoHanded" : false,
 
   "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",

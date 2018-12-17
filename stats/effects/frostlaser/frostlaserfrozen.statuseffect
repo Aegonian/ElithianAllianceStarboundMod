@@ -14,6 +14,6 @@
 
   "animationConfig" : "frostlaserfrozen.animation",
 
-  "label" : "Slow",
-  "icon" : "/interface/statuses/ice.png"
+  "label" : "Frozen",
+  "icon" : "/interface/statuses/frozen.png"
 }

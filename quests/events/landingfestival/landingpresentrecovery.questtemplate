@@ -1,0 +1,83 @@
+{
+  "id" : "landingpresentrecovery",
+  "prerequisites" : [],
+  "title" : "^green;The Lost Presents",
+  "text" : "Hohoho, happy Landing Festival! I, err... have run into a small problem: someone has stolen some of the presents meant for visitors of the Festival Hall! Would you be a dear and ^green;recover them for me^reset;? There are ^orange;ten large, purple presents ^green;in total, scattered across the ^orange;Festival Hall ^green;and the ^orange;Creon Embassy^reset;!",
+  "completionText" : "You have done well! I will make sure that these presents are distributed fairly. Here's a present for you, as thanks for helping me bring others a happy Landing Festival!",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "landingrewardcache", 1 ], [ "landingcache", 1 ], [ "landingcache", 1 ], [ "landingcache", 1 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+	"portraits" : {
+      "default" : "questGiver"
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "landingmissingpresent1",
+        "count" : 1,
+        "consume" : true
+      },
+      {
+        "type" : "gatherItem",
+        "itemName" : "landingmissingpresent2",
+        "count" : 1,
+        "consume" : true
+      },
+      {
+        "type" : "gatherItem",
+        "itemName" : "landingmissingpresent3",
+        "count" : 1,
+        "consume" : true
+      },
+      {
+        "type" : "gatherItem",
+        "itemName" : "landingmissingpresent4",
+        "count" : 1,
+        "consume" : true
+      },
+      {
+        "type" : "gatherItem",
+        "itemName" : "landingmissingpresent5",
+        "count" : 1,
+        "consume" : true
+      },
+      {
+        "type" : "gatherItem",
+        "itemName" : "landingmissingpresent6",
+        "count" : 1,
+        "consume" : true
+      },
+      {
+        "type" : "gatherItem",
+        "itemName" : "landingmissingpresent7",
+        "count" : 1,
+        "consume" : true
+      },
+      {
+        "type" : "gatherItem",
+        "itemName" : "landingmissingpresent8",
+        "count" : 1,
+        "consume" : true
+      },
+      {
+        "type" : "gatherItem",
+        "itemName" : "landingmissingpresent9",
+        "count" : 1,
+        "consume" : true
+      },
+      {
+        "type" : "gatherItem",
+        "itemName" : "landingmissingpresent10",
+        "count" : 1,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Return to ^orange;the Pathfinder ^reset;in the ^orange;Festival Hall^reset;"
+  }
+}

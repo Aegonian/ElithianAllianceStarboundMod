@@ -39,6 +39,9 @@ function checkEventActive(event)
 	--If the current day is in between start and end days, activate the event
 	if currentDay >= finalStartDay and currentDay <= finalEndDay then
 	  eventActive = true
+	--If the end day is earlier than the start day, the event goes on into the new year
+	elseif finalEndDay < finalStartDay and (currentDay >= finalStartDay or currentDay <= finalEndDay) then
+	  eventActive = true
 	end
 	
   --If no event days were passed on but an event month was, check if the current month matches the event month
@@ -51,6 +54,37 @@ function checkEventActive(event)
   
   --Return the results
   return eventActive, currentMonth, currentDay, leapYear
+end
+
+function getCurrentYear()
+  --Calculate current year by checking difference between timeStamps between now and the start of 2000
+  --Must use this method as start time of os.time() is unknown and possibly variable, and os.date() is unavailable in Starbound's version of LUA
+  local yearsSince2000 = (os.time() - os.time{year=2000, month=1, day=1, hour=0, sec=0}) / 31557600
+  local yearsSinceYearStart = yearsSince2000 - math.floor(yearsSince2000)
+  local currentYear = math.floor(yearsSince2000 + 2000)
+  
+  return currentYear
+end
+
+function getCurrentDay()
+  --Calculate current year by checking difference between timeStamps between now and the start of 2000
+  --Must use this method as start time of os.time() is unknown and possibly variable, and os.date() is unavailable in Starbound's version of LUA
+  local yearsSince2000 = (os.time() - os.time{year=2000, month=1, day=1, hour=0, sec=0}) / 31557600
+  local yearsSinceYearStart = yearsSince2000 - math.floor(yearsSince2000)
+  
+  --Figure out if this year is a leap year
+  local daysThisYear = 365
+  local currentYear = math.floor(yearsSince2000 + 2000)
+  local leapYear = checkLeapYear(currentYear)
+  if leapYear then
+	daysThisYear = 366
+  end
+  
+  --Calculate current day of the year
+  local currentDay = math.ceil(yearsSinceYearStart * daysThisYear)
+  
+  --Return the results
+  return currentDay
 end
 
 --This function is used to calculate whether the current year is a leap year or not

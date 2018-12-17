@@ -4,6 +4,9 @@ function init()
   self.itemList = "itemScrollArea.itemList"
 
   self.reconstructCost = config.getParameter("reconstructCost")
+  self.reconstructCostWeapon = config.getParameter("reconstructCostWeapon")
+  self.reconstructCostArmour = config.getParameter("reconstructCostArmour")
+  self.reconstructCostAttachment = config.getParameter("reconstructCostAttachment")
   
   self.collectionItems = {}
   self.selectedItem = nil
@@ -37,6 +40,14 @@ function populateItemList(forceRepop)
 
 	  local listItem = string.format("%s.%s", self.itemList, widget.addListItem(self.itemList))
 	  local name = config.parameters.shortdescription or config.config.shortdescription
+	  local cost = self.reconstructCost
+	  if root.itemHasTag(config.config.itemName, "theaUnique") then
+		cost = self.reconstructCostWeapon
+	  elseif root.itemHasTag(config.config.itemName, "theaUniqueArmour") then
+		cost = self.reconstructCostArmour
+	  elseif root.itemHasTag(config.config.itemName, "theaUniqueAttachment") then
+		cost = self.reconstructCostAttachment
+	  end
 
 	  widget.setText(string.format("%s.itemName", listItem), name)
 	  widget.setItemSlotItem(string.format("%s.itemIcon", listItem), item)
@@ -44,11 +55,11 @@ function populateItemList(forceRepop)
 	  widget.setData(listItem,
 		{
 		  index = i,
-		  price = self.reconstructCost
+		  price = cost
 		}
 	  )
 	  
-	  widget.setVisible(string.format("%s.unavailableoverlay", listItem), self.reconstructCost > playerEssence)
+	  widget.setVisible(string.format("%s.unavailableoverlay", listItem), cost > playerEssence)
     end
 
 	self.selectedItem = nil

@@ -143,14 +143,27 @@
     "value" : {
       "primaryDungeon" : "allianceoutpost",
 	  "weatherPool" : [
-		// REGULAR VERSION
-		//[0.850, "clear"],
-		//[0.075, "rain"],
-		//[0.075, "drizzle"]
-		
-		// SNOWY VERSION
-		[0.850, "snow"],
-		[0.150, "snowstorm"]
+		[0.850, "clear"],
+		[0.075, "rain"],
+		[0.075, "drizzle"]
+	  ],
+      "threatLevel" : 2,
+      "gravity" : 80,
+      "worldSize" : [2000, 500],
+      "dungeonBaseHeight" : 500,
+	  "dungeonSurfaceHeight" : 130,
+      "ambientLightLevel" : [128, 128, 128],
+      "biome" : "elithia",
+      "musicTrack" : "/music/planetarium.ogg"
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/alliancefestivalhall",
+    "value" : {
+      "primaryDungeon" : "alliancefestivalhall",
+	  "weatherPool" : [
+		[1.0, "snow"]
 	  ],
       "threatLevel" : 2,
       "gravity" : 80,
@@ -159,8 +172,7 @@
 	  "dungeonSurfaceHeight" : 130,
       "ambientLightLevel" : [128, 128, 128],
       "biome" : "elithia-snowy",
-      //"ambientNoises" : "/sfx/environmental/garden_day.ogg",
-      "musicTrack" : "/music/planetarium.ogg"
+      "musicTrack" : "/music/home-concept-loop.ogg"
     }
   },
   {

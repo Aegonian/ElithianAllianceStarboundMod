@@ -1,0 +1,26 @@
+{
+  "projectileName" : "snowmodspawner-wide",
+  "image" : "snowmodspawner.png",
+  "physics" : "thea-materialmodspawner",
+  "animationCycle" : 1,
+  "animationLoops" : false,
+  "frameNumber" : 1,
+  "emitters" : [ "thea-snowparticles" ],
+  "power" : 0,
+  "speed" : 0,
+  "timeToLive" : 0.25,
+  "bounces" : 0,
+  "onlyHitTerrain" : true,
+  "piercing" : true,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "actionOnReap" : [
+    {
+      "action" : "applySurfaceMod",
+      "previousMod" : "metamod:none",
+      "newMod" : "snow",
+      "radius" : 1
+    }
+  ],
+  "hydrophobic" : false
+}

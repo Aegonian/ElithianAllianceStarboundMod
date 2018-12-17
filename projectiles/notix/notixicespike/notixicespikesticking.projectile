@@ -1,0 +1,31 @@
+{
+  "projectileName" : "notixicespikesticking",
+  "physics" : "stickybomb",
+  "bounces" : 0,
+  "image" : "notixicespike.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "emitters" : [ "notixicespiketrailslow" ],
+  "piercing" : true,
+  "power" : 0,
+  "timeToLive" : 5,
+  "supportsProcessing" : true,
+  "damageType" : "ignoresdef",
+  "damageKind" : "hidden",
+  "damagePoly" : [ [-5, 2.5], [12, 0], [-5, -2.5], [-8, 0] ],
+  "hydrophobic" : false,
+  "statusEffects" : [
+    "frostslow"
+  ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/brokenarrows/brokennotixicespike.config"
+    }
+  ],
+  
+  "renderLayer" : "Monster+1",
+  
+  "scripts" : [ "/projectiles/scripts/thea-stickingprojectile.lua" ],
+  "searchRadius" : 0.1
+}

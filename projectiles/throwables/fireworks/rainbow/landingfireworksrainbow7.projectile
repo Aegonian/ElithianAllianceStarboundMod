@@ -1,0 +1,13 @@
+{
+  "projectileName" : "landingfireworksrainbow7",
+  "bounces" : -1,
+  "timeToLive" : 0.3,
+  "speed" : 20,
+  "physics" : "fireworkfall",
+  "image" : "landingfireworksrainbow7.png",
+  "emitters" : [ "landingfireworksblue" ],
+  "frameNumber" : 1,
+  "damageKind" : "fire",
+  "hydrophobic" : true,
+  "actionOnReap" : []
+}

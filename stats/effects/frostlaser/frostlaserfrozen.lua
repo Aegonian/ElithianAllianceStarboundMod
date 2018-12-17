@@ -29,6 +29,7 @@ function update(dt)
   
   --Prevent the freezing status effect from applying while this effect is active
   status.removeEphemeralEffect("frostlaserfreezing")
+  status.removeEphemeralEffect("frostlaserfreezingslow")
   
   --Prevent the target from moving
   mcontroller.controlModifiers({

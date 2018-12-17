@@ -872,7 +872,16 @@
 			  { "item": { "name": "aegi-asacoatlegs", "parameters" : { "colorIndex" : 0 } }, "rarity": 0.25 },
 			  { "item": { "name": "aegi-asacoatlegs", "parameters" : { "colorIndex" : 1 } }, "rarity": 0.25 },
 			  { "item": { "name": "aegi-asacoatlegs", "parameters" : { "colorIndex" : 4 } }, "rarity": 0.25 },
-			  { "item": { "name": "aegi-asacoatlegs", "parameters" : { "colorIndex" : 8 } }, "rarity": 0.25 }
+			  { "item": { "name": "aegi-asacoatlegs", "parameters" : { "colorIndex" : 8 } }, "rarity": 0.25 },
+			  //SEASONAL CLOTHING
+			  { "item": { "name": "aegi-wintercoat", "parameters" : { "colorIndex" : 0 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-wintercoat", "parameters" : { "colorIndex" : 1 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-wintercoat", "parameters" : { "colorIndex" : 4 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-wintercoat", "parameters" : { "colorIndex" : 8 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-warmjacket", "parameters" : { "colorIndex" : 0 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-warmjacket", "parameters" : { "colorIndex" : 1 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-warmjacket", "parameters" : { "colorIndex" : 4 } }, "rarity": 0.25 },
+			  { "item": { "name": "aegi-warmjacket", "parameters" : { "colorIndex" : 8 } }, "rarity": 0.25 }
 			] ]
 		]
 	},
@@ -1085,6 +1094,35 @@
 			  { "item": { "name": "trink-ghost" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 },
 			  { "item": { "name": "trink-notix" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 },
 			  { "item": { "name": "trink-pumpkin" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 }
+			] ]
+		]
+	},
+	
+	//=========================================================================================================
+	// EVENT - LANDING FESTIVAL
+	//=========================================================================================================
+	{ "op" : "add", "path" : "/landingFestivalEventVendor",
+		"value" : [
+			[ 0, [
+			  { "item": { "name": "landingcache" }, "price" : 1500 },
+			  { "item": { "name": "aegi-pathfinderhead" }, "prerequisiteQuest" : "landingpresentrecovery", "price" : 5000 },
+			  { "item": { "name": "aegi-pathfinderchest" }, "prerequisiteQuest" : "landingpresentrecovery", "price" : 5000 },
+			  { "item": { "name": "aegi-pathfinderlegs" }, "prerequisiteQuest" : "landingpresentrecovery", "price" : 5000 },
+			  { "item": { "name": "thea-pathfinderstaff" }, "prerequisiteQuest" : "landingpresentrecovery", "price" : 5000 },
+			  { "item": { "name": "trink-snowballhead" }, "prerequisiteQuest" : "landingweaponresearch", "price" : 2500 },
+			  { "item": { "name": "trink-snowballchest" }, "prerequisiteQuest" : "landingweaponresearch", "price" : 2500 },
+			  { "item": { "name": "trink-snowballlegs" }, "prerequisiteQuest" : "landingweaponresearch", "price" : 2500 },
+			  { "item": { "name": "aegi-pilgrimhead" }, "price" : 2500 },
+			  { "item": { "name": "aegi-pilgrimchest" }, "price" : 2500 },
+			  { "item": { "name": "aegi-pilgrimlegs" }, "price" : 2500 },
+			  { "item": { "name": "landingpresent1" } },
+			  { "item": { "name": "landingpresent2" } },
+			  { "item": { "name": "landingpresent3" } },
+			  { "item": { "name": "landingpresent4" } },
+			  { "item": { "name": "landingtreemedium" } },
+			  { "item": { "name": "landingtreelarge" } },
+			  { "item": { "name": "landingsnowman-recipe" }, "price" : 250 },
+			  { "item": { "name": "landingsnowman2-recipe" }, "price" : 250 }
 			] ]
 		]
 	}

@@ -1,0 +1,36 @@
+{
+  "objectName" : "landingpresentbig",
+  "colonyTags" : ["landingfestival"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 100,
+  "description" : "...",
+  "shortdescription" : "Landing Festival Present",
+  "race" : "aegi",
+
+  "inventoryIcon" : "landingpresentbigicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "landingpresentbig.png:<color>",
+      "imagePosition" : [-16, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+  "animation" : "/objects/animations/thea-eventobject.animation",
+  "animationParts" : {
+    "object" : "landingpresentbig.png"
+  },
+  "animationPosition" : [-16, 0],
+  
+  "scripts" : [ "/objects/scripts/thea-eventbreakoninteract.lua" ],
+  "scriptDelta" : 5,
+  
+  "event" : "landingfestival",
+  
+  "smashDropPool" : "landingmissingpresent1",
+  "breakDropPool" : "landingmissingpresent1"
+}

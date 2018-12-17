@@ -1,0 +1,43 @@
+{
+  "projectileName" : "landingfireworksrainbow3",
+  "bounces" : -1,
+  "timeToLive" : 0.3,
+  "speed" : 60,
+  "physics" : "fireworkfall",
+  "image" : "landingfireworksrainbow3.png",
+  "emitters" : [ "landingfireworkspurple" ],
+  "frameNumber" : 1,
+  "damageKind" : "fire",
+  "onlyHitTerrain" : true,
+  "hydrophobic" : true,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "landingfireworksrainbow4",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "angle" : 45
+    },
+    {
+      "action" : "projectile",
+      "type" : "landingfireworksrainbow4",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "angle" : 135
+    },
+    {
+      "action" : "projectile",
+      "type" : "landingfireworksrainbow4",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "angle" : 225
+    },
+    {
+      "action" : "projectile",
+      "type" : "landingfireworksrainbow4",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 5,
+      "angle" : 315
+    }
+  ]
+}

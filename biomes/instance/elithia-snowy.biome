@@ -28,10 +28,10 @@
 
   "ambientNoises" : {
     "day" : {
-      "tracks" : [ "/sfx/environmental/garden_day.ogg" ]
+      "tracks" : [ "/sfx/environmental/snow_day.ogg" ]
     },
     "night" : {
-      "tracks" : [ "/sfx/environmental/garden_night.ogg" ]
+      "tracks" : [ "/sfx/environmental/snow_night.ogg" ]
     }
   },
 
@@ -78,7 +78,7 @@
 
   "undergroundPlaceables" : {
     "grassMod" : [ "snow" ],
-    "grassModDensity" : 0.2,
+    "grassModDensity" : 1.0,
 
     "ceilingGrassMod" : [ "roots" ],
     "ceilingGrassModDensity" : 0.3,

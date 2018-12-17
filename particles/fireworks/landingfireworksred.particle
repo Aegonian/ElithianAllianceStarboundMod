@@ -1,0 +1,22 @@
+{
+  "kind" : "landingfireworksred",
+  "definition" : {
+    "type" : "ember",
+    "size" : 1,
+    "color" : [255, 33, 0, 255],
+    "fade" : 0.9,
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.5,
+    "initialVelocity" : [0, 0],
+    "finalVelocity" : [0, 0],
+    "approach" : [5, 5],
+    "timeToLive" : 0.5,
+    "light" : [100, 15, 0],
+    "layer" : "middle",
+    "variance" : {
+      "initialVelocity" : [5, 5],
+      "size" : 1.5
+    },
+	"collidesLiquid" : false
+  }
+}

@@ -357,5 +357,10 @@
 	"op": "add",
 	"path": "/thea-stabilizer-bow",
 	"value": "/items/active/weapons/ranged/abilities/attachments/thea-stabilizer/thea-stabilizer-bow.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-fireworklauncher",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-fireworklauncher/thea-fireworklauncher.weaponability"
   }
 ]

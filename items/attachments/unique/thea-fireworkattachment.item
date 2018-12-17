@@ -1,0 +1,25 @@
+{
+  "itemName" : "thea-fireworkattachment",
+  "price" : 1500,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "tooltipKind" : "thea-attachment-unique",
+  "category" : "Weapon Attachment",
+  "inventoryIcon" : "thea-fireworkattachment.png",
+  "largeImage" : "thea-fireworkattachmentlarge.png",
+  "builder" : "/items/buildscripts/thea-buildattachment.lua",
+  
+  "manufacturer" : "^gray;AAE^reset;",
+  "description" : "An underbarrel fireworks launcher to celebrate the Landing Festival!",
+  "shortdescription" : "^orange;Fireworks Launcher^reset;",
+  
+  //CONFIGURATION FOR EQUIPMENT COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "thea-fireworkattachment" },
+  
+  "meritTokenValue" : 50,
+  
+  "itemTags" : [ "thea_attachment", "theaUniqueAttachment" ],
+  
+  "theaAttachmentType" : "aae_assault1",
+  "theaAttachmentAbility" : "thea-fireworklauncher"
+}

@@ -1,0 +1,178 @@
+{
+  "itemName" : "notix-snowpiercer",
+  "price" : 1500,
+  "inventoryIcon" : "notix-snowpiercericon.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;A devastating cryogenic weapon designed by the Notix.",
+  "shortdescription" : "^orange;Snowpiercer^white;",
+  "level" : 6,
+  "fixedLevel" : false,
+  "tooltipKind" : "thea-gun-unique",
+  "category" : "Frost Rail",
+  "itemTags" : ["weapon","ranged","notix","theaUnique"],
+  "twoHanded" : true,
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "notix-snowpiercer" },
+  
+  "meritTokenValue" : 100,
+  
+  "cursor" : "/cursors/thea-railreticle.cursor",
+
+  "animation" : "notix-snowpiercer.animation",
+  "animationParts" : {
+    "middle" : "notix-snowpiercer.png",
+    "middleFullbright" : "notix-snowpiercerlights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/thea-invisiblemuzzle.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+		    "offset" : [0.875, -0.5]
+		  }
+		}
+      }
+    },
+	"particleEmitters" : {
+	  "muzzleFlash" : {
+        "particles" : [
+          { "particle" : "thea-frostlaserimpact" },
+		  { "particle" : "thea-frostlaserimpact2" },
+		  { "particle" : "iceswoosh3" },
+		  { "particle" : "brokennotixicespike3" },
+		  { "particle" : "brokennotixicespike3" },
+		  { "particle" : "brokennotixicespike3" }
+        ]
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/grenadeblast_small_ice1.ogg" ],
+      "fireStart" : [ "/sfx/gun/flamethrower_start.ogg" ],
+      "fireLoop" : [ "/sfx/gun/snowpiercer_loop.ogg" ],
+      "fireEnd" : [ "/sfx/gun/flamethrower_stop.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.875, -0.5],
+  "muzzleOffset" : [-0.5, 0.2],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "ice",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.62,
+    "baseDps" : 10.5,
+    "energyUsage" : 40.0,
+    "inaccuracy" : 0.01,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "notixicespike",
+    "projectileParameters" : {},
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 1,
+        "weaponRotation" : 0,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+
+        "frontArmFrame" : "swim.1",
+        "backArmFrame" : "rotation"
+      },
+      "cooldown" : {
+        "duration" : 0.125,
+        "armRotation" : 1,
+        "weaponRotation" : 0,
+        "weaponOffset" : [-0.1, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+
+        "frontArmFrame" : "swim.1",
+        "backArmFrame" : "rotation"
+      }
+    }
+  },
+  
+  "altAbility" : {
+    "name" : "Snowstorm",
+    "scripts" : ["/items/active/weapons/ranged/abilities/flamethrower/flamethrower.lua"],
+    "class" : "FlamethrowerAttack",
+
+    "baseDps" : 3.5,
+    "energyUsage" : 40,
+    "fireTime" : 0.05,
+    "inaccuracy" : 0.05,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "notixicecloud",
+    "projectileParameters" : { },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      },
+      "cooldown" : {
+        "duration" : 0.05,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

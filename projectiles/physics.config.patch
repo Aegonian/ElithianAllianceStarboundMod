@@ -282,7 +282,7 @@
 	  "airFriction" : 1.0,
 	  "liquidFriction" : 3.0,
 	  "groundFriction" : 1.0
-	}	  
+	}
   },
   {"op" : "add",
 	"path" : "/thea-heavydustcloud",
@@ -297,7 +297,7 @@
 	  "airFriction" : 1.0,
 	  "liquidFriction" : 3.0,
 	  "groundFriction" : 1.0
-	}	  
+	}
   },
   {"op" : "add",
 	"path" : "/thea-materialmodspawner",
@@ -312,7 +312,7 @@
 	  "airFriction" : 1.0,
 	  "liquidFriction" : 1.0,
 	  "groundFriction" : 1.0
-	}	  
+	}
   },
   {"op" : "add",
 	"path" : "/thea-noclipprojectile",
@@ -327,7 +327,7 @@
 	  "airFriction" : 0.0,
 	  "liquidFriction" : 0.0,
 	  "groundFriction" : 0.0
-	}	  
+	}
   },
   {"op" : "add",
 	"path" : "/thea-airstrikerocket",

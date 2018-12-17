@@ -17,7 +17,6 @@ function init()
 end
 
 function update(dt)
-
   self.tickTimer = self.tickTimer - dt
   
   --Actions to be performed on every tick

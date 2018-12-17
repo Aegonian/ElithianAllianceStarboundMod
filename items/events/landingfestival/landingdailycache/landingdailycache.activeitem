@@ -1,0 +1,35 @@
+{
+  "itemName" : "landingdailycache",
+  "level" : 1,
+  "price" : 250,
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "A wrapped present. Can only be obtained once every day. Hold ^green;[LMB] ^white;to open!",
+  "shortdescription" : "Daily Present",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "landingdailycacheicon.png",
+  "animation" : "landingdailycache.animation",
+  "animationParts" : {
+    "treasurebox" : "landingdailycache.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "open" : [ "/sfx/objects/colonydeed_partyhorn.ogg" ],
+	  "openLoop" : [ "/sfx/other/thea_sealedcache_opening2.ogg" ]
+    }
+  },
+  
+  "scripts" : ["/items/active/other/thea-sealedcache/thea-sealedcache.lua"],
+
+  "fireOffset" : [1.0, 0.0],
+
+  "treasure" : {
+    "pool" : "landingTreasurebox"
+  },
+  
+  "pickupQuestTemplates" : [ "landingpresenttimer" ], //This quest prevents the player from receiving another daily present on the same day
+  
+  //Makes the treasure's level depend on the threatLevel of the world the item is first used on
+  "useWorldLevel" : true
+}

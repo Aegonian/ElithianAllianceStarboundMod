@@ -1,0 +1,43 @@
+{
+  "objectName" : "allianceholidaybanner",
+  "colonyTags" : ["landingfestival","harrowing"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 100,
+  "description" : "...",
+  "shortdescription" : "Event Banner",
+  "race" : "aegi",
+
+  "inventoryIcon" : "allianceholidaybannericon.png",
+  "orientations" : [
+    {
+      "dualImage" : "allianceholidaybanner.png:landingfestival",
+      "imagePosition" : [-8, -72],
+
+      "spaceScan" : 0.1,
+      "bgAnchors" : [
+		[-1, 0], [0, 0]
+	  ]
+    },
+    {
+      "dualImage" : "allianceholidaybanner.png:landingfestival",
+      "imagePosition" : [-8, -72],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ],
+  
+  "animation" : "allianceholidaybanner.animation",
+  "animationParts" : {
+    "object" : "allianceholidaybanner.png"
+  },
+  "animationPosition" : [-8, -72],
+
+  "scripts" : [ "/objects/scripts/thea-eventobject.lua" ],
+  "scriptDelta" : 1,
+  
+  "events" : [ "landingfestival", "harrowing" ],
+  "multiEventAppearance" : true
+}

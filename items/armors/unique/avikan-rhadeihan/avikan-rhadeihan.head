@@ -8,10 +8,21 @@
   "description" : "^green;Avikan. ^white;An exosuit helmet that quickly replenishes its wearer's energy reserves.",
   "shortdescription" : "^orange;Rhadeihan Helmet^white;",
   "tooltipKind" : "thea-armorwide-unique",
+  "itemTags" : [ "theaUniqueArmour" ],
+  
+  //CONFIGURATION FOR UNIQUE EQUIPMENT COLLECTION
+  //"collectablesOnPickup" : { "thea_weapons" : "aegi-wintersembrace" },
+  
+  "meritTokenValue" : 100,
 
   "maleFrames" : "head.png",
   "femaleFrames" : "head.png",
   "mask" : "mask.png",
+  
+  "statusEffects" : [
+	"rhadeihan-head",
+	"setbonus-rhadeihan-head"
+  ],
 
   "level" : 7,
   "leveledStatusEffects" : [
@@ -36,14 +47,8 @@
       "amount" : 3
     }
   ],
-  
-  "statusEffects" : [
-	"rhadeihan-head",
-	"setbonus-rhadeihan-head"
-  ],
 
   "colorOptions" : [
-  
 	//Colours go from LIGHT to DARK - LIGHT/MEDIUM/DARK
 	
 	//DEFAULT - NO DYE
@@ -73,5 +78,7 @@
     { "e0975c" : "D13BB7", "a85636" : "812570", "6f2919" : "3E1235" },
     /* 11- BROWN */
     { "e0975c" : "C1A57C", "a85636" : "7C6A4F", "6f2919" : "44392C" }
-  ]
+  ],
+  
+  "builder" : "/items/buildscripts/thea-buildarmor.lua"
 }

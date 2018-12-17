@@ -1,0 +1,106 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "objectState" : {
+        "default" : "inactive",
+        "states" : {
+          "inactive" : {},
+          "active" : {}
+        }
+      }
+    },
+
+    "parts" : {
+      "object" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : false
+        },
+        "partStates" : {
+          "objectState" : {
+            "inactive" : {
+              "properties" : {
+                "image" : "<partImage>:inactive"
+              }
+            },
+            "active" : {
+              "properties" : {
+                "image" : "<partImage>:active"
+              }
+            }
+          }
+        }
+      },
+      "objectFullbright" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : false,
+          "fullbright" : true
+        },
+        "partStates" : {
+          "objectState" : {
+            "inactive" : {
+              "properties" : {
+                "image" : "<partImage>:inactive"
+              }
+            },
+            "active" : {
+              "properties" : {
+                "image" : "<partImage>:active"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "particleEmitters" : {
+    "activeParticles" : {
+	  "emissionRate" : 5.0,
+	  "emissionVariance" : 0.5,
+      "particles" : [{
+		"particle" : {
+		  "type" : "animated",
+		  "animation" : "/animations/theateleporter/theateleporter.animation",
+		  "position" : [3.0, 1.0],
+		  "size" : 1.0,
+		  "color" : [255, 255, 255, 255],
+		  "fade" : 0.5,
+		  "initialVelocity" : [0.0, 4.0],
+		  "finalVelocity" : [0.0, 2.0],
+		  "approach" : [0, 20],
+		  "timeToLive" : 2.0,
+		  "layer" : "middle",
+		  "variance" : {
+			"initialVelocity" : [0.0, 2.0]
+		  }
+		}
+	  }]
+	},
+    "activeParticles2" : {
+	  "emissionRate" : 8.0,
+	  "emissionVariance" : 0.5,
+      "particles" : [{
+		"particle" : {
+		  "type" : "animated",
+		  "animation" : "/animations/theateleporter2/theateleporter2.animation",
+		  "position" : [3.0, 1.0],
+		  "size" : 1.0,
+		  "color" : [255, 255, 255, 255],
+		  "fade" : 0.5,
+		  "initialVelocity" : [0.0, 0.0],
+		  "finalVelocity" : [0.0, 8.0],
+		  "approach" : [0, 20],
+		  "timeToLive" : 2.5,
+		  "destructionAction" : "shrink",
+		  "layer" : "middle",
+		  "variance" : {
+			"initialVelocity" : [0.0, 2.0],
+			"position" : [1.5, 0]
+		  }
+		}
+	  }]
+	}
+  }
+}

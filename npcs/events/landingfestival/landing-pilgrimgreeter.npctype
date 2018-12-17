@@ -1,0 +1,37 @@
+{
+  "type" : "landing-pilgrimgreeter",
+  "baseType" : "eo-lounger",
+  
+  "dropPools" : [ "aegiDeathTreasure" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "Welcome to the Festival Hall! Our doors open every year when the Landing Festival returns!"
+		  ]
+		}
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "aegi-pilgrimhead", "parameters" : { "colorIndex" : 4 } }
+            ],
+            "chest" : [
+              { "name" : "aegi-pilgrimchest", "parameters" : { "colorIndex" : 4 } }
+            ],
+            "legs" : [
+              { "name" : "aegi-pilgrimlegs", "parameters" : { "colorIndex" : 4 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

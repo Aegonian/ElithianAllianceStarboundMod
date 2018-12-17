@@ -1,0 +1,21 @@
+{
+  "projectileName" : "landingfireworksrainbow5",
+  "bounces" : -1,
+  "timeToLive" : 0.3,
+  "speed" : 40,
+  "physics" : "fireworkfall",
+  "image" : "landingfireworksrainbow5.png",
+  "emitters" : [ "landingfireworksyellow" ],
+  "frameNumber" : 1,
+  "damageKind" : "fire",
+  "hydrophobic" : true,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "landingfireworksrainbow6",
+      "inheritDamageFactor" : 1,
+      "fuzzAngle" : 360,
+      "angle" : 0
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id" : "landingweaponresearch",
+  "prerequisites" : [],
+  "title" : "^green;Snow for Everyone",
+  "text" : "I love snow. Don't you love snow? Snow is great. Do you want to shoot snow? And ice? I have a weapon for you. ^green;If you give me snow, ^orange;LOTS of snow^green;, I'll give you this weapon^reset;. Just bring me more snow!",
+  "completionText" : "I love snow! You'll love snow too when you try out this weapon. Have fun in the snow!",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "notix-snowpiercer", 1 ], [ "trink-snowballhead", 1 ], [ "trink-snowballchest", 1 ], [ "trink-snowballlegs", 1 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+	"portraits" : {
+      "default" : "questGiver"
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "snow",
+        "count" : 500,
+        "consume" : true
+      }
+    ],
+	"turnInDescription" : "Return to ^orange;SnowROM ^reset;in the ^orange;Festival Hall^reset;"
+  }
+}

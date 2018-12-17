@@ -14,6 +14,19 @@
     "wrapWidth" : 126,
     "value" : "Unique"
   },
+  //===================== LEVEL LABELS =====================
+  "levelTitleLabel" : {
+    "type" : "label",
+    "position" : [18, 102],
+    "hAnchor" : "left",
+    "value" : "^gray;level^reset;"
+  },
+  "levelLabel" : {
+    "type" : "label",
+    "position" : [40, 102],
+    "hAnchor" : "left"
+  },
+  //=================== END LEVEL LABELS ===================
   "moneyIcon" : {
     "type" : "image",
     "position" : [146, 23],

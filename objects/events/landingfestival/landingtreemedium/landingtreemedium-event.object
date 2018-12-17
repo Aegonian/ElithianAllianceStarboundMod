@@ -1,0 +1,33 @@
+{
+  "objectName" : "landingtreemedium-event",
+  "colonyTags" : ["landingfestival"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 500,
+  "description" : "...",
+  "shortdescription" : "Landing Festival Tree (Event)",
+  "race" : "aegi",
+
+  "inventoryIcon" : "landingtreemediumicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "landingtreemedium.png:<color>",
+      "imagePosition" : [-32, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+  "animation" : "/objects/animations/thea-eventobject.animation",
+  "animationParts" : {
+    "object" : "landingtreemedium.png"
+  },
+  "animationPosition" : [-32, 0],
+
+  "scripts" : [ "/objects/scripts/thea-eventobject.lua" ],
+  "scriptDelta" : 1,
+  
+  "event" : "landingfestival"
+}

@@ -1,0 +1,41 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "objectState" : {
+        "default" : "hidden",
+        "states" : {
+          "hidden" : {},
+          "landingfestival" : {},
+          "harrowing" : {}
+        }
+      }
+    },
+
+    "parts" : {
+      "object" : {
+        "properties" : {
+          "centered" : false
+        },
+        "partStates" : {
+          "objectState" : {
+            "hidden" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "landingfestival" : {
+              "properties" : {
+                "image" : "<partImage>:landingfestival"
+              }
+            },
+            "harrowing" : {
+              "properties" : {
+                "image" : "<partImage>:harrowing"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

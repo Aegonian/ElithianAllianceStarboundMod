@@ -1,0 +1,28 @@
+{
+  "projectileName" : "landingfireworksrainbow",
+  "bounces" : -1,
+  "timeToLive" : 3,
+  "physics" : "grenadenobounce",
+  "image" : "landingfireworksrainbow.png",
+  "emitters" : [ "thea-flames" ],
+  "frameNumber" : 1,
+  "damageKind" : "fire",
+  "onlyHitTerrain" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/smoke/smoke.config"
+    },
+    {
+      "action" : "sound",
+      "options" : [ "/sfx/projectiles/firework_launch1.ogg" ]
+    },
+    {
+      "action" : "projectile",
+      "type" : "landingfireworksrainbow2",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1,
+      "angleAdjust" : 0
+    }
+  ]
+}

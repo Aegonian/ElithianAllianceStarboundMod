@@ -1,0 +1,30 @@
+{
+  "itemName" : "landingfireworksgreen",
+  "rarity" : "Common",
+  "price" : 50,
+  "category" : "throwableItem",
+  "inventoryIcon" : "landingfireworksgreen.png",
+  "image" : "landingfireworksgreen.png",
+  "shortdescription" : "Green Fireworks",
+  "description" : "Colourful fireworks to celebrate the Landing Festival!",
+
+  "ammoUsage" : 1,
+
+  "edgeTrigger" : true,
+  "windupTime" : 0.0,
+  "cooldown" : 0.4,
+
+  "projectileType" : "landingfireworksgreen",
+  "projectileConfig" : {
+    "speed" : 5,
+    "power" : 0.1,
+    "periodicActions" : [
+      {
+        "time" : 0,
+        "repeat" : false,
+        "action" : "sound",
+        "options" : [ "/sfx/projectiles/throw_item_small.ogg" ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "itemName" : "landingmissingpresent6",
+  "price" : 0,
+  "rarity" : "Legendary",
+  "category" : "Quest Item",
+  "inventoryIcon" : "landingmissingpresent6.png",
+  "description" : "A Landing Festival present that went missing. Return it to the Pathfinder!",
+  "shortdescription" : "Missing Present 6",
+  "itemTags" : [ "questitem" ]
+}

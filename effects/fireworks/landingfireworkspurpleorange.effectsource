@@ -1,0 +1,24 @@
+{
+  "kind" : "landingfireworkspurpleorange",
+  "location" : "mouth",
+  "definition" : {
+    "duration" : 0.025,
+    "loops" : true,
+    "start" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [ [ ] ]
+    },
+    "particles" : [
+      [ "landingfireworkspurple", "landingfireworksorange" ]
+    ],
+    "sounds" : [ [ ] ],
+    "stop" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [ [ ] ]
+    }
+  }
+}

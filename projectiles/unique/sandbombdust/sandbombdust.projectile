@@ -25,6 +25,7 @@
   "hydrophobic" : false,
   
   //SCRIPT CONFIG
-  "scripts" : [ "/projectiles/scripts/thea-sandmodspawner.lua" ],
-  "tickTime" : 0.2
+  "scripts" : [ "/projectiles/scripts/thea-tilemodspawner.lua" ],
+  "tickTime" : 0.2,
+  "tileModProjectile" : "sandmodspawner"
 }

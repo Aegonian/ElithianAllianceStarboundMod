@@ -8,9 +8,20 @@
   "description" : "^green;Avikan. ^white;Exosuit leggings that absorb impacts from falls, and activate fall breaker thrusters when falling.",
   "shortdescription" : "^orange;Rhadeihan Leggings^white;",
   "tooltipKind" : "thea-armorwide-unique",
+  "itemTags" : [ "theaUniqueArmour" ],
+  
+  //CONFIGURATION FOR UNIQUE EQUIPMENT COLLECTION
+  //"collectablesOnPickup" : { "thea_weapons" : "aegi-wintersembrace" },
+  
+  "meritTokenValue" : 100,
 
   "maleFrames" : "pants.png",
   "femaleFrames" : "pants.png",
+  
+  "statusEffects" : [
+	"rhadeihan-legs",
+	"setbonus-rhadeihan-legs"
+  ],
 
   "level" : 7,
   "leveledStatusEffects" : [
@@ -35,14 +46,8 @@
       "amount" : 2
     }
   ],
-  
-  "statusEffects" : [
-	"rhadeihan-legs",
-	"setbonus-rhadeihan-legs"
-  ],
 
   "colorOptions" : [
-  
 	//Colours go from LIGHT to DARK - LIGHT/MEDIUM/DARK
 	
 	//DEFAULT - NO DYE
@@ -72,5 +77,7 @@
     { "e0975c" : "D13BB7", "a85636" : "812570", "6f2919" : "3E1235" },
     /* 11- BROWN */
     { "e0975c" : "C1A57C", "a85636" : "7C6A4F", "6f2919" : "44392C" }
-  ]
+  ],
+  
+  "builder" : "/items/buildscripts/thea-buildarmor.lua"
 }

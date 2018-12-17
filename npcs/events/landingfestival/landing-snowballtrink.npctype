@@ -1,0 +1,42 @@
+{
+  "type" : "landing-snowballtrink",
+  "baseType" : "eo-civilian",
+  
+  "npcname" : "SnowROM",
+  
+  "dropPools" : [ "aegiDeathTreasure" ],
+
+  "scriptConfig" : {
+	"offeredQuests" : [ "landingweaponresearch" ],
+	"turnInQuests" : [ "landingweaponresearch" ],
+	
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "Don't you just love snow?"
+		  ]
+		}
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "trink-snowballhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "trink-snowballchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "trink-snowballlegs", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

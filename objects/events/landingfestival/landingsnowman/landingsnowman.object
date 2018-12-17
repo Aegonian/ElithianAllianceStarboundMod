@@ -4,10 +4,31 @@
   "rarity" : "Common",
   "category" : "decorative",
   "printable" : false,
-  "price" : 100,
-  "description" : "...",
+  "price" : 20,
+  "description" : "A simple snowman adorned with an Elithian Alliance hat.",
   "shortdescription" : "Snowman",
-  "race" : "generic",
+  "race" : "aegi",
+
+  "apexDescription" : "A snowman with a funny hat.",
+  "avianDescription" : "It's a snowman. It could use some wings!",
+  "floranDescription" : "Man made of sssnow.",
+  "glitchDescription" : "Joyful. Snow always brings people together.",
+  "humanDescription" : "It's a snow man!",
+  "hylotlDescription" : "A simple but well-made snowman.",
+  "novakidDescription" : "That's some sorta snow-man.",
+
+  "aegiDescription" : "A snowman. I love making these!",
+  "avikanDescription" : "Is that... an alien? Made of frozen water? The people here really are odd.",
+  "erixianDescription" : "I don't like the cold. I long for the heat of flames.",
+  "trinkDescription" : "A silly snowman, but it's efficient in making people feel happy.",
+  "hymidDescription" : "It's a snow statue of some sort. The Aegi really like these.",
+  "notixDescription" : "A snow-man, as the Aegi call it. Why not a snow-Notix?",
+  "jorgasianDescription" : "A snowman. The Aegi sure like their snow.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Analyzing construct. Detected frozen water source. Recommend immediate harvesting.",
+  "akkimariDescription" : "Alien made of snow. Aliens fun!",
 
   "inventoryIcon" : "landingsnowmanicon.png",
   "orientations" : [
@@ -18,16 +39,5 @@
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ]
     }
-  ],
-  
-  "animation" : "/objects/animations/thea-eventobject.animation",
-  "animationParts" : {
-    "object" : "landingsnowman.png"
-  },
-  "animationPosition" : [-16, 0],
-
-  "scripts" : [ "/objects/scripts/thea-eventobject.lua" ],
-  "scriptDelta" : 1,
-  
-  "event" : "landingfestival"
+  ]
 }

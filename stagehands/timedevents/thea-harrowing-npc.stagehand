@@ -12,6 +12,5 @@
   "event" : "harrowing",
   
   //Misc Settings
-  "stagehandDieAfterSpawning" : false,	//If true, the stagehand dies after spawning an NPC
-  "eventName" : "The Harrowing"			//Name of the event. Only used in debug displays
+  "stagehandDieAfterSpawning" : false //If true, the stagehand dies after spawning an NPC
 }

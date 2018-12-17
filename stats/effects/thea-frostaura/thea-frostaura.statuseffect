@@ -1,0 +1,41 @@
+{
+  "name" : "thea-frostaura",
+  "effectConfig" : {
+	//MATERIAL MOD BEHAVIOUR
+	"materialModProjectile" : "snowmodspawner-wide",
+	"projectileCooldownTime" : 0.05,
+	"projectileSpawnWidth" : 3,
+	
+	//STATUS INFLICTER BEHAVIOUR
+	"statusProjectile" : "frostaurafreezer",
+	
+	//LIQUID CONVERSION BEHAVIOUR
+	"liquidConversions" : [			//Liquid conversion tables. First entry is the liquidID (int), second is materialID (string)
+	  [ 1, "frozenwater" ],
+	  [ 6, "frozenwater" ],
+	  [ 12, "frozenwater" ],
+	  [ 2, "magmarock" ]
+	],
+	"liquidConvertPositions" : [	//Positions to convert liquids at
+	  [3, -3],
+	  [2, -3], [2, -4],
+	  [1, -3], [1, -4],
+	  [0, -3], [0, -4],
+	  [-1,-3], [-1,-4],
+	  [-2,-3], [-2,-4],
+	  [-3,-3]
+	],
+	"minimumLiquidLevel" : 0.75,	//Minimum liquid level needed for conversion to succeed
+	"allowOverlap" : true			//If true, the projectiles convert liquids even if the position is occupied by an entity
+  },
+  "defaultDuration" : 0.5,
+
+  "scripts" : [
+    "thea-frostaura.lua"
+  ],
+
+  "animationConfig" : "thea-frostaura.animation",
+
+  "label" : "Frost Aura",
+  "icon" : "/interface/statuses/thea-frostaura.png"
+}

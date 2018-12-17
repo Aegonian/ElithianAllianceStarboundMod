@@ -8,10 +8,20 @@
   "description" : "^green;Avikan. ^white;The helmet of the legendary Thellhunter. The built-in HUD automatically marks potential targets.",
   "shortdescription" : "^orange;Thellhunter's Helmet^white;",
   "tooltipKind" : "thea-armor-unique",
+  "itemTags" : [ "theaUniqueArmour" ],
+  
+  //CONFIGURATION FOR UNIQUE EQUIPMENT COLLECTION
+  //"collectablesOnPickup" : { "thea_weapons" : "aegi-wintersembrace" },
+  
+  "meritTokenValue" : 100,
 
   "maleFrames" : "head.png",
   "femaleFrames" : "head.png",
   "mask" : "mask.png",
+  
+  "statusEffects" : [
+	"highlightenemies"
+  ],
   
   "level" : 6,
   "leveledStatusEffects" : [
@@ -37,12 +47,7 @@
     }
   ],
 
-  "statusEffects" : [
-	"highlightenemies"
-  ],
-
   "colorOptions" : [
-  
 	//Colours go from LIGHT to DARK - LIGHT/MEDIUM/DARK
 	
 	//DEFAULT - NO DYE
@@ -72,6 +77,7 @@
     { "e0975c" : "D13BB7", "a85636" : "812570", "6f2919" : "3E1235" },
     /* 11- BROWN */
     { "e0975c" : "C1A57C", "a85636" : "7C6A4F", "6f2919" : "44392C" }
-
-  ]
+  ],
+  
+  "builder" : "/items/buildscripts/thea-buildarmor.lua"
 }
