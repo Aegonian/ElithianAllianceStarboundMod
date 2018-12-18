@@ -6,7 +6,7 @@
   "completionText" : "I love snow! You'll love snow too when you try out this weapon. Have fun in the snow!",
   "moneyRange" : [50, 50],
   "rewards" : [
-    [ [ "notix-snowpiercer", 1 ], [ "trink-snowballhead", 1 ], [ "trink-snowballchest", 1 ], [ "trink-snowballlegs", 1 ] ]
+    [ [ "notix-snowpiercer", 1 ], [ "trink-snowballhead", 1 ], [ "trink-snowballchest", 1 ], [ "trink-snowballlegs", 1 ], [ "landingcache", 1 ] ]
   ],
 
   "updateDelta" : 10,

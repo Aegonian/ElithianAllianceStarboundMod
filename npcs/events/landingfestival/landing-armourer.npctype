@@ -1,0 +1,53 @@
+{
+  "type" : "landing-armourer",
+  "baseType" : "eo-civilian",
+
+  "npcname" : "Sera",
+  "identity" : {
+    "imagePath" : "aegi",
+    "gender" : "female",
+    "hairGroup" : "hair",
+    "hairType" : "fem1",
+	"facialMaskGroup" : "ears",
+	"facialMask" : "1"
+  },
+  
+  "dropPools" : [ "aegiDeathTreasure" ],
+
+  "scriptConfig" : {
+	"offeredQuests" : [ "landingarmourresearch" ],
+	"turnInQuests" : [ "landingarmourresearch" ],
+	
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "The conditions here are perfect for my research!"
+		  ]
+		}
+      }
+    }
+  },
+  
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "aegi-rimdwellerhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "scientistchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "scientistlegs", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "back" : [
+              { "name" : "aegi-soldierback", "parameters" : { "colorIndex" : 0 } }
+            ]
+          }
+      ]]
+    ]
+  }
+}

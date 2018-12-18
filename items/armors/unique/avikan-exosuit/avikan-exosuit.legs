@@ -35,9 +35,9 @@
       "amount" : 0.2
     },
     {
-      "levelFunction" : "standardArmorLevelMaxEnergyMultiplier",
+      "levelFunction" : "acceleratorArmorLevelMaxEnergyMultiplier",
       "stat" : "maxEnergy",
-      "amount" : 2.5
+      "amount" : 2
     }
   ],
 

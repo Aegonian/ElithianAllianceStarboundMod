@@ -4,7 +4,7 @@
   "price" : 250,
   "maxStack" : 1,
   "rarity" : "legendary",
-  "description" : "A wrapped present containing random event items. Hold ^green;[LMB] ^white;to open!",
+  "description" : "A wrapped present containing items from random events. Hold ^green;[LMB] ^white;to open!",
   "shortdescription" : "Landing Festival Present",
   "twoHanded" : true,
 
