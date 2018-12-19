@@ -1,0 +1,35 @@
+//This quest is automatically given to all players and runs some non-essential functions for handling events
+//It handles the displaying of event notifications when new events go live, but all events are available without having this quest active
+//This quest is hidden at all times, and will automatically try to reactivate itself if something forces its completion or failure
+
+//(This functionality runs from a quest as messing with base player scripts is bad for compatibility)
+//(Non-vanilla and non-Elithian races must manually activate this quest if they wish to see event notifications, unless they were patched to automatically start with this quest)
+
+{
+  "id" : "thea-eventhandler",
+  "prerequisites" : [ ],
+  "title" : "^orange;Event Notification Handler",
+  "text" : "You shouldn't be seeing this in your log!",
+  "completionText" : "You shouldn't be seeing this in your log!",
+  "moneyRange" : [0, 0],
+  "rewards" : [],
+  "canBeAbandoned" : false,
+  "invisible" : true,
+  "logOnly" : true,
+  "ephemeral" : true,
+
+  "updateDelta" : 1,
+  "script" : "/quests/scripts/thea-eventhandler.lua",
+  "scriptConfig" : {
+	"portraits" : {
+      "default" : "player"
+    },
+    "requireTurnIn" : false,
+	
+	//Which events to check for. Only events configured here will have a notification window pop up on activation
+	//The first entry in every list is the name of the event, the second is the path to the interface config to display when the event activates
+	"events" : [
+	  [ "landingfestival", "/interface/events/landingfestival/landingfestivalnotification.config" ]
+	]
+  }
+}
