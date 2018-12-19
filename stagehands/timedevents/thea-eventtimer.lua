@@ -4,7 +4,7 @@ require "/scripts/thea-eventutil.lua"
 
 function init()
   self.event = config.getParameter("event")
-  self.debugResults = config.getParameter("debugResults", true)
+  self.debugResults = config.getParameter("debugResults", false)
   
   storage.spawnedNPC = storage.spawnedNPC or false
   self.npcSpecies = config.getParameter("npcSpecies")

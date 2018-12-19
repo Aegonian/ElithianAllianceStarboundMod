@@ -12,6 +12,7 @@ function init()
   
   storage.activeEvent = storage.activeEvent or {}
   self.activeEvent = {}
+  self.notificationWindupTimer = 1.0
   
   --For every configured event, check if it is active now
   local anyEventActive = false
@@ -33,15 +34,24 @@ function questStart()
 end
 
 function update(dt)
+  self.notificationWindupTimer = math.max(0, self.notificationWindupTimer - dt)
+  
   --If an event is now active that wasn't active before, show the associated notification window
   --Must run this in update() as the interact action fails when used during init()
-  if self.activeEvent[1] ~= storage.activeEvent[1] then
+  if self.activeEvent[1] ~= storage.activeEvent[1] and self.notificationWindupTimer == 0 and player.introComplete() and player.worldId() ~= player.ownShipWorldId() then
 	player.interact("ScriptPane", self.activeEvent[2], player.id())
 	storage.activeEvent = self.activeEvent
   end
   
-  --world.debugText("EVENT HANDLER ACTIVE", vec2.add(entity.position(), {-3, -10}), "yellow")
-  --world.debugText(sb.printJson(storage.activeEvent, 1), vec2.add(entity.position(), {-3, -10}), "yellow")
+  world.debugText("EVENT HANDLER ACTIVE", vec2.add(entity.position(), {-3, -10}), "yellow")
+  if storage.activeEvent[1] == self.activeEvent[1] then
+	world.debugText("EVENT NOTIFICATION ALREADY SHOWN", vec2.add(entity.position(), {-3, -11}), "green")
+  else
+	world.debugText("EVENT NOTIFICATION NOT YET SHOWN", vec2.add(entity.position(), {-3, -11}), "red")
+  end
+  world.debugText("Stored Active Event: " .. sb.print(storage.activeEvent[1]), vec2.add(entity.position(), {-3, -12}), "yellow")
+  world.debugText("Local Active Event: " .. sb.print(self.activeEvent[1]), vec2.add(entity.position(), {-3, -13}), "yellow")
+  world.debugText(sb.print(self.notificationWindupTimer), vec2.add(entity.position(), {-3, -14}), "yellow")
 end
 
 function uninit()
