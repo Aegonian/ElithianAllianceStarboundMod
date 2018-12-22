@@ -29,7 +29,8 @@
 	//Which events to check for. Only events configured here will have a notification window pop up on activation
 	//The first entry in every list is the name of the event, the second is the path to the interface config to display when the event activates
 	"events" : [
-	  [ "landingfestival", "/interface/events/landingfestival/landingfestivalnotification.config" ]
+	  [ "landingfestival", "/interface/events/landingfestival/landingfestivalnotification.config" ],
+	  [ "harrowing", "/interface/events/harrowing/harrowingnotification.config" ]
 	]
   }
 }

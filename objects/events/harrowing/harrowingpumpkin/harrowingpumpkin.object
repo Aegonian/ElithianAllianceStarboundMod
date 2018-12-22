@@ -1,0 +1,43 @@
+{
+  "objectName" : "harrowingpumpkin",
+  "colonyTags" : ["harrowing"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 250,
+  "description" : "A carved pumpkin for celebrating the Harrowing.",
+  "shortdescription" : "Harrowing Pumpkin",
+  "race" : "aegi",
+
+  "apexDescription" : "A pumpkin with a face carved into it.",
+  "avianDescription" : "I'm not spooked by this pumpkin!",
+  "floranDescription" : "Floran carve ssscary facess in pumpkinss to ssspook children!",
+  "glitchDescription" : "Spooked. Yikes!",
+  "humanDescription" : "It's a Halloween pumpkin! I think...",
+  "hylotlDescription" : "A large pumpkin with a crudely carved face.",
+  "novakidDescription" : "Looks like it's meant to spook folks. It ain't working for me.",
+
+  "aegiDescription" : "A pumpkin carved for the Harrowing! I've heard this tradition predates our arrival on Elithia.",
+  "avikanDescription" : "An alien plant with a weird face carved into it. Why waste such good food?",
+  "erixianDescription" : "It's a Terran plant with a face carved into it. The Aegi have strange traditions.",
+  "trinkDescription" : "This plant is oddly shaped. It almost resembles a Trink.",
+  "hymidDescription" : "The Aegi carve these plants for the Harrowing. It seems like a fun tradition.",
+  "notixDescription" : "A strange plant with bits cut out of it.",
+  "jorgasianDescription" : "An odd tradition. The Aegi carve faces into these plants for their annual Harrowing celebration.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Analysis complete. Alien plantlife. Detected symmetrical carvings. Purpose unknown.",
+  "akkimariDescription" : "Akki want to taste alien plant! Akki not worried of getting sick.",
+
+  "inventoryIcon" : "harrowingpumpkinicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "harrowingpumpkin.png:<color>",
+      "imagePosition" : [-8, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

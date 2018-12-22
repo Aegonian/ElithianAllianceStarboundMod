@@ -10,12 +10,14 @@
   "rarity" : "Uncommon",
   "icon" : "/tech/thea-acrobaticdodge.png",
 
-  "chipCost" : 2,
+  "chipCost" : 8,
 
   "maximumDoubleTapTime" : 0.25,
   "dashVelocity" : [30, 20],
   "dashDuration" : 0.35,
   "dashCooldown" : 0.4,
+  "rollCycle" : 1.0, //Max player rotation factor. From 1.0 (rotate full 360 degrees) to 0.0 (no rotation)
+  
   "stopAfterDash" : false,
   "slowAfterDash" : true,
   "slowDownFactor" : 0.75,

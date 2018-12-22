@@ -1,0 +1,34 @@
+{
+  "name" : "thea-acrobaticjump",
+  "type" : "legs",
+
+  "scripts" : ["thea-acrobaticjump.lua"],
+  "animator" : "thea-acrobaticjump.animation",
+
+  "description" : "Hold ^green;[S/Down] ^reset; to roll and break falls.",
+  "shortDescription" : "Acrobatic Jump",
+  "rarity" : "Uncommon",
+  "icon" : "/tech/thea-acrobaticjump.png",
+
+  "chipCost" : 8,
+
+  //JUMP BEHAVIOUR
+  "multiJumpCount" : 2,
+  "multiJumpModifier" : 0.85,
+  "rollingJumpModifier" : 1.35,
+  
+  //ROLL BEHAVIOUR
+  "minimumFallVelocity" : -20,		//Minimum fall velocity before roll can be engaged
+  "minRollVelocity" : 15,			//Minimum rolling velocity. Final rolling velocity is determined by falling speed
+  "maxRollVelocity" : 40,			//Maximum rolling velocity. Final rolling velocity is determined by falling speed
+  "endRollVelocity" : 8,			//Absolute minimum rolling velocity. Velocity cannot degrade past this value
+  "rollVelocityDegradeFactor" : 8,	//How much velocity the player loses per second
+  "fallVelocityFactor" : 0.35,		//How much of the falling velocity to translate into rolling velocity
+  "rollDuration" : 0.4,				//Minimum duration of the roll
+  "maximumRolls" : 3,				//Maximum roll cycles the player can maintain. After this amount, player can forcefully terminate the roll sequence
+  "rollOffset" : 1.25,				//Vertical player position offset (visual only). Used to correct the sprite height difference from crouching
+
+  "rollMovementParameters" : {
+    "collisionPoly" : [ [-0.75, -0.35], [-0.35, -0.75], [0.35, -0.75], [0.75, -0.35], [0.75, 0.35], [0.35, 0.75], [-0.35, 0.75], [-0.75, 0.35] ]
+  }
+}

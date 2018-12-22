@@ -1,0 +1,13 @@
+{
+  "name" : "thea-jumpboost",
+  "effectConfig" : {
+    "jumpModifier" : 1.5 //Percentual increase to jump height (0 = +0%, 1 = +100%)
+  },
+
+  "scripts" : [
+    "thea-jumpboost.lua"
+  ],
+
+  "label" : "Exo-suit",
+  "icon" : "/interface/statuses/exosuitboost.png"
+}

@@ -1,0 +1,10 @@
+{
+  "name" : "falldamageprotectionweak",
+  "effectConfig" : {
+    "fallDamageMultiplier" : 0.5 //Percentage of fall damage to take. Scales from 1.0 (full damage) to 0.0 (no damage)
+  },
+
+  "scripts" : [
+    "falldamageprotection.lua"
+  ]
+}

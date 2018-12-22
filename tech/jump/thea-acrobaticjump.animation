@@ -1,0 +1,39 @@
+{
+  "particleEmitters" : {
+    "multiJumpParticles" : {
+      "burstCount" : 8,
+      "particles" : [
+        {
+          "particle" : "doublejump",
+          "offset" : [0.2, -3]
+        }
+      ]
+    },
+    "rollParticlesLeft" : {
+      "emissionRate" : 20.0,
+      "particles" : [
+		{
+          "particle" : "sprint",
+          "flip" : true,
+          "offset" : [0, 0.0]
+        }
+      ]
+    },
+    "rollParticlesRight" : {
+      "emissionRate" : 20.0,
+      "particles" : [
+		{
+          "particle" : "sprint",
+          "flip" : false,
+          "offset" : [0, 0.0]
+        }
+      ]
+    }
+  },
+
+  "sounds" : {
+    "multiJumpSound" : [ "/sfx/tech/tech_doublejump.ogg" ],
+    "startRoll" : [ "/sfx/tech/tech_walljump.ogg" ],
+    "forceDeactivate" : [ "/sfx/tech/tech_sonicsphere_charge1.ogg" ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "objectName" : "harrowingpumpkin-event",
+  "colonyTags" : ["harrowing"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 250,
+  "description" : "...",
+  "shortdescription" : "Harrowing Pumpkin (Event)",
+  "race" : "aegi",
+
+  "inventoryIcon" : "harrowingpumpkinicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "harrowingpumpkin.png:<color>",
+      "imagePosition" : [-8, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+  "animation" : "/objects/animations/thea-eventobject.animation",
+  "animationParts" : {
+    "object" : "harrowingpumpkin.png"
+  },
+  "animationPosition" : [-8, 0],
+
+  "scripts" : [ "/objects/scripts/thea-eventobject.lua" ],
+  "scriptDelta" : 1,
+  
+  "event" : "harrowing"
+}

@@ -43,15 +43,15 @@ function update(dt)
 	storage.activeEvent = self.activeEvent
   end
   
-  world.debugText("EVENT HANDLER ACTIVE", vec2.add(entity.position(), {-3, -10}), "yellow")
-  if storage.activeEvent[1] == self.activeEvent[1] then
-	world.debugText("EVENT NOTIFICATION ALREADY SHOWN", vec2.add(entity.position(), {-3, -11}), "green")
-  else
-	world.debugText("EVENT NOTIFICATION NOT YET SHOWN", vec2.add(entity.position(), {-3, -11}), "red")
-  end
-  world.debugText("Stored Active Event: " .. sb.print(storage.activeEvent[1]), vec2.add(entity.position(), {-3, -12}), "yellow")
-  world.debugText("Local Active Event: " .. sb.print(self.activeEvent[1]), vec2.add(entity.position(), {-3, -13}), "yellow")
-  world.debugText(sb.print(self.notificationWindupTimer), vec2.add(entity.position(), {-3, -14}), "yellow")
+  --world.debugText("EVENT HANDLER ACTIVE", vec2.add(entity.position(), {-3, -10}), "yellow")
+  --if storage.activeEvent[1] == self.activeEvent[1] then
+	--world.debugText("EVENT NOTIFICATION ALREADY SHOWN", vec2.add(entity.position(), {-3, -11}), "green")
+  --else
+	--world.debugText("EVENT NOTIFICATION NOT YET SHOWN", vec2.add(entity.position(), {-3, -11}), "red")
+  --end
+  --world.debugText("Stored Active Event: " .. sb.print(storage.activeEvent[1]), vec2.add(entity.position(), {-3, -12}), "yellow")
+  --world.debugText("Local Active Event: " .. sb.print(self.activeEvent[1]), vec2.add(entity.position(), {-3, -13}), "yellow")
+  --world.debugText(sb.print(self.notificationWindupTimer), vec2.add(entity.position(), {-3, -14}), "yellow")
 end
 
 function uninit()

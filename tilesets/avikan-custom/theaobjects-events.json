@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":14,
+ "tilecount":16,
  "tileheight":200,
  "tileproperties":
     {
@@ -55,6 +55,22 @@
          "imagePositionX":"-64",
          "imagePositionY":"0",
          "object":"landingtreelarge-event",
+         "tilesetDirection":"right"
+        },
+     "14":
+        {
+         "\/\/shortdescription":"Harrowing Pumpkin",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"harrowingpumpkin",
+         "tilesetDirection":"right"
+        },
+     "15":
+        {
+         "\/\/shortdescription":"Harrowing Pumpkin",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"harrowingpumpkin-event",
          "tilesetDirection":"right"
         },
      "2":
@@ -147,6 +163,14 @@
      "13":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/events\/landingtreelarge-event.png"
+        },
+     "14":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/events\/harrowingpumpkin.png"
+        },
+     "15":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/events\/harrowingpumpkin-event.png"
         },
      "2":
         {

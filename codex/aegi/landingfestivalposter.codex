@@ -1,0 +1,28 @@
+{
+  "id" : "landingfestivalposter",
+  "species" : "aegi",
+  "title" : "Landing Festival Poster",
+  "description" : "A poster with information about the annual Landing Festival.",
+  "icon" : "landingfestivalposter.png",
+  "contentPages" : [
+
+"^orange;Opening of the annual Festival Hall^reset;
+
+The Festival Hall opens its doors to the public yet again! Come and celebrate the Landing Festival with friends and family in a snowy wonderland just outside of Creon City. Meet the Pathfinder and his Pilgrims, or visit the great Festival Tree to pick up a free present!
+
+For international visitors, you can easily travel to the Festival Hall using public transportation available at the Creon Embassy.",
+
+"^orange;The Landing Festival^reset;
+
+During the Landing Festival, we celebrate the anniversary of our ancestors' first landing on Elithia. The Festival marks the end of the year, while Landing Day - the final day of the Festival - marks the beginning of a brand new calendar year. The Union encourages everyone to spend time with friends and family during this time of celebration!",
+
+"^orange;The Pathfinder and the Pilgrims^reset;
+
+The Pathfinder returns to Elithia every year to bring presents to the good citizens of the Union. He and his Pilgrims bring back exotic goods from the far-away systems that they explore year-round, and gift them to the people."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 25
+  }
+}

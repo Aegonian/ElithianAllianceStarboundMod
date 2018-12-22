@@ -16,6 +16,9 @@
       "default" : "questGiver"
     },
     "requireTurnIn" : true,
+	"acceptItems" : [
+	  "landingfestivalposter-codex"
+	],
     "conditions" : [
       {
         "type" : "gatherItem",
