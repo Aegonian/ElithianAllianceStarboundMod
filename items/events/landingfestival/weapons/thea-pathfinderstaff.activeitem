@@ -10,7 +10,7 @@
   "tooltipKind" : "sword",
   "category" : "Crook",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","alliance","allianceUpgradeable"],
+  "itemTags" : ["weapon","melee","crook","alliance","allianceUpgradeable"],
 
   "inventoryIcon" : "thea-pathfinderstaff.png",
 

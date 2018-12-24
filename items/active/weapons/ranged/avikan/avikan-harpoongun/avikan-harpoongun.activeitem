@@ -9,7 +9,7 @@
   "level" : 6,
   "tooltipKind" : "gun",
   "category" : "Harpoon Gun",
-  "itemTags" : ["weapon","ranged","avikan"],
+  "itemTags" : ["weapon","ranged","sniperrifle","avikan"],
   "twoHanded" : true,
 
   "radioMessagesOnPickup" : [ "pickupavikanhunting" ],

@@ -1,0 +1,10 @@
+{
+  "itemName" : "akkimaribladeparts",
+  "price" : 100,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "akkimaribladeparts.png",
+  "description" : "Bits and pieces of a blade, retrieved from a dismantled melee weapon.",
+  "shortdescription" : "Blade Parts",
+  "itemTags" : [ "reagent" ]
+}

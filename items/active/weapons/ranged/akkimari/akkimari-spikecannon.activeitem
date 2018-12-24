@@ -10,7 +10,7 @@
   "fixedLevel" : false,
   "tooltipKind" : "gun",
   "category" : "Spike Cannon",
-  "itemTags" : ["weapon","ranged","akkimari"],
+  "itemTags" : ["weapon","ranged","grenadelauncher","akkimari"],
   "twoHanded" : true,
 
   "animation" : "/items/active/weapons/ranged/gun.animation",

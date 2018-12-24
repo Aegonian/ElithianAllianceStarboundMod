@@ -31,7 +31,7 @@
 
   "scripts" : ["/items/active/weapons/bow/bow.lua"],
   
-  "elementalType" : "bow",
+  "elementalType" : "physical",
 
   "primaryAbility" : {
     "scripts" : ["/items/active/weapons/ranged/abilities/bow/thea-bowshot.lua"],

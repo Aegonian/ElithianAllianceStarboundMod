@@ -10,7 +10,7 @@
   "tooltipKind" : "sword",
   "category" : "Crook",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","avikan"],
+  "itemTags" : ["weapon","melee","crook","avikan"],
 
   "inventoryIcon" : "avikancrook.png",
 

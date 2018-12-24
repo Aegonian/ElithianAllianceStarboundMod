@@ -8,7 +8,7 @@
   "tooltipKind" : "sword",
   "category" : "Wrench",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","alliance"],
+  "itemTags" : ["weapon","melee","axe","alliance"],
 
   "animation" : "/items/active/weapons/melee/axe/axe.animation",
   "animationParts" : { },

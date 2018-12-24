@@ -1,0 +1,10 @@
+{
+  "itemName" : "akkimarigunparts",
+  "price" : 100,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "akkimarigunparts.png",
+  "description" : "Bits and pieces of a gun, retrieved from a dismantled ranged weapon.",
+  "shortdescription" : "Gun Parts",
+  "itemTags" : [ "reagent" ]
+}
