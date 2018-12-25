@@ -1,0 +1,70 @@
+{
+  "objectName" : "akkimarispacedoor",
+  "colonyTags" : ["akkimari", "door"],
+  "rarity" : "Common",
+  "category" : "door",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A heavily reinforced door covered in external scrap plating.",
+  "shortdescription" : "Akris Reinforced Door",
+  "race" : "akkimari",
+  
+  "health" : 8,
+
+  "apexDescription" : "This blast door is incredibly sturdy. The scrap metal plating provides additional shielding.",
+  "avianDescription" : "This door looks shoddy from the outside, but inside it's incredibly well-designed.",
+  "floranDescription" : "Metal platesss on heavy door isss for extra protection. Floran sssmart!",
+  "glitchDescription" : "Intrigued. The scrappy plating on the outside provides good protection against physical impacts.",
+  "humanDescription" : "It looks real shoddy from the outside, but this door is really quite sturdy.",
+  "hylotlDescription" : "A blast door covered in crude metal plates. Effective, but not especially elegant.",
+  "novakidDescription" : "Someone welded a couple o' plates to the outside.",
+
+  "aegiDescription" : "This blast door uses scrap metal plating as an additional layer of protection.",
+  "avikanDescription" : "A heavy alien blast door covered in scrap metal.",
+  "erixianDescription" : "A surprisingly sturdy blast door.",
+  "trinkDescription" : "This door looks shoddy, but the design is amazingly efficient.",
+  "hymidDescription" : "A very heavy blast door. The scrappy plating provides additional shielding.",
+  "notixDescription" : "The outside of this blast door is very rough.",
+  "jorgasianDescription" : "A heavy blast door, covered in plates of scrap metal.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected blast door. Scrap metal plating provides additional shielding.",
+  "akkimariDescription" : "Akki safe behind door. Door can stop anything!",
+
+  "inventoryIcon" : "akkimarispacedooricon.png",
+  "orientations" : [
+    {
+      "dualImage" : "akkimarispacedoor.png:default",
+      "imagePosition" : [0, 0],
+      "renderLayer" : "Object+5",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom", "top" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/door/door.lua" ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/door/door.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_open.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_close.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "akkimarispacedoor.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "inputNodes" : [ [0, 4] ],
+  "outputNodes" : [ [1, 0] ]
+}

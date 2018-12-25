@@ -84,6 +84,7 @@ end
 -- Attack state: fire
 function TheaExtendLance:fire()
   self.weapon:setStance(self.stances.fire)
+  self.weapon:updateAim()
   
   self.rechargeTimer = self.rechargeTime
   
@@ -108,7 +109,6 @@ function TheaExtendLance:reset()
   animator.setParticleEmitterActive("charge", false)
   
   animator.setAnimationState("light", "recharge")
-  --animator.setAnimationState("blade", "idle")
 end
 
 function TheaExtendLance:uninit()

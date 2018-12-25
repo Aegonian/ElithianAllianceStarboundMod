@@ -4,7 +4,7 @@
   "rarity" : "Common",
   "category" : "craftingMaterial",
   "inventoryIcon" : "akkimaribladeparts.png",
-  "description" : "Bits and pieces of a blade, retrieved from a dismantled melee weapon.",
+  "description" : "Bits and pieces of a blade, retrieved from a dismantled melee weapon or bow.",
   "shortdescription" : "Blade Parts",
   "itemTags" : [ "reagent" ]
 }

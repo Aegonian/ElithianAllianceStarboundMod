@@ -8,7 +8,7 @@
   "tooltipKind" : "gun",
   "category" : "Jumprifle",
   "twoHanded" : true,
-  "itemTags" : ["weapon","ranged","centens","jumprifle"],
+  "itemTags" : ["weapon","ranged","assaultrifle","centens","jumpweapon"],
   
   "cursor" : "/cursors/thea-jumpriflereticle.cursor",
 

@@ -1,0 +1,53 @@
+{
+  "objectName" : "akkimarishipdoorbroken",
+  "colonyTags" : ["akkimari", "door"],
+  "rarity" : "Common",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A heavily reinforced door covered in external scrap plating.",
+  "shortdescription" : "Akris Reinforced Door",
+  "race" : "akkimari",
+  
+  "health" : 8,
+
+  "apexDescription" : "A blast door. If it would open now, I'd probably be dead.",
+  "avianDescription" : "A strong blast door. Good thing it is locked.",
+  "floranDescription" : "Floran afraid of endlesss sspace behind doorsss...",
+  "glitchDescription" : "Relief. This blast door won't open without prior decompression of the cargo hold.",
+  "humanDescription" : "I'm not opening this before this room gets decompressed.",
+  "hylotlDescription" : "A heavy metal door, and all that stands between me and the endlessness of space.",
+  "novakidDescription" : "Sure am glad this door ain't opening anytime soon. I'd be rather annoyed if I got sucked into outer space.",
+
+  "aegiDescription" : "A blast door. It is all that stands between me and outer space...",  
+  "avikanDescription" : "This door is all that stands between me and outer space. Good thing it won't open.",
+  "erixianDescription" : "A breach of this blast door would be disastrous.",
+  "trinkDescription" : "Decompression of this room is needed before that door will ever open.",
+  "hymidDescription" : "This door won't open before the cargo hold gets decompressed.",
+  "notixDescription" : "Good thing this door won't budge before the room gets decompressed.",
+  "jorgasianDescription" : "It's a scary thing to think that this door is all that stand between me and outer space.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Analysis complete. Door is locked until the cargo hold is decompressed.",
+  "akkimariDescription" : "Akki safe behind door! If door opens, Akki dead in space...",
+
+  "inventoryIcon" : "akkimarishipdoorbrokenicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "akkimarishipdoorbroken.png:default",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom", "top" ],
+      "collision" : "solid"
+    }
+  ],
+  
+  "animation" : "/objects/noisy/noisy.animation",
+
+  "scripts" : [
+    "/objects/noisy/noisy.lua"
+  ],
+  
+  "sounds" : [ "/sfx/interface/ship_error1.ogg" ]
+}

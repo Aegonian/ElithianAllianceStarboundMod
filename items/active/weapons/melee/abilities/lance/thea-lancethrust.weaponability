@@ -5,8 +5,8 @@
   "ability" : {
     "name" : "Thrust",
     "type" : "thea-lancethrust",
-    "scripts" : ["/items/active/weapons/melee/meleeslash.lua"],
-    "class" : "MeleeSlash",
+    "scripts" : ["/items/active/weapons/melee/abilities/lance/thea-lancethrust.lua"],
+    "class" : "TheaLanceThrust",
 
     "fireTime" : 1.15,
     "baseDps" : 9.5,

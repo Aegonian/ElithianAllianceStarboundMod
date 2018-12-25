@@ -40,10 +40,7 @@
     "baseDps" : 10.5,
 	
 	"damageConfig" : {
-      "damageSourceKind" : "spear",
-      "knockbackMode" : "aim",
-      "knockback" : 40,
-      "timeoutGroup" : "primary"
+      "knockback" : 40
     }
   },
 

@@ -8,7 +8,7 @@
   "tooltipKind" : "gun",
   "category" : "Jumpcannon",
   "twoHanded" : true,
-  "itemTags" : ["weapon","ranged","centens","jumprifle"],
+  "itemTags" : ["weapon","ranged","shotgun","centens","jumpweapon"],
   
   "cursor" : "/cursors/thea-widereticle.cursor",
 

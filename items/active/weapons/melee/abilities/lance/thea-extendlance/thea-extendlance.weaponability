@@ -47,7 +47,7 @@
       "statusEffects" : [ ],
       "knockbackMode" : "aim",
       "knockback" : 60,
-      "timeoutGroup" : "primary"
+	  "damageRepeatTimeout" : 0
     },
 
     "stances" : {
