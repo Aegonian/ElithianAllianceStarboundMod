@@ -1,0 +1,39 @@
+{
+  "projectileName" : "alliancerailgunbullet",
+  "physics" : "thea-noclipbullet",
+  "bounces" : 0,
+  "piercing" : true,
+  "image" : "alliancerailgunbullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 10,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+    }
+  ],
+  "penetrationActions" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/avikanrocketexplosion/avikanrocketexplosion.config"
+    }
+  ],
+  "lightColor" : [35, 60, 75],
+  "fullbright" : true,
+  "damageKind" : "plasma",
+  "damagePoly" : [ [-2, 2], [2, 2], [2, -2], [-2, -2] ],
+  
+  "scripts" : [ "/projectiles/scripts/thea-wallbuster.lua" ],
+  
+  //Wall Buster Config
+  "wallPenetrations" : 1,		//How many penetrations can happen. If set to 1, the projectile will only penetrate a single wall
+  "maxPenetrationDistance" : 3,	//Maximum penetration distance. Non-persistent, value is reset with every new entry point
+  
+  "damageTiles" : true,			//Whether or not to damage the tiles the projectile travels through
+  "damageTileRadius" : 0.75,	//Radius around the projectile to damage tiles in
+  "tileDamage" : 1000,			//Amount of damage to apply to tiles per tick
+  "harvestLevel" : 0			//Harvest level for tile damage. Determines if destroyed materials should drop items
+}

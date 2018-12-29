@@ -330,6 +330,22 @@
 	}
   },
   {"op" : "add",
+	"path" : "/thea-noclipbullet",
+	"value" : {
+	  "mass" : 1.0,
+	  "gravityMultiplier" : 0.0,
+	  "maxMovementPerStep" : 0.4,
+
+	  "collisionPoly" : [ ],
+	  "ignorePlatformCollision" : true,
+
+	  "airFriction" : 0.0,
+	  "liquidFriction" : 0.0,
+	  "speedLimit" : null,
+	  "maximumCorrection" : 0.75
+	}
+  },
+  {"op" : "add",
 	"path" : "/thea-airstrikerocket",
 	"value" : {
 	  "mass" : 1.0,
