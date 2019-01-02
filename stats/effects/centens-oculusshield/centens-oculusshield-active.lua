@@ -1,5 +1,6 @@
 function init()
   self.crouchCorrected = false
+  animator.resetTransformationGroup("shield")
 end
 
 function update(dt)

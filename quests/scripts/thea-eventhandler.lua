@@ -11,7 +11,7 @@ function init()
   self.events = config.getParameter("events")
   
   storage.activeEvent = storage.activeEvent or {}
-  self.activeEvent = {}
+  self.activeEvent = nil
   self.notificationWindupTimer = 1.0
   
   --For every configured event, check if it is active now
@@ -38,9 +38,11 @@ function update(dt)
   
   --If an event is now active that wasn't active before, show the associated notification window
   --Must run this in update() as the interact action fails when used during init()
-  if self.activeEvent[1] ~= storage.activeEvent[1] and self.notificationWindupTimer == 0 and player.introComplete() and player.worldId() ~= player.ownShipWorldId() then
-	player.interact("ScriptPane", self.activeEvent[2], player.id())
-	storage.activeEvent = self.activeEvent
+  if self.activeEvent then
+	if self.activeEvent[1] ~= storage.activeEvent[1] and self.notificationWindupTimer == 0 and player.introComplete() and player.worldId() ~= player.ownShipWorldId() then
+	  player.interact("ScriptPane", self.activeEvent[2], player.id())
+	  storage.activeEvent = self.activeEvent
+	end
   end
   
   --world.debugText("EVENT HANDLER ACTIVE", vec2.add(entity.position(), {-3, -10}), "yellow")

@@ -10,6 +10,8 @@ function init()
   self.scrapItem = nil
   self.materialsItem = nil
   self.specialMaterialsItem = nil
+  
+  widget.setButtonEnabled("btnDismantle", false)
 end
 
 function update(dt)

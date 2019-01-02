@@ -2,6 +2,7 @@ require "/scripts/util.lua"
 
 function init()
   self.crouchCorrected = false
+  animator.resetTransformationGroup("shield")
   
   animator.setParticleEmitterOffsetRegion("particles", mcontroller.boundBox())
   animator.setParticleEmitterActive("particles", true)

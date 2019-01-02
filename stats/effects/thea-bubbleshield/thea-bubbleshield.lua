@@ -4,6 +4,7 @@ require "/scripts/vec2.lua"
 
 function init()
   self.crouchCorrected = false
+  animator.resetTransformationGroup("shield")
   
   animator.setAnimationState("shield", "recharge")
   
