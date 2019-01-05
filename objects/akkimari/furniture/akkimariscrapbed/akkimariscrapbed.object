@@ -1,0 +1,57 @@
+{
+  "objectName" : "akkimariscrapbed",
+  "colonyTags" : ["akkimari"],
+  "rarity" : "Common",
+  "category" : "furniture",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A simple bed made of scarp metal plates and a soft cover.",
+  "shortdescription" : "Akris Scrap Bed",
+  "race" : "akkimari",
+
+  "apexDescription" : "A crude bed made out of plates of scrap metal. At least the cover is soft.",
+  "avianDescription" : "This bed was very crudely made.",
+  "floranDescription" : "Floran doesssn't like thiss bed.",
+  "glitchDescription" : "Appalled. Who would sleep on such a bed?",
+  "humanDescription" : "This looks like some sorta prison bunk, if the prison was made of scrap metal.",
+  "hylotlDescription" : "This is not a very pleasant bed. The cover is soft, but it's far too thin.",
+  "novakidDescription" : "I'd rather not spend the night on this.",
+
+  "aegiDescription" : "While the cover is soft, the rest of this bed is extremely shoddy.",
+  "avikanDescription" : "This alien bed is highly uncomfortable.",
+  "erixianDescription" : "A bed built using plates of scrap metal...",
+  "trinkDescription" : "A bed consisting of scrap metal plates with a soft sheet placed on top.",
+  "hymidDescription" : "An unpleasant bed.",
+  "notixDescription" : "I'd rather not sleep on this.",
+  "jorgasianDescription" : "This looks like a prisoner's bed...",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Alien bedding detected. Low-quality materials detected.",
+  "akkimariDescription" : "Akki not mind the scrappy bed. Cover soft enough.",
+
+  "inventoryIcon" : "akkimariscrapbedicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "akkimariscrapbed.png:<color>",
+
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : true,
+  "sitPosition" : [-8, 14],
+  "sitOrientation" : "lay",
+  "sitAngle" : 80,
+  "sitEmote" : "sleep",
+  "sitStatusEffects" : [
+    "bed1"
+  ],
+  "sitEffectEmitters" : [ "sleepbubbles" ]
+}

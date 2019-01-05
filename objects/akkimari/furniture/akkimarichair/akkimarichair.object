@@ -1,0 +1,61 @@
+{
+  "objectName" : "akkimarichair",
+  "colonyTags" : ["akkimari"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "A comfortable open-backed chair.",
+  "shortdescription" : "Akris Chair",
+  "race" : "akkimari",
+  "category" : "furniture",
+  "price" : 25,
+
+  "apexDescription" : "A strange chair with an open back.",
+  "avianDescription" : "This chair is comfortable, but the back is missing for some reason.",
+  "floranDescription" : "Floran thinksss thiss chair is ssstrange.",
+  "glitchDescription" : "Confused. Why does this chair have supports on the sides but not the back?",
+  "humanDescription" : "A strange chair. It's also strangely comfortable.",
+  "hylotlDescription" : "An unusual design that is equally unusually comfortable.",
+  "novakidDescription" : "I don't even know how to properly sit in this thing.",
+
+  "aegiDescription" : "An odd design for sure. It's quite comfortable, though.",
+  "avikanDescription" : "This alien chair is quite comfortable. The open back is great for my tail.",
+  "erixianDescription" : "TODO.",
+  "trinkDescription" : "An unusual Akkimari-built chair. It seems inefficient with those side plates.",
+  "hymidDescription" : "A surprisingly comfortable alien-built chair.",
+  "notixDescription" : "It's some sort of chair, but the design isn't familiar.",
+  "jorgasianDescription" : "A strange but comfortable chair.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien chair.",
+  "akkimariDescription" : "Akki need to sit down. Akki rest.",
+
+  "inventoryIcon" : "akkimarichairicon.png",
+  "orientations" : [
+    {
+      "image" : "akkimarichair.png:<color>",
+      "imagePosition" : [-8, 0],
+      "direction" : "left",
+      "flipImages" : true,
+	  
+	  "sitPosition" : [-2, 21],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "akkimarichair.png:<color>",
+      "imagePosition" : [-8, 0],
+      "direction" : "right",
+	  
+	  "sitPosition" : [6, 21],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+  "sitCoverImage" : "/objects/akkimari/furniture/akkimarichair/akkimarichaircover.png"
+}

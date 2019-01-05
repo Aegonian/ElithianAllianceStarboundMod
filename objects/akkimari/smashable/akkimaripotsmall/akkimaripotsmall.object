@@ -1,0 +1,52 @@
+{
+  "objectName" : "akkimaripotsmall",
+  "colonyTags" : ["akkimari","commerce"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "A pot made of hardened clay. It'll break easily.",
+  "shortdescription" : "Small Akris Pot",
+  "race" : "akkimari",
+  "category" : "furniture",
+  "price" : 30,
+
+  "apexDescription" : "A pot of clay. It looks easy to smash.",
+  "avianDescription" : "A simple clay pot. It's very smashable...",
+  "floranDescription" : "Crumbly pot, Floran sssmassh.",
+  "glitchDescription" : "Observant. This clay pot is easily broken.",
+  "humanDescription" : "Some sorta old pot, just waiting to be broken.",
+  "hylotlDescription" : "A fragile pot of hardened clay.",
+  "novakidDescription" : "Just some old pot. Might as well smash it.",
+
+  "aegiDescription" : "A pot made of some type of clay-like substance. I think the design is Akkimari.",
+  "avikanDescription" : "An alien pot, made of hardened earth.",
+  "erixianDescription" : "A simple clay pot. At least, I think it's made of clay.",
+  "trinkDescription" : "This pot is fragile. It seems odd for the violent Akkimari to make something that breaks so easily.",
+  "hymidDescription" : "A hard but fragile pot.",
+  "notixDescription" : "This hollow pot echoes pleasantly.",
+  "jorgasianDescription" : "It's a pot of some kind. Seems to have been made by the Akkimari.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien earthenware. .",
+  "akkimariDescription" : "Akki can smash pot if Akki angry. Make Akki less angry!",
+
+  "inventoryIcon" : "akkimaripotsmallicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "akkimaripotsmall.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "smashable" : true,
+  "smashSounds" : [ "/sfx/objects/pot_break_small1.ogg", "/sfx/objects/pot_break_small2.ogg", "/sfx/objects/pot_break_small3.ogg" ],
+  "smashParticles" : [ { "count" : 3, "particle" : "akkimariclayshard" } ],
+  "smashDropPool" : "smashMoney", 
+  "breakDropPool" : "smashMoney"
+}

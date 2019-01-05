@@ -1,0 +1,47 @@
+{
+  "objectName" : "akkimaritable",
+  "colonyTags" : ["akkimari","commerce"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "A rounded table.",
+  "shortdescription" : "Akris Table",
+  "race" : "akkimari",
+  "category" : "furniture",
+  "price" : 30,
+
+  "apexDescription" : "A simple round table.",
+  "avianDescription" : "A round metal table.",
+  "floranDescription" : "Tablesss.",
+  "glitchDescription" : "Unimpressed. A basic table.",
+  "humanDescription" : "A dirty table.",
+  "hylotlDescription" : "A heavily stained table.",
+  "novakidDescription" : "Just a table.",
+
+  "aegiDescription" : "A table. It hasn't been cleaned in a while.",
+  "avikanDescription" : "An alien table. The design isn't very alien, though.",
+  "erixianDescription" : "It's just a table.",
+  "trinkDescription" : "A simplistic table. The design of tables doesn't change too much between species.",
+  "hymidDescription" : "A table.",
+  "notixDescription" : "Simply a table.",
+  "jorgasianDescription" : "A table.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien table.",
+  "akkimariDescription" : "Akki place things on table. Table strong enough.",
+
+  "inventoryIcon" : "akkimaritableicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "akkimaritable.png:<color>",
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ]
+}

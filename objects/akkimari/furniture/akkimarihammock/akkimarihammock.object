@@ -1,0 +1,64 @@
+{
+  "objectName" : "akkimarihammock",
+  "colonyTags" : ["akkimari"],
+  "rarity" : "Common",
+  "category" : "furniture",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A simple but comfortable hammock.",
+  "shortdescription" : "Akris Hammock",
+  "race" : "akkimari",
+
+  "apexDescription" : "It's not exactly luxurious, but it's a decent place to sleep.",
+  "avianDescription" : "A simple hammock.",
+  "floranDescription" : "Hammock iss a sssimple bed.",
+  "glitchDescription" : "Afraid. I hope I won't fall out while I sleep.",
+  "humanDescription" : "It's just a hammock, though the material is soft and silky smooth.",
+  "hylotlDescription" : "A simplistic but elegant hammock.",
+  "novakidDescription" : "I've never much liked the idea of a hammock.",
+
+  "aegiDescription" : "A soft, comfortable hammock made of Akkimari silk.",
+  "avikanDescription" : "These aliens suspend their beds from the ceiling.",
+  "erixianDescription" : "A practical place for sleeping, but not a very luxurious one.",
+  "trinkDescription" : "Hammocks like these make efficient use of the available space.",
+  "hymidDescription" : "This hammock is flexible enough to allow my tail to rest easily.",
+  "notixDescription" : "A bed hung from the ceiling.",
+  "jorgasianDescription" : "It's a simple hammock, made of a very soft material.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Alien bedding detected.",
+  "akkimariDescription" : "Akki like hammocks. Sleep away from the ground, away from nasty things.",
+
+  "inventoryIcon" : "akkimarihammockicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "akkimarihammock.png:<color>",
+
+      "imagePosition" : [-24, -16],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+	  "spaces" : [
+        [-3, 0], [-2, 0], [-1, 0], [0, 0], [1, 0], [2, 0],
+        [-3,-1], [-2,-1], [-1,-1], [0,-1], [1,-1], [2,-1],
+                 [-2,-2], [-1,-2], [0,-2], [1,-2]
+      ],
+      "fgAnchors" : [
+		[-3, 1], [2, 1]
+	  ]
+    }
+  ],
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : true,
+  "sitPosition" : [-8, -2],
+  "sitOrientation" : "lay",
+  "sitAngle" : 80,
+  "sitEmote" : "sleep",
+  "sitStatusEffects" : [
+    "bed1"
+  ],
+  "sitEffectEmitters" : [ "sleepbubbles" ],
+  "sitCoverImage" : "/objects/akkimari/furniture/akkimarihammock/akkimarihammockcover.png"
+}

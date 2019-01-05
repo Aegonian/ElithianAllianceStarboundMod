@@ -1,0 +1,69 @@
+{
+  "objectName" : "akkimaribench",
+  "colonyTags" : ["akkimari"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "A comfortable open-backed bench.",
+  "shortdescription" : "Akris Bench",
+  "race" : "akkimari",
+  "category" : "furniture",
+  "price" : 25,
+
+  "apexDescription" : "A strange bench with an open back.",
+  "avianDescription" : "This bench is comfortable, but the back is missing for some reason.",
+  "floranDescription" : "Floran thinksss thiss bench is ssstrange.",
+  "glitchDescription" : "Confused. Why does this bench have supports on the sides but not the back?",
+  "humanDescription" : "A strange bench. It's also strangely comfortable.",
+  "hylotlDescription" : "An unusual design that is equally unusually comfortable.",
+  "novakidDescription" : "I don't even know how to properly sit in this thing.",
+
+  "aegiDescription" : "An odd design for sure. It's quite comfortable, though.",
+  "avikanDescription" : "This alien bench is quite comfortable. The open back is great for my tail.",
+  "erixianDescription" : "TODO.",
+  "trinkDescription" : "An unusual Akkimari-built bench. It seems inefficient with those side plates.",
+  "hymidDescription" : "A surprisingly comfortable alien-built bench.",
+  "notixDescription" : "It's some sort of bench, but the design isn't familiar.",
+  "jorgasianDescription" : "A strange but comfortable bench.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien bench.",
+  "akkimariDescription" : "Bench for sitting. Akki likes.",
+
+  "inventoryIcon" : "akkimaribenchicon.png",
+  "orientations" : [
+    {
+      "image" : "akkimaribench.png:<color>",
+      "imagePosition" : [-16, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "sitPositions" : [
+        // Positions from front to back.
+        [-13, 21], // Right
+        [5, 21] // Left
+      ],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "akkimaribench.png:<color>",
+      "imagePosition" : [-16, 0],
+      "direction" : "right",
+
+      "sitPositions" : [
+        // Positions from front to back.
+        [-5, 21], // Left
+        [13, 21] // Right
+      ],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+  "sitCoverImage" : "/objects/akkimari/furniture/akkimaribench/akkimaribenchcover.png"
+}

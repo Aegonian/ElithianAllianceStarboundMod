@@ -1,0 +1,57 @@
+{
+  "objectName" : "akkimaribed",
+  "colonyTags" : ["akkimari"],
+  "rarity" : "Common",
+  "category" : "furniture",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A comfortable bed.",
+  "shortdescription" : "Akris Bed",
+  "race" : "akkimari",
+
+  "apexDescription" : "A bed with an unusual design. It's comfortable, but I miss the bedsheet.",
+  "avianDescription" : "A strangely comfortable bed.",
+  "floranDescription" : "Floran rarely ssleep in ssuch nice bed.",
+  "glitchDescription" : "Tired. I should lie down for a while.",
+  "humanDescription" : "An unusual bed. It's a lot more comfortable than it looks, but it's a bit cold.",
+  "hylotlDescription" : "A place to rest. It would be better with a bedsheet.",
+  "novakidDescription" : "A decent place to get some shut-eye.",
+
+  "aegiDescription" : "An Akkimari-made bed. It's incredibly soft.",
+  "avikanDescription" : "An alien bed. It's uncommonly comfortable.",
+  "erixianDescription" : "Just a bed.",
+  "trinkDescription" : "An Akkimari bed. I suppose other aliens could find it comfortable.",
+  "hymidDescription" : "A strange and uncomfortable bed.",
+  "notixDescription" : "I could get some sleep here.",
+  "jorgasianDescription" : "A strange bed. It's more comfortable than it looks.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Alien bedding detected.",
+  "akkimariDescription" : "Akki sleep here. Wake up stronger!",
+
+  "inventoryIcon" : "akkimaribedicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "akkimaribed.png:<color>",
+
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : true,
+  "sitPosition" : [-8, 14],
+  "sitOrientation" : "lay",
+  "sitAngle" : 80,
+  "sitEmote" : "sleep",
+  "sitStatusEffects" : [
+    "bed1"
+  ],
+  "sitEffectEmitters" : [ "sleepbubbles" ]
+}

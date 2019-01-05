@@ -1,0 +1,47 @@
+{
+  "objectName" : "akkimariscraptable",
+  "colonyTags" : ["akkimari","commerce"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "A table made of various scrap metal plates.",
+  "shortdescription" : "Akris Scrap Table",
+  "race" : "akkimari",
+  "category" : "furniture",
+  "price" : 30,
+
+  "apexDescription" : "A poorly built table. It's not even completely flat!",
+  "avianDescription" : "Plates of scrap metal assembled like a table. It's not very good.",
+  "floranDescription" : "Sscrappy table.",
+  "glitchDescription" : "Appalled. This table is just a few plates of scrap metal!",
+  "humanDescription" : "It's not much of a table, really...",
+  "hylotlDescription" : "It's just plates of scrap metal assembled like a table...",
+  "novakidDescription" : "Some kinda really poorly made table.",
+
+  "aegiDescription" : "This table is surprisingly sturdy for just being a couple of plates of scrap metal.",
+  "avikanDescription" : "A poorly assembled table. It's sturdy, but the top isn't even flat.",
+  "erixianDescription" : "A simplistic and poorly built table.",
+  "trinkDescription" : "These are just a few plates of scrap metal on a pole.",
+  "hymidDescription" : "A poorly made table.",
+  "notixDescription" : "The surface of this table isn't even fully flat...",
+  "jorgasianDescription" : "A table made of scrap metal.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien table. Structural sturdiness exceeds initial expectations.",
+  "akkimariDescription" : "Akki could make better table, but Akki not have time.",
+
+  "inventoryIcon" : "akkimariscraptableicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "akkimariscraptable.png:<color>",
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ]
+}

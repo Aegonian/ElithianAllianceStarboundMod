@@ -1,0 +1,52 @@
+{
+  "objectName" : "akkimarihangingstorage",
+  "colonyTags" : ["akkimari"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 75,
+  "description" : "Various items suspended in a large net.",
+  "shortdescription" : "Akris Hanging Storage",
+  "race" : "akkimari",
+
+  "apexDescription" : "Items stored in a net hung from the ceiling.",
+  "avianDescription" : "A net for storing items.",
+  "floranDescription" : "Netsss for sstoring thingss.",
+  "glitchDescription" : "Observation. Various items are suspended in a large net here.",
+  "humanDescription" : "Storing your stuff on the ceiling. I like it!",
+  "hylotlDescription" : "It must be a pain to get anything out of this net again.",
+  "novakidDescription" : "Some sorta storage hangin' from the ceiling.",
+
+  "aegiDescription" : "The Akkimari often store their possessions in nets like these.",
+  "avikanDescription" : "Some sort of net filled with alien curios.",
+  "erixianDescription" : "TODO.",
+  "trinkDescription" : "Hanging items from the ceiling is actually an efficient means of storage.",
+  "hymidDescription" : "A net full of strange items.",
+  "notixDescription" : "This net swings very lightly. The movements are enthralling.",
+  "jorgasianDescription" : "The Akkimari stored some items here.",
+  "centensDescription" : "A net used as storage. It isn't clean, but it is practical.",
+  "dremetonDescription" : "This net is incredibly well made!",
+  "theleanDescription" : "A practical method for storing unneeded items.",
+  "drodenDescription" : "Scanning contents of net. Detected empty Vaash barrel. Detected machinery components. Detected drone chassis.",
+  "akkimariDescription" : "Akki hang items out of the way. Akki not need them now.",
+  
+  "inventoryIcon" : "akkimarihangingstorageicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "akkimarihangingstorage.png:<color>",
+
+      "imagePosition" : [-24, -16],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+	  "spaces" : [
+        [-3, 0], [-2, 0], [-1, 0], [0, 0], [1, 0], [2, 0],
+        [-3,-1], [-2,-1], [-1,-1], [0,-1], [1,-1], [2,-1],
+                 [-2,-2], [-1,-2], [0,-2], [1,-2]
+      ],
+      "fgAnchors" : [
+		[-3, 1], [2, 1]
+	  ]
+    }
+  ]
+}
