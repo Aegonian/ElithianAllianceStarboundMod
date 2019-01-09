@@ -1,0 +1,10 @@
+//This status effect will teleport the afflicted to the mouthPosition of the sourceEntity. Remotely add this status effect to an entity to teleport it to any other entity
+
+{
+  "name" : "thea-teleportentity",
+  "defaultDuration" : 0.1,
+
+  "scripts" : [
+    "thea-teleportentity.lua"
+  ]
+}

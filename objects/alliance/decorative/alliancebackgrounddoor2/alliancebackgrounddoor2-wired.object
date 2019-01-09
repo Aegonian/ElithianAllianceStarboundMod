@@ -1,11 +1,11 @@
 {
-  "objectName" : "alliancebackgrounddoor2",
+  "objectName" : "alliancebackgrounddoor2-wired",
   "colonyTags" : ["alliance"],
   "rarity" : "Common",
-  "category" : "decorative",
+  "category" : "door",
   "printable" : false,
   "price" : 40,
-  "description" : "A closed sliding door.",
+  "description" : "A sliding door. It can be linked to other background doors.",
   "shortdescription" : "Alliance Background Door",
   "race" : "aegi",
 
@@ -29,7 +29,7 @@
   "theleanDescription" : "I wonder where this door leads...",
   "drodenDescription" : "Scanning failed. Unable to determine where this door leads.",
 
-  "inventoryIcon" : "icon.png",
+  "inventoryIcon" : "wiredicon.png",
   "orientations" : [
     {
       "dualImage" : "alliancebackgrounddoor2.png:<color>",
@@ -38,5 +38,20 @@
       "spaceScan" : 0.1,
       "anchors" : [ "background" ]
     }
-  ]
+  ],
+
+  "animation" : "/objects/animations/thea-backgrounddoor.animation",
+  "animationCustom" : {},
+  "animationParts" : {
+    "door" : "alliancebackgrounddoor2.png"
+  },
+  "animationPosition" : [-8, 0],
+  
+  "scripts" : [ "/objects/scripts/thea-backgrounddoor.lua" ],
+  "detectArea" : [ [-5, 0], [6, 6] ],
+  
+  "mouthPosition" : [0, -1], //Used to determine the teleport position of the door
+  
+  "inputNodes" : [ [-1, 0] ],
+  "outputNodes" : [ [1, 4] ]
 }
