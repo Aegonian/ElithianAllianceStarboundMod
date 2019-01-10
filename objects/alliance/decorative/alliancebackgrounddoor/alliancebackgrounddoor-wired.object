@@ -1,11 +1,11 @@
 {
-  "objectName" : "alliancebackgrounddoor2-wired",
+  "objectName" : "alliancebackgrounddoor-wired",
   "colonyTags" : ["alliance"],
   "rarity" : "Common",
   "category" : "door",
   "printable" : false,
   "price" : 80,
-  "description" : "A sliding door. It can be linked to other background doors.",
+  "description" : "A blast door. It can be linked to other background doors.",
   "shortdescription" : "Alliance Background Door",
   "race" : "aegi",
 
@@ -32,37 +32,37 @@
   "inventoryIcon" : "wiredicon.png",
   "orientations" : [
     {
-      "dualImage" : "alliancebackgrounddoor2.png:<color>",
-      "imagePosition" : [-8, 0],
+      "dualImage" : "alliancebackgrounddoor.png:<color>",
+      "imagePosition" : [-16, 0],
 
       "spaceScan" : 0.1,
       "anchors" : [ "background" ]
     }
   ],
 
-  "animation" : "/objects/animations/thea-backgrounddoor.animation",
+  "animation" : "/objects/animations/thea-backgrounddoorslow.animation",
   "animationCustom" : {
     "sounds" : {
       "open" : {
-        "pool" : [ "/sfx/objects/bunkerslidingdoor_open.ogg" ],
+        "pool" : [ "/sfx/objects/apexcooldoor_open.ogg" ],
         "rangeMultiplier" : 0.5
       },
       "close" : {
-        "pool" : [ "/sfx/objects/bunkerslidingdoor_close.ogg" ],
+        "pool" : [ "/sfx/objects/apexcooldoor_close.ogg" ],
         "rangeMultiplier" : 0.5
       }
     }
   },
   "animationParts" : {
-    "door" : "alliancebackgrounddoor2.png"
+    "door" : "alliancebackgrounddoor.png"
   },
-  "animationPosition" : [-8, 0],
+  "animationPosition" : [-16, 0],
   
   "scripts" : [ "/objects/scripts/thea-backgrounddoor.lua" ],
-  "detectArea" : [ [-5, 0], [6, 6] ],
+  "detectArea" : [ [-6, 0], [7, 6] ],
   
   "mouthPosition" : [0, -1], //Used to determine the teleport position of the door
   
-  "inputNodes" : [ [-1, 0], [-1, 2] ],
+  "inputNodes" : [ [-2, 0], [-2, 2] ],
   "outputNodes" : [ [1, 4] ]
 }
