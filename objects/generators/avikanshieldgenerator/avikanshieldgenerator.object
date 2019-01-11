@@ -90,7 +90,7 @@
   "defaultState" : false,
 
   "outputNodes" : [ [0, 0] ],
-  "inputNodes" : [ [0, 2] ],
+  "inputNodes" : [ [2, 1] ],
 
   "explodeOnSmash" : true,
   "explosionProjectile" : "explosivegenerator",

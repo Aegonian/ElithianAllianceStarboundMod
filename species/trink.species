@@ -19,6 +19,9 @@
   "defaultBlueprints" : {
     "tier1" : [
 
+//NEW in v2.3.8
+	  { "item" : "creonembassyteleporter-trink" },
+
 //NEW in v2.3.4
 	  { "item" : "trinkrailpod" },
 

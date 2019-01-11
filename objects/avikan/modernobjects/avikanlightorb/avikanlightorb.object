@@ -29,24 +29,36 @@
   "theleanDescription" : "A hovering light. Built using Centensian technology, no doubt.",
   "drodenDescription" : "Detected light orb.",
   
-  "statusEffects" : [ ],
-  
   "lightColor" : [245, 234, 220],
-  "flickerDistance" : 0.5,
-  "flickerStrength" : 0.05,
+  "flickerPeriod" : 0.8,
+  "flickerMinIntensity" : 0.99,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.0,
+  "flickerIntensityVariance" : 0.0,
+
+  "soundEffect" : "/sfx/objects/electriclight.ogg",
 
   "inventoryIcon" : "avikanlightorbicon.png",
   "orientations" : [
     {
-      "image" : "avikanlightorb.png:<color>.<frame>",
+      "image" : "avikanlightorb.png:<color>",
       "imagePosition" : [0, 0],
-      "frames" : 6,
-      "animationCycle" : 0.7,
 
       "spaceScan" : 0.1
     }
   ],
 
-  "soundEffect" : "/sfx/objects/electriclight.ogg"
-
+  "animation" : "avikanlightorb.animation",
+  "animationParts" : {
+    "object" : "avikanlightorb.png"
+  },
+  "animationPosition" : [0, 0],
+  
+  "scripts" : [
+    "/objects/scripts/thea-floatingobject.lua"
+  ],
+  "scriptDelta" : 1,
+  
+  "floatingObjectCycle" : 1.6,			//Time for the item to move a full cycle
+  "floatingObjectMaxTransform" : 0.33	//Maximum up and down movement from origin
 }

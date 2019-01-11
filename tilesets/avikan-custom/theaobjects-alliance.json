@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":180,
+ "tilecount":184,
  "tileheight":128,
  "tileproperties":
     {
@@ -735,6 +735,38 @@
          "imagePositionX":"-8",
          "imagePositionY":"0",
          "object":"alliancecomputerscreen",
+         "tilesetDirection":"right"
+        },
+     "180":
+        {
+         "\/\/shortdescription":"Alliance Background Door",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"alliancebackgrounddoor",
+         "tilesetDirection":"right"
+        },
+     "181":
+        {
+         "\/\/shortdescription":"Alliance Background Door",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"alliancebackgrounddoor2",
+         "tilesetDirection":"right"
+        },
+     "182":
+        {
+         "\/\/shortdescription":"Alliance Background Door (Wired)",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"alliancebackgrounddoor2-wired",
+         "tilesetDirection":"right"
+        },
+     "183":
+        {
+         "\/\/shortdescription":"Alliance Background Door (Wired)",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"alliancebackgrounddoor-wired",
          "tilesetDirection":"right"
         },
      "19":
@@ -1815,6 +1847,22 @@
      "18":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancecomputerscreen.png"
+        },
+     "180":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancebackgrounddoor.png"
+        },
+     "181":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancebackgrounddoor2.png"
+        },
+     "182":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancebackgrounddoor2-wired.png"
+        },
+     "183":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancebackgrounddoor-wired.png"
         },
      "19":
         {

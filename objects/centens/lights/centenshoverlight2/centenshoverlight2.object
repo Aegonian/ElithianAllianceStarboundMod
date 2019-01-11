@@ -29,23 +29,31 @@
   "theleanDescription" : "A hovering light. Built using Centensian technology, no doubt.",
   "drodenDescription" : "Detected Centensian technology. Hovering light confirmed.",
   
-  "statusEffects" : [ ],
-  
   "lightColor" : [85, 173, 214],
-  "flickerDistance" : 0.5,
-  "flickerStrength" : 0.05,
+
+  "soundEffect" : "/sfx/objects/electriclight.ogg",
 
   "inventoryIcon" : "centenshoverlight2icon.png",
   "orientations" : [
     {
-      "dualImage" : "centenshoverlight2.png:<color>.<frame>",
+      "dualImage" : "centenshoverlight2.png:<color>",
       "imagePosition" : [0, 0],
-      "frames" : 6,
-      "animationCycle" : 1.0,
 
       "spaceScan" : 0.1
     }
   ],
 
-  "soundEffect" : "/sfx/objects/electriclight.ogg"
+  "animation" : "centenshoverlight2.animation",
+  "animationParts" : {
+    "object" : "centenshoverlight2.png"
+  },
+  "animationPosition" : [0, 0],
+  
+  "scripts" : [
+    "/objects/scripts/thea-floatingobject.lua"
+  ],
+  "scriptDelta" : 1,
+  
+  "floatingObjectCycle" : 1.6,			//Time for the item to move a full cycle
+  "floatingObjectMaxTransform" : 0.33	//Maximum up and down movement from origin
 }

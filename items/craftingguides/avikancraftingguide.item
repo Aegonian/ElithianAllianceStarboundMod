@@ -8,6 +8,19 @@
   "category" : "Crafting Guide",
   "learnBlueprintsOnPickup" : [
 	
+//New in v2.3.8
+	  "avikanbackgrounddoor-wired",
+	  "avikannumber0",
+	  "avikannumber1",
+	  "avikannumber2",
+	  "avikannumber3",
+	  "avikannumber4",
+	  "avikannumber5",
+	  "avikannumber6",
+	  "avikannumber7",
+	  "avikannumber8",
+	  "avikannumber9",
+	
 //New in v2.3.5
 	  "avikanracinggate",
 	  "avikanracinggatefast",

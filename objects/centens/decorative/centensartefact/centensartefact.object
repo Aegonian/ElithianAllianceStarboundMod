@@ -34,42 +34,34 @@
   "inventoryIcon" : "centensartefacticon.png",
   "orientations" : [
     {
-	  "imageLayers" : [ { "image" : "centensartefact.png:<color>.<frame>" } ],
-
+	  "dualImage" : "pedestal.png:<color>",
       "imagePosition" : [0, 0],
-      "frames" : 16,
-      "animationCycle" : 1.2,
 
-      "spaceScan" : 0.1,
-      "anchors" : [ "bottom" ],
-      "flipImages" : true,
-      "direction" : "left"
-
-    },
-    {
-	  "imageLayers" : [ { "image" : "centensartefact.png:<color>.<frame>" } ],
-
-      "imagePosition" : [0, 0],
-      "frames" : 16,
-      "animationCycle" : 1.2,
-
-      "spaceScan" : 0.1,
-      "anchors" : [ "bottom" ],
-      "direction" : "right"
-
+	  "spaces" : [
+        [0, 3], [1, 3], [2, 3],
+        [0, 2], [1, 2], [2, 2],
+        [0, 1], [1, 1], [2, 1],
+        [0, 0], [1, 0], [2, 0]
+      ],
+      "anchors" : [ "bottom" ]
     }
   ],
+
+  "animation" : "centensartefact.animation",
+  "animationParts" : {
+    "pedestal" : "pedestal.png",
+    "item" : "artefact.png"
+  },
+  "animationPosition" : [0, 0],
   
   "scripts" : [
     "/objects/scripts/thea-interactpickup.lua"
   ],
-  "scriptDelta" : 5,
+  "scriptDelta" : 1,
   
   "spawnableItem" : "centensrelic",
-
-  "animation" : "centensartefact.animation",
-  "animationParts" : {
-    "interactiveObject" : "centensartefact.png"
-  },
-  "animationPosition" : [0, 0]
+  
+  "useFloatingObject" : true,			//If true, the item will smoothly float up and down
+  "floatingObjectCycle" : 2.0,			//Time for the item to move a full cycle
+  "floatingObjectMaxTransform" : 0.5	//Maximum up and down movement from origin
 }

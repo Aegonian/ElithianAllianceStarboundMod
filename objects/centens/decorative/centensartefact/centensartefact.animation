@@ -1,7 +1,7 @@
 {
   "animatedParts" : {
     "stateTypes" : {
-      "interactiveObject" : {
+      "objectState" : {
         "default" : "filled",
         "states" : {
           "filled" : {
@@ -17,19 +17,18 @@
     },
 
     "parts" : {
-      "interactiveObject" : {
+      "pedestal" : {
         "properties" : {
+          "zLevel" : 1,
           "centered" : false
         },
-
         "partStates" : {
-          "interactiveObject" : {
+          "objectState" : {
             "filled" : {
               "properties" : {
-                "image" : "<partImage>:<color>.<frame>"
+                "image" : "<partImage>:<color>.filled"
               }
             },
-
             "empty" : {
               "properties" : {
                 "image" : "<partImage>:<color>.empty"
@@ -37,7 +36,33 @@
             }
           }
         }
+      },
+      "item" : {
+        "properties" : {
+          "zLevel" : 0,
+		  "offset" : [0, 2.5],
+          "centered" : false,
+          "transformationGroups" : [ "floatingObject" ]
+        },
+        "partStates" : {
+          "objectState" : {
+            "filled" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.<frame>"
+              }
+            },
+            "empty" : {
+              "properties" : {
+                "image" : ""
+              }
+            }
+          }
+        }
       }
     }
+  },
+  
+  "transformationGroups" : {
+    "floatingObject" : {}
   }
 }

@@ -8,6 +8,10 @@
   "category" : "Crafting Guide",
   "learnBlueprintsOnPickup" : [
 	
+//New in v2.3.8
+	  "alliancebackgrounddoor-wired",
+	  "alliancebackgrounddoor2-wired",
+	  
 //New in v2.3.4
 	  "aegishiplight",
 	  "allianceraildoor",

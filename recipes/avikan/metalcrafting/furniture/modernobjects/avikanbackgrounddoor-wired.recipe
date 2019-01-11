@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "avikanmetal", "count" : 2 },
+    { "item" : "avikandarkmetal", "count" : 2 },
+    { "item" : "avikancircuitry", "count" : 2 }
+  ],
+  "output" : { "item" : "avikanbackgrounddoor-wired", "count" : 1 },
+  "groups" : [ "avikanmetalcrafting", "metalfurniture", "all" ]
+}

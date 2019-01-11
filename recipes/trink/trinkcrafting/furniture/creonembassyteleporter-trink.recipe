@@ -1,0 +1,14 @@
+{
+  "input" : [
+    { "item" : "trinkmetaltier3", "count" : 12 },
+    { "item" : "trinkelectronics", "count" : 4 },
+    { "item" : "trinkwiring", "count" : 6 },
+	{ "item" : "teleportercore", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "creonembassyteleporter-trink",
+    "count" : 1
+  },
+  "duration" : 5,
+  "groups" : [ "trinkcrafting", "furniture", "all" ]
+}
