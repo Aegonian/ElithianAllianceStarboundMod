@@ -1,0 +1,24 @@
+{
+  "name" : "ancientcurse",
+  "blockingStat" : "ancientcurseStatusImmunity",
+
+  "effectConfig" : {
+	"directive" : "fade=000000=0.75?border=1;9BFF0050",
+	"deathDirective" : "fade=000000=1.0?border=1;9BFF0080",
+	"deathProjectileType" : "ancientcurseghost",
+	"timeBetweenBlobs" : 0.125,
+	"maxExplosionDamage" : 50,
+	"damageInheritFactor" : 0.25,
+	"liquidDamage" : 5.0
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "ancientcurse.lua"
+  ],
+
+  "animationConfig" : "ancientcurse.animation",
+
+  "label" : "Harrowing Curse",
+  "icon" : "/interface/statuses/ancientcurse.png"
+}

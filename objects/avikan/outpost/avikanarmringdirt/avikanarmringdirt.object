@@ -34,7 +34,7 @@
 
   "animation" : "avikanarmringdirt.animation",
   "animationParts" : {
-    "interactiveObject" : "avikanarmringdirt.png"
+    "object" : "avikanarmringdirt.png"
   },
   "animationPosition" : [0, 0]
   

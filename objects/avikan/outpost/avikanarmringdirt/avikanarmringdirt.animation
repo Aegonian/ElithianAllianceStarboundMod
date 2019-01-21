@@ -1,7 +1,7 @@
 {
   "animatedParts" : {
     "stateTypes" : {
-      "interactiveObject" : {
+      "objectState" : {
         "default" : "filled",
         "states" : {
           "filled" : {
@@ -15,13 +15,13 @@
     },
 
     "parts" : {
-      "interactiveObject" : {
+      "object" : {
         "properties" : {
           "centered" : false
         },
 
         "partStates" : {
-          "interactiveObject" : {
+          "objectState" : {
             "filled" : {
               "properties" : {
                 "image" : "<partImage>:<color>.filled"

@@ -1,0 +1,18 @@
+{
+  "projectileName" : "ancientcurseblobexplosion",
+  "image" : "ancientcurseblobexplosion.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 6,
+  "speed" : 0,
+  "lightColor" : [69, 112, 0],
+  "pointLight" : true,
+  "statusEffects" : [ ],
+  "damagePoly" : [ [-37, 0], [-28, -28], [0, -37], [28, -28], [37, 0], [28, 28], [0, 37], [-28, 28] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "damageTeam" : { "type" : "indiscriminate" },
+  "damageKind" : "ancientcurseexplosion",
+  "knockback" : 0
+}

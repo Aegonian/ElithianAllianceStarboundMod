@@ -1,0 +1,61 @@
+{
+  "objectName" : "akkimaributton",
+  "colonyTags" : ["wired","akkimari"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "A touch-screen button.",
+  "shortdescription" : "Akris Wall Button",
+  "race" : "akkimari",
+
+  "floranDescription" : "Presss it!",
+  "glitchDescription" : "Curious. What will happen if I press this button?",
+  "drodenDescription" : "Analysis. Button. Used to temporarily activate circuits.",
+  "akkimariDescription" : "Akki press, things happen.",
+
+  "category" : "wire",
+  "price" : 20,
+
+  "inventoryIcon" : "akkimaributtonicon.png",
+  "orientations" : [
+    {
+      "image" : "akkimaributton.png:<color>.off",
+      "imagePosition" : [-8, -8],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+
+  "scripts" : [
+    "/objects/wired/momentaryswitch/momentaryswitch.lua",
+    "/scripts/npcToyObject.lua"
+  ],
+  "scriptDelta" : 5,
+
+  "animation" : "akkimaributton.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/tinywallbutton.ogg" ]
+    }
+  },
+  "animationParts" : {
+    "bg" : "akkimaributton.png",
+    "fg" : "akkimaributtonlit.png"
+  },
+  "animationPosition" : [-8, -8],
+
+  "outputNodes" : [ [0, -1] ],
+
+  "interval" : 15,
+
+  "npcToy": {
+    "ownerOnly": true,
+    "influence" : [
+      "wallbutton"
+    ],
+    "defaultReactions" : {},
+    "preciseStandPositionLeft" : [-1.0, 0.0],
+    "preciseStandPositionRight" : [1.0, 0.0],
+    "maxNpcs" : 1
+  }
+}

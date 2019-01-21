@@ -45,14 +45,14 @@
     "class" : "GunFire",
 
     "fireTime" : 0.5,
-    "baseDps" : 10.0,
-    "energyUsage" : 100,
+    "baseDps" : 1.0,
+    "energyUsage" : 10,
     "inaccuracy" : 0.0,
 
     "projectileCount" : 1,
     "fireType" : "auto",
 
-    "projectileType" : "alliancerailgunbullet",
+    "projectileType" : "ancientcurseghost",
     "projectileParameters" : {},
 	
     "stances" : {

@@ -1,0 +1,24 @@
+{
+  "kind" : "ancientcursedrip",
+  "location" : "mouth",
+  "definition" : {
+    "duration" : 0.25,
+    "loops" : true,
+    "start" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [ [ ] ]
+    },
+    "particles" : [
+      [ "ancientcursedrip" ]
+    ],
+    "sounds" : [ [ ] ],
+    "stop" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [ [ ] ]
+    }
+  }
+}

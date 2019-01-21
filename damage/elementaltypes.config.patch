@@ -115,5 +115,20 @@
 		"kill" : "akkimariscrapperdamagenumber"
 	  }
 	}
+  },
+  
+  //ANCIENT CURSE
+  { "op" : "add",
+	"path" : "/ancientcurse",
+	"value" : {
+	  "resistanceStat" : "ancientcurseResistance",
+	  "damageNumberParticles" : {
+		"hit" : "ancientcursedamagenumber",
+		"stronghit" : "ancientcursedamagenumberstrong",
+		"weakhit" : "ancientcursedamagenumberweak",
+		"shieldhit" : "ancientcursedamagenumber",
+		"kill" : "ancientcursedamagenumber"
+	  }
+	}
   }
 ]

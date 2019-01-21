@@ -1,0 +1,173 @@
+{
+  "itemName" : "thea-breacher",
+  "price" : 1500,
+  "inventoryIcon" : "thea-breachericon.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;A high-power railgun capable of firing through solid walls.",
+  "shortdescription" : "^orange;Breacher K-1^white;",
+  "level" : 6,
+  "fixedLevel" : false,
+  "tooltipKind" : "thea-chargedgun-unique",
+  "category" : "Railgun",
+  "itemTags" : ["weapon","ranged","sniperrifle","railgun","alliance","rimdweller","theaUnique"],
+  "twoHanded" : true,
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "thea-breacher" },
+  
+  "meritTokenValue" : 100,
+  
+  "cursor" : "/cursors/thea-largejumpriflereticle.cursor",
+  
+  "animation" : "thea-breacher.animation",
+  "animationParts" : {
+    "gun" : "thea-breacher.png",
+    "lights" : "thea-breacherlights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/shockboltmuzzle.png",
+    "charge" : "thea-breachercharge.png",
+    "chargeFullbright" : "thea-breacherchargelights.png"
+  },
+  "animationCustom" : {
+	"animatedParts" : {
+      "parts" : {
+        "gun" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.375, -0.875]
+		  }
+		},
+		"lights" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.375, -0.875]
+		  }
+		},
+		"charge" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.375, -0.875]
+		  }
+		},
+		"chargeFullbright" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.375, -0.875]
+		  }
+		}
+      }
+    },
+    "particleEmitters" : {
+      "muzzleFlash" : {
+        "particles" : [
+          { "particle" : "akkimariashsmoke" },
+          { "particle" : "akkimariashsmoke" },
+          { "particle" : "thea-electricstunarc2" }
+        ]
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/breacher_fire.ogg" ],
+	  "chargeLoop" : [ "/sfx/gun/breacher_charge.ogg" ],
+	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
+    }
+  },
+
+  "baseOffset" : [1.375, -0.875],
+  "muzzleOffset" : [2.625, 0.0],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-chargedshot.lua"],
+    "class" : "TheaChargedShot",
+
+	"activeAnimation" : true, //Allows a special animation to be played while firing
+
+    "chargeTime" : 3.2,
+    "baseDamage" : 27.5,
+    "baseEnergyUsage" : 500,
+    "inaccuracy" : 0.0,
+	
+	"walkWhileFiring" : true,
+	
+	"cooldownTime" : 2.0,
+
+    "projectileType" : "alliancerailgunbullet",
+	"projectileCount" : 1,
+	"projectileParameters" : {
+      "knockback" : 40
+    },
+	
+	"recoilKnockbackVelocity" : 55,
+	"crouchRecoilKnockbackVelocity" : 30,
+	"crouchStopsRecoil" : true,
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      },
+      "charge" : {
+        "armRotation" : -2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+		"weaponOffset" : [-0.2, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      },
+      "cooldown" : {
+        "duration" : 0.8,
+        "armRotation" : 5,
+        "weaponRotation" : 5,
+		"weaponOffset" : [-0.2, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      },
+      "discharge" : {
+        "duration" : 0.1,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      }
+	}
+  },
+
+  "builder" : "/items/buildscripts/thea-buildchargedgun.lua"
+}

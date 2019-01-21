@@ -1,0 +1,26 @@
+{
+  "kind" : "ancientcursedrip",
+  "definition" : {
+	"type" : "ember",
+	"color" : [0, 0, 0, 191],
+	"size" : 1.0,
+	"position" : [0, 0],
+    "destructionAction" : "fade",
+    "destructionTime" : 2,
+	"initialVelocity" : [0.3, -8.0],
+	"finalVelocity" : [0, 14.0],
+	"approach" : [0, -5],
+	"timeToLive" : 3.5,
+	"layer" : "middle",
+	"fullbright" : true,
+	"variance" : {
+	  "position" : [0.5, 0.5],
+	  "initialVelocity" : [2, -8],
+	  "finalVelocity" : [0, 20.0],
+	  "timeToLive" : 0.5,
+	  "destructionTime" : 3.0,
+	  "size" : 0.8
+	},
+	"collidesLiquid" : false
+  }
+}

@@ -1,0 +1,570 @@
+{
+  "kind" : "ancientcurseexplosion",
+  "elementalType" : "ancientcurse",
+  "effects" : {
+    "organic" : {
+      "hit" : {
+        "sounds" : [ "/sfx/statuseffects/ancientcurse_blobbreak.ogg" ],
+        "particles" : [
+          [
+            {
+              "type" : "animated",
+              "animation" : "/animations/ancientcursehitspark/ancientcursehitspark.animation",
+			  "fullbright" : true,
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 1,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 0.3,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      },
+      "stronghit" : {
+        "sounds" : [ "/sfx/statuseffects/ancientcurse_blobbreak.ogg" ],
+        "particles" : [
+          [
+            // CRITICAL HIT
+            {
+              "type" : "animated",
+			  "animation" : "/animations/ancientcursegoop/ancientcursegoop.animation",
+			  "position" : [0, 0],
+			  "initialVelocity" : [0, 2],
+			  "finalVelocity" : [0, -10],
+			  "approach" : [0, 10],
+			  "destructionAction" : "shrink",
+			  "destructionTime" : 0.75,
+			  "fade" : 1,
+			  "size" : 0.5,
+			  "layer" : "middle",
+			  "timeToLive" : 0.25,
+			  "fullbright" : false,
+			  "variance" : {
+				"initialVelocity" : [10, 5],
+				"timeToLive" : 0.25,
+				"destructionTime" : 0.25,
+				"size" : 0.2,
+				"rotation" : 180,
+				"angularVelocity" : 180
+			  }
+            },
+            {
+              "type" : "animated",
+			  "animation" : "/animations/ancientcursegoop/ancientcursegoop.animation",
+			  "position" : [0, 0],
+			  "initialVelocity" : [0, 2],
+			  "finalVelocity" : [0, -10],
+			  "approach" : [0, 10],
+			  "destructionAction" : "shrink",
+			  "destructionTime" : 0.75,
+			  "fade" : 1,
+			  "size" : 0.5,
+			  "layer" : "middle",
+			  "timeToLive" : 0.25,
+			  "fullbright" : false,
+			  "variance" : {
+				"initialVelocity" : [10, 5],
+				"timeToLive" : 0.25,
+				"destructionTime" : 0.25,
+				"size" : 0.2,
+				"rotation" : 180,
+				"angularVelocity" : 180
+			  }
+            },
+            {
+              "type" : "animated",
+			  "animation" : "/animations/ancientcursegoop/ancientcursegoop.animation",
+			  "position" : [0, 0],
+			  "initialVelocity" : [0, 2],
+			  "finalVelocity" : [0, -10],
+			  "approach" : [0, 10],
+			  "destructionAction" : "shrink",
+			  "destructionTime" : 0.75,
+			  "fade" : 1,
+			  "size" : 0.5,
+			  "layer" : "middle",
+			  "timeToLive" : 0.25,
+			  "fullbright" : false,
+			  "variance" : {
+				"initialVelocity" : [10, 5],
+				"timeToLive" : 0.25,
+				"destructionTime" : 0.25,
+				"size" : 0.2,
+				"rotation" : 180,
+				"angularVelocity" : 180
+			  }
+            },
+
+            // NORMAL PARTICLES
+            {
+              "type" : "animated",
+              "animation" : "/animations/ancientcursehitspark/ancientcursehitspark.animation",
+			  "fullbright" : true,
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 1,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 0.3,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      },
+      "kill" : {
+        "sounds" : [ "/sfx/statuseffects/ancientcurse_blobbreak.ogg" ],
+        "particles" : [
+          [
+            {
+              "type" : "animated",
+              "animation" : "/animations/ancientcursehitspark/ancientcursehitspark.animation",
+			  "fullbright" : true,
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 1,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 0.3,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      }
+    },
+    "robotic" : {
+      "hit" : {
+        "sounds" : [ "/sfx/statuseffects/ancientcurse_blobbreak.ogg" ],
+        "particles" : [
+          [
+            {
+              "type" : "animated",
+              "animation" : "/animations/ancientcursehitspark/ancientcursehitspark.animation",
+			  "fullbright" : true,
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 1,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 0.3,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      },
+      "stronghit" : {
+        "sounds" : [ "/sfx/statuseffects/ancientcurse_blobbreak.ogg" ],
+        "particles" : [
+          [
+            // CRITICAL HIT
+            {
+              "type" : "animated",
+			  "animation" : "/animations/ancientcursegoop/ancientcursegoop.animation",
+			  "position" : [0, 0],
+			  "initialVelocity" : [0, 2],
+			  "finalVelocity" : [0, -10],
+			  "approach" : [0, 10],
+			  "destructionAction" : "shrink",
+			  "destructionTime" : 0.75,
+			  "fade" : 1,
+			  "size" : 0.5,
+			  "layer" : "middle",
+			  "timeToLive" : 0.25,
+			  "fullbright" : false,
+			  "variance" : {
+				"initialVelocity" : [10, 5],
+				"timeToLive" : 0.25,
+				"destructionTime" : 0.25,
+				"size" : 0.2,
+				"rotation" : 180,
+				"angularVelocity" : 180
+			  }
+            },
+            {
+              "type" : "animated",
+			  "animation" : "/animations/ancientcursegoop/ancientcursegoop.animation",
+			  "position" : [0, 0],
+			  "initialVelocity" : [0, 2],
+			  "finalVelocity" : [0, -10],
+			  "approach" : [0, 10],
+			  "destructionAction" : "shrink",
+			  "destructionTime" : 0.75,
+			  "fade" : 1,
+			  "size" : 0.5,
+			  "layer" : "middle",
+			  "timeToLive" : 0.25,
+			  "fullbright" : false,
+			  "variance" : {
+				"initialVelocity" : [10, 5],
+				"timeToLive" : 0.25,
+				"destructionTime" : 0.25,
+				"size" : 0.2,
+				"rotation" : 180,
+				"angularVelocity" : 180
+			  }
+            },
+            {
+              "type" : "animated",
+			  "animation" : "/animations/ancientcursegoop/ancientcursegoop.animation",
+			  "position" : [0, 0],
+			  "initialVelocity" : [0, 2],
+			  "finalVelocity" : [0, -10],
+			  "approach" : [0, 10],
+			  "destructionAction" : "shrink",
+			  "destructionTime" : 0.75,
+			  "fade" : 1,
+			  "size" : 0.5,
+			  "layer" : "middle",
+			  "timeToLive" : 0.25,
+			  "fullbright" : false,
+			  "variance" : {
+				"initialVelocity" : [10, 5],
+				"timeToLive" : 0.25,
+				"destructionTime" : 0.25,
+				"size" : 0.2,
+				"rotation" : 180,
+				"angularVelocity" : 180
+			  }
+            },
+
+            // NORMAL PARTICLES
+            {
+              "type" : "animated",
+              "animation" : "/animations/ancientcursehitspark/ancientcursehitspark.animation",
+			  "fullbright" : true,
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 1,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 0.3,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      },
+      "kill" : {
+        "sounds" : [ "/sfx/melee/kill_robotic1.ogg", "/sfx/melee/kill_robotic2.ogg" ],
+        "particles" : [
+          [
+
+            {
+              "type" : "animated",
+              "animation" : "/animations/ancientcursehitspark/ancientcursehitspark.animation",
+			  "fullbright" : true,
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 1,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 0.3,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      }
+    },
+    "wooden" : {
+      "hit" : {
+        "sounds" : [ "/sfx/statuseffects/ancientcurse_blobbreak.ogg" ],
+        "particles" : [
+          [
+
+            {
+              "type" : "animated",
+              "animation" : "/animations/ancientcursehitspark/ancientcursehitspark.animation",
+			  "fullbright" : true,
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 1,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 0.3,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      },
+      "stronghit" : {
+        "sounds" : [ "/sfx/statuseffects/ancientcurse_blobbreak.ogg" ],
+        "particles" : [
+          [
+            // CRITICAL HIT
+            {
+              "type" : "animated",
+			  "animation" : "/animations/ancientcursegoop/ancientcursegoop.animation",
+			  "position" : [0, 0],
+			  "initialVelocity" : [0, 2],
+			  "finalVelocity" : [0, -10],
+			  "approach" : [0, 10],
+			  "destructionAction" : "shrink",
+			  "destructionTime" : 0.75,
+			  "fade" : 1,
+			  "size" : 0.5,
+			  "layer" : "middle",
+			  "timeToLive" : 0.25,
+			  "fullbright" : false,
+			  "variance" : {
+				"initialVelocity" : [10, 5],
+				"timeToLive" : 0.25,
+				"destructionTime" : 0.25,
+				"size" : 0.2,
+				"rotation" : 180,
+				"angularVelocity" : 180
+			  }
+            },
+            {
+              "type" : "animated",
+			  "animation" : "/animations/ancientcursegoop/ancientcursegoop.animation",
+			  "position" : [0, 0],
+			  "initialVelocity" : [0, 2],
+			  "finalVelocity" : [0, -10],
+			  "approach" : [0, 10],
+			  "destructionAction" : "shrink",
+			  "destructionTime" : 0.75,
+			  "fade" : 1,
+			  "size" : 0.5,
+			  "layer" : "middle",
+			  "timeToLive" : 0.25,
+			  "fullbright" : false,
+			  "variance" : {
+				"initialVelocity" : [10, 5],
+				"timeToLive" : 0.25,
+				"destructionTime" : 0.25,
+				"size" : 0.2,
+				"rotation" : 180,
+				"angularVelocity" : 180
+			  }
+            },
+            {
+              "type" : "animated",
+			  "animation" : "/animations/ancientcursegoop/ancientcursegoop.animation",
+			  "position" : [0, 0],
+			  "initialVelocity" : [0, 2],
+			  "finalVelocity" : [0, -10],
+			  "approach" : [0, 10],
+			  "destructionAction" : "shrink",
+			  "destructionTime" : 0.75,
+			  "fade" : 1,
+			  "size" : 0.5,
+			  "layer" : "middle",
+			  "timeToLive" : 0.25,
+			  "fullbright" : false,
+			  "variance" : {
+				"initialVelocity" : [10, 5],
+				"timeToLive" : 0.25,
+				"destructionTime" : 0.25,
+				"size" : 0.2,
+				"rotation" : 180,
+				"angularVelocity" : 180
+			  }
+            },
+
+            // NORMAL PARTICLES
+            {
+              "type" : "animated",
+              "animation" : "/animations/ancientcursehitspark/ancientcursehitspark.animation",
+			  "fullbright" : true,
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 1,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 0.3,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      },
+      "kill" : {
+        "sounds" : [ "/sfx/melee/kill_wood1.ogg", "/sfx/melee/kill_wood2.ogg" ],
+        "particles" : [
+          [
+
+            {
+              "type" : "animated",
+              "animation" : "/animations/ancientcursehitspark/ancientcursehitspark.animation",
+			  "fullbright" : true,
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 1,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 0.3,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      }
+    },
+    "stone" : {
+      "hit" : {
+        "sounds" : [ "/sfx/statuseffects/ancientcurse_blobbreak.ogg" ],
+        "particles" : [
+          [
+
+            {
+              "type" : "animated",
+              "animation" : "/animations/ancientcursehitspark/ancientcursehitspark.animation",
+			  "fullbright" : true,
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 1,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 0.3,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      },
+      "stronghit" : {
+        "sounds" : [ "/sfx/statuseffects/ancientcurse_blobbreak.ogg" ],
+        "particles" : [
+          [
+            // CRITICAL HIT
+            {
+              "type" : "animated",
+			  "animation" : "/animations/ancientcursegoop/ancientcursegoop.animation",
+			  "position" : [0, 0],
+			  "initialVelocity" : [0, 2],
+			  "finalVelocity" : [0, -10],
+			  "approach" : [0, 10],
+			  "destructionAction" : "shrink",
+			  "destructionTime" : 0.75,
+			  "fade" : 1,
+			  "size" : 0.5,
+			  "layer" : "middle",
+			  "timeToLive" : 0.25,
+			  "fullbright" : false,
+			  "variance" : {
+				"initialVelocity" : [10, 5],
+				"timeToLive" : 0.25,
+				"destructionTime" : 0.25,
+				"size" : 0.2,
+				"rotation" : 180,
+				"angularVelocity" : 180
+			  }
+            },
+            {
+              "type" : "animated",
+			  "animation" : "/animations/ancientcursegoop/ancientcursegoop.animation",
+			  "position" : [0, 0],
+			  "initialVelocity" : [0, 2],
+			  "finalVelocity" : [0, -10],
+			  "approach" : [0, 10],
+			  "destructionAction" : "shrink",
+			  "destructionTime" : 0.75,
+			  "fade" : 1,
+			  "size" : 0.5,
+			  "layer" : "middle",
+			  "timeToLive" : 0.25,
+			  "fullbright" : false,
+			  "variance" : {
+				"initialVelocity" : [10, 5],
+				"timeToLive" : 0.25,
+				"destructionTime" : 0.25,
+				"size" : 0.2,
+				"rotation" : 180,
+				"angularVelocity" : 180
+			  }
+            },
+            {
+              "type" : "animated",
+			  "animation" : "/animations/ancientcursegoop/ancientcursegoop.animation",
+			  "position" : [0, 0],
+			  "initialVelocity" : [0, 2],
+			  "finalVelocity" : [0, -10],
+			  "approach" : [0, 10],
+			  "destructionAction" : "shrink",
+			  "destructionTime" : 0.75,
+			  "fade" : 1,
+			  "size" : 0.5,
+			  "layer" : "middle",
+			  "timeToLive" : 0.25,
+			  "fullbright" : false,
+			  "variance" : {
+				"initialVelocity" : [10, 5],
+				"timeToLive" : 0.25,
+				"destructionTime" : 0.25,
+				"size" : 0.2,
+				"rotation" : 180,
+				"angularVelocity" : 180
+			  }
+            },
+
+            // NORMAL PARTICLES
+            {
+              "type" : "animated",
+              "animation" : "/animations/ancientcursehitspark/ancientcursehitspark.animation",
+			  "fullbright" : true,
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 1,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 0.3,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      },
+      "kill" : {
+        "sounds" : [ "/sfx/melee/kill_stone1.ogg", "/sfx/melee/kill_stone2.ogg", "/sfx/melee/kill_stone3.ogg", "/sfx/melee/kill_stone4.ogg", "/sfx/melee/kill_stone5.ogg" ],
+        "particles" : [
+          [
+            {
+              "type" : "animated",
+              "animation" : "/animations/ancientcursehitspark/ancientcursehitspark.animation",
+			  "fullbright" : true,
+              "size" : 1,
+              "angularVelocity" : 0,
+              "fade" : 1,
+              "destructionTime" : 1,
+              "position" : [0, 0],
+              "initialVelocity" : [0, 0],
+              "finalVelocity" : [0, 0],
+              "approach" : [1, 0],
+              "timeToLive" : 0.3,
+              "layer" : "middle"
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

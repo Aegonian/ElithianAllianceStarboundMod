@@ -1,0 +1,22 @@
+{
+  "particleEmitters" : {
+    "flames" : {
+      "enabled" : true,
+      "emissionRate" : 10.0,
+      "particles" : [
+        { "particle" : "thea-darkfog" }
+      ]
+    }
+  },
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [0, 75, 5]
+    }
+  },
+  "sounds" : {
+    "scream" : [ "/sfx/statuseffects/ancientcurse_scream1.ogg", "/sfx/statuseffects/ancientcurse_scream2.ogg", "/sfx/statuseffects/ancientcurse_scream3.ogg" ],
+    "loop" : [ "/sfx/npc/monsters/orbide_creepy_loop.ogg" ]
+  }
+}

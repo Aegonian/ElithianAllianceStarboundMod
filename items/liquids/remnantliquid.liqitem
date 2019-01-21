@@ -1,0 +1,13 @@
+{
+  "itemName" : "remnantliquid",
+  "price" : 25,
+  "rarity" : "Rare",
+  "category" : "liquid",
+  "inventoryIcon" : "remnantliquidicon.png",
+  "shortdescription" : "Remnant Goop",
+  "description" : "A black oozing liquid that feels like it doesn't belong in this universe.",
+
+  "liquid" : "remnantliquid",
+  
+  "fuelAmount" : 5
+}

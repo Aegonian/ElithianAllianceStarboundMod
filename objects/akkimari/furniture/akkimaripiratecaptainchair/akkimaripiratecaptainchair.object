@@ -1,0 +1,61 @@
+{
+  "objectName" : "akkimaripiratecaptainchair",
+  "colonyTags" : ["akkimari"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "A scrappy chair suspended with strong silken threads.",
+  "shortdescription" : "Akris Pirate Captain Chair",
+  "race" : "akkimari",
+  "category" : "furniture",
+  "price" : 25,
+
+  "apexDescription" : "A scrap metal chair hung from some ropes.",
+  "avianDescription" : "A strange chair hung from some ropes.",
+  "floranDescription" : "Floran wonderss why thisss chair iss hanging.",
+  "glitchDescription" : "Statement. A scrappy hanging chair.",
+  "humanDescription" : "This chair looks pretty cool.",
+  "hylotlDescription" : "This looks like the chair of a commander.",
+  "novakidDescription" : "This don't look safe to sit in...",
+
+  "aegiDescription" : "A scavenger's throne.",
+  "avikanDescription" : "A strange but comfortable chair suspended using some sort of ropes.",
+  "erixianDescription" : "TODO.",
+  "trinkDescription" : "A chair built from scrap. It looks intimidating.",
+  "hymidDescription" : "This chair is comfortable, but it feels strange to not be touching the ground.",
+  "notixDescription" : "A chair hung from the ceiling with some strange wires.",
+  "jorgasianDescription" : "This chair looks like the throne of some scavenger.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien chair. Silken threads exceed material strength expectations.",
+  "akkimariDescription" : "Chair for chieftain. Great respect.",
+
+  "inventoryIcon" : "akkimaripiratecaptainchairicon.png",
+  "orientations" : [
+    {
+      "image" : "akkimaripiratecaptainchair.png:<color>",
+      "imagePosition" : [-16, -40],
+      "direction" : "left",
+      "flipImages" : true,
+	  
+	  "sitPosition" : [-3, -17],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    },
+    {
+      "image" : "akkimaripiratecaptainchair.png:<color>",
+      "imagePosition" : [-16, -40],
+      "direction" : "right",
+	  
+	  "sitPosition" : [5, -17],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ],
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+  "sitCoverImage" : "/objects/akkimari/furniture/akkimaripiratecaptainchair/akkimaripiratecaptainchaircover.png"
+}

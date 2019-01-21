@@ -1,0 +1,13 @@
+{
+  "projectileName" : "ancientcursedeath",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/ancientcurseblobexplosion/ancientcurseblobexplosion.config"
+    }
+  ],
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "timeToLive" : 0
+}

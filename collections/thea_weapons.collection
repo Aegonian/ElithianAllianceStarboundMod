@@ -463,8 +463,15 @@
 	"thea-fireworkattachment" : {
       "order" : 75,
       "title" : "Fireworks Launcher",
-      "description" : "An underbarrel fireworks launcher to celebrate the Landing Festival!.",
+      "description" : "An underbarrel fireworks launcher to celebrate the Landing Festival!",
       "icon" : "/items/attachments/unique/thea-fireworkattachmentlarge.png"
+    },
+	//NEW EQUIPMENT v2.3.9
+	"thea-breacher" : {
+      "order" : 76,
+      "title" : "Breacher K-1",
+      "description" : "A high-power railgun capable of firing through solid walls.",
+      "icon" : "/items/active/weapons/ranged/unique/breacher/thea-breacher.png"
     }
   }
 }

@@ -36,7 +36,7 @@
 
   "animation" : "thellhunterskeleton.animation",
   "animationParts" : {
-    "interactiveObject" : "thellhunterskeleton.png"
+    "object" : "thellhunterskeleton.png"
   },
   "animationPosition" : [0, 0]
   

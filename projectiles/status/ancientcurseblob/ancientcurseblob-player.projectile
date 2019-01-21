@@ -1,0 +1,30 @@
+{
+  "projectileName" : "ancientcurseblob-player",
+  "image" : "ancientcurseblob.png",
+  "physics" : "thea-noclipprojectile",
+  "renderLayer" : "Player+1",
+  "animationCycle" : 1.0,
+  "animationLoops" : true,
+  "frameNumber" : 6,
+  "windupFrames" : 6,
+  "power" : 0,
+  "speed" : 0,
+  "timeToLive" : 6.0,
+  "onlyHitTerrain" : true,
+  "lightColor" : [56, 91, 0],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/ancientcurseblobexplosion/ancientcurseblobexplosion.config"
+    }
+  ],
+  "emitters" : [ "ancientcursedrip" ],
+  "damageKind" : "default",
+  "hydrophobic" : false,
+  
+  "scripts" : [ "/projectiles/scripts/thea-ancientcurseblob.lua" ],
+  
+  "randomTimeToLive" : true,
+  "minLifeTime" : 500,	//In milliseconds!
+  "maxLifeTime" : 600	//In milliseconds!
+}

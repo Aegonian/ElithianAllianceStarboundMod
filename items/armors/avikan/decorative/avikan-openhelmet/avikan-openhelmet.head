@@ -4,7 +4,7 @@
   "inventoryIcon" : "icons.png:head",
   "maxStack" : 1,
   "rarity" : "Rare",
-  "category" : "chestwear",
+  "category" : "headwear",
   "description" : "^green;Avikan. ^white;An Avikan helmet with built-in air filters, but no canopy.",
   "shortdescription" : "Open Helmet",
   "tooltipKind" : "armor",

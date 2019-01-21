@@ -12,6 +12,11 @@ function TheaChargedShot:init()
   
   self.chargeHasStarted = false
   self.shouldDischarge = false
+  
+  --Optional animation set-up
+  if self.activeAnimation then
+	animator.setAnimationState("gun", "idle")
+  end
 
   self:reset()
 
@@ -37,14 +42,22 @@ function TheaChargedShot:update(dt, fireMode, shiftHeld)
 	and not world.lineTileCollision(mcontroller.position(), self:firePosition()) then
 
     self:setState(self.charge)
-  --If the charge was prematurily stopped or interrupted somehow
+  --If the charge was prematurely stopped or interrupted somehow
   elseif self.chargeHasStarted == true and (self.fireMode ~= (self.activatingFireMode or self.abilitySlot) or world.lineTileCollision(mcontroller.position(), self:firePosition())) then
     animator.stopAllSounds("chargeLoop")
 	animator.setAnimationState("charge", "off")
 	animator.setParticleEmitterActive("chargeparticles", false)
 	self.chargeTimer = self.chargeTime
   end
-
+  
+  --Optional animation while firing
+  if self.activeAnimation then
+	if self.fireMode == (self.activatingFireMode or self.abilitySlot) and self.cooldownTimer == 0 and animator.animationState("gun") == "idle" then
+	  animator.setAnimationState("gun", "activate")
+	elseif (self.fireMode ~= (self.activatingFireMode or self.abilitySlot) or self.cooldownTimer > 0) and animator.animationState("gun") == "active" then
+	  animator.setAnimationState("gun", "deactivate")
+	end
+  end
 end
 
 function TheaChargedShot:charge()
@@ -94,6 +107,24 @@ function TheaChargedShot:fire()
   --Fire a projectile and show a muzzleflash, then continue on with this state
   self:fireProjectile()
   self:muzzleFlash()
+  
+  if self.recoilKnockbackVelocity then
+	--If not crouching or if crouch does not impact recoil
+	if not (self.crouchStopsRecoil and mcontroller.crouching()) then
+	  local recoilVelocity = vec2.mul(vec2.norm(vec2.mul(self:aimVector(0), -1)), self.recoilKnockbackVelocity)
+	  --If aiming down and not in zero G, reset Y velocity first to allow for breaking of falls
+	  if (self.weapon.aimAngle <= 0 and not mcontroller.zeroG()) then
+		mcontroller.setYVelocity(0)
+	  end
+	  mcontroller.addMomentum(recoilVelocity)
+	  mcontroller.controlJump()
+	--If crouching
+	elseif self.crouchRecoilKnockbackVelocity then
+	  local recoilVelocity = vec2.mul(vec2.norm(vec2.mul(self:aimVector(0), -1)), self.crouchRecoilKnockbackVelocity)
+	  mcontroller.setYVelocity(0)
+	  mcontroller.addMomentum(recoilVelocity)
+	end
+  end
 
   if self.stances.fire.duration then
     util.wait(self.stances.fire.duration)

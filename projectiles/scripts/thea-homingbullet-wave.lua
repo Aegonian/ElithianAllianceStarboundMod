@@ -46,6 +46,10 @@ function init()
   --Seting up the sine wave movement
   self.wavePeriod = config.getParameter("wavePeriod") / (2 * math.pi)
   self.waveAmplitude = config.getParameter("waveAmplitude")
+  
+  if config.getParameter("randomWavePeriod") then
+	self.wavePeriod = self.wavePeriod * (math.random(5, 20) / 10)
+  end
 
   self.timer = self.wavePeriod * 0.25
   local vel = mcontroller.velocity()

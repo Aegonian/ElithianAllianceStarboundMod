@@ -18,6 +18,7 @@
 	  "timeToLive" : 0.5,
 	  "destructionTime" : 3.0,
 	  "size" : 0.8
-	}
+	},
+	"collidesLiquid" : false
   }
 }

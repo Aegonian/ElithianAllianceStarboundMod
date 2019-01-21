@@ -7,18 +7,37 @@
   "animationCycle" : 0.5,
   "frameNumber" : 1,
   "power" : 50,
-  "speed" : 150,
+  "speed" : 180,
   "supportsProcessing" : true,
+  "emitters" : [ ],
   "actionOnReap" : [
     {
       "action" : "config",
-      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
     }
   ],
   "penetrationActions" : [
     {
       "action" : "config",
-      "file" : "/projectiles/explosions/avikanrocketexplosion/avikanrocketexplosion.config"
+      "file" : "/projectiles/explosions/avikanairstrikeexplosion/avikanairstrikeexplosionweak.config"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/alliance/alliancerailgunbullet/trail.png",
+        "position" : [-1.5, 0],
+        "layer" : "front",
+        "timeToLive" : 0.1,
+        "destructionTime" : 0.6,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
     }
   ],
   "lightColor" : [35, 60, 75],
@@ -29,8 +48,8 @@
   "scripts" : [ "/projectiles/scripts/thea-wallbuster.lua" ],
   
   //Wall Buster Config
-  "wallPenetrations" : 1,		//How many penetrations can happen. If set to 1, the projectile will only penetrate a single wall
-  "maxPenetrationDistance" : 3,	//Maximum penetration distance. Non-persistent, value is reset with every new entry point
+  "wallPenetrations" : 1,			//How many penetrations can happen. If set to 1, the projectile will only penetrate a single wall
+  "maxPenetrationDistance" : 15,	//Maximum penetration distance. Non-persistent, value is reset with every new entry point
   
   "damageTiles" : true,			//Whether or not to damage the tiles the projectile travels through
   "damageTileRadius" : 0.75,	//Radius around the projectile to damage tiles in

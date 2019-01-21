@@ -46,6 +46,12 @@ function update(dt)
 		  projectile.processAction(action)
 		end
 	  end
+	  
+	  --If the entry position is tile protected, prevent the projectile from penetrating
+	  if world.isTileProtected(self.entryPosition) then
+		self.penetrationsLeft = -1
+		projectile.setPower(0)
+	  end
 	end
   end
   if self.projectedExitPosition then
@@ -71,12 +77,14 @@ function update(dt)
 	local tilesAlongLine = world.collisionBlocksAlongLine(self.entryPosition, mcontroller.position()) or {}
 	for _, tilePosition in ipairs(tilesAlongLine) do
 	  world.damageTileArea(tilePosition, self.damageTileRadius, "foreground", self.entryPosition, "blockish", self.tileDamage, self.harvestLevel)
+	  world.damageTileArea(tilePosition, self.damageTileRadius, "foreground", self.entryPosition, "blockish", self.tileDamage, self.harvestLevel)
 	  self.tileDamageApplied[self.penetrationsLeft] = true
 	end
   --If we have an entry and exit position but haven't damaged tiles yet (likely due to high velocity) perform the tile damage afterwards
   elseif self.damageTiles and self.entryPosition and self.exitPosition and not self.tileDamageApplied[self.penetrationsLeft] then
 	local tilesAlongLine = world.collisionBlocksAlongLine(self.entryPosition, self.exitPosition) or {}
 	for _, tilePosition in ipairs(tilesAlongLine) do
+	  world.damageTileArea(tilePosition, self.damageTileRadius, "foreground", self.entryPosition, "blockish", self.tileDamage, self.harvestLevel)
 	  world.damageTileArea(tilePosition, self.damageTileRadius, "foreground", self.entryPosition, "blockish", self.tileDamage, self.harvestLevel)
 	  self.tileDamageApplied[self.penetrationsLeft] = true
 	end

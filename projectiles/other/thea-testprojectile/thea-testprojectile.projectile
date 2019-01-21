@@ -1,0 +1,23 @@
+{
+  "projectileName" : "thea-testprojectile",
+  "physics" : "laser",
+  "bounces" : 0,
+  "image" : "thea-testprojectile.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 0,
+  "speed" : 90,
+  "piercing" : true,
+  "supportsProcessing" : true,
+  "statusEffects" : [ "ancientcurse" ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+    }
+  ],
+  "lightColor" : [0, 0, 0],
+  "damageKind" : "plasma",
+  "damageType" : "ignoresDef",
+  "damageTeam" : { "type" : "indiscriminate" }
+}

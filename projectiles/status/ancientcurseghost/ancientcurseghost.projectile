@@ -1,0 +1,41 @@
+{
+  "projectileName" : "ancientcurseghost",
+  "physics" : "laser",
+  "bounces" : -1,
+  "image" : "ancientcurseghost.png",
+  "animationCycle" : 0.4,
+  "frameNumber" : 4,
+  "power" : 1,
+  "speed" : 12,
+  "supportsProcessing" : true,
+  "emitters" : [ "ancientcursedrip" ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/ancientcurseblobexplosion/ancientcurseblobexplosion.config"
+    }
+  ],
+  "statusEffects" : [
+    "ancientcurse"
+  ],
+  "lightColor" : [56, 91, 0],
+  "damageKind" : "ancientcurse",
+
+  "scripts" : ["/projectiles/scripts/thea-homingbullet-wave.lua"],
+  "scriptDelta" : 1,
+
+  "randomTimeToLive" : true,
+  "timeToLiveMilliseconds" : true,
+  "minLifeTime" : 400,
+  "maxLifeTime" : 600,
+  
+  "randomStartingSpeed" : true,
+  "minSpeed" : 8,
+  "maxSpeed" : 16,
+  
+  "wavePeriod" : 1.0,
+  "waveAmplitude" : 0.75,
+  
+  "searchRadius" : 100,
+  "baseHomingControlForce" : 2.5
+}
