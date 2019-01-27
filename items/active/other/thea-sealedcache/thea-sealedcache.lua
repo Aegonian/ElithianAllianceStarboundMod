@@ -25,7 +25,7 @@ end
 function update(dt, fireMode, shiftHeld)
   updateAim()
   
-  local treasureLevel = config.getParameter("treasureLevel", 1)
+  local treasureLevel = config.getParameter("level", 1)
   world.debugText(treasureLevel, mcontroller.position(), "red")
 
   --If pressing mouse button, activate opening animation and play sound

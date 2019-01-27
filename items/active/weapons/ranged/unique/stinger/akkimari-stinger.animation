@@ -160,11 +160,7 @@
       "transformationGroups" : ["muzzle"],
       "offsetRegion" : [0.1, -0.1, 0.1, -0.1],
       "particles" : [
-        { "particle" : "driftriflecharge"},
-		{ "particle" : "driftriflecharge"},
-		{ "particle" : "driftriflecharge"},
-		{ "particle" : "driftriflecharge"},
-		{ "particle" : "driftriflecharge"}
+        { "particle" : "driftriflecharge"}
       ]
     },
 	"chargeparticlesAlt" : {
@@ -173,11 +169,7 @@
       "transformationGroups" : ["muzzle"],
       "offsetRegion" : [0.1, -0.1, 0.1, -0.1],
       "particles" : [
-        { "particle" : "driftriflecharge"},
-		{ "particle" : "driftriflecharge"},
-		{ "particle" : "driftriflecharge"},
-		{ "particle" : "driftriflecharge"},
-		{ "particle" : "driftriflecharge"}
+        { "particle" : "driftriflecharge"}
       ]
     }
   },

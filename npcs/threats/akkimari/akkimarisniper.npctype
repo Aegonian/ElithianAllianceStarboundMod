@@ -1,0 +1,86 @@
+{
+  "type" : "akkimarisniper",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "akkimariSniperDeathTreasure" ],
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      //Melee Behaviour
+	  //"leapWindup" : 0.1,				//Defaults to 0.1
+	  //"leapCooldown": 4,				//Defaults to 4.0
+	  //"leapChance": 0.5,				//Defaults to 0.5
+	  "switchToRangedCooldown": 0,		//Defaults to 8.0
+	  //"liquidHesitationTime": 3,		//Defaults to 3.0
+	  "forceRunRange": 25,				//Defaults to 15.0
+	  //"cantReachDialog": true			//Defaults to true
+	  
+	  //Ranged Behaviour
+	  "rangedAimTime": 0.0,				//Defaults to 0.0
+	  "rangedWindupTime": 0.0,			//Defaults to 0.05
+	  "rangedMinFireTime": 0.7,			//Defaults to 0.5
+	  "rangedMaxFireTime": 0.7,			//Defaults to 1.0
+	  //"bowDrawTime": 1,				//Defaults to 1.0
+	  //"arrowSpeed": 62.5,				//Defaults to 62.5
+	  
+	  //Crewmember Behaviour
+      "friendlyNpcTypes" : ["crewmemberakkimariscavenger"]
+    },
+	
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Kill, kill, kill!",
+            "Dead! You finished!",
+            "Akki assa dakka!",
+            "<selfname> going to eat you!",
+            "Dakka belong to <selfname> now!",
+            "<selfname> gonna eat!"
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0,
+	    [
+          {
+            "head" : [
+			  { "name" : "akkimari-tier1head", "parameters" : { "colorIndex" : 0 } }
+			],
+            "chest" : [
+			  { "name" : "akkimari-tier4chest", "parameters" : { "colorIndex" : 0 } }
+			],
+            "legs" : [
+			  { "name" : "akkimari-tier2legs", "parameters" : { "colorIndex" : 0 } }
+			],
+            "primary" : [
+			  "akkimari-achaari-npc"
+            ]
+          }
+        ]
+	  ]
+    ]
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 70.0	//Defaults to 70.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.0	//Defaults to 0.65
+      },
+      "protection" : {
+        "baseValue" : 1.0	//Defaults to 1.0
+      },
+      "healthRegen" : {
+        "baseValue" : 0.0	//Defaults to 0.0
+      }
+    }
+  }
+}

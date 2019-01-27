@@ -4,9 +4,10 @@
   "price" : 500,
   "maxStack" : 1,
   "rarity" : "Essential",
-  "tooltipKind" : "thea-unique",
   "description" : "A sealed cache containing something of value. Hold ^green;[LMB] ^white;to open!",
   "shortdescription" : "^orange;Celebratory Cache I^white;",
+  "tooltipKind" : "thea-sealedcache-unique",
+  "category" : "Sealed Cache",
   "twoHanded" : true,
 
   "inventoryIcon" : "celebratorycacheicon.png",
@@ -27,5 +28,7 @@
 
   "treasure" : {
     "pool" : "celebratorycache"
-  }
+  },
+
+  "builder" : "/items/buildscripts/thea-buildsealedcache.lua"
 }

@@ -1,12 +1,14 @@
 {
   "itemName" : "avikanuniquecache",
   "level" : 6,
+  "fixedLevel" : false,
   "price" : 1000,
   "maxStack" : 1,
   "rarity" : "Essential",
-  "tooltipKind" : "thea-unique",
   "description" : "A sealed cache containing a random Unique-quality item. Hold ^green;[LMB] ^white;to open!",
   "shortdescription" : "^orange;Unique Avikan Cache^white;",
+  "tooltipKind" : "thea-sealedcache-unique",
+  "category" : "Sealed Cache",
   "twoHanded" : true,
 
   "inventoryIcon" : "avikanuniquecacheicon.png",
@@ -27,5 +29,7 @@
 
   "treasure" : {
     "pool" : "uniqueweaponsAvikan"
-  }
+  },
+
+  "builder" : "/items/buildscripts/thea-buildsealedcache.lua"
 }

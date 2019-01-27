@@ -119,6 +119,15 @@
       "transformationGroups" : ["muzzle"],
       "offsetRegion" : [0, 0, 0, 0],
       "particles" : [ ]
+    },
+	"chargeparticles" : {
+	  "active" : false,
+      "emissionRate" : 9.0,
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [0.1, 0, 0.1, 0],
+      "particles" : [
+        { "particle" : "xanafiancharge"}
+      ]
     }
   },
 

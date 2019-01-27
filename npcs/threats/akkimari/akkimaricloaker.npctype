@@ -43,22 +43,20 @@
     }
   },
 
+  "matchColorIndices" : true,
   "items" : {
     "override" : [
       [0,
 	    [
           {
             "head" : [
-			  { "name" : "akkimari-skulkerhead" }
+			  { "name" : "akkimari-lurkerhead", "parameters" : { "colorIndex" : 9 } }
 			],
             "chest" : [
-			  { "name" : "akkimari-scavengerchest" },
-			  { "name" : "akkimari-scavengerchest2" }
+			  { "name" : "akkimari-tier2chest", "parameters" : { "colorIndex" : 9 } }
 			],
             "legs" : [
-			  { "name" : "akkimari-scavengerlegs" },
-			  { "name" : "akkimari-scavengerlegs2" },
-			  { "name" : "akkimari-scavengerlegs3" }
+			  { "name" : "akkimari-tier2legs", "parameters" : { "colorIndex" : 9 } }
 			],
             "primary" : [
 			  "akkimari-shakkar-npc"

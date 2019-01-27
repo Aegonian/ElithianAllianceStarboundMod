@@ -2,7 +2,7 @@
   "kind" : "magazinedrop-siegerunner",
   "definition" : {
     "type" : "textured",
-    "image" : "/animations/magazinedrops/magazinedrop-siegerunner.png",
+    "image" : "/particles/ammunition/siegerunner/magazinedrop-siegerunner.png",
     "fade" : 1.0,
     "destructionAction" : "shrink",
     "destructionTime" : 0.75,

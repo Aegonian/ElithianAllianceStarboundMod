@@ -49,8 +49,6 @@ function TheaLineBowShot:draw()
 	if self.drawPercentage == 1 then
 	  self.drawFrame = self.drawLevels
 	end
-	--world.debugText(self.drawPercentage, vec2.add(mcontroller.position(), {0,1}), "red")
-	--world.debugText(self.drawFrame, vec2.add(mcontroller.position(), {0,2}), "red")
 	--If at max charge level, alternate draw frames to animate the charge
 	if self.drawFrame == self.drawLevels then
 	  self.animationTimer = math.max(0, self.animationTimer - self.dt)
@@ -75,6 +73,13 @@ function TheaLineBowShot:draw()
 	  animator.playSound("fullyDrawnLoop", -1)
 	  self.wasFullyDrawn = true
 	end
+
+	--Optionally update the charge intake particles
+	if self.useChargeParticles and not self.wasFullyDrawn then
+	  self:updateChargeIntake(self.drawTime - self.drawTimer)
+	elseif self.useChargeParticles and self.wasFullyDrawn then
+	  activeItem.setScriptedAnimationParameter("particles", {})
+	end
 	
 	--Set the first lightning effect
 	local lightningCharge = self.lightningChargeLevels[self.drawFrame]
@@ -84,6 +89,11 @@ function TheaLineBowShot:draw()
     self:setLightning2(lightningCharge2[1], lightningCharge2[2], lightningCharge2[3], lightningCharge2[4], lightningCharge2[5], lightningCharge2[6], lightningCharge2[7])
 
     coroutine.yield()
+  end
+  
+  --Optionally reset the charge intake particles
+  if self.useChargeParticles then
+	activeItem.setScriptedAnimationParameter("particles", {})
   end
 
   self:setState(self.fire)
@@ -189,6 +199,39 @@ function TheaLineBowShot:setLightning2(amount, width, forks, displacement, color
   activeItem.setScriptedAnimationParameter("lightning2", lightning)
 end
 
+function TheaLineBowShot:updateChargeIntake(chargeTimeLeft)
+  --Update existing charge particles
+  for i,particle in ipairs(self.chargeParticles) do
+	particle.muzzlePosition = self:firePosition()
+	particle.lifeTime = particle.lifeTime - self.dt
+  end
+  
+  --If not yet at max particle count, add a new particle to the list
+  self.particleCooldown = math.max(0, self.particleCooldown - self.dt)
+  if self.particleCooldown == 0 and #self.chargeParticles < self.maxChargeParticles and chargeTimeLeft > self.particleLifetime then
+	local particle = {
+      muzzlePosition = self:firePosition(),
+      vector = vec2.rotate({self.maxParticleDistance, 0}, math.random() * (2 * math.pi)),
+	  lifeTime = self.particleLifetime,
+	  maxLifeTime = self.particleLifetime
+    }
+    table.insert(self.chargeParticles, particle)
+	
+	self.particleCooldown = self.timeBewteenParticles
+  end
+  
+  --Filter the existing particle list by particle lifetime to remove particles with negative lifetime
+  local newChargeParticles = {}
+  for i,particle in ipairs(self.chargeParticles) do	
+	if particle.lifeTime > 0 then
+	  newChargeParticles[#newChargeParticles+1] = particle
+	end
+  end
+  self.chargeParticles = newChargeParticles
+  
+  activeItem.setScriptedAnimationParameter("particles", self.chargeParticles)
+end
+
 function TheaLineBowShot:uninit()
   self:reset()
 end
@@ -202,4 +245,11 @@ function TheaLineBowShot:reset()
   activeItem.setScriptedAnimationParameter("lightning2", {})
   animator.setParticleEmitterActive("chargeparticles", false)
   self.wasFullyDrawn = false
+  
+  --Charge particle set-up
+  if self.useChargeParticles then
+	self.chargeParticles = {}
+	self.particleCooldown = 0
+	activeItem.setScriptedAnimationParameter("particles", {})
+  end
 end

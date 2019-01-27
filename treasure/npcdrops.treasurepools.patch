@@ -410,14 +410,32 @@
    ]
   },
   {"op" : "add",
+   "path" : "/akkimariSniperDeathTreasure",
+   "value" : [
+
+	[0, {
+      "pool" : [
+        {"weight" : 0.9, "pool" : "money"},
+		{"weight" : 0.05, "item" : "akkimari-achaari"},
+		{"weight" : 0.05, "pool" : "akkimariScrapMetal"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+   ]
+  },
+  {"op" : "add",
    "path" : "/akkimariCloakerDeathTreasure",
    "value" : [
 
 	[0, {
       "pool" : [
         {"weight" : 0.85, "pool" : "money"},
-		{"weight" : 0.05, "pool" : "akkimariWeapons"},
 		{"weight" : 0.05, "item" : "akkimari-shakkar"},
+		{"weight" : 0.05, "item" : "akkimari-lurkerhead"},
 		{"weight" : 0.05, "pool" : "akkimariScrapMetal"}
       ],
       "poolRounds" : [

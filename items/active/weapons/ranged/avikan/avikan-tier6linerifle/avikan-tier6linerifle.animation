@@ -126,11 +126,7 @@
       "transformationGroups" : ["muzzle"],
       "offsetRegion" : [0.1, -0.1, 0.1, -0.1],
       "particles" : [
-        { "particle" : "lineriflecharge"},
-		{ "particle" : "lineriflecharge"},
-		{ "particle" : "lineriflecharge"},
-		{ "particle" : "lineriflecharge"},
-		{ "particle" : "lineriflecharge"}
+        { "particle" : "lineriflecharge"}
       ]
     }
   },

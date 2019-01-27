@@ -1,8 +1,8 @@
 {
   "kind" : "lineriflecharge",
   "definition" : {
-    "type" : "animated",
-    "animation" : "/animations/lineriflecharge/lineriflecharge.animation",
+    "type" : "ember",
+    "color" : [0, 0, 0, 0],
     "position" : [0, 0],
     "approach" : [50, 50],
     "light" : [100, 65, 0],

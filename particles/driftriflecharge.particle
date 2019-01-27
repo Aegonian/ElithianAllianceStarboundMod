@@ -1,8 +1,8 @@
 {
   "kind" : "driftriflecharge",
   "definition" : {
-    "type" : "animated",
-    "animation" : "/animations/driftriflecharge/driftriflecharge.animation",
+    "type" : "ember",
+    "color" : [0, 0, 0, 0],
     "position" : [0, 0],
     "approach" : [50, 50],
     "light" : [0, 100, 10],

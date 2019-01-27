@@ -472,6 +472,12 @@
       "title" : "Breacher K-1",
       "description" : "A high-power railgun capable of firing through solid walls.",
       "icon" : "/items/active/weapons/ranged/unique/breacher/thea-breacher.png"
+    },
+	"akkimari-achaari" : {
+      "order" : 77,
+      "title" : "Achaari Adviser",
+      "description" : "An accurate driftrifle equipped with a lightweight disposable magazine.",
+      "icon" : "/items/active/weapons/ranged/unique/achaari/akkimari-achaariicon.png"
     }
   }
 }

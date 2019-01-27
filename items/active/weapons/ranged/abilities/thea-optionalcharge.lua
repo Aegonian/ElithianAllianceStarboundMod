@@ -54,6 +54,7 @@ function TheaOptionalCharge:charge()
 
   animator.playSound("chargeLoop", -1)
   animator.setAnimationState("charge", "charging")
+  animator.setParticleEmitterActive("chargeparticles", true)
   
   --While charging, but not yet ready, count down the charge timer
   while self.chargeTimer > 0 and self.fireMode == (self.activatingFireMode or self.abilitySlot) and not world.lineTileCollision(mcontroller.position(), self:firePosition()) do
@@ -66,6 +67,11 @@ function TheaOptionalCharge:charge()
 	if self.walkWhileFiring == true then
       mcontroller.controlModifiers({runningSuppressed=true})
 	end
+
+	--Optionally update the charge intake particles
+	if self.useChargeParticles then
+	  self:updateChargeIntake(self.chargeTimer)
+	end
 	
 	--Calculate how far into the charge we are. Do 1 - X because we count from 1 to 0, not 0 to 1
 	local chargePercentage = 1 - (self.chargeTimer / self.chargeTime)
@@ -73,6 +79,11 @@ function TheaOptionalCharge:charge()
 	self.chargeLevel = self:setChargeLevel(chargePercentage, self.chargeLevel)
 
     coroutine.yield()
+  end
+  
+  --Optionally reset the charge intake particles
+  if self.useChargeParticles then
+	activeItem.setScriptedAnimationParameter("particles", {})
   end
   
   --If the charge is ready, we have line of sight and plenty of energy, go to firing state
@@ -98,6 +109,7 @@ function TheaOptionalCharge:fire()
   
   animator.stopAllSounds("chargeLoop")
   animator.setAnimationState("charge", "off")
+  animator.setParticleEmitterActive("chargeparticles", false)
   
   self.chargeHasStarted = false
   
@@ -263,12 +275,46 @@ function TheaOptionalCharge:damagePerShotWeak()
   return self.baseDamage * (self.baseDamageMultiplier or 1.0) * config.getParameter("damageLevelMultiplier") / self.projectileCount
 end
 
+function TheaOptionalCharge:updateChargeIntake(chargeTimeLeft)  
+  --Update existing charge particles
+  for i,particle in ipairs(self.chargeParticles) do
+	particle.muzzlePosition = self:firePosition()
+	particle.lifeTime = particle.lifeTime - self.dt
+  end
+  
+  --If not yet at max particle count, add a new particle to the list
+  self.particleCooldown = math.max(0, self.particleCooldown - self.dt)
+  if self.particleCooldown == 0 and #self.chargeParticles < self.maxChargeParticles and chargeTimeLeft > self.particleLifetime then
+	local particle = {
+      muzzlePosition = self:firePosition(),
+      vector = vec2.rotate({self.maxParticleDistance, 0}, math.random() * (2 * math.pi)),
+	  lifeTime = self.particleLifetime,
+	  maxLifeTime = self.particleLifetime
+    }
+    table.insert(self.chargeParticles, particle)
+	
+	self.particleCooldown = self.timeBewteenParticles
+  end
+  
+  --Filter the existing particle list by particle lifetime to remove particles with negative lifetime
+  local newChargeParticles = {}
+  for i,particle in ipairs(self.chargeParticles) do	
+	if particle.lifeTime > 0 then
+	  newChargeParticles[#newChargeParticles+1] = particle
+	end
+  end
+  self.chargeParticles = newChargeParticles
+  
+  activeItem.setScriptedAnimationParameter("particles", self.chargeParticles)
+end
+
 function TheaOptionalCharge:uninit()
   self:reset()
 end
 
 function TheaOptionalCharge:reset()
   animator.setAnimationState("charge", "off")
+  animator.setParticleEmitterActive("chargeparticles", false)
   
   --Reset the lightning charge level
   self.chargeLevel = 0
@@ -277,4 +323,11 @@ function TheaOptionalCharge:reset()
   self.chargeHasStarted = false
   self.chargeIsReady = false
   self.weapon:setStance(self.stances.idle)
+  
+  --Charge particle set-up
+  if self.useChargeParticles then
+	self.chargeParticles = {}
+	self.particleCooldown = 0
+	activeItem.setScriptedAnimationParameter("particles", {})
+  end
 end

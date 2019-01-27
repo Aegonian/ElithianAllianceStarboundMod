@@ -64,6 +64,11 @@ function TheaLineRifleSwarmFire:charge()
 
 	--Prevent energy regen while charging
 	status.setResourcePercentage("energyRegenBlock", 0.6)
+
+	--Optionally update the charge intake particles
+	if self.useChargeParticles then
+	  self:updateChargeIntake(self.chargeTimer)
+	end
 	
 	--Enable walk while firing
 	if self.walkWhileFiring == true then
@@ -76,6 +81,11 @@ function TheaLineRifleSwarmFire:charge()
 	self.chargeLevel = self:setChargeLevel(chargePercentage, self.chargeLevel)
 	
     coroutine.yield()
+  end
+  
+  --Optionally reset the charge intake particles
+  if self.useChargeParticles then
+	activeItem.setScriptedAnimationParameter("particles", {})
   end
   
   --If the charge is ready, we have line of sight and plenty of energy, go to firing state
@@ -245,6 +255,39 @@ function TheaLineRifleSwarmFire:damagePerShot()
   return self.baseDamage * (self.baseDamageMultiplier or 1.0) * config.getParameter("damageLevelMultiplier") / self.projectileCount
 end
 
+function TheaLineRifleSwarmFire:updateChargeIntake(chargeTimeLeft)  
+  --Update existing charge particles
+  for i,particle in ipairs(self.chargeParticles) do
+	particle.muzzlePosition = self:firePosition()
+	particle.lifeTime = particle.lifeTime - self.dt
+  end
+  
+  --If not yet at max particle count, add a new particle to the list
+  self.particleCooldown = math.max(0, self.particleCooldown - self.dt)
+  if self.particleCooldown == 0 and #self.chargeParticles < self.maxChargeParticles and chargeTimeLeft > self.particleLifetime then
+	local particle = {
+      muzzlePosition = self:firePosition(),
+      vector = vec2.rotate({self.maxParticleDistance, 0}, math.random() * (2 * math.pi)),
+	  lifeTime = self.particleLifetime,
+	  maxLifeTime = self.particleLifetime
+    }
+    table.insert(self.chargeParticles, particle)
+	
+	self.particleCooldown = self.timeBewteenParticles
+  end
+  
+  --Filter the existing particle list by particle lifetime to remove particles with negative lifetime
+  local newChargeParticles = {}
+  for i,particle in ipairs(self.chargeParticles) do	
+	if particle.lifeTime > 0 then
+	  newChargeParticles[#newChargeParticles+1] = particle
+	end
+  end
+  self.chargeParticles = newChargeParticles
+  
+  activeItem.setScriptedAnimationParameter("particles", self.chargeParticles)
+end
+
 function TheaLineRifleSwarmFire:uninit()
   self:reset()
 end
@@ -259,4 +302,11 @@ function TheaLineRifleSwarmFire:reset()
   activeItem.setScriptedAnimationParameter("lightning", {})
   self.chargeHasStarted = false
   self.weapon:setStance(self.stances.idle)
+  
+  --Charge particle set-up
+  if self.useChargeParticles then
+	self.chargeParticles = {}
+	self.particleCooldown = 0
+	activeItem.setScriptedAnimationParameter("particles", {})
+  end
 end

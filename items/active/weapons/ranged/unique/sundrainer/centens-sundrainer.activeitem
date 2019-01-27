@@ -56,9 +56,17 @@
 	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
     }
   },
+  "animationScripts" : ["/items/active/effects/thea-chargeintake.lua"],
+  "scriptedAnimationParameters" : {
+    "particleConfig" : {
+	  "image" : "/particles/chargeintake/jumpfireintake.png",
+	  "scale" : 1.75,
+	  "fullbright" : true
+	}
+  },
 
   "baseOffset" : [1.1, 0.1],
-  "muzzleOffset" : [2.0, 0.0],
+  "muzzleOffset" : [1.875, 0.125],
 
   "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
 
@@ -82,6 +90,13 @@
 	"projectileParameters" : {
       "knockback" : 20
     },
+	
+	//CHARGE PARTICLE CONFIGURATION
+	"useChargeParticles" : true,
+	"maxChargeParticles" : 18,
+	"particleLifetime" : 0.8,
+	"timeBewteenParticles" : 0.05,
+	"maxParticleDistance" : 2.5,
 
     "stances" : {
       "idle" : {

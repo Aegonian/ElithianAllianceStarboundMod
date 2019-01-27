@@ -1,11 +1,14 @@
 {
   "itemName" : "alliancecache",
   "level" : 1,
+  "fixedLevel" : false,
   "price" : 250,
   "maxStack" : 1,
   "rarity" : "legendary",
   "description" : "A sealed cache containing something of value. Hold ^green;[LMB] ^white;to open!",
   "shortdescription" : "Sealed Alliance Cache",
+  "tooltipKind" : "thea-sealedcache",
+  "category" : "Sealed Cache",
   "twoHanded" : true,
 
   "inventoryIcon" : "alliancecacheicon.png",
@@ -27,7 +30,6 @@
   "treasure" : {
     "pool" : "allianceTreasurebox"
   },
-  
-  //Makes the treasure's level depend on the threatLevel of the world the item is first used on
-  "useWorldLevel" : true
+
+  "builder" : "/items/buildscripts/thea-buildsealedcache.lua"
 }

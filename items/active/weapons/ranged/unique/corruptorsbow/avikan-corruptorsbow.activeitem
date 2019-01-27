@@ -74,7 +74,14 @@
 	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
     }
   },
-  "animationScripts" : ["/items/active/effects/lightning.lua"],
+  "animationScripts" : [ "/items/active/effects/thea-lightning-chargeintake.lua" ],
+  "scriptedAnimationParameters" : {
+    "particleConfig" : {
+	  "image" : "/particles/chargeintake/violatedintake.png",
+	  "scale" : 1.0,
+	  "fullbright" : true
+	}
+  },
 
   "baseOffset" : [1.2, 0.25],
   "muzzleOffset" : [1.8, 0.25],
@@ -118,6 +125,13 @@
 	"projectileParameters" : {
       "knockback" : 10
     },
+	
+	//CHARGE PARTICLE CONFIGURATION
+	"useChargeParticles" : true,
+	"maxChargeParticles" : 4,
+	"particleLifetime" : 0.15,
+	"timeBewteenParticles" : 0.05,
+	"maxParticleDistance" : 1.5,
 
     "stances" : {
       "idle" : {
@@ -191,6 +205,13 @@
 	"projectileParameters" : {
       "knockback" : 10
     },
+	
+	//CHARGE PARTICLE CONFIGURATION
+	"useChargeParticles" : true,
+	"maxChargeParticles" : 4,
+	"particleLifetime" : 0.15,
+	"timeBewteenParticles" : 0.05,
+	"maxParticleDistance" : 1.5,
 	
 	"cooldownTime" : 0.5,
 	

@@ -47,7 +47,14 @@
 	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
     }
   },
-  "animationScripts" : ["/items/active/effects/thea-doublelightning.lua"],
+  "animationScripts" : ["/items/active/effects/thea-doublelightning-chargeintake.lua"],
+  "scriptedAnimationParameters" : {
+    "particleConfig" : {
+	  "image" : "/particles/chargeintake/linechargeintake.png",
+	  "scale" : 1.5,
+	  "fullbright" : true
+	}
+  },
   
   "muzzleOffset" : [1.125, 0.125],
 
@@ -100,6 +107,13 @@
     "projectileParameters" : {
 	  "knockback" : 8
 	},
+	
+	//CHARGE PARTICLE CONFIGURATION
+	"useChargeParticles" : true,
+	"maxChargeParticles" : 8,
+	"particleLifetime" : 0.3,
+	"timeBewteenParticles" : 0.05,
+	"maxParticleDistance" : 1.25,
 
     "stances" : {
       "idle" : {
@@ -176,6 +190,13 @@
     "projectileParameters" : {
 	  "knockback" : 8
 	},
+	
+	//CHARGE PARTICLE CONFIGURATION
+	"useChargeParticles" : true,
+	"maxChargeParticles" : 8,
+	"particleLifetime" : 0.4,
+	"timeBewteenParticles" : 0.05,
+	"maxParticleDistance" : 1.75,
 
     "stances" : {
       "idle" : {
