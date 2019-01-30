@@ -119,7 +119,7 @@
           "centered" : true,
           "zLevel" : 1,
           "transformationGroups" : ["flip", "rotation"],
-          "drivingSeatPosition" : [0, 1.3]
+          "drivingSeatPosition" : [-0.625, 1.375]
         },
         "partStates" : {
           "movement" : {
@@ -130,17 +130,17 @@
             },
             "warpInPart2" : {
               "properties" : {
-                "image" : "avikankeffforeground.png:move.<damageState>"
+                "image" : "alliancehoverbikeforeground.png:move.<damageState>"
               }
             },
             "idle" : {
               "properties" : {
-                "image" : "avikankeffforeground.png:move.<damageState>"
+                "image" : "alliancehoverbikeforeground.png:move.<damageState>"
               }
             },
             "warpOutPart1" : {
               "properties" : {
-                "image" : "avikankeffforeground.png:move.<damageState>"
+                "image" : "alliancehoverbikeforeground.png:move.<damageState>"
               }
             },
             "warpOutPart2" : {
@@ -167,17 +167,17 @@
             },
             "warpInPart2" : {
               "properties" : {
-                "image" : "avikankeffbackground.png:move.<damageState>"
+                "image" : "alliancehoverbikebackground.png:move.<damageState>"
               }
             },
             "idle" : {
               "properties" : {
-                "image" : "avikankeffbackground.png:move.<damageState>"
+                "image" : "alliancehoverbikebackground.png:move.<damageState>"
               }
             },
             "warpOutPart1" : {
               "properties" : {
-                "image" : "avikankeffbackground.png:move.<damageState>"
+                "image" : "alliancehoverbikebackground.png:move.<damageState>"
               }
             },
             "warpOutPart2" : {
@@ -206,7 +206,7 @@
             },
             "on" : {
               "properties" : {
-                "image" : "avikankeffheadlights.png:headlights.<damageState>",
+                "image" : "alliancehoverbikeheadlights.png:headlights.<damageState>",
                 "offset" : [0.0, 0.0]
               }
             }
@@ -226,7 +226,7 @@
           "onFire" : {
             "on" : {
               "properties" : {
-                "image" : "avikankefffire.png:burn.<frame>"
+                "image" : "alliancehoverbikefire.png:burn.<frame>"
               }
             }
           }
@@ -245,12 +245,12 @@
           "movement" : {
             "warpInPart1" : {
               "properties" : {
-                "image" : "avikankeffwarp.png:warpInPart1.<frame>"
+                "image" : "alliancehoverbikewarp.png:warpInPart1.<frame>"
               }
             },
             "warpInPart2" : {
               "properties" : {
-                "image" : "avikankeffwarp.png:warpInPart2.<frame>"
+                "image" : "alliancehoverbikewarp.png:warpInPart2.<frame>"
               }
             },
             "idle" : {
@@ -258,12 +258,12 @@
             },
             "warpOutPart1" : {
               "properties" : {
-                "image" : "avikankeffwarp.png:warpOutPart1.<frame>"
+                "image" : "alliancehoverbikewarp.png:warpOutPart1.<frame>"
               }
             },
             "warpOutPart2" : {
               "properties" : {
-                "image" : "avikankeffwarp.png:warpOutPart2.<frame>"
+                "image" : "alliancehoverbikewarp.png:warpOutPart2.<frame>"
               }
             },
             "invisible" : {
@@ -277,21 +277,20 @@
       "rearThrust" : {
         "properties" : {
           "centered" : true,
-          "zLevel" : -1,
+          "zLevel" : 2,
           "fullbright" : true,
-          "light" : [87, 148, 150],
           "transformationGroups" : ["flip", "rotation"]
         },
         "partStates" : {
           "rearThruster" : {
             "active" : {
               "properties" : {
-                "image" : "avikankeffthrusters.png:rear.active.<rearThrusterFrame>"
+                "image" : "alliancehoverbikethrusters.png:rear.active.<rearThrusterFrame>"
               }
             },
             "idle" : {
               "properties" : {
-                "image" : "avikankeffthrusters.png:rear.idle.<rearThrusterFrame>"
+                "image" : "alliancehoverbikethrusters.png:rear.idle.<rearThrusterFrame>"
               }
             }
           }
@@ -300,21 +299,20 @@
       "bottomThrust" : {
         "properties" : {
           "centered" : true,
-          "zLevel" : -1,
+          "zLevel" : 2,
           "fullbright" : true,
-          "light" : [87, 148, 150],
           "transformationGroups" : ["flip", "rotation"]
         },
         "partStates" : {
           "bottomThruster" : {
             "active" : {
               "properties" : {
-                "image" : "avikankeffthrusters.png:bottom.active.<bottomThrusterFrame>"
+                "image" : "alliancehoverbikethrusters.png:bottom.active.<bottomThrusterFrame>"
               }
             },
             "idle" : {
               "properties" : {
-                "image" : "avikankeffthrusters.png:bottom.idle.<bottomThrusterFrame>"
+                "image" : "alliancehoverbikethrusters.png:bottom.idle.<bottomThrusterFrame>"
               }
             }
           }
@@ -335,7 +333,7 @@
     "rearThrusterIdle" : {
       "transformationGroups" : ["flip", "rotation"],
       "emissionRate" : 5.0,
-      "offsetRegion" : [-2.0, -0.75, -2.0, -0.25],
+      "offsetRegion" : [-2.0, -0.875, -2.0, -0.325],
       "particles" : [
 		{ "particle" : "thea-hoverbikethrust"}
 	  ]
@@ -343,7 +341,7 @@
     "rearThrusterActive" : {
       "transformationGroups" : ["flip", "rotation"],
       "emissionRate" : 15.0,
-      "offsetRegion" : [-2.5, -1.0, -2.5, 0.0],
+      "offsetRegion" : [-2.0, -0.875, -2.0, -0.325],
       "particles" : [
 		{ "particle" : "thea-hoverbikethrust" }
 	  ]
@@ -351,7 +349,7 @@
     "bottomThrusterIdle" : {
       "transformationGroups" : ["flip", "rotation"],
       "emissionRate" : 5.0,
-      "offsetRegion" : [1.5, -1.25, 2.5, -1.25],
+      "offsetRegion" : [-1.25, -1.0, -2.25, -1.0],
       "particles" : [
 		{ "particle" : "thea-hoverbikedownthrust" }
 	  ]
@@ -359,7 +357,7 @@
     "bottomThrusterActive" : {
       "transformationGroups" : ["flip", "rotation"],
       "emissionRate" : 15.0,
-      "offsetRegion" : [1.5, -1.25, 2.5, -1.25],
+      "offsetRegion" : [-1.25, -1.0, -2.25, -1.0],
       "particles" : [
 		{ "particle" : "thea-hoverbikedownthrustnarrow" }
 	  ]
@@ -372,7 +370,7 @@
 	  "burstCount"  : 25,
 	  "offsetRegion" : [-2, -1.5, 3, 1],
 	  "particles" : [
-		{ "particle" : "avikankeffshard" },
+		{ "particle" : "allianceshuttleshard" },
 		{ "particle" : "thea-burningfullbright" }
 	  ]
 	},
@@ -381,17 +379,17 @@
 	  "active" : false,
 	  "emissionRate" : 0.0,
 	  "particles" : [
-		{ "particle" : "avikankeffwreck1" },
-		{ "particle" : "avikankeffwreck2" },
-		{ "particle" : "avikankeffwreck3" },
-		{ "particle" : "avikankeffwreck4" }
+		{ "particle" : "alliancehoverbikewreck1" },
+		{ "particle" : "alliancehoverbikewreck2" },
+		{ "particle" : "alliancehoverbikewreck3" },
+		{ "particle" : "alliancehoverbikewreck4" }
 	  ]
 	},
     "damageIntermittent" : {
       "transformationGroups" : ["flip", "rotation"],
       "emissionRate" : 0.0,
       "burstCount"  : 4,
-      "offsetRegion" : [2, 0, 3, 0.75],
+      "offsetRegion" : [-1.25, -0.625, -1.625, -0.25],
       "particles" : [
 		{ "particle" : "burningvehiclesmokefront" },
 		{ "particle" : "thea-burningfullbright" }
@@ -400,7 +398,7 @@
     "smoke" : {
       "transformationGroups" : ["flip", "rotation"],
       "emissionRate" : 0.0,
-      "offsetRegion" : [0.6, 0.3, 1.0, 0.75],
+      "offsetRegion" : [1.75, 0.25, 2.25, 0.5],
       "particles" : [
 		{ "particle" : "burningvehiclesmokefront" }
 	  ]
@@ -408,7 +406,7 @@
     "fire" : {
       "transformationGroups" : ["flip", "rotation"],
       "emissionRate" : 0.0,
-      "offsetRegion" : [2, 0, 3, 0.75],
+      "offsetRegion" : [-0.875, -0.25, -1.0, 0.0],
       "particles" : [
 		{ "particle" : "campfireflames" },
 		{ "particle" : "thea-burningfullbright" },
@@ -419,7 +417,7 @@
       "transformationGroups" : ["flip", "rotation"],
 	  "active" : false,
       "emissionRate" : 6.0,
-      "offsetRegion" : [4.0, 0, 4.0, 0.5],
+      "offsetRegion" : [-1.25, -0.625, -1.625, -0.25],
       "particles" : [
 		{ "particle" : "thea-burningfullbright" },
 		{ "particle" : "campfireflames" }
@@ -432,14 +430,14 @@
       "active" : false,
       "transformationGroups" : ["flip", "rotation"],
       "position" : [0.5, 1.0],
-      "color" : [60, 40, 0],
+      "color" : [20, 20, 50],
       "pointLight" : false
     },
     "headlightBeam" : {
       "active" : false,
       "transformationGroups" : ["flip", "rotation"],
-      "position" : [4.0, -0.5],
-      "color" : [250, 250, 200],
+      "position" : [1.75, -0.125],
+      "color" : [250, 250, 250],
       "pointLight" : true,
       "pointAngle" : -5,
       "pointBeam" : 5
@@ -482,6 +480,8 @@
 	"horn" : [ "/sfx/tech/honk.ogg" ],
 	"headlightSwitchOn" : [ "/sfx/objects/floodlights_on.ogg" ],
 	"headlightSwitchOff" : [ "/sfx/objects/floodlights_off.ogg" ],
+	"hoverJumpActivate" : [ "/sfx/tech/thea_hoverbike_hoverjump.ogg" ],
+	"hoverJumpOverheat" : [ "/sfx/interface/nav_insufficient_fuel.ogg" ],
 	
 	//VEHICLE DESPAWN
 	"returnvehicle" : [ "/sfx/tools/teleport_up.ogg" ],

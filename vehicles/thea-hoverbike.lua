@@ -21,12 +21,16 @@ function init()
   --Speed settings
   self.targetHorizontalVelocity = config.getParameter("targetHorizontalVelocity")	--Horizontal movement speed of the vehicle
   self.horizontalControlForce = config.getParameter("horizontalControlForce")		--Acceleration of the vehicle's horizontal movement
-  --Jump settings
-  self.nearGroundDistance = config.getParameter("nearGroundDistance")			--Max distance from the ground from which jumping is enabled
-  self.jumpVelocity = config.getParameter("jumpVelocity")						--Velocity on the Y axis of the vehicle's jump function
-  self.jumpVelocityZeroG = config.getParameter("jumpVelocityZeroG")				--Velocity on the Y axis of the vehicle's jump function while in zero-G
-  self.jumpTimeout = config.getParameter("jumpTimeout")							--Time between jumps
-  self.jumpTimeoutZeroG = config.getParameter("jumpTimeoutZeroG")				--Time between jumps while in zero-G
+  --Jump ability settings
+  self.nearGroundDistance = config.getParameter("nearGroundDistance", 0)		--Max distance from the ground from which jumping is enabled
+  self.jumpVelocity = config.getParameter("jumpVelocity", 0)					--Velocity on the Y axis of the vehicle's jump function
+  self.jumpVelocityZeroG = config.getParameter("jumpVelocityZeroG", 0)			--Velocity on the Y axis of the vehicle's jump function while in zero-G
+  self.jumpTimeout = config.getParameter("jumpTimeout", 0)						--Time between jumps
+  self.jumpTimeoutZeroG = config.getParameter("jumpTimeoutZeroG", 0)			--Time between jumps while in zero-G
+  self.maxJumpTime = config.getParameter("maxJumpTime", 0)						--Maximum time that the vehicle can hover upwards for
+  self.jumpRecoveryTime = config.getParameter("jumpRecoveryTime", 0)			--How long it takes for the hover jump ability to start recharging
+  self.nearGroundRecoveryMultiplier = config.getParameter("nearGroundRecoveryMultiplier", 0)	--How much faster the jump timer should regenerate while near the ground
+  self.jumpControlForce = config.getParameter("jumpControlForce", 0)			--How much force to use to approach the hover jump velocity
   --Ground check positions settings
   self.backSpringPositions = config.getParameter("backSpringPositions")			--Back ground check positions
   self.frontSpringPositions = config.getParameter("frontSpringPositions")		--Front ground check positions
@@ -72,6 +76,7 @@ function init()
   --Ability control types
   self.primaryControlType = config.getParameter("primaryControlType", "none")	--Which ability to activate when holding primaryFire
   self.altControlType = config.getParameter("altControlType", "none")			--Which ability to activate when holding altFire
+  self.jumpControlType = config.getParameter("jumpControlType", "none")			--Which ability to activate when holding jump
   
   --STARTING STATS
   --Misc
@@ -91,6 +96,9 @@ function init()
   self.angle = 0
   --Ability cooldowns
   self.jumpTimer = 0
+  self.jumpRecoveryTimer = 0
+  self.hoverJumpLocked = false
+  self.isHoverJumping = false
   self.headlightCanToggle = true
   self.headlightsOn = false
   --Engine and horn sounds
@@ -113,6 +121,9 @@ function init()
   animator.setAnimationState("bottomThruster", "off")
   if self.primaryControlType == "headLights" then
 	animator.setAnimationState("headlights", "off")
+	for i, light in ipairs(config.getParameter("lightsInDamageState")[1]) do
+	  animator.setLightActive(light, false)
+	end 
   end
   
   --OWNER KEY
@@ -217,6 +228,7 @@ function update()
   --world.debugText(mcontroller.liquidPercentage(), mcontroller.position(), "red")
   --world.debugText(math.floor(mcontroller.xVelocity()), mcontroller.position(), "red")
   --world.debugText(sb.printJson(self.allowLiquidHover), mcontroller.position(), "red")
+  world.debugText(sb.printJson(self.jumpTimer), mcontroller.position(), "red")
 end
 
 --============================================================================================================
@@ -387,8 +399,8 @@ function move()
 	  self.maxAngle = config.getParameter("maxAngle") * math.pi / 180
 	end
 	
-	--If too close to the ground, push the vehicle up
-	if groundDistance <= self.hoverTargetDistance then
+	--If too close to the ground, push the vehicle up (but not if we are attempting a hover jump ability)
+	if groundDistance <= self.hoverTargetDistance and not (self.jumpControlType == "hover" and vehicle.controlHeld("drivingSeat", "jump")) then
       mcontroller.approachYVelocity((self.hoverTargetDistance - groundDistance) * self.hoverVelocityFactor, self.hoverControlForce)
     end
   end
@@ -468,22 +480,80 @@ function move()
   end
 
   --JUMP MOVEMENT CONTROL
-  if nearGround or self.zeroG then
-    if self.jumpTimer <= 0 and vehicle.controlHeld("drivingSeat", "jump") then
-      if self.zeroG then
-		mcontroller.setYVelocity(self.jumpVelocityZeroG)
-      self.jumpTimer = self.jumpTimeoutZeroG
+  --Basic jumping ability. Sets vehicle Y velocity to [self.jumpVelocity] if activated near the ground or in space
+  if self.jumpControlType == "jump" then
+	--If near the ground or in zero G, make the vehicle jump
+	if nearGround or self.zeroG then
+	  if self.jumpTimer == 0 and vehicle.controlHeld("drivingSeat", "jump") then
+		if self.zeroG then
+		  mcontroller.setYVelocity(self.jumpVelocityZeroG)
+		self.jumpTimer = self.jumpTimeoutZeroG
+		else
+		  mcontroller.setYVelocity(self.jumpVelocity)
+		self.jumpTimer = self.jumpTimeout
+		end
+		self.revEngine = true --Rev the engine so that the ventral thruster activates
+		self.engineRevTimer = 0.35
 	  else
-		mcontroller.setYVelocity(self.jumpVelocity)
-      self.jumpTimer = self.jumpTimeout
+		self.jumpTimer = math.max(0, self.jumpTimer - script.updateDt())
 	  end
-      self.revEngine = true --Rev the engine so that the ventral thruster activates
-	  self.engineRevTimer = 0.35
-    else
-      self.jumpTimer = self.jumpTimer - script.updateDt()
-    end
-  else
-    self.jumpTimer = self.jumpTimeout
+	else
+	  self.jumpTimer = self.jumpTimeout
+	end
+	
+  --Hover jumping ability. Moves the vehicle upwards while [jump] is held down, with an internal cooldown to prevent over-use
+  elseif self.jumpControlType == "hover" then
+	--If jumping isn't locked and we have jump time left, move the vehicle up and count up the jump timer
+	if self.jumpTimer < self.maxJumpTime and vehicle.controlHeld("drivingSeat", "jump") and not self.hoverJumpLocked then
+	  if not self.isHoverJumping then
+		self.isHoverJumping = true
+		if animator.hasSound("hoverJumpActivate") then
+		  animator.playSound("hoverJumpActivate")
+		end
+	  end
+	  
+	  if self.zeroG then
+		mcontroller.approachYVelocity(self.jumpVelocityZeroG, self.jumpControlForce)
+	  else
+		mcontroller.approachYVelocity(self.jumpVelocity, self.jumpControlForce)
+	  end
+	  
+	  --If not in zero-G movement state, count up the jump timer
+	  if not self.zeroG then
+		self.jumpTimer = math.min(self.maxJumpTime, self.jumpTimer + script.updateDt())
+		self.jumpRecoveryTimer = self.jumpRecoveryTime
+	  end
+	  self.revEngine = true --Rev the engine so that the ventral thruster activates
+	  self.engineRevTimer = 0.25
+	  
+	  if self.jumpTimer == self.maxJumpTime then
+		self.hoverJumpLocked = true
+		if animator.hasSound("hoverJumpOverheat") then
+		  animator.playSound("hoverJumpOverheat")
+		end
+	  end
+	else	  
+	  --If the hover jump was previously locked, unlock it if we come near the ground
+	  if nearGround then
+		if self.hoverJumpLocked then
+		  self.hoverJumpLocked = false
+		end
+	  end
+	  
+	  if self.engineRevTimer == 0 then
+		self.isHoverJumping = false
+	  end
+	  
+	  --Count down the recovery and jump timers
+	  self.jumpRecoveryTimer = math.max(0, self.jumpRecoveryTimer - script.updateDt())
+	  if self.jumpRecoveryTimer == 0 then
+		if nearGround then
+		  self.jumpTimer = math.max(0, self.jumpTimer - (script.updateDt() * self.nearGroundRecoveryMultiplier))
+		else
+		  self.jumpTimer = math.max(0, self.jumpTimer - script.updateDt())
+		end
+	  end
+	end
   end
 end
 
@@ -612,60 +682,48 @@ function updateDriveEffects(healthFactor, driverThisFrame)
 
   --Reset the animation frames for thrusters
   local rearThrusterFrame = 0
-  local ventralThrusterFrame = 0
+  local bottomThrusterFrame = 0
 
-  --If the engine loop sound is playing, animate the thrusters and control the engine loop sound volume and pitch
+  --If the engine loop sound is playing, the engine is active so animate the thrusters and control the engine loop sound volume and pitch now
   if self.loopPlaying ~= nil then
-    if (self.engineVolume == self.engineIdleVolume) then
-      animator.setParticleEmitterActive("rearThrusterIdle", true)
-      animator.setParticleEmitterActive("rearThrusterDrive", false)
-    else
-      animator.setParticleEmitterActive("rearThrusterIdle", false)
-      animator.setParticleEmitterActive("rearThrusterDrive", true)
-      rearThrusterFrame = 3
-    end
-
-    --If the engine is being revved, briefly animate the ventral thrusters to max
+    --If the engine is being revved, briefly animate all thrusters to max
     if self.revEngine then
       animator.setSoundPitch(self.loopPlaying, self.engineRevPitch, self.engineRevTimer)
       animator.setSoundVolume(self.loopPlaying, self.engineRevVolume, self.engineRevTimer)
 
-      animator.setParticleEmitterActive("ventralThrusterIdle", false)
-      animator.setParticleEmitterActive("ventralThrusterJump", true)
-      animator.burstParticleEmitter("ventralThrusterJump")
-      ventralThrusterFrame = 3
+	  --Animate the thrusters to max
+	  animator.setAnimationState("rearThruster", "active")
+	  animator.setAnimationState("bottomThruster", "active")
 
       self.revEngine = false
-    else
+	  
+    --If the engine is not being revved, calm down bottom thrusters and animate rear thrusters according to movement input
+	else	  
+	  --Check engine volume to see if we are driving or idle
+	  if self.engineVolume == self.engineIdleVolume then
+		animator.setAnimationState("rearThruster", "idle")
+	  else
+		animator.setAnimationState("rearThruster", "active")
+	  end
+	  
       --Continue revving the engine for a brief time after activating the revving
 	  if self.engineRevTimer > 0  then
         self.engineRevTimer = math.max(0, self.engineRevTimer - script.updateDt())
-        ventralThrusterFrame = 3
+		animator.setAnimationState("bottomThruster", "active")
       --When no longer revving, revert thrusters and sounds to normal
 	  else
-        animator.setParticleEmitterActive("ventralThrusterIdle", true)
-        animator.setParticleEmitterActive("ventralThrusterJump", false)
-
+		animator.setAnimationState("bottomThruster", "idle")
         animator.setSoundPitch(self.loopPlaying, self.enginePitch, 1.5)
         animator.setSoundVolume(self.loopPlaying, self.engineVolume, 1.5)
       end
     end
 
-	--Activate the animations for the rear and bottom thrusters
-    animator.setAnimationState("rearThruster", "on")
-    animator.setAnimationState("bottomThruster", "on")
-
-  --If the engine loop sound isn't playing and the engine is turned off, stop thruster animations and particle effects
+  --If the engine loop sound isn't playing and the engine is turned off, stop all thruster animations
   else
-    animator.setParticleEmitterActive("rearThrusterIdle", false)
-    animator.setParticleEmitterActive("rearThrusterDrive", false)
-    animator.setParticleEmitterActive("ventralThrusterIdle", false)
-    animator.setParticleEmitterActive("ventralThrusterJump", false)
-
     animator.setAnimationState("rearThruster", "off")
     animator.setAnimationState("bottomThruster", "off")
   end
-
+		
   --If health is below the burning threshold, play burning sounds and make the vehicle jump randomly
   if (self.loopPlaying ~= nil or (self.onFireThreshold and healthFactor < self.onFireThreshold)) then
     --If the vehicle's health is below the intermittent damageSound threshold, enable timed damage bursts
@@ -697,8 +755,8 @@ function updateDriveEffects(healthFactor, driverThisFrame)
   animator.setGlobalTag("rearThrusterFrame", rearThrusterFrame)
   
   --Randomly select a bottom thruster frame to play
-  ventralThrusterFrame = ventralThrusterFrame + math.random(3)
-  animator.setGlobalTag("bottomThrusterFrame", ventralThrusterFrame)
+  bottomThrusterFrame = bottomThrusterFrame + math.random(3)
+  animator.setGlobalTag("bottomThrusterFrame", bottomThrusterFrame)
 end
 
 --Call this function to make the driver and passengers start playing their damage taken emotes

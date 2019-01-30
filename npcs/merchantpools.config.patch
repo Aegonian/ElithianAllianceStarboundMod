@@ -563,7 +563,8 @@
 			  { "item": { "name": "alliancehovercarbluecontroller" }, "rarity": 0.5 },
 			  { "item": { "name": "alliancehovercarredcontroller" }, "rarity": 0.5 },
 			  { "item": { "name": "allianceshuttlecontroller" }, "rarity": 0.5 },
-			  { "item": { "name": "alliancedronecontroller" }, "rarity": 0.5 }
+			  { "item": { "name": "alliancedronecontroller" }, "rarity": 0.5 },
+			  { "item": { "name": "alliancehoverbikecontroller" }, "rarity": 0.5 }
 			] ]
 		]
 	},

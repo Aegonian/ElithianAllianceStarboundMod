@@ -1,0 +1,45 @@
+{
+  "objectName" : "avikanemptyglass",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 5,
+  "description" : "An empty glass.",
+  "shortdescription" : "Empty Avikan Glass",
+  "race" : "avikan",
+
+  "apexDescription" : "An empty glass.",
+  "avianDescription" : "Just an empty glass.",
+  "floranDescription" : "It'sss empty.",
+  "glitchDescription" : "Observation. This glass is empty.",
+  "humanDescription" : "I wonder what sort of drink was previously in this.",
+  "hylotlDescription" : "A simple drinking glass.",
+  "novakidDescription" : "'Tis empty.",
+
+  "aegiDescription" : "An empty drinking glass.",
+  "avikanDescription" : "I should fill this up.",
+  "erixianDescription" : "TODO.",
+  "trinkDescription" : "An empty glass. I detect traces of cactus juice.",
+  "hymidDescription" : "It's empty.",
+  "notixDescription" : "An empty glass. It resonates quite beautifully.",
+  "jorgasianDescription" : "It's a drinking glass.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Analysis complete. Drinking glass. Detected traces of cactus juice.",
+
+  "inventoryIcon" : "avikanemptyglassicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanemptyglass.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

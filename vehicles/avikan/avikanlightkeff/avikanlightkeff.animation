@@ -50,22 +50,56 @@
       "rearThruster" : {
         "default" : "off",
         "states" : {
-          "off" : {},
-          "on" : {
+          "off" : {
+            "properties" : {
+              "particleEmittersOff" : [ "rearThrusterActive", "rearThrusterIdle" ]
+            }
+		  },
+          "active" : {
             "frames" : 1,
             "cycle" : 0.125,
-            "mode" : "loop"
+            "mode" : "loop",
+            "properties" : {
+              "particleEmittersOn" : [ "rearThrusterActive" ],
+              "particleEmittersOff" : [ "rearThrusterIdle" ]
+            }
+          },
+          "idle" : {
+            "frames" : 1,
+            "cycle" : 0.125,
+            "mode" : "loop",
+            "properties" : {
+              "particleEmittersOn" : [ "rearThrusterIdle" ],
+              "particleEmittersOff" : [ "rearThrusterActive" ]
+            }
           }
         }
       },
       "bottomThruster" : {
         "default" : "off",
         "states" : {
-          "off" : {},
-          "on" : {
+          "off" : {
+            "properties" : {
+              "particleEmittersOff" : [ "bottomThrusterActive", "bottomThrusterIdle" ]
+            }
+		  },
+          "active" : {
             "frames" : 1,
             "cycle" : 0.125,
-            "mode" : "loop"
+            "mode" : "loop",
+            "properties" : {
+              "particleEmittersOn" : [ "bottomThrusterActive" ],
+              "particleEmittersOff" : [ "bottomThrusterIdle" ]
+            }
+          },
+          "idle" : {
+            "frames" : 1,
+            "cycle" : 0.125,
+            "mode" : "loop",
+            "properties" : {
+              "particleEmittersOn" : [ "bottomThrusterIdle" ],
+              "particleEmittersOff" : [ "bottomThrusterActive" ]
+            }
           }
         }
       },
@@ -250,29 +284,14 @@
         },
         "partStates" : {
           "rearThruster" : {
-            "on" : {
+            "active" : {
               "properties" : {
-                "image" : "/animations/keffthruster/keffrearthruster.png:thrust.<rearThrusterFrame>",
-                "offset" : [-3.25, 0.5]
+                "image" : "avikanlightkeffthrusters.png:rear.active.<rearThrusterFrame>"
               }
-            }
-          }
-        }
-      },
-      "smallThrust" : {
-        "properties" : {
-          "centered" : true,
-          "zLevel" : -1,
-          "fullbright" : true,
-          "light" : [87, 148, 150],
-          "transformationGroups" : ["flip", "rotation"]
-        },
-        "partStates" : {
-          "rearThruster" : {
-            "on" : {
+            },
+            "idle" : {
               "properties" : {
-                "image" : "/animations/keffthruster/keffsmallthruster.png:thrust.<rearThrusterFrame>",
-                "offset" : [-2.6, -0.3]
+                "image" : "avikanlightkeffthrusters.png:rear.idle.<rearThrusterFrame>"
               }
             }
           }
@@ -288,10 +307,14 @@
         },
         "partStates" : {
           "bottomThruster" : {
-            "on" : {
+            "active" : {
               "properties" : {
-                "image" : "/animations/keffthruster/keffbottomthruster.png:thrust.<bottomThrusterFrame>",
-                "offset" : [2.0, -1.25]
+                "image" : "avikanlightkeffthrusters.png:bottom.active.<bottomThrusterFrame>"
+              }
+            },
+            "idle" : {
+              "properties" : {
+                "image" : "avikanlightkeffthrusters.png:bottom.idle.<bottomThrusterFrame>"
               }
             }
           }
@@ -317,7 +340,7 @@
 		{ "particle" : "thea-hoverbikethrust"}
 	  ]
     },
-    "rearThrusterDrive" : {
+    "rearThrusterActive" : {
       "transformationGroups" : ["flip", "rotation"],
       "emissionRate" : 15.0,
       "offsetRegion" : [-3.25, -0.7, -3.25, 1.0],
@@ -325,7 +348,7 @@
 		{ "particle" : "thea-hoverbikethrust" }
 	  ]
     },
-    "ventralThrusterIdle" : {
+    "bottomThrusterIdle" : {
       "transformationGroups" : ["flip", "rotation"],
       "emissionRate" : 5.0,
       "offsetRegion" : [1.5, -0.75, 2.5, -0.75],
@@ -333,10 +356,9 @@
 		{ "particle" : "thea-hoverbikedownthrust" }
 	  ]
     },
-    "ventralThrusterJump" : {
+    "bottomThrusterActive" : {
       "transformationGroups" : ["flip", "rotation"],
       "emissionRate" : 10.0,
-      "burstCount"  : 2,
       "offsetRegion" : [1.5, -0.75, 2.5, -0.75],
       "particles" : [
 		{ "particle" : "thea-hoverbikedownthrustnarrow" }

@@ -17,7 +17,7 @@
       },
       "buyFactorRange" : [ 1.0, 1.0 ],
       "sellFactorRange" : [ 0.2, 0.2 ],
-      "numItems" : 16,
+      "numItems" : 24,
 	  
       "paneLayoutOverride" : {
         "windowtitle" : {

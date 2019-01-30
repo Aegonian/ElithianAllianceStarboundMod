@@ -1,0 +1,13 @@
+{
+  "frameGrid" : {
+    "size" : [77, 35],
+    "dimensions" : [4, 4],
+
+    "names" : [
+      [ null, "rear.idle.1", "rear.idle.2", "rear.idle.3" ],
+      [ null, "rear.active.1", "rear.active.2", "rear.active.3" ],
+      [ null, "bottom.idle.1", "bottom.idle.2", "bottom.idle.3" ],
+      [ null, "bottom.active.1", "bottom.active.2", "bottom.active.3" ]
+    ]
+  }
+}

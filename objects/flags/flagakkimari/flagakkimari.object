@@ -1,0 +1,62 @@
+{
+  "objectName" : "flagakkimari",
+  "colonyTags" : ["aegi"],
+  "printable" : false,
+  "rarity" : "Common",
+  "objectType" : "teleporter",
+  "category" : "teleportMarker",
+  "price" : 70,
+  "radioMessagesOnPickup" : [ "pickupflag" ],
+
+  "description" : "The flag of the Kel'chis Covenant. Use ^green;[E]^white; to bookmark a teleportation location.",
+  "shortdescription" : "Covenant Flag",
+  "race" : "aegi",
+
+  "apexDescription" : "A Covenant flag. I can use this as a waypoint for teleportation.",
+  "avianDescription" : "This Covenant flag can be bookmarked as a destination for my ship teleporter.",
+  "floranDescription" : "Covenant flag makess good point to teleport back to ussing teleporter!",
+  "glitchDescription" : "Observant. A small locator module attached to this Covenant flag allows it to be bookmarked for teleportation.",
+  "humanDescription" : "This Covenant flag can be saved as a location for my teleporter. Then I can return to it any time.",
+  "hylotlDescription" : "This Covenant flag can act as a way point, enabling me to return to this point using a teleporter.",
+  "novakidDescription" : "I can bookmark this Covenant flag for quick teleportin'.",
+  
+  "aegiDescription" : "The Covenant flag. My ship's teleporter can sync with its location so I can return here later.",
+  "avikanDescription" : "The Covenant flag. The ship's teleporter can lock on to the locator module inside it, so I can return here later.",
+  "erixianDescription" : "A Covenant flag. I can save its location for my teleporter, allowing me to return here later.",
+  "trinkDescription" : "A locator module inside this Covenant flag allows my ship's teleporter to bookmark this location.",
+  "hymidDescription" : "A Covenant flag. I can bookmark its location so my teleporter can return me here at any time.",
+  "notixDescription" : "The flag of the Covenant. I can save its location and return to it later using my teleporter.",
+  "jorgasianDescription" : "The flag of the Covenant people. My teleporter can bookmark its location for later use.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Covenant flag. Detected locator module. Ship teleportation system can lock on to this location.",
+  
+  "interactAction" : "OpenTeleportDialog",
+  "interactData" : "/interface/warping/destinationonly.config",
+
+  "inventoryIcon" : "flagakkimariicon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "flagakkimari.png:<color>.<frame>", "fullbright" : true }, { "image" : "flagakkimarilit.png:<color>.<frame>" } ],
+      "flipImages" : true,
+      "direction" : "left",
+      "imagePosition" : [-17, 0],
+      "frames" : 6,
+      "animationCycle" : 0.8,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "flagakkimari.png:<color>.<frame>", "fullbright" : true }, { "image" : "flagakkimarilit.png:<color>.<frame>" } ],
+      "direction" : "right",
+      "imagePosition" : [1, 0],
+      "frames" : 6,
+      "animationCycle" : 0.8,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

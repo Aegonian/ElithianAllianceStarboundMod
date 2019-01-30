@@ -8,6 +8,9 @@
   "category" : "Crafting Guide",
   "learnBlueprintsOnPickup" : [
 	
+//New in v2.3.9
+	  "avikanemptyglass",
+	  
 //New in v2.3.8
 	  "avikanbackgrounddoor-wired",
 	  "avikannumber0",
