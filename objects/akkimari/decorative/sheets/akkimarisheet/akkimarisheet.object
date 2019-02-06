@@ -1,0 +1,57 @@
+{
+  "objectName" : "akkimarisheet",
+  "colonyTags" : ["akkimari"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 50,
+  "description" : "Silken sheets suspended from metal rings.",
+  "shortdescription" : "Akris Silken Sheets",
+  "race" : "akkimari",
+
+  "apexDescription" : "I'm not sure what the purpose of these sheets is.",
+  "avianDescription" : "Colourful sheets made of a strange kind of painted silk.",
+  "floranDescription" : "Colourful sssheetss of sssilk. It'sss ssilky sssmooth!",
+  "glitchDescription" : "Amazed. This fabric is incredibly soft to the touch!",
+  "humanDescription" : "Are these sheets just for decoration?",
+  "hylotlDescription" : "Sheets made of an alien silk. They are surprisingly soft to the touch.",
+  "novakidDescription" : "Some kinda sheets.",
+
+  "aegiDescription" : "I've seen Akkimari climbing these before. Perhaps these sheets act as ladders to them?",
+  "avikanDescription" : "Alien sheets. The style reminds me of our own a bit.",
+  "erixianDescription" : "TODO.",
+  "trinkDescription" : "I have yet to identify any purpose of these sheets, besides decoration.",
+  "hymidDescription" : "The Akkimari have an odd way of decorating their homes.",
+  "notixDescription" : "This sheet of fabric sways lightly in the breeze.",
+  "jorgasianDescription" : "While the craftsmanship is rough, the silk itself is very smooth.",
+  "centensDescription" : "I have seen many species decorate their homes with a variety of fabrics. It seems that these are more than just decorative, however.",
+  "dremetonDescription" : "Soft sheets of silk. I wonder how they'd fare underwater.",
+  "theleanDescription" : "I wonder if the Akkimari used these same decorations on their home world.",
+  "drodenDescription" : "Detected sheets of alien silk-like material. Style reminiscent of Nomada aesthetics.",
+  "akkimariDescription" : "Sheets for home-pretty. Akki climb them too.",
+  
+  "inventoryIcon" : "akkimarisheeticon.png",
+  "orientations" : [
+    {
+      "image" : "akkimarisheet.png:<color>",
+      "imagePosition" : [-48, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "bottom", "top", "left" ]
+    },
+    {
+      "image" : "akkimarisheet.png:<color>",
+      "imagePosition" : [-72, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom", "top", "right" ]
+    }
+  ]
+}

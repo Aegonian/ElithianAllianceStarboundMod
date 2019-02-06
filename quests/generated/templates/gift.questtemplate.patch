@@ -1,0 +1,53 @@
+[
+  //GOAL
+  {
+    "op": "add",
+    "path": "/scriptConfig/generatedText/goalText/avikan",
+    "value": [
+	  "^cyan;I want to impress <target> with a great gift, but I need your help!",
+	  "^cyan;I want to do something nice for my friend, but I need some assistance. Could you help me?"
+	]
+  },
+  {
+    "op": "add",
+    "path": "/scriptConfig/generatedText/goalText/trink",
+    "value": [
+	  "^cyan;I would like to make a good impression on <target>. Can you help me gather some things?",
+	  "^cyan;I require some assistance in making a gift for <target>. Your help would be greatly appreciated."
+	]
+  },
+  {
+    "op": "add",
+    "path": "/scriptConfig/generatedText/goalText/akkimari",
+    "value": [
+	  "^cyan;Akki want to impress <target>. Help Akki?",
+	  "^cyan;<target> is friend to Akki. Want to gift things, you help Akki?"
+	]
+  },
+  
+  //DELIVERY
+  {
+    "op": "add",
+    "path": "/scriptConfig/generatedText/text/next/avikan",
+    "value": [
+	  "I'm sure ^orange;<target>^white; will greatly appreciate this ^orange;<gift>^white;! ^green;Could you deliver it to <target.pronoun.object> for me?",
+	  "This ^orange;<gift>^white; is the perfect gift for ^orange;<target>^white;, I'm sure of it! ^green;Could you help me one last time and deliver it to <target.pronoun.object>?"
+	]
+  },
+  {
+    "op": "add",
+    "path": "/scriptConfig/generatedText/text/next/trink",
+    "value": [
+	  "The ^orange;<gift>^white; that we put together is a perfect gift for ^orange;<target>^white;. ^green;Would you deliver it to <target.pronoun.object>?",
+	  "I am certain that ^orange;<target>^white; will appreciate this ^orange;<gift>^white;. ^green;Will you deliver it to <target.pronoun.object> for me?"
+	]
+  },
+  {
+    "op": "add",
+    "path": "/scriptConfig/generatedText/text/next/akkimari",
+    "value": [
+	  "Akki certain that gift is good. Help deliver it? Akki much appreciates it!",
+	  "Akki think ^orange;<gift>^white; is good gift. Go ^orange;<target>^white; and give gift?"
+	]
+  }
+]

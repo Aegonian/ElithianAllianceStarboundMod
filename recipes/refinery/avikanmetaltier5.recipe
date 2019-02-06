@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "avikanmetaltier5", "count" : 1 }
+  ],
+  "output" : { "item" : "money", "count" : 175 },
+  "groups" : [ "refinery" ]
+}

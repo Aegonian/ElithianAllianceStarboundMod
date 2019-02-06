@@ -1,6 +1,6 @@
 {
   "itemName" : "avikan-seekersmg",
-  "price" : 1500,
+  "price" : 750,
   "inventoryIcon" : "avikan-seekersmg.png",
   "maxStack" : 1,
   "rarity" : "Essential",
@@ -14,9 +14,9 @@
   "twoHanded" : false,
   
   //CONFIGURATION FOR WEAPONS COLLECTION
-  //"collectablesOnPickup" : { "thea_weapons" : "avikan-seekersmg" },
+  "collectablesOnPickup" : { "thea_weapons" : "avikan-seekersmg" },
   
-  "meritTokenValue" : 100,
+  "meritTokenValue" : 50,
   
   "cursor" : "/cursors/thea-lineriflereticle.cursor",
   
@@ -33,19 +33,19 @@
         "gun" : {
 		  "properties" : {
 			//Same as BaseOffset
-		    "offset" : [0.6, -0.125]
+		    "offset" : [0.625, 0.0]
 		  }
 		},
 		"lights" : {
 		  "properties" : {
 			//Same as BaseOffset
-		    "offset" : [0.6, -0.125]
+		    "offset" : [0.625, 0.0]
 		  }
 		},
 		"charge" : {
 		  "properties" : {
 			//Same as BaseOffset
-		    "offset" : [0.6, -0.125]
+		    "offset" : [0.625, 0.0]
 		  }
 		}
       }
@@ -53,8 +53,8 @@
     "particleEmitters" : {
       "muzzleFlash" : {
         "particles" : [
-          { "particle" : "lineriflepuff", "offset" : [-2.75, 0.3] },
-          { "particle" : "lineriflepuff", "offset" : [-2.75, 0.3] }
+          { "particle" : "lineriflepuff", "offset" : [-1.5, 0.125] },
+          { "particle" : "lineriflepuff", "offset" : [-1.5, 0.125] }
         ]
       }
     },
@@ -66,8 +66,8 @@
   },
   "animationScripts" : ["/items/active/effects/lightning.lua"],
 
-  "baseOffset" : [0.6, -0.125],
-  "muzzleOffset" : [2.0, 0.25],
+  "baseOffset" : [0.625, 0.0],
+  "muzzleOffset" : [1.125, 0.375],
 
   "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
 
@@ -77,9 +77,9 @@
     "scripts" : ["/items/active/weapons/ranged/abilities/thea-linerifle.lua"],
     "class" : "TheaLineRifle",
 
-    "chargeTime" : 0.275,
-    "baseDamage" : 1.5,
-    "baseEnergyUsage" : 5,
+    "chargeTime" : 0.2,
+    "baseDamage" : 2.0,
+    "baseEnergyUsage" : 7,
     "inaccuracy" : 0.035,
 	
 	"cooldownTime" : 0.125,
@@ -90,8 +90,8 @@
 	"chargeLevels" : 2,
 	// [amount, width, forks, displacement, color, startOffset, endOffset]
 	"lightningChargeLevels" : [
-      [1, 1.15, 0, 0.30, [255, 136, 0, 125], [-1.625, -0.375], [-0.125, 0.0]],
-      [1, 1.15, 0, 0.70, [255, 190, 0, 255], [-1.625, -0.375], [-0.125, 0.0]]
+      [1, 1.15, 0, 0.20, [255, 136, 0, 125], [-0.75, -0.375], [-0.125, 0.0]],
+      [1, 1.15, 0, 0.50, [255, 190, 0, 255], [-0.75, -0.375], [-0.125, 0.0]]
     ],
 	//Amount: amount of lightning bolts to draw
 	//Width: Width of the bolts

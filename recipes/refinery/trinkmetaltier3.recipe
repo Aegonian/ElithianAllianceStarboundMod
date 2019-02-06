@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "trinkmetaltier3", "count" : 1 }
+  ],
+  "output" : { "item" : "money", "count" : 75 },
+  "groups" : [ "refinery" ]
+}

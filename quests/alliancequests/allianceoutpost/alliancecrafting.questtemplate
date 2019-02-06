@@ -2,7 +2,7 @@
   "id" : "alliancecrafting",
   "prerequisites" : [],
   "title" : "^green;Alliance Crafting Techniques",
-  "text" : "Can help me out with a small task? I'm doing some research on the Faryth, and need more samples of their scales. ^green;Find me ^orange;5 Faryth Scales^green;, and I'll give you an ^orange;Alliance Crafting Guide^reset;. I'll even throw in a bonus blueprint for an ^orange;Erito Security weapon^reset;!",
+  "text" : "Can you help me out with a small task? I'm doing some research on the Faryth, and need more samples of their scales. ^green;Find me ^orange;5 Faryth Scales^green;, and I'll give you an ^orange;Alliance Crafting Guide^reset;. I'll even throw in a bonus blueprint for an ^orange;Erito Security weapon^reset;!",
   "completionText" : "Outstanding work, these scales will prove incredibly useful for my research! Here you go, the crafting guide and weapon blueprint I promised you.",
   "moneyRange" : [50, 50],
   "rewards" : [

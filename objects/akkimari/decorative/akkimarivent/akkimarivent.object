@@ -1,0 +1,47 @@
+{
+  "objectName" : "akkimarivent",
+  "colonyTags" : ["akkimari"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 60,
+  "description" : "A ventilation fan that circulates fresh air.",
+  "shortdescription" : "Akris Vent",
+  "race" : "akkimari",
+
+  "apexDescription" : "A vent.",
+  "avianDescription" : "A vent to recycle air.",
+  "floranDescription" : "Floran can feel a ssslight breeze coming through here.",
+  "glitchDescription" : "Observant. The air recycling process isn't fully functional.",
+  "humanDescription" : "An uninspiring vent.",
+  "hylotlDescription" : "A vent with a fan.",
+  "novakidDescription" : "It's a vent. Still, the air feels stuffy in here.",
+
+  "aegiDescription" : "A ventilation fan. It circulates the air.",
+  "avikanDescription" : "Some type of vent.",
+  "erixianDescription" : "TODO.",
+  "trinkDescription" : "A reasonably efficient vent that circulates the air.",
+  "hymidDescription" : "The air flowing through here feels cold.",
+  "notixDescription" : "This vent makes a pleasant sound.",
+  "jorgasianDescription" : "This vent makes sure the air is fresh.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected air current. Detected ventilation shaft.",
+  "akkimariDescription" : "Vent make air go around. Keeps fresh, Akki breathe easy.",
+
+  "inventoryIcon" : "akkimariventicon.png",
+  "orientations" : [
+    {
+      "image" : "akkimarivent.png:<color>.<frame>",
+      "imagePosition" : [-8, -8],
+      "frames" : 3,
+      "animationCycle" : 0.2,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/bunkervent.ogg"
+}

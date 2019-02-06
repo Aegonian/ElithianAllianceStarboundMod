@@ -6,7 +6,7 @@
 
   "scriptConfig" : {
     "questGenerator" : {
-      "pools" : ["common"],
+      "pools" : ["common-avikan"],
       "enableParticipation" : true,
 
       // Every 30 seconds, decide whether to generate a quest and if so, spend

@@ -22,7 +22,7 @@ function init()
 end
 
 function update(dt)
-  if projectile.collision() or mcontroller.isCollisionStuck() or mcontroller.isColliding() then
+  if (projectile.collision() or mcontroller.isCollisionStuck() or mcontroller.isColliding()) and not config.getParameter("surviveCollision", false) then
 	projectile.die()
   end
   

@@ -2,7 +2,7 @@
   "projectileName" : "linebowarrow-slow",
   "image" : "linebowarrow.png",
   "physics" : "grenade",
-  "bounces" : 0,
+  "bounces" : 1,
   "piercing" : false,
   "animationCycle" : 0.6,
   "frameNumber" : 8,
@@ -44,5 +44,7 @@
   
   "scripts" : [ "/projectiles/scripts/thea-lineriflehoming.lua" ],
   "searchRadius" : 5,
-  "baseHomingControlForce" : 4.5
+  "baseHomingControlForce" : 2.5,
+  
+  "surviveCollision" : true //Allow the projectile to survive ground collisions so that it can bounce
 }

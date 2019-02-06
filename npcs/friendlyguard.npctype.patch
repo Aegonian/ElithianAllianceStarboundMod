@@ -1,43 +1,57 @@
 [
-	//AVIKAN DIALOGUE
-	{ "op" : "add",
-	  "path" : "/scriptConfig/dialog/hail/avikan",
-	  "value" : {
-		  "default" : [
-			"I'll keep this area secure.",
-			"It is my duty is to ensure the safety of all.",
-			"I'll defend this place as best I can!",
-			"I'm ready for a challenge.",
-			"My blade will keep this place safe."
-		  ]
-	  }
-	},
-	
-	//DRODEN DIALOGUE
-	{ "op" : "add",
-	  "path" : "/scriptConfig/dialog/hail/droden",
-	  "value" : {
-		  "default" : [
-			"Unit stands ready to defend.",
-			"This unit will keep the area secure.",
-			"This unit will guard the people.",
-			"This unit stands vigil.",
-			"Analyzing security situation."
-		  ]
-	  }
-	},
-	
-	//TRINK DIALOGUE
-	{ "op" : "add",
-	  "path" : "/scriptConfig/dialog/hail/trink",
-	  "value" : {
-		  "default" : [
-			"I'll stand guard here.",
-			"The protection of this area is my only concern.",
-			"No need to worry, this area is secure.",
-			"I have little time for chatting. I need to be vigilant.",
-			"The security of this place isn't very efficient..."
-		  ]
-	  }
+  //AVIKAN DIALOGUE
+  { "op" : "add",
+	"path" : "/scriptConfig/dialog/hail/avikan",
+	"value" : {
+	  "default" : [
+		"I'll keep this area secure.",
+		"It is my duty is to ensure the safety of all.",
+		"I'll defend this place as best I can!",
+		"I'm ready for a challenge.",
+		"My blade will keep this place safe."
+	  ]
 	}
+  },
+  
+  //DRODEN DIALOGUE
+  { "op" : "add",
+	"path" : "/scriptConfig/dialog/hail/droden",
+	"value" : {
+	  "default" : [
+		"Unit stands ready to defend.",
+		"This unit will keep the area secure.",
+		"This unit will guard the people.",
+		"This unit stands vigil.",
+		"Analyzing security situation."
+	  ]
+	}
+  },
+  
+  //TRINK DIALOGUE
+  { "op" : "add",
+	"path" : "/scriptConfig/dialog/hail/trink",
+	"value" : {
+	  "default" : [
+		"I'll stand guard here.",
+		"The protection of this area is my only concern.",
+		"No need to worry, this area is secure.",
+		"I have little time for chatting. I need to be vigilant.",
+		"The security of this place isn't very efficient..."
+	  ]
+	}
+  },
+  
+  //AEGI DIALOGUE
+  { "op" : "add",
+	"path" : "/scriptConfig/dialog/hail/aegi",
+	"value" : {
+	  "default" : [
+		"I'll guard the area.",
+		"I'll make sure this area is safe!",
+		"This area will be secure in no time!",
+		"Your security is my only concern right now!",
+		"This place is secure. I'll keep it that way."
+	  ]
+	}
+  }
 ]
