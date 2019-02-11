@@ -1,0 +1,43 @@
+{
+  "objectName" : "akkimarimountedskeleton",
+  "colonyTags" : ["akkimari"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 20,
+  "description" : "A dead Akkimari brutally mounted on a spike.",
+  "shortdescription" : "Mounted Akkimari Skeleton",
+  "race" : "akkimari",
+
+  "apexDescription" : "A dead alien, displayed in a cruel manner.",
+  "avianDescription" : "This is extremely dishonorable towards the dead...",
+  "floranDescription" : "Ssspike would make for good weapon. Jussst have to remove boness firssst.",
+  "glitchDescription" : "Disgusted. Who would make such a thing?",
+  "humanDescription" : "A barbaric display.",
+  "hylotlDescription" : "This is just barbaric. Who would display a skeleton like this?",
+  "novakidDescription" : "Some kinda dead alien. They didn't die well, I reckon.",
+
+  "aegiDescription" : "This is a barbaric display, even for the Akkimari.",
+  "avikanDescription" : "Aliens can be so brutal...",
+  "erixianDescription" : "A dead Akkimari, their remains defiled.",
+  "trinkDescription" : "These were once the bones of a living and breathing Akkimari.",
+  "hymidDescription" : "This Akkimari is long dead.",
+  "notixDescription" : "This spike vibrates in an eerie tone.",
+  "jorgasianDescription" : "That used to be an Akkimari. It's long dead now",
+  "centensDescription" : "A long-dead Akkimari. What a shame.",
+  "dremetonDescription" : "A cruel and disrespectful display.",
+  "theleanDescription" : "Another mounted corpse.",
+  "drodenDescription" : "Detected alien remains. Analysis: Akkimari bones.",
+  "akkimariDescription" : "Spike-metal for Akkimari-dead.",
+  
+  "inventoryIcon" : "akkimarimountedskeletonicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "akkimarimountedskeleton.png:<color>",
+      "imagePosition" : [-8, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

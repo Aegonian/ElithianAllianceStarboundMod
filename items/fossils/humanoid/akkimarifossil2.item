@@ -1,0 +1,21 @@
+{
+  "itemName" : "akkimarifossil2",
+  "rarity" : "Uncommon",
+  "itemTags" : ["fossil"],
+
+  "description" : "A fossilised Akkimari torso.",
+  "category" : "mediumFossil",
+
+  "shortdescription" : "Akkimari Torso",
+  "race" : "akkimari",
+  "price" : 0,
+
+  "inventoryIcon" : "akkimarifossil2icon.png",
+
+  "displayImage" : "/objects/fossils/humanoidfossils/fossilakkimari/akkimaritorsodisplay.png",
+  "displayoffset" :[0, 0],
+
+  "fossilSetName" : "akkimariSkeleton",
+  "setIndex" : 2,
+  "setCount" : 3
+}

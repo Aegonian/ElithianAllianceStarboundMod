@@ -1,0 +1,43 @@
+{
+  "objectName" : "akkimariskull",
+  "colonyTags" : ["akkimari"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 10,
+  "description" : "The skull of a deceased Akkimari.",
+  "shortdescription" : "Akkimari Skull",
+  "race" : "akkimari",
+
+  "apexDescription" : "The skull of some alien creature.",
+  "avianDescription" : "I hope this person died well...",
+  "floranDescription" : "Floran make musssic with sskullsss.",
+  "glitchDescription" : "Appalled. Who would keep such a skull?",
+  "humanDescription" : "I doubt this alien died well...",
+  "hylotlDescription" : "The skull of a deceased alien. I feel sorry for them.",
+  "novakidDescription" : "That's a skull alright, and a strange one at that.",
+
+  "aegiDescription" : "The skull of an Akkimari. It's a sad sight...",
+  "avikanDescription" : "An alien skull. I'm not sure if I recognize the species.",
+  "erixianDescription" : "It's a skull. I think it belonged to an Akkimari.",
+  "trinkDescription" : "The skull of a deceased Akkimari.",
+  "hymidDescription" : "A dead Akkimari's skull.",
+  "notixDescription" : "A hollow Akkimari skull.",
+  "jorgasianDescription" : "I sure hope that the Akkimari this belonged to is actually dead...",
+  "centensDescription" : "This skull once belonged to an Akkimari. It's dead now.",
+  "dremetonDescription" : "A skull. An Akkimari skull, most likely.",
+  "theleanDescription" : "I've seen far too many skulls already...",
+  "drodenDescription" : "Scanning alien bone. Analysis: Akkimari skull. Unable to determine time of death.",
+  "akkimariDescription" : "Skull of Akkimari-dead.",
+  
+  "inventoryIcon" : "akkimariskullicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "akkimariskull.png:<color>",
+      "imagePosition" : [-1, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

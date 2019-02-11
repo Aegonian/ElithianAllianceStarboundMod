@@ -1,0 +1,21 @@
+{
+  "itemName" : "akkimarifossil3",
+  "rarity" : "Uncommon",
+  "itemTags" : ["fossil"],
+
+  "description" : "A fossilised pair of Akkimari legs.",
+  "category" : "mediumFossil",
+
+  "shortdescription" : "Akkimari Legs",
+  "race" : "akkimari",
+  "price" : 0,
+
+  "inventoryIcon" : "akkimarifossil3icon.png",
+
+  "displayImage" : "/objects/fossils/humanoidfossils/fossilakkimari/akkimarilegsdisplay.png",
+  "displayoffset" :[0, 0],
+
+  "fossilSetName" : "akkimariSkeleton",
+  "setIndex" : 3,
+  "setCount" : 3
+}

@@ -1,4 +1,7 @@
-[	
+[
+  //====================================================
+  // AVIKAN
+  //====================================================
   {"op" : "add",
 	"path" : "/humanoidfossil/0/1/pool/-",
 	"value" :
@@ -14,6 +17,10 @@
 	"value" :
 	  {"weight" : 0.30, "item" : "avikanfossil3"}
   },
+  
+  //====================================================
+  // DRODEN
+  //====================================================
   {"op" : "add",
 	"path" : "/humanoidfossil/0/1/pool/-",
 	"value" :
@@ -29,6 +36,10 @@
 	"value" :
 	  {"weight" : 0.30, "item" : "drodenfossil3"}
   },
+  
+  //====================================================
+  // TRINK
+  //====================================================
   {"op" : "add",
 	"path" : "/humanoidfossil/0/1/pool/-",
 	"value" :
@@ -43,5 +54,24 @@
 	"path" : "/humanoidfossil/0/1/pool/-",
 	"value" :
 	  {"weight" : 0.30, "item" : "trinkfossil3"}
+  },
+  
+  //====================================================
+  // AKKIMARI
+  //====================================================
+  {"op" : "add",
+	"path" : "/humanoidfossil/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.30, "item" : "akkimarifossil1"}
+  },
+  {"op" : "add",
+	"path" : "/humanoidfossil/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.30, "item" : "akkimarifossil2"}
+  },
+  {"op" : "add",
+	"path" : "/humanoidfossil/0/1/pool/-",
+	"value" :
+	  {"weight" : 0.30, "item" : "akkimarifossil3"}
   }
 ]

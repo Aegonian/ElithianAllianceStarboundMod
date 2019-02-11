@@ -26,7 +26,7 @@
   
   "avikanDescription" : "This light isn't working properly. The ship engineer should take a look at it.",
   "drodenDescription" : "Light detected. Status: broken.",
-  "akkimariDescription" : "Broken light make Akki mad...",
+  "akkimariDescription" : "Light-broken make Akki mad...",
 
   "inventoryIcon" : "iconbroken.png",
   "orientations" : [

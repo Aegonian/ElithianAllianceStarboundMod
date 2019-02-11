@@ -1,0 +1,43 @@
+{
+  "objectName" : "akkimariskulls",
+  "colonyTags" : ["akkimari"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 25,
+  "description" : "A pile of Akkimari skulls.",
+  "shortdescription" : "Akkimari Skulls",
+  "race" : "akkimari",
+
+  "apexDescription" : "Alien skulls. Kinda creepy.",
+  "avianDescription" : "A creepy pile of skulls.",
+  "floranDescription" : "Skullsss on top of sskullsss.",
+  "glitchDescription" : "Appalled. What happened here?",
+  "humanDescription" : "Someone's been on a killing spree...",
+  "hylotlDescription" : "The skulls of deceased aliens. What a sad sight...",
+  "novakidDescription" : "Strange skulls, piled on top of each other.",
+
+  "aegiDescription" : "Akkimari skulls. What a shame.",
+  "avikanDescription" : "Strange alien skulls.",
+  "erixianDescription" : "The skulls of dead Akkimari.",
+  "trinkDescription" : "These are Akkimari skulls. I should be careful around here...",
+  "hymidDescription" : "Dead Akkimari. I wonder how they died?",
+  "notixDescription" : "Hollow skulls. The acoustics make me think they're Akkimari skulls.",
+  "jorgasianDescription" : "The Akkimari seem to have a thing for skulls.",
+  "centensDescription" : "The skulls of now-dead Akkimari.",
+  "dremetonDescription" : "These seem to be Akkimari skulls.",
+  "theleanDescription" : "More skulls. As if I hadn't seen enough of them yet...",
+  "drodenDescription" : "Detected alien remains. Analysis: Akkimari skulls.",
+  "akkimariDescription" : "Akkimari dead now. Skulls remain.",
+  
+  "inventoryIcon" : "akkimariskullsicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "akkimariskulls.png:<color>",
+      "imagePosition" : [-8, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

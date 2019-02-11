@@ -1,0 +1,43 @@
+{
+  "objectName" : "akkimarimountedskull",
+  "colonyTags" : ["akkimari"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 20,
+  "description" : "The skull of a deceased Akkimari, mounted on a scrap metal spike.",
+  "shortdescription" : "Mounted Akkimari Skull",
+  "race" : "akkimari",
+
+  "apexDescription" : "This alien was brutally murdered by the looks of it...",
+  "avianDescription" : "A rusty metal spike with an alien skull mounted on top.",
+  "floranDescription" : "Sspear goesss through sskull, very sssharp.",
+  "glitchDescription" : "Revolted. A truly gruesome display.",
+  "humanDescription" : "This alien didn't die well.",
+  "hylotlDescription" : "A gruesome display. Why would anyone mount a skull like this?",
+  "novakidDescription" : "Seems there's bandits about.",
+
+  "aegiDescription" : "A gruesome sight. The Akkimari can be brutal...",
+  "avikanDescription" : "A mounted alien skull. I don't want to meet whoever put this up.",
+  "erixianDescription" : "This skull belonged to an Akkimari.",
+  "trinkDescription" : "The lifeless skull of an Akkimari.",
+  "hymidDescription" : "By the looks of it, this skull has been here for a while.",
+  "notixDescription" : "A spike with a skull mounted on top.",
+  "jorgasianDescription" : "This spike went clean through the skull...",
+  "centensDescription" : "A primitive display of power.",
+  "dremetonDescription" : "What a shame. There's such barbarism in the universe...",
+  "theleanDescription" : "Someone must have been proud of this kill.",
+  "drodenDescription" : "Detected scrap metal spike. Detected alien skull.",
+  "akkimariDescription" : "Skull on spike-metal. Dead for sure.",
+  
+  "inventoryIcon" : "akkimarimountedskullicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "akkimarimountedskull.png:<color>",
+      "imagePosition" : [-8, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}
