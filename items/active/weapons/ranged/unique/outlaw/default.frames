@@ -1,0 +1,30 @@
+{
+  "frameGrid" : {
+    "size" : [32, 14],
+    "dimensions" : [8, 2],
+
+    "names" : [
+      [ "idle", "charge.1", "charge.2", "charge.3", "charge.4", "charge.5", "charge.6", "charge.7" ],
+	  [ "opening.1", "opening.2", "opening.3", "open", "loaded", "closing.1", "closing.2", "closing.3" ]
+    ]
+  },
+
+  "aliases" : {
+    "reload.1" : "opening.1",
+    "reload.2" : "opening.2",
+    "reload.3" : "opening.3",
+    "reload.4" : "open",
+    "reload.5" : "open",
+    "reload.6" : "open",
+    "reload.7" : "open",
+    "reload.8" : "open",
+    "reload.9" : "open",
+    "reload.10" : "open",
+    "reload.11" : "loaded",
+    "reload.12" : "loaded",
+    "reload.13" : "loaded",
+    "reload.14" : "closing.1",
+    "reload.15" : "closing.2",
+    "reload.16" : "closing.3"
+  }
+}

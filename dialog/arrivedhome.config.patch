@@ -1,149 +1,149 @@
 [
-	//AVIKAN DIALOGUE
-	{
-		"op": "add",
-		"path": "/beacon/avikan",
-		"value": {
-			"default" : [
-				"You called for me?",
-				"Can I help you with something?",
-				"Greetings, friend. Did you need me?",
-				"Is there anything you'd like to discuss?",
-				"Vas Vha'leih, my friend."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/rent/avikan",
-		"value": {
-			"default" : [
-				"Here, take this! I've been very happy with your service.",
-				"The Nomada needs more people like you. Please, accept this token of gratitude.",
-				"Thank you for taking in a traveller like me. Please, take this.",
-				"You've been a good friend. Here, take this.",
-				"I've a small gift for you. A token of my gratitude."
-			]
-		}
-	},
-	
-	
-	
-	//TRINK DIALOGUE
-	{
-		"op": "add",
-		"path": "/beacon/trink",
-		"value": {
-			"default" : [
-				"Did you require my aid?",
-				"Did you call for me?",
-				"Did you need to talk?",
-				"Are my services required?",
-				"Hello again."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/rent/trink",
-		"value": {
-			"default" : [
-				"Take this. It is a token of my gratitude.",
-				"You have been kind to me. Take this.",
-				"You've been incredibly helpful. Here's a gift for you.",
-				"A gift, for your troubles.",
-				"For all you have done for me, take this."
-			]
-		}
-	},
-	
-	
-	
-	//DRODEN DIALOGUE
-	{
-		"op": "add",
-		"path": "/beacon/droden",
-		"value": {
-			"default" : [
-				"This unit has received your call.",
-				"Do you have need of this unit's services?",
-				"Call received. Unit has arrived as requested.",
-				"Call heeded. Is this unit needed?",
-				"Vas Vha'leih."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/rent/droden",
-		"value": {
-			"default" : [
-				"Satisfied with service. Presenting gift.",
-				"Presenting gift. Your service has been admirable.",
-				"Your actions deserve a reward. Take this.",
-				"You have been meritful. Presenting gift.",
-				"Presenting a token of gratitude. Take it."
-			]
-		}
-	},
-	
-	
-	
-	//AEGI DIALOGUE
-	{
-		"op": "add",
-		"path": "/beacon/aegi",
-		"value": {
-			"default" : [
-				"Did you call for me?",
-				"Can I help?",
-				"Did you need me?",
-				"Hey! What did you call me for?",
-				"Want to talk?"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/rent/aegi",
-		"value": {
-			"default" : [
-				"You're an excellent landlord. Here, take this.",
-				"I think you'll like this!",
-				"The house is great! Please, take this.",
-				"I have something for you!",
-				"Keep up the great service, and I'll keep paying my rent."
-			]
-		}
-	},
-	
-	
-	
-	//AKKIMARI DIALOGUE
-	{
-		"op": "add",
-		"path": "/beacon/akkimari",
-		"value": {
-			"default" : [
-				"Did'a you call'a me?",
-				"Can'a help'a?",
-				"Did'a you need'a me?",
-				"Yeeesss?",
-				"Talk'a you want'a?"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/rent/akkimari",
-		"value": {
-			"default" : [
-				"You're an excellent landlord. Here, take this.",
-				"I think you'll like this!",
-				"The house is great! Please, take this.",
-				"I have something for you!",
-				"Keep up the great service, and I'll keep paying my rent."
-			]
-		}
+  //AVIKAN DIALOGUE
+  {
+	"op": "add",
+	"path": "/beacon/avikan",
+	"value": {
+	  "default" : [
+		"You called for me?",
+		"Can I help you with something?",
+		"Greetings, friend. Did you need me?",
+		"Is there anything you'd like to discuss?",
+		"Vas Vha'leih, my friend."
+	  ]
 	}
+  },
+  {
+	"op": "add",
+	"path": "/rent/avikan",
+	"value": {
+	  "default" : [
+		"Here, take this! I've been very happy with your service.",
+		"The Nomada needs more people like you. Please, accept this token of gratitude.",
+		"Thank you for taking in a traveller like me. Please, take this.",
+		"You've been a good friend. Here, take this.",
+		"I've a small gift for you. A token of my gratitude."
+	  ]
+	}
+  },
+  
+  
+  
+  //TRINK DIALOGUE
+  {
+	"op": "add",
+	"path": "/beacon/trink",
+	"value": {
+	  "default" : [
+		"Did you require my aid?",
+		"Did you call for me?",
+		"Did you need to talk?",
+		"Are my services required?",
+		"Hello again."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/rent/trink",
+	"value": {
+	  "default" : [
+		"Take this. It is a token of my gratitude.",
+		"You have been kind to me. Take this.",
+		"You've been incredibly helpful. Here's a gift for you.",
+		"A gift, for your troubles.",
+		"For all you have done for me, take this."
+	  ]
+	}
+  },
+  
+  
+  
+  //DRODEN DIALOGUE
+  {
+	"op": "add",
+	"path": "/beacon/droden",
+	"value": {
+	  "default" : [
+		"This unit has received your call.",
+		"Do you have need of this unit's services?",
+		"Call received. Unit has arrived as requested.",
+		"Call heeded. Is this unit needed?",
+		"Vas Vha'leih."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/rent/droden",
+	"value": {
+	  "default" : [
+		"Satisfied with service. Presenting gift.",
+		"Presenting gift. Your service has been admirable.",
+		"Your actions deserve a reward. Take this.",
+		"You have been meritful. Presenting gift.",
+		"Presenting a token of gratitude. Take it."
+	  ]
+	}
+  },
+  
+  
+  
+  //AEGI DIALOGUE
+  {
+	"op": "add",
+	"path": "/beacon/aegi",
+	"value": {
+	  "default" : [
+		"Did you call for me?",
+		"Can I help?",
+		"Did you need me?",
+		"Hey! What did you call me for?",
+		"Want to talk?"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/rent/aegi",
+	"value": {
+	  "default" : [
+		"You're an excellent landlord. Here, take this.",
+		"I think you'll like this!",
+		"The house is great! Please, take this.",
+		"I have something for you!",
+		"Keep up the great service, and I'll keep paying my rent."
+	  ]
+	}
+  },
+  
+  
+  
+  //AKKIMARI DIALOGUE
+  {
+	"op": "add",
+	"path": "/beacon/akkimari",
+	"value": {
+	  "default" : [
+		"You call, Akki come!",
+		"Call for Akki, Akki here.",
+		"Call for Akki?",
+		"Yeeesss?",
+		"What you want? Akki listen!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/rent/akkimari",
+	"value": {
+	  "default" : [
+		"Akki pleased with home-mine. You take reward!",
+		"Home-mine make Akki happy. Akki-happy give gifts!",
+		"You make house-good. Akki give gift.",
+		"Akki pleased, it true-true. Akki make you happy, too!",
+		"Akki pay rent, Akki tenant-good. Now go back to what Akki was doing."
+	  ]
+	}
+  }
 ]

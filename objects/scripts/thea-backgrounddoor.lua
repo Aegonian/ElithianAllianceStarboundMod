@@ -97,10 +97,15 @@ function checkDoorConnection()
   self.connectedDoor = nil
   for entityId, _ in pairs(object.getOutputNodeIds(0)) do
 	if world.entityExists(entityId) then
-	  local entityName = world.entityName(entityId)
-	  if entityName == world.entityName(entity.id()) then
+	  --Check if the connected object allows background door connections
+	  if world.getObjectParameter(entityId, "allowBackgroundDoorConnection", false) then
 		self.connectedDoor = entityId
 	  end
+	  
+	  --local entityName = world.entityName(entityId)
+	  --if entityName == world.entityName(entity.id()) then
+		--self.connectedDoor = entityId
+	  --end
 	end
   end
 end

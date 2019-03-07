@@ -88,7 +88,6 @@
 
     "chargeTime" : 0.7,
     "baseDamage" : 9.0,
-    "baseEnergyUsage" : 30,
     "inaccuracy" : 0.0,
 	
 	"cooldownTime" : 0.4,

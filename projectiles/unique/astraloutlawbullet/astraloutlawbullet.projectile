@@ -1,0 +1,27 @@
+{
+  "projectileName" : "astraloutlawbullet",
+  "physics" : "laser",
+  "bounces" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "astraloutlawbullet.png",
+  "animationCycle" : 0.35,
+  "animationLoops" : true,
+  "frameNumber" : 6,
+  "windupFrames" : 4,
+  "emitters" : [ ],
+  "power" : 1,
+  "speed" : 60,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/astraloutlawexplosion/astraloutlawexplosion.config"
+    }
+  ],
+  "lightColor" : [150, 90, 0],
+  "fullbright" : true,
+  "damageType" : "NoDamage",
+  "damageKind" : "plasma",
+  "damagePoly" : [ [-18, 0], [-12, -12], [0, -18], [12, -12], [18, 0], [12, 12], [0, 18], [-12, 12] ],
+  "hydrophobic" : false
+}

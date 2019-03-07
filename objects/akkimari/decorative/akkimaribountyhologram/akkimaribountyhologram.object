@@ -1,0 +1,62 @@
+{
+  "objectName" : "akkimaribountyhologram",
+  "colonyTags" : ["akkimari"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 100,
+  "description" : "A nanoprojector displaying a notice about a bounty.",
+  "shortdescription" : "Akris Bounty Nanoprojector",
+  "race" : "akkimari",
+  "lightColor" : [0, 60, 0],
+
+  "apexDescription" : "A strange device. It looks like a holographic projector, but the image seems to be physical...",
+  "avianDescription" : "Some sort of hologram? There's something off about it.",
+  "floranDescription" : "Floran confussed. Looksss like hologram, but Floran can touch it.",
+  "glitchDescription" : "Baffled. This looked like a hologram at first, but it seems to be a physical display.",
+  "humanDescription" : "Some sort of odd holographic projection. I can actually feel the image when I touch it!",
+  "hylotlDescription" : "I though it was a hologram, but there is something off about it.",
+  "novakidDescription" : "That's no hologram. I sense tiny particles inside the projection!",
+
+  "aegiDescription" : "A hologram-like projection. It seems to be about a bounty placed on some Thelean...",
+  "avikanDescription" : "A strange alien holographic display. It's saying something about the Thell.",
+  "erixianDescription" : "A peculiar device that creates a holographic display using nanites. Is that a Thelean?",
+  "trinkDescription" : "This projector is surprisingly efficient. It doesn't create a traditional hologram, but rather releases nanites to form an image in the air.",
+  "hymidDescription" : "A strange projector. It seems to be displaying a bounty placed on a Thelean.",
+  "notixDescription" : "Is this some type of advanced hologram? I can actually hear the image!",
+  "jorgasianDescription" : "This holographic projector is unlike anything I've seen before. It's not even really a hologram!",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected holographic display. Error. Further analysis suggests device emits nanites. Detected Thelean imagery. Error.",
+  "akkimariDescription" : "Akki see bounty, Akki hunt down Thellar. Akki like the hunt!",
+
+  "inventoryIcon" : "akkimaribountyhologramicon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "akkimaribountyhologram.png:<color>.<frame>", "fullbright" : true }, { "image" : "akkimaribountyhologramlit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-16, 0],
+      "frames" : 15,
+      "animationCycle" : 1.5,
+      "lightPosition" : [0, 1],
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "bottom" ]
+    },
+    {
+	  "imageLayers" : [ { "image" : "akkimaribountyhologram.png:<color>.<frame>", "fullbright" : true }, { "image" : "akkimaribountyhologramlit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-16, 0],
+      "frames" : 15,
+      "animationCycle" : 1.5,
+      "lightPosition" : [0, 1],
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

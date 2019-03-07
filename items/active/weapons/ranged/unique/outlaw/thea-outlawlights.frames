@@ -1,0 +1,11 @@
+{
+  "frameGrid" : {
+    "size" : [32, 14],
+    "dimensions" : [8, 2],
+
+    "names" : [
+      [ "idle", "charge.1", "charge.2", "charge.3", "charge.4", "charge.5", "charge.6", "charge.7" ],
+	  [ "overheat.1", "overheat.2", "overheat.3", "overheat.4", "overheat.5", "overheat.6", "overheat.7", "overheat.8" ]
+    ]
+  }
+}

@@ -65,7 +65,6 @@ function build(directory, config, parameters, level, seed)
     config.tooltipFields.speedLabel = util.round(1 / (config.primaryAbility.fireTime or 1.0), 1)
 	config.tooltipFields.chargeTimeLabel = util.round(config.primaryAbility.chargeTime, 1)
     config.tooltipFields.damagePerShotLabel = util.round(config.primaryAbility.baseDamage * config.damageLevelMultiplier, 1)
-    config.tooltipFields.energyPerShotLabel = util.round(config.primaryAbility.baseEnergyUsage, 1)
 	config.tooltipFields.magazineSizeLabel = util.round(config.primaryAbility.maxAmmo, 1)
 	if config.primaryAbility.stances.reloadTwirl then
 	  config.tooltipFields.reloadTimeLabel = util.round(config.primaryAbility.stances.reload.duration + (config.primaryAbility.stances.reloadTwirl.duration or 0) + config.primaryAbility.readyTime, 1)

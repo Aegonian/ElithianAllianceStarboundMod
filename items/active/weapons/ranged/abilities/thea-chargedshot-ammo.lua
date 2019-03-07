@@ -44,6 +44,7 @@ function TheaChargedShotAmmo:update(dt, fireMode, shiftHeld)
     and not self.weapon.currentAbility
 	and self.cooldownTimer == 0
 	and not world.lineTileCollision(mcontroller.position(), self:firePosition())
+	and not (self.overheatAnimation and (animator.animationState("overheat") ~= "idle"))
 	and self.currentAmmo > 0 then
 
     self:setState(self.charge)
@@ -133,6 +134,11 @@ function TheaChargedShotAmmo:fire()
   --Fire a projectile and show a muzzleflash, then continue on with this state
   self:fireProjectile()
   self:muzzleFlash()
+  
+  --Optionally play an overheat animation
+  if self.overheatAnimation then
+	animator.setAnimationState("overheat", "overheat")
+  end
   
   if self.recoilKnockbackVelocity then
 	--If not crouching or if crouch does not impact recoil
@@ -340,6 +346,8 @@ end
 function TheaChargedShotAmmo:reset()
   animator.setAnimationState("charge", "off")
   animator.setParticleEmitterActive("chargeparticles", false)
+  animator.stopAllSounds("chargeLoop")
+  animator.stopAllSounds("reload")
   self.chargeHasStarted = false
   self.weapon:setStance(self.stances.idle)
   

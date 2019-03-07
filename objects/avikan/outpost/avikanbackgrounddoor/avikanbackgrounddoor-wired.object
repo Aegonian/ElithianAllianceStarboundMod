@@ -61,6 +61,7 @@
   "scripts" : [ "/objects/scripts/thea-backgrounddoor.lua" ],
   "detectArea" : [ [-6, 0], [7, 6] ],
   
+  "allowBackgroundDoorConnection" : true,
   "mouthPosition" : [0, -1], //Used to determine the teleport position of the door
   
   "inputNodes" : [ [-2, 0], [-2, 2] ],
