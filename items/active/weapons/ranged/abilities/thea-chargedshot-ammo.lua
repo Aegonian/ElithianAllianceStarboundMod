@@ -212,12 +212,41 @@ end
 function TheaChargedShotAmmo:reload()
   self.weapon:setStance(self.stances.reload)
   self.weapon:updateAim()
-
+  
   animator.setAnimationState("gun", "reload")
   animator.playSound("reload")
   animator.burstParticleEmitter("reload")
   
-  util.wait(self.stances.reload.duration)
+  local timer = 0
+  util.wait(self.stances.reload.duration, function()
+	--FRONT ARM
+	local frontArm = self.stances.reload.frontArmFrame or "rotation"
+	if self.stances.reload.frontArmFrameSequence then
+	  --Run through each sequence step and update arm frame accordingly
+	  for i,step in ipairs(self.stances.reload.frontArmFrameSequence) do
+		if timer > step[1] then
+		  frontArm = step[2]
+		end
+	  end
+	  self.stances.reload.frontArmFrame = frontArm
+	  self.weapon:updateAim()
+	end
+	
+	--BACK ARM
+	local backArm = self.stances.reload.backArmFrame or "rotation"
+	if self.stances.reload.backArmFrameSequence then
+	  --Run through each sequence step and update arm frame accordingly
+	  for i,step in ipairs(self.stances.reload.backArmFrameSequence) do
+		if timer > step[1] then
+		  backArm = step[2]
+		end
+	  end
+	  self.stances.reload.backArmFrame = backArm
+	  self.weapon:updateAim()
+	end
+
+	timer = timer + self.dt
+  end)
   
   self.currentAmmo = self.maxAmmo
   activeItem.setInstanceValue("ammoCount", self.maxAmmo)

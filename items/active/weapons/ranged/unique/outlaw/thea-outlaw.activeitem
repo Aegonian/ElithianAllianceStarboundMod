@@ -164,8 +164,14 @@
         "allowRotate" : true,
         "allowFlip" : true,
 
-        "frontArmFrame" : "run.1",
-        "backArmFrame" : "rotation"
+		"frontArmFrameSequence" : [
+		  [0.0, "run.1"],
+		  [0.2, "run.2"],
+		  [0.4, "swim.2"],
+		  [0.9, "swim.3"],
+		  [1.2, "run.2"],
+		  [1.4, "run.1"]
+		]
       }
     }
   },
