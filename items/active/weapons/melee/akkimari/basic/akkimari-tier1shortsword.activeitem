@@ -13,33 +13,12 @@
 
   "inventoryIcon" : "akkimari-tier1shortsword.png",
 
-  "animation" : "/items/active/weapons/melee/shortsword/comboshortsword.animation",
+  "animation" : "/items/active/weapons/melee/animations/thea-hackingshortsword.animation",
   "animationParts" : {
     "handle": "",
     "blade" : "akkimari-tier1shortsword.png"
   },
-  "animationCustom" : {
-	"animatedParts" : {
-	  "parts" : {
-		"swoosh" : {
-		  "partStates" : {
-			"swoosh" : {
-			  "fire" : {
-                "properties" : {
-				  "offset" : [1.75, 0.5]
-                }
-              },
-			  "fire2" : {
-                "properties" : {
-				  "offset" : [0.25, -0.5]
-                }
-              }
-			}
-		  }
-		}
-	  }
-	}
-  },
+  "animationCustom" : {},
 
   "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
 
@@ -55,36 +34,49 @@
         "armRotation" : -90,
         "weaponRotation" : 0,
         "weaponOffset" : [0, 2.25],
+        "twoHanded" : false,
 
         "allowFlip" : true,
         "allowRotate" : true
       },
       "windup1" : {
-        "duration" : 0.05,
-        "armRotation" : -15,
-        "weaponRotation" : -50,
+        "duration" : 0.1,
+        "armRotation" : 90,
+        "weaponRotation" : -10,
         "weaponOffset" : [0, 2.25],
+        "twoHanded" : false,
 
         "allowFlip" : true,
         "allowRotate" : true
+      },
+      "preslash1" : {
+        "duration" : 0.025,
+        "armRotation" : 55,
+        "weaponRotation" : -45,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
       },
       "fire1" : {
         "duration" : 0.2,
-        "armRotation" : -135,
-        "weaponRotation" : 50,
+        "armRotation" : -45,
+        "weaponRotation" : -45,
         "weaponOffset" : [0, 2.25],
+        "twoHanded" : false,
 
-        "allowFlip" : true,
-        "allowRotate" : true
+        "allowFlip" : false,
+        "allowRotate" : false
       },
       "wait1" : {
-        "duration" : 0.3,
-        "armRotation" : -135,
-        "weaponRotation" : 50,
+        "duration" : 0.1,
+        "armRotation" : -45,
+        "weaponRotation" : -45,
         "weaponOffset" : [0, 2.25],
+        "twoHanded" : false,
+		
         "allowRotate" : true,
-        "allowFlip" : true,
-        "twoHanded" : false
+        "allowFlip" : true
       },
       "windup2" : {
         "duration" : 0.1,
@@ -92,6 +84,7 @@
         "weaponRotation" : 50,
         "weaponOffset" : [0, 2.25],
         "twoHanded" : false,
+		
         "allowFlip" : true,
         "allowRotate" : true
       },
@@ -101,8 +94,9 @@
         "weaponRotation" : -80,
         "weaponOffset" : [0, 2.25],
         "twoHanded" : false,
+		
         "allowFlip" : true,
-        "allowRotate" : true
+        "allowRotate" : false
       }
     }
   },

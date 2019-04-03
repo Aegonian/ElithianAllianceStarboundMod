@@ -1,0 +1,43 @@
+{
+  "itemName" : "akkimarigrapplinghook",
+  "price" : 3000,
+  "inventoryIcon" : "akkimarigrapplinghookicon.png",
+  "rarity" : "Legendary",
+  "maxStack" : 1,
+  "description" : "A grappling hook, for climbing mountains and swinging across ravines.",
+  "shortdescription" : "Akris Grappling Hook",
+  "category" : "Tool",
+  "fireTime" : 0,
+  "twoHanded" : false,
+
+  "scripts" : ["/items/active/grapplinghooks/grapplinghook.lua"],
+  "animationScripts" : ["/items/active/effects/renderrope.lua"],
+
+  "animation" : "akkimarigrapplinghook.animation",
+
+  "fireOffset" : [0, 0],
+  "ropeOffset" : [-1.75, 0],
+  "ropeVisualOffset" : [1.5, 0],
+
+  "consumeOnUse" : false,
+
+  "projectileType" : "akkimarigrapplinghook",
+  "projectileParameters" : {
+    "speed" : 65,
+    "timeToLive" : 2.0
+  },
+
+  "ropeWidth" : 1.1,
+  "ropeColor" : [161, 150, 139, 255],
+
+  "reelInDistance" : 3.5,
+  "reelOutLength" : 50,
+  "breakLength" : 60,
+
+  "minSwingDistance" : 1.5,
+
+  "reelSpeed" : 15,
+  "controlForce" : 1000,
+
+  "groundLagTime" : 0.2
+}

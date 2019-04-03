@@ -110,7 +110,7 @@ function createMaterials(scrapItemConfig)
 	
 	--===================================== MATERIAL CREATION =====================================
 	--Create the converted materials as an itemDescriptor
-	local materials = root.createItem(self.levelMaterialTable[scrapItemLevel])
+	local materials = root.createItem(self.levelMaterialTable[math.max(1, math.floor(scrapItemLevel))])
 	materials.count = materialCount
 	
 	--If a special conversion was found, create these materials too

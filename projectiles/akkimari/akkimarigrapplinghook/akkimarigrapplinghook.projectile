@@ -1,24 +1,24 @@
 {
-  "projectileName" : "akkimarispikesticking",
-  "physics" : "stickybomb",
-  "bounces" : 0,
-  "damageKindImage" : "icon.png",
-  "image" : "akkimarispike.png",
-  "animationCycle" : 0.5,
+  "projectileName" : "akkimarigrapplinghook",
+  "image" : "akkimarigrapplinghook.png",
+  "animationCycle" : 1.0,
   "frameNumber" : 1,
-  "piercing" : true,
-  "power" : 1,
-  "timeToLive" : 3,
-  "supportsProcessing" : true,
-  "damageType" : "NoDamage",
+  "pointLight" : false,
+  "flippable" : false,
+  "actionOnReap" : [ ],
+  "statusEffects" : [ ],
+  "power" : 0.0,
+  "speed" : 100,
   "damageKind" : "default",
-  "hydrophobic" : false,
-  "actionOnReap" : [
-    {
-      "action" : "config",
-      "file" : "/projectiles/explosions/brokenarrows/brokenakkimarispike.config"
-    }
-  ],
+  "physics" : "ballisticgrapplehook",
+  "bounces" : -1,
+  "piercing" : true,
+  "timeToLive" : 5,
+
+  "onlyHitTerrain" : true,
+
+  "scripts" : [ "/projectiles/activeitems/grapplehook/grapplehook.lua" ],
+  
   "actionOnCollide" : [
     {
       "action" : "sound",
@@ -37,10 +37,5 @@
         "/sfx/projectiles/ropehook_impact12.ogg"
       ]
     }
-  ],
-  
-  "renderLayer" : "Monster+1",
-  
-  "scripts" : [ "/projectiles/scripts/thea-stickingprojectile.lua" ],
-  "searchRadius" : 0.1
+  ]
 }
