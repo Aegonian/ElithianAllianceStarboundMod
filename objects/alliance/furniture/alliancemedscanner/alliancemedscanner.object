@@ -1,6 +1,6 @@
 {
   "objectName" : "alliancemedscanner",
-  "colonyTags" : ["alliance","medical"],
+  "colonyTags" : ["alliance","medical","bed"],
   "rarity" : "Common",
   "category" : "furniture",
   "printable" : false,

@@ -4271,7 +4271,7 @@
                  "y":872
                 }, 
                 {
-                 "height":792,
+                 "height":472,
                  "id":517,
                  "name":"",
                  "properties":
@@ -4281,8 +4281,8 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":1296,
-                 "x":152,
+                 "width":320,
+                 "x":648,
                  "y":80
                 }, 
                 {
@@ -4318,7 +4318,7 @@
                  "y":864
                 }, 
                 {
-                 "height":224,
+                 "height":120,
                  "id":1013,
                  "name":"",
                  "properties":
@@ -4330,7 +4330,67 @@
                  "visible":true,
                  "width":624,
                  "x":688,
-                 "y":872
+                 "y":976
+                }, 
+                {
+                 "height":144,
+                 "id":1046,
+                 "name":"",
+                 "properties":
+                    {
+                     "stagehand":"objecttracker"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":416,
+                 "x":232,
+                 "y":408
+                }, 
+                {
+                 "height":320,
+                 "id":1047,
+                 "name":"",
+                 "properties":
+                    {
+                     "stagehand":"objecttracker"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":368,
+                 "x":600,
+                 "y":552
+                }, 
+                {
+                 "height":120,
+                 "id":1048,
+                 "name":"",
+                 "properties":
+                    {
+                     "stagehand":"objecttracker"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":464,
+                 "x":136,
+                 "y":752
+                }, 
+                {
+                 "height":120,
+                 "id":1049,
+                 "name":"",
+                 "properties":
+                    {
+                     "stagehand":"objecttracker"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":464,
+                 "x":968,
+                 "y":752
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -4339,7 +4399,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":1046,
+ "nextobjectid":1050,
  "orientation":"orthogonal",
  "properties":
     {

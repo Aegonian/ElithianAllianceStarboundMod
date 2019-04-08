@@ -36,7 +36,7 @@
   
   "primaryAbilityType" : "thea-chainsaw",
   "primaryAbility" : {
-	"tileDamage" : 0,
+	"tileDamagePerSecond" : 0.0,
 	
     "stances" : {
       "hold" : {

@@ -39,6 +39,16 @@
   },
   {
 	"op": "add",
+	"path": "/thea-loadtracerammo",
+	"value": "/items/active/weapons/ranged/abilities/thea-loadspecialammo/thea-loadtracerammo.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-loadtracerammo2",
+	"value": "/items/active/weapons/ranged/abilities/thea-loadspecialammo/thea-loadtracerammo2.weaponability"
+  },
+  {
+	"op": "add",
 	"path": "/thea-loadspecialammo",
 	"value": "/items/active/weapons/ranged/abilities/thea-loadspecialammo/thea-loadspecialammo.weaponability"
   },

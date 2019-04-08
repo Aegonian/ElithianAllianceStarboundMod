@@ -1,0 +1,30 @@
+{
+  "projectileName" : "alliancephysicaltracerbullet",
+  "physics" : "laser",
+  "bounces" : 0,
+  "image" : "alliancephysicaltracerbullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 160,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "alliancephysicaltracerbulletbouncer",
+      "fuzzAngle" : 30,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    }
+  ],
+  "lightColor" : [40, 10, 5],
+  "fullbright" : true,
+  "damageKind" : "fire",
+  "statusEffects" : [
+    "thea-burning"
+  ]
+}

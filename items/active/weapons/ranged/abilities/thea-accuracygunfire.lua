@@ -6,7 +6,10 @@ TheaAccuracyGunFire = WeaponAbility:new()
 
 function TheaAccuracyGunFire:init()
   self.weapon:setStance(self.stances.idle)
-
+  if self.singleFireAnimation then
+	animator.setAnimationState("weapon", "idle")
+  end
+  
   self.cooldownTimer = self.fireTime
   self.inaccuracy = self.startInaccuracy
   self.timeSpentFiring = 0
@@ -146,6 +149,10 @@ function TheaAccuracyGunFire:fireProjectile(projectileType, projectileParams, in
   params.powerMultiplier = activeItem.ownerPowerMultiplier()
   params.speed = util.randomInRange(params.speed)
 
+  if self.singleFireAnimation then
+	animator.setAnimationState("weapon", "active")
+  end
+  
   if not projectileType then
     projectileType = self.projectileType
   end

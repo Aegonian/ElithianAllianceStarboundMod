@@ -55,8 +55,8 @@
     "energyUsage" : 75.0,
     "inaccuracy" : 0.060,
 	
-	"chargeTime" : 1.4,
-	"resetTime" : 1.4,
+	"chargeTime" : 1.3,
+	"resetTime" : 1.3,
 	
 	"walkWhileFiring" : true,
 

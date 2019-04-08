@@ -12,6 +12,9 @@ function TheaSpeedUpMinigun:init()
   
   animator.setAnimationState("charge", "off")
   animator.setAnimationState("chargehold", "off")
+  if self.singleFireAnimation then
+	animator.setAnimationState("weapon", "idle")
+  end
   
   self.chargeHasStarted = false
   self.shouldDischarge = false
@@ -187,6 +190,10 @@ function TheaSpeedUpMinigun:fireProjectile(projectileType, projectileParams, ina
   params.power = self:damagePerShot()
   params.powerMultiplier = activeItem.ownerPowerMultiplier()
   params.speed = util.randomInRange(params.speed)
+
+  if self.singleFireAnimation then
+	animator.setAnimationState("weapon", "active")
+  end
 
   if not projectileType then
     projectileType = self.projectileType

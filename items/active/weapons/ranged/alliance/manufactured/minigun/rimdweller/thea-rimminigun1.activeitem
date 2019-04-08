@@ -1,0 +1,162 @@
+{
+  "itemName" : "thea-rimminigun1",
+  "price" : 500,
+  "inventoryIcon" : "thea-rimminigun1.png:idle",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A minigun that outputs incredible rate of fire.",
+  "manufacturer" : "^gray;The Rim^reset;",
+  "shortdescription" : "Terminator RM12",
+  "level" : 6,
+  "fixedLevel" : false,
+  "tooltipKind" : "thea-speedupminigun-mf",
+  "category" : "Minigun",
+  "itemTags" : ["weapon","ranged","minigun","alliance","rimdweller","allianceUpgradeable"],
+  "twoHanded" : true,
+  
+  "cursor" : "/cursors/thea-largereticle.cursor",
+
+  "animation" : "thea-rimminigun1.animation",
+  "animationParts" : {
+    "middle" : "thea-rimminigun1.png",
+    "middleFullbright" : "thea-rimminigun1lights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png",
+    "charge" : "thea-rimminigun1charge.png",
+	"chargehold" : "thea-rimminigun1chargehold.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+		    "offset" : [1.25, -0.875]
+		  }
+		},
+		"charge" : {
+		  "properties" : {
+		    "offset" : [1.25, -0.875]
+		  }
+		},
+		"chargehold" : {
+		  "properties" : {
+		    "offset" : [1.25, -0.875]
+		  }
+		}
+      }
+    },
+    "particleEmitters" : {
+      "muzzleFlash" : {
+        "transformationGroups" : ["weapon"],
+		"offsetRegion" : [0.75, -0.5, 0.75, -0.5],
+        "particles" : [
+          { "particle" : "thea-discardedbulletlight" }
+        ]
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/thea_minigun2.ogg" ],
+	  "chargeLoop" : [ "/sfx/melee/charge_up8.ogg" ],
+	  "holdLoop" : [ "/sfx/objects/camera_pan_loop.ogg" ],
+	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
+    }
+  },
+
+  "baseOffset" : [1.25, -0.875],
+  "muzzleOffset" : [2.625, 0.0],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-speedupminigun.lua"],
+    "class" : "TheaSpeedUpMinigun",
+
+    "minFiringSpeed" : 0.16, //Starting fire time
+	"maxFiringSpeed" : 0.04, //End fire time
+	"maxFiringTime" : 2.75, //How long it takes to reach maximum firing speed
+	
+    "baseDps" : 5.5,
+    "energyUsage" : 25.0,
+    "inaccuracy" : 0.05,
+	
+	"chargeTime" : 1.125,
+	"resetTime" : 1.125,
+	
+	"walkWhileFiring" : true,
+
+    "projectileType" : "alliancephysicalbullet",
+	"projectileCount" : 1,
+	"projectileParameters" : { 
+      "knockback" : 2
+    },
+	
+	"singleFireAnimation" : true, //Makes the weapon play an active animation once (non-looping) upon firing
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      },
+      "charge" : {
+        "armRotation" : -2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      },
+      "fire" : {
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+	    "weaponOffset" : [-0.15, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      },
+      "cooldown" : {
+        "duration" : 0.05,
+        "armRotation" : 4,
+        "weaponRotation" : 4,
+	    "weaponOffset" : [-0.15, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      },
+      "discharge" : {
+        "duration" : 0.1,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      }
+	}
+  },
+
+  "altAbilityType" : "thea-loadtracerammo2",
+
+  "builder" : "/items/buildscripts/thea-buildspeedupminigun.lua"
+}

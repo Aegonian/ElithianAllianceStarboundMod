@@ -29,7 +29,7 @@
   "theleanDescription" : "I wonder where this door leads...",
   "drodenDescription" : "Scanning failed. Unable to determine where this door leads.",
 
-  "inventoryIcon" : "rimbackgrounddooricon.png",
+  "inventoryIcon" : "icon.png",
   "orientations" : [
     {
       "dualImage" : "rimbackgrounddoor.png:<color>",

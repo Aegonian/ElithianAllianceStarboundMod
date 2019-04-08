@@ -1,6 +1,6 @@
 {
   "objectName" : "trinkrepairpod",
-  "colonyTags" : ["trink"],
+  "colonyTags" : ["trink","bed"],
   "printable" : false,
   "rarity" : "Common",
   "price" : 100,

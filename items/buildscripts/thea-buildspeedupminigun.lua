@@ -79,6 +79,8 @@ function build(directory, config, parameters, level, seed)
       config.tooltipFields.altAbilityTitleLabel = "Special:"
       config.tooltipFields.altAbilityLabel = config.altAbility.name or "unknown"
     end
+	--Custom manufacturer label
+	config.tooltipFields.manufacturerLabel = configParameter("manufacturer")
   end
 
   -- set price

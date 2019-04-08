@@ -54,8 +54,7 @@
 	"cooldownTime" : 0.3,
 	
 	//Tile damage settings
-	"tileDamage" : 0.0,
-	"damageTileDepth" : 3,
+	"tileDamagePerSecond" : 0.0,
 	"damageForeground" : true,
 	"damageBackground" : false,
 	

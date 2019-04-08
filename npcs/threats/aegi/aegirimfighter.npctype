@@ -5,7 +5,7 @@
   "dropPools" : [ "aegiRimDwellerDeathTreasure" ],
 
   "scriptConfig" : {
-    "behaviorConfig" : {
+    "behaviorConfig" : {	  
 	  //Crewmember Behaviour
       "friendlyNpcTypes" : ["crewmemberaegirimdweller"]
     },
@@ -56,10 +56,10 @@
 			],
             "primary" : [
 			  "thea-rimrifle1",
-			  "thea-rimrifle2",
 			  "thea-rimsniper1",
 			  "thea-rimshotgun1-npc",
-			  "thea-rimpistol1"
+			  "thea-rimpistol1",
+			  "thea-rimsmg1"
             ],
             "sheathedprimary" : [
 			  "thea-rimchainsaw-npc"

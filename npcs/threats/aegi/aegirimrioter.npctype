@@ -1,0 +1,69 @@
+{
+  "type" : "aegirimrioter",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "aegiRimDwellerDeathTreasure" ],
+
+  "scriptConfig" : {
+    "behaviorConfig" : {	  
+	  //Crewmember Behaviour
+      "friendlyNpcTypes" : ["crewmemberaegirimdweller"]
+    },
+	
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "You've come to the wrong neighborhood!",
+            "The Rim is ours!",
+            "You're in trouble now!",
+            "Stay out of the Rim!",
+            "The Rim doesn't want you!"
+          ],
+          "aegi" : [
+            "You've come to the wrong neighborhood!",
+            "The Rim is ours!",
+            "Your Alliance has no power in the Rim!",
+            "Stay out of the Rim!",
+            "The Rim doesn't want you!"
+          ],
+          "trink" : [
+            "You've come to the wrong neighborhood!",
+            "The Rim is ours!",
+            "Your Alliance has no power in the Rim!",
+            "Stay out of the Rim!",
+            "The Rim doesn't want you!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0,
+	    [
+          {
+            "head" : [
+			  { "name" : "aegi-rimdwellerhead" },
+			  { "name" : "thea-hiddenhead" }
+			],
+            "chest" : [
+			  { "name" : "aegi-rimdwellerchest" }
+			],
+            "legs" : [
+			  { "name" : "aegi-rimdwellerlegs" }
+			],
+            "primary" : [
+			  "thea-rimpistol1",
+			  "thea-rimsmg1"
+            ],
+            "alt" : [
+			  "rimdwellershield"
+            ]
+          }
+        ]
+	  ]
+    ]
+  }
+}

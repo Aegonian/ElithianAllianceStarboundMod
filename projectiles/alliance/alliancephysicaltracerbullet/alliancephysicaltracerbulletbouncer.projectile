@@ -1,0 +1,17 @@
+{
+  "projectileName" : "alliancephysicaltracerbulletbouncer",
+  "physics" : "grenade",
+  "bounces" : 2,
+  "image" : "alliancephysicaltracerbulletbouncer.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 0,
+  "speed" : 50,
+  "timeToLive" : 0.5,
+  "supportsProcessing" : true,
+  "actionOnReap" : [],
+  "lightColor" : [25, 5, 2],
+  "fullbright" : true,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

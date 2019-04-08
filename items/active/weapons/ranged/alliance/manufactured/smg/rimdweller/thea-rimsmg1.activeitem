@@ -1,0 +1,104 @@
+{
+  "itemName" : "thea-rimsmg1",
+  "price" : 250,
+  "inventoryIcon" : "thea-rimsmg1.png:idle",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "An SMG produced somewhere in the Rim.",
+  "manufacturer" : "^gray;The Rim^reset;",
+  "shortdescription" : "Dealer RM4",
+  "level" : 6,
+  "fixedLevel" : false,
+  "tooltipKind" : "thea-gun-mf",
+  "category" : "Submachinegun",
+  "itemTags" : ["weapon","ranged","smg","alliance","rimdweller","allianceUpgradeable"],
+  "twoHanded" : false,
+
+  "animation" : "/items/active/weapons/ranged/animations/thea-gun-ejectbullet.animation",
+  "animationParts" : {
+    "middle" : "thea-rimsmg1.png",
+    "middleFullbright" : "thea-rimsmg1lights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+		    "offset" : [0.25, 0.0]
+		  }
+		}
+      }
+    },
+    "particleEmitters" : {
+      "muzzleFlash" : {
+        "transformationGroups" : ["weapon"],
+		"offsetRegion" : [0.125, 0.25, 0.125, 0.25],
+        "particles" : [
+          { "particle" : "thea-discardedbulletlight" }
+        ]
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/ar1.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.25, 0.0],
+  "muzzleOffset" : [1.125, 0.375],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-gunfire.lua"],
+    "class" : "TheaGunFire",
+
+    "fireTime" : 0.07,
+    "baseDps" : 7.5,
+    "energyUsage" : 24,
+    "inaccuracy" : 0.045,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "alliancephysicalbullet",
+    "projectileParameters" : {
+      "knockback" : 4
+    },
+	
+	"singleFireAnimation" : true, //Tells the weapon that the active animation is single-fire instead of looping, allowing altFire to also play the active animation
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 4,
+        "weaponRotation" : 6,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.05,
+        "armRotation" : 4,
+        "weaponRotation" : 6,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+}
