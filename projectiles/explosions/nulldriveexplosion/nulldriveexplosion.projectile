@@ -1,0 +1,23 @@
+{
+  "projectileName" : "nulldriveexplosion",
+  "image" : "nulldriveexplosion.png",
+  "animationCycle" : 0.4,
+  "frameNumber" : 6,
+  "renderLayer" : "Player+1",
+  "speed" : 0,
+  "lightColor" : [255, 190, 0],
+  "pointLight" : true,
+  "fullbright" : true,
+  "statusEffects" : [
+    "linerifleburn"
+  ],
+  "damagePoly" : [ [-42, 0], [-32, -32], [0, -42], [32, -32], [42, 0], [32, 32], [0, 42], [-32, 32] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "damageTeam" : { "type" : "indiscriminate" },
+  "damageType" : "ignoresDef",
+  "damageKind" : "linerifle",
+  "knockback" : 15
+}

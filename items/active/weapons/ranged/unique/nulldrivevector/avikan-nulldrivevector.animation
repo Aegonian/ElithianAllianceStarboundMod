@@ -28,6 +28,28 @@
             "transition" : "off"
           }
         }
+      },
+	  "chargeAlt" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+		  "charging" : {
+            "frames" : 3,
+            "cycle" : 0.15,
+            "mode" : "transition",
+            "transition" : "off"
+          }
+        }
+      },
+	  "heat" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+		  "heating" : {
+            "frames" : 10,
+            "cycle" : 4.0
+          }
+        }
       }
     },
 
@@ -59,7 +81,6 @@
           "fullbright" : true,
           "transformationGroups" : ["muzzle"]
         },
-
         "partStates" : {
           "firing" : {
             "off" : {
@@ -83,7 +104,6 @@
           "fullbright" : true,
           "transformationGroups" : ["weapon"]
         },
-
         "partStates" : {
           "charge" : {
             "off" : {
@@ -92,6 +112,52 @@
               }
             },
             "charging" : {
+              "properties" : {
+                "image" : "<partImage>:<frame>"
+              }
+            }
+          }
+        }
+      },
+      "chargeAlt" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "offset" : [0, 0],
+          "fullbright" : true,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "chargeAlt" : {
+            "off" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "charging" : {
+              "properties" : {
+                "image" : "<partImage>:<frame>"
+              }
+            }
+          }
+        }
+      },
+      "heat" : {
+        "properties" : {
+          "zLevel" : 2,
+          "centered" : true,
+          "offset" : [0, 0],
+          "fullbright" : true,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "heat" : {
+            "off" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "heating" : {
               "properties" : {
                 "image" : "<partImage>:<frame>"
               }
@@ -121,6 +187,13 @@
       "particles" : [ ]
     },
 	"chargeparticles" : {
+	  "active" : false,
+      "emissionRate" : 9.0,
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [0, 0, 0, 0],
+      "particles" : [ ]
+    },
+	"chargeparticlesAlt" : {
 	  "active" : false,
       "emissionRate" : 9.0,
       "transformationGroups" : ["muzzle"],

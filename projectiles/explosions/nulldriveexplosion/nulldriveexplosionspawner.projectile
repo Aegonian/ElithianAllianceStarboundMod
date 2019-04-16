@@ -1,0 +1,12 @@
+{
+  "projectileName" : "nulldriveexplosionspawner",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/nulldriveexplosion/nulldriveexplosion.config"
+    }
+  ],
+  "damageKind" : "default",
+  "timeToLive" : 0
+}
