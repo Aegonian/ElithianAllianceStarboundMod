@@ -1,0 +1,66 @@
+{
+  "projectileName" : "architectconstructbullet",
+  "image" : "architectconstructbullet.png",
+  "physics" : "laser",
+  "bounces" : 0,
+  "piercing" : false,
+  "flippable" : true,
+  "animationCycle" : 1.0,
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "lightColor" : [65, 110, 150],
+  "fullbright" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+	  "file" : "/projectiles/explosions/architectconstructspawn/architectconstructspawn.config"
+    }
+  ],
+  "periodicActions" : [
+	{
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+		"type" : "animated",
+		"animation" : "/projectiles/unique/architectconstructbullet/trail.animation",
+        "position" : [-1.0, 0.15],
+        "size" : 0.75,
+        "layer" : "back",
+		"collidesForeground" : false,
+        "timeToLive" : 1.0,
+        "destructionTime" : 0.1,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    },
+	{
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+		"type" : "animated",
+		"animation" : "/projectiles/unique/architectconstructbullet/trail2.animation",
+        "position" : [-1.0, -0.15],
+        "size" : 0.75,
+        "layer" : "back",
+		"collidesForeground" : false,
+        "timeToLive" : 1.0,
+        "destructionTime" : 0.1,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 75,
+  "timeToLive" : 1.5,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  
+  "scripts" : [ "/projectiles/scripts/thea-vehiclespawnerprojectile.lua" ],
+  "vehicleType" : "architectconstruct",
+  "targetDistance" : 2.0
+}

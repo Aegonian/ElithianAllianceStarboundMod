@@ -1,0 +1,34 @@
+{
+  "name" : "architectconstruct",
+  "script" : "architectconstruct.lua",
+  "boundBox" : [-1, -1, 1, 1],
+  "slaveControlTimeout" : 2.0,
+  "slaveControlHeartbeat" : 1.0,
+  "canBeHit" : true,
+  "animation" : "architectconstruct.animation",
+
+  //GENERAL SETTINGS
+  "timeToLive" : 4.8,
+
+  //MOVEMENT CONTROLLER SETTINGS
+  "movementSettings" : {
+    "collisionPoly" : [ [0.5, 0.5],  [0.5, -0.5], [-0.5, -0.5], [-0.5, 0.5] ],
+    "mass" : 1.0,
+    "airFriction" : 100.0,
+    "liquidFriction" : 100.0,
+    "groundFriction" : 100.0,
+    "ignorePlatformCollision" : true,
+    "gravityEnabled" : false,
+    "collisionEnabled" : true
+  },
+
+  //PHYSICS COLLISION SETTINGS
+  "physicsCollisions" : {
+    "block" : {
+      "enabled" : false,
+	  "collision" : [ [1.625, 1.625],  [1.625, -1.625], [-1.625, -1.625], [-1.625, 1.625] ],
+      "collisionKind" : "dynamic",
+      "attachToPart" : "body"
+    }
+  }
+}

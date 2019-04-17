@@ -77,7 +77,7 @@
     "scripts" : ["/items/active/weapons/ranged/abilities/thea-linerifle.lua"],
     "class" : "TheaLineRifle",
 
-    "chargeTime" : 0.2,
+    "chargeTime" : 0.25,
     "baseDamage" : 2.0,
     "baseEnergyUsage" : 7,
     "inaccuracy" : 0.035,

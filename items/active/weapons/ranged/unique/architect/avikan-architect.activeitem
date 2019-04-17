@@ -4,11 +4,11 @@
   "inventoryIcon" : "avikan-architect.png",
   "maxStack" : 1,
   "rarity" : "Essential",
-  "description" : "^orange;A linerifle built using Centensian compononents.",
+  "description" : "^orange;Centensian components allow this weapon to summon constructs.",
   "shortdescription" : "^orange;The Architect^white;",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-chargedgun-unique",
+  "tooltipKind" : "thea-chargedgunalt-unique",
   "category" : "Line Rifle",
   "itemTags" : ["weapon","ranged","avikan","linerifle","theaUnique"],
   "twoHanded" : true,
@@ -25,7 +25,8 @@
     "gun" : "avikan-architect.png",
     "lights" : "avikan-architectlights.png",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/thea-invisiblemuzzle.png",
-    "charge" : "avikan-architectcharge.png"
+    "charge" : "avikan-architectcharge.png",
+    "chargeAlt" : "avikan-architectcharge.png"
   },
   "animationCustom" : {
 	"animatedParts" : {
@@ -47,6 +48,12 @@
 			//Same as BaseOffset
 		    "offset" : [1.2, 0.25]
 		  }
+		},
+		"chargeAlt" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.2, 0.25]
+		  }
 		}
       }
     },
@@ -61,7 +68,9 @@
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/architect_fire2.ogg" ],
+      "fireAlt" : [ "/sfx/gun/architect_fire.ogg" ],
 	  "chargeLoop" : [ "/sfx/gun/architect_charge.ogg" ],
+	  "chargeLoopAlt" : [ "/sfx/gun/architect_chargelong.ogg" ],
 	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
     }
   },
@@ -119,6 +128,104 @@
 	"projectileParameters" : {
       "knockback" : 10
     },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "charge" : {
+        "armRotation" : -2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+		"weaponOffset" : [-0.15, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.3,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+		"weaponOffset" : [-0.15, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "discharge" : {
+        "duration" : 0.1,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+	}
+  },
+  
+  "altAbility" : {
+    "name" : "Construct",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-doublelinerifle-altfire.lua"],
+    "class" : "TheaDoubleLineRifleAltFire",
+
+    "chargeTime" : 1.0,
+    "baseDamage" : 1.0,
+    "baseEnergyUsage" : 150,
+    "inaccuracy" : 0.0,
+	
+	//Amount of values in table should be equal to projectileCount. This value adjusts the angles at which the projectiles are fired
+	"angleAdjustmentsPerShot" : [ 0.0 ],
+	
+	"cooldownTime" : 1.2,
+	"callProjectileFunction" : "setTarget",
+	"callProjectileFunctionInput" : "aimPosition",
+	
+	//Config for the lightning/charging animation
+	
+	//Amount of steps for the lightning charge. Weapon automatically cycles through these over the weapon's chargeTime
+	"chargeLevels" : 6,
+	// [amount, width, forks, displacement, color, startOffset, endOffset]
+	"lightningChargeLevels" : [
+      [1, 0.8, 0, 0.30, [62, 158, 255, 200], [-0.25, 0.25], [-0.125, -0.25]],
+      [1, 0.8, 0, 0.32, [62, 158, 255, 220], [0.250, 0.25], [0.250, -0.25]],
+      [1, 0.8, 0, 0.34, [62, 158, 255, 245], [0.750, 0.25], [0.875, -0.25]],
+      [1, 0.8, 0, 0.36, [62, 158, 255, 255], [1.125, 0.25], [1.125, -0.25]],
+      [1, 0.8, 0, 0.38, [62, 158, 255, 255], [1.750, 0.25], [1.625, -0.25]],
+      [1, 0.8, 0, 0.40, [62, 158, 255, 255], [2.000, 0.25], [2.000, -0.25]]
+    ],
+	"lightningChargeLevels2" : [
+      [1, 0.7, 0, 0.40, [62, 158, 255, 200], [-0.5, 0.0], [-0.125, -0.25]],
+      [1, 0.7, 0, 0.45, [62, 158, 255, 220], [-0.5, 0.0], [0.250, 0.25]],
+      [1, 0.7, 0, 0.55, [62, 158, 255, 245], [-0.5, 0.0], [0.875, -0.25]],
+      [1, 0.7, 0, 0.60, [62, 158, 255, 255], [-0.5, 0.0], [1.125, 0.25]],
+      [1, 0.7, 0, 0.65, [62, 158, 255, 255], [-0.5, 0.0], [1.625, -0.25]],
+      [1, 0.7, 0, 0.70, [62, 158, 255, 255], [-0.5, 0.0], [2.000, 0.25]]
+    ],
+	//Amount: amount of lightning bolts to draw
+	//Width: Width of the bolts
+	//Forks: How many times the bolts should fork away from the main bolt
+	//Displacement: How far the bolts should deviate from being a straight line
+	//Color: Colour of the lightning bolts
+	//Start Offset: Offset for the lightning origin position, relative to muzzleOffset
+	//End Offset: Offset for the lightning target position, relative to muzzleOffset
+
+    "projectileType" : "architectconstructbullet",
+	"projectileCount" : 1,
 
     "stances" : {
       "idle" : {

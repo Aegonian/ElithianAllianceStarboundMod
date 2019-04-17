@@ -1,0 +1,14 @@
+{
+  "frameGrid" : {
+    "size" : [32, 32],
+    "dimensions" : [9, 3],
+
+    "names" : [
+      [ null, "spawn.1", "spawn.2", "spawn.3", "spawn.4", "spawn.5", "spawn.6", "spawn.7", "spawn.8" ],
+      [ null, "idle.1", "idle.2", "idle.3", "idle.4", "idle.5", "idle.6", "idle.7", "idle.8" ],
+      [ null, "despawn.1", "despawn.2", "despawn.3", "despawn.4", "despawn.5", "despawn.6", "despawn.7", "despawn.8" ]
+    ]
+  },
+  "aliases" : {
+  }
+}

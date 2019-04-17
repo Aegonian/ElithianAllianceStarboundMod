@@ -1,0 +1,116 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "body" : {
+        "priority" : 0,
+        "default" : "spawn",
+        "states" : {
+		  "spawn" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "idle"
+          },
+		  "idle" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "loop"
+          },
+		  "despawn" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "invisible"
+          },
+		  "invisible" : {}
+        }
+      }
+    },
+
+    "parts" : {
+      "body" : {
+        "properties" : {
+		  "zLevel" : 0,
+          "transformationGroups" : [ "body" ],
+          "offset" : [0.0, 0.0]
+        },
+        "partStates" : {
+          "body" : {
+            "spawn" : {
+              "properties" : {
+                "image" : "architectconstruct.png:spawn.<frame>"
+              }
+            },
+            "idle" : {
+              "properties" : {
+                "image" : "architectconstruct.png:idle.<frame>"
+              }
+            },
+            "despawn" : {
+              "properties" : {
+                "image" : "architectconstruct.png:despawn.<frame>"
+              }
+            },
+            "invisisble" : {
+              "properties" : {
+                "image" : ""
+              }
+            }
+          }
+        }
+      },
+	  "lights" : {
+        "properties" : {
+		  "zLevel" : 1,
+          "transformationGroups" : [ "body" ],
+		  "fullbright" : true,
+          "offset" : [0.0, 0.0]
+        },
+        "partStates" : {
+          "body" : {
+            "spawn" : {
+              "properties" : {
+                "image" : "architectconstructlights.png:spawn.<frame>"
+              }
+            },
+            "idle" : {
+              "properties" : {
+                "image" : "architectconstructlights.png:idle.<frame>"
+              }
+            },
+            "despawn" : {
+              "properties" : {
+                "image" : "architectconstructlights.png:despawn.<frame>"
+              }
+            },
+            "invisisble" : {
+              "properties" : {
+                "image" : ""
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "body" : { "interpolated" : true }
+  },
+  
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [0, 45, 75],
+      "pointLight" : false
+    }
+  },
+
+  "particleEmitters" : {},
+
+  "sounds" : {
+    "idleLoop" : [ "/sfx/melee/electrobaton_idle1.ogg" ],
+    "despawn" : [ "/sfx/tech/mech_powerdown2.ogg" ]
+  }
+}

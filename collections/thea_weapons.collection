@@ -187,7 +187,7 @@
 	"avikan-architect" : {
       "order" : 30,
       "title" : "The Architect",
-      "description" : "A linerifle built using Centensian compononents.",
+      "description" : "Centensian components allow this weapon to summon constructs.",
       "icon" : "/items/active/weapons/ranged/unique/architect/avikan-architect.png"
     },
 	"avikan-rhakorilongbow" : {
