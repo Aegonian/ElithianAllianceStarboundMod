@@ -49,7 +49,10 @@
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/akkimari_energyfire2.ogg" ],
-      "powerFire" : [ "/sfx/gun/akkimari_energyfire_heavy.ogg" ]
+      "powerFire" : [ "/sfx/gun/akkimari_energyfire_heavy.ogg" ],
+      "fireStart" : [ "/sfx/gun/flamethrower_start.ogg" ],
+      "fireLoop" : [ "/sfx/npc/monsters/akkimarijusticar_rain.ogg" ],
+      "fireEnd" : [ "/sfx/gun/flamethrower_stop.ogg" ]
     }
   },
 
@@ -150,6 +153,52 @@
 
         "frontArmFrame" : "swim.2",
         "backArmFrame" : "rotation"
+      }
+    }
+  },
+  
+  "altAbility" : {
+    "name" : "Vaash Spray",
+    "scripts" : ["/items/active/weapons/ranged/abilities/flamethrower/flamethrower.lua"],
+    "class" : "FlamethrowerAttack",
+
+    "baseDps" : 10.0,
+    "energyUsage" : 45,
+    "fireTime" : 0.05,
+    "inaccuracy" : 0.05,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "akkimariacidthrower",
+    "projectileParameters" : { },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.05,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
       }
     }
   },

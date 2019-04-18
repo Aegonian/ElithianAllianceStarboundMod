@@ -1,0 +1,13 @@
+{
+  "projectileName" : "primeinitiativeexplosionspawner",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/primeinitiativeexplosion/primeinitiativeexplosion2.config"
+    }
+  ],
+  "damageKind" : "linerifle",
+  "damageType" : "NoDamage",
+  "timeToLive" : 0
+}

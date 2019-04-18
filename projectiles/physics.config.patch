@@ -300,6 +300,21 @@
 	}
   },
   {"op" : "add",
+	"path" : "/thea-liquidspray",
+	"value" : {
+	  "mass" : 1.0,
+	  "gravityMultiplier" : 1.0,
+	  "maxMovementPerStep" : 0.4,
+
+	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+	  "ignorePlatformCollision" : true,
+
+	  "airFriction" : 1.0,
+	  "liquidFriction" : 2.0,
+	  "groundFriction" : 1.0
+	}
+  },
+  {"op" : "add",
 	"path" : "/thea-materialmodspawner",
 	"value" : {
 	  "mass" : 1.0,

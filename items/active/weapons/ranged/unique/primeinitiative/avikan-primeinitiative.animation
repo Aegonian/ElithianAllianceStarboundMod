@@ -28,6 +28,21 @@
             "transition" : "off"
           }
         }
+      },
+	  "chargeAlt" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+		  "charging" : {
+            "frames" : 15,
+            "cycle" : 1.8,
+            "mode" : "transition",
+            "transition" : "firing"
+          },
+		  "firing" : {
+            "frames" : 1
+          }
+        }
       }
     },
 
@@ -59,7 +74,6 @@
           "fullbright" : true,
           "transformationGroups" : ["muzzle"]
         },
-
         "partStates" : {
           "firing" : {
             "off" : {
@@ -77,13 +91,12 @@
       },
       "charge" : {
         "properties" : {
-          "zLevel" : 1,
+          "zLevel" : 2,
           "centered" : true,
           "offset" : [0.0, 0.0],
           "fullbright" : true,
           "transformationGroups" : ["weapon"]
         },
-
         "partStates" : {
           "charge" : {
             "off" : {
@@ -94,6 +107,34 @@
             "charging" : {
               "properties" : {
                 "image" : "<partImage>:<frame>"
+              }
+            }
+          }
+        }
+      },
+      "chargeAlt" : {
+        "properties" : {
+          "zLevel" : 2,
+          "centered" : true,
+          "offset" : [0.0, 0.0],
+          "fullbright" : true,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "chargeAlt" : {
+            "off" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "charging" : {
+              "properties" : {
+                "image" : "<partImage>:<frame>"
+              }
+            },
+            "firing" : {
+              "properties" : {
+                "image" : "<partImage>:15"
               }
             }
           }
@@ -110,7 +151,9 @@
 
   "transformationGroups" : {
     "weapon" : {},
-    "muzzle" : {}
+    "muzzle" : {},
+    "beam" : {},
+    "beamEnd" : {}
   },
 
   "particleEmitters" : {
@@ -126,6 +169,30 @@
       "transformationGroups" : ["muzzle"],
       "offsetRegion" : [-0.1, 0, -2.0, 0],
       "particles" : [ ]
+    },
+	"chargeparticlesAlt" : {
+	  "active" : false,
+      "emissionRate" : 9.0,
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [-0.1, 0, -2.0, 0],
+      "particles" : [ ]
+    },
+    "beamCollision" : {
+      "active" : false,
+      "transformationGroups" : ["muzzle", "beamEnd"],
+      "emissionRate" : 20,
+      "particles" : [
+        {"particle" : "linerifleimpact"}
+      ]
+    },
+    "beamParticles" : {
+      "active" : false,
+      "transformationGroups" : ["beam"],
+      "emissionRate" : 20,
+      "particles" : [
+        {"particle" : "lineriflebeam"},
+        {"particle" : "lineriflebeam2"}
+      ]
     }
   },
 
@@ -140,6 +207,10 @@
   "sounds" : {
     "fire" : [ ],
 	"chargeLoop" : [ ],
-	"discharge" : [ ]
+	"discharge" : [ ],
+    "altBeamStart" : [],
+    "altBeamLoop" : [],
+    "altBeamEnd" : [],
+    "altBeamImpact" : []
   }
 }

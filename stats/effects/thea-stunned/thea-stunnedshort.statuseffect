@@ -1,0 +1,16 @@
+{
+  "name" : "thea-stunnedshort",
+  "blockingStat" : "stunImmunity",
+
+  "effectConfig" : {
+	"minimumDuration" : 1,
+	"minTriggerDamage" : 1
+  },
+  "defaultDuration" : 1.5,
+
+  "scripts" : [
+    "thea-stunned.lua"
+  ],
+
+  "animationConfig" : "thea-stunned.animation"
+}

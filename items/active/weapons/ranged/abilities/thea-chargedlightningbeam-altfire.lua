@@ -2,9 +2,9 @@ require "/scripts/interp.lua"
 require "/scripts/vec2.lua"
 require "/scripts/util.lua"
 
-TheaChargedBeamAltFire = WeaponAbility:new()
+TheaChargedLightningBeamAltFire = WeaponAbility:new()
 
-function TheaChargedBeamAltFire:init()
+function TheaChargedLightningBeamAltFire:init()
   self.damageConfig.baseDamage = self.baseDps * self.fireTime
 
   self.weapon:setStance(self.stances.idle)
@@ -18,6 +18,8 @@ function TheaChargedBeamAltFire:init()
   self.chargeHasStarted = false
   self.shouldDischarge = false
 
+  self.chainAnimationTimer = 0
+  
   self:reset()
 
   self.weapon.onLeaveAbility = function()
@@ -31,13 +33,13 @@ function TheaChargedBeamAltFire:init()
   end
 end
 
-function TheaChargedBeamAltFire:update(dt, fireMode, shiftHeld)
+function TheaChargedLightningBeamAltFire:update(dt, fireMode, shiftHeld)
   WeaponAbility.update(self, dt, fireMode, shiftHeld)
 
   self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
   self.impactSoundTimer = math.max(self.impactSoundTimer - self.dt, 0)
   self.impactDamageTimer = math.max(self.impactDamageTimer - self.dt, 0)
-
+  
   if self.fireMode == (self.activatingFireMode or self.abilitySlot)
     and not self.weapon.currentAbility
     and not world.lineTileCollision(mcontroller.position(), self:firePosition())
@@ -48,7 +50,7 @@ function TheaChargedBeamAltFire:update(dt, fireMode, shiftHeld)
   end
 end
 
-function TheaChargedBeamAltFire:charge()
+function TheaChargedLightningBeamAltFire:charge()
   self.weapon:setStance(self.stances.charge)
   
   self.chargeHasStarted = true
@@ -74,6 +76,11 @@ function TheaChargedBeamAltFire:charge()
       mcontroller.controlModifiers({runningSuppressed=true})
 	end
 	
+	--Calculate how far into the charge we are. Do 1 - X because we count from 1 to 0, not 0 to 1
+	local chargePercentage = 1 - (self.chargeTimer / self.chargeTime)
+	--Update the lightning charge level. This function also call the draw lightning code
+	self.chargeLevel = self:setChargeLevel(chargePercentage, self.chargeLevel)
+	
     coroutine.yield()
   end
   
@@ -93,10 +100,13 @@ function TheaChargedBeamAltFire:charge()
   end
 end
 
-function TheaChargedBeamAltFire:fire()
+function TheaChargedLightningBeamAltFire:fire()
   self.weapon:setStance(self.stances.fire)
 
   animator.stopAllSounds("chargeLoopAlt")
+  
+  --Disable the lightning animation
+  activeItem.setScriptedAnimationParameter("lightning", {})
   
   animator.playSound("altBeamStart")
   animator.playSound("altBeamLoop", -1)
@@ -169,10 +179,17 @@ function TheaChargedBeamAltFire:fire()
 	  if self.spawnImpactProjectile then
 		--Spawn a projectile at beamend, which damages terrain
 		if self.impactDamageTimer == 0 then
+		  local params = {}
+		  params.power = self:damagePerImpactProjectile()
+		  params.powerMultiplier = activeItem.ownerPowerMultiplier()
+		  
 		  world.spawnProjectile(
 			self.impactProjectile,
 			collidePoint,
-			activeItem.ownerEntityId()
+			activeItem.ownerEntityId(),
+			{0,0},
+			false,
+			params
 		  )
 		self.impactDamageTimer = self.impactDamageTimeout
 		end
@@ -191,7 +208,7 @@ function TheaChargedBeamAltFire:fire()
     self.weapon:setDamage(self.damageConfig, {self.weapon.muzzleOffset, {self.weapon.muzzleOffset[1] + beamLength, self.weapon.muzzleOffset[2]}}, self.fireTime)
 
     self:drawBeam(beamEnd, collidePoint)
-
+	
     coroutine.yield()
   end
 
@@ -204,10 +221,26 @@ function TheaChargedBeamAltFire:fire()
   self:setState(self.cooldown)
 end
 
-function TheaChargedBeamAltFire:drawBeam(endPos, didCollide)
+function TheaChargedLightningBeamAltFire:drawBeam(endPos, didCollide)
   local newChain = copy(self.chain)
   newChain.startOffset = self.weapon.muzzleOffset
   newChain.endPosition = endPos
+  
+  --Optionally animate the chain beam
+  if self.animatedChain then
+	self.chainAnimationTimer = math.min(self.chainAnimationTime, self.chainAnimationTimer + self.dt)
+	if self.chainAnimationTimer == self.chainAnimationTime then
+	  self.chainAnimationTimer = 0
+	end
+	
+	local chainAnimationFrame = 1
+	chainAnimationFrame = math.floor(self.chainAnimationTimer / self.chainAnimationTime * self.chainAnimationFrames)
+	
+	newChain.segmentImage = self.chain.segmentImage .. ":" .. chainAnimationFrame
+	
+	--world.debugText(self.chainAnimationTimer, vec2.add(mcontroller.position(), {0,0}), "yellow")
+	--world.debugText(chainAnimationFrame, vec2.add(mcontroller.position(), {0,1}), "yellow")
+  end
 
   if didCollide then
     newChain.endSegmentImage = nil
@@ -216,7 +249,34 @@ function TheaChargedBeamAltFire:drawBeam(endPos, didCollide)
   activeItem.setScriptedAnimationParameter("chains", {newChain})
 end
 
-function TheaChargedBeamAltFire:cooldown()
+function TheaChargedLightningBeamAltFire:setChargeLevel(chargePercentage, currentLevel)
+  local level = math.ceil(chargePercentage * self.chargeLevels)
+  if currentLevel < level then
+    local lightningCharge = self.lightningChargeLevels[level]
+    self:setLightning(lightningCharge[1], lightningCharge[2], lightningCharge[3], lightningCharge[4], lightningCharge[5], lightningCharge[6], lightningCharge[7])
+  end
+  return level
+end
+
+function TheaChargedLightningBeamAltFire:setLightning(amount, width, forks, displacement, color, startOffset, endOffset)
+  local lightning = {}
+  for i = 1, amount do
+    local bolt = {
+      minDisplacement = 0.125,
+      forks = forks,
+      forkAngleRange = 0.75,
+      width = width,
+	  displacement = displacement,
+      color = color
+    }	
+	bolt.itemStartPosition = vec2.add(self.weapon.muzzleOffset, startOffset)
+	bolt.itemEndPosition = vec2.add(self.weapon.muzzleOffset, endOffset)
+    table.insert(lightning, bolt)
+  end
+  activeItem.setScriptedAnimationParameter("lightning", lightning)
+end
+
+function TheaChargedLightningBeamAltFire:cooldown()
   self.timeSpentFiring = 0
   
   if self.shouldDischarge == true then
@@ -253,17 +313,17 @@ function TheaChargedBeamAltFire:cooldown()
   end
 end
 
-function TheaChargedBeamAltFire:firePosition()
+function TheaChargedLightningBeamAltFire:firePosition()
   return vec2.add(mcontroller.position(), activeItem.handPosition(self.weapon.muzzleOffset))
 end
 
-function TheaChargedBeamAltFire:aimVector(inaccuracy)
+function TheaChargedLightningBeamAltFire:aimVector(inaccuracy)
   local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle + sb.nrand(inaccuracy, 0))
   aimVector[1] = aimVector[1] * mcontroller.facingDirection()
   return aimVector
 end
 
-function TheaChargedBeamAltFire:updateChargeIntake(chargeTimeLeft)  
+function TheaChargedLightningBeamAltFire:updateChargeIntake(chargeTimeLeft)  
   --Update existing charge particles
   for i,particle in ipairs(self.chargeParticles) do
 	particle.muzzlePosition = self:firePosition()
@@ -296,11 +356,15 @@ function TheaChargedBeamAltFire:updateChargeIntake(chargeTimeLeft)
   activeItem.setScriptedAnimationParameter("particles", self.chargeParticles)
 end
 
-function TheaChargedBeamAltFire:uninit()
+function TheaChargedLightningBeamAltFire:damagePerImpactProjectile()
+  return (self.impactProjectileDamage or (self.impactProjectileDps * self.impactDamageTimeout)) * (self.baseDamageMultiplier or 1.0) * config.getParameter("damageLevelMultiplier")
+end
+
+function TheaChargedLightningBeamAltFire:uninit()
   self:reset()
 end
 
-function TheaChargedBeamAltFire:reset()
+function TheaChargedLightningBeamAltFire:reset()
   self.timeSpentFiring = 0
   
   --Charge reset
@@ -318,6 +382,10 @@ function TheaChargedBeamAltFire:reset()
   animator.stopAllSounds("altBeamStart")
   animator.stopAllSounds("altBeamLoop")
   animator.stopAllSounds("chargeLoopAlt")
+  
+  --Lightning reset
+  activeItem.setScriptedAnimationParameter("lightning", {})
+  self.chargeLevel = 0
   
   --Charge particle set-up
   if self.useChargeParticles then

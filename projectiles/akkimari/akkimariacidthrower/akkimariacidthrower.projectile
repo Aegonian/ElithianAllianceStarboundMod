@@ -1,0 +1,49 @@
+{
+  "projectileName" : "akkimariacidthrower",
+  "image" : "akkimariacidthrower.png",
+  "physics" : "thea-liquidspray",
+  "flippable" : true,
+  "animationCycle" : 0.6,
+  "animationLoops" : false,
+  "frameNumber" : 12,
+  "winddownFrames" : 3,
+  "intangibleWinddown" : false,
+  "emitters" : [ "akkimariacidrainlight" ],
+  "power" : 50,
+  "speed" : 50,
+  "timeToLive" : 0.6,
+  "bounces" : -1,
+  "piercing" : true,
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "damageKind" : "akkimariacid",
+  "statusEffects" : [
+    "akkimariacidburn"
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.025,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "animated",
+        "animation" : "/projectiles/akkimari/akkimariacidthrower/trail.animation",
+        "position" : [-0.5, 0],
+        "size" : 0.5,
+        "layer" : "back",
+		"collidesForeground" : false,
+        "timeToLive" : 0.2,
+        "destructionTime" : 0.3,
+        "destructionAction" : "shrink",
+        "fullbright" : true
+      }
+    }
+  ],
+  "lightColor" : [0, 75, 10],
+  "fullbright" : true,
+  "hydrophobic" : false,
+  
+  "scripts" : [ "/projectiles/scripts/thea-randomspeedprojectile.lua" ],
+  "minSpeed" : 45,
+  "maxSpeed" : 60
+}

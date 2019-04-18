@@ -1,0 +1,22 @@
+{
+  "kind" : "lineriflebeam",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/linerifleburn/linerifleburn.animation",
+    "position" : [0, 0],
+    "finalVelocity" : [0, 0],
+    "destructionAction" : "fade",
+    "destructionTime" : 0.1,
+    "fade" : 1,
+    "size" : 0.6,
+    "layer" : "middle",
+    "fullbright" : true,
+    "timeToLive" : 0.25,
+    "variance" : {
+      "size" : 0.2,
+      "rotation" : 180,
+      "position" : [0.25, 0.25],
+      "finalVelocity" : [1.0, 1.0]
+    }
+  }
+}

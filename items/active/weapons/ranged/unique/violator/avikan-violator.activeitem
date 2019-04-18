@@ -81,7 +81,7 @@
 
     "chargeTime" : 1.5,
     "baseDamage" : 15.0,
-    "baseEnergyUsage" : 100,
+    "baseEnergyUsage" : 85,
     "inaccuracy" : 0.0,
 	
 	"walkWhileFiring" : true,

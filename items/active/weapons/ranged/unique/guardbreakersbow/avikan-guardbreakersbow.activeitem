@@ -8,7 +8,7 @@
   "shortdescription" : "^orange;Guardbreaker's Bow^white;",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-chargedgun-unique",
+  "tooltipKind" : "thea-chargedgunalt-unique",
   "category" : "Line Rifle",
   "itemTags" : ["weapon","ranged","avikan","linerifle","theaUnique"],
   "twoHanded" : true,
@@ -29,6 +29,21 @@
   },
   "animationCustom" : {
 	"animatedParts" : {
+      "stateTypes" : {
+		"altSwoosh" : {
+		  "default" : "idle",
+		  "states" : {
+			"idle" : {
+			},
+			"fire" : {
+			  "frames" : 3,
+			  "cycle" : 0.08,
+			  "mode" : "transition",
+			  "transition" : "idle"
+			}
+		  }
+		}
+	  },
       "parts" : {
         "gun" : {
 		  "properties" : {
@@ -47,6 +62,29 @@
 			//Same as BaseOffset
 		    "offset" : [0.8, 0.15]
 		  }
+		},
+		"altSwoosh" : {
+		  "properties" : {
+			"zLevel" : -3,
+			"centered" : true,
+			"offset" : [-2.875, 1.25],
+			"transformationGroups" : ["muzzle"]
+		  },
+		  "partStates" : {
+			"altSwoosh" : {
+			  "idle" : {
+				"properties" : {
+				  "image" : ""
+				}
+			  },
+			  "fire" : {
+				"properties" : {
+				  "image" : "/items/active/weapons/melee/animations/swoosh/thea-shortswordswoosh.png:<frame>",
+				  "damageArea" : [[-3.75, 1.5], [-1.875, 2.25], [0.75, 2.25], [3, 1.25], [3.75, -0.15], [3.75, -1.675], [3, -2.375], [0, -1.875]]
+				}
+			  }
+			}
+		  }
 		}
       }
     },
@@ -56,10 +94,18 @@
           { "particle" : "lineriflepuff", "offset" : [-1.0, 0.1] },
           { "particle" : "lineriflepuff", "offset" : [-1.0, 0.1] }
         ]
+      },
+	  "altSwoosh" : {
+        "active" : false,
+        "emissionRate" : 5,
+        "transformationGroups" : ["muzzle"],
+        "offsetRegion" : [0.0, 0.0, 0.0, 0.0],
+        "particles" : []
       }
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/guardbreaker_fire.ogg" ],
+	  "altFire" : [ "/sfx/melee/swing_hammer.ogg" ],
 	  "chargeLoop" : [ "/sfx/gun/guardbreaker_charge.ogg" ],
 	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
     }
@@ -85,7 +131,7 @@
     "class" : "TheaLineRifleBurst",
 
     "chargeTime" : 0.9,
-    "baseDamage" : 11.5,
+    "baseDamage" : 13.0,
     "baseEnergyUsage" : 40,
     "inaccuracy" : 0.01,
 	
@@ -174,6 +220,45 @@
         "allowFlip" : false
       }
 	}
+  },
+  
+  "altAbility" : {
+    "name" : "Gun Bash",
+    "scripts" : ["/items/active/weapons/melee/abilities/thea-altmeleeslash.lua"],
+    "class" : "TheaAltMeleeSlash",
+
+    "fireTime" : 1.2,
+    "baseDps" : 6.5,
+    "damageConfig" : {
+      "damageSourceKind" : "hammer",
+      "statusEffects" : [ "thea-stunnedshort" ],
+      "knockbackMode" : "aim",
+      "knockback" : 35,
+      "timeoutGroup" : "primary"
+    },
+
+    "stances" : {
+      "windup" : {
+        "duration" : 0.2,
+        "armRotation" : 80,
+        "weaponRotation" : 60,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 0],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire" : {
+        "duration" : 0.4,
+        "armRotation" : -15,
+        "weaponRotation" : 25,
+        "twoHanded" : true,
+        "weaponOffset" : [0.25, 0],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
   },
 
   "builder" : "/items/buildscripts/thea-buildchargedgun.lua"

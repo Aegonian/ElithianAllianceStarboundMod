@@ -1,9 +1,9 @@
 {
-  "projectileName" : "errasslayersbullet",
+  "projectileName" : "errasslayersbulletbouncer",
   "image" : "errasslayersbullet.png",
-  "physics" : "lineriflebullet",
-  "bounces" : 0,
-  "piercing" : false,
+  "physics" : "laser",
+  "bounces" : 2,
+  "piercing" : true,
   "animationCycle" : 0.5,
   "frameNumber" : 4,
   //"emitters" : [ "errasslayerstrail", "errasslayerstrail2" ],
@@ -25,7 +25,7 @@
       "specification" : {
         "type" : "textured",
         "image" : "/projectiles/unique/errasslayersbullet/trail.png",
-        "position" : [-1.0, 0],
+        "position" : [-0.25, 0],
         "layer" : "middle",
         "timeToLive" : 0.0,
         "destructionTime" : 0.9,
@@ -42,7 +42,7 @@
     "errasslayersbomb"
   ],
   
-  "scripts" : [ "/projectiles/scripts/thea-lineriflehoming.lua" ],
+  "scripts" : [ "/projectiles/scripts/thea-homingbullet.lua" ],
   "searchRadius" : 25,
   "baseHomingControlForce" : 0.75
 }

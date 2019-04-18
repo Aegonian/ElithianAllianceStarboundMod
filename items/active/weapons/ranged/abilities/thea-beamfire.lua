@@ -13,6 +13,7 @@ function TheaBeamFire:init()
   self.impactSoundTimer = 0
   self.impactDamageTimeout = self.impactDamageTimeout or 1.0
   self.impactDamageTimer = self.impactDamageTimeout
+  self.timeSpentFiring = 0
   
   --Optional animation set-up
   self.active = false
@@ -69,11 +70,14 @@ function TheaBeamFire:fire()
   end
 
   local wasColliding = false
-  while self.fireMode == (self.activatingFireMode or self.abilitySlot) and status.overConsumeResource("energy", (self.energyUsage or 0) * self.dt) and not world.lineTileCollision(mcontroller.position(), self:firePosition()) do
+  while (self.fireMode == (self.activatingFireMode or self.abilitySlot) or (self.minFiringTime and self.timeSpentFiring < self.minFiringTime)) and status.overConsumeResource("energy", (self.energyUsage or 0) * self.dt) and not world.lineTileCollision(mcontroller.position(), self:firePosition()) and not (self.maxFiringTime and self.timeSpentFiring > self.maxFiringTime) do
     local beamStart = self:firePosition()
     local beamEnd = vec2.add(beamStart, vec2.mul(vec2.norm(self:aimVector(self.inaccuracy or 0)), self.beamLength))
     local beamLength = self.beamLength
 	local beamIsColliding = false
+	
+	--Count up the firing time
+	self.timeSpentFiring = self.timeSpentFiring + self.dt
 
 	--Do a line collision check on terrain
     local collidePoint = world.lineCollision(beamStart, beamEnd)
@@ -218,6 +222,8 @@ end
 function TheaBeamFire:cooldown()
   self.weapon:setStance(self.stances.cooldown)
   self.weapon:updateAim()
+  
+  self.timeSpentFiring = 0
 
   util.wait(self.stances.cooldown.duration, function()
 
@@ -246,4 +252,5 @@ function TheaBeamFire:reset()
   animator.setParticleEmitterActive("muzzleFlash", false)
   animator.stopAllSounds("fireStart")
   animator.stopAllSounds("fireLoop")
+  self.timeSpentFiring = 0
 end

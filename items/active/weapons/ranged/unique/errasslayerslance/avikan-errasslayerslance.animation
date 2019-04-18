@@ -28,6 +28,18 @@
             "transition" : "off"
           }
         }
+      },
+	  "chargeAlt" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+		  "charging" : {
+            "frames" : 10,
+            "cycle" : 1.2,
+            "mode" : "transition",
+            "transition" : "off"
+          }
+        }
       }
     },
 
@@ -96,6 +108,29 @@
             }
           }
         }
+      },
+      "chargeAlt" : {
+        "properties" : {
+          "zLevel" : 2,
+          "centered" : true,
+          "offset" : [0, 0],
+          "fullbright" : true,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "chargeAlt" : {
+            "off" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "charging" : {
+              "properties" : {
+                "image" : "<partImage>:<frame>"
+              }
+            }
+          }
+        }
       }
     }
   },
@@ -119,6 +154,13 @@
       "particles" : [ ]
     },
 	"chargeparticles" : {
+	  "active" : false,
+      "emissionRate" : 9.0,
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [0, 0, 0, 0],
+      "particles" : [ ]
+    },
+	"chargeparticlesAlt" : {
 	  "active" : false,
       "emissionRate" : 9.0,
       "transformationGroups" : ["muzzle"],
