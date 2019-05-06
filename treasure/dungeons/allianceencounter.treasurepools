@@ -179,10 +179,10 @@
     } ],
 	[5, {
 	  "pool" : [
-        {"weight" : 0.25, "item" : "thea-tier5rifle" },
-		{"weight" : 0.25, "item" : "thea-tier5shotgun" },
-		{"weight" : 0.25, "item" : "thea-tier5sniper" },
-		{"weight" : 0.25, "item" : "thea-tier5smg" }
+        {"weight" : 0.25, "item" : "thea-tier6rifle" },
+		{"weight" : 0.25, "item" : "thea-tier6shotgun" },
+		{"weight" : 0.25, "item" : "thea-tier6sniper" },
+		{"weight" : 0.25, "item" : "thea-tier6smg" }
       ]
     } ]
   ],

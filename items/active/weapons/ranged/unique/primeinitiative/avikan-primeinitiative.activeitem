@@ -182,13 +182,13 @@
 	
 	//Beam Config
     "fireTime" : 0.1,
-    "baseDps" : 13.5,
+    "baseDps" : 15.0,
     "energyUsage" : 120.0,
     "inaccuracy" : 0.0,
 	
 	"walkWhileFiring" : true,
-	"minFiringTime" : 1.0,
-	"maxFiringTime" : 1.0,
+	"minFiringTime" : 1.2,
+	"maxFiringTime" : 1.2,
 	
 	"impactDamageTimeout" : 0.1,
 	"spawnImpactProjectile" : true,

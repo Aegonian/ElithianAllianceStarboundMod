@@ -28,6 +28,21 @@
             "transition" : "off"
           }
         }
+      },
+	  "chargeAlt" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+		  "charging" : {
+            "frames" : 30,
+            "cycle" : 3.0,
+            "mode" : "transition",
+            "transition" : "firing"
+          },
+		  "firing" : {
+            "frames" : 1
+          }
+        }
       }
     },
 
@@ -59,7 +74,6 @@
           "fullbright" : true,
           "transformationGroups" : ["muzzle"]
         },
-
         "partStates" : {
           "firing" : {
             "off" : {
@@ -83,7 +97,6 @@
           "fullbright" : true,
           "transformationGroups" : ["weapon"]
         },
-
         "partStates" : {
           "charge" : {
             "off" : {
@@ -94,6 +107,34 @@
             "charging" : {
               "properties" : {
                 "image" : "<partImage>:<frame>"
+              }
+            }
+          }
+        }
+      },
+      "chargeAlt" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "offset" : [0, 0],
+          "fullbright" : true,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "chargeAlt" : {
+            "off" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "charging" : {
+              "properties" : {
+                "image" : "<partImage>:<frame>"
+              }
+            },
+            "firing" : {
+              "properties" : {
+                "image" : "<partImage>:30"
               }
             }
           }
@@ -110,7 +151,9 @@
 
   "transformationGroups" : {
     "weapon" : {},
-    "muzzle" : {}
+    "muzzle" : {},
+    "beam" : {},
+    "beamEnd" : {}
   },
 
   "particleEmitters" : {
@@ -140,6 +183,27 @@
       "particles" : [
         { "particle" : "lineriflecharge"}
 	  ]
+    },
+	"chargeparticlesAlt" : {
+	  "active" : false,
+      "emissionRate" : 9.0,
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [0.1, -0.1, 0.1, -0.1],
+      "particles" : [
+        { "particle" : "lineriflecharge"}
+	  ]
+    },
+    "beamCollision" : {
+      "active" : false,
+      "transformationGroups" : ["muzzle", "beamEnd"],
+      "emissionRate" : 20,
+      "particles" : []
+    },
+    "beamParticles" : {
+      "active" : false,
+      "transformationGroups" : ["beam"],
+      "emissionRate" : 10,
+      "particles" : []
     }
   },
 
@@ -152,8 +216,12 @@
   },
 
   "sounds" : {
-    "fire" : [ ],
-	"chargeLoop" : [ ],
-	"discharge" : [ ]
+    "fire" : [],
+	"chargeLoop" : [],
+	"discharge" : [],
+    "altBeamStart" : [],
+    "altBeamLoop" : [],
+    "altBeamEnd" : [],
+    "altBeamImpact" : []
   }
 }

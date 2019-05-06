@@ -47,7 +47,7 @@
           "off" : {},
 		  "heating" : {
             "frames" : 10,
-            "cycle" : 4.0
+            "cycle" : 4.75
           }
         }
       }

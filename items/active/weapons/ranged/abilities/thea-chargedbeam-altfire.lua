@@ -101,6 +101,10 @@ function TheaChargedBeamAltFire:fire()
   animator.playSound("altBeamStart")
   animator.playSound("altBeamLoop", -1)
 
+  if self.recoilKnockbackVelocity and not (self.crouchStopsRecoil and mcontroller.crouching()) then
+	mcontroller.controlJump()
+  end
+  
   local wasColliding = false
   while (self.fireMode == (self.activatingFireMode or self.abilitySlot) or (self.minFiringTime and self.timeSpentFiring < self.minFiringTime)) and status.overConsumeResource("energy", (self.energyUsage or 0) * self.dt) and not world.lineTileCollision(mcontroller.position(), self:firePosition()) and not (self.maxFiringTime and self.timeSpentFiring > self.maxFiringTime) do
     local beamStart = self:firePosition()
@@ -169,10 +173,17 @@ function TheaChargedBeamAltFire:fire()
 	  if self.spawnImpactProjectile then
 		--Spawn a projectile at beamend, which damages terrain
 		if self.impactDamageTimer == 0 then
+		  local params = {}
+		  params.power = self:damagePerImpactProjectile()
+		  params.powerMultiplier = activeItem.ownerPowerMultiplier()
+		  
 		  world.spawnProjectile(
 			self.impactProjectile,
 			collidePoint,
-			activeItem.ownerEntityId()
+			activeItem.ownerEntityId(),
+			self:aimVector(0),
+			false,
+			params
 		  )
 		self.impactDamageTimer = self.impactDamageTimeout
 		end
@@ -191,6 +202,19 @@ function TheaChargedBeamAltFire:fire()
     self.weapon:setDamage(self.damageConfig, {self.weapon.muzzleOffset, {self.weapon.muzzleOffset[1] + beamLength, self.weapon.muzzleOffset[2]}}, self.fireTime)
 
     self:drawBeam(beamEnd, collidePoint)
+	
+	--Optionally apply knockback to the player
+	if self.recoilKnockbackVelocity then
+	  --If not crouching or if crouch does not impact recoil
+	  if not (self.crouchStopsRecoil and mcontroller.crouching()) then
+		local recoilVelocity = vec2.mul(vec2.norm(vec2.mul(self:aimVector(0), -1)), self.recoilKnockbackVelocity * self.dt)
+		mcontroller.addMomentum(recoilVelocity)
+	  --If crouching
+	  elseif self.crouchRecoilKnockbackVelocity then
+		local recoilVelocity = vec2.mul(vec2.norm(vec2.mul(self:aimVector(0), -1)), self.crouchRecoilKnockbackVelocity * self.dt)
+		mcontroller.addMomentum(recoilVelocity)
+	  end
+	end
 
     coroutine.yield()
   end
@@ -294,6 +318,10 @@ function TheaChargedBeamAltFire:updateChargeIntake(chargeTimeLeft)
   self.chargeParticles = newChargeParticles
   
   activeItem.setScriptedAnimationParameter("particles", self.chargeParticles)
+end
+
+function TheaChargedBeamAltFire:damagePerImpactProjectile()
+  return (self.impactProjectileDamage or (self.impactProjectileDps * self.impactDamageTimeout)) * (self.baseDamageMultiplier or 1.0) * config.getParameter("damageLevelMultiplier")
 end
 
 function TheaChargedBeamAltFire:uninit()

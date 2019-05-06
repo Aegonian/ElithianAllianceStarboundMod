@@ -104,7 +104,7 @@
   },
   "descriptionLabel" : {
     "type" : "label",
-    "position" : [9, 60],
+    "position" : [9, 52],
     "hAnchor" : "left",
     "vAnchor" : "top",
     "wrapWidth" : 124,

@@ -32,10 +32,9 @@
     "projectileCount" : [4,8],
     "inaccuracy" : 0.2,
 
-    "projectileType" : "smalljumpriflebullet",
+    "projectileType" : "smalljumpriflebullet-slow",
     "projectileParameters" : {
-      "knockbackRange" : [6, 12],
-	  "speed" : 40
+      "knockbackRange" : [6, 12]
     },
 
     "stances" : {

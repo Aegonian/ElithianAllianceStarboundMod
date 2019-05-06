@@ -5,7 +5,7 @@
   "effectConfig" : {
 	"gravitySourceProjectile" : "centensiangravitysource"
   },
-  "defaultDuration" : 5,
+  "defaultDuration" : 15,
 
   "scripts" : [
     "centensiangravity.lua"

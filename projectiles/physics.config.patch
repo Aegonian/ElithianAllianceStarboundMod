@@ -511,6 +511,7 @@
 	  "bounceFactor" : 0.25,
 	  "stopOnFirstBounce" : true,
 	  "maxMovementPerStep" : 0.4,
+	  
 	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
 	  "ignorePlatformCollision" : true,
 
@@ -527,6 +528,7 @@
 	  "bounceFactor" : 0.35,
 	  "stopOnFirstBounce" : true,
 	  "maxMovementPerStep" : 0.4,
+	  
 	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
 	  "ignorePlatformCollision" : true,
 
@@ -543,12 +545,50 @@
 	  "bounceFactor" : 0.0,
 	  "stopOnFirstBounce" : true,
 	  "maxMovementPerStep" : 0.4,
+	  
 	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
 	  "ignorePlatformCollision" : true,
 
 	  "airFriction" : 0.0,
 	  "liquidFriction" : 2.0,
 	  "groundFriction" : 15.0
+	}	  
+  },
+  {"op" : "add",
+	"path" : "/thea-gravitywell",
+	"value" : {
+	  "gravityMultiplier" : 0.0,
+	  "bounceFactor" : 0.0,
+	  "stopOnFirstBounce" : true,
+	  "maxMovementPerStep" : 0.0,
+	  
+	  "collisionEnabled" : false,
+	  "collisionPoly" : [ [0.5, 0.5], [0.5, -0.5], [-0.5, -0.5], [-0.5, 0.5] ],
+	  "ignorePlatformCollision" : true,
+	  
+	  "groundFriction" : 1000,
+	  "airFriction" : 1000,
+	  "liquidFriction" : 1000,
+	  "speedLimit" : 0,
+	  "maximumCorrection" : 0.75
+	}	  
+  },
+  {"op" : "add",
+	"path" : "/thea-stickyflame",
+	"value" : {
+	  "mass" : 1.0,
+	  "gravityMultiplier" : 0.9,
+	  "stickyCollision" : true,
+	  "stickyForce" : 200.0,
+	  "maxMovementPerStep" : 0.4,
+
+	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+	  "ignorePlatformCollision" : true,
+
+	  "airFriction" : 1.0,
+	  "liquidFriction" : 1.0,
+	  "groundFriction" : 1.0,
+	  "maximumCorrection" : 0.75
 	}	  
   }
 ]

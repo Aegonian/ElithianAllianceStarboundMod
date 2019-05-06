@@ -1,0 +1,34 @@
+{
+  "projectileName" : "alliancebranditzerbullet",
+  "physics" : "lineriflebullet",
+  "bounces" : 0,
+  "piercing" : true,
+  "image" : "alliancebranditzerbullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 200,
+  "supportsProcessing" : true,
+  "fullbright" : true,
+  "lightColor" : [60, 50, 0],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/branditzerimpact/branditzerimpact.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "alliancebranditzerbulletsticking",
+      "inheritDamageFactor" : 0.1,
+      "inheritSpeedFactor" : 0.1,
+      "angleAdjust" : 0
+    }
+  ],
+  "damageKind" : "default",
+  
+  "scripts" : [ "/projectiles/scripts/thea-randomspeedprojectile.lua" ],
+  "forceKillOnImpact" : true,
+  
+  "minSpeed" : 190,
+  "maxSpeed" : 210
+}

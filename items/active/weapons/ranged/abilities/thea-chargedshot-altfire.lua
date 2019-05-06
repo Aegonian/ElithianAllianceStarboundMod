@@ -83,7 +83,11 @@ function TheaChargedShotAltFire:charge()
   
   --If the charge is ready, we have line of sight and plenty of energy, go to firing state
   if self.chargeTimer == 0 and status.overConsumeResource("energy", self:energyPerShot()) and not world.lineTileCollision(mcontroller.position(), self:firePosition()) then
-    self:setState(self.fire)
+    if self.fireType == "burst" then
+	  self:setState(self.burst)
+	else
+	  self:setState(self.fire)
+	end
   --If not charging and charge isn't ready, go to cooldown
   else
     self.shouldDischarge = true
@@ -115,7 +119,37 @@ function TheaChargedShotAltFire:fire()
   self:setState(self.cooldown)
 end
 
-function TheaChargedShotAltFire:fireProjectile(projectileType, projectileParams, inaccuracy, firePosition, projectileCount)
+function TheaChargedShotAltFire:burst()
+  self.weapon:setStance(self.stances.fire)
+  
+  animator.stopAllSounds("chargeLoopAlt")
+  animator.setAnimationState("chargeAlt", "off")
+  animator.setParticleEmitterActive("chargeparticlesAlt", false)
+  
+  self.chargeHasStarted = false
+  
+  --Burst projectiles and muzzleflash
+  local shots = self.burstCount
+  local burstNumber = 0
+  while shots > 0 and status.overConsumeResource("energy", self:energyPerShot()) do
+	self:fireProjectile(burstNumber)
+    self:muzzleFlash()
+    shots = shots - 1
+	burstNumber = burstNumber + 1
+
+    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(1 - shots / self.burstCount, 0, self.stances.fire.weaponRotation))
+    self.weapon.relativeArmRotation = util.toRadians(interp.linear(1 - shots / self.burstCount, 0, self.stances.fire.armRotation))
+
+    util.wait(self.burstTime)
+  end
+
+  self.chargeTimer = self.chargeTime
+  
+  self.cooldownTimer = self.cooldownTime
+  self:setState(self.cooldown)
+end
+
+function TheaChargedShotAltFire:fireProjectile(burstNumber)
   local params = sb.jsonMerge(self.projectileParameters, projectileParams or {})
   params.power = self:damagePerShot()
   params.powerMultiplier = activeItem.ownerPowerMultiplier()
@@ -142,7 +176,7 @@ function TheaChargedShotAltFire:fireProjectile(projectileType, projectileParams,
         projectileType,
         firePosition or self:firePosition(),
         activeItem.ownerEntityId(),
-        self:aimVector(self.inaccuracy, shotNumber),
+        self:aimVector(self.inaccuracy, shotNumber, burstNumber),
         false,
         params
       )
@@ -204,19 +238,27 @@ function TheaChargedShotAltFire:firePosition()
   return vec2.add(mcontroller.position(), activeItem.handPosition(self.weapon.muzzleOffset))
 end
 
-function TheaChargedShotAltFire:aimVector(inaccuracy, shotNumber)
+function TheaChargedShotAltFire:aimVector(inaccuracy, shotNumber, burstNumber)
   local angleAdjustmentList = self.angleAdjustmentsPerShot or {}
-  local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle + sb.nrand(inaccuracy, 0) + (angleAdjustmentList[shotNumber] or 0))
+  local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle + sb.nrand(inaccuracy, 0) + (angleAdjustmentList[shotNumber] or 0) + ((burstNumber or 0) * (self.burstRiseAngle or 0)))
   aimVector[1] = aimVector[1] * mcontroller.facingDirection()
   return aimVector
 end
 
 function TheaChargedShotAltFire:energyPerShot()
-  return self.baseEnergyUsage * (self.energyUsageMultiplier or 1.0)
+  if self.fireType == "burst" then
+	return self.baseEnergyUsage * (self.energyUsageMultiplier or 1.0) / self.burstCount
+  else
+	return self.baseEnergyUsage * (self.energyUsageMultiplier or 1.0)
+  end
 end
 
 function TheaChargedShotAltFire:damagePerShot()
-  return self.baseDamage * (self.baseDamageMultiplier or 1.0) * config.getParameter("damageLevelMultiplier") / self.projectileCount
+  if self.fireType == "burst" then
+	return self.baseDamage * (self.baseDamageMultiplier or 1.0) * config.getParameter("damageLevelMultiplier") / self.projectileCount / self.burstCount
+  else
+	return self.baseDamage * (self.baseDamageMultiplier or 1.0) * config.getParameter("damageLevelMultiplier") / self.projectileCount
+  end
 end
 
 function TheaChargedShotAltFire:updateChargeIntake(chargeTimeLeft)  

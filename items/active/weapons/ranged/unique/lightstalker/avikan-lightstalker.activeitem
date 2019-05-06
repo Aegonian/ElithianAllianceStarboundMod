@@ -9,7 +9,7 @@
   "tooltipKind" : "thea-bow-patreon",
   "category" : "Switchbow",
   "description" : "^orange;A powerful linebow that doubles as a spear.",
-  "shortdescription" : "^orange;Lightstalker^white;",
+  "shortdescription" : "^#FFDD59;Lightstalker^white;",
   "twoHanded" : true,
   "itemTags" : ["weapon","ranged","avikan","theaUnique"],
   

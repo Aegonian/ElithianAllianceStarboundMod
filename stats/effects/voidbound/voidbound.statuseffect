@@ -1,0 +1,26 @@
+{
+  "name" : "voidbound",
+  "blockingStat" : "centensianenergyStatusImmunity",
+
+  "effectConfig" : {
+    "minMaxHealth" : 5,
+    "directive" : "fade=000000=0.60?border=1;4800FF90;00000000",
+    "deathDirective" : "fade=000000=1.00?border=1;4800FF90;00000000",
+    "gravityModifier" : 0.25,
+    "groundMovementModifier" : 0.65,
+    "speedModifier" : 0.65,
+    "airJumpModifier" : 0.8,
+    "jumpModifier" : -0.2,
+    "deathProjectileType" : "voidgravitywellspawner"
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "voidbound.lua"
+  ],
+
+  "animationConfig" : "voidbound.animation",
+
+  "label" : "Void-Bound",
+  "icon" : "/interface/statuses/voidbound.png"
+}

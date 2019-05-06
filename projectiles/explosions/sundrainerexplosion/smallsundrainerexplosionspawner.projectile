@@ -1,0 +1,20 @@
+{
+  "projectileName" : "smallsundrainerexplosionspawner",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/sundrainerexplosion/smallsundrainerexplosion.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "jumprifleflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.01,
+      "angleAdjust" : 0
+    }
+  ],
+  "damageKind" : "jumpweapon",
+  "damageType" : "NoDamage",
+  "timeToLive" : 0
+}

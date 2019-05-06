@@ -1,0 +1,12 @@
+{
+  "projectileName" : "voidgravitywellspawner",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/voidgravitywell/voidgravitywell.config"
+    }
+  ],
+  "damageKind" : "default",
+  "timeToLive" : 0
+}

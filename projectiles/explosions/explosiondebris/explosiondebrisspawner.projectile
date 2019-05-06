@@ -15,70 +15,70 @@
       "action" : "projectile",
       "type" : "explosiondebris",
       "fuzzAngle" : 10,
-      "inheritDamageFactor" : 0,
+      "inheritDamageFactor" : 0.01,
       "angleAdjust" : 0
     },
 	{
       "action" : "projectile",
       "type" : "explosiondebris",
       "fuzzAngle" : 10,
-      "inheritDamageFactor" : 0,
+      "inheritDamageFactor" : 0.01,
       "angleAdjust" : 36
     },
 	{
       "action" : "projectile",
       "type" : "explosiondebris",
       "fuzzAngle" : 10,
-      "inheritDamageFactor" : 0,
+      "inheritDamageFactor" : 0.01,
       "angleAdjust" : 72
     },
     {
       "action" : "projectile",
       "type" : "explosiondebris",
       "fuzzAngle" : 10,
-      "inheritDamageFactor" : 0,
+      "inheritDamageFactor" : 0.01,
       "angleAdjust" : 108
     },
     {
       "action" : "projectile",
       "type" : "explosiondebris",
       "fuzzAngle" : 10,
-      "inheritDamageFactor" : 0,
+      "inheritDamageFactor" : 0.01,
       "angleAdjust" : 144
     },
 	{
       "action" : "projectile",
       "type" : "explosiondebris",
       "fuzzAngle" : 10,
-      "inheritDamageFactor" : 0,
+      "inheritDamageFactor" : 0.01,
       "angleAdjust" : 180
     },
 	{
       "action" : "projectile",
       "type" : "explosiondebris",
       "fuzzAngle" : 10,
-      "inheritDamageFactor" : 0,
+      "inheritDamageFactor" : 0.01,
       "angleAdjust" : 216
     },
 	{
       "action" : "projectile",
       "type" : "explosiondebris",
       "fuzzAngle" : 10,
-      "inheritDamageFactor" : 0,
+      "inheritDamageFactor" : 0.01,
       "angleAdjust" : 252
     },
     {
       "action" : "projectile",
       "type" : "explosiondebris",
       "fuzzAngle" : 10,
-      "inheritDamageFactor" : 0,
+      "inheritDamageFactor" : 0.01,
       "angleAdjust" : 288
     },
     {
       "action" : "projectile",
       "type" : "explosiondebris",
       "fuzzAngle" : 10,
-      "inheritDamageFactor" : 0,
+      "inheritDamageFactor" : 0.01,
       "angleAdjust" : 324
     }
   ],

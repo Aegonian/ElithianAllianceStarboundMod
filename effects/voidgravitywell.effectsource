@@ -1,0 +1,24 @@
+{
+  "kind" : "voidgravitywell",
+  "location" : "mouth",
+  "definition" : {
+    "duration" : 0.075,
+    "loops" : true,
+    "start" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [ [ ] ]
+    },
+    "particles" : [
+      [ "voidgravitywell" ]
+    ],
+    "sounds" : [ [ ] ],
+    "stop" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [ [ ] ]
+    }
+  }
+}

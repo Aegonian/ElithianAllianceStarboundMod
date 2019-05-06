@@ -180,7 +180,10 @@
         "twoHanded" : true,
 
         "allowRotate" : true,
-        "allowFlip" : true
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
       },
       "fire" : {
         "duration" : 0,
@@ -189,7 +192,10 @@
         "twoHanded" : true,
 
         "allowRotate" : true,
-        "allowFlip" : true
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
       },
       "cooldown" : {
         "duration" : 0.05,
@@ -198,7 +204,10 @@
         "twoHanded" : true,
 
         "allowRotate" : true,
-        "allowFlip" : true
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
       }
     }
   },

@@ -18,7 +18,7 @@
   "rollingJumpModifier" : 1.35,
   
   //ROLL BEHAVIOUR
-  "minimumFallVelocity" : -20,		//Minimum fall velocity before roll can be engaged
+  "minimumFallVelocity" : -15,		//Minimum fall velocity before roll can be engaged
   "minRollVelocity" : 15,			//Minimum rolling velocity. Final rolling velocity is determined by falling speed
   "maxRollVelocity" : 40,			//Maximum rolling velocity. Final rolling velocity is determined by falling speed
   "endRollVelocity" : 8,			//Absolute minimum rolling velocity. Velocity cannot degrade past this value

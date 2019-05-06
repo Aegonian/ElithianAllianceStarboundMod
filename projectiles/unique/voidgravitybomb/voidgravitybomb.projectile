@@ -1,0 +1,24 @@
+{
+  "projectileName" : "voidgravitybomb",
+  "image" : "voidgravitybomb.png",
+  "physics" : "laser",
+  "bounces" : 0,
+  "piercing" : false,
+  "animationCycle" : 0.25,
+  "frameNumber" : 4,
+  "emitters" : [ "voidgravitytrail" ],
+  "lightColor" : [20, 0, 75],
+  "fullbright" : false,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/voidgravitywell/voidgravitywelllong.config"
+    }
+  ],
+  "power" : 0.0,
+  "speed" : 40,
+  "timeToLive" : 2.5,
+  "damageType" : "NoDamage",
+  "damageKind" : "centensianenergy",
+  "hydrophobic" : false
+}

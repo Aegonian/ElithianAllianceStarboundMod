@@ -8,7 +8,7 @@
   "shortdescription" : "^orange;Sun Drainer^white;",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-chargedgun-unique",
+  "tooltipKind" : "thea-chargedgunalt-unique",
   "category" : "Heavy Jumprifle",
   "itemTags" : ["weapon","ranged","centens","jumprifle","theaUnique"],
   "twoHanded" : true,
@@ -25,7 +25,8 @@
     "gun" : "centens-sundrainer.png",
     "lights" : "centens-sundrainerlights.png",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/jumpriflemuzzle.png",
-    "charge" : "centens-sundrainercharge.png"
+    "charge" : "centens-sundrainercharge.png",
+    "chargeAlt" : "centens-sundrainercharge-alt.png"
   },
   "animationCustom" : {
 	"animatedParts" : {
@@ -33,30 +34,43 @@
         "gun" : {
 		  "properties" : {
 			//Same as BaseOffset
-		    "offset" : [1.1, 0.1]
+		    "offset" : [1.2, 0.1]
 		  }
 		},
 		"lights" : {
 		  "properties" : {
 			//Same as BaseOffset
-		    "offset" : [1.1, 0.1]
+		    "offset" : [1.2, 0.1]
 		  }
 		},
 		"charge" : {
 		  "properties" : {
 			//Same as BaseOffset
-		    "offset" : [1.1, 0.1]
+		    "offset" : [1.2, 0.1]
+		  }
+		},
+		"chargeAlt" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.2, 0.1]
 		  }
 		}
       }
     },
     "sounds" : {
-      "fire" : [ "/sfx/gun/centens_sundrainer.ogg" ],
+      //Primary
+	  "fire" : [ "/sfx/gun/centens_sundrainer.ogg" ],
 	  "chargeLoop" : [ "/sfx/melee/charge_up2.ogg" ],
-	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
+	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ],
+	  //Secondary
+	  "chargeLoopAlt" : [ "/sfx/gun/sundrainer_chargelong.ogg" ],
+      "altBeamStart" : [],
+      "altBeamLoop" : [ "/sfx/gun/violatedioncannon_beamloop.ogg" ],
+      "altBeamEnd" : [ "/sfx/gun/violatedioncannon_beamend2.ogg" ],
+      "altBeamImpact" : []
     }
   },
-  "animationScripts" : ["/items/active/effects/thea-chargeintake.lua"],
+  "animationScripts" : ["/items/active/effects/thea-chain-chargeintake.lua"],
   "scriptedAnimationParameters" : {
     "particleConfig" : {
 	  "image" : "/particles/chargeintake/jumpfireintake.png",
@@ -65,8 +79,8 @@
 	}
   },
 
-  "baseOffset" : [1.1, 0.1],
-  "muzzleOffset" : [1.875, 0.125],
+  "baseOffset" : [1.2, 0.1],
+  "muzzleOffset" : [1.75, 0.125],
 
   "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
 
@@ -145,6 +159,115 @@
         "allowFlip" : false
       }
 	}
+  },
+  
+  "altAbility" : {
+    "name" : "Solar Barrage",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-chargedbeam-altfire.lua"],
+    "class" : "TheaChargedBeamAltFire",
+
+	//Charge Config
+	"chargeTime" : 3.0,
+	"cooldownTime" : 2.0,
+	
+	//Beam Config
+    "fireTime" : 0.1,
+    "baseDps" : 30.0,
+    "energyUsage" : 200.0,
+    "inaccuracy" : 0.0,
+	
+	"walkWhileFiring" : true,
+	"minFiringTime" : 2.0,
+	"maxFiringTime" : 2.0,
+	
+	"impactDamageTimeout" : 0.1,
+	"spawnImpactProjectile" : true,
+	"impactProjectile" : "smallsundrainerexplosionspawner",
+	"impactProjectileDps" : 5.0,
+	
+	"laserPiercing" : false,
+
+    "damageConfig" : {
+      "statusEffects" : [ "jumprifleburn" ],
+      "damageSourceKind" : "jumpweapon",
+      "knockback" : 2
+    },
+	
+	//CHARGE PARTICLE CONFIGURATION
+	"useChargeParticles" : true,
+	"maxChargeParticles" : 24,
+	"particleLifetime" : 1.0,
+	"timeBewteenParticles" : 0.05,
+	"maxParticleDistance" : 3.5,
+	
+	"recoilKnockbackVelocity" : 100,
+	"crouchRecoilKnockbackVelocity" : 80,
+	"crouchStopsRecoil" : true,
+
+    "beamLength" : 70,
+
+    "chain" : {
+      "segmentImage" : "/items/active/weapons/ranged/unique/sundrainer/beam.png",
+      "startSegmentImage" : "/items/active/weapons/ranged/unique/sundrainer/beamstart.png",
+      "endSegmentImage" : "/items/active/weapons/ranged/unique/sundrainer/beamend.png",
+      "segmentSize" : 1.0,
+      "overdrawLength" : 0.125,
+      "taper" : 0,
+      "waveform" : {
+        "frequency" : 20.0,
+        "amplitude" : 0.1,
+        "movement" : 200.0
+      },
+      "fullbright" : true,
+	  "renderLayer" : "Player+1"
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "charge" : {
+        "armRotation" : -2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+		"weaponOffset" : [-0.05, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.1,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "discharge" : {
+        "duration" : 0.1,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
   },
 
   "builder" : "/items/buildscripts/thea-buildchargedgun.lua"

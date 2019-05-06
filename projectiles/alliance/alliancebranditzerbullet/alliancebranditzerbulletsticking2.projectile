@@ -1,0 +1,26 @@
+{
+  "projectileName" : "alliancebranditzerbulletsticking2",
+  "physics" : "stickybomb",
+  "bounces" : 0,
+  "image" : "alliancebranditzerbulletsticking.png",
+  "animationLoops" : false,
+  "animationCycle" : 1.0,
+  "frameNumber" : 10,
+  "piercing" : true,
+  "power" : 1,
+  "timeToLive" : 1,
+  "supportsProcessing" : true,
+  "fullbright" : false,
+  "lightColor" : [30, 25, 0],
+  "damageType" : "NoDamage",
+  "damageKind" : "fire",
+  "hydrophobic" : false,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/brokenarrows/brokenakkimarinail.config"
+    }
+  ],
+  
+  "renderLayer" : "Monster+1"
+}

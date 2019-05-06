@@ -9,8 +9,8 @@
   "level" : 6,
   "fixedLevel" : false,
   "tooltipKind" : "thea-speedupminigun-unique",
-  "category" : "Minigun",
-  "itemTags" : ["weapon","ranged","centens","minign","theaUnique"],
+  "category" : "Gravity Distortion Rifle",
+  "itemTags" : ["weapon","ranged","centens","minigun","theaUnique"],
   "twoHanded" : true,
   
   //CONFIGURATION FOR WEAPONS COLLECTION
@@ -23,12 +23,9 @@
   "animation" : "centens-eventhorizon.animation",
   "animationParts" : {
     "gun" : "centens-eventhorizon.png",
-    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/eventhorizonmuzzle.png",
-    "charge" : "centens-eventhorizoncharge.png",
-    "chargeLights" : "centens-eventhorizonchargelights.png",
-	"chargehold" : "centens-eventhorizonloop.png",
-	"chargeholdLights" : "centens-eventhorizonlooplights.png",
-	"overlay" : "centens-eventhorizonoverlay.png"
+    "charge" : "centens-eventhorizon.png",
+    "lights" : "centens-eventhorizonlights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/eventhorizonmuzzle.png"
   },
   "animationCustom" : {
 	"animatedParts" : {
@@ -39,31 +36,13 @@
 		    "offset" : [1.25, -0.75]
 		  }
 		},
-		"charge" : {
+        "charge" : {
 		  "properties" : {
 			//Same as BaseOffset
 		    "offset" : [1.25, -0.75]
 		  }
 		},
-		"chargeLights" : {
-		  "properties" : {
-			//Same as BaseOffset
-		    "offset" : [1.25, -0.75]
-		  }
-		},
-		"chargehold" : {
-		  "properties" : {
-			//Same as BaseOffset
-		    "offset" : [1.25, -0.75]
-		  }
-		},
-		"chargeholdLights" : {
-		  "properties" : {
-			//Same as BaseOffset
-		    "offset" : [1.25, -0.75]
-		  }
-		},
-		"overlay" : {
+		"lights" : {
 		  "properties" : {
 			//Same as BaseOffset
 		    "offset" : [1.25, -0.75]
@@ -72,7 +51,7 @@
       }
     },
     "sounds" : {
-      "fire" : [ "/sfx/gun/xanafian_fire1.ogg" ],
+      "fire" : [ "/sfx/gun/voidenergy_fire1.ogg" ],
 	  "chargeLoop" : [ "/sfx/melee/charge_up2.ogg" ],
 	  "holdLoop" : [ "/sfx/melee/charge_full_hold1.ogg" ],
 	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
@@ -87,23 +66,28 @@
   "elementalType" : "centensianenergy",
   
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/abilities/thea-speedupminigun.lua"],
-    "class" : "TheaSpeedUpMinigun",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-speedupminigun-animated.lua"],
+    "class" : "TheaSpeedUpMinigunAnimated",
 
+	"transitionTime" : 0.7,
+	"transitionFrames" : 6,
+	
     "minFiringSpeed" : 0.35, //Starting fire time
-	"maxFiringSpeed" : 0.08, //End fire time
+	"maxFiringSpeed" : 0.10, //End fire time
 	"maxFiringTime" : 3.5, //How long it takes to reach maximum firing speed
 	
     "baseDps" : 3.5, //Starting DPS. Final DPS is this multiplied by (minFiringSpeed / maxFiringSpeed)
     "energyUsage" : 15.0,
-    "inaccuracy" : 0.035,
+    "inaccuracy" : 0.075,
 	
-	"chargeTime" : 0.7,
-	"resetTime" : 0.6,
+	"chargeTime" : 0.5,
+	"resetTime" : 1.0,
+	"decayMultiplier" : 2.5,
 	
 	"walkWhileFiring" : true,
+	"animatedCharge" : true,
 
-    "projectileType" : "eventhorizonbullet",
+    "projectileType" : "voidgravitybullet",
 	"projectileCount" : 1,
 	"projectileParameters" : { 
       "knockback" : 6
@@ -116,15 +100,10 @@
         "twoHanded" : true,
 
         "allowRotate" : true,
-        "allowFlip" : true
-      },
-      "charge" : {
-        "armRotation" : -2,
-        "weaponRotation" : 2,
-        "twoHanded" : true,
+        "allowFlip" : true,
 
-        "allowRotate" : true,
-        "allowFlip" : true
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
       },
       "fire" : {
         "armRotation" : 4,
@@ -132,7 +111,10 @@
         "twoHanded" : true,
 
         "allowRotate" : false,
-        "allowFlip" : false
+        "allowFlip" : false,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
       },
       "cooldown" : {
         "duration" : 0.075,
@@ -141,16 +123,10 @@
         "twoHanded" : true,
 
         "allowRotate" : false,
-        "allowFlip" : false
-      },
-      "discharge" : {
-        "duration" : 0.1,
-        "armRotation" : 2,
-        "weaponRotation" : 2,
-        "twoHanded" : true,
+        "allowFlip" : false,
 
-        "allowRotate" : false,
-        "allowFlip" : false
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
       }
 	}
   },

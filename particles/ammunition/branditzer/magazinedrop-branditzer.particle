@@ -1,0 +1,24 @@
+{
+  "kind" : "magazinedrop-branditzer",
+  "definition" : {
+    "type" : "textured",
+    "image" : "/particles/ammunition/branditzer/magazinedrop-branditzer.png",
+    "fade" : 1.0,
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.75,
+    "initialVelocity" : [0, -3.0],
+    "finalVelocity" : [0, -9.0],
+    "approach" : [0, 20],
+    "timeToLive" : 0.5,
+    "size" : 1.0,
+    "layer" : "middle",
+    "collidesForeground" : true,
+    "rotation" : 0,
+	"angularVelocity" : -200,
+    "flippable" : true,
+    "variance" : {
+      "initialVelocity" : [0.25, 1.0],
+	  "angularVelocity" : 50
+    }
+  }
+}

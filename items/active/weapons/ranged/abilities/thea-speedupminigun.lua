@@ -2,7 +2,6 @@ require "/scripts/vec2.lua"
 require "/scripts/util.lua"
 require "/scripts/interp.lua"
 
--- Bow primary ability
 TheaSpeedUpMinigun = WeaponAbility:new()
 
 function TheaSpeedUpMinigun:init()
@@ -230,7 +229,6 @@ function TheaSpeedUpMinigun:muzzleFlash()
 end
 
 function TheaSpeedUpMinigun:cooldown()
-  
   if self.shouldDischarge == true then
     self.weapon:updateAim()
 	self.weapon:setStance(self.stances.discharge)

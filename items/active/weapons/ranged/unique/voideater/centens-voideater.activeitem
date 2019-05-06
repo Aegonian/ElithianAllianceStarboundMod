@@ -30,13 +30,13 @@
         "gun" : {
 		  "properties" : {
 			//Same as BaseOffset
-		    "offset" : [0.8, 0.1]
+		    "offset" : [1.0, 0.25]
 		  }
 		},
 		"lights" : {
 		  "properties" : {
 			//Same as BaseOffset
-		    "offset" : [0.8, 0.1]
+		    "offset" : [1.0, 0.25]
 		  }
 		}
       }
@@ -46,10 +46,10 @@
     }
   },
 
-  "baseOffset" : [0.8, 0.1],
-  "muzzleOffset" : [2.0, 0.0],
+  "baseOffset" : [1.0, 0.25],
+  "muzzleOffset" : [2.2, 0.0],
 
-  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
 
   "elementalType" : "centensianenergy",
 
@@ -58,8 +58,8 @@
     "class" : "GunFire",
 	
     "fireTime" : 0.24,
-    "baseDps" : 7.5,
-    "energyUsage" : 75.0,
+    "baseDps" : 11.5,
+    "energyUsage" : 40.0,
     "inaccuracy" : 0.025,
 
     "projectileCount" : 1,
@@ -67,9 +67,11 @@
     "burstCount" : 3,
     "fireType" : "burst",
 
-    "projectileType" : "xanafianbullet",
+    "projectileType" : "voidgravitybullet",
     "projectileParameters" : { 
-      "knockback" : 6
+      "knockback" : 6,
+      "searchRadius" : 20,
+      "baseHomingControlForce" : 1.0
     },
 	
 	"stances" : {
@@ -110,15 +112,15 @@
     "scripts" : ["/items/active/weapons/ranged/abilities/altfire.lua"],
 	"class" : "AltFireAttack",
 
-    "baseDamage" : 5.0,
-	"fireTime" : 2.5,
-    "energyUsage" : 30.0,
+    "baseDamage" : 1.0,
+	"fireTime" : 2.0,
+    "energyUsage" : 80.0,
     "inaccuracy" : 0.0,
 
 	"projectileCount" : 1,
     "fireType" : "auto",
 	
-	"projectileType" : "xanafiangravitybullet",
+	"projectileType" : "voidgravitybomb",
 	"projectileParameters" : {
 	  "knockback" : 0
 	},

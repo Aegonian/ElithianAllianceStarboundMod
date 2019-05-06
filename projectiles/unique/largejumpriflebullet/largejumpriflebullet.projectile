@@ -6,10 +6,35 @@
   "image" : "largejumpriflebullet.png",
   "animationCycle" : 0.5,
   "frameNumber" : 4,
-  "emitters" : [ "largejumprifletrail" ],
+  "emitters" : [],
   "power" : 8,
   "speed" : 75,
   "supportsProcessing" : true,
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "animated",
+        "animation" : "/projectiles/unique/largejumpriflebullet/trail.animation",
+        "position" : [-0.75, 0],
+		"size" : 1.25,
+        "layer" : "back",
+		"light" : [32, 16, 0],
+		"collidesForeground" : false,
+        "timeToLive" : 0.3,
+        "destructionTime" : 0.1,
+        "destructionAction" : "fade",
+        "fullbright" : true,
+		"variance" : {
+		  "position" : [0, 0.1],
+		  "size" : 0.5
+		}
+      }
+    }
+  ],
   "actionOnReap" : [
     {
       "action" : "config",

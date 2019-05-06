@@ -15,11 +15,6 @@ function TheaChargedShotAmmo:init()
   self.chargeHasStarted = false
   self.shouldDischarge = false
   
-  --Optional animation set-up
-  if self.activeAnimation then
-	animator.setAnimationState("gun", "idle")
-  end
-  
   self.currentAmmo = config.getParameter("ammoCount", self.maxAmmo)
   animator.setAnimationState("gun", "idle")
 
@@ -138,6 +133,11 @@ function TheaChargedShotAmmo:fire()
   --Optionally play an overheat animation
   if self.overheatAnimation then
 	animator.setAnimationState("overheat", "overheat")
+  end
+  
+  --Optionally play a firing animation
+  if self.singleFireAnimation then
+	animator.setAnimationState("gun", "active")
   end
   
   if self.recoilKnockbackVelocity then
@@ -280,6 +280,9 @@ function TheaChargedShotAmmo:muzzleFlash()
   animator.setPartTag("muzzleFlash", "variant", math.random(1, 3))
   animator.setAnimationState("firing", "fire")
   animator.burstParticleEmitter("muzzleFlash")
+  if self.casingEjectParticles then
+	animator.burstParticleEmitter("casingEject")
+  end
   animator.playSound("fire")
 
   animator.setLightActive("muzzleFlash", true)

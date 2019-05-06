@@ -1,0 +1,55 @@
+{
+  "projectileName" : "smalljumpriflebullet-fire",
+  "physics" : "jumpriflebullet",
+  "bounces" : 0,
+  "image" : "smalljumpriflebullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 4,
+  "emitters" : [],
+  "power" : 5,
+  "speed" : 65,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/smalljumprifleexplosion/smalljumprifleexplosion.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "jumprifleflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.015,
+      "angleAdjust" : 0
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "animated",
+        "animation" : "/projectiles/centens/smalljumpriflebullet/trail.animation",
+        "position" : [-0.75, 0],
+		"size" : 0.75,
+        "layer" : "back",
+		"light" : [32, 16, 0],
+		"collidesForeground" : false,
+        "timeToLive" : 0.3,
+        "destructionTime" : 0.1,
+        "destructionAction" : "fade",
+        "fullbright" : true,
+		"variance" : {
+		  "position" : [0, 0.1],
+		  "size" : 0.5
+		}
+      }
+    }
+  ],
+  "lightColor" : [100, 65, 0],
+  "fullbright" : true,
+  "damageType" : "NoDamage",
+  "damageKind" : "jumpweapon",
+  "hydrophobic" : true
+}

@@ -10,4 +10,6 @@ end
 
 function update(dt)
   mcontroller.setPosition(self.startPosition)
+  
+  world.debugPoint(self.startPosition, "yellow")
 end

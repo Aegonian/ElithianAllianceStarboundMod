@@ -1,0 +1,24 @@
+{
+  "itemName" : "crawlerdunebun",
+  "rarity" : "Uncommon",
+  "price" : 250,
+  "category" : "preparedFood",
+  "inventoryIcon" : "crawlerdunebun.png",
+  "description" : "A dunebun shaped like a Sandcrawler, stuffed with meat, bolbohn and a secret ingredient. A unique flavour.",
+  "shortdescription" : "Crawler Dunebun",
+  "effects" : [ [
+    {
+        "effect" : "maxhealthscalingboostfood",
+        "duration" : 210
+    }
+  ] ],
+  "foodValue" : 80,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}

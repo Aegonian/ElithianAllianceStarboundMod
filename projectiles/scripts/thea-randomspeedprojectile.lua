@@ -22,4 +22,7 @@ function init()
 end
 
 function update()
+  if config.getParameter("forceKillOnImpact") and (projectile.collision() or mcontroller.isCollisionStuck() or mcontroller.isColliding()) then
+	projectile.die()
+  end
 end

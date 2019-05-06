@@ -1,0 +1,20 @@
+{
+  "kind" : "voidgravitywell",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/voidgravity/voidgravity.animation",
+    "position" : [0, 0],
+    "approach" : [50, 50],
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.1,
+    "light" : [15, 0, 60],
+    "fade" : 1,
+    "size" : 1,
+    "layer" : "back",
+    "timeToLive" : 0.3,
+    "variance" : {
+      "rotation" : 360,
+      "position" : [1.25, 1.25]
+    }
+  }
+}

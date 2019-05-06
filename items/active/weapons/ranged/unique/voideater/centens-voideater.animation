@@ -5,6 +5,16 @@
 
   "animatedParts" : {
     "stateTypes" : {
+      "energy" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 7,
+            "cycle" : 0.6,
+            "mode" : "loop"
+          }
+        }
+      },
       "firing" : {
         "default" : "off",
         "states" : {
@@ -31,12 +41,20 @@
       },
       "lights" : {
         "properties" : {
-          "zLevel" : 1,
+          "zLevel" : -2,
           "centered" : true,
-          "fullbright" : true,
-          "image" : "<partImage><paletteSwaps>",
+          "fullbright" : false,
           "offset" : [0, 0], // x offset is set dynamically
           "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "energy" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:<frame>"
+              }
+            }
+          }
         }
       },
       "muzzleFlash" : {
@@ -44,10 +62,9 @@
           "zLevel" : -1,
           "centered" : true,
           "offset" : [0.75, 0],
-          "fullbright" : true,
+          "fullbright" : false,
           "transformationGroups" : ["muzzle"]
         },
-
         "partStates" : {
           "firing" : {
             "off" : {
@@ -88,9 +105,9 @@
       "active" : true,
       "emissionRate" : 6.0,
       "transformationGroups" : ["weapon"],
-      "offsetRegion" : [0.3, 0.1, 0.8, 0.8],
+      "offsetRegion" : [-0.5, 0.5, 0.6, 0.8],
       "particles" : [
-        { "particle" : "xanafianbullettrail"}
+        { "particle" : "voidgravitytrail"}
       ]
     }
   },

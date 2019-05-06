@@ -96,7 +96,11 @@ function TheaChargedShot:charge()
   
   --If the charge is ready, we have line of sight and plenty of energy, go to firing state
   if self.chargeTimer == 0 and status.overConsumeResource("energy", self:energyPerShot()) and not world.lineTileCollision(mcontroller.position(), self:firePosition()) then
-    self:setState(self.fire)
+	if self.fireType == "burst" then
+	  self:setState(self.burst)
+	else
+	  self:setState(self.fire)
+	end
   --If not charging and charge isn't ready, go to cooldown
   else
     self.shouldDischarge = true
@@ -146,7 +150,56 @@ function TheaChargedShot:fire()
   self:setState(self.cooldown)
 end
 
-function TheaChargedShot:fireProjectile(projectileType, projectileParams, inaccuracy, firePosition, projectileCount)
+function TheaChargedShot:burst()
+  self.weapon:setStance(self.stances.fire)
+  
+  animator.stopAllSounds("chargeLoop")
+  animator.setAnimationState("charge", "off")
+  animator.setParticleEmitterActive("chargeparticles", false)
+  
+  self.chargeHasStarted = false
+  
+  --Burst projectiles and muzzleflash
+  local shots = self.burstCount
+  local burstNumber = 0
+  while shots > 0 and status.overConsumeResource("energy", self:energyPerShot()) do
+	self:fireProjectile(burstNumber)
+    self:muzzleFlash()
+    shots = shots - 1
+	burstNumber = burstNumber + 1
+  
+    self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(1 - shots / self.burstCount, 0, self.stances.fire.weaponRotation))
+    self.weapon.relativeArmRotation = util.toRadians(interp.linear(1 - shots / self.burstCount, 0, self.stances.fire.armRotation))
+	
+	--Optionally apply knockback to the player
+	if self.recoilKnockbackVelocity then
+	  --If not crouching or if crouch does not impact recoil
+	  if not (self.crouchStopsRecoil and mcontroller.crouching()) then
+		local recoilVelocity = vec2.mul(vec2.norm(vec2.mul(self:aimVector(0), -1)), self.recoilKnockbackVelocity)
+		--If aiming down and not in zero G, reset Y velocity first to allow for breaking of falls
+		if (self.weapon.aimAngle <= 0 and not mcontroller.zeroG()) then
+		  mcontroller.setYVelocity(0)
+		end
+		mcontroller.addMomentum(recoilVelocity)
+		mcontroller.controlJump()
+	  --If crouching
+	  elseif self.crouchRecoilKnockbackVelocity then
+		local recoilVelocity = vec2.mul(vec2.norm(vec2.mul(self:aimVector(0), -1)), self.crouchRecoilKnockbackVelocity)
+		mcontroller.setYVelocity(0)
+		mcontroller.addMomentum(recoilVelocity)
+	  end
+	end
+
+    util.wait(self.burstTime)
+  end
+
+  self.chargeTimer = self.chargeTime
+  
+  self.cooldownTimer = self.cooldownTime
+  self:setState(self.cooldown)
+end
+
+function TheaChargedShot:fireProjectile(burstNumber)
   local params = sb.jsonMerge(self.projectileParameters, projectileParams or {})
   params.power = self:damagePerShot()
   params.powerMultiplier = activeItem.ownerPowerMultiplier()
@@ -173,7 +226,7 @@ function TheaChargedShot:fireProjectile(projectileType, projectileParams, inaccu
         projectileType,
         firePosition or self:firePosition(),
         activeItem.ownerEntityId(),
-        self:aimVector(self.inaccuracy, shotNumber),
+        self:aimVector(self.inaccuracy, shotNumber, burstNumber),
         false,
         params
       )
@@ -235,19 +288,27 @@ function TheaChargedShot:firePosition()
   return vec2.add(mcontroller.position(), activeItem.handPosition(self.weapon.muzzleOffset))
 end
 
-function TheaChargedShot:aimVector(inaccuracy, shotNumber)
+function TheaChargedShot:aimVector(inaccuracy, shotNumber, burstNumber)
   local angleAdjustmentList = self.angleAdjustmentsPerShot or {}
-  local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle + sb.nrand(inaccuracy, 0) + (angleAdjustmentList[shotNumber] or 0))
+  local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle + sb.nrand(inaccuracy, 0) + (angleAdjustmentList[shotNumber] or 0) + ((burstNumber or 0) * (self.burstRiseAngle or 0)))
   aimVector[1] = aimVector[1] * mcontroller.facingDirection()
   return aimVector
 end
 
 function TheaChargedShot:energyPerShot()
-  return self.baseEnergyUsage * (self.energyUsageMultiplier or 1.0)
+  if self.fireType == "burst" then
+	return self.baseEnergyUsage * (self.energyUsageMultiplier or 1.0) / self.burstCount
+  else
+	return self.baseEnergyUsage * (self.energyUsageMultiplier or 1.0)
+  end
 end
 
 function TheaChargedShot:damagePerShot()
-  return self.baseDamage * (self.baseDamageMultiplier or 1.0) * config.getParameter("damageLevelMultiplier") / self.projectileCount
+  if self.fireType == "burst" then
+	return self.baseDamage * (self.baseDamageMultiplier or 1.0) * config.getParameter("damageLevelMultiplier") / self.projectileCount / self.burstCount
+  else
+	return self.baseDamage * (self.baseDamageMultiplier or 1.0) * config.getParameter("damageLevelMultiplier") / self.projectileCount
+  end
 end
 
 function TheaChargedShot:updateChargeIntake(chargeTimeLeft)  

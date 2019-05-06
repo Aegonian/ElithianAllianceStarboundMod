@@ -26,7 +26,8 @@
     "lights" : "avikan-jumpfireprotocollights.png",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/jumpriflemuzzle.png",
     "charge" : "avikan-jumpfireprotocolcharge.png",
-	"chargehold" : "avikan-jumpfireprotocolchargehold.png"
+	"chargehold" : "avikan-jumpfireprotocolchargehold.png",
+    "chargeAlt" : "avikan-jumpfireprotocolcharge.png"
   },
   "animationCustom" : {
 	"animatedParts" : {
@@ -34,38 +35,47 @@
         "gun" : {
 		  "properties" : {
 			//Same as BaseOffset
-		    "offset" : [0.6, 0.2]
+		    "offset" : [0.875, 0.125]
 		  }
 		},
 		"lights" : {
 		  "properties" : {
 			//Same as BaseOffset
-		    "offset" : [0.6, 0.2]
+		    "offset" : [0.875, 0.125]
 		  }
 		},
 		"charge" : {
 		  "properties" : {
 			//Same as BaseOffset
-		    "offset" : [0.6, 0.2]
+		    "offset" : [0.875, 0.125]
 		  }
 		},
 		"chargehold" : {
 		  "properties" : {
 			//Same as BaseOffset
-		    "offset" : [0.6, 0.2]
+		    "offset" : [0.875, 0.125]
+		  }
+		},
+		"chargeAlt" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [0.875, 0.125]
 		  }
 		}
       }
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/centens_jumprifle1.ogg" ],
+      "fireAlt" : [ "/sfx/gun/centens_jumprifle1.ogg" ],
 	  "chargeLoop" : [ "/sfx/melee/charge_up2.ogg" ],
+	  "chargeLoopAlt" : [ "/sfx/melee/charge_up2.ogg" ],
 	  "holdLoop" : [ "/sfx/melee/charge_full_hold1.ogg" ],
-	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
+	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ],
+	  "dischargeAlt" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
     }
   },
 
-  "baseOffset" : [0.6, 0.2],
+  "baseOffset" : [0.875, 0.125],
   "muzzleOffset" : [1.875, 0.15],
 
   "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
@@ -76,16 +86,16 @@
     "scripts" : ["/items/active/weapons/ranged/abilities/thea-speedupminigun.lua"],
     "class" : "TheaSpeedUpMinigun",
 
-    "minFiringSpeed" : 0.5, //Starting fire time
+    "minFiringSpeed" : 0.4, //Starting fire time
 	"maxFiringSpeed" : 0.1, //End fire time
 	"maxFiringTime" : 3.5, //How long it takes to reach maximum firing speed
 	
-    "baseDps" : 4.0, //Starting DPS. Final DPS is this multiplied by (minFiringSpeed / maxFiringSpeed)
+    "baseDps" : 5.0, //Starting DPS. Final DPS is this multiplied by (minFiringSpeed / maxFiringSpeed)
     "energyUsage" : 15.0,
     "inaccuracy" : 0.035,
 	
 	"chargeTime" : 1.0,
-	"resetTime" : 0.4,
+	"resetTime" : 0.8,
 	
 	"walkWhileFiring" : true,
 
@@ -125,6 +135,84 @@
         "duration" : 0.075,
         "armRotation" : 4,
         "weaponRotation" : 4,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "discharge" : {
+        "duration" : 0.1,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+	}
+  },
+
+  "altAbility" : {
+    "name" : "Jumpfire Burst",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-chargedshot-altfire.lua"],
+    "class" : "TheaChargedShotAltFire",
+
+    "chargeTime" : 1.3,
+    "baseDamage" : 15.0,
+    "baseEnergyUsage" : 75,
+    "inaccuracy" : 0.005,
+	
+	"cooldownTime" : 0.8,
+	
+	"fireType" : "burst",
+	"burstCount" : 8,
+	"burstTime" : 0.1,
+	"burstRiseAngle" : 0.025,
+
+    "projectileType" : "smalljumpriflebullet-fire",
+	"projectileCount" : 1,
+	"projectileParameters" : { 
+      "knockback" : 6,
+	  "speed" : 75
+    },
+	
+	//CHARGE PARTICLE CONFIGURATION
+	"useChargeParticles" : true,
+	"maxChargeParticles" : 8,
+	"particleLifetime" : 0.3,
+	"timeBewteenParticles" : 0.05,
+	"maxParticleDistance" : 2.5,
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "charge" : {
+        "armRotation" : -2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 6,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.35,
+        "armRotation" : 6,
+        "weaponRotation" : 8,
         "twoHanded" : true,
 
         "allowRotate" : false,

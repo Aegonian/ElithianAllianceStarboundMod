@@ -185,12 +185,12 @@
 	//Amount of values in table should be equal to projectileCount. This value adjusts the angles at which the projectiles are fired
 	"angleAdjustmentsPerShot" : [ 0.0 ],
 	
-	"cooldownTime" : 0.1,			//Regular cooldown in between shots
-	"cooldownAfterRelease" : 0.5,	//Cooldown time after releasing the altFire button
-	"overheatTime" : 4.5,			//Time to overheat the weapon
+	"cooldownTime" : 0.1,								//Regular cooldown in between shots
+	"cooldownAfterRelease" : 0.5,						//Cooldown time after releasing the altFire button
+	"overheatTime" : 5.0,								//Time to overheat the weapon
 	"overheatExplosion" : "nulldriveexplosionspawner",	//Projectile type to spawn when overheated
 	"explosionDamagePercentage" : 0.5,					//Percentage of max health to deal as explosion damage
-	"explosionOffset" : [1.0, 0.25],	//Position offset for the explosion
+	"explosionOffset" : [1.0, 0.25],					//Position offset for the explosion
 	
 	//Config for the lightning/charging animation
 	"chargeTimeDisplacementFactor" : 2.5, //If at minimum charging speed (fully sped up), lightning displacement is multiplied by this value

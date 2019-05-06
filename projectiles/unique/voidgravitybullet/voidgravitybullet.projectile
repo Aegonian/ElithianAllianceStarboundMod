@@ -1,0 +1,37 @@
+{
+  "projectileName" : "voidgravitybullet",
+  "physics" : "laser",
+  "bounces" : 0,
+  "image" : "voidgravitybullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 1,
+  "speed" : 50,
+  "supportsProcessing" : true,
+  "emitters" : [ "voidgravitytrail" ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/voidgravityimpact/voidgravityimpact.config"
+    }
+  ],
+  "statusEffects" : [
+    "voidbound"
+  ],
+  "lightColor" : [20, 0, 75],
+  "fullbright" : false,
+  "damageKind" : "centensianenergy",
+
+  "scripts" : ["/projectiles/scripts/thea-homingbullet-wave.lua"],
+  "scriptDelta" : 1,
+
+  //Wave
+  "wavePeriod" : 0.5,
+  "waveAmplitude" : 0.125,
+  "randomWaveDirection" : true,
+  
+  //Homing
+  "homingStyle" : "controlVelocity",
+  "searchRadius" : 30,
+  "baseHomingControlForce" : 0.75
+}

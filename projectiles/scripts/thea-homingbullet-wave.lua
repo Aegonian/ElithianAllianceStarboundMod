@@ -50,6 +50,9 @@ function init()
   if config.getParameter("randomWavePeriod") then
 	self.wavePeriod = self.wavePeriod * (math.random(5, 20) / 10)
   end
+  if config.getParameter("randomWaveDirection") then
+	self.waveAmplitude = self.waveAmplitude * math.random(-1, 1)
+  end
 
   self.timer = self.wavePeriod * 0.25
   local vel = mcontroller.velocity()

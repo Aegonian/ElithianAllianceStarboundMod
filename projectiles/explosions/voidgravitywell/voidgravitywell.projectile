@@ -1,0 +1,43 @@
+{
+  "projectileName" : "voidgravitywell",
+  "image" : "voidgravitywell.png",
+  "animationCycle" : 1.2,
+  "animationLoops" : true,
+  "frameNumber" : 16,
+  "winddownFrames" : 8,
+  "intangibleWinddown" : true,
+  "physics" : "thea-gravitywell",
+  "speed" : 0,
+  "power" : 0.0,
+  "emitters" : [ "voidgravitywell" ],
+  "bounces" : -1,
+  "orientationLocked" : true,
+  "piercing" : true,
+  "damageType" : "NoDamage",
+  "damageKind" : "centensianenergy",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/voidgravitywell/voidgravitywellend.config"
+    }
+  ],
+  
+  "timeToLive" : 1.8,
+
+  "physicsForces" : {
+    "vacuum" : {
+      "type" : "RadialForceRegion",
+      "outerRadius" : 30,
+      "innerRadius" : 5,
+      "targetRadialVelocity" : -35,
+      "controlForce" : 400,
+      "categoryWhitelist" : ["monster", "player", "npc", "vehicle", "itemdrop", "projectile"]
+    }
+  },
+
+  "clientEntityMode" : "ClientSlaveOnly",
+  
+  "persistentAudio" : "/sfx/projectiles/xanafian_gravitywell_loop.ogg",
+  
+  "scripts" : [ "/projectiles/scripts/thea-stationaryprojectile.lua" ]
+}
