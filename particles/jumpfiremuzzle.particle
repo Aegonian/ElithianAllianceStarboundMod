@@ -1,0 +1,23 @@
+{
+  "kind" : "jumpfiremuzzle",
+  "definition" : {
+    "type" : "ember",
+	"size" : 2.0,
+	"color" : [255, 190, 0],
+	"position" : [0, 0],
+	"destructionAction" : "shrink",
+	"destructionTime" : 0.5,
+	"fade" : 1,
+	"layer" : "middle",
+	"fullbright" : true,
+	"timeToLive" : 0.2,
+	"initialVelocity" : [15.0, 0.0],
+	"finalVelocity" : [0, -10.0],
+	"approach" : [5, 15],
+	"variance" : {
+	  "initialVelocity" : [10.0, 9.0],
+	  "size" : 0.5,
+	  "timeToLive" : 0.5
+	}
+  }
+}

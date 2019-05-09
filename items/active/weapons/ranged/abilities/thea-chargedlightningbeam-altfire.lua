@@ -209,6 +209,24 @@ function TheaChargedLightningBeamAltFire:fire()
 
     self:drawBeam(beamEnd, collidePoint)
 	
+	--Optionally apply knockback to the player
+	if self.recoilKnockbackVelocity then
+	  --If not crouching or if crouch does not impact recoil
+	  if not (self.crouchStopsRecoil and mcontroller.crouching()) then
+		local recoilVelocity = vec2.mul(vec2.norm(vec2.mul(self:aimVector(0), -1)), self.recoilKnockbackVelocity * self.dt)
+		mcontroller.addMomentum(recoilVelocity)
+	  --If crouching
+	  elseif self.crouchRecoilKnockbackVelocity then
+		local recoilVelocity = vec2.mul(vec2.norm(vec2.mul(self:aimVector(0), -1)), self.crouchRecoilKnockbackVelocity * self.dt)
+		mcontroller.addMomentum(recoilVelocity)
+	  end
+	end
+	
+	--Optionally enable beam muzzle particles
+	if self.beamMuzzleParticles then
+	  animator.setParticleEmitterActive("beamMuzzleParticlesAlt", true)
+	end
+	
     coroutine.yield()
   end
 
@@ -382,6 +400,11 @@ function TheaChargedLightningBeamAltFire:reset()
   animator.stopAllSounds("altBeamStart")
   animator.stopAllSounds("altBeamLoop")
   animator.stopAllSounds("chargeLoopAlt")
+	
+  --Optionally enable beam muzzle particles
+  if self.beamMuzzleParticles then
+	animator.setParticleEmitterActive("beamMuzzleParticlesAlt", false)
+  end
   
   --Lightning reset
   activeItem.setScriptedAnimationParameter("lightning", {})

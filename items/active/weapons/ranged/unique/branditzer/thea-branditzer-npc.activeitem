@@ -1,20 +1,20 @@
 {
-  "itemName" : "thea-branditzer",
+  "itemName" : "thea-branditzer-npc",
   "price" : 1500,
   "inventoryIcon" : "thea-branditzericon.png",
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "^orange;A minimalistic railgun firing dual overheated slugs.",
-  "shortdescription" : "^orange;Branditzer Type-1^reset;",
+  "shortdescription" : "^orange;Branditzer Type-1 (NPC)^reset;",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-chargedammogun-unique",
+  "tooltipKind" : "thea-chargedgun",
   "category" : "Railgun",
-  "itemTags" : ["weapon","ranged","sniperrifle","railgun","alliance","rimdweller","theaUnique"],
+  "itemTags" : ["weapon","ranged","sniperrifle","railgun","alliance","rimdweller"],
   "twoHanded" : true,
   
   //CONFIGURATION FOR WEAPONS COLLECTION
-  "collectablesOnPickup" : { "thea_weapons" : "thea-branditzer" },
+  //"collectablesOnPickup" : { "thea_weapons" : "thea-branditzer" },
   
   "meritTokenValue" : 100,
   
@@ -75,17 +75,15 @@
   "elementalType" : "physical",
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/abilities/thea-chargedshot-ammo.lua"],
-    "class" : "TheaChargedShotAmmo",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-chargedshot.lua"],
+    "class" : "TheaChargedShot",
 
     "chargeTime" : 0.5,
     "baseDamage" : 8.0,
+    "baseEnergyUsage" : 30,
     "inaccuracy" : 0.005,
 	
 	"cooldownTime" : 0.4,
-	
-	"readyTime" : 0.2, //Time between finishing the reload animation and being able to fire the first shot again
-	"maxAmmo" : 5,
 
     "projectileType" : "alliancebranditzerbullet",
 	"projectileCount" : 2,
@@ -158,5 +156,5 @@
 	}
   },
 
-  "builder" : "/items/buildscripts/thea-buildchargedammoweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildchargedgun.lua"
 }

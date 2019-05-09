@@ -57,7 +57,7 @@
       "order" : 9,
       "title" : "Vanguard OTS.M-12",
       "description" : "A laser linked to the ship's Orbital Targeting System.",
-      "icon" : "/items/active/weapons/ranged/unique/airstrike/avikan-airstrike.png"
+      "icon" : "/items/active/weapons/ranged/unique/airstrike/avikan-airstrikeicon.png"
     },
     "avikan-vhaleihanspear" : {
       "order" : 10,
@@ -479,11 +479,18 @@
       "description" : "An accurate driftrifle equipped with a lightweight disposable magazine.",
       "icon" : "/items/active/weapons/ranged/unique/achaari/akkimari-achaariicon.png"
     },
+	//NEW EQUIPMENT v2.3.10
 	"avikan-seekersmg" : {
       "order" : 78,
       "title" : "Seeker MLR-02",
       "description" : "A prototype compact linerifle developed by the Seekers.",
       "icon" : "/items/active/weapons/ranged/unique/seeker/avikan-seekersmg.png"
+    },
+	"thea-branditzer" : {
+      "order" : 79,
+      "title" : "Branditzer Type-1",
+      "description" : "A minimalistic railgun firing dual overheated slugs.",
+      "icon" : "/items/active/weapons/ranged/unique/branditzer/thea-branditzericon.png"
     }
   }
 }

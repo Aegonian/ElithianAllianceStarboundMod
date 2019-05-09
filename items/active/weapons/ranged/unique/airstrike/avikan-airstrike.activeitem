@@ -1,14 +1,14 @@
 {
   "itemName" : "avikan-airstrike",
   "price" : 1500,
-  "inventoryIcon" : "avikan-airstrike.png",
+  "inventoryIcon" : "avikan-airstrikeicon.png",
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "^orange;A laser linked to the ship's Orbital Targeting System.",
   "shortdescription" : "^orange;Vanguard OTS.M-12^white;",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-unique",
+  "tooltipKind" : "thea-chargedgun-unique",
   "category" : "Laser Targeting System",
   "itemTags" : ["weapon","ranged","avikan","theaUnique"],
   "twoHanded" : true,
@@ -22,10 +22,32 @@
   "animationParts" : {
     "gun" : "avikan-airstrike.png",
     "lights" : "avikan-airstrikelights.png",
-    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/thea-invisiblemuzzle.png",
-    "charge" : "avikan-airstrikecharge.png"
+    "charge" : "avikan-airstrikecharge.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/thea-invisiblemuzzle.png"
   },
   "animationCustom" : {
+	"animatedParts" : {
+      "parts" : {
+        "gun" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [0.75, 0.625]
+		  }
+		},
+		"lights" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [0.75, 0.625]
+		  }
+		},
+		"charge" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [0.75, 0.625]
+		  }
+		}
+      }
+    },
     "sounds" : {
       "fire" : [ "/sfx/gun/thea_airstrike_lockon.ogg" ],
 	  "chargeLoop" : [ "/sfx/gun/avikan_airstrike_chargeup.ogg" ],
@@ -41,42 +63,200 @@
       {
         "offset" : [1.9, 0.3],
         "length" : 100,
-        "segments" : 6,
+        "segments" : 10,
         "angle" : 0
       }
     ]
   },
 
-  "baseOffset" : [0.75, 0.2],
-  "muzzleOffset" : [1.1, 0.1],
+  "baseOffset" : [0.75, 0.625],
+  "muzzleOffset" : [1.1, -0.25],
 
   "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
 
   "elementalType" : "physical",
 
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/abilities/thea-lasertarget/thea-lasertarget.lua"],
-    "class" : "TheaLaserTarget",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-airstrikemarker.lua"],
+    "class" : "TheaAirstrikeMarker",
 
-    "chargeTime" : 3.3,
-    "baseDamage" : 27.5,
+    "chargeTime" : 2.7,
+    "baseDamage" : 40.0,
     "baseEnergyUsage" : 200,
-    "inaccuracy" : 0.0,
 	
 	"cooldownTime" : 0.8,
 	
-	"walkWhileFiring" : true,
+	"walkWhileFiring" : false,
 	
 	"maxLaserDistance" : 100,
-	"laserColourPrimary" : [255, 0, 0, 200],
-	"laserColourSecondary" : [0, 255, 0, 200],
-	"laserColourInactive" : [0, 0, 0, 0],
+	"laserColourTargeting" : [255, 0, 0, 200],	//Laser colour while charging
+	"laserColourReady" : [0, 255, 0, 200],		//Laser colour when ready
+	"laserColourInactive" : [0, 0, 0, 0],		//Laser colour when not in use
+	"laserReadyTime" : 0.1,						//Laser colour is changed to "ready" this amount of time before firing
 
-    "projectileType" : "avikanairstrikeprimer",
-	"projectileCount" : 1,
-	"projectileParameters" : { 
-      "knockback" : 0
-    },
+	"stagehandType" : "thea-airstrikeprojectilespawner",
+	"projectiles" : [
+	  {
+		"projectileType" : "avikanairstrikerocket2",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 0.5
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 0.625
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 0.75
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket2",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 0.875
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 1.0
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 1.125
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket2",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 1.25
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 1.375
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 1.5
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket2",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 1.625
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 1.75
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 1.875
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket2",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 2.0
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 2.125
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 2.25
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket2",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 2.375
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 2.5
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 2.625
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket2",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 2.75
+	  },
+	  {
+		"projectileType" : "avikanairstrikerocket",
+		"projectileParameters" : {},
+		"heightRange" : [40, 50],
+		"widthRange" : [-10, 10],
+		"inaccuracy" : 0.1,
+		"delay" : 2.875
+	  }
+	],
 
     "stances" : {
       "idle" : {

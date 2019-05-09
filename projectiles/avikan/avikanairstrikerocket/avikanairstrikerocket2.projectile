@@ -1,0 +1,33 @@
+{
+  "projectileName" : "avikanairstrikerocket2",
+  "image" : "avikanairstrikerocket.png",
+  "animationCycle" : 1.5,
+  "animationLoops" : true,
+  "frameNumber" : 3,
+  "windupFrames" : 15,
+  "timeToLive" : 15.0,
+  "lightColor" : [127, 127, 63],
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/avikanrocketexplosion/avikanrocketexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "emitters" : [ "thea-rocketsmokefast" ],
+  "flippable" : true,
+  "power" : 10.0,
+  "speed" : 25.0,
+  "physics" : "thea-airstrikerocket",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+
+  "persistentAudio" : "/sfx/projectiles/thea_airstrikerocket.ogg",
+  
+  "scripts" : [ "/projectiles/scripts/thea-homingbullet.lua" ],
+  "homingStyle" : "rotateToTarget",
+  "searchRadius" : 50,
+  "rotationRate" : 0.75,
+  "trackingLimit" : 1.0
+}

@@ -96,7 +96,7 @@
           "weapon" : {
             "idle" : {
               "properties" : {
-                "image" : "<partImage>:idle"
+                "image" : ""
               }
             },
             "transition" : {

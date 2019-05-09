@@ -1,0 +1,8 @@
+{
+  "type" : "thea-airstrikeprojectilespawner",
+
+  "scripts" : ["/stagehands/activeitems/thea-airstrikeprojectilespawner.lua"],
+  "scriptDelta" : 1,
+  
+  "maximumLifeTime" : 30 //Absolute max lifetime for the stagehand as a fail-safe
+}

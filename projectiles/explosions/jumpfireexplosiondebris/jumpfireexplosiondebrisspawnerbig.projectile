@@ -1,9 +1,8 @@
 {
-  "projectileName" : "explosiondebrisspawnerbig",
+  "projectileName" : "jumpfireexplosiondebrisspawnerbig",
   "physics" : "laser",
   "bounces" : 0,
-  "damageKindImage" : "icon.png",
-  "image" : "explosiondebrisspawnerbig.png",
+  "image" : "jumpfireexplosiondebrisspawner.png",
   "animationCycle" : 0.5,
   "frameNumber" : 1,
   "timeToLive": 0.01,
@@ -13,140 +12,140 @@
   "actionOnReap" : [
 	{
       "action" : "projectile",
-      "type" : "explosiondebris",
+      "type" : "jumpfireexplosiondebris",
       "fuzzAngle" : 10,
       "inheritDamageFactor" : 0,
       "angleAdjust" : 0
     },
 	{
       "action" : "projectile",
-      "type" : "explosiondebris",
+      "type" : "jumpfireexplosiondebris",
       "fuzzAngle" : 10,
       "inheritDamageFactor" : 0,
       "angleAdjust" : 18
     },
 	{
       "action" : "projectile",
-      "type" : "explosiondebris",
+      "type" : "jumpfireexplosiondebris",
       "fuzzAngle" : 10,
       "inheritDamageFactor" : 0,
       "angleAdjust" : 36
     },
 	{
       "action" : "projectile",
-      "type" : "explosiondebris",
+      "type" : "jumpfireexplosiondebris",
       "fuzzAngle" : 10,
       "inheritDamageFactor" : 0,
       "angleAdjust" : 54
     },
 	{
       "action" : "projectile",
-      "type" : "explosiondebris",
+      "type" : "jumpfireexplosiondebris",
       "fuzzAngle" : 10,
       "inheritDamageFactor" : 0,
       "angleAdjust" : 72
     },
 	{
       "action" : "projectile",
-      "type" : "explosiondebris",
+      "type" : "jumpfireexplosiondebris",
       "fuzzAngle" : 10,
       "inheritDamageFactor" : 0,
       "angleAdjust" : 90
     },
     {
       "action" : "projectile",
-      "type" : "explosiondebris",
+      "type" : "jumpfireexplosiondebris",
       "fuzzAngle" : 10,
       "inheritDamageFactor" : 0,
       "angleAdjust" : 108
     },
 	{
       "action" : "projectile",
-      "type" : "explosiondebris",
+      "type" : "jumpfireexplosiondebris",
       "fuzzAngle" : 10,
       "inheritDamageFactor" : 0,
       "angleAdjust" : 126
     },
     {
       "action" : "projectile",
-      "type" : "explosiondebris",
+      "type" : "jumpfireexplosiondebris",
       "fuzzAngle" : 10,
       "inheritDamageFactor" : 0,
       "angleAdjust" : 144
     },
 	{
       "action" : "projectile",
-      "type" : "explosiondebris",
+      "type" : "jumpfireexplosiondebris",
       "fuzzAngle" : 10,
       "inheritDamageFactor" : 0,
       "angleAdjust" : 162
     },
 	{
       "action" : "projectile",
-      "type" : "explosiondebris",
+      "type" : "jumpfireexplosiondebris",
       "fuzzAngle" : 10,
       "inheritDamageFactor" : 0,
       "angleAdjust" : 180
     },
 	{
       "action" : "projectile",
-      "type" : "explosiondebris",
+      "type" : "jumpfireexplosiondebris",
       "fuzzAngle" : 10,
       "inheritDamageFactor" : 0,
       "angleAdjust" : 198
     },
 	{
       "action" : "projectile",
-      "type" : "explosiondebris",
+      "type" : "jumpfireexplosiondebris",
       "fuzzAngle" : 10,
       "inheritDamageFactor" : 0,
       "angleAdjust" : 216
     },
 	{
       "action" : "projectile",
-      "type" : "explosiondebris",
+      "type" : "jumpfireexplosiondebris",
       "fuzzAngle" : 10,
       "inheritDamageFactor" : 0,
       "angleAdjust" : 234
     },
 	{
       "action" : "projectile",
-      "type" : "explosiondebris",
+      "type" : "jumpfireexplosiondebris",
       "fuzzAngle" : 10,
       "inheritDamageFactor" : 0,
       "angleAdjust" : 252
     },
 	{
       "action" : "projectile",
-      "type" : "explosiondebris",
+      "type" : "jumpfireexplosiondebris",
       "fuzzAngle" : 10,
       "inheritDamageFactor" : 0,
       "angleAdjust" : 270
     },
     {
       "action" : "projectile",
-      "type" : "explosiondebris",
+      "type" : "jumpfireexplosiondebris",
       "fuzzAngle" : 10,
       "inheritDamageFactor" : 0,
       "angleAdjust" : 288
     },
 	{
       "action" : "projectile",
-      "type" : "explosiondebris",
+      "type" : "jumpfireexplosiondebris",
       "fuzzAngle" : 10,
       "inheritDamageFactor" : 0,
       "angleAdjust" : 306
     },
     {
       "action" : "projectile",
-      "type" : "explosiondebris",
+      "type" : "jumpfireexplosiondebris",
       "fuzzAngle" : 10,
       "inheritDamageFactor" : 0,
       "angleAdjust" : 324
     },
 	{
       "action" : "projectile",
-      "type" : "explosiondebris",
+      "type" : "jumpfireexplosiondebris",
       "fuzzAngle" : 10,
       "inheritDamageFactor" : 0,
       "angleAdjust" : 342

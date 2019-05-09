@@ -59,10 +59,21 @@
     },
     "particleEmitters" : {
       "muzzleFlash" : {
+		"transformationGroups" : ["muzzle"],
+		"burstCount" : 2,
         "particles" : [
-          { "particle" : "lineriflepuff", "offset" : [-1.0, -0.1] },
-          { "particle" : "lineriflepuff", "offset" : [-1.5, -0.1] },
-          { "particle" : "lineriflepuff", "offset" : [-2.0, -0.1] }
+          { "particle" : "lineriflepuff", "offset" : [-0.75, -0.1] },
+          { "particle" : "lineriflepuff", "offset" : [-1.25, -0.1] },
+          { "particle" : "lineriflepuff", "offset" : [-1.75, -0.1] }
+        ]
+      },
+      "beamMuzzleParticlesAlt" : {
+		"transformationGroups" : ["muzzle"],
+		"emissionRate" : 10,
+        "particles" : [
+          { "particle" : "lineriflepuff", "offset" : [-0.75, -0.1] },
+          { "particle" : "lineriflepuff", "offset" : [-1.25, -0.1] },
+          { "particle" : "lineriflepuff", "offset" : [-1.75, -0.1] }
         ]
       }
     },
@@ -178,11 +189,11 @@
 
 	//Charge Config
 	"chargeTime" : 1.8,
-	"cooldownTime" : 1.2,
+	"cooldownTime" : 1.1,
 	
 	//Beam Config
     "fireTime" : 0.1,
-    "baseDps" : 15.0,
+    "baseDps" : 18.0,
     "energyUsage" : 120.0,
     "inaccuracy" : 0.0,
 	
@@ -194,6 +205,8 @@
 	"spawnImpactProjectile" : true,
 	"impactProjectile" : "primeinitiativeexplosionspawner",
 	"impactProjectileDps" : 5.0,
+	
+	"beamMuzzleParticles" : true,
 	
 	"laserPiercing" : false,
     "damageConfig" : {

@@ -70,8 +70,7 @@
 	    { "particle" : "thea-sealedcachepuff"},
 	    { "particle" : "thea-sealedcache1"},
 		{ "particle" : "thea-sealedcache2"},
-		{ "particle" : "thea-sealedcache3"},
-		{ "particle" : "xanafianbullettrail"}
+		{ "particle" : "thea-sealedcache3"}
 	  ]
     }
   },

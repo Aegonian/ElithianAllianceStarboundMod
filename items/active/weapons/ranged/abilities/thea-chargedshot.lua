@@ -122,6 +122,11 @@ function TheaChargedShot:fire()
   self:fireProjectile()
   self:muzzleFlash()
   
+  --Optionally play a firing animation
+  if self.singleFireAnimation then
+	animator.setAnimationState("gun", "active")
+  end
+  
   if self.recoilKnockbackVelocity then
 	--If not crouching or if crouch does not impact recoil
 	if not (self.crouchStopsRecoil and mcontroller.crouching()) then
@@ -244,6 +249,9 @@ function TheaChargedShot:muzzleFlash()
   animator.setPartTag("muzzleFlash", "variant", math.random(1, 3))
   animator.setAnimationState("firing", "fire")
   animator.burstParticleEmitter("muzzleFlash")
+  if self.casingEjectParticles then
+	animator.burstParticleEmitter("casingEject")
+  end
   animator.playSound("fire")
 
   animator.setLightActive("muzzleFlash", true)

@@ -1,0 +1,55 @@
+{
+  "projectileName" : "jumpfireexplosiondebris",
+  "physics" : "grenade",
+  "bounces" : 1,
+  "image" : "jumpfireexplosiondebris.png",
+  "animationCycle" : 1.2,
+  "frameNumber" : 4,
+  "piercing" : true,
+  "emitters" : [],
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "animated",
+        "animation" : "/projectiles/explosions/jumpfireexplosiondebris/trail.animation",
+        "position" : [-0.75, 0],
+		"size" : 0.75,
+        "layer" : "back",
+		"light" : [32, 16, 0],
+		"collidesForeground" : false,
+        "timeToLive" : 0.7,
+        "destructionTime" : 0.1,
+        "destructionAction" : "fade",
+        "fullbright" : true,
+		"variance" : {
+		  "position" : [0, 0.1],
+		  "size" : 0.5
+		}
+      }
+    }
+  ],
+  "power" : 0,
+  "speed" : 45,
+  "timeToLive" : 1.2,
+  "supportsProcessing" : true,
+  "lightColor" : [100, 65, 0],
+  "fullbright" : true,
+  "damageKind" : "jumpweapon",
+  "statusEffects" : [
+    "jumprifleburn"
+  ],
+  "hydrophobic" : true,
+  
+  "scripts" : [ "/projectiles/scripts/thea-randomspeedprojectile.lua" ],
+  "minSpeed" : 40,
+  "maxSpeed" : 50,
+  
+  "randomTimeToLive" : true,
+  "timeToLiveMilliseconds" : true,
+  "minLifeTime" : 200,
+  "maxLifeTime" : 300
+}

@@ -15,7 +15,18 @@
 
   "animation" : "/items/active/weapons/ranged/gun.animation",
   "animationParts" : { },
-  "animationCustom" : { },
+  "animationCustom" : {
+	"particleEmitters" : {
+	  "muzzleFlash" : {
+		"burstCount" : 6.0,
+		"transformationGroups" : ["muzzle"],
+		"offsetRegion" : [0, 0, 0, 0],
+		"particles" : [
+		  {"particle" : "jumpfiremuzzlesmall"}
+		]
+	  }
+	}
+  },
   "baseOffset" : [-0.6, 0.2],
   "muzzleOffset" : [0.0, 0.0],
 

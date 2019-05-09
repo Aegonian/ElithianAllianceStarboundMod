@@ -387,6 +387,23 @@
     }]
    ]
   },
+  {"op" : "add",
+   "path" : "/aegiRimRailgunnerDeathTreasure",
+   "value" : [
+	[0, {
+      "pool" : [
+        {"weight" : 0.9, "pool" : "money"},
+        {"weight" : 0.05, "item" : "thea-branditzer"},
+        {"weight" : 0.35, "item" : "alliancemetal"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+   ]
+  },
   
   //=========================================================================================
   //================================== AKKIMARI DROP POOLS ==================================

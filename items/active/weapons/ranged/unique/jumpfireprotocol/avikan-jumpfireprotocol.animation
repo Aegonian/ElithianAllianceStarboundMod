@@ -194,10 +194,12 @@
 
   "particleEmitters" : {
     "muzzleFlash" : {
-      "emissionRate" : 10.0,
+      "burstCount" : 8.0,
       "transformationGroups" : ["muzzle"],
       "offsetRegion" : [0, 0, 0, 0],
-      "particles" : [ ]
+      "particles" : [
+        {"particle" : "jumpfiremuzzlesmall"}
+      ]
     },
 	"idleparticles" : {
 	  "active" : true,

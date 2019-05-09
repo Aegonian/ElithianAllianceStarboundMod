@@ -158,10 +158,12 @@
 
   "particleEmitters" : {
     "muzzleFlash" : {
-      "emissionRate" : 10.0,
+      "burstCount" : 20.0,
       "transformationGroups" : ["muzzle"],
       "offsetRegion" : [0, 0, 0, 0],
-      "particles" : [ ]
+      "particles" : [
+        {"particle" : "jumpfiremuzzle"}
+      ]
     },
 	"idleparticles" : {
 	  "active" : true,
@@ -196,14 +198,27 @@
     "beamCollision" : {
       "active" : false,
       "transformationGroups" : ["muzzle", "beamEnd"],
-      "emissionRate" : 20,
-      "particles" : []
+      "emissionRate" : 50,
+      "particles" : [
+        {"particle" : "jumpfireimpact"}
+      ]
     },
     "beamParticles" : {
       "active" : false,
       "transformationGroups" : ["beam"],
-      "emissionRate" : 10,
-      "particles" : []
+      "emissionRate" : 30,
+      "particles" : [
+        {"particle" : "jumpfirebeam"}
+      ]
+    },
+    "beamMuzzleParticlesAlt" : {
+      "active" : false,
+      "transformationGroups" : ["muzzle"],
+      "emissionRate" : 30,
+      "particles" : [
+        {"particle" : "jumpfirebeammuzzle"},
+        {"particle" : "jumpfiremuzzle"}
+      ]
     }
   },
 

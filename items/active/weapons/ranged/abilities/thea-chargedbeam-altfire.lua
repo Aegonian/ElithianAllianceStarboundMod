@@ -215,6 +215,11 @@ function TheaChargedBeamAltFire:fire()
 		mcontroller.addMomentum(recoilVelocity)
 	  end
 	end
+	
+	--Optionally enable beam muzzle particles
+	if self.beamMuzzleParticles then
+	  animator.setParticleEmitterActive("beamMuzzleParticlesAlt", true)
+	end
 
     coroutine.yield()
   end
@@ -346,6 +351,11 @@ function TheaChargedBeamAltFire:reset()
   animator.stopAllSounds("altBeamStart")
   animator.stopAllSounds("altBeamLoop")
   animator.stopAllSounds("chargeLoopAlt")
+  
+  --Optionally enable beam muzzle particles
+  if self.beamMuzzleParticles then
+	animator.setParticleEmitterActive("beamMuzzleParticlesAlt", false)
+  end
   
   --Charge particle set-up
   if self.useChargeParticles then

@@ -1,0 +1,30 @@
+{
+  "projectileName" : "jumpfireexplosiondebrisspawnersmall",
+  "physics" : "laser",
+  "bounces" : 0,
+  "image" : "jumpfireexplosiondebris.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "timeToLive": 0.01,
+  "power" : 0,
+  "speed" : 0,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "jumpfireexplosiondebrissmall",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.01,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "jumpfireexplosiondebrissmall",
+      "fuzzAngle" : 180,
+      "inheritDamageFactor" : 0.01,
+      "angleAdjust" : 180
+    }
+  ],
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

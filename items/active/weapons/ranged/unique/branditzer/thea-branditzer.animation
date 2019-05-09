@@ -190,7 +190,7 @@
 	  ]
     },
     "casingEject" : {
-      "burstCount" : 1,
+      "burstCount" : 2,
       "transformationGroups" : ["weapon"],
       "offsetRegion" : [0.875, 0.375, 0.875, 0.375],
       "particles" : [

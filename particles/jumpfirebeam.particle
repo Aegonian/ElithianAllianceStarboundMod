@@ -1,0 +1,22 @@
+{
+  "kind" : "jumpfirebeam",
+  "definition" : {
+    "type" : "ember",
+    "color" : [0, 0, 0],
+    "light" : [120, 60, 0],
+    "position" : [0, 0],
+    "destructionAction" : "fade",
+    "destructionTime" : 0.1,
+    "fade" : 1,
+    "size" : 1.0,
+    "layer" : "back",
+    "fullbright" : true,
+    "timeToLive" : 0.1,
+    "variance" : {
+      "size" : 0.5,
+      "rotation" : 180,
+      "position" : [0.25, 0.25],
+      "initialVelocity" : [1.0, 1.0]
+    }
+  }
+}

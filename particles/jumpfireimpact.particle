@@ -1,0 +1,20 @@
+{
+  "kind" : "jumpfireimpact",
+  "definition" : {
+	"type" : "animated",
+	"animation" : "/animations/jumpfireimpact/jumpfireimpact.animation",
+    "fade" : 1,
+    "layer" : "back",
+    "fullbright" : true,
+    "light" : [96, 72, 0],
+	"timeToLive" : 0.35,
+	"destructionAction" : "shrink",
+	"destructionTime" : 0.15,
+	"variance" : {
+	  "position" : [0.0, 0.0],
+	  "initialVelocity" : [0, 0],
+	  "rotation" : 180
+	},
+	"collidesLiquid" : false
+  }
+}

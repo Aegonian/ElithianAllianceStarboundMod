@@ -17,13 +17,28 @@
           }
         }
       },
+	  "location" : {
+        "default" : "valid",
+        "states" : {
+          "valid" : {
+            "frames" : 3,
+            "cycle" : 0.4,
+            "mode" : "loop"
+          },
+		  "invalid" : {
+            "frames" : 3,
+            "cycle" : 0.4,
+            "mode" : "loop"
+          }
+        }
+      },
 	  "charge" : {
         "default" : "off",
         "states" : {
           "off" : {},
 		  "charging" : {
-            "frames" : 30,
-            "cycle" : 3.3,
+            "frames" : 27,
+            "cycle" : 2.7,
             "mode" : "transition",
             "transition" : "off"
           }
@@ -37,8 +52,22 @@
           "zLevel" : 0,
           "centered" : true,
           "image" : "<partImage><paletteSwaps>",
-          "offset" : [0.75, 0.2],
+          "offset" : [0.0, 0.0],
           "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "location" : {
+            "valid" : {
+              "properties" : {
+                "image" : "<partImage>:valid.<frame>"
+              }
+            },
+            "invalid" : {
+              "properties" : {
+                "image" : "<partImage>:invalid.<frame>"
+              }
+            }
+          }
         }
       },
 	  "lights" : {
@@ -46,20 +75,33 @@
           "zLevel" : 1,
           "centered" : true,
           "image" : "<partImage><paletteSwaps>",
-          "offset" : [0.75, 0.2],
+          "offset" : [0.0, 0.0],
           "fullbright" : true,
           "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "location" : {
+            "valid" : {
+              "properties" : {
+                "image" : "<partImage>:valid.<frame>"
+              }
+            },
+            "invalid" : {
+              "properties" : {
+                "image" : "<partImage>:invalid.<frame>"
+              }
+            }
+          }
         }
       },
       "muzzleFlash" : {
         "properties" : {
           "zLevel" : -1,
           "centered" : true,
-          "offset" : [0.75, 0],
+          "offset" : [0.0, 0.0],
           "fullbright" : true,
           "transformationGroups" : ["muzzle"]
         },
-
         "partStates" : {
           "firing" : {
             "off" : {
@@ -79,12 +121,10 @@
         "properties" : {
           "zLevel" : 1,
           "centered" : true,
-		  //NOTE: This offset vaue is generally the same as the weapon's baseOffset
-          "offset" : [0.75, 0.2],
+          "offset" : [0.0, 0.0],
           "fullbright" : true,
           "transformationGroups" : ["weapon"]
         },
-
         "partStates" : {
           "charge" : {
             "off" : {
@@ -127,7 +167,7 @@
     "muzzleFlash" : {
       "active" : false,
       "position" : [0, 0],
-      "color" : [90, 90, 0]
+      "color" : [0, 0, 0]
     }
   },
 

@@ -65,8 +65,8 @@
 	  //Secondary
 	  "chargeLoopAlt" : [ "/sfx/gun/sundrainer_chargelong.ogg" ],
       "altBeamStart" : [],
-      "altBeamLoop" : [ "/sfx/gun/violatedioncannon_beamloop.ogg" ],
-      "altBeamEnd" : [ "/sfx/gun/violatedioncannon_beamend2.ogg" ],
+      "altBeamLoop" : [ "/sfx/gun/sundrainer_beamloop.ogg" ],
+      "altBeamEnd" : [ "/sfx/gun/sundrainer_beamend.ogg" ],
       "altBeamImpact" : []
     }
   },
@@ -168,7 +168,7 @@
 
 	//Charge Config
 	"chargeTime" : 3.0,
-	"cooldownTime" : 2.0,
+	"cooldownTime" : 1.6,
 	
 	//Beam Config
     "fireTime" : 0.1,
@@ -177,8 +177,8 @@
     "inaccuracy" : 0.0,
 	
 	"walkWhileFiring" : true,
-	"minFiringTime" : 2.0,
-	"maxFiringTime" : 2.0,
+	"minFiringTime" : 2.5,
+	"maxFiringTime" : 2.5,
 	
 	"impactDamageTimeout" : 0.1,
 	"spawnImpactProjectile" : true,
@@ -203,6 +203,7 @@
 	"recoilKnockbackVelocity" : 100,
 	"crouchRecoilKnockbackVelocity" : 80,
 	"crouchStopsRecoil" : true,
+	"beamMuzzleParticles" : true,
 
     "beamLength" : 70,
 
