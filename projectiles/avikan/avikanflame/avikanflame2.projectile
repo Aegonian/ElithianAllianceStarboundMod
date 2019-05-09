@@ -1,0 +1,33 @@
+{
+  "projectileName" : "avikanflame2",
+  "physics" : "stickybomb",
+  "bounces" : -1,
+  "timeToLive" : 5,
+  "speed" : 40,
+  "image" : "avikanflame.png",
+  "orientationLocked" : true,
+  "flippable" : true,
+  "animationCycle" : 0.8,
+  "lightColor" : [235, 126, 2],
+  "fullbright" : true,
+  "frameNumber" : 8,
+  "emitters" : [ "flames" ],
+  "piercing" : true,
+  "damagePoly" : [ [-6, 0], [-4, -4], [0, -6], [4, -4], [6, 0], [4, 4], [0, 6], [-4, 4] ],
+  "actionOnReap" : [],
+  "damageKind" : "jumpweapon",
+  "universalDamage" : true,
+  "statusEffects" : [
+    "thea-burning"
+  ],
+  "hydrophobic" : true,
+  
+  "persistentAudio" : "/sfx/projectiles/thea_flame_burning.ogg",
+  
+  "scripts" : [ "/projectiles/scripts/thea-uprightprojectile.lua" ],
+  "rotateInAir" : false,
+  "randomTimeToLive" : true,
+  "timeToLiveMilliseconds" : true,
+  "minLifeTime" : 350,
+  "maxLifeTime" : 650
+}

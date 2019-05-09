@@ -1,0 +1,89 @@
+{
+  "projectileName" : "avikanbunkerbusterexplosion",
+  "image" : "avikanbunkerbusterexplosion.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 6,
+  "speed" : 0,
+  "lightColor" : [255, 255, 128],
+  "pointLight" : true,
+  "actionOnReap" : [
+	{
+      "action" : "projectile",
+      "type" : "avikanflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.01,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.01,
+      "angleAdjust" : 36
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.01,
+      "angleAdjust" : 72
+    },
+    {
+      "action" : "projectile",
+      "type" : "avikanflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.01,
+      "angleAdjust" : 108
+    },
+    {
+      "action" : "projectile",
+      "type" : "avikanflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.01,
+      "angleAdjust" : 144
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.01,
+      "angleAdjust" : 180
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.01,
+      "angleAdjust" : 216
+    },
+	{
+      "action" : "projectile",
+      "type" : "avikanflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.01,
+      "angleAdjust" : 252
+    },
+    {
+      "action" : "projectile",
+      "type" : "avikanflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.01,
+      "angleAdjust" : 288
+    },
+    {
+      "action" : "projectile",
+      "type" : "avikanflame",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.01,
+      "angleAdjust" : 324
+    }
+  ],
+  "statusEffects" : [ ],
+  "damagePoly" : [ [-56, 0], [-42, -42], [0, -56], [42, -42], [56, 0], [42, 42], [0, 56], [-42, 42] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "damageKind" : "default",
+  "knockback" : 50
+}
