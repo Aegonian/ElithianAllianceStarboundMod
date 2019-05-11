@@ -1,24 +1,24 @@
 {
-  "kind" : "deathseekertrail",
+  "kind" : "deathseekerblast",
   "definition" : {
     "type" : "ember",
-    "size" : 1.5,
+    "size" : 2.5,
     "color" : [153, 63, 255, 100],
 	"position" : [0, 0],
 	"destructionAction" : "shrink",
-	"destructionTime" : 0.3,
+	"destructionTime" : 0.5,
 	"fade" : 1,
 	"layer" : "middle",
 	"fullbright" : true,
-	"timeToLive" : 0.2,
+	"timeToLive" : 0.4,
 	"initialVelocity" : [0.0, 0.0],
 	"finalVelocity" : [0, -10.0],
 	"approach" : [5, 15],
 	"variance" : {
-	  "position" : [0.5, 0.5],
-	  "initialVelocity" : [3.0, 3.0],
+	  "position" : [0.25, 0.25],
+	  "initialVelocity" : [12.0, 12.0],
 	  "size" : 0.25,
-	  "timeToLive" : 0.2
+	  "timeToLive" : 0.3
 	}
   }
 }

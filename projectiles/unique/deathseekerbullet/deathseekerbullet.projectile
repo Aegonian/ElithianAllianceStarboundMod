@@ -7,9 +7,34 @@
   "animationCycle" : 0.5,
   "frameNumber" : 4,
   "emitters" : [ "deathseekertrail" ],
-  "damageKindImage" : "icon.png",
   "lightColor" : [100, 10, 150],
   "fullbright" : true,
+  /*"periodicActions" : [
+    {
+      "time" : 0.05,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "animated",
+        "animation" : "/projectiles/unique/deathseekerbullet/trail.animation",
+        "position" : [-0.5, 0],
+		"initialVelocity" : [-2.5, 0.0],
+        "size" : 0.5,
+        "layer" : "back",
+		"collidesForeground" : false,
+        "timeToLive" : 0.5,
+        "destructionTime" : 0.1,
+        "destructionAction" : "fade",
+        "fullbright" : true,
+		"variance" : {
+		  "position" : [0.125, 0.125],
+		  "initialVelocity" : [0.125, 0.125],
+		  "size" : 0.25
+		}
+      }
+    }
+  ],*/
   "actionOnReap" : [
     {
       "action" : "config",
@@ -17,18 +42,32 @@
     }
   ],
   "power" : 5.0,
-  "speed" : 13,
+  "speed" : 14,
   "timeToLive" : 5.0,
   "damageType" : "NoDamage",
   "damageKind" : "default",
+  "damagePoly" : [ [-6, 0], [-4, -4], [0, -6], [4, -4], [6, 0], [4, 4], [0, 6], [-4, 4] ],
   
   //SCRIPT CONFIG
-  "scripts" : [ "/projectiles/scripts/thea-deathseekerbullet.lua" ],
-  "searchRadius" : 40,
-  "baseHomingControlForce" : 3,
-  
+
+  "scripts" : ["/projectiles/scripts/thea-homingbullet-wave.lua"],
+  "scriptDelta" : 1,
+
   "randomTimeToLive" : true,
-  //Lifetime is in milliseconds!
-  "minLifeTime" : 350,
-  "maxLifeTime" : 500
+  "timeToLiveMilliseconds" : true,
+  "minLifeTime" : 400,
+  "maxLifeTime" : 600,
+  
+  "randomStartingSpeed" : true,
+  "minSpeed" : 12,
+  "maxSpeed" : 22,
+  
+  //"randomWaveDirection" : true,
+  "randomWavePeriod" : true,
+  "wavePeriod" : 2.5,
+  "waveAmplitude" : 0.75,
+  
+  "homingStartDelay" : 0.25,
+  "searchRadius" : 50,
+  "baseHomingControlForce" : 1.25
 }

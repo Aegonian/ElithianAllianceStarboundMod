@@ -23,7 +23,19 @@
           "off" : {},
 		  "charging" : {
             "frames" : 10,
-            "cycle" : 1.0,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "off"
+          }
+        }
+      },
+	  "chargeAlt" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+		  "charging" : {
+            "frames" : 10,
+            "cycle" : 1.2,
             "mode" : "transition",
             "transition" : "off"
           }
@@ -55,11 +67,10 @@
         "properties" : {
           "zLevel" : 1,
           "centered" : true,
-          "offset" : [0.75, 0],
+          "offset" : [0.125, 0.0],
           "fullbright" : true,
           "transformationGroups" : ["muzzle"]
         },
-
         "partStates" : {
           "firing" : {
             "off" : {
@@ -83,9 +94,31 @@
           "fullbright" : false,
           "transformationGroups" : ["weapon"]
         },
-
         "partStates" : {
           "charge" : {
+            "off" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+            "charging" : {
+              "properties" : {
+                "image" : "<partImage>:<frame>"
+              }
+            }
+          }
+        }
+      },
+      "chargeAlt" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "offset" : [0, 0],
+          "fullbright" : false,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "chargeAlt" : {
             "off" : {
               "properties" : {
                 "image" : ""
@@ -115,24 +148,28 @@
 
   "particleEmitters" : {
     "muzzleFlash" : {
-      "emissionRate" : 10.0,
+      "burstCount" : 16,
       "transformationGroups" : ["muzzle"],
       "offsetRegion" : [0, 0, 0, 0],
-      "particles" : [ ]
+      "particles" : [
+        {"particle" : "deathseekerblast"}
+      ]
     },
 	"idleparticles" : {
 	  "active" : false,
       "emissionRate" : 4.0,
       "transformationGroups" : ["muzzle"],
       "offsetRegion" : [0, -0.2, 0, 0.2],
-      "particles" : [
-        { "particle" : "thellhunteridle"},
-        { "particle" : "thellhunteridle2"},
-		{ "particle" : "thellhunteridle"},
-        { "particle" : "thellhunteridle2"}
-      ]
+      "particles" : []
     },
 	"chargeparticles" : {
+	  "active" : false,
+      "emissionRate" : 9.0,
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [0.1, -0.1, 0.1, -0.1],
+      "particles" : []
+    },
+	"chargeparticlesAlt" : {
 	  "active" : false,
       "emissionRate" : 9.0,
       "transformationGroups" : ["muzzle"],

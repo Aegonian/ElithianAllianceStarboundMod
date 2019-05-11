@@ -8,7 +8,7 @@
   "shortdescription" : "^orange;Deathseeker^white;",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-chargedgun-unique",
+  "tooltipKind" : "thea-chargedgunalt-unique",
   "category" : "Volley Launcher",
   "itemTags" : ["weapon","ranged","centens","theaUnique"],
   "twoHanded" : true,
@@ -25,7 +25,8 @@
     "gun" : "centens-deathseeker.png",
     "lights" : "centens-deathseekerlights.png",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/deathseekermuzzle.png",
-    "charge" : "centens-deathseekercharge.png"
+    "charge" : "centens-deathseekercharge.png",
+    "chargeAlt" : "centens-deathseekercharge.png"
   },
   "animationCustom" : {
 	"animatedParts" : {
@@ -33,32 +34,41 @@
         "gun" : {
 		  "properties" : {
 			//Same as BaseOffset
-		    "offset" : [0.4, 0.3]
+		    "offset" : [0.4, 0.375]
 		  }
 		},
 		"lights" : {
 		  "properties" : {
 			//Same as BaseOffset
-		    "offset" : [0.4, 0.3]
+		    "offset" : [0.4, 0.375]
 		  }
 		},
 		"charge" : {
 		  "properties" : {
 			//Same as BaseOffset
-		    "offset" : [0.4, 0.3]
+		    "offset" : [0.4, 0.375]
+		  }
+		},
+		"chargeAlt" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [0.4, 0.375]
 		  }
 		}
       }
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/centens_jumprifle1.ogg" ],
+      "fireAlt" : [ "/sfx/gun/centens_jumprifle1.ogg" ],
 	  "chargeLoop" : [ "/sfx/melee/charge_up2.ogg" ],
-	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
+	  "chargeLoopAlt" : [ "/sfx/melee/charge_up2.ogg" ],
+	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ],
+	  "dischargeAlt" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
     }
   },
 
-  "baseOffset" : [0.4, 0.3],
-  "muzzleOffset" : [1.1, 0.0],
+  "baseOffset" : [0.4, 0.375],
+  "muzzleOffset" : [1.8125, 0.0625],
 
   "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
 
@@ -68,10 +78,10 @@
     "scripts" : ["/items/active/weapons/ranged/abilities/thea-chargedshot.lua"],
     "class" : "TheaChargedShot",
 
-    "chargeTime" : 1.0,
-    "baseDamage" : 5,
+    "chargeTime" : 0.8,
+    "baseDamage" : 10,
     "baseEnergyUsage" : 40,
-    "inaccuracy" : 2.0,
+    "inaccuracy" : 0.5,
 	
 	"walkWhileFiring" : true,
 	
@@ -102,7 +112,7 @@
       },
       "fire" : {
         "duration" : 0,
-        "armRotation" : 7,
+        "armRotation" : 6,
         "weaponRotation" : 7,
 		"weaponOffset" : [-0.2, 0],
         "twoHanded" : true,
@@ -112,8 +122,77 @@
       },
       "cooldown" : {
         "duration" : 0.5,
-        "armRotation" : 7,
+        "armRotation" : 6,
         "weaponRotation" : 7,
+		"weaponOffset" : [-0.2, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "discharge" : {
+        "duration" : 0.1,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+	}
+  },
+
+  "altAbility" : {
+    "name" : "Greater Volley",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-chargedshot-altfire.lua"],
+    "class" : "TheaChargedShotAltFire",
+
+    "chargeTime" : 1.2,
+    "baseDamage" : 16.0,
+    "baseEnergyUsage" : 75,
+    "inaccuracy" : 0.75,
+	
+	"cooldownTime" : 1.8,
+
+    "projectileType" : "deathseekerbullet",
+	"projectileCount" : 16,
+	"projectileParameters" : {
+      "knockback" : 20,
+	  "minSpeed" : 6,
+	  "maxSpeed" : 26
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "charge" : {
+        "armRotation" : -2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 7,
+        "weaponRotation" : 9,
+		"weaponOffset" : [-0.2, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.75,
+        "armRotation" : 7,
+        "weaponRotation" : 9,
 		"weaponOffset" : [-0.2, 0],
         "twoHanded" : true,
 

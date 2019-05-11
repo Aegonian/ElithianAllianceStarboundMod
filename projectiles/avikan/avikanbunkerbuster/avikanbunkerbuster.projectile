@@ -19,7 +19,7 @@
   "flippable" : true,
   "power" : 10.0,
   "speed" : 5.0,
-  "physics" : "grenade",
+  "physics" : "thea-airstrikerocket",
   "damageType" : "NoDamage",
   "damageKind" : "default",
 

@@ -364,7 +364,7 @@
 	"path" : "/thea-airstrikerocket",
 	"value" : {
 	  "mass" : 1.0,
-	  "gravityMultiplier" : 2.0,
+	  "gravityMultiplier" : 1.0,
 	  "bounceFactor" : 0.3,
 	  "stopOnFirstBounce" : true,
 	  "maxMovementPerStep" : 0.4,
@@ -372,9 +372,9 @@
 	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
 	  "ignorePlatformCollision" : true,
 
-	  "airFriction" : 1.0,
-	  "liquidFriction" : 8.0,
-	  "groundFriction" : 15.0
+	  "airFriction" : 0.0,
+	  "liquidFriction" : 5.0,
+	  "groundFriction" : 10.0
 	}
   },
   {"op" : "add",
