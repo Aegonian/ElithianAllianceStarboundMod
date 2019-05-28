@@ -63,7 +63,8 @@
       "fire" : [ "/sfx/gun/achaari_fire1.ogg" ],
 	  "chargeLoop" : [ "/sfx/gun/achaari_charge1.ogg" ],
 	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ],
-	  "reload" : [ "/sfx/gun/reload/siegerunner_reload.ogg" ]
+	  "reloadLoop" : [ "/sfx/gun/reload/thea_reloadloop_magazine.ogg" ],
+	  "reload" : [ "/sfx/gun/reload/rocket_reload_clip3.ogg" ]
     }
   },
   "animationScripts" : ["/items/active/effects/thea-chargeintake.lua"],
@@ -159,16 +160,21 @@
         "allowFlip" : false
       },
       "reload" : {
-        "duration" : 2.3,
+        "duration" : 2.0,
         "armRotation" : -25,
         "weaponRotation" : 30,
-        "weaponOffset" : [-0.5, -0.125],
+        "weaponOffset" : [-0.75, 0.0],
         "twoHanded" : true,
 
-        "allowRotate" : true,
+        "aimAngle" : 0,
+        "allowRotate" : false,
         "allowFlip" : true,
 
-        "frontArmFrame" : "run.1",
+		"frontArmFrameSequence" : [
+		  [0.0, "walk.2"],
+		  [0.7, "run.3"],
+		  [1.1, "rotation"]
+		],
         "backArmFrame" : "rotation"
       }
 	}

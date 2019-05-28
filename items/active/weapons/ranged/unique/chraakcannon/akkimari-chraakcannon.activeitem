@@ -7,6 +7,7 @@
   "description" : "^orange;A re-purposed artillery cannon that doubles as a spiked hammer.",
   "shortdescription" : "^#FFDD59;Chraak Cannon^white;",
   "level" : 6,
+  "fixedLevel" : false,
   "tooltipKind" : "thea-gun-patreon",
   "category" : "Makeshift Weapon",
   "itemTags" : ["weapon","ranged","akkimari","theaUnique"],

@@ -35,6 +35,7 @@
   "orientations" : [
     {
       "imageLayers" : [ { "image" : "trinksmallroof.png:<color>", "fullbright" : true }, { "image" : "trinksmallrooflit.png:<color>" } ],
+      "renderLayer" : "Liquid+1",
 
       "imagePosition" : [0, 0],
       "frames" : 1,
@@ -46,6 +47,7 @@
     },
 	{
       "imageLayers" : [ { "image" : "trinksmallroofinvert.png:<color>", "fullbright" : true }, { "image" : "trinksmallroofinvertlit.png:<color>" } ],
+      "renderLayer" : "Liquid+1",
 
       "imagePosition" : [0, -48],
       "frames" : 1,

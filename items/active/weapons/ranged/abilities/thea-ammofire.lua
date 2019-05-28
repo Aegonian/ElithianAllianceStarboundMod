@@ -13,7 +13,7 @@ function TheaAmmoFire:init()
 
   self.weapon.onLeaveAbility = function()
     self.weapon:setStance(self.stances.idle)
-	animator.stopAllSounds("reload")
+	animator.stopAllSounds("reloadLoop")
   end
   
   self.currentAmmo = config.getParameter("ammoCount", self.maxAmmo)
@@ -45,12 +45,20 @@ function TheaAmmoFire:update(dt, fireMode, shiftHeld)
   
   --Reload automatically if clip is empty
   if self.currentAmmo == 0 and not self.weapon.currentAbility then
-	self:setState(self.reload)
+	if self.stances.preReloadTwirl then
+	  self:setState(self.preReloadTwirl)
+	else
+	  self:setState(self.reload)
+	end
   end
   
   --Manual reload
   if self.fireMode == "alt" and self.currentAmmo ~= self.maxAmmo and not self.weapon.currentAbility then
-	self:setState(self.reload)
+	if self.stances.preReloadTwirl then
+	  self:setState(self.preReloadTwirl)
+	else
+	  self:setState(self.reload)
+	end
   end
 end
 
@@ -133,18 +141,69 @@ function TheaAmmoFire:cooldown()
   end)
 end
 
+function TheaAmmoFire:preReloadTwirl()
+  self.weapon:setStance(self.stances.preReloadTwirl)
+  self.weapon:updateAim()
+
+  animator.playSound("preReloadTwirl")
+  
+  local progress = 0
+  util.wait(self.stances.preReloadTwirl.duration, function()
+
+	self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.preReloadTwirl.weaponRotation, self.stances.preReloadTwirl.endWeaponRotation))
+	self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.preReloadTwirl.armRotation, self.stances.preReloadTwirl.endArmRotation))
+
+	progress = math.min(1.0, progress + (self.dt / self.stances.preReloadTwirl.duration))
+  end)
+  
+  self:setState(self.reload)
+end
+
 function TheaAmmoFire:reload()
   self.weapon:setStance(self.stances.reload)
   self.weapon:updateAim()
 
+  --Start the reload animation, sound and effects
   animator.setAnimationState("gun", "reload")
-  animator.playSound("reload")
+  animator.playSound("reloadLoop", -1)
   animator.burstParticleEmitter("reload")
   
+  local timer = 0
+  util.wait(self.stances.reload.duration, function()
+	--FRONT ARM
+	local frontArm = self.stances.reload.frontArmFrame or "rotation"
+	if self.stances.reload.frontArmFrameSequence then
+	  --Run through each sequence step and update arm frame accordingly
+	  for i,step in ipairs(self.stances.reload.frontArmFrameSequence) do
+		if timer > step[1] then
+		  frontArm = step[2]
+		end
+	  end
+	  self.stances.reload.frontArmFrame = frontArm
+	  self.weapon:updateAim()
+	end
+	
+	--BACK ARM
+	local backArm = self.stances.reload.backArmFrame or "rotation"
+	if self.stances.reload.backArmFrameSequence then
+	  --Run through each sequence step and update arm frame accordingly
+	  for i,step in ipairs(self.stances.reload.backArmFrameSequence) do
+		if timer > step[1] then
+		  backArm = step[2]
+		end
+	  end
+	  self.stances.reload.backArmFrame = backArm
+	  self.weapon:updateAim()
+	end
+
+	timer = timer + self.dt
+  end)
+  
+  --Finish the reload animation, sound and effects, and update ammo values
+  animator.playSound("reload")
+  animator.stopAllSounds("reloadLoop")
   self.currentAmmo = self.maxAmmo
   activeItem.setInstanceValue("ammoCount", self.maxAmmo)
-  
-  util.wait(self.stances.reload.duration)
   
   if self.stances.reloadTwirl then
 	self:setState(self.reloadTwirl)

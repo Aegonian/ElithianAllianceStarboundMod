@@ -133,6 +133,7 @@
 
   "sounds" : {
     "fire" : [ ],
+	"reloadLoop" : [ ],
 	"reload" : [ ]
   }
 }

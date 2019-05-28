@@ -1,0 +1,46 @@
+{
+  "objectName" : "alliancebottle4-decorative",
+  "colonyTags" : ["alliance","aegi"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 60,
+  "description" : "A bottle of Froza.",
+  "shortdescription" : "Froza Bottle",
+  "race" : "aegi",
+
+  "apexDescription" : "A bottle of juice.",
+  "avianDescription" : "A full bottle of juice.",
+  "floranDescription" : "Drinksss.",
+  "glitchDescription" : "Observation. A bottle of juice.",
+  "humanDescription" : "I love this alien juice!",
+  "hylotlDescription" : "A highly nutritional juice.",
+  "novakidDescription" : "Drink up.",
+
+  "aegiDescription" : "A bottle of Vahlberry juice.",
+  "avikanDescription" : "An alien drink. Not sure if I should try it.",
+  "erixianDescription" : "A bottle of juice from the Union.",
+  "trinkDescription" : "Many Aegi enjoy this Vahlberry juice.",
+  "hymidDescription" : "A bottle of juice.",
+  "notixDescription" : "The Aegi make great drinks.",
+  "jorgasianDescription" : "Just a bottle of Vahlberry juice, produced somewhere in the Union.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Analysis complete. Alien drink.",
+  "akkimariDescription" : "Akki thirsty.",
+
+  "inventoryIcon" : "alliancebottle4icon.png",
+  "orientations" : [
+    {
+      "dualImage" : "alliancebottle4.png:<color>",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

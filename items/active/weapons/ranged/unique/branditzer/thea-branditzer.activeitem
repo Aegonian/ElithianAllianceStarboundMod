@@ -63,7 +63,8 @@
       "fire" : [ "/sfx/gun/branditzer_fire.ogg" ],
 	  "chargeLoop" : [ "/sfx/gun/branditzer_charge2.ogg" ],
 	  "discharge" : [ "/sfx/gun/branditzer_discharge.ogg" ],
-	  "reload" : [ "/sfx/gun/reload/siegerunner_reload.ogg" ]
+	  "reloadLoop" : [ "/sfx/gun/reload/thea_reloadloop_magazine.ogg" ],
+	  "reload" : [ "/sfx/gun/reload/sniper_reload_clip3.ogg" ]
     }
   },
 
@@ -143,16 +144,21 @@
         "allowFlip" : false
       },
       "reload" : {
-        "duration" : 2.3,
+        "duration" : 2.1,
         "armRotation" : -25,
         "weaponRotation" : 30,
-        "weaponOffset" : [-0.5, -0.125],
+        "weaponOffset" : [-0.625, -0.125],
         "twoHanded" : true,
 
-        "allowRotate" : true,
+        "aimAngle" : 0,
+        "allowRotate" : false,
         "allowFlip" : true,
 
-        "frontArmFrame" : "run.1",
+		"frontArmFrameSequence" : [
+		  [0.0, "walk.2"],
+		  [0.8, "run.3"],
+		  [1.2, "rotation"]
+		],
         "backArmFrame" : "rotation"
       }
 	}

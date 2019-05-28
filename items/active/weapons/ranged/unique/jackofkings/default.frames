@@ -1,0 +1,18 @@
+{
+  "frameGrid" : {
+    "size" : [40, 13],
+    "dimensions" : [8, 3],
+
+    "names" : [
+      [ "ready1", "cycle1.1", "ready2", "cycle2.1", null, null, null, null ],
+	  [ "reload.1", "reload.2", "reload.3", "reload.4", "reload.5", "reload.6", "reload.7", "reload.8" ],
+      [ "transformToSword.1", "transformToSword.2", "transformToSword.3", "sword", null, null, null, null ]
+    ]
+  },
+
+  "aliases" : {
+    "transformToGun.1" : "transformToSword.3",
+    "transformToGun.2" : "transformToSword.2",
+    "transformToGun.3" : "transformToSword.1"
+  }
+}

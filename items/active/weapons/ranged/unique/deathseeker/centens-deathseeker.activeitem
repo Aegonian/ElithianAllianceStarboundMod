@@ -152,6 +152,8 @@
     "baseEnergyUsage" : 75,
     "inaccuracy" : 0.75,
 	
+	"walkWhileFiring" : true,
+	
 	"cooldownTime" : 1.8,
 
     "projectileType" : "deathseekerbullet",

@@ -39,6 +39,7 @@
 	
 	"projectileType" : "trinkweldingflame",
     "projectileParameters" : {},
+	"trackSourceEntity" : true,
 
     "stances" : {
       "idle" : {

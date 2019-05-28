@@ -152,6 +152,7 @@
 
   "sounds" : {
     "fire" : [ ],
-	"reload" : [ ]
+	"reload" : [ ],
+	"reloadLoop" : [ ]
   }
 }

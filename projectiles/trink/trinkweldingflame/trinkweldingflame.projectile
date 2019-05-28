@@ -3,7 +3,7 @@
   "physics" : "flame",
   "bounces" : 4,
   "image" : "trinkweldingflame.png",
-  "animationCycle" : 0.2,
+  "animationCycle" : 0.15,
   "frameNumber" : 6,
   "power" : 50,
   "speed" : 20,
@@ -16,7 +16,27 @@
   "damageKind" : "fire",
   "damageKindImage" : "/interface/statuses/fire.png",
   "statusEffects" : [
-    "burning"
+    "thea-burning"
   ],
+  /*"periodicActions" : [
+    {
+      "time" : 0.025,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "animated",
+        "animation" : "/projectiles/trink/trinkweldingflame/trail.animation",
+        "position" : [-0.5, 0],
+        "size" : 0.5,
+        "layer" : "middle",
+		"collidesForeground" : false,
+        "timeToLive" : 0.1,
+        "destructionTime" : 0.1,
+        "destructionAction" : "shrink",
+        "fullbright" : true
+      }
+    }
+  ],*/
   "hydrophobic" : true
 }

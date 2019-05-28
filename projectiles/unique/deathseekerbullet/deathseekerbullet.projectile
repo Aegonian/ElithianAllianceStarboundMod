@@ -69,5 +69,5 @@
   
   "homingStartDelay" : 0.25,
   "searchRadius" : 50,
-  "baseHomingControlForce" : 1.25
+  "baseHomingControlForce" : 1.75
 }

@@ -78,7 +78,7 @@ function update(args)
   end
   
   --If falling and holding [down], check for ground contact
-  if self.lastFallVelocity <= self.minimumFallVelocity and args.moves["down"] and not self.rolling then
+  if self.lastFallVelocity <= self.minimumFallVelocity and args.moves["down"] and not self.rolling and not status.statPositive("activeMovementAbilities") then
 	status.addEphemeralEffect("falldamageprotectionweak")
 	
 	--If we touched the ground but weren't grounded on the last frame, go into roll state. Also calculate intended roll velocity

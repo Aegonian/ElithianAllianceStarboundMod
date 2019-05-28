@@ -35,6 +35,7 @@
   "orientations" : [
     {
       "imageLayers" : [ { "image" : "trinkroofflat.png:<color>", "fullbright" : true }, { "image" : "trinkroofflatlit.png:<color>" } ],
+      "renderLayer" : "Liquid+1",
 
       "imagePosition" : [0, 0],
       "frames" : 1,
@@ -46,6 +47,7 @@
     },
 	{
       "imageLayers" : [ { "image" : "trinkroofflatinvert.png:<color>", "fullbright" : true }, { "image" : "trinkroofflatinvertlit.png:<color>" } ],
+      "renderLayer" : "Liquid+1",
 
       "imagePosition" : [0, -96],
       "frames" : 1,

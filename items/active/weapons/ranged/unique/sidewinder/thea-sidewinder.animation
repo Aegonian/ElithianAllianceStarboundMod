@@ -28,7 +28,7 @@
           },
           "reload" : {
             "frames" : 8,
-            "cycle" : 0.9,
+            "cycle" : 0.75,
             "mode" : "transition",
             "transition" : "readyState1"
           }
@@ -141,6 +141,7 @@
 
   "sounds" : {
     "fire" : [ ],
+	"reloadLoop" : [ ],
 	"reload" : [ ]
   }
 }

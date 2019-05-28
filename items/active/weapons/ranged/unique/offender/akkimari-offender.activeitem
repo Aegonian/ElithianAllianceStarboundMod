@@ -37,7 +37,8 @@
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/plasma_sniper3.ogg" ],
-	  "reload" : [ "/sfx/gun/reload/sidewinder_reload2.ogg" ]
+	  "reloadLoop" : [ "/sfx/gun/reload/thea_handcannon_reloadloop.ogg" ],
+	  "reload" : [ "/sfx/gun/reload/pistol_reload_clip3.ogg" ]
     },
 	"particleEmitters" : {
 	  "reload" : {
@@ -118,10 +119,15 @@
 		"weaponOffset" : [-0.25, 0.0],
         "twoHanded" : true,
 
-        "allowRotate" : true,
+        "aimAngle" : 0,
+        "allowRotate" : false,
         "allowFlip" : true,
 
-        "frontArmFrame" : "run.1",
+		"frontArmFrameSequence" : [
+		  [0.0, "walk.2"],
+		  [0.2, "run.3"],
+		  [0.3, "run.1"]
+		],
         "backArmFrame" : "rotation"
       },
       "reloadTwirl" : {

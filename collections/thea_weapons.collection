@@ -491,6 +491,12 @@
       "title" : "Branditzer Type-1",
       "description" : "A minimalistic railgun firing dual overheated slugs.",
       "icon" : "/items/active/weapons/ranged/unique/branditzer/thea-branditzericon.png"
+    },
+	"thea-corsair" : {
+      "order" : 80,
+      "title" : "Corsair Type-2",
+      "description" : "A well-balanced weapon favoured by pirates from the Rim.",
+      "icon" : "/items/active/weapons/ranged/unique/corsair/thea-corsairicon.png"
     }
   }
 }

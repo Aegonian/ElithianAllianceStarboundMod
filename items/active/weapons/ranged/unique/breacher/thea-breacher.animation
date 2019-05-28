@@ -35,7 +35,7 @@
           "idle" : {},
           "activate" : {
             "frames" : 3,
-            "cycle" : 1.2,
+            "cycle" : 0.8,
             "mode" : "transition",
             "transition" : "active"
           },
@@ -46,7 +46,7 @@
           },
           "deactivate" : {
             "frames" : 3,
-            "cycle" : 0.9,
+            "cycle" : 0.6,
             "mode" : "transition",
             "transition" : "idle"
           }
@@ -128,7 +128,6 @@
           "fullbright" : true,
           "transformationGroups" : ["muzzle"]
         },
-
         "partStates" : {
           "firing" : {
             "off" : {
@@ -151,12 +150,11 @@
           "offset" : [0, 0],
           "transformationGroups" : ["weapon"]
         },
-
         "partStates" : {
           "charge" : {
             "off" : {
               "properties" : {
-                "image" : ""
+                "image" : "<partImage>:idle"
               }
             },
             "charging" : {
@@ -175,7 +173,6 @@
           "fullbright" : true,
           "transformationGroups" : ["weapon"]
         },
-
         "partStates" : {
           "charge" : {
             "off" : {

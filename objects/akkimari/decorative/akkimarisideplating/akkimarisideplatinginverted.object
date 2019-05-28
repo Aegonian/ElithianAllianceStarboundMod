@@ -35,6 +35,7 @@
 	//Facing LEFT
 	{
       "image" : "akkimarisideplatinginverted.png:<color>",
+      "renderLayer" : "Liquid+1",
 
       "imagePosition" : [-8, -48],
       "frames" : 1,
@@ -47,6 +48,7 @@
     },
 	{
       "image" : "akkimarisideplatinginverted.png:<color>",
+      "renderLayer" : "Liquid+1",
 
       "imagePosition" : [-8, -48],
       "frames" : 1,
@@ -60,6 +62,7 @@
 	//Facing RIGHT
 	{
       "image" : "akkimarisideplatinginverted.png:<color>",
+      "renderLayer" : "Liquid+1",
 
       "imagePosition" : [-8, -48],
       "frames" : 1,
@@ -73,6 +76,7 @@
     },
     {
       "image" : "akkimarisideplatinginverted.png:<color>",
+      "renderLayer" : "Liquid+1",
 
       "imagePosition" : [-8, -48],
       "frames" : 1,

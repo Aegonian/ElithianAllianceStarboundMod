@@ -8,7 +8,7 @@
 
   "animation" : "akkimarijusticar.animation",
 
-  "dropPools" : [ { "default" : "avikanlargedroneTreasureGuaranteed", "bow" : "avikanlargedroneHuntingGuaranteed", "electromagneticextractor" : "electromagneticextractorTreasure" } ],
+  "dropPools" : [ { "default" : "akkimarijusticarTreasureGuaranteed", "bow" : "akkimarijusticarHuntingGuaranteed" } ],
 
   "baseParameters" : {
     "scripts" : [

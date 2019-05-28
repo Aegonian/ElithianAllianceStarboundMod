@@ -213,8 +213,9 @@ function TheaChargedShotAmmo:reload()
   self.weapon:setStance(self.stances.reload)
   self.weapon:updateAim()
   
+  --Start the reload animation, sound and effects
   animator.setAnimationState("gun", "reload")
-  animator.playSound("reload")
+  animator.playSound("reloadLoop", -1)
   animator.burstParticleEmitter("reload")
   
   local timer = 0
@@ -248,6 +249,9 @@ function TheaChargedShotAmmo:reload()
 	timer = timer + self.dt
   end)
   
+  --Finish the reload animation, sound and effects, and update ammo values
+  animator.playSound("reload")
+  animator.stopAllSounds("reloadLoop")
   self.currentAmmo = self.maxAmmo
   activeItem.setInstanceValue("ammoCount", self.maxAmmo)
   
@@ -379,7 +383,7 @@ function TheaChargedShotAmmo:reset()
   animator.setAnimationState("charge", "off")
   animator.setParticleEmitterActive("chargeparticles", false)
   animator.stopAllSounds("chargeLoop")
-  animator.stopAllSounds("reload")
+  animator.stopAllSounds("reloadLoop")
   self.chargeHasStarted = false
   self.weapon:setStance(self.stances.idle)
   

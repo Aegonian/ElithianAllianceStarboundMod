@@ -34,3 +34,34 @@ function TheaFlamethrowerAttack:deactivate()
   animator.stopAllSounds("fireLoop")
   --animator.playSound("fireEnd")
 end
+
+function TheaFlamethrowerAttack:fireProjectile(projectileType, projectileParams, inaccuracy, firePosition, projectileCount)
+  local params = sb.jsonMerge(self.projectileParameters, projectileParams or {})
+  params.power = self:damagePerShot()
+  params.powerMultiplier = activeItem.ownerPowerMultiplier()
+  params.speed = util.randomInRange(params.speed)
+
+  if not projectileType then
+    projectileType = self.projectileType
+  end
+  if type(projectileType) == "table" then
+    projectileType = projectileType[math.random(#projectileType)]
+  end
+
+  local projectileId = 0
+  for i = 1, (projectileCount or self.projectileCount) do
+    if params.timeToLive then
+      params.timeToLive = util.randomInRange(params.timeToLive)
+    end
+
+    projectileId = world.spawnProjectile(
+        projectileType,
+        firePosition or self:firePosition(),
+        activeItem.ownerEntityId(),
+        self:aimVector(inaccuracy or self.inaccuracy),
+        self.trackSourceEntity or false,
+        params
+      )
+  end
+  return projectileId
+end

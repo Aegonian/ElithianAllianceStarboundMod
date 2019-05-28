@@ -27,7 +27,8 @@
   "animationCustom" : {
     "sounds" : {
       "fire" : [ "/sfx/gun/sidewinder_fire.ogg" ],
-	  "reload" : [ "/sfx/gun/reload/sidewinder_reload2.ogg" ]
+	  "reloadLoop" : [ "/sfx/gun/reload/thea_handcannon_reloadloop2.ogg" ],
+	  "reload" : [ "/sfx/gun/reload/thea_handcannon_reload.ogg" ]
     },
 	"particleEmitters" : {
 	  "reload" : {
@@ -101,16 +102,21 @@
         "allowFlip" : true
       },
       "reload" : {
-        "duration" : 0.8,
+        "duration" : 0.85,
         "armRotation" : -25,
         "weaponRotation" : 55,
 		"weaponOffset" : [-0.25, 0.0],
         "twoHanded" : true,
 
-        "allowRotate" : true,
+        "aimAngle" : 0,
+        "allowRotate" : false,
         "allowFlip" : true,
 
-        "frontArmFrame" : "run.1",
+		"frontArmFrameSequence" : [
+		  [0.0, "walk.2"],
+		  [0.3, "run.3"],
+		  [0.55, "run.1"]
+		],
         "backArmFrame" : "rotation"
       }
     }

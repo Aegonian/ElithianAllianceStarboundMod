@@ -454,16 +454,16 @@
   {"op" : "add",
 	"path" : "/thea-deathseekerbullet",
 	"value" : {
-	  "gravityMultiplier" : 0.0,
-	  "bounceFactor" : 2.0,
+	  "gravityMultiplier" : 0.05,
+	  "bounceFactor" : 0.9,
 	  "stopOnFirstBounce" : true,
 	  "maxMovementPerStep" : 0.4,
 	  "collisionPoly" : [ [-0.5, -0.5], [0.5, -0.5], [0.5, 0.5], [-0.5, 0.5] ],
 	  "ignorePlatformCollision" : true,
-	  "groundFriction" : 0,
-	  "airFriction" : 0.2,
+	  "groundFriction" : 0.0,
+	  "airFriction" : 0.0,
 	  "liquidFriction" : 0.0,
-	  "speedLimit" : 20,
+	  "speedLimit" : 40,
 	  "maximumCorrection" : 0.75
 	}	  
   },

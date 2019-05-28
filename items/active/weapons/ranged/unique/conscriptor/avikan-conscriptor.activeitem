@@ -30,7 +30,7 @@
         "middleFullbright" : {
 		  "properties" : {
 			//Same as BaseOffset
-		    "offset" : [0.66, 0.125]
+		    "offset" : [0.75, 0.25]
 		  }
 		}
       }
@@ -50,11 +50,12 @@
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/conscriptor_fire.ogg" ],
+	  "reloadLoop" : [ "/sfx/gun/reload/conscriptor_reloadloop.ogg" ],
 	  "reload" : [ "/sfx/gun/reload/conscriptor_reload.ogg" ]
     }
   },
 
-  "baseOffset" : [0.66, 0.125],
+  "baseOffset" : [0.75, 0.25],
   "muzzleOffset" : [1.25, 0.5],
 
   "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
@@ -71,7 +72,7 @@
 	
 	"readyTime" : 0.2, //Time between finishing the reload animation and being able to fire the first shot again
 	
-	"maxAmmo" : 5,
+	"maxAmmo" : 4,
 	"cycleAfterShot" : true,
 
     "projectileCount" : 1,
@@ -87,7 +88,7 @@
       "idle" : {
         "armRotation" : 0,
         "weaponRotation" : 0,
-        "twoHanded" : false,
+        "twoHanded" : true,
 
         "allowRotate" : true,
         "allowFlip" : true
@@ -111,13 +112,22 @@
         "allowFlip" : true
       },
       "reload" : {
-        "duration" : 1.25,
+        "duration" : 1.1,
         "armRotation" : -25,
         "weaponRotation" : 55,
         "twoHanded" : true,
 
-        "allowRotate" : true,
-        "allowFlip" : true
+        "aimAngle" : 0,
+        "allowRotate" : false,
+        "allowFlip" : true,
+
+		"frontArmFrameSequence" : [
+		  [0.0, "rotation"],
+		  [0.1, "walk.2"],
+		  [0.4, "run.3"],
+		  [0.7, "run.1"]
+		],
+        "backArmFrame" : "rotation"
       }
     }
   },

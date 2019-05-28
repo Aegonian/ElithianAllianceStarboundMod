@@ -1,0 +1,150 @@
+{
+  "itemName" : "thea-jackofkings",
+  "price" : 1500,
+  "inventoryIcon" : "thea-jackofkingsicon.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;A beastly, multi-purpose hand cannon built in the Rim.",
+  "shortdescription" : "^#FFDD59;Jack of Kings^white;",
+  "level" : 6,
+  "fixedLevel" : false,
+  "tooltipKind" : "thea-ammogun-unique",
+  "category" : "Hand Cannon",
+  "itemTags" : ["weapon","ranged","pistol","alliance","theaUnique"],
+  "twoHanded" : true,
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  //"collectablesOnPickup" : { "thea_weapons" : "thea-jackofkings" },
+  
+  "meritTokenValue" : 100,
+
+  "animation" : "thea-jackofkings.animation",
+  "animationParts" : {
+    "middle" : "thea-jackofkings.png",
+    "middleFullbright" : "thea-jackofkingslights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/allianceenergyflash.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+		    "offset" : [1.25, 0.125]
+		  }
+		}
+      }
+    },
+	"particleEmitters" : {
+	  "reload" : {
+		"transformationGroups" : ["muzzle"],
+		"offsetRegion" : [-0.75, 0, -0.75, 0],
+		"particles" : [
+          { "particle" : "thea-discardedbulletlight" },
+          { "particle" : "thea-discardedbulletlight" },
+          { "particle" : "thea-discardedbulletlight" },
+          { "particle" : "thea-discardedbulletlight" }
+        ]
+	  }
+	},
+    "sounds" : {
+      "fire" : [ "/sfx/gun/conscriptor_fire.ogg" ],
+	  "reloadLoop" : [ "/sfx/gun/reload/conscriptor_reloadloop.ogg" ],
+	  "reload" : [ "/sfx/gun/reload/conscriptor_reload.ogg" ]
+    }
+  },
+
+  "baseOffset" : [1.25, 0.125],
+  "muzzleOffset" : [1.125, 0.25],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-ammofire.lua"],
+    "class" : "TheaAmmoFire",
+
+    "fireTime" : 0.62,
+    "baseDps" : 13.5,
+    "inaccuracy" : 0.005,
+	
+	"readyTime" : 0.2, //Time between finishing the reload animation and being able to fire the first shot again
+	
+	"maxAmmo" : 6,
+	"cycleAfterShot" : true,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "allianceenergybullet",
+    "projectileParameters" : {
+      "knockback" : 12
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 7,
+        "weaponRotation" : 20,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.40,
+        "armRotation" : 7,
+        "weaponRotation" : 20,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "preReloadTwirl" : {
+        "duration" : 0.35,
+        "armRotation" : 10,
+        "endArmRotation" : -20,
+        "weaponRotation" : 55,
+        "endWeaponRotation" : 435,
+		"weaponOffset" : [-0.25, -0.125],
+        "twoHanded" : true,
+
+        "aimAngle" : 0,
+        "allowRotate" : false,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "run.4",
+        "backArmFrame" : "rotation"
+      },
+      "reload" : {
+        "duration" : 1.0,
+        "armRotation" : -25,
+        "weaponRotation" : 75,
+		"weaponOffset" : [-0.25, 0.0],
+        "twoHanded" : true,
+
+        "aimAngle" : 0,
+        "allowRotate" : false,
+        "allowFlip" : true,
+
+		"frontArmFrameSequence" : [
+		  [0.0, "rotation"],
+		  [0.1, "walk.2"],
+		  [0.4, "run.3"],
+		  [0.7, "run.1"]
+		],
+        "backArmFrame" : "rotation"
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/thea-buildammoweapon.lua"
+}

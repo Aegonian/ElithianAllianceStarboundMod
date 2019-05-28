@@ -11,7 +11,7 @@
           "idle" : {},
           "reload" : {
             "frames" : 1,
-            "cycle" : 2.2,
+            "cycle" : 1.9,
             "mode" : "transition",
             "transition" : "idle"
           }
@@ -197,6 +197,7 @@
     "fire" : [ ],
 	"chargeLoop" : [ ],
 	"discharge" : [ ],
+	"reloadLoop" : [ ],
 	"reload" : [ ]
   }
 }

@@ -46,7 +46,8 @@
       "fire" : [ "/sfx/gun/corruptor_fire.ogg" ],
 	  "chargeLoop" : [ "/sfx/melee/charge_up15.ogg" ],
 	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ],
-	  "reload" : [ "/sfx/gun/reload/siegerunner_reload.ogg" ]
+	  "reloadLoop" : [ "/sfx/gun/reload/thea_reloadloop_magazine.ogg" ],
+	  "reload" : [ "/sfx/gun/reload/ar_reload_clip1.ogg" ]
     },
 	"particleEmitters" : {
       "muzzleFlash" : {

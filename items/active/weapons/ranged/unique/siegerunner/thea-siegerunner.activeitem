@@ -53,7 +53,8 @@
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/sidewinder_fire.ogg" ],
-	  "reload" : [ "/sfx/gun/reload/siegerunner_reload.ogg" ]
+	  "reloadLoop" : [ "/sfx/gun/reload/thea_reloadloop_magazine.ogg" ],
+	  "reload" : [ "/sfx/gun/reload/ar_reload_clip1.ogg" ]
     }
   },
 
@@ -114,16 +115,21 @@
         "allowFlip" : true
       },
       "reload" : {
-        "duration" : 2.3,
+        "duration" : 1.9,
         "armRotation" : -25,
         "weaponRotation" : 30,
         "weaponOffset" : [-0.5, -0.125],
         "twoHanded" : true,
 
-        "allowRotate" : true,
+        "aimAngle" : 0,
+        "allowRotate" : false,
         "allowFlip" : true,
 
-        "frontArmFrame" : "run.1",
+		"frontArmFrameSequence" : [
+		  [0.0, "walk.2"],
+		  [0.7, "run.3"],
+		  [1.0, "rotation"]
+		],
         "backArmFrame" : "rotation"
       }
     }

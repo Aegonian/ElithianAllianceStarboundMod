@@ -228,6 +228,7 @@
     "fire" : [ ],
 	"chargeLoop" : [ ],
 	"discharge" : [ ],
+	"reloadLoop" : [ ],
 	"reload" : [ ]
   }
 }

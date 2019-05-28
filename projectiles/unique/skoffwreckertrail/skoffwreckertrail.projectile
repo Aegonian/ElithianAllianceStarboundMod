@@ -1,6 +1,6 @@
 {
   "projectileName" : "skoffwreckertrail",
-  "physics" : "laser",
+  "physics" : "thea-gravitywell",
   "bounces" : -1,
   "image" : "skoffwreckertrail.png",
   "animationCycle" : 1.0,
@@ -17,5 +17,7 @@
     "linerifleburn"
   ],
   "fullbright" : true,
-  "damageKind" : "linerifle"
+  "damageKind" : "linerifle",
+  
+  "scripts" : [ "/projectiles/scripts/thea-stationaryprojectile.lua" ]
 }

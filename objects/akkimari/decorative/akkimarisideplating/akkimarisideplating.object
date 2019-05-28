@@ -32,8 +32,10 @@
 
   "inventoryIcon" : "akkimarisideplatingicon.png",
   "orientations" : [
+	//Facing LEFT
 	{
       "image" : "akkimarisideplating.png:<color>",
+      "renderLayer" : "Liquid+1",
 
       "imagePosition" : [-8, 0],
       "frames" : 1,
@@ -46,6 +48,7 @@
     },
 	{
       "image" : "akkimarisideplating.png:<color>",
+      "renderLayer" : "Liquid+1",
 
       "imagePosition" : [-8, 0],
       "frames" : 1,
@@ -59,6 +62,7 @@
 	//Facing RIGHT
     {
       "image" : "akkimarisideplating.png:<color>",
+      "renderLayer" : "Liquid+1",
 
       "imagePosition" : [-8, 0],
       "frames" : 1,
@@ -72,6 +76,7 @@
     },
     {
       "image" : "akkimarisideplating.png:<color>",
+      "renderLayer" : "Liquid+1",
 
       "imagePosition" : [-8, 0],
       "frames" : 1,

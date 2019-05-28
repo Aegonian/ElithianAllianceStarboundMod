@@ -1,0 +1,17 @@
+{
+  "itemName" : "alliancesodabottle4",
+  "rarity" : "Common",
+  "price" : 60,
+  "category" : "drink",
+  "inventoryIcon" : "alliancesodabottle4.png",
+  "description" : "A bottle of tasty Valassa, made with the Union's best Vahlberries.",
+  "shortdescription" : "Valassa Bottle",
+  "maxStack" : 1,
+  "effects" : [ [
+    {
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 60
+    }
+  ] ],
+  "emitters" : [ "drinking" ]
+}
