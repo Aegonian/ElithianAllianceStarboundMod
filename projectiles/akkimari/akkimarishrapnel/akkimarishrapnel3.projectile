@@ -10,9 +10,14 @@
   "fullbright" : true,
   "flippable" : true,
   "emitters" : [ "thea-moltenshrapneltrail" ],
-  "actionOnReap" : [],
   "statusEffects" : [
     "thea-burning"
+  ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/akkimarishrapnelimpact/akkimarishrapnelimpact.config"
+    }
   ],
   "power" : 5.0,
   "speed" : 60,

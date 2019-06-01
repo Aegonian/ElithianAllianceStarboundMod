@@ -69,8 +69,9 @@
     "scripts" : ["/items/active/weapons/ranged/abilities/thea-speedupminigun-animated.lua"],
     "class" : "TheaSpeedUpMinigunAnimated",
 
-	"transitionTime" : 0.7,
-	"transitionFrames" : 6,
+	"chargeTime" : 0.6, //Same as "transitionTime", only used for tooltip
+	"transitionTime" : 0.6,
+	"transitionFrames" : 7,
 	
     "minFiringSpeed" : 0.35, //Starting fire time
 	"maxFiringSpeed" : 0.10, //End fire time
@@ -80,14 +81,19 @@
     "energyUsage" : 15.0,
     "inaccuracy" : 0.075,
 	
-	"chargeTime" : 0.5,
 	"resetTime" : 1.0,
 	"decayMultiplier" : 2.5,
 	
 	"walkWhileFiring" : true,
 	"animatedCharge" : true,
 
-    "projectileType" : "voidgravitybullet",
+    "projectileType" : [
+	  "voidgravitybullet",
+	  "voidgravitybullet",
+	  "voidgravitybullet",
+	  "voidgravitybullet",
+	  "voidgravitybombsmall"
+	],
 	"projectileCount" : 1,
 	"projectileParameters" : { 
       "knockback" : 6

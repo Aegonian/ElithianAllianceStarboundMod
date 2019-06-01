@@ -455,7 +455,7 @@
 	"path" : "/thea-deathseekerbullet",
 	"value" : {
 	  "gravityMultiplier" : 0.05,
-	  "bounceFactor" : 0.9,
+	  "bounceFactor" : 0.4,
 	  "stopOnFirstBounce" : true,
 	  "maxMovementPerStep" : 0.4,
 	  "collisionPoly" : [ [-0.5, -0.5], [0.5, -0.5], [0.5, 0.5], [-0.5, 0.5] ],

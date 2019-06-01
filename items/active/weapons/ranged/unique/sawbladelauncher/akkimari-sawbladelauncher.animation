@@ -11,6 +11,10 @@
             "frames" : 3,
             "cycle" : 0.1
           },
+          "altFire" : {
+            "frames" : 3,
+            "cycle" : 0.15
+          },
           "reload" : {
             "frames" : 9,
             "cycle" : 0.30,
@@ -28,7 +32,6 @@
           "centered" : true,
           "transformationGroups" : ["weapon"]
         },
-
         "partStates" : {
           "bow" : {
             "idle" : {
@@ -39,6 +42,11 @@
 			"fire" : {
               "properties" : {
                 "image" : "<partImage>:fire.<frame>"
+              }
+            },
+			"altFire" : {
+              "properties" : {
+                "image" : "<partImage>:altFire.<frame>"
               }
             },
 			"reload" : {
@@ -56,7 +64,6 @@
 		  "fullbright" : true,
           "transformationGroups" : ["weapon"]
         },
-
         "partStates" : {
           "bow" : {
             "idle" : {
@@ -67,6 +74,11 @@
 			"fire" : {
               "properties" : {
                 "image" : "<partImage>:fire.<frame>"
+              }
+            },
+			"altFire" : {
+              "properties" : {
+                "image" : "<partImage>:altFire.<frame>"
               }
             },
 			"reload" : {
@@ -93,6 +105,7 @@
 
   "sounds" : {
     "fire" : [ ],
+    "altFire" : [ ],
     "reload" : [ ]
   }
 }

@@ -1,0 +1,36 @@
+{
+  "projectileName" : "voidgravitybombsmall",
+  "image" : "voidgravitybombsmall.png",
+  "physics" : "laser",
+  "bounces" : 0,
+  "piercing" : false,
+  "animationCycle" : 0.25,
+  "frameNumber" : 4,
+  "emitters" : [ "voidgravitytrail" ],
+  "lightColor" : [20, 0, 75],
+  "fullbright" : false,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/voidgravitywell/voidgravitywellshort.config"
+    }
+  ],
+  "power" : 0.0,
+  "speed" : 30,
+  "timeToLive" : 2.5,
+  "damageKind" : "centensianenergy",
+  "hydrophobic" : false,
+
+  "scripts" : ["/projectiles/scripts/thea-homingbullet-wave.lua"],
+  "scriptDelta" : 1,
+
+  //Wave
+  "wavePeriod" : 0.5,
+  "waveAmplitude" : 0.125,
+  "randomWaveDirection" : true,
+  
+  //Homing
+  "homingStyle" : "controlVelocity",
+  "searchRadius" : 30,
+  "baseHomingControlForce" : 0.75
+}

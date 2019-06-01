@@ -64,8 +64,8 @@ function TheaSpeedUpMinigunAnimated:update(dt, fireMode, shiftHeld)
 	animator.setAnimationState("charge", "active")
   end
   
-  world.debugText("Time Until Reset:  " .. self.resetTimer, vec2.add(mcontroller.position(), {0,1}), "yellow")
-  world.debugText("Time Spent Firing: " .. self.timeSpentFiring, vec2.add(mcontroller.position(), {0,0}), "yellow")
+  --world.debugText("Time Until Reset:  " .. self.resetTimer, vec2.add(mcontroller.position(), {0,1}), "yellow")
+  --world.debugText("Time Spent Firing: " .. self.timeSpentFiring, vec2.add(mcontroller.position(), {0,0}), "yellow")
 
   --If holding fire, and nothing is holding back the charging process
   if self.fireMode == (self.activatingFireMode or self.abilitySlot)
@@ -75,7 +75,9 @@ function TheaSpeedUpMinigunAnimated:update(dt, fireMode, shiftHeld)
 	and not world.lineTileCollision(mcontroller.position(), self:firePosition()) then
 
     self:setState(self.openWeapon)
-  elseif world.lineTileCollision(mcontroller.position(), self:firePosition()) and self.transitionProgress < 1 then
+  elseif not self.weapon.currentAbility and self.transitionProgress == 1 then
+	self:setState(self.standby)
+  elseif not self.weapon.currentAbility and world.lineTileCollision(mcontroller.position(), self:firePosition()) and self.transitionProgress < 1 then
 	self:setState(self.closeWeapon)
   end
 end
@@ -103,6 +105,14 @@ function TheaSpeedUpMinigunAnimated:openWeapon()
 	--Do nothing
   else
 	self:setState(self.closeWeapon)
+  end
+end
+
+function TheaSpeedUpMinigunAnimated:standby()
+  while self.cooldownTimer > 0 do
+	--Keep the weapon in standby mode
+	
+    coroutine.yield()
   end
 end
 
@@ -139,7 +149,7 @@ function TheaSpeedUpMinigunAnimated:fire()
   self.resetTimer = self.resetTime
 
   if self.stances.fire.duration then
-    util.wait(self.stances.fire.duration)
+	util.wait(self.stances.fire.duration)
   end
   
   self.cooldownTimer = self.adjustedFireTime

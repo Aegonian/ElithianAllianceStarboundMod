@@ -1,0 +1,112 @@
+{
+  "projectileName" : "akkimarisawbladebomb",
+  "physics" : "grenade",
+  "bounces" : 0,
+  "damageKindImage" : "icon.png",
+  "image" : "akkimarisawblade.png",
+  "animationCycle" : 0.075,
+  "frameNumber" : 3,
+  "emitters" : [ "thea-smallwhitetrail" ],
+  "power" : 50,
+  "speed" : 50,
+  "timeToLive" : 30,
+  "piercing" : true,
+  "damagePoly" : [ [-4.5, 0], [-3, -3], [0, -4.5], [3, -3], [4.5, 0], [3, 3], [0, 4.5], [-3, 3] ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/akkimarisawbladeexplosion/akkimarisawbladeexplosion.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimarisawbladeshard",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimarisawbladeshard",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimarisawbladeshard",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimarisawbladeshard",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimarisawbladeshard",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimarisawbladeshard",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimarisawbladeshard",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimarisawbladeshard",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimarismallspike2",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimarismallspike2",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimarismallspike2",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimarismallspike2",
+      "inheritDamageFactor" : 0.05,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    }
+  ],
+  "damageKind" : "default",
+  "hydrophobic" : false,
+  "statusEffects" : [
+    "thea-bleeding"
+  ],
+  "scripts" : [ "/projectiles/scripts/thea-uprightprojectile.lua" ],
+  "persistentAudio" : "/sfx/projectiles/sawblade_loop.ogg"
+}

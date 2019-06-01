@@ -1,0 +1,30 @@
+{
+  "projectileName" : "akkimarismallspike2",
+  "physics" : "grenade",
+  "bounces" : 3,
+  "image" : "akkimarismallspike.png",
+  "orientationLocked" : false,
+  "flippable" : true,
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "emitters" : [ "thea-smallwhitetrail" ],
+  "speed" : 15,
+  "actionOnCollide" : [
+    {
+      "action" : "sound",
+      "options" : [
+        "/sfx/projectiles/gnome_impact1.ogg",
+        "/sfx/projectiles/gnome_impact2.ogg",
+        "/sfx/projectiles/gnome_impact3.ogg",
+        "/sfx/projectiles/gnome_impact4.ogg",
+        "/sfx/projectiles/gnome_impact5.ogg",
+        "/sfx/projectiles/gnome_impact6.ogg"
+      ]
+    }
+  ],
+  "power" : 30,
+  "timeToLive" : 4,
+  "damageKind" : "default",
+  "piercing" : true,
+  "hydrophobic" : false
+}

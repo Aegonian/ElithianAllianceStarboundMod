@@ -1,10 +1,10 @@
 {
   "frameGrid" : {
     "size" : [49, 25],
-    "dimensions" : [7, 2],
+    "dimensions" : [8, 2],
 
     "names" : [
-      [ "transition.0", "transition.1", "transition.2", "transition.3", "transition.4", "transition.5", "transition.6" ],
+      [ "transition.0", "transition.1", "transition.2", "transition.3", "transition.4", "transition.5", "transition.6", "transition.7" ],
       [ "fire.1", "fire.2", "fire.3", "spin.1", "spin.2", "spin.3", "spin.4" ]
     ]
   }

@@ -37,6 +37,7 @@
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/sawblade_fire.ogg" ],
+      "altFire" : [ "/sfx/gun/sawblade_fire.ogg" ],
       "reload" : [ "/sfx/gun/reload/thea_grenadelauncher_reload.ogg" ]
     }
   },
@@ -88,6 +89,55 @@
         "duration" : 0.30,
         "armRotation" : 2,
         "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+	}
+  },
+  
+  "altAbility" : {
+    "name" : "Hard Launch",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-crossbow/thea-crossbow-altfire.lua"],
+    "class" : "TheaCrossBowAltFire",
+
+    "baseDamage" : 8.5,
+    "baseEnergyUsage" : 35,
+    "inaccuracy" : 0.0,
+	
+	"cooldownTime" : 0.5,
+	
+	"useQuiverDamageBonus" : false,
+
+    "projectileType" : "akkimarisawbladebomb",
+	"projectileCount" : 1,
+	"projectileParameters" : {
+	  "speed" : 100
+	},
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0.15,
+        "armRotation" : 6,
+        "weaponRotation" : 7,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.35,
+        "armRotation" : 4,
+        "weaponRotation" : 5,
         "twoHanded" : true,
 
         "allowRotate" : true,

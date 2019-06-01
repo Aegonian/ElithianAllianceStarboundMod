@@ -2,7 +2,7 @@ require "/scripts/vec2.lua"
 require "/scripts/util.lua"
 require "/scripts/interp.lua"
 
--- Bow primary ability
+-- Charged primary ability
 TheaChargedShotAltFire = WeaponAbility:new()
 
 function TheaChargedShotAltFire:init()

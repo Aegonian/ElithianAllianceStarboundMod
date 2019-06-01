@@ -6,7 +6,7 @@
   "image" : "akkimarisawblade.png",
   "animationCycle" : 0.075,
   "frameNumber" : 3,
-  "emitters" : [],
+  "emitters" : [ "thea-smallwhitetrail" ],
   "power" : 50,
   "speed" : 50,
   "timeToLive" : 30,
