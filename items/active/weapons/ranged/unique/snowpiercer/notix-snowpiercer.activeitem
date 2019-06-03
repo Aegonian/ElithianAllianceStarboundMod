@@ -132,7 +132,7 @@
     "projectileCount" : 1,
     "fireType" : "auto",
 
-    "projectileType" : "notixicecloud",
+    "projectileType" : "notixsnowcloud",
     "projectileParameters" : { },
 
     "stances" : {

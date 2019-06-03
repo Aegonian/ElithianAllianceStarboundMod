@@ -8,7 +8,7 @@
   "shortdescription" : "^orange;SDL-02 Shockbolter^white;",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-gun-unique",
+  "tooltipKind" : "thea-continuousgun-unique",
   "category" : "Prototype Weapon",
   "itemTags" : ["weapon","ranged","trink","theaUnique"],
   "twoHanded" : true,
@@ -168,5 +168,5 @@
     }
   },
   
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

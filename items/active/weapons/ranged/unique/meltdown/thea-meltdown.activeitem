@@ -9,7 +9,7 @@
   "description" : "^orange;A powerful beam rifle that causes its targets to overheat.",
   "manufacturer" : "^gray;AEG-Corps^reset;",
   "shortdescription" : "^orange;C66 Meltdown^white;",
-  "tooltipKind" : "thea-gun-unique-mf",
+  "tooltipKind" : "thea-continuousgun-unique-mf",
   "category" : "Beam Rifle",
   "itemTags" : ["weapon","ranged","alliance","aeg-corps","theaUnique"],
   "twoHanded" : true,
@@ -39,16 +39,21 @@
       }
     },
     "sounds" : {
+	  //PRIMARY
       "fireStart" : [ "/sfx/gun/aegisaltpistol_start.ogg" ],
       "fireLoop" : [ "/sfx/gun/avikan_mininglaserloud.ogg" ],
       "fireEnd" : [],
-      "beamImpact" : []
+      "beamImpact" : [],
+	  //SECONDARY
+      "fireStartAlt" : [ "/sfx/gun/flamethrower_start.ogg" ],
+      "fireLoopAlt" : [ "/sfx/gun/flamethrower_loop.ogg" ],
+      "fireEndAlt" : [ "/sfx/gun/flamethrower_stop.ogg" ]
     }
   },
   "animationScripts" : ["/items/active/effects/chain.lua"],
 
   "baseOffset" : [0.875, 0.5],
-  "muzzleOffset" : [0.625, 0.075],
+  "muzzleOffset" : [0.6, 0.075],
 
   "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
 
@@ -115,6 +120,55 @@
       },
       "cooldown" : {
         "duration" : 0.1,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "altAbility" : {
+    "name" : "Flamethrower",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-flamethrower/thea-flamethrower-altfire.lua"],
+    "class" : "TheaFlamethrowerAltfire",
+	
+	"activeAnimation" : true, //Allows a special animation to be played while firing
+	"muzzleParticles" : true, //Allows muzzle particles to play while firing
+
+    "baseDps" : 12.5,
+    "energyUsage" : 50,
+    "fireTime" : 0.015,
+    "inaccuracy" : 0.075,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "allianceflamethrower2",
+    "projectileParameters" : {},
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.01,
         "armRotation" : 0,
         "weaponRotation" : 0,
         "twoHanded" : true,

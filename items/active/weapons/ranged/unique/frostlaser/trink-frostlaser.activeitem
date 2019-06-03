@@ -8,7 +8,7 @@
   "rarity" : "Essential",
   "description" : "^orange;An ice-cold laser that freezes its targets solid.",
   "shortdescription" : "^orange;DS-03 FROST^white;",
-  "tooltipKind" : "thea-gun-unique",
+  "tooltipKind" : "thea-continuousgun-unique",
   "category" : "Frost Cannon",
   "itemTags" : ["weapon","ranged","trink","theaUnique"],
   "twoHanded" : true,
@@ -27,14 +27,36 @@
     "muzzleFlash" : ""
   },
   "animationCustom" : {
+	"animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [0.6, -0.6]
+		  }
+		}
+      }
+    },
     "sounds" : {
-      "fireStart" : [],
+      //PRIMARY
+	  "fireStart" : [],
       "fireLoop" : [ "/sfx/gun/trink_frostlaserloop.ogg" ],
       "fireEnd" : [],
-      "beamImpact" : []
+      "beamImpact" : [],
+	  //SECONDARY
+      "fireAlt" : [ "/sfx/gun/fireblast.ogg" ],
+	  "chargeLoopAlt" : [ "/sfx/melee/charge_up13.ogg" ],
+	  "dischargeAlt" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
     }
   },
-  "animationScripts" : ["/items/active/effects/chain.lua"],
+  "animationScripts" : ["/items/active/effects/thea-chain-chargeintake.lua"],
+  "scriptedAnimationParameters" : {
+    "particleConfig" : {
+	  "image" : "/particles/chargeintake/frostintake.png",
+	  "scale" : 1.0,
+	  "fullbright" : false
+	}
+  },
 
   "baseOffset" : [0.6, -0.6],
   "muzzleOffset" : [1.7, -0.2],
@@ -48,8 +70,8 @@
     "class" : "TheaBeamFire",
 
     "fireTime" : 0.1,
-    "baseDps" : 7.0,
-    "energyUsage" : 40.0,
+    "baseDps" : 9.0,
+    "energyUsage" : 35.0,
     "inaccuracy" : 0.0,
 	
 	"impactDamageTimeout" : 0.2,
@@ -64,7 +86,7 @@
       "knockback" : 1
     },
 
-    "beamLength" : 50,
+    "beamLength" : 80,
 
     "chain" : {
       "startOffset" : [0, 0],
@@ -111,5 +133,77 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "altAbility" : {
+    "name" : "FROST Cloud",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-chargedshot-altfire.lua"],
+    "class" : "TheaChargedShotAltFire",
+
+    "chargeTime" : 0.75,
+    "baseDamage" : 1.5,
+    "baseEnergyUsage" : 60,
+    "inaccuracy" : 0.3,
+	
+	"cooldownTime" : 1.0,
+
+    "projectileType" : "notixicecloud",
+	"projectileCount" : 15,
+	"projectileParameters" : {},
+	
+	//CHARGE PARTICLE CONFIGURATION
+	"useChargeParticles" : true,
+	"maxChargeParticles" : 8,
+	"particleLifetime" : 0.3,
+	"timeBewteenParticles" : 0.02,
+	"maxParticleDistance" : 2.0,
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "charge" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 2,
+        "weaponRotation" : 3,
+		"weaponOffset" : [-0.05, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.35,
+        "armRotation" : 2,
+        "weaponRotation" : 3,
+		"weaponOffset" : [-0.05, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "discharge" : {
+        "duration" : 0.1,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+	}
+  },
+
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

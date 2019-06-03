@@ -1,0 +1,54 @@
+{
+  "projectileName" : "notixsnowcloud",
+  "image" : "notixsnowcloud.png",
+  "physics" : "thea-dustcloud",
+  "flippable" : true,
+  "animationCycle" : 1.0,
+  "animationLoops" : false,
+  "frameNumber" : 12,
+  "winddownFrames" : 3,
+  "intangibleWinddown" : true,
+  "emitters" : [ "thea-snowparticles", "thea-fog" ],
+  "power" : 50,
+  "speed" : 30,
+  "timeToLive" : 1.0,
+  "bounces" : -1,
+  "piercing" : true,
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "damageKind" : "frostlaser",
+  "statusEffects" : [
+    "frostlaserfreezing"
+  ],
+  "actionOnReap" : [
+    {
+      "action" : "applySurfaceMod",
+      "previousMod" : "metamod:none",
+      "newMod" : "snow",
+      "radius" : 1
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0,
+      "repeat" : false,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : "thea-windstorm1"
+    }
+  ],
+  "hydrophobic" : false,
+  
+  //SCRIPT CONFIG
+  "scripts" : [ "/projectiles/scripts/thea-tilemodspawner.lua" ],
+  "tickTime" : 0.2,
+  "tileModProjectile" : "snowmodspawner",
+  
+  "liquidConversions" : [		//Liquid conversion tables. First entry is the liquidID (int), second is materialID (string)
+	[ 1, "frozenwater" ],
+	[ 6, "frozenwater" ],
+	[ 12, "frozenwater" ],
+	[ 2, "magmarock" ]
+  ],
+  "minimumLiquidLevel" : 0.75,	//Minimum liquid level needed for conversion to succeed
+  "allowOverlap" : true			//If true, the projectiles convert liquids even if the position is occupied by an entity
+}

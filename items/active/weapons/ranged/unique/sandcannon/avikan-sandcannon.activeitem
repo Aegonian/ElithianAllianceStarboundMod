@@ -8,7 +8,7 @@
   "shortdescription" : "^orange;Desert's Embrace^white;",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-gun-unique",
+  "tooltipKind" : "thea-continuousgun-unique",
   "category" : "Sand Launcher",
   "itemTags" : ["weapon","ranged","avikan","theaUnique"],
   "twoHanded" : true,
@@ -146,5 +146,5 @@
     }
   },
   
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

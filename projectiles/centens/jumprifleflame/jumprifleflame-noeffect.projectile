@@ -22,10 +22,20 @@
   
   "persistentAudio" : "/sfx/projectiles/thea_flame_burning.ogg",
   
-  "scripts" : [ "/projectiles/scripts/thea-uprightprojectile.lua" ],
+  "scripts" : [ "/projectiles/scripts/thea-tiledamager.lua" ],
+  //FORCE UPRIGHT
+  "forceUpright" : true,
   "rotateInAir" : false,
+  
+  //RANDOM LIFETIME
   "randomTimeToLive" : true,
   "timeToLiveMilliseconds" : true,
   "minLifeTime" : 350,
-  "maxLifeTime" : 650
+  "maxLifeTime" : 650,
+  
+  //TILE DAMAGE
+  "tileDamage" : 0.025,
+  "damageTileRadius" : 1.5,
+  "harvestLevel" : 0,
+  "tickTime" : 1.0
 }

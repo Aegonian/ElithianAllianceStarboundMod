@@ -9,7 +9,7 @@
   "description" : "^orange;A high precision laser rifle which ramps up in power over time.",
   "manufacturer" : "^gray;AEG-Corps^reset;",
   "shortdescription" : "^orange;C56 Defiant^white;",
-  "tooltipKind" : "thea-gun-unique-mf",
+  "tooltipKind" : "thea-continuousgun-unique-mf",
   "category" : "Beam Rifle",
   "itemTags" : ["weapon","ranged","alliance","aeg-corps","theaUnique"],
   "twoHanded" : true,
@@ -39,16 +39,28 @@
       }
     },
     "sounds" : {
-      "fireStart" : [ "/sfx/gun/aegisaltpistol_start.ogg" ],
+      //PRIMARY
+	  "fireStart" : [ "/sfx/gun/aegisaltpistol_start.ogg" ],
       "fireLoop" : [ "/sfx/gun/avikan_mininglaserloud.ogg" ],
       "fireEnd" : [],
-      "beamImpact" : []
+      "beamImpact" : [],
+	  //SECONDARY
+      "fireAlt" : [ "/sfx/gun/centens_jumprifle1.ogg" ],
+	  "chargeLoopAlt" : [ "/sfx/melee/charge_up2.ogg" ],
+	  "dischargeAlt" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
     }
   },
-  "animationScripts" : ["/items/active/effects/chain.lua"],
+  "animationScripts" : ["/items/active/effects/thea-chain-chargeintake.lua"],
+  "scriptedAnimationParameters" : {
+    "particleConfig" : {
+	  "image" : "/particles/chargeintake/allianceenergyintake.png",
+	  "scale" : 1.5,
+	  "fullbright" : true
+	}
+  },
 
   "baseOffset" : [0.875, 0.5],
-  "muzzleOffset" : [0.625, 0.075],
+  "muzzleOffset" : [0.5, 0.075],
 
   "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
 
@@ -128,5 +140,77 @@
     }
   },
 
-  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+  "altAbility" : {
+    "name" : "Volatile Beam",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-chargedshot-altfire.lua"],
+    "class" : "TheaChargedShotAltFire",
+
+    "chargeTime" : 1.0,
+    "baseDamage" : 10.0,
+    "baseEnergyUsage" : 75,
+    "inaccuracy" : 0.0,
+	
+	"cooldownTime" : 1.0,
+
+    "projectileType" : "allianceexplosivelaser",
+	"projectileCount" : 1,
+	"projectileParameters" : {},
+	
+	//CHARGE PARTICLE CONFIGURATION
+	"useChargeParticles" : true,
+	"maxChargeParticles" : 8,
+	"particleLifetime" : 0.3,
+	"timeBewteenParticles" : 0.05,
+	"maxParticleDistance" : 2.0,
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "charge" : {
+        "armRotation" : -2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 0,
+        "weaponRotation" : 1,
+		"weaponOffset" : [-0.1, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.5,
+        "armRotation" : 0,
+        "weaponRotation" : 1,
+		"weaponOffset" : [-0.1, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "discharge" : {
+        "duration" : 0.1,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+	}
+  },
+
+  "builder" : "/items/buildscripts/thea-buildspeedupbeamweapon-mf.lua"
 }

@@ -16,6 +16,18 @@
             "transition" : "off"
           }
         }
+      },
+	  "chargeAlt" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+		  "charging" : {
+            "frames" : 6,
+            "cycle" : 1.0,
+            "mode" : "transition",
+            "transition" : "off"
+          }
+        }
       }
     },
 
@@ -33,9 +45,22 @@
           "zLevel" : 1,
           "centered" : true,
           "fullbright" : true,
-          "image" : "<partImage><paletteSwaps>",
           "offset" : [0.6, -0.6], // x offset is set dynamically
           "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "chargeAlt" : {
+            "off" : {
+              "properties" : {
+				"image" : "<partImage>:idle"
+              }
+            },
+            "charging" : {
+              "properties" : {
+                "image" : "<partImage>:charge.<frame>"
+              }
+            }
+          }
         }
       },
       "muzzleFlash" : {
@@ -46,7 +71,6 @@
           "fullbright" : true,
           "transformationGroups" : ["muzzle"]
         },
-
         "partStates" : {
           "firing" : {
             "fire" : {
@@ -94,6 +118,15 @@
       "transformationGroups" : ["beam"],
       "emissionRate" : 10,
       "particles" : [ ]
+    },
+	"chargeparticlesAlt" : {
+	  "active" : false,
+      "emissionRate" : 9.0,
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [0.1, -0.1, 0.1, -0.1],
+      "particles" : [
+        { "particle" : "xanafiancharge"}
+      ]
     }
   },
 

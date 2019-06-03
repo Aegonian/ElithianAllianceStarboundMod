@@ -16,6 +16,18 @@
             "transition" : "off"
           }
         }
+      },
+	  "chargeAlt" : {
+        "default" : "off",
+        "states" : {
+          "off" : {},
+		  "charging" : {
+            "frames" : 5,
+            "cycle" : 0.7,
+            "mode" : "transition",
+            "transition" : "off"
+          }
+        }
       }
     },
 
@@ -24,7 +36,7 @@
         "properties" : {
           "centered" : true,
           "image" : "<partImage><paletteSwaps>",
-          "offset" : [0.5, 0.125], // x offset is set dynamically
+          "offset" : [0.0, 0.0], // x offset is set dynamically
           "transformationGroups" : ["weapon"]
         }
       },
@@ -33,9 +45,22 @@
           "zLevel" : 1,
           "centered" : true,
           "fullbright" : true,
-          "image" : "<partImage><paletteSwaps>",
-          "offset" : [0.6, -0.6], // x offset is set dynamically
+          "offset" : [0.0, 0.0], // x offset is set dynamically
           "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "chargeAlt" : {
+            "off" : {
+              "properties" : {
+                "image" : "<partImage>:idle"
+              }
+            },
+            "charging" : {
+              "properties" : {
+                "image" : "<partImage>:charge.<frame>"
+              }
+            }
+          }
         }
       },
       "muzzleFlash" : {
@@ -46,7 +71,6 @@
           "fullbright" : true,
           "transformationGroups" : ["muzzle"]
         },
-
         "partStates" : {
           "firing" : {
             "fire" : {
@@ -97,6 +121,13 @@
         {"particle" : "thea-frostlaserbeam"},
         {"particle" : "thea-frostlaserbeam"}
       ]
+    },
+	"chargeparticlesAlt" : {
+	  "active" : false,
+      "emissionRate" : 10.0,
+      "transformationGroups" : ["muzzle"],
+      "offsetRegion" : [0.1, -0.1, 0.1, -0.1],
+      "particles" : []
     }
   },
 

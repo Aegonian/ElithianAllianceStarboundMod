@@ -582,7 +582,7 @@
 	  "stickyForce" : 200.0,
 	  "maxMovementPerStep" : 0.4,
 
-	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+	  "collisionPoly" : [ [-0.375, -0.375], [0.375, -0.375], [0.375, 0.375], [-0.375, 0.375] ],
 	  "ignorePlatformCollision" : true,
 
 	  "airFriction" : 1.0,

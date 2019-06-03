@@ -8,7 +8,7 @@
   "shortdescription" : "^orange;SDL-05 Arclighter^white;",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-gun-unique",
+  "tooltipKind" : "thea-continuousgun-unique",
   "category" : "Prototype Weapon",
   "itemTags" : ["weapon","ranged","trink","theaUnique"],
   "twoHanded" : true,
@@ -28,13 +28,60 @@
   },
   "animationCustom" : {
     "animatedParts" : {
+      "stateTypes" : {
+		"altSwoosh" : {
+		  "default" : "idle",
+		  "states" : {
+			"idle" : {
+			},
+			"fire" : {
+			  "frames" : 3,
+			  "cycle" : 0.08,
+			  "mode" : "transition",
+			  "transition" : "idle"
+			}
+		  }
+		}
+	  },
       "parts" : {
         "middleFullbright" : {
 		  "properties" : {
 			//Same as BaseOffset
 		    "offset" : [0.375, 0.25]
 		  }
+		},
+		"altSwoosh" : {
+		  "properties" : {
+			"zLevel" : -3,
+			"centered" : true,
+			"offset" : [-2.875, 1.25],
+			"transformationGroups" : ["muzzle"]
+		  },
+		  "partStates" : {
+			"altSwoosh" : {
+			  "idle" : {
+				"properties" : {
+				  "image" : ""
+				}
+			  },
+			  "fire" : {
+				"properties" : {
+				  "image" : "/items/active/weapons/melee/animations/swoosh/thea-shortswordswoosh.png:<frame>",
+				  "damageArea" : [[-3.75, 1.5], [-1.875, 2.25], [0.75, 2.25], [3, 1.25], [3.75, -0.15], [3.75, -1.675], [3, -2.375], [0, -1.875]]
+				}
+			  }
+			}
+		  }
 		}
+      }
+    },
+    "particleEmitters" : {
+	  "altSwoosh" : {
+        "active" : false,
+        "emissionRate" : 5,
+        "transformationGroups" : ["muzzle"],
+        "offsetRegion" : [0.0, 0.0, 0.0, 0.0],
+        "particles" : []
       }
     },
     "lights" : {
@@ -46,7 +93,8 @@
       "fireStart" : [ "/sfx/gun/aegisaltpistol_start.ogg" ],
       "fireLoop" : [ "/sfx/gun/trink_arclighter.ogg" ],
       "fireLoopIdle" : [ "/sfx/gun/trink_arclighter_light.ogg" ],
-      "fireEnd" : []
+      "fireEnd" : [],
+	  "altFire" : [ "/sfx/melee/swing_hammer.ogg" ]
     }
   },
   "animationScripts" : ["/items/active/effects/thea-doublelightning.lua"],
@@ -64,7 +112,7 @@
 
     "fireTime" : 0.2,
     "baseDps" : 14.5,
-    "energyUsage" : 56.0,
+    "energyUsage" : 60.0,
 
     "damageConfig" : {
       "statusEffects" : [ "electrified" ],
@@ -124,5 +172,44 @@
     }
   },
   
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "altAbility" : {
+    "name" : "Gun Bash",
+    "scripts" : ["/items/active/weapons/melee/abilities/thea-altmeleeslash.lua"],
+    "class" : "TheaAltMeleeSlash",
+
+    "fireTime" : 1.2,
+    "baseDps" : 6.5,
+    "damageConfig" : {
+      "damageSourceKind" : "hammer",
+      "statusEffects" : [ "thea-stunnedshort" ],
+      "knockbackMode" : "aim",
+      "knockback" : 30,
+      "timeoutGroup" : "primary"
+    },
+
+    "stances" : {
+      "windup" : {
+        "duration" : 0.2,
+        "armRotation" : 80,
+        "weaponRotation" : 60,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 0],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire" : {
+        "duration" : 0.4,
+        "armRotation" : -15,
+        "weaponRotation" : 25,
+        "twoHanded" : true,
+        "weaponOffset" : [0.25, 0],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

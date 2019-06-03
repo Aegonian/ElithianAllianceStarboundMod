@@ -1,0 +1,19 @@
+{
+  "projectileName" : "allianceenergyexplosion",
+  "image" : "allianceenergyexplosion.png",
+  "renderLayer" : "MiddleParticle+1",
+  "animationCycle" : 0.4,
+  "frameNumber" : 5,
+  "speed" : 0,
+  "lightColor" : [255, 190, 0],
+  "pointLight" : true,
+  "fullbright" : true,
+  "statusEffects" : [ ],
+  "damagePoly" : [ [-52, 0], [-39, -39], [0, -52], [39, -39], [52, 0], [39, 39], [0, 52], [-39, 39] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "damageKind" : "default",
+  "knockback" : 40
+}

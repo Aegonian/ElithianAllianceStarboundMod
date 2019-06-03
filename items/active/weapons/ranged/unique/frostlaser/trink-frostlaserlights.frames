@@ -1,0 +1,10 @@
+{
+  "frameGrid" : {
+    "size" : [29, 15],
+    "dimensions" : [6, 1],
+
+    "names" : [
+      [ "idle", "charge.1", "charge.2", "charge.3", "charge.4", "charge.5" ]
+    ]
+  }
+}

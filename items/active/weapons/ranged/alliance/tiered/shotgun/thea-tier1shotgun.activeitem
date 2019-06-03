@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Common",
   "description" : "A ballistic shotgun.",
-  "manufacturer" : "^gray;AAE^reset;",
+  "manufacturer" : "^gray;Bredon Arms^reset;",
   "shortdescription" : "BS-3 Bremmen",
   "level" : 1,
   "tooltipKind" : "thea-gun-mf",

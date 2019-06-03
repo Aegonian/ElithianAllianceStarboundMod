@@ -1,0 +1,32 @@
+{
+  "projectileName" : "allianceflamethrower2",
+  "image" : "allianceflamethrower2.png",
+  "physics" : "flame",
+  "animationCycle" : 1,
+  "animationLoops" : false,
+  "frameNumber" : 12,
+  "winddownFrames" : 3,
+  "intangibleWinddown" : true,
+  "power" : 50,
+  "speed" : 30,
+  "timeToLive" : 1.0,
+  "bounces" : 1,
+  "piercing" : true,
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "lightColor" : [235, 126, 2],
+  "damageKind" : "flamethrower",
+  "statusEffects" : [
+    "thea-burning"
+  ],
+  "actionOnCollide" : [
+	{
+      "action" : "projectile",
+      "type" : "avikanflame-short",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.015,
+      "inheritSpeedFactor" : 1.0,
+      "angleAdjust" : 0
+    }
+  ],
+  "hydrophobic" : true
+}

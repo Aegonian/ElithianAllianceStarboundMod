@@ -1,45 +1,83 @@
 {
   "projectileName" : "notixicecloud",
-  "image" : "notixicecloud.png",
   "physics" : "thea-dustcloud",
-  "flippable" : true,
-  "animationCycle" : 1.0,
-  "animationLoops" : false,
-  "frameNumber" : 12,
-  "winddownFrames" : 3,
-  "intangibleWinddown" : true,
-  "emitters" : [ "thea-snowparticles", "thea-fog" ],
-  "power" : 50,
-  "speed" : 30,
-  "timeToLive" : 1.0,
   "bounces" : -1,
+  "image" : "notixicecloud.png",
+  "animationCycle" : 1.0,
+  "timeToLive" : 1.0,
+  "frameNumber" : 8,
+  "speed" : 10,
   "piercing" : true,
-  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
-  "damageKind" : "frostlaser",
-  "statusEffects" : [
-    "frostlaserfreezing"
-  ],
-  "actionOnReap" : [
-    {
-      "action" : "applySurfaceMod",
-      "previousMod" : "metamod:none",
-      "newMod" : "snow",
-      "radius" : 1
-    }
-  ],
+  "supportsProcessing" : true,
+  "damagePoly" : [ [-18, 0], [-12, -12], [0, -18], [12, -12], [18, 0], [12, 12], [0, 18], [-12, 12] ],
+  "emitters" : [ "thea-snowparticles", "thea-fog" ],
+  "actionOnReap" : [ ],
   "periodicActions" : [
     {
-      "time" : 0,
-      "repeat" : false,
+      "time" : 0.4,
+      "repeat" : true,
       "action" : "particle",
       "rotate" : true,
-      "specification" : "thea-windstorm1"
+      "specification" : {
+		"type" : "animated",
+		"animation" : "/animations/frostsmoke/frostsmoke.animation",
+		"timeToLive" : 0.5,
+        "layer" : "back",
+		"variance" : {
+		  "position" : [1.5, 1.5],
+		  "initialVelocity" : [1, 1],
+		  "timeToLive" : 0.3,
+		  "rotation" : 180
+		}
+	  }
+    },
+    {
+      "time" : 0.5,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+		"type" : "animated",
+		"animation" : "/animations/frostsmoke/frostsmoke3.animation",
+		"timeToLive" : 0.5,
+		"variance" : {
+		  "position" : [1.0, 1.0],
+		  "initialVelocity" : [1, 1],
+		  "timeToLive" : 0.3,
+		  "rotation" : 180
+		}
+	  }
+    },
+    {
+      "time" : 0.4,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+		"type" : "animated",
+		"animation" : "/animations/frozendust2/frozendust2.animation",
+		"timeToLive" : 0.5,
+		"variance" : {
+		  "position" : [1.0, 1.0],
+		  "initialVelocity" : [1, 1],
+		  "timeToLive" : 0.3,
+		  "rotation" : 180
+		}
+	  }
     }
   ],
-  "hydrophobic" : false,
+  "statusEffects" : [ "frostlaserfrozen" ],
+  "fullbright" : false,
+  "power" : 1,
+  "damageKind" : "frostlaser",
+
+  "scripts" : [ "/projectiles/scripts/thea-tilemodspawner.lua" ],  
+  //RANDOM SPEED
+  "randomSpeed" : true,
+  "minSpeed" : 5,
+  "maxSpeed" : 20,
   
-  //SCRIPT CONFIG
-  "scripts" : [ "/projectiles/scripts/thea-tilemodspawner.lua" ],
+  //TILEMODS
   "tickTime" : 0.2,
   "tileModProjectile" : "snowmodspawner",
   

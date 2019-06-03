@@ -1,0 +1,13 @@
+{
+  "projectileName" : "allianceenergyexplosionspawner",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/allianceenergyexplosion/allianceenergyexplosion.config"
+    }
+  ],
+  "damageKind" : "default",
+  "damageType" : "NoDamage",
+  "timeToLive" : 0
+}

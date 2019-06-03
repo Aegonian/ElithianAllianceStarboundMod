@@ -56,7 +56,7 @@
 
   "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
 
-  "elementalType" : "physical",
+  "elementalType" : "akkimariacid",
   
   "primaryAbility" : {
     "scripts" : ["/items/active/weapons/ranged/abilities/thea-ammofire.lua"],

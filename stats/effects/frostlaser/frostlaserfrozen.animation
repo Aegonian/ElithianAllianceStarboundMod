@@ -37,15 +37,18 @@
             "destructionAction" : "shrink",
             "destructionTime" : 0.5,
             "position" : [0.0, 0.0],
-			"finalVelocity" : [0.0, -3.0],
-            "timeToLive" : 0.3,
+			"finalVelocity" : [0.0, -8.0],
+			"approach" : [2.0, 15.0],
+			"flippable" : true,
+			"angularVelocity" : 0,
+            "timeToLive" : 0.6,
 			"layer" : "middle",
 			"variance" : {
 			  "rotation" : 180,
-			  "initialVelocity" : [10.0, 6.0],
-			  "finalVelocity" : [0.0, -6.0],
-              "timeToLive" : 0.5,
+			  "initialVelocity" : [10.0, 8.0],
+              "timeToLive" : 0.3,
 			  "size" : 0.5,
+			  "angularVelocity" : 90,
 			  "position" : [2, 2]
 			}
           }
