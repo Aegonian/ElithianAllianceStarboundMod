@@ -46,8 +46,8 @@
 	
     "fireTime" : 1.1,
 	
-    "baseDps" : 9.125,
-    "activeDps" : 10.0,
+    "baseDps" : 11.0,
+    "activeDps" : 16.0,
 	
     "inactiveDamageConfig" : {
       "damageSourceKind" : "spear",
@@ -95,7 +95,7 @@
         "allowFlip" : true
       },
       "windup" : {
-        "duration" : 0.15,
+        "duration" : 0.25,
         "armRotation" : -110,
         "weaponRotation" : 20,
         "twoHanded" : true,
@@ -105,11 +105,11 @@
         "allowFlip" : false
       },
       "fire" : {
-        "duration" : 0.35,
+        "duration" : 0.25,
         "armRotation" : -20,
         "weaponRotation" : -70,
         "twoHanded" : true,
-        "weaponOffset" : [0, 2.5],
+        "weaponOffset" : [0, 3.0],
 
         "allowRotate" : false,
         "allowFlip" : false
@@ -131,16 +131,16 @@
     "scripts" : ["/items/active/weapons/melee/abilities/spear/electricspear/electrifyspear.lua"],
 	"class" : "ElectrifySpear",
 
-    "energyPerSecond" : 15,
+    "energyPerSecond" : 50,
 	"cooldownTime" : 1.0,
 
     "stances" : {
       "electrify" : {
         "duration" : 0.5,		
-		"armRotation" : 50,
-        "weaponRotation" : -50,
-        "twoHanded" : true,
-        "weaponOffset" : [0, 0.5],
+		"armRotation" : 75,
+        "weaponRotation" : -80,
+        "twoHanded" : false,
+        "weaponOffset" : [0, 2.25],
 
         "allowRotate" : false,
         "allowFlip" : true

@@ -45,6 +45,8 @@ function ElectrifySpear:electrify()
 
   animator.playSound("electrify")
   animator.setAnimationState("swoosh", "electrify")
+  animator.burstParticleEmitter("electrify")
+  
   util.wait(self.stances.electrify.duration)
   
   self.active = true

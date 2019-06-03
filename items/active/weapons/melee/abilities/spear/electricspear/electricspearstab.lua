@@ -161,5 +161,7 @@ function ElectricSpearStab:cooldownTime()
 end
 
 function ElectricSpearStab:uninit()
+  animator.stopAllSounds("holdLoop")
+  animator.stopAllSounds("idleLoop")
   self.weapon:setDamage()
 end
