@@ -1,0 +1,41 @@
+{
+  "projectileName" : "alliancelaserturret",
+  "image" : "alliancelaserturret.png",
+  "animationCycle" : 1.0,
+  "frameNumber" : 1,
+  "lightColor" : [0, 74, 127],
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/avikansmallexplosion/avikansmallexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "emitters" : [ ],
+  "onlyHitTerrain" : true,
+  "bounces" : -1,
+  "orientationLocked" : true,
+  "renderLayer" : "Player+1",
+  "power" : 1.0,
+  "speed" : 0.0,
+  "timeToLive" : 12.0,
+  "physics" : "thea-alliancelaserturret",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  
+  "persistentAudio" : "/sfx/objects/dockingfield_idle_loop.ogg",
+
+  "scripts" : [ "/projectiles/scripts/thea-hoverturret.lua" ],
+  //HOVER BEHAVIOUR
+  "minDistanceToGround" : 7,	//Minimum distance to the ground. If closer, the turret flies up
+  "maxDistanceToCeiling" : 2,	//Maximum distance to the ceiling. If closer, the turret flies down
+  "hoverCorrectionSpeed" : 5,	//Velocity with which to correct positionwhen too close to the ground or ceiling
+  "hoverCycleLength" : 1,		//How far up and down to hover
+  "hoverCycleDuration" : 0.5,	//How fast to hover up and down
+  
+  //FIRING BEHAVIOUR
+  "searchDistance" : 40,
+  "projectileType" : "allianceshortlaser",
+  "cooldownTime" : 0.2
+}

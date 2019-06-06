@@ -393,7 +393,7 @@
 	  "airFriction" : 0.0,
 	  "liquidFriction" : 1.0,
 	  "groundFriction" : 15.0
-	}	  
+	}
   },
   {"op" : "add",
 	"path" : "/thea-zaheedsword",
@@ -411,7 +411,7 @@
 	  "airFriction" : 0.0,
 	  "liquidFriction" : 1.0,
 	  "groundFriction" : 15.0
-	}	  
+	}
   },
   {"op" : "add",
 	"path" : "/thea-largedebris",
@@ -430,7 +430,7 @@
 	  "liquidFriction" : 8.0,
 	  "groundFriction" : 50.0,
 	  "maximumCorrection" : 0.75
-	}	  
+	}
   },
   {"op" : "add",
 	"path" : "/thea-hugedebris",
@@ -449,7 +449,7 @@
 	  "liquidFriction" : 8.0,
 	  "groundFriction" : 10.0,
 	  "maximumCorrection" : 0.75
-	}	  
+	}
   },
   {"op" : "add",
 	"path" : "/thea-deathseekerbullet",
@@ -465,7 +465,7 @@
 	  "liquidFriction" : 0.0,
 	  "speedLimit" : 40,
 	  "maximumCorrection" : 0.75
-	}	  
+	}
   },
   {"op" : "add",
 	"path" : "/centensgravityseeker",
@@ -483,7 +483,7 @@
 	  "liquidFriction" : 0.0,
 	  "speedLimit" : null,
 	  "maximumCorrection" : 0.75
-	}	  
+	}
   },
   {"op" : "add",
 	"path" : "/thea-tentaclefist",
@@ -501,7 +501,7 @@
 	  "liquidFriction" : 0.0,
 	  "speedLimit" : null,
 	  "maximumCorrection" : 0.75
-	}	  
+	}
   },
   {"op" : "add",
 	"path" : "/thea-shrapnel",
@@ -518,7 +518,7 @@
 	  "airFriction" : 0.0,
 	  "liquidFriction" : 2.0,
 	  "groundFriction" : 15.0
-	}	  
+	}
   },
   {"op" : "add",
 	"path" : "/thea-shrapnel-highbounce",
@@ -535,7 +535,7 @@
 	  "airFriction" : 0.0,
 	  "liquidFriction" : 2.0,
 	  "groundFriction" : 15.0
-	}	  
+	}
   },
   {"op" : "add",
 	"path" : "/thea-ashpile",
@@ -552,7 +552,7 @@
 	  "airFriction" : 0.0,
 	  "liquidFriction" : 2.0,
 	  "groundFriction" : 15.0
-	}	  
+	}
   },
   {"op" : "add",
 	"path" : "/thea-gravitywell",
@@ -571,7 +571,7 @@
 	  "liquidFriction" : 1000,
 	  "speedLimit" : 0,
 	  "maximumCorrection" : 0.75
-	}	  
+	}
   },
   {"op" : "add",
 	"path" : "/thea-stickyflame",
@@ -589,6 +589,22 @@
 	  "liquidFriction" : 1.0,
 	  "groundFriction" : 1.0,
 	  "maximumCorrection" : 0.75
-	}	  
+	}
+  },
+  {"op" : "add",
+	"path" : "/thea-alliancelaserturret",
+	"value" : {
+	  "gravityMultiplier" : 0.0,
+	  "bounceFactor" : 0.0,
+	  "maxMovementPerStep" : 0.4,
+
+	  "collisionPoly" : [ [-0.25, -0.125], [0.25, -0.125], [0.25, 0.375], [-0.25, 0.375] ],
+	  "ignorePlatformCollision" : true,
+
+	  "airFriction" : 0.0,
+	  "liquidFriction" : 0.0,
+	  "speedLimit" : null,
+	  "maximumCorrection" : 0.75
+	}
   }
 ]

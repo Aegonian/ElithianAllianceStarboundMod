@@ -1,0 +1,12 @@
+{
+  "frameGrid" : {
+    "size" : [45, 13],
+    "dimensions" : [4, 3],
+
+    "names" : [
+      [ "ready", "cooldown", null, null ],
+      [ "windup.1", "windup.2", "windup.3", "windup.4" ],
+      [ "winddownFail.1", "winddownFail.2", "winddownFail.3", "winddownFail.4" ]
+    ]
+  }
+}

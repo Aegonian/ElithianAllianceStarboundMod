@@ -18,6 +18,7 @@
         }
       },
 	  "weapon" : {
+        "priority" : 1,
         "default" : "idle",
         "states" : {
           "idle" : {
@@ -25,6 +26,7 @@
               "particleEmittersOff" : [ "cooldownVenting" ]
             }
 		  },
+		  //PRIMARY ABILITY
 		  "fire" : {
             "properties" : {
               "particleEmittersOff" : [ "cooldownVenting" ]
@@ -38,7 +40,46 @@
             "properties" : {
               "particleEmittersOn" : [ "cooldownVenting" ]
             }
-          }
+          },
+		  //ALT ABILITY
+		  "windup" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "properties" : {
+              "particleEmittersOff" : [ "cooldownVenting" ]
+            }
+		  },
+		  "release" : {
+            "properties" : {
+              "particleEmittersOff" : [ "cooldownVenting" ]
+            }
+		  },
+		  "winddown" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "transition",
+            "transition" : "idle",
+            "properties" : {
+              "particleEmittersOff" : [ "cooldownVenting" ]
+            }
+		  },
+		  "winddownFail" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "transition",
+            "transition" : "idle",
+            "properties" : {
+              "particleEmittersOff" : [ "cooldownVenting" ]
+            }
+		  }
+        }
+      },
+	  "indicator" : {
+        "priority" : 0,
+        "default" : "cooldown",
+        "states" : {
+          "ready" : {},
+		  "cooldown" : {}
         }
       }
     },
@@ -51,10 +92,10 @@
           "offset" : [0.0, 0.0],
           "transformationGroups" : ["weapon"]
         },
-
         "partStates" : {
           "weapon" : {
-            "idle" : {
+            //PRIMARY ABILITY
+			"idle" : {
               "properties" : {
                 "image" : "<partImage>:idle"
               }
@@ -67,6 +108,27 @@
 			"reload" : {
               "properties" : {
                 "image" : "<partImage>:reload.<frame>"
+              }
+            },
+			//ALT ABILITY
+			"windup" : {
+              "properties" : {
+                "image" : "<partImage>:windup.<frame>"
+              }
+            },
+			"release" : {
+              "properties" : {
+                "image" : "<partImage>:release"
+              }
+            },
+			"winddown" : {
+              "properties" : {
+                "image" : "<partImage>:winddown.<frame>"
+              }
+            },
+			"winddownFail" : {
+              "properties" : {
+                "image" : "<partImage>:winddownFail.<frame>"
               }
             }
           }
@@ -81,9 +143,9 @@
           "fullbright" : true,
           "transformationGroups" : ["weapon"]
         },
-
         "partStates" : {
           "weapon" : {
+            //PRIMARY ABILITY
             "idle" : {
               "properties" : {
                 "image" : "<partImage>:idle"
@@ -97,6 +159,63 @@
 			"reload" : {
               "properties" : {
                 "image" : "<partImage>:reload.<frame>"
+              }
+            },
+			//ALT ABILITY
+			"windup" : {
+              "properties" : {
+                "image" : "<partImage>:windup.<frame>"
+              }
+            },
+			"release" : {
+              "properties" : {
+                "image" : "<partImage>:release"
+              }
+            },
+			"winddown" : {
+              "properties" : {
+                "image" : "<partImage>:winddown.<frame>"
+              }
+            },
+			"winddownFail" : {
+              "properties" : {
+                "image" : "<partImage>:winddownFail.<frame>"
+              }
+            }
+          }
+        }
+      },
+	  "indicator" : {
+        "properties" : {
+          "zLevel" : 2,
+          "centered" : true,
+          "image" : "<partImage><paletteSwaps>",
+          "offset" : [0.0, 0.0],
+          "fullbright" : true,
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "indicator" : {
+            "ready" : {
+              "properties" : {
+                "image" : "<partImage>:ready"
+              }
+            },
+			"cooldown" : {
+              "properties" : {
+                "image" : "<partImage>:cooldown"
+              }
+            }
+		  },
+          "weapon" : {
+			"windup" : {
+              "properties" : {
+                "image" : "<partImage>:windup.<frame>"
+              }
+            },
+			"winddownFail" : {
+              "properties" : {
+                "image" : "<partImage>:winddownFail.<frame>"
               }
             }
           }
@@ -165,7 +284,13 @@
   },
 
   "sounds" : {
+	//PRIMARY ABILITY
     "fire" : [ ],
-    "reload" : [ ]
+    "reload" : [ ],
+	//ALT ABILITY
+    "droneReady" : [ ],
+    "windupLoop" : [ ],
+    "release" : [ ],
+    "winddownLoop" : [ ]
   }
 }

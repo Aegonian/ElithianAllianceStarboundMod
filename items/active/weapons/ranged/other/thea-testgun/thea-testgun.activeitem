@@ -52,7 +52,7 @@
     "projectileCount" : 1,
     "fireType" : "auto",
 
-    "projectileType" : "ancientcurseghost",
+    "projectileType" : "alliancelaserturret",
     "projectileParameters" : {},
 	
     "stances" : {

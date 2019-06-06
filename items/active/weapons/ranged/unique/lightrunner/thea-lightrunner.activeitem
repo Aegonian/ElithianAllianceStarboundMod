@@ -25,12 +25,19 @@
   "animationParts" : {
     "middle" : "thea-lightrunner.png",
     "middleFullbright" : "thea-lightrunnerlights.png",
+    "indicator" : "thea-lightrunnerindicator.png",
     "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/lightrunnermuzzle.png"
   },
   "animationCustom" : {
 	"animatedParts" : {
       "parts" : {
         "middleFullbright" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.0, 0.25]
+		  }
+		},
+        "indicator" : {
 		  "properties" : {
 			//Same as BaseOffset
 		    "offset" : [1.0, 0.25]
@@ -61,8 +68,14 @@
       }
     },
     "sounds" : {
-      "fire" : [ "/sfx/gun/lightrunner_fire_heavy.ogg" ],
-      "reload" : [ ]
+      //PRIMARY ABILITY
+	  "fire" : [ "/sfx/gun/lightrunner_fire_heavy.ogg" ],
+      "reload" : [ ],
+	  //ALT ABILITY
+      "droneReady" : [ "/sfx/objects/ancientconsole_on.ogg" ],
+      "windupLoop" : [ "/sfx/npc/monsters/avikandrone_lowergun.ogg" ],
+      "release" : [ "/sfx/objects/apexconsole1on.ogg" ],
+      "winddownLoop" : [ "/sfx/npc/monsters/avikandrone_raisegun.ogg" ]
     }
   },
 
@@ -124,6 +137,77 @@
 
         "allowRotate" : true,
         "allowFlip" : true
+      }
+    }
+  },
+  
+  "altAbility" : {
+    "name" : "Combat Drone",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-dronerelease/thea-dronerelease.lua"],
+    "class" : "TheaDroneRelease",
+	
+    "windupTime" : 0.5,
+    "cooldownTime" : 2.5,
+	
+    "droneDPS" : 4.0,
+    "droneEnergyUsage" : 50,
+    "droneReleasePosition" : [-0.875, 0.25],
+
+    "projectileType" : "alliancelaserturret",
+    "projectileParameters" : {},
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "windup" : {
+        "aimAngle" : 0,
+		
+        "armRotation" : -5,
+        "weaponRotation" : 15,
+		"weaponOffset" : [0.25, 0.25],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      },
+      "release" : {
+        "aimAngle" : 0,
+		
+        "duration" : 0.3,
+        "armRotation" : -5,
+        "weaponRotation" : 15,
+		"weaponOffset" : [0.25, 0.25],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      },
+      "winddown" : {
+        "aimAngle" : 0,
+		
+        "duration" : 0.6,
+        "armRotation" : -5,
+        "weaponRotation" : 15,
+		"weaponOffset" : [0.25, 0.25],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
       }
     }
   },
