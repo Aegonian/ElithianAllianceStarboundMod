@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "dunestalk", "count" : 2 },
+    { "item" : "bolbohnjam", "count" : 1 },
+    { "item" : "sandcrawlermeat", "count" : 1 }
+  ],
+  "output" : { "item" : "crawlerdunebun", "count" : 1 },
+  "groups" : [ "craftingfood", "mains" ],
+  "collectables" : { "cooking" : "crawlerdunebun" }
+}

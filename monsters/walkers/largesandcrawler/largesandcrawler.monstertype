@@ -21,10 +21,10 @@
       "damageOnTouch" : true,
 
       "queryTargets" : true,
-      "targetQueryRange" : 12,
+      "targetQueryRange" : 20,
       "targetOnDamage" : true,
       "keepTargetInSight" : true,
-      "keepTargetInRange" : 20,
+      "keepTargetInRange" : 25,
       "targetOutOfSightTime" : 4.5,
 
       "foundTargetActions" : [
@@ -43,7 +43,7 @@
       "hostileActions" : [
         {
           "name" : "action-charge",
-          "cooldown" : 0.0,
+          "cooldown" : 0.25,
           "parameters" : {
             "maximumRange" : 10,
             "windupState" : "",

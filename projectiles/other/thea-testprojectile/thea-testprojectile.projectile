@@ -9,7 +9,7 @@
   "speed" : 90,
   "piercing" : true,
   "supportsProcessing" : true,
-  "statusEffects" : [ "ancientcurse" ],
+  "statusEffects" : [ "thea-setmonsterfriendly" ],
   "actionOnReap" : [
     {
       "action" : "config",
@@ -17,7 +17,5 @@
     }
   ],
   "lightColor" : [0, 0, 0],
-  "damageKind" : "plasma",
-  "damageType" : "ignoresDef",
-  "damageTeam" : { "type" : "indiscriminate" }
+  "damageKind" : "plasma"
 }

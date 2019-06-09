@@ -142,7 +142,7 @@
   },
   
   "altAbility" : {
-    "name" : "Combat Drone",
+    "name" : "Deploy Drone",
     "scripts" : ["/items/active/weapons/ranged/abilities/thea-dronerelease/thea-dronerelease.lua"],
     "class" : "TheaDroneRelease",
 	

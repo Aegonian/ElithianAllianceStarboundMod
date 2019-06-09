@@ -1,0 +1,16 @@
+{
+  "projectileName" : "thea-setmonsterfriendly",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "physics" : "laser",
+  "bounces" : 0,
+  "piercing" : false,
+  "animationCycle" : 1.0,
+  "frameNumber" : 1,
+  "statusEffects" : [
+    "thea-setmonsterfriendly"
+  ],
+  "timeToLive" : 0.1,
+  "power" : 0.0,
+  "damageKind" : "hidden",
+  "damageType" : "ignoresdef"
+}

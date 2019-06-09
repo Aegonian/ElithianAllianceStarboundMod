@@ -37,8 +37,8 @@
 	//AEGINIAN COLONY
 	//{ "op":"add", "path": "/planetTypes/garden/layers/surface/dungeons/-", "value": [ 0.5, "aegicolony" ] },
 	//{ "op":"replace", "path": "/planetTypes/garden/layers/surface/dungeonCountRange", "value": [4, 4] },
-	{ "op":"add", "path": "/planetTypes/forest/layers/surface/dungeons/-", "value": [ 500.0, "aegicolony" ] },
-	{ "op":"add", "path": "/planetTypes/jungle/layers/surface/dungeons/-", "value": [ 400.0, "aegicolony" ] },
+	{ "op":"add", "path": "/planetTypes/forest/layers/surface/dungeons/-", "value": [ 5.0, "aegicolony" ] },
+	{ "op":"add", "path": "/planetTypes/jungle/layers/surface/dungeons/-", "value": [ 4.0, "aegicolony" ] },
 	
 	//TRINKIAN COLONY
 	{ "op":"add", "path": "/planetTypes/forest/layers/surface/dungeons/-", "value": [ 4.0, "trinkcolony" ] },

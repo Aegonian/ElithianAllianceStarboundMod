@@ -1,0 +1,17 @@
+{
+  "name" : "thea-friendlymonsteraura",
+  "effectConfig" : {
+	"searchRadius" : 50,
+	"slaveProjectile" : "thea-setmonsterfriendly"
+  },
+  "defaultDuration" : 30.0,
+
+  "scripts" : [
+    "thea-friendlymonsteraura.lua"
+  ],
+
+  "animationConfig" : "thea-friendlymonsteraura.animation",
+
+  "label" : "Friendly Aura",
+  "icon" : "/interface/statuses/thea-friendlymonsteraura.png"
+}

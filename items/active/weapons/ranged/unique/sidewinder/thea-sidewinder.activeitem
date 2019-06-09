@@ -111,7 +111,8 @@
         "allowFlip" : true,
 
 		"frontArmFrameSequence" : [
-		  [0.0, "walk.2"],
+		  [0.0, "rotation"],
+		  [0.1, "walk.2"],
 		  [0.3, "run.3"],
 		  [0.55, "run.1"]
 		],

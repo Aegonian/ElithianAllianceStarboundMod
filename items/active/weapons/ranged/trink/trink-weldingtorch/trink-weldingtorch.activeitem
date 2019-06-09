@@ -5,7 +5,7 @@
   "rarity" : "Rare",
   "description" : "A welding torch of Trinkian design. It burns incredibly hot.",
   "shortdescription" : "Trinkian Welding Torch",
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-continuousgun",
   "category" : "Welding Torch",
   "itemTags" : ["weapon","ranged","trink","flamethrower"],
   "twoHanded" : true,
@@ -21,7 +21,7 @@
   "baseOffset" : [-0.6, 0.1],
   "muzzleOffset" : [0.0, 0.75],
 
-  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
 
   "elementalType" : "fire",
 
@@ -31,7 +31,7 @@
 	
     "baseDps" : 10,
     "energyUsage" : 30,
-    "fireTime" : 0.065,
+    "fireTime" : 0.025,
     "inaccuracy" : 0.05,
 
     "projectileCount" : 1,
@@ -60,7 +60,7 @@
         "allowFlip" : true
       },
       "cooldown" : {
-        "duration" : 0.05,
+        "duration" : 0.025,
         "armRotation" : 1,
         "weaponRotation" : 1,
         "twoHanded" : true,
@@ -72,7 +72,7 @@
   },
   "fireSounds" : [ "" ],
 
-  "builder" : "/items/buildscripts/buildweapon.lua",
+  "builder" : "/items/buildscripts/thea-buildrandomweapon.lua",
   "builderConfig" : [{
     "nameGenerator" : "trink-weldingtorchnames.config:nameGen",
     "animationParts" : {

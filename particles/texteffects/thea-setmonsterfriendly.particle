@@ -1,0 +1,23 @@
+{
+  "kind" : "thea-setmonsterfriendly",
+  "definition" : {
+    "type" : "text",
+    "text" : "^shadow;Befriended",
+    "color" : [255, 63, 229, 180],
+    "light" : [70, 16, 64],
+    "fullbright" : true,
+    "initialVelocity" : [0.0, 5.0],
+    "finalVelocity" : [0.0, -5],
+    "size" : 1,
+    "approach" : [3, 20],
+    "angularVelocity" : 20,
+    "timeToLive" : 0.7,
+    "layer" : "front",
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.5,
+    "variance" : {
+      "initialVelocity" : [2.0, 3.0]
+    },
+    "flippable" : false
+  }
+}

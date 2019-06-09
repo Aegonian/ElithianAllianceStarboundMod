@@ -1,19 +1,23 @@
 {
   "itemName" : "crawlerdunebun",
-  "rarity" : "Uncommon",
+  "rarity" : "Essential",
   "price" : 250,
   "category" : "preparedFood",
   "inventoryIcon" : "crawlerdunebun.png",
-  "description" : "A dunebun shaped like a Sandcrawler, stuffed with meat, bolbohn and a secret ingredient. A unique flavour.",
+  "description" : "A dunebun shaped like a Sandcrawler. It makes you smell like a Sandcrawler, too!",
   "shortdescription" : "Crawler Dunebun",
   "effects" : [ [
     {
         "effect" : "maxhealthscalingboostfood",
         "duration" : 210
+    },
+    {
+        "effect" : "thea-friendlysandcrawleraura",
+        "duration" : 60
     }
   ] ],
   "foodValue" : 80,
-  "tooltipKind" : "food",
+  "tooltipKind" : "thea-food-patreon",
   "builder" : "/items/buildscripts/buildfood.lua",
   "maxStack" : 1,
   "itemAgingScripts" : ["/scripts/items/rotting.lua"],

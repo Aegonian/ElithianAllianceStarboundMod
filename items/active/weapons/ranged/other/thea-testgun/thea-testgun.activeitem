@@ -52,7 +52,7 @@
     "projectileCount" : 1,
     "fireType" : "auto",
 
-    "projectileType" : "alliancelaserturret",
+    "projectileType" : "thea-testprojectile",
     "projectileParameters" : {},
 	
     "stances" : {

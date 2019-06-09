@@ -1,0 +1,22 @@
+{
+  "kind" : "thea-friendlyheart",
+  "definition" : {
+    "type" : "textured",
+    "image" : "/particles/statuseffect/thea-friendlyheart/thea-friendlyheart.png",
+    "light" : [50, 12, 45],
+	"initialVelocity" : [0, 1.0],
+    "finalVelocity" : [0, 8.0],
+	"approach" : [2, 4],
+    "layer" : "middle",
+	"fade" : 1,
+	"size" : 0.75,
+	"timeToLive" : 1.0,
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.5,
+    "fullbright" : false,
+    "variance" : {
+      "initialVelocity" : [1.0, 2.0],
+      "size" : 0.125
+    }
+  }
+}

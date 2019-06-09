@@ -1,0 +1,37 @@
+{
+  "particleEmitters" : {
+    "embers" : {
+      "enabled" : true,
+      "emissionRate" : 2.0,
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "ember",
+            "size" : 1.75,
+            "color" : [255, 63, 229, 127],
+			"light" : [50, 12, 45],
+            "destructionAction" : "shrink",
+            "destructionTime" : 0.75,
+            "position" : [0.0, 0.0],
+            "offsetRegion" : [0, 0, 0, 0],
+            "initialVelocity" : [0, 1],
+            "approach" : [0, 5],
+            "timeToLive" : 0.5,
+            "variance" : {
+			  "initialVelocity" : [2, 1],
+			  "size" : 0.25
+            }
+          }
+        },
+        { "particle" : "thea-friendlyheart"}
+      ]
+    }
+  },
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [50, 12, 45]
+    }
+  }
+}

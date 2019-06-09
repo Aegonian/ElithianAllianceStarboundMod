@@ -1,0 +1,82 @@
+{
+  "itemName" : "thea-rimtorch1",
+  "price" : 250,
+  "inventoryIcon" : "thea-rimtorch1.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A welding torch used for construction in the Rim.",
+  "manufacturer" : "^gray;The Rim^reset;",
+  "shortdescription" : "Rimrock Welder",
+  "level" : 6,
+  "fixedLevel" : false,
+  "tooltipKind" : "thea-continuousgun-mf",
+  "category" : "Welding Torch",
+  "itemTags" : ["weapon","ranged","flamethrower","alliance","rimdweller","allianceUpgradeable"],
+  "twoHanded" : false,
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "middle" : "thea-rimtorch1.png",
+    "muzzleFlash" : ""
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fireLoop" : [ "/sfx/projectiles/dragonprojectile_loop.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.375, 0.0],
+  "muzzleOffset" : [0.875, 0.375],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "fire",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-flamethrower/thea-flamethrower.lua"],
+    "class" : "TheaFlamethrowerAttack",
+	
+    "baseDps" : 7,
+    "energyUsage" : 24,
+    "fireTime" : 0.025,
+    "inaccuracy" : 0.05,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+	
+	"projectileType" : "trinkweldingflame",
+    "projectileParameters" : {},
+	"trackSourceEntity" : true,
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.025,
+        "armRotation" : 1,
+        "weaponRotation" : 1,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+}

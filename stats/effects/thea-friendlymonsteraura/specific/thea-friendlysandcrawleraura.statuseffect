@@ -1,0 +1,17 @@
+{
+  "name" : "thea-friendlysandcrawleraura",
+  "effectConfig" : {
+	"searchRadius" : 50,
+	"slaveProjectile" : "thea-setsandcrawlerfriendly"
+  },
+  "defaultDuration" : 30.0,
+
+  "scripts" : [
+    "/stats/effects/thea-friendlymonsteraura/thea-friendlymonsteraura.lua"
+  ],
+
+  "animationConfig" : "/stats/effects/thea-friendlymonsteraura/thea-friendlymonsteraura.animation",
+
+  "label" : "Sandcrawler Pheromones",
+  "icon" : "/interface/statuses/thea-friendlymonsteraura.png"
+}
