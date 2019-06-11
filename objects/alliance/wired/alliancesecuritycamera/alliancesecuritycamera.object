@@ -1,0 +1,159 @@
+{
+  "objectName" : "alliancesecuritycamera",
+  "colonyTags" : ["alliance","wire"],
+  "rarity" : "Rare",
+  "category" : "wire",
+  "printable" : false,
+  "price" : 75,
+  "description" : "A camera that sends out a signal when it detects nearby entities.",
+  "shortdescription" : "Alliance Security Camera",
+  "race" : "aegi",
+  
+  "health" : 4,
+
+  "apexDescription" : "A security camera. I hope the Miniknog isn't watching...",
+  "avianDescription" : "A camera. It'll send out a signal if it detects movement.",
+  "floranDescription" : "Camera followsss Floran. Floran isss freaked out!",
+  "glitchDescription" : "Insecure. I'm not sure who's watching through that camera.",
+  "humanDescription" : "It's a camera! It'll follow targets autonomously.",
+  "hylotlDescription" : "A camera. Who's watching?",
+  "novakidDescription" : "Security at its finest.",
+
+  "aegiDescription" : "This camera will send out a signal if it sees me. Better be careful.",
+  "avikanDescription" : "An alien-built camera. Are there aliens watching me?",
+  "erixianDescription" : "An automated camera system.",
+  "trinkDescription" : "An efficiently designed camera. It can detect movement and filter out useless targets.",
+  "hymidDescription" : "A vigilant camera.",
+  "notixDescription" : "I can hear the camera swiveling. It'll detect any movement nearby.",
+  "jorgasianDescription" : "An ever-vigilant security camera.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Detected camera system. Recommend caution.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    //GROUND POSITIONS
+	{
+      "dualImage" : "alliancesecuritycamerastand.png:bottom",
+
+      "imagePosition" : [-8, 0],
+      "imageLayers" : [ { "image" : "alliancesecuritycamerastand.png:bottom" }, { "image" : "alliancesecuritycamera.png:idle", "position": [-1, 5] } ],
+      "spaces" : [
+        [-1, 1], [0, 1],
+        [-1, 0], [0, 0]
+      ],
+      "anchors" : [ "bottom" ],
+
+      "animationParts" : {
+        "camera" : "alliancesecuritycamera.png",
+        "cameralights" : "alliancesecuritycameralights.png",
+        "stand" : "alliancesecuritycamerastand.png:bottom"
+      },
+      "animationPosition" : [0, 8],
+	  
+	  //SCRIPTED PARAMETERS
+	  "baseOffset" : [0, 1],
+	  "baseRotation" : 25,
+	  "idleRotation" : -25
+    },
+	
+	//CEILING POSITIONS
+    {
+      "dualImage" : "alliancesecuritycamerastand.png:top",
+
+      "imagePosition" : [-8, -8],
+      "imageLayers" : [ { "image" : "alliancesecuritycamerastand.png:top" }, { "image" : "alliancesecuritycamera.png:idle", "position": [-1, 5] } ],
+      "spaces" : [
+        [-1, 0], [0, 0],
+        [-1, -1], [0, -1]
+      ],
+      "anchors" : [ "top" ],
+
+      "animationParts" : {
+        "camera" : "alliancesecuritycamera.png",
+        "cameralights" : "alliancesecuritycameralights.png",
+        "stand" : "alliancesecuritycamerastand.png:top"
+      },
+      "animationPosition" : [0, 0],
+	  
+	  //SCRIPTED PARAMETERS
+	  "baseOffset" : [0, 0],
+	  "baseRotation" : -45,
+	  "idleRotation" : -80
+    },
+	
+	//LEFT WALL POSITION
+    {
+      "image" : "alliancesecuritycamerastand.png:left",
+
+      "imagePosition" : [0, 0],
+      "imageLayers" : [ { "image" : "alliancesecuritycamerastand.png:left" }, { "image" : "alliancesecuritycamera.png:idle", "position": [-1, 5] } ],
+      "spaces" : [
+        [0, 1], [1, 1],
+        [0, 0], [1, 0]
+      ],
+      "anchors" : [ "left" ],
+      "direction" : "right",
+
+      "animationParts" : {
+        "camera" : "alliancesecuritycamera.png",
+        "cameralights" : "alliancesecuritycameralights.png",
+        "stand" : "alliancesecuritycamerastand.png:left"
+      },
+      "animationPosition" : [8, 8],
+	  
+	  //SCRIPTED PARAMETERS
+	  "baseOffset" : [1, 1],
+	  "baseRotation" : -45,
+	  "idleRotation" : -80
+    },
+	
+	//RIGHT WALL POSITION
+    {
+      "image" : "alliancesecuritycamerastand.png:left",
+
+      "imagePosition" : [-8, 0],
+      "spaces" : [
+        [-1, 1], [0, 1],
+        [-1, 0], [0, 0]
+      ],
+      "anchors" : [ "right" ],
+      "direction" : "left",
+
+      "imageLayers" : [ { "image" : "alliancesecuritycamerastand.png:left" }, { "image" : "alliancesecuritycamera.png:idle", "position": [1, 5] } ],
+      "flipImages" : true,
+
+      "animationParts" : {
+        "camera" : "alliancesecuritycamera.png",
+        "cameralights" : "alliancesecuritycameralights.png",
+        "stand" : "alliancesecuritycamerastand.png:left"
+      },
+      "animationPosition" : [0, 8],
+	  
+	  //SCRIPTED PARAMETERS
+	  "baseOffset" : [0, 1],
+	  "baseRotation" : -45,
+	  "idleRotation" : -80
+    }
+  ],
+
+  "animation" : "alliancesecuritycamera.animation",
+
+  "scripts" : [
+    "/objects/scripts/thea-securitycamera.lua"
+  ],
+  "scriptDelta" : 1,
+  
+  //SCRIPTED PARAMETERS
+  //Rotation
+  "rotationSpeed" : 0.3,
+  "rotationAngle" : 45,
+  
+  //Target scanning
+  "scanRange" : 30,
+  "scanAngle" : 45,
+
+  "outputNodes" : [ [0, 0] ],
+  "inputNodes" : [ [0, 1] ]
+}

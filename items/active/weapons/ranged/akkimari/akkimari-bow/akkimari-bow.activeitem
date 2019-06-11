@@ -96,7 +96,7 @@
     }
   },
 
-  "altAbilityType" : "thea-arrowbarrage",
+  "altAbilityType" : "thea-quickdraw",
   "altAbility" : {
     "projectileType" : "akkimariarrow"
   },

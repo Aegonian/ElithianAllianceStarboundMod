@@ -14,6 +14,11 @@ function init()
   self.deactivated = false
   --self.queryDamageSince = 0
   
+  --Expire the effect if we were already invisible
+  if world.getProperty("entityinvisible" .. tostring(entity.id())) and not self.activated then
+	effect.expire()
+  end
+  
   --Optionally set status immunities to prevent multiple stealth effects from being active at the same time
   if config.getParameter("statusImmunities") then
 	effect.addStatModifierGroup(config.getParameter("statusImmunities"))
@@ -44,8 +49,8 @@ function update(dt)
 	end
   end
   
-  --Activate the invisibility effect if we haven't activated yet
-  if not self.activated then
+  --Activate the invisibility effect if we haven't activated yet, and nothing else had set a worldProperty for us to be invisible
+  if not self.activated and not world.getProperty("entityinvisible" .. tostring(entity.id())) then
 	activate()
   --If activated and not yet deactivated, keep refreshing the invisibility property in case it gets accidentally removed 
   elseif not self.deactivated then

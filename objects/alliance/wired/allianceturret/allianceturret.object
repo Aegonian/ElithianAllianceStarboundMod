@@ -14,7 +14,7 @@
   "description" : "A turret that will automatically defend areas. Can only be placed once.",
   "shortdescription" : "Alliance Defense Turret",
   "subtitle" : "Automatic Base Defense",
-  "race" : "avikan",
+  "race" : "aegi",
   "category" : "wire",
 
   "breakDropOptions" : [

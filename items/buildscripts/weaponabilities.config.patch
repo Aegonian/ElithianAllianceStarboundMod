@@ -9,6 +9,11 @@
   },
   {
 	"op": "add",
+	"path": "/thea-quickdraw",
+	"value": "/items/active/weapons/ranged/abilities/bow/thea-quickdraw.weaponability"
+  },
+  {
+	"op": "add",
 	"path": "/jumpflare",
 	"value": "/items/active/weapons/ranged/abilities/jumpflare/jumpflare.weaponability"
   },

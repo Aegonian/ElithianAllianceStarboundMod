@@ -16,6 +16,9 @@
   "defaultBlueprints" : {
     "tier1" : [
 
+//NEW in v2.3.10
+	  { "item" : "alliancesecuritycamera" },
+
 //NEW in v2.3.8
 	  { "item" : "alliancebackgrounddoor-wired" },
 	  { "item" : "alliancebackgrounddoor2-wired" },

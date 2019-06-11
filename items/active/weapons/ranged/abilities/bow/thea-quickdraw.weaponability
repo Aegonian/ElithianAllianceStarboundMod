@@ -1,0 +1,63 @@
+{
+  "animationCustom" : {
+    "sounds" : {
+      "drawBarrage" : [ "/sfx/gun/bow/thea_bow_draw1.ogg" ]
+    }
+  },
+  
+  "ability" : {
+    "name" : "Quick Draw",
+    "type" : "thea-quickdraw",
+    "scripts" : ["/items/active/weapons/ranged/abilities/bow/thea-quickdraw.lua"],
+    "class" : "TheaQuickDraw",
+
+    "fireOffset" : [0.75, 0],
+
+	"drawTime" : 0.4,		//Time to fully draw the bow
+    "energyPerShot" : 25,	//Total energy consumption for a full draw
+	
+    "cooldownTime" : 0.15,	//Time between firing and drawing the next arrow
+    "inaccuracy" : 0.03,	//Inaccuracy of the shot
+	
+	"walkWhileFiring" : false,		//If true, prevents the player from running while drawing the bow
+	"useQuiverDamageBonus" : true,	//If true, allows this bow to use quiver damage bonuses
+	
+	"staticDamageMultiplier" : null,	//If this value is set, arrow damage is independent of draw time and is instead multiplied by this value
+	"dynamicDamageMultiplier" : 1.0,	//All damage is multiplied by this value. Useful for modifying damage using alt ability special arrows
+
+    "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
+
+    "projectileType" : "alliancearrow",
+    "projectileParameters" : {
+      "speed" : 60,
+      "power" : 4.0
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : -30,
+        "weaponRotation" : 0,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "draw" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "fire" : {
+        "duration" : 0.15,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true,
+
+        "frontArmFrame" : "idle.3"
+      }
+    }
+  }
+}

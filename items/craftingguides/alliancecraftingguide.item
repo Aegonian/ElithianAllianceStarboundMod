@@ -8,6 +8,9 @@
   "category" : "Crafting Guide",
   "learnBlueprintsOnPickup" : [
 	
+//New in v2.3.10
+	  "alliancesecuritycamera",
+	
 //New in v2.3.8
 	  "alliancebackgrounddoor-wired",
 	  "alliancebackgrounddoor2-wired",

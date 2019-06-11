@@ -1,0 +1,21 @@
+{
+  "name" : "thea-stealthtech",
+  "type" : "body",
+
+  "scripts" : ["thea-stealthtech.lua"],
+  "animator" : "thea-stealthtech.animation",
+
+  "description" : "Double tap ^green;[W] ^white;to vanish from sight! Cooldown: 5.0s",
+  "shortDescription" : "Vanish",
+  "rarity" : "Uncommon",
+  "icon" : "/tech/thea-stealthtech.png",
+
+  "chipCost" : 8,
+
+  "maximumDoubleTapTime" : 0.25,			//Maximum time in between button presses to activate double tap
+  "directive" : "?multiply=ffffff15",		//Parent directive while invisible
+  "blinkDirective" : "?multiply=ffffff55",	//Parent directive while blinking
+  "maxDuration" : 8,						//Maximum duration of the stealth effect
+  "blinkDuration" : 2,						//If duration left hits this amount, the player will start blinking
+  "cooldownTime" : 5						//Time between uses
+}
