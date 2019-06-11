@@ -1,13 +1,13 @@
 {
-  "objectName" : "alliancesecuritycamera",
-  "colonyTags" : ["alliance","wire"],
+  "objectName" : "akkimarisecuritycamera",
+  "colonyTags" : ["akkimari","wire"],
   "rarity" : "Rare",
   "category" : "wire",
   "printable" : false,
   "price" : 75,
   "description" : "A camera that sends out a signal when it detects nearby entities.",
-  "shortdescription" : "Alliance Security Camera",
-  "race" : "aegi",
+  "shortdescription" : "Akris Security Camera",
+  "race" : "akkimari",
   
   "health" : 4,
 
@@ -36,10 +36,10 @@
   "orientations" : [
     //GROUND POSITIONS
 	{
-      "dualImage" : "alliancesecuritycamerastand.png:bottom",
+      "dualImage" : "akkimarisecuritycamerastand.png:bottom",
 
       "imagePosition" : [-8, 0],
-      "imageLayers" : [ { "image" : "alliancesecuritycamerastand.png:bottom" }, { "image" : "alliancesecuritycamera.png:idle", "position": [-1, 5] } ],
+      "imageLayers" : [ { "image" : "akkimarisecuritycamerastand.png:bottom" }, { "image" : "akkimarisecuritycamera.png:idle", "position": [-1, 5] } ],
       "spaces" : [
         [-1, 1], [0, 1],
         [-1, 0], [0, 0]
@@ -47,9 +47,9 @@
       "anchors" : [ "bottom" ],
 
       "animationParts" : {
-        "camera" : "alliancesecuritycamera.png",
-        "cameralights" : "alliancesecuritycameralights.png",
-        "stand" : "alliancesecuritycamerastand.png:bottom"
+        "camera" : "akkimarisecuritycamera.png",
+        "cameralights" : "akkimarisecuritycameralights.png",
+        "stand" : "akkimarisecuritycamerastand.png:bottom"
       },
       "animationPosition" : [0, 8],
 	  
@@ -61,10 +61,10 @@
 	
 	//CEILING POSITIONS
     {
-      "dualImage" : "alliancesecuritycamerastand.png:top",
+      "dualImage" : "akkimarisecuritycamerastand.png:top",
 
       "imagePosition" : [-8, -8],
-      "imageLayers" : [ { "image" : "alliancesecuritycamerastand.png:top" }, { "image" : "alliancesecuritycamera.png:idle", "position": [-1, 5] } ],
+      "imageLayers" : [ { "image" : "akkimarisecuritycamerastand.png:top" }, { "image" : "akkimarisecuritycamera.png:idle", "position": [-1, 5] } ],
       "spaces" : [
         [-1, 0], [0, 0],
         [-1, -1], [0, -1]
@@ -72,9 +72,9 @@
       "anchors" : [ "top" ],
 
       "animationParts" : {
-        "camera" : "alliancesecuritycamera.png",
-        "cameralights" : "alliancesecuritycameralights.png",
-        "stand" : "alliancesecuritycamerastand.png:top"
+        "camera" : "akkimarisecuritycamera.png",
+        "cameralights" : "akkimarisecuritycameralights.png",
+        "stand" : "akkimarisecuritycamerastand.png:top"
       },
       "animationPosition" : [0, 0],
 	  
@@ -86,10 +86,10 @@
 	
 	//LEFT WALL POSITION
     {
-      "image" : "alliancesecuritycamerastand.png:left",
+      "image" : "akkimarisecuritycamerastand.png:left",
 
       "imagePosition" : [0, 0],
-      "imageLayers" : [ { "image" : "alliancesecuritycamerastand.png:left" }, { "image" : "alliancesecuritycamera.png:idle", "position": [-1, 5] } ],
+      "imageLayers" : [ { "image" : "akkimarisecuritycamerastand.png:left" }, { "image" : "akkimarisecuritycamera.png:idle", "position": [-1, 5] } ],
       "spaces" : [
         [0, 1], [1, 1],
         [0, 0], [1, 0]
@@ -98,9 +98,9 @@
       "direction" : "right",
 
       "animationParts" : {
-        "camera" : "alliancesecuritycamera.png",
-        "cameralights" : "alliancesecuritycameralights.png",
-        "stand" : "alliancesecuritycamerastand.png:left"
+        "camera" : "akkimarisecuritycamera.png",
+        "cameralights" : "akkimarisecuritycameralights.png",
+        "stand" : "akkimarisecuritycamerastand.png:left"
       },
       "animationPosition" : [8, 8],
 	  
@@ -112,7 +112,7 @@
 	
 	//RIGHT WALL POSITION
     {
-      "image" : "alliancesecuritycamerastand.png:left",
+      "image" : "akkimarisecuritycamerastand.png:left",
 
       "imagePosition" : [-8, 0],
       "spaces" : [
@@ -122,13 +122,13 @@
       "anchors" : [ "right" ],
       "direction" : "left",
 
-      "imageLayers" : [ { "image" : "alliancesecuritycamerastand.png:left" }, { "image" : "alliancesecuritycamera.png:idle", "position": [1, 5] } ],
+      "imageLayers" : [ { "image" : "akkimarisecuritycamerastand.png:left" }, { "image" : "akkimarisecuritycamera.png:idle", "position": [1, 5] } ],
       "flipImages" : true,
 
       "animationParts" : {
-        "camera" : "alliancesecuritycamera.png",
-        "cameralights" : "alliancesecuritycameralights.png",
-        "stand" : "alliancesecuritycamerastand.png:left"
+        "camera" : "akkimarisecuritycamera.png",
+        "cameralights" : "akkimarisecuritycameralights.png",
+        "stand" : "akkimarisecuritycamerastand.png:left"
       },
       "animationPosition" : [0, 8],
 	  
@@ -139,7 +139,7 @@
     }
   ],
 
-  "animation" : "alliancesecuritycamera.animation",
+  "animation" : "akkimarisecuritycamera.animation",
 
   "scripts" : [
     "/objects/scripts/thea-securitycamera.lua"

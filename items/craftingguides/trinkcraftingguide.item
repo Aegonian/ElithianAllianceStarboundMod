@@ -8,6 +8,9 @@
   "category" : "Crafting Guide",
   "learnBlueprintsOnPickup" : [
 	
+//New in v2.3.10
+	  "trinksecuritycamera",
+	
 //New in v2.3.8
 	  "creonembassyteleporter-trink",
 	

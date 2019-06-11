@@ -1,0 +1,108 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "camera" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {},
+          "scan" : {
+            "frames" : 3,
+            "cycle" : 0.5,
+            "mode" : "loop",
+			"properties" : {
+              "persistentSound" : "/sfx/objects/camera_pan_loop.ogg"
+            }
+          },
+          "foundTarget" : {
+            "frames" : 3,
+            "cycle" : 0.5,
+            "mode" : "loop",
+			"properties" : {
+              "persistentSound" : "/sfx/objects/camera_pan_loop.ogg"
+            }
+          }
+        }
+      }
+    },
+	
+    "parts" : {
+      //CAMERA PARTS
+	  "camera" : {
+        "properties" : {
+          "offset" : [0.0, 0.0],
+          "transformationGroups" : [ "camera" ],
+          "centered" : true,
+          "zLevel" : 1
+        },
+        "partStates" : {
+          "camera" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle"
+              }
+            },
+            "scan" : {
+              "properties" : {
+                "image" : "<partImage>:scan.<frame>"
+              }
+            },
+            "foundTarget" : {
+              "properties" : {
+                "image" : "<partImage>:foundTarget.<frame>"
+              }
+            }
+          }
+        }
+      },
+	  "cameralights" : {
+        "properties" : {
+          "offset" : [0.0, 0.0],
+          "transformationGroups" : [ "camera" ],
+          "centered" : true,
+		  "fullbright" : true,
+          "zLevel" : 2
+        },
+        "partStates" : {
+          "camera" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle"
+              }
+            },
+            "scan" : {
+              "properties" : {
+                "image" : "<partImage>:scan.<frame>"
+              }
+            },
+            "foundTarget" : {
+              "properties" : {
+                "image" : "<partImage>:foundTarget.<frame>"
+              }
+            }
+          }
+        }
+      },
+
+	  //STAND PARTS
+      "stand" : {
+        "properties" : {
+          "offset" : [0, 0],
+          "image" : "<partImage>",
+          "centered" : true,
+          "zLevel" : 0
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "camera" : {
+      "interpolated" : true
+    }
+  },
+
+  "sounds" : {
+	"foundTarget" : [ "/sfx/objects/camera_alert_on.ogg" ],
+	"lostTarget" : [ ]
+  }
+}

@@ -17,6 +17,9 @@
   "defaultBlueprints" : {
     "tier1" : [
 
+//NEW in v2.3.10
+	  { "item" : "avikansecuritycamera" },
+
 //NEW in v2.3.9
 	  { "item" : "avikanemptyglass" },
 

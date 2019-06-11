@@ -1,0 +1,10 @@
+{
+  "frameGrid" : {
+    "size" : [18, 6],
+    "dimensions" : [7, 1],
+
+    "names" : [
+      [ "idle", "scan.1", "scan.2", "scan.3", "foundTarget.1", "foundTarget.2", "foundTarget.3" ]
+    ]
+  }
+}
