@@ -1,0 +1,70 @@
+{
+  "objectName" : "akkimarislidinghatch",
+  "colonyTags" : ["akkimari", "door"],
+  "rarity" : "Common",
+  "category" : "door",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A hatch that slides in and out of the background.",
+  "shortdescription" : "Akris Sliding Hatch",
+  "race" : "akkimari",
+  
+  "health" : 8,
+
+  "apexDescription" : "A crude sliding hatch.",
+  "avianDescription" : "This hatch can slide into the wall.",
+  "floranDescription" : "Ssslides into the wall, Floran sssaw it.",
+  "glitchDescription" : "Cautious. This hatch can slide into the wall, making the platform disappear.",
+  "humanDescription" : "A sliding hatch.",
+  "hylotlDescription" : "This hatch can slide back into the wall.",
+  "novakidDescription" : "This'll slide into the wall if I ain't careful.",
+
+  "aegiDescription" : "A sliding hatch. It makes for a good retractable platform.",
+  "avikanDescription" : "This hatch can slide away. It's an odd kind of door.",
+  "erixianDescription" : "A simple sliding hatch.",
+  "trinkDescription" : "This hatch slides surprisingly smoothly.",
+  "hymidDescription" : "It's a hatch that can slide into the wall.",
+  "notixDescription" : "This hatch makes a pleasant sound when it slides away.",
+  "jorgasianDescription" : "It looks quite scrappy, but it's actually very sturdily built.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected hatch. Slides into back wall.",
+  "akkimariDescription" : "Akki careful. Hatch can slide away.",
+
+  "inventoryIcon" : "akkimarislidinghatchicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "akkimarislidinghatch.png:default",
+      "imagePosition" : [-24, 0],
+      "renderLayer" : "Object+5",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/door/door.lua" ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/door/door.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_open.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_close.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "akkimarislidinghatch.png"
+  },
+  "animationPosition" : [-24, 0],
+
+  "inputNodes" : [ [-3, 0] ],
+  "outputNodes" : [ [2, 0] ]
+}

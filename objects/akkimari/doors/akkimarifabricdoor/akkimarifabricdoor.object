@@ -1,0 +1,68 @@
+{
+  "objectName" : "akkimarifabricdoor",
+  "colonyTags" : ["akkimari", "door"],
+  "rarity" : "Common",
+  "category" : "door",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A simple leather tent door.",
+  "shortdescription" : "Akris Fabric Door",
+  "race" : "akkimari",
+
+  "apexDescription" : "A simple sheet of fabric. Not much of a door.",
+  "avianDescription" : "Just a fabric sheet door.",
+  "floranDescription" : "Floran like how fabric feelsss.",
+  "glitchDescription" : "Unimpressed. It's just a sheet of fabric used as a door.",
+  "humanDescription" : "A plain fabric door curtain.",
+  "hylotlDescription" : "A simple but elegant door.",
+  "novakidDescription" : "Just a sheet o' fabric.",
+
+  "aegiDescription" : "A simplistic portière.",
+  "avikanDescription" : "This reminds me of the tents back on Kadavan...",
+  "erixianDescription" : "It's just a door curtain.",
+  "trinkDescription" : "A portière. Simple and efficient.",
+  "hymidDescription" : "A simple portière.",
+  "notixDescription" : "A curtain used in place of an actual door.",
+  "jorgasianDescription" : "A simplistic portière.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "It's a simple curtain.",
+  "drodenDescription" : "Detected door. Resemblance to Avikan tent doors noted.",
+  "akkimariDescription" : "Curtain-simple makes for door-easy.",
+
+  "inventoryIcon" : "akkimarifabricdooricon.png",
+  "orientations" : [
+    {
+      "dualImage" : "akkimarifabricdoor.png:default",
+      "imagePosition" : [0, 0],
+      "renderLayer" : "Object+5",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom", "background" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/door/door.lua" ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/door/door.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/bed_leave.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/objects/bed_enter.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "akkimarifabricdoor.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "inputNodes" : [ [0, 4] ],
+  "outputNodes" : [ [0, 0] ]
+}

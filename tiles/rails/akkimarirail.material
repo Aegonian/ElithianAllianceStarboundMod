@@ -4,7 +4,7 @@
   "collisionKind" : "none",
   "foregroundOnly" : true,
   "itemDrop" : "akkimarirail",
-  "shortdescription" : "Akkimari Rail",
+  "shortdescription" : "Akris Rail",
   "description" : "A rail made of assorted scrap metal.",
   "footstepSound" : "/sfx/blocks/footstep_girder.ogg",
   "category": "supports",

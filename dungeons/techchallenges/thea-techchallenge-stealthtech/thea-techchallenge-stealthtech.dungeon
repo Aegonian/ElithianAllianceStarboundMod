@@ -1,0 +1,23 @@
+{
+  "metadata" : {
+    "name" : "thea-techchallenge-stealthtech",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "thea-techchallenge-stealthtech" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : true
+  },
+
+  "parts" : [
+    {
+      "name" : "thea-techchallenge-stealthtech",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "thea-techchallenge-stealthtech.json" ]
+    }
+  ]
+}

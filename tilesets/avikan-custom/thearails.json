@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":4,
+ "tilecount":5,
  "tileheight":8,
  "tileproperties":
     {
@@ -28,6 +28,11 @@
         {
          "\/\/shortdescription":"Trinkian Rail",
          "material":"trinkrail"
+        },
+     "4":
+        {
+         "\/\/shortdescription":"Akris Rail",
+         "material":"akkimarirail"
         }
     },
  "tiles":
@@ -47,6 +52,10 @@
      "3":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/rails\/trinkrail.png"
+        },
+     "4":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/rails\/akkimarirail.png"
         }
     },
  "tilewidth":8

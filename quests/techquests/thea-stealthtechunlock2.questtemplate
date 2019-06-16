@@ -1,0 +1,44 @@
+{
+  "id" : "thea-stealthtechunlock2",
+  "prerequisites" : [ "thea-stealthtechunlock1" ],
+  "title" : "^orange;Chacharra's Stealth Tech II",
+  "text" : "Before you get tech, Chacharra make sure you know how tech works. ^green;Go to ^orange;testing course ^green;Chacharra made^reset;, then ^orange;Stealth Tech ^reset;yours forever!",
+  "completionText" : "Chacharra impressed, you skilled! You keep ^orange;Stealth Tech^reset;, use to sneak past many enemies...",
+  "moneyRange" : [100, 100],
+  "rewards" : [],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/instance.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "questStarted" : "questGiver",
+      "questComplete" : "questReceiver"
+    },
+
+    "descriptions" : {
+      "enterInstance" : "Talk to ^orange;Chacharra^reset; to enter the ^orange;testing course^reset;",
+      "findGoal" : "Complete the ^orange;Stealth Tech testing course^reset;",
+      "turnIn" : "Return to ^orange;Chacharra ^reset;in the ^orange;Creon Embassy^reset;"
+    },
+
+    "warpEntityUid" : "eo-akkimarivisitor",
+    "warpAction" : "instanceworld:thea-techchallenge-stealthtech",
+    "warpDialog" : "/interface/confirmation/teleportconfirmation.config:thea-techchallenge-stealthtech",
+
+    "goalTrigger" : "proximity",
+    "proximityRange" : 10,
+    "goalEntityUid" : "thea-stealthchallengeteleporter",
+    "indicateGoal" : false,
+    "trackGoalEntity" : false,
+
+    "turnInEntityUid" : "eo-akkimarivisitor",
+
+    // Completion actions
+    "showTech" : [
+      "thea-stealthtech"
+    ],
+    "equipTech" : [
+      "thea-stealthtech"
+    ]
+  }
+}

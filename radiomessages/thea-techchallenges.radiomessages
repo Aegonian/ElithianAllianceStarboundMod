@@ -1,0 +1,25 @@
+{  
+  //=======================================================================
+  // TECH CHALLENGE - STEALTH TECH
+  //=======================================================================
+  "thea-stealthtech1" : {
+    "type" : "mission",
+    "text" : "If the camera spots you, the door will close. ^green;Double tap [W] to activate ^orange;stealth ^reset;and keep out of sight.",
+    "persistTime" : 4.0
+  },
+  "thea-stealthtech2" : {
+    "type" : "mission",
+    "text" : "The floor will fall away if you are spotted. Stay out of sight!",
+    "persistTime" : 4.0
+  },
+  "thea-stealthtech3" : {
+    "type" : "mission",
+    "text" : "Stealth will not last forever. Be quick, or you won't reach the end in time!",
+    "persistTime" : 4.0
+  },
+  "thea-stealthtech4" : {
+    "type" : "mission",
+    "text" : "You have completed the test course. Well done!",
+    "persistTime" : 4.0
+  }
+}

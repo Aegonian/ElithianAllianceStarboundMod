@@ -1,5 +1,5 @@
 {
-  "objectName" : "creonembassyteleporter",
+  "objectName" : "creonembassyteleporter-akkimari",
   "colonyTags" : ["alliance"],
   "objectType" : "teleporter",
   "rarity" : "Legendary",
@@ -83,10 +83,10 @@
   "interactAction" : "OpenTeleportDialog",
   "interactData" : "/interface/warping/allianceoutpostwarp.config",
 
-  "inventoryIcon" : "creonembassyteleportericon.png",
+  "inventoryIcon" : "creonembassyteleporter-akkimariicon.png",
   "orientations" : [
     {
-      "imageLayers" : [ { "image" : "creonembassyteleporter.png:<color>", "fullbright" : true }, { "image" : "creonembassyteleporterlit.png:<color>" } ],
+      "imageLayers" : [ { "image" : "creonembassyteleporter-akkimari.png:<color>", "fullbright" : true }, { "image" : "creonembassyteleporter-akkimarilit.png:<color>" } ],
 
       "imagePosition" : [-24, 0],
       "frames" : 1,

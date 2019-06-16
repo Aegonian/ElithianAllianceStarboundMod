@@ -5,14 +5,14 @@
 
     },
  "spacing":0,
- "tilecount":12,
- "tileheight":88,
+ "tilecount":55,
+ "tileheight":96,
  "tileproperties":
     {
      "0":
         {
          "\/\/shortdescription":"Akris Antenna",
-         "imagePositionX":"-8",
+         "imagePositionX":"-24",
          "imagePositionY":"0",
          "object":"akkimariantenna",
          "tilesetDirection":"right"
@@ -37,17 +37,161 @@
         {
          "\/\/shortdescription":"Akris Side Plate",
          "imagePositionX":"-8",
-         "imagePositionY":"0",
+         "imagePositionY":"-48",
          "object":"akkimarisideplatinginverted",
          "tilesetDirection":"left"
+        },
+     "12":
+        {
+         "\/\/shortdescription":"Akris Bottom Plate",
+         "imagePositionX":"0",
+         "imagePositionY":"-8",
+         "object":"akkimaribottomplating",
+         "tilesetDirection":"left"
+        },
+     "13":
+        {
+         "\/\/shortdescription":"Akris Bottom Plate",
+         "imagePositionX":"-48",
+         "imagePositionY":"-8",
+         "object":"akkimaribottomplating",
+         "tilesetDirection":"right"
+        },
+     "14":
+        {
+         "\/\/shortdescription":"Akris Top Plate",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"akkimaritopplating",
+         "tilesetDirection":"left"
+        },
+     "15":
+        {
+         "\/\/shortdescription":"Akris Top Plate",
+         "imagePositionX":"-48",
+         "imagePositionY":"0",
+         "object":"akkimaritopplating",
+         "tilesetDirection":"right"
+        },
+     "16":
+        {
+         "\/\/shortdescription":"Akris Banner",
+         "imagePositionX":"-8",
+         "imagePositionY":"-64",
+         "object":"akkimaribanner2",
+         "tilesetDirection":"right"
+        },
+     "17":
+        {
+         "\/\/shortdescription":"Akris Bounty Nanoprojector",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"akkimaribountyhologram",
+         "tilesetDirection":"right"
+        },
+     "18":
+        {
+         "\/\/shortdescription":"Akris Hanging Storage",
+         "imagePositionX":"-24",
+         "imagePositionY":"-16",
+         "object":"akkimarihangingstorage",
+         "tilesetDirection":"right"
+        },
+     "19":
+        {
+         "\/\/shortdescription":"Mounted Akkimari Skeleton",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"akkimarimountedskeleton",
+         "tilesetDirection":"right"
         },
      "2":
         {
          "\/\/shortdescription":"Akris Antenna",
-         "imagePositionX":"-24",
+         "imagePositionX":"-8",
          "imagePositionY":"0",
          "object":"akkimariantenna",
          "tilesetDirection":"left"
+        },
+     "20":
+        {
+         "\/\/shortdescription":"Mounted Akkimari Skull",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"akkimarimountedskull",
+         "tilesetDirection":"right"
+        },
+     "21":
+        {
+         "\/\/shortdescription":"Akkimari Skull",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"akkimariskull",
+         "tilesetDirection":"right"
+        },
+     "22":
+        {
+         "\/\/shortdescription":"Akkimari Skulls",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"akkimariskulls",
+         "tilesetDirection":"right"
+        },
+     "23":
+        {
+         "\/\/shortdescription":"Akris Vent",
+         "imagePositionX":"-8",
+         "imagePositionY":"-8",
+         "object":"akkimarivent",
+         "tilesetDirection":"right"
+        },
+     "24":
+        {
+         "\/\/shortdescription":"Akris Silken Sheets",
+         "imagePositionX":"-72",
+         "imagePositionY":"0",
+         "object":"akkimarisheet",
+         "tilesetDirection":"right"
+        },
+     "25":
+        {
+         "\/\/shortdescription":"Akris Silken Sheets",
+         "imagePositionX":"-48",
+         "imagePositionY":"0",
+         "object":"akkimarisheet",
+         "tilesetDirection":"left"
+        },
+     "26":
+        {
+         "\/\/shortdescription":"Akris Fabric Door",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"akkimarifabricdoor",
+         "tilesetDirection":"right"
+        },
+     "27":
+        {
+         "\/\/shortdescription":"Akris Fabric Door",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"akkimarifabricdoor2",
+         "tilesetDirection":"right"
+        },
+     "28":
+        {
+         "\/\/shortdescription":"Akris Reinforced Door",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"akkimarispacedoor",
+         "tilesetDirection":"right"
+        },
+     "29":
+        {
+         "\/\/shortdescription":"Akris Bed",
+         "imagePositionX":"-24",
+         "imagePositionY":"0",
+         "object":"akkimaribed",
+         "tilesetDirection":"right"
         },
      "3":
         {
@@ -55,6 +199,86 @@
          "imagePositionX":"0",
          "imagePositionY":"0",
          "object":"akkimariblastdoor",
+         "tilesetDirection":"right"
+        },
+     "30":
+        {
+         "\/\/shortdescription":"Akris Bench",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"akkimaribench",
+         "tilesetDirection":"right"
+        },
+     "31":
+        {
+         "\/\/shortdescription":"Akris Chair",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"akkimarichair",
+         "tilesetDirection":"right"
+        },
+     "32":
+        {
+         "\/\/shortdescription":"Akris Hammock",
+         "imagePositionX":"-24",
+         "imagePositionY":"-24",
+         "object":"akkimarihammock",
+         "tilesetDirection":"right"
+        },
+     "33":
+        {
+         "\/\/shortdescription":"Akris Hammock",
+         "imagePositionX":"-24",
+         "imagePositionY":"-24",
+         "object":"akkimarihammock2",
+         "tilesetDirection":"right"
+        },
+     "34":
+        {
+         "\/\/shortdescription":"Akris Pirate Captain Chair",
+         "imagePositionX":"-16",
+         "imagePositionY":"-40",
+         "object":"akkimaripiratecaptainchair",
+         "tilesetDirection":"right"
+        },
+     "35":
+        {
+         "\/\/shortdescription":"Akris Scrap Bed",
+         "imagePositionX":"-24",
+         "imagePositionY":"0",
+         "object":"akkimariscrapbed",
+         "tilesetDirection":"right"
+        },
+     "36":
+        {
+         "\/\/shortdescription":"Akris Scrap Table",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"akkimariscraptable",
+         "tilesetDirection":"right"
+        },
+     "37":
+        {
+         "\/\/shortdescription":"Akris Table",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"akkimaritable",
+         "tilesetDirection":"right"
+        },
+     "38":
+        {
+         "\/\/shortdescription":"Akris Chalice",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"akkimarichalice",
+         "tilesetDirection":"right"
+        },
+     "39":
+        {
+         "\/\/shortdescription":"Akris Goblet",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"akkimarigoblet",
          "tilesetDirection":"right"
         },
      "4":
@@ -65,6 +289,86 @@
          "object":"akkimariflighthatch",
          "tilesetDirection":"right"
         },
+     "40":
+        {
+         "\/\/shortdescription":"Akris Goblet",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"akkimarigoblet2",
+         "tilesetDirection":"right"
+        },
+     "41":
+        {
+         "\/\/shortdescription":"Akris Pot",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"akkimaripot",
+         "tilesetDirection":"right"
+        },
+     "42":
+        {
+         "\/\/shortdescription":"Small Akris Pot",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"akkimaripotsmall",
+         "tilesetDirection":"right"
+        },
+     "43":
+        {
+         "\/\/shortdescription":"Tall Akris Pot",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"akkimaripottall",
+         "tilesetDirection":"right"
+        },
+     "44":
+        {
+         "\/\/shortdescription":"Akris Wall Button",
+         "imagePositionX":"-8",
+         "imagePositionY":"-8",
+         "object":"akkimaributton",
+         "tilesetDirection":"right"
+        },
+     "45":
+        {
+         "\/\/shortdescription":"Small Akris Button",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"akkimarismallbutton",
+         "tilesetDirection":"right"
+        },
+     "46":
+        {
+         "\/\/shortdescription":"Akris Security Camera",
+         "imagePositionX":"-8",
+         "imagePositionY":"-8",
+         "object":"akkimarisecuritycamera",
+         "tilesetDirection":"left"
+        },
+     "47":
+        {
+         "\/\/shortdescription":"Akris Security Camera",
+         "imagePositionX":"-8",
+         "imagePositionY":"-8",
+         "object":"akkimarisecuritycamera",
+         "tilesetDirection":"right"
+        },
+     "48":
+        {
+         "\/\/shortdescription":"Akris Security Camera",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"akkimarisecuritycamera",
+         "tilesetDirection":"left"
+        },
+     "49":
+        {
+         "\/\/shortdescription":"Akris Security Camera",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"akkimarisecuritycamera",
+         "tilesetDirection":"right"
+        },
      "5":
         {
          "\/\/shortdescription":"Akris Side Plate",
@@ -72,6 +376,46 @@
          "imagePositionY":"0",
          "object":"akkimarisideplating",
          "tilesetDirection":"left"
+        },
+     "50":
+        {
+         "\/\/shortdescription":"Akris Security Camera",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"akkimarisecuritycamera",
+         "tilesetDirection":"right"
+        },
+     "51":
+        {
+         "\/\/shortdescription":"Akris Security Camera",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"akkimarisecuritycamera",
+         "tilesetDirection":"left"
+        },
+     "52":
+        {
+         "\/\/shortdescription":"Akris Sliding Hatch",
+         "imagePositionX":"-24",
+         "imagePositionY":"0",
+         "object":"akkimarislidinghatch",
+         "tilesetDirection":"right"
+        },
+     "53":
+        {
+         "\/\/shortdescription":"Small Akris Teleporter",
+         "imagePositionX":"-24",
+         "imagePositionY":"0",
+         "object":"akkimarilowteleporter",
+         "tilesetDirection":"right"
+        },
+     "54":
+        {
+         "\/\/shortdescription":"Creon Embassy Teleporter",
+         "imagePositionX":"-24",
+         "imagePositionY":"0",
+         "object":"creonembassyteleporter-akkimari",
+         "tilesetDirection":"right"
         },
      "6":
         {
@@ -124,21 +468,193 @@
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarisideplatinginverted.png"
         },
+     "12":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimaribottomplating.png"
+        },
+     "13":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimaribottomplating-flipped.png"
+        },
+     "14":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimaritopplating.png"
+        },
+     "15":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimaritopplating-flipped.png"
+        },
+     "16":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimaribanner2.png"
+        },
+     "17":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimaribountyhologram.png"
+        },
+     "18":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarihangingstorage.png"
+        },
+     "19":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarimountedskeleton.png"
+        },
      "2":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimariantenna-flipped.png"
+        },
+     "20":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarimountedskull.png"
+        },
+     "21":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimariskull.png"
+        },
+     "22":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimariskulls.png"
+        },
+     "23":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarivent.png"
+        },
+     "24":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarisheet.png"
+        },
+     "25":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarisheet-flipped.png"
+        },
+     "26":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarifabricdoor.png"
+        },
+     "27":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarifabricdoor2.png"
+        },
+     "28":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarispacedoor.png"
+        },
+     "29":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimaribed.png"
         },
      "3":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimariblastdoor.png"
         },
+     "30":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimaribench.png"
+        },
+     "31":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarichair.png"
+        },
+     "32":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarihammock.png"
+        },
+     "33":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarihammock2.png"
+        },
+     "34":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimaripiratecaptainchair.png"
+        },
+     "35":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimariscrapbed.png"
+        },
+     "36":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimariscraptable.png"
+        },
+     "37":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimaritable.png"
+        },
+     "38":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarichalice.png"
+        },
+     "39":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarigoblet.png"
+        },
      "4":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimariflighthatch.png"
         },
+     "40":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarigoblet2.png"
+        },
+     "41":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimaripot.png"
+        },
+     "42":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimaripotsmall.png"
+        },
+     "43":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimaripottall.png"
+        },
+     "44":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimaributton.png"
+        },
+     "45":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarismallbutton.png"
+        },
+     "46":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarisecuritycamera-ceilingleft.png"
+        },
+     "47":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarisecuritycamera-ceilingright.png"
+        },
+     "48":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarisecuritycamera-groundleft.png"
+        },
+     "49":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarisecuritycamera-groundright.png"
+        },
      "5":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarisideplating.png"
+        },
+     "50":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarisecuritycamera-leftwall.png"
+        },
+     "51":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarisecuritycamera-rightwall.png"
+        },
+     "52":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarislidinghatch.png"
+        },
+     "53":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimarilowteleporter.png"
+        },
+     "54":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/creonembassyteleporter-akkimari.png"
         },
      "6":
         {
@@ -157,5 +673,5 @@
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/akkimari\/akkimaribanner.png"
         }
     },
- "tilewidth":48
+ "tilewidth":128
 }

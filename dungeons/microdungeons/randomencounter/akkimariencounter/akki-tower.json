@@ -16,7 +16,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJzt1kEKg0AMBVB711KKZ\/VQxUVgCNgWqzKTvgdZyUj+Yr5OEwAAABDut33PAABgBOs\/bZ5nMwAcp+1X3Qtwrnedq3sBjvWpY7e6uBfzj\/usZ+cO8lTJ8Q\/y\/YDqljTxHXjsnDif37tctP9VM3qWs1XIEKrkCKPvv6VKjta3e\/acIRtlTwAY2QtCbZ1B",
+         "data":"eJzt1lsKgzAQBVC71yLFfXR3Lqr1YyAEbIsvkuk5MF8SmfuRq8MAAAAAhPtt2zMAAOjB8k9bz6MYAI5T9qvuBTjXp87VvQDH+taxa13cium9y3PHPsvZqYE8WXL8g\/p+QHZzNfEdGDdOnK\/fO1+0\/1XTe5azZcgQsuQIve+\/JkuO0q97tpyh1sueANCzF\/EMncU=",
          "encoding":"base64",
          "height":80,
          "name":"front",
@@ -46,7 +46,7 @@
          "name":"objects",
          "objects":[
                 {
-                 "gid":376,
+                 "gid":391,
                  "height":16,
                  "id":850,
                  "name":"",
@@ -62,7 +62,7 @@
                  "y":432
                 }, 
                 {
-                 "gid":376,
+                 "gid":391,
                  "height":16,
                  "id":852,
                  "name":"",
@@ -78,7 +78,7 @@
                  "y":432
                 }, 
                 {
-                 "gid":380,
+                 "gid":395,
                  "height":56,
                  "id":864,
                  "name":"",
@@ -94,7 +94,7 @@
                  "y":440
                 }, 
                 {
-                 "gid":378,
+                 "gid":393,
                  "height":40,
                  "id":865,
                  "name":"",
@@ -110,7 +110,7 @@
                  "y":496
                 }, 
                 {
-                 "gid":380,
+                 "gid":395,
                  "height":56,
                  "id":866,
                  "name":"",
@@ -126,7 +126,7 @@
                  "y":384
                 }, 
                 {
-                 "gid":380,
+                 "gid":395,
                  "height":56,
                  "id":868,
                  "name":"",
@@ -142,7 +142,7 @@
                  "y":328
                 }, 
                 {
-                 "gid":380,
+                 "gid":395,
                  "height":56,
                  "id":869,
                  "name":"",
@@ -158,7 +158,7 @@
                  "y":272
                 }, 
                 {
-                 "gid":380,
+                 "gid":395,
                  "height":56,
                  "id":871,
                  "name":"",
@@ -174,7 +174,7 @@
                  "y":216
                 }, 
                 {
-                 "gid":2147484028,
+                 "gid":2147484043,
                  "height":56,
                  "id":872,
                  "name":"",
@@ -190,7 +190,7 @@
                  "y":216
                 }, 
                 {
-                 "gid":379,
+                 "gid":394,
                  "height":8,
                  "id":873,
                  "name":"",
@@ -206,7 +206,7 @@
                  "y":160
                 }, 
                 {
-                 "gid":2147484028,
+                 "gid":2147484043,
                  "height":56,
                  "id":874,
                  "name":"",
@@ -222,7 +222,7 @@
                  "y":272
                 }, 
                 {
-                 "gid":2147484028,
+                 "gid":2147484043,
                  "height":56,
                  "id":875,
                  "name":"",
@@ -238,7 +238,7 @@
                  "y":328
                 }, 
                 {
-                 "gid":2147484028,
+                 "gid":2147484043,
                  "height":56,
                  "id":876,
                  "name":"",
@@ -254,7 +254,7 @@
                  "y":384
                 }, 
                 {
-                 "gid":2147484028,
+                 "gid":2147484043,
                  "height":56,
                  "id":877,
                  "name":"",
@@ -270,7 +270,7 @@
                  "y":440
                 }, 
                 {
-                 "gid":378,
+                 "gid":393,
                  "height":40,
                  "id":878,
                  "name":"",
@@ -286,7 +286,7 @@
                  "y":496
                 }, 
                 {
-                 "gid":2147484024,
+                 "gid":2147484039,
                  "height":16,
                  "id":880,
                  "name":"",
@@ -302,7 +302,7 @@
                  "y":432
                 }, 
                 {
-                 "gid":2147484024,
+                 "gid":2147484039,
                  "height":16,
                  "id":881,
                  "name":"",
@@ -318,7 +318,7 @@
                  "y":376
                 }, 
                 {
-                 "gid":381,
+                 "gid":396,
                  "height":8,
                  "id":882,
                  "name":"",
@@ -334,7 +334,7 @@
                  "y":456
                 }, 
                 {
-                 "gid":381,
+                 "gid":396,
                  "height":8,
                  "id":883,
                  "name":"",
@@ -350,7 +350,7 @@
                  "y":176
                 }, 
                 {
-                 "gid":383,
+                 "gid":398,
                  "height":24,
                  "id":885,
                  "name":"",
@@ -366,7 +366,7 @@
                  "y":376
                 }, 
                 {
-                 "gid":383,
+                 "gid":398,
                  "height":24,
                  "id":886,
                  "name":"",
@@ -382,7 +382,7 @@
                  "y":376
                 }, 
                 {
-                 "gid":383,
+                 "gid":398,
                  "height":24,
                  "id":887,
                  "name":"",
@@ -628,7 +628,7 @@
          "source":"..\/..\/..\/..\/tilesets\/avikan-custom\/theamaterials.json"
         }, 
         {
-         "firstgid":375,
+         "firstgid":390,
          "source":"..\/..\/..\/..\/tilesets\/avikan-custom\/theaobjects-akkimari.json"
         }],
  "tilewidth":8,

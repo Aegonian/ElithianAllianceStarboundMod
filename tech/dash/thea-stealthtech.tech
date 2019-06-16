@@ -15,7 +15,7 @@
   "maximumDoubleTapTime" : 0.25,			//Maximum time in between button presses to activate double tap
   "directive" : "?multiply=ffffff15",		//Parent directive while invisible
   "blinkDirective" : "?multiply=ffffff55",	//Parent directive while blinking
-  "maxDuration" : 8,						//Maximum duration of the stealth effect
+  "maxDuration" : 6,						//Maximum duration of the stealth effect
   "blinkDuration" : 2,						//If duration left hits this amount, the player will start blinking
-  "cooldownTime" : 5						//Time between uses
+  "cooldownTime" : 4						//Time between uses
 }

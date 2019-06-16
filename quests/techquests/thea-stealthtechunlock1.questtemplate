@@ -1,0 +1,29 @@
+{
+  "id" : "thea-stealthtechunlock1",
+  "prerequisites" : [ "destroyruin" ],
+  "title" : "^orange;Chacharra's Stealth Tech I",
+  "text" : "Chacharra has tech, useful tech to go invisible. You can have tech, for price... ^green;Bring Chacharra ^orange;5 Diamonds^reset;, then Chacharra show you test course for ^orange;Stealth Tech^reset;.",
+  "completionText" : "You make Chacharra happy, happy Akki help you! ^orange;Stealth Tech ^reset;almost yours now...",
+  "moneyRange" : [100, 100],
+  "rewards" : [],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/main.lua",
+  "scriptConfig" : {
+	"portraits" : {
+      "questStarted" : "questGiver",
+      "questComplete" : "questReceiver"
+    },
+    "requireTurnIn" : true,
+
+	"turnInDescription" : "Return to ^orange;Chacharra ^reset;in the ^orange;Creon Embassy^reset;",
+    "conditions" : [
+      {
+        "type" : "gatherItem",
+        "itemName" : "diamond",
+        "count" : 5,
+        "consume" : true
+      }
+    ]
+  }
+}

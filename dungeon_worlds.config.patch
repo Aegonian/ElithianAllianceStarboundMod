@@ -197,9 +197,31 @@
   },
 
   //==========================================================================================================
+  //============================================ TECH CHALLENGES =============================================
+  //==========================================================================================================
+  {
+    "op" : "add",
+    "path" : "/thea-techchallenge-stealthtech",
+    "value" : {
+      "primaryDungeon" : "thea-techchallenge-stealthtech",
+      "threatLevel" : 1,
+      "gravity" : 80,
+      "worldSize" : [2000, 2000],
+      "dungeonBaseHeight" : 1000,
+	  "dungeonSurfaceHeight" : 1000,
+      "ambientLightLevel" : [32, 32, 32],
+      "biome" : "space",
+	  "ambientNoises" : "/sfx/environmental/space_loop4.ogg",
+	  "musicTrack" : "/music/desert-exploration2.ogg",
+	  "overrideTech" : ["thea-stealthtech"],
+	  "environmentStatusEffects" : ["dontstarve"],
+	  "worldEdgeForceRegions" : "TopAndBottom"
+    }
+  },
+
+  //==========================================================================================================
   //============================================ MISSIONS ====================================================
   //==========================================================================================================
-
   {
     "op" : "add",
     "path" : "/thea-missiontemplate",

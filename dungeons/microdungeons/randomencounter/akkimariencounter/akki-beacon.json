@@ -46,7 +46,7 @@
          "name":"objects",
          "objects":[
                 {
-                 "gid":2147484033,
+                 "gid":2147484039,
                  "height":16,
                  "id":816,
                  "name":"",
@@ -62,7 +62,7 @@
                  "y":496
                 }, 
                 {
-                 "gid":394,
+                 "gid":400,
                  "height":64,
                  "id":838,
                  "name":"",
@@ -269,7 +269,7 @@
          "source":"..\/..\/..\/..\/tilesets\/avikan-custom\/theamaterials.json"
         }, 
         {
-         "firstgid":384,
+         "firstgid":390,
          "source":"..\/..\/..\/..\/tilesets\/avikan-custom\/theaobjects-akkimari.json"
         }],
  "tilewidth":8,

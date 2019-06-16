@@ -1,4 +1,9 @@
 [
+  //==============================================================================================================
+  //============================================== INSTANCED QUESTS ==============================================
+  //==============================================================================================================
+  
+  //VANGUARD DRONE BATTLE
   { "op" : "add",
 	"path" : "/vanguarddronebattle",
 	"value" : {
@@ -17,6 +22,8 @@
 	  }
 	}
   },
+  
+  //VANGUARD MECH UNLOCK
   { "op" : "add",
 	"path" : "/vanguardmechunlock",
 	"value" : {
@@ -35,6 +42,8 @@
 	  }
 	}
   },
+  
+  //AKKIMARI DRONE BATTLE
   { "op" : "add",
 	"path" : "/akkimaridronebattle",
 	"value" : {
@@ -50,6 +59,32 @@
 	  },
 	  "labels" : {
 		"name" : "Delegate Mumam"
+	  }
+	}
+  },
+  
+  
+  
+  //==============================================================================================================
+  //============================================== TECH CHALLENGES ===============================================
+  //==============================================================================================================
+  
+  //AKKIMARI DRONE BATTLE
+  { "op" : "add",
+	"path" : "/thea-techchallenge-stealthtech",
+	"value" : {
+	  "paneLayout" : "/interface/windowconfig/portraitconfirmation.config:paneLayout",
+	  "icon" : "/interface/warping/icon.png",
+	  "title" : "Teleport Confirmation",
+	  "subtitle" : "Chacharra's Testing Course",
+	  "message" : "\n\nChacharra have everything ready. Your ready for testing course?",
+	  "okCaption" : "Ready",
+	  "cancelCaption" : "Not now",
+	  "images" : {
+		"portrait" : [ {"image" : "/quests/techquests/eo-akkimarivisitor.png"} ]
+	  },
+	  "labels" : {
+		"name" : "Chacharra"
 	  }
 	}
   }
