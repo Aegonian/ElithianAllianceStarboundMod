@@ -1,0 +1,49 @@
+{
+  "type" : "ao-deepdesertpriest",
+  "baseType" : "ao-civilian",
+
+  "npcname" : "Arravas",
+
+  "scriptConfig" : {
+    	
+	"offeredQuests" : [ "crawlerdunebun" ],
+	"turnInQuests" : [ "crawlerdunebun" ],
+  
+    "dialog" : {
+	  "converse" : {
+        "default" : {
+		  "default" : [ 
+		    "The Rhaiod reaches all, even those in the deep deserts of Kadavan."
+		  ]
+		},
+
+        "avikan" : {
+          "default" : [
+		    "The Rhaiod reaches all, even those in the deep deserts of Kadavan."
+          ],
+          "avikan" : [
+		    "The Rhaiod reaches all, even those in the deep deserts of Kadavan, Captain."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "avikan-desertpriesthead", "parameters" : { "colorIndex" : 9 } }
+            ],
+            "chest" : [
+              { "name" : "avikan-desertpriestchest", "parameters" : { "colorIndex" : 9 } }
+            ],
+            "legs" : [
+              { "name" : "avikan-desertpriestlegs", "parameters" : { "colorIndex" : 9 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

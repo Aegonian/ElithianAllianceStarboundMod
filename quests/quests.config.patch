@@ -30,6 +30,10 @@
 	"path" : "/objectiveDescriptions/theaMonsterKill",
 	"value" : "Kill <monsterName>: <current> / <required>"
   },
+  { "op" : "add",
+	"path" : "/objectiveDescriptions/theaCompleteCollection",
+	"value" : "Complete the ^orange;<collectionName> ^reset;collection entry"
+  },
   
   //===============================================================================
   // THEA EVENT HANDLER

@@ -4,11 +4,7 @@
 
   "npcname" : "Vesuli",
 
-  "scriptConfig" : {
-    	
-	//"offeredQuests" : [ "avikancrafting.gearup" ],
-	//"turnInQuests" : [ "avikancrafting.gearup", "avikancrafting2.gearup" ],
-  
+  "scriptConfig" : {  
     "dialog" : {
 	  "converse" : {
         "default" : {

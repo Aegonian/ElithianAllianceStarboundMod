@@ -1,0 +1,29 @@
+{
+  "id" : "crawlerdunebun",
+  "prerequisites" : [],
+  "title" : "^orange;Sandcrawler's Delight",
+  "text" : "In the deep deserts, we have to be creative with our food. I need a few more samples before my new ^orange;Crawler Dunebun ^reset;recipe is ready... ^green;Could you go and capture a ^orange;Sandcrawler^reset;, then return the data to me? That'll help me finish the recipe!",
+  "completionText" : "Vas Vha'leih, my friend. You gave me exactly what I needed. Here's some Tokens of Merit for your trouble, and a copy of the recipe so you can make your own ^orange;Crawler Dunebuns^reset;!",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "crawlerdunebun-recipe", 1 ], [ "avikanmerittoken", 100 ], [ "avikan-desertpriesthead", 1 ], [ "avikan-desertpriestchest", 1 ], [ "avikan-desertpriestlegs", 1 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/thea-main.lua",
+  "scriptConfig" : {
+	"portraits" : {
+      "default" : "questGiver"
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "completeCollection",
+        "collectionDisplayName" : "Sandcrawler",
+        "collectionGroup" : "monsters",
+        "collectionItem" : "largesandcrawler"
+      }
+    ],
+	"turnInDescription" : "Return to ^orange;Arravas ^reset;in the ^orange;Starfarer's Refuge^reset;"
+  }
+}

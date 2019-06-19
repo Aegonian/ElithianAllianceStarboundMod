@@ -1,7 +1,8 @@
 --An expansion on the vanilla main quest script that overrides the buildConditions function, allowing for additional custom condition types to be configured
 
 require "/quests/scripts/main.lua"
-require('/quests/scripts/conditions/thea-messages.lua')
+require('/quests/scripts/conditions/thea-monsterkills.lua')
+require('/quests/scripts/conditions/thea-collections.lua')
 
 function buildConditions()
   local conditions = {}
@@ -19,6 +20,8 @@ function buildConditions()
       newCondition = buildScanObjectsCondition(config)
     elseif config.type == "killMonsters" then
       newCondition = buildMonsterKillCondition(config)
+    elseif config.type == "completeCollection" then
+      newCondition = buildCompleteCollectionCondition(config)
     end
 
     table.insert(conditions, newCondition)

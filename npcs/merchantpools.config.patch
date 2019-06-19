@@ -13,6 +13,9 @@
 			  { "item": { "name": "avikan-welderhead" }, "prerequisiteQuest" : "lostavikanarmring" },
 			  { "item": { "name": "avikan-astronauthead" }, "prerequisiteQuest" : "stuckastronaut" },
 			  { "item": { "name": "avikan-starfarerhead" }, "prerequisiteQuest" : "avikanstarfarer" },
+			  { "item": { "name": "avikan-desertpriesthead" }, "prerequisiteQuest" : "crawlerdunebun" },
+			  { "item": { "name": "avikan-desertpriestchest" }, "prerequisiteQuest" : "crawlerdunebun" },
+			  { "item": { "name": "avikan-desertpriestlegs" }, "prerequisiteQuest" : "crawlerdunebun" },
 			  //Custom Tailoring
 			  { "item": { "name": "avikan-protectoratechest" }, "prerequisiteQuest" : "avikancustomtailoring" },
 			  { "item": { "name": "avikan-protectoratelegs" }, "prerequisiteQuest" : "avikancustomtailoring" },
