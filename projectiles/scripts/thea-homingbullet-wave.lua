@@ -4,6 +4,9 @@ require "/scripts/util.lua"
 function init()
   self.targetSpeed = vec2.mag(mcontroller.velocity())
   self.searchDistance = config.getParameter("searchRadius")
+  self.maxWaves = config.getParameter("maxWaves", -1)
+  self.waves = 0
+  
   --Checking which type of homing code to use
   self.homingStyle = config.getParameter("homingStyle", "controlVelocity")
   if self.homingStyle == "controlVelocity" then
@@ -63,13 +66,21 @@ function init()
 end
 
 function update(dt)
-  --Sine wave movement code
-  self.timer = self.timer + dt
-  local newAngle = self.waveAmplitude * math.sin(self.timer / self.wavePeriod)
+  --Move the projectile in a sine wave motion by adjusting velocity direction
+  if (self.maxWaves == -1) or (self.waves < self.maxWaves) then
+	self.timer = self.timer + dt
+	local newAngle = self.waveAmplitude * math.sin(self.timer / self.wavePeriod)
 
-  mcontroller.setVelocity(vec2.rotate(mcontroller.velocity(), newAngle - self.lastAngle))
+	mcontroller.setVelocity(vec2.rotate(mcontroller.velocity(), newAngle - self.lastAngle))
 
-  self.lastAngle = newAngle
+	self.lastAngle = newAngle
+	
+	--Count up the waves we've completed
+	self.waves = self.timer / self.wavePeriod / (2 * math.pi)
+  end
+  
+  --world.debugText(self.waves, mcontroller.position(), "red")
+  --world.debugText(self.timer, vec2.add(mcontroller.position(), {0, -1}), "orange")
   
   if self.homingEnabled == true then
 	local targets = world.entityQuery(mcontroller.position(), self.searchDistance, {

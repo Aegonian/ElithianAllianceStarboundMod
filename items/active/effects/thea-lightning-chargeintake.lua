@@ -71,6 +71,15 @@ function update()
 	local alphaMultiplier = math.min(1, (1 - (particle.lifeTime / particle.maxLifeTime)) * 2)
 	local alpha = math.ceil(254 * alphaMultiplier)
 	
+	--Optionally give the charge particle a randomly flipped rotation
+	if self.particleConfig.rotationSpeed then
+	  if self.particleConfig.randomRotationDirection then
+		particle.vector = vec2.rotate(particle.vector, (particle.lifeTime / particle.maxLifeTime) * self.particleConfig.rotationSpeed * util.randomChoice({1, -1}))
+	  else
+		particle.vector = vec2.rotate(particle.vector, (particle.lifeTime / particle.maxLifeTime) * self.particleConfig.rotationSpeed)
+	  end
+	end
+	
 	local drawable = {
 	  image = self.particleConfig.image,
 	  centered = true,

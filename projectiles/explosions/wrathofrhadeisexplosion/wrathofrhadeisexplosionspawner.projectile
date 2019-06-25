@@ -1,6 +1,7 @@
 {
   "projectileName" : "wrathofrhadeisexplosionspawner",
   "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "renderLayer" : "MiddleParticle+2",
   "physics" : "thea-noclipprojectile",
   "actionOnReap" : [
     {

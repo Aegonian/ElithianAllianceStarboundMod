@@ -28,7 +28,7 @@
   },
 
   "baseOffset" : [1.25, 0.125],
-  "muzzleOffset" : [-0.125, 0.30],
+  "muzzleOffset" : [-0.125, 0.375],
 
   "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
 
@@ -80,6 +80,8 @@
       }
     }
   },
+  
+  "altAbilityType" : "thea-fluxround",
 
   "builder" : "/items/buildscripts/buildunrandweapon.lua"
 }

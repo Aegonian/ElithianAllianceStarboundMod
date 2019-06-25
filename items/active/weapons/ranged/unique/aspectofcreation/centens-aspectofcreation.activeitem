@@ -1,0 +1,189 @@
+{
+  "itemName" : "centens-aspectofcreation",
+  "price" : 1500,
+  "level" : 6,
+  "fixedLevel" : false,
+  "inventoryIcon" : "centens-aspectofcreationicon.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "tooltipKind" : "thea-bow-unique",
+  "category" : "Artefact",
+  "description" : "^orange;An artefact of great power, a tool of creation.",
+  "shortdescription" : "^orange;Aspect of Creation^white;",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","centens","theaUnique"],
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  //"collectablesOnPickup" : { "thea_weapons" : "centens-aspectofcreation" },
+  
+  "meritTokenValue" : 100,
+  
+  "cursor" : "/cursors/thea-widespecialreticle.cursor",
+
+  "animation" : "centens-aspectofcreation.animation",
+  "animationParts" : {
+    "bow" : "centens-aspectofcreation.png",
+	"lights" : "centens-aspectofcreationlights.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+	  "parts" : {
+		"bow" : {
+		  "properties" : {
+			"offset" : [0.1, -0.125]
+		  }
+		},
+		"lights" : {
+		  "properties" : {
+			"offset" : [0.1, -0.125]
+		  }
+		}
+	  }
+	},
+    "sounds" : {
+      "draw" : [ "/sfx/gun/andraveihan_charge.ogg" ],
+      "fullyDrawnLoop" : [ "/sfx/projectiles/zone_power_loop.ogg" ],
+      "release" : [ "/sfx/gun/andraveihan_release.ogg" ],
+	  "discharge" : [ "/sfx/gun/andraveihan_stop2.ogg" ]
+    }
+  },
+  "animationScripts" : ["/items/active/effects/thea-chargeintake.lua"],
+  "scriptedAnimationParameters" : {
+    "particleConfig" : {
+	  "image" : "/particles/chargeintake/xanafianintake2.png",
+	  "scale" : 1.5,
+	  "fullbright" : true,
+	  "rotationSpeed" : 2,
+	  "randomRotationDirection" : false
+	}
+  },
+  
+  "muzzleOffset" : [0.75, 0.125],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+  
+  "elementalType" : "xanafian",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-energybowshot.lua"],
+    "class" : "TheaEnergyBowShot",
+
+	"drawTime" : 0.9,
+	"baseDamage" : 8.0,
+    "energyPerShot" : 35,
+    "cooldownTime" : 0.3,
+    "inaccuracy" : 0.01,
+	
+	"walkWhileFiring" : false,
+
+    "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swimIdle.1"],
+	"animationTime" : 0.15, //How quickly we should alternate between the final two frames when fully drawn
+	"drawLevels" : 4,
+	"minimumDrawFrame" : 2,
+
+    "projectileList" : [ "aspectofcreationarrow" ],
+	"powerProjectileList" : [ "aspectofcreationarrow-up", "aspectofcreationarrow-middle", "aspectofcreationarrow-down" ],
+	"usePowerProjectile" : true,
+    "projectileParameters" : {
+	  "knockback" : 8
+	},
+	"angleAdjustmentsPerShot" : [ 0 ],
+	"angleAdjustmentsPerPowerShot" : [ 0.05, 0, -0.05 ],
+	
+	//CHARGE PARTICLE CONFIGURATION
+	"useChargeParticles" : true,
+	"maxChargeParticles" : 16,
+	"particleLifetime" : 0.3,
+	"timeBewteenParticles" : 0.035,
+	"maxParticleDistance" : 2.25,
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : -30,
+        "weaponRotation" : 0,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "draw" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "fire" : {
+        "duration" : 0.2,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true,
+
+        "frontArmFrame" : "idle.3"
+      }
+    }
+  },
+  
+  "altAbility" : {
+    "name" : "Well of Creation",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-energybowshot.lua"],
+    "class" : "TheaEnergyBowShot",
+
+	"drawTime" : 1.5,
+	"baseDamage" : 5.0,
+    "energyPerShot" : 100,
+    "cooldownTime" : 1.0,
+    "inaccuracy" : 0.0,
+	
+	"walkWhileFiring" : false,
+
+    "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swimIdle.1"],
+	"animationTime" : 0.15, //How quickly we should alternate between the final two frames when fully drawn
+	"drawLevels" : 4,
+	"minimumDrawFrame" : 4,
+
+    "projectileList" : [ "aspectofcreationtendril" ],
+	"powerProjectileList" : [ "aspectofcreation" ],
+	"usePowerProjectile" : true,
+    "projectileParameters" : {
+	  "knockback" : 8
+	},
+	
+	//CHARGE PARTICLE CONFIGURATION
+	"useChargeParticles" : true,
+	"maxChargeParticles" : 16,
+	"particleLifetime" : 0.4,
+	"timeBewteenParticles" : 0.035,
+	"maxParticleDistance" : 2.75,
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : -30,
+        "weaponRotation" : 0,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "draw" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : true,
+        "allowFlip" : true,
+        "twoHanded" : true
+      },
+      "fire" : {
+        "duration" : 0.2,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "allowRotate" : false,
+        "allowFlip" : true,
+        "twoHanded" : true,
+
+        "frontArmFrame" : "idle.3"
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/thea-buildlinebow.lua"
+}

@@ -1,7 +1,7 @@
 {
   "projectileName" : "theleanbullet",
   "image" : "theleanbullet.png",
-  "physics" : "laser",
+  "physics" : "thea-lowgravbullet",
   "animationCycle" : 0.25,
   "frameNumber" : 1,
   "emitters" : [ "fireplasma" ],

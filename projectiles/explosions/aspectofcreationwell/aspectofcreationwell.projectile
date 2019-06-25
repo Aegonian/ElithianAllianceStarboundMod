@@ -1,0 +1,68 @@
+{
+  "projectileName" : "aspectofcreationwell",
+  "image" : "aspectofcreationwell.png",
+  "renderLayer" : "MiddleParticle+2",
+  "animationCycle" : 0.5,
+  "animationLoops" : true,
+  "windupFrames" : 3,
+  "frameNumber" : 5,
+  "winddownFrames" : 5,
+  "intangibleWindup" : true,
+  "intangibleWinddown" : true,
+  "physics" : "thea-gravitywell",
+  "speed" : 0,
+  "power" : 0.0,
+  "emitters" : [],
+  "bounces" : -1,
+  "orientationLocked" : true,
+  "piercing" : true,
+  "lightColor" : [70, 90, 100],
+  "fullbright" : true,
+  "damageType" : "NoDamage",
+  "damageKind" : "xanafian",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/voidgravitywell/voidgravitywellend.config"
+    }
+  ],
+  "periodicActions" : [
+	{
+      "time" : 1.25,
+      "repeat" : true,
+      "action" : "projectile",
+      "type" : "wrathofrhadeisseeker",
+      "inheritDamageFactor" : 0.2,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    },
+	{
+      "time" : 0.4,
+      "repeat" : true,
+      "action" : "projectile",
+      "type" : "aspectofcreationtendril",
+      "inheritDamageFactor" : 0.15,
+	  "fuzzAngle" : 360,
+      "angleAdjust" : 0
+    }
+  ],
+  
+  "timeToLive" : 6.0,
+
+  "physicsForces" : {
+    "vacuum" : {
+      "type" : "RadialForceRegion",
+      "outerRadius" : 10,
+      "innerRadius" : 2,
+      "targetRadialVelocity" : 35,
+      "controlForce" : 400,
+      "categoryWhitelist" : ["monster", "player", "npc", "vehicle", "itemdrop"]
+    }
+  },
+
+  "clientEntityMode" : "ClientSlaveOnly",
+  
+  "persistentAudio" : "/sfx/projectiles/zone_power_loop.ogg",
+  
+  "scripts" : [ "/projectiles/scripts/thea-stationaryprojectile.lua" ]
+}

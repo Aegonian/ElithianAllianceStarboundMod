@@ -149,5 +149,14 @@
       "order" : 167,
       "item" : "alliancesodamix"
     }
+  },
+  {
+	"op" : "add", 
+    "path" : "/collectables/crawlerdunebun",
+    "value" :     
+    {
+      "order" : 168,
+      "item" : "crawlerdunebun"
+    }
   }
 ]

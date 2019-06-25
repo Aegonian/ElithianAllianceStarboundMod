@@ -14,8 +14,64 @@
       "file" : "/projectiles/explosions/theleanmediumplasmaexplosion/theleanmediumplasmaexplosion.config"
     }
   ],
+  "periodicActions" : [
+    {
+      "time" : 0.05,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "animated",
+        "animation" : "/projectiles/thelean/theleanfluxgrenade/trail.animation",
+        "position" : [-0.25, 0],
+        "layer" : "back",
+        "size" : 0.75,
+		"collidesForeground" : true,
+		"initialVelocity" : [4.0, 0.0],
+		"finalVelocity" : [0, 0],
+		"approach" : [2, 2],
+        "timeToLive" : 0.5,
+        "destructionTime" : 0.1,
+        "destructionAction" : "fade",
+        "fullbright" : true,
+		"variance" : {
+		  "size" : 0.25,
+		  "position" : [0.125, 0.0],
+		  "initialVelocity" : [4.0, 0.5],
+		  "finalVelocity" : [1.0, 0.0]
+		}
+      }
+    },
+    {
+      "time" : 0.05,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "animated",
+        "animation" : "/projectiles/thelean/theleanfluxgrenade/trail2.animation",
+        "position" : [-1.0, 0],
+        "layer" : "back",
+        "size" : 0.75,
+		"collidesForeground" : true,
+		"initialVelocity" : [4.0, 0.0],
+		"finalVelocity" : [0, 0],
+		"approach" : [2, 2],
+        "timeToLive" : 0.4,
+        "destructionTime" : 0.1,
+        "destructionAction" : "fade",
+        "fullbright" : true,
+		"variance" : {
+		  "size" : 0.25,
+		  "position" : [0.125, 0.0],
+		  "initialVelocity" : [4.0, 0.5],
+		  "finalVelocity" : [1.0, 0.0]
+		}
+      }
+    }
+  ],
   "statusEffects" : [ ],
-  "emitters" : [ "fireplasma" ],
+  "emitters" : [],
   "flippable" : true,
   "power" : 10.0,
   "speed" : 55.0,

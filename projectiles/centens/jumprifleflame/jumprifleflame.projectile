@@ -1,6 +1,6 @@
 {
   "projectileName" : "jumprifleflame",
-  "physics" : "thea-stickyflame",
+  "physics" : "thea-stickyflamesmall",
   "bounces" : -1,
   "timeToLive" : 5,
   "speed" : 20,

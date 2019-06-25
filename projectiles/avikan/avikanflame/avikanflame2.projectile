@@ -1,6 +1,6 @@
 {
   "projectileName" : "avikanflame2",
-  "physics" : "thea-stickyflame",
+  "physics" : "thea-stickyflamesmall",
   "bounces" : -1,
   "timeToLive" : 5,
   "speed" : 40,
@@ -15,7 +15,7 @@
   "piercing" : true,
   "damagePoly" : [ [-6, 0], [-4, -4], [0, -6], [4, -4], [6, 0], [4, 4], [0, 6], [-4, 4] ],
   "actionOnReap" : [],
-  "damageKind" : "jumpweapon",
+  "damageKind" : "fire",
   "universalDamage" : true,
   "statusEffects" : [
     "thea-burning"

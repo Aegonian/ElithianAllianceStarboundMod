@@ -6,7 +6,11 @@
   "completionText" : "This'll fit far better than the standard uniform. Better not lose it - it's truly one of a kind.",
   "moneyRange" : [0, 0],
   "canBeAbandoned" : false,
-  "logOnly" : true,
+  
+  "showInLog" : false,
+  "showAcceptDialog" : false,
+  "showCompleteDialog" : false,
+  "showFailDialog" : false,
   
   "rewards" : [
     [ [ "avikan-protectoratechest", 1 ], [ "avikan-protectoratelegs", 1 ], [ "avikanorders1-codex", 1 ] ]

@@ -1,0 +1,242 @@
+{
+  "type" : "rimdwellerspaceturret",
+  "shortdescription" : "Rim Space Turret",
+  "description" : "A powerful automated defense turret produced somewhere in the Rim.",
+
+  "categories" : [ "rimdwellerspaceturret" ],
+  "parts" : [ "body" ],
+
+  "animation" : "rimdwellerspaceturret.animation",
+
+  "dropPools" : [],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+
+    "behavior" : "monster",
+    "deathBehavior" : "monster-death",
+	"behaviorUpdateDelta" : 1, //Defaults to 2, but has to be lower to allow for minigun-like firing speeds
+
+    "facingMode" : "transformation",
+
+    "seeThroughLiquid" : true,
+	
+    "behaviorConfig" : {
+      "damageOnTouch" : true,
+
+      "targetQueryRange" : 50,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : true,
+      "keepTargetInRange" : 200,
+      "targetOutOfSightTime" : 10.0,
+
+      "hurtWaitForGround" : false,
+
+      "wanderActions" : [
+        {
+          "name" : "action-stop",
+          "parameters" : {
+            "stopForce" : 30
+          }
+        }
+      ],
+
+      "hostileActions" : [
+       {
+          "name" : "thea-monsterfire",
+          "cooldown" : 1.6,
+          "parameters" : {
+            "requireLineOfSight" : true,
+            "onGround" : false,
+            "maximumRange" : 40,
+            "minimumRange" : 10,
+            "windupTime" : 0.8,
+            "windupStopForce" : 0,
+            "windupState" : "firewindup",
+
+            "projectileCount" : 8,
+            "projectileInterval" : 0.05,
+            "projectileType" : "alliancephysicalbullet",
+            "projectileParameters" : {
+              "speed" : 160,
+              "power" : 3.5
+            },
+			"inaccuracy" : 0.075,
+
+            "fireOffset" : [0.0, 0.0],
+            "fireSound" : "fire",
+            "fireState" : "fire",
+            "fireDelay" : 0.0,
+            "faceTarget" : true,
+            "rotateToTarget" : true,
+			"holdAim" : true,
+
+            "winddownState" : "firewinddown",
+            "winddownStopForce" : 0,
+            "winddownTime" : 0.4,
+			"winddownFaceTarget" : true,
+			"winddownRotateAim" : true,
+			
+			"damageRepeatGroup" : "" //Removes the damage cooldown time, allowing every projectile that connects to damage the target
+          }
+        },
+        {
+          "name" : "approach-burn",
+          "cooldown" : 0.5,
+          "parameters" : {
+            "burnTime" : 0.5,
+            "approachDistance" : 20,
+            "rotateGroup" : "body",
+            "burnState" : "burn",
+            "idleState" : "burnwinddown"
+          }
+        }
+      ],
+
+      "approachActions" : [
+      ],
+
+      "deathActions" : [
+        {
+          "name" : "action-projectile",
+          "parameters" : {
+            "projectileCount" : 1,
+            "projectileType" : "mechenergypickup",
+            "projectileParameters" : {},
+            "aimDirection" : [1, 0],
+            "inaccuracy" : 0,
+            "fireOffset" : [0, 0]
+          }
+        }
+      ]
+    },
+
+    "touchDamage" : {
+      "poly" : [ [0.625, 0.9375], [1.125, 0.4375], [1.125, -0.4375], [0.625, -0.9375], [-0.625, -0.9375], [-1.125, -0.4375], [-1.125, 0.4375], [-0.625, 0.9375] ],
+      "damage" : 3.5,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "impact",
+      "knockback" : 20,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-4, -4, 4, 4],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [0.625, 0.9375], [1.125, 0.4375], [1.125, -0.4375], [0.625, -0.9375], [-0.625, -0.9375], [-1.125, -0.4375], [-1.125, 0.4375], [-0.625, 0.9375] ],
+
+      "mass" : 2.0,
+      "walkSpeed" : 0,
+      "runSpeed" : 0,
+      "gravityEnabled" : false,
+
+      "bounceFactor" : 0.25,
+      "groundFriction" : 10,
+
+      "airFriction" : 0,
+      "airForce" : 100,
+      "flySpeed" : 20
+    },
+
+    "bodyMaterialKind" : "robotic",
+
+    "knockoutTime" : 0.3,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "healthLevelFunction" : "spaceMonsterLevelHealthMultiplier",
+    "powerLevelFunction" : "spaceMonsterLevelPowerMultiplier",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "robotic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/spacemonster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "grit" : {
+          "baseValue" : 0.25
+        },
+        "knockbackStunTime" : {
+          "baseValue" : 0.25
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 9
+        },
+        "maxHealth" : {
+          "baseValue" : 125
+        },
+        "protection" : {
+          "baseValue" : 0.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "linerifleStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "centensianenergyStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "xanafianStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "akkimariacidStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "bleedingImmunity" : {
+          "baseValue" : 1.0
+        },
+        "stunImmunity" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -8],
+    "capturable" : false
+  }
+}

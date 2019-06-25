@@ -69,7 +69,7 @@
     "sounds" : {
       "fire" : [ "/sfx/gun/trink_energizer.ogg" ],
 	  "toggleLight" : [ "/sfx/tools/flashlight_toggle.ogg" ],
-	  "targetingLoop" : [ "/sfx/gun/thea_lasermarker_loop.ogg" ]
+	  "targetingLoop" : [ "/sfx/gun/thea_lasermarker_loop2.ogg" ]
     }
   },
   "animationScripts" : [

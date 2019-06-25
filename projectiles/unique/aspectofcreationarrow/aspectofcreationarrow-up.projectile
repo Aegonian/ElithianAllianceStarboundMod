@@ -1,0 +1,57 @@
+{
+  "projectileName" : "aspectofcreationarrow-up",
+  "physics" : "thea-laser",
+  "bounces" : 0,
+  "image" : "aspectofcreationarrow.png",
+  "renderLayer" : "MiddleParticle+1",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 80,
+  "piercing" : false,
+  "supportsProcessing" : true,
+  "emitters" : [],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/unique/aspectofcreationarrow/aspectofcreationarrowimpact.config"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "animated",
+        "animation" : "/projectiles/unique/aspectofcreationarrow/trail.animation",
+        "position" : [-1.0, 0],
+        "layer" : "middle",
+		"collidesForeground" : false,
+        "timeToLive" : 0.25,
+        "destructionTime" : 0.125,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  "statusEffects" : [ "shadowmarked-healing" ],
+  "lightColor" : [70, 90, 100],
+  "fullbright" : true,
+  "damageKind" : "xanafian",
+
+  "persistentAudio" : "/sfx/projectiles/andraveihan_tendril_loud.ogg",
+
+  "scripts" : ["/projectiles/scripts/thea-lineriflehoming-wave.lua"],
+  "scriptDelta" : 1,
+
+  //Wave
+  "wavePeriod" : 0.4,
+  "waveAmplitude" : 0.3,
+  "maxWaves" : 0.75,
+  
+  //Homing
+  "searchRadius" : 50,
+  "baseHomingControlForce" : 2.5
+}

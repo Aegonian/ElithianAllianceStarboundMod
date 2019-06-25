@@ -1,6 +1,7 @@
 {
   "projectileName" : "wrathofrhadeisseeker",
   "image" : "wrathofrhadeisseeker.png",
+  "renderLayer" : "MiddleParticle+1",
   "physics" : "centensgravityseeker",
   "bounces" : -1,
   "piercing" : true,
@@ -20,17 +21,24 @@
   "damageKind" : "xanafian",
   
   //SCRIPT CONFIG
-  "scripts" : [ "/projectiles/scripts/thea-homingbullet.lua" ],
-  "searchRadius" : 40,
-  "baseHomingControlForce" : 2,
+  "scripts" : [ "/projectiles/scripts/thea-homingbullet-wave.lua" ],
   
+  //Homing
+  "searchRadius" : 40,
+  "baseHomingControlForce" : 0.75,
+  "homingStartDelay" : 0.25,
+
+  //Wave
+  "wavePeriod" : 1.0,
+  "waveAmplitude" : 0.3,
+  
+  //Random Lifetime
   "randomTimeToLive" : true,
   "timeToLiveMilliseconds" : true,
   "minLifeTime" : 350,
-  "maxLifeTime" : 450,
+  "maxLifeTime" : 450,  
   
-  "homingStartDelay" : 0.25,
-  
+  //Random Speed
   "randomStartingSpeed" : true,
   "minSpeed" : 9,
   "maxSpeed" : 11

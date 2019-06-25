@@ -7,8 +7,11 @@
   "completionText" : "This quest acts as a prerequisite to the Akkimari storyline. You shouldn't be able to see this in your log.",
   "moneyRange" : [0, 0],
   "canBeAbandoned" : false,
-  "invisible" : true,
-  "logOnly" : true,
+  
+  "showInLog" : false,
+  "showAcceptDialog" : false,
+  "showCompleteDialog" : false,
+  "showFailDialog" : false,
   
   "rewards" : [ ],
 

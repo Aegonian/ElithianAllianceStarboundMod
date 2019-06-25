@@ -1,10 +1,10 @@
 {
   "projectileName" : "theleanseekingbullet",
   "image" : "theleanseekingbullet.png",
-  "physics" : "laser",
+  "physics" : "thea-lowgravbullet",
   "animationCycle" : 0.25,
   "frameNumber" : 1,
-  "emitters" : [ "fireplasma" ],
+  "emitters" : [],
   "pointLight" : false,
   "flippable" : true,
   "actionOnReap" : [

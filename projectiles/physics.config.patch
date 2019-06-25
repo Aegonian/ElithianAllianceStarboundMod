@@ -1,4 +1,4 @@
-[	
+[
   {"op" : "add",
 	"path" : "/thea-laser",
 	"value" : {
@@ -8,6 +8,24 @@
 	  "maxMovementPerStep" : 0.4,
 	  
 	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+	  "ignorePlatformCollision" : true,
+	  
+	  "groundFriction" : 0,
+	  "airFriction" : 0.0,
+	  "liquidFriction" : 0.0,
+	  "speedLimit" : null,
+	  "maximumCorrection" : 0.75
+	}	  
+  },
+  {"op" : "add",
+	"path" : "/thea-largelaser",
+	"value" : {
+	  "gravityMultiplier" : 0.0,
+	  "bounceFactor" : 1.0,
+	  "stopOnFirstBounce" : true,
+	  "maxMovementPerStep" : 0.4,
+	  
+	  "collisionPoly" : [ [0.5, 0.5], [0.5, -0.5], [-0.5, -0.5], [-0.5, 0.5] ],
 	  "ignorePlatformCollision" : true,
 	  
 	  "groundFriction" : 0,
@@ -470,7 +488,7 @@
   {"op" : "add",
 	"path" : "/centensgravityseeker",
 	"value" : {
-	  "gravityMultiplier" : 0.05,
+	  "gravityMultiplier" : 0.025,
 	  "bounceFactor" : 1.0,
 	  "stopOnFirstBounce" : true,
 	  "maxMovementPerStep" : 0.4,
@@ -587,7 +605,25 @@
 
 	  "airFriction" : 1.0,
 	  "liquidFriction" : 1.0,
-	  "groundFriction" : 1.0,
+	  "groundFriction" : 10.0,
+	  "maximumCorrection" : 0.75
+	}
+  },
+  {"op" : "add",
+	"path" : "/thea-stickyflamesmall",
+	"value" : {
+	  "mass" : 1.0,
+	  "gravityMultiplier" : 0.9,
+	  "stickyCollision" : true,
+	  "stickyForce" : 200.0,
+	  "maxMovementPerStep" : 0.4,
+
+	  "collisionPoly" : [ [-0.125, -0.125], [0.125, -0.125], [0.125, 0.125], [-0.125, 0.125] ],
+	  "ignorePlatformCollision" : true,
+
+	  "airFriction" : 1.0,
+	  "liquidFriction" : 1.0,
+	  "groundFriction" : 10.0,
 	  "maximumCorrection" : 0.75
 	}
   },
@@ -606,5 +642,23 @@
 	  "speedLimit" : null,
 	  "maximumCorrection" : 0.75
 	}
+  },
+  {"op" : "add",
+	"path" : "/thea-lowgravbullet",
+	"value" : {
+	  "gravityMultiplier" : 0.6,
+	  "bounceFactor" : 1.0,
+	  "stopOnFirstBounce" : true,
+	  "maxMovementPerStep" : 0.4,
+	  
+	  "collisionPoly" : [ [-0.25, -0.25], [0.25, -0.25], [0.25, 0.25], [-0.25, 0.25] ],
+	  "ignorePlatformCollision" : true,
+	  
+	  "groundFriction" : 0.0,
+	  "airFriction" : 0.0,
+	  "liquidFriction" : 0.0,
+	  "speedLimit" : null,
+	  "maximumCorrection" : 0.75
+	}	  
   }
 ]

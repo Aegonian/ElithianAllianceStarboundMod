@@ -14,8 +14,11 @@
   "moneyRange" : [0, 0],
   "rewards" : [],
   "canBeAbandoned" : false,
-  "invisible" : true,
-  "logOnly" : true,
+  
+  "showInLog" : false,
+  "showAcceptDialog" : false,
+  "showCompleteDialog" : false,
+  "showFailDialog" : false,
   "ephemeral" : true,
 
   "updateDelta" : 1,

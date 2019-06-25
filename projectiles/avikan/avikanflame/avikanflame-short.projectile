@@ -15,7 +15,7 @@
   "piercing" : true,
   "damagePoly" : [ [-6, 0], [-4, -4], [0, -6], [4, -4], [6, 0], [4, 4], [0, 6], [-4, 4] ],
   "actionOnReap" : [],
-  "damageKind" : "jumpweapon",
+  "damageKind" : "fire",
   "universalDamage" : true,
   "statusEffects" : [
     "thea-burning"

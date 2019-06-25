@@ -72,6 +72,11 @@
 	"path": "/thea-mininglaser",
 	"value": "/items/active/weapons/ranged/abilities/thea-mininglaser/thea-mininglaser.weaponability"
   },
+  {
+	"op": "add",
+	"path": "/thea-fluxround",
+	"value": "/items/active/weapons/ranged/abilities/thea-fluxround/thea-fluxround.weaponability"
+  },
   //Avikan Generated Weapons
   {
 	"op": "add",

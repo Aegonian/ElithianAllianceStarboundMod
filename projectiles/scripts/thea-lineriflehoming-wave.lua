@@ -23,6 +23,8 @@ function init()
   --Seting up the sine wave movement
   self.wavePeriod = config.getParameter("wavePeriod") / (2 * math.pi)
   self.waveAmplitude = config.getParameter("waveAmplitude")
+  self.maxWaves = config.getParameter("maxWaves", -1)
+  self.waves = 0
   
   if config.getParameter("randomWavePeriod") then
 	self.wavePeriod = self.wavePeriod * (math.random(5, 20) / 10)
@@ -41,13 +43,21 @@ function update(dt)
 	projectile.die()
   end
   
-  --Sine wave movement code
-  self.timer = self.timer + dt
-  local newAngle = self.waveAmplitude * math.sin(self.timer / self.wavePeriod)
+  --Move the projectile in a sine wave motion by adjusting velocity direction
+  if (self.maxWaves == -1) or (self.waves < self.maxWaves) then
+	self.timer = self.timer + dt
+	local newAngle = self.waveAmplitude * math.sin(self.timer / self.wavePeriod)
 
-  mcontroller.setVelocity(vec2.rotate(mcontroller.velocity(), newAngle - self.lastAngle))
+	mcontroller.setVelocity(vec2.rotate(mcontroller.velocity(), newAngle - self.lastAngle))
 
-  self.lastAngle = newAngle
+	self.lastAngle = newAngle
+	
+	--Count up the waves we've completed
+	self.waves = self.timer / self.wavePeriod / (2 * math.pi)
+  end
+  
+  --world.debugText(self.waves, mcontroller.position(), "red")
+  --world.debugText(self.timer, vec2.add(mcontroller.position(), {0, -1}), "orange")
   
   if self.homingEnabled == true then
 	local targets = world.entityQuery(mcontroller.position(), self.searchDistance, {
