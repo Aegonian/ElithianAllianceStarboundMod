@@ -25,6 +25,8 @@ function TheaAmmoFire:update(dt, fireMode, shiftHeld)
   WeaponAbility.update(self, dt, fireMode, shiftHeld)
 
   self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
+  
+  world.debugText(self.currentAmmo, vec2.add(self:firePosition(), {0,1}), "orange")
 
   if animator.animationState("firing") ~= "fire" then
     animator.setLightActive("muzzleFlash", false)
@@ -53,7 +55,7 @@ function TheaAmmoFire:update(dt, fireMode, shiftHeld)
   end
   
   --Manual reload
-  if self.fireMode == "alt" and self.currentAmmo ~= self.maxAmmo and not self.weapon.currentAbility then
+  if self.fireMode == "alt" and self.currentAmmo ~= self.maxAmmo and not self.weapon.currentAbility and not self.disableManualReload then
 	if self.stances.preReloadTwirl then
 	  self:setState(self.preReloadTwirl)
 	else

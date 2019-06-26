@@ -1,188 +1,310 @@
 {
   "globalTagDefaults" : {
-    "paletteSwaps" : ""
+	"paletteSwaps" : ""
   },
 
   "animatedParts" : {
-    "stateTypes" : {
-      "gun" : {
-        "default" : "readyState1",
-        "states" : {
-          "readyState1" : {
+	"stateTypes" : {
+	  "gun" : {
+		"default" : "readyState1",
+		"states" : {
+		  "readyState1" : {
 			"frames" : 1
 		  },
-          "startCycle1" : {
-            "frames" : 1,
-            "cycle" : 0.15,
-            "mode" : "transition",
-            "transition" : "readyState2"
-          },
+		  "startCycle1" : {
+			"frames" : 1,
+			"cycle" : 0.15,
+			"mode" : "transition",
+			"transition" : "readyState2"
+		  },
 		  "readyState2" : {
 			"frames" : 1
 		  },
-          "startCycle2" : {
-            "frames" : 1,
-            "cycle" : 0.15,
-            "mode" : "transition",
-            "transition" : "readyState1"
-          },
-          "reload" : {
-            "frames" : 8,
-            "cycle" : 0.9,
-            "mode" : "transition",
-            "transition" : "readyState1"
-          }
-        }
-      },
+		  "startCycle2" : {
+			"frames" : 1,
+			"cycle" : 0.15,
+			"mode" : "transition",
+			"transition" : "readyState1"
+		  },
+		  "reload" : {
+			"frames" : 8,
+			"cycle" : 0.9,
+			"mode" : "transition",
+			"transition" : "readyState1"
+		  },
+		  //TRANSFORM TO SWORD
+		  "transformToSword" : {
+			"frames" : 8,
+			"cycle" : 0.5,
+			"mode" : "transition",
+			"transition" : "swordIdle",
+			"properties" : {
+			  "persistentSound" : "/sfx/melee/spear_twirl_loop.ogg"
+			}
+		  },
+		  //SWORD ANIMATION STATES
+		  "swordIdle" : {
+			"frames" : 5,
+			"cycle" : 0.5,
+			"mode" : "loop"
+		  },
+		  //TRANSFORM TO GUN
+		  "transformToGun" : {
+			"frames" : 3,
+			"cycle" : 0.3,
+			"mode" : "transition",
+			"transition" : "readyState1"
+		  }
+		}
+	  },
+	  //MUZZLEFLASH STATETYPES
 	  "firing" : {
-        "default" : "off",
-        "states" : {
-          "off" : {},
-          "fire" : {
-            "frames" : 2,
-            "cycle" : 0.07,
-            "mode" : "transition",
-            "transition" : "off"
-          }
-        }
-      }
-    },
+		"default" : "off",
+		"states" : {
+		  "off" : {},
+		  "fire" : {
+			"frames" : 2,
+			"cycle" : 0.07,
+			"mode" : "transition",
+			"transition" : "off"
+		  }
+		}
+	  },
+	  //SWOOSH STATETYPES
+	  "swoosh" : {
+		"default" : "idle",
+		"states" : {
+		  "idle" : {},
+		  "swing" : {
+			"frames" : 3,
+			"cycle" : 0.1,
+			"mode" : "transition",
+			"transition" : "idle"
+		  },
+		  "swing2" : {
+			"frames" : 3,
+			"cycle" : 0.1,
+			"mode" : "transition",
+			"transition" : "idle"
+		  }
+		}
+	  }
+	},
 
-    "parts" : {
-      "middle" : {
-        "properties" : {
+	"parts" : {
+	  "middle" : {
+		"properties" : {
 		  "zLevel" : 0,
-          "centered" : true,
-          "image" : "<partImage><paletteSwaps>",
-          "offset" : [0, 0], // x offset is set dynamically
-          "transformationGroups" : ["weapon"]
-        },
-        "partStates" : {
-          "gun" : {
-            "readyState1" : {
-              "properties" : {
-                "image" : "<partImage>:ready1"
-              }
-            },
+		  "centered" : true,
+		  "image" : "<partImage><paletteSwaps>",
+		  "offset" : [0, 0], // x offset is set dynamically
+		  "transformationGroups" : ["weapon"]
+		},
+		"partStates" : {
+		  "gun" : {
+			"readyState1" : {
+			  "properties" : {
+				"image" : "<partImage>:ready1"
+			  }
+			},
 			"startCycle1" : {
-              "properties" : {
-                "image" : "<partImage>:cycle1.<frame>"
-              }
-            },
+			  "properties" : {
+				"image" : "<partImage>:cycle1.<frame>"
+			  }
+			},
 			"readyState2" : {
-              "properties" : {
-                "image" : "<partImage>:ready2"
-              }
-            },
+			  "properties" : {
+				"image" : "<partImage>:ready2"
+			  }
+			},
 			"startCycle2" : {
-              "properties" : {
-                "image" : "<partImage>:cycle2.<frame>"
-              }
-            },
+			  "properties" : {
+				"image" : "<partImage>:cycle2.<frame>"
+			  }
+			},
 			"reload" : {
-              "properties" : {
-                "image" : "<partImage>:reload.<frame>"
-              }
-            }
-          }
-        }
-      },
-      "middleFullbright" : {
-        "properties" : {
+			  "properties" : {
+				"image" : "<partImage>:reload.<frame>"
+			  }
+			},
+			"transformToSword" : {
+			  "properties" : {
+				"image" : "<partImage>:transformToSword.<frame>"
+			  }
+			},
+			"swordIdle" : {
+			  "properties" : {
+				"image" : "<partImage>:swordIdle.<frame>?<bladeDirectives>"
+			  }
+			},
+			"transformToGun" : {
+			  "properties" : {
+				"image" : "<partImage>:transformToGun.<frame>"
+			  }
+			}
+		  }
+		}
+	  },
+	  "middleFullbright" : {
+		"properties" : {
 		  "zLevel" : 1,
-          "centered" : true,
-          "fullbright" : true,
-          "image" : "<partImage><paletteSwaps>",
-          "offset" : [0, 0], // x offset is set dynamically
-          "transformationGroups" : ["weapon"]
-        },
-        "partStates" : {
-          "gun" : {
-            "readyState1" : {
-              "properties" : {
-                "image" : "<partImage>:ready1"
-              }
-            },
+		  "centered" : true,
+		  "fullbright" : true,
+		  "image" : "<partImage><paletteSwaps>",
+		  "offset" : [0, 0], // x offset is set dynamically
+		  "transformationGroups" : ["weapon"]
+		},
+		"partStates" : {
+		  "gun" : {
+			"readyState1" : {
+			  "properties" : {
+				"image" : "<partImage>:ready1"
+			  }
+			},
 			"startCycle1" : {
-              "properties" : {
-                "image" : "<partImage>:cycle1.<frame>"
-              }
-            },
+			  "properties" : {
+				"image" : "<partImage>:cycle1.<frame>"
+			  }
+			},
 			"readyState2" : {
-              "properties" : {
-                "image" : "<partImage>:ready2"
-              }
-            },
+			  "properties" : {
+				"image" : "<partImage>:ready2"
+			  }
+			},
 			"startCycle2" : {
-              "properties" : {
-                "image" : "<partImage>:cycle2.<frame>"
-              }
-            },
+			  "properties" : {
+				"image" : "<partImage>:cycle2.<frame>"
+			  }
+			},
 			"reload" : {
-              "properties" : {
-                "image" : "<partImage>:reload.<frame>"
-              }
-            }
-          }
-        }
-      },
-      "muzzleFlash" : {
-        "properties" : {
-          "zLevel" : -1,
-          "centered" : true,
-          "offset" : [0.75, 0],
-          "fullbright" : true,
-          "transformationGroups" : ["muzzle"]
-        },
-        "partStates" : {
-          "firing" : {
-            "fire" : {
-              "properties" : {
-                "image" : "<partImage>:<variant>.<frame>"
-              }
-            }
-          }
-        }
-      }
-    }
+			  "properties" : {
+				"image" : "<partImage>:reload.<frame>"
+			  }
+			},
+			"transformToSword" : {
+			  "properties" : {
+				"image" : "<partImage>:transformToSword.<frame>"
+			  }
+			},
+			"swordIdle" : {
+			  "properties" : {
+				"image" : "<partImage>:swordIdle.<frame>"
+			  }
+			},
+			"transformToGun" : {
+			  "properties" : {
+				"image" : "<partImage>:transformToGun.<frame>"
+			  }
+			}
+		  }
+		}
+	  },
+	  "muzzleFlash" : {
+		"properties" : {
+		  "zLevel" : -1,
+		  "centered" : true,
+		  "offset" : [0.75, 0],
+		  "fullbright" : true,
+		  "transformationGroups" : ["muzzle"]
+		},
+		"partStates" : {
+		  "firing" : {
+			"fire" : {
+			  "properties" : {
+				"image" : "<partImage>:<variant>.<frame>"
+			  }
+			}
+		  }
+		}
+	  },
+	  "swoosh" : {
+		"properties" : {
+		  "zLevel" : -1,
+		  "centered" : true,
+		  "fullbright" : true,
+		  "transformationGroups" : ["weapon"],
+		  "rotationCenter" : [0, 0]
+		},
+		"partStates" : {
+		  "swoosh" : {
+			"idle" : {
+			  "properties" : {
+				"image" : ""
+			  }
+			},
+			"swing" : {
+			  "properties" : {
+				"image" : "/items/active/weapons/ranged/unique/jackofkings/swoosh/swoosh.png:<frame>",
+				"offset" : [0.25, 1.75],
+				"damageArea" : [[-3.75, 1.5], [-1.875, 2.25], [0.75, 2.25], [3, 1.25], [3.75, -0.15], [3.75, -1.675], [3, -2.375], [0, -1.875]]
+				//"damageArea" : [[0, 1.875], [-3, 2.375], [-3.75, 1.675], [-3.75, 0.15], [-3, -1.25], [-0.75, -2.25], [1.875, -2.25], [3.75, -1.5]]
+			  }
+			},
+			"swing2" : {
+			  "properties" : {
+				"image" : "/items/active/weapons/ranged/unique/jackofkings/swoosh/swoosh2.png:<frame>",
+				"offset" : [2.625, 0.125],
+				"damageArea" : [[-3, 1], [3, 1], [3, -1], [-3, -1]]
+			  }
+			}
+		  }
+		}
+	  }
+	}
   },
 
   "rotationGroups" : {
-    "weapon" : {
-      "angularVelocity" : 0
-    }
+	"weapon" : {
+	  "angularVelocity" : 0
+	}
   },
 
   "transformationGroups" : {
-    "weapon" : {},
-    "muzzle" : {}
+	"weapon" : {},
+	"muzzle" : {},
+	"swoosh" : {}
   },
 
   "particleEmitters" : {
-    "muzzleFlash" : {
-      "transformationGroups" : ["muzzle"],
-      "offsetRegion" : [0, 0, 0, 0],
-      "particles" : [ ]
-    },
-    "reload" : {
-      "transformationGroups" : ["muzzle"],
-      "offsetRegion" : [0, 0, 0, 0],
-      "particles" : [ ]
-    }
+	"muzzleFlash" : {
+	  "transformationGroups" : ["muzzle"],
+	  "offsetRegion" : [0, 0, 0, 0],
+	  "particles" : [ ]
+	},
+	"reload" : {
+	  "transformationGroups" : ["muzzle"],
+	  "offsetRegion" : [0, 0, 0, 0],
+	  "particles" : [ ]
+	},
+	"swoosh" : {
+	  "active" : false,
+	  "transformationGroups" : ["swoosh"],
+	  "emissionRate" : 1,
+	  "burstCount" : 1,
+	  "particles" : []
+	}
   },
 
   "lights" : {
-    "muzzleFlash" : {
-      "active" : false,
-      "position" : [0, 0],
-      "color" : [90, 90, 0]
-    }
+	"muzzleFlash" : {
+	  "active" : false,
+	  "position" : [0, 0],
+	  "color" : [90, 90, 0]
+	}
   },
 
   "sounds" : {
-    "fire" : [ ],
-    "preReloadTwirl" : [ ],
+	//GUN SOUNDS
+	"fire" : [ ],
+	"preReloadTwirl" : [ ],
 	"reloadLoop" : [ ],
-	"reload" : [ ]
+	"reload" : [ ],
+	
+	//SWORD SOUNDS
+	"swing" : [ ],
+	"swing2" : [ ],
+	
+	//TRANSFORM SOUNDS
+	"transform" : [ ]
   }
 }
