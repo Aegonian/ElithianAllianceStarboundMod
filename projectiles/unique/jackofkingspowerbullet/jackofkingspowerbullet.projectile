@@ -1,0 +1,39 @@
+{
+  "projectileName" : "jackofkingspowerbullet",
+  "physics" : "laser",
+  "bounces" : 0,
+  "image" : "jackofkingspowerbullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 180,
+  "supportsProcessing" : true,
+  "emitters" : [ "jackofkingstrail" ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "textured",
+        "image" : "/projectiles/unique/jackofkingspowerbullet/trail.png",
+        "position" : [-1.5, 0],
+        "layer" : "middle",
+        "timeToLive" : 0.0,
+        "destructionTime" : 0.3,
+        "destructionAction" : "fade",
+        "fullbright" : true
+      }
+    }
+  ],
+  "lightColor" : [130, 100, 0],
+  "fullbright" : true,
+  "damageKind" : "jackofkings"
+}

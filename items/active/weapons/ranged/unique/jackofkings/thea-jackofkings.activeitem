@@ -4,11 +4,11 @@
   "inventoryIcon" : "thea-jackofkingsicon.png",
   "maxStack" : 1,
   "rarity" : "Essential",
-  "description" : "^orange;A beastly, multi-purpose hand cannon built in the Rim.",
+  "description" : "^orange;A beastly, multi-purpose hand cannon and plasma blade.",
   "shortdescription" : "^#FFDD59;Jack of Kings^white;",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-ammogun-patreon",
+  "tooltipKind" : "thea-ammogunnoreload-patreon",
   "category" : "Hand Cannon",
   "itemTags" : ["weapon","ranged","pistol","alliance","theaUnique"],
   "twoHanded" : true,
@@ -22,12 +22,18 @@
   "animationParts" : {
     "middle" : "thea-jackofkings.png",
     "middleFullbright" : "thea-jackofkingslights.png",
-    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/allianceenergyflash.png"
+    "buff" : "thea-jackofkingsbuff.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/jackofkingsmuzzle.png"
   },
   "animationCustom" : {
     "animatedParts" : {
       "parts" : {
         "middleFullbright" : {
+		  "properties" : {
+		    "offset" : [1.25, 0.125]
+		  }
+		},
+        "buff" : {
 		  "properties" : {
 		    "offset" : [1.25, 0.125]
 		  }
@@ -54,8 +60,13 @@
 	  //SWORD SOUNDS
       "swing" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
       "swing2" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
+      "swing3" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
+      "swing4" : [ "/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg" ],
 	  //TRANSFORM SOUNDS
-	  "transform" : [ "/sfx/objects/cropshipper_door_open.ogg" ]
+	  "transform" : [ "/sfx/objects/cropshipper_door_open.ogg" ],
+	  //BUFF SOUNDS
+	  "activateBuff" : [ "/sfx/tech/tech_blink1.ogg" ],
+	  "deactivateBuff" : [ "/sfx/tech/tech_blink2.ogg" ]
     }
   },
 
@@ -63,13 +74,12 @@
   "muzzleOffset" : [1.125, 0.25],
 
   "scripts" : ["/items/active/weapons/ranged/unique/jackofkings/thea-jackofkings.lua"],
-  //"scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
 
   "elementalType" : "physical",
   
   "primaryAbility" : {
-    "scripts" : ["/items/active/weapons/ranged/abilities/thea-ammofire.lua"],
-    "class" : "TheaAmmoFire",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-ammofire-powerkill.lua"],
+    "class" : "TheaAmmoFirePowerKill",
 
     "fireTime" : 0.62,
     "baseDps" : 13.5,
@@ -80,11 +90,17 @@
 	"maxAmmo" : 6,
 	"cycleAfterShot" : true,
 	"disableManualReload" : true,
+	
+	"activatingDamageKind" : "jackofkings",
+	"statusEffectOnKill" : "jackofkingsheal",
+	"buffedPowerMultiplier" : 1.5,
+	"buffedStateImprovesReload" : true,
 
     "projectileCount" : 1,
     "fireType" : "auto",
 
-    "projectileType" : "allianceenergybullet",
+    "projectileType" : "jackofkingsbullet",
+    "powerProjectileType" : "jackofkingspowerbullet",
     "projectileParameters" : {
       "knockback" : 12
     },
@@ -100,8 +116,9 @@
       },
       "fire" : {
         "duration" : 0,
-        "armRotation" : 7,
-        "weaponRotation" : 20,
+        "armRotation" : 6,
+        "weaponRotation" : 12,
+		"weaponOffset" : [-0.05, 0.0],
         "twoHanded" : true,
 
         "allowRotate" : false,
@@ -109,8 +126,9 @@
       },
       "cooldown" : {
         "duration" : 0.40,
-        "armRotation" : 7,
-        "weaponRotation" : 20,
+        "armRotation" : 6,
+        "weaponRotation" : 12,
+		"weaponOffset" : [-0.05, 0.0],
         "twoHanded" : true,
 
         "allowRotate" : false,
@@ -118,6 +136,22 @@
       },
       "preReloadTwirl" : {
         "duration" : 0.35,
+        "armRotation" : 10,
+        "endArmRotation" : -20,
+        "weaponRotation" : 55,
+        "endWeaponRotation" : 435,
+		"weaponOffset" : [-0.25, -0.125],
+        "twoHanded" : true,
+
+        "aimAngle" : 0,
+        "allowRotate" : false,
+        "allowFlip" : true,
+		
+        "frontArmFrame" : "run.4",
+        "backArmFrame" : "rotation"
+      },
+      "preReloadTwirlFast" : {
+        "duration" : 0.20,
         "armRotation" : 10,
         "endArmRotation" : -20,
         "weaponRotation" : 55,
@@ -150,6 +184,25 @@
 		  [0.7, "run.1"]
 		],
         "backArmFrame" : "rotation"
+      },
+      "reloadFast" : {
+        "duration" : 0.7,
+        "armRotation" : -25,
+        "weaponRotation" : 75,
+		"weaponOffset" : [-0.25, 0.0],
+        "twoHanded" : true,
+
+        "aimAngle" : 0,
+        "allowRotate" : false,
+        "allowFlip" : true,
+
+		"frontArmFrameSequence" : [
+		  [0.0, "rotation"],
+		  [0.1, "walk.2"],
+		  [0.3, "run.3"],
+		  [0.5, "run.1"]
+		],
+        "backArmFrame" : "rotation"
       }
     }
   },
@@ -162,14 +215,16 @@
     "transformCooldownTime" : 0.75,
 	"reloadOnTransform" : true,
 
-    "comboSteps" : 2,
+    "comboSteps" : 4,
 
     "flashTime" : 0.15,
     "flashDirectives" : "fade=FFFFFFFF=0.15",
 
     "swooshOffsetRegions" : [
-      [-1.0, -0.25, 2.5, 2.0],
-      [0, -0.5, 2.5, 1.0]
+      [0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0],
+      [0.0, 0.0, 0.0, 0.0]
     ],
 
     // cooldown time multiplier for steps after the first, compounded per combo step
@@ -181,12 +236,20 @@
     "baseDps" : 10.5,
 
     "damageConfig" : {
-      "damageSourceKind" : "shortsword",
+      "damageSourceKind" : "jackofkings",
       "statusEffects" : [ ],
       "knockbackMode" : "facing",
       "timeout" : 0.5
     },
     "stepDamageConfig" : [
+      {
+        "baseDamageFactor" : 1.0,
+        "knockback" : 10
+      },
+      {
+        "baseDamageFactor" : 0.8,
+        "knockback" : 8
+      },
       {
         "baseDamageFactor" : 1.0,
         "knockback" : 10
@@ -273,6 +336,78 @@
       },
 	  //COMBO STEP 2
       "windup2" : {
+        "duration" : 0.05,
+        "armRotation" : -15,
+        "weaponRotation" : 30,
+        "weaponOffset" : [0.5, -0.125],
+        "twoHanded" : false,
+		
+        "allowFlip" : true,
+        "allowRotate" : true
+      },
+      "swing2" : {
+        "duration" : 0.2,
+        "armRotation" : -135,
+        "weaponRotation" : 130,
+        "weaponOffset" : [0.5, -0.125],
+        "twoHanded" : false,
+		
+        "allowFlip" : false,
+        "allowRotate" : false
+      },
+      "wait2" : {
+        "duration" : 0.1,
+        "armRotation" : -135,
+        "weaponRotation" : 130,
+        "weaponOffset" : [0.5, -0.125],
+        "twoHanded" : false,
+		
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+	  //COMBO STEP 3
+      "windup3" : {
+        "duration" : 0.1,
+        "armRotation" : -110,
+        "weaponRotation" : 310,
+        "weaponOffset" : [0.5, -0.125],
+        "twoHanded" : false,
+		
+        "allowFlip" : true,
+        "allowRotate" : true
+      },
+      "preslash3" : {
+        "duration" : 0.025,
+        "armRotation" : 5,
+        "weaponRotation" : 275,
+        "weaponOffset" : [0.5, -0.125],
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "swing3" : {
+        "duration" : 0.2,
+        "armRotation" : 80,
+        "weaponRotation" : 290,
+        "weaponOffset" : [0.5, -0.125],
+        "twoHanded" : false,
+		
+        "allowFlip" : false,
+        "allowRotate" : false
+      },
+      "wait3" : {
+        "duration" : 0.1,
+        "armRotation" : 60,
+        "weaponRotation" : 300,
+        "weaponOffset" : [0.5, -0.125],
+        "twoHanded" : false,
+		
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+	  //COMBO STEP 4
+      "windup4" : {
         "duration" : 0.2,
         "armRotation" : -135,
         "weaponRotation" : 130,
@@ -282,7 +417,7 @@
         "allowFlip" : true,
         "allowRotate" : true
       },
-      "swing2" : {
+      "swing4" : {
         "duration" : 0.3,
         "armRotation" : 0,
         "weaponRotation" : 0,
@@ -295,5 +430,5 @@
     }
   },
   
-  "builder" : "/items/buildscripts/thea-buildammoweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildammoweapon-noreload.lua"
 }

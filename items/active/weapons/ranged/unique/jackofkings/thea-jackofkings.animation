@@ -32,6 +32,12 @@
 			"mode" : "transition",
 			"transition" : "readyState1"
 		  },
+		  "reloadFast" : {
+			"frames" : 8,
+			"cycle" : 0.6,
+			"mode" : "transition",
+			"transition" : "readyState1"
+		  },
 		  //TRANSFORM TO SWORD
 		  "transformToSword" : {
 			"frames" : 8,
@@ -86,6 +92,39 @@
 			"cycle" : 0.1,
 			"mode" : "transition",
 			"transition" : "idle"
+		  },
+		  "swing3" : {
+			"frames" : 3,
+			"cycle" : 0.1,
+			"mode" : "transition",
+			"transition" : "idle"
+		  },
+		  "swing4" : {
+			"frames" : 3,
+			"cycle" : 0.1,
+			"mode" : "transition",
+			"transition" : "idle"
+		  }
+		}
+	  },
+	  //BUFF STATETYPES
+	  "buff" : {
+		"default" : "inactive",
+		"states" : {
+		  "inactive" : {
+			"properties" : {
+              "particleEmittersOff" : [ "buff" ],
+              "lightsOff" : [ "buff" ]
+            }
+		  },
+		  "active" : {
+			"frames" : 4,
+			"cycle" : 0.3,
+			"mode" : "loop",
+			"properties" : {
+              "particleEmittersOn" : [ "buff" ],
+              "lightsOn" : [ "buff" ]
+            }
 		  }
 		}
 	  }
@@ -123,6 +162,11 @@
 			  }
 			},
 			"reload" : {
+			  "properties" : {
+				"image" : "<partImage>:reload.<frame>"
+			  }
+			},
+			"reloadFast" : {
 			  "properties" : {
 				"image" : "<partImage>:reload.<frame>"
 			  }
@@ -181,6 +225,11 @@
 				"image" : "<partImage>:reload.<frame>"
 			  }
 			},
+			"reloadFast" : {
+			  "properties" : {
+				"image" : "<partImage>:reload.<frame>"
+			  }
+			},
 			"transformToSword" : {
 			  "properties" : {
 				"image" : "<partImage>:transformToSword.<frame>"
@@ -194,6 +243,30 @@
 			"transformToGun" : {
 			  "properties" : {
 				"image" : "<partImage>:transformToGun.<frame>"
+			  }
+			}
+		  }
+		}
+	  },
+	  "buff" : {
+		"properties" : {
+		  "zLevel" : 2,
+		  "centered" : true,
+		  "fullbright" : true,
+		  "image" : "<partImage><paletteSwaps>",
+		  "offset" : [0, 0], // x offset is set dynamically
+		  "transformationGroups" : ["weapon"]
+		},
+		"partStates" : {
+		  "buff" : {
+			"inactive" : {
+			  "properties" : {
+				"image" : ""
+			  }
+			},
+			"active" : {
+			  "properties" : {
+				"image" : "<partImage>:<frame>"
 			  }
 			}
 		  }
@@ -243,6 +316,20 @@
 			"swing2" : {
 			  "properties" : {
 				"image" : "/items/active/weapons/ranged/unique/jackofkings/swoosh/swoosh2.png:<frame>",
+				"offset" : [3.5, 0.75],
+                "damageArea" : [ [-2.25, 1.125], [0.25, 1.125], [1.625, 0.75], [2.5, 0], [2.5, -0.5], [2.125, -0.875], [1, -1.375], [-2.25, -1.375] ]
+			  }
+			},
+			"swing3" : {
+			  "properties" : {
+				"image" : "/items/active/weapons/ranged/unique/jackofkings/swoosh/swoosh3.png:<frame>",
+				"offset" : [0.25, -1.75],
+				"damageArea" : [[-3.75, -1.5], [-1.875, -2.25], [0.75, -2.25], [3, -1.25], [3.75, 0.15], [3.75, 1.675], [3, 2.375], [0, 1.875]]
+			  }
+			},
+			"swing4" : {
+			  "properties" : {
+				"image" : "/items/active/weapons/ranged/unique/jackofkings/swoosh/swoosh4.png:<frame>",
 				"offset" : [2.625, 0.125],
 				"damageArea" : [[-3, 1], [3, 1], [3, -1], [-3, -1]]
 			  }
@@ -278,10 +365,39 @@
 	},
 	"swoosh" : {
 	  "active" : false,
-	  "transformationGroups" : ["swoosh"],
+	  "transformationGroups" : ["weapon"],
 	  "emissionRate" : 1,
 	  "burstCount" : 1,
 	  "particles" : []
+	},
+	"activateBuff" : {
+	  "transformationGroups" : ["weapon"],
+	  "offsetRegion" : [0.75, 0.5, 0.5, 0.375],
+	  "burstCount" : 5,
+	  "particles" : [
+		{ "particle" : "jackofkings" },
+		{ "particle" : "jackofkingslarge" },
+		{ "particle" : "jackofkings2" },
+		{ "particle" : "jackofkingslarge2" }
+	  ]
+	},
+	"deactivateBuff" : {
+	  "transformationGroups" : ["weapon"],
+	  "offsetRegion" : [0.75, 0.5, 0.5, 0.375],
+	  "burstCount" : 4,
+	  "particles" : [
+		{ "particle" : "jackofkings" },
+		{ "particle" : "jackofkings2" }
+	  ]
+	},
+	"buff" : {
+	  "transformationGroups" : ["weapon"],
+	  "offsetRegion" : [0.75, 0.5, 0.5, 0.375],
+	  "emissionRate" : 3,
+	  "particles" : [
+		{ "particle" : "jackofkings" },
+		{ "particle" : "jackofkings2" }
+	  ]
 	}
   },
 
@@ -290,6 +406,11 @@
 	  "active" : false,
 	  "position" : [0, 0],
 	  "color" : [90, 90, 0]
+	},
+	"buff" : {
+	  "active" : false,
+	  "position" : [0, 0],
+	  "color" : [130, 100, 0]
 	}
   },
 
@@ -303,8 +424,14 @@
 	//SWORD SOUNDS
 	"swing" : [ ],
 	"swing2" : [ ],
+	"swing3" : [ ],
+	"swing4" : [ ],
 	
 	//TRANSFORM SOUNDS
-	"transform" : [ ]
+	"transform" : [ ],
+	
+	//BUFF SOUNDS
+	"activateBuff" : [ ],
+	"deactivateBuff" : [ ]
   }
 }

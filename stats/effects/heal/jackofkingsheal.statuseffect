@@ -1,0 +1,17 @@
+{
+  "name" : "jackofkingsheal",
+  "effectConfig" : {
+    "healAmount" : 30,
+    "emissionRate" : 5
+  },
+  "defaultDuration" : 1.5,
+
+  "scripts" : [
+    "heal.lua"
+  ],
+
+  "animationConfig" : "heal.animation",
+
+  "label" : "King's Healing Embrace",
+  "icon" : "/interface/statuses/heal.png"
+}

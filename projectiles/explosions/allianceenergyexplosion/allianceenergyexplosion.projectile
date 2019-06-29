@@ -5,7 +5,7 @@
   "animationCycle" : 0.4,
   "frameNumber" : 5,
   "speed" : 0,
-  "lightColor" : [255, 190, 0],
+  "lightColor" : [127, 201, 255],
   "pointLight" : true,
   "fullbright" : true,
   "statusEffects" : [ ],

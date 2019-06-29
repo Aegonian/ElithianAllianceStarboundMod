@@ -7,7 +7,7 @@
   "description" : "A standard-issue Alliance SMG.",
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Barok P-2",
-  "level" : 4,
+  "level" : 2,
   "tooltipKind" : "thea-gun-mf",
   "category" : "Submachinegun",
   "itemTags" : ["weapon","ranged","smg","alliance","aae","allianceUpgradeable"],

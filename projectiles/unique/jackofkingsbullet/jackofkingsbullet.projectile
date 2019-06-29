@@ -1,0 +1,20 @@
+{
+  "projectileName" : "jackofkingsbullet",
+  "physics" : "laser",
+  "bounces" : 0,
+  "image" : "jackofkingsbullet.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 160,
+  "supportsProcessing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+    }
+  ],
+  "lightColor" : [75, 60, 0],
+  "fullbright" : true,
+  "damageKind" : "jackofkings"
+}

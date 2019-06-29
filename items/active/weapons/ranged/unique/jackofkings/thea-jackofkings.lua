@@ -36,6 +36,7 @@ function update(dt, fireMode, shiftHeld)
   if self.altAbility.reloaded then
 	self.altAbility.reloaded = false
 	self.primaryAbility.currentAmmo = self.primaryAbility.maxAmmo
+	self.primaryAbility.buffedState = false
 	activeItem.setInstanceValue("ammoCount", self.primaryAbility.maxAmmo)
   end
   
