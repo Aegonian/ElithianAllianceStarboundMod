@@ -1,0 +1,35 @@
+{
+  "itemName" : "rimdwellercache",
+  "level" : 1,
+  "fixedLevel" : false,
+  "price" : 250,
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "description" : "A sealed cache containing something of value. Hold ^green;[LMB] ^white;to open!",
+  "shortdescription" : "Sealed Rim Cache",
+  "tooltipKind" : "thea-sealedcache",
+  "category" : "Sealed Cache",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "rimdwellercacheicon.png",
+  "animation" : "rimdwellercache.animation",
+  "animationParts" : {
+    "treasurebox" : "rimdwellercache.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "open" : [ "/sfx/objects/colonydeed_partyhorn.ogg" ],
+	  "openLoop" : [ "/sfx/other/thea_sealedcache_opening2.ogg" ]
+    }
+  },
+  
+  "scripts" : ["/items/active/other/thea-sealedcache/thea-sealedcache.lua"],
+
+  "fireOffset" : [1.0, 0.0],
+
+  "treasure" : {
+    "pool" : "rimdwellerTreasurebox"
+  },
+
+  "builder" : "/items/buildscripts/thea-buildsealedcache.lua"
+}

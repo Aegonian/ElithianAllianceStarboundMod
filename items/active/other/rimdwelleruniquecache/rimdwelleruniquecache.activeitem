@@ -1,0 +1,35 @@
+{
+  "itemName" : "rimdwelleruniquecache",
+  "level" : 6,
+  "fixedLevel" : false,
+  "price" : 1000,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "A sealed cache containing a random Unique-quality item. Hold ^green;[LMB] ^white;to open!",
+  "shortdescription" : "^orange;Unique Rim Cache^white;",
+  "tooltipKind" : "thea-sealedcache-unique",
+  "category" : "Sealed Cache",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "rimdwelleruniquecacheicon.png",
+  "animation" : "rimdwelleruniquecache.animation",
+  "animationParts" : {
+    "treasurebox" : "rimdwelleruniquecache.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "open" : [ "/sfx/objects/colonydeed_partyhorn.ogg" ],
+	  "openLoop" : [ "/sfx/other/thea_sealedcache_opening2.ogg" ]
+    }
+  },
+  
+  "scripts" : ["/items/active/other/thea-sealedcache/thea-sealedcache.lua"],
+
+  "fireOffset" : [1.0, 0.0],
+
+  "treasure" : {
+    "pool" : "uniqueweaponsRim"
+  },
+
+  "builder" : "/items/buildscripts/thea-buildsealedcache.lua"
+}

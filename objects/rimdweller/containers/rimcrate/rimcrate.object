@@ -1,0 +1,54 @@
+{
+  "objectName" : "rimcrate",
+  "colonyTags" : ["rimdweller", "storage"],
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "category" : "storage",
+  "printable" : false,
+  "price" : 40,
+  "description" : "A simple metal container.",
+  "shortdescription" : "Rim Crate",
+  "race" : "aegi",
+  
+  "health" : 6,
+
+  "apexDescription" : "A metal crate. Not much else to it.",
+  "avianDescription" : "I wonder what this crate might hold?",
+  "floranDescription" : "Cratesss full of goodiesss!",
+  "glitchDescription" : "Bored. A simple metal crate.",
+  "humanDescription" : "Is there loot inside?",
+  "hylotlDescription" : "A sturdy metal crate.",
+  "novakidDescription" : "A crate. Quite basic.",
+
+  "aegiDescription" : "A storage crate created in the Rim.",
+  "avikanDescription" : "A metal crate of alien design.",
+  "erixianDescription" : "A crate of Rimdweller design.",
+  "trinkDescription" : "The Rim produces very sturdy products.",
+  "hymidDescription" : "A simple metal crate.",
+  "notixDescription" : "A basic crate.",
+  "jorgasianDescription" : "I wonder what I'll find inside?",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Analyzing content.",
+
+  "inventoryIcon" : "rimcrateicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "rimcrate.png:<color>.<key>",
+      "imagePosition" : [-8, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/chest_small_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/chest_small_close.ogg" ],
+  "slotCount" : 16,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 10,
+  "autoCloseCooldown" : 3600
+}

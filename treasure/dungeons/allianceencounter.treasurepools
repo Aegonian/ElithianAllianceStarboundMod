@@ -207,53 +207,6 @@
       ]
     } ]
   ],
-
-	//RIMDWELLER POOLS
-  "alliancerimdwellerweapons" : [
-    [1, {
-      "pool" : [
-        {"weight" : 0.1, "item" : "thea-rimrifle1" },
-		{"weight" : 0.1, "item" : "thea-rimrifle2" },
-		{"weight" : 0.1, "item" : "thea-rimsniper1" },
-		{"weight" : 0.1, "item" : "thea-rimshotgun1" },
-		{"weight" : 0.1, "item" : "thea-rimsmg1" },
-		{"weight" : 0.1, "item" : "thea-rimpistol1" },
-		{"weight" : 0.1, "item" : "thea-rimchainsaw" },
-		{"weight" : 0.1, "item" : "thea-rimtorch1" },
-		{"weight" : 0.1, "item" : "rimdwellershield" }
-      ]
-    } ]
-  ],
-  "alliancerimdwellerweapons2" : [
-    [1, {
-      "pool" : [
-		{"weight" : 0.1, "item" : "thea-rimshotgun1" },
-		{"weight" : 0.1, "item" : "thea-rimlauncher1" },
-		{"weight" : 0.1, "item" : "thea-rimgrenadelauncher1" },
-		{"weight" : 0.1, "item" : "thea-rimmachinegun1" },
-		{"weight" : 0.1, "item" : "thea-rimminigun1" }
-      ]
-    } ]
-  ],
-  
-  "alliancerimdwellerarmour" : [
-    [1, {
-      "pool" : [
-        {"weight" : 0.1, "item" : "aegi-rimdwellerhead" },
-		{"weight" : 0.1, "item" : "aegi-rimdwellerchest" },
-		{"weight" : 0.1, "item" : "aegi-rimdwellerlegs" }
-      ]
-    } ]
-  ],
-  "alliancerimdwellerarmour2" : [
-    [1, {
-      "pool" : [
-        {"weight" : 0.1, "item" : "aegi-rimsoldierhead" },
-		{"weight" : 0.1, "item" : "aegi-rimsoldierchest" },
-		{"weight" : 0.1, "item" : "aegi-rimsoldierlegs" }
-      ]
-    } ]
-  ],
   
   "alliancegrenades" : [
     [1, {

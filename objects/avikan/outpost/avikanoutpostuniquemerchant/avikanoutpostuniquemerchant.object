@@ -65,7 +65,7 @@
 	],
 	//Randomly selected stock, resets every day. Items can be grouped together using brackets
     "randomWeapon" : [
-		//Avikan Weapons
+		//AVIKAN Weapons
 	  [ "avikan-errasslayerslance", "avikan-primeinitiative" ],
 	  [ "avikan-sandcannon", "avikan-sandstalkersbane" ],
 	  [ "avikan-airstrike", "avikan-terveleadersbow" ],
@@ -75,18 +75,26 @@
 	  [ "avikan-vhalakinlongbow", "avikanteslaspear" ],
 	  [ "avikan-conscriptor", "avikan-anakahrstaff" ],
 	  [ "avikan-skoffwreckersbow", "avikan-lightstalker" ],
-		//Centens Weapons
+	  
+		//CENTENS Weapons
 	  [ "avikan-handofrhadeis", "centens-deathseeker" ],
 	  [ "centens-voideater", "centens-voiceofrhadeis" ],
 	  [ "centens-eventhorizon", "centens-wrathofrhadeis" ],
-		//Trink Weapons
+	  
+		//TRINK Weapons
 	  [ "trink-shockbolter", "trink-frostlaser" ],
 	  [ "trink-energizer", "trink-arclighter" ],
-		//Alliance Weapons
+	  
+		//ALLIANCE Weapons
 	  [ "thea-sidewinder", "thea-skylighter" ],
 	  [ "thea-defiant", "thea-meltdown" ],
 	  [ "thea-siegerunner", "thea-lightrunner" ],
-		//Akkimari Weapons
+	  
+		//RIMDWELLER Weapons
+	  [ "thea-breacher", "thea-branditzer" ],
+	  [ "thea-corsair", "thea-jackofkings" ],
+	  
+		//AKKIMARI Weapons
 	  [ "akkimari-sawbladelauncher", "akkimari-scrapyard" ],
 	  [ "akkimari-blastsling", "akkimari-karchaablade" ],
 	  [ "akkimari-charakkiblade", "akkimari-shalakkaritualstaff" ],

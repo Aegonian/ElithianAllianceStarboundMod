@@ -14,7 +14,7 @@
   "twoHanded" : true,
   
   //CONFIGURATION FOR WEAPONS COLLECTION
-  //"collectablesOnPickup" : { "thea_weapons" : "thea-jackofkings" },
+  "collectablesOnPickup" : { "thea_weapons" : "thea-jackofkings" },
   
   "meritTokenValue" : 100,
 

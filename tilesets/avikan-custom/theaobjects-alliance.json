@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":184,
+ "tilecount":185,
  "tileheight":128,
  "tileproperties":
     {
@@ -767,6 +767,14 @@
          "imagePositionX":"-16",
          "imagePositionY":"0",
          "object":"alliancebackgrounddoor-wired",
+         "tilesetDirection":"right"
+        },
+     "184":
+        {
+         "\/\/shortdescription":"Rim Crate",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"rimcrate",
          "tilesetDirection":"right"
         },
      "19":
@@ -1863,6 +1871,10 @@
      "183":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/alliancebackgrounddoor-wired.png"
+        },
+     "184":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/alliance\/rimcrate.png"
         },
      "19":
         {

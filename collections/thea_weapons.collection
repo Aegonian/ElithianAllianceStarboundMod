@@ -497,6 +497,12 @@
       "title" : "Corsair Type-2",
       "description" : "A well-balanced weapon favoured by pirates from the Rim.",
       "icon" : "/items/active/weapons/ranged/unique/corsair/thea-corsairicon.png"
+    },
+	"thea-jackofkings" : {
+      "order" : 81,
+      "title" : "Jack of Kings",
+      "description" : "A beastly, multi-purpose hand cannon and plasma blade.",
+      "icon" : "/items/active/weapons/ranged/unique/jackofkings/thea-jackofkingsicon.png"
     }
   }
 }

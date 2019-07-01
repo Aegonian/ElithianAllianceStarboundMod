@@ -69,6 +69,19 @@
     }]
   ],
   
+	//RIMDWELLER WEAPONS
+  "uniqueweaponsRim" : [
+    [1, {
+      "poolRounds" : 1,
+      "pool" : [
+        {"weight" : 1.0, "item" : "thea-breacher"},
+        {"weight" : 1.0, "item" : "thea-branditzer"},
+        {"weight" : 1.0, "item" : "thea-corsair"},
+		{"weight" : 1.0, "item" : "thea-jackofkings"}
+      ]
+    }]
+  ],
+  
 	//AKKIMARI WEAPONS
   "uniqueweaponsAkkimari" : [
     [1, {

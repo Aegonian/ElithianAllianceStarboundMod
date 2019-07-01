@@ -1,9 +1,9 @@
 {
   "background" : {
     "type" : "background",
-    "fileHeader" : "/interface/tooltips/header.png",
-    "fileBody" : "/interface/tooltips/bodyobject.png",
-    "fileFooter" : "/interface/tooltips/footerobject.png"
+    "fileHeader" : "/interface/tooltips/theauniqueheader.png",
+    "fileBody" : "/interface/tooltips/theauniquebodyobject.png",
+    "fileFooter" : "/interface/tooltips/theauniquefooterobject.png"
   },
   //===================== LEVEL LABELS =====================
   "levelTitleLabel" : {

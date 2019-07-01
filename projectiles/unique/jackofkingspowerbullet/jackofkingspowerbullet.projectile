@@ -33,6 +33,9 @@
       }
     }
   ],
+  "statusEffects" : [
+    "jackofkingsbomb"
+  ],
   "lightColor" : [130, 100, 0],
   "fullbright" : true,
   "damageKind" : "jackofkings"

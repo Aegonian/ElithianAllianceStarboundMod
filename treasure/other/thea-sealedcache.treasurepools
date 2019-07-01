@@ -30,7 +30,8 @@
         {"pool" : "avikanclothing" },
 		{"pool" : "avikanTreasureWeapons" },
 		{"pool" : "avikancraftingmaterialsstockpile" },
-		{"pool" : "sealedCacheRareTreasure" }
+		{"pool" : "sealedCacheRareTreasure" },
+		{"pool" : "sealedAvikanCacheRareTreasure" }
       ]
     } ]
   ],
@@ -40,6 +41,15 @@
       "pool" : [
         {"weight" : 0.9, "pool" : "avikangeneratedweapons" },
 		{"weight" : 0.1, "pool" : "uniqueweaponsAvikan" }
+      ]
+    } ]
+  ],
+  "sealedAvikanCacheRareTreasure" : [
+    [1, {
+      "poolRounds" : 1,
+      "pool" : [
+        {"weight" : 0.05, "item" : "nulldrive" },
+        {"weight" : 0.95, "pool" : "empty" }
       ]
     } ]
   ],
@@ -86,6 +96,29 @@
       "pool" : [
         {"weight" : 0.9, "pool" : "alliancegeneratedweapons" },
 		{"weight" : 0.1, "pool" : "uniqueweaponsAlliance" }
+      ]
+    } ]
+  ],
+  
+  //=================================================================
+  // RIMDWELLER LOOT BOX
+  //=================================================================
+  "rimdwellerTreasurebox" : [
+    [1, {
+	  "fill" : [
+        {"pool" : "alliancerimdwellerarmourpools" },
+		{"pool" : "rimdwellerTreasureWeapons" },
+		{"pool" : "alliancecraftingmaterialsstockpile" },
+		{"pool" : "sealedCacheRareTreasure" }
+      ]
+    } ]
+  ],
+  "rimdwellerTreasureWeapons" : [
+    [1, {
+      "poolRounds" : 1,
+      "pool" : [
+        {"weight" : 0.9, "pool" : "alliancerimdwellerweaponpools" },
+		{"weight" : 0.1, "pool" : "uniqueweaponsRim" }
       ]
     } ]
   ],
