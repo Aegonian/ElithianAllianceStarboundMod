@@ -156,6 +156,9 @@
     "energyUsage" : 35.0,
     "inaccuracy" : 0.0,
 	
+	"beamCollisionType" : "box",
+	"beamWidth" : 0.5,
+	
 	"walkWhileFiring" : true,
 	
 	"impactDamageTimeout" : 0.2,

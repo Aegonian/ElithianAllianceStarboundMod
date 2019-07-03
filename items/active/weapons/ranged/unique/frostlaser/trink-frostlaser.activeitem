@@ -74,6 +74,9 @@
     "energyUsage" : 35.0,
     "inaccuracy" : 0.0,
 	
+	"beamCollisionType" : "taper",
+	"beamWidth" : 0.5,
+	
 	"impactDamageTimeout" : 0.2,
 	"spawnImpactProjectile" : true,
 	"impactProjectile" : "snowmodspawner",

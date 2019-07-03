@@ -28,6 +28,8 @@ function TheaChargedShotAltFire:update(dt, fireMode, shiftHeld)
   end
 
   self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
+  
+  world.debugText("Projectile Type Alt: " .. sb.print(self.projectileType), vec2.add(mcontroller.position(), {0,1}), "yellow")
 
   --If holding fire, and nothing is holding back the charging process
   if self.fireMode == "alt"
@@ -155,9 +157,7 @@ function TheaChargedShotAltFire:fireProjectile(burstNumber)
   params.powerMultiplier = activeItem.ownerPowerMultiplier()
   params.speed = util.randomInRange(params.speed)
 
-  if not projectileType then
-    projectileType = self.projectileType
-  end
+  local projectileType = self.projectileType
   if type(projectileType) == "table" then
     projectileType = projectileType[math.random(#projectileType)]
   end

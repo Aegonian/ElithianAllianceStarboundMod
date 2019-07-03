@@ -33,6 +33,8 @@ function TheaChargedShot:update(dt, fireMode, shiftHeld)
   end
 
   self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
+  
+  world.debugText("Projectile Type Primary: " .. sb.print(self.projectileType), vec2.add(mcontroller.position(), {0,2}), "yellow")
 
   --If holding fire, and nothing is holding back the charging process
   if self.fireMode == (self.activatingFireMode or self.abilitySlot)
@@ -210,9 +212,7 @@ function TheaChargedShot:fireProjectile(burstNumber)
   params.powerMultiplier = activeItem.ownerPowerMultiplier()
   params.speed = util.randomInRange(params.speed)
 
-  if not projectileType then
-    projectileType = self.projectileType
-  end
+  local projectileType = self.projectileType
   if type(projectileType) == "table" then
     projectileType = projectileType[math.random(#projectileType)]
   end

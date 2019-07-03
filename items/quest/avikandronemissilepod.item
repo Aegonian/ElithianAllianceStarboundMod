@@ -4,7 +4,7 @@
   "rarity" : "Legendary",
   "category" : "Quest Item",
   "inventoryIcon" : "avikandronemissilepod.png",
-  "description" : "A missile pod, broken off from an Elite Drahl unit. It might still be repaired.",
+  "description" : "A missile pod, broken off from an Elite Drahl unit. It could still be repaired.",
   "shortdescription" : "^#BA66FF;Broken Missile Pod^white;",
   "itemTags" : [ "questitem" ],
   

@@ -199,8 +199,31 @@ function TheaChargedBeamAltFire:fire()
 	animator.scaleTransformationGroup("beam", {beamLength*2, 0})
 	animator.translateTransformationGroup("beam", vec2.add(self.weapon.muzzleOffset, {beamLength/2, 0}))
 
-    self.weapon:setDamage(self.damageConfig, {self.weapon.muzzleOffset, {self.weapon.muzzleOffset[1] + beamLength, self.weapon.muzzleOffset[2]}}, self.fireTime)
-
+	--Box collision type (uses beamWidth)
+	if self.beamCollisionType == "box" then
+	  local damagePoly = {
+		vec2.add(self.weapon.muzzleOffset, {0, self.beamWidth/2}),
+		vec2.add(self.weapon.muzzleOffset, {0, -self.beamWidth/2}),
+		{self.weapon.muzzleOffset[1] + beamLength, self.weapon.muzzleOffset[2] - self.beamWidth/2},
+		{self.weapon.muzzleOffset[1] + beamLength, self.weapon.muzzleOffset[2] + self.beamWidth/2}
+	  }
+	  self.weapon:setDamage(self.damageConfig, damagePoly, self.fireTime)
+	
+	--Taper collision type (uses beamWidth, tapers to a point)
+	elseif self.beamCollisionType == "taper" then
+	  local damagePoly = {
+		vec2.add(self.weapon.muzzleOffset, {0, self.beamWidth/2}),
+		vec2.add(self.weapon.muzzleOffset, {0, -self.beamWidth/2}),
+		{self.weapon.muzzleOffset[1] + beamLength, self.weapon.muzzleOffset[2]}
+	  }
+	  self.weapon:setDamage(self.damageConfig, damagePoly, self.fireTime)
+	
+	--Line collision type (default)
+	elseif self.beamCollisionType == "line" or not self.beamCollisionType then
+	  self.weapon:setDamage(self.damageConfig, {self.weapon.muzzleOffset, {self.weapon.muzzleOffset[1] + beamLength, self.weapon.muzzleOffset[2]}}, self.fireTime)
+	end
+	
+	--Draw the beam
     self:drawBeam(beamEnd, collidePoint)
 	
 	--Optionally apply knockback to the player

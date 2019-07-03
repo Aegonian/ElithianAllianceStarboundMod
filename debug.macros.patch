@@ -1,0 +1,29 @@
+[
+  //OUTPOST WARP SHORTCUTS
+  {
+    "op": "add",
+    "path": "/allianceoutpost",
+    "value": [
+	  "/warp instanceworld:allianceoutpost"
+	]
+  },
+  {
+    "op": "add",
+    "path": "/avikanoutpost",
+    "value": [
+	  "/warp instanceworld:avikanoutpost"
+	]
+  },
+  
+  //TECH UNLOCKS
+  {
+    "op": "add",
+    "path": "/thea-unlocktechs",
+    "value": [
+	  "/enabletech thea-acrobaticdodge",
+	  "/enabletech thea-stealthtech",
+	  "/enabletech thea-acrobaticjump",
+	  "/enabletech thea-hoverjump"
+	]
+  }
+]

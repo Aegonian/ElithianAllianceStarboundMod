@@ -70,6 +70,9 @@
     "energyUsage" : 40.0,
     "inaccuracy" : 0.0,
 	
+	"beamCollisionType" : "box",
+	"beamWidth" : 0.4,
+	
 	"impactDamageTimeout" : 0.2,
 	"spawnImpactProjectile" : false,
 	"impactProjectile" : "",

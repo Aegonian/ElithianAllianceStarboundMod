@@ -64,6 +64,9 @@
     "energyUsage" : 5.0,
     "inaccuracy" : 0.0,
 	
+	"beamCollisionType" : "box",
+	"beamWidth" : 0.25,
+	
 	"impactTileDamageForeground" : 5,
 
     "chain" : {
