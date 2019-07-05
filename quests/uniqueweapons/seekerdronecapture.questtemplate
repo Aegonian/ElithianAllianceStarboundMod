@@ -1,0 +1,35 @@
+{
+  "id" : "seekerdronecapture",
+  "prerequisites" : [ "destroyruin" ],
+  "title" : "^orange;The Seekers' Research Project",
+  "text" : "I'm doing research on Ce'Tennan drones for the Seekers, and I could use some help. Can you ^green;capture a ^orange;Ce'Tennan Oculus ^green;and a ^orange;Ce'Tennan Keeper ^reset;for me? I only need the data, so you can keep the drones yourself! I'll give you some newly developed ^orange;prototype weapons ^reset;in exchange.",
+  "completionText" : "Vas Vha'leih, my friend. The data you collected off of those drones will help the Keepers' research immensely. Take these prototype weapons as thanks! I'm sure you'll find them useful on your travels.",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "avikan-seekersmg", 1 ], [ "avikan-seekersmg", 1 ], [ "avikanmerittoken", 100 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/thea-main.lua",
+  "scriptConfig" : {
+	"portraits" : {
+      "default" : "questGiver"
+    },
+    "requireTurnIn" : true,
+    "conditions" : [
+      {
+        "type" : "completeCollection",
+        "collectionDisplayName" : "Ce'Tennan Oculus",
+        "collectionGroup" : "monsters",
+        "collectionItem" : "centensguardian-captured"
+      },
+      {
+        "type" : "completeCollection",
+        "collectionDisplayName" : "Ce'Tennan Keeper",
+        "collectionGroup" : "monsters",
+        "collectionItem" : "centenskeeper"
+      }
+    ],
+	"turnInDescription" : "Return to ^orange;Vanhas ^reset;in the ^orange;Starfarer's Refuge^reset;"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "avikanmetaltier6", "count" : 6 },
+    { "item" : "avikandarkmetal", "count" : 2 },
+    { "item" : "nulldrive", "count" : 1 },
+    { "item" : "avikanmacrochip", "count" : 1 },
+    { "item" : "avikancapacitor", "count" : 2 }
+  ],
+  "output" : { "item" : "avikan-nulldrivevector", "count" : 1 },
+  "groups" : [ "avikanmetalcrafting", "weapons", "all" ]
+}

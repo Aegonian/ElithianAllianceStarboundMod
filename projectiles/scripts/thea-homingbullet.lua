@@ -2,7 +2,7 @@ require "/scripts/vec2.lua"
 require "/scripts/util.lua"
 
 function init()
-  self.targetSpeed = vec2.mag(mcontroller.velocity())
+  self.targetSpeed = config.getParameter("targetSpeed") or vec2.mag(mcontroller.velocity())
   self.searchDistance = config.getParameter("searchRadius")
   --Checking which type of homing code to use
   self.homingStyle = config.getParameter("homingStyle", "controlVelocity")

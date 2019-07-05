@@ -1,0 +1,15 @@
+{
+  "name" : "akkimariquiver",
+  "effectConfig" : {
+	//Multiplier for damage dealt with Avikan bows
+    "damageBonus" : 1.2
+  },
+  "defaultDuration" : 1,
+
+  "scripts" : [
+    "avikanquiver.lua"
+  ],
+
+  "label" : "Quiver",
+  "icon" : "/interface/statuses/akkimariquiver.png"
+}

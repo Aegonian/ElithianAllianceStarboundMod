@@ -1,0 +1,23 @@
+{
+  "kind" : "thea-distortiontrail",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/thea-distortiontrail/thea-distortiontrail.animation",
+    "position" : [0, 0],
+    "initialVelocity" : [1, 1],
+    "finalVelocity" : [0, 0],
+	"fullbright" : false,
+    "light" : [30, 30, 30],
+    "destructionAction" : "fade",
+    "destructionTime" : 0.1,
+    "fade" : 1,
+    "size" : 1.0,
+    "layer" : "back",
+    "timeToLive" : 0.15,
+    "variance" : {
+	  "size" : 0.2,
+      "rotation" : 180
+    },
+	"collidesLiquid" : false
+  }
+}

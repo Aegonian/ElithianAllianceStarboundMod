@@ -29,7 +29,7 @@ function TheaChargedShotAltFire:update(dt, fireMode, shiftHeld)
 
   self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
   
-  world.debugText("Projectile Type Alt: " .. sb.print(self.projectileType), vec2.add(mcontroller.position(), {0,1}), "yellow")
+  --world.debugText("Projectile Type Alt: " .. sb.print(self.projectileType), vec2.add(mcontroller.position(), {0,1}), "yellow")
 
   --If holding fire, and nothing is holding back the charging process
   if self.fireMode == "alt"

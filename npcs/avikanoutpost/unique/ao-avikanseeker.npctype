@@ -6,8 +6,8 @@
 
   "scriptConfig" : {
     	
-	"offeredQuests" : [ "weaponrestorationavikan", "weaponrestorationavikan2", "shardbreakertool4" ],
-	"turnInQuests" : [ "weaponrestorationavikan", "shardbreakertool3", "sundrainer4" ],
+	"offeredQuests" : [ "weaponrestorationavikan", "weaponrestorationavikan2", "shardbreakertool4", "seekerdronecapture" ],
+	"turnInQuests" : [ "weaponrestorationavikan", "shardbreakertool3", "sundrainer4", "seekerdronecapture" ],
   
     "dialog" : {
 	  "converse" : {

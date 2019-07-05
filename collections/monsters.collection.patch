@@ -4,7 +4,7 @@
 	  "path": "/collectables/largesandcrawler",
 	  "value": 	  
 	  {
-	    "order" : 60,
+	    "order" : 61,
 	    "monsterType" : "largesandcrawler",
 	    "icon" : "/monsters/walkers/largesandcrawler/largesandcrawlericon.png"
 	  }
@@ -14,7 +14,7 @@
 	  "path": "/collectables/giantsandspitter",
 	  "value": 	  
 	  {
-	    "order" : 61,
+	    "order" : 62,
 	    "monsterType" : "giantsandspitter",
 	    "icon" : "/monsters/walkers/giantsandspitter/giantsandspittericon.png"
 	  }
@@ -24,7 +24,7 @@
 	  "path": "/collectables/kadavanswarm",
 	  "value": 	  
 	  {
-	    "order" : 62,
+	    "order" : 63,
 	    "monsterType" : "kadavanswarm",
 	    "icon" : "/monsters/flyers/kadavanswarm/kadavanswarmicon.png"
 	  }
@@ -34,7 +34,7 @@
 	  "path": "/collectables/kadavanvalahr",
 	  "value": 	  
 	  {
-	    "order" : 63,
+	    "order" : 64,
 	    "monsterType" : "kadavanvalahr",
 	    "icon" : "/monsters/flyers/kadavanvalahr/kadavanvalahricon.png"
 	  }
@@ -44,7 +44,7 @@
 	  "path": "/collectables/avikandrone",
 	  "value": 	  
 	  {
-	    "order" : 64,
+	    "order" : 65,
 	    "monsterType" : "avikandrone",
 	    "icon" : "/monsters/flyers/avikandrone/avikandroneicon.png"
 	  }
@@ -54,7 +54,7 @@
 	  "path": "/collectables/avikanviolateddrone",
 	  "value": 	  
 	  {
-	    "order" : 65,
+	    "order" : 66,
 	    "monsterType" : "avikanviolateddrone",
 	    "icon" : "/monsters/flyers/avikanviolateddrone/avikanviolateddroneicon.png"
 	  }
@@ -64,7 +64,7 @@
 	  "path": "/collectables/avikanlargedrone-captured",
 	  "value": 	  
 	  {
-	    "order" : 66,
+	    "order" : 67,
 	    "monsterType" : "avikanlargedrone-captured",
 	    "icon" : "/monsters/flyers/avikanlargedrone/avikanlargedroneicon.png"
 	  }
@@ -74,7 +74,7 @@
 	  "path": "/collectables/avikanminidrone",
 	  "value": 	  
 	  {
-	    "order" : 67,
+	    "order" : 68,
 	    "monsterType" : "avikanminidrone",
 	    "icon" : "/monsters/flyers/avikanminidrone/avikanminidroneicon.png"
 	  }
@@ -84,7 +84,7 @@
 	  "path": "/collectables/trinkdrone",
 	  "value": 	  
 	  {
-	    "order" : 68,
+	    "order" : 69,
 	    "monsterType" : "trinkdrone",
 	    "icon" : "/monsters/flyers/trinkdrone/trinkdroneicon.png"
 	  }
@@ -94,7 +94,7 @@
 	  "path": "/collectables/trinkminidrone",
 	  "value": 	  
 	  {
-	    "order" : 69,
+	    "order" : 70,
 	    "monsterType" : "trinkminidrone",
 	    "icon" : "/monsters/flyers/trinkminidrone/trinkminidroneicon.png"
 	  }
@@ -106,7 +106,7 @@
 	  "path": "/collectables/ghavorkan",
 	  "value": 	  
 	  {
-	    "order" : 70,
+	    "order" : 71,
 	    "monsterType" : "ghavorkan",
 	    "icon" : "/monsters/walkers/ghavorkan/ghavorkanicon.png"
 	  }
@@ -118,7 +118,7 @@
 	  "path": "/collectables/avikanviolatedminidrone",
 	  "value": 	  
 	  {
-	    "order" : 71,
+	    "order" : 72,
 	    "monsterType" : "avikanviolatedminidrone",
 	    "icon" : "/monsters/flyers/avikanviolatedminidrone/avikanviolatedminidroneicon.png"
 	  }
@@ -130,7 +130,7 @@
 	  "path": "/collectables/akkimarijusticar-captured",
 	  "value": 	  
 	  {
-	    "order" : 72,
+	    "order" : 73,
 	    "monsterType" : "akkimarijusticar-captured",
 	    "icon" : "/monsters/flyers/akkimarijusticar/akkimarijusticaricon.png"
 	  }
@@ -140,7 +140,7 @@
 	  "path": "/collectables/akkimariarbiter",
 	  "value": 	  
 	  {
-	    "order" : 73,
+	    "order" : 74,
 	    "monsterType" : "akkimariarbiter",
 	    "icon" : "/monsters/flyers/akkimariarbiter/akkimariarbitericon.png"
 	  }
@@ -150,7 +150,7 @@
 	  "path": "/collectables/akkimariflic",
 	  "value": 	  
 	  {
-	    "order" : 74,
+	    "order" : 75,
 	    "monsterType" : "akkimariflic",
 	    "icon" : "/monsters/flyers/akkimariflic/akkimariflicicon.png"
 	  }
@@ -160,7 +160,7 @@
 	  "path": "/collectables/faryth",
 	  "value": 	  
 	  {
-	    "order" : 75,
+	    "order" : 76,
 	    "monsterType" : "faryth",
 	    "icon" : "/monsters/flyers/faryth/farythicon.png"
 	  }
@@ -170,7 +170,7 @@
 	  "path": "/collectables/centensguardian-captured",
 	  "value": 	  
 	  {
-	    "order" : 76,
+	    "order" : 77,
 	    "monsterType" : "centensguardian-captured",
 	    "icon" : "/monsters/flyers/centensguardian/centensguardianicon.png"
 	  }
@@ -180,7 +180,7 @@
 	  "path": "/collectables/centenskeeper",
 	  "value": 	  
 	  {
-	    "order" : 77,
+	    "order" : 78,
 	    "monsterType" : "centenskeeper",
 	    "icon" : "/monsters/flyers/centenskeeper/centenskeepericon.png"
 	  }
@@ -192,9 +192,21 @@
 	  "path": "/collectables/akkimaristriker",
 	  "value": 	  
 	  {
-	    "order" : 78,
+	    "order" : 79,
 	    "monsterType" : "akkimaristriker",
 	    "icon" : "/monsters/flyers/akkimaristriker/akkimaristrikericon.png"
+	  }
+	},
+	
+	//NEW MONSTERS - v2.3.10
+	{
+	  "op": "add",
+	  "path": "/collectables/theleanminidrone",
+	  "value": 	  
+	  {
+	    "order" : 80,
+	    "monsterType" : "theleanminidrone",
+	    "icon" : "/monsters/flyers/theleanminidrone/theleanminidroneicon.png"
 	  }
 	}
 ]

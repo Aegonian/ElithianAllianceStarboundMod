@@ -1,0 +1,22 @@
+{
+  "projectileName" : "theleanminirocketidle",
+  "image" : "theleanminirocketidle.png",
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "theleanminirocket",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 1.0,
+      "angleAdjust" : 0
+    }
+  ],
+  "statusEffects" : [ ],
+  "flippable" : true,
+  "timeToLive" : 0.5,
+  "power" : 10.0,
+  "speed" : 0.0,
+  "physics" : "avikanharpoon",
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

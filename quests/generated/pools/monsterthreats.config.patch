@@ -68,5 +68,15 @@
 		"typeName" : "akkimariarbiter"
 	  }
 	]
+  },
+  { "op" : "add",
+	"path" : "/0/1/-",
+	"value" : [
+	  [ "generic" ],
+	  {
+		"name" : "Thelean drones",
+		"typeName" : "theleanminidrone"
+	  }
+	]
   }
 ]

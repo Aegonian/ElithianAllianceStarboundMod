@@ -1,0 +1,32 @@
+{
+  "objectName" : "theleanminidroneaf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "legendary",
+  "category" : "actionFigure",
+  "collectablesOnPickup" : { "actionfigures" : "theleanminidroneaf" },
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"A small, aggressive drone built to overwhelm the enemy in swarms.\"",
+  "shortdescription" : "Arrak'ash Figurine",
+
+  "inventoryIcon" : "theleanminidroneaf.png",
+  "orientations" : [
+    {
+      "image" : "theleanminidroneaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "theleanminidroneaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

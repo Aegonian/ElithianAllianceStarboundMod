@@ -1,0 +1,29 @@
+{
+  "projectileName" : "theleanminirocket",
+  "image" : "theleanminirocket.png",
+  "animationCycle" : 0.15,
+  "frameNumber" : 3,
+  "lightColor" : [63, 63, 31],
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/avikansmallexplosion/avikansmallexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "emitters" : [ "rocketsmoke" ],
+  "flippable" : true,
+  "power" : 10.0,
+  "speed" : 0.0,
+  "physics" : "avikanharpoon",
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+
+  "persistentAudio" : "/sfx/projectiles/guidedrocket_loop1.ogg",
+  
+  "scripts" : [ "/projectiles/scripts/thea-homingbullet.lua" ],
+  "searchRadius" : 100,
+  "targetSpeed" : 50.0,
+  "baseHomingControlForce" : 1.0
+}

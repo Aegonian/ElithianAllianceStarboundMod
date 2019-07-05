@@ -419,5 +419,21 @@
       ]
     }]
    ]
+  },
+  
+  {"op" : "add",
+   "path" : "/theleanminidroneTreasure",
+   "value" : [
+	[1, {
+      "pool" : [
+        {"weight" : 1, "item" : "theleanminidroneaf"}
+      ],
+      "poolRounds" : [
+        [0.999, 0],
+        [0.001, 1]
+      ],
+      "allowDuplication" : false
+    }]
+   ]	
   }
 ]

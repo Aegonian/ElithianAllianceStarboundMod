@@ -30,6 +30,7 @@
         "type" : "animated",
         "animation" : "/projectiles/akkimari/akkimariacidthrower/trail.animation",
         "position" : [-0.5, 0],
+        "initialVelocity" : [2, 0],
         "size" : 0.5,
         "layer" : "middle",
 		"collidesForeground" : false,

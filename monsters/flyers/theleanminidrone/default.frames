@@ -1,0 +1,12 @@
+{
+  "frameGrid" : {
+    "size" : [21, 17],
+    "dimensions" : [2, 1],
+
+    "names" : [
+      [ null, "fly.1" ]
+    ]
+  },
+  "aliases" : {
+  }
+}

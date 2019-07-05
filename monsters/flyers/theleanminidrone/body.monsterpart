@@ -1,0 +1,9 @@
+{
+  "name" : "theleanminidrone",
+  "category" : "theleanminidrone",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "theleanminidrone.png"
+  }
+}
