@@ -7,7 +7,7 @@
   "description" : "A shoulder-mounted missile pod for sustained heavy fire.",
   "shortdescription" : "Vanguard Missile Pod",
   "level" : 6,
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-burstgun",
   "category" : "Missile Pod",
   "itemTags" : ["weapon","ranged","rocketlauncher","avikan"],
   "twoHanded" : true,
@@ -149,5 +149,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildburstweapon-mf.lua"
 }

@@ -2,7 +2,7 @@
   "objectName" : "avikanbonebarricade",
   "colonyTags" : ["avikan","combat"],
   "rarity" : "Common",
-  "category" : "decorative",
+  "category" : "trap",
   "printable" : false,
   "price" : 40,
   "description" : "A barricade made of sharpened bones.",
@@ -32,15 +32,45 @@
   "inventoryIcon" : "avikanbonebarricadeicon.png",
   "orientations" : [
     {
-      "dualImage" : "avikanbonebarricade.png:<color>",
+      "image" : "avikanbonebarricade.png:<color>",
+      "direction" : "left",
+      "flipImages" : true,
 
       "imagePosition" : [0, 0],
       "frames" : 1,
       "animationCycle" : 0.5,
 
       "spaceScan" : 0.1,
-      "anchors" : [ "bottom" ]
+      "anchors" : [ "bottom" ],
 
+      "touchDamage" : {
+        "poly" : [ [0.5, 0], [1.625, 1.125], [0.0, 3], [4.0, 3], [6.75, 0] ],
+        "damage" : 5,
+        "knockback" : 15,
+
+        "damageType" : "Environment",
+        "damageSourceKind" : "default"
+      }
+    },
+    {
+      "image" : "avikanbonebarricade.png:<color>",
+      "direction" : "right",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+
+      "touchDamage" : {
+        "poly" : [ [0.25, 0], [3.0, 3], [7.0, 3], [5.375, 1.125], [6.5, 0] ],
+        "damage" : 5,
+        "knockback" : 15,
+
+        "damageType" : "Environment",
+        "damageSourceKind" : "default"
+      }
     }
   ]
 }

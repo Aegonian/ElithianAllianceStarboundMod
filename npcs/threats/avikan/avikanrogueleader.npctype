@@ -1,0 +1,64 @@
+{
+  "type" : "avikanrogueleader",
+  "baseType" : "hostile",
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "uniqueId" : "avikanrogueMiniboss",
+	
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Attack!"
+          ]
+        },
+        "avikan" : {
+          "default" : [
+            "You've come to the wrong place, alien!"
+          ],
+		  "avikan" : [
+            "The Nomada has made you blind! You'll regret coming here!"
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+			  { "name" : "avikan-cloakedhead", "parameters" : { "colorIndex" : 1 } }
+			],
+            "chest" : [
+			  { "name" : "avikan-roguecaptainchest", "parameters" : { "colorIndex" : 1 } }
+			],
+            "legs" : [
+			  { "name" : "avikan-cloakedlegs", "parameters" : { "colorIndex" : 1 } }
+			],
+            "primary" : [ "avikan-conscriptor-npc" ],
+            "sheathedprimary" : [ "drodenshortsword" ],
+            "sheathedalt" : [ "avikanmetalshield" ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {    
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 1000.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 2.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

@@ -9,6 +9,25 @@
   },
   
   //=======================================================================
+  // AVIKAN QUEST - AYURIN'S SUPPLIES
+  //=======================================================================
+  "avikanroguehunt1" : {
+    "type" : "mission",
+    "text" : "You can enter the thieves' hideout through this crack in the rocks.",
+    "persistTime" : 4.0
+  },
+  "avikanroguehunt2" : {
+    "type" : "mission",
+    "text" : "Be careful: there's a lot of bandits in the area ahead.",
+    "persistTime" : 4.0
+  },
+  "avikanroguehunt3" : {
+    "type" : "mission",
+    "text" : "The leader of the bandits waits just beyond. Be careful.",
+    "persistTime" : 4.0
+  },
+  
+  //=======================================================================
   // ALLIANCE QUEST - JUSTICE FOR THE JUSTICAR
   //=======================================================================
   "akkimaridronebattle1" : {
@@ -28,7 +47,7 @@
   },
   
   //=======================================================================
-  // AVIKAN QUEST - ???
+  // AVIKAN QUEST - THE VANGUARD'S VEHICLES
   //=======================================================================
   "vanguardmechunlock1" : {
     "type" : "mission",

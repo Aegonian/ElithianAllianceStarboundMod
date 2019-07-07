@@ -257,6 +257,23 @@
   },
   {
     "op" : "add",
+    "path" : "/avikanroguebattle",
+    "value" : {
+      "primaryDungeon" : "avikanroguebattle",
+      "threatLevel" : 6,
+      "gravity" : 80,
+      "worldSize" : [1300, 700],
+      "dungeonBaseHeight" : 700,
+	  "dungeonSurfaceHeight" : 485,
+      "ambientLightLevel" : [32, 32, 32],
+      "biome" : "desert",
+      "ambientNoises" : "/sfx/environmental/desert_day.ogg",
+      "musicTrack" : "/music/ocean-battle1-loop.ogg",
+	  "environmentStatusEffects" : ["dontstarve"]
+    }
+  },
+  {
+    "op" : "add",
     "path" : "/vanguardmechunlock",
     "value" : {
       "primaryDungeon" : "vanguardmechunlock",

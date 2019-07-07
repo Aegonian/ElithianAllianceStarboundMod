@@ -39,7 +39,7 @@
           "parameters" : {
             "requireLineOfSight" : true,
             "maximumRange" : 40,
-            "minimumRange" : 8,
+            "minimumRange" : 16,
             "windupState" : "fly",
             "windupTime" : 0.5,
 

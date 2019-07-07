@@ -5,7 +5,7 @@
   "effectConfig" : {
 	"timeToExplode" : 2.0,
 	"burnDuration" : 5.0,
-    "bombConfig" : "/projectiles/explosions/avikanfireexplosion/avikanfireexplosion.config",
+    "bombConfig" : "/projectiles/explosions/avikanfireexplosion/avikanfireexplosion-napalm.config",
 	"explosionDamage" : 75
   },
   "defaultDuration" : 0.25,

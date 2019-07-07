@@ -9,9 +9,23 @@
   },
   {
     "op": "add",
+    "path": "/alliancefestivalhall",
+    "value": [
+	  "/warp instanceworld:alliancefestivalhall"
+	]
+  },
+  {
+    "op": "add",
     "path": "/avikanoutpost",
     "value": [
 	  "/warp instanceworld:avikanoutpost"
+	]
+  },
+  {
+    "op": "add",
+    "path": "/centensworkshop",
+    "value": [
+	  "/warp instanceworld:centensworkshop"
 	]
   },
   

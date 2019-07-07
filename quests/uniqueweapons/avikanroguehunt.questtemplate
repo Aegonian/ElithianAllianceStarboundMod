@@ -1,0 +1,45 @@
+{
+  "id" : "avikanroguehunt",
+  "prerequisites" : [ "destroyruin", "avikanmissilepod2" ],
+  "title" : "^orange;Ayurin's Supplies",
+  "text" : "I've been having issues with thieves intercepting my supplies... I managed to track the thieves to their hideout, but I can't go in there myself. Could you help me out? ^green;Take out their ^orange;leader^reset;, and I'll reward you with one of my latest ^orange;prototype weapons^reset;!",
+  "completionText" : "Vas Vha'leih, my friend! You've done me a great service today. Here's the prototype weapon I promised you: I call it ^orange;Ayurin's Wrath^reset;!",
+  "moneyRange" : [1000, 1000],
+  "rewards" : [
+	[ [ "avikan-ayurinswrath", 1 ], [ "avikanmerittoken", 250 ], [ "avikancache", 1 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/instance.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "questStarted" : {
+        "portrait" : [ {"image" : "/objects/avikan/outpost/avikangunsmith/avikangunsmithportrait.png"} ],
+        "title" : "Ayurin"
+      },
+      "questComplete" : {
+        "portrait" : [ {"image" : "/objects/avikan/outpost/avikangunsmith/avikangunsmithportrait.png"} ],
+        "title" : "Ayurin"
+      }
+    },
+
+    "descriptions" : {
+      "enterInstance" : "Talk to ^orange;Ayurin^reset; to warp down to the ^orange;thieves' hideout^reset;",
+      "findGoal" : "Defeat the ^orange;Bandit Leader^reset;",
+      "turnIn" : "Return to ^orange;Ayurin^reset; in the ^orange;Starfarer's Refuge^reset;"
+    },
+
+    "warpEntityUid" : "avikangunsmith",
+    "warpAction" : "instanceworld:avikanroguebattle",
+    "warpDialog" : "/interface/confirmation/teleportconfirmation.config:avikanroguebattle",
+
+    "goalTrigger" : "message",
+    "triggerMessage" : "avikanrogueMinibossDeath",
+	
+    "goalEntityUid" : "avikanrogueMiniboss",
+    "indicateGoal" : true,
+    "trackGoalEntity" : true,
+
+    "turnInEntityUid" : "avikangunsmith"
+  }
+}

@@ -153,7 +153,7 @@ function TheaBeamFire:fire()
 		{self.weapon.muzzleOffset[1] + beamLength, self.weapon.muzzleOffset[2] - self.beamWidth/2},
 		{self.weapon.muzzleOffset[1] + beamLength, self.weapon.muzzleOffset[2] + self.beamWidth/2}
 	  }
-	  self.weapon:setDamage(self.damageConfig, damagePoly, self.fireTime)
+	  self.weapon:setDamage(self.damageConfig, damagePoly, self.adjustedFireTime)
 	
 	--Taper collision type (uses beamWidth, tapers to a point)
 	elseif self.beamCollisionType == "taper" then
@@ -162,11 +162,11 @@ function TheaBeamFire:fire()
 		vec2.add(self.weapon.muzzleOffset, {0, -self.beamWidth/2}),
 		{self.weapon.muzzleOffset[1] + beamLength, self.weapon.muzzleOffset[2]}
 	  }
-	  self.weapon:setDamage(self.damageConfig, damagePoly, self.fireTime)
+	  self.weapon:setDamage(self.damageConfig, damagePoly, self.adjustedFireTime)
 	
 	--Line collision type (default)
 	elseif self.beamCollisionType == "line" or not self.beamCollisionType then
-	  self.weapon:setDamage(self.damageConfig, {self.weapon.muzzleOffset, {self.weapon.muzzleOffset[1] + beamLength, self.weapon.muzzleOffset[2]}}, self.fireTime)
+	  self.weapon:setDamage(self.damageConfig, {self.weapon.muzzleOffset, {self.weapon.muzzleOffset[1] + beamLength, self.weapon.muzzleOffset[2]}}, self.adjustedFireTime)
 	end
 	
 	--Draw the beam

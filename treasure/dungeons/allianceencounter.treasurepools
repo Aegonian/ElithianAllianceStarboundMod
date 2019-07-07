@@ -203,7 +203,9 @@
 		{"weight" : 0.1, "item" : "thea-collectivepistol1" },
 		{"weight" : 0.1, "item" : "thea-aaelauncher1" },
 		{"weight" : 0.1, "item" : "thea-collectivesniper1" },
-		{"weight" : 0.1, "item" : "thea-collectivesniper2" }
+		{"weight" : 0.1, "item" : "thea-collectivesniper2" },
+		{"weight" : 0.1, "item" : "thea-briggschainsaw" },
+		{"weight" : 0.1, "item" : "thea-briggsnailgun" }
       ]
     } ]
   ],

@@ -698,6 +698,42 @@
   },
   {
 	"op" : "add",
+	"path" : "/avikanroguebattle",
+	"value" : {
+	  "type" : "FloatingDungeon",
+	  "dungeonWorld" : "avikanroguebattle",
+	  "seed" : 4321,
+	  "spawningEnabled" : false,
+	  "beamUpRule" : "AnywhereWithWarning",
+	  "disableDeathDrops" : true,
+
+	  "skyParameters" : {
+	  "dayLength" : 10000,
+	  "surfaceLevel" : 200,
+	  "spaceLevel" : 3000,
+	  "seed" : -5288806180628666923,
+	  
+	  "skyType" : "atmospheric",
+	  "skyColoring" : {
+		"mainColor" : [255, 255, 255],
+
+		"morningColors" : [ [115, 224, 255], [255, 255, 255] ],
+		"dayColors" : [ [115, 224, 255], [255, 255, 255] ],
+		"eveningColors" : [ [115, 224, 255], [255, 255, 255] ],
+		"nightColors" : [ [115, 224, 255], [255, 255, 255] ],
+
+		"morningLightColor" : [200, 200, 200],
+		"dayLightColor" : [200, 200, 200],
+		"eveningLightColor" : [200, 200, 200],
+		"nightLightColor" : [200, 200, 200]
+	  },
+	  
+	  "horizonImages" : [ ]
+	  }
+	}
+  },
+  {
+	"op" : "add",
 	"path" : "/vanguardmechunlock",
 	"value" : {
 	  "type" : "FloatingDungeon",

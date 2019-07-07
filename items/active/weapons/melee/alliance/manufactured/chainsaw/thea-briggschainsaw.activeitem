@@ -1,0 +1,76 @@
+{
+  "itemName" : "thea-briggschainsaw",
+  "price" : 300,
+  "level" : 6,
+  "fixedLevel" : false,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A powerful chainsaw built for construction work.",
+  "manufacturer" : "^gray;Briggs Shipbuilding^reset;",
+  "shortdescription" : "Briggs Metalmaster",
+  "tooltipKind" : "thea-chainsaw-mf",
+  "category" : "Chainsaw",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","chainsaw","alliance","briggs","allianceUpgradeable"],
+
+  "inventoryIcon" : "thea-briggschainsaw.png:idle",
+
+  "animation" : "/items/active/weapons/melee/animations/thea-chainsaw.animation",
+  "animationParts" : {
+    "blade" : "thea-briggschainsaw.png",
+	"lights" : ""
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "idleLoop" : [ "/sfx/tools/chainsaw_idle.ogg" ],
+	  "holdLoop" : [ "/sfx/tools/chainsaw_cut_wood.ogg" ],
+	  "damageLoop" : [ "/sfx/tools/chainsaw_cut_metal.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/energymeleeweapon.lua"],
+
+  "activeTime" : 2.1,
+
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+  
+  "primaryAbilityType" : "thea-chainsaw",
+  "primaryAbility" : {
+    //Weapon settings
+	"baseDps" : 11.5,
+	
+	//Tile damage settings
+	"tileDamagePerSecond" : 20.0,
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : -40,
+        "weaponRotation" : 20,
+        "twoHanded" : true,
+        "weaponOffset" : [0, -0.125],
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      },
+      "hold" : {
+        "armRotation" : -15,
+        "weaponRotation" : 15,
+        "twoHanded" : true,
+        "weaponOffset" : [0, -0.125],
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/thea-buildchainsaw-mf.lua"
+}

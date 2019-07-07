@@ -8,7 +8,7 @@
   "shortdescription" : "^orange;Ayurin's Wrath^white;",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-gun-unique",
+  "tooltipKind" : "thea-burstgun-unique",
   "category" : "Missile Pod",
   "itemTags" : ["weapon","ranged","rocketlauncher","avikan","theaUnique"],
   "twoHanded" : true,
@@ -53,7 +53,7 @@
     "class" : "MultiBarrelShot",
 
     "fireTime" : 0.42,
-    "baseDps" : 9.5,
+    "baseDps" : 11.0,
     "energyUsage" : 40,
     "inaccuracy" : 0.08,
 	
@@ -67,7 +67,7 @@
 
     "projectileType" : "avikanswarmmissile",
     "projectileParameters" : {
-	  "searchRadius" : 15,
+	  "searchRadius" : 30,
 	  "baseHomingControlForce" : 1.0,
 	  "timeToLive" : 3.0
 	},
@@ -108,8 +108,8 @@
     "class" : "MultiBarrelShot",
 	"name" : "Rocket Barrage",
 
-    "fireTime" : 0.7,
-    "baseDps" : 3.0,
+    "fireTime" : 0.2,
+    "baseDps" : 9.0,
     "energyUsage" : 20,
     "inaccuracy" : 0.12,
 	
@@ -117,14 +117,15 @@
 	"secondaryFiringOffset" : [1.6, 0.3],
 
     "projectileCount" : 1,
-    "burstTime" : 0.1,
-    "burstCount" : 10,
+    "burstTime" : 0.08,
+    "burstCount" : 18,
     "fireType" : "burst",
 
     "projectileType" : "avikanswarmmissile",
     "projectileParameters" : {
-	  "searchRadius" : 15,
-	  "baseHomingControlForce" : 1.0,
+	  "searchRadius" : 40,
+	  "baseHomingControlForce" : 1.125,
+	  "homingStartDelay" : 0.25,
 	  "timeToLive" : 3.0
 	},
     "stances" : {
@@ -159,5 +160,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildburstweapon-mf.lua"
 }

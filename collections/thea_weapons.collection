@@ -503,6 +503,12 @@
       "title" : "Jack of Kings",
       "description" : "A beastly, multi-purpose hand cannon and plasma blade.",
       "icon" : "/items/active/weapons/ranged/unique/jackofkings/thea-jackofkingsicon.png"
+    },
+	"centensbeamaxe" : {
+      "order" : 82,
+      "title" : "Shardbreaker",
+      "description" : "A Centensian artefact capable of rapidly deconstructing matter.",
+      "icon" : "/items/tools/manipulator/centensbeamaxe.png"
     }
   }
 }

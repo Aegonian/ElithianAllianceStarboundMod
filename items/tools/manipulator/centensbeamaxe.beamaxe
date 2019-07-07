@@ -17,6 +17,11 @@
   "canCollectLiquid" : true,
   "twoHanded" : true,
   "strikeSounds" : [ "/sfx/tools/atom.ogg", "/sfx/tools/atom2.ogg", "/sfx/tools/atom3.ogg", "/sfx/tools/atom4.ogg", "/sfx/tools/atom5.ogg" ],
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "centensbeamaxe" },
+  
+  "meritTokenValue" : 100,
 
   "image" : "/items/tools/manipulator/centensbeamaxe.png",
   "endImages" : [ "/humanoid/any/ball.png", "/humanoid/any/tileglow.png", "/humanoid/any/4tileglow.png", "/humanoid/any/ball.png" ],

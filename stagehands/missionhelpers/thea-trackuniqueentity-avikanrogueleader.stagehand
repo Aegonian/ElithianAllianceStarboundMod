@@ -1,0 +1,9 @@
+{
+  "type" : "thea-trackuniqueentity-avikanrogueleader",
+
+  "scripts" : ["/stagehands/missionhelpers/thea-trackuniqueentity.lua"],
+  "scriptDelta" : 1,
+  
+  "uniqueEntityUid" : "avikanrogueMiniboss",
+  "entityMessageOnKill" : "avikanrogueMinibossDeath"
+}

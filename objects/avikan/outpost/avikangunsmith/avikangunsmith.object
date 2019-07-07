@@ -12,6 +12,8 @@
   
   "drodenDescription" : "Detected Vanguard-certified gunsmith. Unit can acquire new schematics for weapons here.",
   
+  "uniqueId" : "avikangunsmith",
+	
   "offeredQuests" : [
 	//Weapon Restoration
     "weaponrestorationavikan3",
@@ -23,7 +25,8 @@
 	"avikancrossbow2",
 	"violatedioncannon2",
 	"violatedioncannon3",
-	"avikancrafting"
+	"avikancrafting",
+	"avikanroguehunt"
   ],
   "turnInQuests" : [
 	//Weapon Restoration
@@ -40,6 +43,7 @@
 	"violatedioncannon2",
 	"violatedioncannon3",
 	"avikancrafting",
+	"avikanroguehunt",
 	
 	//Other
 	"avikanmechparts2"
@@ -98,5 +102,4 @@
 
   "mouthPosition" : [0.5, -0.5],
   "questIndicatorPosition" : [0.5, -0.5]
-
 }

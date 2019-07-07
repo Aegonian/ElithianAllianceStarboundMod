@@ -1,0 +1,92 @@
+{
+  "itemName" : "thea-briggsnailgun",
+  "price" : 150,
+  "inventoryIcon" : "thea-briggsnailgun.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A powerful nailgun built for construction work.",
+  "manufacturer" : "^gray;Briggs Shipbuilding^reset;",
+  "shortdescription" : "Briggs Nailgun",
+  "level" : 6,
+  "fixedLevel" : false,
+  "tooltipKind" : "thea-gun-mf",
+  "category" : "Nailgun",
+  "itemTags" : ["weapon","ranged","machinepistol","alliance","briggs","allianceUpgradeable"],
+  "twoHanded" : false,
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "thea-briggsnailgun.png",
+    "barrel" : "",
+    "muzzleFlash" : ""
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/gun/needler1.ogg" ]
+    },
+	"lights": {
+	  "muzzleFlash" : {
+		"active" : false,
+		"position" : [0, 0],
+		"color" : [0, 0, 0]
+	  }
+    }
+  },
+
+  "baseOffset" : [0.5, -0.125],
+  "muzzleOffset" : [1.0, 0.625],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.16,
+    "baseDps" : 7.0,
+    "energyUsage" : 25,
+    "inaccuracy" : 0.03,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "akkimarinail",
+    "projectileParameters" : {
+      "knockback" : 2
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.05,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+}
