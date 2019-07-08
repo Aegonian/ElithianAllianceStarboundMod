@@ -352,6 +352,12 @@
 	"path": "/thea-bipod-machinegun",
 	"value": "/items/active/weapons/ranged/abilities/attachments/thea-bipod/thea-bipod-machinegun.weaponability"
   },
+  //Crossbow
+  {
+	"op": "add",
+	"path": "/thea-loadexplosivebolt",
+	"value": "/items/active/weapons/ranged/abilities/attachments/thea-specialcrossbowbolt/thea-loadexplosivebolt.weaponability"
+  },
   //Bow
   {
 	"op": "add",
@@ -378,6 +384,7 @@
 	"path": "/thea-stabilizer-bow",
 	"value": "/items/active/weapons/ranged/abilities/attachments/thea-stabilizer/thea-stabilizer-bow.weaponability"
   },
+  //Unique
   {
 	"op": "add",
 	"path": "/thea-fireworklauncher",

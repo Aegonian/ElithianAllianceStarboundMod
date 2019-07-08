@@ -1,0 +1,133 @@
+{
+  "animationParts" : {
+	"specialBolt" : "/items/active/weapons/ranged/abilities/attachments/thea-specialcrossbowbolt/thea-loadexplosivebolt.png"
+  },
+  "animationCustom" : {
+	"animatedParts" : {
+	  "stateTypes" : {
+		"specialBolt" : {
+		  "priority" : 2,
+		  "default" : "hidden",
+		  "states" : {
+			"hidden" : {},
+			"visible" : {}
+		  }
+		}
+	  },
+	  "parts" : {
+		"specialBolt" : {
+		  "properties" : {
+			"zLevel" : 3,
+			"centered" : true,
+			"offset" : [1.0, 0.25],
+			"transformationGroups" : ["weapon"]
+		  },
+		  "partStates" : {
+			"specialBolt" : {
+			  "hidden" : {
+				"properties" : {
+				  "image" : ""
+				}
+			  }
+			},
+			"bow" : {
+			  "idle" : {
+				"properties" : {
+				  "image" : "<partImage>:idle"
+				}
+			  },
+			  "fire" : {
+				"properties" : {
+				  "image" : "<partImage>:fire"
+				}
+			  },
+			  "reload" : {
+				"properties" : {
+				  "image" : "<partImage>:reload.<frame>"
+				}
+			  }
+			}
+		  }
+		}
+	  }
+	},
+	"sounds" : {
+	  "loadBolt" : [ "/sfx/gun/reload/grenade_reload_clip1.ogg" ]
+	},
+	"particleEmitters" : {
+	  "specialBolt" : {
+		"active" : false,
+		"emissionRate" : 2,
+		"transformationGroups" : ["weapon"],
+		"offsetRegion" : [0, 0, 0, 0.5],
+		"particles" : [
+		  //{ "particle" : "thea-electricstunarc" }
+		]
+	  }
+	}
+  },
+  
+  "ability" : {
+	"name" : "Load Explosive Bolt",
+	"type" : "thea-loadexplosivebolt",
+	"scripts" : ["/items/active/weapons/ranged/abilities/thea-loadspecialbolt/thea-loadspecialbolt.lua"],
+	"class" : "TheaLoadSpecialBolt",
+
+	"adaptedAbilityIndex" : 1,	//Which ability to adapt (1 = primary, 2 = secondary)
+	"cooldownTime" : 0.3,		//Cooldown time in between arrow switches
+	
+	//Which stats to adapt when nocking the special arrow
+	"adaptedStats" : {
+	  "projectileType" : true,
+	  "projectileCount" : false,
+	  "baseDamage" : true,
+	  "baseEnergyUsage" : true,
+	  "inaccuracy" : false,
+	  "cooldownTime" : false
+	},
+	
+	//The new stats which will overwrite the primary ability
+	"specialAbility" : {
+	  "projectileType" : "allianceexplosivearrow",
+	  "projectileCount" : 1,
+	  
+	  "baseDamage" : 9.5,
+	  "baseEnergyUsage" : 35,
+	  "inaccuracy" : 0.0,
+	  "cooldownTime" : 0.3
+	},
+
+	"stances" : {
+	  "unload" : {
+		"aimAngle" : 0,
+		"armRotation" : -25,
+		"weaponRotation" : 50,
+		"weaponAngularVelocity" : 0,
+		"armAngularVelocity" : 0,
+		"weaponOffset" : [-1.0, 0],
+		"twoHanded" : true,
+		"duration" : 0.2,
+  
+		"allowRotate" : false,
+		"allowFlip" : true,
+
+		"frontArmFrame" : "idle.3"
+	  },
+	  "load" : {
+		"aimAngle" : 0,
+		"armRotation" : -20,
+		"weaponRotation" : 45,
+		"weaponAngularVelocity" : 0,
+		"armAngularVelocity" : 0,
+		"weaponOffset" : [-1.0, 0],
+		"twoHanded" : true,
+		"duration" : 0.2,
+  
+		"allowRotate" : false,
+		"allowFlip" : true,
+
+		"frontArmFrame" : "swim.2"
+	  }
+	}
+  }
+}

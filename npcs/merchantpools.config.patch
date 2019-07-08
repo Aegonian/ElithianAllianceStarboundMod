@@ -652,7 +652,9 @@
 			  { "item": { "name": "thea-firearrowmod-bow" }, "prerequisiteQuest" : "allianceattachmentsunlock4" },
 			  { "item": { "name": "thea-icearrowmod-bow" }, "prerequisiteQuest" : "allianceattachmentsunlock4" },
 			  { "item": { "name": "thea-poisonarrowmod-bow" }, "prerequisiteQuest" : "allianceattachmentsunlock4" },
-			  { "item": { "name": "thea-stabilizerattachment-bow" }, "prerequisiteQuest" : "allianceattachmentsunlock4" }
+			  { "item": { "name": "thea-stabilizerattachment-bow" }, "prerequisiteQuest" : "allianceattachmentsunlock4" },
+			 //Crossbow
+			  { "item": { "name": "thea-explosiveboltmod-crossbow" }, "prerequisiteQuest" : "allianceattachmentsunlock4" }
 			] ]
 		]
 	},

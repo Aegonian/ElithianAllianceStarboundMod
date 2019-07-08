@@ -1,0 +1,68 @@
+{
+  "animatedParts" : {
+	"stateTypes" : {
+      "bow" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 1
+          },
+          "fire" : {
+            "frames" : 1
+          },
+          "reload" : {
+            "frames" : 3,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
+      }
+    },
+	
+    "parts" : {
+      "bow" : {
+        "properties" : {
+          "centered" : true,
+          "transformationGroups" : ["weapon"]
+        },
+
+        "partStates" : {
+          "bow" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle"
+              }
+            },
+			"fire" : {
+              "properties" : {
+                "image" : "<partImage>:fire"
+              }
+            },
+			"reload" : {
+              "properties" : {
+                "image" : "<partImage>:reload.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  
+  "rotationGroups" : {
+    "weapon" : {
+      "angularVelocity" : 0
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "muzzle" : {}
+  },
+
+  "sounds" : {
+    "fire" : [ ],
+    "reload" : [ ]
+  }
+}

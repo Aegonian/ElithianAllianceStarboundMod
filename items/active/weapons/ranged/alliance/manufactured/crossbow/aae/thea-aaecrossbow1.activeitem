@@ -1,0 +1,100 @@
+{
+  "itemName" : "thea-aaecrossbow1",
+  "price" : 350,
+  "inventoryIcon" : "thea-aaecrossbow1icon.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A powerful crossbow.",
+  "manufacturer" : "^gray;AAE^reset;",
+  "shortdescription" : "Hunter C-2",
+  "level" : 6,
+  "fixedLevel" : false,
+  "tooltipKind" : "thea-gun-mf-attachment",
+  "category" : "Crossbow",
+  "itemTags" : ["weapon","ranged","crossbow","alliance","aae","allianceUpgradeable"],
+  "twoHanded" : true,
+  
+  //Custom field for recognizing compatible attachment types
+  "theaAttachmentType" : "aae_crossbow1",
+
+  "animation" : "thea-aaecrossbow1.animation",
+  "animationParts" : {
+    "bow" : "thea-aaecrossbow1.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : { "parts" : { "bow" : { "properties" : {
+      "offset" : [1.0, 0.25]
+    }}}},
+    "sounds" : {
+      "fire" : [ "/sfx/gun/crossbow1.ogg" ],
+      "reload" : [ "/sfx/gun/bow_draw1.ogg" ]
+    }
+  },
+  
+  "baseOffset" : [0.0, 0.0],
+  "muzzleOffset" : [2.25, 0.5],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-crossbow/thea-crossbow.lua"],
+    "class" : "TheaCrossBow",
+
+    "baseDamage" : 8.0,
+    "baseEnergyUsage" : 25,
+    "inaccuracy" : 0.0,
+	
+	"cooldownTime" : 0.3,
+	
+	"useQuiverDamageBonus" : true,
+
+    "projectileType" : "alliancearrow",
+	"projectileCount" : 1,
+	"projectileParameters" : {
+	  "speed" : 110
+	},
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "charge" : {
+        "armRotation" : -2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0.33,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.8,
+        "armRotation" : -30,
+        "weaponRotation" : 75,
+        "weaponOffset" : [-1.25, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+
+        "frontArmFrame" : "run.1",
+        "backArmFrame" : "swim.3"
+      }
+	}
+  },
+
+  "builder" : "/items/buildscripts/thea-buildreloadweapon-mf-attachment.lua"
+}

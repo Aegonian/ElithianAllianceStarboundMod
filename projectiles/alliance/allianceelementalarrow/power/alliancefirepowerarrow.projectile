@@ -26,7 +26,7 @@
     },
 	{
       "action" : "projectile",
-      "type" : "avikanflame",
+      "type" : "avikanflame3",
       "inheritDamageFactor" : 0.5,
       "inheritSpeedFactor" : 0.0,
       "angleAdjust" : 0

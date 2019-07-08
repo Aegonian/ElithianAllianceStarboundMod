@@ -1,0 +1,20 @@
+{
+  "itemName" : "thea-explosiveboltmod-crossbow",
+  "price" : 750,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "tooltipKind" : "thea-attachment",
+  "category" : "Bolt Mod",
+  "inventoryIcon" : "thea-explosiveboltmod-crossbow.png",
+  "largeImage" : "thea-explosiveboltmod-crossbowlarge.png",
+  "builder" : "/items/buildscripts/thea-buildattachment.lua",
+  
+  "manufacturer" : "^gray;AAE^reset;",
+  "description" : "A special bolt that explodes on contact.",
+  "shortdescription" : "Explosive Bolt",
+  
+  "itemTags" : [ "thea_attachment" ],
+  
+  "theaAttachmentType" : "aae_crossbow1",
+  "theaAttachmentAbility" : "thea-loadexplosivebolt"
+}
