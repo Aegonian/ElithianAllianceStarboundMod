@@ -1,0 +1,106 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+	  "flashlight" : {
+        "default" : "active",
+        "states" : {
+          "active" : {
+		    "properties" : {
+              "lightsOn" : [ "glow", "tightBeam", "wideBeam" ]
+            }
+		  },
+		  "inactive" : {
+		    "properties" : {
+              "lightsOff" : [ "glow", "tightBeam", "wideBeam" ]
+            }
+          }
+        }
+      }
+    },
+
+    "parts" : {
+	  "body" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "fullbright" : false,
+          "offset" : [0.25, 0.0],
+          "transformationGroups" : ["flashlight"]
+        },
+        "partStates" : {
+          "flashlight" : {
+            "active" : {
+              "properties" : {
+                "image" : "<partImage>:active"
+              }
+            },
+            "inactive" : {
+              "properties" : {
+                "image" : "<partImage>:inactive"
+              }
+            }
+          }
+        }
+      },
+	  "lights" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "fullbright" : true,
+          "offset" : [0.25, 0.0],
+          "transformationGroups" : ["flashlight"]
+        },
+        "partStates" : {
+          "flashlight" : {
+            "active" : {
+              "properties" : {
+                "image" : "<partImage>:active"
+              }
+            },
+            "inactive" : {
+              "properties" : {
+                "image" : "<partImage>:inactive"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "flashlight" : {}
+  },
+  
+  "lights" : {
+   "glow" : {
+      "active" : true,
+      "position" : [0.5, 0.0],
+	  "transformationGroups" : ["flashlight"],
+      "color" : [60, 60, 60],
+      "pointLight" : false
+    },
+   "wideBeam" : {
+      "active" : true,
+      "position" : [0.5, 0.0],
+	  "transformationGroups" : ["flashlight"],
+      "color" : [150, 150, 150],
+      "pointLight" : true,
+      "pointAngle" : 0,
+      "pointBeam" : 1
+    },
+    "tightBeam" : {
+      "active" : true,
+      "position" : [0.5, 0.0],
+	  "transformationGroups" : ["flashlight"],
+      "color" : [255, 255, 255],
+      "pointLight" : true,
+      "pointAngle" : 0,
+      "pointBeam" : 30
+    }
+  },
+  
+  "sounds" : {
+    "switch" : [ ]
+  }
+}

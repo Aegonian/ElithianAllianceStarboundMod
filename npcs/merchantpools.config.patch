@@ -747,6 +747,8 @@
 			  { "item": { "name": "vahlberryjam" }, "rarity": 0.5 },
 			  { "item": { "name": "boratochips" }, "rarity": 0.5 },
 			  { "item": { "name": "mellowroot" }, "rarity": 0.5 },
+			  //TOOLS
+			  { "item": { "name": "thea-allianceflashlight" }, "rarity": 0.5 },
 			  //MATERIALS
 			  { "item": { "name": "alliancecloth" }, "rarity": 0.5 },
 			  { "item": { "name": "alliancemetal" }, "rarity": 0.5 },

@@ -1,0 +1,29 @@
+{
+  "itemName" : "thea-allianceflashlight",
+  "level" : 1,
+  "price" : 75,
+  "maxStack" : 1,
+  "rarity" : "Uncommon",
+  "description" : "A simple but powerful flashlight built by Enerth Engineering.",
+  "shortdescription" : "Enerth Flashlight",
+  "tooltipKind" : "thea-attachment",
+  "category" : "Flashlight",
+  "twoHanded" : false,
+
+  "inventoryIcon" : "icon.png",
+  "largeImage" : "largeicon.png",
+  "animation" : "thea-allianceflashlight.animation",
+  "animationParts" : {
+    "body" : "thea-allianceflashlight.png",
+    "lights" : "thea-allianceflashlightfullbright.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "switch" : [ "/sfx/tools/flashlight_toggle.ogg" ]
+    }
+  },
+  
+  "scripts" : ["/items/active/flashlights/thea-flashlight.lua"],
+
+  "aimOffset" : 0.0
+}
