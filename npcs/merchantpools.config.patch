@@ -415,7 +415,8 @@
 			  { "item": { "name": "avikantransmitter" }, "rarity": 0.5 },
 			  { "item": { "name": "avikandrahl" }, "rarity": 0.5 },
 			  { "item": { "name": "avikanminidrahl" }, "rarity": 0.5 },
-			  { "item": { "name": "avikandroden" }, "rarity": 0.5 }
+			  { "item": { "name": "avikandroden" }, "rarity": 0.5 },
+			  { "item": { "name": "thea-avikanflashlight" }, "rarity": 0.5 }
 			] ]
 		]
 	},
@@ -925,7 +926,9 @@
 			  { "item": { "name": "trinklaserdiode" }, "rarity": 0.5 },
 			  { "item": { "name": "trinkpowercore" }, "rarity": 0.5 },
 			  { "item": { "name": "trinktransmitter" }, "rarity": 0.5 },
-			  { "item": { "name": "trinkdatadrive" }, "rarity": 0.5 }
+			  { "item": { "name": "trinkdatadrive" }, "rarity": 0.5 },
+			  //TOOLS
+			  { "item": { "name": "thea-trinkflashlight" }, "rarity": 0.5 }
 			] ],
 			[ 1, [
 			  { "item": { "name": "trinktier2prod" }, "rarity": 0.5 },
@@ -938,7 +941,9 @@
 			  { "item": { "name": "trinklaserdiode" }, "rarity": 0.5 },
 			  { "item": { "name": "trinkpowercore" }, "rarity": 0.5 },
 			  { "item": { "name": "trinktransmitter" }, "rarity": 0.5 },
-			  { "item": { "name": "trinkdatadrive" }, "rarity": 0.5 }
+			  { "item": { "name": "trinkdatadrive" }, "rarity": 0.5 },
+			  //TOOLS
+			  { "item": { "name": "thea-trinkflashlight" }, "rarity": 0.5 }
 			] ],
 			[ 2, [
 			  { "item": { "name": "trinktier3prod" }, "rarity": 0.5 },
@@ -951,7 +956,9 @@
 			  { "item": { "name": "trinklaserdiode" }, "rarity": 0.5 },
 			  { "item": { "name": "trinkpowercore" }, "rarity": 0.5 },
 			  { "item": { "name": "trinktransmitter" }, "rarity": 0.5 },
-			  { "item": { "name": "trinkdatadrive" }, "rarity": 0.5 }
+			  { "item": { "name": "trinkdatadrive" }, "rarity": 0.5 },
+			  //TOOLS
+			  { "item": { "name": "thea-trinkflashlight" }, "rarity": 0.5 }
 			] ],
 			[ 3, [
 			  { "item": { "name": "trinktier4prod" }, "rarity": 0.5 },
@@ -965,7 +972,9 @@
 			  { "item": { "name": "trinklaserdiode" }, "rarity": 0.5 },
 			  { "item": { "name": "trinkpowercore" }, "rarity": 0.5 },
 			  { "item": { "name": "trinktransmitter" }, "rarity": 0.5 },
-			  { "item": { "name": "trinkdatadrive" }, "rarity": 0.5 }
+			  { "item": { "name": "trinkdatadrive" }, "rarity": 0.5 },
+			  //TOOLS
+			  { "item": { "name": "thea-trinkflashlight" }, "rarity": 0.5 }
 			] ],
 			[ 4, [
 			  { "item": { "name": "trinktier5prod" }, "rarity": 0.5 },
@@ -980,6 +989,8 @@
 			  { "item": { "name": "trinkpowercore" }, "rarity": 0.5 },
 			  { "item": { "name": "trinktransmitter" }, "rarity": 0.5 },
 			  { "item": { "name": "trinkdatadrive" }, "rarity": 0.5 },
+			  //TOOLS
+			  { "item": { "name": "thea-trinkflashlight" }, "rarity": 0.5 },
 			  //BLUEPRINTS
 			  { "item": { "name": "trink-dualcannon-recipe" }, "rarity": 0.5 },
 			  { "item": { "name": "trink-mininglaser-recipe" }, "rarity": 0.5 },
@@ -998,6 +1009,8 @@
 			  { "item": { "name": "trinkpowercore" }, "rarity": 0.5 },
 			  { "item": { "name": "trinktransmitter" }, "rarity": 0.5 },
 			  { "item": { "name": "trinkdatadrive" }, "rarity": 0.5 },
+			  //TOOLS
+			  { "item": { "name": "thea-trinkflashlight" }, "rarity": 0.5 },
 			  //BLUEPRINTS
 			  { "item": { "name": "trink-dualcannon-recipe" }, "rarity": 0.5 },
 			  { "item": { "name": "trink-mininglaser-recipe" }, "rarity": 0.5 },

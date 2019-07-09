@@ -1,0 +1,29 @@
+{
+  "itemName" : "thea-avikanflashlight",
+  "level" : 1,
+  "price" : 75,
+  "maxStack" : 1,
+  "rarity" : "Uncommon",
+  "description" : "A powerful flashlight with a broad light.",
+  "shortdescription" : "Nomada Flashlight",
+  "tooltipKind" : "thea-attachment",
+  "category" : "Flashlight",
+  "twoHanded" : false,
+
+  "inventoryIcon" : "icon.png",
+  "largeImage" : "largeicon.png",
+  "animation" : "thea-avikanflashlight.animation",
+  "animationParts" : {
+    "body" : "thea-avikanflashlight.png",
+    "lights" : "thea-avikanflashlightfullbright.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "switch" : [ "/sfx/tools/flashlight_toggle.ogg" ]
+    }
+  },
+  
+  "scripts" : ["/items/active/flashlights/thea-flashlight.lua"],
+
+  "aimOffset" : 0.0
+}

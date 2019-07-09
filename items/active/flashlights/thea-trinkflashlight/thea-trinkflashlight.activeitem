@@ -1,0 +1,29 @@
+{
+  "itemName" : "thea-trinkflashlight",
+  "level" : 1,
+  "price" : 75,
+  "maxStack" : 1,
+  "rarity" : "Uncommon",
+  "description" : "A highly efficient tight-beam flashlight of Trinkian design.",
+  "shortdescription" : "Trinkian Flashlight",
+  "tooltipKind" : "thea-attachment",
+  "category" : "Flashlight",
+  "twoHanded" : false,
+
+  "inventoryIcon" : "icon.png",
+  "largeImage" : "largeicon.png",
+  "animation" : "thea-trinkflashlight.animation",
+  "animationParts" : {
+    "body" : "thea-trinkflashlight.png",
+    "lights" : "thea-trinkflashlightfullbright.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "switch" : [ "/sfx/tools/flashlight_toggle.ogg" ]
+    }
+  },
+  
+  "scripts" : ["/items/active/flashlights/thea-flashlight.lua"],
+
+  "aimOffset" : 0.0
+}
