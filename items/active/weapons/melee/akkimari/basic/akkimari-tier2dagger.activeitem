@@ -9,7 +9,7 @@
   "tooltipKind" : "sword",
   "category" : "dagger",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","dagger","akkimari"],
+  "itemTags" : ["weapon","melee","dagger","akkimari","akkimariUpgradeable"],
 
   "inventoryIcon" : "akkimari-tier2dagger.png",
 

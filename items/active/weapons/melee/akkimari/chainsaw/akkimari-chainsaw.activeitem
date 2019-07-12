@@ -1,16 +1,16 @@
 {
   "itemName" : "akkimari-chainsaw",
   "price" : 300,
-  "level" : 6,
+  "level" : 4,
   "fixedLevel" : false,
   "maxStack" : 1,
-  "rarity" : "Legendary",
+  "rarity" : "Uncommon",
   "description" : "A powerful chainsaw that cuts through metal, flesh and rock all.",
   "shortdescription" : "Akris Chainsaw",
   "tooltipKind" : "thea-chainsaw",
   "category" : "Chainsaw",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","chainsaw","akkimari"],
+  "itemTags" : ["weapon","melee","chainsaw","akkimari","akkimariUpgradeable"],
 
   "inventoryIcon" : "akkimari-chainsaw.png:idle",
 

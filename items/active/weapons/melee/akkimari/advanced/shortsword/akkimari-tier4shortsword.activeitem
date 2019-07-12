@@ -1,0 +1,108 @@
+{
+  "itemName" : "akkimari-tier4shortsword",
+  "price" : 550,
+  "level" : 4,
+  "maxStack" : 1,
+  "rarity" : "Uncommon",
+  "description" : "A heated blade used by bounty hunters of the Kelraaki.",
+  "shortdescription" : "Kelraaki Sword",
+  "tooltipKind" : "sword",
+  "category" : "shortsword",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","melee","shortsword","akkimari","akkimariUpgradeable"],
+
+  "inventoryIcon" : "akkimari-tier4shortswordicon.png",
+
+  "animation" : "/items/active/weapons/melee/animations/thea-heatupshortsword-hacking.animation",
+  "animationParts" : {
+    "handle": "handle.png",
+    "handleFullbright" : "handlefullbright.png",
+    "blade" : "blade.png"
+  },
+  "animationCustom" : {},
+
+  "scripts" : ["/items/active/weapons/melee/energymeleeweapon.lua"],
+
+  "activeTime" : 3.0,
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "shortswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.625,
+    "baseDps" : 7.5,
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : -90,
+        "weaponRotation" : 0,
+        "weaponOffset" : [0, 2.25],
+        "twoHanded" : false,
+
+        "allowFlip" : true,
+        "allowRotate" : true
+      },
+      "windup1" : {
+        "duration" : 0.1,
+        "armRotation" : 90,
+        "weaponRotation" : -10,
+        "weaponOffset" : [0, 2.25],
+        "twoHanded" : false,
+
+        "allowFlip" : true,
+        "allowRotate" : true
+      },
+      "preslash1" : {
+        "duration" : 0.025,
+        "armRotation" : 55,
+        "weaponRotation" : -45,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire1" : {
+        "duration" : 0.2,
+        "armRotation" : -45,
+        "weaponRotation" : -45,
+        "weaponOffset" : [0, 2.25],
+        "twoHanded" : false,
+
+        "allowFlip" : false,
+        "allowRotate" : false
+      },
+      "wait1" : {
+        "duration" : 0.1,
+        "armRotation" : -45,
+        "weaponRotation" : -45,
+        "weaponOffset" : [0, 2.25],
+        "twoHanded" : false,
+		
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "windup2" : {
+        "duration" : 0.1,
+        "armRotation" : -135,
+        "weaponRotation" : 50,
+        "weaponOffset" : [0, 2.25],
+        "twoHanded" : false,
+		
+        "allowFlip" : true,
+        "allowRotate" : true
+      },
+      "fire2" : {
+        "duration" : 0.3,
+        "armRotation" : 0,
+        "weaponRotation" : -80,
+        "weaponOffset" : [0, 2.25],
+        "twoHanded" : false,
+		
+        "allowFlip" : true,
+        "allowRotate" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

@@ -1,0 +1,22 @@
+{
+  "kind" : "thea-smallflame",
+  "definition" : {
+    "type" : "animated",
+    "looping" : true,
+    "animation" : "/animations/statuseffects/burning/burning.animation",
+    "position" : [0, 0],
+    "finalVelocity" : [0, 3],
+    "approach" : [0, 10],
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.125,
+    "fade" : 1,
+    "size" : 0.5,
+    "layer" : "middle",
+    "timeToLive" : 0.125,
+    "fullbright" : true,
+    "collidesLiquid" : true,
+    "variance" : {
+      "initialVelocity" : [0.25, 0.25]
+    }
+  }
+}

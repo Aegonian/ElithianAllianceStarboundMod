@@ -1,0 +1,13 @@
+{
+  "itemName" : "akkimariupgradekit6",
+  "price" : 1000,
+  "maxStack" : 50,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "akkimariupgradekit6.png",
+  "description" : "A masterwork weapon upgrade kit. Upgrades weapons to level 6.",
+  "shortdescription" : "Makeshift Kit L.6",
+  "itemTags" : [ "akkimariUpgradeKit" ],
+  
+  "upgradeToLevel" : 6
+}

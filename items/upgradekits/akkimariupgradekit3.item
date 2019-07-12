@@ -1,0 +1,13 @@
+{
+  "itemName" : "akkimariupgradekit3",
+  "price" : 300,
+  "maxStack" : 50,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "akkimariupgradekit3.png",
+  "description" : "An improved weapon upgrade kit. Upgrades weapons to level 3.",
+  "shortdescription" : "Makeshift Kit L.3",
+  "itemTags" : [ "akkimariUpgradeKit" ],
+  
+  "upgradeToLevel" : 3
+}

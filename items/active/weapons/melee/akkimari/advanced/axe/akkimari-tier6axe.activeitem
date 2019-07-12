@@ -1,0 +1,49 @@
+{
+  "itemName" : "akkimari-tier6axe",
+  "price" : 600,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A heated axe used by bounty hunters of the Kelraaki.",
+  "shortdescription" : "Kelraaki Axe",
+  "tooltipKind" : "sword",
+  "category" : "axe",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","melee","axe","akkimari","akkimariUpgradeable"],
+
+  "inventoryIcon" : "akkimari-tier6axeicon.png",
+
+  "animation" : "/items/active/weapons/melee/animations/thea-heatupaxe.animation",
+  "animationParts" : {
+    "handle" : "handle.png",
+    "handleFullbright" : "handlefullbright.png",
+    "blade" : "blade.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : { "parts" : { "swoosh" : { "properties" : {
+      "offset" : [-1.375, 1.5]
+    }}}},
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_axe.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/energymeleeweapon.lua"],
+  
+  "activeTime" : 3.0,
+
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "axecleave",
+  "primaryAbility" : {
+    "fireTime" : 0.9,
+    "baseDps" : 9.5,
+    "damageConfig" : {
+      "knockback" : 25
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

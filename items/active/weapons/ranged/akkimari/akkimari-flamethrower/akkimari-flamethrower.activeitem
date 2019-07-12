@@ -1,0 +1,204 @@
+{
+  "itemName" : "akkimari-flamethrower",
+  "price" : 325,
+  "inventoryIcon" : "akkimari-flamethrower.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "^gray;A powerful makeshift flamethrower.^reset;",
+  "shortdescription" : "Akris Flamethrower",
+  "level" : 6,
+  "fixedLevel" : false,
+  "tooltipKind" : "thea-continuousgun",
+  "category" : "Flamethrower",
+  "itemTags" : ["weapon","ranged","flamethrower","akkimari"],
+  "twoHanded" : true,
+  
+  "cursor" : "/cursors/thea-triplereticle-large.cursor",
+  
+  "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
+  "animationParts" : {
+    "middle" : "akkimari-flamethrower.png",
+    "middleFullbright" : "akkimari-flamethrowerlights.png",
+    "muzzleFlash" : ""
+  },
+  "animationCustom" : {
+	"animatedParts" : {
+      "stateTypes" : {
+		"altSwoosh" : {
+		  "default" : "idle",
+		  "states" : {
+			"idle" : {
+			},
+			"fire" : {
+			  "frames" : 3,
+			  "cycle" : 0.08,
+			  "mode" : "transition",
+			  "transition" : "idle"
+			}
+		  }
+		}
+	  },
+	  "parts" : {
+		"middleFullbright" : {
+		  "properties" : {
+			"offset" : [1.25, 0.0]
+		  }
+		},
+		"altSwoosh" : {
+		  "properties" : {
+			"zLevel" : -3,
+			"centered" : true,
+			"offset" : [-2.875, 1.25],
+			"transformationGroups" : ["muzzle"]
+		  },
+		  "partStates" : {
+			"altSwoosh" : {
+			  "idle" : {
+				"properties" : {
+				  "image" : ""
+				}
+			  },
+			  "fire" : {
+				"properties" : {
+				  "image" : "/items/active/weapons/melee/animations/swoosh/thea-shortswordswoosh.png:<frame>",
+				  "damageArea" : [[-3.75, 1.5], [-1.875, 2.25], [0.75, 2.25], [3, 1.25], [3.75, -0.15], [3.75, -1.675], [3, -2.375], [0, -1.875]]
+				}
+			  }
+			}
+		  }
+		}
+	  }
+	},
+	"lights" : {
+      "muzzleFlash" : {
+		"active" : false,
+		"position" : [0, 0],
+		"color" : [0, 0, 0]
+	  }
+    },
+    "sounds" : {
+      "fireStart" : [ "/sfx/gun/flamethrower_start.ogg" ],
+      "fireLoop" : [ "/sfx/gun/flamethrower_loop.ogg" ],
+      "fireEnd" : [ "/sfx/gun/flamethrower_stop.ogg" ],
+	  "altFire" : [ "/sfx/melee/swing_hammer.ogg" ]
+    },
+	"particleEmitters" : {
+	  "altSwoosh" : {
+        "active" : false,
+        "emissionRate" : 5,
+        "transformationGroups" : ["muzzle"],
+        "offsetRegion" : [0.0, 0.0, 0.0, 0.0],
+        "particles" : []
+      },
+	  "idleFlames" : {
+		"active" : true,
+		"transformationGroups" : ["muzzle"],
+		"offsetRegion" : [0.375, -0.25, 0.375, -0.25],
+		"emissionRate" : 30,
+		"particles" : [
+		  {"particle" : "thea-smallflame"}
+		]
+	  }
+	}
+  },
+
+  "baseOffset" : [1.25, 0.0],
+  "muzzleOffset" : [2.0, 0.125],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "fire",
+
+  "primaryAbility" : {
+    "name" : "Flamethrower",
+    "scripts" : ["/items/active/weapons/ranged/abilities/flamethrower/flamethrower.lua"],
+    "class" : "FlamethrowerAttack",
+
+    "baseDps" : 12.5,
+    "energyUsage" : 50,
+    "fireTime" : 0.015,
+    "inaccuracy" : 0.075,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "allianceflamethrower2",
+    "projectileParameters" : {},
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.2"
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.2"
+      },
+      "cooldown" : {
+        "duration" : 0.01,
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.2"
+      }
+    }
+  },
+  
+  "altAbility" : {
+    "name" : "Gun Bash",
+    "scripts" : ["/items/active/weapons/melee/abilities/thea-altmeleeslash.lua"],
+    "class" : "TheaAltMeleeSlash",
+
+    "fireTime" : 1.2,
+    "baseDps" : 6.5,
+    "damageConfig" : {
+      "damageSourceKind" : "hammer",
+      "statusEffects" : [ "thea-stunnedshort" ],
+      "knockbackMode" : "aim",
+      "knockback" : 30,
+      "timeoutGroup" : "primary"
+    },
+
+    "stances" : {
+      "windup" : {
+        "duration" : 0.2,
+        "armRotation" : 80,
+        "weaponRotation" : 60,
+        "twoHanded" : true,
+        "weaponOffset" : [0, 0],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire" : {
+        "duration" : 0.4,
+        "armRotation" : -15,
+        "weaponRotation" : 25,
+        "twoHanded" : true,
+        "weaponOffset" : [0.25, 0],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+}

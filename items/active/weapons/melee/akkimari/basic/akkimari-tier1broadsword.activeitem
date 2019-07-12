@@ -9,7 +9,7 @@
   "tooltipKind" : "sword",
   "category" : "Longsword",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","broadsword","akkimari"],
+  "itemTags" : ["weapon","melee","broadsword","akkimari","akkimariUpgradeable"],
 
   "inventoryIcon" : "akkimari-tier1broadsword.png",
 

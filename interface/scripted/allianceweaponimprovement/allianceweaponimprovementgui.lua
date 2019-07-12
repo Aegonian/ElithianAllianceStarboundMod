@@ -2,7 +2,10 @@ require "/scripts/util.lua"
 
 function init()
   self.itemList = "itemScrollArea.itemList"
-
+  
+  self.upgradeItemTag = config.getParameter("upgradeItemTag")
+  self.upgradeKitTag = config.getParameter("upgradeKitTag")
+  
   self.upgradeableWeaponItems = {}
   self.selectedItem = nil
   self.upgradeToLevel = nil
@@ -23,7 +26,7 @@ function update(dt)
 end
 
 function populateItemList(forceRepop)
-  local upgradeableWeaponItems = player.itemsWithTag("allianceUpgradeable")
+  local upgradeableWeaponItems = player.itemsWithTag(self.upgradeItemTag)
   for i = 1, #upgradeableWeaponItems do
     upgradeableWeaponItems[i].count = 1
   end
@@ -72,7 +75,7 @@ function checkUpgradeItemSlot()
   local upgradeKitCheck = false
   
   if upgradeKit then
-	if root.itemHasTag(upgradeKitConfig.config.itemName, "theaUpgradeKit") then
+	if root.itemHasTag(upgradeKitConfig.config.itemName, self.upgradeKitTag) then
 	  upgradeKitCheck = true
 	  self.upgradeToLevel = upgradeKitConfig.config.upgradeToLevel or 1
 	  widget.setText("newLevelLabel", self.upgradeToLevel)

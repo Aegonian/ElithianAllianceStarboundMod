@@ -9,7 +9,7 @@
   "tooltipKind" : "sword",
   "category" : "hammer",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","akkimari"],
+  "itemTags" : ["weapon","melee","hammer","akkimari","akkimariUpgradeable"],
 
   "inventoryIcon" : "akkimari-tier3hammer.png",
 

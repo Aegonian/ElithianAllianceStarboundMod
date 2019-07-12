@@ -9,7 +9,7 @@
   "tooltipKind" : "sword",
   "category" : "axe",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","axe","akkimari"],
+  "itemTags" : ["weapon","melee","axe","akkimari","akkimariUpgradeable"],
 
   "inventoryIcon" : "akkimari-tier3axe.png",
 

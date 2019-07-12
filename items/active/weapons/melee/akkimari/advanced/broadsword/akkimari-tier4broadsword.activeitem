@@ -1,0 +1,45 @@
+{
+  "itemName" : "akkimari-tier4broadsword",
+  "price" : 900,
+  "level" : 4,
+  "maxStack" : 1,
+  "rarity" : "Uncommon",
+  "description" : "A heated blade used by bounty hunters of the Kelraaki.",
+  "shortdescription" : "Kelraaki Longsword",
+  "tooltipKind" : "sword",
+  "category" : "Longsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword","akkimari","akkimariUpgradeable"],
+
+  "inventoryIcon" : "akkimari-tier4broadswordicon.png",
+
+  "animation" : "/items/active/weapons/melee/animations/thea-heatupbroadsword.animation",
+  "animationParts" : {
+    "handle" : "handle.png",
+    "handleFullbright" : "handlefullbright.png",
+    "blade" : "blade.png"
+  },
+  "animationCustom" : {},
+
+  "scripts" : ["/items/active/weapons/melee/energymeleeweapon.lua"],
+
+  "activeTime" : 3.0,
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.83,
+    "baseDps" : 11.5,
+
+    "stances" : {
+      "windup1" : {
+        "duration" : 0.15
+      }
+    }
+  },
+  
+  "altAbilityType" : "downstab",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

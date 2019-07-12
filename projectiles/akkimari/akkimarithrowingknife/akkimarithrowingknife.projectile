@@ -1,0 +1,34 @@
+{
+  "projectileName" : "akkimarithrowingknife",
+  "image" : "akkimarithrowingknife.png",
+  "animationCycle" : 0.05,
+  "physics" : "grenadenobounce",
+  "bounces" : 0,
+  "frameNumber" : 1,
+  "pointLight" : false,
+  "speed" : 70,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimarithrowingknifesticking",
+      "inheritDamageFactor" : 0.0,
+      "inheritSpeedFactor" : 0.6,
+      "angleAdjust" : 0
+    }
+  ],
+  "power" : 1.0,
+  "knockback" : 10,
+  "damageKind" : "dagger",
+  "emitters" : [ "daggerblue" ],
+  "damagePoly" : [ [-2, -3], [8, -3], [8, 2], [-2, 2] ],
+  
+  "scripts" : [ "/projectiles/scripts/thea-randomspeedprojectile.lua" ],
+  "minSpeed" : 60,
+  "maxSpeed" : 80
+}
+
+

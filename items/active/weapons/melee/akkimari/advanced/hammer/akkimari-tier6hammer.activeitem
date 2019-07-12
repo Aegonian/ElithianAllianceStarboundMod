@@ -1,0 +1,43 @@
+{
+  "itemName" : "akkimari-tier6hammer",
+  "price" : 900,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "A heated hammer used by bounty hunters of the Kelraaki.",
+  "shortdescription" : "Kelraaki Hammer",
+  "tooltipKind" : "sword",
+  "category" : "hammer",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","hammer","akkimari","akkimariUpgradeable"],
+
+  "inventoryIcon" : "akkimari-tier6hammericon.png",
+
+  "animation" : "/items/active/weapons/melee/animations/thea-heatuphammer.animation",
+  "animationParts" : {
+    "handle" : "handle.png",
+    "handleFullbright" : "handlefullbright.png",
+    "blade" : "blade.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_hammer.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/energymeleeweapon.lua"],
+
+  "activeTime" : 3.0,
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "hammersmash",
+  "primaryAbility" : {
+    "fireTime" : 1.2,
+    "baseDps" : 11.5
+  },
+  
+  "altAbilityType" : "groundslam",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

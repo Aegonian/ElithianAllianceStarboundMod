@@ -1,0 +1,85 @@
+{
+  "itemName" : "akkimari-throwingknife",
+  "price" : 10,
+  "inventoryIcon" : "akkimari-throwingknifeicon.png",
+  "rarity" : "Common",
+  "description" : "^gray;A trio of well-balanced makeshift throwing knives.^reset;",
+  "shortdescription" : "Akris Throwing Knives",
+  "level" : 1,
+  "tooltipKind" : "thea-activethrowable",
+  "category" : "Throwable",
+  "itemTags" : ["weapon","throwable","akkimari"],
+  "twoHanded" : false,
+
+  "animation" : "/items/active/weapons/activethrowables/thea-activethrowable.animation",
+  "animationParts" : {
+    "middle" : "akkimari-throwingknife.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "throw" : [ "/sfx/projectiles/throw_item.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.25, 0.0],
+  "fireOffset" : [0.0, 0.0],
+  
+  "aimOffset" : -0.5,
+
+  "scripts" : ["/items/active/weapons/activethrowables/thea-baseactivethrowable.lua"],
+
+  "elementalType" : "physical",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/activethrowables/thea-activethrowable.lua"],
+    "class" : "TheaActiveThrowable",
+
+    "baseDamage" : 15.0,
+    "inaccuracy" : 0.005,
+    "cooldownTime" : 0.3,
+	
+	"ammoUsage" : 1,
+	
+    "projectileCount" : 3,
+    "projectileType" : "akkimarithrowingknife",
+    "projectileParameters" : {
+      "knockback" : 4
+    },
+	"angleAdjustmentsPerShot" : [ 0.05, 0, -0.05 ],
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : -25,
+		"weaponOffset" : [-0.75, -0.75],
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swimIdle.2",
+        "backArmFrame" : "swimIdle.2"
+      },
+      "prepare" : {
+        "duration" : 0.15,
+        "armRotation" : -150,
+        "weaponRotation" : 150,
+        "twoHanded" : false,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "throw" : {
+        "duration" : 0.25,
+        "armRotation" : -10,
+        "weaponRotation" : 10,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/thea-buildactivethrowable.lua"
+}

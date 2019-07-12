@@ -1,11 +1,11 @@
 {
   "itemName" : "akkimari-bow",
   "price" : 500,
-  "level" : 6,
+  "level" : 2,
   "fixedLevel" : false,
   "inventoryIcon" : "akkimari-bowicon.png",
   "maxStack" : 1,
-  "rarity" : "Legendary",
+  "rarity" : "Common",
   "tooltipKind" : "thea-bow",
   "category" : "Recurve Bow",
   "description" : "^gray;A makeshift metal bow, used to harvest meat and materials.",

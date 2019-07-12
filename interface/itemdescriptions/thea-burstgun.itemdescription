@@ -22,13 +22,13 @@
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
-  "damagePerShotTitleLabel" : {
+  "roundsPerBurstTitleLabel" : {
     "type" : "label",
     "position" : [16, 74],
     "hAnchor" : "left",
     "value" : "Rounds Per Burst:"
   },
-  "damagePerShotLabel" : {
+  "roundsPerBurstLabel" : {
     "type" : "label",
     "position" : [134, 74],
     "hAnchor" : "right",

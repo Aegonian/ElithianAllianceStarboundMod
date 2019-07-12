@@ -1,0 +1,45 @@
+{
+  "itemName" : "akkimari-tier5spear",
+  "price" : 900,
+  "level" : 5,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A heated spear used by bounty hunters of the Kelraaki.",
+  "shortdescription" : "Kelraaki Spear",
+  "tooltipKind" : "sword",
+  "category" : "spear",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","spear","akkimari","akkimariUpgradeable"],
+
+  "inventoryIcon" : "akkimari-tier5spearicon.png",
+
+  "animation" : "/items/active/weapons/melee/animations/thea-heatupspear.animation",
+  "animationParts" : {
+    "handle" : "handle.png",
+    "handleFullbright" : "handlefullbright.png",
+    "blade" : "blade.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_spear.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/energymeleeweapon.lua"],
+  
+  "activeTime" : 3.0,
+
+  "elementalType" : "physical",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "spearstab",
+  "primaryAbility" : {
+    "fireTime" : 0.95,
+    "baseDps" : 10.5
+  },
+  
+  "altAbilityType" : "flurry",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

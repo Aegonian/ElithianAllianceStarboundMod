@@ -9,7 +9,7 @@
   "tooltipKind" : "sword",
   "category" : "spear",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","spear","akkimari"],
+  "itemTags" : ["weapon","melee","spear","akkimari","akkimariUpgradeable"],
 
   "inventoryIcon" : "akkimari-tier2spear.png",
 

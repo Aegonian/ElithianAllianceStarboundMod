@@ -1,0 +1,13 @@
+{
+  "itemName" : "akkimariupgradekit5",
+  "price" : 700,
+  "maxStack" : 50,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "akkimariupgradekit5.png",
+  "description" : "A high-grade weapon upgrade kit. Upgrades weapons to level 5.",
+  "shortdescription" : "Makeshift Kit L.5",
+  "itemTags" : [ "akkimariUpgradeKit" ],
+  
+  "upgradeToLevel" : 5
+}

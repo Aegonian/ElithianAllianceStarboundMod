@@ -9,7 +9,7 @@
   "tooltipKind" : "sword",
   "category" : "shortsword",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","shortsword","akkimari"],
+  "itemTags" : ["weapon","melee","shortsword","akkimari","akkimariUpgradeable"],
 
   "inventoryIcon" : "akkimari-tier1shortsword.png",
 
