@@ -26,10 +26,10 @@
     { "op": "add", "path": "/hunt/T1/valahrgland", "value": true},
 
     // Hunt - T2 - Avikan
-    { "op": "add", "path": "/hunt/T1/monsterclaws", "value": true},
-    { "op": "add", "path": "/hunt/T1/monsterplate", "value": true},
+    { "op": "add", "path": "/hunt/T2/monsterclaws", "value": true},
+    { "op": "add", "path": "/hunt/T2/monsterplate", "value": true},
 
     // Hunt - T3 - Avikan
-    { "op": "add", "path": "/hunt/T1/greatmonsterbone", "value": true},
-    { "op": "add", "path": "/hunt/T1/monsterspine", "value": true}
+    { "op": "add", "path": "/hunt/T3/greatmonsterbone", "value": true},
+    { "op": "add", "path": "/hunt/T3/monsterspine", "value": true}
 ]
