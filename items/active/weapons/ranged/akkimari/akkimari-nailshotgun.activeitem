@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Common",
   "description" : "A heavy nail cannon cobbled together by the Akkimari.",
-  "shortdescription" : "Akris Nail Cannon",
+  "shortdescription" : "Akris Nailcannon",
   "level" : 2,
   "fixedLevel" : false,
   "tooltipKind" : "gun",
@@ -18,11 +18,26 @@
     "butt" : "",
     "middle" : "akkimari-nailshotgun.png",
     "barrel" : "",
-    "muzzleFlash" : ""
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/akkimarismokemuzzlelarge.png"
   },
   "animationCustom" : {
+	"animatedParts" : {
+	  "parts" : {
+		"muzzleFlash" : {
+		  "properties" : {
+			"fullbright" : false
+		  }
+		}
+	  }
+	},
     "particleEmitters" : {
       "muzzleFlash" : {
+        "particles" : [
+          { "particle" : "lineriflepuff", "offset" : [0.0, -0.25] },
+		  { "particle" : "lineriflepuff", "offset" : [0.0, -0.25] }
+        ]
+      },
+      "altMuzzleFlash" : {
         "particles" : [
           { "particle" : "lineriflepuff", "offset" : [0.0, -0.25] },
 		  { "particle" : "lineriflepuff", "offset" : [0.0, -0.25] }
@@ -74,6 +89,52 @@
         "allowRotate" : true,
         "allowFlip" : true
       },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 7,
+        "weaponRotation" : 7,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.45,
+        "armRotation" : 7,
+        "weaponRotation" : 7,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+  
+
+  "altAbility" : {
+    "name" : "Piercing Nails",
+    "scripts" : ["/items/active/weapons/ranged/abilities/altfire.lua"],
+	"class" : "AltFireAttack",
+
+    "fireTime" : 0.65,
+    "baseDps" : 11.5,
+    "energyUsage" : 45,
+    "inaccuracy" : 0.2,
+
+    "projectileCount" : 15,
+    "fireType" : "auto",
+	
+	"projectileType" : "akkimarinail2",
+	"projectileParameters" : {
+	  "knockback" : 6,
+	  "piercing" : true
+	},
+	
+	"hidePrimaryMuzzleFlash" : false,
+	"useParticleEmitter" : true,
+	"usePrimaryFireSound" : true,
+
+    "stances" : {
       "fire" : {
         "duration" : 0,
         "armRotation" : 7,

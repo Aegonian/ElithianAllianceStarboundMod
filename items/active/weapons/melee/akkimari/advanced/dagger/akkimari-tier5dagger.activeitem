@@ -29,7 +29,7 @@
 
   "activeTime" : 2.0,
 
-  "elementalType" : "physical",
+  "elementalType" : "fire",
 
   "aimOffset" : 0.0,
   "primaryAbility" : {
@@ -39,8 +39,8 @@
     "fireTime" : 0.32,
     "baseDps" : 9.0,
     "damageConfig" : {
-      "damageSourceKind" : "dagger",
-      "statusEffects" : [ ],
+      "damageSourceKind" : "firedagger",
+      "statusEffects" : [ "thea-heatsundered" ],
       "knockbackMode" : "aim",
       "knockback" : 10,
       "timeoutGroup" : "primary"

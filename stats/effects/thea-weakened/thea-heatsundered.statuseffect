@@ -1,0 +1,19 @@
+{
+  "name" : "thea-heatsundered",
+  "blockingStat" : "fireStatusImmunity",
+
+  "effectConfig" : {
+  	"damageAdditionPercentage" : 0.1, //How much additional damage the target should take when taking damage. If set to 1.0, incoming damage is effectively doubled
+  	"directive" : "fade=EB4042=0.25"
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "thea-weakened.lua"
+  ],
+
+  "animationConfig" : "thea-heatsundered.animation",
+
+  "label" : "Sundered",
+  "icon" : "/interface/statuses/thea-heatsundered.png"
+}

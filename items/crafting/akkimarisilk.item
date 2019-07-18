@@ -1,0 +1,10 @@
+{
+  "itemName" : "akkimarisilk",
+  "price" : 10,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "akkimarisilk.png",
+  "description" : "A long string of silk from an Akkimari silk gland.",
+  "shortdescription" : "Akkimari Silk",
+  "itemTags" : [ "reagent" ]
+}

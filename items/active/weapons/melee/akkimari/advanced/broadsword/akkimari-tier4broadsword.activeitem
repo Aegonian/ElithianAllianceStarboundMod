@@ -25,12 +25,17 @@
 
   "activeTime" : 3.0,
 
-  "elementalType" : "physical",
+  "elementalType" : "fire",
 
   "primaryAbilityType" : "broadswordcombo",
   "primaryAbility" : {
     "fireTime" : 0.83,
     "baseDps" : 11.5,
+	
+    "damageConfig" : {
+      "damageSourceKind" : "firebroadsword",
+      "statusEffects" : [ "thea-heatsundered" ]
+    },
 
     "stances" : {
       "windup1" : {

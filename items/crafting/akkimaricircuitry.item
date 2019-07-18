@@ -1,0 +1,10 @@
+{
+  "itemName" : "akkimaricircuitry",
+  "price" : 75,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "akkimaricircuitry.png",
+  "description" : "All-purpose circuitry found in most Akkimari electrical equipment.",
+  "shortdescription" : "Akris Circuitry",
+  "itemTags" : [ "reagent" ]
+}

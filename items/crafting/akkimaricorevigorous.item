@@ -1,0 +1,10 @@
+{
+  "itemName" : "akkimaricorevigorous",
+  "price" : 250,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "akkimaricorevigorous.png",
+  "description" : "An Akkimari armour power core. Increases the user's health reserves.",
+  "shortdescription" : "Deflector Core r.S",
+  "itemTags" : [ "reagent" ]
+}

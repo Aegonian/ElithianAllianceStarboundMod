@@ -4,7 +4,8 @@
 //This section adds new sub-biomes to existing main biomes/planet types
 
 	//DESERT WETLANDS
-	{ "op":"add","path": "/planetTypes/desert/layers/surface/secondaryRegions/-", "value": "thea-desertwetlands" },
+	//{ "op":"add","path": "/planetTypes/desert/layers/surface/secondaryRegions/-", "value": "thea-desertwetlands" }, //Old implementation as secondaryRegion. Changing it into a subRegion in update v2.3.11
+	{ "op":"add","path": "/regionTypes/desert/subRegion/-", "value": "thea-desertwetlands" },
 	
 	//DESERT WETLANDS BIOME PARAMETERS
 	{ "op":"add",

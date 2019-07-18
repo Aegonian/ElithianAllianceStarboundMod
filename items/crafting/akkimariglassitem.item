@@ -1,0 +1,10 @@
+{
+  "itemName" : "akkimariglassitem",
+  "price" : 3,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "akkimariglassitem.png",
+  "description" : "A hard crystalline sheet similar to glass.",
+  "shortdescription" : "Akris Glass",
+  "itemTags" : [ "reagent" ]
+}

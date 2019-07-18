@@ -29,14 +29,19 @@
   
   "activeTime" : 3.0,
 
-  "elementalType" : "physical",
+  "elementalType" : "fire",
 
   "aimOffset" : -1.0,
 
   "primaryAbilityType" : "spearstab",
   "primaryAbility" : {
     "fireTime" : 0.95,
-    "baseDps" : 10.5
+    "baseDps" : 10.5,
+	
+    "damageConfig" : {
+      "damageSourceKind" : "firespear",
+      "statusEffects" : [ "thea-heatsundered" ]
+    }
   },
   
   "altAbilityType" : "flurry",

@@ -1,0 +1,253 @@
+{
+  "objectName" : "akkimariinventor",
+  "colonyTags" : ["alliance", "crafting"],
+  "rarity" : "Uncommon",
+  "race" : "aegi",
+  "category" : "crafting",
+
+  "radioMessagesOnPickup" : [ "pickupakkimariinventor" ],
+  //this is handled by the lua
+  "breakDropOptions" : [],
+
+  "price" : 250,
+  "printable" : false,
+
+  "scripts" : [ "/objects/crafting/upgradeablecraftingobjects/upgradeablecraftingobject.lua" ],
+
+  "animation" : "akkimariinventor.animation",
+  "animationPosition" : [20, 20],
+
+  "inventoryIcon" : "akkimariinventoricon.png",
+  "placementImage" : "akkimariinventor.png:default",
+  "placementImagePosition" : [0, 0],
+
+  "description" : "A simple workstation with a blueprint board and space to craft items.",
+  "shortdescription" : "^orange;Makeshift Workstation^white;",
+
+  "apexDescription" : "A workstation with space for my blueprints.",
+  "avianDescription" : "A basic workstation. I could craft some simple things here.",
+  "floranDescription" : "Floran can make new thingsss here.",
+  "glitchDescription" : "Inspired. This table might allow me to craft some new crafting tables.",
+  "humanDescription" : "These blueprints aren't too complicated. Let's get started!",
+  "hylotlDescription" : "One can display their crafting prowess here.",
+  "novakidDescription" : "A craftin' table for craftin' more craftin' tables. Right.",
+
+  "aegiDescription" : "A crude workstation. I'd better be careful I don't cut myself on the edges...",
+  "avikanDescription" : "A scrappy workstation. Poorly built and poolry designed.",
+  "erixianDescription" : "TODO.",
+  "trinkDescription" : "A poorly designed crafting table. It looks like it was hastily put together.",
+  "hymidDescription" : "A simple workstation. The tools are really quite primitive.",
+  "notixDescription" : "This workstation seems very poorly constructed...",
+  "jorgasianDescription" : "A makeshift workstation. Not very well made.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Analysis complete. Makeshift crafting table.",
+  "akkimariDescription" : "Akki take blueprint, make things here.",
+
+  "learnBlueprintsOnPickup" : [],
+
+
+  "startingUpgradeStage" : 1,
+  "maxUpgradeStage" : 3,
+  "upgradeStages" : [
+    {
+      "animationState" : "akkimariinventor",
+
+      "itemSpawnParameters" : {
+        "price" : 250,
+        "inventoryIcon" : "akkimariinventoricon.png",
+        "placementImage" : "akkimariinventor.png:default",
+        "placementImagePosition" : [0, 0],
+
+        "description" : "A simple workstation with a blueprint board and space to craft items.",
+		"shortdescription" : "^orange;Makeshift Workstation^white;",
+
+		"apexDescription" : "A workstation with space for my blueprints.",
+		"avianDescription" : "A basic workstation. I could craft some simple things here.",
+		"floranDescription" : "Floran can make new thingsss here.",
+		"glitchDescription" : "Inspired. This table might allow me to craft some new crafting tables.",
+		"humanDescription" : "These blueprints aren't too complicated. Let's get started!",
+		"hylotlDescription" : "One can display their crafting prowess here.",
+		"novakidDescription" : "A craftin' table for craftin' more craftin' tables. Right.",
+
+		"aegiDescription" : "A crude workstation. I'd better be careful I don't cut myself on the edges...",
+		"avikanDescription" : "A scrappy workstation. Poorly built and poolry designed.",
+		"erixianDescription" : "TODO.",
+		"trinkDescription" : "A poorly designed crafting table. It looks like it was hastily put together.",
+		"hymidDescription" : "A simple workstation. The tools are really quite primitive.",
+		"notixDescription" : "This workstation seems very poorly constructed...",
+		"jorgasianDescription" : "A makeshift workstation. Not very well made.",
+		"centensDescription" : "TODO.",
+		"dremetonDescription" : "TODO.",
+		"theleanDescription" : "TODO.",
+		"drodenDescription" : "Analysis complete. Makeshift crafting table.",
+		"akkimariDescription" : "Akki take blueprint, make things here."
+      },
+
+      "interactData" : {
+        "config" : "/interface/windowconfig/akkimariinventorcrafting.config",
+        "paneLayoutOverride" : {
+          "windowtitle" : {
+            "title" : " Makeshift Workstation",
+            "subtitle" : " ^#b9b5b2;Specialized crafting tools",
+            "icon" : {
+              "file" : "/interface/crafting/craftingakkimariinventor.png"
+            }
+          }
+        },
+        "filter" : [ "akkimariinventor" ],
+        "upgradeMaterials" : [
+          { "item" : "akkimarimetaltier2", "count" : 6 },
+		  { "item" : "akkimaricircuitry", "count" : 4 }
+        ]
+      },
+
+      "learnBlueprintsOnPickup" : [],
+
+      "upgradeSoundEffect" : "fanfare",
+      "upgradeParticleEffect" : "dust"
+    },
+
+    {
+      "animationState" : "akkimariinventor2",
+
+      "itemSpawnParameters" : {
+        "price" : 500,
+        "inventoryIcon" : "akkimariinventor2icon.png",
+        "placementImage" : "akkimariinventor2.png",
+        "placementImagePosition" : [0, 0],
+
+        "description" : "A blueprint board built in the style of the Kelraaki.",
+		"shortdescription" : "^orange;Kelraaki Workstation^white;",
+
+		"apexDescription" : "Perhaps these blueprints could be used by the rebellion.",
+		"avianDescription" : "I can show my crafting skill here.",
+		"floranDescription" : "Floran can make new thingsss here.",
+		"glitchDescription" : "Inspired. This table might allow me to craft some new crafting tables.",
+		"humanDescription" : "These blueprints aren't too complicated. Let's get started!",
+		"hylotlDescription" : "One can display their crafting prowess here.",
+		"novakidDescription" : "A craftin' table for craftin' more craftin' tables. Right.",
+
+		"aegiDescription" : "A simple blueprint board.",
+		"avikanDescription" : "Alien tools and blueprints. What do they craft here?",
+		"erixianDescription" : "TODO.",
+		"trinkDescription" : "A rather crudely built workstation.",
+		"hymidDescription" : "A workstation made of scrap metal. Sturdier than it looks.",
+		"notixDescription" : "This workstation isn't anything special, but it'll get the job done.",
+		"jorgasianDescription" : "A scrappy blueprint board.",
+		"centensDescription" : "TODO.",
+		"dremetonDescription" : "TODO.",
+		"theleanDescription" : "TODO.",
+		"drodenDescription" : "Analysis complete. Makeshift crafting table.",
+		"akkimariDescription" : "Akki take blueprint, make things here."
+      },
+
+      "interactData" : {
+        "config" : "/interface/windowconfig/akkimariinventorcrafting.config",
+        "paneLayoutOverride" : {
+          "windowtitle" : {
+            "title" : " Kelraaki Workstation",
+            "subtitle" : " ^#b9b5b2;Specialized crafting tools",
+            "icon" : {
+              "file" : "/interface/crafting/craftingakkimariinventor2.png"
+            }
+          }
+        },
+        "filter" : [ "akkimariinventor", "akkimariinventor2" ],
+		"craftingSound" : "/sfx/interface/crafting_tech2.ogg",
+        "upgradeMaterials" : [
+          { "item" : "akkimarimetaltier4", "count" : 6 },
+          { "item" : "akkimariglassitem", "count" : 10 },
+          { "item" : "akkimaricircuitry", "count" : 4 },
+          { "item" : "akkimariprocessor", "count" : 1 }
+        ]
+      },
+
+      "learnBlueprintsOnPickup" : [],
+
+      "upgradeSoundEffect" : "fanfare",
+      "upgradeParticleEffect" : "dust"
+    },
+
+    {
+      "animationState" : "akkimariinventor3",
+
+      "itemSpawnParameters" : {
+        "price" : 750,
+        "inventoryIcon" : "akkimariinventor3icon.png",
+        "placementImage" : "akkimariinventor3.png:default.default",
+        "placementImagePosition" : [0, 0],
+
+        "description" : "A high-tech blueprint system fashioned after the technological marvels of Akris.",
+		"shortdescription" : "^orange;Akris Workstation^white;",
+
+		"apexDescription" : "I wonder if I can download these blueprints for the rebellion.",
+		"avianDescription" : "I can display a variety of blueprints on these screens.",
+		"floranDescription" : "Board of light tellsss Floran how to make thingss.",
+		"glitchDescription" : "Inspired. This display is full of interesting blueprints.",
+		"humanDescription" : "A modern workstation.",
+		"hylotlDescription" : "One can display their crafting prowess here.",
+		"novakidDescription" : "These screens show all sorts of blueprints an' such.",
+
+		"aegiDescription" : "An expertly-built workstation. The screens are odd, but highly detailed.",
+		"avikanDescription" : "These screns display blueprints for all sorts of alien technology.",
+		"erixianDescription" : "TODO.",
+		"trinkDescription" : "These screens are surprisingly efficient in design.",
+		"hymidDescription" : "A sleek, multi-monitor workstation.",
+		"notixDescription" : "Without haptic feedback, these screens are pretty useless to me.",
+		"jorgasianDescription" : "A well-made workstation. The screens are gorgeous!",
+		"centensDescription" : "TODO.",
+		"dremetonDescription" : "TODO.",
+		"theleanDescription" : "TODO.",
+		"drodenDescription" : "Analysis complete. Modern crafting table.",
+		"akkimariDescription" : "Akki take blueprint, make things here."
+      },
+
+      "interactData" : {
+        "config" : "/interface/windowconfig/akkimariinventorcrafting.config",
+        "paneLayoutOverride" : {
+          "windowtitle" : {
+            "title" : " Akris Workstation",
+            "subtitle" : " ^#b9b5b2;Specialized crafting tools",
+            "icon" : {
+              "file" : "/interface/crafting/craftingakkimariinventor3.png"
+            }
+          }
+        },
+        "filter" : [ "akkimariinventor", "akkimariinventor2", "akkimariinventor3" ],
+		"craftingSound" : "/sfx/interface/crafting_tech2.ogg"
+      },
+
+      "learnBlueprintsOnPickup" : []
+    }
+  ],
+
+  "orientations" : [
+    {
+      "image" : "akkimariinventor.png:<color>",
+      "imagePosition" : [0, 0],
+      "direction" : "left",
+      "flipImages" : true,
+      "spaces" : [
+	    [0, 3], [1, 3], [2, 3], [3, 3], [4, 3],
+        [0, 2], [1, 2], [2, 2], [3, 2], [4, 2],
+        [0, 1], [1, 1], [2, 1], [3, 1], [4, 1],
+        [0, 0], [1, 0], [2, 0], [3, 0], [4, 0]
+      ],
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "akkimariinventor.png:<color>",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+      "spaces" : [
+        [0, 3], [1, 3], [2, 3], [3, 3], [4, 3],
+        [0, 2], [1, 2], [2, 2], [3, 2], [4, 2],
+        [0, 1], [1, 1], [2, 1], [3, 1], [4, 1],
+        [0, 0], [1, 0], [2, 0], [3, 0], [4, 0]
+      ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

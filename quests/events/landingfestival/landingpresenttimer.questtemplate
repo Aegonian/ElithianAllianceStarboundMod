@@ -1,5 +1,5 @@
 //This quest is automatically activated for the player whenever they receive a daily present during the Landing Festival
-//It keeps track of when the player received their last daily present, and prevent the player from receiving another on that same day
+//It keeps track of when the player received their last daily present, and prevents the player from receiving another on that same day
 //(This must be tracked through a quest as this is the only form of permanent scriptable storage that persist across play sessions and visited worlds, including instanced ones)
 
 {
@@ -11,8 +11,11 @@
   "moneyRange" : [0, 0],
   "rewards" : [],
   "canBeAbandoned" : false,
-  "invisible" : true,
-  "logOnly" : true,
+  
+  "showInLog" : false,
+  "showAcceptDialog" : false,
+  "showCompleteDialog" : false,
+  "showFailDialog" : false,
   "ephemeral" : true,
 
   "updateDelta" : 1,

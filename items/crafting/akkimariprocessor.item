@@ -1,0 +1,10 @@
+{
+  "itemName" : "akkimariprocessor",
+  "price" : 250,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "akkimariprocessor.png",
+  "description" : "A powerful, compact processor unit that offers incredible processing power.",
+  "shortdescription" : "Akris Omnicore",
+  "itemTags" : [ "reagent" ]
+}

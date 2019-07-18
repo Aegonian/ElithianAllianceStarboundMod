@@ -32,7 +32,7 @@
   
   "activeTime" : 3.0,
 
-  "elementalType" : "physical",
+  "elementalType" : "fire",
 
   "aimOffset" : -1.0,
 
@@ -41,6 +41,8 @@
     "fireTime" : 0.9,
     "baseDps" : 9.5,
     "damageConfig" : {
+      "damageSourceKind" : "fireaxe",
+      "statusEffects" : [ "thea-heatsundered" ],
       "knockback" : 25
     }
   },

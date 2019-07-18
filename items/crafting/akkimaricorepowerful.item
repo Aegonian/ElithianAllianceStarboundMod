@@ -1,0 +1,10 @@
+{
+  "itemName" : "akkimaricorepowerful",
+  "price" : 250,
+  "rarity" : "Rare",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "akkimaricorepowerful.png",
+  "description" : "An Akkimari armour power core. Increases the user's strength.",
+  "shortdescription" : "Deflector Core r.M",
+  "itemTags" : [ "reagent" ]
+}

@@ -1,0 +1,11 @@
+{
+  "particleEmitters" : {
+    "embers" : {
+      "enabled" : true,
+      "emissionRate" : 12.0,
+      "particles" : [
+        { "particle" : "thea-heatedparticle" }
+      ]
+    }
+  }
+}

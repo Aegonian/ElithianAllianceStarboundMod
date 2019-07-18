@@ -1,0 +1,26 @@
+{
+  "projectileName" : "akkimaripellet",
+  "image" : "akkimaripellet.png",
+  "physics" : "grenade",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  "flippable" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "statusEffects" : [ ],
+  "power" : 5.0,
+  "speed" : 70,
+  "bounces" : 3,
+  "knockback" : 0,
+  "damageKind" : "default",
+  
+  "scripts" : [ "/projectiles/scripts/thea-randomspeedprojectile.lua" ],
+  "minSpeed" : 45,
+  "maxSpeed" : 75
+}

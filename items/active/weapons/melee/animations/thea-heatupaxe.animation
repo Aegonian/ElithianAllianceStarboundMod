@@ -154,7 +154,7 @@
   },
 
   "particleEmitters" : {
-    "physicalswoosh" : {
+    "fireswoosh" : {
       "active" : false,
       "transformationGroups" : ["swoosh"],
 	  "offsetRegion" : [-2.25, -0.25, 0.0, 2.5],
