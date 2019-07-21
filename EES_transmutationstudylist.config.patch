@@ -1,0 +1,35 @@
+[
+    // Farm - T1 - Aegi
+    { "op": "add", "path": "/farm/T1/ambrumfiber", "value": true},
+    { "op": "add", "path": "/farm/T1/borato", "value": true},
+    { "op": "add", "path": "/farm/T1/selvasextract", "value": true},
+    { "op": "add", "path": "/farm/T1/loftgrain", "value": true},
+    { "op": "add", "path": "/farm/T1/mellowroot", "value": true},
+    { "op": "add", "path": "/farm/T1/vahlberries", "value": true},
+
+    // Farm - T1 - Avikan
+    { "op": "add", "path": "/farm/T1/avikanspices", "value": true},
+    { "op": "add", "path": "/farm/T1/bolbohn", "value": true},
+    { "op": "add", "path": "/farm/T1/dunestalk", "value": true},
+    { "op": "add", "path": "/farm/T1/kadavancactus", "value": true},
+
+    // Hunt - T1 - Aegi
+    { "op": "add", "path": "/hunt/T1/farythscale", "value": true},
+    { "op": "add", "path": "/hunt/T1/kelbethide", "value": true},
+
+    // Hunt - T1 - Avikan
+    { "op": "add", "path": "/hunt/T1/monsterbone", "value": true},
+    { "op": "add", "path": "/hunt/T1/monsterhide", "value": true},
+    { "op": "add", "path": "/hunt/T1/monsterscales", "value": true},
+    { "op": "add", "path": "/hunt/T1/sandcrawlermeat", "value": true},
+    { "op": "add", "path": "/hunt/T1/sandcrawlertooth", "value": true},
+    { "op": "add", "path": "/hunt/T1/valahrgland", "value": true},
+
+    // Hunt - T2 - Avikan
+    { "op": "add", "path": "/hunt/T2/monsterclaws", "value": true},
+    { "op": "add", "path": "/hunt/T2/monsterplate", "value": true},
+
+    // Hunt - T3 - Avikan
+    { "op": "add", "path": "/hunt/T3/greatmonsterbone", "value": true},
+    { "op": "add", "path": "/hunt/T3/monsterspine", "value": true}
+]
