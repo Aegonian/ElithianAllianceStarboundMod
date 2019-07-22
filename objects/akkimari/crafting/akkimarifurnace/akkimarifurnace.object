@@ -2,7 +2,7 @@
   "objectName" : "akkimarifurnace",
   "colonyTags" : ["akkimari", "crafting"],
   "rarity" : "Uncommon",
-  "race" : "aegi",
+  "race" : "akkimari",
   "category" : "crafting",
 
   //this is handled by the lua

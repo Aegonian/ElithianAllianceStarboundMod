@@ -1,0 +1,95 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "stage" : {
+        "default" : "akkimaricrafting",
+        "states" : {
+          "akkimaricrafting" : {},
+          "akkimaricrafting2" : {
+            "frames" : 6,
+            "cycle" : 0.6,
+            "mode" : "loop"
+          },
+          "akkimaricrafting3" : {
+            "frames" : 48,
+            "cycle" : 4.0,
+            "mode" : "loop"
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "lights" : {
+        "properties" : {
+		  "zLevel" : 0,
+          "centered" : true,
+		  "fullbright" : true
+        },
+        "partStates" : {
+          "stage" : {
+            "akkimaricrafting" : {
+              "properties" : {
+                "image" : ""
+              }
+            },
+
+            "akkimaricrafting2" : {
+              "properties" : {
+                "image" : "akkimaricrafting2.png:<color>.<frame>"
+              }
+            },
+
+            "akkimaricrafting3" : {
+              "properties" : {
+                "image" : "akkimaricrafting3.png:<color>.<frame>"
+              }
+            }
+          }
+        }
+      },
+	  
+	  "chassis" : {
+        "properties" : {
+		  "zLevel" : 1,
+          "centered" : true
+        },
+        "partStates" : {
+          "stage" : {
+            "akkimaricrafting" : {
+              "properties" : {
+                "image" : "akkimaricrafting.png:<color>"
+              }
+            },
+
+            "akkimaricrafting2" : {
+              "properties" : {
+                "image" : "akkimaricrafting2lit.png:<color>.<frame>"
+              }
+            },
+
+            "akkimaricrafting3" : {
+              "properties" : {
+                "image" : "akkimaricrafting3lit.png:<color>.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "sounds" : {
+    "fanfare" : ["/sfx/cinematics/mission_unlock_event.ogg"],
+    "fanfare2" : ["/sfx/cinematics/license_acquired_event.ogg"]
+  },
+
+  "particleEmitters" : {
+    "dust" : {
+      "emissionRate" : 0.0,
+      "burstCount"  : 10,
+      "offsetRegion" : [-2, -2, 2, 2],
+      "particles" : [{ "particle" : "dust2"}]
+    }
+  }
+}

@@ -1,8 +1,8 @@
 {
   "objectName" : "akkimariinventor",
-  "colonyTags" : ["alliance", "crafting"],
+  "colonyTags" : ["akkimari", "crafting"],
   "rarity" : "Uncommon",
-  "race" : "aegi",
+  "race" : "akkimari",
   "category" : "crafting",
 
   "radioMessagesOnPickup" : [ "pickupakkimariinventor" ],
