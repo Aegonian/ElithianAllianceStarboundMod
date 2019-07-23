@@ -1,0 +1,92 @@
+{
+  "projectileName" : "akkimarivaashbomb",
+  "physics" : "grenade",
+  "bounces" : 2,
+  "timeToLive" : 5,
+  "image" : "akkimarivaashbomb.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  //"emitters" : [ "rocketsmoke" ],
+  "speed" : 50,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/akkimariacidexplosion/akkimariacidexplosion-effect.config"
+    },
+	//ACID SPREAD
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimariacidcloud",
+      "fuzzAngle" : 360,
+      "inheritDamageFactor" : 0.0,
+      "angleAdjust" : 0
+    }
+  ],
+  "lightColor" : [0, 75, 10],
+  "power" : 50,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

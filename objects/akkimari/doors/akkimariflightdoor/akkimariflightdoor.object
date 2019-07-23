@@ -1,0 +1,89 @@
+{
+  "objectName" : "akkimariflightdoor",
+  "colonyTags" : ["akkimari", "door"],
+  "rarity" : "Common",
+  "category" : "door",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A large metal door used in Akkimari flight bays. It only opens for vehicles.",
+  "shortdescription" : "Akris Flight Door",
+  "race" : "akkimari",
+  
+  "health" : 8,
+
+  "apexDescription" : "A door that opens to vehicles.",
+  "avianDescription" : "A sturdy metal door. It'll open for vehicles only.",
+  "floranDescription" : "Floran musst use vehicle to open thisss door.",
+  "glitchDescription" : "Informed. These doors only open to vehicles.",
+  "humanDescription" : "Looks like a door for a flight bay.",
+  "hylotlDescription" : "A rather crude metal door. I should be careful not to cut myself.",
+  "novakidDescription" : "This here door only opens to vehicles.",
+
+  "aegiDescription" : "An Akkimari flight bay door. It'll open only for vehicles.",
+  "avikanDescription" : "An alien-built door. I'll need a vehicle to open it.",
+  "erixianDescription" : "A surprisingly sturdy door.",
+  "trinkDescription" : "Not very efficient, but this scrap metal door is quite effective.",
+  "hymidDescription" : "Only vehicles can cause this door to open.",
+  "notixDescription" : "This door was very crudely made.",
+  "jorgasianDescription" : "Shoddy-looking, but quite sturdy in reality.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected flight bay door.",
+  "akkimariDescription" : "Akkimari can fly Chaseflight through here.",
+
+  "inventoryIcon" : "akkimariflightdooricon.png",
+  "orientations" : [
+    {
+      "image" : "akkimariflightdoor.png:default",
+      "imagePosition" : [-24, 0],
+	  "animationPosition" : [-24, 0],
+      "renderLayer" : "Object+5",
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "bottom", "top" ]
+    },
+    {
+      "image" : "akkimariflightdoor.png:default",
+      "imagePosition" : [0, 0],
+	  "animationPosition" : [0, 0],
+      "renderLayer" : "Object+5",
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom", "top" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/door/door.lua" ],
+  "scriptDelta" : 5,
+
+  "sensorConfig" : {
+	"detectEntityTypes" : [ "vehicle" ],
+	"detectBoundMode" : "CollisionArea",
+	"detectDuration" : 1.0,
+	"detectArea" : [ [0.5, 3.5], 5 ]
+  },
+
+  "animation" : "akkimariflightdoor.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_open.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_close.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "akkimariflightdoor.png"
+  },
+
+  "inputNodes" : [ [0, 6] ],
+  "outputNodes" : [ [0, 0] ]
+}

@@ -58,5 +58,19 @@
       "direction" : "right",
       "anchors" : [ "bottom" ]
     }
-  ]
+  ],
+  
+  "animation" : "akkimaribountyhologram.animation",
+  "animationParts" : {
+    "bg" : "akkimaribountyhologram.png",
+    "fg" : "akkimaribountyhologramlit.png"
+  },
+  "animationPosition" : [-16, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : true,
+
+  "inputNodes" : [ [0, 0] ]
 }

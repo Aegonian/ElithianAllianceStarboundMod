@@ -1,0 +1,69 @@
+{
+  "globalTagDefaults" : {
+    "paletteSwaps" : ""
+  },
+
+  "animatedParts" : {
+    "stateTypes" : {
+      "weapon" : {
+        "default" : "visible",
+        "states" : {
+          "visible" : {},
+          "invisible" : {}
+        }
+      }
+    },
+	
+    "parts" : {
+      "middle" : {
+        "properties" : {
+          "zLevel" : 0,
+          "centered" : true,
+          "offset" : [0, 0], // x offset is set dynamically
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "weapon" : {
+            "visible" : {
+              "properties" : {
+				"image" : "<partImage>"
+              }
+            }
+          }
+        }
+      },
+      "middleFullbright" : {
+        "properties" : {
+          "zLevel" : 1,
+          "fullbright" : true,
+          "centered" : true,
+          "offset" : [0, 0], // x offset is set dynamically
+          "transformationGroups" : ["weapon"]
+        },
+        "partStates" : {
+          "weapon" : {
+            "visible" : {
+              "properties" : {
+				"image" : "<partImage>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "rotationGroups" : {
+    "weapon" : {
+      "angularVelocity" : 0
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {}
+  },
+
+  "sounds" : {
+    "throw" : [ ]
+  }
+}

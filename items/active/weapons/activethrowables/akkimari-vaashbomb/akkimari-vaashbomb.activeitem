@@ -1,19 +1,20 @@
 {
-  "itemName" : "akkimari-throwingknife",
-  "price" : 10,
-  "inventoryIcon" : "akkimari-throwingknifeicon.png",
-  "rarity" : "Common",
-  "description" : "^gray;A trio of well-balanced makeshift throwing knives.^reset;",
-  "shortdescription" : "Makeshift Throwing Knives",
+  "itemName" : "akkimari-vaashbomb",
+  "price" : 15,
+  "inventoryIcon" : "akkimari-vaashbomb.png",
+  "rarity" : "Rare",
+  "description" : "^gray;A grenade filled with Vaash.^reset;",
+  "shortdescription" : "Akris Vaash Bomb",
   "level" : 1,
   "tooltipKind" : "thea-activethrowable",
   "category" : "Throwable",
   "itemTags" : ["throwableweapon","akkimari"],
   "twoHanded" : false,
 
-  "animation" : "/items/active/weapons/activethrowables/thea-activethrowable.animation",
+  "animation" : "/items/active/weapons/activethrowables/thea-activethrowable-lights.animation",
   "animationParts" : {
-    "middle" : "akkimari-throwingknife.png"
+    "middle" : "akkimari-vaashbomb.png",
+    "middleFullbright" : "akkimari-vaashbomblights.png"
   },
   "animationCustom" : {
     "sounds" : {
@@ -21,7 +22,7 @@
     }
   },
 
-  "baseOffset" : [0.25, 0.0],
+  "baseOffset" : [0.0, 0.0],
   "fireOffset" : [0.0, 0.0],
   
   "aimOffset" : -0.5,
@@ -36,34 +37,29 @@
 
     "baseDamage" : 15.0,
     "inaccuracy" : 0.005,
-    "cooldownTime" : 0.3,
+    "cooldownTime" : 0.4,
 	
 	"ammoUsage" : 1,
 	
-    "projectileCount" : 3,
-    "projectileType" : "akkimarithrowingknife",
+    "projectileCount" : 1,
+    "projectileType" : "akkimarivaashbomb",
     "projectileParameters" : {
       "knockback" : 4
     },
-	"angleAdjustmentsPerShot" : [ 0.05, 0, -0.05 ],
 	
     "stances" : {
       "idle" : {
         "armRotation" : 0,
-        "weaponRotation" : -25,
-		"weaponOffset" : [-0.75, -0.75],
+        "weaponRotation" : 0,
         "twoHanded" : false,
 
         "allowRotate" : true,
-        "allowFlip" : true,
-
-        "frontArmFrame" : "swimIdle.2",
-        "backArmFrame" : "swimIdle.2"
+        "allowFlip" : true
       },
       "prepare" : {
         "duration" : 0.15,
-        "armRotation" : -150,
-        "weaponRotation" : 150,
+        "armRotation" : 135,
+        "weaponRotation" : 0,
         "twoHanded" : false,
 
         "allowRotate" : true,
@@ -71,8 +67,8 @@
       },
       "throw" : {
         "duration" : 0.25,
-        "armRotation" : -10,
-        "weaponRotation" : 10,
+        "armRotation" : 45,
+        "weaponRotation" : 0,
         "twoHanded" : false,
 
         "allowRotate" : false,

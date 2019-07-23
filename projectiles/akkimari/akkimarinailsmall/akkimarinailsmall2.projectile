@@ -1,0 +1,33 @@
+{
+  "projectileName" : "akkimarinailsmall2",
+  "image" : "akkimarinailsmall.png",
+  "physics" : "avikanarrow",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  "flippable" : true,
+  "piercing" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "akkimarinailsmallsticking",
+      "inheritDamageFactor" : 0.0,
+      "inheritSpeedFactor" : 0.6,
+      "angleAdjust" : 0
+    }
+  ],
+  "statusEffects" : [ ],
+  "power" : 5.0,
+  "speed" : 30,
+  "knockback" : 0,
+  "damageKind" : "default",
+  
+  "scripts" : [ "/projectiles/scripts/thea-randomspeedprojectile.lua" ],
+  "minSpeed" : 20,
+  "maxSpeed" : 40
+}

@@ -54,7 +54,6 @@
 	"detectArea" : [ [3, 0.5], 5 ]
   },
 
-  //"animation" : "/objects/wired/door/door.animation",
   "animation" : "akkimariflighthatch.animation",
   "animationCustom" : {
     "sounds" : {
