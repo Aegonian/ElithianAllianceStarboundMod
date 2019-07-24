@@ -1,0 +1,59 @@
+{
+  "objectName" : "akkimaripressureplate",
+  "colonyTags" : ["wired","akkimari"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "A pressure plate that activates when stood on.",
+  "shortdescription" : "Akris Pressure Plate",
+  "race" : "akkimari",
+
+  "floranDescription" : "Floran sstand on platess, thingsss happen!",
+  "glitchDescription" : "Cautious. Something might happen if I stand on this pressure plate.",
+  "drodenDescription" : "Analysis. Pressure plate. Activated when stood upon.",
+  "akkimariDescription" : "Akki stand on plate, activate nearby mechanism.",
+
+  "category" : "wire",
+  "price" : 15,
+
+  "inventoryIcon" : "akkimaripressureplateicon.png",
+  "orientations" : [
+    {
+      "image" : "akkimaripressureplate.png:<color>.off",
+      "imagePosition" : [-8, 0],
+      
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "scripts" : [
+    "/objects/wired/proximitysensor/proximitysensor.lua",
+    "/scripts/npcToyObject.lua"
+  ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/proximitysensor/pressureplate3.animation",
+  "animationParts" : {
+    "switch" : "akkimaripressureplate.png"
+  },
+  "animationPosition" : [-8, 0],
+
+  "outputNodes" : [ [0, 0] ],
+  
+  "interactive" : false,
+
+  "detectDuration" : 0.1,
+  "detectEntityTypes" : [ "creature", "vehicle" ],
+  "detectArea" : [ [-0.5, 0], [0.5, 0.5] ],
+
+  "npcToy": {
+    "ownerOnly" : true,
+    "influence" : [
+      "floorbutton"
+    ],
+    "defaultReactions" : {},
+    "maxNpcs" : 1
+  }
+}

@@ -19,7 +19,7 @@ end
 
 function update(dt)
   --If region is active we haven't checked event dates yet, check if the event should activate
-  if world.regionActive(regionCheckArea()) and not self.eventActiveChecked then
+  if world.regionActive(regionCheckArea()) and not self.eventActiveChecked and self.event then
 	self.eventActive, self.currentMonth, self.currentDay, self.leapYear = checkEventActive(self.event)
 	self.eventActiveChecked = true
   end
@@ -37,7 +37,7 @@ function update(dt)
   end
     
   --If we have checked if the event is active, show the results in debug mode without running the check function again
-  if self.eventActiveChecked and self.debugResults then
+  if self.eventActiveChecked and self.debugResults and self.event then
 	local eventConfig = root.assetJson("/thea-eventschedules.config:" .. self.event)
 	world.debugText("Event active: " .. sb.print(self.eventActive), vec2.add(entity.position(), {0,0}), "yellow")
 	world.debugText("Event Name: " .. sb.print(eventConfig.eventName), vec2.add(entity.position(), {0,-0.75}), "yellow")

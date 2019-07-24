@@ -1,0 +1,70 @@
+{
+  "objectName" : "akkimaribackgrounddoor-wired",
+  "colonyTags" : ["akkimari"],
+  "rarity" : "Common",
+  "category" : "door",
+  "printable" : false,
+  "price" : 80,
+  "description" : "A blast door. It can be linked to other background doors.",
+  "shortdescription" : "Akris Background Door",
+  "race" : "akkimari",
+
+  "apexDescription" : "I wonder where this door leads...",
+  "avianDescription" : "I wonder where this door leads...",
+  "floranDescription" : "Floran wondersss where door goesss...",
+  "glitchDescription" : "Curious. I wonder where this door leads...",
+  "humanDescription" : "I wonder where this door leads...",
+  "hylotlDescription" : "I wonder where this door leads...",
+  "novakidDescription" : "I wonder where this door leads...",
+
+  "aegiDescription" : "I wonder where this door leads...",
+  "avikanDescription" : "I wonder where this door leads...",
+  "erixianDescription" : "I wonder where this door leads...",
+  "trinkDescription" : "I wonder where this door leads...",
+  "hymidDescription" : "I wonder where this door leads...",
+  "notixDescription" : "I wonder where this door leads...",
+  "jorgasianDescription" : "I wonder where this door leads...",
+  "centensDescription" : "I wonder where this door leads...",
+  "dremetonDescription" : "I wonder where this door leads...",
+  "theleanDescription" : "I wonder where this door leads...",
+  "drodenDescription" : "Scanning failed. Unable to determine where this door leads.",
+  "akkimariDescription" : "Akki curious where door leads...",
+
+  "inventoryIcon" : "wiredicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "akkimaribackgrounddoor.png:<color>",
+      "imagePosition" : [-16, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+
+  "animation" : "/objects/animations/thea-backgrounddoorslow.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_open.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/objects/apexcooldoor_close.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "akkimaribackgrounddoor.png"
+  },
+  "animationPosition" : [-16, 0],
+  
+  "scripts" : [ "/objects/scripts/thea-backgrounddoor.lua" ],
+  "detectArea" : [ [-6, 0], [7, 6] ],
+  
+  "allowBackgroundDoorConnection" : true,
+  "mouthPosition" : [0, -1], //Used to determine the teleport position of the door
+  
+  "inputNodes" : [ [-2, 0], [-2, 2] ],
+  "outputNodes" : [ [1, 4] ]
+}

@@ -1,0 +1,49 @@
+{
+  "objectName" : "akkimarilargepressureplate",
+  "colonyTags" : ["wired","akkimari"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "This pressure plate will only be activated by vehicles.",
+  "shortdescription" : "Akris Vehicle Plate",
+  "race" : "akkimari",
+
+  "floranDescription" : "Thingsss will happen if vehicle ssstandss on plate.",
+  "glitchDescription" : "Curious. Something will happen if I place a vehicle on top of this plate.",
+  "drodenDescription" : "Analysis. Heavy-load pressure plate. Activated by vehicles only.",
+  "akkimariDescription" : "If Akki place vehicle on top, plate-pressure activates.",
+
+  "category" : "wire",
+  "price" : 15,
+
+  "inventoryIcon" : "akkimarilargepressureplateicon.png",
+  "orientations" : [
+    {
+      "image" : "akkimarilargepressureplate.png:<color>.off",
+      "imagePosition" : [-16, 0],
+      
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "scripts" : [
+    "/objects/wired/proximitysensor/proximitysensor.lua"
+  ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/proximitysensor/pressureplate3.animation",
+  "animationParts" : {
+    "switch" : "akkimarilargepressureplate.png"
+  },
+  "animationPosition" : [-16, 0],
+
+  "outputNodes" : [ [0, 0] ],
+  
+  "interactive" : false,
+
+  "detectDuration" : 0.1,
+  "detectEntityTypes" : [ "vehicle" ],
+  "detectArea" : [ [0.0, 0], [0.0, 0.5] ]
+}

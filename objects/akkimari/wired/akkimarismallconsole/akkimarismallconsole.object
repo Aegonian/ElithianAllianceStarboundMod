@@ -1,0 +1,90 @@
+{
+  "objectName" : "akkimarismallconsole",
+  "colonyTags" : ["akkimari","wired"],
+  "rarity" : "Common",
+  "category" : "wire",
+  "printable" : false,
+  "price" : 150,
+  "description" : "A computer console for wiring circuits together.",
+  "shortdescription" : "Akris Small Console",
+  "race" : "akkimari",
+  "lightColor" : [0, 60, 0],
+
+  "apexDescription" : "A console for controlling connected objects.",
+  "avianDescription" : "This panel likely controls mechanisms nearby.",
+  "floranDescription" : "Ssshiny buttonsss, Floran presss?",
+  "glitchDescription" : "Curious. What will happen if I touch these buttons?",
+  "humanDescription" : "I probably shouldn't touch any of these buttons, but I really want to...",
+  "hylotlDescription" : "A control panel of some sort.",
+  "novakidDescription" : "A shiny console with an even shinier interface.",
+
+  "aegiDescription" : "A strange interface for sure. Akkimari consoles make no sense to me.",
+  "avikanDescription" : "An alien interface. I can't make much sense of it.",
+  "erixianDescription" : "This console may control nearby mechanisms.",
+  "trinkDescription" : "An Akkimari-built console. The interface is unfamiliar to me.",
+  "hymidDescription" : "I suppose this may control nearby mechanisms, but I can't be sure without trying the buttons...",
+  "notixDescription" : "This interface makes my fingers tingle when I press a button. It's odd, but also somehow pleasant.",
+  "jorgasianDescription" : "An Akkimari-built interface. Strange, as usual.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Analysis. Console. Interface decryption failed.",
+  "akkimariDescription" : "Console for mechanism-control. Akki wire things together.",
+
+  "inventoryIcon" : "akkimarismallconsoleicon.png",
+  "orientations" : [
+    {
+	  "image" : "akkimarismallconsole.png:<color>.<frame>",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 8,
+      "animationCycle" : 0.8,
+      "lightPosition" : [0, 1],
+	  
+	  "animationParts" : {
+		"bg" : "akkimarismallconsole.png",
+		"fg" : "akkimarismallconsolelit.png"
+	  },
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "flipImages" : true,
+      "direction" : "left"
+    },
+    {
+	  "image" : "akkimarismallconsole.png:<color>.<frame>",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 8,
+      "animationCycle" : 0.8,
+      "lightPosition" : [1, 1],
+	  
+	  "animationParts" : {
+		"bg" : "akkimarismallconsole.png",
+		"fg" : "akkimarismallconsolelit.png"
+	  },
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "direction" : "right"
+    }
+  ],
+
+  "scripts" : [
+    "/objects/wired/switch/switch.lua"
+  ],
+  "scriptDelta" : 5,
+  
+  "defaultSwitchState" : true,
+
+  "animation" : "akkimarismallconsole.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/console_generic_switchon.ogg" ],
+      "off" : [ "/sfx/objects/console_generic_switchoff.ogg" ]
+    }
+  },
+  "animationPosition" : [-8, 0],
+
+  "outputNodes" : [ [0, 0] ]
+}
