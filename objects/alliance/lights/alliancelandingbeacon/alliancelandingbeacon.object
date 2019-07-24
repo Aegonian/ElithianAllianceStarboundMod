@@ -27,7 +27,7 @@
   "dremetonDescription" : "This landing beacon helps ships land during the night.",
   "theleanDescription" : "TODO",
   "drodenDescription" : "Detected blinking light. Expected purpose is to guide incoming ships at night.",
-  "akkimariDescription" : "Light guides to safety. Light good.",
+  "akkimariDescription" : "Light guides to safety.",
 
   "category" : "light",
   "lightColor" : [127, 127, 127],

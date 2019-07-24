@@ -42,6 +42,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Analysis complete. Workshop. Detected various alien tools.",
+  "akkimariDescription" : "Tools-many. Akki use to craft things.",
 
   "learnBlueprintsOnPickup" : [],
 
@@ -79,7 +80,8 @@
 		"centensDescription" : "TODO.",
 		"dremetonDescription" : "TODO.",
 		"theleanDescription" : "TODO.",
-		"drodenDescription" : "Analysis complete. Workshop. Detected various alien tools."
+		"drodenDescription" : "Analysis complete. Workshop. Detected various alien tools.",
+		"akkimariDescription" : "Tools-many. Akki use to craft things."
       },
 
       "interactData" : {
@@ -137,7 +139,8 @@
 		"centensDescription" : "TODO.",
 		"dremetonDescription" : "TODO.",
 		"theleanDescription" : "TODO.",
-		"drodenDescription" : "Analysis complete. Crafting device. Automatically produces various items."
+		"drodenDescription" : "Analysis complete. Crafting device. Automatically produces various items.",
+		"akkimariDescription" : "Device prints item. Akki need no tools!"
       },
 
       "interactData" : {
@@ -197,7 +200,8 @@
 		"centensDescription" : "TODO.",
 		"dremetonDescription" : "TODO.",
 		"theleanDescription" : "TODO.",
-		"drodenDescription" : "Analysis complete. Crafting device. Automatically produces various items."
+		"drodenDescription" : "Analysis complete. Crafting device. Automatically produces various items.",
+		"akkimariDescription" : "Akki not sure how device construct items. Akki will find out."
       },
 
       "interactData" : {

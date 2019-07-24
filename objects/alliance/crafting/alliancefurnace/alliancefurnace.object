@@ -44,6 +44,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Analysis complete. Stone smelter. Basic ore smelting functionality.",
+  "akkimariDescription" : "Furnace-stone, for smelting metals.",
 
   "learnBlueprintsOnPickup" : [],
 
@@ -80,7 +81,8 @@
 		"centensDescription" : "TODO.",
 		"dremetonDescription" : "TODO.",
 		"theleanDescription" : "TODO.",
-		"drodenDescription" : "Analysis complete. Stone smelter. Basic ore smelting functionality."
+		"drodenDescription" : "Analysis complete. Stone smelter. Basic ore smelting functionality.",
+		"akkimariDescription" : "Furnace-stone, for smelting metals."
       },
 
       "interactData" : {
@@ -139,7 +141,8 @@
 		"centensDescription" : "TODO.",
 		"dremetonDescription" : "TODO.",
 		"theleanDescription" : "TODO.",
-		"drodenDescription" : "Analysis complete. Alien smelter. Temperature levels rising above safety regulations."
+		"drodenDescription" : "Analysis complete. Alien smelter. Temperature levels rising above safety regulations.",
+		"akkimariDescription" : "Akki careful. Temperatures-high, Akki not burn self."
       },
 
       "interactData" : {
@@ -199,7 +202,8 @@
 		"centensDescription" : "TODO.",
 		"dremetonDescription" : "TODO.",
 		"theleanDescription" : "TODO.",
-		"drodenDescription" : "Analysis failed. Heat signature exceding maximum values. Error."
+		"drodenDescription" : "Analysis failed. Heat signature exceding maximum values. Error.",
+		"akkimariDescription" : "Like forge-nuclear, hot-very. Melt things-many!"
       },
 
       "interactData" : {

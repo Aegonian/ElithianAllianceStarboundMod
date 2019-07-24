@@ -15,6 +15,7 @@
   "glitchDescription" : "Annoyed. This door will not open.",
   "novakidDescription" : "I ain't gonna get through that door anytime soon. It's locked tight.",
   "drodenDescription" : "Detected locked door. Unable to force open.",
+  "akkimariDescription" : "Door-locked. Akki not get through.",
 
   "inventoryIcon" : "allianceblastdoorlockedicon.png",
   "orientations" : [

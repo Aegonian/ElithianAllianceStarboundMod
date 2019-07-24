@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Light source detected.",
+  "akkimariDescription" : "Light-tall, for lighting street.",
 
   "category" : "light",
   "lightColor" : [255, 255, 255],
