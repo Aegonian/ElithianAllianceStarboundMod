@@ -1,0 +1,72 @@
+{
+  "objectName" : "akkimaripowercore",
+  "colonyTags" : ["akkimari"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 500,
+  "description" : "A re-purposed nuclear bomb serving as an incredibly powerful source of energy.",
+  "shortdescription" : "Akris Nuclear Core",
+  "race" : "akkimari",
+
+  "apexDescription" : "That... Does not look safe...",
+  "avianDescription" : "Is this... A bomb?",
+  "floranDescription" : "Floran uneasssy. Fearss it will explode.",
+  "glitchDescription" : "Alarmed. Is that a nuclear bomb?",
+  "humanDescription" : "That's definitely a nuclear bomb. Used as a power source. Damn...",
+  "hylotlDescription" : "This feels like it's a bomb...",
+  "novakidDescription" : "I'm no nuclear science guy, but that looks like a nuclear bomb.",
+
+  "aegiDescription" : "The Akkimari re-used a nuclear bomb as a power source...",
+  "avikanDescription" : "An alien bomb of some sort. I'd rather not get too close.",
+  "erixianDescription" : "I'm feeling a bit uneasy. Is that a bomb?",
+  "trinkDescription" : "This appears to be a nuclear power source. It looks like a re-purposed bomb.",
+  "hymidDescription" : "Is that a nuclear bomb?",
+  "notixDescription" : "The noise created by this device is nauseating...",
+  "jorgasianDescription" : "It looks like a nuclear bomb...",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Scanning... Error. Nuclear power source detected. Recommend immediate evacuation.",
+  "akkimariDescription" : "Akki no need bomb-nuclear. Akki need power. So Akki make generator from bomb-nuclear!",
+
+  "inventoryIcon" : "akkimaripowercoreicon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "akkimaripowercore.png:<color>", "fullbright" : true }, { "image" : "akkimaripowercorelit.png:<color>" } ],
+
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+	  "lightPosition" : [0, 3],
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "bottom" ]
+    },
+    {
+	  "imageLayers" : [ { "image" : "akkimaripowercore.png:<color>", "fullbright" : true }, { "image" : "akkimaripowercorelit.png:<color>" } ],
+
+      "imagePosition" : [-24, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+	  "lightPosition" : [0, 3],
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+  "lightColor" : [0, 127, 0],
+  "pointLight" : false,
+  "flickerPeriod" : 2.0,
+  "flickerPeriodVariance" : 0.2,
+  "flickerMinIntensity" : 0.9,
+  "flickerMaxIntensity" : 1,
+  "flickerIntensityVariance" : 0.05,
+  
+  "soundEffect" : "/sfx/objects/akkimaripowercore.ogg",
+  "soundEffectRadius" : 25
+}
