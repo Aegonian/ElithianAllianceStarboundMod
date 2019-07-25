@@ -1,5 +1,7 @@
 [	
-  //PLAYABLE SPECIES
+  //===========================================================================
+  // PLAYABLE SPECIES
+  //===========================================================================
   //Avikan
   { "op" : "add",
 	"path" : "/species/-",
@@ -26,7 +28,9 @@
 	"value" : "akkimari"
   },
 
-  //DEFAULT CODEXES
+  //===========================================================================
+  // DEFAULT CODEXES
+  //===========================================================================
   //Avikan
   { "op" : "add",
 	"path" : "/defaultCodexes/avikan",
@@ -53,7 +57,9 @@
 	"value" : [ "protectorate1", "protectorate2" ]
   },
 
-  //MECH STARTING BODIES
+  //===========================================================================
+  // MECH STARTING BODIES
+  //===========================================================================
   //Avikan
   { "op" : "add",
 	"path" : "/deploymentConfig/speciesStarterMechBody/avikan",
@@ -80,13 +86,17 @@
 	"value" : "mechbodyakkimariproto"
   },
 
-  //DEFAULT CRAFTING RECIPES -- Applies to all species
+  //===========================================================================
+  // DEFAULT CRAFTING RECIPES -- Applies to all species
+  //===========================================================================
   { "op" : "add",
 	"path" : "/defaultBlueprints/tier1/-",
 	"value" : { "item" : "defaultmanipulatorskin" }
   },
 
-  //SPACE MONSTERS -- Determines which monsters get detected by the mech when in space
+  //===========================================================================
+  // SPACE MONSTERS -- Determines which monsters get detected by the mech when in space
+  //===========================================================================
   { "op" : "add",
 	"path" : "/deploymentConfig/enemyDetectTypeNames/-",
 	"value" : "centensguardian-space"
@@ -102,5 +112,13 @@
   { "op" : "add",
 	"path" : "/deploymentConfig/enemyDetectTypeNames/-",
 	"value" : "rimdwellermissilelauncher"
+  },
+
+  //===========================================================================
+  // PLAYER INIT SCRIPT -- General utility script that runs on the player, which has access to player LUA tables
+  //===========================================================================
+  { "op" : "add",
+	"path" : "/deploymentConfig/scripts/-",
+	"value" : "/scripts/thea-playerutility.lua"
   }
 ]
