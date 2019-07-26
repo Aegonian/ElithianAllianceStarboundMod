@@ -137,7 +137,12 @@
 	"path" : "/deploymentConfig/thea-randomEvents",
 	"value" : [
 	  //List of random event stagehands to choose from
+	  //AMBUSHES
 	  "thea-akkimariambush",
+	  "thea-avikanambush",
+	  "thea-banditambush",
+	  
+	  //CARGO DROPS
 	  "thea-alliancecargodrop"
 	]
   },
@@ -164,7 +169,7 @@
   },
   { "op" : "add",
 	"path" : "/deploymentConfig/thea-timeBewteenRandomEvents",
-	"value" : [ 900, 1800 ] //Min and max times in between random events
-	//"value" : [ 40, 40 ] //Min and max times in between random events. Debug values for faster testing
+	//"value" : [ 900, 1800 ] //Min and max times in between random events
+	"value" : [ 40, 40 ] //Min and max times in between random events. Debug values for faster testing
   }
 ]

@@ -22,7 +22,7 @@ function update(dt)
 end
 
 function nearbyRegion(playerId)
-  local region = {-10, -10, 10, 10}
+  local region = {-50, -25, 50, 25}
   local pos = world.entityPosition(playerId)
   sb.logInfo("Player position: " .. sb.print(pos))
   return {

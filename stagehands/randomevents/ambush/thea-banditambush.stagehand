@@ -1,0 +1,24 @@
+{
+  "type" : "thea-banditambush",
+
+  "scripts" : ["/stagehands/randomevents/ambush/thea-ambushevent.lua"],
+  "scriptDelta" : 1,
+  
+  "npcSpecies" : [
+	"apex",
+	"avian",
+	"floran",
+	"glitch",
+	"human",
+	"hylotl"
+  ],
+  "npcTypes" : [
+	"bandit"
+  ],
+  "npcCount" : [ 3, 5 ],
+  "npcTestPoly" : [ [-0.75, -2.0], [-0.35, -2.5], [0.35, -2.5], [0.75, -2.0], [0.75, 0.65], [0.35, 1.22], [-0.35, 1.22], [-0.75, 0.65] ],
+  "minDistanceToPlayer" : 10,
+  "spawnRangeX" : 35,
+  "spawnRangeY" : 5,
+  "spawnTolerance" : 10
+}

@@ -93,15 +93,18 @@ function update(args)
 	storage.timeUntilNextEvent = math.max(0, storage.timeUntilNextEvent - script.updateDt())
   end
   
+  --Debugging function. Enable this line of code to set the timeUntilNextEvent to 30 seconds, then disable and reload.
+  --storage.timeUntilNextEvent = 30
+  
   --If the next event is nearly ready, start checking if the region around the player has been modified
   if storage.timeUntilNextEvent < 5 then
 	self.regionCheckTimer = math.max(0, self.regionCheckTimer - script.updateDt())
 	if self.regionCheckTimer == 0 then
 	  world.spawnStagehand(entity.position(), "thea-checkregionmodified")
-	  self.regionCheckTimer = 1
+	  self.regionCheckTimer = 0.25
 	end
-	--world.debugText("Region is player modified: " .. sb.print(self.regionIsPlayerModified), vec2.add(entity.position(), {-3, -4}), "yellow")
-	--world.debugText("Dungeon at position: " .. sb.print(self.dungeonAtPosition), vec2.add(entity.position(), {-3, -3}), "yellow")
+	world.debugText("Region is player modified: " .. sb.print(self.regionIsPlayerModified), vec2.add(entity.position(), {-3, -8}), "yellow")
+	--world.debugText("Dungeon at position: " .. sb.print(self.dungeonAtPosition), vec2.add(entity.position(), {-3, -7}), "yellow")
   end
   
   --If the next event is ready, check position and spawn the event stagehand
