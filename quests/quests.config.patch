@@ -33,23 +33,5 @@
   { "op" : "add",
 	"path" : "/objectiveDescriptions/theaCompleteCollection",
 	"value" : "Complete the ^orange;<collectionName> ^reset;collection entry"
-  },
-  
-  //===============================================================================
-  // THEA EVENT HANDLER
-  //===============================================================================
-  //ELITHIAN RACES
-  { "op" : "add", "path" : "/initialquests/avikan/-", "value" : "thea-eventhandler" },
-  { "op" : "add", "path" : "/initialquests/droden/-", "value" : "thea-eventhandler" },
-  { "op" : "add", "path" : "/initialquests/trink/-", "value" : "thea-eventhandler" },
-  { "op" : "add", "path" : "/initialquests/aegi/-", "value" : "thea-eventhandler" },
-  { "op" : "add", "path" : "/initialquests/akkimari/-", "value" : "thea-eventhandler" },
-  //VANILLA RACES
-  { "op" : "add", "path" : "/initialquests/apex/-", "value" : "thea-eventhandler" },
-  { "op" : "add", "path" : "/initialquests/avian/-", "value" : "thea-eventhandler" },
-  { "op" : "add", "path" : "/initialquests/floran/-", "value" : "thea-eventhandler" },
-  { "op" : "add", "path" : "/initialquests/glitch/-", "value" : "thea-eventhandler" },
-  { "op" : "add", "path" : "/initialquests/human/-", "value" : "thea-eventhandler" },
-  { "op" : "add", "path" : "/initialquests/hylotl/-", "value" : "thea-eventhandler" },
-  { "op" : "add", "path" : "/initialquests/novakid/-", "value" : "thea-eventhandler" }
+  }
 ]

@@ -1,0 +1,22 @@
+{
+  "alliancecargodrop" : [
+    [0, {
+      "poolRounds" : [
+        [0.2, 2],
+        [0.5, 3],
+        [0.3, 4]
+      ],
+      "pool" : [
+        {"weight" : 0.10, "pool" : "alliancefarming" },
+		{"weight" : 0.30, "pool" : "alliancecraftingmaterials" },
+		{"weight" : 0.10, "pool" : "alliancecodex" },
+		{"weight" : 0.10, "pool" : "aegiclothing" },
+		{"weight" : 0.20, "pool" : "allianceweapons" },
+		{"weight" : 0.20, "pool" : "alliancegeneratedweapons" },
+		{"weight" : 0.15, "pool" : "alliancegrenades" },
+		{"weight" : 0.10, "item" : "alliancecache" }
+      ]
+    } ]
+  ]
+}
+

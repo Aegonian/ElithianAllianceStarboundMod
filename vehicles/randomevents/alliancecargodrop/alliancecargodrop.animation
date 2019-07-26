@@ -1,0 +1,164 @@
+{
+  "animatedParts" : {
+	"stateTypes" : {
+	  "body" : {
+		"priority" : 0,
+		"default" : "idle",
+		"states" : {
+		  "spawn" : {
+			"frames" : 11,
+			"cycle" : 0.8,
+			"mode" : "transition",
+			"transition" : "hovering",
+            "properties" : {
+              "immediateSound" : "/sfx/tech/vehicle_appear1.ogg",
+              "persistentSound" : "/sfx/tech/thea_shuttle_engineloop.ogg"
+            }
+		  },
+		  "idle" : {},
+		  "opening" : {
+			"frames" : 2,
+			"cycle" : 0.2,
+			"mode" : "transition",
+			"transition" : "open"
+		  },
+		  "open" : {},
+		  "hovering" : {
+			"frames" : 4,
+			"cycle" : 0.4,
+			"mode" : "loop",
+			"properties" : {
+              "persistentSound" : "/sfx/tech/thea_shuttle_engineloop.ogg"
+            }
+		  },
+		  "despawn" : {
+			"frames" : 11,
+			"cycle" : 0.8,
+			"mode" : "transition",
+			"transition" : "invisible",
+            "properties" : {
+              "immediateSound" : "/sfx/tech/mech_powerdown2.ogg"
+            }
+		  },
+		  "invisible" : {}
+		}
+	  }
+	},
+
+	"parts" : {
+	  "body" : {
+		"properties" : {
+		  "zLevel" : 0,
+		  "transformationGroups" : [ "body" ],
+		  "offset" : [0.0, 0.0]
+		},
+		"partStates" : {
+		  "body" : {
+			"spawn" : {
+			  "properties" : {
+				"image" : "alliancecargodrop.png:spawn.<frame>"
+			  }
+			},
+			"idle" : {
+			  "properties" : {
+				"image" : "alliancecargodrop.png:idle"
+			  }
+			},
+			"opening" : {
+			  "properties" : {
+				"image" : "alliancecargodrop.png:opening.<frame>"
+			  }
+			},
+			"open" : {
+			  "properties" : {
+				"image" : "alliancecargodrop.png:open"
+			  }
+			},
+			"hovering" : {
+			  "properties" : {
+				"image" : "alliancecargodrop.png:hovering.<frame>"
+			  }
+			},
+			"despawn" : {
+			  "properties" : {
+				"image" : "alliancecargodrop.png:despawn.<frame>"
+			  }
+			},
+			"invisisble" : {
+			  "properties" : {
+				"image" : ""
+			  }
+			}
+		  }
+		}
+	  },
+	  "lights" : {
+		"properties" : {
+		  "zLevel" : 1,
+		  "transformationGroups" : [ "body" ],
+		  "fullbright" : true,
+		  "offset" : [0.0, 0.0]
+		},
+		"partStates" : {
+		  "body" : {
+			"spawn" : {
+			  "properties" : {
+				"image" : "alliancecargodroplights.png:spawn.<frame>"
+			  }
+			},
+			"idle" : {
+			  "properties" : {
+				"image" : "alliancecargodroplights.png:idle"
+			  }
+			},
+			"opening" : {
+			  "properties" : {
+				"image" : "alliancecargodroplights.png:opening.<frame>"
+			  }
+			},
+			"open" : {
+			  "properties" : {
+				"image" : "alliancecargodroplights.png:open"
+			  }
+			},
+			"hovering" : {
+			  "properties" : {
+				"image" : "alliancecargodroplights.png:hovering.<frame>"
+			  }
+			},
+			"despawn" : {
+			  "properties" : {
+				"image" : "alliancecargodroplights.png:despawn.<frame>"
+			  }
+			},
+			"invisisble" : {
+			  "properties" : {
+				"image" : ""
+			  }
+			}
+		  }
+		}
+	  }
+	}
+  },
+
+  "transformationGroups" : {
+	"body" : { "interpolated" : true }
+  },
+  
+  "lights" : {
+	"glow" : {
+	  "active" : false,
+	  "position" : [0, 0],
+	  "color" : [0, 45, 75],
+	  "pointLight" : false
+	}
+  },
+
+  "particleEmitters" : {},
+
+  "sounds" : {
+	"open" : [ "/sfx/objects/shippingcontainer_open.ogg" ],
+	"collide" : [ "/sfx/tech/hoverbike_crash1.ogg" ]
+  }
+}

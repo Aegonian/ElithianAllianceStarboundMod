@@ -1,0 +1,25 @@
+{
+  "type" : "thea-akkimariambush",
+
+  "scripts" : ["/stagehands/randomevents/ambush/thea-ambushevent.lua"],
+  "scriptDelta" : 1,
+  
+  "npcSpecies" : [
+	"akkimari"
+  ],
+  "npcTypes" : [
+	"akkimariscavenger",
+	"akkimariscavenger",
+	"akkimariscavenger",
+	"akkimariscavenger",
+	"akkimariscavenger",
+	"akkimarisniper",
+	"akkimaricloaker"
+  ],
+  "npcCount" : [ 3, 5 ],
+  "npcTestPoly" : [ [-0.75, -2.0], [-0.35, -2.5], [0.35, -2.5], [0.75, -2.0], [0.75, 0.65], [0.35, 1.22], [-0.35, 1.22], [-0.75, 0.65] ],
+  "minDistanceToPlayer" : 10,
+  "spawnRangeX" : 35,
+  "spawnRangeY" : 5,
+  "spawnTolerance" : 10
+}

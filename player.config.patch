@@ -1,7 +1,7 @@
 [	
-  //===========================================================================
+  //====================================================================================================================================
   // PLAYABLE SPECIES
-  //===========================================================================
+  //====================================================================================================================================
   //Avikan
   { "op" : "add",
 	"path" : "/species/-",
@@ -28,9 +28,9 @@
 	"value" : "akkimari"
   },
 
-  //===========================================================================
+  //====================================================================================================================================
   // DEFAULT CODEXES
-  //===========================================================================
+  //====================================================================================================================================
   //Avikan
   { "op" : "add",
 	"path" : "/defaultCodexes/avikan",
@@ -57,9 +57,9 @@
 	"value" : [ "protectorate1", "protectorate2" ]
   },
 
-  //===========================================================================
+  //====================================================================================================================================
   // MECH STARTING BODIES
-  //===========================================================================
+  //====================================================================================================================================
   //Avikan
   { "op" : "add",
 	"path" : "/deploymentConfig/speciesStarterMechBody/avikan",
@@ -86,17 +86,17 @@
 	"value" : "mechbodyakkimariproto"
   },
 
-  //===========================================================================
+  //====================================================================================================================================
   // DEFAULT CRAFTING RECIPES -- Applies to all species
-  //===========================================================================
+  //====================================================================================================================================
   { "op" : "add",
 	"path" : "/defaultBlueprints/tier1/-",
 	"value" : { "item" : "defaultmanipulatorskin" }
   },
 
-  //===========================================================================
+  //====================================================================================================================================
   // SPACE MONSTERS -- Determines which monsters get detected by the mech when in space
-  //===========================================================================
+  //====================================================================================================================================
   { "op" : "add",
 	"path" : "/deploymentConfig/enemyDetectTypeNames/-",
 	"value" : "centensguardian-space"
@@ -114,11 +114,57 @@
 	"value" : "rimdwellermissilelauncher"
   },
 
-  //===========================================================================
+  //====================================================================================================================================
   // PLAYER INIT SCRIPT -- General utility script that runs on the player, which has access to player LUA tables
-  //===========================================================================
+  //====================================================================================================================================
   { "op" : "add",
 	"path" : "/deploymentConfig/scripts/-",
 	"value" : "/scripts/thea-playerutility.lua"
+  },
+  
+  //CONFIG FOR EVENT NOTIFICATION HANDLER
+  { "op" : "add",
+	"path" : "/deploymentConfig/thea-events",
+	"value" : [
+	  //Configured as [ eventName, eventGuiConfig ]
+	  [ "landingfestival", "/interface/events/landingfestival/landingfestivalnotification.config" ],
+	  [ "harrowing", "/interface/events/harrowing/harrowingnotification.config" ]
+	]
+  },
+  
+  //CONFIG FOR RANDOM EVENT HANDLER
+  { "op" : "add",
+	"path" : "/deploymentConfig/thea-randomEvents",
+	"value" : [
+	  //List of random event stagehands to choose from
+	  "thea-akkimariambush",
+	  "thea-alliancecargodrop"
+	]
+  },
+  { "op" : "add",
+	"path" : "/deploymentConfig/thea-randomEventValidPlanetTypes",
+	"value" : [
+	  //List of valid planet types on which a random event can spawn
+	  "alien",
+	  "arctic",
+	  "desert",
+	  "forest",
+	  "forest",
+	  "jungle",
+	  "magma",
+	  "midnight",
+	  "ocean",
+	  "savannah",
+	  "scorched",
+	  "scorchedcity",
+	  "snow",
+	  "tundra",
+	  "volcanic"
+	]
+  },
+  { "op" : "add",
+	"path" : "/deploymentConfig/thea-timeBewteenRandomEvents",
+	"value" : [ 900, 1800 ] //Min and max times in between random events
+	//"value" : [ 40, 40 ] //Min and max times in between random events. Debug values for faster testing
   }
 ]

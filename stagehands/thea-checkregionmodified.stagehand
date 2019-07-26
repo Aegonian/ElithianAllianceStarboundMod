@@ -1,0 +1,10 @@
+//This stagehand is spawned by the mod's General Player Utility Script
+//It checks if the region around nearby players has been modified by a player, then sends back a message about it
+//It's used to ensure that random events don't spawn inside player-built structures
+
+{
+  "type" : "thea-checkregionmodified",
+
+  "scripts" : ["/stagehands/thea-checkregionmodified.lua"],
+  "scriptDelta" : 1
+}

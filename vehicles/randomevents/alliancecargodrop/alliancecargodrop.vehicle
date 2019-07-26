@@ -1,0 +1,50 @@
+{
+  "name" : "alliancecargodrop",
+  "script" : "/vehicles/randomevents/thea-cargodrop.lua",
+  "boundBox" : [-1, -1, 1, 1],
+  "slaveControlTimeout" : 2.0,
+  "slaveControlHeartbeat" : 1.0,
+  "canBeHit" : true,
+  "animation" : "alliancecargodrop.animation",
+
+  //GENERAL SETTINGS
+  "timeToLive" : 5.0,
+  "descentSpeed" : 7.5,
+  "descentControl" : 25.0,
+  "groundSearchDistance" : 5.0,
+  "treasurePool" : "alliancecargodrop",
+  "treasureSpawnPosition" : [0, 0],
+  
+  "hasTopCollision" : true,
+
+  //MOVEMENT CONTROLLER SETTINGS
+  "movementSettings" : {
+    "collisionPoly" : [ [-0.5, -2.5], [-4.75, -0.75], [-4.75, 0.75], [-3.0, 2.5], [3.0, 2.5], [4.75, 0.75], [4.75, -0.75], [0.5, -2.5] ],
+    "mass" : 4.0,
+    "airFriction" : 4.0,
+    "liquidFriction" : 6.5,
+    "groundFriction" : 20.0,
+    "ignorePlatformCollision" : true,
+    "gravityEnabled" : false,
+    "collisionEnabled" : true
+  },
+  "groundedMovementSettings" : {
+    "collisionPoly" : [ [-0.5, -2.5], [-4.75, -0.75], [-4.75, 0.75], [-3.0, 2.5], [3.0, 2.5], [4.75, 0.75], [4.75, -0.75], [0.5, -2.5] ],
+    "mass" : 4.0,
+    "airFriction" : 4.0,
+    "liquidFriction" : 6.5,
+    "groundFriction" : 20.0,
+    "ignorePlatformCollision" : true,
+    "gravityEnabled" : true,
+    "collisionEnabled" : true
+  },
+
+  //PHYSICS COLLISION SETTINGS
+  "physicsCollisions" : {
+    "top" : {
+      "collision" : [ [-3.0, 2.0], [-3.0, 2.5], [3.0, 2.5], [3.0, 2.0] ],
+      "collisionKind" : "platform",
+      "attachToPart" : "body"
+    }
+  }
+}

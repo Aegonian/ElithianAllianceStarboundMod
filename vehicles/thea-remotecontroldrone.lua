@@ -85,7 +85,7 @@ function init()
   end
 end
 
---Currently unused, but allows us to see if we got interacted with by an entity holding the controller with the righ key
+--Currently unused, but allows us to see if we got interacted with by an entity holding the controller with the right key
 function onInteraction(args)
   local interactingEntityId = args.sourceId
   local item = world.entityHandItemDescriptor(interactingEntityId, "primary")
