@@ -20,5 +20,5 @@
   "minDistanceToPlayer" : 10,
   "spawnRangeX" : 35,
   "spawnRangeY" : 5,
-  "spawnTolerance" : 10
+  "spawnTolerance" : 20
 }

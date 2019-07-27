@@ -19,17 +19,17 @@
 
   //MOVEMENT CONTROLLER SETTINGS
   "movementSettings" : {
-    "collisionPoly" : [ [-0.5, -2.5], [-4.75, -0.75], [-4.75, 0.75], [-3.0, 2.5], [3.0, 2.5], [4.75, 0.75], [4.75, -0.75], [0.5, -2.5] ],
+    "collisionPoly" : [ [-0.5, -2.5], [-4.0, -1.5], [-4.75, 0.75], [-3.0, 2.5], [3.0, 2.5], [4.75, 0.75], [4.0, -1.5], [0.5, -2.5] ],
     "mass" : 4.0,
     "airFriction" : 4.0,
     "liquidFriction" : 6.5,
-    "groundFriction" : 20.0,
+    "groundFriction" : 0.0,
     "ignorePlatformCollision" : true,
     "gravityEnabled" : false,
     "collisionEnabled" : true
   },
   "groundedMovementSettings" : {
-    "collisionPoly" : [ [-0.5, -2.5], [-4.75, -0.75], [-4.75, 0.75], [-3.0, 2.5], [3.0, 2.5], [4.75, 0.75], [4.75, -0.75], [0.5, -2.5] ],
+    "collisionPoly" : [ [-0.5, -2.5], [-4.0, -1.5], [-4.75, 0.75], [-3.0, 2.5], [3.0, 2.5], [4.75, 0.75], [4.0, -1.5], [0.5, -2.5] ],
     "mass" : 4.0,
     "airFriction" : 4.0,
     "liquidFriction" : 6.5,

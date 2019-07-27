@@ -1,0 +1,59 @@
+{
+  "objectName" : "akkimarijusticarobject",
+  "colonyTags" : ["akkimari"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 500,
+  "description" : "An inactive Akkimari Justicar-type drone.",
+  "shortdescription" : "Inactive Justicar",
+  "race" : "akkimari",
+
+  "apexDescription" : "A large drone. The Akkimari seem to revere them.",
+  "avianDescription" : "Some type of large drone. It looks combat-ready.",
+  "floranDescription" : "Big dronesss. Floran impresssed.",
+  "glitchDescription" : "Impressed. This drone is a fine piece of technology.",
+  "humanDescription" : "It's some kinda large drone.",
+  "hylotlDescription" : "An elegantly designed drone.",
+  "novakidDescription" : "A weird drone.",
+
+  "aegiDescription" : "The Akkimari revere drones like these. They have a curious culture.",
+  "avikanDescription" : "An alien drone. It doesn't look as combat-focused as an Elite Drahl.",
+  "erixianDescription" : "A large drone, built by the Akkimari.",
+  "trinkDescription" : "This drone is sleeping. I'd better not touch it.",
+  "hymidDescription" : "A sleeping Akkimari-built drone.",
+  "notixDescription" : "This drone may be sleeping, but it still makes a soft noise.",
+  "jorgasianDescription" : "An Akkimari Justicar. They enforce the law in Akkimari society.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien-built drone. Justicar model.",
+  "akkimariDescription" : "Justicar-sleeping. Akki better not touch.",
+
+  "inventoryIcon" : "akkimarijusticaricon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "akkimarijusticar.png:<color>", "fullbright" : true }, { "image" : "akkimarijusticarlit.png:<color>" } ],
+
+      "imagePosition" : [-32, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "fgAnchors" : [ [0, -1], [-1, -1] ]
+    },
+    {
+	  "imageLayers" : [ { "image" : "akkimarijusticar.png:<color>", "fullbright" : true }, { "image" : "akkimarijusticarlit.png:<color>" } ],
+
+      "imagePosition" : [-32, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "fgAnchors" : [ [0, -1], [-1, -1] ]
+    }
+  ]
+}

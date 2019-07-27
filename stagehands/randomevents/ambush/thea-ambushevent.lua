@@ -31,9 +31,11 @@ function update(dt)
 	  --Resolve the NPC poly collision to ensure that we can place an NPC at the designated position
 	  local resolvedPosition = world.resolvePolyCollision(self.npcTestPoly, correctedPositionAndNormal[1], self.spawnTolerance)
 	  
-	  --Spawn the NPC and force the beamin effect on them
-	  local entityId = world.spawnNpc(resolvedPosition, util.randomChoice(self.npcSpecies), util.randomChoice(self.npcTypes), world.threatLevel())
-	  world.callScriptedEntity(entityId, "status.addEphemeralEffect", "beamin")
+	  if resolvedPosition then
+		--Spawn the NPC and force the beamin effect on them
+		local entityId = world.spawnNpc(resolvedPosition, util.randomChoice(self.npcSpecies), util.randomChoice(self.npcTypes), world.threatLevel())
+		world.callScriptedEntity(entityId, "status.addEphemeralEffect", "beamin")
+	  end
 	end
 	self.hasSpawnedNPCs = true
   end

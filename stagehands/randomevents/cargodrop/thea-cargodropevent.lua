@@ -2,6 +2,7 @@ require "/scripts/vec2.lua"
 require "/scripts/util.lua"
 
 function init()
+  self.projectileType = config.getParameter("projectileType")
   self.vehicleType = config.getParameter("vehicleType")
   self.dropPodTestPoly = config.getParameter("dropPodTestPoly")
   self.minDistanceToPlayer = config.getParameter("minDistanceToPlayer")
@@ -27,5 +28,10 @@ function update(dt)
 	--Spawn the NPC and force the beamin effect on them
 	local entityId = world.spawnVehicle(self.vehicleType, resolvedPosition)
 	self.hasSpawnedVehicle = true
+	
+	--Optionally spawn an accompanying projectile (usually a flare)
+	if self.projectileType then
+	  world.spawnProjectile(self.projectileType, resolvedPosition)
+	end
   end
 end

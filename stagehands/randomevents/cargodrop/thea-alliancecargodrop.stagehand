@@ -4,10 +4,11 @@
   "scripts" : ["/stagehands/randomevents/cargodrop/thea-cargodropevent.lua"],
   "scriptDelta" : 1,
   
+  "projectileType" : "allianceflare",
   "vehicleType" : "alliancecargodrop",
   "dropPodTestPoly" : [ [-0.5, -2.5], [-4.75, -0.75], [-4.75, 0.75], [-3.0, 2.5], [3.0, 2.5], [4.75, 0.75], [4.75, -0.75], [0.5, -2.5] ],
   "minDistanceToPlayer" : 20,
   "spawnRangeX" : 15,
   "spawnRangeY" : 35,
-  "spawnTolerance" : 10
+  "spawnTolerance" : 20
 }

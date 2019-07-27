@@ -1,0 +1,59 @@
+{
+  "objectName" : "akkimariflicobject",
+  "colonyTags" : ["akkimari"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 125,
+  "description" : "An inactive Akkimari Flic-type drone.",
+  "shortdescription" : "Inactive Flic",
+  "race" : "akkimari",
+
+  "apexDescription" : "A tiny drone.",
+  "avianDescription" : "A small drone.",
+  "floranDescription" : "Sssmall drone.",
+  "glitchDescription" : "Observation. A small drone.",
+  "humanDescription" : "A tiny drone. How cute!",
+  "hylotlDescription" : "A simple, small drone.",
+  "novakidDescription" : "Just some tiny drone.",
+
+  "aegiDescription" : "I think these are called flics: small law enforcement drones of the Akkimari.",
+  "avikanDescription" : "A tiny drone. Not too different from a Drahlid.",
+  "erixianDescription" : "A small Akkimari-built drone.",
+  "trinkDescription" : "A drone. It's sleeping.",
+  "hymidDescription" : "A tiny sleeping drone.",
+  "notixDescription" : "A small drone.",
+  "jorgasianDescription" : "This seems to be a small Akkimari law enforcement drone.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien-built drone. Flic model.",
+  "akkimariDescription" : "Flic-tiny, keep Akkimari under control.",
+
+  "inventoryIcon" : "akkimariflicicon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "akkimariflic.png:<color>", "fullbright" : true }, { "image" : "akkimarifliclit.png:<color>" } ],
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "fgAnchors" : [ [0, -1] ]
+    },
+    {
+	  "imageLayers" : [ { "image" : "akkimariflic.png:<color>", "fullbright" : true }, { "image" : "akkimarifliclit.png:<color>" } ],
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "fgAnchors" : [ [0, -1] ]
+    }
+  ]
+}

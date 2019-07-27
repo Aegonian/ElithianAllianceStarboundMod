@@ -49,7 +49,7 @@ function init()
   --Set up message handler for checking if the region around the player was modified by a player
   message.setHandler("thea-regionUpdate", regionUpdate)
   self.regionIsPlayerModified = true
-  self.dungeonAtPosition = true
+  self.dungeonIdAtPosition = 65535
   self.regionCheckTimer = 0
 end
 
@@ -70,26 +70,19 @@ function update(args)
 	end
   end
   
-  --world.debugText(sb.print(player.hasQuest("thea-eventhandler")), vec2.add(entity.position(), {-3, -9}), "yellow")
-  --world.debugText("EVENT HANDLER ACTIVE", vec2.add(entity.position(), {-3, -10}), "yellow")
-  --if self.activeEvent and storage.activeEvent[1] == self.activeEvent[1] then
-	--world.debugText("EVENT NOTIFICATION ALREADY SHOWN", vec2.add(entity.position(), {-3, -11}), "green")
-  --else
-	--world.debugText("EVENT NOTIFICATION NOT YET SHOWN", vec2.add(entity.position(), {-3, -11}), "red")
-  --end
-  --if storage.activeEvent then
-	--world.debugText("Stored Active Event: " .. sb.print(storage.activeEvent[1]), vec2.add(entity.position(), {-3, -12}), "yellow")
-  --end
-  --if self.activeEvent then
-	--world.debugText("Local Active Event: " .. sb.print(self.activeEvent[1]), vec2.add(entity.position(), {-3, -13}), "yellow")
-  --end
-  --world.debugText(sb.print(self.notificationWindupTimer), vec2.add(entity.position(), {-3, -14}), "yellow")
+  if storage.activeEvent then
+	sb.setLogMap("THEA - Active festive event", storage.activeEvent[1])
+  else
+	sb.setLogMap("THEA - Active festive event", "None")
+  end
   
   --=====================================================================================
   -- Random Event Handler
   --=====================================================================================
+  local currentWorldIsEventValid = world.inSurfaceLayer(entity.position()) and world.terrestrial() and validPlanetType()
+  
   --While the player is on a planet's surface, count down the time until the next event
-  if world.inSurfaceLayer(entity.position()) and world.terrestrial() and validPlanetType() then
+  if currentWorldIsEventValid then
 	storage.timeUntilNextEvent = math.max(0, storage.timeUntilNextEvent - script.updateDt())
   end
   
@@ -103,13 +96,13 @@ function update(args)
 	  world.spawnStagehand(entity.position(), "thea-checkregionmodified")
 	  self.regionCheckTimer = 0.25
 	end
+	world.debugText("Position outside of dungeon: " .. sb.print((self.dungeonIdAtPosition > 65000)), vec2.add(entity.position(), {-3, -7}), "yellow")
 	world.debugText("Region is player modified: " .. sb.print(self.regionIsPlayerModified), vec2.add(entity.position(), {-3, -8}), "yellow")
-	--world.debugText("Dungeon at position: " .. sb.print(self.dungeonAtPosition), vec2.add(entity.position(), {-3, -7}), "yellow")
   end
   
   --If the next event is ready, check position and spawn the event stagehand
   if storage.timeUntilNextEvent == 0 then
-	if playerIsNearGround() and not self.regionIsPlayerModified then
+	if playerIsNearGround() and not self.regionIsPlayerModified and (self.dungeonIdAtPosition > 65000) then
 	  local randomEvent = util.randomChoice(self.randomEvents)
 	  world.spawnStagehand(entity.position(), randomEvent)
 	
@@ -120,10 +113,10 @@ function update(args)
 	end
   end
   
-  world.debugText("Time until next event: " .. storage.timeUntilNextEvent, vec2.add(entity.position(), {-3, -9}), "yellow")
-  world.debugText("World is terrestrial: " .. sb.print(world.terrestrial()), vec2.add(entity.position(), {-3, -10}), "yellow")
-  world.debugText("Type of world: " .. world.type(), vec2.add(entity.position(), {-3, -11}), "yellow")
-  world.debugText("World type is valid: " .. sb.print(validPlanetType()), vec2.add(entity.position(), {-3, -12}), "yellow")
+  sb.setLogMap("THEA - Time until next random event", storage.timeUntilNextEvent)
+  sb.setLogMap("THEA - Type of world", world.type())
+  sb.setLogMap("THEA - World type is valid", sb.print(validPlanetType()))
+  sb.setLogMap("THEA - World is terrestrial", sb.print(world.terrestrial()))
 end
 
 function playerIsNearGround()
@@ -147,9 +140,9 @@ function validPlanetType()
   return planetTypeIsValid
 end
 
-function regionUpdate(_, _, regionIsPlayerModified, dungeonAtPosition)
+function regionUpdate(_, _, regionIsPlayerModified, dungeonIdAtPosition)
   self.regionIsPlayerModified = regionIsPlayerModified
-  self.dungeonAtPosition = dungeonAtPosition
+  self.dungeonIdAtPosition = dungeonIdAtPosition
 end
 
 function uninit()

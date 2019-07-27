@@ -14,7 +14,8 @@
     "layer" : "middle",
     "variance" : {
       "initialVelocity" : [2, 1.0],
-      "finalVelocity" : [4, 2.0]
+      "finalVelocity" : [4, 2.0],
+      "rotation" : 180
     }
   }
 }

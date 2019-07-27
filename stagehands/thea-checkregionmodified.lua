@@ -13,9 +13,9 @@ function update(dt)
 	local nearbyPlayers = world.playerQuery(entity.position(), 25)
 	for _, playerId in ipairs(nearbyPlayers) do
 	  local regionIsPlayerModified = world.isPlayerModified(nearbyRegion(playerId))
-	  local dungeonAtPosition = world.dungeonId(world.entityPosition(playerId))
-	  world.sendEntityMessage(playerId, "thea-regionUpdate", regionIsPlayerModified, dungeonAtPosition)
-	  sb.logInfo("Region is player modified: " .. sb.print(regionIsPlayerModified))
+	  local dungeonIdAtPosition = world.dungeonId(world.entityPosition(playerId))
+	  world.sendEntityMessage(playerId, "thea-regionUpdate", regionIsPlayerModified, dungeonIdAtPosition)
+	  --sb.logInfo("Region is player modified: " .. sb.print(regionIsPlayerModified))
 	end
 	self.regionChecked = true
   end
@@ -24,7 +24,7 @@ end
 function nearbyRegion(playerId)
   local region = {-50, -25, 50, 25}
   local pos = world.entityPosition(playerId)
-  sb.logInfo("Player position: " .. sb.print(pos))
+  --sb.logInfo("Player position: " .. sb.print(pos))
   return {
       math.ceil(region[1] + pos[1]),
       math.ceil(region[2] + pos[2]),

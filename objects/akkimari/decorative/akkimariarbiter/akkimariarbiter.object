@@ -1,0 +1,59 @@
+{
+  "objectName" : "akkimariarbiterobject",
+  "colonyTags" : ["akkimari"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 250,
+  "description" : "An inactive Akkimari Arbiter-type drone.",
+  "shortdescription" : "Inactive Arbiter",
+  "race" : "akkimari",
+
+  "apexDescription" : "This drone looks ready for combat.",
+  "avianDescription" : "A medium-sized, rounded drone.",
+  "floranDescription" : "Dronesss for combat.",
+  "glitchDescription" : "Observation. An alien drone.",
+  "humanDescription" : "A drone. It looks funny, and somehow cute.",
+  "hylotlDescription" : "This drone has an elegant design to it.",
+  "novakidDescription" : "Some sorta drone.",
+
+  "aegiDescription" : "A law enforcement drone of Akkimari design.",
+  "avikanDescription" : "This alien drone looks a bit sturdier than a Drahl.",
+  "erixianDescription" : "This drone was designed by the Akkimari.",
+  "trinkDescription" : "A sleeping drone.",
+  "hymidDescription" : "This drone is sleeping. Better not wake it up.",
+  "notixDescription" : "An Akkimari law enforcement drone, I think.",
+  "jorgasianDescription" : "This is an Akkimari law enforcement drone.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien-built drone. Arbiter model.",
+  "akkimariDescription" : "Akki not disturb Arbiter-dreaming.",
+
+  "inventoryIcon" : "akkimariarbitericon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "akkimariarbiter.png:<color>", "fullbright" : true }, { "image" : "akkimariarbiterlit.png:<color>" } ],
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "fgAnchors" : [ [0, -1] ]
+    },
+    {
+	  "imageLayers" : [ { "image" : "akkimariarbiter.png:<color>", "fullbright" : true }, { "image" : "akkimariarbiterlit.png:<color>" } ],
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "fgAnchors" : [ [0, -1] ]
+    }
+  ]
+}
