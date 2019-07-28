@@ -143,7 +143,8 @@
 	  "thea-banditambush",
 	  
 	  //CARGO DROPS
-	  "thea-alliancecargodrop"
+	  "thea-alliancecargodrop",
+	  "thea-eritocargodrop"
 	]
   },
   { "op" : "add",

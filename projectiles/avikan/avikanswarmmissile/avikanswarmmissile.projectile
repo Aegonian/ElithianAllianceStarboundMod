@@ -17,7 +17,7 @@
   "flippable" : true,
   "layer" : "front",
   "speed" : 40.0,
-  "physics" : "rocket",
+  "physics" : "laser",
   "damageType" : "NoDamage",
   "damageKind" : "default",
   "timeToLive" : 2.0,

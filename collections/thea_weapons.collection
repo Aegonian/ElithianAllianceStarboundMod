@@ -509,6 +509,13 @@
       "title" : "Shardbreaker",
       "description" : "A Centensian artefact capable of rapidly deconstructing matter.",
       "icon" : "/items/tools/manipulator/centensbeamaxe.png"
+    },
+	//NEW EQUIPMENT v2.3.11
+	"thea-erito" : {
+      "order" : 83,
+      "title" : "Erito",
+      "description" : "A graceful longsword with a near-unbreakable edge.",
+      "icon" : "/items/active/weapons/melee/unique/erito/thea-erito.png"
     }
   }
 }

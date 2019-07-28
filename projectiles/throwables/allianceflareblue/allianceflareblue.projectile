@@ -1,0 +1,22 @@
+{
+  "projectileName" : "allianceflareblue",
+  "physics" : "grenadenobounce",
+  "bounces" : -1,
+  "timeToLive" : 30,
+  "image" : "allianceflareblue.png",
+  "animationCycle" : 0.25,
+  "lightColor" : [255, 106, 0],
+  "frameNumber" : 2,
+  "flippable" : true,
+  "emitters" : [ "allianceflaresmoke" ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/smoke/smoke.config"
+    }
+  ],
+  "power" : 0,
+  "onlyHitTerrain" : true,
+  "damageType" : "NoDamage",
+  "damageKind" : "default"
+}

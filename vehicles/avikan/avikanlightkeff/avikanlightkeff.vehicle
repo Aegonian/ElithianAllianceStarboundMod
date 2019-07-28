@@ -28,6 +28,7 @@
   "warpInDelay" : 1.0,
   "primaryControlType" : "headLights",	//Options are: "headLights", "none"
   "altControlType" : "hornSound",		//Options are: "hornSound", "none"
+  "jumpControlType" : "jump",			//Options are: "jump", "hover", "none"
   
   //ROTATION SETTINGS
   "levelApproachFactor" : 0.01,

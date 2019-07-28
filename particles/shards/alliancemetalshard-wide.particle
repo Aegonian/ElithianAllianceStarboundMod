@@ -1,0 +1,20 @@
+{
+  "kind" : "alliancemetalshard-wide",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/shards/alliancemetalshard.animation",
+    "initialVelocity" : [0.0, 5.0],
+    "finalVelocity" : [0.0, -20.0],
+    "approach" : [0.3, 60],
+    "timeToLive" : 1.0,
+    "layer" : "middle",
+    "collidesForeground" : true,
+    "variance" : {
+      "position" : [2, 2],
+      "initialVelocity" : [10, 5],
+      "finalVelocity" : [0, 5],
+      "rotation" : 180,
+      "angularVelocity" : 180
+    }
+  }
+}

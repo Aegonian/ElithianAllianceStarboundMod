@@ -17,6 +17,14 @@
 		{"weight" : 0.10, "item" : "alliancecache" }
       ]
     } ]
+  ],
+  
+  "eritocargodrop" : [
+    [1, {
+      "fill" : [
+        {"item" : [ "eritosteel", 1 ]}
+      ]
+    } ]
   ]
 }
 

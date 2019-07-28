@@ -197,6 +197,11 @@
 	"path": "/thea-railhook",
 	"value": "/items/active/weapons/melee/abilities/crook/thea-railhook/thea-railhook.weaponability"
   },
+  {
+	"op": "add",
+	"path": "/thea-parry",
+	"value": "/items/active/weapons/melee/abilities/broadsword/thea-parry/thea-parry.weaponability"
+  },
   
   //======================================================================================================================
   //	GENERIC ABILITIES

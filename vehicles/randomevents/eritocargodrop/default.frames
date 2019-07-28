@@ -1,0 +1,13 @@
+{
+  "frameGrid" : {
+    "size" : [96, 64],
+    "dimensions" : [12, 2],
+
+    "names" : [
+      [ null, "spawn.1", "spawn.2", "spawn.3", "spawn.4", "spawn.5", "spawn.6", "spawn.7", "spawn.8", "spawn.9", "spawn.10", "spawn.11" ],
+      [ null, "idle", "hovering.1", "hovering.2", "hovering.3", "hovering.4" ]
+    ]
+  },
+  "aliases" : {
+  }
+}
