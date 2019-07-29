@@ -1,0 +1,29 @@
+{
+  "name" : "thea-conscriptenemy",
+  "blockingStat" : "conscriptImmunity",
+  
+  "effectConfig" : {
+	"directive" : "fade=FF3FE5=0.10",
+	"conscriptMonsters" : true,
+	"conscriptNPCs" : true,
+	
+	"npcEmoteSingle" : "sad",
+	"npcDanceSingle" : "titanic",
+	
+	"aggressive" : true,
+	
+	//Dialog lines for NPCs to say when they get conscripted
+	"defaultConscriptDialog" : "I give up! I'll fight for you!",
+	"glitchConscriptDialog" : "Fearful. I give up! I'll fight for you!",
+	"floranConscriptDialog" : "Floran ssscared, floran sstop fighting you! Floran fight for you now!",
+	"drodenConscriptDialog" : "Unit in danger. Survival protocol enabled. Switching allegiance.",
+	"akkimariConscriptDialog" : "Dakka strong! Akki not fight you, Akki fight with you."
+  },
+  "defaultDuration" : 15.0,
+
+  "scripts" : [
+    "/stats/effects/thea-conscriptenemy/thea-conscriptenemy.lua"
+  ],
+
+  "animationConfig" : "thea-conscriptenemy.animation"
+}

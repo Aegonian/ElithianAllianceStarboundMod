@@ -1,0 +1,23 @@
+{
+  "kind" : "thea-surrenderpuff",
+  "definition" : {
+    "type" : "textured",
+    "image" : "/particles/statuseffect/thea-surrenderpuff/thea-surrenderpuff.png",
+    "light" : [24, 12, 56],
+	"initialVelocity" : [0, 0],
+    "finalVelocity" : [0, 0],
+	"approach" : [2, 4],
+    "layer" : "middle",
+	"fade" : 1,
+	"size" : 0.75,
+	"timeToLive" : 0.0,
+    "angularVelocity" : -180,
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.35,
+    "fullbright" : false,
+    "variance" : {
+      "size" : 0.125,
+	  "angularVelocity" : 25
+    }
+  }
+}

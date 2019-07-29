@@ -5,7 +5,7 @@
   "timeToLive" : 30,
   "image" : "allianceflareblue.png",
   "animationCycle" : 0.25,
-  "lightColor" : [255, 106, 0],
+  "lightColor" : [0, 148, 255],
   "frameNumber" : 2,
   "flippable" : true,
   "emitters" : [ "allianceflaresmoke" ],

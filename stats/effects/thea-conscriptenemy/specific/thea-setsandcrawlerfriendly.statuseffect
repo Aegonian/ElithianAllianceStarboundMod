@@ -1,0 +1,18 @@
+{
+  "name" : "thea-setsandcrawlerfriendly",
+  "blockingStat" : "conscriptImmunity",
+  
+  "effectConfig" : {
+	"directive" : "fade=FF3FE5=0.10",
+	"monsterType" : "largesandcrawler",
+	"conscriptMonsters" : true,
+	"conscriptNPCs" : false
+  },
+  "defaultDuration" : 10.0,
+
+  "scripts" : [
+    "/stats/effects/thea-conscriptenemy/thea-conscriptenemy.lua"
+  ],
+
+  "animationConfig" : "/stats/effects/thea-conscriptenemy/thea-conscriptenemy.animation"
+}

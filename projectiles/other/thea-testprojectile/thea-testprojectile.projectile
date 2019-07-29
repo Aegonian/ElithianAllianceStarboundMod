@@ -9,7 +9,7 @@
   "speed" : 90,
   "piercing" : true,
   "supportsProcessing" : true,
-  "statusEffects" : [ "thea-setmonsterfriendly" ],
+  "statusEffects" : [ "thea-conscriptenemy" ],
   "actionOnReap" : [
     {
       "action" : "config",

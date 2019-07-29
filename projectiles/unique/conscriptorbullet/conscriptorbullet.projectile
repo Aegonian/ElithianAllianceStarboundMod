@@ -1,0 +1,32 @@
+{
+  "projectileName" : "conscriptorbullet",
+  "image" : "conscriptorbullet.png",
+  "physics" : "laser",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "pointLight" : false,
+  "flippable" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+    },
+    {
+      "action" : "projectile",
+      "type" : "conscriptorauraspawner",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0,
+      "angleAdjust" : 0
+    }
+  ],
+  "actionOnCollide" : [],
+  "statusEffects" : [],
+  "power" : 5.0,
+  "speed" : 150,
+  "supportsProcessing" : true,
+  "lightColor" : [100, 70, 0],
+  "fullbright" : true,
+  "knockback" : 0,
+  "damageKind" : "plasma"
+}

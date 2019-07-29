@@ -77,7 +77,7 @@
     "projectileCount" : 1,
     "fireType" : "auto",
 
-    "projectileType" : "drodenbullet",
+    "projectileType" : "conscriptorbullet",
     "projectileParameters" : {
       "knockback" : 18,
       "speed" : 180
