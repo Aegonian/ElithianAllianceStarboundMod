@@ -42,6 +42,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Analysis complete. Tanning rack. Used to construct equipment and other items made of leather.",
+  "akkimariDescription" : "Akki tan hides here.",
 
   "learnBlueprintsOnPickup" : [],
 
@@ -79,7 +80,8 @@
 		"centensDescription" : "TODO.",
 		"dremetonDescription" : "TODO.",
 		"theleanDescription" : "TODO.",
-		"drodenDescription" : "Analysis complete. Tanning rack. Used to construct equipment and other items made of leather."
+		"drodenDescription" : "Analysis complete. Tanning rack. Used to construct equipment and other items made of leather.",
+		"akkimariDescription" : "Akki tan hides here."
       },
 
       "interactData" : {
@@ -138,7 +140,8 @@
 		"centensDescription" : "TODO.",
 		"dremetonDescription" : "TODO.",
 		"theleanDescription" : "TODO.",
-		"drodenDescription" : "Analysis complete. Leatherworking station. Used to construct equipment and other items made of leather."
+		"drodenDescription" : "Analysis complete. Leatherworking station. Used to construct equipment and other items made of leather.",
+		"akkimariDescription" : "Akki put hides is, machine make items-leather."
       },
 
       "interactData" : {

@@ -12,6 +12,7 @@
   
   "avikanDescription" : "A Nomada-certified vehicle distributor. I'll need a license for most purchases, though.",
   "drodenDescription" : "Merchant detected. Offers Nomada-certified vehicles.",
+  "akkimariDescription" : "Akki get vehicles-new, ride around, fly around.",
   
   "interactAction" : "OpenMerchantInterface",
   "interactData" : {

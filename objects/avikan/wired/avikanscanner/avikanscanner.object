@@ -29,6 +29,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Detected proximity scanner. Activation will occur when this unit is nearby.",
+  "akkimariDescription" : "Akki feels watched.",
 
   "inventoryIcon" : "avikanscannericon.png",
   "orientations" : [

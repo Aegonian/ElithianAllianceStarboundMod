@@ -15,8 +15,19 @@
   "humanDescription" : "If my videogame experiences have taught me anything, it's that this will likely blow up if I shoot it.",
   "hylotlDescription" : "This barrel is shut for a good reason. Its content might be explosive.",
   "novakidDescription" : "Looks like alien dynamite, this'll make a big bad boom.",
-  
+
+  "aegiDescription" : "A barrel full of explosive fuel...",
+  "avikanDescription" : "The fuel inside is highly flammable. This barrel makes for a good makeshift bomb.",
+  "erixianDescription" : "A barrel filled with highly volatile fuel.",
+  "trinkDescription" : "A fuel-filled barrel. It could ignite if the barrel is broken.",
+  "hymidDescription" : "An exlosive barrel. You can tell by its red colour, if games have taught me anything.",
+  "notixDescription" : "This barrel resonates quite pleasantly. The sound of it exploding would be less pleasant...",
+  "jorgasianDescription" : "This barrel is filled with a volatile fuel.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",  
   "drodenDescription" : "Explosive substance detected.",
+  "akkimariDescription" : "Barrel-fuel. Akki ignite, then big boom!",
 
   "inventoryIcon" : "avikanexplosivebarrelicon.png",
   "orientations" : [

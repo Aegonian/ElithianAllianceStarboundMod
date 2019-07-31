@@ -43,6 +43,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Analysis complete. Workman's table. Used to construct various specialized crafting tables.",
+  "akkimariDescription" : "Akki use blueprint to craft things-many.",
 
   "learnBlueprintsOnPickup" : [],
 
@@ -80,7 +81,8 @@
 		"centensDescription" : "TODO.",
 		"dremetonDescription" : "TODO.",
 		"theleanDescription" : "TODO.",
-		"drodenDescription" : "Analysis complete. Workman's table. Used to construct various specialized crafting tables."
+		"drodenDescription" : "Analysis complete. Workman's table. Used to construct various specialized crafting tables.",
+		"akkimariDescription" : "Akki use blueprint to craft things-many."
       },
 
       "interactData" : {
@@ -140,7 +142,8 @@
 		"centensDescription" : "TODO.",
 		"dremetonDescription" : "TODO.",
 		"theleanDescription" : "TODO.",
-		"drodenDescription" : "Analysis complete. Artisan's station. Used to construct various specialized crafting tables."
+		"drodenDescription" : "Analysis complete. Artisan's station. Used to construct various specialized crafting tables.",
+		"akkimariDescription" : "Screen shows blueprints, useful for Akki."
       },
 
       "interactData" : {

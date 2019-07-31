@@ -14,7 +14,9 @@
   "floranDescription" : "Metal door iss hard to break open.",
   "glitchDescription" : "Observation. A metal blast door.",
   "novakidDescription" : "A blast door. It's blasted hard to break through.",
+  
   "drodenDescription" : "Detected blast door.",
+  "akkimariDescription" : "Door.",
 
   "inventoryIcon" : "avikanoutpostdooricon.png",
   "orientations" : [

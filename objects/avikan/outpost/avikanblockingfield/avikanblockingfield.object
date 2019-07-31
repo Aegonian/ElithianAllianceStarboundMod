@@ -13,7 +13,9 @@
 
   "floranDescription" : "Thiss wall of light keepss Floran out...",
   "glitchDescription" : "Informed. This field will keep out most large objects and entities, but allows projectiles through.",
+  
   "drodenDescription" : "Blocking field detected. Analysis: only projectiles can pass through.",
+  "akkimariDescription" : "Field-energy. Akki not get through easily.",
 
   "lightColor" : [128, 80, 0],
   "lightPosition" : [0, 6],

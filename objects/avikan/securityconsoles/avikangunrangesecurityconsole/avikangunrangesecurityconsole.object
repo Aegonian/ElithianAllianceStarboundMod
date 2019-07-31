@@ -17,6 +17,7 @@
   
   "avikanDescription" : "I'll need a security pass to access this console.",
   "drodenDescription" : "Detected Nomada security terminal. Requires security pass to access.",
+  "akkimariDescription" : "Akki need pass to access.",
 
   "inventoryIcon" : "icon.png",
   "orientations" : [

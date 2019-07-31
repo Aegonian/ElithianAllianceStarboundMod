@@ -8,7 +8,9 @@
   
   "floranDescription" : "Let'sss get a drink.",
   "glitchDescription" : "Curious. Perhaps this bar offers more than just drinks.",
+  
   "drodenDescription" : "Analysis. Starsight Inn Bar. Popularity: high.",
+  "akkimariDescription" : "Akki get some drink here. Get drunk, have fun.",
   
   "interactAction" : "OpenMerchantInterface",
   "interactData" : {

@@ -14,7 +14,9 @@
   "floranDescription" : "Floran can't open hatch. Floran frussstrated.",
   "glitchDescription" : "Displeased. I cannot open this hatch.",
   "novakidDescription" : "A hatch, locked like a vault. Ain't gettin' in there.",
+  
   "drodenDescription" : "Pipeline access hatch. Analysis: locked.",
+  "akkimariDescription" : "Hatch-locked, Akki not get in here.",
 
   "inventoryIcon" : "avikanoutposthatchlockedicon.png",
   "orientations" : [

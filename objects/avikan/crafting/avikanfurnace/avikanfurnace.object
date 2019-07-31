@@ -44,6 +44,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Analysis complete. Stone furnace. Basic ore smelting functionality.",
+  "akkimariDescription" : "Furnace-stone, not too hot.",
 
   "learnBlueprintsOnPickup" : [],
 
@@ -80,7 +81,8 @@
 		"centensDescription" : "TODO.",
 		"dremetonDescription" : "TODO.",
 		"theleanDescription" : "TODO.",
-		"drodenDescription" : "Analysis complete. Stone furnace. Basic ore smelting functionality."
+		"drodenDescription" : "Analysis complete. Stone furnace. Basic ore smelting functionality.",
+		"akkimariDescription" : "Furnace-stone, not too hot."
       },
 
       "interactData" : {
@@ -141,7 +143,8 @@
 		"centensDescription" : "TODO.",
 		"dremetonDescription" : "TODO.",
 		"theleanDescription" : "TODO.",
-		"drodenDescription" : "Analysis complete. Nomada furnace. Temperature levels are perfect for smelting Avikan alloys."
+		"drodenDescription" : "Analysis complete. Nomada furnace. Temperature levels are perfect for smelting Avikan alloys.",
+		"akkimariDescription" : "Forge-hot, for smelting metals."
       },
 
       "interactData" : {

@@ -42,6 +42,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Analysis complete. Bonecarver's table. Used to construct equipment and other items made of bone.",
+  "akkimariDescription" : "Akki carve bones here!",
 
   "learnBlueprintsOnPickup" : [],
 
@@ -79,7 +80,8 @@
 		"centensDescription" : "TODO.",
 		"dremetonDescription" : "TODO.",
 		"theleanDescription" : "TODO.",
-		"drodenDescription" : "Analysis complete. Bonecarver's table. Used to construct equipment and other items made of bone."
+		"drodenDescription" : "Analysis complete. Bonecarver's table. Used to construct equipment and other items made of bone.",
+		"akkimariDescription" : "Akki carve bones here!"
       },
 
       "interactData" : {
@@ -139,7 +141,8 @@
 		"centensDescription" : "TODO.",
 		"dremetonDescription" : "TODO.",
 		"theleanDescription" : "TODO.",
-		"drodenDescription" : "Analysis complete. Boneworking station. Used to construct equipment and other items made of bone."
+		"drodenDescription" : "Analysis complete. Boneworking station. Used to construct equipment and other items made of bone.",
+		"akkimariDescription" : "Machine makes tools-bone. Easier for Akki."
       },
 
       "interactData" : {

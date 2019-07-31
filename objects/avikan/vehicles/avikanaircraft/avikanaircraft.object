@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Drehk detected. Status: out of fuel.",
+  "akkimariDescription" : "Vehicle-aline, like Chaseflight.",
 
   "inventoryIcon" : "avikanaircrafticon.png",
   "orientations" : [

@@ -28,6 +28,7 @@
   "dremetonDescription" : "A beacon that can summon an Avikan guard if used in the right place.",
   "hyvonDescription" : "A beacon that summons an armed lesser one. Hmph.",
   "drodenDescription" : "Detected beacon. Use in combination with a colony deed to summon armed Avikan tenants.",
+  "akkimariDescription" : "If Akki place in house with deed-colony, Akki summon guard.",
 
   "inventoryIcon" : "avikantier3beaconicon.png",
   "orientations" : [

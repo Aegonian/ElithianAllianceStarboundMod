@@ -33,6 +33,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Light. Illuminates objects above.",
+  "akkimariDescription" : "Light-small.",
 
   "inventoryIcon" : "avikangroundlighticon.png",
   "orientations" : [
@@ -44,7 +45,6 @@
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ],
       "beamAngle" : 90
-
     }
   ]
 }
