@@ -40,7 +40,7 @@
       "dualImage" : "akkimarismallchest.png:<color>.<key>",
       "imagePosition" : [-8, 0],
 
-      "spaceScan" : 0.1,
+      "spaceScan" : 0.2,
       "anchors" : [ "bottom" ]
     }
   ],

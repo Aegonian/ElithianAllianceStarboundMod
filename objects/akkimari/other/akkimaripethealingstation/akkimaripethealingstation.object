@@ -1,11 +1,11 @@
 {
-  "objectName" : "avikanpethealingstation",
-  "colonyTags" : ["avikan"],
+  "objectName" : "akkimaripethealingstation",
+  "colonyTags" : ["akkimari"],
   "rarity" : "Rare",
   "printable" : false,
   "description" : "A creature healing station used to heal captured creatures.",
-  "shortdescription" : "Avikan Pet Healer",
-  "race" : "avikan",
+  "shortdescription" : "Akris Pet Healer",
+  "race" : "akkimari",
   "category" : "storage",
   "price" : 750,
   "health" : 2.5,
@@ -39,20 +39,20 @@
   "drodenDescription" : "Detected pet healing device. Heals wounded captured creatures.",
   "akkimariDescription" : "Akki heal pet here.",
 
-  "inventoryIcon" : "avikanpethealingstationicon.png",
+  "inventoryIcon" : "akkimaripethealingstationicon.png",
 
-  "animation" : "/objects/avikan/misc/avikanpethealingstation/avikanpethealingstation.animation",
+  "animation" : "akkimaripethealingstation.animation",
   "animationParts" : {
     "canisters" : "canisters.png",
     "capturepod" : "capturepod.png",
     "capturepodlit" : "capturepodlit.png"
   },
-  "animationPosition" : [0, 0],
+  "animationPosition" : [-8, 0],
 
   "orientations" : [
     {
       "image" : "canisters.png:<color>.<frame>",
-      "imagePosition" : [0, 0],
+      "imagePosition" : [-8, 0],
 
       "direction" : "left",
       "flipImages" : true,
@@ -64,7 +64,7 @@
     },
     {
       "image" : "canisters.png:<color>.<frame>",
-      "imagePosition" : [0, 0],
+      "imagePosition" : [-8, 0],
 
       "direction" : "right",
       

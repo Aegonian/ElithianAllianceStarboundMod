@@ -16,7 +16,7 @@
   "subtitle" : "",
   "frameCooldown" : 5,
   "autoCloseCooldown" : 3600,
-  "scripts" : [ "alliancepethealingstation.lua"],
+  "scripts" : [ "/objects/scripts/thea-pethealingstation.lua"],
 
   "apexDescription" : "Machines like these are used to heal captured creatures.",
   "avianDescription" : "How useful, I can heal any creatures I capture with this.",

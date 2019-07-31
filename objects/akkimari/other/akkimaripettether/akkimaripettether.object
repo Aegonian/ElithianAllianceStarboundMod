@@ -1,12 +1,12 @@
 {
-  "objectName" : "alliancepettether",
-  "colonyTags" : ["alliance"],
+  "objectName" : "akkimaripettether",
+  "colonyTags" : ["akkimari"],
   "rarity" : "Rare",
   "category" : "storage",
   "price" : 250,
   "description" : "A creature capture pod can be placed into this device, tethering the pet within its radius.",
-  "shortdescription" : "Alliance Pet Tether",
-  "race" : "aegi",
+  "shortdescription" : "Akris Pet Tether",
+  "race" : "akkimari",
   "printable" : false,
 
   "apexDescription" : "A captured creature can be tethered to this spot.",
@@ -44,18 +44,18 @@
     "team" : 0
   },
 
-  "inventoryIcon" : "alliancepettethericon.png",
+  "inventoryIcon" : "akkimaripettethericon.png",
 
-  "animation" : "alliancepettether.animation",
+  "animation" : "akkimaripettether.animation",
   "animationParts" : {
-    "tether" : "alliancepettether.png",
-    "tetherlit" : "alliancepettetherlit.png"
+    "tether" : "akkimaripettether.png",
+    "tetherlit" : "akkimaripettetherlit.png"
   },
   "animationPosition" : [-8, 0],
 
   "orientations" : [
     {
-      "imageLayers" : [ { "image" : "alliancepettether.png:off.<frame>", "fullbright" : true }, { "image" : "alliancepettetherlit.png:off.<frame>" } ],
+      "imageLayers" : [ { "image" : "akkimaripettether.png:off.<frame>", "fullbright" : true }, { "image" : "akkimaripettetherlit.png:off.<frame>" } ],
       "imagePosition" : [-8, 0],
 
       "direction" : "left",
@@ -68,7 +68,7 @@
       "anchors" : [ "bottom" ]
     },
     {
-      "imageLayers" : [ { "image" : "alliancepettether.png:off.<frame>", "fullbright" : true }, { "image" : "alliancepettetherlit.png:off.<frame>" } ],
+      "imageLayers" : [ { "image" : "akkimaripettether.png:off.<frame>", "fullbright" : true }, { "image" : "akkimaripettetherlit.png:off.<frame>" } ],
       "imagePosition" : [-8, 0],
 
       "direction" : "right",

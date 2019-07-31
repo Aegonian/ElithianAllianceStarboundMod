@@ -37,7 +37,7 @@
   "frameCooldown" : 5,
   "autoCloseCooldown" : 3600,
 
-  "scripts" : [ "avikanpettether.lua" ],
+  "scripts" : [ "/objects/spawner/pettether/pettether.lua" ],
 
   "damageTeam" : {
     "type" : "friendly",

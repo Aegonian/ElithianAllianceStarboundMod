@@ -12,7 +12,9 @@
   "floranDescription" : "Floran ussse metal poless as ssspears?",
   "glitchDescription" : "Bored. A simple metal pole.",
   "novakidDescription" : "A metal pole, thin as a branch.",
-  "drodenDescription" : "Pole-metal.",
+  
+  "drodenDescription" : "Metal pole detected.",
+  "akkimariDescription" : "Pole-metal.",
   
   "inventoryIcon" : "avikanoutpostpole2icon.png",
   "orientations" : [
