@@ -1,12 +1,13 @@
 {
-  "projectileName" : "allianceexplosivelaser",
-  "physics" : "lineriflebullet",
-  "bounces" : 0,
-  "image" : "allianceexplosivelaser.png",
+  "projectileName" : "alliancepulseblastweak",
+  "physics" : "thea-laser",
+  "renderLayer" : "MiddleParticle+1",
+  "bounces" : 1,
+  "image" : "alliancepulseblastweak.png",
   "animationCycle" : 0.5,
   "frameNumber" : 1,
   "power" : 50,
-  "speed" : 200,
+  "speed" : 150,
   "piercing" : true,
   "supportsProcessing" : true,
   "damagePoly" : [ [-4.5, 0], [-3, -3], [0, -4.5], [3, -3], [4.5, 0], [3, 3], [0, 4.5], [-3, 3] ],
@@ -14,7 +15,7 @@
   "actionOnReap" : [
     {
       "action" : "config",
-      "file" : "/projectiles/explosions/allianceenergyexplosion/allianceenergyexplosion.config"
+      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
     }
   ],
   "periodicActions" : [
@@ -25,7 +26,7 @@
       "rotate" : true,
       "specification" : {
         "type" : "animated",
-        "animation" : "/projectiles/alliance/allianceexplosivelaser/trail.animation",
+        "animation" : "/projectiles/alliance/alliancepulseblastweak/trail.animation",
         "position" : [-1.5, 0],
         "layer" : "middle",
 		"collidesForeground" : false,
@@ -37,9 +38,7 @@
     }
   ],
   "statusEffects" : [],
-  "lightColor" : [0, 56, 96],
+  "lightColor" : [0, 32, 56],
   "fullbright" : true,
-  "damageKind" : "default",
-
-  "scripts" : ["/projectiles/scripts/thea-linerifle.lua"]
+  "damageKind" : "default"
 }

@@ -1,6 +1,7 @@
 {
   "projectileName" : "allianceenergyexplosionmedium",
   "image" : "allianceenergyexplosionmedium.png",
+  "renderLayer" : "MiddleParticle+2",
   "animationCycle" : 0.4,
   "frameNumber" : 5,
   "speed" : 0,

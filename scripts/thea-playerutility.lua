@@ -45,6 +45,7 @@ function init()
   
   --Set up storage for random events
   storage.timeUntilNextEvent = storage.timeUntilNextEvent or math.random(self.timeBewteenRandomEvents[1], self.timeBewteenRandomEvents[2])
+  storage.lastRandomEvent = storage.lastRandomEvent or nil
   
   --Set up message handler for checking if the region around the player was modified by a player
   message.setHandler("thea-regionUpdate", regionUpdate)
@@ -103,8 +104,20 @@ function update(args)
   --If the next event is ready, check position and spawn the event stagehand
   if storage.timeUntilNextEvent == 0 then
 	if playerIsNearGround() and not self.regionIsPlayerModified and (self.dungeonIdAtPosition > 65000) then
-	  local randomEvent = util.randomChoice(self.randomEvents)
+	  local eventList = self.randomEvents
+	  --If there is a saved lat event, remove it from the list of candidates to prevent back-to-back duplicate events
+	  if storage.lastRandomEvent then
+		eventList = util.filter(self.randomEvents, function (event)
+		  return event ~= storage.lastRandomEvent
+		end)
+		
+		sb.logInfo("Last event was: " .. sb.print(storage.lastRandomEvent))
+		sb.logInfo("Choosing event from: " .. sb.printJson(eventList, 1))
+	  end
+	  
+	  local randomEvent = util.randomChoice(eventList)
 	  world.spawnStagehand(entity.position(), randomEvent)
+	  storage.lastRandomEvent = randomEvent
 	
 	  sb.logInfo("Spawning random event stagehand of type: " .. randomEvent)
 	  storage.timeUntilNextEvent = math.random(self.timeBewteenRandomEvents[1], self.timeBewteenRandomEvents[2])

@@ -1,20 +1,28 @@
 {
-  "projectileName" : "allianceexplosivelaser",
+  "projectileName" : "alliancepulseblast",
   "physics" : "lineriflebullet",
+  "renderLayer" : "MiddleParticle+1",
   "bounces" : 0,
-  "image" : "allianceexplosivelaser.png",
+  "image" : "alliancepulseblast.png",
   "animationCycle" : 0.5,
   "frameNumber" : 1,
   "power" : 50,
   "speed" : 200,
-  "piercing" : true,
+  "piercing" : false,
   "supportsProcessing" : true,
   "damagePoly" : [ [-4.5, 0], [-3, -3], [0, -4.5], [3, -3], [4.5, 0], [3, 3], [0, 4.5], [-3, 3] ],
   "emitters" : [],
   "actionOnReap" : [
     {
       "action" : "config",
-      "file" : "/projectiles/explosions/allianceenergyexplosion/allianceenergyexplosion.config"
+      "file" : "/projectiles/explosions/allianceenergyexplosionsmall/allianceenergyexplosionsmall.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "alliancepulseblastweak",
+      "fuzzAngle" : 0,
+      "inheritDamageFactor" : 0.25,
+      "angleAdjust" : 0
     }
   ],
   "periodicActions" : [
@@ -25,7 +33,7 @@
       "rotate" : true,
       "specification" : {
         "type" : "animated",
-        "animation" : "/projectiles/alliance/allianceexplosivelaser/trail.animation",
+        "animation" : "/projectiles/alliance/alliancepulseblast/trail.animation",
         "position" : [-1.5, 0],
         "layer" : "middle",
 		"collidesForeground" : false,

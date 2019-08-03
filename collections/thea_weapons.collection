@@ -516,6 +516,12 @@
       "title" : "Erito",
       "description" : "A graceful longsword with a near-unbreakable edge.",
       "icon" : "/items/active/weapons/melee/unique/erito/thea-erito.png"
+    },
+	"thea-lyiinsrifle" : {
+      "order" : 84,
+      "title" : "Lyiin's Rifle",
+      "description" : "The personal firearm of Lyiin Taemera, inspired by weapons of alien design.",
+      "icon" : "/items/active/weapons/ranged/unique/lyiinsrifle/thea-lyiinsrifleicon.png"
     }
   }
 }

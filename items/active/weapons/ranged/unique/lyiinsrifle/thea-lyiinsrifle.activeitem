@@ -1,0 +1,191 @@
+{
+  "itemName" : "thea-lyiinsrifle",
+  "price" : 1500,
+  "inventoryIcon" : "thea-lyiinsrifleicon.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;The personal firearm of Lyiin Taemera, inspired by weapons of alien design.",
+  "manufacturer" : "^gray;AEG-Corps^reset;",
+  "shortdescription" : "^orange;Lyiin's Rifle^reset;",
+  "level" : 6,
+  "fixedLevel" : false,
+  "tooltipKind" : "thea-chargedammogun-unique-mf",
+  "category" : "Linear Pulse Rifle",
+  "itemTags" : ["weapon","ranged","sniperrifle","alliance","theaUnique"],
+  "twoHanded" : true,
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "thea-lyiinsrifle" },
+  
+  "meritTokenValue" : 100,
+  
+  "cursor" : "/cursors/thea-triplecirclereticle.cursor",
+  
+  "animation" : "thea-lyiinsrifle.animation",
+  "animationParts" : {
+    "gun" : "thea-lyiinsrifle.png",
+    "lights" : "thea-lyiinsriflelights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/alliancepulseflash.png",
+    "charge" : "thea-lyiinsriflecharge.png"
+  },
+  "animationCustom" : {
+	"animatedParts" : {
+      "parts" : {
+        "gun" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.5, 0.125]
+		  }
+		},
+		"lights" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.5, 0.125]
+		  }
+		},
+		"charge" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [1.5, 0.125]
+		  }
+		}
+      }
+    },
+    "particleEmitters" : {
+      "muzzleFlash" : {
+        "transformationGroups" : ["weapon"],
+        "burstCount" : 2,
+		"offsetRegion" : [1.125, -0.25, 1.125, -0.25],
+        "particles" : [
+          { "particle" : "akkimariashsmoke-air" }
+        ]
+      },
+      "reload" : {
+        "transformationGroups" : ["weapon"],
+		"offsetRegion" : [0.875, 0.125, 0.875, 0.125],
+        "particles" : [
+          { "particle" : "magazinedrop-lyiinsrifle" }
+        ]
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/lyiinsrifle_fire3.ogg" ],
+	  "chargeLoop" : [ "/sfx/gun/lyiinsrifle_charge1.ogg" ],
+	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ],
+	  "reloadLoop" : [ "/sfx/gun/reload/thea_reloadloop_magazine.ogg" ],
+	  "reload" : [ "/sfx/gun/reload/sniper_reload_clip2.ogg" ]
+    }
+  },
+  "animationScripts" : ["/items/active/effects/thea-chargeintake.lua"],
+  "scriptedAnimationParameters" : {
+    "particleConfig" : {
+	  "image" : "/particles/chargeintake/allianceenergyintake.png",
+	  "scale" : 1.5,
+	  "fullbright" : true
+	}
+  },
+
+  "baseOffset" : [1.5, 0.125],
+  "muzzleOffset" : [1.875, 0.25],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-chargedshot-ammo.lua"],
+    "class" : "TheaChargedShotAmmo",
+
+    "chargeTime" : 0.6,
+    "baseDamage" : 7.5,
+    "inaccuracy" : 0.0,
+	
+	"cooldownTime" : 0.4,
+	
+	"readyTime" : 0.2, //Time between finishing the reload animation and being able to fire the first shot again
+	"maxAmmo" : 5,
+
+    "projectileType" : "alliancepulseblast",
+	"projectileCount" : 1,
+	"projectileParameters" : {
+      "knockback" : 10
+    },
+	
+	"singleFireAnimation" : true, //Makes the weapon fire a non-looping active animation after every shot
+	
+	//CHARGE PARTICLE CONFIGURATION
+	"useChargeParticles" : true,
+	"maxChargeParticles" : 12,
+	"particleLifetime" : 0.2,
+	"timeBewteenParticles" : 0.05,
+	"maxParticleDistance" : 1.5,
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "charge" : {
+        "armRotation" : -2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 4,
+        "weaponRotation" : 6,
+		"weaponOffset" : [-0.05, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.4,
+        "armRotation" : 4,
+        "weaponRotation" : 6,
+		"weaponOffset" : [-0.05, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "discharge" : {
+        "duration" : 0.1,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "reload" : {
+        "duration" : 2.0,
+        "armRotation" : -25,
+        "weaponRotation" : 30,
+        "weaponOffset" : [-0.875, 0.125],
+        "twoHanded" : true,
+
+        "aimAngle" : 0,
+        "allowRotate" : false,
+        "allowFlip" : true,
+
+		"frontArmFrameSequence" : [
+		  [0.0, "walk.2"],
+		  [0.7, "run.3"],
+		  [1.1, "rotation"]
+		],
+        "backArmFrame" : "rotation"
+      }
+	}
+  },
+
+  "builder" : "/items/buildscripts/thea-buildchargedammoweapon.lua"
+}
