@@ -144,7 +144,10 @@
 	  
 	  //CARGO DROPS
 	  "thea-alliancecargodrop",
-	  "thea-eritocargodrop"
+	  "thea-eritocargodrop",
+	  
+	  //SPECIAL RANDOM EVENTS
+	  "thea-akkimaridrill"
 	]
   },
   { "op" : "add",

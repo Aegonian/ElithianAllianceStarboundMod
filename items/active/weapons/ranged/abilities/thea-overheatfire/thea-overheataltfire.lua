@@ -1,65 +1,33 @@
 require "/scripts/util.lua"
 require "/scripts/interp.lua"
 
---Modified gunfire behaviour. Doesn't consume energy when firing, but increases the weapon's heat value. If it goes past a threshold, the weapon overheats and must cool down before being used again
+--Modified gunfire behaviour. Doesn't consume energy when firing, but increases the weapon's heat value. If it goes past a threshold, the weapon overheats and must cool down before being used again. This behaviour is used only for altfire abilities, as it increases heat but doesn't drain heat
 
 -- Base gun fire ability
-TheaOverheatFire = WeaponAbility:new()
+TheaOverheatAltFire = WeaponAbility:new()
 
-function TheaOverheatFire:init()
+function TheaOverheatAltFire:init()
   self.weapon:setStance(self.stances.idle)
 
   self.cooldownTimer = self.fireTime
-  self.heat = config.getParameter("heat", 0)
-  self.overheated = config.getParameter("overheated", false)
-  self.idleTimer = 0
-  
-  animator.setParticleEmitterActive("venting", self.overheated)
+  self.overheated = false
 
   self.weapon.onLeaveAbility = function()
     self.weapon:setStance(self.stances.idle)
   end
 end
 
-function TheaOverheatFire:update(dt, fireMode, shiftHeld)
+function TheaOverheatAltFire:update(dt, fireMode, shiftHeld)
   WeaponAbility.update(self, dt, fireMode, shiftHeld)
-  
-  self.heat = config.getParameter("heat", 0)
+
   self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
-  self.idleTimer = math.min(self.coolingIdleTime, self.idleTimer + self.dt)
+  self.overheated = config.getParameter("overheated", false)
 
   if animator.animationState("firing") ~= "fire" then
     animator.setLightActive("muzzleFlash", false)
   end
-
-  --Determine target animation state based on current heat value
-  if self.heat >= self.overheatThreshold then
-	self.overheated = true
-	activeItem.setInstanceValue("overheated", true)
-	animator.setParticleEmitterActive("venting", true)
-	animator.setAnimationState("weapon", "overheated")
-  elseif self.heat >= self.hotThreshold and not self.overheated then
-	animator.setAnimationState("weapon", "hot")
-  elseif self.heat >= self.mediumThreshold and not self.overheated then
-	animator.setAnimationState("weapon", "medium")
-  elseif self.heat >= self.coolThreshold and not self.overheated then
-	animator.setAnimationState("weapon", "cool")
-  else
-	animator.setAnimationState("weapon", "idle")
-  end
   
-  --If the weapon is in an ability, stop and reset the idle timer
-  if self.weapon.currentAbility then
-	self.idleTimer = 0
-  end
-  
-  --Passive cooling while not overheated
-  if self.idleTimer == self.coolingIdleTime and not self.overheated then
-	self.heat = math.max(0, self.heat - (self.heatLossRate * self.dt))
-	activeItem.setInstanceValue("heat", self.heat)
-  end
-  
-  if self.fireMode == (self.activatingFireMode or self.abilitySlot)
+  if self.fireMode == "alt"
     and not self.weapon.currentAbility
     and self.cooldownTimer == 0
     and not self.overheated
@@ -70,16 +38,10 @@ function TheaOverheatFire:update(dt, fireMode, shiftHeld)
     elseif self.fireType == "burst" then
       self:setState(self.burst)
     end
-  elseif self.overheated and not self.weapon.currentAbility then
-	self:setState(self.overheat)
   end
-  
-  world.debugText(self.heat, mcontroller.position(), "yellow")
-  world.debugText(self.idleTimer, vec2.add(mcontroller.position(), {0,1}), "yellow")
-  world.debugText(sb.printJson(self.overheated), vec2.add(mcontroller.position(), {0,2}), "yellow")
 end
 
-function TheaOverheatFire:auto()
+function TheaOverheatAltFire:auto()
   self.weapon:setStance(self.stances.fire)
 
   self:fireProjectile()
@@ -93,7 +55,7 @@ function TheaOverheatFire:auto()
   self:setState(self.cooldown)
 end
 
-function TheaOverheatFire:burst()
+function TheaOverheatAltFire:burst()
   self.weapon:setStance(self.stances.fire)
 
   local shots = self.burstCount
@@ -111,7 +73,7 @@ function TheaOverheatFire:burst()
   self.cooldownTimer = (self.fireTime - self.burstTime) * self.burstCount
 end
 
-function TheaOverheatFire:cooldown()
+function TheaOverheatAltFire:cooldown()
   self.weapon:setStance(self.stances.cooldown)
   self.weapon:updateAim()
 
@@ -128,46 +90,34 @@ function TheaOverheatFire:cooldown()
   end)
 end
 
-function TheaOverheatFire:overheat()
-  self.weapon:setStance(self.stances.overheat)
-  self.weapon:updateAim()
-  
-  --Force the aim angle into a set position
-  self.weapon.aimAngle = 0
-
-  while self.heat > 0 do
-	animator.setParticleEmitterActive("venting", true)
-	animator.setAnimationState("weapon", "overheated")
-  
-	self.heat = math.max(0, self.heat - (self.heatLossRateOverheated * self.dt))
-	activeItem.setInstanceValue("heat", self.heat)
-	coroutine.yield()
+function TheaOverheatAltFire:muzzleFlash()
+  if not self.hidePrimaryMuzzleFlash then
+    animator.setPartTag("muzzleFlash", "variant", math.random(1, 3))
+    animator.setAnimationState("firing", "fire")
+    animator.setLightActive("muzzleFlash", true)
   end
   
-  self.overheated = false
-  activeItem.setInstanceValue("overheated", false)
-  animator.setParticleEmitterActive("venting", false)
+  if self.useParticleEmitter == nil or self.useParticleEmitter then
+    animator.burstParticleEmitter("altMuzzleFlash", true)
+  end
+
+  if self.usePrimaryFireSound then
+    animator.playSound("fire")
+  else
+    animator.playSound("altFire")
+  end
 end
 
-function TheaOverheatFire:muzzleFlash()
-  animator.setPartTag("muzzleFlash", "variant", math.random(1, 3))
-  animator.setAnimationState("firing", "fire")
-  animator.burstParticleEmitter("muzzleFlash")
-  animator.playSound("fire")
-
-  animator.setLightActive("muzzleFlash", true)
-end
-
-function TheaOverheatFire:fireProjectile(projectileType, projectileParams, inaccuracy, firePosition, projectileCount)
+function TheaOverheatAltFire:fireProjectile(projectileType, projectileParams, inaccuracy, firePosition, projectileCount)
   local params = sb.jsonMerge(self.projectileParameters, projectileParams or {})
   params.power = self:damagePerShot()
   params.powerMultiplier = activeItem.ownerPowerMultiplier()
   params.speed = util.randomInRange(params.speed)
-
+  
   --Increase heat
-  self.heat = self.heat + self.heatPerShot
-  activeItem.setInstanceValue("heat", self.heat)
-  self.idleTimer = 0
+  local heat = config.getParameter("heat", 0)
+  heat = heat + self.heatPerShot
+  activeItem.setInstanceValue("heat", heat)
   
   if not projectileType then
     projectileType = self.projectileType
@@ -194,19 +144,19 @@ function TheaOverheatFire:fireProjectile(projectileType, projectileParams, inacc
   return projectileId
 end
 
-function TheaOverheatFire:firePosition()
+function TheaOverheatAltFire:firePosition()
   return vec2.add(mcontroller.position(), activeItem.handPosition(self.weapon.muzzleOffset))
 end
 
-function TheaOverheatFire:aimVector(inaccuracy)
+function TheaOverheatAltFire:aimVector(inaccuracy)
   local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle + sb.nrand(inaccuracy, 0))
   aimVector[1] = aimVector[1] * mcontroller.facingDirection()
   return aimVector
 end
 
-function TheaOverheatFire:damagePerShot()
+function TheaOverheatAltFire:damagePerShot()
   return (self.baseDamage or (self.baseDps * self.fireTime)) * (self.baseDamageMultiplier or 1.0) * config.getParameter("damageLevelMultiplier") / self.projectileCount
 end
 
-function TheaOverheatFire:uninit()
+function TheaOverheatAltFire:uninit()
 end

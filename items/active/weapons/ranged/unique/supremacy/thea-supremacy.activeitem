@@ -1,0 +1,169 @@
+{
+  "itemName" : "thea-supremacy",
+  "price" : 1500,
+  "inventoryIcon" : "thea-supremacyicon.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;A fast assault rifle with a built-in heat sink system.",
+  "manufacturer" : "^gray;AEG-Corps^reset;",
+  "shortdescription" : "^orange;C30 Supremacy^white;",
+  "level" : 6,
+  "fixedLevel" : false,
+  "tooltipKind" : "thea-overheatgun-unique-mf",
+  "category" : "Assault Rifle",
+  "itemTags" : ["weapon","ranged","assaultrifle","alliance","theaUnique"],
+  "twoHanded" : true,
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "thea-supremacy" },
+  
+  "meritTokenValue" : 100,
+
+  "animation" : "thea-supremacy.animation",
+  "animationParts" : {
+    "middle" : "thea-supremacy.png",
+    "middleFullbright" : "thea-supremacylights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/allianceenergyflash.png"
+  },
+  "animationCustom" : {
+	"animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+			//Same as BaseOffset
+		    "offset" : [0.75, 0.0]
+		  }
+		}
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/thea_plasmagun7.ogg" ],
+      "altFire" : [ "/sfx/gun/lyiinsrifle_fire2.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.75, 0.0],
+  "muzzleOffset" : [2.0, 0.3],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-overheatfire/thea-overheatfire.lua"],
+    "class" : "TheaOverheatFire",
+
+    "fireTime" : 0.09,
+    "baseDps" : 11.0,
+    "inaccuracy" : 0.015,
+	
+	//Config for heat generation and cooling
+	"heatPerShot" : 5,				//Heat generated per shot
+	
+	"coolingIdleTime" : 0.2,		//Time before passive cooling kicks in
+	"heatLossRate" : 80,			//Heat lost per second while not overheated
+	"heatLossRateOverheated" : 35,	//Heat lost per second while overheated
+	
+	"overheatThreshold" : 120,		//Heat threshold to overheat
+	"hotThreshold" : 90,			//Heat threshold for "hot" animation state
+	"mediumThreshold" : 60,			//Heat threshold for "medium" animation state
+	"coolThreshold" : 30,			//Heat threshold for "cold" animation state
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "allianceenergybullet",
+    "projectileParameters" : {
+      "knockback" : 7
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 2,
+        "weaponRotation" : 4,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.05,
+        "armRotation" : 2,
+        "weaponRotation" : 4,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "overheat" : {
+        "armRotation" : -25,
+        "weaponRotation" : 55,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "altAbility" : {
+    "name" : "Concentrated Blast",
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-overheatfire/thea-overheataltfire.lua"],
+    "class" : "TheaOverheatAltFire",
+
+    "fireTime" : 1.0,
+    "baseDps" : 14.0,
+    "inaccuracy" : 0.0,
+	
+	//Config for heat generation and cooling
+	"heatPerShot" : 120,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "allianceexplosiveplasmalarge",
+    "projectileParameters" : {
+      "knockback" : 20
+    },
+	
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 6,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "cooldown" : {
+        "duration" : 0.25,
+        "armRotation" : 6,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+  
+  "builder" : "/items/buildscripts/thea-buildoverheatweapon-mf.lua"
+}

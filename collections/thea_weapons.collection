@@ -522,6 +522,12 @@
       "title" : "Lyiin's Rifle",
       "description" : "The personal firearm of Lyiin Taemera, inspired by weapons of alien design.",
       "icon" : "/items/active/weapons/ranged/unique/lyiinsrifle/thea-lyiinsrifleicon.png"
+    },
+	"thea-supremacy" : {
+      "order" : 85,
+      "title" : "C30 Supremacy",
+      "description" : "A fast assault rifle with a built-in heat sink system.",
+      "icon" : "/items/active/weapons/ranged/unique/supremacy/thea-supremacyicon.png"
     }
   }
 }

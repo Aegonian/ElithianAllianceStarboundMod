@@ -1,0 +1,245 @@
+{
+  "animatedParts" : {
+	"stateTypes" : {
+	  "body" : {
+		"priority" : 0,
+		"default" : "spawn",
+		"states" : {
+		  "spawn" : {
+			"frames" : 29,
+			"cycle" : 1.5,
+			"mode" : "transition",
+			"transition" : "idle",
+            "properties" : {
+              "immediateSound" : "/sfx/tech/vehicle_appear1.ogg",
+              "particleEmittersOff" : [ "rightArmSmoke", "leftArmSmoke" ]
+            }
+		  },
+		  "idle" : {
+			"frames" : 4,
+			"cycle" : 0.4,
+			"mode" : "loop",
+            "properties" : {
+              "persistentSound" : "/sfx/tech/thea_shuttle_engineloop.ogg",
+              "particleEmittersOn" : [ "rightArmSmoke", "leftArmSmoke" ]
+            }
+		  },
+		  "drilling" : {
+			"frames" : 4,
+			"cycle" : 0.4,
+			"mode" : "loop",
+            "properties" : {
+              "persistentSound" : "/sfx/tech/thea_shuttle_engineloop.ogg",
+              "particleEmittersOn" : [ "rightArmSmoke", "leftArmSmoke" ]
+            }
+		  },
+		  "despawn" : {
+			"frames" : 8,
+			"cycle" : 0.8,
+			"mode" : "transition",
+			"transition" : "invisible",
+            "properties" : {
+              "immediateSound" : "/sfx/tech/mech_powerdown2.ogg",
+              "particleEmittersOff" : [ "rightArmSmoke", "leftArmSmoke" ]
+            }
+		  },
+		  "invisible" : {
+            "properties" : {
+              "particleEmittersOff" : [ "rightArmSmoke", "leftArmSmoke" ]
+            }
+		  }
+		}
+	  },
+	  "zone" : {
+		"priority" : 0,
+		"default" : "invisible",
+		"states" : {
+		  "idle" : {},
+		  "capturing" : {},
+		  "invisible" : {}
+		}
+	  }
+	},
+
+	"parts" : {
+	  "body" : {
+		"properties" : {
+		  "zLevel" : 0,
+		  "transformationGroups" : [ "body" ],
+		  "offset" : [0.0, 0.0]
+		},
+		"partStates" : {
+		  "body" : {
+			"spawn" : {
+			  "properties" : {
+				"image" : "akkimaridrill.png:spawn.<frame>"
+			  }
+			},
+			"idle" : {
+			  "properties" : {
+				"image" : "akkimaridrill.png:idle.<frame>"
+			  }
+			},
+			"drilling" : {
+			  "properties" : {
+				"image" : "akkimaridrill.png:drilling.<frame>"
+			  }
+			},
+			"despawn" : {
+			  "properties" : {
+				"image" : "akkimaridrill.png:despawn.<frame>"
+			  }
+			}
+		  }
+		}
+	  },
+	  "lights" : {
+		"properties" : {
+		  "zLevel" : 1,
+		  "transformationGroups" : [ "body" ],
+		  "fullbright" : true,
+		  "offset" : [0.0, 0.0]
+		},
+		"partStates" : {
+		  "body" : {
+			"spawn" : {
+			  "properties" : {
+				"image" : "akkimaridrilllights.png:spawn.<frame>"
+			  }
+			},
+			"idle" : {
+			  "properties" : {
+				"image" : "akkimaridrilllights.png:idle.<frame>"
+			  }
+			},
+			"drilling" : {
+			  "properties" : {
+				"image" : "akkimaridrilllights.png:drilling.<frame>"
+			  }
+			},
+			"despawn" : {
+			  "properties" : {
+				"image" : "akkimaridrilllights.png:despawn.<frame>"
+			  }
+			}
+		  }
+		}
+	  },
+	  "zone" : {
+		"properties" : {
+		  "zLevel" : 1,
+		  "transformationGroups" : [ "zone" ],
+		  "fullbright" : true,
+		  "offset" : [0.0, 0.0]
+		},
+		"partStates" : {
+		  "zone" : {
+			"idle" : {
+			  "properties" : {
+				"image" : "akkimaridrillzone.png:idle"
+			  }
+			},
+			"capturing" : {
+			  "properties" : {
+				"image" : "akkimaridrillzone.png:capturing"
+			  }
+			}
+		  }
+		}
+	  },
+	  "progressbar" : {
+		"properties" : {
+		  "zLevel" : 3,
+		  "transformationGroups" : [ "progressbar" ],
+		  "fullbright" : true,
+		  "offset" : [0.0, 8.0]
+		},
+		"partStates" : {
+		  "zone" : {
+			"idle" : {
+			  "properties" : {
+				"image" : "akkimaridrillprogressbar.png:idle"
+			  }
+			},
+			"capturing" : {
+			  "properties" : {
+				"image" : "akkimaridrillprogressbar.png:capturing"
+			  }
+			}
+		  }
+		}
+	  },
+	  "progressbarbackground" : {
+		"properties" : {
+		  "zLevel" : 2,
+		  "transformationGroups" : [ "body" ],
+		  "fullbright" : true,
+		  "offset" : [0.0, 8.0]
+		},
+		"partStates" : {
+		  "zone" : {
+			"idle" : {
+			  "properties" : {
+				"image" : "akkimaridrillprogressbarbackground.png"
+			  }
+			},
+			"capturing" : {
+			  "properties" : {
+				"image" : "akkimaridrillprogressbarbackground.png"
+			  }
+			}
+		  }
+		}
+	  }
+	}
+  },
+
+  "transformationGroups" : {
+	"body" : { "interpolated" : true },
+	"zone" : { "interpolated" : true },
+	"progressbar" : { "interpolated" : true }
+  },
+  
+  "lights" : {
+	"glow" : {
+	  "active" : false,
+	  "position" : [0, 0],
+	  "color" : [0, 75, 8],
+	  "pointLight" : false
+	}
+  },
+
+  "particleEmitters" : {
+	"drillSmoke" : {
+      "transformationGroups" : ["body"],
+      "emissionRate" : 10.0,
+      "offsetRegion" : [0.0, 0.0, 0.0, 0.0],
+      "particles" : [
+		{ "particle" : "akkimariashsmoke-drill" },
+		{ "particle" : "akkimariashsmoke-drill" },
+		{ "particle" : "thea-electricspark" },
+		{ "particle" : "thea-electricspark" }
+	  ]
+    },
+	"leftArmSmoke" : {
+      "transformationGroups" : ["body"],
+      "emissionRate" : 9.0,
+      "offsetRegion" : [-3.25, 0.0, -3.25, -0.75],
+      "particles" : [
+		{ "particle" : "akkimariashsmoke-air" }
+	  ]
+    },
+	"rightArmSmoke" : {
+      "transformationGroups" : ["body"],
+      "emissionRate" : 9.0,
+      "offsetRegion" : [3.25, 0.0, 3.25, -0.75],
+      "particles" : [
+		{ "particle" : "akkimariashsmoke-air2" }
+	  ]
+    }
+  },
+
+  "sounds" : {
+	"drilling" : [ "/sfx/tech/thea_drill.ogg" ]
+  }
+}

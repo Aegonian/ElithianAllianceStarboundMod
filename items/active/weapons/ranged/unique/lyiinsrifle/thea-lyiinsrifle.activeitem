@@ -97,7 +97,7 @@
     "class" : "TheaChargedShotAmmo",
 
     "chargeTime" : 0.6,
-    "baseDamage" : 7.5,
+    "baseDamage" : 8.5,
     "inaccuracy" : 0.0,
 	
 	"cooldownTime" : 0.4,

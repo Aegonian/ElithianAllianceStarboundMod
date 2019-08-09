@@ -15,7 +15,7 @@
   "actionOnReap" : [
     {
       "action" : "config",
-      "file" : "/projectiles/explosions/allianceenergyexplosionsmall/allianceenergyexplosionsmall.config"
+      "file" : "/projectiles/explosions/allianceenergyexplosionsmall/allianceenergyexplosionsmall-fulldamage.config"
     },
 	{
       "action" : "projectile",
@@ -47,6 +47,7 @@
   "statusEffects" : [],
   "lightColor" : [0, 56, 96],
   "fullbright" : true,
+  "damageType" : "NoDamage",
   "damageKind" : "default",
 
   "scripts" : ["/projectiles/scripts/thea-linerifle.lua"]

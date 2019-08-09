@@ -1,0 +1,51 @@
+{
+  "name" : "akkimaridrill",
+  "script" : "akkimaridrill.lua",
+  "boundBox" : [-1, -1, 1, 1],
+  "slaveControlTimeout" : 2.0,
+  "slaveControlHeartbeat" : 1.0,
+  "canBeHit" : true,
+  "animation" : "akkimaridrill.animation",
+
+  //HOVER SETTINGS
+  "maxGroundSearchDistance" : 20,	//Maximum distance at which to look for a ground position
+  "hoverTargetDistance" : 7.0,		//Distance from the ground at which to hover
+  "hoverVelocityFactor" : 12,		//Speed at which to hover up if too close to the ground
+  "hoverControlForce" : 700,		//Amount of force with which to approach hover velocity
+  "hoverWaveCycle" : 1.5,			//Duration in seconds of a hover wave movement
+  "hoverWaveDistance" : 0.5,		//How far up and down to hover from the base hover position
+  
+  //CAPTURE SETTINGS
+  "rotationRateWhileIdle" : 0.025,							//Rotation speed of the capture zone while idle
+  "rotationRateWhileCapturing" : 0.075,						//Rotation speed of the capture zone while being captured
+  "captureRadius" : 16.0,									//Radius of the capture zone
+  "timeToCapture" : 60.0,									//Time in seconds that it takes to capture the drill
+  "notifyPlayerRadius" : 32.0,								//Radius around the drill in which to notify players of the event status
+  "startRadioMessage" : "akkimaridrillcapturestart",		//Radio message to play for players entering the event
+  "successRadioMessage" : "akkimaridrillcapturecomplete",	//Radio message to play for players when the event is completed
+  "treasurePool" : "akkimaridrill",							//Treasurepool to spawn when the event is completed
+  "treasureSpawnPosition" : [0, 0],							//Position at which to spawn the treasure
+  
+  //SPAWN SETTINGS
+  "spawnProfile" : [				//Groups to spawn while being captured. Format is [ captureProgressPercentage, stagehand ]
+	[0.0, "thea-akkimaridrillambush"],
+	[0.25, "thea-akkimaridrillambush"],
+	[0.5, "thea-akkimaridrillambush"],
+	[0.75, "thea-akkimaridrillambush2"]
+  ],
+  
+  //ANIMATION SETTINGS
+  "drillingDistance" : 8.5,			//Distance from the ground at which to activate the drilling animation and capture behaviour
+
+  //MOVEMENT CONTROLLER SETTINGS
+  "movementSettings" : {
+    "collisionPoly" : [ [-0.25, -4.0], [-0.25, -0.375], [-1.0, 0.5], [-2.25, 2.0], [-2.5, 3.5], [-1.0, 5.5], [1.0, 5.5], [2.5, 3.5], [2.25, 2.0], [1.0, 0.5], [0.25, -0.375], [0.25, -4.0], [0.0, -4.25] ],
+    "mass" : 4.0,
+    "airFriction" : 40.0,
+    "liquidFriction" : 60.0,
+    "groundFriction" : 0.0,
+    "ignorePlatformCollision" : true,
+    "gravityEnabled" : true,
+    "collisionEnabled" : true
+  }
+}

@@ -53,7 +53,7 @@
     "class" : "TheaOverheatFire",
 
     "fireTime" : 0.22,
-    "baseDps" : 7.0,
+    "baseDps" : 7.5,
     "inaccuracy" : 0.015,
 	
 	//Config for heat generation and cooling
@@ -61,9 +61,9 @@
 	
 	"coolingIdleTime" : 0.25,		//Time before passive cooling kicks in
 	"heatLossRate" : 40,			//Heat lost per second while not overheated
-	"heatLossRateOverheated" : 15,	//Heat lost per second while overheated
+	"heatLossRateOverheated" : 25,	//Heat lost per second while overheated
 	
-	"overheatThreshold" : 70,		//Heat threshold to overheat
+	"overheatThreshold" : 80,		//Heat threshold to overheat
 	"hotThreshold" : 60,			//Heat threshold for "hot" animation state
 	"mediumThreshold" : 45,			//Heat threshold for "medium" animation state
 	"coolThreshold" : 25,			//Heat threshold for "cold" animation state

@@ -1,0 +1,43 @@
+{
+  "frameGrid" : {
+    "size" : [75, 136],
+    "dimensions" : [30, 3],
+
+    "names" : [
+      [ null, "spawn.1", "spawn.2", "spawn.3", "spawn.4", "spawn.5", "spawn.6", "spawn.7", "spawn.8", "spawn.9", "spawn.10", "spawn.11", "spawn.12", "spawn.13", "spawn.14", "spawn.15", "spawn.16", "spawn.17", "spawn.18", "spawn.19", "spawn.20", "spawn.21", "spawn.22", "spawn.23", "spawn.24", "spawn.25", "spawn.26", "spawn.27", "spawn.28", "spawn.29" ],
+      [ null, "idle.1", "idle.2", "idle.3", "idle.4", null, "drilling.1", "drilling.2", "drilling.3", "drilling.4" ],
+      [ null, "despawn.1", "despawn.2", "despawn.3", "despawn.4", "despawn.5", "despawn.6", "despawn.7", "despawn.8" ]
+    ]
+  }/*,
+  "aliases" : {
+	"despawn.1" : "spawn.29",
+	"despawn.2" : "spawn.28",
+	"despawn.3" : "spawn.27",
+	"despawn.4" : "spawn.26",
+	"despawn.5" : "spawn.25",
+	"despawn.6" : "spawn.24",
+	"despawn.7" : "spawn.23",
+	"despawn.8" : "spawn.22",
+	"despawn.9" : "spawn.21",
+	"despawn.10" : "spawn.20",
+	"despawn.11" : "spawn.19",
+	"despawn.12" : "spawn.18",
+	"despawn.13" : "spawn.17",
+	"despawn.14" : "spawn.16",
+	"despawn.15" : "spawn.15",
+	"despawn.16" : "spawn.14",
+	"despawn.17" : "spawn.13",
+	"despawn.18" : "spawn.12",
+	"despawn.19" : "spawn.11",
+	"despawn.20" : "spawn.10",
+	"despawn.21" : "spawn.9",
+	"despawn.22" : "spawn.8",
+	"despawn.23" : "spawn.7",
+	"despawn.24" : "spawn.6",
+	"despawn.25" : "spawn.5",
+	"despawn.26" : "spawn.4",
+	"despawn.27" : "spawn.3",
+	"despawn.28" : "spawn.2",
+	"despawn.29" : "spawn.1"
+  }*/
+}

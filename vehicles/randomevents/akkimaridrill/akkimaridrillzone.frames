@@ -1,0 +1,10 @@
+{
+  "frameGrid" : {
+    "size" : [251, 251],
+    "dimensions" : [2, 1],
+
+    "names" : [
+      [ "capturing", "idle" ]
+    ]
+  }
+}
