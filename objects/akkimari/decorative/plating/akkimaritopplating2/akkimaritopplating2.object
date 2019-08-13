@@ -1,0 +1,94 @@
+{
+  "objectName" : "akkimaritopplating2",
+  "colonyTags" : ["akkimari"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 50,
+  "description" : "Metal plating found on the outside of Akkimari structures.",
+  "shortdescription" : "Akris Top Plate",
+  "race" : "akkimari",
+  
+  "health" : 8,
+
+  "apexDescription" : "Metal plating. It looks primitive.",
+  "avianDescription" : "Scrap metal plating.",
+  "floranDescription" : "Ssscrap metal platess.",
+  "glitchDescription" : "Observation. A metal skeleton plated with scrap metal.",
+  "humanDescription" : "This looks like scrap metal. Kinda primitive.",
+  "hylotlDescription" : "Scrap metal plating. Not very elegant.",
+  "novakidDescription" : "A wall o' junk.",
+
+  "aegiDescription" : "A wall built from scrap metal.",
+  "avikanDescription" : "This wall looks like it was made from scrap metal.",
+  "erixianDescription" : "A surprisingly strong scrap metal wall.",
+  "trinkDescription" : "This scrap metal wall is surprisingly well insulated.",
+  "hymidDescription" : "A wall made of scrap metal.",
+  "notixDescription" : "This wall is a bit scrappy.",
+  "jorgasianDescription" : "A wall of scrap metal. Primitive, but very functional.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected scrap metal wall plating.",
+  "akkimariDescription" : "Akkimari knows wall will hold.",
+
+  "inventoryIcon" : "akkimaritopplating2icon.png",
+  "orientations" : [
+	//Facing LEFT
+	{
+      "image" : "akkimaritopplating2.png:<color>",
+      "renderLayer" : "Liquid+1",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.75,
+
+      "spaceScan" : 0.75,
+      "bgAnchors" : [ [0, 0] ],
+      "collision" : "solid",
+      "direction" : "left"
+    },
+	{
+      "image" : "akkimaritopplating2.png:<color>",
+      "renderLayer" : "Liquid+1",
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.75,
+
+      "spaceScan" : 0.75,
+      "anchors" : [ "left" ],
+      "collision" : "solid",
+      "direction" : "left"
+    },
+	//Facing RIGHT
+    {
+      "image" : "akkimaritopplating2.png:<color>",
+      "renderLayer" : "Liquid+1",
+
+      "imagePosition" : [-72, 0],
+      "frames" : 1,
+      "animationCycle" : 0.75,
+
+      "spaceScan" : 0.75,
+      "bgAnchors" : [ [0, 0] ],
+      "collision" : "solid",
+      "flipImages" : true,
+      "direction" : "right"
+    },
+    {
+      "image" : "akkimaritopplating2.png:<color>",
+      "renderLayer" : "Liquid+1",
+
+      "imagePosition" : [-72, 0],
+      "frames" : 1,
+      "animationCycle" : 0.75,
+
+      "spaceScan" : 0.75,
+      "anchors" : [ "right" ],
+      "collision" : "solid",
+      "flipImages" : true,
+      "direction" : "right"
+    }
+  ]
+}

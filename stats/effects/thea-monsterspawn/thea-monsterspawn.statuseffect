@@ -1,0 +1,11 @@
+{
+  "name" : "thea-monsterspawn",
+  "effectConfig" : {},
+  "defaultDuration" : 0.6,
+
+  "scripts" : [
+    "thea-monsterspawn.lua"
+  ],
+
+  "animationConfig" : "thea-monsterspawn.animation"
+}

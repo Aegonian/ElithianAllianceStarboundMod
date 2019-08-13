@@ -1,0 +1,27 @@
+{
+  "type" : "thea-poptopambush",
+
+  "scripts" : ["/stagehands/randomevents/monsterambush/thea-monsterambushevent.lua"],
+  "scriptDelta" : 1,
+  
+  "monsterTypes" : [
+	"poptop",
+	"poptop",
+	"poptop",
+	"poptop",
+	"poptop",
+	"poptop",
+	"poptop",
+	"poptop",
+	"poptop",
+	"albinopoptop"
+  ],
+  "monsterCount" : [ 4, 6 ],
+  "monsterTestPoly" : [ [0.8125, 1.25], [1.3125, 0.75],  [1.3125, -1.05], [0.8125, -1.55],  [-0.8125, -1.55], [-1.3125, -1.05],  [-1.3125, 0.75], [-0.8125, 1.25] ],
+  "spawnOnGround" : true,
+  "spawnAnimation" : true,
+  "minDistanceToPlayer" : 10,
+  "spawnRangeX" : 25,
+  "spawnRangeY" : 5,
+  "spawnTolerance" : 20
+}

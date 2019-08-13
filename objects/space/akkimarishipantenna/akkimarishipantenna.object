@@ -1,0 +1,84 @@
+{
+  "objectName" : "akkimarishipantenna",
+  "colonyTags" : ["akkimari"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 80,
+  "description" : "A long retractable antenna.",
+  "shortdescription" : "Akris Ship Antenna",
+  "race" : "akkimari",
+
+  "apexDescription" : "A long antenna of strange design.",
+  "avianDescription" : "This antenna is unusually long and thin.",
+  "floranDescription" : "Long antenna, make long ssspearss from it!",
+  "glitchDescription" : "Observation. A long, retractable antenna.",
+  "humanDescription" : "A very long and spindly antenna.",
+  "hylotlDescription" : "A graceful antenna.",
+  "novakidDescription" : "A weird antenna built by weird aliens.",
+
+  "aegiDescription" : "This type of long retractable antenna is often found on Akkimari ships.",
+  "avikanDescription" : "An alien antenna. Likely for use in deep space.",
+  "erixianDescription" : "A long, spindly antenna.",
+  "trinkDescription" : "This antenna can receive messages my own sensors can't even detect.",
+  "hymidDescription" : "A strange, retractable anetnna.",
+  "notixDescription" : "A slight humming can be heard coming from this antenna.",
+  "jorgasianDescription" : "This antenna can be retracted in combat situations.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected alien antenna. Unable to detect incoming signals.",
+  "akkimariDescription" : "Antenna for communicating in space-deep.",
+
+  "inventoryIcon" : "akkimarishipantennaicon.png",
+  "orientations" : [
+    //CEILING POSITIONS
+	{
+	  "imageLayers" : [ { "image" : "akkimarishipantennainverted.png:<color>", "fullbright" : true }, { "image" : "akkimarishipantennainvertedlit.png:<color>" } ],
+
+      "imagePosition" : [0, -104],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "top" ]
+    },
+    {
+	  "imageLayers" : [ { "image" : "akkimarishipantennainverted.png:<color>", "fullbright" : true }, { "image" : "akkimarishipantennainvertedlit.png:<color>" } ],
+
+      "imagePosition" : [-56, -104],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "top" ]
+    },
+    //FLOOR POSITIONS
+	{
+	  "imageLayers" : [ { "image" : "akkimarishipantenna.png:<color>", "fullbright" : true }, { "image" : "akkimarishipantennalit.png:<color>" } ],
+
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "bottom" ]
+    },
+    {
+	  "imageLayers" : [ { "image" : "akkimarishipantenna.png:<color>", "fullbright" : true }, { "image" : "akkimarishipantennalit.png:<color>" } ],
+
+      "imagePosition" : [-56, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}
