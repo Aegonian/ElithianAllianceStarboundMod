@@ -31,6 +31,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Avikan flag. Detected locator module. Ship teleportation system can lock on to this location.",
+  "akkimariDescription" : "Flag-alien, symbol of Nomada-Avikan.",
   
   "interactAction" : "OpenTeleportDialog",
   "interactData" : "/interface/warping/destinationonly.config",

@@ -26,6 +26,7 @@
   "avikanDescription" : "A broken light.",
   "trinkDescription" : "This light isn't performing optimally.",
   "drodenDescription" : "Light detected. Status: broken.",
+  "akkimariDescription" : "Light-broken, make Akki agitated...",
 
   "inventoryIcon" : "trinkshiplightbrokenicon.png",
   "orientations" : [

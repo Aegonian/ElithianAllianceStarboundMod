@@ -31,6 +31,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Covenant flag. Detected locator module. Ship teleportation system can lock on to this location.",
+  "akkimariDescription" : "Flag of Covenant-Kel'chis. Akki long for home...",
   
   "interactAction" : "OpenTeleportDialog",
   "interactData" : "/interface/warping/destinationonly.config",

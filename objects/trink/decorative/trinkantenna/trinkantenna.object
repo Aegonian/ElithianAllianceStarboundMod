@@ -26,6 +26,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO",
   "drodenDescription" : "Radio signal detected. Failed to decode message.",
+  "akkimariDescription" : "Antenna-alien, send and receive signals from away-far.",
 
   "inventoryIcon" : "icon.png",
   "orientations" : [

@@ -13,7 +13,6 @@
   "glitchDescription" : "Observant. This rock contains Hyverium, and is covered in cracks. It should be easy to break.",
   "akkimariDescription" : "Akki break rock, get Hyverium.",
 
-
   "particleEmitter" : {
     "emissionRate" : 0.4,
     "emissionVariance" : 0.2,

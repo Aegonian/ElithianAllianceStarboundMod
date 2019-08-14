@@ -16,6 +16,7 @@
   "novakidDescription" : "This hatch acts as a platform when open. Now that's useful!",
   
   "drodenDescription" : "Detected machine-built hatch. Design incorporates in-built platform.",
+  "akkimariDescription" : "Hatch-metal, Akki stand on platform even when open.",
 
   "inventoryIcon" : "trinkhatchplatformicon.png",
   "orientations" : [

@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Fuel input station detected. Status: broken.",
+  "akkimariDescription" : "Akki no fuel ship while panel-broken.",
 
   "inventoryIcon" : "fuelhatchicon.png",
   "orientations" : [

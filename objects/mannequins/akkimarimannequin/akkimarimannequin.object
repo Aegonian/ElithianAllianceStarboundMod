@@ -1,14 +1,19 @@
 {
   "objectName" : "akkimarimannequin",
-  "colonyTags" : [],
+  "colonyTags" : ["akkimari", "clothing"],
   "printable" : false,
   "rarity" : "Common",
-
   "category" : "other",
   "price" : 500,
   "description" : "Display and easily equip your Akkimari-themed armour sets!",
   "shortdescription" : "Akkimari Mannequin",
-  "race" : "generic",
+  "race" : "akkimari",
+  
+  "floranDescription" : "Mannequin for disssplaying armour.",
+  "glitchDescription" : "Observation. A mannequin tailored to an alien species.",
+  
+  "drodenDescription" : "Detected mannequin. Tailored to Akkimari shape.",
+  "akkimariDescription" : "Akki put armour on mannequin, look at armour-pretty.",
 
   "inventoryIcon" : "akkimarimannequinicon.png",
   "orientations" : [

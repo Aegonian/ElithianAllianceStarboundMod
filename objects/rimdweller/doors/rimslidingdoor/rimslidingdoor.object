@@ -30,6 +30,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Detected sliding door.",
+  "akkimariDescription" : "Akki open door, make woosh-woosh sound!",
 
   "inventoryIcon" : "rimslidingdooricon.png",
   "orientations" : [

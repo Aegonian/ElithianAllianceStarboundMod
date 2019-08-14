@@ -29,6 +29,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Detected shield generator. Generates a shield to protect the surrounding area.",
+  "akkimariDescription" : "Generator-shield, protect regions from destruction.",
 
   "inventoryIcon" : "avikanshieldgeneratoricon.png",
   "orientations" : [

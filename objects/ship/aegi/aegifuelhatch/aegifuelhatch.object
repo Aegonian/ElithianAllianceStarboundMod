@@ -28,6 +28,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "FTL fuel hatch detected. Please refuel.",
+  "akkimariDescription" : "Akki put fuel in here, ship will fly farther.",
 
   "inventoryIcon" : "fuelhatchicon.png",
   "orientations" : [

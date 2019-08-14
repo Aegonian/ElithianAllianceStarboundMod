@@ -33,6 +33,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Detected ship locker. Content scan failed.",
+  "akkimariDescription" : "Locker full of items, Akki steal!",
 
   "inventoryIcon" : "shiplockericon.png",
   "orientations" : [

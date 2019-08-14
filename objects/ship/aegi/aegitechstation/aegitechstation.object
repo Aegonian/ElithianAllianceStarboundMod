@@ -33,6 +33,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Detected SAIL interface. Console enables communication with SAIL.",
+  "akkimariDescription" : "Interface-SAIL. Akki talk to ship here.",
 
   "inventoryIcon" : "aegitechstationicon.png",
   "orientations" : [

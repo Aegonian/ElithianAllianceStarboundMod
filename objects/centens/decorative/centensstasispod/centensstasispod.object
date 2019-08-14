@@ -26,7 +26,8 @@
   "centensDescription" : "TODO.",
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "A stasis pod built by the Ce'Tennan. It won't open without the proper access key.",
-  "drodenDescription" : "Detected Centensian stasis. Occupant status: unknown.",
+  "drodenDescription" : "Detected Centensian stasis pod. Occupant status: unknown.",
+  "akkimariDescription" : "Pod-stasis, for sleeping time-long. Is god-maker inside?",
   
   "lightColor" : [30, 61, 76],
   

@@ -30,6 +30,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Docking field detected. Creates a barrier between space and a ship's atmosphere.",
+  "akkimariDescription" : "Field-blocking, keep air in ship.",
 
   "lightColor" : [31, 186, 0],
   "lightPosition" : [0, 6],

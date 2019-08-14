@@ -26,6 +26,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO",
   "drodenDescription" : "Radio signal detected. Failed to decode message.",
+  "akkimariDescription" : "Antenna-small, placed on roof.",
 
   "inventoryIcon" : "icon.png",
   "orientations" : [

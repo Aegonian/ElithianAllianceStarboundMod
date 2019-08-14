@@ -42,6 +42,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Detected machine-built worktable.",
+  "akkimariDescription" : "Worktable-alien, Akki craft things here.",
 
   "learnBlueprintsOnPickup" : [],
 
@@ -79,7 +80,8 @@
 		"centensDescription" : "TODO.",
 		"dremetonDescription" : "TODO.",
 		"theleanDescription" : "TODO.",
-		"drodenDescription" : "Detected machine-built worktable."
+		"drodenDescription" : "Detected machine-built worktable.",
+		"akkimariDescription" : "Worktable-alien, Akki craft things here."
       },
 
       "interactData" : {
@@ -138,7 +140,8 @@
 		"centensDescription" : "TODO.",
 		"dremetonDescription" : "TODO.",
 		"theleanDescription" : "TODO.",
-		"drodenDescription" : "Detected crafting station. Origin: machine-built."
+		"drodenDescription" : "Detected crafting station. Origin: machine-built.",
+		"akkimariDescription" : "Big press, make things flat. Akki use for crafting."
       },
 
       "interactData" : {
@@ -198,7 +201,8 @@
 		"centensDescription" : "TODO.",
 		"dremetonDescription" : "TODO.",
 		"theleanDescription" : "TODO.",
-		"drodenDescription" : "Detected printing system. Analysis: machine-built."
+		"drodenDescription" : "Detected printing system. Analysis: machine-built.",
+		"akkimariDescription" : "Fabricator-automated, make anything Akki need."
       },
 
       "interactData" : {

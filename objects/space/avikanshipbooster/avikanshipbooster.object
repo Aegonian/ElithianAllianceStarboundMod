@@ -10,6 +10,7 @@
   "floranDescription" : "Floran sshould sstay away from big flame. Flame will burn Floran.",
   "glitchDescription" : "Careful. I shouldn't get too close to this exhaust flame.",
   "drodenDescription" : "Detected active thruster flame. Temperature levels spiking. Recommend caution.",
+  "akkimariDescription" : "Akki no touch, or Akki burn!",
 
   "category" : "light",
   "lightColor" : [59, 183, 255],

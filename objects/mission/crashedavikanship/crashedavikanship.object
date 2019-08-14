@@ -12,8 +12,10 @@
   "floranDescription" : "Floran not like thiss... Sship wass attacked.",
   "glitchDescription" : "Alarmed. Someone shot this ship down.",
   "novakidDescription" : "This one ain't flying no more.",
+  
   "avikanDescription" : "This Skoff was shot down... The burn marks are consistent with Thelean weaponry.",
   "drodenDescription" : "Detected Skoff. Status: crashed. Analysis: burn marks consistent with Thelean weaponry.",
+  "akkimariDescription" : "Ship-crashed, destroyed by god-thieves.",
 
   "inventoryIcon" : "icon.png",
   "orientations" : [
