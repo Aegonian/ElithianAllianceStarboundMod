@@ -1,10 +1,10 @@
 {
-  "objectName" : "avikancolonydeed",
-  "colonyTags" : [ "avikan" ],
+  "objectName" : "akkimaricolonydeed",
+  "colonyTags" : [ "akkimari" ],
   "rarity" : "Common",
   "description" : "Place in an enclosed building with at least one door and light source and someone will move in!",
-  "shortdescription" : "^yellow;Avikan Colony Deed",
-  "race" : "avikan",
+  "shortdescription" : "^yellow;Akris Colony Deed",
+  "race" : "akkimari",
   "printable" : false,
   "category" : "spawner",
   "price" : 750,
@@ -30,10 +30,10 @@
   "drodenDescription" : "Colony deed detected. Universal standards must be met to attract potential tenants.",
   "akkimariDescription" : "Deed-colony, Akki place in house. Also place door and light, tenant come!",
 
-  "inventoryIcon" : "avikancolonydeedicon.png",
+  "inventoryIcon" : "akkimaricolonydeedicon.png",
   "orientations" : [
     {
-      "image" : "avikancolonydeed.png:scanning.<frame>",
+      "image" : "akkimaricolonydeed.png:scanning.<frame>",
       "direction": "right",
       "imagePosition" : [-8, -8],
 
@@ -53,7 +53,7 @@
   "animation" : "/objects/spawner/colonydeed/colonydeed.animation",
 
   "animationParts" : {
-    "deed" : "avikancolonydeed.png"
+    "deed" : "akkimaricolonydeed.png"
   },
   "animationPosition" : [-8, -8],
 

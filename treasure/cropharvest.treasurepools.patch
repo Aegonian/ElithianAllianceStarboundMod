@@ -196,5 +196,39 @@
 		]
 	  } ]
 	]
+  },
+
+  //SAGRASSA
+  { "op" : "add",
+	"path" : "/sagrassaHarvest",
+	"value" : [
+	  [0, {
+		"pool" : [
+		  {"weight" : 0.6, "item" : "sagrassacrystals"},
+		  {"weight" : 0.39, "item" : "sagrassamilk"},
+		  {"weight" : 0.01, "item" : "sagrassaseed"}
+		],
+		"poolRounds" : [
+		  [0.7, 1],
+		  [0.3, 2]
+		]
+	  } ]
+	]
+  },
+
+  //ACHVASS
+  { "op" : "add",
+	"path" : "/achvassHarvest",
+	"value" : [
+	  [0, {
+		"pool" : [
+		  {"weight" : 0.99, "item" : "achvassjelly"},
+		  {"weight" : 0.01, "item" : "achvassseed"}
+		],
+		"poolRounds" : [
+		  [1.0, 1]
+		]
+	  } ]
+	]
   }
 ]

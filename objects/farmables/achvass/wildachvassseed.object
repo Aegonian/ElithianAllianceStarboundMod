@@ -1,0 +1,74 @@
+{
+  "objectName" : "wildachvassseed",
+  "colonyTags" : ["nature"],
+  "rarity" : "Common",
+  "category" : "seed",
+  "description" : "A coral-like plant that expels a tasty jelly.",
+  "shortdescription" : "Achvass Seed",
+  "objectType" : "farmable",
+  "printable" : false,
+  "price" : 30,
+  "hasObjectItem" : false,
+
+  "apexDescription" : "A strange plant producing a weird jelly.",
+  "avianDescription" : "The jelly from this plant is really odd, but somehow tasty too.",
+  "floranDescription" : "Alien plantsss make sstrange jelly.",
+  "glitchDescription" : "Disgusted. There's jelly oozing from this plant's pores!",
+  "humanDescription" : "Eww! Is that jelly oozing from a plant?",
+  "hylotlDescription" : "An unusual plant producing an unusual jelly-like substance.",
+  "novakidDescription" : "This plant makes a weird jelly.",
+  
+  "aegiDescription" : "The jelly produced by this plant is nutritious, but it doesn't taste very pleasantly...",
+  "avikanDescription" : "An alien plant producing alien jelly. I really shouldn't try to eat it...",
+  "erixianDescription" : "A strange jelly-producing plant.",
+  "trinkDescription" : "The jelly from this plant can get my circuits all sticky. Better be careful.",
+  "hymidDescription" : "An unusual jelly oozes from this plant's pores.",
+  "notixDescription" : "A strange, icky jelly oozes from this plant.",
+  "jorgasianDescription" : "A highly unusual plant producing some type of jelly. I should study it.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected native Akris flora. Achvass produces unusual jelly-like substances.",
+  "akkimariDescription" : "Jelly-tasty, Akki want more more more!",
+
+  "inventoryIcon" : "achvassseedicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "achvassseed.png:<color>.<stage>.<alt>",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaces" : [ [1, 0], [0, 0], [1, 1], [0, 1], [1, 2], [0, 2] ],
+      "requireTilledAnchors" : false,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "radioMessagesOnPickup" : [ "pickupseed" ],
+
+  "stages" : [
+    {
+      "duration" : [250, 300]
+    },
+    {
+      "duration" : [250, 300]
+    },
+    {
+      "alts" : 5,
+      "duration" : [1100, 1200]
+    },
+    {
+      "alts" : 5,
+      "harvestPool" : "achvassHarvest",
+      "resetToStage" : 2
+    }
+  ],
+
+  "breakDropOptions" : [
+    [ [ "achvassseed", 1, { } ] ]
+  ],
+
+  "maxImmersion" : 0.125
+}

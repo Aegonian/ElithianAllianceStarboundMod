@@ -1,0 +1,15 @@
+{
+  "itemName" : "sagrassacrystals",
+  "rarity" : "Common",
+  "price" : 20,
+  "category" : "food",
+  "eventCategory" : "eventCrop",
+  "inventoryIcon" : "sagrassacrystals.png",
+  "description" : "A hard but edible, highly nutritious crystal.",
+  "shortdescription" : "Sagrassa Crystals",
+  "foodValue" : 10,
+  "maxStack" : 1000,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}
