@@ -1,0 +1,66 @@
+{
+  "objectName" : "wildvrelliseed",
+  "colonyTags" : ["nature"],
+  "rarity" : "Common",
+  "category" : "seed",
+  "description" : "A tall plant with a bright red colour.",
+  "shortdescription" : "Vrelli Seed",
+  "objectType" : "farmable",
+  "printable" : false,
+  "price" : 10,
+  "hasObjectItem" : false,
+
+  "apexDescription" : "Thick red leaves. I'm sure you can make something edible from them.",
+  "avianDescription" : "A bright red plant.",
+  "floranDescription" : "Floran likesss bright red leavess.",
+  "glitchDescription" : "Observation. Bright red leaves.",
+  "humanDescription" : "A bright red plant. Is it edible?",
+  "hylotlDescription" : "Thick, bright red leaves. An odd alien plant.",
+  "novakidDescription" : "One could hide well amongst plants like these.",
+  
+  "aegiDescription" : "Strange, thick leaves with a bright red colour.",
+  "avikanDescription" : "An alien plant. It looks edible, but I'm not sure if it's safe.",
+  "erixianDescription" : "Thick red leaves.",
+  "trinkDescription" : "One could make a good paste from these leaves when powdered.",
+  "hymidDescription" : "An alien plant. It's an unusual colour.",
+  "notixDescription" : "Tough red leaves. They look somewhat strange.",
+  "jorgasianDescription" : "A curiously coloured plant.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected native Akris flora. Vrelli leaves.",
+  "akkimariDescription" : "Akki collect Vrelli, crush it to powder. Make paste-tasty from it!",
+
+  "inventoryIcon" : "vrelliseedicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "vrelliseed.png:<color>.<stage>.<alt>",
+      "imagePosition" : [0, 0],
+	  
+      "spaces" : [ [1, 0], [0, 0], [1, 1], [0, 1], [1, 2], [0, 2], [1, 3], [0, 3], [1, 4], [0, 4], [1, 5], [0, 5] ],
+      "requireTilledAnchors" : false,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "radioMessagesOnPickup" : [ "pickupseed" ],
+
+  "stages" : [
+    {
+      "duration" : [640, 720]
+    },
+    {
+      "duration" : [640, 720]
+    },
+    {
+      "alts" : 5,
+      "harvestPool" : "vrelliHarvest"
+    }
+  ],
+
+  "breakDropOptions" : [
+    [ [ "vrelliseed", 1, { } ] ]
+  ],
+
+  "maxImmersion" : 0.125
+}

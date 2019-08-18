@@ -230,5 +230,25 @@
 		]
 	  } ]
 	]
+  },
+
+  //VRELLI
+  { "op" : "add",
+	"path" : "/vrelliHarvest",
+	"value" : [
+	  [0, {
+		"fill" : [
+		  {"item" : "vrelliseed"}
+		],
+		"pool" : [
+		  {"weight" : 0.89, "item" : "vrellileaves"},
+		  {"weight" : 0.01, "item" : "vrelliseed"},
+		  {"weight" : 0.1, "item" : "plantfibre"}
+		],
+		"poolRounds" : [
+		  [1.0, 1]
+		]
+	  } ]
+	]
   }
 ]

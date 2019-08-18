@@ -1,0 +1,23 @@
+{
+  "modId" : 30001,
+  "modName" : "akrisgrass",
+  "footstepSound" : "/sfx/blocks/footstep_grass.ogg",
+  "grass" : true,
+  "health" : 0,
+  
+  "description" : "Strangely coloured grass.",
+  "glitchDescription" : "Observation. Red grass.",
+  "floranDescription" : "Floran wondersss why grasss iss red.",
+  "novakidDescription" : "Strangely coloured grass.",
+  
+  "drodenDescription" : "Detected alien grass.",
+  "akkimariDescription" : "Valval-soft, feel good on feet-Akki.",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "akrisgrass.png",
+    "variants" : 5,
+    "multiColored" : false,
+    "zLevel" : 0
+  }
+}

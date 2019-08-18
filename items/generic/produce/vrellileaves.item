@@ -1,0 +1,12 @@
+{
+  "itemName" : "vrellileaves",
+  "rarity" : "Common",
+  "price" : 25,
+  "category" : "cookingIngredient",
+  "eventCategory" : "eventCrop",
+  "inventoryIcon" : "vrellileaves.png",
+  "description" : "The bright red leaves of the Vrelli plant.",
+  "shortdescription" : "Vrelli Leaves",
+  "maxStack" : 1000,
+  "learnBlueprintsOnPickup" : [ "vrellipaste" ]
+}
