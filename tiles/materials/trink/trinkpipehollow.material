@@ -11,6 +11,7 @@
   "novakidDescription" : "A big pipe for moving about liquids. Hope there isn't any poop in there.",
   
   "drodenDescription" : "Analysis failed. Unable to scan pipe contents.",
+  "akkimariDescription" : "Liquid flows through pipe. Akki no want to know what it is...",
 
   "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
   "health" : 6,

@@ -11,6 +11,7 @@
   "novakidDescription" : "There's a flow of energy inside this 'ere wall.",
   
   "drodenDescription" : "Analysis complete. Power cables run through this panel.",
+  "akkimariDescription" : "Cables and lights in panel, make it glow.",
 
   "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
   "health" : 8,

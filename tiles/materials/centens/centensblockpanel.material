@@ -8,9 +8,10 @@
   "description" : "A lightweight but incredibly strong metal panel.",
   "glitchDescription" : "Fascinated. This metal panel is stronger and lighter than anything I've encountered before.",
   "floranDescription" : "Floran is confused. Metal isss light and so sstrong Floran can't scratch it...",
-  "novakidDescription" : "I'm baffled by how light and strong this 'ere metal here.",
+  "novakidDescription" : "I'm baffled by how light and strong this 'ere metal is.",
   
   "drodenDescription" : "Analysis complete. Centensian metal panel detected.",
+  "akkimariDescription" : "Panel made by god-makers.",
 
   "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
   "health" : 10,

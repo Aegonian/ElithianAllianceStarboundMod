@@ -1,723 +1,876 @@
 [
-	//AVIKAN DIALOGUE
-	{
-		"op": "add",
-		"path": "/merchantStart/avikan",
-		"value": {
-			"default" : [
-				"Welcome to my shop, traveller.",
-				"Wish to trade, traveller?",
-				"Greetings, traveller! Let us trade!",
-				"Have a look at my humble goods, will you?"
-			],
-			"avikan" : [
-				"Would you like to trade, Captain?",
-				"Welcome to my shop, Captain.",
-				"I'd be honoured to show you my wares.",
-				"Captain! Would you be interested in a trade?"
-			],
-			"glitch" : [
-				"I'll show you my wares, machine, but only because I need the coin.",
-				"Do you wish to trade, machine?",
-				"I'm not too fond of machines, but you can have a look at my wares if you wish.",
-				"My shop is open to you, machine."
-			],
-			"trink" : [
-				"I'll show you my wares, machine, but only because I need the coin.",
-				"Do you wish to trade, machine?",
-				"I'm not too fond of machines, but you can have a look at my wares if you wish.",
-				"My shop is open to you, machine."
-			],
-			"droden" : [
-				"I'll show you my wares, machine, but only because I need the coin.",
-				"Do you wish to trade, machine?",
-				"I'm not too fond of machines, but you can have a look at my wares if you wish.",
-				"My shop is open to you, machine."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/merchantEnd/avikan",
-		"value": {
-			"default" : [
-				"Come back any time, traveller!",
-				"Return whenever you need more goods, traveller.",
-				"I'll be here if you ever need anything else.",
-				"Rhadeis will lead you back to my shop again. Until then, traveller."
-			],
-			"avikan" : [
-				"Come back any time, Captain!",
-				"I'll be here if you ever need my wares again, Captain.",
-				"Thank you for shopping here, Captain.",
-				"Rhadeis guides you on your journeys, Captain."
-			],
-			"glitch" : [
-				"Good doing business, machine.",
-				"You'll return with more goods, yes?",
-				"I'll be here if you need to trade again, machine.",
-				"Are you done trading, then?"
-			],
-			"trink" : [
-				"Good doing business, machine.",
-				"You'll return with more goods, yes?",
-				"I'll be here if you need to trade again, machine.",
-				"Are you done trading, then?"
-			],
-			"droden" : [
-				"I hope you found what you were looking for.",
-				"I'll be here if you need more goods, Droden.",
-				"Goodbye, Droden.",
-				"Thank you for your transactions, Droden."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/follow/avikan",
-		"value": {
-			"default" : [
-				"Let me take you to my shop, traveller.",
-				"Follow me to my shop, traveller."
-			],
-			"avikan" : [
-				"I'll show you to my shop, Captain.",
-				"My supplies are in my shop, Captain. Allow me to guide you."
-			],
-			"glitch" : [
-				"My shop is this way, machine.",
-				"You can follow me to my shop now, machine."
-			],
-			"trink" : [
-				"My shop is this way, machine.",
-				"You can follow me to my shop now, machine."
-			],
-			"droden" : [
-				"Follow me to my shop, Droden.",
-				"My supplies are this way, Droden."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/welcome/avikan",
-		"value": {
-			"default" : [
-				"Here we are. Now let's do some trading!",
-				"This is my shop, traveller. Welcome!"
-			],
-			"avikan" : [
-				"Here we are. Welcome to my shop, Captain!",
-				"Welcome to my humble shop, Captain!"
-			],
-			"glitch" : [
-				"Let's trade then, machine.",
-				"Don't break anything, machine."
-			],
-			"trink" : [
-				"Let's trade then, machine.",
-				"Don't break anything, machine."
-			],
-			"droden" : [
-				"We've reached our destination, Droden. Let's trade.",
-				"These are my supplies. Let's trade."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/tout/avikan",
-		"value": {
-			"default" : [
-				"The best wares for the best prices!",
-				"Looking to trade? The best wares are right here!",
-				"Items from Kadavan, for sale right here!",
-				"Nothing but the best hand-crafted items here!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/tagCriteria/avikan",
-		"value": {
-			"default" : [
-				"Who moved my stuff? I want it back the way it was!",
-				"Something isn't not right here.",
-				"My room is all messed up...",
-				"Something changed here. I don't like it.",
-				"I should file a complaint. Someone messed up my room."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/enclosedArea/avikan",
-		"value": {
-			"default" : [
-				"My home has been damaged. I need repairs!",
-				"Someone broke my walls. Can you fix it?",
-				"I'm filing a complaint about home damage.",
-				"My home is in need of repairs.",
-				"Where can I file a request for home repairs?"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/otherDeed/avikan",
-		"value": {
-			"default" : [
-				"Is someone else moving into this place? What about me?",
-				"I thought we agreed this place would be mine.",
-				"I don't mind sharing a home, but this wasn't part of our contract.",
-				"I'm filing a complaint. This place was supposed to be mine.",
-				"This must be a mistake. There's another deed in my home!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/severe/avikan",
-		"value": {
-			"default" : [
-				"Even the open desert is more comfortable than this place.",
-				"I miss Kadavan. This place is just no good.",
-				"I'm filing a complaint. This place won't do at all.",
-				"These conditions are no good. I'm thinking of moving.",
-				"By Rhadeis, this place is horrible."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/final/avikan",
-		"value": {
-			"default" : [
-				"I've had enough of this. I'm leaving.",
-				"I'm returning to the Nomada. At least there people care for each other.",
-				"That does it. I'm ending my contract.",
-				"By Rhadeis, this is some mess. I'm moving out.",
-				"I'm contacting the Nomada. It's time for me to leave this place."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/beacon/avikan",
-		"value": {
-			"default" : [
-				"You called for me?",
-				"Can I help you with something?",
-				"Greetings, friend. Did you need me?",
-				"Is there anything you'd like to discuss?",
-				"Vas Vha'leih, my friend."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/rent/avikan",
-		"value": {
-			"default" : [
-				"Here, take this! I've been very happy with your service.",
-				"The Nomada needs more people like you. Please, accept this token of gratitude.",
-				"Thank you for taking in a traveller like me. Please, take this.",
-				"You've been a good friend. Here, take this.",
-				"I've a small gift for you. A token of gratitude, however small."
-			]
-		}
-	},
-	
-	
-	
-	//TRINK DIALOGUE
-	{
-		"op": "add",
-		"path": "/merchantStart/trink",
-		"value": {
-			"default" : [
-				"Welcome to my shop, traveller.",
-				"Do you intend to trade, traveller?",
-				"You've come to the right place to trade!",
-				"Have a look at my wares. You won't be dissapointed."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/merchantEnd/trink",
-		"value": {
-			"default" : [
-				"Return soon, traveller!",
-				"I'll remain here if you need any more goods, traveller.",
-				"If you require more goods, do not hesitate to return here.",
-				"The Circuit thanks you for your contribution."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/follow/trink",
-		"value": {
-			"default" : [
-				"Allow me to show you to my shop, traveller.",
-				"Follow me to my shop, traveller."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/welcome/trink",
-		"value": {
-			"default" : [
-				"We've arrived at my shop. Let's trade.",
-				"Welcome to my shop, traveller."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/tout/trink",
-		"value": {
-			"default" : [
-				"All the supplies you need for your interstellar journeys, available right here!",
-				"I have all the supplies you'll ever need right here!",
-				"My shop is approved by the Alliance's Chamber of Unified Commerce!",
-				"The best items for sale right here!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/tagCriteria/trink",
-		"value": {
-			"default" : [
-				"There has been a change in my situation.",
-				"This room has changed...",
-				"Efficiency is below standards. A change has happened.",
-				"Something changed. I want it back the way it was.",
-				"Satisfaction levels are plummeting."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/enclosedArea/trink",
-		"value": {
-			"default" : [
-				"My home requires repairs!",
-				"Efficiency is below standards. This area is no longer enclosed.",
-				"The walls have sustained damage. They require repairs.",
-				"This place is in need of repairs.",
-				"I was not built for construction. I need someone to fix my walls."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/otherDeed/trink",
-		"value": {
-			"default" : [
-				"I prefer not to share this place with anyone else.",
-				"An agreement was reached - I was to live here on my own.",
-				"Moving someone else into this home is a breach of contract.",
-				"This wasn't part of the deal. This place was supposed to be mine.",
-				"Another deed has appeared in my home. This must be a mistake."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/severe/trink",
-		"value": {
-			"default" : [
-				"Even the ice sheets of Icicle are more comfortable than this place.",
-				"If my complaints are not heeded, I shall return to the Circuit.",
-				"This place no longer meets my standards. Perhaps I should move out.",
-				"I cannot reach optimal efficiency in this place. Perhaps it is time to leave.",
-				"If this situation stays as bad as it is now, I'll be forced to leave."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/final/trink",
-		"value": {
-			"default" : [
-				"I am extremely unsatisfied with this place. I am leaving.",
-				"I am returning to the Circuit.",
-				"Efficiency has reached a minimal. I am leaving.",
-				"This place isn't meeting my standards. I am forced to leave it.",
-				"The time has come for me to leave."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/beacon/trink",
-		"value": {
-			"default" : [
-				"Did you require my aid?",
-				"Did you call for me?",
-				"Did you need to talk?",
-				"Are my services required?",
-				"Hello again."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/rent/trink",
-		"value": {
-			"default" : [
-				"Take this. It is a token of my gratitude.",
-				"You have been kind to me. Take this.",
-				"You've been incredibly helpful. Here's a gift for you.",
-				"A gift, for your troubles.",
-				"For all you have done for me, take this."
-			]
-		}
-	},
-	
-	
-	
-	//DRODEN DIALOGUE
-	{
-		"op": "add",
-		"path": "/merchantStart/droden",
-		"value": {
-			"default" : [
-				"Please browse wares.",
-				"Presenting wares. Please consider purchase.",
-				"This unit offers resources.",
-				"Your contributions are appreciated."
-			],
-			"avikan" : [
-				"Captain. Please browse wares.",
-				"Presenting wares. Please consider purchase.",
-				"This unit offers resources.",
-				"Your contributions are appreciated."
-			],
-			"droden" : [
-				"Initialising sales procedures.",
-				"Presenting wares. Please consider purchase.",
-				"This unit offers resources.",
-				"Your contributions are appreciated."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/merchantEnd/droden",
-		"value": {
-			"default" : [
-				"Merchant state disengaged.",
-				"Please return soon.",
-				"Thanks you for your contribution.",
-				"This unit will remain here until your return."
-			],
-			"avikan" : [
-				"Please consider returning in the future, Captain.",
-				"Merchant state disengaged.",
-				"Finalizing sale. Thank you, Captain.",
-				"Vas Vha'leih."
-			],
-			"droden" : [
-				"Merchant state disengaged.",
-				"Please return soon.",
-				"Thanks you for your contribution.",
-				"This unit will remain here until your return."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/follow/droden",
-		"value": {
-			"default" : [
-				"Follow unit to store.",
-				"Unit is moving towards wares. Please follow."
-			],
-			"avikan" : [
-				"Please follow this unit to the store, Captain.",
-				"Supplies are elsewhere. Please follow."
-			],
-			"droden" : [
-				"Follow unit to store.",
-				"Unit is moving towards wares. Please follow."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/welcome/droden",
-		"value": {
-			"default" : [
-				"Unit has reached store. Please engage in trading.",
-				"Unit has arrived. Trading now enabled."
-			],
-			"avikan" : [
-				"Unit has reached store. Please engage in trading.",
-				"Unit has arrived. Trading now enabled."
-			],
-			"glitch" : [
-				"Unit has reached store. Please engage in trading.",
-				"Unit has arrived. Trading now enabled."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/tout/droden",
-		"value": {
-			"default" : [
-				"Resources available. Please consider purchase.",
-				"Items for sale. Please trade.",
-				"This unit offers resources. Please consider purchase.",
-				"This unit is authorised to sell items. Please consider trading."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/tagCriteria/droden",
-		"value": {
-			"default" : [
-				"Housing situation changed.",
-				"Unsatisfied. Conditions have changed.",
-				"Change detected. Unsatisfied.",
-				"Filing complaint. Situations has changed.",
-				"Error. Surroundings have changed."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/enclosedArea/droden",
-		"value": {
-			"default" : [
-				"Home safety compromised.",
-				"Requesting repairs.",
-				"Repairs are required.",
-				"Walls are compromised. Complaining.",
-				"Filing request for home repairs."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/otherDeed/droden",
-		"value": {
-			"default" : [
-				"Detected additional deed. Unsatisfied.",
-				"Detected additional deed. Complaining.",
-				"Breach of contract detected. Please remove additional deeds.",
-				"Requesting removal of additional deeds.",
-				"Error. Detected additional deed."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/severe/droden",
-		"value": {
-			"default" : [
-				"Preparing for departure. Unsatisfied with service.",
-				"This unit is unsatisfied. Preparing for departure.",
-				"Filing complaint. This home is below universal standards.",
-				"Unsatisfied. Preparing to leave.",
-				"Service unsatisfactory."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/final/droden",
-		"value": {
-			"default" : [
-				"Departing.",
-				"Requesting Nomada pickup.",
-				"Ending contract.",
-				"This unit is unsatisfied. Leaving home.",
-				"Commencing departure."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/beacon/droden",
-		"value": {
-			"default" : [
-				"This unit has received your call.",
-				"Do you have need of this unit's services?",
-				"Call received. Unit has arrived as requested.",
-				"Call heeded. Is this unit needed?",
-				"Vas Vha'leih."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/rent/droden",
-		"value": {
-			"default" : [
-				"Satisfied with service. Presenting gift.",
-				"Presenting gift. Your service has been admirable.",
-				"Your actions deserve a reward. Take this.",
-				"Your have been meritful. Presenting gift.",
-				"Presenting a token of grattude. Take it."
-			]
-		}
-	},
-	
-	
-	
-	//AEGI DIALOGUE
-	{
-		"op": "add",
-		"path": "/merchantStart/aegi",
-		"value": {
-			"default" : [
-				"Come and have a look!",
-				"I'm sure you'll find what you're looking for.",
-				"Have a look, I have plenty of items for sale.",
-				"Have a look at my wares, will you?"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/merchantEnd/aegi",
-		"value": {
-			"default" : [
-				"You'll know where I'll be if you need anything else!",
-				"Come back any time.",
-				"Do come by again!",
-				"Remember me next time you need supplies!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/follow/aegi",
-		"value": {
-			"default" : [
-				"Come, follow me to my shop.",
-				"My shop is this way."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/welcome/aegi",
-		"value": {
-			"default" : [
-				"Here we are. Were you looking for anything specific?",
-				"Welcome to my shop!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/tout/aegi",
-		"value": {
-			"default" : [
-				"I've got the best wares money can buy!",
-				"The best wares for the best prices!",
-				"I can get whatever you need!",
-				"Nothing but the best for my customers!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/tagCriteria/aegi",
-		"value": {
-			"default" : [
-				"Someone moved my stuff!",
-				"Something's wrong here...",
-				"My room is all messed up!",
-				"I don't like these changes.",
-				"Someone messed up my place!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/enclosedArea/aegi",
-		"value": {
-			"default" : [
-				"The walls came down!",
-				"Can you please fix my house? The walls are broken!",
-				"My place has been damaged! Can you fix it?",
-				"This place is in need of repairs.",
-				"Someone needs to look into these broken walls."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/otherDeed/avikan",
-		"value": {
-			"default" : [
-				"What's with this second deed? This was supposed to be my place!",
-				"Wasn't this place supposed to be all mine?",
-				"The contract didn't mention a second inhabitant.",
-				"Hey, what's this!? I never agreed to living together with someone else.",
-				"There's been a mistake, this place was supposed to be mine!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/severe/aegi",
-		"value": {
-			"default" : [
-				"This place just doesn't feel like home any more...",
-				"I think I'm moving back to Elithia.",
-				"I don't like it here any longer.",
-				"If this doesn't get better soon, I'm moving out.",
-				"Even the journey here was more comfortable than this stupid place."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/final/avikan",
-		"value": {
-			"default" : [
-				"I've had it with this place. I'm leaving.",
-				"I'm moving out. This place has become an absolute mess.",
-				"That's it, I'm leaving this place.",
-				"I'm heading back to my parent's home.",
-				"This place disgusts me. I'm out of here."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/beacon/aegi",
-		"value": {
-			"default" : [
-				"Did you call for me?",
-				"Can I help?",
-				"Did you need me?",
-				"Hey! What did you call me for?",
-				"Want to talk?"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/rent/aegi",
-		"value": {
-			"default" : [
-				"You're an excellent landlord. Here, take this.",
-				"I think you'll like this!",
-				"The house is great! Please, take this.",
-				"I have something for you!",
-				"Keep up the great service, and I'll keep paying my rent."
-			]
-		}
+  //===================================================================================================================================
+  // AVIKAN DIALOGUE
+  //===================================================================================================================================
+  {
+	"op": "add",
+	"path": "/merchantStart/avikan",
+	"value": {
+	  "default" : [
+		"Welcome to my shop, traveller.",
+		"Wish to trade, traveller?",
+		"Greetings, traveller! Let us trade!",
+		"Have a look at my humble goods, will you?"
+	  ],
+	  "avikan" : [
+		"Would you like to trade, Captain?",
+		"Welcome to my shop, Captain.",
+		"I'd be honoured to show you my wares.",
+		"Captain! Would you be interested in a trade?"
+	  ],
+	  "glitch" : [
+		"I'll show you my wares, machine, but only because I need the coin.",
+		"Do you wish to trade, machine?",
+		"I'm not too fond of machines, but you can have a look at my wares if you wish.",
+		"My shop is open to you, machine."
+	  ],
+	  "trink" : [
+		"I'll show you my wares, machine, but only because I need the coin.",
+		"Do you wish to trade, machine?",
+		"I'm not too fond of machines, but you can have a look at my wares if you wish.",
+		"My shop is open to you, machine."
+	  ],
+	  "droden" : [
+		"I'll show you my wares, machine, but only because I need the coin.",
+		"Do you wish to trade, machine?",
+		"I'm not too fond of machines, but you can have a look at my wares if you wish.",
+		"My shop is open to you, machine."
+	  ]
 	}
+  },
+  {
+	"op": "add",
+	"path": "/merchantEnd/avikan",
+	"value": {
+	  "default" : [
+		"Come back any time, traveller!",
+		"Return whenever you need more goods, traveller.",
+		"I'll be here if you ever need anything else.",
+		"Rhadeis will lead you back to my shop again. Until then, traveller."
+	  ],
+	  "avikan" : [
+		"Come back any time, Captain!",
+		"I'll be here if you ever need my wares again, Captain.",
+		"Thank you for shopping here, Captain.",
+		"Rhadeis guides you on your journeys, Captain."
+	  ],
+	  "glitch" : [
+		"Good doing business, machine.",
+		"You'll return with more goods, yes?",
+		"I'll be here if you need to trade again, machine.",
+		"Are you done trading, then?"
+	  ],
+	  "trink" : [
+		"Good doing business, machine.",
+		"You'll return with more goods, yes?",
+		"I'll be here if you need to trade again, machine.",
+		"Are you done trading, then?"
+	  ],
+	  "droden" : [
+		"I hope you found what you were looking for.",
+		"I'll be here if you need more goods, Droden.",
+		"Goodbye, Droden.",
+		"Thank you for your transactions, Droden."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/follow/avikan",
+	"value": {
+	  "default" : [
+		"Let me take you to my shop, traveller.",
+		"Follow me to my shop, traveller."
+	  ],
+	  "avikan" : [
+		"I'll show you to my shop, Captain.",
+		"My supplies are in my shop, Captain. Allow me to guide you."
+	  ],
+	  "glitch" : [
+		"My shop is this way, machine.",
+		"You can follow me to my shop now, machine."
+	  ],
+	  "trink" : [
+		"My shop is this way, machine.",
+		"You can follow me to my shop now, machine."
+	  ],
+	  "droden" : [
+		"Follow me to my shop, Droden.",
+		"My supplies are this way, Droden."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/welcome/avikan",
+	"value": {
+	  "default" : [
+		"Here we are. Now let's do some trading!",
+		"This is my shop, traveller. Welcome!"
+	  ],
+	  "avikan" : [
+		"Here we are. Welcome to my shop, Captain!",
+		"Welcome to my humble shop, Captain!"
+	  ],
+	  "glitch" : [
+		"Let's trade then, machine.",
+		"Don't break anything, machine."
+	  ],
+	  "trink" : [
+		"Let's trade then, machine.",
+		"Don't break anything, machine."
+	  ],
+	  "droden" : [
+		"We've reached our destination, Droden. Let's trade.",
+		"These are my supplies. Let's trade."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/tout/avikan",
+	"value": {
+	  "default" : [
+		"The best wares for the best prices!",
+		"Looking to trade? The best wares are right here!",
+		"Items from Kadavan, for sale right here!",
+		"Nothing but the best hand-crafted items here!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/tagCriteria/avikan",
+	"value": {
+	  "default" : [
+		"Who moved my stuff? I want it back the way it was!",
+		"Something isn't not right here.",
+		"My room is all messed up...",
+		"Something changed here. I don't like it.",
+		"I should file a complaint. Someone messed up my room."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/enclosedArea/avikan",
+	"value": {
+	  "default" : [
+		"My home has been damaged. I need repairs!",
+		"Someone broke my walls. Can you fix it?",
+		"I'm filing a complaint about home damage.",
+		"My home is in need of repairs.",
+		"Where can I file a request for home repairs?"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/otherDeed/avikan",
+	"value": {
+	  "default" : [
+		"Is someone else moving into this place? What about me?",
+		"I thought we agreed this place would be mine.",
+		"I don't mind sharing a home, but this wasn't part of our contract.",
+		"I'm filing a complaint. This place was supposed to be mine.",
+		"This must be a mistake. There's another deed in my home!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/severe/avikan",
+	"value": {
+	  "default" : [
+		"Even the open desert is more comfortable than this place.",
+		"I miss Kadavan. This place is just no good.",
+		"I'm filing a complaint. This place won't do at all.",
+		"These conditions are no good. I'm thinking of moving.",
+		"By Rhadeis, this place is horrible."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/final/avikan",
+	"value": {
+	  "default" : [
+		"I've had enough of this. I'm leaving.",
+		"I'm returning to the Nomada. At least there people care for each other.",
+		"That does it. I'm ending my contract.",
+		"By Rhadeis, this is some mess. I'm moving out.",
+		"I'm contacting the Nomada. It's time for me to leave this place."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/beacon/avikan",
+	"value": {
+	  "default" : [
+		"You called for me?",
+		"Can I help you with something?",
+		"Greetings, friend. Did you need me?",
+		"Is there anything you'd like to discuss?",
+		"Vas Vha'leih, my friend."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/rent/avikan",
+	"value": {
+	  "default" : [
+		"Here, take this! I've been very happy with your service.",
+		"The Nomada needs more people like you. Please, accept this token of gratitude.",
+		"Thank you for taking in a traveller like me. Please, take this.",
+		"You've been a good friend. Here, take this.",
+		"I've a small gift for you. A token of gratitude, however small."
+	  ]
+	}
+  },
+  
+  //===================================================================================================================================
+  // TRINK DIALOGUE
+  //===================================================================================================================================
+  {
+	"op": "add",
+	"path": "/merchantStart/trink",
+	"value": {
+	  "default" : [
+		"Welcome to my shop, traveller.",
+		"Do you intend to trade, traveller?",
+		"You've come to the right place to trade!",
+		"Have a look at my wares. You won't be dissapointed."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/merchantEnd/trink",
+	"value": {
+	  "default" : [
+		"Return soon, traveller!",
+		"I'll remain here if you need any more goods, traveller.",
+		"If you require more goods, do not hesitate to return here.",
+		"The Circuit thanks you for your contribution."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/follow/trink",
+	"value": {
+	  "default" : [
+		"Allow me to show you to my shop, traveller.",
+		"Follow me to my shop, traveller."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/welcome/trink",
+	"value": {
+	  "default" : [
+		"We've arrived at my shop. Let's trade.",
+		"Welcome to my shop, traveller."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/tout/trink",
+	"value": {
+	  "default" : [
+		"All the supplies you need for your interstellar journeys, available right here!",
+		"I have all the supplies you'll ever need right here!",
+		"My shop is approved by the Alliance's Chamber of Unified Commerce!",
+		"The best items for sale right here!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/tagCriteria/trink",
+	"value": {
+	  "default" : [
+		"There has been a change in my situation.",
+		"This room has changed...",
+		"Efficiency is below standards. A change has happened.",
+		"Something changed. I want it back the way it was.",
+		"Satisfaction levels are plummeting."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/enclosedArea/trink",
+	"value": {
+	  "default" : [
+		"My home requires repairs!",
+		"Efficiency is below standards. This area is no longer enclosed.",
+		"The walls have sustained damage. They require repairs.",
+		"This place is in need of repairs.",
+		"I was not built for construction. I need someone to fix my walls."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/otherDeed/trink",
+	"value": {
+	  "default" : [
+		"I prefer not to share this place with anyone else.",
+		"An agreement was reached - I was to live here on my own.",
+		"Moving someone else into this home is a breach of contract.",
+		"This wasn't part of the deal. This place was supposed to be mine.",
+		"Another deed has appeared in my home. This must be a mistake."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/severe/trink",
+	"value": {
+	  "default" : [
+		"Even the ice sheets of Icicle are more comfortable than this place.",
+		"If my complaints are not heeded, I shall return to the Circuit.",
+		"This place no longer meets my standards. Perhaps I should move out.",
+		"I cannot reach optimal efficiency in this place. Perhaps it is time to leave.",
+		"If this situation stays as bad as it is now, I'll be forced to leave."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/final/trink",
+	"value": {
+	  "default" : [
+		"I am extremely unsatisfied with this place. I am leaving.",
+		"I am returning to the Circuit.",
+		"Efficiency has reached a minimal. I am leaving.",
+		"This place isn't meeting my standards. I am forced to leave it.",
+		"The time has come for me to leave."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/beacon/trink",
+	"value": {
+	  "default" : [
+		"Did you require my aid?",
+		"Did you call for me?",
+		"Did you need to talk?",
+		"Are my services required?",
+		"Hello again."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/rent/trink",
+	"value": {
+	  "default" : [
+		"Take this. It is a token of my gratitude.",
+		"You have been kind to me. Take this.",
+		"You've been incredibly helpful. Here's a gift for you.",
+		"A gift, for your troubles.",
+		"For all you have done for me, take this."
+	  ]
+	}
+  },
+  
+  //===================================================================================================================================
+  // DRODEN DIALOGUE
+  //===================================================================================================================================
+  {
+	"op": "add",
+	"path": "/merchantStart/droden",
+	"value": {
+	  "default" : [
+		"Please browse wares.",
+		"Presenting wares. Please consider purchase.",
+		"This unit offers resources.",
+		"Your contributions are appreciated."
+	  ],
+	  "avikan" : [
+		"Captain. Please browse wares.",
+		"Presenting wares. Please consider purchase.",
+		"This unit offers resources.",
+		"Your contributions are appreciated."
+	  ],
+	  "droden" : [
+		"Initialising sales procedures.",
+		"Presenting wares. Please consider purchase.",
+		"This unit offers resources.",
+		"Your contributions are appreciated."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/merchantEnd/droden",
+	"value": {
+	  "default" : [
+		"Merchant state disengaged.",
+		"Please return soon.",
+		"Thanks you for your contribution.",
+		"This unit will remain here until your return."
+	  ],
+	  "avikan" : [
+		"Please consider returning in the future, Captain.",
+		"Merchant state disengaged.",
+		"Finalizing sale. Thank you, Captain.",
+		"Vas Vha'leih."
+	  ],
+	  "droden" : [
+		"Merchant state disengaged.",
+		"Please return soon.",
+		"Thanks you for your contribution.",
+		"This unit will remain here until your return."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/follow/droden",
+	"value": {
+	  "default" : [
+		"Follow unit to store.",
+		"Unit is moving towards wares. Please follow."
+	  ],
+	  "avikan" : [
+		"Please follow this unit to the store, Captain.",
+		"Supplies are elsewhere. Please follow."
+	  ],
+	  "droden" : [
+		"Follow unit to store.",
+		"Unit is moving towards wares. Please follow."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/welcome/droden",
+	"value": {
+	  "default" : [
+		"Unit has reached store. Please engage in trading.",
+		"Unit has arrived. Trading now enabled."
+	  ],
+	  "avikan" : [
+		"Unit has reached store. Please engage in trading.",
+		"Unit has arrived. Trading now enabled."
+	  ],
+	  "glitch" : [
+		"Unit has reached store. Please engage in trading.",
+		"Unit has arrived. Trading now enabled."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/tout/droden",
+	"value": {
+	  "default" : [
+		"Resources available. Please consider purchase.",
+		"Items for sale. Please trade.",
+		"This unit offers resources. Please consider purchase.",
+		"This unit is authorised to sell items. Please consider trading."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/tagCriteria/droden",
+	"value": {
+	  "default" : [
+		"Housing situation changed.",
+		"Unsatisfied. Conditions have changed.",
+		"Change detected. Unsatisfied.",
+		"Filing complaint. Situations has changed.",
+		"Error. Surroundings have changed."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/enclosedArea/droden",
+	"value": {
+	  "default" : [
+		"Home safety compromised.",
+		"Requesting repairs.",
+		"Repairs are required.",
+		"Walls are compromised. Complaining.",
+		"Filing request for home repairs."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/otherDeed/droden",
+	"value": {
+	  "default" : [
+		"Detected additional deed. Unsatisfied.",
+		"Detected additional deed. Complaining.",
+		"Breach of contract detected. Please remove additional deeds.",
+		"Requesting removal of additional deeds.",
+		"Error. Detected additional deed."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/severe/droden",
+	"value": {
+	  "default" : [
+		"Preparing for departure. Unsatisfied with service.",
+		"This unit is unsatisfied. Preparing for departure.",
+		"Filing complaint. This home is below universal standards.",
+		"Unsatisfied. Preparing to leave.",
+		"Service unsatisfactory."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/final/droden",
+	"value": {
+	  "default" : [
+		"Departing.",
+		"Requesting Nomada pickup.",
+		"Ending contract.",
+		"This unit is unsatisfied. Leaving home.",
+		"Commencing departure."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/beacon/droden",
+	"value": {
+	  "default" : [
+		"This unit has received your call.",
+		"Do you have need of this unit's services?",
+		"Call received. Unit has arrived as requested.",
+		"Call heeded. Is this unit needed?",
+		"Vas Vha'leih."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/rent/droden",
+	"value": {
+	  "default" : [
+		"Satisfied with service. Presenting gift.",
+		"Presenting gift. Your service has been admirable.",
+		"Your actions deserve a reward. Take this.",
+		"Your have been meritful. Presenting gift.",
+		"Presenting a token of grattude. Take it."
+	  ]
+	}
+  },
+  
+  //===================================================================================================================================
+  // AEGI DIALOGUE
+  //===================================================================================================================================
+  {
+	"op": "add",
+	"path": "/merchantStart/aegi",
+	"value": {
+	  "default" : [
+		"Come and have a look!",
+		"I'm sure you'll find what you're looking for.",
+		"Have a look, I have plenty of items for sale.",
+		"Have a look at my wares, will you?"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/merchantEnd/aegi",
+	"value": {
+	  "default" : [
+		"You'll know where I'll be if you need anything else!",
+		"Come back any time.",
+		"Do come by again!",
+		"Remember me next time you need supplies!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/follow/aegi",
+	"value": {
+	  "default" : [
+		"Come, follow me to my shop.",
+		"My shop is this way."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/welcome/aegi",
+	"value": {
+	  "default" : [
+		"Here we are. Were you looking for anything specific?",
+		"Welcome to my shop!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/tout/aegi",
+	"value": {
+	  "default" : [
+		"I've got the best wares money can buy!",
+		"The best wares for the best prices!",
+		"I can get whatever you need!",
+		"Nothing but the best for my customers!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/tagCriteria/aegi",
+	"value": {
+	  "default" : [
+		"Someone moved my stuff!",
+		"Something's wrong here...",
+		"My room is all messed up!",
+		"I don't like these changes.",
+		"Someone messed up my place!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/enclosedArea/aegi",
+	"value": {
+	  "default" : [
+		"The walls came down!",
+		"Can you please fix my house? The walls are broken!",
+		"My place has been damaged! Can you fix it?",
+		"This place is in need of repairs.",
+		"Someone needs to look into these broken walls."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/otherDeed/aegi",
+	"value": {
+	  "default" : [
+		"What's with this second deed? This was supposed to be my place!",
+		"Wasn't this place supposed to be all mine?",
+		"The contract didn't mention a second inhabitant.",
+		"Hey, what's this!? I never agreed to living together with someone else.",
+		"There's been a mistake, this place was supposed to be mine!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/severe/aegi",
+	"value": {
+	  "default" : [
+		"This place just doesn't feel like home any more...",
+		"I think I'm moving back to Elithia.",
+		"I don't like it here any longer.",
+		"If this doesn't get better soon, I'm moving out.",
+		"Even the journey here was more comfortable than this stupid place."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/final/aegi",
+	"value": {
+	  "default" : [
+		"I've had it with this place. I'm leaving.",
+		"I'm moving out. This place has become an absolute mess.",
+		"That's it, I'm leaving this place.",
+		"I'm heading back to my parent's home.",
+		"This place disgusts me. I'm out of here."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/beacon/aegi",
+	"value": {
+	  "default" : [
+		"Did you call for me?",
+		"Can I help?",
+		"Did you need me?",
+		"Hey! What did you call me for?",
+		"Want to talk?"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/rent/aegi",
+	"value": {
+	  "default" : [
+		"You're an excellent landlord. Here, take this.",
+		"I think you'll like this!",
+		"The house is great! Please, take this.",
+		"I have something for you!",
+		"Keep up the great service, and I'll keep paying my rent."
+	  ]
+	}
+  },
+  
+  //===================================================================================================================================
+  // AKKIMARI DIALOGUE
+  //===================================================================================================================================
+  {
+	"op": "add",
+	"path": "/merchantStart/akkimari",
+	"value": {
+	  "default" : [
+		"Akki sell things, you buy!",
+		"Come see, come see! Akki sell things-many!",
+		"You look at wares-Akki, or Akki get mad.",
+		"Akki want you to buy things-many. Akki sell wares-good!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/merchantEnd/akkimari",
+	"value": {
+	  "default" : [
+		"Come back soon-soon! Akki wait for you!",
+		"Akki want to sell more. Come back soon.",
+		"Buy things-more soon!",
+		"Akki have things-more to sell!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/follow/akkimari",
+	"value": {
+	  "default" : [
+		"Follow Akki to supplies-Akki. Purchase items there.",
+		"Shop-Akki this way. Follow."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/welcome/akkimari",
+	"value": {
+	  "default" : [
+		"Supplies-Akki here! What you need?",
+		"Welcome to shop-Akki!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/tout/akkimari",
+	"value": {
+	  "default" : [
+		"Akki got wares-best! Prices-best, too!",
+		"Akki sell things-many! COme look!",
+		"Come buy from Akki! Akki promise only sell wares-good!",
+		"Akki have things-best! Buy them now!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/tagCriteria/akkimari",
+	"value": {
+	  "default" : [
+		"Akki mad! Kekki moved stuff-Akki...",
+		"Something wrong here. Akki missing something.",
+		"Room-Akki all messed up!",
+		"Akki no like the change! Change it back, now!",
+		"Kekki ruined home-Akki!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/enclosedArea/akkimari",
+	"value": {
+	  "default" : [
+		"Home-Akki broken! Need repairs!",
+		"You need fix home-Akki, now!",
+		"Walls-broken, need fixing...",
+		"You repair home-Akki now. Akki mad!",
+		"Wall-broken, bad things come into home-Akki. Akki no like."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/otherDeed/akkimari",
+	"value": {
+	  "default" : [
+		"Akki no want to share home-Akki!",
+		"Home-Akki for Akki only. Kill other tenants if Akki must!",
+		"Akki agreed to live alone. No want other tenant.",
+		"Akki mad, Akki no want to live together.",
+		"You remove other deed! Akki want to live alone."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/severe/akkimari",
+	"value": {
+	  "default" : [
+		"Home-Akki home no more...",
+		"Akki gonna go back to scavenging. Akki no like home no more.",
+		"Akki mad, want to leave place-this...",
+		"Akki gonna leave soon if things no change.",
+		"You houselord-bad. Akki no like place-this."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/final/akkimari",
+	"value": {
+	  "default" : [
+		"Akki leaving. Mad at you.",
+		"Home-Akki home no more. Akki finding other home.",
+		"Gah, Akki hate place-this! .",
+		"Akki disgusted. Home-awful, Akki leaving.",
+		"Home-bad, Akki no like living here. Akki go back to scavenging."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/beacon/akkimari",
+	"value": {
+	  "default" : [
+		"You call, Akki come!",
+		"Call for Akki, Akki here.",
+		"Call for Akki?",
+		"Yeeesss?",
+		"What you want? Akki listen!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/rent/akkimari",
+	"value": {
+	  "default" : [
+		"Akki pleased with home-mine. You take reward!",
+		"Home-mine make Akki happy. Akki-happy give gifts!",
+		"You make house-good. Akki give gift.",
+		"Akki pleased, it true-true. Akki make you happy, too!",
+		"Akki pay rent, Akki tenant-good. Now go back to what Akki was doing."
+	  ]
+	}
+  }
 ]

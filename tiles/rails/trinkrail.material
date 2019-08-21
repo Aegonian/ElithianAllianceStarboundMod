@@ -13,7 +13,9 @@
   "glitchDescription" : "Pleased. The material this rail is made from makes it very strong.",
   "floranDescription" : "Shiny metal rails.",
   "novakidDescription" : "Some sturdy lookin' rails, gettin' the itch to ride 'em.",
+  
   "drodenDescription" : "Detected machine-built rail.",
+  "akkimariDescription" : "Akki want to bend rails-metal.",
 
   "renderTemplate" : "/tiles/railtemplate.config",
   "renderParameters" : {

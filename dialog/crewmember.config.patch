@@ -57,10 +57,10 @@
 	"path": "/converse/akkimari",
 	"value": {
 	  "default" : [
-		"What's up, boss?",
-		"Let's get out there!",
-		"I have your back, boss.",
-		"I'm with you."
+		"What you need?",
+		"Akki wanna go out and fight.",
+		"Akki support you. If you in need of help, Akki provide.",
+		"You need Akki?"
 	  ]
 	}
   },
@@ -70,10 +70,10 @@
 	"path": "/converse/thelean",
 	"value": {
 	  "default" : [
-		"What's up, boss?",
-		"Let's get out there!",
-		"I have your back, boss.",
-		"I'm with you."
+		"I have your back.",
+		"I'll follow you anywhere.",
+		"What are your instructions?",
+		"Just say the word."
 	  ]
 	}
   }
