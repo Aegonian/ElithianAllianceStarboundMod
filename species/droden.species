@@ -6,6 +6,8 @@
       "subTitle" : "Servants of the Avikan",
       "description" : "The Droden were created by the Avikan as expendable soldiers to use in their war against the Theleans. After their failed uprising during the Droden War, a ban was placed on the creation of new AIs, and nowadays only few true AI remain."
   },
+
+  "statusEffects" : [ "drodenlegionarmy" ],
   
   "playerSpecies" : true,
   "humanoidConfig" : "/species/types/thea-robotoid.config",

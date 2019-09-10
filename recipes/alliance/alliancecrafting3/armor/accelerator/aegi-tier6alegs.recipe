@@ -1,7 +1,7 @@
 {
   "input" : [
     { "item" : "aegi-tier5alegs", "count" : 1 },
-	{ "item" : "alliancemetaltier6", "count" : 10 },
+	{ "item" : "alliancemetaltier6", "count" : 4 },
     { "item" : "alliancecircuitry", "count" : 1 }
   ],
   "duration" : 5,

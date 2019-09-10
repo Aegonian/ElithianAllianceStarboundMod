@@ -1,0 +1,56 @@
+{
+  "itemName" : "akkimari-kraavaarblade",
+  "price" : 1500,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;A heavy Akkimari-built shieldblade inspired by Aeginian designs.",
+  "shortdescription" : "^orange;Kraavaar Blade^white;",
+  "tooltipKind" : "thea-sword-unique",
+  "category" : "Shieldblade",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","shieldblade","akkimari","theaUnique"],
+
+  "inventoryIcon" : "akkimari-kraavaarbladeicon.png",
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  //"collectablesOnPickup" : { "thea_weapons" : "akkimari-kraavaarblade" },
+  
+  "meritTokenValue" : 100,
+
+  "animation" : "akkimari-kraavaarblade.animation",
+  "animationParts" : {
+    "blade" : "akkimari-kraavaarblade.png",
+	"bladeFullbright" : "akkimari-kraavaarbladelights.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_broadsword.ogg" ],
+      "fire2" : [ "/sfx/melee/swing_shortsword.ogg" ],
+      "fire3" : [ "/sfx/melee/swing_spear.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "akkimariacid",
+  
+  //Makes the weapon draw in front of the arm
+  "handGrip" : "outside",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "thea-shieldbladecombo",
+  "primaryAbility" : {
+	"damageConfig" : {
+      "damageSourceKind" : "physical"
+    }
+  },
+  
+  "altAbilityType" : "thea-shieldbladedefend",
+  "altAbility" : {
+	"energyUsage" : 50
+  },
+
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+}

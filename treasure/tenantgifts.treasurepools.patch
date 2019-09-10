@@ -347,7 +347,7 @@
         {"weight" : 0.005, "pool" : "instrument"},
 		//ALLIANCE POOLS
         {"weight" : 0.1, "pool" : "allianceFoodGift"},
-        {"weight" : 0.3, "pool" : "allianceWeaponsGift"},
+        {"weight" : 0.3, "pool" : "alliancegeneratedweapons"},
         {"weight" : 0.1, "pool" : "allianceMaterialsGift"},
 		//ITEMS
         {"weight" : 0.05, "item" : "alliancecache"}
@@ -362,22 +362,6 @@
   //=========================== ALLIANCE POOLS ===========================
   {"op" : "add",
   "path" : "/allianceMaterialsGift",
-  "value" : [
-    [1, {
-      "pool" : [
-        {"weight" : 0.4, "item" : ["alliancemetal", 4] },
-		{"weight" : 0.3, "item" : ["alliancecloth", 3] },
-		{"weight" : 0.3, "item" : ["allianceballisticfiber", 3] }
-      ],
-      "poolRounds" : [
-        [1, 1]
-      ],
-      "allowDuplication" : false
-    } ] ]
-  },
-  
-  {"op" : "add",
-  "path" : "/allianceWeaponsGift",
   "value" : [
     [1, {
       "pool" : [
@@ -412,6 +396,67 @@
 		{"weight" : 0.2, "item" : "vahlberrybread" },
 		{"weight" : 0.2, "item" : "vahlberryjam" },
 		{"weight" : 0.2, "item" : "bakedborato" }
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    } ] ]
+  },
+  
+  //==================================================================================
+  // AKKIMARI
+  //==================================================================================
+  //=========================== AKKIMARI TENANTS ===========================
+  {"op" : "add",
+  "path" : "/akkimariGift",
+  "value" : [
+    [1, {
+      "pool" : [
+		//GENERIC POOLS
+        {"weight" : 0.4, "pool" : "tenantMoney"},
+        {"weight" : 0.145, "pool" : "healingItem"},
+        {"weight" : 0.005, "pool" : "instrument"},
+		//AKKIMARI POOLS
+        {"weight" : 0.2, "pool" : "akkimariFoodGift"},
+        {"weight" : 0.2, "pool" : "akkimariMaterialsGift"},
+		//ITEMS
+        {"weight" : 0.05, "item" : "akkimaricache"}
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    } ] ]
+  },
+  
+  //=========================== AKKIMARI POOLS ===========================
+  {"op" : "add",
+  "path" : "/akkimariMaterialsGift",
+  "value" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.4, "item" : ["akkimarimetal", 4] },
+		{"weight" : 0.4, "item" : ["akkimarisilk", 3] },
+		{"weight" : 0.1, "item" : ["akkimaribladeparts", 3] },
+		{"weight" : 0.1, "item" : ["akkimarigunparts", 3] }
+      ],
+      "poolRounds" : [
+        [1, 1]
+      ],
+      "allowDuplication" : false
+    } ] ]
+  },
+  
+  {"op" : "add",
+  "path" : "/akkimariFoodGift",
+  "value" : [
+    [1, {
+      "pool" : [
+		{"weight" : 0.1, "item" : "vrellipaste" },
+		{"weight" : 0.2, "item" : "achvassjelly" },
+		{"weight" : 0.2, "item" : "sagrassacrystals" },
+		{"weight" : 0.2, "item" : "sagrassamilk" }
       ],
       "poolRounds" : [
         [1, 1]

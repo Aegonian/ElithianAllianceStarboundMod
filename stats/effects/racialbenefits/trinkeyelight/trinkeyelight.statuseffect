@@ -11,5 +11,8 @@
     "trinkeyelight.lua"
   ],
 
-  "animationConfig" : "trinkeyelight.animation"
+  "animationConfig" : "trinkeyelight.animation",
+
+  "label" : "EYELIGHTS: Permanent headlights for exploring the dark",
+  "icon" : "/interface/statuses/racialbenefits/trinkeyelight.png"
 }

@@ -26,7 +26,7 @@
   //AKKIMARI
   {
     "op" : "add",
-    "path" : "/scriptConfig/giveSpeciesBlueprints/aegi",
+    "path" : "/scriptConfig/giveSpeciesBlueprints/akkimari",
     "value" : ["mechbodyakkimari"]
   }
 ]

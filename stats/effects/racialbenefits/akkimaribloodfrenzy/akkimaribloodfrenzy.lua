@@ -27,51 +27,71 @@ end
 
 
 function update(dt)
-  local damageNotifications, nextStep = status.inflictedDamageSince(self.queryDamageSince)
-  self.queryDamageSince = nextStep
+  if entity.entityType() == "player" then
+	local damageNotifications, nextStep = status.inflictedDamageSince(self.queryDamageSince)
+	self.queryDamageSince = nextStep
   
-  for _, notification in ipairs(damageNotifications) do
-	if notification.targetEntityId then
-	  if notification.hitType == "Kill" and world.entityType(notification.targetEntityId) == ("monster" or "npc") then
-		animator.burstParticleEmitter("initialBurst")
-		self.durationLeft = self.frenzyDuration
-		self.killCount = math.min(self.killsForMaxEffect, self.killCount + 1)
+	for _, notification in ipairs(damageNotifications) do
+	  if notification.targetEntityId then
+		if notification.hitType == "Kill" and world.entityType(notification.targetEntityId) == ("monster" or "npc") then
+		  animator.burstParticleEmitter("initialBurst")
+		  self.durationLeft = self.frenzyDuration
+		  self.killCount = math.min(self.killsForMaxEffect, self.killCount + 1)
+		end
 	  end
 	end
-  end
-  
-  self.durationLeft = math.max(0, self.durationLeft - dt)
-  if self.durationLeft > 0 and self.killCount > 0 then
-	--Calculate modifiers and animation parameters
-	local killCountFactor = self.killCount / self.killsForMaxEffect
-	local currentPowerModifier = ((self.maxPowerModifier - 1) * killCountFactor) + 1
-	local currentSpeedModifier = ((self.maxSpeedModifier - 1) * killCountFactor) + 1
-	local currentAirJumpModifier = ((self.maxAirJumpModifier - 1) * killCountFactor) + 1
-	local currentParticleEmissionRate = self.maxParticleEmissionRate * killCountFactor
 	
-	--world.debugText("Power Modifier: " .. currentPowerModifier, vec2.add(mcontroller.position(), {0,3}), "yellow")
-	--world.debugText("Speed Modifier: " .. currentSpeedModifier, vec2.add(mcontroller.position(), {0,4}), "yellow")
-	--world.debugText("Emission Rate: " .. currentParticleEmissionRate, vec2.add(mcontroller.position(), {0,5}), "yellow")
+	if not self.playerCompanionsPromise then
+	  self.playerCompanionsPromise = world.sendEntityMessage(entity.id(), "theaRequestCompanions")
+	  if self.playerCompanionsPromise then
+		if self.playerCompanionsPromise:finished() then
+		  local messageResult = self.playerCompanionsPromise:result()
+		  if messageResult then
+			sb.logInfo(sb.printJson(messageResult, 1))
+			
+			for _, playerCompanion in ipairs(messageResult) do
+			  sb.logInfo(playerCompanion.config.species)
+			end
+		  else
+			self.playerCompanionsPromise = nil
+		  end
+		end
+	  end
+	end
 	
-	--Modify player parameters
-	effect.setStatModifierGroup(self.statModifierGroup, {
-	  {stat = "powerMultiplier", effectiveMultiplier  = currentPowerModifier}
-	})
-	mcontroller.controlModifiers({
-	  speedModifier = currentSpeedModifier,
-	  airJumpModifier = currentAirJumpModifier
-	})
+	self.durationLeft = math.max(0, self.durationLeft - dt)
+	if self.durationLeft > 0 and self.killCount > 0 then
+	  --Calculate modifiers and animation parameters
+	  local killCountFactor = self.killCount / self.killsForMaxEffect
+	  local currentPowerModifier = ((self.maxPowerModifier - 1) * killCountFactor) + 1
+	  local currentSpeedModifier = ((self.maxSpeedModifier - 1) * killCountFactor) + 1
+	  local currentAirJumpModifier = ((self.maxAirJumpModifier - 1) * killCountFactor) + 1
+	  local currentParticleEmissionRate = self.maxParticleEmissionRate * killCountFactor
+	  
+	  --world.debugText("Power Modifier: " .. currentPowerModifier, vec2.add(mcontroller.position(), {0,3}), "yellow")
+	  --world.debugText("Speed Modifier: " .. currentSpeedModifier, vec2.add(mcontroller.position(), {0,4}), "yellow")
+	  --world.debugText("Emission Rate: " .. currentParticleEmissionRate, vec2.add(mcontroller.position(), {0,5}), "yellow")
 	
-	--Modify animation and directives
-	animator.setParticleEmitterEmissionRate("embers", currentParticleEmissionRate)
-	animator.setParticleEmitterActive("embers", true)
-  else
-	self.killCount = 0
-	animator.setParticleEmitterActive("embers", false)
+	  --Modify player parameters
+	  effect.setStatModifierGroup(self.statModifierGroup, {
+		{stat = "powerMultiplier", effectiveMultiplier  = currentPowerModifier}
+	  })
+	  mcontroller.controlModifiers({
+		speedModifier = currentSpeedModifier,
+		airJumpModifier = currentAirJumpModifier
+	  })
 	
-	effect.setStatModifierGroup(self.statModifierGroup, {
-	  {stat = "powerMultiplier", effectiveMultiplier  = 1.0}
-	})
+	  --Modify animation and directives
+	  animator.setParticleEmitterEmissionRate("embers", currentParticleEmissionRate)
+	  animator.setParticleEmitterActive("embers", true)
+	else
+	  self.killCount = 0
+	  animator.setParticleEmitterActive("embers", false)
+	
+	  effect.setStatModifierGroup(self.statModifierGroup, {
+		{stat = "powerMultiplier", effectiveMultiplier  = 1.0}
+	  })
+	end
   end
   
   --world.debugText("Duration: " .. self.durationLeft, vec2.add(mcontroller.position(), {0,1}), "yellow")

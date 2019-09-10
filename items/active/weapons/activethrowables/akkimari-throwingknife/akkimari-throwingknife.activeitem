@@ -53,28 +53,30 @@
         "weaponRotation" : -25,
 		"weaponOffset" : [-0.75, -0.75],
         "twoHanded" : false,
-
+		
         "allowRotate" : true,
         "allowFlip" : true,
-
+		
         "frontArmFrame" : "swimIdle.2",
         "backArmFrame" : "swimIdle.2"
       },
       "prepare" : {
         "duration" : 0.15,
-        "armRotation" : -150,
-        "weaponRotation" : 150,
+        "armRotation" : -200,
+        "weaponRotation" : 200,
         "twoHanded" : false,
-
+		
+		"smooth" : true,
+		
         "allowRotate" : true,
         "allowFlip" : true
       },
       "throw" : {
-        "duration" : 0.25,
+        "duration" : 0.15,
         "armRotation" : -10,
         "weaponRotation" : 10,
         "twoHanded" : false,
-
+		
         "allowRotate" : false,
         "allowFlip" : true
       }

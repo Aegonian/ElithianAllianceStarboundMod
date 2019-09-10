@@ -1,0 +1,12 @@
+{
+  "frameGrid" : {
+    "size" : [17, 48],
+    "dimensions" : [7, 4],
+    "names" : [
+      [ "frontidle", "frontactive.1", "frontactive.2", "frontactive.3" ],
+	  [ "backidle", "backactive.1", "backactive.2", "backactive.3" ],
+	  [ "frontdefend", "frontdefendactive.1", "frontdefendactive.2", "frontdefendactive.3" ],
+	  [ "backdefend", "backdefendactive.1", "backdefendactive.2", "backdefendactive.3" ]
+    ]
+  }
+}

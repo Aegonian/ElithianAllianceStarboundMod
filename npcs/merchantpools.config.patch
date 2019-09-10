@@ -896,6 +896,30 @@
 	},
 	
 	//=========================================================================================================
+	// AKKIMARI
+	//=========================================================================================================
+	{ "op" : "add", "path" : "/akkimarimaterials",
+		"value" : [
+			[ 0, [
+			  { "item": { "name": "akkimarimetal" }, "rarity": 0.5 },
+			  { "item": { "name": "akkimarigunparts" }, "rarity": 0.5 },
+			  { "item": { "name": "akkimaribladeparts" }, "rarity": 0.5 },
+			  { "item": { "name": "akkimariglassitem" }, "rarity": 0.5 },
+			  { "item": { "name": "akkimarisilk" }, "rarity": 0.5 }
+			] ]
+		]
+	},
+	{ "op" : "add", "path" : "/akkimarifarming",
+		"value" : [
+			[ 0, [
+			  { "item": { "name": "achvassseed" }, "rarity": 0.5 },
+			  { "item": { "name": "sagrassaseed" }, "rarity": 0.5 },
+			  { "item": { "name": "vrelliseed" }, "rarity": 0.5 }
+			] ]
+		]
+	},
+	
+	//=========================================================================================================
 	// TRINK
 	//=========================================================================================================
 	{ "op" : "add", "path" : "/trinkspace",

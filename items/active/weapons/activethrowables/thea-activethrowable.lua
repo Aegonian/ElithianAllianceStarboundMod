@@ -35,8 +35,22 @@ function TheaActiveThrowable:prepare()
   self.weapon:setStance(self.stances.prepare)
   self.weapon:updateAim()
 
-  if self.stances.prepare.duration then
-    util.wait(self.stances.prepare.duration)
+  if self.stances.prepare.smooth then
+	local progress = 0
+	util.wait(self.stances.prepare.duration, function()
+	  local from = self.stances.prepare.weaponOffset or {0,0}
+	  local to = self.stances.throw.weaponOffset or {0,0}
+	  self.weapon.weaponOffset = {interp.linear(progress, from[1], to[1]), interp.linear(progress, from[2], to[2])}
+	  
+	  self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(progress, self.stances.prepare.weaponRotation, self.stances.throw.weaponRotation))
+	  self.weapon.relativeArmRotation = util.toRadians(interp.linear(progress, self.stances.prepare.armRotation, self.stances.throw.armRotation))
+	  
+	  progress = math.min(1.0, progress + (self.dt / self.stances.prepare.duration))
+	end)
+  else
+	if self.stances.prepare.duration then
+	  util.wait(self.stances.prepare.duration)
+	end
   end
 
   self:setState(self.throw)

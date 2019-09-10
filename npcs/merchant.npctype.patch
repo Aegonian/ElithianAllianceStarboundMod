@@ -8,6 +8,14 @@
 	"path" : "/scriptConfig/merchant/categories/trink",
     "value" : [ "trinkweapons", "trinkarmour" ]
   },
+  { "op" : "add",
+	"path" : "/scriptConfig/merchant/categories/aegi",
+    "value" : [ "aegicolony" ]
+  },
+  { "op" : "add",
+	"path" : "/scriptConfig/merchant/categories/akkimari",
+    "value" : [ "akkimarimaterials", "akkimarifarming" ]
+  },
 
   //AVIKAN
   { "op" : "add",
@@ -15,6 +23,10 @@
     "value" : [
 	  [0, [
 		{
+		  "head" : [
+			{ "name" : "avikan-merchanthead", "data" : { "colorIndex" : 0 } },
+			{ "name" : "avikan-merchanthead", "data" : { "colorIndex" : 4 } }
+		  ],
 		  "chest" : [
 			{ "name" : "avikan-merchantchest", "data" : { "colorIndex" : 0 } },
 			{ "name" : "avikan-merchantchest", "data" : { "colorIndex" : 4 } }
@@ -22,10 +34,6 @@
 		  "legs" : [
 			{ "name" : "avikan-merchantlegs", "data" : { "colorIndex" : 0 } },
 			{ "name" : "avikan-merchantlegs", "data" : { "colorIndex" : 4 } }
-		  ],
-		  "head" : [
-			{ "name" : "avikan-merchanthead", "data" : { "colorIndex" : 0 } },
-			{ "name" : "avikan-merchanthead", "data" : { "colorIndex" : 4 } }
 		  ],
 		  "back" : [
 			{ "name" : "avikanbackpack", "data" : { "colorIndex" : 0 } },
@@ -43,15 +51,15 @@
     "value" : [
 	  [0, [
 		{
+		  "head" : [
+			{ "name" : "thea-hiddenhead", "data" : { "colorIndex" : 0 } }
+		  ],
 		  "chest" : [
 			{ "name" : "trink-paintedchest", "data" : { "colorIndex" : 8 } }
 		  ],
 		  "legs" : [
 			{ "name" : "trink-paintedlegs", "data" : { "colorIndex" : 8 } },
 			{ "name" : "trink-paintedhalflegs", "data" : { "colorIndex" : 8 } }
-		  ],
-		  "head" : [
-			{ "name" : "thea-hiddenhead", "data" : { "colorIndex" : 0 } }
 		  ],
 		  "back" : [
 			{ "name" : "trinkmerchantback", "data" : { "colorIndex" : 0 } }
@@ -67,18 +75,41 @@
     "value" : [
 	  [0, [
 		{
+		  "head" : [
+			{ "name" : "aegi-asauniformhead", "data" : { "colorIndex" : [0, 4, 8, 11] } },
+			{ "name" : "thea-hiddenhead", "data" : { "colorIndex" : [0, 4, 8, 11] } }
+		  ],
 		  "chest" : [
 			{ "name" : "aegi-storeclerkchest", "data" : { "colorIndex" : [0, 4, 8, 11] } }
 		  ],
 		  "legs" : [
 			{ "name" : "aegi-storeclerklegs", "data" : { "colorIndex" : [0, 4, 8, 11] } }
 		  ],
-		  "head" : [
-			{ "name" : "aegi-asauniformhead", "data" : { "colorIndex" : [0, 4, 8, 11] } },
-			{ "name" : "thea-hiddenhead", "data" : { "colorIndex" : [0, 4, 8, 11] } }
-		  ],
 		  "back" : [
 			{ "name" : "thea-hiddenback", "data" : { "colorIndex" : [0, 4, 8, 11] } }
+		  ]
+		}
+	  ]]
+    ]
+  },
+  
+  //AKKIMARI
+  { "op" : "add",
+    "path" : "/items/akkimari",
+    "value" : [
+	  [0, [
+		{
+		  "head" : [
+			{ "name" : "thea-hiddenhead", "data" : { "colorIndex" : [4, 5, 7, 8] } }
+		  ],
+		  "chest" : [
+			{ "name" : "akkimari-traderchest", "data" : { "colorIndex" : [4, 5, 7, 8] } }
+		  ],
+		  "legs" : [
+			{ "name" : "akkimari-traderlegs", "data" : { "colorIndex" : [4, 5, 7, 8] } }
+		  ],
+		  "back" : [
+			{ "name" : "akkimari-traderbackpack", "data" : { "colorIndex" : [4, 5, 7, 8] } }
 		  ]
 		}
 	  ]]
