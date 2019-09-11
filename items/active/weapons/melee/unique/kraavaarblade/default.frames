@@ -1,12 +1,12 @@
 {
   "frameGrid" : {
     "size" : [17, 48],
-    "dimensions" : [7, 4],
+    "dimensions" : [7, 6],
     "names" : [
-      [ "frontidle", "frontactive.1", "frontactive.2", "frontactive.3" ],
-	  [ "backidle", "backactive.1", "backactive.2", "backactive.3" ],
-	  [ "frontdefend", "frontdefendactive.1", "frontdefendactive.2", "frontdefendactive.3" ],
-	  [ "backdefend", "backdefendactive.1", "backdefendactive.2", "backdefendactive.3" ]
+      [ "front.idle", "front.active.1", "front.active.2", "front.active.3", "front.active.4", "front.active.5" ],
+	  [ "back.idle", "back.active.1", "back.active.2", "back.active.3", "back.active.4", "back.active.5" ],
+	  [ "frontdefend.idle", "frontdefend.active.1", "frontdefend.active.2", "frontdefend.active.3", "frontdefend.active.4", "frontdefend.active.5" ],
+	  [ "backdefend.idle", "backdefend.active.1", "backdefend.active.2", "backdefend.active.3", "backdefend.active.4", "backdefend.active.5" ]
     ]
   }
 }

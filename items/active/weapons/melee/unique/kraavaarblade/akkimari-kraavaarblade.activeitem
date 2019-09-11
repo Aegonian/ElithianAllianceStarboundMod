@@ -27,7 +27,9 @@
     "sounds" : {
       "fire" : [ "/sfx/melee/swing_broadsword.ogg" ],
       "fire2" : [ "/sfx/melee/swing_shortsword.ogg" ],
-      "fire3" : [ "/sfx/melee/swing_spear.ogg" ]
+      "fire3" : [ "/sfx/melee/swing_spear.ogg" ],
+      "activate" : [ "/sfx/melee/oculusshield_charge.ogg" ],
+      "fling" : [ "/sfx/gun/akkimari_energyfire_heavy.ogg" ]
     }
   },
 
@@ -40,12 +42,8 @@
 
   "aimOffset" : -1.0,
 
-  "primaryAbilityType" : "thea-shieldbladecombo",
-  "primaryAbility" : {
-	"damageConfig" : {
-      "damageSourceKind" : "physical"
-    }
-  },
+  "primaryAbilityType" : "thea-shieldbladecombocharge",
+  "primaryAbility" : {},
   
   "altAbilityType" : "thea-shieldbladedefend",
   "altAbility" : {

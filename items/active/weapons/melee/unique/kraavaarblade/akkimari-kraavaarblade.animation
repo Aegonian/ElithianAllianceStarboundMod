@@ -1,6 +1,7 @@
 {
   "globalTagDefaults" : {
     "hand" : "front",
+    "state" : "idle",
     "paletteSwaps" : ""
   },
 
@@ -55,12 +56,36 @@
           "weapon" : {
             "idle" : {
               "properties" : {
-                "image" : "<partImage>:<hand>idle<directives>?<bladeDirectives>"
+                "image" : "<partImage>:<hand>.<state><directives>?<bladeDirectives>"
               }
             },
             "defend" : {
               "properties" : {
-                "image" : "<partImage>:<hand>defend<directives>?<bladeDirectives>"
+                "image" : "<partImage>:<hand>defend.<state><directives>?<bladeDirectives>"
+              }
+            }
+          }
+        }
+      },
+      "bladeFullbright" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "fullbright" : true,
+          "offset" : [0, 0.5],
+          "transformationGroups" : ["weapon"],
+          "rotationCenter" : [0, 0]
+        },
+        "partStates" : {
+          "weapon" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:<hand>.<state><directives>?<bladeDirectives>"
+              }
+            },
+            "defend" : {
+              "properties" : {
+                "image" : "<partImage>:<hand>defend.<state><directives>?<bladeDirectives>"
               }
             }
           }
@@ -121,10 +146,20 @@
       "particles" : []
     }
   },
+  
+  "lights" : {
+    "glow" : {
+      "position" : [0, 2.0],
+      "color" : [0, 125, 15],
+      "transformationGroups" : ["weapon"]
+    }
+  },
 
   "sounds" : {
     "fire" : [ ],
     "fire2" : [ ],
-    "fire3" : [ ]
+    "fire3" : [ ],
+    "activate" : [ ],
+    "fling" : [ ]
   }
 }

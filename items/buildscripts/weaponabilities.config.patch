@@ -134,6 +134,11 @@
   },
   {
 	"op": "add",
+	"path": "/thea-shieldbladecombocharge",
+	"value": "/items/active/weapons/melee/abilities/shieldblade/thea-shieldbladecombocharge.weaponability"
+  },
+  {
+	"op": "add",
 	"path": "/thea-shieldbladedefend",
 	"value": "/items/active/weapons/melee/abilities/shieldblade/thea-shieldbladedefend.weaponability"
   },
