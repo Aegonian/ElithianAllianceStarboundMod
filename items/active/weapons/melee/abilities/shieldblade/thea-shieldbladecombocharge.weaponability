@@ -18,10 +18,6 @@
 
     "flashTime" : 0.15,
     "flashDirectives" : "fade=FFFFFFFF=0.15",
-	
-	"chargeCooldownTime" : 3.0,
-	"chargeAnimationTime" : 0.5,
-	"chargeAnimationFrames" : 5,
 
     "swooshOffsetRegions" : [
       [0.75, 0.0, 4.25, 5.0],
@@ -33,7 +29,24 @@
     "comboSpeedFactor" : 0.9,
 
     "edgeTriggerGrace" : 0.25,
-
+	
+	"chargeCooldownTime" : 4.0,
+	"chargeAnimationTime" : 0.5,
+	"chargeAnimationFrames" : 5,
+	
+	"projectileType" : "justicarbomb",
+	"projectileCount" : 1,
+	"projectileDamage" : 5.0,
+	"projectileOffset" : [1.0, 0.25],
+	"projectileInaccuracy" : 0.05,
+	"projectileParameters" : {
+      "knockback" : 6,
+      "speed" : 35,
+	  "statusEffects" : [
+		"akkimariacidburn"
+	  ]
+    },
+	
     "fireTime" : 0.8,
     "baseDps" : 11.5,
 
@@ -88,6 +101,8 @@
         "armRotation" : -45,
         "weaponRotation" : -55,
         "twoHanded" : false,
+		
+		"allowProjectile" : true,
 
         "allowRotate" : false,
         "allowFlip" : false

@@ -54,6 +54,7 @@ function TheaShieldBladeCombo:update(dt, fireMode, shiftHeld)
 	self.wasActive = false
   end
   
+  world.debugPoint(vec2.add(mcontroller.position(), activeItem.handPosition(self.projectileOffset)), "red")
   --world.debugText(storage.chargeCooldownTimer, vec2.add(mcontroller.position(), {0,0}), "yellow")
   --world.debugText(self.chargeAnimationTimer, vec2.add(mcontroller.position(), {0,1}), "yellow")
 
@@ -156,9 +157,24 @@ function TheaShieldBladeCombo:fire()
   animator.burstParticleEmitter(swooshKey)
   
   --If charge is ready, fling a projectile
-  if storage.chargeCooldownTimer == 0 then
+  if storage.chargeCooldownTimer == 0 and stance.allowProjectile then
 	animator.playSound("fling")
+	animator.burstParticleEmitter("fling")
 	storage.chargeCooldownTimer = self.chargeCooldownTime
+	
+	local params = sb.jsonMerge(self.projectileParameters, {})
+	params.power = self.projectileDamage * (self.baseDamageMultiplier or 1.0) * config.getParameter("damageLevelMultiplier") / self.projectileCount
+	params.powerMultiplier = activeItem.ownerPowerMultiplier()
+	params.speed = util.randomInRange(params.speed)
+	
+	world.spawnProjectile(
+        self.projectileType,
+        vec2.add(mcontroller.position(), activeItem.handPosition(self.projectileOffset)),
+        activeItem.ownerEntityId(),
+        self:aimVector(self.projectileInaccuracy),
+        false,
+        params
+      )
   end
 
   util.wait(stance.duration, function()
@@ -217,6 +233,12 @@ function TheaShieldBladeCombo:computeDamageAndCooldowns()
     local speedFactor = 1.0 * (self.comboSpeedFactor ^ i)
     table.insert(self.cooldowns, (targetTime - totalAttackTime) * speedFactor)
   end
+end
+
+function TheaShieldBladeCombo:aimVector(inaccuracy)
+  local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle + sb.nrand(inaccuracy, 0))
+  aimVector[1] = aimVector[1] * mcontroller.facingDirection()
+  return aimVector
 end
 
 function TheaShieldBladeCombo:uninit()
