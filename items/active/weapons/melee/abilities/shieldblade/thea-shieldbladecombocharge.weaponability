@@ -34,17 +34,14 @@
 	"chargeAnimationTime" : 0.5,
 	"chargeAnimationFrames" : 5,
 	
-	"projectileType" : "justicarbomb",
+	"projectileType" : "akkimariacidbomb",
 	"projectileCount" : 1,
 	"projectileDamage" : 5.0,
 	"projectileOffset" : [1.0, 0.25],
 	"projectileInaccuracy" : 0.05,
 	"projectileParameters" : {
       "knockback" : 6,
-      "speed" : 35,
-	  "statusEffects" : [
-		"akkimariacidburn"
-	  ]
+      "speed" : 25
     },
 	
     "fireTime" : 0.8,
