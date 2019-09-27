@@ -1,0 +1,18 @@
+{
+  "name" : "aegiregeneration",
+  "effectConfig" : {
+    "cooldownAfterHit" : 15,
+	"healAmount" : 3,
+    "emissionRate" : 2
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "aegiregeneration.lua"
+  ],
+
+  "animationConfig" : "aegiregeneration.animation",
+
+  "label" : "GENETIC ENHANCEMENTS: Regenerate health while out of combat",
+  "icon" : "/interface/statuses/racialbenefits/aegiregeneration.png"
+}
