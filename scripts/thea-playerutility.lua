@@ -97,12 +97,12 @@ function update(args)
 	  world.spawnStagehand(entity.position(), "thea-checkregionmodified")
 	  self.regionCheckTimer = 0.25
 	end
-	world.debugText("Position outside of dungeon: " .. sb.print((self.dungeonIdAtPosition > 65000)), vec2.add(entity.position(), {-3, -7}), "yellow")
-	world.debugText("Region is player modified: " .. sb.print(self.regionIsPlayerModified), vec2.add(entity.position(), {-3, -8}), "yellow")
+	--world.debugText("Position outside of dungeon: " .. sb.print((self.dungeonIdAtPosition > 65000)), vec2.add(entity.position(), {-3, -7}), "yellow")
+	--world.debugText("Region is player modified: " .. sb.print(self.regionIsPlayerModified), vec2.add(entity.position(), {-3, -8}), "yellow")
   end
   
   --If the next event is ready, check position and spawn the event stagehand
-  if storage.timeUntilNextEvent == 0 then
+  if storage.timeUntilNextEvent == 0 and currentWorldIsEventValid then
 	if playerIsNearGround() and not self.regionIsPlayerModified and (self.dungeonIdAtPosition > 65000) then
 	  local eventList = self.randomEvents
 	  --If there is a saved lat event, remove it from the list of candidates to prevent back-to-back duplicate events
@@ -128,13 +128,22 @@ function update(args)
   
   sb.setLogMap("THEA - Time until next random event", storage.timeUntilNextEvent)
   sb.setLogMap("THEA - Type of world", world.type())
-  sb.setLogMap("THEA - World type is valid", sb.print(validPlanetType()))
-  sb.setLogMap("THEA - World is terrestrial", sb.print(world.terrestrial()))
+  sb.setLogMap("THEA - Player on valid world", sb.print(validPlanetType()))
+  sb.setLogMap("THEA - Player on terrestrial world", sb.print(world.terrestrial()))
+  sb.setLogMap("THEA - Player in surface layer", sb.print(world.inSurfaceLayer(entity.position())))
+  sb.setLogMap("THEA - Player is near ground", sb.print(playerIsNearGround()))
+  if storage.timeUntilNextEvent < 5 then
+	sb.setLogMap("THEA - Player in wild region", sb.print(not self.regionIsPlayerModified))
+	sb.setLogMap("THEA - Player out of dungeon", sb.print((self.dungeonIdAtPosition > 65000)))
+  else
+	sb.setLogMap("THEA - Player in wild region", "waiting...")
+	sb.setLogMap("THEA - Player out of dungeon", "waiting...")
+  end
 end
 
 function playerIsNearGround()
   local groundPositionAndNormal = world.lineTileCollisionPoint(entity.position(), vec2.add(entity.position(), {0, -100}))
-  world.debugText("Distance to ground: " .. world.magnitude(entity.position(), groundPositionAndNormal[1]), vec2.add(entity.position(), {-3, -6}), "yellow")
+  --world.debugText("Distance to ground: " .. world.magnitude(entity.position(), groundPositionAndNormal[1]), vec2.add(entity.position(), {-3, -6}), "yellow")
   
   if world.magnitude(entity.position(), groundPositionAndNormal[1]) < 5 then
 	return true
