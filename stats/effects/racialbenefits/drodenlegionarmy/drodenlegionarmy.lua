@@ -65,6 +65,8 @@ function update(dt)
   
   --world.debugText("Droden Crewmembers: " .. self.drodenCrewmemberCount, vec2.add(mcontroller.position(), {0,1}), "yellow")
   --world.debugText("Cooldown: " .. self.cooldownTimer, vec2.add(mcontroller.position(), {0,2}), "yellow")
+  
+  sb.setLogMap("THEA - Active racial benefit", "LEGION")
 end
 
 function uninit()

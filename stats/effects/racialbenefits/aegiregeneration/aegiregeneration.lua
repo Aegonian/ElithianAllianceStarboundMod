@@ -41,6 +41,8 @@ function update(dt)
   end
   
   self.lastHealth = self.currentHealth
+  
+  sb.setLogMap("THEA - Active racial benefit", "GENETIC ENHANCEMENTS")
 end
 
 function uninit()

@@ -20,6 +20,8 @@ function update(dt)
 	animator.setLightPosition("beam", self.lightPositionStanding)
 	self.wasCrouching = false
   end
+  
+  sb.setLogMap("THEA - Active racial benefit", "EYELIGHTS")
 end
 
 function uninit()

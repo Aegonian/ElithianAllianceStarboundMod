@@ -72,7 +72,7 @@ function update(args)
   end
   
   if storage.activeEvent then
-	sb.setLogMap("THEA - Active festive event", storage.activeEvent[1])
+	sb.setLogMap("THEA - Active festive event", self.activeEvent[1])
   else
 	sb.setLogMap("THEA - Active festive event", "None")
   end

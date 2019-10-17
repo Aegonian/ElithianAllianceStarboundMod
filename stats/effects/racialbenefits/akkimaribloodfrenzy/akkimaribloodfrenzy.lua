@@ -96,6 +96,8 @@ function update(dt)
   
   --world.debugText("Duration: " .. self.durationLeft, vec2.add(mcontroller.position(), {0,1}), "yellow")
   --world.debugText("Kills: " .. self.killCount, vec2.add(mcontroller.position(), {0,2}), "yellow")
+  
+  sb.setLogMap("THEA - Active racial benefit", "BLOOD FRENZY")
 end
 
 function uninit()

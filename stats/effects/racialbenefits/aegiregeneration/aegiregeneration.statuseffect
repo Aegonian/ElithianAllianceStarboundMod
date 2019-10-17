@@ -13,6 +13,5 @@
 
   "animationConfig" : "aegiregeneration.animation",
 
-  "label" : "GENETIC ENHANCEMENTS: Regenerate health while out of combat",
-  "icon" : "/interface/statuses/racialbenefits/aegiregeneration.png"
+  "label" : "GENETIC ENHANCEMENTS: Regenerate health while out of combat"
 }
