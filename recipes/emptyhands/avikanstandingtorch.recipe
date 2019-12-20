@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "monsterbone", "count" : 2 },
+    { "item" : "coalore", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "avikanstandingtorch",
+    "count" : 1
+  },
+  "groups" : [ "plain", "all" ],
+  "duration" : 0.5
+}

@@ -17,6 +17,12 @@
   "defaultBlueprints" : {
     "tier1" : [
 
+//NEW in v2.3.12
+	  { "item" : "avikanstandingtorch" },
+	  { "item" : "avikanscrollrack" },
+	  { "item" : "avikanscrollcabinet" },
+	  { "item" : "avikanlitterbox" },
+
 //NEW in v2.3.10
 	  { "item" : "avikansecuritycamera" },
 

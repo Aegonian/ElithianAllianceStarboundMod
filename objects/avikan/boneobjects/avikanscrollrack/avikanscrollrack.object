@@ -1,0 +1,58 @@
+{
+  "objectName" : "avikanscrollrack",
+  "colonyTags" : ["avikan", "commerce"],
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "category" : "storage",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A rack for storing your scrolls.",
+  "shortdescription" : "Avikan Scroll Rack",
+  "race" : "avikan",
+  
+  "health" : 6,
+
+  "apexDescription" : "A bone rack, apparently for storing large scrolls.",
+  "avianDescription" : "A primitive storage rack.",
+  "floranDescription" : "Bone rack for sscrolsss.",
+  "glitchDescription" : "Observation. A rack made of bone. Seemingly for storing scrolls.",
+  "humanDescription" : "That's a storage rack made of... bone?",
+  "hylotlDescription" : "A crude rack made of bone. How many beings had to die for this?",
+  "novakidDescription" : "That's a simple rack made o' bone.",
+
+  "aegiDescription" : "A bone rack. The Avikan use these to store scrolls.",
+  "avikanDescription" : "A storage rack, for large scrolls.",
+  "draunaarDescription" : "A rack made of bone. How... unusual.",
+  "trinkDescription" : "A simple place for storing scrolls.",
+  "hymidDescription" : "That's just a storage rack.",
+  "notixDescription" : "A storage rack for scrolls. Those are of no use to me.",
+  "jorgasianDescription" : "A rack for storing scrolls.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Storage rack. Detected several scrolls.",
+  "akkimariDescription" : "Rack-bone for scrolls. Akki no like to read.",
+
+  "inventoryIcon" : "avikanscrollrackicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanscrollrack.png:<color>",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/bed_leave.ogg" ],
+  "closeSounds" : [ "/sfx/objects/bed_enter.ogg" ],
+  "slotCount" : 16,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 30,
+  "autoCloseCooldown" : 3600
+}

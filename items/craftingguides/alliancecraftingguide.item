@@ -8,6 +8,9 @@
   "category" : "Crafting Guide",
   "learnBlueprintsOnPickup" : [
 	
+//New in v2.3.12
+	  "alliancecargocontainer",
+	
 //New in v2.3.10
 	  "alliancesecuritycamera",
 	

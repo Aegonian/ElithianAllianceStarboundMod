@@ -1,0 +1,58 @@
+{
+  "objectName" : "avikanscrollcabinet",
+  "colonyTags" : ["avikan", "commerce"],
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "category" : "storage",
+  "printable" : false,
+  "price" : 50,
+  "description" : "A cabinet for storing your scrolls.",
+  "shortdescription" : "Avikan Scroll Cabinet",
+  "race" : "avikan",
+  
+  "health" : 6,
+
+  "apexDescription" : "A bone cabinet, apparently for storing large scrolls.",
+  "avianDescription" : "A primitive storage cabinet.",
+  "floranDescription" : "Bone cabinet for sscrolsss.",
+  "glitchDescription" : "Observation. A cabinet made of bone. Seemingly for storing scrolls.",
+  "humanDescription" : "That's a storage cabinet made of... bone?",
+  "hylotlDescription" : "A crude cabinet made of bone. How many beings had to die for this?",
+  "novakidDescription" : "That's a simple cabinet made o' bone.",
+
+  "aegiDescription" : "A bone cabinet. The Avikan use these to store scrolls.",
+  "avikanDescription" : "A storage cabinet, for large scrolls.",
+  "draunaarDescription" : "A cabinet made of bone. How... unusual.",
+  "trinkDescription" : "A simple place for storing scrolls.",
+  "hymidDescription" : "That's just a storage cabinet.",
+  "notixDescription" : "A storage cabinet for scrolls. Those are of no use to me.",
+  "jorgasianDescription" : "A cabinet for storing scrolls.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Storage cabinet. Detected several scrolls.",
+  "akkimariDescription" : "Cabinet-bone for scrolls. Akki no like to read.",
+
+  "inventoryIcon" : "avikanscrollcabineticon.png",
+  "orientations" : [
+    {
+      "dualImage" : "avikanscrollcabinet.png:<color>",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/bed_leave.ogg" ],
+  "closeSounds" : [ "/sfx/objects/bed_enter.ogg" ],
+  "slotCount" : 16,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 30,
+  "autoCloseCooldown" : 3600
+}

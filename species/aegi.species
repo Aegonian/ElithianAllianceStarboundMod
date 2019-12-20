@@ -18,6 +18,9 @@
   "defaultBlueprints" : {
     "tier1" : [
 
+//NEW in v2.3.12
+	  { "item" : "alliancecargocontainer" },
+
 //NEW in v2.3.10
 	  { "item" : "alliancesecuritycamera" },
 
