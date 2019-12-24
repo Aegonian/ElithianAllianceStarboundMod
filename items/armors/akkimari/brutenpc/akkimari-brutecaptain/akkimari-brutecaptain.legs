@@ -1,0 +1,42 @@
+{
+  "itemName" : "akkimari-brutecaptainlegs",
+  "price" : 1000,
+  "inventoryIcon" : "icons.png:pants",
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "category" : "legwear",
+  "description" : "^green;Akkimari. ^white;Hardened metal hip-plates worn by captains of the Kelraaki.",
+  "shortdescription" : "Brute Captain's Plates",
+  "tooltipKind" : "armor",
+
+  "maleFrames" : "pants.png",
+  "femaleFrames" : "pants.png",
+
+  "colorOptions" : [
+  //Colours go from LIGHT to DARK
+    // 0 - RED
+    { "ffca8a" : "f4988c", "e0975c" : "d93a3a", "a85636" : "932625", "6f2919" : "601119" },
+    // 1 - BLACK
+    { "ffca8a" : "838383", "e0975c" : "555555", "a85636" : "383838", "6f2919" : "151515" },
+    // 2 - GREY
+    { "ffca8a" : "b5b5b5", "e0975c" : "808080", "a85636" : "555555", "6f2919" : "303030" },
+    // 3 - AKKIMARI SILK WHITE
+    { "ffca8a" : "E8E6E3", "e0975c" : "C8C4C0", "a85636" : "998D82", "6f2919" : "60554D" },
+    // 4 - RED
+    { "ffca8a" : "f4988c", "e0975c" : "d93a3a", "a85636" : "932625", "6f2919" : "601119" },
+    // 5 - ORANGE
+    { "ffca8a" : "ffd495", "e0975c" : "ea9931", "a85636" : "af4e00", "6f2919" : "6e2900" },
+    // 6 - YELLOW
+    { "ffca8a" : "ffffa7", "e0975c" : "e2c344", "a85636" : "a46e06", "6f2919" : "642f00" },
+    // 7 - AKKIMARI GREEN
+    { "ffca8a" : "6CB55E", "e0975c" : "4D8E40", "a85636" : "265926", "6f2919" : "153116" },
+    // 8 - BLUE
+    { "ffca8a" : "96cbe7", "e0975c" : "5588d4", "a85636" : "344495", "6f2919" : "1a1c51" },
+    // 9 - AKKIMARI PURPLE
+    { "ffca8a" : "A46ADD", "e0975c" : "8246BD", "a85636" : "582D80", "6f2919" : "2F1752" },
+    // 10 - AKKIMARI PINK
+    { "ffca8a" : "E098BE", "e0975c" : "C06997", "a85636" : "853158", "6f2919" : "4E1C33" },
+    // 11 - AKKIMARI BROWN
+    { "ffca8a" : "A07C68", "e0975c" : "7F5E4A", "a85636" : "593C2C", "6f2919" : "352119" }
+  ]
+}

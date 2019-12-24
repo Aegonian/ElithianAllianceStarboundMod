@@ -1,0 +1,98 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "doorState" : {
+        "default" : "closed",
+        "states" : {
+          "opening" : {
+            "frames" : 6,
+            "cycle" : 0.6,
+            "mode" : "transition",
+            "transition" : "open"
+          },
+          "open" : {
+            "frames" : 4,
+            "cycle" : 0.4,
+            "mode" : "loop"
+		  },
+          "closing" : {
+            "frames" : 6,
+            "cycle" : 0.6,
+            "mode" : "transition",
+            "transition" : "closed"
+          },
+          "closed" : {}
+        }
+      }
+    },
+
+    "parts" : {
+      "foreground" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : false
+        },
+        "partStates" : {
+          "doorState" : {
+            "opening" : {
+              "properties" : {
+                "image" : "<partImage>:opening.<frame>"
+              }
+            },
+            "open" : {
+              "properties" : {
+                "image" : "<partImage>:open.<frame>"
+              }
+            },
+            "closing" : {
+              "properties" : {
+                "image" : "<partImage>:closing.<frame>"
+              }
+            },
+            "closed" : {
+              "properties" : {
+                "image" : "<partImage>:closed"
+              }
+            }
+          }
+        }
+      },
+      "background" : {
+        "properties" : {
+          "zLevel" : 0,
+          "fullbright" : true,
+          "centered" : false
+        },
+        "partStates" : {
+          "doorState" : {
+            "opening" : {
+              "properties" : {
+                "image" : "<partImage>:opening.<frame>"
+              }
+            },
+            "open" : {
+              "properties" : {
+                "image" : "<partImage>:open.<frame>"
+              }
+            },
+            "closing" : {
+              "properties" : {
+                "image" : "<partImage>:closing.<frame>"
+              }
+            },
+            "closed" : {
+              "properties" : {
+                "image" : "<partImage>:closed"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "sounds" : {
+    "open" : [],
+    "close" : []
+  }
+}

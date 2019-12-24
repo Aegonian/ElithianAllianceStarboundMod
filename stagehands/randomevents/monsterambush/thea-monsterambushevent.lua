@@ -6,7 +6,7 @@ function init()
   self.monsterCount = config.getParameter("monsterCount")
   self.monsterTestPoly = config.getParameter("monsterTestPoly")
   self.spawnOnGround = config.getParameter("spawnOnGround")
-  self.spawnAnimation = config.getParameter("spawnAnimation")
+  self.spawnEffect = config.getParameter("spawnEffect")
   self.minDistanceToPlayer = config.getParameter("minDistanceToPlayer")
   self.spawnRangeX = config.getParameter("spawnRangeX")
   self.spawnRangeY = config.getParameter("spawnRangeY")
@@ -38,8 +38,8 @@ function update(dt)
 	  if resolvedPosition then
 		--Spawn the monster and optionally force the monster spawn effect on them
 		local entityId = world.spawnMonster(util.randomChoice(self.monsterTypes), resolvedPosition, {level = world.threatLevel(), aggressive = true})
-		if self.spawnAnimation then
-		  world.callScriptedEntity(entityId, "status.addEphemeralEffect", "thea-monsterspawn")
+		if self.spawnEffect then
+		  world.callScriptedEntity(entityId, "status.addEphemeralEffect", self.spawnEffect)
 		end
 	  end
 	end

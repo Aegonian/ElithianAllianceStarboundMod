@@ -30,8 +30,9 @@
   "spawnProfile" : [				//Groups to spawn while being captured. Format is [ captureProgressPercentage, stagehand ]
 	[0.0, "thea-akkimaridrillambush"],
 	[0.25, "thea-akkimaridrillambush"],
-	[0.5, "thea-akkimaridrillambush"],
-	[0.75, "thea-akkimaridrillambush2"]
+	[0.5, "thea-akkimaridrillambush2"],
+	[0.75, "thea-akkimaridrillambush"],
+	[0.75, "thea-akkimaridrillambush3"]
   ],
   
   //ANIMATION SETTINGS

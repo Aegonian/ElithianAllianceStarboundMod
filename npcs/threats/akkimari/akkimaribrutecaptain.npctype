@@ -1,8 +1,12 @@
 {
-  "type" : "akkimaribrute",
+  "type" : "akkimaribrutecaptain",
   "baseType" : "hostile",
 
   "dropPools" : [ "akkimariScavengerDeathTreasure" ],
+  
+  "innateStatusEffects" : [ 
+	"akkimarifueltankbomb"
+  ],
   
   "identity" : {
     "imagePath" : "akkimaribrute"
@@ -55,22 +59,28 @@
 	    [
 		  {
             "head" : [
-			  { "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : [1, 2, 11] } }
+			  { "name" : "akkimari-brutecaptainhead", "parameters" : { "colorIndex" : [1, 2, 11] } }
 			],
             "chest" : [
-			  { "name" : "thea-hiddenchest", "parameters" : { "colorIndex" : [1, 2, 11] } }
+			  { "name" : "akkimari-brutecaptainchest", "parameters" : { "colorIndex" : [1, 2, 11] } }
 			],
             "legs" : [
-			  { "name" : "thea-hiddenlegs", "parameters" : { "colorIndex" : [1, 2, 11] } }
+			  { "name" : "akkimari-brutecaptainlegs", "parameters" : { "colorIndex" : [1, 2, 11] } }
+			],
+            "back" : [
+			  { "name" : "akkimari-brutecaptainback", "parameters" : { "colorIndex" : [1, 2, 11] } }
 			],
             "primary" : [
-			  "akkimari-tier1broadsword",
-			  "akkimari-tier2spear",
-			  "akkimari-tier3hammer"
+			  "akkimari-tier4shortsword",
+			  "akkimari-tier6axe"
+            ],
+            "alt" : [
+			  "akkimariscrapshield"
             ],
             "sheathedprimary" : [
-			  "akkimari-nailgun",
-			  "akkimari-strafegun-npc"
+			  "akkimari-flamethrower",
+			  "akkimari-sawbladelauncher",
+			  "akkimari-scrapyard"
             ]
           }
         ]

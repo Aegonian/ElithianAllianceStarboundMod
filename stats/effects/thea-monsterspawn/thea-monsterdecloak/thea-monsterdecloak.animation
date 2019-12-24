@@ -1,0 +1,15 @@
+{
+  "particleEmitters" : {
+	"decloak" : {
+      "burstCount"  : 8,
+      "particles" : [
+        { "particle" : "thea-electricstunarc" },
+        { "particle" : "thea-electricstunarc2" }
+	  ]
+    }
+  },
+
+  "sounds" : {
+    "decloak" : [ "/sfx/tech/vehicle_appear3.ogg" ]
+  }
+}

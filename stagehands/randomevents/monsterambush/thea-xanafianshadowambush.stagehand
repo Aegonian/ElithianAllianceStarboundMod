@@ -10,7 +10,7 @@
   "monsterCount" : [ 5, 8 ],
   "monsterTestPoly" : [ [0.4, 0.95],  [0.95, 0.4], [0.95, -0.4], [0.4, -0.95], [-0.4, -0.95], [-0.95, -0.4], [-0.95, 0.4], [-0.4, 0.95] ],
   "spawnOnGround" : false,
-  "spawnAnimation" : false,
+  "spawnEffect" : null,
   "minDistanceToPlayer" : 10,
   "spawnRangeX" : 25,
   "spawnRangeY" : 20,

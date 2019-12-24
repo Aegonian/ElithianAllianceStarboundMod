@@ -1,0 +1,19 @@
+{
+  "type" : "thea-akkimaridrillambush3",
+
+  "scripts" : ["/stagehands/randomevents/ambush/thea-ambushevent.lua"],
+  "scriptDelta" : 1,
+  
+  "npcSpecies" : [
+	"akkimari"
+  ],
+  "npcTypes" : [
+	"akkimaribrutecaptain"
+  ],
+  "npcCount" : [ 1, 1 ],
+  "npcTestPoly" : [ [-0.75, -2.0], [-0.35, -2.5], [0.35, -2.5], [0.75, -2.0], [0.75, 1.025], [0.35, 1.595], [-0.35, 1.595], [-0.75, 1.025] ],
+  "minDistanceToPlayer" : 10,
+  "spawnRangeX" : 35,
+  "spawnRangeY" : 5,
+  "spawnTolerance" : 20
+}

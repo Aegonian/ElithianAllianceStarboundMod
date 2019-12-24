@@ -1,0 +1,11 @@
+{
+  "name" : "thea-monsterdecloak",
+  "effectConfig" : {},
+  "defaultDuration" : 1.5,
+
+  "scripts" : [
+    "thea-monsterdecloak.lua"
+  ],
+
+  "animationConfig" : "thea-monsterdecloak.animation"
+}

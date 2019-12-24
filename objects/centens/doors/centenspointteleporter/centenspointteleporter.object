@@ -1,0 +1,71 @@
+{
+  "objectName" : "centenspointteleporter",
+  "colonyTags" : ["centens"],
+  "rarity" : "Common",
+  "category" : "door",
+  "printable" : false,
+  "price" : 500,
+  "description" : "A point-to-point teleporter. It can be linked to background doors.",
+  "shortdescription" : "Centensian Point Teleporter",
+  "race" : "centens",
+
+  "apexDescription" : "I wonder where this gate leads...",
+  "avianDescription" : "I wonder where this gate leads...",
+  "floranDescription" : "Floran wondersss where gate goesss...",
+  "glitchDescription" : "Curious. I wonder where this gate leads...",
+  "humanDescription" : "I wonder where this gate leads...",
+  "hylotlDescription" : "I wonder where this gate leads...",
+  "novakidDescription" : "I wonder where this gate leads...",
+
+  "aegiDescription" : "I wonder where this gate leads...",
+  "avikanDescription" : "I wonder where this gate leads...",
+  "draunaarDescription" : "I wonder where this gate leads...",
+  "trinkDescription" : "I wonder where this gate leads...",
+  "hymidDescription" : "I wonder where this gate leads...",
+  "notixDescription" : "I wonder where this gate leads...",
+  "jorgasianDescription" : "I wonder where this gate leads...",
+  "centensDescription" : "I wonder where this gate leads...",
+  "dremetonDescription" : "I wonder where this gate leads...",
+  "theleanDescription" : "I wonder where this gate leads...",
+  "drodenDescription" : "Scanning failed. Unable to determine where this gate leads.",
+  "akkimariDescription" : "Akki curious where gate leads...",
+
+  "inventoryIcon" : "wiredicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "centenspointteleporter.png:open.1",
+      "imagePosition" : [-16, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "animation" : "centenspointteleporter.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/projectiles/xanafian_gravitywell_stop.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/projectiles/xanafian_gravitywell_stop.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "foreground" : "centenspointteleporterlit.png",
+    "background" : "centenspointteleporter.png"
+  },
+  "animationPosition" : [-16, 0],
+  
+  "scripts" : [ "/objects/scripts/thea-backgrounddoor.lua" ],
+  "detectArea" : [ [-6, 0], [7, 6] ],
+  
+  "allowBackgroundDoorConnection" : true,
+  "mouthPosition" : [0, -1], //Used to determine the teleport position of the door
+  
+  "inputNodes" : [ [-2, 0], [-2, 2] ],
+  "outputNodes" : [ [1, 0] ]
+}
