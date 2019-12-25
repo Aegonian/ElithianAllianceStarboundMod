@@ -1,0 +1,87 @@
+{
+  "objectName" : "akkimaristandingtorch",
+  "colonyTags" : ["akkimari","light"],
+  "rarity" : "Common",
+  "category" : "light",
+  "printable" : false,
+  "price" : 30,
+  "description" : "A tall standing torch giving off a warm glow.",
+  "shortdescription" : "Akris Standing Torch",
+  "race" : "akkimari",
+
+  "maximumLiquidLevel" : 0.2,
+
+  "apexDescription" : "A raised torch.",
+  "avianDescription" : "A tall flickering torch.",
+  "floranDescription" : "High torch holdss fire.",
+  "glitchDescription" : "Serene. A tall torch, the flame flickers.",
+  "humanDescription" : "A crackling torch.",
+  "hylotlDescription" : "A raised torch provides light for a large area.",
+  "novakidDescription" : "The flame is cracklin' away.",
+
+  "aegiDescription" : "A simple torch, with a basic metal pole.",
+  "avikanDescription" : "This torch reminds me of home.",
+  "draunaarDescription" : "A scrappy-looking torch.",
+  "trinkDescription" : "A highly inefficient way to light your surroundings.",
+  "hymidDescription" : "This torch looks rather shoddy. I hope it holds together.",
+  "notixDescription" : "A simple torch. The heat is unbearable.",
+  "jorgasianDescription" : "This torch makes me feel warm.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Fire hazard detected.",
+  "akkimariDescription" : "Torch-tall, made quick-like. Strong-no, Akki no bump into it.",
+
+  "statusEffects" : [ ],
+
+  "lightColor" : [179, 149, 107],
+
+  "flickerPeriod" : 0.3,
+  "flickerMinIntensity" : 0.95,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.075,
+  "flickerIntensityVariance" : 0.025,
+
+  "inventoryIcon" : "akkimaristandingtorchicon.png",
+  "orientations" : [
+    {
+      "image" : "akkimaristandingtorch.png:<color>.<frame>",
+      "imagePosition" : [1, 0],
+      "animationPosition" : [1, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "akkimaristandingtorch.png:<color>.<frame>",
+      "imagePosition" : [1, 0],
+      "animationPosition" : [1, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/torch.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+
+  "animation" : "akkimaristandingtorch.animation",
+  "animationParts" : {
+    "bg" : "akkimaristandingtorch.png",
+    "fg" : "akkimaristandingtorchlit.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "on" : [ "/sfx/objects/torch_on1.ogg", "/sfx/objects/torch_on2.ogg" ],
+      "off" : [ "/sfx/objects/torch_off1.ogg", "/sfx/objects/torch_off2.ogg", "/sfx/objects/torch_off3.ogg" ]
+    }
+  },
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : true
+}
