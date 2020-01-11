@@ -145,8 +145,12 @@ function playerIsNearGround()
   local groundPositionAndNormal = world.lineTileCollisionPoint(entity.position(), vec2.add(entity.position(), {0, -100}))
   --world.debugText("Distance to ground: " .. world.magnitude(entity.position(), groundPositionAndNormal[1]), vec2.add(entity.position(), {-3, -6}), "yellow")
   
-  if world.magnitude(entity.position(), groundPositionAndNormal[1]) < 5 then
-	return true
+  if groundPositionAndNormal then
+	if world.magnitude(entity.position(), groundPositionAndNormal[1]) < 5 then
+	  return true
+	else
+	  return false
+	end
   else
 	return false
   end

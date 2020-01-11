@@ -1,0 +1,10 @@
+{
+  "itemName" : "basbronfiber",
+  "price" : 10,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "basbronfiber.png",
+  "description" : "Fibers of the basbron plant, soft and fluffy.",
+  "shortdescription" : "Basbron Fibers",
+  "itemTags" : [ "reagent" ]
+}

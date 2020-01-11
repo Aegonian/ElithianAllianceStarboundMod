@@ -80,6 +80,24 @@
 	]
   },
 
+  //BASBRON
+  { "op" : "add",
+	"path" : "/basbronHarvest",
+	"value" : [
+	  [0, {
+		"pool" : [
+		  {"weight" : 0.89, "item" : "basbronfiber"},
+		  {"weight" : 0.01, "item" : "basbronseed"},
+		  {"weight" : 0.1, "item" : "plantfibre"}
+		],
+		"poolRounds" : [
+		  [0.6, 1],
+		  [0.4, 2]
+		]
+	  } ]
+	]
+  },
+
   //AMBRUM
   { "op" : "add",
 	"path" : "/ambrumHarvest",
