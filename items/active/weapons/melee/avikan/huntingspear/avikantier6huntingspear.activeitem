@@ -5,11 +5,12 @@
   "maxStack" : 1,
   "rarity" : "legendary",
   "description" : "Harvest special materials from monsters.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Nomada Hunting Spear",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-mf",
   "category" : "Hunting Spear",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","spear"],
+  "itemTags" : ["weapon","melee","spear","vanguard"],
   
   "radioMessagesOnPickup" : [ "pickupavikanhunting" ],
 
@@ -51,5 +52,5 @@
     "projectileType" : "avikantier6huntingspear"
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

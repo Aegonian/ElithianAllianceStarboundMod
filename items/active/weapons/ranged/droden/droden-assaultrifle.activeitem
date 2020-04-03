@@ -5,11 +5,12 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "description" : "A minimalistic energy weapon issued to Droden soldiers.",
+  "manufacturer" : "^gray;Vanguard/Legion^reset;",
   "shortdescription" : "Droden Assault Rifle",
   "level" : 6,
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-mf",
   "category" : "Assault Rifle",
-  "itemTags" : ["weapon","ranged","assaultrifle","energy","avikan"],
+  "itemTags" : ["weapon","ranged","assaultrifle","energy","avikan","vanguard","legion"],
   "twoHanded" : true,
   
   "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
@@ -88,5 +89,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

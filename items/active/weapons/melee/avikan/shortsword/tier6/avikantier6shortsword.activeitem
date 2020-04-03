@@ -5,11 +5,12 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "description" : "An energy weapon used by high-ranking members of the Clanguard.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Clanguard Sword",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-mf",
   "category" : "shortsword",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","shortsword","avikan"],
+  "itemTags" : ["weapon","melee","shortsword","avikan","vanguard"],
 
   "inventoryIcon" : "avikantier6shortswordicon.png",
 
@@ -38,5 +39,5 @@
     "baseDps" : 7.5
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

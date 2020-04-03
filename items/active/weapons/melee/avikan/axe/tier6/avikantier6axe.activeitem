@@ -5,11 +5,12 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "description" : "An energy weapon used by high-ranking members of the Clanguard.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Clanguard Axe",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-mf",
   "category" : "axe",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","axe","avikan"],
+  "itemTags" : ["weapon","melee","axe","avikan","vanguard"],
 
   "inventoryIcon" : "avikantier6axeicon.png",
 
@@ -45,5 +46,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

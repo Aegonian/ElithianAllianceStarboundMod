@@ -3,5 +3,10 @@
     "path" : "/microformerTreasure/0/1/pool/-",
     "value" : 
       {"weight" : 1.00, "item" : "microformertheawetlands"}
+  },
+  {"op" : "add",
+    "path" : "/geodeRewards/0/1/pool/-",
+    "value" : 
+      {"weight" : 0.0025, "item" : "ferroveriumsample"}
   }
 ]

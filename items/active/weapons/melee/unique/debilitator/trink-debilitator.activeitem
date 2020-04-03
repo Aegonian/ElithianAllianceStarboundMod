@@ -6,8 +6,9 @@
   "maxStack" : 1,
   "rarity" : "essential",
   "description" : "^orange;A massive shock baton built to incapacitate enemies.",
+  "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "^orange;SB-4 Debilitator^white;",
-  "tooltipKind" : "thea-sword-unique",
+  "tooltipKind" : "thea-sword-unique-mf",
   "category" : "Shock Baton",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","hammer","prod","trink","theaUnique"],
@@ -162,5 +163,5 @@
     }
   },
   
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

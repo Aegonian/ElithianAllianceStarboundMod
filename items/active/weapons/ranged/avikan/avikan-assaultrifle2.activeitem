@@ -5,11 +5,12 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "description" : "A high-powered burst rifle issued to Avikan military forces.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Vanguard Burst Rifle",
   "level" : 6,
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-mf",
   "category" : "Burst Rifle",
-  "itemTags" : ["weapon","ranged","assaultrifle","avikan"],
+  "itemTags" : ["weapon","ranged","assaultrifle","avikan","vanguard"],
   "twoHanded" : true,
   
   "animation" : "/items/active/weapons/ranged/animations/thea-gun-lasersight.animation",
@@ -138,5 +139,5 @@
 	"laserColourInactive" : [0, 0, 0, 0]
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

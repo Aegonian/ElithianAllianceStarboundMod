@@ -5,11 +5,12 @@
   "maxStack" : 1,
   "rarity" : "legendary",
   "description" : "An energy weapon used by high-ranking members of the Clanguard.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Clanguard Broadsword",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-mf",
   "category" : "broadsword",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","broadsword","avikan"],
+  "itemTags" : ["weapon","melee","broadsword","avikan","vanguard"],
 
   "inventoryIcon" : "avikantier6broadswordicon.png",
 
@@ -107,5 +108,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

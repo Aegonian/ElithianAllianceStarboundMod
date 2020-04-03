@@ -6,8 +6,9 @@
   "rarity" : "Uncommon",
   "category" : "shield",
   "description" : "A sturdy metal shield of Trinkian design.",
+  "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "Circuit Shield",
-  "tooltipKind" : "shield",
+  "tooltipKind" : "thea-shield-mf",
   "twoHanded" : false,
   "itemTags" : ["shield", "trink"],
   
@@ -57,5 +58,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandshield.lua"
+  "builder" : "/items/buildscripts/thea-buildshield-mf.lua"
 }

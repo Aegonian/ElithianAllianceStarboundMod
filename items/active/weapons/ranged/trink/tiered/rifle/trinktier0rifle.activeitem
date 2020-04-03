@@ -5,9 +5,10 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "description" : "An outdated Trink laser rifle. Taken out of commission years ago, but it still packs a punch.",
+  "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "Trinkian Rifle Mk I",
   "level" : 1,
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-mf",
   "category" : "Laser Rifle",
   "itemTags" : ["weapon","ranged","assaultrifle","energy","trink"],
   "twoHanded" : true,
@@ -87,5 +88,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

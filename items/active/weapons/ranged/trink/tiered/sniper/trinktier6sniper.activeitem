@@ -5,9 +5,10 @@
   "maxStack" : 1,
   "rarity" : "legendary",
   "description" : "A high-grade, standard issue laser sniper rifle built by the Trinks.",
+  "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "Circuit Sniper Mk III",
   "level" : 6,
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-mf",
   "category" : "Laser Sniper",
   "itemTags" : ["weapon","ranged","sniperrifle","energy","trink"],
   "twoHanded" : true,
@@ -149,5 +150,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

@@ -5,11 +5,12 @@
   "maxStack" : 1,
   "rarity" : "legendary",
   "description" : "A minimalistic energy weapon issued to Droden soldiers.",
+  "manufacturer" : "^gray;Vanguard/Legion^reset;",
   "shortdescription" : "Droden Sniper Rifle",
   "level" : 6,
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-mf",
   "category" : "Sniper Rifle",
-  "itemTags" : ["weapon","ranged","sniperrifle","energy","avikan"],
+  "itemTags" : ["weapon","ranged","sniperrifle","energy","avikan","vanguard","legion"],
   "twoHanded" : true,
   
   "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
@@ -89,5 +90,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

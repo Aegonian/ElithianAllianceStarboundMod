@@ -5,11 +5,12 @@
   "maxStack" : 1,
   "rarity" : "legendary",
   "description" : "An energy weapon used by high-ranking members of the Clanguard.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Clanguard Hammer",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-mf",
   "category" : "hammer",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","hammer","avikan"],
+  "itemTags" : ["weapon","melee","hammer","avikan","vanguard"],
 
   "inventoryIcon" : "avikantier6hammericon.png",
 
@@ -99,5 +100,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

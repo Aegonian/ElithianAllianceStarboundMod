@@ -5,9 +5,10 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "description" : "A heavy, double barrel laser cannon.",
+  "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "Circuit Dual Cannon",
   "level" : 6,
-  "tooltipKind" : "thea-minigun",
+  "tooltipKind" : "thea-minigun-mf",
   "category" : "Laser Cannon",
   "itemTags" : ["weapon","ranged","minigun","energy","trink"],
   "twoHanded" : true,
@@ -142,5 +143,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/thea-buildminigun.lua"
+  "builder" : "/items/buildscripts/thea-buildminigun-mf.lua"
 }

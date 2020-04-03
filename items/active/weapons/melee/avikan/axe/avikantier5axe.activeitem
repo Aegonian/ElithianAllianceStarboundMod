@@ -5,11 +5,12 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "description" : "A metal axe. It uses a vibro-blade design.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Nomada Axe",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-mf",
   "category" : "axe",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","axe","avikan"],
+  "itemTags" : ["weapon","melee","axe","avikan","vanguard"],
 
   "inventoryIcon" : "avikantier5axe.png",
 
@@ -42,5 +43,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

@@ -6,11 +6,12 @@
   "maxStack" : 1,
   "rarity" : "essential",
   "description" : "^orange;A staff armed with dual static linecharge drives.",
+  "manufacturer" : "^gray;Anakahr Systems^reset;",
   "shortdescription" : "^orange;Anakahr Staff^white;",
-  "tooltipKind" : "thea-sword-unique",
+  "tooltipKind" : "thea-sword-unique-mf",
   "category" : "Line Staff",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","bowstaff","avikan","theaUnique"],
+  "itemTags" : ["weapon","melee","bowstaff","avikan","theaUnique","anakahr"],
 
   "inventoryIcon" : "avikan-anakahrstaff.png",
   
@@ -123,5 +124,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }
