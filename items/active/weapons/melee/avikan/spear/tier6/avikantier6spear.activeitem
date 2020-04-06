@@ -5,11 +5,12 @@
   "maxStack" : 1,
   "rarity" : "legendary",
   "description" : "An energy weapon used by high-ranking members of the Clanguard.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Clanguard Spear",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-mf",
   "category" : "spear",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","spear","avikan"],
+  "itemTags" : ["weapon","melee","spear","avikan","vanguard"],
 
   "inventoryIcon" : "avikantier6spearicon.png",
 
@@ -101,5 +102,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

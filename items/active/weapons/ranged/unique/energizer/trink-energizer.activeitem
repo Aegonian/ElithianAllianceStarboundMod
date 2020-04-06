@@ -5,10 +5,11 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "^orange;An energy rifle built for tactical incursions.",
+  "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "^orange;HL-5 Energizer^white;",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-gun-unique",
+  "tooltipKind" : "thea-gun-unique-mf",
   "category" : "Directed Energy Rifle",
   "itemTags" : ["weapon","ranged","laserrifle","trink","energy","theaUnique"],
   "twoHanded" : true,
@@ -159,5 +160,5 @@
 	"maxSearchDistance" : 52
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

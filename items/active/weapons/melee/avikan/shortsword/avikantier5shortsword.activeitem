@@ -5,8 +5,9 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "description" : "A sharp metal shortsword designed by the Nomada.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Nomada Sword",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-mf",
   "category" : "shortsword",
   "twoHanded" : false,
   "itemTags" : ["weapon","melee","shortsword","avikan"],
@@ -30,5 +31,5 @@
     "baseDps" : 7.5
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

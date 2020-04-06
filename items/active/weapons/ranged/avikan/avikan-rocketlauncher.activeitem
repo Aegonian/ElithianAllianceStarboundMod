@@ -5,11 +5,12 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "description" : "A heavy impact rocket launcher issued to Avikan military forces.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Vanguard RPG",
   "level" : 6,
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-mf",
   "category" : "rocketLauncher",
-  "itemTags" : ["weapon","ranged","rocketlauncher","avikan"],
+  "itemTags" : ["weapon","ranged","rocketlauncher","avikan","vanguard"],
   "twoHanded" : true,
   
   "cursor" : "/cursors/thea-squarereticle.cursor",
@@ -99,5 +100,5 @@
 	"projectileType" : "avikanclusterrocket"
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

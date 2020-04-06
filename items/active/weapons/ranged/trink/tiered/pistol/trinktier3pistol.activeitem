@@ -5,9 +5,10 @@
   "maxStack" : 1,
   "rarity" : "uncommon",
   "description" : "A medium-grade, standard issue laser pistol built by the Trinks.",
+  "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "Circuit Pistol Mk III",
   "level" : 3,
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-mf",
   "category" : "Laser Pistol",
   "itemTags" : ["weapon","ranged","machinepistol","energy","trink"],
   "twoHanded" : false,
@@ -89,5 +90,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

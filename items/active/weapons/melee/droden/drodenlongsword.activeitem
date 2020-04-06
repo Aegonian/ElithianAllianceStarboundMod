@@ -5,11 +5,12 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "description" : "A thin and minimalistic longsword, designed for use by Droden soldiers.",
+  "manufacturer" : "^gray;Vanguard/Legion^reset;",
   "shortdescription" : "Droden Longsword",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-mf",
   "category" : "Longsword",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","broadsword","droden"],
+  "itemTags" : ["weapon","melee","broadsword","droden","vanguard","legion"],
 
   "inventoryIcon" : "drodenlongsword.png",
 
@@ -32,5 +33,5 @@
 
   "altAbilityType" : "superspinslash",
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

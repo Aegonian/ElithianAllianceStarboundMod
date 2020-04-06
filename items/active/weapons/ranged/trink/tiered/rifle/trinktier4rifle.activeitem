@@ -5,9 +5,10 @@
   "maxStack" : 1,
   "rarity" : "uncommon",
   "description" : "A medium-grade, standard issue laser rifle built by the Trinks.",
+  "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "Circuit Rifle Mk IV",
   "level" : 4,
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-mf",
   "category" : "Laser Rifle",
   "itemTags" : ["weapon","ranged","assaultrifle","energy","trink"],
   "twoHanded" : true,
@@ -147,5 +148,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

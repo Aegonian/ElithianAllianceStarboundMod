@@ -6,10 +6,11 @@
   "rarity" : "legendary",
   "category" : "shield",
   "description" : "A sturdy metal shield issued to Avikan soldiers.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Nomada Shield",
-  "tooltipKind" : "shield",
+  "tooltipKind" : "thea-shield-mf",
   "twoHanded" : false,
-  "itemTags" : ["shield", "avikan"],
+  "itemTags" : ["shield", "avikan","vanguard"],
   
   "inventoryIcon" : "images/avikanmetal.png:nearidle",
 
@@ -54,5 +55,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandshield.lua"
+  "builder" : "/items/buildscripts/thea-buildshield-mf.lua"
 }

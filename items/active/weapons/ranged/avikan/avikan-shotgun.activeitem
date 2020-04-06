@@ -5,11 +5,12 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "description" : "A powerful shotgun issued to Avikan military forces.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Vanguard Shotgun",
   "level" : 5,
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-mf",
   "category" : "Shotgun",
-  "itemTags" : ["weapon","ranged","shotgun","avikan"],
+  "itemTags" : ["weapon","ranged","shotgun","avikan","vanguard"],
   "twoHanded" : true,
   
   "cursor" : "/cursors/thea-widereticle.cursor",
@@ -144,5 +145,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

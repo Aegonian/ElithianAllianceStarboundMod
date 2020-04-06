@@ -5,12 +5,13 @@
   "inventoryIcon" : "avikan-nomadashortbowicon.png",
   "maxStack" : 1,
   "rarity" : "Rare",
-  "tooltipKind" : "thea-bow",
+  "tooltipKind" : "thea-bow-mf",
   "category" : "Shortbow",
   "description" : "^gray;A light and quick bow for harvesting monster parts.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Nomada Shortbow",
   "twoHanded" : true,
-  "itemTags" : ["weapon","ranged","bow","avikan"],
+  "itemTags" : ["weapon","ranged","bow","avikan","vanguard"],
 
   "radioMessagesOnPickup" : [ "pickupavikanhunting" ],
 

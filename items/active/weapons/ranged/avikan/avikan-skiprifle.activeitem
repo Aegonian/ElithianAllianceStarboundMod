@@ -5,11 +5,12 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "description" : "A compact skiprifle issued to Avikan military forces.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Vanguard Skiprifle",
   "level" : 5,
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-mf",
   "category" : "Skip Rifle",
-  "itemTags" : ["weapon","ranged","machinepistol","avikan"],
+  "itemTags" : ["weapon","ranged","machinepistol","avikan","vanguard"],
   "twoHanded" : false,
 
   "animation" : "/items/active/weapons/ranged/gun.animation",
@@ -90,5 +91,5 @@
   
   //"altAbilitySource" : "/items/active/weapons/ranged/altabilities/focus/focus.altability",
   
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

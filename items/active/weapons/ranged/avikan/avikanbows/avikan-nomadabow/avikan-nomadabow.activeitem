@@ -5,12 +5,13 @@
   "inventoryIcon" : "avikan-nomadabowicon.png",
   "maxStack" : 1,
   "rarity" : "Rare",
-  "tooltipKind" : "thea-bow",
+  "tooltipKind" : "thea-bow-mf",
   "category" : "Compound Bow",
   "description" : "^gray;Used to harvest monster bones and hides.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Nomada Bow",
   "twoHanded" : true,
-  "itemTags" : ["weapon","ranged","bow","avikan"],
+  "itemTags" : ["weapon","ranged","bow","avikan","vanguard"],
 
   "radioMessagesOnPickup" : [ "pickupavikanhunting" ],
 

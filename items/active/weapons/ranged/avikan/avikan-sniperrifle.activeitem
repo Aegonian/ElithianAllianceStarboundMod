@@ -5,11 +5,12 @@
   "maxStack" : 1,
   "rarity" : "legendary",
   "description" : "A high-powered sniper rifle issued to Avikan military forces.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Vanguard Sniper Rifle",
   "level" : 6,
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-mf",
   "category" : "Sniper Rifle",
-  "itemTags" : ["weapon","ranged","sniperrifle","avikan"],
+  "itemTags" : ["weapon","ranged","sniperrifle","avikan","vanguard"],
   "twoHanded" : true,
   
   "cursor" : "/cursors/thea-precisereticle.cursor",
@@ -139,5 +140,5 @@
 	"laserColourInactive" : [0, 0, 0, 0]
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

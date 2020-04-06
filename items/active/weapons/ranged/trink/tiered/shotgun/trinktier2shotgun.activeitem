@@ -5,9 +5,10 @@
   "maxStack" : 1,
   "rarity" : "common",
   "description" : "A low-grade, standard issue laser shotgun built by the Trinks.",
+  "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "Circuitbreaker Mk II",
   "level" : 2,
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-mf",
   "category" : "Laser Shotgun",
   "itemTags" : ["weapon","ranged","shotgun","energy","trink"],
   "twoHanded" : true,
@@ -149,5 +150,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

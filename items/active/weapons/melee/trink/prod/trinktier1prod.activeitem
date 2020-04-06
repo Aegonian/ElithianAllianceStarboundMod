@@ -5,8 +5,9 @@
   "maxStack" : 1,
   "rarity" : "common",
   "description" : "An electric prod built to keep assailants at bay.",
+  "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "Circuit Prod Mk I",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-mf",
   "category" : "Electric Prod",
   "twoHanded" : false,
   "itemTags" : ["weapon","melee","prod","trink"],
@@ -91,5 +92,5 @@
     }
   },
   
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }
