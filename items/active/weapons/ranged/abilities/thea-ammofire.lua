@@ -69,21 +69,6 @@ function TheaAmmoFire:auto()
 
   self:fireProjectile()
   self:muzzleFlash()
-  
-  --Remove ammo from the magazine, and cycle the weapon if needed
-  self.currentAmmo = self.currentAmmo - 1
-  activeItem.setInstanceValue("ammoCount", self.currentAmmo)
-  
-  --Optional firing animations
-  if self.cycleAfterShot == true then
-	if animator.animationState("gun") == "readyState1" then
-	  animator.setAnimationState("gun", "startCycle1")
-	elseif animator.animationState("gun") == "readyState2" then
-	  animator.setAnimationState("gun", "startCycle2")
-	end
-  elseif self.fireAnimation == true then
-	animator.setAnimationState("gun", "fire")
-  end
 
   if self.stances.fire.duration then
     util.wait(self.stances.fire.duration)
@@ -104,23 +89,8 @@ function TheaAmmoFire:burst()
 
     self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(1 - shots / self.burstCount, 0, self.stances.fire.weaponRotation))
     self.weapon.relativeArmRotation = util.toRadians(interp.linear(1 - shots / self.burstCount, 0, self.stances.fire.armRotation))
-
+  
     util.wait(self.burstTime)
-  end
-  
-  --Remove ammo from the magazine, and cycle the weapon if needed
-  self.currentAmmo = self.currentAmmo - 1
-  activeItem.setInstanceValue("ammoCount", self.currentAmmo)
-  
-  --Optional firing animations
-  if self.cycleAfterShot == true then
-	if animator.animationState("gun") == "readyState1" then
-	  animator.setAnimationState("gun", "startCycle1")
-	elseif animator.animationState("gun") == "readyState2" then
-	  animator.setAnimationState("gun", "startCycle2")
-	end
-  elseif self.fireAnimation == true then
-	animator.setAnimationState("gun", "fire")
   end
 
   self.cooldownTimer = (self.fireTime - self.burstTime) * self.burstCount
@@ -239,6 +209,17 @@ function TheaAmmoFire:muzzleFlash()
   animator.playSound("fire")
 
   animator.setLightActive("muzzleFlash", true)
+  
+  --Optional firing animations
+  if self.cycleAfterShot == true then
+	if animator.animationState("gun") == "readyState1" then
+	  animator.setAnimationState("gun", "startCycle1")
+	elseif animator.animationState("gun") == "readyState2" then
+	  animator.setAnimationState("gun", "startCycle2")
+	end
+  elseif self.fireAnimation == true then
+	animator.setAnimationState("gun", "fire")
+  end
 end
 
 function TheaAmmoFire:fireProjectile(projectileType, projectileParams, inaccuracy, firePosition, projectileCount)
@@ -247,6 +228,10 @@ function TheaAmmoFire:fireProjectile(projectileType, projectileParams, inaccurac
   params.powerMultiplier = activeItem.ownerPowerMultiplier()
   params.speed = util.randomInRange(params.speed)
 
+  --Remove ammo from the magazine, and cycle the weapon if needed
+  self.currentAmmo = self.currentAmmo - 1
+  activeItem.setInstanceValue("ammoCount", self.currentAmmo)
+	
   if not projectileType then
     projectileType = self.projectileType
   end
