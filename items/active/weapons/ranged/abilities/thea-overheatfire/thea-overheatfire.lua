@@ -24,7 +24,7 @@ end
 function TheaOverheatFire:update(dt, fireMode, shiftHeld)
   WeaponAbility.update(self, dt, fireMode, shiftHeld)
   
-  self.heat = config.getParameter("heat", 0)
+  self.heat = math.min(config.getParameter("heat", 0), self.overheatThreshold)
   self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
   self.idleTimer = math.min(self.coolingIdleTime, self.idleTimer + self.dt)
 

@@ -1,8 +1,8 @@
 {
-  "kind" : "avikanmetalshard2",
+  "kind" : "akkimarimetalshard",
   "definition" : {
     "type" : "animated",
-    "animation" : "/animations/shards/avikanmetalshard2.animation",
+    "animation" : "/animations/shards/akkimarimetalshard.animation",
     "initialVelocity" : [0.0, 15.0],
     "finalVelocity" : [0.0, -60.0],
     "approach" : [0.3, 60],

@@ -6,7 +6,7 @@
   "rarity" : "Essential",
   "description" : "^orange;A heavy Akkimari-built shieldblade inspired by Aeginian designs.",
   "shortdescription" : "^orange;Kraavaar Blade^white;",
-  "tooltipKind" : "thea-sword-unique",
+  "tooltipKind" : "thea-sword-patreon",
   "category" : "Shieldblade",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","shieldblade","akkimari","theaUnique"],

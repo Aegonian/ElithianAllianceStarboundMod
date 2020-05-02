@@ -1,7 +1,7 @@
 require "/scripts/util.lua"
 require "/scripts/vec2.lua"
 
-function init()  
+function init()
   animator.setParticleEmitterOffsetRegion("flames", mcontroller.boundBox())
   animator.setParticleEmitterActive("flames", true)
   effect.setParentDirectives(config.getParameter("directive"))

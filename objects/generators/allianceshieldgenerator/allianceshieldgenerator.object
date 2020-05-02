@@ -66,7 +66,20 @@
   "animationCustom" : {
     "sounds" : {
       "on" : [ "/sfx/objects/apexconsole2switch.ogg" ],
-      "off" : [ "/sfx/objects/apexconsole2switch.ogg" ]
+      "off" : [ "/sfx/objects/apexconsole2switch.ogg" ],
+      "error" : [ "/sfx/interface/clickon_error.ogg" ],
+      "damage" : [ "/sfx/melee/blunt_hit_metal1.ogg", "/sfx/melee/blunt_hit_metal2.ogg", "/sfx/melee/blunt_hit_metal3.ogg", "/sfx/melee/blunt_hit_metal4.ogg", "/sfx/melee/blunt_hit_metal5.ogg", "/sfx/melee/blunt_hit_metal6.ogg" ]
+    },
+    "particleEmitters" : {
+      "damage" : {
+		"enabled" : true,
+		"emissionRate" : 10,
+        "burstCount" : 10,
+		"offsetRegion" : [0, 0, 18, 2],
+        "particles" : [
+          { "particle" : "alliancemetalshard" }
+        ]
+      }
     }
   },
   "animationParts" : {
@@ -79,21 +92,33 @@
   "smashable" : true,
   "smashSounds" : [ "/sfx/melee/kill_robotic1.ogg" ],
   "health" : 750,
-  "interactive" : false,
+  "interactive" : true,
 
-  "smashParticles" : [ { "count" : 50, "particle" : "alliancemetalshard" }, { "count" : 50, "particle" : "alliancemetalshard" }, { "count" : 10, "particle" : "generatorglassshard" } ],
+  "smashParticles" : [
+	{ "count" : 50, "particle" : "alliancemetalshard" },
+	{ "count" : 50, "particle" : "alliancemetalshard" },
+	{ "count" : 10, "particle" : "generatorglassshard" }
+  ],
   "smashDropPool" : "empty",
   "breakDropPool" : "empty",
 
   "scripts" : [ "/objects/scripts/thea-shieldgenerator.lua" ],
   "scriptDelta" : 5,
-  
+
+  //Mouth position is relative to the top-left corner of the object
+  "onMessage" : "Shield generator enabled: world protected",
+  "offMessage" : "Shield generator disabled: world unprotected",
+  "errorMessage" : "Shield generator failure: invalid placement",
   "defaultState" : false,
 
   "outputNodes" : [ [0, 0] ],
   "inputNodes" : [ [2, 1] ],
 
   "explodeOnSmash" : true,
-  "explosionProjectile" : "explosivegenerator",
-  "explosionOffset" : [1, 2]
+  "explosionConfig" : "/projectiles/explosions/theageneratorexplosion/theageneratorexplosion.config",
+  "explosionDamage" : 50,
+  "explosionPositions" : [
+	[-4, 1],
+	[5, 1]
+  ]
 }

@@ -41,7 +41,7 @@
 	"projectileInaccuracy" : 0.05,
 	"projectileParameters" : {
       "knockback" : 6,
-      "speed" : 25
+      "speed" : 35
     },
 	
     "fireTime" : 0.8,

@@ -17,7 +17,7 @@
   "health" : 4,
   "category" : "materials",
   
-  "renderTemplate" : "/tiles/thea-avikanleathertemplate.config",
+  "renderTemplate" : "/tiles/thea-avikanpurplefabrictemplate.config",
   "renderParameters" : {
     "texture" : "avikanpurplefabrictentpole.png",
     "variants" : 1,

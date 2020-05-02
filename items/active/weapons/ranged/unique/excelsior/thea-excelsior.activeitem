@@ -60,8 +60,8 @@
 	"heatPerShot" : 10,				//Heat generated per shot
 	
 	"coolingIdleTime" : 0.25,		//Time before passive cooling kicks in
-	"heatLossRate" : 40,			//Heat lost per second while not overheated
-	"heatLossRateOverheated" : 25,	//Heat lost per second while overheated
+	"heatLossRate" : 70,			//Heat lost per second while not overheated
+	"heatLossRateOverheated" : 40,	//Heat lost per second while overheated
 	
 	"overheatThreshold" : 80,		//Heat threshold to overheat
 	"hotThreshold" : 60,			//Heat threshold for "hot" animation state

@@ -4,6 +4,7 @@
       "switchState" : {
         "default" : "off",
         "states" : {
+          "error" : {},
           "off" : {},
           "on" : {
             "frames" : 7,
@@ -17,21 +18,25 @@
     "parts" : {
       "bg" : {
         "properties" : {
-          "centered" : false
+          "centered" : false,
+		  "fullbright" : true
         },
 
         "partStates" : {
           "switchState" : {
+            "error" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.error"
+              }
+            },
             "off" : {
               "properties" : {
                 "image" : "<partImage>:<color>.off"
               }
             },
-
             "on" : {
               "properties" : {
-                "image" : "<partImage>:<color>.<frame>",
-                "fullbright" : true
+                "image" : "<partImage>:<color>.<frame>"
               }
             }
           }
@@ -45,12 +50,16 @@
 
         "partStates" : {
           "switchState" : {
+            "error" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.error"
+              }
+            },
             "off" : {
               "properties" : {
                 "image" : "<partImage>:<color>.off"
               }
             },
-
             "on" : {
               "properties" : {
                 "image" : "<partImage>:<color>.<frame>"
