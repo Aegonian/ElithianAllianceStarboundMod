@@ -147,10 +147,10 @@ function activateStealth(active,propString,atInit)
   if not atInit then
     animator.playSound(active and "activate" or "deactivate")
     animator.burstParticleEmitter(active and "activate" or "deactivate")
-  
+  end
     animator.setParticleEmitterActive("cloakedParticles", active)
     animator.setParticleEmitterActive("cloakedParticles2", active)
-  end
+
   tech.setParentDirectives((active and self.directive) or nil)
   
   world.setProperty(propString, active)
