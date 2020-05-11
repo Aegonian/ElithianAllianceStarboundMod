@@ -66,7 +66,7 @@ function update(args)
 	  else
 		if self.active or propVal then
 		  --deactivateStealth()
-	  world.setProperty(propString, false)
+	        world.setProperty(propString, false)
 			delayDeactivate=true
 			return
 		elseif not propVal then
@@ -156,7 +156,7 @@ function activateStealth(active,propString,atInit)
   world.setProperty(propString, active)
   
   self.durationLeft = (active and self.maxDuration) or 0
-  self.cooldownTimer = ((not active) and self.cooldownTime) or 0
+  self.cooldownTimer = ((not (active or atInit)) and self.cooldownTime) or 0
   self.recharged=atInit or ((not active) and false) or active
   self.active = active
 end
