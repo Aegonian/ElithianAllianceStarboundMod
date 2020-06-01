@@ -24,6 +24,9 @@ function init()
   self.blinkTimer = 0
   
   tech.setParentDirectives()
+
+  delayDeactivate=true
+  delayDeactivateAtInit=true
 end
 
 function uninit()
@@ -32,29 +35,54 @@ function uninit()
 end
 
 function update(args)
+  local propString="entityinvisible" .. tostring(entity.id())
+  local propVal=world.getProperty(propString)
+  
+  if delayDeactivate then
+    --if it's not active but the user is stealthed, it's probably bugged and needs to be corrected. this happens when taking damage or firing in the same instant the tech activates
+	delayDeactivate=false
+    activateStealth(false,propString,delayDeactivateAtInit)
+	delayDeactivateAtInit=false
+	delayDeactivateEcho=true
+	return
+  end
+  
+  if delayDeactivateEcho then
+    --yes, it is really this persistently stubborn a bug that it requires this level of force
+    world.setProperty(propString, false)
+	delayDeactivateEcho=false
+	return
+  end
+  
   --Double tap behaviour
   if self.doubleTapTimer > 0 then
 	self.doubleTapTimer = math.max(0, self.doubleTapTimer - args.dt)
   end
-  
+  --sb.logInfo("stealthtechupdate: %s",{propString,propVal})
   if args.moves["up"] and self.cooldownTimer == 0 and not status.statPositive("activeMovementAbilities") then
 	if not self.lastMoves["up"] then
 	  if self.doubleTapTimer == 0 then
 		self.doubleTapTimer = self.maximumDoubleTapTime
 	  else
-		if self.active then
-		  deactivateStealth()
-		elseif not world.getProperty("entityinvisible" .. tostring(entity.id())) then
-		  activateStealth()
+		if self.active or propVal then
+		  --deactivateStealth()
+	        world.setProperty(propString, false)
+			delayDeactivate=true
+			return
+		elseif not propVal then
+		  activateStealth(true,propString)
 		end
 		self.doubleTapTimer = 0
 	  end
 	end
   end
-  
+
   --Deactivate stealth if any of the following buttons are pressed: primaryFire, altFire, special1
   if (args.moves["primaryFire"] or args.moves["altFire"] or args.moves["special1"]) and self.active then
-	deactivateStealth()
+	--deactivateStealth()
+	  world.setProperty(propString, false)
+	delayDeactivate=true
+	return
   end
   
   --Count down the cooldown timer
@@ -74,7 +102,10 @@ function update(args)
   for _, notification in ipairs(damageNotificationsIncoming) do
 	if notification.healthLost > 1 then
 	  if self.active then
-		deactivateStealth()
+		--deactivateStealth()
+	  world.setProperty(propString, false)
+		delayDeactivate=true
+		return
 	  end
 	end
   end
@@ -97,7 +128,10 @@ function update(args)
 	
 	--If we are out of time, deactivate stealth
 	if self.durationLeft == 0 then
-	  deactivateStealth()
+	  --deactivateStealth()
+	  world.setProperty(propString, false)
+	  delayDeactivate=true
+	  return
 	end
   end
   
@@ -107,21 +141,27 @@ function update(args)
   self.lastMoves = args.moves
 end
 
-function activateStealth()
-  animator.playSound("activate")
-  animator.burstParticleEmitter("activate")
+function activateStealth(active,propString,atInit)
+--sb.logInfo("thea-stealthtech: %s",{active,propString,novfx})
+  active = active
+  if not atInit then
+    animator.playSound(active and "activate" or "deactivate")
+    animator.burstParticleEmitter(active and "activate" or "deactivate")
+  end
+    animator.setParticleEmitterActive("cloakedParticles", active)
+    animator.setParticleEmitterActive("cloakedParticles2", active)
+
+  tech.setParentDirectives((active and self.directive) or nil)
   
-  animator.setParticleEmitterActive("cloakedParticles", true)
-  animator.setParticleEmitterActive("cloakedParticles2", true)
+  world.setProperty(propString, active)
   
-  tech.setParentDirectives(self.directive)
-  
-  world.setProperty("entityinvisible" .. tostring(entity.id()), true)
-  self.active = true
-  
-  self.durationLeft = self.maxDuration
+  self.durationLeft = (active and self.maxDuration) or 0
+  self.cooldownTimer = ((not (active or atInit)) and self.cooldownTime) or 0
+  self.recharged=atInit or ((not active) and false) or active
+  self.active = active
 end
 
+--[[
 function deactivateStealth()
   animator.playSound("deactivate")
   animator.burstParticleEmitter("deactivate")
@@ -137,3 +177,4 @@ function deactivateStealth()
   self.cooldownTimer = self.cooldownTime
   self.recharged = false
 end
+]]
