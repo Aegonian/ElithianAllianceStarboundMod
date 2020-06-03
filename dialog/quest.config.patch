@@ -849,7 +849,7 @@
 	"path": "/barter/trade/droden",
 	"value": {
 	  "default": [
-		"Accepting delivery of goods. Proferring <receivedItems> requested by <questGiver>."
+		"Accepting delivery of goods. Proffering <receivedItems> requested by <questGiver>."
 	  ]
 	}
   },
@@ -1245,7 +1245,7 @@
 	"path": "/bribe/giftAccepted/akkimari",
 	"value": {
 	  "default": [
-		"Akki accept bibe-<questGiver>. Akki like being paid."
+		"Akki accept bribe-<questGiver>. Akki like being paid."
 	  ]
 	}
   },
