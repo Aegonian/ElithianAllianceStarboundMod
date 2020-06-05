@@ -23,7 +23,7 @@
     "variants" : 3,
     "lightTransparent" : true,
     "occludesBelow" : false,
-    "multiColored" : false,
+    "multiColored" : true,
     "zLevel" : 0,
     "platform" : true
   }
