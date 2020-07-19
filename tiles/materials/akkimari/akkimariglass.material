@@ -23,7 +23,7 @@
     "variants" : 10,
     "lightTransparent" : true,
     "occludesBelow" : false,
-    "multiColored" : false,
+    "multiColored" : true,
     "zLevel" : 8
   }
 }

@@ -21,7 +21,7 @@
   "renderParameters" : {
     "texture" : "akkimarirail.png",
     "variants" : 5,
-    "multiColored" : false,
+    "multiColored" : true,
     "lightTransparent" : true,
     "occludesBelow" : false,
     "zLevel" : 0

@@ -21,7 +21,7 @@
   "renderParameters" : {
     "texture" : "trinkrail.png",
     "variants" : 4,
-    "multiColored" : false,
+    "multiColored" : true,
     "lightTransparent" : true,
     "occludesBelow" : false,
     "zLevel" : 0
