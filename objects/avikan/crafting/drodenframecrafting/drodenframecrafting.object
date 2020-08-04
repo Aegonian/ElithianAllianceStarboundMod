@@ -33,7 +33,7 @@
 
   "aegiDescription" : "A basic workshop where new Droden frames are made.",
   "avikanDescription" : "This workshop has some specilized tools used to create new Droden frames.",
-  "erixianDescription" : "A basic workshop, for manually crafting new Droden frames.",
+  "draunaarDescription" : "A basic workshop, for manually crafting new Droden frames.",
   "trinkDescription" : "This workshop is very basic, but it has all the tools it requires.",
   "hymidDescription" : "A place for creating new Droden frames.",
   "notixDescription" : "A Droden frame workshop.",
@@ -72,7 +72,7 @@
 
 		"aegiDescription" : "A basic workshop where new Droden frames are made.",
 		"avikanDescription" : "This workshop has some specilized tools used to create new Droden frames.",
-		"erixianDescription" : "A basic workshop, for manually crafting new Droden frames.",
+		"draunaarDescription" : "A basic workshop, for manually crafting new Droden frames.",
 		"trinkDescription" : "This workshop is very basic, but it has all the essentials.",
 		"hymidDescription" : "A place where new Droden frame are made.",
 		"notixDescription" : "A Droden frame workshop.",
@@ -132,7 +132,7 @@
 
 		"aegiDescription" : "A small furnace and plenty of tools, this workshop has it all.",
 		"avikanDescription" : "A fully laid out Droden frame workshop.",
-		"erixianDescription" : "This workshop is full of tools used when crafting Droden frames.",
+		"draunaarDescription" : "This workshop is full of tools used when crafting Droden frames.",
 		"trinkDescription" : "A poorly optimized workshop. The tool placement is hardly efficient.",
 		"hymidDescription" : "This workshop has all the tools one needs to craft new Droden frames.",
 		"notixDescription" : "A proper workshop, full of tools and with its own furnace, ideal for crafting Droden frames.",
@@ -193,7 +193,7 @@
 
 		"aegiDescription" : "A Droden frame factory, for creating high-quality frames.",
 		"avikanDescription" : "A largely automated Droden frame factory. These were commonplace before the Droden war.",
-		"erixianDescription" : "This factory works much faster than any organic ever could.",
+		"draunaarDescription" : "This factory works much faster than any organic ever could.",
 		"trinkDescription" : "An efficient Droden factory unit.",
 		"hymidDescription" : "Droden frames can be mass-produced at these types of factories.",
 		"notixDescription" : "A small factory capable of creating Droden frames.",

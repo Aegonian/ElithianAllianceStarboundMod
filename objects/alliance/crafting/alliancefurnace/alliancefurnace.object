@@ -35,7 +35,7 @@
   
   "aegiDescription" : "A compact stone smelter, for smelting low-temperature alloys.",
   "avikanDescription" : "A simple stone furnace, for smelting ores.",
-  "erixianDescription" : "A smelter radiating a comfortable heat.",
+  "draunaarDescription" : "A smelter radiating a comfortable heat.",
   "trinkDescription" : "A primitive construct for smelting ores.",
   "hymidDescription" : "I've never been a fan of working the forge.",
   "notixDescription" : "A hot fire blazes inside this furnace. It's making me uncomfortable.",
@@ -73,7 +73,7 @@
   
 		"aegiDescription" : "A compact stone smelter, for smelting low-temperature alloys.",
 		"avikanDescription" : "A simple stone furnace, for smelting ores.",
-		"erixianDescription" : "A smelter radiating a comfortable heat.",
+		"draunaarDescription" : "A smelter radiating a comfortable heat.",
 		"trinkDescription" : "A primitive construct for smelting ores.",
 		"hymidDescription" : "I've never been a fan of working the forge.",
 		"notixDescription" : "A hot fire blazes inside this furnace. It's making me uncomfortable.",
@@ -133,7 +133,7 @@
   
 		"aegiDescription" : "This smelter was made specifically for smelting specific types of low-grade allosteel.",
 		"avikanDescription" : "An alien smelter. It's incredibly hot.",
-		"erixianDescription" : "A comfortable heat radiates from this melter.",
+		"draunaarDescription" : "A comfortable heat radiates from this melter.",
 		"trinkDescription" : "A highly efficient smelter. The Circuit helped design it.",
 		"hymidDescription" : "This smelter is uncomfortably hot.",
 		"notixDescription" : "I should be careful around this smelter. The heat isn't good for me.",
@@ -194,7 +194,7 @@
   
 		"aegiDescription" : "A compact fusion chamber. Nothing less will do when smelting hyverianites.",
 		"avikanDescription" : "Even the metals of the Old Ones won't survive the temperatures inside this device.",
-		"erixianDescription" : "A fusion chamber. It's like a miniature sun.",
+		"draunaarDescription" : "A fusion chamber. It's like a miniature sun.",
 		"trinkDescription" : "The Aegi truly outdid themselves designing this fusion chamber.",
 		"hymidDescription" : "Despite the extreme heat inside these fusion chambers, accidents are extremely rare.",
 		"notixDescription" : "I can almost hear the heat inside this fusion chamber.",

@@ -34,7 +34,7 @@
 
   "aegiDescription" : "A crude workstation. I'd better be careful I don't cut myself on the edges...",
   "avikanDescription" : "A scrappy workstation. Poorly built and poolry designed.",
-  "erixianDescription" : "TODO.",
+  "draunaarDescription" : "TODO.",
   "trinkDescription" : "A poorly designed crafting table. It looks like it was hastily put together.",
   "hymidDescription" : "A simple workstation. The tools are really quite primitive.",
   "notixDescription" : "This workstation seems very poorly constructed...",
@@ -73,7 +73,7 @@
 
 		"aegiDescription" : "A crude workstation. I'd better be careful I don't cut myself on the edges...",
 		"avikanDescription" : "A scrappy workstation. Poorly built and poolry designed.",
-		"erixianDescription" : "TODO.",
+		"draunaarDescription" : "TODO.",
 		"trinkDescription" : "A poorly designed crafting table. It looks like it was hastily put together.",
 		"hymidDescription" : "A simple workstation. The tools are really quite primitive.",
 		"notixDescription" : "This workstation seems very poorly constructed...",
@@ -131,7 +131,7 @@
 
 		"aegiDescription" : "A simple blueprint board.",
 		"avikanDescription" : "Alien tools and blueprints. What do they craft here?",
-		"erixianDescription" : "TODO.",
+		"draunaarDescription" : "TODO.",
 		"trinkDescription" : "A rather crudely built workstation.",
 		"hymidDescription" : "A workstation made of scrap metal. Sturdier than it looks.",
 		"notixDescription" : "This workstation isn't anything special, but it'll get the job done.",
@@ -192,7 +192,7 @@
 
 		"aegiDescription" : "An expertly-built workstation. The screens are odd, but highly detailed.",
 		"avikanDescription" : "These screns display blueprints for all sorts of alien technology.",
-		"erixianDescription" : "TODO.",
+		"draunaarDescription" : "TODO.",
 		"trinkDescription" : "These screens are surprisingly efficient in design.",
 		"hymidDescription" : "A sleek, multi-monitor workstation.",
 		"notixDescription" : "Without haptic feedback, these screens are pretty useless to me.",
