@@ -1,0 +1,9 @@
+{
+  "name" : "rust",
+  "category" : "trinkoid",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "rust.png"
+  }
+}

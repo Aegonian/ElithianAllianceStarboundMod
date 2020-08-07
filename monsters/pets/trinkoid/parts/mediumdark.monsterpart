@@ -1,0 +1,9 @@
+{
+  "name" : "mediumdark",
+  "category" : "trinkoid",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "mediumdark.png"
+  }
+}
