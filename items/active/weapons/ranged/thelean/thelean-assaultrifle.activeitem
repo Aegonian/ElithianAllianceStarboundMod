@@ -24,6 +24,11 @@
   "animationCustom" : {
     "sounds" : {
       "fire" : [ "/sfx/gun/plasma_mp1.ogg" ]
+    },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [90, 45, 0]
+	  }
     }
   },
 

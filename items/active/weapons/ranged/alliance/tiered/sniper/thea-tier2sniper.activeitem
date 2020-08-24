@@ -36,6 +36,11 @@
     },
     "particleEmitters" : {
     },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [0, 52, 90]
+	  }
+    },
     "sounds" : {
       "fire" : [ "/sfx/gun/plasma_sniper3.ogg" ]
     }

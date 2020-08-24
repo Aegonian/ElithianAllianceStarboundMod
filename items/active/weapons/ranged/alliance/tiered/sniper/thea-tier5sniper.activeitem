@@ -33,6 +33,11 @@
     },
     "particleEmitters" : {
     },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [0, 52, 90]
+	  }
+    },
     "sounds" : {
       "fire" : [ "/sfx/gun/thea_plasmagun7.ogg" ],
 	  "altFire" : [ "/sfx/gun/ar4.ogg" ]

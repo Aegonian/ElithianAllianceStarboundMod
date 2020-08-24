@@ -30,6 +30,11 @@
 		}
       }
     },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [90, 45, 0]
+	  }
+    },
     "sounds" : {
       "fire" : [ "/sfx/gun/plasma_ar1.ogg" ]
     }

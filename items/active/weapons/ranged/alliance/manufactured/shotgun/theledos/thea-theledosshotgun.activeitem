@@ -32,6 +32,11 @@
     },
     "particleEmitters" : {
     },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [0, 66, 90]
+	  }
+    },
     "sounds" : {
       "fire" : [ "/sfx/gun/plasma_shotgun3.ogg" ]
     }

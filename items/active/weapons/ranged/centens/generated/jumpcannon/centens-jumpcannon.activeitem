@@ -24,7 +24,12 @@
 		  {"particle" : "jumpfiremuzzlesmall"}
 		]
 	  }
-	}
+	},
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [90, 45, 0]
+	  }
+    }
   },
   "baseOffset" : [-1.1, 0.35],
   "muzzleOffset" : [0.0, -0.1],

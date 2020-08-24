@@ -35,6 +35,11 @@
 		}
       }
     },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [0, 52, 90]
+	  }
+    },
     "sounds" : {
       "fire" : [ "/sfx/gun/plasma_shotgun1.ogg" ],
       "reload" : [ "/sfx/gun/reload/shotgun_reload_clip3.ogg" ]

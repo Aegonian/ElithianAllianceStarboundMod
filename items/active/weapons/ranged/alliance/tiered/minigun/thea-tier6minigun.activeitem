@@ -46,6 +46,11 @@
 		}
       }
     },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [0, 52, 90]
+	  }
+    },
     "sounds" : {
       "fire" : [ "/sfx/gun/thea_plasmagun3.ogg" ],
 	  "chargeLoop" : [ "/sfx/melee/charge_up8.ogg" ],

@@ -43,6 +43,11 @@
         ]
       }
     },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [45, 90, 25]
+	  }
+    },
     "sounds" : {
       "fire" : [ "/sfx/gun/plasma_shotgun3.ogg" ],
 	  "altFire" : [ "/sfx/gun/plasma_sniper2.ogg" ]

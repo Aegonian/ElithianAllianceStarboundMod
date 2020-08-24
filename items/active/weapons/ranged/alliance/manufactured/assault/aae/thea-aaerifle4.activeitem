@@ -35,6 +35,11 @@
     },
     "particleEmitters" : {
     },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [0, 52, 90]
+	  }
+    },
     "sounds" : {
       "fire" : [ "/sfx/gun/thea_plasmagun2.ogg" ]
     }
