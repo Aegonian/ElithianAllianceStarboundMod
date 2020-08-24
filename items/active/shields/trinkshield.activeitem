@@ -14,9 +14,10 @@
   
   "inventoryIcon" : "images/trinkshield.png:nearidle",
 
-  "animation" : "shield.animation",
+  "animation" : "thea-shieldlights.animation",
   "animationParts" : {
-    "shield" : "images/trinkshield.png"
+    "shield" : "images/trinkshield.png",
+    "shieldLights" : "images/trinkshieldlights.png"
   },
   "animationCustom" : {
     "animatedParts" : { "parts" : { "shield" : { "properties" : {
