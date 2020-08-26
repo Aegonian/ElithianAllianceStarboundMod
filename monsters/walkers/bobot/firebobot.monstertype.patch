@@ -1,0 +1,54 @@
+[
+	{
+		"op": "add",
+		"path" : "/dropPools/0/electromagneticextractor",
+		"value": "electromagneticextractorTreasure"
+	},
+	{
+		"op": "add",
+		"path" : "/dropPools/0/akkimariscrapper",
+		"value": "akkimariscrapper"
+	},
+	{
+		"op": "add",
+		"path" : "/baseParameters/statusSettings/stats/linerifleResistance",
+		"value": {
+          "baseValue" : -0.5
+        }
+	},
+	{
+		"op": "add",
+		"path" : "/baseParameters/statusSettings/stats/linerifleStatusImmunity",
+		"value": {
+          "baseValue" : 0.0
+        }
+	},
+	{
+		"op": "add",
+		"path" : "/baseParameters/statusSettings/stats/centensianenergyResistance",
+		"value": {
+          "baseValue" : 0.0
+        }
+	},
+	{
+		"op": "add",
+		"path" : "/baseParameters/statusSettings/stats/centensianenergyStatusImmunity",
+		"value": {
+          "baseValue" : 0.0
+        }
+	},
+	{
+		"op": "add",
+		"path" : "/baseParameters/statusSettings/stats/xanafianStatusImmunity",
+		"value": {
+          "baseValue" : 1.0
+        }
+	},
+	{
+		"op": "add",
+		"path" : "/baseParameters/statusSettings/stats/bleedingImmunity",
+		"value": {
+          "baseValue" : 1.0
+        }
+	}
+]

@@ -1,0 +1,51 @@
+[
+	{
+		"op": "add",
+		"path" : "/baseParameters/statusSettings/stats/linerifleResistance",
+		"value": {
+          "baseValue" : 0.0
+        }
+	},
+	{
+		"op": "add",
+		"path" : "/baseParameters/statusSettings/stats/linerifleStatusImmunity",
+		"value": {
+          "baseValue" : 0.0
+        }
+	},
+	{
+		"op": "add",
+		"path" : "/baseParameters/statusSettings/stats/centensianenergyResistance",
+		"value": {
+          "baseValue" : -0.5
+        }
+	},
+	{
+		"op": "add",
+		"path" : "/baseParameters/statusSettings/stats/centensianenergyStatusImmunity",
+		"value": {
+          "baseValue" : 0.0
+        }
+	},
+	{
+		"op": "add",
+		"path" : "/baseParameters/statusSettings/stats/bleedingImmunity",
+		"value": {
+          "baseValue" : 1.0
+        }
+	},
+	{
+		"op": "add",
+		"path" : "/baseParameters/statusSettings/stats/akkimariacidResistance",
+		"value": {
+          "baseValue" : 0.5
+        }
+	},
+	{
+		"op": "add",
+		"path" : "/baseParameters/statusSettings/stats/akkimariacidStatusImmunity",
+		"value": {
+          "baseValue" : 1.0
+        }
+	}
+]
