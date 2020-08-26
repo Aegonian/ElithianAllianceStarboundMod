@@ -50,17 +50,20 @@
           "weapon" : {
             "visible" : {
               "properties" : {
-                "image" : "<partImage>:idle"
+                "image" : "<partImage>:idle",
+				"fullbright" : false
               }
             },
             "hidden" : {
               "properties" : {
-                "image" : ""
+                "image" : "",
+				"fullbright" : false
               }
             },
             "returning" : {
               "properties" : {
-                "image" : "<partImage>:returning.<frame>"
+                "image" : "<partImage>:returning.<frame>",
+				"fullbright" : true
               }
             }
           }
