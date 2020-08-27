@@ -38,7 +38,7 @@
   "inventoryIcon" : "avikangroundlighticon.png",
   "orientations" : [
     {
-      "image" : "avikangroundlight.png:<frame>",
+	  "imageLayers" : [ { "image" : "avikangroundlight.png:<frame>", "fullbright" : true }, { "image" : "avikangroundlightlit.png:<frame>" } ],
       "imagePosition" : [0, 0],
       "animationCycle" : 0.5,
 

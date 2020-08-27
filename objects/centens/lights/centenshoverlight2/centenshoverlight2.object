@@ -46,7 +46,8 @@
 
   "animation" : "centenshoverlight2.animation",
   "animationParts" : {
-    "object" : "centenshoverlight2.png"
+    "object" : "centenshoverlight2.png",
+    "objectFullbright" : "centenshoverlight2fullbright.png"
   },
   "animationPosition" : [0, 0],
   

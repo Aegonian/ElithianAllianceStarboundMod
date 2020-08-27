@@ -50,9 +50,10 @@
   "soundEffect" : "/sfx/objects/fluorescent_light_quiet.ogg",
   "soundEffectRangeMultiplier" : 0.5,
   
-  "animation" : "/objects/wired/light/lighttoggle.animation",
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
   "animationParts" : {
-    "light" : "avikanlightstrip.png"
+    "bg" : "avikanlightstrip.png",
+    "fg" : "avikanlightstriplit.png"
   },
   "animationPosition" : [-8, 0],
 

@@ -35,7 +35,7 @@
   "inventoryIcon" : "centensartefacticon.png",
   "orientations" : [
     {
-	  "dualImage" : "pedestal.png:<color>",
+	  "imageLayers" : [ { "image" : "pedestal.png:<color>", "fullbright" : true }, { "image" : "pedestallit.png:<color>" } ],
       "imagePosition" : [0, 0],
 
 	  "spaces" : [
@@ -51,6 +51,7 @@
   "animation" : "centensartefact.animation",
   "animationParts" : {
     "pedestal" : "pedestal.png",
+    "pedestallit" : "pedestallit.png",
     "item" : "artefact.png"
   },
   "animationPosition" : [0, 0],

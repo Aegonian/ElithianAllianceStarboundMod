@@ -49,7 +49,7 @@
   "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
   "animationParts" : {
     "bg" : "alliancelightstrip.png",
-    "fg" : "alliancelightstriplit.png"
+    "fg" : "alliancelightstrip.png"
   },
   "animationPosition" : [-8, 0],
 

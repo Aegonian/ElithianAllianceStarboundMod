@@ -29,6 +29,23 @@
             }
           }
         }
+      },
+      "objectFullbright" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : false,
+          "fullbright" : true,
+          "transformationGroups" : [ "floatingObject" ]
+        },
+        "partStates" : {
+          "objectState" : {
+            "floating" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.<frame>"
+              }
+            }
+          }
+        }
       }
     }
   },

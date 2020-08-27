@@ -51,7 +51,9 @@
 
   "animation" : "avikansmalllightorb.animation",
   "animationParts" : {
-    "object" : "avikansmalllightorb.png"
+    "object" : "avikansmalllightorb.png",
+    "objectlit" : "avikansmalllightorblit.png"
+
   },
   "animationPosition" : [0, 0],
   

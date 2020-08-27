@@ -17,6 +17,23 @@
       "object" : {
         "properties" : {
           "zLevel" : 0,
+          "fullbright" : true,
+          "centered" : false,
+          "transformationGroups" : [ "floatingObject" ]
+        },
+        "partStates" : {
+          "objectState" : {
+            "floating" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "objectlit" : {
+        "properties" : {
+          "zLevel" : 1,
           "centered" : false,
           "transformationGroups" : [ "floatingObject" ]
         },
