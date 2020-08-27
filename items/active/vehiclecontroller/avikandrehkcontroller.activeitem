@@ -24,7 +24,8 @@
   "vehicleImage" : "/vehicles/avikan/avikandrehk/avikandrehk.png",
 
   "animationParts" : {
-    "casing" : "avikandrehkcontroller.png"
+    "casing" : "avikandrehkcontroller.png",
+    "lights" : "avikandrehkcontrollerlights.png"
   },
 
   "inventoryIcon" : "avikandrehkcontroller.png:full",

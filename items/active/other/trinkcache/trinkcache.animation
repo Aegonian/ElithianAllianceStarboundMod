@@ -29,8 +29,41 @@
     "parts" : {
 	  "treasurebox" : {
         "properties" : {
+		  "zLevel" : 0,
           "centered" : true,
           "fullbright" : false,
+          "offset" : [0.0, 0.0]
+        },
+        "partStates" : {
+          "treasurebox" : {
+            "closed" : {
+              "properties" : {
+                "image" : "<partImage>:closed.<frame>"
+              }
+            },
+            "opening" : {
+              "properties" : {
+                "image" : "<partImage>:opening.<frame>"
+              }
+            },
+            "opentransition" : {
+              "properties" : {
+                "image" : "<partImage>:open.<frame>"
+              }
+            },
+            "open" : {
+              "properties" : {
+                "image" : "<partImage>:open.<frame>"
+              }
+            }
+          }
+        }
+      },
+	  "lights" : {
+        "properties" : {
+		  "zLevel" : 1,
+          "centered" : true,
+          "fullbright" : true,
           "offset" : [0.0, 0.0]
         },
         "partStates" : {

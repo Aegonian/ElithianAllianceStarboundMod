@@ -24,7 +24,8 @@
   "vehicleImage" : "/vehicles/akkimari/akkimarichaser/akkimarichaser.png",
 
   "animationParts" : {
-    "casing" : "akkimarichasercontroller.png"
+    "casing" : "akkimarichasercontroller.png",
+    "lights" : "akkimarichasercontrollerlights.png"
   },
 
   "inventoryIcon" : "akkimarichasercontroller.png:full",

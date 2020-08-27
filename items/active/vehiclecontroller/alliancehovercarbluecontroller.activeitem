@@ -24,7 +24,8 @@
   "vehicleImage" : "/vehicles/alliance/alliancehovercar/alliancehovercarblue.png",
 
   "animationParts" : {
-    "casing" : "alliancehovercarbluecontroller.png"
+    "casing" : "alliancehovercarbluecontroller.png",
+    "lights" : "alliancehovercarbluecontrollerlights.png"
   },
 
   "inventoryIcon" : "alliancehovercarbluecontroller.png:full",

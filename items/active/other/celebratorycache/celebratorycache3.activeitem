@@ -13,7 +13,8 @@
   "inventoryIcon" : "celebratorycacheicon.png",
   "animation" : "celebratorycache.animation",
   "animationParts" : {
-    "treasurebox" : "celebratorycache.png"
+    "treasurebox" : "celebratorycache.png",
+    "lights" : "celebratorycachelights.png"
   },
   "animationCustom" : {
     "sounds" : {

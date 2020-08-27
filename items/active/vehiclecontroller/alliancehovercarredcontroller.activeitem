@@ -24,7 +24,8 @@
   "vehicleImage" : "/vehicles/alliance/alliancehovercar/alliancehovercarred.png",
 
   "animationParts" : {
-    "casing" : "alliancehovercarredcontroller.png"
+    "casing" : "alliancehovercarredcontroller.png",
+    "lights" : "alliancehovercarredcontrollerlights.png"
   },
 
   "inventoryIcon" : "alliancehovercarredcontroller.png:full",
