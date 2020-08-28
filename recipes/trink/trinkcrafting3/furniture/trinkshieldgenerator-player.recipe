@@ -1,0 +1,14 @@
+{
+  "input" : [
+    { "item" : "trinkmetal", "count" : 20 },
+    { "item" : "trinkglassitem", "count" : 4 },
+    { "item" : "trinkelectronics", "count" : 6 },
+    { "item" : "trinkpowercore", "count" : 2 },
+    { "item" : "diamond", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "trinkshieldgenerator-player",
+    "count" : 1
+  },
+  "groups" : [ "trinkcrafting3", "furniture", "all" ]
+}
