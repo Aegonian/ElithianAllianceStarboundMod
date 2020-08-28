@@ -8,7 +8,7 @@
   },
   
   "playerSpecies" : true,
-  "humanoidConfig" : "/species/types/thea-humanoid.config",
+  "humanoidConfig" : "/species/types/thea-theleanoid.config",
   "nameGen" : [ "/species/theleannamegen.config:names", "/species/theleannamegen.config:names" ],
   "ouchNoises" : [ "/sfx/humanoid/floranhurt_female3.ogg", "/sfx/humanoid/floranhurt_female3.ogg" ],
   "charGenTextLabels" : [ "SKIN COLOR", "N/A", "SHIRT", "PANTS", "HEAD SHAPE", "FLAP COLOR", "SHIRT COLOR", "PANTS COLOR", "THELEAN", "PERSONALITY" ],
