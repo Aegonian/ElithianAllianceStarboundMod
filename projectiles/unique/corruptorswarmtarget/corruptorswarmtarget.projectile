@@ -12,7 +12,7 @@
   "actionOnReap" : [
     {
       "action" : "config",
-	  "file" : "/projectiles/explosions/violatedlinerifleimpact/violatedlinerifleimpact.config"
+	  "file" : "/projectiles/explosions/smallviolatedlinerifleimpact/smallviolatedlinerifleimpact.config"
     }
   ],
   "periodicActions" : [
