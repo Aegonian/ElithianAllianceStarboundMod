@@ -7,7 +7,7 @@
   "description" : "An energy weapon used by high-ranking members of the Clanguard.",
   "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Clanguard Spear",
-  "tooltipKind" : "thea-sword-mf",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "spear",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","spear","avikan","vanguard"],

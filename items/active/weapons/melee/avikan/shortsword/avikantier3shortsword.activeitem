@@ -6,7 +6,7 @@
   "rarity" : "Uncommon",
   "description" : "A sharp sword made of strong monster bone.",
   "shortdescription" : "Stalker's Sword",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "shortsword",
   "twoHanded" : false,
   "itemTags" : ["weapon","melee","shortsword","avikan"],

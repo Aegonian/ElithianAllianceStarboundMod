@@ -7,7 +7,7 @@
   "category" : "shield",
   "description" : "A thick and heavy shield of Thelean design.",
   "shortdescription" : "Thelean Shield",
-  "tooltipKind" : "shield",
+  "tooltipKind" : "thea-shield",
   "twoHanded" : false,
   "itemTags" : ["shield", "thelean"],
   
@@ -57,5 +57,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandshield.lua"
+  "builder" : "/items/buildscripts/thea-buildshield-mf.lua"
 }

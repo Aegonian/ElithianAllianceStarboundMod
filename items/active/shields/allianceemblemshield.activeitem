@@ -7,7 +7,7 @@
   "category" : "shield",
   "description" : "A shield adorned with the Elithian Alliance's emblem.",
   "shortdescription" : "^#BA66FF;Elithian Alliance Shield^reset;",
-  "tooltipKind" : "shield",
+  "tooltipKind" : "thea-shield",
   "twoHanded" : false,
   "itemTags" : ["shield","alliance","allianceUpgradeable"],
   

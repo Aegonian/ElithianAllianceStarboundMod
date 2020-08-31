@@ -8,7 +8,7 @@
   "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Vanguard Skiprifle",
   "level" : 5,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Skip Rifle",
   "itemTags" : ["weapon","ranged","machinepistol","avikan","vanguard"],
   "twoHanded" : false,

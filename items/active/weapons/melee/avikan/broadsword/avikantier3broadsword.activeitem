@@ -6,7 +6,7 @@
   "rarity" : "uncommon",
   "description" : "A sharp broadsword made of strong monster bone.",
   "shortdescription" : "Stalker's Blade",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "broadsword",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","broadsword","avikan"],

@@ -9,7 +9,7 @@
   "shortdescription" : "Eradicator RM16",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Rocket Launcher",
   "itemTags" : ["weapon","ranged","rocketlauncher","alliance","rimdweller","allianceUpgradeable"],
   "twoHanded" : true,

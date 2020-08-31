@@ -7,7 +7,7 @@
   "description" : "A modern shortsword.",
   "manufacturer" : "^gray;Stryker Smithing^reset;",
   "shortdescription" : "Stryker X-05 Axe",
-  "tooltipKind" : "thea-sword-mf",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "axe",
   "twoHanded" : false,
   "itemTags" : ["weapon","melee","axe","alliance","strykersmithing","allianceUpgradeable"],

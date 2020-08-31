@@ -6,11 +6,12 @@
   "maxStack" : 1,
   "rarity" : "essential",
   "description" : "^orange;An agile scathe used by the ferocious Charakki tribe.",
+  "manufacturer" : "^gray;Charakki^reset;",
   "shortdescription" : "^orange;Charakki Blade^white;",
-  "tooltipKind" : "thea-sword-unique",
+  "tooltipKind" : "thea-sword-unique-mf",
   "category" : "Scathe",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","scathe","akkimari","theaUnique"],
+  "itemTags" : ["weapon","melee","scathe","akkimari","charakki","theaUnique"],
 
   "inventoryIcon" : "akkimari-charakkibladeicon.png",
   
@@ -246,5 +247,5 @@
 
   "altAbilityType" : "thea-staffspinslash",
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

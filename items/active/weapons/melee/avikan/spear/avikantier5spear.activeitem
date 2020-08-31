@@ -7,7 +7,7 @@
   "description" : "A sharp metal spear designed by the Nomada.",
   "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Nomada Spear",
-  "tooltipKind" : "thea-sword-mf",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "spear",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","spear","avikan","vanguard"],

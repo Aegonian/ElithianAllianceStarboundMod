@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "A bone axe sharpened to a fine edge.",
   "shortdescription" : "Trapper's Axe",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "axe",
   "twoHanded" : false,
   "itemTags" : ["weapon","melee","axe","avikan"],

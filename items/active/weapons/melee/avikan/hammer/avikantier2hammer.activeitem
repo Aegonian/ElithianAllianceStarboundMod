@@ -6,7 +6,7 @@
   "rarity" : "common",
   "description" : "A giant hammer made of a monster's bone.",
   "shortdescription" : "Trapper's Hammer",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "hammer",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","hammer","avikan"],

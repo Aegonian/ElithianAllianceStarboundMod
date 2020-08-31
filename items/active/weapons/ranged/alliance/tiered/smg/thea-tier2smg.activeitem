@@ -8,7 +8,7 @@
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Barok P-2",
   "level" : 2,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Submachinegun",
   "itemTags" : ["weapon","ranged","smg","alliance","aae","allianceUpgradeable"],
   "twoHanded" : false,

@@ -1,4 +1,17 @@
 {
+  //===================== LEVEL LABELS =====================
+  "levelTitleLabel" : {
+    "type" : "label",
+    "position" : [120, 150],
+    "hAnchor" : "right",
+    "value" : "^gray;lvl^reset;"
+  },
+  "levelLabel" : {
+    "type" : "label",
+    "position" : [130, 150],
+    "hAnchor" : "right"
+  },
+  //=================== END LEVEL LABELS ===================
   "objectImage" : {
     "type" : "image",
     "position" : [75, 125],
@@ -82,7 +95,7 @@
   //Custom field, Manufacturer Label
   "manufacturerLabel" : {
     "type" : "label",
-    "position" : [130, 100],
+    "position" : [130, 95],
     "hAnchor" : "right",
     "centered" : true,
     "wrapWidth" : 126

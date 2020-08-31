@@ -5,10 +5,10 @@
   "rarity" : "Rare",
   "description" : "A heavy and extremely sharp broadsword issued to Avikan military forces.",
   "shortdescription" : "Vanguard Blade",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "broadsword",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","broadsword","avikan"],
+  "itemTags" : ["weapon","melee","broadsword","avikan","vanguard"],
 
   "animation" : "/items/active/weapons/melee/broadsword/combobroadsword.animation",
   "animationParts" : { },

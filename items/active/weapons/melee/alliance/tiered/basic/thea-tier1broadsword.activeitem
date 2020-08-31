@@ -7,7 +7,7 @@
   "description" : "A basic broadsword.",
   "manufacturer" : "^gray;Bredon Arms^reset;",
   "shortdescription" : "Bredon Blade",
-  "tooltipKind" : "thea-sword-mf",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "broadsword",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","broadsword","alliance","bredonarms","allianceUpgradeable"],

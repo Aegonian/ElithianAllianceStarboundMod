@@ -8,7 +8,7 @@
   "manufacturer" : "^gray;Bredon Arms^reset;",
   "shortdescription" : "BR-4 Lurker",
   "level" : 1,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Sniper Rifle",
   "itemTags" : ["weapon","ranged","sniperrifle","alliance","bredonarms","allianceUpgradeable"],
   "twoHanded" : true,

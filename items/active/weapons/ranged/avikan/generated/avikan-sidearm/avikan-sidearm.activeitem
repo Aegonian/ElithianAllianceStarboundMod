@@ -5,7 +5,7 @@
   "rarity" : "rare",
   "description" : "A standard-model Nomada Sidearm.",
   "shortdescription" : "Nomada Sidearm",
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-descriptive",
   "category" : "Sidearm",
   "twoHanded" : false,
   "itemTags" : ["weapon","ranged","pistol","avikan"],

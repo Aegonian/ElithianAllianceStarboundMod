@@ -5,6 +5,19 @@
     "fileBody" : "/interface/tooltips/bodyobject2.png",
     "fileFooter" : "/interface/tooltips/footerobject2.png"
   },
+  //===================== LEVEL LABELS =====================
+  "levelTitleLabel" : {
+    "type" : "label",
+    "position" : [120, 128],
+    "hAnchor" : "right",
+    "value" : "^gray;lvl^reset;"
+  },
+  "levelLabel" : {
+    "type" : "label",
+    "position" : [130, 128],
+    "hAnchor" : "right"
+  },
+  //=================== END LEVEL LABELS ===================
   "moneyIcon" : {
     "type" : "image",
     "position" : [97, 23],
@@ -39,6 +52,15 @@
     "position" : [130, 52],
     "hAnchor" : "right",
     "wrapWidth" : 126
+  },
+  "descriptionLabel" : {
+    "type" : "label",
+    "position" : [9, 50],
+    "hAnchor" : "left",
+    "vAnchor" : "top",
+    "wrapWidth" : 124,
+    "lineSpacing" : 1.0,
+    "value" : "I am a bug. Please report me!"
   },
   "altAbilityTitleLabel" : {
     "type" : "label",

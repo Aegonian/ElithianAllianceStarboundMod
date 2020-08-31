@@ -7,7 +7,7 @@
   "description" : "A powerful flux rifle which shoots molten metal projectiles.",
   "shortdescription" : "Sol'thass", //Translates to: Life-taker
   "level" : 6,
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-descriptive",
   "category" : "Flux Rifle",
   "itemTags" : ["weapon","ranged","assaultrifle","thelean"],
   "twoHanded" : true,

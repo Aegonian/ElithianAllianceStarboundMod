@@ -7,7 +7,7 @@
   "description" : "A sharp metal shortsword designed by the Nomada.",
   "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Nomada Sword",
-  "tooltipKind" : "thea-sword-mf",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "shortsword",
   "twoHanded" : false,
   "itemTags" : ["weapon","melee","shortsword","avikan"],

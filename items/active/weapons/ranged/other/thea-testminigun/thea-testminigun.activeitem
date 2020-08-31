@@ -1,0 +1,147 @@
+{
+  "itemName" : "thea-testminigun",
+  "price" : 10000,
+  "inventoryIcon" : "thea-testminigun.png",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;A gatling gun for testing new projectiles. Be careful, it's highly unpredictable!",
+  "shortdescription" : "^orange;Experimental Gatling Gun^white;",
+  "level" : 6,
+  "tooltipKind" : "thea-speedupminigun-unique",
+  "category" : "Gatling Gun",
+  "itemTags" : ["weapon"],
+  "twoHanded" : true,
+  
+  "cursor" : "/cursors/thea-largereticle.cursor",
+
+  "animation" : "thea-testminigun.animation",
+  "animationParts" : {
+    "middle" : "thea-testminigun.png",
+    "middleFullbright" : "thea-testminigunlights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/allianceenergyflash.png",
+    "charge" : "thea-testminiguncharge.png",
+	"chargehold" : "thea-testminigunchargehold.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+		    "offset" : [1.125, -0.75]
+		  }
+		},
+		"charge" : {
+		  "properties" : {
+		    "offset" : [1.125, -0.75]
+		  }
+		},
+		"chargehold" : {
+		  "properties" : {
+		    "offset" : [1.125, -0.75]
+		  }
+		}
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/gun/thea_plasmagun3.ogg" ],
+	  "chargeLoop" : [ "/sfx/melee/charge_up8.ogg" ],
+	  "holdLoop" : [ "/sfx/objects/camera_pan_loop.ogg" ],
+	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
+    }
+  },
+
+  "baseOffset" : [1.125, -0.75],
+  "muzzleOffset" : [2.625, 0.0],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "physical",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-speedupminigun.lua"],
+    "class" : "TheaSpeedUpMinigun",
+
+    "minFiringSpeed" : 0.15, //Starting fire time
+	"maxFiringSpeed" : 0.035, //End fire time
+	"maxFiringTime" : 1.5, //How long it takes to reach maximum firing speed
+	
+    "baseDps" : 6.0,
+    "energyUsage" : 25.0,
+    "inaccuracy" : 0.045,
+	
+	"chargeTime" : 1.25,
+	"resetTime" : 1.25,
+	
+	"walkWhileFiring" : true,
+
+    "projectileType" : "thea-testprojectile",
+	"projectileCount" : 1,
+	"projectileParameters" : { 
+      "knockback" : 2
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      },
+      "charge" : {
+        "armRotation" : -2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      },
+      "fire" : {
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+	    "weaponOffset" : [-0.15, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      },
+      "cooldown" : {
+        "duration" : 0.025,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+	    "weaponOffset" : [-0.15, 0],
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      },
+      "discharge" : {
+        "duration" : 0.1,
+        "armRotation" : 2,
+        "weaponRotation" : 2,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+
+        "frontArmFrame" : "swim.2",
+        "backArmFrame" : "rotation"
+      }
+	}
+  },
+
+  "builder" : "/items/buildscripts/thea-buildspeedupminigun.lua"
+}

@@ -7,7 +7,7 @@
   "description" : "A sharp metal dagger designed by the Nomada.",
   "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Nomada Dagger",
-  "tooltipKind" : "thea-sword-mf",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "dagger",
   "twoHanded" : false,
   "itemTags" : ["weapon","melee","dagger","avikan","vanguard"],

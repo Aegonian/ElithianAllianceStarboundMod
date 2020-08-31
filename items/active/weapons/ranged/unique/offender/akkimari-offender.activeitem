@@ -5,12 +5,13 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "^orange;An old break-action Vaash gun once used to commit numerous crimes.",
+  "manufacturer" : "^gray;Rashakr^reset;",
   "shortdescription" : "^orange;Offender^white;",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-ammogun-unique",
+  "tooltipKind" : "thea-ammogun-mf-unique",
   "category" : "Snapper",
-  "itemTags" : ["weapon","ranged","pistol","akkimari","theaUnique"],
+  "itemTags" : ["weapon","ranged","pistol","akkimari","rashakr","theaUnique"],
   "twoHanded" : true,
   
   //CONFIGURATION FOR WEAPONS COLLECTION

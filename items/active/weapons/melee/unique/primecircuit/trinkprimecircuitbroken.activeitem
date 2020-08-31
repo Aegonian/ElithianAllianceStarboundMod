@@ -6,7 +6,7 @@
   "rarity" : "common",
   "description" : "A broken prod. Its power supply is busted.",
   "shortdescription" : "Broken Prod",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "Prod",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","spear","trink"],

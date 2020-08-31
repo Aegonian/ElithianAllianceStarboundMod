@@ -5,10 +5,10 @@
   "rarity" : "Rare",
   "description" : "A hacked Droden shortsword.",
   "shortdescription" : "Violated Shortsword",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "shortsword",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","shortsword","droden"],
+  "itemTags" : ["weapon","melee","shortsword","droden","violated"],
 
   "animation" : "/items/active/weapons/melee/shortsword/comboshortsword.animation",
   "animationParts" : { },

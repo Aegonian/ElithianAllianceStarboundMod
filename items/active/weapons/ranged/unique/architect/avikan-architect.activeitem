@@ -5,12 +5,13 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "^orange;Centensian components allow this weapon to summon constructs.",
+  "manufacturer" : "^gray;Centlary^reset;",
   "shortdescription" : "^orange;The Architect^white;",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-chargedgunalt-unique",
+  "tooltipKind" : "thea-chargedgunalt-unique-mf",
   "category" : "Line Rifle",
-  "itemTags" : ["weapon","ranged","avikan","linerifle","theaUnique"],
+  "itemTags" : ["weapon","ranged","avikan","linerifle","centlary","theaUnique"],
   "twoHanded" : true,
   
   //CONFIGURATION FOR WEAPONS COLLECTION

@@ -5,11 +5,12 @@
   "maxStack" : 1,
   "rarity" : "Common",
   "description" : "A weapon built from scavenged parts.",
+  "manufacturer" : "^gray;Kelraaki^reset;",
   "shortdescription" : "Makeshift Sword",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "shortsword",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","shortsword","akkimari","akkimariUpgradeable"],
+  "itemTags" : ["weapon","melee","shortsword","akkimari","akkimariUpgradeable","kelraaki"],
 
   "inventoryIcon" : "akkimari-tier1shortsword.png",
 
@@ -101,5 +102,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

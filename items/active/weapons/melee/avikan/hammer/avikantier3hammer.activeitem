@@ -6,7 +6,7 @@
   "rarity" : "uncommon",
   "description" : "A giant hammer made of strong monster bone.",
   "shortdescription" : "Stalker's Hammer",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "hammer",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","hammer","avikan"],

@@ -7,7 +7,7 @@
   "description" : "A basic shortsword.",
   "manufacturer" : "^gray;Bredon Arms^reset;",
   "shortdescription" : "Bredon Sword",
-  "tooltipKind" : "thea-sword-mf",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "shortsword",
   "twoHanded" : false,
   "itemTags" : ["weapon","melee","shortsword","alliance","bredonarms","allianceUpgradeable"],

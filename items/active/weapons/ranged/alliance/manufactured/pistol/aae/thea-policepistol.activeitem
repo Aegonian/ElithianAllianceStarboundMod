@@ -9,7 +9,7 @@
   "shortdescription" : "P-ASA Enforcer P-6",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Pistol",
   "itemTags" : ["weapon","ranged","pistol","alliance","aae","allianceUpgradeable"],
   "twoHanded" : false,

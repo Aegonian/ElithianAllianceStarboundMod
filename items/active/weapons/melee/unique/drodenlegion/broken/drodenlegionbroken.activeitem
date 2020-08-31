@@ -6,7 +6,7 @@
   "rarity" : "common",
   "description" : "A broken longsword, with a chipped blade and busted power supply.",
   "shortdescription" : "Broken Longsword",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "Longsword",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","broadsword","droden"],

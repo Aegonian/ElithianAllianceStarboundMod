@@ -6,7 +6,7 @@
   "rarity" : "uncommon",
   "description" : "Harvest special materials from monsters.",
   "shortdescription" : "Elder's Spear",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "Hunting Spear",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","spear"],

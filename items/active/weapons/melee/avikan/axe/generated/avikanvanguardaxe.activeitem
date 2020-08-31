@@ -5,10 +5,10 @@
   "rarity" : "Rare",
   "description" : "A superbly crafted metal axe issued to Avikan military forces.",
   "shortdescription" : "Vanguard Axe",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "axe",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","axe","avikan"],
+  "itemTags" : ["weapon","melee","axe","avikan","vanguard"],
 
   "animation" : "/items/active/weapons/melee/axe/axe.animation",
   "animationParts" : { },

@@ -6,7 +6,7 @@
   "rarity" : "legendary",
   "description" : "A light Thelean dagger. The grip is very uncomfortable to non-Theleans.",
   "shortdescription" : "Thelean Dagger",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "dagger",
   "twoHanded" : false,
   "itemTags" : ["weapon","melee","dagger","thelean"],

@@ -7,7 +7,7 @@
   "description" : "An energy weapon used by high-ranking members of the Clanguard.",
   "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Clanguard Axe",
-  "tooltipKind" : "thea-sword-mf",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "axe",
   "twoHanded" : false,
   "itemTags" : ["weapon","melee","axe","avikan","vanguard"],

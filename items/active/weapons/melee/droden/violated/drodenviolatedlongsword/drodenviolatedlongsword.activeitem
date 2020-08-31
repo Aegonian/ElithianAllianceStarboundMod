@@ -5,10 +5,10 @@
   "rarity" : "Rare",
   "description" : "A hacked Droden longsword.",
   "shortdescription" : "Violated Longsword",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "Longsword",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","broadsword","droden"],
+  "itemTags" : ["weapon","melee","broadsword","droden","violated"],
 
   "animation" : "/items/active/weapons/melee/broadsword/combobroadsword.animation",
   "animationParts" : { },

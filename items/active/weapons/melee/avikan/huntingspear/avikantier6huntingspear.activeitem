@@ -7,7 +7,7 @@
   "description" : "Harvest special materials from monsters.",
   "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Nomada Hunting Spear",
-  "tooltipKind" : "thea-sword-mf",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "Hunting Spear",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","spear","vanguard"],

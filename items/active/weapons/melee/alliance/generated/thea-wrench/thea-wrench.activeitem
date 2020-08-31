@@ -5,10 +5,10 @@
   "rarity" : "Uncommon",
   "description" : "A wrench.",
   "shortdescription" : "Union Wrench",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "Wrench",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","axe","alliance"],
+  "itemTags" : ["weapon","melee","axe","alliance","enerthengineering"],
 
   "animation" : "/items/active/weapons/melee/axe/axe.animation",
   "animationParts" : { },

@@ -5,11 +5,12 @@
   "maxStack" : 1,
   "rarity" : "uncommon",
   "description" : "A weapon built from scavenged parts.",
+  "manufacturer" : "^gray;Kelraaki^reset;",
   "shortdescription" : "Makeshift Hammer",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "hammer",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","hammer","akkimari","akkimariUpgradeable"],
+  "itemTags" : ["weapon","melee","hammer","akkimari","akkimariUpgradeable","kelraaki"],
 
   "inventoryIcon" : "akkimari-tier3hammer.png",
 
@@ -47,5 +48,5 @@
 
   "altAbilityType" : "physicalshockwave",
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

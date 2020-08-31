@@ -5,10 +5,10 @@
   "rarity" : "Rare",
   "description" : "An extremely sharp and lightweight shortsword issued to Avikan military forces.",
   "shortdescription" : "Vanguard Shortsword",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "shortsword",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","shortsword"],
+  "itemTags" : ["weapon","melee","shortsword","vanguard"],
 
   "animation" : "/items/active/weapons/melee/shortsword/comboshortsword.animation",
   "animationParts" : { },

@@ -7,7 +7,7 @@
   "description" : "A modern spear.",
   "manufacturer" : "^gray;Stryker Smithing^reset;",
   "shortdescription" : "Stryker X-04 Spear",
-  "tooltipKind" : "thea-sword-mf",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "spear",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","spear","alliance","strykersmithing","allianceUpgradeable"],

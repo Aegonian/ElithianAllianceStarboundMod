@@ -5,10 +5,10 @@
   "rarity" : "Rare",
   "description" : "A metal spear built by craftsmen of the Nomada.",
   "shortdescription" : "Nomada Spear",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "spear",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","spear"],
+  "itemTags" : ["weapon","melee","spear","vanguard"],
 
   "animation" : "/items/active/weapons/melee/spear/spear.animation",
   "animationParts" : { },

@@ -7,7 +7,7 @@
   "description" : "A basic dagger.",
   "manufacturer" : "^gray;Bredon Arms^reset;",
   "shortdescription" : "Bredon Dagger",
-  "tooltipKind" : "thea-sword-mf",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "dagger",
   "twoHanded" : false,
   "itemTags" : ["weapon","melee","dagger","alliance","bredonarms","allianceUpgradeable"],

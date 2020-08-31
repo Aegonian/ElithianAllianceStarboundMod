@@ -1,4 +1,17 @@
 {
+  //===================== LEVEL LABELS =====================
+  "levelTitleLabel" : {
+    "type" : "label",
+    "position" : [120, 150],
+    "hAnchor" : "right",
+    "value" : "^gray;lvl^reset;"
+  },
+  "levelLabel" : {
+    "type" : "label",
+    "position" : [130, 150],
+    "hAnchor" : "right"
+  },
+  //=================== END LEVEL LABELS ===================
   "moneyIcon" : {
     "type" : "image",
     "position" : [102, 30],

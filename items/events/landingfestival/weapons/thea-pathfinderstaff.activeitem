@@ -6,11 +6,12 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "description" : "The ceremonial shepherd's crook of the Pathfinder.",
+  "manufacturer" : "^gray;Landing Festival^reset;",
   "shortdescription" : "Pathfinder's Staff",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "Crook",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","crook","alliance","allianceUpgradeable"],
+  "itemTags" : ["weapon","melee","crook","alliance","allianceUpgradeable","landingfestival"],
 
   "inventoryIcon" : "thea-pathfinderstaff.png",
 
@@ -35,5 +36,5 @@
   
   "altAbilityType" : "thea-railhook",
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

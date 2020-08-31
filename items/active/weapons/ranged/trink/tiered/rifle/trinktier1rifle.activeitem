@@ -8,9 +8,9 @@
   "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "Circuit Rifle Mk I",
   "level" : 1,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Laser Rifle",
-  "itemTags" : ["weapon","ranged","assaultrifle","energy","trink"],
+  "itemTags" : ["weapon","ranged","assaultrifle","energy","trink","trinkfactory"],
   "twoHanded" : true,
 
   "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",

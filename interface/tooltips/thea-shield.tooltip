@@ -1,0 +1,80 @@
+{
+  "background" : {
+    "type" : "background",
+    "fileHeader" : "/interface/tooltips/header.png",
+    "fileBody" : "/interface/tooltips/bodyobjectextended.png",
+    "fileFooter" : "/interface/tooltips/footerobjectextended.png"
+  },
+  //===================== LEVEL LABELS =====================
+  "levelTitleLabel" : {
+    "type" : "label",
+    "position" : [120, 130],
+    "hAnchor" : "right",
+    "value" : "^gray;lvl^reset;"
+  },
+  "levelLabel" : {
+    "type" : "label",
+    "position" : [130, 130],
+    "hAnchor" : "right"
+  },
+  //=================== END LEVEL LABELS ===================
+  "objectImage" : {
+    "type" : "image",
+    "position" : [67, 112],
+    "file" : "",
+    "centered" : true,
+    "maxSize" : [38, 38],
+    "minSize" : [38, 38]
+  },
+  "healthLabel" : {
+    "type" : "label",
+    "position" : [127, 71],
+    "hAnchor" : "right",
+    "value" : ""
+  },
+  "healthTitleLabel" : {
+    "type" : "label",
+    "position" : [12, 71],
+    "hAnchor" : "left",
+    "value" : "Shield Health:"
+  },
+  "cooldownLabel" : {
+    "type" : "label",
+    "position" : [127, 62],
+    "hAnchor" : "right",
+    "value" : ""
+  },
+  "cooldownTitleLabel" : {
+    "type" : "label",
+    "position" : [12, 62],
+    "hAnchor" : "left",
+    "value" : "Cooldown Time:"
+  },
+  "descriptionLabel" : {
+    "type" : "label",
+    "position" : [12, 58],
+    "hAnchor" : "left",
+    "vAnchor" : "top",
+    "wrapWidth" : 123,
+    "lineSpacing" : 1.0,
+    "value" : ""
+  },
+  "priceLabel" : {
+    "type" : "label",
+    "position" : [120, 23],
+    "hAnchor" : "left",
+    "value" : "tree"
+  },
+  "moneyIcon" : {
+    "type" : "image",
+    "position" : [107, 23],
+    "file" : "/interface/money.png"
+  },
+  "rarityLabel" : {
+    "type" : "label",
+    "position" : [7, 23],
+    "hAnchor" : "left",
+    "centered" : true,
+    "wrapWidth" : 126
+  }
+}

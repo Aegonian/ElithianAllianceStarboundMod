@@ -8,7 +8,7 @@
   "manufacturer" : "^gray;Alliance Collective^reset;",
   "shortdescription" : "AC.A-2 Clarity",
   "level" : 5,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Assault Rifle",
   "itemTags" : ["weapon","ranged","assaultrifle","alliance","alliancecollective","allianceUpgradeable"],
   "twoHanded" : true,

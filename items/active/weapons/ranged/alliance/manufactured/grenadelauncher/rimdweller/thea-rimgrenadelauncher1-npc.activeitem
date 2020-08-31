@@ -9,7 +9,7 @@
   "shortdescription" : "Sledger RM22 (NPC)",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Grenade Launcher",
   "itemTags" : ["weapon","ranged","bow","alliance","rimdweller","allianceUpgradeable"],
   "twoHanded" : true,

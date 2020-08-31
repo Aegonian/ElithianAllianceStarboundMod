@@ -7,7 +7,7 @@
   "rarity" : "common",
   "description" : "A bone crook used by Gad'hur herders.",
   "shortdescription" : "Bone Crook",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "Crook",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","crook","avikan"],

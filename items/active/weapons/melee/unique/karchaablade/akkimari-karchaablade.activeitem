@@ -10,7 +10,7 @@
   "tooltipKind" : "thea-fistweapon-unique",
   "category" : "Gauntlet",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","akkimari","theaUnique"],
+  "itemTags" : ["weapon","melee","akkimari","karchaa","theaUnique"],
   
   //CONFIGURATION FOR WEAPONS COLLECTION
   "collectablesOnPickup" : { "thea_weapons" : "akkimari-karchaablade" },

@@ -7,10 +7,10 @@
   "description" : "An electric prod built to keep assailants at bay.",
   "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "Circuit Prod Mk II",
-  "tooltipKind" : "thea-sword-mf",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "Electric Prod",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","prod","trink"],
+  "itemTags" : ["weapon","melee","prod","trink","trinkfactory"],
 
   "inventoryIcon" : "trinktier2prod.png",
 

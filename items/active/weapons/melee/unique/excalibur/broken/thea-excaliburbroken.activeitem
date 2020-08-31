@@ -6,7 +6,7 @@
   "rarity" : "common",
   "description" : "Once a great Aevis, now broken by time and use.",
   "shortdescription" : "Broken Shieldblade",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "Shieldblade",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","shieldblade","aegi"],

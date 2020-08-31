@@ -7,7 +7,7 @@
   "category" : "shield",
   "description" : "A molded metal shield, rough but durable.",
   "shortdescription" : "Akris Shield",
-  "tooltipKind" : "shield",
+  "tooltipKind" : "thea-shield",
   "twoHanded" : false,
   "itemTags" : ["shield","akkimari"],
   
@@ -57,5 +57,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandshield.lua"
+  "builder" : "/items/buildscripts/thea-buildshield-mf.lua"
 }

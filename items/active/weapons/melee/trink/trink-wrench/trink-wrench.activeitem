@@ -5,10 +5,10 @@
   "rarity" : "uncommon",
   "description" : "A Trinkian wrench.",
   "shortdescription" : "Trinkian Wrench",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "Wrench",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","axe","trink"],
+  "itemTags" : ["weapon","melee","axe","trink","trinkfactory"],
 
   "animation" : "/items/active/weapons/melee/axe/axe.animation",
   "animationParts" : { },

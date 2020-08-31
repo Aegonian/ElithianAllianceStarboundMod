@@ -6,7 +6,7 @@
   "rarity" : "common",
   "description" : "A sharp broadsword made of a giant monster's tooth.",
   "shortdescription" : "Trapper's Blade",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "broadsword",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","broadsword","avikan"],

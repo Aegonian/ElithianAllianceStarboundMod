@@ -8,7 +8,7 @@
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Zuvi G-5",
   "level" : 4,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Submachinegun",
   "itemTags" : ["weapon","ranged","smg","alliance","aae","allianceUpgradeable"],
   "twoHanded" : false,

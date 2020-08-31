@@ -8,7 +8,7 @@
   "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Vanguard Harpoon Gun",
   "level" : 6,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Harpoon Gun",
   "itemTags" : ["weapon","ranged","sniperrifle","avikan","vanguard"],
   "twoHanded" : true,

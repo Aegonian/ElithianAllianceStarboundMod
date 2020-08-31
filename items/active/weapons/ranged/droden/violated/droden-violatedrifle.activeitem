@@ -8,7 +8,7 @@
   "shortdescription" : "Violated Droden Rifle",
   "level" : 1,
   "fixedLevel" : false,
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-descriptive",
   "category" : "Assault Rifle",
   "itemTags" : ["weapon","ranged","assaultrifle","energy","avikan"],
   "twoHanded" : true,

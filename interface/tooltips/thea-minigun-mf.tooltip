@@ -5,6 +5,19 @@
     "fileBody" : "/interface/tooltips/bodyobjectthea.png",
     "fileFooter" : "/interface/tooltips/theafooter.png"
   },
+  //===================== LEVEL LABELS =====================
+  "levelTitleLabel" : {
+    "type" : "label",
+    "position" : [120, 144],
+    "hAnchor" : "right",
+    "value" : "^gray;lvl^reset;"
+  },
+  "levelLabel" : {
+    "type" : "label",
+    "position" : [130, 144],
+    "hAnchor" : "right"
+  },
+  //=================== END LEVEL LABELS ===================
   "moneyIcon" : {
     "type" : "image",
     "position" : [98, 23],

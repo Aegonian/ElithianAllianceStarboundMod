@@ -8,7 +8,7 @@
   "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Vanguard Burst Rifle",
   "level" : 6,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Burst Rifle",
   "itemTags" : ["weapon","ranged","assaultrifle","avikan","vanguard"],
   "twoHanded" : true,

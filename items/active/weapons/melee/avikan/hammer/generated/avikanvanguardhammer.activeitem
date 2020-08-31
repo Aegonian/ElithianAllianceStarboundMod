@@ -5,10 +5,10 @@
   "rarity" : "Rare",
   "description" : "An extremely heavy, flat-headed hammer issued to Avikan military forces.",
   "shortdescription" : "Vanguard Hammer",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "hammer",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","hammer","avikan"],
+  "itemTags" : ["weapon","melee","hammer","avikan","vanguard"],
 
   "animation" : "/items/active/weapons/melee/hammer/hammer.animation",
   "animationParts" : { },

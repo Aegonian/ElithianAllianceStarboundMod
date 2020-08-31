@@ -9,7 +9,7 @@
   "shortdescription" : "Breacher RM14 (NPC)",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Shotgun",
   "itemTags" : ["weapon","ranged","shotgun","alliance","rimdweller","allianceUpgradeable"],
   "twoHanded" : true,

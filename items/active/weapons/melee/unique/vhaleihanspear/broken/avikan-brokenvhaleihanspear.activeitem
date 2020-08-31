@@ -6,7 +6,7 @@
   "rarity" : "common",
   "description" : "A spear built in ancient Vas Vha'leih. Age and use have broken it.",
   "shortdescription" : "Broken Spear",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "spear",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","spear","avikan"],

@@ -5,12 +5,13 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "^orange;A linerifle using a unique drive for near-instant charging.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "^orange;Null-Drive Vector^white;",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-chargedgunalt-unique",
+  "tooltipKind" : "thea-chargedgunalt-unique-mf",
   "category" : "Line Rifle",
-  "itemTags" : ["weapon","ranged","avikan","linerifle","theaUnique"],
+  "itemTags" : ["weapon","ranged","avikan","linerifle","vanguard","theaUnique"],
   "twoHanded" : true,
   
   //CONFIGURATION FOR WEAPONS COLLECTION

@@ -8,7 +8,7 @@
   "manufacturer" : "^gray;Alliance Collective^reset;",
   "shortdescription" : "AC.A-6 Comet",
   "level" : 6,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Assault Rifle",
   "itemTags" : ["weapon","ranged","assaultrifle","alliance","alliancecollective","allianceUpgradeable"],
   "twoHanded" : true,

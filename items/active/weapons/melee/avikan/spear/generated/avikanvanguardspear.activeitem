@@ -5,10 +5,10 @@
   "rarity" : "Rare",
   "description" : "A metal spear with an extremely sharp blade, issued to Avikan military forces.",
   "shortdescription" : "Vanguard Spear",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "spear",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","spear"],
+  "itemTags" : ["weapon","melee","spear","vanguard"],
 
   "animation" : "/items/active/weapons/melee/spear/spear.animation",
   "animationParts" : { },

@@ -6,7 +6,7 @@
   "rarity" : "common",
   "description" : "A simple spear made of monster bone.",
   "shortdescription" : "Bone Spear",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "spear",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","spear","avikan"],

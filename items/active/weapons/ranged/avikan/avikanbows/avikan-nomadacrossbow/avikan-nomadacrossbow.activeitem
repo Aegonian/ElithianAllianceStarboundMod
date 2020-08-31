@@ -5,7 +5,7 @@
   "inventoryIcon" : "avikan-nomadacrossbow.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Crossbow",
   "description" : "A Nomada-built crossbow. It harvests monsters bones and hides.",
   "manufacturer" : "^gray;Vanguard^reset;",

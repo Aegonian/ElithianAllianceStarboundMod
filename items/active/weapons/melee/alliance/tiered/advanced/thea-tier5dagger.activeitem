@@ -7,7 +7,7 @@
   "description" : "A modern dagger.",
   "manufacturer" : "^gray;Stryker Smithing^reset;",
   "shortdescription" : "Stryker X-03 Dagger",
-  "tooltipKind" : "thea-sword-mf",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "dagger",
   "twoHanded" : false,
   "itemTags" : ["weapon","melee","dagger","alliance","strykersmithing","allianceUpgradeable"],

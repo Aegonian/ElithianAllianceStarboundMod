@@ -5,12 +5,13 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "^orange;A prototype compact linerifle developed by the Seekers.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "^orange;Seeker MLR-02^white;",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-chargedgun-unique",
+  "tooltipKind" : "thea-chargedgun-unique-mf",
   "category" : "Mini Line Rifle",
-  "itemTags" : ["weapon","ranged","avikan","linerifle","theaUnique"],
+  "itemTags" : ["weapon","ranged","avikan","linerifle","vanguard","theaUnique"],
   "twoHanded" : false,
   
   //CONFIGURATION FOR WEAPONS COLLECTION

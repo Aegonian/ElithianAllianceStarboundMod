@@ -5,10 +5,10 @@
   "rarity" : "Rare",
   "description" : "A small, but extremely sharp dagger issued to Avikan military forces.",
   "shortdescription" : "Vanguard Dagger",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "dagger",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","dagger","avikan"],
+  "itemTags" : ["weapon","melee","dagger","avikan","vanguard"],
 
   "animation" : "/items/active/weapons/melee/dagger/dagger.animation",
   "animationParts" : { },

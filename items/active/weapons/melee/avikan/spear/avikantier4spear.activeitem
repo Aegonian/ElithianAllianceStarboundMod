@@ -6,7 +6,7 @@
   "rarity" : "uncommon",
   "description" : "A sharp spear made of high-quality monster bone.",
   "shortdescription" : "Predator's Spear",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "spear",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","spear","avikan"],

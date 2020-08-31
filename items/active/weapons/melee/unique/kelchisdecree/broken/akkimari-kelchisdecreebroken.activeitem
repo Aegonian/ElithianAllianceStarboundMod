@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "A broken scathe, a shadow of its former self.",
   "shortdescription" : "Broken Scathe",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "Scathe",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","scathe","akkimari"],

@@ -9,7 +9,7 @@
   "shortdescription" : "Vethir Sniper",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Sniper Rifle",
   "itemTags" : ["weapon","ranged","sniperrifle","alliance","theledos","allianceUpgradeable"],
   "twoHanded" : true,

@@ -8,9 +8,9 @@
   "manufacturer" : "^gray;Bredon Arms^reset;",
   "shortdescription" : "BS-3 Bremmen",
   "level" : 1,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Shotgun",
-  "itemTags" : ["weapon","ranged","shotgun","alliance","aae","allianceUpgradeable"],
+  "itemTags" : ["weapon","ranged","shotgun","alliance","bredonarms","allianceUpgradeable"],
   "twoHanded" : true,
   
   "cursor" : "/cursors/thea-widereticle.cursor",

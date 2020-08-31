@@ -5,12 +5,13 @@
   "maxStack" : 1,
   "rarity" : "Uncommon",
   "description" : "An Akkimari weapon firing target-seeking plasma bolts.",
+  "manufacturer" : "^gray;Rashakr^reset;",
   "shortdescription" : "Akris Strafer",
   "level" : 4,
   "fixedLevel" : false,
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Strafer",
-  "itemTags" : ["weapon","ranged","pistol","akkimari"],
+  "itemTags" : ["weapon","ranged","pistol","akkimari","rashakr"],
   "twoHanded" : false,
   
   "cursor" : "/cursors/thea-triplereticle-large.cursor",
@@ -97,5 +98,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

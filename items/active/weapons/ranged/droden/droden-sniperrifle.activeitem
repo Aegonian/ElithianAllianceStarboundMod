@@ -8,7 +8,7 @@
   "manufacturer" : "^gray;Vanguard/Legion^reset;",
   "shortdescription" : "Droden Sniper Rifle",
   "level" : 6,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Sniper Rifle",
   "itemTags" : ["weapon","ranged","sniperrifle","energy","avikan","vanguard","legion"],
   "twoHanded" : true,

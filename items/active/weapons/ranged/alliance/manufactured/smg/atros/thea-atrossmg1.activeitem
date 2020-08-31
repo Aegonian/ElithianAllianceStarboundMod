@@ -9,7 +9,7 @@
   "shortdescription" : "ATROS SMG-M1",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Submachinegun",
   "itemTags" : ["weapon","ranged","smg","alliance","atros","allianceUpgradeable"],
   "twoHanded" : false,

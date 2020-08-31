@@ -5,12 +5,13 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "description" : "An Akkimari weapon firing target-seeking plasma bolts.",
+  "manufacturer" : "^gray;Rashakr^reset;",
   "shortdescription" : "Akris Tracker",
   "level" : 5,
   "fixedLevel" : false,
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Tracker",
-  "itemTags" : ["weapon","ranged","assaultrifle","akkimari"],
+  "itemTags" : ["weapon","ranged","assaultrifle","akkimari","rashakr"],
   "twoHanded" : true,
   
   "cursor" : "/cursors/thea-triplereticle-large.cursor",
@@ -99,5 +100,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

@@ -9,7 +9,7 @@
   "shortdescription" : "Maelstrom RM9 (NPC)",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Machinegun",
   "itemTags" : ["weapon","ranged","machinegun","alliance","rimdweller","allianceUpgradeable"],
   "twoHanded" : true,

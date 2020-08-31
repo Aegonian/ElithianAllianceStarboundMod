@@ -5,10 +5,10 @@
   "rarity" : "uncommon",
   "description" : "An Avikan wrench.",
   "shortdescription" : "Avikan Wrench",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "Wrench",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","avikan"],
+  "itemTags" : ["weapon","melee","avikan","vanguard"],
 
   "animation" : "/items/active/weapons/melee/axe/axe.animation",
   "animationParts" : { },

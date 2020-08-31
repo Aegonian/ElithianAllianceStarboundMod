@@ -8,7 +8,7 @@
   "manufacturer" : "^gray;Alliance Collective^reset;",
   "shortdescription" : "AC.L-45 Boulder",
   "level" : 5,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Rocket Launcher",
   "itemTags" : ["weapon","ranged","rocketlauncher","alliance","alliancecollective","allianceUpgradeable"],
   "twoHanded" : true,

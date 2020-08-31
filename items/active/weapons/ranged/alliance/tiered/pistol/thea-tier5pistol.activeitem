@@ -8,7 +8,7 @@
   "manufacturer" : "^gray;Alliance Collective^reset;",
   "shortdescription" : "AC.P-8 Manus",
   "level" : 5,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Pistol",
   "itemTags" : ["weapon","ranged","pistol","alliance","alliancecollective","allianceUpgradeable"],
   "twoHanded" : false,

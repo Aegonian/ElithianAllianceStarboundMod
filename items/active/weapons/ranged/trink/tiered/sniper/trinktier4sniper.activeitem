@@ -8,9 +8,9 @@
   "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "Circuit Sniper Mk I",
   "level" : 4,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Laser Sniper",
-  "itemTags" : ["weapon","ranged","sniperrifle","energy","trink"],
+  "itemTags" : ["weapon","ranged","sniperrifle","energy","trink","trinkfactory"],
   "twoHanded" : true,
   
   "cursor" : "/cursors/thea-precisereticle.cursor",

@@ -5,7 +5,7 @@
   "inventoryIcon" : "avikan-bonecrossbow.png",
   "maxStack" : 1,
   "rarity" : "Uncommon",
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-descriptive",
   "category" : "Crossbow",
   "description" : "A crossbow made for hunting. It harvests monsters bones and hides.",
   "shortdescription" : "Bone Crossbow",

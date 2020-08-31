@@ -9,7 +9,7 @@
   "shortdescription" : "Executioner RM2",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Sniper Rifle",
   "itemTags" : ["weapon","ranged","sniperrifle","alliance","rimdweller","allianceUpgradeable"],
   "twoHanded" : true,

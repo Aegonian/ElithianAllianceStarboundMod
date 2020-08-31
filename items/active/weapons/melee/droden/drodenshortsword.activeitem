@@ -7,7 +7,7 @@
   "description" : "A thin and minimalistic shortsword, designed for use by Droden soldiers.",
   "manufacturer" : "^gray;Vanguard/Legion^reset;",
   "shortdescription" : "Droden Shortsword",
-  "tooltipKind" : "thea-sword-mf",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "shortsword",
   "twoHanded" : false,
   "itemTags" : ["weapon","melee","shortsword","droden","vanguard","legion"],

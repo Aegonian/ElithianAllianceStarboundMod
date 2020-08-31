@@ -9,7 +9,7 @@
   "shortdescription" : "AC.R-16 Stargazer",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Sniper Rifle",
   "itemTags" : ["weapon","ranged","sniperrifle","alliance","alliancecollective","allianceUpgradeable"],
   "twoHanded" : true,

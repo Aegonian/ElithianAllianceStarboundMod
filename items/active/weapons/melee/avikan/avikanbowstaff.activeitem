@@ -8,7 +8,7 @@
   "description" : "A basic combat staff.",
   "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Nomada Combat Staff",
-  "tooltipKind" : "thea-sword-mf",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "Combat Staff",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","bowstaff","avikan","vanguard"],

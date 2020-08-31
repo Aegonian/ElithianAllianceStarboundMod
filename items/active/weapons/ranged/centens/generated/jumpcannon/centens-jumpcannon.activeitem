@@ -5,7 +5,7 @@
   "rarity" : "legendary",
   "description" : "Uses miniature jump gates to transport solar matter to the magazine.",
   "shortdescription" : "Centensian Jumpcannon",
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-descriptive",
   "category" : "Jumpcannon",
   "twoHanded" : true,
   "itemTags" : ["weapon","ranged","shotgun","centens","jumpweapon"],

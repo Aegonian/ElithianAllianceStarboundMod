@@ -6,7 +6,7 @@
   "rarity" : "Uncommon",
   "description" : "A sharp sword made of high-quality monster bone.",
   "shortdescription" : "Predator's Sword",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "shortsword",
   "twoHanded" : false,
   "itemTags" : ["weapon","melee","shortsword","avikan"],

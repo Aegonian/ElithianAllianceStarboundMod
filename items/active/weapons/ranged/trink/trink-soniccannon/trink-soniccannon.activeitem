@@ -9,9 +9,9 @@
   "shortdescription" : "Trinkian Sonic Cannon",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Sonic Cannon",
-  "itemTags" : ["weapon","ranged","trink","sonicrifle"],
+  "itemTags" : ["weapon","ranged","trink","sonicrifle","trinkfactory"],
   "twoHanded" : true,
   
   "cursor" : "/cursors/thea-windowreticle.cursor",

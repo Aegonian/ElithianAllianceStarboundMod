@@ -7,7 +7,7 @@
   "description" : "A metal broadsword designed by the Nomada.",
   "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Nomada Blade",
-  "tooltipKind" : "thea-sword-mf",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "broadsword",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","broadsword","avikan","vanguard"],

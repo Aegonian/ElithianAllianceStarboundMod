@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "The dagger of an Avikan hunter. Used to cut the highest quality leather from monsters.",
   "shortdescription" : "Avikan Hunter's Knife",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "Hunting Knife",
   "twoHanded" : false,
   "itemTags" : ["weapon","melee","dagger","avikan"],

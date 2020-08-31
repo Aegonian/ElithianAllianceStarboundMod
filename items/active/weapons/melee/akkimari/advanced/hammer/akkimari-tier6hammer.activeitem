@@ -5,11 +5,12 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "description" : "A heated hammer used by bounty hunters of the Kelraaki.",
+  "manufacturer" : "^gray;Kelraaki^reset;",
   "shortdescription" : "Kelraaki Hammer",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "hammer",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","hammer","akkimari","akkimariUpgradeable"],
+  "itemTags" : ["weapon","melee","hammer","akkimari","akkimariUpgradeable","kelraaki"],
 
   "inventoryIcon" : "akkimari-tier6hammericon.png",
 
@@ -44,5 +45,5 @@
   
   "altAbilityType" : "groundslam",
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

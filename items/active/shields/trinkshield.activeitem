@@ -10,7 +10,7 @@
   "shortdescription" : "Circuit Shield",
   "tooltipKind" : "thea-shield-mf",
   "twoHanded" : false,
-  "itemTags" : ["shield", "trink"],
+  "itemTags" : ["shield", "trink","trinkfactory"],
   
   "inventoryIcon" : "images/trinkshield.png:nearidle",
 

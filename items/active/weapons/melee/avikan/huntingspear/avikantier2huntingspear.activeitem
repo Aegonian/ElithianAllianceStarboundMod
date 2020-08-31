@@ -6,7 +6,7 @@
   "rarity" : "common",
   "description" : "Harvest special materials from monsters.",
   "shortdescription" : "Hunter's Spear",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "Hunting Spear",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","spear"],

@@ -6,7 +6,7 @@
   "rarity" : "Uncommon",
   "description" : "A sharp bone axe made of strong monster bone.",
   "shortdescription" : "Stalker's Axe",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "axe",
   "twoHanded" : false,
   "itemTags" : ["weapon","melee","axe","avikan"],

@@ -5,12 +5,13 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "^orange;A laser linked to the ship's Orbital Targeting System.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "^orange;Vanguard OTS.M-12^white;",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-chargedgunalt-unique",
+  "tooltipKind" : "thea-chargedgunalt-unique-mf",
   "category" : "Laser Targeting System",
-  "itemTags" : ["weapon","ranged","avikan","theaUnique"],
+  "itemTags" : ["weapon","ranged","avikan","vanguard","theaUnique"],
   "twoHanded" : true,
   
   //CONFIGURATION FOR WEAPONS COLLECTION

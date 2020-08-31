@@ -5,12 +5,13 @@
   "maxStack" : 1,
   "rarity" : "Common",
   "description" : "A heavy nail cannon cobbled together by the Akkimari.",
+  "manufacturer" : "^gray;Kelraaki^reset;",
   "shortdescription" : "Akris Nailcannon",
   "level" : 2,
   "fixedLevel" : false,
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Shotgun",
-  "itemTags" : ["weapon","ranged","shotgun","akkimari"],
+  "itemTags" : ["weapon","ranged","shotgun","akkimari","kelraaki"],
   "twoHanded" : true,
 
   "animation" : "/items/active/weapons/ranged/gun.animation",
@@ -156,5 +157,5 @@
     }
   },
   
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

@@ -7,7 +7,7 @@
   "description" : "A modern broadsword.",
   "manufacturer" : "^gray;Stryker Smithing^reset;",
   "shortdescription" : "Stryker X-01 Blade",
-  "tooltipKind" : "thea-sword-mf",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "broadsword",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","broadsword","alliance","strykersmithing","allianceUpgradeable"],

@@ -8,9 +8,9 @@
   "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "Circuitbreaker Mk II",
   "level" : 2,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Laser Shotgun",
-  "itemTags" : ["weapon","ranged","shotgun","energy","trink"],
+  "itemTags" : ["weapon","ranged","shotgun","energy","trink","trinkfactory"],
   "twoHanded" : true,
   
   "cursor" : "/cursors/thea-widereticle.cursor",

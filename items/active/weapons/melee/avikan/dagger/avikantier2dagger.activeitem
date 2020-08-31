@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "A sharp dagger made of monster bone.",
   "shortdescription" : "Trapper's Dagger",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "dagger",
   "twoHanded" : false,
   "itemTags" : ["weapon","melee","dagger","avikan"],

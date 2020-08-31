@@ -7,7 +7,7 @@
   "description" : "An electric prod issued to Vanguard peacekeepers.",
   "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Vanguard Prod",
-  "tooltipKind" : "thea-sword-mf",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "Electric Prod",
   "twoHanded" : false,
   "itemTags" : ["weapon","melee","prod","vanguard"],

@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "A sharp sword made of monster bone.",
   "shortdescription" : "Trapper's Sword",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "shortsword",
   "twoHanded" : false,
   "itemTags" : ["weapon","melee","shortsword","avikan"],

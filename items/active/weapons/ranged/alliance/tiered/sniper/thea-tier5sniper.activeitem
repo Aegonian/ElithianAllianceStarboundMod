@@ -8,7 +8,7 @@
   "manufacturer" : "^gray;Alliance Collective^reset;",
   "shortdescription" : "AC.R-13 Chalice",
   "level" : 5,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Sniper Rifle",
   "itemTags" : ["weapon","ranged","sniperrifle","alliance","alliancecollective","allianceUpgradeable"],
   "twoHanded" : true,

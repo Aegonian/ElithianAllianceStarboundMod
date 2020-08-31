@@ -9,7 +9,7 @@
   "shortdescription" : "Broker RM1",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Handgun",
   "itemTags" : ["weapon","ranged","pistol","alliance","rimdweller","allianceUpgradeable"],
   "twoHanded" : false,

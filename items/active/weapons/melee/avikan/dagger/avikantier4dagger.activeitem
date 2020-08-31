@@ -6,7 +6,7 @@
   "rarity" : "Uncommon",
   "description" : "A sharp bone dagger made of high-quality monster bone.",
   "shortdescription" : "Predator's Dagger",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "dagger",
   "twoHanded" : false,
   "itemTags" : ["weapon","melee","dagger","avikan"],

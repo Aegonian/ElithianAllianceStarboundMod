@@ -8,7 +8,7 @@
   "manufacturer" : "^gray;Bredon Arms^reset;",
   "shortdescription" : "BP-6 Decker",
   "level" : 1,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Pistol",
   "itemTags" : ["weapon","ranged","pistol","alliance","bredonarms","allianceUpgradeable"],
   "twoHanded" : false,

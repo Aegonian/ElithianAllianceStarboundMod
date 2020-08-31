@@ -8,7 +8,7 @@
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Python P-5",
   "level" : 3,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Pistol",
   "itemTags" : ["weapon","ranged","pistol","alliance","aae","allianceUpgradeable"],
   "twoHanded" : false,

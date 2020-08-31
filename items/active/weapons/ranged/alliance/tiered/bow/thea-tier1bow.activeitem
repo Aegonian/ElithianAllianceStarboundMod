@@ -11,7 +11,7 @@
   "manufacturer" : "^gray;Bredon Arms^reset;",
   "shortdescription" : "Bredon Compound Bow",
   "twoHanded" : true,
-  "itemTags" : ["weapon","ranged","bow","alliance","allianceUpgradeable"],
+  "itemTags" : ["weapon","ranged","bow","alliance","bredonarms","allianceUpgradeable"],
 
   "animation" : "/items/active/weapons/ranged/animations/thea-bow.animation",
   "animationParts" : {

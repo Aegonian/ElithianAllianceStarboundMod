@@ -9,7 +9,7 @@
   "shortdescription" : "AC.A-4 Aurora",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Assault Rifle",
   "itemTags" : ["weapon","ranged","assaultrifle","alliance","alliancecollective","allianceUpgradeable"],
   "twoHanded" : true,

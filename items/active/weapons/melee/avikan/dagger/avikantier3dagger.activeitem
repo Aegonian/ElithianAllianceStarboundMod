@@ -6,7 +6,7 @@
   "rarity" : "Uncommon",
   "description" : "A sharp dagger made of strong monster bone.",
   "shortdescription" : "Stalker's Dagger",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "dagger",
   "twoHanded" : false,
   "itemTags" : ["weapon","melee","dagger","avikan"],

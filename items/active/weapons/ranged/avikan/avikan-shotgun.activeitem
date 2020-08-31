@@ -8,7 +8,7 @@
   "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Vanguard Shotgun",
   "level" : 5,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Shotgun",
   "itemTags" : ["weapon","ranged","shotgun","avikan","vanguard"],
   "twoHanded" : true,

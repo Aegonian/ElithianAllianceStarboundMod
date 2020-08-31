@@ -8,7 +8,7 @@
   "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Vanguard RPG",
   "level" : 6,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "rocketLauncher",
   "itemTags" : ["weapon","ranged","rocketlauncher","avikan","vanguard"],
   "twoHanded" : true,

@@ -7,7 +7,7 @@
   "description" : "A hunting knife designed by the Nomada. Used to cut the highest quality leather from monsters.",
   "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Nomada Hunting Knife",
-  "tooltipKind" : "thea-sword-mf",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "Hunting Knife",
   "twoHanded" : false,
   "itemTags" : ["weapon","melee","dagger","avikan"],

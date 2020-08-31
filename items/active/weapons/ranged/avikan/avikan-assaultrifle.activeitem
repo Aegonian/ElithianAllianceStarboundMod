@@ -8,7 +8,7 @@
   "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Vanguard Assault Rifle",
   "level" : 5,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Assault Rifle",
   "itemTags" : ["weapon","ranged","assaultrifle","avikan","vanguard"],
   "twoHanded" : true,

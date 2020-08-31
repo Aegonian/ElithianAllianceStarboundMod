@@ -8,7 +8,7 @@
   "manufacturer" : "^gray;Alliance Collective^reset;",
   "shortdescription" : "AC.S-24 Ravager",
   "level" : 5,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Shotgun",
   "itemTags" : ["weapon","ranged","shotgun","alliance","alliancecollective","allianceUpgradeable"],
   "twoHanded" : true,

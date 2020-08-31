@@ -7,7 +7,7 @@
   "description" : "A modern shortsword.",
   "manufacturer" : "^gray;Stryker Smithing^reset;",
   "shortdescription" : "Stryker X-06 Hammer",
-  "tooltipKind" : "thea-sword-mf",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "hammer",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","alliance","strykersmithing","allianceUpgradeable"],

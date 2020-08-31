@@ -5,7 +5,7 @@
   "rarity" : "legendary",
   "description" : "Uses miniature jump gates to transport solar matter to the magazine.",
   "shortdescription" : "Centensian Jumpsniper",
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-descriptive",
   "category" : "Jumpsniper",
   "twoHanded" : true,
   "itemTags" : ["weapon","ranged","sniperrifle","centens","jumpweapon"],

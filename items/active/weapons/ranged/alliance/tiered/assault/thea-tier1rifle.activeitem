@@ -8,7 +8,7 @@
   "manufacturer" : "^gray;Bredon Arms^reset;",
   "shortdescription" : "BA-12 Mason",
   "level" : 1,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Assault Rifle",
   "itemTags" : ["weapon","ranged","assaultrifle","alliance","bredonarms","allianceUpgradeable"],
   "twoHanded" : true,

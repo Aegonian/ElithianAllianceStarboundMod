@@ -7,7 +7,7 @@
   "description" : "A metal axe. It uses a vibro-blade design.",
   "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Nomada Axe",
-  "tooltipKind" : "thea-sword-mf",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "axe",
   "twoHanded" : false,
   "itemTags" : ["weapon","melee","axe","avikan","vanguard"],

@@ -6,7 +6,7 @@
   "rarity" : "Common",
   "description" : "A simple sword made of monster bone.",
   "shortdescription" : "Bone Sword",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "shortsword",
   "twoHanded" : false,
   "itemTags" : ["weapon","melee","shortsword","avikan"],

@@ -9,7 +9,7 @@
   "shortdescription" : "ATROS AR-M1",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Assault Rifle",
   "itemTags" : ["weapon","ranged","assaultrifle","alliance","atros","allianceUpgradeable"],
   "twoHanded" : true,

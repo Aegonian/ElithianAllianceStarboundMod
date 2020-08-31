@@ -8,7 +8,7 @@
   "description" : "An electric prod used by Union law enforcement.",
   "manufacturer" : "^gray;Stryker Smithing^reset;",
   "shortdescription" : "P-ASA Impairer",
-  "tooltipKind" : "thea-sword-mf",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "Electric Baton",
   "twoHanded" : false,
   "itemTags" : ["weapon","melee","prod","alliance","strykersmithing","allianceUpgradeable"],

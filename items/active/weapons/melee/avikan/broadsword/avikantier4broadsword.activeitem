@@ -6,7 +6,7 @@
   "rarity" : "uncommon",
   "description" : "A sharp broadsword made of high-quality monster bone.",
   "shortdescription" : "Predator's Blade",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "broadsword",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","broadsword","avikan"],

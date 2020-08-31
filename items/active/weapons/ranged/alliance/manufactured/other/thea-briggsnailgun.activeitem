@@ -9,7 +9,7 @@
   "shortdescription" : "Briggs Nailgun",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Nailgun",
   "itemTags" : ["weapon","ranged","machinepistol","alliance","briggs","allianceUpgradeable"],
   "twoHanded" : false,

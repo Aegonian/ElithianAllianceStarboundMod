@@ -7,7 +7,7 @@
   "description" : "An energy weapon used by high-ranking members of the Clanguard.",
   "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Clanguard Broadsword",
-  "tooltipKind" : "thea-sword-mf",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "broadsword",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","broadsword","avikan","vanguard"],

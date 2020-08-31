@@ -5,12 +5,13 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "^orange;A unique line rifle built to decimate the Errasmeyr.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "^orange;Errasslayer's Lance^white;",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-chargedgunalt-unique",
+  "tooltipKind" : "thea-chargedgunalt-unique-mf",
   "category" : "Line Rifle",
-  "itemTags" : ["weapon","ranged","avikan","linerifle","theaUnique"],
+  "itemTags" : ["weapon","ranged","avikan","linerifle","vanguard","theaUnique"],
   "twoHanded" : true,
   
   //CONFIGURATION FOR WEAPONS COLLECTION
