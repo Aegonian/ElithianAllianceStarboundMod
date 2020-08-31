@@ -3,7 +3,7 @@
   "price" : 900,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A metal spear with an extremely sharp blade, issued to Avikan military forces.",
+  "description" : "^gray;A metal spear with an extremely sharp blade, issued to Avikan military forces.",
   "shortdescription" : "Vanguard Spear",
   "tooltipKind" : "thea-sword-descriptive",
   "category" : "spear",

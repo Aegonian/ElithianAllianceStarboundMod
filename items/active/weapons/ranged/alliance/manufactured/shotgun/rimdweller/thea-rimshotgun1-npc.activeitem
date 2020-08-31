@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-rimshotgun1.png:idle",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A shotgun produced somewhere in the Rim.",
+  "description" : "^gray;A shotgun produced somewhere in the Rim.^reset;",
   "manufacturer" : "^gray;The Rim^reset;",
   "shortdescription" : "Breacher RM14 (NPC)",
   "level" : 6,

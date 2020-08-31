@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-policepistol.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "The standard handgun held by P-ASA officers.",
+  "description" : "^gray;The standard handgun held by P-ASA officers.^reset;",
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "P-ASA Enforcer P-6",
   "level" : 6,

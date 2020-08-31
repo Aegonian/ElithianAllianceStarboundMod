@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "common",
   "category" : "shield",
-  "description" : "A plate of monster bone.",
+  "description" : "^gray;A plate of monster bone.",
   "shortdescription" : "Bone Shield",
   "tooltipKind" : "thea-shield",
   "twoHanded" : false,

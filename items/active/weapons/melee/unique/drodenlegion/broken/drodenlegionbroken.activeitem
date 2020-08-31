@@ -4,7 +4,7 @@
   "level" : 1,
   "maxStack" : 1,
   "rarity" : "common",
-  "description" : "A broken longsword, with a chipped blade and busted power supply.",
+  "description" : "^gray;A broken longsword, with a chipped blade and busted power supply.",
   "shortdescription" : "Broken Longsword",
   "tooltipKind" : "thea-sword-descriptive",
   "category" : "Longsword",

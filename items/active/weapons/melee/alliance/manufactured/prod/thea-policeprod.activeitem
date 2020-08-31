@@ -5,7 +5,7 @@
   "fixedLevel" : false,
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "An electric prod used by Union law enforcement.",
+  "description" : "^gray;An electric prod used by Union law enforcement.",
   "manufacturer" : "^gray;Stryker Smithing^reset;",
   "shortdescription" : "P-ASA Impairer",
   "tooltipKind" : "thea-sword-descriptive-mf",

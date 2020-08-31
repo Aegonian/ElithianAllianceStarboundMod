@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-atrossmg1.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A fast-firing Alliance SMG.",
+  "description" : "^gray;A fast-firing Alliance SMG.^reset;",
   "manufacturer" : "^gray;ATROS Arms^reset;",
   "shortdescription" : "ATROS SMG-M1",
   "level" : 6,

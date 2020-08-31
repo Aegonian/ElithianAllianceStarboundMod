@@ -4,7 +4,7 @@
   "level" : 1,
   "maxStack" : 1,
   "rarity" : "Common",
-  "description" : "A broken scathe, a shadow of its former self.",
+  "description" : "^gray;A broken scathe, a shadow of its former self.",
   "shortdescription" : "Broken Scathe",
   "tooltipKind" : "thea-sword-descriptive",
   "category" : "Scathe",

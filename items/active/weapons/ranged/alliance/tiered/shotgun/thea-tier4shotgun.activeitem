@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-tier4shotgun.png",
   "maxStack" : 1,
   "rarity" : "Uncommon",
-  "description" : "A standard-issue Alliance shotgun.",
+  "description" : "^gray;A standard-issue Alliance shotgun.",
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Boromus S-6",
   "level" : 4,

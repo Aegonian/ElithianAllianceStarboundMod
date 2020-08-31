@@ -4,7 +4,7 @@
   "inventoryIcon" : "trinktier4rifle.png",
   "maxStack" : 1,
   "rarity" : "uncommon",
-  "description" : "A medium-grade, standard issue laser rifle built by the Trinks.",
+  "description" : "^gray;A medium-grade, standard issue laser rifle built by the Trinks.",
   "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "Circuit Rifle Mk IV",
   "level" : 4,

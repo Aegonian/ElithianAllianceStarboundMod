@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-collectivesniper2.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A high-impact sniper rifle.",
+  "description" : "^gray;A high-impact sniper rifle.^reset;",
   "manufacturer" : "^gray;Alliance Collective^reset;",
   "shortdescription" : "AC.R-16 Stargazer",
   "level" : 6,

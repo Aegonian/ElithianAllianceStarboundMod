@@ -4,7 +4,7 @@
   "inventoryIcon" : "avikan-assaultrifle2.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A high-powered burst rifle issued to Avikan military forces.",
+  "description" : "^gray;A high-powered burst rifle issued to Avikan military forces.",
   "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Vanguard Burst Rifle",
   "level" : 6,

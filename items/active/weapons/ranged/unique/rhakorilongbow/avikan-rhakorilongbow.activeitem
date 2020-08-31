@@ -6,12 +6,13 @@
   "inventoryIcon" : "avikan-rhakorilongbowicon.png",
   "maxStack" : 1,
   "rarity" : "Essential",
-  "tooltipKind" : "thea-longbow-unique",
+  "tooltipKind" : "thea-longbow-mf-unique",
   "category" : "Longbow",
   "description" : "^orange;A longbow built by the clans of the Rhakori Highlands.",
+  "manufacturer" : "^gray;Rhakor^reset;",
   "shortdescription" : "^orange;Rhakori Longbow^white;",
   "twoHanded" : true,
-  "itemTags" : ["weapon","ranged","bow","avikan","theaUnique"],
+  "itemTags" : ["weapon","ranged","bow","avikan","rhakor","theaUnique"],
   
   //CONFIGURATION FOR WEAPONS COLLECTION
   "collectablesOnPickup" : { "thea_weapons" : "avikan-rhakorilongbow" },

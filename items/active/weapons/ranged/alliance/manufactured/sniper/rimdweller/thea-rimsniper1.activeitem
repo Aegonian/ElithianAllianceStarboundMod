@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-rimsniper1.png:idle",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A sniper rifle produced somewhere in the Rim.",
+  "description" : "^gray;A sniper rifle produced somewhere in the Rim.^reset;",
   "manufacturer" : "^gray;The Rim^reset;",
   "shortdescription" : "Executioner RM2",
   "level" : 6,

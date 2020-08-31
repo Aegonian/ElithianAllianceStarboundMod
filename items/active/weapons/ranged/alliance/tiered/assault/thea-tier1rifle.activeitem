@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-tier1rifle.png",
   "maxStack" : 1,
   "rarity" : "Common",
-  "description" : "A ballistic assault rifle.",
+  "description" : "^gray;A ballistic assault rifle.^reset;",
   "manufacturer" : "^gray;Bredon Arms^reset;",
   "shortdescription" : "BA-12 Mason",
   "level" : 1,

@@ -4,7 +4,7 @@
   "inventoryIcon" : "akkimari-spikecannon.png",
   "maxStack" : 1,
   "rarity" : "Uncommon",
-  "description" : "A heavy spike cannon cobbled together by the Akkimari.",
+  "description" : "^gray;A heavy spike cannon cobbled together by the Akkimari.^reset;",
   "manufacturer" : "^gray;Kelraaki^reset;",
   "shortdescription" : "Akris Spike Cannon",
   "level" : 3,

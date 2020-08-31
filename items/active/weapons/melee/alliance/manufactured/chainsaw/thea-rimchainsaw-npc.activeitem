@@ -4,7 +4,7 @@
   "level" : 6,
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A powerful chainsaw that cuts through metal, flesh and rock all.",
+  "description" : "^gray;A powerful chainsaw that cuts through metal, flesh and rock all.",
   "manufacturer" : "^gray;The Rim^reset;",
   "shortdescription" : "Rimrock Cutter (NPC)",
   "tooltipKind" : "thea-sword-mf",

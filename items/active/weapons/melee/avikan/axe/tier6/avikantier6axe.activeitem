@@ -4,7 +4,7 @@
   "level" : 6,
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "An energy weapon used by high-ranking members of the Clanguard.",
+  "description" : "^gray;An energy weapon used by high-ranking members of the Clanguard.",
   "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Clanguard Axe",
   "tooltipKind" : "thea-sword-descriptive-mf",

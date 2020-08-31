@@ -4,7 +4,7 @@
   "inventoryIcon" : "akkimari-strafegun.png",
   "maxStack" : 1,
   "rarity" : "Uncommon",
-  "description" : "An Akkimari weapon firing target-seeking plasma bolts.",
+  "description" : "^gray;An Akkimari weapon firing target-seeking plasma bolts.^reset;",
   "manufacturer" : "^gray;Rashakr^reset;",
   "shortdescription" : "Akris Strafer NPC",
   "level" : 4,

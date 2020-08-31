@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-tier2smg.png",
   "maxStack" : 1,
   "rarity" : "Common",
-  "description" : "A standard-issue Alliance SMG.",
+  "description" : "^gray;A standard-issue Alliance SMG.",
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Barok P-2",
   "level" : 2,

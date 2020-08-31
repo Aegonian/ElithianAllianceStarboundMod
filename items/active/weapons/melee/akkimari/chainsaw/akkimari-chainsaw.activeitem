@@ -5,7 +5,7 @@
   "fixedLevel" : false,
   "maxStack" : 1,
   "rarity" : "Uncommon",
-  "description" : "A powerful chainsaw that cuts through metal, flesh and rock all.",
+  "description" : "^gray;A powerful chainsaw that cuts through metal, flesh and rock all.",
   "shortdescription" : "Akris Chainsaw",
   "tooltipKind" : "thea-chainsaw",
   "category" : "Chainsaw",

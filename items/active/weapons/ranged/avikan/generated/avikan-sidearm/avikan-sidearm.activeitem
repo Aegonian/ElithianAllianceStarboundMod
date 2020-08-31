@@ -3,7 +3,7 @@
   "price" : 640,
   "maxStack" : 1,
   "rarity" : "rare",
-  "description" : "A standard-model Nomada Sidearm.",
+  "description" : "^gray;A standard-model Nomada Sidearm.",
   "shortdescription" : "Nomada Sidearm",
   "tooltipKind" : "thea-gun-descriptive",
   "category" : "Sidearm",

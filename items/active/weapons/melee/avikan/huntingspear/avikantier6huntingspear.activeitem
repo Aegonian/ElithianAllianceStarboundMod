@@ -4,7 +4,7 @@
   "level" : 6,
   "maxStack" : 1,
   "rarity" : "legendary",
-  "description" : "Harvest special materials from monsters.",
+  "description" : "^gray;Harvest special materials from monsters.",
   "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Nomada Hunting Spear",
   "tooltipKind" : "thea-sword-descriptive-mf",

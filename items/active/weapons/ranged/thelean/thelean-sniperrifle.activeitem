@@ -4,7 +4,7 @@
   "inventoryIcon" : "thelean-sniperrifle.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A powerful flux rifle which shoots molten metal projectiles.",
+  "description" : "^gray;A powerful flux rifle which shoots molten metal projectiles.",
   "shortdescription" : "Vatha'rak", //Translated to: Intruder
   "level" : 6,
   "tooltipKind" : "thea-gun-descriptive",

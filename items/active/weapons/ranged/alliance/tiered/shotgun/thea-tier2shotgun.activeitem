@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-tier2shotgun.png:idle",
   "maxStack" : 1,
   "rarity" : "Common",
-  "description" : "A standard-issue Alliance shotgun.",
+  "description" : "^gray;A standard-issue Alliance shotgun.",
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Rophalus S-2",
   "level" : 2,

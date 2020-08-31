@@ -4,7 +4,7 @@
   "level" : 2,
   "maxStack" : 1,
   "rarity" : "Common",
-  "description" : "A sharp dagger made of monster bone.",
+  "description" : "^gray;A sharp dagger made of monster bone.",
   "shortdescription" : "Trapper's Dagger",
   "tooltipKind" : "thea-sword-descriptive",
   "category" : "dagger",

@@ -3,7 +3,7 @@
   "price" : 1250,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A welding torch of Trinkian design. It burns incredibly hot.",
+  "description" : "^gray;A welding torch of Trinkian design. It burns incredibly hot.",
   "shortdescription" : "Trinkian Welding Torch",
   "tooltipKind" : "thea-continuousgun",
   "category" : "Welding Torch",

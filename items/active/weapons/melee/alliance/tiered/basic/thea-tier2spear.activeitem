@@ -4,7 +4,7 @@
   "level" : 2,
   "maxStack" : 1,
   "rarity" : "common",
-  "description" : "A basic spear.",
+  "description" : "^gray;A basic spear.",
   "manufacturer" : "^gray;Bredon Arms^reset;",
   "shortdescription" : "Bredon Spear",
   "tooltipKind" : "thea-sword-descriptive-mf",

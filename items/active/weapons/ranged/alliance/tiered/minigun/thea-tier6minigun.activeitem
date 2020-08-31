@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-tier6minigun.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "An extremely powerful Alliance minigun.",
+  "description" : "^gray;An extremely powerful Alliance minigun.",
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Valkyrie V-2",
   "level" : 6,

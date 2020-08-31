@@ -7,7 +7,7 @@
   "rarity" : "Uncommon",
   "tooltipKind" : "thea-gun-descriptive",
   "category" : "Crossbow",
-  "description" : "A crossbow made for hunting. It harvests monsters bones and hides.",
+  "description" : "^gray;A crossbow made for hunting. It harvests monsters bones and hides.^reset;",
   "shortdescription" : "Bone Crossbow",
   "twoHanded" : true,
   "itemTags" : ["weapon","ranged","bow","avikan"],

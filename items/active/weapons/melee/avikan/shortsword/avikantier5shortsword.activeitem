@@ -4,7 +4,7 @@
   "level" : 5,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A sharp metal shortsword designed by the Nomada.",
+  "description" : "^gray;A sharp metal shortsword designed by the Nomada.",
   "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Nomada Sword",
   "tooltipKind" : "thea-sword-descriptive-mf",

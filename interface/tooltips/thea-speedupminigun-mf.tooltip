@@ -102,6 +102,15 @@
     "centered" : true,
     "wrapWidth" : 126
   },
+  "descriptionLabel" : {
+    "type" : "label",
+    "position" : [9, 50],
+    "hAnchor" : "left",
+    "vAnchor" : "top",
+    "wrapWidth" : 124,
+    "lineSpacing" : 1.0,
+    "value" : "I am a bug. Please report me!"
+  },
   "handednessLabel" : {
     "type" : "label",
     "position" : [90, 164],

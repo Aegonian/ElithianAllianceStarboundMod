@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-tier4machinegun.png",
   "maxStack" : 1,
   "rarity" : "Uncommon",
-  "description" : "A machinegun perfect for sustained fire.",
+  "description" : "^gray;A machinegun perfect for sustained fire.",
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Homer RS-2",
   "level" : 4,

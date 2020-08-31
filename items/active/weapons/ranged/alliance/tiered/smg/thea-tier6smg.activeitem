@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-tier6smg.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A standard-issue Alliance SMG.",
+  "description" : "^gray;A standard-issue Alliance SMG.",
   "manufacturer" : "^gray;Alliance Collective^reset;",
   "shortdescription" : "AC.P-9 Broker",
   "level" : 6,

@@ -4,7 +4,7 @@
   "inventoryIcon" : "trinktier5pistol.png",
   "maxStack" : 1,
   "rarity" : "rare",
-  "description" : "A high-grade, standard issue laser pistol built by the Trinks.",
+  "description" : "^gray;A high-grade, standard issue laser pistol built by the Trinks.",
   "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "Circuit Pistol Mk V",
   "level" : 5,

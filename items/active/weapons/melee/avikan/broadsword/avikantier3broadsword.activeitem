@@ -4,7 +4,7 @@
   "level" : 3,
   "maxStack" : 1,
   "rarity" : "uncommon",
-  "description" : "A sharp broadsword made of strong monster bone.",
+  "description" : "^gray;A sharp broadsword made of strong monster bone.",
   "shortdescription" : "Stalker's Blade",
   "tooltipKind" : "thea-sword-descriptive",
   "category" : "broadsword",

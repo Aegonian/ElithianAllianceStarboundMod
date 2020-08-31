@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-rimrifle1.png:idle",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "An assault rifle produced somewhere in the Rim.",
+  "description" : "^gray;An assault rifle produced somewhere in the Rim.^reset;",
   "manufacturer" : "^gray;The Rim^reset;",
   "shortdescription" : "Ripper RM5",
   "level" : 6,

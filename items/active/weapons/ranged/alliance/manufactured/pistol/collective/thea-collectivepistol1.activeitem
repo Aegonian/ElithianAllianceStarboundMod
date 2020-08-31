@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-collectivepistol1.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A standard-issue Alliance handgun.",
+  "description" : "^gray;A standard-issue Alliance handgun.^reset;",
   "manufacturer" : "^gray;Alliance Collective^reset;",
   "shortdescription" : "AC.P-3 Fulcrum",
   "level" : 6,

@@ -4,7 +4,7 @@
   "level" : 6,
   "maxStack" : 1,
   "rarity" : "legendary",
-  "description" : "A light Thelean blade. The grip is very uncomfortable to non-Theleans.",
+  "description" : "^gray;A light Thelean blade. The grip is very uncomfortable to non-Theleans.",
   "shortdescription" : "Thelean Shortblade",
   "tooltipKind" : "thea-sword-descriptive",
   "category" : "shortsword",

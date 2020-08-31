@@ -5,7 +5,7 @@
   "fixedLevel" : false,
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "The ceremonial shepherd's crook of the Pathfinder.",
+  "description" : "^gray;The ceremonial shepherd's crook of the Pathfinder.",
   "manufacturer" : "^gray;Landing Festival^reset;",
   "shortdescription" : "Pathfinder's Staff",
   "tooltipKind" : "thea-sword-descriptive-mf",

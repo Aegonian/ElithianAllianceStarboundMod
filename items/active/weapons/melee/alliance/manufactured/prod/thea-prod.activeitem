@@ -5,7 +5,7 @@
   "fixedLevel" : false,
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A basic electric prod.",
+  "description" : "^gray;A basic electric prod.",
   "manufacturer" : "^gray;Enerth Engineering^reset;",
   "shortdescription" : "Enerth Shock Rod",
   "tooltipKind" : "thea-sword-descriptive-mf",

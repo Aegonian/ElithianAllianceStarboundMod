@@ -4,7 +4,7 @@
   "inventoryIcon" : "avikan-skiprifle.png",
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A compact skiprifle issued to Avikan military forces.",
+  "description" : "^gray;A compact skiprifle issued to Avikan military forces.",
   "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Vanguard Skiprifle",
   "level" : 5,

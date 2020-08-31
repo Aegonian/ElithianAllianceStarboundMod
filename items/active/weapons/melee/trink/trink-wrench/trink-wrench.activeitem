@@ -3,7 +3,7 @@
   "price" : 750,
   "maxStack" : 1,
   "rarity" : "uncommon",
-  "description" : "A Trinkian wrench.",
+  "description" : "^gray;A Trinkian wrench.",
   "shortdescription" : "Trinkian Wrench",
   "tooltipKind" : "thea-sword-descriptive",
   "category" : "Wrench",

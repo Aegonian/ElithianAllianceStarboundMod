@@ -4,7 +4,7 @@
   "level" : 1,
   "maxStack" : 1,
   "rarity" : "Common",
-  "description" : "A simple dagger made of a sharpened bone.",
+  "description" : "^gray;A simple dagger made of a sharpened bone.",
   "shortdescription" : "Bone Dagger",
   "tooltipKind" : "thea-sword-descriptive",
   "category" : "dagger",

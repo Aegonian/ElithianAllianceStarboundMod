@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-tier5rifle.png",
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A standard-issue Alliance assault rifle.",
+  "description" : "^gray;A standard-issue Alliance assault rifle.^reset;",
   "manufacturer" : "^gray;Alliance Collective^reset;",
   "shortdescription" : "AC.A-2 Clarity",
   "level" : 5,

@@ -4,7 +4,7 @@
   "inventoryIcon" : "avikan-minigun.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A high damage, high recoil weapon of Avikan design.",
+  "description" : "^gray;A high damage, high recoil weapon of Avikan design.",
   "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Vanguard Minigun",
   "level" : 6,

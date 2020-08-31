@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-policerifle.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "An assault rifle sometimes issued to P-ASA law enforcement.",
+  "description" : "^gray;An assault rifle sometimes issued to P-ASA law enforcement.^reset;",
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "P-ASA Suppressor I-17",
   "level" : 6,

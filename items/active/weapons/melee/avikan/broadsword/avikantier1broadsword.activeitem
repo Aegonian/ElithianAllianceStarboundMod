@@ -4,7 +4,7 @@
   "level" : 1,
   "maxStack" : 1,
   "rarity" : "common",
-  "description" : "A broadsword made of a giant monster's tooth.",
+  "description" : "^gray;A broadsword made of a giant monster's tooth.",
   "shortdescription" : "Bone Blade",
   "tooltipKind" : "thea-sword-descriptive",
   "category" : "broadsword",

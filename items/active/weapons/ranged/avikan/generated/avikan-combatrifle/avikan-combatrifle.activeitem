@@ -3,7 +3,7 @@
   "price" : 960,
   "maxStack" : 1,
   "rarity" : "rare",
-  "description" : "A standard-model Nomada Combat Rifle.",
+  "description" : "^gray;A standard-model Nomada Combat Rifle.",
   "shortdescription" : "Nomada Combat Rifle",
   "tooltipKind" : "thea-gun-descriptive",
   "category" : "Combat Rifle",

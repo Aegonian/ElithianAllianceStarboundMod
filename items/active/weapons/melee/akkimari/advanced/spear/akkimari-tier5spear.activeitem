@@ -4,7 +4,7 @@
   "level" : 5,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A heated spear used by bounty hunters of the Kelraaki.",
+  "description" : "^gray;A heated spear used by bounty hunters of the Kelraaki.",
   "manufacturer" : "^gray;Kelraaki^reset;",
   "shortdescription" : "Kelraaki Spear",
   "tooltipKind" : "thea-sword-descriptive-mf",

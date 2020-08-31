@@ -4,7 +4,7 @@
   "inventoryIcon" : "avikan-missilepod.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A shoulder-mounted missile pod for sustained heavy fire.",
+  "description" : "^gray;A shoulder-mounted missile pod for sustained heavy fire.",
   "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Vanguard Missile Pod",
   "level" : 6,

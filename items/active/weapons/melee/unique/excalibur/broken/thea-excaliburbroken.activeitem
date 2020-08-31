@@ -4,7 +4,7 @@
   "level" : 1,
   "maxStack" : 1,
   "rarity" : "common",
-  "description" : "Once a great Aevis, now broken by time and use.",
+  "description" : "^gray;Once a great Aevis, now broken by time and use.",
   "shortdescription" : "Broken Shieldblade",
   "tooltipKind" : "thea-sword-descriptive",
   "category" : "Shieldblade",

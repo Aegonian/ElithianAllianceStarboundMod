@@ -3,7 +3,7 @@
   "price" : 550,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A hacked Droden shortsword.",
+  "description" : "^gray;A hacked Droden shortsword.",
   "shortdescription" : "Violated Shortsword",
   "tooltipKind" : "thea-sword-descriptive",
   "category" : "shortsword",

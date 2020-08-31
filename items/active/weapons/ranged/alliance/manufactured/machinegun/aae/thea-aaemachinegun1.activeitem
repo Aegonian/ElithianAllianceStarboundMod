@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-aaemachinegun1.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A machinegun perfect for sustained fire.",
+  "description" : "^gray;A machinegun perfect for sustained fire.^reset;",
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Plutarch RS-6",
   "level" : 6,

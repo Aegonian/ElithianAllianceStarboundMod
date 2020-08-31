@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-briggsnailgun.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A powerful nailgun built for construction work.",
+  "description" : "^gray;A powerful nailgun built for construction work.^reset;",
   "manufacturer" : "^gray;Briggs Shipbuilding^reset;",
   "shortdescription" : "Briggs Nailgun",
   "level" : 6,

@@ -4,7 +4,7 @@
   "level" : 4,
   "maxStack" : 1,
   "rarity" : "Uncommon",
-  "description" : "A sharp bone axe made of high-quality monster bone.",
+  "description" : "^gray;A sharp bone axe made of high-quality monster bone.",
   "shortdescription" : "Predator's Axe",
   "tooltipKind" : "thea-sword-descriptive",
   "category" : "axe",

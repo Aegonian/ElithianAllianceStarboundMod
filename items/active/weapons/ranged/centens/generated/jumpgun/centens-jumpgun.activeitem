@@ -3,7 +3,7 @@
   "price" : 1000,
   "maxStack" : 1,
   "rarity" : "legendary",
-  "description" : "Uses miniature jump gates to transport solar matter to the magazine.",
+  "description" : "^gray;Uses miniature jump gates to transport solar matter to the magazine.",
   "shortdescription" : "Centensian Jumpgun",
   "tooltipKind" : "thea-gun-descriptive",
   "category" : "Jumpgun",

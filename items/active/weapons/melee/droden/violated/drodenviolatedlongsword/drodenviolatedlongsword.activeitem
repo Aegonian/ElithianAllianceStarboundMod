@@ -3,7 +3,7 @@
   "price" : 900,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A hacked Droden longsword.",
+  "description" : "^gray;A hacked Droden longsword.",
   "shortdescription" : "Violated Longsword",
   "tooltipKind" : "thea-sword-descriptive",
   "category" : "Longsword",

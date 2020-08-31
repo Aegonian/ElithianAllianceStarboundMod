@@ -3,7 +3,7 @@
   "price" : 1560,
   "maxStack" : 1,
   "rarity" : "legendary",
-  "description" : "A high-powered sniper rifle firing explosive rounds.",
+  "description" : "^gray;A high-powered sniper rifle firing explosive rounds.",
   "shortdescription" : "Harbinger EX-12",
   "tooltipKind" : "thea-gun-descriptive",
   "category" : "Sniper Rifle",

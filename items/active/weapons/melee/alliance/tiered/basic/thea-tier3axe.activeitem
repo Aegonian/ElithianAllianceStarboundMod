@@ -4,7 +4,7 @@
   "level" : 3,
   "maxStack" : 1,
   "rarity" : "Uncommon",
-  "description" : "A basic shortsword.",
+  "description" : "^gray;A basic shortsword.",
   "manufacturer" : "^gray;Bredon Arms^reset;",
   "shortdescription" : "Bredon Axe",
   "tooltipKind" : "thea-sword-descriptive-mf",

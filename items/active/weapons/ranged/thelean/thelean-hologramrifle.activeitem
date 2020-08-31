@@ -4,7 +4,7 @@
   "inventoryIcon" : "thelean-hologramrifle.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A holographic rifle.",
+  "description" : "^gray;A holographic rifle.",
   "shortdescription" : "Sol'thass Hologram", //Translates to: Life-taker
   "level" : 1,
   "tooltipKind" : "thea-gun-descriptive",

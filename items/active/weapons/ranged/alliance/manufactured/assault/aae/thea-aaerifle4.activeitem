@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-aaerifle4.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A high rate of fire assault rifle.",
+  "description" : "^gray;A high rate of fire assault rifle.^reset;",
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Brekker I-20",
   "level" : 6,

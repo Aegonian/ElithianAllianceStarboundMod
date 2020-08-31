@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-rimlauncher1.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A rocket launcher produced somewhere in the Rim.",
+  "description" : "^gray;A rocket launcher produced somewhere in the Rim.^reset;",
   "manufacturer" : "^gray;The Rim^reset;",
   "shortdescription" : "Eradicator RM16",
   "level" : 6,

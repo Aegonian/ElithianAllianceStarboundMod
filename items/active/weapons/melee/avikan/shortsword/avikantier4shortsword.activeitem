@@ -4,7 +4,7 @@
   "level" : 4,
   "maxStack" : 1,
   "rarity" : "Uncommon",
-  "description" : "A sharp sword made of high-quality monster bone.",
+  "description" : "^gray;A sharp sword made of high-quality monster bone.",
   "shortdescription" : "Predator's Sword",
   "tooltipKind" : "thea-sword-descriptive",
   "category" : "shortsword",

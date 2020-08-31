@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-briggsshotgun.png:idle",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "One of few weapons ever developed by Briggs Shipbuilding.",
+  "description" : "^gray;One of few weapons ever developed by Briggs Shipbuilding.^reset;",
   "manufacturer" : "^gray;Briggs Shipbuilding^reset;",
   "shortdescription" : "Briggs Guardian",
   "level" : 6,

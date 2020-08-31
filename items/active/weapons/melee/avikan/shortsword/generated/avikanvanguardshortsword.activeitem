@@ -3,7 +3,7 @@
   "price" : 600,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "An extremely sharp and lightweight shortsword issued to Avikan military forces.",
+  "description" : "^gray;An extremely sharp and lightweight shortsword issued to Avikan military forces.",
   "shortdescription" : "Vanguard Shortsword",
   "tooltipKind" : "thea-sword-descriptive",
   "category" : "shortsword",

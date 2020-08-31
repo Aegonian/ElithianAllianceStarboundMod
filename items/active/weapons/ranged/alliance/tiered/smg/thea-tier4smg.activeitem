@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-tier4smg.png",
   "maxStack" : 1,
   "rarity" : "Uncommon",
-  "description" : "A standard-issue Alliance SMG.",
+  "description" : "^gray;A standard-issue Alliance SMG.",
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Zuvi G-5",
   "level" : 4,

@@ -4,7 +4,7 @@
   "inventoryIcon" : "trinktier5sniper.png",
   "maxStack" : 1,
   "rarity" : "rare",
-  "description" : "A high-grade, standard issue laser sniper rifle built by the Trinks.",
+  "description" : "^gray;A high-grade, standard issue laser sniper rifle built by the Trinks.",
   "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "Circuit Sniper Mk II",
   "level" : 5,

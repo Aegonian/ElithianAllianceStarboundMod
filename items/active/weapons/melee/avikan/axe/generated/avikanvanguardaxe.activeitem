@@ -3,7 +3,7 @@
   "price" : 600,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A superbly crafted metal axe issued to Avikan military forces.",
+  "description" : "^gray;A superbly crafted metal axe issued to Avikan military forces.",
   "shortdescription" : "Vanguard Axe",
   "tooltipKind" : "thea-sword-descriptive",
   "category" : "axe",

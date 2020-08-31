@@ -4,7 +4,7 @@
   "inventoryIcon" : "thelean-pistol.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A powerful flux rifle which shoots molten metal projectiles.",
+  "description" : "^gray;A powerful flux rifle which shoots molten metal projectiles.",
   "shortdescription" : "Tath", //Translates to: Tooth
   "level" : 6,
   "tooltipKind" : "thea-gun-descriptive",

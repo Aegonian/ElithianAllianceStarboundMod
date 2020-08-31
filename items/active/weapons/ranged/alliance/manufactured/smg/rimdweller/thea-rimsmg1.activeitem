@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-rimsmg1.png:idle",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "An SMG produced somewhere in the Rim.",
+  "description" : "^gray;An SMG produced somewhere in the Rim.^reset;",
   "manufacturer" : "^gray;The Rim^reset;",
   "shortdescription" : "Dealer RM4",
   "level" : 6,

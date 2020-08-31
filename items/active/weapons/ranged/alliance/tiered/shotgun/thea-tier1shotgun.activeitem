@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-tier1shotgun.png:idle",
   "maxStack" : 1,
   "rarity" : "Common",
-  "description" : "A ballistic shotgun.",
+  "description" : "^gray;A ballistic shotgun.",
   "manufacturer" : "^gray;Bredon Arms^reset;",
   "shortdescription" : "BS-3 Bremmen",
   "level" : 1,

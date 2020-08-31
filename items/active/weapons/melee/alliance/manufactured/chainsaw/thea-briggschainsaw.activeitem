@@ -5,7 +5,7 @@
   "fixedLevel" : false,
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A powerful chainsaw built for construction work.",
+  "description" : "^gray;A powerful chainsaw built for construction work.",
   "manufacturer" : "^gray;Briggs Shipbuilding^reset;",
   "shortdescription" : "Briggs Metalmaster",
   "tooltipKind" : "thea-chainsaw-mf",

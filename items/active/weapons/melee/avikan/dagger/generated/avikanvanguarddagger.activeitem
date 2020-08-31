@@ -3,7 +3,7 @@
   "price" : 450,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A small, but extremely sharp dagger issued to Avikan military forces.",
+  "description" : "^gray;A small, but extremely sharp dagger issued to Avikan military forces.",
   "shortdescription" : "Vanguard Dagger",
   "tooltipKind" : "thea-sword-descriptive",
   "category" : "dagger",

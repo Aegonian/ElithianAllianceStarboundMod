@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-tier3rifle.png",
   "maxStack" : 1,
   "rarity" : "Uncommon",
-  "description" : "A high rate of fire assault rifle.",
+  "description" : "^gray;A high rate of fire assault rifle.^reset;",
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Helios I-16",
   "level" : 3,

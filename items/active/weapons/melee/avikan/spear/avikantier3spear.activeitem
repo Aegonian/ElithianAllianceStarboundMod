@@ -4,7 +4,7 @@
   "level" : 3,
   "maxStack" : 1,
   "rarity" : "uncommon",
-  "description" : "A sharp spear made of strong monster bone.",
+  "description" : "^gray;A sharp spear made of strong monster bone.",
   "shortdescription" : "Stalker's Spear",
   "tooltipKind" : "thea-sword-descriptive",
   "category" : "spear",

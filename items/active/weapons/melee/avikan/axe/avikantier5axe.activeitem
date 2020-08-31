@@ -4,7 +4,7 @@
   "level" : 5,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A metal axe. It uses a vibro-blade design.",
+  "description" : "^gray;A metal axe. It uses a vibro-blade design.",
   "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Nomada Axe",
   "tooltipKind" : "thea-sword-descriptive-mf",

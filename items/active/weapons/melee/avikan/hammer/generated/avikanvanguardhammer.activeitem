@@ -3,7 +3,7 @@
   "price" : 900,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "An extremely heavy, flat-headed hammer issued to Avikan military forces.",
+  "description" : "^gray;An extremely heavy, flat-headed hammer issued to Avikan military forces.",
   "shortdescription" : "Vanguard Hammer",
   "tooltipKind" : "thea-sword-descriptive",
   "category" : "hammer",

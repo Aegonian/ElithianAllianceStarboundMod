@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-tier1pistol.png",
   "maxStack" : 1,
   "rarity" : "Common",
-  "description" : "A ballistic handgun.",
+  "description" : "^gray;A ballistic handgun.",
   "manufacturer" : "^gray;Bredon Arms^reset;",
   "shortdescription" : "BP-6 Decker",
   "level" : 1,

@@ -2,19 +2,19 @@
   "background" : {
     "type" : "background",
     "fileHeader" : "/interface/tooltips/header.png",
-    "fileBody" : "/interface/tooltips/bodyobject2.png",
+    "fileBody" : "/interface/tooltips/bodyobjectthea2.png",
     "fileFooter" : "/interface/tooltips/footerobject2.png"
   },
   //===================== LEVEL LABELS =====================
   "levelTitleLabel" : {
     "type" : "label",
-    "position" : [120, 128],
+    "position" : [120, 154],
     "hAnchor" : "right",
     "value" : "^gray;lvl^reset;"
   },
   "levelLabel" : {
     "type" : "label",
-    "position" : [130, 128],
+    "position" : [130, 154],
     "hAnchor" : "right"
   },
   //=================== END LEVEL LABELS ===================
@@ -31,53 +31,65 @@
   },
   "dpsTitleLabel" : {
     "type" : "label",
-    "position" : [9, 61],
+    "position" : [9, 88],
     "hAnchor" : "left",
     "value" : "Damage Per Second:"
   },
   "dpsLabel" : {
     "type" : "label",
-    "position" : [130, 61],
+    "position" : [130, 88],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
   "miningStrengthTitleLabel" : {
     "type" : "label",
-    "position" : [9, 52],
+    "position" : [9, 79],
     "hAnchor" : "left",
     "value" : "Mining Strength:"
   },
   "miningStrengthLabel" : {
     "type" : "label",
-    "position" : [130, 52],
+    "position" : [130, 79],
     "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "energyPerSecondTitleLabel" : {
+    "type" : "label",
+    "position" : [9, 70],
+    "hAnchor" : "left",
+    "value" : "Energy Per Second:"
+  },
+  "energyPerSecondLabel" : {
+    "type" : "label",
+    "position" : [130, 70],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "altAbilityTitleLabel" : {
+    "type" : "label",
+    "position" : [9, 61],
+    "hAnchor" : "left",
+    "value" : ""
+  },
+  "altAbilityLabel" : {
+    "type" : "label",
+    "position" : [130, 61],
+    "hAnchor" : "right",
+    "centered" : true,
     "wrapWidth" : 126
   },
   "descriptionLabel" : {
     "type" : "label",
-    "position" : [9, 50],
+    "position" : [9, 59],
     "hAnchor" : "left",
     "vAnchor" : "top",
     "wrapWidth" : 124,
     "lineSpacing" : 1.0,
     "value" : "I am a bug. Please report me!"
   },
-  "altAbilityTitleLabel" : {
-    "type" : "label",
-    "position" : [9, 43],
-    "hAnchor" : "left",
-    "value" : ""
-  },
-  "altAbilityLabel" : {
-    "type" : "label",
-    "position" : [130, 43],
-    "hAnchor" : "right",
-    "centered" : true,
-    "wrapWidth" : 126
-  },
   "handednessLabel" : {
     "type" : "label",
-    "position" : [90, 128],
+    "position" : [90, 154],
     "hAnchor" : "right",
     "centered" : true,
     "wrapWidth" : 126
@@ -91,7 +103,7 @@
   },
   "damageKindImage" : {
     "type" : "image",
-    "position" : [120, 90],
+    "position" : [120, 120],
     "file" : "",
     "centered" : true,
     "maxSize" : [16, 16],
@@ -99,16 +111,16 @@
   },
   "objectImage" : {
     "type" : "image",
-    "position" : [70, 99],
+    "position" : [70, 125],
     "file" : "",
     "centered" : true,
-    "maxSize" : [75, 45],
-    "minSize" : [65, 35]
+    "maxSize" : [60, 60],
+    "minSize" : [60, 60]
   },
   //Custom field, Manufacturer Label
   "manufacturerLabel" : {
     "type" : "label",
-    "position" : [130, 73],
+    "position" : [130, 100],
     "hAnchor" : "right",
     "centered" : true,
     "wrapWidth" : 126

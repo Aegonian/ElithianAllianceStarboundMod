@@ -4,7 +4,7 @@
   "level" : 5,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A hunting knife designed by the Nomada. Used to cut the highest quality leather from monsters.",
+  "description" : "^gray;A hunting knife designed by the Nomada. Used to cut the highest quality leather from monsters.",
   "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Nomada Hunting Knife",
   "tooltipKind" : "thea-sword-descriptive-mf",

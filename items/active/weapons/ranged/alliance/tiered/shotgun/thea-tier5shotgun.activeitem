@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-tier5shotgun.png",
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A standard-issue Alliance shotgun.",
+  "description" : "^gray;A standard-issue Alliance shotgun.",
   "manufacturer" : "^gray;Alliance Collective^reset;",
   "shortdescription" : "AC.S-24 Ravager",
   "level" : 5,

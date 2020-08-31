@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-tier4sniper.png",
   "maxStack" : 1,
   "rarity" : "Uncommon",
-  "description" : "A high-impact sniper rifle.",
+  "description" : "^gray;A high-impact sniper rifle.",
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Eagle R-6",
   "level" : 4,

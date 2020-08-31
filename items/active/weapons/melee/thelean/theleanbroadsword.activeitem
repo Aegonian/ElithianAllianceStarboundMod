@@ -4,7 +4,7 @@
   "level" : 6,
   "maxStack" : 1,
   "rarity" : "legendary",
-  "description" : "A standrad-issue Thelean broadsword. The grip is extremely uncomfortable for non-Theleans.",
+  "description" : "^gray;A standrad-issue Thelean broadsword. The grip is extremely uncomfortable for non-Theleans.",
   "shortdescription" : "Thelean Blade",
   "tooltipKind" : "thea-sword-descriptive",
   "category" : "broadsword",

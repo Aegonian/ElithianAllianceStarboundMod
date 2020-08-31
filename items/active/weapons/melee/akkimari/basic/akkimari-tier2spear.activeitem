@@ -4,7 +4,7 @@
   "level" : 2,
   "maxStack" : 1,
   "rarity" : "common",
-  "description" : "A weapon built from scavenged parts.",
+  "description" : "^gray;A weapon built from scavenged parts.",
   "manufacturer" : "^gray;Kelraaki^reset;",
   "shortdescription" : "Makeshift Spear",
   "tooltipKind" : "thea-sword-descriptive-mf",

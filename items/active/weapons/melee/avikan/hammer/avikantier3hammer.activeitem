@@ -4,7 +4,7 @@
   "level" : 3,
   "maxStack" : 1,
   "rarity" : "uncommon",
-  "description" : "A giant hammer made of strong monster bone.",
+  "description" : "^gray;A giant hammer made of strong monster bone.",
   "shortdescription" : "Stalker's Hammer",
   "tooltipKind" : "thea-sword-descriptive",
   "category" : "hammer",

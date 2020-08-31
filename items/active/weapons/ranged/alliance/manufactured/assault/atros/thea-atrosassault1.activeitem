@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-atrosassault1.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A high rate of fire assault rifle.",
+  "description" : "^gray;A high rate of fire assault rifle.^reset;",
   "manufacturer" : "^gray;ATROS Arms^reset;",
   "shortdescription" : "ATROS AR-M1",
   "level" : 6,

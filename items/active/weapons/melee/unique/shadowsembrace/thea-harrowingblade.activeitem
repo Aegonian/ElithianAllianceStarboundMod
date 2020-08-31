@@ -4,7 +4,7 @@
   "level" : 4,
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A long slender blade built for the Harrowing.",
+  "description" : "^gray;A long slender blade built for the Harrowing.",
   "manufacturer" : "^gray;The Harrowing^reset;",
   "shortdescription" : "Harrowing Blade",
   "tooltipKind" : "thea-sword-descriptive-mf",

@@ -4,7 +4,7 @@
   "inventoryIcon" : "akkimari-nailgun.png",
   "maxStack" : 1,
   "rarity" : "Common",
-  "description" : "A compact nailgun cobbled together by the Akkimari.",
+  "description" : "^gray;A compact nailgun cobbled together by the Akkimari.^reset;",
   "manufacturer" : "^gray;Kelraaki^reset;",
   "shortdescription" : "Akris Nailgun",
   "level" : 1,

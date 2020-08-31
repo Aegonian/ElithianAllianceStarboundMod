@@ -3,7 +3,7 @@
   "price" : 1080,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A metal spear built by craftsmen of the Nomada.",
+  "description" : "^gray;A metal spear built by craftsmen of the Nomada.",
   "shortdescription" : "Nomada Spear",
   "tooltipKind" : "thea-sword-descriptive",
   "category" : "spear",

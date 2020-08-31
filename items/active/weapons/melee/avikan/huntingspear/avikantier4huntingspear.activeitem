@@ -4,7 +4,7 @@
   "level" : 4,
   "maxStack" : 1,
   "rarity" : "uncommon",
-  "description" : "Harvest special materials from monsters.",
+  "description" : "^gray;Harvest special materials from monsters.",
   "shortdescription" : "Elder's Spear",
   "tooltipKind" : "thea-sword-descriptive",
   "category" : "Hunting Spear",

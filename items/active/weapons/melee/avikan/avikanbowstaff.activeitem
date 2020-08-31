@@ -5,7 +5,7 @@
   "fixedLevel" : false,
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A basic combat staff.",
+  "description" : "^gray;A basic combat staff.",
   "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Nomada Combat Staff",
   "tooltipKind" : "thea-sword-descriptive-mf",

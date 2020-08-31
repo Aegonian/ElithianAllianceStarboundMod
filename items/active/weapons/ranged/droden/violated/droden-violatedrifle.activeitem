@@ -4,7 +4,7 @@
   "inventoryIcon" : "droden-violatedrifle.png",
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A hacked Droden Assault Rifle.",
+  "description" : "^gray;A hacked Droden Assault Rifle.",
   "shortdescription" : "Violated Droden Rifle",
   "level" : 1,
   "fixedLevel" : false,

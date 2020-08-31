@@ -4,7 +4,7 @@
   "level" : 1,
   "maxStack" : 1,
   "rarity" : "common",
-  "description" : "A broken prod. Its power supply is busted.",
+  "description" : "^gray;A broken prod. Its power supply is busted.",
   "shortdescription" : "Broken Prod",
   "tooltipKind" : "thea-sword-descriptive",
   "category" : "Prod",

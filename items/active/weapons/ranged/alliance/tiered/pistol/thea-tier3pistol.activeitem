@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-tier3pistol.png",
   "maxStack" : 1,
   "rarity" : "Uncommon",
-  "description" : "A standard-issue Alliance handgun.",
+  "description" : "^gray;A standard-issue Alliance handgun.",
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Python P-5",
   "level" : 3,

@@ -4,7 +4,7 @@
   "level" : 2,
   "maxStack" : 1,
   "rarity" : "common",
-  "description" : "A sharp broadsword made of a giant monster's tooth.",
+  "description" : "^gray;A sharp broadsword made of a giant monster's tooth.",
   "shortdescription" : "Trapper's Blade",
   "tooltipKind" : "thea-sword-descriptive",
   "category" : "broadsword",

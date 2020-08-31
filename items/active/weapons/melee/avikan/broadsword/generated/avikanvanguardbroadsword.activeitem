@@ -3,7 +3,7 @@
   "price" : 900,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A heavy and extremely sharp broadsword issued to Avikan military forces.",
+  "description" : "^gray;A heavy and extremely sharp broadsword issued to Avikan military forces.",
   "shortdescription" : "Vanguard Blade",
   "tooltipKind" : "thea-sword-descriptive",
   "category" : "broadsword",

@@ -4,7 +4,7 @@
   "inventoryIcon" : "akkimari-nailrifle.png",
   "maxStack" : 1,
   "rarity" : "Common",
-  "description" : "A makeshift assault rifle firing hardened nails.",
+  "description" : "^gray;A makeshift assault rifle firing hardened nails.^reset;",
   "manufacturer" : "^gray;Kelraaki^reset;",
   "shortdescription" : "Akris Nailrifle",
   "level" : 2,

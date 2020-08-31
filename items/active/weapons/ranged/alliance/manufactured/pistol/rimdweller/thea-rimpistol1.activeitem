@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-rimpistol1.png:idle",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A handgun produced somewhere in the Rim.",
+  "description" : "^gray;A handgun produced somewhere in the Rim.^reset;",
   "manufacturer" : "^gray;The Rim^reset;",
   "shortdescription" : "Broker RM1",
   "level" : 6,

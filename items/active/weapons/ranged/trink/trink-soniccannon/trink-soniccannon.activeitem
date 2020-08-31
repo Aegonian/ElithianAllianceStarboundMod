@@ -4,7 +4,7 @@
   "inventoryIcon" : "trink-soniccannonicon.png",
   "maxStack" : 1,
   "rarity" : "legendary",
-  "description" : "Fires a powerful blast of air which knocks enemies back.",
+  "description" : "^gray;Fires a powerful blast of air which knocks enemies back.",
   "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "Trinkian Sonic Cannon",
   "level" : 6,

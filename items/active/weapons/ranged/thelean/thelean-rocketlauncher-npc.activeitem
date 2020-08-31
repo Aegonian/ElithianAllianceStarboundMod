@@ -4,7 +4,7 @@
   "inventoryIcon" : "thelean-rocketlauncher.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A powerful flux rifle which fires explosive, target-seeking projectiles.",
+  "description" : "^gray;A powerful flux rifle which fires explosive, target-seeking projectiles.",
   "shortdescription" : "Keth (NPC)", //Translates to: Death
   "level" : 6,
   "tooltipKind" : "thea-gun-descriptive",

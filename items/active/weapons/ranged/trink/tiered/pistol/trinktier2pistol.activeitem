@@ -4,7 +4,7 @@
   "inventoryIcon" : "trinktier2pistol.png",
   "maxStack" : 1,
   "rarity" : "common",
-  "description" : "A low-grade, standard issue laser pistol built by the Trinks.",
+  "description" : "^gray;A low-grade, standard issue laser pistol built by the Trinks.",
   "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "Circuit Pistol Mk II",
   "level" : 2,

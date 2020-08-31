@@ -4,7 +4,7 @@
   "inventoryIcon" : "trinktier0rifle.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "An outdated Trink laser rifle. Taken out of commission years ago, but it still packs a punch.",
+  "description" : "^gray;An outdated Trink laser rifle. Taken out of commission years ago, but it still packs a punch.",
   "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "Trinkian Rifle Mk I",
   "level" : 1,

@@ -4,7 +4,7 @@
   "inventoryIcon" : "avikan-rocketlauncher.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A heavy impact rocket launcher issued to Avikan military forces.",
+  "description" : "^gray;A heavy impact rocket launcher issued to Avikan military forces.",
   "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Vanguard RPG",
   "level" : 6,

@@ -4,7 +4,7 @@
   "level" : 1,
   "maxStack" : 1,
   "rarity" : "common",
-  "description" : "A large hammer made of a monster's bone.",
+  "description" : "^gray;A large hammer made of a monster's bone.",
   "shortdescription" : "Bone Hammer",
   "tooltipKind" : "thea-sword-descriptive",
   "category" : "hammer",

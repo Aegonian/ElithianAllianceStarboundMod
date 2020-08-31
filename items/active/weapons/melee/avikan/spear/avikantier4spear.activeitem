@@ -4,7 +4,7 @@
   "level" : 4,
   "maxStack" : 1,
   "rarity" : "uncommon",
-  "description" : "A sharp spear made of high-quality monster bone.",
+  "description" : "^gray;A sharp spear made of high-quality monster bone.",
   "shortdescription" : "Predator's Spear",
   "tooltipKind" : "thea-sword-descriptive",
   "category" : "spear",

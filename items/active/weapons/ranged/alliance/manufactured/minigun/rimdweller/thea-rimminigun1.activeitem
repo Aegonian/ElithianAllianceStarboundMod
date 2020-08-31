@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-rimminigun1.png:idle",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A minigun that outputs incredible rate of fire.",
+  "description" : "^gray;A minigun that outputs incredible rate of fire.^reset;",
   "manufacturer" : "^gray;The Rim^reset;",
   "shortdescription" : "Terminator RM12",
   "level" : 6,

@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Uncommon",
   "category" : "shield",
-  "description" : "A sturdy metal shield of Trinkian design.",
+  "description" : "^gray;A sturdy metal shield of Trinkian design.",
   "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "Circuit Shield",
   "tooltipKind" : "thea-shield-mf",

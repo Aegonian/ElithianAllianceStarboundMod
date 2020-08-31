@@ -4,7 +4,7 @@
   "level" : 1,
   "maxStack" : 1,
   "rarity" : "common",
-  "description" : "A basic broadsword.",
+  "description" : "^gray;A basic broadsword.",
   "manufacturer" : "^gray;Bredon Arms^reset;",
   "shortdescription" : "Bredon Blade",
   "tooltipKind" : "thea-sword-descriptive-mf",

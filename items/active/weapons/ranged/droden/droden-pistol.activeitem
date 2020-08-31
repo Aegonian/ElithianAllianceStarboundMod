@@ -4,7 +4,7 @@
   "inventoryIcon" : "droden-pistol.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A minimalistic energy weapon issued to Droden soldiers.",
+  "description" : "^gray;A minimalistic energy weapon issued to Droden soldiers.",
   "manufacturer" : "^gray;Vanguard/Legion^reset;",
   "shortdescription" : "Droden Pistol",
   "level" : 6,

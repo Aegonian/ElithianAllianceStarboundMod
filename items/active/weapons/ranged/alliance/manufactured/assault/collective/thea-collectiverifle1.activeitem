@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-collectiverifle1.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A compact, high-impact assault rifle.",
+  "description" : "^gray;A compact, high-impact assault rifle.^reset;",
   "manufacturer" : "^gray;Alliance Collective^reset;",
   "shortdescription" : "AC.A-4 Aurora",
   "level" : 6,

@@ -4,7 +4,7 @@
   "inventoryIcon" : "thelean-minigun.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A powerful Thelean minigun.",
+  "description" : "^gray;A powerful Thelean minigun.",
   "shortdescription" : "Cre'vath", //Translates to: Overlord
   "level" : 6,
   "tooltipKind" : "thea-minigun",

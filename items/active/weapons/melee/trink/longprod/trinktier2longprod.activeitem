@@ -4,7 +4,7 @@
   "level" : 2,
   "maxStack" : 1,
   "rarity" : "common",
-  "description" : "An electric prod built to keep assailants at bay.",
+  "description" : "^gray;An electric prod built to keep assailants at bay.",
   "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "Circuit Longprod Mk II",
   "tooltipKind" : "thea-sword-descriptive-mf",

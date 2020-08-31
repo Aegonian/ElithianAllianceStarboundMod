@@ -4,7 +4,7 @@
   "inventoryIcon" : "akkimari-nailshotgun.png",
   "maxStack" : 1,
   "rarity" : "Common",
-  "description" : "A heavy nail cannon cobbled together by the Akkimari.",
+  "description" : "^gray;A heavy nail cannon cobbled together by the Akkimari.^reset;",
   "manufacturer" : "^gray;Kelraaki^reset;",
   "shortdescription" : "Akris Nailcannon",
   "level" : 2,

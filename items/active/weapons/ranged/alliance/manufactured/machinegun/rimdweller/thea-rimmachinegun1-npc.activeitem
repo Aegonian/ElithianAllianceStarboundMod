@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-rimmachinegun1.png:idle",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A machinegun perfect for sustained fire.",
+  "description" : "^gray;A machinegun perfect for sustained fire.^reset;",
   "manufacturer" : "^gray;The Rim^reset;",
   "shortdescription" : "Maelstrom RM9 (NPC)",
   "level" : 6,
