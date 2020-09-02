@@ -36,7 +36,7 @@
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "image" : "alliancestoragelocker.png:<color>.<key>",
+      "imageLayers" : [ { "image" : "alliancestoragelocker.png:<color>.<key>", "fullbright" : true }, { "image" : "alliancestoragelockerlit.png:<color>.<key>" } ],
       "imagePosition" : [-16, -8],
 
       "spaceScan" : 0.1,
