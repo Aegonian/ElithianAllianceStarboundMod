@@ -4,8 +4,9 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "description" : "^gray;A heavy and extremely sharp broadsword issued to Avikan military forces.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Vanguard Blade",
-  "tooltipKind" : "thea-sword-descriptive",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "broadsword",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","broadsword","avikan","vanguard"],
@@ -24,7 +25,7 @@
     "baseDps" : [10, 11]
   },
 
-  "builder" : "/items/buildscripts/buildweapon.lua",
+  "builder" : "/items/buildscripts/thea-buildrandomweapon.lua",
   "builderConfig" : [{
     "nameGenerator" : "vanguardnames.config:nameGen",
     "animationParts" : {

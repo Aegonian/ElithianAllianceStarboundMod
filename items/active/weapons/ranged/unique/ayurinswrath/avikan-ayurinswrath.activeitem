@@ -5,12 +5,13 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "^orange;A Vanguard Missile Pod modified by Ayurin.",
+  "manufacturer" : "^gray;Ayurin/Vanguard^reset;",
   "shortdescription" : "^orange;Ayurin's Wrath^white;",
   "level" : 6,
   "fixedLevel" : false,
   "tooltipKind" : "thea-burstgun-unique",
   "category" : "Missile Pod",
-  "itemTags" : ["weapon","ranged","rocketlauncher","avikan","theaUnique"],
+  "itemTags" : ["weapon","ranged","rocketlauncher","avikan","vanguard","theaUnique"],
   "twoHanded" : true,
   
   //CONFIGURATION FOR WEAPONS COLLECTION

@@ -9,6 +9,9 @@
         "default" : "idle",
         "states" : {
           "idle" : {
+            "properties" : {
+              "particleEmittersOff" : [ "electricarcing" ]
+            }
           },
           "fireInactive" : {
             "frames" : 3,
@@ -20,7 +23,10 @@
             "frames" : 5,
             "cycle" : 0.4,
             "mode" : "transition",
-            "transition" : "active"
+            "transition" : "active",
+            "properties" : {
+              "particleEmittersOn" : [ "electricarcing" ]
+            }
           },
           "active" : {
             "frames" : 4,
@@ -120,32 +126,41 @@
       "particles" : [
         { "particle" : "thea-electricstunarc"},
         { "particle" : "thea-electricstunarc"},
-        { "particle" : "electricswoosh1"},
-        { "particle" : "electricswoosh2"},
-        { "particle" : "electricswoosh2"}
+        { "particle" : "thea-electricstunarc"},
+        { "particle" : "thea-electricstunarc2"},
+        { "particle" : "thea-electricstunarc2"}
       ]
     },
+	"electricarcing" : {
+	  "active" : true,
+	  "emissionRate" : 3.0,
+	  "transformationGroups" : ["weapon"],
+	  "offsetRegion" : [-0.125, 1.375, -0.625, 1.5],
+	  "particles" : [
+		  { "particle" : "thea-electricstunarc"},
+		  { "particle" : "thea-electricstunarc"}
+		]
+	},
     "electricswoosh" : {
       "active" : false,
       "transformationGroups" : ["swoosh"],
       "burstCount" : 4,
       "offsetRegion" : [2.0, -1.5, 4.0, 1.5],
-      "particles" : [
-        { "particle" : "thea-electricstunarc"},
-        { "particle" : "electricswoosh1"},
-        { "particle" : "electricswoosh2"},
-        { "particle" : "electricswoosh2"}
-      ]
+      "particles" : []
+    },
+    "active" : {
+      "active" : false,
+      "transformationGroups" : ["swoosh"],
+      "emissionRate" : 5,
+      "offsetRegion" : [0.0, -0.5, 3.0, 0.5],
+      "particles" : []
     },
 	"holdparticles" : {
       "active" : false,
       "transformationGroups" : ["swoosh"],
       "emissionRate" : 10,
       "offsetRegion" : [0.0, -0.5, 3.0, 0.5],
-      "particles" : [
-        { "particle" : "thea-electricstunarc"},
-        { "particle" : "electricswoosh2"}
-      ]
+      "particles" : []
     }
   },
 

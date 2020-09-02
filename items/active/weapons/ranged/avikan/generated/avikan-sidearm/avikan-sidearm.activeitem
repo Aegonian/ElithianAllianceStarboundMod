@@ -4,11 +4,12 @@
   "maxStack" : 1,
   "rarity" : "rare",
   "description" : "^gray;A standard-model Nomada Sidearm.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Nomada Sidearm",
-  "tooltipKind" : "thea-gun-descriptive",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Sidearm",
   "twoHanded" : false,
-  "itemTags" : ["weapon","ranged","pistol","avikan"],
+  "itemTags" : ["weapon","ranged","pistol","avikan","vanguard"],
 
   "animation" : "/items/active/weapons/ranged/gun.animation",
   "animationParts" : { },
@@ -84,7 +85,7 @@
   },
   "fireSounds" : [ "/sfx/gun/pistol2.ogg" ],
 
-  "builder" : "/items/buildscripts/buildweapon.lua",
+  "builder" : "/items/buildscripts/thea-buildrandomweapon.lua",
   "builderConfig" : [{
     "nameGenerator" : "sidearmnames.config:nameGen",
     "animationParts" : {

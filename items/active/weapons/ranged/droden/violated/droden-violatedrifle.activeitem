@@ -5,12 +5,13 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "description" : "^gray;A hacked Droden Assault Rifle.",
+  "manufacturer" : "^gray;Violated/Legion^reset;",
   "shortdescription" : "Violated Droden Rifle",
   "level" : 1,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-gun-descriptive",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Assault Rifle",
-  "itemTags" : ["weapon","ranged","assaultrifle","energy","avikan"],
+  "itemTags" : ["weapon","ranged","assaultrifle","energy","avikan","legion","violated"],
   "twoHanded" : true,
   
   "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
@@ -94,5 +95,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

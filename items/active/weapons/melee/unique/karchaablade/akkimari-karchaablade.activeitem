@@ -6,8 +6,9 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "^orange;A blade used by the savage Karchaa tribe.",
+  "manufacturer" : "^gray;Karchaa^reset;",
   "shortdescription" : "^orange;Karchaa Blade^white;",
-  "tooltipKind" : "thea-fistweapon-unique",
+  "tooltipKind" : "thea-fistweapon-mf-unique",
   "category" : "Gauntlet",
   "twoHanded" : false,
   "itemTags" : ["weapon","melee","akkimari","karchaa","theaUnique"],
@@ -116,5 +117,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/thea-buildfist.lua"
+  "builder" : "/items/buildscripts/thea-buildfist-mf.lua"
 }

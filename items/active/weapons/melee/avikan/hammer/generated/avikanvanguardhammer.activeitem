@@ -4,8 +4,9 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "description" : "^gray;An extremely heavy, flat-headed hammer issued to Avikan military forces.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Vanguard Hammer",
-  "tooltipKind" : "thea-sword-descriptive",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "hammer",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","hammer","avikan","vanguard"],
@@ -24,7 +25,7 @@
   },
   "fireSounds" : [ "/sfx/melee/swing_hammer.ogg" ],
 
-  "builder" : "/items/buildscripts/buildweapon.lua",
+  "builder" : "/items/buildscripts/thea-buildrandomweapon.lua",
   "builderConfig" : [{
     "nameGenerator" : "vanguardnames.config:nameGen",
     "animationParts" : {

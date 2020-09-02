@@ -4,8 +4,9 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "description" : "^gray;A hacked Droden shortsword.",
+  "manufacturer" : "^gray;Violated/Legion^reset;",
   "shortdescription" : "Violated Shortsword",
-  "tooltipKind" : "thea-sword-descriptive",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "shortsword",
   "twoHanded" : false,
   "itemTags" : ["weapon","melee","shortsword","droden","violated"],
@@ -24,7 +25,7 @@
     "baseDps" : [6, 7]
   },
 
-  "builder" : "/items/buildscripts/buildweapon.lua",
+  "builder" : "/items/buildscripts/thea-buildrandomweapon.lua",
   "builderConfig" : [{
     "nameGenerator" : "violatednames.config:nameGen",
     "animationParts" : {

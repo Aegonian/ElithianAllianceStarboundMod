@@ -2,25 +2,25 @@
   "background" : {
     "type" : "background",
     "fileHeader" : "/interface/tooltips/header.png",
-    "fileBody" : "/interface/tooltips/bodyobject3.png",
-    "fileFooter" : "/interface/tooltips/footerobject3.png"
+    "fileBody" : "/interface/tooltips/bodyobjectthea3.png",
+    "fileFooter" : "/interface/tooltips/theafooter3.png"
   },
   //===================== LEVEL LABELS =====================
   "levelTitleLabel" : {
     "type" : "label",
-    "position" : [120, 134],
+    "position" : [120, 164],
     "hAnchor" : "right",
     "value" : "^gray;lvl^reset;"
   },
   "levelLabel" : {
     "type" : "label",
-    "position" : [130, 134],
+    "position" : [130, 164],
     "hAnchor" : "right"
   },
   //=================== END LEVEL LABELS ===================
   "moneyIcon" : {
     "type" : "image",
-    "position" : [97, 23],
+    "position" : [98, 23],
     "file" : "/interface/money.png"
   },
   "priceLabel" : {
@@ -31,68 +31,77 @@
   },
   "damagePerShotTitleLabel" : {
     "type" : "label",
-    "position" : [9, 68],
+    "position" : [9, 98],
     "hAnchor" : "left",
     "value" : "Damage Per Burst:"
   },
   "damagePerShotLabel" : {
     "type" : "label",
-    "position" : [130, 68],
+    "position" : [130, 98],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
   "roundsPerBurstTitleLabel" : {
     "type" : "label",
-    "position" : [9, 59],
+    "position" : [9, 89],
     "hAnchor" : "left",
     "value" : "Rounds Per Burst:"
   },
   "roundsPerBurstLabel" : {
     "type" : "label",
-    "position" : [130, 59],
+    "position" : [130, 89],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
   "speedTitleLabel" : {
     "type" : "label",
-    "position" : [9, 50],
+    "position" : [9, 80],
     "hAnchor" : "left",
     "value" : "Rate of Fire:"
   },
   "speedLabel" : {
     "type" : "label",
-    "position" : [130, 50],
+    "position" : [130, 80],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
   "energyPerShotTitleLabel" : {
     "type" : "label",
-    "position" : [9, 41],
+    "position" : [9, 71],
     "hAnchor" : "left",
     "value" : "Energy Per Shot:"
   },
   "energyPerShotLabel" : {
     "type" : "label",
-    "position" : [130, 41],
+    "position" : [130, 71],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
   "altAbilityTitleLabel" : {
     "type" : "label",
-    "position" : [9, 32],
+    "position" : [9, 62],
     "hAnchor" : "left",
     "value" : ""
   },
   "altAbilityLabel" : {
     "type" : "label",
-    "position" : [130, 32],
+    "position" : [130, 62],
     "hAnchor" : "right",
     "centered" : true,
     "wrapWidth" : 126
   },
+  "descriptionLabel" : {
+    "type" : "label",
+    "position" : [9, 60],
+    "hAnchor" : "left",
+    "vAnchor" : "top",
+    "wrapWidth" : 124,
+    "lineSpacing" : 1.0,
+    "value" : "I am a bug. Please report me!"
+  },
   "handednessLabel" : {
     "type" : "label",
-    "position" : [90, 134],
+    "position" : [90, 164],
     "hAnchor" : "right",
     "centered" : true,
     "wrapWidth" : 126
@@ -106,7 +115,7 @@
   },
   "damageKindImage" : {
     "type" : "image",
-    "position" : [120, 90],
+    "position" : [120, 130],
     "file" : "",
     "centered" : true,
     "maxSize" : [16, 16],
@@ -114,16 +123,16 @@
   },
   "objectImage" : {
     "type" : "image",
-    "position" : [70, 105],
+    "position" : [70, 135],
     "file" : "",
     "centered" : true,
-    "maxSize" : [60, 25],
-    "minSize" : [60, 25]
+    "maxSize" : [40, 40],
+    "minSize" : [40, 40]
   },
   //Custom field, Manufacturer Label
   "manufacturerLabel" : {
     "type" : "label",
-    "position" : [130, 80],
+    "position" : [130, 110],
     "hAnchor" : "right",
     "centered" : true,
     "wrapWidth" : 126

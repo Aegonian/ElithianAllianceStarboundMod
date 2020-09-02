@@ -4,8 +4,9 @@
   "maxStack" : 1,
   "rarity" : "Rare",
   "description" : "^gray;A small, but extremely sharp dagger issued to Avikan military forces.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Vanguard Dagger",
-  "tooltipKind" : "thea-sword-descriptive",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "dagger",
   "twoHanded" : false,
   "itemTags" : ["weapon","melee","dagger","avikan","vanguard"],
@@ -63,7 +64,7 @@
   },
   "fireSounds" : [ "/sfx/melee/swing_dagger.ogg" ],
 
-  "builder" : "/items/buildscripts/buildweapon.lua",
+  "builder" : "/items/buildscripts/thea-buildrandomweapon.lua",
   "builderConfig" : [{
     "nameGenerator" : "vanguardnames.config:nameGen",
     "animationParts" : {

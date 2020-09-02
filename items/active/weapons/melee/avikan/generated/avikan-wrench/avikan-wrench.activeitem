@@ -4,8 +4,9 @@
   "maxStack" : 1,
   "rarity" : "uncommon",
   "description" : "^gray;An Avikan wrench.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Avikan Wrench",
-  "tooltipKind" : "thea-sword-descriptive",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "Wrench",
   "twoHanded" : false,
   "itemTags" : ["weapon","melee","avikan","vanguard"],
@@ -34,7 +35,7 @@
   },
   "fireSounds" : [ "/sfx/melee/swing_axe.ogg" ],
 
-  "builder" : "/items/buildscripts/buildweapon.lua",
+  "builder" : "/items/buildscripts/thea-buildrandomweapon.lua",
   "builderConfig" : [{
     "nameGenerator" : "avikan-wrenchnames.config:nameGen",
     "animationParts" : {
