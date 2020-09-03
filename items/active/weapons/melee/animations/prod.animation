@@ -112,9 +112,8 @@
       "emissionRate" : 60,
       "offsetRegion" : [0.5, -1.0, 1.0, 1.0],
       "particles" : [
-        { "particle" : "electricswoosh1"},
-        { "particle" : "electricswoosh2"},
-        { "particle" : "electricswoosh2"}
+        { "particle" : "thea-electricstunarc"},
+        { "particle" : "thea-electricstunarc"}
       ]
     },
     "iceswoosh" : {
@@ -149,10 +148,10 @@
       "active" : false,
       "transformationGroups" : ["swoosh"],
       "emissionRate" : 2,
-      "offsetRegion" : [0.5, -0.5, 0.5, 0.5],
+      "offsetRegion" : [0.5, -0.5, -0.625, 0.5],
       "particles" : [
-        { "particle" : "electricswoosh2"},
-        { "particle" : "electricswoosh2"}
+        { "particle" : "thea-electricstunarc"},
+        { "particle" : "thea-electricstunarc"}
       ]
     }
   },
