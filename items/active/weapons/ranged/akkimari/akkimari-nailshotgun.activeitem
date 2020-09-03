@@ -11,7 +11,7 @@
   "fixedLevel" : false,
   "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Shotgun",
-  "itemTags" : ["weapon","ranged","shotgun","akkimari","kelraaki"],
+  "itemTags" : ["weapon","ranged","shotgun","akkimari","akkimariUpgradeable","kelraaki"],
   "twoHanded" : true,
 
   "animation" : "/items/active/weapons/ranged/gun.animation",

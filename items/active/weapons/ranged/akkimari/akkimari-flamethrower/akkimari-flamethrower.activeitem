@@ -11,7 +11,7 @@
   "fixedLevel" : false,
   "tooltipKind" : "thea-continuousgun-mf",
   "category" : "Flamethrower",
-  "itemTags" : ["weapon","ranged","flamethrower","akkimari","kelraaki"],
+  "itemTags" : ["weapon","ranged","flamethrower","akkimari","akkimariUpgradeable","kelraaki"],
   "twoHanded" : true,
   
   "cursor" : "/cursors/thea-triplereticle-large.cursor",

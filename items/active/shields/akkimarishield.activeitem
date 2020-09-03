@@ -7,9 +7,9 @@
   "category" : "shield",
   "description" : "^gray;A molded metal shield, rough but durable.",
   "shortdescription" : "Akris Shield",
-  "tooltipKind" : "thea-shield",
+  "tooltipKind" : "thea-shield-mf",
   "twoHanded" : false,
-  "itemTags" : ["shield","akkimari"],
+  "itemTags" : ["shield","akkimari","akkimariUpgradeable"],
   
   "inventoryIcon" : "images/akkimarishield.png:nearidle",
 

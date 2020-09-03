@@ -11,7 +11,7 @@
   "fixedLevel" : false,
   "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Strafer",
-  "itemTags" : ["weapon","ranged","pistol","akkimari","rashakr"],
+  "itemTags" : ["weapon","ranged","pistol","akkimari","akkimariUpgradeable","rashakr"],
   "twoHanded" : false,
   
   "cursor" : "/cursors/thea-triplereticle-large.cursor",

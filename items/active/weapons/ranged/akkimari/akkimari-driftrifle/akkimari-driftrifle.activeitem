@@ -11,7 +11,7 @@
   "fixedLevel" : false,
   "tooltipKind" : "thea-chargedgun-mf",
   "category" : "Drift Rifle",
-  "itemTags" : ["weapon","ranged","driftrifle","akkimari","rashakr"],
+  "itemTags" : ["weapon","ranged","driftrifle","akkimari","akkimariUpgradeable","rashakr"],
   "twoHanded" : true,
   
   "cursor" : "/cursors/thea-triplereticle.cursor",

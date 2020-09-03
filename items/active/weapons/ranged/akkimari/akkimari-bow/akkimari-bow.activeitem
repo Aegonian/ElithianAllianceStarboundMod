@@ -12,7 +12,7 @@
   "manufacturer" : "^gray;Kelraaki^reset;",
   "shortdescription" : "Makeshift Bow",
   "twoHanded" : true,
-  "itemTags" : ["weapon","ranged","bow","akkimari","kelraaki"],
+  "itemTags" : ["weapon","ranged","bow","akkimari","akkimariUpgradeable","kelraaki"],
 
   "animation" : "/items/active/weapons/ranged/animations/thea-bow.animation",
   "animationParts" : {

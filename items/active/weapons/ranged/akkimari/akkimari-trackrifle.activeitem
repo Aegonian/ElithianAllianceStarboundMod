@@ -11,7 +11,7 @@
   "fixedLevel" : false,
   "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Tracker",
-  "itemTags" : ["weapon","ranged","assaultrifle","akkimari","rashakr"],
+  "itemTags" : ["weapon","ranged","assaultrifle","akkimari","akkimariUpgradeable","rashakr"],
   "twoHanded" : true,
   
   "cursor" : "/cursors/thea-triplereticle-large.cursor",

@@ -10,7 +10,7 @@
   "shortdescription" : "Scrap Shield",
   "tooltipKind" : "thea-shield-mf",
   "twoHanded" : false,
-  "itemTags" : ["shield","akkimari","kelraaki"],
+  "itemTags" : ["shield","akkimari","akkimariUpgradeable","kelraaki"],
   
   "inventoryIcon" : "images/akkimariscrapshield.png:nearidle",
 
