@@ -192,6 +192,7 @@
       "offsetRegion" : [-0.5, -2.0, 0.5, -3.0],
       "emissionRate" : 100,
       "particles" : [
+		{ "particle" : "akkimarithrustersmall" },
         { "particle" : "akkimariashsmoke"},
         { "particle" : "akkimariashsmoke"}
       ]
@@ -213,6 +214,7 @@
       "offsetRegion" : [-0.5, 0.0, 0.5, -1.0],
       "burstCount" : 10,
       "particles" : [
+		{ "particle" : "akkimarithruster" },
         { "particle" : "akkimariashsmoke"},
         { "particle" : "akkimariashsmoke"},
         { "particle" : "akkimariashsmoke"}
