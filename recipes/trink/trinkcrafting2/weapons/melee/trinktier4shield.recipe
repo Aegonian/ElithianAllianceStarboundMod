@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "trinkmetaltier4", "count" : 6 }
+  ],
+  "output" : { "item" : "trinktier4shield", "count" : 1 },
+  "groups" : [ "trinkcrafting2", "weapons", "all" ]
+}

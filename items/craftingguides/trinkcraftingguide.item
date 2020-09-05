@@ -8,6 +8,10 @@
   "category" : "Crafting Guide",
   "learnBlueprintsOnPickup" : [
 	
+//New
+	  "trinkhoe",
+	  "trinkwateringcan",
+
 //New in v2.3.10
 	  "trinksecuritycamera",
 	
@@ -189,7 +193,14 @@
       "trink-goldenlegs",
 	  
 //Shields
+      "trinktier1shield",
       "trinkshield",
+      "trinktier2shield",
+      "trinktier3shield",
+      "trinktier4shield",
+      "trinktier5shield",
+      "trinktier6shield",
+
 	  
 //Items
       "trinkmetal",

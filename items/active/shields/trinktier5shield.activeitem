@@ -1,23 +1,23 @@
 {
-  "itemName" : "trinkshield",
-  "level" : 2,
+  "itemName" : "trinktier5shield",
+  "level" : 5,
   "price" : 600,
   "maxStack" : 1,
-  "rarity" : "Common",
+  "rarity" : "Rare",
   "category" : "shield",
-  "description" : "^gray;A sturdy metal shield of Trinkian design.",
+  "description" : "^gray;A reinforced metal shield of Trinkian design.",
   "manufacturer" : "^gray;Trink Factory^reset;",
-  "shortdescription" : "Circuit Shield Mk II",
+  "shortdescription" : "Circuit Shield Mk V",
   "tooltipKind" : "thea-shield-mf",
   "twoHanded" : false,
   "itemTags" : ["shield", "trink","trinkfactory"],
   
-  "inventoryIcon" : "images/trinkshield.png:nearidle",
+  "inventoryIcon" : "images/trinktier5shield.png:nearidle",
 
   "animation" : "thea-shieldlights.animation",
   "animationParts" : {
-    "shield" : "images/trinkshield.png",
-    "shieldLights" : "images/trinkshieldlights.png"
+    "shield" : "images/trinktier5shield.png",
+    "shieldLights" : "images/trinktier5shieldlights.png"
   },
   "animationCustom" : {
     "animatedParts" : { "parts" : { "shield" : { "properties" : {

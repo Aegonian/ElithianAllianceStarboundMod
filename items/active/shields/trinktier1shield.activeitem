@@ -1,28 +1,25 @@
 {
-  "itemName" : "trinkshield",
-  "level" : 2,
+  "itemName" : "trinktier1shield",
+  "level" : 1,
   "price" : 600,
   "maxStack" : 1,
-  "rarity" : "Common",
+  "rarity" : "common",
   "category" : "shield",
-  "description" : "^gray;A sturdy metal shield of Trinkian design.",
+  "description" : "^gray;A light metal shield of Trinkian design.",
   "manufacturer" : "^gray;Trink Factory^reset;",
-  "shortdescription" : "Circuit Shield Mk II",
+  "shortdescription" : "Circuit Shield Mk I",
   "tooltipKind" : "thea-shield-mf",
   "twoHanded" : false,
   "itemTags" : ["shield", "trink","trinkfactory"],
   
-  "inventoryIcon" : "images/trinkshield.png:nearidle",
+  "inventoryIcon" : "images/trinktier1shield.png:nearidle",
 
   "animation" : "thea-shieldlights.animation",
   "animationParts" : {
-    "shield" : "images/trinkshield.png",
-    "shieldLights" : "images/trinkshieldlights.png"
+    "shield" : "images/trinktier1shield.png",
+    "shieldLights" : "images/trinktier1shieldlights.png"
   },
   "animationCustom" : {
-    "animatedParts" : { "parts" : { "shield" : { "properties" : {
-        "shieldPoly" : [ [-0.5, -2.5], [-0.5, 2.25], [0.75, 1.5], [0.75, -1.75] ]
-    }}}},
     "sounds" : {
       "raiseShield" : [ "/sfx/melee/sword_guard.ogg" ],
       "perfectBlock" : [ "/sfx/melee/shield_block_metal_perfect.ogg" ],
@@ -36,8 +33,8 @@
   "minActiveTime" : 0.2,
 
   "forceWalk" : true,
-  "baseShieldHealth" : 25,
-  "cooldownTime" : 0.5,
+  "baseShieldHealth" : 20,
+  "cooldownTime" : 0.45,
 
   "perfectBlockDirectives" : "?border=2;AACCFFFF;00000000",
   "perfectBlockTime" : 0.2,
