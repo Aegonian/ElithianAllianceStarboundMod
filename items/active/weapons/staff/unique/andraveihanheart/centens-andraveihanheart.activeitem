@@ -4,7 +4,7 @@
   "maxStack" : 1,
   "level" : 6,
   "rarity" : "Essential",
-  "description" : "A small artefact forged in Vhalas Andra'veih, sacred city of the Ce'Tennan.",
+  "description" : "^orange;A small artefact forged in Vhalas Andra'veih, sacred city of the Ce'Tennan.",
   "shortdescription" : "^orange;Andra'veihan Heart^white;",
   "tooltipKind" : "thea-tool-unique",
   "category" : "Artefact",

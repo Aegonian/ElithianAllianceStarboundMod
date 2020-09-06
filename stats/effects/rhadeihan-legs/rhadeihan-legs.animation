@@ -17,7 +17,7 @@
       "jets" : {
         "properties" : {
           "zLevel" : -1,
-		  "fullbright" : false
+		  "fullbright" : true
         },
         "partStates" : {
           "jets" : {
