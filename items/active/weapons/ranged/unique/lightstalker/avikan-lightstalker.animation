@@ -196,7 +196,8 @@
       "transformationGroups" : ["muzzle"],
       "offsetRegion" : [-0.5, 0, 0.5, 0],
       "particles" : [
-        { "particle" : "linerifleburnbright"}
+        { "particle" : "linerifleburnbright"},
+        { "particle" : "lineriflecharge"}
       ]
     },
     "bladeFront" : {
