@@ -18,7 +18,7 @@
   "animationParts" : {
     "middle" : "thea-instakillminigun.png",
     "middleFullbright" : "thea-instakillminigunlights.png",
-    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/allianceenergyflash.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/thea-instakillflash.png",
     "charge" : "thea-instakillminiguncharge.png",
 	"chargehold" : "thea-instakillminigunchargehold.png"
   },

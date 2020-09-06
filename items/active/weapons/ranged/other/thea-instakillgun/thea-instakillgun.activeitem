@@ -16,7 +16,7 @@
   "animationParts" : {
     "middle" : "thea-instakillgun.png",
     "middleFullbright" : "thea-instakillgunlights.png",
-    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/allianceenergyflash.png"
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/thea-instakillflash.png"
   },
   "animationCustom" : {
     "animatedParts" : {
@@ -27,6 +27,11 @@
 		  }
 		}
       }
+    },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [137, 107, 26]
+	  }
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/thea_plasmagun1.ogg" ]

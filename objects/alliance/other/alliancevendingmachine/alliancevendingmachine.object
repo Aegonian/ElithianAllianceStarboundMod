@@ -30,7 +30,7 @@
   "akkimariDescription" : "Akki want drink. Akki smash glass?",
   
   "category" : "decorative",
-  "lightColor" : [180, 180, 180],
+  "lightColor" : [100, 100, 100],
 
   "interactAction" : "OpenMerchantInterface",
   "interactData" : {

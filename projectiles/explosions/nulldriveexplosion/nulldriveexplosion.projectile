@@ -5,7 +5,7 @@
   "frameNumber" : 6,
   "renderLayer" : "Player+1",
   "speed" : 0,
-  "lightColor" : [255, 190, 0],
+  "lightColor" : [255, 160, 0],
   "pointLight" : true,
   "fullbright" : true,
   "statusEffects" : [
