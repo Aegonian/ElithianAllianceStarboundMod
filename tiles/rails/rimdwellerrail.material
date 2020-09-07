@@ -1,0 +1,29 @@
+{
+  "materialId" : 30205,
+  "materialName" : "rimdwellerrail",
+  "collisionKind" : "none",
+  "foregroundOnly" : true,
+  "itemDrop" : "rimdwellerrail",
+  "shortdescription" : "Rim Rail",
+  "description" : "A strong reinforced rail.",
+  "footstepSound" : "/sfx/blocks/footstep_girder.ogg",
+  "category": "supports",
+  "health" : 4,
+  
+  "glitchDescription" : "Pleased. The material this rail is made from makes it very strong.",
+  "floranDescription" : "Rusty metal rails.",
+  "novakidDescription" : "Some sturdy lookin' rails, gettin' the itch to ride 'em.",
+  
+  "drodenDescription" : "Detected rail.",
+  "akkimariDescription" : "Rails-rusty, Akki ride them fast!",
+
+  "renderTemplate" : "/tiles/railtemplate.config",
+  "renderParameters" : {
+    "texture" : "rimdwellerrail.png",
+    "variants" : 1,
+    "multiColored" : true,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "zLevel" : 0
+  }
+}

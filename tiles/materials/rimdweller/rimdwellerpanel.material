@@ -17,7 +17,7 @@
   "health" : 8,
   "category" : "materials",
   
-  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderTemplate" : "/tiles/thea-rimdwellerpaneltemplate.config",
   "renderParameters" : {
     "texture" : "rimdwellerpanel.png",
     "variants" : 4,

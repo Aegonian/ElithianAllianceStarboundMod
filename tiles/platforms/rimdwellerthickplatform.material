@@ -1,0 +1,30 @@
+{
+  "materialId" : 30115,
+  "materialName" : "rimdwellerthickplatform",
+  "collisionKind" : "platform",
+  "transparent" : true,
+  "itemDrop" : "rimdwellerthickplatform",  
+  "shortdescription" : "Thick Rim Platform",
+  "description" : "A thick metal platform. Very sturdy.",
+  
+  "glitchDescription" : "Measuring. This platform is thicker than most.",
+  "floranDescription" : "Thick platform, for basshing skulsss into.",
+  "novakidDescription" : "Seems like a mighty thick platform.",
+  
+  "drodenDescription" : "Analysis complete. Thick metal platform.",
+  "akkimariDescription" : "Platform-thick, must be heavy.",
+  
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "category" : "Supports",
+  
+  "renderTemplate" : "/tiles/platformtemplate.config",
+  "renderParameters" : {
+    "texture" : "rimdwellerthickplatform.png",
+    "variants" : 1,
+    "lightTransparent" : true,
+    "occludesBelow" : false,
+    "multiColored" : true,
+    "zLevel" : 0,
+    "platform" : true
+  }
+}

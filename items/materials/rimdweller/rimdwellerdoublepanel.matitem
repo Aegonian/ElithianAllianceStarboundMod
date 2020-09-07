@@ -1,0 +1,13 @@
+{
+  "itemName" : "rimdwellerdoublepanel",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "rimdwellerdoublepanel.png",
+  "dropCollision" : [-2.5, -2.0, 2.5, 2.0],
+  
+  "shortdescription" : "Double Rim Panel",
+  "description" : "Multi-layered metal panels.",
+
+  "materialId" : 30149
+}

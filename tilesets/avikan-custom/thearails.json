@@ -33,6 +33,11 @@
         {
          "\/\/shortdescription":"Akris Rail",
          "material":"akkimarirail"
+        },
+     "5":
+        {
+         "\/\/shortdescription":"Rim Rail",
+         "material":"rimdwellerrail"
         }
     },
  "tiles":
@@ -56,6 +61,10 @@
      "4":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/rails\/akkimarirail.png"
+        },
+     "5":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/rails\/rimdwellerrail.png"
         }
     },
  "tilewidth":8
