@@ -634,41 +634,6 @@
         {
          "\/\/shortdescription":"Rim Panel",
          "material":"rimdwellerpanel"
-        },
-     "108":
-        {
-         "\/\/shortdescription":"Rim Striped Panel",
-         "material":"rimdwellerstripedpanel"
-        },
-     "109":
-        {
-         "\/\/shortdescription":"Rim Interface Wall",
-         "material":"rimdwellerinterfacewall"
-        },
-     "110":
-        {
-         "\/\/shortdescription":"Rim Double Panel",
-         "material":"rimdwellerdoublepanel"
-        },
-     "111":
-        {
-         "\/\/shortdescription":"Rim Fence",
-         "material":"rimdwellerfence"
-        },
-     "112":
-        {
-         "\/\/shortdescription":"Rim Platform",
-         "material":"rimdwellerplatform"
-        },
-     "113":
-        {
-         "\/\/shortdescription":"Thick Rim Platform",
-         "material":"rimdwellerthickplatform"
-        },
-     "114":
-        {
-         "\/\/shortdescription":"Thick Rim Stairs",
-         "material":"rimdwellerthickstairsplatform"
         }
     },
  "tiles":
@@ -1104,34 +1069,6 @@
      "99":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/rimdwellerpanel.png"
-        },
-     "108":
-        {
-         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/rimdwellerstripedpanel.png"
-        },
-     "109":
-        {
-         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/rimdwellerinterfacewall.png"
-        },
-     "110":
-        {
-         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/rimdwellerdoublepanel.png"
-        },
-     "111":
-        {
-         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/rimdwellerfence.png"
-        },
-     "112":
-        {
-         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/rimdwellerplatform.png"
-        },
-     "113":
-        {
-         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/rimdwellerthickplatform.png"
-        },
-     "114":
-        {
-         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/rimdwellerthickstairsplatform.png"
         }
     },
  "tilewidth":8

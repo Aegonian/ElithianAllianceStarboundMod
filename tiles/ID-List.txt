@@ -87,13 +87,6 @@ Elithian Races Mod Material ID reservations: 30000-30250
 30111 akkimariplatform
 30112 alliancestoneplatform
 30113 rimdwellerstairsplatform 
-30114 rimdwellerplatform 
-30115 rimdwellerthickplatform
-30116 rimdwellerthickstairsplatform
-30146 rimdwellerfence 
-30147 rimdwellerinterfacewall 
-30148 rimdwellerstripedpanel 
-30149 rimdwellerdoublepanel 
 30150 akkimaribeam
 30151 akkimarifoundation
 30152 akkimarigroundpanel
@@ -127,7 +120,6 @@ Elithian Races Mod Material ID reservations: 30000-30250
 30202 trinkrail
 30203 alliancerail
 30204 akkimarirail
-30205 rimdwellerrail
 30225 thea-unbreakabledirt
 30226 thea-unbreakablecobblestone
 39999 theagreenscreenplatform

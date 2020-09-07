@@ -38,13 +38,5 @@
       "friction": 1.0,
       "speedLimit": 60
     }
-  },
-  {
-    "op": "add",
-    "path": "/rimdwellerrail",
-    "value": {
-      "friction": 1.0,
-      "speedLimit": 60
-    }
   }
 ]
