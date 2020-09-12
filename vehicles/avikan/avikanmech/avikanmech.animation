@@ -878,7 +878,7 @@
       "active" : true,
 	  "anchorPart" : "seat",
       "position" : [1.25, -1.5],
-      "color" : [250, 250, 250],
+      "color" : [255, 185, 85],
       "pointLight" : true,
       "pointAngle" : -15,
       "pointBeam" : 3
