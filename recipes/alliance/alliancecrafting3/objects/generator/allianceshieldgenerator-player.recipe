@@ -6,6 +6,6 @@
     { "item" : "alliancecircuitry", "count" : 6 },
     { "item" : "alliancequantumchip", "count" : 1 }
   ],
-  "output" : { "item" : "allianceshieldgenerator", "count" : 1 },
+  "output" : { "item" : "allianceshieldgenerator-player", "count" : 1 },
   "groups" : [ "alliancecrafting3", "furniture", "all" ]
 }

@@ -35,7 +35,7 @@
   
   "aegiDescription" : "A simple stone forge. Not for smelting ores, but for crafting at high temperatures.",
   "avikanDescription" : "A stone forge. The shape is somewhat odd.",
-  "erixianDescription" : "TODO.",
+  "draunaarDescription" : "TODO.",
   "trinkDescription" : "A stone forge. Not very efficient.",
   "hymidDescription" : "I've never been a fan of working the forge.",
   "notixDescription" : "A hot fire blazes inside this forge. It's making me uncomfortable.",
@@ -73,7 +73,7 @@
   
 		"aegiDescription" : "A simple stone forge. Not for smelting ores, but for crafting at high temperatures.",
 		"avikanDescription" : "A stone forge. The shape is somewhat odd.",
-		"erixianDescription" : "TODO.",
+		"draunaarDescription" : "TODO.",
 		"trinkDescription" : "A stone forge. Not very efficient.",
 		"hymidDescription" : "I've never been a fan of working the forge.",
 		"notixDescription" : "A hot fire blazes inside this forge. It's making me uncomfortable.",
@@ -133,7 +133,7 @@
   
 		"aegiDescription" : "A compound forge. The temperature can be precisely controlled.",
 		"avikanDescription" : "This forge is of alien design. It seems rather odd.",
-		"erixianDescription" : "TODO.",
+		"draunaarDescription" : "TODO.",
 		"trinkDescription" : "Not the most efficient forge overall, but the temperature control is impressive.",
 		"hymidDescription" : "A forge with a variable temperature. Should be useful.",
 		"notixDescription" : "This forge functions at a wide range of temperatures.",
@@ -194,7 +194,7 @@
   
 		"aegiDescription" : "This forge can fuse nuclei. I'm not quite sure how it does that, though.",
 		"avikanDescription" : "Even the metals of the Old Ones won't survive the temperatures inside this device.",
-		"erixianDescription" : "TODO.",
+		"draunaarDescription" : "TODO.",
 		"trinkDescription" : "I did not expect such efficient designs from the Akkimari...",
 		"hymidDescription" : "Somehow, this device can fire up nuclear reactions incredibly quickly...",
 		"notixDescription" : "This forge rumbles with untold energy. It doesn't sound very safe.",

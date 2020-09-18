@@ -4,12 +4,12 @@
   "inventoryIcon" : "thea-atrossmg1.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A fast-firing Alliance SMG.",
+  "description" : "^gray;A fast-firing Alliance SMG.^reset;",
   "manufacturer" : "^gray;ATROS Arms^reset;",
   "shortdescription" : "ATROS SMG-M1",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Submachinegun",
   "itemTags" : ["weapon","ranged","smg","alliance","atros","allianceUpgradeable"],
   "twoHanded" : false,
@@ -29,6 +29,11 @@
 		  }
 		}
       }
+    },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [0, 52, 90]
+	  }
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/thea_plasmagun5.ogg" ]

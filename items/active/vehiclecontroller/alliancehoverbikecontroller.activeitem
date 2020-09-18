@@ -24,7 +24,8 @@
   "vehicleImage" : "/vehicles/alliance/alliancehoverbike/alliancehoverbike.png",
 
   "animationParts" : {
-    "casing" : "alliancehoverbikecontroller.png"
+    "casing" : "alliancehoverbikecontroller.png",
+    "lights" : "alliancehoverbikecontrollerlights.png"
   },
 
   "inventoryIcon" : "alliancehoverbikecontroller.png:full",

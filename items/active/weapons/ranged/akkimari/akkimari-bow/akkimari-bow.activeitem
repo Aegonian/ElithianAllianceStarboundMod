@@ -6,12 +6,13 @@
   "inventoryIcon" : "akkimari-bowicon.png",
   "maxStack" : 1,
   "rarity" : "Common",
-  "tooltipKind" : "thea-bow",
+  "tooltipKind" : "thea-bow-mf",
   "category" : "Recurve Bow",
   "description" : "^gray;A makeshift metal bow, used to harvest meat and materials.",
+  "manufacturer" : "^gray;Kelraaki^reset;",
   "shortdescription" : "Makeshift Bow",
   "twoHanded" : true,
-  "itemTags" : ["weapon","ranged","bow","akkimari"],
+  "itemTags" : ["weapon","ranged","bow","akkimari","akkimariUpgradeable","kelraaki"],
 
   "animation" : "/items/active/weapons/ranged/animations/thea-bow.animation",
   "animationParts" : {

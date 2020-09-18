@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-rimtorch1.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A welding torch used for construction in the Rim.",
+  "description" : "^gray;A welding torch used for construction in the Rim.^reset;",
   "manufacturer" : "^gray;The Rim^reset;",
   "shortdescription" : "Rimrock Welder",
   "level" : 6,

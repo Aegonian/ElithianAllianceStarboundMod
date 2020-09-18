@@ -5,9 +5,9 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "shield",
-  "description" : "A shield adorned with the Elithian Alliance's emblem.",
+  "description" : "^#BA66FF;A shield adorned with the Elithian Alliance's emblem.",
   "shortdescription" : "^#BA66FF;Elithian Alliance Shield^reset;",
-  "tooltipKind" : "shield",
+  "tooltipKind" : "thea-shield",
   "twoHanded" : false,
   "itemTags" : ["shield","alliance","allianceUpgradeable"],
   

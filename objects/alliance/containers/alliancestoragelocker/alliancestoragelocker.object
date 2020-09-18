@@ -22,7 +22,7 @@
 
   "aegiDescription" : "A metal storage locker.",
   "avikanDescription" : "A storage locker built into the wall.",
-  "erixianDescription" : "A basic storage locker.",
+  "draunaarDescription" : "A basic storage locker.",
   "trinkDescription" : "This storage locker is an efficient use of space.",
   "hymidDescription" : "A simple storage locker.",
   "notixDescription" : "An efficient storage locker. The Trink would enjoy this.",
@@ -36,7 +36,7 @@
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "image" : "alliancestoragelocker.png:<color>.<key>",
+      "imageLayers" : [ { "image" : "alliancestoragelocker.png:<color>.<key>", "fullbright" : true }, { "image" : "alliancestoragelockerlit.png:<color>.<key>" } ],
       "imagePosition" : [-16, -8],
 
       "spaceScan" : 0.1,

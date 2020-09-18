@@ -1,0 +1,21 @@
+{
+  "kind" : "errasslayerscharge",
+  "definition" : {
+    "type" : "ember",
+    "color" : [0, 0, 0, 0],
+    "position" : [0, 0],
+    "approach" : [50, 50],
+    "light" : [10, 76, 96],
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.5,
+    "fade" : 1,
+    "size" : 0.5,
+    "layer" : "middle",
+    "timeToLive" : 0.2,
+	"fullbright" : true,
+    "variance" : {
+      "rotation" : 180,
+	  "size" : 0.5
+    }
+  }
+}

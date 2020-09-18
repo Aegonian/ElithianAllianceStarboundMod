@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-policeshotgun.png:idle",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A shotgun sometimes employed by P-ASA officers.",
+  "description" : "^gray;A shotgun sometimes employed by P-ASA officers.^reset;",
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "P-ASA Disperser S-3",
   "level" : 6,
@@ -34,6 +34,11 @@
 		  }
 		}
       }
+    },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [0, 52, 90]
+	  }
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/plasma_shotgun1.ogg" ],

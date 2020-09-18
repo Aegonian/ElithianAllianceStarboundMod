@@ -1,0 +1,9 @@
+{
+  "name" : "mediumrust",
+  "category" : "trinkoid",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "mediumrust.png"
+  }
+}

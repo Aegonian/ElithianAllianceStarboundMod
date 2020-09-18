@@ -68,7 +68,7 @@
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "imageLayers" : [ { "image" : "allianceblackmarketteleporter.png:<color>" } ],
+      "imageLayers" : [ { "image" : "allianceblackmarketteleporter.png:<color>", "fullbright" : true }, { "image" : "allianceblackmarketteleporterlit.png:<color>" } ],
       "direction" : "right",
 
       "imagePosition" : [-24, 0],

@@ -11,7 +11,7 @@
   "actionOnReap" : [
     {
       "action" : "config",
-      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+      "file" : "/projectiles/explosions/jackofkingsbulletexplosion/jackofkingsbulletexplosion.config"
     }
   ],
   "lightColor" : [75, 60, 0],

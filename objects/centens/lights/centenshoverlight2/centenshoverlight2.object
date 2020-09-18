@@ -19,7 +19,7 @@
 
   "aegiDescription" : "A hovering light, built by the Centens. Still functional.",
   "avikanDescription" : "This light still burns after eons of use, and will keep burning until the star that fuels it is exhausted.",
-  "erixianDescription" : "A hovering light. Impressive.",
+  "draunaarDescription" : "A hovering light. Impressive.",
   "trinkDescription" : "A hovering light, built by the Centens.",
   "hymidDescription" : "A hovering light. I have no idea how it works.",
   "notixDescription" : "An advanced light that hovers in the air.",
@@ -46,7 +46,8 @@
 
   "animation" : "centenshoverlight2.animation",
   "animationParts" : {
-    "object" : "centenshoverlight2.png"
+    "object" : "centenshoverlight2.png",
+    "objectFullbright" : "centenshoverlight2fullbright.png"
   },
   "animationPosition" : [0, 0],
   

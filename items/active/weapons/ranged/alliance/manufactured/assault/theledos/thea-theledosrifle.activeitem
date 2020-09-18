@@ -4,12 +4,12 @@
   "inventoryIcon" : "thea-theledosrifle.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A Theledos rifle firing explosive plasma rounds.",
+  "description" : "^gray;A Theledos rifle firing explosive plasma rounds.^reset;",
   "manufacturer" : "^gray;Theledos^reset;",
   "shortdescription" : "Tuvalihn Carbine",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Assault Rifle",
   "itemTags" : ["weapon","ranged","assaultrifle","alliance","theledos","allianceUpgradeable"],
   "twoHanded" : true,
@@ -31,6 +31,11 @@
       }
     },
     "particleEmitters" : {
+    },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [0, 66, 90]
+	  }
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/plasma_ar1.ogg" ]

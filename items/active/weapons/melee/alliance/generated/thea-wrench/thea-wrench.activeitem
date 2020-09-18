@@ -3,12 +3,13 @@
   "price" : 750,
   "maxStack" : 1,
   "rarity" : "Uncommon",
-  "description" : "A wrench.",
+  "description" : "^gray;A wrench.",
+  "manufacturer" : "^gray;Enerth Engineering^reset;",
   "shortdescription" : "Union Wrench",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "Wrench",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","axe","alliance"],
+  "itemTags" : ["weapon","melee","axe","alliance","enerthengineering"],
 
   "animation" : "/items/active/weapons/melee/axe/axe.animation",
   "animationParts" : { },
@@ -34,7 +35,7 @@
   },
   "fireSounds" : [ "/sfx/melee/swing_axe.ogg" ],
 
-  "builder" : "/items/buildscripts/buildweapon.lua",
+  "builder" : "/items/buildscripts/thea-buildrandomweapon.lua",
   "builderConfig" : [{
     "nameGenerator" : "thea-wrenchnames.config:nameGen",
     "animationParts" : {

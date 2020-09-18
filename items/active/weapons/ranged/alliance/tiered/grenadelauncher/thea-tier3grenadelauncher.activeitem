@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-tier3grenadelaunchericon.png",
   "maxStack" : 1,
   "rarity" : "Uncommon",
-  "description" : "A basic grenade launcher.",
+  "description" : "^gray;A basic grenade launcher.",
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Baron M-12",
   "level" : 3,

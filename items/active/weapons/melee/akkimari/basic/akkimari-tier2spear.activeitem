@@ -4,12 +4,13 @@
   "level" : 2,
   "maxStack" : 1,
   "rarity" : "common",
-  "description" : "A weapon built from scavenged parts.",
+  "description" : "^gray;A weapon built from scavenged parts.",
+  "manufacturer" : "^gray;Kelraaki^reset;",
   "shortdescription" : "Makeshift Spear",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "spear",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","spear","akkimari","akkimariUpgradeable"],
+  "itemTags" : ["weapon","melee","spear","akkimari","akkimariUpgradeable","kelraaki"],
 
   "inventoryIcon" : "akkimari-tier2spear.png",
 
@@ -115,5 +116,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

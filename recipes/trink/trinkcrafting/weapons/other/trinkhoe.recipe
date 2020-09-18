@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "trinkmetal", "count" : 6 }
+  ],
+  "output" : { "item" : "trinkhoe", "count" : 1 },
+  "groups" : [ "trinkcrafting", "weapons", "all" ]
+}

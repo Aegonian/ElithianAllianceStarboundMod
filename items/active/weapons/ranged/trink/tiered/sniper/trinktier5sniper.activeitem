@@ -4,13 +4,13 @@
   "inventoryIcon" : "trinktier5sniper.png",
   "maxStack" : 1,
   "rarity" : "rare",
-  "description" : "A high-grade, standard issue laser sniper rifle built by the Trinks.",
+  "description" : "^gray;A high-grade, standard issue laser sniper rifle built by the Trinks.",
   "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "Circuit Sniper Mk II",
   "level" : 5,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Laser Sniper",
-  "itemTags" : ["weapon","ranged","sniperrifle","energy","trink"],
+  "itemTags" : ["weapon","ranged","sniperrifle","energy","trink","trinkfactory"],
   "twoHanded" : true,
   
   "cursor" : "/cursors/thea-precisereticle.cursor",
@@ -44,6 +44,11 @@
 		  { "particle" : "trinklasermuzzle" }
         ]
       }
+    },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [45, 90, 25]
+	  }
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/plasma_shotgun3.ogg" ],

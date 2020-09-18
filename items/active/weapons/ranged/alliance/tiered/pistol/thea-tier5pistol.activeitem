@@ -4,11 +4,11 @@
   "inventoryIcon" : "thea-tier5pistol.png",
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A standard-issue Alliance handgun.",
+  "description" : "^gray;A standard-issue Alliance handgun.",
   "manufacturer" : "^gray;Alliance Collective^reset;",
   "shortdescription" : "AC.P-8 Manus",
   "level" : 5,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Pistol",
   "itemTags" : ["weapon","ranged","pistol","alliance","alliancecollective","allianceUpgradeable"],
   "twoHanded" : false,
@@ -28,6 +28,11 @@
 		  }
 		}
       }
+    },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [0, 52, 90]
+	  }
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/thea_plasmagun6.ogg" ]

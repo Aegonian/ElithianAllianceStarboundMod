@@ -4,13 +4,13 @@
   "level" : 4,
   "maxStack" : 1,
   "rarity" : "uncommon",
-  "description" : "An electric prod built to keep assailants at bay.",
+  "description" : "^gray;An electric prod built to keep assailants at bay.",
   "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "Circuit Prod Mk IV",
-  "tooltipKind" : "thea-sword-mf",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "Electric Prod",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","prod","trink"],
+  "itemTags" : ["weapon","melee","prod","trink","trinkfactory"],
 
   "inventoryIcon" : "trinktier4prod.png",
 

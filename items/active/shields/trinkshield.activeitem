@@ -3,20 +3,21 @@
   "level" : 2,
   "price" : 600,
   "maxStack" : 1,
-  "rarity" : "Uncommon",
+  "rarity" : "Common",
   "category" : "shield",
-  "description" : "A sturdy metal shield of Trinkian design.",
+  "description" : "^gray;A sturdy metal shield of Trinkian design.",
   "manufacturer" : "^gray;Trink Factory^reset;",
-  "shortdescription" : "Circuit Shield",
+  "shortdescription" : "Circuit Shield Mk II",
   "tooltipKind" : "thea-shield-mf",
   "twoHanded" : false,
-  "itemTags" : ["shield", "trink"],
+  "itemTags" : ["shield", "trink","trinkfactory"],
   
   "inventoryIcon" : "images/trinkshield.png:nearidle",
 
-  "animation" : "shield.animation",
+  "animation" : "thea-shieldlights.animation",
   "animationParts" : {
-    "shield" : "images/trinkshield.png"
+    "shield" : "images/trinkshield.png",
+    "shieldLights" : "images/trinkshieldlights.png"
   },
   "animationCustom" : {
     "animatedParts" : { "parts" : { "shield" : { "properties" : {

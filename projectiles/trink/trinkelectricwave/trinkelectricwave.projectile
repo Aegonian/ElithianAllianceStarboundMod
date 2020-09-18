@@ -12,6 +12,7 @@
   "flippable" : true,
   "knockback" : 20,
   "knockbackDirectional" : true,
+  "lightColor" : [40, 60, 100],
   "fullbright" : true,
   "damagePoly" : [ [-4, 0], [4, 0], [4, -11], [-4, -11] ],
   "damageKind" : "electricbarrier",

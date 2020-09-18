@@ -308,7 +308,7 @@
       { "item" : "alliancecorepowerful" },
       { "item" : "alliancecorevigorous" },
 	//Objects - Generator
-      { "item" : "allianceshieldgenerator" },
+      { "item" : "allianceshieldgenerator-player" },
 	//Weapons - Melee
       { "item" : "thea-tier5dagger" },
       { "item" : "thea-tier5spear" },

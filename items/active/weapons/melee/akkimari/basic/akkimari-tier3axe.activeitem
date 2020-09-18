@@ -4,12 +4,13 @@
   "level" : 3,
   "maxStack" : 1,
   "rarity" : "Uncommon",
-  "description" : "A weapon built from scavenged parts.",
+  "description" : "^gray;A weapon built from scavenged parts.",
+  "manufacturer" : "^gray;Kelraaki^reset;",
   "shortdescription" : "Makeshift Axe",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "axe",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","axe","akkimari","akkimariUpgradeable"],
+  "itemTags" : ["weapon","melee","axe","akkimari","akkimariUpgradeable","kelraaki"],
 
   "inventoryIcon" : "akkimari-tier3axe.png",
 
@@ -42,5 +43,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

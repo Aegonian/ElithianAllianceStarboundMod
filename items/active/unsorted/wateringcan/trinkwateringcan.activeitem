@@ -1,0 +1,36 @@
+{
+  "itemName" : "trinkwateringcan",
+  "price" : 50,
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "category" : "tool",
+  "description" : "A basic watering can, useful for tending to your crops manually.",
+  "shortdescription" : "Trinkian Watering Can",
+  "tooltipKind" : "base",
+  "twoHanded" : false,
+
+  "inventoryIcon" : "trinkwateringcan.png",
+
+  "animation" : "trinkwateringcan.animation",
+  "animationParts" : {
+    "wateringcan" : "trinkwateringcan.png"
+  },
+  "animationCustom" : { },
+
+  "scripts" : ["wateringcan.lua"],
+
+  "waterTime" : 0.4,
+  "waterAngle" : 10,
+
+  "cooldownTime" : 1.0,
+
+  "projectileRate" : 0.035,
+  "projectileInaccuracy" : 0.4,
+  "projectileType" : "watersprinkledroplet",
+  "projectileParameters" : {
+    "speed" : 12,
+    "power" : 0,
+    "timeToLive" : 5,
+    "color" : [10, 255, 10]
+  }
+}

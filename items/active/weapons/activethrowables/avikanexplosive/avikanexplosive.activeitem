@@ -11,9 +11,10 @@
   "itemTags" : ["throwableweapon","avikan"],
   "twoHanded" : false,
 
-  "animation" : "/items/active/weapons/activethrowables/thea-activethrowable.animation",
+  "animation" : "/items/active/weapons/activethrowables/thea-activethrowable-lights.animation",
   "animationParts" : {
-    "middle" : "avikanexplosive.png"
+    "middle" : "avikanexplosive.png",
+    "middleFullbright" : "avikanexplosivelights.png"
   },
   "animationCustom" : {
     "sounds" : {

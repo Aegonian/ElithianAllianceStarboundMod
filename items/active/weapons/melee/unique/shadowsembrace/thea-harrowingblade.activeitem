@@ -4,12 +4,13 @@
   "level" : 4,
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A long slender blade built for the Harrowing.",
+  "description" : "^gray;A long slender blade built for the Harrowing.",
+  "manufacturer" : "^gray;The Harrowing^reset;",
   "shortdescription" : "Harrowing Blade",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "Longsword",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","broadsword","allianceUpgradeable"],
+  "itemTags" : ["weapon","melee","broadsword","allianceUpgradeable","harrowing"],
 
   "inventoryIcon" : "thea-harrowingblade.png",
 
@@ -75,5 +76,5 @@
 
   "altAbilityType" : "superspinslash",
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

@@ -5,11 +5,11 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "shield",
-  "description" : "A molded metal shield, rough but durable.",
+  "description" : "^gray;A molded metal shield, rough but durable.",
   "shortdescription" : "Akris Shield",
-  "tooltipKind" : "shield",
+  "tooltipKind" : "thea-shield-mf",
   "twoHanded" : false,
-  "itemTags" : ["shield","akkimari"],
+  "itemTags" : ["shield","akkimari","akkimariUpgradeable"],
   
   "inventoryIcon" : "images/akkimarishield.png:nearidle",
 
@@ -57,5 +57,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandshield.lua"
+  "builder" : "/items/buildscripts/thea-buildshield-mf.lua"
 }

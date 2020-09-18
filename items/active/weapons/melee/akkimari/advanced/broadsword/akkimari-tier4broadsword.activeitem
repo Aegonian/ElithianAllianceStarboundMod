@@ -4,12 +4,13 @@
   "level" : 4,
   "maxStack" : 1,
   "rarity" : "Uncommon",
-  "description" : "A heated blade used by bounty hunters of the Kelraaki.",
+  "description" : "^gray;A heated blade used by bounty hunters of the Kelraaki.",
+  "manufacturer" : "^gray;Kelraaki^reset;",
   "shortdescription" : "Kelraaki Longsword",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "Longsword",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","broadsword","akkimari","akkimariUpgradeable"],
+  "itemTags" : ["weapon","melee","broadsword","akkimari","akkimariUpgradeable","kelraaki"],
 
   "inventoryIcon" : "akkimari-tier4broadswordicon.png",
 
@@ -46,5 +47,5 @@
   
   "altAbilityType" : "downstab",
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

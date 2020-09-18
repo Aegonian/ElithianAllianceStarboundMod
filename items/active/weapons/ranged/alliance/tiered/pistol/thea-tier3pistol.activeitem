@@ -4,11 +4,11 @@
   "inventoryIcon" : "thea-tier3pistol.png",
   "maxStack" : 1,
   "rarity" : "Uncommon",
-  "description" : "A standard-issue Alliance handgun.",
+  "description" : "^gray;A standard-issue Alliance handgun.",
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Python P-5",
   "level" : 3,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Pistol",
   "itemTags" : ["weapon","ranged","pistol","alliance","aae","allianceUpgradeable"],
   "twoHanded" : false,
@@ -28,6 +28,11 @@
 		  }
 		}
       }
+    },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [0, 52, 90]
+	  }
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/thea_plasmagun1.ogg" ]

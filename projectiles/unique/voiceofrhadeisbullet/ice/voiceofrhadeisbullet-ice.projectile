@@ -13,7 +13,7 @@
   "actionOnReap" : [
     {
       "action" : "config",
-      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+      "file" : "/projectiles/unique/voiceofrhadeisbullet/ice/voiceofrhadeisbulletimpact-ice.config"
     }
   ],
   "periodicActions" : [

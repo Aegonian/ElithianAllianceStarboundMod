@@ -3,12 +3,13 @@
   "price" : 750,
   "maxStack" : 1,
   "rarity" : "uncommon",
-  "description" : "A Trinkian wrench.",
+  "description" : "^gray;A Trinkian wrench.",
+  "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "Trinkian Wrench",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "Wrench",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","axe","trink"],
+  "itemTags" : ["weapon","melee","axe","trink","trinkfactory"],
 
   "animation" : "/items/active/weapons/melee/axe/axe.animation",
   "animationParts" : { },
@@ -34,7 +35,7 @@
   },
   "fireSounds" : [ "/sfx/melee/swing_axe.ogg" ],
 
-  "builder" : "/items/buildscripts/buildweapon.lua",
+  "builder" : "/items/buildscripts/thea-buildrandomweapon.lua",
   "builderConfig" : [{
     "nameGenerator" : "trink-wrenchnames.config:nameGen",
     "animationParts" : {

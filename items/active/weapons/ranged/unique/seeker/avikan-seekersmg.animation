@@ -125,7 +125,9 @@
       "emissionRate" : 9.0,
       "transformationGroups" : ["muzzle"],
       "offsetRegion" : [0, 0, 0, 0],
-      "particles" : [ ]
+      "particles" : [
+        { "particle" : "lineriflecharge"}
+      ]
     }
   },
 

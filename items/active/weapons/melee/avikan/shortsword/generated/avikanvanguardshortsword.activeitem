@@ -3,12 +3,13 @@
   "price" : 600,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "An extremely sharp and lightweight shortsword issued to Avikan military forces.",
+  "description" : "^gray;An extremely sharp and lightweight shortsword issued to Avikan military forces.",
   "shortdescription" : "Vanguard Shortsword",
-  "tooltipKind" : "sword",
+  "manufacturer" : "^gray;Vanguard^reset;",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "shortsword",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","shortsword"],
+  "itemTags" : ["weapon","melee","shortsword","vanguard"],
 
   "animation" : "/items/active/weapons/melee/shortsword/comboshortsword.animation",
   "animationParts" : { },
@@ -24,7 +25,7 @@
     "baseDps" : [6, 7]
   },
 
-  "builder" : "/items/buildscripts/buildweapon.lua",
+  "builder" : "/items/buildscripts/thea-buildrandomweapon.lua",
   "builderConfig" : [{
     "nameGenerator" : "vanguardnames.config:nameGen",
     "animationParts" : {

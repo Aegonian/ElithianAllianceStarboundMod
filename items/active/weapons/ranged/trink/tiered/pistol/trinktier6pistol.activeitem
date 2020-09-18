@@ -4,13 +4,13 @@
   "inventoryIcon" : "trinktier6pistol.png",
   "maxStack" : 1,
   "rarity" : "legendary",
-  "description" : "A high-grade, standard issue laser pistol built by the Trinks.",
+  "description" : "^gray;A high-grade, standard issue laser pistol built by the Trinks.",
   "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "Circuit Pistol Mk VI",
   "level" : 6,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Laser Pistol",
-  "itemTags" : ["weapon","ranged","machinepistol","energy","trink"],
+  "itemTags" : ["weapon","ranged","machinepistol","energy","trink","trinkfactory"],
   "twoHanded" : false,
   
   "cursor" : "/cursors/thea-largereticle.cursor",
@@ -30,6 +30,11 @@
 		  }
 		}
       }
+    },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [45, 90, 25]
+	  }
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/plasma_shotgun3.ogg" ]

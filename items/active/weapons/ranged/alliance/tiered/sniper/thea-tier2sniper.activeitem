@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-tier2sniper.png",
   "maxStack" : 1,
   "rarity" : "Common",
-  "description" : "A high-impact sniper rifle.",
+  "description" : "^gray;A high-impact sniper rifle.",
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Crow R-2",
   "level" : 2,
@@ -35,6 +35,11 @@
       }
     },
     "particleEmitters" : {
+    },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [0, 52, 90]
+	  }
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/plasma_sniper3.ogg" ]

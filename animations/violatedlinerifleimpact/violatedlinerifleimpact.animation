@@ -1,8 +1,7 @@
 {
   "frames" : "violatedlinerifleimpact.png",
   "variants" : 1,
-  "frameNumber" : 5,
-  "fullbright" : true,
-  "animationCycle" : 0.25,
+  "frameNumber" : 6,
+  "animationCycle" : 0.4,
   "offset" : [0, 0]
 }

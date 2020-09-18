@@ -13,7 +13,31 @@
     "parts" : {
       "casing" : {
         "properties" : {
+          "zLevel" : 0,
           "centered" : true,
+          "offset" : [0.0, 0.0]
+        },
+
+        "partStates" : {
+          "controller" : {
+            "empty" : {
+              "properties" : {
+                "image" : "<partImage>:empty"
+              }
+            },
+            "full" : {
+              "properties" : {
+                "image" : "<partImage>:full"
+              }
+            }
+          }
+        }
+      },
+      "lights" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "fullbright" : true,
           "offset" : [0.0, 0.0]
         },
 

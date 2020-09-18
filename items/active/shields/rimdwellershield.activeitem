@@ -6,7 +6,7 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "shield",
-  "description" : "A plated metal shield produced somewhere in the Rim.",
+  "description" : "^gray;A plated metal shield produced somewhere in the Rim.",
   "manufacturer" : "^gray;The Rim^reset;",
   "shortdescription" : "Rimdweller Shield",
   "tooltipKind" : "thea-shield-mf",

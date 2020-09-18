@@ -4,13 +4,13 @@
   "inventoryIcon" : "trinktier3shotgun.png",
   "maxStack" : 1,
   "rarity" : "uncommon",
-  "description" : "A medium-grade, standard issue laser shotgun built by the Trinks.",
+  "description" : "^gray;A medium-grade, standard issue laser shotgun built by the Trinks.",
   "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "Circuitbreaker Mk III",
   "level" : 3,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Laser Shotgun",
-  "itemTags" : ["weapon","ranged","shotgun","energy","trink"],
+  "itemTags" : ["weapon","ranged","shotgun","energy","trink","trinkfactory"],
   "twoHanded" : true,
   
   "cursor" : "/cursors/thea-widereticle.cursor",
@@ -44,6 +44,11 @@
 		  { "particle" : "trinklasermuzzle" }
         ]
       }
+    },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [45, 90, 25]
+	  }
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/plasma_shotgun3.ogg" ],

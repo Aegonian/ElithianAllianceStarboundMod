@@ -4,12 +4,13 @@
   "level" : 5,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A heated blade used by bounty hunters of the Kelraaki.",
+  "description" : "^gray;A heated blade used by bounty hunters of the Kelraaki.",
+  "manufacturer" : "^gray;Kelraaki^reset;",
   "shortdescription" : "Kelraaki Dagger",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "dagger",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","dagger","akkimari","akkimariUpgradeable"],
+  "itemTags" : ["weapon","melee","dagger","akkimari","akkimariUpgradeable","kelraaki"],
 
   "inventoryIcon" : "akkimari-tier5daggericon.png",
 
@@ -75,5 +76,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

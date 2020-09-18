@@ -7,7 +7,7 @@
     { "item" : "diamond", "count" : 1 }
   ],
   "output" : {
-    "item" : "trinkshieldgenerator",
+    "item" : "trinkshieldgenerator-player",
     "count" : 1
   },
   "groups" : [ "trinkcrafting3", "furniture", "all" ]

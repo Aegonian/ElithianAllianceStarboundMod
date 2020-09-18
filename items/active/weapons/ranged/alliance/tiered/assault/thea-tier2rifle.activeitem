@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-tier2rifle.png",
   "maxStack" : 1,
   "rarity" : "Common",
-  "description" : "A high rate of fire assault rifle.",
+  "description" : "^gray;A high rate of fire assault rifle.^reset;",
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Aphalos I-12",
   "level" : 2,
@@ -33,6 +33,11 @@
       }
     },
     "particleEmitters" : {
+    },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [0, 52, 90]
+	  }
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/thea_plasmagun2.ogg" ]

@@ -1,0 +1,21 @@
+{
+  "itemName" : "trinkhoe",
+  "price" : 125,
+  "category" : "Tool",
+  "inventoryIcon" : "trinkhoe.png",
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "This hoe lets you till soil. The tilled soil can then be used to grow all sorts of crops!",
+  "shortdescription" : "Trinkian Hoe",
+  "tooltipKind" : "tool",
+  "image" : "trinkhoe.png",
+  "largeImage" : "trinkhoe.png",
+  "handPosition" : [-7, -15],
+  "fireTime" : 0.25,
+  "blockRadius" : 7,
+  "altBlockRadius" : 1,
+  "twoHanded" : false,
+  "strikeSounds" : [ "/sfx/tools/pickaxe_hit.ogg" ],
+
+  "pickupQuestTemplates" : [ "firstcrops" ]
+}

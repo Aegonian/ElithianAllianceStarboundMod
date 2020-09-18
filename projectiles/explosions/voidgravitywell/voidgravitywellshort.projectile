@@ -4,6 +4,7 @@
   "animationCycle" : 1.2,
   "animationLoops" : true,
   "frameNumber" : 16,
+  "lightColor" : [20, 0, 75],
   "winddownFrames" : 8,
   "intangibleWinddown" : true,
   "physics" : "thea-gravitywell",

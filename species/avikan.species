@@ -8,7 +8,7 @@
   },
   
   "playerSpecies" : true,
-  "humanoidConfig" : "/species/types/thea-humanoid.config",
+  "humanoidConfig" : "/species/types/thea-avikanoid.config",
   "nameGen" : [ "/species/avikannamegen.config:names", "/species/avikannamegen.config:names" ],
   "ouchNoises" : [ "/sfx/humanoid/avikan_hurt_male1.ogg", "/sfx/humanoid/avikan_hurt_male1.ogg" ],
   "charGenTextLabels" : [ "Skin colour", "Pattern", "Shirt", "Legwear", "Flap style", "Flap colour", "Shirt colour", "Legwear colour", "AVIKAN", "Personality" ],
@@ -114,7 +114,7 @@
 	  { "item" : "avikanbandage" },
 	  { "item" : "avikanturret" },
 	  { "item" : "avikanmissileturret" },
-	  { "item" : "avikanshieldgenerator" },
+	  { "item" : "avikanshieldgenerator-player" },
 	  { "item" : "avikanalarm" },
 	  { "item" : "avikanmedcabinet" },
 	  { "item" : "avikankeypad" },

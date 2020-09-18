@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Uncommon",
   "category" : "shield",
-  "description" : "A modern metal shield built by Stryker Smithing.",
+  "description" : "^gray;A modern metal shield built by Stryker Smithing.",
   "manufacturer" : "^gray;Stryker Smithing^reset;",
   "shortdescription" : "Stryker X-07 Shield",
   "tooltipKind" : "thea-shield-mf",

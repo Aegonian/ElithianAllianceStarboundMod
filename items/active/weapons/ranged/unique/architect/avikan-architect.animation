@@ -161,14 +161,18 @@
       "emissionRate" : 9.0,
       "transformationGroups" : ["muzzle"],
       "offsetRegion" : [0.1, 0, 0.1, 0],
-      "particles" : [ ]
+      "particles" : [ 
+        { "particle" : "xanafiancharge"}
+      ]
     },
 	"chargeparticlesAlt" : {
 	  "active" : false,
       "emissionRate" : 9.0,
       "transformationGroups" : ["muzzle"],
       "offsetRegion" : [0.1, 0, 0.1, 0],
-      "particles" : [ ]
+      "particles" : [ 
+        { "particle" : "xanafiancharge"}
+      ]
     }
   },
 
@@ -176,7 +180,7 @@
     "muzzleFlash" : {
       "active" : false,
       "position" : [0, 0],
-      "color" : [90, 45, 0]
+      "color" : [60, 80, 90]
     }
   },
 

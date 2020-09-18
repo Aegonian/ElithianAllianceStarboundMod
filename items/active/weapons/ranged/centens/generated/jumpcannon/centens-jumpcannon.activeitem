@@ -3,9 +3,9 @@
   "price" : 1500,
   "maxStack" : 1,
   "rarity" : "legendary",
-  "description" : "Uses miniature jump gates to transport solar matter to the magazine.",
+  "description" : "^gray;Uses miniature jump gates to transport solar matter to the magazine.",
   "shortdescription" : "Centensian Jumpcannon",
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-descriptive",
   "category" : "Jumpcannon",
   "twoHanded" : true,
   "itemTags" : ["weapon","ranged","shotgun","centens","jumpweapon"],
@@ -24,7 +24,12 @@
 		  {"particle" : "jumpfiremuzzlesmall"}
 		]
 	  }
-	}
+	},
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [90, 45, 0]
+	  }
+    }
   },
   "baseOffset" : [-1.1, 0.35],
   "muzzleOffset" : [0.0, -0.1],

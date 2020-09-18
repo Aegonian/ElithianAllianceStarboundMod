@@ -24,7 +24,8 @@
   "vehicleImage" : "/vehicles/avikan/avikanmountarmoured/avikanmountarmoured.png",
 
   "animationParts" : {
-    "casing" : "avikanmountarmouredcontroller.png"
+    "casing" : "avikanmountarmouredcontroller.png",
+    "lights" : "avikanmountarmouredcontrollerlights.png"
   },
 
   "inventoryIcon" : "avikanmountarmouredcontroller.png:full",

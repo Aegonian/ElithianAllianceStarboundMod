@@ -1,4 +1,17 @@
 {
+  //===================== LEVEL LABELS =====================
+  "levelTitleLabel" : {
+    "type" : "label",
+    "position" : [120, 150],
+    "hAnchor" : "right",
+    "value" : "^gray;lvl^reset;"
+  },
+  "levelLabel" : {
+    "type" : "label",
+    "position" : [130, 150],
+    "hAnchor" : "right"
+  },
+  //=================== END LEVEL LABELS ===================
   "moneyIcon" : {
     "type" : "image",
     "position" : [102, 30],
@@ -89,7 +102,7 @@
   },
   "damageKindImage" : {
     "type" : "image",
-    "position" : [120, 105],
+    "position" : [120, 112],
     "file" : "",
     "centered" : true,
     "maxSize" : [16, 16],
@@ -124,5 +137,14 @@
     "backingImage" : "/interface/inventory/portrait.png",
     "showRarity" : false,
     "showBackingImageWhenFull" : true
+  },
+  //Custom field, Manufacturer Label
+  "manufacturerLabel" : {
+    "type" : "label",
+    "position" : [130, 95],
+    "hAnchor" : "right",
+    "centered" : true,
+    "wrapWidth" : 126
   }
 }
+

@@ -6,12 +6,13 @@
   "inventoryIcon" : "avikan-vhalakinbowicon.png",
   "maxStack" : 1,
   "rarity" : "Essential",
-  "tooltipKind" : "thea-bow-unique",
+  "tooltipKind" : "thea-bow-mf-unique",
   "category" : "Linebow",
   "description" : "^orange;A linebow built by the secluded clans of Vhalakis.",
+  "manufacturer" : "^gray;Valura^reset;",
   "shortdescription" : "^orange;Vhalakin Bow^white;",
   "twoHanded" : true,
-  "itemTags" : ["weapon","ranged","avikan","theaUnique"],
+  "itemTags" : ["weapon","ranged","avikan","valura","theaUnique"],
   
   //CONFIGURATION FOR WEAPONS COLLECTION
   "collectablesOnPickup" : { "thea_weapons" : "avikan-vhalakinbow" },

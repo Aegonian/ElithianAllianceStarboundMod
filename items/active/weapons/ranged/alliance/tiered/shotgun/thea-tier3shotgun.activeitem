@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-tier3shotgun.png:idle",
   "maxStack" : 1,
   "rarity" : "Uncommon",
-  "description" : "A standard-issue Alliance shotgun.",
+  "description" : "^gray;A standard-issue Alliance shotgun.",
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Barnacus S-5",
   "level" : 3,
@@ -33,6 +33,11 @@
 		  }
 		}
       }
+    },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [0, 52, 90]
+	  }
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/plasma_shotgun4.ogg" ]

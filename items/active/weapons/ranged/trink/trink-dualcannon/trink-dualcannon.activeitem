@@ -4,7 +4,7 @@
   "inventoryIcon" : "trink-dualcannonicon.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A heavy, double barrel laser cannon.",
+  "description" : "^gray;A heavy, double barrel laser cannon.",
   "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "Circuit Dual Cannon",
   "level" : 6,

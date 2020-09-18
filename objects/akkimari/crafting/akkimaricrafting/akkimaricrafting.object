@@ -33,7 +33,7 @@
 
   "aegiDescription" : "A basic workshop. It's missing a few tools...",
   "avikanDescription" : "This looks like it was cobbled together from scrap metal...",
-  "erixianDescription" : "TODO.",
+  "draunaarDescription" : "TODO.",
   "trinkDescription" : "This workshop was very poorly constructed.",
   "hymidDescription" : "Some simple tools and some space to use them, but not much more.",
   "notixDescription" : "The selection of tools in this workshop is rather limited.",
@@ -72,7 +72,7 @@
 
 		"aegiDescription" : "A basic workshop. It's missing a few tools...",
 		"avikanDescription" : "This looks like it was cobbled together from scrap metal...",
-		"erixianDescription" : "TODO.",
+		"draunaarDescription" : "TODO.",
 		"trinkDescription" : "This workshop was very poorly constructed.",
 		"hymidDescription" : "Some simple tools and some space to use them, but not much more.",
 		"notixDescription" : "The selection of tools in this workshop is rather limited.",
@@ -130,7 +130,7 @@
 
 		"aegiDescription" : "A messy workshop. That furnace should come in handy.",
 		"avikanDescription" : "It's a bit rough, but this workshop is perfectly functional.",
-		"erixianDescription" : "TODO.",
+		"draunaarDescription" : "TODO.",
 		"trinkDescription" : "A moderately efficient design for a workshop.",
 		"hymidDescription" : "That tiny furnace is a useful addition to this workshop.",
 		"notixDescription" : "I don't much like the heat from that tiny furnace...",
@@ -189,7 +189,7 @@
 
 		"aegiDescription" : "A highly advanced workshop. It reminds me of a Multi-Fabricator unit.",
 		"avikanDescription" : "I should take notes on how this device works. The Nomada might learn something from it.",
-		"erixianDescription" : "TODO.",
+		"draunaarDescription" : "TODO.",
 		"trinkDescription" : "A highly efficient, if somewhat unsafe, crafting device.",
 		"hymidDescription" : "I wonder how this device works. Does it use nanites?",
 		"notixDescription" : "The sounds created by this device are strange. I've never heard anything quite like it.",

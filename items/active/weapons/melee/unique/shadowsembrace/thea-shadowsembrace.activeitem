@@ -5,11 +5,12 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "^orange;A sword cloaked in shadows, built for the Harrowing.",
+  "manufacturer" : "^gray;The Harrowing^reset;",
   "shortdescription" : "^orange;Shadow's Embrace^white;",
-  "tooltipKind" : "thea-sword-unique",
+  "tooltipKind" : "thea-sword-unique-mf",
   "category" : "Longsword",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","broadsword","theaUnique"],
+  "itemTags" : ["weapon","melee","broadsword","harrowing","theaUnique"],
 
   "inventoryIcon" : "thea-shadowsembraceicon.png",
   
@@ -59,5 +60,5 @@
 	"forceStopSound" : true
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

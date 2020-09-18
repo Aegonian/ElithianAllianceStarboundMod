@@ -1,0 +1,154 @@
+{
+  "background" : {
+    "type" : "background",
+    "fileHeader" : "/interface/tooltips/theauniqueheader.png",
+    "fileBody" : "/interface/tooltips/theauniquebody3.png",
+    "fileFooter" : "/interface/tooltips/theauniquefooter3.png"
+  },
+  //===================== LEVEL LABELS =====================
+  "levelTitleLabel" : {
+    "type" : "label",
+    "position" : [120, 164],
+    "hAnchor" : "right",
+    "value" : "^gray;lvl^reset;"
+  },
+  "levelLabel" : {
+    "type" : "label",
+    "position" : [130, 164],
+    "hAnchor" : "right"
+  },
+  //=================== END LEVEL LABELS ===================
+  "moneyIcon" : {
+    "type" : "image",
+    "position" : [98, 23],
+    "file" : "/interface/money.png"
+  },
+  "priceLabel" : {
+    "type" : "label",
+    "position" : [110, 23],
+    "hAnchor" : "left",
+    "value" : "tree"
+  },
+  "damagePerShotTitleLabel" : {
+    "type" : "label",
+    "position" : [9, 98],
+    "hAnchor" : "left",
+    "value" : "Damage Per Shot:"
+  },
+  "damagePerShotLabel" : {
+    "type" : "label",
+    "position" : [130, 98],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "minSpeedTitleLabel" : {
+    "type" : "label",
+    "position" : [9, 89],
+    "hAnchor" : "left",
+    "value" : "Minimum Rate of Fire:"
+  },
+  "minSpeedLabel" : {
+    "type" : "label",
+    "position" : [130, 89],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "maxSpeedTitleLabel" : {
+    "type" : "label",
+    "position" : [9, 80],
+    "hAnchor" : "left",
+    "value" : "Maximum Rate of Fire:"
+  },
+  "maxSpeedLabel" : {
+    "type" : "label",
+    "position" : [130, 80],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "chargeTimeTitleLabel" : {
+    "type" : "label",
+    "position" : [9, 71],
+    "hAnchor" : "left",
+    "value" : "Windup Time:"
+  },
+  "chargeTimeLabel" : {
+    "type" : "label",
+    "position" : [130, 71],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "energyPerShotTitleLabel" : {
+    "type" : "label",
+    "position" : [9, 62],
+    "hAnchor" : "left",
+    "value" : "Energy Per Shot:"
+  },
+  "energyPerShotLabel" : {
+    "type" : "label",
+    "position" : [130, 62],
+    "hAnchor" : "right",
+    "wrapWidth" : 126
+  },
+  "altAbilityTitleLabel" : {
+    "type" : "label",
+    "position" : [9, 53],
+    "hAnchor" : "left",
+    "value" : ""
+  },
+  "altAbilityLabel" : {
+    "type" : "label",
+    "position" : [130, 53],
+    "hAnchor" : "right",
+    "centered" : true,
+    "wrapWidth" : 126
+  },
+  "descriptionLabel" : {
+    "type" : "label",
+    "position" : [9, 52],
+    "hAnchor" : "left",
+    "vAnchor" : "top",
+    "wrapWidth" : 124,
+    "lineSpacing" : 1.0,
+    "value" : "I am a bug. Please report me!"
+  },
+  "handednessLabel" : {
+    "type" : "label",
+    "position" : [90, 164],
+    "hAnchor" : "right",
+    "centered" : true,
+    "wrapWidth" : 126
+  },
+  //THIS REPLACES THE RARITY LABEL, CREATING A FAKE CUSTOM RARITY
+  "customRarityLabel" : {
+    "type" : "label",
+    "position" : [7, 23],
+    "hAnchor" : "left",
+    "centered" : true,
+    "wrapWidth" : 126,
+    "value" : "Unique"
+  },
+  "damageKindImage" : {
+    "type" : "image",
+    "position" : [120, 130],
+    "file" : "",
+    "centered" : true,
+    "maxSize" : [16, 16],
+    "minSize" : [16, 16]
+  },
+  "objectImage" : {
+    "type" : "image",
+    "position" : [70, 135],
+    "file" : "",
+    "centered" : true,
+    "maxSize" : [40, 40],
+    "minSize" : [40, 40]
+  },
+  //Custom field, Manufacturer Label
+  "manufacturerLabel" : {
+    "type" : "label",
+    "position" : [130, 110],
+    "hAnchor" : "right",
+    "centered" : true,
+    "wrapWidth" : 126
+  }
+}

@@ -5,11 +5,12 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "shield",
-  "description" : "A heavy metal shield made of scrap metal plates. Rough, but very durable.",
+  "description" : "^gray;A heavy metal shield made of scrap metal plates. Rough, but very durable.",
+  "manufacturer" : "^gray;Kelraaki^reset;",
   "shortdescription" : "Scrap Shield",
-  "tooltipKind" : "shield",
+  "tooltipKind" : "thea-shield-mf",
   "twoHanded" : false,
-  "itemTags" : ["shield","akkimari"],
+  "itemTags" : ["shield","akkimari","akkimariUpgradeable","kelraaki"],
   
   "inventoryIcon" : "images/akkimariscrapshield.png:nearidle",
 
@@ -57,5 +58,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandshield.lua"
+  "builder" : "/items/buildscripts/thea-buildshield-mf.lua"
 }

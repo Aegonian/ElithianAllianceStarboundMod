@@ -24,7 +24,8 @@
   "vehicleImage" : "/vehicles/avikan/avikankeff/avikankeff.png",
 
   "animationParts" : {
-    "casing" : "avikankeffcontroller.png"
+    "casing" : "avikankeffcontroller.png",
+    "lights" : "avikankeffcontrollerlights.png"
   },
 
   "inventoryIcon" : "avikankeffcontroller.png:full",

@@ -5,12 +5,13 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "^orange;A powerful shrapnel cannon popular amongst scavengers.",
+  "manufacturer" : "^gray;Kelraaki^reset;",
   "shortdescription" : "^orange;Scrapyard^white;",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-gun-unique",
+  "tooltipKind" : "thea-gun-unique-mf",
   "category" : "Shrapnel Cannon",
-  "itemTags" : ["weapon","ranged","akkimari","theaUnique"],
+  "itemTags" : ["weapon","ranged","akkimari","kelraaki","theaUnique"],
   "twoHanded" : true,
   
   //CONFIGURATION FOR WEAPONS COLLECTION
@@ -159,5 +160,5 @@
     }
   },
   
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

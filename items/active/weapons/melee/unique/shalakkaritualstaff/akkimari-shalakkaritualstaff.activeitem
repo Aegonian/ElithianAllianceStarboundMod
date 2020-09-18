@@ -6,11 +6,12 @@
   "maxStack" : 1,
   "rarity" : "essential",
   "description" : "^orange;A bladed staff used in the rituals of Shalakka shamans.",
+  "manufacturer" : "^gray;Shalakka^reset;",
   "shortdescription" : "^orange;Shalakka Ritual Staff^white;",
-  "tooltipKind" : "thea-sword-unique",
+  "tooltipKind" : "thea-sword-unique-mf",
   "category" : "Ritual Staff",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","scathe","akkimari","theaUnique"],
+  "itemTags" : ["weapon","melee","scathe","akkimari","shalakka","theaUnique"],
 
   "inventoryIcon" : "akkimari-shalakkaritualstafficon.png",
   
@@ -267,5 +268,5 @@
 
   "altAbilityType" : "thea-ritualdance",
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

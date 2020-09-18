@@ -11,7 +11,7 @@
   "actionOnReap" : [
     {
       "action" : "config",
-      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+      "file" : "/projectiles/explosions/violateddrodenbulletexplosion/violateddrodenbulletexplosion.config"
     }
   ],
   "statusEffects" : [ ],

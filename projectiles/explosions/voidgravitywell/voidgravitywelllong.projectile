@@ -5,6 +5,7 @@
   "animationLoops" : true,
   "frameNumber" : 16,
   "winddownFrames" : 8,
+  "lightColor" : [20, 0, 75],
   "intangibleWinddown" : true,
   "physics" : "thea-gravitywell",
   "speed" : 0,

@@ -11,7 +11,7 @@
   "fixedLevel" : false,
   "tooltipKind" : "thea-overheatgun-unique-mf",
   "category" : "Assault Rifle",
-  "itemTags" : ["weapon","ranged","assaultrifle","alliance","theaUnique"],
+  "itemTags" : ["weapon","ranged","assaultrifle","alliance","aeg-corps","theaUnique"],
   "twoHanded" : true,
   
   //CONFIGURATION FOR WEAPONS COLLECTION

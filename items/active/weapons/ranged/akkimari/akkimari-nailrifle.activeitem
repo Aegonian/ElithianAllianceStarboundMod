@@ -4,13 +4,14 @@
   "inventoryIcon" : "akkimari-nailrifle.png",
   "maxStack" : 1,
   "rarity" : "Common",
-  "description" : "A makeshift assault rifle firing hardened nails.",
+  "description" : "^gray;A makeshift assault rifle firing hardened nails.^reset;",
+  "manufacturer" : "^gray;Kelraaki^reset;",
   "shortdescription" : "Akris Nailrifle",
   "level" : 2,
   "fixedLevel" : false,
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Assault Rifle",
-  "itemTags" : ["weapon","ranged","assaultrifle","akkimari"],
+  "itemTags" : ["weapon","ranged","assaultrifle","akkimari","akkimariUpgradeable","kelraaki"],
   "twoHanded" : true,
 
   "animation" : "/items/active/weapons/ranged/gun.animation",
@@ -144,5 +145,5 @@
     }
   },
   
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

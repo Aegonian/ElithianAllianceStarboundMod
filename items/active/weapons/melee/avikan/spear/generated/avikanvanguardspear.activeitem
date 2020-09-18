@@ -3,12 +3,13 @@
   "price" : 900,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A metal spear with an extremely sharp blade, issued to Avikan military forces.",
+  "description" : "^gray;A metal spear with an extremely sharp blade, issued to Avikan military forces.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Vanguard Spear",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "spear",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","spear"],
+  "itemTags" : ["weapon","melee","spear","vanguard"],
 
   "animation" : "/items/active/weapons/melee/spear/spear.animation",
   "animationParts" : { },
@@ -30,7 +31,7 @@
   },
   "fireSounds" : [ "/sfx/melee/swing_spear.ogg" ],
 
-  "builder" : "/items/buildscripts/buildweapon.lua",
+  "builder" : "/items/buildscripts/thea-buildrandomweapon.lua",
   "builderConfig" : [{
     "nameGenerator" : "vanguardnames.config:nameGen",
     "animationParts" : {

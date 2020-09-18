@@ -4,13 +4,14 @@
   "inventoryIcon" : "akkimari-spikecannon.png",
   "maxStack" : 1,
   "rarity" : "Uncommon",
-  "description" : "A heavy spike cannon cobbled together by the Akkimari.",
+  "description" : "^gray;A heavy spike cannon cobbled together by the Akkimari.^reset;",
+  "manufacturer" : "^gray;Kelraaki^reset;",
   "shortdescription" : "Akris Spike Cannon",
   "level" : 3,
   "fixedLevel" : false,
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Spike Cannon",
-  "itemTags" : ["weapon","ranged","grenadelauncher","akkimari"],
+  "itemTags" : ["weapon","ranged","grenadelauncher","akkimari","akkimariUpgradeable","kelraaki"],
   "twoHanded" : true,
 
   "animation" : "/items/active/weapons/ranged/gun.animation",
@@ -95,5 +96,5 @@
     }
   },
   
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

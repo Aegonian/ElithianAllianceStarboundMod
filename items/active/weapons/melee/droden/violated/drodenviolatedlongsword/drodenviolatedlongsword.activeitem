@@ -3,12 +3,13 @@
   "price" : 900,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A hacked Droden longsword.",
+  "description" : "^gray;A hacked Droden longsword.",
+  "manufacturer" : "^gray;Violated/Legion^reset;",
   "shortdescription" : "Violated Longsword",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "Longsword",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","broadsword","droden"],
+  "itemTags" : ["weapon","melee","broadsword","droden","violated"],
 
   "animation" : "/items/active/weapons/melee/broadsword/combobroadsword.animation",
   "animationParts" : { },
@@ -24,7 +25,7 @@
     "baseDps" : [10, 11]
   },
 
-  "builder" : "/items/buildscripts/buildweapon.lua",
+  "builder" : "/items/buildscripts/thea-buildrandomweapon.lua",
   "builderConfig" : [{
     "nameGenerator" : "violatednames.config:nameGen",
     "animationParts" : {

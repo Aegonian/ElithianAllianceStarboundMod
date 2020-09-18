@@ -17,7 +17,7 @@
 
   "aegiDescription" : "A slim, dim light, useful for when there isn't much space.",
   "avikanDescription" : "An efficient light.",
-  "erixianDescription" : "A standard light.",
+  "draunaarDescription" : "A standard light.",
   "trinkDescription" : "Light.",
   "hymidDescription" : "A simple light.",
   "notixDescription" : "A strip of light.",
@@ -49,7 +49,7 @@
   "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
   "animationParts" : {
     "bg" : "alliancelightstrip.png",
-    "fg" : "alliancelightstriplit.png"
+    "fg" : "alliancelightstrip.png"
   },
   "animationPosition" : [-8, 0],
 

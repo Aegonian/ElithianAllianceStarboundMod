@@ -23,7 +23,7 @@
 
   "aegiDescription" : "A slim, bright light, useful for when there isn't much space.",
   "avikanDescription" : "Just a light.",
-  "erixianDescription" : "A standard light.",
+  "draunaarDescription" : "A standard light.",
   "trinkDescription" : "An efficient light.",
   "hymidDescription" : "A simple light.",
   "notixDescription" : "A strip of light.",
@@ -50,9 +50,10 @@
   "soundEffect" : "/sfx/objects/fluorescent_light_quiet.ogg",
   "soundEffectRangeMultiplier" : 0.5,
   
-  "animation" : "/objects/wired/light/lighttoggle.animation",
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
   "animationParts" : {
-    "light" : "avikanlightstrip2.png"
+    "bg" : "avikanlightstrip2.png",
+    "fg" : "avikanlightstrip2lit.png"
   },
   "animationPosition" : [-8, 0],
 

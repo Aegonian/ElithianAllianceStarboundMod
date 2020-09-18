@@ -4,11 +4,11 @@
   "inventoryIcon" : "thea-tier5sniper.png",
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A high-impact sniper rifle.",
+  "description" : "^gray;A high-impact sniper rifle.",
   "manufacturer" : "^gray;Alliance Collective^reset;",
   "shortdescription" : "AC.R-13 Chalice",
   "level" : 5,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Sniper Rifle",
   "itemTags" : ["weapon","ranged","sniperrifle","alliance","alliancecollective","allianceUpgradeable"],
   "twoHanded" : true,
@@ -32,6 +32,11 @@
       }
     },
     "particleEmitters" : {
+    },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [0, 52, 90]
+	  }
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/thea_plasmagun7.ogg" ],

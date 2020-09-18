@@ -5,6 +5,19 @@
     "fileBody" : "/interface/tooltips/bodyobjectthea.png",
     "fileFooter" : "/interface/tooltips/theafooter.png"
   },
+  //===================== LEVEL LABELS =====================
+  "levelTitleLabel" : {
+    "type" : "label",
+    "position" : [120, 144],
+    "hAnchor" : "right",
+    "value" : "^gray;lvl^reset;"
+  },
+  "levelLabel" : {
+    "type" : "label",
+    "position" : [130, 144],
+    "hAnchor" : "right"
+  },
+  //=================== END LEVEL LABELS ===================
   "moneyIcon" : {
     "type" : "image",
     "position" : [98, 23],
@@ -77,6 +90,15 @@
     "centered" : true,
     "wrapWidth" : 126
   },
+  "descriptionLabel" : {
+    "type" : "label",
+    "position" : [9, 49],
+    "hAnchor" : "left",
+    "vAnchor" : "top",
+    "wrapWidth" : 124,
+    "lineSpacing" : 1.0,
+    "value" : "I am a bug. Please report me!"
+  },
   "handednessLabel" : {
     "type" : "label",
     "position" : [90, 144],
@@ -93,7 +115,7 @@
   },
   "damageKindImage" : {
     "type" : "image",
-    "position" : [120, 100],
+    "position" : [120, 105],
     "file" : "",
     "centered" : true,
     "maxSize" : [16, 16],
@@ -110,7 +132,7 @@
   //Custom field, Manufacturer Label
   "manufacturerLabel" : {
     "type" : "label",
-    "position" : [130, 85],
+    "position" : [130, 90],
     "hAnchor" : "right",
     "centered" : true,
     "wrapWidth" : 126

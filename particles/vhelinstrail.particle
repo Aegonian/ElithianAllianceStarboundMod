@@ -4,6 +4,7 @@
     "type" : "animated",
     "animation" : "/animations/vhelinspowertrail/vhelinspowertrail.animation",
 	"position" : [0, 0],
+    "fullbright" : true,
     "size" : 0.6,
     "color" : [7, 131, 255, 255],
     "fade" : 0.5,

@@ -3,6 +3,7 @@
   "definition" : {
     "type" : "animated",
     "animation" : "/animations/vhelinspowertrail/vhelinspowertrail.animation",
+    "fullbright" : true,
     "position" : [0, 0],
     "initialVelocity" : [1, 0],
     "finalVelocity" : [0, 0],

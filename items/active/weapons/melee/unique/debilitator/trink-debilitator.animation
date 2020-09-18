@@ -8,11 +8,18 @@
       "blade" : {
         "default" : "active",
         "states" : {
-          "active" : {},
+          "active" : {
+            "properties" : {
+              "particleEmittersOn" : [ "electricarcing" ]
+            }
+		  },
           "recharge" : {
             "frames" : 2,
             "cycle" : 0.5,
-            "mode" : "loop"
+            "mode" : "loop",
+            "properties" : {
+              "particleEmittersOff" : [ "electricarcing" ]
+            }
           }
         }
       },
@@ -145,6 +152,13 @@
       "offsetRegion" : [3.0, -1.0, 4.0, 1.0],
       "particles" : []
     },
+	"electricarcing" : {
+	  "active" : true,
+	  "emissionRate" : 3.0,
+	  "transformationGroups" : ["weapon"],
+	  "offsetRegion" : [-0.125, 1.375, -0.625, 1.5],
+	  "particles" : []
+	},
 	"inactiveSwoosh" : {
       "active" : false,
       "transformationGroups" : ["swoosh"],

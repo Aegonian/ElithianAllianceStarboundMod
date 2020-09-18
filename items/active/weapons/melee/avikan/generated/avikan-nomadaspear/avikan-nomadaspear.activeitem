@@ -3,12 +3,13 @@
   "price" : 1080,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A metal spear built by craftsmen of the Nomada.",
+  "description" : "^gray;A metal spear built by craftsmen of the Nomada.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Nomada Spear",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "spear",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","spear"],
+  "itemTags" : ["weapon","melee","spear","vanguard"],
 
   "animation" : "/items/active/weapons/melee/spear/spear.animation",
   "animationParts" : { },
@@ -30,7 +31,7 @@
   },
   "fireSounds" : [ "/sfx/melee/swing_spear.ogg" ],
 
-  "builder" : "/items/buildscripts/buildweapon.lua",
+  "builder" : "/items/buildscripts/thea-buildrandomweapon.lua",
   "builderConfig" : [{
     "nameGenerator" : "nomadaspearnames.config:nameGen",
     "animationParts" : {
