@@ -23,7 +23,7 @@
 
   "timeToLive" : 10,
 
-  "scripts" : ["thea-shadowhealer.lua"],
+  "scripts" : ["/projectiles/scripts/thea-followpickup.lua"],
   "scriptDelta" : 1,
 
   "homingStartDelay" : 0.125,

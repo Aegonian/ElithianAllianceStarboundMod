@@ -1,0 +1,63 @@
+{
+  "objectName" : "flagaegipride",
+  "colonyTags" : ["aegi"],
+  "printable" : false,
+  "rarity" : "Common",
+  "objectType" : "teleporter",
+  "category" : "teleportMarker",
+  "price" : 70,
+  "radioMessagesOnPickup" : [ "pickupflag" ],
+
+  "description" : "An Aeginian Federal Union flag that represents unity and inclusivity. Use ^green;[E]^white; to bookmark a teleportation location.",
+  "shortdescription" : "Union Pride Flag",
+  "race" : "aegi",
+
+  "apexDescription" : "A Union flag. I can use this as a waypoint for teleportation.",
+  "avianDescription" : "This Union flag can be bookmarked as a destination for my ship teleporter.",
+  "floranDescription" : "Union flag makess good point to teleport back to ussing teleporter!",
+  "glitchDescription" : "Observant. A small locator module attached to this Union flag allows it to be bookmarked for teleportation.",
+  "humanDescription" : "This Union flag can be saved as a location for my teleporter. Then I can return to it any time.",
+  "hylotlDescription" : "This Union flag can act as a way point, enabling me to return to this point using a teleporter.",
+  "novakidDescription" : "I can bookmark this Union flag for quick teleportin'.",
+  
+  "aegiDescription" : "The Union flag. My ship's teleporter can sync with its location so I can return here later.",
+  "avikanDescription" : "The Union flag. The ship's teleporter can lock on to the locator module inside it, so I can return here later.",
+  "draunaarDescription" : "An Union flag. I can save its location for my teleporter, allowing me to return here later.",
+  "trinkDescription" : "A locator module inside this Union flag allows my ship's teleporter to bookmark this location.",
+  "hymidDescription" : "An Union flag. I can bookmark its location so my teleporter can return me here at any time.",
+  "notixDescription" : "The flag of the Union. I can save its location and return to it later using my teleporter.",
+  "jorgasianDescription" : "The flag of the Union people. My teleporter can bookmark its location for later use.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Union flag. Detected locator module. Ship teleportation system can lock on to this location.",
+  "akkimariDescription" : "Flag of Union-Aegi, colourful and pretty.",
+  
+  "interactAction" : "OpenTeleportDialog",
+  "interactData" : "/interface/warping/destinationonly.config",
+
+  "inventoryIcon" : "flagaegiprideicon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "flagaegipride.png:<color>.<frame>", "fullbright" : true }, { "image" : "flagaegipridelit.png:<color>.<frame>" } ],
+      "flipImages" : true,
+      "direction" : "left",
+      "imagePosition" : [-17, 0],
+      "frames" : 6,
+      "animationCycle" : 0.8,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "flagaegipride.png:<color>.<frame>", "fullbright" : true }, { "image" : "flagaegipridelit.png:<color>.<frame>" } ],
+      "direction" : "right",
+      "imagePosition" : [1, 0],
+      "frames" : 6,
+      "animationCycle" : 0.8,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

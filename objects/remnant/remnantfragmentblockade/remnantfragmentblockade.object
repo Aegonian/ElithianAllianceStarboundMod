@@ -1,0 +1,86 @@
+{
+  "objectName" : "remnantfragmentblockade",
+  "colonyTags" : ["remnant"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 200,
+  "description" : "An unnatural-looking rock. It's blocking my path...",
+  "shortdescription" : "Cursed Blockage",
+  "race" : "remnant",
+
+  "floranDescription" : "Floran feelsss drained. Rock isss making Floran weak...",
+  "glitchDescription" : "Exhausted. This rock is making me feel weak and drained...",
+  
+  "drodenDescription" : "System malfunction. Energy levels draining. External interference detected.",
+  "akkimariDescription" : "Akki-tired. Akki have trouble breathing... Rock-glowing feel wrong.",
+
+  "lightColor" : [40, 64, 0],
+  
+  "inventoryIcon" : "remnantfragmentblockadeicon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "remnantfragmentblockade.png:<color>", "fullbright" : true }, { "image" : "remnantfragmentblockadelit.png:<color>" } ],
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "lightPosition" : [0, 2],
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "bottom", "top" ],
+	  "collision" : "solid"
+    },
+    {
+	  "imageLayers" : [ { "image" : "remnantfragmentblockade.png:<color>", "fullbright" : true }, { "image" : "remnantfragmentblockadelit.png:<color>" } ],
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "lightPosition" : [0, 2],
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom", "top" ],
+	  "collision" : "solid"
+    }
+  ],
+  
+  "animation" : "remnantfragmentblockade.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "destroy" : [ "/sfx/objects/rock_big_break1.ogg", "/sfx/objects/rock_big_break2.ogg", "/sfx/objects/rock_big_break3.ogg", "/sfx/objects/rock_big_break4.ogg", "/sfx/objects/rock_big_break5.ogg" ]
+    },
+    "particleEmitters" : {
+      "destroy" : {
+		"enabled" : true,
+        "burstCount" : 15,
+		"offsetRegion" : [-1, 0, 1, 8],
+		"particles" : [
+          { "particle" : "remnantrockshard" },
+          { "particle" : "remnantrockshard" },
+          { "particle" : "remnantrockshardlarge" },
+          { "particle" : "remnantglowrockshard" }
+        ]
+      }
+    }
+  },
+
+  "smashDropPool" : "empty",
+  "breakDropPool" : "empty",
+
+  "scripts" : [ "/objects/scripts/thea-breakoninteract.lua" ],
+  "scriptDelta" : 5,
+  
+  "requiredItem" : "remnantsplinterfragment",
+  "requiredItemCount" : 10,
+  "missingItemsRadioMessage" : "remnantfragmentblockade-missingitems",
+  
+  "destroyParticles" : true,
+  "explosionDamage" : 75,
+  "damageRepeatGroup" : "remnantfragmentblockade",
+  "explosionConfig" : "/projectiles/objects/remnantdoompillarexplosion.config",
+  "explosionOffset" : [0, 4]
+}

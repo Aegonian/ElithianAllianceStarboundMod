@@ -1,0 +1,262 @@
+{
+  "itemName" : "remnant-splinter",
+  "price" : 1500,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;An ancient stone-like artefact thrumming with unnatural power.",
+  "shortdescription" : "^orange;Blighted Splinter^white;",
+  "level" : 6,
+  "fixedLevel" : false,
+  "tooltipKind" : "thea-tool-unique",
+  "category" : "Artefact",
+  "itemTags" : ["weapon","ranged","artefact","remnant","theaUnique"],
+  "twoHanded" : true,
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "remnant-splinter" },
+  
+  "inventoryIcon" : "remnant-splintericon.png",
+  "largeImage" : "remnant-splinterlarge.png",
+  
+  "meritTokenValue" : 100,
+
+  "animation" : "remnant-splinter.animation",
+  "animationParts" : {
+    "middle" : "remnant-splinter.png",
+    "middleFullbright" : "remnant-splinterlights.png",
+    "muzzleFlash" : "/items/active/weapons/ranged/muzzleflash/thea-invisiblemuzzle.png",
+    "charge" : "remnant-splintercharge.png",
+    "chargeAlt" : "remnant-splinterchargealt.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : {
+      "parts" : {
+        "middleFullbright" : {
+		  "properties" : {
+		    "offset" : [0.125, 0.0]
+		  }
+		},
+		"charge" : {
+		  "properties" : {
+			"offset" : [0.125, 0.0]
+		  }
+		},
+		"chargeAlt" : {
+		  "properties" : {
+			"offset" : [0.125, 0.0]
+		  }
+		}
+      }
+    },
+	"particleEmitters" : {
+	  "muzzleFlash" : {
+        "particles" : [
+          { "particle" : "ancientcursegoop" },
+		  { "particle" : "ancientcursegoop" },
+		  { "particle" : "ancientcursegoop" },
+		  { "particle" : "ancientcursegoop" },
+		  { "particle" : "ancientcursegoop" },
+		  { "particle" : "ancientcursegoop" },
+		  { "particle" : "ancientcursegoop" },
+		  { "particle" : "ancientcursegoop" },
+		  { "particle" : "ancientcursegoop" },
+		  { "particle" : "ancientcursegoop" },
+		  { "particle" : "ancientcursegoop" },
+		  { "particle" : "ancientcursegoop" },
+		  { "particle" : "thea-darkfog" },
+		  { "particle" : "thea-darkfog" },
+		  { "particle" : "thea-darkfog" },
+		  { "particle" : "thea-darkfog" },
+		  { "particle" : "thea-darkfog" },
+		  { "particle" : "ancientcurseflash" },
+		  { "particle" : "ancientcurseflashsmall" },
+		  { "particle" : "ancientcurseflashsmall" }
+        ]
+      }
+    },
+    "sounds" : {
+      "fire" : [ "/sfx/statuseffects/ancientcurse_fire1.ogg" ],
+      "fireAlt" : [ "/sfx/statuseffects/ancientcurse_heavyblast.ogg" ],
+      "chargeLoop" : [ "/sfx/statuseffects/ancientcurse_charge3short.ogg" ],
+      "chargeLoopAlt" : [ "/sfx/statuseffects/ancientcurse_charge3.ogg" ]
+    }
+  },
+  "animationScripts" : ["/items/active/effects/thea-chargeintake-expandingwave.lua"],
+  "scriptedAnimationParameters" : {
+    "particleConfig" : {
+	  "image" : "/particles/chargeintake/curseintake.png",
+	  "scale" : 1.5,
+	  "fullbright" : false,
+	  "rotationSpeed" : 0.75,
+	  "randomRotationDirection" : false
+	},
+    "waveConfig" : {
+	  "image" : "/particles/waves/cursewave.png",
+	  "maxScale" : 4,
+	  "fullbright" : false
+	}
+  },
+
+  "baseOffset" : [0.125, 0.0],
+  "muzzleOffset" : [0.125, 0.0],
+
+  "scripts" : ["/items/active/weapons/ranged/thea-gun.lua"],
+
+  "elementalType" : "ancientcurse",
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-chargedshot.lua"],
+    "class" : "TheaChargedShot",
+
+    "chargeTime" : 0.6,
+    "baseDamage" : 10.0,
+    "baseEnergyUsage" : 28,
+    "inaccuracy" : 0.0,
+	
+	"allowIndependantAim" : true,
+	
+	"cooldownTime" : 0.3,
+	
+	"selfDamage" : 0.3,
+	"selfDamageSource" : "ancientcurse",
+	
+    "projectileType" : "remnantsplinterbullet",
+	"projectileCount" : 1,
+	"projectileParameters" : { },
+	
+	//CHARGE PARTICLE CONFIGURATION
+	"useChargeParticles" : true,
+	"maxChargeParticles" : 32,
+	"particleLifetime" : 0.35,
+	"timeBewteenParticles" : 0.015,
+	"maxParticleDistance" : 5.0,
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : -90,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "charge" : {
+        "armRotation" : 75,
+        "weaponRotation" : -55,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0.3,
+        "armRotation" : 85,
+        "weaponRotation" : -65,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.25,
+        "armRotation" : 85,
+        "weaponRotation" : -65,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "discharge" : {
+        "duration" : 0.25,
+        "armRotation" : 65,
+        "weaponRotation" : -45,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+	}
+  },
+  
+  "altAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/abilities/thea-chargedshot-altfire.lua"],
+    "class" : "TheaChargedShotAltFire",
+
+    "chargeTime" : 1.1,
+    "baseDamage" : 2,
+    "baseEnergyUsage" : 20,
+    "inaccuracy" : 0.0,
+	
+	"allowIndependantAim" : false,
+	
+	"cooldownTime" : 0.5,
+	
+	"selfDamage" : 0.6,
+	"selfDamageSource" : "ancientcurse",
+
+    "projectileType" : "ancientcursesplinterkillexplosion",
+	"projectileCount" : 1,
+	"projectileParameters" : { },
+	
+	//CHARGE PARTICLE CONFIGURATION
+	"useChargeParticles" : true,
+	"maxChargeParticles" : 32,
+	"particleLifetime" : 0.5,
+	"timeBewteenParticles" : 0.01,
+	"maxParticleDistance" : 25.0,
+	"scaleMultiplier" : 1.75,
+	"scaleAddition" : 0.25,
+	
+	//WAVE PARTICLE CONFIGURATION
+	"useWaveParticles" : true,
+	"waveLifetime" : 1.0,
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : -90,
+        "weaponRotation" : 0,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "charge" : {
+        "armRotation" : 75,
+        "weaponRotation" : -55,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0.3,
+        "armRotation" : 85,
+        "weaponRotation" : -65,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.25,
+        "armRotation" : 85,
+        "weaponRotation" : -65,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "discharge" : {
+        "duration" : 0.25,
+        "armRotation" : 65,
+        "weaponRotation" : -45,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+	}
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

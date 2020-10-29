@@ -1,0 +1,39 @@
+{
+  "projectileName" : "thea-ancientcursehealer",
+  "physics" : "illusion",
+  "bounces" : 0,
+  "image" : "thea-ancientcursehealer.png",
+  "lightColor" : [20, 32, 0],
+  "animationCycle" : 0.4,
+  "frameNumber" : 4,
+  "emitters" : [ "ancientcursesmalltrail" ],
+  "power" : 0,
+  "speed" : 15,
+  "actionOnReap" : [
+	{
+      "action" : "projectile",
+      "type" : "thea-ancientcursehealerexplosion"
+    }
+  ],
+  "onlyHitTerrain" : true,
+
+  "orientationLocked" : true,
+  "renderLayer" : "ForegroundEntity",
+
+  "timeToLive" : 10,
+
+  "scripts" : ["/projectiles/scripts/thea-followpickup.lua"],
+  "scriptDelta" : 1,
+  
+  "minSpeed" : 10,
+  "maxSpeed" : 25,
+  
+  "homingStartDelay" : 0.125,
+  "homingSpeed" : 50,
+  "homingForce" : 75,
+  
+  "pickupRange" : 0.75,
+  "snapRange" : 2,
+  "snapSpeed" : 150,
+  "snapForce" : 250
+}

@@ -1,0 +1,28 @@
+{
+  "kind" : "ancientcursestreaksmall",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/ancientcursestreak/ancientcursestreak.animation",
+    "position" : [0, 0],
+    "size" : 0.5,
+    "color" : [255, 255, 255, 255],
+    "light" : [20, 32, 0],
+    "fade" : 0,
+    "initialVelocity" : [0.0, 0.0],
+    "finalVelocity" : [0, 0],
+    "approach" : [5, 50],
+    "rotation" : 0,
+    "flippable" : true,
+    "angularVelocity" : 0,
+    "timeToLive" : 0.1,
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.6,
+    "layer" : "front",
+    "variance" : {
+      "position" : [0.5, 0.5],
+      "rotation" : 360,
+	  "angularVelocity" : 90,
+	  "size" : 0.25
+    }
+  }
+}

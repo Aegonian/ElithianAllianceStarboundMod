@@ -1,5 +1,19 @@
 {
   //=======================================================================
+  // HARROWING EVENT QUEST - THE BLIGHTED CAVERN
+  //=======================================================================
+  "remnantfragmentblockade-missingitems" : {
+    "unique" : false,
+    "text" : "This rock seems to respond to Blighted Stone Fragments. Perhaps if you collect a few more, you can open the way ahead?",
+    "persistTime" : 4.0
+  },
+  "remnantsplinter-foundgoal" : {
+    "unique" : false,
+    "text" : "This seems to be the source of the strange energies here. You'd better tell Ayala what you've found.",
+    "persistTime" : 8.0
+  },
+  
+  //=======================================================================
   // AVIKAN QUEST - STOPPING THE CORRUPTION
   //=======================================================================
   "vanguarddronebattle1" : {

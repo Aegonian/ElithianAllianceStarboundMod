@@ -17,15 +17,23 @@
 		{"weight" : 0.5, "item" : "aegi-centenshead" },
 		{"weight" : 0.5, "item" : "aegi-pumpkinhead" },
 		{"weight" : 0.5, "item" : "aegi-trinkhead" },
+		{"weight" : 0.5, "item" : "aegi-spookyhead" },
 		{"weight" : 0.5, "item" : "avikan-drodenhead" },
 		{"weight" : 0.5, "item" : "avikan-sandspitterhead" },
 		{"weight" : 0.5, "item" : "avikan-theleanhead" },
+		{"weight" : 0.5, "item" : "avikan-oculushead" },
 		{"weight" : 0.5, "item" : "droden-avikanhead" },
 		{"weight" : 0.5, "item" : "droden-drahlhead" },
 		{"weight" : 0.5, "item" : "droden-sandcrawlerhead" },
+		{"weight" : 0.5, "item" : "droden-skullhead" },
 		{"weight" : 0.5, "item" : "trink-ghost" },
 		{"weight" : 0.5, "item" : "trink-notix" },
-		{"weight" : 0.5, "item" : "trink-pumpkin" }
+		{"weight" : 0.5, "item" : "trink-pumpkin" },
+		{"weight" : 0.5, "item" : "trink-tentacle" },
+		// MONSTER MASKS
+		{"weight" : 0.25, "item" : "aegi-ooglerhead" },
+		{"weight" : 0.25, "item" : "aegi-poptophead" },
+		{"weight" : 0.25, "item" : "aegi-spookithead" }
       ]
     } ]
   ],

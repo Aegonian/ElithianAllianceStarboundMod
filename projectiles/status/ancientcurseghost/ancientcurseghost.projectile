@@ -29,6 +29,9 @@
   "minLifeTime" : 400,
   "maxLifeTime" : 600,
   
+  "allowAncientCurseKill" : true,
+  "healProjectileType" : "thea-ancientcursehealer",
+  
   "randomStartingSpeed" : true,
   "minSpeed" : 8,
   "maxSpeed" : 16,

@@ -1,0 +1,14 @@
+{
+  "name" : "thea-instantheal-medium",
+  "effectConfig" : {
+    "healAmount" : 4,
+    "emissionRate" : 10
+  },
+  "defaultDuration" : 0.1,
+
+  "scripts" : [
+    "thea-instantheal.lua"
+  ],
+
+  "animationConfig" : "thea-instantheal.animation"
+}

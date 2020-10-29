@@ -1,0 +1,25 @@
+{
+  "name" : "ancientcursedoom",
+  "blockingStat" : "ancientcurseStatusImmunity",
+
+  "effectConfig" : {
+	"directive" : "fade=000000=0.25?border=1;9BFF0010",
+	"deathDirective" : "fade=000000=1.0?border=1;9BFF0080",
+	"deathProjectileType" : "ancientcurseghost",
+	"transitionEffect" : "ancientcurse",
+	"transitionEffectDuration" : 10,
+	"damageInterval" : 2.5,
+	"damagePerTick" : 2.0,
+	"activationDamageThreshold" : 50.0
+  },
+  "defaultDuration" : 10,
+
+  "scripts" : [
+    "ancientcursedoom.lua"
+  ],
+
+  "animationConfig" : "ancientcursedoom.animation",
+
+  "label" : "Harrowing Omen",
+  "icon" : "/interface/statuses/ancientcursedoom.png"
+}

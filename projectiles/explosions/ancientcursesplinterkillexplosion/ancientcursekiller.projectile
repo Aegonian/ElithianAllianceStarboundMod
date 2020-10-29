@@ -1,0 +1,17 @@
+{
+  "projectileName" : "ancientcursekiller",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "damageKind" : "ancientcurse",
+  "damageType" : "NoDamage",
+
+  "scripts" : ["/projectiles/scripts/thea-messagesender.lua"],
+  "scriptDelta" : 1,
+
+  "messageRadius" : 100,
+  "entityTypes" : [ "creature", "projectile" ],
+  "ignoreSourceEntity" : true,
+  "message" : "ancientcursekill",
+  
+  "delayMessageByRange" : true,
+  "delayTime" : 0.01
+}

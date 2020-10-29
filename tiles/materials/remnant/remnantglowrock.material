@@ -1,0 +1,30 @@
+{
+  "materialId" : 30179,
+  "materialName" : "remnantglowrock",
+  "particleColor" : [58, 58, 58, 255],
+  "itemDrop" : "remnantglowrock", 
+  "shortdescription" : "Glowing Rock",
+  
+  "description" : "An ancient rock with an eerie glow.",
+  "glitchDescription" : "Frightened. This rock does not look natural...",
+  "floranDescription" : "Floran feelss uneasssy near this sstone.",
+  "novakidDescription" : "I d'know what this is, but I don't like how it feels.",
+  
+  "drodenDescription" : "Analysis complete. Error.",
+  "akkimariDescription" : "Akki uneasy. Rock should glow-not.",
+
+  "footstepSound" : "/sfx/blocks/footstep_stone.ogg",
+  "health" : 30,
+  "category" : "materials",
+  
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "remnantglowrock.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : false,
+    "zLevel" : 200,
+    "radiantLight" : [40, 64, 0]
+  }
+}

@@ -63,9 +63,29 @@ function init()
     self.waveAmplitude = -self.waveAmplitude
   end
   self.lastAngle = 0
+  
+  if config.getParameter("allowAncientCurseKill", false) then
+	message.setHandler("ancientcursekill", function(_, _, delay, sourceEntity)
+	  projectile.setTimeToLive(delay)
+	
+	  self.killSourceEntity = sourceEntity
+	  self.wasKilled = true
+	end)
+  end
 end
 
-function update(dt)
+function update(dt)  
+  if projectile.timeToLive() <= 0.1 and self.wasKilled and not self.projectileSpawned and world.entityExists(self.killSourceEntity) then
+	local distanceVector = world.distance(mcontroller.position(), world.entityPosition(self.killSourceEntity))
+	local direction = vec2.norm(distanceVector)
+	
+	local projectileId = world.spawnProjectile(config.getParameter("healProjectileType"), mcontroller.position(), nil, direction, false)
+	if projectileId then
+	  world.sendEntityMessage(projectileId, "setTargetEntity", self.killSourceEntity)
+	  self.projectileSpawned = true
+	end
+  end
+  
   --Move the projectile in a sine wave motion by adjusting velocity direction
   if (self.maxWaves == -1) or (self.waves < self.maxWaves) then
 	self.timer = self.timer + dt

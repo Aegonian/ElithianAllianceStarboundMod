@@ -1,5 +1,5 @@
 function init()
-  --Set the item required for succesful interaction
+  --Set the item required for successful interaction
   self.requiredItem = config.getParameter("requiredItem")
   
   --Ensure that the object can be interacted with

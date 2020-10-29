@@ -26,7 +26,7 @@ function update()
 	  mirrored = false,
 	  color = {255, 255, 255, alpha},
 	  rotation = vec2.angle(particle.vector),
-	  scale = (particle.lifeTime / particle.maxLifeTime) * self.particleConfig.scale,
+	  scale = (particle.lifeTime / particle.maxLifeTime) * self.particleConfig.scale * (particle.scaleMultiplier or 1) + (particle.scaleAddition or 0),
 	  position = vec2.add(particle.muzzlePosition, vec2.mul(particle.vector, (particle.lifeTime / particle.maxLifeTime))),
 	  fullbright = self.particleConfig.fullbright
 	}

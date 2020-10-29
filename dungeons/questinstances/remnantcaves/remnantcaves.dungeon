@@ -1,0 +1,23 @@
+{
+  "metadata" : {
+    "name" : "remnantcaves",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "remnantcaves" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : true
+  },
+
+  "parts" : [
+    {
+      "name" : "remnantcaves",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "remnantcaves.json" ]
+    }
+  ]
+}

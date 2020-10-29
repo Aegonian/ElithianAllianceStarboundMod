@@ -1,0 +1,15 @@
+{
+  "type" : "thea-musicchanger",
+  "keepAlive" : true,
+
+  "scripts" : ["/stagehands/missionhelpers/thea-musicchanger.lua"],
+  "scriptDelta" : 10,
+
+  "broadcastArea" : [-5, -5, 5, 5],
+
+  "music" : [],
+
+  "startFadeOutTime" : 2.0,
+  "fadeInTime" : 2.0,
+  "endFadeOutTime" : 2.0
+}

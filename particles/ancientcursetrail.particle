@@ -1,0 +1,28 @@
+{
+  "kind" : "ancientcursetrail",
+  "definition" : {
+    "type" : "animated",
+    "animation" : "/animations/ancientcursetrail/ancientcursetrail.animation",
+    "position" : [0, 0],
+    "initialVelocity" : [0, 0],
+    "finalVelocity" : [0, -12],
+    "approach" : [0, 10],
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.1,
+    "fade" : 1,
+    "size" : 0.75,
+    "layer" : "front",
+    "timeToLive" : 0.3,
+	"fullbright" : false,
+    "variance" : {
+	  "position" : [0.1, 0.1],
+      "initialVelocity" : [0.5, 0.5],
+	  "timeToLive" : 0.1,
+	  "destructionTime" : 0.25,
+	  "size" : 0.25,
+      "rotation" : 180,
+      "angularVelocity" : 10
+    },
+	"collidesLiquid" : false
+  }
+}

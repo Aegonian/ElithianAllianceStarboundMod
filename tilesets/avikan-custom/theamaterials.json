@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":108,
+ "tilecount":109,
  "tileheight":8,
  "tileproperties":
     {
@@ -69,6 +69,11 @@
         {
          "\/\/shortdescription":"Akris Beam Vertical",
          "material":"akkimaribeamvert"
+        },
+     "108":
+        {
+         "\/\/shortdescription":"Glowing Rock",
+         "material":"remnantglowrock"
         },
      "11":
         {
@@ -681,6 +686,10 @@
      "107":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/akkimaribeamvert.png"
+        },
+     "108":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/materials\/remnantglowrock.png"
         },
      "11":
         {

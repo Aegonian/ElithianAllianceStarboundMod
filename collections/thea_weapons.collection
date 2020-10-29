@@ -528,6 +528,13 @@
       "title" : "C30 Supremacy",
       "description" : "A fast assault rifle with a built-in heat sink system.",
       "icon" : "/items/active/weapons/ranged/unique/supremacy/thea-supremacyicon.png"
+    },
+	//NEW EQUIPMENT v2.3.12
+	"remnant-splinter" : {
+      "order" : 86,
+      "title" : "Blighted Splinter",
+      "description" : "An ancient stone-like artefact thrumming with unnatural power.",
+      "icon" : "/items/active/weapons/ranged/unique/splinter/remnant-splinter.png"
     }
   }
 }

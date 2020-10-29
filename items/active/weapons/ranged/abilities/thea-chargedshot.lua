@@ -129,6 +129,16 @@ function TheaChargedShot:fire()
 	animator.setAnimationState("gun", "active")
   end
   
+  --Optionally apply self-damage
+  if self.selfDamage then
+	status.applySelfDamageRequest({
+	  damageType = "IgnoresDef",
+	  damage = math.max(1, self.selfDamage * config.getParameter("damageLevelMultiplier") * activeItem.ownerPowerMultiplier()),
+	  damageSourceKind = self.selfDamageSource,
+	  sourceEntityId = activeItem.ownerEntityId()
+	})
+  end
+  
   if self.recoilKnockbackVelocity then
 	--If not crouching or if crouch does not impact recoil
 	if not (self.crouchStopsRecoil and mcontroller.crouching()) then
@@ -165,6 +175,16 @@ function TheaChargedShot:burst()
   animator.setParticleEmitterActive("chargeparticles", false)
   
   self.chargeHasStarted = false
+  
+  --Optionally apply self-damage
+  if self.selfDamage then
+	status.applySelfDamageRequest({
+	  damageType = "IgnoresDef",
+	  damage = math.max(0.33, (self.selfDamage / self.burstCount) * config.getParameter("damageLevelMultiplier") * activeItem.ownerPowerMultiplier()),
+	  damageSourceKind = self.selfDamageSource,
+	  sourceEntityId = activeItem.ownerEntityId()
+	})
+  end
   
   --Burst projectiles and muzzleflash
   local shots = self.burstCount
@@ -298,8 +318,16 @@ end
 
 function TheaChargedShot:aimVector(inaccuracy, shotNumber, burstNumber)
   local angleAdjustmentList = self.angleAdjustmentsPerShot or {}
-  local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle + sb.nrand(inaccuracy, 0) + (angleAdjustmentList[shotNumber] or 0) + ((burstNumber or 0) * (self.burstRiseAngle or 0)))
-  aimVector[1] = aimVector[1] * mcontroller.facingDirection()
+  local aimVector = {}
+  
+  if self.allowIndependantAim then
+	local aimAngle, aimDirection = activeItem.aimAngleAndDirection(self.weapon.aimOffset, activeItem.ownerAimPosition())
+	aimVector = vec2.rotate({1, 0}, aimAngle + sb.nrand(inaccuracy or 0, 0) + (angleAdjustmentList[shotNumber] or 0) + ((burstNumber or 0) * (self.burstRiseAngle or 0)))
+  else
+	aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle + sb.nrand(inaccuracy or 0, 0) + (angleAdjustmentList[shotNumber] or 0) + ((burstNumber or 0) * (self.burstRiseAngle or 0)))
+  end
+  
+  aimVector[1] = aimVector[1] * self.weapon.aimDirection
   return aimVector
 end
 

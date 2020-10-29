@@ -1,0 +1,48 @@
+{
+  "objectName" : "remnantsplinterpedestal",
+  "colonyTags" : ["remnant"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 10,
+  "description" : "This rock does not look natural...",
+  "shortdescription" : "Cursed Pedestal",
+  "race" : "remnant",
+
+  "floranDescription" : "Floran doesss not like glowing rock.",
+  "glitchDescription" : "Uneasy. This rock makes me feel strange. I should not linger.",
+  
+  "drodenDescription" : "Scanning rock... Error. Results are inconclusive.",
+  "akkimariDescription" : "Akki afraid-no, Akki cautious-only. Akki no want to linger here...",
+
+  "lightColor" : [40, 64, 0],
+  "lightPosition" : [0, 2],
+  
+  "inventoryIcon" : "remnantsplinterpedestalicon.png",
+  "orientations" : [
+    {
+	  "dualImage" : "remnantsplinterpedestal.png:<color>",
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+  "scripts" : [
+    "/objects/scripts/thea-interactpickup.lua"
+  ],
+  "scriptDelta" : 5,
+  
+  "spawnableItem" : "remnant-splinter",
+
+  "animation" : "remnantsplinterpedestal.animation",
+  "animationParts" : {
+    "pedestal" : "remnantsplinterpedestal.png",
+    "lights" : "remnantsplinterpedestallights.png"
+  },
+  "animationPosition" : [-16, 0]
+}

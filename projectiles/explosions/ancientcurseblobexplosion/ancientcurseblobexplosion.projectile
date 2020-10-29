@@ -12,7 +12,6 @@
   "piercing" : true,
   "bounces" : -1,
   "flippable" : true,
-  "damageTeam" : { "type" : "indiscriminate" },
   "damageKind" : "ancientcurseexplosion",
   "knockback" : 0
 }

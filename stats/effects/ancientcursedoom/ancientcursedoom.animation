@@ -1,0 +1,28 @@
+{
+  "particleEmitters" : {
+    "smoke" : {
+      "enabled" : true,
+      "emissionRate" : 10.0,
+      "particles" : [
+        { "particle" : "thea-darkfog" }
+      ]
+    },
+    "streaks" : {
+      "enabled" : true,
+      "emissionRate" : 1.0,
+      "particles" : [
+        { "particle" : "ancientcursestreak" }
+      ]
+    }
+  },
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "position" : [0, 0],
+      "color" : [0, 75, 5]
+    }
+  },
+  "sounds" : {
+    "loop" : [ "/sfx/npc/monsters/orbide_creepy_loop.ogg" ]
+  }
+}

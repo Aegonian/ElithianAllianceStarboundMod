@@ -1,0 +1,47 @@
+{
+  "objectName" : "remnantfogprimer",
+  "colonyTags" : [],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 0,
+  "description" : "...",
+  "shortdescription" : "Remnant Fog Source",
+  "race" : "remnant",
+
+  "inventoryIcon" : "remnantfogprimericon.png",
+  "orientations" : [
+    {
+      "image" : "remnantfogprimer.png:<color>",
+      "imagePosition" : [0, 0],
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1
+    }
+  ],
+  
+  "particleEmitter" : {
+    "emissionRate" : 1.0,
+    "emissionVariance" : 0.25,
+    "pixelOrigin" : [0, 0],
+
+    "particle" : {
+      "type" : "animated",
+      "image" : "/animations/thea-fadedfog/thea-fadedfog.animation",
+      "size" : 0.9,
+      "color" : [150, 150, 150, 255],
+      "destructionAction" : "fade",
+      "destructionTime" : 2,
+      "initialVelocity" : [0, 0],
+      "timeToLive" : 3,
+      "layer" : "middle",
+      "position" : [0, 2],
+      "collidesForeground" : false
+    },
+    "particleVariance" : {
+	  "size" : 0.1,
+      "initialVelocity" : [3.0, 0.0],
+      "position" : [3, 1]
+    }
+  }
+}

@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":6,
+ "tilecount":8,
  "tileheight":8,
  "tileproperties":
     {
@@ -41,6 +41,17 @@
          "\/\/shortdescription":"Vaash (Endless)",
          "liquid":"akkimariacid",
          "source":"true"
+        },
+     "6":
+        {
+         "liquid":"remnantliquid",
+         "shortdescription":"Remnant Goop"
+        },
+     "7":
+        {
+         "liquid":"remnantliquid",
+         "shortdescription":"Remnant Goop (Endless",
+         "source":"true"
         }
     },
  "tiles":
@@ -68,6 +79,14 @@
      "5":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/liquids\/akkimariacid_source.png"
+        },
+     "6":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/liquids\/remnantliquid.png"
+        },
+     "7":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/liquids\/remnantliquid_source.png"
         }
     },
  "tilewidth":8

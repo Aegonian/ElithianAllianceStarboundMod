@@ -11,6 +11,15 @@
         [0.25, 4]
       ]
     }]
-  ]  
+  ],
+  
+	//REMNANT ROCKS
+  "remnantSplinterFragment" : [
+    [1, {
+	  "fill" : [
+		{"item" : "remnantsplinterfragment" }
+      ]
+    } ]
+  ]
 }
 

@@ -4,7 +4,7 @@
   "inventoryIcon" : "akkimari-trackrifle.png",
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "^gray;An Akkimari weapon firing target-seeking plasma bolts.^reset;",
+  "description" : "^gray;An Akkimari weapon firing target-seeking vaash bolts.^reset;",
   "manufacturer" : "^gray;Rashakr^reset;",
   "shortdescription" : "Akris Tracker NPC",
   "level" : 5,

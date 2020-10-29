@@ -2,8 +2,8 @@ require "/scripts/util.lua"
 require "/scripts/vec2.lua"
 
 function init()
-  animator.setParticleEmitterOffsetRegion("flames", mcontroller.boundBox())
-  animator.setParticleEmitterActive("flames", true)
+  animator.setParticleEmitterOffsetRegion("smoke", mcontroller.boundBox())
+  animator.setParticleEmitterActive("smoke", true)
   effect.setParentDirectives(config.getParameter("directive"))
   
   --Check for damage taken in the init() step to ensure that damage taken before the status was applied won't get calculated for the damage increase
@@ -26,6 +26,10 @@ function init()
   self.blobs = {}
   
   animator.playSound("loop", -1)
+  
+  message.setHandler("ancientcursekill", function(_, _, delay)
+	effect.modifyDuration(-effect.duration() + delay)
+  end)
   
   script.setUpdateDelta(5)
 end
