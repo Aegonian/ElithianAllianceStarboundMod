@@ -7,7 +7,7 @@
   "shortdescription" : "Sand Bomb",
   "level" : 1,
   "tooltipKind" : "thea-activethrowable",
-  "category" : "Throwable",
+  "category" : "throwableItem",
   "itemTags" : ["throwableweapon","avikan"],
   "twoHanded" : false,
 
