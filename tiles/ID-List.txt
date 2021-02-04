@@ -5,13 +5,33 @@ Elithian Races Mod Material ID reservations: 30000-30250
 
 /////MATERIALS////
 30000 avikanpanel
+30001
 30002 avikanthickpipetop
 30003 avikanthickpipebottom
 30004 avikanplating
 30005 avikanshippanel 
+30006
+30007
+30008
+30009
 30010 avikansupportpanel
 30011 avikandarkgroundpanel 
 30012 avikanshipfloor 
+30013
+30014
+30015
+30016
+30017
+30018
+30019
+30020
+30021
+30022
+30023
+30024
+30025
+30026
+30027
 30028 avikanfarmpanel 
 30029 avikangroundpanel 
 30030 avikansmoothpanel 
@@ -19,12 +39,20 @@ Elithian Races Mod Material ID reservations: 30000-30250
 30032 avikanslopedpanel 
 30033 avikanslopedglass 
 30034 avikanpowerpanel 
+30035
+30036
+30037
+30038
 30039 avikanfabrictentpole 
 30040 avikantentpole 
 30041 avikanleather 
 30042 avikandecoleather 
 30043 avikanfabric 
+30044
+30045
 30046 avikanheavypipe 
+30047
+30048
 30049 centenssmoothpanel
 30050 centensblockpanel
 30051 centenshoripanel
@@ -34,6 +62,8 @@ Elithian Races Mod Material ID reservations: 30000-30250
 30055 avikanfence 
 30056 avikanpurplefabric 
 30057 avikanpurplefabrictentpole 
+30058
+30059
 30060 centensreinforcement
 30061 trinkgroundpanel
 30062 trinksupportpanel
@@ -53,7 +83,8 @@ Elithian Races Mod Material ID reservations: 30000-30250
 30076 alliancesupport 
 30077 allianceglass  
 30078 allianceslopedglass 
-30079 alliancehullpanel 
+30079 alliancehullpanel
+30080 
 30081 trinkpanel
 30082 alliancefarmpanel 
 30083 allianceinterfacewall 
@@ -87,6 +118,42 @@ Elithian Races Mod Material ID reservations: 30000-30250
 30111 akkimariplatform
 30112 alliancestoneplatform
 30113 rimdwellerstairsplatform 
+30114
+30115
+30116
+30117
+30118
+30119
+30120
+30121
+30122
+30123
+30124
+30125
+30126
+30127
+30128
+30129
+30130
+30131
+30132
+30133
+30134
+30135
+30136
+30137
+30138
+30139
+30140
+30141
+30142
+30143
+30144
+30145
+30146
+30147
+30148
+30149
 30150 akkimaribeam
 30151 akkimarifoundation
 30152 akkimarigroundpanel
@@ -110,19 +177,84 @@ Elithian Races Mod Material ID reservations: 30000-30250
 30170 avikanpowerpanel2 
 30171 akkimariscrap
 30172 akkimariglass
+30173
 30174 akkimaribeamvert
 30175 akkimaribeamconnector
 30176 akkimaribars
 30177 akkimariplatingfront
 30178 akkimariscrapplatingfront
 30179 remnantglowrock
+30180
+30181
+30182
+30183
+30184
+30185
+30186
+30187
+30188
+30189
+30190
+30191
+30192
+30193
+30194
+30195
+30196
+30197
+30198
+30199
 30200 avikanrail
 30201 avikandarkrail
 30202 trinkrail
 30203 alliancerail
 30204 akkimarirail
+30205
+30206
+30207
+30208
+30209
+30210
+30211
+30212
+30213
+30214
+30215
+30216
+30217
+30218
+30219
+30220
+30221
+30222
+30223
+30224
 30225 thea-unbreakabledirt
 30226 thea-unbreakablecobblestone
+30227
+30228
+30229
+30230
+30231
+30232
+30233
+30234
+30235
+30236
+30237
+30238
+30239
+30240
+30241
+30242
+30243
+30244
+30245
+30246
+30247
+30248
+30249
+30250
 39999 theagreenscreenplatform
 
 /////LIQUIDS////
