@@ -4,6 +4,7 @@
   "rarity" : "Common",
   "objectType" : "container",
   "tooltipKind" : "container",
+  "category" : "storage",
   "printable" : false,
   "price" : 100,
   "description" : "A reinforced container built to hold Vaash.",
