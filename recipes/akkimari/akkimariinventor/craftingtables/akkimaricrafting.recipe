@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "akkimarimetal", "count" : 8 },
+    { "item" : "darkwoodmaterial", "count" : 20 },
+    { "item" : "logblock", "count" : 1 }   
+  ],
+  "output" : {
+    "item" : "akkimaricrafting",
+    "count" : 1
+  },
+  "duration" : 5,
+  "groups" : [ "akkimariinventor", "craftingstations", "all" ]
+}
