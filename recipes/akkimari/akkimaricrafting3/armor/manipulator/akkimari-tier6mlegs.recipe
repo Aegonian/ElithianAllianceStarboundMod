@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "akkimari-tier5mlegs", "count" : 1 },
+	{ "item" : "akkimarimetaltier6", "count" : 4 }
+  ],
+  "duration" : 5,
+  "output" : { "item" : "akkimari-tier6mlegs", "count" : 1 },
+  "groups" : [ "akkimaricrafting3", "armours", "all" ]
+}

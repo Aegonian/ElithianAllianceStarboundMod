@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "akkimari-tier5ahead", "count" : 1 },
+	{ "item" : "akkimarimetaltier6", "count" : 6 }
+  ],
+  "duration" : 5,
+  "output" : { "item" : "akkimari-tier6ahead", "count" : 1 },
+  "groups" : [ "akkimaricrafting3", "armours", "all" ]
+}

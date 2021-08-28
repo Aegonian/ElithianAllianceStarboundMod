@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "akkimarimetaltier3", "count" : 4 }
+  ],
+  "duration" : 5,
+  "output" : { "item" : "aegi-tier3legs", "count" : 1 },
+  "groups" : [ "akkimaricrafting2", "armours", "all" ]
+}

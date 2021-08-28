@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "akkimarimetaltier5", "count" : 10 }
+  ],
+  "duration" : 5,
+  "output" : { "item" : "akkimari-tier5mchest", "count" : 1 },
+  "groups" : [ "akkimaricrafting3", "armours", "all" ]
+}
