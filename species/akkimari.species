@@ -23,6 +23,7 @@
       { "item" : "akkimariinventor" },
       { "item" : "flagakkimari" },
 	  { "item" : "akkimarisilk" },
+	  { "item" : "akkimarimanipulatorskin" },
 	  
 // Akkimari Crafting 1
 	  { "item" : "akkimari-tier1chest" },
@@ -41,6 +42,67 @@
 	  { "item" : "akkimari-nailgun" },
 	  { "item" : "akkimari-nailrifle" },
 	  { "item" : "akkimari-nailshotgun" },
+	  
+	// Blocks & Platforms
+	  { "item" : "akkimaribars" },
+	  { "item" : "akkimaribeam" },
+	  { "item" : "akkimaribeamconnector" },
+	  { "item" : "akkimaribeamvert" },
+	  { "item" : "akkimarifoundation" },
+	  { "item" : "akkimariglass" },
+	  { "item" : "akkimarigroundpanel" },
+	  { "item" : "akkimarihullpanel" },
+	  { "item" : "akkimariplating" },
+	  { "item" : "akkimariscrap" },
+	  { "item" : "akkimariscrapplating" },
+	  { "item" : "akkimariplatform" },
+	  
+	// Objects
+	  { "item" : "akkimarichest" },
+	  { "item" : "akkimaricrate" },
+	  { "item" : "akkimarismallchest" },
+	  { "item" : "akkimarivaashbarrel" },
+	  { "item" : "akkimariantenna" },
+	  { "item" : "akkimaribackgrounddoor" },
+	  { "item" : "akkimaribanner" },
+	  { "item" : "akkimaribanner2" },
+	  { "item" : "akkimaribeacon" },
+	  { "item" : "akkimaribountyhologram" },
+	  { "item" : "akkimarihangingstorage" },
+	  { "item" : "akkimarimountedskeleton" },
+	  { "item" : "akkimarimountedskull" },
+	  { "item" : "akkimaripowercore" },
+	  { "item" : "akkimarirailing" },
+	  { "item" : "akkimariskull" },
+	  { "item" : "akkimariskulls" },
+	  { "item" : "akkimarivent" },
+	  { "item" : "akkimariblastdoor" },
+	  { "item" : "akkimarifabricdoor" },
+	  { "item" : "akkimarifabricdoor2" },
+	  { "item" : "akkimarislidinghatch" },
+	  { "item" : "akkimarispacedoor" },
+	  { "item" : "akkimaribed" },
+	  { "item" : "akkimaribench" },
+	  { "item" : "akkimarichair" },
+	  { "item" : "akkimarihammock" },
+	  { "item" : "akkimarihammock2" },
+	  { "item" : "akkimaripiratecaptainchair" },
+	  { "item" : "akkimariscrapbed" },
+	  { "item" : "akkimariscraptable" },
+	  { "item" : "akkimarismalltable" },
+	  { "item" : "akkimaritable" },
+	  { "item" : "akkimarilight" },
+	  { "item" : "akkimarilightstrip" },
+	  { "item" : "akkimaristandingtorch" },
+	  { "item" : "akkimaributton" },
+	  { "item" : "akkimariconsole" },
+	  { "item" : "akkimarigenerator" },
+	  { "item" : "akkimarilargepressureplate" },
+	  { "item" : "akkimaripressureplate" },
+	  { "item" : "akkimarisecuritycamera" },
+	  { "item" : "akkimarismallbutton" },
+	  { "item" : "akkimarismallconsole" },
+	  { "item" : "akkimariwallswitch" },
 	  
 // Akkimari Crafting 2
 	  { "item" : "akkimari-tier3chest" },
@@ -69,6 +131,7 @@
 	  { "item" : "akkimari-flamethrower" },
 	  { "item" : "akkimari-trackrifle" },
 	  { "item" : "akkimarigrapplinghook" },
+	  { "item" : "akkimarirailhook" },
 	  
 	//Accelerator
 	  { "item" : "akkimari-tier5achest" },
@@ -94,26 +157,40 @@
 	  
 // Akkimari Furnace 1
 	//Ingredients
-		{ "item" : "akkimarimetal" },
-		{ "item" : "akkimarimetaltier2" },
 		{ "item" : "akkimaricircuitry" },
 		{ "item" : "akkimariglassitem" },
+		{ "item" : "akkimariupgradekit2" },
 	  
 // Akkimari Furnace 2
 	//Ingredients
-		{ "item" : "akkimarimetaltier3" },
-		{ "item" : "akkimarimetaltier4" },
 		{ "item" : "akkimariprocessor" },
+		{ "item" : "akkimariupgradekit3" },
+		{ "item" : "akkimariupgradekit4" },
 		
-// Akkimari Furnace 2
+// Akkimari Furnace 3
 	//Ingredients
-		{ "item" : "akkimarimetaltier5" },
-		{ "item" : "akkimarimetaltier6" },
+		{ "item" : "akkimaricoreenergetic" },
+		{ "item" : "akkimaricorepowerful" },
+		{ "item" : "akkimaricorevigorous" },
+		{ "item" : "akkimariupgradekit5" },
+		{ "item" : "akkimariupgradekit6" },
 		
 // Akkimari Inventor 1
 	//Crafting Tables
 		{ "item" : "akkimaricrafting" },
-		{ "item" : "akkimarifurnace" }
+		{ "item" : "akkimarifurnace" },
+		{ "item" : "akkimariscavengertable" },
+		{ "item" : "akkimaribreathprotectionback" },
+		
+// Akkimari Inventor 2
+	//Crafting Tables
+		{ "item" : "akkimariweaponimprovement" },
+		{ "item" : "akkimariradiationprotectionback" },
+		
+// Akkimari Inventor 3
+	//Crafting Tables
+		{ "item" : "akkimaricoldprotectionback" },
+		{ "item" : "akkimariheatprotectionback" }
 
     ]
   },

@@ -1,7 +1,7 @@
 {
   "input" : [
 	{ "item" : "akkimarimetal", "count" : 1 },
-	{ "item" : "akkimarisilk", "count" : 6 }
+	{ "item" : "akkimarisilk", "count" : 3 }
   ],
   "duration" : 5,
   "output" : { "item" : "akkimari-tier1head", "count" : 1 },

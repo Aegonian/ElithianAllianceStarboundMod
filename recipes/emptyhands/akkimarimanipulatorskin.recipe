@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "akkimarimetal", "count" : 12 },
+    { "item" : "manipulatormodule", "count" : 16 } 
+  ],
+  "output" : {
+    "item" : "akkimarimanipulatorskin",
+    "count" : 1
+  },
+  "groups" : [ "plain", "all" ],
+  "duration" : 0.5
+}

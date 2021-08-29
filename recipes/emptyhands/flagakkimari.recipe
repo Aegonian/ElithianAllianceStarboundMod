@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "akkimarimetal", "count" : 1 },
+    { "item" : "akkimarisilk", "count" : 10 }
+  ],
+  "output" : {
+    "item" : "flagakkimari",
+    "count" : 1
+  },
+  "groups" : [ "plain", "all" ],
+  "duration" : 0.5
+}

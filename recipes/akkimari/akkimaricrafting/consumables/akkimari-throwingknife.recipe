@@ -1,6 +1,6 @@
 {
   "input" : [
-    { "item" : "akkimarimetal", "count" : 3 }
+    { "item" : "akkimarimetal", "count" : 2 }
   ],
   "output" : { "item" : "akkimari-throwingknife", "count" : 3 },
   "groups" : [ "akkimaricrafting", "consumables", "all" ]

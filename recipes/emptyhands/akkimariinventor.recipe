@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "darkwoodmaterial", "count" : 12 },
+    { "item" : "logblock", "count" : 4 } 
+  ],
+  "output" : {
+    "item" : "akkimariinventor",
+    "count" : 1
+  },
+  "groups" : [ "plain", "objects", "all", "tools" ],
+  "duration" : 5
+}
