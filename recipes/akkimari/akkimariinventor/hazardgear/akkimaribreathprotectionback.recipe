@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "akkimarimetal", "count" : 5 },
+	{ "item" : "akkimaricircuitry", "count" : 2 },
+    { "item" : "livingroot", "count" : 1 }
+  ],
+  "output" : { "item" : "akkimaribreathprotection", "count" : 1 },
+  "groups" : [ "akkimariinventor", "hazardgear", "all" ]
+}

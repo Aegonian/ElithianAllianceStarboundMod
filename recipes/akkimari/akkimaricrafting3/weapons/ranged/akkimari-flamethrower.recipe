@@ -1,7 +1,8 @@
 {
   "input" : [
-    { "item" : "akkimarimetaltier6", "count" : 10 },
-    { "item" : "akkimariprocessor", "count" : 1 },
+    { "item" : "akkimarimetaltier6", "count" : 4 },
+	{ "item" : "akkimarigunparts", "count" : 2 },
+    { "item" : "akkimaricircuitry", "count" : 1 },
 	{ "item" : "liquidoil", "count" : 20 }
   ],
   "output" : { "item" : "akkimari-flamethrower", "count" : 1 },

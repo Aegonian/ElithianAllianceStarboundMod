@@ -1,8 +1,7 @@
 {
   "input" : [
-    { "item" : "akkimarimetal", "count" : 8 },
-    { "item" : "darkwoodmaterial", "count" : 20 },
-    { "item" : "logblock", "count" : 1 }   
+    { "item" : "darkwoodmaterial", "count" : 12 },
+    { "item" : "logblock", "count" : 4 }   
   ],
   "output" : {
     "item" : "akkimaricrafting",

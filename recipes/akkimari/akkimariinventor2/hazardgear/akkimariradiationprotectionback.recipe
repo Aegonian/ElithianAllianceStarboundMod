@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "akkimaribreathprotection", "count" : 1 },
+    { "item" : "akkimarimetaltier3", "count" : 5 },
+    { "item" : "akkimaricircuitry", "count" : 2 },
+    { "item" : "venomsample", "count" : 1 }
+  ],
+  "output" : { "item" : "akkimariradiationprotection", "count" : 1 },
+  "groups" : [ "akkimariinventor2", "hazardgear", "all" ]
+}

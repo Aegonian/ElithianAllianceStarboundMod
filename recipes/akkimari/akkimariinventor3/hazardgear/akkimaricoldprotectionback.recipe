@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "akkimariradiationprotection", "count" : 1 },
+    { "item" : "akkimarimetaltier4", "count" : 5 },
+    { "item" : "akkimariprocessor", "count" : 1 },
+    { "item" : "scorchedcore", "count" : 1 }
+  ],
+  "output" : { "item" : "akkimaricoldprotection", "count" : 1 },
+  "groups" : [ "akkimariinventor3", "hazardgear", "all" ]
+}

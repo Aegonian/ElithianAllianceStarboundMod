@@ -1,6 +1,7 @@
 {
   "input" : [
-    { "item" : "akkimarimetaltier4", "count" : 4 },
+    { "item" : "akkimarimetaltier4", "count" : 2 },
+	{ "item" : "akkimarigunparts", "count" : 2 },
     { "item" : "akkimaricircuitry", "count" : 2 },
 	{ "item" : "akkimariacid", "count" : 5}
   ],

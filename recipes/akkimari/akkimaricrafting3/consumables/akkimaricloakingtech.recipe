@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "akkimarimetaltier6", "count" : 2 },
+	{ "item" : "akkimariprocessor", "count" : 1 }
+  ],
+  "output" : { "item" : "akkimaricloakingtech", "count" : 1 },
+  "groups" : [ "akkimaricrafting3", "consumables", "all" ]
+}

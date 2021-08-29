@@ -1,6 +1,7 @@
 {
   "input" : [
-    { "item" : "akkimarimetaltier3", "count" : 9 },
+    { "item" : "akkimarimetaltier3", "count" : 3 },
+	{ "item" : "akkimarigunparts", "count" : 2 },
     { "item" : "akkimaricircuitry", "count" : 2 }
   ],
   "output" : { "item" : "akkimari-spikecannon", "count" : 1 },

@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "akkimarimetaltier6", "count" : 6 },
+    { "item" : "akkimariacid", "count" : 4 }
+  ],
+  "output" : {
+    "item" : "akkimariupgradekit6",
+    "count" : 1
+  },
+  "groups" : [ "akkimarifurnace3", "upgradekits", "all" ]
+}

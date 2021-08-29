@@ -1,6 +1,7 @@
 {
   "input" : [
     { "item" : "akkimarimetaltier4", "count" : 3 },
+	{ "item" : "akkimaribladeparts", "count" : 2 },
     { "item" : "akkimaricircuitry", "count" : 1 }
   ],
   "output" : { "item" : "akkimari-tier4shortsword", "count" : 1 },

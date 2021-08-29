@@ -1,6 +1,6 @@
 {
   "input" : [
-    { "item" : "akkimarimetaltier6", "count" : 6 }
+    { "item" : "akkimarimetaltier6", "count" : 5 }
   ],
   "output" : { "item" : "akkimarishield", "count" : 1 },
   "groups" : [ "akkimaricrafting3", "weapons", "all" ]
