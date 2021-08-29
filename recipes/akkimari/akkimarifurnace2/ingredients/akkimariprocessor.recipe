@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "akkimaricircuitry", "count" : 2 },
+    { "item" : "akkimarimetaltier4", "count" : 3 },
+    { "item" : "connectorstrip", "count" : 2 }
+  ],
+  "output" : {
+    "item" : "akkimariprocessor",
+    "count" : 1
+  },
+  "duration" : 0.15,
+  "groups" : [ "akkimarifurnace2", "ingredients", "all" ]
+}

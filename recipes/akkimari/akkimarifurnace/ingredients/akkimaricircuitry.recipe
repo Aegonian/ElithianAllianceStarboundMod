@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "sand2", "count" : 5 },
+    { "item" : "coalore", "count" : 2 },
+    { "item" : "connectorstrip", "count" : 2 }
+  ],
+  "output" : {
+    "item" : "akkimaricircuitry",
+    "count" : 1
+  },
+  "duration" : 0.15,
+  "groups" : [ "akkimarifurnace", "ingredients", "all" ]
+}

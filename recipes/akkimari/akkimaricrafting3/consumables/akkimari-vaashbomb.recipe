@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "akkimarimetaltier3", "count" : 3 },
+	{ "item" : "akkimariacid", "count" : 3 }
+  ],
+  "output" : { "item" : "akkimari-vaashbomb", "count" : 3 },
+  "groups" : [ "akkimaricrafting3", "consumables", "all" ]
+}

@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "akkimarimetaltier5", "count" : 4 },
+	{ "item" : "akkimaricoreenergetic", "count" : 1 },
+    { "item" : "akkimaricircuitry", "count" : 1 }
+  ],
+  "duration" : 5,
+  "output" : { "item" : "akkimari-tier5alegs", "count" : 1 },
+  "groups" : [ "akkimaricrafting3", "armours", "all" ]
+}

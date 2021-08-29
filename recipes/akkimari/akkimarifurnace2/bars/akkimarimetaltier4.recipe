@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "durasteelore", "count" : 2 }
+  ],
+  "output" : {
+    "item" : "akkimarimetaltier4",
+    "count" : 1
+  },
+  "duration" : 0.15,
+  "groups" : [ "akkimarifurnace2", "ingredients", "all" ]
+}

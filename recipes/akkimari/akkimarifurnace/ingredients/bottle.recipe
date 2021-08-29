@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "akkimariglassitem", "count" : 2 }
+  ],
+  "output" : {
+    "item" : "bottle",
+    "count" : 1
+  },
+  "groups" : [ "akkimarifurnace", "ingredients", "all" ]
+}

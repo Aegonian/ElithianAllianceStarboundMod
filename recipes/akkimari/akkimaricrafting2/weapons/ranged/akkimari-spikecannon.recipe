@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "akkimarimetaltier3", "count" : 9 },
+    { "item" : "akkimaricircuitry", "count" : 2 }
+  ],
+  "output" : { "item" : "akkimari-spikecannon", "count" : 1 },
+  "groups" : [ "akkimaricrafting2", "weapons", "all" ]
+}
