@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "akkimarimetal", "count" : 2 },
+    { "item" : "akkimaricircuitry", "count" : 1 },
+    { "item" : "akkimariglassitem", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "akkimarismallconsole",
+    "count" : 1
+  },
+  "groups" : [ "akkimaricrafting", "furniture", "all" ]
+}
