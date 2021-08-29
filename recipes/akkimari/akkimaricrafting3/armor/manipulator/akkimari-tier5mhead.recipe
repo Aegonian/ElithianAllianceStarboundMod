@@ -1,6 +1,8 @@
 {
   "input" : [
-    { "item" : "akkimarimetaltier5", "count" : 6 }
+    { "item" : "akkimarimetaltier5", "count" : 6 },
+	{ "item" : "akkimaricorepowerful", "count" : 1 },
+    { "item" : "akkimariglassitem", "count" : 3 }
   ],
   "duration" : 5,
   "output" : { "item" : "akkimari-tier5mhead", "count" : 1 },

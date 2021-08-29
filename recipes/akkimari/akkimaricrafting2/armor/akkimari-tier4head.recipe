@@ -1,6 +1,8 @@
 {
   "input" : [
-	{ "item" : "akkimarimetaltier4", "count" : 6 }
+	{ "item" : "akkimarimetaltier4", "count" : 6 },
+	{ "item" : "akkimariprocessor", "count" : 1 },
+    { "item" : "akkimariglassitem", "count" : 2 }
   ],
   "duration" : 5,
   "output" : { "item" : "akkimari-tier4head", "count" : 1 },

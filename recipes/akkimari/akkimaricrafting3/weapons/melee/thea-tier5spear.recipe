@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "akkimarimetaltier5", "count" : 6 },
+    { "item" : "akkimaricircuitry", "count" : 2 }
+  ],
+  "output" : { "item" : "akkimari-tier5spear", "count" : 1 },
+  "groups" : [ "akkimaricrafting3", "weapons", "all" ]
+}
