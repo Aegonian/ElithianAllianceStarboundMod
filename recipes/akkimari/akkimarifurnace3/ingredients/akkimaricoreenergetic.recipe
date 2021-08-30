@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "akkimarimetaltier5", "count" : 1 },
+	{ "item" : "aegisaltore", "count" : 10 }
+  ],
+  "output" : {
+    "item" : "akkimaricoreenergetic",
+    "count" : 1
+  },
+  "duration" : 0.15,
+  "groups" : [ "akkimarifurnace3", "ingredients", "all" ]
+}

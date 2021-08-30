@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "akkimariinventor", "count" : 1 },
+    { "item" : "akkimariprocessor", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "akkimariweaponimprovement",
+    "count" : 1
+  },
+  "duration" : 5,
+  "groups" : [ "akkimariinventor2", "craftingstations", "all" ]
+}

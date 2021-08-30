@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "ferroveriumore", "count" : 2 },
+	{ "item" : "solariumore", "count" : 2 }
+  ],
+  "output" : {
+    "item" : "akkimarimetaltier6",
+    "count" : 1
+  },
+  "duration" : 0.15,
+  "groups" : [ "akkimarifurnace3", "bars", "all" ]
+}

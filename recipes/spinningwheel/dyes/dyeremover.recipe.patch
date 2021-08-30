@@ -12,6 +12,11 @@
   {
     "op": "add",
     "path": "/groups/-",
+    "value": "akkimarifurnace"
+  },
+  {
+    "op": "add",
+    "path": "/groups/-",
     "value": "trinkcrafting"
   }
 ]

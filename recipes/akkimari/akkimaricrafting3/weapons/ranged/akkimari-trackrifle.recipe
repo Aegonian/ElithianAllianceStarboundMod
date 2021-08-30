@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "akkimarimetaltier5", "count" : 4 },
+	{ "item" : "akkimarigunparts", "count" : 2 },
+    { "item" : "akkimaricircuitry", "count" : 3 },
+	{ "item" : "akkimariacid", "count" : 8 }
+  ],
+  "output" : { "item" : "akkimari-trackrifle", "count" : 1 },
+  "groups" : [ "akkimaricrafting3", "weapons", "all" ]
+}

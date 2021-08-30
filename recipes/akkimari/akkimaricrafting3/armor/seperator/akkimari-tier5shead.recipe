@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "akkimarimetaltier5", "count" : 1 },
+	{ "item" : "akkimaricorevigorous", "count" : 1 },
+	{ "item" : "akkimaricircuitry", "count" : 3 },
+    { "item" : "akkimariglassitem", "count" : 2 }
+  ],
+  "duration" : 5,
+  "output" : { "item" : "akkimari-tier5shead", "count" : 1 },
+  "groups" : [ "akkimaricrafting3", "armours", "all" ]
+}

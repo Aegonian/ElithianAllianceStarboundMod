@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "akkimarimetaltier2", "count" : 1 }
+  ],
+  "output" : { "item" : "akkimari-nailbomb", "count" : 3 },
+  "groups" : [ "akkimaricrafting2", "consumables", "all" ]
+}

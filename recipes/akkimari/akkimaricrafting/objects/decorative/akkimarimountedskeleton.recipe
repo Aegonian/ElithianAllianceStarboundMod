@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "logblock", "count" : 1 },
+	{ "item" : "bone", "count" : 10 }
+  ],
+  "output" : {
+    "item" : "akkimarimountedskeleton",
+    "count" : 1
+  },
+  "groups" : [ "akkimaricrafting", "furniture", "all" ]
+}

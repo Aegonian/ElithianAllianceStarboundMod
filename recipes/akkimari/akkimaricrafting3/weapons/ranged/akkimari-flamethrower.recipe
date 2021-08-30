@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "akkimarimetaltier6", "count" : 6 },
+	{ "item" : "akkimarigunparts", "count" : 3 },
+    { "item" : "akkimariprocessor", "count" : 1 },
+	{ "item" : "liquidoil", "count" : 15 }
+  ],
+  "output" : { "item" : "akkimari-flamethrower", "count" : 1 },
+  "groups" : [ "akkimaricrafting3", "weapons", "all" ]
+}

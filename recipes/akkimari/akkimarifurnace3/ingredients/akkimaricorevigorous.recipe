@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "akkimarimetaltier5", "count" : 1 },
+	{ "item" : "violiumore", "count" : 10 }
+  ],
+  "output" : {
+    "item" : "akkimaricorevigorous",
+    "count" : 1
+  },
+  "duration" : 0.15,
+  "groups" : [ "akkimarifurnace3", "ingredients", "all" ]
+}

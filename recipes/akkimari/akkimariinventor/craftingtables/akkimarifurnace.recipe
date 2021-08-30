@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "cobblestonematerial", "count" : 20 },
+    { "item" : "mud", "count" : 4 },
+    { "item" : "campfire", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "akkimarifurnace",
+    "count" : 1
+  },
+  "duration" : 5,
+  "groups" : [ "akkimariinventor", "craftingstations", "all" ]
+}

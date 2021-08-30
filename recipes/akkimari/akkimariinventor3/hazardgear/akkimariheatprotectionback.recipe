@@ -1,0 +1,10 @@
+{
+  "input" : [
+    { "item" : "akkimaricoldprotection", "count" : 1 },
+    { "item" : "akkimarimetaltier5", "count" : 5 },
+    { "item" : "akkimariprocessor", "count" : 1 },
+    { "item" : "cryonicextract", "count" : 1 }
+  ],
+  "output" : { "item" : "akkimariheatprotection", "count" : 1 },
+  "groups" : [ "akkimariinventor3", "hazardgear", "all" ]
+}

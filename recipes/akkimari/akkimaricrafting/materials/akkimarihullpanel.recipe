@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "akkimarimetal", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "akkimarihullpanel",
+    "count" : 20
+  },
+  "duration" : 0.5,
+  "groups"  : [ "akkimaricrafting", "materials", "all" ]
+}
