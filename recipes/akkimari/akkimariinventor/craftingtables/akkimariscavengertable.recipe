@@ -1,6 +1,7 @@
 {
   "input" : [
     { "item" : "akkimariinventor", "count" : 1 },
+	{ "item" : "akkimarimetal", "count" : 2 },
 	{ "item" : "akkimaricircuitry", "count" : 1 }
   ],
   "output" : {
