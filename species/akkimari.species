@@ -158,6 +158,7 @@
 // Akkimari Furnace 1
 	//Ingredients
 		{ "item" : "akkimaricircuitry" },
+		{ "item" : "connectorstrip" },
 		{ "item" : "akkimariglassitem" },
 		{ "item" : "akkimariupgradekit2" },
 	  
