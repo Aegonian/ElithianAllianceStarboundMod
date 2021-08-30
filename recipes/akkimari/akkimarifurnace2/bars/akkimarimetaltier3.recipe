@@ -1,11 +1,11 @@
 {
   "input" : [
-    { "item" : "titaniumore", "count" : 2 }
+    { "item" : "titaniumore", "count" : 4 }
   ],
   "output" : {
     "item" : "akkimarimetaltier3",
     "count" : 1
   },
   "duration" : 0.15,
-  "groups" : [ "akkimarifurnace2", "ingredients", "all" ]
+  "groups" : [ "akkimarifurnace2", "bars", "all" ]
 }
