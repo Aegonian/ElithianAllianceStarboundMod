@@ -1,8 +1,8 @@
 {
   "input" : [
-    { "item" : "akkimarimetaltier6", "count" : 4 },
-	{ "item" : "akkimarigunparts", "count" : 2 },
-    { "item" : "akkimaricircuitry", "count" : 1 },
+    { "item" : "akkimarimetaltier6", "count" : 5 },
+	{ "item" : "akkimarigunparts", "count" : 3 },
+    { "item" : "akkimariprocessor", "count" : 1 },
 	{ "item" : "akkimariacid", "count" : 10 }
   ],
   "output" : { "item" : "akkimari-driftrifle", "count" : 1 },

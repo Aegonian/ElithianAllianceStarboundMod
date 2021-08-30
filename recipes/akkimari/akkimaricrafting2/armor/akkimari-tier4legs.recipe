@@ -1,7 +1,7 @@
 {
   "input" : [
-	{ "item" : "akkimarimetaltier4", "count" : 4 },
-	{ "item" : "akkimariprocessor", "count" : 1 },
+	{ "item" : "akkimarimetaltier4", "count" : 2 },
+	{ "item" : "akkimaricircuitry", "count" : 2 },
     { "item" : "akkimarisilk", "count" : 1 }
   ],
   "duration" : 5,

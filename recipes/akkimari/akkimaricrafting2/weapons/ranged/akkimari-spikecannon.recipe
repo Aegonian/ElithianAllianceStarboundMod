@@ -2,7 +2,7 @@
   "input" : [
     { "item" : "akkimarimetaltier3", "count" : 3 },
 	{ "item" : "akkimarigunparts", "count" : 2 },
-    { "item" : "akkimaricircuitry", "count" : 2 }
+    { "item" : "akkimaricircuitry", "count" : 1 }
   ],
   "output" : { "item" : "akkimari-spikecannon", "count" : 1 },
   "groups" : [ "akkimaricrafting2", "weapons", "all" ]

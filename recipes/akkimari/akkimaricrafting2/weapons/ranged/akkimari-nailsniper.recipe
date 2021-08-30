@@ -1,8 +1,8 @@
 {
   "input" : [
-    { "item" : "akkimarimetaltier3", "count" : 4 },
+    { "item" : "akkimarimetaltier3", "count" : 5 },
 	{ "item" : "akkimarigunparts", "count" : 2 },
-    { "item" : "akkimaricircuitry", "count" : 2 },
+    { "item" : "akkimaricircuitry", "count" : 1 },
 	{ "item" : "akkimariglassitem", "count" : 1 }
   ],
   "output" : { "item" : "akkimari-nailsniper", "count" : 1 },

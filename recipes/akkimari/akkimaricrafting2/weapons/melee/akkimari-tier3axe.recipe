@@ -1,6 +1,6 @@
 {
   "input" : [
-    { "item" : "akkimarimetaltier3", "count" : 3 },
+    { "item" : "akkimarimetaltier3", "count" : 4 },
 	{ "item" : "akkimaribladeparts", "count" : 2 }
   ],
   "output" : { "item" : "akkimari-tier3axe", "count" : 1 },

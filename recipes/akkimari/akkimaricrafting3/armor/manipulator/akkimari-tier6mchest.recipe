@@ -1,7 +1,7 @@
 {
   "input" : [
-    { "item" : "akkimari-tier5achest", "count" : 1 },
-	{ "item" : "akkimarimetaltier6", "count" : 10 },
+    { "item" : "akkimari-tier5mchest", "count" : 1 },
+	{ "item" : "akkimarimetaltier6", "count" : 3 },
 	{ "item" : "akkimariprocessor", "count" : 1 }
   ],
   "duration" : 5,

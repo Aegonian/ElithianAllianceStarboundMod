@@ -1,6 +1,6 @@
 {
   "input" : [
-    { "item" : "akkimaricrafting", "count" : 1 },
+    { "item" : "akkimariinventor", "count" : 1 },
 	{ "item" : "akkimaricircuitry", "count" : 1 }
   ],
   "output" : {
@@ -8,5 +8,5 @@
     "count" : 1
   },
   "duration" : 5,
-  "groups" : [ "akkimariinventor2", "craftingstations", "all" ]
+  "groups" : [ "akkimariinventor", "craftingstations", "all" ]
 }
