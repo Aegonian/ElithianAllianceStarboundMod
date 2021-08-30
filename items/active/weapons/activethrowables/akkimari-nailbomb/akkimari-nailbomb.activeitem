@@ -7,7 +7,7 @@
   "shortdescription" : "Makeshift Nailbomb",
   "level" : 1,
   "tooltipKind" : "thea-activethrowable",
-  "category" : "Throwable",
+  "category" : "throwableItem",
   "itemTags" : ["throwableweapon","akkimari"],
   "twoHanded" : false,
 
