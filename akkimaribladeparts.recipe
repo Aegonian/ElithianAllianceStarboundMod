@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "akkimarimetal", "count" : 2 }
+  ],
+  "output" : {
+    "item" : "akkimaribladeparts",
+    "count" : 1
+  },
+  "duration" : 0.15,
+  "groups" : [ "akkimarifurnace", "ingredients", "all" ]
+}
