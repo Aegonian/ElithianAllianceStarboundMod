@@ -156,6 +156,9 @@
 	  { "item" : "akkimari-tier6slegs" },
 	  
 // Akkimari Furnace 1
+	//Bars
+		{ "item" : "akkimarimetal" },
+		{ "item" : "akkimarimetaltier2" },
 	//Ingredients
 		{ "item" : "akkimaricircuitry" },
 		{ "item" : "connectorstrip" },
@@ -163,12 +166,18 @@
 		{ "item" : "akkimariupgradekit2" },
 	  
 // Akkimari Furnace 2
+	//Bars
+		{ "item" : "akkimarimetaltier3" },
+		{ "item" : "akkimarimetaltier4" },
 	//Ingredients
 		{ "item" : "akkimariprocessor" },
 		{ "item" : "akkimariupgradekit3" },
 		{ "item" : "akkimariupgradekit4" },
 		
 // Akkimari Furnace 3
+	//Bars
+		{ "item" : "akkimarimetaltier5" },
+		{ "item" : "akkimarimetaltier6" },
 	//Ingredients
 		{ "item" : "akkimaricoreenergetic" },
 		{ "item" : "akkimaricorepowerful" },
