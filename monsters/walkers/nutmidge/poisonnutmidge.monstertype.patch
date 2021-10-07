@@ -1,0 +1,9 @@
+[
+	{
+		"op": "add",
+		"path" : "/baseParameters/statusSettings/stats/xanafianStatusImmunity",
+		"value": {
+          "baseValue" : 1.0
+        }
+	}
+]

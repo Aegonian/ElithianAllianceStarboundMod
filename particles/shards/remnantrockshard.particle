@@ -1,0 +1,23 @@
+{
+  "kind" : "remnantrockshard",
+  "definition" : {
+    "type" : "textured",
+    "image" : "/particles/shards/images/remnantrockshard.png",
+    "initialVelocity" : [0.0, 15.0],
+    "finalVelocity" : [0.0, -60.0],
+    "approach" : [0.3, 60],
+    "timeToLive" : 1.0,
+    "layer" : "middle",
+    "collidesForeground" : true,
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.5,
+    "variance" : {
+      "position" : [1, 1],
+	  "timeToLive" : 0.5,
+      "initialVelocity" : [16, 5],
+      "finalVelocity" : [0, 20],
+      "rotation" : 180,
+      "angularVelocity" : 180
+    }
+  }
+}

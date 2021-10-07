@@ -19,7 +19,7 @@
 
   "aegiDescription" : "This tapestry shows the emblem of the Vanguard, the Avikian military fleet.",
   "avikanDescription" : "This tapestry shows the emblem of our grand military fleet, the Vanguard.",
-  "erixianDescription" : "This tapestry shows the emblem of the Vanguard, the Avikian military fleet.",
+  "draunaarDescription" : "This tapestry shows the emblem of the Vanguard, the Avikian military fleet.",
   "trinkDescription" : "This tapestry shows the emblem of the Vanguard, the Avikian military fleet.",
   "hymidDescription" : "This tapestry shows the emblem of the Vanguard, the Avikian military fleet.",
   "notixDescription" : "This tapestry shows the emblem of the Vanguard, the Avikian military fleet.",
@@ -28,6 +28,7 @@
   "dremetonDescription" : "This tapestry shows the emblem of the Vanguard, the Avikian military fleet.",
   "hyvonDescription" : "This tapestry shows the emblem of the Vanguard, the Avikian military fleet.",
   "drodenDescription" : "Detected Vanguard emblem.",
+  "akkimariDescription" : "Tapestry with symbol. Symbol for Vanguard.",
   
   "inventoryIcon" : "avikantapestryvanguardicon.png",
   "orientations" : [

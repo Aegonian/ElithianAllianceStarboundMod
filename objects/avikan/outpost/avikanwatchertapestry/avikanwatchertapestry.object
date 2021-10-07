@@ -19,7 +19,7 @@
 
   "aegiDescription" : "This tapestry belongs to the Avikan secret service, the Watchers.",
   "avikanDescription" : "A tapestry adorned with the Watcher's Eye.",
-  "erixianDescription" : "The all-seeing eye of the Avikan Watchers.",
+  "draunaarDescription" : "The all-seeing eye of the Avikan Watchers.",
   "trinkDescription" : "A tapestry decorated in the style of the Avikan Watchers.",
   "hymidDescription" : "An all-seeing eye. A fitting symbol for a secret service.",
   "notixDescription" : "Some sort of tapestry.",
@@ -28,6 +28,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Scan completed. Watchers' wall decoration.",
+  "akkimariDescription" : "Decoration, eye-large.",
   
   "inventoryIcon" : "avikanwatchertapestryicon.png",
   "orientations" : [

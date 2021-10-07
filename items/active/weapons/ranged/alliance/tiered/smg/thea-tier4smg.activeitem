@@ -4,11 +4,11 @@
   "inventoryIcon" : "thea-tier4smg.png",
   "maxStack" : 1,
   "rarity" : "Uncommon",
-  "description" : "A standard-issue Alliance SMG.",
+  "description" : "^gray;A standard-issue Alliance SMG.",
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Zuvi G-5",
   "level" : 4,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Submachinegun",
   "itemTags" : ["weapon","ranged","smg","alliance","aae","allianceUpgradeable"],
   "twoHanded" : false,
@@ -28,6 +28,11 @@
 		  }
 		}
       }
+    },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [0, 52, 90]
+	  }
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/thea_plasmagun1.ogg" ]

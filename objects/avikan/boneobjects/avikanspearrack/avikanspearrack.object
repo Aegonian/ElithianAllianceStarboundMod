@@ -18,7 +18,7 @@
 
   "aegiDescription" : "These bone spears are unusually sharp and strong.",
   "avikanDescription" : "Traditional bone spears from home. Stronger than many metal spears.",
-  "erixianDescription" : "Strong bone spears. Fascinating craftsmanship.",
+  "draunaarDescription" : "Strong bone spears. Fascinating craftsmanship.",
   "trinkDescription" : "A collection of bone spears.",
   "hymidDescription" : "Hymidian craftsmanship is more advanced, but these bone spears still manage to impress.",
   "notixDescription" : "A number of bone spears.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Analysis complete. Detected Sandstalker bone.",
+  "akkimariDescription" : "Spears-bone, for hunting.",
 
   "inventoryIcon" : "avikanspearrackicon.png",
   "orientations" : [

@@ -168,14 +168,18 @@
       "emissionRate" : 9.0,
       "transformationGroups" : ["muzzle"],
       "offsetRegion" : [-0.1, 0, -2.0, 0],
-      "particles" : [ ]
+      "particles" : [ 
+        { "particle" : "lineriflecharge"}
+      ]
     },
 	"chargeparticlesAlt" : {
 	  "active" : false,
       "emissionRate" : 9.0,
       "transformationGroups" : ["muzzle"],
       "offsetRegion" : [-0.1, 0, -2.0, 0],
-      "particles" : [ ]
+      "particles" : [ 
+        { "particle" : "lineriflecharge"}
+      ]
     },
     "beamCollision" : {
       "active" : false,

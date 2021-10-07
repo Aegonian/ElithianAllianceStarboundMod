@@ -4,12 +4,13 @@
   "level" : 6,
   "maxStack" : 1,
   "rarity" : "legendary",
-  "description" : "An electric prod issued to Vanguard peacekeepers.",
+  "description" : "^gray;An electric prod issued to Vanguard peacekeepers.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Vanguard Prod",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "Electric Prod",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","prod"],
+  "itemTags" : ["weapon","melee","prod","vanguard"],
 
   "inventoryIcon" : "avikanprod.png",
 
@@ -91,5 +92,5 @@
     }
   },
   
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

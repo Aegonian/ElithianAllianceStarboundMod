@@ -19,7 +19,7 @@
   
   "aegiDescription" : "A hatch for inserting FTL fuel. Handy.",  
   "avikanDescription" : "This hatch is connected to the ship's main FTL fuel container.",
-  "erixianDescription" : "Let's refuel the ship and get back to exploring!",
+  "draunaarDescription" : "Let's refuel the ship and get back to exploring!",
   "trinkDescription" : "This hatch grants access to the ship's supply of FTL fuel.",
   "hymidDescription" : "Fuelfor the FTL drive goes in here.",
   "notixDescription" : "This shipis going to need some FTL fuel if we're to go anywhere beyond this system.",
@@ -28,6 +28,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "FTL fuel hatch detected. Please refuel.",
+  "akkimariDescription" : "Akki put in fuel, shipfly farther.",
 
   "inventoryIcon" : "fuelhatchicon.png",
   "orientations" : [

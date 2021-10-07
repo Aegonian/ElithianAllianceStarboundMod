@@ -8,6 +8,13 @@
   "category" : "Crafting Guide",
   "learnBlueprintsOnPickup" : [
 	
+//New in v2.3.12
+	  "avikanstandingtorch",
+	  "avikanscrollrack",
+	  "avikanscrollcabinet",
+	  "avikanlitterbox",
+	  "avikanoutpostdoor",
+	
 //New in v2.3.10
 	  "avikansecuritycamera",
 	
@@ -101,7 +108,7 @@
 	  "droden-sniperrifle",
 	  "avikanturret",
 	  "avikanmissileturret",
-	  "avikanshieldgenerator",
+	  "avikanshieldgenerator-player",
 	  "avikanalarm",
 	  "avikanmedcabinet",
 	  "avikankeypad",

@@ -11,6 +11,7 @@
   "novakidDescription" : "A metal panel, plain an' simple.",
   
   "drodenDescription" : "Analysis complete. Metal plating.",
+  "akkimariDescription" : "Panel-metal. Akki no find it interesting.",
 
   "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
   "health" : 8,
@@ -22,7 +23,7 @@
     "variants" : 4,
     "lightTransparent" : false,
     "occludesBelow" : true,
-    "multiColored" : false,
+    "multiColored" : true,
     "zLevel" : 110
   }
 }

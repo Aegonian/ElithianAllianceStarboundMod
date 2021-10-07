@@ -5,12 +5,13 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "^orange;An old Vaash rifle that has avenged many lives.",
+  "manufacturer" : "^gray;Rashakr^reset;",
   "shortdescription" : "^orange;Vengeance^white;",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-ammogun-unique",
+  "tooltipKind" : "thea-ammogun-mf-unique",
   "category" : "Click Rifle",
-  "itemTags" : ["weapon","ranged","sniperrifle","akkimari","theaUnique"],
+  "itemTags" : ["weapon","ranged","sniperrifle","akkimari","rashakr","theaUnique"],
   "twoHanded" : true,
   
   //CONFIGURATION FOR WEAPONS COLLECTION

@@ -16,11 +16,11 @@
   "floranDescription" : "Floran seesss big roof. Floran wonderss why roof iss so big.",
   "glitchDescription" : "Fascinated. This modular roof piece is packed with sensors.",
   "humanDescription" : "A large metal pyramid for a roof? Cool!",
-  "hylotlDescription" : "A grand metal roof. Surpisingly, it is packed with sensors and communication systems.",
+  "hylotlDescription" : "A grand metal roof. Surprisingly, it is packed with sensors and communication systems.",
 
   "aegiDescription" : "The Trinks are big fans of modular buildings. This roof will fit on pretty much every Trinkian home.",
   "avikanDescription" : "A large metal roof, built by machines.",
-  "erixianDescription" : "A large modular roof.",
+  "draunaarDescription" : "A large modular roof.",
   "trinkDescription" : "Trinkian roofs are modular, and fit on top of almost any Trinkian structure.",
   "hymidDescription" : "A large metal roof, built by the Notician robots.",
   "notixDescription" : "Our Trinks are excellent at building modular structures.",
@@ -29,7 +29,7 @@
   "dremetonDescription" : "TODO",
   "hyvonDescription" : "TODO",
   "drodenDescription" : "Readings indicate high amounts of sensors inside this structure.",
-
+  "akkimariDescription" : "Roof-pointy, like pyramid.",
 
   "inventoryIcon" : "trinkrooficon.png",
   "orientations" : [

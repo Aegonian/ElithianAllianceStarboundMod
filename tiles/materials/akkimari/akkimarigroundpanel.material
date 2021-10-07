@@ -11,7 +11,7 @@
   "novakidDescription" : "A metal floorboard... I prefer the sound of boots on wood.",
   
   "drodenDescription" : "Analysis complete. Metal floorboard.",
-  "akkimariDescription" : "Metal panels for floor.",
+  "akkimariDescription" : "Panels-metal for floor.",
 
   "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
   "health" : 8,
@@ -23,7 +23,7 @@
     "variants" : 4,
     "lightTransparent" : false,
     "occludesBelow" : true,
-    "multiColored" : false,
+    "multiColored" : true,
     "zLevel" : 80
   }
 }

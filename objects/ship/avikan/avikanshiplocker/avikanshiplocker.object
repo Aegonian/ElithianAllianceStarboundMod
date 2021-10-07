@@ -24,7 +24,7 @@
 
   "aegiDescription" : "A ship locker. Useful for storing items.",  
   "avikanDescription" : "A ship locker. Useful for storing artefacts found on scout runs.",
-  "erixianDescription" : "This ship locker can store a lot of items.",
+  "draunaarDescription" : "This ship locker can store a lot of items.",
   "trinkDescription" : "A ship locker. It can't be locked, ironically.",
   "hymidDescription" : "I am curious what this locked might contain.",
   "notixDescription" : "A sizeable ship locker.",
@@ -33,6 +33,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Detected ship locker. Content scan failed.",
+  "akkimariDescription" : "Akki open locker, steal everything!",
 
   "inventoryIcon" : "shiplockericon.png",
   "orientations" : [

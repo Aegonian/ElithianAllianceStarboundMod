@@ -1,0 +1,19 @@
+{
+  "projectileName" : "ancientcursesplinterexplosion",
+  "image" : "ancientcursesplinterexplosion.png",
+  "animationCycle" : 0.2,
+  "frameNumber" : 6,
+  "speed" : 0,
+  "lightColor" : [69, 112, 0],
+  "pointLight" : true,
+  "damagePoly" : [ [-37, 0], [-28, -28], [0, -37], [28, -28], [37, 0], [28, 28], [0, 37], [-28, 28] ],
+  "animationLoops" : false,
+  "piercing" : true,
+  "bounces" : -1,
+  "flippable" : true,
+  "statusEffects" : [
+    "ancientcurse"
+  ],
+  "damageKind" : "ancientcurse",
+  "knockback" : 0
+}

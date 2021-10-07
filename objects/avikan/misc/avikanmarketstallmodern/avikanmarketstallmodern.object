@@ -19,7 +19,7 @@
 
   "aegiDescription" : "An assortment of Avikan technology.",
   "avikanDescription" : "Whoever owns this stall sells Drahls, Droden and other tech.",
-  "erixianDescription" : "Avikan technology. I see drones, droids, lights...",
+  "draunaarDescription" : "Avikan technology. I see drones, droids, lights...",
   "trinkDescription" : "Despite their anti-AI culture, the Avikan use drones and other robots extensively.",
   "hymidDescription" : "A collection of Avikan drones, lights and other tech.",
   "notixDescription" : "These drones are advanced, but don't even come close to the Trinks.",
@@ -28,6 +28,7 @@
   "dremetonDescription" : "TODO",
   "hyvonDescription" : "TODO",
   "drodenDescription" : "Detected market stall. Scanning for nearby merchants...",
+  "akkimariDescription" : "Akki steal drones-alien here. Not buy.",
 
   "inventoryIcon" : "avikanmarketstallmodernicon.png",
   "orientations" : [

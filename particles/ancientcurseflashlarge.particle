@@ -1,0 +1,22 @@
+{
+  "kind" : "ancientcurseflashlarge",
+  "definition" : {
+    "type" : "textured",
+    "image" : "/animations/ancientcurseflash/ancientcurseflash.png",
+    "fade" : 1.0,
+    "destructionAction" : "fade",
+    "destructionTime" : 1.5,
+    "initialVelocity" : [0, 0],
+    "finalVelocity" : [0, 0],
+    "approach" : [0, 0],
+    "timeToLive" : 0.125,
+    "size" : 4.0,
+    "layer" : "front",
+    "variance" : {
+	  "size" : 0.25,
+      "rotation" : 180,
+      "angularVelocity" : 10
+    },
+	"collidesLiquid" : false
+  }
+}

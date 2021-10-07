@@ -21,7 +21,7 @@
 
   "aegiDescription" : "A Thelean Va'rahk. Officially a scouting ship, but it can easily tear through a Destroyer...",
   "avikanDescription" : "It's a Thell ship. This does not bode well...",
-  "erixianDescription" : "Even Thelean scouting vessels are built for combat...",
+  "draunaarDescription" : "Even Thelean scouting vessels are built for combat...",
   "trinkDescription" : "If only we understood how these Thelean ships function, we might be able to devise an efficient countermeasure.",
   "hymidDescription" : "It's a Thelean ship. This won't end well...",
   "notixDescription" : "Even the sound these Thelean ships make is unsettling...",
@@ -30,6 +30,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Warning: Detected Thelean ship. Recommending extreme caution.",
+  "akkimariDescription" : "God-thieves here, Akki careful. Sneak up, kill them all.",
 
   "inventoryIcon" : "theleanscoutshipicon.png",
   "orientations" : [

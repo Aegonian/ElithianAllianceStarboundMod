@@ -18,7 +18,7 @@
 
   "aegiDescription" : "A tent awning, made of colourful fabric.",
   "avikanDescription" : "Made of fabric, this sort of awning is often used in the tents of our Elders.",
-  "erixianDescription" : "A fabric tent awning. Colourful, but not too sturdy.",
+  "draunaarDescription" : "A fabric tent awning. Colourful, but not too sturdy.",
   "trinkDescription" : "A tent awning made of fabric. It features vivid colours.",
   "hymidDescription" : "Functional and nice to look at both, this awning will come in handy in the open desert.",
   "notixDescription" : "A fabric tent awning.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Fabric awning. Provides protection against desert winds.",
+  "akkimariDescription" : "Awning for tent, Akki go inside.",
 
   "inventoryIcon" : "avikanentry2icon.png",
   "orientations" : [

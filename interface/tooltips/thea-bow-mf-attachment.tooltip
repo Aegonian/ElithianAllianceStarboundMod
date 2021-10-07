@@ -2,9 +2,22 @@
   "background" : {
     "type" : "background",
     "fileHeader" : "/interface/tooltips/header.png",
-    "fileBody" : "/interface/tooltips/bodyobjectthea.png",
-    "fileFooter" : "/interface/tooltips/theafooter.png"
+    "fileBody" : "/interface/tooltips/bodyobjectthea3.png",
+    "fileFooter" : "/interface/tooltips/theafooter3.png"
   },
+  //===================== LEVEL LABELS =====================
+  "levelTitleLabel" : {
+    "type" : "label",
+    "position" : [121, 164],
+    "hAnchor" : "right",
+    "value" : "^gray;lvl^reset;"
+  },
+  "levelLabel" : {
+    "type" : "label",
+    "position" : [131, 164],
+    "hAnchor" : "right"
+  },
+  //=================== END LEVEL LABELS ===================
   "moneyIcon" : {
     "type" : "image",
     "position" : [98, 23],
@@ -18,69 +31,78 @@
   },
   "maxDamageTitleLabel" : {
     "type" : "label",
-    "position" : [9, 78],
+    "position" : [9, 98],
     "hAnchor" : "left",
     "value" : "Base Max Damage:"
   },
   "maxDamageLabel" : {
     "type" : "label",
-    "position" : [130, 78],
+    "position" : [130, 98],
     "hAnchor" : "right",
     "centered" : true,
     "wrapWidth" : 126
   },
   "drawTimeTitleLabel" : {
     "type" : "label",
-    "position" : [9, 69],
+    "position" : [9, 89],
     "hAnchor" : "left",
     "value" : "Draw Time:"
   },
   "drawTimeLabel" : {
     "type" : "label",
-    "position" : [130, 69],
+    "position" : [130, 89],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
   "energyPerShotTitleLabel" : {
     "type" : "label",
-    "position" : [9, 60],
+    "position" : [9, 80],
     "hAnchor" : "left",
     "value" : "Energy Per Shot:"
   },
   "energyPerShotLabel" : {
     "type" : "label",
-    "position" : [130, 60],
+    "position" : [130, 80],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
   "energyPerSecondTitleLabel" : {
     "type" : "label",
-    "position" : [9, 51],
+    "position" : [9, 71],
     "hAnchor" : "left",
     "value" : "Energy To Hold:"
   },
   "energyPerSecondLabel" : {
     "type" : "label",
-    "position" : [130, 51],
+    "position" : [130, 71],
     "hAnchor" : "right",
     "wrapWidth" : 126
   },
   "altAbilityTitleLabel" : {
     "type" : "label",
-    "position" : [9, 42],
+    "position" : [9, 62],
     "hAnchor" : "left",
     "value" : ""
   },
   "altAbilityLabel" : {
     "type" : "label",
-    "position" : [130, 42],
+    "position" : [130, 62],
     "hAnchor" : "right",
     "centered" : true,
     "wrapWidth" : 126
   },
+  "descriptionLabel" : {
+    "type" : "label",
+    "position" : [9, 60],
+    "hAnchor" : "left",
+    "vAnchor" : "top",
+    "wrapWidth" : 124,
+    "lineSpacing" : 1.0,
+    "value" : "Harvests meat and other goods from monsters."
+  },
   "handednessLabel" : {
     "type" : "label",
-    "position" : [90, 144],
+    "position" : [90, 164],
     "hAnchor" : "right",
     "centered" : true,
     "wrapWidth" : 126
@@ -94,7 +116,7 @@
   },
   "damageKindImage" : {
     "type" : "image",
-    "position" : [120, 110],
+    "position" : [120, 120],
     "file" : "",
     "centered" : true,
     "maxSize" : [16, 16],
@@ -102,7 +124,7 @@
   },
   "objectImage" : {
     "type" : "image",
-    "position" : [70, 120],
+    "position" : [70, 135],
     "file" : "",
     "centered" : true,
     "maxSize" : [40, 40],
@@ -111,7 +133,7 @@
   //Custom field, Manufacturer Label
   "manufacturerLabel" : {
     "type" : "label",
-    "position" : [130, 90],
+    "position" : [130, 110],
     "hAnchor" : "right",
     "centered" : true,
     "wrapWidth" : 126
@@ -119,7 +141,7 @@
   //Custom field, Attachment Type
   "attachmentTypeImage" : {
     "type" : "image",
-    "position" : [16, 100],
+    "position" : [16, 118],
     "file" : "",
     "centered" : true,
     "maxSize" : [16, 16],

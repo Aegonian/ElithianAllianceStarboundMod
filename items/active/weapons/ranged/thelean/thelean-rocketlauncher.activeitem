@@ -4,10 +4,10 @@
   "inventoryIcon" : "thelean-rocketlauncher.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A powerful flux rifle which fires explosive, target-seeking projectiles.",
+  "description" : "^gray;A powerful flux rifle which fires explosive, target-seeking projectiles.",
   "shortdescription" : "Keth", //Translates to: Death
   "level" : 6,
-  "tooltipKind" : "thea-chargedgun",
+  "tooltipKind" : "thea-chargedgun-mf",
   "category" : "Flux Launcher",
   "itemTags" : ["weapon","ranged","rocketlauncher","thelean"],
   "twoHanded" : true,

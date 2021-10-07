@@ -1,0 +1,13 @@
+{
+  "name" : "akkimarifueltankbomb",
+  "effectConfig" : {
+    "minMaxHealth" : 5,				//Minimum target health. If the max health of the target is lower than this, the target won't explode on death
+    "healthDamageFactor" : 0.75,	//How much of the target's max health to convert into explosion damage
+    "bombConfig" : "/projectiles/akkimari/akkimarifueltankbomb/akkimarifueltankbomb.config"
+  },
+  "defaultDuration" : 0.1,
+
+  "scripts" : [
+    "thea-deathbomb.lua"
+  ]
+}

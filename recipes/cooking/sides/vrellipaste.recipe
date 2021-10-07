@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "vrellileaves", "count" : 1 }
+  ],
+  "output" : { "item" : "vrellipaste", "count" : 1 },
+  "groups" : [ "craftingfood", "sides" ],
+  "collectables" : { "cooking" : "vrellipaste" }
+}

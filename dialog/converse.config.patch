@@ -353,6 +353,20 @@
 		"Those pointy things on your head make you look like a Thell...",
 		"I heard your kind also study the Old Ones.",
 		"Would you show me this Elithia of yours sometime? It sounds beautiful."
+	  ],
+	  "akkimari" : [
+		"You look funny. You're almost as furry as an Apex!",
+		"I've heard you were invaded by the Thell as well. Is it true?",
+		"Those 'ears' of yours look like they'd only get in the way...",
+		"You have very strange ears.",
+		"You're no Thell, are you?",
+		"Your skin is unusually hard. Why did it evolve that way?",
+		"I've heard your kind have short tempers. I'm not looking for trouble.",
+		"You look cute and menacing at the same time...",
+		"You have four eyes! How odd...",
+		"I've heard your kind produce silk. Can I have some?",
+		"Is it true that your society is headed by a machine of the Old Ones?",
+		"Akris sounds like a harsh place to be born in. We have that in common."
 	  ]
     }
   },
@@ -574,7 +588,7 @@
 		"The Circuit is not in a single place. It is everywhere.",
 		"The Elithian Alliance requires more Trinkian ambassadors. I would be perfect for the position.",
 		"Are you with the Elithian Alliance?",
-		"Are you here on Alliance busniness?",
+		"Are you here on Alliance business?",
 		"The Elithian Alliance is an efficient solution for defending planetary systems.",
 		"The Federation views Notix and Trinks as equals.",
 		"Organic life can live in harmony with synthetic life. Us Trinks are a living example.",
@@ -713,6 +727,18 @@
 		"I encountered ancient Humans the other day. I thought you should know.",
 		"We don't get many visitors from the Alliance.",
 		"Could you check that loose bolt on my back?"
+	  ],
+	  "akkimari" : [
+		"Greetings, alien.",
+		"Please don't break anything here.",
+		"You look a bit like an Aegi.",
+		"What brings you here, bounty hunter? I hope there's no Theleans nearby...",
+		"I've never met one of your people before. It's a pleasure.",
+		"I've heard your people are extremely capable engineers.",
+		"You wouldn't happen to know how to fix my arm, would you?",
+		"I rarely see Akkimari around here. What brings you to my home?",
+		"Your sense of hearing is said to be incredible.",
+		"I'd love to study your people's technology. You're said to be incredibly inventive."
 	  ]
     }
   },
@@ -1188,13 +1214,13 @@
 	  ],
 	  "default" : [
 		"And who might you be?",
-		"You're a strange one, that's for sure. Oh, sorry, I meant no offense!",
+		"You're a strange one, that's for sure. Oh, sorry, I meant no offence!",
 		"Are you new here?"
 	  ],
 	  "human" : [
 		"Are you truly a human? I thought you were all extinct!",
 		"A human here on our world... What a strange and wonderful day!",
-		"Are you a human? How marvelous...",
+		"Are you a human? How marvellous...",
 		"I've heard about the tragedy on Earth. I'm so sorry.",
 		"You'll find a home here, if you want it.",
 		"You are always welcome here.",
@@ -1231,6 +1257,16 @@
 		"If you need an escape from the Avikan, you're always welcome here.",
 		"The Alliance won't treat you as cruelly as the Nomada does.",
 		"You're a Droden, right?"
+	  ],
+	  "akkimari" : [
+		"Are you an Akkimari? I've heard many tales about your people!",
+		"Anyone's welcome here! Just make sure you behave yourself, okay?",
+		"You're safe from the Theleans here. Though I've heard it might be the Theleans who have to fear you.",
+		"The Alliance welcomes everyone, my Akkimari friend.",
+		"Don't go stealing anything here.",
+		"I hope you find Kel'chis again.",
+		"I hope you win your fight against the Theleans. They've broken too many nations already.",
+		"We don't get many visitors from the Covenant here."
 	  ]
     }
   },
@@ -1323,6 +1359,225 @@
 	  "Are you human? Or Apex, maybe?",
 	  "Oh, hello there.",
 	  "Don't you ever dream of flying?"
+    ]
+  },
+  
+  
+  //===================================================================================================================================
+  // AKKIMARI DIALOGUE
+  //===================================================================================================================================
+  {
+    "op": "add",
+    "path": "/greeting/akkimari",
+    "value": {
+	  "default" : [
+		"Akki greet you.",
+		"Yala.",
+		"Yala-yala.",
+		"Come-well.",
+		"Akki greet.",
+		"Yala dakka.",
+		"Akki busy. Bugger off.",
+		"Who you are?",
+		"What you doing here?",
+		"Where you going?",
+		"You welcome here."
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/converse/akkimari",
+    "value": {
+	  "generic" : [
+		"Gah, what you want?",
+		"Akki want Kel'chis back...",
+		"Akki miss the times-old-good.",
+		"What you want, stranger?",
+		"Akki hear Kelraaki capture Thellar-more. Make Akki happy to hear.",
+		"Kelraaki will find Kel'chis. Akki sure of it.",
+		"Kelraaki also known as Hunters-Noble.",
+		"Shalakka are Makers-Truth. Nokkimari know much.",
+		"Akki impressed by Charakki, Dancers-Blade. Fight like warriors-great.",
+		"Akki belong to Naraklassa, Weavers-Noble. Akki make silk, weave things-many.",
+		"Karchaa scare even Akki. Drinkers-Blood, Nokkimari go into frenzy-blood when angry.",
+		"Faramassa make things-many, forge weapons and armour. Forgers-Gentle, Nokkimari are.",
+		"Best hunters-Akkimari are Rachaaka, Stalkers-Keen.",
+		"Weapons-Akki made by Rashakr, Slingers-Light. Nokkimari make weapons-many, expert gunsmiths.",
+		"Shasaan rival Naraklassa. Nokkimari are Drapers-Soft, weavers and spinners.",
+		"Ardaakr are tribe-small, but strong-very. Diggers-Snow survive anywhere!",
+		"Kelchaari lead Akkimari. Nokkimari are God-Keepers, closest to Kel'chis.",
+		"Akki miss home-old. Was made by Dakarakka, Shapers-Stone. Builders-best of Akkimari.",
+		"Akki see Shavaari day-other. Keepers-Shadow, hide in shadow.",
+		"Akki is Kelraaki, too. Hunt for Kel'chis, and Thellar.",
+		"Akki hear about Vhos Avha'las. Want to visit, but Akki no find it...",
+		"You visit Embassy-Creon? Akki hear things-many about it.",
+		"Where is Refuge-Starfarer's? Akki want to visit.",
+		"Thellar steal Kel'chis. Akki hunt Nokkimari down, kill all!",
+		"Thellar try to raid settlement-Akkimari day-other. Now Thellar all dead.",
+		"If Thellar come here, Akki kill Nokkimari.",
+		"Akki learn language-aliens, speak it too. Akki adapt.",
+		"Akki in love. Make Akki happy.",
+		"Akki was rejected. Make Akki sad.",
+		"Akki love music-alien. Relaxes Akki.",
+		"You make music? Akki want to hear.",
+		"Akki know trick for calm-staying. Listen to music, look at light-pulsing.",
+		"Akki abduct singer-alien day-other. Nokki make Akki feel calm.",
+		"Akki no sing, only screech. Akki want to sing...",
+		"Why you here? What business-yours?",
+		"Akki kill you if you make Akki angry.",
+		"Akki bored. Want action.",
+		"Akki need to make a dirty. Toilet where?",
+		"Akki once throw poop at Kekki. Akki laugh hard!",
+		"Akki hungry. Food you have?",
+		"Ruins-God-makers fascinate Akki. Want to find more.",
+		"Thellar look for God-makers, too. But Akki find first.",
+		"Akki hate Thellar. Nokkimari destroy Covenant, leave Akkimari in ruins.",
+		"Akki not need weapon to defend Akki.",
+		"Justicar watch over Akkimari. Justicar-good.",
+		"Akki fight Flic day-other. Akki got hurt, Vaash burns.",
+		"Akki like plants.",
+		"Akki once disturb Justicar-sleeping. Akki got burned by Vaash.",
+		"Kelraaki need Justicar. Without Justicar, Kelraaki all kill Kelraaki.",
+		"Akki once touch sword-Kelraaki. It burns.",
+		"Akki want to go hunting.",
+		"Akki have no children, but Akki want children.",
+		"Grandfather-Akki help write code-Justicar. Akki impressed.",
+		"Akki miss parents-Akki.",
+		"Akki once see creature called tortoise. Akki laugh hard-very!",
+		"Akki want back to Akris.",
+		"Akki was pirate, but Akki good now.",
+		"Akki once was traveller like you, but then Akki got shot in stomach.",
+		"You bring Akki music-alien, make Akki happy.",
+		"Akki watch show-sad day-other. Akki cried.",
+		"Akki make ship-Akki, all alone. Work-much, but not hard.",
+		"Akki make gun-spike once. Have fun shooting Nokkimari.",
+		"Where you from?",
+		"Where you going?",
+		"What bring you here?",
+		"Akki welcome you to home-Akki.",
+		"Home-Akki not away-far. You want eat something?",
+		"Akki want crew, go to space. Be Kelraaki-true.",
+		"Akki saw you sneaking around. It true-true.",
+		"Akki recycle everything. Akki care for environment.",
+		"Akki keep diary. You no read it.",
+		"Akki once watch movie-alien. Akki no get it.",
+		"Akki rejoin Kelraaki, take to stars again.",
+		"Akki try to play game-alien once. Akki die quickly...",
+		"Akki want to fly like bird. Be free.",
+		"Akkimari lose Kel'chis. Akki find again.",
+		"Kel'chis good for Akkimari. Bring stability, peace.",
+		"Akki not afraid of mists. Akki go out at night.",
+		"Akki kill thief once. Nokki stole bread-Akki.",
+		"Akki no want to talk."
+	  ],
+	  "default" : [
+		"Who you are?",
+		"Akki no know you.",
+		"Bugger off."
+	  ],
+	  "human" : [
+		"Akki know you are human.",
+		"Akki think skin-yours is soft-very...",
+		"Human talk to Akki. Why?",
+		"Akki hear about downfall-Earth. Akki sorry.",
+		"Akki no take in refugees. Bugger off.",
+		"Akki no care about your planet-home.",
+		"Akki hear tentacle destroyed planet-yours. Make Akki laugh!",
+		"Why you talk to Akki?",
+		"You lose planet-home. Akki lose Kel'chis. Lose society-Akkimari."
+	  ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/converse/apex/akkimari",
+    "value": [
+	  "I hope you weren't sent here by the Miniknog...",
+	  "What are you, exactly?",
+	  "You look a bit like a human.",
+	  "Four eyes... You must have an amazing sense of sight!",
+	  "I've never seen your kind before.",
+	  "Are you an Akkimari?",
+	  "Hello there, strange creature.",
+	  "Hmm?",
+	  "Can I help you?",
+	  "You're unlike any creature I've met before.",
+	  "Yes, yes, what is it?",
+	  "I'm a bit busy, sorry."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/converse/floran/akkimari",
+    "value": [
+	  "Floran feelsss like sstabbing you.",
+	  "Floran thinkss you look odd.",
+	  "Your earsss are huge.",
+	  "Funny-looking alien makesss Floran laugh.",
+	  "Floran wondersss what you are?",
+	  "Floran won't ssstab you. Yet.",
+	  "Every alien Floran meetsss is sstranger than the lassst.",
+	  "Don't hit Floran with your earsss.",
+	  "Yesss, what do you want?",
+	  "More eyesss for Floran to sstab..."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/converse/human/akkimari",
+    "value": [
+	  "Those four eyes of yours make you look like an oversized insect.",
+	  "I've heard you produce silk. Are you some kind of spider?",
+	  "You've got funny ears.",
+	  "I'm not sure if I've ever seen your kind before.",
+	  "What sort of creature are you, if I may ask?",
+	  "Are you what they call an Akkimari?",
+	  "Hello there, strange-looking alien.",
+	  "You look like some mythological creature."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/converse/glitch/akkimari",
+    "value": [
+	  "Friendly. Hello there, strange alien.",
+	  "Kind. You are always welcome here.",
+	  "Curious. Are those long tubes your ears?",
+	  "Shocked. There's blood on you!",
+	  "Afraid. Please don't have a fit of rage here.",
+	  "Calm. I don't want to anger you.",
+	  "Suspicious. You are no pirate, are you?"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/converse/hylotl/akkimari",
+    "value": [
+	  "There is a grace to your ferocity.",
+	  "Your kind is said to have anger issues. Perhaps meditation is the answer.",
+	  "Come meditate with me. It'll help keep you calm.",
+	  "Be at peace, kind alien.",
+	  "I hear your kind love music. I do too.",
+	  "Your kind have short tempers. I'll try not to provoke you.",
+	  "Some calming tea might be good for you.",
+	  "Your ferocity is contrasted by the sense of calmness you portray.",
+	  "Come join me in meditation. It'll help keep your temper under control.",
+	  "If music calms you down, I would like to play some music for you."
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/converse/avian/akkimari",
+    "value": [
+	  "By Kluex, you look ferocious!",
+	  "Your ears are unusual.",
+	  "Have you heard of Kluex? Perhaps he can replace your Kel'chis.",
+	  "It's good to have a religion, but worshipping a machine seems odd to me.",
+	  "Tell me about your god, Kel'chis.",
+	  "Are you new here? I don't think I've met your kind before.",
+	  "Please don't cause trouble. All I've seen of your kind so far are pirates and scavengers.",
+	  "Do you really produce your own silk?"
     ]
   }
 ]

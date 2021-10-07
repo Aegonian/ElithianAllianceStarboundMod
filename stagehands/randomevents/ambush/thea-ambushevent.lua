@@ -26,7 +26,7 @@ function update(dt)
 	  local position = vec2.add(entity.position(), {xOffset, yOffset})
 	  
 	  --Correct the position by finding the ground below the projected position
-	  local correctedPositionAndNormal = world.lineTileCollisionPoint(position, vec2.add(position, {0, -30})) or {position, 0}
+	  local correctedPositionAndNormal = world.lineTileCollisionPoint(position, vec2.add(position, {0, -50})) or {position, 0}
 	  
 	  --Resolve the NPC poly collision to ensure that we can place an NPC at the designated position
 	  local resolvedPosition = world.resolvePolyCollision(self.npcTestPoly, correctedPositionAndNormal[1], self.spawnTolerance)

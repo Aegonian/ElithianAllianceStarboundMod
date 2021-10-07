@@ -1,0 +1,67 @@
+{
+  "objectName" : "vhosavhalasteleporter",
+  "colonyTags" : ["centens"],
+  "objectType" : "teleporter",
+  "rarity" : "Legendary",
+  "description" : "A teleporter leading to some mysterious place.",
+  "shortdescription" : "Vhos Avha'las Teleporter",
+  "price" : 3000,
+  "printable" : false,
+  
+  "floranDescription" : "Teleporter to ssstrange place...",
+  "glitchDescription" : "Anxiety. This teleporter might lead somewhere dangerous.",
+  
+  "drodenDescription" : "Detected teleporter. Destination unknown. Recommend careful exploration.",
+  "akkimariDescription" : "Akki want to know-know where teleporter-ancient goes.",
+
+  "category" : "teleporter",
+  "lightColor" : [25, 0, 75],
+  "flickerDistance" : 0.2,
+  "flickerStrength" : 0.05,
+  "flickerTiming" : 4,
+
+  "interactAction" : "OpenTeleportDialog",
+  "interactData" : "/interface/warping/remoteteleporter.config",
+
+  "inventoryIcon" : "centensianmidteleportericon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "centensianmidteleporter.png:<color>.<frame>", "fullbright" : true }, { "image" : "centensianmidteleporterlit.png:<color>.<frame>" } ],
+
+      "imagePosition" : [-16, 0],
+      "frames" : 10,
+      "animationCycle" : 1.0,
+      "animationPosition" : [0, 24],
+	  
+      "anchors" : [ "bottom" ],
+	  "spaces" : [
+        [-2, 7], [-1, 7], [0, 7], [1, 7],
+		[-2, 6], [-1, 6], [0, 6], [1, 6],
+		[-2, 5], [-1, 5], [0, 5], [1, 5],
+		[-2, 4], [-1, 4], [0, 4], [1, 4],
+		[-2, 3], [-1, 3], [0, 3], [1, 3],
+		[-2, 2], [-1, 2], [0, 2], [1, 2],
+		[-2, 1], [-1, 1], [0, 1], [1, 1],
+		[-2, 0], [-1, 0], [0, 0], [1, 0]
+      ],
+      "collision" : "solid",
+      "collisionSpaces" : [ [-2, 0], [-1, 0], [0, 0], [1, 0] ]
+    }
+  ],
+
+  "animation" : "/objects/teleporter/centensianmidteleporter/centensianmidteleporter.animation",
+  "animationParts" : {
+    "background" : "centensianmidteleporter.png",
+    "foreground" : "centensianmidteleporterlit.png",
+    "portal" : "portal-vhosavhalas.png"
+  },
+
+  "health" : 20,
+
+  "breakDropPool" : "centensianWarpcoreDrop",
+  
+  "teleporterFootPosition" : [0, 1],
+
+  "scripts" : [ "/objects/teleporter/centensianteleporter/centensianteleporter.lua" ],
+  "detectArea" : [ [-6, 0], [6, 5] ]
+}

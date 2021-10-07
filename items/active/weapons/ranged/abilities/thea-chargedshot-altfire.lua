@@ -6,15 +6,21 @@ require "/scripts/interp.lua"
 TheaChargedShotAltFire = WeaponAbility:new()
 
 function TheaChargedShotAltFire:init()
-
+  
   self.chargeTimer = self.chargeTime
   self.cooldownTimer = self.cooldownTime
   
   self.chargeHasStarted = false
   self.shouldDischarge = false
-
+  
+  --Wave particle set-up
+  if self.useWaveParticles then
+	self.waveParticles = {}
+	activeItem.setScriptedAnimationParameter("waves", {})
+  end
+  
   self:reset()
-
+  
   self.weapon.onLeaveAbility = function()
     self:reset()
   end
@@ -28,6 +34,10 @@ function TheaChargedShotAltFire:update(dt, fireMode, shiftHeld)
   end
 
   self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
+  
+  if self.useWaveParticles then
+	self:updateWaveParticles()
+  end
   
   --world.debugText("Projectile Type Alt: " .. sb.print(self.projectileType), vec2.add(mcontroller.position(), {0,1}), "yellow")
 
@@ -46,7 +56,6 @@ function TheaChargedShotAltFire:update(dt, fireMode, shiftHeld)
 	animator.setParticleEmitterActive("chargeparticlesAlt", false)
 	self.chargeTimer = self.chargeTime
   end
-
 end
 
 function TheaChargedShotAltFire:charge()
@@ -107,9 +116,23 @@ function TheaChargedShotAltFire:fire()
   
   self.chargeHasStarted = false
   
+  --Optionally apply self-damage
+  if self.selfDamage then
+	status.applySelfDamageRequest({
+	  damageType = "IgnoresDef",
+	  damage = math.max(1, self.selfDamage * config.getParameter("damageLevelMultiplier") * activeItem.ownerPowerMultiplier()),
+	  damageSourceKind = self.selfDamageSource,
+	  sourceEntityId = activeItem.ownerEntityId()
+	})
+  end
+  
   --Fire a projectile and show a muzzleflash, then continue on with this state
   self:fireProjectile()
   self:muzzleFlash()
+  
+  if self.useWaveParticles then
+	self:addNewWaveParticle()
+  end
 
   if self.stances.fire.duration then
     util.wait(self.stances.fire.duration)
@@ -130,6 +153,16 @@ function TheaChargedShotAltFire:burst()
   
   self.chargeHasStarted = false
   
+  --Optionally apply self-damage
+  if self.selfDamage then
+	status.applySelfDamageRequest({
+	  damageType = "IgnoresDef",
+	  damage = math.max(0.33, (self.selfDamage / self.burstCount) * config.getParameter("damageLevelMultiplier") * activeItem.ownerPowerMultiplier()),
+	  damageSourceKind = self.selfDamageSource,
+	  sourceEntityId = activeItem.ownerEntityId()
+	})
+  end
+  
   --Burst projectiles and muzzleflash
   local shots = self.burstCount
   local burstNumber = 0
@@ -141,7 +174,11 @@ function TheaChargedShotAltFire:burst()
 
     self.weapon.relativeWeaponRotation = util.toRadians(interp.linear(1 - shots / self.burstCount, 0, self.stances.fire.weaponRotation))
     self.weapon.relativeArmRotation = util.toRadians(interp.linear(1 - shots / self.burstCount, 0, self.stances.fire.armRotation))
-
+	
+	if self.useWaveParticles then
+	  self:addNewWaveParticle()
+	end
+	
     util.wait(self.burstTime)
   end
 
@@ -240,8 +277,16 @@ end
 
 function TheaChargedShotAltFire:aimVector(inaccuracy, shotNumber, burstNumber)
   local angleAdjustmentList = self.angleAdjustmentsPerShot or {}
-  local aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle + sb.nrand(inaccuracy, 0) + (angleAdjustmentList[shotNumber] or 0) + ((burstNumber or 0) * (self.burstRiseAngle or 0)))
-  aimVector[1] = aimVector[1] * mcontroller.facingDirection()
+  local aimVector = {}
+  
+  if self.allowIndependantAim then
+	local aimAngle, aimDirection = activeItem.aimAngleAndDirection(self.weapon.aimOffset, activeItem.ownerAimPosition())
+	aimVector = vec2.rotate({1, 0}, aimAngle + sb.nrand(inaccuracy or 0, 0) + (angleAdjustmentList[shotNumber] or 0) + ((burstNumber or 0) * (self.burstRiseAngle or 0)))
+  else
+	aimVector = vec2.rotate({1, 0}, self.weapon.aimAngle + sb.nrand(inaccuracy or 0, 0) + (angleAdjustmentList[shotNumber] or 0) + ((burstNumber or 0) * (self.burstRiseAngle or 0)))
+  end
+  
+  aimVector[1] = aimVector[1] * self.weapon.aimDirection
   return aimVector
 end
 
@@ -261,6 +306,32 @@ function TheaChargedShotAltFire:damagePerShot()
   end
 end
 
+function TheaChargedShotAltFire:addNewWaveParticle()
+  local wave = {
+      muzzlePosition = self:firePosition(),
+	  lifeTime = self.waveLifetime,
+	  maxLifeTime = self.waveLifetime
+    }
+    table.insert(self.waveParticles, wave)
+end
+
+function TheaChargedShotAltFire:updateWaveParticles()
+  --Update existing wave particles
+  for i,wave in ipairs(self.waveParticles) do
+	if self.waveFollowsMuzzle then
+	  wave.muzzlePosition = self:firePosition()
+	end
+	wave.lifeTime = wave.lifeTime - self.dt
+	
+	--Discard particles when they die
+	if (wave.lifeTime <= 0) then
+	  self.waveParticles[i] = nil
+	end
+  end
+  
+  activeItem.setScriptedAnimationParameter("waves", self.waveParticles)
+end
+
 function TheaChargedShotAltFire:updateChargeIntake(chargeTimeLeft)  
   --Update existing charge particles
   for i,particle in ipairs(self.chargeParticles) do
@@ -275,7 +346,10 @@ function TheaChargedShotAltFire:updateChargeIntake(chargeTimeLeft)
       muzzlePosition = self:firePosition(),
       vector = vec2.rotate({self.maxParticleDistance, 0}, math.random() * (2 * math.pi)),
 	  lifeTime = self.particleLifetime,
-	  maxLifeTime = self.particleLifetime
+	  maxLifeTime = self.particleLifetime,
+	  scaleMultiplier = self.scaleMultiplier or 1,
+	  scaleAddition = self.scaleAddition or 0,
+	  dontFade = self.dontFade or false
     }
     table.insert(self.chargeParticles, particle)
 	

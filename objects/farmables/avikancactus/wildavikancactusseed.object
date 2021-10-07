@@ -19,7 +19,7 @@
   
   "aegiDescription" : "A cactus originally found on the Avikan homeplanet Kadavan.",
   "avikanDescription" : "A cactus from home. Vital for life in the desert.",
-  "erixianDescription" : "A plant full of water. It wouldn't last long back on Heragon.",
+  "draunaarDescription" : "TODO",
   "trinkDescription" : "This plant stores a great deal of water, and is vital to organic life in the desert.",
   "hymidDescription" : "Juicy plants full of water. Similar plants grow on our home planet.",
   "notixDescription" : "A big, juicy plant. I imagine desert dwellers have many uses for a plant like this.",
@@ -28,6 +28,7 @@
   "dremetonDescription" : "Like the cacti on Elithia, this plant is vital to life in the desert.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Detected native Kadavan flora. Cactus confirmed.",
+  "akkimariDescription" : "Plant full of water. Akki drink?",
 
   "inventoryIcon" : "avikancactusseedicon.png",
   "orientations" : [

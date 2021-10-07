@@ -18,7 +18,7 @@
 
   "aegiDescription" : "A basic safety railing.",
   "avikanDescription" : "A thin but sturdy safety railing.",
-  "erixianDescription" : "Part of a metal railing.",
+  "draunaarDescription" : "Part of a metal railing.",
   "trinkDescription" : "This railing is a basic but effective safety measure.",
   "hymidDescription" : "I wonder how quickly this railing would rust underwater.",
   "notixDescription" : "A metal railing, plain and simple.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Detected safety railing.",
+  "akkimariDescription" : "Railing-safety, keep Akki from falling.",
   
   "inventoryIcon" : "avikanshiprailingicon.png",
   "orientations" : [

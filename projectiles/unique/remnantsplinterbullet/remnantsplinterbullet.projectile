@@ -1,0 +1,90 @@
+{
+  "projectileName" : "remnantsplinterbullet",
+  "physics" : "laser",
+  "bounces" : 0,
+  "image" : "remnantsplinterbullet.png",
+  "animationCycle" : 0.4,
+  "frameNumber" : 4,
+  "power" : 50,
+  "speed" : 100,
+  "supportsProcessing" : true,
+  "emitters" : [ "ancientcurseheavytrail" ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/ancientcursesplinterexplosion/ancientcursesplinterexplosion.config"
+    },
+	{
+      "action" : "projectile",
+      "type" : "remnantsplinterblob",
+      "fuzzAngle" : 90,
+      "inheritDamageFactor" : 0.2,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "remnantsplinterblob2",
+      "fuzzAngle" : 45,
+      "inheritDamageFactor" : 0.2,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "remnantsplinterblob3",
+      "fuzzAngle" : 45,
+      "inheritDamageFactor" : 0.2,
+      "angleAdjust" : 180
+    },
+	{
+      "action" : "projectile",
+      "type" : "remnantsplinterblob",
+      "fuzzAngle" : 45,
+      "inheritDamageFactor" : 0.2,
+      "angleAdjust" : 0
+    },
+	{
+      "action" : "projectile",
+      "type" : "remnantsplinterblob3",
+      "fuzzAngle" : 90,
+      "inheritDamageFactor" : 0.2,
+      "angleAdjust" : 0
+    }
+  ],
+  "periodicActions" : [
+    {
+      "time" : 0.01,
+      "repeat" : true,
+      "action" : "particle",
+      "rotate" : true,
+      "specification" : {
+        "type" : "animated",
+        "animation" : "/projectiles/unique/remnantsplinterbullet/trail.animation",
+        "position" : [-1.0, 0],
+        "layer" : "back",
+		"collidesForeground" : false,
+        "timeToLive" : 0.1,
+        "destructionTime" : 0.5,
+        "destructionAction" : "fade",
+        "fullbright" : false
+      }
+    }
+  ],
+  "statusEffects" : [
+    "ancientcurse"
+  ],
+  "lightColor" : [56, 91, 0],
+  "damageType" : "NoDamage",
+  "damageKind" : "ancientcurse",
+
+  "scripts" : ["/projectiles/scripts/thea-directionchanger.lua"],
+  "scriptDelta" : 1,
+
+  "minChangeInterval" : 0.01,
+  "maxChangeInterval" : 0.03,
+  "minAngle" : 5,
+  "maxAngle" : 30,
+  
+  //Homing
+  "homingStrength" : 50, // In angle rotated per second
+  "searchRadius" : 25
+}

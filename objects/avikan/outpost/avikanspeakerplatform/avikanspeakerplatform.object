@@ -19,7 +19,7 @@
 
   "aegiDescription" : "A platform from which to address the public.",
   "avikanDescription" : "A platform from which to address the public.",
-  "erixianDescription" : "A platform from which to address the public.",
+  "draunaarDescription" : "A platform from which to address the public.",
   "trinkDescription" : "A platform from which to address the public.",
   "hymidDescription" : "A platform from which to address the public.",
   "notixDescription" : "A platform from which to address the public.",
@@ -28,6 +28,7 @@
   "dremetonDescription" : "A platform from which to address the public.",
   "theleanDescription" : "A platform from which to address the public.",
   "drodenDescription" : "Platform. Used by Speakers to adress the public.",
+  "akkimariDescription" : "Akki stand here, talk to Akkimari.",
 
   "inventoryIcon" : "avikanspeakerplatformicon.png",
   "orientations" : [

@@ -21,7 +21,7 @@
   
   "aegiDescription" : "An ship door of Trinkian design.",  
   "avikanDescription" : "A metal door built by machines.",
-  "erixianDescription" : "A metal door. Not quite a blast door, but still very strong.",
+  "draunaarDescription" : "A metal door. Not quite a blast door, but still very strong.",
   "trinkDescription" : "An efficient way to seal off an entire ship compartment.",
   "hymidDescription" : "A Trinkian ship door.",
   "notixDescription" : "A door built for use on spaceships.",
@@ -30,6 +30,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Detected door. Analysis: Ship model.",
+  "akkimariDescription" : "Ship-door, shiny.",
 
   "inventoryIcon" : "trinkshipdooricon.png",
   "orientations" : [

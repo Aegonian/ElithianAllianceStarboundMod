@@ -8,6 +8,9 @@
   "category" : "Crafting Guide",
   "learnBlueprintsOnPickup" : [
 	
+//New in v2.3.12
+	  "alliancecargocontainer",
+	
 //New in v2.3.10
 	  "alliancesecuritycamera",
 	
@@ -295,7 +298,7 @@
 	  "alliancecorepowerful",
 	  "alliancecorevigorous",
 	//Objects - Generator
-	  "allianceshieldgenerator",
+	  "allianceshieldgenerator-player",
 	//Weapons - Melee
 	  "thea-tier5dagger",
 	  "thea-tier5spear",

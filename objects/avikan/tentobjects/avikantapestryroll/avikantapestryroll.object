@@ -19,7 +19,7 @@
 
   "aegiDescription" : "A leather tapestry, rolled up for storage.",
   "avikanDescription" : "This tapestry would look great in my home.",
-  "erixianDescription" : "A simple leather tapestry.",
+  "draunaarDescription" : "A simple leather tapestry.",
   "trinkDescription" : "A rolled up leather tapestry.",
   "hymidDescription" : "A leather tapestry, rolled up to conserve space.",
   "notixDescription" : "A leather tapestry, rolled up neatly.",
@@ -28,6 +28,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Scan completed. Material: leather.",
+  "akkimariDescription" : "Tapestry-leather, all rolled up.",
 
   "inventoryIcon" : "avikantapestryrollicon.png",
   "orientations" : [

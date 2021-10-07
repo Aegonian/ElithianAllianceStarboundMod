@@ -19,7 +19,7 @@
 
   "aegiDescription" : "A cube, built by the Centens. It is oddly enthralling...",
   "avikanDescription" : "This artefact of the Old Ones is enthralling. I just keep staring at it.",
-  "erixianDescription" : "I can't say why, but this cube is incredibly enthralling...",
+  "draunaarDescription" : "I can't say why, but this cube is incredibly enthralling...",
   "trinkDescription" : "My systems are picking up an odd interference around this cube.",
   "hymidDescription" : "This relic of the Gods is enthralling. I just want to stare at it.",
   "notixDescription" : "I feel something odd when near this cube. It is enthralling, somehow.",
@@ -28,6 +28,7 @@
   "dremetonDescription" : "TODO",
   "theleanDescription" : "TODO",
   "drodenDescription" : "Detected Centensian artefact. Error. Error. Error.",
+  "akkimariDescription" : "Akki feel calm. Feeling-strange.",
 
   "inventoryIcon" : "centenscubeicon.png",
   "orientations" : [

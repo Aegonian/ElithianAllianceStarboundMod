@@ -18,7 +18,7 @@
 
   "aegiDescription" : "This market stall has a wide array of Avikan food available.",
   "avikanDescription" : "Traditional Kadavan food. The best there is.",
-  "erixianDescription" : "Avikan food. I've never liked the taste.",
+  "draunaarDescription" : "Avikan food. I've never liked the taste.",
   "trinkDescription" : "Avikan food. It has no value to non-organics.",
   "hymidDescription" : "I wonder what this would tatse like...",
   "notixDescription" : "Traditional Avikan food.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO",
   "hyvonDescription" : "TODO",
   "drodenDescription" : "Detected organic food.",
+  "akkimariDescription" : "Akki steal food here.",
 
   "inventoryIcon" : "avikanmarketstallfoodicon.png",
   "orientations" : [

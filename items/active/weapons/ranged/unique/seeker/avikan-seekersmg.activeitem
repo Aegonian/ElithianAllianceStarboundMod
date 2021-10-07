@@ -5,12 +5,13 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "^orange;A prototype compact linerifle developed by the Seekers.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "^orange;Seeker MLR-02^white;",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-chargedgun-unique",
+  "tooltipKind" : "thea-chargedgun-unique-mf",
   "category" : "Mini Line Rifle",
-  "itemTags" : ["weapon","ranged","avikan","linerifle","theaUnique"],
+  "itemTags" : ["weapon","ranged","avikan","linerifle","vanguard","theaUnique"],
   "twoHanded" : false,
   
   //CONFIGURATION FOR WEAPONS COLLECTION
@@ -64,7 +65,14 @@
 	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
     }
   },
-  "animationScripts" : ["/items/active/effects/lightning.lua"],
+  "animationScripts" : [ "/items/active/effects/thea-lightning-chargeintake.lua" ],
+  "scriptedAnimationParameters" : {
+    "particleConfig" : {
+	  "image" : "/particles/chargeintake/linechargeintake.png",
+	  "scale" : 1.5,
+	  "fullbright" : true
+	}
+  },
 
   "baseOffset" : [0.625, 0.0],
   "muzzleOffset" : [1.125, 0.375],
@@ -106,6 +114,13 @@
 	"projectileParameters" : {
       "knockback" : 6
     },
+
+	//CHARGE PARTICLE CONFIGURATION
+	"useChargeParticles" : true,
+	"maxChargeParticles" : 8,
+	"particleLifetime" : 0.15,
+	"timeBewteenParticles" : 0.020,
+	"maxParticleDistance" : 1.4,
 
     "stances" : {
       "idle" : {

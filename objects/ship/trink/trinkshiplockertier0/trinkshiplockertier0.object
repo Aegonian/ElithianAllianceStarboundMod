@@ -21,7 +21,7 @@
 
   "aegiDescription" : "The panel is broken. No way to access the ship locker until I fix it.",    
   "avikanDescription" : "The ship locker is jammed. I should get it fixed as soon as possible.",
-  "erixianDescription" : "A broken ship locker, no way to open it.",
+  "draunaarDescription" : "A broken ship locker, no way to open it.",
   "trinkDescription" : "This ship locker will not open.",
   "hymidDescription" : "A broken locker, it won't open.",
   "notixDescription" : "This isn't going to open until I fix up the ship.",
@@ -30,6 +30,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Ship locker. Status: jammed.",
+  "akkimariDescription" : "Akki no steal items if Akki no open locker...",
   
   "inventoryIcon" : "shiplockericonTier0.png",
   "orientations" : [

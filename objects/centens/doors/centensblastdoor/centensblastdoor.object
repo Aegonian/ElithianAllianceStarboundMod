@@ -20,7 +20,7 @@
 
   "aegiDescription" : "A Centensian blast door. Barely damaged, yet it is eons old.",
   "avikanDescription" : "A blast door built by the Old Ones.",
-  "erixianDescription" : "An ancient Centensian blast door.",
+  "draunaarDescription" : "An ancient Centensian blast door.",
   "trinkDescription" : "A Centensian blast door, it likely protects something valuable.",
   "hymidDescription" : "A grand door built by the Centens.",
   "notixDescription" : "The Centens built this door.",
@@ -29,6 +29,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Analysis. Blast door. Origin: Centensian.",
+  "akkimariDescription" : "Door-ancient, resist blasts-heavy.",
 
   "inventoryIcon" : "centensblastdooricon.png",
   "orientations" : [

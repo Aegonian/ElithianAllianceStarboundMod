@@ -18,7 +18,7 @@
 
   "aegiDescription" : "A leather tent door. Simple, but very useful.",
   "avikanDescription" : "A leather tent door. It provides us with ample protection against the desert winds.",
-  "erixianDescription" : "A leather tent door. Very crude.",
+  "draunaarDescription" : "TODO",
   "trinkDescription" : "A leather tent door.",
   "hymidDescription" : "A primitive leather tent door.",
   "notixDescription" : "A simple leather tent door.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "A simple, but functional, leather tent door.",
   "hyvonDescription" : "An unimpressive leather tent door.",
   "drodenDescription" : "Detected door. Material: leather.",
+  "akkimariDescription" : "Door to tent.",
 
   "inventoryIcon" : "avikantentdooricon.png",
   "orientations" : [

@@ -1,0 +1,47 @@
+{
+  "objectName" : "akkimarismalltable",
+  "colonyTags" : ["akkimari","commerce"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "A small scrappy table.",
+  "shortdescription" : "Small Akris Table",
+  "race" : "akkimari",
+  "category" : "furniture",
+  "price" : 30,
+
+  "apexDescription" : "A small table.",
+  "avianDescription" : "Just a small table.",
+  "floranDescription" : "Sssimple table.",
+  "glitchDescription" : "Bored. Just a basic table.",
+  "humanDescription" : "This table is really dirty.",
+  "hylotlDescription" : "Someone should clean this table.",
+  "novakidDescription" : "Some small table. Look like someone spilled their drink here.",
+
+  "aegiDescription" : "This small table is in need of some cleaning.",
+  "avikanDescription" : "A simple table. It looks rough.",
+  "draunaarDescription" : "That's just a table.",
+  "trinkDescription" : "A small, simple but scrappy table.",
+  "hymidDescription" : "A table. Not very big.",
+  "notixDescription" : "Just a small table.",
+  "jorgasianDescription" : "An unimpressive little table.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien table.",
+  "akkimariDescription" : "Table-small, but table-strong. Akki knows.",
+
+  "inventoryIcon" : "akkimarismalltableicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "akkimarismalltable.png:<color>",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ]
+}

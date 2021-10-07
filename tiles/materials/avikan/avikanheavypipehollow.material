@@ -11,6 +11,7 @@
   "novakidDescription" : "Not sure what this 'ere pipe is carrying, but I'm guessin' its dangerous.",
   
   "drodenDescription" : "Analysis failed. Unable to scan pipe contents.",
+  "akkimariDescription" : "Pipe-hollow. Liquids flow through.",
 
   "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
   "health" : 6,

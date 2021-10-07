@@ -18,7 +18,7 @@
 
   "aegiDescription" : "A tent door decorated in the style of the Rhaiod.",
   "avikanDescription" : "The door to a Rhaiod tent.",
-  "erixianDescription" : "A tent door made of purple fabric.",
+  "draunaarDescription" : "A tent door made of purple fabric.",
   "trinkDescription" : "The door to a tent.",
   "hymidDescription" : "A purple-coloured tent door.",
   "notixDescription" : "A purple tent door.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Detected tent door. Colour suggests this tent belongs to the Rhaiod.",
+  "akkimariDescription" : "Door-purple. Sway in the wind.",
 
   "inventoryIcon" : "avikantentdoor3icon.png",
   "orientations" : [

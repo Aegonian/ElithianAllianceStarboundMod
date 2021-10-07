@@ -4,10 +4,10 @@
   "inventoryIcon" : "thelean-pistol.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A powerful flux rifle which shoots molten metal projectiles.",
+  "description" : "^gray;A powerful flux rifle which shoots molten metal projectiles.",
   "shortdescription" : "Tath", //Translates to: Tooth
   "level" : 6,
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-descriptive",
   "category" : "Flux Rifle",
   "itemTags" : ["weapon","ranged","pistol","thelean"],
   "twoHanded" : false,
@@ -24,6 +24,11 @@
   "animationCustom" : {
     "sounds" : {
       "fire" : [ "/sfx/gun/plasma_mp1.ogg" ]
+    },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [90, 45, 0]
+	  }
     }
   },
 

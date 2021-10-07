@@ -1,0 +1,30 @@
+{
+  "itemName" : "akrisgrassseeds",
+  "price" : 10,
+  "rarity" : "Common",
+  "category" : "throwableItem",
+  "inventoryIcon" : "akrisgrassseedsicon.png",
+  "image" : "akrisgrassseeds.png",
+  "shortdescription" : "Valval Seeds",
+  "description" : "Toss these on some damp tilled soil to grow valval, a grass native to Akris.",
+
+  "ammoUsage" : 1,
+
+  "edgeTrigger" : true,
+  "windupTime" : 0.0,
+  "cooldown" : 0.4,
+
+  "projectileType" : "akrisgrassseedsspray",
+  "projectileConfig" : {
+    "speed" : 25,
+    "power" : 0,
+    "periodicActions" : [
+      {
+        "time" : 0,
+        "repeat" : false,
+        "action" : "sound",
+        "options" : [ "/sfx/projectiles/throw_item_small.ogg" ]
+      }
+    ]
+  }
+}

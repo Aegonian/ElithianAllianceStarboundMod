@@ -33,7 +33,7 @@
 
   "aegiDescription" : "A basic workshop, but it has all the tools I'll ever need.",
   "avikanDescription" : "I still find it odd how carelessly others use wood.",
-  "erixianDescription" : "This workshop has all the tools you'll ever need.",
+  "draunaarDescription" : "This workshop has all the tools you'll ever need.",
   "trinkDescription" : "A compact workshop with various tools. Quite an effective use of space and materials.",
   "hymidDescription" : "Tools and enough space to use them.",
   "notixDescription" : "This workshop is equipped with a variety of tools.",
@@ -72,7 +72,7 @@
 
 		"aegiDescription" : "A basic workshop, but it has all the tools I'll ever need.",
 		"avikanDescription" : "I still find it odd how carelessly others use wood.",
-		"erixianDescription" : "This workshop has all the tools you'll ever need.",
+		"draunaarDescription" : "This workshop has all the tools you'll ever need.",
 		"trinkDescription" : "A compact workshop with various tools. Quite an effective use of space and materials.",
 		"hymidDescription" : "Tools and enough space to use them.",
 		"notixDescription" : "This workshop is equipped with a variety of tools.",
@@ -131,7 +131,7 @@
 
 		"aegiDescription" : "An Enerth Engineering 3D printer. It can produce many things.",
 		"avikanDescription" : "Some type of crafting device. I'm not entirely certain how it works.",
-		"erixianDescription" : "This printer can print many things.",
+		"draunaarDescription" : "This printer can print many things.",
 		"trinkDescription" : "An efficient 3D printer.",
 		"hymidDescription" : "A 3D printer designed by Enerth Engineering.",
 		"notixDescription" : "This device was designed by the Aegi. It can print various items.",
@@ -192,7 +192,7 @@
 
 		"aegiDescription" : "Enerth Engineering's latest fabricator unit. It can fabricate almost anything out of raw materials.",
 		"avikanDescription" : "Some type of crafting device. I'm not entirely certain how it works.",
-		"erixianDescription" : "This unit can fabricate almost anything.",
+		"draunaarDescription" : "This unit can fabricate almost anything.",
 		"trinkDescription" : "A highly efficient fabricator unit. Enerth should be praised for their ingenuity.",
 		"hymidDescription" : "Enerth Engineering designs incredible  units.",
 		"notixDescription" : "A fabrication unit. It can create many things.",

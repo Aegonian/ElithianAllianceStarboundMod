@@ -24,7 +24,8 @@
   "vehicleImage" : "/vehicles/trink/trinkhoverpod/trinkhoverpod.png",
 
   "animationParts" : {
-    "casing" : "trinkhoverpodcontroller.png"
+    "casing" : "trinkhoverpodcontroller.png",
+    "lights" : "trinkhoverpodcontrollerlights.png"
   },
 
   "inventoryIcon" : "trinkhoverpodcontroller.png:full",

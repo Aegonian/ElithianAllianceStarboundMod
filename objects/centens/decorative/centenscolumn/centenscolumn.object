@@ -19,7 +19,7 @@
 
   "aegiDescription" : "A Centensian-built column. It's quite massive.",
   "avikanDescription" : "The Old Ones built many impressive structures.",
-  "erixianDescription" : "I have always loved columns in architecture.",
+  "draunaarDescription" : "I have always loved columns in architecture.",
   "trinkDescription" : "A large column. These are often used for support, but given that the Centens built it, it likely only serves as decoration.",
   "hymidDescription" : "A massive column fit for the gods.",
   "notixDescription" : "A large column. It can support a heavy weight.",
@@ -28,7 +28,7 @@
   "dremetonDescription" : "TODO",
   "theleanDescription" : "TODO",
   "drodenDescription" : "Detected Centensian column.",
-  "akkimariDescription" : "Akki can't scrap this metal. Metal too strong.",
+  "akkimariDescription" : "Column-great, supports weight-great.",
 
   "inventoryIcon" : "centenscolumnicon.png",
   "orientations" : [

@@ -3,12 +3,13 @@
   "price" : 1560,
   "maxStack" : 1,
   "rarity" : "legendary",
-  "description" : "A high-powered sniper rifle firing explosive rounds.",
+  "description" : "^gray;A high-powered sniper rifle firing explosive rounds.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Harbinger EX-12",
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Sniper Rifle",
   "twoHanded" : true,
-  "itemTags" : ["weapon","ranged","avikan","sniperrifle"],
+  "itemTags" : ["weapon","ranged","avikan","sniperrifle","vanguard"],
 
   "animation" : "/items/active/weapons/ranged/gun.animation",
   "animationParts" : { },
@@ -130,7 +131,7 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildweapon.lua",
+  "builder" : "/items/buildscripts/thea-buildrandomweapon.lua",
   "builderConfig" : [{
     "nameGenerator" : "harbingernames.config:nameGen",
     "animationParts" : {

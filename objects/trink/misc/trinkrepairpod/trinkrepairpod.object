@@ -18,7 +18,7 @@
 
   "aegiDescription" : "A Trinkian repair pod. Efficient, as always.",
   "avikanDescription" : "A repair pod for machines. I should probably disable it.",
-  "erixianDescription" : "A repair pod built by the Trinks.",
+  "draunaarDescription" : "A repair pod built by the Trinks.",
   "trinkDescription" : "This repair pod will repair any damage my frame sustained.",
   "hymidDescription" : "A Trinkian repair pod, with that signature Trinkian look.",
   "notixDescription" : "A repair pod. Originally manufactured by us, but now the Trink can build these themselves.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "Better not get this repair pod wet.",
   "theleanDescription" : "TODO",
   "drodenDescription" : "Repair pod detected. Provides automated repair of alien synthetics. Recommend disabling of device.",
+  "akkimariDescription" : "Machines repair here. Akki sabotage, make it break machines!",
   
   "inventoryIcon" : "trinkrepairpodicon.png",
   "orientations" : [

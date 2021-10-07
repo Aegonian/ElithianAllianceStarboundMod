@@ -29,7 +29,7 @@
 
   "aegiDescription" : "Many would call such a cooking plate priminitive, but I can still prepare plenty of food here.",
   "avikanDescription" : "Cooking in the style of my nomadic ancestors. They would be proud.",
-  "erixianDescription" : "I could go for a meal - let's prepare some food!",
+  "draunaarDescription" : "I could go for a meal - let's prepare some food!",
   "trinkDescription" : "A very basic cooking solution, but I cannot deny its effectiveness.",
   "hymidDescription" : "I'm sure I can cook up a good meal here.",
   "notixDescription" : "I imagine cooking food would be a lot easier if one had sight.",
@@ -38,6 +38,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Detected cooking plate. This unit can refuel using organic food.",
+  "akkimariDescription" : "Plate-bone for cooking food.",
   
   "lightColor" : [179, 149, 107],
 

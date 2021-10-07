@@ -4,12 +4,13 @@
   "level" : 5,
   "maxStack" : 1,
   "rarity" : "rare",
-  "description" : "A sharp metal spear designed by the Nomada.",
+  "description" : "^gray;A sharp metal spear designed by the Nomada.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Nomada Spear",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "spear",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","spear","avikan"],
+  "itemTags" : ["weapon","melee","spear","avikan","vanguard"],
 
   "inventoryIcon" : "avikantier5spear.png",
 
@@ -38,5 +39,5 @@
 
   "altAbilityType" : "flurry",
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

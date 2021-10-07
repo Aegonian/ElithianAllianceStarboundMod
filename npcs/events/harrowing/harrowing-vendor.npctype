@@ -15,8 +15,10 @@
   "dropPools" : [ "aegiDeathTreasure" ],
 
   "scriptConfig" : {
-	"offeredQuests" : [ "harrowingeventstart" ],
-	"turnInQuests" : [ "harrowingeventstart" ],
+    "uniqueId" : "harrowing-vendor",
+	
+	"offeredQuests" : [ "harrowingeventstart", "remnantsplinter" ],
+	"turnInQuests" : [ "harrowingeventstart", "remnantsplinter" ],
 	
     "merchant" : {
       "waitTime" : 40,
@@ -28,7 +30,7 @@
       },
       "buyFactorRange" : [ 1.0, 1.0 ],
       "sellFactorRange" : [ 0.2, 0.2 ],
-      "numItems" : 16,
+      "numItems" : 40,
 	  
       "paneLayoutOverride" : {
         "windowtitle" : {

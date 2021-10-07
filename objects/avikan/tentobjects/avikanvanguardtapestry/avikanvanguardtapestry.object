@@ -19,7 +19,7 @@
 
   "aegiDescription" : "Wall decoration decorated in the style of the Avikan Vanguard.",
   "avikanDescription" : "This tapestry was decorated in the style of the Vanguard.",
-  "erixianDescription" : "I've always thought red looks better with some gold trimmings.",
+  "draunaarDescription" : "TODO",
   "trinkDescription" : "This tapestry was decorated for the Vanguard. They are not particularly fond of the Trink.",
   "hymidDescription" : "I wonder what plant the Avikan extract this red dye from.",
   "notixDescription" : "Some type of wall decoration.",
@@ -28,6 +28,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Scan completed. Vanguard wall decoration.",
+  "akkimariDescription" : "Emblem for Vanguard, military-alien.",
   
   "inventoryIcon" : "avikanvanguardtapestryicon.png",
   "orientations" : [

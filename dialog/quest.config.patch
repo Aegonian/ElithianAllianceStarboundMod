@@ -1,1206 +1,1510 @@
 [
-	//AVIKAN DIALOGUE
-	//SHARE SECRET
-	{
-		"op": "add",
-		"path": "/share_secret/pleaseTakeReply/avikan",
-		"value": {
-			"default": [
-				"Would you take this reply back to <questGiver> for me?"
-			]
-		}
-	},
-	//INTIMIDATE
-	{
-		"op": "add",
-		"path": "/intimidate/intimidated/avikan",
-		"value": {
-			"default": [
-				"Don't hurt me with that <item>! Tell <questGiver> I will do as they ask!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/intimidate/notIntimidated/avikan",
-		"value": {
-			"default": [
-				"Why should I do what <questGiver> wants?",
-				"I've faced worse than you or <questGiver>."
-			]
-		}
-	},
-	//BRIBE
-	{
-		"op": "add",
-		"path": "/bribe/giftAccepted/avikan",
-		"value": {
-			"default": [
-				"So <questGiver> is resorting to bribes now? Very well, then, bring them my thanks.",
-				"Did <questGiver> send this gift? Or is it more of a bribe?"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/bribe/giftAccepted2/avikan",
-		"value": {
-			"default": [
-				"I wonder what <questGiver> wants from me though..."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/bribe/requestAdditionToHouse/avikan",
-		"value": {
-			"default": [
-				"I'm certain this gift would look great in my home. Could you place it for me?",
-				"Could you place this gift in my home? I'm certain it would look great!"
-			]
-		}
-	},
-	//GIFT
-	{
-		"op": "add",
-		"path": "/gift/giftAccepted/avikan",
-		"value": {
-			"default": [
-				"This gift is very nice! Please thank <questGiver> for me!",
-				"Could you thank <questGiver> for me? This gift is wonderful!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/gift/giftAccepted2/avikan",
-		"value": {
-			"default": [
-				"<questGiver> is a good friend.",
-				"<questGiver> is an honourable person."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/gift/requestAdditionToHouse/avikan",
-		"value": {
-			"default": [
-				"I'm certain this gift would look great in my home. Could you place it for me?",
-				"Could you place this gift in my home? I'm certain it would look great!"
-			]
-		}
-	},
-	//RETURN STOLEN ITEM
-	{
-		"op": "add",
-		"path": "/return_stolen/objectTaken/avikan",
-		"value": {
-			"default": [
-				"I swear on my honour, that <item> was acquired legally!",
-				"I borrowed that <item> with permission - I swear it!"
-			]
-		}
-	},
-	//COLLECT FINE
-	{
-		"op": "add",
-		"path": "/collect_fine/fineCollected/avikan",
-		"value": {
-			"default": [
-				"I'll pay the fine, alright...",
-				"I'm not looking for trouble. I'll pay the fine."
-			]
-		}
-	},
-	//COLLECT GIFT
-	{
-		"op": "add",
-		"path": "/collect_gift/giftProvided/avikan",
-		"value": {
-			"default": [
-				"Here is the <item> you requested. I hope it's what <questGiver> needed.",
-				"Here is the <item> that <questGiver> asked for."
-			]
-		}
-	},
-	//REQUEST CRAFT
-	{
-		"op": "add",
-		"path": "/request_craft/giftProvided/avikan",
-		"value": {
-			"default": [
-				"Here is the <item> you asked me to make.",
-				"I made this <item> earlier. Please, take it!"
-			]
-		}
-	},
-	//BORROW
-	{
-		"op": "add",
-		"path": "/borrow/giftProvided/avikan",
-		"value": {
-			"default": [
-				"Sure, I will lend <questGiver> my <item>.",
-				"If <questGiver> has need of my <item>, they can certainly borrow it."
-			]
-		}
-	},
-	//EXTORT
-	{
-		"op": "add",
-		"path": "/extort/giftProvided/avikan",
-		"value": {
-			"default": [
-				"I know when I'm defeated... Take my <item> then, but leave me alone!",
-				"<questGiver> lost their honour. Fine then, take the <item>!"
-			]
-		}
-	},
-	//HAT
-	{
-		"op": "add",
-		"path": "/hat/crafting/avikan",
-		"value": {
-			"default": [
-				"You've secured the materials? Hold a moment, I'll get to work immediately...",
-				"I see you have everything we need! Hold a moment, I just need some time to craft..."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/hat/crafted/avikan",
-		"value": {
-			"default": [
-				"Here you go! Please, take this to <questGiver> for me.",
-				"I'm all done! Take this to <questGiver>, would you?"
-			]
-		}
-	},
-	//HELMET
-	{
-		"op": "add",
-		"path": "/helmet/crafting/avikan",
-		"value": {
-			"default": [
-				"You've secured the materials? Hold a moment, I'll get to work immediately...",
-				"I see you have everything we need! Hold a moment, I just need some time to craft..."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/helmet/crafted/avikan",
-		"value": {
-			"default": [
-				"Here you go! Please, take this to <questGiver> for me.",
-				"I'm all done! Take this to <questGiver>, would you?"
-			]
-		}
-	},
-	//NEW MERCHANT STOCK
-	{
-		"op": "add",
-		"path": "/new_stock/trade/avikan",
-		"value": {
-			"default": [
-				"Thank you for delivering this. Here's what <questGiver> needed."
-			]
-		}
-	},
-	//KIDNAPPING
-	{
-		"op": "add",
-		"path": "/kidnapping/kidnappersDead/avikan",
-		"value": {
-			"default": [
-				"You were sent by Rhadeis! Thank you for rescuing me!",
-				"Thank you for getting me out of that mess!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/kidnapping/followHome/avikan",
-		"value": {
-			"default": [
-				"Could you please take me back home to <questGiver>?",
-				"I'll need some time to recover from this... Could you take me to <questGiver>?"
-			]
-		}
-	},
-	//ESCORT
-	{
-		"op": "add",
-		"path": "/escort/found/avikan",
-		"value": {
-			"default": [
-				"I'm think I'm lost... Could you take me back to <questGiver>?",
-				"I've lost my way... Could you please take me back to <questGiver>?"
-			]
-		}
-	},
-	//BARTER
-	{
-		"op": "add",
-		"path": "/barter/trade/avikan",
-		"value": {
-			"default": [
-				"Thank you for bringing me these goods. Here's the <receivedItems> <questGiver> needed."
-			]
-		}
-	},
-	//ESCORT TRADE
-	{
-		"op": "add",
-		"path": "/escort_trade/collectDelivery/avikan",
-		"value": {
-			"default": [
-				"Do you have a delivery for me?"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/escort_trade/provideDelivery/avikan",
-		"value": {
-			"default": [
-				"Here's your goods. Do enjoy them!"
-			]
-		}
-	},
-	//KILL NPCS
-	{
-		"op": "add",
-		"path": "/kill_npcs/assistantIntro/avikan",
-		"value": {
-			"default": [
-				"Vas Vha'leih. <questGiver> asked me to help you fight the <enemy>.",
-				"Greetings. <questGiver> has asked me to help you fight the <enemy>."
-			]
-		}
-	},
-	//KILL NPC (SINGLE)
-	{
-		"op": "add",
-		"path": "/kill_npc/surrender/avikan",
-		"value": {
-			"default": [
-				"I know when I'm defeated! Put your weapon away, please!",
-				"I surrender! Please, put your weapon away!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/kill_npc/betray/avikan",
-		"value": {
-			"default": [
-				"You're a fool!",
-				"My trap has worked again!",
-				"You've been tricked!"
-			]
-		}
-	},
-	
-//----------------------------------------------------------------------------------------------------------------------
-	
-	//TRINK DIALOGUE
-	//SHARE SECRET
-	{
-		"op": "add",
-		"path": "/share_secret/pleaseTakeReply/trink",
-		"value": {
-			"default": [
-				"Please take this reply back to <questGiver>."
-			]
-		}
-	},
-	//INTIMIDATE
-	{
-		"op": "add",
-		"path": "/intimidate/intimidated/trink",
-		"value": {
-			"default": [
-				"Put that <item> away! Tell <questGiver> I will comply!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/intimidate/notIntimidated/trink",
-		"value": {
-			"default": [
-				"I see no reason to do as <questGiver> wants.",
-				"<questGiver>'s request is illogical. I will not comply."
-			]
-		}
-	},
-	//BRIBE
-	{
-		"op": "add",
-		"path": "/bribe/giftAccepted/trink",
-		"value": {
-			"default": [
-				"Accepting <questGiver>'s bribery is the most efficient solution."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/bribe/giftAccepted2/trink",
-		"value": {
-			"default": [
-				"I am uncertain what <questGiver> wants from me..."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/bribe/requestAdditionToHouse/trink",
-		"value": {
-			"default": [
-				"Please, could you place this gift somewhere in my residence?",
-				"This gift will fit my residence well. Could you place it down somewhere?"
-			]
-		}
-	},
-	//GIFT
-	{
-		"op": "add",
-		"path": "/gift/giftAccepted/trink",
-		"value": {
-			"default": [
-				"This gift is more than satisfactory. Thank <questGiver> for me!",
-				"Please, thank <questGiver> for me!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/gift/giftAccepted2/trink",
-		"value": {
-			"default": [
-				"<questGiver> is a good person."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/gift/requestAdditionToHouse/trink",
-		"value": {
-			"default": [
-				"Please, could you place this gift somewhere in my residence?",
-				"This gift will fit my residence well. Could you place it down somewhere?"
-			]
-		}
-	},
-	//RETURN STOLEN ITEM
-	{
-		"op": "add",
-		"path": "/return_stolen/objectTaken/trink",
-		"value": {
-			"default": [
-				"I tell you the truth. That <item> was acquired with permission!",
-				"That <item> was taken with permission, truly!"
-			]
-		}
-	},
-	//COLLECT FINE
-	{
-		"op": "add",
-		"path": "/collect_fine/fineCollected/trink",
-		"value": {
-			"default": [
-				"Paying the fine is the most efficient solution."
-			]
-		}
-	},
-	//COLLECT GIFT
-	{
-		"op": "add",
-		"path": "/collect_gift/giftProvided/trink",
-		"value": {
-			"default": [
-				"Here is the <item> <questGiver> requested.",
-				"Here is the <item> that <questGiver> requested."
-			]
-		}
-	},
-	//REQUEST CRAFT
-	{
-		"op": "add",
-		"path": "/request_craft/giftProvided/trink",
-		"value": {
-			"default": [
-				"Here is the <item> you asked me to make.",
-				"Take this <item>. It should fulfill your request."
-			]
-		}
-	},
-	//BORROW
-	{
-		"op": "add",
-		"path": "/borrow/giftProvided/trink",
-		"value": {
-			"default": [
-				"Very well, I will lend my <item> to <questGiver>.",
-				"If my <item> can help <questGiver>, then they may certainly use it."
-			]
-		}
-	},
-	//EXTORT
-	{
-		"op": "add",
-		"path": "/extort/giftProvided/trink",
-		"value": {
-			"default": [
-				"Take this <item> then, but leave me alone.",
-				"<questGiver> has chosen an inefficient path, but I will comply. Take the <item>."
-			]
-		}
-	},
-	//HAT
-	{
-		"op": "add",
-		"path": "/hat/crafting/trink",
-		"value": {
-			"default": [
-				"With these materials, I have everything I need. Please, wait a moment.",
-				"That is all we need. Wait a moment, please."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/hat/crafted/trink",
-		"value": {
-			"default": [
-				"All done. Please, take this to <questGiver>.",
-				"I am finished. Take this to <questGiver>, please."
-			]
-		}
-	},
-	//HELMET
-	{
-		"op": "add",
-		"path": "/helmet/crafting/trink",
-		"value": {
-			"default": [
-				"With these materials, I have everything I need. Please, wait a moment.",
-				"That is all we need. Wait a moment, please."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/helmet/crafted/trink",
-		"value": {
-			"default": [
-				"All done. Please, take this to <questGiver>.",
-				"I am finished. Take this to <questGiver>, please."
-			]
-		}
-	},
-	//NEW MERCHANT STOCK
-	{
-		"op": "add",
-		"path": "/new_stock/trade/trink",
-		"value": {
-			"default": [
-				"This is just what I needed. Here's <questGiver>'s order."
-			]
-		}
-	},
-	//KIDNAPPING
-	{
-		"op": "add",
-		"path": "/kidnapping/kidnappersDead/trink",
-		"value": {
-			"default": [
-				"You arrived just in time! Thank you for freeing me.",
-				"You dealt this this situation efficiently. Thank you."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/kidnapping/followHome/trink",
-		"value": {
-			"default": [
-				"Could you take me back to <questGiver>?",
-				"Please, would you accompany me back to <questGiver>?"
-			]
-		}
-	},
-	//ESCORT
-	{
-		"op": "add",
-		"path": "/escort/found/trink",
-		"value": {
-			"default": [
-				"It appears my GPS is broken. Could you take me back to <questGiver>?"
-			]
-		}
-	},
-	//BARTER
-	{
-		"op": "add",
-		"path": "/barter/trade/trink",
-		"value": {
-			"default": [
-				"These goods are exactly what I needed. Here's the <receivedItems> <questGiver> requested."
-			]
-		}
-	},
-	//ESCORT TRADE
-	{
-		"op": "add",
-		"path": "/escort_trade/collectDelivery/trink",
-		"value": {
-			"default": [
-				"Do you have a delivery for me?"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/escort_trade/provideDelivery/trink",
-		"value": {
-			"default": [
-				"Here's your goods. Make efficient use of them."
-			]
-		}
-	},
-	//KILL NPCS
-	{
-		"op": "add",
-		"path": "/kill_npcs/assistantIntro/trink",
-		"value": {
-			"default": [
-				"Greetings. <questGiver> requested that I help you fight the <enemy>.",
-				"<questGiver> requested me to assist you in fighting the <enemy>."
-			]
-		}
-	},
-	//KILL NPC (SINGLE)
-	{
-		"op": "add",
-		"path": "/kill_npc/surrender/trink",
-		"value": {
-			"default": [
-				"I have been defeated. Please, I wish to fight no more.",
-				"I surrender! Please, let us stop this."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/kill_npc/betray/trink",
-		"value": {
-			"default": [
-				"Feigning my surrender was an efficient trick!",
-				"You made a mistake!"
-			]
-		}
-	},
-	
-//----------------------------------------------------------------------------------------------------------------------
-	
-	//DRODEN DIALOGUE
-	//SHARE SECRET
-	{
-		"op": "add",
-		"path": "/share_secret/pleaseTakeReply/droden",
-		"value": {
-			"default": [
-				"Requesting forwarding of this reply to <questGiver>."
-			]
-		}
-	},
-	//INTIMIDATE
-	{
-		"op": "add",
-		"path": "/intimidate/intimidated/droden",
-		"value": {
-			"default": [
-				"Hazardous <item> detected. This unit surrenders to <questGiver>."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/intimidate/notIntimidated/droden",
-		"value": {
-			"default": [
-				"This unit will not surrender to <questGiver>.",
-				"Unit will not comply to <questGiver>'s demands."
-			]
-		}
-	},
-	//BRIBE
-	{
-		"op": "add",
-		"path": "/bribe/giftAccepted/droden",
-		"value": {
-			"default": [
-				"Bribery detected. Accepting."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/bribe/giftAccepted2/droden",
-		"value": {
-			"default": [
-				"Error. Failed to determine <questGiver>'s motives."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/bribe/requestAdditionToHouse/droden",
-		"value": {
-			"default": [
-				"Gift accepted. Requesting item to be placed within the residence.",
-				"Please place this item inside the residence."
-			]
-		}
-	},
-	//GIFT
-	{
-		"op": "add",
-		"path": "/gift/giftAccepted/droden",
-		"value": {
-			"default": [
-				"Gift accepted. Please return message of appreciation to <questGiver>."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/gift/giftAccepted2/droden",
-		"value": {
-			"default": [
-				"<questGiver> is meritful."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/gift/requestAdditionToHouse/droden",
-		"value": {
-			"default": [
-				"Gift accepted. Requesting item to be placed within the residence.",
-				"Please place this item inside the residence."
-			]
-		}
-	},
-	//RETURN STOLEN ITEM
-	{
-		"op": "add",
-		"path": "/return_stolen/objectTaken/droden",
-		"value": {
-			"default": [
-				"This unit acquired <item> legally.",
-				"Returning <item> to original owner."
-			]
-		}
-	},
-	//COLLECT FINE
-	{
-		"op": "add",
-		"path": "/collect_fine/fineCollected/droden",
-		"value": {
-			"default": [
-				"This unit will pay the requested fine."
-			]
-		}
-	},
-	//COLLECT GIFT
-	{
-		"op": "add",
-		"path": "/collect_gift/giftProvided/droden",
-		"value": {
-			"default": [
-				"Requested <item> is ready for delivery. Return to <questGiver>.",
-				"Requesting delivery of <item> back to <questGiver>."
-			]
-		}
-	},
-	//REQUEST CRAFT
-	{
-		"op": "add",
-		"path": "/request_craft/giftProvided/droden",
-		"value": {
-			"default": [
-				"Construction of <item> completed. Proffering."
-			]
-		}
-	},
-	//BORROW
-	{
-		"op": "add",
-		"path": "/borrow/giftProvided/droden",
-		"value": {
-			"default": [
-				"Unit grants <questGiver> permission to take the <item>."
-			]
-		}
-	},
-	//EXTORT
-	{
-		"op": "add",
-		"path": "/extort/giftProvided/droden",
-		"value": {
-			"default": [
-				"This unit is unable to resist. Proffering <item>.",
-				"This unit can not resist <questGiver>. Proffering <item>."
-			]
-		}
-	},
-	//HAT
-	{
-		"op": "add",
-		"path": "/hat/crafting/droden",
-		"value": {
-			"default": [
-				"Detected requested materials. Constructing item.",
-				"Please wait. Unit is constructing item."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/hat/crafted/droden",
-		"value": {
-			"default": [
-				"Requesting delivery of item to <questGiver>."
-			]
-		}
-	},
-	//HELMET
-	{
-		"op": "add",
-		"path": "/helmet/crafting/droden",
-		"value": {
-			"default": [
-				"Detected requested materials. Constructing item.",
-				"Please wait. Unit is constructing item."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/helmet/crafted/droden",
-		"value": {
-			"default": [
-				"Requesting delivery of item to <questGiver>."
-			]
-		}
-	},
-	//NEW MERCHANT STOCK
-	{
-		"op": "add",
-		"path": "/new_stock/trade/droden",
-		"value": {
-			"default": [
-				"Detected requested items. Proffering <questGiver>'s order."
-			]
-		}
-	},
-	//KIDNAPPING
-	{
-		"op": "add",
-		"path": "/kidnapping/kidnappersDead/droden",
-		"value": {
-			"default": [
-				"This unit is grateful.",
-				"Hazard levels stabilizing."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/kidnapping/followHome/droden",
-		"value": {
-			"default": [
-				"Requesting escort to <questGiver>."
-			]
-		}
-	},
-	//ESCORT
-	{
-		"op": "add",
-		"path": "/escort/found/droden",
-		"value": {
-			"default": [
-				"Droden Navigation System unavailable. Requesting escort to <questGiver>.",
-				"Droden Navigation System corrupted. Requesting escort to <questGiver>."
-			]
-		}
-	},
-	//BARTER
-	{
-		"op": "add",
-		"path": "/barter/trade/droden",
-		"value": {
-			"default": [
-				"Accepting delivery of goods. Proferring <receivedItems> requested by <questGiver>."
-			]
-		}
-	},
-	//ESCORT TRADE
-	{
-		"op": "add",
-		"path": "/escort_trade/collectDelivery/droden",
-		"value": {
-			"default": [
-				"Expecting delivery."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/escort_trade/provideDelivery/droden",
-		"value": {
-			"default": [
-				"Providing delivery."
-			]
-		}
-	},
-	//KILL NPCS
-	{
-		"op": "add",
-		"path": "/kill_npcs/assistantIntro/droden",
-		"value": {
-			"default": [
-				"Vas Vha'leih. This unit was ordered by <questGiver> to fight the <enemy>.",
-				"<questGiver> ordered this unit to offer assistance in fighting the <enemy>."
-			]
-		}
-	},
-	//KILL NPC (SINGLE)
-	{
-		"op": "add",
-		"path": "/kill_npc/surrender/droden",
-		"value": {
-			"default": [
-				"Unit surrenders. Requesting assailant to cease attacking."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/kill_npc/betray/droden",
-		"value": {
-			"default": [
-				"Overwriting surrender. Engaging.",
-				"Surrender protocol corrupted. Re-engaging."
-			]
-		}
-	},
-	
-//----------------------------------------------------------------------------------------------------------------------
-	
-	//AEGI DIALOGUE
-	//SHARE SECRET
-	{
-		"op": "add",
-		"path": "/share_secret/pleaseTakeReply/aegi",
-		"value": {
-			"default": [
-				"Please take this reply back to <questGiver>."
-			]
-		}
-	},
-	//INTIMIDATE
-	{
-		"op": "add",
-		"path": "/intimidate/intimidated/aegi",
-		"value": {
-			"default": [
-				"Put that <item> away! Tell <questGiver> I'll do whatever they want!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/intimidate/notIntimidated/aegi",
-		"value": {
-			"default": [
-				"Why would I do what <questGiver> wants? Go bother someone else.",
-				"<questGiver>'s being an idiot. I'll not do as they say."
-			]
-		}
-	},
-	//BRIBE
-	{
-		"op": "add",
-		"path": "/bribe/giftAccepted/aegi",
-		"value": {
-			"default": [
-				"Well, if <questGiver> is really willing to go this far, I guess I'll take it."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/bribe/giftAccepted2/aegi",
-		"value": {
-			"default": [
-				"I still don't know what <questGiver> wants from me..."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/bribe/requestAdditionToHouse/aegi",
-		"value": {
-			"default": [
-				"Hey, could you place this somewhere in my home?",
-				"This will go great with the rest of my things! Can you place it down somewhere?"
-			]
-		}
-	},
-	//GIFT
-	{
-		"op": "add",
-		"path": "/gift/giftAccepted/aegi",
-		"value": {
-			"default": [
-				"Wow, thanks! Be sure to give my thanks to <questGiver>!",
-				"Please, tell <questGiver> I really love their gift!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/gift/giftAccepted2/aegi",
-		"value": {
-			"default": [
-				"<questGiver> is such an awesome person!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/gift/requestAdditionToHouse/aegi",
-		"value": {
-			"default": [
-				"Hey, could you place this gift somewhere amongst my things?",
-				"Would you place this gift in my home somewhere?"
-			]
-		}
-	},
-	//RETURN STOLEN ITEM
-	{
-		"op": "add",
-		"path": "/return_stolen/objectTaken/aegi",
-		"value": {
-			"default": [
-				"Please take this <item> back! I never meant to steal, only borrow it!",
-				"Alright, you got me! Just take this <item> back already..."
-			]
-		}
-	},
-	//COLLECT FINE
-	{
-		"op": "add",
-		"path": "/collect_fine/fineCollected/aegi",
-		"value": {
-			"default": [
-				"I'll pay the fine, alright."
-			]
-		}
-	},
-	//COLLECT GIFT
-	{
-		"op": "add",
-		"path": "/collect_gift/giftProvided/aegi",
-		"value": {
-			"default": [
-				"Here is the <item> that <questGiver> asked for.",
-				"Please, take this. It's the <item> that <questGiver> wanted."
-			]
-		}
-	},
-	//REQUEST CRAFT
-	{
-		"op": "add",
-		"path": "/request_craft/giftProvided/aegi",
-		"value": {
-			"default": [
-				"Here is the <item> you asked me for.",
-				"Take this <item>. I think it'll do the job."
-			]
-		}
-	},
-	//BORROW
-	{
-		"op": "add",
-		"path": "/borrow/giftProvided/aegi",
-		"value": {
-			"default": [
-				"Sure thing, let <questGiver> know they can borrow the <item> for as long as they need.",
-				"If <questGiver> needs my <item>, they borrow it for sure."
-			]
-		}
-	},
-	//EXTORT
-	{
-		"op": "add",
-		"path": "/extort/giftProvided/aegi",
-		"value": {
-			"default": [
-				"Just take this <item>! I just want to be left alone!",
-				"Why won't <questGiver> leave me alone!? Just take the <item> already!"
-			]
-		}
-	},
-	//HAT
-	{
-		"op": "add",
-		"path": "/hat/crafting/aegi",
-		"value": {
-			"default": [
-				"I have everything I need now! I'll be just a moment.",
-				"I'll have it ready in a bit!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/hat/crafted/aegi",
-		"value": {
-			"default": [
-				"Here you go, take this back to <questGiver>.",
-				"Alright, I'm done! Take this back to <questGiver>, please."
-			]
-		}
-	},
-	//HELMET
-	{
-		"op": "add",
-		"path": "/helmet/crafting/aegi",
-		"value": {
-			"default": [
-				"I have everything I need now! I'll be just a moment.",
-				"I'll have it ready in a bit!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/helmet/crafted/aegi",
-		"value": {
-			"default": [
-				"Here you go, take this back to <questGiver>.",
-				"Alright, I'm done! Take this back to <questGiver>, please."
-			]
-		}
-	},
-	//NEW MERCHANT STOCK
-	{
-		"op": "add",
-		"path": "/new_stock/trade/aegi",
-		"value": {
-			"default": [
-				"This is exactly what I was looking for. Here's <questGiver>'s order."
-			]
-		}
-	},
-	//KIDNAPPING
-	{
-		"op": "add",
-		"path": "/kidnapping/kidnappersDead/aegi",
-		"value": {
-			"default": [
-				"My hero! Thank you for the rescue!",
-				"I wouldn't have made it without you, thanks!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/kidnapping/followHome/aegi",
-		"value": {
-			"default": [
-				"Could you take me back to <questGiver>?",
-				"I'm still a bit shaken... Could you accompany me back to <questGiver>?"
-			]
-		}
-	},
-	//ESCORT
-	{
-		"op": "add",
-		"path": "/escort/found/aegi",
-		"value": {
-			"default": [
-				"The batteries on my pathfinder ran out... Can you bring me back to <questGiver>?"
-			]
-		}
-	},
-	//BARTER
-	{
-		"op": "add",
-		"path": "/barter/trade/aegi",
-		"value": {
-			"default": [
-				"That's all I needed, thanks! Take the <receivedItems> <questGiver> needed."
-			]
-		}
-	},
-	//ESCORT TRADE
-	{
-		"op": "add",
-		"path": "/escort_trade/collectDelivery/aegi",
-		"value": {
-			"default": [
-				"Do you have a package for me?"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/escort_trade/provideDelivery/aegi",
-		"value": {
-			"default": [
-				"Here's the goods you asked for. Take good care of it!"
-			]
-		}
-	},
-	//KILL NPCS
-	{
-		"op": "add",
-		"path": "/kill_npcs/assistantIntro/aegi",
-		"value": {
-			"default": [
-				"Hey there. <questGiver> asked me to help you fight the <enemy>.",
-				"<questGiver> hired me to help you fight the <enemy>."
-			]
-		}
-	},
-	//KILL NPC (SINGLE)
-	{
-		"op": "add",
-		"path": "/kill_npc/surrender/aegi",
-		"value": {
-			"default": [
-				"You've defeated me! Please, I surrender!",
-				"I don't want to fight any longer! I surrender!"
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/kill_npc/betray/aegi",
-		"value": {
-			"default": [
-				"You fool, I'd never surrender!",
-				"Ha! Didn't expect this, did you?"
-			]
-		}
+  //===================================================================================================================================
+  // AVIKAN DIALOGUE
+  //===================================================================================================================================
+  //SHARE SECRET
+  {
+	"op": "add",
+	"path": "/share_secret/pleaseTakeReply/avikan",
+	"value": {
+	  "default": [
+		"Would you take this reply back to <questGiver> for me?"
+	  ]
 	}
+  },
+  //INTIMIDATE
+  {
+	"op": "add",
+	"path": "/intimidate/intimidated/avikan",
+	"value": {
+	  "default": [
+		"Don't hurt me with that <item>! Tell <questGiver> I will do as they ask!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/intimidate/notIntimidated/avikan",
+	"value": {
+	  "default": [
+		"Why should I do what <questGiver> wants?",
+		"I've faced worse than you or <questGiver>."
+	  ]
+	}
+  },
+  //BRIBE
+  {
+	"op": "add",
+	"path": "/bribe/giftAccepted/avikan",
+	"value": {
+	  "default": [
+		"So <questGiver> is resorting to bribes now? Very well, then, bring them my thanks.",
+		"Did <questGiver> send this gift? Or is it more of a bribe?"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/bribe/giftAccepted2/avikan",
+	"value": {
+	  "default": [
+		"I wonder what <questGiver> wants from me though..."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/bribe/requestAdditionToHouse/avikan",
+	"value": {
+	  "default": [
+		"I'm certain this gift would look great in my home. Could you place it for me?",
+		"Could you place this gift in my home? I'm certain it would look great!"
+	  ]
+	}
+  },
+  //GIFT
+  {
+	"op": "add",
+	"path": "/gift/giftAccepted/avikan",
+	"value": {
+	  "default": [
+		"This gift is very nice! Please thank <questGiver> for me!",
+		"Could you thank <questGiver> for me? This gift is wonderful!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/gift/giftAccepted2/avikan",
+	"value": {
+	  "default": [
+		"<questGiver> is a good friend.",
+		"<questGiver> is an honourable person."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/gift/requestAdditionToHouse/avikan",
+	"value": {
+	  "default": [
+		"I'm certain this gift would look great in my home. Could you place it for me?",
+		"Could you place this gift in my home? I'm certain it would look great!"
+	  ]
+	}
+  },
+  //RETURN STOLEN ITEM
+  {
+	"op": "add",
+	"path": "/return_stolen/objectTaken/avikan",
+	"value": {
+	  "default": [
+		"I swear on my honour, that <item> was acquired legally!",
+		"I borrowed that <item> with permission - I swear it!"
+	  ]
+	}
+  },
+  //COLLECT FINE
+  {
+	"op": "add",
+	"path": "/collect_fine/fineCollected/avikan",
+	"value": {
+	  "default": [
+		"I'll pay the fine, alright...",
+		"I'm not looking for trouble. I'll pay the fine."
+	  ]
+	}
+  },
+  //COLLECT GIFT
+  {
+	"op": "add",
+	"path": "/collect_gift/giftProvided/avikan",
+	"value": {
+	  "default": [
+		"Here is the <item> you requested. I hope it's what <questGiver> needed.",
+		"Here is the <item> that <questGiver> asked for."
+	  ]
+	}
+  },
+  //REQUEST CRAFT
+  {
+	"op": "add",
+	"path": "/request_craft/giftProvided/avikan",
+	"value": {
+	  "default": [
+		"Here is the <item> you asked me to make.",
+		"I made this <item> earlier. Please, take it!"
+	  ]
+	}
+  },
+  //BORROW
+  {
+	"op": "add",
+	"path": "/borrow/giftProvided/avikan",
+	"value": {
+	  "default": [
+		"Sure, I will lend <questGiver> my <item>.",
+		"If <questGiver> has need of my <item>, they can certainly borrow it."
+	  ]
+	}
+  },
+  //EXTORT
+  {
+	"op": "add",
+	"path": "/extort/giftProvided/avikan",
+	"value": {
+	  "default": [
+		"I know when I'm defeated... Take my <item> then, but leave me alone!",
+		"<questGiver> lost their honour. Fine then, take the <item>!"
+	  ]
+	}
+  },
+  //HAT
+  {
+	"op": "add",
+	"path": "/hat/crafting/avikan",
+	"value": {
+	  "default": [
+		"You've secured the materials? Hold a moment, I'll get to work immediately...",
+		"I see you have everything we need! Hold a moment, I just need some time to craft..."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/hat/crafted/avikan",
+	"value": {
+	  "default": [
+		"Here you go! Please, take this to <questGiver> for me.",
+		"I'm all done! Take this to <questGiver>, would you?"
+	  ]
+	}
+  },
+  //HELMET
+  {
+	"op": "add",
+	"path": "/helmet/crafting/avikan",
+	"value": {
+	  "default": [
+		"You've secured the materials? Hold a moment, I'll get to work immediately...",
+		"I see you have everything we need! Hold a moment, I just need some time to craft..."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/helmet/crafted/avikan",
+	"value": {
+	  "default": [
+		"Here you go! Please, take this to <questGiver> for me.",
+		"I'm all done! Take this to <questGiver>, would you?"
+	  ]
+	}
+  },
+  //NEW MERCHANT STOCK
+  {
+	"op": "add",
+	"path": "/new_stock/trade/avikan",
+	"value": {
+	  "default": [
+		"Thank you for delivering this. Here's what <questGiver> needed."
+	  ]
+	}
+  },
+  //KIDNAPPING
+  {
+	"op": "add",
+	"path": "/kidnapping/kidnappersDead/avikan",
+	"value": {
+	  "default": [
+		"You were sent by Rhadeis! Thank you for rescuing me!",
+		"Thank you for getting me out of that mess!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/kidnapping/followHome/avikan",
+	"value": {
+	  "default": [
+		"Could you please take me back home to <questGiver>?",
+		"I'll need some time to recover from this... Could you take me to <questGiver>?"
+	  ]
+	}
+  },
+  //ESCORT
+  {
+	"op": "add",
+	"path": "/escort/found/avikan",
+	"value": {
+	  "default": [
+		"I'm think I'm lost... Could you take me back to <questGiver>?",
+		"I've lost my way... Could you please take me back to <questGiver>?"
+	  ]
+	}
+  },
+  //BARTER
+  {
+	"op": "add",
+	"path": "/barter/trade/avikan",
+	"value": {
+	  "default": [
+		"Thank you for bringing me these goods. Here's the <receivedItems> <questGiver> needed."
+	  ]
+	}
+  },
+  //ESCORT TRADE
+  {
+	"op": "add",
+	"path": "/escort_trade/collectDelivery/avikan",
+	"value": {
+	  "default": [
+		"Do you have a delivery for me?"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/escort_trade/provideDelivery/avikan",
+	"value": {
+	  "default": [
+		"Here's your goods. Do enjoy them!"
+	  ]
+	}
+  },
+  //KILL NPCS
+  {
+	"op": "add",
+	"path": "/kill_npcs/assistantIntro/avikan",
+	"value": {
+	  "default": [
+		"Vas Vha'leih. <questGiver> asked me to help you fight the <enemy>.",
+		"Greetings. <questGiver> has asked me to help you fight the <enemy>."
+	  ]
+	}
+  },
+  //KILL NPC (SINGLE)
+  {
+	"op": "add",
+	"path": "/kill_npc/surrender/avikan",
+	"value": {
+	  "default": [
+		"I know when I'm defeated! Put your weapon away, please!",
+		"I surrender! Please, put your weapon away!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/kill_npc/betray/avikan",
+	"value": {
+	  "default": [
+		"You're a fool!",
+		"My trap has worked again!",
+		"You've been tricked!"
+	  ]
+	}
+  },
+  
+  //===================================================================================================================================
+  // TRINK DIALOGUE
+  //===================================================================================================================================
+  //SHARE SECRET
+  {
+	"op": "add",
+	"path": "/share_secret/pleaseTakeReply/trink",
+	"value": {
+	  "default": [
+		"Please take this reply back to <questGiver>."
+	  ]
+	}
+  },
+  //INTIMIDATE
+  {
+	"op": "add",
+	"path": "/intimidate/intimidated/trink",
+	"value": {
+	  "default": [
+		"Put that <item> away! Tell <questGiver> I will comply!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/intimidate/notIntimidated/trink",
+	"value": {
+	  "default": [
+		"I see no reason to do as <questGiver> wants.",
+		"<questGiver>'s request is illogical. I will not comply."
+	  ]
+	}
+  },
+  //BRIBE
+  {
+	"op": "add",
+	"path": "/bribe/giftAccepted/trink",
+	"value": {
+	  "default": [
+		"Accepting <questGiver>'s bribery is the most efficient solution."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/bribe/giftAccepted2/trink",
+	"value": {
+	  "default": [
+		"I am uncertain what <questGiver> wants from me..."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/bribe/requestAdditionToHouse/trink",
+	"value": {
+	  "default": [
+		"Please, could you place this gift somewhere in my residence?",
+		"This gift will fit my residence well. Could you place it down somewhere?"
+	  ]
+	}
+  },
+  //GIFT
+  {
+	"op": "add",
+	"path": "/gift/giftAccepted/trink",
+	"value": {
+	  "default": [
+		"This gift is more than satisfactory. Thank <questGiver> for me!",
+		"Please, thank <questGiver> for me!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/gift/giftAccepted2/trink",
+	"value": {
+	  "default": [
+		"<questGiver> is a good person."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/gift/requestAdditionToHouse/trink",
+	"value": {
+	  "default": [
+		"Please, could you place this gift somewhere in my residence?",
+		"This gift will fit my residence well. Could you place it down somewhere?"
+	  ]
+	}
+  },
+  //RETURN STOLEN ITEM
+  {
+	"op": "add",
+	"path": "/return_stolen/objectTaken/trink",
+	"value": {
+	  "default": [
+		"I tell you the truth. That <item> was acquired with permission!",
+		"That <item> was taken with permission, truly!"
+	  ]
+	}
+  },
+  //COLLECT FINE
+  {
+	"op": "add",
+	"path": "/collect_fine/fineCollected/trink",
+	"value": {
+	  "default": [
+		"Paying the fine is the most efficient solution."
+	  ]
+	}
+  },
+  //COLLECT GIFT
+  {
+	"op": "add",
+	"path": "/collect_gift/giftProvided/trink",
+	"value": {
+	  "default": [
+		"Here is the <item> <questGiver> requested.",
+		"Here is the <item> that <questGiver> requested."
+	  ]
+	}
+  },
+  //REQUEST CRAFT
+  {
+	"op": "add",
+	"path": "/request_craft/giftProvided/trink",
+	"value": {
+	  "default": [
+		"Here is the <item> you asked me to make.",
+		"Take this <item>. It should fulfill your request."
+	  ]
+	}
+  },
+  //BORROW
+  {
+	"op": "add",
+	"path": "/borrow/giftProvided/trink",
+	"value": {
+	  "default": [
+		"Very well, I will lend my <item> to <questGiver>.",
+		"If my <item> can help <questGiver>, then they may certainly use it."
+	  ]
+	}
+  },
+  //EXTORT
+  {
+	"op": "add",
+	"path": "/extort/giftProvided/trink",
+	"value": {
+	  "default": [
+		"Take this <item> then, but leave me alone.",
+		"<questGiver> has chosen an inefficient path, but I will comply. Take the <item>."
+	  ]
+	}
+  },
+  //HAT
+  {
+	"op": "add",
+	"path": "/hat/crafting/trink",
+	"value": {
+	  "default": [
+		"With these materials, I have everything I need. Please, wait a moment.",
+		"That is all we need. Wait a moment, please."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/hat/crafted/trink",
+	"value": {
+	  "default": [
+		"All done. Please, take this to <questGiver>.",
+		"I am finished. Take this to <questGiver>, please."
+	  ]
+	}
+  },
+  //HELMET
+  {
+	"op": "add",
+	"path": "/helmet/crafting/trink",
+	"value": {
+	  "default": [
+		"With these materials, I have everything I need. Please, wait a moment.",
+		"That is all we need. Wait a moment, please."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/helmet/crafted/trink",
+	"value": {
+	  "default": [
+		"All done. Please, take this to <questGiver>.",
+		"I am finished. Take this to <questGiver>, please."
+	  ]
+	}
+  },
+  //NEW MERCHANT STOCK
+  {
+	"op": "add",
+	"path": "/new_stock/trade/trink",
+	"value": {
+	  "default": [
+		"This is just what I needed. Here's <questGiver>'s order."
+	  ]
+	}
+  },
+  //KIDNAPPING
+  {
+	"op": "add",
+	"path": "/kidnapping/kidnappersDead/trink",
+	"value": {
+	  "default": [
+		"You arrived just in time! Thank you for freeing me.",
+		"You dealt this this situation efficiently. Thank you."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/kidnapping/followHome/trink",
+	"value": {
+	  "default": [
+		"Could you take me back to <questGiver>?",
+		"Please, would you accompany me back to <questGiver>?"
+	  ]
+	}
+  },
+  //ESCORT
+  {
+	"op": "add",
+	"path": "/escort/found/trink",
+	"value": {
+	  "default": [
+		"It appears my GPS is broken. Could you take me back to <questGiver>?"
+	  ]
+	}
+  },
+  //BARTER
+  {
+	"op": "add",
+	"path": "/barter/trade/trink",
+	"value": {
+	  "default": [
+		"These goods are exactly what I needed. Here's the <receivedItems> <questGiver> requested."
+	  ]
+	}
+  },
+  //ESCORT TRADE
+  {
+	"op": "add",
+	"path": "/escort_trade/collectDelivery/trink",
+	"value": {
+	  "default": [
+		"Do you have a delivery for me?"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/escort_trade/provideDelivery/trink",
+	"value": {
+	  "default": [
+		"Here's your goods. Make efficient use of them."
+	  ]
+	}
+  },
+  //KILL NPCS
+  {
+	"op": "add",
+	"path": "/kill_npcs/assistantIntro/trink",
+	"value": {
+	  "default": [
+		"Greetings. <questGiver> requested that I help you fight the <enemy>.",
+		"<questGiver> requested me to assist you in fighting the <enemy>."
+	  ]
+	}
+  },
+  //KILL NPC (SINGLE)
+  {
+	"op": "add",
+	"path": "/kill_npc/surrender/trink",
+	"value": {
+	  "default": [
+		"I have been defeated. Please, I wish to fight no more.",
+		"I surrender! Please, let us stop this."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/kill_npc/betray/trink",
+	"value": {
+	  "default": [
+		"Feigning my surrender was an efficient trick!",
+		"You made a mistake!"
+	  ]
+	}
+  },
+  
+  //===================================================================================================================================
+  // DRODEN DIALOGUE
+  //===================================================================================================================================
+  //SHARE SECRET
+  {
+	"op": "add",
+	"path": "/share_secret/pleaseTakeReply/droden",
+	"value": {
+	  "default": [
+		"Requesting forwarding of this reply to <questGiver>."
+	  ]
+	}
+  },
+  //INTIMIDATE
+  {
+	"op": "add",
+	"path": "/intimidate/intimidated/droden",
+	"value": {
+	  "default": [
+		"Hazardous <item> detected. This unit surrenders to <questGiver>."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/intimidate/notIntimidated/droden",
+	"value": {
+	  "default": [
+		"This unit will not surrender to <questGiver>.",
+		"Unit will not comply to <questGiver>'s demands."
+	  ]
+	}
+  },
+  //BRIBE
+  {
+	"op": "add",
+	"path": "/bribe/giftAccepted/droden",
+	"value": {
+	  "default": [
+		"Bribery detected. Accepting."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/bribe/giftAccepted2/droden",
+	"value": {
+	  "default": [
+		"Error. Failed to determine <questGiver>'s motives."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/bribe/requestAdditionToHouse/droden",
+	"value": {
+	  "default": [
+		"Gift accepted. Requesting item to be placed within the residence.",
+		"Please place this item inside the residence."
+	  ]
+	}
+  },
+  //GIFT
+  {
+	"op": "add",
+	"path": "/gift/giftAccepted/droden",
+	"value": {
+	  "default": [
+		"Gift accepted. Please return message of appreciation to <questGiver>."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/gift/giftAccepted2/droden",
+	"value": {
+	  "default": [
+		"<questGiver> is meritful."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/gift/requestAdditionToHouse/droden",
+	"value": {
+	  "default": [
+		"Gift accepted. Requesting item to be placed within the residence.",
+		"Please place this item inside the residence."
+	  ]
+	}
+  },
+  //RETURN STOLEN ITEM
+  {
+	"op": "add",
+	"path": "/return_stolen/objectTaken/droden",
+	"value": {
+	  "default": [
+		"This unit acquired <item> legally.",
+		"Returning <item> to original owner."
+	  ]
+	}
+  },
+  //COLLECT FINE
+  {
+	"op": "add",
+	"path": "/collect_fine/fineCollected/droden",
+	"value": {
+	  "default": [
+		"This unit will pay the requested fine."
+	  ]
+	}
+  },
+  //COLLECT GIFT
+  {
+	"op": "add",
+	"path": "/collect_gift/giftProvided/droden",
+	"value": {
+	  "default": [
+		"Requested <item> is ready for delivery. Return to <questGiver>.",
+		"Requesting delivery of <item> back to <questGiver>."
+	  ]
+	}
+  },
+  //REQUEST CRAFT
+  {
+	"op": "add",
+	"path": "/request_craft/giftProvided/droden",
+	"value": {
+	  "default": [
+		"Construction of <item> completed. Proffering."
+	  ]
+	}
+  },
+  //BORROW
+  {
+	"op": "add",
+	"path": "/borrow/giftProvided/droden",
+	"value": {
+	  "default": [
+		"Unit grants <questGiver> permission to take the <item>."
+	  ]
+	}
+  },
+  //EXTORT
+  {
+	"op": "add",
+	"path": "/extort/giftProvided/droden",
+	"value": {
+	  "default": [
+		"This unit is unable to resist. Proffering <item>.",
+		"This unit can not resist <questGiver>. Proffering <item>."
+	  ]
+	}
+  },
+  //HAT
+  {
+	"op": "add",
+	"path": "/hat/crafting/droden",
+	"value": {
+	  "default": [
+		"Detected requested materials. Constructing item.",
+		"Please wait. Unit is constructing item."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/hat/crafted/droden",
+	"value": {
+	  "default": [
+		"Requesting delivery of item to <questGiver>."
+	  ]
+	}
+  },
+  //HELMET
+  {
+	"op": "add",
+	"path": "/helmet/crafting/droden",
+	"value": {
+	  "default": [
+		"Detected requested materials. Constructing item.",
+		"Please wait. Unit is constructing item."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/helmet/crafted/droden",
+	"value": {
+	  "default": [
+		"Requesting delivery of item to <questGiver>."
+	  ]
+	}
+  },
+  //NEW MERCHANT STOCK
+  {
+	"op": "add",
+	"path": "/new_stock/trade/droden",
+	"value": {
+	  "default": [
+		"Detected requested items. Proffering <questGiver>'s order."
+	  ]
+	}
+  },
+  //KIDNAPPING
+  {
+	"op": "add",
+	"path": "/kidnapping/kidnappersDead/droden",
+	"value": {
+	  "default": [
+		"This unit is grateful.",
+		"Hazard levels stabilizing."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/kidnapping/followHome/droden",
+	"value": {
+	  "default": [
+		"Requesting escort to <questGiver>."
+	  ]
+	}
+  },
+  //ESCORT
+  {
+	"op": "add",
+	"path": "/escort/found/droden",
+	"value": {
+	  "default": [
+		"Droden Navigation System unavailable. Requesting escort to <questGiver>.",
+		"Droden Navigation System corrupted. Requesting escort to <questGiver>."
+	  ]
+	}
+  },
+  //BARTER
+  {
+	"op": "add",
+	"path": "/barter/trade/droden",
+	"value": {
+	  "default": [
+		"Accepting delivery of goods. Proffering <receivedItems> requested by <questGiver>."
+	  ]
+	}
+  },
+  //ESCORT TRADE
+  {
+	"op": "add",
+	"path": "/escort_trade/collectDelivery/droden",
+	"value": {
+	  "default": [
+		"Expecting delivery."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/escort_trade/provideDelivery/droden",
+	"value": {
+	  "default": [
+		"Providing delivery."
+	  ]
+	}
+  },
+  //KILL NPCS
+  {
+	"op": "add",
+	"path": "/kill_npcs/assistantIntro/droden",
+	"value": {
+	  "default": [
+		"Vas Vha'leih. This unit was ordered by <questGiver> to fight the <enemy>.",
+		"<questGiver> ordered this unit to offer assistance in fighting the <enemy>."
+	  ]
+	}
+  },
+  //KILL NPC (SINGLE)
+  {
+	"op": "add",
+	"path": "/kill_npc/surrender/droden",
+	"value": {
+	  "default": [
+		"Unit surrenders. Requesting assailant to cease attacking."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/kill_npc/betray/droden",
+	"value": {
+	  "default": [
+		"Overwriting surrender. Engaging.",
+		"Surrender protocol corrupted. Re-engaging."
+	  ]
+	}
+  },
+  
+  //===================================================================================================================================
+  // AEGI DIALOGUE
+  //===================================================================================================================================
+  //SHARE SECRET
+  {
+	"op": "add",
+	"path": "/share_secret/pleaseTakeReply/aegi",
+	"value": {
+	  "default": [
+		"Please take this reply back to <questGiver>."
+	  ]
+	}
+  },
+  //INTIMIDATE
+  {
+	"op": "add",
+	"path": "/intimidate/intimidated/aegi",
+	"value": {
+	  "default": [
+		"Put that <item> away! Tell <questGiver> I'll do whatever they want!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/intimidate/notIntimidated/aegi",
+	"value": {
+	  "default": [
+		"Why would I do what <questGiver> wants? Go bother someone else.",
+		"<questGiver>'s being an idiot. I'll not do as they say."
+	  ]
+	}
+  },
+  //BRIBE
+  {
+	"op": "add",
+	"path": "/bribe/giftAccepted/aegi",
+	"value": {
+	  "default": [
+		"Well, if <questGiver> is really willing to go this far, I guess I'll take it."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/bribe/giftAccepted2/aegi",
+	"value": {
+	  "default": [
+		"I still don't know what <questGiver> wants from me..."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/bribe/requestAdditionToHouse/aegi",
+	"value": {
+	  "default": [
+		"Hey, could you place this somewhere in my home?",
+		"This will go great with the rest of my things! Can you place it down somewhere?"
+	  ]
+	}
+  },
+  //GIFT
+  {
+	"op": "add",
+	"path": "/gift/giftAccepted/aegi",
+	"value": {
+	  "default": [
+		"Wow, thanks! Be sure to give my thanks to <questGiver>!",
+		"Please, tell <questGiver> I really love their gift!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/gift/giftAccepted2/aegi",
+	"value": {
+	  "default": [
+		"<questGiver> is such an awesome person!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/gift/requestAdditionToHouse/aegi",
+	"value": {
+	  "default": [
+		"Hey, could you place this gift somewhere amongst my things?",
+		"Would you place this gift in my home somewhere?"
+	  ]
+	}
+  },
+  //RETURN STOLEN ITEM
+  {
+	"op": "add",
+	"path": "/return_stolen/objectTaken/aegi",
+	"value": {
+	  "default": [
+		"Please take this <item> back! I never meant to steal, only borrow it!",
+		"Alright, you got me! Just take this <item> back already..."
+	  ]
+	}
+  },
+  //COLLECT FINE
+  {
+	"op": "add",
+	"path": "/collect_fine/fineCollected/aegi",
+	"value": {
+	  "default": [
+		"I'll pay the fine, alright."
+	  ]
+	}
+  },
+  //COLLECT GIFT
+  {
+	"op": "add",
+	"path": "/collect_gift/giftProvided/aegi",
+	"value": {
+	  "default": [
+		"Here is the <item> that <questGiver> asked for.",
+		"Please, take this. It's the <item> that <questGiver> wanted."
+	  ]
+	}
+  },
+  //REQUEST CRAFT
+  {
+	"op": "add",
+	"path": "/request_craft/giftProvided/aegi",
+	"value": {
+	  "default": [
+		"Here is the <item> you asked me for.",
+		"Take this <item>. I think it'll do the job."
+	  ]
+	}
+  },
+  //BORROW
+  {
+	"op": "add",
+	"path": "/borrow/giftProvided/aegi",
+	"value": {
+	  "default": [
+		"Sure thing, let <questGiver> know they can borrow the <item> for as long as they need.",
+		"If <questGiver> needs my <item>, they borrow it for sure."
+	  ]
+	}
+  },
+  //EXTORT
+  {
+	"op": "add",
+	"path": "/extort/giftProvided/aegi",
+	"value": {
+	  "default": [
+		"Just take this <item>! I just want to be left alone!",
+		"Why won't <questGiver> leave me alone!? Just take the <item> already!"
+	  ]
+	}
+  },
+  //HAT
+  {
+	"op": "add",
+	"path": "/hat/crafting/aegi",
+	"value": {
+	  "default": [
+		"I have everything I need now! I'll be just a moment.",
+		"I'll have it ready in a bit!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/hat/crafted/aegi",
+	"value": {
+	  "default": [
+		"Here you go, take this back to <questGiver>.",
+		"Alright, I'm done! Take this back to <questGiver>, please."
+	  ]
+	}
+  },
+  //HELMET
+  {
+	"op": "add",
+	"path": "/helmet/crafting/aegi",
+	"value": {
+	  "default": [
+		"I have everything I need now! I'll be just a moment.",
+		"I'll have it ready in a bit!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/helmet/crafted/aegi",
+	"value": {
+	  "default": [
+		"Here you go, take this back to <questGiver>.",
+		"Alright, I'm done! Take this back to <questGiver>, please."
+	  ]
+	}
+  },
+  //NEW MERCHANT STOCK
+  {
+	"op": "add",
+	"path": "/new_stock/trade/aegi",
+	"value": {
+	  "default": [
+		"This is exactly what I was looking for. Here's <questGiver>'s order."
+	  ]
+	}
+  },
+  //KIDNAPPING
+  {
+	"op": "add",
+	"path": "/kidnapping/kidnappersDead/aegi",
+	"value": {
+	  "default": [
+		"My hero! Thank you for the rescue!",
+		"I wouldn't have made it without you, thanks!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/kidnapping/followHome/aegi",
+	"value": {
+	  "default": [
+		"Could you take me back to <questGiver>?",
+		"I'm still a bit shaken... Could you accompany me back to <questGiver>?"
+	  ]
+	}
+  },
+  //ESCORT
+  {
+	"op": "add",
+	"path": "/escort/found/aegi",
+	"value": {
+	  "default": [
+		"The batteries on my pathfinder ran out... Can you bring me back to <questGiver>?"
+	  ]
+	}
+  },
+  //BARTER
+  {
+	"op": "add",
+	"path": "/barter/trade/aegi",
+	"value": {
+	  "default": [
+		"That's all I needed, thanks! Take the <receivedItems> <questGiver> needed."
+	  ]
+	}
+  },
+  //ESCORT TRADE
+  {
+	"op": "add",
+	"path": "/escort_trade/collectDelivery/aegi",
+	"value": {
+	  "default": [
+		"Do you have a package for me?"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/escort_trade/provideDelivery/aegi",
+	"value": {
+	  "default": [
+		"Here's the goods you asked for. Take good care of it!"
+	  ]
+	}
+  },
+  //KILL NPCS
+  {
+	"op": "add",
+	"path": "/kill_npcs/assistantIntro/aegi",
+	"value": {
+	  "default": [
+		"Hey there. <questGiver> asked me to help you fight the <enemy>.",
+		"<questGiver> hired me to help you fight the <enemy>."
+	  ]
+	}
+  },
+  //KILL NPC (SINGLE)
+  {
+	"op": "add",
+	"path": "/kill_npc/surrender/aegi",
+	"value": {
+	  "default": [
+		"You've defeated me! Please, I surrender!",
+		"I don't want to fight any longer! I surrender!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/kill_npc/betray/aegi",
+	"value": {
+	  "default": [
+		"You fool, I'd never surrender!",
+		"Ha! Didn't expect this, did you?"
+	  ]
+	}
+  },
+  
+  //===================================================================================================================================
+  // AKKIMARI DIALOGUE
+  //===================================================================================================================================
+  //SHARE SECRET
+  {
+	"op": "add",
+	"path": "/share_secret/pleaseTakeReply/akkimari",
+	"value": {
+	  "default": [
+		"You take reply back to <questGiver>. Akki grateful!"
+	  ]
+	}
+  },
+  //INTIMIDATE
+  {
+	"op": "add",
+	"path": "/intimidate/intimidated/akkimari",
+	"value": {
+	  "default": [
+		"Get <item> out of face-Akki! Akki do what <questGiver> want!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/intimidate/notIntimidated/akkimari",
+	"value": {
+	  "default": [
+		"Akki no do what <questGiver> wants. Bugger off.",
+		"<questGiver> is fool. Akki no do what they want. Akki do what Akki want!"
+	  ]
+	}
+  },
+  //BRIBE
+  {
+	"op": "add",
+	"path": "/bribe/giftAccepted/akkimari",
+	"value": {
+	  "default": [
+		"Akki accept bribe-<questGiver>. Akki like being paid."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/bribe/giftAccepted2/akkimari",
+	"value": {
+	  "default": [
+		"Akki still no know what <questGiver> want..."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/bribe/requestAdditionToHouse/akkimari",
+	"value": {
+	  "default": [
+		"You place this is home-Akki. Akki grateful.",
+		"This fit in home-Akki. You place it somewhere, yes?"
+	  ]
+	}
+  },
+  //GIFT
+  {
+	"op": "add",
+	"path": "/gift/giftAccepted/akkimari",
+	"value": {
+	  "default": [
+		"Akki happy! You thank <questGiver>!",
+		"You tell <questGiver> Akki like-like it!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/gift/giftAccepted2/akkimari",
+	"value": {
+	  "default": [
+		"<questGiver> is person-good. Nokki make Akki happy!"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/gift/requestAdditionToHouse/akkimari",
+	"value": {
+	  "default": [
+		"You place gift-Akki in home-Akki, yes?",
+		"Akki like gift! You place in home-Akki?"
+	  ]
+	}
+  },
+  //RETURN STOLEN ITEM
+  {
+	"op": "add",
+	"path": "/return_stolen/objectTaken/akkimari",
+	"value": {
+	  "default": [
+		"Akki no steal <item>! Only borrow!",
+		"Akki stole <item>, yes... Now you catch Akki, take <item> back. Akki done with it anyway."
+	  ]
+	}
+  },
+  //COLLECT FINE
+  {
+	"op": "add",
+	"path": "/collect_fine/fineCollected/akkimari",
+	"value": {
+	  "default": [
+		"Akki pay fine, but Akki no happy about it."
+	  ]
+	}
+  },
+  //COLLECT GIFT
+  {
+	"op": "add",
+	"path": "/collect_gift/giftProvided/akkimari",
+	"value": {
+	  "default": [
+		"You take <item> that <questGiver> want.",
+		"Akki give you <item>. <questGiver> want it."
+	  ]
+	}
+  },
+  //REQUEST CRAFT
+  {
+	"op": "add",
+	"path": "/request_craft/giftProvided/akkimari",
+	"value": {
+	  "default": [
+		"Akki finish <item>. You take it now, yes?",
+		"You take <item>. Akki just finish it."
+	  ]
+	}
+  },
+  //BORROW
+  {
+	"op": "add",
+	"path": "/borrow/giftProvided/akkimari",
+	"value": {
+	  "default": [
+		"Akki let <questGiver> borrow <item>.",
+		"If <questGiver> want <item>, <questGiver> can have it. For now."
+	  ]
+	}
+  },
+  //EXTORT
+  {
+	"op": "add",
+	"path": "/extort/giftProvided/akkimari",
+	"value": {
+	  "default": [
+		"You take <item>! Akki just want to be left alone!",
+		"<questGiver> should leave Akki alone! You take <item>, Akki no want it anyway!"
+	  ]
+	}
+  },
+  //HAT
+  {
+	"op": "add",
+	"path": "/hat/crafting/akkimari",
+	"value": {
+	  "default": [
+		"That all Akki need. You wait.",
+		"You wait while Akki work."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/hat/crafted/akkimari",
+	"value": {
+	  "default": [
+		"Akki done now! You take it back to <questGiver>.",
+		"You take this to <questGiver>, Akki done crafting."
+	  ]
+	}
+  },
+  //HELMET
+  {
+	"op": "add",
+	"path": "/helmet/crafting/akkimari",
+	"value": {
+	  "default": [
+		"That all Akki need. You wait.",
+		"You wait while Akki work."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/helmet/crafted/akkimari",
+	"value": {
+	  "default": [
+		"Akki done now! You take it back to <questGiver>.",
+		"You take this to <questGiver>, Akki done crafting."
+	  ]
+	}
+  },
+  //NEW MERCHANT STOCK
+  {
+	"op": "add",
+	"path": "/new_stock/trade/akkimari",
+	"value": {
+	  "default": [
+		"Akki wanted that! You take order-<questGiver>."
+	  ]
+	}
+  },
+  //KIDNAPPING
+  {
+	"op": "add",
+	"path": "/kidnapping/kidnappersDead/akkimari",
+	"value": {
+	  "default": [
+		"You hero! Akki safe now, Akki grateful.",
+		"Akki unarmed, you help! Akki like you."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/kidnapping/followHome/akkimari",
+	"value": {
+	  "default": [
+		"Akki lost now. You take Akki to <questGiver>?",
+		"You take Akki to <questGiver>? Akki no know the way home..."
+	  ]
+	}
+  },
+  //ESCORT
+  {
+	"op": "add",
+	"path": "/escort/found/akkimari",
+	"value": {
+	  "default": [
+		"Akki wandering around, then suddenly Akki lost... You take Akki to <questGiver>?"
+	  ]
+	}
+  },
+  //BARTER
+  {
+	"op": "add",
+	"path": "/barter/trade/akkimari",
+	"value": {
+	  "default": [
+		"Akki wanted that, grateful. You take <receivedItems> to <questGiver>."
+	  ]
+	}
+  },
+  //ESCORT TRADE
+  {
+	"op": "add",
+	"path": "/escort_trade/collectDelivery/akkimari",
+	"value": {
+	  "default": [
+		"You have package for Akki?"
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/escort_trade/provideDelivery/akkimari",
+	"value": {
+	  "default": [
+		"You take these!"
+	  ]
+	}
+  },
+  //KILL NPCS
+  {
+	"op": "add",
+	"path": "/kill_npcs/assistantIntro/akkimari",
+	"value": {
+	  "default": [
+		"Akki help you fight <enemy>! <questGiver> sent for Akki.",
+		"<questGiver> sent Akki to fight <enemy>."
+	  ]
+	}
+  },
+  //KILL NPC (SINGLE)
+  {
+	"op": "add",
+	"path": "/kill_npc/surrender/akkimari",
+	"value": {
+	  "default": [
+		"Akki beaten! Akki give up, you win...",
+		"Akki no want to die! You win, Akki give up..."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/kill_npc/betray/akkimari",
+	"value": {
+	  "default": [
+		"You fool, Akki trick you! Akki kill you now!",
+		"Akki trickster, fool you! You dead now!"
+	  ]
+	}
+  }
 ]

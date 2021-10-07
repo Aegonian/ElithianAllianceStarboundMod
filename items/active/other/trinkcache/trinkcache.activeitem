@@ -14,7 +14,8 @@
   "inventoryIcon" : "trinkcacheicon.png",
   "animation" : "trinkcache.animation",
   "animationParts" : {
-    "treasurebox" : "trinkcache.png"
+    "treasurebox" : "trinkcache.png",
+    "lights" : "trinkcachelights.png"
   },
   "animationCustom" : {
     "sounds" : {

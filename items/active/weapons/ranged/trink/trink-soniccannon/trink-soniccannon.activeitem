@@ -4,13 +4,14 @@
   "inventoryIcon" : "trink-soniccannonicon.png",
   "maxStack" : 1,
   "rarity" : "legendary",
-  "description" : "Fires a powerful blast of air which knocks enemies back.",
+  "description" : "^gray;Fires a powerful blast of air which knocks enemies back.",
+  "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "Trinkian Sonic Cannon",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Sonic Cannon",
-  "itemTags" : ["weapon","ranged","trink","sonicrifle"],
+  "itemTags" : ["weapon","ranged","trink","sonicrifle","trinkfactory"],
   "twoHanded" : true,
   
   "cursor" : "/cursors/thea-windowreticle.cursor",
@@ -94,5 +95,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

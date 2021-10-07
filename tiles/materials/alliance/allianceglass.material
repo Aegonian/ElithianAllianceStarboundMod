@@ -11,6 +11,7 @@
   "novakidDescription" : "This glass is clean as a new revolver.",
   
   "drodenDescription" : "Analysis complete. Multi-pane plastic.",
+  "akkimariDescription" : "Plastic-clear, look like glass.",
 
   "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
   "health" : 2,
@@ -22,7 +23,7 @@
     "variants" : 1,
     "lightTransparent" : true,
     "occludesBelow" : false,
-    "multiColored" : false,
+    "multiColored" : true,
     "zLevel" : 10
   }
 }

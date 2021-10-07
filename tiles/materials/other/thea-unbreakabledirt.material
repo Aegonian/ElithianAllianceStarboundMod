@@ -3,11 +3,13 @@
   "materialName" : "thea-unbreakabledirt",
   "particleColor" : [112, 72, 39, 255],
   "itemDrop" : "dirtmaterial",
-  "description" : "Dirty looking dirt.",
   "shortdescription" : "Dirt",
+  
+  "description" : "Dirty looking dirt.",
   "glitchDescription" : "Indifferent. This is basic soil.",
   "floranDescription" : "Filthy dirt!",
   "novakidDescription" : "Dirty lookin' dirt.",
+  
   "footstepSound" : "/sfx/blocks/footstep_dirt.ogg",
   "tillableMod" : 32,
   "soil" : true,

@@ -18,7 +18,7 @@
 
   "aegiDescription" : "Crystal clear water for sale here.",
   "avikanDescription" : "Water - a rare resource on Kadavan, but one that is absolutely essential to our survival.",
-  "erixianDescription" : "Water is scarce on Kadavan, but Heragon has even less of it.",
+  "draunaarDescription" : "TODO",
   "trinkDescription" : "Crystal clear water. The Avikan value it more than most.",
   "hymidDescription" : "I can't imagine what it must be like to live in a place where water is scarce...",
   "notixDescription" : "The Avikan value water over gold.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO",
   "hyvonDescription" : "TODO",
   "drodenDescription" : "Detected water supply. Readings indicate a low level of contamination.",
+  "akkimariDescription" : "Water. Akki drink up here.",
 
   "inventoryIcon" : "avikanmarketstallwatericon.png",
   "orientations" : [

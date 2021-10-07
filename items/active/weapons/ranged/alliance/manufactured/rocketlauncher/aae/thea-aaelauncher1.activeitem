@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-aaelauncher1.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A standard-issue Alliance rocket launcher.",
+  "description" : "^gray;A standard-issue Alliance rocket launcher.^reset;",
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Bahamur L-2",
   "level" : 6,

@@ -4,12 +4,13 @@
   "inventoryIcon" : "avikan-harpoongunicon.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "Harvests monster bones and leather.",
+  "description" : "^gray;Harvests monster bones and leather.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Vanguard Harpoon Gun",
   "level" : 6,
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Harpoon Gun",
-  "itemTags" : ["weapon","ranged","sniperrifle","avikan"],
+  "itemTags" : ["weapon","ranged","sniperrifle","avikan","vanguard"],
   "twoHanded" : true,
 
   "radioMessagesOnPickup" : [ "pickupavikanhunting" ],
@@ -102,5 +103,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

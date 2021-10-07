@@ -201,6 +201,7 @@
 			  { "item": { "name": "avikanspiceplantseed" }, "rarity": 0.5 },
 			  { "item": { "name": "bolbohnseed" }, "rarity": 0.5 },
 			  { "item": { "name": "dunestalkseed" }, "rarity": 0.5 },
+			  { "item": { "name": "basbronseed" }, "rarity": 0.5 },
 			  { "item": { "name": "avikanmeatchunk" }, "rarity": 0.5 },
 			  { "item": { "name": "avikanspices" }, "rarity": 0.5 },
 			  { "item": { "name": "kadavancactus" }, "rarity": 0.5 },
@@ -896,6 +897,30 @@
 	},
 	
 	//=========================================================================================================
+	// AKKIMARI
+	//=========================================================================================================
+	{ "op" : "add", "path" : "/akkimarimaterials",
+		"value" : [
+			[ 0, [
+			  { "item": { "name": "akkimarimetal" }, "rarity": 0.5 },
+			  { "item": { "name": "akkimarigunparts" }, "rarity": 0.5 },
+			  { "item": { "name": "akkimaribladeparts" }, "rarity": 0.5 },
+			  { "item": { "name": "akkimariglassitem" }, "rarity": 0.5 },
+			  { "item": { "name": "akkimarisilk" }, "rarity": 0.5 }
+			] ]
+		]
+	},
+	{ "op" : "add", "path" : "/akkimarifarming",
+		"value" : [
+			[ 0, [
+			  { "item": { "name": "achvassseed" }, "rarity": 0.5 },
+			  { "item": { "name": "sagrassaseed" }, "rarity": 0.5 },
+			  { "item": { "name": "vrelliseed" }, "rarity": 0.5 }
+			] ]
+		]
+	},
+	
+	//=========================================================================================================
 	// TRINK
 	//=========================================================================================================
 	{ "op" : "add", "path" : "/trinkspace",
@@ -1103,18 +1128,38 @@
 		"value" : [
 			[ 0, [
 			  { "item": { "name": "harrowingcache" }, "price" : 1500 },
+			  // OBJECTS
+			  { "item": { "name": "harrowingpumpkin" } },
+			  { "item": { "name": "harrowingbannerlong" } },
+			  { "item": { "name": "harrowingbannershort" } },
+			  // MASKS
 			  { "item": { "name": "aegi-centenshead" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 },
 			  { "item": { "name": "aegi-pumpkinhead" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 },
 			  { "item": { "name": "aegi-trinkhead" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 },
+			  { "item": { "name": "aegi-spookyhead" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 },
 			  { "item": { "name": "avikan-drodenhead" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 },
 			  { "item": { "name": "avikan-sandspitterhead" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 },
 			  { "item": { "name": "avikan-theleanhead" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 },
+			  { "item": { "name": "avikan-oculushead" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 },
 			  { "item": { "name": "droden-avikanhead" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 },
 			  { "item": { "name": "droden-drahlhead" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 },
 			  { "item": { "name": "droden-sandcrawlerhead" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 },
+			  { "item": { "name": "droden-skullhead" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 },
 			  { "item": { "name": "trink-ghost" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 },
 			  { "item": { "name": "trink-notix" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 },
-			  { "item": { "name": "trink-pumpkin" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 }
+			  { "item": { "name": "trink-pumpkin" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 },
+			  { "item": { "name": "trink-tentacle" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 5000 },
+			  // MONSTER MASKS
+			  { "item": { "name": "aegi-ooglerhead" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 7500 },
+			  { "item": { "name": "aegi-poptophead" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 7500 },
+			  { "item": { "name": "aegi-spookithead" }, "prerequisiteQuest" : "harrowingeventstart", "price" : 7500 },
+			  // BOSS MASKS
+			  { "item": { "name": "aegi-crystalhead" }, "prerequisiteQuest" : "human_mission1", "price" : 15000 },
+			  { "item": { "name": "aegi-ixodoomhead" }, "prerequisiteQuest" : "floran_mission2", "price" : 15000 },
+			  { "item": { "name": "aegi-asranoxhead" }, "prerequisiteQuest" : "hylotl_mission2", "price" : 15000 },
+			  { "item": { "name": "aegi-kluexhead" }, "prerequisiteQuest" : "avian_mission2", "price" : 15000 },
+			  { "item": { "name": "aegi-bigapehead" }, "prerequisiteQuest" : "apex_mission2", "price" : 15000 },
+			  { "item": { "name": "aegi-bonedragonhead" }, "prerequisiteQuest" : "glitch_mission2", "price" : 15000 }
 			] ]
 		]
 	},

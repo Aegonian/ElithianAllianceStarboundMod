@@ -20,7 +20,7 @@
 
   "aegiDescription" : "A locked blast door. There doesn't seem to be any way past it.",
   "avikanDescription" : "A thick blast door, locked with a complex lock system. Nothing gets past this.",
-  "erixianDescription" : "A metal blast door. It's locked...",
+  "draunaarDescription" : "A metal blast door. It's locked...",
   "trinkDescription" : "This door is locked.",
   "hymidDescription" : "There's no way I can get past this door.",
   "notixDescription" : "A locked blast door. No use trying to get it to open.",
@@ -29,6 +29,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Analysis. Locked. Unit is unable to force open.",
+  "akkimariDescription" : "Door-locked. Akki try to break, Akki fail.",
 
   "inventoryIcon" : "avikanblastdoorlocked.png",
   "orientations" : [

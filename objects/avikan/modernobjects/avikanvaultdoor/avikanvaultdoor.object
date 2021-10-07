@@ -20,7 +20,7 @@
 
   "aegiDescription" : "A vault door. Useful for protecting valuable things.",
   "avikanDescription" : "This vault door will keep any potential intruders outside of our Terves.",
-  "erixianDescription" : "A blast door. It looks rather strong.",
+  "draunaarDescription" : "A blast door. It looks rather strong.",
   "trinkDescription" : "An Avikan vault door. What might it be protecting?",
   "hymidDescription" : "A large vault door, for when you really don't want intruders.",
   "notixDescription" : "A vault door, built to withstand the elements.",
@@ -29,6 +29,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Analysis. Vault door. Protects Terves against potential intruders.",
+  "akkimariDescription" : "Door-vault, keeps room secure.",
 
   "inventoryIcon" : "avikanvaultdooricon.png",
   "orientations" : [

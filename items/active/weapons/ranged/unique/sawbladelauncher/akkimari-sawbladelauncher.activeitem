@@ -5,12 +5,13 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "^orange;A makeshift Akkimari weapon firing razor-sharp sawblades.",
+  "manufacturer" : "^gray;Kelraaki^reset;",
   "shortdescription" : "^orange;Razorrail^white;",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-gun-unique",
+  "tooltipKind" : "thea-gun-unique-mf",
   "category" : "Makeshift Weapon",
-  "itemTags" : ["weapon","ranged","akkimari","theaUnique"],
+  "itemTags" : ["weapon","ranged","akkimari","kelraaki","theaUnique"],
   "twoHanded" : true,
   
   //CONFIGURATION FOR WEAPONS COLLECTION

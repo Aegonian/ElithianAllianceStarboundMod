@@ -18,7 +18,7 @@
 
   "aegiDescription" : "A Trinkian light pillar.",
   "avikanDescription" : "A pillar emitting a green light. It makes me feel odd...",
-  "erixianDescription" : "This Trinkian pillar emits an odd green light.",
+  "draunaarDescription" : "This Trinkian pillar emits an odd green light.",
   "trinkDescription" : "Pillars like these are primarily used to light areas outside of our buildings.",
   "hymidDescription" : "A pillar embedded with green lights.",
   "notixDescription" : "These pillars aren't very useful for the Trinks, but they allow us organics to see in the dark.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Light source detected.",
+  "akkimariDescription" : "Pillar-light, make things bright!",
 
   "inventoryIcon" : "trinklightpillaricon.png",
   "orientations" : [

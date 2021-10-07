@@ -1,0 +1,29 @@
+{
+  "projectileName" : "remnantdoomsource",
+  "physics" : "illusion",
+  "bounces" : 0,
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "emitters" : [ "ancientcursedoomtrail" ],
+  "power" : 0,
+  "speed" : 0,
+  "onlyHitTerrain" : true,
+
+  "orientationLocked" : true,
+  "renderLayer" : "ForegroundEntity",
+
+  "timeToLive" : 10,
+
+  "scripts" : ["/projectiles/scripts/thea-followpickup.lua"],
+  "scriptDelta" : 1,
+  
+  "inheritTargetVelocity" : true,
+  
+  "homingStartDelay" : 0.0,
+  "homingSpeed" : 50,
+  "homingForce" : 75,
+  
+  "pickupRange" : 0.75,
+  "snapRange" : 2,
+  "snapSpeed" : 150,
+  "snapForce" : 250
+}

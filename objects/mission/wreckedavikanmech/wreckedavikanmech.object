@@ -12,8 +12,10 @@
   "floranDescription" : "Metal sssuit hass been destroyed.",
   "glitchDescription" : "Alarmed. This mech was attacked and swiftly destroyed.",
   "novakidDescription" : "Hope the pilot made it our alright...",
+  
   "avikanDescription" : "A wrecked Krahl. It looks like it was attacked using Thelean weapons...",
   "drodenDescription" : "Detected Krahl. Status: irreparable damage.",
+  "akkimariDescription" : "Mech-alien-wrecked. Akki wonder where pilot is.",
 
   "inventoryIcon" : "icon.png",
   "orientations" : [

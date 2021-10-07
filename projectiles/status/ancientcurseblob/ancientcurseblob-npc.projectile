@@ -24,6 +24,8 @@
   
   "scripts" : [ "/projectiles/scripts/thea-ancientcurseblob.lua" ],
   
+  "healProjectileType" : "thea-ancientcursehealer",
+  
   "randomTimeToLive" : true,
   "minLifeTime" : 500,	//In milliseconds!
   "maxLifeTime" : 600	//In milliseconds!

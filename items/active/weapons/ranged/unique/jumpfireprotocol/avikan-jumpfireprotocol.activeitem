@@ -5,12 +5,13 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "^orange;A unique weapon built using Centensian and Avikan tech.",
+  "manufacturer" : "^gray;Splicer^reset;",
   "shortdescription" : "^orange;Jumpfire Protocol^white;",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-speedupminigun-unique",
+  "tooltipKind" : "thea-speedupminigun-mf-unique",
   "category" : "Modified Jumprifle",
-  "itemTags" : ["weapon","ranged","avikan","jumprifle","theaUnique"],
+  "itemTags" : ["weapon","ranged","avikan","jumprifle","splicer","theaUnique"],
   "twoHanded" : true,
   
   //CONFIGURATION FOR WEAPONS COLLECTION

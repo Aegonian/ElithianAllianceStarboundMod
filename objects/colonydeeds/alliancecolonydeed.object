@@ -4,7 +4,7 @@
   "rarity" : "Common",
   "description" : "Place in an enclosed building with at least one door and light source and someone will move in!",
   "shortdescription" : "^yellow;Alliance Colony Deed",
-  "race" : "generic",
+  "race" : "aegi",
   "printable" : false,
   "category" : "spawner",
   "price" : 750,
@@ -19,7 +19,7 @@
 
   "aegiDescription" : "I could attract a tenant if I place this in an enclosed building with a door and a light.",
   "avikanDescription" : "This beacon will attract a tenant, if I build the house to be comfortable enough.",
-  "erixianDescription" : "A deed, a door and a light are all I need to attract a tenant.",
+  "draunaarDescription" : "A deed, a door and a light are all I need to attract a tenant.",
   "trinkDescription" : "A tenant might move into a properly built home with such a colony deed in it.",
   "hymidDescription" : "I could start a colony with a deed like this!",
   "notixDescription" : "Tenants might move into a house with a deed in it. Just make sure there's a door and some light.",
@@ -28,6 +28,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Colony deed detected. Universal standards must be met to attract potential tenants.",
+  "akkimariDescription" : "Deed-colony, Akki place in house. Also place door and light, tenant come!",
 
   "inventoryIcon" : "alliancecolonydeedicon.png",
   "orientations" : [

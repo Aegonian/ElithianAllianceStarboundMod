@@ -6,6 +6,7 @@ TheaShieldBladeDefend = WeaponAbility:new()
 
 function TheaShieldBladeDefend:init()
   self.cooldownTimer = 0
+  self.blastCooldownTimer = 0
   
   self.shieldHealth = 1000
 end
@@ -15,6 +16,7 @@ function TheaShieldBladeDefend:update(dt, fireMode, shiftHeld)
   WeaponAbility.update(self, dt, fireMode, shiftHeld)
 
   self.cooldownTimer = math.max(0, self.cooldownTimer - dt)
+  self.blastCooldownTimer = math.max(0, self.blastCooldownTimer - dt)
   
   --Swap frames for when the weapon is in the front or back hand
   animator.setGlobalTag("hand", self.weapon:isFrontHand() and "front" or "back")
@@ -48,10 +50,41 @@ function TheaShieldBladeDefend:defend()
   
   --Seting up the damage listener for actions on shield hit
   self.damageListener = damageListener("damageTaken", function(notifications)
-	for _,notification in pairs(notifications) do
-	  if notification.hitType == "ShieldHit" then
-		animator.playSound("shieldHit")
-		return
+	--Optionally spawn a projectile whenever the shield is hit
+	if self.blastOnShieldHit then
+	  for _,notification in pairs(notifications) do
+		if notification.hitType == "ShieldHit" then		  
+		  --Fire a projectile when the shield is hit
+		  if self.blastCooldownTimer == 0 then
+			--Projectile parameters
+			local params = copy(self.projectileParameters)
+			params.power = self.baseDamage * config.getParameter("damageLevelMultiplier")
+			params.powerMultiplier = activeItem.ownerPowerMultiplier()
+			
+			--Projectile spawn code
+			local position = vec2.add(mcontroller.position(), activeItem.handPosition(animator.partPoint("blade", "blastPoint")))
+			local aim = self.weapon.aimAngle
+			if not world.lineTileCollision(mcontroller.position(), position) then
+			  world.spawnProjectile(self.projectileType, position, activeItem.ownerEntityId(), {mcontroller.facingDirection() * math.cos(aim), math.sin(aim)}, false, params)
+			  animator.playSound("shieldBurst")
+			  animator.burstParticleEmitter("burst")
+			  self.blastCooldownTimer = self.blastCooldownTime
+			else
+			  animator.playSound("shieldHit")
+			end
+		  else
+			animator.playSound("shieldHit")
+		  end
+		  return
+		end
+	  end
+	--If not configured to spawn a projectile, only play a hit sound
+	else
+	  for _,notification in pairs(notifications) do
+		if notification.hitType == "ShieldHit" then
+		  animator.playSound("shieldHit")
+		  return
+		end
 	  end
 	end
   end)

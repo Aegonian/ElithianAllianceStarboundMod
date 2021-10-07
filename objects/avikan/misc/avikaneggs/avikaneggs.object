@@ -18,7 +18,7 @@
 
   "aegiDescription" : "These eggs might hatch in a few months.",
   "avikanDescription" : "Avikan eggs. I wonder who laid these?",
-  "erixianDescription" : "A couple of Avikan eggs. They feels odd.",
+  "draunaarDescription" : "A couple of Avikan eggs. They feels odd.",
   "trinkDescription" : "Avikan eggs are easily recognized by their leathery skin.",
   "hymidDescription" : "These eggs feels completely dry.",
   "notixDescription" : "An unusual bunch of eggs.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Avikan eggs. Estimated date of hatching: unknown.",
+  "akkimariDescription" : "Eggs-alien, for cooking and eating. Akki hungry.",
 
   "inventoryIcon" : "avikaneggsicon.png",
   "orientations" : [

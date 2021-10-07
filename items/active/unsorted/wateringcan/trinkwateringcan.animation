@@ -1,0 +1,18 @@
+{
+  "animatedParts" : {
+    "parts" : {
+      "wateringcan" : {
+        "properties" : {
+          "image" : "<partImage>",
+          "centered" : true,
+          "offset" : [0.875, 0.0],
+          "waterPoint" : [1.25, 0.5]
+        }
+      }
+    }
+  },
+
+  "sounds" : {
+    "water" : [ "/sfx/tools/wateringcan2.ogg", "/sfx/tools/wateringcan3.ogg"  ]
+  }
+}

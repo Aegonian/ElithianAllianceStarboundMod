@@ -11,7 +11,7 @@
   "fixedLevel" : false,
   "tooltipKind" : "thea-gun-unique-mf",
   "category" : "Assault Rifle",
-  "itemTags" : ["weapon","ranged","assaultrifle","alliance","theaUnique"],
+  "itemTags" : ["weapon","ranged","assaultrifle","alliance","erito","theaUnique"],
   "twoHanded" : true,
   
   //CONFIGURATION FOR WEAPONS COLLECTION
@@ -31,6 +31,11 @@
   "animationCustom" : {
 	"sounds" : {
       "fire" : [ "/sfx/gun/rocket3.ogg" ]
+    },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [0, 52, 90]
+	  }
     }
   },
 

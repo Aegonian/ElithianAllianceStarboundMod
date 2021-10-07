@@ -21,7 +21,7 @@
   
   "aegiDescription" : "An Avikan ship door.",  
   "avikanDescription" : "A strong door from home, built for use on ships.",
-  "erixianDescription" : "A metal door. Not quite a blast door, but still very strong.",
+  "draunaarDescription" : "A metal door. Not quite a blast door, but still very strong.",
   "trinkDescription" : "A mechanical door.",
   "hymidDescription" : "An Avikan door, used primarily on spaceships.",
   "notixDescription" : "A door built for use on spaceships.",
@@ -30,6 +30,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Detected door. Analysis: Ship model.",
+  "akkimariDescription" : "Door-ship, special-not.",
 
   "inventoryIcon" : "avikanshipdooricon.png",
   "orientations" : [

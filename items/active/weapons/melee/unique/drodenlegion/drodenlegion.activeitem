@@ -5,11 +5,12 @@
   "maxStack" : 1,
   "rarity" : "essential",
   "description" : "^orange;A pre-Exodus switchgear blade, made for the Droden Legion.",
+  "manufacturer" : "^gray;Vanguard/Legion^reset;",
   "shortdescription" : "^orange;Legion^white;",
-  "tooltipKind" : "thea-sword-unique",
+  "tooltipKind" : "thea-sword-unique-mf",
   "category" : "Switchblade",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","broadsword","droden","theaUnique"],
+  "itemTags" : ["weapon","melee","broadsword","droden","theaUnique","vanguard","legion"],
 
   "inventoryIcon" : "drodenlegion.png",
   
@@ -311,5 +312,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

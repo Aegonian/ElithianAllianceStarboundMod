@@ -11,6 +11,7 @@
   "novakidDescription" : "A big bad support beam. Isn't gonna come down anytime soon.",
   
   "drodenDescription" : "Analysis complete. Structural support beam.",
+  "akkimariDescription" : "Beam-support, keep walls standing.",
 
   "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
   "health" : 8,
@@ -22,7 +23,7 @@
     "variants" : 3,
     "lightTransparent" : false,
     "occludesBelow" : true,
-    "multiColored" : false,
+    "multiColored" : true,
     "zLevel" : 100
   }
 }

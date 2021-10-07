@@ -19,7 +19,7 @@
 
   "aegiDescription" : "This Centensian interface is a strange kind of hard hologram.",
   "avikanDescription" : "The Old Ones built this. It still functions, even after eons of disuse.",
-  "erixianDescription" : "This hologram is hard enough to injure you if you run into it.",
+  "draunaarDescription" : "This hologram is hard enough to injure you if you run into it.",
   "trinkDescription" : "A hard holographic interface built by the Centens.",
   "hymidDescription" : "This was built by the Centens. How the hologram manages to grow hard is beyond me.",
   "notixDescription" : "It's strange how quiet this console is.",
@@ -28,6 +28,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Analysis. Detected Centensian interface.",
+  "akkimariDescription" : "Pillar-light, interface-strange. Akki touch, pillar change!",
   
   "lightColor" : [45, 90, 115],
   "lightColorOff" : [30, 60, 115],

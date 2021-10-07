@@ -5,6 +5,19 @@
     "fileBody" : "/interface/tooltips/bodyobjectextended.png",
     "fileFooter" : "/interface/tooltips/footerobjectextended.png"
   },
+  //===================== LEVEL LABELS =====================
+  "levelTitleLabel" : {
+    "type" : "label",
+    "position" : [120, 130],
+    "hAnchor" : "right",
+    "value" : "^gray;lvl^reset;"
+  },
+  "levelLabel" : {
+    "type" : "label",
+    "position" : [130, 130],
+    "hAnchor" : "right"
+  },
+  //=================== END LEVEL LABELS ===================
   "objectImage" : {
     "type" : "image",
     "position" : [67, 112],

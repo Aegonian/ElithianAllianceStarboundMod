@@ -1,0 +1,13 @@
+{
+  "projectileName" : "ancientcursesplinterkillexplosion",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/ancientcursesplinterkillexplosion/ancientcursesplinterkillexplosion.config"
+    }
+  ],
+  "damageKind" : "ancientcurse",
+  "damageType" : "NoDamage",
+  "timeToLive" : 0
+}

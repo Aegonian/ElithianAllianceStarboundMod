@@ -14,7 +14,8 @@
   "inventoryIcon" : "alliancecacheicon.png",
   "animation" : "alliancecache.animation",
   "animationParts" : {
-    "treasurebox" : "alliancecache.png"
+    "treasurebox" : "alliancecache.png",
+    "lights" : "alliancecachelights.png"
   },
   "animationCustom" : {
     "sounds" : {

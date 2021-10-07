@@ -8,7 +8,7 @@
 	"deathProjectileType" : "ancientcurseghost",
 	"timeBetweenBlobs" : 0.125,
 	"maxExplosionDamage" : 50,
-	"damageInheritFactor" : 0.25,
+	"damageInheritFactor" : 0.15,
 	"liquidDamage" : 5.0
   },
   "defaultDuration" : 5,

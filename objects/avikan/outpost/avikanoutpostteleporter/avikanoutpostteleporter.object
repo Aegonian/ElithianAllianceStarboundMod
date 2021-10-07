@@ -18,7 +18,7 @@
   
   "aegiDescription" : "This Avikan teleporter is linked directly to their Starfarer's Refuge.",
   "avikanDescription" : "This teleporter is linked directly to the Starfarer's Refuge.",
-  "erixianDescription" : "This teleporter is linked to a set location somewhere in the galaxy.",
+  "draunaarDescription" : "This teleporter is linked to a set location somewhere in the galaxy.",
   "trinkDescription" : "This teleporter is linked to a set location. Let's see where it leads.",
   "hymidDescription" : "This teleporter is directly linked to a set location.",
   "notixDescription" : "An Avikan teleporter. Might this link to their famous Nomada?",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO",
   "hyvonDescription" : "TODO",
   "drodenDescription" : "Analysis. Readings indicate that this teleporter links directly to the Starfarer's Refuge.",
+  "akkimariDescription" : "Teleporter. Akki use, go to Refuge-Starfarers.",
 
   "category" : "teleporter",
   "lightColor" : [99, 132, 153],

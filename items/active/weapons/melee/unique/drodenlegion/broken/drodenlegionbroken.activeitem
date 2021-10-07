@@ -4,9 +4,9 @@
   "level" : 1,
   "maxStack" : 1,
   "rarity" : "common",
-  "description" : "A broken longsword, with a chipped blade and busted power supply.",
+  "description" : "^gray;A broken longsword, with a chipped blade and busted power supply.",
   "shortdescription" : "Broken Longsword",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive",
   "category" : "Longsword",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","broadsword","droden"],
@@ -18,7 +18,15 @@
     "handle" : "",
     "blade" : "drodenlegionbroken.png"
   },
-  "animationCustom" : { },
+  "animationCustom" : {
+    "animatedParts" : { "parts" : { "swoosh" : { "partStates" : { "swoosh" : {
+      "fire" : { "properties" : { "image" : "/items/active/weapons/melee/unique/drodenlegion/swoosh/downcut.png:<frame>" }}
+} 
+} 
+} 
+} 
+}
+},
 
   "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
 

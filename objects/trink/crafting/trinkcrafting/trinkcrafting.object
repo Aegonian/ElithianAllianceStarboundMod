@@ -33,7 +33,7 @@
 
   "aegiDescription" : "The Trink don't need many tools, as their own bodies are already equipped with so much.",
   "avikanDescription" : "A worktable built by machines.",
-  "erixianDescription" : "A Trinkian worktable. Simplistic, but of a very high quality.",
+  "draunaarDescription" : "A Trinkian worktable. Simplistic, but of a very high quality.",
   "trinkDescription" : "We Trinks don't need many tools. Our hands are enough to craft most of what we need.",
   "hymidDescription" : "A Trinkian worktable. It comes with few tools, but Trinks don't need a lot of tools.",
   "notixDescription" : "The Trinks need few tools. Their bodies are equipped with almost all they need.",
@@ -42,6 +42,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Detected machine-built worktable.",
+  "akkimariDescription" : "Worktable-alien, Akki craft things here.",
 
   "learnBlueprintsOnPickup" : [],
 
@@ -71,7 +72,7 @@
 
 		"aegiDescription" : "The Trink don't need many tools, as their own bodies are already equipped with so much.",
 		"avikanDescription" : "A worktable built by machines.",
-		"erixianDescription" : "A Trinkian worktable. Simplistic, but of a very high quality.",
+		"draunaarDescription" : "A Trinkian worktable. Simplistic, but of a very high quality.",
 		"trinkDescription" : "We Trinks don't need many tools. Our hands are enough to craft most of what we need.",
 		"hymidDescription" : "A Trinkian worktable. It comes with few tools, but Trinks don't need a lot of tools.",
 		"notixDescription" : "The Trinks need few tools. Their bodies are equipped with almost all they need.",
@@ -79,7 +80,8 @@
 		"centensDescription" : "TODO.",
 		"dremetonDescription" : "TODO.",
 		"theleanDescription" : "TODO.",
-		"drodenDescription" : "Detected machine-built worktable."
+		"drodenDescription" : "Detected machine-built worktable.",
+		"akkimariDescription" : "Worktable-alien, Akki craft things here."
       },
 
       "interactData" : {
@@ -130,7 +132,7 @@
 
 		"aegiDescription" : "This machine will do much of the crafting for you.",
 		"avikanDescription" : "A machine-built crafting station. Better be careful with my flaps around that thing...",
-		"erixianDescription" : "A machine capable of producing many things.",
+		"draunaarDescription" : "A machine capable of producing many things.",
 		"trinkDescription" : "This machine can assist my crafting skills, but it still requires some of my input.",
 		"hymidDescription" : "A manufactoring machine. It can construct various items.",
 		"notixDescription" : "Like any Trinkian tech, this crafting station is incredibly efficient.",
@@ -138,7 +140,8 @@
 		"centensDescription" : "TODO.",
 		"dremetonDescription" : "TODO.",
 		"theleanDescription" : "TODO.",
-		"drodenDescription" : "Detected crafting station. Origin: machine-built."
+		"drodenDescription" : "Detected crafting station. Origin: machine-built.",
+		"akkimariDescription" : "Big press, make things flat. Akki use for crafting."
       },
 
       "interactData" : {
@@ -190,7 +193,7 @@
 
 		"aegiDescription" : "Given the right blueprints and materials, this machine can print almost anything.",
 		"avikanDescription" : "An automated crafting station, built by machines.",
-		"erixianDescription" : "This machine can print almost anything using the right blueprints.",
+		"draunaarDescription" : "This machine can print almost anything using the right blueprints.",
 		"trinkDescription" : "Insert a compatible blueprint and the required materials, and this station will construct almost anything.",
 		"hymidDescription" : "A highly efficient 3D printing system.",
 		"notixDescription" : "A highly advanced printing system allows this machine to construct almost anything.",
@@ -198,7 +201,8 @@
 		"centensDescription" : "TODO.",
 		"dremetonDescription" : "TODO.",
 		"theleanDescription" : "TODO.",
-		"drodenDescription" : "Detected printing system. Analysis: machine-built."
+		"drodenDescription" : "Detected printing system. Analysis: machine-built.",
+		"akkimariDescription" : "Fabricator-automated, make anything Akki need."
       },
 
       "interactData" : {

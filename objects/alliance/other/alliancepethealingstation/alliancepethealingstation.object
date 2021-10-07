@@ -16,7 +16,7 @@
   "subtitle" : "",
   "frameCooldown" : 5,
   "autoCloseCooldown" : 3600,
-  "scripts" : [ "alliancepethealingstation.lua"],
+  "scripts" : [ "/objects/scripts/thea-pethealingstation.lua"],
 
   "apexDescription" : "Machines like these are used to heal captured creatures.",
   "avianDescription" : "How useful, I can heal any creatures I capture with this.",
@@ -28,7 +28,7 @@
 
   "aegiDescription" : "Captured creatures can be healed using this station.",
   "avikanDescription" : "This station will heal any creature I've captured.",
-  "erixianDescription" : "A device for healing wounded pets.",
+  "draunaarDescription" : "A device for healing wounded pets.",
   "trinkDescription" : "This device will heal captured creatures.",
   "hymidDescription" : "A device for healing wounded captured creatures.",
   "notixDescription" : "This station will nurse my wounded pets back to full health.",

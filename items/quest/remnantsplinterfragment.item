@@ -1,0 +1,10 @@
+{
+  "itemName" : "remnantsplinterfragment",
+  "price" : 500,
+  "rarity" : "Legendary",
+  "category" : "Quest Item",
+  "inventoryIcon" : "remnantsplinterfragment.png",
+  "description" : "An ancient, otherworldly fragment of stone.",
+  "shortdescription" : "Blighted Stone Fragment",
+  "itemTags" : [ "questitem" ]
+}

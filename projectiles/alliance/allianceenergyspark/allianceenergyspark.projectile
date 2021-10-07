@@ -1,0 +1,19 @@
+{
+  "projectileName" : "allianceenergyspark",
+  "physics" : "thea-highgravgrenade",
+  "bounces" : 2,
+  "image" : "allianceenergyspark.png",
+  "animationCycle" : 0.5,
+  "frameNumber" : 1,
+  "power" : 50,
+  "speed" : 35,
+  "supportsProcessing" : true,
+  "actionOnReap" : [],
+  "lightColor" : [35, 60, 75],
+  "fullbright" : true,
+  "damageKind" : "plasma",
+  
+  "scripts" : [ "/projectiles/scripts/thea-randomspeedprojectile.lua" ],
+  "minSpeed" : 30,
+  "maxSpeed" : 40
+}

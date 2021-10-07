@@ -19,7 +19,7 @@
 
   "aegiDescription" : "A gemstone. The Avikan seem to really like these.",
   "avikanDescription" : "A gemstone mined from Kadavan's bedrock.",
-  "erixianDescription" : "A gemstone of incredible quality.",
+  "draunaarDescription" : "A gemstone of incredible quality.",
   "trinkDescription" : "A gemstone. The Avikan appears to value it very highly.",
   "hymidDescription" : "This would look great in my home.",
   "notixDescription" : "A clear, crystal gemstone.",
@@ -28,6 +28,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Detected mineral substance. Origin: Kadavan.",
+  "akkimariDescription" : "Crystal-large. Can Akki eat?",
 
   "inventoryIcon" : "avikantallgemicon.png",
   "orientations" : [

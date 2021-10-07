@@ -59,10 +59,10 @@ function update(dt)
 	end
   
 	--Debug functions
-	world.debugText("MAX ANGLE: " .. self.scanAngle + self.baseRotation, vec2.add(entity.position(), {0,-1}), "yellow")
-	world.debugText("MIN ANGLE: " .. -self.scanAngle + self.baseRotation, vec2.add(entity.position(), {0,-2}), "yellow")
-	world.debugText(sb.print(findTarget()), vec2.add(entity.position(), {0,1}), "yellow")
-	world.debugPoint(self.basePosition, "yellow")  
+	--world.debugText("MAX ANGLE: " .. self.scanAngle + self.baseRotation, vec2.add(entity.position(), {0,-1}), "yellow")
+	--world.debugText("MIN ANGLE: " .. -self.scanAngle + self.baseRotation, vec2.add(entity.position(), {0,-2}), "yellow")
+	--world.debugText(sb.print(findTarget()), vec2.add(entity.position(), {0,1}), "yellow")
+	--world.debugPoint(self.basePosition, "yellow")  
   
 	animator.resetTransformationGroup("camera")
 	animator.rotateTransformationGroup("camera", self.cameraAngle)
@@ -101,9 +101,9 @@ function findTarget()
 	  local toTarget = world.distance(targetPosition, self.basePosition)
 	  local targetAngle = math.atan(toTarget[2], object.direction() * toTarget[1])
 	  
-	  world.debugText("TARGET", targetPosition, "yellow")
-	  world.debugText("DIST: " .. world.magnitude(toTarget), vec2.add(targetPosition, {0,-1}), "yellow")
-	  world.debugText("ANGLE: " .. targetAngle, vec2.add(targetPosition, {0,-2}), "yellow")
+	  --world.debugText("TARGET", targetPosition, "yellow")
+	  --world.debugText("DIST: " .. world.magnitude(toTarget), vec2.add(targetPosition, {0,-1}), "yellow")
+	  --world.debugText("ANGLE: " .. targetAngle, vec2.add(targetPosition, {0,-2}), "yellow")
 	  
 	  --If target is in range, within scan angle range and in sight, set this entity to our validTarget
 	  if world.magnitude(toTarget) < self.scanRange

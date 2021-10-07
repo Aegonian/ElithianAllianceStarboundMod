@@ -5,7 +5,7 @@
 
     },
  "spacing":0,
- "tilecount":29,
+ "tilecount":30,
  "tileheight":256,
  "tileproperties":
     {
@@ -185,6 +185,14 @@
          "object":"uniqueweaponcollection",
          "tilesetDirection":"right"
         },
+     "29":
+        {
+         "\/\/shortdescription":"Vhos Avha'las Teleporter",
+         "imagePositionX":"-16",
+         "imagePositionY":"0",
+         "object":"vhosavhalasteleporter",
+         "tilesetDirection":"right"
+        },
      "3":
         {
          "\/\/shortdescription":"Centensian Console",
@@ -331,6 +339,10 @@
      "28":
         {
          "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/centens\/uniqueweaponcollection.png"
+        },
+     "29":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/centens\/vhosavhalasteleporter.png"
         },
      "3":
         {

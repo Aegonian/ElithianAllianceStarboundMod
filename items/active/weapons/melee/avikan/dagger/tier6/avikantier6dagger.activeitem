@@ -4,12 +4,13 @@
   "level" : 6,
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "An energy weapon used by high-ranking members of the Clanguard.",
+  "description" : "^gray;An energy weapon used by high-ranking members of the Clanguard.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Clanguard Dagger",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "dagger",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","dagger","avikan"],
+  "itemTags" : ["weapon","melee","dagger","avikan","vanguard"],
 
   "inventoryIcon" : "avikantier6daggericon.png",
 
@@ -76,5 +77,5 @@
   },
   "fireSounds" : ["/sfx/melee/laser_weapon_swing1.ogg", "/sfx/melee/laser_weapon_swing2.ogg", "/sfx/melee/laser_weapon_swing3.ogg"],
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

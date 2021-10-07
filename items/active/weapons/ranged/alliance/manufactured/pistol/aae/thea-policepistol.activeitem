@@ -4,12 +4,12 @@
   "inventoryIcon" : "thea-policepistol.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "The standard handgun held by P-ASA officers.",
+  "description" : "^gray;The standard handgun held by P-ASA officers.^reset;",
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "P-ASA Enforcer P-6",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Pistol",
   "itemTags" : ["weapon","ranged","pistol","alliance","aae","allianceUpgradeable"],
   "twoHanded" : false,
@@ -29,6 +29,11 @@
 		  }
 		}
       }
+    },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [0, 52, 90]
+	  }
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/thea_plasmagun1.ogg" ]

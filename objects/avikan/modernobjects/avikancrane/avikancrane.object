@@ -18,7 +18,7 @@
 
   "aegiDescription" : "A mechanical crane, for moving cargo.",
   "avikanDescription" : "A mechanical crane. It can carry a lot of weight.",
-  "erixianDescription" : "This crane can carry a lot of weight.",
+  "draunaarDescription" : "This crane can carry a lot of weight.",
   "trinkDescription" : "This crane is inefficient. It requires more hinges.",
   "hymidDescription" : "A mechanical crane. How do the controls work?",
   "notixDescription" : "A mechanical crane of Avikan design.",
@@ -27,7 +27,7 @@
   "dremetonDescription" : "TODO",
   "hyvonDescription" : "TODO",
   "drodenDescription" : "Utility: moving cargo.",
-
+  "akkimariDescription" : "Crane-mechanical.",
 
   "inventoryIcon" : "avikancraneicon.png",
   "orientations" : [

@@ -18,7 +18,7 @@
 
   "aegiDescription" : "Some sort of vehicle, covered by a large leather sheet.",
   "avikanDescription" : "A keff that hasn't seen use in a while.",
-  "erixianDescription" : "I can only wonder what is below that sheet.",
+  "draunaarDescription" : "I can only wonder what is below that sheet.",
   "trinkDescription" : "A vehicle covered by a large leather sheet.",
   "hymidDescription" : "A vehicle protected by a large leather sheet.",
   "notixDescription" : "A vehicle covered by a large sheet of leather.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Scanning. Detected keff.",
+  "akkimariDescription" : "Sheet protects vehicle-alien from the desert.",
 
   "inventoryIcon" : "avikanhoverbikecoveredicon.png",
   "orientations" : [

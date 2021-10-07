@@ -18,7 +18,7 @@
 
   "aegiDescription" : "For a species that often lives underground, the Avikan have an unusual love for flight.",
   "avikanDescription" : "A well balanaced drehk, built for scouting.",
-  "erixianDescription" : "An Avikan flying vehicle.",
+  "draunaarDescription" : "An Avikan flying vehicle.",
   "trinkDescription" : "A personal flying vehicle. An inefficient means of transporting people.",
   "hymidDescription" : "I've always wanted to fly one of these.",
   "notixDescription" : "An Avikan Drehk. It is surprisingly nimble once in the air.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Drehk detected. Status: out of fuel.",
+  "akkimariDescription" : "Vehicle-alien, like Chaseflight.",
 
   "inventoryIcon" : "avikanaircrafticon.png",
   "orientations" : [

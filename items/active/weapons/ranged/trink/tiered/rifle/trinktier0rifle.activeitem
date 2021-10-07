@@ -4,12 +4,13 @@
   "inventoryIcon" : "trinktier0rifle.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "An outdated Trink laser rifle. Taken out of commission years ago, but it still packs a punch.",
+  "description" : "^gray;An outdated Trink laser rifle. Taken out of commission years ago, but it still packs a punch.",
+  "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "Trinkian Rifle Mk I",
   "level" : 1,
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Laser Rifle",
-  "itemTags" : ["weapon","ranged","assaultrifle","energy","trink"],
+  "itemTags" : ["weapon","ranged","assaultrifle","energy","trink","trinkfactory"],
   "twoHanded" : true,
 
   "animation" : "/items/active/weapons/ranged/animations/thea-gun.animation",
@@ -27,6 +28,11 @@
 		  }
 		}
       }
+    },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [45, 90, 25]
+	  }
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/plasma_shotgun3.ogg" ]
@@ -87,5 +93,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

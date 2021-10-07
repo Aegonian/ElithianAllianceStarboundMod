@@ -4,10 +4,12 @@
   "particleColor" : [149, 149, 149, 255],
   "itemDrop" : "cobblestonematerial",
   "shortdescription" : "Cobblestone",
+  
   "description" : "Hard cobblestones, smooth to the touch.",
   "glitchDescription" : "Facinated. These cobblestones are naturally smooth.",
   "floranDescription" : "Ssmooth cobblessstone rockss.",
   "novakidDescription" : "Ain't uncommon to run across cobblestone rocks like this.",
+  
   "footstepSound" : "/sfx/blocks/footstep_stone3.ogg",
   "health" : 1000000,
   "category" : "materials",

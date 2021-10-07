@@ -27,7 +27,7 @@
 
   "aegiDescription" : "This construct feels familar somehow. The items on the hologram are all items I've seen before.",
   "avikanDescription" : "A forge left behind by the Old Ones. It seems to have memorized some of the items I have lost.",
-  "erixianDescription" : "I think it's a forge of some kind. Perhaps I can reforge my equipment here.",
+  "draunaarDescription" : "I think it's a forge of some kind. Perhaps I can reforge my equipment here.",
   "trinkDescription" : "This Centensian construct pulses with energy. The hologram displays familiar items.",
   "hymidDescription" : "This must be a forge! I think I can reforge lost items here.",
   "notixDescription" : "The energy that flows through here makes a painfully loud noise. It's like nothing I've ever heard before.",
@@ -36,7 +36,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Analysis complete. Centensian construct. Energy may be used to reforge lost items of power.",
-  "akkimariDescription" : "Akki feels the energy, like sun in the sky. Akki recognizes hologram pictures!",
+  "akkimariDescription" : "Akki feel the energy, like sky-sun. Akki recognize pictures-holographic!",
 
   "inventoryIcon" : "icon.png",
   "orientations" : [

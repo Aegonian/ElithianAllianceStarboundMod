@@ -51,25 +51,27 @@
         "armRotation" : 0,
         "weaponRotation" : 0,
         "twoHanded" : false,
-
+		
         "allowRotate" : true,
         "allowFlip" : true
       },
       "prepare" : {
         "duration" : 0.15,
-        "armRotation" : 135,
+        "armRotation" : 165,
         "weaponRotation" : 0,
         "twoHanded" : false,
-
+		
+		"smooth" : true,
+		
         "allowRotate" : true,
         "allowFlip" : true
       },
       "throw" : {
-        "duration" : 0.25,
+        "duration" : 0.15,
         "armRotation" : 45,
         "weaponRotation" : 0,
         "twoHanded" : false,
-
+		
         "allowRotate" : false,
         "allowFlip" : true
       }

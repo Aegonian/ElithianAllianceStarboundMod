@@ -17,7 +17,7 @@
 
   "aegiDescription" : "A Trinkian satellite dish. A simple but effective tool for receiving signals from outer space.",
   "avikanDescription" : "A metal satellite dish. Avikan antennas are far more powerful than this.",
-  "erixianDescription" : "A simple Trinkian satellite dish. Nothing too special.",
+  "draunaarDescription" : "A simple Trinkian satellite dish. Nothing too special.",
   "trinkDescription" : "This satellite dish is used to receive messages from ships in orbit, amongst others.",
   "hymidDescription" : "A satellite dish of Trinkian design.",
   "notixDescription" : "A Trinkian satellite dish.",
@@ -26,6 +26,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO",
   "drodenDescription" : "Analysis: satellite dish. Provides access to global communications systems.",
+  "akkimariDescription" : "Dish-radar goes around, around, around.",
 
   "inventoryIcon" : "trinksatellitedishicon.png",
   "orientations" : [

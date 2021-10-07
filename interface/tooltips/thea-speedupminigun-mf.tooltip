@@ -5,6 +5,19 @@
     "fileBody" : "/interface/tooltips/bodyobjectthea3.png",
     "fileFooter" : "/interface/tooltips/theafooter3.png"
   },
+  //===================== LEVEL LABELS =====================
+  "levelTitleLabel" : {
+    "type" : "label",
+    "position" : [120, 164],
+    "hAnchor" : "right",
+    "value" : "^gray;lvl^reset;"
+  },
+  "levelLabel" : {
+    "type" : "label",
+    "position" : [130, 164],
+    "hAnchor" : "right"
+  },
+  //=================== END LEVEL LABELS ===================
   "moneyIcon" : {
     "type" : "image",
     "position" : [98, 23],
@@ -88,6 +101,15 @@
     "hAnchor" : "right",
     "centered" : true,
     "wrapWidth" : 126
+  },
+  "descriptionLabel" : {
+    "type" : "label",
+    "position" : [9, 50],
+    "hAnchor" : "left",
+    "vAnchor" : "top",
+    "wrapWidth" : 124,
+    "lineSpacing" : 1.0,
+    "value" : "I am a bug. Please report me!"
   },
   "handednessLabel" : {
     "type" : "label",

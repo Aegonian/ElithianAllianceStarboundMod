@@ -1,0 +1,55 @@
+{
+  "objectName" : "alliancecargocontainer",
+  "colonyTags" : ["alliance", "storage"],
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "category" : "storage",
+  "printable" : false,
+  "price" : 350,
+  "description" : "A cargo container used for cargo drops and transportation via spaceship.",
+  "shortdescription" : "Small AAE Cargo Container",
+  "race" : "aegi",
+  
+  "health" : 8,
+
+  "apexDescription" : "A container for cargo drops.",
+  "avianDescription" : "A sky-chest.",
+  "floranDescription" : "Floran open it, find goodsss insside.",
+  "glitchDescription" : "Excited. A cargo drop crate, what might be inside?",
+  "humanDescription" : "Surely there's something good inside.",
+  "hylotlDescription" : "A cargo container equally suited to spaceborne transportation and airborne cargo drops.",
+  "novakidDescription" : "A container for cargo drops. Nice.",
+
+  "aegiDescription" : "A container often used for cargo drops.",
+  "avikanDescription" : "An alien container. It might contain alien goods.",
+  "draunaarDescription" : "Seems like a cargo drop crate. I'm getting excited!",
+  "trinkDescription" : "An efficiently designed cargo container.",
+  "hymidDescription" : "A spaceworthy container.",
+  "notixDescription" : "This is a standradized Alliance cargo crate.",
+  "jorgasianDescription" : "There's bound to be something of use inside.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Analyzing content.",
+  "akkimariDescription" : "Akki see crates for from sky. Cargo-valuable?",
+
+  "inventoryIcon" : "alliancecargocontainericon.png",
+  "orientations" : [
+    {
+      "dualImage" : "alliancecargocontainer.png:<color>.<key>",
+      "imagePosition" : [-40, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/shippingcontainer_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/shippingcontainer_close.ogg" ],
+  "slotCount" : 32,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 10,
+  "autoCloseCooldown" : 3600
+}

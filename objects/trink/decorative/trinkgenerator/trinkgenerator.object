@@ -18,7 +18,7 @@
 
   "aegiDescription" : "Trinkian generators are amongst the most efficient generators in the Alliance.",
   "avikanDescription" : "A generator. It could provide energy for a significant portion of a Terve.",
-  "erixianDescription" : "This generator is powerful for its size.",
+  "draunaarDescription" : "This generator is powerful for its size.",
   "trinkDescription" : "The efficiency of this generator can only be optimized slightly further.",
   "hymidDescription" : "A Trinkian generator. It provides an incredible amount of energy.",
   "notixDescription" : "Trinkian generators are incredibly efficient. We built the Trinks well.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO",
   "drodenDescription" : "Warning. Readings indicate strong electrical fields.",
+  "akkimariDescription" : "Generator make power, Akki use power to make things happen.",
 
   "inventoryIcon" : "trinkgeneratoricon.png",
   "orientations" : [

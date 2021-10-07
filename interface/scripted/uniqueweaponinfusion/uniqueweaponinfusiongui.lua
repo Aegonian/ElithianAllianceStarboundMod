@@ -37,7 +37,7 @@ function update(dt)
   local sacrificeLevel = nil
   
   if sacrifice then
-	if root.itemHasTag(sacrificeConfig.config.itemName, "weapon") or root.itemHasTag(sacrificeConfig.config.itemName, "theaUnique") or root.itemHasTag(sacrificeConfig.config.itemName, "theaUniqueArmour") then
+	if (root.itemHasTag(sacrificeConfig.config.itemName, "weapon") or root.itemHasTag(sacrificeConfig.config.itemName, "theaUnique") or root.itemHasTag(sacrificeConfig.config.itemName, "theaUniqueArmour")) and not root.itemHasTag(sacrificeConfig.config.itemName, "theaUninfusable") then
 	  sacrificeCheck = true
 	end
 	

@@ -5,7 +5,7 @@
   "fixedLevel" : false,
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A powerful mining laser. Burns through rock and enemies both!",
+  "description" : "^gray;A powerful mining laser. Burns through rock and enemies both!^reset;",
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "AAE Mining Laser",
   "tooltipKind" : "thea-mininglaser-mf",

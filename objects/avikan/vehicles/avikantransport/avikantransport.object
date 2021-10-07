@@ -18,7 +18,7 @@
 
   "aegiDescription" : "Like most Avikan vehicles, this cargo transport hovers using Centensian technology.",
   "avikanDescription" : "The vehicle of choice for transporting cargo between Terves in the desert.",
-  "erixianDescription" : "A heavy vehicle, but its Centensian-inspired hover drive negates this disadvantage.",
+  "draunaarDescription" : "A heavy vehicle, but its Centensian-inspired hover drive negates this disadvantage.",
   "trinkDescription" : "Hovering transport vehicles are an efficient tool for moving cargo.",
   "hymidDescription" : "This vehicle uses hover technology first used by the Gods.",
   "notixDescription" : "Few environemnts are too harsh for this vehicle. A true feat of engineering.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Nomada Cargo Transport. Analysis: cargo crates empty.",
+  "akkimariDescription" : "Vehicle-alien, transport goods around.",
 
   "inventoryIcon" : "avikantransporticon.png",
   "orientations" : [

@@ -18,6 +18,7 @@
   "novakidDescription" : "Might be able to repair drones here.",
   
   "drodenDescription" : "Detected Drahl repair station. Capable of repairing Drahl units damaged in combat.",
+  "akkimariDescription" : "Akki repair drones here.",
 
   "inventoryIcon" : "avikandronerepairicon.png",
   "orientations" : [

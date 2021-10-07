@@ -1,0 +1,24 @@
+{
+  "kind" : "ancientcurseheavytrail",
+  "location" : "mouth",
+  "definition" : {
+    "duration" : 0.01,
+    "loops" : true,
+    "start" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [ [ ] ]
+    },
+    "particles" : [
+      [ "ancientcursedrip", "ancientcursegoop", "thea-darkfogsmall" ]
+    ],
+    "sounds" : [ [ ] ],
+    "stop" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [ [ ] ]
+    }
+  }
+}

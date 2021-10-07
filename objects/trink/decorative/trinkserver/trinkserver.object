@@ -19,7 +19,7 @@
 
   "aegiDescription" : "A Trinkian server rack. These are absolutely vital to the Trink.",
   "avikanDescription" : "A bunch of computers strapped together in a single construction.",
-  "erixianDescription" : "A Trinkian server rack. If only I could access the data.",
+  "draunaarDescription" : "A Trinkian server rack. If only I could access the data.",
   "trinkDescription" : "This server rack provides the processing power required for our extensive communications networks.",
   "hymidDescription" : "This server rack must have an incredible processing power.",
   "notixDescription" : "A Trinkian server rack. Its computers are even more capable than our own.",
@@ -28,6 +28,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO",
   "drodenDescription" : "Detected alien data server rack. Hacking attempt failed.",
+  "akkimariDescription" : "Sever-alien. Akki hack, learn things-many.",
 
   "inventoryIcon" : "trinkservericon.png",
   "orientations" : [

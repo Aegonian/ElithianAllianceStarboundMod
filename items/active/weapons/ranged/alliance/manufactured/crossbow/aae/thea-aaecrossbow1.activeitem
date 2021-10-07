@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-aaecrossbow1icon.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A powerful crossbow.",
+  "description" : "^gray;A powerful crossbow.^reset;",
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Hunter C-2",
   "level" : 6,

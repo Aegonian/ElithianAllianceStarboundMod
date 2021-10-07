@@ -1,0 +1,86 @@
+{
+  "itemName" : "akkimari-kraavaarblade",
+  "price" : 1500,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "description" : "^orange;A heavy Akkimari-built shieldblade inspired by Aeginian designs.",
+  "shortdescription" : "^orange;Kraavaar Blade^white;",
+  "tooltipKind" : "thea-sword-patreon",
+  "category" : "Shieldblade",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","shieldblade","akkimari","theaUnique"],
+
+  "inventoryIcon" : "akkimari-kraavaarbladeicon.png",
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  //"collectablesOnPickup" : { "thea_weapons" : "akkimari-kraavaarblade" },
+  
+  "meritTokenValue" : 100,
+
+  "animation" : "akkimari-kraavaarblade.animation",
+  "animationParts" : {
+    "blade" : "akkimari-kraavaarblade.png",
+	"bladeFullbright" : "akkimari-kraavaarbladelights.png"
+  },
+  "animationCustom" : {
+	"particleEmitters" : {
+	  "fling" : {
+		"active" : false,
+		"transformationGroups" : ["weapon"],
+		"offsetRegion" : [-1.0, 1.0, -1.0, 1.5],
+		"burstCount" : 15,
+		"particles" : [
+		  { "particle" : "akkimariacidburst2"}
+		]
+	  },
+	  "burst" : {
+		"active" : false,
+		"transformationGroups" : ["weapon"],
+		"offsetRegion" : [0.0, -0.25, 0.0, 0.25],
+		"burstCount" : 30,
+		"particles" : [
+		  { "particle" : "akkimariacidburst"},
+		  { "particle" : "akkimariacidburst"}
+		]
+	  }
+	},
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_broadsword.ogg" ],
+      "fire2" : [ "/sfx/melee/swing_shortsword.ogg" ],
+      "fire3" : [ "/sfx/melee/swing_spear.ogg" ],
+      "activate" : [ "/sfx/melee/oculusshield_charge.ogg" ],
+      "fling" : [ "/sfx/gun/akkimari_energyfire_heavy.ogg" ],
+	  //ALT ABILITY
+	  "shieldBurst" : [ "/sfx/gun/pumpgun_draw1.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "akkimariacid",
+  
+  //Makes the weapon draw in front of the arm
+  "handGrip" : "outside",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "thea-shieldbladecombocharge",
+  "primaryAbility" : {},
+  
+  "altAbilityType" : "thea-shieldbladedefend",
+  "altAbility" : {
+	"energyUsage" : 50,
+	
+	//Projectile config
+	"blastOnShieldHit" : true,
+	"baseDamage" : 3,
+    "blastCooldownTime" : 0.75,
+	"projectileType" : "justicarcloud",
+	"projectileParameters" : {
+      "speed" : 3
+    }
+  },
+
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+}

@@ -7,10 +7,16 @@
           "filled" : {
             "frames" : 16,
             "cycle" : 1.2,
-            "mode" : "loop"
+            "mode" : "loop",
+			"properties" : {
+              "lightsOn" : [ "glow" ]
+            }
           },
           "empty" : {
-            "frames" : 1
+            "frames" : 1,
+			"properties" : {
+              "lightsOff" : [ "glow" ]
+            }
           }
         }
       }
@@ -18,6 +24,27 @@
 
     "parts" : {
       "pedestal" : {
+        "properties" : {
+          "zLevel" : 0,
+		  "fullbright" : true,
+          "centered" : false
+        },
+        "partStates" : {
+          "objectState" : {
+            "filled" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.filled"
+              }
+            },
+            "empty" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.empty"
+              }
+            }
+          }
+        }
+      },
+      "pedestallit" : {
         "properties" : {
           "zLevel" : 1,
           "centered" : false
@@ -64,5 +91,11 @@
   
   "transformationGroups" : {
     "floatingObject" : {}
+  },
+  "lights" : {
+    "glow" : {
+      "position" : [1.5, 1.125],
+      "color" : [25, 0, 75]
+    }
   }
 }

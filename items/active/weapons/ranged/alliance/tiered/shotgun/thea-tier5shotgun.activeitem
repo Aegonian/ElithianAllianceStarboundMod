@@ -4,11 +4,11 @@
   "inventoryIcon" : "thea-tier5shotgun.png",
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A standard-issue Alliance shotgun.",
+  "description" : "^gray;A standard-issue Alliance shotgun.",
   "manufacturer" : "^gray;Alliance Collective^reset;",
   "shortdescription" : "AC.S-24 Ravager",
   "level" : 5,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Shotgun",
   "itemTags" : ["weapon","ranged","shotgun","alliance","alliancecollective","allianceUpgradeable"],
   "twoHanded" : true,
@@ -30,6 +30,11 @@
 		  }
 		}
       }
+    },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [0, 52, 90]
+	  }
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/thea_plasmagun6.ogg" ]

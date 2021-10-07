@@ -1,0 +1,68 @@
+{
+  "objectName" : "avikanlitterbox",
+  "colonyTags" : ["avikan"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 45,
+  "description" : "A litter box, for relieving yourself.",
+  "shortdescription" : "Avikan Litter Box",
+  "race" : "avikan",
+
+  "apexDescription" : "Is that a litter box?",
+  "avianDescription" : "A litter box. The small beads in it look sort of like seeds...",
+  "floranDescription" : "Poop boxesss.",
+  "glitchDescription" : "Disgusted. A litter box.",
+  "humanDescription" : "That's a litter box. What the?",
+  "hylotlDescription" : "This seems to be a litter box. How uncivilized.",
+  "novakidDescription" : "A box for poopin'.",
+
+  "aegiDescription" : "The Avikan don't have toilets. They have these litter boxes instead.",
+  "avikanDescription" : "A place to relieve yourself. I don't get why aliens fuss over it so much.",
+  "draunaarDescription" : "That's disgusting. The Avikan poop in public...",
+  "trinkDescription" : "A litter box. A simple but effective alternative to the toilet.",
+  "hymidDescription" : "It's a type of litter box, but much larger.",
+  "notixDescription" : "I can smell a faint odor. It's really quite disgusting.",
+  "jorgasianDescription" : "An Avikan litter box. I'm not sure what to think of it.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected Avikan droppings. Recommend cleaning.",
+  "akkimariDescription" : "Toilet-alien, full of poop.",
+
+  "inventoryIcon" : "avikanlitterboxicon.png",
+  "orientations" : [
+    {
+      "image" : "avikanlitterbox.png:<color>",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+	  
+	  "sitPosition" : [-10, 20],
+
+      "flipImages" : true,
+      "direction" : "left",
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "avikanlitterbox.png:<color>",
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+	  
+	  "sitPosition" : [14, 20],
+
+      "direction" : "right",
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+  "sitPosition" : [14, 20],
+  "sitCoverImage" : "/objects/avikan/modernobjects/avikanlitterbox/avikanlitterboxcover.png"
+}

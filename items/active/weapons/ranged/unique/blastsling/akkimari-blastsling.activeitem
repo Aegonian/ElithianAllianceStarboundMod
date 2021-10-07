@@ -6,12 +6,13 @@
   "inventoryIcon" : "akkimari-blastslingicon.png",
   "maxStack" : 1,
   "rarity" : "Essential",
-  "tooltipKind" : "thea-bow-unique",
+  "tooltipKind" : "thea-bow-mf-unique",
   "category" : "Slingshot",
   "description" : "^orange;A makeshift slingshot loaded with various bombs.",
+  "manufacturer" : "^gray;Kelraaki^reset;",
   "shortdescription" : "^orange;Blastsling^white;",
   "twoHanded" : true,
-  "itemTags" : ["weapon","ranged","akkimari","theaUnique"],
+  "itemTags" : ["weapon","ranged","akkimari","kelraaki","theaUnique"],
   
   //CONFIGURATION FOR WEAPONS COLLECTION
   "collectablesOnPickup" : { "thea_weapons" : "akkimari-blastsling" },

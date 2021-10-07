@@ -12,7 +12,7 @@
   "novakidDescription" : "A thick, heavy stone platform. Study for sure.",
   
   "drodenDescription" : "Analysis complete. Stone platform.",
-  "akkimariDescription" : "Stone platform...",
+  "akkimariDescription" : "Platform-stone.",
   
   "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
   "category" : "Supports",
@@ -23,7 +23,7 @@
     "variants" : 4,
     "lightTransparent" : true,
     "occludesBelow" : false,
-    "multiColored" : false,
+    "multiColored" : true,
     "zLevel" : 0,
     "platform" : true
   }

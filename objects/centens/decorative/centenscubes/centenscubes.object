@@ -19,7 +19,7 @@
 
   "aegiDescription" : "Metal cubes, built by the Centens. They are oddly enthralling...",
   "avikanDescription" : "These artefacts of the Old Ones are enthralling. I just keep staring at them.",
-  "erixianDescription" : "I can't say why, but these cubes are incredibly enthralling...",
+  "draunaarDescription" : "I can't say why, but these cubes are incredibly enthralling...",
   "trinkDescription" : "My systems are picking up an odd interference around these cubes.",
   "hymidDescription" : "These relics of the Gods are enthralling. I just want to stare at them.",
   "notixDescription" : "I feel something odd when near these cubes. It is enthralling, somehow.",
@@ -28,6 +28,7 @@
   "dremetonDescription" : "TODO",
   "theleanDescription" : "TODO",
   "drodenDescription" : "Detected Centensian artefacts. Error. Error. Error.",
+  "akkimariDescription" : "Akki near cubes, Akki feel calm. Akki feel strange...",
 
   "inventoryIcon" : "centenscubesicon.png",
   "orientations" : [

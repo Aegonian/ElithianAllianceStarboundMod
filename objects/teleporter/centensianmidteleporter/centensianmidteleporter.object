@@ -18,7 +18,7 @@
   
   "aegiDescription" : "A Centensian teleporter. The portal it creates almost seems to suck you in...",
   "avikanDescription" : "A teleporter built by the Old Ones. I wonder where it leads?",
-  "erixianDescription" : "This teleporter was built by the Centens.",
+  "draunaarDescription" : "This teleporter was built by the Centens.",
   "trinkDescription" : "A Centensian teleporter. It pulses with energy.",
   "hymidDescription" : "A Centensian construct. A teleporter, most like.",
   "notixDescription" : "The energy emitted by this teleporter hums loudly,",
@@ -27,7 +27,7 @@
   "dremetonDescription" : "TODO",
   "hyvonDescription" : "TODO",
   "drodenDescription" : "Detected Centensian teleportation device. Energy signatures marked and archived for Nomada study.",
-  "akkimariDescription" : "Akki feels drawn to ancient teleporter. Akki feels strange.",
+  "akkimariDescription" : "Akki feels drawn to teleporter-ancient. Akki feels strange.",
 
   "category" : "teleporter",
   "lightColor" : [25, 0, 75],

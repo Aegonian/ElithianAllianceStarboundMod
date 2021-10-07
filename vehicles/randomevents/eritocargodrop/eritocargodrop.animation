@@ -1,0 +1,137 @@
+{
+  "animatedParts" : {
+	"stateTypes" : {
+	  "body" : {
+		"priority" : 0,
+		"default" : "idle",
+		"states" : {
+		  "spawn" : {
+			"frames" : 11,
+			"cycle" : 0.8,
+			"mode" : "transition",
+			"transition" : "hovering",
+            "properties" : {
+              "immediateSound" : "/sfx/tech/vehicle_appear1.ogg",
+              "persistentSound" : "/sfx/tech/thea_shuttle_engineloop.ogg"
+            }
+		  },
+		  "idle" : {},
+		  "hovering" : {
+			"frames" : 4,
+			"cycle" : 0.4,
+			"mode" : "loop",
+			"properties" : {
+              "persistentSound" : "/sfx/tech/thea_shuttle_engineloop.ogg"
+            }
+		  }
+		}
+	  }
+	},
+
+	"parts" : {
+	  "body" : {
+		"properties" : {
+		  "zLevel" : 0,
+		  "transformationGroups" : [ "body" ],
+		  "offset" : [0.0, 0.0]
+		},
+		"partStates" : {
+		  "body" : {
+			"spawn" : {
+			  "properties" : {
+				"image" : "eritocargodrop.png:spawn.<frame>"
+			  }
+			},
+			"idle" : {
+			  "properties" : {
+				"image" : "eritocargodrop.png:idle"
+			  }
+			},
+			"hovering" : {
+			  "properties" : {
+				"image" : "eritocargodrop.png:hovering.<frame>"
+			  }
+			}
+		  }
+		}
+	  },
+	  "lights" : {
+		"properties" : {
+		  "zLevel" : 1,
+		  "transformationGroups" : [ "body" ],
+		  "fullbright" : true,
+		  "offset" : [0.0, 0.0]
+		},
+		"partStates" : {
+		  "body" : {
+			"spawn" : {
+			  "properties" : {
+				"image" : "eritocargodroplights.png:spawn.<frame>"
+			  }
+			},
+			"idle" : {
+			  "properties" : {
+				"image" : "eritocargodroplights.png:idle"
+			  }
+			},
+			"hovering" : {
+			  "properties" : {
+				"image" : "eritocargodroplights.png:hovering.<frame>"
+			  }
+			}
+		  }
+		}
+	  }
+	}
+  },
+
+  "transformationGroups" : {
+	"body" : { "interpolated" : true }
+  },
+  
+  "lights" : {
+	"glow" : {
+	  "active" : false,
+	  "position" : [0, 0],
+	  "color" : [0, 45, 75],
+	  "pointLight" : false
+	}
+  },
+
+  "particleEmitters" : {
+	"break" : {
+      "transformationGroups" : ["body"],
+      "burstCount" : 1.0,
+      "offsetRegion" : [0.0, 0.0, 0.0, 0.0],
+      "particles" : [
+		{ "particle" : "eritocargodrop1" },
+		{ "particle" : "eritocargodrop2" },
+		{ "particle" : "alliancemetalshard-wide" },
+		{ "particle" : "alliancemetalshard-wide" },
+		{ "particle" : "alliancemetalshard-wide" },
+		{ "particle" : "alliancemetalshard-wide" },
+		{ "particle" : "alliancemetalshard-wide" },
+		{ "particle" : "alliancemetalshard-wide" },
+		{ "particle" : "alliancemetalshard-wide" },
+		{ "particle" : "alliancemetalshard-wide" },
+		{ "particle" : "alliancemetalshard-wide" },
+		{ "particle" : "alliancemetalshard-wide" },
+		{ "particle" : "alliancemetalshard-wide" },
+		{ "particle" : "alliancemetalshard-wide" },
+		{ "particle" : "akkimariashsmoke-wide" },
+		{ "particle" : "akkimariashsmoke-wide" },
+		{ "particle" : "akkimariashsmoke-wide" },
+		{ "particle" : "akkimariashsmoke-wide" },
+		{ "particle" : "akkimariashsmoke-wide" },
+		{ "particle" : "akkimariashsmoke-wide" },
+		{ "particle" : "akkimariashsmoke-wide" },
+		{ "particle" : "akkimariashsmoke-wide" }
+	  ]
+    }
+  },
+
+  "sounds" : {
+	"break" : [ "/sfx/tech/hoverbike_crash2.ogg" ],
+	"collide" : [ "/sfx/tech/hoverbike_crash1.ogg" ]
+  }
+}

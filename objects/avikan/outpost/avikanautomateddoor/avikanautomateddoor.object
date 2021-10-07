@@ -14,7 +14,9 @@
   "floranDescription" : "Floran wondersss how door openss on itsss own?",
   "glitchDescription" : "Observation. This door opens and closes automatically.",
   "novakidDescription" : "This door opens when I get near, and closes behind my back. It's magic!",
+  
   "drodenDescription" : "Detected automated blast door.",
+  "akkimariDescription" : "Door-automated.",
 
   "inventoryIcon" : "avikanautomateddooricon.png",
   "orientations" : [

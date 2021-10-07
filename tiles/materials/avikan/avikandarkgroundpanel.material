@@ -11,6 +11,7 @@
   "novakidDescription" : "A floor panel thick as a safe.",
   
   "drodenDescription" : "Analysis complete. Floor panel.",
+  "akkimariDescription" : "Panel-floor, Akki walk on it.",
 
   "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
   "health" : 8,

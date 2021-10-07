@@ -17,7 +17,7 @@
 
   "aegiDescription" : "A Trinkian antenna. It can boost communication signals.",
   "avikanDescription" : "An antenna. It seems unnecessarily large.",
-  "erixianDescription" : "A large antenna of Trinkian design. Those robots make for great engineers.",
+  "draunaarDescription" : "A large antenna of Trinkian design. Those robots make for great engineers.",
   "trinkDescription" : "A modern antenna, built for efficiency.",
   "hymidDescription" : "A Trinkian antenna. Why is it so sharp?",
   "notixDescription" : "An antenna built by the Trinks.",
@@ -26,6 +26,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO",
   "drodenDescription" : "Radio signal detected. Failed to decode message.",
+  "akkimariDescription" : "Antenna-small, placed on roof.",
 
   "inventoryIcon" : "icon.png",
   "orientations" : [

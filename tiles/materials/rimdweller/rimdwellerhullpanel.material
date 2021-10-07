@@ -11,6 +11,7 @@
   "novakidDescription" : "This hull's been banged up good, but it still holds.",
   
   "drodenDescription" : "Analysis complete. Hull plating. Signs of combat damage detected.",
+  "akkimariDescription" : "Hull-ship, thick and heavy. Akki no carve through...",
   
   "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
   "health" : 24,
@@ -22,7 +23,7 @@
     "variants" : 5,
     "lightTransparent" : false,
     "occludesBelow" : true,
-    "multiColored" : false,
+    "multiColored" : true,
     "zLevel" : 5000
   }
 }

@@ -1,0 +1,44 @@
+{
+  "id" : "remnantsplinter",
+  "prerequisites" : [ "harrowingeventstart", "destroyruin" ],
+  "title" : "^orange;The Blighted Cavern",
+  "text" : "I recently came across this cave full of ^green;eerie-looking glowing rocks^reset;. I thought it'd be great for the Harrowing, but that place is too dangerous for me. The rocks found there are fascinating, though... ^green;Perhaps you're up for ^orange;exploring that cavern^reset;?",
+  "completionText" : "I'm really not sure what it is you found in there... It looks ancient for sure. And certainly eerie enough for the Harrowing, but I'm afraid this may be just a bit TOO eerie for our festival...",
+  "moneyRange" : [50, 50],
+  "rewards" : [
+    [ [ "harrowingcache", 1 ] ]
+  ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/thea-instance.lua",
+  "scriptConfig" : {
+	"portraits" : {
+      "default" : "questGiver"
+    },
+	"acceptItems" : [
+	  "remnantsplinterfragment"
+	],
+
+    "descriptions" : {
+      "enterInstance" : "Talk to ^orange;Ayala^reset; to travel to the ^orange;Blighted Cavern^reset;",
+      "findGoal" : "Find and explore the ^orange;central chamber^reset;",
+      "turnIn" : "Return to ^orange;Ayala^reset; in the ^orange;Creon Embassy^reset;"
+    },
+
+    "warpEntityUid" : "harrowing-vendor",
+    "warpAction" : "instanceworld:remnantcaves",
+    "warpDialog" : "/interface/confirmation/teleportconfirmation.config:remnantcaves",
+
+    "goalTrigger" : "collect",
+    "collectTargetItem" : "remnant-splinter",
+    "collectTargetItemCount" : 1,
+	
+	"radioMessageOnFinish" : "remnantsplinter-foundgoal",
+	
+    "goalEntityUid" : "remnantSplinterPedestal",
+    "indicateGoal" : false,
+    "trackGoalEntity" : false,
+
+    "turnInEntityUid" : "harrowing-vendor"
+  }
+}

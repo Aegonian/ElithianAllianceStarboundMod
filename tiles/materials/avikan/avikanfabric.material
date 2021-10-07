@@ -11,12 +11,13 @@
   "novakidDescription" : "A wall sheet made o' some sorta fabric.",
   
   "drodenDescription" : "Analysis complete. High-quality fabric wall sheet.",
+  "akkimariDescription" : "Fabric-soft, feels good to skin-Akki.",
 
   "footstepSound" : "/sfx/blocks/footstep_sand.ogg",
   "health" : 2,
   "category" : "materials",
   
-  "renderTemplate" : "/tiles/thea-avikanleathertemplate.config",
+  "renderTemplate" : "/tiles/thea-avikanfabrictemplate.config",
   "renderParameters" : {
     "texture" : "avikanfabric.png",
     "variants" : 1,

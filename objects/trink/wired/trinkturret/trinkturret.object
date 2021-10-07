@@ -36,7 +36,7 @@
 
   "aegiDescription" : "An efficient, automated defense turret.",
   "avikanDescription" : "A turret built to defend a machine colony. The Nomada would want me to sabotage it.",
-  "erixianDescription" : "This automated turret will shred enemies to pieces.",
+  "draunaarDescription" : "This automated turret will shred enemies to pieces.",
   "trinkDescription" : "A highly efficient automated turret design.",
   "hymidDescription" : "This turret is ever vigilant.",
   "notixDescription" : "An automated defense turret, very useful when there is a shortage of guards.",
@@ -45,6 +45,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO",
   "drodenDescription" : "Detected machine-built turret. Recommend sabotage.",
+  "akkimariDescription" : "Akki careful. Akki no want turret-angry.",
 
   "inventoryIcon" : "icon.png",
   "orientations" : [

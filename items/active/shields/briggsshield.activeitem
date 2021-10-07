@@ -5,7 +5,7 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "category" : "shield",
-  "description" : "A shield designed for Briggs security personnel.",
+  "description" : "^gray;A shield designed for Briggs security personnel.",
   "manufacturer" : "^gray;Briggs Shipbuilding^reset;",
   "shortdescription" : "Briggs Defender",
   "tooltipKind" : "thea-shield-mf",

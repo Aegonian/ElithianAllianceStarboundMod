@@ -11,6 +11,12 @@
   "emitters" : [ ],
   "power" : 30,
   "timeToLive" : 15,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/brokenarrows/brokenavikanspike.config"
+    }
+  ],
   "damageKind" : "avikanhunting",
   "piercing" : true,
   "statusEffects" : [

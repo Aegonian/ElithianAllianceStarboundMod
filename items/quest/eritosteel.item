@@ -1,0 +1,13 @@
+{
+  "itemName" : "eritosteel",
+  "price" : 500,
+  "rarity" : "Essential",
+  "category" : "craftingMaterial",
+  "tooltipKind" : "thea-unique",
+  "inventoryIcon" : "eritosteel.png",
+  "description" : "A special allosteel alloy with a high ferroverium content.",
+  "shortdescription" : "^orange;Eritosteel Plating^white;",
+  "itemTags" : [ "reagent" ],
+  
+  "learnBlueprintsOnPickup" : [ "thea-erito" ]
+}

@@ -24,7 +24,7 @@
 
   "aegiDescription" : "This panel allows for interaction with SAIL, the ship-based AI.",  
   "avikanDescription" : "The Nomada is against the use of AI on any ship.",
-  "erixianDescription" : "A station for interacting with SAIL.",
+  "draunaarDescription" : "A station for interacting with SAIL.",
   "trinkDescription" : "I can speak to SAIL using this console. It's good to have another AI on the ship.",
   "hymidDescription" : "This console allows for interaction with SAIL. It's nice to have someone to talk to.",
   "notixDescription" : "SAIL is one companion who will never fail you.",
@@ -33,6 +33,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Detected SAIL interface. Console enables communication with SAIL.",
+  "akkimariDescription" : "Interface-SAIL. Akki talk to ship here.",
 
   "inventoryIcon" : "aegitechstationicon.png",
   "orientations" : [

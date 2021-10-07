@@ -11,7 +11,7 @@
   "fixedLevel" : false,
   "tooltipKind" : "thea-overheatgun-unique-mf",
   "category" : "Sidearm",
-  "itemTags" : ["weapon","ranged","pistol","alliance","theaUnique"],
+  "itemTags" : ["weapon","ranged","pistol","alliance","aeg-corps","theaUnique"],
   "twoHanded" : false,
   
   //CONFIGURATION FOR WEAPONS COLLECTION
@@ -53,17 +53,17 @@
     "class" : "TheaOverheatFire",
 
     "fireTime" : 0.22,
-    "baseDps" : 7.0,
+    "baseDps" : 7.5,
     "inaccuracy" : 0.015,
 	
 	//Config for heat generation and cooling
 	"heatPerShot" : 10,				//Heat generated per shot
 	
 	"coolingIdleTime" : 0.25,		//Time before passive cooling kicks in
-	"heatLossRate" : 40,			//Heat lost per second while not overheated
-	"heatLossRateOverheated" : 15,	//Heat lost per second while overheated
+	"heatLossRate" : 70,			//Heat lost per second while not overheated
+	"heatLossRateOverheated" : 40,	//Heat lost per second while overheated
 	
-	"overheatThreshold" : 70,		//Heat threshold to overheat
+	"overheatThreshold" : 80,		//Heat threshold to overheat
 	"hotThreshold" : 60,			//Heat threshold for "hot" animation state
 	"mediumThreshold" : 45,			//Heat threshold for "medium" animation state
 	"coolThreshold" : 25,			//Heat threshold for "cold" animation state

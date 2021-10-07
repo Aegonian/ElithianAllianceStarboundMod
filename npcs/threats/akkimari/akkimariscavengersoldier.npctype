@@ -1,0 +1,93 @@
+{
+  "type" : "akkimariscavengersoldier",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "akkimariScavengerDeathTreasure" ],
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      //Melee Behaviour
+	  //"leapWindup" : 0.1,				//Defaults to 0.1
+	  //"leapCooldown": 4,				//Defaults to 4.0
+	  //"leapChance": 0.5,				//Defaults to 0.5
+	  //"switchToRangedCooldown": 8,	//Defaults to 8.0
+	  //"liquidHesitationTime": 3,		//Defaults to 3.0
+	  //"forceRunRange": 15,			//Defaults to 15.0
+	  //"cantReachDialog": true			//Defaults to true
+	  
+	  //Ranged Behaviour
+	  //"rangedAimTime": 0.25,			//Defaults to 0.0
+	  //"rangedWindupTime": 0.05,		//Defaults to 0.05
+	  //"rangedMinFireTime": 4,			//Defaults to 0.5
+	  //"rangedMaxFireTime": 6,			//Defaults to 1.0
+	  //"bowDrawTime": 1,				//Defaults to 1.0
+	  //"arrowSpeed": 62.5,				//Defaults to 62.5
+	  
+	  //Crewmember Behaviour
+      "friendlyNpcTypes" : ["crewmemberakkimariscavenger"]
+    },
+	
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Kill, kill, kill!",
+            "Dead! You finished!",
+            "Akki assa dakka!",
+            "<selfname> going to eat you!",
+            "Dakka belong to <selfname> now!",
+            "<selfname> gonna eat!"
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0,
+	    [
+		  {
+            "head" : [
+			  { "name" : "akkimari-combathead", "parameters" : { "colorIndex" : [1, 2, 11] } }
+			],
+            "chest" : [
+			  { "name" : "akkimari-tier6achest", "parameters" : { "colorIndex" : [1, 2, 11] } }
+			],
+            "legs" : [
+			  { "name" : "akkimari-tier6alegs", "parameters" : { "colorIndex" : [1, 2, 11] } }
+			],
+            "primary" : [
+			  "akkimari-tier4shortsword",
+			  "akkimari-tier4broadsword",
+			  "akkimari-tier5spear",
+			  "akkimari-tier6axe",
+			  "akkimari-tier6hammer"
+            ],
+            "alt" : [
+			  "akkimarishield"
+            ],
+            "sheathedprimary" : [
+			  "akkimari-driftrifle"
+            ]
+          }
+        ]
+	  ]
+    ]
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 250.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 1.5
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      }
+    }
+  }
+}

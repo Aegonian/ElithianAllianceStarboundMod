@@ -19,7 +19,7 @@
 
   "aegiDescription" : "The Centens were master craftsmen - this statue alone is proof of it.",
   "avikanDescription" : "An Old One, immortalized in a Hyverium statue. It will never decay.",
-  "erixianDescription" : "An ancient Centensian statue. A bit nondescript, but beautiful nonetheless.",
+  "draunaarDescription" : "An ancient Centensian statue. A bit nondescript, but beautiful nonetheless.",
   "trinkDescription" : "Statues of the Centens will never decay - Hyverium makes certain of that.",
   "hymidDescription" : "The Gods left behind many statues, all of them beautiful.",
   "notixDescription" : "One can never guess the age of a statue like this - Hyverium will never decay.",
@@ -28,6 +28,7 @@
   "dremetonDescription" : "TODO",
   "theleanDescription" : "TODO",
   "drodenDescription" : "Analyzing statue. Detected Centensian craftsmanship.",
+  "akkimariDescription" : "God-maker-statue, pretty-very.",
 
   "inventoryIcon" : "centensstatueicon.png",
   "orientations" : [

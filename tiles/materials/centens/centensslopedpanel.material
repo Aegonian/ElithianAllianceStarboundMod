@@ -11,6 +11,7 @@
   "novakidDescription" : "Those are metal wall panels alright.",
   
   "drodenDescription" : "Analysis complete. Centensian metal plating detected.",
+  "akkimariDescription" : "Panel-sloped. Slippery-very, Akki careful.",
   
   "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
   "health" : 8,
@@ -22,7 +23,7 @@
     "variants" : 1,
     "lightTransparent" : false,
     "occludesBelow" : true,
-    "multiColored" : false,
+    "multiColored" : true,
     "zLevel" : 350
   }
 }

@@ -18,7 +18,7 @@
 
   "aegiDescription" : "A top sheet decorated with the colours of the Rhaiod.",
   "avikanDescription" : "The top sheet of a Rhaiod tent. It always stands out in our camps.",
-  "erixianDescription" : "An oddly-coloured top sheet.",
+  "draunaarDescription" : "An oddly-coloured top sheet.",
   "trinkDescription" : "This top sheetis decorated with the colours of the Rhaiod.",
   "hymidDescription" : "The colour of this tent roof reminds me of the Gods.",
   "notixDescription" : "A purple top sheet.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Top sheet. Colour suggests this tent belongs to the Rhaiod.",
+  "akkimariDescription" : "Sheet-top, for building tent.",
 
   "inventoryIcon" : "avikantalltenttop3icon.png",
   "orientations" : [

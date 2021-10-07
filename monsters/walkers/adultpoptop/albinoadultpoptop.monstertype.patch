@@ -1,0 +1,26 @@
+[ 
+	{
+		"op": "add",
+		"path" : "/dropPools/0/avikanhunting",
+		"value": "avikanhunting"
+	},
+	{
+		"op": "add",
+		"path" : "/dropPools/0/keffridersspear",
+		"value": "keffriderstreasure"
+	},
+	{
+		"op": "add",
+		"path" : "/baseParameters/statusSettings/stats/akkimariacidResistance",
+		"value": {
+          "baseValue" : -0.5
+        }
+	},
+	{
+		"op": "add",
+		"path" : "/baseParameters/statusSettings/stats/akkimariacidStatusImmunity",
+		"value": {
+          "baseValue" : 0.0
+        }
+	}
+]

@@ -33,7 +33,7 @@
   
   "aegiDescription" : "The technology behind this metalworking station is rather impressive.",
   "avikanDescription" : "These machines produce the bulk of the Vanguard's armoury.",
-  "erixianDescription" : "That laser can cut through flesh as easily as it cuts through metal. Better be careful.",
+  "draunaarDescription" : "That laser can cut through flesh as easily as it cuts through metal. Better be careful.",
   "trinkDescription" : "Not the most efficient metalworking solution. That laser requires too much energy for the work it does.",
   "hymidDescription" : "That laser is extremely potent. It'll cut right through any common metal.",
   "notixDescription" : "An advanced metalworking solution. I wonder what supplies the power to this station?",
@@ -42,6 +42,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Analysis complete. Metalworking station. Used to construct equipment and other items made of metal.",
+  "akkimariDescription" : "Machine makes things for Akki. Akki happy.",
 
   "inventoryIcon" : "avikanmetalcraftingicon.png",
   "orientations" : [

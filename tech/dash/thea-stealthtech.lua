@@ -24,6 +24,10 @@ function init()
   self.blinkTimer = 0
   
   tech.setParentDirectives()
+
+  --Variables for fixing persistent activation bug
+  delayDeactivate = true
+  delayDeactivateAtInit = true
 end
 
 function uninit()
@@ -32,29 +36,54 @@ function uninit()
 end
 
 function update(args)
+  local propertyString = "entityinvisible" .. tostring(entity.id())
+  local worldPropertyActive = world.getProperty(propertyString)
+  
+  --If we have a delayed deactivation waiting, deactivate and skip a frame
+  if delayDeactivate then
+	delayDeactivate = false
+    setStealthState(false, propertyString, delayDeactivateAtInit)
+	delayDeactivateAtInit = false
+	delayDeactivateEcho = true
+	return
+  end
+  
+  --If we have a second delayed deactivation waiting, reset property and skip a frame
+  if delayDeactivateEcho then
+    --yes, it is really this persistently stubborn a bug that it requires this level of force
+    world.setProperty(propertyString, false)
+	delayDeactivateEcho = false
+	return
+  end
+  
   --Double tap behaviour
   if self.doubleTapTimer > 0 then
 	self.doubleTapTimer = math.max(0, self.doubleTapTimer - args.dt)
   end
-  
+  --sb.logInfo("stealthtechupdate: %s",{propertyString,worldPropertyActive})
   if args.moves["up"] and self.cooldownTimer == 0 and not status.statPositive("activeMovementAbilities") then
 	if not self.lastMoves["up"] then
 	  if self.doubleTapTimer == 0 then
 		self.doubleTapTimer = self.maximumDoubleTapTime
 	  else
-		if self.active then
-		  deactivateStealth()
-		elseif not world.getProperty("entityinvisible" .. tostring(entity.id())) then
-		  activateStealth()
+		if self.active or worldPropertyActive then
+		  --desetStealthState()
+	        world.setProperty(propertyString, false)
+			delayDeactivate=true
+			return
+		elseif not worldPropertyActive then
+		  setStealthState(true, propertyString)
 		end
 		self.doubleTapTimer = 0
 	  end
 	end
   end
-  
+
   --Deactivate stealth if any of the following buttons are pressed: primaryFire, altFire, special1
   if (args.moves["primaryFire"] or args.moves["altFire"] or args.moves["special1"]) and self.active then
-	deactivateStealth()
+	world.setProperty(propertyString, false)
+	delayDeactivate = true
+	return
   end
   
   --Count down the cooldown timer
@@ -74,7 +103,9 @@ function update(args)
   for _, notification in ipairs(damageNotificationsIncoming) do
 	if notification.healthLost > 1 then
 	  if self.active then
-		deactivateStealth()
+	  world.setProperty(propertyString, false)
+	  delayDeactivate = true
+	  return
 	  end
 	end
   end
@@ -97,7 +128,9 @@ function update(args)
 	
 	--If we are out of time, deactivate stealth
 	if self.durationLeft == 0 then
-	  deactivateStealth()
+	  world.setProperty(propertyString, false)
+	  delayDeactivate = true
+	  return
 	end
   end
   
@@ -107,33 +140,21 @@ function update(args)
   self.lastMoves = args.moves
 end
 
-function activateStealth()
-  animator.playSound("activate")
-  animator.burstParticleEmitter("activate")
-  
-  animator.setParticleEmitterActive("cloakedParticles", true)
-  animator.setParticleEmitterActive("cloakedParticles2", true)
-  
-  tech.setParentDirectives(self.directive)
-  
-  world.setProperty("entityinvisible" .. tostring(entity.id()), true)
-  self.active = true
-  
-  self.durationLeft = self.maxDuration
-end
+function setStealthState(active, propertyString, atInit)
+  --sb.logInfo("thea-stealthtech: %s",{active,propertyString,novfx})
+  if not atInit then
+    animator.playSound(active and "activate" or "deactivate")
+    animator.burstParticleEmitter(active and "activate" or "deactivate")
+  end
+  animator.setParticleEmitterActive("cloakedParticles", active)
+  animator.setParticleEmitterActive("cloakedParticles2", active)
 
-function deactivateStealth()
-  animator.playSound("deactivate")
-  animator.burstParticleEmitter("deactivate")
+  tech.setParentDirectives((active and self.directive) or nil)
   
-  animator.setParticleEmitterActive("cloakedParticles", false)
-  animator.setParticleEmitterActive("cloakedParticles2", false)
-
-  tech.setParentDirectives()
+  world.setProperty(propertyString, active)
   
-  world.setProperty("entityinvisible" .. tostring(entity.id()), nil)
-  self.active = false
-  
-  self.cooldownTimer = self.cooldownTime
-  self.recharged = false
+  self.durationLeft = (active and self.maxDuration) or 0
+  self.cooldownTimer = ((not (active or atInit)) and self.cooldownTime) or 0
+  self.recharged = atInit or ((not active) and false) or active
+  self.active = active
 end

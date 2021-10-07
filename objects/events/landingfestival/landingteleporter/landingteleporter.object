@@ -24,7 +24,7 @@
   
   "aegiDescription" : "This teleporter is linked directly to the Landing Festival Hall. It'll only activate during the Landing Festival.",
   "avikanDescription" : "This alien teleporter is linked to a set location. It only seems to be active during a specific time of year.",
-  "erixianDescription" : "This teleporter is linked directly to the Landing Festival Hall. It'll only activate during the Landing Festival.",
+  "draunaarDescription" : "This teleporter is linked directly to the Landing Festival Hall. It'll only activate during the Landing Festival.",
   "trinkDescription" : "This teleporter is linked directly to the Landing Festival Hall. It'll only activate during the Landing Festival.",
   "hymidDescription" : "This teleporter is linked directly to the Landing Festival Hall. It'll only activate during the Landing Festival.",
   "notixDescription" : "This teleporter is linked directly to the Landing Festival Hall. It'll only activate during the Landing Festival.",
@@ -33,7 +33,7 @@
   "dremetonDescription" : "TODO",
   "hyvonDescription" : "TODO",
   "drodenDescription" : "Analysis. Readings indicate that this teleporter only activates during a specific time of year.",
-  "akkimariDescription" : "Akki knows teleporter is only active at some specific time.",
+  "akkimariDescription" : "Akki knows teleporter is only active at some time-specific.",
 
   "inventoryIcon" : "landingteleportericon.png",
   "orientations" : [

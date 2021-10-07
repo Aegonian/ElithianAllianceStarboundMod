@@ -1,0 +1,18 @@
+{
+  "type" : "akkimarimerchant",
+  "baseType" : "merchant",
+
+  "dropPools" : [ "akkimariDeathTreasure" ],
+
+  "scriptConfig" : {
+	"reactions" : {
+      "spontaneous" : [
+        [1.0, "wander", { "timeRange" : [0.2, 0.6] }]
+      ]
+    },
+	
+    "questGenerator" : { "pools" : [], "enableParticipation" : false }
+  },
+  
+  "matchColorIndices" : true
+}

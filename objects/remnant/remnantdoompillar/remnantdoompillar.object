@@ -1,0 +1,115 @@
+{
+  "objectName" : "remnantdoompillar",
+  "colonyTags" : ["remnant"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 200,
+  "description" : "This rock is not natural. I feel drained nearby it...",
+  "shortdescription" : "Cursed Pillar",
+  "race" : "remnant",
+
+  "floranDescription" : "Floran feelsss drained. Rock isss making Floran weak...",
+  "glitchDescription" : "Exhausted. This rock is making me feel weak and drained...",
+  
+  "drodenDescription" : "System malfunction. Energy levels draining. External interference detected.",
+  "akkimariDescription" : "Akki-tired. Akki have trouble breathing... Rock-glowing feel wrong.",
+
+  "lightColor" : [40, 64, 0],
+  
+  "inventoryIcon" : "remnantdoompillaricon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "remnantdoompillar.png:<color>", "fullbright" : true }, { "image" : "remnantdoompillarlit.png:<color>" } ],
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "lightPosition" : [0, 2],
+
+      "spaceScan" : 0.1,
+      "flipImages" : true,
+      "direction" : "left",
+      "anchors" : [ "bottom" ]
+    },
+    {
+	  "imageLayers" : [ { "image" : "remnantdoompillar.png:<color>", "fullbright" : true }, { "image" : "remnantdoompillarlit.png:<color>" } ],
+
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+      "lightPosition" : [0, 2],
+
+      "spaceScan" : 0.1,
+      "direction" : "right",
+      "anchors" : [ "bottom" ]
+    }
+  ],
+  
+  "animation" : "remnantdoompillar.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "damage" : [ "/sfx/melee/blunt_hit_stone1.ogg", "/sfx/melee/blunt_hit_stone2.ogg", "/sfx/melee/blunt_hit_stone3.ogg", "/sfx/melee/blunt_hit_stone4.ogg" ]
+    },
+    "particleEmitters" : {
+      "damage" : {
+		"enabled" : true,
+        "burstCount" : 2,
+		"offsetRegion" : [-1, 0, 1, 4],
+		"particles" : [
+          { "particle" : "remnantrockshard" },
+          { "particle" : "remnantrockshard" },
+          { "particle" : "remnantglowrockshard" }
+        ]
+      },
+      "destroy" : {
+		"enabled" : true,
+        "burstCount" : 25,
+		"offsetRegion" : [-1, 0, 1, 4],
+		"particles" : [
+          { "particle" : "remnantrockshard" },
+          { "particle" : "remnantrockshard" },
+          { "particle" : "remnantglowrockshard" }
+        ]
+      },
+      "idleParticles" : {
+		"enabled" : true,
+        "emissionRate" : 2,
+		"offsetRegion" : [-1, 0, 1, 4],
+		"particles" : [
+          { "particle" : "thea-darkfog" },
+          { "particle" : "thea-darkfogsmall" },
+          { "particle" : "ancientcursestreak" }
+        ]
+      }
+    }
+  },
+
+  "smashable" : true,
+  "smashSounds" : [ "/sfx/objects/rock_big_break1.ogg", "/sfx/objects/rock_big_break2.ogg", "/sfx/objects/rock_big_break3.ogg", "/sfx/objects/rock_big_break4.ogg", "/sfx/objects/rock_big_break5.ogg" ],
+  "health" : 500,
+
+  "smashDropPool" : "remnantSplinterFragment",
+  "breakDropPool" : "remnantSplinterFragment",
+
+  "scripts" : [ "/objects/scripts/thea-destructableeffectspreader.lua" ],
+  "scriptDelta" : 5,
+  
+  "damageParticles" : true,
+  "destroyParticles" : true,
+  "idleParticles" : true,
+  "explosionDamage" : 75,
+  "damageRepeatGroup" : "remnantdoompillar",
+  "explosionConfig" : "/projectiles/objects/remnantdoompillarexplosion.config",
+  "explosionOffset" : [0.5, 2.5],
+  
+  "targetTypes" : [ "player", "npc" ],
+  
+  "effectRadius" : 100,
+  "effectProjectile" : "remnantdoomspreader",
+  
+  "useFollowProjectile" : true,
+  "followProjectile" : "remnantdoomsource",
+  "followProjectileCooldown" : 0.4,
+  "followTargetOffset" : [0.5, 2.5]
+}

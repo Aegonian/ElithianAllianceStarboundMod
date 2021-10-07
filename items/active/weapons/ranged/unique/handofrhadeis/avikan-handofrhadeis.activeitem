@@ -64,7 +64,7 @@
   "animationScripts" : [ "/items/active/effects/thea-lightning-chargeintake.lua" ],
   "scriptedAnimationParameters" : {
     "particleConfig" : {
-	  "image" : "/particles/chargeintake/xanafianintake.png",
+	  "image" : "/particles/chargeintake/pulsarintake.png",
 	  "scale" : 1.5,
 	  "fullbright" : true
 	}
@@ -82,8 +82,8 @@
     "class" : "TheaOptionalCharge",
 
     "chargeTime" : 0.5,
-    "baseDamage" : 1.5,
-    "baseEnergyUsage" : 7,
+    "baseDamage" : 2.0,
+    "baseEnergyUsage" : 7.5,
     "inaccuracy" : 0.02,
 	
 	"chargePowerMultiplier" : 3.0,

@@ -18,7 +18,7 @@
 
   "aegiDescription" : "An Avikan assault rifle, no longer in service.",
   "avikanDescription" : "A Vanguard assault rifle. A tool of freedom.",
-  "erixianDescription" : "An assault rifle of Avikan design.",
+  "draunaarDescription" : "An assault rifle of Avikan design.",
   "trinkDescription" : "This Avikan weapon uses a surprisingly efficient feeding mechanism.",
   "hymidDescription" : "The Avikan are very capable gunsmiths, and this rifle is a great example of their skill.",
   "notixDescription" : "An Avikan weapon built for use in any environment.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Vanguard Assault Rifle detected. Owner: unknown.",
+  "akkimariDescription" : "Gun-alien, for killing. Akki like.",
   
   "inventoryIcon" : "avikanrifledisplay.png",
   "orientations" : [

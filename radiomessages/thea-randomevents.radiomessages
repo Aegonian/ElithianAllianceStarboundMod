@@ -1,0 +1,15 @@
+{
+  //=======================================================================
+  // AKKIMARI DRILL CAPTURE
+  //=======================================================================
+  "akkimaridrillcapturestart" : {
+    "unique" : false,
+    "text" : "I've detected a nearby Akkimari drill. If you stay near it, I can capture it and let you reap the rewards.",
+    "persistTime" : 8.0
+  },
+  "akkimaridrillcapturecomplete" : {
+    "unique" : false,
+    "text" : "I have successfully captured the Akkimari drill. The rewards are all yours!",
+    "persistTime" : 6.0
+  }
+}

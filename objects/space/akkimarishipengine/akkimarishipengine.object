@@ -1,0 +1,65 @@
+{
+  "objectName" : "akkimarishipengine",
+  "colonyTags" : ["akkimari"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 2500,
+  "description" : "The massive propulsion engine of an Akris cruiser.",
+  "shortdescription" : "Akris Cruiser Engine",
+  "race" : "akkimari",
+  
+  "health" : 16,
+
+  "apexDescription" : "A massive propulsion engine.",
+  "avianDescription" : "A massive engine for a massive ship.",
+  "floranDescription" : "Big engine for ssship.",
+  "glitchDescription" : "Awed. This is a massive engine.",
+  "humanDescription" : "Now THAT's an engine!",
+  "hylotlDescription" : "A massive propulsion engine, for an equally massive ship.",
+  "novakidDescription" : "A huge engine.",
+
+  "aegiDescription" : "A massive engine for a large Akkimari cruiser.",
+  "avikanDescription" : "A massive engine for a large alien ship.",
+  "draunaarDescription" : "This is a massive engine!",
+  "trinkDescription" : "A massive engine. It's surprisingly efficient.",
+  "hymidDescription" : "A ship engine of massive proportions.",
+  "notixDescription" : "I don't think I want to hear what this engine sounds like when activated...",
+  "jorgasianDescription" : "A gigantic propulsion engine for a large ship.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected ship engine. Detected unusual proportions.",
+  "akkimariDescription" : "Engine-massive for flying ship. Take fuel-much, give thrust-more.",
+
+  "inventoryIcon" : "akkimarishipengineicon.png",
+  "orientations" : [
+	{
+	  "imageLayers" : [ { "image" : "akkimarishipengine.png:<color>", "fullbright" : true }, { "image" : "akkimarishipenginelit.png:<color>" } ],
+      "renderLayer" : "Liquid+1",
+
+      "imagePosition" : [-136, -96],
+      "frames" : 1,
+      "animationCycle" : 0.75,
+
+      "spaceScan" : 0.5,
+      "anchors" : [ "left" ],
+      "collision" : "solid",
+      "flipImages" : true,
+      "direction" : "left"
+    },
+    {
+	  "imageLayers" : [ { "image" : "akkimarishipengine.png:<color>", "fullbright" : true }, { "image" : "akkimarishipenginelit.png:<color>" } ],
+      "renderLayer" : "Liquid+1",
+
+      "imagePosition" : [-136, -96],
+      "frames" : 1,
+      "animationCycle" : 0.75,
+
+      "spaceScan" : 0.5,
+      "anchors" : [ "right" ],
+      "collision" : "solid",
+      "direction" : "right"
+    }
+  ]
+}

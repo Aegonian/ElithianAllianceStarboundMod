@@ -19,7 +19,7 @@
 
   "aegiDescription" : "An inactive Droden. I'm not sure if this one is an AI, or just a droid.",
   "avikanDescription" : "An inactive Droden. I'm not sure if this one is an AI, or just a droid.",
-  "erixianDescription" : "An inactive Droden. I'm not sure if this one is an AI, or just a droid.",
+  "draunaarDescription" : "An inactive Droden. I'm not sure if this one is an AI, or just a droid.",
   "trinkDescription" : "An inactive Droden. I'm not sure if this one is an AI, or just a droid.",
   "hymidDescription" : "An inactive Droden. I'm not sure if this one is an AI, or just a droid.",
   "notixDescription" : "An inactive Droden. I'm not sure if this one is an AI, or just a droid.",
@@ -28,6 +28,7 @@
   "dremetonDescription" : "An inactive Droden. I'm not sure if this one is an AI, or just a droid.",
   "theleanDescription" : "An inactive Droden. I'm not sure if this one is an AI, or just a droid.",
   "drodenDescription" : "Droden unit detected. Analysis: Deactivated.",
+  "akkimariDescription" : "Robot-sleeping. Akki salvage metals?",
 
   "inventoryIcon" : "icon.png",
   "orientations" : [

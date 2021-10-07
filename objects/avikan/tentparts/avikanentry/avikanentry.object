@@ -18,7 +18,7 @@
 
   "aegiDescription" : "A simple leather awning. Provides good protection against desert winds.",
   "avikanDescription" : "A basic but functional leather awning, a vital part of any tent.",
-  "erixianDescription" : "A crude leather awning.",
+  "draunaarDescription" : "A crude leather awning.",
   "trinkDescription" : "A leather awning.",
   "hymidDescription" : "A leather awning? A primitive way to protect one's home.",
   "notixDescription" : "A simple leather awning.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "A leather awning. What it lacks in decorational value, it makes up for in functionality.",
   "hyvonDescription" : "An unimpressive leather awning.",
   "drodenDescription" : "Leather awning. Provides protection against desert winds.",
+  "akkimariDescription" : "Awning for tent, Akki go inside.",
 
   "inventoryIcon" : "avikanentryicon.png",
   "orientations" : [

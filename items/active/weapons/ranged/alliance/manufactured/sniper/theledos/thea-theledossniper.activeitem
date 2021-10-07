@@ -4,12 +4,12 @@
   "inventoryIcon" : "thea-theledossniper.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A Theledos rifle firing explosive plasma rounds.",
+  "description" : "^gray;A Theledos rifle firing explosive plasma rounds.^reset;",
   "manufacturer" : "^gray;Theledos^reset;",
   "shortdescription" : "Vethir Sniper",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Sniper Rifle",
   "itemTags" : ["weapon","ranged","sniperrifle","alliance","theledos","allianceUpgradeable"],
   "twoHanded" : true,
@@ -33,6 +33,11 @@
       }
     },
     "particleEmitters" : {
+    },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [0, 66, 90]
+	  }
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/plasma_sniper1.ogg" ]

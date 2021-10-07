@@ -63,7 +63,7 @@
 	  { "item" : "trinkfrostgrenade" },
 	  { "item" : "trinkrepairmodule" },
 	  { "item" : "trinkturret" },
-	  { "item" : "trinkshieldgenerator" },
+	  { "item" : "trinkshieldgenerator-player" },
 	  { "item" : "trinkroofflat" },
 	  { "item" : "trinkroofantenna" },
 	  { "item" : "trinkroofdish" },
@@ -143,6 +143,7 @@
 	//Weapons
 	  //Melee
       { "item" : "trinkshield" },
+      { "item" : "trinktier1shield" },
       { "item" : "trinktier1longprod" },
       { "item" : "trinktier1prod" },
       { "item" : "trinktier2longprod" },
@@ -154,6 +155,9 @@
       { "item" : "trinktier2pistol" },
       { "item" : "trinktier2rifle" },
       { "item" : "trinktier2shotgun" },
+	  //Uncategorized
+      { "item" : "trinkhoe" },
+      { "item" : "trinkwateringcan" },
 	  
 // Trink Crafting 2
 	//Armour
@@ -186,8 +190,10 @@
 	  
 	//Weapons
 	  //Melee
+      { "item" : "trinktier3shield" },
       { "item" : "trinktier3longprod" },
       { "item" : "trinktier3prod" },
+      { "item" : "trinktier4shield" },
       { "item" : "trinktier4longprod" },
       { "item" : "trinktier4prod" },
 	  //Ranged
@@ -244,8 +250,10 @@
 	  
 	//Weapons
 	  //Melee
+      { "item" : "trinktier5shield" },
       { "item" : "trinktier5longprod" },
       { "item" : "trinktier5prod" },
+      { "item" : "trinktier6shield" },
       { "item" : "trinktier6longprod" },
       { "item" : "trinktier6prod" },
 	  //Ranged

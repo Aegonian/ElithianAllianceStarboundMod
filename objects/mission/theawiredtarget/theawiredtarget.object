@@ -18,6 +18,9 @@
   "humanDescription" : "This practice target can pass a wired signal until it's broken.",
   "hylotlDescription" : "This practice target is hypnotising, breaking it may trigger something.",
   "novakidDescription" : "Just what I need for shootin' practice. Wonder if breaking this target does somethin'.",
+  
+  "drodenDescription" : "Detected practice target. Unit can fire at it to complete a circuit.",
+  "akkimariDescription" : "Akki shoot target, target break. Target break, something happens!",
 
   "inventoryIcon" : "theawiredtargeticon.png",
   "orientations" : [

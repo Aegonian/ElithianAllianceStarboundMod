@@ -18,7 +18,7 @@
 
   "aegiDescription" : "The Avikan build some of the most reliable vehicles there are.",
   "avikanDescription" : "A reliable keff. Like us, it can withstand extreme conditions.",
-  "erixianDescription" : "This hoverbike is incredibly reliable. It can function even inside a sandstorm.",
+  "draunaarDescription" : "This hoverbike is incredibly reliable. It can function even inside a sandstorm.",
   "trinkDescription" : "A hoverbike of Avikan design, it is incredibly reliable.",
   "hymidDescription" : "A hoverbike, built by the Avikan. It looks uncomfortable.",
   "notixDescription" : "This hoverbike can withstand even the harshest of environments.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Keff detected. Owner: unknown.",
+  "akkimariDescription" : "Bike-alien, looks fast.",
 
   "inventoryIcon" : "avikanhoverbikeicon.png",
   "orientations" : [

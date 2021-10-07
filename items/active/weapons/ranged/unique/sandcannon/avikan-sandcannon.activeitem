@@ -5,12 +5,13 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "^orange;A merciless stream of sand to keep your enemies at bay.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "^orange;Desert's Embrace^white;",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-continuousgun-unique",
+  "tooltipKind" : "thea-continuousgun-unique-mf",
   "category" : "Sand Launcher",
-  "itemTags" : ["weapon","ranged","avikan","theaUnique"],
+  "itemTags" : ["weapon","ranged","avikan","vanguard","theaUnique"],
   "twoHanded" : true,
   
   //CONFIGURATION FOR WEAPONS COLLECTION

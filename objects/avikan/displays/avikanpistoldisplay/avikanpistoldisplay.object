@@ -18,7 +18,7 @@
 
   "aegiDescription" : "This Avikan skiprifle fires a burst of bullets designed to skip off surfaces.",
   "avikanDescription" : "Small but deadly, a skiprifle is an essential tool for Avikan explorers.",
-  "erixianDescription" : "This burst-fire pistol was designed by the Avikan.",
+  "draunaarDescription" : "This burst-fire pistol was designed by the Avikan.",
   "trinkDescription" : "A small and lightweight pistol, but exceptionally efficient at killing.",
   "hymidDescription" : "A pistol built by the Avikan.",
   "notixDescription" : "Unlike many ballistic weapons, this pistol will never jam.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Vanguard Skiprifle detected. Ammunition depleted.",
+  "akkimariDescription" : "Pistol-small. Akki find it puny.",
   
   "inventoryIcon" : "avikanpistoldisplay.png",
   "orientations" : [

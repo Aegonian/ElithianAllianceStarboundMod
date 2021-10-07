@@ -5,12 +5,13 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "^orange;A monstrous linerifle capable of downing ships in flight.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "^orange;Skoffwrecker's Bow^white;",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-chargedgunalt-unique",
+  "tooltipKind" : "thea-chargedgunalt-unique-mf",
   "category" : "Heavy Line Rifle",
-  "itemTags" : ["weapon","ranged","avikan","linerifle","theaUnique"],
+  "itemTags" : ["weapon","ranged","avikan","linerifle","vanguard","theaUnique"],
   "twoHanded" : true,
   
   //CONFIGURATION FOR WEAPONS COLLECTION

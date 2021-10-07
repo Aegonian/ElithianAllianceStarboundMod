@@ -1,0 +1,30 @@
+{
+  "name" : "thea-pacifyenemy",
+  "blockingStat" : "conscriptImmunity",
+  
+  "effectConfig" : {
+	"directive" : "fade=46239F=0.10",
+	"conscriptMonsters" : false,
+	"conscriptNPCs" : true,
+	
+	"npcEmote" : "sad",
+	"npcDance" : "titanic",
+	
+	"aggressive" : true,
+	"damageTeam" : {"team" : 0, "type" : "passive"}, //If set to "passive", enemy stops attacking any targets. If set to "indiscriminate", enemy will attack all targets
+	
+	//Dialog lines for NPCs to say when they get conscripted
+	"defaultConscriptDialog" : "I give up! I won't fight you!",
+	"glitchConscriptDialog" : "Afraid. You've won! Please let me go!",
+	"floranConscriptDialog" : "Floran ssscared, floran sstop fighting you!",
+	"drodenConscriptDialog" : "Unit surrendering. Resistance is futile.",
+	"akkimariConscriptDialog" : "Akki loses, Akki give up!"
+  },
+  "defaultDuration" : 15.0,
+
+  "scripts" : [
+    "/stats/effects/thea-conscriptenemy/thea-conscriptenemy.lua"
+  ],
+
+  "animationConfig" : "thea-pacifyenemy.animation"
+}

@@ -4,12 +4,13 @@
   "level" : 6,
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A heated axe used by bounty hunters of the Kelraaki.",
+  "description" : "^gray;A heated axe used by bounty hunters of the Kelraaki.",
+  "manufacturer" : "^gray;Kelraaki^reset;",
   "shortdescription" : "Kelraaki Axe",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "axe",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","axe","akkimari","akkimariUpgradeable"],
+  "itemTags" : ["weapon","melee","axe","akkimari","akkimariUpgradeable","kelraaki"],
 
   "inventoryIcon" : "akkimari-tier6axeicon.png",
 
@@ -47,5 +48,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

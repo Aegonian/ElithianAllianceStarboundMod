@@ -21,7 +21,7 @@
 
   "aegiDescription" : "A Centensian container. It might hold some artefacts.",
   "avikanDescription" : "A container from the Old Ones. These often hold artefacts from the Old Civilization.",
-  "erixianDescription" : "This Centensian container has an odd way of opening.",
+  "draunaarDescription" : "This Centensian container has an odd way of opening.",
   "trinkDescription" : "A Centensian container. Eons old, but its opening mechanism still works.",
   "hymidDescription" : "An ancient Centensian container.",
   "notixDescription" : "An ancient container, built by the Centens.",
@@ -30,6 +30,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Detected Centensian container. Contents unknown.",
+  "akkimariDescription" : "God-maker storage, Akki find valuables inside.",
 
   "inventoryIcon" : "centenschesticon.png",
   "orientations" : [

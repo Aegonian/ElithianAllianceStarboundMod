@@ -33,7 +33,7 @@
 
   "aegiDescription" : "All the equipment you need for crafting leather items.",
   "avikanDescription" : "A traditional tanning rack. I can craft many leather items here.",
-  "erixianDescription" : "A tool from ancient times. Who still uses such things these days?",
+  "draunaarDescription" : "A tool from ancient times. Who still uses such things these days?",
   "trinkDescription" : "A tanning rack. It does its job, but not very efficiently.",
   "hymidDescription" : "Leather isn't the prettiest material, but items crafted from it are certainly tough.",
   "notixDescription" : "I could craft some leather items here.",
@@ -42,6 +42,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Analysis complete. Tanning rack. Used to construct equipment and other items made of leather.",
+  "akkimariDescription" : "Akki tan hides here.",
 
   "learnBlueprintsOnPickup" : [],
 
@@ -71,7 +72,7 @@
 
 		"aegiDescription" : "All the equipment you need for crafting leather items.",
 		"avikanDescription" : "A traditional tanning rack. I can craft many leather items here.",
-		"erixianDescription" : "A tool from ancient times. Who still uses such things these days?",
+		"draunaarDescription" : "A tool from ancient times. Who still uses such things these days?",
 		"trinkDescription" : "A tanning rack. It does its job, but not very efficiently.",
 		"hymidDescription" : "Leather isn't the prettiest material, but items crafted from it are certainly tough.",
 		"notixDescription" : "I could craft some leather items here.",
@@ -79,7 +80,8 @@
 		"centensDescription" : "TODO.",
 		"dremetonDescription" : "TODO.",
 		"theleanDescription" : "TODO.",
-		"drodenDescription" : "Analysis complete. Tanning rack. Used to construct equipment and other items made of leather."
+		"drodenDescription" : "Analysis complete. Tanning rack. Used to construct equipment and other items made of leather.",
+		"akkimariDescription" : "Akki tan hides here."
       },
 
       "interactData" : {
@@ -130,7 +132,7 @@
 
 		"aegiDescription" : "High-quality leather items can be crafted here.",
 		"avikanDescription" : "This machine allows me to craft leather items of an even higher quality.",
-		"erixianDescription" : "A big upgrade from a simple tanning rack.",
+		"draunaarDescription" : "A big upgrade from a simple tanning rack.",
 		"trinkDescription" : "Machines are far more efficient at leatherworking than any organic ever could be.",
 		"hymidDescription" : "An automated leatherworking station. It can craft leather items of an oustanding quality.",
 		"notixDescription" : "An automated leatherworking station, for crafting high quality leather items.",
@@ -138,7 +140,8 @@
 		"centensDescription" : "TODO.",
 		"dremetonDescription" : "TODO.",
 		"theleanDescription" : "TODO.",
-		"drodenDescription" : "Analysis complete. Leatherworking station. Used to construct equipment and other items made of leather."
+		"drodenDescription" : "Analysis complete. Leatherworking station. Used to construct equipment and other items made of leather.",
+		"akkimariDescription" : "Akki put hides is, machine make items-leather."
       },
 
       "interactData" : {

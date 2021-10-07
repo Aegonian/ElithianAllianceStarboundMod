@@ -409,6 +409,23 @@
   //================================== AKKIMARI DROP POOLS ==================================
   //=========================================================================================
   {"op" : "add",
+   "path" : "/akkimariDeathTreasure",
+   "value" : [
+
+	[0, {
+      "pool" : [
+        {"weight" : 0.7, "pool" : "money"},
+		{"weight" : 0.3, "item" : "akkimarisilk"}
+      ],
+      "poolRounds" : [
+        [0.80, 0],
+        [0.20, 1]
+      ],
+      "allowDuplication" : false
+    }]
+   ]
+  },
+  {"op" : "add",
    "path" : "/akkimariScavengerDeathTreasure",
    "value" : [
 

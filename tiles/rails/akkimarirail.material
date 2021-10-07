@@ -13,6 +13,7 @@
   "glitchDescription" : "Concerned. This rail does not look very sturdy.",
   "floranDescription" : "Metal railsss made of sscrap.",
   "novakidDescription" : "Rusty ol' rails, that won't do.",
+  
   "drodenDescription" : "Detected rails. Material analysis: assorted scrap metal.",
   "akkimariDescription" : "Akki ride rails, Akki have fun.",
 
@@ -20,7 +21,7 @@
   "renderParameters" : {
     "texture" : "akkimarirail.png",
     "variants" : 5,
-    "multiColored" : false,
+    "multiColored" : true,
     "lightTransparent" : true,
     "occludesBelow" : false,
     "zLevel" : 0

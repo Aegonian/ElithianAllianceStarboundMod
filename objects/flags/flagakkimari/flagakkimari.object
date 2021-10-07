@@ -22,7 +22,7 @@
   
   "aegiDescription" : "The Covenant flag. My ship's teleporter can sync with its location so I can return here later.",
   "avikanDescription" : "The Covenant flag. The ship's teleporter can lock on to the locator module inside it, so I can return here later.",
-  "erixianDescription" : "A Covenant flag. I can save its location for my teleporter, allowing me to return here later.",
+  "draunaarDescription" : "A Covenant flag. I can save its location for my teleporter, allowing me to return here later.",
   "trinkDescription" : "A locator module inside this Covenant flag allows my ship's teleporter to bookmark this location.",
   "hymidDescription" : "A Covenant flag. I can bookmark its location so my teleporter can return me here at any time.",
   "notixDescription" : "The flag of the Covenant. I can save its location and return to it later using my teleporter.",
@@ -31,6 +31,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Covenant flag. Detected locator module. Ship teleportation system can lock on to this location.",
+  "akkimariDescription" : "Flag of Covenant-Kel'chis. Akki long for home...",
   
   "interactAction" : "OpenTeleportDialog",
   "interactData" : "/interface/warping/destinationonly.config",

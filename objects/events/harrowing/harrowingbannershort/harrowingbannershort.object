@@ -1,0 +1,52 @@
+{
+  "objectName" : "harrowingbannershort",
+  "colonyTags" : ["harrowing"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 350,
+  "description" : "A banner for celebrating the Harrowing.",
+  "shortdescription" : "Harrowing Banner",
+  "race" : "aegi",
+
+  "apexDescription" : "A banner decorated with a carved pumpkin.",
+  "avianDescription" : "A spooky banner.",
+  "floranDescription" : "Floran will laugh if sssilly children get sscared by thiss!",
+  "glitchDescription" : "Observation. A banner for the Harrowing.",
+  "humanDescription" : "This looks like a Halloween banner, but it's a bit off...",
+  "hylotlDescription" : "A torn banner adorned with a pumpkin face.",
+  "novakidDescription" : "This banner ain't spookin' me.",
+
+  "aegiDescription" : "A banner for the Harrowing. I love seeing these.",
+  "avikanDescription" : "An alien banner with some odd design.",
+  "draunaarDescription" : "For a festive banner, this looks rather dreary...",
+  "trinkDescription" : "A tattered banner. The Aegi put these out during the Harrowing.",
+  "hymidDescription" : "This banner is for the Harrowing.",
+  "notixDescription" : "A tattered banner.",
+  "jorgasianDescription" : "Is it time for the Harrowing again?",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected alien banner. Symbology unknown.",
+  "akkimariDescription" : "Banner-tattered has face-funny on it. Akki like.",
+
+  "inventoryIcon" : "harrowingbannershorticon.png",
+  "orientations" : [
+    {
+      "dualImage" : "harrowingbannershort.png:<color>",
+      "imagePosition" : [-8, -40],
+
+      "spaceScan" : 0.1,
+      "bgAnchors" : [
+		[-1, 0], [0, 0], [1, 0]
+	  ]
+    },
+    {
+      "dualImage" : "harrowingbannershort.png:<color>",
+      "imagePosition" : [-8, -40],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ]
+}

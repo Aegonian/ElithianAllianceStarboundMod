@@ -20,7 +20,7 @@
 
   "aegiDescription" : "An Avikan-designed console. Its interface is too complicated for me.",
   "avikanDescription" : "A console for interfacing with various systems.",
-  "erixianDescription" : "A console. How does the interface work?",
+  "draunaarDescription" : "A console. How does the interface work?",
   "trinkDescription" : "This console's interface was designed for Avikan hands.",
   "hymidDescription" : "What might all these buttons do?",
   "notixDescription" : "The interface on this console was designed for the Avikan.",
@@ -29,6 +29,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Analysis. Console. Used for interfacing with various systems.",
+  "akkimariDescription" : "Console-control. Akki not know interface.",
 
   "inventoryIcon" : "avikanlargeshipconsoleicon.png",
   "orientations" : [

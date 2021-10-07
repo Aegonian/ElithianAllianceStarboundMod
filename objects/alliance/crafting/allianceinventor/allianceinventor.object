@@ -34,7 +34,7 @@
 
   "aegiDescription" : "A basic planning table, complete with all the tools I need to get started with crafting.",
   "avikanDescription" : "A wooden crafting table. It seems like such a waste of good trees.",
-  "erixianDescription" : "I should be careful around this table, it can easily catch fire.",
+  "draunaarDescription" : "I should be careful around this table, it can easily catch fire.",
   "trinkDescription" : "The use of wood in crafting is often highly inefficient.",
   "hymidDescription" : "A simple wooden planning table. It might rot underwater.",
   "notixDescription" : "Tools, materials and blueprints, everything I need to get started.",
@@ -73,7 +73,7 @@
 
 		"aegiDescription" : "A basic planning table, complete with all the tools I need to get started with crafting.",
 		"avikanDescription" : "A wooden crafting table. It seems like such a waste of good trees.",
-		"erixianDescription" : "I should be careful around this table, it can easily catch fire.",
+		"draunaarDescription" : "I should be careful around this table, it can easily catch fire.",
 		"trinkDescription" : "The use of wood in crafting is often highly inefficient.",
 		"hymidDescription" : "A simple wooden planning table. It might rot underwater.",
 		"notixDescription" : "Tools, materials and blueprints, everything I need to get started.",
@@ -131,7 +131,7 @@
 
 		"aegiDescription" : "A designer's table, complete with tools and blueprints.",
 		"avikanDescription" : "Alien tools and blueprints. What do they craft here?",
-		"erixianDescription" : "These blueprints are incredibly useful!",
+		"draunaarDescription" : "These blueprints are incredibly useful!",
 		"trinkDescription" : "A slim, lightweight planning table. Quite efficient.",
 		"hymidDescription" : "A sleek designer's table.",
 		"notixDescription" : "Tools, materials and blueprints, everything I need to get started.",
@@ -192,7 +192,7 @@
 
 		"aegiDescription" : "This workstation is perfect for experienced artificers.",
 		"avikanDescription" : "A screen displaying blueprints for some alien devices.",
-		"erixianDescription" : "True artificers will love this workstation.",
+		"draunaarDescription" : "True artificers will love this workstation.",
 		"trinkDescription" : "This workstation uses power quite efficiently.",
 		"hymidDescription" : "This sleek workstation will allow me to craft many things.",
 		"notixDescription" : "Tools, materials and blueprints, everything I need to get started.",

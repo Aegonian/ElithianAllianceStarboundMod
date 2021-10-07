@@ -20,7 +20,7 @@
 
   "aegiDescription" : "This Centensian door is eons old, yet it is still intact.",
   "avikanDescription" : "A strong door built by the Old Ones.",
-  "erixianDescription" : "A door of Centensian origin.",
+  "draunaarDescription" : "A door of Centensian origin.",
   "trinkDescription" : "A strong metal door built by the Centens. It is eons old.",
   "hymidDescription" : "A Centensian door. Eons old.",
   "notixDescription" : "This door was built by the Centens.",
@@ -29,6 +29,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Analysis. Door. Origin: Centensian.",
+  "akkimariDescription" : "Door-ancient, built by god-makers.",
 
   "inventoryIcon" : "centensdooricon.png",
   "orientations" : [

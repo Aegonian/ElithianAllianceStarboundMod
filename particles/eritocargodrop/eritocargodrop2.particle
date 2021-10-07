@@ -1,0 +1,21 @@
+{
+  "kind" : "eritocargodrop2",
+  "definition" : {
+    "type" : "textured",
+    "image" : "/particles/eritocargodrop/eritocargodrop2.png",
+    "position" : [0.0, 0.5],
+    "size" : 1.0,
+    "color" : [255, 255, 255, 255],
+    "fade" : 0,
+    "initialVelocity" : [-2.0, 10.0],
+    "finalVelocity" : [0, -10],
+    "approach" : [5, 50],
+    "rotation" : 0,
+    "flippable" : true,
+    "angularVelocity" : -45,
+    "timeToLive" : 0.5,
+    "destructionAction" : "shrink",
+    "destructionTime" : 0.75,
+    "layer" : "middle"
+  }
+}

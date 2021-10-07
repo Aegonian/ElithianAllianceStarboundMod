@@ -27,7 +27,7 @@
 
   "aegiDescription" : "A holographic guide. She might be able to tell me more about this place.",
   "avikanDescription" : "A virtual guide, programmed to teach newcomers about this place. I might learn something from her myself.",
-  "erixianDescription" : "A holographic guide. She might be able to tell me more about this place.",
+  "draunaarDescription" : "A holographic guide. She might be able to tell me more about this place.",
   "trinkDescription" : "A holographic guide. She might be able to tell me more about this place.",
   "hymidDescription" : "A holographic guide. She might be able to tell me more about this place.",
   "notixDescription" : "A holographic guide. She might be able to tell me more about this place.",
@@ -36,6 +36,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Virtual guide detected. Recommend interaction to learn valuable intel.",
+  "akkimariDescription" : "Lady-light-alien. Seem friendly.",
 
   "inventoryIcon" : "avikanoutposthologramicon.png",
   "orientations" : [

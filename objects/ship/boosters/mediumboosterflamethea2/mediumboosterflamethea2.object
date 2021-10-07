@@ -17,7 +17,7 @@
 
   "aegiDescription" : "These engines provide an incredible amount of force.",  
   "avikanDescription" : "The exhaust flame of a spaceship engine is hot. Very hot.",
-  "erixianDescription" : "The exhaust of a spaceship engine always reminds me of the volcanoes of Heragon.",
+  "draunaarDescription" : "TODO",
   "trinkDescription" : "This ship's engine is more efficient than the flames would suggest.",
   "hymidDescription" : "Ship propulsion. The flame seems a bit excessive.",
   "notixDescription" : "The engines on this ship need a lot of fuel. Too much, perhaps.",
@@ -26,6 +26,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Heat signature detected. Spaceship propulsion confirmed.",
+  "akkimariDescription" : "Exhaust-hot, Akki burn if Akki touch.",
 
   "category" : "light",
   "lightColor" : [59, 183, 255],

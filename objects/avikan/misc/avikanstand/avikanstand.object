@@ -18,7 +18,7 @@
 
   "aegiDescription" : "A metal stand, built to hold some valuable item.",
   "avikanDescription" : "These stands are generally used to display Centensian artefacts, or other valuable items.",
-  "erixianDescription" : "A stand for displaying some important item.",
+  "draunaarDescription" : "A stand for displaying some important item.",
   "trinkDescription" : "An Avikan-built stand. It is generally used to display some important item.",
   "hymidDescription" : "These stands are often used to display the artefacts of the Gods.",
   "notixDescription" : "A simple but effective stand, for displaying something far more valuable.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Detected stand. Purpose: to display a Centensian artefact.",
+  "akkimariDescription" : "Stand-metal.",
 
   "inventoryIcon" : "avikanstandicon.png",
   "orientations" : [

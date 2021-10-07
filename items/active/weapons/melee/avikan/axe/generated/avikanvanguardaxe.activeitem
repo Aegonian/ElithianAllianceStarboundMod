@@ -3,12 +3,13 @@
   "price" : 600,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A superbly crafted metal axe issued to Avikan military forces.",
+  "description" : "^gray;A superbly crafted metal axe issued to Avikan military forces.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Vanguard Axe",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "axe",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","axe","avikan"],
+  "itemTags" : ["weapon","melee","axe","avikan","vanguard"],
 
   "animation" : "/items/active/weapons/melee/axe/axe.animation",
   "animationParts" : { },
@@ -34,7 +35,7 @@
   },
   "fireSounds" : [ "/sfx/melee/swing_axe.ogg" ],
 
-  "builder" : "/items/buildscripts/buildweapon.lua",
+  "builder" : "/items/buildscripts/thea-buildrandomweapon.lua",
   "builderConfig" : [{
     "nameGenerator" : "vanguardnames.config:nameGen",
     "animationParts" : {

@@ -16,6 +16,7 @@
     // Hunt - T1 - Aegi
     { "op": "add", "path": "/hunt/T1/farythscale", "value": true},
     { "op": "add", "path": "/hunt/T1/kelbethide", "value": true},
+    { "op": "add", "path": "/hunt/T1/kelbetmeat", "value": true},
 
     // Hunt - T1 - Avikan
     { "op": "add", "path": "/hunt/T1/monsterbone", "value": true},

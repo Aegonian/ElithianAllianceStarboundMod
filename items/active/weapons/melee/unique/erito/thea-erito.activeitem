@@ -1,0 +1,253 @@
+{
+  "itemName" : "thea-erito",
+  "price" : 1500,
+  "level" : 6,
+  "maxStack" : 1,
+  "rarity" : "essential",
+  "description" : "^orange;A graceful longsword with a near-unbreakable edge.",
+  "manufacturer" : "^gray;Erito Security^reset;",
+  "shortdescription" : "^orange;Erito^white;",
+  "tooltipKind" : "thea-sword-unique-mf",
+  "category" : "Longsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword","alliance","erito","theaUnique"],
+
+  "inventoryIcon" : "thea-erito.png",
+  
+  //CONFIGURATION FOR WEAPONS COLLECTION
+  "collectablesOnPickup" : { "thea_weapons" : "thea-erito" },
+  
+  //"meritTokenValue" : 50,
+
+  "animation" : "thea-erito.animation",
+  "animationParts" : {
+    "blade" : "thea-erito.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_broadsword.ogg" ],
+      "fire2" : [ "/sfx/melee/swing_shortsword.ogg" ],
+      "fire3" : [ "/sfx/melee/swing_broadsword.ogg" ],
+      "fire4" : [ "/sfx/melee/swing_broadsword.ogg" ],
+      "fire5" : [ "/sfx/melee/swing_spear.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.8,
+    "baseDps" : 10.5,
+	
+	"stepDamageConfig" : [
+      {
+        "baseDamageFactor" : 1.0,
+        "knockback" : 15
+      },
+      {
+        "baseDamageFactor" : 0.35,
+        "knockback" : 10
+      },
+      {
+        "baseDamageFactor" : 0.75,
+        "knockback" : 12.5
+      },
+      {
+        "baseDamageFactor" : 1.0,
+        "knockback" : 10
+      },
+      {
+        "baseDamageFactor" : 1.25,
+        "knockback" : 35
+      }
+    ],
+	
+	"comboSteps" : 5,
+	
+	"swooshOffsetRegions" : [
+      [0.75, 0.0, 4.25, 5.0],
+      [3.0, -0.5, 6.5, 2.0],
+      [0.75, 0.0, 4.25, -5.0],
+      [0.75, 0.0, 4.25, 5.0],
+      [1.5, -1.0, 5.5, 1.0]
+    ],
+
+	"stances" : {
+      //IDLE - DEFAULT
+      "idle" : {
+        "armRotation" : -105,
+        "weaponRotation" : 5,
+        "twoHanded" : false,
+		
+        "allowRotate" : false,
+        "allowFlip" : true,
+		"aimAngle" : 0
+      },
+	  //COMBO STEP 1
+      "windup1" : {
+        "duration" : 0.1,
+        "armRotation" : 90,
+        "weaponRotation" : -10,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash1" : {
+        "duration" : 0.025,
+        "armRotation" : 55,
+        "weaponRotation" : -45,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire1" : {
+        "duration" : 0.125,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait1" : {
+        "duration" : 0.1,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+		
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+	  //COMBO STEP 2
+      "windup2" : {
+        "duration" : 0.15,
+        "armRotation" : -15,
+        "weaponRotation" : -60,
+        "twoHanded" : true,
+		
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire2" : {
+        "duration" : 0.15,
+        "armRotation" : -150,
+        "weaponRotation" : 55,
+        "twoHanded" : true,
+		
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "wait2" : {
+        "duration" : 0.1,
+        "armRotation" : -150,
+        "weaponRotation" : 55,
+        "twoHanded" : true,
+		
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+	  //COMBO STEP 3
+      "windup3" : {
+        "duration" : 0.1,
+        "armRotation" : -110,
+        "weaponRotation" : 220,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash3" : {
+        "duration" : 0.025,
+        "armRotation" : 5,
+        "weaponRotation" : 185,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire3" : {
+        "duration" : 0.125,
+        "armRotation" : 80,
+        "weaponRotation" : 200,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait3" : {
+        "duration" : 0.1,
+        "armRotation" : 60,
+        "weaponRotation" : 210,
+        "twoHanded" : true,
+		
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+	  //COMBO STEP 4
+      "windup4" : {
+        "duration" : 0.1,
+        "armRotation" : 90,
+        "weaponRotation" : -10,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "preslash4" : {
+        "duration" : 0.025,
+        "armRotation" : 55,
+        "weaponRotation" : -45,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "fire4" : {
+        "duration" : 0.125,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "wait4" : {
+        "duration" : 0.1,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+		
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+	  //COMBO STEP 5
+      "windup5" : {
+        "duration" : 0.15,
+        "armRotation" : -150,
+        "weaponRotation" : 55,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire5" : {
+        "duration" : 0.3,
+        "armRotation" : 0,
+        "weaponRotation" : -90,
+        "twoHanded" : false,
+
+        "allowRotate" : false,
+        "allowFlip" : true
+      }
+    }
+  },
+
+  "altAbilityType" : "thea-parry",
+
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
+}

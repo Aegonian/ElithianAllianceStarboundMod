@@ -80,6 +80,24 @@
 	]
   },
 
+  //BASBRON
+  { "op" : "add",
+	"path" : "/basbronHarvest",
+	"value" : [
+	  [0, {
+		"pool" : [
+		  {"weight" : 0.89, "item" : "basbronfiber"},
+		  {"weight" : 0.01, "item" : "basbronseed"},
+		  {"weight" : 0.1, "item" : "plantfibre"}
+		],
+		"poolRounds" : [
+		  [0.6, 1],
+		  [0.4, 2]
+		]
+	  } ]
+	]
+  },
+
   //AMBRUM
   { "op" : "add",
 	"path" : "/ambrumHarvest",
@@ -193,6 +211,60 @@
 		  [0.5, 1],
 		  [0.3, 2],
 		  [0.2, 3]
+		]
+	  } ]
+	]
+  },
+
+  //SAGRASSA
+  { "op" : "add",
+	"path" : "/sagrassaHarvest",
+	"value" : [
+	  [0, {
+		"pool" : [
+		  {"weight" : 0.6, "item" : "sagrassacrystals"},
+		  {"weight" : 0.39, "item" : "sagrassamilk"},
+		  {"weight" : 0.01, "item" : "sagrassaseed"}
+		],
+		"poolRounds" : [
+		  [0.7, 1],
+		  [0.3, 2]
+		]
+	  } ]
+	]
+  },
+
+  //ACHVASS
+  { "op" : "add",
+	"path" : "/achvassHarvest",
+	"value" : [
+	  [0, {
+		"pool" : [
+		  {"weight" : 0.99, "item" : "achvassjelly"},
+		  {"weight" : 0.01, "item" : "achvassseed"}
+		],
+		"poolRounds" : [
+		  [1.0, 1]
+		]
+	  } ]
+	]
+  },
+
+  //VRELLI
+  { "op" : "add",
+	"path" : "/vrelliHarvest",
+	"value" : [
+	  [0, {
+		"fill" : [
+		  {"item" : "vrelliseed"}
+		],
+		"pool" : [
+		  {"weight" : 0.89, "item" : "vrellileaves"},
+		  {"weight" : 0.01, "item" : "vrelliseed"},
+		  {"weight" : 0.1, "item" : "plantfibre"}
+		],
+		"poolRounds" : [
+		  [1.0, 1]
 		]
 	  } ]
 	]

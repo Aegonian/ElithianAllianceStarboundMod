@@ -18,7 +18,7 @@
   
   "aegiDescription" : "The ship isn't going anywhere before this fuel hatch gets fixed.",  
   "avikanDescription" : "The fuel input station is broken. Let's repair it.",
-  "erixianDescription" : "A broken fuel hatch. I need to fix it.",
+  "draunaarDescription" : "A broken fuel hatch. I need to fix it.",
   "trinkDescription" : "A broken fuel hatch. Repairs are in order.",
   "hymidDescription" : "Once repaired, this station will accept fuel once more.",
   "notixDescription" : "This needs repairs before the ship will move anywhere.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Fuel input station detected. Status: broken.",
+  "akkimariDescription" : "Akki can't fuel ship, Akki stuck here...",
 
   "inventoryIcon" : "fuelhatchicon.png",
   "orientations" : [

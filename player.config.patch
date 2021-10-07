@@ -115,6 +115,14 @@
   },
 
   //====================================================================================================================================
+  // PLAYER COMPANIONS SCRIPT -- Special script that runs on the player and has access to playerCompanions functions
+  //====================================================================================================================================
+  { "op" : "add",
+	"path" : "/companionsConfig/scripts/-",
+	"value" : "/scripts/thea-playercompanionsutility.lua"
+  },
+
+  //====================================================================================================================================
   // PLAYER INIT SCRIPT -- General utility script that runs on the player, which has access to player LUA tables
   //====================================================================================================================================
   { "op" : "add",
@@ -137,13 +145,22 @@
 	"path" : "/deploymentConfig/thea-randomEvents",
 	"value" : [
 	  //List of random event stagehands to choose from
-	  //AMBUSHES
+	  //NPC AMBUSHES
 	  "thea-akkimariambush",
 	  "thea-avikanambush",
 	  "thea-banditambush",
 	  
+	  //MONSTER AMBUSHES
+	  "thea-xanafianshadowambush",
+	  "thea-akkimaridroneambush",
+	  "thea-poptopambush",
+	  
 	  //CARGO DROPS
-	  "thea-alliancecargodrop"
+	  "thea-alliancecargodrop",
+	  "thea-eritocargodrop",
+	  
+	  //SPECIAL RANDOM EVENTS
+	  "thea-akkimaridrill"
 	]
   },
   { "op" : "add",

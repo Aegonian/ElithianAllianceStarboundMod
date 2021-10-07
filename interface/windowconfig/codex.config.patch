@@ -183,8 +183,8 @@
 	"path": "/paneLayout/speciesTabs/buttons/-",
 	"value": {
 	  "position" : [4, 83],
-	  "baseImage" : "/interface/codex/tab_erixian.png",
-	  "baseImageChecked" : "/interface/codex/tab_erixian_select.png",
+	  "baseImage" : "/interface/codex/tab_draunaar.png",
+	  "baseImageChecked" : "/interface/codex/tab_draunaar_select.png",
 	  "pressedOffset" : [0, 0],
 	  "data" : {
 		"species" : "???"

@@ -1,0 +1,65 @@
+{
+  "objectName" : "akkimarishipenginesmall",
+  "colonyTags" : ["akkimari"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 1000,
+  "description" : "The large propulsion engine of an Akris frigate.",
+  "shortdescription" : "Akris Frigate Engine",
+  "race" : "akkimari",
+  
+  "health" : 8,
+
+  "apexDescription" : "A propulsion engine for a small ship.",
+  "avianDescription" : "This propulsion engine is likely for a frigate.",
+  "floranDescription" : "Ssship engine. Fire hazzzard...",
+  "glitchDescription" : "Observation. A propulsion engine for a small ship.",
+  "humanDescription" : "A small ship engine.",
+  "hylotlDescription" : "A simple but elegantly designed propulsion engine.",
+  "novakidDescription" : "An engine for a small ship.",
+
+  "aegiDescription" : "The engine of an Akkimari frigate.",
+  "avikanDescription" : "An alien-built propulsion engine.",
+  "draunaarDescription" : "An engine. It's likely for a frigate, or some other small ship.",
+  "trinkDescription" : "An efficient ship engine.",
+  "hymidDescription" : "A ship engine.",
+  "notixDescription" : "This engine will produce quite the roar if it is activated.",
+  "jorgasianDescription" : "A ship's propulsion engine.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected ship engine. Calculating thrust capacity.",
+  "akkimariDescription" : "Engine for flying ship, make ship go fast!",
+
+  "inventoryIcon" : "akkimarishipenginesmallicon.png",
+  "orientations" : [
+	{
+	  "image" : "akkimarishipenginesmall.png:<color>",
+      "renderLayer" : "Liquid+1",
+
+      "imagePosition" : [0, -40],
+      "frames" : 1,
+      "animationCycle" : 0.75,
+
+      "spaceScan" : 0.5,
+      "anchors" : [ "left" ],
+      "collision" : "solid",
+      "flipImages" : true,
+      "direction" : "left"
+    },
+    {
+	  "image" : "akkimarishipenginesmall.png:<color>",
+      "renderLayer" : "Liquid+1",
+
+      "imagePosition" : [-20, -40],
+      "frames" : 1,
+      "animationCycle" : 0.75,
+
+      "spaceScan" : 0.5,
+      "anchors" : [ "right" ],
+      "collision" : "solid",
+      "direction" : "right"
+    }
+  ]
+}

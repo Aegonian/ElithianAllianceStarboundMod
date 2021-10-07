@@ -134,6 +134,11 @@
   },
   {
 	"op": "add",
+	"path": "/thea-shieldbladecombocharge",
+	"value": "/items/active/weapons/melee/abilities/shieldblade/thea-shieldbladecombocharge.weaponability"
+  },
+  {
+	"op": "add",
 	"path": "/thea-shieldbladedefend",
 	"value": "/items/active/weapons/melee/abilities/shieldblade/thea-shieldbladedefend.weaponability"
   },
@@ -196,6 +201,11 @@
 	"op": "add",
 	"path": "/thea-railhook",
 	"value": "/items/active/weapons/melee/abilities/crook/thea-railhook/thea-railhook.weaponability"
+  },
+  {
+	"op": "add",
+	"path": "/thea-parry",
+	"value": "/items/active/weapons/melee/abilities/broadsword/thea-parry/thea-parry.weaponability"
   },
   
   //======================================================================================================================

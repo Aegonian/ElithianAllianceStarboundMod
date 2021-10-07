@@ -5,12 +5,13 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "^orange;A lightweight driftrifle built for tactical incursions.",
+  "manufacturer" : "^gray;Rashakr^reset;",
   "shortdescription" : "^orange;Stinger^reset;",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-chargedgunalt-unique",
+  "tooltipKind" : "thea-chargedgunalt-unique-mf",
   "category" : "Drift Rifle",
-  "itemTags" : ["weapon","ranged","driftrifle","akkimari","theaUnique"],
+  "itemTags" : ["weapon","ranged","driftrifle","akkimari","rashakr","theaUnique"],
   "twoHanded" : true,
   
   //CONFIGURATION FOR WEAPONS COLLECTION

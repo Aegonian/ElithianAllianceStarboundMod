@@ -4,12 +4,13 @@
   "level" : 1,
   "maxStack" : 1,
   "rarity" : "Common",
-  "description" : "An electric prod built to keep assailants at bay.",
+  "description" : "^gray;An electric prod built to keep assailants at bay.",
+  "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "Circuit Longprod Mk I",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "Electric Prod",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","prod","trink"],
+  "itemTags" : ["weapon","melee","prod","trink","trinkfactory"],
 
   "inventoryIcon" : "trinktier1longprod.png",
 
@@ -162,5 +163,5 @@
     }
   },
   
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

@@ -23,7 +23,7 @@
 
   "aegiDescription" : "This seems to be a Circuit supply crate.",
   "avikanDescription" : "A machine-built supply crate. It might offer me an advantage.",
-  "erixianDescription" : "A supply crate built to withstand anything.",
+  "draunaarDescription" : "A supply crate built to withstand anything.",
   "trinkDescription" : "This Circuit supply crate might hold weapons.",
   "hymidDescription" : "A military equipment case, built by the Trinks.",
   "notixDescription" : "A supply crate used by the Circuit's military unit.",
@@ -32,6 +32,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Detected machine-built supply crate. Recommend salvaging for parts.",
+  "akkimariDescription" : "Chest-military. Akki find weapons inside?",
 
   "inventoryIcon" : "trinkweaponchesticon.png",
   "orientations" : [

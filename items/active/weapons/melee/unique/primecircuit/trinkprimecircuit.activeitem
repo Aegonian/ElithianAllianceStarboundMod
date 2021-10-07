@@ -5,8 +5,9 @@
   "maxStack" : 1,
   "rarity" : "essential",
   "description" : "^orange;An eletric prod powered by an overcharged generator.",
+  "manufacturer" : "^gray;NivRAM^reset;",
   "shortdescription" : "^orange;Prime Circuit^white;",
-  "tooltipKind" : "thea-sword-unique",
+  "tooltipKind" : "thea-sword-unique-mf",
   "category" : "Electric Prod",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","prod","trink","theaUnique"],
@@ -132,5 +133,5 @@
     }
   },
   
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

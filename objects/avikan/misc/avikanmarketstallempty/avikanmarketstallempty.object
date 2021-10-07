@@ -18,7 +18,7 @@
 
   "aegiDescription" : "A market stall. A common sight in Avikan villages.",
   "avikanDescription" : "A simple market stall, like those on Kadavan.",
-  "erixianDescription" : "Whatever was sold here either sold very well, or very poorly.",
+  "draunaarDescription" : "Whatever was sold here either sold very well, or very poorly.",
   "trinkDescription" : "An empty market stall. An inefficient use of space.",
   "hymidDescription" : "A market stall. Nicely decorated.",
   "notixDescription" : "An empty market stall. I wonder what was sold here.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO",
   "hyvonDescription" : "TODO",
   "drodenDescription" : "Analysis complete. Market stall. Empty.",
+  "akkimariDescription" : "Stall-empty.",
 
   "inventoryIcon" : "avikanmarketstallemptyicon.png",
   "orientations" : [

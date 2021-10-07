@@ -19,7 +19,7 @@
 
   "aegiDescription" : "A large combat drone. I would dread fighting one of these...",
   "avikanDescription" : "An Elite Drahl. These are usually controlled by remote operators.",
-  "erixianDescription" : "A combat drone, and a large one at that.",
+  "draunaarDescription" : "A combat drone, and a large one at that.",
   "trinkDescription" : "I would not like to fight one of these monstrosities.",
   "hymidDescription" : "A drone like this would be a valuable ally on any battlefield.",
   "notixDescription" : "The Avikan might not like AIs, but they are certainly fans of remotely controlled drones.",
@@ -28,6 +28,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Detected Elite Drahl unit. Status: inactive.",
+  "akkimariDescription" : "Drone-large, looks dangerous. Akki careful.",
 
   "inventoryIcon" : "avikanlargedrahlicon.png",
   "orientations" : [

@@ -11,7 +11,7 @@
   "novakidDescription" : "Some thick metal plating, looks mighty solid.",
   
   "drodenDescription" : "Analysis complete. Scrap metal hull plating. Exact composition unknown.",
-  "akkimariDescription" : "Scrap plating. Cheap and strong, not very pretty.",
+  "akkimariDescription" : "Plating-scrappy. Cheap and strong, not pretty-very.",
 
   "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
   "health" : 6,
@@ -23,7 +23,7 @@
     "variants" : 6,
     "lightTransparent" : false,
     "occludesBelow" : true,
-    "multiColored" : false,
+    "multiColored" : true,
     "zLevel" : 25
   }
 }

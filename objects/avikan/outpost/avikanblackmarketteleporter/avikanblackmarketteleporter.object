@@ -10,7 +10,9 @@
   
   "floranDescription" : "Alien teleporter makesss Floran sssick...",
   "glitchDescription" : "Observation. This teleporter makes for a useful shortcut.",
+  
   "drodenDescription" : "Analysis. Teleporter. Hazard levels: medium.",
+  "akkimariDescription" : "Teleporter-alien. Akki come back later.",
 
   "category" : "teleporter",
 
@@ -67,7 +69,7 @@
   "inventoryIcon" : "icon.png",
   "orientations" : [
     {
-      "imageLayers" : [ { "image" : "avikanblackmarketteleporterlit.png:<color>" } ],
+      "imageLayers" : [ { "image" : "avikanblackmarketteleporter.png:<color>", "fullbright" : true }, { "image" : "avikanblackmarketteleporterlit.png:<color>" } ],
       "direction" : "right",
 
       "imagePosition" : [-24, 0],

@@ -1,0 +1,9 @@
+{
+  "name" : "darkrust",
+  "category" : "trinkoid",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "darkrust.png"
+  }
+}

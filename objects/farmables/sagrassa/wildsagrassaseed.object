@@ -1,0 +1,68 @@
+{
+  "objectName" : "wildsagrassaseed",
+  "colonyTags" : ["nature"],
+  "rarity" : "Common",
+  "category" : "seed",
+  "description" : "A living crystal, highly nutritious but extremely hard to crack.",
+  "shortdescription" : "Sagrassa Crystal",
+  "objectType" : "farmable",
+  "printable" : false,
+  "price" : 10,
+  "hasObjectItem" : false,
+  "biomePlaced" : true,
+
+  "apexDescription" : "It's a type of living crystal. I hear some alien species actually eat this...",
+  "avianDescription" : "It's a crystal, and it's alive somehow! What sort of strange organism is this?",
+  "floranDescription" : "Floran can't bite through crysstalsss. Much too hard...",
+  "glitchDescription" : "Mystified. This crystal is said to be a living organism...",
+  "humanDescription" : "I've heard people say this crystal is somehow alive...",
+  "hylotlDescription" : "A crystalline lifeform. How curious.",
+  "novakidDescription" : "A crystal that's alive...",
+  
+  "aegiDescription" : "The crystal isn't actually the living part. It's the milky substance inside that creates a crystal shell!",
+  "avikanDescription" : "An alien lifeform, it is said. I just see a crystal.",
+  "draunaarDescription" : "A strange alien lifeform. It's said to be very nutritious...",
+  "trinkDescription" : "An alien lifeform, a living crystal. I don't think the crystal itself is alive...",
+  "hymidDescription" : "A strange aline crystal. Is it really a living organism?",
+  "notixDescription" : "An edible crystal, if you have the jaws to break through it.",
+  "jorgasianDescription" : "This crystal is a bit like a plant! The Scii gardens could use a sample.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected native Akris lifeform. Sagrassa crystal.",
+  "akkimariDescription" : "Sagrassa tasty-very! Outside-crunchy, inside-milky.",
+
+  "inventoryIcon" : "sagrassaseedicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "sagrassaseed.png:<color>.<stage>.<alt>",
+      "imagePosition" : [0, -16],
+
+      "spaces" : [ [1, 0], [0, 0], [1, -1], [0, -1], [1, -2], [0, -2] ],
+      "requireTilledAnchors" : false,
+      "anchors" : [ "top" ]
+    }
+  ],
+
+  "radioMessagesOnPickup" : [ "pickupseed" ],
+
+  "stages" : [
+    {
+      "duration" : [840, 960]
+    },
+    {
+      "duration" : [840, 960]
+    },
+    {
+      "alts" : 5,
+      "harvestPool" : "sagrassaHarvest",
+      "resetToStage" : 0
+    }
+  ],
+
+  "breakDropOptions" : [
+    [ [ "sagrassaseed", 1, { } ] ]
+  ],
+  
+  "consumeSoilMoisture" : false
+}

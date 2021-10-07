@@ -18,6 +18,8 @@ function TheaChargedBeamAltFire:init()
   self.chargeHasStarted = false
   self.shouldDischarge = false
 
+  self.chainAnimationTimer = 0
+
   self:reset()
 
   self.weapon.onLeaveAbility = function()
@@ -260,7 +262,20 @@ function TheaChargedBeamAltFire:drawBeam(endPos, didCollide)
   local newChain = copy(self.chain)
   newChain.startOffset = self.weapon.muzzleOffset
   newChain.endPosition = endPos
-
+  
+  --Optionally animate the chain beam
+  if self.animatedChain then
+	self.chainAnimationTimer = math.min(self.chainAnimationTime, self.chainAnimationTimer + self.dt)
+	if self.chainAnimationTimer == self.chainAnimationTime then
+	  self.chainAnimationTimer = 0
+	end
+	
+	local chainAnimationFrame = 1
+	chainAnimationFrame = math.floor(self.chainAnimationTimer / self.chainAnimationTime * self.chainAnimationFrames)
+	
+	newChain.segmentImage = self.chain.segmentImage .. ":" .. chainAnimationFrame
+  end
+  
   if didCollide then
     newChain.endSegmentImage = nil
   end

@@ -117,7 +117,7 @@
   },
   "damageKindImage" : {
     "type" : "image",
-    "position" : [120, 120],
+    "position" : [120, 130],
     "file" : "",
     "centered" : true,
     "maxSize" : [16, 16],
@@ -130,5 +130,13 @@
     "centered" : true,
     "maxSize" : [40, 40],
     "minSize" : [40, 40]
+  },
+  //Custom field, Manufacturer Label
+  "manufacturerLabel" : {
+    "type" : "label",
+    "position" : [130, 110],
+    "hAnchor" : "right",
+    "centered" : true,
+    "wrapWidth" : 126
   }
 }

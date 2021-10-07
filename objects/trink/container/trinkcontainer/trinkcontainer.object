@@ -22,7 +22,7 @@
 
   "aegiDescription" : "The Trinkian cargo container is built to fit into Trinkian cargo holds perfectly.",
   "avikanDescription" : "This machine-built container can hold many items.",
-  "erixianDescription" : "An incredibly heavy cargo container.",
+  "draunaarDescription" : "An incredibly heavy cargo container.",
   "trinkDescription" : "The Trinkian standard-issue cargo container is exactly four times the size of a crate.",
   "hymidDescription" : "This Trinkian-designed cargo container can hold many items.",
   "notixDescription" : "A large Trinkian cargo container. Built with efficiency is mind.",
@@ -31,6 +31,7 @@
   "dremetonDescription" : "TODO",
   "theleanDescription" : "TODO",
   "drodenDescription" : "Storage unit detected. Content scan unavailable.",
+  "akkimariDescription" : "Crate-alien, has lights-fancy.",
 
   "inventoryIcon" : "trinkcontainericon.png",
   "orientations" : [

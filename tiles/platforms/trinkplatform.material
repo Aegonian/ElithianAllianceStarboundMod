@@ -12,6 +12,7 @@
   "novakidDescription" : "A platform full o' wires.",
   
   "drodenDescription" : "Analysis complete. Cables run through the length of this platform.",
+  "akkimariDescription" : "Platform filled with wires.",
   
   "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
   "category" : "Supports",
@@ -22,7 +23,7 @@
     "variants" : 3,
     "lightTransparent" : true,
     "occludesBelow" : false,
-    "multiColored" : false,
+    "multiColored" : true,
     "zLevel" : 0,
     "platform" : true
   }

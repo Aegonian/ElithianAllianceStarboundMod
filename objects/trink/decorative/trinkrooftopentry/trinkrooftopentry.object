@@ -20,7 +20,7 @@
 
   "aegiDescription" : "The Trinks are big fans of modular buildings. This small rooftop entrance will fit on pretty much every Trinkian construction.",
   "avikanDescription" : "A small metal rooftop entrance, built by machines.",
-  "erixianDescription" : "A small modular rooftop entrance.",
+  "draunaarDescription" : "A small modular rooftop entrance.",
   "trinkDescription" : "Trinkian rooftop entrances are modular, and fit ontop of almost any Trinkian structure.",
   "hymidDescription" : "A small metal rooftop entrance, built by the Notician robots.",
   "notixDescription" : "Our Trinks are excellent at building modular structures.",
@@ -29,7 +29,7 @@
   "dremetonDescription" : "TODO",
   "hyvonDescription" : "TODO",
   "drodenDescription" : "Readings indicate high amounts of sensors inside this structure.",
-
+  "akkimariDescription" : "Akki enter through roof here.",
 
   "inventoryIcon" : "trinkrooftopentryicon.png",
   "orientations" : [

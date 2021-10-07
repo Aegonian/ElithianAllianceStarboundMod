@@ -14,7 +14,8 @@
   "inventoryIcon" : "rimdwellercacheicon.png",
   "animation" : "rimdwellercache.animation",
   "animationParts" : {
-    "treasurebox" : "rimdwellercache.png"
+    "treasurebox" : "rimdwellercache.png",
+    "lights" : "rimdwellercachelights.png"
   },
   "animationCustom" : {
     "sounds" : {

@@ -4,11 +4,11 @@
   "inventoryIcon" : "thea-tier6smg.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A standard-issue Alliance SMG.",
+  "description" : "^gray;A standard-issue Alliance SMG.",
   "manufacturer" : "^gray;Alliance Collective^reset;",
   "shortdescription" : "AC.P-9 Broker",
   "level" : 6,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Submachinegun",
   "itemTags" : ["weapon","ranged","smg","alliance","alliancecollective","allianceUpgradeable"],
   "twoHanded" : false,
@@ -28,6 +28,11 @@
 		  }
 		}
       }
+    },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [0, 52, 90]
+	  }
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/thea_plasmagun6.ogg" ]

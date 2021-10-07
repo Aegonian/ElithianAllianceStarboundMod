@@ -5,11 +5,12 @@
   "maxStack" : 1,
   "rarity" : "legendary",
   "description" : "^#BA66FF;Extracts electric components from mechanical enemies.",
+  "manufacturer" : "^gray;Trink Factory^reset;",
   "shortdescription" : "^#BA66FF;Electromagnetic Extractor",
-  "tooltipKind" : "thea-sword-descriptive",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "Tool",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","prod","trink"],
+  "itemTags" : ["weapon","melee","prod","trink","trinkfactory"],
 
   "inventoryIcon" : "trink-electromagneticextractor.png",
 
@@ -95,5 +96,5 @@
     }
   },
   
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

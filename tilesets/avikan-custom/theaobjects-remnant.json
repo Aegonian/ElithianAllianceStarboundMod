@@ -1,0 +1,53 @@
+{ "margin":0,
+ "name":"theaobjects-remnant",
+ "properties":
+    {
+
+    },
+ "spacing":0,
+ "tilecount":3,
+ "tileheight":64,
+ "tileproperties":
+    {
+     "0":
+        {
+         "\/\/shortdescription":"Cursed Pillar",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"remnantdoompillar",
+         "tilesetDirection":"right"
+        },
+     "1":
+        {
+         "\/\/shortdescription":"Cursed Blockage",
+         "imagePositionX":"-8",
+         "imagePositionY":"0",
+         "object":"remnantfragmentblockade",
+         "tilesetDirection":"right"
+        },
+     "2":
+        {
+         "\/\/shortdescription":"Remnant Fog Source",
+         "imagePositionX":"0",
+         "imagePositionY":"0",
+         "object":"remnantfogprimer",
+         "tilesetDirection":"right"
+        }
+    },
+ "tiles":
+    {
+     "0":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/remnant\/remnantdoompillar.png"
+        },
+     "1":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/remnant\/remnantfragmentblockade.png"
+        },
+     "2":
+        {
+         "image":"..\/..\/..\/..\/tiled\/avikan-custom\/objects\/remnant\/remnantfogprimer.png"
+        }
+    },
+ "tilewidth":24
+}

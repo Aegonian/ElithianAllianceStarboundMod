@@ -1,0 +1,15 @@
+{
+  "projectileName" : "conscriptoraura",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "physics" : "thea-gravitywell",
+  "damagePoly" : [ [-37, 0], [-28, -28], [0, -37], [28, -28], [37, 0], [28, 28], [0, 37], [-28, 28] ],
+  "piercing" : true,
+  "bounces" : -1,
+  "statusEffects" : [
+	"thea-pacifyenemy"
+  ],
+  "damageKind" : "default",
+  "timeToLive" : 0.25,
+  
+  "scripts" : [ "/projectiles/scripts/thea-stationaryprojectile.lua" ]
+}

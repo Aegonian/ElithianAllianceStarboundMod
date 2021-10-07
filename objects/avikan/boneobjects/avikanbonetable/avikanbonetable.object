@@ -18,7 +18,7 @@
 
   "aegiDescription" : "A simple bone table.",
   "avikanDescription" : "A traditional bone table.",
-  "erixianDescription" : "A bone table.",
+  "draunaarDescription" : "A bone table.",
   "trinkDescription" : "A primitive bone table.",
   "hymidDescription" : "A table made of bone.",
   "notixDescription" : "A primitive bone table.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Table. Bone.",
+  "akkimariDescription" : "Table-bone. Covered with sheet-leather.",
 
   "inventoryIcon" : "avikanbonetableicon.png",
   "orientations" : [

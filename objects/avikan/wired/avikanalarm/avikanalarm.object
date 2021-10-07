@@ -19,7 +19,7 @@
 
   "aegiDescription" : "An alarm light. It will also activate a siren when triggered.",
   "avikanDescription" : "This alarm will alert the guards to any criminal activity.",
-  "erixianDescription" : "An alarm light. It emits red light, as is usually the case.",
+  "draunaarDescription" : "An alarm light. It emits red light, as is usually the case.",
   "trinkDescription" : "An alarm installed by the Avikan. I should be careful around it.",
   "hymidDescription" : "I'd better not be here if this alarm goes off.",
   "notixDescription" : "An alarm accompanied by a loud alarm. It's glorious.",
@@ -28,6 +28,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Detected Nomada alarm system. Recommend caution.",
+  "akkimariDescription" : "Alarm-alien. Hurt ears-Akki.",
 
   "inventoryIcon" : "avikanalarmicon.png",
   "orientations" : [

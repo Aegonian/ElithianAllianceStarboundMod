@@ -19,7 +19,7 @@
 
   "aegiDescription" : "Avikan computers have an unusual interface.",
   "avikanDescription" : "A simple computer, used to send messages to the Fleet.",
-  "erixianDescription" : "I have no ide how this interface works.",
+  "draunaarDescription" : "I have no idea how this interface works.",
   "trinkDescription" : "An Avikan computer. How much RAM does it have?",
   "hymidDescription" : "A computer of sorts. I don't like its interface.",
   "notixDescription" : "This computer uses an unusual interface.",
@@ -28,6 +28,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Receiving radio signal. Analyzing.",
+  "akkimariDescription" : "Computer-alien. Interface-weird.",
 
   "inventoryIcon" : "avikancomputericon.png",
   "orientations" : [

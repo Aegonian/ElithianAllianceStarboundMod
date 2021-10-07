@@ -4,8 +4,8 @@
   "physics" : "lineriflebullet",
   "bounces" : 0,
   "piercing" : true,
-  "animationCycle" : 0.8,
-  "frameNumber" : 8,
+  "animationCycle" : 1.0,
+  "frameNumber" : 1,
   //"emitters" : [ "violatedlinerifletrail", "violatedlinerifletrail2", "violatedlinerifleswoosh" ],
   "damageKindImage" : "icon.png",
   "lightColor" : [150, 0, 0],
@@ -13,7 +13,7 @@
   "actionOnReap" : [
     {
       "action" : "config",
-	  "file" : "/projectiles/explosions/violatedlinerifleimpact/violatedlinerifleimpact.config"
+	  "file" : "/projectiles/explosions/smallviolatedlinerifleimpact/smallviolatedlinerifleimpact.config"
     }
   ],
   "periodicActions" : [
@@ -25,7 +25,7 @@
       "specification" : {
         "type" : "animated",
         "animation" : "/projectiles/uniquemonster/avikanviolateddronebullet/trail.animation",
-        "position" : [0.5, 0],
+        "position" : [-1.0, 0],
         "layer" : "back",
 		"collidesForeground" : false,
         "timeToLive" : 0.0,

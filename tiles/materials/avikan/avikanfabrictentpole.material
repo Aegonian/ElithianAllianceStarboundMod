@@ -11,12 +11,13 @@
   "novakidDescription" : "A tent pole, this'll surely hold up a tent.",
   
   "drodenDescription" : "Analysis complete. Structurally vital tent pole.",
+  "akkimariDescription" : "Pole-structural, keep tent standing.",
 
   "footstepSound" : "/sfx/blocks/footstep_sand.ogg",
   "health" : 4,
   "category" : "materials",
   
-  "renderTemplate" : "/tiles/thea-avikanleathertemplate.config",
+  "renderTemplate" : "/tiles/thea-avikanfabrictemplate.config",
   "renderParameters" : {
     "texture" : "avikanfabrictentpole.png",
     "variants" : 1,

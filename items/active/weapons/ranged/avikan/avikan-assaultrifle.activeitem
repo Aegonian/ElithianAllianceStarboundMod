@@ -4,12 +4,13 @@
   "inventoryIcon" : "avikan-assaultrifle.png",
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A high-powered assault rifle issued to Avikan military forces.",
+  "description" : "^gray;A high-powered assault rifle issued to Avikan military forces.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Vanguard Assault Rifle",
   "level" : 5,
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Assault Rifle",
-  "itemTags" : ["weapon","ranged","assaultrifle","avikan"],
+  "itemTags" : ["weapon","ranged","assaultrifle","avikan","vanguard"],
   "twoHanded" : true,
   
   "animation" : "/items/active/weapons/ranged/gun.animation",
@@ -141,5 +142,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

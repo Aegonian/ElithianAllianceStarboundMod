@@ -17,7 +17,7 @@
   
   "aegiDescription" : "An Avikan tent, made of leather. Very durable, even in harsh environments.",
   "avikanDescription" : "A traditional nomad's tent. Easy to set up and break down again.",
-  "erixianDescription" : "Leather tapestries. Plain and simple.",
+  "draunaarDescription" : "Leather tapestries. Plain and simple.",
   "trinkDescription" : "A number of rolled up leather tapestries.",
   "hymidDescription" : "Leather tapestries rolled up for storage. Or transport, perhaps.",
   "notixDescription" : "Rolled up leather tapestries.",
@@ -26,6 +26,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Analysis complete. Tent. Mobile home. Material: leather.",
+  "akkimariDescription" : "Tent-leather, Akki sleep here for the night.",
 
   "objectType" : "loungeable",
   "sitFlipDirection" : true,

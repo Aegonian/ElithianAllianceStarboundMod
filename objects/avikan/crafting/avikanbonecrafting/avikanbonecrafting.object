@@ -33,7 +33,7 @@
 
   "aegiDescription" : "The Avikan call those who work bone \"Bonecarvers\". This table has a full set of their tools.",
   "avikanDescription" : "A Bonecarver's table. I can make traditional weapons and equipment here.",
-  "erixianDescription" : "A bunch of bone carving tools. A skilled crafter could craft some potent bone equipment here.",
+  "draunaarDescription" : "A bunch of bone carving tools. A skilled crafter could craft some potent bone equipment here.",
   "trinkDescription" : "A table full of bone carving tools. A primitive, inefficient way to work bone.",
   "hymidDescription" : "Avikan Bonecarvers can make surpisingly potent equipment here.",
   "notixDescription" : "This table holds all the tools needed for working bone.",
@@ -42,6 +42,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Analysis complete. Bonecarver's table. Used to construct equipment and other items made of bone.",
+  "akkimariDescription" : "Akki carve bones here!",
 
   "learnBlueprintsOnPickup" : [],
 
@@ -71,7 +72,7 @@
 
 		"aegiDescription" : "The Avikan call those who work bone \"Bonecarvers\". This table has a full set of their tools.",
 		"avikanDescription" : "A Bonecarver's table. I can make traditional weapons and equipment here.",
-		"erixianDescription" : "A bunch of bone carving tools. A skilled crafter could craft some potent bone equipment here.",
+		"draunaarDescription" : "A bunch of bone carving tools. A skilled crafter could craft some potent bone equipment here.",
 		"trinkDescription" : "A table full of bone carving tools. A primitive, inefficient way to work bone.",
 		"hymidDescription" : "Avikan Bonecarvers can make surpisingly potent equipment here.",
 		"notixDescription" : "This table holds all the tools needed for working bone.",
@@ -79,7 +80,8 @@
 		"centensDescription" : "TODO.",
 		"dremetonDescription" : "TODO.",
 		"theleanDescription" : "TODO.",
-		"drodenDescription" : "Analysis complete. Bonecarver's table. Used to construct equipment and other items made of bone."
+		"drodenDescription" : "Analysis complete. Bonecarver's table. Used to construct equipment and other items made of bone.",
+		"akkimariDescription" : "Akki carve bones here!"
       },
 
       "interactData" : {
@@ -131,7 +133,7 @@
 
 		"aegiDescription" : "A boneworking station. It can produce bone items of a higher quality.",
 		"avikanDescription" : "While Bonecarvers are skilled, machines like these are simply more convenient.",
-		"erixianDescription" : "A step up from simple bonecarving tools. This machine can produce excellent bone equipment.",
+		"draunaarDescription" : "A step up from simple bonecarving tools. This machine can produce excellent bone equipment.",
 		"trinkDescription" : "An automated crafting solution for creating various items from bones.",
 		"hymidDescription" : "This station can produce bone items of an extraordinary quality.",
 		"notixDescription" : "Boneworking stations like these work much faster than any organic being ever could.",
@@ -139,7 +141,8 @@
 		"centensDescription" : "TODO.",
 		"dremetonDescription" : "TODO.",
 		"theleanDescription" : "TODO.",
-		"drodenDescription" : "Analysis complete. Boneworking station. Used to construct equipment and other items made of bone."
+		"drodenDescription" : "Analysis complete. Boneworking station. Used to construct equipment and other items made of bone.",
+		"akkimariDescription" : "Machine makes tools-bone. Easier for Akki."
       },
 
       "interactData" : {

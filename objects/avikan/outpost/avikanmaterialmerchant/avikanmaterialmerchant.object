@@ -13,6 +13,7 @@
   
   "avikanDescription" : "This Droden will exchange my materials for tokens of merit.",
   "drodenDescription" : "Merchant detected. Offers tokens of merit for exchanged materials.",
+  "akkimariDescription" : "Robot give Akki tokens, if Akki give robot materials.",
 
   "inventoryIcon" : "icon.png",
   "orientations" : [

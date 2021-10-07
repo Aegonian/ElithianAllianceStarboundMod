@@ -12,6 +12,7 @@
   "novakidDescription" : "An ancient platform of sorts.",
   
   "drodenDescription" : "Analysis complete. Centensian platform.",
+  "akkimariDescription" : "Platform made by god-makers.",
   
   "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
   "category" : "Supports",
@@ -22,7 +23,7 @@
     "variants" : 1,
     "lightTransparent" : true,
     "occludesBelow" : false,
-    "multiColored" : false,
+    "multiColored" : true,
     "zLevel" : 0,
     "platform" : true
   }

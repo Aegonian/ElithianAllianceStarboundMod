@@ -1,0 +1,12 @@
+{
+  "projectileName" : "conscriptorauraspawner",
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "physics" : "thea-gravitywell",
+  "onlyHitTerrain" : true,
+  "damageKind" : "default",
+  "timeToLive" : 0.25,
+  
+  "scripts" : [ "/projectiles/scripts/thea-randomchanceprojectilespawner.lua" ],
+  "projectileType" : "conscriptoraura",
+  "spawnChance" : 0.2
+}

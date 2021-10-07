@@ -18,7 +18,7 @@
 
   "aegiDescription" : "The Avikan use Centensian technology for their weapons. Impressive.",
   "avikanDescription" : "Linerifles are the signature weapons of our grand Nomada.",
-  "erixianDescription" : "This weapon uses Centensian technology, I believe.",
+  "draunaarDescription" : "This weapon uses Centensian technology, I believe.",
   "trinkDescription" : "The core of this weapon works in ways not even I can understand.",
   "hymidDescription" : "A truly fascinating weapon. It seems to summon its ammunition out of nowhere.",
   "notixDescription" : "An impressive weapon, it uses technologies far beyond my understanding.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Analysis. Line rifle.",
+  "akkimariDescription" : "Rifle-strange. Look like driftrifle?",
   
   "inventoryIcon" : "avikanlinerifledisplay.png",
   "orientations" : [

@@ -12,7 +12,7 @@
   "actionOnReap" : [
     {
       "action" : "config",
-      "file" : "/projectiles/explosions/plasmabulletexplosion/plasmabulletexplosion.config"
+      "file" : "/projectiles/unique/voiceofrhadeisbullet/xanafian/voiceofrhadeisbulletimpact-xanafian.config"
     }
   ],
   "periodicActions" : [

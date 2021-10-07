@@ -1,0 +1,162 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "canisters" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 1,
+            "properties" : {
+              "particleEmittersOff" : [ "heal" ]
+            }
+          },
+          "healing" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "transition",
+			"transition" : "healed",
+            "properties" : {
+              "particleEmittersOn" : [ "heal" ]
+            }
+          },
+          "healed" : {
+            "frames" : 1,
+            "cycle" : 0.1,
+            "mode" : "transition",
+			"transition" : "refilling",
+            "properties" : {
+              "particleEmittersOff" : [ "heal" ]
+            }
+          },
+          "refilling" : {
+            "frames" : 1,
+            "cycle" : 0.1,
+            "mode" : "transition",
+			"transition" : "idle",
+            "properties" : {
+              "particleEmittersOff" : [ "heal" ]
+            }
+          }
+        }
+      },
+      "capturepod" : {
+        "default" : "empty",
+        "states" : {
+          "empty" : {
+            "frames" : 1
+          },
+          "full" : {
+            "frames" : 1
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "canisters" : {
+        "properties" : {
+          "centered" : false,
+          "fullbright" : false
+        },
+        "partStates" : {
+          "canisters" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "healing" : {
+              "properties" : {
+                "image" : "<partImage>:healing.<frame>"
+              }
+            },
+            "healed" : {
+              "properties" : {
+                "image" : "<partImage>:healed.<frame>"
+              }
+            },
+            "refilling" : {
+              "properties" : {
+                "image" : "<partImage>:refilling.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "capturepod" : {
+        "properties" : {
+          "centered" : false,
+		  "fullbright" : true,
+          "zLevel" : 1
+        },
+        "partStates" : {
+          "capturepod" : {
+            "empty" : {
+              "properties" : {
+                "image" : "<partImage>:empty.<frame>"
+              }
+            },
+            "full" : {
+              "properties" : {
+                "image" : "<partImage>:full.<frame>"
+              }
+            }
+          }
+        }
+      },
+      "capturepodlit" : {
+        "properties" : {
+          "centered" : false,
+          "zLevel" : 2
+        },
+        "partStates" : {
+          "capturepod" : {
+            "empty" : {
+              "properties" : {
+                "image" : "<partImage>:empty.<frame>"
+              }
+            },
+            "full" : {
+              "properties" : {
+                "image" : "<partImage>:full.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "sounds" : {},
+
+  "particleEmitters" : {
+    "heal" : {
+      "emissionRate" : 4,
+      "emissionVariance" : 1,
+      "active" : false,
+
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "animated",
+            "animation" : "/animations/statuseffects/heal/heal.animation",
+            "position" : [3.5, 2.0],
+            "finalVelocity" : [0.0, 4],
+            "approach" : [0, 50],
+            "destructionAction" : "shrink",
+            "destructionTime" : 1,
+            "fade" : 1,
+            "size" : 1,
+            "layer" : "middle",
+            "timeToLive" : 0.85,
+            "variance" : {
+              "initialVelocity" : [3.0, 3.0],
+              "position" : [0.5, 0.5]
+            }
+          }
+        }
+      ]
+    }
+  }
+
+}

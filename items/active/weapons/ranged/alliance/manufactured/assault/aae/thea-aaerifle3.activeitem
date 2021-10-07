@@ -4,7 +4,7 @@
   "inventoryIcon" : "thea-aaerifle3.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A high rate of fire assault rifle.",
+  "description" : "^gray;A high rate of fire assault rifle.^reset;",
   "manufacturer" : "^gray;AAE^reset;",
   "shortdescription" : "Nephys I-14",
   "level" : 6,
@@ -34,6 +34,11 @@
       }
     },
     "particleEmitters" : {
+    },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [0, 52, 90]
+	  }
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/thea_plasmagun1.ogg" ]

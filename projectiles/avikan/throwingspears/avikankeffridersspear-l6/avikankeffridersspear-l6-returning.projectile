@@ -5,6 +5,7 @@
   "image" : "avikankeffridersspear-l6-returning.png",
   "animationCycle" : 0.4,
   "frameNumber" : 5,
+  "fullbright" : true,
   "emitters" : [ "daggerblue" ],
   "power" : 0,
   "knockback" : 10,

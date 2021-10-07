@@ -1,0 +1,32 @@
+{
+  "projectileName" : "remnantsplinterblob2-shortlived",
+  "image" : "remnantsplinterblob.png",
+  "physics" : "stickygrenade",
+  "renderLayer" : "Monster+1",
+  "animationCycle" : 1.15,
+  "animationLoops" : true,
+  "frameNumber" : 6,
+  "windupFrames" : 6,
+  "power" : 0,
+  "speed" : 20,
+  "timeToLive" : 6.0,
+  "onlyHitTerrain" : true,
+  "lightColor" : [56, 91, 0],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/ancientcurseblobexplosion/ancientcurseblobexplosion.config"
+    }
+  ],
+  "emitters" : [ "ancientcursedrip" ],
+  "damageKind" : "default",
+  "hydrophobic" : false,
+  
+  "scripts" : [ "/projectiles/scripts/thea-ancientcurseblob.lua" ],
+  
+  "healProjectileType" : "thea-ancientcursehealer",
+  
+  "randomTimeToLive" : true,
+  "minLifeTime" : 200,	//In milliseconds!
+  "maxLifeTime" : 400	//In milliseconds!
+}

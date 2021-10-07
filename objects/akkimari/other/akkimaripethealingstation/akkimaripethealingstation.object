@@ -1,0 +1,77 @@
+{
+  "objectName" : "akkimaripethealingstation",
+  "colonyTags" : ["akkimari"],
+  "rarity" : "Rare",
+  "printable" : false,
+  "description" : "A creature healing station used to heal captured creatures.",
+  "shortdescription" : "Akris Pet Healer",
+  "race" : "akkimari",
+  "category" : "storage",
+  "price" : 750,
+  "health" : 2.5,
+
+  "objectType" : "container",
+  "slotCount" : 2,
+  "uiConfig" : "/interface/objectcrafting/pethealing.config",
+  "subtitle" : "",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600,
+  "scripts" : [ "/objects/scripts/thea-pethealingstation.lua"],
+
+  "apexDescription" : "Machines like these are used to heal captured creatures.",
+  "avianDescription" : "How useful, I can heal any creatures I capture with this.",
+  "floranDescription" : "Floran can keep creaturesss healed with this.",
+  "glitchDescription" : "Impressed. This device can heal any captured creatures.",
+  "humanDescription" : "I can use this to heal any creature I've captured. Neat!",
+  "hylotlDescription" : "Such things are useful for ensuring excellent creature health.",
+  "novakidDescription" : "I can use this here gadget to heal captured creatures.",
+
+  "aegiDescription" : "Captured creatures can be healed using this station.",
+  "avikanDescription" : "This station will heal any creature I've captured.",
+  "draunaarDescription" : "A device for healing wounded pets.",
+  "trinkDescription" : "This device will heal captured creatures.",
+  "hymidDescription" : "A device for healing wounded captured creatures.",
+  "notixDescription" : "This station will nurse my wounded pets back to full health.",
+  "jorgasianDescription" : "A medical station for healing pets.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Detected pet healing device. Heals wounded captured creatures.",
+  "akkimariDescription" : "Akki heal pet here.",
+
+  "inventoryIcon" : "akkimaripethealingstationicon.png",
+
+  "animation" : "akkimaripethealingstation.animation",
+  "animationParts" : {
+    "canisters" : "canisters.png",
+    "capturepod" : "capturepod.png",
+    "capturepodlit" : "capturepodlit.png"
+  },
+  "animationPosition" : [-8, 0],
+
+  "orientations" : [
+    {
+      "image" : "canisters.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "frames" : 1,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "canisters.png:<color>.<frame>",
+      "imagePosition" : [-8, 0],
+
+      "direction" : "right",
+      
+      "frames" : 1,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

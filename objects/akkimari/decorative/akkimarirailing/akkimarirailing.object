@@ -1,0 +1,44 @@
+{
+  "objectName" : "akkimarirailing",
+  "colonyTags" : ["akkimari"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "printable" : false,
+  "price" : 50,
+  "description" : "Part of a metal safety railing.",
+  "shortdescription" : "Akris Railing",
+  "race" : "akkimari",
+
+  "apexDescription" : "This railing looks rather sturdy.",
+  "avianDescription" : "If I had wings, I could easily leap over this railing.",
+  "floranDescription" : "Floran is sssure Floran could jump this fence! But Floran won't try.",
+  "glitchDescription" : "Impressed. This railing is sturdy despite its thin frame.",
+  "humanDescription" : "I'm sure this railing is here for a purpose. Better not try to jump over it.",
+  "hylotlDescription" : "A metal railing. A basic safety measure.",
+
+  "aegiDescription" : "A basic safety railing.",
+  "avikanDescription" : "A thin but sturdy safety railing.",
+  "draunaarDescription" : "Part of a metal railing.",
+  "trinkDescription" : "This railing is a basic but effective safety measure.",
+  "hymidDescription" : "I wonder how quickly this railing would rust underwater.",
+  "notixDescription" : "A metal railing, plain and simple.",
+  "jorgasianDescription" : "A very basic metal railing.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected safety railing.",
+  "akkimariDescription" : "Railing, so Akki not fall.",
+  
+  "inventoryIcon" : "akkimarirailingicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "akkimarirailing.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

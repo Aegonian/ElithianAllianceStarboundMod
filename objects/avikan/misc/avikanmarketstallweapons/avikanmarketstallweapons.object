@@ -18,7 +18,7 @@
 
   "aegiDescription" : "Primitive bone weapons in appearance, but they make for excellent hunting tools.",
   "avikanDescription" : "Bone weapons are still the favourites of our people, even though we can craft them of metal now.",
-  "erixianDescription" : "Bone weaponry. The blades look rather sharp.",
+  "draunaarDescription" : "Bone weaponry. The blades look rather sharp.",
   "trinkDescription" : "This bone weaponry outmatches many more modern weapons.",
   "hymidDescription" : "These bone weapons look sharp. My people could learn a thing or two from the Avikan.",
   "notixDescription" : "Few species are able to craft such potent bone weaponry.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO",
   "hyvonDescription" : "TODO",
   "drodenDescription" : "This equipment predates this unit's technology.",
+  "akkimariDescription" : "Weapons-bone, not strong-very.",
 
   "inventoryIcon" : "avikanmarketstallweaponsicon.png",
   "orientations" : [

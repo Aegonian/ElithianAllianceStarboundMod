@@ -1,0 +1,26 @@
+{
+  "type" : "thea-akkimaridroneambush",
+
+  "scripts" : ["/stagehands/randomevents/monsterambush/thea-monsterambushevent.lua"],
+  "scriptDelta" : 1,
+  
+  "monsterTypes" : [
+	"akkimariflic",
+	"akkimariflic",
+	"akkimariarbiter",
+	"akkimariarbiter",
+	"akkimariarbiter",
+	"akkimariarbiter",
+	"akkimariarbiter",
+	"akkimariarbiter",
+	"akkimarijusticar"
+  ],
+  "monsterCount" : [ 4, 6 ],
+  "monsterTestPoly" : [ [0, 1.5], [1.0, 1.0], [1.5, 0], [1.0, -1.0], [0, -1.5], [-1.0, -1.0], [-1.5, 0], [-1.0, 1.0] ],
+  "spawnOnGround" : false,
+  "spawnEffect" : "thea-monsterdecloak",
+  "minDistanceToPlayer" : 10,
+  "spawnRangeX" : 25,
+  "spawnRangeY" : 20,
+  "spawnTolerance" : 20
+}

@@ -23,7 +23,7 @@
 
   "aegiDescription" : "An Akkimari chest, from the looks of it.",
   "avikanDescription" : "This chest has a strange alien design.",
-  "erixianDescription" : "An Akkimari container. It's odd.",
+  "draunaarDescription" : "An Akkimari container. It's odd.",
   "trinkDescription" : "This container is not very efficient in its use of space.",
   "hymidDescription" : "An odd chest. Built by the Akkimari, no doubt.",
   "notixDescription" : "This container is oddly shaped.",
@@ -40,7 +40,7 @@
       "dualImage" : "akkimarismallchest.png:<color>.<key>",
       "imagePosition" : [-8, 0],
 
-      "spaceScan" : 0.1,
+      "spaceScan" : 0.2,
       "anchors" : [ "bottom" ]
     }
   ],

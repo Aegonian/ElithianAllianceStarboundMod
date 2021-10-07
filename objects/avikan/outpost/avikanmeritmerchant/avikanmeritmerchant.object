@@ -13,6 +13,7 @@
   
   "avikanDescription" : "Tokens of merit can be traded for a variety of goods here.",
   "drodenDescription" : "Merchant detected. Purchases are made using tokens of merit.",
+  "akkimariDescription" : "Akki buy things with tokens. Akki not like.",
   
   "interactAction" : "OpenCraftingInterface",
   "interactData" : {

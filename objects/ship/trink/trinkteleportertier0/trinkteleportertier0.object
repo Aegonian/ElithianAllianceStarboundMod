@@ -19,7 +19,7 @@
 
   "aegiDescription" : "The teleporter is broken.",  
   "avikanDescription" : "The teleporter isn't working. I have to get it fixed.",
-  "erixianDescription" : "This teleporter isn't taking me anywhere until it gets some repairs.",
+  "draunaarDescription" : "This teleporter isn't taking me anywhere until it gets some repairs.",
   "trinkDescription" : "The teleporter is broken. I need to get it repaired.",
   "hymidDescription" : "This teleporter isn't teleporting anything in this state.",
   "notixDescription" : "There will be no teleporting until the ship gets fixed.",
@@ -28,6 +28,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Teleportation technology detected. Status: broken.",
+  "akkimariDescription" : "Teleporter-broken, need repairs.",
 
   "inventoryIcon" : "teleportericonTier0.png",
   "orientations" : [

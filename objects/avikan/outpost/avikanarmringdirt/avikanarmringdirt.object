@@ -12,7 +12,9 @@
   "floranDescription" : "If Floran digss through muck, Floran might find something?",
   "glitchDescription" : "Disgusted. I'd rather not touch that muck.",
   "novakidDescription" : "Is it just me, or do I see somethin' shiny in that pile o' muck?",
+  
   "drodenDescription" : "Detected sewage waste. Scanning for additional items...",
+  "akkimariDescription" : "Muck-icky. Akki not want to get hands-dirty.",
 
   "inventoryIcon" : "avikanarmringdirticon.png",
   "orientations" : [

@@ -1,0 +1,20 @@
+{
+  "name" : "akkimaribloodfrenzy",
+  "effectConfig" : {
+    "maxPowerModifier" : 1.25,
+    "maxSpeedModifier" : 1.25,
+	"maxAirJumpModifier" : 1.25,
+	"maxParticleEmissionRate" : 15,
+	"killsForMaxEffect" : 5,
+	"frenzyDuration" : 10
+  },
+  "defaultDuration" : 5.0,
+
+  "scripts" : [
+    "akkimaribloodfrenzy.lua"
+  ],
+
+  "animationConfig" : "akkimaribloodfrenzy.animation",
+  
+  "label" : "BLOOD FRENZY: Increased power and speed for every kill"
+}

@@ -3,12 +3,13 @@
   "price" : 960,
   "maxStack" : 1,
   "rarity" : "rare",
-  "description" : "A standard-model Nomada Combat Rifle.",
+  "description" : "^gray;A standard-model Nomada Combat Rifle.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Nomada Combat Rifle",
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Combat Rifle",
   "twoHanded" : true,
-  "itemTags" : ["weapon","ranged","avikan","assaultrifle"],
+  "itemTags" : ["weapon","ranged","avikan","assaultrifle","vanguard"],
 
   "animation" : "/items/active/weapons/ranged/gun.animation",
   "animationParts" : { },
@@ -86,7 +87,7 @@
   },
   "fireSounds" : [ "/sfx/gun/ar2.ogg" ],
 
-  "builder" : "/items/buildscripts/buildweapon.lua",
+  "builder" : "/items/buildscripts/thea-buildrandomweapon.lua",
   "builderConfig" : [{
     "nameGenerator" : "combatriflenames.config:nameGen",
     "animationParts" : {

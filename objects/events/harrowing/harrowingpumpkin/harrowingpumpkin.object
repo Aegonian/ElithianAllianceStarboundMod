@@ -19,7 +19,7 @@
 
   "aegiDescription" : "A pumpkin carved for the Harrowing! I've heard this tradition predates our arrival on Elithia.",
   "avikanDescription" : "An alien plant with a weird face carved into it. Why waste such good food?",
-  "erixianDescription" : "It's a Terran plant with a face carved into it. The Aegi have strange traditions.",
+  "draunaarDescription" : "It's a Terran plant with a face carved into it. The Aegi have strange traditions.",
   "trinkDescription" : "This plant is oddly shaped. It almost resembles a Trink.",
   "hymidDescription" : "The Aegi carve these plants for the Harrowing. It seems like a fun tradition.",
   "notixDescription" : "A strange plant with bits cut out of it.",
@@ -28,7 +28,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Analysis complete. Alien plantlife. Detected symmetrical carvings. Purpose unknown.",
-  "akkimariDescription" : "Akki want to taste alien plant! Akki not worried of getting sick.",
+  "akkimariDescription" : "Akki want to taste plant-alien! Akki not worried of getting sick.",
 
   "inventoryIcon" : "harrowingpumpkinicon.png",
   "orientations" : [

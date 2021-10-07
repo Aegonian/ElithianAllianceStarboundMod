@@ -11,6 +11,7 @@
   "novakidDescription" : "I'm baffled by how light and strong this 'ere metal here.",
   
   "drodenDescription" : "Analysis complete. Centensian metal panel detected.",
+  "akkimariDescription" : "Panel-smooth, Akki think it pretty.",
 
   "footstepSound" : "/sfx/blocks/footstep_composite.ogg",
   "health" : 8,
@@ -22,7 +23,7 @@
     "variants" : 10,
     "lightTransparent" : false,
     "occludesBelow" : true,
-    "multiColored" : false,
+    "multiColored" : true,
     "zLevel" : 300
   }
 }

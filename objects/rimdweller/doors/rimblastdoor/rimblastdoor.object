@@ -21,7 +21,7 @@
 
   "aegiDescription" : "A thick blast door.",
   "avikanDescription" : "An alien blast door.",
-  "erixianDescription" : "A blast door. It looks like it can withstand anything.",
+  "draunaarDescription" : "A blast door. It looks like it can withstand anything.",
   "trinkDescription" : "A strong blast door.",
   "hymidDescription" : "A thick blast door. It won't be breached easily.",
   "notixDescription" : "A blast door.",
@@ -30,6 +30,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Blast door detected.",
+  "akkimariDescription" : "Akki spotted door-blast.",
 
   "inventoryIcon" : "rimblastdooricon.png",
   "orientations" : [

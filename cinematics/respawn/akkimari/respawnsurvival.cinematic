@@ -129,18 +129,18 @@
       "avatar" : "fullneutralnude",
       "keyframes" : [
         {
-          "timecode" : 10.75,
+          "timecode" : 9.75,
           "zoom" : 2,
           "alpha" : 0,
           "frame" : 0,
-          "position" : [479, 265]
+          "position" : [480, 265]
         },
         {
-          "timecode" : 10.795,
+          "timecode" : 9.795,
           "zoom" : 2,
           "alpha" : 1,
           "frame" : 0,
-          "position" : [479, 265]
+          "position" : [480, 265]
         },
         {
           "timecode" : 12.5,

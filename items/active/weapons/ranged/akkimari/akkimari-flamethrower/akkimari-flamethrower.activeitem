@@ -5,12 +5,13 @@
   "maxStack" : 1,
   "rarity" : "Legendary",
   "description" : "^gray;A powerful makeshift flamethrower.^reset;",
+  "manufacturer" : "^gray;Kelraaki^reset;",
   "shortdescription" : "Akris Flamethrower",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-continuousgun",
+  "tooltipKind" : "thea-continuousgun-mf",
   "category" : "Flamethrower",
-  "itemTags" : ["weapon","ranged","flamethrower","akkimari"],
+  "itemTags" : ["weapon","ranged","flamethrower","akkimari","akkimariUpgradeable","kelraaki"],
   "twoHanded" : true,
   
   "cursor" : "/cursors/thea-triplereticle-large.cursor",
@@ -93,7 +94,7 @@
 	  "idleFlames" : {
 		"active" : true,
 		"transformationGroups" : ["muzzle"],
-		"offsetRegion" : [0.375, -0.25, 0.375, -0.25],
+		"offsetRegion" : [0.375, 0.0, 0.375, 0.0],
 		"emissionRate" : 30,
 		"particles" : [
 		  {"particle" : "thea-smallflame"}

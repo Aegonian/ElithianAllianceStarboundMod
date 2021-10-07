@@ -19,7 +19,7 @@
 
   "aegiDescription" : "This beacon will attract armed Avikan tenants.",
   "avikanDescription" : "Such beacons are used by the Nomada to summon guards and mercenaries for new colonies.",
-  "erixianDescription" : "A beacon. It could attract an armed tenant.",
+  "draunaarDescription" : "A beacon. It could attract an armed tenant.",
   "trinkDescription" : "This beacon summons Avikan guards. I am not sure if it's a good idea to use it.",
   "hymidDescription" : "A beacon for summoning Avikan guard tenants. I'd love to meet some more desert folk!",
   "notixDescription" : "A beacon that calls for armed reinforcements.",
@@ -28,6 +28,7 @@
   "dremetonDescription" : "A beacon that can summon an Avikan guard if used in the right place.",
   "hyvonDescription" : "A beacon that summons an armed lesser one. Hmph.",
   "drodenDescription" : "Detected beacon. Use in combination with a colony deed to summon armed Avikan tenants.",
+  "akkimariDescription" : "If Akki place in house with deed-colony, Akki summon guard.",
 
   "inventoryIcon" : "avikanvanguardbeaconicon.png",
   "orientations" : [

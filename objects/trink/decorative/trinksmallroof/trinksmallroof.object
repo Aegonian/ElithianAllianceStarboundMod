@@ -20,7 +20,7 @@
 
   "aegiDescription" : "The Trinks are big fans of modular buildings. This roof will fit on pretty much every Trinkian home.",
   "avikanDescription" : "A small metal roof, built by machines.",
-  "erixianDescription" : "A small modular roof.",
+  "draunaarDescription" : "A small modular roof.",
   "trinkDescription" : "Trinkian roofs are modular, and fit on top of almost any Trinkian structure.",
   "hymidDescription" : "A small metal roof, built by the Notician robots.",
   "notixDescription" : "Our Trinks are excellent at building modular structures.",
@@ -29,7 +29,7 @@
   "dremetonDescription" : "TODO",
   "hyvonDescription" : "TODO",
   "drodenDescription" : "Readings indicate high amounts of sensors inside this structure.",
-
+  "akkimariDescription" : "Roof-alien, has many lights.",
 
   "inventoryIcon" : "trinksmallrooficon.png",
   "orientations" : [

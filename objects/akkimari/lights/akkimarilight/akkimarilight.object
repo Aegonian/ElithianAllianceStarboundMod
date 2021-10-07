@@ -1,0 +1,69 @@
+{
+  "objectName" : "akkimarilight",
+  "colonyTags" : ["akkimari", "light"],
+  "rarity" : "Common",
+  "printable" : false,
+  "price" : 30,
+  "description" : "A gentle table lamp.",
+  "shortdescription" : "Akris Table Light",
+  "race" : "akkimari",
+
+  "apexDescription" : "A table lamp. It pulsates softly.",
+  "avianDescription" : "This table lamp makes me feel calm.",
+  "floranDescription" : "Pulsssing light.",
+  "glitchDescription" : "Calm. This pulsating light is relaxing.",
+  "humanDescription" : "A pulsating light.",
+  "hylotlDescription" : "This pulsating light evokes a feeling of calmness.",
+  "novakidDescription" : "A small table lamp, pulsating lightly.",
+
+  "aegiDescription" : "A pulsating light. It calms the Akkimari down.",
+  "avikanDescription" : "An alien lamp. The light is odd somehow.",
+  "draunaarDescription" : "A strange light, it pulsates softly.",
+  "trinkDescription" : "A pulsating light.",
+  "hymidDescription" : "I feel calm when looking at this light.",
+  "notixDescription" : "This lamp hums softly.",
+  "jorgasianDescription" : "An odd source of light.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "theleanDescription" : "TODO.",
+  "drodenDescription" : "Detected pulsating light source.",
+  "akkimariDescription" : "Akki like light-pulsating. Akki feel calm.",
+
+  "category" : "light",
+  "lightColor" : [127, 103, 127],
+
+  "flickerPeriod" : 2.0,
+  "flickerMinIntensity" : 0.9,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.2,
+  "flickerIntensityVariance" : 0.05,
+
+  "inventoryIcon" : "akkimarilighticon.png",
+  "orientations" : [
+    {
+      "image" : "akkimarilight.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/fluorescent_light_quiet.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+  
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+  "animationParts" : {
+    "bg" : "akkimarilight.png",
+    "fg" : "akkimarilightlit.png"
+  },
+  "animationPosition" : [0, 0],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : true,
+
+  "inputNodes" : [ [0, 0] ]
+}

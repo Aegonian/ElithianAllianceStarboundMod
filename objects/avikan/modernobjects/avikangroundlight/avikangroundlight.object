@@ -24,7 +24,7 @@
 
   "aegiDescription" : "A simple light shining upward.",
   "avikanDescription" : "A light shining upward, often found in shipyards.",
-  "erixianDescription" : "This light shines upward.",
+  "draunaarDescription" : "This light shines upward.",
   "trinkDescription" : "A light that shines upward. Inefficient during the day.",
   "hymidDescription" : "This light illuminates something above.",
   "notixDescription" : "A small light pointing at the sky.",
@@ -33,18 +33,18 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Light. Illuminates objects above.",
+  "akkimariDescription" : "Light-small.",
 
   "inventoryIcon" : "avikangroundlighticon.png",
   "orientations" : [
     {
-      "image" : "avikangroundlight.png:<frame>",
+	  "imageLayers" : [ { "image" : "avikangroundlight.png:<frame>", "fullbright" : true }, { "image" : "avikangroundlightlit.png:<frame>" } ],
       "imagePosition" : [0, 0],
       "animationCycle" : 0.5,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ],
       "beamAngle" : 90
-
     }
   ]
 }

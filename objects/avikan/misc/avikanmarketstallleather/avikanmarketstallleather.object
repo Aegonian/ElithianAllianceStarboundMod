@@ -18,7 +18,7 @@
 
   "aegiDescription" : "I wonder how many animals had to be slain to find this much leather...",
   "avikanDescription" : "Leather and fabric, for crafting clothes, tents and so much more.",
-  "erixianDescription" : "This leather wouldn't last very long on Heragon.",
+  "draunaarDescription" : "TODO",
   "trinkDescription" : "This market stall offers various leather items.",
   "hymidDescription" : "I've never liked the way Avikan clothing feels.",
   "notixDescription" : "Avikan leather items. These are surprisingly durable.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO",
   "hyvonDescription" : "TODO",
   "drodenDescription" : "Leather items detected: Avikan clothing. Rugs. Tapestries. Sheets.",
+  "akkimariDescription" : "Cloth and leather. Akki use for weaving.",
 
   "inventoryIcon" : "avikanmarketstallleathericon.png",
   "orientations" : [

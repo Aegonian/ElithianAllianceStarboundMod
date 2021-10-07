@@ -1,7 +1,7 @@
 {
   "input" : [
     { "item" : "droden-tier5mlegs", "count" : 1 },
-	{ "item" : "avikanmetaltier6", "count" : 10 },
+	{ "item" : "avikanmetaltier6", "count" : 4 },
     { "item" : "avikancircuitry", "count" : 1 }
   ],
   "duration" : 5,

@@ -18,7 +18,7 @@
 
   "aegiDescription" : "A Centensian console.",
   "avikanDescription" : "A console created by the Old Ones.",
-  "erixianDescription" : "A console created by the Centens. No one knows what it was used for, exactly.",
+  "draunaarDescription" : "A console created by the Centens. No one knows what it was used for, exactly.",
   "trinkDescription" : "This console was created by the Centens.",
   "hymidDescription" : "A Centensian computer console, I believe.",
   "notixDescription" : "A console. Centensian in nature, based on its appearance.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Analysis. Detected Centensian interface.",
+  "akkimariDescription" : "Computer-ancient, god-maker-made.",
   
   "lightColor" : [39, 31, 63],
 

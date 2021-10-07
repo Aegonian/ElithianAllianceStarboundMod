@@ -18,7 +18,7 @@
 
   "aegiDescription" : "This leather sheet is used as a tent wall.",
   "avikanDescription" : "A tent wall made of a simple leather sheet. Simple, but functional.",
-  "erixianDescription" : "A tent wall made using a large sheet of leather.",
+  "draunaarDescription" : "A tent wall made using a large sheet of leather.",
   "trinkDescription" : "A leather sheet used as a tent wall.",
   "hymidDescription" : "A simple leather sheet used as a tent wall.",
   "notixDescription" : "A tent wall. It's made of a large leather sheet.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Analysis. Leather sheet.",
+  "akkimariDescription" : "Tent-side, wall-leather.",
 
   "inventoryIcon" : "avikantentsideicon.png",
   "orientations" : [

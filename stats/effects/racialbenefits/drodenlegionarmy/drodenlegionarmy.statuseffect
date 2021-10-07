@@ -1,0 +1,14 @@
+{
+  "name" : "drodenlegionarmy",
+  "effectConfig" : {
+    "powerModifierPerCrewmember" : 0.075,
+    "timeBetweenRequests" : 1.0
+  },
+  "defaultDuration" : 5.0,
+
+  "scripts" : [
+    "drodenlegionarmy.lua"
+  ],
+  
+  "label" : "LEGION: Increased power for every Droden follower"
+}

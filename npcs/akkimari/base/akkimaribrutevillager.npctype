@@ -1,0 +1,55 @@
+{
+  "type" : "akkimaribrutevillager",
+  "baseType" : "thea-villager",
+
+  "dropPools" : [ "akkimariDeathTreasure" ],
+  
+  "identity" : {
+    "imagePath" : "akkimaribrute"
+  },
+  "humanoidConfig" : "/species/types/thea-bruteakkimaroid.config",
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common"],
+      "enableParticipation" : true,
+
+      // Every 30 seconds, decide whether to generate a quest and if so, spend
+      // the rest of the 30s window trying to generate it.
+      "timeLimit" : 30,
+
+      // Don't generate new quests if there are already more than <nearbyQuestLimit>
+      // questmanager stagehands nearby, within a <nearbyQuestRange> tile range.
+      "nearbyQuestLimit" : 2,
+      "nearbyQuestRange" : 50,
+      "questCountRange" : [1, 4],
+      
+      "graduation" : {
+        "nextNpcType" : [
+          [1, "crewmemberakkimariscavenger"]
+        ]
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0,
+	    [
+		  {
+            "head" : [
+			  { "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 7, 8, 11] } }
+			],
+            "chest" : [
+			  { "name" : "akkimari-brutesmithchest", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 7, 8, 11] } }
+			],
+            "legs" : [
+			  { "name" : "akkimari-brutesmithlegs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 7, 8, 11] } }
+			]
+          }
+        ]
+	  ]
+    ]
+  }
+}

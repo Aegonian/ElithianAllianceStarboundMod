@@ -307,6 +307,22 @@
   },
   {
     "op" : "add",
+    "path" : "/remnantcaves",
+    "value" : {
+      "primaryDungeon" : "remnantcaves",
+      "threatLevel" : 8,
+      "gravity" : 80,
+      "worldSize" : [2000, 1000],
+      "dungeonBaseHeight" : 450,
+      "ambientLightLevel" : [32, 32, 32],
+      "biome" : "garden",
+      "ambientNoises" : "/sfx/environmental/desert_underground.ogg",
+      "musicTrack" : "/music/atlas.ogg",
+	  "environmentStatusEffects" : ["dontstarve"]
+    }
+  },
+  {
+    "op" : "add",
     "path" : "/avikanmission-intro",
     "value" : {
       "primaryDungeon" : "avikanmission-intro",

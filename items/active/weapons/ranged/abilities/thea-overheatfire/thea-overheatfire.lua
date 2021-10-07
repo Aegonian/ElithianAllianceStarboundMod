@@ -23,7 +23,8 @@ end
 
 function TheaOverheatFire:update(dt, fireMode, shiftHeld)
   WeaponAbility.update(self, dt, fireMode, shiftHeld)
-
+  
+  self.heat = math.min(config.getParameter("heat", 0), self.overheatThreshold)
   self.cooldownTimer = math.max(0, self.cooldownTimer - self.dt)
   self.idleTimer = math.min(self.coolingIdleTime, self.idleTimer + self.dt)
 
@@ -35,6 +36,8 @@ function TheaOverheatFire:update(dt, fireMode, shiftHeld)
   if self.heat >= self.overheatThreshold then
 	self.overheated = true
 	activeItem.setInstanceValue("overheated", true)
+	animator.setParticleEmitterActive("venting", true)
+	animator.setAnimationState("weapon", "overheated")
   elseif self.heat >= self.hotThreshold and not self.overheated then
 	animator.setAnimationState("weapon", "hot")
   elseif self.heat >= self.mediumThreshold and not self.overheated then
@@ -43,6 +46,11 @@ function TheaOverheatFire:update(dt, fireMode, shiftHeld)
 	animator.setAnimationState("weapon", "cool")
   else
 	animator.setAnimationState("weapon", "idle")
+  end
+  
+  --If the weapon is in an ability, stop and reset the idle timer
+  if self.weapon.currentAbility then
+	self.idleTimer = 0
   end
   
   --Passive cooling while not overheated
@@ -62,13 +70,13 @@ function TheaOverheatFire:update(dt, fireMode, shiftHeld)
     elseif self.fireType == "burst" then
       self:setState(self.burst)
     end
-  elseif self.overheated then
+  elseif self.overheated and not self.weapon.currentAbility then
 	self:setState(self.overheat)
   end
   
-  world.debugText(self.heat, mcontroller.position(), "red")
-  world.debugText(self.idleTimer, vec2.add(mcontroller.position(), {0,1}), "red")
-  world.debugText(sb.printJson(self.overheated), vec2.add(mcontroller.position(), {0,2}), "red")
+  world.debugText(self.heat, mcontroller.position(), "yellow")
+  world.debugText(self.idleTimer, vec2.add(mcontroller.position(), {0,1}), "yellow")
+  world.debugText(sb.printJson(self.overheated), vec2.add(mcontroller.position(), {0,2}), "yellow")
 end
 
 function TheaOverheatFire:auto()

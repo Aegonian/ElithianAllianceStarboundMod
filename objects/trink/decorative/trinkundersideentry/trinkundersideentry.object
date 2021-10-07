@@ -20,7 +20,7 @@
 
   "aegiDescription" : "The Trinks are big fans of modular buildings. This underside entrance will fit on pretty much every suitable Trinkian construction.",
   "avikanDescription" : "A metal underside entrance, built by machines.",
-  "erixianDescription" : "A modular underside entrance.",
+  "draunaarDescription" : "A modular underside entrance.",
   "trinkDescription" : "Trinkian underside entrances are modular, and fit beneath of almost any suitable Trinkian structure.",
   "hymidDescription" : "A metal underside entrance, built by the Notician robots.",
   "notixDescription" : "Our Trinks are excellent at building modular structures.",
@@ -29,7 +29,7 @@
   "dremetonDescription" : "TODO",
   "hyvonDescription" : "TODO",
   "drodenDescription" : "Readings indicate high amounts of sensors inside this structure.",
-
+  "akkimariDescription" : "Akki enter building here.",
 
   "inventoryIcon" : "trinkundersideentryicon.png",
   "orientations" : [

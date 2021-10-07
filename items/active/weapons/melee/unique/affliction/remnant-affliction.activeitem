@@ -1,0 +1,49 @@
+{
+  "itemName" : "remnant-affliction",
+  "price" : 1500,
+  "level" : 6,
+  "fixedLevel" : false,
+  "maxStack" : 1,
+  "rarity" : "essential",
+  "description" : "^orange;A wicked, ancient weapon created by the Remnant.",
+  "shortdescription" : "^orange;Affliction^white;",
+  "tooltipKind" : "thea-sword-unique",
+  "category" : "Shieldblade",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","shieldblade","remnant","theaUnique"],
+
+  "inventoryIcon" : "remnant-afflictionicon.png",
+
+  "animation" : "remnant-affliction.animation",
+  "animationParts" : {
+    "blade" : "remnant-affliction.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_broadsword.ogg" ],
+      "fire2" : [ "/sfx/melee/swing_shortsword.ogg" ],
+      "fire3" : [ "/sfx/melee/swing_spear.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+  
+  //Makes the weapon draw in front of the arm
+  "handGrip" : "outside",
+
+  "aimOffset" : -1.0,
+
+  "primaryAbilityType" : "thea-shieldbladecombo",
+  "primaryAbility" : {
+	"baseDps" : 7.0
+  },
+  
+  "altAbilityType" : "thea-shieldbladedefend",
+  "altAbility" : {
+	"energyUsage" : 50
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

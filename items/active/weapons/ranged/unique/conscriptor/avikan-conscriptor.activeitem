@@ -5,12 +5,13 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "^orange;An intimidating revolver once held by the elder of Vathra.",
+  "manufacturer" : "^gray;Vathra^reset;",
   "shortdescription" : "^orange;Conscriptor^white;",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-ammogun-unique",
+  "tooltipKind" : "thea-ammogun-mf-unique",
   "category" : "Hand Cannon",
-  "itemTags" : ["weapon","ranged","pistol","avikan","theaUnique"],
+  "itemTags" : ["weapon","ranged","pistol","avikan","vathra","theaUnique"],
   "twoHanded" : true,
   
   //CONFIGURATION FOR WEAPONS COLLECTION
@@ -77,7 +78,7 @@
     "projectileCount" : 1,
     "fireType" : "auto",
 
-    "projectileType" : "drodenbullet",
+    "projectileType" : "conscriptorbullet",
     "projectileParameters" : {
       "knockback" : 18,
       "speed" : 180

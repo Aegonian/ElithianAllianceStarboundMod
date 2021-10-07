@@ -19,7 +19,7 @@
 
   "aegiDescription" : "The energy flowing through here is incredible. How the Centens managed to contain it is beyond me.",
   "avikanDescription" : "The Old Ones harvested energy directly from the stars. If the containment fields failed, this entire place would evaporate instantly.",
-  "erixianDescription" : "The lava streams on Heragon provide us with much energy, but it all fades in comparison to the energy flowing through here.",
+  "draunaarDescription" : "TODO",
   "trinkDescription" : "My systems are showing multiple anomalies. Whatever field is containing all this energy, it's also interfering with my computers.",
   "hymidDescription" : "The raw energy of a star flows through here. I'm not sure how it's even possible.",
   "notixDescription" : "I don't feel very well... All this heat is painful.",
@@ -28,7 +28,7 @@
   "dremetonDescription" : "TODO",
   "theleanDescription" : "TODO",
   "drodenDescription" : "Detected Old Ones technology. Energy readings spiking. Hazard levels increasing. System anomolies detected.",
-  "akkimariDescription" : "Akki sense much power. Unimaginable power. Enough power to take back Kel'chis?",
+  "akkimariDescription" : "Akki sense power-much. Power-enough to take back Kel'chis?",
   
   "interactAction" : "OpenCraftingInterface",
   "interactData" : {

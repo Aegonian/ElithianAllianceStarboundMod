@@ -1,6 +1,6 @@
 {
   "particleEmitters" : {
-    "flames" : {
+    "smoke" : {
       "enabled" : true,
       "emissionRate" : 10.0,
       "particles" : [

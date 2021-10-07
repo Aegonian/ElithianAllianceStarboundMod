@@ -4,12 +4,13 @@
   "level" : 5,
   "maxStack" : 1,
   "rarity" : "rare",
-  "description" : "A metal broadsword designed by the Nomada.",
+  "description" : "^gray;A metal broadsword designed by the Nomada.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Nomada Blade",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "broadsword",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","broadsword","avikan"],
+  "itemTags" : ["weapon","melee","broadsword","avikan","vanguard"],
 
   "inventoryIcon" : "avikantier5broadsword.png",
 
@@ -32,5 +33,5 @@
 
   "altAbilityType" : "spinslash",
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

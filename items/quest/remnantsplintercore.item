@@ -1,0 +1,11 @@
+{
+  "itemName" : "remnantsplintercore",
+  "price" : 1000,
+  "rarity" : "Essential",
+  "category" : "Quest Item",
+  "tooltipKind" : "thea-unique",
+  "inventoryIcon" : "remnantsplintercore.png",
+  "description" : "An ancient, otherworldly stone with a corrupting aura.",
+  "shortdescription" : "^orange;Blighted Stone Core^white;",
+  "itemTags" : [ "questitem" ]
+}

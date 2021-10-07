@@ -439,7 +439,7 @@
       "active" : false,
       "transformationGroups" : ["flip", "rotation"],
       "position" : [4.0, -0.5],
-      "color" : [250, 250, 200],
+      "color" : [255, 185, 85],
       "pointLight" : true,
       "pointAngle" : -5,
       "pointBeam" : 5

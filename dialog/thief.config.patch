@@ -1,119 +1,149 @@
 [
-	//AVIKAN DIALOGUE
-	{
-		"op": "add",
-		"path": "/accuse/avikan",
-		"value": {
-			"default" : [
-				"That doesn't belong to you!",
-				"Thievery wil not be tolerated here!",
-				"Why are you taking these things? They aren't yours!",
-				"Vathra! Stop that thievery!",
-				"Rhadeis will end your thievery soon enough."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/alert/avikan",
-		"value": {
-			"default" : [
-				"Alert the clan! We've got a thief!",
-				"Guards, get that thief!",
-				"Rhadeis will judge you, thief! Guards!",
-				"Stop taking what isn't yours! Guards!",
-				"Guards, arrest this thief!"
-			]
-		}
-	},
-	
-	
-	
-	//TRINK DIALOGUE
-	{
-		"op": "add",
-		"path": "/accuse/trink",
-		"value": {
-			"default" : [
-				"That was not yours to take.",
-				"Stealing from the Circuit, are you?",
-				"That belongs to the Circuit!",
-				"You had better stop stealing things.",
-				"The Circuit does not tolerate thievery."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/alert/trink",
-		"value": {
-			"default" : [
-				"The Circuit will stop you. Guards!",
-				"Your days of thievery are over! Guards!",
-				"Guards, end this thievery!",
-				"You won't get away with this. Guards!",
-				"Guards, arrest this thief!"
-			]
-		}
-	},
-	
-	
-	
-	//DRODEN DIALOGUE
-	{
-		"op": "add",
-		"path": "/accuse/droden",
-		"value": {
-			"default" : [
-				"Detected thief. Unit requests you to desist this behaviour.",
-				"Thief detected. Cease your thievery, or the clan will be alerted.",
-				"Criminal behaviour detected. Cease immediately.",
-				"Detected violation of Nomada laws. Requesting immediate cease and desist.",
-				"Crime detected. Continued criminal behaviour will result in lawful apprehension."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/alert/droden",
-		"value": {
-			"default" : [
-				"Reporting criminal behaviour. Guards will arrive shortly.",
-				"Unit is reporting criminal behaviour. Gurads arriving shortly.",
-				"Criminal behaviour reported. Stand by for arrest.",
-				"Nomada laws violated. Alerting local guards.",
-				"Requesting immediate assistance. Criminal must be apprehended."
-			]
-		}
-	},
-	
-	
-	
-	//AEGI DIALOGUE
-	{
-		"op": "add",
-		"path": "/accuse/aegi",
-		"value": {
-			"default" : [
-				"Hey, that's not yours!",
-				"You've got to be kidding me, are you really stealing our stuff?",
-				"Hands off, that isn't yours to take!",
-				"Stop stealing before I call the guards!",
-				"You can get banished for theft, you know."
-			]
-		}
-	},
-	{
-		"op": "add",
-		"path": "/alert/aegi",
-		"value": {
-			"default" : [
-				"Guards, this one is stealing!",
-				"Hold the thief!",
-				"Stop that thief!",
-				"You'll regret stealing those things! Guards!",
-				"Guards, arrest this thief!"
-			]
-		}
+  //AVIKAN DIALOGUE
+  {
+	"op": "add",
+	"path": "/accuse/avikan",
+	"value": {
+	  "default" : [
+		"That doesn't belong to you!",
+		"Thievery wil not be tolerated here!",
+		"Why are you taking these things? They aren't yours!",
+		"Vathra! Stop that thievery!",
+		"Rhadeis will end your thievery soon enough."
+	  ]
 	}
+  },
+  {
+	"op": "add",
+	"path": "/alert/avikan",
+	"value": {
+	  "default" : [
+		"Alert the clan! We've got a thief!",
+		"Guards, get that thief!",
+		"Rhadeis will judge you, thief! Guards!",
+		"Stop taking what isn't yours! Guards!",
+		"Guards, arrest this thief!"
+	  ]
+	}
+  },
+  
+  
+  
+  //TRINK DIALOGUE
+  {
+	"op": "add",
+	"path": "/accuse/trink",
+	"value": {
+	  "default" : [
+		"That was not yours to take.",
+		"Stealing from the Circuit, are you?",
+		"That belongs to the Circuit!",
+		"You had better stop stealing things.",
+		"The Circuit does not tolerate thievery."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/alert/trink",
+	"value": {
+	  "default" : [
+		"The Circuit will stop you. Guards!",
+		"Your days of thievery are over! Guards!",
+		"Guards, end this thievery!",
+		"You won't get away with this. Guards!",
+		"Guards, arrest this thief!"
+	  ]
+	}
+  },
+  
+  
+  
+  //DRODEN DIALOGUE
+  {
+	"op": "add",
+	"path": "/accuse/droden",
+	"value": {
+	  "default" : [
+		"Detected thief. Unit requests you to desist this behaviour.",
+		"Thief detected. Cease your thievery, or the clan will be alerted.",
+		"Criminal behaviour detected. Cease immediately.",
+		"Detected violation of Nomada laws. Requesting immediate cease and desist.",
+		"Crime detected. Continued criminal behaviour will result in lawful apprehension."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/alert/droden",
+	"value": {
+	  "default" : [
+		"Reporting criminal behaviour. Guards will arrive shortly.",
+		"Unit is reporting criminal behaviour. Guards arriving shortly.",
+		"Criminal behaviour reported. Stand by for arrest.",
+		"Nomada laws violated. Alerting local guards.",
+		"Requesting immediate assistance. Criminal must be apprehended."
+	  ]
+	}
+  },
+  
+  
+  
+  //AEGI DIALOGUE
+  {
+	"op": "add",
+	"path": "/accuse/aegi",
+	"value": {
+	  "default" : [
+		"Hey, that's not yours!",
+		"You've got to be kidding me, are you really stealing our stuff?",
+		"Hands off, that isn't yours to take!",
+		"Stop stealing before I call the guards!",
+		"You can get banished for theft, you know."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/alert/aegi",
+	"value": {
+	  "default" : [
+		"Guards, this one is stealing!",
+		"Hold the thief!",
+		"Stop that thief!",
+		"You'll regret stealing those things! Guards!",
+		"Guards, arrest this thief!"
+	  ]
+	}
+  },
+  
+  
+  
+  //AKKIMARI DIALOGUE
+  {
+	"op": "add",
+	"path": "/accuse/akkimari",
+	"value": {
+	  "default" : [
+		"Akki see you, you thief!",
+		"You no steal things, make Akkimari mad!",
+		"Bugger off, you no steal here!",
+		"If you steal, Akki call guards!",
+		"Akki kill thieves. You careful."
+	  ]
+	}
+  },
+  {
+	"op": "add",
+	"path": "/alert/akkimari",
+	"value": {
+	  "default" : [
+		"Akki see thief! Akkimari, kill thief!",
+		"Kill thief!",
+		"Akki no like thieves! You dead now!",
+		"You regret stealing now!",
+		"You get arrested now!"
+	  ]
+	}
+  }
 ]

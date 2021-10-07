@@ -19,7 +19,7 @@
 
   "aegiDescription" : "A Trinkian monitor displaying encoded information.",
   "avikanDescription" : "This monitor displays information in a way I don't understand.",
-  "erixianDescription" : "Trinkian monitors display information in a very curious manner.",
+  "draunaarDescription" : "Trinkian monitors display information in a very curious manner.",
   "trinkDescription" : "This monitor displays over a 128GBs of data per second. Few can decrypt it all at the same rate.",
   "hymidDescription" : "I wish I knew how to decrypt all of this information.",
   "notixDescription" : "We may have built the Trinks, but their data is too difficult to decrypt for me.",
@@ -28,6 +28,7 @@
   "dremetonDescription" : "TODO",
   "hyvonDescription" : "TODO",
   "drodenDescription" : "Alien interface detected. Unable to translate.",
+  "akkimariDescription" : "Screen-alien, Akki no read...",
   
   "inventoryIcon" : "trinkmonitoricon.png",
   "orientations" : [

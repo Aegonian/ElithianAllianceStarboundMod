@@ -22,7 +22,7 @@
   
   "aegiDescription" : "The Trink use control pods like these to control their ships.",  
   "avikanDescription" : "The control pod of the machine operating this ship.",
-  "erixianDescription" : "A Trinkian control pod, built for their starships' captains.",
+  "draunaarDescription" : "A Trinkian control pod, built for their starships' captains.",
   "trinkDescription" : "This control pod allows access to the ship's navigation interface.",
   "hymidDescription" : "A control pod. Useful for the Trinks, but incredibly uncomfortable for others.",
   "notixDescription" : "A Trinkian control pod. It allows access to the ship's navigation interface.",
@@ -31,6 +31,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Detected alien technology. Analysis: ship control pod.",
+  "akkimariDescription" : "Chair-captain. Linked to console-navigation.",
 
   "inventoryIcon" : "captainschairicon.png",
   "orientations" : [

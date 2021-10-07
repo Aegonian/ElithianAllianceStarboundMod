@@ -4,13 +4,14 @@
   "inventoryIcon" : "akkimari-nailgun.png",
   "maxStack" : 1,
   "rarity" : "Common",
-  "description" : "A compact nailgun cobbled together by the Akkimari.",
+  "description" : "^gray;A compact nailgun cobbled together by the Akkimari.^reset;",
+  "manufacturer" : "^gray;Kelraaki^reset;",
   "shortdescription" : "Akris Nailgun",
   "level" : 1,
   "fixedLevel" : false,
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Nailgun",
-  "itemTags" : ["weapon","ranged","machinepistol","akkimari"],
+  "itemTags" : ["weapon","ranged","machinepistol","akkimari","akkimariUpgradeable","kelraaki"],
   "twoHanded" : false,
 
   "animation" : "/items/active/weapons/ranged/gun.animation",
@@ -87,5 +88,5 @@
     }
   },
   
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

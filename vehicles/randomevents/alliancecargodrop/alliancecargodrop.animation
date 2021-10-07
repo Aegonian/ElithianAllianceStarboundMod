@@ -84,7 +84,7 @@
 				"image" : "alliancecargodrop.png:despawn.<frame>"
 			  }
 			},
-			"invisisble" : {
+			"invisible" : {
 			  "properties" : {
 				"image" : ""
 			  }
@@ -131,7 +131,7 @@
 				"image" : "alliancecargodroplights.png:despawn.<frame>"
 			  }
 			},
-			"invisisble" : {
+			"invisible" : {
 			  "properties" : {
 				"image" : ""
 			  }

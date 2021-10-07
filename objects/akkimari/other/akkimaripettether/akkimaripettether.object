@@ -1,0 +1,83 @@
+{
+  "objectName" : "akkimaripettether",
+  "colonyTags" : ["akkimari"],
+  "rarity" : "Rare",
+  "category" : "storage",
+  "price" : 250,
+  "description" : "A creature capture pod can be placed into this device, tethering the pet within its radius.",
+  "shortdescription" : "Akris Pet Tether",
+  "race" : "akkimari",
+  "printable" : false,
+
+  "apexDescription" : "A captured creature can be tethered to this spot.",
+  "avianDescription" : "A handy post that a pet to be tethered to.",
+  "floranDescription" : "Creaturess attached to post ssstay here.",
+  "glitchDescription" : "Satisfied. A captured creature placed in this device will stay nearby.",
+  "humanDescription" : "A tether for a captured creature.",
+  "hylotlDescription" : "Once placed in this device, a captured creature will not wander far.",
+  "novakidDescription" : "A handy tether post for keepin' captured creatures from wanderin'.",
+
+  "aegiDescription" : "This device can tether a pet into a set location.",
+  "avikanDescription" : "I could tether a captured creature into place with this device.",
+  "draunaarDescription" : "Any pets I place into this device will stay nearby.",
+  "trinkDescription" : "An efficient way of tethering pets to a set location.",
+  "hymidDescription" : "Captured creatures can be tethered to this device.",
+  "notixDescription" : "Any captured creature placed into this device will stay near it.",
+  "jorgasianDescription" : "A tether, for keeping captured creatures from wandering away.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "TODO.",
+  "hyvonDescription" : "TODO",
+  "drodenDescription" : "Detected pet tethering device. Prevents captured creatures from wandering off.",
+  "akkimariDescription" : "Tether-pet. Keep pets in line.",
+
+  "objectType" : "container",
+  "slotCount" : 1,
+  "uiConfig" : "/interface/chests/pettether.config",
+  "subtitle" : "",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600,
+
+  "scripts" : [ "/objects/spawner/pettether/pettether.lua" ],
+
+  "damageTeam" : {
+    "type" : "friendly",
+    "team" : 0
+  },
+
+  "inventoryIcon" : "akkimaripettethericon.png",
+
+  "animation" : "akkimaripettether.animation",
+  "animationParts" : {
+    "tether" : "akkimaripettether.png",
+    "tetherlit" : "akkimaripettetherlit.png"
+  },
+  "animationPosition" : [-8, 0],
+
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "akkimaripettether.png:off.<frame>", "fullbright" : true }, { "image" : "akkimaripettetherlit.png:off.<frame>" } ],
+      "imagePosition" : [-8, 0],
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "frames" : 1,
+      "animationCycle" : 1.2,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "akkimaripettether.png:off.<frame>", "fullbright" : true }, { "image" : "akkimaripettetherlit.png:off.<frame>" } ],
+      "imagePosition" : [-8, 0],
+
+      "direction" : "right",
+      
+      "frames" : 1,
+      "animationCycle" : 1.2,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

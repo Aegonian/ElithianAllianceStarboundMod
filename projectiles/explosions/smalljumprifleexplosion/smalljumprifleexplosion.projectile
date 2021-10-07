@@ -4,7 +4,7 @@
   "animationCycle" : 0.2,
   "frameNumber" : 6,
   "speed" : 0,
-  "lightColor" : [128, 128, 64],
+  "lightColor" : [157, 103, 0],
   "pointLight" : true,
   "statusEffects" : [
     "jumprifleburn"

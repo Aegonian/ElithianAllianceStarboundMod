@@ -18,7 +18,7 @@
   
   "aegiDescription" : "Spices made from this plant are very popular amongst the Avikan.",
   "avikanDescription" : "The dried fruits of this plant make for excellent spices.",
-  "erixianDescription" : "Spices made by drying these fruits add a strong flavour to food.",
+  "draunaarDescription" : "Spices made by drying these fruits add a strong flavour to food.",
   "trinkDescription" : "Trinks have no use for spices, although I hear organics can't get enough of them.",
   "hymidDescription" : "The dried fruits of this plant make for some of the best spices I know.",
   "notixDescription" : "Spices like those made from drying these fruits are a large export sector for the Avikan.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Detected native Kadavan flora. Spice plant confirmed.",
+  "akkimariDescription" : "Plant-spicy, Akki like! Mouth burn, tasty-very!",
   
   "inventoryIcon" : "avikanspiceplantseedicon.png",
   
@@ -40,7 +41,7 @@
       "frames" : 1,
       "animationCycle" : 0.5,
 
-      "spaces" : [ [1, 0], [0, 0], [1, 1], [0, 1], [1, 2], [0, 2], [1, 3], [0, 3], [1, 4], [0, 4] ],
+      "spaces" : [ [1, 0], [0, 0], [1, 1], [0, 1], [1, 2], [0, 2], [1, 3], [0, 3] ],
       "requireTilledAnchors" : true,
       "anchors" : [ "bottom" ]
 

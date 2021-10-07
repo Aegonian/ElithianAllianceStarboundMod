@@ -4,11 +4,11 @@
   "inventoryIcon" : "thea-tier6rifle.png",
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A compact, high-impact assault rifle.",
+  "description" : "^gray;A compact, high-impact assault rifle.^reset;",
   "manufacturer" : "^gray;Alliance Collective^reset;",
   "shortdescription" : "AC.A-6 Comet",
   "level" : 6,
-  "tooltipKind" : "thea-gun-mf",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Assault Rifle",
   "itemTags" : ["weapon","ranged","assaultrifle","alliance","alliancecollective","allianceUpgradeable"],
   "twoHanded" : true,
@@ -30,6 +30,11 @@
       }
     },
     "particleEmitters" : {
+    },
+	"lights" : {
+      "muzzleFlash" : {
+		"color" : [0, 52, 90]
+	  }
     },
     "sounds" : {
       "fire" : [ "/sfx/gun/thea_plasmagun7.ogg" ],

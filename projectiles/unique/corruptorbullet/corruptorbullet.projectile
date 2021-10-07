@@ -5,14 +5,14 @@
   "bounces" : 0,
   "piercing" : false,
   "flippable" : true,
-  "animationCycle" : 0.8,
-  "frameNumber" : 8,
+  "animationCycle" : 1.0,
+  "frameNumber" : 1,
   "lightColor" : [150, 25, 0],
   "fullbright" : true,
   "actionOnReap" : [
     {
       "action" : "config",
-	  "file" : "/projectiles/explosions/violatedlinerifleimpact/violatedlinerifleimpact.config"
+	  "file" : "/projectiles/explosions/smallviolatedlinerifleimpact/smallviolatedlinerifleimpact.config"
     }
   ],
   "periodicActions" : [

@@ -1,0 +1,12 @@
+{
+  "itemName" : "remnantglowrock",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "remnantglowrock.png",
+  
+  "shortdescription" : "Glowing Rock",
+  "description" : "An ancient rock with an eerie glow.",
+
+  "materialId" : 30179
+}

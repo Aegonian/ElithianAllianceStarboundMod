@@ -10,6 +10,9 @@
   "glitchDescription" : "Excited. This looks like Ferroverium ore.",
   "floranDescription" : "Floran isss fasscinated by sshiny oress.",
   "novakidDescription" : "Ferroverium, if I ain't mistaken.",
+  
+  "drodenDescription" : "Detected ferroverium ore deposit. Recommend immediate extraction.",
+  "akkimariDescription" : "Akki mine ferroverium, make materials-new.",
 
   "miningSounds" : [ "/sfx/tools/pickaxe_ore.ogg", "/sfx/tools/pickaxe_ore2.ogg" ],
   "miningParticle" : "orespark",

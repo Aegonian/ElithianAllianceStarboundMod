@@ -36,7 +36,7 @@
 
   "aegiDescription" : "An automated Nomada Defense Turret. Highly efective.",
   "avikanDescription" : "Such turrets are often used to protect Avikan colonies from attacks.",
-  "erixianDescription" : "This automated turret will shred enemies to pieces.",
+  "draunaarDescription" : "This automated turret will shred enemies to pieces.",
   "trinkDescription" : "An Avikan-built turret. I hope its targeting system won't see me as a threat.",
   "hymidDescription" : "This turret is ever vigilant.",
   "notixDescription" : "A Nomada-built turret, very useful when there is a shortage of guards.",
@@ -45,6 +45,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO",
   "drodenDescription" : "Detected Nomada-approved Automated Defense Turret.",
+  "akkimariDescription" : "Turret-alien, kill enemies. Akki lazy.",
 
   "inventoryIcon" : "icon.png",
   "orientations" : [

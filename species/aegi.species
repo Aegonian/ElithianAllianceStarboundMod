@@ -6,6 +6,8 @@
       "subTitle" : "Descendants of Mankind",
       "description" : "The descendants of Humans who fled Earth in the face of a natural disaster. Diplomatic, peaceful and technologically advanced, the Aegi have established themselves as the founders of an interstellar, inter-species alliance called the Elithian Alliance."
   },
+
+  "statusEffects" : [ "aegiregeneration" ],
   
   "playerSpecies" : true,
   "nameGen" : [ "/species/aegimalenamegen.config:names", "/species/aegifemalenamegen.config:names" ],
@@ -15,6 +17,9 @@
   "effectDirectives" : "?replace=FEFFFFFF=FFFFFFFF?replace=9bd4ffFF=7FC9FFFF?replace=31a6ffFF=0094FFFF",
   "defaultBlueprints" : {
     "tier1" : [
+
+//NEW in v2.3.12
+	  { "item" : "alliancecargocontainer" },
 
 //NEW in v2.3.10
 	  { "item" : "alliancesecuritycamera" },
@@ -303,7 +308,7 @@
       { "item" : "alliancecorepowerful" },
       { "item" : "alliancecorevigorous" },
 	//Objects - Generator
-      { "item" : "allianceshieldgenerator" },
+      { "item" : "allianceshieldgenerator-player" },
 	//Weapons - Melee
       { "item" : "thea-tier5dagger" },
       { "item" : "thea-tier5spear" },

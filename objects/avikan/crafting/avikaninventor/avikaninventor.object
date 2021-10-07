@@ -34,7 +34,7 @@
 
   "aegiDescription" : "A worktable used by the Avikan. One could craft more specialized equipment here.",
   "avikanDescription" : "A workman's table. I can craft more specialized crafting tools here.",
-  "erixianDescription" : "This worktable is perfect for crafting specialized crafting tools.",
+  "draunaarDescription" : "This worktable is perfect for crafting specialized crafting tools.",
   "trinkDescription" : "A crafting table used to craft other crafting tables. An inefficient solution.",
   "hymidDescription" : "The Avikan use tables like these to craft specilized crafting tools.",
   "notixDescription" : "All the tools one needs to craft specialized Avikan crafting tools.",
@@ -43,6 +43,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Analysis complete. Workman's table. Used to construct various specialized crafting tables.",
+  "akkimariDescription" : "Akki use blueprint to craft things-many.",
 
   "learnBlueprintsOnPickup" : [],
 
@@ -72,7 +73,7 @@
 
 		"aegiDescription" : "A worktable used by the Avikan. One could craft more specialized equipment here.",
 		"avikanDescription" : "A workman's table. I can craft more specialized crafting tools here.",
-		"erixianDescription" : "This worktable is perfect for crafting specialized crafting tools.",
+		"draunaarDescription" : "This worktable is perfect for crafting specialized crafting tools.",
 		"trinkDescription" : "A crafting table used to craft other crafting tables. An inefficient solution.",
 		"hymidDescription" : "The Avikan use tables like these to craft specilized crafting tools.",
 		"notixDescription" : "All the tools one needs to craft specialized Avikan crafting tools.",
@@ -80,7 +81,8 @@
 		"centensDescription" : "TODO.",
 		"dremetonDescription" : "TODO.",
 		"theleanDescription" : "TODO.",
-		"drodenDescription" : "Analysis complete. Workman's table. Used to construct various specialized crafting tables."
+		"drodenDescription" : "Analysis complete. Workman's table. Used to construct various specialized crafting tables.",
+		"akkimariDescription" : "Akki use blueprint to craft things-many."
       },
 
       "interactData" : {
@@ -132,7 +134,7 @@
 
 		"aegiDescription" : "A workstation for Avikan artisans.",
 		"avikanDescription" : "I can craft specialized crafting tools here.",
-		"erixianDescription" : "A modern workstation for creating specialized crafting tables.",
+		"draunaarDescription" : "A modern workstation for creating specialized crafting tables.",
 		"trinkDescription" : "This machine makes the process of creating and archiving blueprints much more efficient.",
 		"hymidDescription" : "A modern workstation of Avikan design. Bulky but very durable, as always.",
 		"notixDescription" : "This workstation is used for the construction of more specialized crafting tools.",
@@ -140,7 +142,8 @@
 		"centensDescription" : "TODO.",
 		"dremetonDescription" : "TODO.",
 		"theleanDescription" : "TODO.",
-		"drodenDescription" : "Analysis complete. Artisan's station. Used to construct various specialized crafting tables."
+		"drodenDescription" : "Analysis complete. Artisan's station. Used to construct various specialized crafting tables.",
+		"akkimariDescription" : "Screen shows blueprints, useful for Akki."
       },
 
       "interactData" : {

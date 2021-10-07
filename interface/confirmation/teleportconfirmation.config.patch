@@ -3,7 +3,7 @@
   //============================================== INSTANCED QUESTS ==============================================
   //==============================================================================================================
   
-  //VANGUARD DRONE BATTLE
+  // VANGUARD DRONE BATTLE
   { "op" : "add",
 	"path" : "/vanguarddronebattle",
 	"value" : {
@@ -23,7 +23,7 @@
 	}
   },
   
-  //AVIKAN ROGUE BATTLE
+  // AVIKAN ROGUE BATTLE
   { "op" : "add",
 	"path" : "/avikanroguebattle",
 	"value" : {
@@ -43,7 +43,7 @@
 	}
   },
   
-  //VANGUARD MECH UNLOCK
+  // VANGUARD MECH UNLOCK
   { "op" : "add",
 	"path" : "/vanguardmechunlock",
 	"value" : {
@@ -63,7 +63,7 @@
 	}
   },
   
-  //AKKIMARI DRONE BATTLE
+  // AKKIMARI DRONE BATTLE
   { "op" : "add",
 	"path" : "/akkimaridronebattle",
 	"value" : {
@@ -83,13 +83,33 @@
 	}
   },
   
+  // REMNANT CAVES
+  { "op" : "add",
+	"path" : "/remnantcaves",
+	"value" : {
+	  "paneLayout" : "/interface/windowconfig/portraitconfirmation.config:paneLayout",
+	  "icon" : "/interface/warping/icon.png",
+	  "title" : "Teleport Confirmation",
+	  "subtitle" : "The Blighted Cavern",
+	  "message" : "\n\nAre you ready to explore the ^orange;Blighted Cavern^white;? \n^red;Make sure to bring some powerful equipment, alongside spelunking tools.",
+	  "okCaption" : "Ready",
+	  "cancelCaption" : "Not now",
+	  "images" : {
+		"portrait" : [ {"image" : "/quests/events/harrowing/harrowingvendor.png"} ]
+	  },
+	  "labels" : {
+		"name" : "Ayala"
+	  }
+	}
+  },
+  
   
   
   //==============================================================================================================
   //============================================== TECH CHALLENGES ===============================================
   //==============================================================================================================
   
-  //AKKIMARI DRONE BATTLE
+  // AKKIMARI DRONE BATTLE
   { "op" : "add",
 	"path" : "/thea-techchallenge-stealthtech",
 	"value" : {

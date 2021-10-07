@@ -8,7 +8,9 @@
   
   "floranDescription" : "Weaponsss for ssale.",
   "glitchDescription" : "Observation. This merchant offers a variety of weapons.",
+  
   "drodenDescription" : "Detected Vanguard-approved weapons distributor. Name: Odyin as-Rhadeis.",
+  "akkimariDescription" : "Alien-tough. Make for fight-good.",
   
   "interactAction" : "OpenMerchantInterface",
   "interactData" : {
@@ -60,5 +62,4 @@
       "anchors" : [ "bottom" ]
     }
   ]
-
 }

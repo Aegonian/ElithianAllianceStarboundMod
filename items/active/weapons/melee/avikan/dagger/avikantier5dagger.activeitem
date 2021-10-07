@@ -4,12 +4,13 @@
   "level" : 5,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A sharp metal dagger designed by the Nomada.",
+  "description" : "^gray;A sharp metal dagger designed by the Nomada.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Nomada Dagger",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "dagger",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","dagger","avikan"],
+  "itemTags" : ["weapon","melee","dagger","avikan","vanguard"],
 
   "inventoryIcon" : "avikantier5dagger.png",
 
@@ -73,5 +74,5 @@
   },
   "fireSounds" : [ "/sfx/melee/swing_dagger.ogg" ],
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

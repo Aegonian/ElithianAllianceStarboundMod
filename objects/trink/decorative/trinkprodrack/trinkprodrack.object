@@ -18,7 +18,7 @@
 
   "aegiDescription" : "Trinkian prods. They deliver quite the sting.",
   "avikanDescription" : "Alien weaponry. The Nomada might have a use for this.",
-  "erixianDescription" : "Electric prods. Rather lengthy.",
+  "draunaarDescription" : "Electric prods. Rather lengthy.",
   "trinkDescription" : "Trinkian longprods are excellent weapons for defensive combat.",
   "hymidDescription" : "A bunch of electric prods. Better not use these underwater.",
   "notixDescription" : "The Trink prefer to keep assailants outside of melee range using prods like these.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Analysis complete. Detected alien weaponry. Electric generators detected.",
+  "akkimariDescription" : "Prods-electric, for herding cattle?",
 
   "inventoryIcon" : "trinkprodrackicon.png",
   "orientations" : [

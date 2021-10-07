@@ -1,0 +1,17 @@
+{
+  "name" : "trinkeyelight",
+  
+  "effectConfig" : {
+    "lightPositionStanding" : [0.0, 0.0],
+	"lightPositionCrouching" : [0.0, -1.0]
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "trinkeyelight.lua"
+  ],
+
+  "animationConfig" : "trinkeyelight.animation",
+
+  "label" : "EYELIGHTS: Permanent headlights for exploring the dark"
+}

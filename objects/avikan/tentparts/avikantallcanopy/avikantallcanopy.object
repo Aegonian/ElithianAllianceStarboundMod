@@ -18,7 +18,7 @@
 
   "aegiDescription" : "A canopy, for casting a cooling shadow in the desert.",
   "avikanDescription" : "A finely decorated canopy, for keeping the sun out.",
-  "erixianDescription" : "I prefer the heat over the cool shade such a canopy can cast.",
+  "draunaarDescription" : "I prefer the heat over the cool shade such a canopy can cast.",
   "trinkDescription" : "A canopy made of colourful fabric. Well-woven.",
   "hymidDescription" : "A birght and colourful canopy, it can cast a valuable shade in the desert.",
   "notixDescription" : "A canopy, for casting a shade in the warm desert.",
@@ -27,6 +27,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Canopy. Provides a shade in the desert.",
+  "akkimariDescription" : "Canopy-colourful.",
 
   "inventoryIcon" : "avikantallcanopyicon.png",
   "orientations" : [

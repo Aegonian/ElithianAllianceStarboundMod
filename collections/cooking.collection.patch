@@ -158,5 +158,14 @@
       "order" : 168,
       "item" : "crawlerdunebun"
     }
+  },
+  {
+	"op" : "add", 
+    "path" : "/collectables/vrellipaste",
+    "value" :     
+    {
+      "order" : 169,
+      "item" : "vrellipaste"
+    }
   }
 ]

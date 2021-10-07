@@ -22,7 +22,7 @@
   
   "aegiDescription" : "The Avikan flag. My ship's teleporter can sync with its location so I can return here later.",
   "avikanDescription" : "The Avikan flag. The ship's teleporter can lock on to the locator module inside it, so I can return here later.",
-  "erixianDescription" : "An Avikan flag. I can save its location for my teleporter, allowing me to return here later.",
+  "draunaarDescription" : "An Avikan flag. I can save its location for my teleporter, allowing me to return here later.",
   "trinkDescription" : "A locator module inside this Avikan flag allows my ship's teleporter to bookmark this location.",
   "hymidDescription" : "An Avikan flag. I can bookmark its location so my teleporter can return me here at any time.",
   "notixDescription" : "The flag of the Avikan. I can save its location and return to it later using my teleporter.",
@@ -31,6 +31,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Avikan flag. Detected locator module. Ship teleportation system can lock on to this location.",
+  "akkimariDescription" : "Flag-alien, symbol of Nomada-Avikan.",
   
   "interactAction" : "OpenTeleportDialog",
   "interactData" : "/interface/warping/destinationonly.config",

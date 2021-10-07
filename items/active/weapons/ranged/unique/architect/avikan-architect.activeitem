@@ -5,12 +5,13 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "^orange;Centensian components allow this weapon to summon constructs.",
+  "manufacturer" : "^gray;Centlary^reset;",
   "shortdescription" : "^orange;The Architect^white;",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-chargedgunalt-unique",
+  "tooltipKind" : "thea-chargedgunalt-unique-mf",
   "category" : "Line Rifle",
-  "itemTags" : ["weapon","ranged","avikan","linerifle","theaUnique"],
+  "itemTags" : ["weapon","ranged","avikan","linerifle","centlary","theaUnique"],
   "twoHanded" : true,
   
   //CONFIGURATION FOR WEAPONS COLLECTION
@@ -74,7 +75,14 @@
 	  "discharge" : [ "/sfx/gun/aegisaltpistol_stop.ogg" ]
     }
   },
-  "animationScripts" : ["/items/active/effects/thea-doublelightning.lua"],
+  "animationScripts" : ["/items/active/effects/thea-doublelightning-chargeintake.lua"],
+  "scriptedAnimationParameters" : {
+    "particleConfig" : {
+	  "image" : "/particles/chargeintake/xanafianlinechargeintake.png",
+	  "scale" : 1.5,
+	  "fullbright" : true
+	}
+  },
 
   "baseOffset" : [1.2, 0.25],
   "muzzleOffset" : [0.125, 0.125],
@@ -128,6 +136,13 @@
 	"projectileParameters" : {
       "knockback" : 10
     },
+
+	//CHARGE PARTICLE CONFIGURATION
+	"useChargeParticles" : true,
+	"maxChargeParticles" : 8,
+	"particleLifetime" : 0.3,
+	"timeBewteenParticles" : 0.05,
+	"maxParticleDistance" : 1,
 
     "stances" : {
       "idle" : {
@@ -226,6 +241,13 @@
 
     "projectileType" : "architectconstructbullet",
 	"projectileCount" : 1,
+
+	//CHARGE PARTICLE CONFIGURATION
+	"useChargeParticles" : true,
+	"maxChargeParticles" : 8,
+	"particleLifetime" : 0.3,
+	"timeBewteenParticles" : 0.05,
+	"maxParticleDistance" : 1,
 
     "stances" : {
       "idle" : {

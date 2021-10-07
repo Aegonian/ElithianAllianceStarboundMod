@@ -24,7 +24,8 @@
   "vehicleImage" : "/vehicles/alliance/allianceshuttle/allianceshuttle.png",
 
   "animationParts" : {
-    "casing" : "allianceshuttlecontroller.png"
+    "casing" : "allianceshuttlecontroller.png",
+    "lights" : "allianceshuttlecontrollerlights.png"
   },
 
   "inventoryIcon" : "allianceshuttlecontroller.png:full",

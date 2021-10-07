@@ -140,6 +140,40 @@
 			]
           }
         ] ]
+    ],
+	//AKKIMARI EQUIPMENT
+    "akkimari" : [
+      [0, [
+		  {
+            "head" : [
+			  { "name" : "akkimari-tier1head", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "akkimari-tier3head", "parameters" : { "colorIndex" : 0 } },
+			  { "name" : "akkimari-rebreather", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "akkimari-tier3chest", "parameters" : { "colorIndex" : 0 } },
+              { "name" : "akkimari-tier4chest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "akkimari-tier2legs", "parameters" : { "colorIndex" : 0 } },
+              { "name" : "akkimari-tier3legs", "parameters" : { "colorIndex" : 0 } }
+            ],
+			"primary" : [
+			  "akkimari-tier4shortsword",
+			  "akkimari-tier4broadsword",
+			  "akkimari-tier5spear",
+			  "akkimari-tier6axe",
+			  "akkimari-tier6hammer"
+			],
+			"sheathedprimary" : [
+			  "akkimari-trackrifle",
+			  "akkimari-strafegun"
+			],
+			"alt" : [
+			  "akkimarishield"
+			]
+          }
+        ] ]
     ]
   },
 

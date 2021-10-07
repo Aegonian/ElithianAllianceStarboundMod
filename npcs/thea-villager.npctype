@@ -172,6 +172,29 @@
 		  ]
 		}
 	  ] ]
+    ],
+	//AKKIMARI CLOTHING
+    "akkimari" : [
+      [0, [
+		//COMBINATION 1 -- GENERIC
+		{
+		  "head" : [
+			{ "name" : "thea-hiddenhead", "parameters" : { "colorIndex" : 0 } }
+		  ],
+		  "chest" : [
+			{ "name" : "akkimari-clerkchest", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 7, 8, 11] } },
+			{ "name" : "akkimari-forgerchest", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 7, 8, 11] } },
+			{ "name" : "akkimari-traderchest", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 7, 8, 11] } },
+			{ "name" : "akkimari-weaverchest", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 7, 8, 11] } }
+		  ],
+		  "legs" : [
+			{ "name" : "akkimari-clerklegs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 7, 8, 11] } },
+			{ "name" : "akkimari-forgerlegs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 7, 8, 11] } },
+			{ "name" : "akkimari-traderlegs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 7, 8, 11] } },
+			{ "name" : "akkimari-weaverlegs", "parameters" : { "colorIndex" : [0, 1, 2, 3, 4, 7, 8, 11] } }
+		  ]
+		}
+	  ] ]
     ]
   },
 

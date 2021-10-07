@@ -4,13 +4,14 @@
   "inventoryIcon" : "akkimari-strafegun.png",
   "maxStack" : 1,
   "rarity" : "Uncommon",
-  "description" : "An Akkimari weapon firing target-seeking plasma bolts.",
+  "description" : "^gray;An Akkimari weapon firing target-seeking vaash bolts.^reset;",
+  "manufacturer" : "^gray;Rashakr^reset;",
   "shortdescription" : "Akris Strafer",
   "level" : 4,
   "fixedLevel" : false,
-  "tooltipKind" : "gun",
+  "tooltipKind" : "thea-gun-descriptive-mf",
   "category" : "Strafer",
-  "itemTags" : ["weapon","ranged","pistol","akkimari"],
+  "itemTags" : ["weapon","ranged","pistol","akkimari","akkimariUpgradeable","rashakr"],
   "twoHanded" : false,
   
   "cursor" : "/cursors/thea-triplereticle-large.cursor",
@@ -35,7 +36,7 @@
       "muzzleFlash" : {
 		"active" : false,
 		"position" : [0, 0],
-		"color" : [90, 90, 0]
+		"color" : [0, 90, 0]
 	  }
     },
     "sounds" : {
@@ -97,5 +98,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

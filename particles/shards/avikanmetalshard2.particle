@@ -10,7 +10,7 @@
     "layer" : "middle",
     "collidesForeground" : true,
     "variance" : {
-      "position" : [8, 2],
+      "position" : [1, 1],
       "initialVelocity" : [16, 5],
       "finalVelocity" : [0, 20],
       "rotation" : 180,

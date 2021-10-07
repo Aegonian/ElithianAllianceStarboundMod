@@ -1,14 +1,19 @@
 {
   "objectName" : "avikanmannequin",
-  "colonyTags" : [],
+  "colonyTags" : ["avikan", "clothing"],
   "printable" : false,
   "rarity" : "Common",
-
   "category" : "other",
   "price" : 500,
   "description" : "Display and easily equip your Avikan-themed armour sets!",
   "shortdescription" : "Avikan Mannequin",
-  "race" : "generic",
+  "race" : "avikan",
+  
+  "floranDescription" : "Mannequin for disssplaying armour.",
+  "glitchDescription" : "Observation. A mannequin tailored to an alien species.",
+  
+  "drodenDescription" : "Detected mannequin. Tailored to Avikan shape.",
+  "akkimariDescription" : "Akki put armour on mannequin, look at armour-pretty.",
 
   "inventoryIcon" : "avikanmannequinicon.png",
   "orientations" : [

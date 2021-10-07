@@ -1,0 +1,18 @@
+{
+  "type" : "thea-xanafianshadowambush",
+
+  "scripts" : ["/stagehands/randomevents/monsterambush/thea-monsterambushevent.lua"],
+  "scriptDelta" : 1,
+  
+  "monsterTypes" : [
+	"xanafianshadow"
+  ],
+  "monsterCount" : [ 5, 8 ],
+  "monsterTestPoly" : [ [0.4, 0.95],  [0.95, 0.4], [0.95, -0.4], [0.4, -0.95], [-0.4, -0.95], [-0.95, -0.4], [-0.95, 0.4], [-0.4, 0.95] ],
+  "spawnOnGround" : false,
+  "spawnEffect" : null,
+  "minDistanceToPlayer" : 10,
+  "spawnRangeX" : 25,
+  "spawnRangeY" : 20,
+  "spawnTolerance" : 20
+}

@@ -19,7 +19,7 @@
 
   "aegiDescription" : "A hovering light. It seems to be based on Centensian technology.",
   "avikanDescription" : "This light is efficient, lightweight and very versatile.",
-  "erixianDescription" : "A hovering light. Impressive.",
+  "draunaarDescription" : "A hovering light. Impressive.",
   "trinkDescription" : "A hovering light. I wonder how this effect was achieved.",
   "hymidDescription" : "A hovering light. I have no idea how it works.",
   "notixDescription" : "An advanced light that hovers in the air.",
@@ -28,6 +28,7 @@
   "dremetonDescription" : "An efficient light that hovers gently in the air.",
   "theleanDescription" : "A hovering light. Built using Centensian technology, no doubt.",
   "drodenDescription" : "Detected light orb.",
+  "akkimariDescription" : "Orb-floating, create light.",
   
   "lightColor" : [145, 138, 130],
   "flickerPeriod" : 0.8,
@@ -50,7 +51,9 @@
 
   "animation" : "avikansmalllightorb.animation",
   "animationParts" : {
-    "object" : "avikansmalllightorb.png"
+    "object" : "avikansmalllightorb.png",
+    "objectlit" : "avikansmalllightorblit.png"
+
   },
   "animationPosition" : [0, 0],
   

@@ -5,12 +5,13 @@
   "maxStack" : 1,
   "rarity" : "Essential",
   "description" : "^orange;An unstable makeshift weapon that randomly fires highly volatile projectiles.",
+  "manufacturer" : "^gray;Kelraaki^reset;",
   "shortdescription" : "^orange;Ashatok^white;",
   "level" : 6,
   "fixedLevel" : false,
-  "tooltipKind" : "thea-gun-unique",
+  "tooltipKind" : "thea-gun-unique-mf",
   "category" : "Makeshift Weapon",
-  "itemTags" : ["weapon","ranged","akkimari","theaUnique"],
+  "itemTags" : ["weapon","ranged","akkimari","kelraaki","theaUnique"],
   "twoHanded" : true,
   
   "cursor" : "/cursors/thea-triplereticle-large.cursor",
@@ -212,5 +213,5 @@
     }
   },
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

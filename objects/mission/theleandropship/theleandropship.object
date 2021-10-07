@@ -21,7 +21,7 @@
 
   "aegiDescription" : "Thelean dropships are massive. But compared to regular Thelean ships, this one is tiny.",
   "avikanDescription" : "A Thell dropship - its owners can't be far.",
-  "erixianDescription" : "The Theleans certainly know how to build large ships.",
+  "draunaarDescription" : "The Theleans certainly know how to build large ships.",
   "trinkDescription" : "A massive Thelean dropship. No use trying to hijack it - Thelean technology only works for Theleans.",
   "hymidDescription" : "Thelean dropships have always scared me...",
   "notixDescription" : "A dropship of Thelean origin. It means that Thelean troops can't be far.",
@@ -30,6 +30,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "One of our dropships. My kin must be near...",
   "drodenDescription" : "Detected Thelean dropship. Warning: exercise extreme caution.",
+  "akkimariDescription" : "God-thief-dropship. Akki careful, look for god-thieves. Kill them.",
 
   "inventoryIcon" : "theleandropshipicon.png",
   "orientations" : [

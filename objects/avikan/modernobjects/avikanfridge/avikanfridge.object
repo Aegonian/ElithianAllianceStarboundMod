@@ -22,7 +22,7 @@
 
   "aegiDescription" : "Avikan fridges can keep food cool, even in the midst of the desert.",
   "avikanDescription" : "This food preservation unit will keep my food fresh, but the food will be too cold to eat immediately.",
-  "erixianDescription" : "A cold fridge. I prefer my food hot, but the cold does act as a good preserver.",
+  "draunaarDescription" : "A cold fridge. I prefer my food hot, but the cold does act as a good preserver.",
   "trinkDescription" : "This fridge's energy consumption is surprisingly efficient.",
   "hymidDescription" : "A cool fridge, for keeping food fresh.",
   "notixDescription" : "There's no need for fridges on the homeplanet of the Notix.",
@@ -31,6 +31,7 @@
   "dremetonDescription" : "TODO.",
   "hyvonDescription" : "TODO.",
   "drodenDescription" : "Food preservation unit detected. Food stored here will remain fresh for extended periods of time.",
+  "akkimariDescription" : "Frdige-cold, for keeping food-fresh.",
 
   "inventoryIcon" : "avikanfridgeicon.png",
   "orientations" : [

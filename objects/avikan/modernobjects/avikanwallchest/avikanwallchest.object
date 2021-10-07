@@ -22,7 +22,7 @@
 
   "aegiDescription" : "An oddly shaped metal chest.",
   "avikanDescription" : "A sturdy metal chest. Perfect for saving our rarest possessions.",
-  "erixianDescription" : "A high quality metal chest.",
+  "draunaarDescription" : "A high quality metal chest.",
   "trinkDescription" : "This metal chest is inefficient in its usage of space.",
   "hymidDescription" : "A metal chest.",
   "notixDescription" : "A well-crafted metal chest.",
@@ -31,6 +31,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Analyzing content.",
+  "akkimariDescription" : "Chest-wall. Akki want to break it off.",
 
   "inventoryIcon" : "avikanwallchesticon.png",
   "orientations" : [

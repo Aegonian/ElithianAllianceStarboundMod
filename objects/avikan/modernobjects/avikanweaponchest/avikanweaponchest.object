@@ -23,7 +23,7 @@
 
   "aegiDescription" : "A Vanguard supply crate. It likely contains some for of Avikan-built weaponry.",
   "avikanDescription" : "A Vanguard supply crate! Let's see what's inside!",
-  "erixianDescription" : "A military-grade supply crate, certain to hold some armaments.",
+  "draunaarDescription" : "A military-grade supply crate, certain to hold some armaments.",
   "trinkDescription" : "This chest is likely to contain some military equipment.",
   "hymidDescription" : "A weather and war-proof supply crate. It might hold some military equipment.",
   "notixDescription" : "This looks like one of the Vanguard's military supply crates.",
@@ -32,6 +32,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Detected Vanguard supply crate.",
+  "akkimariDescription" : "Chest for weapons.",
 
   "inventoryIcon" : "avikanweaponchesticon.png",
   "orientations" : [

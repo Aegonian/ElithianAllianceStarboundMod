@@ -1,0 +1,81 @@
+{
+  "objectName" : "wildbasbronseed",
+  "colonyTags" : ["nature"],
+  "rarity" : "Common",
+  "category" : "seed",
+  "description" : "A cactus producing soft fibers, useful for making cloth.",
+  "shortdescription" : "Basbron Seed",
+  "objectType" : "farmable",
+  "printable" : false,
+  "price" : 20,
+  "hasObjectItem" : false,
+
+  "biomePlaced" : true,
+
+  "apexDescription" : "If you can get past the spines, this plant produces excellent cloth fibers.",
+  "avianDescription" : "A cactus producing fibers for cloth-weaving.",
+  "floranDescription" : "Floran take fluff, make cloth. Floran sssmart.",
+  "glitchDescription" : "Careless. These spines won't hurt me.",
+  "humanDescription" : "A cotton cactus. How odd.",
+  "hylotlDescription" : "I believe these fibers would make for an excellent cloth material.",
+  "novakidDescription" : "Soft fluffy fibers. Now that's the good stuff.",
+  
+  "aegiDescription" : "A cactus from Kadavan. It produces fibers useful for making cloth.",
+  "avikanDescription" : "The fibers produced by this plant make for excellent cloth-weaving material.",
+  "draunaarDescription" : "A spiny plant. The fluffy balls make for good cloth-weaving material.",
+  "trinkDescription" : "These plants are harvested by the Avikan for their soft fluffy fibers.",
+  "hymidDescription" : "Fluffy fibers for making cloth, no doubt.",
+  "notixDescription" : "These fibers are hard to work with, but they still make for good cloth.",
+  "jorgasianDescription" : "These are often harvested by the Avikan to make cloth out of.",
+  "centensDescription" : "TODO.",
+  "dremetonDescription" : "The fibers are used for weaving cloth.",
+  "hyvonDescription" : "TODO.",
+  "drodenDescription" : "Detected fiber-rich plant. Recommend harvest.",
+  "akkimariDescription" : "Fibers-soft, for weaving cloth.",
+
+  "inventoryIcon" : "basbronseed.png",
+  "orientations" : [
+    {
+      "dualImage" : "basbronseed.png:<color>.<stage>.<alt>",
+      "imagePosition" : [0, 0],
+
+      "spaces" : [
+		[-1, 0], [0, 0], [1, 0],
+		[-1, 1], [0, 1], [1, 1],
+		[-1, 2], [0, 2], [1, 2],
+		[-1, 3], [0, 3], [1, 3],
+		[-1, 4], [0, 4], [1, 4]
+	  ],
+      "requireTilledAnchors" : false,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "radioMessagesOnPickup" : [ "pickupseed" ],
+
+  "stages" : [
+    {
+      "duration" : [220, 280]
+    },
+    {
+      "duration" : [220, 280]
+    },
+    {
+      "alts" : 5,
+      "duration" : [760, 840]
+    },
+    {
+      "alts" : 5,
+      "harvestPool" : "basbronHarvest",
+      "resetToStage" : 2
+    }
+  ],
+
+  "breakDropOptions" : [
+    [ [ "basbronseed", 1, { } ] ]
+  ],
+
+  "maxImmersion" : 0.125,
+  "consumeSoilMoisture" : false
+}

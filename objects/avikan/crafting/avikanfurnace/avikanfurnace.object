@@ -35,7 +35,7 @@
   
   "aegiDescription" : "This furnace is not very safe.",
   "avikanDescription" : "A simple furnace. One of the few stone structures my people use.",
-  "erixianDescription" : "A furnace radiating a comfortable heat.",
+  "draunaarDescription" : "A furnace radiating a comfortable heat.",
   "trinkDescription" : "An inefficient and unsafe way to smelt ores into metal bars.",
   "hymidDescription" : "The heat radiating from this furnace is too much for me.",
   "notixDescription" : "A hot and bright furnace. The open design is hardly safe to use.",
@@ -44,6 +44,7 @@
   "dremetonDescription" : "TODO.",
   "theleanDescription" : "TODO.",
   "drodenDescription" : "Analysis complete. Stone furnace. Basic ore smelting functionality.",
+  "akkimariDescription" : "Furnace-stone, not too hot.",
 
   "learnBlueprintsOnPickup" : [],
 
@@ -72,7 +73,7 @@
   
 		"aegiDescription" : "This furnace is not very safe.",
 		"avikanDescription" : "A simple furnace. One of the few stone structures my people use.",
-		"erixianDescription" : "A furnace radiating a comfortable heat.",
+		"draunaarDescription" : "A furnace radiating a comfortable heat.",
 		"trinkDescription" : "An inefficient and unsafe way to smelt ores into metal bars.",
 		"hymidDescription" : "The heat radiating from this furnace is too much for me.",
 		"notixDescription" : "A hot and bright furnace. The open design is hardly safe to use.",
@@ -80,7 +81,8 @@
 		"centensDescription" : "TODO.",
 		"dremetonDescription" : "TODO.",
 		"theleanDescription" : "TODO.",
-		"drodenDescription" : "Analysis complete. Stone furnace. Basic ore smelting functionality."
+		"drodenDescription" : "Analysis complete. Stone furnace. Basic ore smelting functionality.",
+		"akkimariDescription" : "Furnace-stone, not too hot."
       },
 
       "interactData" : {
@@ -133,7 +135,7 @@
   
 		"aegiDescription" : "This furnace's temperature is perfect for smelting Avikan alloys, but not much else.",
 		"avikanDescription" : "While it can't smelt every metal, this furnace's temperature is just perfect for creating Avikan alloys.",
-		"erixianDescription" : "This furnace is cooler than most I've used, but that makes it perfect for smelting some very specific alloys.",
+		"draunaarDescription" : "This furnace is cooler than most I've used, but that makes it perfect for smelting some very specific alloys.",
 		"trinkDescription" : "This open grille design is hardly efficient, but the furnace's fuel consumption is top-notch.",
 		"hymidDescription" : "This furnace radiates a pleasent heat.",
 		"notixDescription" : "A furnace burning at a lower temperature. It is perfect for creating some very specific alloys.",
@@ -141,7 +143,8 @@
 		"centensDescription" : "TODO.",
 		"dremetonDescription" : "TODO.",
 		"theleanDescription" : "TODO.",
-		"drodenDescription" : "Analysis complete. Nomada furnace. Temperature levels are perfect for smelting Avikan alloys."
+		"drodenDescription" : "Analysis complete. Nomada furnace. Temperature levels are perfect for smelting Avikan alloys.",
+		"akkimariDescription" : "Forge-hot, for smelting metals."
       },
 
       "interactData" : {

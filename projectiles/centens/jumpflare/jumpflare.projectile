@@ -15,6 +15,7 @@
   "piercing" : true,
   "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
   "lightColor" : [250, 160, 0],
+  "fullbright" : true,
   "damageKind" : "jumpweapon",
   "statusEffects" : [
     "jumprifleburn"

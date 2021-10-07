@@ -1,0 +1,14 @@
+{
+  "type" : "thea-eritocargodrop",
+
+  "scripts" : ["/stagehands/randomevents/cargodrop/thea-cargodropevent.lua"],
+  "scriptDelta" : 1,
+  
+  "projectileType" : "allianceflareblue",
+  "vehicleType" : "eritocargodrop",
+  "dropPodTestPoly" : [ [-0.5, -1.5], [-2.25, -0.5], [-2.25, 1.5], [2.25, 1.5], [2.25, -0.5], [0.5, -1.5] ],
+  "minDistanceToPlayer" : 20,
+  "spawnRangeX" : 15,
+  "spawnRangeY" : 35,
+  "spawnTolerance" : 20
+}

@@ -4,12 +4,13 @@
   "level" : 2,
   "maxStack" : 1,
   "rarity" : "Common",
-  "description" : "A weapon built from scavenged parts.",
+  "description" : "^gray;A weapon built from scavenged parts.",
+  "manufacturer" : "^gray;Kelraaki^reset;",
   "shortdescription" : "Makeshift Dagger",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "dagger",
   "twoHanded" : false,
-  "itemTags" : ["weapon","melee","dagger","akkimari","akkimariUpgradeable"],
+  "itemTags" : ["weapon","melee","dagger","akkimari","akkimariUpgradeable","kelraaki"],
 
   "inventoryIcon" : "akkimari-tier2dagger.png",
 
@@ -73,5 +74,5 @@
   },
   "fireSounds" : [ "/sfx/melee/swing_dagger.ogg" ],
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

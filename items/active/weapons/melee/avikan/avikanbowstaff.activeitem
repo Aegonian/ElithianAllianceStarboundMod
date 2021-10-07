@@ -5,12 +5,13 @@
   "fixedLevel" : false,
   "maxStack" : 1,
   "rarity" : "Legendary",
-  "description" : "A basic combat staff.",
+  "description" : "^gray;A basic combat staff.",
+  "manufacturer" : "^gray;Vanguard^reset;",
   "shortdescription" : "Nomada Combat Staff",
-  "tooltipKind" : "sword",
+  "tooltipKind" : "thea-sword-descriptive-mf",
   "category" : "Combat Staff",
   "twoHanded" : true,
-  "itemTags" : ["weapon","melee","bowstaff","avikan"],
+  "itemTags" : ["weapon","melee","bowstaff","avikan","vanguard"],
 
   "inventoryIcon" : "avikanbowstaff.png",
 
@@ -34,5 +35,5 @@
 
   "altAbilityType" : "thea-bowstaffspin",
 
-  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+  "builder" : "/items/buildscripts/thea-buildweapon-mf.lua"
 }

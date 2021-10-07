@@ -43,7 +43,8 @@
 			//Masks
 			{ "name" : "aegi-centenshead", "parameters" : { "colorIndex" : 0 } },
 			{ "name" : "aegi-trinkhead", "parameters" : { "colorIndex" : 0 } },
-			{ "name" : "avikan-sandspitterhead", "parameters" : { "colorIndex" : 0 } }
+			{ "name" : "aegi-ooglerhead", "parameters" : { "colorIndex" : 0 } },
+			{ "name" : "aegi-spookyhead", "parameters" : { "colorIndex" : 0 } }
 		  ],
 		  "chest" : [
 			//Common Items
@@ -85,7 +86,8 @@
 		  "legs" : [
 			{ "name" : "trink-ghost", "parameters" : { "colorIndex" : 0 } },
 			{ "name" : "trink-notix", "parameters" : { "colorIndex" : 0 } },
-			{ "name" : "trink-pumpkin", "parameters" : { "colorIndex" : 0 } }
+			{ "name" : "trink-pumpkin", "parameters" : { "colorIndex" : 0 } },
+			{ "name" : "trink-tentacle", "parameters" : { "colorIndex" : 0 } }
 		  ]
 		},
 		//COMBINATION 2 -- PAINTED
@@ -100,7 +102,8 @@
 		  "legs" : [
 			{ "name" : "trink-ghost", "parameters" : { "colorIndex" : 0 } },
 			{ "name" : "trink-notix", "parameters" : { "colorIndex" : 0 } },
-			{ "name" : "trink-pumpkin", "parameters" : { "colorIndex" : 0 } }
+			{ "name" : "trink-pumpkin", "parameters" : { "colorIndex" : 0 } },
+			{ "name" : "trink-tentacle", "parameters" : { "colorIndex" : 0 } }
 		  ]
 		}
 	  ] ]

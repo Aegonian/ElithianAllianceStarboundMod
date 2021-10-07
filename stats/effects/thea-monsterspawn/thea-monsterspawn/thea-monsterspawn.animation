@@ -1,0 +1,43 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "teleport" : {
+        "default" : "none",
+        "states" : {
+          "none" : { },
+          "beamIn" : {
+            "frames" : 8,
+            "cycle" : 0.6,
+            "mode" : "transition",
+            "transition" : "none",
+            "properties" : {
+              "immediateSound" : "/sfx/tools/teleport_down.ogg"
+            },
+            "frameProperties" : {
+              "multiply" : [ "ffffff00", "ffffff00", "ffffff00", "ffffffff", "ffffffff", "ffffffff", "ffffffff", "ffffffff" ]
+            }
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "base" : {
+        "properties" : {
+          "fullbright" : true,
+          "centered" : true
+        },
+        "partStates" : {
+          "teleport" : {
+            "none" : { },
+            "beamIn" : {
+              "properties" : {
+                "image" : "thea-monsterspawn.png:<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
