@@ -21,7 +21,7 @@ function update()
     })
 
   for _, target in ipairs(targets) do
-    if entity.entityInSight(target) and world.entityCanDamage(projectile.sourceEntity(), target) and not (world.getProperty("entityinvisible" .. tostring(target)) and not config.getParameter("ignoreInvisibility", false)) then
+    if entity.entityInSight(target) and world.entityCanDamage(projectile.sourceEntity(), target) and not (world.getProperty("entityinvisible" .. tostring(target)) and not config.getParameter("ignoreInvisibility", false)) and entity.isValidTarget(target) then
       local targetPos = world.entityPosition(target)
       local myPos = mcontroller.position()
       local dist = world.distance(targetPos, myPos)
